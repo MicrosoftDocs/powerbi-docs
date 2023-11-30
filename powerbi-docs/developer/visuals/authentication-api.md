@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/19/2022
+ms.date: 11/30/2023
 ---
 
 # Authentication API
@@ -67,7 +67,7 @@ The following sample code demonstrates how to acquire a Microsoft Entra ID token
 
 ```typescript
 // Step 1: Check the status of AAD token acquisition
-const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenStatus();
+const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstatus();
  
 // Step 2: Verify if acquiring the token is allowed
 if (acquireTokenStatus === PrivilegeStatus.Allowed) {
