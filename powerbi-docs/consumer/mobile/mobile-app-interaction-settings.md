@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 11/30/2023
 ---
 
 # Configure report interaction settings
@@ -22,10 +22,11 @@ The Power BI mobile app has a number of configurable "interaction" settings that
 | [Multi-select versus single select of data points on report visuals](#multi-select) |✔|✔|✔|✔|
 | [Docked versus dynamic report footer](#docked-report-footer) |✔|✔|||
 | [Button-initiated report refresh versus pull-to-refresh](#report-refresh) |✔||||
+| [Improve link opening](#improve-link-opening) ||✔||✔|
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the interaction settings in the **Preferences** section.
 
-:::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section-02.png" alt-text="Screenshot showing the Power BI interaction settings.":::
+:::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-settings.png" alt-text="Screenshot showing the Power BI interaction settings." border="false":::
 
 ## Interaction settings
 
@@ -63,6 +64,10 @@ On Android phones, a refresh button is added by default.
 To change the report refresh setting, go to the report refresh item in the interaction settings. The current setting is shown. Tap the value to open a pop-up window where you can choose a new value.
 
 :::image type="content" source="./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh-02.png" alt-text="Screenshot showing how to change the report refresh setting.":::
+
+### Improve link opening (iOS)
+
+When enabled, the app opens links directly on top of the home page, without first opening the containing location (for example, the workspace that contains the report). This results in improved performance. The setting is enabled by default.
 
 ## Remote configuration
 
