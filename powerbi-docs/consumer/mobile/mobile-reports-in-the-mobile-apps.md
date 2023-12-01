@@ -135,7 +135,7 @@ For example:
 
 **Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](../../transform-model/desktop-mobile-geofiltering.md).
 
-**Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
+**Scan to filter the report by barcode** is enabled only if the semantic model in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 
 ### Bookmarks
 
@@ -188,7 +188,7 @@ If you're not sure you’re viewing the most up-to-date data, you can pull new d
     Report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured (Windows app only).
 
 >[!NOTE]
->The above refresh methods do not refresh the underlying dataset. Rather, they update the report you're viewing on the mobile app with any new data that might exist in Power BI.
+>The above refresh methods do not refresh the underlying semantic model. Rather, they update the report you're viewing on the mobile app with any new data that might exist in Power BI.
 
 ### How do I know when my report was last refreshed?
 

@@ -16,7 +16,7 @@ Combining Fabric Git Integration with Azure DevOps, enables you to connect a wor
 
 Integrating the PBIP format with Azure DevOps lets you use Azure Pipelines to automate [Continuous Integration/Continuous Deployment](/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture) (CI/CD) pipelines. These pipelines process the PBIP metadata files and apply a series of quality checks to your development before deploying it to the production system.
 
-In this article, we focus on continuous integration and describe how to create an Azure DevOps build pipeline that guarantees best practices for all datasets and reports within a Fabric workspace. By implementing automated quality tests, you can prevent common mistakes, and enhances team efficiency. For example, this approach ensures that new team members adhere to established standards for dataset and report development.
+In this article, we focus on continuous integration and describe how to create an Azure DevOps build pipeline that guarantees best practices for all semantic models and reports within a Fabric workspace. By implementing automated quality tests, you can prevent common mistakes, and enhances team efficiency. For example, this approach ensures that new team members adhere to established standards for semantic model and report development.
 
 Learn more about PBIP and Fabric Git Integration in [project-overview](./projects-overview.md) and [Fabric Git integration overview](/fabric/cicd/git-integration/intro-to-git-integration).
 
@@ -27,7 +27,7 @@ The following diagram illustrates the end-to-end scenario with two development w
 1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools).
 
    1. Create a branch from main using **VS Code** (feature/datasetchange)
-   1. Make changes to dataset using Power BI Desktop
+   1. Make changes to semantic model using Power BI Desktop
    1. Commit changes to remote repository branch using **VS Code**
    1. Create Pull Request to main branch using Azure DevOps
 
@@ -39,11 +39,11 @@ The following diagram illustrates the end-to-end scenario with two development w
    1. Create Pull Request to main branch using Azure DevOps
 
 1. The team lead reviews the Pull Requests and synchronizes the changes to the team workspace using Fabric Git.
-1. The Pull Request triggers the Azure DevOps build pipeline to inspect the dataset and report development quality.
+1. The Pull Request triggers the Azure DevOps build pipeline to inspect the semantic model and report development quality.
 
 >[!NOTE]
 >
->In this example, the build pipeline uses two open-source community tools that enable a developer to apply (customizable) best practice rules to the metadata of datasets and reports within a Power BI Project folder:
+>In this example, the build pipeline uses two open-source community tools that enable a developer to apply (customizable) best practice rules to the metadata of semantic models and reports within a Power BI Project folder:
 >
 >* [Tabular Editor](https://github.com/TabularEditor/TabularEditor) and [Best Practice Rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules)
 >* [PBI Inspector](https://github.com/NatVanG/PBI-Inspector)
@@ -101,7 +101,7 @@ Azure DevOps runs the pipeline and starts two build jobs in parallel:
 * Build_Datasets
   * Downloads Tabular Editor binaries.
   * Download Best Practice Analyzer [default rules](https://github.com/microsoft/Analysis-Services/tree/master/BestPracticeRules). To customize the rules, add a *Rules-Dataset.json* to the root of the repository.
-  * Cycle through all the dataset item folders and run Tabular Editor BPA Rules.
+  * Cycle through all the semantic model item folders and run Tabular Editor BPA Rules.
 * Build_Reports
   * Download PBI Inspector binaries.
   * Download PBI Inspector [default rules](https://github.com/NatVanG/PBI-Inspector/blob/main/Rules/Base-rules.json). To customize the rules, add a *Rules-Report.json* to the root of the repository.
@@ -117,7 +117,7 @@ Select on the link to open a more detailed view of the two build jobs:
 
 :::image type="content" source="./media/projects-build-pipelines/report-rules.png" alt-text="Screenshot showing expanded error log.":::
 
-If your report or dataset fails a rule with a higher severity level, the build fails, and the error is highlighted:
+If your report or semantic model fails a rule with a higher severity level, the build fails, and the error is highlighted:
 
 :::image type="content" source="./media/projects-build-pipelines/manual-run.png" alt-text="Screenshot showing highlighter errors.":::
 
@@ -137,7 +137,7 @@ Once the pipeline is up and running, enable **Branch Policies** on the *main* br
 
 ## Step 4 - Create pull request
 
-If you return to your Fabric Workspace, make a modification to one of the reports or datasets, and attempt to commit the change, you receive the following error:
+If you return to your Fabric Workspace, make a modification to one of the reports or semantic models, and attempt to commit the change, you receive the following error:
 
 :::image type="content" source="./media/projects-build-pipelines/commit-change.png" alt-text="Screenshot showing the unable to commit change error.":::
 

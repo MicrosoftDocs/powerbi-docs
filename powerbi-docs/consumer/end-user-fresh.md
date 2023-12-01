@@ -59,7 +59,7 @@ In a report, there's an arrow on the title bar. Select the arrow to see contact 
 
 ## View dashboards
 
-The dashboard title menu shows a contact, but not a timestamp. However, you can view the last refresh date for individual dashboard tiles and for the underlying dataset.
+The dashboard title menu shows a contact, but not a timestamp. However, you can view the last refresh date for individual dashboard tiles and for the underlying semantic model.
 
 :::image type="content" source="media/end-user-fresh/power-bi-dashboard-owner.png" alt-text="Screenshot showing the Marketing and sales dashboard title menu.":::
 
@@ -75,7 +75,7 @@ The dashboard title menu shows a contact, but not a timestamp. However, you can 
 
     :::image type="content" source="media/end-user-fresh/power-bi-see-related.png" alt-text="Screenshot showing See related content on the More options menu.":::
 
-    The **Related content** pane shows the last refresh information for the dashboard or report's underlying dataset.
+    The **Related content** pane shows the last refresh information for the dashboard or report's underlying semantic model.
 
     :::image type="content" source="media/end-user-fresh/power-bi-see-related-screen.png" alt-text="Screenshot showing the last refresh date on the Related content pane.":::
 

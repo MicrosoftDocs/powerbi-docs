@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 11/15/2023
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -85,8 +85,6 @@ The **Database** category provides the following data connections:
 * BI Connector
 * Data Virtuality LDW
 * Denodo
-* Dremio Software
-* Dremio Cloud
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -97,7 +95,8 @@ The **Database** category provides the following data connections:
 * MarkLogic
 * MongoDB Atlas SQL (Beta)
 * TIBCO® Data Virtualization
-
+* Dremio Software
+* Dremio Cloud
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File** > **Options and settings** > **Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned previously and want to use them, check your **Preview Features** settings. Also note that any data source marked as **Beta** or **Preview** has limited support and functionality, and shouldn't be used in production environments.
@@ -106,7 +105,7 @@ The **Database** category provides the following data connections:
 
 The **Microsoft Fabric (Preview)** category provides the following data connections:
 
-* Power BI datasets
+* Power BI semantic models
 * Dataflows
 * Datamarts (preview)
 * Warehouses (preview)
@@ -145,6 +144,8 @@ The **Azure** category provides the following data connections:
 * Azure Databricks
 * Azure Synapse Analytics workspace (Beta)
 * Azure Time Series Insights (Beta)
+* Azure HDInsight on AKS Trino (Beta)
+* Azure Resource Graph (Beta)
 
 ### Online Services data sources
 
@@ -197,17 +198,15 @@ The **Online Services** category provides the following data connections:
 * Planview OKR (Beta)
 * Planview ProjectPlace
 * Product Insights (Beta)
-* Profisee (Beta)
 * Quickbase
 * SoftOne BI (Beta)
 * Planview IdeaPlace
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
-* Viva Insights
 * Zoho Creator
-
-
+* Profisee
+* Viva Insights
 
 
 ### Other data sources
@@ -239,6 +238,7 @@ The **Other** category provides the following data connections:
 * Cognite Data Fusion
 * Delta Sharing
 * Eduframe (Beta)
+* Emplifi Metrics (Beta)
 * EQuIS
 * FactSet RMS (Beta)
 * FHIR
@@ -267,6 +267,8 @@ The **Other** category provides the following data connections:
 * Vessel Insight
 * Wrike (Beta)
 * Zucchetti HR Infinity (Beta)
+* Bloomberg Data and Analytics
+* Celonis EMS (Beta)
 * Blank Query
 
 > [!NOTE]

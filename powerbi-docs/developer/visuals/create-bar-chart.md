@@ -686,7 +686,7 @@ import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 import { BarChartDataPoint } from "./barChart";
 
-import FormattingSettingsCard = formattingSettings.Card;
+import FormattingSettingsCard = formattingSettings.SimpleCard;
 import FormattingSettingsSlice = formattingSettings.Slice;
 import FormattingSettingsModel = formattingSettings.Model;
 
@@ -699,18 +699,21 @@ class EnableAxisCardSettings extends FormattingSettingsCard {
         name: "show",
         displayName: undefined,
         value: false,
-        topLevelToggle: true
+        topLevelToggle: true,
+        show: true
     });
 
     // Formatting property `fill` color picker (formatting simple slice)
     fill = new formattingSettings.ColorPicker({
         name: "fill",
         displayName: "Color",
-        value: { value: "#000000" }
+        value: { value: "#000000" },
+        show: true
     });
 
     name: string = "enableAxis";
     displayName: string = "Enable Axis";
+    show: boolean = true;
     slices: Array<FormattingSettingsSlice> = [this.show, this.fill];
 }
 
@@ -792,7 +795,7 @@ Create bar chart selectors data points and populate them in formatting settings 
     // ...
 
     public update(options: VisualUpdateOptions) {
-        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(BarChartSettingsModel, options.dataViews);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(BarChartSettingsModel, options.dataViews[0]);
         this.barDataPoints = createSelectorDataPoints(options, this.host);
         this.formattingSettings.populateColorSelector(this.barDataPoints);
 

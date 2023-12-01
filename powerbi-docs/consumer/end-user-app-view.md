@@ -16,7 +16,6 @@ LocalizationGroup: Share your work
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-
 Now that you have a [basic understanding of apps](end-user-apps.md), you can learn how to open and interact with them. 
 
 ## Ways to get a new app
@@ -31,7 +30,7 @@ With Power BI mobile, you can only install an app from a direct link. The Power 
 
 ## Apps and licenses
 
-Not all Power BI users can view and interact with apps. If you have a free license, you can open apps that are stored in Premium capacity and that are shared with you. If you have a Pro license or a Premium Per User license, you can open apps that are shared with you.
+Not all Power BI users can view and interact with apps. If you have a free license, you can open apps that are stored in Premium capacity or Fabric F64 or greater capacity and that are shared with you. If you have a Pro license or a Premium Per User license, you can open apps that are shared with you.
 
 So, if you can't open an app, contact your administrator or help desk. For information about licensing, see [Power BI licensing](end-user-license.md).
 
@@ -70,7 +69,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
  * If you're installing a template app, you'll be taken to the template app offering in AppSource. See [an example](end-user-app-marketing.md) of how to download and install a sample template app from the Power BI apps marketplace. The app is installed, along with a workspace of the same name.
 
    > [!NOTE]
-   > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity. For more information, see [Licenses for business users](end-user-license.md).
+   > If you're using a free user license, you can download apps but you can't view them unless you upgrade to a Power BI Pro or Premium Per User license or unless the app is stored in a Premium capacity or Fabric F64 or greater capacity. For more information, see [Licenses for business users](end-user-license.md).
 
 ## Install an app from a direct link
 
@@ -115,7 +114,7 @@ Apps have different layouts, visuals, colors, and options, but they all have mos
 
 You can explore the associated workspace if you've been given access. When you install or download a template app, the Power BI service creates a workspace for you. When you install an organizational app, it might not include access to the workspace. For more information, see [Collaborate in workspaces](end-user-workspaces.md). Select **Power BI** (number 2) to return to **Home** and choose **Workspaces**. 
 
-![Screenshot of the Sales and Marketing workspace showing one report and one dataset.](./media/end-user-app-view/power-bi-new-workspace.png)
+![Screenshot of the Sales and Marketing workspace showing one report and one semantic model.](./media/end-user-app-view/power-bi-new-workspace.png)
 
 ### Share reports and dashboards from an app
 

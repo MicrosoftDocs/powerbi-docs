@@ -83,7 +83,7 @@ The Emissions Impact Dashboard for Microsoft 365 reports datacenter emissions an
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-pick-account.png" alt-text="[Screenshot of picking an account."::: 
 
-    Wait for the view to build. This can take 24-48 hours. Refresh the dataset after 24 hours.
+    Wait for the view to build. This can take 24-48 hours. Refresh the semantic model after 24 hours.
 
 ## Update the app 
 
@@ -95,13 +95,13 @@ Choose **Update the workspace and the app**, then click **Install**. This will i
 
 ### Issues 
 
-If there are any issues with the dataset refresh/app update during the updating process, validate the following steps and refresh the dataset. 
+If there are any issues with the semantic model refresh/app update during the updating process, validate the following steps and refresh the semantic model. 
 
-Follow the steps below to make sure your dataset configurations are set correctly: 
+Follow the steps below to make sure your semantic model configurations are set correctly: 
 
 1. Go to the workspace panel and open the app workspace.
 
-1. Open the **Scheduled Refresh** option in the dataset settings. 
+1. Open the **Scheduled Refresh** option in the semantic model settings. 
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-scheduled-refresh.png" alt-text="Screenshot of scheduled refresh button."::: 
 
@@ -113,7 +113,7 @@ Follow the steps below to make sure your dataset configurations are set correctl
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-refresh.png" alt-text="Screenshot of refresh button."::: 
 
-1. Once the dataset has refreshed successfully, click the **Update App** option at the top-right corner of the app workspace. 
+1. Once the semantic model has refreshed successfully, click the **Update App** option at the top-right corner of the app workspace. 
 
     :::image type="content" source="media/service-connect-emissions-impact-dashboard-microsoft-365/microsoft-365-emissions-dashboard-update-app.png" alt-text="Screenshot of update app button."::: 
 
@@ -185,7 +185,7 @@ Microsoft may periodically release a new version of the Emissions Impact Dashboa
 
 **I successfully connected to my tenant's data. Why do I still see demo data in the report, even after waiting 48 hours?**
 
-This could indicate that you don't have one of the Microsoft 365 admin roles listed in the [prerequisites](#prerequisites) section above. Make sure that one of these roles is assigned to your profile, then open the app workspace and refresh the dataset (see further instructions in the [Issues](#issues) section above).
+This could indicate that you don't have one of the Microsoft 365 admin roles listed in the [prerequisites](#prerequisites) section above. Make sure that one of these roles is assigned to your profile, then open the app workspace and refresh the semantic model (see further instructions in the [Issues](#issues) section above).
 
 **I successfully connected to my tenant's data. Why do I see blank data in the report?**
 
@@ -193,7 +193,7 @@ This likely indicates that your tenant's emissions volumes are very small. The c
 
 **Why can't I see emissions data for the previous month?**
 
-Emissions data for a given month will be available by the 14th day after the end of that month (including non-business days). Ensure that your dataset is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
+Emissions data for a given month will be available by the 14th day after the end of that month (including non-business days). Ensure that your semantic model is scheduled to refresh automatically on a daily or weekly basis so that you always have access to the latest information.
 
 **Why can't I see usage information prior to June 2022 in the Carbon Intensity tab?**
 

@@ -37,21 +37,21 @@ Q&A is available throughout Power BI, and this article focuses on using Q&A on a
 
    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-sample-read-mode.png" alt-text="Screenshot shows the Retail Analysis Sample in reading mode." lightbox="media/end-user-q-and-a-tutorial/power-bi-sample-read-mode.png":::
 
-1. Select **My workspace** in the left navigation pane and scroll until you find the Retail Analysis sample. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to the current Retail Analysis workspace.
+1. Select **My workspace** in the left navigation pane and scroll until you find the Retail Analysis sample. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to the current Retail Analysis workspace.
 
-   :::image type="content" source="media/end-user-q-and-a-tutorial/retail-entry.png" alt-text="Screenshot shows dashboard, report, and dataset for Retail Analysis Sample.":::
+   :::image type="content" source="media/end-user-q-and-a-tutorial/retail-entry.png" alt-text="Screenshot shows dashboard, report, and semantic model for Retail Analysis Sample.":::
 
 
 ## Get started using Q&A on a dashboard
 
-In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **More options (...)** from the menu bar, and then choose **See related content**.
+In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more semantic models, so you can ask questions about any of the data contained in any of those semantic models. To see what reports and semantic models were used to create the dashboard, select **More options (...)** from the menu bar, and then choose **See related content**.
 
 ![Screenshot of the Power BI service, highlighting the more options icon and the See related content option.](media/end-user-q-and-a-tutorial/power-bi-view-related.png)
 
-When you type a question, Power BI looks for the best answer using any dataset that has a tile on that dashboard. If all the tiles are from *datasetA*, then your answer comes from *datasetA*. If there are tiles from *datasetA* and *datasetB*, then Q&A searches for the best answer from those two datasets.
+When you type a question, Power BI looks for the best answer using any semantic model that has a tile on that dashboard. If all the tiles are from *semantic modelA*, then your answer comes from *semantic modelA*. If there are tiles from *semantic modelA* and *semantic modelB*, then Q&A searches for the best answer from those two semantic models.
 
 > [!TIP]
-> Be careful. If you only have one tile from *datasetA* and you remove it from your dashboard, Q&A will no longer have access to *datasetA*.
+> Be careful. If you only have one tile from *semantic modelA* and you remove it from your dashboard, Q&A will no longer have access to *semantic modelA*.
 
 
 In our example, most of the tiles on this dashboard are from the Retail analysis sample. To help form your questions, get familiar with the Retail analysis sample content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. Optionally, read the article that describes the sample, [Retail Analysis sample for Power BI: Take a tour](../create-reports/sample-retail-analysis.md).
@@ -63,7 +63,7 @@ For example:
 
 - If a visual's axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*" or "show *sales* by month as a bar chart."
 
-- If your dataset has website performance data for Google Analytics, you can ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you're querying demographic data, you might ask questions about age and household income by location.
+- If your semantic model has website performance data for Google Analytics, you can ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you're querying demographic data, you might ask questions about age and household income by location.
 
 
 Once you're familiar with the data, head back to the dashboard and place your cursor in the question box. The Q&A screen opens.
@@ -74,7 +74,7 @@ Don't see the Q&A box? See [Considerations and limitations](../consumer/end-user
 
 ## Use Q&A on a dashboard in the Power BI service
 
-The Q&A field is where you type your question using natural language. It's located in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which dataset, to find the answer. [Q&A also helps you form your question with autocompletion, restatement, and other textual and visual aids](q-and-a-intro.md). 
+The Q&A field is where you type your question using natural language. It's located in the upper-left corner of your dashboard. Q&A recognizes the words you type and figures out where, and in which semantic model, to find the answer. [Q&A also helps you form your question with autocompletion, restatement, and other textual and visual aids](q-and-a-intro.md). 
 
 Let's try it out. 
 
@@ -85,7 +85,7 @@ Let's try it out.
 
     ![Screenshot shows a Power BI dashboard with an option to Ask a question about your data.](media/end-user-q-and-a-tutorial/powerbi-qna.png)
 
-    Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and might even see complete questions listed if the dataset owner has created [featured questions](../create-reports/service-q-and-a-create-featured-questions.md).
+    Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying semantic models and might even see complete questions listed if the semantic model owner has created [featured questions](../create-reports/service-q-and-a-create-featured-questions.md).
 
     :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-show-all.png" alt-text="Screenshot shows Q&A with Show all suggestions selected.":::
 
@@ -93,7 +93,7 @@ Let's try it out.
 
    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-results.png" alt-text="Screenshot shows Q&A with a query.":::
 
-1. If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. These techniques get you familiar with the terms and content of the dataset.
+1. If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. These techniques get you familiar with the terms and content of the semantic model.
 
    :::image type="content" source="media/end-user-q-and-a-tutorial/power-bi-qna-suggested.png" alt-text="Screenshot highlighting Q&A suggested questions.":::
 
@@ -123,7 +123,7 @@ Let's try it out.
 
 ## Considerations and limitations
 
-- If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](../create-reports/service-q-and-a-direct-query.md).
+- If you've connected to a semantic model using a live connection or gateway, Q&A needs to be [enabled for that semantic model](../create-reports/service-q-and-a-direct-query.md).
 
 - At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
 

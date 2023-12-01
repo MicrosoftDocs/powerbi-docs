@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/10/2023
+ms.date: 11/15/2023
 ms.custom: known-issue-523
 ---
 
@@ -16,7 +16,7 @@ Combo charts don't show a custom label unless multiple series are present in eit
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: November 15, 2023
 
 **Problem area:** Consume and View
 

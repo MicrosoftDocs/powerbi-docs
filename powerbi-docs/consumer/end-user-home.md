@@ -100,7 +100,7 @@ The next section of your Home contains two or more tabbed lists.
 
 - The **My apps** section lists [apps that have been shared with you](end-user-apps.md) or that you've [downloaded from AppSource](end-user-apps.md). The most recent apps are listed here.
 
-- **From external orgs** (Preview) lists shared datasets available from other tenants. Use this list to discover and connect to data from external providers.
+- **From external orgs** (Preview) lists shared semantic models available from other tenants. Use this list to discover and connect to data from external providers.
 
 - In some scenarios, you'll also see a tab for content that you've tagged as [Favorites](end-user-favorite.md).
 
@@ -120,7 +120,7 @@ The nav pane classifies your content in ways that help you find what you need qu
 
 Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane is the quickest way to get to content. The nav pane is there when you open your Home landing page and remains there as you open other areas of the Power BI service. It can be collapsed by selecting this icon :::image type="icon" source="media/end-user-home/power-bi-hide.png"::: .
   
-The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Datasets, Metrics, Shared with me, and workspaces. The Browse page contains your Recent, Favorites, and Shared with me. Select a container to see all the content.
+The nav pane organizes your content into containers that are similar to what you've already seen on the Home canvas: Favorites, Recent, Apps, Semantic models, Metrics, Shared with me, and workspaces. The Browse page contains your Recent, Favorites, and Shared with me. Select a container to see all the content.
 
 Quickly find the content you want on the nav pane. Content is organized similar to the Home canvas, but shows lists instead of cards.
 

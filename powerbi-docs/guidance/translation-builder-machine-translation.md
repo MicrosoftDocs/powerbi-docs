@@ -22,7 +22,7 @@ While machine translations aren't always guaranteed to be high quality, they do 
 
 ## Generate machine translations
 
-Translations Builder generates machine translations by using [Azure AI Translator](/azure/ai-services/translator/). This product makes it possible to automate enumerating through dataset objects to translate dataset object names from the default language to translations for secondary languages.
+Translations Builder generates machine translations by using [Azure AI Translator](/azure/ai-services/translator/). This product makes it possible to automate enumerating through data model objects to translate its names from the default language to translations for secondary languages.
 
 To test the support in Translations Builder for generating machine translations, you need a key for an instance of the Azure Translator Service. For more information about obtaining a key, see [What is Azure AI Translator?](/azure/ai-services/translator/translator-overview)
 
