@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/24/2023
+ms.date: 11/15/2023
 ---
 
 # Embed a report web part in SharePoint Online
@@ -95,7 +95,7 @@ Embed a report within an app, and share it directly with users.
 
 2. Publish the app and install it. You must install the app so it has access to the report URL that's used for embedding in SharePoint Online.
 
-3. All end users need to install the app, too. You can also use the **Install app automatically** feature. In the Power BI admin portal, admins can enable [pushing apps](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users), so the app is pre-installed for end users.
+3. All end users need to install the app, too. You can also use the **Install app automatically** feature. In the Power BI admin portal, admins can enable [pushing apps](/fabric/admin/service-admin-portal-app#push-apps-to-end-users), so the app is pre-installed for end users.
 
    ![Screenshot of the Power BI admin portal with Install app automatically selected.](media/service-embed-report-spo/install-app-automatically.png)
 
