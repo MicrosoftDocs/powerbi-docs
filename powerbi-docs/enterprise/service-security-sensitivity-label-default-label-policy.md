@@ -23,7 +23,7 @@ This article describes how to enable a default label policy, both in the [Micros
 ## What happens when a default label policy is in effect?
 
 * In Power BI Desktop, when a user to whom the policy applies opens a new *.pbix* file or an existing unlabeled *.pbix* file, the default label will be applied to the file. If the user is working offline, the label is applied when the user signs in.
-* In the Power BI service, when a user to whom the policy applies creates a new dataset, report, dashboard, dataflow or scorecard, the default label will be applied to that item.
+* In the Power BI service, when a user to whom the policy applies creates a new semantic model, report, dashboard, dataflow or scorecard, the default label will be applied to that item.
 
 ## Enabling a default label policy for Power BI
 

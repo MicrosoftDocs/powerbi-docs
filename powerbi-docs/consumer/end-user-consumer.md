@@ -53,7 +53,7 @@ For more information about licenses and subscriptions, see [Which license do I h
 
 ## Safely interact with content
 
-As you filter, slice, subscribe, and export, your work doesn't impact the underlying dataset or the original shared content, like dashboards, reports, and apps.  
+As you filter, slice, subscribe, and export, your work doesn't impact the underlying semantic model or the original shared content, like dashboards, reports, and apps.  
 
 You can't corrupt your data. Power BI is a great place to explore and experiment without worrying that you might break something.  
 

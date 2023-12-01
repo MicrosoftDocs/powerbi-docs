@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 Power BI enables sharing content with external guest users through Azure Active Directory Business-to-Business (Azure AD B2B). By using Azure AD B2B, your organization enables and governs sharing with external users in a central place.
 
-Another way to share content with external guest users is in-place dataset sharing with Power BI. This allows you share content with external guest users that they can then access in their own home tenant. For more information about in-place dataset sharing, see [About Power BI in-place dataset sharing with guest users in external organizations](../collaborate-share/service-dataset-external-org-share-about.md).
+Another way to share content with external guest users is in-place semantic model sharing with Power BI. This allows you share content with external guest users that they can then access in their own home tenant. For more information about in-place semantic model sharing, see [About Power BI in-place semantic model sharing with guest users in external organizations](../collaborate-share/service-dataset-external-org-share-about.md).
 
 
 This article provides a basic introduction to Azure AD B2B in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
@@ -37,7 +37,7 @@ Most email addresses are supported for guest user invitations, including persona
 > * External members currently can't use the Power BI license they have in their home tenant to access content and perform activities in the provider tenant. Rather, they must explicitly be granted an appropriate license in the provider tenant. External members are similar to internal users on the provider tenant.
 > * Microsoft Purview Information Protection is not supported for external members. Admins in the provider tenant are advised not to enable information protection for external members.
 >
-> In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, dataset, or report, and then have them sign in again.
+> In some situations, external members may see errors during their first sign-in attempt on the provider tenant. To unblock these external members, grant them permission to a Power BI item, such as a workspace, semantic model, or report, and then have them sign in again.
 
 ## Invite guest users
 
@@ -173,8 +173,8 @@ There are also Azure Active Directory settings that can limit what external gues
   * [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/external-identities/allow-deny-list)
   * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
-Additionally, to use in-place dataset sharing, tenant admins need to enable the following settings: 
-* [Allow guest users to work with shared datasets in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#allow-guest-users-to-work-with-shared-datasets-in-their-own-tenants)
+Additionally, to use in-place semantic model sharing, tenant admins need to enable the following settings: 
+* [Allow guest users to work with shared semantic models in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#allow-guest-users-to-work-with-shared-semantic-models-in-their-own-tenants)
 * [Allow specific users to turn on external data sharing](../collaborate-share/service-dataset-external-org-share-admin.md#allow-specific-users-to-turn-on-external-data-sharing) 
 
 ## Considerations and Limitations
@@ -186,7 +186,7 @@ Additionally, to use in-place dataset sharing, tenant admins need to enable the 
 
 * Some experiences aren't available to guest users even when they have higher-level permissions. To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files. The following experiences aren't supported:
   * Direct publishing from Power BI desktop to the Power BI service
-  * Guest users can't use Power BI desktop to connect to service datasets or dataflows in the Power BI service
+  * Guest users can't use Power BI desktop to connect to service semantic models or dataflows in the Power BI service
   * Sending ad hoc invites isn't supported for workspace access lists
   * Guest users can't install a Power BI Gateway and connect it to your organization
   * Guest users can't install apps published to the entire organization
@@ -208,5 +208,5 @@ Additionally, to use in-place dataset sharing, tenant admins need to enable the 
 
 * For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 * For information about Azure AD B2B, see [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
-* For information about in-place dataset sharing, see [Power BI in-place dataset sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md).
+* For information about in-place semantic model sharing, see [Power BI in-place semantic model sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md).
 * For information about government clouds, see [Power BI for US Government](service-govus-overview.md).

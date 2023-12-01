@@ -43,7 +43,7 @@ For more use cases for information protection, see [Information protection and D
 > [!TIP]
 > It helps to remember that Microsoft Purview Information Protection is the product. Sensitivity labels are a specific feature of that product.
 
-A sensitivity label is a brief description in clear text. Conceptually, you can think of a sensitivity label like a tag. Only one label can be assigned to each item (like a Power BI dataset in the Power BI service) or each file (like a Power BI Desktop file).
+A sensitivity label is a brief description in clear text. Conceptually, you can think of a sensitivity label like a tag. Only one label can be assigned to each item (like a Power BI semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)—in the Power BI service) or each file (like a Power BI Desktop file).
 
 A label has the following purposes.
 
@@ -183,7 +183,7 @@ A label structure includes:
 
 Labels form a hierarchy, beginning with the least sensitive classification to the most sensitive classification.
 
-Sometimes Power BI content contains data that spans multiple labels. For example, a dataset could contain product inventory information (_General Internal Use_) and the current quarter sales figures _(Restricted_). When choosing which label to assign to the Power BI dataset, users should be taught to apply the most restrictive label.
+Sometimes Power BI content contains data that spans multiple labels. For example, a semantic model could contain product inventory information (_General Internal Use_) and the current quarter sales figures _(Restricted_). When choosing which label to assign to the Power BI semantic model, users should be taught to apply the most restrictive label.
 
 > [!TIP]
 > The next section describes the _Data classification and protection policy_ that can provide users with guidance on when to use each label.
@@ -293,16 +293,16 @@ Label protection is set in the Microsoft Purview compliance portal when you set 
 
 ## Inheritance of labels from data sources
 
-When importing data from supported data sources (such as Azure Synapse Analytics, Azure SQL Database, or an Excel file), a Power BI dataset can, optionally, inherit the sensitivity label applied to the source data. Inheritance helps to:
+When importing data from supported data sources (such as Azure Synapse Analytics, Azure SQL Database, or an Excel file), a Power BI semantic model can, optionally, inherit the sensitivity label applied to the source data. Inheritance helps to:
 
 - Promote consistency of labeling.
 - Reduce user effort when assigning labels.
 - Reduce the risk of users accessing and sharing sensitive data with unauthorized users because it wasn't labeled.
 
 > [!TIP]
-> There are two types of inheritance for sensitivity labels. _[Downstream inheritance](/power-bi/enterprise/service-security-sensitivity-label-downstream-inheritance)_ refers to downstream items (like reports) that automatically inherit a label from its Power BI dataset. However, the focus of this section is on _[upstream inheritance](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources)_. Upstream inheritance refers to a Power BI dataset that inherits a label from a data source that's upstream from the dataset.
+> There are two types of inheritance for sensitivity labels. _[Downstream inheritance](/power-bi/enterprise/service-security-sensitivity-label-downstream-inheritance)_ refers to downstream items (like reports) that automatically inherit a label from its Power BI semantic model. However, the focus of this section is on _[upstream inheritance](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources)_. Upstream inheritance refers to a Power BI semantic model that inherits a label from a data source that's upstream from the semantic model.
 
-Consider an example where the organization's working definition for the sensitivity label of _Highly Restricted_ includes financial account numbers. Because financial account numbers are stored in an Azure SQL Database, the _Highly Restricted_ sensitivity label has been assigned to that source. When data from the Azure SQL Database is imported to Power BI, the intent is for the dataset to inherit the label.
+Consider an example where the organization's working definition for the sensitivity label of _Highly Restricted_ includes financial account numbers. Because financial account numbers are stored in an Azure SQL Database, the _Highly Restricted_ sensitivity label has been assigned to that source. When data from the Azure SQL Database is imported to Power BI, the intent is for the semantic model to inherit the label.
 
 You can assign sensitivity labels to a supported data source in different ways.
 
@@ -453,13 +453,13 @@ It's typically the content creator or owner who assigns the label during their n
 
 ### Labels from data sources
 
-You should decide whether you want sensitivity labels to be inherited from supported data sources that are upstream from Power BI. For example, if columns in an Azure SQL Database have been defined with the _Highly Restricted_ sensitivity label, then a Power BI dataset that imports data from that source will inherit that label.
+You should decide whether you want sensitivity labels to be inherited from supported data sources that are upstream from Power BI. For example, if columns in an Azure SQL Database have been defined with the _Highly Restricted_ sensitivity label, then a Power BI semantic model that imports data from that source will inherit that label.
 
 If you decide to enable inheritance from upstream data sources, set the **Apply sensitivity labels from data sources to their data in Power BI** [tenant setting](/fabric/admin/service-admin-portal-information-protection). We recommend that you plan to enable inheritance of data source labels to promote consistency and reduce effort.
 
 ### Labels for downstream content
 
-You should decide whether sensitivity labels should be inherited by downstream content. For example, if a Power BI dataset has a sensitivity label of _Highly Restricted_, then all downstream reports will inherit this label from the dataset.
+You should decide whether sensitivity labels should be inherited by downstream content. For example, if a Power BI semantic model has a sensitivity label of _Highly Restricted_, then all downstream reports will inherit this label from the semantic model.
 
 If you decide to enable inheritance by downstream content, set the **Automatically apply sensitivity labels to downstream content** [tenant setting](/fabric/admin/service-admin-portal-information-protection). We recommend that you plan to enable inheritance by downstream content to promote consistency and reduce effort.
 
@@ -503,7 +503,7 @@ Not all export formats support information protection. Unsupported formats, such
 > [!div class="checklist"]
 > - **Decide which users can apply sensitivity labels:** Discuss and decide whether sensitivity labels can be assigned to Power BI content by all users (based on standard Power BI security) or only by certain groups of users.
 > - **Determine whether labels should be inherited from upstream data sources:** Discuss and decide whether labels from data sources should be automatically applied to Power BI content that uses the data source.
-> - **Determine whether labels should be inherited by downstream items:** Discuss and decide whether labels assigned to existing Power BI datasets should be automatically applied to related content.
+> - **Determine whether labels should be inherited by downstream items:** Discuss and decide whether labels assigned to existing Power BI semantic models should be automatically applied to related content.
 > - **Decide whether Power BI workspace administrators can override labels:** Discuss and decide whether it's appropriate for workspace administrators to be able to change protected labels that were automatically assigned.
 > - **Determine whether protected content can be shared with the entire organization:** Discuss and decide whether sharing links for "people in your organization" can be created when a protected (encrypted) label has been assigned to an item in the Power BI service.
 > - **Decide which export formats are enabled:** Identify regulatory requirements that will affect which export formats are available. Discuss and decide whether users will be able to use all export formats in the Power BI service. Determine whether certain formats need to be disabled in the tenant settings when the export format doesn't support information protection.
@@ -535,7 +535,7 @@ Here are some of the key pieces of information that you might include in your da
 - **Downloads allowed and/or offline access:** Describes whether offline access is permitted. It can also define whether downloads are permitted to organizational or personal devices.
 - **How to request an exception:** Describes whether a user can request an exception to the standard policy, and how that can be done.
 - **Audit frequency:** Specifies the frequency of compliance reviews. Higher sensitive labels should involve more frequent and thorough auditing processes.
-- **Other metadata:** A [data policy](/power-bi/guidance/powerbi-adoption-roadmap-governance#data-policies) requires more metadata, such as policy owner, approver, and effective date.
+- **Other metadata:** A [data policy](/power-bi/guidance/fabric-adoption-roadmap-governance#data-policies) requires more metadata, such as policy owner, approver, and effective date.
 
 > [!TIP]
 > When creating your data classification and protection policy, focus on making it a straightforward reference for users. It should be as short and clear as possible. If it's too complex, users won't always take the time to understand it.
@@ -556,7 +556,7 @@ One way to automate the implementation of a policy, such as the data classificat
 
 Before rolling out information protection functionality, we recommend that you create and publish guidance documentation for your users. The goal of the documentation is to achieve a seamless user experience. Preparing the guidance for your users will also help you make sure you've considered everything.
 
-You can publish the guidance as part of the sensitivity label's [custom help page](/power-bi/enterprise/service-security-sensitivity-label-custom-help-link). A SharePoint page or a wiki page in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) can work well because it will be easy to maintain. A document uploaded to a shared library or Teams site is also a good approach. The URL for the custom help page is specified in the Microsoft Purview compliance portal when you publish the label policy.
+You can publish the guidance as part of the sensitivity label's [custom help page](/power-bi/enterprise/service-security-sensitivity-label-custom-help-link). A SharePoint page or a wiki page in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) can work well because it will be easy to maintain. A document uploaded to a shared library or Teams site is also a good approach. The URL for the custom help page is specified in the Microsoft Purview compliance portal when you publish the label policy.
 
 > [!TIP]
 > The [custom help page](/power-bi/enterprise/service-security-sensitivity-label-custom-help-link) is an important resource. Links to it are made available in various applications and services.
@@ -589,7 +589,7 @@ FAQs and examples are especially helpful for user documentation.
 
 ## User support
 
-It's important to verify who will be responsible for [user support](powerbi-adoption-roadmap-user-support.md). It's common that sensitivity labels are supported by a centralized IT help desk.
+It's important to verify who will be responsible for [user support](fabric-adoption-roadmap-user-support.md). It's common that sensitivity labels are supported by a centralized IT help desk.
 
 You might need to create guidance for the help desk (sometimes known as a _runbook_). You might also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
 

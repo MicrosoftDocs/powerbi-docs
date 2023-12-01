@@ -29,15 +29,15 @@ Let's look at an example: A P1 with eight v-cores can support $8\times{30}=240$ 
 
 The aggregation is complex. It uses specialized algorithms for different workloads, and for different types of operations, as described in the following points:
 
-* **Slow-running operations**, such as dataset and dataflow refresh, are considered *background operations* since they typically run in the background and users don’t actively monitor them or look at them visually. Background operations are lengthy and require significant CPU power to complete during the long process. Power BI spreads CPU costs of background operations over 24 hours, so that capacities don't hit maximum resource usage due to too many refreshes running simultaneously. This allows Power BI Premium subscribers to run as many background operations as allowed by their purchased capacity SKU.
+* **Slow-running operations**, such as semantic model and dataflow refresh, are considered *background operations* since they typically run in the background and users don’t actively monitor them or look at them visually. Background operations are lengthy and require significant CPU power to complete during the long process. Power BI spreads CPU costs of background operations over 24 hours, so that capacities don't hit maximum resource usage due to too many refreshes running simultaneously. This allows Power BI Premium subscribers to run as many background operations as allowed by their purchased capacity SKU.
 
 * **Fast operations** like queries, report loads, and others are considered *interactive operations*. The CPU time required to complete those operations is aggregated, to minimize the number of 30-seconds windows that are impacted following that operation's completion.
 
 ## Premium background operation scheduling
 
-Refreshes are run on Premium capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Datasets and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process.
+Refreshes are run on Premium capacities at the time they are scheduled, or close to it, regardless of how many other background operations were scheduled for the same time. Semantic models and dataflows being refreshed are placed on a physical processing node that has enough memory available to load them, and then begin the refresh process.
 
-While processing the refresh, datasets may consume more memory to complete the refresh process. The refresh engine makes sure no item can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
+While processing the refresh, semantic models may consume more memory to complete the refresh process. The refresh engine makes sure no item can exceed the amount of memory that their base SKU allows them to consume (for example, 25 GB on a P1 subscription, 50 GB on a P2 subscription, and so on).
 
 ## How capacity size limits are enforced when viewing reports
 

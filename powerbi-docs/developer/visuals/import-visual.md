@@ -40,7 +40,7 @@ If you download or receive a Power BI visual file, you have to [import](#import-
    :::image type="content" source="media/import-visual/add-download-sample.png" alt-text="Screenshot of the Power BI visual description dialog, which shows the Add and Download Sample buttons are highlighted.":::
 
     > [!TIP]
-    > Select **Download Sample** to download a sample Power BI dataset and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
+    > Select **Download Sample** to download a sample Power BI semantic model and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
   
 6. When the visual is successfully imported, select **OK**.
 

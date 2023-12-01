@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/18/2023
+ms.date: 11/30/2023
 ms.custom:  
 ---
 
@@ -22,13 +22,16 @@ Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issues publish date |  
 |-----------|------------------------------------|---------|----------------------|
-|  532      |  Publish Content  |  [Sign in fails for securely embedded reports using Chrome browser](known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md)    | October 18, 2023  |
+|  571      |  Capacity Management  |  [Contributor can't update organizational app](known-issue-571-contributor-can-not-update-organizational-app.md)    | November 30, 2023  |
+|  570      |  Capacity Management  |  [Version 17 of the Fabric Capacity Metrics app doesn't work](known-issue-570-version-17-capacity-metrics-app-does-not-work.md)    | November 30, 2023  |
+|  552      |  Consume and View  |  [Autoscale not triggered by carry forward accumulated usage](known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md)    | November 22, 2023  |
+|  546      |  Consume and View  |  [Closing a Dataflow Gen1 takes you to the wrong workspace](known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md)    | November 15, 2023  |
+|  535      |  Consume and View  |  [New card visual formatting appears or disappears in Service](known-issue-535-new-card-visual-formatting-appears-disappears.md)    | October 25, 2023  |
+|  532      |  Publish Content  |  [Sign in fails for securely embedded reports using Chrome or Microsoft Edge browser](known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md)    | October 18, 2023  |
 |  526      |  Embedded, REST API or PowerShell  |  [Dataflow REST API returns more data sources and gateways than expected](known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md)    | October 18, 2023  |
-|  523      |  Consume and View  |  [Combo chart custom labels don't display](known-issue-523-combo-chart-custom-labels-dont-display.md)    | October 10, 2023  |
-|  522      |  Capacity Management  |  [Failures in the Fabric Capacity Metrics app](known-issue-522-failures-fabric-capacity-metrics-app.md)    | October 10, 2023  |
 |  482      |  Account & License  |  [Power BI Desktop sign-in prompt shows unsupported personal Microsoft accounts](known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md)    | August 10, 2023  |
 |  471      |  Embedded, REST API or PowerShell  |  [Power BI Embedded setup tool isn't responsive](known-issue-471-embedded-setup-tool-isnt-responsive.md)    | August 10, 2023  |
-|  461      |  Create and Author Data            |  [A scheduled refresh of a dataset intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
+|  461      |  Create and Author Data            |  [A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
 
 ## Recently closed known issues
@@ -37,11 +40,10 @@ Select the **Title** to view more information about that specific known issue. F
 
 |  Issue ID |  Area                              |  Title           |  Issues publish date |  Status  |
 |-----------|------------------------------------|------------------|---------------------|-----------|
+|  533      |  Account & License  |  [Unable to sign in on 32-bit Power BI Desktop](known-issue-533-unable-sign-in-32-bit-desktop.md)    | October 25, 2023  | Fixed: November 9, 2023 |
+|  523      |  Consume and View  |  [Combo chart custom labels don't display](known-issue-523-combo-chart-custom-labels-dont-display.md)    | October 10, 2023  | Fixed: November 9, 2023 |
+|  522      |  Capacity Management  |  [Failures in the Fabric Capacity Metrics app](known-issue-522-failures-fabric-capacity-metrics-app.md)    | October 10, 2023  | Fixed: November 9, 2023 |
 |  498      |  Consume and View  |  [Export to CSV file truncated at 300 rows](known-issue-498-export-csv-file-truncated-300-rows.md)    | September 7, 2023  | Fixed: October 18, 2023 |
-|  491      |  Gateway  |  [Cancel refresh operation fails using virtual network gateway](known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md)    | September 7, 2023  | Fixed: September 18, 2023 |
-|  465      |  Embedded, REST API or PowerShell  |  [Embedded report shows a black bar in edit mode](known-issue-465-embedded-report-shows-black-bar.md)    | July 27, 2023  | Fixed: August 24, 2023 |
-|  443      |  Power BI                    |   [Deployment pipeline stuck in loading](known-issue-443-deployment-pipeline-stuck-loading.md)    | July 27, 2023  | Fixed: August 24, 2023 |
-|  427      |  Administration                    |  [Tenant admin settings might not save correctly](known-issue-427-tenant-admin-settings-may-not-save-correctly.md)    | June 22, 2023  | Fixed: August 24, 2023 |
 
 ## Next steps
 

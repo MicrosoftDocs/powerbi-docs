@@ -13,7 +13,7 @@ ms.date: 04/06/2022
 
 This article targets Power BI Desktop data modelers. It describes star schema design and its relevance to developing Power BI data models optimized for performance and usability.
 
-This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (3rd edition, 2013) by Ralph Kimball et al.
+This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like *The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling* (3rd edition, 2013) by Ralph Kimball and others.
 
 ## Star schema overview
 
@@ -47,7 +47,7 @@ As described in this article, you should strive to develop optimized Power BI da
 
 Star schema design and many related concepts introduced in this article are highly relevant to developing Power BI models that are optimized for performance and usability.
 
-Consider that each Power BI report visual generates a query that is sent to the Power BI model (which the Power BI service calls a dataset). These queries are used to filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:
+Consider that each Power BI report visual generates a query that is sent to the Power BI model (which the Power BI service calls a semantic model—[previously known as a dataset](..\connect-data\service-datasets-rename.md)). These queries are used to filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:
 
 - Dimension tables support *filtering* and *grouping*
 - Fact tables support *summarization*

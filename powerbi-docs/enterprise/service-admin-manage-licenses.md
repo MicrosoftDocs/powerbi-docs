@@ -17,8 +17,7 @@ This article explains how admins can use the Microsoft 365 admin center or the A
 
 > [!NOTE]
 >
->It's possible for a user to have both a Power BI (free) and another Power BI Pro license assigned. This can happen when a user signs up for a free license and then is later assigned a Pro or Premium license. The highest licensing level takes effect in this case.
->
+>It's possible for a user to have both a Fabric (free) and another Power BI Pro license assigned. This can happen when a user signs up for a free license and then is later assigned a Pro or Premium license. The highest licensing level takes effect in this case.
 
 ## View your subscriptions
 
@@ -27,7 +26,7 @@ To see which Power BI subscriptions your organization has, follow these steps.
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. In the navigation menu, select **Billing** > **Your products**.
 
-Your active Power BI subscriptions are listed along with any other subscriptions you have. You may see an unexpected subscription for Power BI (free), as shown here.
+Your active Power BI subscriptions are listed along with any other subscriptions you have. You may see an unexpected subscription for Fabric (free), as shown here.
 
   ![Screenshot of the Power B I subscription, showing a free subscription.](media/service-admin-manage-licenses/power-bi-free-user-activated.png)
 

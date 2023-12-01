@@ -1,14 +1,14 @@
 ---
-title: 'Create a report from an Excel file in the Power BI service '
+title: 'Create a report from an Excel file in the Power BI service'
 description: Learn how to create a Power BI report from an Excel file in the Power BI service by using the Retail Analysis sample.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Create a report from an Excel file
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 09/22/2023
 LocalizationGroup: Reports
 ---
 # Create a report from an Excel file in the Power BI service
@@ -25,21 +25,21 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 
 This method of creating a report starts with a file and a blank report canvas. If you want to follow along, download the [Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for work or school.
 
-1. In the navigation pane, select **My Workspace**. Then select **New** > **Dataset**.
+1. In the navigation pane, select **My Workspace**. Then select **New** > **Semantic model**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of the Power BI service, highlighting New and Dataset.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of the Power BI service, highlighting New and Semantic model.":::
 
 1. Select **Excel**.
 
     :::image type="content" source="media/service-report-create-new/power-bi-excel.png" alt-text="Screenshot of the Add data to get started dialog, highlighting Excel.":::
 
-1. Select **Browse this device**. Go to the location where you saved the Retail Analysis sample then select **Open**.
+1. Select **Browse this device**. Go to the location where you saved your Excel file, or the Retail Analysis sample, then select **Open**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-files.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-files.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample." lightbox="media/service-report-create-new/power-bi-select-files.png":::
 
-    After the Excel file imports, it's listed as a *dataset* in the workspace list.
+    After the Excel file imports, it's listed as a *semantic model* in the workspace list.
 
-1. Next to the dataset, select **More options (...)**, and then choose **Create report**.
+1. Next to the semantic model, select **More options (...)**, and then choose **Create report**.
 
     :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="Screenshot of My workspace, highlighting more options and Create report.":::
 
@@ -54,7 +54,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
 ## Add a radial gauge to the report
 
-Now that our dataset is imported, let's start answering some questions. Our Chief Marketing Officer (CMO) wants to know how close the company is to meeting this year's sales goals. Learn how a gauge is a good visualization choice for displaying this type of information with [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md).
+Now that our semantic model is imported, let's start answering some questions. Our Chief Marketing Officer (CMO) wants to know how close the company is to meeting this year's sales goals. Learn how a gauge is a good visualization choice for displaying this type of information with [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md).
 
 1. In the Data pane, select **Sales** > **This Year Sales** > **Total Sales Variance**.
 

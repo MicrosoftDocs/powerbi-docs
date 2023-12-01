@@ -10,9 +10,9 @@ ms.date: 10/18/2023
 ms.custom: known-issue-498
 ---
 
-# Known issue - Export to CSV file truncated at 300 rows
+# Known issue - Export to CSV file is truncated at 300 rows
 
-When you select **Export data** on a tabular visual's options menu and choose to export to a **CSV file**, the resulting downloaded file is truncated to 300 rows, rather than showing all the available rows.
+When you select **Export data** on a tabular visual's options menu and choose to export to a **CSV file**, the resulting downloaded file is truncated to 300 rows, rather than showing all the available rows. 
 
 **APPLIES TO:** ✔️ Power BI
 

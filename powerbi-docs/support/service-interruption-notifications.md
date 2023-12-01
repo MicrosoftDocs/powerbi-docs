@@ -22,7 +22,7 @@ At this time, emails are sent for the following _reliability scenarios_:
 - Model refresh reliability
 - Query refresh reliability
 
-Notifications are sent when there's an _extended delay_ in operations like opening reports, dataset refresh, or query executions. After an incident is resolved, you receive a follow-up email.
+Notifications are sent when there's an _extended delay_ in operations like opening reports, semantic model refresh, or query executions. After an incident is resolved, you receive a follow-up email.
 
 > [!NOTE]
 > This feature is currently available only for capacities in Power BI Premium. It's not available for shared or embedded capacity.

@@ -32,7 +32,7 @@ You can also connect metrics to an existing report visual in Power BI. See [Crea
 You need a Power BI Pro license to author and share metrics in standard workspaces. You also need:
 
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
-- [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
+- [Build permission](../connect-data/service-datasets-build-permissions.md) for a semantic model.
 
 ## Step 1: Create a scorecard 
 
@@ -57,9 +57,9 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/metrics-move-scorecard-confirm.png" alt-text="Screenshot of confirmation to move a scorecard to another workspace, and a dropdown to select the correct workspace.":::
 
-    Power BI saves these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the metrics data. 
+    Power BI saves these items in the workspace: the scorecard itself, and a *semantic model* associated with your scorecard that houses all the metrics data. 
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and dataset that Power BI created.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and semantic model that Power BI created.":::
 
 ## Step 2: Create a manual metric
 

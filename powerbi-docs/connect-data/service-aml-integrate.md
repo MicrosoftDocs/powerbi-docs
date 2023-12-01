@@ -140,7 +140,7 @@ In My Workspace in the Power BI service, in the black header bar, select **More 
 
 :::image type="content" source="media/service-aml-integrate/settings-pbi.png" alt-text="Screenshot showing settings.":::
 
-Select **Datasets**, expand **Data source credentials**, then select **Edit Credentials**.
+Select **Semantic models**, expand **Data source credentials**, then select **Edit Credentials**.
 
 :::image type="content" source="media/service-aml-integrate/data-refresh.png" alt-text="Screenshot showing credential refresh.":::
 

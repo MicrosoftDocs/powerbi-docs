@@ -12,7 +12,7 @@ ms.date: 03/11/2022
 # Microsoft's BI transformation
 
 > [!TIP]
-> This article focuses on Microsoft's experience establishing a [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+> This article focuses on Microsoft's experience establishing a [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 This article targets IT professionals and IT managers. You'll learn about our BI strategy and vision, which enables us to continuously leverage our data as an asset. You'll also learn how we successfully drive a data culture of business decision making with Power BI.
 
@@ -86,7 +86,7 @@ We invite you to read the articles in this COE series to learn more. Let's help 
 For more information about this article, check out the following resources:
 
 - [Establish a Center of Excellence](center-of-excellence-establish.md)
-- [Power BI adoption roadmap: Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
+- [Fabric adoption roadmap: Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

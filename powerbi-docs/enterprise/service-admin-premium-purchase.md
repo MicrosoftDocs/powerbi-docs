@@ -18,7 +18,7 @@ This article describes how to purchase a Power BI Premium capacity for your orga
 For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
 
 > [!NOTE]
-> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity where it will continue to be accessible. However, you will not be able to view reports that are based on datasets that are greater than 1 GB or reports that require Premium capacities to render.
+> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity where it will continue to be accessible. However, you will not be able to view reports that are based on semantic models that are greater than 1 GB or reports that require Premium capacities to render.
 
 ## Purchase P SKUs for typical production scenarios
 
@@ -95,7 +95,7 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 #### When canceling or your license expires
 
-When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, your workspaces will move to a shared capacity and will still be accessible. However, you will not be able to view reports that are based on datasets that require Premium capacities to render. This includes datasets larger than 1GB and refreshes of those datasets.
+When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, your workspaces will move to a shared capacity and will still be accessible. However, you will not be able to view reports that are based on semantic models that require Premium capacities to render. This includes semantic models larger than 1GB and refreshes of those semantic models.
 
 ## Purchase A SKUs for testing and other scenarios
 

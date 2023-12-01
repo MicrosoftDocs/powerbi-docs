@@ -21,7 +21,7 @@ This article lists the main Power BI Premium features. Most of the features appl
 |--------|------------|
 |[Advanced AI](../transform-model/dataflows/dataflows-machine-learning-integration.md) |Use artificial intelligence (AI) with dataflows |
 |[Asynchronous refresh](../connect-data/asynchronous-refresh.md) |Perform asynchronous data-refresh operations |
-|[Automatic aggregations](aggregations-auto.md) |Optimize DirectQuery datasets |
+|[Automatic aggregations](aggregations-auto.md) |Optimize DirectQuery semantic models |
 |[Autoscale](service-premium-auto-scale.md) |Automatically add compute capability when your capacity is overloaded</br></br>Available for [Premium](service-premium-what-is.md) only |
 |[Backup and restore](service-premium-backup-restore-dataset.md) |Backup and restore data using XMLA endpoints |
 |[Bring your own key (BYOK)](service-encryption-byok.md) |Use your own keys to encrypt data</br></br>Available for [Premium](service-premium-what-is.md) and [Embedded](../developer/embedded/embedded-analytics-power-bi.md) |
@@ -31,9 +31,9 @@ This article lists the main Power BI Premium features. Most of the features appl
 |[DirectQuery with dataflows](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi) |Connect directly to your dataflow without having to import its data |
 |Hybrid tables (preview) |Incremental refresh augmented with real-time data |
 |[Insights](../create-reports/insights.md) (preview) |Explore and find insights such as anomalies and trends in your reports |
-|[Model size limit](service-premium-what-is.md#capacities-and-skus) |Available memory is set to:</br></br>*Premium* - The limit of memory footprint of a single Power BI dataset; see the column *Max memory per dataset* in the [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus) table</br></br>*Premium Per User (PPU)* - See [Considerations and limitations](service-premium-per-user-faq.yml#considerations-and-limitations)</br></br>*Embedded* - See the column *Max memory per dataset* in the [SKU memory and computing power](../developer/embedded/embedded-capacity.md#sku-memory-and-computing-power) table|
+|[Model size limit](service-premium-what-is.md#semantic-model-sku-limitation) |Available memory is set to:</br></br>*Premium* - The limit of memory footprint of a single Power BI semantic model; see the column *Max memory per semantic model* in the [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus) table</br></br>*Premium Per User (PPU)* - See [Considerations and limitations](service-premium-per-user-faq.yml#considerations-and-limitations)</br></br>*Embedded* - See the column *Max memory per semantic model* in the [SKU memory and computing power](../developer/embedded/embedded-capacity.md#sku-computing-power) table|
 |[Multi-geo](../admin/service-admin-premium-multi-geo.md) |Deploy content to data centers in regions other than the home region of your tenant</br></br>Available for [Premium](service-premium-what-is.md) and [Embedded](../developer/embedded/embedded-analytics-power-bi.md)  |
-|On-demand loading capabilities for large models |Improve report load time by loading datasets to memory on demand |
+|On-demand loading capabilities for large models |Improve report load time by loading semantic models to memory on demand |
 |[Power BI Report Server](./../report-server/get-started.md) |On-premises report server</br></br>Available for [Premium](service-premium-what-is.md) only |
 |Refresh rate |The ability to [refresh more than eight times a day](../connect-data/refresh-data.md#data-refresh)|
 |[Query caching](../connect-data/power-bi-query-caching.md) |Speed up reports by using local caching |

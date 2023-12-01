@@ -37,7 +37,7 @@ This tutorial covers the following.
 
 - A Power BI license. If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 - Access to a dashboard with one of the following types of tile: gauge, KPI, or card. 
-- A dataset that refreshes.
+- A semantic model that refreshes.
 
 ## Who can set alerts
 

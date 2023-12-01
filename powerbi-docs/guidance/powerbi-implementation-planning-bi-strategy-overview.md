@@ -31,7 +31,7 @@ We recommend that you pay special attention to these articles if your organizati
 - **Experiencing significant business or technological change:** Planning your BI strategy ensures that your organization can use change as momentum and not as an obstacle.
 - **Reevaluating your business strategy:** Your business strategy should influence your BI strategy, which in turn can lead to changes in your business strategy. All strategies should be in alignment in order to achieve your organizational goals.
 
-In short, this series of articles is about defining a BI strategy. It describes what a BI strategy is, why it's important, and how you can plan your BI strategy. The articles in this series are intended to complement the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+In short, this series of articles is about defining a BI strategy. It describes what a BI strategy is, why it's important, and how you can plan your BI strategy. The articles in this series are intended to complement the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 ## Become data-driven with a BI strategy
 
@@ -64,7 +64,7 @@ The diagram depicts the following concepts.
 > [!NOTE]
 > In this series, _goals_ are high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets to help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
 >
-> Further, _solutions_ are processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, or a Power BI dataset or report.
+> Further, _solutions_ are processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, or a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 Consider the following, high-level example for a hypothetical organization.
 
@@ -76,7 +76,7 @@ Consider the following, high-level example for a hypothetical organization.
 
 ### Relationship between BI strategy and data strategy
 
-Your BI strategy describes how [successful Power BI adoption](powerbi-adoption-roadmap-overview.md#power-bi-adoption) and [implementation](powerbi-implementation-planning-introduction.md) will deliver business value to your organization. However, a BI strategy transcends tools and technologies. While your BI strategy might start small, it can grow to encompass all of your analytical data, tools, and processes when you experience success. Furthermore, the concepts in a BI strategy are also important in a broader _data strategy_. While a BI strategy is about the use of data and tools for analytical purposes, a data strategy is concerned with the wider management and use of data within the organization. Thus, your BI strategy is a subset of your data strategy, as they share many related concepts.
+Your BI strategy describes how [successful Fabric adoption](fabric-adoption-roadmap.md#microsoft-fabric-adoption) and [Power BI implementation](powerbi-implementation-planning-introduction.md) will deliver business value to your organization. However, a BI strategy transcends tools and technologies. While your BI strategy might start small, it can grow to encompass all of your analytical data, tools, and processes when you experience success. Furthermore, the concepts in a BI strategy are also important in a broader _data strategy_. While a BI strategy is about the use of data and tools for analytical purposes, a data strategy is concerned with the wider management and use of data within the organization. Thus, your BI strategy is a subset of your data strategy, as they share many related concepts.
 
 The following diagram depicts how a BI strategy is a subset of a data strategy, and how they share concepts related to data culture and technology.
 
@@ -88,7 +88,7 @@ The diagram depicts the following concepts.
 | :-: | --- |
 | ![Item 1.](media/common/icon-01-red-30x30.png) | A data strategy describes the goals and priorities for the wider use and management of data in an organization. A data strategy encompasses more than only BI. |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | The BI strategy is a subset of a data strategy. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | [Data culture](powerbi-adoption-roadmap-data-culture.md#data-culture-vision) is important in both a BI strategy and a data strategy. Different data culture areas describe a vision for behaviors, values, and processes that enable people to work effectively with data. An example of a data culture area is data literacy. |
+| ![Item 3.](media/common/icon-03-red-30x30.png) | [Data culture](fabric-adoption-roadmap-data-culture.md#data-culture-vision) is important in both a BI strategy and a data strategy. Different data culture areas describe a vision for behaviors, values, and processes that enable people to work effectively with data. An example of a data culture area is data literacy. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | Technology is important in both a BI strategy and a data strategy. Different technical areas support the business data needs and use cases. An example of a technical area is data visualization. |
 
 A BI strategy can encompass many data culture and technical areas. However, when planning your BI strategy, you should be cautious not to attempt to address too many of these areas at first. A successful BI strategy starts small. It focuses on a few prioritized areas and broadens scope over time, ensuring consistent progress. Later, as you experience sustainable success with your BI strategy, it can incrementally evolve to encompass more areas.
@@ -140,13 +140,13 @@ In this example, the BI goals and priorities are:
 
 #### Objectives
 
-To achieve their BI goals, the BI team conducts tactical planning to identify and describe their short-term objectives. The BI team creates a [data literacy](powerbi-adoption-roadmap-data-culture.md#data-literacy) program for the salespeople. Also, the BI team drafts a user enablement plan and an accountability plan for salespeople who want to perform self-service analytics. These plans allow the salespeople to request access to data after they've completed specific training materials and signed a [self-service user acknowledgment](powerbi-adoption-roadmap-system-oversight.md#user-responsibilities).
+To achieve their BI goals, the BI team conducts tactical planning to identify and describe their short-term objectives. The BI team creates a [data literacy](fabric-adoption-roadmap-data-culture.md#data-literacy) program for the salespeople. Also, the BI team drafts a user enablement plan and an accountability plan for salespeople who want to perform self-service analytics. These plans allow the salespeople to request access to data after they've completed specific training materials and signed a [self-service user acknowledgment](fabric-adoption-roadmap-system-oversight.md#user-responsibilities).
 
 In this example, the BI objectives are:
 
 - **Data literacy:** Ensure that 90 percent of the salespeople complete the data literacy program.
-- **Content ownership:** Adopt the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario, where central teams manage central, certified Power BI datasets and reports. Some self-service content creators can connect to these datasets for their own analysis and reporting needs.
-- **Mentoring and user enablement:** Create a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) to share [training resources](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training-resources-and-approaches), [template files](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#template-files), and host weekly [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) Q&A sessions.
+- **Content ownership:** Adopt the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario, where central teams manage central, certified Power BI semantic models and reports. Some self-service content creators can connect to these semantic models for their own analysis and reporting needs.
+- **Mentoring and user enablement:** Create a [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) to share [training resources](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training-resources-and-approaches), [template files](fabric-adoption-roadmap-mentoring-and-user-enablement.md#power-bi-template-files), and host weekly [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) Q&A sessions.
 - **Governance:** Draft a [tenant-wide monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md) for user activities based on data from the [Power BI activity log](/power-bi/enterprise/service-admin-auditing), and identify data democratization and data discovery priorities for the next quarter.
 - **Data engineering:** Design and start a proof of concept for a [medallion lakehouse architecture](/azure/databricks/lakehouse/medallion) to store the sales and profitability data.
 - **Data security:** Define and implement data security rules for BI solutions.
@@ -157,10 +157,10 @@ In this example, the BI objectives are:
 To achieve its objectives, the organization aims to design and deploy the following BI solutions.
 
 - Central BI teams will work to store profitability data for customers and products in a unified lakehouse.
-- Central BI teams will publish an enterprise semantic model as a Power BI dataset that includes all data required for central reporting and key self-service reporting scenarios.
-- Security rules applied to the Power BI dataset enforce that salespeople can only access data for their assigned customers.
+- Central BI teams will publish an enterprise semantic model as a Power BI semantic model that includes all data required for central reporting and key self-service reporting scenarios.
+- Security rules applied to the Power BI semantic model enforce that salespeople can only access data for their assigned customers.
 - Central BI teams will create central reports that show aggregate sales and profitability across regions and product groups. These central reports will support more sophisticated analysis by using interactive visualizations.
-- Salespeople can connect directly to the BI dataset to perform [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) and answer specific, one-off business questions.
+- Salespeople can connect directly to the BI semantic model to perform [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) and answer specific, one-off business questions.
 
 > [!NOTE]
 > This example describes a simple scenario for the purpose of explaining the three planning levels of a BI strategy. In reality, your strategic BI goals, objectives, and BI solutions are likely to be more complex.
@@ -204,7 +204,7 @@ The diagram shows three levels of BI strategy planning, which are each described
 1. **[BI solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md):** This article describes how you design and build BI solutions that support the BI objectives. You first assemble a project team that's responsible for a solution in the prioritized solution backlog. The project team first gathers requirements to define the solution design. Next, it plans for deployment and conducts a proof of concept (POC) of the solution to validate assumptions. If the POC is successful, the project team creates and tests content with iterative cycles that gradually onboard the user community. When ready, the project team deploys the solution to production, supporting and monitoring it as needed.
 
 > [!TIP]
-> Before you read the BI strategy articles, we recommend that you're already familiar with the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md). The adoption roadmap describes considerations to achieve Power BI adoption and a healthy data culture. These BI strategy articles build upon the adoption roadmap.
+> Before you read the BI strategy articles, we recommend that you're already familiar with the [Fabric adoption roadmap](fabric-adoption-roadmap.md). The adoption roadmap describes considerations to achieve Fabric adoption and a healthy data culture. These BI strategy articles build upon the adoption roadmap.
 
 ## Next steps
 
