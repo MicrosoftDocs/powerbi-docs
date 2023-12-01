@@ -57,13 +57,13 @@ You can change this default behavior by changing the value of the **Interpret su
 
 - *Expression* must not contain nested aggregates that specify *recursive*.
 
-For more information, see [Aggregate Functions Reference (Power BI Report Builder)](../report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
+For more information, see [Aggregate Functions Reference (Power BI Report Builder)](report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
 
 For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups (Power BI Report Builder)](./creating-recursive-hierarchy-groups-report-builder.md).
 
 ## Compare the Aggregate and Sum Functions
 
-The **Aggregate** function differs from numeric aggregate functions like **Sum** in that the **Aggregate** function returns a value that is calculated by the data provider or data processing extension. Numeric aggregate functions like **Sum** return a value that is calculated by the report processor on a set of data from the dataset that is determined by the *scope* parameter. For more information, see the aggregate functions listed in [Aggregate Functions Reference (Power BI Report Builder)](../report-builder-functions-aggregate-functions-reference.md).
+The **Aggregate** function differs from numeric aggregate functions like **Sum** in that the **Aggregate** function returns a value that is calculated by the data provider or data processing extension. Numeric aggregate functions like **Sum** return a value that is calculated by the report processor on a set of data from the dataset that is determined by the *scope* parameter. For more information, see the aggregate functions listed in [Aggregate Functions Reference (Power BI Report Builder)](report-builder-functions-aggregate-functions-reference.md).
 
 ## Example
 

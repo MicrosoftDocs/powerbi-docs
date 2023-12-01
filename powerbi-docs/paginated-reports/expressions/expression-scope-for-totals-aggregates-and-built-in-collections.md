@@ -72,7 +72,7 @@ As the report processor combines data from a report dataset with the tablix data
 
 In some locations of a report, you must specify a scope. For example, for a text box on the design surface, you must specify the name of the dataset to use: `=Max(Fields!Sales.Value,"Dataset1")`. In other locations, there is an implicit default scope. For example, if you do not specify an aggregate for a text box in a group scope, the default aggregate First is used.
 
-Each aggregate function topic lists the scopes that are valid for its use. For more information, see [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md).
+Each aggregate function topic lists the scopes that are valid for its use. For more information, see [Aggregate Functions Reference (Power BI Report Builder)](report-builder-functions-aggregate-functions-reference.md).
 
 ## <a id="Examples"></a> Example Aggregate Expressions for a Table Data Region
 
@@ -117,7 +117,7 @@ For more information about these subjects:
 - Interpreting visual cues on tablix data regions: [Tablix Data Region Cells, Rows, and Columns (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
 - The tablix data region: [Tablix Data Region Cells, Rows, and Columns (Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
 - Expressions: [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
-- Aggregates: [Aggregate Functions Reference (Power BI Report Builder)](../report-builder-functions-aggregate-functions-reference.md).
+- Aggregates: [Aggregate Functions Reference (Power BI Report Builder)](report-builder-functions-aggregate-functions-reference.md).
 
 ## <a id="Sparklines"></a> Synchronize Scales for Sparklines
 

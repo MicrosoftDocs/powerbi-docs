@@ -99,7 +99,7 @@ In your report, you can write expressions that reference the current page names 
 
 These properties are useful when you export reports to Excel workbooks. Use the *InitialPage* property to specify a default name for the worksheet tab name when you export the report, and use page breaks and the *PageName* property to provide different names for each worksheet. Each new report page, defined by a page break, is exported to a different worksheet named by the value of the *PageName* property. If PageName is blank, but the report has an initial page name, then all worksheets in the Excel workbook use the same name, the initial page name.  
   
-For more information about how these properties work when reports are exported to Excel, see [Exporting to Microsoft Excel](../report-builder/export-microsoft-excel-report-builder.md) in the Report Builder and Reporting Services documentation.  
+For more information about how these properties work when reports are exported to Excel, see [Exporting to Microsoft Excel](report-builder/export-microsoft-excel-report-builder.md).  
   
 ## Next steps
 
