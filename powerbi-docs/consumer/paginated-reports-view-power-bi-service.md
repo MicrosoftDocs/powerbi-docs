@@ -39,7 +39,7 @@ You can also export paginated reports to many formats:
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-select-parameters.png" alt-text="Screenshot of the Parameters to view the report with the required field highlighted.":::
 
-1. When you have a multiple-page report, use the page through feature. You can use the arrows at the top of the page or type a page number in the box. Look at the following example to see where to find the page through feature.
+1. When you have a multiple-page report, use the page through feature. You can use the arrows at the top of the page or type a page number in the box. The following example shows where to find the page through feature.
 
     :::image type="content" source="media/paginated-reports-view-power-bi-service/paginated-report-page-through.png" alt-text="Screenshot of the Page through feature to view the report highlighted.":::
 
