@@ -9,6 +9,10 @@
       href: known-issues/power-bi-known-issues.md
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
+    - name: Contributor can't update organizational app
+      href: known-issues/known-issue-571-contributor-can-not-update-organizational-app.md
+    - name: Version 17 of the Fabric Capacity Metrics app doesn't work
+      href: known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md
     - name: Autoscale not triggered by carry forward accumulated usage
       href: known-issues/known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md
     - name: Closing a Dataflow Gen1 takes you to the wrong workspace

@@ -20,9 +20,9 @@ LocalizationGroup: Admin
 
 In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data like with import mode. Any changes at the data source are immediately reflected in the query results.
 
-On the other hand, with import mode, performance can be better because the data is cached and optimized for business-intelligence queries without having to query the data source for each DAX query submitted by a report. However, the Power BI engine must first copy any new data into the model during refresh. Any changes at the source are only picked up with the *next* model refresh.
+On the other hand, with import mode, performance can be better because the data is cached and optimized for DAX and MDX report queries without having to translate and pass SQL or other types of queries to the data source. However, the Power BI engine must first copy any new data into the model during refresh. Any changes at the source are only picked up with the next model refresh.
 
-Direct Lake mode eliminates the import requirement by loading the data directly from OneLake. Unlike DirectQuery, there is no translation to other query languages or query execution on other database systems, yielding performance similar to import mode. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large models and models with frequent updates at the data source.
+Direct Lake mode eliminates the import requirement by loading the data directly from OneLake. Unlike DirectQuery, there is no translation from DAX or MDX to other query languages or query execution on other database systems, yielding performance similar to import mode. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large models and models with frequent updates at the data source.
 
 ## Prerequisites
 
@@ -86,7 +86,7 @@ To learn more about tool support through the XMLA endpoint, see [Semantic model 
 
 ## Fallback
 
-Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, if a DAX query on a Direct Lake model exceeds limits for the SKU, or uses features that don’t support Direct Lake mode, like SQL views in a Warehouse, the query can fall back to DirectQuery mode. In DirectQuery mode, queries use SQL to retrieve the results from the SQL endpoint of the Lakehouse or Warehouse, which can impact DAX query performance. You can [disable fallback](#fallback-behavior) to DirectQuery mode if you want to process DAX queries in pure Direct Lake mode only. Disabling fallback is recommended if you don’t need fallback to DirectQuery. It can also be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
+Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, if a DAX query on a Direct Lake model exceeds limits for the SKU, or uses features that don’t support Direct Lake mode, like SQL views in a Warehouse, the query can fall back to DirectQuery mode. In DirectQuery mode, queries use SQL to retrieve the results from the SQL endpoint of the Lakehouse or Warehouse, which can impact query performance. You can [disable fallback](#fallback-behavior) to DirectQuery mode if you want to process DAX queries in pure Direct Lake mode only. Disabling fallback is recommended if you don’t need fallback to DirectQuery. It can also be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 ***Guardrails*** define resource limits for Direct Lake mode beyond which a fallback to DirectQuery mode is necessary to process DAX queries. For details about how to determine the number of parquet files and row groups for a delta table, refer to the [Delta table properties reference](/azure/databricks/delta/table-properties#delta-table-properties).
 
@@ -151,8 +151,6 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Direct Lake models created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
 
-- If using the Web modeling experience, if a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the model. For the model to reflect the change, the table must be removed from the model and then added back. To remove the table from the model, in the Web modeling experience's **Edit model** dialog, deselect the table and confirm. Then select it and confirm to add the table back.
-
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
 
 - DateTime relationships are not supported in Direct Lake models.
@@ -170,6 +168,15 @@ You may want to disable if, for example, you need to allow completion of data pr
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
 - Tables based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
+
+- Currently, when creating a *new* Direct Lake semantic model from the Lakehouse or SQL analytics endpoint in the Power BI service, any model items created in the *default* model are also added to the new model. These items can include measures, relationships, and properties such a format strings and data category. While these items can be changed in the new model,  those changes aren't reflected back to the default model. In a future update, only relationships can be optionally added when creating a new model.
+
+- Currently, for an *existing* Direct Lake model, if you're using the **Edit data model** experience in the Power BI service, one or more of the following can apply:
+
+    - If a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the model. For the model to reflect the change, the table must be removed from the model and then added back. To remove the table, select **Edit tables**, deselect the table, and then **Confirm**. Select **Edit tables** again, select the table again, and then confirm. All measures in the table must be moved to other tables or removed from the table before you can remove the table. In a future update, changes happen automatically as part of schema refresh.
+    - If an existing delta table in the Lakehouse is renamed, that change isn't automatically reflected in the model. For the model to reflect the change, the table must be selected again from **Edit tables**. The table with the old name remains in the model and any visuals using the table show an error. The table can't be removed directly but it can be hidden. To remove it, in the Lakehouse, rename the table back to the original name. You can then remove it by unchecking the box in the Edit tables dialog. When removed from the model, the table can be renamed in the Lakehouse and then brought back in by using the Edit tables dialog. In a future update, renames happen automatically as part of schema refresh.
+    - If an existing delta table is removed from the Lakehouse, that change isn't automatically reflected in the model. The table remains and any visuals using it show an error. The table can't be removed but it can be hidden. In a future update, tables are removed automatically as part of schema refresh.
+    - If an *existing* measure, relationship, or other model property from the default/auto-generated model is removed, changed, or added, that change isn't automatically reflected in the model. For the model to reflect the change, the table with the updates must be removed and then added back. To remove the table, select **Edit tables**, deselect the table and then confirm. Select **Edit tables** again, select the table again, and then confirm. All measures in the table must be moved to other tables or removed before you can remove the table. In a  future update, there will be additional options for keeping changes.
 
 ## Get started
 
