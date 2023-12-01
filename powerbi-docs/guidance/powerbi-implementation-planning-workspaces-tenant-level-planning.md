@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/04/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: Tenant-level workspace planning
@@ -17,7 +17,7 @@ ms.date: 10/04/2023
 This article covers tenant-level Fabric workspace planning, with an emphasis on the Power BI experience. It's primarily targeted at:
 
 - **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing analytics and supporting self-service users throughout the organization.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing data and BI and supporting self-service users throughout the organization.
 
 Secondarily, this article might also be of interest to self-service creators who need to create, publish, and manage content in workspaces.
 
@@ -35,7 +35,7 @@ The decision on who is allowed to create workspaces in the Power BI service is a
 - **All (or most) users are permitted to create new workspaces:** This approach usually aligns with existing decisions for other applications. For example, when users are permitted to create their own SharePoint sites or Teams channels, it makes sense that Fabric adopts the same policy.
 - **Limited to a selective set of users who are permitted to create new workspaces:** This approach usually indicates a governance plan is in place or is planned. Managing this process can be fully centralized (for instance, only IT is permitted to create a workspace). A more flexible and practical approach is when it's a combination of centralized and decentralized individuals. In this case, certain satellite members of the Center of Excellence (COE), champions, or trusted users have been trained to create and manage workspaces on behalf of their business unit.
 
-You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces.
+You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces. For more information, see [Govern workspaces](powerbi-implementation-planning-tenant-administration.md#govern-workspaces).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -117,6 +117,8 @@ Here are some considerations when planning for Fabric domains in your tenant.
 - **Who will be authorized to manage a domain?** Members of the _Domain admin_ role are authorized to manage an existing domain. When possible, assign domain administrator(s) who directly own and manage the content for the domain. Domain administrators should be experts who are familiar with internal, regional, and governmental regulations for the subject area. They should also be familiar with all internal governance and security requirements. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
 - **Who will be allowed to assign workspaces to a domain?** Members of the _Domain contributor_ role define which users (who are also workspace administrators) can assign a workspace to a domain. If you allow more users to assign workspaces to a domain, you should frequently audit the accuracy of the assigned groupings. If you allow only specific groups of users, or Fabric admins and Domain admins, you'll have more control over how they're assigned. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
 - **Are there specific compliance needs or restrictions, such as geographic area?** Keep in mind that the geographic area for data storage is set for each capacity (rather than for the domain). Consider how assigning a workspace to a domain—and to a capacity—affects your planning process.
+
+For more information, see [Govern domains](powerbi-implementation-planning-tenant-administration.md#govern-domains).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

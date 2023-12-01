@@ -7,20 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/25/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
 # Configure semantic model scale-out
 
-> [!IMPORTANT]
-> Semantic model scale-out is currently in **preview**.
+You can enable scale-out in Power BI service, or using the Power BI Datasets REST APIs. Before configuring semantic model, read the [Power BI semantic model scale-out](service-premium-scale-out.md) overview.
 
-This article describes using the [Power BI Datasets REST APIs](/rest/api/power-bi/datasets/update-dataset-in-group) to configure semantic model scale-out.
+## Enable scale-out in Power BI service
 
-Before configuring semantic model scale-out, be sure to read the [Power BI semantic model scale-out](service-premium-scale-out.md) overview.
+To enable scale-out for your semantic model in Power BI service, follow these steps:
 
-## Get datasetId
+1. In Power BI service, open the workspace with the semantic model you want to enable scale-out for.
+
+2. Select the semantic model's *more options* (**...**).
+
+3. From the menu, select **Settings**.
+
+4. In the setting's page, enable the [Large semantic model storage format](service-premium-large-models.md) if it's not enabled.
+
+5. Enable *Query scale-out* and select *Apply*.
+
+    :::image type="content" source="media/service-premium-scale-out-configure/scale-out.png" alt-text="A screenshot showing how to enable scale out in Power BI service.":::
+
+## Enable scale-out using the Datasets REST APIs
+
+This section describes using the [Power BI Datasets REST APIs](/rest/api/power-bi/datasets/update-dataset-in-group) to configure semantic model scale-out.
+
+### Get datasetId
 
 To get the datasetId, use [Get-PowerBIDataset](/powershell/module/microsoftpowerbimgmt.data/get-powerbidataset?view=powerbi-ps&preserve-view=true). You must specify a workspaceId and semantic model name.
 
@@ -39,7 +54,7 @@ Write-Host "Workspace Id: $workspaceId"
 Write-Host "Dataset Id: $datasetId"
 ```
 
-## Get current scale-out configuration
+### Get current scale-out configuration
 
 Before configuring semantic model scale-out, determine the current configuration.
 
@@ -71,7 +86,7 @@ else
 }
 ```
 
-## Enable semantic model scale-out
+### Enable semantic model scale-out
 
 To enable semantic model scale-out, set `maxReadOnlyReplicas` to `-1`, or any non-0 value. A value of `-1` allows Power BI to create as many read-only replicas as your Power BI capacity supports. You can also explicitly set the replica count to a value lower than that of the capacity maximum. Setting `maxReadOnlyReplicas` to `-1` is recommended.
 
@@ -104,7 +119,7 @@ Invoke-PowerBIRestMethod -Url "groups/$workspaceId/datasets/$datasetId" -Method 
      }
 ```
 
-## Disable semantic model scale-out
+### Disable semantic model scale-out
 
 To disable semantic model scale-out, set `maxReadOnlyReplicas` to `0`.
 
@@ -139,14 +154,10 @@ Invoke-PowerBIRestMethod -Url "groups/$workspaceId/datasets/$datasetId" -Method 
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI semantic model scale-out](service-premium-scale-out.md)
+* [Power BI semantic model scale-out](service-premium-scale-out.md)
 
-> [!div class="nextstepaction"]
-> [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
+* [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
 
-> [!div class="nextstepaction"]
-> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
 
-> [!div class="nextstepaction"]
-> [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)
+* [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)

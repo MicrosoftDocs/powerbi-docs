@@ -75,21 +75,6 @@ Before you leave the **Setup** tab, you can decide if you want to allow app user
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
 
-#### Allow access to hidden content
-
-Also, before you leave the **Setup** tab, you can decide if you want users to have access to hidden content.
-
-> [!CAUTION]
-> If users have a direct link to *any* of the content in your app, they can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
-
-1. Expand **Advanced settings**.
-
-1. Under **Access to hidden content**, slide the toggle to **On**.
-
-    :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content.":::
-
-1. Select **Next: [Add content](#add-content-to-the-app)**.
-
 ### Add content to the app
 
 On the **Content** tab, you add the content from the workspace to the app.
@@ -148,7 +133,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     >[!IMPORTANT]
     >
-    >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you select [Allow access to hidden content](#allow-access-to-hidden-content), a user with a direct link to *any* of the content in the app can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
+    >- Hiding content from the audience makes it unavailable in the published app for that audience.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.

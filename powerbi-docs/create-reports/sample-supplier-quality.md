@@ -26,13 +26,13 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Supplier Quality Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. Get the sample in one of the following ways:
 
-- Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
-- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
+* Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
+* Download the [.pbix file](#get-the-pbix-file-for-this-sample).
+* Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the built-in sample
 

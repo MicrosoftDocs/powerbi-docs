@@ -22,6 +22,7 @@ Power BI has several samples that you can either download in the Power BI servic
 This tutorial shows you how to:
 
 > [!div class="checklist"]
+>
 > - Sign up for a Power BI license, if you don't have one.
 > - Import the Retail Analysis sample and add it to the Power BI service.
 > - Explore the sample in the service.
@@ -35,7 +36,7 @@ If you want to familiarize yourself with the built-in sample in this tutorial an
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
 
