@@ -315,7 +315,7 @@ After configuring and running the *embed for your customers* sample application,
 
 Users need permission to access the Power BI folder the report is in. When you grant a user permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)

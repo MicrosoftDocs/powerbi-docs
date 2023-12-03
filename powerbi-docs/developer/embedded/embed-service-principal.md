@@ -294,7 +294,7 @@ After your content is embedded, you're ready to [move to production](move-to-pro
 * Service principal only supports some read-only admin APIs. To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../enterprise/read-only-apis-service-principal-authentication.md).
 * When you use service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose doesn't work.
 
-## Next steps
+## Related content
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)

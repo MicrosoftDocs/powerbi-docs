@@ -119,7 +119,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
   * For a **service principal**, token generation fails.
   * For a **master user**, token generation succeeds but the data isn't filtered (all the data is returned).
 
-## Next steps
+## Related content
 
 * [RLS guidance](../../guidance/rls-guidance.md)
 * [Generate an embed token](generate-embed-token.md)

@@ -49,7 +49,7 @@ For instructions on how to embed reports or other items, go to the link that bes
 * Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (*App owns data* scenario only).
 * Although RLS settings don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
 
-## Next steps
+## Related content
 
 * [Generate an embed token](./generate-embed-token.md)
 * [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md)

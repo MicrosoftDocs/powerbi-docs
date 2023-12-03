@@ -193,7 +193,7 @@ For more information on embedding tokens, see [Embedded analytics access tokens]
 * Paginated reports don't support client-side events (like `loaded` or `rendered`).
 * Embedding paginated reports with a real-time dataset (push dataset) is not supported.
 
-## Next steps
+## Related content
 
 * [Tutorial: Embed a Power BI report in an application for your organization](embed-organization-app.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)

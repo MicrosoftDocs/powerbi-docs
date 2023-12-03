@@ -645,7 +645,7 @@ The axis along the side, the vertical axis.
 
 ## Z
 
-## Next steps
+## Related content
 
 * [Basic concepts for Power BI service consumer](../../consumer/end-user-basic-concepts.md)
 * [Basic concepts for designers](../../fundamentals/service-basic-concepts.md)

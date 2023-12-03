@@ -380,7 +380,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
   * Visio
   * ArcGIS visuals
 
-## Next steps
+## Related content
 
 Review how to embed content for your customers and your organization:
 

@@ -26,7 +26,7 @@ To import a Power BI visual from a file, see [Import a visual file from your loc
 
 If you're a web developer interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI circle card visual](develop-circle-card.md) and [publish a Power BI visual to AppSource](office-store.md).
 
-## Next steps
+## Related content
 
 * [Develop a Power BI circle card visual](develop-circle-card.md)
 * [Power BI visuals project structure](visual-project-structure.md)

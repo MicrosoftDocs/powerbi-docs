@@ -73,7 +73,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 [See restrictions for OLS models](/analysis-services/tabular-models/object-level-security#restrictions)
 
-## Next steps
+## Related content
 
 [Object-level security in Azure Analysis Services](/analysis-services/tabular-models/object-level-security)
 

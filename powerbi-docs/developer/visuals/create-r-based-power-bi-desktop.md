@@ -308,7 +308,7 @@ Now you can package the visual and import it to any Power BI report.
 
 ![R visual settings with changed value](./media/create-r-based-power-bi-desktop/r-final-settings-value.png)
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).

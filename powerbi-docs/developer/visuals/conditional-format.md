@@ -210,6 +210,6 @@ Conditional formatting isn't supported for the following visuals:
 
 We recommend that you don’t use conditional formatting with series. Instead, you should allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
 
-## Next steps
+## Related content
 
 [DataViewUtils](utils-dataview.md)

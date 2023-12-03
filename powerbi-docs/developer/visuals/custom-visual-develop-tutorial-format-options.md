@@ -235,7 +235,7 @@ Now that the visual is completed and ready to be used, it's time to package it. 
 
 When your visual is ready, follow the directions in [Package a Power BI visual](./package-visual.md) and then, if you want, share it with others so they can [import](./import-visual.md) and enjoy it. 
 
-## Next steps
+## Related content
 
 * [Create a Power BI bar chart visual](create-bar-chart.md)
 * [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)

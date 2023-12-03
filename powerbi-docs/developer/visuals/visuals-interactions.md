@@ -40,7 +40,7 @@ The following code sample shows how to use the `allowInteractions` flag to set i
 
 For more information about using the `allowInteractions` flag, see the [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001).
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Visual API](visual-api.md)

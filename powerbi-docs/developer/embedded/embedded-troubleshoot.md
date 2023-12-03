@@ -356,7 +356,7 @@ For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
 
 For further assistance, [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 >[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)

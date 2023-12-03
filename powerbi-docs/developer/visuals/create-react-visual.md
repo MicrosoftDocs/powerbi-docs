@@ -754,7 +754,7 @@ Experiment with the visual's color and border thickness, which you can now contr
 >[!div class="mx-imgBorder"]
 >![A screenshot of the react circle card visual in Power B I service, showing the color and border thickness format options.](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
-## Next steps
+## Related content
 
 * [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 * [Create a Power BI bar chart visual](create-bar-chart.md)

@@ -64,7 +64,7 @@ For a full example, see the [Power BI visualizations](https://github.com/Microso
     @import (less) "node_modules/bootstrap/dist/css/bootstrap.css";
     ```
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Set up your environment for developing a Power BI visual](environment-setup.md)

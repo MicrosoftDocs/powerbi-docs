@@ -537,7 +537,7 @@ After you've followed all previous steps, you're ready to run your application. 
 
 When your app is ready, you can [move your embedded app to production](move-to-production.md).
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 >[Embedded analytics application tokens](embed-tokens.md)

@@ -80,7 +80,7 @@ You can also assign a workspace to a capacity from the settings of that workspac
 
    :::image type="content" source="media/move-to-production/premium-workspace.png" alt-text="Screenshot of the Power BI service. In the Workspaces list, a diamond is visible next to the name of a workspace that has a capacity assigned to it.":::
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
