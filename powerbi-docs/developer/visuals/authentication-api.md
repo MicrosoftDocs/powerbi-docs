@@ -14,9 +14,9 @@ ms.date: 11/30/2023
 
 The Authentication API enables visuals to obtain Microsoft Entra ID (formally known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
 
-Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting is Off.
+Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting blocks (disables) the API.
 
-The API is applicable only for AppSource visuals, providing enhanced security and control. Visuals that are under development can be tested in debug mode before they're published.
+The API is applicable only for AppSource visuals, and not for private visuals. Visuals that are under development can be tested in debug mode before they're published.
 
 ## Supported environments
 
@@ -33,12 +33,13 @@ The following environments aren't yet supported:
 
 * Sovereign clouds
 * RS Service
-* Embedded
-* Teams (Microsoft Entra ID dialogs aren't supported in Teams)
+* Embedded analytics
+* Teams (partially supported if consents are granted in advance)
 
 ## How to use the Authentication API
 
-In the *capabilities.json* file, add the "AADAuthentication" privilege with your Microsoft Entra ID registered application URI:
+In the *capabilities.json* file, add the "AADAuthentication" privilege with your Microsoft Entra ID registered application URI. Fabric will generate a token with this audience, and deliver it to the visual.  
+For example, the following token can be used by the backend service of your visual implemented by the app with audience `https://contoso.com`:
 
 ```json
 "privileges": [
@@ -61,7 +62,7 @@ The newly exposed **AcquireAADTokenService** contains two methods:
   * *Allowed*: The privilege is allowed in the current environment.
   * *NotDeclared*: The privilege declaration is missing in visual capabilities section.
   * *NotSupported*: The privilege isn't supported in the current environment.
-  * *DisabledByAdmin*: The tenant administrator denied privilege usage.
+  * *DisabledByAdmin*: The Fabric administrator denied privilege usage.
 
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
@@ -93,10 +94,14 @@ Authentication is blocked if any of the following conditions apply:​
 
 * The user isn't signed in (in Desktop).
 
-* The admin or user didn't give consent.
-
 * The ISV didn't preauthorize the Power BI application.
 
-* The format of the AADAuthentication Privilege parameter is invalid.
+* The format of the AADAuthentication privilege parameter is invalid.
 
-* The visual isn't publicly approved and isn't in Debug Visual mode.
+* The visual isn't publicly approved and isn't in *debug visual* mode.
+
+* The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents about the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant admin consent](entra-id-authentication#consenting-the-isv-app).
+
+## Related content
+
+[Microsoft Entra ID application setup](entra-id-authentication)

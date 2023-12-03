@@ -12,7 +12,7 @@ ms.date: 11/22/2023
 
 # Microsoft Entra ID application setup
 
-To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and preauthorize the Power BI applications with a dedicated scope for each visual. The tenant admin then needs to grant consent. This article outlines both of these essential steps.
+To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and pre-authorize the Power BI applications with a dedicated scope for each visual. The tenant admin then needs to grant consent. This article outlines all of these essential steps.
 
 ## Register the app in Microsoft Entra
 
@@ -33,21 +33,21 @@ To leverage the Authentication API, the ISV must first register an application i
 
     :::image type="content" source="./media/entra-id-authentication/expose-api.png" alt-text="Screenshot of the Expose an API page of the Microsoft Entra ID registration app.":::
 
-1. Select the **+ Add a scope** button and enter your application URI in the right hand **Add a scope** window. Configure the registered Microsoft Entra ID application URI with your private domain. The URI must meet the following requirements.
+1. Select the **+ Add a scope** button and enter your application URI in the right hand **Add a scope** window. Configure the registered Microsoft Entra ID application URI with your custom verified domain. The URI must meet the following requirements.
 
-   * It should start with *https://*.
-   * It should not contain *onmicrosoft.com*.  
-   * It should exclude spaces and URL-encoded spaces.
+   * Should start with *https://*.
+   * Should match one of your [verified Custom domain names](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Domains).
+   * Should not be the default domain name type *onmicrosoft.com*.  
 
 1. Select **Save and continue**.
 
    :::image type="content" source="./media/entra-id-authentication/add-scope.png" alt-text="Screenshot of Add a scope window with the configured Microsoft Entra ID app URI entered.":::
 
-1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and fill the **Admin consent** fields. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
+1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the requited information. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
 
     :::image type="content" source="./media/entra-id-authentication/add-scope-continued.png" alt-text="Screenshot of the second part of the Add a scope window with the scope name and permissions filled in.":::
 
-1. To *preauthorize* Power BI applications:
+1. This step is optional, but if the ISV doesn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in. To *pre-authorize* Power BI applications:
 
    1. Select **+ Add a client application**.
    1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
@@ -60,42 +60,16 @@ To leverage the Authentication API, the ISV must first register an application i
 
      :::image type="content" source="./media/entra-id-authentication/preauthorization.png" alt-text="Screenshot showing the UI to add a client application.":::
 
-## Tenant admin consent ISV app
+## Consenting the ISV app
 
-The tenant admin can determine whether or not users are allowed to consent for themselves. This consent process takes place outside of Power BI. Only the tenant admin can grant consent on behalf of the entire organization, while the decision to revoke or delete the consent lies solely with the Microsoft Entra ID admin.
+The tenant administrator can determine whether or not users are allowed to consent for themselves. This consent process takes place outside of Power BI.
 
-> [!NOTE]
-> If the ISV didn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in.
+ISV backend application (for example, `https://contoso.com`) should be consented to Graph API and other dependencies (by users or tenant administrators) according to standard AAD rules:
 
 If the ISV application is running on a different tenant than the visual consumer's tenant, grant consent for the ISV's application in one of the following ways:
 
-* Pre-Consent:
-
-  1. Navigate to `https://login.microsoftonline.com/{tenantId}/adminconsent?client_id={clientId}`
-
-     * tenantId: The ID of the visual consumer's tenant
-     * clientId: The appId of ISV’s application
-
-     :::image type="content" source="./media/entra-id-authentication/pre-consent.png" alt-text="Screenshot of app registration preconsent window.":::
-
-  1. Sign in with tenant admin credentials:
-
-    :::image type="content" source="./media/entra-id-authentication/pre-consent-sign-in.png" alt-text="Screenshot of Microsoft sign in page.":::
-
-  1. Accept the permissions request:
-
-    :::image type="content" source="./media/entra-id-authentication/pre-consent-permissions.png" alt-text="Screenshot of permissions request.":::
-
-    Note: If you receive the following error, it means there's no reply address, but the consent was granted successfully.
-
-    :::image type="content" source="./media/entra-id-authentication/no-reply-error.png" alt-text="Screenshot of error message saying there's no reply address registered for the app.":::
+* Admin pre-consent:
 
 * Interactive Consent:
 
-  * If the tenant admin didn't preconsent, any user that uses a visual that triggers the API receives a one-time consent prompt when rendering the visual.
-
-    :::image type="content" source="./media/entra-id-authentication/interactive-consent.png" alt-text="Screenshot of interactive consent prompt.":::
-
-  * If the tenant admin signs in as the Power BI user, they receive a consent prompt with an option to provide consent on behalf of the entire organization.
-
-    :::image type="content" source="./media/entra-id-authentication/interactive-consent-admin.png" alt-text="Screenshot of interactive consent prompt for tenant admin.":::
+  If the tenant admin didn't preconsent, any user that uses a visual that triggers the API receives a one-time consent prompt when rendering the visual. See [Application consent experience](/entra/identity-platform/application-consent-experience) for more information.
