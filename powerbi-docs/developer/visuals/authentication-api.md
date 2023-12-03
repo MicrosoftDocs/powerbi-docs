@@ -100,8 +100,8 @@ Authentication is blocked if any of the following conditions apply:​
 
 * The visual isn't publicly approved and isn't in *debug visual* mode.
 
-* The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents about the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant admin consent](entra-id-authentication#consenting-the-isv-app).
+* The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents about the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant admin consent](entra-id-authentication.md#consenting-the-isv-app).
 
 ## Related content
 
-[Microsoft Entra ID application setup](entra-id-authentication)
+[Microsoft Entra ID application setup](./entra-id-authentication.md)
