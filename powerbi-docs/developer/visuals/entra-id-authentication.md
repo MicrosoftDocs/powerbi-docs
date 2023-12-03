@@ -33,19 +33,25 @@ To leverage the Authentication API, the ISV must first register an application i
 
     :::image type="content" source="./media/entra-id-authentication/expose-api.png" alt-text="Screenshot of the Expose an API page of the Microsoft Entra ID registration app.":::
 
-1. Select the **+ Add a scope** button and enter your application URI in the right hand **Add a scope** window. Configure the registered Microsoft Entra ID application URI with your custom verified domain. The URI must meet the following requirements.
+1. In the **Application UD URI field**, select *Add*.
 
-   * Should start with *https://*.
-   * Should match one of your [verified Custom domain names](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Domains).
-   * Should not be the default domain name type *onmicrosoft.com*.  
+    :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
 
-1. Select **Save and continue**.
+1. In the **Application ID URI field**, enter your [verified custom domain](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Domains), beginning with *https://*, and select **Save**.
 
-   :::image type="content" source="./media/entra-id-authentication/add-scope.png" alt-text="Screenshot of Add a scope window with the configured Microsoft Entra ID app URI entered.":::
+   To add a custom domain:
 
-1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the requited information. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
+   1. Navigate to[Microsoft Entra ID Custom domain names](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/DomainsList.ReactView).
+   1. Add your custom domain.
+   1. Ensure your domain name doesn't contain *onmicrosoft.com*.  
 
-    :::image type="content" source="./media/entra-id-authentication/add-scope-continued.png" alt-text="Screenshot of the second part of the Add a scope window with the scope name and permissions filled in.":::
+    :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
+
+1. Select **+ Add a scope**.
+
+1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the required information. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
+
+    :::image type="content" source="./media/entra-id-authentication/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information.":::
 
 1. This step is optional, but if the ISV doesn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in. To *pre-authorize* Power BI applications:
 
