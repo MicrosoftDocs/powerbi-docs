@@ -126,7 +126,7 @@ export class Visual implements IVisual {
 * The API is supported only in the Power BI service and Power BI desktop
 * The size limit for a downloaded file is 30 MB.
 
-## Next steps
+## Related content
 
 * [Learn about the Visual API](visual-api.md)
 

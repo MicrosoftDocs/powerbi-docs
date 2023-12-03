@@ -293,7 +293,7 @@ This blocking is in effect only for the current session. So if a user blocks the
 
  You can program your visual to detect if the current environment allows opening a dialog box, by checking the boolean `this.host.hostCapabilities.allowModalDialog`.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Publish a Power BI custom visual](office-store.md)

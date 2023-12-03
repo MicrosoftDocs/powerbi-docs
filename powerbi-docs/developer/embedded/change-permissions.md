@@ -164,7 +164,7 @@ var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
 
 ---
 
-## Next steps
+## Related content
 
 * [Considerations when generating an embed token](generate-embed-token.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)

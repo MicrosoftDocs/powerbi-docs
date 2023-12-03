@@ -498,7 +498,7 @@ The visual now displays the name and value of the selected data field.
 
 You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
-## Next steps
+## Related content
 
 * [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 * [Power BI visuals project structure](visual-project-structure.md)

@@ -118,7 +118,7 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
     To learn about the event service, see ["Rendering" events in Power BI visuals](event-service.md).
 
-## Next steps
+## Related content
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 

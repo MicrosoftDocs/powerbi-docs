@@ -477,6 +477,6 @@ To localize formatting model utils [formatting utils localization](utils-formatt
 
 * You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
 
-## Next steps
+## Related content
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com)

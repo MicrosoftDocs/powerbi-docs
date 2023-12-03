@@ -78,7 +78,7 @@ These examples demonstrate how to harness the analytic and visual power of R vis
 | <img src="media/samples/time-series-decomposition-chart.png" alt="Screenshot shows Time Series decomposition chart." width="200"> | <img src="media/samples/time-series-forecasting-chart.png" alt="Screenshot shows Time series forecasting chart." width="200">|
 |[Time series decomposition chart](https://github.com/Microsoft/powerbi-visuals-timeseriesdecomposition/) </br>Understand the time series components using "Seasonal and Trend decomposition using Loess" | [Time series forecasting chart](https://github.com/Microsoft/powerbi-visuals-forcasting-exp/) </br>Using exponential smoothing model to predict future values based on previously observed values |
 
-## Next steps
+## Related content
 
 * [Import a Power BI visual](./import-visual.md)
 * [Develop your own Power BI custom visual](./develop-circle-card.md)

@@ -768,6 +768,6 @@ private renderLegend(): void {
 }
 ```
 
-## Next steps
+## Related content
 
 - [Power BI visuals interactivity utils](utils-interactivity-selections.md)

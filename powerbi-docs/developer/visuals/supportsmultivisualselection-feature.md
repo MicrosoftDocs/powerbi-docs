@@ -44,7 +44,7 @@ To use the support multiple visual selection feature, add the following code to 
 * This feature doesn't apply to image visuals.
 * This feature doesn't apply to certain advanced visuals, such as key driver, decomposition tree, Q&A, textbox, and gauge chart visuals.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Visuals in Power BI](power-bi-visuals-concept.md).

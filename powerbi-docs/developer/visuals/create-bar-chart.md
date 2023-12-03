@@ -1013,7 +1013,7 @@ Follow the instructions in [Package a Power BI visual](package-visual.md) to pre
 >
 >For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
-## Next steps
+## Related content
 
 * [Add a context menu to a visual](context-menu.md)
 * [Add a landing page to a visual](landing-page.md)

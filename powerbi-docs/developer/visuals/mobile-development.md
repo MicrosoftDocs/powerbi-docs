@@ -74,7 +74,7 @@ The following functions are optional. The optional functions can be used to crea
 
 Power BI visuals must render on all devices that support Power BI apps. For more information, see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Develop a Power BI circle card visual](./develop-circle-card.md)
