@@ -1,7 +1,7 @@
 ---
 title: Roles in workspaces in Power BI
 description: Learn about the different roles you can assign to workspace users to grant access to read, write, edit, and more.
-author: UnkemptDataBod
+author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
@@ -61,9 +61,9 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 <sup>5</sup> If the items are in a workspace in a Premium capacity, you can view and interact with items in the Power BI service even if you don't have a Power BI Pro license.
 
-<sup>6</sup> If your admin has enabled this feature, see [Manage featured content](https://learn.microsoft.com/fabric/admin/service-admin-portal-featured-content)
+<sup>6</sup> If your admin has enabled this feature, see [Manage featured content](/fabric/admin/service-admin-portal-featured-content)
 
-<sup>7</sup> If your admin has enabled this feature. see [Users can try Microsoft Fabric paid features](https://learn.microsoft.com/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features)
+<sup>7</sup> If your admin has enabled this feature. see [Users can try Microsoft Fabric paid features](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features)
 
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) for details.
