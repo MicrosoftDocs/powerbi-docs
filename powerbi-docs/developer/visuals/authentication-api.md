@@ -14,7 +14,7 @@ ms.date: 11/30/2023
 
 The Authentication API enables visuals to obtain Microsoft Entra ID (formally known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
 
-Power BI admins can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting blocks (disables) the API.
+Power BI administrators can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting blocks (disables) the API.
 
 The API is applicable only for AppSource visuals, and not for private visuals. Visuals that are under development can be tested in debug mode before they're published.
 
@@ -100,7 +100,7 @@ Token acquisition is blocked if any of the following conditions apply:​
 
 * The visual isn't publicly approved or isn't a debug visual.
 
-* The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents about the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant admin consent](entra-id-authentication.md#consenting-the-isv-app).
+* The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant administrator consent](entra-id-authentication.md#consenting-the-isv-app).
 
 ## Related content
 

@@ -12,7 +12,7 @@ ms.date: 11/22/2023
 
 # Microsoft Entra ID application setup
 
-To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and pre-authorize the Power BI applications with a dedicated scope for each visual. The tenant admin then needs to grant consent. This article outlines all of these essential steps.
+To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and pre-authorize the Power BI applications with a dedicated scope for each visual. The tenant administrator then needs to grant consent. This article outlines all of these essential steps.
 
 ## Register the app in Microsoft Entra
 
@@ -53,7 +53,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
     :::image type="content" source="./media/entra-id-authentication/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information.":::
 
-1. This step is optional, but if the ISV doesn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in. To pre-authorize Power BI applications:
+1. To pre-authorize Power BI applications:
 
    1. Select **+ Add a client application**.
 
@@ -77,8 +77,10 @@ ISV backend application (for example, `https://contoso.com`) should be consented
 
 If the ISV application is running on a different tenant than the visual consumer's tenant, grant consent for the ISV's application in one of the following ways:
 
-* Admin pre-consent:
+* Administrator pre-consent:
+
+  [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent)
 
 * Interactive Consent:
 
-  If the tenant admin didn't preconsent, any user that uses a visual that triggers the API receives a one-time consent prompt when rendering the visual. See [Application consent experience](/entra/identity-platform/application-consent-experience) for more information.
+  If the tenant administrator didn't preconsent, any user that uses a visual that triggers the API receives a one-time consent prompt when rendering the visual. See [Application consent experience](/entra/identity-platform/application-consent-experience) for more information.
