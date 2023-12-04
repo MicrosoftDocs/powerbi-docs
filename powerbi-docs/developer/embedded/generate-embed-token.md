@@ -101,7 +101,7 @@ For these APIs:
 
 * You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
 
-## Next steps
+## Related content
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)

@@ -300,6 +300,6 @@ To reset or clear the filter, pass a `null` value to the filter API.
 visualHost.applyJsonFilter(null, "general", "filter", FilterAction.merge);
 ```
 
-## Next steps
+## Related content
 
 [Use Power BI visuals selections to add interactivity to a visual](selection-api.md)

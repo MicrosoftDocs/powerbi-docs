@@ -234,7 +234,7 @@ If you're using on-premises semantic models, create the missing on-premises data
 
 To discover gateways that are bindable, use [Discover Gateways](/rest/api/power-bi/datasets/discovergateways).
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Power BI REST APIs](/rest/api/power-bi/)

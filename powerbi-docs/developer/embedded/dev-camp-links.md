@@ -67,7 +67,7 @@ To view Power BI Dev Camp videos, go to the [video page](https://www.powerbidevc
 
 To download Power BI Dev Camp presentations, go to the [Camp-Sessions](https://github.com/PowerBiDevCamp/Camp-Sessions) GitHub repository.
 
-## Next steps
+## Related content
 
 * [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 * [Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)

@@ -103,7 +103,7 @@ These lines convert the selections to identity filters.
 > [!NOTE]
 > This step is only necessary for existing visuals created with older APIs. Newer visuals don't need to add this.
 
-## Next steps
+## Related content
 
 [Use Power BI visuals selections to add interactivity to a visual](selection-api.md)
 

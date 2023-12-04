@@ -118,7 +118,7 @@ The Performance Analyzer allows you to see and record logs that measure how each
 > [!NOTE]
 > Always remember to compare the embedded report performance to the performance on powerbi.com. This might help you understand the origin of your performance issues
 
-## Next steps
+## Related content
 
 * [Power BI optimization guide](../../guidance/power-bi-optimization.md)
 * [How to troubleshoot Power BI embedded analytics issues](embedded-troubleshoot.md)

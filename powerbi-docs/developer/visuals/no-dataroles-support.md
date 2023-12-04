@@ -56,7 +56,7 @@ To enable the No data binding feature, set the following two parameters in the *
     }
 ```
 
-## Next steps
+## Related content
 
 * [Using capabilities](capabilities.md)
 * [Add a landing page](landing-page.md)

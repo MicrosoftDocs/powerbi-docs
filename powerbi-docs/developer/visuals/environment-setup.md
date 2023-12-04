@@ -83,7 +83,7 @@ To enable this option, follow the instructions in this section.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
 
-## Next steps
+## Related content
 
 * [Learn about the Power BI visual project structure](./visual-project-structure.md)
 * [Create a Power BI circle card visual](develop-circle-card.md)

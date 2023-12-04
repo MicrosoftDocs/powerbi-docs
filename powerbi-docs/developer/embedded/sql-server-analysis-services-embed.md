@@ -198,6 +198,6 @@ Now you can embed your report in your app, and your report will filter data acco
 
 CustomData isn't supported.
 
-## Next steps
+## Related content
 
 [Generate an embed token](generate-embed-token.md#row-level-security)

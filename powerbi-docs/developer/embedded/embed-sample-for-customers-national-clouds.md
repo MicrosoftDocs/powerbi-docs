@@ -130,7 +130,7 @@ Now that you have an access token, you can continue embedding as you would on an
 * [Embed content for customers](embed-sample-for-customers.md#step-8---embed-your-content)
 * [Embed content for your organization](embed-sample-for-your-organization.md#step-5---embed-your-content)
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Embedding for your customers sample](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Core/Embed%20for%20your%20customers/AppOwnsData)

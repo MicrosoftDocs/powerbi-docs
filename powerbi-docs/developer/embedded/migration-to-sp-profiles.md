@@ -104,7 +104,7 @@ Now that you finished the migration and validated the results, remove what you d
 * Clean up workspaces and permissions in Power BI: If you created new workspaces, you can delete the old workspaces that are no longer in use.
 If you reused the same workspaces, you may want to delete the older permissions (such as *master user* permissions) on the workspace.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Manage service principal profiles](embed-multi-tenancy.md)

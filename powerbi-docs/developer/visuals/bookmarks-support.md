@@ -192,7 +192,7 @@ The `filterState` property saves a filter aspect as a property. The visual can s
 
 To save a property value as a filter state, set the object property as `"filterState": true` in the *capabilities.json* file.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [What are bookmarks](../../consumer/end-user-bookmarks.md)
