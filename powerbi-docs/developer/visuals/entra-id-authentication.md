@@ -57,7 +57,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
    1. Select **+ Add a client application**.
 
-      :::image type="content" source="./media/entra-id-authentication/edit-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application.":::
+      :::image type="content" source="./media/entra-id-authentication/add-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application.":::
 
    1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
    1. Select your desired scope.
