@@ -24,7 +24,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
 1. On the **Register an application** page, do the following:
    1. Enter your desired application name in the **Name** section.
-   1. Select *Accounts in any organizational directory (Any Azure AD directory - Multitenant)* in the **Supported account types section**.
+   1. Select *Accounts in any organizational directory (Any Azure AD directory - Multitenant)* in the **Supported account types** section.
    1. Select **Register**.
 
    :::image type="content" source="./media/entra-id-authentication/register-app.png" alt-text="Screenshot of the Register an app page of the Microsoft Entra ID registration app.":::
@@ -41,7 +41,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
    To add a custom domain:
 
-   1. Navigate to[Microsoft Entra ID Custom domain names](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/DomainsList.ReactView).
+   1. Navigate to [Microsoft Entra ID Custom domain names](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/DomainsList.ReactView).
    1. Add your custom domain.
    1. Ensure your domain name doesn't contain *onmicrosoft.com*.  
 
@@ -53,7 +53,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
     :::image type="content" source="./media/entra-id-authentication/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information.":::
 
-1. This step is optional, but if the ISV doesn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in. To *pre-authorize* Power BI applications:
+1. This step is optional, but if the ISV doesn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in. To pre-authorize Power BI applications:
 
    1. Select **+ Add a client application**.
 

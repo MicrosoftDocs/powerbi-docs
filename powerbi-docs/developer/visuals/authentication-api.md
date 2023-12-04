@@ -59,10 +59,10 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 * **acquireAADToken**: Returns the token for the visual or null if it can't be fetched.
 * **acquireAADTokenstatus**: Returns one of the following privilege statuses associated with acquiring the token.
 
-  * *Allowed*: The privilege is allowed in the current environment.
-  * *NotDeclared*: The privilege declaration is missing in visual capabilities section.
-  * *NotSupported*: The privilege isn't supported in the current environment.
-  * *DisabledByAdmin*: The Fabric administrator denied privilege usage.
+  * **Allowed**: The privilege is allowed in the current environment.
+  * **NotDeclared**: The privilege declaration is missing in visual capabilities section.
+  * **NotSupported**: The privilege isn't supported in the current environment.
+  * **DisabledByAdmin**: The Fabric administrator denied privilege usage.
 
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
@@ -88,7 +88,7 @@ if (acquireTokenStatus === PrivilegeStatus.Allowed) {
 
 ## Considerations and limitations
 
-Authentication is blocked if any of the following conditions apply:​
+Token acquisition is blocked if any of the following conditions apply:​
 
 * The tenant switch is turned off.
 
@@ -98,7 +98,7 @@ Authentication is blocked if any of the following conditions apply:​
 
 * The format of the AADAuthentication privilege parameter is invalid.
 
-* The visual isn't publicly approved and isn't in *debug visual* mode.
+* The visual isn't publicly approved or isn't a debug visual.
 
 * The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents about the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant admin consent](entra-id-authentication.md#consenting-the-isv-app).
 
