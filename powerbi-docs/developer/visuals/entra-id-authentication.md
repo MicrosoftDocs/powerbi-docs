@@ -79,7 +79,7 @@ If the ISV application is running on a different tenant than the visual consumer
 
 * Administrator pre-consent:
 
-  [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent)
+  Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent).
 
 * Interactive Consent:
 

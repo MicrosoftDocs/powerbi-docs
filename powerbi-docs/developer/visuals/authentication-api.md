@@ -39,7 +39,7 @@ The following environments aren't yet supported:
 ## How to use the Authentication API
 
 In the *capabilities.json* file, add the "AADAuthentication" privilege with your Microsoft Entra ID registered application URI. Fabric will generate a token with this audience, and deliver it to the visual.  
-For example, the following token can be used by the backend service of your visual implemented by the app with audience `https://contoso.com`:
+The visual can then utilize the token to authenticate against the audience https://contoso.com, representing its backend service:
 
 ```json
 "privileges": [
@@ -100,7 +100,7 @@ Token acquisition is blocked if any of the following conditions apply:​
 
 * The visual isn't publicly approved or isn't a debug visual.
 
-* The visual’s backend service (authenticated by the Entra ID app with the audience specified by the visual) doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consents, see under [tenant administrator consent](entra-id-authentication.md#consenting-the-isv-app).
+* The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consents, see [tenant administrator consent](entra-id-authentication.md#consenting-the-isv-app).
 
 ## Related content
 
