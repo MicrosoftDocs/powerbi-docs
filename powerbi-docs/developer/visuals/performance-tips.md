@@ -163,8 +163,6 @@ For example, learn how to [avoid unnecessary canvas state changes](https://web.d
 
 Use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, so your animation functions are called **before** the browser calls another repaint.
 
-For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
-
 ### Animation loops
 
 Does the animation loop redraw unchanged elements?
