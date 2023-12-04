@@ -101,7 +101,7 @@ let args: CustomVisualApplyCustomSortArgs = {
 this.host.applyCustomSort(args);
 ```
 
-## Next steps
+## Related content
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
 * [Understanding capabilities](capabilities.md)

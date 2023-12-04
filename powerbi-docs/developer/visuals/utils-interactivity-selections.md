@@ -281,7 +281,7 @@ Usually, data points contain selections and values. The interface extends the `S
       }
       ```
 
-## Next steps
+## Related content
 
 * [Visuals with selection](bookmarks-support.md#visuals-with-selection)
 

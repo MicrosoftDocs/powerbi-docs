@@ -188,4 +188,4 @@ Issues with maps in a Power BI paginated report might occur when you add a map o
   
 ## Next steps
 
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)
+ [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)

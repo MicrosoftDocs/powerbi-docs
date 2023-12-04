@@ -135,7 +135,7 @@ Here's an example of a query that completes in less than five minutes (300,000 m
 
 Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. These alerts allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-types#metric-alerts), [logs](/azure/azure-monitor/alerts/alerts-types#log-alerts), and the [activity log](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts).
 
-## Next steps
+## Related content
 
 Learn more about monitoring data:
 

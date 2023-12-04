@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/29/2023
+ms.date: 11/15/2023
 ---
 
 # Power BI implementation planning: Report consumer security planning
@@ -147,7 +147,7 @@ When you manage permissions for an app, on the _Direct Access_ page you can view
 
 When you create (or republish) an app, each audience has a _Manage Audience Access_ pane. In that pane, the following permissions are available.
 
-- **Grant access to:** For each audience, you can grant access to individual users and groups. It's possible to publish the app to the entire organization when it's enabled by the _Publish content packs and apps to the entire organization_ tenant setting, and the app isn't installed automatically. Whenever possible, we recommend that you assign [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to audiences because adding or removing users involves republishing the app. Everyone with workspace access automatically has permission to view or update the app depending on their [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles).
+- **Grant access to:** For each audience, you can grant access to individual users and groups. It's possible to publish the app to the entire organization when it's enabled by the _Publish apps to the entire organization_ tenant setting, and the app isn't installed automatically. Whenever possible, we recommend that you assign [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to audiences because adding or removing users involves republishing the app. Everyone with workspace access automatically has permission to view or update the app depending on their [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles).
 - **Semantic model permissions:** Two types of semantic model permissions can be [granted while publishing an app](/power-bi/connect-data/service-datasets-manage-access-permissions#managing-permissions-granted-through-an-app):
   - **Semantic model Reshare:** When enabled, app users are granted the [Reshare permission](/power-bi/connect-data/service-datasets-permissions) to the underlying semantic model(s) with others. It makes sense to enable this option when the underlying semantic model(s) can be readily reshared with anyone. We recommend that you get approval from the semantic model owner(s) before granting the Reshare permission to an app audience.
   - **Semantic model Build:** When enabled, app users are granted the [Build permission](/power-bi/connect-data/service-datasets-build-permissions) for the semantic models. Build permission allows users to create new reports, export underlying data from reports, and more. We recommend that you get approval from the semantic model owner(s) before granting Build permission to an app audience.
@@ -168,7 +168,7 @@ After you publish a Power BI app, a user typically needs to [install](/power-bi/
 
 An alternative approach to install an app is to _push_ it to app consumers. It results in the pre-installation of the app so that it automatically shows up in the Apps page in the Power BI service. This approach is a convenience for consumers because they don't need to find and install the app. However, pre-installed apps can become an annoyance for users because they might become overwhelmed by too many apps that aren't relevant to them.
 
-The _[Push apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users)_ tenant setting controls who's allowed to automatically install apps. We recommend that you use this feature because it's convenient for users. However, we also recommend that you educate your content creators on when to use it so that it isn't overused.
+The _[Push apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users)_ tenant setting controls who's allowed to automatically install apps. We recommend that you use this feature because it's convenient for users. However, we also recommend that you educate your content creators on when to use it so that it isn't overused.
 
 > [!TIP]
 > When publishing an app, if you select the option to install the app automatically, you can't set the audience to be the entire organization (if enabled by the _Push apps to end users_ tenant setting).
@@ -179,7 +179,7 @@ The _[Push apps to end users](/fabric/admin/service-admin-portal-content-pack-ap
 
 > [!div class="checklist"]
 > - **Decide on the strategy for use of apps:** Define your preferences for how to use apps. Ensure that it aligns with your overall strategy for read-only consumers.
-> - **Decide who can publish apps to the entire organization:** Decide which report creators are able to publish to the entire organization. Set the _Publish content packs and apps to the entire organization_ tenant setting to align with this decision.
+> - **Decide who can publish apps to the entire organization:** Decide which report creators are able to publish to the entire organization. Set the _Publish apps to the entire organization_ tenant setting to align with this decision.
 > - **Decide who can push apps to end users:** Decide which Power BI report creators can pre-install apps. Set the _Push apps to end users_ tenant setting to align with this decision.
 > - **Create and publish guidance for content creators:** Provide documentation and training for content creators. Include requirements and preferences for how to use apps most effectively.
 > - **Determine how to handle app access requests:** Ensure that a process is in place to assign contacts and handle app access requests in a timely manner.

@@ -177,7 +177,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 Use the embed token to embed the report into your app or website. Your report will filter data according to the applied RLS in the report.
 
-## Next steps
+## Related content
 
 * [Row-level security with Power BI Embedded](embedded-row-level-security.md)
 * [Embed a report with cloud-based RLS](cloud-rls.md)

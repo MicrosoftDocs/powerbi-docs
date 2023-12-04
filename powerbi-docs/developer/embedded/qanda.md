@@ -93,7 +93,7 @@ qna.on("visualRendered", function(event) {
 
 Create an embed token from a semantic model to start a Q&A part. For more information, see the [generate token operation](/rest/api/power-bi/embedtoken).
 
-## Next steps
+## Related content
 
 [Try out Q&A embedding with the JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)
 

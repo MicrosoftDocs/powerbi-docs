@@ -60,7 +60,7 @@ An error has occurred
 
 When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-parameters-in-group) or the [Datasets - Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group) APIs, this error might indicate that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 >[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)

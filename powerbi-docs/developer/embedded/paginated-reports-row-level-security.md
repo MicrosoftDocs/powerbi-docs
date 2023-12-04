@@ -118,6 +118,6 @@ To [generate a token](generate-embed-token.md#row-level-security), assign the `u
 * Master-user isn't supported with paginated reports for *embed for your customers*. Master-user **is** supported for *embed for your organization*.
 * The service principal must have workspace permissions of member or above (not viewer or contributor).
 
-## Next steps
+## Related content
 
 [Generate an embed token](generate-embed-token.md#row-level-security)

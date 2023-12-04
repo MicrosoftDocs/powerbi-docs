@@ -139,7 +139,7 @@ The script uses Power BI and ARM REST APIs that are called in Azure Automation a
 
 You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
-## Next steps
+## Related content
 
 * [Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md)
 * [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)

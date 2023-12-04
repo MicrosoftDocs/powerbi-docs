@@ -80,7 +80,7 @@ export class BarChart implements IVisual {
     }
 ```
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Formatting utils](utils-formatting.md)

@@ -127,6 +127,6 @@ To review the available customizations, expand the **Subtotals** drop-down menu 
 
 * The [expand and collapse](./dataview-mappings.md#expand-and-collapse-row-headers) feature overrides `rowSubtotals`. Subtotals display when the rows are expanded, even if `rowSubtotals` is set to *false*.
 
-## Next steps
+## Related content
 
 [Add interactivity to visual using Power BI visuals selections](selection-api.md)
