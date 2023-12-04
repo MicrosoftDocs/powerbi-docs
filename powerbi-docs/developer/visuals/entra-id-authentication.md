@@ -16,7 +16,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
 ## Register the app in Microsoft Entra
 
-1. Navigate to [Microsoft Entra ID App registrations](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps).
+1. Navigate to [Microsoft Entra ID App registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
 
 1. Select **+ New Registration**
 
@@ -33,11 +33,11 @@ To leverage the Authentication API, the ISV must first register an application i
 
     :::image type="content" source="./media/entra-id-authentication/expose-api.png" alt-text="Screenshot of the Expose an API page of the Microsoft Entra ID registration app.":::
 
-1. In the **Application UD URI field**, select *Add*.
+1. In the **Application UD URI** field, select *Add*.
 
     :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
 
-1. In the **Application ID URI field**, enter your [verified custom domain](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Domains), beginning with *https://*, and select **Save**.
+1. In the **Edit Application ID URI** field, enter your [verified custom domain](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Domains), beginning with *https://*, and select **Save**.
 
    To add a custom domain:
 
@@ -45,7 +45,7 @@ To leverage the Authentication API, the ISV must first register an application i
    1. Add your custom domain.
    1. Ensure your domain name doesn't contain *onmicrosoft.com*.  
 
-    :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
+    :::image type="content" source="./media/entra-id-authentication/edit-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the Edit application ID URI page open.":::
 
 1. Select **+ Add a scope**.
 
@@ -56,6 +56,9 @@ To leverage the Authentication API, the ISV must first register an application i
 1. This step is optional, but if the ISV doesn't preauthorize the Power BI application, the consent prompt is displayed every time a user logs in. To *pre-authorize* Power BI applications:
 
    1. Select **+ Add a client application**.
+
+      :::image type="content" source="./media/entra-id-authentication/edit-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application.":::
+
    1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
    1. Select your desired scope.
    1. Select **Add application**.
