@@ -103,7 +103,7 @@ The following limitations refer to the display icon text:
 
 * The text is only displayed as plain text
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[DataViewUtils](utils-dataview.md)

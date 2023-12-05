@@ -64,9 +64,9 @@ A DirectQuery connection to Dataverse is a good choice when the report's query r
 > [!NOTE]
 > The 20,000 row size isn't a hard limit. However, each data source query must return a result within 10 minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
 
-You can improve the performance of larger datasets by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
+You can improve the performance of larger semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
 
-Even larger datasets—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
+Even larger semantic models—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
 
 ### Data latency
 
@@ -83,7 +83,7 @@ You can also consider using [incremental refresh](/power-bi/connect-data/increme
 
 When there's a need to enforce role-based security, it can directly influence the choice of Power BI model framework.
 
-Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson may be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
+Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson might be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
 
 A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design, providing performance is acceptable.
 
@@ -115,13 +115,13 @@ To help ensure that you have a clear understanding of the model's purpose, ask y
 - What topic area will this model support?
 - Who is the audience of the reports?
 - What questions are the reports trying to answer?
-- What is the minimum viable dataset?
+- What is the minimum viable semantic model?
 
 Resist combining multiple topic areas into a single model just because the report user has questions across multiple topic areas that they want addressed by a single report. By breaking that report out into multiple reports, each with a focus on a different topic (or [fact table](star-schema.md)), you can produce much more efficient, scalable, and manageable models.
 
 ### Design a star schema
 
-Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
+Dataverse developers and administrators who are comfortable with the Dataverse schema might be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
 
 Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model that's optimized for [analytical reports](/learn/modules/power-bi-effective-structure/1-introduction). The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
@@ -244,7 +244,7 @@ If you discover that Dataverse [choice labels](/power-apps/developer/data-platfo
 
 In this case, open the Dataverse Maker Portal, navigate to the **Solutions** area, and then select **Publish all customizations**. The publication process will update the TDS endpoint with the latest metadata, making the option labels available to Power BI.
 
-## Larger datasets with Azure Synapse Link
+## Larger semantic models with Azure Synapse Link
 
 Dataverse includes the ability to synchronize tables to Azure Data Lake Storage (ADLS) and then connect to that data through an Azure Synapse workspace. With minimal effort, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
 
@@ -367,11 +367,11 @@ For more information on table storage modes including dual storage, see [Manage 
 
 ### Enable single-sign on
 
-When you publish a DirectQuery model to the Power BI service, you can use the dataset settings to enable single sign-on (SSO) by using Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
+When you publish a DirectQuery model to the Power BI service, you can use the semantic model settings to enable single sign-on (SSO) by using Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
 
 When the SSO option is enabled, Power BI sends the report user's authenticated Microsoft Entra credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
 
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the dataset credentials window with the SSO option enabled." border="false":::
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the semantic model credentials window with the SSO option enabled." border="false":::
 
 For more information, see [Single sign-on (SSO) for DirectQuery sources](/power-bi/connect-data/service-azure-sql-database-with-direct-connect#single-sign-on).
 
@@ -409,7 +409,7 @@ You can create a DirectQuery model that enforces Dataverse permissions _knowing_
 
 For example, an import model could provide access to all Dataverse data but not enforce any permissions. This model would be suited to executives who already have access to all Dataverse data.
 
-As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create a model for each sales region. You could then grant read permission to those models (datasets) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
+As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create a model for each sales region. You could then grant read permission to those models (semantic models) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
 
 ## Next steps
 

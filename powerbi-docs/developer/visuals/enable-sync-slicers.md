@@ -13,7 +13,7 @@ ms.custom: engagement-fy23
 
 # Sync slicers across pages in Power BI reports
 
-[Slicers](../../visuals/power-bi-visualization-slicers.md) are a useful way to filter information and focus on a specific portion of the dataset. They allow you to select exactly which values to display in your Power BI visual.
+[Slicers](../../visuals/power-bi-visualization-slicers.md) are a useful way to filter information and focus on a specific portion of the semantic model. They allow you to select exactly which values to display in your Power BI visual.
 
 Sometimes you might want to use a slicer on only one specific page of the report. Other times, you might want to apply the slicer to several pages. By using the *sync slicers* feature, a slicer selection on any page will affect visualizations on all selected pages.
 
@@ -50,7 +50,7 @@ For more information on how to sync slicers, see [Sync and use slicers on other 
 
 The sync slicers feature only supports one field at a time. If your slicer has more than one field (**Category** or **Measure**), the sync slicers feature is disabled.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Add a context menu to your Power BI visual](context-menu.md)

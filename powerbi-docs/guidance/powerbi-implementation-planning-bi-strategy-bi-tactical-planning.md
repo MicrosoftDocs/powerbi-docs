@@ -27,7 +27,7 @@ In short, this article describes how the working team can perform tactical plann
 > [!NOTE]
 > In this series, we define _goals_ as high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets that help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
 >
-> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI dataset or report.
+> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 The following high-level diagram depicts how to conduct BI tactical planning.
 
@@ -85,14 +85,14 @@ When assessing timelines and priorities, you should identify _quick-wins_. Quick
 > [!IMPORTANT]
 > When you identify objectives, also consider how you can objectively evaluate and measure their impact. It's critical that you accurately describe the (potential) return on investment (ROI) for BI initiatives in order to attain sufficient executive support and resources. You can assess this impact together with your measures of success for your BI strategy.
 
-Quick wins may also be high-impact objectives. In this case, they're initiatives or solutions that have the potential to make substantial advancements across many areas of the business. Typically, identifying high-impact objectives is essential to progress further in your BI strategy because they can prompt other, downstream objectives.
+Quick wins can also be high-impact objectives. In this case, they're initiatives or solutions that have the potential to make substantial advancements across many areas of the business. Typically, identifying high-impact objectives is essential to progress further in your BI strategy because they can prompt other, downstream objectives.
 
 Here are some examples of quick-win or high-impact objectives.
 
 - Minor changes that improve existing solutions for a large number of end users.
 - Solution audits and optimizations that improve performance and reduce capacity usage and costs.
 - Training initiatives for key users.
-- Setting up a centralized portal to consolidate a user [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
+- Setting up a centralized portal to consolidate a user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 - Creating shared, central themes, templates, and design guidelines for reports.
 
 ### Identify other objectives
@@ -100,26 +100,26 @@ Here are some examples of quick-win or high-impact objectives.
 Once you've identified time-sensitive, high-priority, and quick-win objectives, you should next identify and describe objectives for adoption, governance, and implementation. Identify objectives that you can achieve in the next quarter and that directly address the weaknesses and opportunities that you identified in your [data culture](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-data-culture-assessment) and [technical assessments](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-technical-assessment). Describe how achieving these objectives will help make progress toward the BI goals in the next 12-18 months.
 
 > [!TIP]
-> Refer to the relevant sections of the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) and the [Power BI implementation planning](powerbi-implementation-planning-introduction.md) to help you identify and describe your objectives.
+> Refer to the relevant sections of the [Fabric adoption roadmap](fabric-adoption-roadmap.md) and the [Power BI implementation planning](powerbi-implementation-planning-introduction.md) to help you identify and describe your objectives.
 
 > [!IMPORTANT]
 > When identifying your objectives, remember that the successful implementation of your BI strategy is more likely when you aim for an evolution instead of a revolution from your current state. _Evolution_ implies that you strive for gradual change over time. Small but consistent, sustained progress is better than an abundance of change that risks disruption to ongoing activities.
 
 #### Adoption
 
-First, identify your adoption objectives. These objectives can address many areas, but typically describe the actions you'll take to improve overall [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [data culture](powerbi-adoption-roadmap-data-culture.md).
+First, identify your adoption objectives. These objectives can address many areas, but typically describe the actions you'll take to improve overall [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [data culture](fabric-adoption-roadmap-data-culture.md).
 
 Here are some examples of adoption objectives.
 
 - For each enterprise BI solution, document the specific business questions, objectives, and processes that it supports.
 - Increase the proportion of business users who respond positively to the question _BI tools and initiatives help me achieve my business objectives_.
 - Create a survey to measure business user data literacy and a training plan to improve data literacy.
-- Increase the use of endorsed, centralized Power BI datasets in [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenarios.
+- Increase the use of endorsed, centralized Power BI semantic models in [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenarios.
 - Create a process for self-service content creators so they can request mentoring or support from the COE or the central BI team.
 
 #### Governance
 
-Next, identify your [governance](powerbi-adoption-roadmap-governance.md) objectives. These objectives should describe how you'll sustainably enable users to answer business problems with data, while mitigating risks to data security or compliance. These governance objectives should be motivated by, and closely tied to, your adoption objectives.
+Next, identify your [governance](fabric-adoption-roadmap-governance.md) objectives. These objectives should describe how you'll sustainably enable users to answer business problems with data, while mitigating risks to data security or compliance. These governance objectives should be motivated by, and closely tied to, your adoption objectives.
 
 Here are some examples of governance objectives.
 
@@ -137,15 +137,15 @@ Here are some examples of governance objectives.
 
 Finally, identify your implementation objectives. These objectives have two purposes. They:
 
-- **Support adoption and governance objectives:** Describe the solutions you build and initiatives you enact to achieve your adoption and governance objectives. These solutions help you work toward improving [organizational adoption](powerbi-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages).
-- **Support business data needs:** Describe specific solutions you'll build to address the prioritized needs that the working team described in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). With these solutions, you should aim to achieve or improve [solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
+- **Support adoption and governance objectives:** Describe the solutions you build and initiatives you enact to achieve your adoption and governance objectives. These solutions help you work toward improving [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages).
+- **Support business data needs:** Describe specific solutions you'll build to address the prioritized needs that the working team described in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). With these solutions, you should aim to achieve or improve [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
 Implementation objectives typically describe either initiatives you'll enact or solutions that you'll build.
 
 - **Initiatives:** Processes, training resources, and policies that support other objectives. Initiatives are typically non-technical instruments that support users or processes. Examples of initiatives include:
   - Processes for self-service content creators so that they can request access to tools, data, or training.
-  - Governance [data policies](powerbi-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
-  - A curated, moderated [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](powerbi-adoption-roadmap-community-of-practice.md).
+  - Governance [data policies](fabric-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
+  - A curated, moderated [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 - **Solutions:** Processes or tools built to directly address specific business problems or data needs for users. Examples of solutions include:
   - An actionable [monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) that allows governance teams to follow up on governance and adoption objectives.
   - A unified data lakehouse that delivers business-ready data for consumption by content creators planning other downstream analytical solutions.
@@ -200,7 +200,7 @@ To appraise the skills and knowledge of teams for organizational readiness, ask 
 
 #### Anticipate change management efforts
 
-[Change management](powerbi-adoption-roadmap-change-management.md) is a crucial part of successful adoption and implementation. It's essential that you prepare and support people at all levels of the organization to successfully adopt new behaviors, tools, and processes for working with data. Consider who will be responsible for change management activities and what resources are available to effectively follow through on change management.
+[Change management](fabric-adoption-roadmap-change-management.md) is a crucial part of successful adoption and implementation. It's essential that you prepare and support people at all levels of the organization to successfully adopt new behaviors, tools, and processes for working with data. Consider who will be responsible for change management activities and what resources are available to effectively follow through on change management.
 
 After you've favorably assessed organizational readiness, you should proceed with step 2 of tactical planning to define success and how it's measured.
 
@@ -257,9 +257,9 @@ Here are some examples of BI goals together with related objectives and the KPIs
 
 | **Example BI goal** | **Example BI objectives** | **Example KPIs** |
 | --- | --- | --- |
-| Improve executive adoption and support of BI. | &bull; Identify and engage an executive sponsor. </br></br>&bull; Create a communication plan with the Center of Excellence (COE), which will involve distributing a regular newsletter from the executive sponsor to share updates, announcements, and highlights from BI solutions and initiatives. </br></br>&bull; Hold targeted mentoring sessions with the executive sponsor to improve their knowledge and understanding about relevant BI topics, and allowing them to lead by example. | &bull; **Executive feedback score:** Measures executive endorsement and sentiment. Collected from a brief survey of executives, including (but not limited to) the executive sponsor. The survey should ask for quantitative feedback about the effectiveness, usability, and relevance of BI solutions—a high score indicates progress toward the BI goal. |
-| Achieve a better balance of user enablement and risk mitigation in BI governance. | &bull; Perform a tenant-wide audit to gain visibility on general usage trends and anomalies. </br></br>&bull; Create a tenant-wide monitoring solution to track critical solutions and risk-creating behaviors. </br></br>&bull; Create a centralized portal to share templates and training materials, and to provide visibility on governance team activities and policies. | &bull; **Ratio of Power BI datasets to reports:** Measures whether datasets are reused for ad hoc analysis and reporting, or whether data is duplicated across models—a ratio close to one indicates that users may be creating a new dataset for each report, which is a governance risk. </br></br>&bull; **Ratio of exports to views:** Measures how often users export data to files instead of using existing reports for their analysis—a ratio close to one indicates that users are regularly exporting data, which is a governance risk. |
-| Improve data-driven decision making in the user community | &bull; Create a data literacy training program to improve the data competences of the user community. </br></br>&bull; Create organizational design standards, templates, and theme files for Power BI reports—adopt these standards in business-critical reporting solutions. </br></br>&bull; Hold weekly office hours events to allow users to ask questions about central reports, or request guidance for their decentralized self-service BI solutions. | &bull; **Number of users trained in the data literacy program:** Measures how many users have completed data literacy training and have achieved a passing score. </br></br>&bull; **Time-to-insight:** Uses controlled trials to measure how long it takes a random sample of users to correctly answer typical business questions from available datasets and reports—a fast (low) time-to-insight indicates effective data-driven decision making. |
+| Improve executive adoption and support of BI. | &bull;&nbsp;Identify and engage an executive sponsor. <br/><br/>&bull;&nbsp;Create a communication plan with the Center of Excellence (COE), which will involve distributing a regular newsletter from the executive sponsor to share updates, announcements, and highlights from BI solutions and initiatives. <br/><br/>&bull;&nbsp;Hold targeted mentoring sessions with the executive sponsor to improve their knowledge and understanding about relevant BI topics, and allowing them to lead by example. | &bull;&nbsp;**Executive feedback score:** Measures executive endorsement and sentiment. Collected from a brief survey of executives, including (but not limited to) the executive sponsor. The survey should ask for quantitative feedback about the effectiveness, usability, and relevance of BI solutions—a high score indicates progress toward the BI goal. |
+| Achieve a better balance of user enablement and risk mitigation in BI governance. | &bull;&nbsp;Perform a tenant-wide audit to gain visibility on general usage trends and anomalies. <br/><br/>&bull;&nbsp;Create a tenant-wide monitoring solution to track critical solutions and risk-creating behaviors. <br/><br/>&bull;&nbsp;Create a centralized portal to share templates and training materials, and to provide visibility on governance team activities and policies. | &bull;&nbsp;**Ratio of Power BI semantic models to reports:** Measures whether semantic models are reused for ad hoc analysis and reporting, or whether data is duplicated across models—a ratio close to one indicates that users might be creating a new semantic model for each report, which is a governance risk. <br/><br/>&bull;&nbsp;**Ratio of exports to views:** Measures how often users export data to files instead of using existing reports for their analysis—a ratio close to one indicates that users are regularly exporting data, which is a governance risk. |
+| Improve data-driven decision making in the user community | &bull;&nbsp;Create a data literacy training program to improve the data competences of the user community. <br/><br/>&bull;&nbsp;Create organizational design standards, templates, and theme files for Power BI reports—adopt these standards in business-critical reporting solutions. <br/><br/>&bull;&nbsp;Hold weekly office hours events to allow users to ask questions about central reports, or request guidance for their decentralized self-service BI solutions. | &bull;&nbsp;**Number of users trained in the data literacy program:** Measures how many users have completed data literacy training and have achieved a passing score. <br/><br/>&bull;&nbsp;**Time-to-insight:** Uses controlled trials to measure how long it takes a random sample of users to correctly answer typical business questions from available semantic models and reports—a fast (low) time-to-insight indicates effective data-driven decision making. |
 
 > [!IMPORTANT]
 > Ensure that your chosen KPIs or OKRs genuinely reflect your desired outcomes. Regularly evaluate these indicators to avoid incentivizing counterproductive behaviors. Consider Goodhart's Law, which states: _When a measure becomes a target, it ceases to be a good measure_.

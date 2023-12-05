@@ -68,7 +68,7 @@ Reports shared with you're also stored under **Shared with me** on the **Browse*
 
 ## Safely interact with content
 
-As a business user, others share content with you and you interact with that content to view data and make business decisions. As you filter, slice, subscribe, export, and resize, your changes don't impact the underlying dataset or the original shared content. Power BI is a safe space where you can explore and experiment.
+As a business user, others share content with you and you interact with that content to view data and make business decisions. As you filter, slice, subscribe, export, and resize, your changes don't impact the underlying semantic model or the original shared content. Power BI is a safe space where you can explore and experiment.
 
 That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, select the **Reset** button.
 

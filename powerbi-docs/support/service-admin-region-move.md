@@ -6,7 +6,7 @@ ms.author: hfeng
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting 
-ms.date: 07/06/2023
+ms.date: 10/27/2023
 ms.custom: template-how-to; subject-moving-resources
 ---
 
@@ -32,8 +32,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 ### Awareness
 
-- **The end-to-end migration process may take up to six months**. We prioritize service reliability and deployment schedules can change, so we may need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
-- During the migration process, it's possible to encounter unforeseen issues that may result in multiple failures. Allow for multiple attempts to ensure a successful migration.
+- **The end-to-end migration process might take up to six months**. We prioritize service reliability and deployment schedules can change, so we might need to reschedule during migration at any time. We can't guarantee successful migration due to inconsistent data or bugs.
+- During the migration process, it's possible to encounter unforeseen issues that might result in multiple failures. Allow for multiple attempts to ensure a successful migration.
 
 - Migration requires about six hours of down time. During migration, users can't access Power BI and an error message similar to the one shown in the following screenshot is displayed. The actual down time depends on the volume of data to be migrated.
 
@@ -50,7 +50,9 @@ The migration process moves all tenant data to the new region. The GUID assigned
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
   - [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
    - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
-   ### Preparation steps
+- If Fabric Metadata is linked to the Purview Data Map, it will continue to be stored in the home region of the tenant. You can choose to delete the assets manually by navigating to Microsoft Purview and following the steps described here: [Asset management in the Microsoft Purview Data Catalog](/purview/catalog-asset-details#delete-asset/)
+
+### Preparation steps
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 
@@ -78,9 +80,9 @@ To find out the best way to contact support, read [Power BI support options](ser
    
    Select **See solutions** to move to the next screen.
 
-     :::image type="content" source="media\service-admin-region-move\ppac-new-support-request.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
+     :::image type="content" source="media\service-admin-region-move\support-request-dialog.png" alt-text="Screen capture showing field entries for a new support request for a region move in the Power Platform Admin Center.":::
 
-1. Select **Next** to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
+1. Select the arrow button to continue to **Select your support plan**. Choose your support plan. Add a description and include the information in the following table:
 
    |Information needed | How to find the information |
    |---|---|

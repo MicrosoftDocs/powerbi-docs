@@ -55,7 +55,7 @@ The scenario diagram depicts the following user actions, tools, and features:
 | ![Item 14.](media/common/icon-14-red-30x30.png) | Once the deployment pipeline completes deployment, content creators can manually perform post-deployment activities. Activities can include configuring scheduled data refresh or publishing a Power BI app for the production workspace. |
 | ![Item 15.](media/common/icon-15-red-30x30.png) | Content viewers access the content using the production workspace or a Power BI app. |
 | ![Item 16.](media/common/icon-16-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required. |
-| ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces may be subject to stricter governance requirements than less critical content. |
+| ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces could be subject to stricter governance requirements than less critical content. |
 
 > [!TIP]
 > We recommend that you reviewing the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario as too. It builds upon concepts introduced in this scenario.
@@ -93,7 +93,7 @@ Spend time planning the [permissions model](/fabric/cicd/best-practices-cicd#pla
 
 Pipeline user permissions (for who can deploy content with a deployment pipeline) are managed separately from the workspace roles. [Access to both the workspace and the deployment pipeline](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) are required for the users conducting a deployment. Relevant [Premium permissions](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#create-a-workspace) are also required.
 
-When possible, it's recommended that the existing content creator or owner conduct the deployments. In some situations, permissions are more restricted for the production workspace. In that case, it may be appropriate to coordinate the production deployment with someone else who has permission to deploy to production.
+When possible, it's recommended that the existing content creator or owner conduct the deployments. In some situations, permissions are more restricted for the production workspace. In that case, it might be appropriate to coordinate the production deployment with someone else who has permission to deploy to production.
 
 [Pipeline users](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) who are assigned to the workspace member (or admin) role are allowed to compare stages and deploy content. Assigning pipeline users to this role minimizes permissions issues and allows for a smoother deployment process.
 
@@ -116,8 +116,8 @@ Purposefully, [certain properties aren't copied](/fabric/cicd/deployment-pipelin
 - **Apps:** Power BI apps aren't published automatically by deployment pipelines.
 - **Access roles, sharing permissions, and app permissions:** Permissions aren't overwritten during a deployment.
 - **Workspace properties:** Properties, such as contacts and the workspace description, aren't overwritten during a deployment.
-- **Power BI item properties:** Certain Power BI item properties, such as sensitivity labels, may be overwritten during a deployment in [certain circumstances](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#item-properties-copied-during-deployment).
-- **Unsupported Power BI items:** Additional manual steps may need to be taken for [Power BI items that aren't supported](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#deployed-items) by the deployment pipeline.
+- **Power BI item properties:** Certain Power BI item properties, such as sensitivity labels, might be overwritten during a deployment in [certain circumstances](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#item-properties-copied-during-deployment).
+- **Unsupported Power BI items:** Additional manual steps might need to be taken for [Power BI items that aren't supported](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#deployed-items) by the deployment pipeline.
 
 > [!CAUTION]
 > There isn't a rollback process once a deployment has occurred with a deployment pipeline. Consider carefully what change management processes and approvals are required in order to deploy to the production workspace.
@@ -135,7 +135,7 @@ The scenario diagram depicts using OneDrive for storing the source Power BI Desk
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md) (not depicted in the scenario diagram).
 
 When working with multiple environments, it's common to configure development, test, and production connections to use different source systems. In this case, use [data source rules and parameter rules](/fabric/cicd/deployment-pipelines/create-rules) to manage values that differ between environments.
 
@@ -144,7 +144,7 @@ When working with multiple environments, it's common to configure development, t
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand deployment activities that occur.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand deployment activities that occur.
 
 ## Next steps
 

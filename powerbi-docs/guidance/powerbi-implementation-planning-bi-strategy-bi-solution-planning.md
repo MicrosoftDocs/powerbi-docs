@@ -23,7 +23,7 @@ This article helps you to plan solutions that support your business intelligence
 A BI strategy is a plan to implement, use, and manage data and analytics. You define your BI strategy by starting with [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). Strategic planning helps you to identify your BI goals and priorities. To determine the path to progress toward your BI goals, you describe specific objectives by using [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). You then achieve progress toward your BI objectives by planning and deploying BI solutions.
 
 > [!NOTE]
-> In this series, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI dataset or report.
+> In this series, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 There are many approaches to plan and implement BI solutions. This article describes one approach that you can take to plan and implement BI solutions that support your BI strategy.
 
@@ -60,7 +60,7 @@ Here are some benefits from using a collaborative approach to gather requirement
 
 - **User input produces more useful designs:** By engaging users in focused discussions to collect requirements, you can more effectively capture business data needs. For example, users can demonstrate to content creators how they use existing solutions and provide feedback about the perceived effectiveness of these solutions.
 - **Avoid assumptions and mitigate change requests:** Discussions with users often reveal nuances, exceptions, and hidden complexities. These insights reduce the likelihood of late-stage requests, which can be costly to address.
-- **Onboarding users increases solution adoption:** By involving users in design and early development, you provide them with an opportunity to influence the final result. Involvement can also give users a sense of intellectual ownership and accountability for the solution. Highly involved users will be more likely to endorse the solution and lead their [community of practice](powerbi-adoption-roadmap-community-of-practice.md) in using it effectively.
+- **Onboarding users increases solution adoption:** By involving users in design and early development, you provide them with an opportunity to influence the final result. Involvement can also give users a sense of intellectual ownership and accountability for the solution. Highly involved users will be more likely to endorse the solution and lead their [community of practice](fabric-adoption-roadmap-community-of-practice.md) in using it effectively.
 - **Designs set expectations for stakeholders and business users:** By producing mock-ups or illustrations of the solution design, you can clearly show stakeholders what the solution will deliver. It also helps by creating a mutual understanding of the expected project result. This process is also known as _design thinking_, and it can be an effective way to approach and understand complex problems.
 
 You can take different approaches to engage users and gather requirements. For example, you can gather requirements with _business design_ and _technical design_ (described in detail in later sections of this article).
@@ -93,7 +93,7 @@ You should first prepare for solution planning by considering the factors descri
   - Provide post-deployment solution support.
   - Address user requests to change or update the solution after deployment.
   - Conduct solution handover after deployment, if necessary.
-- **Centralize communication and documentation:** It's important that the project team centralizes communication and documentation for BI solution planning. For example, the project team should centralize requirements, stakeholder communication, timelines, and deliverables. Consider storing all documentation in a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
+- **Centralize communication and documentation:** It's important that the project team centralizes communication and documentation for BI solution planning. For example, the project team should centralize requirements, stakeholder communication, timelines, and deliverables. Consider storing all documentation in a [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal).
 - **Plan requirements gathering:** The project team should begin by planning the business design sessions to gather business requirements. These sessions take the form of interactive meetings, and they can follow a similar format to the [strategic planning workshops](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#workshops).
 
 > [!TIP]
@@ -171,7 +171,7 @@ The project team engages stakeholders in technical design sessions to address te
 - **Technical features:** Features or functionality needed to support business requirements.
 
 > [!TIP]
-> The project team who conducted the business design should also conduct the technical design. However, for practical reasons, different individuals may lead the technical design. In this case, begin the technical design by reviewing the outcomes of the business design.
+> The project team who conducted the business design should also conduct the technical design. However, for practical reasons, different individuals might lead the technical design. In this case, begin the technical design by reviewing the outcomes of the business design.
 >
 > Ideally, the individuals who lead the technical design should have a thorough understanding of the outcomes and the business users.
 
@@ -192,7 +192,7 @@ The diagram depicts the following steps.
 | ![Item 7.](media/common/icon-07-red-30x30.png) | The technical design should conclude with a final meeting with stakeholders and decision makers to decide whether or not to proceed. This meeting provides a final opportunity to evaluate the solution planning before resources are committed to developing the solution. |
 
 > [!NOTE]
-> The technical design may reveal unexpected complexity that may make the solution planning infeasible given the current resource availability or organizational readiness. In this case, the solution should be reevaluated in the subsequent [tactical planning period](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan). Depending on the urgency of the business data needs, a decision maker, like the executive sponsor, may still want to proceed with a proof of concept, or only one part of the planned solution.
+> The technical design might reveal unexpected complexity that could make the solution planning infeasible given the current resource availability or organizational readiness. In this case, the solution should be reevaluated in the subsequent [tactical planning period](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan). Depending on the urgency of the business data needs, a decision maker, like the executive sponsor, might still want to proceed with a proof of concept, or only one part of the planned solution.
 
 The technical design concludes with a solution plan, which consists of the following deliverables.
 
@@ -206,7 +206,7 @@ The technical design concludes with a solution plan, which consists of the follo
 > Ensure that the project team notifies stakeholders of any changes or unexpected discoveries from the technical design. These technical design sessions should still involve relevant business users. However, ensure that stakeholders aren't unnecessarily exposed to complex technical information.
 
 > [!TIP]
-> Because business objectives invariably evolve, it's expected that requirements will change. Don't assume that requirements for BI projects are fixed. If you struggle with changing requirements, it may be an indication that your requirements gathering process isn't effective, or that your development workflows don't sufficiently incorporate regular feedback.
+> Because business objectives invariably evolve, it's expected that requirements will change. Don't assume that requirements for BI projects are fixed. If you struggle with changing requirements, it might be an indication that your requirements gathering process isn't effective, or that your development workflows don't sufficiently incorporate regular feedback.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -214,7 +214,7 @@ The technical design concludes with a solution plan, which consists of the follo
 
 > [!div class="checklist"]
 > - **Clarify who owns solution planning:** For each solution, ensure that roles and responsibilities are clear for the project team.
-> - **Clarify the solution scope:** The solution scope should already be documented as part of BI tactical planning. You may need to spend additional time and effort to clarify the scope before you start solution planning.
+> - **Clarify the solution scope:** The solution scope should already be documented as part of BI tactical planning. You might need to spend additional time and effort to clarify the scope before you start solution planning.
 > - **Identify and inform stakeholders:** Identify stakeholders for business designs and technical designs. Inform them in advance about the project and explain the scope, objectives, required time investment, and deliverables from the business design.
 > - **Plan and conduct business design sessions:** Moderate the business design sessions to elicit information from stakeholders and business users. Request that users demonstrate how they use existing solutions.
 > - **Document business metrics and attributes:** By using existing solutions and input from stakeholders, create a list of business metrics and attributes. In the technical designs, map the fields to the data source and describe the calculation logic for quantitative fields.
@@ -240,7 +240,7 @@ The project team should plan for key areas of solution deployment. Typically, pl
 - **Data gateways:** Evaluate whether the solution needs a data gateway to connect to data sources. Determine whether specific gateway settings or [high availability clusters](/data-integration/gateway/service-gateway-high-availability-clusters) are necessary. Plan who will be able to manage gateway connections via the gateway [security roles](/data-integration/gateway/manage-security-roles), and how to [monitor the gateways](/data-integration/gateway/service-gateway-performance).
 - **Workspaces:** Decide how to [set up and use workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md). Determine whether the solution requires lifecycle management tools like [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) and [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and whether it requires advanced logging with [Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview).
 - **Support:** Establish who's responsible for supporting and maintaining the solution after production deployment. If the individuals responsible for support are different than the project team, involve these individuals in development. Ensure that whoever will support the solution understands the solution design, the problem it should address, who should use it, and how.
-- **User training:** Anticipate the efforts needed to train the user community so they can effectively use the solution. Consider whether any specific [change management](powerbi-adoption-roadmap-change-management.md) actions are necessary.
+- **User training:** Anticipate the efforts needed to train the user community so they can effectively use the solution. Consider whether any specific [change management](fabric-adoption-roadmap-change-management.md) actions are necessary.
 - **Governance:** Identify any potential governance risks for the solution. Anticipate the effort needed to enable users to effectively use the solution, while mitigating any governance risk (for example, by using [sensitivity labels](powerbi-implementation-planning-info-protection.md#sensitivity-label-structure) and [policies](powerbi-implementation-planning-info-protection.md#published-label-policies)).
 
 ### Conduct initial setup
@@ -274,14 +274,14 @@ The project team conducts a solution _[proof of concept (POC)](powerbi-migration
 
 We recommend factoring in the following considerations when preparing a POC.
 
-- **Objectives and scope:** Describe the purpose of the solution POC and the functional areas it will address. For example, the project team may decide to limit the POC to a single functional area, or a specific set of requirements or features.
-- **Source data:** Identify what data will be used in the POC. Depending on the solution, the project team may decide to use different types of data, such as:
+- **Objectives and scope:** Describe the purpose of the solution POC and the functional areas it will address. For example, the project team could decide to limit the POC to a single functional area, or a specific set of requirements or features.
+- **Source data:** Identify what data will be used in the POC. Depending on the solution, the project team might decide to use different types of data, such as:
   - Production (real) data
   - Sample data
   - Generated synthetic data that resembles actual data volumes and complexity observed in production environments
-- **Demonstration:** Describe how and when the project team will demonstrate the POC to stakeholders and users. Demonstrations may be given during regular updates, or when the POC fulfills specific functional criteria.
+- **Demonstration:** Describe how and when the project team will demonstrate the POC to stakeholders and users. Demonstrations could be given during regular updates, or when the POC fulfills specific functional criteria.
 - **Environment:** Describe where the project team will build the POC. A good approach is to use a distinct _sandbox_ environment for the POC, and deploy it to a development environment when it's ready. A sandbox environment has more flexible policies and fluid content, and it's focused on producing quick results. In contrast, a development environment follows more structured processes that enable collaboration, and it focuses on completing specific tasks.
-- **Success criteria:** Define the threshold for when the POC is successful and should move to the next iteration and enter formal development. Before starting the POC, the project team should identify clear criteria for when the POC is successful. By setting these criteria in advance, the project team defines when the POC development ends and when iterative development and validation cycles begin. Depending on the objectives of the POC, the project team may set different success criteria, such as:
+- **Success criteria:** Define the threshold for when the POC is successful and should move to the next iteration and enter formal development. Before starting the POC, the project team should identify clear criteria for when the POC is successful. By setting these criteria in advance, the project team defines when the POC development ends and when iterative development and validation cycles begin. Depending on the objectives of the POC, the project team could set different success criteria, such as:
   - Approval of the POC by stakeholders
   - Validation of features or functionality
   - Favorable review of the POC by peers after a fixed development time
@@ -325,8 +325,8 @@ The diagram depicts the following steps.
 | :-: | --- |
 | ![Item 1.](media/common/icon-01-red-30x30.png) | The project team communicates each release to the user community, describing changes and new features. Ideally, communication includes a solution demonstration and Q&A, so users understand what's new in the release, and they can provide verbal feedback. |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | During validation, users provide feedback via a central tool or form. The project team should review feedback regularly to address issues, accept or reject requests, and inform upcoming development phases. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | The project team monitors usage of the solution to confirm that users are testing it. If there isn't any usage, the project team should engage with the user community to understand the reasons why. Low usage may indicate that the project team needs to take further enablement and change management actions. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | The project team promptly responds to user feedback. If the project team takes too long to address feedback, users may quickly lose motivation to provide it. |
+| ![Item 3.](media/common/icon-03-red-30x30.png) | The project team monitors usage of the solution to confirm that users are testing it. If there isn't any usage, the project team should engage with the user community to understand the reasons why. Low usage can indicate that the project team needs to take further enablement and change management actions. |
+| ![Item 4.](media/common/icon-04-red-30x30.png) | The project team promptly responds to user feedback. If the project team takes too long to address feedback, users might quickly lose motivation to provide it. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | The project team incorporates accepted feedback into the solution planning. If necessary, they review the planning priorities to clarify and delegate tasks before the next development phase begins. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | The project team continues development of the solution for the next release. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | The project team iterates through all steps until they reach a predefined conclusion, and the solution is ready for production deployment. |
@@ -359,7 +359,7 @@ Factor in the following considerations when the project team validates content.
 
 - **Encourage user feedback:** With each release, request users provide feedback, and demonstrate how they can effectively do so. Consider regularly sharing examples of feedback and requests that have led to recent changes and new features. By sharing examples, you're demonstrating that feedback is acknowledged and valued.
 - **Isolate larger requests:** Some feedback items require more effort to address. Ensure that the project team can identify these items and discuss whether they'll be implemented, or not. Consider documenting larger requests to discuss in later [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#collect-feedback-about-the-business-strategy) sessions.
-- **Begin change management activities:** Train users how to use the solution. Be sure to spend extra effort on new processes, new data, and different ways of working. Investing in [change management](powerbi-adoption-roadmap-change-management.md) has a positive return on long-term solution adoption.
+- **Begin change management activities:** Train users how to use the solution. Be sure to spend extra effort on new processes, new data, and different ways of working. Investing in [change management](fabric-adoption-roadmap-change-management.md) has a positive return on long-term solution adoption.
 
 When the solution reaches a predefined level of completeness and maturity, the project team is ready to deploy it to production. After deployment, the project team transitions from iterative delivery to supporting and monitoring the production solution.
 
@@ -391,10 +391,10 @@ To ensure a successful deployment, you perform the following support and adoptio
 - **Conduct training for content consumers:** Training should be available for content consumers during the first weeks after release to production. Training should focus on clarifying the solution scope, answering user questions, and explaining how to use the solution.
 - **Address feedback and requests:** Consider providing users with a channel to submit feedback and requests to the project team. Ensure that reasonable feedback and requests are discussed and, when appropriate, implemented during the post-deployment support period. Acting on feedback and requests after the production release is important. It indicates an agile solution that responds to changing business needs.
 - **Plan to connect with the user community:** Even after the post-deployment support period ends, ensure that solution owners regularly meet with the user community. These meetings are valuable sources of feedback for revising your BI strategy. Also, they help support solution adoption by enabling users.
-- **Handover actions:** Members of the project team may not be responsible for maintaining the solution. In this case, the team should identify who's responsible and perform a handover. The handover should occur soon after the release to production, and it should address both the solution and the user community.
+- **Handover actions:** Members of the project team might not be responsible for maintaining the solution. In this case, the team should identify who's responsible and perform a handover. The handover should occur soon after the release to production, and it should address both the solution and the user community.
 
 > [!CAUTION]
-> Failing to conduct an effective handover may lead to preventable issues with solution support and adoption during its lifecycle.
+> Failing to conduct an effective handover can lead to preventable issues with solution support and adoption during its lifecycle.
 
 After deployment, the project team should plan to proceed to the next solution in the prioritized solution backlog. Ensure that you collect any new feedback and requests and make revisions to [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan)—including the solution backlog—if necessary.
 

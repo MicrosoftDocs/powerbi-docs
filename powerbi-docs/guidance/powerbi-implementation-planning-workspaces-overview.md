@@ -17,7 +17,7 @@ ms.date: 08/23/2023
 This workspaces article introduces the Fabric workspace planning articles, which have an emphasis on the Power BI experience. These articles are targeted at multiple audiences:
 
 - **Fabric administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing analytics throughout the organization.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing data and BI throughout the organization.
 - **Content creators and owners:** Self-service creators who need to create, publish, and manage content in workspaces.
 
 Proper workspace planning is an integral part of making an implementation successful. Inadequate workspace planning can lead to less user flexibility and inferior workarounds for organizing and securing content.

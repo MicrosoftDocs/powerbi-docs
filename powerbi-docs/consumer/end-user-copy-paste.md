@@ -7,7 +7,7 @@ ms.reviewer: maggie.tsang
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/18/2023
+ms.date: 11/16/2023
 LocalizationGroup: Visualizations
 ---
 # Copy a visual and then paste it into another application
@@ -79,10 +79,17 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
 Q: Why is my visual not pasting correctly?  
-A: There are limitations for custom visuals and animated visuals.
+A: There are limitations for custom visuals and animated visuals. The following are some examples of visuals that won't paste correctly:
+
+* [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
+* [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 Q: Can I copy a visual from my embedded Power BI report?  
 A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.
+
+Q: Can I copy and paste slicer visualizations in a report?
+
+A: No, copying and pasting the slicer visualization is not supported. This includes visuals that use [Visual Filter APIs](../developer/visuals/filter-api.md) which act as slicers. 
 
 ## Next steps
 

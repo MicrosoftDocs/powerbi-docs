@@ -1,8 +1,8 @@
 ---
 title: About storytelling with Power BI in PowerPoint
 description: Learn about enhancing data storytelling in PowerPoint with live, interactive Power BI data using the Power BI add-in for PowerPoint.
-author: paulinbar
-ms.author: painbar
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -31,7 +31,7 @@ To start adding live Power BI data to your presentations, see [Add live Power BI
 
 To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Power BI Free license, and access to the data. If the Power BI report isn't located in a Premium capacity, a Power BI Pro license is needed.
+To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Fabric Free license, and access to the data. If the Power BI report isn't located in a Premium capacity or Fabric F64 or greater capacity, a Power BI Pro license is needed.
 
 ## Security
 

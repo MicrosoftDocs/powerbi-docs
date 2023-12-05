@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 11/15/2023
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
 
 # What is Power BI Premium?
 
-Power BI Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md).
+This article describes Power BI Premium operations and considerations, to view a high level description of how Microsoft Fabric works, see [Microsoft Fabric concepts and licenses](/fabric/enterprise/licenses).
 
-The following table lists some of the Premium enhancements.
+Power BI Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md). The following table lists some of the Premium enhancements.
 
 |Enhancement           |Details  |
 |----------------------|---------|
@@ -29,8 +29,6 @@ The following table lists some of the Premium enhancements.
 [!INCLUDE [what is capacity](../includes/what-is-capacity.md)]
 
 [!INCLUDE [capacity and SKUs](../includes/capacity-and-skus.md)]
-
-The table below describes the resources and limits of each SKU.
 
 [!INCLUDE [Power BI capacity and SKUs](../includes/capacity-table.md)]
 
@@ -56,21 +54,43 @@ Workspaces reside within capacities. Each Power BI user has a personal workspace
 
 Capacity administrators automatically have their My workspaces assigned to Premium capacities.
 
-## Dataset memory allocation
+## Semantic model SKU limitation
 
-With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there's a limit on the memory available for each dataset based on the SKU. For example, in a Premium P1 capacity, any dataset that exceeds 25 GB in memory usage would result in failures. You can find the dataset memory upper limits for each SKU, in the *Max memory per dataset* column of the [Capacities and SKUs](#capacities-and-skus) table.
+With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there are memory limits and other constraints for each SKU listed in the table below.
 
-Dataset operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a dataset with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same dataset. Three separate actions determine the amount of memory attributed to the original dataset, which may be larger than two times the dataset size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per dataset* allocation.
+| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
+| ----- | --- | ------ | -- | ----- | ------ | --------- |
+| F2    |   3 |   2    |  1 |     1 |    300 | 10        |
+| F4    |   3 |   2    |  1 |     2 |    300 | 10        |
+| F8    |   3 |   3.75 |  1 |     5 |    300 | 10        |
+| F16   |   5 |   7.5  |  2 |    10 |    300 | 20        |
+| F32   |  10 |  15    |  5 |    20 |    300 | 40        |
+| F64   |  25 |  30    | 10 |    40 |  1,500 | Unlimited |
+| F128  |  50 |  60    | 10 |    80 |  3,000 | Unlimited |
+| F256  | 100 | 120    | 10 |   160 |  6,000 | Unlimited |
+| F512  | 200 | 240    | 20 |   320 | 12,000 | Unlimited |
+| F1024 | 400 | 480    | 40 |   640 | 24,000 | Unlimited |
+| F2048 | 400 | 960    | 40 | 1,280 | 24,000 | Unlimited |
 
-* **Loading the dataset** - The first action is loading the dataset into the memory.
+<sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
-* **Refreshing the dataset** - The second action is refreshing the dataset after it's loaded into the memory. The refresh operation will cause the memory used by the dataset to double. The required memory doubles because the original copy of data is still available for active queries, while another copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
+<sup>2</sup> The *Max memory (GB)* column represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column.
 
-* **Interacting with the report** - The third action is caused by the user's interaction with the report. During the dataset refresh, report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory. The memory used to query the dataset is added to the memory needed to load the dataset, and refresh it.
+<sup>3</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](../enterprise/directlake-overview.md#fallback).
+
+### Semantic model memory usage
+
+Semantic model operations such as queries are subject to individual memory limits. To illustrate the restriction, consider a semantic model with an in-memory footprint of 1 GB, and a user initiating an on-demand refresh while interacting with a report based on the same semantic model. Three separate actions determine the amount of memory attributed to the original semantic model, which may be larger than two times the semantic model size. The total amount of memory used by one Power BI item can't exceed the SKU's *Max memory per semantic model* allocation.
+
+* **Loading the semantic model** - The first action is loading the semantic model into the memory.
+
+* **Refreshing the semantic model** - The second action is refreshing the semantic model after it's loaded into the memory. The refresh operation will cause the memory used by the semantic model to double. The required memory doubles because the original copy of data is still available for active queries, while another copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
+
+* **Interacting with the report** - The third action is caused by the user's interaction with the report. During the semantic model refresh, report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory. The memory used to query the semantic model is added to the memory needed to load the semantic model, and refresh it.
 
 ## Refreshes
 
-Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) don't require cumulative memory limits, and therefore concurrent dataset refreshes don't contribute to resource constraints. However, refreshing individual datasets is governed by existing capacity memory and CPU limits, and the model refresh parallelism limit for the SKU, as described in [Capacities and SKUs](#capacities-and-skus).
+Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) don't require cumulative memory limits, and therefore concurrent semantic model refreshes don't contribute to resource constraints. However, refreshing individual semantic models is governed by existing capacity memory and CPU limits, and the model refresh parallelism limit for the SKU, as described in [Capacities and SKUs](#capacities-and-skus).
 
 You can schedule and run as many refreshes as required at any given time, and the Power BI service will run those refreshes at the time scheduled as a best effort.
 
@@ -96,15 +116,35 @@ When using *Power BI Premium* and [Power BI Embedded](../developer/embedded/embe
 
 * **Enhanced security and code isolation** - Code isolation occurs at a per-user level, rather than at a per-capacity level.
 
+## Dataflows Gen1
+
+Each SKU can run a set number of Dataflows Gen1 [parallel tasks](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium), as listed in this table.
+
+| Fabric SKU | Dataflow parallel tasks |
+| ---------- | ----------------------- |
+| F2         |  2                      |
+| F4         |  2                      |
+| F8         |  4                      |
+| F16        |  8                      |
+| F32        | 16                      |
+| F64        | 32                      |
+| F128       | 64                      |
+| F256       | 64                      |
+| F512       | 64                      |
+| F1024      | 64                      |
+| F2048      | 64                      |
+
+To learn about Dataflow Gen2, see [Getting from Dataflow Generation 1 to Dataflow Generation 2](/fabric/data-factory/dataflows-gen2-overview).
+
 ## Considerations and limitations
 
 The following known limitations currently apply to Power BI Premium.
 
 * **Rendering visuals** - There's a 225-second limitation for rendering Power BI visuals. Visuals that take longer to render, will be timed-out and won't display.
 
-* **Throttling** - Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently. To mitigate throttling, you can use [autoscale](service-premium-auto-scale.md). When autoscale is enabled, if CPU consumption exceeds the additional limits, throttling will still take place.
+* **Throttling** - Throttling can occur in Power BI Premium capacities. Concurrency limits are applied per session. An error message will appear when too many operations are being processed concurrently. To mitigate throttling, you can use [autoscale](service-premium-auto-scale.md). When autoscale is enabled, if CPU consumption exceeds the additional limits, throttling will still take place. To read more about throttling in Fabric, see [The Fabric throttling policy](/fabric/enterprise/throttling).
 
-* **Client library version** - [Client applications and tools](service-premium-connect-tools.md#client-applications-and-tools) that connect to and work with datasets on Premium capacities through the [XMLA endpoint](service-premium-connect-tools.md) require Analysis Services client libraries. Most client applications and tools install the most recent client libraries with regular updates, so manually installing the client libraries isn't usually necessary. Regardless of the client application or tool version, the following minimum client library versions are required.
+* **Client library version** - [Client applications and tools](service-premium-connect-tools.md#client-applications-and-tools) that connect to and work with semantic models on Premium capacities through the [XMLA endpoint](service-premium-connect-tools.md) require Analysis Services client libraries. Most client applications and tools install the most recent client libraries with regular updates, so manually installing the client libraries isn't usually necessary. Regardless of the client application or tool version, the following minimum client library versions are required.
 
     | Client Library | Version    |
     |----------------|------------|
@@ -113,6 +153,13 @@ The following known limitations currently apply to Power BI Premium.
     | ADOMD          | 19.12.7.0  |
 
     In some cases, manually installing the most recent client libraries may be necessary to reduce potential connection and operation errors. To learn more about verifying existing installed client library versions and manually installing the most recent versions, see [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true).
+
+* **Semantic models compatibility** - Some semantic models are incompatible with the Power BI service modern infrastructure:
+    * Semantic models created in Power BI service from CSV files.
+    * Semantic models in the [admin monitoring workspace](/fabric/admin/monitoring-workspace) and usage metrics models.
+    * Semantic models that still use 1103 compatibility level.
+    * [Push semantic models](../connect-data/service-real-time-streaming.md#push-semantic-model).
+    * Semantic models that use deprecated features such as content packs.
 
 ## Next steps
 

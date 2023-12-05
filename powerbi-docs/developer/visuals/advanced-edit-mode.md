@@ -43,7 +43,7 @@ When you select **Edit**, the visual gets an update() call with EditMode set to 
 
 The **Back to report** button appears if the `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Add conditional formatting](conditional-format.md)

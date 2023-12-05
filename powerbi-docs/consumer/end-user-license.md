@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 11/04/2022
+ms.date: 10/27/2023
 ms.custom: licensing support
 LocalizationGroup: consumers
 ---
@@ -35,6 +35,12 @@ Each user of the Power BI service has either a *free* license, a *Pro* license, 
 
 It's possible to have more than one license at the same time. The service always delivers you the experience equal to the most permissive license you currently have.
 
+>[!NOTE]
+>
+>* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
+>* Only **P SKU**s and **F SKU**s larger than F32 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+
+
 ## Power BI Premium capacity subscription
 
 Premium is an organizational subscription that provides a way to store content in a virtual container called a capacity. With Premium capacity, anyone with permissions, whether they're inside or outside your organization, can view content stored in this virtual container. It isn't required that they purchase an individual Power BI Pro or Premium per-user license.
@@ -43,7 +49,7 @@ Premium capacity enables widespread distribution of content by Pro users without
 
 Within those workspaces, designers assign roles, like **Viewer**, **Contributor**, **Member**, and **Administrator**. The roles designers assign to their colleagues, and the license the colleagues have, determine the extent to which those colleagues can interact with the content. For more information, see [workspace permissions and roles](end-user-workspaces.md#permissions-in-the-workspaces).
 
-When a designer creates and publishes an app, they grant access to individuals or entire organizations. The extent to which you can interact with the app's content depends on the specific access permissions given to you. For example, you might be given access to view the app, connect to the underlying datasets, make copies of reports, or share the content.
+When a designer creates and publishes an app, they grant access to individuals or entire organizations. The extent to which you can interact with the app's content depends on the specific access permissions given to you. For example, you might be given access to view the app, connect to the underlying semantic models, make copies of reports, or share the content.
 
 For more info about Premium capacity, see [What is Microsoft Power BI Premium?](../enterprise/service-premium-what-is.md).
 
@@ -61,7 +67,7 @@ This first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro lic
 
 ![Office portal subscriptions tab showing Office 365 E5 subscription](media/end-user-license/power-bi-license-office.png)
 
-This second user, Zalan, has a Power BI free license. 
+This second user, Zalan, has a Fabric free license. 
 
 ![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png) 
 
@@ -97,7 +103,7 @@ If the designer places a workspace in Premium capacity, a user with a free licen
 
 ## Put it all together
 
-There are many ways organizations set up their Power BI subscriptions and licenses. From a business user's perspective, a common scenario is when an organization buys a Premium subscription, the administrator assigns Pro licenses to a small group of users, and all the other users have free licenses. Typically, the administrator assigns the Pro licenses to the employees who create and share content. The Pro users create [workspaces](end-user-workspaces.md) and add dashboards, reports, datasets, apps, and other content to those workspaces. To allow free users to collaborate in those workspaces, the administrator or Pro user then assigns the workspaces to Premium capacity.  
+There are many ways organizations set up their Power BI subscriptions and licenses. From a business user's perspective, a common scenario is when an organization buys a Premium subscription, the administrator assigns Pro licenses to a small group of users, and all the other users have free licenses. Typically, the administrator assigns the Pro licenses to the employees who create and share content. The Pro users create [workspaces](end-user-workspaces.md) and add dashboards, reports, semantic models, apps, and other content to those workspaces. To allow free users to collaborate in those workspaces, the administrator or Pro user then assigns the workspaces to Premium capacity.  
 
 |License type  |Not in Premium capacity | Premium capacity  |
 |---------|---------|---------|
@@ -127,6 +133,8 @@ The Power BI Pro designer can share and collaborate with other Pro users in eith
 - If you sign up for a free license by selecting a **Try it free** button, it never expires unless you cancel it. If your trial upgrade ends or if your organization removes your Pro or Premium license, your free license is still available to you.
 
 - A free user license for the Power BI service is perfect for someone exploring or using it for personal data analysis and visualizations by using **My workspace**. A free standalone user doesn't use Power BI to collaborate with colleagues. Standalone users with free licenses can't view content shared by others or share their own content with other Power BI users.
+
+
 
 ## Next steps
 

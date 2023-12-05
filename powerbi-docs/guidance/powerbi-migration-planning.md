@@ -23,7 +23,7 @@ The focus of Stage 2 is on defining how the requirements that were defined in St
 
 The output from Stage 2 includes as many specific decisions as possible to guide the deployment process.
 
-Decision-making of this nature is an iterative and non-linear process. Some planning will have already occurred in the [pre-migration steps](powerbi-migration-pre-migration-steps.md). Learnings from a proof of concept (described in [Stage 3](powerbi-migration-proof-of-concept.md)) may occur in parallel with deployment planning. Even while creating the solution (described in [Stage 4](powerbi-migration-create-validate-content.md)), additional information may arise that influences deployment decisions.
+Decision-making of this nature is an iterative and non-linear process. Some planning will have already occurred in the [pre-migration steps](powerbi-migration-pre-migration-steps.md). Learnings from a proof of concept (described in [Stage 3](powerbi-migration-proof-of-concept.md)) can occur in parallel with deployment planning. Even while creating the solution (described in [Stage 4](powerbi-migration-create-validate-content.md)), additional information might arise that influences deployment decisions.
 
 > [!IMPORTANT]
 > Stages 1-5 represent activities related to one specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities are discussed in the [Power BI migration overview](powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
@@ -46,13 +46,13 @@ For more information about architectural considerations, see **Section 3** of th
 
 - Is a new workspace needed for this new solution?
 - Will separate workspaces be needed to accommodate development, test, and production?
-- Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing datasets. When necessary, they can be managed separately from those users who publish reports.
+- Will separate workspaces be used for data and reports, or will a single workspace be sufficient? Separate workspaces have numerous advantages, especially for securing semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). When necessary, they can be managed separately from those users who publish reports.
 - What are the security requirements for the workspace? It influences planning for [workspace roles](../collaborate-share/service-roles-new-workspaces.md). If an app will be used by content consumers, [audience permissions for the app](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) are managed separately from the workspace. Distinct permissions for app viewers allow additional flexibility in meeting security requirements for read-only consumers of reports or dashboards.
 - Can existing groups be used for securing the new content? Both groups in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) and Microsoft 365 are supported. When aligned with existing processes, using groups makes permissions management easier than assignments to individual users.
-- Are there any security considerations related to external guest users? You may need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
+- Are there any security considerations related to external guest users? You might need to work with your Microsoft Entra administrator and your Power BI administrator to set up [guest user access](../enterprise/service-admin-azure-ad-b2b.md).
 
 > [!TIP]
-> Consider creating a workspace for a specific business activity or project. You may be tempted to start off structuring workspaces based on your organizational structure (such as a workspace per department), but this approach frequently ends up being too broad.
+> Consider creating a workspace for a specific business activity or project. You might be tempted to start off structuring workspaces based on your organizational structure (such as a workspace per department), but this approach frequently ends up being too broad.
 
 ## Determine how content will be consumed
 
@@ -62,11 +62,11 @@ It's helpful to understand how consumers of a solution prefer to view reports an
 - Will certain reports and dashboards be embedded elsewhere, such as [Teams](../collaborate-share/service-embed-report-microsoft-teams.md), [SharePoint Online](../collaborate-share/service-embed-report-spo.md), or a [secure portal or website](../collaborate-share/service-embed-secure.md)?
 - Will consumers access content using [mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)? Requirements to deliver reports to small form factor devices will influence some [report design decisions](../create-reports/power-bi-create-mobile-optimized-report-about.md).
 
-## Decide if other content may be created
+## Decide whether other content can be created
 
 There are several key decisions to be made related to allowing consumers to create new content, such as:
 
-- Will consumers be allowed to create new reports from the published dataset? This capability can be enabled by assigning dataset [build permission](../connect-data/service-datasets-build-permissions.md) to a user.
+- Will consumers be allowed to create new reports from the published semantic model? This capability can be enabled by assigning semantic model [Build permission](../connect-data/service-datasets-build-permissions.md) to a user.
 - If consumers want to customize a report, can they [save a copy](../connect-data/service-datasets-copy-reports.md) of it and personalize it to meet their needs?
 
 > [!CAUTION]
@@ -77,20 +77,20 @@ There are several key decisions to be made related to allowing consumers to crea
 Additional capabilities are available when a workspace is stored on a [Premium capacity](../enterprise/service-premium-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
 
 - Content can be accessed by consumers who don't have a Power BI Pro or Premium Per User (PPU) license.
-- Support for large datasets.
+- Support for large semantic models.
 - Support for more frequent data refreshes.
 - Support for using the full feature set of dataflows.
 - Enterprise features, including deployment pipelines and the XMLA endpoint.
 
 ## Determine data acquisition method
 
-The data required by a report may influence several decisions. Questions to ask include:
+The data required by a report might influence several decisions. Questions to ask include:
 
-- Can an existing Power BI [shared dataset](../connect-data/service-datasets-share.md) be used, or is the creation of a new Power BI dataset appropriate for this solution?
-- Does an existing shared dataset need to be augmented with new data or measures to meet additional needs?
+- Can an existing Power BI [shared semantic models](../connect-data/service-datasets-share.md) be used, or is the creation of a new Power BI semantic model appropriate for this solution?
+- Does an existing shared semantic model need to be augmented with new data or measures to meet additional needs?
 - Which [data storage mode](../transform-model/desktop-storage-mode.md) will be most appropriate? Options include Import, DirectQuery, Composite, or Live Connection.
 - Should [aggregations](../enterprise/aggregations-auto.md) be used to enhance query performance?
-- Will creation of a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) be useful and can it serve as a source for numerous datasets?
+- Will creation of a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md) be useful and can it serve as a source for numerous semantic models?
 - Will a new [gateway data source](../connect-data/service-gateway-data-sources.md) need to be registered?
 
 ## Decide where original content will be stored
@@ -99,7 +99,7 @@ In addition to planning the target deployment destination, it's also important t
 
 - Specify an approved location for storing the original Power BI Desktop (.pbix) files. Ideally, this location is available only to people who edit the content. It should align with how security is set up in the Power BI service.
 - Use a location for original Power BI Desktop files that includes versioning history or source control. Versioning permits the content author to revert to a previous file version, if necessary. OneDrive for work or school or SharePoint work well for this purpose.
-- Specify an approved location for storing non-centralized source data, such as flat files or Excel files. It should be a path that any of the dataset authors can reach without error and is backed up regularly.
+- Specify an approved location for storing non-centralized source data, such as flat files or Excel files. It should be a path that any of the semantic model creators can reach without error and is backed up regularly.
 - Specify an approved location for content exported from the Power BI service. The goal is to ensure that security defined in the Power BI service isn't inadvertently circumvented.
 
 > [!IMPORTANT]

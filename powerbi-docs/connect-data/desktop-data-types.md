@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 07/12/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -38,7 +38,7 @@ The **Binary** data type isn't supported outside of the Power Query Editor. In t
 
 Power BI Desktop supports three number types: **Decimal number**, **Fixed decimal number**, and **Whole number**.
 
-You can use the Tabular Object Model (TOM) Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> property to specify the <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums for number types. For more information about programmatically modifying objects in Power BI, see [Program Power BI datasets with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
+You can use the Tabular Object Model (TOM) Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> property to specify the <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums for number types. For more information about programmatically modifying objects in Power BI, see [Program Power BI semantic models with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
 
 ### Decimal number
 
@@ -187,7 +187,7 @@ When you add a simple visualization that shows the detailed information per cust
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-03.png" alt-text="Screenshot of a visual that shows the data appearing as expected.":::
 
-However, when you refresh the dataset in the Power BI service, the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
+However, when you refresh the semantic model in the Power BI service, the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-04.png" alt-text="Screenshot of a visual that shows data appearing in an unexpected format after refresh.":::
 

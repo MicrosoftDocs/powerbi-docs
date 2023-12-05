@@ -1,32 +1,28 @@
 ---
 title: Learn about Direct Lake in Power BI and Microsoft Fabric
-description: Describes using Direct Lake to analyze very large datasets in Power BI and Microsoft Fabric.
+description: Describes using Direct Lake to analyze very large semantic models in Power BI and Microsoft Fabric.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
+ms.custom:
+  - ignite-2023-fabric
 ms.topic: conceptual
-ms.date: 05/16/2023
+ms.date: 11/09/2023
 LocalizationGroup: Admin
 ---
 # Direct Lake
 
-> [!IMPORTANT]
-> Direct Lake is currently in **preview**. Before testing in your environment, be sure to read [Known issues and limitations](#known-issues-and-limitations) later in this article.
-
-*Direct Lake* mode is a groundbreaking new dataset capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with the new Direct Lake mode.
+*Direct Lake* mode is a groundbreaking semantic model capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI model. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with Direct Lake mode.
 
 :::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
-> [!NOTE]
-> Data Warehouse is not currently supported in **preview**.
+In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data like with import mode. Any changes at the data source are immediately reflected in the query results.
 
-In DirectQuery mode, the Power BI engine queries the data at the source, which can be slow but avoids having to copy the data. Any changes at the data source are immediately reflected in the query results.
+On the other hand, with import mode, performance can be better because the data is cached and optimized for DAX and MDX report queries without having to translate and pass SQL or other types of queries to the data source. However, the Power BI engine must first copy any new data into the model during refresh. Any changes at the source are only picked up with the next model refresh.
 
-On the other hand, with import mode, performance can be better because the data is cached and optimized for business-intelligence queries without having to query the data source for each DAX query submitted by a report. However, the Power BI engine must first copy the data into the dataset during refresh. Any changes at the source are only picked up with the *next* dataset refresh.
-
-Direct Lake mode eliminates the import requirement by loading the data directly from OneLake. Unlike DirectQuery, there is no translation to other query languages or query execution on other database systems, yielding performance similar to import mode. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large datasets and datasets with frequent updates at the data source.
+Direct Lake mode eliminates the import requirement by loading the data directly from OneLake. Unlike DirectQuery, there is no translation from DAX or MDX to other query languages or query execution on other database systems, yielding performance similar to import mode. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large models and models with frequent updates at the data source.
 
 ## Prerequisites
 
@@ -34,33 +30,33 @@ Direct Lake is supported on Power BI Premium P and Microsoft Fabric F SKUs only.
 
 #### Lakehouse
 
-Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling to create a Direct Lake dataset.
+Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling to create a Direct Lake model.
 
-To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a dataset for the Lakehouse, see [Create a Lakehouse](#create-a-lakehouse) later in this article.
+To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a basic model for the Lakehouse, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).
 
 #### SQL endpoint
 
-As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default dataset for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake dataset must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
+As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default model for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake model must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
 
-## Dataset write support with XMLA endpoint
+## Model write support with XMLA endpoint
 
-Direct Lake datasets support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher) , and the latest versions of external BI tools like Tabular Editor and DAX studio. Dataset write operations through the XMLA endpoint support:
+Direct Lake models support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher) , and the latest versions of external BI tools like Tabular Editor and DAX studio. Model write operations through the XMLA endpoint support:
 
-- Customizing, merging, scripting, debugging, and testing Direct Lake dataset metadata.
+- Customizing, merging, scripting, debugging, and testing Direct Lake model metadata.
 
 - Source and version control, continuous integration and continuous deployment (CI/CD) with Azure DevOps and GitHub.
 
-- Automation tasks like refreshing, and applying changes to Direct Lake datasets by using PowerShell and REST APIs.
+- Automation tasks like refreshing, and applying changes to Direct Lake models by using PowerShell and REST APIs.
 
-### Enable XMLA read-write
+#### Enable XMLA read-write
 
-Before performing write operations on Direct Lake datasets through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
+Before performing write operations on Direct Lake models through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
 
 For Power BI Premium capacities, see [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
 
 For **Fabric trial** capacities, the trial user has the admin privileges necessary to enable XMLA read-write.
 
-1. In the Admin portal, select **Capacity settings**. 
+1. In the Admin portal, select **Capacity settings**.
 
 1. Click on the **Trial** tab.
 
@@ -70,51 +66,96 @@ For **Fabric trial** capacities, the trial user has the admin privileges necessa
 
     :::image type="content" source="media/directlake-overview/fabric-enable-xmla-readwrite.png" alt-text="Enable XMLA read write for a Fabric trial capacity":::
 
-Keep in mind, the XMLA Endpoint setting applies to all workspaces and datasets assigned to the capacity.
+Keep in mind, the XMLA Endpoint setting applies to all workspaces and models assigned to the capacity.
 
-### Direct Lake dataset metadata
+### Direct Lake model metadata
 
-When connecting to a standalone dataset through the XMLA endpoint, the metadata looks like any other dataset. However, Direct Lake datasets show the following differences:
+When connecting to a standalone Direct Lake model through the XMLA endpoint, the metadata looks like any other model. However, Direct Lake models show the following differences:
 
 - The `compatibilityLevel` property of the database object is 1604 or higher.
 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
-- Direct Lake partitions use shared expressions called `DatabaseQuery` to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
 
 Here's an example XMLA query in SSMS:
 
 :::image type="content" source="media/dl-dataset-metadata.png" alt-text="XMLA query in SSMS":::
 
-To learn more about tool support through the XMLA endpoint, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
+To learn more about tool support through the XMLA endpoint, see [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md).
+
+## Fallback
+
+Power BI semantic models in Direct Lake mode read delta tables directly from OneLake. However, if a DAX query on a Direct Lake model exceeds limits for the SKU, or uses features that don’t support Direct Lake mode, like SQL views in a Warehouse, the query can fall back to DirectQuery mode. In DirectQuery mode, queries use SQL to retrieve the results from the SQL endpoint of the Lakehouse or Warehouse, which can impact query performance. You can [disable fallback](#fallback-behavior) to DirectQuery mode if you want to process DAX queries in pure Direct Lake mode only. Disabling fallback is recommended if you don’t need fallback to DirectQuery. It can also be helpful when analyzing query processing for a Direct Lake model to identify if and how often fallbacks occur. To learn more about DirectQuery mode, see [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md#directquery-mode).
+
+***Guardrails*** define resource limits for Direct Lake mode beyond which a fallback to DirectQuery mode is necessary to process DAX queries. For details about how to determine the number of parquet files and row groups for a delta table, refer to the [Delta table properties reference](/azure/databricks/delta/table-properties#delta-table-properties).
+
+For Direct Lake semantic models, **Max Memory** represents the upper memory resource limit for how much data can be paged in. In effect, it's not a guardrail because exceeding it does not cause a fallback to DirectQuery; however, it can have a performance impact if the amount of data is large enough to cause paging in and out of the model data from the OneLake data.
+
+The following table lists both resource guardrails and MaxMemory:
+
+| Fabric/Power BI SKUs |Parquet files per table | Row groups per table | Rows per table (millions) | Max model size on disk/OneLake<sup>[1](#mm)</sup> (GB) | Max memory (GB) |
+|-------------|-------------------------|-------------------------|------------------------|-------------------------|-------------------------|
+| F2          | 1,000                   | 1,000                | 300                       | 10                       |3                       |
+| F4          | 1,000                   | 1,000                | 300                       | 10                       |3                       |
+| F8          | 1,000                   | 1,000                | 300                       | 10                       |3                       |
+| F16         | 1,000                   | 1,000                | 300                       | 20                       |5                       |
+| F32         | 1,000                   | 1,000                | 300                       | 40                       |10                      |
+| F64/FT1/P1  | 5,000                   | 5,000                | 1,500                     | Unlimited                |25                      |
+| F128/P2     | 5,000                   | 5,000                | 3,000                     | Unlimited                |50                      |
+| F256/P3     | 5,000                   | 5,000                | 6,000                     | Unlimited                |100                     |
+| F512/P4     | 10,000                  | 10,000               | 12,000                    | Unlimited                |200                     |
+| F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
+| F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
+
+<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fallback to DirectQuery, unlike other guardrails that are evaluated per query.
+
+Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
+
+#### Fallback behavior
+
+Direct Lake models include the **DirectLakeBehavior** property, which has three options:
+
+**Automatic** - (Default) Specifies queries fall back to *DirectQuery* mode if data can't be efficiently loaded into memory.
+
+**DirectLakeOnly** - Specifies all queries use Direct Lake mode only. Fallback to DirectQuery mode is disabled. If data can't be loaded into memory, an error is returned. Use this setting to determine if DAX queries fail to load data into memory, forcing an error to be returned.
+
+**DirectQueryOnly** - Specifies all queries use DirectQuery mode only. Use this setting to test fallback performance.
+
+The DirectLakeBehavior property can be configured by using Tabular Object Model (TOM) or Tabular Model Scripting Language (TMSL).
+
+The following example specifies all queries use Direct Lake mode only:
+
+```csharp
+// Disable fallback to DirectQuery mode.
+//
+database.Model.DirectLakeBehavior = DirectLakeBehavior.DirectLakeOnly = 1;
+database.Model.SaveChanges();
+```
+
+## Analyze query processing
+
+To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop, SQL Server Profiler, or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake models](directlake-analyze-qp.md).
+
+## Refresh
+
+By default, data changes in OneLake are automatically reflected in a Direct Lake model. You can change this behavior by disabling **Keep your Direct Lake data up to date** in the model's settings.
+
+:::image type="content" source="media/directlake-overview/direct-lake-refresh.png" alt-text="Direct Lake refresh in model settings":::
+
+You may want to disable if, for example, you need to allow completion of data preparation jobs before exposing any new data to consumers of the model. When disabled, you can invoke refresh manually or by using the refresh APIs. Invoking a refresh for a Direct Lake model is a low cost operation where the model analyzes the metadata of the latest version of the Delta Lake table and is updated to reference the latest files in the OneLake.
 
 ## Known issues and limitations
 
-The following are known issues and limitations during **preview**:
+- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse.
 
-- Direct Lake size limits are likely to change during **preview**. More definitive limits will be determined and described in this article by GA (General Availability). If limits are reached, queries are executed in DirectQuery mode. Limits are based on row count per table used by a DAX query. Row counts differ depending on the size of the SKU. To determine if queries fall back to DirectQuery mode, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
+- Direct Lake models created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
 
-- When generating a Direct Lake dataset in a QSO-enabled workspace, you must sync the dataset manually using the following PowerShell commands with the Power BI Management cmdlets installed (replace WorkspaceID and DatasetID with the GUIDs of your workspace and dataset):
+- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
 
-    ```powershell
-    Login-PowerBI
-    Invoke-PowerBIRestMethod -Url 'groups/WorkspaceId/datasets/DatasetId/sync' -Method Post | ConvertFrom-Json | Format-List
-    
-    ```
+- DateTime relationships are not supported in Direct Lake models.
 
-- Direct Lake datasets created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
-
-- Currently, Direct Lake datasets can only contain tables and views from a single Lakehouse.
-
-- If using the Web modeling experience with your dataset, if a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the dataset. For the dataset to reflect the change, the table must be removed from the dataset and then added back. To remove the table from the dataset, in the Web modeling experience's **Edit dataset** dialog, deselect the table and confirm. Then select it and confirm to add the table back.
-
-- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same dataset. Composite models are not yet supported.
-
-- Direct Lake datasets do not currently support Publish to Web because SSO requires authenticated users.
-
-- Calculated columns, calculated tables, and field parameters are not yet supported.
-
-- DateTime relationships are not supported in Direct Lake datasets.
+- Calculated columns and calculated tables are not yet supported.
 
 - Some data types may not be supported.
 
@@ -124,124 +165,24 @@ The following are known issues and limitations during **preview**:
 
 - The length of string column values is limited to 4,000 Unicode characters.
 
-- Direct Lake datasets currently work in Single Sign-On (SSO) mode only. You cannot disable SSO or use stored credentials yet.
+- Embedded scenarios that rely on embedded entities are not yet supported.
 
-- Embedded scenarios that rely on service principals are not yet supported. Direct Lake models use Single Sign-On (SSO).
+- Tables based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
 
-- The dataset user interface might display a warning icon on a table even though the table has no issues. This will be addressed in a future update.
+- Currently, when creating a *new* Direct Lake semantic model from the Lakehouse or SQL analytics endpoint in the Power BI service, any model items created in the *default* model are also added to the new model. These items can include measures, relationships, and properties such a format strings and data category. While these items can be changed in the new model,  those changes aren't reflected back to the default model. In a future update, only relationships can be optionally added when creating a new model.
 
-- The initial, default/auto-generated dataset may not be in Direct Lake mode if there's only a single table in the Lakehouse. To get the dataset to use Direct Lake mode, make a small change on the table in the Lakehouse, like renaming the table. The rename should cause the dataset to switch to Direct Lake mode.
+- Currently, for an *existing* Direct Lake model, if you're using the **Edit data model** experience in the Power BI service, one or more of the following can apply:
 
-- Tables based on TSQL-based views cannot be queried in Direct Lake mode. DAX queries that use these dataset tables fallback to DirectQuery mode.
+    - If a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the model. For the model to reflect the change, the table must be removed from the model and then added back. To remove the table, select **Edit tables**, deselect the table, and then **Confirm**. Select **Edit tables** again, select the table again, and then confirm. All measures in the table must be moved to other tables or removed from the table before you can remove the table. In a future update, changes happen automatically as part of schema refresh.
+    - If an existing delta table in the Lakehouse is renamed, that change isn't automatically reflected in the model. For the model to reflect the change, the table must be selected again from **Edit tables**. The table with the old name remains in the model and any visuals using the table show an error. The table can't be removed directly but it can be hidden. To remove it, in the Lakehouse, rename the table back to the original name. You can then remove it by unchecking the box in the Edit tables dialog. When removed from the model, the table can be renamed in the Lakehouse and then brought back in by using the Edit tables dialog. In a future update, renames happen automatically as part of schema refresh.
+    - If an existing delta table is removed from the Lakehouse, that change isn't automatically reflected in the model. The table remains and any visuals using it show an error. The table can't be removed but it can be hidden. In a future update, tables are removed automatically as part of schema refresh.
+    - If an *existing* measure, relationship, or other model property from the default/auto-generated model is removed, changed, or added, that change isn't automatically reflected in the model. For the model to reflect the change, the table with the updates must be removed and then added back. To remove the table, select **Edit tables**, deselect the table and then confirm. Select **Edit tables** again, select the table again, and then confirm. All measures in the table must be moved to other tables or removed before you can remove the table. In a  future update, there will be additional options for keeping changes.
 
-## Create a Lakehouse
+## Get started
 
-Complete the following steps to create a Lakehouse, a delta table, and a dataset in a Microsoft Fabric or Power BI workspace.
+The best way to get started with a Direct Lake solution in your organization is to create a Lakehouse, create a delta table in it, and then create a basic semantic model for the Lakehouse in your Microsoft Fabric or Power BI workspace. To learn more, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).
 
-#### To create a Lakehouse
+## See also
 
-1. In your Microsoft Fabric or Power BI workspace, select **New** > **Show all**, and then in **Data engineering**, select the **Lakehouse** tile.
-
-    :::image type="content" source="media/directlake-overview/directlake-lakehouse-tile.png" border="false" alt-text="Screenshot showing Lakehouse tile.":::
-
-2. In the **New Lakehouse** dialog box, enter a name, and then select **Create**. The name can only contain alphanumeric characters and underscores.
-
-    :::image type="content" source="media/directlake-overview/directlake-new-lakehouse.png" border="false" alt-text="Screenshot showing New Lakehouse dialogue.":::
-
-3. Verify the new Lakehouse is created and opens successfully.
-
-    :::image type="content" source="media/directlake-overview/directlake-verify-lakehouse.png" border="false" alt-text="Screenshot showing verify lakehouse screen.":::
-
-#### Create a delta table in Lakehouse
-
-After creating a new Lakehouse, you must then create at least one delta table so Direct Lake can access some data. Direct Lake can read parquet-formatted files, but for the best performance, it's best to compress the data by using the VORDER compression method. VORDER compresses the data using the Power BI engine’s native compression algorithm. This way the engine can load the data into memory as quickly as possible.
-
-There are multiple options to load data into a Lakehouse, including data pipelines and scripts. The following steps use PySpark to add a delta table to a Lakehouse based on an [Azure Open Dataset](/azure/open-datasets/dataset-catalog).
-
-##### To add a delta table to Lakehouse
-
-1. In the newly created Lakehouse, select **Open notebook**, and then select **New notebook**.
-
-    :::image type="content" source="media/directlake-overview/directlake-lakehouse-new-notebook.png" border="true" alt-text="Screenshot showing new notebook in Lakehouse.":::
-
-1. Copy and paste the following code snippet into the first code cell to let SPARK access the open dataset, and then press **Shift + Enter** to run the code.
-
-    ```python
-    # Azure storage access info
-    blob_account_name = "azureopendatastorage"
-    blob_container_name = "holidaydatacontainer"
-    blob_relative_path = "Processed"
-    blob_sas_token = r""
-    
-    # Allow SPARK to read from Blob remotely
-    wasbs_path = 'wasbs://%s@%s.blob.core.windows.net/%s' % (blob_container_name, blob_account_name, blob_relative_path)
-    spark.conf.set(
-      'fs.azure.sas.%s.%s.blob.core.windows.net' % (blob_container_name, blob_account_name),
-      blob_sas_token)
-    print('Remote blob path: ' + wasbs_path)
-
-    ```
-
-1. Verify the code successfully outputs a remote blob path.
-
-    :::image type="content" source="media/directlake-overview/directlake-remote-blob-path.png" border="false" alt-text="Screenshot showing remote blob path output.":::
-
-1. Copy and paste the following code into the next cell, and then press **Shift + Enter**.
-
-    ```python
-    # Read Parquet file into a DataFrame.
-    df = spark.read.parquet(wasbs_path)
-    print(df.printSchema())
-
-    ```
-
-1. Verify the code successfully outputs the DataFrame schema.
-
-    :::image type="content" source="media/directlake-overview/directlake-dataframe-schema.png" border="false" alt-text="Screenshot showing schema dataframe.":::
-
-1. Copy and paste the following lines into the next cell, and then press **Shift + Enter**. The first instruction enables the VORDER compression method, and the next instruction saves the DataFrame as a delta table in the Lakehouse.
-
-    ```python
-    # Save as delta table 
-    spark.conf.set("spark.sql.parquet.vorder.enabled", "true")
-    df.write.format("delta").saveAsTable("holidays")
-    
-    ```
-
-1. Verify all SPARK jobs complete successfully. Expand the SPARK jobs list to view more details.
-
-    :::image type="content" source="media/directlake-overview/directlake-spark-jobs-list.png" border="false" alt-text="Screenshot showing Spark jobs list.":::
-
-1. To verify a table has been created successfully, in the upper left area, next to **Tables**, select the ellipsis (**…**), then select **Refresh**, and then expand the **Tables** node.
-
-    :::image type="content" source="media/directlake-overview/directlake-tables-node.png" border="false" alt-text="Screenshot showing Tables node.":::
-
-1. Using either the same method as above or other supported methods, add more delta tables for the data you want to analyze.
-
-##### To create a basic Direct Lake dataset for your Lakehouse
-
-1. In your Lakehouse, select **New dataset**, and then in the **New dataset** dialog, select tables to be included in the dataset.
-
-    :::image type="content" source="media/directlake-overview/directlake-new-dataset.png" border="false"  alt-text="Screenshot showing New dataset.":::
-
-1. Select **Confirm** to generate the Direct Lake dataset. The dataset is automatically saved  in the workspace based on the name of your Lakehouse, and then opens the dataset.
-
-    :::image type="content" source="media/directlake-overview/directlake-open-dataset.png" border="false" alt-text="Screenshot showing open dataset in Power BI.":::
-
-1. Select **Open data model** to open the Web modeling experience where you can add table relationships and DAX measures.
-
-    :::image type="content" source="media/directlake-overview/directlake-web-modeling.png" alt-text="Screenshot showing Web modeling in Power BI.":::
-
-When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the dataset through XMLA endpoints in much the same way as any other dataset. During **preview**, XMLA write operations are not yet supported.
-
-## Refresh
-
-By default, data changes in OneLake are automatically reflected in a Direct Lake dataset. You can change this behavior by disabling **Keep your Direct Lake data up to date** in the dataset's settings.
-
-:::image type="content" source="media/directlake-overview/direct-lake-refresh.png" alt-text="Direct Lake refresh in dataset settings":::
-
-You may want to disable if, for example, you need to allow completion of data preparation jobs before exposing any new data to consumers of the dataset. When disabled, you can invoke refresh manually or by using the refresh APIs. Invoking a refresh for a Direct Lake dataset is a low cost operation where the dataset analyzes the metadata of the latest version of the Delta Lake table and is updated to reference the latest files in the OneLake.
-
-## Analyze query processing
-
-To determine if a report visual's DAX queries to the data source are providing the best performance by using Direct Lake mode, or falling back to DirectQuery mode, you can use Performance analyzer in Power BI Desktop, SQL Server Profiler, or other third party tools to analyze queries. To learn more, see [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md).
+[Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md)  
+[Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  

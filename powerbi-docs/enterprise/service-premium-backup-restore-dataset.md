@@ -1,6 +1,6 @@
 ---
-title: Backup and restore Power BI Premium datasets
-description: Learn about the backup and restore feature for datasets with a Power BI Premium or Premium Per User license.
+title: Backup and restore Power BI Premium semantic models
+description: Learn about the backup and restore feature for semantic models with a Power BI Premium or Premium Per User license.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
@@ -11,21 +11,21 @@ ms.date: 11/11/2022
 LocalizationGroup: Premium
 ---
 
-# Backup and restore datasets with Power BI Premium
+# Backup and restore semantic models with Power BI Premium
 
-You can use the **Backup and Restore** feature with Power BI datasets if you have a Power BI Premium or Premium Per User (PPU) license, similar to the backup and restore operations available in tabular models for Azure Analysis Services.
+You can use the **Backup and Restore** feature with Power BI semantic models if you have a Power BI Premium or Premium Per User (PPU) license, similar to the backup and restore operations available in tabular models for Azure Analysis Services.
 
-You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms), [Analysis Services cmdlets for PowerShell](https://www.powershellgallery.com/packages/Az.AnalysisServices), and other tools to perform backup and restore operations in Power BI using [XMLA endpoints](service-premium-connect-tools.md). The following sections describe backup and restore concepts for Power BI datasets, requirements, and considerations.
+You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms), [Analysis Services cmdlets for PowerShell](https://www.powershellgallery.com/packages/Az.AnalysisServices), and other tools to perform backup and restore operations in Power BI using [XMLA endpoints](service-premium-connect-tools.md). The following sections describe backup and restore concepts for Power BI semantic models, requirements, and considerations.
 
 :::image type="content" source="media/service-premium-backup-restore-datasets/premium-backup-restore-datasets-01.png" alt-text="Screenshot of the SSMS window, back up is selected from the databases menu. The backup database dialog is open, OK is selected.":::
 
-The ability to backup and restore Power BI datasets provides a migration path from Azure Analysis Services workloads to Power BI Premium. It also enables dataset backups for multiple reasons, including corruption or loss, data retention requirements, and tenant movement, among others.
+The ability to backup and restore Power BI semantic models provides a migration path from Azure Analysis Services workloads to Power BI Premium. It also enables semantic model backups for multiple reasons, including corruption or loss, data retention requirements, and tenant movement, among others.
 
-## Using dataset backup and restore
+## Using semantic model backup and restore
 
 The **Backup and Restore** feature uses existing connections between Power BI and Azure, such as the ability to register an Azure Data Lake Gen2 (ADLS Gen2) storage account at the tenant or workspace level to facilitate dataflow storage and operations. Since Backup and Restore uses the same connection, no other storage account is required.
 
-You can perform offline backups, downloading the files from your ADLS Gen2 storage account. To download, use the file system, Azure Storage Explorer, .NET tools, and PowerShell cmdlets, such as the *Get-AzDataLakeGen2ItemContent* cmdlet. The following image shows a workspace with three datasets and their corresponding backup files in Azure Storage Explorer.
+You can perform offline backups, downloading the files from your ADLS Gen2 storage account. To download, use the file system, Azure Storage Explorer, .NET tools, and PowerShell cmdlets, such as the *Get-AzDataLakeGen2ItemContent* cmdlet. The following image shows a workspace with three semantic models and their corresponding backup files in Azure Storage Explorer.
 
 :::image type="content" source="media/service-premium-backup-restore-datasets/premium-backup-restore-datasets-02.png" alt-text="Screenshot of Azure Storage Explorer with a backup selected. A portion of the Power BI window shows the settings dialog.":::
 
@@ -37,9 +37,9 @@ Backup and Restore relies on the Azure connections infrastructure in Power BI to
 
 ### Who can perform backup and restore
 
-With an ADLS Gen2 storage account associated with a workspace, workspace admins who have write or admin permissions can conduct *backups*. Users with these permissions might be an admin, a member, or a contributor, or might not be part of the workspace level roles, but have direct write permission to the dataset.  
+With an ADLS Gen2 storage account associated with a workspace, workspace admins who have write or admin permissions can conduct *backups*. Users with these permissions might be an admin, a member, or a contributor, or might not be part of the workspace level roles, but have direct write permission to the semantic model.  
 
-To *restore* an existing dataset, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new dataset, the user must be an admin of the workspace.
+To *restore* an existing semantic model, users who have write or admin permission to the dataset can conduct a *restore* operation. To *restore* a new semantic model, the user must be an admin of the workspace.
 
 To *browse the backup/restore filesystem* using Azure Storage Explorer (the *Browse...* button in SSMS), a user must be an admin, or a member or contributor of the workspace.
 
@@ -49,7 +49,7 @@ Storage account owners have unrestricted access to the backup files, so ensure s
 
 ### How to perform backup and restore
 
-**Backup and Restore** requires using XMLA-based tools, such as [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). There's no backup or restore facility or option in the Power BI user interface. Because of the XMLA dependency, **Backup and Restore** currently requires your datasets to reside on a Premium or PPU capacity.
+**Backup and Restore** requires using XMLA-based tools, such as [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). There's no backup or restore facility or option in the Power BI user interface. Because of the XMLA dependency, **Backup and Restore** currently requires your semantic models to reside on a Premium or PPU capacity.
 
 The storage account settings for **Backup and Restore** can be applied at either the **tenant** or the **workspace** level.
 
@@ -97,7 +97,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 
 * When restoring a database, you might get the following error:
  
-    "*We cannot restore the dataset backup right now because there is not enough memory to complete this operation. Please use the /forceRestore option to restore the dataset with the existing dataset unloaded and offline.*"
+    "*We cannot restore the semantic model backup right now because there is not enough memory to complete this operation. Please use the /forceRestore option to restore the semantic model with the existing semantic model unloaded and offline.*"
 
     In these cases, with the `restore` command, add the `forceRestore` property to trigger a forced restore operation. For example, when using TMSL:
     
@@ -118,7 +118,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 * [Analysis Services cmdlets for PowerShell](https://www.powershellgallery.com/packages/Az.AnalysisServices)
-* [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)
+* [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)
 * [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
 * [Power BI Premium FAQ](service-premium-faq.yml)
 * [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)

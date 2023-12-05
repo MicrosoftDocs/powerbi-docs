@@ -83,7 +83,7 @@ In this tutorial, you learn how to:
       plot(dataset)
       ```
 
-      This command creates a scatter chart using the values in the dataset as input.
+      This command creates a scatter chart using the values in the semantic model as input.
 
 8. Select the **Run script** icon to see the result.
 
@@ -96,8 +96,8 @@ The R-script can be modified to create other types of visuals. Let's create a li
 1. Paste the following R code into the **R script editor**:
 
    ```r
-   x <- dataset[,1] # get the first column from dataset
-   y <- dataset[,2] # get the second column from dataset
+   x <- dataset[,1] # get the first column from semantic model
+   y <- dataset[,2] # get the second column from semantic model
 
    columnNames = colnames(dataset) # get column names
 
@@ -308,7 +308,7 @@ Now you can package the visual and import it to any Power BI report.
 
 ![R visual settings with changed value](./media/create-r-based-power-bi-desktop/r-final-settings-value.png)
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).

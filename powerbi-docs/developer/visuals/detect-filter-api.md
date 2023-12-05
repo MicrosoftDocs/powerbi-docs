@@ -28,6 +28,6 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-## Next steps
+## Related content
 
 [Use Power BI visuals selections to add interactivity to a visual](selection-api.md)

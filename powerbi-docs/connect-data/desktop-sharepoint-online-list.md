@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 11/10/2023
 ms.custom: video-OZO3x2NF8Ak
 LocalizationGroup: Visualizations
 ---
@@ -24,7 +24,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 In the Power BI service, you can also [create a report quickly from data in a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md).
 
-If your purpose is to quickly create a dataset in the Power BI service, you can do so directly from the SharePoint list. For more information, see [Create a dataset from a SharePoint list](./create-dataset-sharepoint-online-list.md).
+If your purpose is to quickly create a semantic model in the Power BI service, you can do so directly from the SharePoint list. For more information, see [Create a semantic model from a SharePoint list](./create-dataset-sharepoint-online-list.md).
 
 ## Part 1: Connect to your SharePoint List
 

@@ -11,6 +11,7 @@ ms.date: 04/02/2020
 ---
 
 # Tutorial: Build a funnel plot from R script to R visual
+
 This article describes how to build a funnel plot using R script in R visual step by step.
 
 In this article, you learn how to create:
@@ -29,7 +30,7 @@ In this example the funnel plot is used to compare and analyze various sets data
 > [!NOTE]
 > Source files are available for download under each set of steps.
 
-## Build an R script with dataset
+## Build an R script with semantic model
 
 1. Download a [minimal R script](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/script_R_v1_00.r) and its data table, [dataset.csv](https://github.com/PowerBi-Projects/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter1_R/dataset.csv).
 
@@ -293,7 +294,7 @@ Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) f
 > [!NOTE]
 > Not all widgets in this project are supported by the service.
 
-## Next steps
+## Related content
 
 To learn more, see additional Power BI tutorials, [Developing a Power BI circle card visual](./develop-circle-card.md) and [R visuals](../../visuals/service-r-visuals.md).
 

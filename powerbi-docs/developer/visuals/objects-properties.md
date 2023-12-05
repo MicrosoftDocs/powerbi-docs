@@ -336,6 +336,6 @@ selector: {
 }
 ```
 
-## Next steps
+## Related content
 
 [Performance tips](performance-tips.md)

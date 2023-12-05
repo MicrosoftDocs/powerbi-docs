@@ -48,7 +48,7 @@ There are several reasons why you might embed Power BI content for your organiza
 
 - **Internal business intelligence portal:** You might want to create an internal business intelligence (BI) portal as a replacement for the Power BI service. That way, you can create a custom application that integrates content from Power BI and other BI tools.
 - **Internal app:** You might want to develop an intranet app that shows data visualizations. For example, an intranet site for a manufacturing department could show real-time visuals that provide up-to-date information about the production line.
-- **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/admin/service-admin-auditing) records.
+- **Customized logging:** You might want to log custom events to record Power BI content access and use, beyond what the [activity log](/power-bi/enterprise/service-admin-auditing) records.
 
 > [!TIP]
 > If you're looking to create a BI portal styled for your organization, you might be able to achieve that by simply adding [custom branding to the Power BI service](/power-bi/admin/service-admin-custom-branding).
@@ -77,7 +77,7 @@ When embedding for your organization, you can embed the following Power BI conte
 
 There's no limitation on where the content resides. The content could reside in a personal workspace or a regular workspace. What matters is that the app user has permission to view (or create or edit) the content. For example, it's possible to embed content from the app user's personal workspace.
 
-Any content the user can see in the Power BI service may be embedded in a custom application. If the user has permission to create or edit content, it's possible for a custom app to support that functionality (for Power BI reports only).
+Any content the user can see in the Power BI service can be embedded in a custom application. If the user has permission to create or edit content, it's possible for a custom app to support that functionality (for Power BI reports only).
 
 ### Authentication
 
@@ -85,7 +85,7 @@ The authentication flow is _interactive authentication_ with Microsoft Entra ID.
 
 ### Licensing
 
-There's no specific licensing requirement to embed for your organization. What matters is that the app user has permission and an appropriate Power BI license to view (or create or edit) the content. It's even possible to embed content from a personal workspace when the app user only has a Power BI (free) license.
+There's no specific licensing requirement to embed for your organization. What matters is that the app user has permission and an appropriate Power BI license to view (or create or edit) the content. It's even possible to embed content from a personal workspace when the app user only has a Fabric (free) license.
 
 ### Power BI client APIs
 
@@ -100,14 +100,14 @@ The application can set up and automate operations, and it can respond to user-i
 
 ### Gateway setup
 
-Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) dataset.
+Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)).
 
 > [!NOTE]
 > A centralized [data gateway](/power-bi/connect-data/service-gateway-personal-mode#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in _standard mode_ is strongly recommended over gateways in [personal mode](/power-bi/connect-data/service-gateway-personal-mode). In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
 
 ### System oversight
 
-The [activity log](/power-bi/admin/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
+The [activity log](/power-bi/enterprise/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
 
 ## Next steps
 

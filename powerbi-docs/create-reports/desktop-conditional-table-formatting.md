@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/13/2022
-ms.custom: contperf-fy21q4, sample-bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx
+ms.date: 10/24/2023
+ms.custom: contperf-fy21q4
 LocalizationGroup: Create reports
 ---
 # Apply conditional formatting in tables and matrixes

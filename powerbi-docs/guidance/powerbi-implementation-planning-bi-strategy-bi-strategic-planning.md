@@ -27,7 +27,7 @@ In short, this article describes how you can perform strategic planning to defin
 > [!NOTE]
 > In this series, we define _goals_ as high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets that help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
 >
-> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI dataset or report.
+> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
 
 The following high-level diagram depicts how to conduct BI strategic planning.
 
@@ -60,14 +60,14 @@ The diagram depicts the following roles.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) typically provides top-down goals and support of the working team, including funding. The executive sponsor may also appoint the working team members together with the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md). |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | A COE or central BI team confers with the executive sponsor to identify and appoint working team members. The COE may also provide guidance to the working team to support their activities. |
+| ![Item 1.](media/common/icon-01-red-30x30.png) | The [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) typically provides top-down goals and support of the working team, including funding. The executive sponsor might also appoint the working team members together with the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md). |
+| ![Item 2.](media/common/icon-02-red-30x30.png) | A COE or central BI team confers with the executive sponsor to identify and appoint working team members. The COE might also provide guidance to the working team to support their activities. |
 | ![Item 3.](media/common/icon-03-red-30x30.png) | COE members form part of the working team. They're responsible for using their BI expertise to drive BI information gathering and complete the current state assessments. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | Business SMEs form part of the working team. They represent the interests of their department or business unit. SMEs are responsible for driving business strategy information gathering. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | Functional team members, like those from a master data team, can form part of the working team. They're responsible for clarifying strategically important processes during information gathering. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | Technical team members, like those from a data engineering team, can form part of the working team. They're responsible for clarifying strategically important systems during information gathering. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | Security team members form part of the working team. They're responsible for identifying and clarifying compliance, security, and privacy requirements during information gathering. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | Other IT team members can form part of the working team. They may identify other technical requirements related to areas such as networking or application management. |
+| ![Item 8.](media/common/icon-08-red-30x30.png) | Other IT team members can form part of the working team. They might identify other technical requirements related to areas such as networking or application management. |
 
 > [!NOTE]
 > Not all roles depicted in the diagram have to be present in the working team. Involve roles that are relevant for the scope and scale of your BI strategy initiative.
@@ -75,13 +75,13 @@ The diagram depicts the following roles.
 > [!IMPORTANT]
 > Defining the BI strategy is a significant undertaking. It's important that working team members understand what's expected of them, and that they have the resources and time to fulfill their role. An engaged executive sponsor can help by clarifying priorities and ensuring that all required resources are available.
 
-Working team members are typically appointed and guided by an executive sponsor of BI and analytics, like the [Power BI executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md). Identifying and engaging an executive sponsor is the first step of a BI strategy initiative.
+Working team members are typically appointed and guided by an executive sponsor of BI and analytics, like the [Power BI executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md). Identifying and engaging an executive sponsor is the first step of a BI strategy initiative.
 
 ### Identify and engage an executive sponsor
 
-A key role of the [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md) is to help formulate strategic BI goals and priorities. The executive sponsor is an individual in a position of senior, strategic leadership who has an invested stake in BI efforts and the BI strategy. They provide top-down guidance and reinforcement by regularly promoting, motivating, and investing in the BI strategy.
+A key role of the [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) is to help formulate strategic BI goals and priorities. The executive sponsor is an individual in a position of senior, strategic leadership who has an invested stake in BI efforts and the BI strategy. They provide top-down guidance and reinforcement by regularly promoting, motivating, and investing in the BI strategy.
 
-In addition to the many [activities listed in the adoption roadmap](powerbi-adoption-roadmap-executive-sponsorship.md), an executive sponsor plays a key role in BI strategic planning by:
+In addition to the many [activities listed in the adoption roadmap](fabric-adoption-roadmap-executive-sponsorship.md), an executive sponsor plays a key role in BI strategic planning by:
 
 - **Supporting the working team and COE:** The executive sponsor takes a leading role in defining the BI strategy by providing top-down guidance and reinforcement.
 - **Allocating resources:** They confirm funding, staffing, roles, and responsibilities for the working team.
@@ -93,14 +93,14 @@ In addition to the many [activities listed in the adoption roadmap](powerbi-adop
 - **Making strategic decisions:** They make decisions about priorities, goals, and desired outcomes.
 
 > [!TIP]
-> Before assembling the working team, you should first identify and engage an [executive sponsor](powerbi-adoption-roadmap-executive-sponsorship.md). Work through [this checklist](powerbi-adoption-roadmap-executive-sponsorship.md#considerations-and-key-actions) to ensure that you take the necessary actions to ensure a sufficiently engaged executive sponsor.
+> Before assembling the working team, you should first identify and engage an [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md). Work through [this checklist](fabric-adoption-roadmap-executive-sponsorship.md#considerations-and-key-actions) to ensure that you take the necessary actions to ensure a sufficiently engaged executive sponsor.
 
 ### Decide on the scope of the BI initiative
 
 Because the working team contains members from different business areas, the composition of the working team will depend on the scope of your BI initiative. Typically, a BI strategy encompasses many areas of an organization. However, you should refine this scope to define the specific areas it should address. You might limit the scope of your BI strategy initiative for two reasons.
 
 - **Practical reasons:** A successful BI strategy starts small and simple, achieving incremental growth as you experience success. When you first define the BI strategy, focus on priority areas so that you achieve quick wins and sustainable, incremental progress.
-- **Strategic reasons:** You can have distinct initiatives for different business areas. For example, different parts of the organization may require independent BI strategies because their business strategies are sufficiently different. These independent strategies should align with an overall BI strategy, whenever possible.
+- **Strategic reasons:** You can have distinct initiatives for different business areas. For example, different parts of the organization might require independent BI strategies because their business strategies are sufficiently different. These independent strategies should align with an overall BI strategy, whenever possible.
 
 As part of the scoping exercise, you should also plan how you'll set expectations with stakeholders that the BI strategy will be defined iteratively.
 
@@ -135,7 +135,7 @@ Working team members should include representatives from different departments a
 
 #### Center of Excellence members
 
-You can source working team members from the [Power BI Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md), or a similar group of multidisciplinary BI experts. The main responsibility of COE members in the working team is to take advantage of their COE expertise to contribute to information gathering. Further, COE members can share workshop findings back to the COE to inform tactical planning decisions and actions.
+You can source working team members from the [Power BI Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md), or a similar group of multidisciplinary BI experts. The main responsibility of COE members in the working team is to take advantage of their COE expertise to contribute to information gathering. Further, COE members can share workshop findings back to the COE to inform tactical planning decisions and actions.
 
 Some organizations don't have a COE, possibly because the role of a COE is performed by their BI team or IT. In this case, consider adding members from the BI team or IT to the working team.
 
@@ -152,24 +152,24 @@ Working team members should include business SMEs. The main responsibility of bu
 Business SMEs in the working team must have a deep understanding of data needs and business processes within their business unit or department. Ideally, they should also understand the BI tools and technologies used to address these needs.
 
 > [!NOTE]
-> It may not be practical to include every department, business unit, or region in the working team. In this case, ensure that you dedicate effort to identifying assumptions and exceptions for any unrepresented departments, business units, or regions.
+> It might not be practical to include every department, business unit, or region in the working team. In this case, ensure that you dedicate effort to identifying assumptions and exceptions for any unrepresented departments, business units, or regions.
 
 #### Champions network
 
-Working team members can include users from your existing [champions network](powerbi-adoption-roadmap-community-of-practice.md#champions-network) in the [community of practice](powerbi-adoption-roadmap-community-of-practice.md). A champion typically has exceptional knowledge of both BI tools and the data needs of their business area. They're often leaders in the community of practice. The main responsibility of champions in the working team is to promote information gathering, and to involve their community of practice in the initiative.
+Working team members can include users from your existing [champions network](fabric-adoption-roadmap-community-of-practice.md#champions-network) in the [community of practice](fabric-adoption-roadmap-community-of-practice.md). A champion typically has exceptional knowledge of both BI tools and the data needs of their business area. They're often leaders in the community of practice. The main responsibility of champions in the working team is to promote information gathering, and to involve their community of practice in the initiative.
 
 > [!NOTE]
-> Including champions can help to avoid making assumptions that can result in an inaccurate assessment of the current state of Power BI adoption and implementation.
+> Including champions can help to avoid making assumptions that can result in an inaccurate assessment of the current state of [Fabric adoption](fabric-adoption-roadmap.md) and [implementation](powerbi-implementation-planning-introduction.md).
 
 #### Functional, IT, and security team members
 
-A working team may include members from specific functional areas, especially when other expertise is required. The main responsibility of these members is to bring their expertise about specific important topics to the BI strategy.
+A working team can include members from specific functional areas, especially when other expertise is required. The main responsibility of these members is to bring their expertise about specific important topics to the BI strategy.
 
 Here are some examples of when you might include members from functional areas in the working team.
 
 - **Functional teams:** Include relevant representatives from functional teams in the working team. For example, if your organization uses one or more large enterprise resource planning systems (ERPs), then you should include an expert of these ERPs in the working team. This individual would be responsible for clarifying how the systems are used in the context of feedback provided during information gathering.
-- **IT teams:** Include relevant IT experts in the working team. For example, your organization may have specific networking requirements, or a complex scenario involving multiple [tenants](powerbi-implementation-planning-tenant-setup.md). The IT experts would be responsible for describing specific requirements, which is particularly important in [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). They can also help identify risks or pain points during information gathering.
-- **Security teams:** Include members from security teams in the working team. For example, your organization may have specific compliance, security, or privacy requirements. These individuals would be responsible for describing security-related requirements when defining the future state. They can also help identify compliance risks and security threats during information gathering.
+- **IT teams:** Include relevant IT experts in the working team. For example, your organization could have specific networking requirements, or a complex scenario involving multiple [tenants](powerbi-implementation-planning-tenant-setup.md). The IT experts would be responsible for describing specific requirements, which is particularly important in [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). They can also help identify risks or pain points during information gathering.
+- **Security teams:** Include members from security teams in the working team. For example, your organization could have specific compliance, security, or privacy requirements. These individuals would be responsible for describing security-related requirements when defining the future state. They can also help identify compliance risks and security threats during information gathering.
 
 ### Create a communication hub
 
@@ -267,13 +267,13 @@ The diagram depicts the following concepts and processes.
 | ![Item 6.](media/common/icon-06-red-30x30.png) | The working team researches any existing BI initiatives and solutions to understand the current state of BI adoption and implementation. COE members or BI experts lead this research. |
 | ![Item 7.](media/common/icon-07-red-30x30.png) | The working team investigates strategically important BI solutions to understand how the organization currently addresses business data needs. Specifically, the working team identifies who the business users are, how they use the solutions. The working team also documents key data questions or problems that these solutions address, and also potential flaws, opportunities, and inefficiencies. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | The working team surveys and documents the existing tools and technologies that the organization uses to address business data needs. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | The working team identifies past or parallel initiatives to define the BI strategy. Past initiatives might contain valuable learnings, while parallel initiatives may be combined to avoid duplication of effort. |
+| ![Item 9.](media/common/icon-09-red-30x30.png) | The working team identifies past or parallel initiatives to define the BI strategy. Past initiatives might contain valuable learnings, while parallel initiatives could be combined to avoid duplication of effort. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | The working team identifies strategically important KPIs and master data. These KPIs and master data are critical to enabling the business to achieve their business objectives. |
 | ![Item 11.](media/common/icon-11-red-30x30.png) | The working team assesses the usage and adoption of strategically important BI solutions among the user community. |
 | ![Item 12.](media/common/icon-12-red-30x30.png) | The working team identifies any potential governance and compliance risks identified in existing BI solutions. |
 
 > [!IMPORTANT]
-> The topics and examples presented in this section are intended to guide you in conducting your own independent research. These topics aren't an exhaustive or required list. Use these topics as inspiration. We recommend that you use the [maturity levels](powerbi-adoption-roadmap-maturity-levels.md) documented in the Power BI adoption roadmap to help you evaluate and prioritize areas that are most important for your organization and its business context.
+> The topics and examples presented in this section are intended to guide you in conducting your own independent research. These topics aren't an exhaustive or required list. Use these topics as inspiration. We recommend that you use the [maturity levels](fabric-adoption-roadmap-maturity-levels.md) documented in the Fabric adoption roadmap to help you evaluate and prioritize areas that are most important for your organization and its business context.
 
 Taken together, research on the business context and existing BI initiatives and solutions describe the current state of BI adoption and implementation. The working team verifies this research in workshops when capturing stakeholder input.
 
@@ -305,7 +305,7 @@ The diagram depicts the following steps.
 | :-: | --- |
 | ![Item 1.](media/common/icon-01-red-30x30.png) | List the functional areas (departments and business units) in scope for the BI strategy initiative. |
 | ![Item 2.](media/common/icon-02-red-30x30.png) | For each functional area, identify two to three candidate key stakeholder representatives. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Engage with stakeholders to inform them of the initiative, and validate their selection. At this stage, candidate stakeholders may decline to participate and might suggest alternative people. |
+| ![Item 3.](media/common/icon-03-red-30x30.png) | Engage with stakeholders to inform them of the initiative, and validate their selection. At this stage, candidate stakeholders can decline to participate and might suggest alternative people. |
 | ![Item 4.](media/common/icon-04-red-30x30.png) | Select a final list of key stakeholders. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | The executive sponsor informs key stakeholders and formally requests their participation. All further communication with the key stakeholders is posted to the communication hub. |
 
@@ -373,9 +373,9 @@ The objective of the workshops is to collect sufficient input from stakeholders 
 
 Here are some practical considerations to help you plan and organize effective workshops.
 
-- **Keep workshop attendance focused:** Don't saturate meetings with too many attendees. Involving too many people may result in prolonged discussions, or discussions where only the most assertive personalities provide input.
+- **Keep workshop attendance focused:** Don't saturate meetings with too many attendees. Involving too many people can result in prolonged discussions, or discussions where only the most assertive personalities provide input.
 - **Keep the discussion focused:** Take any debates, excessively specific questions, or remarks offline to discuss later in short one-on-one meetings. Similarly, identify and address any resistance directly, and involve the executive sponsor whenever necessary. Keeping the discussion focused ensures that workshops concentrate on the overall discussion of strategic planning, and they don't get distracted by small details.
-- **Be flexible with preparation:** Depending on time and preference, you can use prepared material to conduct more effective discussion. However, understand that discussions may go in unexpected directions. If a session departs from your prepared material but still produces helpful input, don't force the discussion back to a fixed agenda. When stakeholders are focused on a different point, it means that it's important. Be flexible by addressing these points to capture the most valuable input.
+- **Be flexible with preparation:** Depending on time and preference, you can use prepared material to conduct more effective discussion. However, understand that discussions could go in unexpected directions. If a session departs from your prepared material but still produces helpful input, don't force the discussion back to a fixed agenda. When stakeholders are focused on a different point, it means that it's important. Be flexible by addressing these points to capture the most valuable input.
 - **Document stakeholder input:** During the workshops, you should document stakeholders' inputs about their business objectives and the BI strategy.
 - **Document business data needs:** One outcome of workshop information gathering is a high-level list of the unmet business data needs. You should first organize the list from the highest to lowest priority. Determine these priorities based on stakeholder input, and the impact the list items have on business effectiveness.
 
@@ -403,7 +403,7 @@ Making a concise and accurate assessment of the current state is essential. Asse
 
 An effective maturity assessment consists of the following content.
 
-- **Maturity level:** Evaluate the overall [maturity level](powerbi-adoption-roadmap-maturity-levels.md) on a five-point scale from 100 (initial) to 500 (efficient). The score represents a high-level, subjective assessment by the working team of the effectiveness in different areas.
+- **Maturity level:** Evaluate the overall [maturity level](fabric-adoption-roadmap-maturity-levels.md) on a five-point scale from 100 (initial) to 500 (efficient). The score represents a high-level, subjective assessment by the working team of the effectiveness in different areas.
 - **Business cases:** Justify and illustrate the maturity level scores in the assessment. Concrete examples include actions, tools, and processes taken by business users to achieve their business objectives with data. The working team uses business cases together with summarized findings to support their assessment. A business case typically consists of:
   - A clear explanation of the desired outcome, and business data needs the current process aims to address.
   - An as-is description of how the general process is currently done.
@@ -415,12 +415,12 @@ An effective maturity assessment consists of the following content.
 The data culture assessment evaluates the current state of BI adoption. In order to complete this assessment, the working team performs the following tasks.
 
 1. **Review summarized findings:** The working team reviews the inputs collected from conducting independent research and running workshops.
-1. **Evaluate the maturity levels:** The working team proceeds through each of the data culture areas described in this section. Using the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md), they evaluate the effectiveness of each area by assigning a maturity score.
+1. **Evaluate the maturity levels:** The working team proceeds through each of the data culture areas described in this section. Using the [Fabric adoption roadmap](fabric-adoption-roadmap.md), they evaluate the effectiveness of each area by assigning a maturity score.
 1. **Justify the subjective evaluation with objective evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
 1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's data culture. It can be the lowest-scoring or highest-scoring areas, or any areas that they feel have a high impact on the organization's data culture. These key areas will be used to identify the BI goals and priorities.
 
 > [!TIP]
-> Use the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md) to guide you when completing the data culture assessment. Also, consider other factors specific to your organizational culture and the ways your users work. If you're looking for more information, consult other reputable sources like the [Data Management Body of Knowledge (DMBOK)](https://www.dama.org/cpages/body-of-knowledge).
+> Use the [Fabric adoption roadmap](fabric-adoption-roadmap.md) to guide you when completing the data culture assessment. Also, consider other factors specific to your organizational culture and the ways your users work. If you're looking for more information, consult other reputable sources like the [Data Management Body of Knowledge (DMBOK)](https://www.dama.org/cpages/body-of-knowledge).
 
 The following diagram depicts how the working team assesses the organizational data culture in BI strategic planning for specific data culture areas.
 
@@ -430,29 +430,29 @@ The diagram depicts the following data culture areas.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | **[Business alignment](powerbi-adoption-roadmap-business-alignment.md):** How well the data culture and data strategy enable business users to achieve business objectives. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | **[Executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md):** How effectively a person of sufficient credibility, authority, and influence supports BI solutions and initiatives to drive successful adoption. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | **[Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md):** How effectively a central BI team enables the user community, and whether this team has filled all the COE roles. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | **[**Data literacy](powerbi-adoption-roadmap-data-culture.md#data-literacy):** How effectively users are able to read, interpret, and use data to form opinions and make decisions. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | **[Data discovery](powerbi-adoption-roadmap-data-culture.md#data-discovery):** How discoverable the right data is, at the right time, for the people who need it. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | **[Data democratization](powerbi-adoption-roadmap-data-culture.md#data-democratization):** Whether data is put in the hands of users who are responsible for solving business problems. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | **[Content ownership and management](powerbi-adoption-roadmap-content-ownership-and-management.md):** Whether there's a clear vision for centralized and decentralized ways that content creators manage data (such as data models), and how they're supported by the COE. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | **[Content delivery scope](powerbi-adoption-roadmap-content-delivery-scope.md):** Whether there's a clear vision of who uses, or consumes, analytical content (such as reports), and how they're supported by the COE. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | **[Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md):** Whether end users have the resources and training to effectively use data and improve their data literacy. |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | **[Community of practice](powerbi-adoption-roadmap-community-of-practice.md):** How effectively people with a common interest can interact with and help each other on a voluntary basis. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | **[User support](powerbi-adoption-roadmap-user-support.md):** How effectively users can get help when data, tool, or process issues arise. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | **[Governance](powerbi-adoption-roadmap-governance.md):** The effectiveness of processes for monitoring user behavior to empower users, maintain regulatory requirements, and fulfill internal requirements. |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | **[System oversight](powerbi-adoption-roadmap-system-oversight.md):** The effectiveness of everyday administrative activity concerned with enacting governance guidelines, empowering users, and facilitating adoption. |
-| ![Item 14.](media/common/icon-14-red-30x30.png) | **[Change management](powerbi-adoption-roadmap-change-management.md):** How effectively change is handled, including procedures that safeguard against disruption and productivity loss due to changes in solutions or processes. |
+| ![Item 1.](media/common/icon-01-red-30x30.png) | **[Business alignment](fabric-adoption-roadmap-business-alignment.md):** How well the data culture and data strategy enable business users to achieve business objectives. |
+| ![Item 2.](media/common/icon-02-red-30x30.png) | **[Executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md):** How effectively a person of sufficient credibility, authority, and influence supports BI solutions and initiatives to drive successful adoption. |
+| ![Item 3.](media/common/icon-03-red-30x30.png) | **[Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md):** How effectively a central BI team enables the user community, and whether this team has filled all the COE roles. |
+| ![Item 4.](media/common/icon-04-red-30x30.png) | **[Data literacy](fabric-adoption-roadmap-data-culture.md#data-literacy):** How effectively users are able to read, interpret, and use data to form opinions and make decisions. |
+| ![Item 5.](media/common/icon-05-red-30x30.png) | **[Data discovery](fabric-adoption-roadmap-data-culture.md#data-discovery):** How discoverable the right data is, at the right time, for the people who need it. |
+| ![Item 6.](media/common/icon-06-red-30x30.png) | **[Data democratization](fabric-adoption-roadmap-data-culture.md#data-democratization):** Whether data is put in the hands of users who are responsible for solving business problems. |
+| ![Item 7.](media/common/icon-07-red-30x30.png) | **[Content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md):** Whether there's a clear vision for centralized and decentralized ways that content creators manage data (such as data models), and how they're supported by the COE. |
+| ![Item 8.](media/common/icon-08-red-30x30.png) | **[Content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md):** Whether there's a clear vision of who uses, or consumes, analytical content (such as reports), and how they're supported by the COE. |
+| ![Item 9.](media/common/icon-09-red-30x30.png) | **[Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md):** Whether end users have the resources and training to effectively use data and improve their data literacy. |
+| ![Item 10.](media/common/icon-10-red-30x30.png) | **[Community of practice](fabric-adoption-roadmap-community-of-practice.md):** How effectively people with a common interest can interact with and help each other on a voluntary basis. |
+| ![Item 11.](media/common/icon-11-red-30x30.png) | **[User support](fabric-adoption-roadmap-user-support.md):** How effectively users can get help when data, tool, or process issues arise. |
+| ![Item 12.](media/common/icon-12-red-30x30.png) | **[Governance](fabric-adoption-roadmap-governance.md):** The effectiveness of processes for monitoring user behavior to empower users, maintain regulatory requirements, and fulfill internal requirements. |
+| ![Item 13.](media/common/icon-13-red-30x30.png) | **[System oversight](fabric-adoption-roadmap-system-oversight.md):** The effectiveness of everyday administrative activity concerned with enacting governance guidelines, empowering users, and facilitating adoption. |
+| ![Item 14.](media/common/icon-14-red-30x30.png) | **[Change management](fabric-adoption-roadmap-change-management.md):** How effectively change is handled, including procedures that safeguard against disruption and productivity loss due to changes in solutions or processes. |
 
-To evaluate these data culture areas, see the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md). Specifically, refer to the maturity level sections and _Questions to ask_ sections, which guide you to perform assessments.
+To evaluate these data culture areas, see the [Fabric adoption roadmap](fabric-adoption-roadmap.md). Specifically, refer to the maturity level sections and _Questions to ask_ sections, which guide you to perform assessments.
 
 #### Complete the technical assessment
 
 The technical assessment evaluates technical areas that strategically enable the success of BI implementation. The purpose of this assessment isn't to audit individual technical solutions or assess the entirety of technical areas related to BI. Instead, the working team describes the maturity level and general effectiveness for strategically critical areas, like those described in this section. To complete this assessment, the working team performs the following tasks.
 
 1. **Identify technical areas:** The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and show in the following diagram.
-1. **Define maturity levels:** The working team defines the maturity levels to score the high-level effectiveness for each technical area in the assessment. These maturity levels should follow a consistent scale, such as those found in the template provided in the [maturity levels of the Power BI adoption roadmap](powerbi-adoption-roadmap-maturity-levels.md).
+1. **Define maturity levels:** The working team defines the maturity levels to score the high-level effectiveness for each technical area in the assessment. These maturity levels should follow a consistent scale, such as those found in the template provided in the [maturity levels of the Fabric adoption roadmap](fabric-adoption-roadmap-maturity-levels.md).
 1. **Review summarized findings:** The working team reviews the collected inputs by conducting independent research and running workshops.
 1. **Evaluate the maturity levels:** The working team evaluates the effectiveness of each area by assigning a maturity score.
 1. **Justify the subjective evaluation with objective evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
@@ -475,7 +475,7 @@ The diagram depicts the following technical areas.
 | ![Item 4.](media/common/icon-04-red-30x30.png) | **[Data warehousing](/fabric/data-warehouse/data-warehousing):** The effectiveness of relational databases in modeling business logic to support downstream analytical use cases. Data warehousing is often considered together with data engineering. |
 | ![Item 5.](media/common/icon-05-red-30x30.png) | **[Real-time analytics](/fabric/real-time-analytics/overview):** Whether the organization can correctly identify, capture, and use low latency data to provide an up-to-date picture of systems and processes. |
 | ![Item 6.](media/common/icon-06-red-30x30.png) | **[Data visualization](/power-bi/fundamentals/power-bi-overview):** Whether visualizations can be used effectively to reduce the time-to-action of reporting experiences for business users. Effective visualizations follow best practices, directing attention to important, actionable elements, enabling users to investigate deeper or take the correct actions. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | **Actions and automation:** How consistently and effectively tasks are automated and data alerts are used to enable manual intervention at critical moments in a system or process. You should also evaluate how actionable BI solutions are, meaning how effectively and directly they enable report users to take the right actions at the right time. |
+| ![Item 7.](media/common/icon-07-red-30x30.png) | **[Actions and automation](/fabric/data-activator/data-activator-introduction):** How consistently and effectively tasks are automated and data alerts are used to enable manual intervention at critical moments in a system or process. You should also evaluate how actionable BI solutions are, meaning how effectively and directly they enable report users to take the right actions at the right time. |
 | ![Item 8.](media/common/icon-08-red-30x30.png) | **[Lifecycle management](/fabric/cicd/cicd-overview):** How effectively content creators can collaborate to manage and track changes in BI solutions for consistent, regular releases or updates. |
 | ![Item 9.](media/common/icon-09-red-30x30.png) | **[Data security](powerbi-implementation-planning-security-overview.md):** Whether data assets comply with regulatory and organizational policies to ensure that unauthorized people can't view, access, or share data. Data security is typically evaluated together with information protection and data loss prevention. |
 | ![Item 10.](media/common/icon-10-red-30x30.png) | **[Information protection](powerbi-implementation-planning-info-protection.md):** How well the organization mitigates risk by identifying and classifying sensitive information by using tools like sensitivity labels. Information protection is typically evaluated together with data security and data loss prevention. |
@@ -522,7 +522,7 @@ The assessments should clearly identify weaknesses and opportunities in the data
 In the last step of BI strategic planning, for each of the prioritized areas, the working team usually defines several goals to work toward in the next 12-18 months. Typically, these goals represent the desired outcomes and maturity level growth.
 
 > [!TIP]
-> For data culture areas, we recommend that you define your goals by using the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md). It can help you to identify the maturity level you should aim to achieve for your desired future state. However, it's not realistic to aim for a level 500 for each category. Instead, aim for an achievable maturity level increase in the next planning period.
+> For data culture areas, we recommend that you define your goals by using the [Fabric adoption roadmap](fabric-adoption-roadmap.md). It can help you to identify the maturity level you should aim to achieve for your desired future state. However, it's not realistic to aim for a level 500 for each category. Instead, aim for an achievable maturity level increase in the next planning period.
 
 For technical areas, we recommend that you define your goals by using the maturity scales described in the [technical assessment](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-technical-assessment) by the working team.
 
