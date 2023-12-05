@@ -81,6 +81,6 @@ If the ISV application is running on a different tenant than the visual consumer
 
   Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent).
 
-* Interactive Consent:
+* Interactive consent:
 
   If the tenant administrator didn't preconsent, any user that uses a visual that triggers the API receives a one-time consent prompt when rendering the visual. See [Application consent experience](/entra/identity-platform/application-consent-experience) for more information.
