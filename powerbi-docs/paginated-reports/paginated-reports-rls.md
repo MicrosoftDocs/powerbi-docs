@@ -7,7 +7,7 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/03/2023
+ms.date: 12/04/2023
 #Customer intent: As a paginated report creator, I want to set up row-level security to maintain privacy and security.
 ---
 
@@ -84,7 +84,9 @@ Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-fil
 1. Select **OK**.
 
 ## Considerations and limitations
+
 * The Test as role/View as role feature doesn't work for paginated reports.
+
 ## Next steps
 
 [Power BI Report Builder](report-builder-power-bi.md)
