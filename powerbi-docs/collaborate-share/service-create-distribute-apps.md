@@ -137,8 +137,6 @@ On the **Audience** tab, you create and manage audience groups within the app.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
-    >
-    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 

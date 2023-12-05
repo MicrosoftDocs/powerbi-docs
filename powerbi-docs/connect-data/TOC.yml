@@ -11,6 +11,8 @@
       href: service-gateway-onprem.md
     - name: "OneLake data hub"
       href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
+    - name: "Data details pages: Index"
+      href: service-data-details-page.md
     - name: "Semantic model details page"
       href: service-dataset-details-page.md
     - name: "Datamart details page"

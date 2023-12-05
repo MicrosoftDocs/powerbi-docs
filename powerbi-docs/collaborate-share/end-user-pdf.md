@@ -46,7 +46,7 @@ If your report has a sensitivity label, the label and any encryption settings ca
 
     After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
 
-    :::image type="content" source="media/end-user-pdf/power-bi-export.png" alt-text="Select to open or save the PDF.":::
+    :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Select to open or save the PDF.":::
 
 
     In Google Chrome, the file options display in the lower left corner of the browser. 
