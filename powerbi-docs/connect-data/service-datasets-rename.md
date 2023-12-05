@@ -41,6 +41,10 @@ Here are some examples of name changes.
 | On-premises dataset | On-premises semantic model |
 | Dataset owner | Semantic model owner |
 | Large dataset | Large semantic model |
+| Push dataset | Push semantic model |
+| Streaming dataset | Streaming semantic model |
+| PubNub streaming dataset | PubNub streaming semantic model |
+| Hybrid dataset | Hybrid semantic model |
 
 > [!NOTE]
 > The name change has been rolled out in the Power BI service and in documentation, though there might be some instances where the change hasn't occurred yet.
@@ -51,11 +55,6 @@ The following concepts aren't affected.
 
 - Generic references to datasets
 - [Power BI paginated report dataset](../paginated-reports/report-data/report-data.md)
-- [Power BI real-time dataset](service-real-time-streaming.md), including:
-  - Push dataset
-  - Streaming dataset
-  - Hybrid dataset
-  - PubNub dataset
 - All [Power BI REST API operations](/rest/api/power-bi/) related to datasets
 - [Power BI activity log operations](../enterprise/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
 - Other types of datasets that aren't related to Power BI, for example, [Azure Open Datasets](/azure/open-datasets/dataset-catalog)
