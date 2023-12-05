@@ -354,7 +354,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 **Unsupported features**    
 
 * Semantic model refresh operations using an XMLA endpoint.
-* Email subscriptions aren't supported when  **Block public internet access** is enabled in Power BI. In this case, all subscriptions will fail.
+* Email subscriptions aren't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, all subscriptions will fail.
 
 * The following Power BI visuals aren't supported.  When you subscribe to a report containing these visuals, they display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).

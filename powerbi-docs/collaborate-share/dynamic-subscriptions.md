@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/15/2023
+ms.date: 12/04/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -79,7 +79,7 @@ The **Select and filter data** window lists the fields that can be set dynamical
 
 ### Enter email details
 
-In the **Email details** window, name the subscription, add recipients and a subject, and select the type of attachment to use. Many of these fields offer the option to use the dynamic parameters. In this example, **Recipients** are dynamically added from the *Training data* semantic model, using the **Email** field. And, the email **Subject** is dynamically set using the **Manager name** parameter. The link icon ![Image of the dynamic content link icon.](media/dynamic-subscriptions/power-bi-icon.png) lets you know that dynamic content is being used. 
+In the **Email details** window, name the subscription, add recipients and a subject, and select the type of attachment to use. To send the same copy of the report to multiple recipients, add email addresses delimited by either a comma or semicolon.  Many of these fields offer the option to use the dynamic parameters. In this example, **Recipients** are dynamically added from the *Training data* semantic model, using the **Email** field. And, the email **Subject** is dynamically set using the **Manager name** parameter. The link icon ![Image of the dynamic content link icon.](media/dynamic-subscriptions/power-bi-icon.png) lets you know that dynamic content is being used. 
 
 1. Name your subscription. 
 1. Manually enter recipient email addresses, or use the dropdown to select a value that dynamically selects recipients from the *Training data* semantic model.
