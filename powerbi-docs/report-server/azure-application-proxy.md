@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 12/18/2020
+ms.date: 12/05/2023
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 
