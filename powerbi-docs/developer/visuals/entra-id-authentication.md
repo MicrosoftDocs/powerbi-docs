@@ -33,7 +33,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
     :::image type="content" source="./media/entra-id-authentication/expose-api.png" alt-text="Screenshot of the Expose an API page of the Microsoft Entra ID registration app.":::
 
-1. In the **Application UD URI** field, select *Add*.
+1. In the **Application ID URI** field, select *Add*.
 
     :::image type="content" source="./media/entra-id-authentication/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
 
