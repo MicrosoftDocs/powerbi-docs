@@ -90,7 +90,7 @@
           href: service-interact-quick-report.md
         - name: Create quick reports in the service
           href: service-quick-create-report.md
-        - name: Create a report from Excel data in the service
+        - name: Create a report from Excel in the service
           href: service-report-create-new.md
         - name: Create a report quickly from a SharePoint list
           href: service-quick-create-sharepoint-list.md
@@ -98,8 +98,6 @@
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
           href: jupyter-quick-report.md
-    - name: Create a dataset from Excel data in the service
-      href: service-reports-create-excel-connector.md
     - name: Copilot for Power BI
       items: 
         - name: Intro to Copilot for Power BI

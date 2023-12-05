@@ -65,7 +65,7 @@ Creating semantic models based on [Excel workbooks](service-excel-workbook-files
 In summary:
 
 - Power BI semantic models that represent models are either hosted in the Power BI service, or are externally hosted by Analysis Services.
-- Semantic model models can store imported data, or issue pass-through query requests to underlying data sources, or do both.
+- Semantic models can store imported data, or issue pass-through query requests to underlying data sources, or do both.
 
 ## Considerations
 
