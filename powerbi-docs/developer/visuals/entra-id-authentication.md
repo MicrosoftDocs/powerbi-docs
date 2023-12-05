@@ -67,7 +67,7 @@ To leverage the Authentication API, the ISV must first register an application i
       * **Power BI Desktop**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
       * **Power BI Mobile**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
 
-     :::image type="content" source="./media/entra-id-authentication/preauthorization.png" alt-text="Screenshot showing the UI to add a client application.":::
+       :::image type="content" source="./media/entra-id-authentication/preauthorization.png" alt-text="Screenshot showing the UI to add a client application.":::
 
 ## Consenting the ISV app
 
