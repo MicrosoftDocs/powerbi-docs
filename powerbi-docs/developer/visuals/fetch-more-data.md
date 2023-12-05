@@ -252,7 +252,7 @@ The data reduction information will appear under *visual* in the format pane.
 
 * In segments aggregation mode, the data view memory size is limited to 100 MB.
 
-## Next steps
+## Related content
 
 * [Data view mappings](dataview-mappings.md)
 * [DataViewUtils](utils-dataview.md)

@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/04/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: Workspace-level workspace planning
@@ -17,7 +17,7 @@ ms.date: 10/04/2023
 This article covers Fabric workspace-level planning, with an emphasis on the Power BI experience. It's primarily targeted at:
 
 - **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization.
-- **Center of Excellence, IT, and BI team:** The teams who are also responsible for overseeing analytics and supporting self-service users throughout the organization.
+- **Center of Excellence, IT, and BI team:** The teams who are also responsible for overseeing data and BI and supporting self-service users throughout the organization.
 - **Content creators and owners:** Self-service creators who need to create, publish, and manage content in workspaces.
 
 To use workspaces effectively, there are many tactical decisions to be made. Whenever possible, individual workspace-level decisions should align with your [tenant-level decisions](powerbi-implementation-planning-workspaces-tenant-level-planning.md).

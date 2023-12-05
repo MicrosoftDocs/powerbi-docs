@@ -71,7 +71,7 @@ Create a master user to use as your master embedding account. You can think of t
    > [!NOTE]
    > Make sure you sign up with your user account's email address.
 
-## Next steps
+## Related content
 
 Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI. You can also embed Power BI dashboards and reports in your app. For more information, see [How to embed your Power BI dashboards, reports, and tiles](embed-sample-for-customers.md).
 

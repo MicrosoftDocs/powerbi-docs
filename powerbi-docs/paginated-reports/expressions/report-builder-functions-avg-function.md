@@ -51,9 +51,9 @@ Avg(expression, scope, recursive)
   
 -   *Expression* must not contain nested aggregates that specify *recursive*.  
   
- For more information, see [Aggregate Functions Reference &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
+ For more information, see [Aggregate Functions Reference &#40;Report Builder)](report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
   
- For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs).  
+ For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups &#40;Report Builder)](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs).  
   
 ## Example  
  The following two code examples provide an average of all values in the `Cost` field contained in a dataset named `Inventory`.  
@@ -67,6 +67,6 @@ Avg(expression, scope, recursive)
 ## See also  
  [Expression uses in reports (Power BI Report Builder and service)](../expressions/expression-uses-reports-report-builder.md)   
  [Expression examples (Power BI Report Builder and service)](../expressions/report-builder-expression-examples.md)   
- [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
+ [Data Types in Expressions &#40;Report Builder)](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
+ [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   

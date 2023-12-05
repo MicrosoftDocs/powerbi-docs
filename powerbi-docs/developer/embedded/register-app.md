@@ -174,6 +174,6 @@ For more information about how to register applications in Azure AD, see [Regist
 
 1. Select **Register**. After your app is registered, you're directed to your app's overview page, where you can obtain the **Application ID**.
 
-## Next steps
+## Related content
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

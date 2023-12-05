@@ -5238,7 +5238,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-content-pack-app.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-content-pack-app",
+            "redirect_url": "/fabric/admin/service-admin-portal-app",
             "redirect_document_id": false
         },
         {
@@ -5660,7 +5660,12 @@
             "source_path": "powerbi-docs/guidance/fabric-adoption-roadmap-overview.md",
             "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap",
             "redirect_document_id": true
-        }                                                                                                                                                                                                                      
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-find-access-google-search.md",
+            "redirect_url": "/power-bi/consumer/mobile",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                                                                                                                                   
   ]          
 
 }

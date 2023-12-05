@@ -294,7 +294,7 @@ Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) f
 > [!NOTE]
 > Not all widgets in this project are supported by the service.
 
-## Next steps
+## Related content
 
 To learn more, see additional Power BI tutorials, [Developing a Power BI circle card visual](./develop-circle-card.md) and [R visuals](../../visuals/service-r-visuals.md).
 

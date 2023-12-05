@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/25/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
 # Synchronize scale-out replicas
-
-> [!IMPORTANT]
-> Semantic model scale-out is currently in **preview**.
 
 This article describes how to synchronize a semantic model scale-out replicas by using PowerShell at the command line or by script.
 
@@ -164,14 +161,10 @@ To learn more, see [Datasets - Trigger Query Scale Out Sync In Group](/rest/api/
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI semantic model scale-out](service-premium-scale-out.md)
+* [Power BI semantic model scale-out](service-premium-scale-out.md)
 
-> [!div class="nextstepaction"]
-> [Configure semantic model scale-out](service-premium-scale-out-configure.md)
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 
-> [!div class="nextstepaction"]
-> [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
+* [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
 
-> [!div class="nextstepaction"]
-> [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)
+* [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)

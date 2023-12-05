@@ -60,6 +60,6 @@ Currently, the following Power BI environments don't support license management 
 * RS Server (No planned support)
 * Exporting (PDF\PPT) using REST API
 
-## Next steps
+## Related content
 
 [Import a Power BI visual](import-visual.md)

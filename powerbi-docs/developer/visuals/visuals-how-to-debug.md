@@ -89,7 +89,7 @@ You can also set the browser to break on caught exceptions. Breaking stops code 
 
 ---
 
-## Next steps
+## Related content
 
 * [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)
 * [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)

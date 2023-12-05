@@ -50,7 +50,7 @@ For more information on how to sync slicers, see [Sync and use slicers on other 
 
 The sync slicers feature only supports one field at a time. If your slicer has more than one field (**Category** or **Measure**), the sync slicers feature is disabled.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Add a context menu to your Power BI visual](context-menu.md)

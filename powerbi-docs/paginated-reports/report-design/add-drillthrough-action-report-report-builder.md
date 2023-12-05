@@ -46,7 +46,7 @@ When you're publishing to the Power BI service, you must publish drillthrough re
 
 ## Next steps
 
- [Action Properties Dialog Box &#40;Report Builder and SSRS&#41;](add-hyperlink-url-report-builder.md)   
+ [Action Properties Dialog Box &#40;Report Builder)](add-hyperlink-url-report-builder.md)   
  [Formatting Data Points on a Chart &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
  [Show ToolTips on a Series &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/show-tooltips-on-a-series-report-builder-and-ssrs)  
   

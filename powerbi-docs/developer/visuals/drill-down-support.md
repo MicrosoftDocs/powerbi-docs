@@ -622,6 +622,6 @@ At the final step you should get visual with context menu:
 
 ![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
-## Next steps
+## Related content
 
 For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).

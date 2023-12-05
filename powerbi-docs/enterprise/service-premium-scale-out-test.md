@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: tutorial
-ms.date: 07/25/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
 # Test semantic model scale-out
-
-> [!IMPORTANT]
-> Semantic model scale-out is currently in **preview**.
 
 This article describes how you can test the semantic model scale-out feature.
 
@@ -116,14 +113,10 @@ If you followed step 3, you're connected to the read-write semantic model. You c
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Power BI semantic model scale-out](service-premium-scale-out.md)
+* [Power BI semantic model scale-out](service-premium-scale-out.md)
 
-> [!div class="nextstepaction"]
-> [Configure semantic model scale-out](service-premium-scale-out-configure.md)
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 
-> [!div class="nextstepaction"]
-> [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
 
-> [!div class="nextstepaction"]
-> [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)
+>* [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)

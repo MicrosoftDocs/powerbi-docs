@@ -90,7 +90,7 @@
           href: service-interact-quick-report.md
         - name: Create quick reports in the service
           href: service-quick-create-report.md
-        - name: Create a report from Excel in the service
+        - name: Create a report from Excel data in the service
           href: service-report-create-new.md
         - name: Create a report quickly from a SharePoint list
           href: service-quick-create-sharepoint-list.md
@@ -98,6 +98,8 @@
           href: dynamics-quick-create-report.md
         - name: Create a quick report in Jupyter
           href: jupyter-quick-report.md
+    - name: Create a dataset from Excel data in the service
+      href: service-reports-create-excel-connector.md
     - name: Copilot for Power BI
       items: 
         - name: Intro to Copilot for Power BI
@@ -292,8 +294,10 @@
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
-    - name: Create card visuals (big number tiles)
+    - name: Create card visuals with big number tiles
       href: ../visuals/power-bi-visualization-card.md
+    - name: Create a new card visual with big number tiles
+      href: ../visuals/power-bi-visualization-new-card.md
     - name: Combo charts
       href: ../visuals/power-bi-visualization-combo-chart.md
     - name: Doughnut charts
