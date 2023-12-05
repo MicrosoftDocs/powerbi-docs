@@ -1,6 +1,6 @@
 ---
-title: Configure Power BI Report Server with Azure Application Proxy
-description: Learn how to configure your Power BI Report Server with the Azure Active Directory Application Proxy.
+title: Configure Power BI Report Server with Microsoft Entra application proxy
+description: Learn how to configure your Power BI Report Server with the Microsoft Entra application proxy.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,13 +9,13 @@ ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.date: 12/18/2020
 ---
-# Configure Power BI Report Server with Azure Application Proxy
+# Configure Power BI Report Server with Microsoft Entra application proxy
 
-This article discusses how to use Azure Active Directory Application Proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Azure Active Directory (AD). Read more about remote access to on-premises applications through [Azure Active Directory's Application Proxy](/azure/active-directory/manage-apps/application-proxy).
+This article discusses how to use Microsoft Entra application proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Microsoft Entra ID. Read more about remote access to on-premises applications through [Microsoft Entra application proxy](/entra/identity/app-proxy/application-proxy).
 
 ## Environment details
 
-We used these values in the example we created. 
+We used these values in the example we created.
 
 - Domain: umacontoso.com
 - Power BI Report Server: PBIRSAZUREAPP.umacontoso.com
@@ -44,7 +44,7 @@ After installing Power BI Report Server (assuming on an Azure VM), configure the
     The Public IP address is used for access from outside the virtual machine.
 
 3. Hence, we added the host file entry on the VM (Power BI Report Server) to include the Public IP address and the host name `pbirsazureapp.eastus.cloudapp.azure.com`.
-4. Note that on restarting the VM, the dynamic IP address might change, and you may have to add the right IP address again in the host file. To avoid this, you can set the Public IP address to static in the Azure portal.
+4. Note that on restarting the VM, the dynamic IP address might change, and you might have to add the right IP address again in the host file. To avoid this, you can set the Public IP address to static in the Azure portal.
 5. The Web service and Web portal URLs should be accessible successfully after making the above-mentioned changes.
 6. On accessing the URL `https://pbirsazureapp.eastus.cloudapp.azure.com/ReportServer` on the server, we're prompted three times for credentials, and see a blank screen.
 7. Add the following registry entry:
@@ -117,17 +117,17 @@ We have to configure the delegation settings on the report server service accoun
 
 These steps help configure Power BI Report Server to work with Kerberos authentication mechanism and get the test connection to data source working on your local machine.
 
-## Configure Azure Application Proxy connector
+## Configure Entra application proxy connector
 
-Refer to the article for [configuration related to Application Proxy connector](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
+Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
 
-We installed Application Proxy connector on Power BI Report Server, but you can configure it on a separate server and make sure that delegation is set up properly.
+We installed the application proxy connector on Power BI Report Server, but you can configure it on a separate server and make sure that delegation is set up properly.
 
-### Ensure the Connector is trusted for delegation
+### Ensure the connector is trusted for delegation
 
-Ensure the Connector is trusted for delegation to the SPN added to the report server application pool account.
+Ensure the connector is trusted for delegation to the SPN added to the report server application pool account.
 
-Configure Kerberos Constrained Delegation (KCD) so that the Azure AD Application Proxy service can delegate user identities to the report server application pool account. Configure KCD by enabling the Application Proxy connector to retrieve Kerberos tickets for your users who have been authenticated in Azure AD. Then that server passes the context to the target application, or Power BI Report Server in this case.
+Configure Kerberos Constrained Delegation (KCD) so that the Entra application proxy service can delegate user identities to the report server application pool account. Configure KCD by enabling the application proxy connector to retrieve Kerberos tickets for your users who have been authenticated in Entra ID. Then that server passes the context to the target application, or Power BI Report Server in this case.
 
 To configure KCD, repeat the following steps for each connector machine.
 
@@ -140,13 +140,13 @@ To configure KCD, repeat the following steps for each connector machine.
 7. Click **OK**. 
 8. To save the changes, click **OK** again.
 
-## Publish through Azure AD Application Proxy
+## Publish through Entra application proxy
 
-Now you're ready to configure Azure AD Application Proxy.
+Now you're ready to configure Entra application proxy.
 
-Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+Publish Power BI Report Server through application proxy with the following settings. For step-by-step instructions on how to publish an application through application proxy, see [Add an on-premises app to Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
-- **Internal URL** : Enter the URL to the report server that the connector can reach in the corporate network. Make sure this URL is reachable from the server the connector is installed on. A best practice is using a top-level domain such as `https://servername/` to avoid issues with subpaths published through Application Proxy. For example, use `https://servername/` and not `https://servername/reports/` or `https://servername/reportserver/`. We've configured our environment with `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
+- **Internal URL** : Enter the URL to the report server that the connector can reach in the corporate network. Make sure this URL is reachable from the server the connector is installed on. A best practice is using a top-level domain such as `https://servername/` to avoid issues with subpaths published through application aroxy. For example, use `https://servername/` and not `https://servername/reports/` or `https://servername/reportserver/`. We've configured our environment with `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
 
     > [!NOTE]
     > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server) for how-to information.
@@ -155,7 +155,7 @@ Publish Power BI Report Server through Application Proxy with the following sett
 
 We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.msappproxy.net/` for our environment.
 
-- **Pre-authentication Method**: Azure Active Directory.
+- **Pre-authentication Method**: Entra ID.
 - **Connector Group:** Default.
 
 ![Default connector group](media/azure-application-proxy/report-server-application-proxy-1.png)
