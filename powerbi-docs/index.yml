@@ -48,7 +48,7 @@ highlightedContent:
       url: transform-model/service-edit-data-models.md
     # Card
     - title: Study Power BI start to finish on Microsoft training 
-      itemType: learn
+      itemType: training
       url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
     # Card
     - title: Create report pages with Copilot
