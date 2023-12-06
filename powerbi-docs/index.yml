@@ -49,7 +49,7 @@ highlightedContent:
     # Card
     - title: Study Power BI start to finish on Microsoft training 
       itemType: training
-      url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+      url: /training/powerplatform/power-bi/?WT.mc_id=powerbi_landingpage-docs-link
     # Card
     - title: Create report pages with Copilot
       itemType: how-to-guide
