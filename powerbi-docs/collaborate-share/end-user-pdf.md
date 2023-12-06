@@ -105,7 +105,7 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 
 ### General
 
-* Export to PDF isn't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, the exprt fails. The export might also fail if the admin setting **Azure private link** is on and **Block public internet access** is off.
+* Export to PDF isn't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, the export fails. The export might also fail if the admin setting **Azure private link** is on and **Block public internet access** is off.
 * Semantic model refresh operations using an XMLA endpoint.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
 * Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) are included in the export, but the visual displays in its default state, without the table. 

@@ -122,7 +122,7 @@ The following aren't supported for **Export to PowerPoint**. Either the **PowerP
 
 ### General
 
-* Export to PowerPoint isn't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, the exprt fails. The export might also fail if the admin setting **Azure private link** is on and **Block public internet access** is off.
+* Export to PowerPoint isn't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, the export fails. The export might also fail if the admin setting **Azure private link** is on and **Block public internet access** is off.
 * Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 * Semantic model refresh operations using an XMLA endpoint.
 * If the report uses a custom font, that font is replaced with a default font.
