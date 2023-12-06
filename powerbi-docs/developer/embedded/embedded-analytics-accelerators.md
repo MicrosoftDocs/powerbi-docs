@@ -14,10 +14,6 @@ ms.date: 09/26/2023
 
 Microsoft partners offer accelerators to expedite the implementation of embedded analytics solutions integrated with your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multitenant, customer-facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.  
 
-The following diagram illustrates the main modules of an accelerator and how they relate to your Azure and Power BI subscriptions and interact with to your existing multitenant web application:
-
-:::image type="content" source="./media/embedded-analytics-accelerators/accelerator-workflow.png" alt-text="Diagram showing how accelerators work.":::
-
 Here are some advantages of using an accelerator:
 
 * Accelerators provide an enhanced personalized user experience and added functionality for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario with flexible end-user authentication and authorization options and support for multitenancy and end-user permissions management.
@@ -38,6 +34,10 @@ There are several partner accelerators that vary in their deployment, acquisitio
 | :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="The logo of the Reporting Hub.":::    | The Reporting Hub is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. | [The Reporting Hub](https://thereportinghub.com/) |
 | :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="The logo of Maq Software.":::               | The EmbedFAST is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using the EmbedFAST. | [EmbedFAST](https://maqsoftware.com/embedfast) |
 | :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="The logo of Count.":::                           | The BiHub presents a seamless, no-code reporting gateway designed for Power BI, using cutting-edge Embedded technology. The BiHub is a cloud-based application that is installed and deployed within your Azure environment. It integrates with existing Microsoft tenants and communicates with Power BI Embedded via Microsoft APIs. | [BiHub](https://www.ilink-digital.com/bihub/) |
+
+The following diagram illustrates the main modules of an accelerator and how they relate to your Azure and Power BI subscriptions and interact with to your existing multitenant web application:
+
+:::image type="content" source="./media/embedded-analytics-accelerators/accelerator-workflow.png" alt-text="Diagram showing how accelerators work.":::
 
 ## Accelerator capabilities
 
