@@ -182,6 +182,6 @@ Define other properties the same way that you do for **Format** objects, and enu
 * The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selectors-types) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have multiple instances of a user-defined card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
-## Next Steps
+## Related content
 
 [Add conditional formatting](conditional-format.md)

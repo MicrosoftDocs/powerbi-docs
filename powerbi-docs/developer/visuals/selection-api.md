@@ -81,7 +81,7 @@ This object has corresponding methods to create `selections` for different types
 
 ### Create selections for categorical data view mapping
 
-Let's review how selections represent categorical data view mapping for a sample dataset:
+Let's review how selections represent categorical data view mapping for a sample semantic model:
 
 | Manufacturer | Type | Value |
 | - | - | - |
@@ -374,7 +374,7 @@ button.addEventListener("click", (mouseEvent) => {
 });
 ```
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)

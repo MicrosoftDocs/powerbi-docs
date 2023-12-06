@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: Tenant setup
@@ -23,6 +23,8 @@ Fabric is part of a larger Microsoft ecosystem. If your organization is already 
 
 > [!TIP]
 > Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Microsoft Entra ID in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Microsoft Entra ID for a cloud-based suite of services like Fabric to work. Having a hybrid identity solution will work for Fabric. We recommend talking to your Microsoft Entra administrators about the best solution for your organization.
+
+For more information about the responsibilities of a Fabric administrator, see [Tenant administration](powerbi-implementation-planning-tenant-administration.md#define-scope-of-responsibilities).
 
 ## Microsoft Entra tenant
 
@@ -79,6 +81,8 @@ The following list includes some common reasons for collaboration between Fabric
 - **Service principals:** You might need to create a Microsoft Entra app registration to provision a service principal. Authenticating with a service principal is a recommended practice when a Fabric administrator wants to run unattended, scheduled scripts that extract data by using the [admin APIs](/rest/api/power-bi/admin), or when [embedding content](/power-bi/developer/embedded/embed-service-principal) in an application.
 - **External users:** You'll need to understand how the settings for [external (guest) users](/azure/active-directory/external-identities/external-identities-overview) are set up in Microsoft Entra ID. There are several Fabric [tenant settings](/power-bi/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-power-bi) related to external users, and they rely on how Microsoft Entra ID is set up. Also, certain security capabilities for the Power BI workload only work when using the [planned invitation](/power-bi/enterprise/service-admin-azure-ad-b2b#planned-invites) approach for external users in Microsoft Entra ID.
 - **Real-time control policies:** You can choose to set up [real-time session control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a Power BI report when it has a specific sensitivity label.
+
+For more information, see [Collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators).
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 

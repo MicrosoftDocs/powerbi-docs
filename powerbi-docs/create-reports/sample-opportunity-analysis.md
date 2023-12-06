@@ -16,7 +16,7 @@ LocalizationGroup: Samples
 > [!NOTE]
 > For an updated version of this sample, see [Revenue Opportunities sample for Power BI: Take a tour](sample-revenue-opportunities.md).
 
-The Opportunity Analysis built-in sample contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
+The Opportunity Analysis built-in sample contains a dashboard, report, and semantic model for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 This sample relies on two measures of revenue:
 
@@ -34,13 +34,13 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 This tutorial explores the Opportunity Analysis built-in sample in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample *.pbix* file in Power BI Desktop. Get the sample in one of the following ways:
 
-- Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
-- Download the [.pbix file](#get-the-pbix-file-for-this-sample).
-- Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
+* Get the [built-in sample in the Power BI service](#get-the-built-in-sample).
+* Download the [.pbix file](#get-the-pbix-file-for-this-sample).
+* Download the [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the built-in sample
 
@@ -50,7 +50,7 @@ You don't need a Power BI license to explore the sample in Power BI Desktop. You
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
     :::image type="content" source="media/sample-opportunity-analysis/opportunity-entry.png" alt-text="Screenshot that shows the Opportunity Analysis sample entries in the workspace.":::
 
@@ -104,7 +104,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
    There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
 1. Select **Save**, enter a name for your report, and then choose **Save**.
 

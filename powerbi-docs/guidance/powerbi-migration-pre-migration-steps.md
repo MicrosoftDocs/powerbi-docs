@@ -21,7 +21,7 @@ This article describes actions you can consider prior to migrating to Power BI.
 
 The pre-migration steps emphasize up-front planning, which is important preparation before moving through the five migration stages. Most of the pre-migration steps will occur once, though for larger organizations some portions might be iterative for each business unit or departmental area.
 
-The output from the pre-migration steps includes an initial [governance](powerbi-adoption-roadmap-governance.md) model, initial high-level deployment planning, in addition to an inventory of the reports and data to be migrated. Additional information from activities in Stages 1, 2, and 3 will be necessary to fully estimate the level of effort for migrating individual solutions.
+The output from the pre-migration steps includes an initial [governance](fabric-adoption-roadmap-governance.md) model, initial high-level deployment planning, in addition to an inventory of the reports and data to be migrated. Additional information from activities in Stages 1, 2, and 3 will be necessary to fully estimate the level of effort for migrating individual solutions.
 
 > [!TIP]
 > Most of the topics discussed in this article also apply to a standard Power BI implementation project.
@@ -39,7 +39,7 @@ Several top considerations during the initial evaluation include obtaining:
 
 Several considerations for identifying stakeholders include:
 
-- Ensure [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) is in place.
+- Ensure [executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md) is in place.
 - Ensure alignment with stakeholders on the business case and BI strategy.
 - Include representatives from throughout the business units—even if their content is slated for migration on a later timetable—to understand their motivations and concerns.
 - Involve Power BI champions early.
@@ -52,7 +52,7 @@ Several considerations for identifying stakeholders include:
 
 Several key items to address early in a Power BI implementation include:
 
-- Specific goals for [Power BI adoption](powerbi-adoption-roadmap-overview.md) and where Power BI fits into the overall BI strategy for the organization.
+- Specific goals for [adoption](fabric-adoption-roadmap.md) and where Microsoft Fabric and Power BI fit into the overall BI strategy for the organization.
 - How the Fabric administrator role will be handled, particularly in decentralized organizations.
 - Policies related to achieving trusted data: use of authoritative data sources, addressing data quality issues, and use of consistent terminology and common definitions.
 - Security and data privacy strategy for data sources, data models, reports, and content delivery to internal and external users.
@@ -72,9 +72,9 @@ Some critical items to address early in a Power BI implementation include:
 - [Power BI tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) decisions, which should be documented.
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
-- Preferences related to [dataset modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [Composite model](composite-model-guidance.md).
+- Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md)—[previously known as dataset modes](../connect-data/service-datasets-rename.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
 - [Securing data and access](../enterprise/service-admin-power-bi-security.md).
-- Working with [shared datasets](../connect-data/service-datasets-share.md) for reusability.
+- Working with [shared semantic models](../connect-data/service-datasets-share.md) for reusability.
 - Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
 - Use of different [report types](../create-reports/index.yml), including Power BI reports, Excel reports, or paginated reports for different use cases or business units.
 - Change management approaches for managing centralized BI items and business-managed BI items.

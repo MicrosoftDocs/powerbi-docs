@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 10/02/2023
+ms.date: 11/15/2023
 
 LocalizationGroup: Share your work
 ---
@@ -35,14 +35,14 @@ Business users get your apps in a few different ways:
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission.
 - If you distribute your app to external users, those users receive an email with a direct link. Power BI doesn't send any email to internal users when you distribute or update an app.
 
-Your app consumers can't modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps: filtering, highlighting, and sorting the data. You can also give them permission to share datasets and create their own content in the app. 
+Your app consumers can't modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps: filtering, highlighting, and sorting the data. You can also give them permission to share semantic models and create their own content in the app. 
 
 ## Licenses for apps
 
 To create or update an app, you need a Power BI Pro or Premium Per User (PPU) license. For app *consumers*, there are two options.
 
 - **If the workspace for this app is *not* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view your app.
-- **If the workspace for this app *is* in a Power BI Premium capacity/F64 or higher Fabric capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read these articles for details:
+- **If the workspace for this app *is* in a Power BI Premium capacity/F64 or higher Fabric capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying semantic models. Read these articles for details:
 
   - [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
   - [Microsoft Fabric concepts and licenses](/fabric/enterprise/licenses)
@@ -72,21 +72,6 @@ Before you leave the **Setup** tab, you can decide if you want to allow app user
     :::image type="content" source="media/service-create-distribute-apps/allow-copying-reports.png" alt-text="Screenshot of save a copy checkbox in Setup tab.":::
 
     When you select that, app users who have build permissions can save a copy of a report from the app consumer view. You can also grant build permissions to your app users through the app using **Advanced** option under **Manage audience access** pane. 
-
-1. Select **Next: [Add content](#add-content-to-the-app)**.
-
-#### Allow access to hidden content
-
-Also, before you leave the **Setup** tab, you can decide if you want users to have access to hidden content.
-
-> [!CAUTION]
-> If users have a direct link to *any* of the content in your app, they can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
-
-1. Expand **Advanced settings**.
-
-1. Under **Access to hidden content**, slide the toggle to **On**.
-
-    :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content.":::
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
 
@@ -148,12 +133,10 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     >[!IMPORTANT]
     >
-    >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you select [Allow access to hidden content](#allow-access-to-hidden-content), a user with a direct link to *any* of the content in the app can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
+    >- Hiding content from the audience makes it unavailable in the published app for that audience.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
-    >
-    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
@@ -161,20 +144,20 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     >[!IMPORTANT]
     >
-    >- If your app relies on datasets from other workspaces, make sure that all app users have access to the underlying datasets.
-    >- If the app or report is in the same workspace as the dataset, make sure you add the report associated with the dataset to the app as well.
+    >- If your app relies on semantic models from other workspaces, make sure that all app users have access to the underlying semantic models.
+    >- If the app or report is in the same workspace as the semantic model, make sure you add the report associated with the semantic model to the app as well.
      
 1. For each audience group, grant access to either all people in your organization or specific users or groups. You can also expand the **Advanced** option to configure the following settings per audience group: 
 
-    **Allow users to share the datasets in this app**: This option gives app consumers permission to share the underlying datasets of the app audience.
+    **Allow users to share the semantic models in this app**: This option gives app consumers permission to share the underlying semantic models of the app audience.
     
-    **Allow users to build content with the datasets in this app**: This option lets your app consumers create their own reports and dashboards based on the app audience datasets.
+    **Allow users to build content with the semantic models in this app**: This option lets your app consumers create their own reports and dashboards based on the app audience semantic models.
     
     :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
-    > - The advanced settings apply to all the audiences, including the workspace users. They can share the datasets and build content with the datasets in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
-    > - Build permissions only apply to datasets _in the same workspace_ as the app. If datasets are in other workspaces, you must explicitly grant build permissions on those datasets, or at least add the users to the Viewer role in the other workspace.
+    > - The advanced settings apply to all the audiences, including the workspace users. They can share the semantic models and build content with the semantic models in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.
+    > - Build permissions only apply to semantic models _in the same workspace_ as the app. If semantic models are in other workspaces, you must explicitly grant build permissions on those semantic models, or at least add the users to the Viewer role in the other workspace.
 
 ### Publish the app
 
@@ -204,7 +187,7 @@ However, this option is disabled in these three scenarios:
 
 - You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
 - You're a guest user who has been assigned a workspace role. 
-- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [App tenant settings](/fabric/admin/service-admin-portal-app#publish-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
 
 ## Manage app access requests
 
@@ -249,7 +232,7 @@ After you publish your app, you might want to change or update it.
     The people you've published the app to automatically see the updated version of the app.
     
     > [!Note]
-    > If you removed app permissions as part of the update, new app installers won't get those permissions. However, **the update won't remove the permissions from users who already have them.** To remove such existing access, go to the Direct access tab on the datasets manage permissions page and remove the permissions manually. 
+    > If you removed app permissions as part of the update, new app installers won't get those permissions. However, **the update won't remove the permissions from users who already have them.** To remove such existing access, go to the Direct access tab on the semantic models manage permissions page and remove the permissions manually. 
 
 ## Copy a link to a specific item in an app
 
@@ -282,7 +265,7 @@ You can't copy a link to an Excel workbook in an app.
 
 ## Automatically install apps for end users
 
-If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
 
@@ -350,9 +333,9 @@ Things to keep in mind about publishing apps:
 - The support site URL is shown in the item information card.
 - By default, all the newly added content, to an already published app, is marked as invisible. You must go to each audience group and manually unhide it.
 - Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
-- You can't open an added link or see its content if you chose to open the link in the content area.
+- When using "Add a Link", you can only open embed links in the content area.
 - Apps can have a maximum of 200 dashboards.
-- If you include a report that uses chained datasets, also known as [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 

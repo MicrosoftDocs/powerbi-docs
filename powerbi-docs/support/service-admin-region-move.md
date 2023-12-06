@@ -50,7 +50,9 @@ The migration process moves all tenant data to the new region. The GUID assigned
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
   - [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
    - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
-   ### Preparation steps
+- If Fabric Metadata is linked to the Purview Data Map, it will continue to be stored in the home region of the tenant. You can choose to delete the assets manually by navigating to Microsoft Purview and following the steps described here: [Asset management in the Microsoft Purview Data Catalog](/purview/catalog-asset-details#delete-asset/)
+
+### Preparation steps
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 

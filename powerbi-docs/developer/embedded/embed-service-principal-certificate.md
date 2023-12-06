@@ -167,7 +167,7 @@ When you create an embedded solution, it might be useful to configure Visual Stu
 
 4. Add the account that has access to your Azure Key Vault.
 
-## Next steps
+## Related content
 
 * [Set up Power BI Embedded](register-app.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)

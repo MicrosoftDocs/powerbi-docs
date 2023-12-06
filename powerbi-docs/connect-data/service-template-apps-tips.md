@@ -120,7 +120,7 @@ To create a dashboard for your template app, just upload your PBIX through **Get
 A template app, as part of the app creation stage, wraps the cache data in the workspace as part of the app:
 
 * Allows the installer to understand the functionality and purpose of the app before connecting data.
-* Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app dataset.
+* Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app semantic model.
 
 We recommend having quality sample data before creating the app to ensure that the app's report and dashboards are populated with data. Try to keep sample data size as small as possible.
 
@@ -135,7 +135,7 @@ Template apps can be published on AppSource. Follow these guidelines before subm
 * Configure the [landing page](./service-template-apps-create.md#define-the-properties-of-the-template-app).
 * Make sure to follow the documentation about the [Power BI App offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * If a dashboard is part of your app, make sure it's not empty.
-* Install the app using the app link before submitting it. Make sure that you can connect the dataset and that the app experience is as you planned.
+* Install the app using the app link before submitting it. Make sure that you can connect the semantic model and that the app experience is as you planned.
 * Before uploading a PBIX file into the template workspace, make sure to unload any unnecessary connections.
 * Follow Power BI [Best design practices for reports and visuals](../visuals/power-bi-report-visualizations.md) to achieve maximum impact on your users and getting approved for distribution.
 

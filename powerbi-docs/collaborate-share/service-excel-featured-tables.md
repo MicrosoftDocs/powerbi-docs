@@ -13,21 +13,21 @@ LocalizationGroup: Share your work
 
 # Access Power BI featured tables in Excel organization data types
 
-*Featured tables* are a way to link your data in Microsoft Excel to data from Power BI. They make it easier to add enterprise data to your Excel sheets. In the Data Types Gallery in Excel, you find data from featured tables in Power BI datasets. This article explains how.
+*Featured tables* are a way to link your data in Microsoft Excel to data from Power BI. They make it easier to add enterprise data to your Excel sheets. In the Data Types Gallery in Excel, you find data from featured tables in Power BI semantic models. This article explains how.
 
 To learn how to create featured tables in Power BI, see [Set featured tables in Power BI Desktop](service-create-excel-featured-tables.md).
 
 > [!NOTE]
-> In Excel, you can also [analyze data from any Power BI dataset](service-connect-excel-power-bi-datasets.md) that you can access in Power BI.
+> In Excel, you can also [analyze data from any Power BI semantic model](service-connect-excel-power-bi-datasets.md) that you can access in Power BI.
 > 
 
 ## The Excel Data Types gallery
 
-Featured tables from Power BI datasets appear as *data types* on the **Data** ribbon, in the Excel **Data Types** gallery.
+Featured tables from Power BI semantic models appear as *data types* on the **Data** ribbon, in the Excel **Data Types** gallery.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Screenshot of the Data Types gallery in the Excel Data ribbon.":::
 
-When expanded, the gallery shows the generic data types such as **Stocks** and **Geography**. You also see the top 10 **Organization** data types available to you, from featured tables in Power BI datasets.
+When expanded, the gallery shows the generic data types such as **Stocks** and **Geography**. You also see the top 10 **Organization** data types available to you, from featured tables in Power BI semantic models.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Screenshot of Excel Data Types Gallery.":::
 
@@ -120,7 +120,7 @@ The Excel Data Types Gallery and connected experiences to Power BI featured tabl
 
 ## Security
 
-You see only featured tables from datasets you have permission to access in Power BI. When refreshing data, you must have permission to access the dataset in Power BI to retrieve the rows. You need [Build or Write permission on the dataset](../connect-data/service-datasets-build-permissions.md) in Power BI.
+You see only featured tables from semantic models you have permission to access in Power BI. When refreshing data, you must have permission to access the semantic model in Power BI to retrieve the rows. You need [Build or Write permission on the semantic model](../connect-data/service-datasets-build-permissions.md) in Power BI.
  
 Excel caches the data returned for the entire row. Anyone you share the Excel file with can see the data for all the fields in all the linked cells.
 
@@ -142,10 +142,10 @@ For a complete list of audit log events, see [Track user activities in Power BI]
 Here are the current limitations:
 
 - The integration is available in Excel in the current channel.
-- Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel: 
+- Featured tables in Power BI semantic models that use the following capabilities aren't shown in Excel: 
 
-    - DirectQuery datasets.
-    - Datasets with a live connection.
+    - DirectQuery semantic models.
+    - Semantic models with a live connection.
 
 - Excel shows only data in columns, calculated columns, and measures defined in the featured table. The following aren't provided:
    
@@ -169,7 +169,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 - Setting or updating the featured table isn't supported in the XMLA endpoint.
 - Excel files with a data model can be used to publish featured tables. Load the data into Power BI desktop and then publish the featured table.
 - Changing the Table name, Row Label, or Key Column in the featured table might impact Excel users with linked cells to rows in the table. 
-- Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date and time at which the data was pulled into Excel. 
+- Excel shows when the data was retrieved from the Power BI semantic model. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a semantic model. For example, say a semantic model in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date and time at which the data was pulled into Excel. 
 
 ## Next steps
 

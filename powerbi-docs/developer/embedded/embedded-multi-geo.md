@@ -70,7 +70,7 @@ To manage capacities with Multi-Geo through APIs, use the following APIs:
 
 * The Power BI Embedded multi-geo limitations are similar to the Power BI Premium multi-geo [considerations and limitations](../../admin/service-admin-premium-multi-geo.md#considerations-and-limitations).
 
-## Next steps
+## Related content
 
 * [What is Power BI Embedded?](embedded-analytics-power-bi.md)
 

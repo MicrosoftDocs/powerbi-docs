@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
 ms.custom:
-ms.date: 12/12/2022
+ms.date: 11/26/2023
 LocalizationGroup: Data from files
 ---
 
@@ -71,7 +71,7 @@ To prevent leakage of sensitive data, the Power BI admin can block export from n
     * If you try to export data from an item that has a parent label, export will fail.
     * It's possible to publish a *.pbix* file that has a parent label, but if the parent label is protected, publish will fail. The solution is to apply a suitable sublabel.
 
-* In the Power BI service, if a dataset has a label that has been deleted from the label admin center, you won't be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label. In Desktop, if a *.pbix* file has such an invalid label, you won't be able to save the file.
+* In the Power BI service, if a semantic model has a label that has been deleted from the label admin center, you won't be able to export or download the data. In Analyze in Excel, a warning will be issued and the data will be exported to an .odc file with no sensitivity label. In Desktop, if a *.pbix* file has such an invalid label, you won't be able to save the file.
 
 * Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
@@ -79,7 +79,7 @@ To prevent leakage of sensitive data, the Power BI admin can block export from n
 
 ## Problems with PBIX files
 
-### I can see a report and dataset in the Power BI service, but when I download them to pbix, I get a message that says I don't have sufficient permissions to open the file
+### I can see a report and semantic model in the Power BI service, but when I download them to pbix, I get a message that says I don't have sufficient permissions to open the file
 
 In the Power BI service, sensitivity labeling doesn't affect access to content. Access to content in the service is determined solely by the permissions a user has on the content. While the labels are visible in the service, any associated encryption settings (configured in the Microsoft Purview compliance portal) aren't applied. They're applied only to data that leaves the service via [supported export paths](./service-security-sensitivity-label-overview.md#supported-export-paths).
 
@@ -97,8 +97,6 @@ In rare cases, it may happen that no one has the necessary usage rights for the 
 
 ### Can't save a labeled *.pbix* file in Desktop
 
-If the label applied to a *.pbix* file hasn't been published to the user in the Microsoft Purview compliance portal, the user won't be able to save the file in Desktop. 
-
 Power BI Desktop users may experience problems saving their work when internet connectivity is lost, such as after going offline. With no internet connection, some actions related to sensitivity labels and rights management might not complete properly. In such cases it's recommended to go back online and try saving again. 
 
 In general, when you protect a file with a sensitivity label that applies encryption, it's good practice to use another encryption method as well, such as pagefile encryption, NTFS encryption, BitLocker instances, antimalware, etc.
@@ -113,12 +111,12 @@ Publishing or importing a .pbix file that has a **protected** sensitivity label 
 
 ### Can't upload a protected file to Desktop via Get data
 
-Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic dataset refresh from such files, is supported, **with the exception of the following scenarios**:
+Import of sensitivity-labeled *.pbix* files (both protected and unprotected) stored on OneDrive or SharePoint Online, as well as on-demand and automatic semantic model refresh from such files, is supported, **with the exception of the following scenarios**:
 
 * Protected live-connected *.pbix* files and protected Azure Analysis Services *.pbix* files: Refresh will fail. Neither report content nor label will be updated.
 * Labeled unprotected Live Connect *.pbix* files: Report content will be updated but label won't be updated.
-* When the *.pbix* file has had a new sensitivity label applied that the dataset owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
-* If the dataset owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
+* When the *.pbix* file has had a new sensitivity label applied that the semantic model owner doesn't have usage rights to. In this case, refresh will fail. Neither report content nor label will be updated.
+* If the semantic model owner's access token for OneDrive/SharePoint has expired. In this case, refresh will fail. Neither report content nor label will be updated.
 
 ### Can't open protected *.pbix* file in Power BI Desktop for Power BI Report Server
 
@@ -129,7 +127,7 @@ Power BI Desktop for Power BI Report Server doesn't support information protecti
 Sensitivity labels are supported in the following sovereign clouds:
 
 * [US Government](/power-bi/enterprise/service-govus-overview): GCC, GCC High, DoD
-* China: Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection.md?view=o365-21vianet&preserve-view=true).
+* China: Customers in China must enable rights management for the tenant and add the Microsoft Purview Information Protection Sync Service service principle, as described in steps 1 and 2 under [Configure Azure Information Protection for customers in China](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#configure-aip-for-customers-in-china).
 
 ## Sensitivity label support in template apps
 
@@ -188,9 +186,9 @@ Sensitivity labels inherited from data sources are automatically propagated down
 * Sensitivity labels must be enabled in Power BI.
 * The **Apply sensitivity labels from data sources to their data in Power BI (preview)** tenant admin setting must be enabled.
 * All conditions for applying a label must be met.
-* Inheritance from data sources isn't supported for datasets located in classic workspaces. My Workspace and V2 workspaces are supported.
-* Inheritance from data sources is supported only for datasets with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
-* Inheritance from data sources is supported only for datasets using the Import data connectivity mode. Live connection and DirectQuery connectivity isn't supported.
+* Inheritance from data sources isn't supported for semantic models located in classic workspaces. My Workspace and V2 workspaces are supported.
+* Inheritance from data sources is supported only for semantic models with enhanced metadata. See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) for more information.
+* Inheritance from data sources is supported only for semantic models using the Import data connectivity mode. Live connection and DirectQuery connectivity isn't supported.
 * Inheritance from data sources isn't supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway.
 
 ## Problems setting and removing sensitivity labels using Power BI REST APIs

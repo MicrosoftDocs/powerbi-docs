@@ -53,43 +53,43 @@ Before you start this tutorial, verify that you have both the following Power BI
 
 * **Power BI dependencies**
 
-    * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+  * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
 
     * One of the following licenses:
 
-        * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
+      * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
 
-        * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
+      * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need one of the following configurations:
     >* All users with Pro licenses.
     >* All users with PPU licenses.
-    >* A *P* or *EM* [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
+    >* A *P* or *EM* [capacity](embedded-capacity.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 
     # [.NET Core](#tab/net-core)
 
-    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
-    
-    * An integrated development environment (IDE). We recommend using one of the following IDEs:
+  * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
-        * [Visual Studio](https://visualstudio.microsoft.com/)
+  * An integrated development environment (IDE). We recommend using one of the following IDEs:
 
-        * [Visual Studio Code](https://code.visualstudio.com/)
-
-    # [.NET Framework](#tab/net-framework)
-
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
     * [Visual Studio](https://visualstudio.microsoft.com/)
 
-    # [React TypeScript](#tab/react)
+    * [Visual Studio Code](https://code.visualstudio.com/)
 
-    * A text editor
+  # [.NET Framework](#tab/net-framework)
 
-    * Command line terminal (or PowerShell)
+  * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+
+  * [Visual Studio](https://visualstudio.microsoft.com/)
+
+   # [React TypeScript](#tab/react)
+
+  * A text editor
+
+  * Command line terminal (or PowerShell)
 
 ---
 
@@ -315,7 +315,7 @@ After configuring and running the *embed for your customers* sample application,
 
 Users need permission to access the Power BI folder the report is in. When you grant a user permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)

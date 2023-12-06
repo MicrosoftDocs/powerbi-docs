@@ -83,7 +83,7 @@ Before you get started with DLP for Power BI, you should confirm your [Microsoft
  
 ## Conditions
 
-In the condition section, you define the conditions under which the policy will apply to a dataset. Conditions are created in groups. Groups make it possible to construct complex conditions.
+In the condition section, you define the conditions under which the policy will apply to a semantic model. Conditions are created in groups. Groups make it possible to construct complex conditions.
 
 1. Open the conditions section. Choose **Add condition** if you want to create a simple or complex condition, or **Add group** if you want to start creating a complex condition.
 
@@ -107,7 +107,7 @@ In the condition section, you define the conditions under which the policy will 
 
     ![Screenshot of confidence level setting for sensitive info types.](./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-confidence-level-settings.png) 
 
-    You can add additional sensitivity labels or sensitive info types to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the items in the group is required for the condition to hold. If you specified more than one sensitivity label, you'll only be able to choose **Any of these**, since datasets can’t have more than one label applied.
+    You can add additional sensitivity labels or sensitive info types to the group. To the right of the group name, you can specify **Any of these** or **All of these**. This determines whether matches on all or any of the items in the group is required for the condition to hold. If you specified more than one sensitivity label, you'll only be able to choose **Any of these**, since semantic models can’t have more than one label applied.
 
     The image below shows a group (Default) that contains two sensitivity label conditions. The logic Any of these means that a match on any one of the sensitivity labels in the group constitutes “true” for that group.
 
@@ -141,7 +141,7 @@ The user notifications section is where you configure your policy tip. Turn on t
  
 ## User overrides
  
-If you enabled user notifications and selected the **Notify users in Office 365 service with a policy tip** checkbox, dataset owners (users with an Admin or Member role in the workspace where the dataset is located) will be able to respond to violations on the **[Data loss prevention policies side pane](./service-security-dlp-policies-for-power-bi-respond.md)**, which they can display from a button on the policy tip. The options they have depend on your selections in the **User overrides** section.
+If you enabled user notifications and selected the **Notify users in Office 365 service with a policy tip** checkbox, semantic model owners (users with an Admin or Member role in the workspace where the semantic model is located) will be able to respond to violations on the **[Data loss prevention policies side pane](./service-security-dlp-policies-for-power-bi-respond.md)**, which they can display from a button on the policy tip. The options they have depend on your selections in the **User overrides** section.
 
 :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-user-overrides-section.png" alt-text="Screenshot of D L P user overrides section.":::
 
@@ -155,7 +155,7 @@ The options are described below.
 
 * If you select both **Override the rule automatically if they report it as a false positive** and **Require a business justification to override**, users will be able to report the issue as a false positive and automatically override the policy, or they can just override the policy without reporting it as a false positive, but they'll have to provide a business justification.
 
-Overriding a policy means that from now on the policy will no longer check the dataset for sensitive data.
+Overriding a policy means that from now on the policy will no longer check the semantic model for sensitive data.
 
 Reporting an issue as a false positive means that the data owner believes that the policy has mistakenly identified non-sensitive data as sensitive. You can use false positives to fine tune your rules.
 

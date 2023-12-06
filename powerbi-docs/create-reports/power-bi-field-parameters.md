@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.custom: video-RE4Y8Jv
 ms.topic: how-to
-ms.date: 08/13/2023
+ms.date: 11/10/2023
 LocalizationGroup: Reports
 ---
 # Let report readers use field parameters to change visuals (preview)
@@ -81,6 +81,6 @@ Parameter = {
 
 - AI visuals and Q&A aren't supported with the feature.
 - There's no way for your report users to select the "none" or no fields option. Selecting no fields in the slicer or filter card is the same as selecting all fields.
-- You can't create parameters in live connection data sources without a local model. However, if you use DirectQuery for Power BI datasets and Analysis Services, you can add a local model to create field parameters. For more information about using DirectQuery for live connections, see [Composite models on Power BI datasets and Analysis Services](../transform-model/desktop-composite-models.md#composite-models-on-power-bi-datasets-and-analysis-services).
+- You can't create parameters in live connection data sources without a local model. However, if you use DirectQuery for Power BI semantic models and Analysis Services, you can add a local model to create field parameters. For more information about using DirectQuery for live connections, see [Composite models on Power BI semantic models and Analysis Services](../transform-model/desktop-composite-models.md#composite-models-on-power-bi-semantic-models-and-analysis-services).
 - You can't use implicit measures, so if you need an aggregated column as one of your fields, you need to create an explicit DAX measure for it. For more information, see [implicit vs. explicit measures](../guidance/star-schema.md#measures).
 - You can't use field parameters as the linked fields of a drill-through or tooltip page. The workaround is to use the individual fields referenced within the field parameter instead. For example, if your field parameter includes **Customer** and **Product** fields, you can link these two fields to your drill-through or tooltip page so that visuals with the field parameter can launch your drill-through or tooltip page.

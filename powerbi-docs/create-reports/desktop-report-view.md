@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/05/2023
+ms.date: 11/10/2023
 LocalizationGroup: Create reports
 ---
 # Work with Report view in Power BI Desktop
@@ -52,7 +52,7 @@ To delete a page, select the **x** on the page's tab at the bottom of the Report
 ![Screenshot highlighting the x on the page's tab.](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
-> Reports and visualizations can't be pinned to a dashboard from Power BI Desktop. To do that, you'll need to publish to your Power BI site. For more information, see [Publish datasets and reports from Power BI Desktop](desktop-upload-desktop-files.md).
+> Reports and visualizations can't be pinned to a dashboard from Power BI Desktop. To do that, you'll need to publish to your Power BI site. For more information, see [Publish semantic models and reports from Power BI Desktop](desktop-upload-desktop-files.md).
 
 ## Copy and paste between reports
 

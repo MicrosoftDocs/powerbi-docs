@@ -57,4 +57,4 @@ Suppose that you deleted this language by mistake. You can use a previously gene
 
 ## Next steps
 
-- [Manage dataset translations at the enterprise level](translation-manage-dataset-enterprise.md)
+- [Manage data model translations at the enterprise level](translation-manage-data-model-enterprise.md)

@@ -106,7 +106,7 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
 * A visual requests more data from Power BI.
 
-    A visual processes data part by part. The `fetchMoreData` API method requests the next fragment of data in the dataset.
+    A visual processes data part by part. The `fetchMoreData` API method requests the next fragment of data in the semantic model.
 
     For more information, see [Fetch more data from Power BI](fetch-more-data.md).
 
@@ -118,7 +118,7 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
     To learn about the event service, see ["Rendering" events in Power BI visuals](event-service.md).
 
-## Next steps
+## Related content
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
