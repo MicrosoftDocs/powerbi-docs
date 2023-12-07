@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/13/2023
+ms.date: 12/07/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -28,6 +28,61 @@ Because the on-object feature is in preview, you need to turn it on. You'll also
     :::image type="content" source="media/power-bi-on-object-interaction/on-object-preview-option.png" alt-text="Screenshot showing turning on preview feature.":::
 
 1. Restart Power BI Desktop to see the new experience.
+
+## Choose a default pane arrangement
+
+After you turn on on-object interaction, the next time you start Power BI Desktop, you see this dialog asking which pane arrangement you prefer.
+
+:::image type="content" source="media/power-bi-on-object-interaction/settings-options.png" alt-text="Screenshot showing choose default settings options.":::
+
+- **Keep setup**: Keeps the on-object pane setup.
+- **Update setup**: Returns the panes to the right side of Power BI Desktop.
+
+### Change settings in the Options menu
+
+If you change your mind, you can go back to the **Options** menu to customize the experience to suit your needs. To summarize, here’s the state of these settings for the new default setup, and an explanation of each of these options.
+
+:::image type="content" source="media/power-bi-on-object-interaction/options-report-settings.png" alt-text="Screenshot showing on-object report settings.":::
+
+1. **Suggest a type by default**: If you don't want Power BI Desktop to suggest a visual, make sure this option isn't checked. All the field wells will always be expanded. 
+
+1. **In the Build a visual menu, always show all the visualization types**: Check this option to see all the visualization types shown by default in the **Build** menu.
+
+1. **Always show pane switcher**: When you check this option, the right-hand pane switcher is shown even when you're not working with any panes. You always have access to the **+** menu and **Settings** icon. 
+
+1. **Always show the Build a visual menu in the pane switcher**: The **Build** menu moves from being next to the visual to the pane switcher on the right instead. Check this option if you prefer to work with the Build menu as a pane. 
+
+1. **Always open a new pane**: Instead of switching between panes, check this option if you prefer the stacking behavior as before. With this option on, a new pane opens side-by-side by default. 
+
+### Multiselect in data flyout 
+
+To cut down on extra clicks when you're adding data using the new **Add data** button, the data flyout now allows you to multiselect fields to add in bulk to your visual, just like in the data pane! Check all the fields you’d like to add to your visual at one time.  
+
+This option works best when **Suggest a type** is **On**, so you can add as many fields as you like and Power BI places the fields in the appropriate field wells for you.  
+
+:::image type="content" source="media/power-bi-on-object-interaction/multiselect-suggest-type.png" alt-text="Screenshot showing using multiselect in choosing fields.":::
+
+### In-product user education 
+
+With the many changes the on-object interaction, it can hard to know where certain features have moved. We added four teaching bubbles to help users along the way. 
+
+#### Where’s drillthrough and tooltip page setup?  
+
+A teaching bubble now points to the new location within **Format** > Page information. 
+
+:::image type="content" source="media/power-bi-on-object-interaction/change-page-type-help.png" alt-text="Screenshot showing teaching bubbles illustrate new experiences.":::
+
+#### Where did the analytics pane go? 
+
+Analytics options like error bars, max, min, or percentile lines are consolidated in the **Format** pane at the bottom. You can set a max, min, or other reference line using the new **Reference line** card in the **Format** pane. 
+
+#### What happened to the right-click options for a field, like rename or **Show value as**? 
+
+They're still available on the right-click menu. Right-click the field name to see the same options as before.
+
+#### How do I bring back my data pane if the pane switcher is gone? 
+
+You can reopen a pane from the **View** tab in the ribbon. 
 
 ## Build a visual with on-object interaction
 
@@ -164,7 +219,7 @@ There are two ways to open multiple panes at the same time:
 ### Warnings
 
 - If you set the title or label by conditional formatting, it's possible to override the text with the new direct text editing feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
-- While responsive is on, the mini-toolbar will increase to the responsive upper bound, then stop. It might appear as a bug that it’s broken. We plan to add an error state to communicate this.
+- While responsive is on, the mini-toolbar increases to the responsive upper bound, then stops. It might appear as a bug that it’s broken. We plan to add an error state to communicate this behavior.
 
 ### Custom visuals
 

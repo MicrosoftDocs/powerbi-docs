@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 12/05/2023
+ms.date: 12/07/2023
 LocalizationGroup: Get started
 ---
 
@@ -15,11 +15,10 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-With Data Activator, you can set data alerts on the reports that you're interested in following.
+With Data Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Data Activator?](/fabric/data-activator/data-activator-introduction)
 
 ## Prerequisites
 
-- The report needs to be stored in a workspace with a Fabric capacity license.
 - You need to have write permission for a workspace with a Fabric capacity license.
 
 You can sign up for a [Microsoft Fabric free trial](https://aka.ms/try-fabric).
