@@ -15,7 +15,7 @@ ms.date: 07/19/2022
 >[!NOTE]
 > This feature is available from API version 5.7.0.
 
-The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an [API call](#dynamic-drill-control-requirements). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When disabled, these functionalities aren't available.
+The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an [API call](#dynamic-drill-control-requirements). When the drill feature is enabled, all drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When disabled, these functionalities aren't available.
 
 The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
 
