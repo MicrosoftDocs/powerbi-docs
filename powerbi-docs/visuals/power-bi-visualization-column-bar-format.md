@@ -1,9 +1,9 @@
 ---
 title: Format column and bar charts
 description: Learn how to format column and bar charts 
-author: maggies
-ms.author: maggiesMSFT
-ms.reviewer: rienhu
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -22,7 +22,7 @@ You have a number of options for formatting column and bar charts in Power BI. T
 
 Explore these new capabilities to create compelling narratives with your data in Power BI. Here are details about the features.
 
-## Key enhancements
+## Layout enhancements
 
 - **Apply settings to all or series**: Apply formatting options globally across all categories, or tailor them for each unique individual series.
 
@@ -37,7 +37,7 @@ Explore these new capabilities to create compelling narratives with your data in
   - We introduced **Sort by Value**, **Space between categories**, and **Space between series**.
   - For clustered column and bar charts, you have the option to **Erode** or **Explode** the stacked series.
 
-- **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options including matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing. 
+- **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options including matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.
 
 For more comprehensive information about these features for column and bar charts, see the [Power BI Visuals blog post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7138638604704129024/).
 
