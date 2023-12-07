@@ -64,11 +64,11 @@ This option works best when **Suggest a type** is **On**, so you can add as many
 
 ### In-product user education 
 
-With the many changes the on-object interaction, it can hard to know where certain features have moved. We added four teaching bubbles to help users along the way. 
+With the many changes to the on-object interaction, it can be hard to know where certain features have moved. These four teaching bubbles can help you along the way. 
 
 #### Where’s drillthrough and tooltip page setup?  
 
-A teaching bubble now points to the new location within **Format** > Page information. 
+A teaching bubble now points to the new location within **Format** > **Page information**. 
 
 :::image type="content" source="media/power-bi-on-object-interaction/change-page-type-help.png" alt-text="Screenshot showing teaching bubbles illustrate new experiences.":::
 

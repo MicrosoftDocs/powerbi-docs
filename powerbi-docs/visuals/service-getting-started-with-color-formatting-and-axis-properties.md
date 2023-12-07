@@ -50,7 +50,7 @@ You can customize many elements of each visualization. The options available dep
 * Position
 * Zoom
 
-and more.
+And more.
 
 > [!NOTE] 
 > You won’t see all these elements with each visualization type. The visualization you select will affect which customizations are available; for example, you won’t see an X-axis if you have a pie chart selected because pie charts don’t have an X-axis.
@@ -154,7 +154,7 @@ These are just a few of the formatting tasks that are possible. Open a report in
 
 ## Customize data labels
 
-Data labels have some enhanced formatting capabilities, giving you extended customization choices. For examle, you can integrate additional metrics on your charts to improve your data analysis experience. These options are available for columns, bars, lines, and ribbon charts.
+Data labels have some enhanced formatting capabilities, giving you extended customization choices. For example, you can integrate additional metrics on your charts to improve your data analysis experience. These options are available for columns, bars, lines, and ribbon charts.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png" alt-text="Screenshot showing customizing data labels.":::
 
