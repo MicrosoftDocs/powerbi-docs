@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 07/19/2022
 ---
 
-# Dynamic drill-down control
+# Dynamic drill control
 
 >[!NOTE]
 > This feature is available from API version 5.7.0.
@@ -67,16 +67,13 @@ Then use the API call to enable or disable the drill as needed:
 * To disable:
   `this.host.setCanDrill(false /* drillAllowed */);`
 
-## Dynamic drill control requirements
+## How to use the dynamic drill control API
 
-> [!NOTE]
-> The **Dynamic drill control API** is available from API version 5.7.0
+[Drilling](./drill-down-support.md) is enabled by default, but the dynamic drill control feature allows the visual to enable or disable drilling using an API call.
 
-The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an API call.
+A visual with the dynamic drill control feature, has the following code in the *capabilities.json* file:
 
-To support the dynamic drill control feature, add the following code to the capabilities.json file:
-
-* To disable drill by default:
+* With drill disabled by default:
 
   ```json
       "drilldown": {
@@ -90,7 +87,7 @@ To support the dynamic drill control feature, add the following code to the capa
       },
   ```
 
-* To enable drill by default:
+* With drill enabled by default:
 
   ```json
       "drilldown": {
@@ -113,7 +110,7 @@ The `disabledByDefault` property indicates whether or not to disable the drill f
 >
 > For example, if you convert a *sourceVisual* to *targetVisual*, the *targetVisual*'s `disabledByDefault` property is considered only if the *sourceVisual* doesn't support this feature. If *sourceVisual* does support this feature, the *targetVisual* keeps the *sourceVisual*'s state and not the default.
 
-## Migrate an existing visual to use the dynamic drill control API
+## Adding drill-down support to a new version of an existing visual
 
 Using the drilldown feature represents a breaking change. Therefore, for the smoothest transition, we recommend that you use **a new visual GUID** for the new version.
 
