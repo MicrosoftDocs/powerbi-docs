@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/06/2022
+ms.date: 12/07/2023
 LocalizationGroup: Connect to data
 ---
 
@@ -25,7 +25,7 @@ Non-certified custom connectors can range from small business-critical APIs to l
 
 To use a non-certified custom connector:
 
-1. Put the connector *.pq*, *.pqx*, *.m*, or *.mez* file in your local *\[Documents]\\Power BI Desktop\\Custom Connectors* folder. If the folder doesn't exist, create it.
+1. Put the connector *.pq*, *.pqx*, *.m*, or *.mez* file in your local *\[Documents]\\Microsoft Power BI Desktop\\Custom Connectors* folder. If the folder doesn't exist, create it.
 
 1. To adjust the data extension security settings, in Power BI Desktop, select **File** > **Options and settings** > **Options** > **Security**.
 
