@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-security
 ms.topic: how-to
-ms.date: 10/30/2023
+ms.date: 12/06/2023
 ms.custom: video--3yFtlZBpqs
 LocalizationGroup: Administration
 ---
@@ -335,6 +335,7 @@ If Azure Private Link is properly configured and **Block public Internet access*
 
 There are a few considerations to keep in mind while working with private endpoints in Power BI:
 
+* Power BI supports up to 200 capacities in the private link enabled tenant
 * Any uses of external images or themes aren't available when using a private link environment.
 * If internet access is disabled, and if the dataset or dataflow connects to a Power BI dataset or dataflow as a data source, the connection fails.
 * Each private endpoint can be connected to one tenant only. 
@@ -353,12 +354,12 @@ There are a few considerations to keep in mind while working with private endpoi
 * Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
 * The following URLs must be accessible from the client browser which are required for auth:
 
- - `login.microsoftonline.com`
- - `aadcdn.msauth.net`
- - `msauth.net`
- - `msftauth.net`
- - `graph.microsoft.com`
- - `login.live.com`, though this may be different based on account type.
+    * `login.microsoftonline.com`
+    * `aadcdn.msauth.net`
+    * `msauth.net`
+    * `msftauth.net`
+    * `graph.microsoft.com`
+    * `login.live.com`, though this may be different based on account type.
 
 ## Next steps
 

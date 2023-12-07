@@ -168,7 +168,7 @@ The comments in the following code caption from the `pbiviz.json` file describe 
 }
 ```
 
-## Next steps
+## Related content
 
 * [Power BI visuals system integration](power-bi-visuals-concept.md)
 * [Develop a Power BI circle card visual](develop-circle-card.md)

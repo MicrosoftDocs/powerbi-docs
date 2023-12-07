@@ -90,7 +90,7 @@ You can also create a rule that invokes a scale-down capacity runbook script to 
 
 You can also invoke scale-up and scale-down runbooks programmatically on demand before and after a semantic model is refreshed. This approach ensures your capacity has enough RAM (GB) for large semantic models that use that capacity.
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Power BI Embedded performance best practices](embedded-performance-best-practices.md)

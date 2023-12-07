@@ -111,7 +111,7 @@ For a semantic model that uses row-level security (RLS), any permissions *higher
 
 Each of the above APIs comes with certain limitations regarding who can use them and how. To see the limitations of each API, select the link for that API.
 
-## Next steps
+## Related content
 
 * [Power BI REST APIs](/rest/api/power-bi/).
 * [Push datasets](/rest/api/power-bi/push-datasets).

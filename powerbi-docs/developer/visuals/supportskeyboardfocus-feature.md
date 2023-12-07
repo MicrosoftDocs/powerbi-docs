@@ -53,7 +53,7 @@ This capability adds the following features to your custom visual:
 
 * After pressing <kbd>Enter</kbd> on the visual container and after pressing <kbd>Tab</kbd> on the last focusable element, the user might have to press <kbd>Tab</kbd> more than once to get to the first element.
 
-## Next steps
+## Related content
 
 * [Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md)
 * [Developing a Power BI circle card visual](develop-circle-card.md)

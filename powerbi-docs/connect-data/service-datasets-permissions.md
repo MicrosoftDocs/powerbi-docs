@@ -68,6 +68,7 @@ Row-level security may affect the ability of users with read or build permission
     * Users with write permission on the semantic model will be able to read data from the semantic model regardless of whether or not they belong to any of its RLS roles.
 
 ## Next steps
+
 * [Share access to a semantic model](./service-datasets-share.md)
 * [Manage semantic model permissions](service-datasets-manage-access-permissions.md)
 * [Semantic model permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)

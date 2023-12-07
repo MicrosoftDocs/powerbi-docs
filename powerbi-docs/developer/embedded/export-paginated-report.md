@@ -362,7 +362,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 * The file share URL hyperlink (file share /UNC path) doesn't works when exporting a published paginated report on Power BI service online.  
 
-## Next steps
+## Related content
 
 Review how to embed content for your customers and your organization:
 

@@ -278,7 +278,7 @@ To delete the capacity you created, follow these steps:
 
 Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
 
-## Next steps
+## Related content
 
 * [Manage capacities](../../enterprise/service-admin-premium-manage.md)
 * [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)

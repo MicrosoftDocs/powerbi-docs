@@ -80,7 +80,7 @@ Power BI visuals are packaged as *.pbiviz* files that can be stored on your comp
 
 8. If you want the visual to remain on the **Visualizations** pane so you can use it in future reports, right-click the visual's icon and select **Pin to visualization pane**.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Developing a Power BI circle card visual](develop-circle-card.md)

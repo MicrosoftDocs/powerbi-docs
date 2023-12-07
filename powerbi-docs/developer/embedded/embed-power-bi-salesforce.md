@@ -61,7 +61,7 @@ In the Salesforce embed for your organization Salesforce solution, `powerbi.js` 
 
 To embed Power BI content that uses the embed for your organization solution, follow the instructions in the [SalesforceUserOwnsDataEmbedding](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding) GitHub repository.
 
-## Next steps
+## Related content
 
 * [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 

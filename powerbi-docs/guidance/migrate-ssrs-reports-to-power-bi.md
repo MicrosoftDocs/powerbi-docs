@@ -118,7 +118,7 @@ Generally, Power BI paginated reports are optimized for **printing**, or **PDF g
 
 Referencing [custom code](../paginated-reports/paginated-reports-faq.yml#can-i-run-custom-code-in-my-report-) DLL files within a report isn't supported.  
 
-Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](/sql/reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
+Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](../paginated-reports/report-builder/export-pdf-file-report-builder.md#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
 
 
 ### Prepare

@@ -45,7 +45,7 @@ Review the following list of limitations before using the *push datasets* APIs.
 
 * Doesn't work with service principal profiles
 
-## Next steps
+## Related content
 
 * [Power BI REST APIs](/rest/api/power-bi/).
 * [Push datasets](/rest/api/power-bi/push-datasets).

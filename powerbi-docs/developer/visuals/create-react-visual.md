@@ -616,7 +616,7 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
 
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
@@ -628,6 +628,7 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
             name: "circleColor", // circle color name should match circle color property name in capabilities.json
             displayName: "Color",
             description: "The fill color of the circle.",
+            show: true,
             value: { value: "white" }
         });
 
@@ -635,11 +636,13 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
             name: "circleThickness", // circle thickness name should match circle color property name in capabilities.json
             displayName: "Thickness",
             description: "The circle thickness.",
+            show: true,
             value: 2
         });
 
         name: string = "circle"; // circle card name should match circle object name in capabilities.json
         displayName: string = "Circle";
+        show: boolean = true;
         slices: Array<FormattingSettingsSlice> = [this.circleColor, this.circleThickness];
     }
 
@@ -695,7 +698,7 @@ Add the `getFormattingModel` method used to apply visual settings and required i
     1. Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
         ```typescript
-        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews[0]);
         const circleSettings = this.formattingSettings.circleCard;
         ```
 
@@ -751,7 +754,7 @@ Experiment with the visual's color and border thickness, which you can now contr
 >[!div class="mx-imgBorder"]
 >![A screenshot of the react circle card visual in Power B I service, showing the color and border thickness format options.](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
-## Next steps
+## Related content
 
 * [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 * [Create a Power BI bar chart visual](create-bar-chart.md)
