@@ -15,7 +15,7 @@ ms.date: 07/19/2022
 >[!NOTE]
 > This feature is available from API version 5.7.0.
 
-The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an [API call](#how-to-use-the-dynamic-drill-control-api). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When disabled, these functionalities aren't available.
+The dynamic drill control feature allows the visual to enable or disable the [drill feature](./drill-down-support.md) dynamically using an [API call](#dynamic-drill-control-requirements). When the drill feature is enabled, all the drilldown functionalities and [expand/collapse features](./dataview-mappings.md#expand-and-collapse-row-headers) are available, including API calls, context menu commands, header drill buttons, and support for hierarchy data. When disabled, these functionalities aren't available.
 
 The following images show an example of a visual with the dynamic drill control feature enabled and disabled:
 
@@ -53,9 +53,9 @@ To identify whether the drill is disabled, use the `isDrillDisabled` property in
 
 ```typescript
     private update(options: VisualUpdateOptions) {
-   //…
-   const isDrillDisabled = options.dataViews[0].metadata.dataRoles.isDrillDisabled;
-   //…
+      //…
+      const isDrillDisabled = options.dataViews[0].metadata.dataRoles.isDrillDisabled;
+      //…
     }
 ```
 
@@ -67,7 +67,7 @@ Then use the API call to enable or disable the drill as needed:
 * To disable:
   `this.host.setCanDrill(false /* drillAllowed */);`
 
-## How to use the dynamic drill control API
+## Dynamic drill control requirements
 
 [Drilling](./drill-down-support.md) is enabled by default, but the dynamic drill control feature allows the visual to enable or disable drilling using an API call.
 
