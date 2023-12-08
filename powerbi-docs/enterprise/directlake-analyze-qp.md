@@ -50,7 +50,7 @@ SQL Server Profiler can provide more details about query performance by tracing 
 
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-server.png" alt-text="Connect to server dialog":::
 
-1. Select **Options**. In **Connect to database**, enter the name of your dataset and then select **Connect**. Sign in to Azure Active Directory.
+1. Select **Options**. In **Connect to database**, enter the name of your dataset and then select **Connect**. Sign in to Microsoft Entra ID.
 
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-enter-dataset.png" alt-text="Enter dataset":::
 

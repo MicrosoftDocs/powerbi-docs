@@ -54,7 +54,7 @@ We recommend logging the Request ID (and error details for troubleshooting). Pro
 
 ### App registration failure
 
-Error messages within the Azure portal or the Power BI app registration page will notify you if you don't have sufficient privileges to register your app. To register an application, you must be an admin in the Azure AD tenant, or application registrations must be enabled for non-admin users.
+Error messages within the Azure portal or the Power BI app registration page will notify you if you don't have sufficient privileges to register your app. To register an application, you must be an admin in the Microsoft Entra tenant, or application registrations must be enabled for non-admin users.
 
 ### Power BI service doesn't appear in the Azure portal when registering a new app
 
@@ -62,7 +62,7 @@ At least one user must be signed up for Power BI. If you don't see **Power BI se
 
 ### What's the difference between an application object ID and a principal object ID?
 
-When you register an Azure AD app, there are two parameters called *object ID*. This section explains the purpose of each parameter, and how to obtain it.
+When you register a Microsoft Entra app, there are two parameters called *object ID*. This section explains the purpose of each parameter, and how to obtain it.
 
 :::row:::
 
@@ -70,26 +70,26 @@ When you register an Azure AD app, there are two parameters called *object ID*. 
 
         #### Application object ID
 
-        The [application object](/azure/active-directory/develop/app-objects-and-service-principals#application-object) ID, also known simply as the *object ID*, is the unique ID of your Azure AD application object.
+        The [application object](/azure/active-directory/develop/app-objects-and-service-principals#application-object) ID, also known simply as the *object ID*, is the unique ID of your Microsoft Entra application object.
 
-        To get the application object ID, navigate to your Azure AD app, and copy it from the *Overview*.
+        To get the application object ID, navigate to your Microsoft Entra app, and copy it from the *Overview*.
 
-        :::image type="content" source="media/embedded-troubleshoot/object-id.png" alt-text="Screenshot of the Azure portal window, which shows the object ID in the Overview blade of an Azure AD application.":::
+        :::image type="content" source="media/embedded-troubleshoot/object-id.png" alt-text="Screenshot of the Azure portal window, which shows the object ID in the Overview blade of a Microsoft Entra application.":::
 
     :::column-end:::
     :::column span="":::
 
         #### Principal object ID
 
-        The principal object ID, also known simply as the *object ID*, is the unique ID of the [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) associated with your Azure AD application.
+        The principal object ID, also known simply as the *object ID*, is the unique ID of the [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) associated with your Microsoft Entra application.
 
-        To get your principal object ID, navigate to your Azure AD app, and from the *Overview*, select the app link in **Managed application in local directory**.
+        To get your principal object ID, navigate to your Microsoft Entra app, and from the *Overview*, select the app link in **Managed application in local directory**.
         
-            :::image type="content" source="media/embedded-troubleshoot/azure-overview-blade.png" alt-text="Screenshot of the Azure portal window, which shows the Managed application in local directory option in the Overview blade of an Azure AD application.":::
+            :::image type="content" source="media/embedded-troubleshoot/azure-overview-blade.png" alt-text="Screenshot of the Azure portal window, which shows the Managed application in local directory option in the Overview blade of a Microsoft Entra application.":::
         
         From the *Properties* section, copy the **Object ID**.
         
-            :::image type="content" source="media/embedded-troubleshoot/principal-object-id.png" alt-text="Screenshot of the Azure portal window, which shows the principal object ID in the properties section in the Overview blade of an Azure AD application.":::
+            :::image type="content" source="media/embedded-troubleshoot/principal-object-id.png" alt-text="Screenshot of the Azure portal window, which shows the principal object ID in the properties section in the Overview blade of a Microsoft Entra application.":::
 
     :::column-end:::
 :::row-end:::
@@ -100,15 +100,15 @@ When you register an Azure AD app, there are two parameters called *object ID*. 
 
 ***(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)***
 
-If you're using Power BI Embedded and Azure AD Direct authentication, you might receive a message like the previous message when you try to sign in, because direct authentication isn't enabled.
+If you're using Power BI Embedded and Microsoft Entra ID Direct authentication, you might receive a message like the previous message when you try to sign in, because direct authentication isn't enabled.
 
-You can turn direct authentication back on using an [Azure AD policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+You can turn direct authentication back on using an [Microsoft Entra policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization, or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this policy only on a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning it. Here's a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Azure AD Preview PowerShell module](/powershell/azure/active-directory/install-adv2).
+1. Install the [Microsoft Entra ID Preview PowerShell module](/powershell/azure/active-directory/install-adv2).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable `$sp` doesn't have more than one application as a result).
 
@@ -174,7 +174,7 @@ User consent is disabled for the tenant.
 
 * Enable user consent for the entire tenant (all users, all applications):
 
-1. In the Azure portal, navigate to **Azure Active Directory** > **Users and groups** > **User settings**.
+1. In the Azure portal, navigate to **Microsoft Entra ID** > **Users and groups** > **User settings**.
 2. Enable the **Users can consent to apps accessing company data on their behalf** setting and save the changes.
 
 :::image type="content" source="media/embedded-troubleshoot/consent-test-02.png" alt-text="Screenshot of the Azure portal.":::
@@ -189,19 +189,21 @@ Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org
 'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)
 ```
 
-### Azure AD token for a different tenant (guest user)
+<a name='azure-ad-token-for-a-different-tenant-guest-user'></a>
 
-When you *embed for your organization*, to allow Azure AD guest users access to your content, you need to specify the tenant ID in the `authorityUri` parameter.
+### Microsoft Entra token for a different tenant (guest user)
+
+When you *embed for your organization*, to allow Microsoft Entra guest users access to your content, you need to specify the tenant ID in the `authorityUri` parameter.
 
 * URL for authenticating in your organization's tenant:
 
     `https://login.microsoftonline.com/common/v2.0`
 
-* URL for authenticating a guest Azure AD user:
+* URL for authenticating a guest Microsoft Entra user:
 
     `https://login.microsoftonline.com/<tenant ID>`
 
-To find your tenant ID, you can use the instructions in [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+To find your tenant ID, you can use the instructions in [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
 For more information, see [Making your application multi-tenant](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant).
 
@@ -209,7 +211,7 @@ For more information, see [Making your application multi-tenant](/azure/active-d
 
 ### ISV wants to have different credentials for the same data source
 
-A data source can have a single set of credentials for one master user. If you need to use different credentials, create more master users. Then, assign the different credentials to each of the master users' contexts, and embed using the Azure AD token of that user.
+A data source can have a single set of credentials for one master user. If you need to use different credentials, create more master users. Then, assign the different credentials to each of the master users' contexts, and embed using the Microsoft Entra token of that user.
 
 ## Troubleshoot your embedded application with the IError object
 
@@ -277,7 +279,7 @@ To rule out issues with your application, verify that the Power BI item can be v
 
 ### Verify that your access token didn't expire
 
-For security purposes, access tokens (an Azure AD token or an embed token) have a limited lifetime. You should constantly monitor your access token and refresh it if needed. For more information, see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
+For security purposes, access tokens (a Microsoft Entra token or an embed token) have a limited lifetime. You should constantly monitor your access token and refresh it if needed. For more information, see [Refresh the access token](/javascript/api/overview/powerbi/refresh-token).
 
 ## Performance
 
@@ -293,7 +295,7 @@ Verify that you have all the proper prerequisites before using the Embedding set
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+* You need to have your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md) setup.
 * You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 
 ### Common Issues
@@ -326,7 +328,7 @@ If you're working with the **Embed for your customers** experience, save and unz
 AADSTS50079: The user is required to use multi-factor authentication.
 ```
 
- You need to use an Azure AD account that doesn't have MFA enabled.
+ You need to use a Microsoft Entra account that doesn't have MFA enabled.
 
 #### Using the Embed for your organization sample application
 
@@ -340,7 +342,7 @@ If you're working with the **Embed for your organization** experience, save and 
 
  This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, use `https://localhost:13526/` as the redirect URL.
 
- If you want to edit the registered application, [update the Azure AD-registered application](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
+ If you want to edit the registered application, [update the Microsoft Entra registered application](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
 
  If you want to edit your Power BI user profile or data, learn how to edit your [Power BI data](../../fundamentals/service-basic-concepts.md).
 
@@ -350,7 +352,7 @@ If you're working with the **Embed for your organization** experience, save and 
 AADSTS50079: The user is required to use multi-factor authentication.
 ```
 
- You need to use an Azure AD account that doesn't have MFA enabled.
+ You need to use a Microsoft Entra account that doesn't have MFA enabled.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.yml).
 
