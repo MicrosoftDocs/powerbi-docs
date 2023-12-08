@@ -50,22 +50,21 @@ You can customize many elements of each visualization. The options available dep
 * Position
 * Zoom
 
-And more.
-
 > [!NOTE] 
-> You won’t see all these elements with each visualization type. The visualization you select will affect which customizations are available; for example, you won’t see an X-axis if you have a pie chart selected because pie charts don’t have an X-axis.
+> You don’t see all these elements with each visualization type. The visualization you select affects which customizations are available. For example, you don’t see an X-axis if you have a pie chart selected because pie charts don’t have an X-axis.
 
 Also note that if you don’t have any visualization selected, **Filters** appears in place of the icons, which lets you apply filters  to all visualizations on the page.
 
 The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible number of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
-* [Change colors used in the visual](#work-with-colors)
+* [Change colors used in the visual](#change-colors-in-a-visual)
 * [Apply a style](#apply-a-style-to-a-table)
 * [Change axis properties](#change-axis-properties)
 * [Add data labels](#add-data-labels)
+* [Customize data labels](#customize-data-labels)
 * [Add total labels](#add-total-labels)
 
-## Work with colors
+## Change colors in a visual
 
 Let’s walk through the steps necessary to customize colors on a visualization.
 
