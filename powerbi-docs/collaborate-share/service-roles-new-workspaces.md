@@ -89,10 +89,10 @@ Publishing reports to the workspace enforces existing licensing rules. If you tr
 
 ### Guest users
 
-[Azure AD B2B Guest users](../enterprise/service-admin-azure-ad-b2b.md) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
+[Microsoft Entra B2B Guest users](../enterprise/service-admin-azure-ad-b2b.md) who have been assigned a workspace role or granted specific item permissions, will be able to perform the operations permitted by those roles or permissions.
 
 > [!NOTE]
-> Guest users who have been assigned workspace roles or specific item permissions will continue to have those roles and/or permissions, even if the **[Allow Azure Active Directory guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)** tenant setting is disabled.
+> Guest users who have been assigned workspace roles or specific item permissions will continue to have those roles and/or permissions, even if the **[Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)** tenant setting is disabled.
 
 ## Considerations and limitations
 
@@ -105,4 +105,3 @@ A limitation to be aware of:
 - [Create workspaces in Power BI](service-create-the-new-workspaces.md)
 - [Give users access to workspaces](service-give-access-new-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

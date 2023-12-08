@@ -53,7 +53,7 @@ The number of refreshes is limited per the general limitations for API-based ref
 
 ## Authentication
 
-All calls must authenticate with a valid Azure Active Directory (Azure AD) OAuth 2 token in the Authorization header. The token must meet the following requirements:
+All calls must authenticate with a valid Microsoft Entra ID OAuth 2 token in the Authorization header. The token must meet the following requirements:
 
 - Be either a user token or an application service principal.
 - Have the audience correctly set to `https://api.powerbi.com`.
