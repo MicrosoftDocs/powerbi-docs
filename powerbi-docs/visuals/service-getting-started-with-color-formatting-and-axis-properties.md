@@ -139,13 +139,15 @@ Here is the *after* picture.
 
 :::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-data-labels.png" alt-text="Screenshot showing Area chart formatted.":::
 
+### Add and format data labels
+
 1. Select the visualization to make it active, and open the Formatting tab. 
 1. Select **Data labels** and turn them **On**. 
 1. Make these formatting changes: 
 
-  1. Increase the font size to **12**.
-  1. Change the font family to **Arial Black**.
-  1. Turn **Show background** to **On** and **Background color** to white with a **Transparency** of 5%.
+    1. Increase the font size to **12**.
+    1. Change the font family to **Arial Black**.
+    1. Turn **Show background** to **On** and **Background color** to white with a **Transparency** of 5%.
 
 Depending on the visual and its size, data labels might not display.  If your data labels don't display, try making the visual larger or viewing it in full screen mode. 
 
