@@ -15,7 +15,7 @@ ms.date: 11/09/2023
 This article explains how an [ISV](pbi-glossary.md#independent-software-vendor-isv) or any other Power BI Embedded app owner with many customers can use service principal profiles to map and manage each customer's data as part of their Power BI *embed for your customers* solution. Service principal profiles allow the ISV to build scalable applications that enable better customer data isolation and establish [tighter security](#data-separation) boundaries between customers. This article discusses the advantages and the limitations of this solution.
 
 > [!NOTE]
-> The word *tenant* in Power BI can sometimes refer to an Azure AD tenant. In this article, however, we use the term *multitenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. For example, the Power BI app builder can allocate a separate workspace for each of its customers (or tenants) as we show below. These customers are not necessarily Azure AD tenants, so don’t confuse the term *multitenant application* that we use here, with the [Azure AD multitenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
+> The word *tenant* in Power BI can sometimes refer to a Microsoft Entra tenant. In this article, however, we use the term *multitenancy* to describe a solution where a single instance of a software application serves multiple customers or organizations (tenants) requiring physical and logical separation of data. For example, the Power BI app builder can allocate a separate workspace for each of its customers (or tenants) as we show below. These customers are not necessarily Microsoft Entra tenants, so don’t confuse the term *multitenant application* that we use here, with the [Microsoft Entra multitenant application](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
 A *service principal profile* is a profile created by a [service principal](./embed-service-principal.md). The ISV app calls the Power BI APIs using a service principal profile, as explained in this article.
 
@@ -79,9 +79,9 @@ The following points are important to understand when using profiles:
 
 * A profile belongs to the service principal that created it, and can only be used by that service principal.
 * A profile owner can't be changed after creation.
-* A profile isn't a standalone identity. It needs the service principal [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
+* A profile isn't a standalone identity. It needs the service principal [Microsoft Entra ID](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
 
-ISV apps call Power BI REST APIs by providing the service principal Azure AD token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
+ISV apps call Power BI REST APIs by providing the service principal Microsoft Entra token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
 
 ```rest
   GET https://api.powerbi.com/v1.0/myorg/groups HTTP/1.1
