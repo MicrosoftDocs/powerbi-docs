@@ -29,21 +29,24 @@ Prototyping often occurs naturally during self-service BI development efforts. O
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support prototyping activities. The focus is on using Power BI Desktop during an interactive prototyping session. Focus can also be on sharing in the Power BI service when additional feedback is needed from subject matter experts.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-inline.png" alt-text="Image shows a diagram of prototyping and sharing, which is about rapid exploration of user requirements. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-inline.svg" alt-text="Diagram shows prototyping and sharing, which is about rapidly exploring prototypes or defining user requirements. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-prototyping-and-sharing/usage-scenario-prototyping-and-sharing-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#prototyping-and-sharing if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | Power BI content creators develop BI solutions using Power BI Desktop. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development and report creation are done in Power BI Desktop. The purpose is to help team members understand the meaning and significance of data by placing it in a visual context. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | Subject matter experts provide feedback during an interactive prototyping session. Based on feedback from the subject matter experts (and other team members), content creators make iterative improvements directly to the BI solution. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | If desired, content creators publish their Power BI Desktop file (.pbix) to the [Power BI service](../fundamentals/power-bi-service-overview.md). Publication of prototyping solutions to the Power BI service is optional. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | The content is published to a non-production [workspace](../collaborate-share/service-new-workspaces.md). Its primary purpose is to provide a development area that enables review by team members. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | An individual report is shared with a colleague to provide read-only permissions to the report (and its underlying data). The [sharing operation](../collaborate-share/service-share-dashboards.md) can be done with a sharing link or direct access sharing. Sharing can be advantageous for a prototyping solution to provide temporary access during the feedback process. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. A development workspace (containing non-production and prototyping solutions) is usually governed to a much lesser extent than a production workspace. |
+| ![Item 1.](media/common/legend-number-01-fabric.svg) | Power BI content creators develop BI solutions using Power BI Desktop. |
+| ![Item 2.](media/common/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
+| ![Item 3.](media/common/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop. The purpose is to help team members understand the meaning and significance of data by placing it in a visual context. |
+| ![Item 4.](media/common/legend-number-04-fabric.svg) | Subject matter experts provide feedback during an interactive prototyping session. Based on feedback from the subject matter experts (and other team members), content creators make iterative improvements directly to the BI solution. |
+| ![Item 5.](media/common/legend-number-05-fabric.svg) | If desired, content creators publish their Power BI Desktop file (.pbix) to the [Power BI service](../fundamentals/power-bi-service-overview.md). Publication of prototyping solutions to the Power BI service is optional. |
+| ![Item 6.](media/common/legend-number-06-fabric.svg) | The content is published to a non-production [workspace](../collaborate-share/service-new-workspaces.md). Its primary purpose is to provide a development area that enables review by team members. |
+| ![Item 7.](media/common/legend-number-07-fabric.svg) | An individual report is shared with a colleague to provide read-only permissions to the report (and its underlying data). The [sharing operation](../collaborate-share/service-share-dashboards.md) can be done with a sharing link or direct access sharing. Sharing can be advantageous for a prototyping solution to provide temporary access during the feedback process. |
+| ![Item 8.](media/common/legend-number-08-fabric.svg) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
+| ![Item 9.](media/common/legend-number-09-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. A development workspace (containing non-production and prototyping solutions) is usually governed to a much lesser extent than a production workspace. |
 
 ## Key points
 

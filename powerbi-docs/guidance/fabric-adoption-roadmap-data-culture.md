@@ -30,7 +30,7 @@ Within an organization, certain business units or teams are likely to have their
 
 The following circular diagram conveys the interrelated aspects that influence your data culture:
 
-:::image type="content" source="media/fabric-adoption-roadmap-data-culture/data-culture.png" alt-text="Diagram shows various relationships and influences in a data culture." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-data-culture/data-culture.svg" alt-text="Diagram shows various relationships and influences in a data culture, which are described below." border="false":::
 
 The diagram depicts the somewhat ambiguous relationships among the following items:
 

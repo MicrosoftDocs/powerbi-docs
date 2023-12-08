@@ -61,7 +61,7 @@ A co-development project forms a partnership between the business unit and the C
 
 Time involvement from the COE reduces over time until the business unit gains expertise and becomes self-reliant.
 
-:::image type="content" source="media/fabric-adoption-roadmap-mentoring-and-user-enablement/center-of-excellence-mentoring.png" alt-text="Diagram shows expertise growing in the business unit as Center of Excellence involvement decreases over time, which is described below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-mentoring-and-user-enablement/center-of-excellence-mentoring.svg" alt-text="Diagram shows expertise growing in the business unit as Center of Excellence involvement decreases over time, which is described below." border="false":::
 
 The active involvement shown in the above diagram changes over time, as follows:
 

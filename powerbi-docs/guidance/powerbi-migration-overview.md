@@ -32,14 +32,14 @@ There are two assumptions: Your organization has a legacy BI platform currently 
 
 The following diagram shows four high-level phases for deploying Power BI in your organization.
 
-:::image type="content" source="media/powerbi-migration-overview/migrate-to-powerbi-high-level-overview.png" alt-text="Image showing the four high-level phases, which are described in the following table.":::
+:::image type="content" source="media/powerbi-migration-overview/migrate-to-power-bi-high-level-overview.svg" alt-text="Diagram shows the four high-level phases, which are described in the following table." border="false":::
 
 |Phase|Description|
 |--------|-----------|
-|![Phase 1.](media/common/icon-01-red-30x30.png)|**Set up and evaluate Power BI.** The first phase involves establishing the initial Power BI architecture. Preliminary deployment and governance planning are handled at this point, as well as Power BI evaluations including return on investment and/or cost benefit analysis.|
-|![Phase 2.](media/common/icon-02-red-30x30.png)|**Create new solutions quickly in Power BI.** In the second phase, self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for the selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3.|
-|![Phase 3.](media/common/icon-03-red-30x30.png)|**Migrate BI assets from legacy platform to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section.|
-|![Phase 4.](media/common/icon-04-red-30x30.png)|**Adopt, govern, and monitor Power BI.** The final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
+|![Phase 1.](media/common/legend-number-01-fabric.svg)|**Set up and evaluate Power BI.** The first phase involves establishing the initial Power BI architecture. Preliminary deployment and governance planning are handled at this point, as well as Power BI evaluations including return on investment and/or cost benefit analysis.|
+|![Phase 2.](media/common/legend-number-02-fabric.svg)|**Create new solutions quickly in Power BI.** In the second phase, self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for the selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3.|
+|![Phase 3.](media/common/legend-number-03-fabric.svg)|**Migrate BI assets from legacy platform to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section.|
+|![Phase 4.](media/common/legend-number-04-fabric.svg)|**Adopt, govern, and monitor Power BI.** The final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
 
 > [!IMPORTANT]
 > A formal migration to Power BI almost always occurs in parallel with the development of a new Power BI solution. *Power BI solution* is generic term that encompasses the use of both data and reports. A single Power BI Desktop (pbix) file could contain a data model or report, or both. [Separating the data model from reports](../guidance/report-separate-from-model.md) is encouraged for data reusability purposes, but isn't required.
@@ -50,7 +50,7 @@ The following diagram shows four high-level phases for deploying Power BI in you
 
 Phase 3 of the diagram addresses migration to Power BI. During this phase, there are five common stages.
 
-:::image type="content" source="media/powerbi-migration-overview/migrate-to-powerbi-five-stages.png" alt-text="Image showing the stages of a Power BI migration, which are described next.":::
+:::image type="content" source="media/powerbi-migration-overview/migrate-to-power-bi.svg" alt-text="Diagram shows the stages of a Power BI migration, which are described below." border="false":::
 
 The following stages shown in the previous diagram are:
 

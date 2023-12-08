@@ -27,26 +27,29 @@ When teams grow larger, it becomes impractical to use a workspace effectively fo
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support departmental BI. The primary focus is on using a Power BI app for content distribution to a large consumer audience.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-inline.png" alt-text="Image shows a diagram of departmental BI, which is about business unit content distribution. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-inline.svg" alt-text="Diagram shows departmental BI, which is about business unit content distribution. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-departmental-bi/usage-scenario-departmental-bi-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#departmental-bi) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | Power BI content creators develop BI solutions using Power BI Desktop. In a departmental BI scenario, it's common for creators to work within a decentralized team, department, or business unit. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the Power Query Editor. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development and report creation are done in Power BI Desktop. In a departmental BI solution, the purpose is to help colleagues understand the meaning and significance of data by placing it in a visual context. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, content creators publish their Power BI Desktop file (.pbix) to the Power BI service. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The content is published to a workspace. Its primary purpose is to provide a collaboration area for people who are responsible for creating, managing, and validating content. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | Some, or all, reports and dashboards are published as a Power BI app. The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Power BI app users are assigned read-only permissions. App permissions are managed separately from the workspace. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | The Power BI mobile apps are also available for viewing apps and workspace content. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/service-collaborate-microsoft-teams.md). |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | Users assigned to the administrator, member, or contributor [workspace roles](../collaborate-share/service-roles-new-workspaces.md) can publish and manage workspace content. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | Scheduled data refresh is set up in the Power BI service to keep imported data—in semantic models or dataflows—up to date. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | Other self-service content creators can author new reports using an existing semantic model. They can choose to use Power BI Desktop, Excel, or Power BI Report Builder (not depicted in the scenario diagram). The [reuse of existing semantic models](../connect-data/desktop-report-lifecycle-datasets.md) in this manner is highly encouraged. |
-| ![Item 14.](media/common/icon-14-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Departmental BI solutions could be subject to more governance requirements than [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) solutions, but fewer requirements than [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) solutions. |
+| ![Item 1.](media/common/legend-number-01-fabric.svg) | Power BI content creators develop BI solutions using Power BI Desktop. In a departmental BI scenario, it's common for creators to work within a decentralized team, department, or business unit. |
+| ![Item 2.](media/common/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the Power Query Editor. |
+| ![Item 3.](media/common/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop. In a departmental BI solution, the purpose is to help colleagues understand the meaning and significance of data by placing it in a visual context. |
+| ![Item 4.](media/common/legend-number-04-fabric.svg) | When ready, content creators publish their Power BI Desktop file (.pbix) to the Power BI service. |
+| ![Item 5.](media/common/legend-number-05-fabric.svg) | The content is published to a workspace. Its primary purpose is to provide a collaboration area for people who are responsible for creating, managing, and validating content. |
+| ![Item 6.](media/common/legend-number-06-fabric.svg) | Some, or all, reports and dashboards are published as a Power BI app. The purpose of the app is to provide a set of related content for consumers to view in a user-friendly way. |
+| ![Item 7.](media/common/legend-number-07-fabric.svg) | Power BI app users are assigned read-only permissions. App permissions are managed separately from the workspace. |
+| ![Item 8.](media/common/legend-number-08-fabric.svg) | The Power BI mobile apps are also available for viewing apps and workspace content. |
+| ![Item 9.](media/common/legend-number-09-fabric.svg) | Users who frequently work in Microsoft Teams might find it convenient to manage or [view Power BI content directly in Teams](../collaborate-share/service-collaborate-microsoft-teams.md). |
+| ![Item 10.](media/common/legend-number-10-fabric.svg) | Users assigned to the administrator, member, or contributor [workspace roles](../collaborate-share/service-roles-new-workspaces.md) can publish and manage workspace content. |
+| ![Item 11.](media/common/legend-number-11-fabric.svg) | Scheduled data refresh is set up in the Power BI service to keep imported data—in semantic models or dataflows—up to date. |
+| ![Item 12.](media/common/legend-number-12-fabric.svg) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
+| ![Item 13.](media/common/legend-number-13-fabric.svg) | Other self-service content creators can author new reports using an existing semantic model. They can choose to use Power BI Desktop, Excel, or Power BI Report Builder (not depicted in the scenario diagram). The [reuse of existing semantic models](../connect-data/desktop-report-lifecycle-datasets.md) in this manner is highly encouraged. |
+| ![Item 14.](media/common/legend-number-14-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. Departmental BI solutions could be subject to more governance requirements than [team BI](powerbi-implementation-planning-usage-scenario-team-bi.md) solutions, but fewer requirements than [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) solutions. |
 
 ## Key points
 

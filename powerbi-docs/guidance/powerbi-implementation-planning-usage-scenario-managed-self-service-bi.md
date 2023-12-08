@@ -27,28 +27,31 @@ Usually, there are many more report creators than semantic model ([previously kn
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support managed self-service BI. The primary objective is for many report creators to reuse centralized shared semantic models. To accomplish that, this scenario focuses on decoupling the model development process from the report creation process.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-inline.png" alt-text="Image shows a diagram of managed self-service BI, which is about reuse of centralized shared semantic models by other report creators. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-inline.svg" alt-text="Diagram shows managed self-service BI, which is about centralizing semantic models for reuse by other report creators. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-managed-self-service-bi/usage-scenario-managed-self-service-bi-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#customizable-managed-self-service-bi) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | Semantic model creators develop models using Power BI Desktop. For semantic models that are intended for reuse, it's common (but not required) for creators to belong to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | Power BI Desktop connects to data from one or more data sources. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model because it will be used as a data source by many self-service report creators. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, semantic model creators publish their Power BI Desktop file (.pbix) *that contains only a model* to the Power BI service. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The semantic model is published to a workspace dedicated to storing and securing shared semantic models. Since the semantic model is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The semantic model is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between Power BI items, including reports connected to the semantic model. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | [Semantic model discovery in the data hub](../connect-data/service-data-hub.md) is enabled because the semantic model is marked as discoverable. Discoverability allows the existence of a semantic model to be visible in the data hub by other Power BI content creators who are looking for data. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Report creators use the data hub in the Power BI service to search for discoverable semantic models. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | If report creators don't have permission, they can request [Build permission](../connect-data/service-datasets-build-permissions.md) on the semantic model. This starts a workflow to request Build permission from an authorized approver. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | Report creators create new reports using Power BI Desktop. Reports use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to a shared semantic model. |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | Report creators develop reports in Power BI Desktop. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | When ready, report creators publish their Power BI Desktop file to the Power BI service. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | Reports are published to a workspace dedicated to storing and securing reports and dashboards. |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | Published reports remain connected to the shared semantic models that are stored in a different workspace. Any changes to the shared semantic model affect all reports connected to it. |
-| ![Item 14.](media/common/icon-14-red-30x30.png) | Other self-service report creators can author new reports using the existing shared semantic model. Report creators can choose to use Power BI Desktop, Power BI Report Builder, or Excel. |
-| ![Item 15.](media/common/icon-15-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
-| ![Item 16.](media/common/icon-16-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
+| ![Item 1.](media/common/legend-number-01-fabric.svg) | Semantic model creators develop models using Power BI Desktop. For semantic models that are intended for reuse, it's common (but not required) for creators to belong to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
+| ![Item 2.](media/common/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. |
+| ![Item 3.](media/common/legend-number-03-fabric.svg) | Data model development is done in Power BI Desktop. Additional effort is made to create a well-designed and user-friendly model because it will be used as a data source by many self-service report creators. |
+| ![Item 4.](media/common/legend-number-04-fabric.svg) | When ready, semantic model creators publish their Power BI Desktop file (.pbix) *that contains only a model* to the Power BI service. |
+| ![Item 5.](media/common/legend-number-05-fabric.svg) | The semantic model is published to a workspace dedicated to storing and securing shared semantic models. Since the semantic model is intended for reuse, it's [endorsed](../collaborate-share/service-endorse-content.md) (certified or promoted, as appropriate). The semantic model is also marked as [discoverable](../collaborate-share/service-discovery.md) to further encourage its reuse. The [lineage view](../collaborate-share/service-data-lineage.md) in the Power BI service can be used to track dependencies that exist between Power BI items, including reports connected to the semantic model. |
+| ![Item 6.](media/common/legend-number-06-fabric.svg) | [Semantic model discovery in the data hub](../connect-data/service-data-hub.md) is enabled because the semantic model is marked as discoverable. Discoverability allows the existence of a semantic model to be visible in the data hub by other Power BI content creators who are looking for data. |
+| ![Item 7.](media/common/legend-number-07-fabric.svg) | Report creators use the data hub in the Power BI service to search for discoverable semantic models. |
+| ![Item 8.](media/common/legend-number-08-fabric.svg) | If report creators don't have permission, they can request [Build permission](../connect-data/service-datasets-build-permissions.md) on the semantic model. This starts a workflow to request Build permission from an authorized approver. |
+| ![Item 9.](media/common/legend-number-09-fabric.svg) | Report creators create new reports using Power BI Desktop. Reports use a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to a shared semantic model. |
+| ![Item 10.](media/common/legend-number-10-fabric.svg) | Report creators develop reports in Power BI Desktop. |
+| ![Item 11.](media/common/legend-number-11-fabric.svg) | When ready, report creators publish their Power BI Desktop file to the Power BI service. |
+| ![Item 12.](media/common/legend-number-12-fabric.svg) | Reports are published to a workspace dedicated to storing and securing reports and dashboards. |
+| ![Item 13.](media/common/legend-number-13-fabric.svg) | Published reports remain connected to the shared semantic models that are stored in a different workspace. Any changes to the shared semantic model affect all reports connected to it. |
+| ![Item 14.](media/common/legend-number-14-fabric.svg) | Other self-service report creators can author new reports using the existing shared semantic model. Report creators can choose to use Power BI Desktop, Power BI Report Builder, or Excel. |
+| ![Item 15.](media/common/legend-number-15-fabric.svg) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. |
+| ![Item 16.](media/common/legend-number-16-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. |
 
 ## Key points
 

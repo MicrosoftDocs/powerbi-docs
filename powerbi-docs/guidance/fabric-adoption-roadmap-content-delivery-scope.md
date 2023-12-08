@@ -25,7 +25,7 @@ The related [content ownership and management](fabric-adoption-roadmap-content-o
 
 The following diagram focuses on the number of _target consumers_ who will consume the content.
 
-:::image type="content" source="media/fabric-adoption-roadmap-content-delivery-scope/target-consumers.png" alt-text="Diagram shows the four scopes of target consumers, which are described next." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-content-delivery-scope/target-consumers.svg" alt-text="Diagram shows the four scopes of target consumers, which are described next." border="false":::
 
 The four scopes of content delivery shown in the above diagram include:
 
@@ -36,7 +36,7 @@ The four scopes of content delivery shown in the above diagram include:
 
 Contrast the above four scopes of content delivery with the following diagram, which has an inverse relationship with respect to the number of _content creators_.
 
-:::image type="content" source="media/fabric-adoption-roadmap-content-delivery-scope/content-creators.png" alt-text="Diagram shows the four scopes of content creators, which are described next." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-content-delivery-scope/content-creators.svg" alt-text="Diagram shows the four scopes of content creators, which are described next." border="false":::
 
 The four scopes of content creators shown in the above diagram include:
 
