@@ -81,7 +81,7 @@ Any content the user can see in the Power BI service can be embedded in a custom
 
 ### Authentication
 
-The authentication flow is _interactive authentication_ with Microsoft Entra ID. Interactive authentication means that the app user will be challenged to authenticate. When authenticated, Microsoft Entra returns an access token. It's the responsibility of the custom application to cache the access token so that it can be used to make Power BI REST API calls and to embed content inside an `iframe` HTML element. Those calls can retrieve metadata about Power BI content on behalf of the app user, including the properties required to embed it in the custom application.
+The authentication flow is _interactive authentication_ with Microsoft Entra ID. Interactive authentication means that the app user will be challenged to authenticate. When authenticated, Microsoft Entra ID returns an access token. It's the responsibility of the custom application to cache the access token so that it can be used to make Power BI REST API calls and to embed content inside an `iframe` HTML element. Those calls can retrieve metadata about Power BI content on behalf of the app user, including the properties required to embed it in the custom application.
 
 ### Licensing
 

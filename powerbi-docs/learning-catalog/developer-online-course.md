@@ -27,7 +27,7 @@ Familiarity with Power BI will be beneficial, but not essential. We'll introduce
 After you complete the course, you'll know how to:
 
 > [!div class="checklist"]
-> - Acquire access using Azure AD apps and tokens
+> - Acquire access using Microsoft Entra apps and tokens
 > - Work with the Power BI REST API
 > - Embed Power BI content in your apps
 > - Integrate Power BI content in your apps using the Power BI JavaScript API

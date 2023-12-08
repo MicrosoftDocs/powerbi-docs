@@ -317,7 +317,7 @@ Administrators can be help by following best practices themselves. Administrator
 
 External users—such as partners, customers, vendors, and consultants—are a common occurrence for some organizations, and rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Microsoft Entra settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
 ### Information protection and data loss prevention
 
@@ -470,7 +470,7 @@ Use questions like those found below to assess system oversight.
 - Are there atypical administration settings enabled or disabled? For example, is the entire organization allowed to publish to web (we strongly advise restricting this feature).
 - Do administration settings and policies align with, or inhibit, business the way user work?
 - Is there a process in place to critically appraise new settings and decide how to set them? Alternatively, are only the most restrictive settings set as a precaution?
-- Are Microsoft Entra ID security groups used to manage who can do what?
+- Are Microsoft Entra security groups used to manage who can do what?
 - Do central teams have visibility of effective [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) tools?
 - Do monitoring solutions depict information about the data assets, user activities, or both?
 - Are auditing and monitoring tools actionable? Are there clear thresholds and actions set, or do monitoring reports simply describe what's in the data estate?
