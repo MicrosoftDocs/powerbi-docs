@@ -96,7 +96,7 @@
         href: connect-adfs-wap-report-server.md
       - name: "Configure a report server with Azure Application Proxy"
         href: azure-application-proxy.md
-      - name: "Remote mobile access with Azure AD"
+      - name: "Remote mobile access with Microsoft Entra ID"
         href: /azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
         href: excel-oos.md
