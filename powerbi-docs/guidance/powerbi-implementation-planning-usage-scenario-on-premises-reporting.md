@@ -31,19 +31,19 @@ The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | A Power BI content creator builds a BI solution. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | [Power BI Desktop for Report Server](../report-server/install-powerbi-desktop.md) connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop for Report Server. It generates a specific type of Power BI Desktop file (.pbix) that can be published to Power BI Report Server. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | The report creator can also build paginated reports using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md). This tool generates a Report Definition Language file (.rdl) that can be published to Power BI Report Server. |
-| ![Item 5.](media/common/legend-number-05-fabric.svg) | The report creator can also develop reports using Excel. The Excel workbook file (.xlsx) can be published to Power BI Report Server. |
-| ![Item 6.](media/common/legend-number-06-fabric.svg) | When ready, the content creator publishes their file to Power BI Report Server. |
-| ![Item 7.](media/common/legend-number-07-fabric.svg) | Content is published to a [folder](../report-server/getting-around.md) in Power BI Report Server. |
-| ![Item 8.](media/common/legend-number-08-fabric.svg) | Report consumers view reports published to Power BI Report Server. |
-| ![Item 9.](media/common/legend-number-09-fabric.svg) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
-| ![Item 10.](media/common/legend-number-10-fabric.svg) | Server administrators manage the Windows server infrastructure. |
-| ![Item 11.](media/common/legend-number-11-fabric.svg) | Database administrators manage Power BI Report Server, including the Report Server databases, and SQL Server Agent. |
-| ![Item 12.](media/common/legend-number-12-fabric.svg) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md)—[previously known as datasets](../connect-data/service-datasets-rename.md). |
-| ![Item 13.](media/common/legend-number-13-fabric.svg) | Administrators oversee and monitor activity in Power BI Report Server. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | A Power BI content creator builds a BI solution. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | [Power BI Desktop for Report Server](../report-server/install-powerbi-desktop.md) connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop for Report Server. It generates a specific type of Power BI Desktop file (.pbix) that can be published to Power BI Report Server. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | The report creator can also build paginated reports using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md). This tool generates a Report Definition Language file (.rdl) that can be published to Power BI Report Server. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The report creator can also develop reports using Excel. The Excel workbook file (.xlsx) can be published to Power BI Report Server. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | When ready, the content creator publishes their file to Power BI Report Server. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Content is published to a [folder](../report-server/getting-around.md) in Power BI Report Server. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Report consumers view reports published to Power BI Report Server. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Server administrators manage the Windows server infrastructure. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Database administrators manage Power BI Report Server, including the report server databases, and SQL Server Agent. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md)—[previously known as datasets](../connect-data/service-datasets-rename.md). |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Administrators oversee and monitor activity in Power BI Report Server. |
 
 ## Key points
 

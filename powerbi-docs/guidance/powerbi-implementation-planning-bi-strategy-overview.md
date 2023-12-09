@@ -51,15 +51,15 @@ The diagram depicts the following concepts.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | The business strategy describes how the organization will achieve its business goals. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | The business strategy directly informs the BI strategy. The primary purpose of the BI strategy is to support—and potentially inform—the business strategy. |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | The BI strategy is a plan to implement, use, and manage data and analytics. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | BI goals define how BI will support the business goals. BI goals describe the desired future state of the BI environment. |
-| ![Item 5.](media/common/legend-number-05-fabric.svg) | To make progress toward your BI goals, you identify and describe BI objectives that you want to achieve in a specific time period. These objectives describe paths to your desired future state. |
-| ![Item 6.](media/common/legend-number-06-fabric.svg) | To achieve your BI objectives, you plan and implement BI solutions and initiatives. A solution might be developed by a central IT or BI team, or by a member of the community of practice as a self-service solution. |
-| ![Item 7.](media/common/legend-number-07-fabric.svg) | The purpose of BI solutions and initiatives is to enable business users to achieve their objectives. |
-| ![Item 8.](media/common/legend-number-08-fabric.svg) | Business users use BI solutions and initiatives to make informed decisions that lead to effective actions. |
-| ![Item 9.](media/common/legend-number-09-fabric.svg) | Business users follow through on the business strategy with their achieved results. They achieve these results by taking the right actions at the right time, which is made possible in part by an effective BI strategy. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The business strategy describes how the organization will achieve its business goals. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The business strategy directly informs the BI strategy. The primary purpose of the BI strategy is to support—and potentially inform—the business strategy. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The BI strategy is a plan to implement, use, and manage data and analytics. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | BI goals define how BI will support the business goals. BI goals describe the desired future state of the BI environment. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | To make progress toward your BI goals, you identify and describe BI objectives that you want to achieve in a specific time period. These objectives describe paths to your desired future state. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | To achieve your BI objectives, you plan and implement BI solutions and initiatives. A solution might be developed by a central IT or BI team, or by a member of the community of practice as a self-service solution. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The purpose of BI solutions and initiatives is to enable business users to achieve their objectives. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Business users use BI solutions and initiatives to make informed decisions that lead to effective actions. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Business users follow through on the business strategy with their achieved results. They achieve these results by taking the right actions at the right time, which is made possible in part by an effective BI strategy. |
 
 > [!NOTE]
 > In this series, _goals_ are high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets to help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
@@ -86,10 +86,10 @@ The diagram depicts the following concepts.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | A data strategy describes the goals and priorities for the wider use and management of data in an organization. A data strategy encompasses more than only BI. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | The BI strategy is a subset of a data strategy. |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | [Data culture](fabric-adoption-roadmap-data-culture.md#data-culture-vision) is important in both a BI strategy and a data strategy. Different data culture areas describe a vision for behaviors, values, and processes that enable people to work effectively with data. An example of a data culture area is data literacy. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | Technology is important in both a BI strategy and a data strategy. Different technical areas support the business data needs and use cases. An example of a technical area is data visualization. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | A data strategy describes the goals and priorities for the wider use and management of data in an organization. A data strategy encompasses more than only BI. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The BI strategy is a subset of a data strategy. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | [Data culture](fabric-adoption-roadmap-data-culture.md#data-culture-vision) is important in both a BI strategy and a data strategy. Different data culture areas describe a vision for behaviors, values, and processes that enable people to work effectively with data. An example of a data culture area is data literacy. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Technology is important in both a BI strategy and a data strategy. Different technical areas support the business data needs and use cases. An example of a technical area is data visualization. |
 
 A BI strategy can encompass many data culture and technical areas. However, when planning your BI strategy, you should be cautious not to attempt to address too many of these areas at first. A successful BI strategy starts small. It focuses on a few prioritized areas and broadens scope over time, ensuring consistent progress. Later, as you experience sustainable success with your BI strategy, it can incrementally evolve to encompass more areas.
 
@@ -108,9 +108,9 @@ The diagram depicts the following three planning levels.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | **Strategic planning:** You begin by defining your strategic BI goals and priorities, and how they support your business strategy. These BI goals are high-level descriptions of what you want to achieve and why. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | **Tactical planning:** You then identify your specific BI objectives. These objectives are specific, measurable, short-term actions that describe how you'll make progress toward your long-term, strategic BI goals. |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | **Solution planning:** The BI solutions and initiatives that you create should be a direct result of tactical planning. These solutions enable you to achieve your BI objectives and make progress toward your BI goals. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **Strategic planning:** You begin by defining your strategic BI goals and priorities, and how they support your business strategy. These BI goals are high-level descriptions of what you want to achieve and why. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **Tactical planning:** You then identify your specific BI objectives. These objectives are specific, measurable, short-term actions that describe how you'll make progress toward your long-term, strategic BI goals. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | **Solution planning:** The BI solutions and initiatives that you create should be a direct result of tactical planning. These solutions enable you to achieve your BI objectives and make progress toward your BI goals. |
 
 > [!IMPORTANT]
 > Defining a BI strategy requires prioritization, planning, and active involvement from many teams and individuals across your organization.
@@ -186,10 +186,10 @@ The diagram depicts how you can iteratively structure your BI strategy planning 
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | **Avoid detailed, long-term planning:** Long-term, detailed plans can become outdated as technology and business priorities change. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | **Strategic planning (every 12-18 months):** This high-level planning focuses on aligning business goals and BI goals. It's valuable to align this strategic planning with other annualized business processes, like budgeting periods. |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | **Tactical planning (every 1-3 months):** Monthly or quarterly planning sessions focus on evaluating and adjusting existing tactical plans. These sessions assess existing priorities and tasks, which should take business feedback and changes in business or technology into account. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | **Continuous improvement (every month):** Monthly sessions focus on feedback and urgent changes that impact ongoing planning. If necessary, decision makers can make decisions, take corrective action, or influence ongoing planning. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **Avoid detailed, long-term planning:** Long-term, detailed plans can become outdated as technology and business priorities change. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **Strategic planning (every 12-18 months):** This high-level planning focuses on aligning business goals and BI goals. It's valuable to align this strategic planning with other annualized business processes, like budgeting periods. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | **Tactical planning (every 1-3 months):** Monthly or quarterly planning sessions focus on evaluating and adjusting existing tactical plans. These sessions assess existing priorities and tasks, which should take business feedback and changes in business or technology into account. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | **Continuous improvement (every month):** Monthly sessions focus on feedback and urgent changes that impact ongoing planning. If necessary, decision makers can make decisions, take corrective action, or influence ongoing planning. |
 
 ## How to plan a BI strategy
 

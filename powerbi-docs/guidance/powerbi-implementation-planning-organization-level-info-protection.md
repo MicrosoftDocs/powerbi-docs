@@ -39,10 +39,10 @@ The above diagram depicts the following items:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | Sensitivity labels are set up in the Microsoft Purview compliance portal. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | Sensitivity labels can be applied to many types of items and files, such as Microsoft Office files, items in the Power BI service, Power BI Desktop files, and emails. |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | Sensitivity labels can be applied for Teams sites, SharePoint sites, and Microsoft 365 groups. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | Sensitivity labels can be applied to schematized data assets that are registered in the Microsoft Purview Data Map. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Sensitivity labels are set up in the Microsoft Purview compliance portal. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Sensitivity labels can be applied to many types of items and files, such as Microsoft Office files, items in the Power BI service, Power BI Desktop files, and emails. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Sensitivity labels can be applied for Teams sites, SharePoint sites, and Microsoft 365 groups. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Sensitivity labels can be applied to schematized data assets that are registered in the Microsoft Purview Data Map. |
 
 In the diagram, notice that items in the Power BI service, and Power BI Desktop files, are just some of many resources that allow assigning sensitivity labels. Sensitivity labels are defined centrally in Microsoft Purview Information Protection. Once defined, the same labels are used by all supported applications throughout the organization. It's not possible to define labels for use in only one application, such as Power BI. Therefore, your planning process needs to consider a broader set of usage scenarios to define labels that can be used in multiple contexts. Because information protection is intended to be used consistently across applications and services, it's critical to begin with assessing what sensitivity labels are currently in place.
 

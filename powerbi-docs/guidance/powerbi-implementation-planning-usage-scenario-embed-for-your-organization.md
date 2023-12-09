@@ -32,14 +32,14 @@ The above diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop). |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) to the [Power BI service](/power-bi/fundamentals/power-bi-service-overview). |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | To connect to any data sources that reside within a private organizational network, an [on-premises data gateway](/power-bi/connect-data/service-gateway-onprem) is required for data refresh. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | A Power BI workspace contains Power BI items ready for embedding. For non-personal workspaces, users of the custom application have [permission to view (or create or modify) Power BI content](powerbi-implementation-planning-security-report-consumer-planning.md) because they belong to a workspace role or they have direction permissions. |
-| ![Item 5.](media/common/legend-number-05-fabric.svg) | The custom application prompts the app user to authenticate with Microsoft Entra ID. When authentication succeeds, the custom application caches a Microsoft Entra access token. |
-| ![Item 6.](media/common/legend-number-06-fabric.svg) | The custom application uses the Microsoft Entra access token to make Power BI REST API calls on behalf of the app user. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. |
-| ![Item 7.](media/common/legend-number-07-fabric.svg) | The custom application embeds a specific Power BI item in an `iframe` HTML element. The application can support the creation and editing of Power BI reports, providing the user has permission to do so. |
-| ![Item 8.](media/common/legend-number-08-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution by using [Power BI Desktop](/power-bi/fundamentals/desktop-what-is-desktop). |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the [Power BI service](/power-bi/fundamentals/power-bi-service-overview). |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an [On-premises data gateway](/power-bi/connect-data/service-gateway-onprem) or VNet gateway for data refresh, like those that reside within a private organizational network. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | A Power BI workspace contains Power BI items ready for embedding. For non-personal workspaces, users of the custom application have [permission to view (or create or modify) Power BI content](powerbi-implementation-planning-security-report-consumer-planning.md) because they belong to a workspace role or they have direction permissions. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The custom application prompts the app user to authenticate with Microsoft Entra ID. When authentication succeeds, the custom application caches a Microsoft Entra access token. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The custom application uses the Microsoft Entra access token to make Power BI REST API calls on behalf of the app user. Specifically, the application uses the access token to retrieve metadata about workspace items. Metadata includes properties required to embed content in the custom application. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The custom application embeds a specific Power BI item in an `iframe` HTML element. The application can support the creation and editing of Power BI reports, providing the user has permission to do so. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. |
 
 ## Key points
 

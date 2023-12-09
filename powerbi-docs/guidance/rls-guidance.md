@@ -137,9 +137,9 @@ Each of the three model relationships is described in the following table:
 
 |Relationship|Description|
 |---------|---------|
-|![Flowchart terminator 1.](media/common/legend-number-01-fabric.svg)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
-|![Flowchart terminator 2.](media/common/legend-number-02-fabric.svg)|There's a one-to-many relationship between the **Date** and **Sales** tables.|
-|![Flowchart terminator 3.](media/common/legend-number-03-fabric.svg)|There's a one-to-many relationship between the **Date** and **SalesRevenueSummary** tables.|
+|![Flowchart terminator 1.](../media/legend-number/legend-number-01-fabric.svg)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
+|![Flowchart terminator 2.](../media/legend-number/legend-number-02-fabric.svg)|There's a one-to-many relationship between the **Date** and **Sales** tables.|
+|![Flowchart terminator 3.](../media/legend-number/legend-number-03-fabric.svg)|There's a one-to-many relationship between the **Date** and **SalesRevenueSummary** tables.|
 
 The following expression defines the **Revenue % All Region** measure:
 

@@ -27,9 +27,9 @@ The areas in the above diagram include:
 
 | **Area** | **Description** |
 | :-: | --- |
-| ![Area 1.](media/common/legend-number-01-fabric.svg) | **Business-led self-service:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up_ strategy. |
-| ![Area 2.](media/common/legend-number-02-fabric.svg) | **Managed self-service:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
-| ![Area 3.](media/common/legend-number-03-fabric.svg) | **Enterprise:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
+| ![Area 1.](../media/legend-number/legend-number-01-fabric.svg) | **Business-led self-service:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up_ strategy. |
+| ![Area 2.](../media/legend-number/legend-number-02-fabric.svg) | **Managed self-service:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
+| ![Area 3.](../media/legend-number/legend-number-03-fabric.svg) | **Enterprise:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
 
 It's unlikely that an organization operates exclusively with one content ownership and management strategy. Depending on your data culture, one strategy might be far more dominant than the others. The choice of strategy could differ from solution to solution, or from team to team. In fact, a single team can actively use multiple strategies if it's both a consumer of enterprise content and a producer of its own self-service content. The strategy to pursue depends on factors such as:
 

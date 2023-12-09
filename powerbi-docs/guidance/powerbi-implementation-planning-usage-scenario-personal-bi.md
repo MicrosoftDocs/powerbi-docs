@@ -34,16 +34,16 @@ The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
-| ![Item 3.](media/common/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop. In a personal BI solution, the primary intention is typically data exploration and analysis. |
-| ![Item 4.](media/common/legend-number-04-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
-| ![Item 5](media/common/legend-number-05-fabric.svg) | Since the primary intention is personal usage, the content is published to the content creator's [personal workspace](../fundamentals/service-basic-concepts.md#workspaces). Some advantages of using the Power BI service (instead of remaining solely in Power BI Desktop) include scheduled data refresh, dashboard alerts, and the ability to consume content using a mobile app. |
-| ![Item 6.](media/common/legend-number-06-fabric.svg) | The content creator views and interacts with the content published. One option is to sign in to the Power BI service using a web browser. |
-| ![Item 7.](media/common/legend-number-07-fabric.svg) | The content creator can also use a [Power BI mobile app](../consumer/mobile/mobile-apps-for-mobile-devices.md) to view published content. |
-| ![Item 8.](media/common/legend-number-08-fabric.svg) | Scheduled data refresh can be set up in the Power BI service to keep imported data up to date. |
-| ![Item 9.](media/common/legend-number-09-fabric.svg) | To connect to data sources that reside within a private organizational network, an [On-premises data gateway](../connect-data/service-gateway-onprem.md) is required for data refresh. |
-| ![Item 10.](media/common/legend-number-10-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. Personal workspaces are usually governed to a much lesser extent than workspaces that are intended for collaboration and distribution. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution using [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md). |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Power BI Desktop connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop. In a personal BI solution, the primary intention is typically data exploration and analysis. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file (.pbix) of Power BI project file (.pbip) to the [Power BI service](../fundamentals/power-bi-service-overview.md). |
+| ![Item 5](../media/legend-number/legend-number-05-fabric.svg) | Since the primary intention is personal usage, the content is published to the content creator's [personal workspace](../fundamentals/service-basic-concepts.md#workspaces). Some advantages of using the Power BI service (instead of remaining solely in Power BI Desktop) include scheduled data refresh, dashboard alerts, and the ability to consume content using a mobile app. The content creator can also edit reports and models in their personal workspace with web authoring (if they enable the workspace setting). |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The content creator views and interacts with the content published. One option is to sign in to the Power BI service using a web browser. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The content creator can also use a [Power BI mobile app](../consumer/mobile/mobile-apps-for-mobile-devices.md) to view published content. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Scheduled data refresh can be set up in the Power BI service to keep imported data up to date. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Some data sources may require an [On-premises data gateway](../connect-data/service-gateway-onprem.md) or VNet gateway for data refresh, like those that reside within a private organizational network. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Power BI administrators oversee and monitor activity in the Power BI service. Personal workspaces are usually governed to a much lesser extent than workspaces that are intended for collaboration and distribution. |
 
 ## Key points
 

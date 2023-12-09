@@ -315,8 +315,8 @@ The diagram depicts how you can iteratively revise the BI strategy to achieve in
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/legend-number-01-fabric.svg) | **BI strategic planning:** Define and reassess your BI goals and priorities every 12-18 months. In between BI strategic planning sessions, strive for incremental progress toward your BI goals by achieving your BI objectives defined in tactical planning. Additionally, in between strategic planning, you should collect feedback to inform future strategic decision-making. |
-| ![Item 2.](media/common/legend-number-02-fabric.svg) | **BI tactical planning:** Identify and reevaluate your BI objectives every 1-3 months. In between, you implement these tactical plans by building BI solutions and launching BI initiatives. Additionally, in between tactical planning, you should collect feedback and monitor your KPIs or OKRs to inform future tactical decision-making. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | **BI strategic planning:** Define and reassess your BI goals and priorities every 12-18 months. In between BI strategic planning sessions, strive for incremental progress toward your BI goals by achieving your BI objectives defined in tactical planning. Additionally, in between strategic planning, you should collect feedback to inform future strategic decision-making. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | **BI tactical planning:** Identify and reevaluate your BI objectives every 1-3 months. In between, you implement these tactical plans by building BI solutions and launching BI initiatives. Additionally, in between tactical planning, you should collect feedback and monitor your KPIs or OKRs to inform future tactical decision-making. |
 
 Future objectives and priorities defined in your strategic and tactical planning are informed by using regular feedback and evaluation mechanisms, such as those described in the following sections.
 
