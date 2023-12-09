@@ -208,7 +208,7 @@ The technical design concludes with a solution plan, which consists of the follo
 > [!TIP]
 > Because business objectives invariably evolve, it's expected that requirements will change. Don't assume that requirements for BI projects are fixed. If you struggle with changing requirements, it might be an indication that your requirements gathering process isn't effective, or that your development workflows don't sufficiently incorporate regular feedback.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When gathering requirements, key decisions and actions include:
 
@@ -257,7 +257,7 @@ The project team should perform initial set up to commence development. Initial 
 
 For more information about deployment planning, see [Plan deployment to migrate to Power BI](powerbi-migration-planning.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning solution deployment, key decisions and actions include:
 
@@ -293,7 +293,7 @@ We recommend factoring in the following considerations when preparing a POC.
 > [!NOTE]
 > For more information, see [Conduct proof of concept to migrate to Power BI](powerbi-migration-proof-of-concept.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating a POC, key decisions and actions include:
 
@@ -368,7 +368,7 @@ When the solution reaches a predefined level of completeness and maturity, the p
 
 This article describes only high-level planning and actionable items. For more information about iterative development and testing cycles, see [Create content to migrate to Power BI](powerbi-migration-create-validate-content.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating and validating content, key decisions and actions include:
 
@@ -398,7 +398,7 @@ To ensure a successful deployment, you perform the following support and adoptio
 
 After deployment, the project team should plan to proceed to the next solution in the prioritized solution backlog. Ensure that you collect any new feedback and requests and make revisions to [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan)—including the solution backlog—if necessary.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When considering solution deployment, key decisions and actions include:
 

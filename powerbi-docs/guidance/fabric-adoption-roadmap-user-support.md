@@ -155,7 +155,7 @@ The Fabric global community is vibrant. Every day, there are a great number of F
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take for user support follow.
 
@@ -196,7 +196,7 @@ The Fabric global community is vibrant. Every day, there are a great number of F
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess user support.
 
@@ -216,7 +216,7 @@ Use questions like those found below to assess user support.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your Power BI user support.
 

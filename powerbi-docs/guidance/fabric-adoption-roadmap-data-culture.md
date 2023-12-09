@@ -94,7 +94,7 @@ Furthermore, data catalog solutions are extremely valuable tools for data discov
 
 ### Questions to ask about data discovery
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data discovery.
 
@@ -111,7 +111,7 @@ Use questions like those found below to assess data discovery.
 
 ### Maturity levels of data discovery
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels can help you assess your current state of data discovery.
 
@@ -140,7 +140,7 @@ Your organization's position on data democratization will have a wide-reaching i
 
 ### Questions to ask about data democratization
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data democratization.
 
@@ -158,7 +158,7 @@ Use questions like those found below to assess data democratization.
 
 ### Maturity levels of data democratization
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels can help you assess your current state of data democratization.
 
@@ -192,7 +192,7 @@ How you go about improving data literacy in your organization depends on many fa
 
 ### Questions to ask about data literacy
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data literacy.
 
@@ -207,7 +207,7 @@ Use questions like those found below to assess data literacy.
 
 ### Maturity levels of data literacy
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels can help you assess your current state of data literacy.
 
@@ -221,7 +221,7 @@ The following maturity levels can help you assess your current state of data lit
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Here are some considerations and key actions that you can take to strengthen your data culture.
 
@@ -236,7 +236,7 @@ The following maturity levels can help you assess your current state of data lit
 
 ## Questions to ask about data culture
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data culture.
 
@@ -250,7 +250,7 @@ Use questions like those found below to assess data culture.
 
 ## Maturity levels of data culture
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your data culture.
 

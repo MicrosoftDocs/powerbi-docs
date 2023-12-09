@@ -204,7 +204,7 @@ To appraise the skills and knowledge of teams for organizational readiness, ask 
 
 After you've favorably assessed organizational readiness, you should proceed with step 2 of tactical planning to define success and how it's measured.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When identifying your BI objectives, key decisions and actions include:
 
@@ -282,7 +282,7 @@ Here are some key decisions and considerations to help you successfully use KPIs
 
 When you've clearly defined success for your objectives, you should get approval from executives and the key stakeholders before enacting your tactical planning. Present the objectives to executives and key stakeholders, highlighting the expected benefits and relevant outcomes for the business should tactical planning be successful. Also, explain how the described BI objectives support the business objectives and data needs identified in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). Use any feedback to adjust tactical planning, where necessary.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering your desired future state, key decisions and actions include:
 
@@ -352,7 +352,7 @@ To mitigate impact and capitalize on opportunities of change, you should regular
 
 A key outcome of tactical planning is the prioritized backlog of solutions that you'll implement to address business data needs. The next step is to plan and implement these solutions. Implementing these solutions helps you to achieve your BI objectives and make incremental progress toward your BI goals.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to revise your strategic and tactical planning, key decisions and actions include:
 

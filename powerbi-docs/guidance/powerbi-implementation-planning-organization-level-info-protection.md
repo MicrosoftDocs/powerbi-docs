@@ -51,7 +51,7 @@ The activities for implementing sensitivity labels are described in the [Informa
 > [!NOTE]
 > Sensitivity labels are the first building block towards implementing information protection. DLP occurs after information protection is set up.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When assessing the current state of information protection and DLP in your organization, key decisions and actions include:
 
@@ -95,7 +95,7 @@ The task of planning and implementing information protection is usually a part-t
 
 Clarity on roles and responsibilities is necessary to avoid misunderstandings and delays when working with cross-functional teams across organizational boundaries.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When putting together your information protection team, key decisions and actions include:
 
@@ -129,7 +129,7 @@ Be aware that an initiative to introduce information protection is complementary
 
 For more information about securing content in Power BI, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering your information protection goals, key decisions and actions include:
 

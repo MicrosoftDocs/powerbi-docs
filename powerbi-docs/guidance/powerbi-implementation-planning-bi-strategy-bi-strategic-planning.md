@@ -207,7 +207,7 @@ Here are some recommendations to get the most value from the communication hub.
 > [!IMPORTANT]
 > Success of strategic planning relies on effective communication. Promoting concise and consistent communication benefits not only strategic planning, but also the broader adoption and implementation of BI initiatives across your organization.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When establishing a working team, key decisions and actions include:
 
@@ -322,7 +322,7 @@ When you initially request key stakeholder participation, ensure that you:
 >
 > To mitigate this risk, ensure that you involve stakeholders from various levels of the organization. When selecting key stakeholders, engage with different teams to briefly introduce the initiative and gather input on who the right stakeholders might be. This level of engagement not only raises awareness of the initiative, but it also enables you to involve the right people more easily.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning workshops and conducting research, key decisions and actions include:
 
@@ -492,7 +492,7 @@ The diagram depicts the following technical areas.
 >
 > Getting too detailed in the technical assessment risks diluting key messages about the BI strategy. Always keep in mind the big picture questions like: _Where do we want to go?_ and _How can BI effectively support the business?_
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When running workshops and completing assessments, key decisions and actions include:
 
@@ -565,7 +565,7 @@ The objective of this session is to obtain executive alignment and approval on t
 
 Once you've identified your BI goals and priorities, you have concluded strategic planning. The next step is to identify objectives to help you make progress towards your BI goals, which you do by conducting [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When deciding BI goals and priorities, key decisions and actions include:
 

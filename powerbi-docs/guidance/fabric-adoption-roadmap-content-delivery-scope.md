@@ -159,7 +159,7 @@ Here are some guidelines to help you become successful with enterprise content d
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take to strengthen your approach to content delivery.
 
@@ -174,7 +174,7 @@ Here are some guidelines to help you become successful with enterprise content d
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess content delivery scope.
 
@@ -191,7 +191,7 @@ Use questions like those found below to assess content delivery scope.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your content delivery.
 

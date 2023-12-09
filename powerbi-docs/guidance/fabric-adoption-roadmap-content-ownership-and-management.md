@@ -181,7 +181,7 @@ It's also possible for a centralized team to transfer ownership to a business un
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Here's a list of considerations and key actions you can take to strengthen your approach to content ownership and management.
 
@@ -198,7 +198,7 @@ It's also possible for a centralized team to transfer ownership to a business un
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess content ownership and management.
 
@@ -215,7 +215,7 @@ Use questions like those found below to assess content ownership and management.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your content ownership and management.
 
