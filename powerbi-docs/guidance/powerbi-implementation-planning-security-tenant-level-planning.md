@@ -48,7 +48,7 @@ A Power BI administrator belongs to at least one of these [built-in roles](/micr
 > [!NOTE]
 > While a Power Platform administrator can manage the Power BI service, the inverse isn't true. Someone assigned to the Fabric administrator role can't manage other applications in the Power Platform.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for who will be a Power BI administrator, key decisions and actions include:
 
@@ -83,7 +83,7 @@ Some of your organizational-level decisions will result in firm governance polic
 > [!TIP]
 > See the other articles in this series for additional suggestions that relate to security planning for [report consumers](powerbi-implementation-planning-security-report-consumer-planning.md) and [content creators](powerbi-implementation-planning-security-content-creator-planning.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning your high-level security strategies, key decisions and actions include:
 
@@ -118,7 +118,7 @@ It might be difficult to find the right balance between unrestricted access and 
 > [!TIP]
 > Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Microsoft Entra ID in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Microsoft Entra ID for cloud-based services like Power BI to work. Having a hybrid identity solution will work for Power BI. We recommend talking to your Microsoft Entra ID administrators about the best solution for your organization.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When identifying needs for Microsoft Entra ID integration, key decisions and actions include:
 
@@ -203,7 +203,7 @@ The Power BI _Allow email subscriptions to be sent to external users_ tenant set
 > [!TIP]
 > Administrators can verify which external users are being sent subscriptions by using the [Get Report Subscriptions as Admin API](/rest/api/power-bi/admin/reports-get-report-subscriptions-as-admin). The email address for the external user is shown. The principal type is _unresolved_ because the external user isn't set up in Microsoft Entra ID.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for how to handle external guest users, key decisions and actions include:
 
@@ -256,7 +256,7 @@ There are [tenant settings](/power-bi/admin/service-admin-portal-export-sharing)
 > [!TIP]
 > Certain export formats support end-to-end information protection by using encryption. Due to regulatory requirements, some organizations have a valid need to restrict which export formats users can use. The [Information protection for Power BI](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article describes factors to consider when deciding which export formats to enable or disable in the tenant settings. In most cases, we recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. You can use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to identify which users are performing many exports. You can then teach these users about more efficient and secure alternatives.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for file locations, the key decisions and actions include:
 
@@ -384,7 +384,7 @@ When a content creator or owner requests a new group, ideally they use a form to
 > [!TIP]
 > Existing groups that are based on the organizational chart don't always work well for Power BI purposes. Use existing groups when they meet your needs. However, be prepared to create Power BI-specific groups when the need arises.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for how to use groups, key decisions and actions include:
 
