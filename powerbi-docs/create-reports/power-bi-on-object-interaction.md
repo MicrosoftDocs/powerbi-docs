@@ -31,7 +31,7 @@ Because the on-object feature is in preview, you need to turn it on. You'll also
 
 ## Choose a default pane arrangement
 
-After you turn on on-object interaction, the next time you start Power BI Desktop, you see this dialog asking which pane arrangement you prefer.
+Starting with the December 2023 build, if you’ve used on-object before, the next time you start Power BI Desktop, you see this dialog asking which pane arrangement you prefer.
 
 :::image type="content" source="media/power-bi-on-object-interaction/settings-options.png" alt-text="Screenshot showing choose default settings options.":::
 
@@ -204,17 +204,13 @@ There are two ways to open multiple panes at the same time:
 
 - On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, donut, tree map, and table visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
-- Format mode isn't currently supported in focus mode.
+
 
 ### Subselections
 
 - Small multiples and analytics pane items aren't currently selectable in format mode. 
 - Subselection regions don't scale as expected in spotlight mode and after using zoom sliders.
 - Reset to default might not reset direct text edit and background colors for data and category labels.
-
-### On-object buttons
-
-- On-object buttons might show above the formula bar if they're open at the same time.
 
 ### Warnings
 
