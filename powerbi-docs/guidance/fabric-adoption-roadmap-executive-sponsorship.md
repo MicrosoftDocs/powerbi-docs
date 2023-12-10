@@ -57,7 +57,7 @@ With a bottom-up approach, the sponsor might be able to make some progress, but 
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Here's a list of considerations and key actions you can take to establish or strengthen executive support for analytics.
 
@@ -70,7 +70,7 @@ With a bottom-up approach, the sponsor might be able to make some progress, but 
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data literacy.
 
@@ -87,7 +87,7 @@ Use questions like those found below to assess data literacy.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess your current state of executive support.
 

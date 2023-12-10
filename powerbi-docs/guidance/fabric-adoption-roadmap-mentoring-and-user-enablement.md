@@ -61,7 +61,7 @@ A co-development project forms a partnership between the business unit and the C
 
 Time involvement from the COE reduces over time until the business unit gains expertise and becomes self-reliant.
 
-:::image type="content" source="media/fabric-adoption-roadmap-mentoring-and-user-enablement/center-of-excellence-mentoring.png" alt-text="Diagram shows expertise growing in the business unit as Center of Excellence involvement decreases over time, which is described below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-mentoring-and-user-enablement/center-of-excellence-mentoring.svg" alt-text="Diagram shows expertise growing in the business unit as Center of Excellence involvement decreases over time, which is described below." border="false":::
 
 The active involvement shown in the above diagram changes over time, as follows:
 
@@ -311,7 +311,7 @@ You can use Power BI project files with [Power BI Desktop developer mode](/power
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take to establish, or improve, mentoring and user enablement.
 
@@ -330,7 +330,7 @@ You can use Power BI project files with [Power BI Desktop developer mode](/power
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess mentoring and user enablement.
 
@@ -347,7 +347,7 @@ Use questions like those found below to assess mentoring and user enablement.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your mentoring and user enablement.
 
