@@ -26,18 +26,18 @@ If a user has an issue, do they know what their options are to resolve it?
 
 The following diagram shows some common types of user support that organizations employ successfully:
 
-:::image type="content" source="media/fabric-adoption-roadmap-user-support/user-support.png" alt-text="Diagram shows the four types of internal Fabric user support, and the two types of external support, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-user-support/user-support.svg" alt-text="Diagram shows the four types of internal Fabric user support, and the two types of external support, which are described in the table below." border="false":::
 
 The six types of user support shown in the above diagram include:
 
 | **Type** | **Description** |
 | :-: | --- |
-| ![Type 1.](media/common/icon-01-red-30x30.png) | **Intra-team support (internal)** is very informal. Support occurs when team members learn from each other during the natural course of their job. |
-| ![Type 2.](media/common/icon-02-red-30x30.png) | **Internal community support (internal)** can be organized informally, formally, or both. It occurs when colleagues interact with each other via internal community channels. |
-| ![Type 3.](media/common/icon-03-red-30x30.png) | **Help desk support (internal)** handles formal support issues and requests. |
-| ![Type 4.](media/common/icon-04-red-30x30.png) | **Extended support (internal)** involves handling complex issues escalated by the help desk. |
-| ![Type 5.](media/common/icon-05-red-30x30.png) | **Microsoft support (external)** includes support for licensed users and Fabric administrators. It also includes [comprehensive documentation](/power-bi/index). |
-| ![Type 6.](media/common/icon-06-red-30x30.png) | **Community support (external)** includes the worldwide community of experts, [Microsoft Most Valued Professionals (MVPs)](https://mvp.microsoft.com/), and enthusiasts who participate in forums and publish content. |
+| ![Type 1.](../media/legend-number/legend-number-01-fabric.svg) | **Intra-team support (internal)** is very informal. Support occurs when team members learn from each other during the natural course of their job. |
+| ![Type 2.](../media/legend-number/legend-number-02-fabric.svg) | **Internal community support (internal)** can be organized informally, formally, or both. It occurs when colleagues interact with each other via internal community channels. |
+| ![Type 3.](../media/legend-number/legend-number-03-fabric.svg) | **Help desk support (internal)** handles formal support issues and requests. |
+| ![Type 4.](../media/legend-number/legend-number-04-fabric.svg) | **Extended support (internal)** involves handling complex issues escalated by the help desk. |
+| ![Type 5.](../media/legend-number/legend-number-05-fabric.svg) | **Microsoft support (external)** includes support for licensed users and Fabric administrators. It also includes [comprehensive documentation](/power-bi/index). |
+| ![Type 6.](../media/legend-number/legend-number-06-fabric.svg) | **Community support (external)** includes the worldwide community of experts, [Microsoft Most Valued Professionals (MVPs)](https://mvp.microsoft.com/), and enthusiasts who participate in forums and publish content. |
 
 In some organizations, intra-team and internal community support are most relevant for self-service data and business intelligence (BI)—content is owned and managed by creators and owners in decentralized business units. Conversely, the help desk and extended support are reserved for technical issues and enterprise data and BI (content is owned and managed by a centralized BI team or [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)). In some organizations, all four types of support could be relevant for any type of content.
 
@@ -155,7 +155,7 @@ The Fabric global community is vibrant. Every day, there are a great number of F
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take for user support follow.
 
@@ -196,7 +196,7 @@ The Fabric global community is vibrant. Every day, there are a great number of F
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess user support.
 
@@ -216,7 +216,7 @@ Use questions like those found below to assess user support.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your Power BI user support.
 

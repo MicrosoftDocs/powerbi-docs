@@ -40,7 +40,7 @@ Software installations are usually the responsibility of the IT department. To e
   - For custom requests, using a standard request form works well. A form (rather than email) builds up a history of requests. When prerequisites or more licenses are required, approval can be included in the workflow.
 - **Process for installing software updates.** The timely installation of software updates is important. The goal is to stay as current as possible. Be aware that users can read online what's possible and might become confused or frustrated when newer features aren't available to them. For more information, see [Client tools](#client-tools) later in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for how to handle requests for new tools, key decisions and actions include:
 
@@ -70,7 +70,7 @@ The most common ways that a consumer can access Power BI content include:
 
 Because the user experience can vary slightly between different web browsers, we recommend that you document browser recommendations in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). For more information, see [Supported browsers for Power BI](/power-bi/fundamentals/power-bi-browsers).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for consumer tools, key decisions and actions include:
 
@@ -256,7 +256,7 @@ Some third-party tools are proprietary and require a paid license (such as Tabul
 > [!TIP]
 > Some organizations find it easier to get a new tool approved that's fully supported (even when there's a licensing cost). However, other organizations find it easier to get a free open-source tool approved. Your IT department can provide guidance and help you do the necessary due diligence.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for authoring tools, key decisions and actions include:
 
@@ -435,7 +435,7 @@ Here are several ways that you might choose to use MAM and MDM policies.
 
 For more information about securing devices and data, see the [Power BI security whitepaper](whitepaper-powerbi-security.md#power-bi-mobile).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When managing devices, key decisions and actions include:
 

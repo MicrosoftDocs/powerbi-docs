@@ -385,7 +385,7 @@ Every month, Microsoft releases new Fabric features and capabilities. To be effe
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take for system oversight follow.
 
@@ -463,7 +463,7 @@ Every month, Microsoft releases new Fabric features and capabilities. To be effe
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess system oversight.
 
@@ -480,7 +480,7 @@ Use questions like those found below to assess system oversight.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your Power BI system oversight.
 

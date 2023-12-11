@@ -14,7 +14,7 @@ ms.date: 02/27/2022
 
 This article describes actions you can consider prior to migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-pre-migration-steps/migrate-to-powerbi-pre-migration-steps.png" alt-text="Image showing the stages of a Power BI migration. The pre-migration steps are emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-pre-migration-steps/migrate-to-power-bi-preparation.svg" alt-text="Diagram shows the stages of a Power BI migration. The pre-migration steps are emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
@@ -105,11 +105,11 @@ The first task is to understand what success looks like for migrating an individ
 - **What are the specific motivations and objectives for this migration?** For more information, see [Power BI migration overview (Consider migration reasons)](powerbi-migration-overview.md#consider-migration-reasons). This article describes the most common reasons for migrating to Power BI. Certainly, your objectives should be specified at the organizational level. Beyond that, migrating one legacy BI solution could benefit significantly from cost savings, whereas migrating a different legacy BI solution could focus on gaining workflow optimization benefits.
 - **What's the expected cost/benefit or ROI for this migration?** Having a clear understanding of expectations related to cost, increased capabilities, decreased complexity, or increased agility, is helpful in measuring success. It can provide guiding principles to help with decision-making during the migration process.
 - **What key performance indicators (KPIs) will be used to measure success?** The following list presents some example KPIs:
-    - Number of reports rendered from legacy BI platform, decreasing month over month.
-    - Number of reports rendered from Power BI, increasing month over month.
-    - Number of Power BI report consumers, increasing quarter over quarter.
-    - Percentage of reports migrated to production by target date.
-    - Cost reduction in licensing cost year over year.
+  - Number of reports rendered from legacy BI platform, decreasing month over month.
+  - Number of reports rendered from Power BI, increasing month over month.
+  - Number of Power BI report consumers, increasing quarter over quarter.
+  - Percentage of reports migrated to production by target date.
+  - Cost reduction in licensing cost year over year.
 
 > [!TIP]
 > The [Power BI activity log](../enterprise/service-admin-auditing.md) can be used as a source for measuring KPI progress.

@@ -37,7 +37,7 @@ The decision on who is allowed to create workspaces in the Power BI service is a
 
 You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces. For more information, see [Govern workspaces](powerbi-implementation-planning-tenant-administration.md#govern-workspaces).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering permissions for who can create workspaces, key decisions and actions include:
 
@@ -81,7 +81,7 @@ The following list describes more considerations related to workspace naming.
 > [!NOTE]
 > We recommend that you notify users when a workspace name will change. For the most part, it's safe to rename a workspace in the Fabric portal because the _GroupID_, which is the unique identifier of a workspace, doesn't change (it's found in the workspace URL). However, [XMLA connections](/power-bi/enterprise/service-premium-connect-tools) are impacted because they connect by using the workspace name instead of the GroupID.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering creating workspace naming conventions, key decisions and actions include:
 
@@ -120,7 +120,7 @@ Here are some considerations when planning for Fabric domains in your tenant.
 
 For more information, see [Govern domains](powerbi-implementation-planning-tenant-administration.md#govern-domains).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for workspace domains, key decisions and actions include:
 
@@ -161,7 +161,7 @@ There are many technology options you can use to create an online form for the w
 > [!TIP]
 > To improve efficiency and accuracy, consider automating the process by using the [Power BI REST API](/rest/api/power-bi/groups/create-group) to programmatically create or update a workspace. In this case, we recommend including review and approval processes rather than automatically processing each request.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the process to request a new workspace, key decisions and actions include:
 
@@ -206,7 +206,7 @@ The following table lists some of the most common requirements when a workspace 
 > [!TIP]
 > Governance requirements usually aren't optional. For this reason, timely auditing is important, and enforcement becomes necessary in certain situations. For example, if governed workspaces require all files be in a secure location and an unapproved file location is detected during auditing, then action should be taken to update the file location.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the workspace governance level, key decisions and actions include:
 

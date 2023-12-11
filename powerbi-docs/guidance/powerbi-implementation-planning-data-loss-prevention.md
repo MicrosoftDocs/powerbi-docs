@@ -103,7 +103,7 @@ Here are some examples of when you might create a DLP rule based on a sensitivit
 
 Other considerations about user notifications and alerts are described in this next section of this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the needs for sensitivity label rules, key decisions and actions include:
 
@@ -147,7 +147,7 @@ Here are some examples of when you might create a DLP rule based on a sensitive 
 - **Regulatory compliance:** You have a sensitive information type that's subject to regulatory requirements. You want to generate an alert for your security administrators when that type of data is detected within a semantic model in the Power BI service.
 - **Internal requirements:** You have a sensitive information type that needs special handling. To meet internal requirements, you want to generate a user notification when a user views the semantic model settings or the semantic model details page in the [data hub](/power-bi/connect-data/service-data-hub?tabs=semantic-models) (in the Power BI service).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the needs for sensitive information types, key decisions and actions include:
 
@@ -183,7 +183,7 @@ When deciding what notifications users should receive, we recommend that you foc
 
 Users can take action by [reporting an issue](/power-bi/enterprise/service-security-dlp-policies-for-power-bi-override) when they believe it's a false positive (misidentified). It's also possible to allow the user to override the policy. These capabilities are intended to allow communication between Power BI users and the security administrators who manage DLP for Power BI.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering DLP user notifications, key decisions and actions include:
 
@@ -222,7 +222,7 @@ When an email alert is required, we recommend that you use a mail-enabled securi
 > [!TIP]
 > Keep in mind that DLP rules for Power BI are checked every time that a semantic model is uploaded or refreshed. That means an alert could be generated each time the semantic model is refreshed. Regular or frequent data refreshes could result in an overwhelming number of logged events and alerts.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering DLP alerting for administrators, key decisions and actions include:
 
@@ -243,7 +243,7 @@ You can set up the DLP policy to scan all Premium workspaces. Optionally, you ca
 
 For more information about workspace, see the [workspace planning](powerbi-implementation-planning-workspaces-overview.md) articles.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering which workspaces to include in scope for DLP, key decisions and actions include:
 
@@ -262,7 +262,7 @@ Also, DLP policies for Power BI require [Power BI Premium](/power-bi/enterprise/
 > [!TIP]
 > If you need clarifications about licensing requirements, talk to your Microsoft account team. Note that the Microsoft 365 E5 Compliance license includes other DLP capabilities that are out scope for this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When evaluating DLP licensing requirements, key decisions and actions include:
 
@@ -285,7 +285,7 @@ FAQs and examples are especially helpful for user documentation.
 > [!TIP]
 > For more information, see [Information protection for Power BI (Data classification and protection policy)](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy). It describes suggestions for creating a data classification and protection policy so that users understand what they can and can't do with sensitivity labels.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When preparing user documentation and training, key decisions and actions include:
 
@@ -300,7 +300,7 @@ It's important to verify who will be responsible for [user support](fabric-adopt
 
 You might need to create guidance for the help desk (sometimes known as a _runbook_). You might also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When preparing for the user support function, key decisions and actions include:
 
@@ -320,7 +320,7 @@ DLP policies for Power BI are set up in the Microsoft Purview compliance portal 
 
 The following checklist includes a summarized list of the end-to-end implementation steps. Many of the steps have other details that were covered in previous sections of this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When implementing DLP for Power BI, key decisions and actions include:
 
@@ -352,7 +352,7 @@ Power BI administrators and security and compliance administrators will need to 
 > [!WARNING]
 > Monitoring for DLP for Power BI policies doesn't occur in real time because it takes time for DLP logs and alerts to be generated. If your goal is real-time enforcement, see [Defender for Cloud Apps for Power BI (Real-time policies)](powerbi-implementation-planning-defender-for-cloud-apps.md#real-time-policies).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When monitoring DLP for Power BI, key decisions and actions include:
 

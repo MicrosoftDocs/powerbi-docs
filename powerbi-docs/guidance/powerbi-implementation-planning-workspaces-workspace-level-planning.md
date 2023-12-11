@@ -51,7 +51,7 @@ One of the key areas of the Fabric adoption roadmap is [content ownership and ma
 - **Managed self-service BI:** Data is owned and managed by a centralized team, whereas various content creators from business units take responsibility for reports and dashboards. In this scenario, it's highly likely that multiple workspaces will be needed to securely facilitate collaboration by multiple teams of people.
 - **Enterprise BI:** Content is owned and managed by a centralized team, such as IT, enterprise BI, or the Center of Excellence (COE). In this scenario, collaboration efforts in the workspace are occurring among users in the centralized team.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering your intentions for collaboration in a workspace, key decisions and actions include:
 
@@ -83,7 +83,7 @@ Another key area of the Fabric adoption roadmap is [content delivery scope](fabr
 > [!TIP]
 > When you plan your workspaces, consider the needs of the audience when determining the workspace [license mode](/fabric/enterprise/licenses). The type of license that's assigned to the workspace will impact the features that are available, including who can view or manage workspace content.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering your expectations for how workspace content will be viewed, key decisions and actions include:
 
@@ -109,7 +109,7 @@ To allow the creation of any type of Fabric item (like a lakehouse or warehouse)
 
 A personal workspace is limited in its options to share content with others. You can't publish a Power BI app from a personal workspace (and Power BI apps are an important mechanism for distributing content to the organization). Per-item permissions (links or direct access) are the only way to share personal workspace content with others. Therefore, extensive use of per-item permissions involves more effort and increases the risk of error. For more information, see [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering your expectations for how personal workspaces should be used, key decisions and actions include:
 
@@ -138,7 +138,7 @@ When the intent for collaboration involves decentralization and multiple teams b
 > [!TIP]
 > Your decisions related to accountability and responsibility should correlate directly with your actions related to defining [workspace access](#workspace-access), which is described later in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering workspace ownership responsibilities, key decisions and actions include:
 
@@ -223,7 +223,7 @@ Disadvantages of option 3 include:
 > [!TIP]
 > Creating a workspace with a narrow scope, such as an individual report, should be done for specific reasons only. It should be the exception rather than the rule. Occasionally, [separating scorecards](/power-bi/create-reports/service-goals-create) into their own workspace is a useful technique. For example, using a separate workspace is helpful when a scorecard presents goals that span multiple subject areas. It's also helpful to set up specific permissions for managing and viewing the scorecard.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the subject area and scope of workspace content, key decisions and actions include:
 
@@ -261,7 +261,7 @@ The disadvantages for separating data workspaces from reporting workspaces inclu
 - Use of separate workspaces results in a larger number of workspaces that you need to manage and audit. As you plan for purpose, scope, and other considerations (such as the separation of development, test, and production content) the approach to workspace design can become more complicated.
 - Extra change management processes could be required to track and prioritize requested changes to centralized data items, particularly when report creators have requirements beyond what can be handled by [composite models](/power-bi/transform-model/desktop-composite-models) and report-level measures.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the item types to store in a workspace, key decisions and actions include:
 
@@ -324,7 +324,7 @@ Lastly, the examples show one workspace - _Quarterly Financials_ - but often it'
 > [!NOTE]
 > You'll often plan security more broadly, taking into consideration semantic model [Read](/power-bi/connect-data/service-datasets-manage-access-permissions) and [Build](/power-bi/connect-data/service-datasets-build-permissions) permission requirements, and [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) requirements. For more information about what to consider for supporting report consumers and content creators, see the [security planning](powerbi-implementation-planning-security-overview.md) articles. For the purposes of this article, the focus is only on workspace roles as part of the workspace planning process.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering workspace access, key decisions and actions include:
 
@@ -357,7 +357,7 @@ Each workspace has a [license mode](/fabric/get-started/workspaces#license-mode)
   - If you expect to deliver content to content viewers who have a free license, you'll need a [license of F64 or higher](/fabric/enterprise/licenses#capacity-and-skus).
 - **Data storage location:** When you need to store data in a specific geographic region (outside of your home region), that becomes possible with a workspace assigned to a capacity (and, accordingly, the capacity is created in that region). For more information about data storage location, see [Tenant setup](powerbi-implementation-planning-workspaces-tenant-level-planning.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the workspace license mode, key decisions and actions include:
 
@@ -385,7 +385,7 @@ In Fabric, there are two main components of lifecycle management.
 
 When combining the lifecycle management features, there are [best practices](/fabric/cicd/best-practices-cicd) to consider during your planning process. For example, you might choose to use Git integration for your development workspace and deployment pipelines to publish to your test and production workspaces. Those types of decisions require using the agreed-upon practice consistently. We recommend that you do a proof of concept to fully test your setup, processes, and [permissions model](/fabric/cicd/best-practices-cicd#plan-your-permission-model).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for workspace lifecycle management, the key decisions and actions include:
 
@@ -417,7 +417,7 @@ It's possible to connect a workspace to an Azure Data Lake Storage Gen2 (ADLS Ge
 > [!IMPORTANT]
 > Setting [Azure connections](/power-bi/admin/service-admin-portal-azure-connections) in the Fabric admin portal doesn't mean that all dataflows for the entire tenant are stored by default to an ADLS Gen2 account. To use an explicit storage account (instead of internal storage), each workspace must be explicitly connected. It's critical that you set the workspace Azure connections _prior to creating any Power BI dataflows_ in the workspace.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering workspace integration with ADLS Gen2, key decisions and actions include:
 
@@ -441,7 +441,7 @@ For more information about semantic model event logs, see [Data-level auditing](
 
 For more information about how to set up Azure Log Analytics for use with Power BI, see [Configuring Azure Log Analytics for Power BI](/power-bi/transform-model/log-analytics/desktop-log-analytics-configure). Be sure to understand the prerequisites you must have in place to make the integration work.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering workspace integration with Azure Log Analytics, key decisions and actions include:
 
@@ -472,7 +472,7 @@ Here are some suggestions for how to set these key settings to improve the exper
   - Whether it's a reporting workspace (one that's dedicated to storing analytical items, such as reports, dashboards, or metrics)
 - **Data model settings:** Allows workspace members, administrators, and users with Build permission on the semantic model(s) to edit Power BI data models by using the web interface. This setting is used together with the _Users can edit data models in the Power BI service_ tenant setting. This setting should align with your decisions and processes for how content is created, managed, and deployed. Also, consider your method for [version control](#workspace-lifecycle-management) as described earlier in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the other workspace properties, the key decisions and actions include:
 
@@ -490,7 +490,7 @@ There are other technical factors that might influence your workspace setup.
 - There are [per-workspace storage limits](/power-bi/admin/service-admin-manage-your-data-storage-in-power-bi#shared-capacity-limits) that apply to the amount of data you can store in a Pro workspace. If using capacity or PPU isn't an option, consider how to work within the storage limits during the workspace planning process.
 - When you install a [template app](/power-bi/connect-data/service-template-apps-install-distribute) from AppSource, it will create a new workspace that will have a narrow subject and scope.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering other technical factors, key decisions and actions include:
 

@@ -15,10 +15,10 @@ ms.custom: intro-deployment
 
 This article describes **Stage 5**, which is concerned with deploying, supporting, and monitoring content when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Image showing the stages of a Power BI migration. Stage 5 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-power-bi-stage-5.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 5 is emphasized for this article." border="false":::
 
 > [!NOTE]
-> For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
+> For a complete explanation of the above diagram, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The primary focus of Stage 5 is to deploy the new Power BI solution to production.
 
