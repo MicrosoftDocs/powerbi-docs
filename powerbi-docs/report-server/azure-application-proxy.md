@@ -1,6 +1,6 @@
 ---
 title: Configure Power BI Report Server with Azure Application Proxy
-description: Learn how to configure your Power BI Report Server with the Azure Active Directory Application Proxy.
+description: Learn how to configure your Power BI Report Server with the Microsoft Entra application proxy.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -11,7 +11,7 @@ ms.date: 12/18/2020
 ---
 # Configure Power BI Report Server with Azure Application Proxy
 
-This article discusses how to use Azure Active Directory Application Proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Azure Active Directory (AD). Read more about remote access to on-premises applications through [Azure Active Directory's Application Proxy](/azure/active-directory/manage-apps/application-proxy).
+This article discusses how to use Microsoft Entra application proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Microsoft Entra ID. Read more about remote access to on-premises applications through [Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy).
 
 ## Environment details
 
@@ -127,7 +127,7 @@ We installed Application Proxy connector on Power BI Report Server, but you can 
 
 Ensure the Connector is trusted for delegation to the SPN added to the report server application pool account.
 
-Configure Kerberos Constrained Delegation (KCD) so that the Azure AD Application Proxy service can delegate user identities to the report server application pool account. Configure KCD by enabling the Application Proxy connector to retrieve Kerberos tickets for your users who have been authenticated in Azure AD. Then that server passes the context to the target application, or Power BI Report Server in this case.
+Configure Kerberos Constrained Delegation (KCD) so that the Microsoft Entra application proxy service can delegate user identities to the report server application pool account. Configure KCD by enabling the Application Proxy connector to retrieve Kerberos tickets for your users who have been authenticated in Microsoft Entra ID. Then that server passes the context to the target application, or Power BI Report Server in this case.
 
 To configure KCD, repeat the following steps for each connector machine.
 
@@ -140,22 +140,24 @@ To configure KCD, repeat the following steps for each connector machine.
 7. Click **OK**. 
 8. To save the changes, click **OK** again.
 
-## Publish through Azure AD Application Proxy
+<a name='publish-through-azure-ad-application-proxy'></a>
 
-Now you're ready to configure Azure AD Application Proxy.
+## Publish through Microsoft Entra application proxy
 
-Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+Now you're ready to configure Microsoft Entra application proxy.
+
+Publish Power BI Report Server through Application Proxy with the following settings. For step-by-step instructions on how to publish an application through Application Proxy, see [Publishing applications using Microsoft Entra application proxy](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 - **Internal URL** : Enter the URL to the report server that the connector can reach in the corporate network. Make sure this URL is reachable from the server the connector is installed on. A best practice is using a top-level domain such as `https://servername/` to avoid issues with subpaths published through Application Proxy. For example, use `https://servername/` and not `https://servername/reports/` or `https://servername/reportserver/`. We've configured our environment with `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
 
     > [!NOTE]
     > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server) for how-to information.
 
-- **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like `https://reports.contoso.com` if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+- **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like `https://reports.contoso.com` if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.msappproxy.net/` for our environment.
 
-- **Pre-authentication Method**: Azure Active Directory.
+- **Pre-authentication Method**: Microsoft Entra ID.
 - **Connector Group:** Default.
 
 ![Default connector group](media/azure-application-proxy/report-server-application-proxy-1.png)
@@ -216,17 +218,17 @@ To finish setting up your application, go to the **Users and groups** section an
 
     ![Domain names](media/azure-application-proxy/azure-ad-custom-domain-names.png)
 
-1. Install Microsoft Azure AD connect on the domain controller server and configure it to sync with Azure AD.
+1. Install Microsoft Entra Connect on the domain controller server and configure it to sync with Microsoft Entra ID.
 
     ![Connect directories](media/azure-application-proxy/azure-ad-connect-configuration.png)
 
-1. Once the Azure AD has synced with on-premises AD, we see the following status from the Azure portal:
+1. Once the Microsoft Entra ID has synced with on-premises AD, we see the following status from the Azure portal:
 
     ![Azure portal status](media/azure-application-proxy/azure-ad-connect-portal.png)
 
 1. Also, once the sync is successful, open the AD domains and trusts on the Domain controller. Right-click Active Directory Domains and Trusts > Properties and add the UPN. In our environment, `umacontoso.com` is the custom domain we purchased.
 
-1. After adding the UPN, you should be able to configure the user accounts with the UPN so that the Azure AD account and the on-premises AD account are connected and that the token is recognized during authentication.
+1. After adding the UPN, you should be able to configure the user accounts with the UPN so that the Microsoft Entra account and the on-premises AD account are connected and that the token is recognized during authentication.
 
     The AD domain name gets listed in the drop-down list of the **User logon name** section after you do the previous step. Configure the user name, and select the domain from the drop-down list in the **User logon name** section of the AD user properties.
 
@@ -235,7 +237,7 @@ To finish setting up your application, go to the **Users and groups** section an
 1. Once the AD sync is successful, you see the on-premises AD account coming up in the Azure portal under the **Users and Groups** section of the application. The source for the account is **Windows Server AD.**
 2. Logging in with `umasm@umacontoso.com` will be equivalent to using the Windows credentials `Umacontoso\umasm`.
 
-    These previous steps are applicable if you have on-premises AD configured and are planning to sync it with Azure AD.
+    These previous steps are applicable if you have on-premises AD configured and are planning to sync it with Microsoft Entra ID.
 
     Successful sign-in after implementing the above steps:
 
@@ -253,12 +255,12 @@ To finish setting up your application, go to the **Users and groups** section an
 
 ### Configure the application registration
 
-Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Publish through Azure AD Application Proxy](#publish-through-azure-ad-application-proxy) earlier in this article.
+Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Publish through Microsoft Entra application proxy](#publish-through-azure-ad-application-proxy) earlier in this article.
 
 > [!NOTE]
-> If you use conditional access policies that require the Power BI mobile app to be an approved client app, you can’t use Azure AD Application Proxy to connect the Power BI mobile app to Power BI Report Server.
+> If you use conditional access policies that require the Power BI mobile app to be an approved client app, you can’t use Microsoft Entra application proxy to connect the Power BI mobile app to Power BI Report Server.
 
-1. On the Azure Active Directory **Overview** page, select **App registrations**.
+1. On the Microsoft Entra ID **Overview** page, select **App registrations**.
 2. On the **All applications** tab, search for the application you created for Power BI Report Server.
 3. Select the application, then select **Authentication**.
 4. Add the following Redirect URIs based on which platform you are using.
@@ -287,11 +289,11 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 ### Connect from the Power BI mobile apps
 
 1. In the Power BI mobile app, connect to your report server instance. To connect, enter the **External URL** for the application you published through Application Proxy.
-2. Select **Connect**. You'll be directed to the Azure Active Directory sign-in page.
+2. Select **Connect**. You'll be directed to the Microsoft Entra sign-in page.
 3. Enter valid credentials for your user and select **Sign in**. You'll see the elements from your report server.
 
 ## Next steps
 
-[Enable remote access to Power BI Mobile with Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+[Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
