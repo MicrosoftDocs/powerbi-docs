@@ -197,7 +197,7 @@ Select the gear icon and select the three preference settings:
 - **Always show the "Build a visual" menu in the pane switcher**
 - **Always open in a new pane**
 
-:::image type="content" source="media/power-bi-on-object-interaction/on-object-pane-switcher.png" alt-text="Screenshot showing the Options dialog pane switcher options.":::
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-pane-switcher.png" alt-text="Screenshot showing the Options dialog pane switcher options." lightbo="media/power-bi-on-object-interaction/on-object-pane-switcher.png":::
 
 ### Show more than one pane at a time
 
