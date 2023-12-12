@@ -8,15 +8,15 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/15/2023
+ms.date: 12/12/2023
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
 
-## November 2023 Update (2.123.326.0)
+## December 2023 Update (2.124.581.0)
 
-We're all thankful for the platefuls of updates to Power BI this November, with all sorts of update helpings for BI Desktop and the Power BI service. 
+Like a collection of holiday gifts, this month's Power BI updates are full of analytics tools, toys, and capabilities for the Power BI service and Power BI Desktop. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -44,62 +44,42 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Button slicer (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157940) 
-* Reference labels (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157941) 
-* Enhance your Q&A visual with suggested synonyms from Copilot  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157942)  [[article]](https://aka.ms/Copilot-PBI-Docs)
-* On-object interaction updates  [[video]](https://youtu.be/HiWiXyZHRsE?t=74)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157943)  
-* Azure Maps visual now aggregates multiple data points at the same location  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157944)
-* Narrative visual with Copilot  [[video]](https://youtu.be/HiWiXyZHRsE?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25229-_Toc149834303)  
-
-
-
-### Modeling
-* Datasets renamed to semantic models  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157947) 
-* Power BI semantic models support for Direct Lake on Synapse Data Warehouse  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157948) [[article]](../enterprise/directlake-overview.md)
-* DAX query view to write and run DAX queries on your model  [[video]](https://youtu.be/HiWiXyZHRsE?t=469)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157949)  [[article]](https://aka.ms/dax-queries)
-* Edit your data model in the Power BI service (updates)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157950) 
-
+* On-object interaction updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674237)  [[video]](https://youtu.be/PycL2_T0DxM?t=29) 
+* More styling options for column and bar charts  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674238)  [[video]](https://youtu.be/PycL2_T0DxM?t=311) 
+* Extended customization for data labels  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674239)  [[video]](https://youtu.be/PycL2_T0DxM?t=526) 
+* Azure Maps clustering aggregation support for bubble layer  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674240)
+* Alerting on your Power BI reports with Data Activator  [[video]](https://youtu.be/PycL2_T0DxM?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674241)  [[article]](/fabric/data-activator/data-activator-introduction)
 
 ### Data connectivity
-* Azure Resource Graph (new connector)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-5179-_Toc150331934) 
-* Many connector updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-5179-_Toc150331935) 
-
+* OneLake data hub in Power BI Desktop  [[video]](https://youtu.be/PycL2_T0DxM?t=469)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674246)  [[article]](https://aka.ms/dax-queries)
+* Power BI connector updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674247) 
 
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157965)
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674254)
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Explore (preview) [[video]](https://youtu.be/HiWiXyZHRsE?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157954) 
-* Copilot for Power BI in Microsoft Fabric (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25278-_Toc150852524)  [[article]](https://aka.ms/Copilot-PBI-Docs)
-* OneLake integration for Import-mode semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157955) 
-* RLS/OLS security and stored credentials for Direct Lake semantic models (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157956)  [[article]](../enterprise/directlake-overview.md)
-* Stored credentials for Direct Lake semantic model  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157956) 
-* Sharable cloud connections for semantic models (generally available)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157957) 
-* Semantic model scale-out (generally available)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157958)  [[article]](../enterprise/service-premium-scale-out-configure.md)
-* Show visuals as tables (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157959)  [[article]](../create-reports/desktop-accessibility-consuming-tools.md)
-* Advanced filtering for paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/#post-25061-_Toc150157960)  [[article]](../paginated-reports/web-authoring/filters-paginated-service.md)
+* Storytelling in PowerPoint - suggested content [[video]](https://youtu.be/PycL2_T0DxM?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674249)  [[video]](https://youtu.be/PycL2_T0DxM?t=675)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Search and sort in paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674250)  [[article]](../consumer/paginated-reports-view-power-bi-service.md)
 
 ---
 
-### Other
-* Enhanced accessibility in paginated reports authored in Report Builder  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2023-feature-summary/#post-24646-25278-_Toc150157976)  [[article]](../paginated-reports/report-builder/paginated-accessible-structure-type-overwrite.md)
 
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2023-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/HiWiXyZHRsE]
+> [!VIDEO https://www.youtube.com/embed/PycL2_T0DxM]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
