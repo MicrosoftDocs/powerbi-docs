@@ -46,7 +46,7 @@
     - name: "Sort data"
       href: sort-options.md
     - name: "Microsoft Entra ID application setup"
-      href: microsoft-entra-id-application-setup.md
+      href: entra-id-authentication.md
     - name: "Objects and properties"
       href: objects-properties.md
     - name: "Performance tips"
