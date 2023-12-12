@@ -205,13 +205,13 @@ But you can also display a custom message. Some organizations have processes and
 
 You can change the default access request behavior for a Power BI app by going to the Power BI app settings and configuring the **Access requests** options as desired.
 
-:::image type="content" source="media/service-create-distribute-apps/cm-image-2.png" alt-text="Screenshot of a draft custom message.":::
+:::image type="content" source="media/service-create-distribute-apps/cm-image2.png" alt-text="Screenshot of a draft custom message.":::
 
 - The default option (not selected in the preceding image) is for access requests to come to you via email. See the section in this article for more on [managing access requests](/power-bi/collaborate-share/service-create-distribute-apps?source=recommendations).
 - The second option is for you to provide instructions about how a user can get access to your Power BI app, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users who don't have access to your Power BI app try to view it, they see a message with the instructions you provide. 
 - The **Custom message** text area in the preceding **Access requests** example shows sample instructions. Instructions can be rich text with formatting and links. The following example shows the instructions users see when they try to view a Power BI app they don’t have access to. 
 
-:::image type="content" source="media/service-create-distribute-apps/cm-image-3.png" alt-text="Screenshot of the message your users see.":::
+:::image type="content" source="media/service-create-distribute-apps/cm-image3.png" alt-text="Screenshot of the message your users see.":::
 
 > [!NOTE]
 > Custom messages aren't supported in Power BI mobile apps for iOS and Android. Even if you choose to show a custom message to users who don't have access to your Power BI app, users on mobile still see the default access request flow. 
