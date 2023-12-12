@@ -14,7 +14,7 @@ ms.date: 08/20/2020
 
 This article describes **Stage 4**, which is concerned with creating and validating content when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-powerbi-stage-4.png" alt-text="Image showing the stages of a Power BI migration. Stage 4 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-power-bi-stage-4.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 4 is emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).

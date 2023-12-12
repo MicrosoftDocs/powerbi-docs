@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 12/06/2023
 ---
 
 # Change log for Power BI Desktop
@@ -16,6 +16,15 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+
+## November 2023 QFE 1
+
+*Version: 2.123.742.0, Released: November 21, 2023*
+
+Bug fixes/improvements:
+
+* Fixed mobile canvas watermark that was throwing exceptions in auto-create
+* Frown fix - users no longer get a frown from the sync slicer view model update when a slicer is selected
 
 ## October 2023 QFE 1
 

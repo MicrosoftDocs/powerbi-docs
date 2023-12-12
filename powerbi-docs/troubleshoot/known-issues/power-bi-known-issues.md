@@ -12,11 +12,11 @@ ms.custom:
 
 # Power BI known issues
 
-This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed. Known issues are also available as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
+This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed. Known issues are also available for all of Fabric (including Power BI) as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
-## Currently active known issues
+## Currently active Power BI known issues
 
 Select the **Title** to view more information about that specific known issue.
 
@@ -34,7 +34,7 @@ Select the **Title** to view more information about that specific known issue.
 |  461      |  Create and Author Data            |  [A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
 
-## Recently closed known issues
+## Recently closed Power BI known issues
 
 Select the **Title** to view more information about that specific known issue. Fixed issues are removed after 46 days.
 

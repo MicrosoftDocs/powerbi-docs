@@ -149,7 +149,7 @@ The investments you make in setting up information protection can be used in DLP
 
 Information protection can also be used to create policies in Microsoft Defender for Cloud Apps. For more information, including a description of capabilities that you might find helpful, see [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When preparing your information protection rollout phases, the key decisions and actions include:
 
@@ -204,7 +204,7 @@ Here are some best practices for defining a label structure.
 > [!TIP]
 > If you find yourself planning for many labels that are highly specific, step back and reassess your approach. Complexity can lead to user confusion, reduced adoption, and less effective information protection. We recommend that you begin with an initial set of labels (or use what you already have). After you've gained more experience, cautiously expand the set of labels by adding more specific ones when needed.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning your sensitivity label structure, key decisions and actions include:
 
@@ -230,7 +230,7 @@ When defining the initial set of sensitivity labels, consider making the initial
 
 The label scope is set in the Microsoft Purview compliance portal when the label is set up.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for the label scope, key decisions and actions include:
 
@@ -279,7 +279,7 @@ To open a protected Power BI Desktop file, or an exported file, a user must meet
 
 Label protection is set in the Microsoft Purview compliance portal when you set up the label.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for the use of label encryption, key decisions and actions include:
 
@@ -318,7 +318,7 @@ Inheritance will happen only when you enable the **Apply sensitivity labels from
 > [!TIP]
 > You'll need to become familiar with the [inheritance behavior](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#inheritance-behavior). Be sure to include various circumstances in your test plan.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for the inheritance of labels from data sources, key decisions and actions include:
 
@@ -350,7 +350,7 @@ We recommend that you assign groups instead of individuals whenever possible. Th
 
 Authorized users and groups are set in the Microsoft Purview compliance portal when the label policy is published.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for authorized users and groups in your label policy, key decisions and actions include:
 
@@ -373,7 +373,7 @@ It's important to understand that a new default label policy will apply to conte
 
 The default label options are set in the Microsoft Purview compliance portal when the label policy is published.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning whether a default label for Power BI content will be applied, key decisions and actions include:
 
@@ -404,7 +404,7 @@ You can set up the mandatory label policy specifically for Power BI content. Mos
 
 The mandatory labeling options are set in the Microsoft Purview compliance portal when the label policy is published.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning whether mandatory labeling of Power BI content will be required, key decisions and actions include:
 
@@ -428,7 +428,7 @@ A [Power BI Pro or Premium Per User (PPU)](/power-bi/fundamentals/service-featur
 > [!TIP]
 > If you need clarifications about licensing requirements, talk to your Microsoft account team. Be aware that the Microsoft 365 E5 Compliance license includes additional capabilities that are out of scope for this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When evaluating licensing requirements for sensitivity labels, key decisions and actions include:
 
@@ -496,7 +496,7 @@ Not all export formats support information protection. Unsupported formats, such
 > [!TIP]
 > We recommend that you restrict exporting capabilities only when you must meet specific regulatory requirements. In typical scenarios, we recommend that you use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to identify which users are performing exports. You can then teach these users about more efficient and secure alternatives.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning how tenant settings will be set up in the Power BI admin portal, key decisions and actions include:
 
@@ -542,7 +542,7 @@ Here are some of the key pieces of information that you might include in your da
 
 One way to automate the implementation of a policy, such as the data classification and protection policy, is with [Microsoft Entra terms of use](/azure/active-directory/conditional-access/terms-of-use). When a terms of use policy is set up, users are required to acknowledge the policy before they're permitted to visit the Power BI service for the first time. It's also possible to ask them to agree again on a recurring basis, for example every 12 months.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning the internal policy to govern expectations for usage of sensitivity labels, key decisions and actions include:
 
@@ -577,7 +577,7 @@ FAQs and examples are especially helpful for user documentation.
 > [!TIP]
 > Some regulatory requirements include a specific training component.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When preparing user documentation and training, key decisions and actions include:
 
@@ -593,7 +593,7 @@ It's important to verify who will be responsible for [user support](fabric-adopt
 
 You might need to create guidance for the help desk (sometimes known as a _runbook_). You might also need to conduct knowledge transfer sessions to ensure that the help desk is ready to respond to support requests.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When preparing for the user support function, key decisions and actions include:
 
@@ -608,7 +608,7 @@ After the decisions have been made and prerequisites have been met, it's time to
 
 The following checklist includes a summarized list of the end-to-end implementation steps. Many of the steps have other details that were covered in previous sections of this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When implementing information protection, key decisions and actions include:
 
@@ -637,7 +637,7 @@ Power BI administrators and security and compliance administrators will need to 
 - **Power BI administrators:** An entry in the Power BI activity log is recorded each time a sensitivity label is assigned or changed. The activity log entry records details of the event, including user, date and time, item name, workspace, and capacity. Other activity log events (such as when a report is viewed) will include the sensitivity label ID that's assigned to the item.
 - **Security and compliance administrators:** The organization's security and compliance administrators will typically use Microsoft Purview reports, alerts, and audit logs.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When monitoring information protection, key decisions and actions include:
 
