@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/30/2023
+ms.date: 12/12/2023
 ---
 
 # Authentication API
@@ -73,7 +73,7 @@ const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstat
 // Step 2: Verify if acquiring the token is allowed
 if (acquireTokenStatus === PrivilegeStatus.Allowed) {
  
-    // Step 3: Acquire the AAD token
+    // Step 3: Acquire the Microsoft Entra ID token
     const { accessToken }: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken();
  
     // Step 4: Confirm successful acquisition of the access token

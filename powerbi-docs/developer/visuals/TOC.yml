@@ -45,6 +45,8 @@
       href: dataview-mappings.md
     - name: "Sort data"
       href: sort-options.md
+    - name: "Microsoft Entra ID application setup"
+      href: microsoft-entra-id-application-setup.md
     - name: "Objects and properties"
       href: objects-properties.md
     - name: "Performance tips"
@@ -140,6 +142,8 @@
       href: visual-api.md
     - name: "Local storage API" 
       href: local-storage.md
+    - name: Authentication API
+      href: authentication-api.md
     - name: "Filter visuals API" 
       href: filter-api.md
     - name: "Identity filter API" 
