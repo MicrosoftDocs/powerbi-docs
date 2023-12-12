@@ -1,14 +1,14 @@
 ---
-title: Power BI in-place semantic model sharing with guest users in external organizations(preview)
+title: Power BI in-place semantic model sharing with guest users in external organizations (preview)
 description: Learn about Power BI in-place semantic model sharing which allows you to share semantic models with external guest users in their own tenants.
-author: ajburnle
-ms.author: ajburnle
+author: paulinbar
+ms.author: painbar
 manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/21/2022
+ms.date: 12/12/2022
 LocalizationGroup: Administration
 ---
 
@@ -48,7 +48,7 @@ This article provides a basic introduction to in-place semantic model sharing in
 
 - In-place semantic model sharing is not supported for cross-sovereign cloud scenarios. This means that users in a government cloud cannot share or receive shared semantic models from a commercial cloud tenants. Read more on cross-cloud B2B limitations in [Cross-cloud B2B](../enterprise/service-admin-azure-ad-b2b.md#cross-cloud-b2b).
 
-- A report that was created by a user in the host tenant, using a dataset in the same host tenant will result in failure if opened in Power BI Desktop by a guest user. Only reports created using the 'external data' tab in Power BI Desktop can be re-opened in Power BI Desktop by the guest user.
+- A report that was created by a user in the host tenant, using a semantic model in the same host tenant will result in failure if opened in Power BI Desktop by a guest user. Only reports created using the 'external data' tab in Power BI Desktop can be re-opened in Power BI Desktop by the guest user.
 
 ## Requirements
 
