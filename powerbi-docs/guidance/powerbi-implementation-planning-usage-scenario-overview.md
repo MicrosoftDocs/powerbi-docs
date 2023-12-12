@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/29/2023
+ms.date: 12/09/2023
 ---
 
 # Power BI usage scenarios
@@ -75,6 +75,10 @@ There are two *embedding and hybrid* scenarios: content embedding and on-premise
 - **[Embed for your organization](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md):** The focus is on making analytical data easier for business users to access by integrating visuals within the tools and applications they use every day. This scenario describes using the Power BI REST APIs to embed content in a custom application for users who have permission and appropriate licenses to access Power BI content in your organization.
 - **[Embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md):** This scenario describes using the Power BI REST APIs to embed content in a custom application for users who don't have permission or appropriate licenses to access Power BI content in your organization. The custom application requires an embedding identity that has permission and an appropriate license to access Power BI content. The custom application could be a multitenancy application.
 - **[On-premises reporting](powerbi-implementation-planning-usage-scenario-on-premises-reporting.md):** The focus is on using a basic portal for publishing, sharing, and consuming business intelligence content within your organizational network. This scenario describes using Power BI Report Server for this purpose.
+
+## Download the scenario diagrams
+
+Each of the usage scenario articles contains a scenario diagram. We encourage you to download the [scenario diagrams](powerbi-implementation-planning-usage-scenario-diagrams.md) if you'd like to embed them in your presentations, documentation, or blog posts—or print them out as wall posters. Because they're Scalable Vector Graphics (SVG) images, you can scale them up or down without any loss of quality.
 
 ## Next steps
 

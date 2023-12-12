@@ -21,15 +21,15 @@ There are three primary strategies for how data, analytics, and business intelli
 
 The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies is implemented.
 
-:::image type="content" source="media/fabric-adoption-roadmap-content-ownership-and-management/content-ownership.png" alt-text="Diagram shows content ownership responsibilities for the three types of business intelligence delivery, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-content-ownership-and-management/content-ownership.svg" alt-text="Diagram shows content ownership responsibilities for the three types of business intelligence delivery, which are described in the table below." border="false":::
 
 The areas in the above diagram include:
 
 | **Area** | **Description** |
 | :-: | --- |
-| ![Area 1.](media/common/icon-01-red-30x30.png) | **Business-led self-service:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up_ strategy. |
-| ![Area 2.](media/common/icon-02-red-30x30.png) | **Managed self-service:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
-| ![Area 3.](media/common/icon-03-red-30x30.png) | **Enterprise:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
+| ![Area 1.](../media/legend-number/legend-number-01-fabric.svg) | **Business-led self-service:** All content is owned and managed by the creators and subject matter experts within a business unit. This ownership strategy is also known as a _decentralized_ or _bottom-up_ strategy. |
+| ![Area 2.](../media/legend-number/legend-number-02-fabric.svg) | **Managed self-service:** The data is owned and managed by a centralized team, whereas business users take responsibility for reports and dashboards. This ownership strategy is also known as _discipline at the core and flexibility at the edge_. |
+| ![Area 3.](../media/legend-number/legend-number-03-fabric.svg) | **Enterprise:** All content is owned and managed by a centralized team such as IT, enterprise BI, or the Center of Excellence (COE). |
 
 It's unlikely that an organization operates exclusively with one content ownership and management strategy. Depending on your data culture, one strategy might be far more dominant than the others. The choice of strategy could differ from solution to solution, or from team to team. In fact, a single team can actively use multiple strategies if it's both a consumer of enterprise content and a producer of its own self-service content. The strategy to pursue depends on factors such as:
 
@@ -181,7 +181,7 @@ It's also possible for a centralized team to transfer ownership to a business un
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Here's a list of considerations and key actions you can take to strengthen your approach to content ownership and management.
 
@@ -198,7 +198,7 @@ It's also possible for a centralized team to transfer ownership to a business un
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess content ownership and management.
 
@@ -215,7 +215,7 @@ Use questions like those found below to assess content ownership and management.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your content ownership and management.
 

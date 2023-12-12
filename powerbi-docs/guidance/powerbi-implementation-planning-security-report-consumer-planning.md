@@ -35,7 +35,6 @@ When you talk with other people, determine whether they're using the term _shari
 - The term _sharing_ is often used in a general way related to sharing content with colleagues. There are several techniques for delivering read-only content, which are described in this article.
 - _Sharing_ is also a specific feature in Power BI. It's a capability where a user or group is granted access to a single item. Sharing links and direct access sharing are described in this article.
 
-
 > [!IMPORTANT]
 > The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
 
@@ -69,7 +68,7 @@ In the following screenshot, the _Direct access_ permissions are shown for a rep
 
 The strategy you choose for read-only consumers can be different. It should be based on the individual solution, the preferences of who manages the solution, or the needs of the consumer. The remainder of this section describes when to consider using each of the available techniques.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for how to provide content to read-only consumers, key decisions and actions include:
 
@@ -173,7 +172,7 @@ The _[Push apps to end users](/fabric/admin/service-admin-portal-app#push-apps-t
 > [!TIP]
 > When publishing an app, if you select the option to install the app automatically, you can't set the audience to be the entire organization (if enabled by the _Push apps to end users_ tenant setting).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for using apps for content viewers, key decisions and actions include:
 
@@ -204,7 +203,7 @@ Here are some suggestions to support workspace viewers.
 - Separate development and test content from production content so that work-in-progress items can't be accessed by viewers.
 - Use apps (or per-item permissions when appropriate) when you expect to have many access requests to process. There isn't a _Request access_ workflow for workspaces.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for using workspaces for content viewers, key decisions and actions include:
 
@@ -282,7 +281,7 @@ Use a [shared view](/power-bi/collaborate-share/service-share-reports) to share 
 
 Shared views are a temporary concept. They automatically expire after 180 days. For this reason, shared views are best suited to informal and temporary sharing scenarios. Be sure your users are aware of this limitation.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for using per-item permissions, key decisions and actions include:
 
@@ -304,7 +303,7 @@ There are other techniques that consumers can use to query Power BI data. Each o
 
 For more information about the Build permission, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning which query techniques consumers will use, key decisions and actions include:
 
@@ -366,7 +365,7 @@ If you intend to provide access to groups instead of individual users, the conte
 > [!TIP]
 > See [Request access workflow for creators](powerbi-implementation-planning-security-content-creator-planning.md#request-access-workflow-for-creators) for information about responding to requests for Build access from content creators. It also includes recommendations about using a form for access requests.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning the _Request access_ workflow, key decisions and actions include:
 
@@ -477,7 +476,7 @@ There isn't currently an interface in Power BI Desktop to set up OLS. You can us
 
 For more information about OLS, see [Restrict access to Power BI model objects](/learn/modules/enforce-power-bi-model-security/3-restrict-access-to-power-bi-model-objects).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for RLS and OLS, key decisions and actions include:
 
