@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/13/2023
+ms.date: 12/11/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -25,7 +25,7 @@ Because the on-object feature is in preview, you need to turn it on. You'll also
 
 1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Preview Features** > **On-object interaction**. 
 
-    :::image type="content" source="media/power-bi-on-object-interaction/on-object-preview-option.png" alt-text="Screenshot showing turning on preview feature.":::
+    :::image type="content" source="media/power-bi-on-object-interaction/on-object-preview-option.png" alt-text="Screenshot showing turning on preview feature." lightbox="media/power-bi-on-object-interaction/on-object-preview-option.png":::
 
 1. Restart Power BI Desktop to see the new experience.
 
@@ -144,7 +144,7 @@ You know you’re in this new mode when the bounding box turns blue, the handle 
 
 You can hover and click around in the visual to format specific subselections. Right-click the selected element to use the mini-toolbar and shortcut menu.
 
-:::image type="content" source="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png" alt-text="Screenshot showing mini-toolbar formatting options.":::
+:::image type="content" source="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png" alt-text="Screenshot showing mini-toolbar formatting options."  lightbox="media/power-bi-on-object-interaction/mini-toolbar-shortcut-menu.png":::
 
 ### Edit labels and titles
 
@@ -165,7 +165,7 @@ In the **Format** pane > **Colors**, select the color you want to use. You can a
 
 When selecting an element that's very close or overlapping another, Power BI takes the best guess at your selection. If the selection is incorrect, right-click and use the dropdown menu to change your selection to the element you’d like to format.
 
-:::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="Screenshot showing selecting overlapping elements.":::
+:::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="Screenshot showing selecting overlapping elements." lightbox="media/power-bi-on-object-interaction/select-overlapping-elements.png":::
 
 ## Attach the build menu to the pane switcher
 
@@ -177,11 +177,11 @@ You can attach the build menu to the pane switcher, if you'd prefer that. Pick o
 
 - On the **View** ribbon, select **Move Build a visual to pane switcher**.
 
-    :::image type="content" source="media/power-bi-on-object-interaction/view-menu-move-switcher.png" alt-text="Screenshot showing View menu, move to pane switcher.":::
+    :::image type="content" source="media/power-bi-on-object-interaction/view-menu-move-switcher.png" alt-text="Screenshot showing View menu, move to pane switcher." lightbox="media/power-bi-on-object-interaction/view-menu-move-switcher.png":::
 
 - On the **File** menu, select **Options and settings** > **Options** > **Report settings**. Select **Always show Build a visual menu in the pane switcher**.
 
-    :::image type="content" source="media/power-bi-on-object-interaction/options-menu-show-pane-switcher.png" alt-text="Screenshot showing Options menu, Always show Build a visual.":::
+    :::image type="content" source="media/power-bi-on-object-interaction/options-menu-show-pane-switcher.png" alt-text="Screenshot showing Options menu, Always show Build a visual." lightbox="media/power-bi-on-object-interaction/options-menu-show-pane-switcher.png":::
 
 With the **View** ribbon and the **Options** dialog, you can choose to **Always show the pane switcher**.
 
