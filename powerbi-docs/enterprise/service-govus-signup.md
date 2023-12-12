@@ -7,7 +7,7 @@ ms.reviewer: jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 12/12/2023
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -71,7 +71,7 @@ If your organization already has a Microsoft 365 Government plan, add a Power BI
 
 2. On the navigation menu, select **Billing**, and then select **Purchase services**.
 
-3. Search or scroll to locate the Power BI Pro Government offer, and choose **Try** or **Buy Now**.
+3. Search or scroll to locate the Power BI Pro Government offer, and select **Buy Now**.
 
 4. Complete your order.
 
