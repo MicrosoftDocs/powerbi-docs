@@ -48,6 +48,8 @@ This article provides a basic introduction to in-place semantic model sharing in
 
 - In-place semantic model sharing is not supported for cross-sovereign cloud scenarios. This means that users in a government cloud cannot share or receive shared semantic models from a commercial cloud tenants. Read more on cross-cloud B2B limitations in [Cross-cloud B2B](../enterprise/service-admin-azure-ad-b2b.md#cross-cloud-b2b).
 
+- A report that was created by a user in the host tenant, using a dataset in the same host tenant will result in failure if opened in Power BI Desktop by a guest user. Only reports created using the 'external data' tab in Power BI Desktop can be re-opened in Power BI Desktop by the guest user.
+
 ## Requirements
 
 - You'll need to enable access for external guest users with Azure AD B2B. For more information, see the enable access section of [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md#enable-invite-external-users-to-your-organization-setting).
