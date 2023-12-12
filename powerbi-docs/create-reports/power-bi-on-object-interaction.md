@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/07/2023
+ms.date: 07/13/2023
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -62,9 +62,9 @@ This option works best when **Suggest a type** is **On**, so you can add as many
 
 :::image type="content" source="media/power-bi-on-object-interaction/multiselect-suggest-type.png" alt-text="Screenshot showing using multiselect in choosing fields.":::
 
-### In-product user education 
+### In-product help
 
-With the many changes to the on-object interaction, it can be hard to know where certain features have moved. These four teaching bubbles can help you along the way. 
+With the many changes to the on-object interaction, it can be hard to know where certain features have moved. These four teaching bubbles can help you along the way.
 
 #### Where’s drillthrough and tooltip page setup?  
 
@@ -76,13 +76,19 @@ A teaching bubble now points to the new location within **Format** > **Page info
 
 Analytics options like error bars, max, min, or percentile lines are consolidated in the **Format** pane at the bottom. You can set a max, min, or other reference line using the new **Reference line** card in the **Format** pane. 
 
+:::image type="content" source="media/power-bi-on-object-interaction/analytics-options-help.png" alt-text="Analytics pane help.":::
+
 #### What happened to the right-click options for a field, like rename or **Show value as**? 
 
 They're still available on the right-click menu. Right-click the field name to see the same options as before.
 
+:::image type="content" source="media/power-bi-on-object-interaction/right-click-field-name-help.png" alt-text="right-click a field name.":::
+
 #### How do I bring back my data pane if the pane switcher is gone? 
 
-You can reopen a pane from the **View** tab in the ribbon. 
+You can reopen a pane from the **View** tab in the ribbon.
+
+:::image type="content" source="media/power-bi-on-object-interaction/data-pane-view-tab-help.png" alt-text="bring back the Data pane.":::
 
 ## Build a visual with on-object interaction
 
@@ -185,7 +191,11 @@ With the new plus (**+**) button on the pane switcher, you can quickly add new p
 
 :::image type="content" source="media/power-bi-on-object-interaction/customize-pane-switcher.png" alt-text="Screenshot showing Customize the pane switcher.":::
 
-Select the gear icon to access the two preference settings to **Always show the pane switcher**, and **Always show the "Build a visual" menu in the pane switcher**.
+Select the gear icon and select the three preference settings:
+
+- **Always show the pane switcher**
+- **Always show the "Build a visual" menu in the pane switcher**
+- **Always open in a new pane**
 
 :::image type="content" source="media/power-bi-on-object-interaction/on-object-pane-switcher.png" alt-text="Screenshot showing the Options dialog pane switcher options.":::
 
@@ -204,7 +214,7 @@ There are two ways to open multiple panes at the same time:
 
 - On-object formatting is currently supported for bar, column, line, area, combo, scatter, card, pie, donut, tree map, and table visuals. Small multiples aren't currently supported.
 - Format mode isn't currently supported in mobile layout.
-
+- Format mode isn't currently supported in focus mode.
 
 ### Subselections
 
@@ -212,10 +222,14 @@ There are two ways to open multiple panes at the same time:
 - Subselection regions don't scale as expected in spotlight mode and after using zoom sliders.
 - Reset to default might not reset direct text edit and background colors for data and category labels.
 
+### On-object buttons
+
+- On-object buttons might show above the formula bar if they're open at the same time.
+
 ### Warnings
 
 - If you set the title or label by conditional formatting, it's possible to override the text with the new direct text editing feature. It's a known issue we're working to block, and warn users that dynamic text takes precedence.
-- While responsive is on, the mini-toolbar increases to the responsive upper bound, then stops. It might appear as a bug that it’s broken. We plan to add an error state to communicate this behavior.
+- While responsive is on, the mini-toolbar will increase to the responsive upper bound, then stop. It might appear as a bug that it’s broken. We plan to add an error state to communicate this.
 
 ### Custom visuals
 
