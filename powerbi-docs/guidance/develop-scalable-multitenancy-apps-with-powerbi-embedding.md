@@ -325,6 +325,5 @@ For more information about this article, check out the following resources:
 - [Service principal profiles for multitenancy apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy)
 - [Migrate multi-customer applications to the service principal profiles model](/power-bi/developer/embedded/migration-to-sp-profiles)
 - [Profiles Power BI REST API operation group](/rest/api/power-bi/profiles)
-- [AppOwnsDataMultiTenant sample application](https://github.com/PowerBiDevCamp/AppOwnsDatamultitenancy)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

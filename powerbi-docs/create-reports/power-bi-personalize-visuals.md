@@ -147,6 +147,4 @@ The feature has a few limitations to be aware of.
 
 - [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md).
 
-   Try the visual personalization experience. Give us your feedback for this feature and tell us how we can continue to improve it on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi).
-
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
