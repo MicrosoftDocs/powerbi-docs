@@ -5238,7 +5238,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-content-pack-app.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-content-pack-app",
+            "redirect_url": "/fabric/admin/service-admin-portal-app",
             "redirect_document_id": false
         },
         {
@@ -5660,7 +5660,62 @@
             "source_path": "powerbi-docs/guidance/fabric-adoption-roadmap-overview.md",
             "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap",
             "redirect_document_id": true
-        }                                                                                                                                                                                                                      
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-465-embedded-report-shows-black-bar.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-443-deployment-pipeline-stuck-loading.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-398-upload-sharepoint-greyed-out.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-308-tenant-migrations-paused.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-find-access-google-search.md",
+            "redirect_url": "/power-bi/consumer/mobile",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                                                                                                                                   
   ]          
 
 }

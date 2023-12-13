@@ -87,6 +87,10 @@ A: There are limitations for custom visuals and animated visuals. The following 
 Q: Can I copy a visual from my embedded Power BI report?  
 A: *Copy visual* is supported only in the **embed for your organization** scenario. It isn't available in the **embed for your customers** scenario.
 
+Q: Can I copy and paste slicer visualizations in a report?
+
+A: No, copying and pasting the slicer visualization is not supported. This includes visuals that use [Visual Filter APIs](../developer/visuals/filter-api.md) which act as slicers. 
+
 ## Next steps
 
 * [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

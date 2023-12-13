@@ -69,7 +69,7 @@ When you plan to build a tenant-level auditing solution, plan to spend time on t
 
 The first phase focuses on planning and decision-making. There are many requirements and priorities to consider, so we recommend that you spend sufficient time to understand the topics introduced in this section. The goal is to make good upfront decisions so that the downstream phases run smoothly.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-1.png" alt-text="Flow diagram describing Phase 1, which focuses on planning and decisions for building a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-1.svg" alt-text="Flow diagram describing Phase 1, which focuses on planning and decisions for building a tenant-level auditing solution." border="false":::
 
 ### Requirements and priorities
 
@@ -87,7 +87,7 @@ Here are some questions you should answer.
 
 For more ideas about ways that you can use auditing data, see [Auditing and monitoring overview](powerbi-implementation-planning-auditing-monitoring-overview.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When identifying requirements and priorities, key decisions and actions include:
 
@@ -236,7 +236,7 @@ These common questions aren't an exhaustive list; there are a wide variety of Po
 
 For more information about using the admin APIs versus user APIs (including how it affects permissions that are required for the user who's extracting the data), see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) later in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When identifying the data that's needed for auditing, key decisions and actions include:
 
@@ -285,7 +285,7 @@ The type of process—manual or automated—might impact how you handle authenti
 > [!TIP]
 > If there's a regular, recurring, need to obtain auditing data that's currently handled manually, consider investing time to automate it. For example, if a Power BI administrator manually runs a script every day to retrieve data from the Power BI activity log, there's a risk of missing data should that person be ill or away on vacation.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the type of auditing solution to develop, key decisions and actions include:
 
@@ -353,7 +353,7 @@ Consider several examples.
 > [!NOTE]
 > The setup of data extraction processes is usually a one-time effort with occasional enhancements and troubleshooting. Analyzing and acting on the data is an ongoing effort that requires continual effort on a recurring basis.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering permissions and responsibilities, key decisions and actions include:
 
@@ -540,7 +540,7 @@ Here are some considerations for how you might access audit data.
 
 We recommend that you review the remainder of this article before choosing a technology to access audit data.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When deciding which technology to use to access audit data, key decisions and actions include:
 
@@ -705,7 +705,7 @@ While it's not important for Power BI professionals to deeply understand the tra
 - Discontinue the use of APIs and modules that are deprecated. For more information, see [Deprecated APIs and modules](#deprecated-apis-and-modules) later in this article.
 - If you find a community solution online, be sure that it's using MSAL for authentication rather than ADAL.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When deciding how to manage authentication, key decisions and actions include:
 
@@ -748,7 +748,7 @@ Consider an example where you need to obtain a list of semantic models. The foll
 
 For information about tenant settings, see [Set Power BI tenant settings](#set-power-bi-tenant-settings) later in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When choosing whether to use a user API or an admin API, key decisions and actions include:
 
@@ -883,7 +883,7 @@ Sometimes there are advantages to calling the Power BI REST APIs directly.
 
 Regardless of which method you choose to use, the REST APIs can change over time. When a technology evolves, APIs (and PowerShell modules) can be deprecated and replaced. Therefore, we recommend that you purposefully create scripts that are simple to maintain and resilient to change.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When choosing whether to access the REST APIs directly or by using PowerShell cmdlets, key decisions and actions include:
 
@@ -933,7 +933,7 @@ Here are some considerations to help you choose your raw data storage.
 - **Do you have data residency requirements?** Some organizations have legal or regulatory data residency requirements to store data in a specific data region.
 - **How will the data be organized?** Use of the [medallion architecture](/fabric/data-engineering/tutorial-lakehouse-introduction) is a common practice, particularly in data lake and lakehouse implementations. The goal is to store your data in bronze, silver, and gold data layers. The bronze layer contains the original raw data. The silver layer contains validated and deduplicated data used for transformations. The gold layer contains the curated, highly refined data that's ready for analysis.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning the location to store raw data, key decisions and actions include:
 
@@ -979,7 +979,7 @@ Use a Power BI data model when:
 
 For more information about what dimension tables and fact tables you might include in your star schema, see [Create a data model](#create-a-data-model) later in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning how to create curated data, key decisions and actions include:
 
@@ -1128,7 +1128,7 @@ Here are some considerations to help you choose your source for user activity da
   - When you need audit logs from multiple services, use the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) to access the unified audit log.
 - **Who will develop the solution?** Plan to invest some time to build out the solution. It can take significant effort to produce a production-ready script.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning how to access user activity data, key decisions and actions include:
 
@@ -1207,7 +1207,7 @@ Here's the sequence of steps your process should follow when using the scanner A
 5. **Get the results:** Use the scan ID obtained in Step 3 to get the [scan result](/rest/api/power-bi/admin/workspace-info-get-scan-result) and extract the data. You must do this step within 24 hours of completing Step 4. Keep in mind that the snapshot time stamp should be correlated with Step 3 rather than Step 5 (when there's a significant delay). That way, you'll have an accurate snapshot time stamp. Save the results in your [preferred data storage location](#determine-where-to-store-audit-data). As already described in this article, we recommend that you store the raw data in its original state.
 6. **Prepare for the next process:** Record the time stamp of the scan from Step 3 so you can use it in Step 2 the next time you run the process. That way, you'll only extract data that's changed since that point in time. Moving forward, all subsequent data extracts will be incremental changes rather than full snapshots.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for access to the tenant inventory data, key decisions and actions include:
 
@@ -1340,7 +1340,7 @@ You might find articles and blog posts online that suggest alternative options t
 >
 > If you have questions or require clarification on the future direction of programmatic data access, contact your Microsoft account team.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to access users and groups data, key decisions and actions include:
 
@@ -1369,7 +1369,7 @@ During a security audit, you might want to identify:
 
 For more information about the other types of APIs, see [Choose a user API or admin API](#choose-a-user-api-or-admin-api) earlier in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for accessing data from the Power BI APIs, key decisions and actions include:
 
@@ -1381,7 +1381,7 @@ For more information about the other types of APIs, see [Choose a user API or ad
 
 The second phase of planning and implementing a tenant-level auditing solution focuses on prerequisites and setup that must be done before you begin solution development.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-2.png" alt-text="Flow diagram describing Phase 2, which focuses on prerequisites and setup for building a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-2.svg" alt-text="Flow diagram describing Phase 2, which focuses on prerequisites and setup for building a tenant-level auditing solution." border="false":::
 
 ### Create storage account
 
@@ -1389,7 +1389,7 @@ At this point, you've decided on a [location to store raw data](#determine-where
 
 As described earlier, we recommend using a technology that allows you to write the raw data to immutable storage. Once the data is written, it can't be changed or deleted. You can then have confidence in the raw data because you know that an administrator with access can't alter it in any way. The curated data, however, doesn't (usually) need to be stored in immutable storage. Curated data might change or it can be regenerated.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When creating a storage account, key decisions and actions include:
 
@@ -1413,7 +1413,7 @@ If you've made the decision (previous described) to use PowerShell, you should i
 
 If you've chosen to use any Azure services (such as Azure Functions, Azure Automation, Azure Data Factory, or Azure Synapse Analytics), you should provision and set them up as well.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When installing software and setting up services, key decisions and actions include:
 
@@ -1428,7 +1428,7 @@ At this point, you've decided [how to authenticate](#determine-the-authenticatio
 
 For more information about how to create an app registration to retrieve tenant-level auditing data, see [Enable service principal authentication for read-only admin APIs](/power-bi/enterprise/read-only-apis-service-principal-authentication).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When registering a Microsoft Entra application, key decisions and actions include:
 
@@ -1479,7 +1479,7 @@ There are other tenant settings related to APIs, which allow access to the embed
 
 For more information about the tenant settings for usage metrics, see [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When setting up the Power BI tenant settings, key decisions and actions include:
 
@@ -1494,7 +1494,7 @@ For more information about the tenant settings for usage metrics, see [Report-le
 
 The third phase of planning and implementing a tenant-level auditing solution focuses on solution development and analytics. At this point, all the planning and decision-making has occurred, and you've met prerequisites and completed the setup. You're now ready to begin solution development so that you can perform analytics and gain insights from your auditing data.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-3.png" alt-text="Flow diagram describing Phase 3, which focuses on solution development and analytics of a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-3.svg" alt-text="Flow diagram describing Phase 3, which focuses on solution development and analytics of a tenant-level auditing solution." border="false":::
 
 ### Extract and store the raw data
 
@@ -1515,7 +1515,7 @@ Here are some considerations for when you extract and store the raw data retriev
 - **Is the audit data needed for compliance?** Many organizations use the raw audit log records to do compliance audits or to respond to security investigations. In these cases, we strongly recommend that you store the raw data in immutable storage. That way, once the data is written, it can't be changed or deleted by an administrator or other user.
 - **What storage layers are necessary to support your requirements?** The best places to store raw data are a data lake (like Azure Data Lake Storage Gen2) or object storage (like Azure Blob Storage). A file system can also be used if cloud services aren't an option.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When extracting and storing the raw data, key decisions and actions include:
 
@@ -1536,7 +1536,7 @@ At this point, the raw data is extracted and stored. The next step is to create 
 > [!TIP]
 > When you expect there to be more than one data model, investing in a centralized curated data layer is particularly useful.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating the curated data layer, key decisions and actions include:
 
@@ -1592,7 +1592,7 @@ We recommend that you create your data model separate from reports. The decoupli
 
 Consider setting up [row-level security](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) (RLS) so that other users—beyond the Center of Excellence, auditors, and administrators—can analyze and report on auditing data. For example, you could use RLS rules to allow content creators and consumers to report on their own user activities or development efforts.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating the data model, key decisions and actions include:
 
@@ -1652,7 +1652,7 @@ Consider some examples that demonstrate how simple classification logic might mi
 > [!TIP]
 > You can calculate averages and trends by using the DAX time intelligence functions. To learn how to use these functions, work through the [Use DAX time intelligence functions in Power BI Desktop models](/training/modules/dax-power-bi-time-intelligence/) learning module.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When creating classifying usage data, key decisions and actions include:
 
@@ -1689,7 +1689,7 @@ This list isn't all-inclusive. It's intended to provide you with ideas about how
 >
 > To learn how to create analytical reports, work through the [Design effective reports in Power BI](/training/paths/power-bi-effective/) learning path.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for analytical auditing reports, key decisions and actions include:
 
@@ -1764,7 +1764,7 @@ Here are some situations that you might encounter. Consider explicitly looking f
 
 The specific actions to be taken in each situation will depend on your governance policies. For more information, see [Governance](fabric-adoption-roadmap-governance.md) in the Fabric adoption roadmap.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for potential actions based on the auditing data, key decisions and actions include:
 
@@ -1778,7 +1778,7 @@ The specific actions to be taken in each situation will depend on your governanc
 
 The fourth phase of planning and implementing a tenant-level auditing solution focuses on maintenance, enhancements, and monitoring. At this point, your auditing solution is in production use. You're now primarily concerned with maintaining, enhancing, and monitoring the solution.
 
-:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-4.png" alt-text="Flow diagram describing Phase 4, which focuses on maintaining, enhancing, and monitoring a tenant-level auditing solution." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing/tenant-level-auditing-phase-4.svg" alt-text="Flow diagram describing Phase 4, which focuses on maintaining, enhancing, and monitoring a tenant-level auditing solution." border="false":::
 
 ### Operationalize and improve
 
@@ -1799,7 +1799,7 @@ A production-level auditing process has been _operationalized_. An operationaliz
 > [!TIP]
 > You don't have to do everything listed above all at once. As you gain experience, you can incrementally improve the solution so that it becomes complete and robust. Be aware that most examples you find online are simple, one-off script snippets that might not be production quality.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to operationalize and improve an auditing solution, key decisions and actions include:
 
@@ -1847,7 +1847,7 @@ You derive more value from your auditing solution by providing usage and adoptio
 
 Content creator documentation is targeted at self-service content creators who create reports and data models that source the curated auditing data. It includes information about the data model, including common data definitions.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When planning for documentation and support for your auditing solution, key decisions and actions include:
 
@@ -1878,7 +1878,7 @@ You need to perform ongoing management of the entire auditing solution. You migh
 > [!IMPORTANT]
 > Breaking changes are rare, but they can occur. It's important that you have someone available who can quickly troubleshoot issues or update the auditing solution when necessary.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for ongoing management of the auditing solution, key decisions and actions include:
 

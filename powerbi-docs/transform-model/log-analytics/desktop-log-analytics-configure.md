@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 12/07/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -138,7 +138,7 @@ The following table describes the **schema**.
 | **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
 | **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
-| **semantic modelMode** | | The mode of the semantic model. Import, DirectQuery, or Composite. |
+| **DatasetMode** | | The mode of the semantic model. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
 | **User** | User_s | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
 | **ExecutingUser** | EffectiveUsername_s | The user running the operation. |

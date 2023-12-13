@@ -313,7 +313,7 @@ Due to the above considerations, we recommend that you use a user-assigned manag
 
 For an example of how to use service principal profiles to manage a multitenant environment with Power BI and App-Owns-Data embedding, download the [App owns data multitenant](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant) repository from [Power BI Dev Camp](https://www.powerbidevcamp.net/) (third party site).
 
-## Next steps
+## Related content
 
 * [Use the Power BI SDK with service principals](service-principal-profile-sdk.md)
 * [Migrate multitenancy apps to the service principal profiles model](migration-to-sp-profiles.md)

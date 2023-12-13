@@ -18,7 +18,7 @@ A _community of practice_ is a group of people with a common interest that inter
 
 The following diagram provides an overview of an internal community.
 
-:::image type="content" source="media/fabric-adoption-roadmap-community-of-practice/community-of-practice.png" alt-text="Diagram shows the community relationships between the Center of Excellence, creators, champions, and consumers, which are described next." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-community-of-practice/community-of-practice.svg" alt-text="Diagram shows the community relationships between the Center of Excellence, creators, champions, and consumers, which are described next." border="false":::
 
 The above diagram shows the following:
 
@@ -137,7 +137,7 @@ Resources for the internal community, such as documentation, templates, and trai
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take for the community of practice follow.
 
@@ -180,7 +180,7 @@ Resources for the internal community, such as documentation, templates, and trai
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess the community of practice.
 
@@ -197,7 +197,7 @@ Use questions like those found below to assess the community of practice.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your community of practice.
 

@@ -39,7 +39,7 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 
 For dynamic binding to work, you need to add `datasetBinding` to the config object. To learn how this is done, see [Bind datasets dynamically to a report](/javascript/api/overview/powerbi/bind-report-datasets).
 
-## Next steps
+## Related content
 
 If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content.
 

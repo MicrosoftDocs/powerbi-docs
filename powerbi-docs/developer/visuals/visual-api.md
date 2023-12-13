@@ -136,7 +136,7 @@ public destroy(): void
 > [!TIP]
 > Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
 
-## Next steps
+## Related content
 
 * [Visual project structure](visual-project-structure.md)
 

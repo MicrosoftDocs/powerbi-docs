@@ -516,7 +516,7 @@ Try out the [Power BI embedded analytics playground](./power-bi-playground.md) t
 > [!IMPORTANT]
 > If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
-## Next steps
+## Related content
 
 * [Move to production](move-to-production.md)
 * [Embed for your organization](embed-sample-for-your-organization.md)

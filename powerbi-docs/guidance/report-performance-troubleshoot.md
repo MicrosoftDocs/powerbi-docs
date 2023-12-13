@@ -20,18 +20,18 @@ Slow reports can be identified by report users who experience reports that are s
 
 Use the following flowchart to help understand the cause of slow performance, and to determine what action to take.
 
-:::image type="content" source="media/report-performance-troubleshoot/flowchart.png" alt-text="Image shows the flowchart, which is fully described in the article text." border="true":::
+:::image type="content" source="media/report-performance-troubleshoot/flowchart.png" alt-text="Image shows the flowchart, which is fully described in the article text." border="false":::
 
 There are six flowchart terminators, each describing action to take:
 
 | **Terminator** | **Action(s)** |
 |---|---|
-| ![Flowchart terminator 1.](media/common/icon-01-red-30x30.png) | &bull;&nbsp;Manage capacity. <br/>&bull;&nbsp;Scale capacity. |
-| ![Flowchart terminator 2.](media/common/icon-02-red-30x30.png) | &bull;&nbsp;Investigate capacity activity during typical report usage. |
-| ![Flowchart terminator 3.](media/common/icon-03-red-30x30.png) | &bull;&nbsp;Architecture change. <br/>&bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Check on-premises gateway. |
-| ![Flowchart terminator 4.](media/common/icon-04-red-30x30.png) | &bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Consider Power BI Premium. |
-| ![Flowchart terminator 5.](media/common/icon-05-red-30x30.png) | &bull;&nbsp;Use Power BI Desktop Performance Analyzer. <br/>&bull;&nbsp;Optimize report, model, or DAX. |
-| ![Flowchart terminator 6.](media/common/icon-06-red-30x30.png) | &bull;&nbsp;Raise support ticket. |
+| ![Flowchart terminator 1.](../media/legend-number/legend-number-01-fabric.svg) | &bull;&nbsp;Manage capacity. <br/>&bull;&nbsp;Scale capacity. |
+| ![Flowchart terminator 2.](../media/legend-number/legend-number-02-fabric.svg) | &bull;&nbsp;Investigate capacity activity during typical report usage. |
+| ![Flowchart terminator 3.](../media/legend-number/legend-number-03-fabric.svg) | &bull;&nbsp;Architecture change. <br/>&bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Check on-premises gateway. |
+| ![Flowchart terminator 4.](../media/legend-number/legend-number-04-fabric.svg) | &bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Consider Power BI Premium. |
+| ![Flowchart terminator 5.](../media/legend-number/legend-number-05-fabric.svg) | &bull;&nbsp;Use Power BI Desktop Performance Analyzer. <br/>&bull;&nbsp;Optimize report, model, or DAX. |
+| ![Flowchart terminator 6.](../media/legend-number/legend-number-06-fabric.svg) | &bull;&nbsp;Raise support ticket. |
 
 ## Take action
 

@@ -42,7 +42,7 @@ Ideally, performance is a primary concern during the report design process. Here
 
 You might choose to create a standard performance target that's intended to apply to all reports throughout the organization. For example, the first report page should render within five seconds. However, because there are so many different considerations, it's not typically realistic to expect that every solution should meet the same target. Consider ranges for your performance targets that factor in the complexity level of the solution.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering how report creators should verify report performance, key decisions and actions include:
 
@@ -97,7 +97,7 @@ There are two tenant settings related to usage metrics.
 
 The _ViewUsageMetrics_ operation in the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) allows Power BI administrators to monitor which content creators and owners are using the usage metrics reports. You can use that information to guide training and documentation efforts.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for using the usage metrics report, key decisions and actions include:
 
@@ -156,7 +156,7 @@ Some organizations have specific requirements for [endorsed](/power-bi/collabora
 >
 > For more information about optimization techniques, see [Optimization guide for Power BI](power-bi-optimization.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering how report creators should use Performance Analyzer, key decisions and actions include:
 

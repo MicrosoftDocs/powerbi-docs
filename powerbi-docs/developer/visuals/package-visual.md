@@ -78,7 +78,7 @@ Before you can load your custom visual into [Power BI Desktop](https://powerbi.m
 
 The package outputs to the */dist/* folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You packaged the custom visual, and it's ready for use.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Publish Power BI visuals to Partner Center](office-store.md)

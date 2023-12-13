@@ -173,7 +173,7 @@ To effectively manage change, you should identify and engage detractors early in
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess change management.
 
@@ -191,7 +191,7 @@ Use questions like those found below to assess change management.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 An assessment of change management evaluates how effectively the organization can enact and respond to change.
 

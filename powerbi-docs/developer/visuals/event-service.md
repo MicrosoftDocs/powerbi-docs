@@ -108,7 +108,7 @@ If the visual has animations or asynchronous functions for rendering, the `rende
         }
 ```
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Visual API](visual-api.md)

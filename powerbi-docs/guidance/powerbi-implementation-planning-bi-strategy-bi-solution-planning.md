@@ -29,7 +29,7 @@ There are many approaches to plan and implement BI solutions. This article descr
 
 The following high-level diagram depicts how to conduct BI solution planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/planning-levels.png" alt-text="Image shows an overview of strategic, tactical, and solution planning for business intelligence. Solution planning is highlighted. The details about solution planning are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/bi-solution-planning-levels.svg" alt-text="Diagram shows an overview of strategic, tactical, and solution planning for business intelligence. Solution planning is highlighted. The details about solution planning are described in the table below." border="false":::
 
 You take the following steps to conduct BI solution planning.
 
@@ -52,7 +52,7 @@ You commence solution planning by first gathering requirements and defining the 
 
 **Note:** Strategic and tactical planning is led by a _working team_, which leads the initiative. In contrast, solution planning is led by a _project team_, which consists of content owners and creators.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-1.png" alt-text="Image shows step 1 in a series of five steps to deliver value iteratively from BI solution planning. Step 1 is about gathering requirements." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/bi-solution-planning-step-1.svg" alt-text="Diagram shows step 1 in a series of five steps to deliver value iteratively from BI solution planning. Step 1 is about gathering requirements." border="false":::
 
 Gathering the right requirements is critical to achieve successful solution deployment and adoption. An effective way to gather requirements is to identify and involve the right stakeholders, collaboratively define the problem to be solved, and use that shared understanding of the problem to create a solution design.
 
@@ -114,18 +114,18 @@ The purpose of the business design sessions is to:
 
 The following diagram depicts how to gather business requirements and define the solution design by using a business design approach.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/business-design.png" alt-text="Image shows a process for business design, which is about gathering business requirements and defining the solution. Each step in the process is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/business-design.svg" alt-text="Diagram shows a process for business design, which is about gathering business requirements and defining the solution. Each step in the process is described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The project team begins the business design by confirming the solution scope that was first documented in [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). They should clarify the business areas, systems, and data covered by the solution. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | The project team identifies key stakeholders from the user community who will be involved in the business design sessions. Key stakeholders are users with sufficient knowledge and credibility to represent the subject areas of the solution. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | The project team plans business design sessions. Planning involves informing stakeholders, organizing meetings, preparing deliverables, and engaging with business users. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | The project team gathers and researches existing solutions that business users currently use to address existing business data needs. To accelerate this process, the project team can use relevant research from BI strategic planning, which has been documented in the [communication hub](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#create-a-communication-hub). |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The project team runs business design sessions with stakeholders. These sessions are small, interactive meetings, where the project team guides stakeholders to understand business data needs and requirements. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | The project team concludes the business design by presenting a draft solution design to stakeholders and other users for feedback and approval. The business design is successful when the stakeholders agree that the design will help them achieve their business objectives. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The project team begins the business design by confirming the solution scope that was first documented in [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md). They should clarify the business areas, systems, and data covered by the solution. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The project team identifies key stakeholders from the user community who will be involved in the business design sessions. Key stakeholders are users with sufficient knowledge and credibility to represent the subject areas of the solution. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The project team plans business design sessions. Planning involves informing stakeholders, organizing meetings, preparing deliverables, and engaging with business users. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | The project team gathers and researches existing solutions that business users currently use to address existing business data needs. To accelerate this process, the project team can use relevant research from BI strategic planning, which has been documented in the [communication hub](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#create-a-communication-hub). |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The project team runs business design sessions with stakeholders. These sessions are small, interactive meetings, where the project team guides stakeholders to understand business data needs and requirements. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The project team concludes the business design by presenting a draft solution design to stakeholders and other users for feedback and approval. The business design is successful when the stakeholders agree that the design will help them achieve their business objectives. |
 
 The business design concludes with the following deliverables.
 
@@ -177,19 +177,19 @@ The project team engages stakeholders in technical design sessions to address te
 
 The following diagram depicts how to translate business requirements into technical requirements by using a technical design.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/technical-design.png" alt-text="Image shows a process for technical design, which is about validating and finalizing the outcomes of the business design, and translating business requirements to technical requirements. Each step in the process is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/technical-design.svg" alt-text="Diagram shows a process for technical design, which is about validating and finalizing the outcomes of the business design, and translating business requirements to technical requirements. Each step in the process is described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The project team begins the technical design by defining the data source scope based on the results of the business design. To identify the right data sources, the project team consults with the business and functional SMEs. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | The project team identifies technical or functional stakeholders to involve later in the technical design sessions. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | The project team plans limited, focused sessions with functional stakeholders to address technical aspects of the solution. Planning involves informing stakeholders, organizing meetings, and preparing deliverables. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | The project team researches technical requirements. Research includes defining field calculations and data source mappings, and also addressing the business design assumptions with technical analysis and documentation. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | If necessary, the project team involves stakeholders in technical design sessions. Sessions focus on a specific, technical aspect of the solution, like security or data source connections. In these sessions, the project team gathers qualitative feedback from stakeholders and SMEs. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | The project team prepares their findings by using a solution plan, which they present to stakeholders and decision makers. The plan is an iteration and extension of the business design outcomes that includes the final design, estimations, and other deliverables. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | The technical design should conclude with a final meeting with stakeholders and decision makers to decide whether or not to proceed. This meeting provides a final opportunity to evaluate the solution planning before resources are committed to developing the solution. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The project team begins the technical design by defining the data source scope based on the results of the business design. To identify the right data sources, the project team consults with the business and functional SMEs. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The project team identifies technical or functional stakeholders to involve later in the technical design sessions. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The project team plans limited, focused sessions with functional stakeholders to address technical aspects of the solution. Planning involves informing stakeholders, organizing meetings, and preparing deliverables. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | The project team researches technical requirements. Research includes defining field calculations and data source mappings, and also addressing the business design assumptions with technical analysis and documentation. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | If necessary, the project team involves stakeholders in technical design sessions. Sessions focus on a specific, technical aspect of the solution, like security or data source connections. In these sessions, the project team gathers qualitative feedback from stakeholders and SMEs. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The project team prepares their findings by using a solution plan, which they present to stakeholders and decision makers. The plan is an iteration and extension of the business design outcomes that includes the final design, estimations, and other deliverables. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The technical design should conclude with a final meeting with stakeholders and decision makers to decide whether or not to proceed. This meeting provides a final opportunity to evaluate the solution planning before resources are committed to developing the solution. |
 
 > [!NOTE]
 > The technical design might reveal unexpected complexity that could make the solution planning infeasible given the current resource availability or organizational readiness. In this case, the solution should be reevaluated in the subsequent [tactical planning period](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan). Depending on the urgency of the business data needs, a decision maker, like the executive sponsor, might still want to proceed with a proof of concept, or only one part of the planned solution.
@@ -208,7 +208,7 @@ The technical design concludes with a solution plan, which consists of the follo
 > [!TIP]
 > Because business objectives invariably evolve, it's expected that requirements will change. Don't assume that requirements for BI projects are fixed. If you struggle with changing requirements, it might be an indication that your requirements gathering process isn't effective, or that your development workflows don't sufficiently incorporate regular feedback.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When gathering requirements, key decisions and actions include:
 
@@ -227,7 +227,7 @@ The technical design concludes with a solution plan, which consists of the follo
 
 When the project team finishes gathering requirements, creating the solution plan, and receiving approval to proceed, it's ready to plan for solution deployment.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-2.png" alt-text="Image shows step 2 in a series of five steps to deliver value iteratively from BI solution planning. Step 2 is about planning for deployment." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/bi-solution-planning-step-2.svg" alt-text="Diagram shows step 2 in a series of five steps to deliver value iteratively from BI solution planning. Step 2 is about planning for deployment." border="false":::
 
 Deployment planning tasks differ depending on the solution, your development workflow, and your deployment process. A deployment plan typically pertains to many activities involving the planning and setup of tools and processes for the solution.
 
@@ -257,7 +257,7 @@ The project team should perform initial set up to commence development. Initial 
 
 For more information about deployment planning, see [Plan deployment to migrate to Power BI](powerbi-migration-planning.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning solution deployment, key decisions and actions include:
 
@@ -270,7 +270,7 @@ For more information about deployment planning, see [Plan deployment to migrate 
 
 The project team conducts a solution _[proof of concept (POC)](powerbi-migration-proof-of-concept.md)_ to validate outstanding assumptions and to demonstrate early benefits for business users. A POC is an initial design implementation that's limited in scope and maturity. A well-run POC is particularly important for large or complex solutions because it can identify and address complexities (or exceptions) that weren't detected in the technical design.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-3.png" alt-text="Image shows step 3 in a series of five steps to deliver value iteratively from BI solution planning. Step 3 is about conducting a proof of concept." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/bi-solution-planning-step-3.svg" alt-text="Diagram shows step 3 in a series of five steps to deliver value iteratively from BI solution planning. Step 3 is about conducting a proof of concept." border="false":::
 
 We recommend factoring in the following considerations when preparing a POC.
 
@@ -293,7 +293,7 @@ We recommend factoring in the following considerations when preparing a POC.
 > [!NOTE]
 > For more information, see [Conduct proof of concept to migrate to Power BI](powerbi-migration-proof-of-concept.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating a POC, key decisions and actions include:
 
@@ -308,7 +308,7 @@ We recommend factoring in the following considerations when preparing a POC.
 
 When the POC is successful, the project team shifts from the POC to creating and validating content. The project team can develop the BI solution with iterative development and validation cycles. These cycles consist of iterative releases, where the project team creates content in a development environment and releases it to a test environment. During development, the project team gradually onboards the user community in a pilot process to early (beta) versions of the solution in the test environment.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-4.png" alt-text="Image shows step 4 in a series of five steps to deliver value iteratively from BI solution planning. Step 4 is about creating and validating content." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/bi-solution-planning-step-4.svg" alt-text="Diagram shows step 4 in a series of five steps to deliver value iteratively from BI solution planning. Step 4 is about creating and validating content." border="false":::
 
 > [!TIP]
 > Iterative delivery encourages early validation and feedback that can mitigate change requests, promote solution adoption, and realize benefits before the production release.
@@ -317,19 +317,19 @@ Iterative development and validation cycles proceed until the project team arriv
 
 The following diagram depicts how the project team can iteratively deliver BI solutions with development and validation cycles.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/development-and-validation-cycles.png" alt-text="Image shows a process for the development and validation cycle, which is about iteratively building and testing solutions. Each step in the process is described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/development-and-validation-cycle.svg" alt-text="Diagram shows a process for the development and validation cycle, which is about iteratively building and testing solutions. Each step in the process is described in the table below." border="false":::
 
 The diagram depicts the following steps.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The project team communicates each release to the user community, describing changes and new features. Ideally, communication includes a solution demonstration and Q&A, so users understand what's new in the release, and they can provide verbal feedback. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | During validation, users provide feedback via a central tool or form. The project team should review feedback regularly to address issues, accept or reject requests, and inform upcoming development phases. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | The project team monitors usage of the solution to confirm that users are testing it. If there isn't any usage, the project team should engage with the user community to understand the reasons why. Low usage can indicate that the project team needs to take further enablement and change management actions. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | The project team promptly responds to user feedback. If the project team takes too long to address feedback, users might quickly lose motivation to provide it. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The project team incorporates accepted feedback into the solution planning. If necessary, they review the planning priorities to clarify and delegate tasks before the next development phase begins. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | The project team continues development of the solution for the next release. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | The project team iterates through all steps until they reach a predefined conclusion, and the solution is ready for production deployment. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The project team communicates each release to the user community, describing changes and new features. Ideally, communication includes a solution demonstration and Q&A, so users understand what's new in the release, and they can provide verbal feedback. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | During validation, users provide feedback via a central tool or form. The project team should review feedback regularly to address issues, accept or reject requests, and inform upcoming development phases. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The project team monitors usage of the solution to confirm that users are testing it. If there isn't any usage, the project team should engage with the user community to understand the reasons why. Low usage can indicate that the project team needs to take further enablement and change management actions. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | The project team promptly responds to user feedback. If the project team takes too long to address feedback, users might quickly lose motivation to provide it. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The project team incorporates accepted feedback into the solution planning. If necessary, they review the planning priorities to clarify and delegate tasks before the next development phase begins. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The project team continues development of the solution for the next release. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The project team iterates through all steps until they reach a predefined conclusion, and the solution is ready for production deployment. |
 
 The following sections describe key considerations for using iterative development and validation cycles to deliver BI solutions.
 
@@ -368,7 +368,7 @@ When the solution reaches a predefined level of completeness and maturity, the p
 
 This article describes only high-level planning and actionable items. For more information about iterative development and testing cycles, see [Create content to migrate to Power BI](powerbi-migration-create-validate-content.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating and validating content, key decisions and actions include:
 
@@ -383,7 +383,7 @@ This article describes only high-level planning and actionable items. For more i
 
 When ready, the project team deploys the validated solution to the production environment. The project team should take key adoption and support actions to ensure that the deployment is successful.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/step-5.png" alt-text="Image shows step 5 in a series of five steps to deliver value iteratively from BI solution planning. Step 5 is about deploying, supporting, and monitoring." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-solution-planning/bi-solution-planning-step-5.svg" alt-text="Diagram shows step 5 in a series of five steps to deliver value iteratively from BI solution planning. Step 5 is about deploying, supporting, and monitoring." border="false":::
 
 To ensure a successful deployment, you perform the following support and adoption tasks.
 
@@ -398,7 +398,7 @@ To ensure a successful deployment, you perform the following support and adoptio
 
 After deployment, the project team should plan to proceed to the next solution in the prioritized solution backlog. Ensure that you collect any new feedback and requests and make revisions to [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan)—including the solution backlog—if necessary.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When considering solution deployment, key decisions and actions include:
 

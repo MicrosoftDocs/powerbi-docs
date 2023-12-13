@@ -67,15 +67,15 @@ Governance isn't well-received when it's enacted with top-down mandates that are
 
 There are three primary timing methods organizations take when introducing Fabric governance to an organization.
 
-:::image type="content" source="media/fabric-adoption-roadmap-governance/governance-timing.png" alt-text="Diagram shows the three main ways governance is introduced, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-governance/governance-timing.svg" alt-text="Diagram shows the three main ways governance is introduced, which are described in the table below." border="false":::
 
 The methods in the above diagram include:
 
 | **Method** | **Strategy followed** |
 | :-: | --- |
-| ![Method 1.](media/common/icon-01-red-30x30.png) | **Roll out Fabric first, then introduce governance:** Fabric is made widely available to users in the organization as a new self-service data and BI tool. Then, at some time in the future, a governance effort begins. This method prioritizes agility. |
-| ![Method 2.](media/common/icon-02-red-30x30.png) | **Full governance planning first, then roll out Fabric:** Extensive governance planning occurs prior to permitting users to begin using Fabric. This method prioritizes control and stability. |
-| ![Method 3.](media/common/icon-03-red-30x30.png) | **Iterative governance planning with rollouts of Fabric in stages:** Just enough governance planning occurs initially. Then Fabric is iteratively rolled out in stages to individual teams while iterative governance enhancements occur. This method equally prioritizes agility and governance. |
+| ![Method 1.](../media/legend-number/legend-number-01-fabric.svg) | **Roll out Fabric first, then introduce governance:** Fabric is made widely available to users in the organization as a new self-service data and BI tool. Then, at some time in the future, a governance effort begins. This method prioritizes agility. |
+| ![Method 2.](../media/legend-number/legend-number-02-fabric.svg) | **Full governance planning first, then roll out Fabric:** Extensive governance planning occurs prior to permitting users to begin using Fabric. This method prioritizes control and stability. |
+| ![Method 3.](../media/legend-number/legend-number-03-fabric.svg) | **Iterative governance planning with rollouts of Fabric in stages:** Just enough governance planning occurs initially. Then Fabric is iteratively rolled out in stages to individual teams while iterative governance enhancements occur. This method equally prioritizes agility and governance. |
 
 Choose method 1 when Fabric is already used for self-service scenarios, and you're ready to start working in a more efficient manner.
 
@@ -402,16 +402,16 @@ The organizational structure for data governance varies substantially between or
 
 Governance accountability is about checks and balances.
 
-:::image type="content" source="media/fabric-adoption-roadmap-governance/governance-accountability.png" alt-text="Diagram shows the four types of operational, tactical, and strategic involvement, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-governance/governance-accountability.svg" alt-text="Diagram shows the four types of operational, tactical, and strategic involvement, which are described in the table below." border="false":::
 
 Starting at the bottom, the levels in the above diagram include:
 
 | **Level** | **Description** |
 | :-: | --- |
-| ![Level 1.](media/common/icon-01-red-30x30.png) | **Operational - Business units:** Level 1 is the foundation of a well-governed system, which includes users within the business units performing their work. Self-service data and BI creators have a lot of responsibilities related to authoring, publishing, sharing, security, and data quality. Self-service data and BI consumers also have responsibilities for the proper use of data. |
-| ![Level 2.](media/common/icon-02-red-30x30.png) | **Tactical - Supporting teams:** Level 2 includes several groups that support the efforts of the users in the business units. Supporting teams include the COE, enterprise data and BI, the data governance office, as well as other ancillary teams. Ancillary teams can include IT, security, HR, and legal. A change control board is included here as well. |
-| ![Level 3.](media/common/icon-03-red-30x30.png) | **Tactical - Audit and compliance:** Level 3 includes internal audit, risk management, and compliance teams. These teams provide guidance to levels 1 and 2. They also provide enforcement when necessary. |
-| ![Level 4.](media/common/icon-04-red-30x30.png) | **Strategic - Executive sponsor and steering committee:** The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. Therefore, it's important to have a leadership team with sufficient authority to be able to make decisions when necessary. |
+| ![Level 1.](../media/legend-number/legend-number-01-fabric.svg) | **Operational - Business units:** Level 1 is the foundation of a well-governed system, which includes users within the business units performing their work. Self-service data and BI creators have a lot of responsibilities related to authoring, publishing, sharing, security, and data quality. Self-service data and BI consumers also have responsibilities for the proper use of data. |
+| ![Level 2.](../media/legend-number/legend-number-02-fabric.svg) | **Tactical - Supporting teams:** Level 2 includes several groups that support the efforts of the users in the business units. Supporting teams include the COE, enterprise data and BI, the data governance office, as well as other ancillary teams. Ancillary teams can include IT, security, HR, and legal. A change control board is included here as well. |
+| ![Level 3.](../media/legend-number/legend-number-03-fabric.svg) | **Tactical - Audit and compliance:** Level 3 includes internal audit, risk management, and compliance teams. These teams provide guidance to levels 1 and 2. They also provide enforcement when necessary. |
+| ![Level 4.](../media/legend-number/legend-number-04-fabric.svg) | **Strategic - Executive sponsor and steering committee:** The top level includes the executive-level oversight of strategy and priorities. This level handles any escalated issues that couldn't be solved at lower levels. Therefore, it's important to have a leadership team with sufficient authority to be able to make decisions when necessary. |
 
 > [!IMPORTANT]
 > Everyone has a responsibility to adhere to policies for ensuring that organizational data is secure, protected, and well-managed as an organizational asset. Sometimes this is cited as _everyone is a data steward_. To make this a reality, start with the users in the business units (level 1 described above) as the foundation.
@@ -445,7 +445,7 @@ Governance team structure, roles (including terminology), and responsibilities v
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take to establish or strengthen your governance initiatives.
 
@@ -465,7 +465,7 @@ Governance team structure, roles (including terminology), and responsibilities v
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess governance.
 
@@ -492,7 +492,7 @@ Use questions like those found below to assess governance.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your governance initiatives.
 

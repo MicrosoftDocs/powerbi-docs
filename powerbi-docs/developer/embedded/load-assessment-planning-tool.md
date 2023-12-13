@@ -42,7 +42,7 @@ The [Power BI capacity tools GitHub repository](https://github.com/microsoft/Pow
 
 The repository is open source. Users are encouraged to contribute by adding more tools related to Power BI Premium and Embedded capacities, and improving the existing ones.
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Power BI Embedded performance best practices](embedded-performance-best-practices.md)

@@ -247,7 +247,7 @@ vi-VN | tiếng Việt (Vietnamese)
 zh-CN | 中国 (Chinese-Simplified)
 zh-TW | 中國 (Chinese-Tranditional)
 
-## Next steps
+## Related content
 
 [Formatting utils](utils-formatting.md)
 

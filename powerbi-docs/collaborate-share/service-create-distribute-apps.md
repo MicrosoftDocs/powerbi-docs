@@ -137,8 +137,6 @@ On the **Audience** tab, you create and manage audience groups within the app.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
-    >
-    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
@@ -189,7 +187,7 @@ However, this option is disabled in these three scenarios:
 
 - You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization.
 - You're a guest user who has been assigned a workspace role. 
-- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [Content pack and app tenant settings](/fabric/admin/service-admin-portal-content-pack-app#publish-content-packs-and-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+- Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [App tenant settings](/fabric/admin/service-admin-portal-app#publish-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
 
 ## Change the settings for users who don't have access
 
@@ -292,7 +290,7 @@ You can't copy a link to an Excel workbook in an app.
 
 ## Automatically install apps for end users
 
-If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-content-pack-app#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
 

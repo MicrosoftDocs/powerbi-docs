@@ -6,22 +6,24 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 11/23/2023
+ms.date: 11/30/2023
 ms.custom:  
 ---
 
 # Power BI known issues
 
-This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed. Known issues are also available as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
+This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed. Known issues are also available for all of Fabric (including Power BI) as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
-## Currently active known issues
+## Currently active Power BI known issues
 
 Select the **Title** to view more information about that specific known issue.
 
 |  Issue ID |  Area                              |  Title  |  Issues publish date |  
 |-----------|------------------------------------|---------|----------------------|
+|  571      |  Capacity Management  |  [Contributor can't update organizational app](known-issue-571-contributor-can-not-update-organizational-app.md)    | November 30, 2023  |
+|  570      |  Capacity Management  |  [Version 17 of the Fabric Capacity Metrics app doesn't work](known-issue-570-version-17-capacity-metrics-app-does-not-work.md)    | November 30, 2023  |
 |  552      |  Consume and View  |  [Autoscale not triggered by carry forward accumulated usage](known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md)    | November 22, 2023  |
 |  546      |  Consume and View  |  [Closing a Dataflow Gen1 takes you to the wrong workspace](known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md)    | November 15, 2023  |
 |  535      |  Consume and View  |  [New card visual formatting appears or disappears in Service](known-issue-535-new-card-visual-formatting-appears-disappears.md)    | October 25, 2023  |
@@ -32,7 +34,7 @@ Select the **Title** to view more information about that specific known issue.
 |  461      |  Create and Author Data            |  [A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow](known-issue-461-scheduled-refresh-dataset-hangs.md)    | July 27, 2023  |
 |  222      |  Consume and View                  |  [Search strings that include Japanese symbols don't return matches](known-issue-222-search-strings-japanese-symbols-dont-work.md)   |  August 3, 2022  |
 
-## Recently closed known issues
+## Recently closed Power BI known issues
 
 Select the **Title** to view more information about that specific known issue. Fixed issues are removed after 46 days.
 

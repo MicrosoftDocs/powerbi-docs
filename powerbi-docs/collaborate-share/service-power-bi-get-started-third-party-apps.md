@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.reviewer: ""
 ms.cunstom: ""
-ms.date: 12/16/2022
+ms.date: 12/01/2023
 LocalizationGroup: Get started
 ms.custom: intro-get-started
 ---
@@ -47,10 +47,10 @@ You revoke permissions for a third-party app by going to the Office 365 My Apps 
 
 On the **Microsoft My apps** site, here's how to revoke third-party permissions:
 
-1. Go to [Microsoft My Apps site](https://myapplications.microsoft.com/).
+1. Go to [Office 365 My Apps site](https://www.office.com/apps?auth=2).
 
-2. On the **My apps** page, locate the third-party app.
+1. On the **My apps** page, locate the third-party app.
 
-3. Hover over the app tile, select the **(...)** button, and choose **Remove**.
+1. Hover over the app tile, select the **(...)** button, and choose **Remove**.
 
    ![Screenshot that shows the Remove option to revoke third-party permissions.](media/service-power-bi-get-started-third-party-apps/remove.png)
