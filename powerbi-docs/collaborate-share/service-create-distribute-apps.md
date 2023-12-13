@@ -191,23 +191,23 @@ However, this option is disabled in these three scenarios:
 
 ## Change the settings for users who don't have access
 
-You can control what users see when they attempt to view an app but they don't have access. 
+You can control what users see when they attempt to view an app but they don't have access. The default setting triggers the access request flow. Users see that they're denied access, and can submit a request for access. 
+
+The default option is for access requests to come to you via email. See the section in this article for more on [managing access requests](/power-bi/collaborate-share/service-create-distribute-apps?source=recommendations).
+
+But you can also display a custom message. 
+
+### Customize the access request behavior
+
+Some organizations have processes and systems outside of Power BI for reviewing and managing access requests. The custom message setting is a chance for you to explain or provide a link to how a user can get access to the Power BI app. You can change the default access request behavior for a Power BI app by going to the Power BI app settings and configuring the **Access requests** options as desired. Select **Replace with automated custom message**.
 
 :::image type="content" source="media/service-create-distribute-apps/custom-message-blank.png" alt-text="Screenshot of a blank custom message.":::
 
-The default setting triggers the access request flow. Users see that they're denied access, and can submit a request for access. 
-
-But you can also display a custom message. Some organizations have processes and systems outside of Power BI for reviewing and managing access requests. The custom message setting is a chance for you to explain or provide a link to how a user can get access to the Power BI app. 
-
-### Change the access request behavior
-
-You can change the default access request behavior for a Power BI app by going to the Power BI app settings and configuring the **Access requests** options as desired.
+Create your own custom message. You can include a link for your users to request access. This option is for you to provide instructions about how a user can get access to your Power BI app, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users who don't have access to your Power BI app try to view it, they see a message with the instructions you provide. 
 
 :::image type="content" source="media/service-create-distribute-apps/create-access-request-form.png" alt-text="Screenshot of a draft custom message.":::
 
-- The default option (not selected in the preceding image) is for access requests to come to you via email. See the section in this article for more on [managing access requests](/power-bi/collaborate-share/service-create-distribute-apps?source=recommendations).
-- The second option is for you to provide instructions about how a user can get access to your Power BI app, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users who don't have access to your Power BI app try to view it, they see a message with the instructions you provide. 
-- The **Custom message** text area in the preceding **Access requests** example shows sample instructions. Instructions can be rich text with formatting and links. The following example shows the instructions users see when they try to view a Power BI app they don’t have access to. 
+The **Custom message** text area in the **Access requests** example shows sample instructions. Instructions can be rich text with formatting and links. The following example shows the experience for users see when they try to view a Power BI app they don’t have access to. 
 
 :::image type="content" source="media/service-create-distribute-apps/request-access-instructions.png" alt-text="Screenshot of the message your users see.":::
 
@@ -220,7 +220,7 @@ After you publish an app, you can manage app permission.
 
 - In the **Apps** list page, select **More options** (...) next to an app, then select **Manage permissions**.
  
-    :::image type="content" source="media/service-create-distribute-apps/custom-message-blank.png" alt-text="Screenshot of a blank custom message.":::
+    :::image type="content" source="media/service-create-distribute-apps/installed-apps-list.png" alt-text="Screenshot of manage permissions option.":::
 
 You also see a notification banner in the workspace if there are any pending access requests. Select **View** to access the app permission management page directly. 
  
