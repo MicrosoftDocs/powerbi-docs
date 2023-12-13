@@ -76,19 +76,19 @@ A teaching bubble now points to the new location within **Format** > **Page info
 
 Analytics options like error bars, max, min, or percentile lines are consolidated in the **Format** pane at the bottom. You can set a max, min, or other reference line using the new **Reference line** card in the **Format** pane. 
 
-:::image type="content" source="media/power-bi-on-object-interaction/analytics-options-help.png" alt-text="Analytics pane help.":::
+:::image type="content" source="media/power-bi-on-object-interaction/analytics-options-help-1.png" alt-text="Analytics pane help.":::
 
 #### What happened to the right-click options for a field, like rename or **Show value as**? 
 
 They're still available on the right-click menu. Right-click the field name to see the same options as before.
 
-:::image type="content" source="media/power-bi-on-object-interaction/right-click-field-name-help.png" alt-text="right-click a field name.":::
+:::image type="content" source="media/power-bi-on-object-interaction/right-click-field-name-help-1.png" alt-text="right-click a field name.":::
 
 #### How do I bring back my data pane if the pane switcher is gone? 
 
 You can reopen a pane from the **View** tab in the ribbon.
 
-:::image type="content" source="media/power-bi-on-object-interaction/data-pane-view-tab-help.png" alt-text="bring back the Data pane.":::
+:::image type="content" source="media/power-bi-on-object-interaction/data-pane-view-tab-help-1.png" alt-text="bring back the Data pane.":::
 
 ## Build a visual with on-object interaction
 
@@ -201,10 +201,11 @@ Select the gear icon and select the three preference settings:
 
 ### Show more than one pane at a time
 
-There are two ways to open multiple panes at the same time:
+There are a few ways to have multiple panes open at the same time:
 
 - Select <kbd>CTRL</kbd> and select another pane in the pane switcher.
 - Right-click an unselected pane and select **Open in new pane**.
+- You can also [Customize the pane switcher] settings(#customize-the-pane-switcher) so that you **Always open a new pane**.
 
 :::image type="content" source="media/power-bi-on-object-interaction/multiple-panes-pane-switcher.png" alt-text="Screenshot showing multiple panes open at the same time.":::
 
