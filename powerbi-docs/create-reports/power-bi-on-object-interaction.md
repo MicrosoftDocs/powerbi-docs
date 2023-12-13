@@ -205,7 +205,7 @@ There are a few ways to have multiple panes open at the same time:
 
 - Select <kbd>CTRL</kbd> and select another pane in the pane switcher.
 - Right-click an unselected pane and select **Open in new pane**.
-- You can also [Customize the pane switcher] settings(#customize-the-pane-switcher) so that you **Always open a new pane**.
+- You can also [Customize the pane switcher](#customize-the-pane-switcher) settings so that you **Always open a new pane**.
 
 :::image type="content" source="media/power-bi-on-object-interaction/multiple-panes-pane-switcher.png" alt-text="Screenshot showing multiple panes open at the same time.":::
 
