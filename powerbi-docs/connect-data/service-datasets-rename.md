@@ -41,7 +41,7 @@ Here are some examples of name changes.
 | On-premises dataset | On-premises semantic model |
 | Dataset owner | Semantic model owner |
 | Large dataset | Large semantic model |
-| Push dataset | Push semantic model |
+| Push dataset | Push dataset |
 | Streaming dataset | Streaming semantic model |
 | PubNub streaming dataset | PubNub streaming semantic model |
 | Hybrid dataset | Hybrid semantic model |
