@@ -14,6 +14,14 @@ ms.date: 04/19/2023
 
 # What's new in the Power BI add-in for PowerPoint
 
+## December 2023
+
+### Suggested content
+
+It's just gotten easier to find and insert the Power BI reports you need for your presentation. Now, when you add the Power BI add-in to your slide, the add-in automatically scans the title of the slide and suggests Power BI content that might be relevant. Let's say the title of your slide is "Holiday campaign status", for example. The add-in will show you a list of Power BI reports that contain data about campaigns. The add-in also shows you Power BI reports you've recently visited. This makes it easy to access reports you're working on or frequently use. [Learn more about the new feature!](https://powerbi.microsoft.com/en-us/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674248)
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/suggested-content.gif" alt-text="Screenshot showing suggest content for the Power BI add-in for PowerPoint.":::
+
 ## April 2023
 
 ### Put a border around your add-in!
