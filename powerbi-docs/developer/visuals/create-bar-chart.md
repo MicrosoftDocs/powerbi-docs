@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 11/30/2023
+ms.date: 12/14/2023
 ---
 
 # Tutorial: Build a bar chart
@@ -639,11 +639,11 @@ To add a color picker for each category on the **Property** pane, add a for loop
         };
 
         if (this.barDataPoints) {
-            let indx = 1;
+            // let indx = 1;
             this.barDataPoints.forEach(dataPoint => {
                 (colorSelectorCard.groups[0] as powerbi.visuals.FormattingGroup).slices.push(
                     {
-                        uid: `dataColorsCard_group_colorSelector${indx}_uid`,
+                        uid: `dataColorsCard_group_colorSelector${dataPoint.category}_uid`,
                         displayName: dataPoint.category,
                         control: {
                             type: powerbi.visuals.FormattingComponent.ColorPicker,
