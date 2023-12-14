@@ -109,13 +109,13 @@ In addition, you can use the OneLake Data Hub's Table Preview to export an Excel
 ## Excel Add-In
 You can use the Power BI Excel add-in to insert connected PivotTables and connected query tables starting from Excel. This helps you quickly find and insert refreshable Power BI data into your new or existing workbooks without leaving Excel.
 
-    > [!NOTE]
-    > To use the Power BI Excel Add-in, ensure that in Excel Trust Center the following settings are not checked:
-    > - Disable all Application Add-ins (may impair functionality) 
-    > - Don't allow any web add-ins to start.
+> [!NOTE]
+> To use the Power BI Excel Add-in, ensure that in Excel Trust Center the following settings are not checked:
+> - Disable all Application Add-ins (may impair functionality) 
+> - Don't allow any web add-ins to start.
     
-    > [!NOTE]
-    > Insert Table experience is available in Current Channel and Monthly Enterprise Channel for customers who have Excel version 16.0.16732.0 or higher. The add-in is visible in Excel for users with a Power BI Pro license. The Insert Table experience is not available in Excel for the Web. 
+> [!NOTE]
+> Insert Table experience is available in Current Channel and Monthly Enterprise Channel for customers who have Excel version 16.0.16732.0 or higher. The add-in is visible in Excel for users with a Power BI Pro license. The Insert Table experience is not available in Excel for the Web. 
 
 You can open the Excel Add-in from the Excel ribbon. 
 
