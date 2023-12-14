@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/08/2023
+ms.date: 12/14/2023
 ---
 
 # Explore your data in the Power BI service (preview)
@@ -155,6 +155,10 @@ You can share this new report as with other reports by using the **Share** butto
 - Exploration users need a Power BI Pro or PPU license to share.
 - When you share, Power BI prompts you to grant build permissions to the underlying dataset so the recipient can view. If you skip this second dialog, the recipient can't see the exploration and has to ask you for permissions.
 - Explorations aren't currently shown in lineage view as related to the dataset.
+
+### To open a saved exploration
+
+- Opening an exploration on a mobile device isn't currently supported in the Power BI mobile app.
 
 ### Entry points
 
