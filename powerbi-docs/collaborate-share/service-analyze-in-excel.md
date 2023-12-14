@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 12/14/2023
 LocalizationGroup: Share your work
 ---
 # Create Excel workbooks with refreshable Power BI data
@@ -30,6 +30,7 @@ Power BI provides you with options to ensure that you can extract the right gran
 
 - [Analyze in Excel](#analyze-in-excel)
 - [Export to Excel with live connection](#export-to-excel-with-live-connection)
+- [Create connected PivotTables and Tables in Excel](#excel-add-in)
 
 ### Analyze in Excel
 
@@ -105,9 +106,46 @@ In addition, you can use the OneLake Data Hub's Table Preview to export an Excel
 
 :::image type="content" source="media/service-analyze-in-excel/export-live-connection-datahub.png" alt-text="Screenshot showing the Export with live connection (.xlsx) option for the Table preview in OneLake Data hub." lightbox="media/service-analyze-in-excel/export-live-connection-datahub.png":::
 
+## Excel Add-In
+You can use the Power BI Excel add-in to insert connected PivotTables and connected query tables starting from Excel. This helps you quickly find and insert refreshable Power BI data into your new or existing workbooks without leaving Excel.
+
+    > [!NOTE]
+    > To use the Power BI Excel Add-in, ensure that in Excel Trust Center the following settings are not checked:
+    > - Disable all Application Add-ins (may impair functionality) 
+    > - Don't allow any web add-ins to start.
+    
+    > [!NOTE]
+    > Insert Table experience is available in Current Channel and Monthly Enterprise Channel for customers who have Excel version 16.0.16732.0 or higher. The add-in is visible in Excel for users with a Power BI Pro license. The Insert Table experience is not available in Excel for the Web. 
+
+You can open the Excel Add-in from the Excel ribbon. 
+
+Starting on the  **Insert ribbon**:
+- Expand the **PivotTable** drop down
+- Select **From Power BI (Microsoft)**
+
+Starting on the **Data ribbon**:
+- Expand the **Get Data** drop down
+- Expand the **From Power Platform** menu
+- Select **From Power BI (Microsoft)** 
+    
+The Power BI add-in **Datasets Pane** opens in Excel and provides the following capabilities:
+- List of Power BI semantic models that you have at build or edit permission on.
+- Search for semantic models
+- Open OneLake Data Hub in Power BI service in a new browser window
+- Open semantic model in Power BI service in a new browser window
+- See metadata for datasets like the workspace, owner, and the last refreshed date.
+- See the tables in the semantic model
+- See the related reports you have access to and open them in a new browser window.
+- **Insert PivotTable** which lets you create a connected PivotTable just like Analyze in Excel does starting from the service.
+- **Insert Table** which lets you design a table and insert it as an Excel query table in the Excel grid, referred to as a connected table.
+
+You can use Excel's refresh capabilities to update the data in the Excel workbook for your connected PivotTable or connected table.
+
+
 ## Considerations and limitations
 
 - Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](../enterprise/service-admin-rls.md) and [object-level security](../enterprise/service-admin-ols.md).
+- When inserting a connected PivotTable or connected query table, the  Microsoft Purview Information Protection sensitivity label for the semantic model is automatically applied to the Excel workbook. If the Excel workbook has a sensitivity label already, the strictest label is applied. 
 - For Analyze in Excel, only Power BI semantic models that use Import mode preserve hierarchies in the PivotTable Fields in the Excel workbook. Power BI semantic models that are built on DirectQuery or composite models don't retain their hierarchies when you use Analyze in Excel.
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string after the workbook has been generated.
 - You might see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. For more information, see [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
