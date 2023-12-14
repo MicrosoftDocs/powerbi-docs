@@ -1,6 +1,6 @@
 ---
-title: Overview of report visualizations in Power BI service and Desktop
-description: Personalize report visualizations (visuals) in Microsoft Power BI.
+title: Customize the Visualization pane in Power BI Desktop and the Power BI service 
+description: Personalize the report Visualizations pane in Microsoft Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
@@ -8,17 +8,17 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/12/2022
+ms.date: 12/13/2023
 LocalizationGroup: Visualizations 
 ---
 
-# Visualizations in Power BI reports
+# Customize the Visualization pane in Power BI Desktop and the Power BI service 
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../create-reports/service-dashboard-create.md).
 
-It's important to make the distinction between report *designers* and report *consumers*. If you're the person building or modifying the report, then you're a designer. Designers have edit permissions to the report and its underlying semantic model. In Power BI Desktop, you can open the semantic model in Data view and create visuals in Report view. In Power BI service, you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you](../collaborate-share/end-user-shared-with-me.md), you're a report *consumer*. You'll be able to view and interact with the report and its visuals but you won't be able to make as many changes as a *designer* can.
+It's important to make the distinction between report *designers* and report *consumers*. If you're the person building or modifying the report, then you're a designer. Designers have edit permissions to the report and its underlying semantic model. In Power BI Desktop, you can open the semantic model in Data view and create visuals in Report view. In the Power BI service, you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you](../collaborate-share/end-user-shared-with-me.md), you're a report *consumer*. You'll be able to view and interact with the report and its visuals but you won't be able to make as many changes as a *designer* can.
 
 There are many different visual types available directly from the Power BI Visualizations pane.
 
@@ -72,7 +72,7 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 
 ## Pin the visualization
 
-In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../create-reports/service-dashboard-create.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change. If it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
+In the Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../create-reports/service-dashboard-create.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change. If it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
 
 ## Considerations and limitations
 
