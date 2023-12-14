@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 12/12/2023
+ms.date: 12/14/2023
 
 LocalizationGroup: Share your work
 ---
