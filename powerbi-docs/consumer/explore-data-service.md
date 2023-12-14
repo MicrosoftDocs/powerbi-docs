@@ -158,7 +158,7 @@ You can share this new report as with other reports by using the **Share** butto
 
 ### To open a saved exploration
 
-- Opening an exploration on a mobile device isn't currently supported in the Power BI mobile app.
+- Currently, you can't open an exploration on a mobile device in the Power BI mobile app.
 
 ### Entry points
 
