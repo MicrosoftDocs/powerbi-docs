@@ -63,7 +63,9 @@ Now that you have the columns that you want, you can format the table using the 
 1. To edit the text in a column header select the header you would like to edit and make your changes.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename.png" alt-text="Screenshot of editing text in a column header.":::
-
+1. To sort the table on a colum, click on the sort icon in the column header
+   :::image type="content" source="media/paginated-formatted-table/paginated-formatted-table-sort.png" alt-text="Screenshot of sorting during authoring.":::
+   
 > [!NOTE]
 > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
 >
