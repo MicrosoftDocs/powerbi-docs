@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View a paginated report
 ms.topic: how-to
-ms.date: 12/01/2023
+ms.date: 12/15/2023
 ---
 
 # View a paginated report in the Power BI service
@@ -57,10 +57,16 @@ You can also export paginated reports to many formats:
 
 ## Considerations and limitations 
 
-- You can only search in "Web layout."
-- You need at least one letter, number, or character to search.
-- Search doesn't work if there are over 300 rows per page.
-- You can only sort on one column at a time.
+- You can only search and sort in "Web layout."
+- Search:
+  
+       - You need at least one letter, number, or character to search.
+       - Search doesn't work if there are over 300 rows per page.
+- Sort:
+
+      - You can only sort on one column at a time.
+      - You might be able to sort only on specific columns if the report was created on Power BI Report Builder. This is because of the report definition and must be edited on Power BI Report Builder to sort on additional columns.
+      - If a report was created on the service (before December 2023), you will have to edit the report for sorting to be available during consumption.
 
 ## Next steps
 
