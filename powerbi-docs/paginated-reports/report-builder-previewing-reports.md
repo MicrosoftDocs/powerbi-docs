@@ -30,9 +30,9 @@ The report renders in preview mode.
 Frequently, you preview a report as a step in updating and then saving a report to the Power BI service. When you are updating a report, it's possible that someone else is updating and then saving the report at the same time. The report that is saved last is the version of report that is available for future viewing and updating. This means that the version of the report that you previewed might not be the version you reopen. You have the option to save the report with a new name by using the **Save As** option on the Report Builder menu.  
   
 ## External report items
- Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it's possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
+ Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it's possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.
   
 ## Next steps
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
-  
+- [Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)
