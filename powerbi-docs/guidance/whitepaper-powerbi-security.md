@@ -13,7 +13,7 @@ LocalizationGroup: Conceptual
 
 # Power BI security white paper
 
-**Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, semantic models ([previously known as semantic models](../connect-data/service-datasets-rename.md)), and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
+**Summary:** Power BI is an online software service (*SaaS*, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)), and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
 <!-- cspell:disable -->
 
