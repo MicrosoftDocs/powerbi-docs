@@ -50,6 +50,8 @@ else
 
 ```
 
+If the sync status API returns an empty response or if **scaleOutStatus** is set to **“Unavailable”**, try to load the semantic model's read-write replica or perform a refresh on the model to get the latest sync status.
+
 To learn more, see [Datasets - Get Query Scale Out Sync Status In Group](/rest/api/power-bi/datasets/get-query-scale-out-sync-status-in-group) in the Power BI REST API reference.
 
 ## Disable automatic replica synchronization
