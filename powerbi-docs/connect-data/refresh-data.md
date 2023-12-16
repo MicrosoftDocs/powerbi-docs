@@ -110,6 +110,7 @@ For Power BI users, refreshing data typically means importing data from the orig
 
 If the semantic model resides on a Premium capacity, you can schedule up to 48 refreshes per day in the semantic model settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Semantic models on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
 
+
 It's also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh now** in the semantic model menu, as the following screenshot depicts. On-demand refreshes aren't included in the refresh limitation. Also note that semantic models on a Premium capacity don't impose limitations for API refreshes. If you're interested in building your own refresh solution by using the Power BI REST API, see [semantic models - Refresh semantic model](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Refresh now](media/refresh-data/refresh-now.png)

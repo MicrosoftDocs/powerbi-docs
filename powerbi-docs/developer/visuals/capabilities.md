@@ -280,7 +280,7 @@ For example, to support [dynamic format strings](../../create-reports/desktop-cu
 
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
 
-## Next steps
+## Related content
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
 * [Objects and properties of Power BI visuals](objects-properties.md)

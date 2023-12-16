@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 05/31/2023
+ms.date: 12/14/2023
 ---
 
 # Tutorial: Build a bar chart
@@ -82,7 +82,7 @@ You should now have a new folder for your visual with the following files and fo
 
 For a detailed explanation of the function of each of these files, see [Power BI visual project structure](visual-project-structure.md).
 
-The two files we'll focus on in this tutorial are the *capabilities.json* file, which describes the visual to the host, and the *src/barchart.ts* file, which contains the visual's API.
+The two files we focus on in this tutorial are the *capabilities.json* file, which describes the visual to the host, and the *src/barchart.ts* file, which contains the visual's API.
 
 ## Define capabilities
 
@@ -94,7 +94,7 @@ The [*capabilities.json*](capabilities.md) file is where we bind data to the hos
 
 Variables are defined and bound in the [`dataRoles`](capabilities.md#dataroles-define-the-data-fields-that-your-visual-expects) section of the capabilities file. We want our bar chart to accept two types of variables:
 
-* **Categorical** data that will be represented by the different bars on the chart
+* **Categorical** data represented by the different bars on the chart
 * **Numerical**, or measured data, which is represented by the height of each bar
 
 In **Visual Studio Code**, in the *capabilities.json* file, confirm that the following JSON fragment appears in the object labeled "dataRoles".
@@ -198,7 +198,7 @@ Your final *capabilities* file should look like [the one in this example](https:
 
 All visuals start with a class that implements the `IVisual` interface. The *src/visual.ts* file is the default file that contains this class.
 
-In this tutorial, we'll call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you haven't done so already. In this section, we'll go through this file in detail and describe the various sections.
+In this tutorial, we call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you didn't do so already. In this section, we go through this file in detail and describe the various sections.
 
 ### Imports
 
@@ -306,7 +306,7 @@ let defaultSettings: BarChartSettings = {
 
 ### Visual transform
 
-Now that the data structures are defined, we need to map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format the visual can use. In this case, it returns the `BarChartViewModel` interface described above.
+Now that the data structures are defined, we need to map data onto them using the `visualTransform` function. This function receives data from the data view and transforms it to a format the visual can use. In this case, it returns the `BarChartViewModel` interface described in the previous section.
 
 The `DataView` contains the data to be visualized. This data can be in different forms, such as categorical or tabular. To build a categorical visual like a bar chart, use the *categorical* property on the `DataView`.
 
@@ -470,7 +470,7 @@ For cases where the X axis is rendered, this visual also handles word breaks in 
 
 #### Other update features
 
-In addition to scaling, the update method also handles selections and colors. These features are optional and will be discussed later:
+In addition to scaling, the update method also handles selections and colors. These features are optional and are discussed later:
 
 ```typescript
    /**
@@ -569,7 +569,7 @@ In addition to scaling, the update method also handles selections and colors. Th
 ### Populate the properties pane
 
 The final method in the `IVisual` function is [`getFormattingModel`](visual-api.md#getformattingmodel-optional). This method builds and returns a modern *format pane formatting model* object containing all the [format pane](./format-pane.md) components and properties. It then places the object inside the **Format** pane.
-In our case, we'll create format cards for `enableAxis` and `colorSelector`, including formatting properties for `show` and `fill`, according to the *"objects"* in the *capabilities.json* file.
+In our case, we create format cards for `enableAxis` and `colorSelector`, including formatting properties for `show` and `fill`, according to the *"objects"* in the *capabilities.json* file.
 
 To build a formatting model, the developer should be familiar with all its components, Check out the components of the format pane in Format Pane.
 
@@ -639,11 +639,11 @@ To add a color picker for each category on the **Property** pane, add a for loop
         };
 
         if (this.barDataPoints) {
-            let indx = 1;
+            // let indx = 1;
             this.barDataPoints.forEach(dataPoint => {
                 (colorSelectorCard.groups[0] as powerbi.visuals.FormattingGroup).slices.push(
                     {
-                        uid: `dataColorsCard_group_colorSelector${indx}_uid`,
+                        uid: `dataColorsCard_group_colorSelector${dataPoint.category}_uid`,
                         displayName: dataPoint.category,
                         control: {
                             type: powerbi.visuals.FormattingComponent.ColorPicker,
@@ -674,9 +674,9 @@ To add a color picker for each category on the **Property** pane, add a for loop
 
 ## (Optional) Populate the properties pane using the formatting model Utils
 
-Populate the properties pane using the `getFormattingModel` API in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel)
+Populate the properties pane using the `getFormattingModel` API in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel).
 
-For the full code of a sample bar chart with formatting model utils see [the bar chart repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial-FormattingModelUtils).
+For the full code of a sample bar chart with formatting model utils, see [the bar chart repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial-FormattingModelUtils).
 
 Declare formatting properties and their values in a formatting settings class:
 
@@ -762,7 +762,7 @@ export class BarChartSettingsModel extends FormattingSettingsModel {
 }
 ```
 
-Build and create the *formatting settings service* model in the visual's *constructor* method. The *formatting settings service* receives the barChart format settings  and converts them into a FormattingModel object that's returned in the `getFormattingModel` API.
+Build and create the *formatting settings service* model in the visual's *constructor* method. The *formatting settings service* receives the barChart format settings and converts them into a FormattingModel object that's returned in the `getFormattingModel` API.
 
 To use the localization feature, add the localization manager to the formatting settings service.
 
@@ -898,7 +898,7 @@ function getColumnStrokeWidth(isHighContrast: boolean): number {
 
 The `colorPalette` service, in the `visualTransform` function, manages these colors. Since `visualTransform` iterates through each of the data points, it's an ideal place to assign categorical objects like color.
 
-For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md)
+For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md).
 
 > [!NOTE]
 > Verify that your final *barChart.ts* file looks like this [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download the [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and use it to replace your file.
@@ -998,7 +998,7 @@ Run the visual in the **Power BI** server to see how it looks:
 You can further customize your visual by adding more features. You can add features that increase the visual's functionality, enhance its look and feel, or give the user more control over its appearance. For example, you can:
 
 * [Add Selection and Interactions with Other Visuals](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Selection.md)
-* [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
+* [Add a property pane slider that controls opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30)
 * [Add support for tooltips](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/ReportPageTooltips.md)
 * [Add a landing page](landing-page.md)
 * [Add local language support](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/Tutorial/Locale.md)
@@ -1007,14 +1007,14 @@ You can further customize your visual by adding more features. You can add featu
 
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you have to package it.
 
-Follow the instructions in [Package a Power BI visual](package-visual.md) to prepare the visual for sharing.
+To prepare the visual for sharing, follow the instructions in [Package a Power BI visual](package-visual.md).
 
 >[!NOTE]
 >
 >For the full source code of a bar chart with more features, including [tool-tips](add-tooltips.md) and a [context menu](context-menu.md), see [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
-## Next steps
+## Related content
 
 * [Add a context menu to a visual](context-menu.md)
 * [Add a landing page to a visual](landing-page.md)
-* [Locale support](localization.md)
+* [Add locale support](localization.md)

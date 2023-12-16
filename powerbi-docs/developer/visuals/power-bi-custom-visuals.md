@@ -116,7 +116,7 @@ Licensed visuals aren't supported in the following environments. Therefore, if l
 * PaaS Power BI embedded App owns data
 * Publish to web (P2W)
 
-## Next steps
+## Related content
 
 * [Develop a Power BI circle card visual](develop-circle-card.md)
 * [Power BI visuals project structure](visual-project-structure.md)

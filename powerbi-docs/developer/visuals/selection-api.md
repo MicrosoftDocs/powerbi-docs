@@ -374,7 +374,7 @@ button.addEventListener("click", (mouseEvent) => {
 });
 ```
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)

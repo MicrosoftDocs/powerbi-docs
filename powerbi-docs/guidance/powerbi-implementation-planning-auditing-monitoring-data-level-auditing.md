@@ -114,7 +114,7 @@ There are several ways to access the events that are sent to Azure Log Analytics
 
 For more information, see [Govern Azure connections](powerbi-implementation-planning-tenant-administration.md#govern-azure-connections).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to use Azure Log Analytics, key decisions and actions include:
 
@@ -171,7 +171,7 @@ The _Allow XMLA endpoints and Analyze in Excel with on-premises semantic models_
 >
 > This function is only intended for development and test purposes. You should remove it from your data model calculations before publishing the data model to a production workspace.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to use SQL Profiler, key decisions and actions include:
 
@@ -238,7 +238,7 @@ BPA can expose design issues that can help the [Center of Excellence](fabric-ado
 > [!TIP]
 > Keep in mind that BPA can detect the _existence_ of a characteristic (such as row-level security). However, it might be difficult to determine whether it's set up correctly. For that reason, a subject matter expert might need to conduct a review . Conversely, the _non-existence_ of a particular characteristic doesn't necessarily mean a bad design; the data modeler might have a good reason for producing a particular design.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to access metadata for data models, key decisions and actions include:
 
@@ -296,7 +296,7 @@ The Premium metrics app comprises an internal semantic model and an initial set 
 
 Use the Premium metrics app to troubleshoot and optimize semantic models. For example, you can identify semantic models that have a large [memory footprint](/power-bi/enterprise/service-premium-metrics-app#artifact-size) or that experience routinely high [CPU usage](/power-bi/enterprise/service-premium-metrics-app#cpu-over-time). It's also a useful tool to find semantic models that are approaching the limit of your capacity size.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering approaches to use for monitoring data model and query performance, key decisions and actions include:
 
@@ -352,7 +352,7 @@ Sometimes, Power BI accesses a data source through a [data gateway](/power-bi/co
 >
 > For more information about the tenant inventory and the activity log, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning to monitor a data source, key decisions and actions include:
 
@@ -402,7 +402,7 @@ You can retrieve data refresh history by using:
 > [!TIP]
 > We strongly recommend that you monitor the refresh history of your semantic models to ensure that current data is available to reports and dashboards. It also helps you to know whether SLAs are being met.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for data refresh monitoring, key decisions and actions include:
 

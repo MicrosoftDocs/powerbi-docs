@@ -467,7 +467,7 @@ After you've made all the adjustments listed in this tutorial, you're ready to r
 
 When your app is ready, you can [move your embedded app to production](move-to-production.md).
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 >[Embedded analytics application tokens](embed-tokens.md)

@@ -30,7 +30,7 @@ Within an organization, certain business units or teams are likely to have their
 
 The following circular diagram conveys the interrelated aspects that influence your data culture:
 
-:::image type="content" source="media/fabric-adoption-roadmap-data-culture/data-culture.png" alt-text="Diagram shows various relationships and influences in a data culture." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-data-culture/data-culture.svg" alt-text="Diagram shows various relationships and influences in a data culture, which are described below." border="false":::
 
 The diagram depicts the somewhat ambiguous relationships among the following items:
 
@@ -94,7 +94,7 @@ Furthermore, data catalog solutions are extremely valuable tools for data discov
 
 ### Questions to ask about data discovery
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data discovery.
 
@@ -111,7 +111,7 @@ Use questions like those found below to assess data discovery.
 
 ### Maturity levels of data discovery
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels can help you assess your current state of data discovery.
 
@@ -140,7 +140,7 @@ Your organization's position on data democratization will have a wide-reaching i
 
 ### Questions to ask about data democratization
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data democratization.
 
@@ -158,7 +158,7 @@ Use questions like those found below to assess data democratization.
 
 ### Maturity levels of data democratization
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels can help you assess your current state of data democratization.
 
@@ -192,7 +192,7 @@ How you go about improving data literacy in your organization depends on many fa
 
 ### Questions to ask about data literacy
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data literacy.
 
@@ -207,21 +207,21 @@ Use questions like those found below to assess data literacy.
 
 ### Maturity levels of data literacy
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels can help you assess your current state of data literacy.
 
 | **Level** | **State of data literacy** |
 | --- | --- |
 | 100: Initial | &bull;&nbsp;Decisions are frequently made based on intuition and subjective experience. When confronted with data that challenges existing opinions, data is often dismissed. <br/><br/>&bull;&nbsp;Individuals have low confidence to use and understand data in decision-making processes or discussions. <br/><br/>&bull;&nbsp;Report consumers have a strong preference for static tables. These consumers dismiss interactive visualizations or sophisticated analytical methods as "fancy" or unnecessary. |
-| 200: Repeatable | &bull;&nbsp;Some teams and individuals inconsistently incorporate data into their decision making. There are clear cases where misinterpretation of data has led to flawed decisions or wrong conclusions. <br/><br/>&bull;&nbsp;There's some resistance when data challenges pre-existing beliefs. <br/><br/>&bull;&nbsp;Some people are skeptical interactive visualizations and sophisticated analytical methods, though their use is increasing. |
+| 200: Repeatable | &bull;&nbsp;Some teams and individuals inconsistently incorporate data into their decision making. There are clear cases where misinterpretation of data has led to flawed decisions or wrong conclusions. <br/><br/>&bull;&nbsp;There's some resistance when data challenges pre-existing beliefs. <br/><br/>&bull;&nbsp;Some people are skeptical of interactive visualizations and sophisticated analytical methods, though their use is increasing. |
 | 300: Defined | &bull;&nbsp;The majority of teams and individuals understand data relevant to their business area and use it implicitly to inform decisions. <br/><br/>&bull;&nbsp;When data challenges pre-existing beliefs, it produces critical discussions and sometimes motivates change. <br/><br/>&bull;&nbsp;Visualizations and advanced analytics are more widely accepted, though not always used effectively. |
 | 400: Capable | &bull;&nbsp;Data literacy is recognized explicitly as a necessary skill in the organization. Some training programs address data literacy. Specific efforts are taken to help departments, teams, or individuals that have particularly weak data literacy. <br/><br/>&bull;&nbsp;Most individuals can effectively use and apply data to make objectively better decisions and take actions. <br/><br/>&bull;&nbsp;Visual and analytical best practices are documented and followed in strategically important data solutions. |
 | 500: Efficient | &bull;&nbsp;Data literacy, critical thinking, and continuous learning are strategic skills and values in the organization. Effective programs monitor progress to improve data literacy in the organization. <br/><br/>&bull;&nbsp;Decision making is driven by data across the organization. Decision intelligence or prescriptive analytics are used to recommend key decisions and actions. <br/><br/>&bull;&nbsp;Visual and analytical best practices are seen as essential to generate business value with data. |
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Here are some considerations and key actions that you can take to strengthen your data culture.
 
@@ -236,7 +236,7 @@ The following maturity levels can help you assess your current state of data lit
 
 ## Questions to ask about data culture
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess data culture.
 
@@ -250,7 +250,7 @@ Use questions like those found below to assess data culture.
 
 ## Maturity levels of data culture
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your data culture.
 

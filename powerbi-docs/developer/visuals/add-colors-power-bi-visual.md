@@ -113,7 +113,7 @@ this.barSelection
     .remove();
 ```
 
-## Next steps
+## Related content
 
 * [Capabilities and properties of Power BI visuals](capabilities.md).
 * [How to debug Power BI visuals](visuals-how-to-debug.md)

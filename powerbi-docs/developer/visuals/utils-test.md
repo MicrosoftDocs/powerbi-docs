@@ -638,6 +638,6 @@ enum MouseEventType {
 }
 ```
 
-## Next steps
+## Related content
 
 To write unit tests for webpack-based Power BI visuals, and unit test with `karma` and `jasmine`, see [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).

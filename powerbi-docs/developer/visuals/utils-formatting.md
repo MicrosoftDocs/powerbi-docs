@@ -668,6 +668,6 @@ valueFormatter.format(value, format);
 // returns: formatted value as string (¥ 12)
 ```
 
-## Next steps
+## Related content
 
 [Add the local language to your Power BI visual](localization.md)  

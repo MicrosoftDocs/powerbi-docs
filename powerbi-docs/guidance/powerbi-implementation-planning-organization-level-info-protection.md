@@ -33,16 +33,16 @@ Generally, there are two cases of sensitivity label use.
 
 The following diagram shows how sensitivity labels are used broadly across the organization.
 
-:::image type="content" source="media/powerbi-implementation-planning-organization-level-info-protection/sensitivity-label-usage-across-the-organization.png" alt-text="Diagram shows how sensitivity labels are used. Items in the diagram are described in the table below." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-organization-level-info-protection/sensitivity-label-usage-across-the-organization.svg" alt-text="Diagram shows how sensitivity labels are used. Items in the diagram are described in the table below." border="false":::
 
 The above diagram depicts the following items:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | Sensitivity labels are set up in the Microsoft Purview compliance portal. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | Sensitivity labels can be applied to many types of items and files, such as Microsoft Office files, items in the Power BI service, Power BI Desktop files, and emails. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Sensitivity labels can be applied for Teams sites, SharePoint sites, and Microsoft 365 groups. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | Sensitivity labels can be applied to schematized data assets that are registered in the Microsoft Purview Data Map. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Sensitivity labels are set up in the Microsoft Purview compliance portal. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Sensitivity labels can be applied to many types of items and files, such as Microsoft Office files, items in the Power BI service, Power BI Desktop files, and emails. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Sensitivity labels can be applied for Teams sites, SharePoint sites, and Microsoft 365 groups. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Sensitivity labels can be applied to schematized data assets that are registered in the Microsoft Purview Data Map. |
 
 In the diagram, notice that items in the Power BI service, and Power BI Desktop files, are just some of many resources that allow assigning sensitivity labels. Sensitivity labels are defined centrally in Microsoft Purview Information Protection. Once defined, the same labels are used by all supported applications throughout the organization. It's not possible to define labels for use in only one application, such as Power BI. Therefore, your planning process needs to consider a broader set of usage scenarios to define labels that can be used in multiple contexts. Because information protection is intended to be used consistently across applications and services, it's critical to begin with assessing what sensitivity labels are currently in place.
 
@@ -51,7 +51,7 @@ The activities for implementing sensitivity labels are described in the [Informa
 > [!NOTE]
 > Sensitivity labels are the first building block towards implementing information protection. DLP occurs after information protection is set up.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When assessing the current state of information protection and DLP in your organization, key decisions and actions include:
 
@@ -95,7 +95,7 @@ The task of planning and implementing information protection is usually a part-t
 
 Clarity on roles and responsibilities is necessary to avoid misunderstandings and delays when working with cross-functional teams across organizational boundaries.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When putting together your information protection team, key decisions and actions include:
 
@@ -129,7 +129,7 @@ Be aware that an initiative to introduce information protection is complementary
 
 For more information about securing content in Power BI, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering your information protection goals, key decisions and actions include:
 

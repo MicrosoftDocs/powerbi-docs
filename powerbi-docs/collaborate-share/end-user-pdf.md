@@ -46,7 +46,7 @@ If your report has a sensitivity label, the label and any encryption settings ca
 
     After the Power BI service finishes the export process, the notification banner changes to let you know. In Microsoft Edge, you are prompted to save or open the PDF. 
 
-    :::image type="content" source="media/end-user-pdf/power-bi-export.png" alt-text="Select to open or save the PDF.":::
+    :::image type="content" source="media/end-user-pdf/power-bi-exports.png" alt-text="Select to open or save the PDF.":::
 
 
     In Google Chrome, the file options display in the lower left corner of the browser. 
@@ -104,6 +104,8 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * You can share a dashboard with someone outside of your organization--someone who isn't in your Power BI tenant. However, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
 
 ### General
+
+* Export to PDF isn't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, the export fails. The export might also fail if the admin setting **Azure private link** is on and **Block public internet access** is off.
 * Semantic model refresh operations using an XMLA endpoint.
 * In the Power BI service, URL filters aren't currently respected when you choose **Current Values** for your export.
 * Visuals [displayed as a Data table or displayed with "Show as a table"](../consumer/end-user-show-data.md) are included in the export, but the visual displays in its default state, without the table. 

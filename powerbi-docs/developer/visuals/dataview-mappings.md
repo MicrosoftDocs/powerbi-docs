@@ -1027,7 +1027,7 @@ In table data view mapping, apply the data reduction algorithm to the `rows` sec
 
 You can apply the data reduction algorithm to the `rows` and `columns` sections of the Data View mapping matrix.
 
-## Next steps
+## Related content
 
 * [Add drill-down support](drill-down-support.md)
 * [Create custom Power BI visuals without data binding](no-dataroles-support.md)

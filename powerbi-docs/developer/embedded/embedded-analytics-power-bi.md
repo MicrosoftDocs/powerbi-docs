@@ -77,7 +77,7 @@ There are two types of Power BI embedded analytics offerings. Each offer include
 
 For more information about the differences between the Embedded and Premium SKUs, see [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md).
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers application](embed-sample-for-customers.md)

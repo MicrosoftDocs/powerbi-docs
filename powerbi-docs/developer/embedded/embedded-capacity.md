@@ -117,7 +117,7 @@ Note the amount of memory available on each node size described in the *RAM (GB)
 
 The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Premium A4 capacity, a single dataset size is limited to 25 GB.
 
-## Next steps
+## Related content
 
 * [Embed for your customers](embed-sample-for-customers.md)
 * [Embed for your organization](embed-sample-for-your-organization.md)

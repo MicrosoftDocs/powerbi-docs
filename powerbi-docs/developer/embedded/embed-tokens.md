@@ -130,7 +130,7 @@ This diagram shows an example of the authentication flow for the *embed for your
 
 ---
 
-## Next steps
+## Related content
 
 * [Considerations when generating an embed token](generate-embed-token.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
