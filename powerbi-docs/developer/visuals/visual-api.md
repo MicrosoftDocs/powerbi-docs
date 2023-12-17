@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/19/2023
+ms.date: 12/17/2023
 ---
 
 # Visual API
@@ -55,6 +55,10 @@ constructor(options: VisualConstructorOptions)
 
 ### VisualConstructorOptions
 
+These interfaces get updated with each new API version. For the most updated interface format go to our [github repo](https://github.com/microsoft/powerbi-visuals-api/blob/main/src/visuals-api.d.ts#L1783C9-L1783C25).
+
+The following list describes some of the properties of the `VisualConstructorOptions` interface:
+
 * `element: HTMLElement`, a reference to the DOM element that contains your visual
 * `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI)
 
@@ -62,41 +66,33 @@ constructor(options: VisualConstructorOptions)
 
   * `createSelectionIdBuilder`, generates and stores metadata for selectable items in your visual
   * `createSelectionManager`, creates the communication bridge used to notify the visual's host about changes in the selection state, see [Selection API](./selection-api.md).
+  * `hostCapabilities`
+  * `refreshHostData`
+  * `downloadService`, returns expanded result information of the [download](./file-download-api.md).
+  * `eventService`, returns information about [rendering events](./event-service.md).
+  * `hostEnv`
+  * `displayWarningIcon`, returns [error or warning message](./visual-display-warning-icon.md).
+  * `licenseManager`, returns [license information](./licensing-api.md).
   * `createLocalizationManager`, generates a manager to help with [localization](./localization.md)
-  * `allowInteractions: boolean`, a boolean flag that determines whether or not the visual is interactive
   * `applyJsonFilter`, applies specific filter types, see [Filter API](./filter-api.md)
+  * `applyCustomSort`, allows [custom sorting options](./sort-options.md#custom-sorting).
+  * `acquireAADTokenService`, returns Microsoft Entra ID [authentication information](./authentication-api.md).
+  * `webAccessService`, returns permission status for [accessing remote resources](./permissions-api.md#web-access).
+  * `openModalDialog`, returns a [dialog box](./create-display-dialog-box.md).
   * `persistProperties`, allows users to create persistent settings and save them along with the visual definition, so they're available on the next reload
   * `eventService`, returns an [event service](./event-service.md) to support **Render** events
   * `storageService`, returns a service to help use [local storage](./local-storage.md) in the visual
+  * `storageV2Service`, returns a service to help use [local storage](./local-storage.md) version 2 in the visual
   * `tooltipService`, returns a [tooltip service](./add-tooltips.md) to help use tooltips in the visual
+  * `telemetry`
+  * `drill`
   * `launchUrl`, helps to [launch URL](./launch-url.md) in next tab
+  * `authenticationService`: returns a Microsoft Entra ID token.
   * `locale`, returns a locale string, see [Localization](./localization.md)
   * `instanceId`, returns a string to identify the current visual instance
   * `colorPalette`, returns the colorPalette required to apply colors to your data
   * `fetchMoreData`, supports using more data than the standard limit (1K rows), see [Fetch more data](./fetch-more-data.md)
   * `switchFocusModeState`, helps to change the focus mode state
-
- ```typescript
-   export interface IVisualHost extends extensibility.IVisualHost {
-       createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-       : () => ISelectionManager;
-       colorPalette: ISandboxExtendedColorPalette;
-       persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-       applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-       tooltipService: ITooltipService;
-       telemetry: ITelemetryService;
-       locale: string;
-       allowInteractions: boolean;
-       launchUrl: (url: string) => void;
-       fetchMoreData: () => boolean;
-       instanceId: string;
-       refreshHostData: () => void;
-       createLocalizationManager: () => ILocalizationManager;
-       storageService: ILocalVisualStorageService;
-       eventService: IVisualEventService;
-       switchFocusModeState: (on: boolean) => void;
-   }
-   ```
 
 ## update
 
