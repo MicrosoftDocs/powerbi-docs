@@ -17,7 +17,7 @@ Power BI runs performance smoothing on all Premium capacities. Smoothing is used
 
 In a Premium capacity, CPU usage is the most important measure, because it determines how much of your capacity is in use. By flattening your CPU usage over time, smoothing helps you avoid being penalized due to bursts of intensive CPU usage. When your CPU usage is flatter, you can avoid being throttled when small bursts occur.
 
-The figures below show the way CPU usage is reported in the [Utilization](/fabric/enterprise/metrics-app-overview-page#utilization) chart, as opposed to the way it used to be reported.  
+The figures below show the way CPU usage is reported in the [Utilization](/fabric/enterprise/metrics-app-compute-page#utilization) chart, as opposed to the way it used to be reported.  
 
 :::row:::
    :::column span="":::
@@ -44,7 +44,7 @@ During each timepoint, Power BI adds up the average CPU usage from both the inte
 
 ## How to detect overload?
 
-You can see if your capacity is overloading, by reviewing the [Utilization](/fabric/enterprise/metrics-app-overview-page#utilization) chart in the Premium metrics app. A spike that goes over the line indicates an overload. To further investigate the overload, drill through to the [timepoint](/fabric/enterprise/metrics-app-timepoint-page) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
+You can see if your capacity is overloading, by reviewing the [Utilization](/fabric/enterprise/metrics-app-compute-page#utilization) chart in the Premium metrics app. A spike that goes over the line indicates an overload. To further investigate the overload, drill through to the [timepoint](/fabric/enterprise/metrics-app-timepoint-page) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
 
 ## How to resolve overload?
 
