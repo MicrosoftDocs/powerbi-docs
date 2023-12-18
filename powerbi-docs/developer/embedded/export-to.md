@@ -21,7 +21,7 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
   * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
 
 >[!NOTE]
->Exporting a Power BI report to file using the exportToFile API is not supported for Premium Per User (PPU).
+>Exporting a Power BI report to a file using the exportToFile API is not supported for Premium Per User (PPU).
 
 ## Usage examples
 
