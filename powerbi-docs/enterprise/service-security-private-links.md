@@ -336,9 +336,10 @@ If Azure Private Link is properly configured and **Block public Internet access*
 There are a few considerations to keep in mind while working with private endpoints in Power BI:
 
 * Power BI supports up to 200 capacities in the private link enabled tenant
+* When private link is turned on in the admin portal, tenant migration will be blocked.
 * Any uses of external images or themes aren't available when using a private link environment.
 * If internet access is disabled, and if the dataset or dataflow connects to a Power BI dataset or dataflow as a data source, the connection fails.
-* Each private endpoint can be connected to one tenant only. 
+* Each private endpoint can be connected to one tenant only.  You can't set up a private link to be used by more than one tenant. 
 * Datamarts don't currently support private links using SSMS. Private link connections using SSMS will be rejected if **Block Public Internet Access** is enabled.
 * If your organization is using **Azure Private Link** in Power BI, modern usage metrics reports will contain partial data (only Report Open events). A current limitation when transferring client information over private links prevents Power BI from capturing Report Page Views and performance data over Private Links. If your organization uses **Azure Private Link** and **Block Public Internet Access** in Power BI, the refresh for the dataset fails and the usage metrics report doesn't show any data.
 * Publish to Web is not supported when you enable **Azure Private Link** in Power BI.
@@ -350,7 +351,6 @@ There are a few considerations to keep in mind while working with private endpoi
  * **For non-PowerBI (PowerApps or LogicApps) Gateway users**, the gateway does not work properly when private links are enabled. A potential workaround is to turn off private links, configure the gateway in a remote region (a region other than the recommended region), then re-enable the private links. After the private links are re-enabled, the gateway in the remote region won't use private links.
 
 * Private links resource REST APIs don't support tags.
-* You can't set up a private link to be used by more than one tenant. 
 * Exporting a Power BI report as PDF or PowerPoint is not supported when you enable Azure Private Link in Power BI.
 * The following URLs must be accessible from the client browser which are required for auth:
 

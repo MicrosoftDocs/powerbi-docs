@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/25/2023
+ms.date: 12/14/2023
 ms.custom: known-issue-535
 ---
 
@@ -16,7 +16,7 @@ In Power BI Service, the new card visual's formatting or shadow, glow, and accen
 
 **APPLIES TO:** ✔️ Power BI Service
 
-**Status:** Open
+**Status:** Fixed: December 13, 2023
 
 **Problem area:** Consume and View
 

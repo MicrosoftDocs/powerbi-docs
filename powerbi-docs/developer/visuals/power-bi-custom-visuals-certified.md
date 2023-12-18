@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 12/14/2023
 ---
 
 # Get your Power BI visual certified
@@ -98,7 +98,7 @@ Follow the code requirements listed below to make sure that your code is in line
 
 #### Not allowed
 
-* Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
+* Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services. Therefore, [WebAccess privileges](./capabilities.md#allow-web-access) should be empty, or omitted, in the capabilities settings.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
 * JavaScript errors or exceptions in the browser console, for any input data.
 * Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.
