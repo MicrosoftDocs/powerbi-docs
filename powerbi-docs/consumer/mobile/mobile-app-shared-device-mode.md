@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 09/06/2023
 ---
 
-# Shared device mode for the Power BI mobile app (preview)
+# Shared device mode for the Power BI mobile app
 
 Many organizations maintain a pool of mobile devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign-on (SSO) across applications and keeping users signed in on their device.
 
