@@ -88,7 +88,7 @@ This option takes you back to the online editor experience, where you can make c
 > This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. *If you edit this report in Report Builder, you can't edit it online anymore.*
 
 ## Add images to the paginated report
-For any paginated report that you *author online*, you can insert images in the top section of your report to brand or describe your formatted table data below.
+For any paginated report that you *author online*, you can insert images in the top section of your report to brand or describe your formatted table data.
 
 ### Add an image item
 1. To add an image to your report, select **Insert**, then **Image**.
