@@ -43,7 +43,3 @@ public update(options: VisualUpdateOptions) {
             this.host.drill(args);
         }
 ```
-
-## Related content
-
-[Dynamic drilldown control](dynamic-drilldown.md)
