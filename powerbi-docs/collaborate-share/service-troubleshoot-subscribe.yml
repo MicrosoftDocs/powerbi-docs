@@ -30,7 +30,7 @@ sections:
           
           - If you can’t use the subscription feature, contact your Power BI administrator, or IT help desk. Your organization may have disabled this feature, generally or specifically for external users, or a maximum subscriber limit may have been reached. 
           
-          - Your organization may configure certain settings in Microoft Entra ID that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
+          - Your organization may configure certain settings in Microsoft Entra ID that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
           
           ### You've reached the maximum of 24 subscriptions
           There's a limit of 24 subscriptions per Power BI report or dashboard. You can provide unique recipients, times, and frequencies for each subscription. Paginated reports don't have this limit. 
