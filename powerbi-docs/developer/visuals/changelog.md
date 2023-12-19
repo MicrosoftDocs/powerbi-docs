@@ -1,6 +1,6 @@
 ---
 title: Power BI visuals API changelog
-description: This article describes main changes in different versions of Power BI visuals API
+description: This article describes main changes in different versions of Power BI visuals API.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -12,12 +12,12 @@ ms.date: 12/19/2023
 
 # Power BI visuals API changelog
 
-This page contains a quick summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and won't change.
+This page contains a quick summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
 ## Coming soon
 
-* **Local storage API**: A new version of local storage API available for all custom visuals and controlled by a global admin setting that will be *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
-* **On-object support for custom visuals**: We'll support on object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
+* **Local storage API**: A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
+* **On-object support for custom visuals**: On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
 
 ## API v5.7.0
 
@@ -38,7 +38,7 @@ This page contains a quick summary of the existing API versions and what to expe
 * SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.  
   > [!NOTE]
   > The selectionId's core data might change. Therefore, a persisted selectionId/identityIndex using an older API version might not be relevant in matrix visuals.
-* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` which returns expanded result information of the download.
+* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` that returns expanded result information of the download.
 * Supports Desktop March 2023
 
 ## API v5.2.0
