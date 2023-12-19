@@ -117,7 +117,7 @@ We have to configure the delegation settings on the report server service accoun
 
 These steps help configure Power BI Report Server to work with Kerberos authentication mechanism and get the test connection to data source working on your local machine.
 
-## Configure Entra application proxy connector
+## Configure Microsoft Entra application proxy connector
 
 Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
 
@@ -127,7 +127,7 @@ We installed the application proxy connector on Power BI Report Server, but you 
 
 Ensure the connector is trusted for delegation to the SPN added to the report server application pool account.
 
-Configure Kerberos Constrained Delegation (KCD) so that the Entra application proxy service can delegate user identities to the report server application pool account. Configure KCD by enabling the application proxy connector to retrieve Kerberos tickets for your users who have been authenticated in Entra ID. Then that server passes the context to the target application, or Power BI Report Server in this case.
+Configure Kerberos Constrained Delegation (KCD) so that the Microsoft Entra application proxy service can delegate user identities to the report server application pool account. Configure KCD by enabling the application proxy connector to retrieve Kerberos tickets for your users who have been authenticated in Microsoft Entra ID. Then that server passes the context to the target application, or Power BI Report Server in this case.
 
 To configure KCD, repeat the following steps for each connector machine.
 
@@ -140,9 +140,9 @@ To configure KCD, repeat the following steps for each connector machine.
 7. Click **OK**. 
 8. To save the changes, click **OK** again.
 
-## Publish through Entra application proxy
+## Publish through Microsoft Entra application proxy
 
-Now you're ready to configure Entra application proxy.
+Now you're ready to configure Microsoft Entra application proxy.
 
 Publish Power BI Report Server through application proxy with the following settings. For step-by-step instructions on how to publish an application through application proxy, see [Add an on-premises app to Microsoft Entra ID](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
@@ -155,7 +155,7 @@ Publish Power BI Report Server through application proxy with the following sett
 
 We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.msappproxy.net/` for our environment.
 
-- **Pre-authentication Method**: Entra ID.
+- **Pre-authentication Method**: Microsoft Entra ID.
 - **Connector Group:** Default.
 
 ![Default connector group](media/azure-application-proxy/report-server-application-proxy-1.png)
