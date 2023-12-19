@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
 ms.custom: pbibetadocbug, intro-get-started, sample-salesandmarketingsample
-ms.date: 12/07/2023
+ms.date: 12/19/2023
 LocalizationGroup: Visualizations
 ---
 # Get started formatting report visualizations
@@ -157,7 +157,7 @@ These are just a few of the formatting tasks that are possible. Open a report in
 
 Data labels have some enhanced formatting capabilities, giving you extended customization choices. For example, you can integrate additional metrics on your charts to improve your data analysis experience. These options are available for columns, bars, lines, and ribbon charts.
 
-:::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png" alt-text="Screenshot showing customizing data labels.":::
+:::image type="content" source="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png" alt-text="Screenshot showing customizing data labels." lightbox="media/service-getting-started-with-color-formatting-and-axis-properties/bar-column-chart-enhanced-data-labels.png":::
 
 * **Title**: The new Title card feature enables you to display legend fields on your data labels, so you can omit the legend for a cleaner look. You can also customize data label titles using different data fields, adjustable font style, color, and transparency.
 * **Value**: Spot the active field for your data label in the field well. Modifying it to another field is easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.
@@ -186,7 +186,7 @@ These are just a few of the formatting tasks that are possible. Open a report in
 
 ## Next steps
 
-For more information, see the following article:
+For more information, see the following articles:
 
 * [Sharing reports](../collaborate-share/service-share-reports.md)
 

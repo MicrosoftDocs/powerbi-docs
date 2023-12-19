@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 12/07/2023
+ms.date: 12/19/2023
 LocalizationGroup: Get started
 ---
 
@@ -27,13 +27,13 @@ You can sign up for a [Microsoft Fabric free trial](https://aka.ms/try-fabric).
 
 1. From the visual context menu or report toolbar, tap a visual in the report, and then select  **Set alert**.
 
-    :::image type="content" source="media/business-user-set-alerts/set-alert-button.png" alt-text="Screenshot showing the Set alert button in the Power BI ribbon.":::
+    :::image type="content" source="media/business-user-set-alerts/set-alert-button.png" alt-text="Screenshot showing the Set alert button in the Power BI ribbon." lightbox="media/business-user-set-alerts/set-alert-button.png":::
 
     A pane opens where you can set the measure you want to monitor in that visual, and the conditions you want to detect.
 
 1. In the **Set an alert** pane, choose:
 
-    :::image type="content" source="media/business-user-set-alerts/set-alert-pane.png" alt-text="Screenshot showing the Set alert pane.":::
+    :::image type="content" source="media/business-user-set-alerts/set-alert-pane.png" alt-text="Screenshot showing the Set alert pane." lightbox="media/business-user-set-alerts/set-alert-pane.png":::
 
     - A measure to monitor.
     - A condition to evaluate.

@@ -7,7 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/07/2023
+ms.date: 12/19/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations 
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Visualizations
 
 You have a number of options for formatting column and bar charts in Power BI. These features aim to provide you with greater flexibility and freedom in presenting your data, to make your insights stand out.
 
-:::image type="content" source="media/power-bi-visualization-column-bar-format/bar-column-chart-formatting.png" alt-text="Screenshot of a formatting option for a column chart.":::
+:::image type="content" source="media/power-bi-visualization-column-bar-format/bar-column-chart-formatting.png" alt-text="Screenshot of a formatting option for a column chart." lightbox="media/power-bi-visualization-column-bar-format/bar-column-chart-formatting.png":::
 
 Explore these new capabilities to create compelling narratives with your data in Power BI. Here are details about the features.
 
