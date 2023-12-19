@@ -16,25 +16,25 @@ LocalizationGroup: Administration
 
 Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, users with access to a workspace have access to semantic models in that workspace. RLS only restricts data access for users with **Viewer** permissions. It doesn't apply to Admins, Members, or Contributors.
 
-You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on semantic models that are using DirectQuery, such as SQL Server. For Analysis Services or Azure Analysis Services lives connections, you configure Row-level security in the model, not in Power BI Desktop. The security option doesn't show up for live connection semantic models.
+You can configure RLS for data models imported into Power BI with Power BI. You can also configure RLS on semantic models that are using DirectQuery, such as SQL Server. For Analysis Services or Azure Analysis Services lives connections, you configure Row-level security in the model, not in Power BI. The security option doesn't show up for live connection semantic models.
 
 [!INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
 By default, row-level security filtering uses single-directional filters, whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filtering with row-level security by selecting the relationship and checking the **Apply security filter in both directions** checkbox. Note that if a table takes part in multiple bi-directional relationships you can only select this option for one of those relationships. Select this option when you've also implemented dynamic row-level security at the server level, where row-level security is based on username or login ID.
 
-For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
+For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI](../transform-model/desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
 
  :::image type="content" source="media/service-admin-rls/rls-apply-security-filter.png" alt-text="Screenshot of the apply Security Filter.":::
 
-## Define roles and rules in Power BI Desktop using enhanced row-level security editor (Preview)
+## Define roles and rules in Power BI using enhanced row-level security editor (Preview)
 
-You can quickly and easily define row-level security roles and filters within Power BI Desktop using the enhanced row-level security editor. With this editor, you can toggle between using the default drop-down interface and a DAX interface. When you publish to Power BI, you also publish the role definitions.
+You can quickly and easily define row-level security roles and filters within Power BI using the enhanced row-level security editor. With this editor, you can toggle between using the default drop-down interface and a DAX interface. When you publish to Power BI, you also publish the role definitions.
 
 To define security roles using the enhanced row-level security editor:
 
-1. Enable the preview by going to Files > Options and Settings > Options > Preview features and turn on “Enhanced row-level security editor”.
+1. In Power BI Desktop, enable the preview by going to Files > Options and Settings > Options > Preview features and turn on “Enhanced row-level security editor”. Alternatively you can use this editor in the Service by [editing your data model in the Power BI service](../transform-model/service-edit-data-models.md). 
 
-2. Import data into your Power BI Desktop report, or configure a DirectQuery connection.
+2. Import data into your Power BI semantic model, or configure a DirectQuery connection.
 
 3. From the ribbon, select **Manage roles**.
 
@@ -69,11 +69,9 @@ To define security roles using the enhanced row-level security editor:
 
 [!INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
 
-Now that you're done validating the roles in Power BI Desktop, go ahead and publish your report to the Power BI service.
-
 ## Manage security on your model
 
-To manage security on your data model, open the workspace where you saved your report in the Power BI service and do the following steps:
+To manage security on your semantic model, open the workspace where you saved your semantic model in the Power BI service and do the following steps:
 
 1. In the Power BI service, select the **More options** menu for a semantic model. This menu appears when you hover on a semantic model name, whether you select it from the navigation menu or the workspace page.
 
@@ -85,9 +83,7 @@ To manage security on your data model, open the workspace where you saved your r
 
     :::image type="content" source="media/service-admin-rls/dataset-more-options-menu.png" alt-text="Screenshot showing the more options menu with Security selected.":::
 
-Security takes you to the Role-Level Security page where you add members to a role you created in Power BI Desktop. Contributor (and higher workspace roles) will see **Security** and can assign users to a role.
-
-You can only create or modify roles within Power BI Desktop.
+Security takes you to the Role-Level Security page where you add members to a role you created. Contributor (and higher workspace roles) will see **Security** and can assign users to a role.
 
 ## Working with members
 
@@ -120,21 +116,19 @@ You can remove members by selecting the X next to their name.
 You can validate that the role you defined is working correctly in the Power BI service by testing the role.
 
 1. Select **More options** (...) next to the role.
-2. Select **Test data as role**.
+2. Select **Test as role**.
 
  :::image type="content" source="media/service-admin-rls/rls-test-role.png" alt-text="Screenshot of test as role option.":::
 
 You're redirected to the report that was published from Power BI Desktop with this semantic model, if it exists. Dashboards aren't available for testing using the  **Test as role** option.
 
-In the page header, the role being applied is shown.
+In the page header, the role being applied is shown. Test other roles, a combination of roles, or a specific person by selecting **Now viewing as**. Here you see important permissions details pertaining to the individual or role being tested.
 
- :::image type="content" source="media/service-admin-rls/rls-test-role2.png" alt-text="Screenshot of Now viewing as Eastern US.":::
+ :::image type="content" source="media/service-admin-rls/rls-test-role2.png" alt-text="Screenshot of Now viewing as dropdown for a specific person.":::
 
-Test other roles, or a combination of roles, by selecting **Now viewing as**.
+Test other reports connected to the semantic model by selecting **Viewing** in the page header. You can only test reports located in the same workspace as your semantic model.
 
- :::image type="content" source="media/service-admin-rls/rls-test-role3.png" alt-text="Screenshot showing the test other roles option.":::
-
-You can choose to view data as a specific person or you can select a combination of available roles to validate they're working.
+:::image type="content" source="media/service-admin-rls/rls-test-role3.png" alt-text="Screenshot of Viewing to select a different report to test.":::
 
 To return to normal viewing, select **Back to Row-Level Security**.
 
