@@ -38,7 +38,7 @@ sections:
           
             * Set an [Azure Policy](/azure/governance/policy/overview) to restrict the resource group to resources of type `microsoft.powerbidedicated/autoscalevcores` only.
 
-            * Create an [Action Group](/azure/azure-monitor/alerts/action-groups) within your [Azure budget tutorial](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) which calls a custom Azure PowerShell Runbook to get and delete all resources in the resource group.
+            * Create an [Action Group](/azure/azure-monitor/alerts/action-groups) within your [Azure budget](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) which calls a custom Azure PowerShell Runbook to get and delete all resources in the resource group.
           
       - question: |
           How does resource utilization cause Premium to autoscale?
