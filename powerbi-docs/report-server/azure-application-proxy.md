@@ -117,7 +117,7 @@ We have to configure the delegation settings on the report server service accoun
 
 These steps help configure Power BI Report Server to work with Kerberos authentication mechanism and get the test connection to data source working on your local machine.
 
-## Configure Microsoft Entra application proxy connector
+## Configure Entra application proxy connector
 
 Refer to the article for [configuration related to the application proxy connector](/entra/identity/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad)
 
