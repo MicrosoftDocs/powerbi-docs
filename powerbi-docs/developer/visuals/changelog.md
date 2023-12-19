@@ -30,7 +30,7 @@ This page contains a quick summary of the existing API versions and what to expe
 ## API v5.4.0
 
 * [**Improved keyboard navigation**](./supportskeyboardfocus-feature.md#enhanced-keyboard-accessibility): Improves accessibility and usability of your visuals by providing more options for interacting with visual using the keyboard.
-* [Detect filter use in reports](./detect-filter-api.md): Detect if there are any filters applied to a report.
+* [**Detect filter use in reports**](./detect-filter-api.md): Detect if there are any filters applied to a report.
 * Supports Desktop May 2023
 
 ## API v5.3.0
