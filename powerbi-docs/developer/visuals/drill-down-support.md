@@ -342,7 +342,7 @@ To test the visual with matrix data view mappings, first prepare sample data:
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Then apply the following dataview mapping to the visual:
+Then apply the following data view mapping to the visual:
 
 ```json
 {

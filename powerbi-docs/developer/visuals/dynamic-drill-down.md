@@ -1,6 +1,6 @@
 ---
 title: The dynamic drill-down API in Power BI visuals
-description: This article explains how to create a Power BI custom visual allows the user to enable or disable drill down support.
+description: This article explains how to create a Power BI custom visual allows the user to enable or disable drill-down support.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -21,11 +21,11 @@ The following images show an example of a visual with the dynamic drill control 
 
 ### [Drill enabled](#tab/drill-enabled)
 
-:::image type="content" source="media/drill-down-support/drill-enabled.png" alt-text="Screenshot of a visual with drilldown disabled displaying each continent with all the countries/regions in that continent displayed under it.":::
+:::image type="content" source="media/dynamic-drill-down/drill-enabled.png" alt-text="Screenshot of a visual with drilldown disabled displaying each continent with all the countries/regions in that continent displayed under it.":::
 
 ### [Drill disabled](#tab/drill-disabled)
 
-:::image type="content" source="media/drill-down-support/drill-disabled.png" alt-text="Screenshot of a visual with drilldown enabled showing the population of each continent with Ocenana expanded to show Australia and New Zealand.":::
+:::image type="content" source="media/dynamic-drill-down/drill-disabled.png" alt-text="Screenshot of a visual with drilldown enabled showing the population of each continent with Ocenana expanded to show Australia and New Zealand.":::
 
 ---
 

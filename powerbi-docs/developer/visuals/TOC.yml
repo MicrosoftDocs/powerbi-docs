@@ -150,6 +150,8 @@
       href: event-service.md
     - name: "Drilldown API"
       href: drilldown-api.md
+    - name: "Dynamic drill support API"
+      href: dynamic-drill-down.md
     - name: "File download API"
       href: file-download-api.md
     - name: "Permissions API"
