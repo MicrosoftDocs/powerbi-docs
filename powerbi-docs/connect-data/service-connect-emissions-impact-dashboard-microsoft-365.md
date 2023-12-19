@@ -219,9 +219,9 @@ Currently, the Emissions Impact Dashboard for Microsoft 365 only reports on emis
 
 It is possible for your Microsoft 365 emissions figure to move in the opposite direction of your count of unique active users in Microsoft 365. This most often occurs when an organization that already uses one or multiple Microsoft 365 applications begins the process of onboarding to a new application. In this scenario, the organization would start getting allocated emissions associated with the new application, but the overall unique active user count displayed in the 'carbon intensity' tab of the dashboard might remain constant or even decline. This is because the 'user count' figure only counts each user once, even if they use multiple applications. So, for example, if an organization has 500 users of Exchange in June (and doesn't use any other Microsoft 365 applications that month) and subsequently onboards all 500 of those users to SharePoint in July, their overall emissions figure would go up in July but their unique active user count would remain the same. The Emissions Impact Dashboard only displays a single unique active user count in the 'carbon intensity' tab; to parse out usage of specific Microsoft 365 applications, organizations can visit the [Apps usage report in the Microsoft 365 Admin Center](/microsoft-365/admin/activity-reports/microsoft365-apps-usage-ww).
 
-**Are emissions from M365 Copilot usage included in the report?**
+**Are emissions from Microsoft Copilot for Microsoft 365 usage included in the report?**
 
-Copilot in Microsoft 365 is not currently included in this report.
+Copilot for Microsoft 365 is not currently included in this report.
 
 ### Methodology 
 
