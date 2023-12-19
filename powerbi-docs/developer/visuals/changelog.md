@@ -12,7 +12,7 @@ ms.date: 12/19/2023
 
 # Power BI visuals API changelog
 
-This page contains a quick summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
+This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
 ## Coming soon
 
