@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 12/05/2023
+ms.date: 12/19/2023
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 
@@ -253,7 +253,7 @@ To finish setting up your application, go to the **Users and groups** section an
 
 ### Configure the application registration
 
-Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Publish through Azure AD Application Proxy](#publish-through-azure-ad-application-proxy) earlier in this article.
+Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Publish through Entra application proxy](#publish-through-entra-application-proxy) earlier in this article.
 
 > [!NOTE]
 > If you use conditional access policies that require the Power BI mobile app to be an approved client app, you can’t use Azure AD Application Proxy to connect the Power BI mobile app to Power BI Report Server.
