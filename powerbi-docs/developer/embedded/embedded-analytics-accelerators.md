@@ -143,7 +143,7 @@ The following tables compare features of the different accelerators from our par
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)​            | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 |✔​                 | ​                                          |✔​                            | ✔​                                         | ​                                       | ​                                   |
 | **iLink Digital​** <br> [BiHub](https://www.ilink-digital.com/bihub/)                                   | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 | ✔                 | ​                                         | ✔                           | ​                                           | ​                                        | ​                                  |
 
-## Next steps
+## Related content
 
 * To learn more about each partner’s solution accelerator, visit their corresponding product website:
 
