@@ -26,7 +26,7 @@ You were assigned the **Contributor** role to the workspace associated with the 
 
 ## Solutions and workarounds
 
-To work around this issue by giving you access to update the al app, a workspace admin can temporarily grant you **Member** or **Admin** permissions on the workspace.
+To work around this issue by giving you access to update the organizational app, a workspace admin can temporarily grant you **Member** or **Admin** permissions on the workspace.
 
 ## Next steps
 

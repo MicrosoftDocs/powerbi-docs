@@ -1,32 +1,36 @@
 ---
 title: Power BI visuals API changelog
-description: This article describes main changes in different versions of Power BI visuals API
+description: This article describes main changes in different versions of Power BI visuals API.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/28/2023
+ms.date: 12/19/2023
 ---
 
 # Power BI visuals API changelog
 
-This page contains a quick summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and won't change.
+This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
 ## Coming soon
 
-* **Power BI Custom Visuals Authentication API**: This API allows Custom Visuals to obtain Azure Active Directory (AAD) access tokens through single sign-on (SSO), facilitating secure and efficient user-contextual operations.  
-* **Local storage API**: A new version of local storage API available for all custom visuals and controlled by a global admin setting that will be *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
-* **On-object support for custom visuals**: We'll support on object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
-* **Dynamic drill control**: This feature allows the visual to enable or disable the drill feature dynamically using an API call.
+* **Local storage API**: A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
+* **On-object support for custom visuals**: On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
+
+## API v5.7.0
+
+* [**Power BI Custom Visuals Authentication API**](./authentication-api.md): Allows Custom Visuals to obtain Microsoft Entra ID (formerly Azure AD) access tokens through single sign-on (SSO), facilitating secure and efficient user-contextual operations.
+* [**Dynamic drill control**](./dynamic-drill-down.md): Allows the visual to enable or disable the drill feature dynamically using an API call.
   * When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features are available. These functionalities include API calls, context menu commands, header drill buttons, and support for hierarchy data.
   * When the drill feature is disabled, these functionalities aren't available.
+* Supports Desktop December 2023
 
 ## API v5.4.0
 
-* [Improved keyboard navigation](./supportskeyboardfocus-feature.md#enhanced-keyboard-accessibility): Improves accessibility and usability of your visuals by providing more options for interacting with visual using the keyboard.
-* [Detect filter use in reports](./detect-filter-api.md): Detect if there are any filters applied to a report.
+* [**Improved keyboard navigation**](./supportskeyboardfocus-feature.md#enhanced-keyboard-accessibility): Improves accessibility and usability of your visuals by providing more options for interacting with visual using the keyboard.
+* [**Detect filter use in reports**](./detect-filter-api.md): Detect if there are any filters applied to a report.
 * Supports Desktop May 2023
 
 ## API v5.3.0
@@ -34,7 +38,7 @@ This page contains a quick summary of the existing API versions and what to expe
 * SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.  
   > [!NOTE]
   > The selectionId's core data might change. Therefore, a persisted selectionId/identityIndex using an older API version might not be relevant in matrix visuals.
-* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` which returns expanded result information of the download.
+* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` that returns expanded result information of the download.
 * Supports Desktop March 2023
 
 ## API v5.2.0
