@@ -76,19 +76,19 @@ A teaching bubble now points to the new location within **Format** > **Page info
 
 Analytics options like error bars, max, min, or percentile lines are consolidated in the **Format** pane at the bottom. You can set a max, min, or other reference line using the new **Reference line** card in the **Format** pane. 
 
-:::image type="content" source="media/power-bi-on-object-interaction/analytics-options-help-1.png" alt-text="Analytics pane help.":::
+:::image type="content" source="media/power-bi-on-object-interaction/analytics-options-help-1.png" alt-text="Screenshot showing analytics pane help.":::
 
 #### What happened to the right-click options for a field, like rename or **Show value as**? 
 
 They're still available on the right-click menu. Right-click the field name to see the same options as before.
 
-:::image type="content" source="media/power-bi-on-object-interaction/right-click-field-name-help-1.png" alt-text="right-click a field name.":::
+:::image type="content" source="media/power-bi-on-object-interaction/right-click-field-name-help-1.png" alt-text="Screenshot showing where to right-click a field name.":::
 
 #### How do I bring back my data pane if the pane switcher is gone? 
 
 You can reopen a pane from the **View** tab in the ribbon.
 
-:::image type="content" source="media/power-bi-on-object-interaction/data-pane-view-tab-help-1.png" alt-text="bring back the Data pane.":::
+:::image type="content" source="media/power-bi-on-object-interaction/data-pane-view-tab-help-1.png" alt-text="Screenshot showing bring back the Data pane.":::
 
 ## Build a visual with on-object interaction
 
