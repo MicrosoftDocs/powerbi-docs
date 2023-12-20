@@ -169,6 +169,8 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Tables based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
 
+- Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
+
 - Currently, when creating a *new* Direct Lake semantic model from the Lakehouse or SQL analytics endpoint in the Power BI service, any model items created in the *default* model are also added to the new model. These items can include measures, relationships, and properties such a format strings and data category. While these items can be changed in the new model,  those changes aren't reflected back to the default model. In a future update, only relationships can be optionally added when creating a new model.
 
 - Currently, for an *existing* Direct Lake model, if you're using the **Edit data model** experience in the Power BI service, one or more of the following can apply:

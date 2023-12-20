@@ -110,7 +110,7 @@ The remainder of this article describes considerations for content creator permi
 > [!TIP]
 > For permissions related to viewing content, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md) article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning your security strategy for content creators, key decisions and actions include:
 
@@ -156,7 +156,7 @@ There are three tenant settings related to discovery.
 - The _Make certified content discoverable_ tenant setting allows Power BI administrators to set which groups can set content to be discoverable (when they also have permission to edit the item as well as permission to certify content, which is granted by the _Certification_ tenant setting). The ability to certify content should be tightly controlled. In most cases, the same users who are allowed to certify content should be allowed to set it as discoverable. In some situations, you might want to restrict this capability only to approved data creators.
 - The _Make promoted content discoverable_ tenant setting allows Power BI administrators to set which groups can set the content as discoverable (when they also have permissions to edit the data). Because the ability to promote content is open to all content creators, in most cases, this capability should be available to all users. Less commonly, you might consider restricting this capability to only approved content creators.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning data discovery for your content creators, key decisions and actions include:
 
@@ -199,7 +199,7 @@ We recommend that you create helpful information for:
 > [!TIP]
 > For more information about responding to requests for read access from consumers, see [Request access workflow for consumers](#request-access-workflow-for-creators). It also includes information about using groups (instead of individual users).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning the _Request access_ workflow, key decisions and actions include:
 
@@ -301,7 +301,7 @@ There are two variations to the four workspace roles (described previously).
 > [!IMPORTANT]
 > Per-item permissions can also be thought of as an override of the standard workspace roles. For more information about per-item permissions, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#per-item-permissions) article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for workspace roles, key decisions and actions include:
 
@@ -321,7 +321,7 @@ A workspace administrator can also specify a setting in the workspace which [all
 > [!TIP]
 > For more information about delivering content to read-only consumers, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md) article. This article includes information about app permissions for app consumers, including audiences for the app.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for app creator permissions, key decisions and actions include:
 
@@ -415,7 +415,7 @@ We recommend that you keep your data extension security level at the higher leve
 > [!NOTE]
 > Developers of in-house-developed connectors can take steps to sign a connector with a certificate, allowing you to use the connector without the need to change your security settings. For more information, see [Trusted third-party connectors](/power-bi/connect-data/desktop-trusted-third-party-connectors).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning data source permissions, key decisions and actions include:
 
@@ -526,7 +526,7 @@ In some situations, you might want to execute a DAX query by using the Power BI 
 
 The _Dataset Execute Queries REST API_ tenant setting allows Power BI administrators to set which groups of users can send DAX queries by using the Power BI REST API. In most cases, you can leave this setting enabled for the entire organization and rely on workspace access and semantic model permissions. In some cases, you might consider restricting this capability to approved content creators.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for semantic model creator permissions, key decisions and actions include:
 
@@ -605,7 +605,7 @@ Power BI administrators can approve and deploy custom visuals for their organiza
 
 Consider a balanced strategy of enabling only certified custom visuals in your organization (with the tenant setting and group policy previously described), while deploying organizational visuals to handle any exceptions.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for report creator permissions, key decisions and actions include:
 
@@ -636,7 +636,7 @@ Consider the following scenario.
 
 For more information about using dataflows, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) and [advanced data preparation](powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md) usage scenarios.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for dataflow creator permissions, key decisions and actions include:
 
@@ -672,7 +672,7 @@ You can define [RLS for datamarts](/power-bi/transform-model/datamarts/datamarts
 
 Regardless of how a user chooses to connect to the datamart (to the semantic model or the database), identical RLS permissions are enforced.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for datamart creator permissions, key decisions and actions include:
 
@@ -722,7 +722,7 @@ The metric-level roles allow you to set:
 
 To reduce the level of future maintenance, it's possible to set default permissions that will be inherited by submetrics you create in the future.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for metric creator permissions, key decisions and actions include:
 
@@ -824,7 +824,7 @@ The _Email subscriptions_ tenant setting allows Power BI administrators to contr
 
 There are some limitations concerning attachments related to licensing and tenant setting restrictions. For more information, see [Email subscriptions for reports and dashboards in the Power BI service](/power-bi/consumer/end-user-subscribe#considerations-and-limitations).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for publishing content, key decisions and actions include:
 
@@ -865,7 +865,7 @@ Ideally, the semantic model owner is the user who's responsible for the semantic
 
 Like semantic models, dataflows also have an owner, which is a single user account. The information and guidance provided in the previous topic about [semantic model owners](#semantic-model-owner) also applies to dataflow owners.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for security related to data refresh processes, key decisions and actions include:
 

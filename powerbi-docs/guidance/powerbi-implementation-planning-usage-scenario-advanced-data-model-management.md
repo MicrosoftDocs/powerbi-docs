@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 04/20/2022
+ms.date: 12/05/2023
 ---
 
 # Power BI usage scenarios: Advanced data model management
@@ -40,27 +40,30 @@ The focus of this advanced data model management usage scenario is on using [Tab
 
 The following diagram depicts a high-level overview of the most common user actions and tools that can help you develop, manage, or optimize data models.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.png" alt-text="Diagram of advanced data model management, which is about empowering creators with advanced data modeling and publishing capabilities. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-inline.svg" alt-text="Diagram shows advanced data model management, which is about empowering creators with advanced modeling and publishing capabilities. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-model-management/usage-scenario-advanced-data-model-management-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#advanced-data-model-management) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | Semantic model creators develop data models by using Tabular Editor. It's common that the initial design work (like Power Query work) is done in Power BI Desktop before switching to Tabular Editor (not depicted in the scenario diagram). |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | The data model connects to data from one or more data sources. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development is done in Tabular Editor. Editing of Power Query (M) scripts is supported. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, semantic model creators publish the data model from Tabular Editor to the Power BI service by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) of the target workspace. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The data model is published to a workspace dedicated to storing and securing shared semantic models. Access to the workspace by using the XMLA endpoint is only possible when the workspace [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) is set to **Premium per user**, **Premium per capacity**, or **Embedded**. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | Report creators create reports by using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to the shared semantic model. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Report creators develop reports in Power BI Desktop. Other than purposefully [separating reports from semantic models](report-separate-from-model.md), content creators follow the typical report creation process. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | When ready, report creators publish their Power BI Desktop file (.pbix) to the Power BI service. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | Reports are published to a workspace dedicated to storing and securing reports and dashboards. |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | Published reports remain connected to the shared semantic model that's stored in a different workspace. Any changes made to the shared semantic model affect all dependent reports. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | [Third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) can use the XMLA endpoint to query the shared semantic model. Other XMLA-compliant tools, such as DAX Studio or PowerShell, can be used to query or update the shared semantic model. Power BI Desktop, Excel, and Report Builder can also connect by using the XMLA endpoint (not depicted in the scenario diagram). |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | Other Microsoft and third-party tools can use the XMLA endpoint to manage the semantic model and provide application lifecycle management. To learn more, see [XMLA endpoint-based client tools](../enterprise/service-premium-connect-tools.md#client-applications-and-tools). |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | Power BI administrators manage the tenant setting to enable the use of the XMLA endpoint. The administrator must [enable the XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools#enable-xmla-read-write) for Premium capacities and Premium Per User capacities. |
-| ![Item 14.](media/common/icon-14-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required for data refresh. Data refresh is scheduled and managed in the Power BI service. |
-| ![Item 15.](media/common/icon-15-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Model creators develop data models by using Tabular Editor. It's common that the initial design work (like Power Query work) is done in Power BI Desktop before switching to Tabular Editor (not depicted in the scenario diagram). |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The data model connects to data from one or more data sources. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Data model development is done in Tabular Editor. Editing of Power Query (M) scripts is supported. Model creators may use C# scripts to accelerate development. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | When ready, semantic model creators publish the data model from Tabular Editor to the Power BI service by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) of the target workspace. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The data model is published to a workspace dedicated to storing and securing shared semantic models. Access to the workspace by using the XMLA endpoint is only possible when the workspace [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) is set to **Fabric capacity**, **Premium capacity**, **Premium per user**, or **Embedded**. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Report creators create reports by using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to the shared semantic model. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Report creators develop reports in Power BI Desktop. Other than purposefully [separating reports from semantic models](report-separate-from-model.md), content creators follow the typical report creation process. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | When ready, report creators publish their Power BI Desktop file (.pbix) or Power BI project file (.pbip) to the Power BI service. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Reports are published to a workspace dedicated to storing and securing reports and dashboards. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Published reports remain connected to the shared semantic model that's stored in a different workspace. Any changes made to the shared semantic model affect all dependent reports. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | [Third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) can use the XMLA endpoint to query the shared semantic model. Other XMLA-compliant tools—such as DAX Studio, Semantic Link from Fabric notebooks, or Windows PowerShell—can be used to query or update the shared semantic model. Power BI Desktop, Excel, and Report Builder can also connect by using the XMLA endpoint (not depicted in the scenario diagram). |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Other Microsoft and third-party tools can use the XMLA endpoint to manage the semantic model and provide application lifecycle management. To learn more, see [XMLA endpoint-based client tools](../enterprise/service-premium-connect-tools.md#client-applications-and-tools). |
+| ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | Fabric administrators manage the tenant setting to enable the use of the XMLA endpoint. The administrator must [enable the XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools#enable-xmla-read-write) for Fabric capacities, Premium capacities, and Premium Per User settings. |
+| ![Item 15.](../media/legend-number/legend-number-15-fabric.svg) | Fabric administrators oversee and monitor activity in the Fabric portal. |
 
 ## Key points
 

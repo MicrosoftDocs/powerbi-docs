@@ -16,15 +16,15 @@ ms.date: 11/06/2023
 
 There are three inter-related perspectives to consider when adopting an analytics technology like Microsoft Fabric.
 
-:::image type="content" source="media/fabric-adoption-roadmap-maturity-levels/adoption-types.png" alt-text="Diagram shows the three inter-related types of analytics adoption, which are described in the table below." border="false":::
+:::image type="content" source="media/fabric-adoption-roadmap-maturity-levels/adoption-types.svg" alt-text="Diagram shows the three inter-related types of analytics adoption, which are described in the table below." border="false":::
 
 The three types of adoption depicted in the above diagram include:
 
 | **Type** | **Description** |
 | :-: | --- |
-| ![Type 1.](media/common/icon-01-red-30x30.png) | **Organizational adoption:** Organizational adoption refers to the effectiveness of your analytics governance processes. It also refers to data management practices that support and enable analytics and business intelligence (BI) efforts. |
-| ![Type 2.](media/common/icon-02-red-30x30.png) | **User adoption:** User adoption is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using analytics tools, and whether they're using them in the most effective way. |
-| ![Type 3.](media/common/icon-03-red-30x30.png) | **Solution adoption:** Solution adoption refers to the impact and business value achieved for individual requirements and analytical solutions. |
+| ![Type 1.](../media/legend-number/legend-number-01-fabric.svg) | **Organizational adoption** refers to the effectiveness of your analytics governance processes. It also refers to data management practices that support and enable analytics and business intelligence (BI) efforts. |
+| ![Type 2.](../media/legend-number/legend-number-02-fabric.svg) | **User adoption** is the extent to which consumers and creators continually increase their knowledge. It's concerned with whether they're actively using analytics tools, and whether they're using them in the most effective way. |
+| ![Type 3.](../media/legend-number/legend-number-03-fabric.svg) | **Solution adoption** refers to the impact and business value achieved for individual requirements and analytical solutions. |
 
 As the four arrows in the previous diagram indicate, the three types of adoption are all strongly inter-related:
 

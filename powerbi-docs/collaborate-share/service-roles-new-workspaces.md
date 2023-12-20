@@ -51,6 +51,11 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 | Modify gateway connection settings.<sup>4</sup> | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
 | View and interact with an item.<sup>5</sup> |  :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |
 | Read data that's stored in workspace dataflows. | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |
+| Create subscriptions to reports <sup>6</sup>| :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |
+| Subscribe others to reports <sup>6</sup>| :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |  |
+| Manage subscriptions created by others. | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false"::: |   |   |  |
+| Can receive subscriptions created by others <sup>6</sup>| :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::   | :::image type="content" source="../includes/media/yes-icon.png" alt-text="Supported." border="false":::  |
+
 
 <sup>1</sup> Contributors can [update the app that's associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to edit it.
 
@@ -61,6 +66,10 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 <sup>4</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. For details, see [Manage an on-premises gateway](/data-integration/gateway/service-gateway-manage).
 
 <sup>5</sup> If the items are in a workspace in a Premium capacity, you can view and interact with items in the Power BI service even if you don't have a Power BI Pro license.
+
+<sup>6</sup> To subscribe yourself or others requires a paid (Power BI Pro or Premium Per User (PPU)() license. When subscribing others, recipients also need a paid subscription, unless the items are in a workspace in a Premium capacity. B2B guest users can't subscribe others, only themselves.
+
+
 
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) for details.

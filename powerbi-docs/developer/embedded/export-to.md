@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 09/05/2023
+ms.date: 12/19/2023
 ---
 
 # Export Power BI report to file
@@ -19,6 +19,9 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
   * When you export to a .png, a report with multiple pages is compressed into a .zip file
   * Each file in the .zip represents a report page
   * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
+
+>[!NOTE]
+>Exporting a Power BI report to a file using the exportToFile API is not supported for Premium Per User (PPU).
 
 ## Usage examples
 
@@ -50,9 +53,9 @@ To make sure the export doesn't begin before the visual finishes rendering use t
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the total of exports in the job. An export includes exporting a single visual, or a page with or without bookmarks. All exports have the same weight. If for example, your export job includes exporting a report with 10 pages, and the polling returns 70, it means the API has processed seven out of the 10 pages in the export job.
+During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the total of exports in the job. An export includes exporting a single visual, or a page with or without bookmarks. All exports have the same weight. If for example, your export job includes exporting a report with 10 pages, and the polling returns 70, it means the API processed seven out of the 10 pages in the export job.
 
-When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL is available for 24 hours.
 
 ## Supported features
 
@@ -76,7 +79,7 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 You can specify a page or single visual to export. Pages can be exported with or without bookmarks.
 
-Depending on the type of export, you need to pass different attributes to the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) object. The table below specifies which attributes are required for each export job.  
+Depending on the type of export, you need to pass different attributes to the [ExportReportPage](/rest/api/power-bi/reports/exporttofile#exportreportpage) object. The following table specifies which attributes are required for each export job.  
 
 >[!NOTE]
 >Exporting a single visual has the same weight as exporting a page (with or without bookmarks). This means that in terms of system calculations, both operations carry the same value.
@@ -108,7 +111,7 @@ Using `reportLevelFilters` in [PowerBIReportExportConfiguration](/rest/api/power
 
 To export a filtered report, insert the [URL query string parameters](../../collaborate-share/service-url-filters.md) you want to use as your filter, to [ExportFilter](/rest/api/power-bi/reports/exporttofile#exportfilter). When you enter the string, you must remove the `?filter=` part of the URL query parameter.
 
-The table below includes a few syntax examples of strings you can pass to  `ExportFilter`.
+The table includes a few syntax examples of strings you can pass to  `ExportFilter`.
 
 |Filter    |Syntax    |Example    |
 |---|----|----|----|
@@ -122,7 +125,7 @@ You can authenticate using a user (or master user) or a [service principal](embe
 
 ### Row Level Security (RLS)
 
-With [Row Level Security (RLS)](embedded-row-level-security.md), you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
+With [Row Level Security (RLS)](embedded-row-level-security.md), you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report defined with regional roles, you can programmatically filter the report so that only a certain region displays.
 
 To export using RLS, you must have the following permissions:
 
@@ -131,7 +134,7 @@ To export using RLS, you must have the following permissions:
 
 ### Data protection
 
-The .pdf and .pptx formats support [sensitivity labels](../../enterprise/service-security-sensitivity-label-overview.md). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file will display the report with its sensitivity label.
+The .pdf and .pptx formats support [sensitivity labels](../../enterprise/service-security-sensitivity-label-overview.md). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file displays the report with its sensitivity label.
 
 A report with a sensitivity label can't be exported to a .pdf or a .pptx using a [service principal](embed-service-principal.md).
 
@@ -147,7 +150,7 @@ To export a report while it's connected to a semantic model other then the defau
 ## Concurrent requests
 
 The `exportToFile` API supports a limited number of concurrent requests. The maximum number of concurrent requests supported is 500 per capacity. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
-Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job will be processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel.
+Only five pages of a report are processed concurrently. For example, if you're exporting a report with 50 pages, the export job is processed in 10 sequential intervals. When optimizing your export job, you may want to consider executing a few jobs in parallel.
 
 ## Code examples
 
@@ -202,7 +205,7 @@ private async Task<string> PostExportRequest(
 
 ### Step 2 - polling
 
-After you've sent an export request, use polling to identify when the export file you're waiting for is ready.
+After you send an export request, use polling to identify when the export file you're waiting for is ready.
 
 ```csharp
 private async Task<HttpOperationResponse<Export>> PollExportRequest(
@@ -362,15 +365,14 @@ private async Task<ExportedFile> ExportPowerBIReport(
 
 ## Considerations and limitations
 
-* An export API operation load will be evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md).
+* An export API operation load is evaluated as a slow-running background operation, as described in [Premium capacity load evaluation](../../enterprise/service-premium-concepts.md).
 * All related semantic models in the report you're exporting must reside on a Premium or Embedded capacity, including semantic models with a Direct Query connection.
 * Exported reports can't exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels aren't supported.
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
-* Exporting a Power BI report to file using the `exportToFile` API, isn't supported for **Premium Per User (PPU)**.
-* The `exportToFile` API will export the report with default value if used without bookmarks or reportLevelFilters.
-* The Power BI visuals listed below aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals won't render, and will display an error symbol.
+* The `exportToFile` API exports the report with default value if used without bookmarks or reportLevelFilters.
+* The Power BI visuals listed here aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals don't render, and display an error symbol.
   * Uncertified Power BI custom visuals
   * R visuals
   * PowerApps

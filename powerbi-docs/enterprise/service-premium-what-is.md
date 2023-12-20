@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/15/2023
+ms.date: 12/13/2023
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -96,7 +96,7 @@ You can schedule and run as many refreshes as required at any given time, and th
 
 ## Monitoring
 
-When monitoring Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), you only need to take into consideration one aspect: *how much CPU your capacity requires to serve the load at any moment*. To monitor your capacity, use the [Power BI Premium Capacity Utilization and Metrics](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbipremiumcapacitymonitoringreport?tab=Overview) app.
+When monitoring Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), you only need to take into consideration one aspect: *how much CPU your capacity requires to serve the load at any moment*. To monitor your capacity, use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) app.
 
 To install the app, see [Install the Microsoft Fabric capacity metrics app](/fabric/enterprise/metrics-app-install). You can learn how to use the app in the article [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app).
 

@@ -303,6 +303,8 @@
           href: powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+        - name: "Usage scenario diagrams"
+          href: powerbi-implementation-planning-usage-scenario-diagrams.md
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"

@@ -14,7 +14,7 @@ ms.date: 02/27/2022
 
 This article describes **Stage 3**, which is concerned with conducting a proof of concept (POC) to mitigate risk and address unknowns as early as possible when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-proof-of-concept/migrate-to-powerbi-stage-3.png" alt-text="Image showing the stages of a Power BI migration. Stage 3 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-proof-of-concept/migrate-to-power-bi-stage-3.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 3 is emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
