@@ -153,4 +153,4 @@ The following tables compare features of the different accelerators from our par
 
   * [BiHub](https://www.ilink-digital.com/bihub/)
 
-[Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
+* [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
