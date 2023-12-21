@@ -49,7 +49,7 @@ Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.co
 
 ## Email address resolution in Microsoft Entra ID
 
-To capture a Microsoft Entra ID embed token for Power BI, you can use one of three different types of email addresses:
+To capture a Microsoft Entra embed token for Power BI, you can use one of three different types of email addresses:
 
 * The main email address associated with your Microsoft Entra account
 
