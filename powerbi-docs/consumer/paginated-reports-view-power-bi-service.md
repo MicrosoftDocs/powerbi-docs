@@ -47,9 +47,11 @@ You can also export paginated reports to many formats:
    
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-search.png" alt-text="Screenshot of Search highlighted.":::
 
-1. You can also sort by selecting the **sort** icon on the report.
+1. You can also sort by selecting the **sort** icon on the report. 
    
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-sort.png" alt-text="Screenshot of sort highlighted.":::
+
+   Note: Sorting may be limited by the author for reports created in Power BI Report Builder. You will have to update sort in Power BI Report Builder to be able to sort on all columns on the Power BI service.  
 
 1. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
 
@@ -59,13 +61,9 @@ You can also export paginated reports to many formats:
 
 - You can only search and sort in "Web layout."
 - Search:
-  
-       - You need at least one letter, number, or character to search.
        - Search doesn't work if there are over 300 rows per page.
 - Sort:
-
       - You can only sort on one column at a time.
-      - You might be able to sort only on specific columns if the report was created on Power BI Report Builder. This is because of the report definition and must be edited on Power BI Report Builder to sort on additional columns.
       - If a report was created on the service (before December 2023), you will have to edit the report for sorting to be available during consumption.
 
 ## Next steps
