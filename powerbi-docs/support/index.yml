@@ -27,11 +27,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Support overview
-            url: /power-platform/admin/support-overview.md
+            url: /power-platform/admin/support-overview
           - text: How to contact Support #can we eliminate the PBI version?
             url: service-support-options.md
           - text: Create a Support ticket
-            url: /power-platform/admin/get-help-support.md
+            url: /power-platform/admin/get-help-support
 
 # Card (optional)
   - title: Support-related admin settings

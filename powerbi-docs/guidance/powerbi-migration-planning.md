@@ -14,7 +14,7 @@ ms.date: 11/17/2022
 
 This article describes **Stage 2**, which is concerned with planning the migration for a single Power BI solution.
 
-:::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Image showing the stages of a Power BI migration. Stage 2 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-planning/migrate-to-power-bi-stage-2.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 2 is emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).

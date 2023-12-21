@@ -109,7 +109,7 @@ Business alignment is a continual process. To maintain business alignment, consi
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess [business alignment](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-assessments).
 
@@ -126,7 +126,7 @@ Use questions like those found below to assess [business alignment](powerbi-impl
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 A business alignment assessment evaluates integration between the business strategy and data strategy. Specifically, this assessment focuses on whether or not data and BI initiatives and solutions support business users to achieve business strategic objectives.
 

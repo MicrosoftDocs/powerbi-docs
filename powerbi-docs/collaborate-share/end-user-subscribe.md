@@ -30,7 +30,7 @@ It's never been easier to stay up-to-date on your most important dashboards and 
 
 
 ## Requirements
-The requirements apply to users in the organization and to [Azure Active Directory (Azure AD) Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
+The requirements apply to users in the organization and to [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md). To create a subscription for yourself, you need permissions to access the particular report or dashboard and **either**:
 
 - A Power BI Pro or [Premium Per User (PPU) license](../consumer/end-user-license.md), or
 - Access to a workspace backed by a [Power BI Premium capacity](../enterprise/service-premium-what-is.md) 
@@ -281,7 +281,7 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 ### B2B guest users can set up and be subscribed to email subscriptions
 
-B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. First, a member of the organization adds and subscribes the B2B guest user to the email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md).
+B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. First, a member of the organization adds and subscribes the B2B guest user to the email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
 In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 

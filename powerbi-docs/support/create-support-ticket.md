@@ -21,7 +21,7 @@ Before creating a support ticket, get real-time help by using the [Power Platfor
 
 Support tickets can be created by users with one of the following security roles or licenses.  
 
-- Azure AD role administrator
+- Microsoft Entra role administrator
 
 - Environment administrator (or system administrator role in Dataverse)
 
@@ -135,5 +135,3 @@ The steps you take to create a support ticket vary, depending on your role.
    ![PPACLivechat.](media/create-support-ticket/livechat.png)
 
         
-
-

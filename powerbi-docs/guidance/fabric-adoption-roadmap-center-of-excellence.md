@@ -193,7 +193,7 @@ Some organizations cover the COE operating costs with chargebacks to business un
 
 ## Considerations and key actions
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - Considerations and key actions you can take to establish or improve your COE.
 
@@ -209,7 +209,7 @@ Some organizations cover the COE operating costs with chargebacks to business un
 
 ## Questions to ask
 
-:::image type="icon" source="media/common/questions-to-ask.png" border="false":::
+:::image type="icon" source="media/common/questions-to-ask.svg" border="false":::
 
 Use questions like those found below to assess the effectiveness of a COE.
 
@@ -226,7 +226,7 @@ Use questions like those found below to assess the effectiveness of a COE.
 
 ## Maturity levels
 
-:::image type="icon" source="media/common/maturity-levels.png" border="false":::
+:::image type="icon" source="media/common/maturity-levels.svg" border="false":::
 
 The following maturity levels will help you assess the current state of your COE.
 

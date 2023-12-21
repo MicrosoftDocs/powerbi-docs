@@ -14,7 +14,7 @@ ms.date: 02/27/2022
 
 This article describes **Stage 1**, which is concerned with gathering and prioritizing requirements when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-requirements/migrate-to-powerbi-stage-1.png" alt-text="Image showing the stages of a Power BI migration. Stage 1 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-requirements/migrate-to-power-bi-stage-1.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 1 is emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).

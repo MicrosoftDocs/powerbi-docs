@@ -27,7 +27,7 @@ It's important to understand how [information protection and data loss preventio
 - Document the current setup
 - Identify user education and training opportunities
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering auditing for information protection and DLP, key decisions and actions include:
 

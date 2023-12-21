@@ -44,7 +44,7 @@ To properly manage, configure, and support Fabric, a managed tenant is required.
 > [!TIP]
 > The administration of Microsoft Entra ID is a broad and deep topic. We recommend that you assign specific people in your IT department as system administrators to [securely manage Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for your organization.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When reviewing your Microsoft Entra tenant for use with Fabric, key decisions and actions include:
 
@@ -62,7 +62,7 @@ Knowing your CTID is important for [Microsoft Entra B2B scenarios](/power-bi/ent
 
 If you intend to collaborate with or provide content to external users, we recommend setting up [custom branding](/power-bi/admin/service-admin-custom-branding). Use of a logo, cover image, and theme helps users identify which organizational tenant they're accessing.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When granting external users permission to view your content, or when you have multiple tenants, key decisions and actions include:
 
@@ -84,7 +84,7 @@ The following list includes some common reasons for collaboration between Fabric
 
 For more information, see [Collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering how to work with your Microsoft Entra administrators, key decisions and actions include:
 
@@ -114,7 +114,7 @@ The relocation of a tenant to another region isn't a fully automated process, an
 > [!TIP]
 > Because a lot of effort is involved, when you determine that a move is necessary, we recommend that you do it sooner rather than later.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the home region for storing data in your tenant, key decisions and actions include:
 
@@ -136,7 +136,7 @@ Multi-Geo support enables organizations to:
 > [!NOTE]
 > The Multi-Geo feature is available with any [type of capacity license](/fabric/enterprise/licenses#capacity) (except shared capacity). It's not available with Premium Per User (PPU) because data stored in workspaces assigned to PPU is always stored in the home region (just like shared capacity).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering other specific data regions for your tenant, key decisions and actions include:
 

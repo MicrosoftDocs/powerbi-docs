@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 11/30/2023
+ms.date: 12/14/2023
 ---
 
 # Tutorial: Build a bar chart
@@ -218,7 +218,6 @@ import "./../style/visual.less";
 import { axisBottom } from "d3-axis";
 
 import powerbiVisualsApi from "powerbi-visuals-api";
-import "regenerator-runtime/runtime";
 import powerbi = powerbiVisualsApi;
 
 type Selection<T1, T2 = T1> = d3.Selection<any, T1, any, T2>;
@@ -639,11 +638,10 @@ To add a color picker for each category on the **Property** pane, add a for loop
         };
 
         if (this.barDataPoints) {
-            let indx = 1;
             this.barDataPoints.forEach(dataPoint => {
                 (colorSelectorCard.groups[0] as powerbi.visuals.FormattingGroup).slices.push(
                     {
-                        uid: `dataColorsCard_group_colorSelector${indx}_uid`,
+                        uid: `dataColorsCard_group_colorSelector${dataPoint.category}_uid`,
                         displayName: dataPoint.category,
                         control: {
                             type: powerbi.visuals.FormattingComponent.ColorPicker,

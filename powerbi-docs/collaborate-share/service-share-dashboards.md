@@ -104,7 +104,7 @@ This type of link generates a URL to the report, but it doesn't give any access 
 
 **Specific people**
 
-This type of link allows specific people or groups to access the report. If you select this option, enter the names or email addresses of the people you wish to share with. This link type lets you share to guest users in your organization’s Azure Active Directory (Azure AD). You can't share to external users who aren't guests in your organization.
+This type of link allows specific people or groups to access the report. If you select this option, enter the names or email addresses of the people you wish to share with. This link type lets you share to guest users in your organization’s Microsoft Entra ID. You can't share to external users who aren't guests in your organization.
 
 **Settings**
 
@@ -204,7 +204,7 @@ Only your direct recipients see the shared report or dashboard. For example, if 
 
 People outside your organization don't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 
-Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Azure Active Directory (Azure AD) B2B guest users. Learn more about [Azure AD B2B guest users](../enterprise/service-admin-azure-ad-b2b.md).
+Use a security group, not a distribution group, to share with a group that includes people with external email addresses. People with external emails in a distribution group can't see the content you share, unless they're Microsoft Entra B2B guest users. Learn more about [Microsoft Entra B2B guest users](../enterprise/service-admin-azure-ad-b2b.md).
 
 If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
 

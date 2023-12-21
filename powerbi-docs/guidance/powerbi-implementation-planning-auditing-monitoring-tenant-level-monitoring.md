@@ -246,7 +246,7 @@ Common Azure services that integrate with Power BI include:
 - **Azure Key Vault:** One common way to use Azure Key Vault is for customer management of the encryption keys for data at-rest in the Power BI service. For more information, see [bring your own key](/power-bi/enterprise/service-encryption-byok) (BYOK) and [customer-managed keys](/power-bi/enterprise/service-encryption-customer-managed-keys) (CMK).
 - **Microsoft Purview:** Used by [Microsoft Purview Information Protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md), or by Microsoft Purview Data Catalog to [scan your Power BI tenant](/azure/purview/register-scan-power-bi-tenant?tabs=Scenario1&preserve-view=true), to extract metadata.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for tenant-level monitoring, key decisions and actions include:
 

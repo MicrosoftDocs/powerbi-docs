@@ -45,7 +45,7 @@ Consider the following three examples of Fabric administrators.
 - **High focus on governance and compliance:** Parker is a Fabric administrator who works for a highly regulated organization. In this organization, most BI development is handled by BI developers within a centralized [enterprise BI](fabric-adoption-roadmap-content-ownership-and-management.md#enterprise) team. Parker's administrative responsibilities are primarily focused on areas such as [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md), [information protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md), and [security](powerbi-implementation-planning-security-overview.md).
 - **High involvement in content creation:** Morgan is a Fabric administrator who works for a small organization that's just getting started building its [data culture](fabric-adoption-roadmap-data-culture.md). Presently, the organization has only a few content creators. In addition to system oversight responsibilities, Morgan is a BI developer who regularly creates and publishes content. Sometimes, Morgan gets involved in a [co-development project](fabric-adoption-roadmap-mentoring-and-user-enablement.md#co-development-projects) to mentor a colleague, which helps grow BI expertise in the organization.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning the scope of responsibilities, key decisions and actions include:
 
@@ -68,7 +68,7 @@ Here are some key points to consider when you select your administrators.
 
 For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When appointing administrators, key decisions and actions include:
 
@@ -106,7 +106,7 @@ Here are some common reasons why a Fabric administrator collaborates with [other
 > [!IMPORTANT]
 > A Fabric administrator shouldn't make decisions or take action (such as changing [tenant settings](#govern-tenant-settings)) on their own. All key decisions should be discussed, planned, and documented. In addition to collaborating with other administrators, be sure to fully involve the [COE](fabric-adoption-roadmap-center-of-excellence.md) and your [BI strategy working team](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#step-1-assemble-a-working-team). It might also be appropriate to involve your [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) for strategic decisions.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When collaborating with other administrators, key decisions and actions include:
 
@@ -264,7 +264,7 @@ Lastly, it's important to have a process for regularly auditing tenant settings.
 
 Also, you might want to receive alert notifications when a tenant setting has updated. You can use the audit log alerting capabilities from [Microsoft 365](/purview/alert-policies) or [Microsoft Defender for Cloud Apps](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md#defender-for-cloud-apps-for-power-bi) to be notified when a tenant setting has changed, and by whom, by using the _UpdatedAdminFeatureSwitch_ audit log event. For more information about enabling alerts, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#enable-alerting).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When planning and managing tenant settings, key decisions and actions include:
 
@@ -343,7 +343,7 @@ You should have a process to regularly audit domains and their settings. Here ar
 - **A workspace has been assigned to a domain:** Look for the _UpdateDataDomainFoldersRelationsAsAdmin_ activity.
 - **The domain administrators or domain contributors have changed:** Look for the _UpdateDataDomainAccessAsAdmin_ activity.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning and managing domains, key decisions and actions include:
 
@@ -462,7 +462,7 @@ You should have a process to regularly audit workspaces. Here are some actions t
 > [!TIP]
 > In addition to using the activity log, we recommend that you regularly create a tenant inventory. It's a snapshot, as of a point in time, which describes all workspaces and their content (such as semantic models and reports). It can also capture details about workspace access. For more information, see [Tenant inventory](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#tenant-inventory) and [Access to tenant inventory data](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-tenant-inventory-data).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning and managing workspaces, key decisions and actions include:
 
@@ -534,7 +534,7 @@ It's important to have a process to audit embed codes regularly. Here are some a
 - **A new embed code has been created:** Look for the _PublishToWebReport_ activity.
 - **The _Publish to Web_ tenant setting has changed:** Look for changed tenant setting values in the activity log by using the _UpdatedAdminFeatureSwitch_ activity. The item name will be _PublishToWeb_.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning and managing embed codes, key decisions and actions include:
 
@@ -635,7 +635,7 @@ It's important to have a process to audit organizational visuals regularly. Here
 - **The _Allow visuals created using the Power BI SDK_ tenant setting has changed:** Look for changed tenant setting values in the activity log by using the _UpdatedAdminFeatureSwitch_ activity. The item name will be _CustomVisualsTenant_.
 - **The _Add and use certified visuals only (block uncertified)_ tenant setting has changed:** Look for changed tenant setting values in the activity log by using the _UpdatedAdminFeatureSwitch_ activity. The item name will be _CertifiedCustomVisualsTenant_.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** – When planning and managing organizational visuals, key decisions and actions include:
 
@@ -719,7 +719,7 @@ It's important to have a process to audit Azure connections regularly. There are
 - **Workspace-level storage is enabled or disabled:** Look for changed values in the activity log by using the _UpdatedAdminFeatureSwitch_ activity. The item name will be _storageAccountAttachForWorkspaceAdminsEnabled_. The _SwitchState_ will be either true or false.
 - **The _Azure Log Analytics connections for workspace administrators_ tenant setting has changed:** This tenant setting allows some or all workspace administrators to integrate their own ADLS Gen2 account. Look for changed tenant setting values in the activity log by using the _UpdatedAdminFeatureSwitch_ activity. The item name will be _LogAnalyticsAttachForWorkspaceAdmins_.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning and managing Azure connections, key decisions and actions include:
 

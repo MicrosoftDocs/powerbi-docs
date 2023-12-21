@@ -143,7 +143,7 @@ When using dataflows with [named connections](/power-query/connection-authentica
     * Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
 * ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
     * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
-* Cross tenant ADLS subscriptions aren't supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (Azure AD).
+* Cross tenant ADLS subscriptions aren't supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Microsoft Entra ID.
 
 ## Dataflow data types
 

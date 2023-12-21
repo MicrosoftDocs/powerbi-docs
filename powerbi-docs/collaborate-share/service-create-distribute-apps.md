@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 11/15/2023
+ms.date: 12/14/2023
 
 LocalizationGroup: Share your work
 ---
@@ -185,9 +185,34 @@ You can add your entire organization to any of the app audience groups when you 
 
 However, this option is disabled in these three scenarios:
 
-- You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization 
+- You've selected **Install this app automatically** on the **Setup** tab. We don't allow automatic installation of an app for an entire organization.
 - You're a guest user who has been assigned a workspace role. 
 - Your admin doesn't allow you to assign an app to your entire organization. You can ask your admin to change this setting in the [App tenant settings](/fabric/admin/service-admin-portal-app#publish-apps-to-the-entire-organization) section of tenant settings in the Admin portal. 
+
+## Change the settings for users who don't have access
+
+You can control what users see when they attempt to view an app but they don't have access. The default setting triggers the access request flow. Users see that they're denied access, and can submit a request for access. 
+
+The default option is for access requests to come to you via email. See the section in this article for more on [managing access requests](/power-bi/collaborate-share/service-create-distribute-apps?source=recommendations).
+
+But you can also display a custom message. 
+
+### Customize the access request behavior
+
+Some organizations have processes and systems outside of Power BI for reviewing and managing access requests. The custom message setting is a chance for you to explain or provide a link to how a user can get access to the Power BI app. You can change the default access request behavior for a Power BI app by going to the Power BI app settings and configuring the **Access requests** options as desired. Select **Replace with automated custom message**.
+
+:::image type="content" source="media/service-create-distribute-apps/custom-message-blank.png" alt-text="Screenshot of a blank custom message.":::
+
+Create your own custom message. You can include a link for your users to request access. This option is for you to provide instructions about how a user can get access to your Power BI app, rather than receiving requests via email. You might choose this option, for example, if your organization uses an automated system for handling access requests. When users who don't have access to your Power BI app try to view it, they see a message with the instructions you provide. 
+
+:::image type="content" source="media/service-create-distribute-apps/create-access-request-form.png" alt-text="Screenshot of a draft custom message.":::
+
+The **Custom message** text area in the **Access requests** example shows sample instructions. Instructions can be rich text with formatting and links. The following example shows the experience for users see when they try to view a Power BI app they don’t have access to. 
+
+:::image type="content" source="media/service-create-distribute-apps/request-access-instructions.png" alt-text="Screenshot of the message your users see.":::
+
+> [!NOTE]
+> Custom messages aren't supported in Power BI mobile apps for iOS and Android. Even if you choose to show a custom message to users who don't have access to your Power BI app, users on mobile still see the default access request flow. 
 
 ## Manage app access requests
 
@@ -335,7 +360,7 @@ Things to keep in mind about publishing apps:
 - Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 - When using "Add a Link", you can only open embed links in the content area.
 - Apps can have a maximum of 200 dashboards.
-- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
@@ -344,5 +369,3 @@ Things to keep in mind about publishing apps:
 - [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 - [Power BI Admin Portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

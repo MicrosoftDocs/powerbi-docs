@@ -32,24 +32,27 @@ For a complete understanding of Power BI real-time analytics, work through the [
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support self-service real-time analytics. The primary objective is on creating a DirectQuery model and building Power BI reports that use automatic page refresh.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics/usage-scenario-self-service-real-time-analytics-inline.png" alt-text="Diagram of self-service content publishing, which is about fast decision making with near real-time data. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics/usage-scenario-self-service-real-time-analytics-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics/usage-scenario-self-service-real-time-analytics-inline.svg" alt-text="Diagram shows self-service real-time analytics, which is about monitoring near real-time data in reports. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics/usage-scenario-self-service-real-time-analytics-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#self-service-real-time-analytics) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The above diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The business analyst uses Power BI Desktop to create a DirectQuery model. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | When Power BI Desktop queries the DirectQuery model, Power BI Desktop sends native queries to the underlying data source in order to retrieve current data. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | The business analyst builds a report that will display near real-time updates by enabling and setting up [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh). |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | When ready, the business analyst publishes their Power BI Desktop file (.pbix) to a workspace in the Power BI service. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | Once published, the workspace contains a new report and DirectQuery semantic model. When the workspace is a personal or Pro workspace, the minimum automatic page refresh interval is 30 minutes (even when the report creator sets a lower interval). |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | When report consumers open a report page that has automatic page refresh enabled, data visualizations refresh automatically to show current data. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Each visual on an automatic page refresh page queries the semantic model to retrieve current data from the underlying data source. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | When an automatic page refresh report is stored in a workspace on Premium capacity or a Premium Per User (PPU) capacity, Power BI can automatically refresh on intervals less than 30 minutes—even at one-minute intervals. It's also possible to use the change detection refresh type so Power BI can avoid unnecessary refreshes. |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | When the change detection refresh type is set, at each refresh interval, Power BI sends change detection queries to determine whether data has changed since the last automatic refresh. When Power BI detects change, it refreshes all visuals on the page. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | Capacity administrators can enable or disable the automatic page refresh feature. When the feature is disabled, automatic page refresh won't work for any reports stored in workspaces assigned to the capacity. Capacity administrators can also set a minimum refresh interval and a minimum execution interval. These minimum intervals will override any report page setting that uses a lower interval. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Content creators use Power BI Desktop to create a DirectQuery model. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Power BI Desktop sends native queries to the underlying data source in order to retrieve current data. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Content creators build a report that will display near real-time updates by enabling and setting up [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh). |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | When ready, the content creators publish their Power BI Desktop file (.pbix) or Power BI project file (.pbip) to a workspace in the Power BI service or Fabric portal. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Once published, the workspace contains a new report and DirectQuery semantic model. When the workspace is a personal or Pro workspace, the minimum automatic page refresh interval is 30 minutes (even when the report creator sets a lower interval). |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | When report consumers open a report page that has automatic page refresh enabled, data visualizations refresh automatically to show current data. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Each visual on an automatic page refresh page queries the semantic model to retrieve current data from the underlying data source. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | When an automatic page refresh report is stored in a workspace that uses **Fabric capacity**, **Premium capacity**, or **Premium Per User** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings), Power BI can automatically refresh on intervals of one minute or more. It's also possible to use the change detection refresh type so Power BI can avoid unnecessary refreshes. When the change detection refresh type is set, at each refresh interval, Power BI sends change detection queries to determine whether data has changed since the last automatic refresh. When Power BI detects change, it refreshes all visuals on the page. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Report consumers view up-to-date content from a workspace or Power BI app. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Capacity administrators can enable or disable the automatic page refresh feature. When the feature is disabled, automatic page refresh won't work for any reports stored in workspaces assigned to the capacity. Capacity administrators can also set a minimum refresh interval and a minimum execution interval. These minimum intervals will override any report page setting that uses a lower interval. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Fabric administrators oversee and monitor activity in the Fabric portal. |
 
 ## Key points
 
