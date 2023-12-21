@@ -317,7 +317,7 @@ Administrators can be help by following best practices themselves. Administrator
 
 External users—such as partners, customers, vendors, and consultants—are a common occurrence for some organizations, and rare for others. How you handle external users is a governance decision.
 
-External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Microsoft Entra settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
+External user access is controlled by [tenant settings](/power-bi/admin/service-admin-portal-export-sharing) and certain Microsoft Entra ID settings. For details of external user considerations, review the [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md) whitepaper.
 
 ### Information protection and data loss prevention
 
