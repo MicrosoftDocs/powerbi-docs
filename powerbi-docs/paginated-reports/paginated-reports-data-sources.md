@@ -75,9 +75,9 @@ For Azure SQL Database data sources, here are the supported authentication types
 
 - Basic (user name and password)
 - SSO (single sign-on)
-- OAuth2 (stored Azure Active Directory token)
+- OAuth2 (stored Microsoft Entra token)
 
-For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source connects to needs to have [Azure Active Directory (Azure AD) authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Azure AD generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
+For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source connects to needs to have [Microsoft Entra authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Microsoft Entra ID generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
   
 ## Considerations and limitations
 

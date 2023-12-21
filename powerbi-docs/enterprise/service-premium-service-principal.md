@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Automate Premium workspace and semantic model tasks with service principals
 
-Service principals are an Azure Active Directory (Azure AD) *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
+Service principals are a Microsoft Entra ID *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
 
 Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more, see [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
 
@@ -35,11 +35,13 @@ Service principals are created as an app registration in the Azure portal or by 
 - [Create service principal - Azure portal](/azure/active-directory/develop/howto-create-service-principal-portal)
 - [Create service principal - PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
-## Create an Azure AD security group
+<a name='create-an-azure-ad-security-group'></a>
+
+## Create a Microsoft Entra security group
 
 By default, service principals have access to any tenant settings they're enabled for. Depending on your admin settings, access can include specific security groups or the entire organization.
 
-To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. To create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. To create a security group and add a service principal, see [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## Enable service principals
 
