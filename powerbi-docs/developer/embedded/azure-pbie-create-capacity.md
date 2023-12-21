@@ -20,7 +20,7 @@ This article walks you through how to create a [Power BI Embedded](embedded-anal
 
 Before you can create a capacity, you need the following:
 
-1. An **Microsoft Entra ID:** Your subscription must be associated with a Microsoft Entra ID *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
+1. An **Microsoft Entra ID:** Your subscription must be associated with a Microsoft Entra *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
 2. A **Power BI tenant:** At least one account in your Microsoft Entra tenant must be signed up for Power BI. Sign into Power BI from that account.
 
