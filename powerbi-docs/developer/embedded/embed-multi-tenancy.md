@@ -79,7 +79,7 @@ The following points are important to understand when using profiles:
 
 * A profile belongs to the service principal that created it, and can only be used by that service principal.
 * A profile owner can't be changed after creation.
-* A profile isn't a standalone identity. It needs the service principal [Microsoft Entra ID](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
+* A profile isn't a standalone identity. It needs the service principal [Microsoft Entra](pbi-glossary.md#azure-ad-azure-active-directory) token to call Power BI REST APIs.
 
 ISV apps call Power BI REST APIs by providing the service principal Microsoft Entra token in the *Authorization* header, and the profile ID in the *X-PowerBI-Profile-Id* header. For example:
 
