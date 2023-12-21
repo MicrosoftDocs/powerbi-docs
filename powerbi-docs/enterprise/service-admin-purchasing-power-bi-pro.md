@@ -29,7 +29,7 @@ Self-service purchase, subscription, and license management capabilities for Pow
 ## Prerequisites
 
 - To purchase and assign licenses in the Microsoft 365 admin center, you must be a member of the [Global or Billing admin role in Microsoft 365](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
-- To assign licenses in the Azure portal, you must be an owner of the Azure subscription that Power BI uses for Azure Active Directory lookups.
+- To assign licenses in the Azure portal, you must be an owner of the Azure subscription that Power BI uses for Microsoft Entra lookups.
 
 ## Purchase licenses in Microsoft 365
 
@@ -64,8 +64,8 @@ For guest users, see [Use the licenses page to assign licenses to users](/office
 Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Search for and select **Azure Active Directory**.
-1. Select **View** under **Manage Azure Active Directory**.
+1. Search for and select **Microsoft Entra ID**.
+1. Select **View** under **Manage Microsoft Entra ID**.
 1. In the navigation pane, under **Manage**, select **Licenses**.
 1. Select **All products**.
 1. Select **Power BI Pro**, and then select **+ Assign**.

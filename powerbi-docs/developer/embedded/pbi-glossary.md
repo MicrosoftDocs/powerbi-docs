@@ -23,7 +23,7 @@ This glossary is a community effort.  Don't see a word here? Ask us to add it (y
 
 ### Account
 
-Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Azure Active Directory. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See **license** and **Premium**, below.
+Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Microsoft Entra ID. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See **license** and **Premium**, below.
 
 ### Admin portal
 
@@ -65,7 +65,9 @@ See [item](#item)
 
 Auto insights are now called [Quick Insights](#quick-insights).
 
-### Azure AD, Azure Active Directory
+<a name='azure-ad-azure-active-directory'></a>
+
+### Microsoft Entra ID, Microsoft Entra ID
 
 The identity service in Microsoft Azure that provides identity management and access control capabilities through a REST-based API.
 
@@ -538,7 +540,7 @@ A standalone resource available to customers by subscription or license. A servi
 
 ### Service principal
 
-An identity created for use with applications, hosted services, and automated tools to access Azure resources. The service principal tokens can be used to authenticate and grant access to specific Azure resources from a user-app, service or automation tool, when an organization is using Azure Active Directory.
+An identity created for use with applications, hosted services, and automated tools to access Azure resources. The service principal tokens can be used to authenticate and grant access to specific Azure resources from a user-app, service or automation tool, when an organization is using Microsoft Entra ID.
 
 It can sometimes replace the *master user* to authenticate with Power BI.
 

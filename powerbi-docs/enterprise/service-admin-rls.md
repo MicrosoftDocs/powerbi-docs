@@ -95,7 +95,7 @@ You can use the following groups to set up row level security.
 
 - Distribution Group
 - Mail-enabled Group
-- [Azure Active Directory Security Group](/azure/active-directory/fundamentals/groups-view-azure-portal)
+- [Microsoft Entra Security Group](/azure/active-directory/fundamentals/groups-view-azure-portal)
 
 Note, however, that Microsoft 365 groups aren't supported and can't be added to any roles.
 
