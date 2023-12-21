@@ -423,7 +423,7 @@ This method is fine if Contoso only has a handful of users or if Contoso can map
 
 <a name='additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b'></a>
 
-### Additional Microsoft Entra settings that affect experiences in Power BI related to Microsoft Entra B2B
+### Additional Microsoft Entra ID settings that affect experiences in Power BI related to Microsoft Entra B2B
 
 When using Microsoft Entra B2B sharing, the Microsoft Entra administrator controls aspects of the external user's experience. These are controlled on the External collaboration settings page within the Microsoft Entra settings for your tenant.
 
