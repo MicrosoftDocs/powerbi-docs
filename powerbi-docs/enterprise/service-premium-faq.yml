@@ -76,12 +76,12 @@ sections:
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
-          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you are to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you will arrive at 100% utilization of your resources.
+          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you're to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you'll arrive at 100% utilization of your resources.
 
       - question: |
           How can my utilization data inform me I should turn on autoscale?
         answer: |
-          Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
+          Utilization data doesn't currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
 
       - question: |
           How can I get notified that I'm approaching my max capacity?
@@ -96,7 +96,7 @@ sections:
       - question: |
           How do I get visibility into resources of Premium beyond CPU time?
         answer: |
-          Customers don't have visibility through utilization data to the memory footprint of their operations, and cannot know ahead of time whether any of their operations is subject to failures.
+          Customers don't have visibility through utilization data to the memory footprint of their operations, and can't know ahead of time whether any of their operations is subject to failures.
 
       - question: |
           How do I use utilization data to perform chargebacks?
