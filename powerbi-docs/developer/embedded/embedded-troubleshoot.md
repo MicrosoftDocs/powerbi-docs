@@ -108,7 +108,7 @@ We recommend you enable this policy only on a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning it. Here's a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Install Azure Active Directory PowerShell module for Graph](/powershell/azure/active-directory/install-adv2).
+1. Install the [Azure Active Directory PowerShell module for Graph](/powershell/azure/active-directory/install-adv2).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable `$sp` doesn't have more than one application as a result).
 
