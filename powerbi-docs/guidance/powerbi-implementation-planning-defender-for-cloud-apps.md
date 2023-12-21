@@ -166,7 +166,7 @@ One of the compelling reasons to integrate Power BI with Defender for Cloud Apps
 Before setting up conditional access app control in Microsoft Entra ID, you'll need to consider which users will be included. Usually, all users are included. However, there might be reasons to exclude specific users.
 
 > [!TIP]
-> When setting up the conditional access policy, it's likely that your Microsoft Entra ID administrator will exclude specific administrator accounts. That approach will prevent locking out administrators. We recommend that the excluded accounts are Microsoft Entra ID administrators rather than standard Power BI users.
+> When setting up the conditional access policy, it's likely that your Microsoft Entra administrator will exclude specific administrator accounts. That approach will prevent locking out administrators. We recommend that the excluded accounts are Microsoft Entra administrators rather than standard Power BI users.
 
 Certain types of policies in Defender for Cloud Apps can apply to certain users and groups. Most often, these types of policies are applicable to all users. However, it's possible that you'll encounter a situation when you'll need to purposefully exclude certain users.
 
@@ -175,8 +175,8 @@ Certain types of policies in Defender for Cloud Apps can apply to certain users 
 **Checklist** - When considering which users are affected, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Consider which users are included:** Confirm whether all users will be included in your Microsoft Entra conditional access app control policy.
-> - **Identify which administrator accounts should be excluded:** Determine which specific administrator accounts should be purposefully excluded from the Microsoft Entra ID conditional access app control policy.
+> - **Consider which users are included:** Confirm whether all users will be included in your Microsoft Entra Conditional Access app control policy.
+> - **Identify which administrator accounts should be excluded:** Determine which specific administrator accounts should be purposefully excluded from the Microsoft Entra Conditional Access app control policy.
 > - **Determine whether certain Defender policies apply to subsets of users:** For valid use cases, consider whether they should be applicable to all or some users (when possible).
 
 ### User messaging
@@ -331,7 +331,7 @@ After the decisions have been made, and a rollout plan has been prepared, it's t
 
 If you intend to use real-time policies (session policies or access policies), your first task is to set up Microsoft Entra [conditional access app control](/defender-cloud-apps/proxy-deployment-aad). You'll need to set up the Power BI service as a [catalog app](/defender-cloud-apps/proxy-deployment-aad#to-deploy-catalog-apps) that will be controlled by Defender for Cloud Apps.
 
-When Microsoft Entra conditional access app control is set up and tested, you can then create policies in Defender for Cloud Apps.
+When Microsoft Entra Conditional Access app control is set up and tested, you can then create policies in Defender for Cloud Apps.
 
 > [!IMPORTANT]
 > We recommend that you introduce this functionality to a small number of test users first. There's also a monitor-only mode that you might find helpful to introduce this functionality in an orderly way.
@@ -347,7 +347,7 @@ The following checklist includes a summarized list of the end-to-end implementat
 > - **Carry out the decision-making process:** Review and discuss all the decisions that are required. This task should occur prior to setting up anything in production.
 > - **Review licensing requirements:** Ensure that you understand the product licensing and user licensing requirements. If necessary, procure and assign more licenses.
 > - **Publish user documentation:** Publish information that users will need to answer questions and clarify expectations. Provide guidance, communications, and training to your users so they're prepared.
-> - **Create a Microsoft Entra conditional access policy:** Create a conditional access policy in Microsoft Entra ID to enable real-time controls for monitoring the Power BI service. At first, enable the Microsoft Entra conditional access policy for a few test users.
+> - **Create a Microsoft Entra Conditional Access policy:** Create a conditional access policy in Microsoft Entra ID to enable real-time controls for monitoring the Power BI service. At first, enable the Microsoft Entra Conditional Access policy for a few test users.
 > - **Set Power BI as a connected app in Defender for Cloud Apps:** Add or verify that Power BI appears as a connected app in Defender for Cloud Apps for conditional access app control.
 > - **Perform initial testing:** Sign in to the Power BI service as one of the test users. Verify that access works. Also verify that the message displayed informs you that the Power BI service is monitored by Defender for Cloud Apps.
 > - **Create and test a real-time policy:** Using the use cases already compiled, create an access policy or a session policy in Defender for Cloud Apps.
@@ -355,7 +355,7 @@ The following checklist includes a summarized list of the end-to-end implementat
 > - **Gather user feedback:** Obtain feedback on the process and user experience. Identify areas of confusion, unexpected results with sensitive information types, and other technical issues.
 > - **Continue iterative releases:** Gradually add more policies in Defender for Cloud Apps until all use cases are addressed.
 > - **Review the built-in policies:** Locate the built-in anomaly detection policies in Defender for Cloud Apps (that have Power BI in their name). Update the alert settings for the built-in policies, when necessary.
-> - **Proceed with a broader rollout:** Continue to work through your iterative rollout plan. Update the Microsoft Entra conditional access policy to apply to a broader set of users, as appropriate. Update individual policies in Defender for Cloud Apps to apply to a broader set of users, as appropriate.
+> - **Proceed with a broader rollout:** Continue to work through your iterative rollout plan. Update the Microsoft Entra Conditional Access policy to apply to a broader set of users, as appropriate. Update individual policies in Defender for Cloud Apps to apply to a broader set of users, as appropriate.
 > - **Monitor, tune, and adjust:** Invest resources to review policy match alerts and audit logs on a frequent basis. Investigate any false positives and adjust policies when necessary.
 
 > [!TIP]

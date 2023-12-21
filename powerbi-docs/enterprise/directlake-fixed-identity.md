@@ -25,7 +25,7 @@ Follow these steps to specify a fixed identity connection for a Direct Lake sema
 
     :::image type="content" source="media/directlake-fixed-identity/directlake-settings-fixed-identity-new-connection.png" alt-text="Specify authentication credentials in new connection settings":::
 
-1. In **Single sign-on**, ensure **SSO via Azure AD for DirectQuery queries** is *not* selected.
+1. In **Single sign-on**, ensure **SSO via Microsoft Entra ID for DirectQuery queries** is *not* selected.
 
     :::image type="content" source="media/directlake-fixed-identity/directlake-settings-fixed-identity-new-connection-sso.png" alt-text="Ensure Use SSO in new connection settings is not selected":::
 

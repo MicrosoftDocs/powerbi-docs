@@ -51,7 +51,7 @@ The Power BI team ships weekly feature updates to the service and on-demand targ
 
 Live site incidents can be divided into several categories:
 
-* Dependent-service issues (such as Azure AD, Azure SQL, Storage, virtual machine scale set, Service Fabric)
+* Dependent-service issues (such as Microsoft Entra ID, Azure SQL, Storage, virtual machine scale set, Service Fabric)
 * Infrastructure outage (such as a hardware failure, data center failure)
 * Power BI environmental configuration issues (such as insufficient capacity)
 * Power BI service code regressions

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Track user activities in Power BI
 description: Learn how to use Power BI activity logs and Microsoft 365 audit logs to monitor and track user activities in Power BI.
 author: kfollis
@@ -342,7 +342,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI group      | CreateGroup            |       |
 | Created Power BI report       | CreateReport <sup>1</sup>      |          |
 | Created a Power BI template  or a workspace for a template app | CreateTemplateApp |  |
-| Custom visual requested Azure AD access token         | GenerateCustomVisualAADAccessToken    |   |
+| Custom visual requested Microsoft Entra access token         | GenerateCustomVisualAADAccessToken    |   |
 | Custom visual requested Office Web Apps access token    | CustomVisualWACAccessToken          |     |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
 | Dataflow permissions added   | DataflowPermissionsAdded       | Not currently used     |

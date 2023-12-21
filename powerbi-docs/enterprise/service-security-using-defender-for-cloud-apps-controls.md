@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using Microsoft Defender for Cloud Apps controls in Power BI
 description: Learn about how you can use Microsoft Defender for Cloud Apps with Power BI to protect your reports, data, and services from unintended leaks or breaches.
 author: paulinbar
@@ -12,7 +12,7 @@ LocalizationGroup: Data from files
 ---
 # Using Microsoft Defender for Cloud Apps controls in Power BI
 
-By using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data, by using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies are set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
+By using Defender for Cloud Apps with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Defender for Cloud Apps, you can create conditional access policies for your organization's data, by using real-time session controls in Microsoft Entra ID, that help to ensure your Power BI analytics are secure. Once these policies are set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls.
 
 > [!NOTE]
 > Microsoft Defender for Cloud Apps is now part of [**Microsoft 365 Defender**](https://security.microsoft.com). For more information, see [**Microsoft Defender for Cloud Apps in Microsoft 365 Defender**](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps).
@@ -31,17 +31,19 @@ To use Defender for Cloud Apps with Power BI, you must use and configure relevan
 ## Configure real-time controls for Power BI with Defender for Cloud Apps
 
 > [!NOTE]
-> An Azure Active Directory Premium P1 license is required in order to benefit from Defender for Cloud Apps real-time controls.
+> A Microsoft Entra ID P1 license is required in order to benefit from Defender for Cloud Apps real-time controls.
 
 The following sections describe the steps for configuring real-time controls for Power BI with Defender for Cloud Apps.
 
-### Set session policies in Azure AD (required)
+<a name='set-session-policies-in-azure-ad-required'></a>
 
-The steps necessary to set session controls are completed in the Azure AD and Defender for Cloud Apps portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Defender for Cloud Apps service.
+### Set session policies in Microsoft Entra ID (required)
 
-Defender for Cloud Apps operates in a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. For a description of the whole process, see [Defender for Cloud Apps](/cloud-app-security/proxy-deployment-aad).
+The steps necessary to set session controls are completed in the Microsoft Entra ID and Defender for Cloud Apps portals. In the Microsoft Entra admin center, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Defender for Cloud Apps service.
 
-1. [Create an Azure AD conditional access test policy](/defender-cloud-apps/proxy-deployment-aad#conf-idp)
+Defender for Cloud Apps operates in a reverse-proxy architecture, and is integrated with Microsoft Entra Conditional Access to monitor Power BI user activity in real-time. The following steps are provided to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. For a description of the whole process, see [Defender for Cloud Apps](/cloud-app-security/proxy-deployment-aad).
+
+1. [Create a Microsoft Entra Conditional Access test policy](/defender-cloud-apps/proxy-deployment-aad#conf-idp)
 1. [Sign into each app using a user scoped to the policy](/defender-cloud-apps/proxy-deployment-aad#sign-in-scoped)
 1. [Verify the apps are configured to use access and session controls](/defender-cloud-apps/proxy-deployment-aad#portal)
 1. [Enable the app for use in your organization](/defender-cloud-apps/proxy-deployment-aad#enable-app)
@@ -142,7 +144,7 @@ This article described how Defender for Cloud Apps can provide data and content 
 For information about Azure and security articles, see:
 
 * [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad)
-* [Deploy Conditional Access App Control for catalog apps with Azure AD](/defender-cloud-apps/proxy-deployment-aad)
+* [Deploy Conditional Access App Control for catalog apps with Microsoft Entra ID](/defender-cloud-apps/proxy-deployment-aad)
 * [Session policies](/defender-cloud-apps/session-policy-aad)
 * [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 * [Data protection metrics report](service-security-data-protection-metrics-report.md)

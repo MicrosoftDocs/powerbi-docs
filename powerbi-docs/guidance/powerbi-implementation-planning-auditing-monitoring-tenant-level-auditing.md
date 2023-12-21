@@ -553,7 +553,7 @@ We recommend that you review the remainder of this article before choosing a tec
 How you plan to set up authentication is a critical decision. It's often one of the most difficult aspects when you get started with auditing and monitoring. You should carefully consider available options to make an informed decision.
 
 > [!IMPORTANT]
-> Consult with your IT and security teams on this matter. Take the time to learn the basics of how security in Microsoft Entra works.
+> Consult with your IT and security teams on this matter. Take the time to learn the basics of how security in Microsoft Entra ID works.
 
 Not every API on the internet requires authentication. However, all the Power BI REST APIs require authentication. When you access tenant-level auditing data, the authentication process is managed by the [Microsoft identity platform](/azure/active-directory/develop/v2-overview). It's an evolution of the Microsoft Entra identity service that's built on industry standard protocols.
 
@@ -1223,7 +1223,7 @@ In addition to the identifying information (like an email address) that's includ
 
 Here are some details about the Microsoft Entra objects that you can access.
 
-- **[User](/azure/active-directory/fundamentals/add-users-azure-active-directory):** An identity that exists in Microsoft Entra as a work, school, or Microsoft account. The term _domain user_ is often used to describe organizational users, while the formal term is _user principal name_ (UPN). A UPN is usually the same value as the user's email address (however, if an email address changes, the UPN doesn't change because it's immutable). There's also a unique Microsoft Graph ID for each user. Often, a user account is associated with one person. Some organizations create users that are _service accounts_ that are used for automated activities or for administrative tasks.
+- **[User](/azure/active-directory/fundamentals/add-users-azure-active-directory):** An identity that exists in Microsoft Entra ID as a work, school, or Microsoft account. The term _domain user_ is often used to describe organizational users, while the formal term is _user principal name_ (UPN). A UPN is usually the same value as the user's email address (however, if an email address changes, the UPN doesn't change because it's immutable). There's also a unique Microsoft Graph ID for each user. Often, a user account is associated with one person. Some organizations create users that are _service accounts_ that are used for automated activities or for administrative tasks.
 - **[Service principal](/azure/active-directory/develop/app-objects-and-service-principals):** A different type of identity, that's provisioned when you create an [app registration](/azure/active-directory/develop/quickstart-register-app). A service principal is intended for unattended, automated activities. For more information, see [Determine the authentication method](#determine-the-authentication-method) earlier in this article.
 - **[Group](/azure/active-directory/fundamentals/concept-learn-about-groups):** A collection of users and service principals. There are several [types of groups](powerbi-implementation-planning-security-tenant-level-planning.md#type-of-group) that you can use to simplify permissions management. For more information, see [Strategy for using groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
@@ -1330,7 +1330,7 @@ Beginning with Az version 7, the Az cmdlets now reference the Microsoft Graph AP
 You might find articles and blog posts online that suggest alternative options that aren't presented in this section. We strongly recommend that you _**do not**_ create new solutions (and/or migrate your existing solutions) by using any of the following APIs or modules.
 
 - **AzureRM PowerShell modules:** Deprecated and will be retired. They've been replaced with the Az PowerShell module.
-- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK. (Azure AD is [now known as Microsoft Entra ID](/azure/active-directory/fundamentals/new-name).)
+- **Azure AD Graph API and Azure AD PowerShell module:** Deprecated and will be retired. This change is the result of the migration from Azure AD Graph to Microsoft Graph (note that Graph appears in both names, but _Microsoft Graph_ is the future direction). All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK. (Microsoft Entra ID is [now known as Microsoft Entra ID](/azure/active-directory/fundamentals/new-name).)
 - **MS Online (MSOL) PowerShell module:** Deprecated and will be retired. All future PowerShell investments will be made in the Microsoft Graph PowerShell SDK.
 
 > [!CAUTION]

@@ -21,7 +21,7 @@ This page contains a short summary of the existing API versions and what to expe
 
 ## API v5.7.0
 
-* [**Power BI Custom Visuals Authentication API**](./authentication-api.md): Allows Custom Visuals to obtain Microsoft Entra ID (formerly Azure AD) access tokens through single sign-on (SSO), facilitating secure and efficient user-contextual operations.
+* [**Power BI Custom Visuals Authentication API**](./authentication-api.md): Allows Custom Visuals to obtain Microsoft Entra access tokens through single sign-on (SSO), facilitating secure and efficient user-contextual operations.
 * [**Dynamic drill control**](./dynamic-drill-down.md): Allows the visual to enable or disable the drill feature dynamically using an API call.
   * When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features are available. These functionalities include API calls, context menu commands, header drill buttons, and support for hierarchy data.
   * When the drill feature is disabled, these functionalities aren't available.

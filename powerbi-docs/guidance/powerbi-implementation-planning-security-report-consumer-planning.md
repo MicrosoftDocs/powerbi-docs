@@ -415,11 +415,11 @@ For semantic models, a data modeler can set up RLS in Power BI Desktop by creati
 
 #### RLS role mappings
 
-After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra ID security objects to roles. Security objects can be user accounts or security groups.
+After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
 
 Whenever possible, it's a best practice to map roles to [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). That way, there will be fewer mappings, and group membership management can be handled by the owner of the group.
 
-We recommend that you make security account information from Microsoft Entra ID available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Microsoft Entra ID. That way, content creators can integrate the dataflow data to produce a data-driven semantic model.
+We recommend that you make security account information from Microsoft Entra available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Microsoft Entra ID. That way, content creators can integrate the dataflow data to produce a data-driven semantic model.
 
 > [!TIP]
 > It's possible to define a role that has no rules. In this case, the role provides access to all rows of all model tables. Setting up this type of role is suitable when an administrator or user is allowed to view all data in the model.

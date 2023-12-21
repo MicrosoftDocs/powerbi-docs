@@ -5166,7 +5166,7 @@ The following updates were new to **Power BI Desktop** in January:
 
 ### Data connectivity
 
--   Support for Azure Active Directory authentication for Azure SQL Database and Data Warehouse connectors [[video]](https://youtu.be/W8Pp5wuCXJw?t=21m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth) 
+-   Support for Microsoft Entra authentication for Azure SQL Database and Data Warehouse connectors [[video]](https://youtu.be/W8Pp5wuCXJw?t=21m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth) 
 
 
 > [!NOTE]
