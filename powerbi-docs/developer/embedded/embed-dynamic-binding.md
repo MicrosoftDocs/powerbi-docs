@@ -29,7 +29,7 @@ Dynamic binding is supported for both *Embedding for your organization* and *Emb
 
 |Scenario  |Data ownership  |Token  |Requirements  |
 |---------|---------|---------|---------|
-|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who's Microsoft Entra token is used, must have appropriate permissions for all items (reports, semantic models, etc.).         |
+|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user whose Microsoft Entra token is used, must have appropriate permissions for all items (reports, semantic models, etc.).         |
 |*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound semantic model. Use the [API for generating an embed token for multiple items](/rest/api/power-bi/embed-token/generate-token), to generate an embed token that supports multiple items.         |
 
 >[!NOTE]
