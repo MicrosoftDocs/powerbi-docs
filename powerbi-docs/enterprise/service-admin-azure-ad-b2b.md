@@ -59,7 +59,7 @@ Follow these steps to send an invite in the Azure portal.
 
 1. In the [Azure portal](https://portal.azure.com), select Menu button then select **Microsoft Entra ID**.
 
-    ![Screenshot of the Azure portal with the Microsoft Entra option called out.](media/service-admin-azure-ad-b2b/azure-active-directory-option.png)
+    ![Screenshot of the Azure portal with the Microsoft Entra ID option called out.](media/service-admin-azure-ad-b2b/azure-active-directory-option.png)
 
 1. Under **Manage**, select **Users** > **All users** > **New guest user**.
 
