@@ -24,7 +24,7 @@
       href: service-admin-release-management.md     
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
-    - name: Using Azure AD B2B
+    - name: Using Microsoft Entra B2B
       href: service-admin-azure-ad-b2b.md
     - name: Use customer managed keys
       href: service-encryption-customer-managed-keys.md

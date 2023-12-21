@@ -169,7 +169,7 @@ To confirm the effective username, follow these steps.
    whoami /upn
    ```
 
-Optionally, you can see what Power BI gets from Azure Active Directory.
+Optionally, you can see what Power BI gets from Microsoft Entra ID.
 
 1. Browse to [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign in** in the upper-right corner.
@@ -181,7 +181,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
+If your Microsoft Entra UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
 
 ## Kerberos
 

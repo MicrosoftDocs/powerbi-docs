@@ -61,7 +61,7 @@ Complete the following steps to connect to a datamart in Power BI Desktop:
 2.	In Power BI Desktop select the **SQL Server connector** from the ribbon or from **Get Data**. 
 3.	Paste the connection string into the connector dialog. 
 4.	For authentication, select *organizational account*.
-5.	Authenticate using Azure Active Directory - MFA (the same way you would connect to Power BI)
+5.	Authenticate using Microsoft Entra ID - MFA (the same way you would connect to Power BI)
 6.	Select **Connect**.
 7.	Select the data items you want to include or not include in your semantic model.
 
@@ -84,4 +84,3 @@ The following articles provide more information about datamarts and Power BI:
 For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
-

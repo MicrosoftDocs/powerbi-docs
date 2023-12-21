@@ -1,4 +1,4 @@
-﻿---
+---
 title: Sensitivity labels troubleshooting
 description: Find guidance for resolving common issues related to sensitivity labels in Power BI.
 author: paulinbar
@@ -141,7 +141,7 @@ Default labeling in Power BI covers most common scenarios, but there may be some
 
 Default labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to default label policies.
 
-Default label policies in Power BI aren't supported for [external guest users (Azure AD B2B)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label is applied automatically.
+Default label policies in Power BI aren't supported for [external guest users (Microsoft Entra B2B)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label is applied automatically.
 
 ### The pbix file I created didn't get the default label, even though default labeling is enabled on my tenant
 
@@ -224,7 +224,7 @@ Using Defender for Cloud Apps with Power BI is designed to help secure your orga
 
 In order for the data protection metrics report to be successfully generated[, information protection](./service-security-enable-data-sensitivity-labels.md) must be enabled on your tenant and [sensitivity labels should have been applied](./service-security-apply-data-sensitivity-labels.md).
 
-The data protection metrics report isn't available to [external users such as Azure Active Directory B2B (Azure AD B2B) guest users](./service-admin-azure-ad-b2b.md).
+The data protection metrics report isn't available to [external users such as Microsoft Entra B2B (Microsoft Entra B2B) guest users](./service-admin-azure-ad-b2b.md).
 
 ### I can't access the Defender for Cloud Apps information.
 
@@ -236,7 +236,7 @@ The data protection metrics report is a special report and doesn't show up in th
 
 ### I can't share the data protection metrics report with external users
 
-The data protection metrics report isn't available to [external users (Azure Active Directory B2B guest users)](/power-bi/enterprise/service-admin-azure-ad-b2b).
+The data protection metrics report isn't available to [external users (Microsoft Entra B2B guest users)](/power-bi/enterprise/service-admin-azure-ad-b2b).
 
 ## Paginated reports
 

@@ -22,11 +22,11 @@ For a full list of requirements necessary to use in-place datset sharing, see th
 
 ## Licensing
 
-Users must have an active Power BI account and a Power BI Pro or Premium license. For detailed information on licensing requirements, see the licensing requirements section of [Distribute Power BI content to external guest users with Azure AD B2B](../enterprise/service-admin-azure-ad-b2b.md#licensing).
+Users must have an active Power BI account and a Power BI Pro or Premium license. For detailed information on licensing requirements, see the licensing requirements section of [Distribute Power BI content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#licensing).
 
 ## Allow guest users to work with shared semantic models in their own tenants 
 
-Azure AD B2B guest users can access semantic models shared with them in their own tenants. Use the following steps to enable access by external users of semantic models shared with them by users within your organization: 
+Microsoft Entra B2B guest users can access semantic models shared with them in their own tenants. Use the following steps to enable access by external users of semantic models shared with them by users within your organization: 
 
 1. In the admin portal, go to **Tenant settings**.
 

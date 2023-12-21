@@ -15,24 +15,24 @@ LocalizationGroup: Administration
 
 # Enable service principal authentication for read-only admin APIs
 
-Service principal is an authentication method that can be used to let an Azure Active Directory (Azure AD) application access Power BI service content and APIs.
-When you create an Azure AD app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as the service principal, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
+Service principal is an authentication method that can be used to let a Microsoft Entra application access Power BI service content and APIs.
+When you create a Microsoft Entra app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as the service principal, allows Microsoft Entra ID to authenticate your app. Once authenticated, the app can access Microsoft Entra tenant resources.
 
 ## Method
 
 To enable service principal authentication for Power BI read-only APIs, follow these steps:
 
-1. [Create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal). You can skip this step if you already have an Azure AD app you want to use. Take note of the App-Id for later steps.
+1. [Create a Microsoft Entra app](/azure/active-directory/develop/howto-create-service-principal-portal). You can skip this step if you already have a Microsoft Entra app you want to use. Take note of the App-Id for later steps.
 
     >[!IMPORTANT]
     > Make sure the app you use doesn't have any admin-consent required permissions for Power BI set on it in the Azure portal. [See how to check whether your app has any such permissions](#how-to-check-if-your-app-has-admin-consent-required-permissions). 
-1. Create a new **Security Group** in Azure Active Directory. [Read more about how to create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
+1. Create a new **Security Group** in Microsoft Entra ID. [Read more about how to create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). You can skip this step if you already have a security group you would like to use.
     Make sure to select **Security** as the Group type.
 
     ![Screenshot of new group creation dialog in Azure portal.](media/read-only-apis-service-principal-auth/azure-portal-new-group-dialog.png)
 
 3. Add your App-Id as a member of the security group you created. To do so:
-    1. Navigate to **Azure portal > Azure Active Directory > Groups**, and choose the security group you created in Step 2.
+    1. Navigate to **Azure portal > Microsoft Entra ID > Groups**, and choose the security group you created in Step 2.
     1. Select **Add Members**.
 
     > [!IMPORTANT]
@@ -93,7 +93,7 @@ Service principal authentication is currently supported for the following read-o
 An app using service principal authentication that calls read-only admin APIs **must not** have any admin-consent required permissions for Power BI set on it in the Azure portal. To check the assigned permissions:
 
 1. Sign into the **Azure portal** as a Global Administrator, an Application Administrator, or a Cloud Application Administrator.
-1. Select **Azure Active Directory**, then **Enterprise applications**.
+1. Select **Microsoft Entra ID**, then **Enterprise applications**.
 1. Select the application you want to grant access to Power BI.
 1. Select **Permissions**. There must be no admin-consent required permissions of type Application registered for the app.
 

@@ -65,7 +65,7 @@ The remainder of this article includes sample scripts that show you different wa
 
 ## Example 1: Authenticate with the Power BI service
 
-All Power BI REST API operations require you to sign in. _Authentication_ (who is making the request) and _authorization_ (what the user has permission to do) are managed by the Microsoft Identity Platform. The following example uses the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the [Power BI Management module](/powershell/power-bi/overview). This cmdlet supports a simple method to sign in.
+All Power BI REST API operations require you to sign in. _Authentication_ (who is making the request) and _authorization_ (what the user has permission to do) are managed by the Microsoft identity platform. The following example uses the [Connect-PowerBIServiceAccount](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) cmdlet from the [Power BI Management module](/powershell/power-bi/overview). This cmdlet supports a simple method to sign in.
 
 ### Sample request 1
 
