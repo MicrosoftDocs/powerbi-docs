@@ -93,7 +93,7 @@ If no `defaultMode` flag is set, the semantic model defaults to a push semantic 
 > [!NOTE]
 > When you use semantic models with the `defaultMode` flag set to `pushStreaming`, if a request exceeds the 15 KB size restriction for a streaming semantic model, but is less than the 16 MB size restriction for a push semantic model, the request succeeds and the data updates in the push semantic model. However, any streaming tiles temporarily fail.
 
-Once a semantic model is created, you can use the [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) REST APIs to push data. All requests to REST APIs are secured by using *Azure Active Directory (Azure AD) OAuth*.
+Once a semantic model is created, you can use the [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) REST APIs to push data. All requests to REST APIs are secured by using *Microsoft Entra ID OAuth*.
 
 ### Use the streaming semantic model UI to push data
 
@@ -108,7 +108,7 @@ When you create the new streaming semantic model, you can enable **Historic data
 When **Historic data analysis** is disabled, as it is by default, you create a streaming semantic model as described earlier. When **Historic data analysis** is enabled, the semantic model you create becomes both a streaming semantic model and a push semantic model. This setting is equivalent to using the Power BI REST APIs to create a semantic model with its `defaultMode` set to `pushStreaming`, as described earlier.
 
 > [!NOTE]
-> Streaming semantic models created by using the Power BI service UI don't require Azure AD authentication. In such semantic models, the semantic model owner receives a URL with a *rowkey*, which authorizes the requestor to push data into the semantic model without using an Azure AD OAuth bearer token. However, the Azure AD approach still works to push data into the semantic model.
+> Streaming semantic models created by using the Power BI service UI don't require Microsoft Entra authentication. In such semantic models, the semantic model owner receives a URL with a *rowkey*, which authorizes the requestor to push data into the semantic model without using a Microsoft Entra ID OAuth bearer token. However, the Microsoft Entra ID approach still works to push data into the semantic model.
 
 ### Use Azure Stream Analytics to push data
 
@@ -163,7 +163,7 @@ If you want Power BI to store the data this data stream sends, so you can do rep
 After you successfully create your data stream, you get a REST API URL endpoint. Your application can call the endpoint by using `POST` requests to push your streaming data to the Power BI semantic model. In your `POST` requests, ensure that the request body matches the sample JSON that the Power BI user interface provided. For example, wrap your JSON objects in an array.
 
 > [!CAUTION]
-> For streaming semantic models you create in the Power BI service UI, the semantic model owner gets a URL that includes a *resource key*. This key authorizes the requestor to push data into the semantic model without using an Azure AD OAuth bearer token. Keep in mind the implications of having a secret key in the URL when you work with this type of semantic model and method.
+> For streaming semantic models you create in the Power BI service UI, the semantic model owner gets a URL that includes a *resource key*. This key authorizes the requestor to push data into the semantic model without using a Microsoft Entra ID OAuth bearer token. Keep in mind the implications of having a secret key in the URL when you work with this type of semantic model and method.
 
 ### Use PubNub
 

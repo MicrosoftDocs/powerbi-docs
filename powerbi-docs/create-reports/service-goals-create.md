@@ -66,7 +66,7 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 1. In the scorecard, select **New Metric**. 
 2. Decide on a **Metric name** and an **Owner**. 
 
-    Owners can be individuals or distribution groups within your organization’s Azure Active Directory.  
+    Owners can be individuals or distribution groups within your organization’s Microsoft Entra ID.  
 
 1. Set **Current** and **Target** values for your metrics. In this article, you enter the number manually. You can also connect it to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 1. Set the format for your values, and choose a **Status**, **Start date**, and **End date**. 

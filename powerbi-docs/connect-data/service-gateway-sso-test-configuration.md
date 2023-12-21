@@ -60,7 +60,7 @@ If the gateway cluster can't impersonate the user and connect to the data source
 
 There can be the following possible causes and solutions:
 
-- The user doesn't exist in Azure Active Directory (Azure AD). Check if the user is present in Azure AD.
+- The user doesn't exist in Microsoft Entra ID. Check if the user is present in Microsoft Entra ID.
 - The user isn't mapped correctly to a local AD account. Check configurations and follow the steps in [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
 - The gateway doesn't have impersonation rights. Grant the gateway service account local policy rights on the gateway machine as described in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 

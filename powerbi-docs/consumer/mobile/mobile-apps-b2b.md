@@ -1,5 +1,5 @@
 ---
-title: View Power BI content as an external guest user (Azure AD B2B)
+title: View Power BI content as an external guest user (Microsoft Entra B2B)
 description: Learn how to use the Power BI mobile app to view content shared with you from an external organization.
 author: paulinbar
 ms.author: painbar
@@ -12,7 +12,7 @@ ms.date: 10/22/2023
 
 # View Power BI content shared with you from an external organization
 
-Power BI integrates with Azure Active Directory business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users. The Power BI mobile app supports this Azure AD B2B integration, so you can access Power BI content from external organizations that has been shared with you directly from your app.
+Power BI integrates with Microsoft Entra business-to-business (Microsoft Entra B2B) to allow secure distribution of Power BI content to guest users. The Power BI mobile app supports this Microsoft Entra B2B integration, so you can access Power BI content from external organizations that has been shared with you directly from your app.
 
 Applies to:
 
@@ -59,7 +59,7 @@ When someone shares an item with you, you get an email with a link to the item. 
 
 - Users must have an active Power BI account and home tenant.
 - Users must be signed in to their Power BI home tenant, before they can access the content shared with them from an external tenant.
-- Conditional access and other Intune policies aren't supported in Azure AD B2B and in Power BI mobile. That means that the app enforces only the home organization's policies, if they exist.
+- Conditional access and other Intune policies aren't supported in Microsoft Entra B2B and in Power BI mobile. That means that the app enforces only the home organization's policies, if they exist.
 - Push notifications are received from the home organization site only (even when the user is connected as a guest to an external organization). Opening the notification reconnects the app to the user's home organization site.
 - If the user shuts down the app, when reopened the app connects automatically to the user's home organization.
 - When connected to an external organization, some actions are disabled: favorite items, data alerts, commenting, and sharing.
