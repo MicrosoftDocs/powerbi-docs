@@ -60,9 +60,9 @@ You can also export paginated reports to many formats:
 ## Considerations and limitations 
 
 - You can only search and sort in "Web layout."
-- Search:
-       - Search doesn't work if there are over 300 rows per page.
+- Search doesn't work if there are over 300 rows per page.
 - Sort:
+  
       - You can only sort on one column at a time.
       - If a report was created on the service (before December 2023), you will have to edit the report for sorting to be available during consumption.
 
