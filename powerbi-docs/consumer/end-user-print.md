@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 12/22/2023
 LocalizationGroup: Common tasks
 ---
 # Print from the Power BI service
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. If your report has more than one page, you need to print each page separately.
+Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. If your report has more than one page, you need to print each page separately. Printing is not available from Power BI Desktop.
 
 ## Print considerations
 
 Report *designers* create most Power BI dashboards and reports for use online. They look amazing on any device used to view them. However, when it comes time to print the content, you might not get the results you want.
 
-You can make changes to your browser and print settings to adjust the print job, but to ensure your printouts match what you see in your browser, consider [exporting to PDF](../collaborate-share/end-user-pdf.md), then print the PDF instead.
+You can make changes to your browser and print settings to adjust the print job, but to ensure your printouts match what you see in your browser, consider [exporting to PDF](../collaborate-share/end-user-pdf.md), then printing the PDF instead.
 
 ## Adjust your browser print settings
 
@@ -40,6 +40,8 @@ Here are a few quick tips you can use to format your printout.
 
 Experiment with your browser's settings until you get the look you like. Some browsers even have options to print background graphics.
 
+#### [Dashboard](#tab/dashboard)
+
 ## Print a dashboard
 
 1. Open the dashboard that you'd like to print.
@@ -48,10 +50,16 @@ Experiment with your browser's settings until you get the look you like. Some br
 
    :::image type="content" source="./media/end-user-print/power-bi-dashboard-print-options.png" alt-text="Screenshot of the dropdown File menu expanded, and Print the page selected.":::
 
+1. If your report has a sensitivity label, decide whether you should print the report or not. 
+
+   :::image type="content" source="./media/end-user-print/power-bi-sensitivity.png" alt-text="Screenshot of the sensitivity label warning.":::
+
 1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-dash.png" alt-text="Screenshot of the Print Window open and the print options displayed.":::
+
+#### [Dashboard tile](#tab/tile)
 
 ## Print a dashboard tile
 
@@ -67,6 +75,10 @@ Experiment with your browser's settings until you get the look you like. Some br
 
     :::image type="content" source="./media/end-user-print/power-bi-focus.png" alt-text="Screenshot of a tile in full screen mode with the Options menu.":::
 
+1. If your report has a sensitivity label, decide whether you should print the report or not. 
+
+   :::image type="content" source="./media/end-user-print/power-bi-sensitivity.png" alt-text="Screenshot of the sensitivity label warning on a dashboard.":::
+
 1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
 
@@ -78,6 +90,8 @@ Experiment with your browser's settings until you get the look you like. Some br
 > 1. Select **Cancel** (instead of **Print**).
 > 1. Go through steps 1-5 again. Your tile will adjust to the new Print window settings and be ready to print.
 
+#### [Report page](#tab/page)
+
 ## Print a report page
 
 Reports can be printed one page at a time.
@@ -86,8 +100,14 @@ Reports can be printed one page at a time.
 
     :::image type="content" source="./media/end-user-print/power-bi-print-report.png" alt-text="Screenshot of the file menu open and Print this page selected.":::
 
+1. If your report has a sensitivity label, decide whether you should print the report or not. 
+
+   :::image type="content" source="./media/end-user-print/power-bi-sensitivity.png" alt-text="Screenshot of the sensitivity label warning on a report page.":::
+
 1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
+
+#### [Report visual](#tab/visual)
 
 ## Print a report visual
 
@@ -99,8 +119,14 @@ Reports can be printed one page at a time.
 
     :::image type="content" source="./media/end-user-print/power-bi-visual-print.png" alt-text="Screenshot of the Power BI service File menu open and Print this page selected.":::
 
+1. If your report has a sensitivity label, decide whether you should print the report or not. 
+
+   :::image type="content" source="./media/end-user-print/power-bi-sensitivity.png" alt-text="Screenshot of the sensitivity label warning on a visual.":::
+
 1. Adjust your [print settings](#adjust-your-browser-print-settings).
 1. Select **Print**.
+
+---
 
 ## Considerations and troubleshooting
 
@@ -119,7 +145,7 @@ A: We can't guarantee the printed copy is exactly the same as it appears in the 
 Q: Why don't I see the print option when I hover over the visual in full screen mode?</br>
 A: Go back to the dashboard or report in default view and reopen the visual in Focus mode and then Full screen mode.
 
-## Next steps
+## Next step
 
 - [Share Power BI reports and dashboard with coworkers and others](../collaborate-share/service-share-dashboards.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
