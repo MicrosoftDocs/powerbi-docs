@@ -92,7 +92,7 @@ A **many-to-many** relationship means both columns can contain duplicate values.
 For guidance on using this cardinality type, see [Many-to-many relationship guidance](../guidance/relationships-many-to-many.md).
 
 > [!NOTE]
-> The Many-to-many cardinality type isn't currently supported for models developed for Power BI Report Server.
+> The Many-to-many cardinality type is supported for models developed for Power BI Report Server January 2024 and later.
 
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or \*) on either side of the relationship line. To determine which columns are related, you'll need to select, or hover the cursor over, the relationship line to highlight the columns.
