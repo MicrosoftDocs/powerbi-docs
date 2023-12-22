@@ -151,7 +151,7 @@ The following steps show how to configure settings and options to adjust the pre
       
       :::image type="content" source="media/power-bi-visualization-tables/power-bi-apply-column-format.png" alt-text="Screenshot that shows how to set the Apply settings options to use the formatting changes on the column header, the total row, and all values." border="false":::
 
-1. Practice what you've learned by updating another specific column field. 
+1. Practice what you learned by updating another specific column field. 
 
    1. Update the **This Year Sales Status** column.
    
