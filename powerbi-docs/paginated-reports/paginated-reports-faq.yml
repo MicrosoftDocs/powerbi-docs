@@ -139,7 +139,7 @@ sections:
       - question: |
           Are e-mail subscriptions available for paginated reports?
         answer: |
-          Yes, e-mail subscriptions are fully supported for paginated reports and include support for eight different file formats and parameter values.
+          Yes, e-mail subscriptions are fully supported for paginated reports. The details are available [here] (https://learn.microsoft.com/en-us/power-bi/collaborate-share/end-user-subscribe?tabs=creator#subscribe-to-paginated-reports)
 
       - question: |
           Can I run custom code in my report?
