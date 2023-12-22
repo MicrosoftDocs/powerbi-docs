@@ -8,7 +8,7 @@ ms.custom: video-dtdLul6otYE
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/22/2023
+ms.date: 12/22/2023
 LocalizationGroup: Common tasks
 ---
 
@@ -47,7 +47,7 @@ In the following example, we started with a report (1), opened one of the visual
 
 Display your Power BI service content (dashboards, report pages, and visuals) without the distraction of menus and nav panes. You get an unadulterated, full view of your content at a glance, all the time. This view is sometimes referred to as TV mode.   
 
-If you're using the Power BI windows app, [Screenshot of full screen in Power BI Windows app.](./mobile/mobile-windows-10-app-presentation-mode.md). 
+If you're using the Power BI windows app, [Screenshot of full screen in Power BI Windows app.](./mobile/mobile-windows-10-app-presentation-mode.md) 
 
 Use full screen mode to:
 
@@ -78,17 +78,18 @@ Full screen mode is available for dashboards and report pages.
 - To see a visual in full screen mode, first open it in focus mode so that it's the only visual on the report page.  Then open that report page in full screen mode.  
 
 
-Your selected content fills the entire screen. When you're in full screen mode, navigate using the menu bar at the bottom. If you don't see menu options, move your cursor, and the menu will appear. Because full screen is available for such a wide variety of content, the navigation options vary. Some of the options are: 
+Your selected content fills the entire screen. When you're in full screen mode, navigate using the menu bar at the bottom. If you don't see menu options for a dashboard, move your cursor, and the menu will appear. Because full screen is available for such a wide variety of content, the navigation options vary. Some of the options are: 
 
 
   * Select the **Back**, **Go back**, or **Back to report** button  to navigate to the previous page in your browser. If the previous page was a Power BI page, it too will display in full screen mode.  Full screen mode will persist until you exit out.
 
-  * :::image type="icon" source="media/end-user-focus/power-bi-fit-to-screen-icon.png":::    
-    Use the **Fit to page** or **Fit to screen** option to display your dashboard or report at the largest size possible without resorting to scrollbars.  
+  * :::image type="icon" source="media/end-user-focus/power-bi-fit-to-screen-icon.png":::
+  :::image type="icon" source="media/end-user-focus/power-bi-fit-to-screen.png":::  
+    Use the **Fit to page** or **Fit to screen** option to display your selected content at the largest size possible without resorting to scrollbars.  
 
     ![Screenshot showing how fit to screen appears.](media/end-user-focus/power-bi-fit-screen.png)
 
-  * :::image type="icon" source="media/end-user-focus/power-bi-fit-width.png":::    
+  * :::image type="icon" source="media/end-user-focus/power-bi-fit-width.png"::: :::image type="icon" source="media/end-user-focus/power-bi-menu.png":::   
     Sometimes you don't care about scrollbars, but you want the dashboard to fill the entire width of the available space. Select the **Fit to width** button.    
 
     :::image type="content" source="media/end-user-focus/power-bi-fit-screen.png" alt-text="Screenshot showing how fit to screen appears.":::
@@ -131,6 +132,6 @@ Leave focus mode and return to the dashboard or report by selecting either **Exi
 * When using focus mode with a visual in a report, you'll be able to view and interact with all filters: Visual level, Page level, Drillthrough, and Report level.    
 * When using focus mode with a visual on a dashboard, you'll be able to view and interact with only the Visual level filter.
 
-## Next steps
+## Next step
 
 [Change the View settings for reports](end-user-report-view.md)
