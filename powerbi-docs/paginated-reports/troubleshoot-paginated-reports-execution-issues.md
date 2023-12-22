@@ -2,12 +2,12 @@
 title: "Troubleshoot paginated report execution issues"
 description: In this article, diagnose and fix processing and rendering issues with paginated reports.
 author: maggiesMSFT
-ms.author: maggies
+ms.author: nirusrin
 ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 09/25/2023
+ms.date: 12/22/2023
 ---
 # Troubleshoot paginated report execution issues
 
@@ -68,12 +68,25 @@ After you run a report, you can export it to another format such as Excel, Word,
 ## How can I view all my report data on one page?  
 For an interactive viewing experience for reports that don't have excessive amounts of data, you might want to see all the data on one page.   
   
-For soft page-break renderers, to view all the data on one page, in Report properties, set InteractiveHeight to 0. In soft page-break renderers, existing page breaks are then ignored.   
-  
+For soft page-break renderers, to view all the data on one page, in Report properties, set InteractiveHeight to 0. In soft page-break renderers, existing page breaks are then ignored.  
+
 > [!NOTE]  
 > When a report has no page breaks, the entire report must be processed before you can view the first page.   
   
 For more information about categories of renderers, see [Rendering Behaviors](./report-design/render-behaviors-report-builder-service.md).
+
+## Why do I get a "Your session has expired" message?
+When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
+The session will time out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
+
+## Why do I get a "Error communicating with Analysis Service" message?
+Paginated reports time out after 600 seconds when using Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
+          
+          "There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
+          
+          For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
+
+  
 
 ## Next steps
 
