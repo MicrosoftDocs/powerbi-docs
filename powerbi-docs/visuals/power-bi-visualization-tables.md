@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/20/2023
+ms.date: 12/22/2023
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -78,7 +78,9 @@ This tutorial uses the Retail Analysis Sample in the Power BI service.
 
 You can create a table like the one shown at the beginning of this article and display sales values by item category.
 
-1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model.
+1. On the **Data** pane, expand **Item** and select the **Category** checkbox. Power BI automatically creates a table that lists all the categories in the Retail Analysis Sample semantic model. If you don't see a table visual, use the Visualization section to select the table icon. 
+
+    :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-icon.png" alt-text="Image of the icon for a table visual." border="false"::: 
 
     :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-1.png" alt-text="Screenshot that shows the Category checkbox selected and the default table visual created by Power BI." border="false":::
 
@@ -94,7 +96,7 @@ You can create a table like the one shown at the beginning of this article and d
 
 1. On the **Visualizations** pane, rearrange the data fields in the **Columns** section to match the order shown in the following image:
 
-   :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-3.png" alt-text="Screenshot that shows the reordered table data fields in the Columns section of the Visualizations pane." border="false":::
+   :::image type="content" source="media/power-bi-visualization-tables/power-bi-table-columns.png" alt-text="Screenshot that shows the reordered table data fields in the Columns section of the Visualizations pane." border="false":::
 
    To move a column on the **Visualizations** pane, select and hold the field in the **Columns** section. Drag the field to the new location within the order of columns and release the field. The order of the columns in the table updates to match the new order of the fields in the **Columns** section.
 
@@ -161,9 +163,9 @@ The following steps show how to configure settings and options to adjust the pre
 
 Here's an example of an updated table:
 
-:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-format-updates.png" alt-text="Screenshot that shows the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
+:::image type="content" source="media/power-bi-visualization-tables/power-bi-table-new-format.png" alt-text="Screenshot that shows the table with updated format settings for text size, color, and wrapping, gridline color, and background shading." border="false":::
 
-You can format tables in other ways to complement your configuration options and settings. In the next section, we explore how to apply conditional formatting.
+Format tables in other ways to complement your configuration options and settings. In the next section, we explore how to apply conditional formatting.
 
 ## Use conditional formats
 
@@ -183,7 +185,9 @@ By default, Power BI uses a gradient that spans across two primary colors, from 
 
 Let's modify the background color for a column that has numerical data values.
 
-1. On the **Visualizations** pane, expand the drop-down menu for a field under **Columns**. Choose the **Average Unit Price Last Year** column.
+1. Select the table visual. 
+
+1. On the **Visualizations** pane, expand the drop-down menu for a field under **Columns**. Choose the **Average Unit Price** column.
 
 1. On the menu, select **Conditional formatting** > **Background color**.
 
