@@ -131,9 +131,9 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
 
-Q: I don't see the copy and paste options.
-A: If you're using Power BI Desktop, this feature isn't yet available.
-Q: Why is the Copy icon disabled on a visual?
+Q: I don't see the copy and paste options.   
+A: If you're using Power BI Desktop, this feature isn't yet available.   
+Q: Why is the Copy icon disabled on a visual?   
 A: The content owner and admin can turn off this feature. 
 A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
 
@@ -145,7 +145,7 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 
 For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
-Q: Why is my visual not pasting correctly?
+Q: Why is my visual not pasting correctly?   
 A: There are limitations around copy visual as an image, including:
 
 - For custom visuals
