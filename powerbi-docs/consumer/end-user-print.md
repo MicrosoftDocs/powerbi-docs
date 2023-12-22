@@ -15,13 +15,13 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. If your report has more than one page, you need to print each page separately. Printing is not available from Power BI Desktop.
+Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. If your report has more than one page, you need to print each page separately. Printing isn't available from Power BI Desktop.
 
 ## Print considerations
 
 Report *designers* create most Power BI dashboards and reports for use online. They look amazing on any device used to view them. However, when it comes time to print the content, you might not get the results you want.
 
-You can make changes to your browser and print settings to adjust the print job, but to ensure your printouts match what you see in your browser, consider [exporting to PDF](../collaborate-share/end-user-pdf.md), then printing the PDF instead.
+You can make changes to your browser and print settings to adjust the print job. But to ensure your printouts match what you see in your browser, consider [exporting to PDF](../collaborate-share/end-user-pdf.md) and then printing the PDF instead.
 
 ## Adjust your browser print settings
 
@@ -65,11 +65,11 @@ Experiment with your browser's settings until you get the look you like. Some br
 
 1. Open the dashboard in [full screen mode](end-user-focus.md). Select the full screen icon :::image type="icon" source="./media/end-user-print/power-bi-full-screen.png "::: from the upper menu bar.
 
-1. After the dashboard opens in full screen mode, [open the tile in Focus mode](end-user-focus.md). Hover over the tile to reveal **More options** (...), then select **Open in focus mode** or the focus icon :::image type="icon" source="./media/end-user-print/power-bi-focus-icon.png ":::.
+1. After the dashboard opens in full screen mode, [open the tile in Focus mode](end-user-focus.md). Hover over the tile to reveal **More options** (...), then select **Open in focus mode** or the focus icon. :::image type="icon" source="./media/end-user-print/power-bi-focus-icon.png ":::
 
       :::image type="content" source="./media/end-user-print/power-bi-focus-tile.png" alt-text="Screenshot of the More options menu expanded and Open in focus mode selected.":::
 
-1. Hover over the tile to see the Options menu, then select the Print icon :::image type="icon" source="./media/end-user-print/print-icon.png":::.
+1. Hover over the tile to see the Options menu, then select the Print icon. :::image type="icon" source="./media/end-user-print/print-icon.png":::
 
     :::image type="content" source="./media/end-user-print/power-bi-menu-option.png" alt-text="Screenshot of the Options menu when in full screen mode.":::
 
@@ -134,7 +134,7 @@ Q: Why can't I print all the report pages at once?</br>
 A: Report pages can only be printed one page at a time.
 
 Q: Why can't I print to PDF?</br>
-A: You'll see this option only if you've already configured the PDF driver in your browser. If you don't see this option, your administrator might have disabled print to PDF.
+A: You have this option only if you already configured the PDF driver in your browser. If you don't see this option, your administrator might have disabled print to PDF.
 
 Q: Why doesn't my browser match the screenshots when I select **Print**?</br>
 A: The Print screens vary by browser and software version.
