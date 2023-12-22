@@ -20,13 +20,13 @@ When you're new to the Power BI service, you have only a few pieces of content (
 
 ## Search for content
 
-Search is available from almost every part of the Power BI service. Just look for the search box or search icon :::image type="icon" source="./media/end-user-search-sort/power-bi-search-icon.png" border="false":::.
+Search is available from almost every part of the Power BI service. Just look for the search box or search icon. :::image type="icon" source="./media/end-user-search-sort/power-bi-search-icon.png" border="false":::
 
 In the **Search** field, type all or part of the name of a dashboard, report, workbook, workspace, app, or owner. Power BI searches all of your content.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-search-field-new.png" alt-text="Screenshot of a search field with the term Sales in it.":::
 
-In some Power BI areas, such as workspaces, you'll find two different **Search** fields. The **Search** field in the menu bar searches all of your content while the **Search** field on the workspace canvas searches only that workspace.
+In some Power BI areas, such as workspaces, you find two different **Search** fields. The **Search** field in the menu bar searches all of your content while the **Search** field on the workspace canvas searches only that workspace.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-workspace-search.png" alt-text="Screenshot of a workspace with two different search fields.":::
 
@@ -56,7 +56,7 @@ Another way to locate content quickly is to use the content list **Filter**. Dis
 :::image type="content" source="./media/end-user-search-sort/power-bi-sort-filters-new.png" alt-text="Screenshot of the filter on a Recent content list.":::
 
 ## Limitations
-* Search is not enabled for B2B users
+* Search isn't enabled for B2B users
 * Search currently supports only English characters
 * Global search is currently supported only in Public cloud
 
