@@ -82,9 +82,9 @@ The session will time out after 10 minutes of inactivity, or earlier when the de
 ## Why do I get a "Error communicating with Analysis Service" message?
 Paginated reports time out after 600 seconds when using Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
           
-          "There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
+"There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
           
-          For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
+For paginated reports running longer than 10 minutes, we recommend using  the XMLA endpoint to connect to the Power BI semantic model.
 
   
 
