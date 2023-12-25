@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/13/2023
+ms.date: 12/25/2023
 LocalizationGroup: Visualizations 
 ---
 
@@ -68,7 +68,9 @@ To restore the visualization pane to default, select **More options** (...) and 
 
 ## Change the visualization type
 
-Try [changing the type of visualization](power-bi-report-change-visualization-type.md) to see which works best with your data.
+Try changing the type of visualization to see which works best with your data. Select a visualization to make it active, and from the **Visualizations** pane, choose the icon for a different visualization type. 
+
+If you previously pinned the visualization to a dashboard, changing the type in the report does not change the type on the dashboard.  For example, you pin a donut chart to a dashboard and then change the donut chart to a bar chart. You now have a bar chart in the report and a donut chart on the dashboard. To update the dashboard, repin the data as the bar chart. 
 
 ## Pin the visualization
 
