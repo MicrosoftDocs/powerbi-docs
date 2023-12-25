@@ -57,7 +57,7 @@ The following concepts aren't affected.
   - Hybrid dataset
   - PubNub dataset
 - All [Power BI REST API operations](/rest/api/power-bi/) related to datasets
-- [Power BI activity log operations](../enterprise/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs)
+- [Power BI activity log operations](/fabric/admin/track-user-activities)
 - Other types of datasets that aren't related to Power BI, for example, [Azure Open Datasets](/azure/open-datasets/dataset-catalog)
 
 ## Next steps
