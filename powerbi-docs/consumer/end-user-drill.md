@@ -7,20 +7,18 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/08/2022
+ms.date: 12/24/2023
 LocalizationGroup: Visualizations
 ---
 # Drill mode in the Power BI service
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-This article shows you how to use the *drill mode* in the Microsoft Power BI service. You can explore in-depth details about your data by using the drill-down, drill-up, and expand features on your visual.
+This article shows you how to use the *drill mode* in the Microsoft Power BI service. You can explore in-depth details about your data by using the drill-down, drill-up, and expand features on your visual. To learn how to create a hierarchy, read [hierarchies in Power BI](../create-reports/desktop-inline-hierarchy-labels.md)
 
 ## Drill mode requirements
 
-To use the drill mode, the Power BI visual must have a hierarchy. For example, you might have a visual that shows the number of medals won in a sports competition. The hierarchy in this example is the sport, specific types of the sport, and the events. By default, the visual shows the medal count by sport, like gymnastics, skiing, and aquatics. Then, you can select one of the visual elements, like a bar, line, or bubble, to display the individual sports. For example, selecting the aquatics element shows you data for swimming, diving, and water polo. Then, selecting the diving element opens the next level in the hierarchy and shows you details for springboard, platform, and synchronized diving events.
-
-Report designers often add date hierarchies to visuals. A common date hierarchy is one that contains fields for the year, quarter, month, and day.
+To use the drill mode, the Power BI visual must have an explicit or implicit hierarchy. Report designers often add explicit date hierarchies to reports. Those hierarchies are marked with the hierarchy icon. A common date hierarchy is one that contains fields for the year, quarter, month, and day. A report might have implicit hierarchies too. These are not defined as hierarchies and don't have the icon. But the relationship, and therefore a drill path, exists. For example, you might have a visual that shows the number of medals won in a sports competition. The drill path in this example is the sport which has specific unique types of the sport, and the events. By default, the visual shows the medal count by sport, like gymnastics, skiing, and aquatics. Then, you can select one of the visual elements, like a bar, line, or bubble, to display the individual sports. For example, selecting the aquatics element shows you data for swimming, diving, and water polo. Then, selecting the diving element opens the next level in the hierarchy and shows you details for springboard, platform, and synchronized diving events. 
 
 You can tell if a visual has a hierarchy by hovering over it. If the drill control options appear in the action bar, your visual has a hierarchy.
 
@@ -149,11 +147,11 @@ Use **Show as a table** to get a look behind the scenes. Each time you drill or 
 
 - To view a report that has been shared with you, a Power BI Pro or Premium license is required, or the report must be stored in Power BI Premium capacity. For more information, see [Find out which licenses you have](end-user-license.md#find-out-which-licenses-you-have).
 
-## Next steps
+## Related content
 
-[Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)
+[Using inline hierarchies](../create-reports/desktop-inline-hierarchy-labels)
 
-[Power BI reports](end-user-reports.md)
+[Set and use date tables](../transform-model/desktop-date-tables)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
 
