@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with dashboards
 ms.topic: conceptual
-ms.date: 12/01/2022
+ms.date: 12/22/2023
 LocalizationGroup: Dashboards
 ms.custom: intro-overview
 ---
@@ -20,7 +20,7 @@ A Power BI *dashboard* is a single page, often called a canvas, that uses visual
 
 :::image type="content" source="media/end-user-dashboards/power-bi-dashboard.png" alt-text="Screenshot showing the Sales and Marketing Sample dashboard."lightbox="media/end-user-dashboards/power-bi-dashboard.png#lightbox":::
 
-The visualizations on the dashboard are called *tiles* and are *pinned* to the dashboard by report designers. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Power BI basic concepts](end-user-basic-concepts.md) to get a good foundation.
+The visualizations on the dashboard are called *tiles*. Report designers *pin* tiles to the dashboard. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, start with [Power BI basic concepts](end-user-basic-concepts.md) to get a good foundation. Hovering over an element on a dashboard displays a tooltip. 
 
 > [!NOTE]
 >
@@ -51,7 +51,7 @@ How you interact with Power BI depends on your job role. As a consumer or busine
 | **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
 | **Can see underlying semantic model tables and fields** |No. Can export data but can't see the semantic model tables and fields in the dashboard itself |Yes. Can see semantic model tables and fields and values that you have permissions to see |
 
-## Next steps
+## Related content
 
 * [View a dashboard](end-user-dashboard-open.md).
 * Learn about [dashboard tiles](end-user-tiles.md) and what happens when you select one.
