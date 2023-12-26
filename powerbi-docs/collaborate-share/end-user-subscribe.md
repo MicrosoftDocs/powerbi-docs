@@ -104,7 +104,7 @@ Sensitivity labels are applied to subscription email attachments but not to the 
 
 - For users with free subscriptions, the subscription email for a report (including paginated report) doesn't contain a sensitivity label in the email text or the subscription preview image. 
 - To ensure that your subscription has a sensitivity label, turn off **Preview image** in the **Subscriptions** screen. 
-- For subscriptions to dashboards, there's no option to attach a copy of the dashboard to the email. So, the subscription email won't have a sensitivity label in the text or preview image. 
+- For subscriptions to dashboards, there's no option to attach a copy of the dashboard to the email. So, the subscription email doesn't have a sensitivity label in the text or preview image. 
 
 
 ## Subscribe others
@@ -143,7 +143,7 @@ When you subscribe to a report created by someone else, you can make changes to 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-my-changes.png" alt-text="Screenshot showing the My changes section of the Subscriptions pane.":::
 
-You won't see the option to **Include my changes** until you actually make changes to a report that has been shared with you. After you make the changes that you need, open an existing subscription or create a new subscription for that report page. Because you made changes to the original report, you now have the header for **My changes** and the option to **Include my changes**. 
+You don't see the option to **Include my changes** until you actually make changes to a report that was shared with you. After you make the changes that you need, open an existing subscription or create a new subscription for that report page. Because you made changes to the original report, you now have the header for **My changes** and the option to **Include my changes**. 
 
 When **Include my changes** is unchecked, Power BI ignores all changes you made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI updates the subscription including all changes you made to the report. Changes include:  
 
@@ -162,7 +162,7 @@ Before Power BI updates the subscription, you're given the opportunity to previe
 
 1. First, customize your report based on conditions such as country/region, team/department, and category. 
  
-1. Apply any changes (for example, apply filters, spotlights, drilling, slicers, or cross-highlighting) to the report so that it's in the state you want to subscribe or share.
+1. Apply any changes to the report so that it's in the state you want to subscribe or share. Changes might include applying filters, spotlights, drilling, slicers, or cross-highlighting.
 
 1. Select **Subscribe to report** from the top menubar of the report canvas to reopen the **Subscriptions** pane.
 
@@ -373,7 +373,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 * Email subscriptions aren't supported when the admin setting **Azure private link** > **Block public internet access** is enabled in Power BI. In this case, all subscriptions fail.
 
-* The following Power BI visuals aren't supported.  When you subscribe to a report containing these visuals, they display an error symbol. 
+* The following Power BI visuals aren't supported. When you subscribe to a report containing these visuals, they display an error symbol. 
     - Power BI [custom visuals](../developer/visuals/develop-power-bi-visuals.md). The exception is those Power BI custom visuals that are [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
     - [ESRI ArcGIS](../visuals/power-bi-visualizations-arcgis.md) visuals
     - [R visuals](../visuals/service-r-visuals.md)
