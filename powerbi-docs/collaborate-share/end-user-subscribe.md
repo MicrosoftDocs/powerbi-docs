@@ -383,7 +383,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
     - [The Paginated report visual](../visuals/paginated-report-visual.md)
     - [Visio visuals](https://appsource.microsoft.com//product/office/WA104381132?corrid=090b6a91-07e7-aa81-d025-7cb56f4f6293&src=office&exp=ubp8)
 
-## Next step
+## Related content
 
 [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml)   
 [Search for and sort content](../consumer/end-user-search-sort.md)
