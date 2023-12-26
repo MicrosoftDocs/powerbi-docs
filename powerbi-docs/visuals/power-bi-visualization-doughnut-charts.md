@@ -76,7 +76,7 @@ Follow these steps to create a doughnut chart.
 
 1. To see details within each section of a doughnut chart, add a category to the **Details** field. 
 
-  :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-details.png" alt-text="Screenshot that shows a doughnut chart with Details next to the Data pane.":::
+     :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-details.png" alt-text="Screenshot that shows a doughnut chart with Details next to the Data pane.":::
 
 1. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md).
 
