@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 12/25/2023
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
@@ -121,7 +121,7 @@ The following steps create a report and treemap to display sales over time for d
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-item-category.png" alt-text="Screenshot that shows the updated treemap for total sales by product." border="false":::
 
-1. On the **Data** pane, expand **Store** and select the **Chain** checkbox. You can now compare last year's sales by category and store chain.
+1. On the **Data** pane, expand **Store** and select the **Chain** checkbox. **Chain** is added to the **Details** field. You can now compare last year's sales by category and store chain.
 
    :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-add-store-chain.png" alt-text="Screenshot that shows the updated treemap for total sales by product and by store chain." border="false":::
 
@@ -167,13 +167,27 @@ Now you're ready to try highlighting and cross-filtering.
 
 To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
+## Use conditional formatting
+Use conditional formatting to define the colors based on conditions that you set. 
+
+1. Because the **Color Saturation** and **Details** features can't be used at the same time, remove **Chain** from the **Details** field.
+1. On the Visualizations pane, select the paintbrush icon and choose **Visual** > **Colors** > **Advanced controls**.
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-conditional.png" alt-text="Screenshot that demonstrates the steps to select Advanced color controls." :::
+
+1. Format the treemap by color scale. For detailed instructions on conditional formatting, see [Color by color scale](../create-reports/desktop-conditional-table-formatting.md#color-by-color-scale).
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-gradient.png" alt-text="Screenshot of the Default colors conditional formatting screen.":::
+
+   :::image type="content" source="media/power-bi-visualization-treemaps/power-bi-treemap-gradient.png" alt-text="Screenshot that demonstrates the effect of using Advanced color controls.":::
+
 ## Considerations and limitations
 
 Keep in mind the following information when working with treemaps in Power BI.
 
 - The **Color Saturation** and **Details** features can't be used at the same time.
 
-## Next steps
+## Related content
 
 - Create [waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
