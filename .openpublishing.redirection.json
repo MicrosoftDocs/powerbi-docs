@@ -21,6 +21,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md",
             "redirect_url": "/power-bi/troubleshoot/index",
             "redirect_document_id": false
