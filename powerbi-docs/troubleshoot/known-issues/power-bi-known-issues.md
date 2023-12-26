@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting    
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 12/14/2023
+ms.date: 12/25/2023
 ms.custom:  
 ---
 
@@ -44,7 +44,7 @@ Select the **Title** to view more information about that specific known issue. F
 |  523      |  Consume and View  |  [Combo chart custom labels don't display](known-issue-523-combo-chart-custom-labels-dont-display.md)    | October 10, 2023  | Fixed: November 9, 2023 |
 |  522      |  Capacity Management  |  [Failures in the Fabric Capacity Metrics app](known-issue-522-failures-fabric-capacity-metrics-app.md)    | October 10, 2023  | Fixed: November 9, 2023 |
 
-## Next steps
+## Related content
 
 - [Go to the Power BI Embedded report version of this page](https://support.fabric.microsoft.com/known-issues/)
 - [Service level outages](https://support.powerbi.com)
