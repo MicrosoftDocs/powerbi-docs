@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 11/20/2023
+ms.date: 12/25/2023
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -63,7 +63,10 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.  
     
     > [!TIP]
-    > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select 
+    > Hourly or Weekly and then select the week day checkboxes. 
+    > If you select Monthly, enter the day(s) of the month you 
+    > wish to receive the subscription email.
 
     - If you choose Hourly, Daily, Weekly, or Monthly, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.  
 
@@ -74,7 +77,9 @@ If your subscription is ready, select **Save**. To make your subscription more p
 1. Select the **Report page** you want to appear in the preview image. If you toggled' **Attach full report** to **On**, you see all the report pages listed in the dropdown. Otherwise, you only have the active report page listed in the dropdown. To subscribe to more than one page in a report, either select the **Attach full report** slider, or select **New subscription** and choose a different page from the dropdown.  
 
     > [!TIP]
-    > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page. 
+    > By default, a report subscription inherits the name of 
+    > the active report page. Consider changing the subscription 
+    > name if you select a different report page. 
 
 1. Include additional information in the email. Select one or more of these checkboxes.
     - **Permission to view the report/dashboard in Power BI**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com). This option isn't available in all situations. 
@@ -82,7 +87,9 @@ If your subscription is ready, select **Save**. To make your subscription more p
     - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email. 
 
     > [!CAUTION]
-    > Sensitivity labels are not applied to a subscription's email or preview image. To protect against this, turn off **Preview image**.  
+    > Sensitivity labels are not applied to a subscription's 
+    > email or preview image. To protect against this, 
+    > turn off **Preview image**.  
     
 You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** only send an email after the first scheduled refresh on that day. All dates/times are normalized to UTC when checking for the first dataset refresh of the day. 
 
@@ -135,6 +142,8 @@ There are different ways of creating a Microsoft 365 group. For example, you can
 When you subscribe to a report created by someone else, you can make changes to that report. At that point, you can create a new subscription that captures those changes or you can save your changes with the existing subscription. 
 
 :::image type="content" source="./media/end-user-subscribe/power-bi-my-changes.png" alt-text="Screenshot showing the My changes section of the Subscriptions pane.":::
+
+You won't see the option to **Include my changes** until you actually make changes to a report that has been shared with you. After you make the changes that you need, open an existing subscription or create a new subscription for that report page. Because you made changes to the original report, you now have the header for **My changes** and the option to **Include my changes**. 
 
 When **Include my changes** is unchecked, Power BI ignores all changes you made to the report, and keeps you subscribed to the report as published by the author. When **Include my changes** is checked, Power BI updates the subscription including all changes you made to the report. Changes include:  
 
