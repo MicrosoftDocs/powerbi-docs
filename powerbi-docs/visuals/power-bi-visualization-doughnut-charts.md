@@ -21,7 +21,7 @@ Doughnut charts work best when you use them to compare a particular section to t
 
 ## Prerequisites
 
-Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that you have saved the report in Premium capacity.
+Sharing your report with a Power BI colleague requires that you both have licenses for the paid version of Power BI or that the report is saved in Premium capacity.
 
 ## Get the sample
 
