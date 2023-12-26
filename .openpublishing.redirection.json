@@ -21,6 +21,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-preview-features.md",
+            "redirect_url": "/power-bi/consumer/end-user-experience",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md",
             "redirect_url": "/power-bi/troubleshoot/index",
             "redirect_document_id": false
