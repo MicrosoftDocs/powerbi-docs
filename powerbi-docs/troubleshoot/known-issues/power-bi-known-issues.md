@@ -12,7 +12,7 @@ ms.custom:
 
 # Power BI known issues
 
-This page lists known issues for Power BI features. Before submitting a Support request, regit stview this list to see if the issue that you're experiencing is already known and being addressed. Known issues are also available for all of Fabric (including Power BI) as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
+This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you're experiencing is already known and being addressed. Known issues are also available for all of Fabric (including Power BI) as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
