@@ -32,7 +32,7 @@ Visualizations on *dashboards* can't be copied and pasted into Power BI reports 
 
 1. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.
 
-   ![short video showing how to copy and paste](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
+   ![Short video showing how to copy and paste.](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 
 
 ## Copy a visual as an image to your clipboard
@@ -57,19 +57,19 @@ Visuals can be copied from dashboards and from reports.
 
 1. From the upper right corner of the visual, select **More options(...)** and choose **Copy visual as image**.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-dashboard-copy.png" alt-text="Copy visual as image icon displayed.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-dashboard-copy.png" alt-text="Screenshot showing the selection of Copy visual as image.":::
 
 1. If your visual has a sensitivity label applied, you receive a warning before the copy is made. If the data shouldn't be shared with others, select **Cancel**. If you select **Copy**,  the sensitivity label is added to the metadata under the pasted visual. 
 
-    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-sensitivity.png" alt-text="Warning message for visuals with sensitivity labels.":::
+    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-sensitivity.png" alt-text="Screenshot showing a warning message for visuals with sensitivity labels.":::
 
 1. When the **Image with caption copied** dialog appears, review the image and caption. If it looks OK, select **Copy** and then close the dialog.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-preview.png" alt-text="Dialog with Copy to clipboard option.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-preview.png" alt-text="Screenshot of a dialog with the Copy to clipboard option.":::
 
 1. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In this screenshot, we pasted the visual into Microsoft OneNote. 
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-paste-onenote.png" alt-text="Visual pasted into Word.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-paste-onenote.png" alt-text="Screenshot of the visual pasted into OneNote.":::
 
 #### [Report](#tab/report)
 
@@ -85,11 +85,11 @@ Visuals can be copied from dashboards and from reports.
 
 1. When the **Image with caption copied** dialog appears, review the image and caption. If it looks OK, select **Copy** and then close the dialog.
 
-    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-reports.png" alt-text="Copy visual as image icon displayed.":::
+    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-reports.png" alt-text="Screenshot showing the Copy visual as image icon displayed.":::
 
 1. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In the screenshot below, we pasted the visual into an email.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-email.png" alt-text="Visual pasted into Outlook.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-email.png" alt-text="Screenshot showing the visual pasted into Outlook.":::
 
 ---
 
@@ -107,11 +107,11 @@ If you don't want users to be able to copy a specific visual, you can remove the
 1. Select **General** > **Header icons** > **Icons** and expand the card.
 1. Scroll down to the bottom of the card and toggle off **Copy icon**.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-headers.png" alt-text="Paint brush selected and copy icon selected.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-headers.png" alt-text="Screenshot showing the paint brush selected and the copy icon selected.":::
 
 1. If you can't find the **Visual header** setting, turn on the modern visual header option under **Report settings**.
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-use-modern.png" alt-text="Enable modern visual header selected.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-use-modern.png" alt-text="Screenshot showing Enable modern visual header selected.":::
 
 1. Save changes. Reshare and republish as needed.
 
@@ -123,7 +123,7 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 1. Under **Tenant settings**, locate **Export and sharing settings**. 
 
-   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-enable.png" alt-text="Enable Copy and paste visuals.":::
+   :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-enable.png" alt-text="Screenshot showing Enable Copy and paste visuals.":::
 
 1. Disable **Copy and paste visuals**, for your selected user groups. 
   
