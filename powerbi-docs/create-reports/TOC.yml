@@ -266,8 +266,6 @@
       href: ../visuals/power-bi-report-add-visualizations-ii.md
     - name: Customize the Visualization pane
       href: ../visuals/power-bi-report-visualizations.md
-    - name: Change visuals in reports
-      href: ../visuals/power-bi-report-change-visualization-type.md
     - name: Customize visual titles, backgrounds, legends, and more
       href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: Show items with no data
