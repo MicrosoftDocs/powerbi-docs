@@ -132,5 +132,5 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Related content
 
-[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml). 
+[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
 [Search for and sort content](../consumer/end-user-search-sort.md).
