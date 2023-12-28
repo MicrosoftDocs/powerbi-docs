@@ -385,7 +385,7 @@ Some organizations have specific requirements for [endorsed](/power-bi/collabora
 
 You can accomplish data security in multiple ways.
 
-- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) and [object-level security (OLS)](/power-bi/enterprise/service-admin-ols). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. Both techniques are described later in this section.
+- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) and [object-level security (OLS)](/power-bi/enterprise/service-admin-ols). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. These defined RLS and OLS rules do not apply to references stored outside the semantic model such as slicer and filter selections. Both RLS and OLS techniques are further described later in this section.
 - **Analysis Services:** A live connection semantic model can connect to a remote data model, which is hosted by either Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS). The remote model can enforce RLS or OLS based on the consumer identity.
 - **Data source:** Some data sources, like Azure SQL Database, can enforce RLS. In this case, the Power BI model can take advantage of the existing security rather than redefining it. That approach can be a significant advantage when RLS defined in the source is complex. You can develop and publish a DirectQuery model and set the data source credentials of the semantic model in the Power BI service to enable [single sign-on (SSO)](/power-bi/connect-data/service-azure-sql-database-with-direct-connect). When a report consumer opens a report, Power BI passes their identity to the data source. The data source then enforces RLS based on the identity of the report consumer. For more information about Azure SQL Database RLS, see [this article](/sql/relational-databases/security/row-level-security).
 
@@ -398,6 +398,8 @@ You can accomplish data security in multiple ways.
 
 > [!TIP]
 > If you've noticed someone creating multiple data models to support different groups of consumers, check whether RLS will satisfy their requirements. It's typically better to create, test, and maintain one data model rather than multiple data models.
+
+Take care, because if a Power BI report references a row with RLS configured then the same message will be displayed as for a deleted or non-existing field. To these users, it looks like the report is broken.
 
 There are two steps for setting up RLS: rules and role mappings.
 

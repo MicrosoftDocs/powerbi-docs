@@ -122,7 +122,7 @@ You can validate that the role you defined is working correctly in the Power BI 
 
 You're redirected to the report that was published from Power BI Desktop with this semantic model, if it exists. Dashboards aren't available for testing using the  **Test as role** option.
 
-In the page header, the role being applied is shown. Test other roles, a combination of roles, or a specific person by selecting **Now viewing as**. Here you see important permissions details pertaining to the individual or role being tested.
+In the page header, the role being applied is shown. Test other roles, a combination of roles, or a specific person by selecting **Now viewing as**. Here you see important permissions details pertaining to the individual or role being tested. For more information about how permissions interact with RLS, see [RLS user experience](../guidance/powerbi-implementation-planning-security-report-consumer-planning.md).
 
  :::image type="content" source="media/service-admin-rls/rls-test-role2.png" alt-text="Screenshot of Now viewing as dropdown for a specific person.":::
 
@@ -133,7 +133,7 @@ Test other reports connected to the semantic model by selecting **Viewing** in t
 To return to normal viewing, select **Back to Row-Level Security**.
 
 > [!NOTE]
-> The Test as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled.
+> The Test as role feature doesn't work for DirectQuery models with Single Sign-On (SSO) enabled. Additionally, not all aspects of a report can be validated in the Test as role feature including Q&A visualizations, Quick insights visualizations, and Copilot.
 
 [!INCLUDE [include-short-name](../includes/rls-usernames.md)]
 

@@ -17,3 +17,5 @@ You can see the current limitations for row-level security on cloud models here:
 * The Test as role/View as role feature doesn't work for DirectQuery models with single sign-on (SSO) enabled.
 * The Test as role/view as role feature will show only reports from semantic models workspace.
 * The Test as role/View as role feature doesn't work for paginated reports.
+
+Keep in mind that if a Power BI report references a row with RLS configured then the same message will be displayed as for a deleted or non-existing field. To these users, it looks like the report is broken.
