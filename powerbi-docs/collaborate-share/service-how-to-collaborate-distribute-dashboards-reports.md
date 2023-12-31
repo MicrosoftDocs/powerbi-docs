@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/29/2022
+ms.date: 12/31/2023
 ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
@@ -140,14 +140,6 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
-
-## Display reports and dashboards full-screen on Windows devices
-
-You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is a feature of the [Power BI app for Windows](https://go.microsoft.com/fwlink/?LinkID=526478). It's useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
-
-![Screenshot of a report in presentation mode.](../consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
-
-Read more about [presentation mode](../consumer/mobile/mobile-windows-10-app-presentation-mode.md).
 
 ## Present live report pages in PowerPoint
 
