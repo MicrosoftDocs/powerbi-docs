@@ -7,10 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 12/31/2023
 ---
 
 # Single sign-On in the Power BI mobile Windows app
+
+>[!NOTE]
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
+>
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
 
 Read about single sign-on (SSO) in the Power BI mobile Windows app. SSO means you access all the applications and resources you need to do business by signing in only once, with a single user account. Once you're signed in, you can access all those applications without having to authenticate again.
 
