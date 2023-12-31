@@ -38,9 +38,6 @@ You create reports in Power BI Desktop. You create dashboards, and view dashboar
 >
 > This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
-
 ## Enterprise support for the Power BI mobile apps
 
 Organizations can use [Microsoft Intune](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune) to manage devices and applications, including Power BI mobile apps for Android and iOS.

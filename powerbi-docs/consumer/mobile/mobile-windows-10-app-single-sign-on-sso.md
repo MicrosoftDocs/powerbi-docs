@@ -23,9 +23,6 @@ Because the Power BI Windows app is integrated into Microsoft Entra ID, you can 
 
 SSO is enabled only for Windows devices managed by Microsoft Entra ID.
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
-
 ## Sign in with SSO
 
 To simplify the sign-in process, when you install the app for the first time the app automatically tries to authenticate you to the Power BI service using SSO. Only if this process doesn't succeed does the app ask you to provide your credentials for Power BI.  
