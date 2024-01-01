@@ -14,7 +14,7 @@ ms.date: 01/16/2023
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your customers_. (The developer isn't necessarily responsible for creating the Power BI content.) The **Embed for your customers** scenario applies when the application audience comprises users who don't have permission or appropriate licenses to access Power BI content in your customers. The custom application requires an embedding identity that has permission and an appropriate license to access Power BI content. The custom application could be a multitenancy application.
+This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your customers_. (The developer isn't necessarily responsible for creating the Power BI content.) The **Embed for your customers** scenario applies when the application audience comprises users who don't have permission or appropriate licenses to access Power BI content in your organization. The custom application requires an embedding identity that has permission and an appropriate license to access Power BI content. The custom application could be a multitenancy application.
 
 > [!NOTE]
 > In this scenario, Power BI is platform-as-a-service (PaaS). The embedding scenario is sometimes referred to as _App owns data_.
