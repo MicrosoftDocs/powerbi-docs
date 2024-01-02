@@ -281,7 +281,7 @@ The chain in the previous image is of length three, which is the maximum length.
 
 ### Permissions and licensing
 
-Users accessing reports need to have proper [permissions to all semantic models and models in the chain that's formed by the semantic model](#chaining) that they want to access and the semantic models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
+Users accessing reports need to have proper [permissions to all semantic models and models in the chain that's formed by the semantic model](#chaining) that they want to access and the semantic models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Creating a composite model connection in Power BI Desktop requires Build permissions. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
