@@ -451,7 +451,7 @@ After you make the connections and set up the deduplication rule, your field lis
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
 
 
-If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of a the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
+If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
 
 ## Considerations and limitations
 
