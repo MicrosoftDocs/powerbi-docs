@@ -5725,7 +5725,12 @@
             "source_path": "powerbi-docs/consumer/mobile/mobile-app-find-access-google-search.md",
             "redirect_url": "/power-bi/consumer/mobile",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                   
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-china-north.md",
+            "redirect_url": "/fabric/admin/region-availability",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                                                                                                                                              
   ]          
 
 }

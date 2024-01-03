@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 01/03/2024
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -118,9 +118,12 @@ For more information about storage mode, see [Manage storage mode in Power BI De
 
 ## Calculated tables
 
-You can add calculated tables to a model that uses DirectQuery. The Data Analysis Expressions (DAX) that define the calculated table can reference either imported or DirectQuery tables or a combination of the two.
+You can add calculated tables to a model in Power BI Desktop that uses DirectQuery. The Data Analysis Expressions (DAX) that define the calculated table can reference either imported or DirectQuery tables or a combination of the two.
 
 Calculated tables are always imported, and their data is refreshed when you refresh the tables. If a calculated table refers to a DirectQuery table, visuals that refer to the DirectQuery table always show the latest values in the underlying source. Alternatively, visuals that refer to the calculated table show the values at the time when the calculated table was last refreshed.
+
+> [!IMPORTANT]
+> Calculated tables aren't supported in the Power BI service using this feature. See the [Working with a composite model based on a semantic model](#working-with-a-composite-model-based-on-a-semantic-model) section in this article for more information. 
 
 ## Security implications
 
@@ -448,7 +451,7 @@ After you make the connections and set up the deduplication rule, your field lis
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
 
 
-If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of a the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
+If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
 
 ## Considerations and limitations
 
