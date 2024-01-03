@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/31/2023
+ms.date: 01/03/2024
 ---
 
 # Power BI Desktop project dataset folder
@@ -18,11 +18,11 @@ ms.date: 05/31/2023
 This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the dataset folder can include:
 
 - .pbi\
-    - [localSettings.json](#pbilocalsettingsjson)
-    - [editorSettings.json](#pbieditorsettingsjson)
-    - [cache.abf](#pbicacheabf)
-    - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [model.bim](#modelbim)<sup>[1](#required)</sup>
+  - [localSettings.json](#pbilocalsettingsjson)
+  - [editorSettings.json](#pbieditorsettingsjson)
+  - [cache.abf](#pbicacheabf)
+  - [unappliedChanges.json](#pbiunappliedchangesjson)
+- [\definition folder](#modelbim)<sup>[1](#required)</sup>
 - [definition.pbidataset](#definitionpbidataset)<sup>[1](#required)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
@@ -68,9 +68,9 @@ The unappliedChanges.json file is automatically incorporated into the dataset de
 
 For more information, refer to the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
-#### model.bim
+#### \definition folder
 
-Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
+Contains a Tabular Model Definition Language (TMDL) [Database object](/analysis-services/tmdl/database-object-tmsl) definition of the project model.
 
 #### definition.pbidataset
 
