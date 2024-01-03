@@ -180,19 +180,19 @@ The colors in the color palette are relative to the current theme. For example, 
 
 Setting a report theme changes the default colors used in visuals throughout the report. Power BI maintains a list consisting of hundreds of colors to ensure visuals have plenty of unique colors to display in a report. When Power BI assigns colors to a visual's series, colors are selected as series colors are assigned. When you import a theme, the mapping of colors for data series is reset.
 
-#### Dynamic series
+### Dynamic series
 
 Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals may change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
 
 Individual members of a dynamic series will claim a color from the data color palette as they are read in.  For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the first visual to have its data request completed will reserve the earlier colors.  Since the colors for individual dynamic series members are not explicitly stored, this may lead to the appearance that colors are changing at random, depending on what visuals are loaded first.  You can always assign specific members a particular color using the formatting pane: see more information about how to [change the color of a single data point](service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
 
-#### Static series
+### Static series
 
 Conversely, for *static series*, the number of series and their order is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
 
 To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color has been explicitly set.
 
-#### Situations when report theme colors won't stick to your reports
+### Situations when report theme colors won't stick to your reports
 
 Suppose you apply a custom color set or individual color to a data point in a visual by using the **Custom color** option in the color picker. When you apply a report theme, it doesn't override that customized data point color.
 
