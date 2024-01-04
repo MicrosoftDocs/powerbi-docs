@@ -58,7 +58,7 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there are memory limits and other constraints for each SKU listed in the table below.
 
-| SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQueryconnections (per semantic model)<sup>1</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
+| SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQuery connections (per semantic model)<sup>1</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
 | ----- | --- | --- | ------ | -- | ----- | ------ | --------- |
 | F2    |   3 |   5 |   2    |  1 |     1 |    300 | 10        |
 | F4    |   3 |   5 |   2    |  1 |     2 |    300 | 10        |
