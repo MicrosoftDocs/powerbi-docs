@@ -512,7 +512,7 @@ For administrators with sufficient permissions, the audit log search tool in the
 
 ###### Defender for Cloud Apps user interface
 
-[Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is available to administrators in Microsoft 365 Defender (Microsoft 365 portal). It includes a user interface to view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview compliance portal, in addition to other events like user sign-in activity from Microsoft Entra ID.
+[Defender for Cloud Apps](powerbi-implementation-planning-defender-for-cloud-apps.md) is available to administrators in Microsoft Defender XDR (Microsoft 365 portal). It includes a user interface to view and search activity logs for various cloud services, including Power BI. It displays the same log events that originate in the Microsoft Purview compliance portal, in addition to other events like user sign-in activity from Microsoft Entra ID.
 
 The audit log interface in Defender for Cloud Apps is a good option for manual auditing processes. For more information, see [Defender for Cloud Apps](#defender-for-cloud-apps) later in this article.
 
