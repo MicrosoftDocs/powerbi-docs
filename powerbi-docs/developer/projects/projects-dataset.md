@@ -22,7 +22,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [\definition folder](#modelbim)<sup>[1](#required)</sup>
+- [\definition folder](#definition-folder)<sup>[1](#required)</sup>
 - [definition.pbidataset](#definitionpbidataset)<sup>[1](#required)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
@@ -70,7 +70,7 @@ For more information, refer to the [unappliedChanges.json schema document](https
 
 #### \definition folder
 
-Contains a Tabular Model Definition Language (TMDL) [Database object](/analysis-services/tmdl/database-object-tmsl) definition of the project model.
+Contains a Tabular Model Definition Language (TMDL) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### definition.pbidataset
 

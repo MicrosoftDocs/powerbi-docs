@@ -18,7 +18,7 @@ ms.date: 01/03/2024
 
 ## Schema locations
 
-These schemas get a public URL under: `https://developer.microsoft.com/json-schemas`
+The public URL for these schemas are found in: `https://developer.microsoft.com/json-schemas`
 
 > [!NOTE]
 > You can't access the schemas directly from the above URL. They are just hosted there based on the folder structure in this repository. Tools point automatically to the exact schema files as needed.
