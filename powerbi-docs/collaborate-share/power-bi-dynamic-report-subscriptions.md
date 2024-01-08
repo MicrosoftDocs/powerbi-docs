@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which fiters are applied to their version of the report.
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which filters are applied to their version of the report.
 
 Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
@@ -68,7 +68,7 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
 The **Select and filter data** window lists the fields that can be set dynamically. In this example, we have a field for email address and we have several filters. Select the columns from your semantic model that you want to be varied for each recipient. Email address and filters can be set dynamically based on data in the Power BI semantic model.
 
-1. The **Select and filter data** window displays the list of fields from the *Contoso sales employee* semantic model that can be used to dynamically filter your *Manager training* report subscription. Select the **Owners** table. This table has data for **Owner**, **OwnerEmail**, and **Manager**. These fields from the *Contoso sales employee* semantic model can be tied to the subscription.
+The **Select and filter data** window displays the list of fields from the *Contoso sales employee* semantic model that can be used to dynamically filter your *Manager training* report subscription. Select the **Owners** table. This table has data for **Owner**, **OwnerEmail**, and **Manager**. These fields from the *Contoso sales employee* semantic model can be tied to the subscription.
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription-filters.png" alt-text="Screenshot of the Power BI service showing the select and filter step of the wizard.":::
 
