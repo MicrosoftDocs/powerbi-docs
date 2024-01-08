@@ -70,7 +70,7 @@ The **Select and filter data** window lists the fields that can be set dynamical
 
 The **Select and filter data** window displays the list of fields from the *Contoso sales employee* semantic model that can be used to dynamically filter your *Manager training* report subscription. Select the **Owners** table. This table has data for **Owner**, **OwnerEmail**, and **Manager**. These fields from the *Contoso sales employee* semantic model can be tied to the subscription.
 
-    :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription-filters.png" alt-text="Screenshot of the Power BI service showing the select and filter step of the wizard.":::
+:::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription-filters.png" alt-text="Screenshot of the Power BI service showing the select and filter step of the wizard.":::
 
 ### Enter email details
 
