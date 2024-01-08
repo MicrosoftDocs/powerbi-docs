@@ -19,7 +19,7 @@ LocalizationGroup: Common tasks
 
 Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report.
 
-Dynamic per recipient subscriptions are available for paginated reports and for regular reports.  This article pertains to regular reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
+Dynamic per recipient subscriptions are available for paginated reports and for regular reports. This article pertains to regular reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
 The dynamic subscription parameters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
 
@@ -90,9 +90,9 @@ In this example, we use dynamic content for **Recipients** and **Email subject**
 
 ### Add dynamic filters
 
-Use the **Map your data** window to set dynamic filters. To use the current state of the report as your starting point, select **Include my changes**. This selection will create the subscription with updates you've made to filters, spotlights, drill states, and more. If you don't want dynamic filters to be applied to the current state of the report, uncheck **Include my changes**. Unchecking this option uses the default state of the report. 
+Use the **Map your data** window to set dynamic filters. To use the current state of the report as your starting point, select **Include my changes**. This selection creates the subscription with updates you made to filters, spotlights, drill states, and more. If you don't want dynamic filters to be applied to the current state of the report, uncheck **Include my changes**. Unchecking this option uses the default state of the report. 
 
-Select which report field is used to map to a value in the *Contoso sales employee* semantic model. In this example, both fields have the same name but this isn't the case in most situations.
+Select which report field is used to map to a value in the *Contoso sales employee* semantic model. In this example, both fields have the same name which isn't the case in most situations.
 
 :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-map-data.png" alt-text="Screenshot of the Power BI service showing the Map your data screen.":::
 
