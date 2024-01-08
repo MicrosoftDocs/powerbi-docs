@@ -19,7 +19,7 @@ LocalizationGroup: Common tasks
 
 Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which fiters are applied to their version of the report.
 
-Dynamic per recipient subscriptions are available for paginated reports and for regular reports. This article pertains to regular reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
+Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
 The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
 
