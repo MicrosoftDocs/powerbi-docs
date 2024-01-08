@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/26/2023
+ms.date: 01/08/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -90,7 +90,9 @@ In this example, we use dynamic content for **Recipients** and **Email subject**
 
 ### Add dynamic filters
 
-Use the **Map your data** window to set dynamic filters. Select which report field is used to map to a value in the *Contoso sales employee* semantic model. In this example, both fields have the same name but this isn't the case in most situations.
+Use the **Map your data** window to set dynamic filters. To use the current state of the report as your starting point, select **Include my changes**. This selection will create the subscription with updates you've made to filters, spotlights, drill states, and more. If you don't want dynamic filters to be applied to the current state of the report, uncheck **Include my changes**. Unchecking this option uses the default state of the report. 
+
+Select which report field is used to map to a value in the *Contoso sales employee* semantic model. In this example, both fields have the same name but this isn't the case in most situations.
 
 :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-map-data.png" alt-text="Screenshot of the Power BI service showing the Map your data screen.":::
 
@@ -128,6 +130,8 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - Rendering the report uses some of your capacity. It's classified as a **background** activity.
 - During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
+- This preview feature supports single value filters and doesn't support filters with multiple value options.
+- If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
 
 ## Related content
