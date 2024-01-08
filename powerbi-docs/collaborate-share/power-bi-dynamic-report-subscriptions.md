@@ -1,6 +1,6 @@
 ---
 title: Create a dynamic subscription for a Power BI report (Preview)
-description: Learn how to create per-recipient report subscriptions based on parameters that you select.
+description: Learn how to create per-recipient report subscriptions based on filters that you select.
 author: mihart
 ms.author: mihart
 ms.reviewer: mibruhje
@@ -17,11 +17,11 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report.
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which fiters are applied to their version of the report.
 
 Dynamic per recipient subscriptions are available for paginated reports and for regular reports. This article pertains to regular reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
-The dynamic subscription parameters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
+The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
@@ -34,13 +34,13 @@ The dynamic subscription parameters are stored in a separate Power BI semantic m
 
 ## Prerequisites
 
-- A report with parameters to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
+- A report to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
 - Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and parameter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 
 ## Create a dynamic subscription
 
-Do you want to create one subscription that sends customized views of a report to your subscribers based on parameters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses for the managers. The other contains the training data and defines the mapping between recipients and parameters. When it's time to send out the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what parameters are used in that report.
+Do you want to create one subscription that sends customized views of a report to your subscribers based on filters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses for the managers. The other contains the training data and defines the mapping between recipients and filters. When it's time to send out the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what filters are used in that report.
 
 For users familiar with SQL Server Reporting Services (SSRS), this feature is similar to data-driven subscriptions.
 
@@ -58,15 +58,15 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription.png" alt-text="Screenshot of the Power BI service showing the New subscriptions screen and the option for Dynamic per recipient.":::
 
-1. Highlight the Power BI semantic model that contains your recipient data. Recipient data includes columns for email address, parameters that can be varied per recipient, and optionally, attachment type and email subject.
+1. Highlight the Power BI semantic model that contains your recipient data. Recipient data includes columns for email address, filters that can be varied per recipient, and optionally, attachment type and email subject.
 
-    In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report parameters. The critical piece of data is the email addresses. In order for you to set the parameters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping semantic model is named **Contoso sales employees**.
+    In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report filters. The critical piece of data is the email addresses. In order for you to set the filters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping semantic model is named **Contoso sales employees**.
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-employee.png" alt-text="Screenshot of the Power BI service showing Connect to recipient data step of the wizard, with employee data outlined in red.":::
 
 ### Select and filter data
 
-The **Select and filter data** window lists the fields that can be set dynamically. In this example, we have a field for email address and we have several parameters. Select the columns from your semantic model that you want to be varied for each recipient. Email address and parameters can be set dynamically based on data in the Power BI semantic model.
+The **Select and filter data** window lists the fields that can be set dynamically. In this example, we have a field for email address and we have several filters. Select the columns from your semantic model that you want to be varied for each recipient. Email address and filters can be set dynamically based on data in the Power BI semantic model.
 
 1. The **Select and filter data** window displays the list of fields from the *Contoso sales employee* semantic model that can be used to dynamically filter your *Manager training* report subscription. Select the **Owners** table. This table has data for **Owner**, **OwnerEmail**, and **Manager**. These fields from the *Contoso sales employee* semantic model can be tied to the subscription.
 
@@ -84,7 +84,7 @@ In this example, we use dynamic content for **Recipients** and **Email subject**
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-create-email-subscription.png" alt-text="Screenshot of the Power BI service showing dynamic parameter options on the Email details window.":::
 
-1. Add optional details. Type a message to recipients. Use the dropdown to select a specific report page. If you toggle **Link to report in Power BI**, the link takes you to this report page. Also, this page is the one that displays if you select **Report page preview**. The preview image displays the report with the recipient's unique parameters applied.
+1. Add optional details. Type a message to recipients. Use the dropdown to select a specific report page. If you toggle **Link to report in Power BI**, the link takes you to this report page. Also, this page is the one that displays if you select **Report page preview**. The preview image displays the report with the recipient's unique filters applied.
 
 1. Select the **Attach full report** dropdown to display the list of options. Select a format. Sensitivity labels are applied to the email attachment and the attachment respects all privacy labels for the report. The size of the attachment is limited to less than 25 MB.  
 
