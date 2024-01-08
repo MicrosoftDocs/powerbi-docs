@@ -66,19 +66,21 @@ The following examples show valid schema URLs:
 |               |     /datasetDiagram              |     /1.0      |     /schema.json  |
 |               |                                  |               |                   |
 
-* Allow easy view all the versions of a certain feature (e.g. report/visual)
+This folder structure has the following advantages:
 
-* All files are named *schema.json*. Though this method is problematic for copy & paste in file explorer but avoids name duplication: namespace and file name
+* Allows easy viewing of all versions of a feature (e.g. report/visual).
 
-* Why version on folder and not in the file name? 
+* Avoids name duplication by naming all files *schema.json*. Though this method makes copy & paste in file explorer more difficult, but avoids name duplication: namespace and file name
 
-  * Allows for a feature to have more than one file, for example the visual could be composed by two json schemas and all under the same version. Version 1 has one json schema and version 2 has two json schemas. 
+* Versioning on the folder and not in the file name:
 
-  * Avoid ending up with a “messy” folder with mix of files in different versions 
+  * Allows a feature to have more than one file. For example, the visual could be composed of two json schemas under the same version. Version 1 has one json schema and version 2 has two json schemas.
 
-  * Easily add markdown documentation files next to the schema 
+  * Avoid having “messy” folder that mix files of different versions
 
-* The schema version should describe and govern the content of the file and not the folder content, if its required to have a version for file content it must be a version property in the file as a property (for example, definition.pbir and definition.pbidataset must have a version property to describe the folder “file” format) 
+  * Allows you to easily add markdown documentation files next to the schema
+
+* The schema version describes and governs the content of the file and not the folder content. If you want to version for file content it should be a version property in the file as a property (for example, definition.pbir and definition.pbidataset must have a version property to describe the folder “file” format)
 
 ## Rules
 
