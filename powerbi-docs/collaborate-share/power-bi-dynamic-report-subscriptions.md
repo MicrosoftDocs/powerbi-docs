@@ -21,7 +21,7 @@ Dynamic per recipient subscriptions are designed to simplify distributing a pers
 
 Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
 
-The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
+The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what filters applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
@@ -35,7 +35,7 @@ The dynamic subscription filters are stored in a separate Power BI semantic mode
 ## Prerequisites
 
 - A report to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
-- Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and parameter values that should be applied for each recipient.  
+- Build permissions to a Power BI semantic model that contains recipient data. This data includes the email addresses of your recipients and filter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
 
 ## Create a dynamic subscription
@@ -60,7 +60,7 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
 1. Highlight the Power BI semantic model that contains your recipient data. Recipient data includes columns for email address, filters that can be varied per recipient, and optionally, attachment type and email subject.
 
-    In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report filters. The critical piece of data is the email addresses. In order for you to set the filters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our parameter mapping semantic model is named **Contoso sales employees**.
+    In some organizations, there might be a corporate employee Power BI semantic model that fits the purpose. Or, you might need to create a new semantic model that contains email addresses, and values for report filters. The critical piece of data is the email addresses. In order for you to set the filters on a per-recipient basis, the semantic model needs to include the email addresses of all potential recipients. Select **Next**. In this example, our mapping semantic model is named **Contoso sales employees**.
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-employee.png" alt-text="Screenshot of the Power BI service showing Connect to recipient data step of the wizard, with employee data outlined in red.":::
 
