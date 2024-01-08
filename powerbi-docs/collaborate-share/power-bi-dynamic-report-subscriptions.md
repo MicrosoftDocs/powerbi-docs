@@ -107,7 +107,7 @@ In the **Set the schedule** window, create a schedule for your dynamic subscript
     > [!TIP]
    > To receive a subscription email only on certain days, select Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
-1. Choose a Scheduled Time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone.
+1. Choose a scheduled time for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone.
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription-frequency.png" alt-text="Screenshot of the Power BI service showing the Schedule window.":::
 
@@ -129,10 +129,10 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 - Rendering the report uses some of your capacity. It's classified as a **background** activity.
 - During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email.
-- Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
+- Receiving the subscription email doesn't guarantee access to the report. Report access is set separately.
 - This preview feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
-- As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
+- As a preview feature, it’s not available to customers with content located in sovereign clouds.  
 
 ## Related content
 
