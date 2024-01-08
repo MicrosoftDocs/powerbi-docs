@@ -252,7 +252,7 @@ And there are some limitations to keep in mind:
 - Maximum of 1,000,000 values per query. If you query for 20 columns, you can get back max 50,000 rows (1 million divided by 20).
 - Define all measures in this table or model is unavailable when there are more than 500 measures.
 
-## See also
+## Related content
 
-[DAX queries](/dax/dax-queries)  
-[Work with Modeling view](desktop-modeling-view.md)
+- [DAX queries](/dax/dax-queries)  
+- [Work with Modeling view](desktop-modeling-view.md)

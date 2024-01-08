@@ -299,9 +299,9 @@ To potentially avoid exceeding the effective memory limit:
 - Reduce the memory footprint of your semantic model by limiting the amount of data loaded with each refresh.
 - For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
-## See also
+## Related content
 
-[Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
-[Automate Premium workspace and semantic model tasks with service principals](service-premium-service-principal.md)  
-[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
-[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)
+- [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+- [Automate Premium workspace and semantic model tasks with service principals](service-premium-service-principal.md)  
+- [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+- [Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)

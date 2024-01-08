@@ -92,6 +92,7 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 Read more about [configuring Power BI mobile apps with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md). 
 
 ## Next steps
+
 Here are some other things you can do in the Android device app for Power BI with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
@@ -110,7 +111,8 @@ Here are some other things you can do in the Android device app for Power BI wit
 * Create [KPIs on the web portal](/sql/reporting-services/working-with-kpis-in-reporting-services).
 * Create [reports in Power BI Desktop and publish them on the Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md) web portal
 
-### See also
+### Related content
+
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
