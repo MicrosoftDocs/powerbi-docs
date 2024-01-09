@@ -25,7 +25,8 @@
             "redirect_url": "/power-bi/consumer/end-user-experience",
             "redirect_document_id": false
         }, 
-            "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
+        {
+	    "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
             "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
             "redirect_document_id": false
         },
