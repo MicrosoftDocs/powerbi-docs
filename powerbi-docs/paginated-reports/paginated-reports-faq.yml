@@ -139,7 +139,7 @@ sections:
       - question: |
           Are e-mail subscriptions available for paginated reports?
         answer: |
-          Yes, e-mail subscriptions are fully supported for paginated reports. The details are available in teh "Subscribe to paginated reports" section of the article [Email subscriptions for reports and dashboards in the Power BI service](../collaborate-share/end-user-subscribe.md?tabs=creator#subscribe-to-paginated-reports).
+          Yes, e-mail subscriptions are fully supported for paginated reports. The details are available in the "Subscribe to paginated reports" section of the article [Email subscriptions for reports and dashboards in the Power BI service](../collaborate-share/end-user-subscribe.md?tabs=creator#subscribe-to-paginated-reports).
 
       - question: |
           Can I run custom code in my report?
