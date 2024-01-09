@@ -51,7 +51,8 @@ You can also export paginated reports to many formats:
    
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-sort.png" alt-text="Screenshot of sort highlighted.":::
 
-   Note: Sorting may be limited by the author for reports created in Power BI Report Builder. You will have to update sort in Power BI Report Builder to be able to sort on all columns on the Power BI service.  
+   > [!NOTE]
+   > The report author may have limited sorting for reports created in Power BI Report Builder. You have to update sort in Power BI Report Builder to be able to sort on all columns on the Power BI service.  
 
 1. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
 
