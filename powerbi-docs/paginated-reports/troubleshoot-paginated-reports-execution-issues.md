@@ -29,7 +29,7 @@ Use the following list to help determine the cause of the error:
 
 * When a report has more than one dataset, an aggregate expression in a text box on the report body must specify a scope parameter. For example, `=First(Fields!FieldName.Value, "DataSet1")`.  
   
-To specify a scope parameter, provide the name of a dataset, data region, or group that is in scope for the report item. For more information, see
+To specify a scope parameter, provide the name of a dataset, data region, or group that is in scope for the report item. For more information, see these articles:
 
 * [Understanding Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md), and
 * [Expression Reference (Power BI Report Builder)](./expressions/report-builder-expressions.md)
@@ -38,7 +38,7 @@ To specify a scope parameter, provide the name of a dataset, data region, or gro
 
 The length of object identifiers in a report definition is restricted to 256 characters. Identifiers must be case-sensitive and CLS-compliant. Names must begin with a letter, consist of letters, numbers, or an underscore (_), and have no spaces. For example, text box names or data region names must comply with these guidelines.   
   
-To change the name of an object, in the toolbar of the Properties pane, select the item in the drop-down list, scroll to **Name** and enter a valid object name.   
+To change the name of an object, in the toolbar of the Properties pane, select the item in the drop-down list, scroll to **Name**, and enter a valid object name.   
   
 ## A text box displays "#Error"; how do I fix it?  
 
@@ -84,7 +84,7 @@ For more information about categories of renderers, see [Rendering Behaviors](./
 When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
 The session will time out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
 
-## Why do I get a "Error communicating with Analysis Service" message?
+## Why do I get an "Error communicating with Analysis Service" message?
 
 Paginated reports time out after 600 seconds when using a Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
           
