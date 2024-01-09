@@ -451,7 +451,7 @@ To evaluate these data culture areas, see the [Fabric adoption roadmap](fabric-a
 
 The technical assessment evaluates technical areas that strategically enable the success of BI implementation. The purpose of this assessment isn't to audit individual technical solutions or assess the entirety of technical areas related to BI. Instead, the working team describes the maturity level and general effectiveness for strategically critical areas, like those described in this section. To complete this assessment, the working team performs the following tasks.
 
-1. **Identify technical areas:** The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and show in the following diagram.
+1. **Identify technical areas:** The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and shown in the following diagram.
 1. **Define maturity levels:** The working team defines the maturity levels to score the high-level effectiveness for each technical area in the assessment. These maturity levels should follow a consistent scale, such as those found in the template provided in the [maturity levels of the Fabric adoption roadmap](fabric-adoption-roadmap-maturity-levels.md).
 1. **Review summarized findings:** The working team reviews the collected inputs by conducting independent research and running workshops.
 1. **Evaluate the maturity levels:** The working team evaluates the effectiveness of each area by assigning a maturity score.
