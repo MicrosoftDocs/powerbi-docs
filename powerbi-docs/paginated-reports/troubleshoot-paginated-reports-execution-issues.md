@@ -7,7 +7,7 @@ ms.reviewer: rpatkar
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: troubleshooting
-ms.date: 12/22/2023
+ms.date: 01/08/2024
 ---
 # Troubleshoot paginated report execution issues
 
@@ -41,6 +41,7 @@ The length of object identifiers in a report definition is restricted to 256 cha
 To change the name of an object, in the toolbar of the Properties pane, select the item in the drop-down list, scroll to **Name** and enter a valid object name.   
   
 ## A text box displays "#Error"; how do I fix it?  
+
 The "#Error" message occurs when the report processor evaluates expressions in report item properties at run-time and detects a data type conversion, scope, or other error.   
   
 A data type error usually means the default or the specified data type is not supported. A scope error means that the specified scope was not available at the time that the expression was evaluated.   
@@ -52,11 +53,13 @@ To eliminate the #Error message, you must rewrite the expression that causes it.
 Report items are automatically adjusted during report processing to preserve white space that is defined as part of the report. White space in the report design view is preserved. On the report design surface, the white background represents white space that is preserved when a report is viewed, exported, or printed, depending on target medium.  
   
 ### White space and page breaks interact during rendering  
+
 When you view a report or export the report to a file format, the associated rendering extension processes the report and saves it to the specified file format. Each rendering extension processes the white space in a report according to specific rules. White space is also affected by the page setting properties, page breaks set on report items, the relative position of report items placed in the report body, the KeepTogether property for certain report items, and whether report items are in parent containers.   
   
 To eliminate extra pages because of report width, drag the edge of the report design surface to align with the outermost report item. For a left-to-right report layout, drag the right edge to be aligned with the outermost report item. For more information, see [Rendering Behaviors](./report-design/render-behaviors-report-builder-service.md).
   
 ### White space isn't preserved at the end of a report  
+
 Reporting Services provides an option that lets you control whether to preserve or eliminate white space at the end of a report.   
   
 To preserve white space at the end of a report, select the report and in the Properties pane, scroll to ConsumeContainerWhitespace, and type False.   
@@ -66,6 +69,7 @@ To preserve white space at the end of a report, select the report and in the Pro
 After you run a report, you can export it to another format such as Excel, Word, or PDF. Depending on the format to which you export the report, certain rules and limitations might apply. You can address many limitations by considering them when you create the report. You might need to use a slightly different layout in your report, carefully align items within the report, confine report footers to a single line of text, and so forth. You can also use the RenderFormat built-in global to conditionally use a different report layout for different renderers. Other built-in globals can help you manage pagination in the exported format and name worksheet tabs in Excel. For more information, see [Export Reports](./report-builder/export-reports-report-builder.md) and [Use Built-in Globals an Users Reference](./expressions/built-in-collections-built-in-globals-and-users-references-report-builder.md).  
   
 ## How can I view all my report data on one page?  
+
 For an interactive viewing experience for reports that don't have excessive amounts of data, you might want to see all the data on one page.   
   
 For soft page-break renderers, to view all the data on one page, in Report properties, set InteractiveHeight to 0. In soft page-break renderers, existing page breaks are then ignored.  
@@ -76,11 +80,13 @@ For soft page-break renderers, to view all the data on one page, in Report prope
 For more information about categories of renderers, see [Rendering Behaviors](./report-design/render-behaviors-report-builder-service.md).
 
 ## Why do I get a "Your session has expired" message?
+
 When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
 The session will time out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
 
 ## Why do I get a "Error communicating with Analysis Service" message?
-Paginated reports time out after 600 seconds when using Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
+
+Paginated reports time out after 600 seconds when using a Power BI DirectQuery dataset as a source. After 600 seconds, you receive this error: 
           
 "There was an error communicating with Analysis Services. Please verify that the data source is available and your credentials are correct. The connection either timed out or was lost." 
           
