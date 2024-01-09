@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 01/08/2024
 LocalizationGroup: Transform and shape data
 ---
 
 # Manage storage mode in Power BI Desktop
 
-In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports.
+In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports. Caching means temporarily storing data in memory.
 
 Setting the storage mode provides many advantages. You can set the storage mode for each table individually in your model. This action enables a single semantic model, which provides the following benefits:
 
