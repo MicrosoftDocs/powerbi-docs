@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 01/09/2024
 ---
 
 # Shared device mode for the Power BI mobile app

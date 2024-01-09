@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 01/09/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -19,7 +19,7 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
-## December 2023
+## January 2024
 
 ### Shared device mode is now GA
 
