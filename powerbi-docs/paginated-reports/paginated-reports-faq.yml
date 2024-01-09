@@ -79,7 +79,7 @@ sections:
           The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
         answer: |
           Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren't yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-) available later in this FAQ.  
-          You can also create simple, single-table reports on the Power BI service. See the list of [capabilities](../web-authoring/paginated-formatted-table.md).
+          You can also create simple, single-table reports on the Power BI service. See the list of [capabilities](web-authoring/paginated-formatted-table.md).
           
       - question: |
           What version(s) of Report Builder do you support?
