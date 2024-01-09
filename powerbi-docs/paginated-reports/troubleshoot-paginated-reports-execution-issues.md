@@ -82,7 +82,8 @@ For more information about categories of renderers, see [Rendering Behaviors](./
 ## Why do I get a "Your session has expired" message?
 
 When you're viewing paginated reports in the Power BI service, sessions may time out, presenting you with a "Your session has expired" notification.
-The session will time out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
+
+The session times out after 10 minutes of inactivity, or earlier when the device is locked or inactive.
 
 ## Why do I get an "Error communicating with Analysis Service" message?
 
