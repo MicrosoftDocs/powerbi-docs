@@ -3,12 +3,12 @@ title: Roles in workspaces in Power BI
 description: Learn about the different roles you can assign to workspace users to grant access to read, write, edit, and more.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: lukaszp
+ms.reviewer: mihirwagle
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Roles in workspaces
 ms.topic: conceptual
-ms.date: 12/02/2023
+ms.date: 01/08/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
