@@ -47,7 +47,7 @@ Improved versions of the data protection metrics report are released periodicall
 * Before you share information from the data protection metrics report with a user who isn't a Power BI administrator, keep in mind that this report contains sensitive information about your organization.
 * The data protection metrics report is a special report and doesn't show up in the **Shared with me**, **Recent**, and **Favorites** lists.
 
-* The data protection metrics report isn't available to [external users such as Azure Active Directory B2B (Azure AD B2B) guest users](./service-admin-azure-ad-b2b.md).
+* The data protection metrics report isn't available to [external users such as Microsoft Entra B2B (Microsoft Entra B2B) guest users](./service-admin-azure-ad-b2b.md).
 
 ## Next steps
 

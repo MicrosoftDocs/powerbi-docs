@@ -72,14 +72,14 @@ You can also map your Power BI sign-in name to a local directory UPN. To learn a
 
 > [!VIDEO https://www.youtube.com/embed/eATPS-c7YRU]
 
-Power BI allows mapping user names for Analysis Services data sources. You can configure rules to map a Power BI sign-in user name to an `EffectiveUserName` that passes to the Analysis Services connection. This feature is a great workaround when your Azure Active Directory (Azure AD) user name doesn't match a UPN in your local Active Directory instance. For example, if your email address is `meganb@contoso.onmicrosoft.com`, you can map it to `meganb@contoso.com`, and that value passes on to the gateway.
+Power BI allows mapping user names for Analysis Services data sources. You can configure rules to map a Power BI sign-in user name to an `EffectiveUserName` that passes to the Analysis Services connection. This feature is a great workaround when your Microsoft Entra user name doesn't match a UPN in your local Active Directory instance. For example, if your email address is `meganb@contoso.onmicrosoft.com`, you can map it to `meganb@contoso.com`, and that value passes on to the gateway.
 
 You can map user names for Analysis Services in two different ways:
 
 - Manual user remapping in Power BI
-- Active Directory lookup mapping, which uses on-premises AD property lookup to remap Azure AD UPNs to on-premises AD users.
+- Active Directory lookup mapping, which uses on-premises AD property lookup to remap Microsoft Entra UPNs to on-premises AD users.
 
-Manual mapping by using on-premises AD property lookup is possible, but is time consuming and difficult to maintain, especially when pattern matching isn't enough. For example, domain names or user account names might be different between Azure AD and on-premises AD. Therefore, manual mapping with the second approach isn't recommended.
+Manual mapping by using on-premises AD property lookup is possible, but is time consuming and difficult to maintain, especially when pattern matching isn't enough. For example, domain names or user account names might be different between Microsoft Entra ID and on-premises AD. Therefore, manual mapping with the second approach isn't recommended.
 
 The following sections describe the two mapping approaches.
 
@@ -127,9 +127,9 @@ To validate the name replacement, enter a value for **Original name**, and selec
 
 ### Active Directory lookup mapping
 
-This section describes how to do an on-premises Active Directory property lookup to remap Azure AD UPNs to AD users. First, review how this remapping works.
+This section describes how to do an on-premises Active Directory property lookup to remap Microsoft Entra UPNs to AD users. First, review how this remapping works.
 
-Each query by a Power BI Azure AD user to an on-premises SSAS server passes along a UPN string such as `firstName.lastName@contoso.com`.
+Each query by a Power BI Microsoft Entra user to an on-premises SSAS server passes along a UPN string such as `firstName.lastName@contoso.com`.
 
 Lookup mapping in an on-premises data gateway with configurable custom user mapping follows these steps:
 
@@ -195,13 +195,15 @@ Analysis Services can also provide filtering based on the Active Directory accou
 
 Implementing role and dynamic row-level security in models is beyond the scope of this article. For more information, see [Roles in tabular models](/analysis-services/tabular-models/roles-ssas-tabular) and [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data). For the most in-depth understanding of tabular model security, download the [Securing the tabular BI semantic model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) whitepaper.
 
-### Azure AD authentication
+<a name='azure-ad-authentication'></a>
 
-Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users. Azure AD is the tenant that contains user names and security groups. Typically, the email address a user signs in with is the same as the UPN of the account.
+### Microsoft Entra authentication
+
+Microsoft cloud services use [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) to authenticate users. Microsoft Entra ID is the tenant that contains user names and security groups. Typically, the email address a user signs in with is the same as the UPN of the account.
 
 ### Roles in the local Active Directory instance
 
-For Analysis Services to determine if a user belongs to a role with permissions to read data, the server needs to convert the effective user name passed from Azure AD to the gateway and on to the Analysis Services server. The Analysis Services server passes the effective user name to a Windows Active Directory domain controller (DC). The Active Directory DC then validates that the effective user name is a valid UPN on a local account. The DC returns the user's Windows user name back to the Analysis Services server.
+For Analysis Services to determine if a user belongs to a role with permissions to read data, the server needs to convert the effective user name passed from Microsoft Entra ID to the gateway and on to the Analysis Services server. The Analysis Services server passes the effective user name to a Windows Active Directory domain controller (DC). The Active Directory DC then validates that the effective user name is a valid UPN on a local account. The DC returns the user's Windows user name back to the Analysis Services server.
 
 You can't use `EffectiveUserName` on a non-domain joined Analysis Services server. The Analysis Services server must be joined to a domain to avoid sign-in errors.
 
@@ -215,22 +217,24 @@ whoami /upn
 
 The result looks similar to an email address, but is the UPN that's on your domain account. If you use an Analysis Services data source for live connections, and this UPN doesn't match the email address you use to sign in to Power BI, you might need to [map your user name](#map-user-names-for-analysis-services-data-sources).
 
-### Synchronize an on-premises AD with Azure AD
+<a name='synchronize-an-on-premises-ad-with-azure-ad'></a>
 
-If you plan to use Analysis Services live connections, your local AD accounts must match Azure AD. The UPN must match between the accounts.
+### Synchronize an on-premises AD with Microsoft Entra ID
 
-Cloud services only use accounts within Azure AD. If you add an account in your local AD instance that doesn't exist in Azure AD, you can't use the account. There are several ways you can match your local AD accounts with Azure AD:
+If you plan to use Analysis Services live connections, your local AD accounts must match Microsoft Entra ID. The UPN must match between the accounts.
 
-- Add accounts manually to Azure AD.
+Cloud services only use accounts within Microsoft Entra ID. If you add an account in your local AD instance that doesn't exist in Microsoft Entra ID, you can't use the account. There are several ways you can match your local AD accounts with Microsoft Entra ID:
+
+- Add accounts manually to Microsoft Entra ID.
 
   Create an account on the Azure portal, or within the Microsoft 365 admin center, with an account name that matches the UPN of the local AD account.
 
-- Use [Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis) to synchronize local accounts to your Azure AD tenant.
+- Use [Microsoft Entra Connect Sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis) to synchronize local accounts to your Microsoft Entra tenant.
 
-  Azure AD Connect ensures that the UPN matches between Azure AD and your local AD instance. The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not an admin or a local domain administrator, contact your IT admin to help with configuration.
+  Microsoft Entra Connect ensures that the UPN matches between Microsoft Entra ID and your local AD instance. The Microsoft Entra Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not an admin or a local domain administrator, contact your IT admin to help with configuration.
 
   > [!NOTE]
-  > Synchronizing accounts with Azure AD Connect sync creates new accounts within your Azure AD tenant.
+  > Synchronizing accounts with Microsoft Entra Connect Sync creates new accounts within your Microsoft Entra tenant.
 
 ## Use the data source
 

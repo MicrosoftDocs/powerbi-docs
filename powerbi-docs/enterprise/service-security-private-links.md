@@ -1,4 +1,4 @@
-﻿---
+---
 title: Private endpoints for secure access to Power BI
 description: Use the Azure private link feature to provide secure access to Power BI using Azure Networking private endpoints. Data is sent privately instead of over the internet.
 author: DandanZhang
@@ -366,7 +366,7 @@ There are a few considerations to keep in mind while working with private endpoi
 - [Administering Power BI in your Organization](../admin/service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding Power BI administration roles](../admin/service-admin-role.md)  
 - [Track user activities in Power BI](../admin/service-admin-auditing.md)  
-- [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
+- [How to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
 The following video shows how to connect a mobile device to Power BI, using private endpoints:
 

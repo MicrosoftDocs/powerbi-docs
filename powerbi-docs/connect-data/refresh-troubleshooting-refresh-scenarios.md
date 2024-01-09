@@ -57,15 +57,17 @@ This error could be an issue with your [M script](/powerquery-m/m-spec-introduct
 
 For a list of errors you might encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
 
-## Refresh fails when updating data from sources that use Azure AD OAuth
+<a name='refresh-fails-when-updating-data-from-sources-that-use-azure-ad-oauth'></a>
 
-The Azure Active Directory (**Azure AD**) OAuth token, used by many different data sources, expires in approximately one hour. Sometimes that token expires before the data has finished loading, since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
+## Refresh fails when updating data from sources that use Microsoft Entra ID OAuth
 
-Data sources that use Azure AD OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, OAuth might be the reason.
+The Microsoft Entra ID (**Microsoft Entra ID**) OAuth token, used by many different data sources, expires in approximately one hour. Sometimes that token expires before the data has finished loading, since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
 
-Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance is so large that it runs over the two-hour data-load threshold, the Power BI service might report a data load time-out. This data load time-out also applies to other Azure AD OAuth data sources.
+Data sources that use Microsoft Entra ID OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, OAuth might be the reason.
 
-For refresh to work properly when connecting to a **SharePoint Online** data source by using Azure AD OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance is so large that it runs over the two-hour data-load threshold, the Power BI service might report a data load time-out. This data load time-out also applies to other Microsoft Entra ID OAuth data sources.
+
+For refresh to work properly when connecting to a **SharePoint Online** data source by using Microsoft Entra ID OAuth, you must use the same account that you use to sign in to the **Power BI service**.
 
 If you want to connect to a data source from Power BI service by using OAuth2, the data source must be in the same tenant as the Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
 

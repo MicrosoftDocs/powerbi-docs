@@ -119,7 +119,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Data lineage view](../collaborate-share/service-data-lineage.md) and [semantic model impact analysis](../collaborate-share/service-dataset-impact-analysis.md), which help users understand and assess Power BI item dependencies | No | Yes |
 | **Monitoring and diagnostic logging** |||
 | [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app), which provides monitoring capabilities for Power BI capacities | No | Yes |
-| [Power BI audit log](../enterprise/service-admin-auditing.md#use-the-audit-log), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
+| [Audit log](/fabric/admin/track-user-activities), which tracks user activities across Power BI and Microsoft 365 | No | Yes |
 | [Azure Log Analytics (LA) integration](../transform-model/log-analytics/desktop-log-analytics-overview.md), which allows administrators to configure a Log Analytics connection for a Power BI workspace | Yes | Yes  |
 | [Metric alerts in Azure Monitor](/azure/azure-monitor/alerts/alerts-types#metric-alerts), which provide a way to get notified when one of your multi-dimensional metrics crosses a threshold | Yes | No |
 | [XMLA endpoint](../enterprise/service-premium-connect-tools.md), which allows diagnostic logging tool connections, including SQL Server Profiler | Yes | Yes |

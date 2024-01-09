@@ -424,7 +424,7 @@ class MockITelemetryService implements ITelemetryService {
     function createTelemetryService(): ITelemetryService;
     ```
 ### MockIAuthenticationService
-Simulates the work of **AuthenticationService** by providing a mocked Azure Active Directory token.
+Simulates the work of **AuthenticationService** by providing a mocked Microsoft Entra token.
 ```typescript
 class MockIAuthenticationService implements IAuthenticationService  {
     constructor(token: string);

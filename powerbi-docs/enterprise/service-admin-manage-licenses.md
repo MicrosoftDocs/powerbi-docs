@@ -42,9 +42,9 @@ Follow these steps to view and assign Power BI licenses using the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Search for and select **Azure Active Directory**.
+2. Search for and select **Microsoft Entra ID**.
 
-3. Under **Manage** on the Azure Active Directory resource menu, select **Licenses**.
+3. Under **Manage** on the Microsoft Entra resource menu, select **Licenses**.
 
 4. Select **All products** from the resource menu, then select a Power BI license type to display the list of licensed users.
 

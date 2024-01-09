@@ -356,7 +356,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
   * The caller is a [service principal profile](./embed-multi-tenancy.md).
   * The caller is a master user and an effective identity was provided.
 
-* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
+* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Microsoft Entra ID.
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token. If you get a timeout error past the 60-minute mark when exporting large amounts of data, consider reducing the amount of data using appropriate filters.
 

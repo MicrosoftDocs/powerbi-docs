@@ -52,7 +52,7 @@ For Power Apps, the geography of an environment is the geography with the region
 
 ## Authentication
 
-When Power Platform makers perform any operation related to Power BI, their identities are authorized by policy settings on both the Power Platform and Power BI sides. However, only Azure Active Directory Conditional Access policies related to Power Platform are enforced. This is because maker operations, such as import, export, or adding Power BI components to Power Platform solutions, are implemented through so-called service-to-service communication between Power Platform and Power BI. For solution consumers, conditional access policies are validated for both Power Platform and Power BI as usual.
+When Power Platform makers perform any operation related to Power BI, their identities are authorized by policy settings on both the Power Platform and Power BI sides. However, only Microsoft Entra Conditional Access policies related to Power Platform are enforced. This is because maker operations, such as import, export, or adding Power BI components to Power Platform solutions, are implemented through so-called service-to-service communication between Power Platform and Power BI. For solution consumers, conditional access policies are validated for both Power Platform and Power BI as usual.
 
 ## Private links
 

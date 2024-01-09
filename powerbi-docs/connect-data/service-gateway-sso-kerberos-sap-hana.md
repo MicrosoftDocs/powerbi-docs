@@ -174,7 +174,7 @@ johnny@contoso.com@CONTOSO.COM
 
 #### Resolution
 
-Follow the instructions described in [Set user-mapping configuration parameters on the gateway machine](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Azure AD Connect** service.
+Follow the instructions described in [Set user-mapping configuration parameters on the gateway machine](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Microsoft Entra Connect** service.
 
 #### Validation
 

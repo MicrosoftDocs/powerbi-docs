@@ -360,7 +360,7 @@ Things to keep in mind about publishing apps:
 - Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 - When using "Add a Link", you can only open embed links in the content area.
 - Apps can have a maximum of 200 dashboards.
-- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
@@ -369,5 +369,3 @@ Things to keep in mind about publishing apps:
 - [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 - [Power BI Admin Portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

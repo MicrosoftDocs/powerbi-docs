@@ -98,7 +98,7 @@ Some of your organizational-level decisions will result in firm governance polic
 
 ## Integration with Microsoft Entra ID
 
-Power BI security is built upon the foundation of a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) tenant. The following Microsoft Entra ID concepts are relevant to the security of a [Power BI tenant](powerbi-implementation-planning-tenant-setup.md).
+Power BI security is built upon the foundation of a [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) tenant. The following Microsoft Entra concepts are relevant to the security of a [Power BI tenant](powerbi-implementation-planning-tenant-setup.md).
 
 - **User access:** Access to the Power BI service requires a user account (in addition to a Power BI [license](/power-bi/fundamentals/service-features-license-type): Free, Power BI Pro, or Premium Per User - PPU). You can add both internal users and guest users to Microsoft Entra ID, or they can be synchronized with an on-premises Active Directory (AD). For more information about guest users, see [Strategy for external users](#strategy-for-external-users).
 - **Security groups:** Microsoft Entra security groups are required when making certain features available in the Power BI [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings). You might also need groups to effectively secure Power BI workspace content or for distributing content. For more information, see [Strategy for using groups](#strategy-for-using-groups).
@@ -113,24 +113,24 @@ Power BI security is built upon the foundation of a [Microsoft Entra](/azure/act
 - **Service principals:** You might need to create a Microsoft Entra [app registration](/azure/active-directory/develop/quickstart-register-app) to provision a service principal. Service principal authentication is a recommended practice when a Power BI administrator wants to run unattended, scheduled, scripts that extract data by using the Power BI [admin APIs](/rest/api/power-bi/admin). Service principals are also useful when [embedding Power BI content](/power-bi/developer/embedded/embed-service-principal) in a custom application.
 - **Real-time policies:** You can choose to set up [real-time session control or access control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a report in the Power BI service when it has a specific sensitivity label. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) articles.
 
-It might be difficult to find the right balance between unrestricted access and overly restrictive access (which frustrates users). The best strategy is to work with your Microsoft Entra ID administrator to understand what's currently set up. Try to remain responsive to the needs of the business while being mindful of necessary restrictions.
+It might be difficult to find the right balance between unrestricted access and overly restrictive access (which frustrates users). The best strategy is to work with your Microsoft Entra administrator to understand what's currently set up. Try to remain responsive to the needs of the business while being mindful of necessary restrictions.
 
 > [!TIP]
-> Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Microsoft Entra ID in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Microsoft Entra ID for cloud-based services like Power BI to work. Having a hybrid identity solution will work for Power BI. We recommend talking to your Microsoft Entra ID administrators about the best solution for your organization.
+> Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Microsoft Entra ID in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Microsoft Entra ID for cloud-based services like Power BI to work. Having a hybrid identity solution will work for Power BI. We recommend talking to your Microsoft Entra administrators about the best solution for your organization.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-**Checklist** - When identifying needs for Microsoft Entra ID integration, key decisions and actions include:
+**Checklist** - When identifying needs for Microsoft Entra integration, key decisions and actions include:
 
 > [!div class="checklist"]
 >
-> - **Work with Microsoft Entra ID administrators:** Collaborate with your Microsoft Entra ID administrators to find out what existing Microsoft Entra policies are in place. Determine whether there are any policies (current or planned) that'll affect the user experience in the Power BI service and/or in the Power BI mobile applications.
+> - **Work with Microsoft Entra administrators:** Collaborate with your Microsoft Entra administrators to find out what existing Microsoft Entra policies are in place. Determine whether there are any policies (current or planned) that'll affect the user experience in the Power BI service and/or in the Power BI mobile applications.
 > - **Decide when user access versus service principal should be used:** For automated operations, decide when to use a service principal instead of user access.
 > - **Create or update user guidance:** Determine whether there are security topics that you'll need to document for the Power BI user community. That way, they'll know what to expect for using groups and conditional access policies.
 
 ## Strategy for external users
 
-Power BI supports [Microsoft Entra Business-to-Business](/azure/active-directory/external-identities/what-is-b2b) (Microsoft Entra B2B). External users, for instance from a customer or partner company, can be invited as guest users in Microsoft Entra ID for collaboration purposes. External users can work with Power BI and many other Azure and Microsoft 365 services.
+Power BI supports [Microsoft Entra Business-to-Business (B2B)](/azure/active-directory/external-identities/what-is-b2b). External users, for instance from a customer or partner company, can be invited as guest users in Microsoft Entra ID for collaboration purposes. External users can work with Power BI and many other Azure and Microsoft 365 services.
 
 > [!IMPORTANT]
 > The [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md) is the best resource for learning about strategies for handling external users. This article is limited to describing the most important considerations that are relevant to planning.
@@ -145,7 +145,7 @@ There are advantages when an external user is from another organization that als
 
 There are two aspects to enabling and managing how external user access will work:
 
-- [Microsoft Entra ID settings](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b) that are managed by a Microsoft Entra ID administrator. These Microsoft Entra ID settings are a prerequisite.
+- [Microsoft Entra settings](whitepaper-azure-b2b-power-bi.md#additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b) that are managed by a Microsoft Entra administrator. These Microsoft Entra settings are a prerequisite.
 - [Power BI tenant settings](/power-bi/admin/service-admin-portal-export-sharing) that are managed by a Power BI administrator in the admin portal. These settings will control the user experience in the Power BI service.
 
 ### Guest invitation process
@@ -210,8 +210,8 @@ The Power BI _Allow email subscriptions to be sent to external users_ tenant set
 > [!div class="checklist"]
 >
 > - **Identify requirements for external users in Power BI:** Determine what use cases there are for external collaboration. Clarify the scenarios for using Power BI with Microsoft Entra B2B. Determine whether collaboration with external users is a common or rare occurrence.
-> - **Determine the current Microsoft Entra ID settings:** Collaborate with your Microsoft Entra ID administrator to find out how external collaboration is currently set up. Determine what the impact will be on using B2B with Power BI.
-> - **Decide how to invite external users:** Collaborate with your Microsoft Entra ID administrators to decide how guest accounts will be created in Microsoft Entra ID. Decide whether ad hoc invitations will be allowed. Decide to what extent the planned invitation approach will be used. Ensure that the entire process is understood and documented.
+> - **Determine the current Microsoft Entra settings:** Collaborate with your Microsoft Entra administrator to find out how external collaboration is currently set up. Determine what the impact will be on using B2B with Power BI.
+> - **Decide how to invite external users:** Collaborate with your Microsoft Entra administrators to decide how guest accounts will be created in Microsoft Entra ID. Decide whether ad hoc invitations will be allowed. Decide to what extent the planned invitation approach will be used. Ensure that the entire process is understood and documented.
 > - **Create and publish user guidance about external users:** Create documentation for your content creators that will guide them on how to share content with external users (particularly when the planned invitation process is required). Include information about limitations that external users will face if they intend to have external users edit and manage content. Publish this information to your centralized portal and training materials.
 > - **Determine how to handle external data sharing:** Decide whether external data sharing should be allowed, and whether it's limited to a specific set of approved content creators. Set the _Allow guest users to work with shared semantic models in their own tenants_ tenant setting and the _Allow specific users to turn on external data sharing_ tenant setting to align with your decision. Provide information about external data sharing for your semantic model creators. Publish this information to your centralized portal and training materials.
 > - **Determine how to handle Power BI licenses for external users:** If the guest user doesn't have an existing Power BI license, decide on the process to assign them a license. Ensure that the process is documented.
@@ -282,7 +282,7 @@ There are some strategic decisions to be made regarding how groups will be used.
 
 There are two key decisions to make about creating and managing groups.
 
-- **Who's allowed to create a group?** Commonly, only IT can create security groups. However, it's possible to add users to the built-in _[Groups administrator](/azure/active-directory/roles/permissions-reference#groups-administrator)_ Microsoft Entra ID role. That way, certain trusted users, like Power BI champions or satellite members of your COE, can create groups for their business unit.
+- **Who's allowed to create a group?** Commonly, only IT can create security groups. However, it's possible to add users to the built-in _[Groups administrator](/azure/active-directory/roles/permissions-reference#groups-administrator)_ Microsoft Entra role. That way, certain trusted users, like Power BI champions or satellite members of your COE, can create groups for their business unit.
 - **Who's allowed to manage members of a group?** It's common that IT manages group membership. However, it's possible to specify one or more _[group owners](/azure/active-directory/fundamentals/how-to-manage-groups#add-or-remove-members-and-owners)_ who are permitted to add and remove group members. Using _[self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)_ is helpful when a decentralized team or satellite members of the COE are permitted to manage the membership of Power BI-specific groups.
 
 > [!TIP]
@@ -323,8 +323,8 @@ Depending on the internal processes you have in place, you'll have other groups 
 - **Power BI public publishing:** Useful when you need to limit who can publish data publicly. It's used to set up the _Publish to web_ tenant setting.
 - **Power BI share to entire organization:** Useful when you need to restrict who can share a link with everyone in the organization. It's used to set up the _Allow shareable links to grant access to everyone in your organization_ tenant setting.
 - **Power BI external data sharing:** Useful when you need to allow certain users to share semantic models with external users. It's used to set up the _Allow specific users to turn on external data sharing_ tenant setting.
-- **Power BI guest user access licensed:** Useful when you need to group approved external users who are granted a license by your organization. It's used to set up the _Allow Microsoft Entra ID guest users access to Power BI_ tenant setting.
-- **Power BI guest user access BYOL:** Useful when you need to group approved external users who bring their own license (BYOL) from their home organization. It's used to set up the _Allow Microsoft Entra ID guest users access to Power BI_ tenant setting.
+- **Power BI guest user access licensed:** Useful when you need to group approved external users who are granted a license by your organization. It's used to set up the _Allow Microsoft Entra guest users access to Power BI_ tenant setting.
+- **Power BI guest user access BYOL:** Useful when you need to group approved external users who bring their own license (BYOL) from their home organization. It's used to set up the _Allow Microsoft Entra guest users access to Power BI_ tenant setting.
 
 > [!TIP]
 > For considerations about using groups when planning for workspace access, see the [Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-access) article. For information about planning for securing workspaces, apps, and items, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md) article.
@@ -342,7 +342,7 @@ When you request a new group, or you intend to use an existing group, it's impor
 
 - **Power BI permissions:** Not every type of group is supported for every type of security operation. Security groups (including mail-enabled security groups) offer the highest coverage when it comes to setting Power BI security options. Microsoft documentation generally recommends Microsoft 365 groups. However, in the case of Power BI, they aren't as capable as security groups. For more information about Power BI permissions, see the later articles in [this series on security planning](powerbi-implementation-planning-security-overview.md).
 - **Power BI tenant settings:** You can only use security groups (including mail-enabled security groups) when allowing or disallowing groups of users to work with Power BI [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
-- **Advanced Azure AD features:** Certain types of advanced features aren't supported for all group types. For example, you might want to manage group membership dynamically based on an attribute in Azure AD (such as the [department for a user](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal#to-add-or-change-profile-information), or even a [custom attribute](/azure/active-directory/fundamentals/custom-security-attributes-overview)). Only Microsoft 365 groups and security groups support dynamic group memberships. Or, if you want to nest a group within a group, be aware that Microsoft 365 groups don't support that capability.
+- **Advanced Microsoft Entra features:** Certain types of advanced features aren't supported for all group types. For example, you might want to manage group membership dynamically based on an attribute in Microsoft Entra ID (such as the [department for a user](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal#to-add-or-change-profile-information), or even a [custom attribute](/azure/active-directory/fundamentals/custom-security-attributes-overview)). Only Microsoft 365 groups and security groups support dynamic group memberships. Or, if you want to nest a group within a group, be aware that Microsoft 365 groups don't support that capability.
 - **Managed differently:** Your request to create or manage a group might be routed to a different administrator based on the type of group (mail-enabled security groups and distribution groups are managed in Exchange). Therefore, your internal process will differ depending on the type of group.
 
 ### Group naming convention

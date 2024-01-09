@@ -23,7 +23,7 @@ To use RLS in a paginated report, you first [create parameters](#create-a-parame
 - Use [UserID in a query](#use-userid-in-a-query).
 
     > [!NOTE]  
-    > Value for UserID expression during report preview in Power BI Report Builder could be in a different format than the value for UserID expression when run in a report on the Power BI service. It depends upon whether the computer running Power BI Report Builder uses Active Directory or Azure Active Directory.
+    > Value for UserID expression during report preview in Power BI Report Builder could be in a different format than the value for UserID expression when run in a report on the Power BI service. It depends upon whether the computer running Power BI Report Builder uses Active Directory or Microsoft Entra ID.
 
 ## Prerequisites
 
