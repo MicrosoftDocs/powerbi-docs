@@ -62,8 +62,9 @@ ms.reviewer: saurkumar
   
      Changing the order of a subreport parameter does not affect the processing of the subreport.  
   
-## Next steps  
- [Subreports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs)   
- [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)  
+## Related content
+
+- [Subreports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/subreports-report-builder-and-ssrs)   
+- [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)  
   
   

@@ -183,8 +183,9 @@ To discard all the changes you made on a Formatting card, select **Reset to defa
 ## Give us your feedback
 Do you have a tip you’d like to share? Send it our way, and we’ll see about including it here.
 
-## Next steps
-[Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
+## Related content
+
+- [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 [Sharing reports](../collaborate-share/service-share-reports.md).
 

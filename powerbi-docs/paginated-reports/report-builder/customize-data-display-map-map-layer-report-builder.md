@@ -142,6 +142,7 @@ ms.reviewer: monaraya
   
  For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
-## Next steps 
- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md)
- [Maps &#40;Power BI Report Builder&#41;](maps-report-builder.md)
+## Related content
+
+- [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md)
+- [Maps &#40;Power BI Report Builder&#41;](maps-report-builder.md)

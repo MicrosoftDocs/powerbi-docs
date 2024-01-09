@@ -184,7 +184,7 @@ Turn **Data labels** Off, and turn **Total labels** On. Power BI now displays th
 
 These are just a few of the formatting tasks that are possible. Open a report in Editing mode and have fun exploring the Formatting pane to create beautiful and informative visualizations.
 
-## Next steps
+## Related content
 
 For more information, see the following articles:
 

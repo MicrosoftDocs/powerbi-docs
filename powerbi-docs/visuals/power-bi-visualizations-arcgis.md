@@ -508,7 +508,7 @@ The following table compares the standard features available to all Power BI use
 | | A maximum of two variables | A maximum of five variables |
 | | Support for **Drive Time** and **Radius** settings | Support for all distance and travel settings |
 
-## Next steps
+## Related content
 
 * [Interact with an ArcGIS map that has been shared with you](../consumer/end-user-arcgis.md)
 * [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  

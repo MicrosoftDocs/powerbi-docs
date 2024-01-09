@@ -470,7 +470,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
 1. Select **Share** at the top of the report to share your report with others.
 
-## Next steps 
+## Related content 
 
 - Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
 - Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)
