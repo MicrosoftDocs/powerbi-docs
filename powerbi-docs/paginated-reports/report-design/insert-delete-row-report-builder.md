@@ -50,12 +50,13 @@ You can add or delete rows in a tablix data region in a paginated report. The ta
   
 -   Right-click a row group cell in the row group area of a tablix data region where you want to delete a row, and then select **Delete Rows**.  
   
-## Next steps  
- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
- [Understand Groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md)   
- [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
- [Matrices &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
- [Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)     
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
+- [Understand Groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md)   
+- [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
+- [Matrices &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
+- [Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)     
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

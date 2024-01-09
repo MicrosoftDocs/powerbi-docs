@@ -60,11 +60,12 @@ ms.reviewer: saurkumar
   
  As you view each page of the report that the tablix data region spans, the static tablix members repeat on each page.  
   
-## Next steps  
- [Finding, Viewing, and Managing Reports &#40;Power BI Report Builder &#41;](/sql/reporting-services/report-builder/finding-viewing-and-managing-reports-report-builder-and-ssrs)   
- [Export Reports &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder/export-reports-report-builder.md)   
- [Control Page Breaks, Headings, Columns, and Rows &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md)   
- [Display Headers and Footers with a Group &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/display-headers-footers-with-group-report-builder-service.md)   
- [Keep Headers Visible When Scrolling Through a Report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/keep-headers-visible-when-scrolling-through-report-report-builder-service.md)  
+## Related content
+
+- [Finding, Viewing, and Managing Reports &#40;Power BI Report Builder &#41;](/sql/reporting-services/report-builder/finding-viewing-and-managing-reports-report-builder-and-ssrs)   
+- [Export Reports &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder/export-reports-report-builder.md)   
+- [Control Page Breaks, Headings, Columns, and Rows &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md)   
+- [Display Headers and Footers with a Group &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/display-headers-footers-with-group-report-builder-service.md)   
+- [Keep Headers Visible When Scrolling Through a Report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/keep-headers-visible-when-scrolling-through-report-report-builder-service.md)  
   
   

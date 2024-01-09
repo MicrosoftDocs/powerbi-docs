@@ -55,13 +55,14 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
   
      Run the report. The report displays a hierarchical view of the grouped data.  
   
-## Next steps  
- [Creating recursive hierarchy groups &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md)   
- [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
- [Aggregate functions reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md)   
- [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
- [Matrices &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
- [Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)   
- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Creating recursive hierarchy groups &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md)   
+- [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
+- [Aggregate functions reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md)   
+- [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
+- [Matrices &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
+- [Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)   
+- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

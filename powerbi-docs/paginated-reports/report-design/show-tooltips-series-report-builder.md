@@ -24,10 +24,11 @@ ms.reviewer: saurkumar
   
 2.  Select **Series Data** and, for the **ToolTip** property, type in a string or expression. You can use any chart-specific keyword to represent another element on the chart. For more information, see [Formatting data points on a chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md).  
   
-## Next steps  
- [Formatting data points on a chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md)   
- [Change the text of a legend item &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md)   
- [Formatting series colors on a chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-series-colors-on-chart-report-builder.md)   
- [Add a drillthrough action on a report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)  
+## Related content
+
+- [Formatting data points on a chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-data-points-on-chart-report-builder.md)   
+- [Change the text of a legend item &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/chart-legend-change-item-text-report-builder.md)   
+- [Formatting series colors on a chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/formatting-series-colors-on-chart-report-builder.md)   
+- [Add a drillthrough action on a report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)  
   
   
