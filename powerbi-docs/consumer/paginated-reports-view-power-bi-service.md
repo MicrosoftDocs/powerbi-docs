@@ -3,12 +3,12 @@ title: "View a paginated report in the Power BI service"
 description: Learn how you can view a paginated report in the Power BI service that has parameters and then export it to  a different format.  
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: maggies
+ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View a paginated report
 ms.topic: how-to
-ms.date: 12/15/2023
+ms.date: 01/08/2024
 ---
 
 # View a paginated report in the Power BI service
@@ -64,7 +64,7 @@ You can also export paginated reports to many formats:
 - Sort:
   
       - You can only sort on one column at a time.
-      - If a report was created on the service (before December 2023), you will have to edit the report for sorting to be available during consumption.
+      - If a report was created in the service before December 2023, you have to edit the report for sorting to be available during consumption.
 
 ## Next steps
 
