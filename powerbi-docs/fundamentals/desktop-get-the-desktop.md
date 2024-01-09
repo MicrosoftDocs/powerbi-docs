@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 01/08/2024
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -135,7 +135,6 @@ You can also use the following syntax parameters, which you specify with a `prop
 |`INSTALLDESKTOPSHORTCUT`  | A value of `1` adds a shortcut to the Windows desktop. |
 |`INSTALLLOCATION`  | The file path where you want Power BI Desktop installed. |
 |`LANGUAGE`   | The locale code, for example, `en-US`, `de-DE`, `pr-BR` to force the default language of the application. If you don't specify the language, Power BI Desktop uses the Windows OS language. You can change this setting in the **Options** dialog. |
-|`REG_SHOWLEADGENDIALOG` | A value of `0` disables the dialog that appears before you sign in to Power BI Desktop. |
 |`DISABLE_UPDATE_NOTIFICATION`| A value of `1` disables update notifications. |
 
 For example, you can run Power BI Desktop with the following options and parameters to install without any user interface, use the German language:
