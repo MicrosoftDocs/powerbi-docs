@@ -77,7 +77,7 @@ Make the following code changes:
 
 * **Authorization code change**
 
-  * If you're using a *master user* in the [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) app, change the acquire token code. Read [embed with service principal](embed-service-principal.md) to learn about creating an app-only Azure AD token.
+  * If you're using a *master user* in the [Microsoft Entra ID](pbi-glossary.md#azure-ad-azure-active-directory) app, change the acquire token code. Read [embed with service principal](embed-service-principal.md) to learn about creating an app-only Microsoft Entra token.
   * If you're using a *service principal* and you created a new one for profiles, adjust the code to use the correct service principal ID and secrets.
 
 * **Management code change**

@@ -62,6 +62,8 @@
       href: end-user-bookmarks.md
     - name: "Add a spotlight to a report"
       href: end-user-spotlight.md
+    - name: "Set an alert on a report"
+      href: business-user-set-alerts.md
     - name: "Personalize a visual"
       href: end-user-personalize-visuals.md
     - name: "Explore your data in the Power BI service"
@@ -72,8 +74,6 @@
     items: 
     - name: "Types of visualizations"
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: "Copy a visual and paste it elsewhere"
-      href: end-user-copy-paste.md
     - name: "Drill down in a visualization"
       href: end-user-drill.md
     - name: "How to use an ArcGIS map in Power BI"

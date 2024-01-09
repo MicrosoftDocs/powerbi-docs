@@ -95,7 +95,7 @@ For these APIs:
 
 ## Considerations and limitations
 
-* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. Therefore, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Microsoft Entra token used to call the `GenerateToken` API. Therefore, if you use the same Microsoft Entra token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
 
 * If the semantic model and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
 

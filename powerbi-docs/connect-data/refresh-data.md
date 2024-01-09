@@ -330,7 +330,7 @@ Note that Power BI not only sends notifications on refresh failures but also whe
 To resume scheduled refresh, visit a report or dashboard built using this semantic model or manually refresh the semantic model using the **Refresh Now** option.
 
 > [!NOTE]
-> Sending refresh notifications to external users is not supported. The recipients you specify in the **Email these users when the refresh fails** textbox must have accounts in your Azure Active Directory tenant. This limitation applies to both semantic model refresh and dataflow refresh.
+> Sending refresh notifications to external users is not supported. The recipients you specify in the **Email these users when the refresh fails** textbox must have accounts in your Microsoft Entra tenant. This limitation applies to both semantic model refresh and dataflow refresh.
 
 ### Checking refresh status and history
 
