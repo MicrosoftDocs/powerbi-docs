@@ -60,11 +60,11 @@ If your volume licensing has moved to the Microsoft 365 Admin Center, you can fi
 
     :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
 
-## Next steps
+## Related content
 
-[Install Power BI Report Server](install-report-server.md)  
-[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+* [Install Power BI Report Server](install-report-server.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
