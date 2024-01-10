@@ -450,7 +450,7 @@ After you save your dataflow, the model is automatically invoked when the datafl
 * There are some known issues with using Gateway with AutoML and Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models and AI functions.
 * If your AI work with dataflows fails, you may need to enable Fast Combine when using AI with dataflows. Once you have imported your table and *before* you begin to add AI features, select **Options** from the Home ribbon, and in the window that appears select the checkbox beside *Allow combining data from multiple sources* to enable the feature, then select **OK** to save your selection. Then you can add AI features to your dataflow.
 
-## Next steps
+## Related content
 
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles might also be useful.
 

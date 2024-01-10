@@ -67,7 +67,7 @@ Selecting a datamart from the list enables the **Connect** button in the window.
 :::image type="content" source="media/datamarts-discovery/datamarts-discovery-06.png" alt-text="Screenshot of being connected to the underlying semantic model from a datamart selected from the Power BI Desktop data hub." lightbox="media/datamarts-discovery/datamarts-discovery-06.png":::
 
 
-## Next steps
+## Related content
 This article provided information about creating reports using datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

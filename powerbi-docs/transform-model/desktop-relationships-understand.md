@@ -285,7 +285,7 @@ The following list orders filter propagation performance, from fastest to slowes
 3. Many-to-many cardinality relationships
 4. Cross source group relationships
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

@@ -47,7 +47,7 @@ Power BI recognizes these barcode formats if you can tag them in a Power BI repo
 * Interleaved2of5Code
 * ITF14Code
 
-## Next steps
+## Related content
 
 * [Scan barcodes from the mobile app to get filtered data](../consumer/mobile/mobile-apps-scan-barcode.md)
 * [Issues with scanning a barcode](../consumer/mobile/mobile-apps-scan-barcode.md#issues-with-scanning-a-barcode)

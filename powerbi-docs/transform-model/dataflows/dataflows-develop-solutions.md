@@ -188,7 +188,7 @@ Many customers today have a need to secure your data assets behind a private end
 | Read virtual network data sources through an on-premises gateway. | Supported through an on-premises gateway |
 | Write data to a sensitivity label account behind a virtual network by using an on-premises gateway. | Not yet supported |
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 
