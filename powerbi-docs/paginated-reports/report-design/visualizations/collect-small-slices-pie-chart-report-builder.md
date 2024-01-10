@@ -74,7 +74,7 @@ Pie charts with too many slices can look cluttered. Learn to collect many small 
 > [!NOTE]  
 > You can't format the secondary pie chart. For this reason, it is strongly recommended to use the first approach when collecting pie slices.  
   
-## Next steps
+## Related content
 
 - [Tutorial: Add a Pie Chart to Your Report (Report Builder)](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)
 - [Pie Charts &#40;Power BI Report Builder&#41;](pie-charts-report-builder.md)
