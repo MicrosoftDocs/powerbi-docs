@@ -23,13 +23,13 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 Use Q&A to explore your data using natural language capabilities and receive answers in the form of charts and graphs. Unlike a search engine, Q&A only provides results about the data in Power BI semantic models.
 
-To learn how to use Q&A, see [Explore your data and create visuals using Q&A](../natural-language/q-and-a-intro.md)
+To learn how to use Q&A, see [Explore your data and create visuals using Q&A.](../natural-language/q-and-a-intro.md)
 
 ## Which visualizations does Q&A use?
 
 Q&A picks the best visual based on the data. Sometimes data is defined as a certain type or category, which helps Q&A know how to display it. For example, if data is defined as a date type, it's more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
 
-If you want a specific type of visual, tell Q&A which one to use by adding it to your question. For example, "show me total sales by category as a treemap". But keep in mind that it isn't always possible for Q&A to display the data using the visual type you requested. Q&A prompts you with a list of workable visual types.
+If you want a specific type of visual, tell Q&A which one to use by adding it to your question. For example, "show me total sales by category as a treemap." But keep in mind that it isn't always possible for Q&A to display the data using the visual type you requested. Q&A prompts you with a list of workable visual types.
 
 :::image type="content" source="media/end-user-q-and-a/power-bi-treemap.png" alt-text="{alt-text}":::
 
@@ -37,11 +37,11 @@ If you want a specific type of visual, tell Q&A which one to use by adding it to
 
 ### Use Q&A on a dashboard
 
-Q&A is available on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. If the dashboard designer has given you edit permissions, save the visual by [pinning it to your dashboard](../create-reports/service-dashboard-pin-tile-from-q-and-a.md). 
+Q&A is available on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. If the dashboard designer gave you edit permissions, save the visual by [pinning it to your dashboard](../create-reports/service-dashboard-pin-tile-from-q-and-a.md). 
 
 ![Screenshot of Ask a question about your data in a red box on the visual dashboard.](media/end-user-q-and-a/power-bi-qna.png)
 
-To learn more, see [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md)
+To learn more, see [Use Q&A on a dashboard.](../natural-language/end-user-q-and-a-tutorial.md)
 
 ### Use Q&A in a report
 
@@ -49,7 +49,7 @@ Q&A is available in reports if the report designer added a specific type of inte
 
 ![Screenshot of the Q&A question box highlighted by a red box on the report.](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
-To learn more, see [Use Q&A in a report](../natural-language/power-bi-tutorial-q-and-a.md)
+To learn more, see [Use Q&A in a report.](../natural-language/power-bi-tutorial-q-and-a.md)
 
 ### Use Q&A in mobile apps and embedded reports
 
@@ -73,7 +73,7 @@ Choose **Power BI Settings** > **Dashboards**. Highlight the dashboard that does
 
 **Question**: I'm not getting the results I'd like to see when I type a question.
 
-**Answer**: Select the option to contact the report or dashboard owner. You can find the report or dashboard owner from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are [many things the owner can do to improve the Q&A results](../natural-language/q-and-a-tooling-intro.md). For example, the owner can rename columns in the semantic model to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the semantic model, they can also come up with helpful questions and add them to the Q&A suggested questions.
+**Answer**: Select the option to contact the report or dashboard owner. You can find the report or dashboard owner from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header. There are [many things the owner can do to improve the Q&A results](../natural-language/q-and-a-tooling-intro.md). For example, the owner can rename columns in the semantic model to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the semantic model, they can also come up with helpful questions and add them to the Q&A suggested questions.
 
 ![Screenshot of Display contact information.](media/end-user-q-and-a/power-bi-contact.png)
 
