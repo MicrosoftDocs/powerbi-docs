@@ -31,6 +31,6 @@ If you're using an old version of the Capacity Metrics app, you have one of the 
 
 You need to uninstall the old app and install the [new Fabric Capacity Metrics app](/fabric/enterprise/metrics-app-install?tabs=1st).
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

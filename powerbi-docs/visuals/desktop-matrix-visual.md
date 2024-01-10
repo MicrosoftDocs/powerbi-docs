@@ -241,8 +241,8 @@ There is currently no way to hide blank rows or identical parent and child value
 
 * Scroll bars will appear to help you scroll across body cells which don't all fit on the visual at once, but row header columns are fixed on the matrix visual and will not scroll.  If you include too many row headers in your matrix such that the body cells are hidden, scrolling will not reveal the body cells. Instead, reduce the number of row headers on your visual, adjust column width, reduce font size, or otherwise ensure the matrix body cells are visible in order to access your value data. 
 
-## Next steps
+## Related content
 
-[Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
+* [Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
 
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

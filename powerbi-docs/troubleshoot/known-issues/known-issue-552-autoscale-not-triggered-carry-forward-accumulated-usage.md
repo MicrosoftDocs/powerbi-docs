@@ -35,7 +35,7 @@ If you set up a maximum value of Autoscale v-cores, you might see the Autoscale 
 
 If you plan to use Autoscale to avoid possible throttling, enable it before the capacity starts throttling.  Enabling Autoscale ensures that the necessary Autoscale v-cores are activated to avoid overages in the capacity.  Our developers are working on improving this experience. This article will be updated when the fix is released.
 
-## Next steps
+## Related content
 
 - [Using Autoscale with Power BI Premium](/power-bi/enterprise/service-premium-auto-scale)
 - [Fabric capacity throttling logic](/fabric/enterprise/throttling)

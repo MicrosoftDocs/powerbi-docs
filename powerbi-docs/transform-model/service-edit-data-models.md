@@ -283,7 +283,7 @@ Full accessibility isn’t currently supported for data model editing in the Pow
 
 
 
-## Next steps
+## Related content
 This article provided information about the preview for editing data models in the Power BI service. For more information on data modeling in Power BI, see the following resources:
 
 * [Work with Modeling view](desktop-modeling-view.md)

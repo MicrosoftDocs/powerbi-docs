@@ -28,6 +28,6 @@ You were assigned the **Contributor** role to the workspace associated with the 
 
 To work around this issue by giving you access to update the organizational app, a workspace admin can temporarily grant you **Member** or **Admin** permissions on the workspace.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

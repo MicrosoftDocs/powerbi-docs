@@ -234,7 +234,7 @@ Here is a list of the customization options that are available for each visualiz
 | Treemap | Yes | Yes | Yes |n/a |
 | Waterfall | Yes | Yes | Yes |n/a |
 
-## Next steps
+## Related content
 
 - [Customize X-Axis and Y-Axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
 

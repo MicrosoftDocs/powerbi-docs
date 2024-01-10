@@ -28,6 +28,6 @@ When trying to run the Power BI Embedded setup tool, the landing page’s button
 
 You can register an application using the Azure portal and create Power BI content (workspaces and reports) in the Power BI Portal or using Power BI REST APIs.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)
