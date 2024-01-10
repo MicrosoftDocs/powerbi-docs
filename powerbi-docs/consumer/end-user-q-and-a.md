@@ -7,7 +7,8 @@ ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 09/28/2023
+ms.date: 01/10/2024
+ms.custom: Sales and marketing app, Retail analysis
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI business users
@@ -62,13 +63,13 @@ Q&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [P
 
 ![Screenshot of the Power BI toolbar with a red box highlight around the settings icon.](media/end-user-q-and-a/power-bi-cog.png)
 
-Choose **Power BI Settings** > **Dashboards**. Make sure there's a check mark next to **Show the Q&A search box on this dashboard**.
+Choose **Power BI Settings** > **Dashboards**. Highlight the dashboard that doesn't have a Q&A question box.Make sure there's a check mark next to **Show the Q&A search box on this dashboard**.
 
-![Screenshot of Settings Dashboards enabling Q&A settings for dashboard.](media/end-user-q-and-a/power-bi-om.png)  
+![Screenshot of Settings Dashboards enabling Q&A settings for dashboard.](media/end-user-q-and-a/power-bi-qna-checkbox.png)  
 
 **Answer 2**: Sometimes you don't have access to the settings. If the dashboard owner or your administrator turned Q&A off, check with them to see if it's OK to turn it back on. To look up the owner, select the name of the dashboard from the top menu bar.
 
-![Screenshot of the top menu bar on a report with the drop-down featuring the report admin name.](media/end-user-q-and-a/power-bi-owner.png)
+![Screenshot of the top menu bar on a report with the drop-down featuring the report admin name.](media/end-user-q-and-a/power-bi-owners.png)
 
 **Question**: I'm not getting the results I'd like to see when I type a question.
 
@@ -80,10 +81,10 @@ Choose **Power BI Settings** > **Dashboards**. Make sure there's a check mark ne
 
 Microsoft might use your questions to improve Power BI. For more information about how Microsoft uses your questions, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
 
-## Next steps
+## Related content
 
-To learn how to ask your own natural language questions and create answers in the form of visuals, see [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md) or [Use Q&A in a report](../natural-language/power-bi-tutorial-q-and-a.md).
+- To learn how to ask your own natural language questions and create answers in the form of visuals, see [Use Q&A on a dashboard](../natural-language/end-user-q-and-a-tutorial.md) or [Use Q&A in a report](../natural-language/power-bi-tutorial-q-and-a.md).
 
-For tips on forming questions, see [How to ask questions with Q&A](end-user-q-and-a-tips.md).
+- For tips on forming questions, see [How to ask questions with Q&A](end-user-q-and-a-tips.md).
 
-If you have edit permissions, learn how to [create a Q&A visual on a dashboard](../create-reports/power-bi-visualization-introduction-to-q-and-a.md) and [add a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md).
+- If you have edit permissions, learn how to [create a Q&A visual on a dashboard](../create-reports/power-bi-visualization-introduction-to-q-and-a.md) and [add a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md).
