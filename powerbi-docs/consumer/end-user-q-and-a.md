@@ -63,7 +63,7 @@ Q&A is available in [Power BI iOS apps](mobile/mobile-apps-ios-qna.md) and in [P
 
 ![Screenshot of the Power BI toolbar with a red box highlight around the settings icon.](media/end-user-q-and-a/power-bi-cog.png)
 
-Choose **Power BI Settings** > **Dashboards**. Highlight the dashboard that doesn't have a Q&A question box.Make sure there's a check mark next to **Show the Q&A search box on this dashboard**.
+Choose **Power BI Settings** > **Dashboards**. Highlight the dashboard that doesn't have a Q&A question box. Make sure there's a check mark next to **Show the Q&A search box on this dashboard**.
 
 ![Screenshot of Settings Dashboards enabling Q&A settings for dashboard.](media/end-user-q-and-a/power-bi-qna-checkbox.png)  
 
