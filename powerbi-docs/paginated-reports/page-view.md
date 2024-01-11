@@ -61,7 +61,7 @@ Print Layout is supported in Google Chrome and Microsoft Edge browsers. Make sur
 Print Layout isn't supported in Internet Explorer and Safari, so the option is disabled. It also isn't supported in browsers on mobile devices, or in the native Power BI mobile apps.  
 
 
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

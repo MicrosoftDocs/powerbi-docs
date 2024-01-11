@@ -515,6 +515,6 @@ To avoid this condition, use one of the following strategies:
   
      This code helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the *Color* property of the text box to conditionally display text based on whether the values are greater than or less than 0.  
   
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)

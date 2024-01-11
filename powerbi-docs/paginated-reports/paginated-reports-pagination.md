@@ -101,7 +101,7 @@ These properties are useful when you export reports to Excel workbooks. Use the 
   
 For more information about how these properties work when reports are exported to Excel, see [Exporting to Microsoft Excel](report-builder/export-microsoft-excel-report-builder.md).  
   
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md)

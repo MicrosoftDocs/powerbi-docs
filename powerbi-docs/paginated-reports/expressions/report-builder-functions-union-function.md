@@ -73,7 +73,7 @@ The following table shows examples of **SqlGeometry** expressions and **Union** 
 =Union(Fields!PolygonDefinition.Value, "Group1")
 ```
 
-## Next steps
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

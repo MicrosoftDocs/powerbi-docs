@@ -125,7 +125,7 @@ Here are some other features that aren't supported:
 - Data-driven subscriptions for paginated reports in the Power BI service.
 
  
-## Next steps
+## Related content
 
 - [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)

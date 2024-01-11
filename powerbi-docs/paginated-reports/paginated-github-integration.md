@@ -72,6 +72,6 @@ See the **Prerequisites** section in [Get started creating paginated reports in 
 
 - The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report builder and republish the paginated report to the Power BI service.
 
-## Next steps
+## Related content
 
 - [Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration)

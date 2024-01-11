@@ -80,7 +80,7 @@ Paginated reports that connect to Power BI semantic models follow the rules for 
 |Row-level security | You need *Read* permission assigned for each user viewing the report at the dataset level to have it enforced   |
 |Using hidden datasets | Not supported. |
 
-## Next steps
+## Related content
 
 - [Create an embedded dataset for a paginated report in the Power BI service](paginated-reports-create-embedded-dataset.md).
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

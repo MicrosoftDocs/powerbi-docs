@@ -52,7 +52,7 @@ CountRows(scope, recursive)
 ="Number of rows: " & CountRows("GroupbyCategory")  
 ```  
   
-## Next steps
+## Related content
 
 - [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)
 - [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)

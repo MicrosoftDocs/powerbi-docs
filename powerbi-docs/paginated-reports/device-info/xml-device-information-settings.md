@@ -27,7 +27,7 @@ ms.author: maggies
 |**FileExtension**|The file extension to use for the generated file.||  
 |**Schema**|A value of **true** indicates that an XML schema is rendered. The default value is **false**.|Indicates whether the XML schema definition (XSD) is rendered or whether the actual XML data is rendered.|  
   
-## Next steps
+## Related content
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
 
