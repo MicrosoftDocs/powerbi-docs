@@ -151,6 +151,6 @@ The remainder of the information protection and DLP content is organized into th
 - [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md)
 - [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md)
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-organization-level-info-protection.md), learn about getting started with information protection with organization-level planning activities for Power BI.

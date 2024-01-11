@@ -400,6 +400,6 @@ When a content creator or owner requests a new group, ideally they use a form to
 > - **Review each tenant setting:** For each tenant setting, determine whether it'll be allowed or disallowed for a specific set of users. Determine whether a new group needs to be created to set up the tenant setting.
 > - **Create and publish guidance for users about groups:** Include documentation for content creators that includes requirements, or preferences, for using groups. Ensure that they know what to ask for when they request a new group. Publish this information to your centralized portal and training materials.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-security-report-consumer-planning.md), learn about ways to securely deliver content to read-only report consumers.

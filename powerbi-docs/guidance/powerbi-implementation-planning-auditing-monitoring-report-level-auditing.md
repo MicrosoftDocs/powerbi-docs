@@ -165,6 +165,6 @@ Some organizations have specific requirements for [endorsed](/power-bi/collabora
 > - **Ensure support and skills mentoring are available:** Ensure that your report creators know how to get assistance to resolve performance issues.
 > - **Include in requirements to certify reports:** Decide whether you want to include Performance Analyzer results as a prerequisite to certifying (endorsing) reports. If so, ensure that this requirement is documented and communicated to report creators.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md), learn about data-level auditing.

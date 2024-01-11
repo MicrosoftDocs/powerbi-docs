@@ -43,7 +43,7 @@ You can design the dataflow to encapsulate the source data and transformations. 
 
 In the example, if **Query1** is redesigned as a dataflow entity, **Query2**, **Query3**, and **Query4** can use it as a data source. With this design, the entity sourced by **Query1** will be evaluated only once.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

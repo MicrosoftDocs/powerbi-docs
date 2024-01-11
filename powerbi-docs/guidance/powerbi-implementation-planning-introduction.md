@@ -91,7 +91,7 @@ This series is certain to be helpful for organizations that are in their early s
 
 The Power BI implementation planning articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-overview.md), learn about usage scenarios that describe how you can use Power BI in diverse ways.
 

@@ -167,7 +167,7 @@ Lastly, it should be clear to content consumers to know who to contact with ques
 
 For more information about user support, with a focus on the resolution of issues, see [User support](fabric-adoption-roadmap-user-support.md) in the Fabric adoption roadmap.
 
-## Next steps
+## Related content
 
 In the [final article in this series](powerbi-migration-learn-from-customers.md), learn from customers when migrating to Power BI.
 

@@ -41,6 +41,6 @@ The focus for this series of articles is on security and privacy. It's organized
 > [!NOTE]
 > There are additional security planning topics not covered by these articles. We recommend that you also see [Premium capacity permissions](/power-bi/enterprise/service-admin-premium-manage#manage-user-permissions) and [Manage security roles of an on-premises data gateway](/data-integration/gateway/manage-security-roles).
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-security-tenant-level-planning.md), learn about tenant-level security planning.
