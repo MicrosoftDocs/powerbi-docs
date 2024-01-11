@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 01/11/2024
 LocalizationGroup: Share your work
 ---
 # Power BI semantic model experience in Excel
@@ -22,7 +22,7 @@ In Excel Desktop or Excel for the web, you can discover all the Power BI semanti
 
 - Your organization’s tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-semantic-models-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
 - For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
-- You must have Excel Desktop should be an updated version of Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
+- Your version of Excel Desktop must be an updated version of Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
 
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
 
