@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/11/2021
+ms.date: 01/11/2024
 ---
 
 # Tutorial: Create an R-powered Power BI visual
@@ -246,23 +246,39 @@ We'll use the `method` argument to configure the shape of the data points. The d
 2. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
 
     ```typescript
+
     "use strict";
 
-    import { dataViewObjectsParser } from "powerbi-visuals-utils-dataviewutils";
-    import DataViewObjectsParser = dataViewObjectsParser.DataViewObjectsParser;
+    import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    export class VisualSettings extends DataViewObjectsParser {
-      public rcv_script: rcv_scriptSettings = new rcv_scriptSettings();
-      public settings: CorrPlotSettings = new CorrPlotSettings();
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
+    import FormattingSettingsSlice = formattingSettings.Slice;
+    import FormattingSettingsModel = formattingSettings.Model;
+
+    /**
+
+    * RCV Script Formatting Card
+    */
+    class rcvScriptCardSettings extends FormattingSettingsCard {
+        provider: FormattingSettingsSlice = undefined;
+        source: FormattingSettingsSlice = undefined;
+
+        name: string = "rcv_script";
+        displayName: string = "rcv_script";
+        slices: Array<FormattingSettingsSlice> = [this.provider, this.source];
     }
 
-    export class CorrPlotSettings {
-      public method: string = "circle";
-    }
+    /**
 
-    export class rcv_scriptSettings {
-      public provider;
-      public source;
+    * visual settings model class
+    *
+
+    */
+    export class VisualFormattingSettingsModel extends FormattingSettingsModel {
+        // Create formatting settings model formatting cards
+        rcvScriptCard = new rcvScriptCardSettings();
+
+        cards = [this.rcvScriptCard];
     }
     ```
 
