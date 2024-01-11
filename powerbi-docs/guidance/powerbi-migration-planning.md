@@ -112,7 +112,7 @@ Once sufficient information is available from the requirements (which were descr
 > [!TIP]
 > Labor costs—salaries and wages—are usually among the highest expenses in most organizations. Although it can be difficult to accurately estimate, productivity enhancements have an excellent return on investment (ROI).
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-proof-of-concept.md), learn about Stage 3, which is concerned with conducting a proof of concept to mitigate risk and address unknowns as early as possible when migrating to Power BI.
 

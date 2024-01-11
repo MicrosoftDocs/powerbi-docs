@@ -125,7 +125,7 @@ The following table visual present statistics for each product sold. The **Quant
 
 ![Diagram showing that two products are listed in a table visual. In the "Different Countries Sold" column, Jeans is 1, and T-shirt is 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

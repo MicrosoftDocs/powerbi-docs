@@ -58,7 +58,7 @@ There are many compelling scenarios when you might favor developing a Power BI p
 - **Subscriptions**: Power BI can deliver paginated reports on a schedule as emails, with report attachments in any supported format.
 - **Per-user layouts**: You can create responsive report layouts based on the authenticated user who opens the report. You can design the report to filter data differently, hide data regions or visualizations, apply different formats, or set user-specific parameter defaults.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

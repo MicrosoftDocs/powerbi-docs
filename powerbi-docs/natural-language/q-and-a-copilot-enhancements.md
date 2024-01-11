@@ -44,7 +44,7 @@ We're continuously working to improve the quality of the report pages, including
 - When too many requests are sent to Copilot from various sources in a short span of time, requests may be subject to throttling. This may result in suggestions being generated for only a subset of the model.
 - Copilot may also not return results for terms for which it can't generate synonyms, or when its results are deemed inappropriate by our content filter.
 
-## Next steps
+## Related content
 
 Learn more about:
 
