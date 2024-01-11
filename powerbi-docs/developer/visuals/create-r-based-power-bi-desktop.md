@@ -308,7 +308,7 @@ We'll use the `method` argument to configure the shape of the data points. The d
 
 Now you can package the visual and import it to any Power BI report.
 
-1. Fill in the `displayName`, `supportUrl`, `description`, author's `name` and `email`, and any other important information in the `pbivis.json` file.
+1. Fill in the `displayName`, `supportUrl`, `description`, author's `name` and `email`, and any other important information in the `pbiviz.json` file.
 2. If you want to change the visual's icon on the visualization pane, replace the **icon.png** file in the **assets** folder.
 3. From the root directory of your visual run:
 
