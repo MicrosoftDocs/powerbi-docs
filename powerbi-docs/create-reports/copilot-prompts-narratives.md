@@ -15,6 +15,17 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+Before your business can start using Copilot capabilities in Power BI, you need to enable Copilot in Microsoft Fabric.
+
+> [!NOTE]
+>
+> - Your F64 or P1 capacity needs to be in one of the regions listed in this article, [Fabric region availability](../admin/region-availability.md). If it isn't, you can't use Copilot.
+> - Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](../admin/service-admin-portal-copilot.md) for details.
+> - If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](../admin/service-admin-portal-copilot.md) tenant setting in the Fabric Admin portal.
+> - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+
+## Sample prompts for narrative visuals
+
 Here are some examples of prompts that work well for creating narrative visuals with Copilot for Power BI. Use these prompts as examples.
 
 Each sample prompt is paired with a narrative that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a narrative that's exactly what you want.  
