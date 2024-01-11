@@ -100,7 +100,7 @@ A BI strategy can encompass many data culture and technical areas. However, when
 
 There are many ways to define a BI strategy. Typically, when you define a BI strategy, you begin with the priority areas that describe your BI goals. Based on these prioritized goals, you define specific, measurable objectives. To achieve these objectives, you build solutions and enact specific initiatives. You then incrementally scale your BI strategy to include more areas as you experience success.
 
-You The following diagram depicts how you can define your BI strategy at three different planning levels, as depicted in the following diagram.
+The following diagram depicts how you can define your BI strategy at three different planning levels, as depicted in the following diagram.
 
 :::image type="content" source="media/powerbi-implementation-planning-bi-strategy-overview/bi-strategy-overview-planning-levels.svg" alt-text="Diagram shows the three levels of a BI strategy. Concepts shown in the image are described in the table below." border="false":::
 

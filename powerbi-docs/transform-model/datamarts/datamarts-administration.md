@@ -75,7 +75,7 @@ The following limitations should be considered when using datamarts:
 * Currently datamarts don’t support the currency data type, and such data types are converted to float.
 * Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway.
 * Datamarts use port 1948 for connectivity to the SQL endpoint. Port 1433 needs to be open for datamarts to work.
-* Datamarts only support Microsoft Azure Active Directory (Azure AD) and do *not* support managed identities or service principals at this time.
+* Datamarts only support Microsoft Entra ID and do *not* support managed identities or service principals at this time.
 * Beginning February 2023, datamarts support any SQL client.
 * Datamarts aren't currently available in the following Azure regions:
     * West India
@@ -133,12 +133,3 @@ The following articles provide more information about datamarts and Power BI:
 For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
-
-
-
-
-
-
-
-
-

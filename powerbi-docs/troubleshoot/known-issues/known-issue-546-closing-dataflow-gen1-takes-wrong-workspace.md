@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 11/15/2023
+ms.date: 12/14/2023
 ms.custom: known-issue-546
 ---
 
@@ -16,7 +16,7 @@ When you open and close a Dataflow Gen1, you aren't redirected to the original w
 
 **APPLIES TO:** ✔️ Dataflow Gen1
 
-**Status:** Open
+**Status:** Fixed: December 13, 2023
 
 **Problem area:** Create and Author Data
 

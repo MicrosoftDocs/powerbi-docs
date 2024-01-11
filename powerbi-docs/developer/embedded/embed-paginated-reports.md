@@ -26,7 +26,7 @@ To get started, you need:
 
 * A [service principal](embed-service-principal.md)
 
-* Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
+* Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md) setup
 
 * A [capacity](#step-2---create-a-capacity)
 
@@ -36,7 +36,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 * A [Power BI Pro license](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.
 
-* You must have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+* You must have your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md) setup.
 
 * A Premium capacity. See [what size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)
 

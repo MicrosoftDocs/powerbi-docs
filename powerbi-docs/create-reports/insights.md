@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 08/04/2022
+ms.date: 01/08/2024
 LocalizationGroup: 
 ---
 # Find Insights in your reports (preview)
@@ -139,3 +139,13 @@ If no insights found are found, you see this message: “We didn’t find any in
 - RLS
 
 If no explanations are found, you see this message: “We didn’t find any significant explanations”. You can try bringing in more fields for the analysis.
+
+
+## Next steps
+
+For more information about insights, see the following articles:
+
+- [Apply insights in Power BI to explain fluctuations in visuals](desktop-insights.md)
+- [View data insights on dashboard tiles with Power BI](../consumer/end-user-insights.md)
+- [Generate data insights on your semantic model automatically with Power BI](service-insights.md)
+- [Use AI Insights in Power BI Desktop](../transform-model/desktop-ai-insights.md)

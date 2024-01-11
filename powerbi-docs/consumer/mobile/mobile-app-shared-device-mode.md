@@ -6,16 +6,16 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 01/09/2024
 ---
 
-# Shared device mode for the Power BI mobile app (preview)
+# Shared device mode for the Power BI mobile app
 
 Many organizations maintain a pool of mobile devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign-on (SSO) across applications and keeping users signed in on their device.
 
 This behavior isn't suitable for devices that are shared by multiple users. In the case of shared devices, employees expect to be able to pick out a device from the pool, "make it theirs" for the duration of their shift, and then, at the end of their shift, to be able to sign out from the device globally and have all their personal and company information removed so they can safely return the device to the pool.
 
-**Shared device mode**, a feature of Azure Active Directory (Azure AD), enables this functionality. It enables single sign-on and device-wide sign-out and clears the user's data to prevent unauthorized or unintended access by the next user.
+**Shared device mode**, a feature of Microsoft Entra ID, enables this functionality. It enables single sign-on and device-wide sign-out and clears the user's data to prevent unauthorized or unintended access by the next user.
 
 The Power BI mobile apps for iOS and Android devices support shared device mode. This means organizations can safely deploy the Power BI mobile app across their pool of shared devices without risk of exposing confidential data and personal information to unauthorized access after users sign out and return their device to the pool.
 

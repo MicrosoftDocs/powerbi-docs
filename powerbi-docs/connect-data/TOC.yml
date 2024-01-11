@@ -321,7 +321,7 @@
             href: service-gateway-sso-saml.md
           - name: "Test single sign-on (SSO) configuration"
             href: service-gateway-sso-test-configuration.md
-        - name: "Azure Active Directory SSO"
+        - name: "Microsoft Entra SSO"
           href: service-gateway-azure-active-directory-sso.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md

@@ -23,7 +23,7 @@ This glossary is a community effort. If you don't see a word here, please ask us
 
 **account**
 
-Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Azure Active Directory. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See *license* and *Premium*.
+Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Microsoft Entra ID. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See *license* and *Premium*.
 
 **Admin portal**
 

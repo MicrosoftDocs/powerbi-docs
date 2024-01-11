@@ -119,7 +119,7 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 If your Power BI environment requires you to sign in using multifactor authentication, you might be asked to sign in with a security device to verify your identity. This can occur if you didn't sign in to SharePoint Online using multifactor authentication. Your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Power BI doesn't support multifactor authentication with Azure Active Directory 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Power BI doesn't support multifactor authentication with Microsoft Entra ID 2.0. Users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 

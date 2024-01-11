@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 12/25/2023
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -100,7 +100,7 @@ Let's create a filled map by using location data from the Sales and Marketing Sa
 
    You can now convert the visual into a filled map.
 
-1. Select **Filled map** on the **Visualizations** pane to [convert the visual](power-bi-report-change-visualization-type.md).
+1. Select **Filled map** on the **Visualizations** pane to convert the visual.
 
    :::image type="content" source="media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png" alt-text="Screenshot that shows how to convert the visual to a filled map in Power BI Desktop.":::
 

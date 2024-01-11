@@ -43,7 +43,7 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 1. Share the semantic model with an external user. 
 
     > [!NOTE] 
-    > Only registered guest users in your Azure AD tenant can access the shared semantic model. Registered guest users will be tagged as **EXT** in their domain name to show they're an external guest.
+    > Only registered guest users in your Microsoft Entra tenant can access the shared semantic model. Registered guest users will be tagged as **EXT** in their domain name to show they're an external guest.
 
 1. External users need to have at least “Build” access to the semantic model to access semantic models in their own tenant. So, select the **Allow recipients to build content with the data associated with this semantic model** checkbox. 
 

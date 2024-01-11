@@ -22,7 +22,7 @@ This article is for administrators who can purchase services and per-user licens
 
 ## Who can purchase and assign licenses
 
-You must belong to an admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Azure Active Directory admin center or the Microsoft 365 admin center. For more information about admin roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+You must belong to an admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 The following roles are required to manage licensing for an organization.
 
@@ -77,7 +77,7 @@ Content created by a user who is assigned a PPU license can only be shared with 
 
 ## Subscription license types
 
-All user-based, commercial licenses from Microsoft are based on Azure Active Directory identities. To use the Power BI service, sign in with an identity that Azure Active Directory supports for commercial licenses. You can add Power BI to any Microsoft license that uses Azure Active Directory for identity services. Some licenses, such as Office 365 E5, include a Power BI Pro license.
+All user-based, commercial licenses from Microsoft are based on Microsoft Entra identities. To use the Power BI service, sign in with an identity that Microsoft Entra ID supports for commercial licenses. You can add Power BI to any Microsoft license that uses Microsoft Entra ID for identity services. Some licenses, such as Office 365 E5, include a Power BI Pro license.
 
 There are two kinds of Power BI subscription licenses for organizations: standard and premium.
 
@@ -90,13 +90,13 @@ To compare product features and pricing, see [Power BI pricing](https://powerbi.
 
 ## Guest user access
 
-You might want to distribute content to users who are outside of your organization. You can share content with external users by inviting them to view content as a guest. Azure Active Directory Business-to-business (Azure AD B2B) enables sharing with external guest users. Prerequisites:
+You might want to distribute content to users who are outside of your organization. You can share content with external users by inviting them to view content as a guest. Microsoft Entra Business-to-business (Microsoft Entra B2B) enables sharing with external guest users. Prerequisites:
 
 - The ability to share content with external users must be enabled
 
 - The guest user must have the proper licensing in place to view the shared content
 
-For more information about guest user access, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
+For more information about guest user access, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](service-admin-azure-ad-b2b.md).
 
 ## Purchase Power BI Pro licenses
 

@@ -52,7 +52,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Full-screen mode | Yes | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
 | R scripts and visuals | No | Yes | [Create R visuals](../create-reports/desktop-r-visuals.md) and run R scripts in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R scripts or visuals to Power BI Report Server.  |
 | Python scripts and visuals | No | Yes | [Create Python scripts](../connect-data/desktop-python-scripts.md) and visuals in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with Python scripts or visuals to Power BI Report Server. |
-| Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features |
+| Preview features | No | Yes |   |
 | Power BI visuals | Yes | Yes | [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) |
 | Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](https://aka.ms/pbidesktopstore) |
 | Data Privacy Levels | No | Yes | [Data Privacy Levels](../enterprise/desktop-privacy-levels.md) are available for reports in the Power BI service. In Power BI Report Server, use [Role definitions](/sql/reporting-services/security/role-definitions-predefined-roles). |

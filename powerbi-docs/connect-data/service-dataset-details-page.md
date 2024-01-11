@@ -162,7 +162,11 @@ Select **More options (...)** to switch from **Summarized data** to **Underlying
 
 :::image type="content" source="./media/service-dataset-details-page/dataset-details-page-data-switch.png" alt-text="Screenshot showing more options."
 
-## Next steps
+## Considerations and limitations
+
+Streaming datasets do not have a details page.
+
+## Related content
 
 * [Use semantic models across workspaces](service-datasets-across-workspaces.md)
 * [Create reports based on semantic models from different workspaces](service-datasets-discover-across-workspaces.md)
