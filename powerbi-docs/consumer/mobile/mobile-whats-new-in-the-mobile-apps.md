@@ -19,7 +19,7 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
-## January 2024
+## December 2023
 
 ### Shared device mode is now GA
 
