@@ -121,7 +121,7 @@ After you publish the report to the Power BI service, the date parameter that yo
 > [!TIP]
 > To test different locales easily in the Power BI service, add `&language="xx-XX"` to the URL. The Power BI service takes almost any two-part locale. This example uses New Zealand, "en-NZ". 
 
-## Related content
+## Next steps
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

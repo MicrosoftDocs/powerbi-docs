@@ -67,7 +67,7 @@ First(expression, scope)
 =First(Fields!ProductNumber.Value, "Category")  
 ```  
   
-## Related content
+## Next steps
 
 - [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)
 - [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)

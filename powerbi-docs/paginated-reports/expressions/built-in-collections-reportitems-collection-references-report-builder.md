@@ -45,7 +45,7 @@ ms.custom: updatefrequency5
  For example, a text box in a row that is in a parent group must not contain an expression that refers to the name of a text box in a child group row. Such an expression does not resolve to a value in the report because the child row text box is out of scope. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md).  
      
 
-## Related content
+## Next steps
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

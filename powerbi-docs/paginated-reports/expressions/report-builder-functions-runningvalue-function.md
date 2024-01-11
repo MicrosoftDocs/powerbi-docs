@@ -83,7 +83,7 @@ The following code example provides a running sum of the field named `Traffic Ch
 =RunningValue(Fields!Traffic Charges.Value, Sum, Nothing)
 ```
 
-## Related content
+## Next steps
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

@@ -32,7 +32,7 @@ The following table shows examples of filter equations that use different data t
 | `[Territory]` | **Text** | **LIKE** | `%o%th*` | All territory names that include North and South at the beginning of the name. |
 | `=LEFT(Fields!Subcat.Value,1)` | **Text** | **IN** | `B, C, T` | All subcategory values that begin with the letters B, C, or T. |
 
-## Related content
+## Next steps
 
 - [Report Parameters (Power BI Report Builder)](../parameters/paginated-reports-create-parameters.md)
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)

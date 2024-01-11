@@ -47,7 +47,7 @@ When publishing/uploading a report from Power BI Report Builder
 - When the **Report.Language** property is set to an expression, the browser or Power BI language settings are *not* overridden. For example, the **Report.Language** property is set to a report parameter (Example: **"=Parameters!SomeLanguageParameter"**).
 - Power BI language settings don't affect the rendering from the server, for example, dates and number formatting.
 
-## Related content
+## Next steps
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
