@@ -80,7 +80,7 @@ For more information about report paging, see [Pagination in Reporting Services 
 
 - Select **Page Setup** on the **Run** tab.
 
-## Next steps
+## Related content
 
 - [Print Reports (Power BI Report Builder)](/sql/reporting-services/report-builder/print-reports-report-builder-and-ssrs)
 - [Export Reports (Power BI Report Builder)](export-reports-report-builder.md)

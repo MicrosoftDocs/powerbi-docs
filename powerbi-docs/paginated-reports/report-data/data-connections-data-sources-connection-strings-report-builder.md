@@ -38,7 +38,7 @@ ms.reviewer: rpatkar
  > [!NOTE]  
  > Expression-based connection strings are not supported on Power BI service
 
-## Next steps
+## Related content
 
 - [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
 - [On-premises data gateway in-depth](../../connect-data/service-gateway-onprem-indepth.md)
