@@ -101,7 +101,7 @@ Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) prov
 
 You can monitor performance to identify bottlenecks. Slow queries—or report visuals—should be a focal point of continued optimization. Monitoring can be done at design time in Power BI Desktop, or on production workloads in Power BI Premium capacities. For more information, see [Monitoring report performance in Power BI](monitor-report-performance.md).
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
