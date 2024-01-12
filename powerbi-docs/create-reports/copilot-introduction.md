@@ -3,7 +3,7 @@ title: Overview of Copilot for Power BI (preview)
 description: Read all about how Copilot works in Power BI.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: guptamaya
+ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
@@ -25,6 +25,7 @@ Before your business can start using Copilot capabilities in Power BI, you need 
 > - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
 
 Copilot for Microsoft Fabric Public Preview is available in Power BI. It helps you use the transformational power of generative AI to help in you get the most from your data. This article provides an overview of the capabilities that were introduced for Power BI.
+
 ## Get started with report creation
 
 Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and create a narrative visual that generates a summary of your report using generative AI. The following sections cover the details of the features and how to use Copilot.
