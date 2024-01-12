@@ -17,20 +17,19 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which filters are applied to their version of the report.
-
-Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
-
-The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what filters applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
-
-:::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
-
 > [!IMPORTANT]
 > Dynamic subscriptions is currently in PREVIEW.
 > This information relates to a prerelease product that might 
 > be substantially modified before it's released. Microsoft 
 > makes no warranties, expressed or implied, with respect 
 > to the information provided here.
+
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which filters are applied to their version of the report.
+
+Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports. This article pertains to Power BI reports. To learn about dynamic subscriptions for paginated reports, see [Dynamic per recipient subscriptions for paginated reports](dynamic-subscriptions.md).
+
+The dynamic subscription filters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective filters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what filters applied. In the example used in this article, the separate semantic model contains employee data, including email addresses. Our task is to create subscriptions for managers. Each manager receives only data for their own employees.
+
 
 ## Prerequisites
 
@@ -40,7 +39,7 @@ The dynamic subscription filters are stored in a separate Power BI semantic mode
 
 ## Create a dynamic subscription
 
-Do you want to create one subscription that sends customized views of a report to your subscribers based on filters that you set? Perhaps you're a training director and want to send a report to various managers, each interested in the completion progress of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses for the managers. The other contains the training data and defines the mapping between recipients and filters. When it's time to send out the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what filters are used in that report.
+Do you want to create one subscription that sends customized views of a report to your subscribers based on filters that you set? Perhaps you're a regional director and want to send a report to various managers, each interested in the sales by each of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses of the managers. The other contains the training data and defines the mapping between recipients and filters. When it's time to send the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what filters are used in that report.
 
 For users familiar with SQL Server Reporting Services (SSRS), this feature is similar to data-driven subscriptions.
 
