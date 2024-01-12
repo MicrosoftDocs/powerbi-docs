@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 11/30/2023
+ms.date: 01/11/2024
 ms.custom: known-issue-571
 ---
 
@@ -16,7 +16,7 @@ Workspace admins can grant users with the **Contributor** role the ability to up
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: January 11, 2024
 
 **Problem area:** Share and Collaborate
 
