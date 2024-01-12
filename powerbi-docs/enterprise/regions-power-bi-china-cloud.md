@@ -30,7 +30,7 @@ The following table lists features of Power BI that are **not** yet available in
 | Power BI and Office | Teams - embed interactive Power BI report | Generally available | Not available | |
 |Power BI scalability | Large models | Generally available | Generally available in China East 2 and China North 2 only |  |
 
-## Next steps
+## Related content
 
 To learn more about Power BI operated by 21Vianet in China, see the following resources:
 

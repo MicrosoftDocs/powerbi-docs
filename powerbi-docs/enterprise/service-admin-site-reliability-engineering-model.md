@@ -143,7 +143,7 @@ Another high priority item on the SRE team roadmap is the reduction of system *n
 
 Finally, a foundational element of Power BI service resiliency is ensuring that the service is compartmentalized such that incidents only impact a subset of the users. Doing so enables mitigation by redirecting impacted traffic to a healthy cluster. Supporting this holistically requires significant architectural work and design changes but should yield even higher SLOs than are attainable today.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Fabric adoption roadmap: Governance](../guidance/fabric-adoption-roadmap-governance.md)

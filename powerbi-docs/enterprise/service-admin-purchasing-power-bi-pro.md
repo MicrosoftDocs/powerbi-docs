@@ -73,7 +73,7 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 1. Select **Assignment options** and set both options to **On**.
 1. Select **Review + Assign**, and then select **Assign**.
 
-## Next steps
+## Related content
 
 - [Power BI licensing in your organization](service-admin-licensing-organization.md)
 
