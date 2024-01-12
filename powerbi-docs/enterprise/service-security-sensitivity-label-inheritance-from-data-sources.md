@@ -64,6 +64,7 @@ To make sure sensitivity label inheritance from an Excel file works:
 * Inheritance from data sources is supported only for semantic models using the Import data connectivity mode. Live connection and DirectQuery connectivity isn't supported.
 * Inheritance from data sources isn't supported in connections via gateways or Azure Virtual Network (VNet). This means that inheritance from an Excel file located on a local machine won't work, because this requires a gateway. 
 
-## Next steps
+## Related content
+
 * [Enable sensitivity label inheritance from data sources](/fabric/admin/service-admin-portal-information-protection#apply-sensitivity-labels-from-data-sources-to-their-data-in-power-bi-preview)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)

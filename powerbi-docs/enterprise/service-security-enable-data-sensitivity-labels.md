@@ -81,7 +81,7 @@ Fabric uses sensitivity labels from Microsoft Purview Information Protection. Th
 
 For a list of sensitivity label limitations in Fabric and Power BI, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#considerations-and-limitations).
 
-## Next steps
+## Related content
 
 This article described how to enable sensitivity labels in Fabric. The following articles provide more details about data protection in Fabric.
 

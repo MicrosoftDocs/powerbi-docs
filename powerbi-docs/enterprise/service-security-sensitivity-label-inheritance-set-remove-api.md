@@ -97,7 +97,7 @@ The following sample demonstrates how to set and remove sensitivity labels on Po
         }
 ```
 
-## Next steps
+## Related content
 
 * [setLabels API](/rest/api/power-bi/admin/information-protection-set-labels-as-admin)
 * [removeLabels API](/rest/api/power-bi/admin/information-protection-remove-labels-as-admin)
