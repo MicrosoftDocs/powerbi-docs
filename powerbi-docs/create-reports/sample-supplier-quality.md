@@ -207,7 +207,7 @@ Let's look at another dashboard tile related to total defective quantity.
 
 5. Select **Exit Q&A** in the upper-left corner to return to the dashboard.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

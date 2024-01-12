@@ -61,8 +61,8 @@ For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlin
 
    Power BI Desktop removes the hyperlink but leaves the text.
 
-## Next steps
+## Related content
 
-[Add text boxes, shapes, and smart narrative visuals to Power BI reports](power-bi-reports-add-text-and-shapes.md)
+- [Add text boxes, shapes, and smart narrative visuals to Power BI reports](power-bi-reports-add-text-and-shapes.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/).

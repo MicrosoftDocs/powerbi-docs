@@ -252,7 +252,7 @@ Go back to the report and take a look at the Distribution industry.
 
    You can similarly explore other industries and even add customers to your visuals to understand causes for Valery's performance.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
