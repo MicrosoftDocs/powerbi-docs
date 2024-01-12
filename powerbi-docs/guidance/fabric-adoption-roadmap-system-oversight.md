@@ -492,7 +492,7 @@ The following maturity levels will help you assess the current state of your Pow
 | 400: Capable | &bull;&nbsp;Administrators work closely with the COE and governance teams to provide oversight of Fabric. A balance of user empowerment and governance is successfully achieved. <br/><br/>&bull;&nbsp;Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control. <br/><br/>&bull;&nbsp;Automated policies are set up and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention. <br/><br/>&bull;&nbsp;Activity log and API data is actively analyzed to monitor and audit Fabric activities. Proactive action is taken based on the data. |
 | 500: Efficient | &bull;&nbsp;The Fabric administrators work closely with the COE actively stay current. Blog posts and release plans from the Fabric product team are reviewed frequently to plan for upcoming changes. <br/><br/>&bull;&nbsp;Regular cost management analysis is done to ensure user needs are met in a cost-effective way. <br/><br/>&bull;&nbsp;The Fabric REST API is used to retrieve tenant setting values on a regular basis. <br/><br/>&bull;&nbsp;Activity log and API data is actively used to inform and improve adoption and governance efforts. |
 
-## Next steps
+## Related content
 
 For more information about system oversight and Fabric administration, see the following resources.
 

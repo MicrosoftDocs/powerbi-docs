@@ -228,6 +228,6 @@ The following maturity levels will help you assess the current state of your Pow
 | 400: Capable | &bull;&nbsp;The help desk is fully trained and prepared to handle a broader number of known and expected technical support issues. <br/><br/>&bull;&nbsp;SLAs are in place to define help desk support expectations, including extended support. The expectations are documented and communicated so they're clear to everyone involved. |
 | 500: Efficient | &bull;&nbsp;Bidirectional feedback loops exist between the help desk and the COE. <br/><br/>&bull;&nbsp;Key performance indicators measure satisfaction and support methods. <br/><br/>&bull;&nbsp;Automation is in place to allow the help desk to react faster and reduce errors (for example, use of APIs and scripts). |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-system-oversight.md) in the Microsoft Fabric adoption roadmap series, learn about system oversight and administration activities.

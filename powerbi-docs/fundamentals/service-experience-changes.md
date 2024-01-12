@@ -96,7 +96,7 @@ The **Pick a published semantic model** option opens the **OneLake data hub** so
 
 The [Get started creating in the Power BI service](service-get-started.md#step-1-add-data-to-create-a-report) tutorial describes another way to load data into the Power BI service.
 
-## Next steps
+## Related content
 
 - Share your feedback about Power BI at [Microsoft Fabric Ideas](https://ideas.fabric.microsoft.com/).
 - Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).

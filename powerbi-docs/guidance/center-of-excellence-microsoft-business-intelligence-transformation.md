@@ -81,7 +81,7 @@ We see much evidence to support that a comprehensive and robust COE is critical 
 
 We invite you to read the articles in this COE series to learn more. Let's help you discover how your organization can embrace change to deliver success.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
