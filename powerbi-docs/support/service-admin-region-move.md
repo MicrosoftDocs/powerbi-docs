@@ -22,7 +22,7 @@ The location selected during sign-up determines your default data region. Howeve
 
 ## Prerequisites
 
-- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administration roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Azure Active Directory or ask your help desk.
+- The person who requests the data region move must be assigned the global administrator role. You can learn more about the different admin roles and what they can do in [Understanding Power BI administration roles](../admin/service-admin-role.md). We can't help identify your global administrator for you. Look for global administrator role holders in Microsoft 365 or Microsoft Entra ID or ask your help desk.
 - We must receive written approval confirming your awareness and agreement of the effect of the tenant migration on your organization.
 - Provide a point of contact for after business hours during the migration.
 
@@ -62,9 +62,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 - To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
-- All Fabric items have to be deleted individually. Deleting the capacity or workspaces deletes the Fabric's items immediately. 
-
-- All Fabric Trial capacities have to be deleted before the migration. To delete Fabric trial capacities, the users who own the trial capacity need to cancel the trial from the Me Profile at least one and a half days before the migration.
+- **All Fabric items have to be deleted individually** before deleting the capacity or workspace. Deleting the capacity or workspaces will not delete the Fabric items immediately. 
+- All Fabric trial capacities have to be deleted before the migration. To delete Fabric trial capacities, **the users who own** the trial capacity need to cancel the trial from the Me profile at least one and a half days before the migration.
 
 ## Request a region move
 
@@ -86,7 +85,7 @@ To find out the best way to contact support, read [Power BI support options](ser
 
    |Information needed | How to find the information |
    |---|---|
-   |Tenant object ID | [How to find your Azure Active Directory tenant ID](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)|
+   |Tenant object ID | [How to find your Microsoft Entra tenant ID](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)|
    |Current region | [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md)|
    |Proposed region | [International availability of Microsoft Power Platform](/power-platform/availability)|
    |Proposed date and time for migration |Give us three options in UTC time. The proposed dates should be at least two weeks later than when you submit the request.|
@@ -138,7 +137,9 @@ We only migrate Power BI-specific resources. Your Microsoft 365 groups and Share
 
 No, migration of data to different regions isn't a supported scenario.
 
-### Does migration change any of my data or settings for Azure Active Directory?
+<a name='does-migration-change-any-of-my-data-or-settings-for-azure-active-directory'></a>
+
+### Does migration change any of my data or settings for Microsoft Entra ID?
 
 No, migration doesn't affect anything outside of Power BI.
 
@@ -173,4 +174,3 @@ Yes. Because it’s a new location, the IP ranges are also changing, and the ran
 ### Is there a cost to have my tenant moved to a different region?
 
 No, there's no cost charged for region migration. Customers that have any paid licenses can migrate. A global administrator must request the operation.
-

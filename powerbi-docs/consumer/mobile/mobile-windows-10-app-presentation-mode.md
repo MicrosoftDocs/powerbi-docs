@@ -7,9 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/09/2023
+ms.date: 12/31/2023
 ---
 # View reports and dashboards in presentation mode on Windows devices
+
+>[!NOTE]
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
+>
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
+
 You can use presentation mode to display reports and dashboards in full-screen on Windows devices. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
 
 ![Screenshot of a report in presentation mode.](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
@@ -18,9 +24,6 @@ In presentation mode:
 * All the "chrome" (such as the navigation and menu bars) disappears, making it easier to focus on the data in your report.
 * An action toolbar becomes available to enable you to interact with your data and to control the presentation.
 * You can play a slideshow that cycles automatically between pages, bookmarks, or both pages and bookmarks.
-
->[!NOTE]
->The Power BI app for Surface Hub will be retired on July 31st, 2023. As of that date, the app will no longer be available for download from the Microsoft apps store for Surface Hub devices, and no further product updates will be released for this platform. Please use the Power BI service to view your Power BI content on those devices.
 
 ## Use presentation mode
 In the Power BI Windows app, tap the **Switch to presentation mode** icon.

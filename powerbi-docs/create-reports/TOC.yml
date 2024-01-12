@@ -264,10 +264,8 @@
       href: ../visuals/power-bi-report-add-visualizations-i.md
     - name: Add visuals to a report (part 2)
       href: ../visuals/power-bi-report-add-visualizations-ii.md
-    - name: Add visuals to reports
+    - name: Customize the Visualization pane
       href: ../visuals/power-bi-report-visualizations.md
-    - name: Change visuals in reports
-      href: ../visuals/power-bi-report-change-visualization-type.md
     - name: Customize visual titles, backgrounds, legends, and more
       href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: Show items with no data
@@ -276,7 +274,7 @@
       href: ../visuals/power-bi-data-points.md
     - name: Display a visual's underlying data
       href: ../visuals/service-reports-show-data.md
-    - name: Get started with color formatting and axis properties
+    - name: Get started formatting visuals
       href: ../visuals/service-getting-started-with-color-formatting-and-axis-properties.md
     - name: Tips and tricks for color formatting
       href: ../visuals/service-tips-and-tricks-for-color-formatting.md
@@ -290,6 +288,8 @@
       href: service-reports-visual-interactions.md
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
+    - name: Format column and bar charts
+      href: ../visuals/power-bi-visualization-column-bar-format.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Create card visuals with big number tiles

@@ -54,7 +54,7 @@ The following table provides a comparison between the two Power BI embedded anal
 |---------|---------|
 |Also known as **app owns data**         |Also known as **user owns data**         |
 |Aimed at external users         |Aimed at internal users         |
-|To authenticate app users, use your own authentication method        |App users authenticate against Azure AD         |
+|To authenticate app users, use your own authentication method        |App users authenticate against Microsoft Entra ID         |
 |App users don't need a license         |Each app user needs a Power BI license         |
 |Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
 

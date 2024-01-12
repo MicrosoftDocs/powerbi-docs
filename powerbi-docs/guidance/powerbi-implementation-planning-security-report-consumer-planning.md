@@ -385,7 +385,7 @@ Some organizations have specific requirements for [endorsed](/power-bi/collabora
 
 You can accomplish data security in multiple ways.
 
-- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) and [object-level security (OLS)](/power-bi/enterprise/service-admin-ols). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. Both techniques are described later in this section.
+- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) and [object-level security (OLS)](/power-bi/enterprise/service-admin-ols). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. These defined RLS and OLS rules do not apply to references stored outside the semantic model such as slicer and filter selections. Both RLS and OLS techniques are further described later in this section.
 - **Analysis Services:** A live connection semantic model can connect to a remote data model, which is hosted by either Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS). The remote model can enforce RLS or OLS based on the consumer identity.
 - **Data source:** Some data sources, like Azure SQL Database, can enforce RLS. In this case, the Power BI model can take advantage of the existing security rather than redefining it. That approach can be a significant advantage when RLS defined in the source is complex. You can develop and publish a DirectQuery model and set the data source credentials of the semantic model in the Power BI service to enable [single sign-on (SSO)](/power-bi/connect-data/service-azure-sql-database-with-direct-connect). When a report consumer opens a report, Power BI passes their identity to the data source. The data source then enforces RLS based on the identity of the report consumer. For more information about Azure SQL Database RLS, see [this article](/sql/relational-databases/security/row-level-security).
 
@@ -398,6 +398,8 @@ You can accomplish data security in multiple ways.
 
 > [!TIP]
 > If you've noticed someone creating multiple data models to support different groups of consumers, check whether RLS will satisfy their requirements. It's typically better to create, test, and maintain one data model rather than multiple data models.
+
+Take care, because if a Power BI report references a row with RLS configured then the same message will be displayed as for a deleted or non-existing field. To these users, it looks like the report is broken.
 
 There are two steps for setting up RLS: rules and role mappings.
 
@@ -415,11 +417,11 @@ For semantic models, a data modeler can set up RLS in Power BI Desktop by creati
 
 #### RLS role mappings
 
-After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra ID security objects to roles. Security objects can be user accounts or security groups.
+After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
 
 Whenever possible, it's a best practice to map roles to [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). That way, there will be fewer mappings, and group membership management can be handled by the owner of the group.
 
-We recommend that you make security account information from Microsoft Entra ID available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Microsoft Entra ID. That way, content creators can integrate the dataflow data to produce a data-driven semantic model.
+We recommend that you make security account information from Microsoft Entra available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Microsoft Entra ID. That way, content creators can integrate the dataflow data to produce a data-driven semantic model.
 
 > [!TIP]
 > It's possible to define a role that has no rules. In this case, the role provides access to all rows of all model tables. Setting up this type of role is suitable when an administrator or user is allowed to view all data in the model.

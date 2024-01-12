@@ -85,12 +85,12 @@ The improved usage metrics report includes the following report pages:
 | --- | --- | --- |
 | Report usage | Report views/Report opens | A Report View is recorded each time someone opens a report and represents unique landings on the report. It answers the question, "How often is the report accessed?" This definition of a Report View differs from previous usage metrics reports. Changing report pages is no longer considered an additional Report View. Instead, changing report pages counts for the next metric, Report Page Views. Activities such as sharing and pinning are no longer considered in usage metrics. |
 | Report usage | Report Page views | A Report Page View is recorded every time someone views a report page. It represents total views across any pages. It answers the question, "How often are report pages accessed?" So changing report pages counts for Report Page Views. See [Considerations and Limitations](#considerations-and-limitations) for important details. |
-| Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period, based on the Azure AD user account. |
+| Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period, based on the Microsoft Entra user account. |
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can set the earliest and latest date for which usage data is available for the selected report. |
 | Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of one would mean the report has the most views of all reports in the organization.   |
 | Report usage | Report views per day | Usage is counted at the report level and doesn't consider Report Page Views. |
-| Report usage | Report viewers per day | Total number of different users who viewed the report, based on the Azure AD user account. |
+| Report usage | Report viewers per day | Total number of different users who viewed the report, based on the Microsoft Entra user account. |
 | Report usage | Distribution method | How users got access to the report, such as by being members of a workspace, having the report shared with them, or installing an app. |
 | Report usage | Platform slicer | If users accessed the report via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
@@ -110,7 +110,7 @@ The improved usage metrics report includes the following report pages:
 | Report list | Report usage (table) | Shows which reports contribute to individual counts shown in cards. Shows report open percentages, users interacting with report, viewing trends and days. |
 | Report list | Distribution method | How users got access to the report, such as being members of a workspace, having the report shared with them, or installing an app. |
 | Report list | Platform slicer | If the report was accessed via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
-| Report list | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the Azure AD user account). Shows number of report opens by individual viewers. |
+| Report list | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the Microsoft Entra user account). Shows number of report opens by individual viewers. |
 
 ### Worked example of View and Viewer metrics
 

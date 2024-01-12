@@ -1,6 +1,6 @@
 ---
 title: Power BI Security
-description: Learn how Power BI relates to Azure Active Directory and other Azure services. 
+description: Learn how Power BI relates to Microsoft Entra ID and other Azure services. 
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -20,11 +20,11 @@ To plan for Power BI security, see the Power BI implementation planning [securit
 The Power BI service is built on **Azure**, Microsoft's cloud computing infrastructure and platform. The architecture of the Power BI service is based on two clusters:
 
 - The Web Front End (**WFE**) cluster. The **WFE** cluster manages the initial connection and authentication to the Power BI service.
-- The **Back-End** cluster. Once authenticated, the **Back-End** handles all subsequent user interactions. Power BI uses Azure Active Directory (Azure AD) to store and manage user identities. Azure AD also manages data storage and metadata using Azure BLOB and Azure SQL Database, respectively.
+- The **Back-End** cluster. Once authenticated, the **Back-End** handles all subsequent user interactions. Power BI uses Microsoft Entra ID to store and manage user identities. Microsoft Entra ID also manages data storage and metadata using Azure BLOB and Azure SQL Database, respectively.
 
 ## Power BI Architecture
 
-The **WFE** cluster uses Azure AD to authenticate clients, and provide tokens for subsequent client connections to the Power BI service. Power BI uses the **Azure Traffic Manager** (Traffic Manager) to direct user traffic to the nearest datacenter. Traffic Manager directs requests using the DNS record of the client attempting to connect, authenticate, and to download static content and files. Power BI uses the **Azure Content Delivery Network** (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
+The **WFE** cluster uses Microsoft Entra ID to authenticate clients, and provide tokens for subsequent client connections to the Power BI service. Power BI uses the **Azure Traffic Manager** (Traffic Manager) to direct user traffic to the nearest datacenter. Traffic Manager directs requests using the DNS record of the client attempting to connect, authenticate, and to download static content and files. Power BI uses the **Azure Content Delivery Network** (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
 
 ![Diagram showing the Power BI Architecture focused on the WFE cluster.](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
@@ -46,11 +46,11 @@ The dotted line shown in the **Back-End** cluster diagram, clarifies the boundar
 
 ## User Authentication
 
-Power BI uses [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) to authenticate users who sign in to the Power BI service. Sign in credentials are required whenever a user attempts to access secure resources. Users sign in to the Power BI service using the email address with which they established their Power BI account. Power BI uses the same credentials as the *effective username* and passes it to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a [User Principal Name](/windows/win32/secauthn/user-name-formats#user-principal-name) and resolves to the associated Windows domain account against which authentication is applied.
+Power BI uses [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) to authenticate users who sign in to the Power BI service. Sign in credentials are required whenever a user attempts to access secure resources. Users sign in to the Power BI service using the email address with which they established their Power BI account. Power BI uses the same credentials as the *effective username* and passes it to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a [User Principal Name](/windows/win32/secauthn/user-name-formats#user-principal-name) and resolves to the associated Windows domain account against which authentication is applied.
 
-For organizations that used work email addresses for Power BI sign-in, for example `david@contoso.com`, the *effective username* to UPN mapping is straightforward. For organizations that didn't use work email addresses, for example `david@contoso.onmicrosoft.com` mapping between Azure AD and on-premises credentials requires [directory synchronization](/azure/active-directory-domain-services/synchronization) to work properly.
+For organizations that used work email addresses for Power BI sign-in, for example `david@contoso.com`, the *effective username* to UPN mapping is straightforward. For organizations that didn't use work email addresses, for example `david@contoso.onmicrosoft.com` mapping between Microsoft Entra ID and on-premises credentials requires [directory synchronization](/azure/active-directory-domain-services/synchronization) to work properly.
 
-Platform security for Power BI also includes multi-tenant environment security, networking security, and the ability to add other Azure AD-based security measures.
+Platform security for Power BI also includes multi-tenant environment security, networking security, and the ability to add other Microsoft Entra ID-based security measures.
 
 ## Data and Service Security
 

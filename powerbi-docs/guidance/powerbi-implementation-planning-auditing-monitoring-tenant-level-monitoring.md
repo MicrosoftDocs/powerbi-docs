@@ -76,7 +76,7 @@ There are several monitoring aspects related to security and threats.
 - Monitor and raise alerts based on specific activities.
 - Create DLP policies.
 - Detect unusual behaviors and risky sessions.
-- Limit activities performed by applications (with [Microsoft Entra conditional access app control](/cloud-app-security/proxy-intro-aad)).
+- Limit activities performed by applications (with [Microsoft Entra Conditional Access app control](/cloud-app-security/proxy-intro-aad)).
 
 Some powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
 

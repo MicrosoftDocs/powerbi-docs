@@ -131,9 +131,9 @@ There's always a parent-child relationship between a service principal and the s
 
 ### Service principal profiles aren't known to Microsoft Entra
 
-While the service principal itself and its underlying Microsoft Entra app registration are known to Microsoft Entra, Microsoft Entra doesn't know anything about service principal profiles. That's because service principal profiles are created by Power BI and they exist only in the Power BI service subsystem that controls Power BI security and authorization.
+While the service principal itself and its underlying Microsoft Entra app registration are known to Microsoft Entra, Microsoft Entra ID doesn't know anything about service principal profiles. That's because service principal profiles are created by Power BI and they exist only in the Power BI service subsystem that controls Power BI security and authorization.
 
-The fact that service principal profiles aren't known to Microsoft Entra has both advantages and disadvantages. The primary advantage is that an *Embed for your customer* scenario application doesn't need any special Microsoft Entra permissions to create service principal profiles. It also means that the application can create and manage a set of local identities that are separate from Microsoft Entra.
+The fact that service principal profiles aren't known to Microsoft Entra ID has both advantages and disadvantages. The primary advantage is that an *Embed for your customer* scenario application doesn't need any special Microsoft Entra permissions to create service principal profiles. It also means that the application can create and manage a set of local identities that are separate from Microsoft Entra.
 
 However, there are also disadvantages. Because service principal profiles aren't known to Microsoft Entra, you can't add a service principal profile to a Microsoft Entra group to implicitly grant it access to a workspace. Also, external data sources, such as an Azure SQL Database or Azure Synapse Analytics, can't recognize service principal profiles as the identity when connecting to a database. So, the **one service principal per workspace** design strategy (creating a service principal for each customer tenant) might be a better choice when there's a requirement to connect to these data sources by using a separate service principal with unique authentication credentials for each customer tenant.
 
@@ -325,6 +325,6 @@ For more information about this article, check out the following resources:
 - [Service principal profiles for multitenancy apps in Power BI Embedded](/power-bi/developer/embedded/embed-multi-tenancy)
 - [Migrate multi-customer applications to the service principal profiles model](/power-bi/developer/embedded/migration-to-sp-profiles)
 - [Profiles Power BI REST API operation group](/rest/api/power-bi/profiles)
-- [AppOwnsDataMultiTenant sample application](https://github.com/PowerBiDevCamp/AppOwnsDatamultitenancy)
+- - [AppOwnsDataMultiTenant sample application](https://github.com/PowerBiDevCamp/AppOwnsDataMultiTenant)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

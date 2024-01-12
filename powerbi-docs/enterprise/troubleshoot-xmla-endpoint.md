@@ -56,9 +56,11 @@ Make sure you specify the tenant ID together with the app ID using the correct f
 
 It's also valid to specify the app ID without the tenant ID. However, in this case, you must replace the `myorg` alias in the data source URL with the actual tenant ID. Power BI can then locate the service principal in the correct tenant. But, as a best practice, use the `myorg` alias and specify the tenant ID together with the app ID in the User ID parameter.
 
-### Connecting with Azure Active Directory B2B
+<a name='connecting-with-azure-active-directory-b2b'></a>
 
-With support for Azure Active Directory (Azure AD) business-to-business (B2B) in Power BI, you can provide external guest users with access to semantic models over the XMLA endpoint. Make sure the [Share content with external users](/fabric/admin/service-admin-portal-export-sharing) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
+### Connecting with Microsoft Entra B2B
+
+With support for Microsoft Entra business-to-business (B2B) in Power BI, you can provide external guest users with access to semantic models over the XMLA endpoint. Make sure the [Share content with external users](/fabric/admin/service-admin-portal-export-sharing) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](service-admin-azure-ad-b2b.md).
 
 ## Deploying a semantic model
 

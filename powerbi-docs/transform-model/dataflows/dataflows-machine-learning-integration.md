@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 01/10/2024
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -445,6 +445,7 @@ After you save your dataflow, the model is automatically invoked when the datafl
 
 ## Considerations and limitations
 
+* Dataflows Gen2 does not currently integrate with automated machine learning. 
 * AI insights (Cognitive Services and Azure Machine Learning models) aren't supported on machines with proxy authentication setup.
 * Azure Machine Learning models aren't supported for Guest users.
 * There are some known issues with using Gateway with AutoML and Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models and AI functions.

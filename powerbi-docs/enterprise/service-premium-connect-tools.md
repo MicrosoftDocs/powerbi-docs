@@ -109,7 +109,7 @@ B2B users must specify their organization UPN in tenant name. For example:
 
 `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
 
-To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Azure Active Directory from the main menu, and then note the information on the Azure Active Directory Overview page. For more information, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
+To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 > [!NOTE]
 > Connecting to a [**My Workspace**](../consumer/end-user-workspaces.md#types-of-workspaces) by using the XMLA endpoint is currently not supported.
@@ -189,7 +189,7 @@ Operations that require Analysis Services server admin permissions (rather than 
 
 ### Impersonation
 
-User impersonation by using the [EffectiveUserName connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth)  is supported when connecting to Premium workspace semantic models. The account specified in EffectiveUserName must be in the tenant's Azure Active Directory and must have both **Read** and **Build** permissions for the semantic model being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail, and an error is returned.
+User impersonation by using the [EffectiveUserName connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#bkmk_auth)  is supported when connecting to Premium workspace semantic models. The account specified in EffectiveUserName must be in the tenant's Microsoft Entra ID and must have both **Read** and **Build** permissions for the semantic model being connected to. If the account doesn't have both Read and Build permissions, Power BI can't impersonate the user account. The connection will fail, and an error is returned.
 
 You can also perform impersonation by specifying one or more workspace roles in the [Roles connection string property](/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current&preserve-view=true#roles). With the Roles property, you can test downgrading role members with Write permissions to Read permissions. The following Role permissions apply depending on the account of the user signed in:
 
@@ -199,7 +199,7 @@ You can also perform impersonation by specifying one or more workspace roles in 
 
 ### Model roles
 
-With the XMLA endpoint, roles, role membership, row-level security (RLS), and object-level security (OLS) can be defined for users in the tenant's Azure Active Directory (Azure AD). Model roles in Power BI are used only for RLS and OLS. Use the Power BI security model to control permissions beyond RLS and OLS.
+With the XMLA endpoint, roles, role membership, row-level security (RLS), and object-level security (OLS) can be defined for users in the tenant's Microsoft Entra ID. Model roles in Power BI are used only for RLS and OLS. Use the Power BI security model to control permissions beyond RLS and OLS.
 
 For tabular model projects authored in Visual Studio, roles can be defined by using Role Manager in the model designer. For semantic models in Power BI, roles can be defined in Power BI Desktop prior to publishing to the service. Role membership is specified in the Power BI service. SSMS can also be used to create and manage roles. In most cases, role object definitions can be scripted by using TMSL to create or modify the [Roles object](/analysis-services/tmsl/roles-object-tmsl?view=power-bi-premium-current&preserve-view=true). TMSL scripts can be executed in SSMS or with the [Invoke-ASCmd](/powershell/module/sqlserver/invoke-ascmd?view=sqlserver-ps&preserve-view=true) PowerShell cmdlet.
 
@@ -215,7 +215,7 @@ Metadata specified through the XMLA endpoint can create connections to data sour
 
 ### Service principals
 
-Service principals are an Azure Active Directory app registration you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and client secret or certificate for a password. Power BI Premium uses the same service principal functionality as Power BI Embedded.
+Service principals are a Microsoft Entra app registration you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and client secret or certificate for a password. Power BI Premium uses the same service principal functionality as Power BI Embedded.
 
 Service principals can be used with the XMLA endpoint to automate semantic model management tasks such as provisioning workspaces, deploying models, and semantic model refresh with:
 

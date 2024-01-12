@@ -311,7 +311,7 @@ In a [cloud shared responsibility model](/azure/security/fundamentals/shared-res
 
 The COE should provide [documentation and training](fabric-adoption-roadmap-mentoring-and-user-enablement.md) where relevant to assist content creators with best practices (particularly situations for dealing with ultra-sensitive data).
 
-Administrators can be help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/enterprise/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/fabric/admin/service-admin-portal-app#publish-apps-to-the-entire-organization)).
+Administrators can help by following best practices themselves. Administrators can also raise concerns when they see issues that could be discovered when [managing workspaces](/power-bi/admin/service-admin-portal-workspaces), [auditing user activities](/power-bi/enterprise/service-admin-auditing), or managing [gateway credentials and users](/power-bi/connect-data/service-gateway-data-sources#add-a-data-source). There are also several [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) that are usually restricted except for a few users (for instance, the ability to [publish to web](/power-bi/admin/service-admin-portal-export-sharing#publish-to-web) or the ability to [publish apps to the entire organization](/fabric/admin/service-admin-portal-app#publish-apps-to-the-entire-organization)).
 
 ### External guest users
 
@@ -470,7 +470,7 @@ Use questions like those found below to assess system oversight.
 - Are there atypical administration settings enabled or disabled? For example, is the entire organization allowed to publish to web (we strongly advise restricting this feature).
 - Do administration settings and policies align with, or inhibit, business the way user work?
 - Is there a process in place to critically appraise new settings and decide how to set them? Alternatively, are only the most restrictive settings set as a precaution?
-- Are Microsoft Entra ID security groups used to manage who can do what?
+- Are Microsoft Entra security groups used to manage who can do what?
 - Do central teams have visibility of effective [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) tools?
 - Do monitoring solutions depict information about the data assets, user activities, or both?
 - Are auditing and monitoring tools actionable? Are there clear thresholds and actions set, or do monitoring reports simply describe what's in the data estate?

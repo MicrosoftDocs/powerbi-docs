@@ -12,7 +12,7 @@ ms.custom:
 
 # Power BI known issues
 
-This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you are experiencing is already known and being addressed. Known issues are also available for all of Fabric (including Power BI) as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
+This page lists known issues for Power BI features. Before submitting a Support request, review this list to see if the issue that you're experiencing is already known and being addressed. Known issues are also available for all of Fabric (including Power BI) as an [interactive Power BI report](https://support.fabric.microsoft.com/en-US/known-issues/).
 
 For service level outages or degradation notifications, check [https://support.powerbi.com](https://support.powerbi.com).  
 
@@ -41,7 +41,7 @@ Select the **Title** to view more information about that specific known issue. F
 |  546      |  Consume and View  |  [Closing a Dataflow Gen1 takes you to the wrong workspace](known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md)    | November 15, 2023  | Fixed: December 13, 2023 |
 |  535      |  Consume and View  |  [New card visual formatting appears or disappears in Service](known-issue-535-new-card-visual-formatting-appears-disappears.md)    | October 25, 2023  | Fixed: December 13, 2023 |
 
-## Next steps
+## Related content
 
 - [Go to the Power BI Embedded report version of this page](https://support.fabric.microsoft.com/known-issues/)
 - [Service level outages](https://support.powerbi.com)
