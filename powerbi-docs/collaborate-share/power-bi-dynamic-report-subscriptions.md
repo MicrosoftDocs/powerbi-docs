@@ -39,7 +39,7 @@ The dynamic subscription filters are stored in a separate Power BI semantic mode
 
 ## Create a dynamic subscription
 
-Do you want to create one subscription that sends customized views of a report to your subscribers based on filters that you set? Perhaps you're a regional director and want to send a report to various managers, each interested in the sales by each of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses of the managers. The other contains the training data and defines the mapping between recipients and filters. When it's time to send the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what filters are used in that report.
+Do you want to create one subscription that sends customized views of a report to your subscribers based on filters that you set? Perhaps you're a regional director and want to send a report to various managers, each interested in the sales by each of their employees. Now you can create a subscription and customize the report so that each manager only sees data related to their own employees. To do this, Power BI connects to two different semantic models. One contains subscription recipient data, including email addresses of the managers. The other contains the data and defines the mapping between recipients and filters. When it's time to send the report, the latest data available in this second semantic model determines which manager receives a report in their inbox, and what filters are used in that report.
 
 For users familiar with SQL Server Reporting Services (SSRS), this feature is similar to data-driven subscriptions.
 
@@ -67,7 +67,7 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
 The **Select and filter data** window lists the fields that can be set dynamically. In this example, we have a field for email address and we have several filters. Select the columns from your semantic model that you want to be varied for each recipient. Email address and filters can be set dynamically based on data in the Power BI semantic model.
 
-The **Select and filter data** window displays the list of fields from the *Contoso sales employee* semantic model that can be used to dynamically filter your *Manager training* report subscription. Select the **Owners** table. This table has data for **Owner**, **OwnerEmail**, and **Manager**. These fields from the *Contoso sales employee* semantic model can be tied to the subscription.
+The **Select and filter data** window displays the list of fields from the *Contoso sales employee* semantic model that can be used to dynamically filter your *Regional Sales* report subscription. Select the **Owners** table. This table has data for **Owner**, **OwnerEmail**, and **Manager**. These fields from the *Contoso sales employee* semantic model can be tied to the subscription.
 
 :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription-filters.png" alt-text="Screenshot of the Power BI service showing the select and filter step of the wizard.":::
 
