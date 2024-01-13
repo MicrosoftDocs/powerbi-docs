@@ -51,7 +51,7 @@ You might want to embed an image in the report definition before adding the imag
   
 1. Select in the text box next to the **MIMEType** property and select a new MIME type from the drop-down list.  
   
-## Next steps
+## Related content
 
 - [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)
 - [Add a Data-Bound Image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)

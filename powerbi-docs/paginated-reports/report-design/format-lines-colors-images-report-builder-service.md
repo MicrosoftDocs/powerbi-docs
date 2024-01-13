@@ -37,8 +37,8 @@ Power BI Report Builder gives you the ability to format lines, colors, data regi
   
  You can also add images such as logos to the background of your report or to a rectangle, text box, table, matrix, or some parts of a chart, or to the body and page sections of a report. For more information, see [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md).  
   
-## Next steps
+## Related content
 
- [Format Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Format Numbers and Dates &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
- [Format Text in a Text Box &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/format-text-in-a-text-box-report-builder-and-ssrs)   
+- [Format Text and Placeholders &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+- [Format Numbers and Dates &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
+- [Format Text in a Text Box &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/format-text-in-a-text-box-report-builder-and-ssrs)   

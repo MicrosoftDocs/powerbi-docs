@@ -184,6 +184,7 @@ Power BI Report Builder provides both a graphical query designer and a text-base
 ## Text-based query designer  
  For the most control over your query, use the text-based query designer. To switch to the text-based query designer, in the toolbar, click **Edit As Text**. After you edit a query in the text-based query designer, you can no longer use the relational query designer. The query will then always open in the text-based query designer. For more information, see [Text-based Query Designer User Interface &#40;Report Builder&#41;](/sql/reporting-services/report-data/text-based-query-designer-user-interface-report-builder).
   
-## Next steps
- [Understanding paginated report data in Power BI Report Builder](../report-builder-data.md)  
+## Related content
+
+- [Understanding paginated report data in Power BI Report Builder](../report-builder-data.md)  
   
