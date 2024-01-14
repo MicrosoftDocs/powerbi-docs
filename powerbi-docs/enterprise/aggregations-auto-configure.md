@@ -94,7 +94,7 @@ You must have model owner permissions to disable automatic aggregations. Workspa
 
 1. Select **Apply**.
 
-## See also
+## Related content
 
 * [Automatic aggregations](aggregations-auto.md)  
 * [User-defined aggregations](../transform-model/aggregations-advanced.md)  

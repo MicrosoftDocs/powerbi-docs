@@ -277,7 +277,7 @@ To use the code sample:
 
 The code sample uses service principal authentication.
 
-## See also
+## Related content
 
 - [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset)  
 - [Use the Power BI REST APIs](/rest/api/power-bi/)  

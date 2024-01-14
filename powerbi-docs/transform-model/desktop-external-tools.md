@@ -113,6 +113,6 @@ A value of 1 (decimal) enables the External Tools ribbon, which is also the defa
 
 A value of 0 (decimal) disable the External Tools ribbon.
 
-## See also
+## Related content
 
-[Register an external tool](desktop-external-tools-register.md)  
+- [Register an external tool](desktop-external-tools-register.md)  

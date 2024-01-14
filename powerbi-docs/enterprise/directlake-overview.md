@@ -182,7 +182,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 The best way to get started with a Direct Lake solution in your organization is to create a Lakehouse, create a delta table in it, and then create a basic semantic model for the Lakehouse in your Microsoft Fabric or Power BI workspace. To learn more, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).
 
-## See also
+## Related content
 
-[Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md)  
-[Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  
+- [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md)  
+- [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  

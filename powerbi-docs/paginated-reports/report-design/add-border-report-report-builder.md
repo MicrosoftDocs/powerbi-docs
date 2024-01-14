@@ -28,7 +28,6 @@ You can add a border to a Power BI paginated report by adding borders to the hea
     
 3. Right-click in the footer outside any items in the footer, and select **Footer Properties**. On the **Border** tab, add a left, bottom, and right border with the style you want.    
     
-## Next steps    
- [Rectangles and lines (Power BI Report Builder)](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs)    
-    
-  
+## Related content
+
+- [Rectangles and lines (Power BI Report Builder)](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs)

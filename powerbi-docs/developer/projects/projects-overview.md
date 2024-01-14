@@ -199,10 +199,10 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 **Answer:** No. Power BI Desktop project report definitions aren't supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
 
-## See also
+## Related content
 
-[Power BI Desktop project dataset folder](projects-dataset.md)  
-[Power BI Desktop project report folder](projects-report.md)  
-[Power BI Desktop projects Git integration](projects-git.md)  
-[Power BI Desktop projects Azure DevOps integration](projects-git.md)  
-[External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  
+- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop project report folder](projects-report.md)  
+- [Power BI Desktop projects Git integration](projects-git.md)  
+- [Power BI Desktop projects Azure DevOps integration](projects-git.md)  
+- [External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  
