@@ -129,7 +129,7 @@ The **Format** section is available when interacting with the card in a report.
 
 1. Continue to explore the formatting options until your card is exactly how you'd like it.
 
-## Next steps
+## Related content
 
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

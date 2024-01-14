@@ -173,5 +173,6 @@ The shape map can use statistics or dynamic limits.
 	- Category: Virtualization (data windowing) by using Window of 30 rows at a time.
 	- Breakdown - Top 200 values
 
-## Next steps
-[Visualization types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+## Related content
+
+* [Visualization types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

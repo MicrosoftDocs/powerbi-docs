@@ -28,6 +28,6 @@ On a tabular visual, open the More options (...) dropdown and select **Export da
 
 As a workaround, try choosing the Excel export file format.  You can then open the downloaded Excel file and save it as a CSV file.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

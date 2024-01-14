@@ -422,7 +422,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 | us-mt |Montana |MT |
 | us-wa |Washington |WA |
 
-## Next steps
+## Related content
 
 - [Matrix visual in Power BI](desktop-matrix-visual.md)
 

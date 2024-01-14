@@ -28,6 +28,6 @@ In the API response, you see other data sources and gateways available, not only
 
 No workarounds at this time. This article will be updated when the fix is released.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)
