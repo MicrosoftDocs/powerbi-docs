@@ -46,14 +46,14 @@ In addition to the general rendering behaviors that apply to all Power BI pagina
 
  Chart, Gauge, and Map data regions behave like images when they are rendered and displayed in the report body. Values within the data region can have associated actions, such as linking to another report or going to a bookmark, and these actions can be rendered as well, if the renderer supports it.  
   
-## Next steps
+## Related content
 
- [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
- [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
- [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)   
- [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
- [Gauges &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
+* [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+* [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+* [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+* [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+* [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)   
+* [Charts &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+* [Gauges &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
   
   

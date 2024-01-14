@@ -32,9 +32,9 @@ If you are displaying fields with empty or null values in a chart in your pagina
   
  This behavior differs from the case where there are zero rows of data in the returned dataset, which can occur when the report is parameterized and the selected value returns an empty result set. If your dataset query returns zero rows of data, a message is displayed at run time to indicate that no data can be shown. You can customize this message by modifying the NoDataMessage caption for the report in the **Properties** pane.
 
-## Next steps
+## Related content
 
-[Charts](charts-report-builder.md)   
-[Formatting a Chart](formatting-chart-report-builder.md)   
-[Add a Chart to a Report](add-chart-report-report-builder.md)   
-[Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  
+- [Charts](charts-report-builder.md)   
+- [Formatting a Chart](formatting-chart-report-builder.md)   
+- [Add a Chart to a Report](add-chart-report-report-builder.md)   
+- [Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  
