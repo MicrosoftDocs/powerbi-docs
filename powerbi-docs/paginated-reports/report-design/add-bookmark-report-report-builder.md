@@ -47,8 +47,8 @@ ms.reviewer: saurkumar
   
 7. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.
   
-## Next steps  
+## Related content  
 
- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
- [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)  
+- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
+- [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)  
   

@@ -7,7 +7,7 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/21/2023
+ms.date: 01/11/2024
 ms.custom: sample-salesandmarketingsample
 LocalizationGroup: Visualizations
 ---
@@ -131,33 +131,29 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
 
-Q: I don't see the copy and paste options.   
+Q: I don't see the copy and paste options.  
 A: If you're using Power BI Desktop, this feature isn't yet available.   
-Q: Why is the Copy icon disabled on a visual?   
-A: The content owner and admin can turn off this feature. 
+Q: Why is the Copy icon disabled on a visual?  
+A: The content owner and admin can turn off this feature.  
+
 A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
 
 - ESRI and other Map visuals 
 - Python visuals 
 - R visuals 
 - PowerApps 
-- Noncertified custom visuals
+- [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
+- [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 
 For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
 Q: Why is my visual not pasting correctly?   
 A: There are limitations around copy visual as an image, including:
 
-- For custom visuals
-  - Visuals with applied themes and colors
-  - Tile scaling when pasting
-  - Custom visuals with animations
-- Copying constraints
-  - Can't copy a freshly pinned dashboard tile
-  - Can't redirect users to content with Odata filters and sticky states such as personal bookmarks
-- Applications with limited support for pasting HTML-formatted content from the clipboard may not render everything that was copied from the visual
+- [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
+- [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)-
 
-## Next step
+## Related content
 
 More about [Visualizations in Power BI reports.](power-bi-report-visualizations.md)
 

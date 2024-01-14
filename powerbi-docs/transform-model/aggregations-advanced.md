@@ -283,7 +283,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Power BI aggregations" on Bing](https://www.bing.com/search?q=power+bi+aggregations)
 
-## See also
+## Related content
 
-[Automatic aggregations](../enterprise/aggregations-auto.md)  
-[Composite models](desktop-composite-models.md)  
+- [Automatic aggregations](../enterprise/aggregations-auto.md)  
+- [Composite models](desktop-composite-models.md)  

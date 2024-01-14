@@ -25,11 +25,12 @@ You can only merge cells within each area of a data region: corner, column heade
   
 3.  Repeat steps 1 and 2 to merge other adjacent cells in a data region.  
   
-## Next steps  
-[Tablix Data Region](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
- [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
- [Create a Matrix](create-matrix-report-builder.md)   
- [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)  
-[Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Tablix Data Region](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
+- [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
+- [Create a Matrix](create-matrix-report-builder.md)   
+- [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)  
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

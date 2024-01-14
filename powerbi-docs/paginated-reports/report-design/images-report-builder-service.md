@@ -64,9 +64,9 @@ These are the image file types you can use in paginated reports:
  
 SVG files aren't supported.
  
-## Next steps
+## Related content
 
- [Add an external image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)  
- [Embed an image in a report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)  
- [Add a background image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)  
- [Add a data-bound image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)  
+- [Add an external image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)  
+- [Embed an image in a report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)  
+- [Add a background image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)  
+- [Add a data-bound image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)  

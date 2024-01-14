@@ -98,7 +98,7 @@ See the Optimize ribbon features introduction at Microsoft Ignite 2022.
 
 > [!VIDEO https://www.youtube.com/embed/TopbQfxcPxM]
 
-## See also
+## Related content
 
 * [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md)  
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)

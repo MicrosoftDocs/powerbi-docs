@@ -120,10 +120,10 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
 |`#TOVALUE`|Displays the actual numeric value of the data field.|10000|  
 |`#FROMVALUE{N0} - #TOVALUE{N0}`|Displays the actual numeric values of the beginning of the range and end of the range.|10 - 790|  
   
-## Next steps 
+## Related content
 
- [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md)   
- [Maps &#40;Power BI Report Builder&#41;](../../report-builder/maps-report-builder.md)
- [Map wizard and map layer wizard &#40;Power BI Report Builder&#41;](../../report-builder/map-wizard-map-layer-wizard-report-builder.md)  
+- [Change map legends, color scale, and associated rules &#40;Power BI Report Builder&#41;](../../report-builder/change-map-legends-color-scale-associated-rules-report-builder.md)   
+- [Maps &#40;Power BI Report Builder&#41;](../../report-builder/maps-report-builder.md)
+- [Map wizard and map layer wizard &#40;Power BI Report Builder&#41;](../../report-builder/map-wizard-map-layer-wizard-report-builder.md)  
   
   

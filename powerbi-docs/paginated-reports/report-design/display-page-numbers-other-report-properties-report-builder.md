@@ -68,8 +68,9 @@ ms.reviewer: saurkumar
 
 - You can create and modify paginated report definition (.rdl) files in Power BI Report Builder.
 
-## Next steps  
- [Page headers and footers in a paginated report (Power BI Report Builder)](page-headers-footers-report-builder-service.md)  
- [Format Text in a Text Box (Power BI Report Builder)](textbox/format-text-in-a-text-box-report-builder-and-service.md)  
+## Related content
+
+- [Page headers and footers in a paginated report (Power BI Report Builder)](page-headers-footers-report-builder-service.md)  
+- [Format Text in a Text Box (Power BI Report Builder)](textbox/format-text-in-a-text-box-report-builder-and-service.md)  
   
   

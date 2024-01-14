@@ -61,7 +61,7 @@ The following code example indicates whether the current instance of the item is
 =InScope("Product")
 ```
 
-## See also
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

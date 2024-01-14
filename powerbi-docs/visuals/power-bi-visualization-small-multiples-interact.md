@@ -61,6 +61,6 @@ With the sort functionality, you can sort multiple aspects of a visual at once. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 
-## Next steps
+## Related content
 
-[Create small multiples in Power BI](power-bi-visualization-small-multiples.md)
+- [Create small multiples in Power BI](power-bi-visualization-small-multiples.md)

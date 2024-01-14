@@ -319,7 +319,7 @@ Review the following considerations for working with tables in Power BI.
 
 - Power BI calculates the maximum cell size for a table based on the contents of the first 20 columns and the first 50 rows. Content in cells beyond those table dimensions might not be appropriately sized.
 
-## Next steps
+## Related content
 
 - Create [tree maps in Power BI](power-bi-visualization-treemaps.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
