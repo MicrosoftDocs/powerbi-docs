@@ -75,6 +75,8 @@ Contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tm
 
 #### model.bim
 
+Contains a [Database object](/dotnet/api/microsoft.analysisservices.tabular.database) definition using [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) language.
+
 Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
 
 #### definition.pbidataset
