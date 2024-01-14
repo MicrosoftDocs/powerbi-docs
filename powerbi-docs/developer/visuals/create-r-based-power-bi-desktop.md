@@ -59,7 +59,7 @@ In this tutorial, you learn how to:
 
       This command creates a new folder for the *rVisualSample* visual. The structure is based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R-script that is run to generate the image when the visual is rendered. You can create your R-script in **Power BI Desktop**.
 
-3. From the newly created `rVisualSample` directory run
+3. From the newly created `rVisualSample` directory run the following command:
 
    ```cmd
    pbiviz start
@@ -93,7 +93,7 @@ In this tutorial, you learn how to:
 
 The R-script can be modified to create other types of visuals. Let's create a line chart next.
 
-1. Paste the following R code into the **R script editor**:
+1. Paste the following R code into the **R script editor**.
 
    ```r
    x <- dataset[,1] # get the first column from semantic model
@@ -193,9 +193,9 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
 
 Now that we have a basic `corrplot` visual, let's add properties to the property pane that allow the user to change the look and feel to the visual.
 
-We'll use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
+We use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
 
-1. Define an `object` called *settings* in the *capabilities.json* file and give it the properties shown below. Then use this object name in the enumeration method to get the values from the property pane.
+1. Define an `object` called *settings* in the *capabilities.json* file and give it the following properties. Then use this object name in the enumeration method to get the values from the property pane.
 
     ```json
     {
