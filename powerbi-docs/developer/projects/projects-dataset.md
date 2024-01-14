@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 01/14/2024
 ---
 
 # Power BI Desktop project dataset folder
@@ -23,6 +23,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
 - [\definition folder](#definition-folder)<sup>[1](#required)</sup>
+- [model.bim](#modelbim)<sup>[1](#required)</sup>
 - [definition.pbidataset](#definitionpbidataset)<sup>[1](#required)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
@@ -70,7 +71,11 @@ For more information, refer to the [unappliedChanges.json schema document](https
 
 #### \definition folder
 
-Contains a Tabular Model Definition Language (TMDL) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+Contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview?view=asallproducts-allversions) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+
+#### model.bim
+
+Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
 
 #### definition.pbidataset
 
