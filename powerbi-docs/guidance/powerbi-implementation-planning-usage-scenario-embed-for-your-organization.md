@@ -112,7 +112,7 @@ Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is re
 
 The [activity log](/power-bi/enterprise/service-admin-auditing) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. Logged events will describe the consumption method as _Embedding for your organization_. There's presently no way to determine whether content was viewed in a no-code embedding experience in a custom application.
 
-## Next steps
+## Related content
 
 To learn more about Power BI embedded analytics, work through the [Embed Power BI analytics](/training/paths/power-bi-embedded/) learning path.
 

@@ -144,7 +144,7 @@ Multi-Geo support enables organizations to:
 > - **Identify data residency requirements:** Determine what your requirements are for data residency. Identify which regions are appropriate, and which users might be involved.
 > - **Investigate use of the Multi-Geo feature:** For specific situations where data should be stored elsewhere from the home region, investigate enabling Multi-Geo.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
 

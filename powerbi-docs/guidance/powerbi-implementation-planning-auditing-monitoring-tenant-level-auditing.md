@@ -1887,6 +1887,6 @@ You need to perform ongoing management of the entire auditing solution. You migh
 > - **Verify that a backup exists:** Make sure there's a backup technical owner who can get involved should an urgent issue arise that support can't solve.
 > - **Keep a tracking system:** Ensure that you have a way to capture new requests and a way to prioritize immediate priorities, and also short-term, medium-term, and long-term (backlog) priorities.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md), learn about tenant-level monitoring.

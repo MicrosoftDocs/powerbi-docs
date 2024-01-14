@@ -363,6 +363,6 @@ A key outcome of tactical planning is the prioritized backlog of solutions that 
 > - **Assign a team to own feedback:** Ensure that there's a team that has clear ownership of user feedback and requests. This team should respond to users to acknowledge their requests or request more detail.
 > - **Create a schedule to review requests:** Review feedback regularly, like every week. Identify priority requests before they become urgent and disrupt existing planning. Clearly and transparently communicate any rejected requests to users. Propose alternatives and workarounds so that users can continue their work without disruption.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md), learn how to conduct BI solution planning.

@@ -275,6 +275,6 @@ You can use the Power BI [metadata scanning APIs](/power-bi/enterprise/service-a
 
 There's also an [audit log](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page&preserve-view=true) within Azure DevOps, which is outside of the Power BI service. Azure DevOps administrators can use the audit log to review activities in remote repositories and pipelines.
 
-## Next steps
+## Related content
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.

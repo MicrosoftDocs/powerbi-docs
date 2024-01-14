@@ -384,6 +384,6 @@ It's possible to provide your Power BI administrators with a [limited view](/pow
 > - **Create or validate your process for reviewing activity:** Make sure your security and compliance administrators are clear on the expectations for regularly reviewing the activity explorer.
 > - **Create or validate your process for resolving alerts:** Ensure that your security and compliance administrators have a process in place to investigate and resolve open alerts.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md), learn about auditing for information protection and data loss prevention for Power BI.
