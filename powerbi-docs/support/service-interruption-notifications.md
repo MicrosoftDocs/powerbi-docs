@@ -48,5 +48,4 @@ This article describes how to receive service notifications through Power BI. Yo
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Power BI Pro and Power BI Premium support options](service-support-options.md)
+- [Power BI Pro and Power BI Premium support options](service-support-options.md)
