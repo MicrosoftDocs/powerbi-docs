@@ -55,7 +55,7 @@ constructor(options: VisualConstructorOptions)
 
 ### VisualConstructorOptions
 
-These interfaces get updated with each new API version. For the most updated interface format, go to our [github repo](https://github.com/microsoft/powerbi-visuals-api/blob/main/src/visuals-api.d.ts#L1783C9-L1783C25).
+These interfaces get updated with each new API version. For the most updated interface format, go to our [GitHub repo](https://github.com/microsoft/powerbi-visuals-api/blob/main/src/visuals-api.d.ts#L1783C9-L1783C25).
 
 The following list describes some of the properties of the `VisualConstructorOptions` interface:
 
