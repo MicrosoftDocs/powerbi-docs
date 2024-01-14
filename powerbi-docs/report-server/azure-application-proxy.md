@@ -290,8 +290,8 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 2. Select **Connect**. You'll be directed to the Microsoft Entra sign-in page.
 3. Enter valid credentials for your user and select **Sign in**. You'll see the elements from your report server.
 
-## Next steps
+## Related content
 
-[Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+- [Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

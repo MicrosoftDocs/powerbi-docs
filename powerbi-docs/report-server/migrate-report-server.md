@@ -93,10 +93,10 @@ Migrating from one Power BI Report Server is the same process as migrating from 
 * Configure the report server using Report Server Configuration Manager and connect to the cloned database.
 * Perform any cleanup needed for the old Power BI Report Server installation.
 
-## Next steps
+## Related content
 
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Script with the rs.exe Utility and the Web Service](/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
+* [Script with the rs.exe Utility and the Web Service](/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
