@@ -51,11 +51,11 @@ Follow these steps to purchase A SKUs in the Azure portal:
 
     - The **Subscription** in which to create the Power BI Embedded service.
 
-    - The physical **Location** in which to create the resource group that contains the service. For better performance, this location should be close to the location of your Azure Active Directory tenant for Power BI.
+    - The physical **Location** in which to create the resource group that contains the service. For better performance, this location should be close to the location of your Microsoft Entra tenant for Power BI.
 
     - An existing **Resource group** to use, or create a new one as shown in the example.
 
-    - The **Power BI capacity administrator**. The capacity admin must be a member user or a service principal in your Azure AD tenant.
+    - The **Power BI capacity administrator**. The capacity admin must be a member user or a service principal in your Microsoft Entra tenant.
 
     :::image type="content" source="media/service-admin-premium-purchase/subscription-resource-group-update.png" alt-text="Screenshot of the Power BI Embedded Basics window with subscription, create new resource group, and the capacity administrator fields highlighted.":::
 

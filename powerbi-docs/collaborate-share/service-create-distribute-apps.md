@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
 ms.custom: contperf-fy21q3
-ms.date: 12/14/2023
+ms.date: 1/11/2023
 
 LocalizationGroup: Share your work
 ---
@@ -75,6 +75,21 @@ Before you leave the **Setup** tab, you can decide if you want to allow app user
 
 1. Select **Next: [Add content](#add-content-to-the-app)**.
 
+#### Allow access to hidden content
+
+Also, before you leave the **Setup** tab, you can decide if you want users to have access to hidden content.
+
+> [!CAUTION]
+> If users have a direct link to *any* of the content in your app, they can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
+
+1. Expand **Advanced settings**.
+
+1. Under **Access to hidden content**, slide the toggle to **On**.
+
+    :::image type="content" source="media/service-create-distribute-apps/access-hidden-content.png" alt-text="Screenshot showing turning on Access to hidden content.":::
+
+1. Select **Next: [Add content](#add-content-to-the-app)**.
+
 ### Add content to the app
 
 On the **Content** tab, you add the content from the workspace to the app.
@@ -133,10 +148,12 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     >[!IMPORTANT]
     >
-    >- Hiding content from the audience makes it unavailable in the published app for that audience.
+    >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you select [Allow access to hidden content](#allow-access-to-hidden-content), a user with a direct link to *any* of the content in the app can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
     >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
+    >
+    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
@@ -360,7 +377,7 @@ Things to keep in mind about publishing apps:
 - Having multiple audiences isn't fully supported in deployment pipelines. Content visibility of new content that you add to an org app must still be managed manually via audience management.
 - When using "Add a Link", you can only open embed links in the content area.
 - Apps can have a maximum of 200 dashboards.
-- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Azure AD Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+- If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ## Next steps
 
@@ -369,5 +386,3 @@ Things to keep in mind about publishing apps:
 - [Power BI apps for external services](../connect-data/service-connect-to-services.md)
 - [Power BI Admin Portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

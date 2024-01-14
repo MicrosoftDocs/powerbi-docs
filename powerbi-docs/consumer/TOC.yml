@@ -74,8 +74,6 @@
     items: 
     - name: "Types of visualizations"
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: "Copy a visual and paste it elsewhere"
-      href: end-user-copy-paste.md
     - name: "Drill down in a visualization"
       href: end-user-drill.md
     - name: "How to use an ArcGIS map in Power BI"
@@ -124,8 +122,6 @@
       href: end-user-recent.md
     - name: "Search and sort content in Power BI"
       href: end-user-search-sort.md
-    - name: "Turn on preview features"
-      href: end-user-preview-features.md
   - name: Get data
     items: 
     - name: "Workspaces in Power BI"

@@ -24,7 +24,7 @@
       href: service-admin-release-management.md     
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
-    - name: Using Azure AD B2B
+    - name: Using Microsoft Entra B2B
       href: service-admin-azure-ad-b2b.md
     - name: Use customer managed keys
       href: service-encryption-customer-managed-keys.md
@@ -113,9 +113,7 @@
       - name: Semantic model connectivity with the XMLA endpoint
         href: service-premium-connect-tools.md
       - name: Interactive and background operations
-        href: service-premium-interactive-background-operations.md
-      - name: Premium support for China North
-        href: service-admin-premium-china-north.md                  
+        href: service-premium-interactive-background-operations.md                 
       - name: Troubleshoot XMLA endpoint connectivity
         href: troubleshoot-xmla-endpoint.md
       - name: Power BI Premium FAQ

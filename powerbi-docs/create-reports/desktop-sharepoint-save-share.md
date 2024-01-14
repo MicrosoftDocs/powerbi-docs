@@ -108,7 +108,7 @@ You can also manage who has access to the file through the **Manage Access** opt
 ## Prerequisites to sharing a report from Power BI Desktop
 
 To share a file stored in OneDrive or SharePoint the following requirements must all be met:
--	You're signed-in to Power BI Desktop with your Azure Active Directory account.   
+-	You're signed-in to Power BI Desktop with your Microsoft Entra account.   
 -	The feature is enabled through the options menu in Power BI Desktop.
 -	The feature is enabled by your Power BI Admin.
 

@@ -18,25 +18,25 @@ You can get seamless single sign-on (SSO) connectivity, enabling Power BI report
 * Active Directory (AD) SSO, which includes:
   * [Kerberos](service-gateway-sso-kerberos.md) constrained delegation.
   * [Security Assertion Markup Language (SAML)](service-gateway-sso-saml.md).
-* Azure Active Directory (Azure AD) SSO.
+* Microsoft Entra SSO.
 
 > [!NOTE]
 > SSO is only supported by Power BI datasets and not by Power BI dataflows.
 
 ## Supported data sources for SSO
 
-AD SSO is usually configured for on-premises data sources that are secured within your on-premises network. Azure AD SSO is configured for data sources that support Azure Active Directory authentication, typically cloud data sources, secured behind an Azure Virtual Network.
+AD SSO is usually configured for on-premises data sources that are secured within your on-premises network. Microsoft Entra SSO is configured for data sources that support Microsoft Entra authentication, typically cloud data sources, secured behind an Azure Virtual Network.
 
-While the on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md) or *Refresh* for the AD-based SSO options, only [DirectQuery](desktop-directquery-about.md) is supported for Azure AD SSO.
+While the on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md) or *Refresh* for the AD-based SSO options, only [DirectQuery](desktop-directquery-about.md) is supported for Microsoft Entra SSO.
 
 Power BI supports the following data sources:
 
 
-* Amazon Redshift (Azure AD)
+* Amazon Redshift (Microsoft Entra ID)
 * Azure Databricks
-* Azure Data Explorer (Azure AD)
-* Azure SQL (Azure AD)
-* Azure Synapse Analytics (Azure AD)
+* Azure Data Explorer (Microsoft Entra ID)
+* Azure SQL (Microsoft Entra ID)
+* Azure Synapse Analytics (Microsoft Entra ID)
 * Denodo (Kerberos)
 * Hive LLAP (Kerberos)
 * Impala (Kerberos)
@@ -44,7 +44,7 @@ Power BI supports the following data sources:
 * SAP BW Application Server (Kerberos)
 * SAP BW Message Server (Kerberos)
 * SAP HANA (Kerberos and SAML)
-* Snowflake (Azure AD)
+* Snowflake (Microsoft Entra ID)
 * Spark (Kerberos)
 * SQL Server (Kerberos)
 * Teradata (Kerberos)
@@ -65,4 +65,4 @@ You can also configure a report that is set up for refresh in the Power BI servi
 Now that you understand the basics of SSO through the gateway, read detailed information about setting up SSO here:
 
 * [Active Directory (AD) SSO](service-gateway-active-directory-sso.md)
-* [Azure Active Directory (Azure AD) SSO](service-gateway-azure-active-directory-sso.md)
+* [Microsoft Entra SSO](service-gateway-azure-active-directory-sso.md)

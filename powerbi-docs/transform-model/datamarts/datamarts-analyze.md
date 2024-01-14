@@ -67,7 +67,7 @@ There are a few things to keep in mind about the Visual Query editor:
 
 ## Analyze outside the editor
 
-Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The login process is the same as the sign-in process for Power BI.
+Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Microsoft Entra ID or MFA. The login process is the same as the sign-in process for Power BI.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-14.png" alt-text="Diagram that shows data sources and datamarts with S Q L and Azure data studio.":::
 
@@ -106,7 +106,7 @@ To use SQL Server Management Studio (SSMS), you must be using SSMS Version 18.0 
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-08.png" alt-text="Screenshot of the database engine option in S S M S.":::
 
-Once the **Connect to Server** window is open, paste the connection string copied from the previous section of this article into the **Server name** box. Select **Connect** and proceed with the appropriate credentials for authentication. Remember that only Azure Active Directory - MFA authentication is supported.
+Once the **Connect to Server** window is open, paste the connection string copied from the previous section of this article into the **Server name** box. Select **Connect** and proceed with the appropriate credentials for authentication. Remember that only Microsoft Entra ID - MFA authentication is supported.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-09.png" alt-text="Screenshot of the S Q L server connect to server window.":::
 
@@ -224,5 +224,3 @@ The following articles provide more information about datamarts and Power BI:
 For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
-
-

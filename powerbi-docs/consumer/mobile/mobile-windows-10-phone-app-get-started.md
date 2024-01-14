@@ -13,9 +13,9 @@ ms.custom: intro-get-started
 # Get started with the Power BI app for Windows
 
 >[!NOTE]
->The Power BI Windows app will be retired on December 31st, 2023. As of that date, the app will no longer be available for download from the Microsoft apps store, and no further product updates for it will be released. Please use the Power BI service to view your Power BI content on Windows devices.
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
 >
->This change only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
 
 The Power BI app for Windows brings Power BI to your Windows device. You get up-to-date, touch-enabled access to your business information. You can interact with all the Power BI reports, dashboards, and apps that are available to you in the Power BI service - both those that you've [created](../../fundamentals/service-get-started.md) yourself as well as those that have been created by others and shared with you. All this from the Power BI app for Windows.
 

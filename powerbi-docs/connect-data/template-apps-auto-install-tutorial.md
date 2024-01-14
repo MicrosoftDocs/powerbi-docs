@@ -55,9 +55,9 @@ The following basic flow lists what the application does when the customer launc
 
 ## Prerequisites
 
-* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
+* Your own Microsoft Entra tenant set up. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
 * A [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) registered in the preceding tenant.
-* A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
+* A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
 * To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -65,7 +65,9 @@ The following basic flow lists what the application does when the customer launc
 
 Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure function along with an Azure app configuration. Create your app configuration as described in the article.
 
-### Register an application in Azure AD
+<a name='register-an-application-in-azure-ad'></a>
+
+### Register an application in Microsoft Entra ID
 
 Create a service principal as described in [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md).
 

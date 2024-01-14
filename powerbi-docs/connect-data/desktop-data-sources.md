@@ -74,7 +74,7 @@ The **Database** category provides the following data connections:
 * Amazon Redshift
 * Impala
 * Google BigQuery
-* Google BigQuery (Azure AD)(Beta)
+* Google BigQuery (Microsoft Entra ID)(Beta)
 * Vertica
 * Snowflake
 * Essbase
@@ -272,7 +272,7 @@ The **Other** category provides the following data connections:
 * Blank Query
 
 > [!NOTE]
-> At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
+> At this time, it's not possible to connect to custom data sources secured using Microsoft Entra ID.
 
 ### Template apps
 

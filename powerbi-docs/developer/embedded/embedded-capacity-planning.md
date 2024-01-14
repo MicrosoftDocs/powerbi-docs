@@ -54,7 +54,7 @@ The following table summarizes all the limitations that are dependent on the cap
 
 To test or assess your capacity load:
 
-1. Create a [Premium Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Azure Active Directory (Azure AD) tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
+1. Create a [Premium Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Microsoft Entra tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
 
 2. Assign the workspace (or workspaces) you'll use to test to the Premium capacity you created. You can assign a workspace in one of the following ways:
 

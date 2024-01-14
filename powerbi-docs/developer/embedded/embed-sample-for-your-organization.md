@@ -53,7 +53,7 @@ Before you start this tutorial, verify that you have both the following Power BI
 
 * **Power BI dependencies**
 
-  * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+  * Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md).
 
     * One of the following licenses:
 
@@ -97,7 +97,7 @@ Before you start this tutorial, verify that you have both the following Power BI
 
 To create an *embed for your organization* sample app, follow these steps:
 
-1. [Register an Azure AD application](#step-1---register-an-azure-ad-application).
+1. [Register a Microsoft Entra application](#step-1---register-an-azure-ad-application).
 
 2. [Create a Power BI workspace](#step-2---create-a-power-bi-workspace).
 
@@ -107,9 +107,11 @@ To create an *embed for your organization* sample app, follow these steps:
 
 5. [Embed your content](#step-5---embed-your-content).
 
-## Step 1 - Register an Azure AD application
+<a name='step-1---register-an-azure-ad-application'></a>
 
-Registering your application with Azure AD allows you to establish an identity for your app.
+## Step 1 - Register a Microsoft Entra application
+
+Registering your application with Microsoft Entra ID allows you to establish an identity for your app.
 
 [!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
@@ -179,7 +181,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 # [.NET Core](#tab/net-core)
 
-### Configure your Azure AD app
+<a name='configure-your-azure-ad-app'></a>
+
+### Configure your Microsoft Entra app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -220,7 +224,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 # [.NET Framework](#tab/net-framework)
 
-### Configure your Azure AD app
+<a name='configure-your-azure-ad-app'></a>
+
+### Configure your Microsoft Entra app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -257,7 +263,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 # [React TypeScript](#tab/react)
 
-### Configure your Azure AD app
+<a name='configure-your-azure-ad-app'></a>
+
+### Configure your Microsoft Entra app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -274,7 +282,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     
 6. Save your changes.
 
-:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the Azure AD app authentication configurations and the web redirect URI set for localhost 3000.":::
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the Microsoft Entra app authentication configurations and the web redirect URI set for localhost 3000.":::
 
 ### Configure the sample embedding app
 
@@ -303,7 +311,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
    `npm run start`
 
     >[!NOTE]
-    >During your first sign in, you'll be prompted to allow Azure AD permissions for the app.
+    >During your first sign in, you'll be prompted to allow Microsoft Entra permissions for the app.
 
 ---
 

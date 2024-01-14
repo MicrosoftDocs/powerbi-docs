@@ -39,9 +39,9 @@ Adding a data-bound image to a page header or page footer requires additional st
   
      An image placeholder appears on the report design surface.  
   
-## Next steps
+## Related content
 
- [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)   
- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)   
- [Add an External Image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)   
+- [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)   
+- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)   
+- [Add an External Image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)   
  
