@@ -7,7 +7,7 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/26/2023
+ms.date: 01/14/2024
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
@@ -31,9 +31,9 @@ There are several partner accelerators that vary in their deployment, acquisitio
 
 | **Partner** <br> (accelerator)                  | **Description** | Website/Product link |
 |-------------------------------------------------|--------------------------------|---------|
-| :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="The logo of the Reporting Hub.":::    | The Reporting Hub is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. | [The Reporting Hub](https://thereportinghub.com/) |
-| :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="The logo of Maq Software.":::               | The EmbedFAST is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using the EmbedFAST. | [EmbedFAST](https://maqsoftware.com/embedfast) |
-| :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="The logo of Count.":::                           | The BiHub presents a seamless, no-code reporting gateway designed for Power BI, using cutting-edge Embedded technology. The BiHub is a cloud-based application that is installed and deployed within your Azure environment. It integrates with existing Microsoft tenants and communicates with Power BI Embedded via Microsoft APIs. | [BiHub](https://www.ilink-digital.com/bihub/) |
+| :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="The logo of the Reporting Hub.":::    | The Reporting Hub is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. | [The Reporting Hub](https://shiftanalytics.ca) |
+| <span style="color:blue"> **EmbedFast** </span> | The EmbedFAST is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using the EmbedFAST. | [EmbedFAST](https://maqsoftware.com/embedfast) |
+| :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="The logo of Count.":::                           | EmbeDash enables Independent Software Vendors (ISVs) to provide Analytics as a Service (AaaS) using Power BI Embedded. This Accelerator reduces the time to market and allows ISVs to add strong self-service reporting capabilities, without having to code those themselves. | [EmbeDash](https://embedash.com/) |
 
 The following diagram illustrates the main modules of an accelerator and how they relate to your Azure and Power BI subscriptions and interact with to your existing multitenant web application:
 
@@ -125,15 +125,15 @@ The following tables compare features of the different accelerators from our par
 |-------------------------------------------------|:-----------------:|:--------------:|:---------------------:|:----------------:|
 | [**Shift Analytics**](https://shiftanalytics.ca/)​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                | ✔​                | ✔​                      | ​                   |
 | [**MAQ Software**](https://maqsoftware.com/)​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)                                              |   | ​ | ​                         | ✔​                |
-| [**iLink Digital​**](https://www.ilink-digital.com/) <br>[BiHub](https://www.ilink-digital.com/bihub/)                                            | ✔​                | ​                  | ​                         | ​                   |
+| [**iLink Digital​**](https://www.ilink-digital.com/) <br>[EmbeDash](https://embedash.com/)                                            | ✔​                | ​                  | ​                         | ​                   |
 
 ### Acquisition and billing options
 
 | Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |:---------------------------------------------|:---------------------------------------------------:|:--------------------------------------------------:|:--------------:|:----------------------:|:------------------------------------:|
-| **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/) | ✔​                                                 | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi)​                                  | ✔​             | ​                       | ​                                     |
-| **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)            |                                    | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_2)                                  | ​               | ✔​                    | ✔​                                   |
-| **iLink​** <br>[BiHub](https://www.ilink-digital.com/bihub/)                        |  ​                                                   | ​                                | ✔​              | ​                      | ✔​                                   |
+| **Shift Analytics**​ <br> [The Reporting Hub](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview) | ✔​                                                 | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi)​                                  | ✔​             | ​                       | ​                                     |
+| **MAQ Software**​ <br>[EmbedFAST](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi?tab=Overview)            |                                    | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_2)                                  | ​               | ✔​                    | ✔​                                   |
+| **iLink​** <br>[EmbeDash](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                        |  ​                                                   | ​                                | ✔​              | ​                      | ✔​                                   |
 
 ### Added capabilities
 
@@ -141,7 +141,7 @@ The following tables compare features of the different accelerators from our par
 |----------------------------------------------|:-------------------------------:|:-----------------------------:|:--------------------------------:|:-----------------:|:----------------:|:----------------------------:|:--------------------:|:-----------------------------:|:--------------------------:|:-------------------------:|
 | **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔                                         | ✔                                     | ✔                                          | ✔                 | ✔                | ✔                                        | ​                             | ✔​                                         | ✔​                                     | ✔                               |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)​            | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 |✔​                 | ​                                          |✔​                            | ✔​                                         | ​                                       | ​                                   |
-| **iLink Digital​** <br> [BiHub](https://www.ilink-digital.com/bihub/)                                   | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 | ✔                 | ​                                         | ✔                           | ​                                           | ​                                        | ​                                  |
+| **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                                   | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 | ✔                 | ​                                         | ✔                           | ​                                           | ​                                        | ​                                  |
 
 ## Related content
 
@@ -151,6 +151,6 @@ The following tables compare features of the different accelerators from our par
 
   * [EmbedFAST](https://maqsoftware.com/embedfast)
 
-  * [BiHub](https://www.ilink-digital.com/bihub/)
+  * [EmbeDash](https://embedash.com/)
 
 * [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
