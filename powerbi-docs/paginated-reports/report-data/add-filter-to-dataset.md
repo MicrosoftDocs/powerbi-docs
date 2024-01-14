@@ -39,8 +39,9 @@ ms.reviewer: rpatkar
   
 1. Select **OK**.
   
-## Next steps
- [Add Dataset Filters, Data Region Filters, and Group Filters (Report Builder)](../report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Expression Examples (Report Builder)](../expressions/report-builder-expression-examples.md)   
- [Add a Filter (Report Builder)](../report-design/add-filter-report-builder.md)   
+## Related content
+
+- [Add Dataset Filters, Data Region Filters, and Group Filters (Report Builder)](../report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
+- [Expression Examples (Report Builder)](../expressions/report-builder-expression-examples.md)   
+- [Add a Filter (Report Builder)](../report-design/add-filter-report-builder.md)   
   

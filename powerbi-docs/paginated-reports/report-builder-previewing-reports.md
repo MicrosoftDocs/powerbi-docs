@@ -32,7 +32,7 @@ Frequently, you preview a report as a step in updating and then saving a report 
 ## External report items
  Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it's possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.
   
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
 - [Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)

@@ -105,8 +105,7 @@ To consume a Table or Matrix in an Accessible PDF report, navigate through each 
 > [!NOTE]
 > When using a screen reader alongside the keyboard to navigate through the report objects, the cursor (blinking line) isn't highlighted on the object in focus. You can only tell the object in focus when navigating by what the screen reader reads aloud.
 
-
-## Next steps
+## Related content
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)
 - [Use accessibility tools to create accessible paginated reports (Power BI Report Builder)](paginated-use-accessibility-tools.md)

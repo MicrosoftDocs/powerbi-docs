@@ -62,9 +62,8 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
 - To keep user activity logs, follow the steps in [Track user activities in Power BI](../admin/service-admin-auditing.md). You can get log data from either the Power BI activity log or the Unified audit log.
 
-- All Fabric items have to be deleted individually. Deleting the capacity or workspaces deletes the Fabric's items immediately. 
-
-- All Fabric Trial capacities have to be deleted before the migration. To delete Fabric trial capacities, the users who own the trial capacity need to cancel the trial from the Me Profile at least one and a half days before the migration.
+- **All Fabric items have to be deleted individually** before deleting the capacity or workspace. Deleting the capacity or workspaces will not delete the Fabric items immediately. 
+- All Fabric trial capacities have to be deleted before the migration. To delete Fabric trial capacities, **the users who own** the trial capacity need to cancel the trial from the Me profile at least one and a half days before the migration.
 
 ## Request a region move
 

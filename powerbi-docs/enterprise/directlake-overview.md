@@ -147,7 +147,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Known issues and limitations
 
-- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse.
+- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
 
 - Direct Lake models created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
 
@@ -166,8 +166,6 @@ You may want to disable if, for example, you need to allow completion of data pr
 - The length of string column values is limited to 4,000 Unicode characters.
 
 - Embedded scenarios that rely on embedded entities are not yet supported.
-
-- Tables based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
 
 - Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
 

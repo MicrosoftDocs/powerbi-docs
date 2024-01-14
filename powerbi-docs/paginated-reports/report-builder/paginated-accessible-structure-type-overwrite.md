@@ -142,7 +142,7 @@ The default value is *None*. Here are the available values:
 - You can set a column header cell and a row header cell.  
 - Setting a row header (a horizontal header) for a table with right-to-left layout doesn't associate data cells on the left of it with the header in an exported tagged PDF.
  
-## Next steps
+## Related content
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)
 - [Use accessibility tools to create accessible paginated reports (Power BI Report Builder)](paginated-use-accessibility-tools.md)

@@ -113,9 +113,7 @@
       - name: Semantic model connectivity with the XMLA endpoint
         href: service-premium-connect-tools.md
       - name: Interactive and background operations
-        href: service-premium-interactive-background-operations.md
-      - name: Premium support for China North
-        href: service-admin-premium-china-north.md                  
+        href: service-premium-interactive-background-operations.md                 
       - name: Troubleshoot XMLA endpoint connectivity
         href: troubleshoot-xmla-endpoint.md
       - name: Power BI Premium FAQ
