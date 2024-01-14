@@ -73,7 +73,7 @@ The following code example shows an expression that retrieves a server aggregate
 =Aggregate(Fields!LineTotal.Value, "GroupbyOrder")
 ```
 
-## Next steps
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

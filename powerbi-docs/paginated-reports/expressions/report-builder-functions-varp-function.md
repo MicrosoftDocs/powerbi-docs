@@ -65,7 +65,7 @@ The following code example provides a population variance of line item totals in
 =VarP(Fields!LineTotal.Value, "Order")
 ```
 
-## Next steps
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

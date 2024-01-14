@@ -159,7 +159,7 @@ For more information, see [Filter, Group, and Sort Data (Power BI Report Builder
 
 For many reports, calculations that are scoped to groups can create many cells that have zero (0) or null values. To reduce clutter in your report, add an expression to return blanks if the aggregate value is 0. For more information, see "Examples that Suppress Null or Zero Values" in [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md).
 
-## Next steps
+## Related content
 
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
 - [Group Expression Examples (Power BI Report Builder)](./group-expression-examples-report-builder.md)

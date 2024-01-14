@@ -48,7 +48,7 @@ The following is an expression that you can use for the **BackgroundColor** prop
 =IIF(RowNumber("GroupbyCategory") Mod 2, "White", "PaleGreen")
 ```
 
-## Next steps
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

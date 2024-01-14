@@ -87,8 +87,8 @@ Then the first column is not rendered during runtime because the entire column i
 
 For reports that were authored before SQL Server Reporting Services 2016, a default parameter layout grid of 2 columns and N rows is used during runtime. To change the default layout, open the report in Report Builder and save the report. After you save the report, the customized parameter layout information is saved to the .rdl file.
 
-## Next Steps
+## Related content
 
- [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-builder-parameters.md)
+- [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-builder-parameters.md)
 
 

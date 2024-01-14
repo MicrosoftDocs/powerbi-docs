@@ -34,8 +34,9 @@ ms.author: maggies
   
 3.  Repeat step 2 for additional query parameters.  
   
-## Next steps
- [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs)   
+## Related content
+
+- [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs)   
 
   
   

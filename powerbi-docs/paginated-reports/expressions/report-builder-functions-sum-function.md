@@ -77,7 +77,7 @@ In a matrix data region with nested row groups Category and Subcategory, and nes
 =Max(Sum(Fields!Sales.Value))
 ```
 
-## Next steps
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

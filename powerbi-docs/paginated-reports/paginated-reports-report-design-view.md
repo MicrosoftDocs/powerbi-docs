@@ -102,7 +102,7 @@ For more information, see [Group visuals in Power BI Desktop reports](../create-
 
 The current report status bar shows the name of the server the report is connected to, or it shows "No current report server." You can select **Connect** to connect to a server.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) 
 

@@ -28,7 +28,7 @@ ms.custom: updatefrequency5
   
          The expression appears on the design surface as `<<Expr>>`.  
   
-## Next steps
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
