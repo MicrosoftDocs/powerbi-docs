@@ -105,4 +105,4 @@ For more information, refer to the [item.metadata.json schema document](https://
 
 - [Power BI Desktop project report folder](projects-report.md)  
 - [Power BI Desktop projects](projects-overview.md)  
-- [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  
+- [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference)  
