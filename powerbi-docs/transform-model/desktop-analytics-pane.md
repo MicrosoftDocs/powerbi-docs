@@ -129,7 +129,7 @@ You can't apply any dynamic lines to these visuals:
 
 The *percentile line* is only available when using imported data in Power BI Desktop or when connected live to a model on a server that's running Analysis Service 2016 or later, Azure Analysis Services, or a semantic model on the Power BI service.
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 

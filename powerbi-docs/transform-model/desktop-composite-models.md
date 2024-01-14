@@ -474,7 +474,7 @@ The existing limitations of DirectQuery still apply when you use composite model
 
 
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

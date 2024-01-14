@@ -138,7 +138,7 @@ When you're ready, Power BI Desktop can save your work in the form of a *.pbix* 
 To save your work, select **File** \> **Save** (or **File** \> **Save As**), as shown in the following image.
 :::image type="content" source="media/desktop-query-overview/query-overview-save-work.png" alt-text=" Screenshot of Power BI Desktop showing the Power Query Editor File tab. The save and save as options highlighted.":::
 
-## Next steps
+## Related content
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

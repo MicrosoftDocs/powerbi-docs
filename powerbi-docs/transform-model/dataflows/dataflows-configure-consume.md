@@ -105,7 +105,7 @@ In DirectQuery mode, you can quickly interrogate large-scale semantic models loc
 
 Using Import brings the data into Power BI, and requires the semantic model to be refreshed independently of the dataflow.
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 
