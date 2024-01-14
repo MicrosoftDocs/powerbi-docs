@@ -144,7 +144,7 @@ After you edit it, here's what the list of data providers in the config file loo
 
 That’s it. You can now publish reports that use this new functionality to your report server.
 
-## Related content
+## Next steps
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
 - [What is Power BI Report Server?](../report-server/get-started.md)

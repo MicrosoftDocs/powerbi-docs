@@ -144,7 +144,7 @@ The formulas for a *P1 SKU* will be:
 |Max concurrent report renders | $ ~32.4 = {8 \times {30} \over 0.6 \times{4} + 0.3 \times{10} + 0.1 \times{20}} $ |
 |Total SKU users | $ ~650 = {32.4 \over 0.05} $ |
 
-## Related content
+## Next steps
 
 >[!div class="nextstepaction"]
 >[What is Power BI Premium?](./../enterprise/service-premium-what-is.md)

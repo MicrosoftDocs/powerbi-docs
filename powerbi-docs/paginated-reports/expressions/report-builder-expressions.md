@@ -82,6 +82,6 @@ When you create an expression for a specific report item property, the reference
   
 - Expression syntax is validated at design time. Expression scope validation occurs when you publish the report. For validation that depends on the actual data, errors can only be detected at run-time. Some of these expressions produce **#Error** as an error message in the rendered report. 
 
-## Related content
+## Next steps
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)

@@ -58,7 +58,7 @@ Both options allow you to quickly identify any related reports and dashboards. D
 
 We recommend you contact the owner of each related item to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize downtime and frustration.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

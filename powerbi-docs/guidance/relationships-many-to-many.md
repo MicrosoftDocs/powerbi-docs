@@ -289,7 +289,7 @@ When you need to relate a dimension-type table to a fact-type table, and the fac
   - Control summarization with measure logic—return BLANK when lower-level dimension-type columns are used to filter or group
   - Hide summarizable fact-type table columns—this way, only measures can be used to summarize the fact-type table
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

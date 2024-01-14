@@ -30,6 +30,6 @@ The following table lists the device information settings for rendering in Text 
 |**SuppressLineBreaks**|Indicates whether line breaks are removed from the data included in the output. The default value is **false**. If the value is **true**, the **FieldDelimiter**, **RecordDelimiter**, and **Qualifier** settings can't be a space character.|
 |**UseFormattedValues**|Indicates whether formatted strings are put into the CSV output. The default value is **true** when **ExcelMode** is **true**; otherwise it's **false**.|
 
-## Next steps
+## Related content
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)

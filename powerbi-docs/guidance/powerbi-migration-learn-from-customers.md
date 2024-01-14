@@ -158,7 +158,7 @@ One of their most important data governance decisions related to management of P
 > [!IMPORTANT]
 > Pay attention to how Premium capacities are used, and how workspaces are assigned to them.
 
-## Next steps
+## Related content
 
 Other helpful resources include:
 

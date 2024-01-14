@@ -76,7 +76,7 @@ Bitwise operators perform bit manipulations between two integer terms in an expr
 | <\< | Performs an arithmetic left-shift on a bit pattern. |
 | >> | Performs an arithmetic right-shift on a bit pattern. |
 
-## Related content
+## Next steps
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

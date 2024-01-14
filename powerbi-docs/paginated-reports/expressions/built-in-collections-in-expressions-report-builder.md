@@ -43,7 +43,7 @@ ms.custom: updatefrequency5
 |*Collection("Member")*|`=User("Language")`|  
 |*Collection.Member*|`=User.Language`|  
   
-## Related content
+## Next steps
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

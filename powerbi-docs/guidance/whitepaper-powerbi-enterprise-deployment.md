@@ -24,7 +24,7 @@ You can [**download the complete enterprise deployment whitepaper**](https://aka
 
 * [**Planning a Power BI Enterprise Deployment whitepaper**](https://aka.ms/PBIEnterpriseDeploymentWP)
 
-## Next steps
+## Related content
 
 For more information on Power BI, see the following resources:
 

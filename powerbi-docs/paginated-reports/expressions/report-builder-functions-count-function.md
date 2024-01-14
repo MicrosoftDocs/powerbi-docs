@@ -69,7 +69,7 @@ The following code example shows an expression that calculates the number of non
 "Count (Category): " & Count(Fields!Size.Value,"GroupbyCategory")
 ```
 
-## Related content
+## Next steps
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

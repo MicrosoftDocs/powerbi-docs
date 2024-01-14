@@ -82,7 +82,7 @@ Every BI tool has its strengths and focus areas. For this reason, the exact repo
 
 When recreating report visuals, focus more on the big picture business questions that are being addressed by the report. It removes the pressure to replicate the design of every visual in precisely the same way. While content consumers appreciate consistency when using migrated reports, it's important not to get caught up in time-consuming debates about small details.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-create-validate-content.md), learn about stage 4, which is concerned with creating and validating content when migrating to Power BI.
 

@@ -24,7 +24,7 @@ ms.author: maggies
 |**OmitHyperlinks**|Indicates whether to omit the Hyperlink action on all items where it is set. The default value is **false**|  
 |**OmitDrillthroughs**|Indicates whether to omit the Drillthrough action on all items where it is set. The default value is **false**|  
   
-## Related content
+## Next steps
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
 

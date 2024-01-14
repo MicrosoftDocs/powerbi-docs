@@ -89,7 +89,7 @@ As with any other Power BI report, if the paginated report data source is on pre
 
 1. For more details, see the Power BI service article [What is an on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
-## Related content
+## Next steps
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

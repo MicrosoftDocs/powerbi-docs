@@ -305,6 +305,6 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 7. Now you can view your paginated report in the Power BI service.
 
-## Related content
+## Next steps
 
-- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+[What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

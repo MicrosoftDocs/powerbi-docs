@@ -134,7 +134,7 @@ Public Function ShowParameterValues(ByVal parameter as Parameter)
 End Function
 ```
 
-## Related content
+## Next steps
 
 - [Add Code to a Report (Power BI Report Builder)](./add-code-to-a-report.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

@@ -67,7 +67,7 @@ CountDistinct(expression, scope, recursive)
 "Distinct count (Category): " & CountDistinct(Fields!Size.Value,"GroupbyCategory")  
 ```  
   
-## Related content
+## Next steps
 
 - [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)
 - [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)

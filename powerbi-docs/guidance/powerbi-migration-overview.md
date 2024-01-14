@@ -112,7 +112,7 @@ Every migration is slightly different. It can depend on the organizational struc
 
 This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/). Contributors and reviewers include Marc Reguera, Venkatesh Titte, Patrick Baumgartner, Tamer Farag, Richard Tkachuk, Matthew Roche, Adam Saxton, Chris Webb, Mark Vaillancourt, Daniel Rubiolo, David Iseminger, and Peter Myers.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-pre-migration-steps.md), learn about the pre-migration steps when migrating to Power BI.
 

@@ -55,6 +55,6 @@ Suppose that you deleted this language by mistake. You can use a previously gene
 
 :::image type="content" source="./media/translation-sheet-import/language-reimport.png" alt-text="Screenshot shows the translation grid with the recovered language in the far right column." lightbox="./media/translation-sheet-import/language-reimport.png":::
 
-## Next steps
+## Related content
 
 - [Manage data model translations at the enterprise level](translation-manage-data-model-enterprise.md)

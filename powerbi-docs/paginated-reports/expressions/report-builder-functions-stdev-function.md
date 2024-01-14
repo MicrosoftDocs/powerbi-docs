@@ -65,7 +65,7 @@ The following code example provides the standard deviation of line item totals i
 =StDev(Fields!LineTotal.Value, "Order")
 ```
 
-## Related content
+## Next steps
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)
