@@ -168,21 +168,22 @@ FROM Production.Product
   
  [Add a total to a group or tablix data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs)  
   
-## Next steps  
- [Group expression examples (Power BI Report Builder)](../expressions/group-expression-examples-report-builder.md)  
+## Related content
+
+- [Group expression examples (Power BI Report Builder)](../expressions/group-expression-examples-report-builder.md)  
   
- [Filter equation examples (Power BI Report Builder)](../expressions/filter-equation-examples-report-builder.md)  
+- [Filter equation examples (Power BI Report Builder)](../expressions/filter-equation-examples-report-builder.md)  
   
- [Add dataset filters, data region filters, and group filters (Power BI Report Builder)](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)  
+- [Add dataset filters, data region filters, and group filters (Power BI Report Builder)](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)  
   
- [Understanding groups (Power BI Report Builder)](/sql/reporting-services/report-design/understanding-groups-report-builder-and-ssrs)  
+- [Understanding groups (Power BI Report Builder)](/sql/reporting-services/report-design/understanding-groups-report-builder-and-ssrs)  
   
- [Creating recursive hierarchy groups (Power BI Report Builder)](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs)  
+- [Creating recursive hierarchy groups (Power BI Report Builder)](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs)  
   
- [Expression scope for totals, aggregates, and built-in collections (Power BI Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
+- [Expression scope for totals, aggregates, and built-in collections (Power BI Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
- [Report and group variables collections references (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder)  
+- [Report and group variables collections references (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder)  
   
- [Displaying a series with multiple data ranges on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)  
+- [Displaying a series with multiple data ranges on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)  
   
- [Linking multiple data regions to the same dataset (Power BI Report Builder)](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)  
+- [Linking multiple data regions to the same dataset (Power BI Report Builder)](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)  

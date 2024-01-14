@@ -76,8 +76,9 @@ In Advanced mode, the Row Groups pane and the Column Groups pane display a hiera
   
 - **(Static)** Indicates a static member with no header cell, known as a hidden static.  
   
-## Next steps  
- [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
+## Related content
+
+- [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)   
+- [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
   
   
