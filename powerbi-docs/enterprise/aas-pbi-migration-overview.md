@@ -210,7 +210,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Migrate Azure Analysis Services to Power BI" on Bing](https://www.bing.com/search?q=migrate+azure+analysis+services+to+power+bi)
 
-## See also
+## Related content
 
-[Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup)  
-[Azure Data Lake Storage Gen 2 (ADLS Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
+- [Azure Analysis Services database backup and restore](/azure/analysis-services/analysis-services-backup)  
+- [Azure Data Lake Storage Gen 2 (ADLS Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)

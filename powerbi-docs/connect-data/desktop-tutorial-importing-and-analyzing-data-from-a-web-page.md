@@ -198,7 +198,7 @@ To change the map to a pie chart, select the map and then choose the **Pie chart
 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
-## See also
+## Related content
 
 - [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 - [Watch Power BI videos](../fundamentals/videos.md)

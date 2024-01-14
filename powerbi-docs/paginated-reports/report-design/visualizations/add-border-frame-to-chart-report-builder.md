@@ -38,10 +38,10 @@ ms.reviewer: monaraya
   
 1. (Optional) If you choose a Frame type, specify a style and color for the frame. The **Frame fill color** list contains common colors.  
   
-## Next steps  
+## Related content  
 
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)
- [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md)  
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)
+- [Add Bevel, Emboss, and Texture Styles to a Chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md)  
   
   

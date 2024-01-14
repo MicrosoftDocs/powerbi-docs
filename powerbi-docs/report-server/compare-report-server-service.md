@@ -68,6 +68,6 @@ The following Power BI service features are not supported within Power BI Report
 - **Export data – Data with current layout** option for all visuals, including the improvements to the Export to Excel experience for Power BI table and matrix visuals. Only the **Summarized data** option is supported within Power BI Report Server.
 - The key influencers visual.
 
-## Next steps
+## Related content
 
-[Install Power BI Report Server](install-report-server.md)
+- [Install Power BI Report Server](install-report-server.md)

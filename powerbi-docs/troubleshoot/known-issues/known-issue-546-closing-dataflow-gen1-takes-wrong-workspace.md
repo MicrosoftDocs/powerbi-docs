@@ -28,6 +28,6 @@ After you open and close a Dataflow Gen1, the Power BI service doesn't show the 
 
 To see the desired workspace, try refreshing the page in the web browser.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

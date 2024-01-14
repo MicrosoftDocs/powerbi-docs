@@ -202,7 +202,7 @@ The following considerations and limitations apply to Azure Machine Learning in 
 * Direct Query isn't supported.
 * Users with a Premium Per User (PPU) only license cannot use AI Insights from Power BI Desktop; you must use a non-PPU Premium license with its corresponding Premium capacity. You can still use AI Insights with a PPU license the Power BI service.
 
-## Next steps
+## Related content
 
 This article provided an overview of integrating Machine Learning into Power BI Desktop. The following articles might also be interesting and useful.
 

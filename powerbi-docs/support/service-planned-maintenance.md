@@ -37,7 +37,7 @@ If your organization is affected, we'll provide you with advance notice. Microso
   * [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
   * [Usage metrics (Preview)](../collaborate-share/service-modern-usage-metrics.md)
 
-## Next steps
+## Related content
 
 * [Enable service interruption notifications](/power-bi/support/service-interruption-notifications)
 * [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center)

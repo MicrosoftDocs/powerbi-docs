@@ -61,5 +61,5 @@ If all else fails, the final tip is to observe the system. Often, people ask wha
 
 Try opening the Power BI service and navigating to **Home**. Scroll down for links to Getting Started resources.
 
-## Next steps
+## Related content
 * [What is Power BI?](../fundamentals/power-bi-overview.md)

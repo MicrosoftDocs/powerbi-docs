@@ -212,6 +212,6 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 - You can't create a paginated report from Power BI semantic models based on a live connection.
 - The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)

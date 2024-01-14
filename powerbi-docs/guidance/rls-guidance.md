@@ -192,7 +192,7 @@ Creators and consumers with only Read permission on the semantic model will only
 
 When a user views a report in either a workspace or an app, RLS might or might not be enforced depending on their semantic model permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying semantic model when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

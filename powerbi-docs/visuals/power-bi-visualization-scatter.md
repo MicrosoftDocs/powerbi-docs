@@ -266,7 +266,7 @@ If your data doesn't include a specific row number or ID, you can create a field
 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your semantic model. Then add this column to your visual's **Values** option.
 
-## Next steps
+## Related content
 
 - Try [high-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

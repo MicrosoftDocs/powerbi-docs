@@ -115,7 +115,7 @@ Set formatting options for your data labels. In this example, we set the text co
 
 :::image type="content" source="media/desktop-ribbon-charts/power-bi-data-labels.png" alt-text="Screenshot that shows the final formatted ribbon chart." border="false":::
 
-## Next steps
+## Related content
 
 - Create [scatter charts and bubble charts in Power BI](power-bi-visualization-scatter.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

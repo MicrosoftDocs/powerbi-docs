@@ -206,6 +206,6 @@ The diagram shows three levels of BI strategy planning, which are each described
 > [!TIP]
 > Before you read the BI strategy articles, we recommend that you're already familiar with the [Fabric adoption roadmap](fabric-adoption-roadmap.md). The adoption roadmap describes considerations to achieve Fabric adoption and a healthy data culture. These BI strategy articles build upon the adoption roadmap.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md), learn about BI strategic planning.

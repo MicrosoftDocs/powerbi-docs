@@ -158,7 +158,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-two-contributors.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
 
-## Next steps
+## Related content
 
 - [Change how visuals interact](../create-reports/service-reports-visual-interactions.md) in a Power BI report.
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

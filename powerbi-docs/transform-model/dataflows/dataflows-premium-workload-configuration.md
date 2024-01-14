@@ -87,7 +87,7 @@ Take the following steps when investigating scenarios where the Compute engine i
 3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they do not all refresh at the same time.
 
 
-## Next steps
+## Related content
 The following articles provide more information about dataflows and Power BI:
 
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)

@@ -58,8 +58,8 @@ You can also focus on one data record in a visualization, and drill into the det
 
 - If the **Data point table** button in the ribbon is disabled and grayed-out, it means the selected visualization doesn't support it.
 
-## Next steps
+## Related content
 
-[Export data from Power BI visualizations](power-bi-visualization-export-data.md)
+- [Export data from Power BI visualizations](power-bi-visualization-export-data.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -251,9 +251,9 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Power BI automatic aggregations" on Bing](https://www.bing.com/search?q=power+bi+automatic+aggregations)
 
-## See also
+## Related content
 
-[Configure automatic aggregations](aggregations-auto-configure.md)  
-[User-defined aggregations](../transform-model/aggregations-advanced.md)  
-[DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  
-[Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
+- [Configure automatic aggregations](aggregations-auto-configure.md)  
+- [User-defined aggregations](../transform-model/aggregations-advanced.md)  
+- [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)  
+- [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  

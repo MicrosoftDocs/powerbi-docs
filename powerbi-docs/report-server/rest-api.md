@@ -49,7 +49,7 @@ A modern REST API calls for modern API documentation. The REST API is built on t
 
 A tool for testing HTTP request/response messages is [Fiddler](https://www.telerik.com/fiddler). Fiddler is a free web debugging proxy that can intercept your REST requests, making it easy to diagnose the HTTP request/ response messages.
 
-## Next steps
+## Related content
 
 Review the available APIs over on [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
 

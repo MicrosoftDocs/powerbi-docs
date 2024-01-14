@@ -154,7 +154,7 @@ When you connect to those multi-dimensional sources using DirectQuery, you can't
 
 The existing limitations of using DirectQuery still apply when you use composite models. Many of those limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery.
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

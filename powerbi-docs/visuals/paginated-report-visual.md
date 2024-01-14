@@ -120,7 +120,7 @@ When you use a Power BI semantic model as the data source for your paginated rep
 - Manually change the DAX query text in the auto-generated dataset to remove the part that sets the parameter to be a text value.  
 - Change the Power BI semantic model using Power Query to add a column that formats the date field as a text field.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md) 
 - [Tutorial: Create a paginated report and upload it to the Power BI service](../paginated-reports/paginated-reports-quickstart-aw.md) 

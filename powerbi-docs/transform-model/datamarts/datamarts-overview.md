@@ -94,7 +94,7 @@ Use **datamarts** when you need to:
 * Enable users who don’t have access to Power BI Desktop
 
 
-## Next steps
+## Related content
 This article provided an overview of datamarts and the many ways you can use them. 
 
 The following articles provide more information about datamarts and Power BI:

@@ -95,7 +95,7 @@ For paginated reports running longer than 10 minutes, we recommend using  the XM
 
   
 
-## Next steps
+## Related content
 
 - [Troubleshoot Design Issues With Paginated Reports](./troubleshoot-paginated-reports-design-issues.md)
 - [Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)

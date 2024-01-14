@@ -111,8 +111,8 @@ There are multiple options to load data into a Lakehouse, including data pipelin
 
 When you're finished adding relationships and DAX measures, you can then create reports, build a composite model, and query the model through XMLA endpoints in much the same way as any other model.
 
-## See also
+## Related content
 
-[Specify a fixed identity for a Direct Lake model](directlake-fixed-identity.md)
-[Direct Lake overview](directlake-overview.md)  
-[Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  
+- [Specify a fixed identity for a Direct Lake model](directlake-fixed-identity.md)
+- [Direct Lake overview](directlake-overview.md)  
+- [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  

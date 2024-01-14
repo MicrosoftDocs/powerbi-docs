@@ -56,7 +56,7 @@ ORDER BY Cnt ASC,path
 
 From here you can decide whether to delete the unused reports right away or replace the report with a message. You can let your users know the report is no longer being used, so they can contact an administrator for support. Then you can develop a cadence to delete them over time.
 
-## See also
+## Related content
 
 - [Publish .rdl files to Power BI from Reporting Services](/power-bi/guidance/publish-reporting-services-power-bi-service)
 - [Migrate SQL Server Reporting Services reports to Power BI](/power-bi/guidance/migrate-ssrs-reports-to-power-bi)

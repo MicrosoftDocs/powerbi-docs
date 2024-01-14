@@ -690,12 +690,12 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - *Version: 2.47.4766.4901 (June 2017), Released: January 10, 2018*
         - Security Updates
 
-## Next steps
+## Related content
 
-[What is Power BI Report Server?](get-started.md)
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+- [What is Power BI Report Server?](get-started.md)
+- [Administrator overview](admin-handbook-overview.md)  
+- [Install Power BI Report Server](install-report-server.md)  
+- [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+- [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

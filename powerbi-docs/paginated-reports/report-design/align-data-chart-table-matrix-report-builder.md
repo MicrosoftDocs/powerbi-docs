@@ -29,8 +29,9 @@ ms.reviewer: saurkumar
   
 1.  Select **OK**.
   
-## Next steps  
- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
- [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-data-bars-report-builder.md)  
+## Related content
+
+- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
+- [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](sparklines-data-bars-report-builder.md)  
   
   

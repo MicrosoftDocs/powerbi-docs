@@ -59,7 +59,7 @@ Finally, if you determine there's no time pattern *and* slow performance occurs 
 
 When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/) (flowchart terminator 6).
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

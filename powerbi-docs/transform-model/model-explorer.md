@@ -95,7 +95,7 @@ You can create or edit tables in your model in **Model explorer**. The approach 
 :::image type="content" source="media/model-explorer/model-explorer-11.png" alt-text="Screenshot of the tables area in Model explorer.":::
 
 
-## Next steps
+## Related content
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 

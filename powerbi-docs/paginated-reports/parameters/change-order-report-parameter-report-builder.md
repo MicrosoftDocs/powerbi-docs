@@ -28,11 +28,12 @@ You can change the order of report parameters by doing either of the following:
   
 -   In the parameters pane, drag the parameter to a new column or row in the pane. When you change the location of the parameter in the pane, the parameter order changes in the **Report Data** pane. For more information about moving parameters in the pane, see [Customize the Parameters Pane in a Report &#40;Power BI Report Builder&#41;](customize-parameters-pane-report-builder.md).  
   
-## Next steps  
- [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)   
- [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
- [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
- [Parameters Collection References &#40;Power BI Report Builder&#41;](built-in-collections-parameters-collection-references-report-builder.md)  
+## Related content
+
+- [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)   
+- [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
+- [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)   
+- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
+- [Parameters Collection References &#40;Power BI Report Builder&#41;](built-in-collections-parameters-collection-references-report-builder.md)  
   
   
