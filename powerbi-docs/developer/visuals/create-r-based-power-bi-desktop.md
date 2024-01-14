@@ -326,8 +326,6 @@ Now you can package the visual and import it to any Power BI report.
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
+* [Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
->[!div class="nextstepaction"]
->[Build a bar chart](create-bar-chart.md)
+* [Build a bar chart](create-bar-chart.md)
