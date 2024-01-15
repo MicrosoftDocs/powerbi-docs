@@ -20,7 +20,7 @@ Local storage is isolated so that each type of visual has its own separate stora
 
 ### [Version 1](#tab/v1)
 
-This version of the *local storage API* is scheduled for deprecation. We're not accepted any more requests. When possible, use [Version 2](#tab/v2) instead.
+This version of the *local storage API* is scheduled for deprecation. We're not accepted any more requests. When possible, use [Version 2](#version-2) instead.
 In the following example, a counter is increased whenever the *update* method is called. The counter value is saved locally and called each time the visual starts. This way, the counter continues counting from where it left off instead of starting over each time the visual is started:
 
 ```typescript
