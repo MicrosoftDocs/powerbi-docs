@@ -38,7 +38,7 @@ The first part of the process is to [enable a public endpoint in the SQL Managed
 
 ## Create a network security group rule
 
-The next collection of steps requires that you create a *Network Security Group (NSG)* rule to allow inbound traffic for the Power BI service. Currently this action can't be completed in the Azure portal, and rather, must be accomplished by using either the *command-line interface (CLI)* or by using PowerShell. 
+The next collection of steps requires that you create a *Network Security Group (NSG)* rule to allow inbound traffic for the Power BI service. This action can be completed in the Azure portal leveraging the "Source service tag" of POwerBI or by using either the *command-line interface (CLI)* or PowerShell. 
 
 > [!NOTE]
 > The priority of the rule you set must be higher than the 4096 *deny_all_inbound* rule, which means the priority value must be lower than 4096. In the following example, a priority value of 400 is used.
