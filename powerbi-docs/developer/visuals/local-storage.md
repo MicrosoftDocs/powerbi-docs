@@ -12,7 +12,7 @@ ms.date: 11/08/2023
 
 # Local Storage API
 
-With the local storage API, you can store data directly in the local browser. Data stored locally is more secure, and improves performance of web apps.
+With the local storage API, you can store data directly in the local browser. Data stored locally is more secure, and improves performance of web apps. To use the local storage API, your admin has to enable the [local storage admin switch](/fabric/admi/organizational-visuals#local-storage).
 
 Local storage is isolated so that each type of visual has its own separate storage access.
 
