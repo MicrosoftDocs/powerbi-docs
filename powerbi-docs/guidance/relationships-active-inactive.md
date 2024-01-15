@@ -28,7 +28,7 @@ Here's a partial model diagram of the two tables.
 
 There are two model relationships between the **Flight** and **Airport** tables. In the **Flight** table, the **DepartureAirport** and **ArrivalAirport** columns relate to the **Airport** column of the **Airport** table. In star schema design, the **Airport** table is described as a [role-playing dimension](star-schema.md#role-playing-dimensions). In this model, the two roles are _departure airport_ and _arrival airport_.
 
-While this design works well for relational star schema designs, it doesn't for Power BI models. It's because model relationships are paths for filter propagation, and these paths must be deterministic. For this reason, a model cannot have multiple active relationships between two tables. Therefore—as described in this example—one relationship is active while the other is inactive (represented by the dashed line). Specifically, it's the relationship to the **ArrivalAirport** column that's active. This means filters applied to the **Airport** table automatically propagate to the **ArrivalAirport** column of the **Flight** table.
+While this design works well for relational star schema designs, it doesn't for Power BI models. It's because model relationships are paths for filter propagation, and these paths must be deterministic. For more information on ensuring that filter propagation paths are deterministic see [resolve relationship path ambiguity](../transform-model/desktop-relationships-understand.md#resolve-relationship-path-ambiguity).Therefore—as described in this example—one relationship is active while the other is inactive (represented by the dashed line). Specifically, it's the relationship to the **ArrivalAirport** column that's active. This means filters applied to the **Airport** table automatically propagate to the **ArrivalAirport** column of the **Flight** table.
 
 This model design imposes severe limitations on how the data can be reported. Specifically, it's not possible to filter the **Airport** table to automatically isolate flight details for a departure airport. As reporting requirements involve filtering (or grouping) by departure and arrival airports _at the same time_, two active relationships are needed. Translating this requirement into a Power BI model design means the model must have two airport tables.
 
@@ -123,7 +123,7 @@ In specific circumstances, however, you can define one or more inactive relation
 - There's no requirement for report visuals to simultaneously filter by different roles
 - You use the USERELATIONSHIP DAX function to activate a specific relationship for relevant model calculations
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

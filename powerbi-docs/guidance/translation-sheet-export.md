@@ -57,6 +57,6 @@ Translations Builder generates a .csv file for the full translation sheet named 
 
 :::image type="content" source="./media/translation-sheet-export/translation-sheet-all-excel.png" alt-text="Screenshot shows part of the spreadsheet created by the export all operation." lightbox="./media/translation-sheet-export/translation-sheet-all-excel.png":::
 
-## Next steps
+## Related content
 
 - [Import translation sheets in Translations Builder](translation-sheet-import.md)

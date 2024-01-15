@@ -15,7 +15,7 @@ ms.date: 08/25/2022
 
 This article describes how to troubleshoot sign-in issues for Power BI. If you're a Power BI user having sign-in issues, first work with your organization's internal support team for assistance. If your organization has enabled Self-Service Password Reset, you can reset your own password with the [Self-Service Password Reset wizard](https://passwordreset.microsoftonline.com/). If this process fails, a link to contact Support displays.
 
-If you're an **admin** for your organization, we recommend that you [Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr). If you forgot your own password, follow the steps in [Forgot sign-in password to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/forgot-sign-in-password) to recover your password. To troubleshoot other sign-in issues, review the solutions listed in [You can't sign in to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/sign-in-to-office-365-azure-intune).
+If you're an **admin** for your organization, we recommend that you [Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr). If you forgot your own password, follow the steps in [Forgot sign-in password to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/forgot-sign-in-password) to recover your password. To troubleshoot other sign-in issues, review the solutions listed in [You can't sign in to Microsoft 365, Azure, or Intune](/microsoft-365/troubleshoot/sign-in/sign-in-to-office-365-azure-intune).
 
 Customers that purchase [Microsoft Premier support](https://support.microsoft.com/premier) can contact Premier support over the phone:
 
@@ -30,6 +30,6 @@ Customers that purchase [Microsoft Premier support](https://support.microsoft.co
 
 If you can't create a post in the Power BI community forum, it's because the forum also requires you to sign in. For more information, see [Community Support](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
 
-## Next steps
+## Related content
 
-[Power BI Pro and Power BI Premium support options](service-support-options.md)
+* [Power BI Pro and Power BI Premium support options](service-support-options.md)

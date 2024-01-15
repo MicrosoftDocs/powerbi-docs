@@ -20,7 +20,7 @@ Local storage is isolated so that each type of visual has its own separate stora
 
 ### [Version 1](#tab/v1)
 
-```typescript
+This version of the *local storage API* is scheduled for deprecation. We're not accepted any more requests. When possible, use [Version 2](#tab/v2) instead.
 In the following example, a counter is increased whenever the *update* method is called. The counter value is saved locally and called each time the visual starts. This way, the counter continues counting from where it left off instead of starting over each time the visual is started:
 
 ```typescript
@@ -59,30 +59,49 @@ export class Visual implements IVisual {
 
 ### [Version 2](#tab/v2)
 
+### Local storage methods
+
 The local storage API has four methods:
 
-* *status*: Returns the status of the local storage v2 API.
-
-  * PrivilegeStatus.DisabledByAdmin: the tenant admin switch is off
-  * PrivilegeStatus.NotDeclared: the visual has no declaration for the local storage in the privileges array
-  * PrivilegeStatus.NotSupported: the API isn't supported (see limitations)
-  * PrivilegeStatus.Allowed: the API is supported and allowed
-
-  Before using the *get*, *set*, or *remove* methods, use the *status* method to check the status of the API and ensure that your visual behaves as expected.
-
-* *get*: Returns a promise that resolves with the value if the key exists, and rejects otherwise. This method expects one parameter:
-  * key – the key you want to get its value
+* *status*:
   
-* *set*: Returns a promise that resolves to a *struct* of the type `StorageV2ResultInfo`, or rejects if an error occurred.
-This method expects two parameters:
-  * key – the key you want to set its value
-  * data – the value for the key
+  * Returns the status of the local storage v2 API.
+
+    * PrivilegeStatus.DisabledByAdmin: the tenant admin switch is off
+    * PrivilegeStatus.NotDeclared: the visual has no declaration for the local storage in the privileges array
+    * PrivilegeStatus.NotSupported: the API isn't supported (see [limitations](#considerations-and-limitations-version-2) for more information)])
+    * PrivilegeStatus.Allowed: the API is supported and allowed
+
+  Before using the *get*, *set*, or *remove* methods, it's best practice to use the *status* method to check the status of the API and ensure that your visual behaves as expected.
+
+* *get*:
+
+  * This method expects one parameter: 
+
+    * *key* – the key whose value you want to get.
+  
+  * Returns a promise that resolves with the value if the key exists, and rejects otherwise. This method expects one parameter:
+
+* *set*:
+
+  * This method expects two parameters:
+
+    * *key* – the key you want to set its value
+    * *data* – the value for the key
+
+  * Returns a promise that resolves to a *struct* of the type `StorageV2ResultInfo`, or rejects if an error occurred.
 
 * *remove*:
-This method expects one parameter:
-  * key – the key of the pair you want to remove
+
+  * This method expects one parameter:
+
+    * *key* – the key of the pair you want to remove
+
+### How to use the local storage API
 
 To use the local storage API, add a declaration to the [privileges array in visual capabilities.](./capabilities.md#define-privileges)
+
+The following example shows how to set and retrieve data from the local storage using version 2 of the local storage API:
 
 ```typescript
 import IVisualLocalStorageV2Service = powerbi.extensibility.IVisualLocalStorageV2Service; 
@@ -162,17 +181,18 @@ export class Visual implements IVisual {
   * SaaS Embed
   * Mobile
   * Report Server
-* The API isn't supported in export to PDF or ptpx scenarios.
+* Export to *PDF* or *pptx* isn't supported.
 * The API is supported only when a user is signed in.
-* A visual’s data will be cleared 29 days after the most recent modification time.
+* A visual’s data is cleared 29 days after the most recent modification time.
 * This API is privileged API.
 * The key (parameter provided to *set*, *get*, *Remove*) has the following restrictions:
   * Length must be fewer than 128 characters
   * Can't contain the character '|'
-* There are many reasons this API might not be supported. For example,the environment might not be supported or the browser’s local storage isn't available. Consider checking the status of the API before using the *set/get/remove* methods. Even if the API is supported, it might fail, so error handling is important.
+* If the browser is in kiosk mode, local storage availability might differ between browsers, and by by the kiosk owner's settings.
+* There are many reasons this API might not be supported. For example,the environment might not be supported or the browser’s local storage isn't available. We recommend checking the *status* of the API before using the *set/get/remove* methods. Even if the API is supported, it might fail, so error handling is important.
 
 ---
 
-## Next steps
+## Related content
 
 * [Power BI custom visual API](visual-api.md)

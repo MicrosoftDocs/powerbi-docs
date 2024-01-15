@@ -118,7 +118,7 @@ Generally, Power BI paginated reports are optimized for **printing**, or **PDF g
 
 Referencing [custom code](../paginated-reports/paginated-reports-faq.yml#can-i-run-custom-code-in-my-report-) DLL files within a report isn't supported.  
 
-Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](/sql/reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
+Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](../paginated-reports/report-builder/export-pdf-file-report-builder.md#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
 
 
 ### Prepare
@@ -128,7 +128,7 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
 1. Become familiar with Power BI security, and plan [how you'll reproduce your report server folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
-1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your report server shared data sources.
+1. Consider using [shared Power BI semantic models](../connect-data/service-datasets-build-permissions.md) in place of your report server shared data sources.
 1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your report server mobile reports and KPIs.
 1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\adelev_, the built-in field returns something like _adelev&commat;adventureworks.com_. You'll need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
 1. Reevaluate the use of the **ExecutionTime** built-in field in your reports. For paginated reports (when hosted in the Power BI service), the built-in field returns the date/time _in Coordinated Universal Time (or UTC)_. It could impact on report parameter default values, and report execution time labels (typically added to report footers).
@@ -191,7 +191,7 @@ We highly recommended you complete the following actions to ensure the best poss
 1. Test the reports in each [browser supported by Power BI](../fundamentals/power-bi-browsers.md) to confirm the report renders correctly.
 1. Run tests to compare report rending times on the report server and in the Power BI service. Check that Power BI reports render in an acceptable time.
 1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../visuals/power-bi-visualization-export-data.md).
-1. For Power BI reports based on Power BI datasets, review model designs to ensure they're fully optimized.
+1. For Power BI reports based on Power BI semantic models, review model designs to ensure they're fully optimized.
 
 ### Reconcile issues
 

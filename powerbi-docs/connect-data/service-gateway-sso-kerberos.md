@@ -39,7 +39,7 @@ The steps required for configuring gateway single sign-on are outlined below.
     |----|----|
     | Your Active Directory environment is security hardened. | [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
     | The gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. | [Add gateway service account to Windows Authorization and Access Group](#add-gateway-service-account-to-windows-authorization-and-access-group) |
-    | You don't have Azure AD Connect with user account synchronization configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
+    | You don't have Microsoft Entra Connect with user account synchronization configured and the UPN used in the Power BI for users does not match the UPN in your local Active Directory environment. | [Set user-mapping configuration parameters on the gateway machine](#set-user-mapping-configuration-parameters-on-the-gateway-machine) |
     | You plan to use an SAP HANA data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
     | You plan to use an SAP BW data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
     | You plan to use a Teradata data source with SSO. | [Complete data source-specific configuration steps](#complete-data-source-specific-configuration-steps) |
@@ -58,7 +58,7 @@ To configure SPNs and Kerberos delegation settings, a domain administrator shoul
 
 ### Step 3: Configure the Gateway service account
 
-Option A below is the required configuration unless you have both Azure AD Connect configured and user accounts are synchronized. In that case, option B is recommended.
+Option A below is the required configuration unless you have both Microsoft Entra Connect configured and user accounts are synchronized. In that case, option B is recommended.
 
 #### Option A: Run the gateway Windows service as a domain account with SPN
 
@@ -66,7 +66,7 @@ In a standard installation, the gateway runs as the machine-local service accoun
 
 ![Machine-local service account](media/service-gateway-sso-kerberos/service-account.png)
 
-To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (by using Azure AD DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
+To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Microsoft Entra instance is already synchronized with your local Active Directory instance (by using Microsoft Entra DirSync/Connect). To switch to a domain account, see [change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
 ##### Configure an SPN for the gateway service account
 
@@ -88,8 +88,10 @@ First, determine whether an SPN was already created for the domain account used 
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
 
-#### Option B: Configure computer for Azure AD Connect
-If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows: 
+<a name='option-b-configure-computer-for-azure-ad-connect'></a>
+
+#### Option B: Configure computer for Microsoft Entra Connect
+If Microsoft Entra Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Microsoft Entra lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Microsoft Entra ID. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Microsoft Entra context. They are applied to the gateway's computer object (as identified by the local service SID) in Microsoft Entra ID instead of the domain account. The local service SID for NT SERVICE/PBIEgwService is as follows: 
 
 `S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079`
 
@@ -274,7 +276,7 @@ To complete this configuration step, for each domain that contains Active Direct
 
 Complete this section if:
 
-* You don't have Azure AD Connect with user account synchronization configured AND
+* You don't have Microsoft Entra Connect with user account synchronization configured AND
 * The UPN used in Power BI for users does not match the UPN in your local Active Directory environment.
 
 Each Active Directory user mapped in this way needs to have SSO permissions for your data source.
@@ -339,7 +341,7 @@ The settings  **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via
 
 **Use SSO via Kerberos for DirectQuery And Import queries**:
 * For DirectQuery based report, SSO credentials of the user are used.
-* For Import based report, the SSO credentials of the dataset owner are used, regardless of the user triggering the Import.
+* For Import based report, the SSO credentials of the semantic model owner are used, regardless of the user triggering the Import.
 
 ### Step 2: Test single sign-on
 

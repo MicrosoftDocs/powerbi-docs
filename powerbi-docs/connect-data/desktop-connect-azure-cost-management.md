@@ -1,5 +1,5 @@
 ---
-title: Connect to Azure Cost Management data in Power BI Desktop
+title: Connect to Azure Cost Management data in Power BI Desktop.
 description: Easily connect to Azure and gain insights about your Azure cost and usage with Power BI Desktop
 author: davidiseminger
 ms.author: davidi
@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/10/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 
@@ -24,7 +24,7 @@ The Azure Cost Management connector currently supports customers with:
 
 If you have an unsupported agreement, you can use Exports to save the cost data to a share and then connect to it using Power BI. For more information, see [Tutorial - Create and manage exported data from Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal).
 
-The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next login. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) at the billing account or billing profile levels for Microsoft Customer Agreements. 
+The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next sign-in. OAuth 2.0, is a standard for the process that goes on behind the scenes to ensure the secure handling of these permissions. To connect, you must use an [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements, or have [appropriate permissions](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles) at the billing account or billing profile levels for Microsoft Customer Agreements. 
 
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-cost-management.md) connectors. Any reports created with the previous connector must be recreated using this connector.
@@ -55,7 +55,7 @@ To connect to a billing account, you need to retrieve your **Billing account ID*
 3.	Under **Settings** in the menu, select **Properties** in the sidebar.
 4.	Under **Billing profile**, copy the **ID**. 
     :::image type="content" source="media/desktop-connect-azure-cost-management/product-updates-02.png" alt-text="Screenshot of Cost management billing profile":::
-5.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the example below, replacing *{billingAccountId}* with the data copied from the previous steps. 
+5.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the following example, replacing *{billingAccountId}* with the data copied from the previous steps. 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}```
 
     Alternatively, for **Choose Scope**, select **Enrollment Number** and input the Billing Account ID string as copied from the previous steps.
@@ -80,7 +80,7 @@ To connect to a **billing profile**, you must retrieve your **Billing profile ID
 
     :::image type="content" source="media/desktop-connect-azure-cost-management/azure-cost-management-updates-04.png" alt-text="Screenshot of Azure Cost Management billing account information":::
 
-6.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the example below, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied from the previous steps. 
+6.	For **Choose Scope**, select **Manually Input Scope** and input the connection string as shown in the following example, replacing *{billingAccountId}* and *{billingProfileId}* with the data copied from the previous steps. 
 
     ```/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/billingProfiles/{billingProfileId}```
 
@@ -139,19 +139,19 @@ The following considerations and limitations apply to the Azure Cost Management 
 * Data row requests exceeding one million rows isn't supported by Power BI. Instead, you can try using the export feature described in [create and manage exported data in Azure Cost Management](/azure/cost-management-billing/costs/tutorial-export-acm-data).
 * The Azure Cost Management data connector doesn't work with Office 365 GCC customer accounts.
 * **Data refresh:** The cost and usage data is typically updated and available in the Azure portal and supporting APIs within 8 to 24 hours, so we suggest you constrain Power BI scheduled refreshes to once or twice a day. 
-* **Data source reuse:** If you have multiple reports that are pulling the same data, and don't need additional report-specific data transformations, you should reuse the same data source, which would reduce the amount of time required to pull the Usage Details data. 
+* **Data source reuse:** If you have multiple reports that are pulling the same data, and don't need more report-specific data transformations, you should reuse the same data source, which would reduce the amount of time required to pull the Usage Details data. 
 
     For more information on reusing data sources, see the following:
 
-    * [Introduction to datasets across workspaces](service-datasets-across-workspaces.md)
-    * [Create reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md)
+    * [Introduction to semantic models across workspaces](service-datasets-across-workspaces.md)
+    * [Create reports based on semantic models from different workspaces](service-datasets-discover-across-workspaces.md)
 
 
 You might receive a *400 bad request* from the **RI usage details** when you try to refresh the data if you've chosen date parameter greater than three months. To mitigate the error, take the following steps:
 
 1.	In Power BI Desktop, select **Home > Transform data**.
-2.	In Power Query Editor, select the **RI usage details** dataset and select **Advanced Editor**.
-3.	Update the Power Query code as shown in the following paragraph(s), which will split the calls into three-month chunks. Make sure you note and retain your enrollment number, or billing account/billing profile ID.
+2.	In Power Query Editor, select the **RI usage details** semantic model and select **Advanced Editor**.
+3.	Update the Power Query code as shown in the following paragraphs, which split the calls into three-month chunks. Make sure you note and retain your enrollment number, or billing account/billing profile ID.
     
     For **EA** use the following code update:
     
@@ -187,7 +187,7 @@ You might receive a *400 bad request* from the **RI usage details** when you try
     ```
 4.	Once you've updated the code with the appropriate update from the previous step, select **Done** and then select **Close & Apply**. 
 
-You might run into a situation where tags aren't working in the usage details or the tags column can't be transformed to json. This issue stems from the current UCDD api returning the tags column by trimming the start and end brackets, which results in Power BI being unable to transform the column because it returns it as a string. To mitigate this situation, take the following steps. 
+You might run into a situation where tags aren't working in the usage details or the tags column can't be transformed to json. This issue stems from the current UCDD API returning the tags column by trimming the start and end brackets, which results in Power BI being unable to transform the column because it returns it as a string. To mitigate this situation, take the following steps. 
 
 
 1. Navigate to **Query Editor**.
@@ -202,20 +202,20 @@ You might run into a situation where tags aren't working in the usage details or
 7. You can now transfer and expand the column as you need to.
 
 
-**Authentication issues encountered with Azure Active Directory guest accounts:** You may have the appropriate permissions to access the enrollment or billing account, but receive an authentication error similar to one of the following: 
+**Authentication issues encountered with Microsoft Entra guest accounts:** You may have the appropriate permissions to access the enrollment or billing account, but receive an authentication error similar to one of the following: 
 
 * *Access to the resource is forbidden* 
 * *We couldn’t authenticate with the credentials provided. Please try again.*
 
-These errors could be the result of having a user account in a different Azure Active Directory domain that has been added as a guest user. 
+These errors could be the result of having a user account in a different Microsoft Entra domain that has been added as a guest user. 
 
-For guest accounts: Use the following settings or options as you are prompted with the **authentication dialog** when connecting with the Cost Management Power BI connector:
+For guest accounts: Use the following settings or options as you're prompted with the **authentication dialog** when connecting with the Cost Management Power BI connector:
 
 1.	Select **Sign-in**
 2.	Select the **Use another account** (bottom of the dialog)
 3.	Select **Sign-in options** (bottom of the dialog box)
 4.	Select **Sign into an organization**
-5.	For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Azure Active Directory domain into which you've been added as a guest.
+5.	For **Domain name**, provide the Fully Qualified Domain Name (FQDN) of the Microsoft Entra domain into which you've been added as a guest.
 6.	Then, for **Pick an account** select the user account that you’ve previously authenticated.  
 
 

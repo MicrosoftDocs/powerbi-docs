@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/10/2023
+ms.date: 11/15/2023
 ms.custom: known-issue-522
 ---
 
@@ -16,7 +16,7 @@ If you use an old version of the Fabric Capacity Metrics app, you might see refr
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: November 15, 2023
 
 **Problem area:** Capacity Management
 
@@ -31,6 +31,6 @@ If you're using an old version of the Capacity Metrics app, you have one of the 
 
 You need to uninstall the old app and install the [new Fabric Capacity Metrics app](/fabric/enterprise/metrics-app-install?tabs=1st).
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

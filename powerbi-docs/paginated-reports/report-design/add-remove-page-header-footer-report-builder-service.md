@@ -52,8 +52,8 @@ You can add static text, images, lines, rectangles, and borders to paginated rep
 > [!NOTE]  
 > When you remove a page header or footer, you delete it from the report. Any items that you previously added to the page header or footer will not reappear if you subsequently add the header or footer again.  
   
-## Next steps
+## Related content
 
-[Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
+- [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
   
   

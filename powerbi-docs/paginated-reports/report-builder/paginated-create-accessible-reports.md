@@ -242,7 +242,7 @@ You can achieve consistent report formatting across different report objects.
 1. Hold down the <kbd>Ctrl</kbd> key and select the report objects that you'd like to have consistent formatting.
 1. In the Properties pane, select each format option and select the format you'd like to apply. Whatever format you choose applies to all selected objects, giving it a consistent formatting.
 
-## Next steps
+## Related content
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)
 - [Use accessibility tools to create accessible paginated reports (Power BI Report Builder)](paginated-use-accessibility-tools.md)

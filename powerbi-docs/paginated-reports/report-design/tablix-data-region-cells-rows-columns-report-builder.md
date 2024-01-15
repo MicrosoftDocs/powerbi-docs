@@ -107,7 +107,8 @@ ms.reviewer: saurkumar
   
  You can split a cell that was previously merged. You can split cells horizontally across columns or vertically down rows. To split a cell into a block of cells, split the cell horizontally first, and then split vertically as many times as necessary.  
   
-## Next steps  
- [Tablix Data Region &#40;Power BI Report Builder&#41;](tablix-data-region-report-builder.md)  
+## Related content
+
+- [Tablix Data Region &#40;Power BI Report Builder&#41;](tablix-data-region-report-builder.md)  
   
   

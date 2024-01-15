@@ -12,13 +12,13 @@ ms.date: 07/24/2023
 
 When you create multiple-language reports for Power BI, you can work quickly and efficiently by using Translations Builder and by generating machine translations. However, machine generated translations alone are inadequate for many production needs. You need to integrate other people acting as translators into a human workflow process.
 
-Translations Builder uses a *translation sheet*, which is a .csv file that you export to send to a translator. The human acting as a translator updates the translation sheet and then returns it to you. You then import the revised sheet to integrate the changes into the current dataset.
+Translations Builder uses a *translation sheet*, which is a .csv file that you export to send to a translator. The human acting as a translator updates the translation sheet and then returns it to you. You then import the revised sheet to integrate the changes into the current data model.
 
-Translations Builder generates a file for a selected language using a special naming format, for example, *PbixProjectName-Translations-Spanish.csv*. The name includes the dataset name and the language for translation. Translations Builder saves the generated translation sheet to a folder known as the *Outbox*.
+Translations Builder generates a file for a selected language using a special naming format, for example, *PbixProjectName-Translations-Spanish.csv*. The name includes the data model name and the language for translation. Translations Builder saves the generated translation sheet to a folder known as the *Outbox*.
 
 :::image type="content" source="./media/translation-workflow-human/save-outbox-folder.png" alt-text="Diagram shows Translations Builder exporting two sheets to the Outbox for different languages." lightbox="./media/translation-workflow-human/save-outbox-folder.png":::
 
-Human translators can make edits to a translation sheet using Microsoft Excel. When you receive an updated translation sheet from a translator, copy it to the *Inbox* folder. From there, you can import it to integrate those updated translations back into the dataset for the current project.
+Human translators can make edits to a translation sheet using Microsoft Excel. When you receive an updated translation sheet from a translator, copy it to the *Inbox* folder. From there, you can import it to integrate those updated translations back into the data model for the current project.
 
 :::image type="content" source="./media/translation-workflow-human/translation-workflow.png" alt-text="Diagram shows Translations Builder exporting sheets a translator who works on them and returns them and sends them to the Inbox for import." lightbox="./media/translation-workflow-human/translation-workflow.png":::
 
@@ -40,6 +40,6 @@ After you configure the folder paths for *Outbox* and *Inbox*, you can begin to 
 
 :::image type="content" source="./media/translation-workflow-human/export-import-translation.png" alt-text="Screenshot shows Translations Builder with the Export/Import Translations pane highlighted." lightbox="./media/translation-workflow-human/export-import-translation.png":::
 
-## Next steps
+## Related content
 
 - [Export translation sheets in Translations Builder](translation-sheet-export.md)

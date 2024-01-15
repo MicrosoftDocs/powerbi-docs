@@ -76,7 +76,7 @@ There are several monitoring aspects related to security and threats.
 - Monitor and raise alerts based on specific activities.
 - Create DLP policies.
 - Detect unusual behaviors and risky sessions.
-- Limit activities performed by applications (with [Microsoft Entra conditional access app control](/cloud-app-security/proxy-intro-aad)).
+- Limit activities performed by applications (with [Microsoft Entra Conditional Access app control](/cloud-app-security/proxy-intro-aad)).
 
 Some powerful [Power BI monitoring and protection](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/protect-your-power-bi-instance-using-microsoft-cloud-app/ba-p/2166872) capabilities are available with Defender for Cloud Apps. For example, you can:
 
@@ -98,7 +98,7 @@ For more information, see [Defender for Cloud Apps for Power BI](powerbi-impleme
 - Analyze data and investigate the scope and root cause of incidents. You can use built-in visualization tools or Kusto Query Language (KQL) queries. You can also use Power BI to visualize and analyze the data that you collect.
 - Respond to security incidents and threats. You can handle responses directly. Or, you can automate responses and remediations by using playbooks, which are workflows based on Azure Logic Apps.
 
-Microsoft Sentinel stores its data in Azure Log Analytics (a component of Azure Monitor). It's based on the same architecture as the [dataset event logs](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#dataset-event-logs), which capture user-generated and system-generated activities that occur for a dataset.
+Microsoft Sentinel stores its data in Azure Log Analytics (a component of Azure Monitor). It's based on the same architecture as the [semantic model event logs](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#semantic-model-event-logs), which capture user-generated and system-generated activities that occur for a semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md).
 
 You can use Microsoft Sentinel with Power BI in two different ways.
 
@@ -132,13 +132,13 @@ When there's an apparent service outage or degradation, Power BI administrators 
 
 For more information about Power BI support, see [How to contact support](/power-bi/support/service-support-options).
 
-For more information about how to support users in your organization, see [User support](powerbi-adoption-roadmap-user-support.md).
+For more information about how to support users in your organization, see [User support](fabric-adoption-roadmap-user-support.md).
 
 ### Power BI email notifications
 
 You can receive alert notifications by email to inform you when there's a service outage, interruption, or degradation occurring in your Power BI tenant. These notifications are available only for Premium workspaces.
 
-To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/fabric/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](powerbi-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
+To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/fabric/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](fabric-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
 
 > [!TIP]
 > When you need to notify your internal users, we recommend that your COE sends a customized message that uses non-technical language. That way, the message can include additional context, and use the preferred communication platform, like a Teams channel.
@@ -237,16 +237,16 @@ Common Azure services that integrate with Power BI include:
 
 - **Microsoft Entra ID:** Your [Power BI tenant](powerbi-implementation-planning-tenant-setup.md) relies on Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) for identity and access management.
 - **Azure Power BI Embedded:** Azure Power BI Embedded supports programmatic [embedding](/power-bi/developer/embedded/embedded-analytics-power-bi) of Power BI content in apps for your customers. Power BI Embedded is also applicable for customers who have enabled [autoscale](/power-bi/enterprise/service-premium-auto-scale) for their Power BI Premium capacity. For more information about when to use Power BI Embedded, see the [embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md) usage scenario.
-- **Azure storage accounts:** Azure Data Lake Storage Gen2 (ADLS Gen2) can be used for workspace-level [data storage](/power-bi/admin/service-admin-portal-azure-connections), including dataflows storage and dataset backups. For more information about dataflow storage, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
-- **Azure Log Analytics:** You can enable [workspace auditing](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) to capture dataset event logs. For more information, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
-- **Azure Files:** When the [large dataset](/power-bi/enterprise/service-premium-large-models) format is enabled for a workspace, the data is stored in Azure Files.
+- **Azure storage accounts:** Azure Data Lake Storage Gen2 (ADLS Gen2) can be used for workspace-level [data storage](/power-bi/admin/service-admin-portal-azure-connections), including dataflows storage and semantic model backups. For more information about dataflow storage, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
+- **Azure Log Analytics:** You can enable [workspace auditing](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) to capture semantic model event logs. For more information, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
+- **Azure Files:** When the [large semantic model](/power-bi/enterprise/service-premium-large-models) format is enabled for a workspace, the data is stored in Azure Files.
 - **Data sources:** It's likely that you have many types of [data sources](/power-bi/connect-data/power-bi-data-sources) that Power BI connects to. Data sources could be Azure Analysis Services, Azure SQL Database, Azure Synapse Analytics, Azure storage, and others.
 - **Virtual machines:** A [data gateway](/power-bi/connect-data/service-gateway-onprem) for Power BI could run on a virtual machine (VM) in Azure. Or, a database containing data that's used as a data source for Power BI might run on a VM in Azure.
 - **Virtual network data gateway:** A [virtual network (VNet) data gateway](/data-integration/vnet/overview) could be implemented to securely access data sources in a private network.
 - **Azure Key Vault:** One common way to use Azure Key Vault is for customer management of the encryption keys for data at-rest in the Power BI service. For more information, see [bring your own key](/power-bi/enterprise/service-encryption-byok) (BYOK) and [customer-managed keys](/power-bi/enterprise/service-encryption-customer-managed-keys) (CMK).
 - **Microsoft Purview:** Used by [Microsoft Purview Information Protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md), or by Microsoft Purview Data Catalog to [scan your Power BI tenant](/azure/purview/register-scan-power-bi-tenant?tabs=Scenario1&preserve-view=true), to extract metadata.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for tenant-level monitoring, key decisions and actions include:
 
@@ -259,6 +259,6 @@ Common Azure services that integrate with Power BI include:
 > - **Investigate information protection and DLP requirements:** Explore requirements for using sensitivity labels in Microsoft Purview Information Protection to classify data (the first building block of information protection). Consider requirements for implementing DLP for Power BI, and the associated monitoring processes.
 > - **Investigate Defender for Cloud Apps capabilities:** Explore requirements for using Microsoft Defender for Cloud Apps to monitor user behavior and activities.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md#subject-areas).

@@ -49,9 +49,10 @@ ms.reviewer: saurkumar
   
  To do this, you must redesign the table to group on an expression that combines multiple fields. For example, for a dataset with inventory counts, if the original table grouped by size and then by color, you can specify a single group with a group expression that is a combination of size and color. For more information, see [Add interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs).  
   
-## Next steps  
- [Sort data in a data region (Power BI Report Builder)](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
- [Filter, group, and sort data (Power BI Report Builder)](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
- [Add interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs)  
+## Related content
+
+- [Sort data in a data region (Power BI Report Builder)](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
+- [Filter, group, and sort data (Power BI Report Builder)](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
+- [Add interactive sort to a table or matrix (Power BI Report Builder)](/sql/reporting-services/report-design/add-interactive-sort-to-a-table-or-matrix-report-builder-and-ssrs)  
   
   

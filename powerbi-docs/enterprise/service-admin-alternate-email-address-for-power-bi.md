@@ -16,7 +16,7 @@ LocalizationGroup: Troubleshooting
 
 When you sign up for Power BI, you provide an email address. By default, Power BI uses this address to send you updates about activity in the service. For example, when someone sends you a sharing invitation, it goes to this address.
 
-In some cases, you might want these emails delivered to an alternate email address rather than the one you signed up with. This article explains how to specify an alternate address in Microsoft 365 and in PowerShell. The article also explains how Azure Active Directory (Azure AD) resolves an email address.
+In some cases, you might want these emails delivered to an alternate email address rather than the one you signed up with. This article explains how to specify an alternate address in Microsoft 365 and in PowerShell. The article also explains how Microsoft Entra ID resolves an email address.
 
 > [!NOTE]
 > Specifying an alternate address doesn't affect which email address Power BI uses for e-mail subscriptions, service updates, newsletters, and other promotional communications. Those communications are always sent to the email address you used when you signed up for Power BI.
@@ -45,11 +45,13 @@ To specify an alternate address in PowerShell, use the [Set-AzureADUser](/powers
 Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.com"
 ```
 
-## Email address resolution in Azure AD
+<a name='email-address-resolution-in-azure-ad'></a>
 
-To capture an Azure AD embed token for Power BI, you can use one of three different types of email addresses:
+## Email address resolution in Microsoft Entra ID
 
-* The main email address associated with your Azure AD account
+To capture a Microsoft Entra embed token for Power BI, you can use one of three different types of email addresses:
+
+* The main email address associated with your Microsoft Entra account
 
 * The UserPrincipalName (UPN) email address
 
@@ -57,11 +59,11 @@ To capture an Azure AD embed token for Power BI, you can use one of three differ
 
 Power BI selects which email to use based on the following sequence:
 
-1. If the mail attribute in the Azure AD user object is present, then Power BI uses that mail attribute for the email address.
+1. If the mail attribute in the Microsoft Entra user object is present, then Power BI uses that mail attribute for the email address.
 
 1. If the UPN email isn't a **\*.onmicrosoft.com** domain email address (the information after the "\@" symbol), then Power BI uses that mail attribute for the email address.
 
-1. If the *other email address* array attribute in the Azure AD user object is present, then Power BI uses the first email in that list (since there can be a list of emails in this attribute).
+1. If the *other email address* array attribute in the Microsoft Entra user object is present, then Power BI uses the first email in that list (since there can be a list of emails in this attribute).
 
 1. If none of the above conditions are present, then Power BI uses the UPN address.
 

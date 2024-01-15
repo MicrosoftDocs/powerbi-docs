@@ -76,7 +76,7 @@ Organizations commonly have external or internal requirements for classifying an
 Once you assign a sensitivity label to content in Power BI, you're able to gain knowledge and insight about:
 
 - Whether sensitive data is contained in a Power BI workspace.
-- Whether a particular Power BI item, like a dataset, is considered confidential.
+- Whether a particular Power BI item, like a semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md), is considered confidential.
 - Who can access Power BI items that are considered sensitive.
 - Who has accessed sensitive data in the Power BI service.
 
@@ -100,7 +100,7 @@ For more information, see [Information protection for Power BI](powerbi-implemen
 
 The ability to detect where sensitive data is stored is another important aspect of data leakage.
 
-When a dataset has been published to the Power BI service and it's in a Premium workspace, you can use DLP for Power BI to detect the existence of certain sensitive information types within it. This capability is helpful to find sensitive data (such as financial data or personal data) that are stored in Power BI datasets.
+When a dataset has been published to the Power BI service and it's in a Premium workspace, you can use DLP for Power BI to detect the existence of certain sensitive information types within it. This capability is helpful to find sensitive data (such as financial data or personal data) that are stored in Power BI semantic models.
 
 This type of DLP policy for Power BI allows security administrators to monitor and detect when unauthorized sensitive data is uploaded to the Power BI service. They can depend on alerts to act quickly. Policy tips are also used to guide content creators and owners on how to properly handle sensitive data. For more information about DLP for Power BI, see [Data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md).
 
@@ -151,6 +151,6 @@ The remainder of the information protection and DLP content is organized into th
 - [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md)
 - [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md)
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-organization-level-info-protection.md), learn about getting started with information protection with organization-level planning activities for Power BI.

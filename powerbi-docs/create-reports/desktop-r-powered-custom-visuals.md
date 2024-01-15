@@ -45,10 +45,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 
    ![Screenshot showing the Time Series Forecasting Chart Power B I visual in App Source.](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   You don't need to install R to use R-powered Power BI visuals in the **Power BI service**, however, if you want to use R-powered Power BI visuals in **Power BI Desktop** you *must* install R on the local machine. You can download R from the following locations:
-
-   * [CRAN](https://cran.r-project.org/)
-   * [MRO](https://mran.microsoft.com/)
+   You don't need to install R to use R-powered Power BI visuals in the **Power BI service**, however, if you want to use R-powered Power BI visuals in **Power BI Desktop** you *must* install R on the local machine. You can download R from [CRAN](https://cran.r-project.org/).
 
 4. Once the visual is downloaded (which is like downloading any file from your browser), go to Power BI, select **More options** (...) in the **Visualizations** pane, and select **Import a visual from a file**.
 

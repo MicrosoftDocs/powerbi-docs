@@ -71,6 +71,6 @@ You can continue to develop a table, matrix, or list by adding any tablix featur
   
 You can also add totals for a group or grand totals for the data region. You can hide rows or columns to simplify a report and allow the user to toggle the display of the hidden data, as in a drilldown report. 
 
-## Next steps
+## Related content
 
-[What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

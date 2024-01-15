@@ -35,7 +35,7 @@ When planning your capacity, take the following steps:
 
 ## Optimize your performance and resource consumption
 
-Before you start any capacity planning or load testing assessment, optimize the performance and resource consumption (especially the memory footprint) of your reports and datasets.
+Before you start any capacity planning or load testing assessment, optimize the performance and resource consumption (especially the memory footprint) of your reports and semantic models.
 
 To optimize your performance, follow the guidelines in the following resources:
 
@@ -46,7 +46,7 @@ For a detailed tutorial on optimizing performance, see the [Optimize a model for
 
 ## Determine your minimum SKU
 
-The following table summarizes all the limitations that are dependent on the capacity size. To determine the minimum SKU for your capacity, check the *Max memory (GB)* column under the *Dataset* header. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
+The following table summarizes all the limitations that are dependent on the capacity size. To determine the minimum SKU for your capacity, check the *Max memory (GB)* column under the *Semantic model* header. Also, keep in mind the [current limitations](../../enterprise/service-premium-gen2-what-is.md#considerations-and-limitations).
 
 [!INCLUDE [Power BI capacity and SKUs](../../includes/capacity-table.md)]
 
@@ -54,7 +54,7 @@ The following table summarizes all the limitations that are dependent on the cap
 
 To test or assess your capacity load:
 
-1. Create a [Premium Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Azure Active Directory (Azure AD) tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
+1. Create a [Premium Power BI Embedded capacity in Azure](azure-pbie-create-capacity.md) for the testing. Use a subscription associated with the same Microsoft Entra tenant as your Power BI tenant and a user account that's signed in to that same tenant.​
 
 2. Assign the workspace (or workspaces) you'll use to test to the Premium capacity you created. You can assign a workspace in one of the following ways:
 
@@ -88,9 +88,9 @@ To see how to use the API to create your own scripts for scaling up and down, se
 For example, you can create a rule that invokes the scale-up capacity runbook to update the capacity to a higher SKU if the overload is 1 or if the CPU value is 95 percent.
 You can also create a rule that invokes a scale-down capacity runbook script to update the capacity to a lower SKU if the CPU value drops below 45 or 50 percent.
 
-You can also invoke scale-up and scale-down runbooks programmatically on demand before and after a dataset is refreshed. This approach ensures your capacity has enough RAM (GB) for large datasets that use that capacity.
+You can also invoke scale-up and scale-down runbooks programmatically on demand before and after a semantic model is refreshed. This approach ensures your capacity has enough RAM (GB) for large semantic models that use that capacity.
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Power BI Embedded performance best practices](embedded-performance-best-practices.md)

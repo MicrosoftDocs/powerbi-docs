@@ -48,6 +48,6 @@ You can also search for the value that you are looking for.
 - Authors can't make the Filters pane visible to consumers.
 - Consumers and viewers of the report can't modify filters. 
 
-## Next steps
+## Related content
 
-[Create exportable paginated reports in the Power BI service](../web-authoring/paginated-formatted-table.md)
+- [Create exportable paginated reports in the Power BI service](../web-authoring/paginated-formatted-table.md)

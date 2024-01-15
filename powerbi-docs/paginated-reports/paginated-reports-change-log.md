@@ -208,7 +208,7 @@ Version 15.6.01340.0002, released September 3, 2020
 
 See the September 2020 Power BI Report Builder blog post for the complete list of new and updated features.
 
-## Next steps 
+## Related content 
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)

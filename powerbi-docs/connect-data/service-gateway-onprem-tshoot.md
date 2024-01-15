@@ -118,7 +118,7 @@ This error can occur when the gateway attempts a test connection, even if the cr
 When your refresh is completing properly and you do not experience runtime errors, you can ignore these test connection errors for data sources that requires optional parameters. 
 
 
-## Datasets
+## Semantic models
 
 ### Error: There is not enough space for this row.
 
@@ -169,7 +169,7 @@ To confirm the effective username, follow these steps.
    whoami /upn
    ```
 
-Optionally, you can see what Power BI gets from Azure Active Directory.
+Optionally, you can see what Power BI gets from Microsoft Entra ID.
 
 1. Browse to [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign in** in the upper-right corner.
@@ -181,7 +181,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
+If your Microsoft Entra UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
 
 ## Kerberos
 
@@ -288,7 +288,7 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
 When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following steps show how you can get to the refresh history.
 
-1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule refresh**.
+1. In the Power BI nav pane, in **Semantic models**, select a dataset. Open the menu, and select **Schedule refresh**.
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 

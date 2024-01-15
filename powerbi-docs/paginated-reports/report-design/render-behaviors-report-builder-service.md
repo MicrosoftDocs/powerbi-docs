@@ -124,9 +124,9 @@ The following rules apply to page headers and footers when rendered in the PDF o
   
 * Logical page breaks defined on items in table or matrix cells are not kept. This does not apply to items in lists.  
   
-## Next steps
+## Related content
 
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
-  [Page Layout and Rendering &#40;Report Builder and service&#41;](./page-layout-rendering-report-builder-service.md)  
+* [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+* [Page Layout and Rendering &#40;Report Builder and service&#41;](./page-layout-rendering-report-builder-service.md)  
   
   

@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/25/2023
+ms.date: 11/15/2023
 ms.custom: known-issue-533
 ---
 
@@ -16,7 +16,7 @@ You can't sign in using the Power BI Desktop 32-bit version 2.122.746.0.
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: November 15, 2023
 
 **Problem area:** Account & License
 
@@ -28,6 +28,6 @@ When you attempt to sign in, you get the following error: "Sorry, encountered an
 
 You can download and use the 64-bit version of Power BI Desktop or use the Power BI Desktop Microsoft Store App. If you're restricted to using the 32-bit version of the app, you can use the previous release, [September 2023 (2.121.644.0)](/power-bi/fundamentals/desktop-latest-update-archive?tabs=powerbi-desktop#september-2023-update-21216440).
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

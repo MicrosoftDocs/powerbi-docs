@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 10/10/2023
+ms.date: 11/15/2023
 ms.custom: known-issue-523
 ---
 
@@ -16,7 +16,7 @@ Combo charts don't show a custom label unless multiple series are present in eit
 
 **APPLIES TO:** ✔️ Power BI
 
-**Status:** Open
+**Status:** Fixed: November 15, 2023
 
 **Problem area:** Consume and View
 
@@ -28,6 +28,6 @@ When custom labels are toggled on, the combo chart's labels don't display in eit
 
 The user can overlay a line chart on top of a column/bar chart and set the transparency to 100% to simulate a combo chart.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

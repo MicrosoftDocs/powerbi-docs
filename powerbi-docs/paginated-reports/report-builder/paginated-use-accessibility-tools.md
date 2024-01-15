@@ -282,6 +282,6 @@ It will show the preview of the table. Use <kbd>Alt</kbd> + <kbd>F</kbd> keys or
 > [!NOTE]
 > All dialogs in Power BI Report Builder are keyboard navigable except for the **Expression** dialog. Items can't be added to the **Expression** dialog with any of the keyboard keys.
 
-## Next steps
+## Related content
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)

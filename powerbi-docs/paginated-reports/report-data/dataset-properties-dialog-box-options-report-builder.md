@@ -47,7 +47,7 @@ Indicates that the Power BI service should attempt to derive the value from the 
 
  Select a value that indicates whether you want subtotal rows to be interpreted as detail rows instead of aggregate rows. The default value, **Auto**, indicates that the subtotal rows should be treated as detail rows if the report does not use the **Aggregate**() function to access any fields in the data set. If you want subtotal rows to be interpreted as aggregate rows, choose **False**. If you want the subtotal rows to be interpreted as detail rows and you know that they do not use the **Aggregate**() function, choose **True**.  
   
-## Next steps
+## Related content
 
 - [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
 - [Report Embedded Datasets (Power BI Report Builder)](./report-embedded-datasets-report-builder.md)

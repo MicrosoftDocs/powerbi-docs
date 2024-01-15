@@ -12,7 +12,7 @@ LocalizationGroup: Samples
 ---
 # Employee Hiring and History sample for Power BI: Take a tour
 
-The Employee Hiring and History built-in sample contains a report and dataset for a human resources department.
+The Employee Hiring and History built-in sample contains a report and semantic model for a human resources department.
 
 :::image type="content" source="media/sample-employee-hiring-history/power-bi-employee-dashboard.png" alt-text="Screenshot shows a dashboard for the Employee Hiring and History sample." lightbox="media/sample-employee-hiring-history/power-bi-employee-dashboard.png":::
 
@@ -28,7 +28,7 @@ This tour explores the Employee Hiring and History built-in sample in the Power 
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -45,7 +45,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Select the sample. It opens the report in Reading mode.
 
-   Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
+   Power BI imports the built-in sample, adding a report and a semantic model to your **My workspace**.
 
 ### Get the .pbix file for this sample
 
@@ -61,7 +61,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
-   Power BI imports the sample, adding the report and dataset to your selected workspace.
+   Power BI imports the sample, adding the report and semantic model to your selected workspace.
 
 ## Explore the report
 
@@ -71,7 +71,7 @@ To open the Employee Hiring and History report, go to your workspace and select 
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
-You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+You can edit current visualizations and create your own visualizations that use the semantic model for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
@@ -151,7 +151,7 @@ Power BI report visualizations display details about elements when you hover ove
 
 :::image type="content" source="media/sample-employee-hiring-history/power-bi-hover-default-tooltip.png" alt-text="Screenshot shows the tooltip for a visualization as it appears in the sample.":::
 
-These values are the defaults, but you can add any field from the dataset to appear in a tooltip, or multiple fields. For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
+These values are the defaults, but you can add any field from the semantic model to appear in a tooltip, or multiple fields. For more information about tooltips, see [Customize tooltips in Power BI](desktop-custom-tooltips.md).
 
 Power BI also supports a report page as a tooltip. To see an example, select the **Actives and Separations** page, and hover over **Seps by SeparationReason**. You can see a tooltip for the **Voluntary** field.
 
@@ -197,7 +197,7 @@ For more information, see [Create tooltips based on report pages](desktop-toolti
 
 ## Create an Employee Hiring and History dashboard
 
-A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one semantic model. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and semantic models. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
@@ -223,7 +223,7 @@ For more information, see [Introduction to dashboards for Power BI designers](se
 
 ## Ask questions of the data
 
-A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
+A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any semantic model attached to your dashboard.
 
 1. In the dashboard, select **Ask a question about your data**.
 

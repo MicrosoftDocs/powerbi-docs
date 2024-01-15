@@ -201,7 +201,7 @@ Use this account to validate the offer before making it public.
 * Tooltip for feature banner is limited by 500 chars.
 * Tooltip for feature banner requires localization.
 
-## Next steps
+## Related content
 
 [Publish a Power BI custom visual](office-store.md)
 

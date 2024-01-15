@@ -87,7 +87,7 @@ ms.reviewer: saurkumar
   
  After you add a map or map layer and preview the report, you can change map and map layer options that you set in the wizards. For more information, see [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs).  
   
- For more information about maps, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs). For step-by-step instructions to add a map to a report, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder).  
+ For more information about maps, see [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md). For step-by-step instructions to add a map to a report, see [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder).  
   
 ##  <a name="SpatialDataSource"></a> Choose a source of spatial data  
  On this page, specify the spatial data source and which spatial data to include. Spatial data can come from the map gallery, or a dataset query that specifies SQL server spatial data.  
@@ -105,7 +105,7 @@ ms.reviewer: saurkumar
 > [!NOTE]  
 >  This mapping feature uses data from TIGER/Line Shapefiles provided courtesy of the U.S. Census Bureau ([https://www.census.gov/](https://www.census.gov/)). TIGER/Line Shapefiles are an extract of selected geographic and cartographic information from the Census MAF/TIGER database. TIGER/Line Shapefiles are available without charge from the U.S. Census Bureau. To obtain more information about the TIGER/Line Shapefiles go to [TIGER/Line Shapefiles and TIGER/Line Files Technical Documentation](https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.html). The boundary information in the TIGER/Line Shapefiles are for statistical data collection and tabulation purposes only; their depiction and designation for statistical purposes does not constitute a determination of jurisdictional authority or rights of ownership or entitlement and they are not legal land descriptions. Census TIGER and TIGER/Line are registered trademarks of the U.S. Bureau of the Census.  
   
- To extend the map gallery, you can add or remove reports from the map gallery directory, and add folders to organize the maps. For more information, see [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs).  
+ To extend the map gallery, you can add or remove reports from the map gallery directory, and add folders to organize the maps. For more information, see [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md).  
   
   
 ###  <a name="SqlServerSpatial"></a> What is a SQL Server spatial query?  
@@ -222,8 +222,9 @@ ms.reviewer: saurkumar
   
  The report processor applies the rules that you set and automatically determines the list of items to display in a legend. By default, the results of all rules for all layers display in the first legend. You can adjust this after you complete the wizard. For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
-## Next steps  
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)   
- [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)   
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)  
+## Related content
+
+- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)   
+- [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)   
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)  
   

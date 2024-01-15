@@ -6,7 +6,7 @@ ms.author: jessicamo
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting  
-ms.date: 08/10/2023
+ms.date: 01/11/2024
 ms.custom: known-issue-471
 ---
 
@@ -16,7 +16,7 @@ You can't use the Power BI Embedded setup tool to register an embedded applicati
 
 **APPLIES TO:** ✔️ Power BI Embedded
 
-**Status:** Open
+**Status:** Fixed: January 11, 2024
 
 **Problem area:** Embedded, REST API or PowerShell
 
@@ -28,6 +28,6 @@ When trying to run the Power BI Embedded setup tool, the landing page’s button
 
 You can register an application using the Azure portal and create Power BI content (workspaces and reports) in the Power BI Portal or using Power BI REST APIs.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

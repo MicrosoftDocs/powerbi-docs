@@ -14,14 +14,14 @@ ms.date: 02/08/2023
 
 ## API call returns 401
 
-A Fiddler capture might be required to investigate further. The required permission scope might be missing for the registered application within Azure AD. Verify the required scope is present within the app registration for Azure AD within the Azure portal.
+A Fiddler capture might be required to investigate further. The required permission scope might be missing for the registered application within Microsoft Entra ID. Verify the required scope is present within the app registration for Microsoft Entra ID within the Azure portal.
 
 ## API call returns 403
 
 A 403 error can occur for any of the following reasons. A Fiddler capture might be required to investigate further.
 
 * The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](/azure/power-bi-embedded/create-capacity).
-* The Azure AD authorization token expired.
+* The Microsoft Entra authorization token expired.
 * The authenticated user isn't a member of the group (workspace).
 * The authenticated user isn't an admin of the group (workspace).
 * The authenticated user doesn't have permissions. Permissions can be updated using the [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions).
@@ -60,10 +60,9 @@ An error has occurred
 
 When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datasets/update-parameters-in-group) or the [Datasets - Update Datasources In Group](/rest/api/power-bi/datasets/update-datasources-in-group) APIs, this error might indicate that you're updating a large dataset that isn't using the [large dataset](../../enterprise/service-premium-large-models.md) format. Use the large dataset format to avoid the error.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 >[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
-

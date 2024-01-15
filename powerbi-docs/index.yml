@@ -15,7 +15,6 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/23/2023
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -35,25 +34,22 @@ highlightedContent:
       itemType: get-started
       url: /fabric/get-started/microsoft-fabric-overview
     # Card
-    - title: Export Power BI embedded analytics reports API
-      itemType: concept
-      url: developer/embedded/export-to.md
     # Card
     - title: Get started with DAX
       itemType: training
       url: /training/paths/dax-power-bi/?WT.mc_id=powerbi_landingpage-docs-link
     # Card
-    - title: "Power BI Premium features"
+    - title: New name for Power BI datasets
       itemType: concept
-      url: enterprise/service-premium-features.md
+      url: connect-data/service-datasets-rename.md
     # Card
     - title: Edit data models in the Power BI service
       itemType: how-to-guide
       url: transform-model/service-edit-data-models.md
     # Card
-    - title: Study Power BI start to finish on Microsoft training 
-      itemType: learn
-      url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+    - title: Create report pages with Copilot
+      itemType: how-to-guide
+      url: create-reports/copilot-create-report.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -182,7 +178,7 @@ conceptualContent:
               text: Design reports for accessibility
             - url: paginated-reports/report-builder-shared-datasets.md
               itemType: concept
-              text: Create a paginated report based on a shared dataset
+              text: Create a paginated report based on a shared semantic model
             - url: create-reports/power-bi-customize-button.md
               itemType: how-to-guide
               text: Customize buttons in reports
@@ -259,9 +255,9 @@ conceptualContent:
         # Card
         - title: Best practices guidance
           links:
-            - url: guidance/powerbi-adoption-roadmap-overview.md
+            - url: guidance/fabric-adoption-roadmap.md
               itemType: concept
-              text: Power BI adoption roadmap
+              text: Fabric adoption roadmap
             - url: guidance/powerbi-implementation-planning-introduction.md
               itemType: concept
               text: Power BI implementation planning
@@ -273,21 +269,24 @@ conceptualContent:
             url: guidance/index.yml
             text: See all guidance docs
         # Card
-        - title: Training catalog
+        - title: Learning
           links:
-            - url: learning-catalog/learning-catalog-bdm.md
-              itemType: learn
-              text: Business decision makers
-            - url: learning-catalog/learning-catalog-data-analyst.md
-              itemType: learn
-              text: Data analysts
-            - url: learning-catalog/learning-catalog-solution-architect.md
-              itemType: learn
-              text: Solution architects
+            - url: https://community.fabric.microsoft.com/t5/custom/page/page-id/CareerHubPage?ocid=fabric24_careerhub_pbidocs_card_clp
+              itemType: concept
+              text: Jumpstart your career with the Career Hub 
+            - url: https://developer.microsoft.com/offers/30-days-to-learn-it?challenge_option=bfb9f08c-b763-4f60-b5d7-360debaf4f8f&ocid=fabric24_30DTLI_pbidocs_card_clp?WT.mc_id=powerbi_landingpage-docs-link
+              itemType: concept
+              text: Skill up with the Cloud Skills Challenge 
+            - url: https://learn.microsoft.com/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link?WT.mc_id=powerbi_landingpage-docs-link
+              itemType: concept
+              text: Explore our learning paths 
+            - url: fundamentals/fabric-get-started.md
+              itemType: concept
+              text: Explore Fabric capabilities
           # footerLink (optional)
           footerLink:
-            url: learning-catalog/index.yml
-            text: See all training catalog docs
+            url: https://community.fabric.microsoft.com/t5/custom/page/page-id/CareerHubPage?ocid=fabric24_careerhub_pbidocs_card_clp
+            text: See more
         # Card
         - title: Troubleshooting
           links:
@@ -320,6 +319,25 @@ conceptualContent:
           footerLink:
             url: support/index.yml
             text: See all support docs        
+        # Card
+        - title: Community
+          links:
+            - url: https://community.fabric.microsoft.com/t5/Microsoft-Power-BI-Community/ct-p/powerbi
+              itemType: concept
+              text: Ask questions in our forums
+            - url: https://community.fabric.microsoft.com/t5/Fabric-User-Groups/ct-p/fbc_usergroups
+              itemType: concept
+              text: Join a user group
+            - url: https://ideas.fabric.microsoft.com/
+              itemType: concept
+              text: "Vote and contribute product ideas"
+            - url: https://powerbi.microsoft.com/blog/
+              itemType: concept
+              text: "Update blog: What's new"
+          # footerLink (optional)
+          footerLink:
+            url: https://community.fabric.microsoft.com/
+            text: See more
 
 # additionalContent section (optional)
 # Card with summary style

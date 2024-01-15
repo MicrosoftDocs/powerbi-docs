@@ -81,7 +81,7 @@ Certified Power BI visuals are visuals in the Marketplace that meet certain spec
 We recommend that you submit and publish your Power BI visual before you request certification, because the certification process can take time. When you request certification, be sure to provide all required certification information in the Notes for certification box on the Review and publish page.
 All certified visuals must pass all the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
-## Next steps
+## Related content
 
 * [Performance tips for creating quality Power BI custom visuals](performance-tips.md)
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)

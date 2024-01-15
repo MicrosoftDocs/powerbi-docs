@@ -10,12 +10,9 @@ ms.topic: conceptual
 ms.date: 10/25/2023
 LocalizationGroup: Admin
 ---
-# Analyze query processing for Direct Lake datasets (PREVIEW)
+# Analyze query processing for Direct Lake datasets
 
-> [!IMPORTANT]
-> Direct Lake is currently in **preview**.
-
-Power BI datasets in [*Direct Lake*](directlake-overview.md) mode read delta tables directly from OneLake — unless they have to fall back to *DirectQuery* mode. Typical fall back reasons include memory pressures that can prevent loading of columns required to process a DAX query, and certain features at the data source might not support Direct Lake mode, like SQL views in a Warehouse. In general, Direct Lake mode provides the best DAX query performance unless a fall back to DirectQuery mode is necessary. Because fall back to DirectQuery mode can impact DAX query performance, it's important to analyze query processing for a Direct Lake dataset to identify if and how often fallbacks occur.
+Power BI datasets in [*Direct Lake*](directlake-overview.md) mode read delta tables directly from OneLake — unless they have to fall back to *DirectQuery* mode. Typical fallback reasons include memory pressures that can prevent loading of columns required to process a DAX query, and certain features at the data source might not support Direct Lake mode, like SQL views in a Warehouse. In general, Direct Lake mode provides the best DAX query performance unless a fallback to DirectQuery mode is necessary. Because fallback to DirectQuery mode can impact DAX query performance, it's important to analyze query processing for a Direct Lake dataset to identify if and how often fallbacks occur.
 
 ## Analyze by using Performance analyzer
 
@@ -45,7 +42,6 @@ Performance analyzer can provide a quick and easy look into how a visual queries
 
 SQL Server Profiler can provide more details about query performance by tracing query events. It's installed with [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). Before starting, make sure you have the latest version of SSMS installed.
 
-
 1. Start SQL Server Profiler from the Windows menu.
 
 1. In SQL Server Profiler, select **File** > **New Trace**.
@@ -54,7 +50,7 @@ SQL Server Profiler can provide more details about query performance by tracing 
 
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-server.png" alt-text="Connect to server dialog":::
 
-1. Select **Options**. In **Connect to database**, enter the name of your dataset and then select **Connect**. Sign in to Azure Active Directory.
+1. Select **Options**. In **Connect to database**, enter the name of your dataset and then select **Connect**. Sign in to Microsoft Entra ID.
 
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-connect-enter-dataset.png" alt-text="Enter dataset":::
 
@@ -78,6 +74,7 @@ SQL Server Profiler can provide more details about query performance by tracing 
     The following image shows an example of query processing events for a DAX query. In this trace, the VertiPaq storage engine (SE) events indicate that the query was processed in Direct Lake mode.
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-qp-events.png" alt-text="Query processing events in SQL Server Profiler":::
 
-## See also
+## Related content
 
-[Direct Lake](directlake-overview.md)
+- [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md)  
+- [Direct Lake overview](directlake-overview.md)

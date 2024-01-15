@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/18/2023
+ms.date: 11/10/2023
 LocalizationGroup: Conceptual
 ---
 
@@ -56,7 +56,7 @@ Once the external user has been invited to access Contoso resources, a shadow ac
 
 Contoso works with a subcontractor to perform reliability analysis of radiators. The subcontractor has a team of 10 people who need access to data in Contoso's Power BI environment. The Contoso Microsoft Entra administrator is involved to invite all the users and to handle any additions/changes as personnel at the subcontractor change. The Microsoft Entra administrator creates a security group for all the employees at the subcontractor. Using the security group, Contoso's employees can easily manage access to reports and ensure all required subcontractor personnel have access to all the required reports, dashboards, and Power BI apps. The Microsoft Entra administrator can also avoid being involved in the invitation process altogether by choosing to delegate invitation rights to a trusted employee at Contoso or at the subcontractor to ensure timely personnel management.
 
-Some organizations require more control over when external users are added, are inviting many users in an external organization, or many external organizations. In these cases, planned sharing can be used to manage the scale of sharing, to enforce organizational policies, and even to delegate rights to trusted individuals to invite and manage external users. Microsoft Entra B2B supports planned invites to be sent directly [from the Azure portal by an IT administrator](/azure/active-directory/b2b/add-users-administrator), or through [PowerShell using the invitation manager API](/azure/active-directory/b2b/customize-invitation-api) where a set of users can be invited in one action. Using the planned invites approach, the organization can control who can invite users and implement approval processes. Advanced Microsoft Entra ID capabilities like dynamic groups can make it easy to maintain security group membership automatically.
+Some organizations require more control over when external users are added, are inviting many users in an external organization, or many external organizations. In these cases, planned sharing can be used to manage the scale of sharing, to enforce organizational policies, and even to delegate rights to trusted individuals to invite and manage external users. Microsoft Entra B2B supports planned invites to be sent directly [from the Azure portal by an IT administrator](/azure/active-directory/b2b/add-users-administrator), or through [PowerShell using the invitation manager API](/azure/active-directory/b2b/customize-invitation-api) where a set of users can be invited in one action. Using the planned invites approach, the organization can control who can invite users and implement approval processes. Advanced Microsoft Entra capabilities like dynamic groups can make it easy to maintain security group membership automatically.
 
 
 ![Control which guests can see content](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_02.png)
@@ -107,7 +107,7 @@ Typically, this sharing occurs initially using Ad hoc per item sharing. However,
 
 ### Case 2: Parent and its subsidiaries or affiliates
 
-Some organization structures are more complex, including partially or wholly owned subsidiaries, affiliated companies, or managed service provider relationships. These organizations have a parent organization such as a holding company, but the underlying organizations operate semi-autonomously, sometimes under different regional requirements. This leads to each organization having its own Microsoft Entra ID environment and separate Power BI tenants.
+Some organization structures are more complex, including partially or wholly owned subsidiaries, affiliated companies, or managed service provider relationships. These organizations have a parent organization such as a holding company, but the underlying organizations operate semi-autonomously, sometimes under different regional requirements. This leads to each organization having its own Microsoft Entra environment and separate Power BI tenants.
 
 ![Working with subsidiaries](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_05.png)
 
@@ -207,7 +207,7 @@ Power BI's integration with Microsoft Entra B2B gives Contoso a seamless, hassle
 
     **Planned Invites**
 
-    In this approach, Contoso invites the guest users to its Microsoft Entra ID ahead of time and then distributes Power BI content to them. Contoso can invite guest users from the Azure portal or using PowerShell. Here are the steps to invite guest users from the Azure portal:
+    In this approach, Contoso invites the guest users to its Microsoft Entra ahead of time and then distributes Power BI content to them. Contoso can invite guest users from the Azure portal or using PowerShell. Here are the steps to invite guest users from the Azure portal:
 
     - Contoso's Microsoft Entra administrator navigates to **Azure portal** > **Microsoft Entra ID** > **Users** > **All users** > **New guest user**
 
@@ -229,7 +229,7 @@ Power BI's integration with Microsoft Entra B2B gives Contoso a seamless, hassle
     Once the guest users select the link, they can access content in the Contoso Microsoft Entra tenant.
 
     > [!NOTE]
-    > It is possible to change the layout of the invitation email using the Microsoft Entra branding feature as described [here](/azure/active-directory/active-directory-b2b-invitation-email).
+    > It is possible to change the layout of the invitation email using the Microsoft Entra ID branding feature as described [here](/azure/active-directory/active-directory-b2b-invitation-email).
 
     **Ad hoc Invites**
 
@@ -328,7 +328,7 @@ Commonly when working with multiple external suppliers, Contoso needs to ensure 
 
 ### User-based security
 
-One of the most powerful features of Power BI is Row Level Security. This feature allows Contoso to create a single report and dataset but still apply different security rules for each user. For an in-depth explanation, see [Row-level security (RLS)](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/).
+One of the most powerful features of Power BI is Row Level Security. This feature allows Contoso to create a single report and semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) but still apply different security rules for each user. For an in-depth explanation, see [Row-level security (RLS)](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/).
 
 Power BI's integration with Microsoft Entra B2B allows Contoso to assign Row Level Security rules to guest users as soon as they're invited to the Contoso tenant. As we have seen before, Contoso can add guest users through either planned or ad-hoc invites. If Contoso wants to enforce row level security, it's strongly recommended to use planned invites to add the guest users ahead of time and assigning them to the security roles before sharing the content. If Contoso instead uses ad-hoc invites, there might be a short period of time where the guest users won't be able to see any data.
 
@@ -345,7 +345,7 @@ To make sure Contoso can filter data based on who is connecting, two roles are c
 
 ![Managing roles](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_28.png)
 
-Whenever roles are defined in the report, a user must be assigned to a specific role for them to get access to any data. The assignment of roles happens inside the Power BI service ( **Datasets > Security** ).
+Whenever roles are defined in the report, a user must be assigned to a specific role for them to get access to any data. The assignment of roles happens inside the Power BI service ( **Semantic models > Security** ).
 
 ![Setting security](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_29.png)
 
@@ -421,6 +421,8 @@ This method is fine if Contoso only has a handful of users or if Contoso can map
 
 ## Governance
 
+<a name='additional-microsoft-entra-id-settings-that-affect-experiences-in-power-bi-related-to-microsoft-entra-b2b'></a>
+
 ### Additional Microsoft Entra ID settings that affect experiences in Power BI related to Microsoft Entra B2B
 
 When using Microsoft Entra B2B sharing, the Microsoft Entra administrator controls aspects of the external user's experience. These are controlled on the External collaboration settings page within the Microsoft Entra ID settings for your tenant.
@@ -489,7 +491,7 @@ Using Power BI Embedded, the portal can use advantageous licensing, using an app
 
 Reasons to choose this alternative:
 
-- Easier to manage as the number of partner organizations grows. Since partners are added to a separate directory isolated from Contoso's internal Microsoft Entra ID directory, it simplifies IT's governance duties and helps prevent accidental sharing of internal data to external users.
+- Easier to manage as the number of partner organizations grows. Since partners are added to a separate directory isolated from Contoso's internal Microsoft Entra directory, it simplifies IT's governance duties and helps prevent accidental sharing of internal data to external users.
 - Typical Partner Portals are highly branded experiences with consistent experiences across partners and streamlined to meet the needs of typical partners. Contoso can therefore offer a better overall experience to partners by integrating all required services into a single portal.
 - Licensing costs for advanced scenarios like Editing content within the Power BI Embedded is covered by the Azure purchased Power BI Premium, and doesn't require assignment of Power BI Pro licenses to those users.
 - Provides better isolation across partners if architected as a multi-tenant solution.

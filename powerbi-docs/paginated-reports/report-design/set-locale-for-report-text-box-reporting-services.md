@@ -43,7 +43,8 @@ ms.reviewer: saurkumar
   
     - **UnicodeBiDi** property: select the level of bidirectional embedding to use in the text box.  
   
-## Next steps  
- [Expression uses in reports (Power BI Report Builder)](../../paginated-reports/expressions/expression-uses-reports-report-builder.md)  
- [Solution design considerations for multi-lingual or global deployments (Reporting Services)](/previous-versions/sql/)  
+## Related content
+
+- [Expression uses in reports (Power BI Report Builder)](../../paginated-reports/expressions/expression-uses-reports-report-builder.md)  
+- [Solution design considerations for multi-lingual or global deployments (Reporting Services)](/previous-versions/sql/)  
   

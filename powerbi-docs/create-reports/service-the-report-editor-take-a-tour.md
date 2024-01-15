@@ -4,7 +4,9 @@ description: Learn how to use the report editor and design the reports your end 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-IkJda4O7oGs
+ms.custom:
+  - video-IkJda4O7oGs
+  - ignite-2023-fabric
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual

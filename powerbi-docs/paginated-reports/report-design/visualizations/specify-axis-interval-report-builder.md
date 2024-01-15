@@ -80,10 +80,11 @@ By default, axis interval is set to Auto. This procedure explains how to set it 
   
 1. Select **OK**.
   
-## Next steps  
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
- [Formatting Data Points on a Chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
- [Sort Data in a Data Region (Power BI Report Builder)](/sql/reporting-services/report-design/sort-data-in-a-data-region-report-builder-and-ssrs)     
- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)   
- [Plot Data on a Secondary Axis &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plot-data-on-a-secondary-axis-report-builder-and-ssrs)  
+## Related content
+
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+- [Formatting Data Points on a Chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
+- [Sort Data in a Data Region (Power BI Report Builder)](/sql/reporting-services/report-design/sort-data-in-a-data-region-report-builder-and-ssrs)     
+- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)   
+- [Plot Data on a Secondary Axis &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plot-data-on-a-secondary-axis-report-builder-and-ssrs)  
   

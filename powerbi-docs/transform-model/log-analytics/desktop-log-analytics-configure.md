@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/26/2023
+ms.date: 12/07/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -88,7 +88,7 @@ There are many ways that Azure Log Analytics and Power BI can help solve real-wo
 
 * Identify periods of high or unusual Analysis Services engine activity by capacity, workspace, report, or user.
 * Analyze query performance and trends, including external DirectQuery operations.
-* Analyze dataset refresh duration, overlaps, and processing steps.
+* Analyze semantic model refresh duration, overlaps, and processing steps.
 * Analyze custom operations sent using the Premium XMLA endpoint.
 
 Send us feedback in the Power BI Community for how you're using logging and how it has helped your organization.
@@ -134,11 +134,11 @@ The following table describes the **schema**.
 | **ApplicationContext** | ApplicationContext_s | Property bag of unique identifiers providing details about the application executing the request. for example, report ID. |
 | **ApplicationName** | ApplicationName_s | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
 | **ArtifactId** | | Unique identifier of the resource logging the data. |
-| **ArtifactKind** | | Type of artifact logging the operation, for example,  Dataset. |
+| **ArtifactKind** | | Type of artifact logging the operation, for example, semantic model. |
 | **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
 | **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
-| **DatasetMode** | | The mode of the dataset. Import, DirectQuery, or Composite. |
+| **DatasetMode** | | The mode of the semantic model. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
 | **User** | User_s | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
 | **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
@@ -155,7 +155,7 @@ The following table describes the **schema**.
 | **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
 | **CustomerTenantId** | | Customer's Power BI tenant identifier. |
 | **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
-| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled datasets the ReplicaId is always 'AAA'  |
+| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA'  |
 
 ## Sample Log Analytics KQL queries
 
@@ -182,7 +182,7 @@ PowerBIDatasetsWorkspace
 | summarize percentiles(DurationMs, 0.5, 0.9) by bin(TimeGenerated, 1h)
 
 
-// refresh durations by workspace and dataset for last 30d
+// refresh durations by workspace and semantic model for last 30d
 PowerBIDatasetsWorkspace
 | where TimeGenerated > ago(30d)
 | where OperationName == 'CommandEnd'
@@ -208,7 +208,7 @@ Explore and get insights of Azure Log Analytics Power BI data using an open-sour
 
 
 
-## Next steps
+## Related content
 
 The following articles can help you learn more about Power BI and about its integration with Azure Log Analytics.
 

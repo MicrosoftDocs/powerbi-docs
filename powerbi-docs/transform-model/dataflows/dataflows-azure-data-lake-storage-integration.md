@@ -26,7 +26,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled.
 
-- The storage account must be created in the same Azure Active Directory (Azure AD) tenant as the [Power BI tenant](/power-bi/admin/service-admin-where-is-my-tenant-located#how-to-find-the-default-region-for-your-organization).
+- The storage account must be created in the same Microsoft Entra tenant as the [Power BI tenant](/power-bi/admin/service-admin-where-is-my-tenant-located#how-to-find-the-default-region-for-your-organization).
 
 - The user must have Storage Blob Data Owner role, Storage Blob Data Reader role, and an Owner role at the storage account level (scope should be *this resource* and not inherited). Any applied role changes might take a few minutes to sync, and must sync before the following steps can be completed in the Power BI service.
 
@@ -149,7 +149,7 @@ To revert the migration that you made to Gen 2, you need to delete your dataflow
 
 The scope of this document describes ADLS Gen 2 dataflows connections and not the Power BI ADLS Gen 2 connector. Working with the ADLS Gen 2 connector is a separate, possibly additive, scenario. The ADLS connector simply uses ADLS as a datasource. So using Power Query Online to query against that data doesn’t have to be in CDM format, it can be whatever data format the customer wants. For more information, see [Azure Data Lake Storage Gen2](/power-query/connectors/datalakestorage).
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

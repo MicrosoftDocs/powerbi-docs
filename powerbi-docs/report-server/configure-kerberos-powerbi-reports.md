@@ -230,8 +230,9 @@ After all of the above configuration is in place, your report should display pro
 
 While this configuration should work in most cases, with Kerberos, there can be different configuration depending on your environment. If the report will still not load, you will want to reach out to your domain administrator to investigate further or contact support.
 
-## Next steps
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
+## Related content
+
+- [Administrator overview](admin-handbook-overview.md)  
+- [Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

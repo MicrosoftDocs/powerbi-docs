@@ -167,7 +167,7 @@ After you collect the diagnostic files, attach them to your support request to h
 
 This trace will also contain the data used to populate the visuals shown on the screen.
 
-## Next steps
+## Related content
 
 * [Track Power BI service health in Microsoft 365](service-admin-health.md)
 * [Service interruption notifications](service-interruption-notifications.md)

@@ -91,7 +91,7 @@ After you have your URL, you can create an iFrame within a SharePoint page to ho
 
     ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
 
-## Next steps
+## Related content
 
 - [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md).  
 - [Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md).  

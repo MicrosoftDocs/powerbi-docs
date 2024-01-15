@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: Tenant setup
@@ -23,6 +23,8 @@ Fabric is part of a larger Microsoft ecosystem. If your organization is already 
 
 > [!TIP]
 > Many organizations have an on-premises Active Directory (AD) environment that they synchronize with Microsoft Entra ID in the cloud. This setup is known as a [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity) solution, which is out of scope for this article. The important concept to understand is that users, groups, and service principals must exist in Microsoft Entra ID for a cloud-based suite of services like Fabric to work. Having a hybrid identity solution will work for Fabric. We recommend talking to your Microsoft Entra administrators about the best solution for your organization.
+
+For more information about the responsibilities of a Fabric administrator, see [Tenant administration](powerbi-implementation-planning-tenant-administration.md#define-scope-of-responsibilities).
 
 ## Microsoft Entra tenant
 
@@ -42,7 +44,7 @@ To properly manage, configure, and support Fabric, a managed tenant is required.
 > [!TIP]
 > The administration of Microsoft Entra ID is a broad and deep topic. We recommend that you assign specific people in your IT department as system administrators to [securely manage Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for your organization.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When reviewing your Microsoft Entra tenant for use with Fabric, key decisions and actions include:
 
@@ -60,7 +62,7 @@ Knowing your CTID is important for [Microsoft Entra B2B scenarios](/power-bi/ent
 
 If you intend to collaborate with or provide content to external users, we recommend setting up [custom branding](/power-bi/admin/service-admin-custom-branding). Use of a logo, cover image, and theme helps users identify which organizational tenant they're accessing.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When granting external users permission to view your content, or when you have multiple tenants, key decisions and actions include:
 
@@ -80,7 +82,9 @@ The following list includes some common reasons for collaboration between Fabric
 - **External users:** You'll need to understand how the settings for [external (guest) users](/azure/active-directory/external-identities/external-identities-overview) are set up in Microsoft Entra ID. There are several Fabric [tenant settings](/power-bi/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-power-bi) related to external users, and they rely on how Microsoft Entra ID is set up. Also, certain security capabilities for the Power BI workload only work when using the [planned invitation](/power-bi/enterprise/service-admin-azure-ad-b2b#planned-invites) approach for external users in Microsoft Entra ID.
 - **Real-time control policies:** You can choose to set up [real-time session control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a Power BI report when it has a specific sensitivity label.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+For more information, see [Collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators).
+
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering how to work with your Microsoft Entra administrators, key decisions and actions include:
 
@@ -110,7 +114,7 @@ The relocation of a tenant to another region isn't a fully automated process, an
 > [!TIP]
 > Because a lot of effort is involved, when you determine that a move is necessary, we recommend that you do it sooner rather than later.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the home region for storing data in your tenant, key decisions and actions include:
 
@@ -132,7 +136,7 @@ Multi-Geo support enables organizations to:
 > [!NOTE]
 > The Multi-Geo feature is available with any [type of capacity license](/fabric/enterprise/licenses#capacity) (except shared capacity). It's not available with Premium Per User (PPU) because data stored in workspaces assigned to PPU is always stored in the home region (just like shared capacity).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering other specific data regions for your tenant, key decisions and actions include:
 
@@ -140,7 +144,7 @@ Multi-Geo support enables organizations to:
 > - **Identify data residency requirements:** Determine what your requirements are for data residency. Identify which regions are appropriate, and which users might be involved.
 > - **Investigate use of the Multi-Geo feature:** For specific situations where data should be stored elsewhere from the home region, investigate enabling Multi-Geo.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
 

@@ -50,8 +50,9 @@ ms.reviewer: saurkumar
   
 3.  Select the pages and set the display properties that you want to apply to this point.  
   
-## Next steps  
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
+## Related content
+
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)   
+- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
   
   

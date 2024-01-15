@@ -142,7 +142,7 @@ Contains attributes that define the item. To learn more, see [Git integration so
 
 For more information, refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
 
-## See also
+## Related content
 
-[Power BI Desktop project dataset folder](projects-dataset.md)  
-[Power BI Desktop projects](projects-overview.md)  
+- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop projects](projects-overview.md)  
