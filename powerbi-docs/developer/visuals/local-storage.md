@@ -20,7 +20,7 @@ Local storage is isolated so that each type of visual has its own separate stora
 
 ### [Version 1](#tab/v1)
 
-This version of the *local storage API* is scheduled for deprecation. We're not accepted any more requests. When possible, use [Version 2](&tabs=v2#how-to-use-loca-storage) instead.
+This version of the *local storage API* is scheduled for deprecation. We're not accepted any more requests. When possible, use [Version 2](#version-2) instead.
 In the following example, a counter is increased whenever the *update* method is called. The counter value is saved locally and called each time the visual starts. This way, the counter continues counting from where it left off instead of starting over each time the visual is started:
 
 ```typescript
@@ -69,7 +69,7 @@ The local storage API has four methods:
 
     * PrivilegeStatus.DisabledByAdmin: the tenant admin switch is off
     * PrivilegeStatus.NotDeclared: the visual has no declaration for the local storage in the privileges array
-    * PrivilegeStatus.NotSupported: the API isn't supported (see [limitations](&tabs=v2#considerations-and-limitations) for more information)])
+    * PrivilegeStatus.NotSupported: the API isn't supported (see [limitations](#considerations-and-limitations-version-2) for more information)])
     * PrivilegeStatus.Allowed: the API is supported and allowed
 
   Before using the *get*, *set*, or *remove* methods, it's best practice to use the *status* method to check the status of the API and ensure that your visual behaves as expected.
