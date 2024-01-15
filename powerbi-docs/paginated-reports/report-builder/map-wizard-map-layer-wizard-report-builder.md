@@ -222,8 +222,9 @@ ms.reviewer: saurkumar
   
  The report processor applies the rules that you set and automatically determines the list of items to display in a legend. By default, the results of all rules for all layers display in the first legend. You can adjust this after you complete the wizard. For more information, see [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data).  
   
-## Next steps  
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)   
- [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)   
- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)  
+## Related content
+
+- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)   
+- [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)   
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)  
   

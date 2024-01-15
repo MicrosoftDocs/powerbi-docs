@@ -195,6 +195,6 @@ The remainder of the auditing and monitoring content is organized into the follo
 - **[Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md):** Key decisions and actions administrators can take to create an end-to-end auditing solution.
 - **[Tenant-level monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md):** Tactical actions administrators can take to monitor the Power BI service, updates, and announcements.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md), learn about report-level auditing.

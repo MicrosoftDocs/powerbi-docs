@@ -45,7 +45,7 @@ You can use Reporting Services aggregate functions that accept the parameter *Re
 
 For more information, see [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md).
 
-## See also
+## Related content
 
 - [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)
 - [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)

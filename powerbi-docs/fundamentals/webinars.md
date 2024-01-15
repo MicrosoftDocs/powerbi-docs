@@ -365,7 +365,7 @@ Be a full stack Power BI Jedi - A walkthrough of Power BI most advanced features
 by Gil Raviv  
 [Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-## See also
+## Related content
 
 - [Power BI whitepapers](../guidance/whitepapers.md)
 

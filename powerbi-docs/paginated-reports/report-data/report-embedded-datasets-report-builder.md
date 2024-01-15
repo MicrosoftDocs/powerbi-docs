@@ -161,7 +161,7 @@ ms.reviewer: rpatkar
 
  For data sources that support international data, you might need to adjust properties for a dataset that affect the sort order, international character properties, and case sensitivity. These properties include case, kanatype, width, accent, and collation. For more information about how to set these properties, see [Dataset Properties Dialog Box, Options (Power BI Report Builder)](./dataset-properties-dialog-box-options-report-builder.md).
   
-## Next steps
+## Related content
 
 - [Manage Report Data Sources](../../connect-data/service-gateway-data-sources.md)
 - [Data retrieval guidance for paginated reports](../../guidance/report-paginated-data-retrieval.md)

@@ -49,7 +49,7 @@ You can use the following keyboard shortcuts to increase your productivity and s
 |Alt+Click  |Insert cursor  |
 |Home / End  |Go to beginning/end of line  |
 
-## Next steps
+## Related content
 
 The following articles provide more information about formulas and DAX in Power BI Desktop.
 

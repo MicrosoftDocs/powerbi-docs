@@ -575,6 +575,6 @@ Once you've identified your BI goals and priorities, you have concluded strategi
 > - **Align with stakeholders:** Obtain consensus agreement that the assessments and other deliverables are accurate.
 > - **Align with executives:** Obtain approvals on the outcomes of strategic planning and the next steps.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md), learn how to conduct BI tactical planning.

@@ -126,7 +126,7 @@ For information about setting preferences to cross-highlight and cross-filter mu
 
 For information about working with the **Filters** pane in Power BI, see [Add a filter to a report in Power BI](../create-reports/power-bi-report-add-filter.md).
 
-## Next steps
+## Related content
 
 - Create [radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

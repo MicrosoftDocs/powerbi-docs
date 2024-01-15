@@ -42,7 +42,7 @@ The following bulleted-list provides specific guidance.
 
 - **Prepare and transform data in the source**: When you identify that certain Power Query query steps can't be folded, it may be possible to apply the transformations in the data source. The transformations could be achieved by writing a database view that logically transforms source data. Or, by physically preparing and materializing data, in advance of Power BI querying it. A relational data warehouse is an excellent example of prepared data, usually consisting of pre-integrated sources of organizational data.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

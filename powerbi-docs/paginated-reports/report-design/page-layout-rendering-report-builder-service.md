@@ -114,7 +114,7 @@ A report can also contain subreports.
  [Controlling page breaks, headings, columns, and rows &#40;Report Builder)](control-page-breaks-headings-columns-rows-report-builder.md)  
  Provides information about using page breaks.  
   
-## Next steps
+## Related content
 
- [Interactive functionality for different report rendering extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)
+- [Interactive functionality for different report rendering extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)
 

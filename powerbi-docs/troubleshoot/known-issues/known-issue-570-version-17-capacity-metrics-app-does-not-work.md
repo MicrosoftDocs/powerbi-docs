@@ -28,6 +28,6 @@ On the **Apps** page in the Power BI service, you see an App named similar to **
 
 To start using the Metrics app, you must uninstall version 17. Then you can install the latest Metrics app by using the **Get apps** button on the **Apps** page or by following the instructions to [install the Metrics app for the first time](/fabric/enterprise/metrics-app-install?tabs=1st).
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

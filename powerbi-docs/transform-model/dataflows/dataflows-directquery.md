@@ -44,7 +44,7 @@ This image shows the **Table** icon, indicating that the *Query* table only supp
 
 In DirectQuery mode, you can quickly interrogate large-scale semantic models locally. However, you can't currently perform any other transformations.
 
-## Next steps
+## Related content
 
 This article provided an overview of using DirectQuery with dataflows. The following articles might also be useful:
 

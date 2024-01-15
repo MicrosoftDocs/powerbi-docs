@@ -57,13 +57,14 @@ In Power BI paginated reports, you can format any part of the text in a text box
   
  The list repeats one time for every value in the field, and the *FieldName* placeholder is replaced each time by the value of that field in the dataset.  
   
-## Next steps
- [Text Boxes &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/text-boxes-report-builder-and-ssrs)   
- [Formatting Text and Placeholders &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Expression Uses in Reports &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression Examples &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
- [Add HTML into a Report &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists &#40;Report Builder and Service&#41;](../../report-builder-tables-matrices-lists.md)   
- [Formatting Numbers and Dates &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
- [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](./text-boxes-report-builder-and-service.md)  
+## Related content
+
+- [Text Boxes &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/text-boxes-report-builder-and-ssrs)   
+- [Formatting Text and Placeholders &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+- [Expression Uses in Reports &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
+- [Expression Examples &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expression-examples-report-builder-and-ssrs)   
+- [Add HTML into a Report &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs)   
+- [Tables, Matrices, and Lists &#40;Report Builder and Service&#41;](../../report-builder-tables-matrices-lists.md)   
+- [Formatting Numbers and Dates &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)   
+- [Placeholder Properties Dialog Box, General &#40;Report Builder and Service&#41;](./text-boxes-report-builder-and-service.md)  
   

@@ -68,7 +68,7 @@ Complete the following steps to connect to a datamart in Power BI Desktop:
 For more information, see [connect to on-premises data in SQL Server](/power-bi/connect-data/service-gateway-sql-tutorial). You don't need to set up a gateway with datamarts to use them in Power BI. 
 
 
-## Next steps
+## Related content
 This article provided information about creating reports using datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

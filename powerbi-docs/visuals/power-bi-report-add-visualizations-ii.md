@@ -96,7 +96,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-2.png" alt-text="Screenshot that shows Chain in the fields list and in the Legend area.":::
 
-## Next steps
+## Related content
 
 * Learn more about [visualizations in Power BI reports](power-bi-report-visualizations.md).
 * If you have questions, see the [Power BI Community](https://community.powerbi.com/) site.

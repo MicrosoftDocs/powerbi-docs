@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/11/2021
+ms.date: 01/11/2024
 ---
 
 # Tutorial: Create an R-powered Power BI visual
@@ -59,7 +59,7 @@ In this tutorial, you learn how to:
 
       This command creates a new folder for the *rVisualSample* visual. The structure is based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R-script that is run to generate the image when the visual is rendered. You can create your R-script in **Power BI Desktop**.
 
-3. From the newly created `rVisualSample` directory run
+3. From the newly created `rVisualSample` directory run the following command:
 
    ```cmd
    pbiviz start
@@ -93,7 +93,7 @@ In this tutorial, you learn how to:
 
 The R-script can be modified to create other types of visuals. Let's create a line chart next.
 
-1. Paste the following R code into the **R script editor**:
+1. Paste the following R code into the **R script editor**.
 
    ```r
    x <- dataset[,1] # get the first column from semantic model
@@ -193,9 +193,9 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
 
 Now that we have a basic `corrplot` visual, let's add properties to the property pane that allow the user to change the look and feel to the visual.
 
-We'll use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
+We use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
 
-1. Define an `object` called *settings* in the *capabilities.json* file and give it the properties shown below. Then use this object name in the enumeration method to get the values from the property pane.
+1. Define an `object` called *settings* in the *capabilities.json* file and give it the following properties. Then use this object name in the enumeration method to get the values from the property pane.
 
     ```json
     {
@@ -246,23 +246,39 @@ We'll use the `method` argument to configure the shape of the data points. The d
 2. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
 
     ```typescript
+
     "use strict";
 
-    import { dataViewObjectsParser } from "powerbi-visuals-utils-dataviewutils";
-    import DataViewObjectsParser = dataViewObjectsParser.DataViewObjectsParser;
+    import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    export class VisualSettings extends DataViewObjectsParser {
-      public rcv_script: rcv_scriptSettings = new rcv_scriptSettings();
-      public settings: CorrPlotSettings = new CorrPlotSettings();
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
+    import FormattingSettingsSlice = formattingSettings.Slice;
+    import FormattingSettingsModel = formattingSettings.Model;
+
+    /**
+
+    * RCV Script Formatting Card
+    */
+    class rcvScriptCardSettings extends FormattingSettingsCard {
+        provider: FormattingSettingsSlice = undefined;
+        source: FormattingSettingsSlice = undefined;
+
+        name: string = "rcv_script";
+        displayName: string = "rcv_script";
+        slices: Array<FormattingSettingsSlice> = [this.provider, this.source];
     }
 
-    export class CorrPlotSettings {
-      public method: string = "circle";
-    }
+    /**
 
-    export class rcv_scriptSettings {
-      public provider;
-      public source;
+    * visual settings model class
+    *
+
+    */
+    export class VisualFormattingSettingsModel extends FormattingSettingsModel {
+        // Create formatting settings model formatting cards
+        rcvScriptCard = new rcvScriptCardSettings();
+
+        cards = [this.rcvScriptCard];
     }
     ```
 
@@ -292,7 +308,7 @@ We'll use the `method` argument to configure the shape of the data points. The d
 
 Now you can package the visual and import it to any Power BI report.
 
-1. Fill in the `displayName`, `supportUrl`, `description`, author's `name` and `email`, and any other important information in the `pbivis.json` file.
+1. Fill in the `displayName`, `supportUrl`, `description`, author's `name` and `email`, and any other important information in the `pbiviz.json` file.
 2. If you want to change the visual's icon on the visualization pane, replace the **icon.png** file in the **assets** folder.
 3. From the root directory of your visual run:
 
@@ -310,8 +326,6 @@ Now you can package the visual and import it to any Power BI report.
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
+* [Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
->[!div class="nextstepaction"]
->[Build a bar chart](create-bar-chart.md)
+* [Build a bar chart](create-bar-chart.md)

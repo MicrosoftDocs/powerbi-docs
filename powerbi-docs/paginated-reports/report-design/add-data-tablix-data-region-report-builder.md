@@ -43,12 +43,13 @@ In paginated reports, to display data from a report dataset in a table or matrix
 ## Add an existing tablix data region from another report  
  You can copy a data region from another report and paste it into-a new or existing report. After you paste the data region, you must ensure that the dataset the data region uses is defined, and that the dataset fields have identical names and data types as in the original report. You cannot copy datasets from one report to another, but if your reports use same data sources, you can quickly duplicate the dataset in another report. Also you can import the query text for the queries that retrieve the data for the dataset, which makes it simple to duplicate the queries in reports. For more information, see [Report Embedded Datasets &#40;Power BI Report Builder&#41;](../../paginated-reports/report-data/report-embedded-datasets-report-builder.md).  
   
-## Next steps  
- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
- [Report Parameters &#40;Power BI Report Builder&#41;](../../paginated-reports/parameters/report-builder-parameters.md)   
- [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Add, Edit, Refresh Fields in the Report Data Pane &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/add-edit-refresh-fields-in-the-report-data-pane-report-builder-and-ssrs)   
- [Add an Expression &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/add-expression-report-builder.md)  
+## Related content
+
+- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
+- [Report Parameters &#40;Power BI Report Builder&#41;](../../paginated-reports/parameters/report-builder-parameters.md)   
+- [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
+- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
+- [Add, Edit, Refresh Fields in the Report Data Pane &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/add-edit-refresh-fields-in-the-report-data-pane-report-builder-and-ssrs)   
+- [Add an Expression &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/add-expression-report-builder.md)  
   
   

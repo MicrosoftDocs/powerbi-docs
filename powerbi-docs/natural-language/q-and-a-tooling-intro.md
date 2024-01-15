@@ -153,6 +153,6 @@ A row label allows you to define which column (or *field*) best identifies a sin
 
 In Power BI, you can completely train and enhance the natural language engine inside Q&A. You can change the scoring and weighting of the underlying natural language results. For more information, see [Edit Q&A linguistic schema and add phrasings](q-and-a-tooling-advanced.md).
 
-## Next steps
+## Related content
 
 There are many other best practices for improving the natural language engine. For more information, see [Best practices to optimize Q&A](q-and-a-best-practices.md).

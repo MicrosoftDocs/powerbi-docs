@@ -45,8 +45,8 @@ By providing plus and minus icons on a text box, you can enable users in a Power
   
  For more information, see [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs).  
   
-## Next steps
+## Related content
 
- [Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)](drillthrough-drilldown-subreports-nested-data-regions.md)
- [Interactive Sort, Document Maps, and Links &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)
- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md) 
+- [Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)](drillthrough-drilldown-subreports-nested-data-regions.md)
+- [Interactive Sort, Document Maps, and Links &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)
+- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md) 

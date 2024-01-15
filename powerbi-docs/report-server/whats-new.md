@@ -1219,7 +1219,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. F
   - Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 - Enhanced collaboration in reports with comments
 
-## Next steps
+## Related content
 
 Check these sources to keep up-to-date on new features in Power BI Report Server.
 

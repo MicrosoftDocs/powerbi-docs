@@ -43,7 +43,7 @@ Most dataflows reside in the Power BI service tenant. However, **Power BI Deskto
 
 To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [configure and consume a dataflow](dataflows/dataflows-configure-consume.md).
 
-## Next steps
+## Related content
 
 There are all sorts of interesting things you can do with dataflows. For more information, check out the following resources:
 

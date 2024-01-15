@@ -116,7 +116,7 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 - Only a single version of the delta tables are exported and stored on OneLake. Old versions of the delta tables are deleted after a successful export. Other execution engines which use the older but now deleted version of the data can have transient failures.
 
-## See also
+## Related content
 
-[What is OneLake?](/fabric/onelake/onelake-overview)  
-[OneLake file explorer overview](/fabric/onelake/onelake-file-explorer)  
+- [What is OneLake?](/fabric/onelake/onelake-overview)  
+- [OneLake file explorer overview](/fabric/onelake/onelake-file-explorer)  

@@ -169,9 +169,9 @@ Other limitations:
 
 - Support inside Q&A
 
-## Next steps
+## Related content
 
-[Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
+- [Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
 
-[Power BI visualizations](power-bi-report-visualizations.md)
+- [Power BI visualizations](power-bi-report-visualizations.md)
 

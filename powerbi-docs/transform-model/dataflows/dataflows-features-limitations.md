@@ -180,7 +180,7 @@ The data types supported in dataflows are the following:
 |Null	|Not Supported|
 
 
-## Next steps
+## Related content
 The following articles provide more information about dataflows and Power BI:
 
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)

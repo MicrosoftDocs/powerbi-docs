@@ -96,6 +96,6 @@ Let us know your thoughts about the small multiples visual:
 - [Power BI Community](https://community.powerbi.com/)
 - [Power BI Ideas page](https://ideas.powerbi.com/ideas/) 
 
-## Next steps
+## Related content
 
-[Interact with small multiples in Power BI](power-bi-visualization-small-multiples-interact.md)
+- [Interact with small multiples in Power BI](power-bi-visualization-small-multiples-interact.md)

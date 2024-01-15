@@ -254,7 +254,7 @@ When using datamarts with [named connections](/power-query/connection-authentica
 * You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
 * You cannot name or rename cloud data sources; you can name or rename gateway connections.
 
-## Next steps
+## Related content
 This article provided sample data and instructions on how to create and interact with datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

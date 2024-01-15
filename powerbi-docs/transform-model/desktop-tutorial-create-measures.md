@@ -236,7 +236,7 @@ Suppose you want to find out which products have the highest net sales amount pe
 
 Measures give you the power to get the insights you want from your data. You've learned how to create measures by using the formula bar, name them whatever makes most sense, and find and select the right formula elements by using the DAX suggestion lists. You've also been introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
 
-## Next steps
+## Related content
 
 - To learn more about Power BI Desktop quick measures, which provide many common measure calculations for you, see [Use quick measures for common calculations](desktop-quick-measures.md).
   

@@ -745,6 +745,6 @@ Monitoring refers to ongoing activities that inform you about what's going on. M
 
 For information about monitoring Power BI, see [Tenant-level monitoring](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md).
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and guidance to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md#subject-areas).

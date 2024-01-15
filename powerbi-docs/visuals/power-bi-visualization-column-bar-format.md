@@ -41,6 +41,6 @@ Explore these new capabilities to create compelling narratives with your data in
 
 For more comprehensive information about these features for column and bar charts, see the [Power BI Visuals blog post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7138638604704129024/).
 
-## Next steps
+## Related content
 
 - [Bar and column charts described](power-bi-visualization-types-for-reports-and-q-and-a.md#bar-and-column-charts)

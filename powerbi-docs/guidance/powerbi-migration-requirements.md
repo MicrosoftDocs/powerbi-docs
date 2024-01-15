@@ -102,7 +102,7 @@ Identify high priority data, which might include data that:
 - Can be used to create a shared semantic model for reuse by reports and many report creators.
 - Involves a reasonable level of complexity (to improve chances of success when in the initial migration iterations).
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-planning.md), learn about Stage 2, which is concerned with planning the migration for a single Power BI solution.
 

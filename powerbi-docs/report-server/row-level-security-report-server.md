@@ -110,11 +110,10 @@ No, you secure individual rows of data but users can always see either the detai
 ### Can I add new roles in Power BI Desktop if I already have existing roles and members assigned? 
 
 Yes, if you already have existing roles defined and members assigned in Power BI Report Server, you can make additional roles and republish your report with no effect on your current assignments. 
- 
 
-## Next steps
+## Related content
 
-[What is Power BI Report Server?](get-started.md) 
-[Administrator handbook](admin-handbook-overview.md)  
+- [What is Power BI Report Server?](get-started.md) 
+- [Administrator handbook](admin-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

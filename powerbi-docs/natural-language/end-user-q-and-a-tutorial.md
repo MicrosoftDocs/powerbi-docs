@@ -127,7 +127,7 @@ Let's try it out.
 
 - At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Power BI administrator can enable.
 
-## Next steps
+## Related content
 
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 - [Tips for asking questions in Power BI Q&A](../consumer/end-user-q-and-a-tips.md)

@@ -489,6 +489,6 @@ For more information about OLS, see [Restrict access to Power BI model objects](
 > - **Create and publish user guidance:** Create documentation for users that includes requirements and preferences for using RLS and OLS. Describe how to obtain user mapping information if it exists in a centralized location.
 > - **Update training materials:** Include key information about requirements and preferences for RLS and OLS in user training materials. Provide examples for users to understand when it's appropriate to use either data security technique.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-security-content-creator-planning.md), learn about security planning for content creators who are responsible for creating semantic models, dataflows, datamarts, reports, or dashboards.

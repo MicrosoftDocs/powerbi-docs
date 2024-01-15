@@ -325,7 +325,7 @@ When applications connect to a workspace, access through XMLA endpoints is logge
 
 To learn more, see [Auditing Power BI](../admin/service-admin-auditing.md).
 
-## See also
+## Related content
 
 For more information related to this article, see:
 

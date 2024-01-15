@@ -62,7 +62,7 @@ To prevent row and column labels from scrolling out of view after rendering a pa
   
  As you page down or across the report, the static tablix members remain in view.  
   
-## Next steps
+## Related content
 
 - [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
 - [Tablix Data Region &#40;Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md) 

@@ -30,5 +30,6 @@ ms.date: 01/24/2023
   
  Performance and memory consumption varies for each rendering format. The same report will render at different rates and require different amounts of memory depending on the format you select. The fastest and least memory intensive formats include CSV, XML, and HTML. PDF and Excel have the slowest performance, but for different reasons. PDF is CPU-intensive, while Excel is RAM-intensive. Image rendering falls in-between the two groups. You can specify the format when you define how the report is distributed.  
   
-## Next steps
-[Paginated reports capacity planning](/power-bi/paginated-reports/paginated-capacity-planning)
+## Related content
+
+- [Paginated reports capacity planning](/power-bi/paginated-reports/paginated-capacity-planning)

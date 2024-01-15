@@ -119,11 +119,12 @@ Add a filter to a dataset, data region, or group to a Power BI paginated report 
   
 10. Select **OK**.
   
-## Next steps  
- [Add Dataset Filters, Data Region Filters, and Group Filters (Power BI Report Builder)](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Expression Examples (Power BI Report Builder)](../../paginated-reports/expressions/report-builder-expression-examples.md)   
- [Gauges in a paginated report (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/gauges-report-builder.md)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)   
- [Charts in Power BI paginated reports (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
+## Related content
+
+- [Add Dataset Filters, Data Region Filters, and Group Filters (Power BI Report Builder)](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
+- [Expression Examples (Power BI Report Builder)](../../paginated-reports/expressions/report-builder-expression-examples.md)   
+- [Gauges in a paginated report (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/gauges-report-builder.md)   
+- [Tables, Matrices, and Lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+- [Charts in Power BI paginated reports (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
   
   

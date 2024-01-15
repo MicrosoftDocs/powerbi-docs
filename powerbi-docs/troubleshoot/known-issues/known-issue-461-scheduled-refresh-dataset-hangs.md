@@ -28,6 +28,6 @@ You may experience a skipped scheduled refresh on datasets connected to a datafl
 
 To work around this issue, republish the dataset under a different name to the same workspace.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

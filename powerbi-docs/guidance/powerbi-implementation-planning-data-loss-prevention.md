@@ -364,6 +364,6 @@ Power BI administrators and security and compliance administrators will need to 
 > [!TIP]
 > For more information about auditing, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md).
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-defender-for-cloud-apps.md), learn about using Defender for Cloud Apps with Power BI.

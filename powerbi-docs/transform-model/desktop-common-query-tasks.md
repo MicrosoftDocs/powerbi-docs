@@ -146,7 +146,7 @@ Here's a screenshot of the **Advanced Editor**, with the query steps associated 
 
 Power BI Desktop provides an extensive set of formula categories. For more information, and a complete reference of all Power Query Editor formulas, see [Power Query M function reference](/powerquery-m/power-query-m-function-reference).
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 
