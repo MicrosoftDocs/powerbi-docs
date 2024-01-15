@@ -72,6 +72,6 @@ If any invalid edits are made to the TMDL files, Power BI Desktop throws an erro
 
 :::image type="content" source="./media/projects-tmdl-folder/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
 
-## Limitations / Known Issues 
+## Considerations and limitations
 
 TBD 

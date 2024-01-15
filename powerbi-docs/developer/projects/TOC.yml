@@ -7,6 +7,8 @@
     items: 
     - name: "Power BI Desktop projects overview"
       href: projects-overview.md
+    - name: "Power BI Desktop Developer mode"
+      href: projects-tmdl-folder.md
     - name: "Project semantic model folder"
       href: projects-dataset.md
     - name: "Project report folder"
