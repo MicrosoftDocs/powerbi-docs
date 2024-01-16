@@ -66,6 +66,6 @@ You can also export paginated reports to many formats:
   - You can only sort on one column at a time.
   - If a report was created in the service before December 2023, you have to edit the report for sorting to be available during consumption.
 
-## Next steps
+## Related content
 
 [Paginated reports in the Power BI service](end-user-paginated-report.md)

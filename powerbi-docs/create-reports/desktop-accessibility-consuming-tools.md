@@ -115,7 +115,7 @@ Limitations & Notes:
 * Show Visuals as Tables only applies to the current report you are viewing (each new report will need to be activated)
 * Show Visuals as Tables doesn't apply to the following visuals: slicers, cards, smart narrative, Power Apps, Paginated Report, Key Influencers, Q&A
 
-## Next steps
+## Related content
 
 The collection of articles for Power BI accessibility are the following:
 

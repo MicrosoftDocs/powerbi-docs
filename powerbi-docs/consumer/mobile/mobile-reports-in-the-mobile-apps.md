@@ -207,7 +207,7 @@ The Power BI mobile app has a number of settings that enable you to control your
 See [app interaction settings](./mobile-app-interaction-settings.md) for information about how to change these settings.
 
 
-## Next steps
+## Related content
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * [Create a version of a report that's optimized for phones](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
