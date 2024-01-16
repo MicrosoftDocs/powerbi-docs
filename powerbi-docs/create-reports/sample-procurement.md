@@ -176,7 +176,7 @@ Select **Edit** in the **Power BI** header bar to explore in the editing view:
 - Change the visualization type for each chart.
 - Pin charts of interest to your dashboard.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

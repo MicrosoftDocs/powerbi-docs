@@ -74,7 +74,7 @@ By default, downstream inheritance operates in user consent mode. To switch down
 
 When you publish a *.pbix* file that has a sensitivity label, the label that is inherited by the semantic model and report created in the service is considered to be automatically or manually applied depending on whether the label on the *.pbix* file was automatically or manually applied. This has implications for subsequent downstream inheritance from the semantic model to its associated report. If the label on the *.pbix* file was automatically applied, then later, after publishing, if the label on the semantic model is changed, the associated report will inherit the change. If, however, the label on the *.pbix* file was manually applied, then if the label on the semantic model is changed, the label on its associated report **will not** be overwritten, as it is considered to be manually applied. This is in keeping with the rule that downstream inheritance never overwrites a manually applied label.
 
-## Next steps
+## Related content
 
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)
 * [Label change enforcement](service-security-sensitivity-label-change-enforcement.md)

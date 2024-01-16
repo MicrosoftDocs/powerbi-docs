@@ -111,7 +111,7 @@ Using the Power BI Premium [Microsoft Fabric Capacity Metrics app](/fabric/enter
 
 * The size of your Power BI items approach or exceed capacity limits. If the item size of any of the items reported in the metrics app approaches your capacity limit or exceeds it, operations against that item will fail. Therefore if a critical item approaches those limits (80% of the capacity size) it's advisable to consider upgrading the capacity in advance, to avoid interruption of service should that item exceed the capacity limit.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Using autoscale with Premium](service-premium-auto-scale.md)

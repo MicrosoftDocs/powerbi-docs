@@ -205,8 +205,8 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 For more information, see [Install Power BI Report Server](../report-server/install-report-server.md).
 
-## Next steps
+## Related content
 
-[Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
+* [Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

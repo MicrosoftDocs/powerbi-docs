@@ -53,7 +53,7 @@ This article uses the Retail Analysis sample. Follow these step-by-step instruct
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-2.png" alt-text="Screenshot of the Q&A map visualization.":::
 
-## Next steps
+## Related content
 
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)

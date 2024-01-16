@@ -163,7 +163,7 @@ You don't see prompts to upgrade (Buy now) or start a trial (Try now), and the U
 
 The type of upgrade and trial options that you're offered depend on how your administrator has set up your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
 
-## Next steps
+## Related content
 
 - [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
 - [Power BI features by license type](../consumer/end-user-features.md)

@@ -147,7 +147,7 @@ Typically, data consumption patterns differ based on role:
 
 :::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI, Excel, and Azure Machine Learning.":::
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

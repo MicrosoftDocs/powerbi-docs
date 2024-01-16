@@ -262,6 +262,6 @@ The following maturity levels will help you assess the current state of your dat
 | 400: Capable | &bull;&nbsp;The data culture goals to employ informed decision-making are aligned with organizational objectives. They're actively supported by the executive sponsor, the COE, and they have a direct impact on adoption strategies. <br/><br/>&bull;&nbsp;A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared goals. <br/><br/>&bull;&nbsp;Individuals who take initiative in building valuable data solutions are recognized and rewarded. |
 | 500: Efficient | &bull;&nbsp;The business value of data, analytics, and BI solutions is regularly evaluated and measured. KPIs or OKRs are used to track data culture goals and the results of these efforts. <br/><br/>&bull;&nbsp;Feedback loops are in place, and they encourage ongoing data culture improvements. <br/><br/>&bull;&nbsp;Continual improvement of organizational adoption, user adoption, and solution adoption is a top priority. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-executive-sponsorship.md) in the Microsoft Fabric adoption roadmap series, learn about the importance of an executive sponsor.

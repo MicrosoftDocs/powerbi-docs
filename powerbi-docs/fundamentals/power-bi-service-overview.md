@@ -37,7 +37,7 @@ This workflow is common, but you can also create Power BI reports right in the P
 
 After you've created reports and dashboards, you can share them. End users in the Power BI service and mobile devices can view and interact with them. Being able to control how you share your work is one of the most important features of the Power BI service. You create workspaces where you and your colleagues can collaborate on reports and dashboards. Then you can bundle and distribute them as apps. You can also share the semantic models themselves, so others can use them as a basis for their own reports. Read more about [ways to collaborate and share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
-## Next steps
+## Related content
 
 - For consumers: [Getting around in Power BI service](../consumer/end-user-experience.md)
 - [Tutorial: Get started creating in the Power BI service](service-get-started.md)

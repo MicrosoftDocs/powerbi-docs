@@ -44,7 +44,7 @@ The table below lists the Power BI operations. It provides a short description f
 | XMLA read | XMLA read operations initiated by the user, for queries and discoveries  | Semantic models | Interactive |
 | XMLA write | A background XMLA write operation that changes the model | Semantic models | Background |
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](service-premium-what-is.md)

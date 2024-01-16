@@ -60,10 +60,10 @@ Related Power BI videos are collected into playlists to help you easily find sub
 
 [The Community gallery](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks/) curates videos from hosted events and from our community members. Explore videos organized by date, top kudo-ed, featured, and live events.
 
-## Next steps
+## Related content
 
-* [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
-* [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
-* Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/?q=Power+Bi)
+- [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_video-docs-link)
+- [Watch Power BI demos](https://powerbi.microsoft.com/demo/)
+- Discover [videos from Azure about Power BI Embedded and Synapse Analytics](https://azure.microsoft.com/search/?q=Power+Bi)
  
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -122,7 +122,7 @@ To publish a Power BI Desktop report:
 
    You must have a Power BI license to share reports to the Power BI service.
 
-## Next steps
+## Related content
 
 To get started with Power BI Desktop, the first thing you need is to download and install the application. There are a few ways to get Power BI Desktop:
 

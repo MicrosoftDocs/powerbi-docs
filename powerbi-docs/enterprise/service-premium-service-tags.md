@@ -146,7 +146,7 @@ The last part of the process is entering the credentials in the Power BI service
 
 Save your settings and exit. Your SQL Managed Instance is now configured to allow incoming connections from the Power BI service.
 
-## Next steps
+## Related content
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Enable a public endpoint in the SQL Managed Instance](/azure/azure-sql/managed-instance/public-endpoint-configure)

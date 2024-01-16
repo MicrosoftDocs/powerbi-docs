@@ -5735,7 +5735,12 @@
             "source_path": "powerbi-docs/enterprise/service-admin-premium-china-north.md",
             "redirect_url": "/fabric/admin/region-availability",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                              
+        },
+        {
+            "source_path": "powerbi-docs/guidance/whitepaper-powerbi-enterprise-deployment.md",
+            "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-introduction",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                                                                                                                                             
   ]          
 
 }

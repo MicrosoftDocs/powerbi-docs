@@ -56,7 +56,7 @@ When your capacity overloads, you can choose to either turn on [autoscale](servi
 | A few overload incidents during the day | Turn on [autoscale](service-premium-auto-scale.md) | When you encounter a fairly low number of overload incidents, it's important to note when they happen. If these incidents happen during peak time, when your capacity is heavily used, throttling will be applied and slow down operations on your capacity. As a result, your capacity will provide a below average experience to the people who use it. In these situations, it's worth turning on [autoscale](service-premium-auto-scale.md), to avoid throttling. |
 | Many overload incidents | Upgrade to a higher SKU | When your investigation indicates that there are many overload incidents on your capacity, it's worth considering an upgrade to a higher SKU. In such cases, consider the cost of constant autoscale versus the cost of upgrading to a higher SKU. |
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](service-premium-what-is.md)

@@ -161,7 +161,7 @@ The following known limitations currently apply to Power BI Premium.
     * [Push semantic models](../connect-data/service-real-time-streaming.md#push-semantic-model).
     * Semantic models that use deprecated features such as content packs.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Power BI Premium Per User](service-premium-per-user-faq.yml)
