@@ -22,14 +22,16 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [\definition folder](#definition-folder)<sup>[1](#required)</sup>
-- [model.bim](#modelbim)<sup>[1](#required)</sup>
-- [definition.pbidataset](#definitionpbidataset)<sup>[1](#required)</sup>
+- [\definition folder](#definition-folder)<sup>[1](#required1)</sup>
+- [model.bim](#modelbim)<sup>[2](#required2)</sup>
+- [definition.pbidataset](#definitionpbidataset)<sup>[3](#required3)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-<a name="required">1</a> - This file is required.
+<a name="required1">1</a> - This file is required for TMDL folders.
+<a name="required2">2</a> - This file is required for TMSL folders.
+<a name="required3">3</a> - This file is required.
 
 Not every project dataset folder includes all of the files and subfolders described here.
 
@@ -71,7 +73,8 @@ For more information, refer to the [unappliedChanges.json schema document](https
 
 #### \definition folder
 
-Contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview?view=asallproducts-allversions) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+This file is only available if the Power BI project is saved using the TMDL format. It replaces the [model.bim](#modelbim) file.
+Contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### model.bim
 
