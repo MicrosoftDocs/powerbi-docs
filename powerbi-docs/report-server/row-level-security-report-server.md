@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 01/16/2024
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -26,7 +26,7 @@ By default, row-level security filtering uses single-directional filters, regard
 
     ![Apply security filter](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Check this box when implementing [dynamic row-level security](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters) based on user name or login ID. 
+Check this box when implementing dynamic row-level security based on user name or login ID. 
 
 To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../transform-model/desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical whitepaper.
 
