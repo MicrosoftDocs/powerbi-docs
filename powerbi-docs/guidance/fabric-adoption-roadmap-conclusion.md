@@ -72,13 +72,6 @@ The framework can augment this Microsoft Fabric adoption roadmap series. The roa
 > [!NOTE]
 > When completed, the Power BI implementation planning series (described in the previous section) will replace the Power BI adoption framework.
 
-## Enterprise deployment whitepaper
-
-The [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP) whitepaper was published in 2020 as an overview for Power BI implementers. It has a strong focus on technology. Its primary goal is awareness of options, key considerations, decisions, and best practices. Because of the breadth of content, different sections of the whitepaper will appeal to managers, IT professionals, and self-service content creators.
-
-> [!NOTE]
-> The Enterprise deployment whitepaper won't be updated again. When completed, the Power BI implementation planning series (described in the previous section) will replace the Enterprise deployment whitepaper.
-
 ## Microsoft's BI transformation
 
 Consider reading about [Microsoft's journey and experience with driving a data culture](center-of-excellence-microsoft-business-intelligence-transformation.md). This article describes the importance of two terms: _discipline at the core_ and _flexibility at the edge_. It also shares Microsoft's views and experience about the importance of establishing a COE.

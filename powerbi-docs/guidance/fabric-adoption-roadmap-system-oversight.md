@@ -503,6 +503,6 @@ For more information about system oversight and Fabric administration, see the f
 - [Administrator in a Day Training – Day 2](https://aka.ms/AdmPBI2)
 - [Power BI security whitepaper](whitepaper-powerbi-security.md)
 - [External guest users whitepaper](whitepaper-azure-b2b-power-bi.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 
 In the [next article](fabric-adoption-roadmap-change-management.md) in the Microsoft Fabric adoption roadmap series, learn about effective change management.
