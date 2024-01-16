@@ -211,7 +211,7 @@ In this section, use the dashboard to find out, which segments drive sales? Do t
 
 1. Select **Exit Q&A** to return to the dashboard.
 
-## Next steps
+## Related content
 
 After experimenting with this report, you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

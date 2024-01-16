@@ -244,6 +244,6 @@ A dashboard offers the ability to ask questions about data in natural language t
 
 1. Select **Exit Q&A** to return to the dashboard.
 
-## Next steps
+## Related content
 
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started creating in the Power BI service](../fundamentals/service-get-started.md).

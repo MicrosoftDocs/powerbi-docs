@@ -72,7 +72,7 @@ If you're a workspace admin, you can delete a workspace with no effect on any Mi
 - You can delete a *semantic model*. However, deleting a semantic model also deletes all reports and dashboard tiles that contain data from that semantic model.
 - You can remove *workbooks*. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook. If a workbook is stored on OneDrive for work or school, deleting it from Power BI doesn't delete it from OneDrive.
 
-## Next steps
+## Related content
 
 This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete:
 
