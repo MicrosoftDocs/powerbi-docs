@@ -23,7 +23,7 @@ With Power BI customer-managed keys (CMK), your organization can meet compliance
 
 To opt in to Power BI customer-managed keys, contact your Microsoft account manager to validate that your organization meets the size requirements that are required for enabling CMK.  
 
-## Next steps
+## Related content
 
 The following links provide information that can be useful for customer-managed keys:
 

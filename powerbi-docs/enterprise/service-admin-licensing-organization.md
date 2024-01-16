@@ -108,7 +108,7 @@ There's a grace period after a Power BI license expires. For licenses that are p
 
 Power BI has the same license lifecycle as Microsoft 365. For more information, see [What happens to my data and access when my Microsoft 365 for business subscription ends](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
 
-## Next steps
+## Related content
 
 - [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
 - [Business subscriptions and billing documentation](/microsoft-365/commerce/)
