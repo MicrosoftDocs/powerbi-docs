@@ -98,7 +98,7 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 - From your Notification center
 - From a workspace
 
-## Next steps
+## Related content
 
-[Open and view a dashboard](end-user-dashboard-open.md)     
-[Explore the report Filters pane](end-user-report-filter.md)
+- [Open and view a dashboard](end-user-dashboard-open.md)     
+- [Explore the report Filters pane](end-user-report-filter.md)

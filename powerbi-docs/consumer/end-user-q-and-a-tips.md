@@ -75,7 +75,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visual and of Q&A to uncover more insights.
 
-## Next steps
+## Related content
 
 - Go to [Q&A for Power BI business users](end-user-q-and-a.md)  
 - See [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)  

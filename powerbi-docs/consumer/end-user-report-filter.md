@@ -159,6 +159,6 @@ If the field values represent date or time, you can specify a start/end time whe
 
 -->
 
-## Next steps
+## Related content
 
 - [How visuals cross-filter each other in a Power BI report](end-user-interactions.md)

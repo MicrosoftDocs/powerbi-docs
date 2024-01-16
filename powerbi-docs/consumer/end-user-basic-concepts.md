@@ -202,7 +202,7 @@ Once you've installed the app, just select it from your Apps list and select whi
 
 Now that you've been introduced to the building blocks that make up the Power BI service for business users, continue learning using the links below. Or, [start using the Power BI service](end-user-experience.md) with some sample data. 
 
-## Next steps
+## Related content
 
 - Review and bookmark the [Glossary](end-user-glossary.md)
 
