@@ -7,7 +7,7 @@ ms.reviewer: Mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/25/2023
+ms.date: 01/11/2024
 LocalizationGroup: Ask questions of your data
 ---
 
@@ -17,7 +17,7 @@ LocalizationGroup: Ask questions of your data
 
 ## Words and terminology that Q&A recognizes
 
-The list of keywords on this page isn't exhaustive. The best way to see if Power BI recognizes a keyword is to try it out by typing it in the question box. If the word or term is grayed out, then Power BI doesn't recognize it.
+The list of keywords on this page isn't exhaustive. The best way to see if Power BI recognizes a keyword is to try it out by typing it in the question box. If the word or term is grayed out, then Power BI doesn't recognize it. Even when Power BI doesn't recognize a word, it makes a best guess. 
 
 The list below uses present tense, but all tenses are recognized in most cases. For example, "is" includes: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, and **did**. And "sort" includes: **sorted** and **sorting**. Power BI also recognizes and includes singular and plural versions of a word.
 
@@ -33,8 +33,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |**Conjunctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |
 |**Contractions**     |  Q&A recognizes almost all contractions, try it out. Here are a few examples: didn't, haven't, he'd, he's, isn't, it's, she'll, they'd, weren't, who's, won't, wouldn't          |
 |**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see *Relative dates*). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, Jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
-|**Relative dates**     |   today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice.|
-|    |  Example: count of orders in the past 6 days.  |
+|**Relative dates**     |   today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice. Example: count of orders in the past 6 days.  |
 |**Equality (Range)**     |   in, equal to, =, after, is more than, in, between, before  |
 |  |Examples: Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?              |
 |**Equality (Value)**     |   is, equal, equal to, in, of, for, within, is in, is on |
@@ -59,8 +58,9 @@ Q&A does its best to understand and answer the question being asked. It tries to
 - Provides a preview of the answer in the form of a visual. The visual updates as you type and edits the question (it doesn't wait for you to press Enter).
 - Suggests replacement terms from the underlying semantic model(s) when you move the cursor back in the question box.
 - Restates the question based on the data in the underlying semantic model(s). Q&A replaces the words you used with synonyms from the underlying semantic model(s). By reading the restatement, you know whether Q&A understood your question or not.
-- Adds a double underline to words it doesn't understand.
+- Adds a double underline to words it tries to understand.
 - Adds a single underline to words it does understand.
+- Adds a dotted underline to words it doesn't understand. This might include words in the [Recognized words list](#words-and-terminology-that-qa-recognizes) that you would expect Q&A to understand. But, you might have used that word in an unexpected way. 
 - Allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
 
 ## Tell Q&A which visual to use
