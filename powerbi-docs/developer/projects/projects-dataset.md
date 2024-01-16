@@ -74,7 +74,7 @@ For more information, see the [unappliedChanges.json schema document](https://gi
 #### \definition folder
 
 This file is only available if the Power BI project is saved using the TMDL format. It replaces the [model.bim](#modelbim) file.
-Contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+This file contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### model.bim
 
