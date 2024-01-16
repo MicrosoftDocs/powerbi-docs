@@ -100,6 +100,7 @@ Here are some other things you can do in the Power BI app for Windows devices wi
 * Create [KPIs on the Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services).
 
 ## Related content
+
 * [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

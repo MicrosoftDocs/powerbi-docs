@@ -38,4 +38,4 @@ If you're a semantic model owner, or a [specified recipient for scheduled refres
 
 ## Related content
 
-[Getting refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications)
+- [Getting refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications)

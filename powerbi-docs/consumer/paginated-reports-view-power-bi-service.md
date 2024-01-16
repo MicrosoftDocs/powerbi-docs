@@ -68,4 +68,4 @@ You can also export paginated reports to many formats:
 
 ## Related content
 
-[Paginated reports in the Power BI service](end-user-paginated-report.md)
+- [Paginated reports in the Power BI service](end-user-paginated-report.md)

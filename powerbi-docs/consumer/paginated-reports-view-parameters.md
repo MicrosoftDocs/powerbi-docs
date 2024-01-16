@@ -33,4 +33,4 @@ When you view a report that has parameters, the report viewer toolbar displays e
 
 ## Related content
 
-[Paginated reports in the Power BI service](end-user-paginated-report.md)
+- [Paginated reports in the Power BI service](end-user-paginated-report.md)

@@ -166,6 +166,7 @@ Data sources are often set to refresh daily, although some refresh more often. W
 * Alerts don't work with tiles that contain streaming data.
 
 ## Related content
+
 * [Manage your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md)
 * [Power BI Mobile Notification Center](mobile-apps-notification-center.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

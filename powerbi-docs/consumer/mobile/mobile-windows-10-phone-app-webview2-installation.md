@@ -41,6 +41,7 @@ WebView2 must be installed at the machine level rather than per user. To install
 After installing WebView2 as an administrator, close the Power BI Windows app and then open it again.
 
 ## Related content
+
 * [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
