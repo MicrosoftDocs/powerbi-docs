@@ -113,9 +113,9 @@ tbl.RequestRefresh(RefreshType.Full);
 db.Model.SaveChanges();
 ```
 
-## Next steps
+## Related content
 
-[Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
-[Azure Automation](/azure/automation)  
-[Azure Logic Apps](/azure/logic-apps/)  
-[Power BI REST APIs](/rest/api/power-bi/)
+- [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+- [Azure Automation](/azure/automation)  
+- [Azure Logic Apps](/azure/logic-apps/)  
+- [Power BI REST APIs](/rest/api/power-bi/)

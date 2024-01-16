@@ -72,7 +72,7 @@ This field indicates whether the action resulted in a more restrictive label, le
 |3|LabelRemoved|The label was removed from the item.|
 |4|LabelChangedSameOrder|The label was replaced by another label with the same level of sensitivity.|
 
-## Next steps
+## Related content
 
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Track user activities in Power BI](../admin/service-admin-auditing.md)

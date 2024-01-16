@@ -126,7 +126,7 @@ The Power BI service URL is translated into the private IP that's assigned to th
 
 * You must configure private endpoints before enabling private endpoints for on-premises clients. See [Private endpoints for secure access to Power BI](service-security-private-links.md) for more information.
 
-## Next steps
+## Related content
 
 - [Private endpoints for secure access to Power BI](service-security-private-links.md)
 - [Create and modify an ExpressRoute circuit](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)

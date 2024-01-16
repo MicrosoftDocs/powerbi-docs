@@ -49,7 +49,7 @@ Improved versions of the data protection metrics report are released periodicall
 
 * The data protection metrics report isn't available to [external users such as Microsoft Entra B2B (Microsoft Entra B2B) guest users](./service-admin-azure-ad-b2b.md).
 
-## Next steps
+## Related content
 
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
 * [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
