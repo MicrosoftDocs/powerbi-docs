@@ -252,7 +252,7 @@ Customers can realize many benefits when they migrate from AAS to Power BI Premi
 - Customers can use Power BI Premium scalability to reduce their capacity requirements, since memory is limited per semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) and isn't compared to total over the server as it is in AAS. For more information, see [Memory allocation](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation).
 - For development and test environments, customers can take advantage of PPU licensing instead of having Premium capacities. PPU licenses provide users access to Premium features like [the XMLA endpoint](../enterprise/service-premium-connect-tools.md), [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and [Premium dataflow features](../transform-model/dataflows/dataflows-premium-features.md). Furthermore, they can work with models that above 1 GB in size.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

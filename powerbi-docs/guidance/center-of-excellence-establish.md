@@ -74,7 +74,7 @@ Establish and grow a community within your organization by:
 - Run and promote informal user groups and encourage employees to present or attend.
 - Run more formal training events on specific products and the BI platform itself. Consider delivering [Power BI Dashboard in a Day](https://powerbi.microsoft.com/diad/), which is available as a free course kit and is a great way to introduce employees to Power BI for the first time.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

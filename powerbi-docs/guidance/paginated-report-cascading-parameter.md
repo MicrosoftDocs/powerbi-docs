@@ -272,7 +272,7 @@ Be sure to optimize your data sources by:
 - Adding appropriate indexes for efficient data retrieval
 - Materializing column values—and even rows—to avoid expensive query-time evaluations
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

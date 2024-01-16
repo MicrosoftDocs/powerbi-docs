@@ -504,6 +504,6 @@ The following maturity levels will help you assess the current state of your gov
 | 400: Capable | &bull;&nbsp;All Fabric governance priorities align with organizational goals and business objectives. Goals are reassessed regularly. <br/><br/>&bull;&nbsp;Processes exist to customize policies for decentralized business units, or to handle valid exceptions to standard governance policies. <br/><br/>&bull;&nbsp;It's clear where Fabric fits into the overall data and BI strategy for the organization. <br/><br/>&bull;&nbsp;Fabric activity log and API data is actively analyzed to monitor and audit Fabric activities. Proactive action is taken based on the data. |
 | 500: Efficient | &bull;&nbsp;Regular reviews of KPIs or OKRs evaluate measurable governance goals. Iterative, continual progress is a priority. <br/><br/>&bull;&nbsp;Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. <br/><br/>&bull;&nbsp;Fabric activity log and API data is actively used to inform and improve adoption and governance efforts. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-mentoring-and-user-enablement.md) in the Microsoft Fabric adoption roadmap series, learn about mentoring and user enablement.
