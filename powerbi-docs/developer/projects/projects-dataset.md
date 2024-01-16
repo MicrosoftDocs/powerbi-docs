@@ -29,8 +29,8 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-<a name="required1">1</a> - This file is required for TMDL folders.
-<a name="required2">2</a> - This file is required for TMSL folders.
+<a name="required1">1</a> - This file is required for TMDL folders.  
+<a name="required2">2</a> - This file is required for TMSL folders.  
 <a name="required3">3</a> - This file is required.
 
 Not every project dataset folder includes all of the files and subfolders described here.
