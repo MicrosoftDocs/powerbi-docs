@@ -351,7 +351,7 @@ Go to [Test single sign-on (SSO) configuration](service-gateway-sso-test-configu
 
 When you publish, select the gateway you've configured for SSO if you have multiple gateways.
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

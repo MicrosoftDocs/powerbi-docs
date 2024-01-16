@@ -63,7 +63,7 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 :::image type="content" source="media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png" alt-text="Screenshot displays the users in the Gateway connection dialog.":::
 
-## Next steps
+## Related content
 
 * [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)

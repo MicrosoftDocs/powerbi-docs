@@ -89,7 +89,7 @@ To successfully deploy and manage Power BI semantic models, you should understan
   - The size of imported data
   - Model refresh type and frequency
 
-## Next steps
+## Related content
 
 - [Semantic model modes in the Power BI service](service-dataset-modes-understand.md)
 - Questions? [Ask the Power BI Community](https://community.powerbi.com)

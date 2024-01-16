@@ -84,7 +84,7 @@ If you get errors that Power BI can't load data or retrieve data for a visual, o
 
 - In Power BI Desktop, if you no longer want users to be able to edit variables, uncheck the option at the report level.
 
-## Next steps
+## Related content
 
 - [Use SAP HANA in Power BI Desktop](/power-query/connectors/sap-hana/overview)
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
