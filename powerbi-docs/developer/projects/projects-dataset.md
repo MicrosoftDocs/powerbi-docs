@@ -39,19 +39,19 @@ Not every project dataset folder includes all of the files and subfolders descri
 
 #### .pbi\localSettings.json
 
-Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
+Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, refer to the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md).
 
 #### .pbi\editorSettings.json
 
 Contains dataset editor settings saved as part of the dataset definition for use across users and environments.
 
-For more information, refer to the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md).
+For more information, see the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md).
 
 #### .pbi\cache.abf
 
-An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, this file is ignored by Git.
+An Analysis Services Backup (ABF) file containing a local cached copy of the model and data when it was last edited. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
 Power BI Desktop can open a project without a cache.abf file. In that case, it opens the report connected to a model with its entire definition but without data. If a cache.abf exists, Power BI Desktop loads the data and overwrites the model definition with the content in model.bim.
 
@@ -65,11 +65,11 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 :::image type="content" source="media/projects-overview/pending-changes.png" alt-text="Image showing pending changes warning.":::
 
-If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there is a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
+If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there's a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
 
-The unappliedChanges.json file is automatically incorporated into the dataset definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you have the option to exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
+The unappliedChanges.json file is automatically incorporated into the dataset definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you can exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
-For more information, refer to the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
+For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
 #### \definition folder
 
@@ -86,7 +86,7 @@ Contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-s
 
 Contains the overall definition of a dataset and core settings.
 
-For more information, refer to the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+For more information, see the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
 
 #### diagramLayout.json
 
@@ -96,13 +96,13 @@ Contains diagram metadata that defines the structure of the dataset associated w
 
 Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
 
-For more information, refer to the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md).
+For more information, see the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md).
 
 #### item.metadata.json
 
-Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
+Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file).
 
-For more information, refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
+For more information, see the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
 
 ## Related content
 
