@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 01/08/2024
+  ms.date: 01/16/2024
 
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -164,7 +164,7 @@ sections:
       - question: |
           Will other report-specific features in Power BI, like pinning report tiles to dashboards, work with paginated reports?
         answer: |
-          We currently do not. Please vote for these features on [ideas](https://ideas.fabric.microsoft.com/)
+          Those features currently don't work with paginated reports. Please vote for these features on [ideas](https://ideas.fabric.microsoft.com/)
 
       - question: |
           Is there a report viewer control for paginated reports in the Power BI service?
@@ -190,7 +190,8 @@ sections:
           Are external tenant user accounts supported with Power BI Report Builder?
         answer: |
           In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. 
-          What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We'll look to adding this functionality in a future update.
+
+          What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We look to adding this functionality in a future update.
           
 additionalContent: |
 
