@@ -238,7 +238,7 @@ In this example, the user must select a product, a store, *and* a destination pa
 - The disabled state formatting for the button is tied to the color classes in your report theme. Learn more about [color classes](desktop-report-themes.md#set-structural-colors).
 - The drillthrough action works for all built-in visuals and *some* visuals imported from AppSource. However, it isn't guaranteed to work with *all* visuals imported from AppSource.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with buttons, see the following articles:
 
