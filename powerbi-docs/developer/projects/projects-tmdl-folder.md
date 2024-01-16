@@ -14,12 +14,7 @@ ms.date: 01/03/2024
 
 ## Overview
 
-The preferred semantic model file format of Power BI Project files is Tabular Model Definition Language (TMDL). TMDL has several advantages over the previous format, Tabular Model Scripting Language (TMSL), including:
-
-* Source control and co-development-friendly experience
-* Easy to read and edit in any text editor
-
-By default, TMDL uses a folder structure, a more suitable format for source control and collaboration.
+TMDL is easily *readable* and *editable* in any text editor. It was designed for humans and is *collaborative* by default with its native folder structure.
 
 Learn more about TMDL here at [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview).
 
@@ -72,6 +67,7 @@ If any invalid edits are made to the TMDL files, Power BI Desktop throws an erro
 
 :::image type="content" source="./media/projects-tmdl-folder/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
 
-## Considerations and limitations
+## Related content
 
-TBD 
+* [Power BI Desktop project dataset folder](projects-dataset.md)  
+* [Power BI Desktop projects](projects-overview.md)  
