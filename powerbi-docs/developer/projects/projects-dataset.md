@@ -24,7 +24,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [unappliedChanges.json](#pbiunappliedchangesjson)
 - [definition.pbidataset](#definitionpbidataset)<sup>[1](#required1)</sup>
 - [model.bim](#modelbim)<sup>[2](#required2)</sup>
-- [\definition folder](#definition-folder)<sup>[3](#required3)</sup>
+- [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
