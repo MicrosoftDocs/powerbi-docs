@@ -104,7 +104,7 @@ Here are a few book recommendations:
 - *Envisioning Information* by Edward Tufte  
 - *Advanced Presentations* by Design by Andrew Abela
 
-## Next steps
+## Related content
 
 - [Create a dashboard from a report](service-dashboard-create.md)  
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)  

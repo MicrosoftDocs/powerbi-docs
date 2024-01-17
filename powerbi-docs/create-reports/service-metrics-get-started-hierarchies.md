@@ -103,7 +103,7 @@ Metric data that can be edited on child scorecards:
 - Owners are applied per hierarchy level, not per metric.
 - Roll ups aren't yet supported on child scorecards.
 
-## Next steps
+## Related content
 
 - [Scenarios: When to use hierarchies in Power BI scorecards](service-metrics-hierarchies-scenarios.md)
 - [View hierarchies in Power BI metrics](service-metrics-view-hierarchies.md)

@@ -205,6 +205,6 @@ The following maturity levels will help you assess your current state of change 
 | **400: Capable** | &bull;&nbsp;Empathy and effective communication are integral to change management strategies. <br/><br/>&bull;&nbsp;Change management efforts are owned by particular roles or teams, and effective communication results in a clear understanding of the purpose and benefits of change. Change rarely interrupts existing processes and tools. |
 | **500: Efficient** | &bull;&nbsp;Change is an integral part of the organization. People in the organization understand the inevitability of change, and see it as a source for momentum instead of disruption. Change almost never unnecessarily interrupts existing processes or tools. <br/><br/>&bull;&nbsp;Systematic processes address change as a challenge of people and not processes. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-conclusion.md) in the Microsoft Fabric adoption roadmap series, in conclusion, learn about adoption-related resources that you might find valuable.

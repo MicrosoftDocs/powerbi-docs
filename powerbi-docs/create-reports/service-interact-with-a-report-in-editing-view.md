@@ -44,8 +44,8 @@ Take a look at the list of articles under the **Power BI reports** header in the
 
 A Power BI Pro or Premium Per User (PPU) license is required to edit reports created by others and to share your reports with others. If you don't have a Pro or Premium Per User (PPU) license, you can still create reports, but you can't [share them](../collaborate-share/service-share-reports.md).
 
-## Next steps
+## Related content
 
-[Power BI capabilities for business users](../consumer/end-user-reading-view.md)
+* [Power BI capabilities for business users](../consumer/end-user-reading-view.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

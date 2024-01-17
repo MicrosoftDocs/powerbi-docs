@@ -104,7 +104,7 @@ To disable Autoscale, follow these steps:
 
 4. Clear the **Enable Autoscale** checkbox.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](service-premium-what-is.md)

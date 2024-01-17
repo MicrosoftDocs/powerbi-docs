@@ -53,7 +53,7 @@ For a comparison of Power BI Pro and Power BI Premium, see the _Power BI feature
 
 To learn more about the capabilities your license provides, see [Feature availability for users with free licenses](../consumer/end-user-features.md) and [Types of licenses for Power BI consumers](../consumer/end-user-license.md).
 
-## Next steps
+## Related content
 
 * [Sign up for the Power BI service as an individual](service-self-service-signup-for-power-bi.md)
 * [Comparing Power BI Desktop and the Power BI service](service-service-vs-desktop.md)

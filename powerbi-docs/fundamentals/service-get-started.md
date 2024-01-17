@@ -293,8 +293,8 @@ When you delete a semantic model, the Power BI service also deletes all reports 
 
 1. Select **Delete**.
 
-## Next steps
+## Related content
 
-- [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
-- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
-- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
+* [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+* Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+* Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).

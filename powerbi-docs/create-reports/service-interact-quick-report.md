@@ -92,7 +92,7 @@ When going through this creation process, you’re creating a model behind the s
 |Application lifecycle management (ALM) | Not currently supported | ALM doesn't work for web-authored semantic models. |
 | Template apps | Not currently supported | You can't create template apps from workspaces with web-authored semantic models. |
 
-## Next steps
+## Related content
 
 - [Reports in Power BI](../consumer/end-user-reports.md)
 - [Create auto-generated "quick" reports](service-quick-create-report.md) in the Power BI service

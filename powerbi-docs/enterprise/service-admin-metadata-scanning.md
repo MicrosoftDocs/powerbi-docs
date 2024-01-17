@@ -73,7 +73,7 @@ Divide this list into chunks of up to 100 workspaces, and get the data for these
 
 Metadata scanning requires no special license. It works for all of your tenant metadata, including that of artifacts located in non-Premium workspaces.
 
-## Next steps
+## Related content
 
 * Learn about [Power BI REST Admin APIs](/rest/api/power-bi/admin).
 * [Set up metadata scanning](../admin/service-admin-metadata-scanning-setup.md).

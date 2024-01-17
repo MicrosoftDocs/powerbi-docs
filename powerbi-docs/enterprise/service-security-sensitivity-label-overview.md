@@ -286,7 +286,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * If you overwrite a labeled semantic model or report in the service with an unlabeled .pbix file, the labels in the service will be retained.
 
-## Next steps
+## Related content
 
 This article provided an overview of data protection in Power BI. The following articles provide more details about data protection in Power BI.
 

@@ -152,7 +152,7 @@ Invoke-PowerBIRestMethod -Url "groups/$workspaceId/datasets/$datasetId" -Method 
      }
 ```
 
-## Next steps
+## Related content
 
 * [Power BI semantic model scale-out](service-premium-scale-out.md)
 

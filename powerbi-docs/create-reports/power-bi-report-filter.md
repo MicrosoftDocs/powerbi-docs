@@ -302,7 +302,7 @@ Currently, you can control some of the formatting for the **Apply** text for the
 
 Publish-to-web doesn't display the Filters pane. If you're planning to publish a report to the web, consider adding slicers for filtering instead.
 
-## Next steps
+## Related content
 
 - [How to use report filters](../consumer/end-user-report-filter.md)
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)

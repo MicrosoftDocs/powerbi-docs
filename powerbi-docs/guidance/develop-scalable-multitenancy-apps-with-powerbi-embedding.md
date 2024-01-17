@@ -318,7 +318,7 @@ We encourage you to download a sample application named [**AppOwnsDataMultiTenan
 
 This sample application was developed by using .NET 6 and ASP.NET, and it demonstrates how to apply the guidance and recommendations described in this article. You can review the code to learn how to develop a multitenancy application that implements the *Embed for your customer* scenario by using service principal profiles.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

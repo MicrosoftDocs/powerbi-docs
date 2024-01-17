@@ -48,7 +48,7 @@ The following table lists the criteria will help you create accurate reports wit
 |Security  | Role-Level Definitions  | Define security roles for different levels of data access if there are sensitive elements that not all users should see.  | Sales team members can see sales data but not HR data.  |
 |Metadata  | Documentation of Structure  | Document the structure of the data model, including tables, columns, relationships, and measures, for reference.  | A data dictionary or model diagram provided as a reference.  |
 
-## Next steps
+## Related content
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
 - [Create a report with Copilot for Power BI](copilot-create-report.md)

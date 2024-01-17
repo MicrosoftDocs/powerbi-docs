@@ -88,7 +88,7 @@ How would we go about creating this line chart using Q&A?
 
 You see they ended up with the same visual. Creating it this way wasn't too complicated, but creating it with Q&A was easier!
 
-## Next steps
+## Related content
 
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)

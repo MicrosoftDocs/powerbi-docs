@@ -55,8 +55,8 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
     :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png" alt-text="Screenshot showing dashboards with a live tile." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png":::!
 
-## Next steps
+## Related content
 
-[Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)
+- [Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
