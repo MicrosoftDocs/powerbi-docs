@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Before your business can start using Copilot capabilities in Power BI, you need to enable Copilot in Microsoft Fabric.
+Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
