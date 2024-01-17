@@ -33,7 +33,8 @@ Sharing a dashboard from a Power BI workspace is similar to sharing a dashboard 
 
 :::image type="content" source="media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png" alt-text="Screenshot that highlights where to select Share.":::
 
-## Next steps
+## Related content
+
 * [Pin a tile to a Power BI dashboard from Excel](../create-reports/service-dashboard-pin-tile-from-excel.md)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * Questions? [Try the Power BI Community](https://community.powerbi.com/)

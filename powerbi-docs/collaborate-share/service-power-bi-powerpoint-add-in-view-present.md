@@ -167,7 +167,7 @@ To get around the report, you can use the usual [Power BI keyboard shortcuts](..
 |**Ctrl + Shift + ]**|Move backward over open panels |
 |**Ctrl**            |Hide Power BI tooltips         |
 
-## Next steps
+## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
