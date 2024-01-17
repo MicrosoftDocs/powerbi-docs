@@ -26,10 +26,8 @@ ms.reviewer: saurkumar
 ##  <a name="ReportBorder"></a> Add a report border  
  You can add a border to a report by adding borders to the headers, footers, and report body themselves, without adding lines or rectangles. For more information, see [Add a border to a report (Power BI Report Builder)](../../paginated-reports/report-design/add-border-report-report-builder.md)  .  
   
-##  Next steps
- [Add a border to a report (Power BI Report Builder)](add-border-report-report-builder.md)    
- [Add a rectangle or container (Power BI Report Builder)](add-rectangle-container-report-builder.md)    
- [Add and modify a line (Power BI Report Builder)](add-modify-line-report-builder.md)  
-  
-  
-  
+## Related content
+
+- [Add a border to a report (Power BI Report Builder)](add-border-report-report-builder.md)    
+- [Add a rectangle or container (Power BI Report Builder)](add-rectangle-container-report-builder.md)    
+- [Add and modify a line (Power BI Report Builder)](add-modify-line-report-builder.md)  

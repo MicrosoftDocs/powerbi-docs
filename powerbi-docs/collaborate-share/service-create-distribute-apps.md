@@ -379,7 +379,7 @@ Things to keep in mind about publishing apps:
 - Apps can have a maximum of 200 dashboards.
 - If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an organizational app, when you add a user to an organizational app audience, make sure to give permissions to all the datasets in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
-## Next steps
+## Related content
 
 - [Create apps in *workspaces*](service-create-the-new-workspaces.md)
 - [Install and use apps in Power BI](../consumer/end-user-apps.md)
