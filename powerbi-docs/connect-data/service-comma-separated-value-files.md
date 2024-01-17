@@ -48,7 +48,7 @@ If you have a CSV, it’s time to get it into your Power BI site as a semantic m
 
    :::image type="content" source="media/service-comma-separated-value-files/uploaded-financial-file.png" alt-text="Screenshot of the workspace with the uploaded CSV file.":::
 
-## Next steps
+## Related content
 
 **Explore your data** - Once you get data from your file into Power BI, it's time to explore. Select **More options (...)**, and then choose an option from the menu.
 

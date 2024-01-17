@@ -64,7 +64,7 @@ Do you use a service you'd like to suggest for a Power BI app? Go to the [Power 
 
 If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md). Power BI partners can build Power BI apps with little or no coding, and deploy them to Power BI customers.
 
-## Next steps
+## Related content
 
 * [Distribute apps to your colleagues](../collaborate-share/service-create-distribute-apps.md)
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
