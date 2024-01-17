@@ -30,7 +30,7 @@ You can also download sample data from Power BI Desktop.
 
 1. In the **Navigator**, select data in the left pane, such as **Financials**, and the choose **Load**.
 
-## Next steps
+## Related content
 
 Here are two tutorials that use this financial sample data:
 

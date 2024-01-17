@@ -227,6 +227,6 @@ The following maturity levels will help you assess the current state of your con
 | 400: Capable | &bull;&nbsp;Criteria are defined to align governance requirements for self-service versus enterprise content. <br/><br/>&bull;&nbsp;There's a plan in place for how to request and handle ownership transfers. <br/><br/>&bull;&nbsp;Managed self-service—and techniques for the reuse of data—are commonly used and well-understood. |
 | 500: Efficient | &bull;&nbsp;Proactive steps to communicate with users occur when any concerning activities are detected in the activity log. Education and information are provided to make gradual improvements or reduce risk. <br/><br/>&bull;&nbsp;Third-party tools are used by highly proficient content creators to improve productivity and efficiency. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-content-delivery-scope.md) in the Microsoft Fabric adoption roadmap series, learn about the scope of content delivery.

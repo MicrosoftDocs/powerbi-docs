@@ -53,9 +53,9 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
  If the pointer image is an irregular shape, you should define the color as transparent to hide the areas of your image that should not appear on the gauge. When you define a transparent color, the gauge transposes the image on top of your existing pointer and trims the image so that only the shape of the pointer appears. The gauge rescales the image to fit the size of your pointer. When you specify an image for a pointer, any subsequent pointer that is added on top of the gauge will be drawn underneath the image. For this reason, it is better not to specify an image for the pointer if there are multiple pointers on the gauge. 
   
-## Next steps
+## Related content
 
- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
- [Formatting ranges on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-ranges-on-a-gauge-report-builder-and-ssrs)   
- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
+- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
+- [Formatting ranges on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-ranges-on-a-gauge-report-builder-and-ssrs)   
+- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
   

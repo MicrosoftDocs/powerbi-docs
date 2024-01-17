@@ -385,7 +385,7 @@ Now that you’ve modeled your data, it's time to visualize and explore your dat
 
 You can learn more about [quick create](../create-reports/service-quick-create-report.md).
 
-## Next steps
+## Related content
 
 Congratulations on completing the tutorial! If you created a workspace for the tutorial, you can choose to delete it now. Alternatively, you can remove the individual items that were created during the tutorial.
 

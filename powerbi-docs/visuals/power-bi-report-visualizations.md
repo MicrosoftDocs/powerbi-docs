@@ -82,7 +82,7 @@ In the Power BI service, when you have the visualization the way you want it, yo
 
 - The upper limit for visuals is 100 fields (measures or columns). If your visual fails to load, reduce the number of fields.
 
-## Next steps
+## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 - [Where to find Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)

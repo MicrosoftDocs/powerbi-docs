@@ -130,6 +130,6 @@ After you set up everything, you can test your work using a report-level filter 
 
 :::image type="content" source="./media/data-translation-calendar-table/report-level-filter.png" alt-text="Screenshot shows a filter with a language selected and the visuals reflecting the selection." lightbox="./media/data-translation-calendar-table/report-level-filter.png":::
 
-## Next steps
+## Related content
 
 - [Load multiple-language reports](data-translation-load-report-bookmark.md)

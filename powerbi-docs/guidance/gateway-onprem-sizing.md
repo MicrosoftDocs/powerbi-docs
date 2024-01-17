@@ -116,7 +116,7 @@ For Live Connection semantic models:
 
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

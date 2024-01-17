@@ -37,11 +37,11 @@ ms.reviewer: saurkumar
   
 - A series that's drawn as a line doesn't take up much space within a chart area.  For this reason, line charts are frequently combined with other chart types such as column charts. However, you can't combine a line chart with bar, polar, pie or shape chart types.  
   
-## Next steps
+## Related content
 
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
- [Bar Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs)   
- [Column Charts &#40;Power BI Report Builder&#41;](column-charts-report-builder.md)   
- [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
- [Area Charts &#40;Power BI Report Builder&#41;](area-charts-report-builder.md)   
- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
+- [Bar Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/bar-charts-report-builder-and-ssrs)   
+- [Column Charts &#40;Power BI Report Builder&#41;](column-charts-report-builder.md)   
+- [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
+- [Area Charts &#40;Power BI Report Builder&#41;](area-charts-report-builder.md)   
+- [Empty and Null Data Points in Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/empty-and-null-data-points-in-charts-report-builder-and-ssrs)   

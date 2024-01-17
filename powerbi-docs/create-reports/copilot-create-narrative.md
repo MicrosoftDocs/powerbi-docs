@@ -100,6 +100,6 @@ We're continuously working to improve the quality of the report pages, including
 - Report creation with Copilot is only enabled for Power BI and not for any other sections of Fabric, such as Data Factory.
 - The public preview narrative doesn't yet support all visual types.  For example, it doesn't yet support key influencers.
 
-## Next steps
+## Related content
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)

@@ -70,19 +70,19 @@ ms.reviewer: saurkumar
  [Add Sparklines and Data Bars &#40;Power BI Report Builder&#41;](add-sparklines-data-bars-report-builder.md)  
  [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](align-data-chart-table-matrix-report-builder.md)  
  
-## Next steps  
+## Related content  
 
  Because sparklines and data bars are a type of chart, you might also find the following topics for charts helpful and relevant.
  
- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
- [Tutorial: Add a Sparkline to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder)   
- [Add a Chart to a Report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/add-chart-report-report-builder.md)  
- [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md)  
- [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](add-remove-margins-from-chart-report-builder.md)  
- [Change a Chart Type &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md)  
- [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/define-colors-chart-using-palette-report-builder.md)  
- [Show ToolTips on a Series &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/show-tooltips-series-report-builder.md)  
- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md)  
- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md)  
- [Specify Consistent Colors across Multiple Shape Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-consistent-colors-across-multiple-shape-charts-report-builder.md)  
+- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
+- [Tutorial: Add a Sparkline to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder)   
+- [Add a Chart to a Report &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/add-chart-report-report-builder.md)  
+- [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/add-empty-points-chart-report-builder.md)  
+- [Add or Remove Margins from a Chart &#40;Power BI Report Builder&#41;](add-remove-margins-from-chart-report-builder.md)  
+- [Change a Chart Type &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/change-chart-type-report-builder.md)  
+- [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/define-colors-chart-using-palette-report-builder.md)  
+- [Show ToolTips on a Series &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/show-tooltips-series-report-builder.md)  
+- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-logarithmic-scale-report-builder.md)  
+- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md)  
+- [Specify Consistent Colors across Multiple Shape Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-consistent-colors-across-multiple-shape-charts-report-builder.md)  
    

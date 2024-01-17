@@ -211,7 +211,7 @@ The following list provides regions where large semantic models in Power BI are 
 | West US             | westus                    |
 | West US 2           | westus2                   |
 
-## Next steps
+## Related content
 
 The following links provide information that can be useful for working with large models:
 

@@ -361,7 +361,7 @@ There are a few considerations to keep in mind while working with private endpoi
     * `graph.microsoft.com`
     * `login.live.com`, though this may be different based on account type.
 
-## Next steps
+## Related content
 
 - [Administering Power BI in your Organization](../admin/service-admin-administering-power-bi-in-your-organization.md)  
 - [Understanding Power BI administration roles](../admin/service-admin-role.md)  

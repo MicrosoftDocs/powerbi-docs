@@ -85,7 +85,7 @@ When you launch Power BI Desktop, a welcome screen appears.
 
 When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
 
-After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Next steps](#next-steps) section for links to guides to help you get started using Power BI Desktop.
+After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
 
 ## Minimum requirements
 
@@ -194,7 +194,7 @@ In certain circumstances, including some screen resolution configurations, some 
 
 This issue might resolve after later Windows updates are released.
 
-## Next steps
+## Related content
 
 After you install Power BI Desktop, see the following content to help you get up and running quickly:
 

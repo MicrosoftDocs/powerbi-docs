@@ -103,6 +103,7 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 ## Considerations and limitations
 For troubleshooting information, see [Power Apps visual for Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
-## Next steps
-[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Tutorial: Embed a Power Apps visual in a Power BI report](/powerapps/maker/canvas-apps/powerapps-custom-visual)
+## Related content
+
+* [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
+* [Tutorial: Embed a Power Apps visual in a Power BI report](/powerapps/maker/canvas-apps/powerapps-custom-visual)

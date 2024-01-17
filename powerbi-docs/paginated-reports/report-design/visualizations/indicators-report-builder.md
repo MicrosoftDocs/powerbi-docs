@@ -180,8 +180,8 @@ ms.reviewer: monaraya
   
 - [Include indicators and gauges in a gauge panel &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/include-indicators-and-gauges-in-a-gauge-panel-report-builder-and-ssrs)  
   
-## Next steps
+## Related content
 
- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)   
- [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)   
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
+- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)   
+- [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)   
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  

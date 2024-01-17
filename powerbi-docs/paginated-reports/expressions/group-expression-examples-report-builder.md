@@ -31,7 +31,7 @@ The following table provides examples of group expressions that you can use to d
 | Group by three separate age ranges:<br /><br />"Under 21", "Between 21 and 50", and "Over 50". | `=IIF(First(Fields!Age.Value)<21,"Under 21",(IIF(First(Fields!Age.Value)>=21 AND First(Fields!Age.Value)<=50,"Between 21 and 50","Over 50")))` |
 | Group by many age ranges. This example shows custom code written in Visual Basic .NET that returns a string for the following ranges:<br /><br />25 or Under<br /><br />26 to 50<br /><br />51 to 75<br /><br />Over 75 | `=Code.GetRangeValueByAge(Fields!Age.Value)`<br /><br />Custom code:<br /><br />`Function GetRangeValueByAge(ByVal age As Integer) As String`<br /><br />`Select Case age`<br /><br />`Case 0 To 25`<br /><br />`GetRangeValueByByAge = "25 or Under"`<br /><br />`Case 26 To 50`<br /><br />`GetRangeValueByByAge = "26 to 50"`<br /><br />`Case 51 to 75`<br /><br />`GetRangeValueByByAge = "51 to 75"`<br /><br />`Case Else`<br /><br />`GetRangeValueByByAge = "Over 75"`<br /><br />`End Select`<br /><br />`Return GetRangeValueByByAge`<br /><br />`End Function` |
 
-## See also
+## Related content
 
 - [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

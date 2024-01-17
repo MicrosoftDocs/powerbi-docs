@@ -135,14 +135,14 @@ It isn't possible to completely automate a Power BI conversion process end-to-en
 
 Compiling the existing inventory of data and reports is a possible candidate for automation when you have an existing tool that can do it for you. The extent to which automation can be used for some portions of the migration process—such as compiling the existing inventory—highly depends upon the tools you have.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-requirements.md), learn about Stage 1, which is concerned with gathering and prioritizing requirements when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

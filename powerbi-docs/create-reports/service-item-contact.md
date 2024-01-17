@@ -56,6 +56,6 @@ By default, the person who creates a report or dashboard is the contact for it. 
 * The report or dashboard contact information doesn’t get pushed into apps when you [publish an app](../collaborate-share/service-create-distribute-apps.md). By default, the contact name for dashboards and reports in an app is the workspace name, which isn't a mailto link. The new app navigation experience provides a support URL you configure to help manage feedback from app users.
 * Why do we recommend listing only one contact? If a dashboard or report has multiple contacts, when someone opens the report header and selects the link to email the contacts, some email clients separate the names with commas instead of semicolons. The resulting email address won't work.
 
-## Next steps
+## Related content
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

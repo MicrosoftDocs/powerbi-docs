@@ -258,7 +258,7 @@ Other formatting options are **Off** by default. Turn **On** these options to co
 
 - **Shadow**: Add a drop shadow to the slider. Under **General** > **Effects**.
 
-## Next steps
+## Related content
 
 For more about slicers, see the following articles:
 

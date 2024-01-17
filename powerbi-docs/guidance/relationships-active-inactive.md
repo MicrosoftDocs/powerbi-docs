@@ -123,7 +123,7 @@ In specific circumstances, however, you can define one or more inactive relation
 - There's no requirement for report visuals to simultaneously filter by different roles
 - You use the USERELATIONSHIP DAX function to activate a specific relationship for relevant model calculations
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

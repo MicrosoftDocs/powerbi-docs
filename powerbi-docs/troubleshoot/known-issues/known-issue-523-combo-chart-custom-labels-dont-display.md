@@ -28,6 +28,6 @@ When custom labels are toggled on, the combo chart's labels don't display in eit
 
 The user can overlay a line chart on top of a column/bar chart and set the transparency to 100% to simulate a combo chart.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

@@ -41,10 +41,11 @@ ms.date: 01/18/2023
   
 -   If you select **Currency** under **Category** and you check **Show values in**, you can select **Thousands**, **Millions**, or **Billions** to display numbers using financial formats. For example, if the field value is 1,789,905,394 and you select **Billions** and specify 2 decimal places, the value displayed in the report is 1.78.  
   
-## Next steps
- [Formatting Text and Placeholders &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Formatting Lines, Colors, and Images &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-lines-colors-and-images-report-builder-and-ssrs)   
- [Format a chart in a paginated report (Power BI Report Builder)](visualizations/formatting-chart-report-builder.md)
- [Format axis labels as dates or currencies in a paginated report (Power BI Report Builder)](visualizations/format-axis-labels-dates-currencies-report-builder.md)
- [Formatting Scales on a Gauge &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)  
+## Related content
+
+- [Formatting Text and Placeholders &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+- [Formatting Lines, Colors, and Images &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-lines-colors-and-images-report-builder-and-ssrs)   
+- [Format a chart in a paginated report (Power BI Report Builder)](visualizations/formatting-chart-report-builder.md)
+- [Format axis labels as dates or currencies in a paginated report (Power BI Report Builder)](visualizations/format-axis-labels-dates-currencies-report-builder.md)
+- [Formatting Scales on a Gauge &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)  
   

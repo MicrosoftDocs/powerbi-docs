@@ -351,7 +351,7 @@ Waterfall charts are a great choice:
 
 For more information, see [Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
 
-## Next steps
+## Related content
 
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)
-[Power BI Visuals Reference from sqlbi.com](https://www.sqlbi.com/ref/power-bi-visuals-reference/), guidance for picking the right visual for your data
+- [Visualizations in Power BI reports](power-bi-report-visualizations.md)
+- [Power BI Visuals Reference from sqlbi.com](https://www.sqlbi.com/ref/power-bi-visuals-reference/), guidance for picking the right visual for your data

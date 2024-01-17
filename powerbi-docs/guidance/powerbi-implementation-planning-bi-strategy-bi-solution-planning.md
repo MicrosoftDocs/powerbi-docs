@@ -409,6 +409,6 @@ After deployment, the project team should plan to proceed to the next solution i
 > - **Conduct solution office hours:** After the post-deployment support period, consider holding regular office hours sessions to answer questions and collect feedback from users.
 > - **Set up a continuous improvement process:** Schedule a monthly audit of the solution to review potential changes or improvements over time. Centralize user feedback and review feedback periodically between audits.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).

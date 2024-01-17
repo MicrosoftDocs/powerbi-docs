@@ -72,7 +72,7 @@ Customize the heatmap view in the **Display settings** dialog box.
 - History for hierarchical metrics isn't supported because data is always queried live from the semantic model, instead of cached when the semantic model refreshes.
 - Saving and sharing heatmap views isn't yet supported.
 
-## Next steps
+## Related content
 
 - [Get started with cascading scorecards in Power BI](service-metrics-get-started-hierarchies.md)
 - [Scenarios: When to use hierarchies in Power BI scorecards](service-metrics-hierarchies-scenarios.md)

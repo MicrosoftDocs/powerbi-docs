@@ -56,12 +56,12 @@ A text box can be a Power BI paginated report item. It can also be an individual
 ## Align horizontal text using general  
  In **Alignment** on the **Text Box Properties** dialog box, you can specify how the text should be aligned horizontally. If you do not specify a value for alignment, the default value of the alignment is **Default**. This means that the text is aligned based on the field type of your placeholder value. If you specify an expression that evaluates to a non-string value, i.e., not a number, the text is aligned to the right. If your expression evaluates to a string value, such as a number, the text is aligned to the left.  
   
-## Next steps  
- 
- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
- [Tables, matrices, and lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)   
- [Formatting axis labels on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Formatting scales on a gauge (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
- [Exporting to Microsoft Excel (Power BI Report Builder)](../report-builder/export-microsoft-excel-report-builder.md)   
- [Text boxes (Power BI Report Builder)](textbox/text-boxes-report-builder-and-service.md)  
+## Related content  
+
+- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
+- [Tables, matrices, and lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+- [Formatting axis labels on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+- [Formatting scales on a gauge (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
+- [Exporting to Microsoft Excel (Power BI Report Builder)](../report-builder/export-microsoft-excel-report-builder.md)   
+- [Text boxes (Power BI Report Builder)](textbox/text-boxes-report-builder-and-service.md)  
   

@@ -79,7 +79,7 @@ To sign up for Power BI Pro:
 
 Review the confirmation details. The account you created is now the global admin of a new Power BI Pro trial tenant. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) to add more users, set up a custom domain, purchase more services, and manage your Power BI subscription.
 
-## Next steps
+## Related content
 
 - [View and manage user licenses](service-admin-manage-licenses.md)
 - [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md)

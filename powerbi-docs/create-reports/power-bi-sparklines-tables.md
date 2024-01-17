@@ -76,10 +76,10 @@ Now you can edit the sparkline’s properties.
 - Sparklines are supported on Azure Analysis Services, but currently not supported on on-premises SQL Server Analysis Services.
 - Visuals with sparklines do not support pinning to dashboard.
 
-## Next steps
+## Related content
 
-[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
+- [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

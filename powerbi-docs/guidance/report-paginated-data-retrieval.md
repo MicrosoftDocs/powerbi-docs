@@ -142,7 +142,7 @@ If you need to delete query fields from your dataset, we recommend you remove th
 
 When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish a report.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

@@ -149,7 +149,7 @@ To revert the migration that you made to Gen 2, you need to delete your dataflow
 
 The scope of this document describes ADLS Gen 2 dataflows connections and not the Power BI ADLS Gen 2 connector. Working with the ADLS Gen 2 connector is a separate, possibly additive, scenario. The ADLS connector simply uses ADLS as a datasource. So using Power Query Online to query against that data doesn’t have to be in CDM format, it can be whatever data format the customer wants. For more information, see [Azure Data Lake Storage Gen2](/power-query/connectors/datalakestorage).
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

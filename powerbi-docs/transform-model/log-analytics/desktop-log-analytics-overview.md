@@ -82,7 +82,7 @@ Keep the following considerations and limitations in mind when working with Azur
 * For the Log Analytics feature, Power BI only sends data to the *PowerBIDatasetsWorkspace* table and doesn't send data to the to *PowerBIDatasetsTenant* table. This avoids storing duplicate data about log analytics in both locations. 
 
 
-## Next steps
+## Related content
 The following articles provide more information about Power BI and its many features:
 
 * [Configuring Azure Log Analytics for Power BI](desktop-log-analytics-configure.md)

@@ -40,6 +40,6 @@ Translations Builder allows a content creator to view, add, and update metadata 
 
 :::image type="content" source="./media/translation-builder/translation-grid.png" alt-text="Screenshot shows the Translations Builder grid with a cell selected to edit." lightbox="./media/translation-builder/translation-grid.png":::
 
-## Next steps
+## Related content
 
 - [Add a language to a report in Translations Builder](translation-builder-add-language.md)

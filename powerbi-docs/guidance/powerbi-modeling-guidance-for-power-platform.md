@@ -411,7 +411,7 @@ For example, an import model could provide access to all Dataverse data but not 
 
 As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create a model for each sales region. You could then grant read permission to those models (semantic models) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources.
 

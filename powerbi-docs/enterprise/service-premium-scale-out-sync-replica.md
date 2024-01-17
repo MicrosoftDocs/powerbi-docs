@@ -161,7 +161,7 @@ Follow these steps to sync the replicas by using Windows PowerShell:
 
 To learn more, see [Datasets - Trigger Query Scale Out Sync In Group](/rest/api/power-bi/datasets/trigger-query-scale-out-sync-in-group) in the Power BI REST API reference.
 
-## Next steps
+## Related content
 
 * [Power BI semantic model scale-out](service-premium-scale-out.md)
 

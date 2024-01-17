@@ -140,6 +140,6 @@ The following maturity levels will help you assess your current state of busines
 | **400: Capable** | &bull;&nbsp;There's a consistent, organization-wide view of how data initiatives and solutions support business objectives. <br/><br/>&bull;&nbsp;Regular and iterative strategic alignments occur between the business and technical teams. Changes to the business strategy result in clear actions that are reflected by changes to the data strategy to better support business needs. <br/><br/>&bull;&nbsp;Business and technical teams have healthy, productive relationships. |
 | **500: Efficient** | &bull;&nbsp;The data strategy and the business strategy are fully integrated. Continuous improvement processes drive consistent alignment, and they are themselves data driven. <br/><br/>&bull;&nbsp;Business and technical teams have healthy, productive relationships. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-content-ownership-and-management.md) in the Microsoft Fabric adoption roadmap series, learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.

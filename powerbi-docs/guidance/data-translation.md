@@ -38,6 +38,6 @@ If you have people that use different languages and locales to interact with the
 
 There are several factors that go into deciding whether to use data translation. You must decide whether it's worth the time and effort required to implement data translation properly. You might decide that implementing metadata translations and report label translations goes far enough. If your primary goal is to make your reporting solution compliant with laws or regulations, you might also find that implementing data translations isn't a requirement.
 
-## Next steps
+## Related content
 
 - [Extend the data source schema to support data translations](data-translation-extend-schema.md)

@@ -57,7 +57,7 @@ ms.reviewer: rpatkar
   
 1. (Optional) Preview the report. Where possible, the report renderer keeps this member with the specified column group members.  
   
-## Next steps
+## Related content
 
 - [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
 - [Tablix Data Region Cells, Rows, and Columns (Report Builder) and SSRS](../../paginated-reports/report-builder-tables-matrices-lists.md)

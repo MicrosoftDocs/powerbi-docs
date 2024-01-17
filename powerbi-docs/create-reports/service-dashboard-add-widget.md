@@ -246,8 +246,9 @@ To make changes to an existing tile:
 * Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way. 
 * Images can't be in .svg format. 
 
-## Next steps
-[Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
+## Related content
+
+* [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

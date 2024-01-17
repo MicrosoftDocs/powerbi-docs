@@ -40,7 +40,7 @@ A paginated report can contain a page header and page footer that run along the 
   
 1. Select **OK**.
   
-## Next steps
+## Related content
 
 - [Page headers and footers in a paginated report](page-headers-footers-report-builder-service.md)  
 - [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)

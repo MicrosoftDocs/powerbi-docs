@@ -45,6 +45,6 @@ Another important concept in localization is to plan for growth. A label that's 
 
 Adding a healthy degree of padding to localized labels is the norm when developing internationalized software. It's essential that you test your reports with each language you plan to support. You need to be sure that your report layouts look the way you expect with any language you choose to support.
 
-## Next steps
+## Related content
 
 - [Create multiple-language reports with Translations Builder](translation-builder.md)

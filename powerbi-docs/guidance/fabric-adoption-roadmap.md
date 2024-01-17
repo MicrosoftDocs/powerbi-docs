@@ -117,7 +117,7 @@ The primary focus of this series of articles is on the Microsoft Fabric platform
 
 To fully benefit from the information provided in these articles, you should have an understanding of [Power BI foundational concepts](/power-bi/fundamentals/power-bi-overview) and [Fabric foundational concepts](/fabric/get-started/microsoft-fabric-overview).
 
-## Next steps
+## Related content
 
 In the [next article in this series](fabric-adoption-roadmap-maturity-levels.md), learn about the Fabric adoption maturity levels. The maturity levels are referenced throughout the entire series of articles. Also, see the [conclusion article](fabric-adoption-roadmap-conclusion.md) for additional adoption-related resources.
 

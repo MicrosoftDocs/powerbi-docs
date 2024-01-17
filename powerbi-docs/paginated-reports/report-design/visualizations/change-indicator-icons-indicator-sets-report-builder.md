@@ -85,8 +85,8 @@ ms.reviewer: saurkumar
   
 4.  Select **OK**.  
   
-## Next steps
+## Related content
 
- [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
+- [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
 

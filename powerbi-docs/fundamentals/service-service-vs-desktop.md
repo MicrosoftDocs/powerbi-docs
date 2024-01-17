@@ -47,12 +47,12 @@ After you've created your reports, you can save them to a *workspace* in the **P
 
 Dataflows help organizations unify data from different sources and prepare it for modeling. Analysts can easily create dataflows using familiar self-service tools. Analysts use dataflows to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Read more about [self-service data prep with dataflows](../transform-model/dataflows/dataflows-introduction-self-service.md).
 
-## Next steps
+## Related content
 
-[What is Power BI Desktop?](desktop-what-is-desktop.md)
+- [What is Power BI Desktop?](desktop-what-is-desktop.md)
 
-[Create a report](../create-reports/service-report-create-new.md) in the Power BI service
+- [Create a report](../create-reports/service-report-create-new.md) in the Power BI service
 
-[Basic concepts for report designers](service-basic-concepts.md)
+- [Basic concepts for report designers](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

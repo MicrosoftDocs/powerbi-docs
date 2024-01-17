@@ -60,7 +60,7 @@ The following table describes privacy level settings:
 > - **Ignore the Privacy Levels and potentially improve performance** doesn't work in the Power BI service. Reports created in Power BI Desktop with this setting and published to the Power BI service don't adhere to the setting. However, the privacy levels are available on the personal gateway.
 > - Power BI Desktop can't ensure the privacy of data merged into another Power BI Desktop file.
 
-## Next steps
+## Related content
 
 - [Power BI implementation planning: Content creator security planning](/power-bi/guidance/powerbi-implementation-planning-security-content-creator-planning#privacy-levels)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

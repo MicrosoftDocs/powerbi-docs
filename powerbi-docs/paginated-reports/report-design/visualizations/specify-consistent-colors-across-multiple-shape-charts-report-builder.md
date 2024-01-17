@@ -67,15 +67,15 @@ ms.reviewer: saurkumar
     =Code.GetColor(Fields!MyCategoryField)  
     ```  
   
-## Next steps
+## Related content
 
- [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
- [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md)
- [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)   
- [Add empty points to a chart in a Power BI paginated report (Power BI Report Builder)](add-empty-points-chart-report-builder.md)  
- [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md)   
- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)   
- [Nested Data Regions &#40;Power BI Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
- [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)  
+- [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
+- [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md)
+- [Define Colors on a Chart Using a Palette &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/define-colors-on-a-chart-using-a-palette-report-builder-and-ssrs)   
+- [Add empty points to a chart in a Power BI paginated report (Power BI Report Builder)](add-empty-points-chart-report-builder.md)  
+- [Shape Charts &#40;Power BI Report Builder&#41;](shape-charts-report-builder.md)   
+- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)   
+- [Nested Data Regions &#40;Power BI Report Builder and SSRS&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
+- [Sparklines and Data Bars &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)  
   
   

@@ -202,7 +202,7 @@ You can also share reports and dashboards directly to your colleagues in Microso
 
    ![Screenshot of an example post in Microsoft Teams.](media/service-from-excel-to-stunning-report/power-bi-teams-chat.png)
 
-## Next steps
+## Related content
 
 * Now that you've created a basic report in the Power BI service, how about creating a report in Power BI Desktop? Try the tutorial, [From Excel workbook to stunning report in Power BI Desktop](desktop-excel-stunning-report.md).
 

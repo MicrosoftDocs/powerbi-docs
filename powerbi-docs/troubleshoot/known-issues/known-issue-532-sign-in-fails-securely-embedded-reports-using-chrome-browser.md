@@ -28,6 +28,6 @@ When trying to view a securely embedded report using the Chrome or Microsoft Edg
 
 To view the report, refresh the page in the browser.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

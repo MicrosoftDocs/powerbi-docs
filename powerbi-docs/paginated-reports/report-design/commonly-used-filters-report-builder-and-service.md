@@ -38,12 +38,12 @@ ms.date: 01/18/2023
 |Single value|`[EmployeeID]`|=|`[@EmployeeID]`|Integer|  
 |Multivalue|`[EmployeeID]`|IN|`[@EmployeeID]`|Integer|  
   
-## Next steps
+## Related content
 
- [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
- [Expression Uses in Reports &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)
- [Data Types in Expressions &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)  
+- [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)
+- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
+- [Expression Uses in Reports &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs)   
+- [Expression examples in Power BI Report Builder](../expressions/report-builder-expression-examples.md)
+- [Data Types in Expressions &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)  
   
   

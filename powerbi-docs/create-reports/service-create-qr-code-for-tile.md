@@ -52,7 +52,7 @@ Power BI generates the QR code as a JPG file, ready to print.
 2. Print the file at 100% or “actual size”.  
 3. Cut out the QR code and glue it to a place relevant to the tile.
 
-## Next steps
+## Related content
 
 * [Get data from the real world with the Power BI mobile apps](../consumer/mobile/mobile-apps-data-in-real-world-context.md)
 * [Scan a Power BI QR code from your mobile device](../consumer/mobile/mobile-apps-qr-code.md)

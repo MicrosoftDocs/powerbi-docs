@@ -88,7 +88,7 @@ Some report formatting options or themes aren't applied to visuals when you pin 
 - Visuals will adjust their size to fit the size of the tile. This can result in differences in layout as if the visual had been resized on the report.
 - Because some visualizations use background images, pinning might not work if the background image is too large. Try reducing the image size or using image compression.
 
-## Next steps
+## Related content
 Congratulations on creating your first dashboard. Now that you have a dashboard, there's much more you can do with it. Start exploring on your own, or see one of the following articles:
 
 * [Resize and move tiles](service-dashboard-edit-tile.md)

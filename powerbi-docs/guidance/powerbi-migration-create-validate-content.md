@@ -150,14 +150,14 @@ Report documentation, which is typically structured as a walk-through targeted a
 
 You may also choose to include additional report documentation on a hidden page of your report. It could include design decisions and a change log.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-deploy-support-monitor.md), learn about stage 5, which is concerned with deploying, supporting, and monitoring content when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

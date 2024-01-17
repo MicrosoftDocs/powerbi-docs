@@ -53,10 +53,10 @@ Complete the **Navigation** and **Permissions** tabs, then select **Update app**
 
 For more information, see [Install, update, and share template apps in your organization](../connect-data/service-template-apps-install-distribute.md).
 
-## Next steps
+## Related content
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-[Data sources for the Power BI service](../connect-data/service-get-data.md)
+- [Data sources for the Power BI service](../connect-data/service-get-data.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

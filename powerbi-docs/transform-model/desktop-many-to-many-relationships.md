@@ -140,7 +140,7 @@ When you connect to these multidimensional sources by using DirectQuery, you can
 
 The existing limitations of using DirectQuery still apply when you use *relationships with a many-to-many cardinality*. Many limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the whole model if any tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are unavailable on a model if any table within it has a storage mode of DirectQuery.
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

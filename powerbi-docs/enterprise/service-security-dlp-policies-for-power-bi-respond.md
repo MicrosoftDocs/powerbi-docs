@@ -37,7 +37,7 @@ The action or combination of actions you see may vary depending on the policy co
 >
 > The purpose of the policy tip is to flag sensitive information found in your semantic model. If you own this data and determine that it shouldn't be in the semantic model, when you remove the data from the semantic model and then refresh or republish the semantic model, the policy will be triggered again and the policy tip will be removed, since the sensitive data will no longer be found.
 
-## Next steps
+## Related content
 
 * [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md).
 * [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md).
