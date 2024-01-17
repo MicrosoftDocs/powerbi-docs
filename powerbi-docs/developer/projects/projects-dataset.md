@@ -22,9 +22,9 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
+- [definition.pbidataset](#definitionpbidataset)<sup>[1](#required1)</sup>
 - [model.bim](#modelbim)<sup>[2](#required2)</sup>
 - [\definition folder](#definition-folder)<sup>[3](#required3)</sup>
-- [definition.pbidataset](#definitionpbidataset)<sup>[1](#required1)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
@@ -71,6 +71,12 @@ The unappliedChanges.json file is automatically incorporated into the dataset de
 
 For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
+#### definition.pbidataset
+
+Contains the overall definition of a dataset and core settings.
+
+For more information, see the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+
 #### model.bim
 
 This file is only available if the Power BI project is saved using the TMSL format. It contains a Tabular Model Scripting Language (TMSL) [Database object](/analysis-services/tmsl/database-object-tmsl?view=power-bi-premium-current&preserve-view=true) definition of the project model.
@@ -79,12 +85,6 @@ This file is only available if the Power BI project is saved using the TMSL form
 
 This file is only available if the Power BI project is saved using the TMDL format. It replaces the [model.bim](#modelbim) file.  
 This file contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
-
-#### definition.pbidataset
-
-Contains the overall definition of a dataset and core settings.
-
-For more information, see the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
 
 #### diagramLayout.json
 
