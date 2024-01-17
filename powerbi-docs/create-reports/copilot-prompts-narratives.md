@@ -17,12 +17,7 @@ LocalizationGroup: Create reports
 
 Before your business can start using Copilot capabilities in Power BI, you need to enable Copilot in Microsoft Fabric.
 
-> [!NOTE]
->
-> - Your F64 or P1 capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
-> - Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot) for details.
-> - If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting in the Fabric Admin portal.
-> - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Sample prompts for narrative visuals
 
@@ -84,7 +79,7 @@ Create a narrative answer investigating something specific in your report.  For 
 
 We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
 
-## Related content
+## Next steps
 
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
