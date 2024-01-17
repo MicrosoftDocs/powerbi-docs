@@ -14,7 +14,7 @@ ms.date: 01/03/2024
 
 ## Overview
 
-The primary objective of Power BI Desktop developer mode is to provide a friendly source control and co-development experience. With this in mind, you can save your Power BI Project files (PBIP) using Tabular Model Definition Language (TMDL) format.
+The primary objective of Power BI Desktop developer mode is to provide a friendly source control and co-development experience. With this objective in mind, you can save your Power BI Project files (PBIP) using Tabular Model Definition Language (TMDL) format.
 TMDL is easily *readable* and *editable* in any text editor. It was designed for humans and is *collaborative* by default with its native folder structure.
 
 Learn more about TMDL here at [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview).
