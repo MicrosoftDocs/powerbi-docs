@@ -186,7 +186,7 @@ Create a page navigation button and select the conditional formatting option for
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 

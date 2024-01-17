@@ -43,7 +43,7 @@ Device search, powered by Siri, also includes suggestions based on your frequent
 >and then disable the **Siri & suggestions** setting.
 >
 
-## Next steps
+## Related content
 
 Learn more about the Power BI mobile app by doing the following:
 
