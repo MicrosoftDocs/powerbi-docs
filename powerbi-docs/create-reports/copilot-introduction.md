@@ -95,7 +95,7 @@ For answers to common questions related to business data security and privacy to
 
 We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
 
-## Next steps
+## Related content
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
