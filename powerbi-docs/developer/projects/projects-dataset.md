@@ -29,7 +29,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [item.config.json](#itemconfigjson)
 - [item.metadata.json](#itemmetadatajson)
 
-<a name="required1">1</a> - This file is required.
+<a name="required1">1</a> - This file is required.  
 <a name="required2">2</a> - This file is required when saving using TMSL format.  
 <a name="required3">3</a> - This file is required when saving using TMDL format.  
 
