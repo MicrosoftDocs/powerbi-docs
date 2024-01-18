@@ -284,7 +284,20 @@ The chain in the previous image is of length three, which is the maximum length.
 
 ### Permissions and licensing
 
-Users accessing reports need to have proper [permissions to all semantic models and models in the chain that's formed by the semantic model](#chaining) that they want to access and the semantic models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Creating a composite model connection in Power BI Desktop requires Build permissions. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
+Users accessing reports need to have proper permissions to [all semantic models and models in the chain](#chaining) that's formed by the semantic model that they want to access and the semantic models on which the reports are based.
+
+The owner of the composite model requires **Build** permission on the datasets used as sources, while users who want to view the composite model only require **Read** permissions on the composite model itself and the datasets used as sources. Creating the composite model connection in Power BI Desktop requires **Build** permissions on the datasets used as sources. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
+
+The required permissions are illustrated with the following example:
+
+* **Composite Model A** (owned by **Owner A**)
+  - Data source A1: **Semantic Model B**.<br/>Note: **Owner A** must have **Build** permission on **Semantic Model B** for users to view the report leveraging Composite Model A.
+
+* **Composite Model C** (owned by **Owner C**)
+  - Data source C1: **Semantic Model D**<br/>Note: **Owner C** must have **Build** permission on **Semantic Modle D** for users to view the report leveraging Composite Model C.
+  - Data source C2: **Composite Model A**<br/>Note: **Owner C** must have **Build** permission on **Composite Model A** and **Read** permission on **Semantic Model B**, but does not need to have Build permission on **Semantic Model B**.
+
+A user who wants to view **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user who wants to view **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
