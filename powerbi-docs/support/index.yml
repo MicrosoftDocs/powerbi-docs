@@ -52,7 +52,7 @@ landingContent:
             url:  service-admin-health.md
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
-          - text: Is this a known issue?
+          - text: Is this problem a known issue?
             url: ../troubleshoot/known-issues/power-bi-known-issues.md
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com

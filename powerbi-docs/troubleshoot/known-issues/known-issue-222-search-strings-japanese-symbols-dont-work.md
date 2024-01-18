@@ -18,7 +18,7 @@ In the Power BI service, you may see unexpected results when the search string c
 
 **Status:** Open
 
-**Problem area:** Consume and View
+**Problem area:** Consume and View.
 
 
 ## Symptoms

@@ -18,7 +18,7 @@ Use this article to get a basic overview of Power BI Desktop and the Power BI se
 
 **Power BI Desktop** is a free application that you download and install on your local computer. Desktop is a complete data analysis and report creation tool that is used to connect to, transform, visualize, and analyze your data. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. Reports can be shared with others directly or by publishing to the Power BI service. Sharing reports requires a Power BI Pro license. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
-The **Power BI service** is a cloud-based service, or *software as a service* (SaaS). It supports report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited. The Power BI service is used to do things such as creating dashboards, creating and sharing apps, and analyzing and exploring your data to uncover business insights. [What is the Power BI service](power-bi-service-overview.md) details many of the capabilities of the Power BI service. Your license determines what you can do in the Power BI service. For more information about licenses, see [Power BI licenses and subscriptions](service-features-license-type.md)
+The **Power BI service** is a cloud-based service, or *software as a service* (SaaS). It supports report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited. The Power BI service is used to do things such as creating dashboards, creating and sharing apps, and analyzing and exploring your data to uncover business insights. [What is the Power BI service](power-bi-service-overview.md) details many of the capabilities of the Power BI service. Your license determines what you can do in the Power BI service. For more information about licenses, see [Power BI licenses and subscriptions.](service-features-license-type.md)
 
 The following Venn diagram compares Power BI Desktop and the Power BI service. The middle shows some of the areas where they overlap. Some tasks you can do in either Power BI Desktop or the service. The two outer sides of the Venn diagram show the features that are unique to either the Desktop application or to the Power BI service.  
 
@@ -32,21 +32,21 @@ The shared content isn't static. You can slice and dice the content discovering 
 
 ### Permissions
 
-When designers share content, they also assign permissions. Those permissions determine what you can do with the content. Someone with a **Contributor** role has more access than someone with a **Viewer** role. For example, a Viewer can highlight and filter a report, set alerts, and subscribe to content. While a Contributor can edit a report and change the fields being used to create the visuals.
+When designers share content, they also assign permissions. Those permissions determine what you can do with the content. Someone with a **Contributor** role has more access than someone with a **Viewer** role. For example, a Viewer can highlight and filter a report, set alerts, and subscribe to content. And a Contributor can edit a report and change the fields being used to create the visuals.
 
-To learn more about permissions and roles, see [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md)
+To learn more about permissions and roles, see [Roles in workspaces.](../collaborate-share/service-roles-new-workspaces.md)
 
 ### Licenses
 
 In addition to permissions, your license determines what actions you can take with the content. Permissions and licenses work together. For example, a Contributor may have the *permissions* to share content but unless they also have a paid license, sharing is disabled. 
 
-To learn more about licenses, see [Power BI licenses and subscriptions](../fundamentals/service-features-license-type.md)
+To learn more about licenses, see [Power BI licenses and subscriptions.](../fundamentals/service-features-license-type.md)
 
 ### Capacity
 
-In addition to permissions and licences, *where the content is saved** also plays a role in what actions you can take with the content.
+In addition to permissions and licenses, *where the content is saved** also plays a role in what actions you can take with the content.
 
-To learn more about capacities, see [Power BI Premium and capacities](../enterprise/service-admin-licensing-organization.md#license-types-and-capabilities)
+To learn more about capacities, see [Power BI Premium and capacities.](../enterprise/service-admin-licensing-organization.md#license-types-and-capabilities)
 
 ## Related content
 
@@ -56,4 +56,4 @@ To learn more about capacities, see [Power BI Premium and capacities](../enterpr
 
 - [Basic concepts for report designers](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Try the Power BI Community.](https://community.powerbi.com/)
