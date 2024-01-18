@@ -163,7 +163,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Table relationships require the data types of their key columns to coincide. Primary key columns must contain unique values. DAX queries will fail if duplicate primary key values are detected.
 
-- The length of string column values is limited to 4,000 Unicode characters.
+- The length of string column values is limited to 32,764 Unicode characters.
 
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
