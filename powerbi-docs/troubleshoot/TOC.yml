@@ -29,7 +29,7 @@
       href: known-issues/known-issue-471-embedded-setup-tool-isnt-responsive.md
     - name: A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow
       href: known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md   
-    - name: Search strings with Japanese symbols doesn't return content in search results
+    - name: Search strings with Japanese symbols don't return content in search results
       href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
   - name: Troubleshoot
     expanded: true
