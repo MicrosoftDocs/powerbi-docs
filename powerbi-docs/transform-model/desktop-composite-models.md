@@ -297,7 +297,7 @@ The required permissions can be illustrated with the following example:
   - Data source C1: **Semantic Model D**<br/>Note: **Owner C** must have **Build** permission on **Semantic Model D** for users to view the report leveraging **Composite Model C**.
   - Data source C2: **Composite Model A**<br/>Note: **Owner C** must have **Build** permission on **Composite Model A** and **Read** permission on **Semantic Model B**, but does not need to have Build permission on **Semantic Model B**.
 
-A user who wants to view **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user who wants to view **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
+A user viewing **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user viewing **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
