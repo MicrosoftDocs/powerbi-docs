@@ -194,8 +194,8 @@ For example, in the following image we've added three cross source group relatio
 
 ### Local and remote
 
-Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and isn't part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belongs to the “Import” source group and is considered **local**.
-Any item that is in the “Import” source group is considered local.
+Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and isn't part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belongs to the "Import" source group and is considered **local**.
+Any item that is in the "Import" source group is considered local.
 For example, if you define the following measure in a composite model that uses a DirectQuery connection to the Inventory source, the measure is considered local:
 
 ```dax
@@ -459,7 +459,7 @@ Note that you can:
 - apply the deduplication rule to tables, measures or both 
 - Choose to apply the deduplication rule only when a name conflict occurs or apply it all the time. The default is to apply the rule only when duplication occurs. In our example, any table or measure from the marketing source that does not have a duplicate in the sales source will not get a name change. 
 
-After you make the connections and set up the deduplication rule, your field list will show both ‘Customer’ and ‘Customer (marketing)’ according to the deduplication rule set up in our example:
+After you make the connections and set up the deduplication rule, your field list will show both 'Customer' and 'Customer (marketing)' according to the deduplication rule set up in our example:
 
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
 
