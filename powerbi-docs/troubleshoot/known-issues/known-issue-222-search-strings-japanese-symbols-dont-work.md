@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/16/2022
+ms.date: 01/17/2024
 ms.custom: known-issue-222
 ---
 

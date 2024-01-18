@@ -25,12 +25,6 @@ After you sign in to the Power BI service, select **Home** from the navigation p
 
 Your Home page opens. The layout and content on Home is different for every user. New users have less content, but that changes as they use Power BI more often. Only the content that you can access appears on your Home. For example, if you don't have permissions to a report, that report doesn't appear on Home. 
 
-> [!NOTE]
-> The **Getting started** section on Home is being deprecated mid December 2022. The articles and modules included in **Getting started** will continue to be available from the Power BI online documentation. The sample reports are already available from the **Learning/Knowledge center**. 
->
-> :::image type="content" source="media/end-user-home/power-bi-knowledge-center.png" alt-text="Screenshot of the left navigation menu with Knowledge center selected":::
-
-
 ## Simplified layout and Expanded layout
 
 Your Home view depends on the layout you select. The **Simplified** view is the default. This view shows **Recommended** content at the top with tabs for **Recent**, **Favorites**, and **My apps** below. **Recommended** content might include content that:
@@ -102,7 +96,7 @@ The next section of your Home contains two or more tabbed lists.
 
 - **From external orgs** (Preview) lists shared semantic models available from other tenants. Use this list to discover and connect to data from external providers.
 
-- In some scenarios, you'll also see a tab for content that you've tagged as [Favorites](end-user-favorite.md).
+- In some scenarios, you also see a tab for content that you've tagged as [Favorites](end-user-favorite.md).
 
 :::image type="content" source="./media/end-user-home/power-bi-recent.png" alt-text="A screenshot of the Home list view with the Recent tab selected.":::
 

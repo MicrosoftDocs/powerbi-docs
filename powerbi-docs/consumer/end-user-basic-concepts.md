@@ -20,19 +20,19 @@ Use this article to familiarize yourself with some of the terms and concepts ass
 
 :::image type="content" source="media/end-user-basic-concepts/power-bi-word-cloud-2.png" alt-text="Word cloud of words associated with the Power BI service.":::
 
-This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI business user](end-user-consumer.md). *Business users* receive Power BI content, like dashboards, reports, and apps, from *creator* colleagues. *Business users* work with **the Power BI service** (app.powerbi.com), which is the website-based version of Power BI. 
+This article assumes that you already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI business user](end-user-consumer.md). *Business users* receive Power BI content, like dashboards, reports, and apps, from *creator* colleagues. *Business users* work with **the Power BI service** (app.powerbi.com), which is the website-based version of Power BI. 
 
 ### This article isn't about Power BI Desktop
-You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. But, as long as you're a *business user*, you'll typically work with the Power BI service. This article applies only to the Power BI service.
+You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. But, as long as you're a *business user*, you typically work with the Power BI service. This article applies only to the Power BI service.
 
 For more information about the full suite of Power BI tools, see [What is Power BI?](../fundamentals/power-bi-overview.md).
 
 ## Let's get started
 To follow along, open app.powerbi.com in your browser. 
 
-There are many objects and concepts that make up the Power BI service, too many to cover in a single article. So we'll introduce you to the most common:  **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_semantic models_**. These are sometimes referred to as *Power BI* **_content_**. *Content* exists in **_workspaces_**. 
+There are many objects and concepts that make up the Power BI service, too many to cover in a single article. So we'll introduce you to the most common:  **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_semantic models_**. These objects are sometimes referred to as *Power BI* **_content_**. *Content* exists in **_workspaces_**. 
 
-A typical Power BI workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *semantic models*, brings it into Power BI Desktop for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to *dashboards*, and shares the reports, and dashboards with business users like you (black in diagram below).  There are many different ways that a designer can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we'll talk about the different ways that content is shared later in this article.)
+A typical Power BI workflow involves all of the building blocks: A Power BI *designer* (yellow in the diagram) collects data from *semantic models*, brings it into Power BI Desktop for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to *dashboards*, and shares the reports, and dashboards with business users like you (black in the diagram).  There are many different ways that a designer can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we talk about the different ways that content is shared later in this article.)
 
 ![A basic Power BI workflow chart.](media/end-user-basic-concepts/power-bi-workflows.png)
 
@@ -54,7 +54,7 @@ At its most basic:
 
 - ![A screenshot of the app icon.](media/end-user-basic-concepts/app.png) An *app* is a way for *designers* to bundle and share related dashboards, reports, and semantic models together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example, out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
 
-To be clear, if you're a new user and you've logged in to the Power BI service for the first time, you probably won't see any shared dashboards, apps, or reports yet.
+To be clear, if you're a new user and are logged in to the Power BI service for the first time, you probably don't see any shared dashboards, apps, or reports yet.
 
 _______________________________________________________
 
@@ -69,7 +69,7 @@ _______________________________________________________
 
 ## Semantic models
 
-A *semantic model* is a collection of data that *designers* import or connect to and then use to build reports and dashboards. As a *business user*, it's possible that you'll never interact directly with semantic models, but it's still helpful to learn how they fit into the bigger picture.  
+A *semantic model* is a collection of data that *designers* import or connect to and then use to build reports and dashboards. As a *business user*, it's possible that you never interact directly with semantic models, but it's still helpful to learn how they fit into the bigger picture.  
 
 Each semantic model represents a single source of data. For example, the source could be an Excel workbook on OneDrive, an on-premises SQL Server Analysis Services tabular dataset, or a Google Analytics dataset. Power BI supports more than 150 data sources and is always adding more. 
 
@@ -156,7 +156,7 @@ _______________________________________________________
 
 Visualizations (also known as visuals) display insights that Power BI discovers in the data. Visualizations make it easier to interpret the insight, because your brain can comprehend a picture quicker than it can comprehend a spreadsheet of numbers.
 
-Just some of the visualizations you'll come across in Power BI are: waterfall, ribbon, treemap, pie, funnel, card, scatter, and gauge.
+Just some of the visualizations you might encounter in Power BI are: waterfall, ribbon, treemap, pie, funnel, card, scatter, and gauge.
 
    ![A screenshot of eight sample visuals.](media/end-user-basic-concepts/power-bi-visuals.png)
 
@@ -194,13 +194,13 @@ You can get apps in a few different ways:
 
 - You can search from within the Power BI service for apps available to you from your organization or from the community. You can also visit [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi), where you will see all the apps that you can use.
 
-In Power BI on your mobile device, you can only install apps from a direct link, and not from AppSource. If the app designer installs the app automatically, you'll see it in your list of apps.
+In Power BI on your mobile device, you can only install apps from a direct link, and not from AppSource. If the app designer installs the app automatically, you see it in your list of apps.
 
 Once you've installed the app, just select it from your Apps list and select which dashboard or report to open and explore first.
 
 ![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps-card.png)
 
-Now that you've been introduced to the building blocks that make up the Power BI service for business users, continue learning using the links below. Or, [start using the Power BI service](end-user-experience.md) with some sample data. 
+Now that you've been introduced to the building blocks that make up the Power BI service for business users, continue learning using these links. Or, [start using the Power BI service](end-user-experience.md) with some sample data. 
 
 ## Next steps
 
