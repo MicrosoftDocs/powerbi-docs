@@ -241,7 +241,7 @@ Existing reports that leverage a composite model on a Power BI semantic model wi
 
 ![Screenshot showing Warning message informing the user that publication of a composite model that uses a Power BI semantic model is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-composite-models/directquery-connection-disabled-warning.png)
 
-This way you can still explore the semantic model in your local Power BI Desktop environment and create the composite model. However, you won't be able to publish the report to the Service. When you publish the report and model you'll see the following error message and publication will be blocked:
+This way you can still explore the semantic model in your local Power BI Desktop environment and create the composite model. However, you won't be able to publish the report to the Service. When you publish the report and model, you'll see the following error message and publication will be blocked:
 
 ![Screenshot showing Error message that blocks publication of a composite model that uses a Power BI semantic model because DirectQuery connections are not allowed by the admin.](media/desktop-composite-models/directquery-connection-disabled-publish-error.png)
 
@@ -291,11 +291,11 @@ The owner of the composite model requires **Build** permission on the datasets u
 The required permissions can be illustrated with the following example:
 
 * **Composite Model A** (owned by **Owner A**)
-  - Data source A1: **Semantic Model B**.<br/>Note: **Owner A** must have **Build** permission on **Semantic Model B** for users to view the report leveraging **Composite Model A**.
+  - Data source A1: **Semantic Model B**.<br/>**Owner A** must have **Build** permission on **Semantic Model B** for users to view the report using **Composite Model A**.
 
 * **Composite Model C** (owned by **Owner C**)
-  - Data source C1: **Semantic Model D**<br/>Note: **Owner C** must have **Build** permission on **Semantic Model D** for users to view the report leveraging **Composite Model C**.
-  - Data source C2: **Composite Model A**<br/>Note: **Owner C** must have **Build** permission on **Composite Model A** and **Read** permission on **Semantic Model B**, but does not need to have Build permission on **Semantic Model B**.
+  - Data source C1: **Semantic Model D**<br/>**Owner C** must have **Build** permission on **Semantic Model D** for users to view the report using **Composite Model C**.
+  - Data source C2: **Composite Model A**<br/>**Owner C** must have **Build** permission on **Composite Model A** and **Read** permission on **Semantic Model B**, but does not need to have Build permission on **Semantic Model B**.
 
 A user viewing **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user viewing **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
 
@@ -403,7 +403,7 @@ Object-level security (OLS) enables model authors to hide objects that make up t
 
 OLS is defined for and applied on the source model. It cannot be defined for a composite model built on the source model.
 
-When a composite model is built on top of an OLS-protected Power BI semantic model or Analysis Services model via DirectQuery connection, the model schema from the source model is actually copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
+When a composite model is built on top of an OLS-protected Power BI semantic model or Analysis Services model via DirectQuery connection, the model schema from the source model is copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
 
 Since the composite model isn't secured by OLS rules, the objects that consumers of the composite model see are those that the composite model author could see in the source model rather than what they themselves might have access to. This might result in the following situations
 
