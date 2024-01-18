@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 01/18/2024
 ---
 
 # Power BI Desktop project using TMDL (Preview)
