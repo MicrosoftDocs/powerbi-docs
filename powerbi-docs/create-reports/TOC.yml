@@ -101,11 +101,11 @@
     - name: Copilot for Power BI
       items: 
         - name: Copilot in Fabric overview
-          href: /fabric/get-started/copilot-fabric-overview.md
+          href: /fabric/get-started/copilot-fabric-overview
         - name: Intro to Copilot for Power BI
           href: copilot-introduction.md
         - name: Privacy, security, and responsible use for Copilot
-          href: /fabric/get-started/copilot-power-bi-privacy-security.md
+          href: /fabric/get-started/copilot-power-bi-privacy-security
         - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
         - name: Create report pages with Copilot
@@ -119,7 +119,7 @@
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
         - name: Copilot in Fabric and Power BI FAQ
-          href: /fabric/get-started/copilot-faq-fabric.yml
+          href: /fabric/get-started/copilot-faq-fabric
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
