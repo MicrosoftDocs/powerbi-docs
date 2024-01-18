@@ -291,10 +291,10 @@ The owner of the composite model requires **Build** permission on the datasets u
 The required permissions are illustrated with the following example:
 
 * **Composite Model A** (owned by **Owner A**)
-  - Data source A1: **Semantic Model B**.<br/>Note: **Owner A** must have **Build** permission on **Semantic Model B** for users to view the report leveraging Composite Model A.
+  - Data source A1: **Semantic Model B**.<br/>Note: **Owner A** must have **Build** permission on **Semantic Model B** for users to view the report leveraging **Composite Model A**.
 
 * **Composite Model C** (owned by **Owner C**)
-  - Data source C1: **Semantic Model D**<br/>Note: **Owner C** must have **Build** permission on **Semantic Modle D** for users to view the report leveraging Composite Model C.
+  - Data source C1: **Semantic Model D**<br/>Note: **Owner C** must have **Build** permission on **Semantic Modle D** for users to view the report leveraging **Composite Model C**.
   - Data source C2: **Composite Model A**<br/>Note: **Owner C** must have **Build** permission on **Composite Model A** and **Read** permission on **Semantic Model B**, but does not need to have Build permission on **Semantic Model B**.
 
 A user who wants to view **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user who wants to view **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
