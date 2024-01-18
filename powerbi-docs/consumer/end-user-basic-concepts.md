@@ -33,13 +33,13 @@ To follow along, open app.powerbi.com in your browser.
 
 There are many objects and concepts that make up the Power BI service, too many to cover in a single article. So this article introduces you to the most common:  **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_semantic models_** (formerly called *datasets*). These objects are sometimes referred to as *Power BI* **_content_**. *Content* exists within **_workspaces_**. 
 
-A typical Power BI workflow involves all of the building blocks. A Power BI *designer* (yellow in the diagram) collects data from *semantic models*, brings it into Power BI Desktop for analysis, and creates *reports* full of *visualizations* that highlight interesting facts and insights. The designer pins visualizations from reports to *dashboards*, and shares the reports and dashboards with business users like you (black in the diagram).  There are many different ways that a designer can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we'll talk about the different ways that content is shared later in this article.)
+A typical Power BI workflow involves all of the building blocks. A Power BI *designer* (yellow in the diagram) collects data from *semantic models*, brings it into Power BI Desktop for analysis, and creates *reports* full of *visualizations* that highlight interesting facts and insights. The designer pins visualizations from reports to *dashboards*, and shares the reports and dashboards with business users like you (black in the diagram). There are many different ways that a designer can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we talk about the different ways that content is shared later in this article.)
 
 ![A basic Power BI workflow chart.](media/end-user-basic-concepts/power-bi-workflows.png)
 
 At its most basic:
 
-- ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) A **_visualization_** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *semantic models*. Because they are highly interactive, you can slice, filter, highlight, change, and even drill into visualizations.  
+- ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) A **_visualization_** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *semantic models*. Because they're highly interactive, you can slice, filter, highlight, change, and even drill into visualizations.  
 
     For more info, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
@@ -55,13 +55,13 @@ At its most basic:
 
 - ![A screenshot of the app icon.](media/end-user-basic-concepts/power-bi-app-icon.png) An *app* is a way for *designers* to bundle and share related dashboards, reports, and semantic models together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example, out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
 
-To be clear, if you're a new user and logged in to the Power BI service for the first time, you probably don't see any shared dashboards, apps, or reports yet.
+To be clear, if you're logged in to the Power BI service for the first time, you probably don't see any shared dashboards, apps, or reports yet.
 
 _______________________________________________________
 
 ## Workspaces
 
-Workspaces are places to collaborate with colleagues on specific content. Workspaces are created by Power BI designers to hold collections of dashboards and reports. The designer can then share the workspace with colleagues. Designers can also bundle a collection of dashboards and reports into an app and distribute it to the entire community, to their organization, or to specific people or groups. Certain types of apps, called template apps, create a workspace when the app is installed. [Learn more about apps.](end-user-apps.md)
+Workspaces are places to collaborate with colleagues on specific content. Workspaces are created by Power BI designers to hold collections of dashboards and reports. The designer can then share the workspace with colleagues. Designers can also bundle a collection of dashboards and reports into an app and distribute it to the entire community, to their organization, or to specific people or groups. Certain types of apps called template apps, create a workspace when the app is installed. [Learn more about apps.](end-user-apps.md)
 
 Everyone using the Power BI service also has a **My workspace**. **My workspace** is your personal sandbox where you can create content for yourself.
 
@@ -69,16 +69,16 @@ To see your workspaces in Power BI select **Workspaces** from your navigation pa
 
 :::image type="content" source="media/end-user-basic-concepts/power-bi-workspaces.png" alt-text="Screenshot of Power BI with Workspaces selected.":::
 
-[Learn more about workspaces](end-user-workspaces.md)
+[Learn more about workspaces].(end-user-workspaces.md)
 _______________________________________________________
 
 ## Semantic models
 
-A *semantic model* is a collection of data that *designers* import or connect to and then use to build reports and dashboards. As a *business user*, it's possible that you'll never interact directly with semantic models, but it's still helpful to learn how they fit into the bigger picture.  
+A *semantic model* is a collection of data that *designers* import or connect to and then use to build reports and dashboards. As a *business user*, it's possible that you never interact directly with semantic models, but it's still helpful to learn how they fit into the bigger picture.  
 
 Each semantic model represents a single source of data. For example, the source could be an Excel workbook on OneDrive, an on-premises SQL Server Analysis Services tabular dataset, or a Google Analytics dataset. Power BI supports more than 150 data sources and is always adding more. 
 
-When a designer shares an app with you, or gives you permissions to a workspace, you can look up which semantic models are being used. But you can't add or change anything in the semantic model. This means that as you interact with dashboards and reports, the underlying data is safe. Changes you make to the dashboards and reports do not affect the semantic model. 
+When a designer shares an app with you, or gives you permissions to a workspace, you can look up which semantic models are being used. But you can't add or change anything in the semantic model. This means that as you interact with dashboards and reports, the underlying data is safe. Changes you make to the dashboards and reports don't affect the semantic model. 
 
 
 One semantic model...
@@ -105,7 +105,7 @@ _______________________________________________________
 
 ## Reports
 
-A Power BI report is one or more pages of visualizations, graphics, and text. All of the visualizations in a report come from a single semantic model. *Designers* build reports and share them with others; either individually or as part of an app.  Typically, *business users* [interact with reports in *Reading view*](end-user-reading-view.md).
+A Power BI report is one or more pages of visualizations, graphics, and text. All of the visualizations in a report come from a single semantic model. *Designers* build reports and share them with others; either individually or as part of an app. Typically, *business users* [interact with reports in *Reading view*](end-user-reading-view.md).
 
 ![Screenshot of a report with tabs.](media/end-user-basic-concepts/power-bi-report.png)
 
@@ -125,7 +125,7 @@ _______________________________________________________
 
 A dashboard represents a customized graphical view of some subset of one or more underlying semantic models. *Designers* build dashboards and share them with *business users*; either individually or as part of an app. If a *business user* is given permissions to a report, they can build their own dashboards too. A dashboard is a single canvas that has *tiles*, graphics, and text.
 
-Dashboards can look similar to a report page. You know that you're on a dashboard if you see a natural language query field in the upper left corner, Also, when you select a visual tile on a dashboard you are transported to the underlying report or to a URL or to the natural language query that was used to create that tile. For more explanation, see [Reports versus dashboards](end-user-reports.md#dashboards-versus-reports).
+Dashboards can look similar to a report page. You know that you're on a dashboard if you see a natural language query field in the upper left corner. Also, when you select a visual tile on a dashboard you jump to the underlying report or to a URL or to the natural language query that was used to create that tile. For more explanation, see [Reports versus dashboards](end-user-reports.md#dashboards-versus-reports).
 
   ![Screenshot of a sample dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
@@ -133,7 +133,7 @@ A *tile* is a rendering of a visual that a designer *pins*, for example, from a 
 
 *Business users* can't edit dashboards. You can however add comments, view related data, set it as a favorite, subscribe, and more.
 
-What are some purposes for dashboards?  Here are just a few:
+What are some purposes for dashboards? Here are just a few:
 
 - To see, in one glance, all the information needed to make decisions
 
@@ -143,7 +143,7 @@ What are some purposes for dashboards?  Here are just a few:
 
 - To monitor the health of a business or product or business unit or marketing campaign, and so on
 
-- To create a personalized view of a larger dashboard -- all the metrics that matter to you
+- To create a personalized view of a larger dashboard, all the metrics that matter to you
 
 **ONE** dashboard...
 
@@ -176,7 +176,7 @@ _______________________________________________________
 
 These collections of dashboards and reports organize related content together into a single package. Power BI *designers* build them in workspaces and share apps with individuals, groups, entire organizations, or the public. As a *business user*, you can be confident that you and your colleagues are working with the same information; a single trusted version of the truth.
 
-Sometimes, the app's workspace itself is shared, and there can be many people collaborating and updating both the workspace and the app. The extent of what you can do with an app is determined by the permissions and access you are given.
+Sometimes, the app's workspace itself is shared, and there can be many people collaborating and updating both the workspace and the app. The extent of what you can do with an app is determined by the permissions and access you're given.
 
 > [!NOTE]
 > The use of apps requires a Power BI Pro or Premium Per User (PPU) license, or for the app workspace to be stored in Premium capacity. [Learn about licenses](end-user-license.md).
