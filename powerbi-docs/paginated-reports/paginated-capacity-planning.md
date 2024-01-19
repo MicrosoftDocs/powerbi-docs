@@ -2,12 +2,12 @@
 title: Paginated reports capacity planning for Power BI Premium
 description: Plan your Power BI Premium capacity for using it with paginated reports.
 author: KesemSharabi
-ms.author: kesharab
-ms.reviewer: ''
+ms.author: nisrinivasan
+ms.reviewer: mmeyer
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 01/19/2024
 LocalizationGroup: Premium
 ---
 
@@ -23,7 +23,7 @@ Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-i
 
 ## Capacity planning
 
-Calculating the type of capacity you need depends on several parameters such as the number of visuals in your reports, the complexity of queries against the report and the quality of your data source or data model. You should also consider the current use of your capacity during peak times, before you add paginated reports to it.
+Calculating the type of capacity you need depends on several factors such as the number of visuals in your reports, the complexity of queries against the report and the quality of your data source or data model. You should also consider the current use of your capacity during peak times, before you add paginated reports to it.
 
 Before you start planning which capacity you need, review the [Capacities and SKUs](./../enterprise/service-premium-what-is.md#capacities-and-skus) table, to see which resources are offered by each capacity.
 
@@ -34,8 +34,6 @@ When you plan your capacity, consider the following:
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
 * The way your report retrieves data. When you use connectors, drivers or gateways, data retrieval might take longer, require more resources and as a result become more expensive.
-
-* The number of report parameters and parameter values used by your reports. More values and parameters, require more resources from your capacity.
 
 * When you export large reports into formats such as Excel and PDF, it requires more resources than reading every page, using toggles, and searching within the reports.
 
@@ -53,11 +51,11 @@ Our analysis for Power BI Premium shows that the number of concurrent users at a
 
 Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload). When your capacity is overloaded, throttling will occur on your capacity. For more information, see [What happens to traffic during overload if I don't autoscale?](./../enterprise/service-premium-faq.yml#what-happens-to-traffic-during-overload-if-i-don-t-autoscale-)
 
-| Workload   | P1 SKU      | P2 SKU      |
-|------------|-------------|-------------|
-| **Small**  | 2,500 users | 5,000 users |
-| **Medium** | 1,900 users | 3,800 users |
-| **Large**  | 1300 users   | 2,600 users |
+| Workload   | F64/P1 SKU      | F128/P2 SKU      |
+|------------|-----------------|-------------|
+| **Small**  | 2,500 users     | 5,000 users |
+| **Medium** | 1,900 users     | 3,800 users |
+| **Large**  | 1300 users      | 2,600 users |
 
 Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
 
@@ -107,7 +105,7 @@ $ \text {max SKU users} = {\text {max concurrent reports renders} \over 0.05} $
 
 You can use an extended formula to estimate the capacity needed for different report usages.
 
-Upload several paginated reports with different number of daily renders, and use the metric app to get the average CPU processing time for each one. The sum of all your report renders per day should be equal to 100%. When you have all the information, use this formula.
+Upload several paginated reports with different number of daily renders, and use the metrics app to get the average CPU processing time for each one. The sum of all your report renders per day should be equal to 100%. When you have all the information, use this formula.
 
 $ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {A renders} \times \text {A processing time}} + \text {B renders} \times \text {B processing time} + \text {...} + \text{N renders} \times \text{N processing time}}$
 
@@ -117,7 +115,7 @@ This section includes two examples, one for the [regular calculation](#regular-c
 
 #### Regular calculation
 
-Let’s assume that you're running a paginated report on a *P1 SKU* that has eight cores. The total CPU usage for 10 runs is 40 seconds, so the average CPU time per reports is four seconds.
+Let’s assume that you're running a paginated report on an **_F64 SKU/_*P1 SKU*** that has eight cores. The total CPU usage for 10 runs is 40 seconds, so the average CPU time per reports is four seconds.
 
 $ 60 = {8 \times {30} \over 4} $
 
@@ -125,7 +123,7 @@ When using the second formula, you get a maximum of 1,200 users.
 
 $ 1,200 = {60 \over 0.05} $
 
-For *P2 SKUs*, you can multiply these numbers by two, as the capacity has twice the number of CPU cores.
+For *_**F128/_P2 SKUs***, you can multiply these numbers by two, as the capacity has twice the number of CPU cores.
 
 #### Advanced calculation
 
