@@ -24,7 +24,7 @@ The following Venn diagram compares Power BI Desktop and the Power BI service. T
 
 :::image type="content" source="media/service-service-vs-desktop/power-bi-venn-diagram.png" alt-text="Venn diagram showing the relationship between Power BI Desktop and the Power BI service.":::
 
-## Work in the Power BI service
+## Workflow example
 
 One typical workflow begins in Desktop. Designers connect to data sources, combine data, clean data, and build a model. Once the model is ready, designers create reports and dashboards and share that content with their colleagues. Sometimes the content is shared directly and other times the content is shared in workspaces and as apps. Business users then use those reports, dashboards, and apps to discover trends and actionable insights. Other business users rely on the shared content to track, monitor, measure, and report out on the state of the business. Everyone is working from a single source of truth, the same semantic model. Work done in the reports, dashboards, and apps doesn't change the underlying data in the semantic model. 
 
@@ -42,7 +42,7 @@ In addition to permissions, your license determines what actions you can take wi
 
 To learn more about licenses, see [Power BI licenses and subscriptions.](../fundamentals/service-features-license-type.md)
 
-### Capacity
+### Capacities
 
 In addition to permissions and licenses, *where the content is saved** also plays a role in what actions you can take with the content.
 
