@@ -72,7 +72,7 @@ Every Home landing page looks different. Power BI optimizes Home based on your u
 
 ### Favorites and frequents
 
-The **Favorites + frequents** section of Home contains links to the content that you visit most often or that you tagged as a [favorite](end-user-favorite.md). These cards have black stars because they're tagged as favorites.
+The **Favorites + frequents** section of Home contains links to the content that you visited most often or that you tagged as a [favorite](end-user-favorite.md). These cards have black stars because they're tagged as favorites.
 
 :::image type="content" source="./media/end-user-home/power-bi-home-favorites.png" alt-text="A screenshot showing the Favorites and frequents section.":::
 
@@ -86,15 +86,15 @@ The **Featured** section contains content that your administrator or colleagues 
 
 The next section of Home contains two or more tabbed lists.
 
-- **All** is content from all the other tabs combined. 
+- **All** displays content from all the other tabs combined. 
 
-- **Recent** is the content you visited most recently. Notice the timestamp for each item.
+- **Recent** displays content you visited most recently. Notice the timestamp for each item.
 
-- **Shared**  is content that your colleagues have shared with you.
+- **Shared** displays content that your colleagues shared with you.
 
-- **Favorites** is content you've tagged as a [Favorites](end-user-favorite.md).
+- **Favorites** displays content you tagged as a [Favorites](end-user-favorite.md).
 
-- The **My apps** section lists [apps that are shared with you](end-user-apps.md) or that you [downloaded from AppSource](end-user-apps.md). The most recent apps are listed here.
+- **My apps** lists [apps that are shared with you](end-user-apps.md) or that you [downloaded from AppSource](end-user-apps.md). The most recent apps are listed here.
 
 - **From external orgs** (Preview) lists shared semantic models available from other tenants. Use this list to discover and connect to data from external providers.
 
@@ -140,7 +140,7 @@ The workspace opens on your canvas, and the name of the workspace is listed on y
 
 ## Search all your content
 
-Sometimes, the fastest way to find your content is to search for it. For example, if a dashboard that you don't use often isn't showing up on your Home canvas. Or, if your colleague shared something with you, but you don't remember what it's named or what type of content they shared. Sometimes, you might have so much content that it's easier to search for it rather than scrolling or sorting.
+Sometimes, the fastest way to find your content is to search for it. For example, if a dashboard that you don't use often isn't showing up on your Home canvas. Or, if your colleague shared something with you, but you don't remember the title or what type of content they shared. Sometimes, you might have so much content that it's easier to search for it rather than scrolling or sorting.
 
 To search, use the search field, which is in the upper right corner of the Home menu bar. Enter the full or partial name of the content you're looking for. You can also enter your colleague's name to search for content that they shared with you. The search finds matches in all the content that you own or have access to.
 
