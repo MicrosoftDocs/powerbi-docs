@@ -63,6 +63,7 @@ export class Visual implements IVisual {
 * The local storage API doesn't support `await` constructions. Only `than` and `catch` methods are allowed.
 **Your visual should be available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) and be [certified](power-bi-custom-visuals-certified.md).**
 
-## Related content
+## Related contentntentntentntentntentntent
 
-* [Power BI custom visual API](visual-api.md)
+>[!div class="nextstepaction"]
+>[Power BI custom visual API](visual-api.md)
