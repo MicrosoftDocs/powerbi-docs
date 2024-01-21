@@ -5666,6 +5666,26 @@
             "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-user-support",
             "redirect_document_id": true
         },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-533-unable-sign-in-32-bit-desktop.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-522-failures-fabric-capacity-metrics-app.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },            
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-498-export-csv-file-truncated-300-rows.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },                  
         {                                                                                                                                                                                                         
             "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
             "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise",
