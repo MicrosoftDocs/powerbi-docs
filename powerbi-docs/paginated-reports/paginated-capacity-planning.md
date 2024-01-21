@@ -2,12 +2,12 @@
 title: Paginated reports capacity planning for Power BI Premium
 description: Plan your Power BI Premium capacity for using it with paginated reports.
 author: KesemSharabi
-ms.author: nirusrin
-ms.reviewer: mmeyer
+ms.author: kesharab
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 01/19/2024
+ms.date: 01/21/2024
 LocalizationGroup: Premium
 ---
 
@@ -51,11 +51,11 @@ Our analysis for Power BI Premium shows that the number of concurrent users at a
 
 Based on the five percent concurrency ratio, the following table describes the approximate maximum number of users that a SKU can handle, before it's [overloaded](./../enterprise/service-premium-smoothing.md#how-to-detect-overload). When your capacity is overloaded, throttling will occur on your capacity. For more information, see [What happens to traffic during overload if I don't autoscale?](./../enterprise/service-premium-faq.yml#what-happens-to-traffic-during-overload-if-i-don-t-autoscale-)
 
-| Workload   | F64/P1 SKU      | F128/P2 SKU      |
-|------------|-----------------|-------------|
-| **Small**  | 2,500 users     | 5,000 users |
-| **Medium** | 1,900 users     | 3,800 users |
-| **Large**  | 1300 users      | 2,600 users |
+| Workload   | F64 or P1 SKUs | F128 or P2 SKUs |
+|------------|----------------|-----------------|
+| **Small**  | 2,500 users    | 5,000 users     |
+| **Medium** | 1,900 users    | 3,800 users     |
+| **Large**  | 1300 users     | 2,600 users     |
 
 Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
 
@@ -115,7 +115,7 @@ This section includes two examples, one for the [regular calculation](#regular-c
 
 #### Regular calculation
 
-Let’s assume that you're running a paginated report on an **_F64 SKU/_*P1 SKU*** that has eight cores. The total CPU usage for 10 runs is 40 seconds, so the average CPU time per reports is four seconds.
+Let’s assume that you're running a paginated report on an *F64* or *P1* SKU that has eight cores. The total CPU usage for 10 runs is 40 seconds, so the average CPU time per reports is four seconds.
 
 $ 60 = {8 \times {30} \over 4} $
 
@@ -123,7 +123,7 @@ When using the second formula, you get a maximum of 1,200 users.
 
 $ 1,200 = {60 \over 0.05} $
 
-For *_**F128/_P2 SKUs***, you can multiply these numbers by two, as the capacity has twice the number of CPU cores.
+For *F128* or *P2* SKUs, you can multiply these numbers by two, as the capacity has twice the number of CPU cores.
 
 #### Advanced calculation
 
@@ -142,18 +142,14 @@ The formulas for a *P1 SKU* will be:
 |Max concurrent report renders | $ ~32.4 = {8 \times {30} \over 0.6 \times{4} + 0.3 \times{10} + 0.1 \times{20}} $ |
 |Total SKU users | $ ~650 = {32.4 \over 0.05} $ |
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[What is Power BI Premium?](./../enterprise/service-premium-what-is.md)
+* [What is Power BI Premium?](./../enterprise/service-premium-what-is.md)
 
->[!div class="nextstepaction"]
->[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+* [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 
->[!div class="nextstepaction"]
->[Performance smoothing](./../enterprise/service-premium-smoothing.md)
+* [Performance smoothing](./../enterprise/service-premium-smoothing.md)
 
->[!div class="nextstepaction"]
->[Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
+* Using Autoscale with Power BI Premium](./../enterprise/service-premium-auto-scale.md)
 
 
