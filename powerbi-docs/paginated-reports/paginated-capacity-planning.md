@@ -77,7 +77,7 @@ To avoid congestion, plan your concurrent requests load in advance. If you excee
 
 Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
 
-To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads. For this test, we suggest using an *A SKU*.
+To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads. For this test, we suggest using an *F SKU*.
 
 Depending on the targeted test scenario, for example average or maximum usage validation, select or create a report representative of the anticipated resource consumption, and upload it to a Premium workspace in the capacity you created for the test.
 
@@ -135,7 +135,7 @@ Let’s assume that you have three paginated reports with the daily rendering pe
 | B      | 30%                                | 10                               |
 | C      | 10%                                | 20                               |
 
-The formulas for a *P1 SKU* will be:
+The formulas for an *F64* or a *P1* SKU will be:
 
 | Value | Formula |
 |-------|---------|
