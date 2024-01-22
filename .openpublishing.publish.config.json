@@ -1,72 +1,10 @@
 {
-  "docsets_to_publish": [
-    {
-      "docset_name": "powerbi-docs",
-      "build_source_folder": "powerbi-docs",
-      "build_output_subfolder": "powerbi-docs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "xref_query_tags": [
-        "/uwp/api",
-        "/dotnet"
-      ],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "LandingData": "Content",
-        "ContextObject": "Toc",
-        "Tutorial": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    }
-  ],
+  "docsets_to_publish": [],
   "notification_subscribers": [],
-  "sync_notification_subscribers": null,
+  "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerbi-docs",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
-  "dependent_repositories": [
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "fabric-repo",
-      "url": "https://github.com/MicrosoftDocs/fabric-docs-pr/",
-      "branch": "main",
-      "branch_mapping": {}
-    }
-  ],
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf"
-    ]
-  },
-  "need_generate_pdf_url_template": true,
-  "enable_branch_build_custom_validation": true,
-  "enable_pull_request_custom_validation": true,
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "branch_target_mapping": {},
+  "targets": {}
 }
