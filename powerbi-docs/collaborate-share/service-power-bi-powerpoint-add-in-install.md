@@ -121,8 +121,7 @@ Use the following procedure to add live data to a presentation with a URL:
 1. Paste the URL into the text box.
 1. Select the **Insert** button and the visual will load into the slide.
 
-   
-
+ :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-link-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power BI report page into the add-in.":::
 
 ## Next steps
 
