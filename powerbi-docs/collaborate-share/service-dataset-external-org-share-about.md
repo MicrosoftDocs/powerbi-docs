@@ -76,6 +76,7 @@ Storage and computation for semantic models shared with external users remains w
 
 If you're a Power BI administrator, see [Information for Power BI administrators](./service-dataset-external-org-share-admin.md) for details on how to enable semantic model sharing to external organizations.
 
-## Next Steps
+## Related content
+
 - [Use Power BI in-place semantic model sharing (preview) to share semantic models with external users](service-dataset-external-org-share-provider.md)
 - [Access shared semantic models in Power BI as a guest user from an external organization (preview)](service-dataset-external-org-share-view.md)

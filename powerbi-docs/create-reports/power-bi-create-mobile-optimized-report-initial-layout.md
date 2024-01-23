@@ -52,6 +52,6 @@ The following animation illustrates dragging, dropping, resizing, and overlaying
 
 Removing visuals from the mobile layout canvas removes them from the mobile layout canvas only. The visuals remain available for use in the **Page visuals** pane, and the original desktop layout report remains unaffected.
 
-## Next steps
+## Related content
 
 * [Style and format visuals for mobile layout](power-bi-create-mobile-optimized-report-format-visuals.md)

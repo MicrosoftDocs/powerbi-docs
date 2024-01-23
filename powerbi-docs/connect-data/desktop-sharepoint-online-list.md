@@ -89,6 +89,6 @@ If your purpose is to quickly create a semantic model in the Power BI service, y
 6. You can create multiple visualizations in the same report by deselecting the existing visual, then selecting checkboxes for other columns in the **Fields** pane.
 7. Select **Save** to save your report.
 
-## Next steps
+## Related content
 
 - [Create a report quickly from a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md)

@@ -49,7 +49,7 @@ Your fully qualified server name and database name can be found in the Azure por
 
 [!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 
-## Next steps
+## Related content
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [What is Power BI?](../fundamentals/power-bi-overview.md)  

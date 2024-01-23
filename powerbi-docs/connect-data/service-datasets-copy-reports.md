@@ -88,7 +88,8 @@ If you want to delete the copy of the report, in the list of reports in the work
 
 > [!NOTE]
 > Deleting a report doesn't delete the semantic model it is built on.
-## Next steps
+
+## Related content
 
 - [Use semantic models across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

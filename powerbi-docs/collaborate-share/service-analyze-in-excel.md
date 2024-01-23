@@ -157,7 +157,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - Mac users can only use Excel for the web to explore Excel workbooks containing Power BI semantic models.
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 
-## Next steps
+## Related content
 
 - Now that you've created the Excel workbook with refreshable Power BI data, it's time to [design a report in Excel with that Power BI data](service-analyze-power-bi-datasets-excel.md)
 - [Connect Excel to Power BI semantic models](service-connect-power-bi-datasets-excel.md)

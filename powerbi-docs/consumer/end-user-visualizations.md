@@ -59,7 +59,8 @@ The administrator or the *designer* can disable your ability to see or use these
 | [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | No      | Yes  | n/a |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | No  | Yes   | No |
 
-## Next steps
+## Related content
+
 - [Basic concepts for the Power BI service business users](end-user-basic-concepts.md)
 - [View a report in the Power BI service for business users](end-user-report-open.md)
 - [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

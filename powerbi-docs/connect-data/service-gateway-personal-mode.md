@@ -98,7 +98,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
   
   **Answer:** Yes, personal mode supports R and Python scripts.​
 
-## Next steps
+## Related content
 
 * [Add or remove a gateway data source](service-gateway-data-sources.md)
 * [Configure proxy settings for an on-premises data gateway](/data-integration/gateway/service-gateway-proxy)

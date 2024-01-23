@@ -172,7 +172,7 @@ To get started with Power BI Desktop, follow these steps.
 1. [Publish the report](../collaborate-share/service-publish-to-web.md) to the Power BI service.
 1. Share the report with your colleagues in Teams.
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use data to make meetings productive in Microsoft Teams](business-user-teams-meetings.md)

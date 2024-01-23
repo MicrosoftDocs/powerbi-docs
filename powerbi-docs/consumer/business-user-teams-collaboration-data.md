@@ -83,7 +83,7 @@ When you view the details for a specific team, you can get more detailed usage d
 
 :::image type="content" source="media/business-user-teams-collaboration-data/teams-team-activity-detail.png" alt-text="Screenshot of a visual of Teams activity in Microsoft Teams.":::
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use data to make meetings productive in Microsoft Teams](business-user-teams-meetings.md)

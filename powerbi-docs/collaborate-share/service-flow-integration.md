@@ -84,7 +84,8 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
    
     ![Screenshot of the Power Automate triggers Outlook notification.](media/service-flow-integration/power-bi-flow-notice.png)
 
-## Next steps
+## Related content
+
 * [Get started with Power Automate](/power-automate/getting-started/)
 * [Export and email a Power BI report with Power Automate](service-automate-power-bi-report-export.md)
 * [Create a Power Automate button visual](../create-reports/power-bi-automate-visual.md)

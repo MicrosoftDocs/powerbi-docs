@@ -246,9 +246,9 @@ URL filters are supported in some embedding scenarios and not in others.
 - [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
 - Teams doesn't allow specifying a URL.
 
-## Next steps
+## Related content
 
-[Pin a visualization to a dashboard](../create-reports/service-dashboard-create.md)  
-[Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
+* [Pin a visualization to a dashboard](../create-reports/service-dashboard-create.md)  
+* [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -182,8 +182,7 @@ Read more about [creating and using shared semantic models](../connect-data/serv
 
 - You can't share reports from Power BI Report Server. Instead, you can create [subscriptions for yourself or others](/sql/reporting-services/working-with-subscriptions-web-portal).
 
-
-## Next steps
+## Related content
 
 - [Share dashboards with coworkers and others](service-share-dashboards.md)
 - [Create and publish an app in Power BI](service-create-distribute-apps.md)

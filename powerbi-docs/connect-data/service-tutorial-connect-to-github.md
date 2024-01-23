@@ -126,7 +126,7 @@ Now that you've finished the tutorial, you can delete the GitHub app.
 
    :::image type="content" source="media/service-tutorial-connect-to-github/delete-an-app.png" alt-text="Screenshot of the GitHub app tile with apps, more options, and delete highlighted.":::
 
-## Next steps
+## Related content
 
 In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics.
 

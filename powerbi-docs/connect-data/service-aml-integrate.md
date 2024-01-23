@@ -171,6 +171,6 @@ If you don't plan to use the resources that you created, delete them so you don'
 1. Enter the resource group name. Then select **Delete**.
 1. In My Workspace in the Power BI service, delete the report and the related dataset. You don't need to delete Power BI Desktop or the report on your computer. Power BI Desktop is free.
 
-## Next steps
+## Related content
 
 In this tutorial series, you learnt how to set up a schedule in Power BI so that new data can be scored by your scoring endpoint in Azure Machine Learning.

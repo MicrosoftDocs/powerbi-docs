@@ -170,7 +170,6 @@ In this release of **personal bookmarks**, there are a few considerations and li
 
 - You can create up to 20 bookmarks for a single report.
 
-## Next steps
+## Related content
 
-[Personalize visuals in a report](end-user-personalize-visuals.md)
-
+- [Personalize visuals in a report](end-user-personalize-visuals.md)

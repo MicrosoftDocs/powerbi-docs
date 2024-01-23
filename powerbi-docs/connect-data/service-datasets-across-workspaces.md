@@ -57,7 +57,7 @@ The specific features and experiences built on shared semantic model capabilitie
 - By design, *Publish to web* doesn't work for a report based on a shared semantic model.
 - If two people are members of a workspace that is accessing a shared semantic model, it's possible that only one of them can see the related semantic model in the workspace. Only people with at least **Read** access to the semantic model can see the shared semantic model.
 
-## Next steps
+## Related content
 
 - [Promote semantic models](../collaborate-share/service-endorse-content.md#promote-content)
 - [Certify semantic models](../collaborate-share/service-endorse-content.md#certify-content)

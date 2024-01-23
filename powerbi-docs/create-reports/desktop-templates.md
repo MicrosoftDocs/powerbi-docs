@@ -64,7 +64,7 @@ Once parameters and data have been specified, a report is created. This report c
 
 That's it. Creating and using report templates in Power BI Desktop enables you to easily reproduce compelling layouts and other report aspects, and share them with others.
 
-## Next steps
+## Related content
 
 You might also be interested in learning about **Query Parameters**:
 

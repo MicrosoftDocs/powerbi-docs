@@ -46,7 +46,7 @@ You can fix your queries in three different places in Power BI Desktop:
 
 Certain character combinations in M expressions that would be unsupported in the Tabular Object Model (TOM) are also unsupported in the enhanced semantic model metadata environment.
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

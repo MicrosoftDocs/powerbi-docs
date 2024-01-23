@@ -171,7 +171,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 - Changing the Table name, Row Label, or Key Column in the featured table might impact Excel users with linked cells to rows in the table. 
 - Excel shows when the data was retrieved from the Power BI semantic model. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a semantic model. For example, say a semantic model in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date and time at which the data was pulled into Excel. 
 
-## Next steps
+## Related content
 
 - [Set featured tables in Power BI Desktop.](service-create-excel-featured-tables.md)
 - Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.

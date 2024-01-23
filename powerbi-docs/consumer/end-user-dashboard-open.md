@@ -46,8 +46,8 @@ On the left navigation pane, view and open dashboards from:
 - **Apps** - most apps contain both dashboards and reports
 - **Workspaces**, including **My workspace** - if you downloaded any of the [Power BI samples](../create-reports/sample-datasets.md) or other content or if colleagues have shared content with you. 
 
+## Related content
 
-## Next steps
 * Back to [dashboard overview](end-user-dashboards.md).
 
 * Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../create-reports/sample-tutorial-connect-to-the-samples.md).    
