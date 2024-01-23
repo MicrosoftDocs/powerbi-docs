@@ -1,13 +1,13 @@
 ---
 title: Copy and paste a visualization in Power BI.
-description: Copy and paste a visualization in Power BI
+description: Copy and paste a visualization in Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/11/2024
+ms.date: 01/22/2024
 ms.custom: sample-salesandmarketingsample
 LocalizationGroup: Visualizations
 ---
@@ -131,11 +131,10 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
 
-Q: I don't see the copy and paste options.  
+Q: I don't see the copy and paste options.   
 A: If you're using Power BI Desktop, this feature isn't yet available.   
-Q: Why is the Copy icon disabled on a visual?  
-A: The content owner and admin can turn off this feature.  
-
+Q: Why is the Copy icon disabled on a visual?   
+A: The content owner and admin can turn off this feature. 
 A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
 
 - ESRI and other Map visuals 
@@ -147,11 +146,15 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 
 For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
-Q: Why is my visual not pasting correctly?   
+Q: Why is my visual not pasting correctly?  
 A: There are limitations around copy visual as an image, including:
 
-- [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
-- [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)-
+  - [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-) (custom visuals) 
+  - [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
+  - Visuals with applied themes and colors
+  - Freshly pinned dashboard tiles
+  - Applications with limited support for pasting HTML
+  - formatted content from the clipboard may not render everything that was copied from the visual
 
 ## Related content
 
