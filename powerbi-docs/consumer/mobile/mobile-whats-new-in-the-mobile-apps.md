@@ -21,9 +21,9 @@ For related "What's New" information, see:
 
 ## January 2024
 
-### Get to know Power BI with new sample reports
+### Get to know Power BI with sample reports on your mobile
 
-Power BI's new sample reports help you quickly get up to speed with Power BI. To use a sample report, simply go to the **Sample reports** section on the Explore page and tap on one of the sample reports. The report will install in your personal workspace and you'll be all set to start exploring it in the app. You can also get to the sample reports from the app's home page. Just select the down arrow on the Recommended strip and choose **Sample reports**!
+Power BI's sample reports help you quickly get up to speed with Power BI. You can now use a sample report directly from the mobile app. Simply go to the **Sample reports** section on the Explore page and tap on one of the sample reports. The report will install in your personal workspace and you'll be all set to start exploring it in the app. You can also get to the sample reports from the app's home page. Just select the down arrow on the Recommended strip and choose **Sample reports**!
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-sample-reports.png" alt-text="Screenshot showing downloadable sample reports on the mobile Home and Explore pages." border="false":::
 
