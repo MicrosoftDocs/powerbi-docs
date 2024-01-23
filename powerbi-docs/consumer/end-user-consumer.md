@@ -61,7 +61,7 @@ That doesn't mean that you can't save your changes. You can, but those changes o
 
 :::image type="icon" source="media/end-user-consumer/power-bi-reset.png":::
 
-## Next steps
+## Related content
 
 [Take a tour of the Power BI service for business users](end-user-reading-view.md)  
 [Power BI service training for business users](/training/paths/consume-data-with-power-bi/)  
