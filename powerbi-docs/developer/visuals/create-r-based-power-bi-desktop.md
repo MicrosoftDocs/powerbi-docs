@@ -71,7 +71,7 @@ In this tutorial, you learn how to:
 
 1. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
-   :::image type="content" source="./media/create-r-based-power-bi-desktop/add-values.png" alt-text="Screenshot showing where to dd data to values.":::
+   :::image type="content" source="./media/create-r-based-power-bi-desktop/add-values.png" alt-text="Screenshot showing where to add data to values.":::
 
 1. Set the aggregation type of **Total units** to *Don't summarize*.
 
@@ -307,7 +307,7 @@ Now you can package the visual and import it to any Power BI report.
 
 1. Your final visual looks like the following example:
 
-  :::image type="content" source="./media/create-r-based-power-bi-desktop/r-final-settings-value.png" alt-text="Screenshot of R visual settings with changed value":::
+  :::image type="content" source="./media/create-r-based-power-bi-desktop/r-final-settings-value.png" alt-text="Screenshot of R visual settings with changed value.":::
 
 ## Related content
 
