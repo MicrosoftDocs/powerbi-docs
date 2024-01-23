@@ -64,7 +64,7 @@ This process is straightforward, but you should know the following:
 > Some data connection in Power BI reports may include links to data, rather than including the data in the semantic model that's imported into the Power BI service. For example, DirectQuery connections link to data as updates or interactions occur, rather than importing the data itself. If linked data sources in your report are on premises, you may need a gateway to access them from Power BI. For more information, see [what is an on-premises data gateway?](../connect-data/service-gateway-onprem.md).
 > 
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
