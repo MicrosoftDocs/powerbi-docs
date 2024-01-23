@@ -364,7 +364,7 @@ Once you publish a report to the Power BI service, the maximum number of concurr
 |Environment            |Upper limit per data source |
 |-----------------------|-------------|
 |Power BI Pro           |10 active connections|
-|Power BI Premium       |30 active connections|
+|Power BI Premium       |Depends on [semantic model SKU limitation](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation)|
 |Power BI Report Server |10 active connections|
 
 > [!NOTE]
