@@ -18,7 +18,7 @@ Have you ever wanted to share an image from a Power BI report or dashboard? Now 
 
 :::image type="content" source="media/end-user-copy-paste/power-bi-paste-copy.png" alt-text="Screenshot of a Power BI visual and the Copy as image with caption icon highlighted.":::
 
-When you copy a static image of a visual, you get a copy of the visual along with the metadata. This includes the following:
+When you copy a static image of a visual, you get a copy of the visual along with the metadata. This copy includes the following information:
 
 * Link back to the Power BI report or dashboard
 * Title of the report or dashboard
@@ -42,7 +42,7 @@ The process is almost identical for copying a visual from a dashboard or a repor
 
         :::image type="content" source="media/end-user-copy-paste/power-bi-copy-icon.png" alt-text="Screenshot showing the Copy as image with caption icon.":::
 
-1. If there's a data sensitivity label applied to the report that contains the visual, you'll receive a warning. For more information, see [Data that has been labeled as confidential or sensitive](#data-that-has-been-labeled-as-confidential-or-sensitive).
+1. If there's a data sensitivity label applied to the report that contains the visual, you receive a warning. For more information, see [Data that is labeled as confidential or sensitive](#data-that-has-been-labeled-as-confidential-or-sensitive).
 
     :::image type="content" source="media/end-user-copy-paste/power-bi-sensitive-dashboard.png" alt-text="Screenshot that shows a warning message about sensitive data.":::
 
@@ -54,13 +54,13 @@ The process is almost identical for copying a visual from a dashboard or a repor
 
     :::image type="content" source="media/end-user-copy-paste/power-bi-paste-into-word.png" alt-text="Screenshot of a visual pasted into Microsoft Word.":::
 
-## Data that has been labeled as confidential or sensitive
+## Data that is labeled as confidential or sensitive
 
-If there's a data sensitivity label applied to the report containing the visual, you'll receive a warning when you select the copy icon.  
+If there's a data sensitivity label applied to the report containing the visual, you receive a warning when you select the copy icon.  
 
 :::image type="content" source="media//end-user-copy-paste/power-bi-sensitive.png" alt-text="Screenshot that displays a warning message about sensitive data.":::
 
-A sensitivity label will also be added to the metadata of the copied visual. The sensitivity label will appear below the visual when you paste it.
+A sensitivity label is added to the metadata of the copied visual. The sensitivity label appears below the visual when you paste it.
 
 :::image type="content" source="media//end-user-copy-paste/power-bi-confidential.png" alt-text="Screenshot that shows a visual with the confidential info label.":::
 
@@ -69,7 +69,7 @@ A sensitivity label will also be added to the metadata of the copied visual. The
   :::image type="content" source="media//end-user-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot of a visual with the Copy icon disabled.":::
 
 Q: Why is the Copy icon disabled on a visual?  
-A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals. This includes:
+A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain other visuals. Visuals with limited support are:
 
 * ESRI and other map visuals
 * Python visuals
@@ -79,7 +79,7 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 A: The ability to copy a visual can be turned off by your IT department or Power BI administrator.
 
 Q: Why is my visual not pasting correctly?  
-A: There are limitations for custom visuals and animated visuals. The following are some examples of visuals that won't paste correctly:
+A: There are limitations for custom visuals and animated visuals. The following are some examples of visuals that don't paste correctly:
 
 * [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
 * [AppSource visuals that are managed in your organizational store](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
@@ -89,7 +89,7 @@ A: *Copy visual* is supported only in the **embed for your organization** scenar
 
 Q: Can I copy and paste slicer visualizations in a report?
 
-A: No, copying and pasting the slicer visualization is not supported. This includes visuals that use [Visual Filter APIs](../developer/visuals/filter-api.md) which act as slicers.
+A: No, copying and pasting the slicer visualization isn't supported. This limitation also applies to visuals that use [Visual Filter APIs,](../developer/visuals/filter-api.md) which act as slicers.
 
 ## Next steps
 
