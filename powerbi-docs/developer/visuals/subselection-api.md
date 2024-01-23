@@ -19,7 +19,10 @@ The SubSelection Service provides two methods:
 * [subSelect]
 * [updateRegionOutlines]
 
-## subSelect
+
+## How to use the sub-selection API
+
+### subSelect
 
 Sends a sub-subselection to PowerBI to use when a user clicks on a sub-selectable element.
 
@@ -104,7 +107,7 @@ private subSelectFromEvent(event: MouseEvent, showUI: boolean): void {
         this.subSelectionService.subSelect(subSelection);
     }
 
-## updateRegionOutlines
+### updateRegionOutlines
 
 Send outlines to PowerBI to get rendered, a good place to use it is in the update method of the visual, since in the update PowerBI will send the subSelection in the update options which was previously sent by the visual, or when you want to render an outline for a hovered element.
 updateRegionOutlines(outlines: visuals.SubSelectionRegionOutline[]): void
