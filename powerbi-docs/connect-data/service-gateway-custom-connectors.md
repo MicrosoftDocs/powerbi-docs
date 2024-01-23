@@ -48,7 +48,7 @@ When you enable this option, you see your custom connectors as available data so
 
 - You can only use one custom connector data source when working in DirectQuery mode. Multiple custom connector data sources don't work with DirectQuery.
 
-## Next steps
+## Related content
 
 * [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 * [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  

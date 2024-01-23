@@ -156,6 +156,6 @@ The ability to hide items on Power BI Home is deprecated. If you previously hid 
 
 :::image type="content" source="media/end-user-home/power-bi-hidden.png" alt-text="A screenshot of the General tab showing the Hidden items option selected.":::
 
-## Next steps
+## Related content
 
-Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 
+- Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 

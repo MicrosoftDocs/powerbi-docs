@@ -135,7 +135,7 @@ To return to the report, select **Back to report** from the upper left corner.
 * Are not supported when you are connected to a live multidimensional (MD) model.
  
 
-## Next steps
+## Related content
 
 There are all sorts of report formatting and data management features in **Power BI**. Check out the following resources for a few examples:
 

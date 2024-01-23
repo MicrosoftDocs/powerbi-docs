@@ -93,7 +93,7 @@ Power BI doesn't clear a default member for a specified column, if:
 * The column has a filter card with default stated, and Power BI is grouping on a column in its ARP.
 * The column is above another column in the ARP, and Power BI has a filter card for that other column in default state.
 
-## Next steps
+## Related content
 
 This article described the behavior of Power BI when working with default members in multidimensional models. You might also be interested in the following articles:
 

@@ -171,9 +171,7 @@ You can now delete the sample report, dashboard, and semantic model from your **
 
    :::image type="content" source="./media/end-user-experience/power-bi-delete.png" alt-text="Screenshot showing the more options dropdown on the My workspace page.":::
 
-
-
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Learn about the Power BI capabilities for business users](end-user-reading-view.md)

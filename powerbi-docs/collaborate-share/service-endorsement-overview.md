@@ -71,7 +71,7 @@ If you still find it useful to share reports directly, however, then endorse the
 
 Whether you’re sharing a report or an app, if the underlying semantic models are clean and ready to be shared, it’s a good idea to endorse the semantic models as well. The same applies to dataflows.  
 
-## Next steps
+## Related content
 
 * [Promote or certify Power BI content](service-endorse-content.md)
 * [Enable certification for your organization](../admin/service-admin-setup-certification.md) (Power BI admins)

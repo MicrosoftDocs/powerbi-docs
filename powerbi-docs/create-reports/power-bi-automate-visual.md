@@ -158,7 +158,7 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 - The visual doesn't work in Publish to Web (public) scenarios, because unauthenticated scenarios aren't supported by Power Automate.
 - The visual isn't certified while in preview. We plan to have complete certification by the general availability release.
 
-## Next steps
+## Related content
 
 For more information about Power Automate, take a look at the following articles:
 

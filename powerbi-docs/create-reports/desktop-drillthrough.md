@@ -79,7 +79,7 @@ When you add a measure or summarized numeric column, you can drill through to th
 
 That's all there is to setting up drillthrough in your reports. It's a great way to get an expanded view of the entity information that you selected for your drillthrough filter.
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

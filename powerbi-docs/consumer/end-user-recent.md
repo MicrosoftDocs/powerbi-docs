@@ -48,7 +48,7 @@ The actions available to you depend on the settings assigned by the content desi
 - Some dashboards and reports can be reshared ![share icon](../collaborate-share/media/end-user-shared-with-me/power-bi-share-icon-new.png).
 - [View insights](end-user-insights.md) that Power BI finds in the report data ![insights icon](../collaborate-share/media/end-user-shared-with-me/power-bi-insights.png).
 
-## Next steps
+## Related content
 
 - Learn about [Power BI service apps](end-user-apps.md).
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/).

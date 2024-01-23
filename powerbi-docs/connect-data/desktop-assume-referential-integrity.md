@@ -60,7 +60,7 @@ If you set **Assume Referential Integrity** when there are referential integrity
 - A visual showing the total *Order Qty* would show a value of 40
 - A visual showing the total *Order Qty by Depot City* would show a total value of only *30*, because it wouldn't include Order ID 1, where **DepotID** is *Null*.
 
-## Next steps
+## Related content
 
 - Learn more about [DirectQuery](desktop-use-directquery.md).
 - Get more information about [Relationships in Power BI](../transform-model/desktop-create-and-manage-relationships.md).

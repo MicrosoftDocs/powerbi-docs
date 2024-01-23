@@ -55,6 +55,6 @@ You can further customize the trigger to:
 
 For more information, read the [Data Activator](/fabric/data-activator/data-activator-introduction) documentation.
 
-## Next steps
+## Related content
 
 - [Data Activator](/fabric/data-activator/data-activator-introduction)

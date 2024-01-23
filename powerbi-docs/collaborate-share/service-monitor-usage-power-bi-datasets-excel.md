@@ -28,7 +28,7 @@ To identify users connecting to Power BI semantic models from Excel desktop or E
 
     :::image type="content" source="media/service-monitor-usage-power-bi-datasets-excel/power-bi-audit-logs-excel.png" alt-text="Screenshot of PowerShell Get-PowerBIActivityEvent cmdlet.":::
 
-## Next steps
+## Related content
 
 - [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
 - [Design refreshable reports in Excel with Power BI data](service-analyze-power-bi-datasets-excel.md)

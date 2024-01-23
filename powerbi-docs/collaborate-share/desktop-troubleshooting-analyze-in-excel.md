@@ -66,13 +66,14 @@ The primary cause for a **Can't find OLAP cube model** error is that the semanti
 ## Token expired error
 The primary cause for a **Token expired** error is that you haven't recently used the **Analyze in Excel** feature on the computer you're using. To resolve this error, reenter your credentials or reopen the file, and the error should go away.
 
-## Next steps
-[Analyze in Excel](service-analyze-in-excel.md)
+## Related content
 
-[Tutorial: Create your own measures in Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
+- [Analyze in Excel](service-analyze-in-excel.md)
 
-[Measures in PowerPivot](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
+- [Tutorial: Create your own measures in Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
 
-[Create a Measure in PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
+- [Measures in PowerPivot](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
 
-[Add worksheet data to a Data Model using a linked table](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
+- [Create a Measure in PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
+
+- [Add worksheet data to a Data Model using a linked table](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)

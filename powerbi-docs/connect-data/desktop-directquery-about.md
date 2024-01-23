@@ -514,7 +514,7 @@ Power Query Editor defines the exact subselect queries. This use of subselect qu
 
 Power BI uses this pattern because the analyst provides the SQL query directly. Power BI uses the query as provided, without any attempt to rewrite it.
 
-## Next steps
+## Related content
 
 For more information about DirectQuery in Power BI, see:
 

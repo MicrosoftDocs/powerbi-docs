@@ -63,7 +63,7 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
 | Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
 
-## Next Steps
+## Related content
 
 Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports.
 

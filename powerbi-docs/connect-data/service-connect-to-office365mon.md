@@ -51,7 +51,7 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
 
 If you see a **Need admin approval** error when you try to sign in to Office365Mon, the account you're using doesn't have permissions to retrieve the data. You need to use an Office365Mon admin account when you sign in.
 
-## Next steps
+## Related content
 
 - [What is Power BI?](../fundamentals/power-bi-overview.md)
 - [Get data for Power BI](service-get-data.md)

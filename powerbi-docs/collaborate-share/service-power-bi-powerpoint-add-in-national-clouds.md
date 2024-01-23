@@ -35,7 +35,7 @@ In national/regional clouds, the add-in button doesn't appear on PowerPoint's **
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-national-clouds/microsoft-power-bi-add-in-powerpoint-admin-managed.png" alt-text="Screenshot showing Microsoft Power BI add-in for PowerPoint as Admin Managed add-in.":::
 
-## Next steps
+## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Information for Power BI administrators](./service-power-bi-powerpoint-add-in-admin.md)

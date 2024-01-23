@@ -164,8 +164,7 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
     ![Screenshot of unpin workspace.](media/service-create-the-new-workspaces/unpin-workspace.png)
 
-
-## Next steps
+## Related content
 
 * Read about [workspaces in Power BI](service-new-workspaces.md)
 * [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)
