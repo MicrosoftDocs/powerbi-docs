@@ -91,7 +91,7 @@ The new visual header is the default behavior for all new reports. For existing 
 
 ![Screenshot of the Options menu, highlighting Report settings and the Use the modern visual header with updated styling options checkbox.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_06.png)
 
-## Next steps
+## Related content
 
 For more information about Power BI Desktop and how to get started, see:
 

@@ -42,7 +42,7 @@ If you're a report owner, you might receive an email from **Microsoft Power BI**
 
     :::image type="content" source="media/service-request-access/power-bi-add-reshare-permission.png" alt-text="Screenshot of permission options for direct access.":::
 
-## Next steps
+## Related content
 
 - [Share Power BI dashboards and reports with coworkers and others](service-share-dashboards.md)
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)

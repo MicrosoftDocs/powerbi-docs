@@ -83,7 +83,7 @@ The following table lists all SAP BW features that aren't fully supported, or be
 | **Customer exit variables** | Customer exit variables aren't exposed by the public API, and are therefore not supported by Power BI. |
 | **Characteristic structures** | Any characteristic structures in the underlying SAP BW source results in an explosion of measures being exposed in Power BI. For example, with two measures `Sales` and `Costs`, and a characteristic structure containing Budget and Actual, four measures are exposed: `Sales.Budget`, `Sales.Actual`, `Costs.Budget`, `Costs.Actual`. |
 
-## Next steps
+## Related content
 
 For more information about DirectQuery, check out the following resources:
 

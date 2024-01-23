@@ -63,7 +63,7 @@ When you select a tile, what happens next depends on how the tile was created an
 - If a workspace is moved to Premium capacity, the existing dashboard refresh cache doesn't move with the workspace. The new cache is created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.
 - If a tile is pinned from a workbook, you can't turn off the display of the title and subtitle. The option to **Edit details** > **Display title and subtitle** is greyed out.
 
-## Next steps
+## Related content
 
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)

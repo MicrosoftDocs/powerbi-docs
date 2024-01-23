@@ -219,8 +219,8 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 **A:** The usage metrics report only includes reports (or dashboards) that have been accessed in the past 90 days.  If a report (or dashboard) doesn't show up, likely it hasn't been used in more than 90 days.
 
-## Next steps
+## Related content
 
-[Administering Power BI in the admin portal](../admin/service-admin-portal.md)
+- [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

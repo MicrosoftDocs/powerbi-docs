@@ -60,7 +60,7 @@ The following table shows which packages **are supported** in Power BI.
 | `typing-extensions` | 4.3.0 | [https://pypi.org/project/typing-extensions](https://pypi.org/project/typing-extensions) |
 | `xgboost` | 1.6.1 | [https://pypi.org/project/xgboost](https://pypi.org/project/xgboost) |
 
-## Next steps
+## Related content
 
 For more information about Python in Power BI, take a look at the following articles:
 

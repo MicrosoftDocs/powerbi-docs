@@ -93,7 +93,7 @@ Go to the menu and select **SalesQuantity** again, the visual defaults to being 
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
 --->
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 
