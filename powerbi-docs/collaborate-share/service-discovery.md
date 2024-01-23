@@ -45,7 +45,8 @@ Go to  **Admin portal > Tenant settings > Discovery settings** and configure the
 
 * **Discover content**: When you enable this setting, users you specify can find endorsed content that's marked as discoverable, even if they don't yet have access to it. You can also specify users and/or groups to exclude from the permitted, specified groups.
 
-## Next steps
+## Related content
+
 * [Data discovery using the data hub](../connect-data/service-data-hub.md)
 * [Endorsement: Promoting and certifying Power BI content](service-endorsement-overview.md)
 * [Build permission for shared semantic models](../connect-data/service-datasets-build-permissions.md)

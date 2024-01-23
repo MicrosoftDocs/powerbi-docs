@@ -58,7 +58,7 @@ As a Power BI admin, you can specify which users or user groups can share semant
 
     ![Screenshot of the Power BI Admin portal with the Allow specific users to turn on external data sharing setting shown.](media/service-dataset-external-org-share-admin/specific-users-allowed-share.png)
 
+## Related content
 
-## Next steps
 - [Use Power BI in-place semantic model sharing (preview) to share semantic models with external users](service-dataset-external-org-share-provider.md)
 - [Access shared semantic models in Power BI as a guest user from an external organization (preview)](service-dataset-external-org-share-view.md)

@@ -32,7 +32,7 @@ There are some non-typical ways in which Power BI reports and semantic models li
 
 Finally, there are security and life cycle considerations to take into account when using Power BI components in Power Apps solutions. See [Considerations working with the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-considerations.md).
 
-## Next Steps
+## Related content
 
 * [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-enable.md)
 * [Using the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-using.md)
