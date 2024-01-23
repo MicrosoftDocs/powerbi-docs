@@ -1,27 +1,28 @@
 ---
 title:  Visual API
 description: This article describes how to use IVisual API for Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 03/19/2020
+ms.date: 12/17/2023
 ---
 
 # Visual API
+
 All visuals start with a class that implements the `IVisual` interface. You can name the class anything as long as there's exactly one class that implements the `IVisual` interface.
 
 > [!NOTE]
-> The visual class name must match what's defined in the *pbiviz.json* file.
+> The visual class name must be the same as the `visualClassName` in the `pbiviz.json` file.
 
-See the sample visual class with the following methods that should be implemented:
+The visual class should implement the following methods as shown in the following sample:
 
-* `constructor`, a standard constructor to initialize the visual's state
-* `update`, to update the visual's data
-* `enumerateObjectInstances`, to return objects to populate the property pane (formatting options) where you can modify them as needed
-* `destroy`, a standard destructor for cleanup
+* [`constructor`](#constructor) - a standard constructor that initializes the visual's state
+* [`update`](#update) - updates the visual's data
+* [`getFormattingModel`](#getformattingmodel-optional), returns a formatting model that populates the property pane (formatting options) where you can modify properties as needed
+* [`destroy`](#destroy-optional) - a standard destructor for cleanup
 
 ```typescript
 class MyVisual implements IVisual {
@@ -34,8 +35,8 @@ class MyVisual implements IVisual {
         //code to update your visual goes here (called on all view or data changes)
     }
 
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-        //returns objects to populate the property pane (called for each object defined in capabilities)
+    public getFormattingModel(): FormattingModel {
+        // returns modern format pane formatting model that contain all format pane components and properties (called on opening format and analytics pane or on editing format properties)
     }
     
     public destroy(): void {
@@ -46,57 +47,52 @@ class MyVisual implements IVisual {
 
 ## constructor
 
-The constructor of the visual class is called when the visual is instantiated. It can be used for any set up operations needed by the visual.
+The `constructor` of the visual class is called when the visual is instantiated. It can be used for any set-up operations the visual needs.
 
 ```typescript
 constructor(options: VisualConstructorOptions)
 ```
 
-**VisualConstructorOptions**
+### VisualConstructorOptions
 
-* `element: HTMLElement`, a reference to the DOM element that will contain your visual
-* `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI)
+These interfaces get updated with each new API version. For the most updated interface format, go to our [GitHub repo](https://github.com/microsoft/powerbi-visuals-api/blob/main/src/visuals-api.d.ts#L1783C9-L1783C25).
+
+The following list describes some of the properties of the `VisualConstructorOptions` interface:
+
+* `element: HTMLElement` - a reference to the DOM element that contains your visual
+* `host: IVisualHost` - a collection of properties and services that can be used to interact with the visual host (Power BI)
 
    `IVisualHost` contains the following services:
 
-   ```typescript
-   export interface IVisualHost extends extensibility.IVisualHost {
-       createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-       : () => ISelectionManager;
-       colorPalette: ISandboxExtendedColorPalette;
-       persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-       applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-       tooltipService: ITooltipService;
-       telemetry: ITelemetryService;
-       authenticationService: IAuthenticationService;
-       locale: string;
-       allowInteractions: boolean;
-       launchUrl: (url: string) => void;
-       fetchMoreData: () => boolean;
-       instanceId: string;
-       refreshHostData: () => void;
-       createLocalizationManager: () => ILocalizationManager;
-       storageService: ILocalVisualStorageService;
-       eventService: IVisualEventService;
-       switchFocusModeState: (on: boolean) => void;
-   }
-   ```
-   * `createSelectionIdBuilder`, generates and stores metadata for selectable items in your visual
-   * `createSelectionManager`, creates the communication bridge used to notify the visual's host on changes in the selection state, see [Selection API](./selection-api.md).
-   * `createLocalizationManager`, generates a manager to help with [Localization](./localization.md)
-   * `allowInteractions: boolean`, a boolean flag which hints whether or not the visual should be interactive
-   * `applyJsonFilter`, applies specific filter types, see [Filter API](./filter-api.md)
-   * `persistProperties`, allows users to persist properties and save them along with the visual definition, so they're available on the next reload
-   * `eventService`, returns an [event service](./event-service.md) to support **Render** events
-   * `storageService`, returns a service to help use [local storage](./local-storage.md) in the visual
-   * `authenticationService`, generates a service to help with user authentication
-   * `tooltipService`, returns a [tooltip service](./add-tooltips.md) to help use tooltips in the visual
-   * `launchUrl`, helps to [launch URL](./launch-url.md) in next tab
-   * `locale`, returns a locale string, see [Localization](./localization.md)
-   * `instanceId`, returns a string to identify the current visual instance
-   * `colorPalette`, returns the colorPalette required to apply colors to your data
-   * `fetchMoreData`, supports using more data than the standard limit (1K rows)
-   * `switchFocusModeState`, helps to change the focus mode state
+  * `createSelectionIdBuilder` - generates and stores metadata for selectable items in your visual
+  * `createSelectionManager` - creates the communication bridge used to notify the visual's host about changes in the selection state, see [Selection API](./selection-api.md).
+  * `hostCapabilities`
+  * `refreshHostData`
+  * `downloadService` - returns expanded result information of the [download](./file-download-api.md).
+  * `eventService` - returns information about [rendering events](./event-service.md).
+  * `hostEnv`
+  * `displayWarningIcon` - returns [error or warning message](./visual-display-warning-icon.md).
+  * `licenseManager` - returns [license information](./licensing-api.md).
+  * `createLocalizationManager` - generates a manager to help with [localization](./localization.md)
+  * `applyJsonFilter` - applies specific filter types. See [Filter API](./filter-api.md)
+  * `applyCustomSort` - allows [custom sorting options](./sort-options.md#custom-sorting).
+  * `acquireAADTokenService` - returns Microsoft Entra ID [authentication information](./authentication-api.md).
+  * `webAccessService` - returns permission status for [accessing remote resources](./permissions-api.md#web-access).
+  * `openModalDialog` - returns a [dialog box](./create-display-dialog-box.md).
+  * `persistProperties` - allows users to create persistent settings and save them along with the visual definition, so they're available on the next reload
+  * `eventService` - returns an [event service](./event-service.md) to support **Render** events
+  * `storageService` - returns a service to help use [local storage](./local-storage.md) in the visual
+  * `storageV2Service` - returns a service to help use [local storage](./local-storage.md) version 2 in the visual
+  * `tooltipService` - returns a [tooltip service](./add-tooltips.md) to help use tooltips in the visual
+  * `telemetry`
+  * `drill`
+  * `launchUrl` - helps to [launch URL](./launch-url.md) in next tab
+  * `authenticationService` - returns a Microsoft Entra ID token.
+  * `locale` - returns a locale string, see [Localization](./localization.md)
+  * `instanceId` - returns a string to identify the current visual instance
+  * `colorPalette` - returns the colorPalette required to apply colors to your data
+  * `fetchMoreData` - supports using more data than the standard limit (1,000 rows). See [Fetch more data](./fetch-more-data.md)
+  * `switchFocusModeState` - helps to change the focus mode state
 
 ## update
 
@@ -106,36 +102,38 @@ All visuals must implement a public update method that's called whenever there's
 public update(options: VisualUpdateOptions): void
 ```
 
-**VisualUpdateOptions**
+### VisualUpdateOptions
 
-* `viewport: IViewport`, dimensions of the viewport that the visual should be rendered within
-* `dataViews: DataView[]`, the dataview object which contains all data needed to render your visual (your visual will typically use the categorical property under DataView)
-* `type: VisualUpdateType`, flags to indicate the type(s) of this update (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
-* `viewMode: ViewMode`, flags to indicate the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
-* `editMode: EditMode`, flag to indicate the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
-* `operationKind?: VisualDataChangeOperationKind`, flag to indicate type of data change (**Create** | **Append**)
-* `jsonFilters?: IFilter[]`, collection of applied json filters
-* `isInFocus?: boolean`, flag to indicate if the visual is in focus mode or not
-	
-## enumerateObjectInstances `optional`
+* `viewport: IViewport` - dimensions of the viewport that the visual should be rendered within
+* `dataViews: DataView[]` - the data view object that contains all data needed to render your visual (a visual generally uses the categorical property under DataView)
+* `type: VisualUpdateType` - flags indicating the type of data being updated (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
+* `viewMode: ViewMode` - flags indicating the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
+* `editMode: EditMode` - flag indicating the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
+* `operationKind?: VisualDataChangeOperationKind` - flag indicating type of data change (**Create** | **Append**)
+* `jsonFilters?: IFilter[]` - collection of applied json filters
+* `isInFocus?: boolean` - flag to indicate if the visual is in focus mode or not
 
-This method is called for every object listed in the capabilities. Using the options (currently just the name) you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
+## getFormattingModel *(optional)*
+
+This method is called once each time we open the properties pane or the user edits any of the properties in the pane. It returns [`FormattingModel`](./format-pane.md) with all information on the properties pane design, hierarchy, properties, and latest formatting values.
 
 ```typescript
-enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualObjectInstanceEnumeration
+getFormattingModel(): visuals.FormattingModel;
 ```
 
-**EnumerateVisualObjectInstancesOptions**
+## destroy *(optional)*
 
-* `objectName: string`, name of the object
-
-## destroy `optional`
-
-The destroy function is called when your visual is unloaded and can be used for clean up tasks such as removing event listeners.
+The destroy function is called when your visual is unloaded and can be used for clean-up tasks such as removing event listeners.
 
 ``` typescript
 public destroy(): void
 ```
 
-> [!Note]
+> [!TIP]
 > Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
+
+## Related content
+
+* [Visual project structure](visual-project-structure.md)
+
+* [Local storage API](local-storage.md)

@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-<Token>**APPLIES TO:** ![yes](media/yes.png)Power BI service for ***business users*** ![no](media/no.png)Azure SQL Database ![no](media/no.png)Azure Synapse Analytics (SQL DW) ![no](media/no.png)Parallel Data Warehouse </Token>
+<Token>**APPLIES TO:** :::image type="icon" source="media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="media/no-icon.svg" border="false":::Azure SQL Database :::image type="icon" source="media/no-icon.svg" border="false":::Azure Synapse Analytics (SQL DW) :::image type="icon" source="media/no-icon.svg" border="false":::Parallel Data Warehouse </Token>

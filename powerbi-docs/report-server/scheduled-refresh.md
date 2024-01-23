@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/18/2021
 ---
 # Power BI report scheduled refresh in Power BI Report Server
 Scheduled refresh for Power BI reports allows the data for a report to stay up to date.
@@ -42,6 +42,7 @@ Not all Power BI Reports can have a scheduled refresh plan created on them. The 
 * Your report contains one or more Analysis Services data sources, which use a live connection.
 * Your report contains one or more data sources, which use DirectQuery.
 * Your report does not contain any data source. For example, data is manually entered via *Enter Data* or a report contains only static content like images, text, etc.
+* Your report contains dynamic data sources. For example, data from the report is used to dynamicaly build the name of a server, the name of a database, or a URL address to fetch contents. Only data sources that are detected when the report was uploaded can be refreshed.
 
 In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot create refresh plans.
 
@@ -58,7 +59,8 @@ For information about memory settings within Analysis Services, see [Memory Prop
 ### Data model size limit
 The data model loaded into the internal Analysis Services engine during a scheduled refresh has a maximum size of 2,000 MB (2GB). This maximum size can't be configured. If your data model grows larger than 2GB, you will receive the refresh error, "The length of the result exceeds the length limit (2GB) of the target large type." In that case, we recommend hosting the model in an Analysis Services instance and using a live connection to the model in the report.
 
-## Next steps
-Configure [scheduled refresh](configure-scheduled-refresh.md) on a Power BI report.
+## Related content
+
+* Configure [scheduled refresh](configure-scheduled-refresh.md) on a Power BI report.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

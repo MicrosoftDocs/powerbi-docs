@@ -1,18 +1,18 @@
 ---
 title: 'Q&A virtual analyst in iOS apps - Power BI'
-description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
+description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on your iOS device.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 12/13/2022
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 ---
 # Q&A virtual analyst in iOS apps - Power BI
 
-The easiest way to learn about your data is to ask questions about it in your own words. In this article, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch. 
+The easiest way to learn about your data is to ask questions about it in your own words. In this article, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad or iPhone. 
 
 Applies to:
 
@@ -29,10 +29,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 * **Install the Power BI for iOS app**: [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062) to your iPhone or iPad.
-These versions support the Power BI app for iOS:
-    * iPad with iOS 11 or later.
-    * iPhone 5 and above, with iOS 11 or later.
-* **Download the Retail Analysis and Opportunity Analysis Samples**: The first step in this quickstart is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis Sample and the Opportunity Analysis Sample.
+* **Download the Retail Analysis and Opportunity Analysis Samples**: The first step in this quickstart is to download the Retail Analysis and Opportunity Analysis samples into your account in the Power BI service. See [Install built-in samples](../../create-reports/sample-datasets.md#install-built-in-samples) for instructions. Be sure to choose the Retail Analysis Sample and the Opportunity Analysis Sample.
 
 Once you've completed the prerequisites you are ready to try the Q&A virtual analyst.
 
@@ -91,14 +88,15 @@ See the Speech Recognition section of [What's New in iOS](https://go.microsoft.c
     Your feedback is anonymous, and helps us improve our answers to questions.
 
 ## Enhance your Q&A virtual analyst results
-You can improve the results you and your customers get when they use the Q&A virtual analyst on a dataset, either by asking more targeted questions or by enhancing the dataset.
+You can improve the results you and your customers get when they use the Q&A virtual analyst on a semantic model, either by asking more targeted questions or by enhancing the semantic model.
 
 ### How to ask questions
 * Follow these [tips for asking questions in Q&A](../end-user-q-and-a-tips.md) in the Power BI service or the Q&A virtual analyst in your iOS mobile app.
 
-### How to enhance the dataset
-* Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
+### How to enhance the semantic model
+* Enhance the semantic model in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
 
-## Next steps
+## Related content
+
 * [Q&A in the Power BI service](../end-user-q-and-a.md)
 * Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)

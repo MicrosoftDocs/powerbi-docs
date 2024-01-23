@@ -8,12 +8,12 @@ editor: davidi
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 01/17/2020
+ms.date: 01/16/2024
 LocalizationGroup: Connect to data
 ---
 # Implement row-level security in an on-premises Analysis Services tabular model
 
-Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row-level security**](../admin/service-admin-rls.md) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
+Using a sample semantic model to work through the steps below, this tutorial shows you how to implement [**row-level security**](../enterprise/service-admin-rls.md) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
 
 * Create a new security table in the [AdventureworksDW2012 database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Build the tabular model with necessary fact and dimension tables
@@ -28,7 +28,7 @@ This tutorial requires the [AdventureworksDW2012 database](https://github.com/Mi
 
 ## Task 1: Create the user security table and define data relationship
 
-You can find many articles describing how to define row-level dynamic security with the *SQL Server Analysis Services (SSAS) tabular* model. For our sample, we use [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+You can find many articles describing how to define row-level dynamic security with the *SQL Server Analysis Services (SSAS) tabular* model. 
 
 The steps here require using the AdventureworksDW2012 relational database.
 
@@ -95,7 +95,9 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
     This formula specifies that all columns resolve to `false`; meaning `DimUserSecurity` table columns can't be queried.
 
-Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1200/lesson-13-deploy).
+Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1400/as-lesson-13-deploy).
+
+
 
 ## Task 3: Add Data Sources within your On-premises data gateway
 
@@ -111,7 +113,7 @@ With this procedure complete, the gateway is configured and ready to interact wi
 
 ## Task 4: Create report based on analysis services tabular model using Power BI desktop
 
-1. Start Power BI Desktop and select **Get Data** > **Database**.
+1. Start Power BI Desktop and select **Get data** > **Database**.
 
 1. From the data sources list, select the **SQL Server Analysis Services Database** and select **Connect**.
 
@@ -157,7 +159,7 @@ Congratulations! The Power BI service shows the dynamic row-level security defin
 
 This task assumes you're familiar with [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
 
-The session gets initialized as soon as the user, Rita, accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>rita@contoso.com</EffectiveUserName>**
+The session gets initialized as soon as the user, Rita, accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as `<EffectiveUserName>rita@contoso.com</EffectiveUserName>`
 ```
        <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>rita@contoso.com</EffectiveUserName></PropertyList>
 ```

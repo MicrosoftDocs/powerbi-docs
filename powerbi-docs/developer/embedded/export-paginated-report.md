@@ -1,51 +1,69 @@
 ---
 title: Export Power BI embedded analytics paginated reports API
 description: Learn how to export an embedded Power BI paginated report.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/18/2021
+ms.date: 08/23/2023
 ---
 
 # Export paginated report to file
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
+
 * **.pptx** (PowerPoint)
-* **.pdf**
+* **.pdf** (and [Accessible PDF, or PDF/UA](../../report-server/rendering-extension-support.md))
 * **.xlsx** (Excel)
 * **.docx** (Word)
 * **.csv**
 * **.xml**
 * **.mhtml**
-* **Image**
-    * When exporting to an image, set the image format via the `OutputFormat` format setting
-    * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
+* **Image**  
+  When exporting to an image, set the image format via the `OutputFormat` format setting. The supported `OutputFormat` values are:
+
+  * *.tiff* (default)
+  * *.bmp*
+  * *.emf*
+  * *.gif*
+  * *.jpeg*
+  * *.png*
 
 ## Usage examples
 
-You can use the export feature in a variety of ways. Here are a couple of examples:
+You can use the export feature in various ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format specific settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes, and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
 
+### License requirements
+
+* The report you're exporting must reside in a workspace backed by a Premium, Embedded, or Fabric capacity.
+* The `exportToFile` API, has [limited support](#concurrent-requests) in [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+
+### Rendering events
+
+To make sure the export doesn't begin before the visual finishes rendering, use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
+
+### Polling
+
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL is available for 24 hours.
 
 ## Supported features
 
 ### Format settings
 
-Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
+Specify various format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
-Here are two examples, one for exporting the first four pages of a report using the report page size to a .pptx file, and another for exporting the third page of a report to a .jpeg file.
+Here are two examples. The first is for exporting the first four pages of a report using the report page size to a .pptx file. The second example is for exporting the third page of a report to a .jpeg file.
 
-**Exporting the first four pages to a .pptx**
+#### Exporting the first four pages to a .pptx
 
 ```json
 {
@@ -60,7 +78,7 @@ Here are two examples, one for exporting the first four pages of a report using 
 }
 ```
 
-**Exporting the third page to a .jpeg**
+#### Exporting the third page to a .jpeg
 
 ```json
 {
@@ -77,9 +95,9 @@ Here are two examples, one for exporting the first four pages of a report using 
 
 ### Report parameters
 
-You can use the `exportToFile` API to programmatically export a report with a set of report parameters. This is done using [report parameter](../../paginated-reports/paginated-reports-parameters.md) capabilities.
+You can use the `exportToFile` API to programmatically export a report with a set of report parameters. This is done using [report parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md) capabilities.
 
-Here is an example for setting report parameter values.
+Here's an example for setting report parameter values.
 
 ```json
 {
@@ -101,11 +119,11 @@ You can authenticate using a user (or master user) or a [service principal](embe
 
 ### Row Level Security (RLS)
 
-When using a Power BI dataset that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
+When using a Power BI semantic model that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
 
-To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
+To export using RLS, you must have read permission for the Power BI semantic model the report is using as a data source.
 
-Here is an example for supplying an effective user name for RLS.
+Here's an example of supplying an effective user name for RLS.
 
 ```json
 {
@@ -120,16 +138,16 @@ Here is an example for supplying an effective user name for RLS.
 
 ### Single Sign-on SQL and Dataverse (SSO)
 
-In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the requrest header is not used to access the data, the token must be passed in with the effective identity in the post body.
+In Power BI, you have the option to set OAuth with SSO. When you do, the credentials for the user viewing the report are used to retrieve data. The access token in the request header isn't used to access the data. The token must be passed in with the effective identity in the post body.
 
-What can make access tokens confusing is getting the correct access token for the resource that you want to access.
+Getting the correct access token for the resource that you want to access can sometimes be tricky.
 
-- For Azure SQL, the resource is `https://database.windows.net`.
-- For Dataverse, the resource is the `https://` address for your environment. For example `https://contoso.crm.dynamics.com`.
+* For Azure SQL, the resource is `https://database.windows.net`.
+* For Dataverse, the resource is the `https://` address for your environment. For example, `https://contoso.crm.dynamics.com`.
 
-Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
+Access the token API using the [AuthenticationContext.AcquireTokenAsync](/azure/active-directory/develop/msal-net-migration-confidential-client) method.
 
-Here is an example for supplying an effective user name with an access token.
+Here's an example for supplying an effective identity (user name) with an access token.
 
 ```json
 {
@@ -153,8 +171,11 @@ Here is an example for supplying an effective user name with an access token.
 }
 ```
 
-## PPU concurrent requests
-The `exportToFile` API allows one request in a five minute window when using [Premium Per User (PPU)](../../admin/service-premium-per-user-faq.yml). Multiple (greater than one) requests within a five minute window will result in a *Too Many Requests* (429) error.
+## Concurrent requests
+
+The `exportToFile` supports a limited number of concurrent requests. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests) is 500. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
+
+With [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within the five-minute window result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -289,6 +310,7 @@ public class ExportedFile
 ### End-to-end example
 
 This is an end-to-end example for exporting a report. This example includes the following stages:
+
 1. [Sending the export request](#step-1---sending-an-export-request).
 2. [Polling](#step-2---polling).
 3. [Getting the file](#step-3---getting-the-file).
@@ -321,19 +343,29 @@ private async Task<ExportedFile> ExportPaginatedReport(
 }
 ```
 
-## Limitations
+## Considerations and limitations
 
-Exporting a paginated report that has a Power BI dataset as its data source, is not supported for service principals.
+* Exporting a paginated report that has a Power BI semantic model as its data source, isn't supported in the following cases:
 
-## Next steps
+  * The caller is a [service principal profile](./embed-multi-tenancy.md).
+  * One of the semantic model's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI semantic model has DirectQuery to Azure Analysis Services or to another Power BI semantic model, and an effective identity was provided.
+
+* Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
+
+  * The caller is a [service principal profile](./embed-multi-tenancy.md).
+  * The caller is a master user and an effective identity was provided.
+
+* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Microsoft Entra ID.
+
+* Export of a report is limited to 60 minutes, which matches the life of the user access token. If you get a timeout error past the 60-minute mark when exporting large amounts of data, consider reducing the amount of data using appropriate filters.
+
+* The file share URL hyperlink (file share /UNC path) doesn't works when exporting a published paginated report on Power BI service online.  
+
+## Related content
 
 Review how to embed content for your customers and your organization:
 
-> [!div class="nextstepaction"]
->[Export report to file](export-to.md)
-
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+* [Export report to file](export-to.md)
+* [Embed for your customers](embed-sample-for-customers.md)
+* [Embed for your organization](embed-sample-for-your-organization.md)

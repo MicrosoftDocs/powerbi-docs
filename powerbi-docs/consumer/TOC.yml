@@ -1,13 +1,13 @@
-- name: "The Power BI service for consumers"
+- name: "The Power BI service for business users"
   href: index.yml
   expanded: true
   items:
   - name: Overview
     expanded: true
     items: 
-    - name: "What is a Power BI consumer?"
+    - name: "What is a Power BI business user?"
       href: end-user-consumer.md
-    - name: "Basic concepts and terminology for Power BI consumers"
+    - name: "Basic concepts and terminology for Power BI business users"
       href: end-user-basic-concepts.md
     - name: "Take a tour of the Power BI service"
       href: end-user-reading-view.md     
@@ -18,7 +18,7 @@
       href: end-user-experience.md
     - name: "Find content using your Home landing page"
       href: end-user-home.md
-    - name: "List of features available to consumers"
+    - name: "List of features available to business users"
       href: end-user-features.md
     - name: "Sign in for the first time"
       href: end-user-sign-in.md
@@ -26,120 +26,124 @@
       href: end-user-license.md
     - name: "Learn how to ask questions using natural language"
       href: end-user-q-and-a.md
-  - name: How to
+  - name: Dashboards
+    items:
+    - name: "Dashboards"
+      href: end-user-dashboards.md
+    - name: "View a dashboard"
+      href: end-user-dashboard-open.md
+    - name: "Dashboard tiles"
+      href: end-user-tiles.md
+    - name: "Add a comment or start a conversation"
+      href: end-user-comment.md
+    - name: "View automatic insights for dashboard tiles"
+      href: end-user-insights.md
+    - name: "Create a dashboard alert"
+      href: end-user-alerts.md 
+  - name: Power BI reports
+    items:
+    - name: "Reports"
+      href: end-user-reports.md
+    - name: "View a report"
+      href: end-user-report-open.md
+    - name: "Change the way a report displays"
+      href: end-user-report-view.md
+    - name: "Change the sort order in a visual"
+      href: end-user-change-sort.md        
+    - name: "Use filters in a report"
+      href: end-user-report-filter.md
+    - name: "Learn how report visuals cross-filter each other"
+      href: end-user-interactions.md
+    - name: "Interact with report slicers"
+      href: end-user-slicer.md
+    - name: "How to identify and use buttons"
+      href: end-user-buttons.md     
+    - name: "Add a bookmark to a report"
+      href: end-user-bookmarks.md
+    - name: "Add a spotlight to a report"
+      href: end-user-spotlight.md
+    - name: "Set an alert on a report"
+      href: business-user-set-alerts.md
+    - name: "Personalize a visual"
+      href: end-user-personalize-visuals.md
+    - name: "Explore your data in the Power BI service"
+      href: explore-data-service.md
+    - name: "Analyze fluctuations in visuals"
+      href: end-user-analyze-visuals.md  
+  - name: Visualizations
     items: 
-    - name: Dashboards
-      items:
-      - name: "Dashboards"
-        href: end-user-dashboards.md
-      - name: "View a dashboard"
-        href: end-user-dashboard-open.md
-      - name: "Featured dashboards"
-        href: end-user-featured.md
-      - name: "Dashboard tiles"
-        href: end-user-tiles.md
-      - name: "Add a comment or start a conversation"
-        href: end-user-comment.md
-      - name: "View automatic insights for dashboard tiles"
-        href: end-user-insights.md
-      - name: "Create a dashboard alert"
-        href: end-user-alerts.md 
-    - name: Reports
-      items:
-      - name: "Reports"
-        href: end-user-reports.md
-      - name: "View a report"
-        href: end-user-report-open.md
-      - name: "Change the way a report displays"
-        href: end-user-report-view.md
-      - name: "Change the sort order in a visual"
-        href: end-user-change-sort.md        
-      - name: "Use filters in a report"
-        href: end-user-report-filter.md
-      - name: "Learn how report visuals cross-filter each other"
-        href: end-user-interactions.md
-      - name: "Interact with report slicers"
-        href: end-user-slicer.md
-      - name: "Export a report to PDF"
-        href: end-user-pdf.md
-      - name: "Export a report to PowerPoint"
-        href: end-user-powerpoint.md
-      - name: "How to identify and use buttons"
-        href: end-user-buttons.md     
-      - name: "Add a bookmark to a report"
-        href: end-user-bookmarks.md
-      - name: "Add a spotlight to a report"
-        href: end-user-spotlight.md
-      - name: "Personalize a visual"
-        href: end-user-personalize-visuals.md
-      - name: "Analyze fluctuations in visuals"
-        href: end-user-analyze-visuals.md  
-      - name: Paginated reports in Power BI
-        items: 
-        - name: "Paginated reports"
-          href: end-user-paginated-report.md
-        - name: "View a paginated report"
-          href: paginated-reports-view-power-bi-service.md
-        - name: "Interact with parameters"
-          href: paginated-reports-view-parameters.md
-        - name: "Subscribe yourself or others"
-          href: paginated-reports-subscriptions.md
-    - name: Visualizations
-      items: 
-      - name: "What can I do with visualizations?"
-        href: end-user-visualizations.md
-      - name: "Types of visualizations"
-        href: end-user-visual-type.md
-      - name: "Show the data that was used to create the visualization"
-        href: end-user-show-data.md
-      - name: "Copy a visual and paste it elsewhere"
-        href: end-user-copy-paste.md
-      - name: "Drill down in a visualization"
-        href: end-user-drill.md
-    - name: Common tasks
-      items: 
-      - name: "Export data to Excel"
-        href: end-user-export.md
-      - name: "Look up the content owner and last refreshed date"
-        href: end-user-fresh.md
-      - name: "Different ways to zoom into content using Focus and Full screen modes"
-        href: end-user-focus.md
-      - name: "Favorite dashboards, reports, and apps in Power BI"
-        href: end-user-favorite.md
-      - name: "Print a dashboard, print a dashboard tile, print a report page"
-        href: end-user-print.md
-      - name: "View content shared with me"
-        href: end-user-shared-with-me.md
-      - name: "View related content"
-        href: end-user-related.md
-      - name: "View recent content"
-        href: end-user-recent.md
-      - name: "Subscribe to a report or dashboard"
-        href: end-user-subscribe.md
-      - name: "Search and sort content in Power BI"
-        href: end-user-search-sort.md
-      - name: "Turn on preview features"
-        href: end-user-preview-features.md
-      - name: "Get notifications in the Power BI service"
-        href: end-user-notification-center.md
-    - name: Get data
-      items: 
-      - name: "Workspaces in Power BI"
-        href: end-user-workspaces.md
-      - name: "Apps in Power BI"
-        href: end-user-apps.md
-      - name: "Install and use apps"
-        href: end-user-app-view.md
-      - name: "Connect to services"
-        href: ../connect-data/service-connect-to-services.md
-      - name: "Get a sample app from the app marketplace"
-        href: end-user-app-marketing.md
-    - name: Ask questions of your data
-      items:
-      - name: "Q&A in Power BI"
-        href: end-user-q-and-a.md
-      - name: "Tips and tricks for asking questions with Q&A in Power BI"
-        href: end-user-q-and-a-tips.md
+    - name: "Types of visualizations"
+      href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+    - name: "Drill down in a visualization"
+      href: end-user-drill.md
+    - name: "How to use an ArcGIS map in Power BI"
+      href: end-user-arcgis.md
+  - name: Metrics
+    items: 
+    - name: "Get started with metrics"
+      href: ../create-reports/service-goals-introduction.md?context=/power-bi/consumer/context/context
+    - name: "Stay on top of your metrics"
+      href: ../create-reports/service-goals-check-in.md?context=/power-bi/consumer/context/context
+    - name: "View hierarchies in metrics"
+      href: ../create-reports/service-metrics-view-hierarchies.md?context=/power-bi/consumer/context/context
+  - name: Paginated reports in Power BI
+    items: 
+    - name: "Paginated reports"
+      href: end-user-paginated-report.md
+    - name: "View a paginated report"
+      href: paginated-reports-view-power-bi-service.md
+    - name: "Interact with parameters"
+      href: paginated-reports-view-parameters.md
+  - name: Power BI in Teams
+    items: 
+    - name: "Use data for productive meetings"
+      href: business-user-teams-meetings.md
+    - name: "Use metrics to drive results"
+      href: business-user-teams-goals.md
+    - name: "Lead data-driven discussions"
+      href: business-user-teams-share-data.md
+    - name: "Create reports from your data"
+      href: business-user-teams-create-reports.md
+    - name: "Analyze collaboration data"
+      href: business-user-teams-collaboration-data.md
+  - name: Common tasks
+    items: 
+    - name: "Look up the content owner and last refreshed date"
+      href: end-user-fresh.md
+    - name: "Different ways to zoom into content using Focus and Full screen modes"
+      href: end-user-focus.md
+    - name: "Favorite dashboards, reports, and apps in Power BI"
+      href: end-user-favorite.md
+    - name: "Print a dashboard, print a dashboard tile, print a report page"
+      href: end-user-print.md
+    - name: "View related content"
+      href: end-user-related.md
+    - name: "View recent content"
+      href: end-user-recent.md
+    - name: "Search and sort content in Power BI"
+      href: end-user-search-sort.md
+  - name: Get data
+    items: 
+    - name: "Workspaces in Power BI"
+      href: end-user-workspaces.md
+    - name: "Apps in Power BI"
+      href: end-user-apps.md
+    - name: "Install and use apps"
+      href: end-user-app-view.md
+    - name: "Data hub"
+      href: end-user-data-hub.md
+    - name: "Connect to services"
+      href: ../connect-data/service-connect-to-services.md
+    - name: "Get a sample app from the app marketplace"
+      href: end-user-app-marketing.md
+  - name: Ask questions of your data
+    items:
+    - name: "Q&A in Power BI"
+      href: end-user-q-and-a.md
+    - name: "Q&A tutorial"
+      href: ../natural-language/end-user-q-and-a-tutorial.md
+    - name: "Tips and tricks for asking questions with Q&A in Power BI"
+      href: end-user-q-and-a-tips.md
   - name: Resources
     items:
     - name: "Glossary and terminology"

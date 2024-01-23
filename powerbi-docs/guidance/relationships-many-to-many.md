@@ -1,13 +1,13 @@
 ---
 title: Many-to-many relationship guidance
 description: Guidance for developing many-to-many model relationships.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 03/17/2022
 ---
 
 # Many-to-many relationship guidance
@@ -21,6 +21,9 @@ There are, in fact, three many-to-many scenarios. They can occur when you're req
 - [Relate two dimension-type tables](#relate-many-to-many-dimensions)
 - [Relate two fact-type tables](#relate-many-to-many-facts)
 - [Relate higher grain fact-type tables](#relate-higher-grain-facts), when the fact-type table stores rows at a higher grain than the dimension-type table rows
+
+> [!NOTE]
+> Power BI now natively supports many-to-many relationships. For more information, see [Apply many-many relationships in Power BI Desktop](../transform-model/desktop-many-to-many-relationships.md).
 
 ## Relate many-to-many dimensions
 
@@ -286,7 +289,7 @@ When you need to relate a dimension-type table to a fact-type table, and the fac
   - Control summarization with measure logic—return BLANK when lower-level dimension-type columns are used to filter or group
   - Hide summarizable fact-type table columns—this way, only measures can be used to summarize the fact-type table
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

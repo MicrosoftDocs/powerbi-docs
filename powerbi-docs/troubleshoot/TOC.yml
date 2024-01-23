@@ -1,0 +1,133 @@
+- name: Power BI troubleshooting and known issues
+  href: index.yml
+  expanded: true
+  items:
+  - name: Known issues
+    expanded: false
+    items:
+    - name: Active known issues for Power BI - chart
+      href: known-issues/power-bi-known-issues.md
+    - name: Active known issues for Fabric + Power BI - interactive report
+      href: https://support.fabric.microsoft.com/known-issues
+    - name: Contributor can't update organizational app
+      href: known-issues/known-issue-571-contributor-can-not-update-organizational-app.md
+    - name: Version 17 of the Fabric Capacity Metrics app doesn't work
+      href: known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md
+    - name: Autoscale not triggered by carry forward accumulated usage
+      href: known-issues/known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md
+    - name: Closing a Dataflow Gen1 takes you to the wrong workspace
+      href: known-issues/known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md
+    - name: New card visual formatting appears or disappears in Service
+      href: known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md
+    - name: Sign in fails for securely embedded reports using Chrome or Microsoft Edge browser
+      href: known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md
+    - name: Dataflow REST API returns more data sources and gateways than expected
+      href: known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md
+    - name: Desktop sign-in prompt shows unsupported personal Microsoft accounts
+      href: known-issues/known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md
+    - name: Power BI Embedded setup tool isn't responsive
+      href: known-issues/known-issue-471-embedded-setup-tool-isnt-responsive.md
+    - name: A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow
+      href: known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md   
+    - name: Search strings with Japanese symbols don't return content in search results
+      href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
+  - name: Troubleshoot
+    expanded: true
+    items:
+    - name: Embedded, REST API, PowerShell
+      expanded: false
+      items:
+      - name: Troubleshoot your embedded application 
+        href: ../developer/embedded/embedded-troubleshoot.md      
+      - name: Troubleshoot developing custom visuals 
+        href: ../developer/visuals/power-bi-custom-visuals.md
+    - name: Consume and view
+      expanded: false
+      items: 
+      - name: Troubleshoot connecting Excel to Power BI data
+        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
+      - name: Troubleshoot report performance in Power BI
+        href: ../guidance/report-performance-troubleshoot.md
+      - name: Troubleshoot the Power BI add-in for PowerPoint
+        href: ../collaborate-share/service-power-bi-powerpoint-add-in-troubleshoot.md 
+    - name: Capacity management
+      expanded: false
+      items:
+      - name: Troubleshoot XMLA endpoint connectivity
+        href: /power-bi/enterprise/troubleshoot-xmla-endpoint            
+    - name: Gateways
+      expanded: false
+      items:
+      - name: Troubleshoot Power BI gateway personal models
+        href: ../connect-data/service-admin-troubleshooting-power-bi-personal-gateway.md
+      - name: Troubleshoot Power BI gateways
+        href: ../connect-data/service-gateway-onprem-tshoot.md
+    - name: Refresh data
+      expanded: false
+      items:
+      - name: Troubleshoot refresh scenarios
+        href: ../connect-data/refresh-troubleshooting-refresh-scenarios.md
+      - name: Troubleshoot unsupported data sources for refresh
+        href: ../connect-data/service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+      - name: Troubleshoot scheduled refresh in Power BI Report Server
+        href: ../report-server/scheduled-refresh-troubleshoot.md
+      - name: Troubleshoot scheduled refresh for Azure SQL databases in Power BI
+        href: ../connect-data/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md 
+      - name: Troubleshoot incremental refresh and real-time data
+        href: ../connect-data/incremental-refresh-troubleshoot.md
+    - name: Create and author data
+      expanded: false
+      items:
+      - name: Troubleshoot tile errors
+        href: ../connect-data/refresh-troubleshooting-tile-errors.md
+      - name: Error, we couldn't find any data in your Excel workbook
+        href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
+      - name: Find where data is stored
+        href: ../admin/service-admin-where-is-my-tenant-located.md  
+      - name: Troubleshoot importing Access and Excel .xls file in Power BI Desktop
+        href: ../connect-data/desktop-access-database-errors.md
+      - name: Troubleshoot nested values returned as text in the Power BI service
+        href: ../connect-data/service-troubleshooting-nested-values.md
+      - name: Troubleshoot developing DirectQuery models in Power BI Desktop
+        href: ../connect-data/desktop-directquery-troubleshoot.md
+      - name: Troubleshoot opening Power BI Desktop
+        href: ../connect-data/desktop-error-launching-desktop.md
+      - name: Troubleshoot relationships in Power BI models
+        href: ../guidance/relationships-troubleshoot.md
+      - name: Troubleshoot Power BI REST APIs
+        href: ../developer/embedded/troubleshoot-rest-api.md  
+      - name: Troubleshoot deployment pipelines
+        href: /fabric/cicd/troubleshoot-cicd     
+    - name: Account and license
+      expanded: false
+      items:
+      - name: Troubleshoot sign-in issues
+        href: ../support/power-bi-cannot-sign-in.md   
+      - name: Troubleshoot sign-in for Power BI Desktop
+        href: ../connect-data/desktop-troubleshooting-sign-in.md
+      - name: Troubleshoot sign in with OData  
+        href: ../connect-data/desktop-troubleshoot-odata.md
+      - name: Find the default region for your organization
+        href: ../admin/service-admin-where-is-my-tenant-located.md
+    - name: Share and collaborate
+      expanded: false
+      items:
+      - name: Troubleshoot sharing dashboards and reports
+        href: ../collaborate-share/service-troubleshoot-sharing.md
+      - name: Troubleshoot subscriptions
+        href: ../collaborate-share/service-troubleshoot-subscribe.yml 
+      - name: Troubleshoot sensitivity labels
+        href: ../enterprise/service-security-sensitivity-label-troubleshooting.md
+    - name: Visuals
+      expanded: false
+      items:
+      - name: Debug Power BI custom visuals
+        href: ../developer/visuals/visuals-how-to-debug.md
+      - name: Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
+        href: ../report-server/custom-visuals-troubleshoot.md
+    - name: Paginated reports
+      expanded: false
+      items:
+      - name: Troubleshoot subreports in Power BI paginated reports
+        href: ../paginated-reports/subreports-troubleshoot.md  
+  

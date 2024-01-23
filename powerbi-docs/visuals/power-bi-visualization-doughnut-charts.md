@@ -1,61 +1,94 @@
 ---
 title: Doughnut charts in Power BI
-description: 'Doughnut charts in Power BI'
+description: Learn how to create and share doughnut charts in Power BI to show relationships of parts to a whole.
 author: mihart
 ms.author: mihart
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 12/25/2023
+ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
 # Create and use doughnut charts in Power BI
 
-[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
-
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 A doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
-## Prerequisite
+Doughnut charts work best when you use them to compare a particular section to the whole, rather than comparing individual sections with each other.
 
-This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+## Prerequisites
 
-1. From the upper left section of the menubar, select **File** > **Open**
-   
-2. Find your copy of the **Retail Analysis sample PBIX file**
+Sharing your report with a Power BI colleague requires that you both have licenses for the paid version of Power BI or that the report is saved in Premium capacity.
 
-1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+## Get the sample
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+To follow along, download the Retail Analysis sample .pbix file in Power BI Desktop or the Power BI service.
 
+# [Power BI Desktop](#tab/powerbi-desktop)
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
+This tutorial uses the [Retail Analysis Sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
+1. At the top left, select **File** > **Open report**.
+
+1. Find your copy of the **Retail Analysis Sample PBIX** file, and select **Open**.
+  
+   The **Retail Analysis Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+
+# [Power BI service](#tab/powerbi-service)
+
+This tutorial uses the built-in Retail Analysis Sample in the Power BI service.
+
+1. Sign in to the Power BI service (`app.powerbi.com`).
+
+1. Select **Learn** in the left navigation.
+
+1. On the **Learning center** page, under **Sample reports**, locate the **Retail Analysis Sample**. Select the sample to download.
+
+   The **Retail Analysis Sample** opens in report view.
+
+   :::image type="content" source="media/desktop-ribbon-charts/power-bi-retail-analysis-sample.png" alt-text="Screenshot that shows the Retail Analysis Sample open in report view in the Power BI service." lightbox="media/desktop-ribbon-charts/power-bi-retail-analysis-sample-expanded.png" border="false":::
+
+1. At the top, select **Edit** to open the Report editor.
+
+   :::image type="content" source="media/desktop-ribbon-charts/power-bi-edit-report.png" alt-text="Screenshot that shows how to select Edit to modify the report in the Power BI service." border="false":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
+
+---
 ## Create a doughnut chart
 
-1. Start on a blank report page and from the Fields pane, select **Sales** \> **Last Year Sales**.  
-   
-3. From the Visualizations pane, select the icon for doughnut chart ![doughnut chart icon](media/power-bi-visualization-doughnut-charts/power-bi-icon.png) to convert your bar chart to a doughnut chart. If **Last Year Sales** is not in the **Values** area, drag it there.
-     
-   ![Visualization pane with doughnut selected](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-chart.png)
+Follow these steps to create a doughnut chart.
 
-4. Select **Item** \> **Category** to add it to the **Legend** area. 
-     
-    ![doughnut next to Fields pane](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png)
+1. Start on a blank report page and from the **Data** pane, select **Sales**, then select the **Last Year Sales** checkbox.  
 
-5. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
+1. On the **Visualizations** pane, select the icon for doughnut chart :::image type="icon" source="media/power-bi-visualization-doughnut-charts/power-bi-icon.png" ::: to convert your bar chart to a doughnut chart. If **Last Year Sales** isn't in the **Values** section of the **Visualizations** pane, drag it there.
+
+   :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-doughnut-chart.png" alt-text="Screenshot that shows the Visualization pane with a doughnut chart selected.":::
+
+1. Select **Item** \> **Category** to add it to the **Legend** area of the **Visualizations** pane.
+
+   :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png" alt-text="Screenshot that shows a doughnut chart next to the Data pane.":::
+
+1. To see details within each section of a doughnut chart, add a category to the **Details** field. 
+
+     :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-details.png" alt-text="Screenshot that shows a doughnut chart with Details next to the Data pane.":::
+
+1. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md).
 
 ## Considerations and troubleshooting
-* The sum of the doughnut chart values must add up to 100%.
-* Too many categories make it difficult to read and interpret.
-* Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
 
-## Next steps
-[Funnel charts in Power BI](power-bi-visualization-funnel-charts.md)
+Here are a few things to consider as you work with doughnut charts.
 
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- The sum of the doughnut chart values must add up to 100%.
+- Too many categories create small slices in the chart. Small slices can be difficult to read and interpret.
 
+## Related content
 
+- [Funnel charts in Power BI](power-bi-visualization-funnel-charts.md)
+
+- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

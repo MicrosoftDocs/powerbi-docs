@@ -1,13 +1,13 @@
 ---
 title: Create an R-powered Power BI visual 
 description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
-ms.date: 01/23/2024
+ms.topic: tutorial
+ms.date: 01/11/2024
 ---
 
 # Tutorial: Create an R-powered Power BI visual
@@ -28,7 +28,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* An R engine. You can download one free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
+* An R engine. You can download one free from many locations, including the [Microsoft R Open download page](https://www.microsoft.com/download/details.aspx?id=51205) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
@@ -59,7 +59,7 @@ In this tutorial, you learn how to:
 
       This command creates a new folder for the *rVisualSample* visual. The structure is based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R-script that is run to generate the image when the visual is rendered. You can create your R-script in **Power BI Desktop**.
 
-1. From the newly created `rVisualSample` directory run
+1. From the newly created `rVisualSample` directory run the following command:
 
    ```cmd
    pbiviz start
@@ -83,7 +83,7 @@ In this tutorial, you learn how to:
       plot(dataset)
       ```
 
-      This command creates a scatter chart using the values in the dataset as input.
+      This command creates a scatter chart using the values in the semantic model as input.
 
 1. Select the **Run script** icon to see the result.
 
@@ -93,11 +93,11 @@ In this tutorial, you learn how to:
 
 The R-script can be modified to create other types of visuals. Let's create a line chart next.
 
-1. Paste the following R code into the **R script editor**:
+1. Paste the following R code into the **R script editor**.
 
    ```r
-   x <- dataset[,1] # get the first column from dataset
-   y <- dataset[,2] # get the second column from dataset
+   x <- dataset[,1] # get the first column from semantic model
+   y <- dataset[,2] # get the second column from semantic model
 
    columnNames = colnames(dataset) # get column names
 
@@ -193,7 +193,7 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
 
 Now that we have a basic `corrplot` visual, let's add properties to the property pane that allow the user to change the look and feel to the visual.
 
-We'll use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
+We use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
 
 1. Define an `object` called *settings* in the *capabilities.json* file and give it the following properties.
 

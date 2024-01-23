@@ -1,14 +1,14 @@
 ---
-title: Conditional formatting in Power BI embedded analytics
-description: Learn how to apply conditional formatting to your Power BI visual project.
-author: KesemSharabi
-ms.author: kesharab
+title: Conditional formatting of Power BI custom visuals
+description: Learn how to apply conditional formatting to your Power BI custom visual.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2021
+ms.date: 10/12/2022
 ---
 
 # Add conditional formatting
@@ -18,6 +18,7 @@ ms.date: 03/15/2021
 This article describes how to add the conditional formatting functionality to your Power BI visual.
 
 Conditional formatting can only be applied to the following property types:
+
 * Color
 * Text
 * Icon
@@ -43,41 +44,75 @@ In this section you'll learn how to add a conditional color formatting entry, to
     import VisualEnumerationInstanceKinds = powerbiVisualsApi.VisualEnumerationInstanceKinds;
     ```
 
-3. List all the properties that you'd like to support conditional formatting, under the `propertyInstanceKind` array. Define these properties in the `enumerateObjectInstances` method.
+3. Set formatting property instance kind
 
-    ```typescript
-    public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-            …
-            case 'colorSelector':
-                …
-                    objectEnumeration.push({
-                        objectName: objectName,
-                        displayName: barDataPoint.category,
-                        properties: {
-                            fill: {
-                                solid: {
-                                    color: barDataPoint.color
-                                }
-                            }
-                        },
+#### [getFormattingModel API method](#tab/getFormattingModel)
+
+To format properties that support conditional formatting, set the required instance kind in their `descriptor`.
+
+```typescript
+ public getFormattingModel(): powerbi.visuals.FormattingModel {
+    // ...
+    formattingGroup.slices.push(
+        {
+            uid: `colorSelector${barDataPoint_indx}_uid`,
+            displayName: barDataPoint.category,
+            control: {
+                type: powerbi.visuals.FormattingComponent.ColorPicker,
+                properties: {
+                    descriptor: {
+                        objectName: "colorSelector",
+                        propertyName: "fill",                
                         selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
                         altConstantValueSelector: barDataPoint.selectionId.getSelector(),
-
-                        // List your conditional formatting properties
-                        propertyInstanceKind: {
-                            fill: VisualEnumerationInstanceKinds.ConstantOrRule
-                        }
-                    });
+                        instanceKind: powerbi.VisualEnumerationInstanceKinds.ConstantOrRule // <=== Support conditional formatting
+                    },
+                    value: { value: barDataPoint.color }
                 }
+            }
+        }
+    );
+    // ...
+ }
+```
+
+#### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
+
+List all the properties that you'd like to support conditional formatting, under `propertyInstanceKind` array. Define these properties in the `enumerateObjectInstances` method.
+
+```typescript
+public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
+        …
+        case 'colorSelector':
             …
-    }
+                objectEnumeration.push({
+                    objectName: objectName,
+                    displayName: barDataPoint.category,
+                    properties: {
+                        fill: {
+                            solid: {
+                                color: barDataPoint.color
+                            }
+                        }
+                    },
+                    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
+                    altConstantValueSelector: barDataPoint.selectionId.getSelector(),
 
-    ```
+                    // List your conditional formatting properties
+                    propertyInstanceKind: {
+                        fill: VisualEnumerationInstanceKinds.ConstantOrRule
+                    }
+                });
+            }
+        …
+}
+```
 
-    `VisualEnumerationInstanceKinds.ConstantOrRule` will create the conditional formatting UI entry alongside the constant formatting UI element.
+---
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the conditional formatting button, as it appears in Power BI, next to the regular color button.](media/conditional-formatting/conditional-formatting-ui.png)
+`VisualEnumerationInstanceKinds.ConstantOrRule` will create the conditional formatting UI entry alongside the constant formatting UI element.
+
+:::image type="content" source="media/conditional-formatting/conditional-formatting-ui.png" alt-text="Screenshot of the conditional formatting button, as it appears in Power BI, next to the regular color button.":::
 
 ### Define how conditional formatting behaves
 
@@ -85,41 +120,87 @@ Define how formatting will be applied to your data points.
 
 Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether conditional formatting will be applied to instances, totals, or both. For more information, see [DataViewWildcard](utils-dataview.md#).
 
-In `enumerateObjectInstances`, make the following changes to the objects you want to apply conditional formatting to:
+Make the following changes to the properties you want to apply conditional formatting to:
 
- * Replace the `selector` value with the `dataViewWildcard.createDataViewWildcardSelector(dataViewWildcardMatchingOption)` call. `DataViewWildcardMatchingOption` defines whether conditional formatting is applied to instances, totals, or both.
+* Replace the `selector` value with the `dataViewWildcard.createDataViewWildcardSelector(dataViewWildcardMatchingOption)` call. `DataViewWildcardMatchingOption` defines whether conditional formatting is applied to instances, totals, or both.
 
 * Add the `altConstantValueSelector` property with the value previously defined for the `selector` property.
 
+#### [getFormattingModel API method](#tab/getFormattingModel)
+
+For formatting properties that support conditional formatting, set the required instance kind in their `descriptor`.
+
 ```typescript
-case 'colorSelector':
-         …
-            objectEnumeration.push({
-                objectName: objectName,
-                displayName: barDataPoint.category,
+ 
+ public getFormattingModel(): powerbi.visuals.FormattingModel {
+    // ...
+
+    formattingGroup.slices.push(
+        {
+            uid: `colorSelector${barDataPoint_indx}_uid`,
+            displayName: barDataPoint.category,
+            control: {
+                type: powerbi.visuals.FormattingComponent.ColorPicker,
                 properties: {
-                    fill: {
-                        solid: {
-                            color: barDataPoint.color
-                        }
-                    }
-                },
+                    descriptor: {
+                        objectName: "colorSelector",
+                        propertyName: "fill",                
+                        // Define whether the conditional formatting will apply to instances, totals, or both
+                        selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
 
-                // Define whether the conditional formatting will apply to instances, totals, or both
-                selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
+                        // Add this property with the value previously defined for the selector property
+                        altConstantValueSelector: barDataPoint.selectionId.getSelector(),
 
-                // Add this property with the value previously defined for the selector property
-                altConstantValueSelector: barDataPoint.selectionId.getSelector(),
-
-                propertyInstanceKind: { 
-                    fill: VisualEnumerationInstanceKinds.ConstantOrRule
+                        instanceKind: powerbi.VisualEnumerationInstanceKinds.ConstantOrRule
+                    },
+                    value: { value: barDataPoint.color }
                 }
-            });
+            }
         }
+    );
 
+    // ...
+ }
+    
 ```
 
-## Limitations and considerations
+#### [enumerateObjectInstances API method - deprecated](#tab/enumerateObjectInstances)
+
+List all the properties that want to support conditional formatting under the `propertyInstanceKind` array. Define these properties in the `enumerateObjectInstances` method.
+
+```typescript
+public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
+        …
+        case 'colorSelector':
+            …
+                objectEnumeration.push({
+                    objectName: objectName,
+                    displayName: barDataPoint.category,
+                    properties: {
+                        fill: {
+                            solid: {
+                                color: barDataPoint.color
+                            }
+                        }
+                    },
+                    // Define whether the conditional formatting will apply to instances, totals, or both
+                    selector: dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals),
+
+                    // Add this property with the value previously defined for the selector property
+                    altConstantValueSelector: barDataPoint.selectionId.getSelector(),
+
+                    propertyInstanceKind: {
+                        fill: VisualEnumerationInstanceKinds.ConstantOrRule
+                    }
+                });
+            }
+        …
+}
+```
+
+---
+
+## Considerations and limitations
 
 Conditional formatting isn't supported for the following visuals:
 
@@ -129,7 +210,6 @@ Conditional formatting isn't supported for the following visuals:
 
 We recommend that you don’t use conditional formatting with series. Instead, you should allow customers to format each series individually, making it easy to visually distinguish between series. Most out-of-the-box visuals with series, share this approach.
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[DataViewUtils](utils-dataview.md)
+[DataViewUtils](utils-dataview.md)

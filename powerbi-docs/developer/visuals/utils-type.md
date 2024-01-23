@@ -1,14 +1,14 @@
 ---
 title: Introduction to use type utils in Power BI visual
 description: This article describes how to use SVG utils to extend the basic types for Power BI visuals.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
-ms.date: 06/18/2019
+ms.topic: conceptual
+ms.date: 01/04/2023
 ---
 
 # Type utils
@@ -17,16 +17,17 @@ TypeUtils is a set of functions and classes to extend the basic types for Power 
 
 ## Installation
 
-To install the package, you should run the following command in the directory with your current custom visual:
+To install the package, run the following command in the directory with your current custom visual:
 
-npm install powerbi-visuals-utils-typeutils --save
-This command installs the package and adds a package as a dependency to your package.json
+`npm install powerbi-visuals-utils-typeutils --save`
+
+This command installs the package and adds a package as a dependency to your `package.json` file.
 
 ## Double
 
-The `Double` provides abilities to manipulate precision of the numbers.
+The `Double` module provides abilities to manipulate precision of the numbers.
 
-The module provides the following functions:
+It provides the following functions:
 
 ### pow10
 
@@ -125,7 +126,7 @@ double.lessWithPrecision(0.995, 1, 0.001);
 
 ### lessOrEqualWithPrecision
 
-This function checks if the first value is less or equal than the second value.
+This function checks if the first value is less than or equal to the second value.
 
 ```typescript
 function lessOrEqualWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -144,7 +145,7 @@ double.lessOrEqualWithPrecision(1.005, 1, 0.01);
 
 ### greaterWithPrecision
 
-This function checks if the first value it greater than the second value.
+This function checks if the first value is greater than the second value.
 
 ```typescript
 function greaterWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -163,7 +164,7 @@ double.greaterWithPrecision(1, 0.995, 0.01);
 
 ### greaterOrEqualWithPrecision
 
-This function checks if the first value is greater or equal to the second value.
+This function checks if the first value is greater than or equal to the second value.
 
 ```typescript
 function greaterOrEqualWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -315,7 +316,7 @@ double.round(27.45);
 
 ### removeDecimalNoise
 
-This function removes the decimal noise.
+This function rounds the number to eliminate some decimal spaces.
 
 ```typescript
 function removeDecimalNoise(value: number): number;
@@ -334,7 +335,7 @@ double.removeDecimalNoise(21.493000000000002);
 
 ### isInteger
 
-This function checks if the number is integer.
+This function checks if the number is an integer.
 
 ```typescript
 function isInteger(value: number): boolean;
@@ -372,9 +373,9 @@ double.toIncrement(0.6383723, 0.05);
 
 ## Prototype
 
-The `Prototype` provides abilities to inherit objects.
+The `Prototype` module provides the ability to inherit objects.
 
-The module provides the following functions:
+It provides the following functions:
 
 ## inherit
 
@@ -428,9 +429,9 @@ prototype.inheritSingle(base);
 
 ## PixelConverter
 
-The `PixelConverter` provides an ability to convert pixels to points, and points to pixels.
+The `PixelConverter` module provides the ability to convert pixels to points, and points to pixels.
 
-The module provides the following functions:
+It provides the following functions:
 
 ## toString
 

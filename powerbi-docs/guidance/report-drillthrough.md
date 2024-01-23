@@ -1,11 +1,11 @@
 ---
 title: Use report page drillthrough
 description: Guidance for working with report page drillthrough.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 11/28/2019
 ---
@@ -35,7 +35,7 @@ When your report page displays summarized results, a drillthrough page can lead 
 
 The following example shows what happens when a report user drills through from a monthly sales summary. The drillthrough page contains a detailed list of orders for a specific month.
 
-![A matrix visual titled "Sales Summary" groups sales by year and month on the rows, and country on the columns. A drillthrough page is also displayed.](media/report-drillthrough/suggestion-drillthrough-add-depth.png)
+![A matrix visual titled "Sales Summary" groups sales by year and month on the rows, and country or region on the columns. A drillthrough page is also displayed.](media/report-drillthrough/suggestion-drillthrough-add-depth.png)
 
 ### Broader perspective
 
@@ -60,7 +60,7 @@ At report design time, we recommend the following practices:
 > [!TIP]
 > It's also possible to configure drillthrough to your Power BI paginated reports. You can do this be adding links to Power BI reports. Links can define [URL parameters](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

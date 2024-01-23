@@ -1,62 +1,64 @@
 ---
 title: Render events in Power BI visuals
 description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
-author: KesemSharabi
-ms.author: kesharab
-ms.reviewer: rkarlin
+author: mberdugo
+ms.author: monaberdugo
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/18/2019
+ms.date: 08/30/2022
 ---
 
-# Render events in Power BI visuals
+# "Rendering" events in Power BI visuals
 
-The new API consists of three methods (`started`, `finished`, or `failed`) that should be called during rendering.
+In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must include **rendering events**.
+These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
 
-When rendering starts, the Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started.
+>[!IMPORTANT]
+>Any visual that exports data (for example, to a PowerPoint or *.pdf* file) must contain rendering events to ensure that the export doesn't begin before the visual finished rendering.
 
-If rendering is completed successfully, the Power BI visual code immediately calls the `renderingFinished` method, notifying the listeners (primarily, *export to PDF* and *export to PowerPoint*) that the visual's image is ready for export.
+The **rendering events API** consists of three methods that should be called during rendering:
 
-If a problem occurs during the process, the Power BI visual is prevented from being rendered successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
+* `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started. **This method should always be the first line of the *update* method** since that is where the rendering process begins.
 
-## Usage
+* `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the **last line of code executed** when the visual updates. It's usually, but not always, the last line of the update method.
 
-```typescript
-export interface IVisualHost extends extensibility.IVisualHost {
-    eventService: IVisualEventService ;
-}
+* `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
 
-/**
- * An interface for reporting rendering events
- */
-export interface IVisualEventService {
-    /**
-     * Should be called just before the actual rendering starts, 
-     * usually at the start of the update method
-     *
-     * @param options - the visual update options received as an update parameter
-     */
-    renderingStarted(options: VisualUpdateOptions): void;
+> [!NOTE]
+> *Rendering events* are a requirement for visuals certification. Without them your visual won't be approved by the Partner Center for publication. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
-    /**
-     * Should be called immediately after rendering finishes successfully
-     * 
-     * @param options - the visual update options received as an update parameter
-     */
-    renderingFinished(options: VisualUpdateOptions): void;
+## How to use the rendering events API
 
-    /**
-     * Called when rendering fails, with an optional reason string
-     * 
-     * @param options - the visual update options received as an update parameter
-     * @param reason - the optional failure reason string
-     */
-    renderingFailed(options: VisualUpdateOptions, reason?: string): void;
-}
-```
+To call the rendering methods, you have to first import them from the *IVisualEventService*.
 
-### Sample: The visual displays no animations
+1. In your `visual.ts` file, include the line:
+
+    ```typescript
+    import IVisualEventService = powerbi.extensibility.IVisualEventService;
+    ```
+
+2. In the `IVisual` class include the line:
+
+    ```typescript
+    private events: IVisualEventService;
+    ```
+
+3. In the `constructor` method of the `IVisual` class
+
+    ```typescript
+    this.events = options.host.eventService;
+    ```
+
+You can now call the methods
+`this.events.renderingStarted(options);`,
+`this.events.renderingFinished(options);`, and
+`this.events.renderingFailed(options);` where appropriate in your *update* method.
+
+## Example 1: Visual without animations
+
+Here's an example of a simple visual that uses the *render events* API.
 
 ```typescript
     export class Visual implements IVisual {
@@ -77,9 +79,9 @@ export interface IVisualEventService {
         }
 ```
 
-### Sample: The visual displays animations
+## Example 2: Visual with animations
 
-If the visual has animations or async functions for rendering, the `renderingFinished` method should be called after the animation or inside async function.
+If the visual has animations or asynchronous functions for rendering, the `renderingFinished` method should be called after the animation or inside async function, even if it's not the last line of the *update* method.
 
 ```typescript
     export class Visual implements IVisual {
@@ -106,6 +108,10 @@ If the visual has animations or async functions for rendering, the `renderingFin
         }
 ```
 
-## Rendering events for visual certification
+## Related content
 
-One requirement of visuals certification is the support of rendering events by the visual. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
+> [!div class="nextstepaction"]
+> [Visual API](visual-api.md)
+
+> [!div class="nextstepaction"]
+> [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)

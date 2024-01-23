@@ -1,19 +1,19 @@
 ---
 title: Introduction to use formatting utils in Power BI visual
-description: This article describes how to use formatting utils to format values and apply localization to values in Power BI visual.
-author: KesemSharabi
-ms.author: kesharab
+description: Learn how to use formatting utils to format values and apply localization to values in Power BI visuals.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: reference
-ms.date: 06/18/2019
+ms.topic: conceptual
+ms.date: 01/06/2023
 ---
 
 # Formatting utils
 
-Formatting utils contains the classes, interfaces, and methods to format values. It also contains extender methods to process strings, and measure text size in SVG/HTML document.
+Formatting utils contain classes, interfaces, and methods to format values. It also contains extender methods to process strings and measure text size in an SVG/HTML document.
 
 ## Text measurement service
 
@@ -37,7 +37,7 @@ interface TextProperties {
 
 ### measureSvgTextWidth
 
-This function measures the width of the text with the given SVG text properties.
+This function measures the width of the text with specific SVG text properties.
 
 ```typescript
 function measureSvgTextWidth(textProperties: TextProperties, text?: string): number;
@@ -89,7 +89,7 @@ textMeasurementService.measureSvgTextRect(textProperties);
 
 ### measureSvgTextHeight
 
-This function measures the height of the text with the given SVG text properties.
+This function measures the height of the text with specific SVG text properties.
 
 ```typescript
 function measureSvgTextHeight(textProperties: TextProperties, text?: string): number;
@@ -116,7 +116,7 @@ textMeasurementService.measureSvgTextHeight(textProperties);
 
 ### estimateSvgTextBaselineDelta
 
-This function returns a baseline of the given SVG text properties.
+This function returns a baseline of specific SVG text properties.
 
 ```typescript
 function estimateSvgTextBaselineDelta(textProperties: TextProperties): number;
@@ -142,7 +142,7 @@ textMeasurementService.estimateSvgTextBaselineDelta(textProperties);
 
 ### estimateSvgTextHeight
 
-This function estimates the height of the text with the given SVG text properties.
+This function estimates the height of the text with specific SVG text properties.
 
 ```typescript
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
@@ -166,7 +166,7 @@ textMeasurementService.estimateSvgTextHeight(textProperties);
 // returns: 27
 ```
 
-You can take a look at the example code of the custom visual [here](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L372).
+For an example, see [custom visual code](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L372).
 
 ### measureSvgTextElementWidth
 
@@ -312,7 +312,7 @@ textMeasurementService.getDivElementWidth(svg)
 
 ### getTailoredTextOrDefault
 
-Compares labels text size to the available size and renders ellipses when the available size is smaller.
+Compares a label's text size to the available size, and renders ellipses when the available size is smaller.
 
 ```typescript
 function getTailoredTextOrDefault(textProperties: TextProperties, maxWidth: number): string;
@@ -380,7 +380,7 @@ stringExtensions.equalIgnoreCase("Power BI", "power bi");
 
 ### startsWith
 
-This function checks if a string starts with a substring;
+This function checks if a string starts with a substring.
 
 ```typescript
 function startsWith(a: string, b: string): boolean;
@@ -453,7 +453,7 @@ interface IValueFormatter {
 
 ### IValueFormatter.format
 
-This method formats the given value.
+This method formats the specified value.
 
 ```typescript
 function format(value: any, format?: string, allowFormatBeautification?: boolean): string;
@@ -588,11 +588,11 @@ iValueFormatter.format(3.141592653589793);
 // returns: 3.142
 ```
 
-You can take a look at the example code of the custom visual [here](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L359).
+For an example, see [custom visual code](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L359).
 
 ## ValueFormatterOptions
 
-This interface describes `options` of the IValueFormatter and options of 'create' function.
+This interface describes `options` of the IValueFormatter and options of `create` function.
 
 ```typescript
 import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
@@ -645,6 +645,29 @@ valueFormatter.create({});
 // returns: an instance of IValueFormatter.
 ```
 
-## Next steps
+## format
 
-[Add localizations to a Power BI custom visual](localization.md)  
+Alternative way to format the value without creating `IValueFormatter`. Useful for cases with [dynamic formats string](./dynamic-format.md)
+
+```typescript
+import { format } from "powerbi-visuals-utils-formattingutils";
+import format = valueFormatter.format;
+
+function format(value: any, format?: string, allowFormatBeautification?: boolean, cultureSelector?: string): string;
+```
+
+### Example of using format
+
+```typescript
+import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
+
+const value = 12
+const format = '¥ #,0'
+valueFormatter.format(value, format);
+
+// returns: formatted value as string (¥ 12)
+```
+
+## Related content
+
+[Add the local language to your Power BI visual](localization.md)  

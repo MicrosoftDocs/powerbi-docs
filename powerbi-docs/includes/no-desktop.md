@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-❌&nbsp;Power BI Desktop
+:::image type="icon" source="media/no-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;Desktop

@@ -14,25 +14,53 @@
       href: desktop-tutorial-create-measures.md
     - name: "Create calculated columns"
       href: desktop-tutorial-create-calculated-columns.md
+    - name: "Create calculation groups"
+      href: calculation-groups.md      
   - name: Concepts
     expanded: true
-    items: 
+    items:
+    - name: "Edit data models in the Power BI service (preview)"
+      href: service-edit-data-models.md  
+    - name: "Work with Modeling view"
+      href: desktop-modeling-view.md  
+    - name: "Work with DAX query view"
+      href: dax-query-view.md  
+    - name: "Work with Model explorer (preview)"
+      href: model-explorer.md        
     - name: "Understand model relationships"
       href: desktop-relationships-understand.md
-    - name: "Work with Modeling view"
-      href: desktop-modeling-view.md      
-    - name: "Manage aggregations"
-      href: desktop-aggregations.md      
-    - name: "Use composite models"
-      href: desktop-composite-models.md
-    - name: "Apply many-many relationships"
+    - name: "Many-to-many relationships"
       href: desktop-many-to-many-relationships.md
-    - name: "Manage storage mode"
-      href: desktop-storage-mode.md
     - name: "Enable bidirectional cross-filtering"
       href: desktop-bidirectional-filtering.md
+    - name: "Composite models"
+      href: desktop-composite-models.md
+    - name: "User-defined aggregations"
+      href: aggregations-advanced.md   
+    - name: "Manage storage mode"
+      href: desktop-storage-mode.md
     - name: "Work with multidimensional models in Power BI"
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
+  - name: Datamarts (preview)
+    items: 
+    - name: "Introduction to datamarts (preview)"
+      href: datamarts/datamarts-overview.md
+    - name: "Understand datamarts (preview)"
+      href: datamarts/datamarts-understand.md
+    - name: "Get started with datamarts (preview)"
+      href: datamarts/datamarts-get-started.md   
+    - name: "Analyzing datamarts (preview)"
+      href: datamarts/datamarts-analyze.md         
+    - name: "Discover data with datamarts (preview)"
+      href: datamarts/datamarts-discovery.md          
+    - name: "Share datamarts and manage permissions (preview)"
+      href: datamarts/datamarts-sharing-manage-permissions.md         
+    - name: "Create reports with datamarts (preview)"
+      href: datamarts/datamarts-create-reports.md         
+    - name: "Access control in datamarts (preview)"
+      href: datamarts/datamarts-access-control.md     
+    - name: "Datamart administration (preview)"
+      href: datamarts/datamarts-administration.md           
   - name: Dataflows
     items: 
     - name: "Introduction to dataflows"
@@ -53,8 +81,22 @@
       href: ./dataflows/dataflows-best-practices.md  
     - name: "Understanding and optimizing dataflow refresh"
       href: ./dataflows/dataflows-understand-optimize-refresh.md  
-    - name: "Dataflows limitations and considerations"
-      href: dataflows/dataflows-features-limitations.md            
+    - name: "Using DirectQuery with dataflows"
+      href: ./dataflows/dataflows-directquery.md       
+    - name: "Dataflows considerations and limitations"
+      href: dataflows/dataflows-features-limitations.md
+    - name: "Streaming dataflows (preview)"
+      href: dataflows/dataflows-streaming.md
+    - name: "Developing dataflows solutions"
+      href: dataflows/dataflows-develop-solutions.md      
+  - name: Log analytics
+    items: 
+    - name: "Using Azure Log Analytics in Power BI"
+      href: log-analytics/desktop-log-analytics-overview.md
+    - name: "Configuring Azure Log Analytics in Power BI"
+      href: log-analytics/desktop-log-analytics-configure.md
+    - name: "Azure Log Analytics in Power BI - FAQ"
+      href: log-analytics/desktop-log-analytics-faq.md
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -65,15 +107,17 @@
       href: desktop-analytics-pane.md
     - name: "Work with Data view"
       href: ../connect-data/desktop-data-view.md
-    - name: "Apply DAX basics"
+    - name: "Learn DAX basics in Power BI Desktop"
       href: desktop-quickstart-learn-dax-basics.md
     - name: "Work with Relationship view"
       href: desktop-relationship-view.md
+    - name: "Quick measures suggestions"
+      href: quick-measure-suggestions.md      
     - name: Transform and shape data
       items: 
       - name: "Combine files (binaries)"
         href: desktop-combine-binaries.md
-      - name: "Use AI Insights (preview)"
+      - name: "Use AI Insights"
         href: desktop-ai-insights.md        
     - name: Model your data
       items: 
@@ -105,7 +149,7 @@
       href: desktop-external-tools-register.md
   - name: Reference
     items: 
-    - name: "Use the Field list in Power BI Desktop (preview)"
+    - name: "Use the Field list in Power BI Desktop"
       href: desktop-field-list.md
     - name: "Formula editor shortcuts"
       href: desktop-formula-editor.md

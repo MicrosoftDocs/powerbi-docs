@@ -1,13 +1,13 @@
 ---
 title: "Bi-directional relationship guidance"
 description: Guidance for developing bi-directional filtering model relationships.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 11/10/2023
 ---
 
 # Bi-directional relationship guidance
@@ -33,7 +33,7 @@ Bi-directional relationships play an important role when creating the following 
 
 ## Slicer items "with data"
 
-Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI dataset, or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
+Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
 
 ![Diagram showing a model containing three tables. The design is described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
 
@@ -97,7 +97,7 @@ A different scenario involving bi-directional relationships treats a fact-type t
 Using the example model in this article, consider how the following questions can be answered:
 
 - How many colors were sold to Australian customers?
-- How many countries purchased jeans?
+- How many countries/regions purchased jeans?
 
 Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do, however, require that filters propagate from one dimension-type table to the other. Once filters propagate via the fact-type table, summarization of dimension-type table columns can be achieved using the [DISTINCTCOUNT](/dax/distinctcount-function-dax) DAX function—and possibly the [MIN](/dax/min-function-dax) and [MAX](/dax/max-function-dax) DAX functions.
 
@@ -125,7 +125,7 @@ The following table visual present statistics for each product sold. The **Quant
 
 ![Diagram showing that two products are listed in a table visual. In the "Different Countries Sold" column, Jeans is 1, and T-shirt is 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

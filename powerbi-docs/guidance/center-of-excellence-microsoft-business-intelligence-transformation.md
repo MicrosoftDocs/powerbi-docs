@@ -1,15 +1,18 @@
 ---
 title: Microsoft's BI transformation
 description: Learn how Microsoft successfully drives a data culture for business decision making. It describes their strategy and vision for BI.
-author: peter-myers
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: maroche
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 08/19/2020
+ms.date: 03/11/2022
 ---
 # Microsoft's BI transformation
+
+> [!TIP]
+> This article focuses on Microsoft's experience establishing a [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 This article targets IT professionals and IT managers. You'll learn about our BI strategy and vision, which enables us to continuously leverage our data as an asset. You'll also learn how we successfully drive a data culture of business decision making with Power BI.
 
@@ -21,7 +24,7 @@ So, how can your organization, too, revolutionize the way it works with data? Le
 
 Several years ago at Microsoft, our organizational culture encouraged individuals to pursue full ownership of data and insights. It also experienced strong cultural resistance to doing things in a standardized way. So, the organizational culture led to reporting and analytic challenges. Specifically, it led to:
 
-- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each country had their own way of reporting on new revenue. There was no consistency, yet much confusion.
+- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each country or region had their own way of reporting on new revenue. There was no consistency, yet much confusion.
 - Analysts spending 75% of time collecting and compiling data.
 - 78% of reports being created in "offline environment".
 - Over 350 centralized finance tools and systems.
@@ -29,7 +32,7 @@ Several years ago at Microsoft, our organizational culture encouraged individual
 
 These challenges prompted us to think about how we could do things better. Finance and other internal teams received executive support to transform the business review process, which led to building a unified BI platform as our single source of truth. (We'll discuss more about our BI platform later in this article.) Ultimately, these innovations led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
-How did we achieve this successful outcome? Delivering centralized BI managed by IT and extending it with self-service BI (SSBI) led to success. We describe it in two creative ways: _discipline at the core_ and _flexibility at the edge_.
+How did we achieve this successful outcome? Delivering centralized BI managed by IT and extending it with [self-service BI (SSBI)](powerbi-implementation-planning-usage-scenario-overview.md#self-service-bi-scenarios) led to success. We describe it in two creative ways: *discipline at the core* and *flexibility at the edge*.
 
 ### Discipline at the core
 
@@ -41,7 +44,7 @@ Our transformation didn't happen all at once. We prioritized the delivery of the
 
 ### Flexibility at the edge
 
-At the edge of the core, our analysts in the Finance, Sales, and Marketing teams became more flexible and agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI (SSBI)_. We now understand that managed SSBI is about _mutual benefit_ for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and the reuse of our data and BI solutions. And, as a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
+At the edge of the core, our analysts in the Finance, Sales, and Marketing teams became more flexible and agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as *managed self-service BI (SSBI)*. We now understand that managed SSBI is about *mutual benefit* for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and the reuse of our data and BI solutions. And, as a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
 
 ### Our solution
 
@@ -56,7 +59,7 @@ Here's a summary of key benefits:
 - It powers our subsidiary scorecard, worldwide business reviews, and finance, marketing, sales reports and analytics.
 - It supports self-service analytics, enabling analysts to discover insights hidden in data.
 - It drives reporting and analytics for incentive compensation, marketing and operations analysis, sales performance metrics, senior leadership reviews, and the annual planning process.
-- It delivers automated and dynamic reporting and analytics from a _single source of truth_.
+- It delivers automated and dynamic reporting and analytics from a *single source of truth*.
 
 The **KPI Lake** is a great success story. It's often presented to our customers to showcase an example of how to effectively use our latest technologies. Not surprisingly, it's highly resonant with many of them.
 
@@ -72,17 +75,18 @@ The Starlight platform manages the flow of data from acquisition, to processing,
 
 Humorously, everybody wants one version of the truth... as long as it's theirs. But for some organizations it's their reality. They have multiple versions of the truth as a result of individuals pursuing full ownership of data and insights. For these organizations, this unmanaged approach isn't likely to be a pathway to business success.
 
-It's why we believe you need a _Center of Excellence (COE)_. A COE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's also a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
+It's why we believe you need a *Center of Excellence (COE)*. A COE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's also a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
 
 We see much evidence to support that a comprehensive and robust COE is critical to delivering value and maximizing business success. It can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
 
 We invite you to read the articles in this COE series to learn more. Let's help you discover how your organization can embrace change to deliver success.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
 - [Establish a Center of Excellence](center-of-excellence-establish.md)
+- [Fabric adoption roadmap: Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

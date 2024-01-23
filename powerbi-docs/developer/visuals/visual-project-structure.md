@@ -1,13 +1,13 @@
 ---
 title: Power BI visual project structure
-description: This article describes the folder and file structure of a Power BI visual project.
-author: KesemSharabi
-ms.author: kesharab
+description: Learn about the files and their contents that are created by the Power BI visuals tool when you create a new visual.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 01/12/2020
+ms.date: 08/09/2023
 ---
 
 # Power BI visual project structure
@@ -47,24 +47,25 @@ This section provides information for each folder and file in the directory that
 
 ### .vscode
 
-This folder contains the VS code project settings.
+This folder contains the VS Code project settings.
 
 To configure your workspace, edit the `.vscode/settings.json` file.
 
-For more information, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings)
+For more information, see [User and workspace settings](https://code.visualstudio.com/docs/getstarted/settings).
 
 ### assets
 
 This folder contains the `icon.png` file.
 
-The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane.
+The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane. This icon must be a **PNG** file with dimensions *20 pixels by 20 pixels*.
 
 ### src
 
 This folder contains the visual's source code.
 
 In this folder, the Power BI visuals tool creates the following files:
-* `visual.ts` - The visual's main source code.
+
+* `visual.ts` - The visual's main source code. Read about the [Visual API](./visual-api.md).
 * `settings.ts` - The code of the visual's settings. The classes in the file provide an interface for defining your [visual's properties](./objects-properties.md#properties).
 
 ### style
@@ -105,10 +106,12 @@ This file contains the [TSLint configuration](https://palantir.github.io/tslint/
 
 ## Metadata entries
 
-The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries.
+The comments in the following code caption from the `pbiviz.json` file describe the metadata entries. Certain metadata, like the author's name and email, are required before you can package the visual.
 
 > [!NOTE]
+>
 > * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't supported.
+> * Version numbers should contain four digits in the following format `x.x.x.x`.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
 ```json
@@ -127,7 +130,7 @@ The comments in the following code caption from the `pbiviz.json` file, describe
     "visualClassName": "Visual",
 
     // The visual's version number.
-    "version": "1.0.0",
+    "version": "1.0.0.0",
     
     // The visual's description (optional)
     "description": "",
@@ -165,8 +168,7 @@ The comments in the following code caption from the `pbiviz.json` file, describe
 }
 ```
 
-## Next steps
+## Related content
 
-* To understand the interactions between a visual, a user, and Power BI, see [Power BI visual concept](./power-bi-visuals-concept.md).
-
-* Start developing your own Power BI visuals from scratch, using the [step by step guide](./develop-circle-card.md).
+* [Power BI visuals system integration](power-bi-visuals-concept.md)
+* [Develop a Power BI circle card visual](develop-circle-card.md)

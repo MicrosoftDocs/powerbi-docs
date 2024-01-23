@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/14/2020
+ms.date: 10/19/2021
 ---
 
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
@@ -172,16 +172,16 @@ Only a user with the **System Administrator** role will see the Office Online Se
 
 After you enter the discovery url, and select **Apply**, selecting an Excel workbook, within the web portal, should display the workbook within the web portal.
 
-## Limitations and considerations
+## Considerations and limitations
 
 - You will have read only capability with workbooks.
 - Scheduled refresh isn't supported for Excel workbooks in Power BI Report Server.
 
-## Next steps
+## Related content
 
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -40,7 +40,8 @@ Your ability to see, edit, delete, and manage comments depends on the tasks incl
 
 For more details on permissions related to comments, see [Tasks and Permissions - Item-Level Tasks](/sql/reporting-services/security/tasks-and-permissions-item-level-tasks) in the SQL Server Reporting Services documentation.
 
-## Next steps
+## Related content
+
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

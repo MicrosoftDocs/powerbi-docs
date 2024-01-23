@@ -8,16 +8,17 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/06/2021
-#customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
+ms.custom: mode-portal, intro-quickstart
+#Customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
 # Quickstart: Explore dashboards and reports in the Power BI mobile apps
 In this quickstart, you take a quick tour of the Power BI Mobile app and explore a sample dashboard and report. The Power BI app for iOS is shown, but you can easily follow along on other devices.
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 devices](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows devices](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone | iPad | Android | Windows 10 |
+| iPhone | iPad | Android | Windows |
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
@@ -84,7 +85,7 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
 
 ## Clean up resources
 
-After you finish this quickstart, you can delete the Retail Analysis Sample dashboard, report, and dataset, if you wish.
+After you finish this quickstart, you can delete the Retail Analysis Sample dashboard, report, and semantic model, if you wish.
 
 1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
 
@@ -96,12 +97,12 @@ After you finish this quickstart, you can delete the Retail Analysis Sample dash
 
     Now click the reports tab and do the same.
 
-4. Now select the datasets tab, click **More options** (...), and choose **Delete**. 
+4. Now select the semantic models tab, click **More options** (...), and choose **Delete**. 
 
 
-    ![Select the Delete datasets](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail-datasets.png)
+    ![Select the Delete semantic models](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail-datasets.png)
 
-## Next steps
+## Related content
 
 In this quickstart, you explored a sample dashboard and report on your mobile device. Read more about working in the Power BI service. 
 

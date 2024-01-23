@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2020
+ms.date: 02/14/2023
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
 
-This article lays out the minimum hardware and software requirements to install and run Power BI Report Server.
+This article lays out the minimum hardware and software requirements to install and run Power BI Report Server. See [Capacity planning guidance for Power BI Report Server](capacity-planning.md) for more details.
 
 ## Processor, Memory, and Operating System Requirements
 
@@ -23,7 +23,7 @@ This article lays out the minimum hardware and software requirements to install 
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
 | Processor type |x64 Processor: AMD Opteron, AMD Athlon 64, Intel Xeon with Intel EM64T support, Intel Pentium IV with EM64T support |
-| Operating system |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br> |
+| Operating system |Windows Server 2022<br><br>Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 11<br>|
 
 > [!NOTE]
 > Installation of Power BI Report Server is supported on x64 processors only.
@@ -34,6 +34,7 @@ This article lays out the minimum hardware and software requirements to install 
 SQL Server is used to host the report server databases. The SQL Server Database Engine instance can be a local or remote instance. The following are the supported versions of SQL Server Database Engine that can be used to host the report server databases:
 
 * Azure SQL Managed Instance (Power BI Report Server January 2020 version and later)
+* SQL Server 2022
 * SQL Server 2019
 * SQL Server 2017
 * SQL Server 2016
@@ -67,12 +68,10 @@ You can use a live connection against tabular or multidimensional instances. You
 | 2014 |Business Intelligence and Enterprise SKU |
 | 2016 and later |Standard SKU or higher |
 
-## Next steps
+## Related content
 
-[What is Power BI Report Server?](get-started.md)  
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+* [What is Power BI Report Server?](get-started.md)  
+* [Install Power BI Report Server](install-report-server.md) 
+* [Capacity planning guidance for Power BI Report Server](capacity-planning.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

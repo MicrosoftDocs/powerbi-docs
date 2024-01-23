@@ -1,11 +1,11 @@
 ---
 title: Use cascading parameters in paginated reports
 description: Guidance for designing paginated reports using cascading parameters.
-author: peter-myers
-ms.author: kfollis
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.date: 01/14/2020
 ---
@@ -15,7 +15,7 @@ ms.date: 01/14/2020
 This article targets you as a report author designing Power BI [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md). It provides scenarios for designing cascading parameters. Cascading parameters are report parameters with dependencies. When a report user selects a parameter value (or values), it's used to set available values for another parameter.
 
 > [!NOTE]
-> An introduction to cascading parameters, and how to configure them, isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
+> An introduction to cascading parameters, and how to configure them, isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report in Power BI Report Builder](../paginated-reports/parameters/add-cascading-parameters-report-builder.md).
 
 ## Design scenarios
 
@@ -55,7 +55,7 @@ Let's take a look at three examples to help you limit large sets of available it
 
 In this example, the report user interacts with five report parameters. They must select country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
 
-![Screenshot of Power B I paginated report parameters showing filter by related columns.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+![Screenshot of Power BI paginated report parameters showing filter by related columns.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -129,7 +129,7 @@ Here's how you can develop the cascading parameters:
 
 In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers when the name commences with the selected letter.
 
-![Screenshot of Power B I paginated report parameters showing filter by a grouping column.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+![Screenshot of Power BI paginated report parameters showing filter by a grouping column.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -191,7 +191,7 @@ GO
 
 In this example, the report user interacts with a report parameter to enter a search pattern. A second parameter then lists resellers when the name contains the pattern.
 
-![Screenshot of Power B I paginated report parameters showing filter by search pattern.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+![Screenshot of Power BI paginated report parameters showing filter by search pattern.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -237,7 +237,7 @@ In this scenario, you can use fact data to limit available values. Report users 
 
 In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that time period.
 
-![Screenshot of Power B I paginated report parameters showing three report parameters: Start Order Date, End Order Date, and Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+![Screenshot of Power BI paginated report parameters showing three report parameters: Start Order Date, End Order Date, and Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -272,11 +272,11 @@ Be sure to optimize your data sources by:
 - Adding appropriate indexes for efficient data retrieval
 - Materializing column values—and even rows—to avoid expensive query-time evaluations
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 
-- [Report parameters in Power BI Report Builder](../paginated-reports/report-builder-parameters.md)
-- [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)
+- [Report parameters in Power BI Report Builder](../paginated-reports/parameters/report-builder-parameters.md)
+- [Add Cascading Parameters to a Report (Report Builder)](../paginated-reports/parameters/add-cascading-parameters-report-builder.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

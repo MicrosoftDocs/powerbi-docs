@@ -1,23 +1,23 @@
 ---
-title: Embed Power BI content in an Power BI embedded analytics application with service principal and a certificate
-description: Learn how to authenticate for Power BI embedded analytics using an Azure Active Directory application service principal and a certificate.
-author: KesemSharabi
-ms.author: kesharab
+title: Embed Power BI content in a Power BI embedded analytics application with service principal and a certificate
+description: Learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 11/23/2020
+ms.date: 01/22/2023
 ---
 
 # Embed Power BI content with service principal and a certificate
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
+Certificate-based authentication enables you to be authenticated by Microsoft Entra ID with a client certificate. The client certificate can be on a Windows, Android, or iOS device, or the client certificate can be kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
 
-Using this method of authentication allows managing certificates from a central place, using the CA, for rotation or revocation.
+Using this method of authentication allows managing certificates from a central place using the certificate authority (CA) for rotation or revocation.
 
-You can learn more about certificates in Azure AD in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
+You can learn more about certificates in Microsoft Entra ID in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
 
 ## Method
 
@@ -33,7 +33,7 @@ You can learn more about certificates in Azure AD in the [Client credential flow
 
 ## Step 1 - Embed your content with service principal
 
-To embed your content with service principal, follow the instructions in [Embed Power BI content with service principal and an application secret](embed-service-principal.md).
+To embed your content with a service principal, follow the instructions in [Embed Power BI content with service principal and an application secret](embed-service-principal.md).
 
 >[!NOTE]
 >If you already have content that's embedded using a service principal, skip this step and advance to [step 2](embed-service-principal-certificate.md#step-2---create-a-certificate).
@@ -42,25 +42,25 @@ To embed your content with service principal, follow the instructions in [Embed 
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
-This section describes creating a certificate using [Azure Key Vault](/azure/key-vault/create-certificate), and downloading the *.cer* file which contains the public key.
+This section describes creating a certificate using [Azure Key Vault](/azure/key-vault/create-certificate), and downloading the *.cer* file, which contains the public key.
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **Key Vaults** and click the **Key Vaults** link.
+2. Search for and select the **Key vaults** link.
 
-    ![A screenshot that shows a link to the key vault in the Azure portal.](media/embed-service-principal-certificate/key-vault.png)
+    :::image type="content" source="media/embed-service-principal-certificate/key-vault.png" alt-text="Screenshot of the Azure portal window, which shows a link to the key vault service in the Services list.":::
 
-3. Click the key vault you want to add a certificate to.
+3. Select the key vault you want to add a certificate to.
 
-    ![A screenshot showing a list of blurred out key vaults in the Azure portal.](media/embed-service-principal-certificate/select-key-vault.png)
+    :::image type="content" source="media/embed-service-principal-certificate/select-key-vault.png" alt-text="Screenshot of the Azure portal window, which shows a list of blurred out key vaults in the Key vaults list.":::
 
-4. Click **Certificates**.
+4. Select **Certificates**.
 
-    ![A screenshot that shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
+    :::image type="content" source="media/embed-service-principal-certificate/certificates.png" alt-text="Screenshot of the Azure portal window, which shows the Key vaults page with the highlighted Certificates item.":::
 
-5. Click **Generate/Import**.
+5. Select **Generate/Import**.
 
-    ![A screenshot that shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
+    :::image type="content" source="media/embed-service-principal-certificate/generate.png" alt-text="Screenshot of the Azure portal window, which shows the Certificate pane with the highlighted Generate / Import item.":::
 
 6. Configure the **Create a certificate** fields as follows:
 
@@ -84,21 +84,21 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
     * **Advanced Policy Configuration** - Not configured
 
-7. Click **Create**. The newly created certificate is disabled by default. It can take up to five minutes to become enabled.
+7. Select **Create**. The newly created certificate is disabled by default. It can take up to five minutes to become enabled.
 
 8. Select the certificate you created.
 
-9. Click **Download in CER format**. The downloaded file contains the public key.
+9. Select **Download in CER format**. The downloaded file contains the public key.
 
-    ![A screenshot that shows the download in cer format button.](media/embed-service-principal-certificate/download-cer.png)
+    :::image type="content" source="media/embed-service-principal-certificate/download-cer.png" alt-text="Screenshot of the Azure portal window, which shows the highlighted Download in CER Format button.":::
 
 ## Step 3 - Set up certificate authentication
 
-1. In your Azure AD application, click the **Certificates & secrets** tab.
+1. In your Microsoft Entra application, select the **Certificates & secrets** tab.
 
-     ![A screenshot that shows the certificates and secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
+    :::image type="content" source="media/embed-service-principal/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
 
-2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
+2. Select **Upload certificate** and upload the *.cer* file you created and downloaded in [step 2](#step-2---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 4 - Get the certificate from Azure Key Vault
 
@@ -113,25 +113,19 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
     var keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(serviceTokenProvider.KeyVaultTokenCallback));
     CertificateBundle certificate = null;
     SecretBundle secret = null;
-    try
-    {
-        certificate = keyVaultClient.GetCertificateAsync($"https://{KeyVaultName}.vault.azure.net/", certName).Result;
-        secret = keyVaultClient.GetSecretAsync(certificate.SecretIdentifier.Identifier).Result;
-    }
-    catch (Exception)
-    {
-        return null;
-    }
 
+    certificate = keyVaultClient.GetCertificateAsync($"https://{KeyVaultName}.vault.azure.net/", certName).Result;
+    secret = keyVaultClient.GetSecretAsync(certificate.SecretIdentifier.Identifier).Result;
+    
     return new X509Certificate2(Convert.FromBase64String(secret.Value));
 }
 ```
 
 ## Step 5 - Authenticate using service principal and a certificate
 
-You can authenticate your app using service principal and a certificate that's stored in Azure Key Vault, by connecting to Azure Key Vault.
+You can authenticate your app that uses a service principal and a certificate that's stored in Azure Key Vault by connecting to Azure Key Vault.
 
-To connect and read the certificate from Azure Key Vault, refer to the code below.
+To connect and read the certificate from Azure Key Vault, refer to the following code sample.
 
 >[!NOTE]
 >If you already have a certificate created by your organization, upload the *.pfx* file to Azure Key Vault.
@@ -150,44 +144,32 @@ public async Task<AuthenticationResult> DoAuthentication(){
                                                     .WithCertificate(certificate)
                                                     .WithAuthority(tenantSpecificURL)
                                                     .Build();
-    try
-    {
-        authenticationResult = await clientApp.AcquireTokenForClient(Scope).ExecuteAsync();
-    }
-    catch (MsalException)
-    {
-        throw;
-    }
-    return authenticationResult
+    return await clientApp.AcquireTokenForClient(Scope).ExecuteAsync();
 }
 ```
 
 ## Configure Visual Studio to use MSI
 
-When creating your embedded solution, it may be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+When you create an embedded solution, it might be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Microsoft Entra identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+
+>[!NOTE]
+>The user that signs into Visual Studio requires Azure Key Vault permissions to get the certificate.
 
 1. Open your project in Visual Studio.
 
-2. Click **Tools** > **Options**.
+2. Select **Tools** > **Options**.
 
-     ![A screenshot showing the options button in the tools menu in Visual Studio.](media/embed-service-principal-certificate/visual-studio-options.png)
+    :::image type="content" source="media/embed-service-principal-certificate/visual-studio-options.png" alt-text="Screenshot of the Visual Studio window, which shows the highlighted Options button in the Tools menu.":::
 
-3. Search for **Account Selection** and click **Account Selection**.
+3. Search for and select **Account Selection**.
 
-    ![A screenshot showing the account selection option in the Visual Studio options window.](media/embed-service-principal-certificate/account-selection.png)
+    :::image type="content" source="media/embed-service-principal-certificate/account-selection.png" alt-text="Screenshot of the Visual Studio Options window, which shows the highlighted Account Selection option in the search results.":::
 
 4. Add the account that has access to your Azure Key Vault.
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Register an app](register-app.md)
-
-> [!div class="nextstepaction"]
->[Power BI Embedded for your customers](embed-sample-for-customers.md)
-
->[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-
->[!div class="nextstepaction"]
->[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+* [Set up Power BI Embedded](register-app.md)
+* [Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
+* [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Embed a report on an on-premises SQL Server Analysis Services (SSAS)](./sql-server-analysis-services-embed.md)

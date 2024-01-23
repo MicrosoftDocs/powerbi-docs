@@ -4,14 +4,17 @@ description: Get started with Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q1, intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 04/13/2021
+ms.date: 10/24/2023
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
 Welcome to the getting started guide for Power BI Desktop. This tour shows you how Power BI Desktop works, what it can do, and how to build robust data models and amazing reports to amplify your business intelligence.
 
 For a quick overview of how Power BI Desktop works and how to use it, you can scan the screens in this guide in just a few minutes. For a more thorough understanding, you can read through each section, perform the steps, and create your own Power BI Desktop file to post on the [Power BI service](https://app.powerbi.com/) and share with others.
@@ -20,14 +23,13 @@ For a quick overview of how Power BI Desktop works and how to use it, you can sc
 
 You can also watch the [Getting Started with the Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) video, and download the [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) Excel workbook to follow along with the video.
 
-
 > [!IMPORTANT]
-> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
 > You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
 
-
 ## How Power BI Desktop works
+
 With Power BI Desktop, you can:
+
 1. Connect to data, including multiple data sources.
 1. Shape the data with queries that build insightful, compelling data models.
 1. Use the data models to create visualizations and reports. 
@@ -37,9 +39,6 @@ Power BI Desktop integrates proven Microsoft query engine, data modeling, and vi
 
 Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
 Ready to give it a try? Let's get started.
-
-> [!NOTE]
-> For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
 To download Power BI Desktop, go to the [Power BI Desktop download page](https://powerbi.microsoft.com/desktop) and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
@@ -58,14 +57,14 @@ From the **Welcome** screen, you can **Get data**, see **Recent sources**, open 
 
 Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Model**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
 
-If you are using keyboard navigation, press Ctrl + F6 to move focus to that section of buttons in the window.  To learn more about accessibility and Power BI, visit our [accessibility articles](/power-bi/create-reports/desktop-accessibility-creating-tools).
+If you're using keyboard navigation, press Ctrl + F6 to move focus to that section of buttons in the window.  To learn more about accessibility and Power BI, visit our [accessibility articles](../create-reports/desktop-accessibility-creating-tools.md).
 
 ![Screenshot of Power B I Desktop showing the icons for Report, Data, and Model.](media/desktop-getting-started/designer_gsg_viewtypes.png)
 
 
 **Report** view is the default view. 
 
-![Screenshot of Power B I Desktop showing the default view.](media/desktop-getting-started/designer_gsg_blankreport.png)
+![Screenshot of Power B I Desktop showing the default view.](media/desktop-getting-started/designer-gsg-blank-report.png)
 
 Power BI Desktop also includes the **Power Query Editor**, which opens in a separate window. In **Power Query Editor**, you can build queries and transform data, then load the refined data model into Power BI Desktop to create reports.
 
@@ -74,15 +73,18 @@ With Power BI Desktop installed, you're ready to connect to the ever-expanding w
 
 ![Screenshot of Power B I Desktop showing the Get Data tool.](media/desktop-getting-started/getdataweb.png)
 
-Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. The Bankrate.com [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) page has interesting data on this subject.
+Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. So you might want to find some information on the web about sunny locations.
 
 On the Power BI Desktop **Home** tab, select **Get Data** > **Web** to connect to a web data source. 
 
 ![Screenshot of Power B I Desktop showing the Web option of the Get Data tool.](media/desktop-getting-started/gsg_syw_2.png)
 
-In the **From Web** dialog box, paste the address *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* into the **URL** field, and select **OK**. 
+In the **From Web** dialog box, paste an address about sunny locations into the **URL** field, and select **OK**.
 
-![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/gettingstarted_8.png)
+![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/getting-started-8.png)
+
+> [!NOTE]
+> The URL used in this example is fictitious, you can find your own data in various tables and sites on the web.
 
 If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
 
@@ -102,7 +104,7 @@ For more information about connecting to data, see [Connect to data in Power BI 
 Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
 
 > [!NOTE]
-> The table data used in this guide might change over time. As such, the steps you need to follow might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
+> The table data used in this guide is fictitious and for illustrative purposes. As such, the steps you need to follow with the data you find and use might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
 
 Shaping can mean *transforming* the data, such as renaming columns or tables, removing rows or columns, or changing data types. Power Query Editor captures these steps sequentially under **Applied Steps** in the **Query Settings** pane. Each time this query connects to the data source, those steps are carried out, so the data is always shaped the way you specify. This process occurs when you use the query in Power BI Desktop, or when anyone uses your shared query, such as in the Power BI service. 
 
@@ -123,7 +125,7 @@ For example, for sunglasses sales you're most interested in the weather ranking,
 
 ![Screenshot of Power B I Desktop showing Sorted Rows appearing in Applied Steps.](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
+You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Home** tab, select **Reduce Rows** > **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**.
 
 ![Screenshot of Power B I Desktop showing the Remove Bottom Rows dialog box.](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
@@ -207,7 +209,7 @@ To expand the merged table and select which columns to include, select the **Exp
 
 For a more complete description of the shape and combine data steps, see [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
-You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for lots of additional, interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
+You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for more interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
 
 ![Screenshot of Power B I Desktop showing the Power Query Editor with shaped and combined queries.](media/desktop-getting-started/mergedcolumn.png)
 
@@ -215,19 +217,20 @@ For now, you have enough data to create an interesting report in Power BI Deskto
 
 ![Screenshot of Power B I Desktop showing the Close and Apply Changes option.](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Edit Queries** on the **Home** tab of the Power BI Desktop ribbon. 
+You can make more changes to a table after it's loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Transform Data** on the **Home** tab of the Power BI Desktop ribbon. 
 
 ## Build reports
 In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:
 
-![Screenshot of Power B I Desktop showing the Report view.](media/desktop-getting-started/designer_gsg_reportview.png)
+![Screenshot of Power B I Desktop showing the Report view.](media/desktop-getting-started/designer-gsg-report-view.png)
 
 1. The ribbon at the top, which displays common tasks associated with reports and visualizations.
-2. The canvas area in the middle, where visualizations are created and arranged.
+2. The canvas area in the middle, where you create and arrange visualizations.
 3. The pages tab area at the bottom, which lets you select or add report pages.
 4. The **Filters** pane, where you can filter data visualizations.
 5. The **Visualizations** pane, where you can add, change, or customize visualizations, and apply drillthrough.
-6. The **Fields** pane, which shows the available fields in your queries. You can drag these fields onto the canvas, the **Filters** pane, or the **Visualizations** pane to create or modify visualizations.
+1. The **Format** pane, where you design the report and visualizations.
+1. The **Fields** pane, which shows the available fields in your queries. You can drag these fields onto the canvas, the **Filters** pane, or the **Visualizations** pane to create or modify visualizations.
 
 You can expand and collapse the **Filters**, **Visualizations**, and **Fields** panes by selecting the arrows at the tops of the panes. Collapsing the panes provides more space on the canvas to build cool visualizations. 
 
@@ -241,11 +244,11 @@ Look at that! Power BI Desktop recognized that the **State** field contained geo
 
 The **Visualizations** pane shows information about the visualization and lets you modify it. 
 
-![Screenshot of Power B I Desktop showing the Visualization pane.](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![Screenshot of Power B I Desktop showing the Visualization pane.](media/desktop-getting-started/designer-gsg-visualization-types.png)
 
-1. The icons show the type of visualization created. You can change the type of a selected visualization by selecting a different icon, or create a new visualization by selecting an icon with no existing visualization selected. 
-2. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane. 
-3. The **Format** option lets you apply formatting and other controls to visualizations. 
+1. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane.
+1. The **Format** option lets you apply formatting and other controls to visualizations.
+1. The icons show the type of visualization created. You can change the type of a selected visualization by selecting a different icon, or create a new visualization by selecting an icon with no existing visualization selected.
 
 The options available in the **Fields** and **Format** areas depend on the type of visualization and data you have.
 
@@ -253,33 +256,33 @@ You want your map visualization to show only the top 10 weather states. To show 
 
 Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**.
 
-![Screenshot of Power B I Desktop showing the Weather filter.](media/desktop-getting-started/gsg_share5.png)
+![Screenshot of Power B I Desktop showing the Weather filter.](media/desktop-getting-started/top-n-filter-weather.png)
 
 You now see only the top 10 weather states in the map visualization. 
 
-Retitle your visualization by selecting the **Format** icon in the **Visualization** pane, selecting **Title**, and typing *Top 10 weather states* under **Title text**. 
+You can retitle your visualization. Select the **Format** icon in the **Visualization** pane, and type *title* in the **Search** box. In the **Title** card, type *Top 10 weather states* under **Text**. 
 
-![Screenshot of Power B I Desktop showing the Change Title field in the Visualization pane.](media/desktop-getting-started/designer_gsg_report1.png)
+![Screenshot of Power B I Desktop showing the Change Title field in the Visualization pane.](media/desktop-getting-started/designer-gsg-report-1.png)
 
-To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
+To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Clustered column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
 
-![Screenshot of Power B I Desktop showing the Column chart visualization.](media/desktop-getting-started/gsg_share7.png)
+![Screenshot of Power B I Desktop showing the Column chart visualization.](media/desktop-getting-started/weather-by-state-column-chart.png)
 
-To switch the order of the ranking so that number 1 appears first, select the **More options** ellipsis at the upper right of the visualization, and select **Sort ascending** from the menu. 
+To switch the order of the ranking so that number 1 appears first, select **More options (...)** at the upper right of the visualization, and select **Sort ascending** from the menu. 
 
-![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/shapecombine_mergequeries.png)
+![Screenshot of Power B I Desktop showing the Sort Ascending option.](media/desktop-getting-started/weather-by-state-sort-ascending.png)
 
 To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization.
 
-Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**. Turn the **Zoom slider** to **On** and turn **Data labels** to **On**. Finally, adjust the zoom slider along the Y axis until the stacked columns fill the chart.
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**. Search for **Zoom slider** and set it to **On**, and turn **Data labels** to **On**.
 
 Now, the top 10 weather states appear in ranked order along with their numerical rankings.
 
-![Screenshot of Power B I Desktop showing the finished column chart.](media/desktop-getting-started/shapecombine_changetype.png)
+![Screenshot of Power B I Desktop showing the finished column chart.](media/desktop-getting-started/top-ten-weather-column-chart.png)
 
 You can make similar or other visualizations for the **Affordability** and **Overall ranking** fields, or combine several fields into one visualization. There are all sorts of interesting reports and visualizations you can create. These **Table** and **Line and clustered column chart** visualizations shows the top 10 weather states along with their affordability and overall rankings:
 
-![Screenshot of Power B I Desktop showing the Table as well as Line and Clustered Column visualizations.](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+![Screenshot of Power B I Desktop showing the Table as well as Line and Clustered Column visualizations.](media/desktop-getting-started/table-line-clustered-visual.png)
 
 You can show different visualizations on different report pages. To add a new page, select the **+** symbol next to the existing pages on the pages bar, or select **Insert** > **New Page** in the **Home** tab of the ribbon. To rename a page, double-click the page name in the pages bar, or right-click it and select **Rename Page**, and then type the new name. To go to a different page of the report, select the page from the pages bar. 
 
@@ -287,11 +290,9 @@ You can show different visualizations on different report pages. To add a new pa
 
 You can add text boxes, images, and buttons to your report pages from the **Insert** group of the **Home** tab. To set formatting options for visualizations, select a visualization and then select the **Format** icon in the **Visualizations** pane. To configure page sizes, backgrounds, and other page information, select the **Format** icon with no visualization selected.
 
-When you finish creating your pages and visualizations, select **File** > **Save** and save your report. 
+![Screenshot of Power B I Desktop showing the finished report page.](media/desktop-getting-started/new-finished-report.png)
 
-![Screenshot of Power B I Desktop showing the finished report page.](media/desktop-getting-started/finished-report.png)
-
-For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
+When you finish creating your pages and visualizations, select **File** > **Save** and save your report. For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
 
 ## Share your work
 Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
@@ -300,7 +301,7 @@ To publish to the **Power BI** service from Power BI Desktop, from the **Home** 
 
 ![Screenshot of Power B I Desktop showing the Publish option.](media/desktop-getting-started/gsg_syw_1.png)
 
-You may be prompted to sign in to Power BI, or to select a destination.
+You might be prompted to sign in to Power BI, or to select a destination.
 
 When the publish process is complete, you see the following dialog:
 
@@ -341,10 +342,15 @@ Complete the **Share report** or **Share dashboard** screen to send an email or 
 
 ![Screenshot of Power B I Desktop showing the Share Report screen.](media/desktop-getting-started/gsg_share6.png)
 
-There are many compelling data-related mash-ups and visualizations you can do with Power BI Desktop and the Power BI service. 
+There are many compelling data-related mash-ups and visualizations you can do with Power BI Desktop and the Power BI service.
 
-## Next steps
-Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When using the diagnostics port, *making any changes to the model is not supported. Changes to the model may lead to corruption and data loss.*
+## Considerations and limitations
+
+- Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported. If you contact support for Power BI Desktop, you'll be asked to upgrade to the most recent version.
+- For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called [Power BI Desktop for Power BI Report Server](../report-server/install-powerbi-desktop.md), which updates three times a year. This article describes standard Power BI Desktop.
+
+## Related content
+Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When you're using the diagnostics port, *making any changes to the model isn't supported. Changes to the model may lead to corruption and data loss.*
 
 For more information on the many capabilities of Power BI Desktop, check out the following resources:
 
@@ -352,4 +358,4 @@ For more information on the many capabilities of Power BI Desktop, check out the
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

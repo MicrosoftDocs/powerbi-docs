@@ -4,96 +4,117 @@
   items:
   - name: Overview
     expanded: true
-    items: 
-    - name: "What is embedding with Power BI"
-      href: embedding.md
-    - name: "What is Power BI Embedded in Azure"
-      href: azure-pbie-what-is-power-bi-embedded.md
-    - name: "What is Power BI Embedded Generation 2"
-      href: "power-bi-embedded-generation-2.md"      
-  - name: Tutorials
-    expanded: true
-    items: 
-    - name: "Embed content for customers"
-      href: embed-sample-for-customers.md
-    - name: "Embed content for your organization"
-      href: embed-sample-for-your-organization.md
-    - name: "Embed paginated reports for customers"
-      href: embed-paginated-reports-customers.md
-    - name: "Embed paginated reports for your organization"
-      href: embed-paginated-reports-organization.md      
-    - name: "Embed content for national clouds"
-      href: embed-sample-for-customers-national-clouds.md
-    - name: "Embed a report in an app for your organization"
-      href: embed-organization-app.md      
-  - name: Concepts
     items:
-    - name: "Capacity and SKUs in Power BI embedded analytics"
-      href: embedded-capacity.md
-    - name: "Capacity planning"
-      href: embedded-capacity-planning.md
-    - name: "Embedded analytics application tokens"
-      href: embed-tokens.md      
-    - name: "Considerations for generating an embed token"
-      href: generate-embed-token.md
+    - name: "What is Power BI embedded analytics?"
+      href: embedded-analytics-power-bi.md
+    - name: Power BI Embedded features
+      href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
+    - name: "What is the Power BI Embedded analytics playground?"
+      href: "power-bi-playground.md"    
+  - name: Power BI Embedded setup
+    items: 
+    - name: "Create a Microsoft Entra tenant"
+      href: create-an-azure-active-directory-tenant.md
+    - name: "Power BI app registration tool"
+      href: register-app.md
+    - name: "Configure credentials"
+      href: configure-credentials.md    
+    - name: "Edit your app permissions"
+      href: change-permissions.md
+    - name: "Auto-install apps"
+      href: embed-auto-install-app.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
-    - name: "Row-level security"
-      href: embedded-row-level-security.md
-    - name: "Paginated reports Row-level security"
-      href: paginated-reports-row-level-security.md
-    - name: "Manage multi-tenants"
-      href: embed-multi-tenancy.md
-    - name: "Connect a report using dynamic binding"
-      href: embed-dynamic-binding.md
-    - name: "Azure diagnostic logging for Power BI Embedded"
-      href: ./monitor-power-bi-embedded.md
-    - name: "Embedding FAQ"
-      href: embedded-faq.yml
-  - name: How to
-    items:        
+    - name: "Monitor Power BI Embedded apps"
+      href: monitor-power-bi-embedded.md
+  - name: "Embed content"
+    items:
     - name: "Embed using service principal"
       href: embed-service-principal.md
     - name: "Embed using service principal and a certificate"
       href: embed-service-principal-certificate.md
-    - name: "Move an embedded app to production"
-      href: move-to-production.md          
+    - name: "Embed content for customers"
+      href: embed-sample-for-customers.md
+    - name: "Embed content for your organization"
+      href: embed-sample-for-your-organization.md
+    - name: "Embed content for national/regional clouds"
+      href: embed-sample-for-customers-national-clouds.md
+    - name: "Embed a report in an app for your customers"
+      href: embed-customer-app.md     
+    - name: "Embed a report in an app for your organization"
+      href: embed-organization-app.md 
+    - name: "Embed a paginated report"
+      href: embed-paginated-reports.md  
+    - name: "Embed in Salesforce"
+      href: embed-power-bi-salesforce.md        
+    - name: "Embedding Q&A"
+      href: qanda.md
+    - name: Secure embed
+      href: ../../collaborate-share/service-embed-secure.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
+  - name: Tokens
+    items:
+    - name: "Embedded analytics access tokens"
+      href: embed-tokens.md      
+    - name: "Generating an embed token"
+      href: generate-embed-token.md
+    - name: "Connect a report using dynamic binding"
+      href: embed-dynamic-binding.md
+  - name: Export to file
+    items:
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report to file"
-      href: export-paginated-report.md  
-    - name: "Auto-install apps"
-      href: embed-auto-install-app.md
-    - name: "Create an Azure Active Directory tenant"
-      href: create-an-azure-active-directory-tenant.md
-    - name: "Register an application"
-      href: register-app.md
-    - name: "Monitor Power BI Embedded"
-      href: monitor-power-bi-embedded.md      
-    - name: "Get an Azure AD access token"
-      href: get-azuread-access-token.md
-    - name: "Embedding Q&A"
-      href: qanda.md
+      href: export-paginated-report.md
+  - name: Capacities and SKUs
+    items:
+    - name: "Move an embedded app to production"
+      href: move-to-production.md    
+    - name: "Capacity and SKUs in Power BI embedded analytics"
+      href: embedded-capacity.md
+    - name: "Capacity planning"
+      href: embedded-capacity-planning.md
+    - name: Create a capacity in Azure
+      href: azure-pbie-create-capacity.md
+    - name: Create a capacity using Multi-Geo in Azure
+      href: embedded-multi-geo.md
+    - name: Assess capacity load
+      href: load-assessment-planning-tool.md
+    - name: Scale a capacity in Azure
+      href: azure-pbie-scale-capacity.md
+    - name: Pause and start a capacity in Azure
+      href: azure-pbie-pause-start.md
+  - name: Workspace separation and multitenancy
+    items:
+    - name: "Service principal profiles for multitenancy apps"
+      href: embed-multi-tenancy.md      
+    - name: "Power BI SDK and service principal profiles"
+      href: service-principal-profile-sdk.md
+    - name: "Migrate to the service principal profiles model"
+      href: migration-to-sp-profiles.md
+  - name: Security
+    items:
+    - name: "Embedding security features"
+      href: embedded-row-level-security.md
+    - name: "Embed with RLS"
+      href: cloud-rls.md
+    - name: "RLS in embedded paginated reports"
+      href: paginated-reports-row-level-security.md
+    - name: "Embed with on-premises SQL Server Analysis Services (SSAS)"
+      href: sql-server-analysis-services-embed.md
+    - name: "Embed with Azure Analysis Services (AAS)"
+      href: embed-azure-analysis-services.md
+    - name: "Embed with Single sign-on (SSO)"
+      href: rls-sso.md
+    - name: "Embed with object-level security (OLS)"
+      href: embed-object-level-security.md
+  - name: Support
+    items:
     - name: "Troubleshoot your embedded application"
       href: embedded-troubleshoot.md
-    - name: Manage capacities in Azure
-      items:
-      - name: Create a capacity in Azure
-        href: azure-pbie-create-capacity.md
-      - name: Create a capacity using Multi-Geo in Azure
-        href: embedded-multi-geo.md
-      - name: Scale a capacity in Azure
-        href: azure-pbie-scale-capacity.md
-      - name: Pause and start a capacity in Azure
-        href: azure-pbie-pause-start.md
-    - name: Migrate from Workspace Collections
-      items:
-      - name: "How to migrate from Power BI Workspace Collections"
-        href: migrate-from-powerbi-embedded.md  
-      - name: Migration tool
-        href: migrate-tool.md
-      - name: "Migration code snippets"
-        href: migrate-code-snippets.md
+    - name: Troubleshoot REST APIs
+      href: troubleshoot-rest-api.md
+    - name: "Embedding FAQ"
+      href: embedded-faq.yml
   - name: Reference
     items:
     - name: APIs
@@ -102,14 +123,20 @@
         href: /rest/api/power-bi-embedded/
       - name: Power BI REST APIs
         href: /rest/api/power-bi/
+      - name: "Push datasets limitations"
+        href: push-datasets-limitations.md
+      - name: "Semantic models permissions"
+        href: datasets-permissions.md            
     - name: "Power BI Developer in a Day course"
       href: ../../learning-catalog/developer-online-course.md
     - name: "Monitor Power BI Embedded data reference"
-      href: monitor-power-bi-embedded-reference.md        
+      href: monitor-power-bi-embedded-reference.md            
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
     - name: Azure CLI
       href: /cli/azure/powerbi
+    - name: Power BI glossary
+      href: pbi-glossary.md
   - name: Resources
     items:
     - name: "Power BI Dev Camp"
@@ -118,7 +145,7 @@
       href: https://powerbi.microsoft.com/en-us/developers/
     - name: "Embedding setup tool"
       href: https://aka.ms/embedsetup
-    - name: "JavaScript Playground Sample"
+    - name: "Embedded analytics playground"
       href: https://go.microsoft.com/fwlink/?linkid=848279
     - name: "Power BI embedded analytics Client APIs"
       href: /javascript/api/overview/powerbi/

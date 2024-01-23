@@ -6,6 +6,81 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-207-scorecard-in-app-wont-load-until-user-visits-workspace-first.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-203-decomposition-tree-shows-title-collapsed-level.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-copy-paste.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-copy-paste",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-preview-features.md",
+            "redirect_url": "/power-bi/consumer/end-user-experience",
+            "redirect_document_id": false
+        }, 
+        {
+	    "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-193-decomposition-tree-first-level-incorrectly-expanded.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-185-duplicate-erroneous-email-during-classic-workspace-upgrade.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-175-unable-to-load-dataset-list-in-excel.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-166-dax-query-fails-parameter-case-sensitivity.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-164-filter-not-correct-after-applying-bookmark.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-152-uploading-paginated-report-with-same-name-fails.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-planned-maintenance.md",
+            "redirect_url": "/power-bi/support/service-planned-maintenance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/service-planned-maintenance.md",
+            "redirect_url": "/power-bi/support/service-planned-maintenance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-167-matrix-banded-row-colors-incorrect-service.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-disable-directquery-connections-to-dataset.md",
+            "redirect_url": "/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
             "redirect_url": "/power-bi",
             "redirect_document_id": false
@@ -166,13 +241,13 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
+            "source_path": "powerbi-docs/service-connect-to-bing.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-bing.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "source_path": "powerbi-docs/report-server/tutorial-explore-report-server-web-portal.md",
+            "redirect_url": "/power-bi/report-server/install-report-server",
             "redirect_document_id": false
         },
         {
@@ -266,6 +341,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/report-server/report-server-migration-tool.md",
+            "redirect_url": "/power-bi/report-server/whats-new",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/report-server/user-handbook-overview.md",
             "redirect_url": "/power-bi/report-server/get-started",
             "redirect_document_id": true
@@ -314,6 +394,11 @@
             "source_path": "powerbi-docs/consumer/end-user-export-data.md",
             "redirect_url": "/power-bi/visuals/power-bi-visualization-export-data",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-export.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-export-data",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/template-content-pack-experience.md",
@@ -411,6 +496,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-notification-center.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-notification-center",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "powerbi-docs/mobile-apps-offline-data.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-offline-data",
             "redirect_document_id": true
@@ -432,7 +522,12 @@
         },
         {
             "source_path": "powerbi-docs/mobile-apps-scan-barcode-iphone.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode-iphone",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-scan-barcode-iphone.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-scan-barcode",
             "redirect_document_id": true
         },
         {
@@ -667,7 +762,7 @@
         },
         {
             "source_path": "powerbi-docs/consumer/power-bi-visualizations-arcgis.md",
-            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_url":  "/power-bi/visuals/power-bi-visualizations-arcgis",
             "redirect_document_id": true
         },
         {
@@ -701,6 +796,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-q-and-a-tutorial.md",
+            "redirect_url": "/power-bi/natural-language/end-user-q-and-a-tutorial.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-getting-started-with-color-formatting-and-axis-properties.md",
             "redirect_url": "/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties",
             "redirect_document_id": true
@@ -722,12 +822,22 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/paginated-reports-subscriptions.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/paginated-reports-view-parameters.md",
             "redirect_url": "/power-bi/consumer/paginated-reports-view-parameters",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/add-assembly-reference.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/custom-code-and-assembly-references-in-expressions",
             "redirect_document_id": true
         },
         {
@@ -817,7 +927,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-featured.md",
-            "redirect_url": "/power-bi/consumer/end-user-featured",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-featured.md",
+            "redirect_url": "/power-bi/consumer/end-user-dashboards",
             "redirect_document_id": true
         },
         {
@@ -871,6 +986,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-visual-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-preview-features.md",
             "redirect_url": "/power-bi/consumer/end-user-preview-features",
             "redirect_document_id": true
@@ -882,8 +1002,13 @@
         },
         {
             "source_path": "powerbi-docs/service-publish-to-powerpoint.md",
-            "redirect_url": "/power-bi/consumer/end-user-powerpoint",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-powerpoint.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-powerpoint",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-q-and-a-tips.md",
@@ -932,7 +1057,12 @@
         },
         {
             "source_path": "powerbi-docs/service-shared-with-me.md",
-            "redirect_url": "/power-bi/consumer/end-user-shared-with-me",
+            "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-shared-with-me.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
             "redirect_document_id": true
         },
         {
@@ -943,7 +1073,7 @@
         {
             "source_path": "powerbi-docs/service-reading-view-and-editing-view.md",
             "redirect_url": "/power-bi/consumer/end-user-reading-view",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-free-vs-pro.md",
@@ -986,6 +1116,10 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/support/service-admin-portal-help-support.md",
+            "redirect_url": "/power-bi/admin/service-admin-portal-help-support",
+            "redirect_document_id": false
+        },{
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
             "redirect_url": "/power-bi/admin/service-admin-portal",
             "redirect_document_id": false
@@ -1037,7 +1171,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium.md",
-            "redirect_url": "/power-bi/admin/service-premium-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -1052,12 +1186,12 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-large-datasets.md",
-            "redirect_url": "/power-bi/admin/service-premium-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
-            "redirect_url": "/power-bi/admin/service-premium-capacity-optimize",
+            "redirect_url": "/power-bi/enterprise/service-premium-architecture",
             "redirect_document_id": false
         },
         {
@@ -1107,9 +1241,14 @@
         },
         {
             "source_path": "powerbi-docs/service-cortana-answer-cards.md",
-            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/natural-language/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
+        {
+            "source_path": "powerbi-docs/create-reports/power-bi-tutorial-q-and-a.md",
+            "redirect_url": "/power-bi/natural-language/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },      
         {
             "source_path": "powerbi-docs/service-cortana-intro.md",
             "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
@@ -1297,7 +1436,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/encrypt-credentials.md",
-            "redirect_url": "/power-bi/developer/automation/configure-credentials",
+            "redirect_url": "/power-bi/developer/embedded/configure-credentials",
             "redirect_document_id": false
         },
         {
@@ -1322,7 +1461,17 @@
         },
         {
             "source_path": "powerbi-docs/paginated-reports-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/paginated-reports-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/paginated-formatted-table.md",
+            "redirect_url": "/power-bi/paginated-reports/web-authoring/paginated-formatted-table",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/paginated-reports-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/paginated-reports-create-parameters",
             "redirect_document_id": false
         },
         {
@@ -1362,7 +1511,12 @@
         },
         {
             "source_path": "powerbi-docs/report-builder-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/report-builder-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/report-builder-parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/report-builder-parameters",
             "redirect_document_id": false
         },
         {
@@ -1397,7 +1551,82 @@
         },
         {
             "source_path": "powerbi-docs/report-builder-url-pass-parameters.md",
-            "redirect_url": "/power-bi/paginated-reports/report-builder-url-pass-parameters",
+            "redirect_url": "/power-bi/paginated-reports/parameters/pass-report-parameter-url",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-url-pass-parameters.md",
+            "redirect_url": "/power-bi/paginated-reports/parameters/pass-report-parameter-url",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/formatting-numbers-and-dates-report-builder-and-service.md",
+            "redirect_url": "/power-bi/paginated-reports/report-design/format-numbers-dates-report-builder-service",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-previous-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-previous-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-multilookup-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-multilookup-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-max-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-max-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-last-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-last-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/report-builder-functions-first-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-first-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/report-builder-functions-countrows-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-countrows-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/report-builder-functions-countdistinct-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-countdistinct-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/report-builder-functions-avg-function.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-functions-avg-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder/hide-item-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/report-builder-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/expression-uses-reports-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/expression-uses-reports-report-builder",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-expressions.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-expressions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-builder-expression-examples.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/report-builder-expression-examples",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/report-design/built-in-collections-report-group-variables-references-report-builder.md",
+            "redirect_url": "/power-bi/paginated-reports/expressions/built-in-collections-report-group-variables-references-report-builder",
             "redirect_document_id": false
         },
         {
@@ -1407,57 +1636,57 @@
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-get-token.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-get-token",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-create-dataset.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-create-dataset",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-get-datasets.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-get-datasets",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-add-rows.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-add-rows",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-automatic-retention-policy-for-real-time-data.md",
-            "redirect_url": "/power-bi/developer/automation/api-automatic-retention-policy-for-real-time-data",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-rest-api-limitations.md",
-            "redirect_url": "/power-bi/developer/automation/api-rest-api-limitations",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-dataset-properties.md",
-            "redirect_url": "/power-bi/developer/automation/api-dataset-properties",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/api-data-model-versioning.md",
-            "redirect_url": "/power-bi/developer/automation/api-data-model-versioning",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/configure-credentials.md",
-            "redirect_url": "/power-bi/developer/automation/configure-credentials",
+            "redirect_url": "/power-bi/developer/embedded/configure-credentials",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/walkthrough-push-data-complete-code.md",
-            "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-complete-code",
+            "redirect_url": "/rest/api/power-bi/",
             "redirect_document_id": false
         },
         {
@@ -1542,7 +1771,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/azure-pbie-what-is-power-bi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/azure-pbie-what-is-power-bi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -1572,7 +1801,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/embed-paginated-reports-customers.md",
-            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports-customers",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
             "redirect_document_id": false
         },
         {
@@ -1647,22 +1876,22 @@
         },
         {
             "source_path": "powerbi-docs/developer/get-azuread-access-token.md",
-            "redirect_url": "/power-bi/developer/embedded/get-azuread-access-token",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-code-snippets.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-code-snippets",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-from-powerbi-embedded.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-from-powerbi-embedded",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/migrate-tool.md",
-            "redirect_url": "/power-bi/developer/embedded/migrate-tool",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
             "redirect_document_id": false
         },
         {
@@ -1722,7 +1951,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-privacy-levels.md",
-            "redirect_url": "/power-bi/admin/desktop-privacy-levels",
+            "redirect_url": "/power-bi/enterprise/desktop-privacy-levels",
             "redirect_document_id": true
         },
         {
@@ -1736,33 +1965,38 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/power-bi-cannot-sign-in.md",
+            "redirect_url": "/power-bi/support/power-bi-cannot-sign-in",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-whitelist-urls.md",
             "redirect_url": "/power-bi/admin/power-bi-whitelist-urls",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-access-usage.md",
-            "redirect_url": "/power-bi/admin/service-admin-access-usage",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/admin/service-admin-access-usage",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-administering-power-bi-in-your-organization.md",
-            "redirect_url": "/power-bi/admin/service-admin-administering-power-bi-in-your-organization",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/admin/microsoft-fabric-admin",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-alternate-email-address-for-power-bi.md",
-            "redirect_url": "/power-bi/admin/service-admin-alternate-email-address-for-power-bi",
+            "redirect_url": "/power-bi/enterprise/service-admin-alternate-email-address-for-power-bi",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-auditing.md",
-            "redirect_url": "/power-bi/admin/service-admin-auditing",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/admin/service-admin-portal-audit-usage",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-azure-ad-b2b.md",
-            "redirect_url": "/power-bi/admin/service-admin-azure-ad-b2b",
+            "redirect_url": "/power-bi/enterprise/service-admin-azure-ad-b2b",
             "redirect_document_id": true
         },
         {
@@ -1771,8 +2005,13 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-admin-capturing-additional-diagnostic-information-for-power-bi.md",
+            "redirect_url": "/power-bi/support/service-admin-capturing-additional-diagnostic-information-for-power-bi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-admin-closing-your-account.md",
-            "redirect_url": "/power-bi/admin/service-admin-closing-your-account",
+            "redirect_url": "/power-bi/enterprise/service-admin-closing-your-account",
             "redirect_document_id": true
         },
         {
@@ -1792,12 +2031,12 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-governance.md",
-            "redirect_url": "/power-bi/admin/service-admin-governance",
+            "redirect_url": "/power-bi/enterprise/service-admin-governance",
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-admin-health.md",
-            "redirect_url": "/power-bi/admin/service-admin-health",
+            "source_path": "powerbi-docs/admin/service-admin-health.md",
+            "redirect_url": "/power-bi/support/service-admin-health",
             "redirect_document_id": true
         },
         {
@@ -1807,7 +2046,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-licensing-organization.md",
-            "redirect_url": "/power-bi/admin/service-admin-licensing-organization",
+            "redirect_url": "/power-bi/enterprise/service-admin-licensing-organization",
             "redirect_document_id": true
         },
         {
@@ -1817,7 +2056,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-mobile-intune.md",
-            "redirect_url": "/power-bi/admin/service-admin-mobile-intune",
+            "redirect_url": "/power-bi/enterprise/service-admin-mobile-intune",
             "redirect_document_id": true
         },
         {
@@ -1832,57 +2071,57 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-power-bi-security.md",
-            "redirect_url": "/power-bi/admin/service-admin-power-bi-security",
+            "redirect_url": "/power-bi/enterprise/service-admin-power-bi-security",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-manage.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-manage",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-manage",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-monitor-capacity.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-monitor-capacity",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-monitor-portal.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-monitor-portal",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-multi-geo.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-multi-geo",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/admin/service-admin-premium-multi-geo",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-purchase.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-purchase",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-purchase",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-restart.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-restart",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-premium-workloads.md",
-            "redirect_url": "/power-bi/admin/service-admin-premium-workloads",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-workloads",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-purchasing-power-bi-pro.md",
-            "redirect_url": "/power-bi/admin/service-admin-purchasing-power-bi-pro",
+            "redirect_url": "/power-bi/enterprise/service-admin-purchasing-power-bi-pro",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-reference.md",
-            "redirect_url": "/power-bi/admin/service-admin-reference",
+            "redirect_url": "/power-bi/enterprise/service-admin-reference",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-rls.md",
-            "redirect_url": "/power-bi/admin/service-admin-rls",
+            "redirect_url": "/power-bi/enterprise/service-admin-rls",
             "redirect_document_id": true
         },
         {
@@ -1892,12 +2131,12 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md",
-            "redirect_url": "/power-bi/admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
+            "redirect_url": "/power-bi/enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-syndication-partner.md",
-            "redirect_url": "/power-bi/admin/service-admin-syndication-partner",
+            "redirect_url": "/power-bi/enterprise/service-admin-syndication-partner",
             "redirect_document_id": true
         },
         {
@@ -1917,8 +2156,13 @@
         },
         {
             "source_path": "powerbi-docs/service-collaborate-power-bi-workspace.md",
-            "redirect_url": "/power-bi/collaborate-share/service-collaborate-power-bi-workspace",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-collaborate-power-bi-workspace.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-create-distribute-apps.md",
@@ -1932,7 +2176,12 @@
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-workspaces-new-look.md",
-            "redirect_url": "/power-bi/collaborate-share/service-create-workspaces",
+            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-create-workspaces.md",
+            "redirect_url": "/power-bi/collaborate-share/service-create-the-new-workspaces",
             "redirect_document_id": false
         },
         {
@@ -1952,7 +2201,7 @@
         },
         {
             "source_path": "powerbi-docs/service-encryption-byok.md",
-            "redirect_url": "/power-bi/admin/service-encryption-byok",
+            "redirect_url": "/power-bi/enterprise/service-encryption-byok",
             "redirect_document_id": true
         },
         {
@@ -1962,17 +2211,17 @@
         },
         {
             "source_path": "powerbi-docs/service-govde-faq.md",
-            "redirect_url": "/power-bi/admin/service-govde-faq",
-            "redirect_document_id": true
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-govus-overview.md",
-            "redirect_url": "/power-bi/admin/service-govus-overview",
+            "redirect_url": "/power-bi/enterprise/service-govus-overview",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-govus-signup.md",
-            "redirect_url": "/power-bi/admin/service-govus-signup",
+            "redirect_url": "/power-bi/enterprise/service-govus-signup",
             "redirect_document_id": true
         },
         {
@@ -1986,9 +2235,19 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-interruption-notifications.md",
+            "redirect_url": "/power-bi/support/service-interruption-notifications",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-manage-app-workspace-in-power-bi-and-office-365.md",
-            "redirect_url": "/power-bi/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-modern-usage-metrics.md",
@@ -1998,32 +2257,57 @@
         {
             "source_path": "powerbi-docs/service-new-workspaces.md",
             "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-copy-refresh-access.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-copy-refresh-access",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-copy-refresh-access.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-create-and-publish.md",
             "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-create-and-publish",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-create-and-publish.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-disconnect.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-disconnect",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-disconnect.md",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-introduction.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-introduction",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-introduction.md",
+            "redirect_url": "/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-manage-update-delete.md",
-            "redirect_url": "/power-bi/collaborate-share/service-organizational-content-pack-manage-update-delete",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-organizational-content-pack-manage-update-delete.md",
+            "redirect_url": "/power-bi/connect-data/service-template-update-delete-extract",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-power-bi-get-started-third-party-apps.md",
@@ -2032,42 +2316,42 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-capacity-manage.md",
-            "redirect_url": "/power-bi/admin/service-premium-capacity-manage",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-premium-capacity-optimize.md",
-            "redirect_url": "/power-bi/admin/service-premium-capacity-optimize",
+            "redirect_url": "/power-bi/enterprise/service-premium-architecture",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-premium-capacity-scenarios.md",
-            "redirect_url": "/power-bi/admin/service-premium-capacity-scenarios",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-premium-connect-tools.md",
-            "redirect_url": "/power-bi/admin/service-premium-connect-tools",
+            "redirect_url": "/power-bi/enterprise/service-premium-connect-tools",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-premium-faq.md",
-            "redirect_url": "/power-bi/admin/service-premium-faq",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-premium-large-models.md",
-            "redirect_url": "/power-bi/admin/service-premium-large-models",
+            "redirect_url": "/power-bi/enterprise/service-premium-large-models",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-premium-metrics-app.md",
-            "redirect_url": "/power-bi/admin/service-premium-metrics-app",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/enterprise/metrics-app",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-premium-what-is.md",
-            "redirect_url": "/power-bi/admin/service-premium-what-is",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
             "redirect_document_id": true
         },
         {
@@ -2077,12 +2361,27 @@
         },
         {
             "source_path": "powerbi-docs/service-report-subscribe.md",
-            "redirect_url": "/power-bi/collaborate-share/service-report-subscribe",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/service-troubleshoot-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/service-troubleshoot-subscribe",
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/collaborate-share/service-report-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-subscribe.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-subscribe",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/designer/service-security-apply-data-sensitivity-labels.md",
-            "redirect_url": "/power-bi/collaborate-share/service-security-apply-data-sensitivity-labels",
+            "redirect_url": "/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
             "redirect_document_id": true
         },
         {
@@ -2106,13 +2405,23 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/admin/service-support-options.md",
+            "redirect_url": "/power-bi/support/service-support-options",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-tutorial-analyze-in-excel.md",
             "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
-            "redirect_url": "/power-bi/collaborate-share/service-upgrade-workspaces",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-upgrade-workspaces.md",
+            "redirect_url": "/power-bi/collaborate-share/service-new-workspaces",
             "redirect_document_id": true
         },
         {
@@ -2147,8 +2456,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-connect-azure-consumption-insights.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-consumption-insights",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-cost-management",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-azure-consumption-insights.md",
+            "redirect_url": "/power-bi/connect-data/desktop-connect-azure-cost-management",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-azure-cost-management.md",
@@ -2172,8 +2486,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-connect-graph-security.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-graph-security",
-            "redirect_document_id": true
+            "redirect_url": "/power-query/connectors/microsoft-graph-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-graph-security.md",
+            "redirect_url": "/power-query/connectors/microsoft-graph-security",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-impala.md",
@@ -2201,9 +2520,9 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/desktop-connect-pdf.md",
-            "redirect_url": "/power-bi/connect-data/desktop-connect-pdf",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/create-reports/desktop-connect-pdf.md",
+            "redirect_url": "/power-bi/consumer/end-user-pdf",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-connect-redshift.md",
@@ -2418,7 +2737,7 @@
         {
             "source_path": "powerbi-docs/desktop-use-onedrive-business-links.md",
             "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/powerbi-azure-landing.md",
@@ -2537,22 +2856,27 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-search.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-azure-search",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-azure-search.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
-            "redirect_url": "/power-bi/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business",
+            "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
+            "redirect_url": "/power-bi/connect-data/desktop-use-onedrive-business-links",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-connect-to-github.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-github",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "powerbi-docs/service-connect-to-microsoft-sustainability-calculator.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
             "redirect_document_id": true
         },
         {
@@ -2587,8 +2911,18 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-xero.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-analyze-stocks.md",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-template-apps-samples.md",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-zendesk.md",
@@ -2817,8 +3151,13 @@
         },
         {
             "source_path": "powerbi-docs/service-refresh-xero-credentials.md",
-            "redirect_url": "/power-bi/connect-data/service-refresh-xero-credentials",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-refresh-xero-credentials.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-xero",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-r-packages-support.md",
@@ -2892,7 +3231,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-aggregations.md",
-            "redirect_url": "/power-bi/transform-model/desktop-aggregations",
+            "redirect_url": "/power-bi/transform-model/aggregations-advanced",
             "redirect_document_id": true
         },
         {
@@ -3187,7 +3526,12 @@
         },
         {
             "source_path": "powerbi-docs/desktop-create-phone-report.md",
-            "redirect_url": "/power-bi/create-reports/desktop-create-phone-report",
+            "redirect_url": "/power-bi/create-reports/power-bi-create-mobile-optimized-report-about",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-create-phone-report.md",
+            "redirect_url": "/power-bi/create-reports/power-bi-create-mobile-optimized-report-about",
             "redirect_document_id": true
         },
         {
@@ -3217,8 +3561,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-export-to-pdf.md",
-            "redirect_url": "/power-bi/create-reports/desktop-export-to-pdf",
+            "redirect_url": "/power-bi/consumer/end-user-pdf",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-pdf.md",
+            "redirect_url": "/power-bi/collaborate-share/end-user-pdf",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-gridlines-snap-to-grid.md",
@@ -3242,6 +3591,11 @@
         },
         {
             "source_path": "powerbi-docs/desktop-high-density-scatter-charts.md",
+            "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/visuals/desktop-high-density-scatter-charts.md",
             "redirect_url": "/power-bi/create-reports/desktop-high-density-scatter-charts",
             "redirect_document_id": true
         },
@@ -3291,6 +3645,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/create-reports/desktop-rls.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-rls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/desktop-r-powered-custom-visuals.md",
             "redirect_url": "/power-bi/create-reports/desktop-r-powered-custom-visuals",
             "redirect_document_id": true
@@ -3303,6 +3662,16 @@
         {
             "source_path": "powerbi-docs/desktop-see-data-see-records.md",
             "redirect_url": "/power-bi/create-reports/desktop-see-data-see-records",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/desktop-see-data-see-records.md",
+            "redirect_url": "/power-bi/create-reports/end-user-show-data",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-show-data.md",
+            "redirect_url": "/power-bi/create-reports/end-user-show-data",
             "redirect_document_id": true
         },
         {
@@ -3498,7 +3867,7 @@
         {
             "source_path": "powerbi-docs/service-dashboard-create.md",
             "redirect_url": "/power-bi/create-reports/service-dashboard-create",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-dashboard-edit-tile.md",
@@ -3522,7 +3891,12 @@
         },
         {
             "source_path": "powerbi-docs/service-dashboard-pin-tile-from-report.md",
-            "redirect_url": "/power-bi/create-reports/service-dashboard-pin-tile-from-report",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-dashboard-pin-tile-from-report.md",
+            "redirect_url": "/power-bi/create-reports/service-dashboard-create",
             "redirect_document_id": true
         },
         {
@@ -3547,8 +3921,13 @@
         },
         {
             "source_path": "powerbi-docs/service-data-classification.md",
-            "redirect_url": "/power-bi/create-reports/service-data-classification",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-data-classification.md",
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-delete.md",
@@ -3612,8 +3991,13 @@
         },
         {
             "source_path": "powerbi-docs/service-report-save.md",
-            "redirect_url": "/power-bi/create-reports/service-report-save",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/service-report-save.md",
+            "redirect_url": "/power-bi/create-reports/desktop-upload-desktop-files",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-reports-visual-interactions.md",
@@ -3672,7 +4056,12 @@
         },
         {
             "source_path": "powerbi-docs/service-new-look.md",
-            "redirect_url": "/power-bi/consumer/service-new-look",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi/consumer/service-new-look.md",
+            "redirect_url": "/power-bi/consumer/end-user-reading-view",
             "redirect_document_id": true
         },
         {
@@ -3696,6 +4085,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/fundamentals/service-tips-for-finding-help.md",
+            "redirect_url": "/power-bi/support/service-tips-for-finding-help",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-whats-new.md",
             "redirect_url": "/power-bi/fundamentals/desktop-latest-update",
             "redirect_document_id": false
@@ -3703,6 +4097,11 @@
         {
             "source_path": "powerbi-docs/supported-languages-countries-regions.md",
             "redirect_url": "/power-bi/fundamentals/supported-languages-countries-regions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-region-move.md",
+            "redirect_url": "/power-bi/support/service-admin-region-move",
             "redirect_document_id": true
         },
         {
@@ -3722,8 +4121,8 @@
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-security-apply-data-sensitivity-labels.md",
-            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-arcgis.md",
@@ -3847,7 +4246,7 @@
         },                                                         
         {
             "source_path": "powerbi-docs/admin/power-bi-whitelist-urls.md",
-            "redirect_url": "/power-bi/admin/power-bi-allow-list-urls",
+            "redirect_url": "/power-bi/enterprise/power-bi-allow-list-urls",
             "redirect_document_id": false
         },
         {
@@ -3884,6 +4283,1484 @@
             "source_path": "powerbi-docs/create-reports/desktop-external-tools.md",
             "redirect_url": "/power-bi/transform-model/desktop-external-tools",
             "redirect_document_id": false
-        }
-    ]           
+        },
+		{
+		    "source_path": "powerbi-docs/fundamentals/security-baselines.md",
+		    "redirect_url": "/security/benchmark/azure/baselines/power-bi-security-baseline",
+		    "redirect_document_id": false
+		},
+        {
+		    "source_path": "powerbi-docs/transform-model/desktop-aggregations.md",
+		    "redirect_url": "/power-bi/admin/aggregations-auto",
+		    "redirect_document_id": false
+		},
+        {
+            "source_path": "powerbi-docs/developer/embedded/azure-pbie-what-is-power-bi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embedding.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-from-powerbi-embedded.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-tool.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/migrate-code-snippets.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-organization.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embed-paginated-reports-customers.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports",
+            "redirect_document_id": false
+        },   
+        {
+            "source_path": "powerbi-docs/developer/embedded/get-azuread-access-token.md",
+            "redirect_url": "/power-bi/developer/embedded/generate-embed-token",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-enhanced-metadata-scanning.md",
+            "redirect_url": "/power-bi/admin/service-admin-metadata-scanning",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-divide-function-operator.md",
+            "redirect_url": "/dax/best-practices/dax-divide-function-operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-error-functions.md",
+            "redirect_url": "/dax/best-practices/dax-error-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-selectedvalue.md",
+            "redirect_url": "/dax/best-practices/dax-selectedvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-countrows.md",
+            "redirect_url": "/dax/best-practices/dax-countrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-variables.md",
+            "redirect_url": "/dax/best-practices/dax-variables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-avoid-converting-blank.md",
+            "redirect_url": "/dax/best-practices/dax-avoid-converting-blank",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-column-measure-references.md",
+            "redirect_url": "/dax/best-practices/dax-column-measure-references",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-avoid-avoid-filter-as-filter-argument.md",
+            "redirect_url": "/dax/best-practices/dax-avoid-avoid-filter-as-filter-argument",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/dax-sample-model.md",
+            "redirect_url": "/dax/best-practices/dax-sample-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-migrate-data-germany.md",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-govde-faq.yml",
+            "redirect_url": "https://www.microsoft.com/cloud-platform/germany-cloud-regions",
+            "redirect_document_id": false
+        },
+        {
+
+            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-microsoft-sustainability-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-microsoft-sustainability-calculator.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-emissions-impact-dashboard",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/index.yml",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/overview-of-power-bi-rest-api.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-get-token.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-create-dataset.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-get-datasets.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-add-rows.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-automatic-retention-policy-for-real-time-data.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-rest-api-limitations.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-dataset-properties.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/api-data-model-versioning.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/rest-api-reference.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/automation/walkthrough-push-data-complete-code.md",
+            "redirect_url": "/rest/api/power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-security-using-microsoft-cloud-app-security-controls.md",
+            "redirect_url": "/power-bi/admin/service-security-using-defender-for-cloud-apps-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-emissions-impact-dashboard-for-m365.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-emissions-impact-dashboard-microsoft-365",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/admin/aggregations-auto-configure.md",
+            "redirect_url": "/power-bi/enterprise/aggregations-auto-configure",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/aggregations-auto.md",
+            "redirect_url": "/power-bi/enterprise/aggregations-auto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/read-only-apis-service-principal-authentication.md",
+            "redirect_url": "/power-bi/enterprise/read-only-apis-service-principal-authentication",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-disable-self-service.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-disable-self-service",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/desktop-privacy-levels.md",
+            "redirect_url": "/power-bi/enterprise/desktop-privacy-levels",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-alternate-email-address-for-power-bi.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-alternate-email-address-for-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-azure-ad-b2b.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-azure-ad-b2b",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-closing-your-account.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-closing-your-account",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-failover.yml",
+            "redirect_url": "/power-bi/enterprise/service-admin-failover",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-governance.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-governance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-licensing-organization.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-licensing-organization",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-admin-manage-licenses.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-manage-licenses",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-metadata-scanning.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-metadata-scanning",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-admin-mobile-intune.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-mobile-intune",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-org-subscription.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-org-subscription",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-power-bi-security.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-power-bi-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-manage.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-manage",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-monitor-capacity.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-monitor-portal.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-purchase.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-purchase",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-restart.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-testing.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-testing",
+            "redirect_document_id": false
+        },   
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-workloads.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-premium-workloads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-purchasing-power-bi-pro.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-purchasing-power-bi-pro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-reference.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-reference",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-admin-rls.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-rls",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-admin-site-reliability-engineering-model.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-site-reliability-engineering-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-syndication-partner.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-syndication-partner",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-encryption-byok.md",
+            "redirect_url": "/power-bi/enterprise/service-encryption-byok",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-encryption-customer-managed-keys.md",
+            "redirect_url": "/power-bi/enterprise/service-encryption-customer-managed-keys",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-govus-overview.md",
+            "redirect_url": "/power-bi/enterprise/service-govus-overview",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-govus-signup.md",
+            "redirect_url": "/power-bi/enterprise/service-govus-signup",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-architecture.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-architecture",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-auto-scale.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-auto-scale",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-backup-restore-dataset.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-backup-restore-dataset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-capacity-manage-gen2.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-capacity-manage.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-capacity-optimize.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-architecture",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-capacity-scenarios.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-concepts.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-concepts",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-connect-tools.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-connect-tools",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-faq.yml",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-premium-gen2-faq.yml",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-metrics-app.md",
+            "redirect_url": "/fabric/enterprise/metrics-app",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-what-is.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-gen2-what-is.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-gen2-what-is.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },                  
+        {
+            "source_path": "powerbi-docs/admin/service-premium-install-gen2-app.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-install-app",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-install-gen2-app.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-install-app",
+            "redirect_document_id": false
+        },          
+        {
+            "source_path": "powerbi-docs/admin/service-premium-large-models.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-large-models",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-per-user-faq.yml",
+            "redirect_url": "/power-bi/enterprise/service-premium-per-user-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-premium-service-principal.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-service-principal",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-service-tags.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-service-tags",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-premium-transition-gen1-to-gen2.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },   
+        {
+            "source_path": "powerbi-docs/admin/service-security-apply-data-sensitivity-labels.md",
+            "redirect_url": "/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-data-protection-metrics-report.md",
+            "redirect_url": "/power-bi/enterprise/service-security-data-protection-metrics-report",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-data-protection-overview.md",
+            "redirect_url": "/power-bi/enterprise/service-security-data-protection-overview",
+            "redirect_document_id": false
+        },   
+        {
+            "source_path": "powerbi-docs/admin/service-security-dlp-policies-for-power-bi.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-enable-data-sensitivity-labels.md",
+            "redirect_url": "/power-bi/enterprise/service-security-enable-data-sensitivity-labels",
+            "redirect_document_id": false
+        },   
+        {
+            "source_path": "powerbi-docs/admin/service-security-private-links.md",
+            "redirect_url": "/power-bi/enterprise/service-security-private-links",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-audit-schema.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-audit-schema",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-change-enforcement.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-change-enforcement",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-custom-help-link.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-custom-help-link",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-default-label-policy.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-default-label-policy",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-downstream-inheritance.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-downstream-inheritance",
+            "redirect_document_id": false
+        },  
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-inheritance-from-data-sources.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-inheritance-set-remove-api.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-inheritance-set-remove-api",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-mandatory-label-policy.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-mandatory-label-policy",
+            "redirect_document_id": false
+        },   
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-overview.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-overview",
+            "redirect_document_id": false
+        },    
+        {
+            "source_path": "powerbi-docs/admin/service-security-sensitivity-label-paginated-reports.md",
+            "redirect_url": "/power-bi/enterprise/service-security-sensitivity-label-paginated-reports",
+            "redirect_document_id": false
+        },    
+        {
+            "source_path": "powerbi-docs/admin/service-security-using-defender-for-cloud-apps-controls.md",
+            "redirect_url": "/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/troubleshoot-xmla-endpoint.md",
+            "redirect_url": "/power-bi/enterprise/troubleshoot-xmla-endpoint",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/template-apps/template-apps-auto-install.md",
+            "redirect_url": "/power-bi/connect-data/template-apps-auto-install",
+            "redirect_document_id": true
+        },                                                                       
+        {
+            "source_path": "powerbi-docs/developer/template-apps/template-apps-auto-install-tutorial.md",
+            "redirect_url": "/power-bi/connect-data/template-apps-auto-install-tutorial",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-datasets-hub.md",
+            "redirect_url": "/power-bi/connect-data/service-data-hub",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
+            "redirect_url": "/power-bi/consumer/end-user-data-hub",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-design-tips-axes.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-chart-gridlines.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-labels.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-legends.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-shapes-images-icons.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-sort-distribute-data-plots.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/report-tips-visual-colors.md",
+            "redirect_url": "/learn/paths/power-bi-effective/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-goals.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-android-error-update-android-system-webview.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-governance.md",
+            "redirect_url": "/power-bi/guidance/powerbi-adoption-roadmap-governance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-forgot-your-password.md",
+            "redirect_url": "/power-bi/admin/power-bi-cannot-sign-in",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/admin-tenant-settings.md",
+            "redirect_url": "/power-bi/admin/service-admin-portal-about-tenant-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/admin-microsoft-graph-metadata.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/embedded-transition-gen1-to-gen2.md",
+            "redirect_url": "/power-bi/developer/embedded/index",
+            "redirect_document_id": false
+        },
+        {
+
+            "source_path": "powerbi-docs/developer/embedded/power-bi-embedded-generation-2.md",
+            "redirect_url": "/power-bi/developer/embedded/embedded-analytics-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-capacity-optimize.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-architecture",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-capacity-manage-gen2.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-capacity-manage",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-monitor-capacity.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-restart.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-gen2-faq.yml",
+            "redirect_url": "/power-bi/enterprise/service-premium-faq",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-monitor-portal.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-capacity-scenarios.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-transition-gen1-to-gen2.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-gen2-metrics-app.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium-gen2.md",
+            "redirect_url": "/power-bi/troubleshoot/known-issues/known-issue-dataflow-on-premium",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-m365-data-access-storage.md",
+            "redirect_url": "/power-bi/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false                                                                                                                                                          
+        },  
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-bigquery.md",
+            "redirect_url": "/power-query/connectors/google-bigquery",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-to-web-by-example.md",
+            "redirect_url": "/power-query/connectors/web/web-by-example",
+            "redirect_document_id": false
+        },                                            
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-adobe-analytics.md",
+            "redirect_url": "/power-query/connectors/adobe-analytics",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-redshift.md",
+            "redirect_url": "/power-query/connectors/amazon-redshift",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-odata.md",
+            "redirect_url": "/power-query/connectors/odata-feed",
+            "redirect_document_id": false
+        },                                
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-excel.md",
+            "redirect_url": "/power-query/connectors/excel",
+            "redirect_document_id": false
+        },                                      
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-snowflake.md",
+            "redirect_url": "/power-query/connectors/snowflake",
+            "redirect_document_id": false
+        },           
+        {
+            "source_path": "powerbi-docs/connect-data/service-google-analytics-connector.md",
+            "redirect_url": "/power-query/connectors/google-analytics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-sap-hana.md",
+            "redirect_url": "/power-query/connectors/sap-hana/overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-sap-hana-encryption.md",
+            "redirect_url": "/power-query/connectors/sap-hana/sap-hana-encryption",
+            "redirect_document_id": false
+        },                                             
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-274-excel-add-in-cant-find-datasets.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-213-visual-context-menus-cut-off-embedded.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-211-getvisuals-api-return-blank-title.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-204-dremio-connector-missing.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-169-try-it-button-missing.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-unable-open-protected-desktop-file.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-dataflow-on-premium.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-178-multi-role-rls-composite-model-fail.md",
+            "redirect_url": "/power-bi-known-issues/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },     
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-pdf.md",
+            "redirect_url": "/power-query/connectors/pdf",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-csv.md",
+            "redirect_url": "/power-query/connectors/text-csv",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-impala.md",
+            "redirect_url": "/power-query/connectors/impala-database",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-connect-using-generic-interfaces.md",
+            "redirect_url": "/power-query/connect-using-generic-interfaces",
+            "redirect_document_id": false
+        },                                                    
+        {
+            "source_path": "powerbi-docs/connect-data/desktop-directquery-datasets-azure-analysis-services.md",
+            "redirect_url": "/power-bi/transform-model/desktop-composite-models",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-overview.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-pin-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-find-pinned-reports.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-set-up.md",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/jupyter-quick-report.md",
+            "redirect_url": "/power-bi/create-report/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-override.md",
+            "redirect_url": "/power-bi/enterprise/service-security-dlp-policies-for-power-bi-respond",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/log-analytics/install-as-engine-app.md",
+            "redirect_url": "/power-bi/transform-model/log-analytics/desktop-log-analytics-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/log-analytics/desktop-loganalytics-reportguide-datasets.md",
+            "redirect_url": "/power-bi/transform-model/log-analytics/desktop-log-analytics-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-pbi-premium-capacity-metrics.md",
+            "redirect_url": "/power-bi/enterprise/service-premium-metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-power-bi-security-lockbox.md",
+            "redirect_url": "/fabric/security/security-lockbox",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-data-hub.md",
+            "redirect_url": "/fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/index.yml",
+            "redirect_url": "/fabric/admin/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-share-data-microsoft-365-services.md",
+            "redirect_url": "/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-help-support.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-help-support",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-workspace.md",
+            "redirect_url": "/fabric/admin/portal-workspace",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-information-protection.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-information-protection",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-export-sharing.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-export-sharing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-discovery.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-discovery",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-content-pack-app.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-integration.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-integration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-power-bi-visuals.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-power-bi-visuals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-r-python-visuals.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-r-python-visuals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-audit-usage.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-audit-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-dashboard.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-dashboard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-developer.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-developer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-admin-api-settings.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-admin-api-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-dataflow.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-dataflow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/admin-share-power-bi-metadata-microsoft-365-services.md",
+            "redirect_url": "/fabric/admin/admin-share-power-bi-metadata-microsoft-365-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-template-app.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-template-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-qa.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-qa",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-dataset-security.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-dataset-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-advanced-networking.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-advanced-networking",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-goals-settings.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-goals-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-user-experience-experiments.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-user-experience-experiments",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-insights.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-insights",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-datamart.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-datamart",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-data-model.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-data-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-quick-measure-suggestions-settings.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-quick-measure-suggestions-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-scale-out.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-scale-out",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-git-integration.md",
+            "redirect_url": "/fabric/admin/git-integration-admin-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal.md",
+            "redirect_url": "/fabric/admin/admin-center",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-where-is-my-tenant-located.md",
+            "redirect_url": "/fabric/admin/find-fabric-home-region",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-faq.yml",
+            "redirect_url": "/fabric/admin/microsoft-fabric-admin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-how-to-use-the-same-account-as-azure.md",
+            "redirect_url": "/fabric/admin/microsoft-fabric-admin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-role.md",
+            "redirect_url": "/fabric/admin/roles",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-administering-power-bi-in-your-organization.md",
+            "redirect_url": "/fabric/admin/microsoft-fabric-admin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/organizational-visuals.md",
+            "redirect_url": "/fabric/admin/organizational-visuals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-access-usage.md",
+            "redirect_url": "/fabric/admin/service-admin-access-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-multi-geo.md",
+            "redirect_url": "/fabric/admin/service-admin-premium-multi-geo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-azure-connections.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-azure-connections",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-custom-branding.md",
+            "redirect_url": "/fabric/admin/service-admin-custom-branding",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-capacity-settings.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-capacity-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-embed-codes.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-embed-codes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-featured-content.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-featured-content",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-organizational-visuals.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-organizational-visuals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-premium-per-user.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-premium-per-user",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-users.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-users",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-audit-logs.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-audit-logs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-protection-metrics.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-protection-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-refresh-summary.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-refresh-summary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-usage-metrics.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-usage-metrics",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-workspaces.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-premium-capacity-notifications.md",
+            "redirect_url": "/fabric/admin/service-admin-premium-capacity-notifications",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-setup-certification.md",
+            "redirect_url": "/fabric/admin/service-admin-setup-certification",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-about-tenant-settings.md",
+            "redirect_url": "/fabric/admin/tenant-settings-index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-portal-custom-branding.md",
+            "redirect_url": "/fabric/admin/service-admin-custom-branding",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-manage-your-data-storage-in-power-bi.md",
+            "redirect_url": "/fabric/admin/portal-workspaces",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-metadata-scanning-setup.md",
+            "redirect_url": "/fabric/admin/metadata-scanning-setup",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/desktop-privacy.md",
+            "redirect_url": "/fabric/admin/microsoft-fabric-admin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/desktop-admin-sign-in-form.md",
+            "redirect_url": "/power-bi/enterprise/desktop-admin-sign-in-form",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-admin-auditing.md",
+            "redirect_url": "/fabric/admin/service-admin-portal-audit-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/power-bi-allow-list-urls.md",
+            "redirect_url": "/power-bi/enterprise/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/datamarts/datamarts-sharing-discovery.md",
+            "redirect_url": "/power-bi/transform-model/datamarts/datamarts-discovery",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-overview.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-process.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/understand-the-deployment-process",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-get-started.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-assign.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/assign-pipeline",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-compare.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/compare-pipeline-content",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-deploy.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/deploy-content",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-history.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/deployment-history",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-create-rules.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/create-rules",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-automation.md",
+            "redirect_url": "/fabric/cicd/deployment-pipelines/pipeline-automation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-best-practices.md",
+            "redirect_url": "/fabric/cicd/best-practices-cicd",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/deployment-pipelines-troubleshooting.md",
+            "redirect_url": "/fabric/cicd/troubleshoot-cicd",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-install-app.md",
+            "redirect_url": "/fabric/enterprise/metrics-app-install",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-metrics-app.md",
+            "redirect_url": "/fabric/enterprise/metrics-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-business-alignment.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-center-of-excellence.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-center-of-excellence",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-change-management.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-change-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-community-of-practice.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-community-of-practice",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-conclusion.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-conclusion",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-content-delivery-scope.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-content-delivery-scope",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-content-ownership-and-management.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-content-ownership-and-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-data-culture.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-data-culture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-executive-sponsorship.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-executive-sponsorship",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-governance.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-governance",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-maturity-levels.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-maturity-levels",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-mentoring-and-user-enablement.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-mentoring-and-user-enablement",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-overview.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-system-oversight.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-system-oversight",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-user-support.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-user-support",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-533-unable-sign-in-32-bit-desktop.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-522-failures-fabric-capacity-metrics-app.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },            
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-498-export-csv-file-truncated-300-rows.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },                  
+        {                                                                                                                                                                                                         
+            "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
+            "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/fabric-adoption-roadmap-overview.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-465-embedded-report-shows-black-bar.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-443-deployment-pipeline-stuck-loading.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-398-upload-sharepoint-greyed-out.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-308-tenant-migrations-paused.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-find-access-google-search.md",
+            "redirect_url": "/power-bi/consumer/mobile",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-china-north.md",
+            "redirect_url": "/fabric/admin/region-availability",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/whitepaper-powerbi-enterprise-deployment.md",
+            "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-introduction",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                                                                                                                                             
+  ]          
+
 }

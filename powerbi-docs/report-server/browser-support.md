@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2021
+ms.date: 01/03/2022
 ---
 # Browser support for Power BI Report Server
 Learn about what browser versions are supported for managing and viewing Power BI Report Server and the Report Viewer Controls.
 
 > [!NOTE]
-> Support for the Microsoft Edge Legacy browser will stop beginning March 9, 2021, and support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
+> Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and support for Microsoft Internet Explorer 11 stopped beginning August 17, 2021.
 
 ## Browser requirements for the web portal
 The following is the current list of browsers supported for the web portal.
@@ -22,7 +22,6 @@ The following is the current list of browsers supported for the web portal.
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
 * Google Chrome (+)
 * Mozilla Firefox (+)
 
@@ -52,7 +51,6 @@ The following is the current list of browsers supported with the Report Viewer w
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
 * Google Chrome (+)
 * Mozilla Firefox (+)
 
@@ -69,7 +67,6 @@ Browsers support specific authentication schemes that must be handled by the rep
 | **Browser type** | **Supports** | **Browser default** | **Server default** |
 | --- | --- | --- | --- |
 | **Microsoft Edge** (+) |Negotiate, Kerberos, NTLM, Basic |Negotiate |Yes. The default authentication settings work with Edge. |
-| **Microsoft Internet Explorer** |Negotiate, Kerberos, NTLM, Basic |Negotiate |Yes. The default authentication settings work with Internet Explorer. |
 | **Google Chrome**(+) |Negotiate, NTLM, Basic |Negotiate |Yes. The default authentication settings work with Chrome. |
 | **Mozilla Firefox**(+) |NTLM, Basic |NTLM |Yes. The default authentication settings work with Firefox. |
 | **Apple Safari**(+) |NTLM, Basic |Basic |Yes. The default authentication settings work with Safari. |
@@ -81,9 +78,7 @@ To use the report viewer, configure your browser to run scripts.
 
 If scripting is not enabled, you will see an error message similar to the following when you open a report:
 
-```
-Your browser does not support scripts or has been configured to not allow scripts to run. Click here to view this report without scripts
-```
+"Your browser does not support scripts or has been configured to not allow scripts to run. Click here to view this report without scripts."
 
  If you choose to view the report without script support, the report is rendered in HTML without report viewer capabilities such as the report toolbar and the document map.
 
@@ -101,16 +96,16 @@ Use a browser that has script support enabled. If the browser cannot run scripts
 *Windows 7, 8.1, 10; Windows Server 2008 R2, 2012, 2012 R2*
 
 * Microsoft Edge (+)
-* Microsoft Internet Explorer 11
 * Google Chrome (+)
 * Mozilla Firefox (+)
   
   **(+)** Latest publicly released version
 
-## Next steps
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+## Related content
+
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

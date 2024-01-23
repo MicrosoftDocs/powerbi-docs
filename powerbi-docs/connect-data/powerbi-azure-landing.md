@@ -1,20 +1,23 @@
 ---
 title: Power BI for Azure users
-description: Do you work with data, manage infrastructure, or build applications in Microsoft Azure?
+description: Learn how to get the most out of Power BI. See resources for embedding Power BI in apps, adding AI to Power BI, and using Power BI to analyze Azure data.
 author: willthom
 ms.author: willthom
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: landing-page
-ms.date: 12/12/2019
+ms.date: 06/13/2022
 layout: LandingPage
 LocalizationGroup: Get started
 # Customer intent: As an Azure user, wanting to get started with Power BI, I want a link to all the pages.
+ms.custom:
+   - intro-landing-hub
+   - kr2b-contr-experiment
 ---
 
-# Power BI for Microsoft Azure users 
+# Power BI for Microsoft Azure users
 
-Do you work with data, manage infrastructure, or build applications in Microsoft Azure? Do you want to get value from your data or applications using Power BI? These resources will help you get up to speed. Welcome!
+Do you work with data, manage infrastructure, or build applications in Microsoft Azure? Do you want to get value from your data or applications by using Power BI? These resources will help you get up to speed. Welcome!
 
 Are you more of a Power BI consumer? Welcome to you, too. We suggest starting with [Power BI for consumers](../consumer/index.yml).
 
@@ -25,7 +28,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Illustration of a clipboard. Under the clip is a checklist." src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -45,14 +48,14 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Analyze your SQL data from Azure" src="media/power-bi-creator-landing/power-bi-designer-transform-shape-data.svg" data-linktype="relative-path">
+                                                <img alt="Illustration of a computer screen that contains three windows. Each window contains one or more line charts. In front of the screen is a pencil." src="media/power-bi-creator-landing/power-bi-designer-transform-shape-data.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
-                                          <h3>Analyze your SQL data from Azure</h3> 
+                                          <h3>Analyze your Azure SQL data</h3> 
                                           <p></p>
                                                 <a href="service-azure-sql-database-with-direct-connect.md">Connect to data in Azure SQL databases</a><br/> 
-                                                <a href="service-azure-sql-data-warehouse-with-direct-connect.md">Connect to data in Azure SQL DW</a> 
+                                                <a href="service-azure-sql-data-warehouse-with-direct-connect.md">Connect to data in Azure Synapse Analytics</a> 
                                     </div> 
                               </div> 
                         </div> 
@@ -64,14 +67,14 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Analyze data from other Azure services" src="media/power-bi-creator-landing/power-bi-designer-connect-data.svg" data-linktype="relative-path">
+                                                <img alt="Illustration of a computer monitor. Two windows on the screen contain charts, and one contains data. In front of the monitor is a chain link." src="media/power-bi-creator-landing/power-bi-designer-connect-data.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
                                           <h3>Analyze data from other Azure services</h3> 
                                           <p></p>
                                                 <a href="/azure/stream-analytics/stream-analytics-power-bi-dashboard">Connect to Azure Stream Analytics</a><br/> 
-                                                <a href="/azure/cosmos-db/powerbi-visualize">Visualize data from Cosmos DB</a><br/> 
+                                                <a href="/azure/cosmos-db/powerbi-visualize">Visualize data from Azure Cosmos DB</a><br/> 
                                                 <a href="/azure/data-explorer/visualize-power-bi">Visualize data from Azure Data Explorer</a>
                                     </div> 
                               </div> 
@@ -84,14 +87,12 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Analyze your Azure costs and usage" src="media/power-bi-creator-landing/power-bi-designer-licensing.svg" data-linktype="relative-path">
+                                                <img alt="Illustration of a computer monitor. Some data, a heart icon, and a dollar sign are visible on the screen. In front of the screen is a mouse pointer." src="media/power-bi-creator-landing/power-bi-designer-licensing.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
                                           <h3>Analyze your Azure costs and usage</h3> 
                                           <p></p>
-                                                <a href="desktop-connect-azure-cost-management.md">Connect to Azure Cost Management</a><br/> 
-                                                <a href="service-connect-to-azure-search.md">Analyze data from Azure Search</a><br/> 
                                                 <a href="desktop-connect-azure-consumption-insights.md">Connect to Azure Consumption Insights</a>
                                     </div> 
                               </div> 
@@ -104,15 +105,14 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Embedding Power BI in your own applications" src="media/power-bi-creator-landing/power-bi-designer-modeling-data-relationships.svg" data-linktype="relative-path">
+                                                <img alt="Illustration of three slightly overlapping computer monitors. Each screen contains a chart." src="media/power-bi-creator-landing/power-bi-designer-modeling-data-relationships.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
-                                          <h3>Embedding Power BI in your own applications</h3> 
+                                          <h3>Embed Power BI in your own applications</h3> 
                                           <p></p>
-                                                <a href="../developer/embedded/embedding.md">Power BI Embedding overview</a><br/>
-                                                <a href="../developer/embedded/azure-pbie-what-is-power-bi-embedded.md">What is Power BI Embedded?</a><br/> 
-                                                <a href="../developer/embedded/embed-sample-for-customers.md">Tutorial: Power BI Embedded </a> 
+                                                <a href="../developer/embedded/embedded-analytics-power-bi.md">Power BI embedded analytics</a><br/>
+                                                <a href="../developer/embedded/embed-sample-for-customers.md">Tutorial: Embed Power BI content using a sample embed-for-your-customers application</a> 
                                     </div> 
                               </div> 
                         </div> 
@@ -124,11 +124,11 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Azure Machine Learning" src="media/power-bi-creator-landing/power-bi-designer-create-reports-visuals-dashboards.svg" data-linktype="relative-path">
+                                                <img alt="Illustration of a computer monitor. Six windows are visible on the screen. Each contains a chart." src="media/power-bi-creator-landing/power-bi-designer-create-reports-visuals-dashboards.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
-                                          <h3>Azure Machine Learning</h3> 
+                                          <h3>Enrich Power BI with Azure Machine Learning</h3> 
                                           <p></p>
                                                 <a href="/power-bi/transform-model/dataflows/dataflows-machine-learning-integration">Azure Machine Learning and Power BI</a><br/> 
                                                 <a href="service-aml-integrate.md">Tutorial: Consume an Azure Machine Learning model</a><br/> 

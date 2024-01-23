@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
 title: Power BI Report Server documentation
-summary: Power BI Report Server documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI Report Server documentation provides expert information and answers to your questions about Power BI Report Server.
 
 metadata:
   title: Power BI Report Server documentation
-  description: Power BI Report Server documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI Report Server documentation provides expert information and answers to your questions about Power BI Report Server.
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: powerbi-report-server
   ms.topic: landing-page # Required
   ms.collection: collection
   author: maggiesMSFT
@@ -37,10 +37,6 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Explore Power BI Report Server in a VM
-            url: tutorial-explore-report-server-web-portal.md
       - linkListType: concept
         links:
           - text: "Administrator overview"
@@ -90,7 +86,7 @@ landingContent:
             url: quickstart-create-powerbi-report.md
           - text: "Manage content in the web portal"
             url: getting-around.md
-          - text: "Access shared datasets as OData feeds"
+          - text: "Access shared semantic models as OData feeds"
             url: access-dataset-odata.md
           - text: "Row-level security"
             url: row-level-security-report-server.md

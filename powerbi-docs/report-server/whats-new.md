@@ -7,14 +7,381 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2021
+ms.date: 10/05/2023
+ms.custom: intro-whats-new
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log fPower BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## September 2023
+
+Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for developers, and bubble range scaling for reporting. These features have been inclusively designed with better UX for report viewing and sharing. Read on for the details.
+
+### Power BI Report Server
+
+### Full-screen view 
+
+You've asked for the ability to allow your report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the **View** menu for Power BI (.pbix) reports and to the toolbar for paginated (.rdl) reports. 
+
+- **In a Power BI report**: To change the view, on the **View** menu item, select **Full screen**  as shown in the following image.  
+
+    :::image type="content" source="media/whats-new/full-screen-view.png" alt-text="Screenshot showing Full-screen view of a Power BI report.":::
+
+    *Full-screen view in a Power BI report*
+
+- **In a paginated (.rdl) report**: We added full-screen view to the toolbar. It's located on the far right side of the pagination toolbar, as shown in the following image.
+
+    :::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report." lightbox="media/whats-new/full-screen-paginated-rdl-report.png":::
+
+    *Full-screen view in paginated (.rdl) report*
+
+### Responsive view navigation 
+
+Customers log in to Power BI Report Server with varying devices. We've enhanced the view port for smaller screens to make viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has a responsive design enabled for smaller viewers. Additional menu items are collapsed to accommodate the smaller screen size.
+
+:::image type="content" source="media/whats-new/collapsed-menu-items-small-screen.png" alt-text="Screenshot showing collapsed menu on a small screen.":::
+
+*Collapsed menu items*
+
+### Reporting 
+
+### New layout switcher 
+
+We’ve added new buttons in Power BI Desktop that make it easy to switch quickly between web and mobile layouts while you’re developing reports. The new switcher buttons are in the lower-left corner of the screen, next to the page navigator. 
+
+:::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views." lightbox="media/whats-new/new-layout-switcher-web-mobile.png":::
+
+*New layout switcher from web to mobile layout*
+
+### Mobile layout interactive canvas
+
+In this latest update, we've made the mobile canvas interactive. 
+
+With this new capability, you can test how buttons, slicers, and visuals behave in the app before you publish the report.  
+
+:::image type="content" source="media/whats-new/mobile-layout-test-interactivity.png" alt-text="Screenshot of testing mobile functionality while authoring a report.":::
+
+This canvas interactivity means that your report users can now interact with visuals directly. They can adjust table and matrix column headers to make them fit perfectly in mobile screens.
+
+:::image type="content" source="media/whats-new/mobile-adjust-column-widths.png" alt-text="Screenshot of adjusting column widths to fit mobile screen.":::
+
+### New bubble range scaling setting 
+
+We're introducing the new bubble range scaling setting for scatter chart and map visuals. This setting gives report creators more control over how the bubble (marker) sizes respond to the data, making it more accurate or distinctive, based on preference. 
+
+With the **magnitude** option, the bubble areas closely follow the data proportions. With the **data-rang**e option, the bubble size limits are mapped to data minimum and maximum. The **auto** option is the default setting for new reports. It selects the appropriate option based on data characteristics. For more information, see [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)
+
+You can adjust this setting in the Format pane in Power BI Desktop.
+
+- For scatter charts, under **Markers**, select **Shape** and **Range scaling**.
+- For maps, select **Bubbles** > **Size** > **Range scaling**.
+
+For reports authored in earlier Power BI versions, these settings default to **(Deprecated)** for scatter charts, which differs in handling negative values, and **Data range** for maps. 
+
+Azure Maps will also include this feature in a coming product update.
+
+In the following figure, the size of each country represents Urban Population, which is also shown on the y-axis. 
+
+:::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling." lightbox="media/whats-new/scatter-chart-bubble-size-range-scaling.png":::
+
+### Want to get involved?
+
+- To be a part of our customer research for paginated reports, and provide product feedback, prototype assessment, and staying abreast with what’s new, join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
+- Or join our [Reporting Services - Migration to Power BI](https://community.fabric.microsoft.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI) user group. Join the fun and tune in to our monthly events.
+
+## May 2023
+
+This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
+
+### Report Server
+- [Accessibility options for row properties](#accessibility-options-for-row-properties)
+- [Accessibility options for text box properties](#accessibility-options-for-text-box-properties)
+
+
+#### Accessibility options for row properties
+Accessibility options are new features for report authors. You can enable them from the Power BI Report Builder authoring tool. Accessibility options for row properties allow report authors to tag rows for headers and data cells within a paginated report.
+
+#### Accessibility options for text box properties
+Text box properties work similarly to row properties. They allow report authors to tag heading elements to text boxes within a paginated report. To enable text box properties, right-click a text box to select the Accessibility menu and determine which structure type you wish to overwrite.
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for details about these feature updates.
+
+- [Set conditional formatting rules based on string fields](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917169).
+- [Format image dimensions individually in tables and matrixes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917170).  
+- [Decide which report pages are visible in the Page navigator visual](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917171).
+- [Visual container improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917174)
+
+    - Turn on a subtitle that can be used to add extra context to your visuals.
+    - Add a divider line to visually separate the visual header from its contents.
+    - Control the space below each component.
+
+- [Apply all slicers button, Clear all slicers button, and Optimization presets update](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917175)
+- [Format Pane – new styling](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917176)
+- [New tooltip auto-scale](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917177)
+- [Measure-driven data labels](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917178)
+- [Mobile formatting options](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917182)
+
+**Accessibility improvements**
+
+- [New accessible report themes](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917172) provide good contrast across their colors.
+- [Matrix accessibility improvements](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary/#post-23637-_Toc128917173).
+- Improved keyboard navigation and new keyboard shortcuts.
+- A two-toned focus outline.
+- New support for screen reader announcements.
+- Added screen reader support for conditional formatting icons and data bars.
+- Removed browser (default) tooltips.
+- Overall performance improvements for scrolling and rendering.
+
+#### Modeling
+
+- New DAX functions LINEST and LINESTX. These functions are especially useful in predicting unknown values (Y) given known values (X).
+
+    - [LINEST](/dax/linest-function-dax)
+    - [LINESTX](/dax/linestx-function-dax)
+
+- New DAX functions RANK and ROWNUMBER. These functions return a number indicating the rank for the current context within the specified partition, sorted by the specified order.
+  
+    - [RANK](/dax/rank-function-dax)
+    - [ROWNUMBER](/dax/rownumber-function-dax)
+  
+## January 2023
+
+This release has updates for the Report Server web portal, modeling, and reporting. See the [Power BI Report Server January 2023](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary) blog for all the details.
+
+### Report Server
+
+- [Accent color update](#power-bi-report-server-accent-color-update)
+- [.rdl and .pbix file migration tool](#publish-rdl-pbix-files-to-power-bi-from-power-bi-report-server)
+- New .rdl report community: Join the [on-premises .rdl migration user group](https://community.powerbi.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI).
+
+#### Power BI Report Server accent color update
+
+In November 2022, Power BI announced the upcoming change in color accent to teal. This change was made to ensure our product is more accessible for users with disabilities. The new color improves contrast and increases visibility of the user interface in Power BI, making the experience easier to use and more inclusive. To align the on-premises Power BI Report Server with Power BI, the accent color for Power BI Report Server is now also teal in this latest release.
+
+The Power BI brand color and icon logo remain yellow.
+
+#### Publish .rdl &.pbix files to Power BI from Power BI Report Server
+
+- Power BI Pro licenses now support [paginated reports](../consumer/end-user-paginated-report.md).
+- Power BI Report Server has a [new tool to migrate .rdl reports to the Power BI service](../guidance/publish-reporting-services-power-bi-service.md). The new migration tool is available in the January 2023 release.
+
+You can migrate reports without Report Server downtime or disruption to your report users. You don’t need to remove any data or reports. You can keep your current environment in place until you’re ready to retire it.
+
+For [sovereign clouds](../enterprise/service-govus-overview.md), you can update the Power BI endpoints by changing the site settings in the web portal.
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the Power BI Report Server blog post for January 2023 for details about these feature updates.
+
+- [Reverse stack order for stacked column charts](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395754)
+- Query performance improvements
+
+  - Indexing [imported string columns on the fly](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395756)
+  - Pushing [Top N filter to DirectQuery sources](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395757)
+
+- [Unshared and unsynchronized axes](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2023-feature-summary/#post-21998-_Toc121395758) for small multiples charts
+- Slicer type [formatting moved to Format Pane](../visuals/power-bi-visualization-slicers.md#format-slicers).
+
+#### Modeling
+
+- DAX formula bar is now available in Desktop model view.
+- New DAX function: [EVALUATEANDLOG](/dax/evaluateandlog-function-dax)
+- New DAX functions: [TOCSV](/dax/tocsv-function-dax) and [TOJSON](/dax/tojson-function-dax)
+- Making it easier to do comparison calculations:
+
+  - [INDEX](/dax/index-function-dax)
+  - [OFFSET](/dax/offset-function-dax)
+  - [Window](/dax/window-function-dax)
+
+## September 2022
+
+This release introduces Power BI Report Server for SQL Server 2022. We continue to innovate, create, and design to give everyone the ability to achieve more. Designing for inclusion reflects how people adapt to the world around them. In this new release of Power BI Report Server, we've done a lot of accessibility work to make sure we're empowering everyone. The release includes:
+
+- Enhanced Windows Narrator support for the new Windows Operating Systems (OS) and Windows Server
+- Security enhancements
+- Browser performance improvements with Angular
+- Accessibility bug fixes
+- Support for SQL Server 2022 (16.x) preview instances report server catalog and feature updates. 
+  
+### Report Server
+
+#### Refreshed portal
+
+We've improved the Power BI Report Server portal to provide a more inclusive modern graphical interface, making it easier to deliver meaningful reporting on your data from a web-based experience. In the portal, you can view Power BI reports, paginated reports, Excel files, and KPIs, and navigate through the elements in your report server instance. You can also use the web portal to administer a single report server instance.
+
+:::image type="content" source="media/whats-new/power-bi-report-server-web-portal.png" alt-text="Screenshot showing refreshed Power BI Report Server web portal.":::
+
+#### New report server properties
+
+Report Server 2022 has a number of new options for setting system properties on the report server. The article [Server Properties Advanced Page - Power BI Report Server & Reporting Services](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services) explains how to set them in SQL Server Management Studio. Each of the links in this section takes you to that option in the article.
+
+- Branding options to add a custom hyperlink, [CustomUrlLabel and CustomUrlValue](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customurllabel-and-customurlvalue):
+
+  - **CustomUrlLabel**: default Empty *value* - defines what string will be shown as URL label in the top left of subnavbar. 
+  - **CustomUrlValue**: default Empty *value* - defines the URL. 
+
+- Exclude/included Client IP Address when INFO Logging in Enabled:
+
+  - [**LogClientIPAddress**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#logclientipaddress): default False *value* - defines if client IP will be logged. 
+
+- List view by default option in catalog:
+
+  - [**TileViewByDefault**](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#tileviewbydefault): default True *value* - defines if Tiles or List view is selected for all users by default. 
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+See the [Reporting section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187759) of the Power BI Report Server September 2022 blog for details about these features.
+
+- [New Format pane](../fundamentals/desktop-format-pane.md)
+- Table navigation improvements
+- Error bars
+- Bold/Italics/Underline for text inside the header tooltip
+- Conditional formatting for data labels
+- Hierarchical axis by default
+- Improved display name for summarized fields
+
+#### Modeling
+
+See the [Modeling section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187767) of the Power BI Report Server September 2022 blog for details about this new DAX function.
+
+- New DAX function: NETWORKDAYS
+
+#### Other
+
+See the [Other section](https://powerbi.microsoft.com/blog/whats-new-in-the-september-release-of-power-bi-report-server/#post-20960-_Toc115187769) of the Power BI Report Server September 2022 blog for details about these features.
+
+- Data hub improvements – data preview and export
+- Power BI Desktop infrastructure update (WebView2)
+- Licensing API
+
+## May 2022
+
+The May 2022 update of Power BI Report Server brings many new enhancements, including dynamic format strings support, bookmark navigators, and updated slicer defaults. Here’s a list of new and updated features with links to each. Or read the whole [Power BI Report Server blog post for May 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- [Dynamic format strings](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299296) now supported for all chart elements
+- [Bookmark navigator](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299298) now shows the last selected bookmark per group
+- [Data point rectangle select](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299300)
+- [Updated slicer defaults](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299302) for accessibility improvements
+
+#### Other
+
+- [Windows 11 support](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299304)
+- [Power BI Desktop infrastructure update (WebView2)](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2022-feature-summary/#post-19618-_Toc104299305)
+
+
+## January 2022 
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for January 2022](https://powerbi.microsoft.com/blog/power-bi-report-server-january-2022-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- Page and bookmark Navigators
+- Sort legend
+- New formatting options for text
+- Pie and donut chart rotation
+
+#### Modeling
+
+- SWITCH performance optimization
+- Bitwise functions in DAX
+
+### Other
+
+- WebView2
+
+## September 2021 
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for September 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2021-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+#### Reporting
+
+- Area chart transparency sliders
+- Inner padding for continuous axes
+- Small multiples new feature
+- Conditional formatting for assorted visuals
+- Customize shape formatting
+- Line chart improvements
+- X-axis constant line improvements
+- Line chart series labels
+- New formatting options for buttons
+- Toggle total columns in waterfall charts
+
+#### Modeling
+
+- New Model View
+- New way of expressing Date and DateTime values
+- Shortcut expression for CALCULATE now supports aggregation functions
+- New parameter for XIRR function
+- Making it easier to format based on a user’s locale
+- Evaluation configuration settings
+
+### Paginated reports in Power BI Report Builder
+
+- New version of Power BI Report Builder
+
+### Other
+
+- New Power BI visuals store experience
+
+## May 2021
+
+Here’s a list of new and updated features. For details, see the [Power BI Report Server blog post for May 2021](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2021-feature-summary/).
+
+### Power BI Desktop for Power BI Report Server
+
+**Highlighted new features**
+
+Here are highlights of the new features in Power BI Desktop for Power BI Report Server.
+
+- [Smart guides for aligning objects](../create-reports/power-bi-create-mobile-optimized-report-about.md) are now available in the mobile layout view.
+- [Invert axis and continuous axis sorting](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#invert-the-y-axis).
+- [CALCULATE filters](/dax/calculate-function-dax) are easier to use.
+- Performance improvements to [IF](/dax/if-function-dax) and [SWITCH](/dax/switch-function-dax) functions.
+- [Text/CSV by example](/power-query/connectors/text-csv).
+
+**Other new and updated features**
+
+**Reporting**
+
+- New and improved shapes
+- New field list
+- Search bar
+- Updated color picker
+- New filter operations: “is empty” and “is not empty”
+
+**Analytics**
+
+- X axis constant line for line charts.
+
+**Modeling**
+
+- IF.EAGER
+- CROSSFILTER supports many-to-many relationships.
+
+**Other**
+
+- Certificate revocation check controls now available in Desktop interface.
+- Simplifying collection of diagnostic information.
 
 ## January 2021
 
@@ -53,14 +420,16 @@ Note the following:
  
 As an administrator, you can disable this preview, force V3 off, and hide the preview feature check box. Set the following DWORD value to 0 in the registry: AllowV3Models in either:
 
-```
+
+```yaml
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 ```
 
 or
 
-```
+
+```yaml
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 ```
@@ -71,7 +440,7 @@ See [Using enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-m
 
 **Browser support deprecation**
 
-If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Edge Legacy browser ends beginning March 9, 2021. Support for Internet Explorer 11 ends beginning August 17, 2021. 
+If you're using Edge Legacy or Internet Explorer 11, it's time to upgrade your browser. Support for the Microsoft Edge Legacy browser stopped beginning March 9, 2021, and Microsoft Internet Explorer 11 support for Microsoft Internet Explorer 11 will stop beginning August 17, 2021.
 
 You'll see a warning in the Power BI Report Server web portal that Internet Explorer 11 is being deprecated. Time to upgrade! See [Browser support for Power BI Report Server](browser-support.md) for details.
 
@@ -132,20 +501,20 @@ This new feature of the Excel connector automatically identifies sections of eac
 
 **Modeling: Enhanced Dataset Metadata**
 
-In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that PBIX file.
+In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that .pbix file.
 
 This backend update has unlocked future feature improvements and will continue to do so. 
 
 For example:
 
 - With the addition of external tools in Power BI Desktop (currently in preview), tables you add through these external tools now appear as queries when you reopen your report.
-- If you've tried to export a PBIT file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
+- If you've tried to export a .pbit file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
 
-If you have an older PBIX that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any other modeling changes. 
+If you have an older .pbix that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any other modeling changes. 
 
 **Support for Windows 7 ends**
 
-After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
+After 10 years, support for Windows 7 ended on January 14, 2020. In line with this change, we stopped support for Power BI Desktop on Windows 7 on January 31, 2021. Power BI Desktop is only supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
 
 **Complete list of updates**
 
@@ -188,14 +557,12 @@ Here’s a complete list of the updates in the October edition of Power BI Deskt
 
 **Data preparation**
 
-- Automatic Table Detection from Excel files  
-- Automatic Table Detection from JSON files  
 - Global option to disable automatic type detection 
 
 **Other**  
 
 - Export data source to PBIDS in Power BI Desktop
-- Desktop splash screen dismiss 
+- Desktop splash screen dismiss
 
 ### Power BI Report Server
 
@@ -220,7 +587,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - Buttons now support fill images
 - Multi-column sort for tables
 - Dual axis for line charts
-- Rectangle select for visuals
+- Rectangle selection for visuals
 - Conditional formatting for totals and subtotals in tables and matrices
 - Customize theme dialog
 - Conditional formatting discoverability
@@ -366,7 +733,7 @@ Find details and examples in the [Using .pbids files to get data](../connect-dat
 
 We have made a performance improvement in the Analysis Services engine to speed up modeling operations such as adding measures or calculated columns and creating relationships. The amount of improvement you see depends on the model, but we have seen 20x performance improvement for some customers for actions like opening a file and adding a measure.
 
-That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
+That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/ideas/).
 
 ### Power BI Report Server
 
@@ -459,7 +826,6 @@ Here's the complete list of features.
 - Improvements to M Intellisense
 - New Transform: Split column by positions
 - Copy to clipboard from data profiling
-
 
 ## May 2019
 
@@ -578,7 +944,7 @@ Out of the whole long list of new features, these features stand out as especial
 
 #### Report theming
 
-Report theming has been added to the August 2018 release of Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
+Report theming is available in Power BI Report Server, which allows you to quickly color your entire report to match a theme or corporate branding. When you import a theme, all your charts automatically update to use the theme colors, and you can have access to the theme colors from the color palette. You can upload a theme file using the **Import Theme** option under the **Switch Theme** button.
 
 A theme file is a JSON file that includes all the colors you want us to use in your report along with any default formatting you want to apply to visuals.
 Here is a simple sample JSON theme that just updates the default colors of the report:
@@ -838,7 +1204,7 @@ We’ve published a [walkthrough of how to add Office Online Server (OOS) to you
 
 ### Support for new table and matrix visuals
 
-Power BI Report Server now supports the new Power BI table and matrix visuals. To create reports with these visuals, you will need an updated Power BI Desktop release for the October 2017 release. It can't be installed side by side with the Power BI Desktop (June 2017) release. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
+Power BI Report Server now supports the new Power BI table and matrix visuals. For the latest version of Power BI Desktop, on the [Power BI Report Server download page](https://powerbi.microsoft.com/report-server/), select **Advanced download options**.
 
 ## June 2017
 
@@ -853,10 +1219,11 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
   - Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 - Enhanced collaboration in reports with comments
 
-## Next steps
+## Related content
 
 Check these sources to keep up-to-date on new features in Power BI Report Server.
 
 - [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

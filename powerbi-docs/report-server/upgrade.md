@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: ""
-ms.date: 09/22/2020
+ms.date: 01/06/2022
 ---
 
 # Upgrade Power BI Report Server
@@ -44,7 +44,7 @@ Power BI Report Server uses configuration files to store application settings. B
 * config.json
 * RSHostingService.exe.config
 * Rsreportserver.config
-* Rssvrpolicy.config
+* Rssrvpolicy.config
 * Reportingservicesservice.exe.config
 * Web.config for the Report Server ASP.NET applications
 * Machine.config for ASP.NET
@@ -79,7 +79,7 @@ Power BI Report Server receives security fixes via Microsoft Update. To enable g
 
 After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop for Power BI Report Server that matches the server.
 
-## Next steps
+## Related content
 
 * [Administrator overview](admin-handbook-overview.md)  
 * [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  

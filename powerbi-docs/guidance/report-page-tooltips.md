@@ -1,13 +1,13 @@
 ---
 title: Extend visuals with report page tooltips
 description: Guidance for working with report page tooltips.
-author: peter-myers
-ms.author: kfollis
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: asaxton
 ms.service: powerbi
-ms.subservice: powerbi
+ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/24/2019
+ms.date: 03/14/2023
 ---
 
 # Extend visuals with report page tooltips
@@ -26,7 +26,6 @@ Report page tooltips can enhance the experience for your report users. Page tool
 >
 > Page tooltips don't support interactivity. If you want your report users to interact, create a [drillthrough page](../create-reports/desktop-drillthrough.md) instead.
 >
-> Power BI visuals do not support page tooltips.
 
 Here are some suggested design scenarios:
 
@@ -76,7 +75,7 @@ At report design time, we recommend the following practices:
 - **Tooltip filters:** Assign filters to the page tooltip so that you can preview a realistic result as you design it. Be sure to remove these filters before you publish your report.
 - **Page visibility:** Always hide tooltip pages—users shouldn't navigate directly to them.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

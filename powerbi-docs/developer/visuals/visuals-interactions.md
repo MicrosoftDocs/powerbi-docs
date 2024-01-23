@@ -1,31 +1,35 @@
 ---
 title: Visual interactions in Power BI visuals
 description: This article discusses how to check whether Power BI visuals should allow visual interactions.
-author: KesemSharabi
-ms.author: kesharab
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 10/22/2023
 ---
 
 # Visual interactions in Power BI visuals
 
-Visuals can query the value of the `allowInteractions` flag, which indicates whether the visual should allow visual interactions. For example, visuals are interactive during report viewing or editing, but not interactive when they're viewed in a dashboard. These interactions are *click*, *pan*, *zoom*, *selection*, and others. 
+Sometimes you want to allow the user to interact with the visual by selecting, zooming, or clicking on it. Other times you want the visual to be static, so the user can't interact with the visual.
+
+Visuals can query the value of the `allowInteractions` flag, which indicates if the visual allows visual interactions. For example, visuals can be interactive during [report](../../create-reports/desktop-report-view.md) viewing or editing, but visuals can be non-interactive when they're viewed in a [dashboard](../../create-reports/service-dashboards.md). These interactions include *click*, *pan*, *zoom*, *selection*, and others.
 
 > [!NOTE]
-> You should enable tooltips in all scenarios, regardless of which flag is indicated.
+> Best practice is to [enable tooltips](add-tooltips.md#manage-tooltips) in all scenarios, regardless of the indicated flag.
 
-The `allowInteractions` flag is passed as a Boolean during the initialization of the visual, as a member of the IVisualHost interface.
+## Set interactive permissions
 
-In any Power BI scenario that requires that the visuals not be interactive (for example, dashboard tiles), the `allowInteractions` flag is set to `false`. Otherwise (for example, Report), `allowInteractions` is set to `true`.
+The `allowInteractions` flag is passed as a boolean value during the initialization of the visual as a member of the `IVisualHost` interface.
 
-For more information, see the [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001).
+For any Power BI scenario that requires non-interactive visuals (for example, dashboard tiles), set the `allowInteractions` flag to `false`. Otherwise (for example, Report), set `allowInteractions` to `true`.
+
+The following code sample shows how to use the `allowInteractions` flag to set interactive permissions.
 
 ```typescript
    ...
-   let allowInteractions = options.host.allowInteractions;
+   let allowInteractions = options.host.hostCapabilities.allowInteractions;
    bars.on('click', function(d) {
        if (allowInteractions) {
            selectionManager.select(d.selectionId);
@@ -33,3 +37,10 @@ For more information, see the [SampleBarChart visual repository](https://github.
        }
    });
 ```
+
+For more information about using the `allowInteractions` flag, see the [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001).
+
+## Related content
+
+>[!div class="nextstepaction"]
+>[Visual API](visual-api.md)

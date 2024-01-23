@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 07/11/2022
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
@@ -20,6 +20,8 @@ You can use OAuth to connect to Power BI Report Server and Reporting Services to
 ## Requirements
 
 Windows Server 2016 is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You don't need to have a Windows 2016 functional level domain.
+
+In order for users to be able to add a report server connection to their Power BI mobile app, you must grant them access to the report server's home folder.
 
 ## Domain Name Services (DNS) configuration
 
@@ -43,7 +45,10 @@ You need to configure certificates for both the WAP application and the ADFS ser
 
 ## Reporting Services configuration
 
-There isn't much to configure on the Reporting Services side. We just need to make sure that we have a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur and that the Reporting Services server is enabled for negotiate authentication.
+There isn't much to configure on the Reporting Services side. You just need to make sure that:
+* There is a valid [Service Principal Name (SPN)](#service-principal-name-spn) to enable the proper Kerberos authentication to occur.
+* The Reporting Services server is [enabled for negotiating authentication](#enabling-negotiate-authentication).
+* Users have access to the report server's home folder.
 
 ### Service Principal Name (SPN)
 
@@ -108,7 +113,7 @@ You can create the application group with the following steps.
    > [!NOTE]
    > This URL is case sensitive!
 
-   *https://< report server url >/*
+   `https://<report server url>/reports`
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
@@ -215,7 +220,7 @@ Within the Power BI mobile app, you want to connect to your Reporting Services i
 
 ![Type the server address](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
-When you select **Connect**, you be directed to your ADFS sign-in page. Enter valid credentials for your domain.
+When you select **Connect**, you'll be directed to your ADFS sign-in page. Enter valid credentials for your domain.
 
 ![Sign-in to ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
@@ -223,7 +228,7 @@ After you select **Sign in**, you see the elements from your Reporting Services 
 
 ## Multi-factor authentication
 
-You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
+You can enable multi-factor authentication to enable additional security for your environment. To learn more, see [Configure Azure MFA as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa).
 
 ## Troubleshooting
 
@@ -231,17 +236,17 @@ You can enable multi-factor authentication to enable additional security for you
 
 !["Failed to login to SSRS Server" error](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to setup the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
+You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to set up the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
 If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. 
 
-## Next steps
+## Related content
 
-[Register a Service Principal Name (SPN) for a Report Server](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
-[Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
-[Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
-[Active Directory Federation Services](/windows-server/identity/active-directory-federation-services)  
-[Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)  
-[Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
-[Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)  
+* [Register a Service Principal Name (SPN) for a Report Server](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
+* [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
+* [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
+* [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services)  
+* [Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)  
+* [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
+* [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)  
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

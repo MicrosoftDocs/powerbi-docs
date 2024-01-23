@@ -5,14 +5,15 @@ summary: "Power BI guidance documentation provides best practice information fro
 metadata:
   title: Power BI guidance documentation
   description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."  
+  author: kfollis
+  ms.author: kfollis
+  ms.reviewer: maroche
   services: powerbi
   ms.service: powerbi
-  ms.subservice: powerbi
+  ms.subservice: powerbi-resource
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 01/14/2020
+  ms.date: 09/22/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -76,22 +77,22 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: DIVIDE function vs divide operator
-            url: dax-divide-function-operator.md
           - text: Appropriate use of error functions
-            url: dax-error-functions.md
-          - text: Use SELECTEDVALUE instead of VALUES
-            url: dax-selectedvalue.md
-          - text: Use COUNTROWS instead of COUNT
-            url: dax-countrows.md
-          - text: Use variables to improve formulas
-            url: dax-variables.md
+            url: /dax/best-practices/dax-error-functions
           - text: Avoid converting BLANKs to values
-            url: dax-avoid-converting-blank.md
-          - text: Column and measure references
-            url: dax-column-measure-references.md
+            url: /dax/best-practices/dax-avoid-converting-blank
           - text: Avoid using FILTER as a filter argument
-            url: dax-avoid-avoid-filter-as-filter-argument.md
+            url: /dax/best-practices/dax-avoid-avoid-filter-as-filter-argument
+          - text: Column and measure references
+            url: /dax/best-practices/dax-column-measure-references
+          - text: DIVIDE function vs divide operator
+            url: /dax/best-practices/dax-divide-function-operator
+          - text: Use COUNTROWS instead of COUNT
+            url: /dax/best-practices/dax-countrows
+          - text: Use SELECTEDVALUE instead of VALUES
+            url: /dax/best-practices/dax-selectedvalue
+          - text: Use variables to improve formulas
+            url: /dax/best-practices/dax-variables
 
   # Card (optional)
   - title: Power BI reports
@@ -104,20 +105,6 @@ landingContent:
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
-          - text: Tips to manage axes
-            url: report-design-tips-axes.md
-          - text: Tips to control chart gridlines
-            url: report-tips-chart-gridlines.md
-          - text: Tips to optimize the use of labels
-            url: report-tips-labels.md
-          - text: Tips to format and implement legends 
-            url: report-tips-legends.md
-          - text: Tips to optimize visual colors 
-            url: report-tips-visual-colors.md
-          - text: Tips to sort and distribute data plots
-            url: report-tips-sort-distribute-data-plots.md
-          - text: Tips to work with shapes, images, and icons
-            url: report-tips-shapes-images-icons.md
 
   # Card (optional)
   - title: Power BI paginated reports
@@ -142,8 +129,6 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Tenant settings
-            url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 
           - text: Monitor report performance
@@ -151,7 +136,7 @@ landingContent:
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
           - text: Deployment pipelines best practices
-            url: ../create-reports/deployment-pipelines-best-practices.md
+            url: /fabric/cicd/best-practices-cicd
           - text: Access the Power BI activity log
             url: admin-activity-log.md
 
@@ -160,22 +145,74 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Migration overview
+          - text: Migration overview
             url: powerbi-migration-overview.md
           - text: Prepare to migrate
             url: powerbi-migration-pre-migration-steps.md
           - text: Gather requirements
             url: powerbi-migration-requirements.md
-          - text: Plan deployment
+          - text: Plan deployment
             url: powerbi-migration-planning.md
-          - text: Conduct proof of concept
+          - text: Conduct proof of concept
             url: powerbi-migration-proof-of-concept.md
-          - text: Create content
+          - text: Create content
             url: powerbi-migration-create-validate-content.md
           - text: Deploy to Power BI
             url: powerbi-migration-deploy-support-monitor.md
           - text: Learn from customer Power BI migrations
             url: powerbi-migration-learn-from-customers.md
+          - text: Migrate AAS models to Power BI Premium
+            url: migrate-azure-analysis-services-to-powerbi-premium.md
+
+  # Card (optional)
+  - title: Fabric adoption roadmap
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction
+            url: fabric-adoption-roadmap.md
+          - text: Data culture
+            url: fabric-adoption-roadmap-data-culture.md
+          - text: Executive sponsorship
+            url: fabric-adoption-roadmap-executive-sponsorship.md
+          - text: Content ownership
+            url: fabric-adoption-roadmap-content-ownership-and-management.md
+          - text: Content delivery scope
+            url: fabric-adoption-roadmap-content-delivery-scope.md
+          - text: Center of Excellence
+            url: fabric-adoption-roadmap-center-of-excellence.md
+          - text: Governance
+            url: fabric-adoption-roadmap-governance.md
+          - text: Mentoring and user enablement
+            url: fabric-adoption-roadmap-mentoring-and-user-enablement.md
+          - text: Community of practice
+            url: fabric-adoption-roadmap-community-of-practice.md
+          - text: User support
+            url: fabric-adoption-roadmap-user-support.md
+
+  # Card (optional)
+  - title: Implementation planning
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Introduction
+            url: powerbi-implementation-planning-introduction.md
+          - text: BI strategy
+            url: powerbi-implementation-planning-bi-strategy-overview.md
+          - text: Tenant setup
+            url: powerbi-implementation-planning-tenant-setup.md
+          - text: User tools and devices
+            url: powerbi-implementation-planning-user-tools-devices.md
+          - text: Workspaces
+            url: powerbi-implementation-planning-workspaces-overview.md
+          - text: Security
+            url: powerbi-implementation-planning-security-overview.md
+          - text: Info protection and DLP
+            url: powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md
+          - text: Auditing and monitoring
+            url: powerbi-implementation-planning-auditing-monitoring-overview.md
+          - text: Usage scenarios
+            url: powerbi-implementation-planning-usage-scenario-overview.md
 
   # Card (optional)
   - title: Center of Excellence (COE)
@@ -188,3 +225,5 @@ landingContent:
             url: center-of-excellence-establish.md
           - text: BI solution architecture in the COE
             url: center-of-excellence-business-intelligence-solution-architecture.md
+          - text: Fabric adoption roadmap
+            url: fabric-adoption-roadmap-center-of-excellence.md

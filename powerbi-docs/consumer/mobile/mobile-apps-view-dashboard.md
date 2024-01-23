@@ -39,8 +39,7 @@ Here's a Power BI dashboard in the Power BI service:
    
     ![Tap dashboard](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
    
-   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
-   * The notation below each dashboard name (in this case, "MBI") :::image type="icon" source="././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png" border="false"::: shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../create-reports/service-data-classification.md).
+   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites.
    
    By default, Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
    
@@ -79,8 +78,8 @@ You can use the "pinch" gesture to zoom in and out on different areas of your da
    
    ![Screenshot shows an iPad screen with My Workspace with DASHBOARDS selected.](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
    
-   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
-   * The notation below each dashboard name (in this case, "MBI") :::image type="icon" source="././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png" border="false"::: shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../create-reports/service-data-classification.md).
+   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites.
+
 3. You can share a dashboard from your workspace. Tap the ellipsis (**...**) in the lower-right corner of the dashboard tile, and tap **Invite Others**.
    
    ![Screenshot shows the ellipsis control selected, which displays Invite Others.](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
@@ -104,8 +103,6 @@ You can use the "pinch" gesture to zoom in and out on different areas of your da
 
     Yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
 
-    A notation below a dashboard name (in this case, "MBI") :::image type="icon" source="././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png" border="false"::: shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../create-reports/service-data-classification.md).
-
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
     ![Screenshot shows an Android phone with several tiles which are the same size.](./media/mobile-apps-view-dashboard/pbi_andr_dash.png)
@@ -127,7 +124,7 @@ You can use the "pinch" gesture to zoom in and out on different areas of your da
    ![Screenshot shows an Android tablet screen with My Workspace with DASHBOARDS selected.](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) shows which dashboards are favorites. 
-   * The notation below each dashboard name (in this case, "MBI") :::image type="icon" source="././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png" border="false"::: shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../create-reports/service-data-classification.md).
+
 3. While on the dashboard, you can tap the vertical **More options** (...) button next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
@@ -147,7 +144,8 @@ If you're the dashboard owner, *in the Power BI service* you can create a view o
 
 Read more about [creating a phone view of a dashboard](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
-## Next steps
+## Related content
+
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 * [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
