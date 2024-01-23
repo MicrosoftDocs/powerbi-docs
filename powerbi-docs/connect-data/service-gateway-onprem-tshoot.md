@@ -300,7 +300,7 @@ When you use the gateway for a scheduled refresh, **Refresh history** can help y
 
 For more information about troubleshooting refresh scenarios, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
-## Next steps
+## Related content
 
 * [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  

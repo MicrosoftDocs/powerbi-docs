@@ -141,7 +141,7 @@ Data sources for the Power BI service have the following limitations. Other limi
 
 - **Data source user limit**. The maximum number of data sources allowed per user is 1,000. This limit applies only to the Power BI service.
 
-## Next steps
+## Related content
 
 - [Connect to services you use with Power BI](service-connect-to-services.md)
 - [Get data from files for Power BI](service-get-data-from-files.md)

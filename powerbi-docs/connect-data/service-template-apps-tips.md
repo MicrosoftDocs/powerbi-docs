@@ -154,6 +154,6 @@ In order to redirect a user to the app's download link in Power BI, see the foll
 
 If you're an independent software vendor (ISV) and are distributing your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in their Power BI account. This approach makes things easier for your customers. It also increases the likelihood of a successful installation because they don't have to supply details that they might not know. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
 
-## Next steps
+## Related content
 
-[What are Power BI template apps?](service-template-apps-overview.md)
+- [What are Power BI template apps?](service-template-apps-overview.md)
