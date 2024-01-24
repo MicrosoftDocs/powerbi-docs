@@ -7,35 +7,39 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/14/2024
+ms.date: 01/24/2024
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
 
-Microsoft partners offer accelerators to expedite the implementation of embedded analytics solutions integrated with your application. Embedded analytics accelerators are a cost-effective way to speed up time-to-market or advance a PoC or pilot for your multitenant, customer-facing Power BI embedded analytics solution​. They simplify the implementation process and can also help you manage your Power BI capacity and billing.  
+Microsoft's partners offer accelerators to expedite the integration of embedded analytics solutions with your applications. These accelerators are designed to be cost-effective and efficient, reducing the time-to-market for your Power BI embedded analytics solutions, particularly for multitenant, customer-facing applications. They are particularly useful for quickly advancing proof-of-concept (PoC) or pilot projects. Accelerators simplify the implementation process and assist in managing Power BI capacity and billing.
 
-Here are some advantages of using an accelerator:
+Key advantages of using accelerators include:
 
-* Accelerators provide an enhanced personalized user experience and added functionality for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario with flexible end-user authentication and authorization options and support for multitenancy and end-user permissions management.
+* Enhanced Personalization and Functionality: Accelerators enhance user experience, offering personalized features for [Embed for your customers](./embedded-analytics-power-bi.md#embed-for-your-customers) scenario. This includes flexible options for end-user authentication, authorization, multitenancy, and permissions management.
 
-* Implementation details of the sophisticated Power BI embedded solution they provide are hidden.
-Some accelerators provide backend only functionality via an SDK and require code development for the client front-end.​
+* Simplified Implementation: The complex details of implementing Power BI embedded solutions are abstracted away. Some accelerators offer backend functionality through an SDK, with the need for additional client front-end code development.
 
-* White-label the solution, configure its capabilities, and customize the user experience once installed.​
+* Customization and White-Labeling: Once installed, you can white-label the solution, tailor its capabilities, and customize the user interface.White-label the solution, configure its capabilities, and customize the user experience once installed.​
 
-* Accelerators are developed, owned, and need to be purchased directly from the corresponding partner. The accelerators implement cloud based solutions that are deployed into your Azure environment and use Azure and Power BI/Fabric services that need to be acquired from Microsoft. You can reuse an existing subscription or license if you already have one. Some accelerators may offer a deployment option via the Azure Marketplace. ​
+* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They are cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI workload services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
 
-* An accelerator can exist as stand-alone applications or be fully integrated with your original application, as described in the [Deployment and integration options table](#deployment-and-integration-options).
+* Integration Flexibility: Accelerators can function as standalone applications or be fully integrated with your existing application, as outlined in the [Deployment and integration options table](#deployment-and-integration-options).
+
+To watch a video describing an overview of embedded solution accelerator partner program visit this page. [Staging area URL – remove once published].
+
+Different partner accelerators vary in their deployment, acquisition/billing methods, and capabilities.
+The following table briefly describes each of the current partners’ embedded analytics solution accelerators:"
 
 There are several partner accelerators that vary in their deployment, acquisition/billing options and their capabilities. ​
 
 | **Partner** <br> (accelerator)                  | **Description** | Website/Product link |
 |-------------------------------------------------|--------------------------------|---------|
-| :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="The logo of the Reporting Hub.":::    | The Reporting Hub is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. | [The Reporting Hub](https://shiftanalytics.ca) |
-| **EmbedFast** | The EmbedFAST is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using the EmbedFAST. | [EmbedFAST](https://maqsoftware.com/embedfast) |
-| :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="The logo of Count.":::                           | EmbeDash enables Independent Software Vendors (ISVs) to provide Analytics as a Service (AaaS) using Power BI Embedded. This Accelerator reduces the time to market and allows ISVs to add strong self-service reporting capabilities, without having to code those themselves. | [EmbeDash](https://embedash.com/) |
+| :::image type="content" source="./media/embedded-analytics-accelerators/shift-logo.png" alt-text="Picture of the Shift Analytics logo.":::    | **Shift Analytics**' accelerator: <br> **The Reporting Hub** is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. <br> [Watch an overview interview video of the Reporting Hub](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/reportinghub). | :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="Picture of the Reporting Hub logo."::: <br> [The Reporting Hub](https://thereportinghub.com/) |
+| :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="Picture of the Maq Software logo."::: | **MAQ Software**'s accelerator: <br> **EmbedFAST** is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using EmbedFAST. <br> [Watch an overview interview video of EmbedFAST](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedfast). | :::image type="content" source="./media/embedded-analytics-accelerators/embed-fast-logo.png" alt-text="Picture of the EmbedFAST logo."::: <br> [EmbedFAST](https://maqsoftware.com/embedfast) |
+| :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="Picture of the iLink Digital logo."::: | **iLink Digital**'s accelerator: <br> **EmbeDash** enables Independent Software Vendors (ISVs) to provide Analytics as a Service (AaaS) using Power BI Embedded. This Accelerator reduces the time to market and allows ISVs to add strong self-service reporting capabilities, without having to code those themselves. <br> [Watch an overview interview video of EmbeDash](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedash). | :::image type="content" source="./media/embedded-analytics-accelerators/embed-dash-logo.png" alt-text="Picture of the EmbeDash logo."::: <br> [EmbeDash](https://embedash.com/) |
 
-The following diagram illustrates the main modules of an accelerator and how they relate to your Azure and Power BI subscriptions and interact with to your existing multitenant web application:
+The following diagram illustrates the main modules of an accelerator and how they relate to your existing multitenant web application:
 
 :::image type="content" source="./media/embedded-analytics-accelerators/accelerator-workflow.png" alt-text="Diagram showing how accelerators work.":::
 
@@ -145,6 +149,8 @@ The following tables compare features of the different accelerators from our par
 
 ## Related content
 
+* To watch interview video recordings describing the accelerator program and each accelerator visit the [Microsoft Partner Showcase - Embedded Analytics Solution Accelerators page](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics-program-overview).
+
 * To learn more about each partner’s solution accelerator, visit their corresponding product website:
 
   * [The Reporting Hub](https://thereportinghub.com/)
@@ -153,4 +159,4 @@ The following tables compare features of the different accelerators from our par
 
   * [EmbeDash](https://embedash.com/)
 
-* [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner)
+* [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner) for consulting and assistance in building Power BI content.
