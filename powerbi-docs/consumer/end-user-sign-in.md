@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 01/24/2024
 LocalizationGroup: Get started
 ---
 
@@ -86,11 +86,14 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 
 :::image type="content" source="media/end-user-sign-in/power-bi-signout.png" alt-text="A screenshot showing the profile menu and sign out is outlined.":::
 
-## Troubleshooting
+## Considerations and limitations
+
+- If you don't have a work or school account, [you can still sign up for Power BI with a Microsoft 365 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
 
 - If you've signed up for Power BI as an individual, sign in with the email address that you used to sign up.
 
 - Some people use more than one Power BI account. If you do, you're prompted to select an account from a list when signing in.
+- If sign up is disabled, [use this article to get help](fundamentals/service-self-service-sign-up-help.md).
 
 ## Related content
 
