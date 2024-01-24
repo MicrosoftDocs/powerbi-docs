@@ -28,6 +28,6 @@ With spotlight, you can draw attention to a specific visual on a report page.  I
 
     :::image type="content" source="media/end-user-spotlight/power-bi-spotlight-treemap.png" alt-text="Screenshot of a visual with spotlight mode on.":::
 
-## Next steps
+## Related content
 
 * [Display content in more detail: focus mode and full screen mode](end-user-focus.md)

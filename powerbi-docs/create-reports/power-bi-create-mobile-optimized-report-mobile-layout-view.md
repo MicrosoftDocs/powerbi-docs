@@ -58,6 +58,6 @@ Start creating your mobile-optimized view by [choosing your visuals and creating
 * Metric visuals are not interactive on the mobile layout canvas.​
 * Slicer selections made on the mobile layout canvas don't carry over when you switch to web layout. Also, when you switch back from web layout to mobile layout, any slicer selections will come from the web layout. Likewise, when the report is published, any slicer selections will be those that were defined in web layout, regardless of whether the report is being viewed in the regular desktop-view or a mobile-optimized view.
 
-## Next steps
+## Related content
 
 * [Create an initial layout for a mobile-optimized report](power-bi-create-mobile-optimized-report-initial-layout.md)

@@ -210,7 +210,7 @@ This section shows the sample data model used in the examples in this article.
 
 
 
-## Next steps
+## Related content
 
 This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles:
 

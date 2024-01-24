@@ -132,6 +132,6 @@ Leave focus mode and return to the dashboard or report by selecting either **Exi
 * When using focus mode with a visual in a report, you can view and interact with all filters: Visual level, Page level, Drillthrough, and Report level.    
 * When using focus mode with a visual on a dashboard, you can view and interact with only the Visual level filter.
 
-## Next step
+## Related content
 
-[Change the View settings for reports](end-user-report-view.md)
+- [Change the View settings for reports](end-user-report-view.md)

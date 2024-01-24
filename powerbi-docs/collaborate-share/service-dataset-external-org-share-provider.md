@@ -54,5 +54,6 @@ Data providers can use in-place semantic model sharing (preview) to share semant
 
     ![Screenshot of the semantic model how to grant access to a semantic model.](media/service-dataset-external-org-share-provider/share-dataset.png)
 
-## Next steps
+## Related content
+
 - [Access shared semantic models in Power BI as a guest user from an external organization (preview)](service-dataset-external-org-share-view.md)

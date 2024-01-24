@@ -174,7 +174,6 @@ The second column represents a free user working with content in a workspace tha
 |Visuals: change type |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |
 | Visuals: hover to reveal details and tooltips  |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |
 
+## Related content
 
-
-## Next steps
-[Power BI for *business users*](end-user-consumer.md)    
+- [Power BI for *business users*](end-user-consumer.md)    

@@ -198,7 +198,7 @@ To make your app widely available to Power BI users throughout the world, submit
 
 If you're an independent software vendor and distribute your template app via your web service, you can create automation that configures template app parameters automatically when your customers install the app in Power BI. Automatic configuration makes things easier for your customers and increases the likelihood of a successful installation, because customers don't have to supply details that they might not know. For more information, see [Automated configuration of a template app installation](template-apps-auto-install.md).
 
-## Next steps
+## Related content
 
 - To learn how your customers interact with your template app, see [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 - For details on distributing your app, see the [Create a Power BI app offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).

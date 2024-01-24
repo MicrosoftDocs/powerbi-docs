@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 01/24/2024
 LocalizationGroup: Get started
 ---
 
@@ -28,7 +28,7 @@ After you have an account set up, you can sign in and get started in the Power B
 
 The Power BI service runs in a browser.
 
-- If you've received an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
+- If you receive an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="A screenshot that shows an email that contains a link to a report.":::
 
@@ -42,7 +42,7 @@ The Power BI service runs in a browser.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-already.png" alt-text="A screenshot that shows the Microsoft 365 sign-in message.":::
 
-2. Enter your Microsoft 365 account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code that's sent to your email or mobile device.
+2. Enter your Microsoft 365 account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code sent to your email or mobile device.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="A screenshot that shows an Enter password dialog box.":::
 
@@ -76,7 +76,7 @@ That doesn't mean that you can't save your changes. You can, but those changes o
 
 ## Sign out of the Power BI service
 
-When you close or sign out of the Power BI service, your changes are saved so you can pick up where you left off.
+When you close or sign out of the Power BI service, your changes are saved. Youou can pick up where you left off.
 
 To close Power BI, close the browser tab where you're working.
 
@@ -86,12 +86,16 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 
 :::image type="content" source="media/end-user-sign-in/power-bi-signout.png" alt-text="A screenshot showing the profile menu and sign out is outlined.":::
 
-## Troubleshooting
+## Considerations and limitations
 
-- If you've signed up for Power BI as an individual, sign in with the email address that you used to sign up.
+- If you don't have a work or school account, [you can still sign up for Power BI with a Microsoft 365 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+
+- If you signed up for Power BI as an individual, sign in with the email address that you used to sign up.
 
 - Some people use more than one Power BI account. If you do, you're prompted to select an account from a list when signing in.
+- If sign up is disabled, [use this article to get help.](../fundamentals/service-self-service-sign-up-help.md)
 
-## Next steps
 
-[View a Power BI app](end-user-app-view.md)
+## Related content
+
+- [View a Power BI app.](end-user-app-view.md)

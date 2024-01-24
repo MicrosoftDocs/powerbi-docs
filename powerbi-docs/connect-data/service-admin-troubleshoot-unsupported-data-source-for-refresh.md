@@ -46,7 +46,7 @@ If you aren't sure what data source was used, you can find that using the follow
 > [!NOTE]
 > For refresh issues related to dynamic data sources, including data sources that include hand-authored queries, see [Refresh and dynamic data sources](refresh-data.md#refresh-and-dynamic-data-sources).
 
-## Next steps
+## Related content
 
 - [Data Refresh](refresh-data.md)
 - [Power BI Gateway - Personal](service-gateway-personal-mode.md)

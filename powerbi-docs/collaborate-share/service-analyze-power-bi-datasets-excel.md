@@ -72,7 +72,7 @@ To refresh all objects connected to a Power BI semantic model, use either of the
 
     :::image type="content" source="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png" alt-text="Screenshot showing the Queries and Connections pane." lightbox="media/service-analyze-power-bi-datasets-excel/refresh-multiple-objects-data-tab.png":::
 
-## Next steps
+## Related content
 
 - [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
 - [Connect Excel to Power BI semantic models](service-connect-power-bi-datasets-excel.md)

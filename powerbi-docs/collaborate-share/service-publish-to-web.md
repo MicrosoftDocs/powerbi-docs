@@ -206,7 +206,7 @@ Publish to web is supported for the vast majority of data sources and reports in
 - Paginated reports.
 - Multiple-language reports. 
 
-## Next steps
+## Related content
 
 - [SharePoint Online report web part](service-embed-report-spo.md) 
 - [Embed report in a secure portal or website](service-embed-secure.md)

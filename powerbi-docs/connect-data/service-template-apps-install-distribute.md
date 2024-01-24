@@ -148,6 +148,6 @@ An installed template app consists of the app and its associated workspace. If y
 
        :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png" alt-text="Screenshot of the app workspace with more options and unpublish app highlighted.":::
 
-## Next steps
+## Related content
 
-[Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md)

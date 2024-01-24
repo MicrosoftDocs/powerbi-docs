@@ -215,7 +215,7 @@ The desired flow should be:
 1. If everything is configured properly, the browser should automatically redirect to the customer's Power BI account and show the automated installation flow.
 1. Upon installation, parameter values are set as configured in steps 1 and 2.
  
-## Next steps
+## Related content
 
 ### Publish your project to Azure
 

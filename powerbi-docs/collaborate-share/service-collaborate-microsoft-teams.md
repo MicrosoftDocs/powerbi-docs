@@ -101,7 +101,7 @@ The other Microsoft Power Platform apps also integrate with Microsoft Teams.
 - [Power Apps](/powerapps/teams/overview)
 - [Power Virtual Agents](/power-virtual-agents/)
 
-## Next steps
+## Related content
 
 - [Embed Power BI content in Microsoft Teams.](service-embed-report-microsoft-teams.md)
 - [Get a Power BI link preview in Microsoft Teams.](service-teams-link-preview.md)

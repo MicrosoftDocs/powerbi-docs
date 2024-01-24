@@ -228,7 +228,7 @@ In this release of bookmark features, there are a few considerations and limitat
 * If you add a slicer to a page where you previously created bookmarks, the slicer will be cleared.
 * If you move a visual after you create a bookmark, when you select the bookmark, the visual appears where you moved it.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with bookmarks, see the following articles:
 

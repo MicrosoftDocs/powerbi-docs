@@ -60,7 +60,7 @@ Images in your report need to be anonymously accessible. However, for images tha
 - The URL must be anonymously accessible, not on a site that requires a sign-in, such as SharePoint or OneDrive for work or school.
 - The Power BI mobile apps display the image only if the image URL is anonymously accessible. The image cannot be hosted on a site that requires a sign-in, such as SharePoint, even if you can see the image in Power BI Desktop or in the service.
 
-## Next steps
+## Related content
 
 * [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)

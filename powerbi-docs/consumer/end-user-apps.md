@@ -68,7 +68,7 @@ There are a few other ways to get apps.
 * The app designer emails you a direct link to an app. Selecting the link opens the app in the Power BI service.
 * In Power BI on your mobile device, you can only install an app from a direct link, and not from the apps marketplace. If the app author installs the app automatically, it's available in your list of apps.
 
-## Next steps
+## Related content
 
 * [Install and use apps with dashboards and reports in Power BI](end-user-app-view.md)
 * [Other ways to share content](../collaborate-share/end-user-shared-with-me.md)

@@ -151,7 +151,7 @@ The following connectors are not supported for dataflows and datamarts in Premiu
 The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that are not Premium.
 
 
-## Next steps
+## Related content
 
 - [Data refresh in Power BI](refresh-data.md)  
 - [Troubleshoot the On-premises data gateway](service-gateway-onprem-tshoot.md)  

@@ -240,10 +240,10 @@ We plan to release an API for custom visual developers to be able to define subs
 
 - Full accessibility isn't currently supported.
 
-## Next steps
+## Related content
 
-[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
+- [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI community](https://community.powerbi.com/)

@@ -49,7 +49,7 @@ To change this option, select **File** > **Options and settings** > **Options**,
 
 ![Screenshot shows the Options dialog where you can enable or disable certificate revocation check.](media/desktop-connect-to-web/connect-to-web-06.png)
 
-## Next steps
+## Related content
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 

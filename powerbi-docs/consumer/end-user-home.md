@@ -148,4 +148,4 @@ To search, use the search field, which is in the upper right corner of the Home 
 
 ## Related content
 
-Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 
+- Overview of the [Power BI basic concepts](end-user-basic-concepts.md) 

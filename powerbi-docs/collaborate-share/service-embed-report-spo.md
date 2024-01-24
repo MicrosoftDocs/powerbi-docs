@@ -171,7 +171,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
 
 * [URL filters](service-url-filters.md) aren't supported with the SharePoint Online web part.
 
-## Next steps
+## Related content
 
 * [Allow users to create modern pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Publish an app in Power BI](service-create-distribute-apps.md)  

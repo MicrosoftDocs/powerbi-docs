@@ -125,7 +125,8 @@ Things to keep in mind about sharing reports:
 * You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with, and republish the app. 
 * Share link to selection for visuals in reports creates a shared view with the visual in spotlight mode.
 
-## Next steps
+## Related content
+
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a report or dashboard](service-share-dashboards.md)
 * [Interact with content that has been shared with you](end-user-shared-with-me.md)

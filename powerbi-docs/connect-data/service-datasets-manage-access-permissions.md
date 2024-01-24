@@ -76,7 +76,7 @@ The shared report links tab lists [links that have been created to shared report
 
 ![Screenshot of shared report links tab on the semantic model manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-shared-report-links-tab.png)
 
-## Next steps
+## Related content
 
 * [Semantic model permissions](./service-datasets-permissions.md)
 * [Share access to a semantic model](./service-datasets-share.md)
