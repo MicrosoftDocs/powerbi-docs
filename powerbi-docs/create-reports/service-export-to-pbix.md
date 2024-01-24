@@ -145,7 +145,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Downloading a .pbix file that's larger than 1 GB isn't supported.
 * Semantic models with [automatic aggregations](../enterprise/aggregations-auto.md#considerations-and-limitations) enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the semantic model settings and delete the aggregations tables by selecting the checkbox **Delete automatic aggregations tables**.
 
-## Next steps
+## Related content
 
 - [Reports in Power BI](../consumer/end-user-reports.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)

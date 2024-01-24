@@ -145,14 +145,14 @@ Keep in mind that as the report creator, whatever filters you save with the repo
 - If you don't see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md).
 - If you've made lots of changes to the filters and want to return to the default settings, select **Reset to default** from the top menu bar. Remember: As the report author, whatever filters are in place when you save the report *become* the default filter settings.
 
-## Next steps
+## Related content
 
-[Format the filters in your Power BI reports](power-bi-report-filter.md)
+- [Format the filters in your Power BI reports](power-bi-report-filter.md)
 
-[Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
+- [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
 
-[Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
+- [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
-[Different kinds of filters in Power BI](power-bi-report-filter-types.md)
+- [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

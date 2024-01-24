@@ -38,7 +38,7 @@ The following links provide information about which fonts are available on Macs.
 - [Where to find Calibri and Cambria for Macs](https://apple.stackexchange.com/questions/128091/where-can-i-find-default-microsoft-fonts-calibri-cambria)
 - [How to fix missing Calibri, Cambria and Segoe UI fonts on a Mac](https://ben.lobaugh.net/blog/204750/how-to-fix-missing-calibri-and-cambria-fonts-on-mac)
 
-## Next steps
+## Related content
 
 - [What is Power BI?](power-bi-overview.md)
 - Ask the [Power BI Community](https://community.powerbi.com/)

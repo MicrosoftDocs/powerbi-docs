@@ -177,11 +177,11 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 - You will have read only capability with workbooks.
 - Scheduled refresh isn't supported for Excel workbooks in Power BI Report Server.
 
-## Next steps
+## Related content
 
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

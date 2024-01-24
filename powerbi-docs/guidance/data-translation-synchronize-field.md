@@ -59,6 +59,6 @@ You have now learned how to synchronize the selection of language across multipl
 > [!NOTE]
 > You can test your implementation of data translations in Power BI Desktop by changing the filter on the **Languages** table. However, the other two types of translations don't work correctly in Power BI Desktop. You have to test metadata and report label translations in the Power BI service.
 
-## Next steps
+## Related content
 
 - [Implement data translations for a calendar table](data-translation-calendar-table.md)

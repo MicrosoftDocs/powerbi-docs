@@ -242,7 +242,7 @@ The following table describes current Power BI support for SAP BW.
 |Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | gsskrb5/gx64krb5  | No  |
 |Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | sapcrypto  | Yes  |
 
-## Next steps
+## Related content
 
 - [SAP BW fundamentals](/power-query/connectors/sap-bw/sap-bw-fundamentals)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)

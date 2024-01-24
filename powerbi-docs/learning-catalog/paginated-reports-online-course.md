@@ -111,7 +111,7 @@ You can download and set up an attendee kit, which consists of the presentation 
 
 Use [this link](https://aka.ms/priad-instructor) to download the instructor kit (.zip) locally to your PC.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

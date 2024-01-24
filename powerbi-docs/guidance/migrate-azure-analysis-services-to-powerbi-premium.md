@@ -292,7 +292,7 @@ To identify the user, Power BI utilizes a unique name claim in Microsoft Entra I
 
 The Microsoft Azure Analysis Services to Microsoft Power BI Premium migration feature in Power BI migrates as AAS database to a semantic model in Power BI Premium, Power BI Premium Per User, or Power BI Embedded workspace. For more information, see [Migrate Azure Analysis Services to Power BI](../enterprise/aas-pbi-migration-overview.md).
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

@@ -434,6 +434,6 @@ A Power BI [datamart](/power-bi/transform-model/datamarts/datamarts-overview) in
 
 You can track user activities for Power BI datamarts by using the Power BI activity log. For more information, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md), learn about tenant-level auditing.

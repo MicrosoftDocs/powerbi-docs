@@ -74,7 +74,7 @@ SQL Server Profiler can provide more details about query performance by tracing 
     The following image shows an example of query processing events for a DAX query. In this trace, the VertiPaq storage engine (SE) events indicate that the query was processed in Direct Lake mode.
     :::image type="content" source="media/directlake-analyze-qp/sql-profiler-qp-events.png" alt-text="Query processing events in SQL Server Profiler":::
 
-## See also
+## Related content
 
-[Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md)  
-[Direct Lake overview](directlake-overview.md)
+- [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md)  
+- [Direct Lake overview](directlake-overview.md)

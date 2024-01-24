@@ -214,7 +214,7 @@ For example, consider that salespeople can be assigned to one *or more* sales re
 
 This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
-## Next steps
+## Related content
 
 For more information about star schema design or Power BI model design, see the following articles:
 

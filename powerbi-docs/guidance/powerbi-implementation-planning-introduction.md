@@ -58,7 +58,6 @@ The series includes usage scenarios that illustrate different ways that creators
 When completed, the series will:
 
 - Complement the [Fabric adoption roadmap](fabric-adoption-roadmap.md), which describes considerations for successful Microsoft Fabric and Power BI adoption and a healthy data culture. Power BI implementation planning guidance that correlates with the adoption roadmap goals will be added to this series.
-- Replace the [Planning a Power BI enterprise deployment white paper](https://aka.ms/PBIEnterpriseDeploymentWP), which was designed to describe various technical factors when deploying Power BI. Relevant white paper content will be merged into this series in a new format that's more discoverable and actionable.
 - Replace the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) (together with the [Fabric adoption roadmap](fabric-adoption-roadmap.md)), which is a lightweight set of resources (videos and presentation slides) that were designed to help Microsoft partners deploy Power BI solutions for their customers. Relevant adoption framework action items will be merged into this series.
 
 ## Recommendations
@@ -91,7 +90,7 @@ This series is certain to be helpful for organizations that are in their early s
 
 The Power BI implementation planning articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-overview.md), learn about usage scenarios that describe how you can use Power BI in diverse ways.
 

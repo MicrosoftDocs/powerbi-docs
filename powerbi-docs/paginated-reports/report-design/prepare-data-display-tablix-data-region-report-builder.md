@@ -47,9 +47,10 @@ FROM Production.Product p
   
  To sort a table data region according to this sort order, set the sort expression on the detail group to `=Fields!ColorSortOrder.Value`. For more information, see [Sort Data in a Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md).  
   
-## Next steps  
- [Dataset Fields Collection &#40;Power BI Report Builder&#41;](../../paginated-reports/report-data/dataset-fields-collection-report-builder.md)   
- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)  
+## Related content
+
+- [Dataset Fields Collection &#40;Power BI Report Builder&#41;](../../paginated-reports/report-data/dataset-fields-collection-report-builder.md)   
+- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
+- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)  
   
   

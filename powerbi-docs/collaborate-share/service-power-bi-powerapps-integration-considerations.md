@@ -81,7 +81,7 @@ Environment life cycle operations aren't supported:
 
     * Delete the dedicated environment workspace in Power BI before deleting the Power Apps environment.
 
-## Next Steps
+## Related content
 
 * [About Power BI in Power Apps Solutions](./service-power-bi-powerapps-integration-about.md)
 * [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-about.md)

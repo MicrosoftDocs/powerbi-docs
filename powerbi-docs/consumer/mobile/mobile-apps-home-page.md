@@ -89,7 +89,7 @@ The header provides the following navigation items:
 
     :::image type="content" source="./media/mobile-apps-home-page/power-bi-mobile-app-search-page.png" border="false" alt-text="Screenshot of the Power BI mobile app search page.":::
 
-## Next steps
+## Related content
 
 In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app.
 

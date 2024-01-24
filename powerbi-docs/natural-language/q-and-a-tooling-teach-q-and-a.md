@@ -100,6 +100,6 @@ After you provide definitions, you can go back to see all the fixes you made and
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
 
-## Next steps
+## Related content
 
 There are several best practices for improving the natural language engine. For more information, see [Best practices to optimize Q&A](q-and-a-best-practices.md).

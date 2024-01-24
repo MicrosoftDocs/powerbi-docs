@@ -874,6 +874,6 @@ Like semantic models, dataflows also have an owner, which is a single user accou
 > - **Decide on the strategy for dataflow owners:** Determine what preferences and requirements exist for managing dataflow owners.
 > - **Include in documentation and training for semantic model creators:** Include guidance for your data creators about how to manage owners for each type of item.
 
-## Next steps
+## Related content
 
 For other considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see the [subject areas](powerbi-implementation-planning-introduction.md#subject-areas) to consider.

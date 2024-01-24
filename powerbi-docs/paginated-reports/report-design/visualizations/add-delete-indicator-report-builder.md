@@ -65,8 +65,8 @@ ms.reviewer: saurkumar
   
 2.  Select **Delete**.  
   
-## Next steps  
+## Related content  
 
- [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
+- [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
   
   

@@ -498,6 +498,6 @@ There are other technical factors that might influence your workspace setup.
 > - **Pay attention to technical factors:** As you work through the planning process, determine whether there's a technical reason (such as per-workspace storage limits) that could influence your decision-making process.
 > - **Reorganize workspace content:** If storage limits could become a problem, create separate workspaces now and republish content to these new workspaces.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).

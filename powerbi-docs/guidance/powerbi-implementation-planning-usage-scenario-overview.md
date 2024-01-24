@@ -80,6 +80,6 @@ There are two *embedding and hybrid* scenarios: content embedding and on-premise
 
 Each of the usage scenario articles contains a scenario diagram. We encourage you to download the [scenario diagrams](powerbi-implementation-planning-usage-scenario-diagrams.md) if you'd like to embed them in your presentations, documentation, or blog posts—or print them out as wall posters. Because they're Scalable Vector Graphics (SVG) images, you can scale them up or down without any loss of quality.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-personal-bi.md), learn about enabling private analytics for an individual with the personal BI usage scenario.

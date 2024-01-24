@@ -82,6 +82,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 ![Screenshot of slideshow settings](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 
-## Next steps
+## Related content
+
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

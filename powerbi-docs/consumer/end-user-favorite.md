@@ -60,7 +60,7 @@ If you no longer use a report, dashboard, or app as often as you used to, you ca
 
 - When you favorite an app, it automatically favorites all the reports and dashboards for that app. It isn't possible to favorite individual app reports or dashboards.
 
-## Next steps
+## Related content
 
 - [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)
 - More questions? Ask the [Power BI Community](https://community.powerbi.com/).

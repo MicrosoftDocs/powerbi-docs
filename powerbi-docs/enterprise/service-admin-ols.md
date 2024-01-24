@@ -74,7 +74,7 @@ The OLS rules are now defined. Users without the required permission will receiv
 
 * [See other OLS restrictions](/analysis-services/tabular-models/object-level-security#restrictions)
 
-## Next steps
+## Related content
 
 * [Object-level security in Azure Analysis Services](/analysis-services/tabular-models/object-level-security)
 * [Power BI implementation planning: Report consumer security planning](/power-bi/guidance/powerbi-implementation-planning-security-report-consumer-planning#object-level-security)

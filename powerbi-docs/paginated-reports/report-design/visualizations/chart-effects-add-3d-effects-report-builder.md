@@ -77,10 +77,10 @@ ms.reviewer: saurkumar
   
     4.  For the **DrawingStyle** property, specify the **Cylinder** value.  
   
-## Next steps
+## Related content
 
- [Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)](chart-effects-3d-bevel-other-report-builder.md)
- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
+- [Chart effects: 3D, bevel, and others in Power BI paginated reports (Power BI Report Builder)](chart-effects-3d-bevel-other-report-builder.md)
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
   
   

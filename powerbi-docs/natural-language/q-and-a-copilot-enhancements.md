@@ -12,6 +12,15 @@ ms.date: 11/14/2023
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
+Before your business can start using Copilot capabilities in Power BI, you need to enable Copilot in Microsoft Fabric.
+
+> [!NOTE]
+>
+> - Your F64 or P1 capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.
+> - Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot) for details.
+> - If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting in the Fabric Admin portal.
+> - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+
 The Q&A visual and its natural language processing capabilities aren't reliant on generative AI. However, you can use Copilot for Power BI to quickly improve the Q&A visual's ability to understand user questions.
 
 :::image type="content" source="media/q-and-a-copilot-enhancements/q-and-a-copilot-suggestions.png" alt-text="Copilot makes synonym suggestions.":::
@@ -44,7 +53,7 @@ We're continuously working to improve the quality of the report pages, including
 - When too many requests are sent to Copilot from various sources in a short span of time, requests may be subject to throttling. This may result in suggestions being generated for only a subset of the model.
 - Copilot may also not return results for terms for which it can't generate synonyms, or when its results are deemed inappropriate by our content filter.
 
-## Next steps
+## Related content
 
 Learn more about:
 

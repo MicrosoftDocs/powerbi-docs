@@ -158,12 +158,12 @@ One of their most important data governance decisions related to management of P
 > [!IMPORTANT]
 > Pay attention to how Premium capacities are used, and how workspaces are assigned to them.
 
-## Next steps
+## Related content
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Dashboard in a Day](https://powerbi.microsoft.com/diad/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

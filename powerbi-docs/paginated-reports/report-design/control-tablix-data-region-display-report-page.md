@@ -63,12 +63,13 @@ Table, matrix, and list data regions are all examples of *tablix* data regions. 
   
  For more information about how exporting a report to different formats affects the way a tablix data region renders on a page, see [Rendering Behaviors &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-behaviors-report-builder-service.md).  
   
-## Next steps  
- [Link Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)   
- [Nested Data Regions &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/nested-data-regions-report-builder.md)   
- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md)   
- [Control Page Breaks, Headings, Columns, and Rows &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md)   
- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Link Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)   
+- [Nested Data Regions &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/nested-data-regions-report-builder.md)   
+- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/expression-scope-for-totals-aggregates-and-built-in-collections.md)   
+- [Control Page Breaks, Headings, Columns, and Rows &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/control-page-breaks-headings-columns-rows-report-builder.md)   
+- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

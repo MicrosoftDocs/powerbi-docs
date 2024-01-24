@@ -113,7 +113,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
         }
     ```
 
-## Next steps
+## Related content
 
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)

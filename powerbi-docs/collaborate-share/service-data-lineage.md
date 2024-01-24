@@ -93,7 +93,7 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 * Lineage view isn't available in Internet Explorer. For more information, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 * Correct display of semantic model<->dataflow lineage is guaranteed only if the **Get Data** UI is used to set up the connection to the dataflow, and the **Dataflows** connector is used. Correct display of semantic model<->dataflow lineage isn't guaranteed if a manually created Mashup query is used to connect to the dataflow.
 
-## Next steps
+## Related content
 
 * [Introduction to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md)
 * [Semantic model impact analysis](service-dataset-impact-analysis.md)

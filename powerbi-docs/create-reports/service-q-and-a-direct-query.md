@@ -59,7 +59,7 @@ The feature has some limitations:
 * Q&A isn't supported for data models with 0bject-level security (OLS). For more information, see [Q&A limitations](../natural-language/q-and-a-limitations.md#data-sources-not-supported).
 * Live connections are only supported with the on-premises data gateway. As a result, this feature can't be used with the personal gateway.
 
-## Next steps
+## Related content
 
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 * [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)

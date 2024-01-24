@@ -88,7 +88,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
        ![Screenshot of an insight and cards displaying data on that insight.](media/service-insights/power-bi-insights-on-insights-new.png)
 5. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
-## Next steps
+## Related content
 
 - [Optimize your data for Power BI quick insights](service-insights-optimize.md).
 - [Types of Insights supported by Power BI](../consumer/end-user-insight-types.md).

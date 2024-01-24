@@ -23,7 +23,7 @@ In the settings page, find the **Semantic model description** section, and enter
 
 :::image type="content" source="media/service-dataset-description/dataset-description-section-in-dataset-settings.png" alt-text="Screenshot of semantic model description text box on the semantic model settings page." lightbox="media/service-dataset-description/dataset-description-section-in-dataset-settings.png":::
 
-## Next steps
+## Related content
 
 * [OneLake data hub](service-data-hub.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

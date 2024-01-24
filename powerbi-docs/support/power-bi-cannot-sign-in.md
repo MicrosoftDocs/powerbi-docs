@@ -30,6 +30,6 @@ Customers that purchase [Microsoft Premier support](https://support.microsoft.co
 
 If you can't create a post in the Power BI community forum, it's because the forum also requires you to sign in. For more information, see [Community Support](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
 
-## Next steps
+## Related content
 
-[Power BI Pro and Power BI Premium support options](service-support-options.md)
+* [Power BI Pro and Power BI Premium support options](service-support-options.md)

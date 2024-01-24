@@ -85,7 +85,7 @@ Anyone can use the **Visualize the list** or **visualize the library** feature t
 
 If you don't see **Power BI** on the **Integrate** menu in a SharePoint or Microsoft list or library, your Power BI admin may have disabled it for specific groups or your entire organization. See the [Integration with SharePoint and Microsoft Lists](/fabric/admin/service-admin-portal-integration#integration-with-sharepoint-and-microsoft-lists) section of the "Power BI admin portal" article for details.
 
-## Next steps
+## Related content
 
 As we continue expanding our experience to quickly explore your data, we’d love to hear your thoughts and feedback! Let us know what you’d like to see added to this experience or where’d you like to see us integrate next.
 

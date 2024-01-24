@@ -96,6 +96,6 @@ For example, you might discover that content in a financial workspace has been a
 - **Actions to take:** Review content explorer when you need to gain an understanding of what content exists and where it resides. Use this information to assess the decisions you've made, and whether other actions should be taken.
 - **Where to find this data:** Microsoft 365 administrators can use [content explorer](/microsoft-365/compliance/data-classification-content-explorer) in the Microsoft Purview compliance portal to locate where sensitive data currently resides.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see the Power BI implementation planning [subject areas](powerbi-implementation-planning-introduction.md#subject-areas).

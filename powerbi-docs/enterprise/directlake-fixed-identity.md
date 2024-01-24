@@ -33,7 +33,7 @@ Follow these steps to specify a fixed identity connection for a Direct Lake sema
 
 1. In the Direct Lake model settings, verify the data source is now associated with the non-SSO cloud connection.
 
-## See also
+## Related content
 
-[Direct Lake overview](directlake-overview.md)  
-[Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  
+- [Direct Lake overview](directlake-overview.md)  
+- [Analyze query processing for Direct Lake datasets](directlake-analyze-qp.md)  

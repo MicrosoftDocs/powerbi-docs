@@ -176,6 +176,6 @@ All native visuals are supported with the exception of these visuals:
 - Power Apps
 - Power Automate
 
-## Next steps
+## Related content
 
-[Personalize visuals in a report](end-user-personalize-visuals.md)
+- [Personalize visuals in a report](end-user-personalize-visuals.md)

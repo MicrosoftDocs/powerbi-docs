@@ -1,13 +1,13 @@
 ---
 title: What is the Power BI service?
 description: Overview of the Power BI service and how it fits with the other parts of Power BI.
-author: mihart
-ms.author: mihart
+author: davidiseminger
+ms.author: davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: video-B2vd4MQrz4M, intro-overview
 ms.topic: overview
-ms.date: 12/6/2022
+ms.date: 01/18/2024
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ---
@@ -37,7 +37,7 @@ This workflow is common, but you can also create Power BI reports right in the P
 
 After you've created reports and dashboards, you can share them. End users in the Power BI service and mobile devices can view and interact with them. Being able to control how you share your work is one of the most important features of the Power BI service. You create workspaces where you and your colleagues can collaborate on reports and dashboards. Then you can bundle and distribute them as apps. You can also share the semantic models themselves, so others can use them as a basis for their own reports. Read more about [ways to collaborate and share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
-## Next steps
+## Related content
 
 - For consumers: [Getting around in Power BI service](../consumer/end-user-experience.md)
 - [Tutorial: Get started creating in the Power BI service](service-get-started.md)

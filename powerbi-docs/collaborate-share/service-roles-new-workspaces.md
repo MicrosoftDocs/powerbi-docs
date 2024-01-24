@@ -101,7 +101,7 @@ A limitation to be aware of:
 
 - A person with a Power BI Pro license can be a member of a maximum of 1,000 workspaces.
 
-## Next steps
+## Related content
 
 - [Create workspaces in Power BI](service-create-the-new-workspaces.md)
 - [Give users access to workspaces](service-give-access-new-workspaces.md)

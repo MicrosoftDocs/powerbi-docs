@@ -62,7 +62,7 @@ Where:
 * Default labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to default label policies.
 * Default label policies in Power BI aren't supported for [external guest users (Microsoft Entra B2B)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label is applied automatically.
 
-## Next steps
+## Related content
 
 * [Mandatory label policy for Power BI](service-security-sensitivity-label-mandatory-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)

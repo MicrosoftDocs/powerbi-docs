@@ -146,7 +146,7 @@ ms.reviewer: monaraya
 |[Format pointers on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)|Provides general information about formatting pointers on gauges and detailed information about the formatting options for pointer styles available for radial and linear gauges.|  
 |[Format ranges on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-ranges-on-a-gauge-report-builder-and-ssrs)|Provides information about formatting ranges on gauges to indicate an important subsection of values on the gauge or visually indicate when the pointer value has gone into a certain span of values.|  
   
-## Next steps
+## Related content
 
 - [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md)
 - [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../filter-group-sort-data-report-builder.md)

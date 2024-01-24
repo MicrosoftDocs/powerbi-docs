@@ -84,7 +84,7 @@ For workspace level configuration, you can add an Azure admin as a Power BI work
 
 *Answer:*  Azure Log Analytics bills storage, ingestion, and analytical queries independently. Cost also depends on the geographic region. It will vary depending on how much activity is generated, how long you choose to store the data, and how often you query it. An average Premium capacity generates about 35 GB of logs monthly, but the storage size of logs can be higher for heavily utilized capacities. For for information, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/).
 
-## Next steps
+## Related content
 
 The following articles can help you learn more about Power BI, and about its integration with Azure Log Analytics.
 

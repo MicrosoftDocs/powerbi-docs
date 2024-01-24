@@ -134,7 +134,7 @@ In addition, the following model types and data sources are currently not suppor
 * On-premises Reporting Services
 * Embedding
 
-## Next steps
+## Related content
 
 For more information, see:
 

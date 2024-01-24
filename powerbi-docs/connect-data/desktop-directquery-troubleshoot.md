@@ -121,7 +121,7 @@ One reason Power BI uses this pattern is so you can define a Power Query query t
 
 For information about troubleshooting gateway performance, see [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md).
 
-## Next steps
+## Related content
 
 For more information about DirectQuery, check out the following resources:
 

@@ -53,9 +53,10 @@ ms.reviewer: saurkumar
   
 1. Optionally, select **Also at the start of a group** or **Also at the end of a group** to specify that a page break be added when a group starts or ends in the table.  
   
-## Next steps  
- [Pagination in Power BI paginated reports](../paginated-reports-pagination.md)   
- [Rendering behaviors in a paginated report (Power BI Report Builder)](../report-design/render-behaviors-report-builder-service.md)   
- [Page headers and footers in a paginated report (Power BI Report Builder)](../report-design/page-headers-footers-report-builder-service.md)  
+## Related content
+
+- [Pagination in Power BI paginated reports](../paginated-reports-pagination.md)   
+- [Rendering behaviors in a paginated report (Power BI Report Builder)](../report-design/render-behaviors-report-builder-service.md)   
+- [Page headers and footers in a paginated report (Power BI Report Builder)](../report-design/page-headers-footers-report-builder-service.md)  
   
   

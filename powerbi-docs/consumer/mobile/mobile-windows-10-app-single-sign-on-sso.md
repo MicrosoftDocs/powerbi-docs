@@ -31,7 +31,7 @@ If you're already using the Power BI mobile app for Windows, when you upgrade to
 
 If you don't want to use your current Windows active session credentials to sign in to Power BI, just go to **Settings**, sign out, and sign in with different credentials.
 
-## Next steps
+## Related content
 
 - [Get started with the Power BI mobile app for Windows](mobile-windows-10-phone-app-get-started.md)
 - Questions? [Ask the Power BI Community](https://community.powerbi.com/)

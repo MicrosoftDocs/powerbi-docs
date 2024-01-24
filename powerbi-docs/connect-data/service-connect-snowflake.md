@@ -72,7 +72,7 @@ If you choose not to enable SSO, then users refreshing the report will use the c
 
 If you run into any issues with the integration, see the Snowflake [troubleshooting guide](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html#troubleshooting).
 
-## Next steps
+## Related content
 
 * [Data sources for the Power BI service](service-get-data.md)
 * [Connect to semantic models in the Power BI service from Power BI desktop](desktop-report-lifecycle-datasets.md)

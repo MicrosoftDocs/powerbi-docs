@@ -96,7 +96,7 @@ Use *Deployment Pipelines* for changes to ensure the best performance, and to en
 * Power BI currently caps the duration of caching operations to 10 minutes.
 * Constraints of uniqueness/non-null for particular columns will be enforced in the Import model and will fail the cache building if the data doesn't conform.
 
-## Next steps
+## Related content
 
 This article provided an overview of important datamart concepts to understand.
 

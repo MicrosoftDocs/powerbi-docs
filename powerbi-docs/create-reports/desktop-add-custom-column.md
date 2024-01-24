@@ -84,7 +84,7 @@ After you've created your query, you can also use the **Advanced Editor** to mod
    ![Screenshot of the Advanced Editor window.](media/desktop-add-custom-column/add-custom-column_07.png)
 2. Make any changes and then select **Done**.
 
-## Next steps
+## Related content
 
 - You can create a custom column in other ways, such as creating a column based on examples you provide to Power Query Editor. For more information, see [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md).
 

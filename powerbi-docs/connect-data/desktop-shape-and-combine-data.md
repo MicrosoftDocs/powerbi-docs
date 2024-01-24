@@ -284,7 +284,7 @@ In this case, we want to merge the queries:
 
    :::image type="content" source="media/desktop-shape-and-combine-data/close-and-apply.png" alt-text="Screenshot of Power Query Editor's Close & Apply button.":::
 
-## Next steps
+## Related content
 
 For more information on Power BI Desktop and its capabilities, see the following resources:
 

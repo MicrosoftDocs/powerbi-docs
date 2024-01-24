@@ -116,8 +116,8 @@ if (userClickedOK == true)
 } 
 ```
 
-## See also
+## Related content
 
-[External tools in Power BI Desktop](desktop-external-tools.md)  
-[Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
-[Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true)  
+* [External tools in Power BI Desktop](desktop-external-tools.md)  
+* [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true)  
+* [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current&preserve-view=true)  

@@ -75,7 +75,7 @@ At report design time, we recommend the following practices:
 - **Tooltip filters:** Assign filters to the page tooltip so that you can preview a realistic result as you design it. Be sure to remove these filters before you publish your report.
 - **Page visibility:** Always hide tooltip pages—users shouldn't navigate directly to them.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

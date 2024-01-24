@@ -96,6 +96,7 @@ You can improve the results you and your customers get when they use the Q&A vir
 ### How to enhance the semantic model
 * Enhance the semantic model in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
 
-## Next steps
+## Related content
+
 * [Q&A in the Power BI service](../end-user-q-and-a.md)
 * Questions? Check the [Mobile apps section of the Power BI Community](https://go.microsoft.com/fwlink/?linkid=839277)

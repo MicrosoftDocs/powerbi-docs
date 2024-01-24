@@ -92,7 +92,7 @@ You can share the datamart with other users in your organization. Selecting the 
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-share-datamart.png" alt-text="Screenshot of datamart share this data section on datamart details page.":::
   
-## Next steps
+## Related content
 
 * [Create exportable paginated reports in the Power BI service](../paginated-reports/web-authoring/paginated-formatted-table.md)
 * [Endorse your content](../collaborate-share/service-endorse-content.md)

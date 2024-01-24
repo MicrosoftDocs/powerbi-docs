@@ -30,7 +30,7 @@ Once you follow a metric, you'll get Teams notifications whenever the metric def
 
 To unfollow and stop getting Teams notifications, hover over the metrics and select the **Unfollow metric**.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

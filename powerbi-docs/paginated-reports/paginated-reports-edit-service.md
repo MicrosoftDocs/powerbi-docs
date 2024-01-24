@@ -48,7 +48,7 @@ This article explains how to quickly edit a paginated report in Power BI Report 
 
     :::image type="content" source="media/paginated-reports-edit-service/paginated-save-as-publish.png" alt-text="Screenshot that shows the option to save the paginated report back to the Power BI service.":::
  
-## Next steps 
+## Related content 
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)

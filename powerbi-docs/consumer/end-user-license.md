@@ -134,9 +134,7 @@ The Power BI Pro designer can share and collaborate with other Pro users in eith
 
 - A free user license for the Power BI service is perfect for someone exploring or using it for personal data analysis and visualizations by using **My workspace**. A free standalone user doesn't use Power BI to collaborate with colleagues. Standalone users with free licenses can't view content shared by others or share their own content with other Power BI users.
 
-
-
-## Next steps
+## Related content
 
 - [Am I a Power BI business user?](end-user-consumer.md)  
 - [Learn about workspaces](end-user-workspaces.md)  

@@ -145,7 +145,7 @@ A: We can't guarantee the printed copy is exactly the same as it appears in the 
 Q: Why don't I see the print option when I hover over the visual in full screen mode?</br>
 A: Go back to the dashboard or report in default view and reopen the visual in Focus mode and then Full screen mode.
 
-## Next step
+## Related content
 
 - [Share Power BI reports and dashboard with coworkers and others](../collaborate-share/service-share-dashboards.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

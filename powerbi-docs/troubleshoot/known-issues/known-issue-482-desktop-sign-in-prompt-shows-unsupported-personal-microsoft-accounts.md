@@ -28,6 +28,6 @@ When you try to sign in to Power BI Desktop, you may see personal accounts liste
 
 To sign in, select a **Work or school account** from the sign in screen.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

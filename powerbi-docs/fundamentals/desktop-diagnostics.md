@@ -164,7 +164,7 @@ Data refresh information is especially relevant if you're experiencing:
 - Issues with incremental and automatic page refresh.
 - Issues with aggregations, including performance issues.
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information about its capabilities, check out the following resources:
 

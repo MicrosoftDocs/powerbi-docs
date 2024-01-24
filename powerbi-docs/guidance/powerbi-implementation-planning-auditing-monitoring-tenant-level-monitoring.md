@@ -259,6 +259,6 @@ Common Azure services that integrate with Power BI include:
 > - **Investigate information protection and DLP requirements:** Explore requirements for using sensitivity labels in Microsoft Purview Information Protection to classify data (the first building block of information protection). Consider requirements for implementing DLP for Power BI, and the associated monitoring processes.
 > - **Investigate Defender for Cloud Apps capabilities:** Explore requirements for using Microsoft Defender for Cloud Apps to monitor user behavior and activities.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md#subject-areas).

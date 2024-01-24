@@ -36,7 +36,7 @@ Scaling this deployment model to handle exponential service growth is accomplish
 
 These features have enabled the Power BI team to improve the success rate of deployments by 18 points while absorbing a 400% year-over-year growth in monthly deployments.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Power BI site reliability engineering (SRE) model](service-admin-site-reliability-engineering-model.md)

@@ -45,7 +45,7 @@ To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards t
     - Rename the dashboard, turn Q&A on or off, and set the tile flow from the dashboard Settings pane. (Select **File** > **Settings**)
     - Share your dashboard directly with colleagues or as part of a Power BI app.
 
-## Next steps
+## Related content
 
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 

@@ -448,6 +448,6 @@ For more information about securing devices and data, see the [Power BI security
 > - **Set up registry settings:** Set up the registry settings to customize user machines, when applicable.
 > - **Investigate mobile device management:** Consider using app protection policies and device protection policies for mobile devices, when appropriate.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md#subject-areas).

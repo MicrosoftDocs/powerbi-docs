@@ -28,6 +28,6 @@ You design a report using the new card visual in Power BI Desktop.  Once publish
 
 You can switch off the toggle for the shadow, glow and accent bar where it wasn't intended in the Service.  Also, you can try resetting the new card visual to default.
 
-## Next steps
+## Related content
 
 - [About known issues](/power-bi/troubleshoot/known-issues/power-bi-known-issues)

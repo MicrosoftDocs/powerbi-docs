@@ -99,7 +99,8 @@ Here are some other things you can do in the Power BI app for Windows devices wi
 * [View Reporting Services KPIs](mobile-app-windows-10-ssrs-kpis-mobile-reports.md) in the Power BI app for Windows devices.
 * Create [KPIs on the Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services).
 
-## Next steps
+## Related content
+
 * [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

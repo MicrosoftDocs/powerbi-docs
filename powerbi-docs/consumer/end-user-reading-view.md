@@ -194,5 +194,6 @@ This article has been a quick overview of just some of the things *business user
 
 - If you imported or connected to a Power BI sample report, from the nav pane, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and semantic model, and select the trashcan icon for each.
 
-## Next steps
-[Power BI for business users](end-user-consumer.md)
+## Related content
+
+- [Power BI for business users](end-user-consumer.md)

@@ -159,7 +159,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 
 For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 
-## Next steps
+## Related content
 
 * Article: [Sign up for Power BI for US government](service-govus-signup.md)
 * Article: [Microsoft Power Apps US Government](/power-platform/admin/powerapps-us-government)

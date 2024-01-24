@@ -1,13 +1,13 @@
 ---
 title: What is Power BI?
 description: "Overview of Power BI and how the different parts fit together: Power BI Desktop, the Power BI service, Power BI Mobile, Power BI Report Server, and Power BI Embedded."
-author: mihart
-ms.author: mihart
+author: davidiseminger
+ms.author: davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.search.form: product-power-bi
 ms.topic: overview
-ms.date: 12/06/2022
+ms.date: 01/18/2024
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ms.custom: intro-overview
@@ -89,7 +89,7 @@ Power BI Report Server is a solution that you deploy behind your firewall and th
 
 Read more about [Power BI Report Server](../report-server/get-started.md).
 
-## Next steps
+## Related content
 
 - [Tutorial: Learn your way around the Power BI service](../consumer/end-user-experience.md)
 - [Tutorial: Get started with the Power BI service](service-get-started.md)

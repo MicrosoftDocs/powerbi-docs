@@ -32,7 +32,7 @@ As a Power BI admin, you can provide a URL for the **Learn more** link on the **
 
 ![Semantic model certification Learn more](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog.png)
 
-## Next steps
+## Related content
 
 - [Use semantic models across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

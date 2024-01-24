@@ -313,14 +313,12 @@
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md
-  - name: Whitepapers
+  - name: White papers
     items: 
-    - name: "Whitepapers overview"
+    - name: "White papers overview"
       href: whitepapers.md
-    - name: "Power BI security whitepaper"
-      href: whitepaper-powerbi-security.md
-    - name: "Power BI enterprise deployment whitepaper"
-      href: whitepaper-powerbi-enterprise-deployment.md      
+    - name: "Power BI security white paper"
+      href: whitepaper-powerbi-security.md  
     - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md
     - name: "Distribute Power BI externally using Microsoft Entra B2B"

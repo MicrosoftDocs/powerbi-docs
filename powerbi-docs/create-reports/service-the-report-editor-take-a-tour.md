@@ -144,7 +144,7 @@ In Power BI Desktop, you also have options to show or hide fields, add calculati
 
 Power BI uses many different icons to indicate the types of fields in a report. When you recognize them, you understand better how they act in different visuals. For a complete list, see the Field list section of [Use the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes).
 
-## Next steps
+## Related content
 
 * [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
 * [Work with Report view in Power BI Desktop](desktop-report-view.md)

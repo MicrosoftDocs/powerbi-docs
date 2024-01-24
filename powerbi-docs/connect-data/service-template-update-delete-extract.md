@@ -96,7 +96,7 @@ A template app workspace is the source of an active distributed template app. To
 >[!NOTE]
 >Make sure not to delete app versions that customers or AppSource are using, or they will no longer work.
 
-## Next steps
+## Related content
 
 - See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 - See the [Power BI Application offer](/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details on distributing your app.

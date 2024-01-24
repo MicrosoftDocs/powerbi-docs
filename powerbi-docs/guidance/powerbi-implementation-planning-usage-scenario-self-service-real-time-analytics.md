@@ -122,6 +122,6 @@ The [activity log](/power-bi/enterprise/service-admin-auditing) records user act
 
 By using the [Premium Capacity Metrics app](/power-bi/enterprise/service-premium-metrics-app) that's available to administrators, you can visualize how much of the capacity is being used by low-priority queries. Low-priority queries consist of automatic page refresh queries and model refresh queries. Change detection queries aren't low priority.
 
-## Next steps
+## Related content
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.
