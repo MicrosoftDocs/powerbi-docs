@@ -37,7 +37,7 @@ This article describes the self-service process for the **Power BI service**. If
 
 There are different ways to get a per-user license for the Power BI service. These methods include:
 
-- Assign yourself a license if your organization already has a subscription for Power BI and self-service is turned on. The type of licenses available depend on what type of subscriptions your organization purchased and how your admin configured Power BI.
+- Assign yourself a license if your organization already has a subscription for Power BI and self-service is turned on. The types of licenses available depend on what type of subscriptions your organization purchased and how your admin configured Power BI.
 - Open [app.powerbi.com](https://app.powerbi.com) and click a "Try free" or "Buy now" link. Then, follow the prompts to complete the sign-up or purchase.
 - Opting in for a trial. If you already have a license and try to use an advanced feature, Power BI might prompt you to upgrade or try a free trial. If you have a Fabric (free) license, you can upgrade your account to Power BI Pro while using the service. If you already hold a Power BI Pro license, you might be prompted to upgrade to a Power BI Premium Per User license.
 
