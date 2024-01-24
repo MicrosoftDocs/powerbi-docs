@@ -653,7 +653,7 @@ Now you can use comments to collaborate and share your feedback on report pages 
 
 #### Maximize the view with full screen mode (Android and iOS)
 
-We added new button that let you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
+We added a new button that lets you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
 
 ### March 2019
 
