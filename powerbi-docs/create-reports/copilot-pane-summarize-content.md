@@ -28,11 +28,11 @@ To get started, select the **Copilot** button in the ribbon in either Power BI D
 > [!TIP]
 > If you don't see Copilot, your admins might not have enabled it, or you could be in a workspace that does not meet the Copilot requirements. 
  
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-button-ribbon.png" alt-text="Screenshot showing select the Copilot button in the ribbon in either Power BI Desktop or the Power BI service.":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-button-ribbon.png" alt-text="Screenshot showing select the Copilot button in the ribbon in either Power BI Desktop or the Power BI service." lightbox="media/copilot-pane-summarize-content/copilot-button-ribbon.png":::
 
 The Copilot pane opens. 
 
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing the Copilot pane open.":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing the Copilot pane open." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
  
 You can choose from suggested prompts of summaries from the main Copilot menu such as "Create a bulleted list of insights" or "Summarize visuals on this page".
  
@@ -42,23 +42,23 @@ Or you can select prompts from the user prompt guide in the sparkle menu in the 
 - Summarize visuals on the page.
 - Create a bulleted list of insights.
 
-:::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing  select prompts from the user prompt guide.":::
+:::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing  select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
 
 After you choose a prompt, select **Enter** and watch Copilot generate your summary.
  
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary.":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
 ### References
 
 In a summary response from the Copilot pane, references are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These references help the you quickly cross-check the summary output to ensure accuracy, increasing productivity.
  
-:::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing references are provided within the summary to indicate which data visuals Copilot referenced to generate the summary.":::
+:::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing references are provided within the summary to indicate which data visuals Copilot referenced to generate the summary." lightbox="media/copilot-pane-summarize-content/reference-hover-state.png":::
 
 ### Custom prompts
 
 The summary skill benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted summary or a summary specifically about sales, or about another nuanced slice of your data. 
  
-:::image type="content" source="media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary.":::
+:::image type="content" source="media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary." lightbox="media/copilot-pane-summarize-content/bulleted-insights.png":::
 
 Copilot allows you to generate a custom summary to fit your business needs. Here are some examples of custom summaries:
  
@@ -83,7 +83,7 @@ This customization allows you to focus on nuanced aspects of the data that are r
 
 The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow up questions about your report page or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report page you're on and speculative questions like "what are some, "Why might" and some "what if" questions. 
 
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response.":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
 
 copilot-questions-2.png
 
