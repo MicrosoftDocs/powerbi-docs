@@ -182,7 +182,7 @@ When you use measure progress toward your strategic objectives, you should regul
 
 Here are some general considerations to help you successfully use either key results or KPIs.
 
-- **Report your indicators:** Create reporting solutions for your indicators that let you effectively monitor them. For instance, you can use [Microsoft Viva Goals OKRs](/viva/goals/intro-to-ms-viva-goals.md) or [scorecards and metrics in Power BI](/power-bi/create-reports/service-goals-introduction.md) to measure and track progress.
+- **Report your indicators:** Create reporting solutions for your indicators that let you effectively monitor them. For instance, you can use [Microsoft Viva Goals OKRs](/viva/goals/intro-to-ms-viva-goals) or [scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md) to measure and track progress.
 - **Automate data collection:** If possible, ensure that data for indicators aren't collected manually. Find efficient ways to streamline and automate the collection of the data so that it's current, accurate, and reliable.
 - **Track change:** Visualize the current indicator value, but also the trend over time. Progress is best demonstrated as a gradual improvement. If the indicator exhibits high volatility or variance, consider using a moving average to better illustrate the trend.
 - **Assign an owner:** Ensure that a team or individual is responsible for measuring the indicator and keeping its data current.
