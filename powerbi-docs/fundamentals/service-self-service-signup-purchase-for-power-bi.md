@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 01/24/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -40,6 +40,7 @@ There are different ways to get a per-user license for the Power BI service. The
 - If your organization already has a subscription for Power BI, you might be able to self-assign a license. The type of licenses available will depend on what type of subscriptions your organization purchased and how your admin configured Power BI.
 - You can go to [app.powerbi.com](https://app.powerbi.com) and click a "Try free" or "Buy now" link. Then, follow the prompts to complete the sign-up or purchase.
 - If you already have a license and try to use an advanced feature, Power BI might prompt you to upgrade or try a free trial. If you have a Fabric (free) license, have an opportunity to upgrade your account to Power BI Pro while using the service. If you already hold a Power BI Pro license, you might be prompted to upgrade to a Power BI Premium Per User license.
+- If you don't have a work or school email account, you can get an **onmicrosoft** account by [signing up for Power BI with a free Microsoft 365 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
 
 For step-by-step instructions on using self-service sign-up and self-service purchase, go to [How to sign up for Power BI as an individual](service-self-service-signup-for-power-bi.md).
 
@@ -91,6 +92,8 @@ To cancel a trial, select **Cancel trial** from the **Me** icon.
 ### Unable to sign-up or purchase Power BI
 
 If you are unable to use self-service to get your own Power BI license, your administrator might've disabled this option. The admins who manage the domain can disable self-service sign-ups, self-service purchases, upgrades, and free trials. For help when you can't use self-service, go to [Self-service purchase help](service-self-service-purchase-help.md).
+
+If you are an admin, [learn how to enable and disable self-service.](../enterprise/service-admin-disable-self-service.md)
 
 ## Considerations and troubleshooting
 
