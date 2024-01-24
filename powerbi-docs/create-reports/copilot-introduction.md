@@ -60,6 +60,8 @@ You can also pose specific questions about the visualized data on a report page 
 
 :::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
 
+Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
+
 
 ### Synonyms to enhance Q&A
 
