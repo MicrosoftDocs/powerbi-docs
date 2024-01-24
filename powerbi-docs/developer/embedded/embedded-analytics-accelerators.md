@@ -12,7 +12,7 @@ ms.date: 01/24/2024
 
 # Embedded analytics solution accelerators from Microsoft partners
 
-Microsoft's partners offer accelerators to expedite the integration of embedded analytics solutions with your applications. These accelerators are designed to be cost-effective and efficient, reducing the time-to-market for your Power BI embedded analytics solutions, particularly for multitenant, customer-facing applications. They are particularly useful for quickly advancing proof-of-concept (PoC) or pilot projects. Accelerators simplify the implementation process and assist in managing Power BI capacity and billing.
+Microsoft's partners offer accelerators to expedite the integration of embedded analytics solutions with your applications. These accelerators are designed to be cost-effective and efficient, reducing the time-to-market for your Power BI embedded analytics solutions, particularly for multitenant, customer-facing applications. They're particularly useful for quickly advancing proof-of-concept (PoC) or pilot projects. Accelerators simplify the implementation process and assist in managing Power BI capacity and billing.
 
 Key advantages of using accelerators include:
 
@@ -20,13 +20,13 @@ Key advantages of using accelerators include:
 
 * Simplified Implementation: The complex details of implementing Power BI embedded solutions are abstracted away. Some accelerators offer backend functionality through an SDK, with the need for additional client front-end code development.
 
-* Customization and White-Labeling: Once installed, you can white-label the solution, tailor its capabilities, and customize the user interface.White-label the solution, configure its capabilities, and customize the user experience once installed.​
+* Customization and White-Labeling: Once installed, you can white-label the solution, tailor its capabilities, and customize the user interface. White-label the solution, configure its capabilities, and customize the user experience once installed.​
 
-* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They are cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI workload services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
+* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They're cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI workload services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
 
 * Integration Flexibility: Accelerators can function as standalone applications or be fully integrated with your existing application, as outlined in the [Deployment and integration options table](#deployment-and-integration-options).
 
-To watch a video describing an overview of embedded solution accelerator partner program visit this page. [Staging area URL – remove once published].
+[Watch a video describing an overview of embedded solution accelerator partner programs](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics-program-overview).
 
 Different partner accelerators vary in their deployment, acquisition/billing methods, and capabilities.
 The following table briefly describes each of the current partners’ embedded analytics solution accelerators:"
