@@ -61,7 +61,7 @@ Now generate a table of contents across your report pages.
 
 ## Send feedback
 
-We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
+We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
 
 ## Next steps
 
