@@ -35,7 +35,7 @@ In short, this series of articles is about defining a BI strategy. It describes 
 
 ## Become data-driven with a BI strategy
 
-Successful adoption and implementation of analytics solutions helps an organization meet their business objectives. To achieve successful adoption and implementation, you need a _BI strategy_. A BI strategy might sometimes described as an _analytics strategy_ or _becoming data driven_.
+Successful adoption and implementation of analytics solutions helps an organization meet their business objectives. To achieve successful adoption and implementation, you need a _BI strategy_. A BI strategy might sometimes be described as an _analytics strategy_ or _becoming data driven_.
 
 A BI strategy is a plan to implement, use, and manage data and analytics to better enable your users to meet their business objectives. An _effective_ BI strategy ensures that data and analytics support your business strategy.
 
@@ -139,7 +139,7 @@ In this example, the BI focus areas and objectives are:
 
 To achieve their BI objectives, the BI team conducts tactical planning to identify and describe their short-term key results. The BI team creates an introductory [data literacy](fabric-adoption-roadmap-data-culture.md#data-literacy) program for the salespeople. Also, the BI team drafts a user enablement plan and an accountability plan for salespeople who want to perform self-service analytics. These plans allow the salespeople to request access to data after they've completed specific training materials and signed a [self-service user acknowledgment](fabric-adoption-roadmap-system-oversight.md#user-responsibilities).
 
-In this example, the BI key results in the first quarter are are:
+In this example, the BI key results in the first quarter are:
 
 - **Data literacy:** Ensure that 90 percent of the salespeople complete the data literacy program.
 - **Content ownership:** Identify one champion in each sales team, and train the champions to connect to centralized semantic models and create their own reports.

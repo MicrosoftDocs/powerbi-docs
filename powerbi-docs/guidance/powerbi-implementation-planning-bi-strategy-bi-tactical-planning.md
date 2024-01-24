@@ -305,7 +305,7 @@ When curating this implementation backlog, consider the following points.
 
 ### Validate tactical planning
 
-Once you've defined key results, solutions, and intiatives, you should get approval from executives and the key stakeholders before enacting your tactical planning. Present the outcomes of tactical planning to executives and key stakeholders. Highlight the expected benefits and relevant outcomes for the business should tactical planning be successful. Also, explain how the described BI key results support the business objectives and data needs identified in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). Use any feedback to adjust tactical planning, where necessary.
+Once you've defined key results, solutions, and initiatives, you should get approval from executives and the key stakeholders before enacting your tactical planning. Present the outcomes of tactical planning to executives and key stakeholders. Highlight the expected benefits and relevant outcomes for the business should tactical planning be successful. Also, explain how the described BI key results support the business objectives and data needs identified in [BI strategic planning](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md). Use any feedback to adjust tactical planning, where necessary.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
