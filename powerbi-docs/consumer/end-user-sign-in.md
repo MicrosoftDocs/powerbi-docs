@@ -93,7 +93,7 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 - If you signed up for Power BI as an individual, sign in with the email address that you used to sign up.
 
 - Some people use more than one Power BI account. If you do, you're prompted to select an account from a list when signing in.
-- If sign up is disabled, [use this article to get help](fundamentals/service-self-service-sign-up-help.md).
+- If sign up is disabled, [use this article to get help](../fundamentals/service-self-service-sign-up-help.md).
 
 ## Related content
 
