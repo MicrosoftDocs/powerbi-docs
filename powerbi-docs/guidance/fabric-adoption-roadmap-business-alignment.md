@@ -49,7 +49,7 @@ Effective and consistent communication is critical to aligning processes. Consid
 - Strive for concise communication and documentation that's formatted and well organized. That way, people can easily find the information that they need.
 - Consider maintaining a visible roadmap that shows the planned solutions and activities relevant to the user community in the next quarter.
 - Be transparent when communicating policies, decisions, and changes.
-- Create a process for people to provide feedback, and review that feedback regularly as part of regular [planning activities](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan).
+- Create a process for people to provide feedback, and review that feedback regularly as part of regular [planning activities](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-4-periodically-revise-the-plan).
 
 > [!IMPORTANT]
 > To achieve effective business alignment, you should make it a priority to identify and dismantle any communication barriers between business teams and technical teams.
