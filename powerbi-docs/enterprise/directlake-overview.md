@@ -14,7 +14,7 @@ LocalizationGroup: Admin
 ---
 # Direct Lake
 
-*Direct Lake* mode is a groundbreaking semantic model capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI model. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with Direct Lake mode.
+*Direct Lake* mode is a groundbreaking semantic model capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse or Warehouse endpoint, and without having to import or duplicate data into a Power BI model. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with Direct Lake mode.
 
 :::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
@@ -30,17 +30,21 @@ Direct Lake is supported on Power BI Premium P and Microsoft Fabric F SKUs only.
 
 #### Lakehouse
 
-Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling to create a Direct Lake model.
+Before using Direct Lake, you must provision a Lakehouse (or a Warehouse) with one or more Delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling feature to create a Direct Lake model.
 
 To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a basic model for the Lakehouse, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).
 
 #### SQL endpoint
 
-As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default model for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake model must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
+As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default model for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake model must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake. Direct Lake mode also queries the SQL endpoint for schema- and security-related information.
+
+#### Data Warehouse
+
+As an alternative to a Lakehouse with SQL endpoint, you can also provision a Warehouse and add tables by using SQL statements or data pipelines. The procedure to provision a standalone Data Warehouse is almost identical to the procedure for a Lakehouse.
 
 ## Model write support with XMLA endpoint
 
-Direct Lake models support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher) , and the latest versions of external BI tools like Tabular Editor and DAX studio. Model write operations through the XMLA endpoint support:
+Direct Lake models support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher), and the latest versions of external BI tools like Tabular Editor and DAX studio. Model write operations through the XMLA endpoint support:
 
 - Customizing, merging, scripting, debugging, and testing Direct Lake model metadata.
 
@@ -76,7 +80,7 @@ When connecting to a standalone Direct Lake model through the XMLA endpoint, the
 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
-- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse or Warehouse. Direct Lake uses the SQL endpoint to discover schema and security information but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
 
 Here's an example XMLA query in SSMS:
 
