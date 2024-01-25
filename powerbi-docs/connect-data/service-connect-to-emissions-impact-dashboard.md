@@ -135,7 +135,7 @@ The new methodology now allows for a more enhanced and detailed attribution of c
 
 ### Is there a plan to update Emissions Impact Dashboard for Azure to display granular, resource-grain emissions data?
 
-At this time, we aren't enhancing Emissions Impact Dashboard for Azure to display resource-level emissions data. The dashboard will maintain its current functionality, continuing to present data at the subscription level. This data, powered by our updated methodology, aggregates all resource-level data in the background and displays it at the subscription level for a comprehensive view.
+At this time, we aren't enhancing Emissions Impact Dashboard for Azure to display resource-level emissions data. The dashboard maintains its current functionality, continuing to present data at the subscription level. This data, powered by our updated methodology, aggregates all resource-level data in the background and displays it at the subscription level for a comprehensive view.
 
 ### Has all the historical data been updated to reflect the new methodology?
 
@@ -163,7 +163,7 @@ The Emissions Impact Dashboard for Azure might take up to 24 hours to load your 
 
 **Is Microsoft trying to shift responsibility for emissions from Microsoft to me?**
 
-No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and 2 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). The GHG Protocol defines scope 3 emissions as emissions another entity emits on your behalf, and are inherently double-counted. The Emissions Impact Dashboard for Azure provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services".
+No. Carbon emissions from Azure services are reported as Microsoft's scope 1 and 2 emissions, consistent with the industry-standard [Greenhouse Gas (GHG) Protocol](https://ghgprotocol.org/). The GHG Protocol defines scope 3 emissions as emissions another entity emits on your behalf, and are inherently double-counted. The Emissions Impact Dashboard for Azure provides new transparency to your scope 3 emissions associated with the use of Azure services, specifically Scope 3 Category 1 "Purchased goods and services."
 
 **Why are my emissions from use of the Microsoft cloud so much lower than they would be if I were using an on-premises solution?**
 
