@@ -81,7 +81,7 @@ This customization allows you to focus on nuanced aspects of the data that are r
 
 ### Answer questions about your report content in the Copilot pane
 
-The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow up questions about your report page or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report page you're on, or speculative questions like "what are some reasons", "why might", and some "what if" questions. 
+The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow-up questions about your report page or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report page you're on, or speculative questions like "what are some reasons", "why might", and some "what if" questions. 
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
 
