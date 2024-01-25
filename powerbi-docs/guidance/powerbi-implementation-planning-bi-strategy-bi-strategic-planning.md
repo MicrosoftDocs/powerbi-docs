@@ -87,7 +87,7 @@ In addition to the many [activities listed in the adoption roadmap](fabric-adopt
   - Promoting the BI strategy initiative with announcements or public endorsement.
   - Motivating action and change to progress the BI strategy initiative.
   - Representing the working team and sharing the BI strategic plan among C-level executives to obtain executive feedback.
-- **Making strategic decisions:** They make decisions about what should be focus areas, objectives, and key results.
+- **Making strategic decisions:** They make decisions about what should be the focus areas, objectives, and key results.
 
 > [!TIP]
 > Before assembling the working team, you should first identify and engage an [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md). Work through [this checklist](fabric-adoption-roadmap-executive-sponsorship.md#considerations-and-key-actions) to ensure that you take the necessary actions to ensure a sufficiently engaged executive sponsor.
