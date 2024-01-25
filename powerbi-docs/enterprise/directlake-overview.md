@@ -80,7 +80,7 @@ When connecting to a standalone Direct Lake model through the XMLA endpoint, the
 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
-- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse or Warehouse. Direct Lake uses the SQL endpoint to discover schema and security information but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
 
 Here's an example XMLA query in SSMS:
 
