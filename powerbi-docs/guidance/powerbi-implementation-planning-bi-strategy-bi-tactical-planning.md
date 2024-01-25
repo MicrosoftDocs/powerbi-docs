@@ -125,6 +125,8 @@ Here are some examples of quick-win or high-impact areas you might prioritize wh
 - Beginning to connect Power BI or Fabric champions to start a champions network for these individuals to share knowledge and practices.
 - Creating shared, central themes, templates, and design guidelines for reports.
 
+:::image type="icon" source="media/common/checklist.svg" border="false":::
+
 **Checklist** - When defining organizational readiness and priorities, key decisions and actions include:
 
 > [!div class="checklist"]
@@ -167,7 +169,7 @@ It's important that you define what success will look like for your strategic ob
 
 There are two ways to track measurable achievement. In this article, we discuss key results, which are part of the OKR framework (objectives and key results), but organizations also use KPIs (key performance indicators), or a combination of OKRs together with KPIs. Both approaches are equally valid. What's most important is that you find an approach to measure progress toward your strategic objectives that works for you.
 
-- **Key results:** Evaluate key measurable success criteria that track achievement of key results.
+- **Key results:** Evaluate measurable success criteria that track progress toward strategic objectives.
 - **KPIs:** Evaluate the success of a particular activity against a target. While KPIs typically measure performance against goals, key results measure outcomes. You can use KPIs together with OKRs.
 
 > [!NOTE]
@@ -180,7 +182,7 @@ There are two ways to track measurable achievement. In this article, we discuss 
 
 When you use measure progress toward your strategic objectives, you should regularly monitor them to track progress and take action where necessary.
 
-Here are some general considerations to help you successfully use either key results or KPIs.
+Here are some general considerations to help you successfully measure and monitor key results and KPIs.
 
 - **Report your indicators:** Create reporting solutions for your indicators that let you effectively monitor them. For instance, you can use [Microsoft Viva Goals OKRs](/viva/goals/intro-to-ms-viva-goals) or [scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md) to measure and track progress.
 - **Automate data collection:** If possible, ensure that data for indicators aren't collected manually. Find efficient ways to streamline and automate the collection of the data so that it's current, accurate, and reliable.
@@ -207,10 +209,10 @@ You should identify and describe key results for adoption, governance, and imple
 
 First, identify your adoption key results. These activities can address many areas, but typically describe the actions you'll take to improve overall [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [data culture](fabric-adoption-roadmap-data-culture.md).
 
-Here are some examples of adoption key results.
+Here are some examples of adoption key results that you could define for a period.
 
-- Increase the usage of an endorsed central report or dataset by a certain number of persons.
-- Identify one or more Power BI champions from each department or from each team within a single department.
+- Increase the usage of an endorsed central report or semantic model by a certain percent, or by a certain number of users.
+- Identify one or more Power BI champions from each department or from each team within a department.
 - Increase the positive response rate of business users to the question _BI tools and initiatives help me achieve my business objectives_ by a certain percent.
 - Guide a certain percent of sales teams through an introductory data literacy training program.
 - Improve attendance of office hours Q&A sessions by an average of a certain number of people per session.
@@ -222,13 +224,13 @@ Here are some examples of adoption key results.
 
 Next, identify your [governance](fabric-adoption-roadmap-governance.md) key results. These key results should describe how you'll sustainably enable users to answer business problems with data, while mitigating risks to data security or compliance. These governance key results should be motivated by, and closely tied to, your adoption key results.
 
-Here are some examples of governance key results.
+Here are some examples of governance key results that you could define for a period.
 
 - Reduce the number of workspaces or reports by a certain percent.
 - Reduce export to Excel by a certain percent.
 - Increase the number of workspaces delivering content from apps by a certain percent.
-- Reduce the number of reports that are shared with the executive leadership to a certain number of reports, or by a certain percent.
-- Reduce the number of tickets requesting access to data sources or tools by a certain percent.
+- Reduce the number of reports that are shared with the executive leadership to a specific number, or by a certain percent.
+- Reduce the number of support tickets requesting access to data sources or tools by a certain percent.
 
 > [!IMPORTANT]
 > If you don't have an effective process to monitor user activities and content, you should make this an immediate priority. An understanding of these activities and items informs better governance decisions and actions.
@@ -237,10 +239,10 @@ Here are some examples of governance key results.
 
 Finally, identify your implementation key results. These key results should describe how you'll improve existing or future BI solutions, practices, and processes. These implementation key results should support and align with both your adoption and governance key results.
 
-Here are some examples of implementation key results.
+Here are some examples of implementation key results that you could define for a period.
 
 - Reduce the number of refresh failures by a certain percent.
-- Reduce Premium or Fabric Capacity usage-related incidents by a certain percent.
+- Reduce the time to investigate and resolve issues by a certain percent.
 - Reduce the time to retrieve specific data or produce certain reports by a certain number of hours or days.
 - Reduce the number of support incidents that relate to inaccurate data by a certain percent.
 - Reduce the number of business-facing outages by a certain percent.
@@ -266,30 +268,31 @@ The solutions and initiatives you'll implement have two purposes. They:
 - **Support adoption and governance key results:** Describe the solutions you build and initiatives you enact to achieve your adoption and governance key results. These solutions help you work toward improving [organizational adoption](fabric-adoption-roadmap-maturity-levels.md#organizational-adoption-maturity-levels) and [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages).
 - **Support business data needs:** Describe specific solutions you'll build to address the business data needs and priorities (such as those that are time-sensitive, quick wins, or high-impact). With these solutions, you should aim to achieve or improve [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases).
 
-You can implement either initiatives or solutions.
+You can implement either solutions or initiatives.
 
-- **Initiatives:** Processes, training resources, and policies that support your key results. Initiatives are typically non-technical instruments that support users or processes. Examples of initiatives include:
-  - Processes for self-service content creators so that they can request access to tools, data, or training.
-  - Governance [data policies](fabric-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
-  - A curated, moderated [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
 - **Solutions:** Systems or tools built to directly address specific business problems or data needs for users. Examples of solutions include:
   - An actionable [monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) that allows governance teams to follow up on governance and adoption key results.
   - A unified data lakehouse that delivers business-ready data for consumption by content creators planning other downstream analytical solutions.
   - A Power BI app that addresses specific business data needs for content consumers.
+- **Initiatives:** Processes, training resources, and policies that support your key results. Initiatives are typically non-technical instruments that support users or processes. Examples of initiatives include:
+  - Processes for self-service content creators so that they can request access to tools, data, or training.
+  - Governance [data policies](fabric-adoption-roadmap-governance.md#data-policies) that describe how certain data should be accessed and used.
+  - A curated, moderated [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for the user [community of practice](fabric-adoption-roadmap-community-of-practice.md).
+
 
 Here are some examples of BI objectives together with related key results and solutions or initiatives to achieve them for a specific planning period.
 
 | **Example objective** | **Example key results** | **Example initiatives or solutions** |
 | --- | --- | --- |
-| Improve executive adoption and support of BI to promote a healthier data culture. | &bull;&nbsp;Identify and engage one or more candidates for an executive sponsor. <br/><br/>&bull;&nbsp;Conduct three executive-led town hall or Q&A meetings about BI accomplishments and planned activities. <br/><br/>&bull;&nbsp;Hold three targeted mentoring sessions with the executive sponsor to improve their knowledge and understanding about relevant BI topics, and allowing them to lead by example. | &bull;&nbsp;**Communication plan:** Create a communication plan with the Center of Excellence (COE), which will involve distributing a regular newsletter from the executive sponsor to share updates, announcements, and highlights from BI solutions and initiatives. <br/><br/>&bull;&nbsp;**Executive feedback survey:** Measure executive endorsement and sentiment with a brief survey of executives, including (but not limited to) the executive sponsor. The survey asks for quantitative feedback about the effectiveness, usability, and relevance of BI solutions—a high score indicates progress toward the BI objective. |
-| Achieve a better balance of user enablement and risk mitigation in BI governance. | &bull;&nbsp;Reduce the ratio of Power BI semantic models to reports by a certain percentage. This key result measures whether semantic models are reused for ad hoc analysis and reporting, or whether data is duplicated across models—a ratio close to one indicates that users might be creating a new semantic model for each report, which is a governance risk. <br/><br/>&bull;&nbsp;Reduce the ratio of exports to views by a certain percentage. This key result measures how often users export data to files instead of using existing reports for their analysis—a ratio close to one indicates that users are regularly exporting data, which is a governance risk. | &bull;&nbsp;**Tenant-wide audit:** Perform an initial tenant-wide audit to gain visibility on general usage trends and anomalies. <br/><br/>&bull;&nbsp;**Create a tenant-wide monitoring solution:** Track critical solutions and risk-creating behaviors.  <br/><br/>&bull;&nbsp;**Conduct targeted training of the top exporters:** Identify and engage the people in the user community who export data the most frequently, and offer them several hours of training or mentorship in how to use Power BI reports or analyze in Excel pivot tables. |
-| Improve data-driven decision making in sales teams so that users are more effective at using Power BI to make sales decisions and take actions.| &bull;&nbsp;Have a certain number of users complete a data literacy training with a passing score. <br/><br/>&bull;&nbsp;Dedicate an average of four hours of the COE per week to mentorship activities of the user community with open office hours.  | &bull;&nbsp;**Data literacy training program:** Run a data literacy training program to improve the data competences of the sales community. <br/><br/>&bull;&nbsp;**Weekly office hours:** Hold weekly office hours events to allow users to ask questions about central reports, or request guidance for their decentralized self-service BI solutions. <br/><br/>&bull;&nbsp;**Certified, centralized semantic model:** Create a centralized semantic model that delivers daily sales data, which sales teams can connect to in order to answer their questions and perform personal or team BI. |
+| Improve executive adoption and support of BI to promote a healthier data culture. | &bull;&nbsp;Identify and engage one or more candidates for an executive sponsor. <br/><br/>&bull;&nbsp;Conduct three executive-led town hall or Q&A meetings about BI accomplishments and planned activities. <br/><br/>&bull;&nbsp;Hold three targeted mentoring sessions with the executive sponsor to improve their knowledge and understanding about relevant BI topics, and allowing them to lead by example. | &bull;&nbsp;**Create a communication plan:** Create a communication plan with the Center of Excellence (COE), which will involve distributing a regular newsletter from the executive sponsor to share updates, announcements, and highlights from BI solutions and initiatives. <br/><br/>&bull;&nbsp;**Conduct an executive feedback survey:** Measure executive endorsement and sentiment with a brief survey of executives, including (but not limited to) the executive sponsor. The survey asks for quantitative feedback about the effectiveness, usability, and relevance of BI solutions. |
+| Achieve a better balance of user enablement and risk mitigation in BI governance. | &bull;&nbsp;Reduce the ratio of Power BI semantic models to reports by a certain percentage. This key result measures whether semantic models are reused for ad hoc analysis and reporting, or whether data is duplicated across models—a ratio close to one indicates that users might be creating a new semantic model for each report, which is a governance risk. <br/><br/>&bull;&nbsp;Reduce the ratio of exports to views by a certain percentage. This key result measures how often users export data to files instead of using existing reports for their analysis—a ratio close to one indicates that users are regularly exporting data, which is a governance risk. | &bull;&nbsp;**Perform a tenant-wide audit:** An initial tenant-wide audit to gain visibility on general usage trends and anomalies. <br/><br/>&bull;&nbsp;**Create a tenant-wide monitoring solution:** Track critical solutions and risk-creating behaviors.  <br/><br/>&bull;&nbsp;**Conduct targeted training of the top exporters:** Identify and engage the people in the user community who export data the most frequently, and offer them several hours of training or mentorship in how to use Power BI reports or analyze in Excel pivot tables. |
+| Improve data-driven decision making in sales teams so that users are more effective at using Power BI to make sales decisions and take actions.| &bull;&nbsp;Have a certain number of users complete a data literacy training with a passing score. <br/><br/>&bull;&nbsp;Dedicate an average of four hours of the COE per week to mentorship activities of the user community with open office hours.  | &bull;&nbsp;**Run a data literacy training program:** Improve the data competences of the sales community. <br/><br/>&bull;&nbsp;**Hold weekly office hours:** Allow users to ask questions about central reports, or request guidance for their decentralized self-service BI solutions. <br/><br/>&bull;&nbsp;**Create a certified, centralized semantic model:** Deliver daily sales data, which sales teams can connect to in order to answer their questions and perform personal or team BI. |
 
 ### Create a backlog of initiatives and solutions
 
-The working team should make a list of solutions and initiatives that will be implemented this quarter. For each key result, consider what initiatives or solutions will be implemented to achieve them. Then, order this list by priority, sorting each implementation from highest to lowest, so that it's clear what will be implemented first.
+The working team should make a list of solutions and initiatives that will be implemented this period. For each key result, consider what initiatives or solutions will be implemented to achieve them. Then, order this list by priority, sorting each implementation from highest to lowest, so that it's clear what should be done first.
 
-After tactical planning, content creators and owners work through this prioritized list (or _backlog_) to iteratively design and deliver the solutions, which is described in the [BI solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md) article.
+After tactical planning, content creators and owners work through this prioritized list (or _backlog_) to iteratively design and deliver BI solutions, which is the focus of the [BI solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md) article.
 
 When curating this implementation backlog, consider the following points.
 
@@ -301,7 +304,7 @@ When curating this implementation backlog, consider the following points.
 - Agree on who will design and implement the solution.
 
 > [!IMPORTANT]
-> While your implementations aim to address the business data needs, it's unlikely you'll be able to address all of these needs immediately. Ensure that you plan to mitigate the potential impact of unmet business data needs that you won't address now. Try to assess the impact of these data needs and plan to either partially address them with quick wins or even stopgap solutions to at least temporarily alleviate the business impact.
+> While the solutions you plan aim to address the business data needs, it's unlikely you'll be able to address all of these needs immediately. Ensure that you plan to mitigate the potential impact of unmet business data needs that you won't address now. Try to assess the impact of these data needs and plan to either partially address them with quick wins or even stopgap solutions to at least temporarily alleviate the business impact.
 
 ### Validate tactical planning
 
