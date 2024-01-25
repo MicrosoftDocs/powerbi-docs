@@ -1,6 +1,6 @@
 ---
 title: Subselection API in Power BI Visuals
-description: The article describes how to use Power BI Visuals sub-selectionAPI to allow users to format visuals easily.
+description: The article describes how to use Power BI Visuals subselectionAPI to allow users to format visuals easily.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
@@ -12,22 +12,22 @@ ms.date: 01/23/2024
 
 # Subselection API
 
-As part of [on-object formatting](./on-object-formatting.md), the subselection service is used to emit subselections and outlines to Power BI.
+[On-object formatting](../../create-reports/power-bi-on-object-interaction.md) allows users to quickly and easily modify the format of visuals by directly selecting the elements they want to modify. When an element is selected, the format pane automatically navigates and expands the specific formatting setting for the selected element. As part of [on-object formatting](./on-object-formatting.md), the subselection service is used to send subselections and outlines to Power BI.
 
 ## How to use the Subselection API
 
 The SubSelection Service provides two methods:
 
-* [subSelect]
-* [updateRegionOutlines]
+* [subSelect](#subselect)
+* [updateRegionOutlines](#updateregionoutlines)
 
 ### subSelect
 
-Returns a subselection for Power BI to use when a user selects a subselectable element.
-
-subSelect(args: visuals.CustomVisualSubSelection | undefined): void
+Returns the subselection for Power BI to use when a user selects an element that allows subselections.
 
 ```javascript
+subSelect(args: visuals.CustomVisualSubSelection | undefined): void
+
 CustomVisualSubSelection
 interface CustomVisualSubSelection {
             customVisualObjects: CustomVisualObject[];
@@ -48,18 +48,20 @@ interface CustomVisualObject {
         }
 ```
 
+This method has the following parameters:
+
 * customVisualObjects: an array that contains `customVisualObjects`, the objectName of the object should be the same as the one declared in the *capabilities.json*, and the selectionId for the selected data point, if it exists.
 * displayName:  the display name should be localized if the visual supports localization.
-* subSelectionType: the type of the subselection(shape, text, or Numeric text)
+* subSelectionType: the type of the subselection(shape, text, or Numeric text).
 * selectionOrigin: the coordinates of the subselected element.
-* showUI: Whether to show the UI for this subselection, like formatting context menus and toolbar
-* immediateDirectEdit:  If immediate direct edit should be triggered, the ID of the subselection outline to edit
+* showUI: Whether to show the UI for this subselection, like formatting context menus and toolbar.
+* immediateDirectEdit:  If immediate direct edit should be triggered, the ID of the subselection outline to edit.
 
-If you don't use the `HTMLSubSelectionHelper`, you need to manage the subselections.
+If you don't use the [`HTMLSubSelectionHelper`](./utils-on-object.md), you need to manage the subselections.
 
 #### Subselection example
 
-In this example we add an event listener to the host element, for the click, context menu events.
+In this example, we add an event listener to the host element, for the click, context menu events.
 
 ```javascript
 constructor(options: VisualConstructorOptions) {
@@ -67,7 +69,6 @@ constructor(options: VisualConstructorOptions) {
         this.subSelectionService = options.host.subSelectionService;
         ….
 }
-
 
 public update(options: VisualUpdateOptions) {
  if (options.formatMode) {
@@ -126,11 +127,11 @@ interface SubSelectionRegionOutline {
         }
 ```
 
-If you don't use the `HTMLSubSelectionHelper`, you have to manually manage the outlines and their state (if they're active, hovered or not visible).
+If you don't use the [`HTMLSubSelectionHelper`](./utils-on-object.md), you have to manually manage the outlines and their state (if they're active, hovered or not visible).
 
 #### Update region outlines example
 
-In this example we assume that we have an object called `myObject`, and we want to render a rectangle outline when the relevant element is hovered. We'll use the code in the previous example for subSelect.  
+In this example we assume that we have an object called `myObject`, and we want to render a rectangle outline when the relevant element is hovered. We use the code in the previous example for subSelect.  
 In the update, we also need to add an event listener for the `pointerover` event.  
 We want to manage our outlines using a Record.
 

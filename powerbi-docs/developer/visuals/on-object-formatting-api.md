@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/28/2022
+ms.date: 06/28/2023
 ---
 
 # On-object formatting API
@@ -15,7 +15,7 @@ ms.date: 06/28/2022
 [On-object formatting](../../create-reports/power-bi-on-object-interaction.md) allows users to quickly and easily modify the format of visuals by directly selecting the elements they want to modify. When an element is selected, the format pane automatically navigates and expands the specific formatting setting for the selected element.
 For more information about on-object formatting, see [On-object formatting in Power BI Desktop](../../create-reports/power-bi-on-object-interaction.md).
 
-To add these functionalities to your visual, Each visual needs to provide a sub-selection style options and shortcuts for each sub-selectable region.
+To add these functionalities to your visual, each visual needs to provide a subselection style option and shortcut for each subselectable region.
 
 > [!NOTE]
 > Visuals that support on-object formatting need to implement the [getFormattingModel API](./format-pane.md#formatting-model) which is available from API version 5.1.
@@ -36,7 +36,7 @@ The visuals need to declare that it is supporting OnObject formatting by adding 
 
 ### IVisual interface
 
-The visuals needs to implement the `VisualOnObjectFormatting` interface as part of the IVisual interface.
+The visual needs to implement the `VisualOnObjectFormatting` interface as part of the IVisual interface.
 
 VisualOnObjectFormatting contains three methods:
 
@@ -46,9 +46,9 @@ VisualOnObjectFormatting contains three methods:
 
 #### getSubSelectionStyles
 
-Each visual is required to implement a `getSubSelectionStyles` method, which is called when a sub-selectable element is sub-selected. The `getSubSelectionStyles` method is provided with the current sub-selected elements as a `CustomVisualSubSelection` array and is expected to return either a `SubSelectionStyles object` or `undefined`.
+Each visual is required to implement a `getSubSelectionStyles` method, which is called when a subselectable element is subselected. The `getSubSelectionStyles` method is provided with the current subselected elements as a `CustomVisualSubSelection` array and is expected to return either a `SubSelectionStyles object` or `undefined`.
 
-There are three categories of sub-selection styles that cover most scenarios:
+There are three categories of subselection styles that cover most scenarios:
 
 * Text
 * Numeric Text
@@ -58,23 +58,23 @@ Each `SubSelectionStyles` object provides a different experience for the user fo
 
 #### getSubSelectionShortcuts
 
-The `getSubSelectionShortcuts` method provides options for the user. It returns either `VisualSubSelectionShortcuts` or `undefined`. Additionally, if `SubSelectionShortcuts` are provided, a `VisualNavigateSubSelectionShortcut` must also be provided so that when a user sub-selects an element and the format pane is open, the pane automatically scrolls to the appropriate card.
+The `getSubSelectionShortcuts` method provides options for the user. It returns either `VisualSubSelectionShortcuts` or `undefined`. Additionally, if `SubSelectionShortcuts` are provided, a `VisualNavigateSubSelectionShortcut` must also be provided so that when a user subselects an element and the format pane is open, the pane automatically scrolls to the appropriate card.
 
-There are several sub-selection shortcuts to modify the visual state. Each one defines a menu item in the context menu with the appropriate label.
+There are several subselection shortcuts to modify the visual state. Each one defines a menu item in the context menu with the appropriate label.
 
 **Sub-Selection Disambiguation Menu:**
-The On-Object disambiguation menu provides a method for users to select their desired sub-selection when it's clear which visual element is being sub-selected. This often happens when the user sub-selects the background of the visual. For the disambiguous menu to present additional sub-selections, the visual must provide all sub-selections via the [`getSubSelectables`](#getsubselectables) method.
+The On-Object disambiguation menu provides a method for users to select their desired subselection when it's not clear which visual element is being subselected. This often happens when the user subselects the background of the visual. For the disambiguous menu to present more subselections, the visual must provide all subselections via the [`getSubSelectables`](#getsubselectables) method.
 
 #### getSubSelectables
 
-To provide sub-selections to the disambiguation menu, the visual needs to implement the `getSubSelectables` method. This method is provided an optional `filterType` argument, of type `SubSelectionStylesType` and returns an array of `CustomVisualSubSelection` or `undefined`.
-If the `HTMLSubSelectionHelper` is being utilized to create a sub-selection, the *HTMLSubSelectionHelper.getSubSelectables()* method can be used to gather sub-selectable elements from the DOM.
+To provide subselections to the disambiguation menu, the visual needs to implement the `getSubSelectables` method. This method is provided an optional `filterType` argument, of type `SubSelectionStylesType` and returns an array of `CustomVisualSubSelection` or `undefined`.
+If the `HTMLSubSelectionHelper` is being utilized to create a subselection, the *HTMLSubSelectionHelper.getSubSelectables()* method can be used to gather subselectable elements from the DOM.
 
 **Sub-Selection Direct Text Editing:**
 With On-Object formatting, you can double click the text of a subs-electable element to directly edit it.
-To provide direct-edit capability, you need to provide a RectangleSubSelectionOutline with the appropriate cVDirectEdit Property populated with a SubSelectableDirectEdit object. The outline can either be provided as a custom outline or, if you are using the HTMLSubSelectionHelper you can use the SubSelectableDirectEdit attribute. (check out the attributes provided by the HTMLSubSelectionHelper)
+To provide direct-edit capability, you need to provide a RectangleSubSelectionOutline with the appropriate cVDirectEdit Property populated with a SubSelectableDirectEdit object. The outline can either be provided as a custom outline or, if you're using the HTMLSubSelectionHelper you can use the SubSelectableDirectEdit attribute. (see the attributes provided by the HTMLSubSelectionHelper)
 
-Adding a direct edit for a specific datapoint (using selectors) is not yet supported.
+Adding a direct edit for a specific datapoint (using selectors) isn't yet supported.
 
 ### FormattingId interface
 
@@ -94,12 +94,12 @@ interface FormattingId {
 
 ## Examples
 
-In this example we  build a custom visual that has two objects 'colorSelector' and 'directEdit'. We use the `HTMLSubSelectionHelper` from the `onobjectFormatting` utils, to handle most of the subSelection job.
+In this example, we  build a custom visual that has two objects, `colorSelector` and `directEdit`. We use the `HTMLSubSelectionHelper` from the `onobjectFormatting` utils, to handle most of the subSelection job.
 For more information, see [on-object utils].
 
 ### Define the objects
 
-First, we build cards for the formatting pane and provide *subSelectionShortcuts* and *styles* for each sub-selectable. Define the objects and declare that the visual is supporting OnObject Formatting in the capabilities.json:
+First, we build cards for the formatting pane and provide *subSelectionShortcuts* and *styles* for each subselectable. Define the objects and declare that the visual is supporting OnObject Formatting in the capabilities.json:
 
 ```json
 "objects": {
@@ -198,7 +198,7 @@ First, we build cards for the formatting pane and provide *subSelectionShortcuts
 
 ### Build the formatting cards
 
-Now we will build their formatting cards using the [formattingModel utils](./format-pane.md#formatting-model).
+Build their formatting cards using the [formattingModel utils](./format-pane.md#formatting-model).
 
 ```javascript
 class ColorSelectorCardSettings extends Card {
@@ -306,7 +306,7 @@ populateColorSelector(dataPoints: BarChartDataPoint[]) {
 
 We pass the selector of the specific datapoint in the selector field. This selector is the one used when implementing the get APIs of the OnObject.
 
-### Sub-selection helper attributes
+### Subselection helper attributes
 
 Add the HTMLSubSelectionHelper attributes to our objects. To see which attributes the HTMLSubSelectionHelper provide, check the on [object utils documentation]().
 
@@ -332,7 +332,7 @@ Add the HTMLSubSelectionHelper attributes to our objects. To see which attribute
    …..
   ```
 
-  The `HTMLSubSelectionHelper` will use `SubSelectableDirectEditAttr` attribute to provide the directEdit reference of the directEdit outline, so a direct edit will start when a user double clicks on the element.
+  The `HTMLSubSelectionHelper` uses the `SubSelectableDirectEditAttr` attribute to provide the directEdit reference of the directEdit outline, so a direct edit starts when a user double clicks on the element.
 
 * For the colorSelector:
 
@@ -505,8 +505,8 @@ Now let's implement the get APIs for the onObject formatting and provide them in
 
     The above shortcut returns relevant menu item in the context menu and adds the following functionalities:
 
-    * VisualShortcutType.Navigate: when a user click on one of the bars (data point), and the formatting pane is open, the format pane will scroll to the color selctor card and open it
-    * VisualShortcutType.Reset: this will add a reset shortcut to the context menu, it will be enabled if the fill color was changed.
+    * VisualShortcutType.Navigate: when a user clicks on one of the bars (data point), and the formatting pane is open, the format pane scrolls to the color selector card and open it
+    * VisualShortcutType.Reset: this adds a reset shortcut to the context menu, it is enabled if the fill color was changed.
 
     ```javascript
     private getColorSelectorStyles(subSelections: CustomVisualSubSelection[]): SubSelectionStyles {
@@ -641,8 +641,8 @@ This is how the UI look when right clicking on the directEdit element:
 
 The visual should handle the localization and provide localized strings.
 
-## Github resources
+## Git hub resources
 
 * All on object formatting interfaces can be found in (link to be provided once the API is released) in on-object-formatting-api.d.ts
-* We recommend using the [on object utils] which includes the HTMLSubSelectionHelper (link to be provided once the API is released)
-* You can find an example of a custom visual [SampleBarChart] that uses API version 5.8.0 and implements the support for the on object formatting using the on object utils at (link to be provided once the API is released)
+* We recommend using the [on object utils], which includes the [HTMLSubSelectionHelper](link to be provided once the API is released)
+* You can find an example of a custom visual [SampleBarChart](./create-bar-chart.md) that uses API version 5.8.0 and implements the support for the on object formatting using the on object utils at (link to be provided once the API is released)
