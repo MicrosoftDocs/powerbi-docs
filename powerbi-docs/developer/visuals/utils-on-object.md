@@ -18,45 +18,45 @@ The `HTMLSubSelectionHelper` provides an easy way for your Power BI custom visua
 
 The utils exports CSS classes and attributes making it easier for the visual to define and maintain subselections.
 
-To define sub-selectable elements, we also need to add a class to each desired element.
+To define subselectable elements, we also need to add a class to each desired element.
 
 |     CSS Class               |     Purpose                                                                                 |     Required    |
 |-----------------------------|---------------------------------------------------------------------------------------------|-----------------|
-|     sub-selectable          |     Provides a selector   for the HTMLSubSelectionHelper to find possible sub-selections    |     yes         |
+|     subselectable          |     Provides a selector   for the HTMLSubSelectionHelper to find possible subselections    |     yes         |
  
-To define sub-selections for the visual, there are a few attributes which need to be added to the desired elements
+To define subselections for the visual, there are a few attributes that need to be added to the desired elements.
 
 |     Attribute Name                              |     Attribute                                 |     Purpose                                                                                                            |     Required                                                 |     Type                                                        |     Example                                                                                                                                     |
 |-------------------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     SubSelectableDisplayNameAttribute           |     data-sub-selection-display-name           |     Provide a localized   string for display name of the sub-selected element                                          |     yes                                                      |     string                                                      |     data-sub-selection-display-name="Visual   Title"                                                                                            |
-|     SubSelectableObjectNameAttribute            |     data-sub-selection-object-name            |     Provide an object   name to associate with sub-selection shortcuts and style                                       |     yes                                                      |     string                                                      |     data-sub-selection-object-name="title"                                                                                                      |
-|     SubSelectableTypeAttribute                  |     data-sub-selection-type                   |     Provide the type of   the sub-selected style                                                                       |     yes                                                      |     SubSelectionStylesType                                      |     data-sub-selection-type="1"                                                                                                                 |
+|     SubSelectableDisplayNameAttribute           |     data-sub-selection-display-name           |     Provide a localized   string for display name of the subselected element                                          |     yes                                                      |     string                                                      |     data-sub-selection-display-name="Visual   Title"                                                                                            |
+|     SubSelectableObjectNameAttribute            |     data-sub-selection-object-name            |     Provide an object   name to associate with subselection shortcuts and style                                       |     yes                                                      |     string                                                      |     data-sub-selection-object-name="title"                                                                                                      |
+|     SubSelectableTypeAttribute                  |     data-sub-selection-type                   |     Provide the type of   the subselected style                                                                       |     yes                                                      |     SubSelectionStylesType                                      |     data-sub-selection-type="1"                                                                                                                 |
 |     SubSelectableDirectEdit                     |     data-sub-selection-direct-edit            |     Provide direct text   edit references, including the CardUID, GroupUID, and the orientation of the   text box      |     no                                                       |     SubSelectableDirectEdit   should be provided as a string    |     data-sub-selection-direct-edit="{"reference":{"cardUid":"Visual-title","groupUid":"title-text","sliceUid":"title-text-text"},"style":0}"    |
-|     SubSelectableHideOutlineAttribute           |     data-sub-selection-hide-outline           |     Provide a boolean   value for sub-selectable elements which should not have an outline shown                       |     no                                                       |     boolean                                                     |     data-sub-selection-hide-outline="true"                                                                                                      |
-|     SubSelectableRestrictingElementAttribute    |     data-sub-selection-restricting-element    |     Used to indicate the   element which will restricted the outlines and the type of restriction (clamp   or clip)    |     no                                                       |     SubSelectionOutlineRestrictionType                          |     data-sub-selection-restricting-element="1"                                                                                                  |
-|     SubSelectableSubSelectedAttribute           |     data-sub-selection-sub-selected           |     Indicate whether the   sub-selectable is selected or not                                                           |     No, the helper assigns it to the elements when needed    |     Boolean                                                     |     data-subselection-sub-selected="true"                                                                                                       |
+|     SubSelectableHideOutlineAttribute           |     data-sub-selection-hide-outline           |     Provide a boolean   value for subselectable elements that shouldn't have an outline shown                       |     no                                                       |     boolean                                                     |     data-sub-selection-hide-outline="true"                                                                                                      |
+|     SubSelectableRestrictingElementAttribute    |     data-sub-selection-restricting-element    |     Used to indicate the element that will be restricted, the outlines, and the type of restriction (clamp or clip)    |     no                                                       |     SubSelectionOutlineRestrictionType                          |     data-sub-selection-restricting-element="1"                                                                                                  |
+|     SubSelectableSubSelectedAttribute           |     data-sub-selection-sub-selected           |     Indicate whether the   subselectable is selected or not                                                           |     No, the helper assigns it to the elements when needed    |     Boolean                                                     |     data-subselection-sub-selected="true"                                                                                                       |
 
 ## Format mode
 
-When the visual enters format mode, You need to disable interactivity for the visual, as we expect the user to click on the visual and visual element to initiate formatting.
+When the visual enters format mode, You need to disable interactivity for the visual, as we expect the user to select the visual and visual element to initiate formatting.
 
-## HTMLSubSelectionHelper public methods
+### HTMLSubSelectionHelper public methods
 
-The `HTMLSubSelectionHelper` has some public methods that you can use, but mainly you can use just two of them and the helper will do the job.
+The `HTMLSubSelectionHelper` has some public methods that you can use, but there are two main methods and the helper will do the rest.
 
 The two methods are `setFormatMode` and `updateOutlinesFromSubSelections`.
 
-Here is a brief overview for the public methods of the helper:
+The public methods of the helper include:
 
 * createHtmlSubselectionHelper(args: HtmlSubselectionHelperArgs): HtmlSubSelectionHelper - This is a static method, it takes args of type HtmlSubselectionHelperArgs and returns an instance of HTMLSubSelectionHelper.
 
-* setFormatMode(isFormatMode: boolean): void - This method sets the format mode for the HTMLSubSelectionHelper, If isFormatMode is true, the helper attaches relevant event listeners to the host element to enable format mode functionality (sub-selecting, rendering outlines).
+* setFormatMode(isFormatMode: boolean): void - This method sets the format mode for the HTMLSubSelectionHelper, If isFormatMode is true, the helper attaches relevant event listeners to the host element to enable format mode functionality (subselecting, rendering outlines).
 
-* getSubSelectionSourceFromEvent(event: PointerEvent): HtmlSubSelectionSource | undefined - returns a HtmlSubSelectionSource  object which is built according to the event parameter.
+* getSubSelectionSourceFromEvent(event: PointerEvent): HtmlSubSelectionSource | undefined - returns a HtmlSubSelectionSource object that is built according to the event parameter.
 
-* onVisualScroll(): void - Indicates to the HTMLSubSelectionHelper that scrolling is currently occurring. Scrolling should remove outlines until scrolling has finished
+* onVisualScroll(): void - Indicates to the HTMLSubSelectionHelper that scrolling is currently occurring. Scrolling should remove outlines until scrolling is finished
 
-* updateElementOutlines(elements: HTMLElement[], visibility: SubSelectionOutlineVisibility, suppressRender: boolean = false): SubSelectionRegionOutlineId[] - update the outlines (and emits them to PowerBI to be rendered) of the elements.
+* updateElementOutlines(elements: HTMLElement[], visibility: SubSelectionOutlineVisibility, suppressRender: boolean = false): SubSelectionRegionOutlineId[] - update the outlines (and emits them to Power BI to be rendered) of the elements.
 
 * clearHoveredOutline(): void - This method clears hovered outlines if they exist.
 
@@ -72,11 +72,11 @@ Here is a brief overview for the public methods of the helper:
 
 * createVisualSubSelectionForSingleObject(createVisualSubSelectionArgs: CreateVisualSubSelectionFromObjectArgs): CustomVisualSubSelection - create CustomVisualSubSelection object from the createVisualSubSelectionArgs.
 
-* setDataForElement(el: HTMLElement | SVGElement, data: SubSelectionElementData): void - this is a statcic method, it sets data for the elements.
+* setDataForElement(el: HTMLElement | SVGElement, data: SubSelectionElementData): void - a static method that sets data for the elements.
 
-* getDataForElement(el: HTMLElement | SVGElement): SubSelectionElementData - this is a static method, it gets the associated previously assigned using setDataForElement.
+* getDataForElement(el: HTMLElement | SVGElement): SubSelectionElementData - this is a static method that gets the associated previously assigned using setDataForElement.
 
-## HtmlSubselectionHelperArgs
+### HtmlSubselectionHelperArgs
 
 ```javascript
 interface HtmlSubselectionHelperArgs {
@@ -90,7 +90,7 @@ interface HtmlSubselectionHelperArgs {
 }
 ```
 
-## SubSelectionStylesType
+### SubSelectionStylesType
 
 ```javascript
 const enum SubSelectionStylesType {
@@ -101,7 +101,7 @@ const enum SubSelectionStylesType {
 }
 ```
 
-## SubSelectableDirectEdit
+### SubSelectableDirectEdit
 
 ```javascript
 interface SubSelectableDirectEdit {
@@ -111,7 +111,7 @@ interface SubSelectableDirectEdit {
 }
 ```
 
-## SubSelectionOutlineRestrictionType
+### SubSelectionOutlineRestrictionType
 
 ```javascript
 const enum SubSelectionOutlineRestrictionType {
@@ -128,7 +128,7 @@ const enum SubSelectionOutlineRestrictionType {
         }
 ```
 
-To add restriction options to a specific element use the HTMLSubSelectionHelper setDataForElement with this data type, the helper will use the data to update the outlines:
+To add restriction options to a specific element use the HTMLSubSelectionHelper setDataForElement with this data type, the helper uses the data to update the outlines:
 
 ```javascript
 interface SubSelectionElementData {
@@ -147,9 +147,9 @@ export interface SubSelectionOutlineRestrictionOptions {
 
 ## Example
 
-In this example we  implement `customOutlineCallback` and `selectionIdCallback`:
-The following code is in the visual code.
-let's say we have added in the visual an object for called arcElement and we want to render Arc outline when the element is hovered or sub-selected.
+In this example, we implement `customOutlineCallback` and `selectionIdCallback`:
+The following code is in Visual Code.
+We have an object in the visual called arcElement. We want to render the outline when the element is hovered or subselected.
 
 ```javascript
 import ISelectionId = powerbi.visuals.ISelectionId;
@@ -203,7 +203,7 @@ constructor(options: VisualConstructorOptions) {
 }
 ```
 
-In update method of the visual add the following code to update the outlines of the subSeselection, update the state of the format mode for the HTMLSubSelectionHelper and disable interaction which is not for format mode if format mode is on:
+In update method of the visual add the following code to update the outlines of the subSeselection, update the state of the format mode for the HTMLSubSelectionHelper and disable interactions that aren't for format mode if format mode is on:
 
 ```javascript
 public update(options: VisualUpdateOptions) {
