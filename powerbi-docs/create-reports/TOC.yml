@@ -114,7 +114,7 @@
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
-        - name: Summarize a report page in the Copilot pane
+        - name: Summarize a report in the Copilot pane
           href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
           href: copilot-prompts-narratives.md

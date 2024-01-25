@@ -1,32 +1,32 @@
 ---
-title: Summarize your report content in the Copilot pane  
-description: Create a summary of a report page in the Copilot pane. 
+title: Summarize a report page in the Copilot pane  
+description: Create a summary of a report page in the Copilot pane in Power BI. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/23/2024
+ms.date: 01/24/2024
 LocalizationGroup: Create reports
 ---
 
-# Summarize your report content in the Copilot pane  
+# Summarize a report page in the Copilot pane  
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-The advantage of summarizing a report in the Copilot pane is that you don't need to have permission to edit the report. You can just be a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
+The advantage of summarizing a Power BI report in the Copilot pane is that you don't need to have permission to edit the report. You can just be a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-Given a Power BI report page populated with visuals, you can spend anywhere between 30 minutes to a couple hours combing through the report to fully understand your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data displayed on the page in seconds, versus minutes or hours to manually interpret the data and then write a summary, or ask an analyst to interpret and write a summary for you.
+Given a Power BI report page populated with visuals, you might spend anywhere from 30 minutes to a couple hours combing through the report to fully understand your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data displayed on the page in seconds, instead of the minutes or hours to manually interpret the data and then write a summary, or ask an analyst to interpret and write a summary for you.
 
 ## Get started with standard prompts
 
 To get started, select the **Copilot** button in the ribbon in either Power BI Desktop or the Power BI service. In the service, the button is available in both edit mode and view mode.
 
 > [!TIP]
-> If you don't see Copilot, your admins might not have enabled it, or you could be in a workspace that does not meet the Copilot requirements. 
+> If you don't see Copilot, your admins might not have enabled it, or you could be in a workspace that does n't meet the Copilot requirements. 
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-button-ribbon.png" alt-text="Screenshot showing select the Copilot button in the ribbon in either Power BI Desktop or the Power BI service." lightbox="media/copilot-pane-summarize-content/copilot-button-ribbon.png":::
 
@@ -50,9 +50,9 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
 
 ### References
 
-In a summary response from the Copilot pane, references are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These references help the you quickly cross-check the summary output to ensure accuracy, increasing productivity.
+In a summary response from the Copilot pane, reference footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These footnotes help you quickly cross-check the summary output to ensure accuracy, increasing productivity.
  
-:::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing references are provided within the summary to indicate which data visuals Copilot referenced to generate the summary." lightbox="media/copilot-pane-summarize-content/reference-hover-state.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing that footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary." lightbox="media/copilot-pane-summarize-content/reference-hover-state.png":::
 
 ### Custom prompts
 
@@ -81,7 +81,7 @@ This customization allows you to focus on nuanced aspects of the data that are r
 
 ### Answer questions about your report content in the Copilot pane
 
-The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow up questions about your report page or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report page you're on and speculative questions like "what are some, "Why might" and some "what if" questions. 
+The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow up questions about your report page or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report page you're on, or speculative questions like "what are some reasons", "why might", and some "what if" questions. 
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
 
@@ -103,7 +103,7 @@ copilot-questions-2.png
     - An eligible workspace: the workspace needs to have a paid dedicated capacity. The workspace needs to be a paid Premium or F64 or higher.
     - A tenant where the admin setting is enabled.
 - The accuracy of the public preview may be limited.
-- The summary in the Copilot pane can only summarize one report page at a time, it doesn't summarize across the entire report or multiple pages.
+- The summary in the Copilot pane can only summarize one report page at a time. It doesn't summarize across the entire report or multiple pages.
 
 ## Send feedback
 
@@ -111,6 +111,7 @@ We always welcome your feedback about our products. Especially during public pre
 
 ## Next steps
 
+- [Overview of Copilot for Power BI](copilot-introduction.md)
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
