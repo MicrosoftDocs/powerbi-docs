@@ -22,7 +22,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Fabric community conference
+    - title: Join the Fabric community conference
       itemType: whats-new
       url: https://fabricconf.com/#!/
     # Card
