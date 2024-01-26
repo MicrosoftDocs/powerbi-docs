@@ -80,7 +80,7 @@ When connecting to a standalone Direct Lake model through the XMLA endpoint, the
 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
-- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse or Warehouse. Direct Lake uses the SQL endpoint to discover schema and security information but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse or Warehouse. Direct Lake uses the SQL endpoint to discover schema and security information but loads the data directly from the delta tables (unless Direct Lake must fall back to DirectQuery mode for any reason).
 
 Here's an example XMLA query in SSMS:
 
@@ -112,7 +112,7 @@ The following table lists both resource guardrails and MaxMemory:
 | F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 | F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 
-<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fallback to DirectQuery, unlike other guardrails that are evaluated per query.
+<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fall back to DirectQuery, unlike other guardrails that are evaluated per query.
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
@@ -151,7 +151,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Known issues and limitations
 
-- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
+- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fall back to DirectQuery mode.
 
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
 
