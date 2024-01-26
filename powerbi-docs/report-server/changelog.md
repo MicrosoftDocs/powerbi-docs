@@ -122,22 +122,23 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Report Server
 
-    - *Version: 1.16.8420.13742 (build 15.0.1111.115), Released: January 25, 2023*
-        - Features
-            - Using of single quote in item names is enabled
-            - Added ability to speed up History Snapshots loading by disabling its size calculation 
-            - Accessibility improvements
-            - New Teal style theme introduced
-            - Custom Visual API shipped with release - version v5.2.0
-        - Bug fixes
-            - Fixed issue with datetime type conversion in PBIX reports using MySQL
-            - Fixed disabling tooltips in PBIX reports
-            - Fixed input of date in date slicer in PBIX reports
+- *Version: 1.16.8420.13742 (build 15.0.1111.115), Released: January 25, 2023*
+  - Features
+    - Using of single quote in item names is enabled
+    - Added ability to speed up History Snapshots loading by disabling its size calculation 
+    - Accessibility improvements
+    - New Teal style theme introduced
+    - Custom Visual API shipped with release - version v5.2.0
+  - Bug fixes
+    - Fixed issue with datetime type conversion in PBIX reports using MySQL
+    - Fixed disabling tooltips in PBIX reports
+    - Fixed input of date in date slicer in PBIX reports
             
 ### Power BI Desktop (optimized for Power BI Report Server)
-    - *Version: 2.112.1421.0 (January 2023), Released: January 25, 2023*   
-        - Support for January 2023 Power BI Report Server
-        - Bug fixes
+    
+- *Version: 2.112.1421.0 (January 2023), Released: January 25, 2023*   
+   - Support for January 2023 Power BI Report Server
+   - Bug fixes
 
 ## September 2022
 
