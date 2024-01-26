@@ -36,7 +36,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## September 2023
 
-- **Power BI Report Server**
+### Power BI Report Server
 
     - *Version: 1.18.8702.6380 (build 15.0.1113.169), Released: November 2, 2023*
 
@@ -60,7 +60,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
         - Bug fixes
             - Fixed appearance of links in Document Map of RDL report
             
-- **Power BI Desktop (optimized for Power BI Report Server)**   
+### Power BI Desktop (optimized for Power BI Report Server)
 
     - *Version: 2.121.1642.0 (September 2023), Released: November 2, 2023*   
         - Fixed a problem with using Top N Filter 
@@ -72,7 +72,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## May 2023
 
-- **Power BI Report Server**
+### Power BI Report Server
 
     - *Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
 
@@ -101,7 +101,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed compromised characters on Row Level Security setting page
             - Fixed setting calendar days to a single day for monthly schedules
             
-- **Power BI Desktop (optimized for Power BI Report Server)**   
+### Power BI Desktop (optimized for Power BI Report Server)
 
     - *Version: 2.117.984.0(May 2023), Released: May 26, 2023*
         - Support for May 2023 Power BI Report Server
@@ -110,7 +110,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2023
 
-- **Power BI Report Server**
+### Power BI Report Server
 
     - *Version: 1.16.8420.13742 (build 15.0.1111.115), Released: January 25, 2023*
         - Features
@@ -124,7 +124,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Fixed disabling tooltips in PBIX reports
             - Fixed input of date in date slicer in PBIX reports
             
-- **Power BI Desktop (optimized for Power BI Report Server)**   
+### Power BI Desktop (optimized for Power BI Report Server)
     - *Version: 2.112.1421.0 (January 2023), Released: January 25, 2023*   
         - Support for January 2023 Power BI Report Server
         - Bug fixes
