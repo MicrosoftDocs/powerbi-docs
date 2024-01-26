@@ -22,6 +22,10 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: Fabric community conference
+      itemType: whats-new
+      url: https://fabricconf.com/#!/
+    # Card
     - title: Download Power BI Desktop for free
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
@@ -45,10 +49,6 @@ highlightedContent:
     - title: Configure scheduled refresh
       itemType: how-to-guide
       url: connect-data/refresh-scheduled-refresh.md
-    # Card
-    - title: What is Microsoft Fabric?
-      itemType: get-started
-      url: /fabric/get-started/microsoft-fabric-overview
     # Card
     - title: Row-level security (RLS) in Power BI
       itemType: get-started
