@@ -38,75 +38,85 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Report Server
 
-    - *Version: 1.18.8702.6380 (build 15.0.1113.169), Released: November 2, 2023*
+- *Version: 1.18.8702.6380 (build 15.0.1113.169), Released: November 2, 2023*
 
-        - Bug fixes
-            - Fixed an issue displaying some custom visuals 
-            - Fixed a problem with using Top N Filter in PBIX reports
-            - Fixed an issue causing errors related to AS connectivity when rendering and updating PBIX reports in some cases
+   - Bug fixes
 
-    - *Version: 1.18.8683.7488(build 15.0.1113.165), Released: October 10, 2023*
+     - Fixed an issue displaying some custom visuals 
+     - Fixed a problem with using Top N Filter in PBIX reports
+     - Fixed an issue causing errors related to AS connectivity when rendering and updating PBIX reports in some cases
 
-        - Bug fixes
-            - Fixed the excessive memory status logging in a ReportingServicesService log by moving status message to verbose
+- *Version: 1.18.8683.7488(build 15.0.1113.165), Released: October 10, 2023*
 
-    - *Version: 1.18.8668.33514(build 15.0.1113.162), Released: September 27, 2023*
+   - Bug fixes
 
-        - Features
-            - Full-screen view for PBIX and RDL reports
-            - Responsive navigation adapted to a small view port
-            - Custom Visual API shipped with release - version v5.4.0
+     - Fixed the excessive memory status logging in a ReportingServicesService log by moving status message to verbose
 
-        - Bug fixes
-            - Fixed appearance of links in Document Map of RDL report
+- *Version: 1.18.8668.33514(build 15.0.1113.162), Released: September 27, 2023*
+
+   - Features
+
+      - Full-screen view for PBIX and RDL reports
+      - Responsive navigation adapted to a small view port
+      - Custom Visual API shipped with release - version v5.4.0
+
+    - Bug fixes
+
+       - Fixed appearance of links in Document Map of RDL report
             
 ### Power BI Desktop (optimized for Power BI Report Server)
 
-    - *Version: 2.121.1642.0 (September 2023), Released: November 2, 2023*   
-        - Fixed a problem with using Top N Filter 
+- *Version: 2.121.1642.0 (September 2023), Released: November 2, 2023*   
 
-    - *Version: 2.121.903.0 (September 2023), Released: September 27, 2023*   
-        - Support for September 2023 Power BI Report Server
-        - New layout switcher from web to mobile layout
-        - New bubble range scaling setting
+   - Fixed a problem with using Top N Filter 
+
+- *Version: 2.121.903.0 (September 2023), Released: September 27, 2023*   
+
+   - Support for September 2023 Power BI Report Server
+   - New layout switcher from web to mobile layout
+   - New bubble range scaling setting
 
 ## May 2023
 
 ### Power BI Report Server
 
-    - *Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
+- *Version: 1.17.8621.39162(build 15.0.1112.79), Released: August 15, 2023*
 
-        - Bug fixes
-            - Fixed issue with Portal process stopping working during a high load 
-            - Fixed issue with accessing some URLs using custom authentication 
+   - Bug fixes
 
-    - *Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
+     - Fixed issue with Portal process stopping working during a high load
+     - Fixed issue with accessing some URLs using custom authentication 
 
-        - Bug fixes
-            - Fixed an issue with the RTL browser setting viewing pbix reports
+- *Version: 1.17.8552.27722(build 15.0.1112.48), Released: June 6, 2023*
+
+   - Bug fixes
+
+     - Fixed an issue with the RTL browser setting viewing pbix reports
     
-    - *Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
+- *Version: 1.17.8546.6252(build 15.0.1112.41), Released: May 26, 2023*
 
-        - Features
-            - Introduced new Accessibility property that lets report authors to add accessible headers to tables and Heading levels to text boxes
-            - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
-            - Custom Visual API shipped with release - version v5.4.0
+   - Features
 
-        - Bug fixes
-            - Fixed issue with SAP Hana DQ Connection using integrated security in PBIX reports
-            - Fixed Web Service page localization problem
-            - Fixed issue with lack of permission on shared data source affecting loading of the containing folder
-            - Fixed back page navigator button for PBIX reports in Hebrew browser language
-            - Fixed slowness of Large MDX Query as an Expression 
-            - Fixed compromised characters on Row Level Security setting page
-            - Fixed setting calendar days to a single day for monthly schedules
+     - Introduced new Accessibility property that lets report authors to add accessible headers to tables and Heading levels to text boxes
+     - Added ability to configure Cleanup Batch Size and Cleanup Max Limit
+     - Custom Visual API shipped with release - version v5.4.0
+
+   - Bug fixes
+
+     - Fixed issue with SAP Hana DQ Connection using integrated security in PBIX reports
+     - Fixed Web Service page localization problem
+     - Fixed issue with lack of permission on shared data source affecting loading of the containing folder
+     - Fixed back page navigator button for PBIX reports in Hebrew browser language
+     - Fixed slowness of Large MDX Query as an Expression 
+     - Fixed compromised characters on Row Level Security setting page
+     - Fixed setting calendar days to a single day for monthly schedules
             
 ### Power BI Desktop (optimized for Power BI Report Server)
 
-    - *Version: 2.117.984.0(May 2023), Released: May 26, 2023*
-        - Support for May 2023 Power BI Report Server
-        - Bug fixes
+- *Version: 2.117.984.0(May 2023), Released: May 26, 2023*
 
+  - Support for May 2023 Power BI Report Server
+  - Bug fixes
 
 ## January 2023
 
