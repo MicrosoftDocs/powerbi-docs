@@ -91,7 +91,7 @@ conceptualContent:
               text: Create report pages with Copilot for Power BI (preview)
           # footerLink (optional)
           footerLink:
-            url: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
+            url: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/toc.json&bc=/power-bi/create-reports/breadcrumb/toc.json
             text: See all Copilot docs
         # Card
         - title: Develop in Power BI
