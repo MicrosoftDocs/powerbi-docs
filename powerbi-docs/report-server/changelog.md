@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 01/26/2024
 ---
 
 # Change log for Power BI Report Server
@@ -18,21 +18,21 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ## January 2024
 
-- **Power BI Report Server**
+### Power BI Report Server
 
-    - *Version:1.19.8779.19175 (build 15.0.1114.33), Released: January 26, 2024*
-        - Features
-            - Support for many to many cardinality in Power BI reports
-            - Custom Visual API shipped with release - version v5.7.0
-        - Bug fixes
-            - Fixed an issue with invisible Download and Reload buttons for Excel workbooks 
-            - Fixed an issue with NULL value in CC field breaking a data-driven email subscription  
+- *Version:1.19.8779.19175 (build 15.0.1114.33), Released: January 26, 2024*
+  - Features
+    - Support for many to many cardinality in Power BI reports
+    - Custom Visual API shipped with release - version v5.7.0
+  - Bug fixes
+    - Fixed an issue with invisible Download and Reload buttons for Excel workbooks 
+    - Fixed an issue with NULL value in CC field breaking a data-driven email subscription  
 
-- **Power BI Desktop (optimized for Power BI Report Server)**   
+### Power BI Desktop (optimized for Power BI Report Server)
     
-    - *Version: 2.124.1960.0 (January 2024), Released: January 26, 2024*   
-        - Features
-            - Support for many to many cardinality in Power BI Report Server
+- *Version: 2.124.1960.0 (January 2024), Released: January 26, 2024*   
+   - Features
+   - Support for many to many cardinality in Power BI Report Server
 
 ## September 2023
 
