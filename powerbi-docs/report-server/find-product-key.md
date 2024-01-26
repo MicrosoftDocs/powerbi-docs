@@ -46,7 +46,10 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 
 ### Volume licensing in the Microsoft 365 Admin Center
 
-If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **Downloads** section.
+If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section. 
+Billing > Your Products > Volume Licensing > View Downloads and Keys > Find SQL Server > **View Downloads** > View additional instructions:
+
+ 
 
 1. Select the key next to the version of the software that you have.
 
