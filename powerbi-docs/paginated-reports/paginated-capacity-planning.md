@@ -2,7 +2,7 @@
 title: Paginated reports capacity planning for Power BI Premium
 description: Plan your Power BI Premium capacity for using it with paginated reports.
 author: KesemSharabi
-ms.author: nisrinivasan
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Paginated reports capacity planning
 
-[!INCLUDE [applies-yes-service-yes-report-builder-no-desktop](../includes/applies-yes-service-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;Power&nbsp;BI&nbsp;2022&nbsp;Report&nbsp;Server :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::&nbsp;SQL&nbsp;Server&nbsp;2022&nbsp;Reporting&nbsp;Services
 
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
