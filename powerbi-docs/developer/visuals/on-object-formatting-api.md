@@ -3,11 +3,11 @@ title: Format objects directly API in Power BI Visuals
 description: The article describes how to use Power BI Visuals On-object formatting API to allow users to format visuals easily.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer:
+ms.reviewer: sranins, shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/28/2023
+ms.date: 01/28/2024
 ---
 
 # On-object formatting API
