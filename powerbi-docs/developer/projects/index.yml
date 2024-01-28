@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Power BI developer documentation
+title: Power BI developer solutions documentation
 summary: Solutions and best practices for Power BI developers of all kinds. It provides a suite of features that enable developer focused capabilities like external tool support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps. Microsoft Power BI Desktop developer mode brings Pro BI developer experiences right into Power BI Desktop. 
 
 metadata:
@@ -73,4 +73,3 @@ landingContent:
           url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
         - text: "Get started with deployment pipelines"
           url: /fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines?tabs=from-workspace
-          
