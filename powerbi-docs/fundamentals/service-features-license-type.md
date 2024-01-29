@@ -1,13 +1,13 @@
 ---
 title: Power BI service features by license type
 description: "In the Power BI service, users have defined capabilities based on the type of per-user license they have (free, Pro, PPU) and whether the content they are interacting with is in a workspace assigned to a Power BI Premium capacity."
-author: kfollis
+author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 09/01/2022
+ms.date: 01/26/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -33,17 +33,17 @@ Power BI Pro is an individual per-user license that lets users create content an
 
 ### Premium per user (PPU) license
 
-A PPU per-user license provides the license holder with all of the capabilities of Power BI Pro plus access to most Premium capacity-based features. A Power BI PPU license unlocks access to a variety of features, capabilities, and types of content that are only available through Premium. This access is limited to the PPU license holder and other colleagues who also have a PPU license. For example, in order to collaborate and share content in a PPU workspace, all users must have a PPU license.
+A PPU per-user license provides the license holder with all of the capabilities of Power BI Pro plus access to most Premium capacity-based features. A Power BI PPU license unlocks access to extra of features, capabilities, and types of content that are only available with a paid license. This access is limited to the PPU license holder and other colleagues who also have a PPU license. For example, in order to collaborate and share content in a PPU workspace, all users must have a PPU license.
 
-When using a PPU license, content created by a PPU licensed user can only be shared with other users that have a PPU license, *unless* that content is specifically put in a workspace hosted in Premium capacity. The table below summarizes the basic capabilities of each license type.
+When you use a PPU license, content created by you can only be shared with other users who also have a PPU license. The exception is when that content is saved in a workspace hosted in Premium capacity. The table summarizes the basic capabilities of each license type.
 
 ### Premium capacity
 
-A capacity-based Premium license (often referred to as a Premium *subscription*) allows Pro or PPU users to create and save content in Premium capacity workspaces. They can then share that workspace with colleagues who have any license type. Only users with a Pro or PPU license can create and save content in Premium capacities, and only if their organization has purchased Premium capacity. 
+A capacity-based Premium license (often referred to as a Premium *subscription*) allows Pro or PPU users to create and save content in Premium capacity workspaces. They can then share that workspace with colleagues who have any license type. Only users with a Pro or PPU license can create and save content in Premium capacities, and only if their organization purchased Premium capacity. 
 
 To discover more about Power BI Premium, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 
-| License type | Capabilities when workspace is in shared capacity | Additional  capabilities when workspace is in Premium capacity |
+| License type | Capabilities when workspace is in shared capacity | Extra capabilities when workspace is in Premium capacity |
 | --------- | ----------- | ----------- |
 | Fabric (free) | Access to content they create for themselves. | Consume content shared with them by Pro or PPU users |
 | Power BI Pro | Publish content to other workspaces, share dashboards, subscribe to dashboards and reports, share with users who have a Pro license | Distribute content to users who have free or PPU licenses |
