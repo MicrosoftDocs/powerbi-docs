@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/09/2024
+ms.date: 01/22/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,14 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## January 2024
+
+### Get to know Power BI with sample reports on your mobile
+
+Power BI's sample reports help you quickly get up to speed with Power BI. You can now use a sample report directly from the mobile app. On the app's home page, simply select the down arrow on the Recommended strip, choose **Sample reports**, and then pick one of the sample reports. The report will install in your personal workspace and you'll be all set to start exploring it in the app. You can also get to the sample reports on the Explore page!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-sample-reports.png" alt-text="Screenshot showing downloadable sample reports on the mobile Home and Explore pages." border="false":::
 
 ## December 2023
 
@@ -645,7 +653,7 @@ Now you can use comments to collaborate and share your feedback on report pages 
 
 #### Maximize the view with full screen mode (Android and iOS)
 
-We added new button that let you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
+We added a new button that lets you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
 
 ### March 2019
 
