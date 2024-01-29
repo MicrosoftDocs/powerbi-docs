@@ -151,7 +151,7 @@ Language support in Power BI Desktop is limited to the languages displayed in th
 
 Power BI Desktop gets its default number and date formatting from the Windows Region settings. You can check or change those settings, if needed.
 
-1. On the Windows menu select **Settings**
+1. On the Windows menu, select **Settings.**
 
 1. In **Windows Settings**, select **Time & language**.
    
@@ -163,7 +163,7 @@ Power BI Desktop gets its default number and date formatting from the Windows Re
 
 ### Choose the locale for importing data into Power BI Desktop
 
-Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way Power BI interprets data when it's imported from your data source. For example, is "3/4/2017" interpreted as 3 April or March 4?
+Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way Power BI interprets data when importing from your data source. For example, is "3/4/2017" interpreted as 3 April or March 4?
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Current file**, select **Regional Settings**.
