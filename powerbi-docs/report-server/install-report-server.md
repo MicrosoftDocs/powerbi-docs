@@ -42,7 +42,7 @@ Read on for details.
 
 #### Power BI Premium / Fabric Capacity
 
-If you've purchased Power BI Premium or Fabric capacity, within the **Premium settings** tab of the Admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins, users assigned the Fabric administrator role and Capacity admins.
+If your organization has purchased Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Premium Settings** tab in the admin portal. The key is only accessible to users with Global admin, Fabric admin, or PowerBI premium capacity admin privileges.
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
