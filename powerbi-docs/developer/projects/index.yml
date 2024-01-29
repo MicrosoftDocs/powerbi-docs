@@ -65,6 +65,15 @@ landingContent:
         - text: "Register an external tool"
           url: ../../transform-model/desktop-external-tools-register.md
   # Card (optional)
+  - title: Solutions and Best Practices
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "Leveraging hot and cold table partitions to optimize very large Power BI data models "
+          url: ../../transform-model/desktop-external-tools.md
+        - text: "Register an external tool"
+          url: ../../transform-model/desktop-external-tools-register.md
+  # Card (optional)
   - title: External tools
     linkLists:
       - linkListType: concept
