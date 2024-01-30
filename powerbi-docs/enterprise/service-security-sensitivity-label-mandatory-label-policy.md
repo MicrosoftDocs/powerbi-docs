@@ -65,7 +65,7 @@ Where:
 * Mandatory labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to mandatory label policies.
 * Mandatory labeling in Power BI isn't supported for [external guest users (B2B users)](service-admin-azure-ad-b2b.md). B2B users aren't subject to mandatory label policies.
 
-## Next steps
+## Related content
 
 * [Default label policy for Power BI](service-security-sensitivity-label-default-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
