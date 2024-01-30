@@ -128,7 +128,7 @@ The following is an example of a privileges setting that allows downloading to a
 
 #### Local storage privileges
 
-This privilege allows a custom visual to store information on the user's local machine.
+This privilege allows a custom visual to store information on the user's local browser.
 
 The following is an example of a privileges setting that allows use of the local storage:
 

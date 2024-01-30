@@ -12,7 +12,7 @@ ms.date: 01/30/2024
 
 # Local Storage API
 
-With the local storage API, you can store data directly in the local browser. Data stored locally is more secure, and improves performance of web apps. To use the local storage API, your admin has to enable the [local storage admin switch](/fabric/admi/organizational-visuals#local-storage).
+With the local storage API, you can store data directly in the local browser. Data stored locally is more secure, and improves performance of web apps. To use the local storage API, the [local storage admin switch](/fabric/admi/organizational-visuals#local-storage) has to be enabled. Contact your admin if this switch is disabled.
 
 Local storage is isolated so that each type of visual has its own separate storage access.
 
@@ -184,12 +184,12 @@ export class Visual implements IVisual {
 * Export to *PDF* or *pptx* isn't supported.
 * The API is supported only when a user is signed in.
 * A visual’s data is cleared 29 days after the most recent modification time.
-* This API is privileged API.
+* This API is a privileged API.
 * The key (parameter provided to *set*, *get*, *Remove*) has the following restrictions:
   * Length must be fewer than 128 characters
   * Can't contain the character '|'
-* If the browser is in kiosk mode, local storage availability might differ between browsers, and by by the kiosk owner's settings.
-* There are many reasons this API might not be supported. For example,the environment might not be supported or the browser’s local storage isn't available. We recommend checking the *status* of the API before using the *set/get/remove* methods. Even if the API is supported, it might fail, so error handling is important.
+* If the browser is in kiosk mode, local storage availability might differ between browsers, and by the kiosk owner's settings.
+* There are many reasons this API might not be supported. For example,the environment might not be supported or the browser’s local storage isn't available. We recommend checking the *status* of the API before using the *set/get/remove* methods. Error handling is important since even if the API is supported, it might fail.
 
 ---
 
