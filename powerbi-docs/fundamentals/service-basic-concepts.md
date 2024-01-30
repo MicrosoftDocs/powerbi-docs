@@ -293,7 +293,7 @@ This area of the screen contains more options for interacting with the content (
 
 :::image type="content" source="media/service-basic-concepts/power-bi-labeled-icons.png" alt-text="Screenshot of Power BI service showing labeled icon buttons.":::
 
-## Next steps
+## Related content
 
 - [What is Power BI?](power-bi-overview.md)  
 - [Power BI videos](videos.md)  

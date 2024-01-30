@@ -14,7 +14,7 @@ LocalizationGroup: Admin
 ---
 # Direct Lake
 
-*Direct Lake* mode is a groundbreaking semantic model capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse endpoint, and without having to import or duplicate data into a Power BI model. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with Direct Lake mode.
+*Direct Lake* mode is a groundbreaking semantic model capability for analyzing very large data volumes in Power BI. Direct Lake is based on loading parquet-formatted files directly from a data lake without having to query a Lakehouse or Warehouse endpoint, and without having to import or duplicate data into a Power BI model. Direct Lake is a fast-path to load the data from the lake straight into the Power BI engine, ready for analysis. The following diagram shows how classic import and DirectQuery modes compare with Direct Lake mode.
 
 :::image type="content" source="media/directlake-overview/directlake-diagram.png" border="false" alt-text="Direct Lake feature diagram.":::
 
@@ -30,17 +30,21 @@ Direct Lake is supported on Power BI Premium P and Microsoft Fabric F SKUs only.
 
 #### Lakehouse
 
-Before using Direct Lake, you must provision a Lakehouse with one or more delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling to create a Direct Lake model.
+Before using Direct Lake, you must provision a Lakehouse (or a Warehouse) with one or more Delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling feature to create a Direct Lake model.
 
 To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a basic model for the Lakehouse, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).
 
 #### SQL endpoint
 
-As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default model for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake model must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake.
+As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default model for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake model must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake. Direct Lake mode also queries the SQL endpoint for schema- and security-related information.
+
+#### Data Warehouse
+
+As an alternative to a Lakehouse with SQL endpoint, you can also provision a Warehouse and add tables by using SQL statements or data pipelines. The procedure to provision a standalone Data Warehouse is almost identical to the procedure for a Lakehouse.
 
 ## Model write support with XMLA endpoint
 
-Direct Lake models support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher) , and the latest versions of external BI tools like Tabular Editor and DAX studio. Model write operations through the XMLA endpoint support:
+Direct Lake models support write operations through the XMLA endpoint by using tools such as SQL Server Management Studio (19.1 and higher), and the latest versions of external BI tools like Tabular Editor and DAX studio. Model write operations through the XMLA endpoint support:
 
 - Customizing, merging, scripting, debugging, and testing Direct Lake model metadata.
 
@@ -76,7 +80,7 @@ When connecting to a standalone Direct Lake model through the XMLA endpoint, the
 
 - The `Mode` property of Direct Lake partitions is set to `directLake`.
 
-- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse. Direct Lake uses the SQL endpoint to discover the Lakehouse schema but loads the data directly from the delta tables (unless Direct Lake must fallback to DirectQuery mode for any reason).
+- Direct Lake partitions use shared expressions to define data sources. The expression points to the SQL endpoint of a Lakehouse or Warehouse. Direct Lake uses the SQL endpoint to discover schema and security information but loads the data directly from the delta tables (unless Direct Lake must fall back to DirectQuery mode for any reason).
 
 Here's an example XMLA query in SSMS:
 
@@ -108,7 +112,7 @@ The following table lists both resource guardrails and MaxMemory:
 | F1024/P5    | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 | F2048       | 10,000                  | 10,000               | 24,000                    | Unlimited                |400                     |
 
-<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fallback to DirectQuery, unlike other guardrails that are evaluated per query.
+<a name="mm">1</a> - If exceeded, Max model size on disk/Onelake will cause all queries to the model to fall back to DirectQuery, unlike other guardrails that are evaluated per query.
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
@@ -147,9 +151,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Known issues and limitations
 
-- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fallback to DirectQuery mode.
-
-- Direct Lake models created or modified by using XMLA-based tools cannot be opened in the Web modelling feature.
+- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fall back to DirectQuery mode.
 
 - Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
 
@@ -163,20 +165,13 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Table relationships require the data types of their key columns to coincide. Primary key columns must contain unique values. DAX queries will fail if duplicate primary key values are detected.
 
-- The length of string column values is limited to 4,000 Unicode characters.
+- The length of string column values is limited to 32,764 Unicode characters.
 
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
 - Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
 
-- Currently, when creating a *new* Direct Lake semantic model from the Lakehouse or SQL analytics endpoint in the Power BI service, any model items created in the *default* model are also added to the new model. These items can include measures, relationships, and properties such a format strings and data category. While these items can be changed in the new model,  those changes aren't reflected back to the default model. In a future update, only relationships can be optionally added when creating a new model.
-
-- Currently, for an *existing* Direct Lake model, if you're using the **Edit data model** experience in the Power BI service, one or more of the following can apply:
-
-    - If a column change is made to an *existing* delta table, for example, a new column is added, the column data type is changed, or a column is renamed, that change is not automatically reflected in the model. For the model to reflect the change, the table must be removed from the model and then added back. To remove the table, select **Edit tables**, deselect the table, and then **Confirm**. Select **Edit tables** again, select the table again, and then confirm. All measures in the table must be moved to other tables or removed from the table before you can remove the table. In a future update, changes happen automatically as part of schema refresh.
-    - If an existing delta table in the Lakehouse is renamed, that change isn't automatically reflected in the model. For the model to reflect the change, the table must be selected again from **Edit tables**. The table with the old name remains in the model and any visuals using the table show an error. The table can't be removed directly but it can be hidden. To remove it, in the Lakehouse, rename the table back to the original name. You can then remove it by unchecking the box in the Edit tables dialog. When removed from the model, the table can be renamed in the Lakehouse and then brought back in by using the Edit tables dialog. In a future update, renames happen automatically as part of schema refresh.
-    - If an existing delta table is removed from the Lakehouse, that change isn't automatically reflected in the model. The table remains and any visuals using it show an error. The table can't be removed but it can be hidden. In a future update, tables are removed automatically as part of schema refresh.
-    - If an *existing* measure, relationship, or other model property from the default/auto-generated model is removed, changed, or added, that change isn't automatically reflected in the model. For the model to reflect the change, the table with the updates must be removed and then added back. To remove the table, select **Edit tables**, deselect the table and then confirm. Select **Edit tables** again, select the table again, and then confirm. All measures in the table must be moved to other tables or removed before you can remove the table. In a  future update, there will be additional options for keeping changes.
+- Unprocessed tables fall back to DirectQuery mode. When creating a new semantic model make sure to refresh your semantic model to process your tables.
 
 ## Get started
 

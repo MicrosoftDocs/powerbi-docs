@@ -64,7 +64,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 Download the [GitHub PBIT file](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) to further customize and update the template app.
 
-## Next steps
-[Get started in Power BI](../fundamentals/service-get-started.md)
+## Related content
 
-[Get data in Power BI](service-get-data.md)
+* [Get started in Power BI](../fundamentals/service-get-started.md)
+* [Get data in Power BI](service-get-data.md)

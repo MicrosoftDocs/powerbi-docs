@@ -252,7 +252,7 @@ A few of our favorite books include:
 * *Envisioning Information* by Edward Tufte
 * *Advanced Presentations Design* by Andrew Abela
 
-## Next steps
+## Related content
 
 * [Design effective reports in Power BI](/training/paths/power-bi-effective/)
 * [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)

@@ -111,7 +111,7 @@ If you followed step 3, you're connected to the read-write semantic model. You c
 
 4. In the DAX query window, execute the query *Evaluate Query1* again. SQL Server Management Studio (SSMS) shows the latest refresh time because it's connected to the *read/write* replica.
 
-## Next steps
+## Related content
 
 * [Power BI semantic model scale-out](service-premium-scale-out.md)
 

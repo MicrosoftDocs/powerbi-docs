@@ -57,10 +57,10 @@ If you have any issues when you sign in with the new account credentials, try us
 
 When you use this sign-up method, you create a new organizational tenant, and you become the User administrator of the tenant. For more information, see [What is Power BI administration](../admin/service-admin-administering-power-bi-in-your-organization.md). You can add new users to your tenant, then share with them, as described in the [Microsoft 365 admin documentation](https://support.office.com/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-## Next steps
+## Related content
 
-[What is Power BI administration?](../admin/service-admin-administering-power-bi-in-your-organization.md)  
-[Power BI licensing in your organization](service-admin-licensing-organization.md)  
-[Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
+- [What is Power BI administration?](../admin/service-admin-administering-power-bi-in-your-organization.md)  
+- [Power BI licensing in your organization](service-admin-licensing-organization.md)  
+- [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

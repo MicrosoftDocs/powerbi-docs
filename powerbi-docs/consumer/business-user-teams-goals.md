@@ -96,7 +96,7 @@ Each project and organization can have its own metrics. You can find all your me
 
     :::image type="content" source="media/business-user-teams-goals/power-bi-teams-goals-home.png" alt-text="Metrics home hub in Power BI.":::
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Create scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md)

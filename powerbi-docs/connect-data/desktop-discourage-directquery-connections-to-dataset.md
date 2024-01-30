@@ -31,7 +31,8 @@ In some situations, however, you need to discourage these connections from happe
 ## Use third-party tools to discourage DirectQuery connections to a semantic model
 By using third-party tools, you can discourage DirectQuery connections to a semantic model by setting the `DiscourageCompositeModels` property on a model to `True`.
 
-## Next steps
+## Related content
+
 - [Using DirectQuery in Power BI](desktop-directquery-about.md)
 - [Semantic models in the Power BI service](service-dataset-modes-understand.md)
 - [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)

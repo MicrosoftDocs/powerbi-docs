@@ -54,6 +54,6 @@ Because **Moderation** is selected on the bar chart:
 
 - If the tables have no hierarchical relationships, slicing up the measures (often referred as complex slicers) might result in an error. If you have access to the logs, you'll see the message "Measures are not allowed with complex slicers unless they have a filter context change". To avoid this situation, don't use complex slicers or remodel the relationships to get the desired output.
 
-## Next steps
+## Related content
 
-[Take a tour of the report Filters pane](end-user-report-filter.md)
+- [Take a tour of the report Filters pane](end-user-report-filter.md)

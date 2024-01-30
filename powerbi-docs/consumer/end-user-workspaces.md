@@ -57,8 +57,9 @@ To learn more, see [Which license do I have?](end-user-license.md).
 
 
 
-## Next steps
-* [Apps in Power BI](end-user-apps.md)    
+## Related content
+
+* [Apps in Power BI](end-user-apps.md)
 
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

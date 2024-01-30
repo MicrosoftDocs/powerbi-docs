@@ -81,7 +81,7 @@ Follow these steps to purchase A SKUs in the Azure portal:
 
 After you purchase a capacity, see [Manage a capacity](service-admin-premium-manage.md#manage-capacity) and [Assign a workspace to a capacity](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).
 
-## Next steps
+## Related content
 
 - [What is Power BI Premium?](service-premium-what-is.md)
 - [How to purchase Power BI Premium](service-admin-premium-purchase.md)

@@ -76,7 +76,7 @@ The capacity stays in *interactive request delay* mode if the previous evaluatio
 
 To configure autoscale on a Power BI Premium capacity, follow the instructions in [Using Autoscale with Power BI Premium](service-premium-auto-scale.md).
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[What is Power BI Premium?](service-premium-what-is.md)

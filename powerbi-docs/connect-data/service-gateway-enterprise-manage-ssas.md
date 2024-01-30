@@ -271,7 +271,7 @@ If you're listed in the **Users** tab of the data source configured within the g
 | 2014 |Business Intelligence and Enterprise SKU |
 | 2016 |Standard SKU or higher |
 
-## Next steps
+## Related content
 
 * [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)

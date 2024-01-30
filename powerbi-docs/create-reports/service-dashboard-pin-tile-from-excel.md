@@ -95,7 +95,7 @@ Selecting a workbook tile opens the linked workbook in Power BI. Since the workb
 
 Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel aren't supported in Excel Services REST API, they aren't seen on tiles in Power BI, for example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features, see [Unsupported Features in Excel Services REST API](/sharepoint/dev/general-development/unsupported-features-in-excel-services-rest-api).
 
-## Next steps
+## Related content
 
 * [Share a Power BI dashboard that links to an Excel file in OneDrive](../collaborate-share/service-share-dashboard-that-links-to-excel-onedrive.md)
 * [Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md)

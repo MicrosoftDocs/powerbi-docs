@@ -104,8 +104,8 @@ For data across a time series, detects when there are specific dates or times wi
 
 ![Screenshot of a time series Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
 
-## Next steps
+## Related content
 
-[View data insights on dashboard tiles with Power BI](end-user-insights.md)
+* [View data insights on dashboard tiles with Power BI](end-user-insights.md)
 
 More questions? Ask the [Power BI Community](https://community.powerbi.com/)

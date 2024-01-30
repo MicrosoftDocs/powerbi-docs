@@ -148,10 +148,10 @@ URLs must start with one of the following:
 Q: Can I use a custom URL as a hyperlink in a table or matrix?    
 A: No. You can use a link icon. If you need custom text for your hyperlinks and your list of URLs is short, consider using a text box instead.
 
+## Related content
 
-## Next steps
-[Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
+- [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

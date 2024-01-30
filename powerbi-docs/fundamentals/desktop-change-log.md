@@ -512,9 +512,9 @@ Bug fixes:
 - Fix for Model view blurry fields and icon text inside a table card. 
 - Fix for Color picker: now it closes when you press ESC. 
 
-## Next steps
+## Related content
 
-[What's new in Power BI](desktop-latest-update.md)
-[Previous monthly updates to Power BI](desktop-latest-update-archive.md)
+* [What's new in Power BI](desktop-latest-update.md)
+* [Previous monthly updates to Power BI](desktop-latest-update-archive.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

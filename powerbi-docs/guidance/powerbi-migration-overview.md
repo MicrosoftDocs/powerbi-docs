@@ -121,7 +121,6 @@ Other helpful resources include:
 - [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 - [Migrate SSRS reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

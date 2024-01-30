@@ -145,7 +145,7 @@ If you publish your Power BI Desktop report to a [workspace](../collaborate-shar
 
 [!INCLUDE [include-short-name](../includes/rls-faq.md)]
 
-## Next steps
+## Related content
 
 - [Restrict data access with row-level security (RLS) for Power BI Desktop](../enterprise/service-admin-rls.md)
 - [Row-level security (RLS) guidance in Power BI Desktop](../guidance/rls-guidance.md)

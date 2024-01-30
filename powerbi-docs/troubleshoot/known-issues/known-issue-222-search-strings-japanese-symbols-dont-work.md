@@ -6,7 +6,7 @@ ms.author: mihart
 ms.topic: troubleshooting  
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
-ms.date: 08/16/2022
+ms.date: 01/17/2024
 ms.custom: known-issue-222
 ---
 
@@ -18,7 +18,7 @@ In the Power BI service, you may see unexpected results when the search string c
 
 **Status:** Open
 
-**Problem area:** Consume and View
+**Problem area:** Consume and View.
 
 
 ## Symptoms

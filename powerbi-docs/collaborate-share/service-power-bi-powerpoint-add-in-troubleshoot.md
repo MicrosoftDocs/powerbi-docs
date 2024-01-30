@@ -111,7 +111,7 @@ If you get the **Cannot run Power BI** error even though you're sure that WebVie
 
 * [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
 
-## Next Steps
+## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)

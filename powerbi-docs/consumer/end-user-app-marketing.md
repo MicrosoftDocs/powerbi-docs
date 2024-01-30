@@ -51,7 +51,7 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
 Take some time to explore the data in the dashboards and reports that make up the app. You have access to all of the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. If you are confused by the difference between dashboards and reports, see the [article about dashboards](end-user-dashboards.md) and the [article about reports](end-user-reports.md).  
 
-## Next steps
+## Related content
 
 - View [Apps in Power BI](end-user-apps.md)
 - [View a report in the Power BI service for business users](end-user-report-open.md)

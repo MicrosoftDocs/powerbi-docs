@@ -133,7 +133,7 @@ In the window that appears, create the session policy. The numbered steps descri
 
     ![Screenshot of the Defender for Cloud App Security window showing the create session policy button.](media/service-security-using-defender-for-cloud-apps-controls/defender-for-cloud-apps-controls-create-policy-configure-save.png)
 
-## Next steps
+## Related content
 
 This article described how Defender for Cloud Apps can provide data and content protections for Power BI. For more information about Data Protection for Power BI and supporting content for the Azure services that enable it, see:
 

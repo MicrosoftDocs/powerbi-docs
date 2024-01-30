@@ -163,7 +163,7 @@ One of their most important data governance decisions related to management of P
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Dashboard in a Day](https://powerbi.microsoft.com/diad/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

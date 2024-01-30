@@ -162,7 +162,7 @@ Power BI Desktop automatically detects which high-contrast theme Windows uses an
 
 :::image type="content" source="media/desktop-accessibility/accessibility-05b-2.png" alt-text="Screenshot of the high contrast settings on the Power BI service.":::
 
-## Next steps
+## Related content
 
 * [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
 * [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)

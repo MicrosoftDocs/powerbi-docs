@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 11/08/2023
+ms.date: 01/30/2024
 ---
 
 # Local Storage API

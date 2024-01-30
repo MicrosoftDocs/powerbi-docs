@@ -258,7 +258,7 @@ namespace Hybrid_Tables
 }
 ```
 
-## Next steps
+## Related content
 
 - [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true)
 - [External tools in Power BI Desktop](../transform-model/desktop-external-tools.md)

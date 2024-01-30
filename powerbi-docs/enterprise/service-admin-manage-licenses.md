@@ -52,7 +52,7 @@ Follow these steps to view and assign Power BI licenses using the Azure portal.
 
 6. To remove a license, select the checkbox next to the user's name, then select **Remove license**.
 
-## Next steps
+## Related content
 
 - [Purchase Power BI Pro](service-admin-purchasing-power-bi-pro.md)
 - [Licensing for your organization](service-admin-licensing-organization.md)

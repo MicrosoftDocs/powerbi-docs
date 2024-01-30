@@ -90,7 +90,7 @@ Once you created the report, you can customize it to get the most valuable insig
 
 For a demo Jupyter notebook, see the [GitHub repository](https://github.com/microsoft/powerbi-jupyter/).
 
-## Next steps
+## Related content
 
 * [Learn more about developing in Jupyter notebook](/javascript/api/overview/powerbi/powerbi-jupyter)
 * [Quick create demo Jupyter notebook GitHub repository](https://github.com/microsoft/powerbi-jupyter/)
