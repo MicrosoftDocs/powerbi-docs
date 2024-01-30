@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/30/2024
+ms.date: 01/31/2024
 LocalizationGroup: Get started
 ---
 
