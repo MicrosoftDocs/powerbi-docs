@@ -143,7 +143,7 @@ Data sources for the Power BI service have the following limitations. Other limi
 
 - **Single Sign On (SSO) considerations**. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user. SSO can be enabled for each source connection, and might involve configuring a gateway or VNET for some types of sources. You can read more about enabling SSO for gateways in the [SSO for data gateways](service-gateway-sso-overview.md) article. 
  
-    Querying the SSO-enabled DirectQuery model using a Service Principle (SPN) isn't supported, since the SPN credential can't be passed through to the DirectQuery source. Instead, use a User Principle (UPN) to execute such queries against the SSO-enabled DirectQuery semantic model. 
+    Querying the SSO-enabled DirectQuery model using a Service Principal (SPN) isn't supported, since the SPN credential can't be passed through to the DirectQuery source. Instead, use a User Principal (UPN) to execute such queries against the SSO-enabled DirectQuery semantic model. 
  
 
 
