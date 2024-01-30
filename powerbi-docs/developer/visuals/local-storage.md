@@ -76,7 +76,7 @@ The local storage API has four methods:
 
 * *get*:
 
-  * This method expects one parameter: 
+  * This method expects one parameter:
 
     * *key* – the key whose value you want to get.
   
