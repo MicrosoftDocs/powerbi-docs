@@ -38,7 +38,7 @@ It's possible to have more than one license at the same time. The service always
 >[!NOTE]
 >
 >* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
->* Only SKUs equivalent or higher than an **F64 SKU** allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* Only SKUs equivalent or higher than a **F64 SKU** allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
 
 
 ## Power BI Premium capacity subscription

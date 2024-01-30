@@ -65,7 +65,7 @@ Before you start this tutorial, verify that you have both the following Power BI
     >To [move to production](move-to-production.md) you'll need one of the following configurations:
     >* All users with Pro licenses.
     >* All users with PPU licenses.
-    >* A SKU that's equivalent or higher to an [F64 SKU](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
+    >* A SKU that's equivalent or higher to a [F64 SKU](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 
