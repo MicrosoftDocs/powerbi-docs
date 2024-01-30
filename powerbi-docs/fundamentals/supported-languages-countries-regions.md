@@ -159,7 +159,7 @@ Power BI Desktop gets its default number and date formatting from the Windows Re
 
 1. Select **Language & Region** > **Additional date, time, and regional settings**. If you don't see this option, scroll down to **Region**. Check and modify the **Country or region** and **Regional format** settings as needed.
 
-    :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-check-dates.png" alt-text="Screenshot showing additional date, time, and regional settings.":::
+    :::image type="content" source="media/supported-languages-countries-regions/power-bi-check-dates.png" alt-text="Screenshot showing additional date, time, and regional settings.":::
 
 ### Choose the locale for importing data into Power BI Desktop
 
