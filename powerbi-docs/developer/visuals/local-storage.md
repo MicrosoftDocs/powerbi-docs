@@ -167,7 +167,7 @@ export class Visual implements IVisual {
 * Data can be shared between visuals with the same GUID only.
 * Data can't be shared with another instance of Power BI Desktop.
 * The local storage API isn't activated by default. To activate it for your Power BI visual, send a request to Power BI visuals support, `pbicvsupport@microsoft.com`.
-* The local storage API doesn't support `await` constructions. Only `than` and `catch` methods are allowed.
+* The local storage API doesn't support `await` constructions. Only `then` and `catch` methods are allowed.
 
 **Your visual should be available in [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) and be [certified](power-bi-custom-visuals-certified.md).**
 
