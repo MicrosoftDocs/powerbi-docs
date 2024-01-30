@@ -195,7 +195,7 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 
 ## Power BI Report Server product key
 
-On the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role and if you have purchased a Power BI Premium SKU.
+If your organization has purchased Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Power BI Premium** tab in the admin portal. The key is only accessible to users with Global admin, Fabric admin, or PowerBI premium capacity admin privileges.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
 
