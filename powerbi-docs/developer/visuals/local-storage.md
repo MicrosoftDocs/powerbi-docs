@@ -181,7 +181,7 @@ export class Visual implements IVisual {
   * SaaS Embed
   * Mobile
   * Report Server
-* Export to *PDF* or *pptx* isn't supported.
+* Local storage isn't supported when Exporting to *PDF* or *pptx*.
 * The API is supported only when a user is signed in.
 * A visual’s data is cleared 29 days after the most recent modification time.
 * This API is a privileged API.
