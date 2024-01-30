@@ -134,8 +134,8 @@ URL reservations are composed of a prefix, host name, port, and virtual director
 
 An example of the complete URL string might be as follows:
 
-* `https://+:80/reportserver`, provides access to the report server.
-* `https://+:80/reports`, provides access to the web portal.
+* `https://+:80/reportserver` provides access to the report server.
+* `https://+:80/reports` provides access to the web portal.
 
 ## Firewall
 
