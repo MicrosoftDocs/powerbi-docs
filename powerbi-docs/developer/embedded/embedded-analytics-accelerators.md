@@ -7,7 +7,7 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 01/31/2024
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
@@ -26,7 +26,9 @@ Key advantages of using accelerators include:
 
 * Integration Flexibility: Accelerators can function as standalone applications or be fully integrated with your existing application, as outlined in the [Deployment and integration options table](#deployment-and-integration-options).
 
+<!---
 [Watch a video describing an overview of embedded solution accelerator partner programs](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics-program-overview).
+--->
 
 Different partner accelerators vary in their deployment, acquisition/billing methods, and capabilities.
 The following table briefly describes each of the current partners’ embedded analytics solution accelerators:"
@@ -149,7 +151,9 @@ The following tables compare features of the different accelerators from our par
 
 ## Related content
 
+<!---
 * To watch interview video recordings describing the accelerator program and each accelerator visit the [Microsoft Partner Showcase - Embedded Analytics Solution Accelerators page](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics-program-overview).
+--->
 
 * To learn more about each partner’s solution accelerator, visit their corresponding product website:
 
