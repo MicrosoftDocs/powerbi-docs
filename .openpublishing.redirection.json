@@ -3211,7 +3211,7 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": true
         },
         {
@@ -3221,7 +3221,7 @@
         },
         {
             "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
         },
         {

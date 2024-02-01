@@ -127,12 +127,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                                 <img alt="Illustration of a computer monitor. Six windows are visible on the screen. Each contains a chart." src="media/power-bi-creator-landing/power-bi-designer-create-reports-visuals-dashboards.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
-                                    <div class="cardText"> 
-                                          <h3>Enrich Power BI with Azure Machine Learning</h3> 
-                                          <p></p>
-                                                <a href="/power-bi/transform-model/dataflows/dataflows-machine-learning-integration">Azure Machine Learning and Power BI</a><br/> 
-                                                <a href="service-aml-integrate.md">Tutorial: Consume an Azure Machine Learning model</a><br/> 
-                                    </div> 
+
                               </div> 
                         </div> 
                   </div> 
