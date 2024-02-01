@@ -4,7 +4,6 @@ description: How to share Power BI reports and dashboards with colleagues in and
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: sunaraya
-ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
