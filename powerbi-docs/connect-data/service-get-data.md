@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/30/2024
+ms.date: 01/31/2024
 LocalizationGroup: Get started
 ---
 
@@ -141,7 +141,7 @@ Data sources for the Power BI service have the following limitations. Other limi
 
 - **Data source user limit**. The maximum number of data sources allowed per user is 1,000. This limit applies only to the Power BI service.
 
-- **Single Sign On (SSO) considerations**. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user. SSO can be enabled for each source connection, and might involve configuring a gateway or VNET for some types of sources. You can read more about enabling SSO for gateways in the [SSO for data gateways](service-gateway-sso-overview.md) article. 
+- **Single Sign On (SSO) considerations**. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user. SSO can be enabled for each source connection that supports SSO (not all connection types support SSO), and each SSO connection might require configuring a gateway or VNET for certain types of sources. You can read more about enabling SSO for gateways in the [SSO for data gateways](service-gateway-sso-overview.md) article. 
  
     Querying the SSO-enabled DirectQuery model using a Service Principal (SPN) isn't supported, since the SPN credential can't be passed through to the DirectQuery source. Instead, use a User Principal (UPN) to execute such queries against the SSO-enabled DirectQuery semantic model. 
  
