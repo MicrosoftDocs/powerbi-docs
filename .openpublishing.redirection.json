@@ -1,7 +1,7 @@
 {
     "redirections": [
         {
-            "source_path": "power-bi/connect-data/service-aml-integrate.md",
+            "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
         },
