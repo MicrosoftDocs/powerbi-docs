@@ -1,7 +1,7 @@
 ---
 title: Git integration with Power BI Desktop projects
 description: Learn about Git integration with Power BI Desktop. projects.
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ruiromano
 ms.service: powerbi

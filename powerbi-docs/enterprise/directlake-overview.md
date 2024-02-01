@@ -1,7 +1,7 @@
 ---
 title: Learn about Direct Lake in Power BI and Microsoft Fabric
 description: Describes using Direct Lake to analyze very large semantic models in Power BI and Microsoft Fabric.
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi

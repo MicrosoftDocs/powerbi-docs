@@ -1,7 +1,7 @@
 ---
 title: Learn how to analyze query processing for Direct Lake datasets
 description: Describes how to analyze query processing for Direct Lake datasets.
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
