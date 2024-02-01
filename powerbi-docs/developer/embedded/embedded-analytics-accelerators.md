@@ -26,7 +26,7 @@ Key advantages of using accelerators include:
 
 * Integration Flexibility: Accelerators can function as standalone applications or be fully integrated with your existing application, as outlined in the [Deployment and integration options table](#deployment-and-integration-options).
 
-[Watch a video describing an overview of embedded solution accelerator partner programs](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics).
+[Watch a video that provides an overview of embedded solution accelerator partner programs](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics).
 
 Different partner accelerators vary in their deployment, acquisition/billing methods, and capabilities.
 The following table briefly describes each of the current partners’ embedded analytics solution accelerators:"
