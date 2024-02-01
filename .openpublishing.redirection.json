@@ -3212,7 +3212,7 @@
         {
             "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
