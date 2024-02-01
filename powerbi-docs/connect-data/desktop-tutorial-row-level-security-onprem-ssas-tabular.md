@@ -97,8 +97,6 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
 Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1400/as-lesson-13-deploy).
 
-
-
 ## Task 3: Add Data Sources within your On-premises data gateway
 
 Once your tabular model is deployed and ready for consumption, you need to add a data source connection to your on-premises Analysis Services tabular server.
