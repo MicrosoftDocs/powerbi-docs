@@ -144,7 +144,8 @@ If you're the dashboard owner, *in the Power BI service* you can create a view o
 
 Read more about [creating a phone view of a dashboard](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
-## Next steps
+## Related content
+
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 * [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)

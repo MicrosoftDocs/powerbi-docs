@@ -599,6 +599,6 @@ The axis along the side, the vertical axis, of a line graph.
 
 ## Z
 
-## Next steps
+## Related content
 
 - [Basic concepts for Power BI service consumer](end-user-basic-concepts.md)

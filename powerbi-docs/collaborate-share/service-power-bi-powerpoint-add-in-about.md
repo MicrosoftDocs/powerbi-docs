@@ -49,7 +49,7 @@ If you're a Power BI administrator, see [Information for Power BI administrators
 * The [add-in side pane options](./service-power-bi-powerpoint-add-in-view-present.md#add-in-side-pane) **Delete**, **Reload**, and **Show as Saved Image** are available only in the PowerPoint desktop application. This is because PowerPoint for the web doesn't support the add-in side menu.
 * **In national/regional clouds, the add-in is supported as an admin managed add-in only**, as the Office add-in store isn't accessible from national/regional clouds. Admins should see [Deploying the add-in in sovereign clouds](./service-power-bi-powerpoint-add-in-admin.md#deploying-the-add-in-in-nationalregional-clouds) for information about how to get and deploy the add-in.
 
-## Next Steps
+## Related content
 
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)
 * [View and present live Power BI data in PowerPoint](./service-power-bi-powerpoint-add-in-view-present.md)

@@ -36,7 +36,7 @@ Power BI imports the sample, and adds a new dashboard, report, and semantic mode
 
 You're now ready to view the samples on your mobile device.
 
-## Next steps
+## Related content
 
 - Complete a quickstart and [explore dashboards and reports in the Power BI mobile apps](mobile-apps-quickstart-view-dashboard-report.md).
 - Questions? Check the [Mobile apps section of the Power BI Community](https://community.fabric.microsoft.com/t5/Mobile-Apps/bd-p/power-bi-mobile).

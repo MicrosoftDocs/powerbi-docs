@@ -73,7 +73,7 @@ When enabled, the app opens links directly on top of the home page, without firs
 
 Interactions can also be configured remotely by an administrator using an MDM tool with an app configuration file. In this way it is possible to standardize the report interaction experience across the organization or for specific groups of users in the organization. For more information, see [Configure interaction using mobile device management](./mobile-app-configuration.md).
 
-## Next steps
+## Related content
 
 - [Interact with reports](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
 - [Configure interaction using mobile device management](./mobile-app-configuration.md)

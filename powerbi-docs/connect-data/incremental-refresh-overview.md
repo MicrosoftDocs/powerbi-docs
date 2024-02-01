@@ -258,7 +258,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Search "Incremental refresh for files" on Bing](https://www.bing.com/search?q=incremental+refresh+for+files)
 - [Search "Keep existing data using incremental refresh" on Bing](https://www.bing.com/search?q=keep+existing+data+using+incremental+refresh)
 
-## Next steps
+## Related content
 
 - [Configure incremental refresh for semantic models](incremental-refresh-configure.md)  
 - [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  

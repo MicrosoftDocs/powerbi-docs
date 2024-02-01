@@ -60,7 +60,7 @@ Follow these steps to share links to reports, dashboards, visuals, and semantic 
 - The **Chat in Teams** button isn't available in visual context menus when a report author sets **More options** to **Off** for the visual.
 - For other issues, see the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article.
 
-## Next steps
+## Related content
 
 - [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 

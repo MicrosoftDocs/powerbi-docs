@@ -105,7 +105,7 @@ The Endorsement dialog is accessed through the settings of the content you want 
 
     ![Screenshot of link to app settings.](media/service-endorse-content/power-bi-app-settings.png)
 
-## Next steps
+## Related content
 
 * [Read more about content endorsement](service-endorsement-overview.md)
 * [Enable content certification](../admin/service-admin-setup-certification.md) (Power BI admins)

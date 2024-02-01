@@ -100,7 +100,7 @@ See [TLS 1.2 for gateway traffic](/data-integration/gateway/service-gateway-comm
 
 See [Restart a gateway](/data-integration/gateway/service-gateway-restart).
 
-## Next steps
+## Related content
 
 - [What is the on-premises data gateway?](service-gateway-onprem.md)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)

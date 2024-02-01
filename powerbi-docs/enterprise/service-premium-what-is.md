@@ -58,19 +58,19 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there are memory limits and other constraints for each SKU listed in the table below.
 
-| SKU | Max memory (GB)<sup>1, 2</sup> | DirectQuery/Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
-| ----- | --- | ------ | -- | ----- | ------ | --------- |
-| F2    |   3 |   2    |  1 |     1 |    300 | 10        |
-| F4    |   3 |   2    |  1 |     2 |    300 | 10        |
-| F8    |   3 |   3.75 |  1 |     5 |    300 | 10        |
-| F16   |   5 |   7.5  |  2 |    10 |    300 | 20        |
-| F32   |  10 |  15    |  5 |    20 |    300 | 40        |
-| F64   |  25 |  30    | 10 |    40 |  1,500 | Unlimited |
-| F128  |  50 |  60    | 10 |    80 |  3,000 | Unlimited |
-| F256  | 100 | 120    | 10 |   160 |  6,000 | Unlimited |
-| F512  | 200 | 240    | 20 |   320 | 12,000 | Unlimited |
-| F1024 | 400 | 480    | 40 |   640 | 24,000 | Unlimited |
-| F2048 | 400 | 960    | 40 | 1,280 | 24,000 | Unlimited |
+| SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQuery connections (per semantic model)<sup>1</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
+| ----- | --- | --- | ------ | -- | ----- | ------ | --------- |
+| F2    |   3 |   5 |   2    |  1 |     1 |    300 | 10        |
+| F4    |   3 |   5 |   2    |  1 |     2 |    300 | 10        |
+| F8    |   3 |  10 |   3.75 |  1 |     5 |    300 | 10        |
+| F16   |   5 |  10 |   7.5  |  2 |    10 |    300 | 20        |
+| F32   |  10 |  10 |  15    |  5 |    20 |    300 | 40        |
+| F64   |  25 |  50 |  30    | 10 |    40 |  1,500 | Unlimited |
+| F128  |  50 |  75 |  60    | 10 |    80 |  3,000 | Unlimited |
+| F256  | 100 | 100 | 120    | 10 |   160 |  6,000 | Unlimited |
+| F512  | 200 | 200 | 240    | 20 |   320 | 12,000 | Unlimited |
+| F1024 | 400 | 200 | 480    | 40 |   640 | 24,000 | Unlimited |
+| F2048 | 400 | 200 | 960    | 40 | 1,280 | 24,000 | Unlimited |
 
 <sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 

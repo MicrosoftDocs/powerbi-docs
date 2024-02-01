@@ -65,7 +65,7 @@ To download and deploy the add-in:
 
 For a summary of the ways the add-in differs when deployed in a national/regional cloud from when it's deployed in a public cloud, see [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md).
 
-## Next Steps
+## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md)

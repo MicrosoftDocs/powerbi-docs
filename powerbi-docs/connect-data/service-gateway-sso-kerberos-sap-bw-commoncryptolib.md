@@ -290,7 +290,7 @@ There are different resolutions, based on the symptoms you see in the data sourc
 **Validation**: When properly completed, you'll be able to create and refresh reports in the Power BI service.
 
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

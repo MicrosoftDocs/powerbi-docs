@@ -128,6 +128,6 @@ The following aren't supported for **Export to PDF**. Either the **PDF** export 
 * All Power BI reports have a page margin when exported to PDF. That is, there is a band of white space at the top and bottom of the exported file. 
 * Export to PDF isn't currently supported for tenants in the China North region. 
 
-## Next steps
+## Related content
 
-[Print a report](../consumer/end-user-print.md).
+* [Print a report](../consumer/end-user-print.md).

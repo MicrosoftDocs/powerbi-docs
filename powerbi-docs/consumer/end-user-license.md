@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 10/27/2023
+ms.date: 01/30/2024
 ms.custom: licensing support
 LocalizationGroup: consumers
 ---
@@ -38,7 +38,7 @@ It's possible to have more than one license at the same time. The service always
 >[!NOTE]
 >
 >* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
->* Only **P SKU**s and **F SKU**s larger than F32 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* Only SKUs equivalent or higher than a **F64 SKU** allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
 
 
 ## Power BI Premium capacity subscription
@@ -134,9 +134,7 @@ The Power BI Pro designer can share and collaborate with other Pro users in eith
 
 - A free user license for the Power BI service is perfect for someone exploring or using it for personal data analysis and visualizations by using **My workspace**. A free standalone user doesn't use Power BI to collaborate with colleagues. Standalone users with free licenses can't view content shared by others or share their own content with other Power BI users.
 
-
-
-## Next steps
+## Related content
 
 - [Am I a Power BI business user?](end-user-consumer.md)  
 - [Learn about workspaces](end-user-workspaces.md)  

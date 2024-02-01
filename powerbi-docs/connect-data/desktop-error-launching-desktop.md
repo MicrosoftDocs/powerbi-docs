@@ -200,6 +200,6 @@ If your issue isn't related to an on-premises data gateway, or if the resolution
 
 Whenever you experience issues with Power BI Desktop, it's helpful to turn on tracing and gather log files. Log files can help isolate and identify the issue. To turn on tracing in Power BI Desktop, choose **File** > **Options and settings** > **Options**, select **Diagnostics**, and then select **Enable tracing**. Power BI Desktop must be running to set this option, but it's helpful for any future issues associated with opening Power BI Desktop.
 
-## Next steps
+## Related content
 
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)

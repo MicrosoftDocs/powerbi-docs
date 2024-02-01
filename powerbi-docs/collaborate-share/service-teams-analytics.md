@@ -74,7 +74,7 @@ You see the most currently available data in Teams. It's not a real-time feed. I
 
 Your recent activity in Microsoft Teams typically takes one-to-two days to be available in reporting provided by Teams. The report created in Power BI is automatically set up to refresh your activity data from Teams to pull in a snapshot of this data once a day.
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams.](service-microsoft-teams-app.md)
 - [Enable remote work in Microsoft Teams with Power BI.](service-collaborate-microsoft-teams.md)

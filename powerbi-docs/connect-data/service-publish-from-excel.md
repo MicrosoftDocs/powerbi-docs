@@ -102,7 +102,7 @@ When publishing is complete, you can go to Power BI directly from Excel.
 
 ![Screenshot that shows going to Power BI from Excel.](media/service-publish-from-excel/power-bi-publish.png)
 
-## Next steps
+## Related content
 
 - [Excel data in Power BI](service-excel-workbook-files.md)  
 - More questions? [Try the Power BI Community.](https://community.powerbi.com/)

@@ -52,6 +52,6 @@ Microsoft *certifies* a limited subset of custom data extensions. While Microsof
 
 In Power BI Desktop, certified third-party connectors appear in the list in the **Get Data** dialog box, along with generic and common connectors. You don't need to adjust security settings to use the certified connectors.
 
-## Next steps
+## Related content
 
 To get a custom connector certified, see [Power Query Connector Certification](/power-query/connectorcertification).
