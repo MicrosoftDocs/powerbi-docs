@@ -8,8 +8,6 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/26/2023
-ms.custom: contperf-fy21q4
-LocalizationGroup: 
 ---
 # Incremental refresh and real-time data for semantic models
 
