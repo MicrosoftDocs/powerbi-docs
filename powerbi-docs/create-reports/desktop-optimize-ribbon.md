@@ -1,7 +1,7 @@
 ---
 title: Optimize ribbon in Power BI Desktop
 description: Describes features of the Optimize ribbon in Power BI Desktop
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi

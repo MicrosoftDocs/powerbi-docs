@@ -1,7 +1,7 @@
 ---
 title: Enhanced refresh with the Power BI REST API 
 description: Learn how to do enhanced semantic model refreshes by using the Power BI Refresh Dataset REST API.
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.service: powerbi
 ms.subservice: pbi-data-sources
