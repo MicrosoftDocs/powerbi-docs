@@ -1,7 +1,7 @@
 ---
 title: Learn how to specify a fixed identity for a Direct Lake semantic model in Power BI and Microsoft Fabric
 description: Describes how to specify a fixed identity for a Direct Lake semantic model in Power BI and Microsoft Fabric.
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
