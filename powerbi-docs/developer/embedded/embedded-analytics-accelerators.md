@@ -7,7 +7,7 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/31/2024
+ms.date: 02/01/2024
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
