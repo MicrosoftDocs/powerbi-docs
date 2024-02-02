@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
+            "redirect_url": "/fabric/data-science/use-ai-samples",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/desktop-directquery-data-sources.md",
             "redirect_url": "/power-bi/connect-data/power-bi-data-sources/",
             "redirect_document_id": false
@@ -3206,8 +3211,8 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/data-science/use-ai-samples",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
@@ -3216,7 +3221,7 @@
         },
         {
             "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
         },
         {
