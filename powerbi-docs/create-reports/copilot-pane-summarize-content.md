@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 02/01/2024
 LocalizationGroup: Create reports
 ---
 
@@ -16,6 +16,8 @@ LocalizationGroup: Create reports
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
 The advantage of summarizing a Power BI report in the Copilot pane is that you don't need to have permission to edit the report. You can just be a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
+
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
@@ -26,7 +28,7 @@ Given a Power BI report page populated with visuals, you might spend anywhere fr
 To get started, select the **Copilot** button in the ribbon in either Power BI Desktop or the Power BI service. In the service, the button is available in both edit mode and view mode.
 
 > [!TIP]
-> If you don't see Copilot, your admins might not have enabled it, or you could be in a workspace that does n't meet the Copilot requirements. 
+> If you don't see Copilot, your admins might not have enabled it, or you could be in a workspace that doesn't meet the Copilot requirements. 
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-button-ribbon.png" alt-text="Screenshot showing select the Copilot button in the ribbon in either Power BI Desktop or the Power BI service." lightbox="media/copilot-pane-summarize-content/copilot-button-ribbon.png":::
 
@@ -42,11 +44,13 @@ Or you can select prompts from the user prompt guide in the sparkle menu in the 
 - Summarize visuals on the page.
 - Create a bulleted list of insights.
 
-:::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing  select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
 
 After you choose a prompt, select **Enter** and watch Copilot generate your summary.
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
+
+Copilot uses Azure Open AI to look at the visuals on the report page, and create a natural language summary using the data in those visuals.  It doesn't take into account other pages or data that's not currently visualized in your current view.
 
 ### References
 
@@ -85,8 +89,6 @@ The Copilot pane also allows you to ask specific questions about your report con
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
 
-copilot-questions-2.png
-
 ### Examples of questions you can ask 
 
 - Which team had the highest sales? 
@@ -104,6 +106,8 @@ copilot-questions-2.png
     - A tenant where the admin setting is enabled.
 - The accuracy of the public preview may be limited.
 - The summary in the Copilot pane can only summarize one report page at a time. It doesn't summarize across the entire report or multiple pages.
+- The Copilot summary pane doesn't return new visuals as data answers.
+
 
 ## Send feedback
 
