@@ -134,7 +134,7 @@ If you own the content or are an administrator of the tenant, you can control wh
 Q: Why is the Copy icon disabled on a visual?   
 A: The content owner and admin can turn off this feature.    
 
-Q: Which visuals are not fully supported for copying and pasting?    
+Q: Which visuals aren't fully supported for copying and pasting?    
 A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
 
 - ESRI and other map visuals. 
@@ -143,7 +143,7 @@ A: We currently support native Power BI visuals and certified custom visuals. Th
 - Power Apps visuals. 
 - Slicer visuals and visuals that use *Filter APIs* which act as slicers. Learn more about [visual filter APIs](../developer/visuals/filter-api.md).
 - [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
-- Custom visuals that are not certified. See [how to certify your custom visual.](../developer/visuals/power-bi-custom-visuals-certified.md) 
+- Custom visuals that aren't certified. See [how to certify your custom visual.](../developer/visuals/power-bi-custom-visuals-certified.md) 
 - [AppSource visuals that are managed in your organizational store.](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
 - Visuals with applied themes and colors.
 - Freshly pinned dashboard tiles.
