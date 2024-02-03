@@ -29,11 +29,11 @@ The Power BI service and Power BI Desktop send Bing the geo data it needs to cre
 
 * Filled maps require a field in the **Location** bucket; even if latitude and longitude are provided. Whatever data is in the **Location**, **Latitude**, or **Longitude** bucket is sent to Bing.
   
-    In the following example, the field **PostalCode** is being used for geo-coding, so the values in the PostalCode column are sent to Bing. Data from the **Size** bucket is not sent to Bing.
+    In the following example, the field **PostalCode** is being used for geo-coding, so the values in the PostalCode column are sent to Bing. Data from the **Size** bucket isn't sent to Bing.
   
     :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png" alt-text="Screenshot of data sent to Bing Maps.":::
   
-    In this second example, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Legend** bucket (and the **Color saturation** bucket when you use a Shape Map in Power BI Desktop) is not sent to Bing.
+    In this second example, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Legend** bucket (and the **Color saturation** bucket when you use a Shape Map in Power BI Desktop) isn't sent to Bing.
   
     :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png" alt-text="Screenshot of filled maps and Bing.":::
 
@@ -47,7 +47,7 @@ In Power BI Desktop, you can ensure fields are correctly geo-coded by setting th
 
   :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-data-category.png" alt-text="Screenshot of data category.":::
 
-These data categories help Bing correctly encode the data. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md). If you are live connecting to SQL Server Analysis Services, you need to set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
+These data categories help Bing correctly encode the data. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md). If you're connecting to SQL Server Analysis Services using a live connection, set the data categorization outside of Power BI using [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 ### 2. Use more than one location column
 
@@ -76,7 +76,7 @@ While we encourage you to use geo-hierarchies in your maps, if you must use a si
 
 **1. Use latitude and longitude fields (if they exist)**
 
-In Power BI, if the semantic model you are using has fields for longitude and latitude--use them! Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area. And do the same for your longitude data. When you add this data, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
+In Power BI, if the semantic model you're using has fields for longitude and latitude--use them. Power BI has special buckets to help make the map data unambiguous. Just drag the field that contains your latitude data into the **Visualizations > Latitude** area. And do the same for your longitude data. When you add this data, you also need to fill the *Location* field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level.
 
 ![Screenshot of latitude and longitude.](./media/power-bi-map-tips-and-tricks/power-bi-latitude.png) 
 
@@ -86,13 +86,13 @@ When your semantic model already has different levels of location data, you and 
 
   :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png" alt-text="Screenshot of location field.":::
 
-When drilling with geo-hierarchies, it is important to know how each drill button works and what gets sent to Bing Maps. 
+When drilling with geo-hierarchies, it's important to know how each drill button works and what gets sent to Bing Maps. 
 
 :::image type="content" source="./media/power-bi-map-tips-and-tricks/power-bi-geo-hierarchy.png" alt-text="Screenshot of drill options on a map with a geo hierarchy.":::
 
-* The Drill Mode button :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down.png":::, allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn on the drill-down option and select North America, you move down in the hierarchy to the next level--states in North America. For geo-coding, Power BI sends Bing Maps country/region and state data for North America only.  
-* The hierarcy drill button :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png":::, drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries/regions and then use this option to move to the next level, states, Power BI displays state data for all countries/regions. For geo-coding, Power BI sends Bing Maps state data (no country/region data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
-* The Expand all button :::image type="icon" source="./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png":::, is similar to the drill-down option, except that you don't need to click on the map. It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries/regions and select this icon, you move down in the hierarchy to the next level--states. For geo-coding, Power BI sends data for each state and its corresponding country/region to help Bing Maps geocode more accurately. In most maps, you use either this option or the drill down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
+* The Drill Mode button :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down.png"::: allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn on the drill-down option and select North America, you move down in the hierarchy to the next level--states in North America. For geo-coding, Power BI sends Bing Maps country/region and state data for North America only.  
+* The hierarcy drill button :::image type="icon" source="media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png"::: drills to the next level of the hierarchy for all locations at once. For example, if you're currently looking at countries/regions and then use this option to move to the next level, states, Power BI displays state data for all countries/regions. For geo-coding, Power BI sends Bing Maps state data (no country/region data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
+* The Expand all button :::image type="icon" source="./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png":::, is similar to the drill-down option, except that you don't need to click on the map. It expands down to the next level of the hierarchy remembering the current level's context. For example, if you're currently looking at countries/regions and select this icon, you move down in the hierarchy to the next level--states. For geo-coding, Power BI sends data for each state and its corresponding country/region to help Bing Maps geocode more accurately. In most maps, you use either this option or the drill-down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## Related content
 
