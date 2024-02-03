@@ -1,6 +1,6 @@
 ---
 title: View a report
-description: This topic shows Power BI business users and end users how to open and view a Power BI report from a dashboard, an app, or a report that was shared with you.
+description: This topic shows Power BI business users and end users a variety of ways to open and view a Power BI report.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
@@ -16,11 +16,11 @@ ms.date: 01/29/2024
 
 A Power BI report is one or more pages of organized visuals. All Power BI users can create and edit their own reports. However, opening reports created by others requires a paid license (Power BI Pro or Premium Per User) or special access to a [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). 
 
-This article will teach you how to open reports that have been shared with you. The most common scenarios are covered. The first scenario is when a Power BI designer creates a report and [shares it directly](../collaborate-share/end-user-shared-with-me.md). The second scenario is when a designer shares a report as part of an [app](end-user-apps.md). 
+This article teaches you how to open reports that are shared with you. The most common scenarios are covered. The first scenario is when a Power BI designer creates a report and [shares it directly](../collaborate-share/end-user-shared-with-me.md). The second scenario is when a designer shares a report as part of an [app](end-user-apps.md). 
 
 For more information about sharing reports, see [Licenses and subscriptions for business users](end-user-license.md).
 
-## Open a report that was shared with you
+## Open a report that is shared with you
 
 Power BI designers share reports with you by sending an email link or by adding the report to your Power BI content. These reports are located under **Shared** in the **Browse** tab.
 
@@ -50,7 +50,7 @@ Power BI designers share reports with you by sending an email link or by adding 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-more-options.png" alt-text="Screenshot showing the More options ellipses selected.":::
 
-1. Explore the action bar at the top of your report. From the **File** menu, you can make copies and print. If you have permissions, **Export** your report to PowerPoint or **Share** your report with colleagues. Select **Get insights** and Power BI will search for and display interesting information from the report data. All of the features available from the action bar are explained in separate Power BI articles.
+1. Explore the action bar at the top of your report. From the **File** menu, you can make copies and print. If you have permissions, **Export** your report to PowerPoint or **Share** your report with colleagues. Select **Get insights** and Power BI searchs for and displays interesting information from the report data. All of the features available from the action bar are explained in separate Power BI articles.
 
 1. Change the size and display of your report. To adjust the report display size, use the slider in the bottom right. To select display options from a menu, open the **View** menu and choose a display option. Your choices are **Full screen**, **Actual size**, **Fit to page**, and **Fit to width**. Notice the difference that each display options makes.
 
@@ -88,7 +88,7 @@ Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a t
 
     :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
-2. The associated report opens to the *YTD Category Trend Analysis* page because this is the report page where the chart is located.
+2. The associated report opens to the *YTD Category Trend Analysis* page. The is the source page for the column chart tile.
 
     :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 
@@ -99,7 +99,7 @@ Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a t
 
 ## More ways to open a report
 
-As you get more comfortable navigating the Power BI service, you'll figure out workflows that are best for you. A few other ways to access reports:
+As you get more comfortable navigating the Power BI service, you figure out workflows that are best for you. A few other ways to access reports:
 
 - Using [the related content pane.](end-user-related.md)
 - In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md) or you create or receive a [subscription.](../collaborate-share/end-user-subscribe.md)
