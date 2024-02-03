@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 07/14/2022
+ms.date: 01/28/2024
 ms.custom: pbibetadocbug, sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---

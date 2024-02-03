@@ -8,7 +8,7 @@ ms.custom: video-ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 01/29/2024
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for Power BI map visualizations
