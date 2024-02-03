@@ -44,7 +44,7 @@ Power BI designers share reports with you by sending an email link or by adding 
 
 1. Hover over a visual to show the actions you can perform. For this treemap, we see pin, copy, filter, display the visual at full size, and an ellipses (...). 
 
-    :::image type="content" source="./media/end-user-report-open/power-bi-visual-menu.png" alt-text="Screenshot showing the Power BI service with Filters expanded.":::
+    :::image type="content" source="./media/end-user-report-open/power-bi-visual-menu.png" alt-text="Screenshot showing the Power BI service with View options expanded.":::
 
     Select the ellipses (...) to see more options. 
 
