@@ -1,8 +1,8 @@
 ---
-title: Power BI Desktop project dataset folder
-description: Learn about the Power BI Desktop project dataset folder.
-author: kfollis
-ms.author: owend
+title: Power BI Desktop project semantic model folder
+description: Learn about the Power BI Desktop project semantic model folder.
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/14/2024
 ---
 
-# Power BI Desktop project dataset folder
+# Power BI Desktop project semantic model folder
 
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Dataset** folder. The files and subfolders here represent a Power BI dataset. Depending on your project, the dataset folder can include:
+This article describes the files and subfolders in a Microsoft Power BI Desktop project's **Semantic Model** folder. The files and subfolders here represent a Power BI semantic model. Depending on your project, the semantic model folder can include:
 
 - .pbi\
   - [localSettings.json](#pbilocalsettingsjson)
@@ -33,19 +33,19 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 <a name="required2">2</a> - This file is required when saving using TMSL format.  
 <a name="required3">3</a> - This file is required when saving using TMDL format.  
 
-Not every project dataset folder includes all of the files and subfolders described here.
+Not every project semantic model folder includes all of the files and subfolders described here.
 
-## Dataset files
+## Semantic Model files
 
 #### .pbi\localSettings.json
 
-Contains dataset settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
+Contains semantic model settings that apply only for the current user and computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
 For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/localSettings.md).
 
 #### .pbi\editorSettings.json
 
-Contains dataset editor settings saved as part of the dataset definition for use across users and environments.
+Contains semantic model editor settings saved as part of the semantic model definition for use across users and environments.
 
 For more information, see the [editorSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/editorSettings.md).
 
@@ -67,15 +67,16 @@ When you select **Apply later**, the unapplied changes are saved into the unappl
 
 If you select **Apply changes**, Power BI Desktop overwrites the queries in model.bim with the queries from unappliedChanges.json. If you edited queries in model.bim outside of Power BI Desktop and there's a previous unappliedChanges.json file, your changes are lost and replaced by the queries in unappliedChanges.json when those changes are applied.
 
-The unappliedChanges.json file is automatically incorporated into the dataset definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you can exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
+The unappliedChanges.json file is automatically incorporated into the semantic model definition and saved in Git by default. This allows you to commit your ongoing work to the development branch, serving as a backup and making it accessible to other team members. However, you can exclude this file from Git's tracking, preventing unfinished query work from affecting other developers.
 
 For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
 #### definition.pbidataset
 
-Contains the overall definition of a dataset and core settings.
+Contains the overall definition of a semantic model and core settings.
 
 For more information, see the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+
 
 #### model.bim
 
@@ -88,7 +89,7 @@ This file contains a [Tabular Model Definition Language (TMDL)](/analysis-servic
 
 #### diagramLayout.json
 
-Contains diagram metadata that defines the structure of the dataset associated with the report. During **PREVIEW**, this file doesn't support external editing.  
+Contains diagram metadata that defines the structure of the semantic model associated with the report. During **PREVIEW**, this file doesn't support external editing.  
 
 #### item.config.json
 

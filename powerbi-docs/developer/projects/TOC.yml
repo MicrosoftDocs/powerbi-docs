@@ -11,8 +11,6 @@
       href: projects-dataset.md
     - name: "Project report folder"
       href: projects-report.md
-    - name: "Power BI Desktop project using TMDL"
-      href: projects-tmdl-folder.md
     - name: "Git integration"
       href: projects-git.md
     - name: "Azure DevOps integration"
