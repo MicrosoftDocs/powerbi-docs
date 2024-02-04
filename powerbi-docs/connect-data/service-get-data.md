@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 01/31/2024
 LocalizationGroup: Get started
 ---
 
@@ -57,9 +57,9 @@ To import files:
 
 When you import Excel or CSV files or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
-You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive for Business or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace. 
+You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace. 
 
-To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive for Business:
+To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive:
 
 :::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the Upload list."::: 
 
@@ -85,7 +85,7 @@ For more information, see:
 - [Azure SQL Database with DirectQuery](service-azure-sql-database-with-direct-connect.md)
 - [Azure Synapse Analytics with DirectQuery](service-azure-sql-data-warehouse-with-direct-connect.md)
 
-You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for a variety of other databases. You can then import the file into Power BI where a semantic model exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the semantic model. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for various other databases. You can then import the file into Power BI where a semantic model exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the semantic model. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 ### Other data sources
 
@@ -141,7 +141,13 @@ Data sources for the Power BI service have the following limitations. Other limi
 
 - **Data source user limit**. The maximum number of data sources allowed per user is 1,000. This limit applies only to the Power BI service.
 
-## Next steps
+- **Single Sign On (SSO) considerations**. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user. SSO can be enabled for each source connection that supports SSO (not all connection types support SSO), and each SSO connection might require configuring a gateway or VNET for certain types of sources. You can read more about enabling SSO for gateways in the [SSO for data gateways](service-gateway-sso-overview.md) article. 
+ 
+    Querying the SSO-enabled DirectQuery model using a Service Principal (SPN) isn't supported, since the SPN credential can't be passed through to the DirectQuery source. Instead, use a User Principal (UPN) to execute such queries against the SSO-enabled DirectQuery semantic model. 
+ 
+
+
+## Related content
 
 - [Connect to services you use with Power BI](service-connect-to-services.md)
 - [Get data from files for Power BI](service-get-data-from-files.md)

@@ -15,7 +15,7 @@ LocalizationGroup: Data refresh
 
 Power BI enables you to go from data to insight to action quickly, yet you must make sure the data in your Power BI reports and dashboards is recent. Knowing how to refresh the data is often critical in delivering accurate results.
 
-This article describes the data refresh features of Power BI and their dependencies at a conceptual level. It also provides best practices and tips to avoid common refresh issues. The content lays a foundation to help you understand how data refresh works. For targeted step-by-step instructions to configure data refresh, refer to the tutorials and how-to guides listed in the Next steps section at the end of this article.
+This article describes the data refresh features of Power BI and their dependencies at a conceptual level. It also provides best practices and tips to avoid common refresh issues. The content lays a foundation to help you understand how data refresh works. For targeted step-by-step instructions to configure data refresh, refer to the tutorials and how-to guides listed in the Related content section at the end of this article.
 
 ## Understanding data refresh
 
@@ -424,11 +424,10 @@ In addition, consider the following recommendations to establish and maintain re
 - Use separate data gateways for Import semantic models and DirectQuery/LiveConnect semantic models so that the data imports during scheduled refresh don't impact the performance of reports and dashboards on top of DirectQuery/LiveConnect semantic models, which query the data sources with each user interaction.
 - Ensure that Power BI can send refresh failure notifications to your mailbox. Spam filters might block the email messages or move them into a separate folder where you might not notice them immediately.
 
+## Related content
 
-## Next steps
-
-[Configuring scheduled refresh](refresh-scheduled-refresh.md)  
-[Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
-[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
+- [Configuring scheduled refresh](refresh-scheduled-refresh.md)  
+- [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
+- [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

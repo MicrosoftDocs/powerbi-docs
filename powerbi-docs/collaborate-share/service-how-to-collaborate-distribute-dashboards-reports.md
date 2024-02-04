@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 12/31/2023
-ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
@@ -182,8 +181,7 @@ Read more about [creating and using shared semantic models](../connect-data/serv
 
 - You can't share reports from Power BI Report Server. Instead, you can create [subscriptions for yourself or others](/sql/reporting-services/working-with-subscriptions-web-portal).
 
-
-## Next steps
+## Related content
 
 - [Share dashboards with coworkers and others](service-share-dashboards.md)
 - [Create and publish an app in Power BI](service-create-distribute-apps.md)

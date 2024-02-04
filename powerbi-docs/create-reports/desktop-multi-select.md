@@ -82,7 +82,7 @@ There are a few considerations and limitations for multi-selecting data points w
 * Line, area, scatter chart, treemap, and maps support lasso select.
 * The maximum number of data points you can select at once is 3,500.
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

@@ -92,9 +92,9 @@ After that, you can begin creating data models or reports, and share them with o
 The following list provides the minimum requirements to run Power BI Desktop:
 
 > [!IMPORTANT]
-> Power BI Desktop is no longer supported on Windows 7.
+> Power BI Desktop is no longer supported on Windows 8.1.
 
-* Windows 8.1 or Windows Server 2012 R2 or later.
+* Windows 10 or Windows Server 2016 or later.
 * .NET 4.7.2 or later.
 * Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.

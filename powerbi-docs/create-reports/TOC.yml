@@ -396,8 +396,6 @@
       href: ../connect-data/service-tutorial-use-cognitive-services.md
     - name: Build a machine learning model
       href: ../connect-data/service-tutorial-build-machine-learning-model.md
-    - name: Consume a machine learning model in a report
-      href: ../connect-data/service-aml-integrate.md
     - name: Use Machine Learning and Cognitive Services with dataflows
       href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
     - name: Anomaly detection

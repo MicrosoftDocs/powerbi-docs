@@ -1,7 +1,7 @@
 ---
 title: DirectQuery optimization scenarios with the Optimize ribbon in Power BI Desktop
 description: This articles describes DirectQuery reporting scenarios by using the Optimize ribbon in Power BI Desktop
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi

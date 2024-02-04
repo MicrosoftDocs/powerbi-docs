@@ -440,8 +440,8 @@ Follow these steps to delete the semantic model and then create a fresh data ref
 
 3. Start over and [create a fresh usage metrics report](#create-and-view-a-new-usage-metrics-report).
 
-## Next steps
+## Related content
 
-[Administering Power BI in the admin portal](../admin/service-admin-portal.md)
+- [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -279,7 +279,7 @@ There are some considerations and limitations when you use dynamic M query param
 - Is blank
 - Is not blank
 
-## Next steps
+## Related content
 
 For more information about Power BI Desktop capabilities, check out the following resources:
 

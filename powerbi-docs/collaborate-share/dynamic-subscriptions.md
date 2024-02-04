@@ -144,7 +144,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter).  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
 
-## Next steps
+## Related content
 
-[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
-[Search for and sort content](../consumer/end-user-search-sort.md).
+- [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
+- [Search for and sort content](../consumer/end-user-search-sort.md).

@@ -538,7 +538,7 @@ The URL must point to the SharePoint site itself, not to a list within the site.
 }
 ```
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

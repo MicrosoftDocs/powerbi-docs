@@ -75,10 +75,8 @@ If granular access control isn't enforced at the tenant level, workspace admins 
 
 By default, granular access control is disabled at all three levels, enabling individual artifact owners to enforce granular access control for each data connection type selectively. However, it's likely more efficient to enable granular access control on a workspace-by-workspace basis.
 
-
-
-## Next steps
+## Related content
 
 For important information about shareable cloud connections, including limitations and considerations, read the following article:
 
-[Connect to cloud data sources in the Power BI service (Preview)](service-connect-cloud-data-sources.md)
+- [Connect to cloud data sources in the Power BI service (Preview)](service-connect-cloud-data-sources.md)

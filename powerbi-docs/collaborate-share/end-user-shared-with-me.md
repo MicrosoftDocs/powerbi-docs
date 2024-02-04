@@ -67,7 +67,7 @@ For more information, see [Apps in Power BI](../consumer/end-user-apps.md).
 
 One way that *creators* can share with you is by granting you a [role](service-roles-new-workspaces.md) in a workspace. What you can do with the content in that workspace depends on the role assigned to you: Viewer, Contributor, Member, Admin.
 
-## Next steps
+## Related content
 
 - [Ways to collaborate and share reports and dashboards in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md#share-reports-or-dashboards)
 - [Introduction to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md)

@@ -3,12 +3,10 @@ title: Apply conditional table formatting in Power BI
 description: Apply customized formatting to tables and matrixes in Power BI.
 author: davidiseminger
 ms.author: davidi
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/24/2023
-ms.custom: contperf-fy21q4
 LocalizationGroup: Create reports
 ---
 # Apply conditional formatting in tables and matrixes
@@ -209,6 +207,6 @@ There are a few considerations to keep in mind when working with conditional tab
 - Conditional formatting needs an aggregation or measure to be applied to the value. That's why you see 'First' or 'Last' in the **Color by value** example. If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner has built a measure that provides the value.
 - When printing a report including data bars and background color, you must enable *Background graphics* in the print settings of the browser for the data bars and background colors to print properly.
 
-## Next steps
+## Related content
 
 For more information about color formatting, see [Tips and tricks for color formatting in Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)

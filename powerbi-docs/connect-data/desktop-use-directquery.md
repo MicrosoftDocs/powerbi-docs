@@ -124,7 +124,7 @@ Some other limitations of using DirectQuery include:
 
   :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-after.png" alt-text="Screenshot that shows setting a filter to is on or after 12/31/9999 to return rows that contain 12/31/9999.":::
 -->
-## Next steps
+## Related content
 
 - [DirectQuery in Power BI](desktop-directquery-about.md)
 - [Data sources supported by DirectQuery](power-bi-data-sources.md)

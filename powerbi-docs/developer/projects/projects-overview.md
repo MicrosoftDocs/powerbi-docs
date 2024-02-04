@@ -1,7 +1,7 @@
 ---
 title: Power BI Desktop projects (PBIP)
 description: Learn how to save and edit a Power BI Desktop project.
-author: minewiskan
+author: kfollis
 ms.author: owend
 ms.reviewer: ruiromano
 ms.service: powerbi
@@ -176,6 +176,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
+- Power BI Projects currently not supported in Microsoft Power BI Desktop (Optimized for Power BI Report Server).
 
 ## Frequently asked questions
 

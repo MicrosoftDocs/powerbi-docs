@@ -68,7 +68,7 @@ From here, you can take direct action on the related content. For example, selec
 - To open related content for a report, you need to be in [Reading view](end-user-reading-view.md#reading-view).
 - The related content feature doesn't work for streaming datasets.
 
-## Next steps
+## Related content
 
 - [Tutorial: Get started creating in the Power BI service](../fundamentals/service-get-started.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
