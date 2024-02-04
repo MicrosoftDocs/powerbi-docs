@@ -156,7 +156,7 @@ Schema details for the following files aren't documented. During **preview**, ch
 - Dataset\
   - [diagramLayout.json](projects-dataset.md#diagramlayoutjson)
 
-### Model authoring using external tools
+### Model authoring
 
 You can make changes to the semantic model definition by using external tools in two ways:
 
