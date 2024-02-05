@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 Power BI provides many different ways to customize your reports. This article details a collection of tips that can make your Power BI visualizations more compelling, interesting, and customized to your needs.
 
-The following tips are provided. Have another great tip? Great! Send it our way.
+The following tips are provided. Have another great tip? Great. Send it our way.
 
 * Apply a theme to the entire report
 * Change the color of a single data point
@@ -51,11 +51,11 @@ When the **Filters** and **Visualizations** panes appear along the right side of
 
 ## Apply a theme
 
-In Power BI Desktop, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes](../create-reports/desktop-report-themes.md)
+In Power BI Desktop, you can apply design changes to your entire report. With themes you can use corporate colors, change icon sets, or apply new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes.](../create-reports/desktop-report-themes.md)
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-themes.png" alt-text="Screenshot of theme options under the View menu.":::
 
-Here, the **Innovate** theme has been applied to the report.
+Here, the **Innovate** theme is applied to the report.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-theme-innovate.png" alt-text="Screenshot of the Innovate theme applied to a report.":::
 
@@ -98,13 +98,13 @@ Or, perhaps you want a different color for each category.
 Notice that the legend colors match the data colors. Legend colors aren't set separately, but inherit the colors set for the **Data colors**. 
 
 > [!NOTE]
-> There are certain circumstances where Power BI will change the legend (and data) colors. One example is when your visual is created using streaming data, a new month begins, and a new category is introduced into your visual. Let's say that you've set the data colors for all five categories in the line chart above. And now it's Jan-13 and another manufacturer has entered the market. Because you did not set a data color for that new manufacturer, you may find that Power BI has changed the data colors for the original five manufacturers. When a new category is introduced, you may have to reassign data colors to the new and existing categories using the **Formatting > Data colors** pane.  
+> There are certain circumstances where Power BI will change the legend (and data) colors. One example is when your visual is created using streaming data, a new month begins, and a new category is introduced into your visual. Let's say that you've set the data colors for all five categories in the line chart. And now it's Jan-13 and another manufacturer has entered the market. Because you did not set a data color for that new manufacturer, you may find that Power BI has changed the data colors for the original five manufacturers. When a new category is introduced, you may have to reassign data colors to the new and existing categories using the **Formatting > Data colors** pane.  
 
 There are all sorts of things you can do with colors. In the next section, we take a look at conditional formatting.
 
-## Conditional formatting for visualizations
+## Add conditional formatting for visuals
 
-Visualizations often benefit from dynamically setting color based on the numeric value of a field. You can show a different value than what’s used for the size of a bar, and show two values on a single graph. Or you can highlight data points over (or under) a certain value&mdash;perhaps highlighting areas of low profitability.
+Visualizations often benefit from dynamically setting color based on the numeric value of a field. You can show a different value for the size of a bar, and show two values on a single graph. Or you can highlight data points over (or under) a certain value&mdash;perhaps highlighting areas of low profitability.
 
 The following sections demonstrate different ways to base color on a numeric value.
 
@@ -114,7 +114,7 @@ To change color based on a value, select a visualization to make it active. Open
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional.png" alt-text="Screenshot of Colors card under Columns.":::
 
-In the **Default color** dialog box, use the dropdowns to identify the fields to use for conditional formatting. In this example, we're applying a gradient and we've selected the **Count of Product** field and selected light blue for the **Lowest value** and dark blue for **Highest value**. 
+In the **Default color** dialog box, use the dropdowns to identify the fields to use for conditional formatting. In this example, we apply a gradient and select the **Count of Product** field. Then we select light blue for the **Lowest value** and dark blue for **Highest value**. 
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting-new.png" alt-text="Screenshot of the Default color pane.":::
 
@@ -124,7 +124,7 @@ You can also format the color of the visual using a field that isn't part of the
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png" alt-text="Screenshot of Column chart with multiple shades of blue.":::
 
-As you can see, we've sold more units of **Productivity**, **Convenience**, and **Extreme** (their columns are higher). However, **Moderation** has a larger **% Units Market Share SPLY** (its column has more color saturation).
+As you can see, we sold more units of **Productivity**, **Convenience**, and **Extreme** (their columns are higher). However, **Moderation** has a larger **% Units Market Share SPLY** (its column has more color saturation).
 
 ### Customize the colors used in the color scale
 
@@ -160,17 +160,17 @@ Tables and matrixes offer many options for color formatting.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-table.png" alt-text="Screenshot shows a table with alternating white and gray rows.":::
 
-One of the quickest ways to apply color to a table or matrix is to open the Format pane and select **Style presets**. In the image below, we've selected **Bold header flashy rows**.
+One of the quickest ways to apply color to a table or matrix is to open the Format pane and select **Style presets**. Here we select **Bold header flashy rows**.
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png" alt-text="Screenshot shows the style option of Bold header flashy rows, which makes the header row black and the other rows light and dark green.":::
 
-Experiment with other color formatting options. In this image, we've changed the background color under **Column headers** and changed both the **Background color** and **Alternate background color** for the **Values** (rows).
+Experiment with other color formatting options. In this image, we change the background color under **Column headers** and change both the **Background color** and **Alternate background color** for the **Values** (rows).
 
 :::image type="content" source="media/service-tips-and-tricks-for-color-formatting/power-bi-value-colors.png" alt-text="Screenshot shows value selectors for Background color and Alternate background color.":::
 
-## How to undo in Power BI
+## Undo in Power BI
 
-Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back!
+Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back.
 
 To **undo** your last action, or the last few actions, all you have to do is type CTRL+Z.
 
@@ -180,7 +180,7 @@ To discard all the changes you make on a Formatting card, select **Reset to defa
 
 ## Give us your feedback
 
-Do you have a tip you’d like to share? Send it our way, and we’ll see about including it here.
+Do you have a tip you’d like to share? Send it our way.
 
 ## Related content
 
