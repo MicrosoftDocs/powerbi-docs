@@ -2,7 +2,7 @@
 title: Power BI Desktop projects (PBIP)
 description: Learn how to save and edit a Power BI Desktop project.
 author: kfollis
-ms.author: owend
+ms.author: kfollis
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
