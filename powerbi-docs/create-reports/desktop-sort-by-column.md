@@ -7,7 +7,6 @@ ms.reviewer: 'sunaraya'
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.custom: contperf-fy21q4
 ms.date: 11/11/2022
 LocalizationGroup: Create reports
 ---

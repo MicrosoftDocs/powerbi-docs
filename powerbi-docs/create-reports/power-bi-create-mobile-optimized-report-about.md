@@ -3,8 +3,6 @@ title: About mobile-optimized Power BI reports
 description: Learn how to create, format, and show Power BI report views that are optimized for mobile device users.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: ''
-ms.custom: contperf-fy22q3
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual

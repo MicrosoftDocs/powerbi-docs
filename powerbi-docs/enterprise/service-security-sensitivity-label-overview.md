@@ -1,4 +1,4 @@
-﻿---
+---
 title: Sensitivity labels from Microsoft Purview Information Protection in Power BI
 description: Learn how sensitivity labels from Microsoft Purview Information Protection work in Power BI
 author: paulinbar
@@ -7,7 +7,6 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.custom: contperf-fy22q3
 ms.date: 11/26/2023
 LocalizationGroup: Data from files
 ---
