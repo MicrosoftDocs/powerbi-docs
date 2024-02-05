@@ -43,7 +43,7 @@ As you explore and interact with your content by filtering, slicing, subscribing
 
 ## Save your changes or revert to the default settings
 
-Your changes won't affect underlying data, but that doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view of the report, select the **Reset** icon.
+Your changes don't affect underlying data, but that doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view of the report, select the **Reset** icon.
 
 :::image type="content" source="./media/end-user-reports/power-bi-reset.png" alt-text="Screenshot of the Revert to default icon.":::
 
@@ -57,7 +57,7 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 | **Data sources** | One or more report or semantic model per dashboard |A single semantic model per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
 | **Can see underlying semantic model tables and fields** |No. Can export data but can't see the semantic model tables and fields in the dashboard itself |Yes. Can see semantic model tables and fields and values that you have permissions to see |
-| **Customization** | No  | Yes, depending on your permissions you can cross-filter, change visual type, apply design features, add bookmarks and comments, generate QR codes, analyze in Excel and much more |
+| **Customization** | No  | Yes, depending on your permissions you can cross-filter, change visual type, apply design features, add bookmarks and comments, generate QR codes, analyze in Excel, and much more |
 | **Pinning** |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) and entire report pages to any of your dashboards |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
@@ -65,15 +65,15 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 
 ## Related content
 
-Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports.
+Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports.
 
-Or you may be a *business user*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
+Or you might be a *business user*, someone who receives reports from others. You want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md), so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to business users](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of a [sample](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Explore [Dashboards in the Power BI service](end-user-dashboards.md).  
-* To see which semantic model the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
+* See which semantic model the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
 > If you didn't find what you're looking for here, use the table of contents on this page to browse more articles. 
