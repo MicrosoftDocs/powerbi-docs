@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with reports
 ms.topic: how-to
-ms.date: 12/02/2022
+ms.date: 02/06/2024
 LocalizationGroup: Reports
 ---
 
@@ -20,13 +20,13 @@ A Power BI report is a multi-perspective view into a semantic model, with visual
 
 ## The parts of a report
 
-:::image type="content" source="./media/end-user-reports/power-bi-report.png" alt-text="Screenshot showing the Sales and Marketing Sample report page." lightbox="./media/end-user-reports/power-bi-report.png#lightbox":::
+:::image type="content" source="./media/end-user-reports/power-bi-numbered-report.png" alt-text="Screenshot showing the Sales and Marketing Sample report page." lightbox="./media/end-user-reports/power-bi-report.png#lightbox":::
 
-A. This report has four pages (or tabs). The example shows the **Sentiment** page.  
+A. This report has six pages (or tabs). The example shows the **Sentiment** page.  
 B. This page has five visuals and a page title.  
-C. The **Filters** pane shows any applied filters. To collapse the **Filters** pane, select the arrow (**>**).  
-D. The Power BI banner shows the name of the report and the last updated date. Select the arrow to open a menu that shows the name of the report owner.  
-E. The action bar contains actions to take on this report. For example, you can add a comment, view a bookmark, or export data from the report. Select **More options** (...) to see a list of report functions.
+C. The **Filters** pane shows all applied filters. To collapse the **Filters** pane, select the arrow (**>**).  
+D. The Power BI banner shows the title of the report and the sensitivity label. Select the title to open a menu that shows the report location, date it was last updated, and contact information for the report creator.  
+E. The action bar contains links to numerous actions you can take on this report. Some actions require extra permissions. For example, based on your permissions you may be able to edit, subscribe, and share the report. All users can add a comment, view a bookmark, or add comments to the report. Select **More options** (...) to see the full list of report actions.
 
 If you're new to Power BI, read [Basic concepts for the Power BI service business users](end-user-basic-concepts.md) to get a good foundation. You can view, share, and annotate reports on mobile devices. For more information, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -49,19 +49,19 @@ Your changes won't affect underlying data, but that doesn't mean you can't save 
 
 ## Dashboards versus reports
 
-[Dashboards](end-user-dashboards.md) can be confused with reports because they're both canvases filled with visualizations, but there are major differences. The following table shows an overview of the different capabilities of dashboards and reports:
+[Dashboards](end-user-dashboards.md) can be confused with reports because they're both canvases filled with visualizations. But there are major differences. The following table shows an overview of the different capabilities of dashboards and reports:
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
 | **Pages** | One page | One or more pages |
 | **Data sources** | One or more report or semantic model per dashboard |A single semantic model per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
-| **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
 | **Can see underlying semantic model tables and fields** |No. Can export data but can't see the semantic model tables and fields in the dashboard itself |Yes. Can see semantic model tables and fields and values that you have permissions to see |
-| **Customization** | No  | Yes, you can filter, export, view related content, add bookmarks, generate QR codes, and analyze in Excel |
+| **Customization** | No  | Yes, depending on your permissions you can cross-filter, change visual type, apply design features, add bookmarks and comments, generate QR codes, analyze in Excel and much more |
+| **Pinning** |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) and entire report pages to any of your dashboards |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
-| Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
+ -->
 
 ## Related content
 
