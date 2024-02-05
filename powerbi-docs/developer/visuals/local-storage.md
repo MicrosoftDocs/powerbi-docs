@@ -12,16 +12,12 @@ ms.date: 01/30/2024
 
 # Local Storage API
 
-With the local storage API, you can store data directly in the browser's local storage. To use the local storage API, the customer's [local storage admin switch](/fabric/admin/organizational-visuals#local-storage) has to be enabled.
+With the local storage API, you can store data in the browser's local storage. To use the local storage API, the customer's [local storage admin switch](/fabric/admin/organizational-visuals#local-storage) has to be enabled.
 
 Local storage is isolated so that each type of visual has its own separate storage access.
 
 > [!NOTE]
-> It's the developer's responsibility to take the following steps to keep the customer's data secure:
->
-> * Make sure the stored data conforms to the customer's organizational policies.
-> * Make sure consumers are aware of what information you store in the browser local storage, if the sensitivity of the data requires it.
-> * Apply encryption if business goal or scenario requires it.
+> It’s developer’s responsibility to ensure that the stored data conforms to the consumer’s organizational policies, and to inform users about what information is stored, if the sensitivity of the data requires it. In particular, custom visual developers should encrypt the data if business goals or scenarios expect it.
 
 ## How to use local storage
 
