@@ -26,13 +26,13 @@ A. This report has six pages (or tabs). The example shows the **Sentiment** page
 B. This page has five visuals and a page title.  
 C. The **Filters** pane shows all applied filters. To collapse the **Filters** pane, select the arrow (**>**).  
 D. The Power BI banner shows the title of the report and the sensitivity label. Select the title to open a menu that shows the report location, date it was last updated, and contact information for the report creator.  
-E. The action bar contains links to numerous actions you can take on this report. Some actions require extra permissions. For example, based on your permissions you may be able to edit, subscribe, and share the report. All users can add a comment, view a bookmark, or add comments to the report. Select **More options** (...) to see the full list of report actions.
+E. The action bar contains links to numerous actions you can take on this report. Some actions require extra permissions. For example, based on your permissions you may be able to edit, subscribe, and share the report. All users can add a comment, view a bookmark, or generate automatic insights. Select **More options** (...) to see the full list of report actions.
 
 If you're new to Power BI, read [Basic concepts for the Power BI service business users](end-user-basic-concepts.md) to get a good foundation. You can view, share, and annotate reports on mobile devices. For more information, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 
-Power BI bases a report on a single semantic model. Report designers create the visuals in a report to represent pieces of information. The visuals aren't static. They update as the underlying data changes. You interact with the visuals and filters as you dig into the data to discover insights and find answers. Like a dashboard, a report is interactive and customizable. The extent of what you can do with a report depends on your role and the permissions the report designer assigns to you.
+Power BI bases a report on a single semantic model. Report designers create the visuals in a report to represent pieces of information. Presenting data as visuals makes it easier to grasp the meaning of what you're seeing. And, the visuals aren't static. They update as the underlying data changes. The designers do the pre-work, adding visuals that they believe are interesting. But you get to explore and dig deeper. You interact with the visuals and filters as you dig into the data to discover insights and find answers. The extent of what you can do with a report depends on your role and the permissions the report designer assigns to you.
 
 ## Safely interact with content
 
