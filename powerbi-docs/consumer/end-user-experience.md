@@ -22,14 +22,14 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
 - If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-- Read [Power BI service basic concepts](end-user-basic-concepts.md).
+- Read [Power BI service basic concepts.](end-user-basic-concepts.md)
 
 - Viewing Power BI content (reports, dashboards, apps) created by *designers* requires one of two conditions:
     - a Power BI Pro or Premium Per User (PPU) license.
     - Your organization to have a Power BI Premium subscription, and the content to be shared with you from a Premium capacity. 
     [Learn about licenses and subscriptions](end-user-license.md).     
 
-    For the purposes of this tutorial, we aren't requiring either of these conditions to be met. Microsoft has made sample content available to you directly from the Power BI service interface. We'll use this sample content to learn our way around the Power BI service. 
+    For the purposes of this tutorial, we aren't requiring either of these conditions to be met. Microsoft has sample content available to you directly from the Power BI service interface. Use this sample content to learn your way around the Power BI service. 
 
 ## Open the Power BI service
 
@@ -49,15 +49,15 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
 
 ## View workspace content
-The sample content is organized within the context of a workspace named **My workspace.** Every business user has at least one workspace, and it's named **My workspace**. You acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace will show up in your Power BI site.
+The sample content is organized within the context of a workspace named **My workspace.** Every business user has at least one workspace, and it's named **My workspace**. You acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace shows up in your Power BI site.
 
 **My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center is saved in your **My workspace**. 
 
-Workspaces are much more than storage locations. From a workspace you can learn a lot about the included dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
+Workspaces are more than storage locations. From a workspace you can learn a lot about the included dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
 
 ![Screenshot showing App workspace screen with More actions menu displayed for the report.](./media/end-user-experience/power-bi-more-action.png)
 
-From a workspace, you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If a workspace *owner* gave you [sharing permissions](../collaborate-share/end-user-shared-with-me.md), you can share from here as well. 
+From a workspace, you can open a dashboard or report by selecting it from the list. You can favorite a dashboard or report by hovering and selecting the star icon. If a workspace *owner* gave you [sharing permissions](../collaborate-share/end-user-shared-with-me.md), you can share from here as well. 
 
 Learn more about [Workspaces](end-user-workspaces.md).
 
@@ -81,26 +81,26 @@ A dashboard is a single page that shows visualizations of the most important ele
     ![Screenshot showing the dropdown menu for a dashboard tile.](./media/end-user-experience/power-bi-tile-menu.png)
 
 
-4. Select a dashboard tile to open the report that was used to create that tile. The report opens to the page that contains the visual that is on the tile. Here, I've selected the dashboard tile with the treemap. The Power BI service opens the **YTD Category** report page.
+4. Select a dashboard tile to open the report that was used to create that tile. The report opens to the page that contains the visual that is on the tile. In this example, selecting the dashboard tile with the treemap opens the **YTD Category** report page.
 
     ![Report opens.](./media/end-user-experience/power-bi-report.png)
 
     A report is made up of one or more pages. In most cases, each page is designed to tell a story and that story is told with visualizations, text, shapes, and images. 
 
-    Reports have several sections. On the left is the clickable list of report pages. Across the top, is the menu bar containing actions you can take with the report.  The options available will depend on the role and permission the report *designer* assigned to you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and also for a single report page. 
+    Reports have several sections. On the left is the clickable list of report pages. Across the top, is the menu bar containing actions you can take with the report. The options available depend on the role and permission the report *designer* assigned to you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and also for a single report page. 
 
     Learn more about [Power BI reports](end-user-reports.md).
 
 ## Using the left navigation pane (nav pane)
-The nav pane will become more useful as colleagues share content with you. In this section of the tutorial, we'll look at the Power BI service for a *business user* who works with colleagues who've shared lots of reports, dashboards, and apps. 
+The nav pane becomes more useful as colleagues share content with you. In this section of the tutorial, we look at the Power BI service for a *business user* who works with colleagues who shar lots of reports, dashboards, and apps. 
 
 :::image type="content" source="media/end-user-experience/power-bi-home-icon.png" alt-text="Screenshot of the Home icon."::: 
 
-The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating to your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues.
+The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating to your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that changes as you start to use Power BI with your colleagues.
 
 ![Screenshot of a full Home.](./media/end-user-experience/power-bi-full-home.png)
 
-To learn more, see [Power BI Home](end-user-home.md)
+To learn more, see [Power BI Home.](end-user-home.md)
 
 ## Browse
 
@@ -110,13 +110,13 @@ See your full list of favorites, recent, and shared content by selecting **Brows
 
 :::image type="content" source="./media/end-user-experience/power-bi-browse.png" alt-text="Screenshot of the Browse page on the navigation pane.":::
 
-For more information, see [Recent content](end-user-recent.md), [Favorite dashboards, reports, and apps](end-user-favorite.md), and [Dashboards and reports that have been shared with me](../collaborate-share/end-user-shared-with-me.md).
+For more information, see [Recent content](end-user-recent.md), [Favorite dashboards, reports, and apps](end-user-favorite.md), and [Dashboards and reports that are shared with me](../collaborate-share/end-user-shared-with-me.md).
 
 ## Open Apps
 
 :::image type="content" source="./media/end-user-experience/power-bi-apps-icon.png" alt-text="Screenshot of the Apps icon on the navigation pane.":::
 
-Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet, but this is the content area that will store  all apps that have been shared with you or that you've installed.
+Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet, but when you do they'll show up here. The **Apps** container contains apps that are shared with you or that you install.
 
 For more information, see [Apps in Power BI](end-user-apps.md).
 
@@ -149,7 +149,7 @@ For more information, see [Navigation for Power BI business users: global search
 
 ## Find the owner
 
-And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, app, or other content--you can look up the owner or contact email. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
+Let's end this tutorial with a helpful tip. If you have questions about a dashboard, report, app, or other content--you can look up the owner or contact email. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
 
 :::image type="content" source="./media/end-user-experience/power-bi-owner.png" alt-text="Screenshot showing the title menu where contact information is.":::
 
