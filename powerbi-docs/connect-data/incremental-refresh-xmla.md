@@ -2,7 +2,7 @@
 title: Advanced incremental refresh and real-time data with the XMLA endpoint in Power BI
 description: Find out about advanced incremental refresh and real-time data features with the XMLA endpoint in Power BI.
 author: kfollis
-ms.author: owend
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
