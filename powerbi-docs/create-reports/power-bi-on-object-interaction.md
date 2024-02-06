@@ -173,13 +173,13 @@ You can now format containers for more than one visual at a time. When you multi
 
 When you multi-select different visual types, such as a line chart and bar chart, you see **Size and style** and **Title** in the **Visual** section of the **Format pane**.
 
-:::image type="content" source="media/power-bi-on-object-interaction/on-object-multiselect.png" alt-text="Screenshot showing formatting more than one visual at a time." lightbox="media/power-bi-on-object-interaction/on-object-multiselect.png":::
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-multiselect.png" alt-text="Screenshot showing formatting more than one visual at a time.":::
 
 ## Format an empty visual
 
 You can also format the size and position of a visual before you add any data to it.
 
-:::image type="content" source="media/power-bi-on-object-interaction/on-object-empty-visual.png" alt-text="Screenshot showing formatting an empty visual." lightbox="media/power-bi-on-object-interaction/on-object-empty-visual.png":::
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-empty-visual.png" alt-text="Screenshot showing formatting an empty visual.":::
 
 ## Attach the build menu to the pane switcher
 
