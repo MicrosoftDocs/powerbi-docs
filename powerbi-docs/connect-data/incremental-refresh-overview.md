@@ -2,7 +2,7 @@
 title: Incremental refresh for semantic models and real-time data in Power BI
 description: Learn how to configure and use the incremental refresh features in Power BI to capture fast-moving data.
 author: kfollis
-ms.author: owend
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
