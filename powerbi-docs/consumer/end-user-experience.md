@@ -18,49 +18,42 @@ LocalizationGroup: Get started
 
 Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in [Power BI Desktop](https://powerbi.microsoft.com/desktop/), combining data and creating reports, dashboards, and apps for others. They're *designers* and *creators*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This tutorial is for *business users* of the Power BI service. 
 
- 
 ## Prerequisites
 
 - If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-- You can work through this tutorial by using sample content from the Power BI website.
 
 - Read [Power BI service basic concepts](end-user-basic-concepts.md).
 
 - Viewing Power BI content (reports, dashboards, apps) created by *designers* requires one of two conditions:
-    - a Power BI Pro or Premium Per User (PPU) license
-    - Your organization to have a Power BI Premium subscription, and the content to be shared with you from Premium capacity.    
+    - a Power BI Pro or Premium Per User (PPU) license.
+    - Your organization to have a Power BI Premium subscription, and the content to be shared with you from a Premium capacity. 
     [Learn about licenses and subscriptions](end-user-license.md).     
 
     For the purposes of this tutorial, we aren't requiring either of these conditions to be met. Microsoft has made sample content available to you directly from the Power BI service interface. We'll use this sample content to learn our way around the Power BI service. 
 
 ## Open the Power BI service
 
-
 1. To begin, open the Power BI service (app.powerbi.com), and sign in if you're prompted. 
 
-    ![Screenshot shows the Home page for a new user.](./media/end-user-experience/power-bi-home-page.png)    
+    ![Screenshot shows the Home page for a new user.](./media/end-user-experience/power-bi-home.png)    
 
-1. Select **Learn** and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample report.  
+1. Open a Power BI report. From the navigation pane, select the **Learn** icon :::image type="content" source="media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the Learn icon."::: and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample report to open it.  
 
    :::image type="content" source="media/end-user-experience/power-bi-sample-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
 
-   The **Sales and Marketing Sample** report opens.
-
-   :::image type="content" source="./media/end-user-experience/power-bi-report-opens.png" alt-text="Screenshot shows the Sales and Marketing Sample open.":::
-
 1. The Power BI service installs the sample in **My workspace**, your private sandbox for learning and experimenting. Only you can see your workspace. Select **My workspace** to see details about this sample report.
 
-    :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-new.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
+    :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-files.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
 
     The sample includes one report, one dashboard, and one semantic model. Most content shared with business users doesn't include direct access to the underlying semantic models, but the samples, which are designed for all users, include semantic models.
 
 
 ## View workspace content
-The sample content is organized within the context of a workspace. Every business user has at least one workspace, and it's called **My workspace**. You can acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace will show up in your Power BI site.
+The sample content is organized within the context of a workspace named **My workspace.** Every business user has at least one workspace, and it's named **My workspace**. You acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace will show up in your Power BI site.
 
-**My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center, is saved in your **My workspace**. 
+**My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center is saved in your **My workspace**. 
 
-A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
+Workspaces are much more than storage locations. From a workspace you can learn a lot about the included dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
 
 ![Screenshot showing App workspace screen with More actions menu displayed for the report.](./media/end-user-experience/power-bi-more-action.png)
 
@@ -69,11 +62,11 @@ From a workspace, you can open a dashboard or report by selecting it from the li
 Learn more about [Workspaces](end-user-workspaces.md).
 
 ## Open a dashboard and a report
-A dashboard is a single page that shows visualizations of the most important elements from one or more report. 
+A dashboard is a single page that shows visualizations of the most important elements from one or more reports. 
 
 1. The Sales and marketing sample has one dashboard. Select the name of the dashboard to open it. 
 
-    :::image type="content" source="media/end-user-experience/power-bi-related-content.png" alt-text="Screenshot of the Related content window.":::
+    :::image type="content" source="media/end-user-experience/power-bi-related.png" alt-text="Screenshot of the Related content window.":::
 
 1. The dashboard opens in the Power BI service. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md).
 
@@ -101,13 +94,11 @@ A dashboard is a single page that shows visualizations of the most important ele
 ## Using the left navigation pane (nav pane)
 The nav pane will become more useful as colleagues share content with you. In this section of the tutorial, we'll look at the Power BI service for a *business user* who works with colleagues who've shared lots of reports, dashboards, and apps. 
 
-:::image type="content" source="media/end-user-experience/power-bi-nav-pane.png" alt-text="Screenshot of the left navigation menu.":::
-
 :::image type="content" source="media/end-user-experience/power-bi-home-icon.png" alt-text="Screenshot of the Home icon."::: 
 
-The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues.
+The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating to your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that will change as you start to use Power BI with your colleagues.
 
-![Screenshot of a full Home.](./media/end-user-experience/power-bi-home-page.png)
+![Screenshot of a full Home.](./media/end-user-experience/power-bi-full-home.png)
 
 To learn more, see [Power BI Home](end-user-home.md)
 
@@ -158,7 +149,7 @@ For more information, see [Navigation for Power BI business users: global search
 
 ## Find the owner
 
-And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, app, or other content--you can look up the owner. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
+And we'll end this tutorial with a helpful tip. If you have questions about a dashboard, report, app, or other content--you can look up the owner or contact email. With the content open, select the title menu to display the owner's contact link. The owner or contact may be a person or a group.
 
 :::image type="content" source="./media/end-user-experience/power-bi-owner.png" alt-text="Screenshot showing the title menu where contact information is.":::
 
