@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: tutorial
-ms.date: 01/31/2023
+ms.date: 02/07/2024
 ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
 #Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
@@ -49,9 +49,11 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
 
 ## View workspace content
-The sample content is organized within the context of a workspace named **My workspace.** Every business user has at least one workspace, and it's named **My workspace**. You acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace shows up in your Power BI site.
+The sample content is organized within the context of a workspace named **My workspace.** **My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center is saved in your **My workspace**.
 
-**My workspace** stores all of the content that you own and create. Think of it as your personal sandbox or work area for your own content. Any sample data that you download from the Power BI Learning Center is saved in your **My workspace**. 
+You acquire more workspaces when designers share content with you. For example, if designers assign you access permissions to one of their workspaces, that workspace shows up in your Power BI site.
+
+**My workspace**  
 
 Workspaces are more than storage locations. From a workspace you can learn a lot about the included dashboards, reports, and semantic models. Workspace owners assign permissions to content in a workspace. Your permissions may allow you to take **More actions (...)** on the content in a workspace. Since we're using sample content that is saved in your **My workspace**, you have owner-level permissions by default.
 
@@ -64,7 +66,7 @@ Learn more about [Workspaces](end-user-workspaces.md).
 ## Open a dashboard and a report
 A dashboard is a single page that shows visualizations of the most important elements from one or more reports. 
 
-1. The Sales and marketing sample has one dashboard. Select the name of the dashboard to open it. 
+1. The Sales and marketing sample has one dashboard. To open the dashboard, select it. 
 
     :::image type="content" source="media/end-user-experience/power-bi-related.png" alt-text="Screenshot of the Related content window.":::
 
@@ -116,7 +118,7 @@ For more information, see [Recent content](end-user-recent.md), [Favorite dashbo
 
 :::image type="content" source="./media/end-user-experience/power-bi-apps-icon.png" alt-text="Screenshot of the Apps icon on the navigation pane.":::
 
-Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet, but when you do they'll show up here. The **Apps** container contains apps that are shared with you or that you install.
+Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet. The **Apps** container contains apps that are shared with you or that you install.
 
 For more information, see [Apps in Power BI](end-user-apps.md).
 
@@ -129,7 +131,7 @@ For new users, the Learning center is especially helpful, with getting started c
 ### Search and sort content
 :::image type="icon" source="./media/end-user-experience/power-bi-search-icon.png":::
 
-When you're new to the Power BI service, you only have a few pieces of content. But as colleagues begin sharing data with you and you begin downloading apps, you might end up with long lists of content. That's when you find searching and sorting extremely helpful.
+When you're new to the Power BI service, you only have a few pieces of content. But as colleagues begin sharing data with you and you begin downloading apps, you might end up with long lists of content. That's when you find searching and sorting helpful.
 
 Search is available from almost every part of the Power BI service. Just look for the search box or search magnifying glass icon.  
 
