@@ -51,7 +51,7 @@ A tool for testing HTTP request/response messages is [Fiddler](https://www.teler
 
 ## Related content
 
-Review the available APIs over on [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
+Review the available APIs over on [Microsoft Learn](https://learn.microsoft.com/rest/api/power-bi-report/).
 
 Samples are available on [GitHub](https://github.com/Microsoft/Reporting-Services). The sample includes an HTML5 app built on TypeScript, React, and webpack along with a PowerShell example.
 
