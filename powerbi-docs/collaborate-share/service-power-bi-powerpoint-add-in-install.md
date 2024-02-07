@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 01/22/2024
+ms.date: 02/09/2024
 ---
 
 # Add live Power BI data to PowerPoint
@@ -121,7 +121,19 @@ Use the following procedure to add live data to a presentation with a URL:
 1. Paste the URL into the text box.
 1. Select the **Insert** button and the visual will load into the slide.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-link-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power BI report page into the add-in.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/inserting-link-power-bi-add-in.gif" alt-text="Screenshot of inserting the Power BI report page into the add-in.":::
+
+### Change a direct link to a shareable link
+
+If you have sharable links enabled for your organization and you have permissions to re-share a report, you can turn your link into shareable link in the Power BI add-in. When you use a sharable link, other users viewing the presentation have the required permissions to see the report and don't have to request access when the viewing the presentation. So, you don't have to give everyone access in the Power BI service before you use the report in your presentation.
+
+Use the following procedure to create a shareable link:
+1. Get the [direct link from the browser](#use-the-direct-url-to-add-live-data-to-a-presentation).
+1. Paste the direct link into the Power BI add-in.
+1. Check the box next to **Give people automatic access to this data**. The add-in changes the direct link to a shareable link.
+1. Select the **Insert** button and the report loads into the slide. The report will now be accessible to everyone who views the presentation.
+
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/insert-sharable-link.gif" alt-text="Screenshot of inserting the a direct link into the add-in and then changing it to a shareable link.":::
 
 ## Related content
 
