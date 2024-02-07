@@ -43,9 +43,9 @@ This tutorial covers the following.
 ## Who can set alerts
 
 Alerts can be created in the Power BI service by customers with any license type. Set alerts on dashboard tiles:
-- that you created and saved in **My workspace**.
-- that are shared with you in a [Premium reserved capacity](end-user-license.md). 
-- that are in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
+- you create and save in **My workspace**.
+- shared with you in a [Premium reserved capacity](end-user-license.md). 
+- in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
 
 ## Who can see alerts I create?
 
@@ -66,11 +66,11 @@ Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power B
 
 1. On the **Manage alerts** pane, select **+ Add alert rule**. Ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-alert.png" alt-text="Screenshot showing the Add alert rule window. The Alert title box contains a title, and the Active slider is set to On.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-alert.png" alt-text="Screenshot showing the rule window. The Alert title box contains a title, and the Active slider is set to On.":::
 
 1. Scroll down and enter the alert details. In this example, we create an alert that notifies us once a day if our market share increases to 40% (.4) or higher. We opt to have Power BI send us an email when an alert is triggered. Triggered alerts also appear in our Notification center. 
 
-   :::image type="content" source="media/end-user-alerts/power-bi-set-threshold.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-set-threshold.png" alt-text="Screenshot showing the window for managing alerts. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
 
 1. Select **Save and close**.
 
@@ -97,13 +97,13 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 1. If you need to change or remove an alert for a tile, reopen the **Manage alerts** window. All the alerts that you set for that tile are displayed.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-manage-alert.png" alt-text="Screenshot showing the Manage alerts window, with the Alert for Market Share alert visible.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-manage-alert.png" alt-text="Screenshot showing the window for managing alerts, with the Alert for Market Share alert visible.":::
 2. To modify an alert, select the arrow to the left of the alert name.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-alert-modify.png" alt-text="Screenshot showing the Manage alerts window. Next to the Alert for Market Share alert, the arrow is called out.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-alert-modify.png" alt-text="Screenshot showing the window for managing alerts. Next to the Alert for Market Share alert, the arrow is called out.":::
 3. To delete an alert, select the trashcan to the right of the alert name.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-delete.png" alt-text="Screenshot showing the Manage alerts window. Next to the Alert for Market Share alert, the trashcan icon is called out.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-delete.png" alt-text="Screenshot showing the  window for managing alerts. Next to the Alert for Market Share alert, the trashcan icon is called out.":::
 
 ### From the Power BI settings menu
 
