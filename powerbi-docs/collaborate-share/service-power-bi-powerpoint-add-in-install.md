@@ -133,7 +133,7 @@ Use the following procedure to create a shareable link:
 1. Check the box next to **Give people automatic access to this data**. The add-in changes the direct link to a shareable link.
 1. Select the **Insert** button and the report loads into the slide. The report will now be accessible to everyone who views the presentation.
 
-    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/insert-sharable-link.gif" alt-text="Screenshot of inserting the a direct link into the add-in and then changing it to a shareable link.":::
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/insert-shareable-link.gif" alt-text="Screenshot of inserting the direct link into the add-in and then changing it to a shareable link.":::
 
 ## Related content
 
