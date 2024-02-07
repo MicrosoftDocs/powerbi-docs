@@ -2,12 +2,12 @@
 title: Install Power BI Report Server
 description: 'Learn how to install Power BI Report Server, or create a virtual machine running Power BI Report Server on Azure.'
 author: maggiesMSFT
-ms.author: maggies
+ms.author: nisrinivasan
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 06/22/2022
+ms.date: 01/26/2023
 ms.custom: intro-installation
 ---
 
@@ -40,9 +40,9 @@ You can get the product key for Power BI Report Server from two different source
 
 Read on for details.
 
-#### Power BI Premium
+#### Power BI Premium / Fabric Capacity
 
-If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Fabric administrator role.
+If your organization has purchased Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Power BI Premium** tab in the admin portal. The key is only accessible to users with Global admin, Fabric admin, or PowerBI Premium capacity admin privileges.
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
@@ -134,8 +134,8 @@ URL reservations are composed of a prefix, host name, port, and virtual director
 
 An example of the complete URL string might be as follows:
 
-* `https://+:80/reportserver`, provides access to the report server.
-* `https://+:80/reports`, provides access to the web portal.
+* `https://+:80/reportserver` provides access to the report server.
+* `https://+:80/reports` provides access to the web portal.
 
 ## Firewall
 
