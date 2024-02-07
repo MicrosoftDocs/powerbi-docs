@@ -72,7 +72,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: "Leveraging hot and cold table partitions to optimize very large Power BI data models "
-          url: ../../transform-model/desktop-external-tools.md
+          url: /analysis-services/tom/table-partitions
         - text: "Register an external tool"
           url: ../../transform-model/desktop-external-tools-register.md
   # Card (optional)
