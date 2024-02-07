@@ -23,7 +23,8 @@ Local storage is isolated so that each type of visual has its own separate stora
 
 ### [Version 1](#tab/v1)
 
-This version of the *local storage API* is scheduled for deprecation. We're not accepted any more requests. When possible, use Version 2.
+This version of the *local storage API* is scheduled for deprecation. We're not accepting any more requests. When possible, use Version 2.
+
 In the following example, a counter is increased whenever the *update* method is called. The counter value is saved locally and called each time the visual starts. This way, the counter continues counting from where it left off instead of starting over each time the visual is started:
 
 ```typescript
@@ -83,7 +84,7 @@ The local storage API has four methods:
 
     * *key* – the key whose value you want to get.
   
-  * Returns a promise that resolves with the value if the key exists, and rejects otherwise. This method expects one parameter:
+  * Returns a promise that resolves with the value if the key exists, and rejects otherwise.
 
 * *set*:
 
@@ -122,7 +123,7 @@ export class Visual implements IVisual {
         this.init(); 
     } 
  
-    private init() { 
+    private async init() { 
         try { 
             let status: powerbi.PrivilegeStatus = await this.storageV2Service.status(); 
             if (status === PrivilegeStatus.DisabledByAdmin) { 
@@ -135,7 +136,7 @@ export class Visual implements IVisual {
         } 
     } 
 
-    private updateCount(count: number) { 
+    private async updateCount(count: number) { 
         try { 
             let status: PrivilegeStatus = await this.storageV2Service.status(); 
             if (status === PrivilegeStatus.Allowed) { 
@@ -151,7 +152,7 @@ export class Visual implements IVisual {
         } 
     } 
 
-    private removeUpdateCount() { 
+    private async removeUpdateCount() { 
         let status: PrivilegeStatus = await this.storageV2Service.status(); 
         if (status === PrivilegeStatus.Allowed) { 
             this.storageV2Service.remove(this.updateCountName); 
