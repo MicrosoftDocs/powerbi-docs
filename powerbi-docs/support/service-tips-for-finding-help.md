@@ -30,7 +30,7 @@ Ask questions and find answers in the [Power BI community](https://community.pow
 
 ## Tip 4: Check the service status and known issues
 
-If you're having an issue with the service, it may be that the service itself is having issues. [Check the Support page](https://powerbi.microsoft.com/support/) for any reports.
+If you're having an issue with the service, it may be that the service itself is having issues. [Check the Power BI and Fabric Support page](https://powerbi.microsoft.com/support/) for any reports.
 
 It might be that you encountered a problem that is already known and is being actively worked on. [Check the known issues report](https://support.fabric.microsoft.com/en-US/known-issues/). 
 
