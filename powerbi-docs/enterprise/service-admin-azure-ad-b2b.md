@@ -1,14 +1,14 @@
 ---
 title: Distribute content to external guest users with Microsoft Entra B2B
 description: Power BI enables sharing content with external guest users through Microsoft Entra Business-to-business (Microsoft Entra B2B).
-author: ajburnle
-ms.author: ajburnle
+author: paulinbar
+ms.author: painbar
 manager: kfollis
 ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/30/2023
+ms.date: 02/07/2024
 LocalizationGroup: Administration
 ---
 
@@ -162,11 +162,11 @@ There are some limitations to the B2B experience that you should be aware of:
 
 ## Admin Info for B2B Collaboration 
 
-The following tenant level settings in Power BI provide controls to admins. See [Export and sharing admin settings]() for documentation on these settings: 
-  * [Allow Microsoft Entra guest users to access Power BI](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-microsoft-fabric)
-  * [Invite external users to your organization](/fabric/admin/service-admin-portal-export-sharing#invite-external-users-to-your-organization)
-  * [Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization)
-  * [Show Microsoft Entra guests in lists of suggested people](/fabric/admin/service-admin-portal-export-sharing#show-azure-active-directory-guests-in-lists-of-suggested-people) 
+The following tenant level settings in Power BI provide controls to admins. See [Export and sharing admin settings](/fabric/admin/service-admin-portal-export-sharing) for documentation on these settings: 
+  * [Guest users can access Microsoft Fabric](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-access-microsoft-fabric)
+  * [Users can invite guest users to collaborate through item sharing and permissions](/fabric/admin/service-admin-portal-export-sharing#users-can-invite-guest-users-to-collaborate-through-item-sharing-and-permissions)
+  * [Guest users can browse and access Fabric content](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-browse-and-access-fabric-content)
+  * [Users can see guest users in lists of suggested people](/fabric/admin/service-admin-portal-export-sharing#users-can-see-guest-users-in-lists-of-suggested-people) 
 
 There are also Microsoft Entra ID settings that can limit what external guest users can do within your organization. Those settings also apply to your Power BI environment. The following documentation discusses the settings: 
   * [Manage External Collaboration Settings](/azure/active-directory/external-identities/external-collaboration-settings-configure#configure-b2b-external-collaboration-settings)
@@ -174,7 +174,7 @@ There are also Microsoft Entra ID settings that can limit what external guest us
   * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 
 Additionally, to use in-place semantic model sharing, tenant admins need to enable the following settings: 
-* [Allow guest users to work with shared semantic models in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#allow-guest-users-to-work-with-shared-semantic-models-in-their-own-tenants)
+* [Guest users can work with shared semantic models in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#guest-users-can-work-with-shared-semantic-models-in-their-own-tenants)
 * [Allow specific users to turn on external data sharing](../collaborate-share/service-dataset-external-org-share-admin.md#allow-specific-users-to-turn-on-external-data-sharing) 
 
 ## Considerations and Limitations
