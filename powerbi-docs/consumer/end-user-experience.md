@@ -15,6 +15,7 @@ LocalizationGroup: Get started
 ---
 # Tutorial - Getting around in Power BI service
 
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in [Power BI Desktop](https://powerbi.microsoft.com/desktop/), combining data and creating reports, dashboards, and apps for others. They're *designers* and *creators*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This tutorial is for *business users* of the Power BI service. 
 
@@ -25,7 +26,7 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 - Read [Power BI service basic concepts.](end-user-basic-concepts.md)
 
 - Viewing Power BI content (reports, dashboards, apps) created by *designers* requires one of two conditions:
-    - a Power BI Pro or Premium Per User (PPU) license.
+    - A Power BI Pro or Premium Per User (PPU) license.
     - Your organization to have a Power BI Premium subscription, and the content to be shared with you from a Premium capacity. 
     [Learn about licenses and subscriptions](end-user-license.md).     
 
@@ -37,11 +38,11 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
 
     ![Screenshot shows the Home page for a new user.](./media/end-user-experience/power-bi-home.png)    
 
-1. Open a Power BI report. From the navigation pane, select the **Learn** icon :::image type="content" source="media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the Learn icon."::: and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample report to open it.  
+1. Open a Power BI sample. From the navigation pane, select the **Learn** icon :::image type="content" source="media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the Learn icon."::: and in the **Learning center**, scroll down to **Sample reports**. Select the right arrow until you get to **Sales and Marketing Sample**. Select the sample to open it.  
 
    :::image type="content" source="media/end-user-experience/power-bi-sample-list.png" alt-text="Screenshot shows the sample reports on the Learn page.":::
 
-1. The Power BI service installs the sample in **My workspace**, your private sandbox for learning and experimenting. Only you can see your workspace. Select **My workspace** to see details about this sample report.
+1. The Power BI service installs the sample in **My workspace**, your private sandbox for learning and experimenting. Only you can see your workspace. Select **My workspace** to see details about this sample.
 
     :::image type="content" source="./media/end-user-experience/power-bi-my-workspace-files.png" alt-text="Screenshot shows the Power BI screen with a red border around My workspace.":::
 
@@ -94,11 +95,11 @@ A dashboard is a single page that shows visualizations of the most important ele
     Learn more about [Power BI reports](end-user-reports.md).
 
 ## Using the left navigation pane (nav pane)
-The nav pane becomes more useful as colleagues share content with you. In this section of the tutorial, we look at the Power BI service for a *business user* who works with colleagues who shar lots of reports, dashboards, and apps. 
+The nav pane becomes more useful as colleagues share content with you. In this section of the tutorial, we look at the Power BI service for a *business user* who works with colleagues who share lots of reports, dashboards, and apps. 
 
 :::image type="content" source="media/end-user-experience/power-bi-home-icon.png" alt-text="Screenshot of the Home icon."::: 
 
-The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. Home is a great starting point for viewing and navigating to your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that changes as you start to use Power BI with your colleagues.
+The top icon in the nav pane is your Power BI **Home**. It's the default landing page when you log in to the Power BI service. **Home** is a great starting point for viewing and navigating to your content. **Home** bring together the searching and sorting tools, the nav pane, and a canvas with *cards* that you can select to open content. At first, you might not have many cards on your Home canvas, but that changes as you start to use Power BI with your colleagues.
 
 ![Screenshot of a full Home.](./media/end-user-experience/power-bi-full-home.png)
 
@@ -118,13 +119,14 @@ For more information, see [Recent content](end-user-recent.md), [Favorite dashbo
 
 :::image type="content" source="./media/end-user-experience/power-bi-apps-icon.png" alt-text="Screenshot of the Apps icon on the navigation pane.":::
 
-Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet. The **Apps** container contains apps that are shared with you or that you install.
+Go directly to your apps by selecting **Apps** on the navigation pane. You might not have any apps yet. The **Apps** pane contains apps that are shared with you or that you install.
 
 For more information, see [Apps in Power BI](end-user-apps.md).
 
 ## Open the Learning center
 
 :::image type="content" source="./media/end-user-experience/power-bi-learn-icon.png" alt-text="Screenshot of the icon for the Learning center.":::
+
 For new users, the Learning center is especially helpful, with getting started content, samples, and links to videos.
 
 
@@ -135,7 +137,7 @@ When you're new to the Power BI service, you only have a few pieces of content. 
 
 Search is available from almost every part of the Power BI service. Just look for the search box or search magnifying glass icon.  
 
-In the Search field, you can type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content.
+In the Search field, type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content.
 
 :::image type="content" source="./media/end-user-experience/power-bi-search-field.png" alt-text="Screenshot showing text in the search bar.":::
 

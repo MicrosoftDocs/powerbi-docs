@@ -15,9 +15,9 @@ LocalizationGroup: Common tasks
 
 # Recent content in the Power BI service
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-**Recent** content contains the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, semantic models, workspaces, scorecards, and workbooks. When you select **Recent** from the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content is the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, semantic models, workspaces, scorecards, and workbooks. When you select **Recent** from the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recents.png" alt-text="Screenshot showing Power BI service recent content list.":::
 
@@ -35,7 +35,7 @@ If your lists get long, use the **Filter by keyword** field, **Filter** button, 
 
 :::image type="content" source="./media/end-user-recent/power-bi-recent-sort-search-new.png" alt-text="Screenshot showing search and sorting options in Power BI.":::
 
-## Add content to Favorites list
+## Add content to your Favorites list
 
 The actions available to you from **Recents** depend on the settings assigned by the content designer. One useful feature is the ability to add content to your list of favorites. 
 

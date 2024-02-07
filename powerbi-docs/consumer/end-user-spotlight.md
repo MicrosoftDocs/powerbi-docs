@@ -15,7 +15,7 @@ LocalizationGroup: Consumer
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-With spotlight, you can draw attention to a specific visual on a report page.  If the spotlight mode is selected when you add a bookmark, that mode is retained in the bookmark.
+Use spotlights to draw attention to a specific visual on a report page.  
 
 ## Add a spotlight
 
@@ -24,6 +24,9 @@ With spotlight, you can draw attention to a specific visual on a report page.  I
 1. Select the visual that you want to highlight. Select the **More options (...)** dropdown, then choose **Spotlight**.
 
     :::image type="content" source="media/end-user-spotlight/power-bi-spotlights.png" alt-text="Screenshot of visuals and the More options dropdown menu showing the Spotlight option highlighted.":::
+
+    > [!NOTE]
+    > If the spotlight mode is actove when you add a bookmark, that mode is retained in the bookmark.
 
 1. The selected visual is highlighted, which causes all other visuals on the page to fade to near transparency.
 
