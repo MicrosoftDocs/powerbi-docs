@@ -55,6 +55,8 @@ landingContent:
           url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
         - text: "Programming Power BI semantic models with the Tabular Object Model (TOM)"
           url: /analysis-services/tom/tom-pbi-datasets
+        - text: "Hot and cold table partitions to optimize very large Power BI data models"
+          url: /analysis-services/tom/table-partitions
   # Card (optional)
   - title: Lifecycle management collaboration with deployment pipelines
     linkLists:
