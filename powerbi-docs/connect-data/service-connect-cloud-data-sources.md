@@ -78,6 +78,10 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
+1.	If the Excel on prem data source You are adding to the report is within a separate query (not mixed with existing AS Direct Query data source), then it is supported. You can map the Excel data source to a Gateway, and leave the AS direct query data source as a cloud one)
+
+2.  If the Excel on prem data source you are adding to the report is mixed with existing AS Direct Query data source, then it is not supported. AS Direct Query is only supported through cloud, mixing it with onPrem Excel will force it to go through gateway which is not supported.
+
 ## Related content
 
 For more information about creating shareable cloud connections:
