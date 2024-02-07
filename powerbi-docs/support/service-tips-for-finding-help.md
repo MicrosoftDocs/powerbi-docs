@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting
-ms.date: 01/03/2023
+ms.date: 02/08/2024
 LocalizationGroup: Get started
 ---
 # Ten tips for getting help with your Power BI questions

@@ -7,9 +7,10 @@ ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
+ms.custom: sample-sales-and-marketing-app
 ms.search.form: Set alerts on dashboards
 ms.topic: how-to
-ms.date: 07/12/2022
+ms.date: 02/08/2024
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
@@ -18,7 +19,7 @@ LocalizationGroup: Dashboards
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
-Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A, and only on gauges, KPIs, and cards. 
+Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. 
 
 :::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing part of a dashboard that includes a tile, a card, and a KPI.":::
 
@@ -53,10 +54,9 @@ Only you can see the alerts you set, even if you share your dashboard. Data aler
 > [!WARNING]
 > These alerts provide information about your data. If you view your Power BI data on a mobile device and that device gets stolen, we recommend using the Power BI service to turn off all alerts.
 
-
 ## Add an alert to a dashboard tile
 
-Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power BI dashboard. This tutorial uses the Sales and Marketing sample.  To follow along, [get the sample](../create-reports/sample-sales-and-marketing.md). 
+Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power BI dashboard. This tutorial uses the Sales and Marketing app available from AppSource. To follow along, [get the sample](end-user-app-marketing.md). 
 
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
 
@@ -64,15 +64,13 @@ Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power B
 
 1. Select the alert icon :::image type="icon" source="media/end-user-alerts/power-bi-alert-icon.png":::, or **Manage alerts**, to add one or more alerts for the **Market share** card.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-manage.png" alt-text="Screenshot showing the shortcut menu of the ellipsis, with Manage alerts called out.":::
-
 1. On the **Manage alerts** pane, select **+ Add alert rule**.  Ensure the slider is set to **On**, and give your alert a title. Titles help you easily recognize your alerts.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-alert-manage.png" alt-text="Screenshot showing the Add alert rule window. The Alert title box contains a title, and the Active slider is set to On.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-alert.png" alt-text="Screenshot showing the Add alert rule window. The Alert title box contains a title, and the Active slider is set to On.":::
 
 1. Scroll down and enter the alert details.  In this example we'll create an alert that notifies us once a day if our market share increases to 40% (.4) or higher. Alerts will appear in our Notification center. We'll have Power BI send us an email as well.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-threshold.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-set-threshold.png" alt-text="Screenshot showing the Manage alerts window. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
 
 1. Select **Save and close**.
 
@@ -90,16 +88,14 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
 3. Open your Notification center to see the alert details.
 
    :::image type="content" source="media/end-user-alerts/power-bi-notifications.png" alt-text="Screenshot showing the Notification center, with the notification icon called out and a few notifications visible.":::
-   
-  
 
 ## Managing alerts
 
-There are many ways to manage your alerts: from the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: from the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone,](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 
-1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the alert icon :::image type="icon" source="media/end-user-alerts/power-bi-alert-icon.png":::. All the alerts that you've set for that tile are displayed.
+1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window. All the alerts that you've set for that tile are displayed.
 
    :::image type="content" source="media/end-user-alerts/power-bi-manage-alert.png" alt-text="Screenshot showing the Manage alerts window, with the Alert for Market Share alert visible.":::
 2. To modify an alert, select the arrow to the left of the alert name.
@@ -115,9 +111,9 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
    :::image type="content" source="media/end-user-alerts/power-bi-gear-icon.png" alt-text="Screenshot showing the Power BI menu bar. The Search box and a few icon buttons are visible. The gear icon is called out.":::
 
-2. Under **Settings** select **Alerts**.
+2. Under **Settings** select **Notifications** > **Power BI Alerts**.
 
-   :::image type="content" source="media/end-user-alerts/power-bi-settings.png" alt-text="Screenshot showing the Alerts tab of the Settings window. A few alerts are visible, and the Alerts tab is called out.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-setting.png" alt-text="Screenshot showing the Alerts tab of the Settings window. A few alerts are visible, and the Alerts tab is called out.":::
 
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
@@ -130,7 +126,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 
 ## Clean up resources
-Instructions for deleting alerts are explained above. In brief, select the gear icon from the Power BI menubar. Under **Settings** select **Alerts** and delete the alert.
+Instructions for deleting alerts are explained above. In brief, select the gear icon from the Power BI menubar. Under **Settings** select **Notifications** > **Power BI Alerts** and delete the alert.
 
 > [!div class="nextstepaction"]
 > [Set data alerts on your mobile device](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
