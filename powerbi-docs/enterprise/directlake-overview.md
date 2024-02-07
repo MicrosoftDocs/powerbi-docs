@@ -167,6 +167,8 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - The length of string column values is limited to 32,764 Unicode characters.
 
+- The floating point value ‘NaN’ (Not A Number) is not supported in Direct Lake models.
+
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
 - Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
