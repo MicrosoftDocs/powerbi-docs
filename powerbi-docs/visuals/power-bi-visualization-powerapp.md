@@ -48,7 +48,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
 1. From the Visualizations pane, select the Power Apps icon, then resize the visual to fit the space you made.
 
-   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-icon.png" alt-text="Screenshot of the Visualization pane with Power Apps icon selected":::
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-icon.png" alt-text="Screenshot of the Visualization pane with Power Apps icon selected.":::
 
 1. In the **Fields** pane, select **Opportunity** > **Name**, **Product** > **Product Code**, and **SalesStage** > **Sales Stage**.
 
@@ -60,7 +60,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
    In Power Apps Studio, you see that a basic app is created, with a *gallery* that shows one of the fields you selected in Power BI.
 
-   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-power-app.png" alt-text="Screenshot showing what Power Apps looks like when it firs opens.":::
+   :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-power-app.png" alt-text="Screenshot showing what Power Apps looks like when it first opens.":::
 
 1. In the left pane, select **Screen1**, then set the screen's **Fill** property to "LightBlue" (so it shows up better in the report).
 
