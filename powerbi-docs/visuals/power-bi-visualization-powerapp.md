@@ -68,8 +68,8 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
 1. Select **Gallery1** and make some room for a label control by changing **Properties** > **Size** > **Height** to 964.
 
-    > [!NOTE]
-> If you can't edit the **Height** field, try adjusting the size of the visual on the canvas first. Select the visual and drag one of the handles. Now edit the **Height** field.
+   > [!NOTE]
+   > If you can't edit the **Height** field, try adjusting the size of the visual on the canvas first. Select the visual and drag one of the handles. Now edit the **Height** field.
 
    :::image type="content" source="media/power-bi-visualization-powerapp/power-bi-powerapps-gallery.png" alt-text="Screenshot showing how to change gallery dimensions.":::
 
