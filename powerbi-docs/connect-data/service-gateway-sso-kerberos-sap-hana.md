@@ -174,7 +174,7 @@ johnny@contoso.com@CONTOSO.COM
 
 #### Resolution
 
-Follow the instructions described in [Set user-mapping configuration parameters on the gateway machine](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Azure AD Connect** service.
+Follow the instructions described in [Set user-mapping configuration parameters on the gateway machine](service-gateway-sso-kerberos.md#set-user-mapping-configuration-parameters-on-the-gateway-machine), even if you've already configured the **Microsoft Entra Connect** service.
 
 #### Validation
 
@@ -200,7 +200,7 @@ Check the Kerberos external ID under **HANA User** to determine whether the IDs 
 
 After you've resolved the issue, you can create or refresh reports in the Power BI service.
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

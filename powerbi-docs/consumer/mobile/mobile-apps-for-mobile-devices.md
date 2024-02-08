@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: overview
-ms.date: 01/12/2023
+ms.date: 12/31/2023
 ms.custom: intro-overview
 ms.reviewer: 
 #Customer intent: As a Power BI end user, I want an overview of the Power BI mobile apps on the different devices so I can see how they can work in my company's workflow.
@@ -14,15 +14,15 @@ ms.reviewer:
 
 # What are the Power BI mobile apps?
 
-Power BI offers a set of mobile apps for iOS, Android, and Windows mobile devices. In the mobile apps, you connect to and interact with your cloud and on-premises data.
+Power BI offers a set of mobile apps for iOS and Android mobile devices. In the mobile apps, you connect to and interact with your cloud and on-premises data.
 
-:::image type="content" source="./media/mobile-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png" alt-text="Figure that shows various mobile devices with the Power BI app installed.":::
+:::image type="content" source="./media/mobile-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png" alt-text="Figure that shows various mobile devices with the Power BI app installed." border="false":::
 
-You create reports in Power BI Desktop. You create dashboards, and view dashboards and reports, in the Power BI report service ([https://powerbi.com](https://powerbi.com)). You view on-premises Power BI reports on [Power BI Report Server](../../report-server/get-started.md). All these reports and dashboards are available in the Power BI mobile apps, whether they're on premises or in the cloud. You can view and interact with them on your mobile device, be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows.
+You create reports in Power BI Desktop. You create dashboards, and view dashboards and reports, in the Power BI report service ([https://powerbi.com](https://powerbi.com)). You view on-premises Power BI reports on [Power BI Report Server](../../report-server/get-started.md). All these reports and dashboards are available in the Power BI mobile apps, whether they're on premises or in the cloud. You can view and interact with them on your mobile device, be it an iOS device (iPad, iPhone, iPod Touch, or Apple Watch) or an Android phone or tablet.
 
 ## Get the app from the application store
 
-[![Go to Power BI on App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Go to Power BI on Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![Go to Power BI on Windows Store](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
+[![Go to Power BI on App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Go to Power BI on Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409)
 
 ## Mobile apps for different devices
 
@@ -32,10 +32,11 @@ You create reports in Power BI Desktop. You create dashboards, and view dashboar
 | [![iPad](./media/mobile-apps-for-mobile-devices/ipad-logo-50-px.png)](mobile-iphone-app-get-started.md) |On the **iPad**, the Power BI mobile app displays dashboards and reports the way they were formatted for the Power BI service. Plus, you can view your [Power BI Report Server and Reporting Services KPIs and reports](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) right on your iPad. You can [set data alerts in the Power BI mobile app](mobile-set-data-alerts-in-the-mobile-apps.md) to notify you when data in a dashboard changes beyond limits you set. <br/>Get started with the [Power BI mobile app for iOS](mobile-iphone-app-get-started.md). |
 | [![Android phone](media/mobile-apps-for-mobile-devices/android-phone-logo-50-px.png)](mobile-android-app-get-started.md) |The Power BI mobile app for the **Android phone** brings Power BI to your pocket, with up-to-date, touch-enabled mobile access to your business information. You can [filter a report by your geographic location](mobile-apps-geographic-filtering.md). You can [scan QR codes with your Android phone](mobile-apps-qr-code.md) and go straight to a Power BI dashboard or report. <br/>Get started with the [Power BI mobile app for Android](mobile-android-app-get-started.md). |
 | [![Android tablet](./media/mobile-apps-for-mobile-devices/android-tablet-logo-50-px.png)](mobile-android-app-get-started.md) |This mobile app runs on a number of different **Android tablets**, bringing you up-to-date, touch-enabled mobile access to your business information. On the Android tablet, the Power BI mobile app displays dashboards and reports the way they were formatted for the Power BI service. You can [mark your favorite dashboards and reports](mobile-apps-favorites.md), so you can get to them quickly, along with your favorite Power BI Report Server and Reporting Services KPIs and reports. <br/>Get started with the [Power BI mobile app for Android](mobile-android-app-get-started.md). |
-| [![Windows devices](./media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](../../fundamentals/desktop-getting-started.md) |The Power BI mobile app for Windows runs on any Windows 10 or higher device. Along with many of the features of the other mobile apps, the Power BI mobile app for Windows offers special functionality. For example, you can [pin a Power BI dashboard to the Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) from the Power BI mobile app. Plus, you can [run Power BI in presentation mode on Surface Hub](mobile-windows-10-app-presentation-mode.md) and in the Power BI mobile app for Windows. <br/>Get started with the [Power BI mobile app for Windows devices](mobile-windows-10-phone-app-get-started.md). |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
+>
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
 
 ## Enterprise support for the Power BI mobile apps
 
@@ -45,6 +46,6 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 
 Read more about [configuring Power BI mobile apps for Android and iOS with Microsoft Intune](../../enterprise/service-admin-mobile-intune.md).
 
-## Next steps
+## Related content
 
 [Quickstart: Explore dashboards and reports in the Power BI mobile apps](mobile-apps-quickstart-view-dashboard-report.md)

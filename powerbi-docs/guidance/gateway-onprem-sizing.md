@@ -22,7 +22,7 @@ The on-premises data gateway supports two workloads. It's important you first un
 
 ### Cached data workload
 
-The _Cached data_ workload retrieves and transforms source data for loading into Power BI datasets. It does so in three steps:
+The _Cached data_ workload retrieves and transforms source data for loading into Power BI semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). It does so in three steps:
 
 1. **Connection**: The gateway connects to source data.
 1. **Data retrieval and transformation**: Data is retrieved, and when necessary, transformed. Whenever possible, the Power Query mashup engine pushes transformation steps to the data source—it's known as _[query folding](power-query-folding.md)_. When it's not possible, transformations must be done by the gateway. In this case, the gateway will consume more CPU and memory resources.
@@ -34,8 +34,8 @@ The _Cached data_ workload retrieves and transforms source data for loading into
 
 The _Live Connection and DirectQuery_ workload works mostly in pass-through mode. The Power BI service sends queries, and the gateway responds with query results. Generally, query results are small in size.
 
-- For more information about Live Connection, see [Datasets in the Power BI service (Externally-hosted models)](../connect-data/service-datasets-understand.md#external-hosted-models).
-- For more information about DirectQuery, see [Dataset modes in the Power BI service (DirectQuery mode)](../connect-data/service-dataset-modes-understand.md#directquery-mode).
+- For more information about Live Connection, see [Semantic models in the Power BI service (Externally-hosted models)](../connect-data/service-datasets-understand.md#external-hosted-models).
+- For more information about DirectQuery, see [Semantic model modes in the Power BI service (DirectQuery mode)](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 This workload requires CPU resources for routing queries and query results. Usually there's much less demand for CPU than is required by the Cache data workload—especially when it's required to transform data for caching.
 
@@ -48,7 +48,7 @@ Reliable, fast, and consistent connectivity is important to ensure report users 
 Determining the correct sizing for your gateway machine can depend on the following variables:
 
 - **For Cache data workloads:**
-  - The number of concurrent dataset refreshes
+  - The number of concurrent semantic model refreshes
   - The types of data sources (relational database, analytic database, data feeds, or files)
   - The volume of data to be retrieved from data sources
   - Any transformations required to be done by the Power Query mashup engine
@@ -58,7 +58,7 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
   - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
-  - Whether datasets enforce [Row-level Security (RLS)](../enterprise/service-admin-rls.md)
+  - Whether semantic models enforce [Row-level Security (RLS)](../enterprise/service-admin-rls.md)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
@@ -93,18 +93,18 @@ For large-scale deployments, you can create a gateway with multiple cluster memb
 
 For more information, see [Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters).
 
-### Dataset design and settings
+### Semantic model design and settings
 
-Dataset design, and their settings, can impact on gateway workloads. To reduce gateway workload, you can consider the following actions.
+Semantic model design, and their settings, can impact on gateway workloads. To reduce gateway workload, you can consider the following actions.
 
-For Import datasets:
+For Import semantic models:
 
 - Set up less frequent data refresh.
 - Set up [incremental refresh](../connect-data/incremental-refresh-overview.md) to minimize the amount of data to transfer.
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place.
 - Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model.
 
-For DirectQuery datasets:
+For DirectQuery semantic models:
 
 - Optimize data sources, model, and report designs—for more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md).
 - Create [aggregations](../enterprise/aggregations-auto.md) to cache higher-level results to reduce the number of DirectQuery requests.
@@ -112,11 +112,11 @@ For DirectQuery datasets:
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency.
 - Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model.
 
-For Live Connection datasets:
+For Live Connection semantic models:
 
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

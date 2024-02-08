@@ -1,8 +1,8 @@
 ---
 title: Create reports from data in Microsoft Teams
-description: Learn to create, explore, and enhance Power BI reports from a dataset in your organization in Microsoft Teams. 
-author: maggiesMSFT
-ms.author: maggies
+description: Learn to create, explore, and enhance Power BI reports from a semantic model in your organization in Microsoft Teams. 
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -70,20 +70,20 @@ If you have a table with data, such as an Excel spreadsheet, and want to try vis
 
 When you’re done, save and share the report with your colleagues in Teams.
 
-## Create a report from a dataset in your organization
+## Create a report from a semantic model in your organization
 
-Many organizations share datasets that you can use to build your reports. These datasets are great because they offer up-to-date authoritative data. Datasets marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports keep working longer.
+Many organizations share semantic models that you can use to build your reports. These semantic models are great because they offer up-to-date authoritative data. Semantic models marked *certified* or *promoted* are likely to be higher quality and better maintained, so your reports keep working longer.
 
-To build a report from a dataset shared with you, follow these steps.
+To build a report from a semantic model shared with you, follow these steps.
 
 1. Open the Power BI app for Microsoft Teams.
-1. Select the **Create** tab > **Pick a published dataset**.
+1. Select the **Create** tab > **Pick a published semantic model**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published dataset option selected." lightbox="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png" alt-text="Screenshot of Power BI app open in Teams with the Create tab and Pick a published semantic model option selected." lightbox="media/business-user-teams-create-reports/teams-power-bi-create-published-dataset.png":::
 
-1. Select a dataset > **Auto-create report**.
+1. Select a semantic model > **Auto-create report**.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a dataset to create a report with the report and create button selected." lightbox="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png" alt-text="Screenshot of a window open to select a semantic model to create a report with the report and create button selected." lightbox="media/business-user-teams-create-reports/teams-power-bi-select-dataset.png":::
 
 1. Start exploring the data.
 
@@ -92,26 +92,26 @@ To build a report from a dataset shared with you, follow these steps.
 
 1. After you complete your work, save and share the report.
 
-## Explore datasets and reports shared with you
+## Explore semantic models and reports shared with you
 
-It's easy to find all the datasets your organization has shared with you. They’re in the Datasets hub in the Power BI app for Microsoft Teams. Again, datasets marked *certified* or *promoted* are likely to be higher quality and better maintained.
+It's easy to find all the semantic models your organization has shared with you. They’re in the OneLake data hub in the Power BI app for Microsoft Teams. Again, semantic models marked *certified* or *promoted* are likely to be higher quality and better maintained.
 
 1. Open the Power BI app for Microsoft Teams.
 
     Need to install the Power BI app? [Install the app, then pin it](../collaborate-share/service-microsoft-teams-app.md#install-the-power-bi-app) to the Teams navigation pane.
 
-1. Go to the **Data hub** tab.
-1. Select a dataset from the list or from the recommended datasets.
+1. Go to the **OneLake data hub** tab.
+1. Select a semantic model from the list or from the recommended semantic models.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Screenshot showing the Data Hub tab selected with the recommended datasets and a list of datasets." lightbox="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png" alt-text="Screenshot showing the Data Hub tab selected with the recommended semantic models and a list of semantic models." lightbox="media/business-user-teams-create-reports/teams-power-bi-datasets-tab.png":::
 
-1. Explore the **Dataset details** page.
+1. Explore the **Semantic model details** page.
 
-    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Screenshot of the Dataset details page and related reports." lightbox="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png":::
+    :::image type="content" source="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png" alt-text="Screenshot of the Semantic model details page and related reports." lightbox="media/business-user-teams-create-reports/teams-power-bi-datasets-details.png":::
 
-    - Discover prebuilt reports that use the dataset.
-    - Create a report in Power BI from the dataset with **Create a report**.
-    - Share data and give people access to the dataset to work.
+    - Discover prebuilt reports that use the semantic model.
+    - Create a report in Power BI from the semantic model with **Create a report**.
+    - Share data and give people access to the semantic model to work.
     - Select a table or column to export data or select more than one table to create a paginated report.
 
 When you find interesting reports relevant to your team, bring them into your collaboration. Add them to channels, meetings, and chats as tabs or in a conversation.
@@ -172,7 +172,7 @@ To get started with Power BI Desktop, follow these steps.
 1. [Publish the report](../collaborate-share/service-publish-to-web.md) to the Power BI service.
 1. Share the report with your colleagues in Teams.
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use data to make meetings productive in Microsoft Teams](business-user-teams-meetings.md)

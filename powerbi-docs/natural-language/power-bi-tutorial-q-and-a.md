@@ -38,7 +38,7 @@ The Q&A visual is similar to the [dashboard Q&A visual experience](end-user-q-an
 
 :::image type="content" source="media/power-bi-tutorial-q-and-a/power-bi-q-and-a-blank.png" alt-text="Screenshot of a Q&A visual in a report.":::
 
-If you're unsure what question to ask or what text to use, select the **Show all suggestions** link on the report canvas to see all the suggestions from Power BI. Another approach is to scan the data fields in the **Data** pane or scan the other visuals in the report. You can get ideas for specific topical questions to ask and unique terms for the dataset to use in your query.
+If you're unsure what question to ask or what text to use, select the **Show all suggestions** link on the report canvas to see all the suggestions from Power BI. Another approach is to scan the data fields in the **Data** pane or scan the other visuals in the report. You can get ideas for specific topical questions to ask and unique terms for the semantic model to use in your query.
 
 The following image shows the report canvas with all Power BI suggestions visible. After you select the link to see all suggestions from Power BI, the link option changes to show _fewer_ suggestions.
 
@@ -70,9 +70,9 @@ In the previous example, we selected a suggested question from Power BI to creat
 
 1. Enter more text for the current question. 
 
-   As you enter more text for the question, Power BI lets you know when it doesn't understand the question and tries to help. In this example, Power BI suggests a different way to word the question by using terminology from the dataset. The suggested terms are underlined in blue.
+   As you enter more text for the question, Power BI lets you know when it doesn't understand the question and tries to help. In this example, Power BI suggests a different way to word the question by using terminology from the semantic model. The suggested terms are underlined in blue.
 
-   :::image type="content" source="media/power-bi-tutorial-q-and-a/power-bi-define.png" alt-text="Screenshot of the Q&A question field with suggested terms from the dataset underlined in blue and corresponding suggested questions from Power BI." border="false":::
+   :::image type="content" source="media/power-bi-tutorial-q-and-a/power-bi-define.png" alt-text="Screenshot of the Q&A question field with suggested terms from the semantic model underlined in blue and corresponding suggested questions from Power BI." border="false":::
 
    With Power BI's help, we're able to ask a question with all recognizable terms. Power BI displays the results as a line chart.
 
@@ -102,7 +102,7 @@ Interact with the Q&A Explorer window as you would with the Q&A window on a dash
 ## Considerations and limitations
 At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Fabric administrator can enable. 
 
-## Next steps
+## Related content
 
 - [Q&A basics](../consumer/end-user-q-and-a.md)
 - [Use a Q&A visual on a dashboard](end-user-q-and-a-tutorial.md)

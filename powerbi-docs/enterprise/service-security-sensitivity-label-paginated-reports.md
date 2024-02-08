@@ -30,7 +30,7 @@ A Paginated Report visual is a special type of visual that you can include in a 
 
 When a supported file type is exported from a Paginated Report visual that is included in a Power BI report, and the original paginated report being rendered in the visual has a sensitivity label, the exported file inherits the sensitivity label of the original paginated report. If the original paginated report doesn't have a label, the exported file inherits the label of the Power BI report, if it has one.
 
-## Next steps
+## Related content
 
 * [Apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)

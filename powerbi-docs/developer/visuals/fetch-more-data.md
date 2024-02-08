@@ -1,6 +1,6 @@
 ---
 title: Fetch more data from Power BI
-description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals by using the fetchMoreData API.
+description: This article discusses how to enable a segmented fetch of large semantic models for Power BI visuals by using the fetchMoreData API.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -23,7 +23,7 @@ You can configure the number of rows to fetch at a time in advance, or you can u
 >
 > To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
-## Enable a segmented fetch of large datasets
+## Enable a segmented fetch of large semantic models
 
 Define a window size for `dataReductionAlgorithm` in the visual's *capabilities.json* file for the required `dataViewMapping`. The `count` determines the window size, which limits the number of new data rows that you can append to the `dataview` in each update.
 
@@ -252,7 +252,7 @@ The data reduction information will appear under *visual* in the format pane.
 
 * In segments aggregation mode, the data view memory size is limited to 100 MB.
 
-## Next steps
+## Related content
 
 * [Data view mappings](dataview-mappings.md)
 * [DataViewUtils](utils-dataview.md)

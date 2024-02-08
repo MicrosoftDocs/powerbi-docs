@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/18/2023
+ms.date: 12/25/2023
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
@@ -21,7 +21,7 @@ Doughnut charts work best when you use them to compare a particular section to t
 
 ## Prerequisites
 
-Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that you have saved the report in Premium capacity.
+Sharing your report with a Power BI colleague requires that you both have licenses for the paid version of Power BI or that the report is saved in Premium capacity.
 
 ## Get the sample
 
@@ -74,6 +74,10 @@ Follow these steps to create a doughnut chart.
 
    :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png" alt-text="Screenshot that shows a doughnut chart next to the Data pane.":::
 
+1. To see details within each section of a doughnut chart, add a category to the **Details** field. 
+
+     :::image type="content" source="media/power-bi-visualization-doughnut-charts/power-bi-details.png" alt-text="Screenshot that shows a doughnut chart with Details next to the Data pane.":::
+
 1. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md).
 
 ## Considerations and troubleshooting
@@ -83,7 +87,7 @@ Here are a few things to consider as you work with doughnut charts.
 - The sum of the doughnut chart values must add up to 100%.
 - Too many categories create small slices in the chart. Small slices can be difficult to read and interpret.
 
-## Next steps
+## Related content
 
 - [Funnel charts in Power BI](power-bi-visualization-funnel-charts.md)
 

@@ -24,7 +24,7 @@ Let’s get started!
 
 ## Prerequisites
 
-- Before you start, if you haven't enabled Fabric yet, [enable Fabric for your organization](https://learn.microsoft.com/fabric/admin/fabric-switch)
+- Before you start, if you haven't enabled Fabric yet, [enable Fabric for your organization](/fabric/admin/fabric-switch)
 - If you aren't signed up yet, [sign up for a free trial](service-self-service-signup-for-power-bi.md).
 - Create a [new workspace](../collaborate-share/service-create-the-new-workspaces.md) and assign a Fabric capacity.
      - An existing workspace can also be used, although we recommend using a nonproduction workspace for simplicity of the tutorial.
@@ -385,7 +385,7 @@ Now that you’ve modeled your data, it's time to visualize and explore your dat
 
 You can learn more about [quick create](../create-reports/service-quick-create-report.md).
 
-## Next steps
+## Related content
 
 Congratulations on completing the tutorial! If you created a workspace for the tutorial, you can choose to delete it now. Alternatively, you can remove the individual items that were created during the tutorial.
 

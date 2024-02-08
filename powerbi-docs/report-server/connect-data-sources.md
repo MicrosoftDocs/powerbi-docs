@@ -30,7 +30,8 @@ To enable the feature, modify ORACLE extension entry rsreportserver.config file 
 </Extension>
 ```
 
-## Next steps
+## Related content
+
 Now that you've connected to your data source, [create a paginated report](quickstart-create-paginated-report.md).  
 
 

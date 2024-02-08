@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 08/10/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Use AI Insights in Power BI Desktop
@@ -97,7 +97,7 @@ The first time you use AI Insights on a new data source, Power BI Desktop prompt
 :::image type="content" source="media/desktop-ai-insights/ai-insights-05.png" alt-text="Screenshot of a warning that states Information is required about data privacy.":::
 
 > [!NOTE]
-> Refreshes of the dataset in Power BI will only work for data sources where the privacy level is set to public or organizational.
+> Refreshes of the semantic model in Power BI will only work for data sources where the privacy level is set to public or organizational.
 
 After you invoke the function, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
@@ -107,7 +107,7 @@ In the cases of image tagging and key phrase extraction, the results can return 
 
 While editing in Power Query and performing refreshes in Power BI Desktop, Text Analytics and Vision use the Premium capacity that was selected in Power Query Editor. After Text Analytics or Vision publishes the report, they use the Premium capacity of the workspace into which it was published.
 
-Reports with applied Text Analytics and Vision functions should be published to a workspace that is on a Premium capacity, otherwise refreshing the dataset fails.
+Reports with applied Text Analytics and Vision functions should be published to a workspace that is on a Premium capacity, otherwise refreshing the semantic model fails.
 
 ### Manage impact on a Premium capacity
 
@@ -202,11 +202,11 @@ The following considerations and limitations apply to Azure Machine Learning in 
 * Direct Query isn't supported.
 * Users with a Premium Per User (PPU) only license cannot use AI Insights from Power BI Desktop; you must use a non-PPU Premium license with its corresponding Premium capacity. You can still use AI Insights with a PPU license the Power BI service.
 
-## Next steps
+## Related content
 
 This article provided an overview of integrating Machine Learning into Power BI Desktop. The following articles might also be interesting and useful.
 
-* [Tutorial: Consume Azure Machine Learning models in Power BI](../connect-data/service-aml-integrate.md)
+
 * [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 * [Cognitive Services in Power BI](./dataflows/dataflows-machine-learning-integration.md)
 * [Azure Machine Learning integration in Power BI](./dataflows/dataflows-machine-learning-integration.md)

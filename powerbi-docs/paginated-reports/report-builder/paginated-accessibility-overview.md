@@ -69,7 +69,7 @@ ISO 14289-1 is the ISO standard for Universal Accessibility requirements for uni
 
 To find updated conformance reports, search for Server Reporting Services in the [Microsoft Accessibility Conformance Portal](https://www.microsoft.com/accessibility/conformance-reports).
 
-## Next steps  
+## Related content  
 
 - [Use accessibility tools to create accessible paginated reports(Power BI Report Builder)](paginated-use-accessibility-tools.md)
 - [Accessibility features in paginated reports (Power BI Report Builder)](paginated-create-accessible-reports.md)

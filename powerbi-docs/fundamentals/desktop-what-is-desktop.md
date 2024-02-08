@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview
-ms.date: 09/19/2022
+ms.date: 01/30/2024
 LocalizationGroup: Get started
 #Customer intent: As a data analyst or report creator, I want to know what Power BI Desktop is, so that I can decide whether it has the features and services I need to create reports.
 ms.custom: intro-overview
@@ -122,7 +122,13 @@ To publish a Power BI Desktop report:
 
    You must have a Power BI license to share reports to the Power BI service.
 
-## Next steps
+## Related content
+
+The following articles can help you understand how Power BI Desktop fits into Microsoft's offerings:
+
+- [What is Power BI?](/power-bi/fundamentals/power-bi-overview)
+- [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview) 
+- [Comparison of Power BI Desktop and the Power BI service](../fundamentals/service-service-vs-desktop.md)
 
 To get started with Power BI Desktop, the first thing you need is to download and install the application. There are a few ways to get Power BI Desktop:
 

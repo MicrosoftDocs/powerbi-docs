@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/04/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: Tenant-level workspace planning
@@ -17,7 +17,7 @@ ms.date: 10/04/2023
 This article covers tenant-level Fabric workspace planning, with an emphasis on the Power BI experience. It's primarily targeted at:
 
 - **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing analytics and supporting self-service users throughout the organization.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing data and BI and supporting self-service users throughout the organization.
 
 Secondarily, this article might also be of interest to self-service creators who need to create, publish, and manage content in workspaces.
 
@@ -30,14 +30,14 @@ We recommend that you make the tenant-level workspace decisions as early as poss
 
 ## Workspace creation permissions
 
-The decision on who is allowed to create workspaces in the Power BI service is a [data culture](powerbi-adoption-roadmap-data-culture.md) and [governance](powerbi-adoption-roadmap-governance.md) decision. Generally, there are two ways to approach this decision:
+The decision on who is allowed to create workspaces in the Power BI service is a [data culture](fabric-adoption-roadmap-data-culture.md) and [governance](fabric-adoption-roadmap-governance.md) decision. Generally, there are two ways to approach this decision:
 
 - **All (or most) users are permitted to create new workspaces:** This approach usually aligns with existing decisions for other applications. For example, when users are permitted to create their own SharePoint sites or Teams channels, it makes sense that Fabric adopts the same policy.
 - **Limited to a selective set of users who are permitted to create new workspaces:** This approach usually indicates a governance plan is in place or is planned. Managing this process can be fully centralized (for instance, only IT is permitted to create a workspace). A more flexible and practical approach is when it's a combination of centralized and decentralized individuals. In this case, certain satellite members of the Center of Excellence (COE), champions, or trusted users have been trained to create and manage workspaces on behalf of their business unit.
 
-You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces.
+You should set up the [Create workspaces](/fabric/admin/portal-workspace#create-workspaces) tenant setting in the [Fabric admin portal](/fabric/admin/admin-center) according to your decision on who is allowed to create workspaces. For more information, see [Govern workspaces](powerbi-implementation-planning-tenant-administration.md#govern-workspaces).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering permissions for who can create workspaces, key decisions and actions include:
 
@@ -56,7 +56,7 @@ It can be difficult to strictly enforce naming conventions when many users posse
 The workspace name can convey additional information about the workspace, including:
 
 - **Purpose:** A workspace name should always include a description of its content. For example, _Sales Quarterly Bonus Tracking_.
-- **Item types:** A workspace name can include a reference to the types of items it contains. For example, use _Sales Data_ to indicate the workspace stores items like a lakehouse or datasets. _Sales Analytics_ could indicate that the workspace stores analytical reports and dashboards.
+- **Item types:** A workspace name can include a reference to the types of items it contains. For example, use _Sales Data_ to indicate the workspace stores items like a lakehouse or semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). _Sales Analytics_ could indicate that the workspace stores analytical reports and dashboards.
 - **Stage (environment):** A workspace name might include its stage. For example, it's common to have separate workspaces (development, test, and production) for [lifecycle management](/fabric/cicd/cicd-overview).
 - **Ownership and responsibility:** A workspace name might include an indication of who's responsible for managing the content. For example, use of an _SLS_ prefix or suffix can indicate that the sales team owns and manages the content.
 
@@ -65,7 +65,7 @@ The workspace name can convey additional information about the workspace, includ
 
 Having consistent workspace names helps everyone. The user experience is improved because users can find content more easily. Also, administrators can oversee the content more easily when predictable naming conventions are used.
 
-We recommend that you include the workspace naming conventions in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) and [training materials](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training).
+We recommend that you include the workspace naming conventions in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) and [training materials](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training).
 
 The following list describes more considerations related to workspace naming.
 
@@ -81,7 +81,7 @@ The following list describes more considerations related to workspace naming.
 > [!NOTE]
 > We recommend that you notify users when a workspace name will change. For the most part, it's safe to rename a workspace in the Fabric portal because the _GroupID_, which is the unique identifier of a workspace, doesn't change (it's found in the workspace URL). However, [XMLA connections](/power-bi/enterprise/service-premium-connect-tools) are impacted because they connect by using the workspace name instead of the GroupID.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering creating workspace naming conventions, key decisions and actions include:
 
@@ -118,7 +118,9 @@ Here are some considerations when planning for Fabric domains in your tenant.
 - **Who will be allowed to assign workspaces to a domain?** Members of the _Domain contributor_ role define which users (who are also workspace administrators) can assign a workspace to a domain. If you allow more users to assign workspaces to a domain, you should frequently audit the accuracy of the assigned groupings. If you allow only specific groups of users, or Fabric admins and Domain admins, you'll have more control over how they're assigned. For more information, see [Domain roles](/fabric/governance/domains#domain-roles).
 - **Are there specific compliance needs or restrictions, such as geographic area?** Keep in mind that the geographic area for data storage is set for each capacity (rather than for the domain). Consider how assigning a workspace to a domain—and to a capacity—affects your planning process.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+For more information, see [Govern domains](powerbi-implementation-planning-tenant-administration.md#govern-domains).
+
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for workspace domains, key decisions and actions include:
 
@@ -159,7 +161,7 @@ There are many technology options you can use to create an online form for the w
 > [!TIP]
 > To improve efficiency and accuracy, consider automating the process by using the [Power BI REST API](/rest/api/power-bi/groups/create-group) to programmatically create or update a workspace. In this case, we recommend including review and approval processes rather than automatically processing each request.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the process to request a new workspace, key decisions and actions include:
 
@@ -183,7 +185,7 @@ There are four key decision criteria to determine the level of governance:
 - Is the data, and/or the BI solution, considered critical?
 
 > [!NOTE]
-> For more information about the four key decision criteria, see the [governance](powerbi-adoption-roadmap-governance.md#decision-criteria) article that forms part of the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+> For more information about the four key decision criteria, see the [governance](fabric-adoption-roadmap-governance.md#decision-criteria) article that forms part of the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 You might start out with two levels of workspaces: governed and ungoverned. We recommend that you keep the governance levels as simple as possible. However, depending on your specific circumstances, you might need to subdivide the governed classification. For example, critical content that's managed by the enterprise BI team might have one set of governance requirements. Whereas critical content that's owned and managed directly by business units could be subject to a slightly different set of requirements. In some cases, decisions will be tailored to individual business units.
 
@@ -191,20 +193,20 @@ The following table lists some of the most common requirements when a workspace 
 
 | **Category** | **Potential governance requirement** |
 | --- | --- |
-| Ownership and support | &bull;&nbsp;[Ownership](powerbi-adoption-roadmap-content-ownership-and-management.md) is assigned with clear responsibilities for the technical content owner and/or the subject matter expert. <br/><br/>&bull;&nbsp;[User support](powerbi-adoption-roadmap-user-support.md) team/person is assigned, and users understand how to request help or submit issues. <br/><br/>&bull;&nbsp;A mechanism is in place for user feedback, questions, and enhancement requests. <br/><br/>&bull;&nbsp;A [communication plan](powerbi-adoption-roadmap-community-of-practice.md#communication-plan) exists to announce important changes to content in the workspace. |
+| Ownership and support | &bull;&nbsp;[Ownership](fabric-adoption-roadmap-content-ownership-and-management.md) is assigned with clear responsibilities for the technical content owner and/or the subject matter expert. <br/><br/>&bull;&nbsp;[User support](fabric-adoption-roadmap-user-support.md) team/person is assigned, and users understand how to request help or submit issues. <br/><br/>&bull;&nbsp;A mechanism is in place for user feedback, questions, and enhancement requests. <br/><br/>&bull;&nbsp;A [communication plan](fabric-adoption-roadmap-community-of-practice.md#communication-plan) exists to announce important changes to content in the workspace. |
 | Workspace setup | &bull;&nbsp;The workspace is well-organized with a well-defined purpose. <br/><br/>&bull;&nbsp;A specific naming convention is used. <br/><br/>&bull;&nbsp;The workspace is assigned to a specific [domain](/fabric/governance/domains). <br/><br/>&bull;&nbsp;Workspace description, image, and contacts are required. |
 | Accuracy | &bull;&nbsp;All content is [certified](/power-bi/collaborate-share/service-endorse-content). <br/><br/>&bull;&nbsp;Data validations are automated so that content owners become aware of data quality issues on a timely basis. |
 | Distribution | &bull;&nbsp;A [Power BI app](/power-bi/collaborate-share/service-create-distribute-apps) is used for distributing reports and dashboards. |
 | Security and data protection | &bull;&nbsp;[Security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) are used (instead of individual accounts) for managing [workspace roles](/fabric/get-started/roles-workspaces#workspace-roles). <br/><br/>&bull;&nbsp;Sensitivity labels are used for [information protection](powerbi-implementation-planning-info-protection.md). <br/><br/>&bull;&nbsp;Only sanctioned (or approved) data sources are permitted. <br/><br/>&bull;&nbsp;All source files reside in a secure location that's backed up. |
 | Change management | &bull;&nbsp;Separate development, test, and production workspaces are used. <br/><br/>&bull;&nbsp;Source control (such as [Git integration](/fabric/cicd/git-integration/intro-to-git-integration)) is used for all Power BI Desktop files and items in the Fabric portal. <br/><br/>&bull;&nbsp;Versioning or source control is used for all data source files. <br/><br/>&bull;&nbsp;[Lifecycle management](/fabric/cicd/best-practices-cicd) and change management processes, including deployment pipelines and/or DevOps processes, are followed. |
 | Capacity | &bull;&nbsp;The workspace is assigned to an appropriate [Fabric capacity](/fabric/enterprise/licenses#capacity-and-skus) level. <br/><br/>&bull;&nbsp; The Fabric capacity is managed and monitored. |
-| Gateway | &bull;&nbsp;A [data gateway](powerbi-adoption-roadmap-system-oversight.md#gateway-architecture-and-management) in standard mode (non-personal) is used. <br/><br/>&bull;&nbsp;All gateway data source credentials use approved credentials. |
+| Gateway | &bull;&nbsp;A [data gateway](fabric-adoption-roadmap-system-oversight.md#data-gateway-architecture-and-management) in standard mode (non-personal) is used. <br/><br/>&bull;&nbsp;All gateway data source credentials use approved credentials. |
 | Auditing and monitoring | &bull;&nbsp;Active [auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md) processes are in place for tracking adoption, usage patterns, and performance. |
 
 > [!TIP]
 > Governance requirements usually aren't optional. For this reason, timely auditing is important, and enforcement becomes necessary in certain situations. For example, if governed workspaces require all files be in a secure location and an unapproved file location is detected during auditing, then action should be taken to update the file location.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When considering the workspace governance level, key decisions and actions include:
 
@@ -216,6 +218,6 @@ The following table lists some of the most common requirements when a workspace 
 > - **Create documentation for workspace governance requirements:** Create useful documentation targeted at content creators that includes what their responsibilities are for managing content in a governed workspace. Make the information available in your centralized portal and training materials.
 > - **Create workspace auditing processes:** For workspaces that are considered governed, create an auditing process to identify areas of noncompliance with the most important requirements. Ensure that someone is responsible for contacting content owners to address compliance issues.
 
-## Next steps
+## Related content
 
 In the [next article](powerbi-implementation-planning-workspaces-workspace-level-planning.md) in this series, learn about workspace-level planning.

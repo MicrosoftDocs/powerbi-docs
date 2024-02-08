@@ -16,10 +16,10 @@ The **Drilldown API** allows you to create a visual that can trigger a drilldown
 
 The API enables the visual to show next level, expand to next level, or drill up based on the parameters passed to the API. For more information about drilling down, see [Drill down support](drill-down-support.md).
 
-> [!NOTE]
-> The **Drilldown API** is available from API version 4.7 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
-
 ## How to use the drilldown API
+
+> [!NOTE]
+> The **Drilldown API** is available from API version 4.7.0 To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
 Add the following to the *capabilities.json* file:
 
@@ -29,7 +29,7 @@ Add the following to the *capabilities.json* file:
     }
 ```
 
-## Example: Drilldown API
+### Example: Drilldown API
 
 The following example shows how the visual call a drilldown operation.
 

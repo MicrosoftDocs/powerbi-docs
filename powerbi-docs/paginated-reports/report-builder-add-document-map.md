@@ -105,8 +105,8 @@ Create a document map to provide a set of links, like a table of contents, in yo
 > [!NOTE]  
 > For more information about downloading sample reports, see [Report Builder and Report Designer sample reports](https://social.technet.microsoft.com/wiki/contents/articles/1093.reporting-services-samples-on-codeplex-sql-server-reporting-services-ssrs.aspx).
 
-## See also 
+## Related content
 
-[SQL Server Reporting Services URL Access](/sql/reporting-services/url-access-ssrs)
+- [SQL Server Reporting Services URL Access](/sql/reporting-services/url-access-ssrs)
 
 More questions? [Try asking the Reporting Services forum](/answers/search.html?c=&f=&includeChildren=&q=ssrs+OR+reporting+services&redirect=search%2fsearch&sort=relevance&type=question+OR+idea+OR+kbentry+OR+answer+OR+topic+OR+user)

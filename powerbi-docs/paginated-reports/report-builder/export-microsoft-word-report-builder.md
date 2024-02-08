@@ -4,7 +4,6 @@ ms.date: 09/20/2023
 ms.service: powerbi
 ms.subservice: report-builder
 description: The Word rendering extension renders Power BI paginated reports to the Microsoft Word format (.docx). The format is Office Open XML.
-ms.custom: seodec18
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -159,10 +158,10 @@ See [Create a document map or table of contents (Power BI Report Builder)](/sql/
 ##  <a name="DeviceInfo"></a> Device information settings  
  You can change some default settings for this renderer, such as omit hyperlinks and drillthrough links or expand all items that can be toggled regardless of the original state of the item when rendered, by changing the device information settings. For more information, see [Word device information settings](../device-info/word-device-information-settings.md).  
 
-## Next steps
+## Related content
 
-[Pagination in Reporting Services](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
-[Rendering Behaviors](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
-[Interactive Functionality for Different Report Rendering Extensions](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
-[Rendering Report Items](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
-[Tables, Matrices, and Lists](../report-builder-tables-matrices-lists.md)  
+- [Pagination in Reporting Services](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+- [Rendering Behaviors](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+- [Interactive Functionality for Different Report Rendering Extensions](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+- [Rendering Report Items](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+- [Tables, Matrices, and Lists](../report-builder-tables-matrices-lists.md)  

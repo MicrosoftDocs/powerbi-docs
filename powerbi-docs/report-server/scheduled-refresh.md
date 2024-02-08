@@ -59,7 +59,8 @@ For information about memory settings within Analysis Services, see [Memory Prop
 ### Data model size limit
 The data model loaded into the internal Analysis Services engine during a scheduled refresh has a maximum size of 2,000 MB (2GB). This maximum size can't be configured. If your data model grows larger than 2GB, you will receive the refresh error, "The length of the result exceeds the length limit (2GB) of the target large type." In that case, we recommend hosting the model in an Analysis Services instance and using a live connection to the model in the report.
 
-## Next steps
-Configure [scheduled refresh](configure-scheduled-refresh.md) on a Power BI report.
+## Related content
+
+* Configure [scheduled refresh](configure-scheduled-refresh.md) on a Power BI report.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

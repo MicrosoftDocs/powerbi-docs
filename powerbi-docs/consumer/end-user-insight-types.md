@@ -22,7 +22,7 @@ To learn how to use Insights, see [View data insights on dashboard tiles with Po
 
 ## How does Insights work?
 
-Power BI searches different subsets of your dataset and applies a set of sophisticated algorithms to discover potentially interesting insights. You can run Insights on dashboard tiles, report visuals, and report pages.
+Power BI searches different subsets of your semantic model and applies a set of sophisticated algorithms to discover potentially interesting insights. You can run Insights on dashboard tiles, report visuals, and report pages.
 
 ## Some terminology
 
@@ -30,7 +30,7 @@ Power BI uses statistical algorithms to uncover Insights. The algorithms are lis
 
 * *Measure* - A measure is a quantitative (numeric) field that can be used to do calculations. Common calculations are sum, average, and minimum. For example, if our company makes and sells skateboards, our measures might be number of skateboards sold and average profit per year.
   
-* *Dimension* - Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
+* *Dimension* - Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a semantic model, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
 * *Correlation* - A correlation tells us how the behavior of things relate.  If their patterns of increase and decrease are similar, they're positively correlated. If their patterns are opposite, they're negatively correlated. For example, if sales of red skateboards increase each time we run a tv marketing campaign, sales of the red skateboards and the tv marketing campaign are positively correlated.
 
@@ -56,7 +56,7 @@ Highlights when there are significant changes in trends in a time series of data
 
 ### Correlation
 
-Detects cases where multiple measures show a similar pattern or trend when plotted against a category or value in the dataset.
+Detects cases where multiple measures show a similar pattern or trend when plotted against a category or value in the semantic model.
 
 ![Screenshot of a correlation Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-correlation.png)
 
@@ -104,8 +104,8 @@ For data across a time series, detects when there are specific dates or times wi
 
 ![Screenshot of a time series Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
 
-## Next steps
+## Related content
 
-[View data insights on dashboard tiles with Power BI](end-user-insights.md)
+* [View data insights on dashboard tiles with Power BI](end-user-insights.md)
 
 More questions? Ask the [Power BI Community](https://community.powerbi.com/)

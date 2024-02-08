@@ -36,6 +36,6 @@ ms.reviewer: rpatkar
 
  Represents a single dataset. A dataset is the parent node for the collection of fields specified by the query and including any calculated fields. Reporting Services supports query designers to help you specify a query.
   
-## Next steps
+## Related content
 
- - [Dataset Fields Collection (Power BI Report Builder)](./dataset-fields-collection-report-builder.md)
+- [Dataset Fields Collection (Power BI Report Builder)](./dataset-fields-collection-report-builder.md)

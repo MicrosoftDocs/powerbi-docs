@@ -52,9 +52,10 @@ A drillthrough report is a report that a user opens by clicking a link within an
 ## Considerations and limitations
 
 - Drillthrough to a report isn't supported in Report Preview.
-## Next steps
 
-[Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)](drillthrough-drilldown-subreports-nested-data-regions.md)  
+## Related content
+
+- [Drillthrough, drilldown, subreports, and nested data regions in a paginated report (Power BI Report Builder)](drillthrough-drilldown-subreports-nested-data-regions.md)  
   
   
 

@@ -31,7 +31,7 @@ For information about dataflows in Power BI, see [connect to data sources for Po
 - Power BI Desktop and the Power BI service may send multiple queries for any given query, to get schema information or the data itself, based in part on whether data is cached. This behavior is by design, for more information, see the Power Query article that describes [why a query may run multiple times](/power-query/multiple-queries).
 
 
-## Next steps
+## Related content
 
 The following articles provide more information about Power BI and connecting to data:
 

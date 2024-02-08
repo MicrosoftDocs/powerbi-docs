@@ -113,7 +113,7 @@ Drill actions aren't available in the tooltip for the following scenarios:
 
 We don't have visual-level control to turn on or off the drill actions for the tooltips. You can enable or disable this capability for a whole report.
 
-## Next steps
+## Related content
 
 * [Create tooltips based on report pages](desktop-tooltips.md)
 * [Set up drillthrough in Power BI reports](desktop-drillthrough.md)

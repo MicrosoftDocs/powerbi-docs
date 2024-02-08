@@ -20,9 +20,9 @@ This article walks you through how to create a [Power BI Embedded](embedded-anal
 
 Before you can create a capacity, you need the following:
 
-1. An **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
+1. An **Microsoft Entra ID:** Your subscription must be associated with a Microsoft Entra *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
-2. A **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI. Sign into Power BI from that account.
+2. A **Power BI tenant:** At least one account in your Microsoft Entra tenant must be signed up for Power BI. Sign into Power BI from that account.
 
 3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account, if you don't already have one.
 
@@ -276,9 +276,9 @@ To delete the capacity you created, follow these steps:
 
 ## Considerations and limitations
 
-Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
+Your subscription must be associated with a Microsoft Entra organizational account. Microsoft personal accounts aren't supported
 
-## Next steps
+## Related content
 
 * [Manage capacities](../../enterprise/service-admin-premium-manage.md)
 * [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)

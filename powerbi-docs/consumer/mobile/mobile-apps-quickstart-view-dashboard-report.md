@@ -85,7 +85,7 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
 
 ## Clean up resources
 
-After you finish this quickstart, you can delete the Retail Analysis Sample dashboard, report, and dataset, if you wish.
+After you finish this quickstart, you can delete the Retail Analysis Sample dashboard, report, and semantic model, if you wish.
 
 1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
 
@@ -97,12 +97,12 @@ After you finish this quickstart, you can delete the Retail Analysis Sample dash
 
     Now click the reports tab and do the same.
 
-4. Now select the datasets tab, click **More options** (...), and choose **Delete**. 
+4. Now select the semantic models tab, click **More options** (...), and choose **Delete**. 
 
 
-    ![Select the Delete datasets](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail-datasets.png)
+    ![Select the Delete semantic models](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail-datasets.png)
 
-## Next steps
+## Related content
 
 In this quickstart, you explored a sample dashboard and report on your mobile device. Read more about working in the Power BI service. 
 

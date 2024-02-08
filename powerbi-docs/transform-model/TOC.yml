@@ -23,6 +23,8 @@
       href: service-edit-data-models.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
+    - name: "Work with DAX query view"
+      href: dax-query-view.md  
     - name: "Work with Model explorer (preview)"
       href: model-explorer.md        
     - name: "Understand model relationships"

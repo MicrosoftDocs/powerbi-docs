@@ -1,19 +1,19 @@
 ---
 title: Use Model view in Power BI Desktop
-description: Learn how to use Model view to see and work with complex datasets in a visual format in Power BI Desktop.
+description: Learn how to use Model view to see and work with complex semantic models in a visual format in Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 11/10/2023
 LocalizationGroup: Transform and shape data
 ---
 
 # Work with Modeling view in Power BI Desktop
 
-With **Model view** in **Power BI Desktop**, you can view and work with complex datasets that contain many tables.
+With **Model view** in **Power BI Desktop**, you can view and work with complex semantic models that contain many tables.
 
 ## Use Model view
 
@@ -23,7 +23,7 @@ To access **Model view**, select the **Model icon** found on the left side of **
 
 ## Create separate diagrams
 
-With **Model view**, you can create diagrams of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex datasets easier. To create a new diagram with only a subset of the tables, select the **+** button next to the **All tables** tab along the bottom of the Power BI Desktop window.
+With **Model view**, you can create diagrams of your model that contain only a subset of the tables in your model. This reorganization can help provide a clearer view into the tables you want to work with, and make working with complex semantic models easier. To create a new diagram with only a subset of the tables, select the **+** button next to the **All tables** tab along the bottom of the Power BI Desktop window.
 
 :::image type="content" source="media/desktop-modeling-view/modeling-view-03.png" alt-text="Screenshot of the + sign button in the tabs section that creates a new diagram.":::
 
@@ -56,7 +56,7 @@ For example, you could change the [visibility](desktop-storage-mode.md) for mult
 
 :::image type="content" source="media/desktop-modeling-view/modeling-view-06.png" alt-text="Screenshot highlighting changing the Storage mode on multiple tables." lightbox="media/desktop-modeling-view/modeling-view-06.png":::
 
-## Next steps
+## Related content
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 

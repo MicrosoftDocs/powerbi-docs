@@ -1,8 +1,8 @@
 ---
 title: User-defined aggregations
-description: Describes using manually configured aggregations to speed up data analysis over large datasets.
-author: minewiskan
-ms.author: owend
+description: Describes using manually configured aggregations to speed up data analysis over large semantic models.
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -12,7 +12,7 @@ LocalizationGroup: Transform and shape data
 ---
 # User-defined aggregations
 
-Aggregations in Power BI can improve query performance over very large DirectQuery datasets. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../enterprise/aggregations-auto.md) feature in dataset Settings.
+Aggregations in Power BI can improve query performance over very large DirectQuery semantic models. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../enterprise/aggregations-auto.md) feature in model Settings.
 
 ## Creating aggregation tables
 
@@ -49,7 +49,7 @@ Most validations are enforced by disabling dropdown values and showing explanato
 
 ### Aggregation tables are hidden
 
-Users with read-only access to the dataset can't query aggregation tables. This avoids security concerns when used with *row-level security (RLS)*. Consumers and queries refer to the detail table, not the aggregation table, and don't need to know about the aggregation table.
+Users with read-only access to the model can't query aggregation tables. This avoids security concerns when used with *row-level security (RLS)*. Consumers and queries refer to the detail table, not the aggregation table, and don't need to know about the aggregation table.
 
 For this reason, aggregation tables are hidden from **Report** view. If the table isn't already hidden, the **Manage aggregations** dialog will set it to hidden when you select **Apply all**.
 
@@ -81,7 +81,7 @@ For [aggregations based on GroupBy columns](#aggregation-based-on-groupby-column
 
 ## Aggregation based on relationships
 
-Dimensional models typically use *aggregations based on relationships*. Power BI datasets from data warehouses and data marts resemble star/snowflake schemas, with relationships between dimension tables and fact tables.
+Dimensional models typically use *aggregations based on relationships*. Power BI models from data warehouses and data marts resemble star/snowflake schemas, with relationships between dimension tables and fact tables.
 
 In the following example, the model gets data from a single data source. Tables are using DirectQuery storage mode. The **Sales** fact table contains billions of rows. Setting the storage mode of **Sales** to Import for caching would consume considerable memory and resources overhead.
 
@@ -106,7 +106,7 @@ The following table shows the aggregations for the **Sales Agg** table.
 ![Aggregations for the Sales Agg table](media/aggregations-advanced/aggregations-table_01.png)
 
 > [!NOTE]
-> The **Sales Agg** table, like any table, has the flexibility of being loaded in a variety of ways. The aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](/powerquery-m/power-query-m-function-reference) for the table. The aggregated table can use Import storage mode, with or without [Incremental refresh for datasets](../connect-data/incremental-refresh-overview.md), or it can use DirectQuery and be optimized for fast queries using [columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that can spread query load to avoid bottlenecks.
+> The **Sales Agg** table, like any table, has the flexibility of being loaded in a variety of ways. The aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](/powerquery-m/power-query-m-function-reference) for the table. The aggregated table can use Import storage mode, with or without [Incremental refresh for semantic models](../connect-data/incremental-refresh-overview.md), or it can use DirectQuery and be optimized for fast queries using [columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that can spread query load to avoid bottlenecks.
 
 Changing the storage mode of the aggregated **Sales Agg** table to **Import** opens a dialog box saying that the related dimension tables can be set to storage mode *Dual*. 
 
@@ -169,11 +169,11 @@ DAX time-intelligence functions are aggregation aware. The following query hits 
 
 Hadoop-based big data models have different characteristics than dimensional models. To avoid joins between large tables, big data models often don't use relationships, but denormalize dimension attributes to fact tables. You can unlock such big data models for interactive analysis by using *aggregations based on GroupBy columns*.
 
-The following table contains the **Movement** numeric column to be aggregated. All the other columns are attributes to group by. The table contains IoT data and a massive number of rows. The storage mode is DirectQuery. Queries on the data source that aggregate across the whole dataset are slow because of the sheer volume. 
+The following table contains the **Movement** numeric column to be aggregated. All the other columns are attributes to group by. The table contains IoT data and a massive number of rows. The storage mode is DirectQuery. Queries on the data source that aggregate across the whole model are slow because of the sheer volume. 
 
 ![An IoT table](media/aggregations-advanced/aggregations_09.png)
 
-To enable interactive analysis on this dataset, you can add an aggregation table that groups by most of the attributes, but excludes the high-cardinality attributes like longitude and latitude. This dramatically reduces the number of rows, and is small enough to comfortably fit into an in-memory cache. 
+To enable interactive analysis on this model, you can add an aggregation table that groups by most of the attributes, but excludes the high-cardinality attributes like longitude and latitude. This dramatically reduces the number of rows, and is small enough to comfortably fit into an in-memory cache. 
 
 ![Driver Activity Agg table](media/aggregations-advanced/aggregations_10.png)
 
@@ -195,7 +195,7 @@ The following query hits the aggregation, because the **Activity Date** column i
 
 ![Successful GroupBy aggregation query](media/aggregations-advanced/aggregations-code_08.png)
 
-Especially for models that contain filter attributes in fact tables, it's a good idea to use **Count table rows** aggregations. Power BI may submit queries to the dataset using COUNTROWS in cases where it is not explicitly requested by the user. For example, the filter dialog shows the count of rows for each value.
+Especially for models that contain filter attributes in fact tables, it's a good idea to use **Count table rows** aggregations. Power BI may submit queries to the model using COUNTROWS in cases where it is not explicitly requested by the user. For example, the filter dialog shows the count of rows for each value.
 
 ![Filter dialog](media/aggregations-advanced/aggregations-12.png)
 
@@ -238,9 +238,9 @@ The following example is a [composite model](desktop-composite-models.md) contai
 > [!NOTE]
 > DirectQuery aggregation tables that use a different data source from the detail table are only supported if the aggregation table is from a SQL Server, Azure SQL, or Azure Synapse Analytics (formerly SQL Data Warehouse) source.
 
-The memory footprint of this model is relatively small, but it unlocks a huge dataset. It represents a balanced architecture because it spreads the query load across components of the architecture, utilizing them based on their strengths.
+The memory footprint of this model is relatively small, but it unlocks a huge model. It represents a balanced architecture because it spreads the query load across components of the architecture, utilizing them based on their strengths.
 
-![Tables for a small-footprint model that unlocks a huge dataset](media/aggregations-advanced/aggregations_13.png)
+![Tables for a small-footprint model that unlocks a huge model](media/aggregations-advanced/aggregations_13.png)
 
 The **Manage aggregations** dialog for **Driver Activity Agg2** sets the **Precedence** field to *10*, which is higher than for **Driver Activity Agg**. The higher precedence setting means queries that use aggregations will consider **Driver Activity Agg2** first. Subqueries that aren't at the granularity that can be answered by **Driver Activity Agg2** will consider **Driver Activity Agg** instead. Detail queries that cannot be answered by either aggregation table will be directed to **Driver Activity**.
 
@@ -283,7 +283,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Power BI aggregations" on Bing](https://www.bing.com/search?q=power+bi+aggregations)
 
-## See also
+## Related content
 
-[Automatic aggregations](../enterprise/aggregations-auto.md)  
-[Composite models](desktop-composite-models.md)  
+- [Automatic aggregations](../enterprise/aggregations-auto.md)  
+- [Composite models](desktop-composite-models.md)  

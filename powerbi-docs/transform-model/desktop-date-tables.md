@@ -72,7 +72,7 @@ When you specify your own **date table**, you need to make sure the data type is
 
 3. Specify the data type for your column.
 
-## Next steps
+## Related content
 
 For more information related to this article, see the following resources:
 

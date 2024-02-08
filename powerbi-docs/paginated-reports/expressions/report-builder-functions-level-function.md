@@ -47,7 +47,7 @@ The following code example provides the level of row in the Employees group:
 =Level("Employees")
 ```
 
-## See also
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/21/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 
@@ -19,7 +19,7 @@ To determine whether a data source supports DirectQuery, view the full listing o
 
 Here are the differences between using import and DirectQuery connectivity modes:
 
-- **Import**: A copy of the data from the selected tables and columns imports into Power BI Desktop. As you create or interact with visualizations, Power BI Desktop uses the imported data. To see underlying data changes after the initial import or the most recent refresh, you must import the full dataset again to refresh the data.
+- **Import**: A copy of the data from the selected tables and columns imports into Power BI Desktop. As you create or interact with visualizations, Power BI Desktop uses the imported data. To see underlying data changes after the initial import or the most recent refresh, you must import the full semantic model again to refresh the data.
 
 - **DirectQuery**: No data imports into Power BI Desktop. For relational sources, you can select tables and columns to appear in the Power BI Desktop **Fields** list. For multidimensional sources like SAP Business Warehouse (SAP BW), the dimensions and measures of the selected cube appear in the **Fields** list. As you create or interact with visualizations, Power BI Desktop queries the underlying data source, so you're always viewing current data.
 
@@ -31,11 +31,11 @@ Many data modeling and data transformations are available when using DirectQuery
 
 Some benefits of using DirectQuery include:
 
-- DirectQuery lets you build visualizations over very large datasets, where it would be unfeasible to import all the data with pre-aggregation.
+- DirectQuery lets you build visualizations over very large semantic models, where it would be unfeasible to import all the data with pre-aggregation.
 
-- DirectQuery reports always use current data. Seeing underlying data changes requires you to refresh the data, and reimporting large datasets to refresh data could be unfeasible.
+- DirectQuery reports always use current data. Seeing underlying data changes requires you to refresh the data, and reimporting large semantic models to refresh data could be unfeasible.
 
-- The 1-GB dataset limitation doesn't apply with DirectQuery.
+- The 1-GB semantic model limitation doesn't apply with DirectQuery.
 
 ## Connect using DirectQuery
 
@@ -53,7 +53,7 @@ You can publish DirectQuery reports to the Power BI service, but you need to tak
 
 - To connect the Power BI service to DirectQuery data sources other than Azure SQL Database, Azure Synapse Analytics (formerly SQL Data Warehouse), Amazon Redshift, and Snowflake Data Warehouse, [install an on-premises data gateway](service-gateway-onprem.md) and register the data source.
 
-- If you used DirectQuery with cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse, you don't need an on-premises data gateway. You still must provide credentials for the Power BI service to open the published report. Without credentials, an error occurs when you try to open a published report or explore a dataset created with a DirectQuery connection.
+- If you used DirectQuery with cloud sources like Azure SQL Database, Azure Synapse, Amazon Redshift, or Snowflake Data Warehouse, you don't need an on-premises data gateway. You still must provide credentials for the Power BI service to open the published report. Without credentials, an error occurs when you try to open a published report or explore a semantic model created with a DirectQuery connection.
 
 To provide credentials for opening the report and refreshing the data:
 
@@ -61,7 +61,7 @@ To provide credentials for opening the report and refreshing the data:
 
    ![Screenshot of the Power BI service Settings dropdown menu.](media/desktop-use-directquery/directquery_pbiservicesettings.png)
 
-1. On the **Settings** page, select the **Datasets** tab, and choose the dataset that uses DirectQuery.
+1. On the **Settings** page, select the **Semantic models** tab, and choose the semantic model that uses DirectQuery.
 
 1. Under **Data source connection**, provide the credentials to connect to the data source.
 
@@ -70,7 +70,7 @@ To provide credentials for opening the report and refreshing the data:
 
 ## Considerations and limitations
 
-Some Power BI Desktop features aren't supported in DirectQuery mode, or they have limitations. Some capabilities in the Power BI service, such as quick insights, also aren't available for datasets that use DirectQuery. When you decide whether to use DirectQuery, consider these feature limitations. Also consider the following factors:
+Some Power BI Desktop features aren't supported in DirectQuery mode, or they have limitations. Some capabilities in the Power BI service, such as quick insights, also aren't available for semantic models that use DirectQuery. When you decide whether to use DirectQuery, consider these feature limitations. Also consider the following factors:
 
 ### Performance and load considerations
 
@@ -84,7 +84,7 @@ DirectQuery defines a one-million row limit for data returned from cloud data so
 
 Power BI creates queries that are as efficient as possible, but some generated queries might retrieve too many rows from the underlying data source. For example, this situation can occur with a simple chart that includes a high cardinality column with the aggregation option set to **Don't Summarize**. The visual must have only columns with a cardinality below 1 million, or must apply the appropriate filters.
 
-The row limit doesn't apply to aggregations or calculations used to select the dataset DirectQuery returns, only to the rows returned. For example, the query that runs on the data source can aggregate 10 million rows. As long as the data returned to Power BI is less than 1 million rows, the query can accurately return the results. If the data is over 1 million rows, Power BI shows an error, except in Premium capacity with different admin-set limits. The error states: **The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows.** 
+The row limit doesn't apply to aggregations or calculations used to select the semantic model DirectQuery returns, only to the rows returned. For example, the query that runs on the data source can aggregate 10 million rows. As long as the data returned to Power BI is less than 1 million rows, the query can accurately return the results. If the data is over 1 million rows, Power BI shows an error, except in Premium capacity with different admin-set limits. The error states: **The resultset of a query to external data source has exceeded the maximum allowed size of '1000000' rows.** 
 
 ### Security considerations
 
@@ -110,11 +110,11 @@ Some other limitations of using DirectQuery include:
 
 - A known issue exists in DirectQuery when you filter a date column that contains December 31, 9999, which is often used as a special date placeholder. While it's common to filter the December 31, 9999 date from your analysis, using an `is` or `is not` filter doesn't correctly filter out that date. To avoid incorrect filtering when that date is present, use `is on or after` or `is on or before` to filter for that date. The following example provides more information to understand the filtering issue and the best way to avoid it.
 
-  This example uses a simple dataset that contains just two rows of data with two dates. The dates use formatting that's common in the United States: the month followed by the day followed by the year. The first row contains a date of 3/5/2022, and the second row contains 12/31/9999:
+  This example uses a simple semantic model that contains just two rows of data with two dates. The dates use formatting that's common in the United States: the month followed by the day followed by the year. The first row contains a date of 3/5/2022, and the second row contains 12/31/9999:
 
   :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-example-data.png" alt-text="Illustration of example data to explain the filter issue with special date 12/31/9999.":::
 
-  To isolate or remove rows that contain a certain date, you create a filter on the column that contains the dates. Set the filter to show items when the value is or is not equal to that date. However, as shown in the following image, querying the preceding dataset for the date 12/31/9999 returns unexpected results. The results return no data, rather than expected 12/31/9999 data, as shown in the following image.
+  To isolate or remove rows that contain a certain date, you create a filter on the column that contains the dates. Set the filter to show items when the value is or is not equal to that date. However, as shown in the following image, querying the preceding semantic model for the date 12/31/9999 returns unexpected results. The results return no data, rather than expected 12/31/9999 data, as shown in the following image.
 
   :::image type="content" source="media/desktop-use-directquery/directquery-date-is-filter-incorrect-result.png" alt-text="Screenshot that shows unexpected results when setting a filter to show items with data value equal to 12/31/9999.":::
 
@@ -124,11 +124,11 @@ Some other limitations of using DirectQuery include:
 
   :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-after.png" alt-text="Screenshot that shows setting a filter to is on or after 12/31/9999 to return rows that contain 12/31/9999.":::
 -->
-## Next steps
+## Related content
 
 - [DirectQuery in Power BI](desktop-directquery-about.md)
 - [Data sources supported by DirectQuery](power-bi-data-sources.md)
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [What is an on-premises data gateway?](service-gateway-onprem.md)
-- [Using DirectQuery for Power BI datasets and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)
+- [Using DirectQuery for Power BI semantic models and Azure Analysis Services (preview)](../connect-data/desktop-directquery-datasets-azure-analysis-services.md)

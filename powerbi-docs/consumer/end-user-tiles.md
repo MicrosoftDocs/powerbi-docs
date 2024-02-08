@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
 
-A tile is a snapshot of your data, pinned to a dashboard by a *designer*. *Designers* can create tiles from a report, dataset, dashboard, the Power BI Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more. This screenshot shows many different tiles pinned to a dashboard.
+A tile is a snapshot of your data, pinned to a dashboard by a *designer*. *Designers* can create tiles from a report, semantic model, dashboard, the Power BI Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more. This screenshot shows many different tiles pinned to a dashboard.
 
 :::image type="content" source="./media/end-user-tiles/power-bi-dashboard-new.png" alt-text="Screenshot of a Power BI dashboard with several tiles.":::
 
@@ -63,7 +63,7 @@ When you select a tile, what happens next depends on how the tile was created an
 - If a workspace is moved to Premium capacity, the existing dashboard refresh cache doesn't move with the workspace. The new cache is created the first time a user visits the dashboard in the new Premium capacity. After that, every data refresh will refresh the cache and update the data.
 - If a tile is pinned from a workbook, you can't turn off the display of the title and subtitle. The option to **Edit details** > **Display title and subtitle** is greyed out.
 
-## Next steps
+## Related content
 
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Basic concepts for the Power BI service business user](end-user-basic-concepts.md)

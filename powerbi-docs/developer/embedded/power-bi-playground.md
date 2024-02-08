@@ -77,6 +77,6 @@ The Learning center is a collection of Power BI embedded analytics resources. It
 
 :::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
 
-## Next steps
+## Related content
 
 [Explore the embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279)

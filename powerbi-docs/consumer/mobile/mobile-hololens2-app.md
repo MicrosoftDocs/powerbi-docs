@@ -74,6 +74,6 @@ The Power BI app for HoloLens 2 does not currently support the following items:
 * Zebra visuals
 * Access through a proxy
 
-## Next steps
+## Related content
 
 * [Getting around HoloLens 2](/hololens/hololens2-basic-usage)

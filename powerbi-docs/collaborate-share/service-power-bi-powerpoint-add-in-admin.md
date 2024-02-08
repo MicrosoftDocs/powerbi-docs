@@ -1,8 +1,8 @@
 ---
 title: Power BI add-in for PowerPoint - Admin info
 description: See information about the Power BI add-in for PowerPoint that Power BI administrators need to be aware of.
-author: paulinbar
-ms.author: painbar
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -24,7 +24,7 @@ In national/regional clouds, the add-in must be deployed as an admin managed add
 
 ## Licensing
 
-To be able to view live Power BI data in PowerPoint, users must have an active Power BI account and a Power BI Free license, and access to the data. If the Power BI report isn't located in a Premium capacity, a Power BI Pro license is needed.
+To be able to view live Power BI data in PowerPoint, users must have an active Power BI account and a Fabric Free  license, and access to the data. If the Power BI report isn't located in a Premium capacity or Fabric F64 or greater capacity, a Power BI Pro license is needed.
 
 If auto-licensing for Power BI is enabled, users without a Power BI account will be signed up automatically when they open a presentation containing a live Power BI report page or visual. **This may impact the assignment and availability of licenses in your organization**. For more information, see [Power BI license assignment](../enterprise/service-admin-disable-self-service.md).
 
@@ -65,7 +65,7 @@ To download and deploy the add-in:
 
 For a summary of the ways the add-in differs when deployed in a national/regional cloud from when it's deployed in a public cloud, see [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md).
 
-## Next Steps
+## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [The Power BI add-in for PowerPoint in national/regional clouds](./service-power-bi-powerpoint-add-in-national-clouds.md)

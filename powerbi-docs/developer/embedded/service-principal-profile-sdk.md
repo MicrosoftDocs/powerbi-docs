@@ -77,7 +77,7 @@ var currentProfileObjectId = powerBIclient.GetServicePrincipalProfileObjectId();
 
 There's no support for service principal profiles with Azure Analysis Services (AAS) in live connection mode.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Service principal profiles in Power BI Embedded](embed-multi-tenancy.md)

@@ -126,7 +126,7 @@
     - name: Import translation sheets
       href: translation-sheet-import.md
     - name: Manage enterprise-level translations
-      href: translation-manage-dataset-enterprise.md
+      href: translation-manage-data-model-enterprise.md
     - name: Implement data translation
       href: data-translation.md
     - name: Support data translations
@@ -171,38 +171,38 @@
         href: powerbi-migration-deploy-support-monitor.md
       - name: "Learn from customer Power BI migrations"
         href: powerbi-migration-learn-from-customers.md
-  - name: Adoption roadmap
+  - name: Fabric adoption roadmap
     items: 
-      - name: "Overview"
-        href: powerbi-adoption-roadmap-overview.md
+      - name: "Introduction"
+        href: fabric-adoption-roadmap.md
       - name: "Maturity levels"
-        href: powerbi-adoption-roadmap-maturity-levels.md
+        href: fabric-adoption-roadmap-maturity-levels.md
       - name: "Data culture"
-        href: powerbi-adoption-roadmap-data-culture.md
+        href: fabric-adoption-roadmap-data-culture.md
       - name: "Executive sponsorship"
-        href: powerbi-adoption-roadmap-executive-sponsorship.md
+        href: fabric-adoption-roadmap-executive-sponsorship.md
       - name: "Business alignment"
-        href: powerbi-adoption-roadmap-business-alignment.md
+        href: fabric-adoption-roadmap-business-alignment.md
       - name: "Content ownership"
-        href: powerbi-adoption-roadmap-content-ownership-and-management.md
+        href: fabric-adoption-roadmap-content-ownership-and-management.md
       - name: "Content delivery scope"
-        href: powerbi-adoption-roadmap-content-delivery-scope.md
+        href: fabric-adoption-roadmap-content-delivery-scope.md
       - name: "Center of Excellence"
-        href: powerbi-adoption-roadmap-center-of-excellence.md
+        href: fabric-adoption-roadmap-center-of-excellence.md
       - name: "Governance"
-        href: powerbi-adoption-roadmap-governance.md
+        href: fabric-adoption-roadmap-governance.md
       - name: "Mentoring and user enablement"
-        href: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+        href: fabric-adoption-roadmap-mentoring-and-user-enablement.md
       - name: "Community of practice"
-        href: powerbi-adoption-roadmap-community-of-practice.md
+        href: fabric-adoption-roadmap-community-of-practice.md
       - name: "User support"
-        href: powerbi-adoption-roadmap-user-support.md
+        href: fabric-adoption-roadmap-user-support.md
       - name: "System oversight"
-        href: powerbi-adoption-roadmap-system-oversight.md
+        href: fabric-adoption-roadmap-system-oversight.md
       - name: "Change management"
-        href: powerbi-adoption-roadmap-change-management.md
+        href: fabric-adoption-roadmap-change-management.md
       - name: "Conclusion"
-        href: powerbi-adoption-roadmap-conclusion.md
+        href: fabric-adoption-roadmap-conclusion.md
   - name: Implementation planning
     items: 
       - name: "Introduction"
@@ -221,6 +221,8 @@
         href: powerbi-implementation-planning-tenant-setup.md
       - name: "User tools and devices"
         href: powerbi-implementation-planning-user-tools-devices.md
+      - name: "Tenant administration"
+        href: powerbi-implementation-planning-tenant-administration.md
       - name: Workspaces
         items:
         - name: "Workspaces overview"
@@ -301,6 +303,8 @@
           href: powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md
         - name: "On-premises reporting"
           href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+        - name: "Usage scenario diagrams"
+          href: powerbi-implementation-planning-usage-scenario-diagrams.md
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
@@ -309,14 +313,12 @@
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md
-  - name: Whitepapers
+  - name: White papers
     items: 
-    - name: "Whitepapers overview"
+    - name: "White papers overview"
       href: whitepapers.md
-    - name: "Power BI security whitepaper"
-      href: whitepaper-powerbi-security.md
-    - name: "Power BI enterprise deployment whitepaper"
-      href: whitepaper-powerbi-enterprise-deployment.md      
+    - name: "Power BI security white paper"
+      href: whitepaper-powerbi-security.md  
     - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md
     - name: "Distribute Power BI externally using Microsoft Entra B2B"

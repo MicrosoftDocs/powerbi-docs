@@ -107,13 +107,13 @@ If you receive an error when dashboard tiles refresh, see [Troubleshooting tile 
 
 With **Refresh history**, you can see what errors occurred and find useful data if you need to create a support request. You can view both scheduled and on-demand refreshes. Here's how you get to **Refresh history**.
 
-1. In the Power BI service navigation pane, in **Datasets**, select a dataset. Open the **More options (...)** menu, and select **Schedule refresh**.
+1. In the Power BI service navigation pane, in **Semantic models**, select a dataset. Open the **More options (...)** menu, and select **Schedule refresh**.
 
    ![Screenshot shows selecting Schedule refresh from the navigation pane.](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 
 1. In **Settings for...**, select **Refresh history**. 
 
-   ![Screenshot shows the Datasets Refresh history link to select.](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh-2.png)
+   ![Screenshot shows the Semantic models Refresh history link to select.](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh-2.png)
 
    ![Screenshot shows the Refresh History dialog.](media/service-admin-troubleshooting-power-bi-personal-gateway/refresh-history.png)
 
@@ -146,7 +146,7 @@ Or, you can go to your Temp folder (*%temp%*) and look for files that start with
 
 ![Temp folder](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
-## Next steps
+## Related content
 
 - [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 - [Data refresh in Power BI](refresh-data.md)  

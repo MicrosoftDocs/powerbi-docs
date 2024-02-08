@@ -1,8 +1,8 @@
 ---
 title: Power BI Desktop projects (PBIP)
 description: Learn how to save and edit a Power BI Desktop project.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
@@ -176,6 +176,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
+- Power BI Projects currently not supported in Microsoft Power BI Desktop (Optimized for Power BI Report Server).
 
 ## Frequently asked questions
 
@@ -199,10 +200,10 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 **Answer:** No. Power BI Desktop project report definitions aren't supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
 
-## See also
+## Related content
 
-[Power BI Desktop project dataset folder](projects-dataset.md)  
-[Power BI Desktop project report folder](projects-report.md)  
-[Power BI Desktop projects Git integration](projects-git.md)  
-[Power BI Desktop projects Azure DevOps integration](projects-git.md)  
-[External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  
+- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop project report folder](projects-report.md)  
+- [Power BI Desktop projects Git integration](projects-git.md)  
+- [Power BI Desktop projects Azure DevOps integration](projects-git.md)  
+- [External tools in Power BI Desktop](../../transform-model/desktop-external-tools.md)  

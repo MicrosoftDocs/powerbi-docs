@@ -35,7 +35,7 @@ When you optimize the dashboard layout for your audience, consider the following
 - What learned or cultural assumptions might affect design choices?
 - What information does your audience need to be successful?
 
-Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those items often contain many details. Your readers can drill into the reports from your dashboard, so don't put a detail on the dashboard unless that's what your readers need to monitor.
+Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and semantic models, and those items often contain many details. Your readers can drill into the reports from your dashboard, so don't put a detail on the dashboard unless that's what your readers need to monitor.
 
 Where is the dashboard going to be displayed? If the dashboard is viewed on a large monitor, you can include more content. But if readers view your dashboard on their tablets or phones, a dashboard with fewer tiles is more readable.
 
@@ -104,7 +104,7 @@ Here are a few book recommendations:
 - *Envisioning Information* by Edward Tufte  
 - *Advanced Presentations* by Design by Andrew Abela
 
-## Next steps
+## Related content
 
 - [Create a dashboard from a report](service-dashboard-create.md)  
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)  

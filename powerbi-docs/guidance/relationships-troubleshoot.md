@@ -46,7 +46,7 @@ Here's a list of issues and their possible reasons.
 | The visual is missing data | &bull;&nbsp;Incorrect/unexpected filters are applied. <br/>&bull;&nbsp;RLS is enforced. <br/>&bull;&nbsp;It's a limited relationship, and there are BLANKs in related columns, or data integrity issues—see [Model relationships in Power BI Desktop (limited relationships)](/power-bi/transform-model/desktop-relationships-understand#limited-relationships). <br/>&bull;&nbsp;It's a relationship between two DirectQuery tables, the relationship is set to [assume referential integrity](/power-bi/transform-model/desktop-relationships-understand#assume-referential-integrity), but there are data integrity issues (mismatched values in related columns). |
 | RLS isn't correctly enforced | &bull;&nbsp;Relationships aren't propagating between tables—_follow checklist above_. <br/>&bull;&nbsp;RLS is enforced, but a bi-directional relationship isn't enabled to propagate—see [Row-level security (RLS) with Power BI Desktop](/power-bi/enterprise/service-admin-rls). |
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

@@ -1,8 +1,8 @@
 ---
 title: Optimize ribbon in Power BI Desktop
 description: Describes features of the Optimize ribbon in Power BI Desktop
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -20,9 +20,9 @@ How you use features on the ribbon depends on the [table data storage modes](../
 
 * Visuals query local tables in [Import mode](../connect-data/desktop-directquery-about.md#import-connections).
 * Visuals use [DirectQuery mode](../connect-data/desktop-directquery-about.md#directquery-connections) to query table data at the data source.
-* Options between import and DirectQuery modes, such as [hybrid tables](https://powerbi.microsoft.com/blog/announcing-public-preview-of-hybrid-tables-in-power-bi-premium/) or datasets with some tables in import mode and others in DirectQuery mode.
+* Options between import and DirectQuery modes, such as [hybrid tables](https://powerbi.microsoft.com/blog/announcing-public-preview-of-hybrid-tables-in-power-bi-premium/) or semantic models with some tables in import mode and others in DirectQuery mode.
 
-You can also create a report from an already published dataset or model from Power BI, Azure Analysis Services, or SQL Server Analysis Services using [Live Connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery for Power BI datasets and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), where you may not know what storage mode the underlying tables are using.
+You can also create a report from an already published model from Power BI, Azure Analysis Services, or SQL Server Analysis Services using [Live Connection](../connect-data/desktop-directquery-about.md#live-connections) or [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), where you may not know what storage mode the underlying tables are using.
 
 The ribbon includes features that can be used for any report authoring scenario, however, DirectQuery reports in particular will find them most useful as queries are sent to the data source with most visual changes. DirectQuery report visuals that send queries to the data source can be identified in [Performance analyzer](#performance-analyzer).
 
@@ -98,7 +98,7 @@ See the Optimize ribbon features introduction at Microsoft Ignite 2022.
 
 > [!VIDEO https://www.youtube.com/embed/TopbQfxcPxM]
 
-## See also
+## Related content
 
 * [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md)  
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)

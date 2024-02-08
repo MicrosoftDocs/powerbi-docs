@@ -51,7 +51,7 @@ Previous(expression, scope)
   
  The functions **Level**, **InScope**, **Aggregate** and **Previous** can't be used in the *expression* parameter. Specifying the *recursive* parameter for any aggregate function isn't supported.  
   
- For more information, see [Aggregate Functions Reference &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
+ For more information, see [Aggregate Functions Reference &#40;Report Builder)](report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
   
 ## Examples  
   
@@ -75,10 +75,11 @@ Previous(expression, scope)
 =Sum(Fields!Sales.Value) & " " & Previous(Sum(Fields!Sales.Value,"GroupbyDay"),"GroupbyYear")  
 ```  
   
-## See also  
- [Expression uses in reports (Power BI Report Builder and service)](../expressions/expression-uses-reports-report-builder.md)   
- [Expression examples (Power BI Report Builder and service)](../expressions/report-builder-expression-examples.md)   
- [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
+## Related content
+
+* [Expression uses in reports (Power BI Report Builder and service)](../expressions/expression-uses-reports-report-builder.md)   
+ * [Expression examples (Power BI Report Builder and service)](../expressions/report-builder-expression-examples.md)   
+ * [Data Types in Expressions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs)   
+ * [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
   

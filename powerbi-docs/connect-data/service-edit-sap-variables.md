@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/23/2022
+ms.date: 01/30/2024
 LocalizationGroup: Data from databases
 ---
 
@@ -29,7 +29,7 @@ The following lists describe the requirements and limitations for editing SAP va
 
 ### Limitations
 
-- **Multidimensional models only for SAP HANA.** For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources.
+- **Multidimensional models only for SAP HANA.** For SAP HANA, the SAP edit variables feature works only with multidimensional models and doesn't work on relational sources. Ensure you have *not* selected **Treat SAP HANA as a relational database** in **Options > Global >  DirectQuery > DirectQuery options** when editing SAP HANA variables in Power BI.
 
 - **No sovereign cloud support.** Power Query Online isn't available in sovereign clouds, so sovereign clouds don't support the edit SAP variables feature.
 
@@ -58,7 +58,7 @@ In Power BI Desktop, you can edit variables by selecting **Transform data** > **
 After you publish a report that enables editing SAP variables, the **Edit variables** link appears in the **Filter** pane for the report in the Power BI service. The first time you publish the report, it might take up to five minutes before the **Edit variables** link appears.
 
 > [!NOTE]
-> If the link doesn't appear, manually refresh the dataset by selecting it from the list in the **Datasets** tab of the workspace, and then selecting the **Refresh** icon.
+> If the link doesn't appear, manually refresh the semantic model by selecting it from the list in the **Semantic models** tab of the workspace, and then selecting the **Refresh** icon.
 
 To edit the variables in the Power BI service, report users can:
 
@@ -84,7 +84,7 @@ If you get errors that Power BI can't load data or retrieve data for a visual, o
 
 - In Power BI Desktop, if you no longer want users to be able to edit variables, uncheck the option at the report level.
 
-## Next steps
+## Related content
 
 - [Use SAP HANA in Power BI Desktop](/power-query/connectors/sap-hana/overview)
 - [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)

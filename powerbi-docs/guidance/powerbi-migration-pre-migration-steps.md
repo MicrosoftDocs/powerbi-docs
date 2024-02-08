@@ -14,14 +14,14 @@ ms.date: 02/27/2022
 
 This article describes actions you can consider prior to migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-pre-migration-steps/migrate-to-powerbi-pre-migration-steps.png" alt-text="Image showing the stages of a Power BI migration. The pre-migration steps are emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-pre-migration-steps/migrate-to-power-bi-preparation.svg" alt-text="Diagram shows the stages of a Power BI migration. The pre-migration steps are emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The pre-migration steps emphasize up-front planning, which is important preparation before moving through the five migration stages. Most of the pre-migration steps will occur once, though for larger organizations some portions might be iterative for each business unit or departmental area.
 
-The output from the pre-migration steps includes an initial [governance](powerbi-adoption-roadmap-governance.md) model, initial high-level deployment planning, in addition to an inventory of the reports and data to be migrated. Additional information from activities in Stages 1, 2, and 3 will be necessary to fully estimate the level of effort for migrating individual solutions.
+The output from the pre-migration steps includes an initial [governance](fabric-adoption-roadmap-governance.md) model, initial high-level deployment planning, in addition to an inventory of the reports and data to be migrated. Additional information from activities in Stages 1, 2, and 3 will be necessary to fully estimate the level of effort for migrating individual solutions.
 
 > [!TIP]
 > Most of the topics discussed in this article also apply to a standard Power BI implementation project.
@@ -39,7 +39,7 @@ Several top considerations during the initial evaluation include obtaining:
 
 Several considerations for identifying stakeholders include:
 
-- Ensure [executive sponsorship](powerbi-adoption-roadmap-executive-sponsorship.md) is in place.
+- Ensure [executive sponsorship](fabric-adoption-roadmap-executive-sponsorship.md) is in place.
 - Ensure alignment with stakeholders on the business case and BI strategy.
 - Include representatives from throughout the business units—even if their content is slated for migration on a later timetable—to understand their motivations and concerns.
 - Involve Power BI champions early.
@@ -52,7 +52,7 @@ Several considerations for identifying stakeholders include:
 
 Several key items to address early in a Power BI implementation include:
 
-- Specific goals for [Power BI adoption](powerbi-adoption-roadmap-overview.md) and where Power BI fits into the overall BI strategy for the organization.
+- Specific goals for [adoption](fabric-adoption-roadmap.md) and where Microsoft Fabric and Power BI fit into the overall BI strategy for the organization.
 - How the Fabric administrator role will be handled, particularly in decentralized organizations.
 - Policies related to achieving trusted data: use of authoritative data sources, addressing data quality issues, and use of consistent terminology and common definitions.
 - Security and data privacy strategy for data sources, data models, reports, and content delivery to internal and external users.
@@ -72,9 +72,9 @@ Some critical items to address early in a Power BI implementation include:
 - [Power BI tenant setting](/power-bi/admin/service-admin-portal-about-tenant-settings) decisions, which should be documented.
 - [Workspace management](../collaborate-share/service-new-workspaces.md) decisions, which should be documented.
 - Considerations and preferences related to data and [content distribution methods](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md), such as apps, workspaces, sharing, subscriptions, and embedding of content.
-- Preferences related to [dataset modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [Composite model](composite-model-guidance.md).
+- Preferences related to [semantic model modes](../connect-data/service-dataset-modes-understand.md)—[previously known as dataset modes](../connect-data/service-datasets-rename.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [composite model](composite-model-guidance.md).
 - [Securing data and access](../enterprise/service-admin-power-bi-security.md).
-- Working with [shared datasets](../connect-data/service-datasets-share.md) for reusability.
+- Working with [shared semantic models](../connect-data/service-datasets-share.md) for reusability.
 - Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
 - Use of different [report types](../create-reports/index.yml), including Power BI reports, Excel reports, or paginated reports for different use cases or business units.
 - Change management approaches for managing centralized BI items and business-managed BI items.
@@ -105,11 +105,11 @@ The first task is to understand what success looks like for migrating an individ
 - **What are the specific motivations and objectives for this migration?** For more information, see [Power BI migration overview (Consider migration reasons)](powerbi-migration-overview.md#consider-migration-reasons). This article describes the most common reasons for migrating to Power BI. Certainly, your objectives should be specified at the organizational level. Beyond that, migrating one legacy BI solution could benefit significantly from cost savings, whereas migrating a different legacy BI solution could focus on gaining workflow optimization benefits.
 - **What's the expected cost/benefit or ROI for this migration?** Having a clear understanding of expectations related to cost, increased capabilities, decreased complexity, or increased agility, is helpful in measuring success. It can provide guiding principles to help with decision-making during the migration process.
 - **What key performance indicators (KPIs) will be used to measure success?** The following list presents some example KPIs:
-    - Number of reports rendered from legacy BI platform, decreasing month over month.
-    - Number of reports rendered from Power BI, increasing month over month.
-    - Number of Power BI report consumers, increasing quarter over quarter.
-    - Percentage of reports migrated to production by target date.
-    - Cost reduction in licensing cost year over year.
+  - Number of reports rendered from legacy BI platform, decreasing month over month.
+  - Number of reports rendered from Power BI, increasing month over month.
+  - Number of Power BI report consumers, increasing quarter over quarter.
+  - Percentage of reports migrated to production by target date.
+  - Cost reduction in licensing cost year over year.
 
 > [!TIP]
 > The [Power BI activity log](../enterprise/service-admin-auditing.md) can be used as a source for measuring KPI progress.
@@ -135,14 +135,14 @@ It isn't possible to completely automate a Power BI conversion process end-to-en
 
 Compiling the existing inventory of data and reports is a possible candidate for automation when you have an existing tool that can do it for you. The extent to which automation can be used for some portions of the migration process—such as compiling the existing inventory—highly depends upon the tools you have.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-requirements.md), learn about Stage 1, which is concerned with gathering and prioritizing requirements when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

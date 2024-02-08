@@ -3,12 +3,10 @@ title: Use report themes in Power BI Desktop
 description: Learn how to use report themes to create a custom color palette and apply it to an entire report in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
-ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/10/2023
+ms.date: 01/16/2024
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -184,9 +182,11 @@ Setting a report theme changes the default colors used in visuals throughout the
 
 Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals may change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
 
+Individual members of a dynamic series claim a color from the data color palette as they are read in.  For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the first visual to have its data request completed reserves the earlier colors.  Since the colors for individual dynamic series members aren't explicitly stored, this behavior may lead to the appearance that colors are changing at random, depending on which visuals are loaded first.  You can always assign specific members to a particular color by using the formatting pane: see more information about how to [change the color of a single data point](../visuals/service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
+
 ### Static series
 
-Conversely, for *static series*, the number of series is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
+Conversely, for *static series*, the number of series and their order is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
 
 To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color has been explicitly set.
 

@@ -33,29 +33,32 @@ Using methodical and disciplined lifecycle management processes reduces errors, 
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support self-service content publishing. The focus is on use of a Power BI deployment pipeline for promoting content through development, test, and production workspaces.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.png" alt-text="Diagram of self-service content publishing, which is about publishing content to development, test, and production with deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-inline.svg" alt-text="Diagram shows self-service content publishing, which is about publishing content to development, test, and production by using deployment pipelines. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-self-service-content-publishing/usage-scenario-self-service-content-publishing-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#self-service-content-publishing) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The Power BI content creator develops a BI solution using Power BI Desktop. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | The Power BI Desktop file (.pbix) is saved to a shared library in OneDrive. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | When ready, the content creator publishes the Power BI Desktop file to the Power BI service. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | Content is published to a [workspace](../collaborate-share/service-new-workspaces.md) that's dedicated to **development**. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The development (or test) workspace is set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | Content creators and owners collaborate in the development workspace to ensure all requirements are met. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | A deployment pipeline administrator configures the Power BI [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) with three stages: development, test, and production. Each stage aligns to a separate workspace in the Power BI service. Deployment settings and access are configured for the deployment pipeline. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | When the development content is ready, the deployment pipeline compares the content between the development and test stages. Some, or all, Power BI items are deployed to a workspace that's dedicated to **testing**. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | The test (or development) workspace is set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | Once the deployment pipeline has completed its deployment, the content creator manually performs post-deployment activities for the test workspace. Activities can include configuring scheduled data refresh or publishing a Power BI app for the test workspace. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | Quality assurance, data validations, and user acceptance testing occur by reviewers of the test workspace. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | When the test content is fully validated, the deployment pipeline compares the content between the test and production stages. Some, or all, Power BI items are deployed to a workspace that's dedicated to **production**. |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | The production workspace is set to **Premium per user**, **Premium per capacity**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). For a production workspace, **Premium per capacity** license mode is often more appropriate when there's a large number of read-only consumers. |
-| ![Item 14.](media/common/icon-14-red-30x30.png) | Once the deployment pipeline completes deployment, content creators can manually perform post-deployment activities. Activities can include configuring scheduled data refresh or publishing a Power BI app for the production workspace. |
-| ![Item 15.](media/common/icon-15-red-30x30.png) | Content viewers access the content using the production workspace or a Power BI app. |
-| ![Item 16.](media/common/icon-16-red-30x30.png) | To connect to data sources that reside within a private organizational network, an On-premises data gateway is required. |
-| ![Item 17.](media/common/icon-17-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. Content that's deemed critical enough to have separate development, test, and production workspaces could be subject to stricter governance requirements than less critical content. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The Power BI content creator develops a BI solution using Power BI Desktop. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The Power BI Desktop file (.pbix) of Power BI project file (.pbip) is saved to a shared library in OneDrive. The content creator retains versions of these files in OneDrive. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | When ready, the content creator publishes the Power BI Desktop file to the Power BI service. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Content is published to a [workspace](../collaborate-share/service-new-workspaces.md) that's dedicated to **development**. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | A deployment pipeline administrator sets up the Power BI deployment pipeline with three stages: development, test, and production. Each stage aligns to a separate workspace in the Power BI service. Deployment settings and access are set up for the deployment pipeline. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The development (or test) workspace is set to **Fabric capacity**, **Premium capacity**, **Premium Per User**, or **Embedded** [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings). Power BI deployment pipelines are a feature available only in workspaces with these license modes. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Content creators and owners collaborate in the development workspace to ensure all requirements are met. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | When the development content is ready, the deployment pipeline compares the content between the development and test stages. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Some, or all, Power BI items are deployed to a workspace that's dedicated to testing. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Once the deployment pipeline has completed its deployment, the content creator manually performs post-deployment activities for the test workspace. Activities can include configuring scheduled data refresh or publishing a Power BI app for the test workspace. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Quality assurance, data validations, and user acceptance testing occur by reviewers of the test workspace. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | When the test content is fully validated, the deployment pipeline compares the content between the test and production stages. |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Some, or all, Power BI items are deployed to a workspace that's dedicated to production. For a production workspace, **Fabric capacity** or **Premium capacity** license mode is often more appropriate when there's a large number of read-only consumers. |
+| ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | After the deployment pipeline completes deployment, content creators can manually perform post-deployment activities. Activities can include configuring scheduled data refresh or publishing a Power BI app for the production workspace. |
+| ![Item 15.](../media/legend-number/legend-number-15-fabric.svg) | Content viewers access the content using the production workspace or a Power BI app. |
+| ![Item 16.](../media/legend-number/legend-number-16-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. |
+| ![Item 17.](../media/legend-number/legend-number-17-fabric.svg) | Fabric administrators oversee and monitor activity in the Fabric portal. Content that's deemed critical enough to have separate development, test, and production workspaces could be subject to stricter governance requirements than less critical content. |
 
 > [!TIP]
 > We recommend that you reviewing the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario as too. It builds upon concepts introduced in this scenario.
@@ -135,7 +138,7 @@ The scenario diagram depicts using OneDrive for storing the source Power BI Desk
 
 ### Gateway setup
 
-Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) dataset (not depicted in the scenario diagram).
+Typically, a data gateway is required when accessing data sources that reside within the private organizational network or a virtual network. The [On-premises data gateway](../connect-data/service-gateway-onprem.md) becomes relevant once a Power BI Desktop file is published to the Power BI service. The two purposes of a gateway are to [refresh imported data](../connect-data/refresh-data.md), or view a report that queries a live connection or [DirectQuery](../connect-data/desktop-directquery-about.md) semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md) (not depicted in the scenario diagram).
 
 When working with multiple environments, it's common to configure development, test, and production connections to use different source systems. In this case, use [data source rules and parameter rules](/fabric/cicd/deployment-pipelines/create-rules) to manage values that differ between environments.
 
@@ -146,6 +149,6 @@ When working with multiple environments, it's common to configure development, t
 
 The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand deployment activities that occur.
 
-## Next steps
+## Related content
 
 In the next article in the series, learn about the [advanced data modeling](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.

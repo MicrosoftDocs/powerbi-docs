@@ -37,7 +37,7 @@ ms.reviewer: monaraya
   
 1. Change the values for ScaleBreakStyle properties, such as BreakLineType and Spacing. For more information about scale break properties, see [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart).  
 
-## Next steps
+## Related content
 
-[Charts](charts-report-builder.md)
-[Formatting a Chart](formatting-chart-report-builder.md)
+- [Charts](charts-report-builder.md)
+- [Formatting a Chart](formatting-chart-report-builder.md)

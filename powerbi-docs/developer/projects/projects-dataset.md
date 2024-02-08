@@ -1,8 +1,8 @@
 ---
 title: Power BI Desktop project dataset folder
 description: Learn about the Power BI Desktop project dataset folder.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
@@ -94,8 +94,8 @@ Contains attributes that define the item. To learn more, see [Git integration so
 
 For more information, refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
 
-## See also
+## Related content
 
-[Power BI Desktop project report folder](projects-report.md)  
-[Power BI Desktop projects](projects-overview.md)  
-[Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  
+- [Power BI Desktop project report folder](projects-report.md)  
+- [Power BI Desktop projects](projects-overview.md)  
+- [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true)  

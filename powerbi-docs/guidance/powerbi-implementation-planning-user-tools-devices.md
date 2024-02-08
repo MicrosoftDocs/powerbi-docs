@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/17/2023
+ms.date: 11/24/2023
 ---
 
 # Power BI implementation planning: User tools and devices
@@ -21,18 +21,18 @@ This article introduces key considerations for planning user tools and managing 
 - **IT and infrastructure teams:** Technical staff who installs, updates, and manages user devices and machines.
 - **Content creators and content owners:** Users who need to communicate with colleagues and make requests for what they need to have installed.
 
-One important aspect of analytics adoption is ensuring that content consumers and content creators have the software applications they need. The effective management of tools–particularly for users who create content–leads to increased [user adoption](powerbi-adoption-roadmap-maturity-levels.md#user-adoption-stages) and reduces [user support](powerbi-adoption-roadmap-user-support.md) costs.
+One important aspect of analytics adoption is ensuring that content consumers and content creators have the software applications they need. The effective management of tools–particularly for users who create content–leads to increased [user adoption](fabric-adoption-roadmap-maturity-levels.md#user-adoption-stages) and reduces [user support](fabric-adoption-roadmap-user-support.md) costs.
 
 ## Requests for new tools
 
-How you handle requests for new tools and software applications is a [governance](powerbi-adoption-roadmap-governance.md) decision. Many users who are new to the organization, or are just getting started with analytics, don't know what to request. To simplify the process, consider handling the following requests together:
+How you handle requests for new tools and software applications is a [governance](fabric-adoption-roadmap-governance.md) decision. Many users who are new to the organization, or are just getting started with analytics, don't know what to request. To simplify the process, consider handling the following requests together:
 
 - Software requests
 - User license requests
 - Training requests
 - Data access requests
 
-Software installations are usually the responsibility of the IT department. To ensure an optimal user experience, it's critical that IT collaborate with the [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) on key decisions and processes, such as:
+Software installations are usually the responsibility of the IT department. To ensure an optimal user experience, it's critical that IT collaborate with the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md) on key decisions and processes, such as:
 
 - **Process for users to request software installation.** There are several ways to handle software installation requests:
   - Common tools can be included in a standard machine setup. IT teams sometimes refer to it as the _standard build_.
@@ -40,7 +40,7 @@ Software installations are usually the responsibility of the IT department. To e
   - For custom requests, using a standard request form works well. A form (rather than email) builds up a history of requests. When prerequisites or more licenses are required, approval can be included in the workflow.
 - **Process for installing software updates.** The timely installation of software updates is important. The goal is to stay as current as possible. Be aware that users can read online what's possible and might become confused or frustrated when newer features aren't available to them. For more information, see [Client tools](#client-tools) later in this article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for how to handle requests for new tools, key decisions and actions include:
 
@@ -48,7 +48,7 @@ Software installations are usually the responsibility of the IT department. To e
 > - **Decide how to handle software requests:** Clarify who's responsible for receiving and fulfilling new requests for software installation.
 > - **Confirm whether prerequisites are required:** Determine what organizational prerequisites exist related to training, funding, licensing, and approvals prior to requesting software to be installed.
 > - **Create a tracking system:** Create a system to track the status and history of software requests.
-> - **Create guidance for users:** Provide documentation in the [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for how to request new tools and software applications. Consider co-locating this guidance with how to request licenses, training, and access to data.
+> - **Create guidance for users:** Provide documentation in the [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) for how to request new tools and software applications. Consider co-locating this guidance with how to request licenses, training, and access to data.
 
 ## Plan for consumer tools
 
@@ -68,9 +68,9 @@ The most common ways that a consumer can access Power BI content include:
 > [!NOTE]
 > This list isn't intended to be an all-inclusive list of ways to access Power BI content.
 
-Because the user experience can vary slightly between different web browsers, we recommend that you document browser recommendations in your [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). For more information, see [Supported browsers for Power BI](/power-bi/fundamentals/power-bi-browsers).
+Because the user experience can vary slightly between different web browsers, we recommend that you document browser recommendations in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). For more information, see [Supported browsers for Power BI](/power-bi/fundamentals/power-bi-browsers).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for consumer tools, key decisions and actions include:
 
@@ -113,9 +113,9 @@ When choosing an authoring tool, there are some key factors you should consider.
 - **Is browser-based authoring desirable?** To improve ease of use and reduce friction, Power BI (and other Fabric workloads) supports browser-based functionality for both content consumption as well as content creation. That's an advantage because a web browser is readily available to all users, regardless of the desktop operating system they use (including Mac users).
 - **What's the desired development experience?** Consider that Power BI Desktop can be used to create data models and interactive reports, whereas Power BI Report Builder is a design tool for creating [paginated reports](report-paginated-or-power-bi.md). Also, [third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) offer extra functionality to developers that isn't available in Power BI Desktop. Because development experience differs among tools, the requirements for each specific solution should factor into your decision on which tool to use.
 - **What's the desired publishing experience?** Advanced content creators and content owners might prefer to publish content by using a [third-party tool](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) (such as ALM Toolkit to compare and merge models). The requirements for each specific solution should be considered.
-- **What's the preferred way to access and/or manage datasets?** Rather than using the standard Power Query experience, advanced content creators might prefer to read and/or write to datasets with their tool of choice by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). The requirements for each specific solution should be considered.
+- **What's the preferred way to access and/or manage semantic models?** Rather than using the standard Power Query experience, advanced content creators might prefer to read and/or write to semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) with their tool of choice by using the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). The requirements for each specific solution should be considered.
 - **How easily can you keep client tools updated?** Some organizations find it challenging to install frequent updates of client applications. In this case, users might prefer to use a web browser whenever possible.
-- **What are the skills and expertise of the users?** There might be existing knowledge and preferences that impact which tool is selected. This choice impacts both initial development activities, and also whoever will [support users](powerbi-adoption-roadmap-user-support.md) and maintain existing solutions.
+- **What are the skills and expertise of the users?** There might be existing knowledge and preferences that impact which tool is selected. This choice impacts both initial development activities, and also whoever will [support users](fabric-adoption-roadmap-user-support.md) and maintain existing solutions.
 - **How will versioning be managed?** Version control can be accomplished in multiple ways. When working in a client tool, self-service users might prefer to use [OneDrive or SharePoint](/power-bi/create-reports/desktop-sharepoint-save-share#version-history), whereas more advanced users might prefer [Git integration with client tools](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools). When working in the Power BI service, [Git workspace integration](/fabric/cicd/git-integration/manage-branches#develop-using-another-workspace) is available.
 
 > [!TIP]
@@ -194,10 +194,10 @@ Many business users are proficient with Microsoft Excel and want to use it for d
 
 Here are several ways to efficiently use Excel with Power BI.
 
-- **Connect Excel to a Power BI dataset:** This capability is known as an _Excel live connection_ (when you [start from Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#discover-power-bi-datasets-in-excel)) or as _Analyze in Excel_ (when you [start from the Power BI service](/power-bi/collaborate-share/service-analyze-in-excel#analyze-in-excel)). Connecting Excel to a Power BI dataset is best suited to report creators who prefer using Excel for creating visualizations that are connected to an existing shared dataset. The advantage of this approach is that it's a connection—rather than an export of data—so the data in the Excel workbook is [refreshable](/power-bi/collaborate-share/service-analyze-power-bi-datasets-excel).
-- **Connect Excel to featured tables in a Power BI dataset:** If you prefer to connect Excel to a [subset of tables](/power-bi/collaborate-share/service-excel-featured-tables) within a Power BI dataset (rather than the entire shared dataset), you can use [featured tables](/power-bi/collaborate-share/service-create-excel-featured-tables). This option works well when you need to relate data that's in Excel to data that's stored in Power BI.
+- **Connect Excel to a Power BI semantic model:** This capability is known as an _Excel live connection_ (when you [start from Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#discover-power-bi-semantic-models-in-excel)) or as _Analyze in Excel_ (when you [start from the Power BI service](/power-bi/collaborate-share/service-analyze-in-excel#analyze-in-excel)). Connecting Excel to a Power BI semantic model is best suited to report creators who prefer using Excel for creating visualizations that are connected to an existing shared semantic model. The advantage of this approach is that it's a connection—rather than an export of data—so the data in the Excel workbook is [refreshable](/power-bi/collaborate-share/service-analyze-power-bi-datasets-excel).
+- **Connect Excel to featured tables in a Power BI semantic model:** If you prefer to connect Excel to a [subset of tables](/power-bi/collaborate-share/service-excel-featured-tables) within a Power BI semantic model (rather than the entire shared semantic model), you can use [featured tables](/power-bi/collaborate-share/service-create-excel-featured-tables). This option works well when you need to relate data that's in Excel to data that's stored in Power BI.
 - **Export to Excel with a live connection:** When viewing a visual, you can [export a table of refreshable data](/power-bi/collaborate-share/service-analyze-in-excel#export-to-excel-with-live-connection) to Excel. This technique is useful when you want to further explore the data by using a PivotTable in Excel.
-- **Create an Excel data model:** The [Excel data model](https://support.microsoft.com/office/create-a-data-model-in-excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b) (formerly known as _Power Pivot_) is a native feature of Excel. It uses the same database engine as Power BI for storing imported datasets, and the same Power Query functionality to get data. However, in Excel, the functionality is updated much less frequently than Power BI. It's useful for content creators who create [small models](/power-bi/connect-data/reduce-the-size-of-an-excel-workbook) and have a strong preference for working in Excel. Optionally, you can import your workbook from SharePoint or OneDrive for work or business. That allows you to view the workbook in the Power BI service. Or you can create a new Power BI dataset that's synchronized with the data in the workbook (when it's stored in OneDrive for work or school).
+- **Create an Excel data model:** The [Excel data model](https://support.microsoft.com/office/create-a-data-model-in-excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b) (formerly known as _Power Pivot_) is a native feature of Excel. It uses the same database engine as Power BI for storing imported semantic models, and the same Power Query functionality to get data. However, in Excel, the functionality is updated much less frequently than Power BI. It's useful for content creators who create [small models](/power-bi/connect-data/reduce-the-size-of-an-excel-workbook) and have a strong preference for working in Excel. Optionally, you can import your workbook from SharePoint or OneDrive for work or business. That allows you to view the workbook in the Power BI service. Or you can create a new Power BI semantic model that's synchronized with the data in the workbook (when it's stored in OneDrive for work or school).
 
 There are other ways to work with Excel. These options are less optimal, and so you should use them only when necessary.
 
@@ -209,13 +209,13 @@ There are other ways to work with Excel. These options are less optimal, and so 
 
 Here are some important points to consider when determining whether Excel is an appropriate authoring tool.
 
-- [Certain prerequisites](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#requirements) must be in place to allow users to connect to a Power BI dataset from Excel.
+- [Certain prerequisites](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets#requirements) must be in place to allow users to connect to a Power BI semantic model from Excel.
 - In some organizations, users have the 32-bit version of Excel installed rather than the 64-bit version. The 64-bit version of Excel can support larger data volumes, and generally performs better than the 32-bit version. All data providers must also align with this choice.
 - Some features in Power BI Desktop aren't available in the Excel data model, or they're released on a significantly slower cadence. Therefore, complex modeling requirements might not be (easily) possible in Excel.
 - Some connectors and data sources that are available in Power BI Desktop aren't available in Excel.
 
 > [!TIP]
-> Many organizations have existing Excel solutions that can be modernized by connecting the Excel file to a Power BI shared dataset (rather than using a data export). Live connectivity saves users from repeating tedious steps, prevents data from becoming stale, and ensures data security is consistently applied when users refresh the Excel data.
+> Many organizations have existing Excel solutions that can be modernized by connecting the Excel file to a Power BI shared semantic model (rather than using a data export). Live connectivity saves users from repeating tedious steps, prevents data from becoming stale, and ensures data security is consistently applied when users refresh the Excel data.
 
 #### Power BI Report Builder
 
@@ -228,9 +228,9 @@ Paginated reports are best suited to highly formatted, or print-ready, reports s
 
 Here are some important points to consider when deciding on using Power BI Report Builder.
 
-- Approach working in Power BI Report Builder with a different mindset than when you work in Power BI Desktop. A paginated report always focuses on the creation of one individual report (conversely, a dataset created in Power BI Desktop can serve many different reports).
+- Approach working in Power BI Report Builder with a different mindset than when you work in Power BI Desktop. A paginated report always focuses on the creation of one individual report (conversely, a semantic model created in Power BI Desktop can serve many different reports).
 - Developing paginated reports involves more skill than creating Power BI reports. However, the main benefit is fine-grained control over data retrieval, layout, and placement.
-- A paginated report is concerned with both data retrieval and layout. You're required to develop a query (known as a _dataset_—not to be confused with a Power BI dataset) to retrieve data from an external data source, which might involve writing a native query statement (in DAX, T-SQL, or other language). The dataset belongs to one report, so it can't be published and used by other paginated reports.
+- A paginated report is concerned with both data retrieval and layout. You're required to develop a query (known as a _dataset_) to retrieve data from an external data source, which might involve writing a native query statement (in DAX, T-SQL, or other language). The dataset belongs to one report, so it can't be published and used by other paginated reports.
 - Report consumers become accustomed to the built-in interactivity of Power BI reports. However, report interactivity isn't a strength of paginated reports. Attempting to achieve similar interactivity in paginated reports can be challenging or impossible.
 - If you need to access data by using a database stored procedure (such as an Azure SQL Database stored procedure), that's possible with paginated reports.
 - There are some [feature differences](/power-bi/paginated-reports/paginated-reports-faq#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) and unsupported capabilities depending on whether the paginated report is published to the Power BI service or Power BI Report Server. We recommend that you conduct a proof of concept to determine what's possible for your target environment.
@@ -240,15 +240,15 @@ Here are some important points to consider when deciding on using Power BI Repor
 
 #### Third-party tools
 
-Advanced content creators can choose to use third-party tools, especially for enterprise-scale operations. They can use third-party tools to develop, publish, manage, and optimize data models. The goal of these tools is to broaden the development and management capabilities available to dataset creators. Common examples of [third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) include Tabular Editor, DAX Studio, and ALM Toolkit. For more information, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md#tabular-editor) usage scenario.
+Advanced content creators can choose to use third-party tools, especially for enterprise-scale operations. They can use third-party tools to develop, publish, manage, and optimize data models. The goal of these tools is to broaden the development and management capabilities available to semantic model creators. Common examples of [third-party tools](/power-bi/enterprise/service-premium-connect-tools#client-applications-and-tools) include Tabular Editor, DAX Studio, and ALM Toolkit. For more information, see the [advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md#tabular-editor) usage scenario.
 
 > [!NOTE]
 > The use of third-party tools has become prevalent in the global Power BI community, especially by advanced content creators, developers, and IT professionals.
 
-There are three main ways to use third-party tools for dataset development and management.
+There are three main ways to use third-party tools for semantic model development and management.
 
 - **Use an external tool to connect to a local data model in Power BI Desktop:** Some third-party tools can connect to the data model in an open Power BI Desktop file. When registered with Power BI Desktop, these tools are known as external tools and extend the native capabilities of Power BI Desktop.
-- **Use the XMLA endpoint to connect to a remote data model in the Power BI service:** Some third-party tools can use the _[XML for Analysis (XMLA)](/analysis-services/xmla/xml-for-analysis-xmla-reference)_ protocol to connect to a dataset that's been published to the Power BI service. Tools that are compliant with the XMLA protocol use Microsoft [client libraries](/power-bi/enterprise/service-premium-connect-tools#client-libraries) to read and/or write data to a data model by using [Tabular Object Model (TOM)](/analysis-services/tom/tom-pbi-datasets) operations.
+- **Use the XMLA endpoint to connect to a remote data model in the Power BI service:** Some third-party tools can use the _[XML for Analysis (XMLA)](/analysis-services/xmla/xml-for-analysis-xmla-reference)_ protocol to connect to a semantic model that's been published to the Power BI service. Tools that are compliant with the XMLA protocol use Microsoft [client libraries](/power-bi/enterprise/service-premium-connect-tools#client-libraries) to read and/or write data to a data model by using [Tabular Object Model (TOM)](/analysis-services/tom/tom-pbi-datasets) operations.
 - **Use a template file to connect to a local data model in Power BI Desktop:** Some third-party tools distribute their functionality in a lightweight way by using a Power BI Desktop template (.pbit) file.
 
 Some third-party tools are proprietary and require a paid license (such as Tabular Editor 3). Other community tools are free and open source (such as Tabular Editor 2, DAX Studio, and ALM Toolkit). We recommend that you carefully evaluate the features of each tool, cost, and its support model so you can sufficiently support your content creators.
@@ -256,7 +256,7 @@ Some third-party tools are proprietary and require a paid license (such as Tabul
 > [!TIP]
 > Some organizations find it easier to get a new tool approved that's fully supported (even when there's a licensing cost). However, other organizations find it easier to get a free open-source tool approved. Your IT department can provide guidance and help you do the necessary due diligence.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for authoring tools, key decisions and actions include:
 
@@ -313,9 +313,9 @@ Content creators that have client tools installed, such as Power BI Desktop, mig
 
 Depending on your data sources, you might need to install drivers, connectors, or providers on user devices. These components enable data connectivity when a user works in a client tool (such as Power BI Desktop) or a third-party tool.
 
-- **Drivers:** A _driver_ is a software component that connects to other systems. For example, to connect to an [Oracle](/power-query/connectors/oracle-database#prerequisites) database, you'll need the Oracle Data Access Client software. Or, to connect to [SAP HANA](/power-query/connectors/sap-hana/overview#prerequisites), you'll need an ODBC driver.
+- **Drivers:** A _driver_ is a software component that connects to other systems. For example, to connect to an [Oracle](/power-query/connectors/oracle-database#prerequisites) database, you might need the Oracle Data Access Client software. Or, to connect to [SAP HANA](/power-query/connectors/sap-hana/overview#prerequisites), you might need an ODBC driver.
 - **Custom connectors:** A [custom data source connector](/power-bi/connect-data/desktop-connector-extensibility) might be required when connecting to a legacy or proprietary system.
-- **Excel provider:** The [Analyze in Excel](/power-bi/collaborate-share/service-connect-power-bi-datasets-excel) provider allows users to create visualizations in Excel while connected to an existing shared dataset that's been published to the Power BI service.
+- **Excel provider:** The [Analyze in Excel](/power-bi/collaborate-share/service-connect-power-bi-datasets-excel) provider allows users to create visualizations in Excel while connected to an existing shared semantic model that's been published to the Power BI service.
 - **Analysis Services client libraries:** When connecting to an Analysis Services source, a [client library](/analysis-services/client-libraries) needs to be installed.
 - **Access Database OLE DB provider:** When connecting to an Access database, an [OLE DB provider](/power-query/connectors/access-database#prerequisites) needs to be installed.
 
@@ -378,12 +378,14 @@ To use a custom visual in Power BI Desktop, it must first be installed on the ma
 > If your organization is highly concerned about data privacy and data leakage, consider governing all custom visuals through the organizational visuals repository.
 
 > [!TIP]
-> How you distribute custom visuals is a [governance](powerbi-adoption-roadmap-governance.md) consideration. We recommend that you carefully evaluate the features of each visual, considering its cost and support model so you can sufficiently support your content creators.
+> How you distribute custom visuals is a [governance](fabric-adoption-roadmap-governance.md) consideration. We recommend that you carefully evaluate the features of each visual, considering its cost and support model so you can sufficiently support your content creators.
 >
 > Also, before you approve the use of a new custom visual, it's critical that you evaluate any security and data privacy risks because:
 >
 > - Visuals execute JavaScript code and have access to the data that they visualize.
 > - Visuals can transmit data to an external service. For example, a visual might need to transmit data to an API to run an AI algorithm or to render a map. Just because a visual transmits data to an external service, it doesn't mean it's untrustworthy. A visual that transmits data can't be certified.
+
+For more information, see [Govern organizational visuals](powerbi-implementation-planning-tenant-administration.md#govern-organizational-visuals).
 
 ### Group policy settings
 
@@ -433,7 +435,7 @@ Here are several ways that you might choose to use MAM and MDM policies.
 
 For more information about securing devices and data, see the [Power BI security whitepaper](whitepaper-powerbi-security.md#power-bi-mobile).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When managing devices, key decisions and actions include:
 
@@ -446,6 +448,6 @@ For more information about securing devices and data, see the [Power BI security
 > - **Set up registry settings:** Set up the registry settings to customize user machines, when applicable.
 > - **Investigate mobile device management:** Consider using app protection policies and device protection policies for mobile devices, when appropriate.
 
-## Next steps
+## Related content
 
 For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md#subject-areas).

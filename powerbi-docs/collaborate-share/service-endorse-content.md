@@ -22,12 +22,12 @@ Power BI provides two ways you can endorse your valuable, high-quality content t
     Only [authorized reviewers (defined by the Power BI administrator)](../admin/service-admin-setup-certification.md) can certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
 
 Currently it is possible to endorse
-* Datasets
+* Semantic models
 * Dataflows
 * Reports
 * Apps
 
-If [dataset discoverability](service-discovery.md) has been enabled in your organization, endorsed datasets can be made discoverable. When a dataset is discoverable, users who don't have access to it will be able to find it and request access. See [Dataset discoverability](service-discovery.md) for more detail.
+If [semantic model discoverability](service-discovery.md) has been enabled in your organization, endorsed semantic models can be made discoverable. When a semantic model is discoverable, users who don't have access to it will be able to find it and request access. See [Semantic model discoverability](service-discovery.md) for more detail.
 
 This article describes how to [promote content](#promote-content), how to [certify content](#certify-content) if you're an authorized reviewer, and how to [request certification](#request-content-certification) if you're not.
 
@@ -38,15 +38,15 @@ See [Endorsement: Promoting and certifying Power BI content](service-endorsement
 To promote content, you must have write permissions the workspace where the content you want to promote is located.
 
 >[!NOTE]
->For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
+>For the purposes of illustration, the endorsement dialog for semantic models is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
 
 1. Go to the [settings](#how-to-get-to-content-settings) of the content you want to promote.
 
 1. Expand the endorsement section and select **Promoted**.
 
-    If you are promoting a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery.md) for more detail.
+    If you are promoting a semantic model and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the semantic model to find it. See [semantic model discovery](service-discovery.md) for more detail.
 
-    If you're promoting a dataset, make sure the dataset has an informative description. The description is important; it's what users see in the dataset info tooltip in the datasets hub and on the dataset's details page. A description helps users quickly identify datasets that might be useful for them. See [Dataset description](../connect-data/service-dataset-description.md) for details about how to provide a dataset description.
+    If you're promoting a semantic model, make sure the semantic model has an informative description. The description is important; it's what users see in the semantic model info tooltip in the semantic models hub and on the semantic model's details page. A description helps users quickly identify semantic models that might be useful for them. See [Semantic model description](../connect-data/service-dataset-description.md) for details about how to provide a semantic model description.
 
     ![Select Promoted and Apply](media/service-endorse-content/power-bi-promote-content.png)
 
@@ -57,7 +57,7 @@ To promote content, you must have write permissions the workspace where the cont
 Content certification is a big responsibility, and only authorized users can certify content. Other users can [request content certification](#request-content-certification). This section describes how to certify content.
 
 >[!NOTE]
->For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options.
+>For the purposes of illustration, the endorsement dialog for semantic models is shown below. The dialogs for the other content types are almost identical, with the same radio button options.
 
 1. Get write permissions on the workspace where the content you want to certify is located. You can request these permissions from the content owner or from anyone with admin permissions on the workspace.
 
@@ -67,9 +67,9 @@ Content certification is a big responsibility, and only authorized users can cer
 
 1. Expand the endorsement section and select **Certified**.
 
-    If you are certifying a dataset and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the dataset to find it. See [dataset discovery](service-discovery.md) for more detail.
+    If you are certifying a semantic model and see a **Make discoverable** checkbox, it means you can make it possible for users who don't have access to the semantic model to find it. See [semantic model discovery](service-discovery.md) for more detail.
 
-     If you're certifying a dataset, make sure the dataset has an informative description. The description is important; it's what users see in the dataset info tooltip in the datasets hub and on the dataset's details page. A description helps users quickly identify datasets that might be useful for them. See [Dataset description](../connect-data/service-dataset-description.md) for details about how to provide a dataset description.
+     If you're certifying a semantic model, make sure the semantic model has an informative description. The description is important; it's what users see in the semantic model info tooltip in the semantic models hub and on the semantic model's details page. A description helps users quickly identify semantic models that might be useful for them. See [Semantic model description](../connect-data/service-dataset-description.md) for details about how to provide a semantic model description.
 
     ![Screen shot of certify content button.](media/service-endorse-content/power-bi-certify-content.png)
 
@@ -80,7 +80,7 @@ Content certification is a big responsibility, and only authorized users can cer
 If you would like to certify your content but are not authorized to do so, follow the steps below.
 
 >[!NOTE]
->For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
+>For the purposes of illustration, the endorsement dialog for semantic models is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
 
 1. Go to the workspace where the content you want to be certified is located, and then open the [settings](#how-to-get-to-content-settings) of that content.
 
@@ -95,7 +95,7 @@ If you would like to certify your content but are not authorized to do so, follo
 
 The Endorsement dialog is accessed through the settings of the content you want to endorse. Follow the instructions below to get to the settings for each content type.
 
-* **Datasets**: In list view, hover over the dataset you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
+* **Semantic models**: In list view, hover over the semantic model you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
 * **Dataflows**: In list view, hover over the dataflow you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
 
 
@@ -105,9 +105,9 @@ The Endorsement dialog is accessed through the settings of the content you want 
 
     ![Screenshot of link to app settings.](media/service-endorse-content/power-bi-app-settings.png)
 
-## Next steps
+## Related content
 
 * [Read more about content endorsement](service-endorsement-overview.md)
 * [Enable content certification](../admin/service-admin-setup-certification.md) (Power BI admins)
-* [Read more about dataset discoverability](service-discovery.md)
+* [Read more about semantic model discoverability](service-discovery.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

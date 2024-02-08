@@ -28,9 +28,9 @@ You can add multiple data regions to a paginated report to provide different vie
 
  A matrix with multiple row and column groups can best be displayed by using an area, bar, or column chart with both category and series groups. Use the same group expressions for column groups on the matrix and category groups on the chart, and the same group expressions for row groups on the matrix and series groups on the chart. You must keep in mind that the number of group instances affects the readability of the chart. You can define groups based on range values to reduce the number of group instances in a report. For more information, see [Group expression examples](../../paginated-reports/expressions/group-expression-examples-report-builder.md).  
   
-## Next steps
+## Related content
 
-[Charts](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
-[Tables, matrices, and lists](../../paginated-reports/report-builder-tables-matrices-lists.md)   
-[Nested data regions](../../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md)  
+- [Charts](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
+- [Tables, matrices, and lists](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+- [Nested data regions](../../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md)  
 

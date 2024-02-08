@@ -29,6 +29,8 @@ landingContent:
             url: desktop-data-sources.md
           - text: Data view in Power BI Desktop
             url: desktop-data-view.md
+          - text: New name for Power BI datasets
+            url: service-datasets-rename.md
       - linkListType: tutorial
         links:
           - text: Import data from a web page
@@ -71,7 +73,7 @@ landingContent:
         links:
           - text: "Data refresh"
             url: refresh-data.md
-          - text: "Incremental refresh for datasets"
+          - text: "Incremental refresh for semantic models"
             url: ../connect-data/incremental-refresh-overview.md
       - linkListType: how-to-guide
         links:

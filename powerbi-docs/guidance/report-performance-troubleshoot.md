@@ -20,18 +20,18 @@ Slow reports can be identified by report users who experience reports that are s
 
 Use the following flowchart to help understand the cause of slow performance, and to determine what action to take.
 
-:::image type="content" source="media/report-performance-troubleshoot/flowchart.png" alt-text="Image shows the flowchart, which is fully described in the article text." border="true":::
+:::image type="content" source="media/report-performance-troubleshoot/flowchart.png" alt-text="Image shows the flowchart, which is fully described in the article text." border="false":::
 
 There are six flowchart terminators, each describing action to take:
 
 | **Terminator** | **Action(s)** |
 |---|---|
-| ![Flowchart terminator 1.](media/common/icon-01-red-30x30.png) | &bull;&nbsp;Manage capacity. <br/>&bull;&nbsp;Scale capacity. |
-| ![Flowchart terminator 2.](media/common/icon-02-red-30x30.png) | &bull;&nbsp;Investigate capacity activity during typical report usage. |
-| ![Flowchart terminator 3.](media/common/icon-03-red-30x30.png) | &bull;&nbsp;Architecture change. <br/>&bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Check on-premises gateway. |
-| ![Flowchart terminator 4.](media/common/icon-04-red-30x30.png) | &bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Consider Power BI Premium. |
-| ![Flowchart terminator 5.](media/common/icon-05-red-30x30.png) | &bull;&nbsp;Use Power BI Desktop Performance Analyzer. <br/>&bull;&nbsp;Optimize report, model, or DAX. |
-| ![Flowchart terminator 6.](media/common/icon-06-red-30x30.png) | &bull;&nbsp;Raise support ticket. |
+| ![Flowchart terminator 1.](../media/legend-number/legend-number-01-fabric.svg) | &bull;&nbsp;Manage capacity. <br/>&bull;&nbsp;Scale capacity. |
+| ![Flowchart terminator 2.](../media/legend-number/legend-number-02-fabric.svg) | &bull;&nbsp;Investigate capacity activity during typical report usage. |
+| ![Flowchart terminator 3.](../media/legend-number/legend-number-03-fabric.svg) | &bull;&nbsp;Architecture change. <br/>&bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Check on-premises gateway. |
+| ![Flowchart terminator 4.](../media/legend-number/legend-number-04-fabric.svg) | &bull;&nbsp;Consider Azure Analysis Services. <br/>&bull;&nbsp;Consider Power BI Premium. |
+| ![Flowchart terminator 5.](../media/legend-number/legend-number-05-fabric.svg) | &bull;&nbsp;Use Power BI Desktop Performance Analyzer. <br/>&bull;&nbsp;Optimize report, model, or DAX. |
+| ![Flowchart terminator 6.](../media/legend-number/legend-number-06-fabric.svg) | &bull;&nbsp;Raise support ticket. |
 
 ## Take action
 
@@ -47,7 +47,7 @@ When the report is hosted on shared capacity, it's not possible to monitor capac
 
 First, determine if slow performance occurs at specific times of the day or month. If it does—and many users are opening the report at these times—consider two options:
 
-- Increase query throughput by migrating the dataset to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity (flowchart terminator 4).
+- Increase query throughput by migrating the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity (flowchart terminator 4).
 - Use Power BI Desktop [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues (flowchart terminator 5).
 
 If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it is, it's likely that the data source is remote and there's slow network communication. In this case, consider:
@@ -59,13 +59,13 @@ Finally, if you determine there's no time pattern *and* slow performance occurs 
 
 When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/) (flowchart terminator 6).
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
 - [Power BI guidance](index.yml)
+- [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - [Monitoring report performance](monitor-report-performance.md)
 - [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
-- [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md)
-- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Questions? [Try asking the Power BI community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

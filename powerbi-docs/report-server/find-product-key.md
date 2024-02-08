@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-6CQnf-NGtpU
-ms.date: 09/19/2023
+ms.date: 01/30/2024
 ---
 # How to find your report server product key
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
@@ -46,7 +46,9 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 
 ### Volume licensing in the Microsoft 365 Admin Center
 
-If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **Downloads** section.
+If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section. 
+
+Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloads and Keys** > **Find SQL Server** > **View Downloads** > **View additional instructions**:
 
 1. Select the key next to the version of the software that you have.
 
@@ -60,11 +62,11 @@ If your volume licensing has moved to the Microsoft 365 Admin Center, you can fi
 
     :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
 
-## Next steps
+## Related content
 
-[Install Power BI Report Server](install-report-server.md)  
-[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+* [Install Power BI Report Server](install-report-server.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

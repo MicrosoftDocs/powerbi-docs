@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
+            "redirect_url": "/fabric/data-science/use-ai-samples",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/desktop-directquery-data-sources.md",
             "redirect_url": "/power-bi/connect-data/power-bi-data-sources/",
             "redirect_document_id": false
@@ -13,6 +18,21 @@
         {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-203-decomposition-tree-shows-title-collapsed-level.md",
             "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-copy-paste.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-copy-paste",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-preview-features.md",
+            "redirect_url": "/power-bi/consumer/end-user-experience",
+            "redirect_document_id": false
+        }, 
+        {
+	    "source_path": "powerbi-docs/visuals/power-bi-report-change-visualization-type.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a",
             "redirect_document_id": false
         },
         {
@@ -3191,8 +3211,8 @@
         },
         {
             "source_path": "powerbi-docs/connect-data/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
-            "redirect_document_id": true
+            "redirect_url": "/fabric/data-science/use-ai-samples",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-tutorial-connect-to-github.md",
@@ -3201,7 +3221,7 @@
         },
         {
             "source_path": "powerbi-docs/service-tutorial-invoke-machine-learning-model.md",
-            "redirect_url": "/power-bi/connect-data/service-aml-integrate",
+            "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
         },
         {
@@ -5238,7 +5258,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-content-pack-app.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-content-pack-app",
+            "redirect_url": "/fabric/admin/service-admin-portal-app",
             "redirect_document_id": false
         },
         {
@@ -5575,7 +5595,177 @@
             "source_path": "powerbi-docs/enterprise/service-premium-metrics-app.md",
             "redirect_url": "/fabric/enterprise/metrics-app",
             "redirect_document_id": false
-        }                                                                                                                                                                                                           
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-business-alignment.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-center-of-excellence.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-center-of-excellence",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-change-management.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-change-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-community-of-practice.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-community-of-practice",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-conclusion.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-conclusion",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-content-delivery-scope.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-content-delivery-scope",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-content-ownership-and-management.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-content-ownership-and-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-data-culture.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-data-culture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-executive-sponsorship.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-executive-sponsorship",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-governance.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-governance",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-maturity-levels.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-maturity-levels",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-mentoring-and-user-enablement.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-mentoring-and-user-enablement",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-overview.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-system-oversight.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-system-oversight",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/guidance/powerbi-adoption-roadmap-user-support.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap-user-support",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-533-unable-sign-in-32-bit-desktop.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },        
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-522-failures-fabric-capacity-metrics-app.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },            
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-498-export-csv-file-truncated-300-rows.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },                  
+        {                                                                                                                                                                                                         
+            "source_path": "powerbi-docs/guidance/translation-manage-dataset-enterprise.md",
+            "redirect_url": "/power-bi/guidance/translation-manage-data-model-enterprise",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/fabric-adoption-roadmap-overview.md",
+            "redirect_url": "/power-bi/guidance/fabric-adoption-roadmap",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-491-cancel-refresh-operation-fails-using-virtual-network-gateway.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-465-embedded-report-shows-black-bar.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-443-deployment-pipeline-stuck-loading.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-432-workspace-setting-large-dataset-storage-format-not-persistent.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-427-tenant-admin-settings-may-not-save-correctly.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-430-newly-added-content-org-app-doesnt-show.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-407-tenant-settings-show-keys-descriptions.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-398-upload-sharepoint-greyed-out.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-308-tenant-migrations-paused.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md",
+            "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-app-find-access-google-search.md",
+            "redirect_url": "/power-bi/consumer/mobile",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-china-north.md",
+            "redirect_url": "/fabric/admin/region-availability",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/whitepaper-powerbi-enterprise-deployment.md",
+            "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-introduction",
+            "redirect_document_id": true
+        }                                                                                                                                                                                                                                                                                                                                             
   ]          
 
 }

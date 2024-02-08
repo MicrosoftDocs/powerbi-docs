@@ -186,6 +186,6 @@ Issues with maps in a Power BI paginated report might occur when you add a map o
   
  To specify data that is related to spatial data that is not part of a report dataset, you must use the symbol # followed by a label that specifies the name of the data.  
   
-## Next steps
+## Related content
 
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)

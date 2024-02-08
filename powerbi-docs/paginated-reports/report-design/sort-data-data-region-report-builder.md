@@ -117,9 +117,10 @@ ms.reviewer: saurkumar
   
  For more information about how data is grouped in a gauge, see [Gauges (Power BI Report Builder)](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs).  
   
-## Next steps  
- [Charts (Power BI Report Builder)](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
- [Formatting axis labels on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Specify consistent colors across multiple shape charts (Power BI Report Builder)](/sql/reporting-services/report-design/specify-consistent-colors-across-multiple-shape-charts-report-builder-and-ssrs)  
+## Related content
+
+- [Charts (Power BI Report Builder)](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+- [Formatting axis labels on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+- [Specify consistent colors across multiple shape charts (Power BI Report Builder)](/sql/reporting-services/report-design/specify-consistent-colors-across-multiple-shape-charts-report-builder-and-ssrs)  
   
   

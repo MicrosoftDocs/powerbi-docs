@@ -53,7 +53,7 @@ For more information about licenses and subscriptions, see [Which license do I h
 
 ## Safely interact with content
 
-As you filter, slice, subscribe, and export, your work doesn't impact the underlying dataset or the original shared content, like dashboards, reports, and apps.  
+As you filter, slice, subscribe, and export, your work doesn't impact the underlying semantic model or the original shared content, like dashboards, reports, and apps.  
 
 You can't corrupt your data. Power BI is a great place to explore and experiment without worrying that you might break something.  
 
@@ -61,7 +61,7 @@ That doesn't mean that you can't save your changes. You can, but those changes o
 
 :::image type="icon" source="media/end-user-consumer/power-bi-reset.png":::
 
-## Next steps
+## Related content
 
 [Take a tour of the Power BI service for business users](end-user-reading-view.md)  
 [Power BI service training for business users](/training/paths/consume-data-with-power-bi/)  

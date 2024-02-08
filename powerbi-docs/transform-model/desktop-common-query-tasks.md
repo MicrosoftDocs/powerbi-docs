@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/24/2023
+ms.date: 11/10/2023
 LocalizationGroup: Transform and shape data
 ---
 # Perform common query tasks in Power BI Desktop
@@ -39,7 +39,7 @@ To start, select **Excel Workbook**, specify the Excel workbook mentioned earlie
 
 :::image type="content" source="media/desktop-common-query-tasks/commonquerytasks_navigator.png" alt-text="Screenshot of the Navigator dialog box with Table 1 chosen to load.":::
 
-Select **Transform Data** to edit, adjust, or *shape*, the data before you load it into Power BI Desktop. Editing is especially useful when you work with large datasets that you want to pare down before loading.
+Select **Transform Data** to edit, adjust, or *shape*, the data before you load it into Power BI Desktop. Editing is especially useful when you work with large semantic models that you want to pare down before loading.
 
 Connecting to different types of data is a similar process. To connect to a Web data source, select **Get data** > **More**, and then choose **Other** > **Web** > **Connect**.
 
@@ -75,7 +75,7 @@ You can shape the data in many other ways in this query. You can remove any numb
 
 In Power Query Editor, you can group the values from many rows into a single value. This feature can be useful when summarizing the number of products offered, the total sales, or the count of students.
 
-In this example, you group rows in an education enrollment dataset. The data is from the Excel workbook.
+In this example, you group rows in an education enrollment semantic model. The data is from the Excel workbook.
 
 This example shows how many Agencies each state has. (Agencies can include school districts, other education agencies such as regional service districts, and more.) Select the **State Abbr** column, then select the **Group By** button in the **Transform** tab or the **Home** tab of the ribbon. (**Group By** is available in both tabs.)
 
@@ -146,7 +146,7 @@ Here's a screenshot of the **Advanced Editor**, with the query steps associated 
 
 Power BI Desktop provides an extensive set of formula categories. For more information, and a complete reference of all Power Query Editor formulas, see [Power Query M function reference](/powerquery-m/power-query-m-function-reference).
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 

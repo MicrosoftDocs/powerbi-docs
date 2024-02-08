@@ -78,7 +78,7 @@ The following steps create a ribbon chart to illustrate the rank for categories 
 
    1. On the **Visualizations** pane, for the chart **X-axis**, make sure only the **Month** and **Day** fields are listed under **OpenDate**.
    
-      The sample dataset contains data for one year only, so we can remove the **Year** and **Quarter** data from the **X-axis**.
+      The sample semantic model contains data for one year only, so we can remove the **Year** and **Quarter** data from the **X-axis**.
 
    1. On the **Data** pane, expand **Sales**, expand **This Year Sales**, and then select the **Value** checkbox.
 
@@ -115,7 +115,7 @@ Set formatting options for your data labels. In this example, we set the text co
 
 :::image type="content" source="media/desktop-ribbon-charts/power-bi-data-labels.png" alt-text="Screenshot that shows the final formatted ribbon chart." border="false":::
 
-## Next steps
+## Related content
 
 - Create [scatter charts and bubble charts in Power BI](power-bi-visualization-scatter.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

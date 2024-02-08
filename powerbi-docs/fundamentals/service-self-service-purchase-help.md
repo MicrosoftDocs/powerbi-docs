@@ -18,5 +18,6 @@ You've tried to try, upgrade, or purchase Power BI Pro and received a message th
 ## Solution
 To finish your purchase, contact your IT department or help desk and ask them to [follow these instructions to provide you with a license](../enterprise/service-admin-manage-licenses.md).
 
-## Next steps
-[Power BI features by license type](service-features-license-type.md)
+## Related content
+
+- [Power BI features by license type](service-features-license-type.md)

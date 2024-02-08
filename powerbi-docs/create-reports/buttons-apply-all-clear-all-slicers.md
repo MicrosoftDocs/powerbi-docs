@@ -108,7 +108,7 @@ Some things to keep in mind with the slicers:
 - The slicer pending icon can't be changed. However, you can change the pending icon color, size, transparency, if it’s to the left or right of the header, or even if it’s shown at all, in the formatting pane.
 - If the slicer header is turned off, then there's no indication of the pending state of the selections on the slicer itself. However, the Apply all slicers button is in a disabled state until one or more of the slicers has a pending change.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 

@@ -31,13 +31,13 @@ There are two kinds of endorsement: **promotion** and **certification**.
 
     **Certification is available only if a Power BI administrator has [enabled and configured](../admin/service-admin-setup-certification.md) it for your organization**.
 
-The image below illustrates how endorsed content (promoted and certified) is clearly identified when you're searching for a dataset to build a report on.
+The image below illustrates how endorsed content (promoted and certified) is clearly identified when you're searching for a semantic model to build a report on.
 
-![Screenshot of endorsed datasets in a dataset selection dialog.](media/service-endorsement-overview/power-bi-content-endorsement-dataset-select.png)
+![Screenshot of endorsed semantic models in a semantic model selection dialog.](media/service-endorsement-overview/power-bi-content-endorsement-dataset-select.png)
 
 ## Content types that can be endorsed
 Power BI currently supports endorsement for:
-* Datasets
+* Semantic models
 * Dataflows
 * Reports
 * Apps
@@ -63,15 +63,15 @@ In addition, if you are in a report or an app, you can see the endorsement statu
 
 ## Deciding whether to endorse an app or a report
 
-Endorsement is meant to be used for the content items (apps, reports, datasets, and dataflows) you want people to find, use, and possibly re-share.
+Endorsement is meant to be used for the content items (apps, reports, semantic models, and dataflows) you want people to find, use, and possibly re-share.
 
 When you’re sharing data with a broad audience, a Power BI best practice is to share that data via an app. If you’re following this best practice, you want people to be able to find that app easily. In such cases then, you should endorse the app. 
 
 If you still find it useful to share reports directly, however, then endorse the report itself. 
 
-Whether you’re sharing a report or an app, if the underlying datasets are clean and ready to be shared, it’s a good idea to endorse the datasets as well. The same applies to dataflows.  
+Whether you’re sharing a report or an app, if the underlying semantic models are clean and ready to be shared, it’s a good idea to endorse the semantic models as well. The same applies to dataflows.  
 
-## Next steps
+## Related content
 
 * [Promote or certify Power BI content](service-endorse-content.md)
 * [Enable certification for your organization](../admin/service-admin-setup-certification.md) (Power BI admins)

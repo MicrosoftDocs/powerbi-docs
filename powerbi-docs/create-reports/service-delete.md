@@ -1,5 +1,5 @@
 ---
-title: Delete a dashboard, report, workbook, dataset, or workspace
+title: Delete a dashboard, report, workbook, semantic model, or workspace
 description: Learn how to delete almost anything from the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -14,9 +14,9 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This article shows you how to delete a dashboard, report, workbook, dataset, app, visualization, or a workspace in the Power BI service. You can delete almost anything in the Power BI service, with some exceptions.
+This article shows you how to delete a dashboard, report, workbook, semantic model, app, visualization, or a workspace in the Power BI service. You can delete almost anything in the Power BI service, with some exceptions.
 
-## Delete a dashboard, report, dataset, or workbook
+## Delete a dashboard, report, semantic model, or workbook
 
 1. In your workspace, select the **All** tab.
 1. Select **More options (...)** next to the asset you want to delete, and choose **Delete**.
@@ -65,14 +65,14 @@ If you're a workspace admin, you can delete a workspace with no effect on any Mi
 
 ## Considerations and limitations
 
-- Removing a *dashboard* doesn't delete the underlying dataset or any reports associated with that dashboard.
+- Removing a *dashboard* doesn't delete the underlying semantic model or any reports associated with that dashboard.
 - If you're the *owner of a dashboard or report*, you can remove it. If you've shared it with colleagues, removing it from your Power BI workspace removes it from their Power BI workspaces too.
 - If a *dashboard or report is shared with you*, you can't remove it.
-- Deleting a report doesn't delete the dataset that the report is based on. Any visualizations that you pinned to a dashboard from the report are also safe. They remain on the dashboard until you delete them individually.
-- You can delete a *dataset*. However, deleting a dataset also deletes all reports and dashboard tiles that contain data from that dataset.
+- Deleting a report doesn't delete the semantic model that the report is based on. Any visualizations that you pinned to a dashboard from the report are also safe. They remain on the dashboard until you delete them individually.
+- You can delete a *semantic model*. However, deleting a semantic model also deletes all reports and dashboard tiles that contain data from that semantic model.
 - You can remove *workbooks*. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook. If a workbook is stored on OneDrive for work or school, deleting it from Power BI doesn't delete it from OneDrive.
 
-## Next steps
+## Related content
 
 This article covered how to delete the major building blocks of the Power BI service. Here are a few other things you can also delete:
 

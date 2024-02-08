@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 11/14/2023
 LocalizationGroup: Create reports
 ---
 # Consume Power BI reports by using accessibility features
@@ -81,6 +81,12 @@ As you navigate between visuals, you can press **Alt + Shift + F10** to move foc
 
 :::image type="content" source="media/desktop-accessibility/accessibility-consuming-tools-07.png" alt-text="Screenshot of a visual, highlighting the header.":::
 
+## High contrast modes
+
+The Power BI service attempts to detect the high contrast settings selected for Windows. The effectiveness and accuracy of that detection depends on the browser showing the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View > High contrast colors** and then select the theme you would like to apply to the report.
+
+:::image type="content" source="media/desktop-accessibility/accessibility-consuming-tool-01.png" alt-text="Screenshot of the high contrast windows settings.":::
+
 ## Screen reader
 
 When viewing a report, it's best to leave scan mode off. Power BI should be treated more like an application and less like a document, so it’s been set up with custom navigation to make it easier to navigate. When using a screen reader with Power BI Desktop, you should also make sure your screen reader is open before you open Power BI Desktop.
@@ -97,13 +103,19 @@ The **Show data** feature is an HTML table that's only accessible to a screen re
 
 To exit the **Show data** view and return to a report, press **Esc**.
 
-## High contrast modes
+### Show Visuals as Tables (preview)
 
-The Power BI service attempts to detect the high contrast settings selected for Windows. The effectiveness and accuracy of that detection depends on the browser showing the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View > High contrast colors** and then select the theme you would like to apply to the report.
+Some users might prefer to consume data in a tabular format depending on their different learning styles and usage of assistive technologies. If you'd like to present your report in tabular format, you can press **Ctrl + Shift + F11** to switch to **Show Visuals as Table** view mode. With a single action, all pages in your report will display most visuals in a table or matrix format, while still allowing interaction and cross-filtering capabilities. 
 
-:::image type="content" source="media/desktop-accessibility/accessibility-consuming-tool-01.png" alt-text="Screenshot of the high contrast windows settings.":::
+To activate, select **View > Show visuals as tables**. To revert back to original visuals, select **View > Show original visuals**. Or simply use the keyboard shortcut **Ctrl + Shift + F11** to toggle between the two views. 
 
-## Next steps
+Limitations & Notes: 
+
+* Show Visuals as Tables doesn't apply to dashboards
+* Show Visuals as Tables only applies to the current report you are viewing (each new report will need to be activated)
+* Show Visuals as Tables doesn't apply to the following visuals: slicers, cards, smart narrative, Power Apps, Paginated Report, Key Influencers, Q&A
+
+## Related content
 
 The collection of articles for Power BI accessibility are the following:
 

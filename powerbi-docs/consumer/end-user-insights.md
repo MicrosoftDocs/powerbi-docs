@@ -15,13 +15,13 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Each visual tile on your dashboard is a doorway into data exploration. For more information, see [Dashboard tiles in Power BI](end-user-tiles.md). When you select a tile, it opens a report or Q&A [(Q&A for Power BI Business users)](end-user-q-and-a.md), where you can filter and dig into the dataset behind the report. And when you run insights, Power BI does the data exploration for you.
+Each visual tile on your dashboard is a doorway into data exploration. For more information, see [Dashboard tiles in Power BI](end-user-tiles.md). When you select a tile, it opens a report or Q&A [(Q&A for Power BI Business users)](end-user-q-and-a.md), where you can filter and dig into the semantic model behind the report. And when you run insights, Power BI does the data exploration for you.
 
 :::image type="content" source="./media/end-user-insights/power-bi-insight.png" alt-text="Screenshot of the insights of a dashboard tile on  Power BI.":::
 
 When you run insights on tiles, Power BI looks at the data used to render that tile. If Power BI finds interesting facts or trends in that data, you'll see those facts or trends in the form of interactive visuals. Insights can run on a specific dashboard tile and you can even run insights on an insight!
 
-The insights feature is built on a growing set of advanced analytical algorithms developed in conjunction with Microsoft Research that allows people to find insights in their data in new and intuitive ways. For more information, see [Types of insights supported by Power BI](end-user-insight-types.md). The dashboard insights feature is similar to the dataset **quick insights** feature. To see how to run quick insights on an entire dataset, see [Generate data insights on your dataset automatically with Power BI](../create-reports/service-insights.md).
+The insights feature is built on a growing set of advanced analytical algorithms developed in conjunction with Microsoft Research that allows people to find insights in their data in new and intuitive ways. For more information, see [Types of insights supported by Power BI](end-user-insight-types.md). The dashboard insights feature is similar to the semantic model **quick insights** feature. To see how to run quick insights on an entire semantic model, see [Generate data insights on your semantic model automatically with Power BI](../create-reports/service-insights.md).
 
 ## Run insights on a dashboard tile
 
@@ -54,7 +54,7 @@ To return to your report, select **Exit Focus mode**, located in the upper left 
 
 **View insights** doesn't work with all dashboard tile types. For example, it isn't available for Power BI custom visuals, streaming data, DirectQuery tiles, or data protected with RLS (row-level security).<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
-## Next steps
+## Related content
 
 * [Use the Analyze feature to explain fluctuations in report visuals](end-user-analyze-visuals.md)
 * [Types of insights supported by Power BI](end-user-insight-types.md)

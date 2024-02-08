@@ -21,7 +21,7 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 - Import mode
 - Live connect to Azure Analysis Services
 - Live connect to SQL Server Analysis Services (with a gateway)
-- Power BI datasets
+- Power BI semantic models
 
 In each of these configurations, row-level security is also supported.
 
@@ -83,6 +83,6 @@ Currently, redefining a recognized term or defining other types of conditions or
 - Multiple conditions aren't supported. As a workaround, create a Data Analysis Expressions (DAX) calculated column that evaluates a multi-condition statement Boolean and use this field instead.
 - If you don't specify a filter condition when Q&A prompts for a subset of data, you can't save the definition, even if the entire statement has no red underlines.
 
-## Next steps
+## Related content
 
 There are several best practices for improving the natural language engine. For more information, see [Best practices to optimize Q&A in Power BI](q-and-a-best-practices.md).

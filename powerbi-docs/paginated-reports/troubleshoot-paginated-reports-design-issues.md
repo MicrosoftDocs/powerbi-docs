@@ -42,7 +42,7 @@ In general, a report grows to accommodate its data and pushes other report items
   
 To group multiple data regions or report items together, place them in the same parent container. For example, place a chart and table in a rectangle container and align their top edges to display them side by side. For more information, see [Rendering Behaviors in Report Builder](./report-design/render-behaviors-report-builder-service.md).
   
-## Next steps
+## Related content
 
 - [Troubleshoot Execution Issues With Paginated Reports](./troubleshoot-paginated-reports-execution-issues.md)
 - [Data retrieval guidance for paginated reports](../guidance/report-paginated-data-retrieval.md)

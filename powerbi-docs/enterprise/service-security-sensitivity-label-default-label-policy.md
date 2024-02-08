@@ -23,7 +23,7 @@ This article describes how to enable a default label policy, both in the [Micros
 ## What happens when a default label policy is in effect?
 
 * In Power BI Desktop, when a user to whom the policy applies opens a new *.pbix* file or an existing unlabeled *.pbix* file, the default label will be applied to the file. If the user is working offline, the label is applied when the user signs in.
-* In the Power BI service, when a user to whom the policy applies creates a new dataset, report, dashboard, dataflow or scorecard, the default label will be applied to that item.
+* In the Power BI service, when a user to whom the policy applies creates a new semantic model, report, dashboard, dataflow or scorecard, the default label will be applied to that item.
 
 ## Enabling a default label policy for Power BI
 
@@ -60,9 +60,9 @@ Where:
 * Default labeling in Power BI covers most common scenarios, but there may be some less common flows that still allow users to open or create unlabeled *.pbix* files or Power BI artifacts.
 * Default label policy settings for Power BI are independent of the default label policy settings for files and email.
 * Default labeling in Power BI isn't supported for service principals and APIs. Service principals and APIs aren't subject to default label policies.
-* Default label policies in Power BI aren't supported for [external guest users (Azure AD B2B)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label is applied automatically.
+* Default label policies in Power BI aren't supported for [external guest users (Microsoft Entra B2B)](service-admin-azure-ad-b2b.md). When a B2B user opens or creates an unlabeled *.pbix* file in Power BI Desktop or Power BI artifact in the Power BI service, no default label is applied automatically.
 
-## Next steps
+## Related content
 
 * [Mandatory label policy for Power BI](service-security-sensitivity-label-mandatory-label-policy.md)
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)

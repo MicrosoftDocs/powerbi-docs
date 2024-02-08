@@ -7,7 +7,7 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 05/03/2023
+ms.date: 12/04/2023
 #Customer intent: As a paginated report creator, I want to set up row-level security to maintain privacy and security.
 ---
 
@@ -23,7 +23,7 @@ To use RLS in a paginated report, you first [create parameters](#create-a-parame
 - Use [UserID in a query](#use-userid-in-a-query).
 
     > [!NOTE]  
-    > Value for UserID expression during report preview in Power BI Report Builder could be in a different format than the value for UserID expression when run in a report on the Power BI service. It depends upon whether the computer running Power BI Report Builder uses Active Directory or Azure Active Directory.
+    > Value for UserID expression during report preview in Power BI Report Builder could be in a different format than the value for UserID expression when run in a report on the Power BI service. It depends upon whether the computer running Power BI Report Builder uses Active Directory or Microsoft Entra ID.
 
 ## Prerequisites
 
@@ -82,6 +82,10 @@ Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-fil
     ![Screenshot shows Power BI Report Builder queries edit.](media/paginated-rls/query-edit.png)
 
 1. Select **OK**.
+
+## Considerations and limitations
+
+* The Test as role/View as role feature doesn't work for paginated reports.
 
 ## Next steps
 

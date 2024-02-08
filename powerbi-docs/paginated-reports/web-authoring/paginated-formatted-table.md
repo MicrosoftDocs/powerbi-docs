@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/22/2023
+ms.date: 12/19/2023
 ---
 
 # Create paginated reports that you can export in the Power BI service
@@ -64,6 +64,14 @@ Now that you have the columns that you want, you can format the table using the 
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename.png" alt-text="Screenshot of editing text in a column header.":::
 
+1. To sort the table on a column, select the sort icon in the column header.
+  
+    :::image type="content" source="media/paginated-formatted-table/paginated-formatted-table-sort.png" alt-text="Screenshot of sorting during authoring." lightbox="media/paginated-formatted-table/paginated-formatted-table-sort.png":::
+
+    After you sort it, you see the arrow icon showing the direction of the sort on the column.
+
+    :::image type="content" source="media/paginated-formatted-table/paginated-formatted-table-sorted.png" alt-text="Screenshot of sorted column in authoring." lightbox="media/paginated-formatted-table/paginated-formatted-table-sorted.png":::
+
 > [!NOTE]
 > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
 >
@@ -81,7 +89,7 @@ This option takes you back to the online editor experience, where you can make c
 > This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. *If you edit this report in Report Builder, you can't edit it online anymore.*
 
 ## Add images to the paginated report
-For any paginated report that you *author online*, you can insert images in the top section of your report to brand or describe your formatted table data below.
+For any paginated report that you *author online*, you can insert images in the top section of your report to brand or describe your formatted table data.
 
 ### Add an image item
 1. To add an image to your report, select **Insert**, then **Image**.
@@ -204,6 +212,6 @@ After saving the report, you can preview it. Select **Reading view** on the top 
 - You can't create a paginated report from Power BI semantic models based on a live connection.
 - The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
-## Next steps
+## Related content
 
 - [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)

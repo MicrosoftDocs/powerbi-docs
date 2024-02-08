@@ -74,7 +74,7 @@ Templates will allow you to choose a flow that matches your complex business sce
 - Sending a Forms survey that gets added as a check-in note on a metric at a specified interval.
 - Sending a congratulations email when a team completes a metric. 
 
-## Next steps
+## Related content
 
 - For more information on creating flows, see the [Power automate](/power-automate/getting-started) documentation. 
 - [Get started with metrics in Power BI](service-goals-introduction.md)

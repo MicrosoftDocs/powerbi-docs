@@ -79,7 +79,7 @@ Power BI Report Server receives security fixes via Microsoft Update. To enable g
 
 After you upgrade the report server, make sure that any Power BI report authors upgrade to the version of Power BI Desktop for Power BI Report Server that matches the server.
 
-## Next steps
+## Related content
 
 * [Administrator overview](admin-handbook-overview.md)  
 * [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  

@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/06/2022
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 
@@ -30,7 +30,7 @@ This refresh type allows you to update all visuals in a report page based on a c
 
 ### Change detection
 
-This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you must also select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI datasets are not supported.
+This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you must also select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI semantic models are not supported.
 
 ## Authoring reports with automatic page refresh in Power BI Desktop
 
@@ -145,7 +145,7 @@ When configuring automatic page refresh for reports in the Power BI service, the
 3. Inputs and information (depending on refresh type).
 
 > [!NOTE]
-> When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you'll have to provide the credentials for the DirectQuery data source on the dataset settings menu. You can set up the credentials so that report viewers access this data source with their own identities, respecting any security setup at the source. A change detection measure is evaluated with the author's credentials.
+> When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you'll have to provide the credentials for the DirectQuery data source on the semantic model settings menu. You can set up the credentials so that report viewers access this data source with their own identities, respecting any security setup at the source. A change detection measure is evaluated with the author's credentials.
 
 ### Page refresh intervals
 
@@ -182,7 +182,7 @@ Here are details for the two workspace scenarios:
  - **Minimum execution interval**. When enabling change detection, your capacity administrator needs to set up a minimum execution interval (default value is five seconds). If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
 
 > [!WARNING]
-> When enabled in your dataset, the change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the low priority refresh connections Power BI already makes.
+> When enabled in your semantic model, the change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the low priority refresh connections Power BI already makes.
 
 ![Automatic page refresh settings in the capacity admin portal](media/desktop-automatic-page-refresh/automatic-page-refresh-09.png)
 
@@ -194,17 +194,17 @@ This table describes with more detail where this feature is available and the li
 | Import                                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A         | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
 | Mixed mode (DirectQuery + other data sources) | **FI supported**: Yes <br>**CD supported**: Yes <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
 | Analysis Services (Azure and On Premises)     | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
-| Power BI datasets (connected live)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
-| Power BI datasets (DirectQuery connection)   | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A  | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
-| Power BI Push datasets                        | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No        |
-| Power BI streaming datasets                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
+| Power BI semantic models (connected live)   | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 1 second <br>**Admin override**: Yes  | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No |
+| Power BI semantic models (DirectQuery connection)   | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A  | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A |
+| Power BI Push semantic models                        | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: Yes | **FI supported**: Yes <br>**CD supported**: No <br>**Minimum**: 30 minutes <br>**Admin override**: No        |
+| Power BI streaming semantic models                        | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A | **FI supported**: No <br>**CD supported**: No <br>**Minimum**: N/A <br>**Admin override**: N/A        |
 
 *Table legend:*
 1. *FI: Fixed interval*
 2. *CD: Change detection*
 
 > [!WARNING]
-> We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI datasets and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
+> We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI semantic models and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
 
 ## Considerations and limitations
 
@@ -212,7 +212,7 @@ There are a few things to keep in mind when you use automatic page refresh in Po
 
 * Import storage mode is not supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
-* You can only have one change detection measure per dataset.
+* You can only have one change detection measure per semantic model.
 * There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
 ### Performance diagnostics
@@ -288,7 +288,7 @@ If your capacity is overloaded with low-priority queries, you can take these act
 * Make sure your Analysis Services model is in [Direct Query mode](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
-## Next steps
+## Related content
 
 For more information, see these articles:
 

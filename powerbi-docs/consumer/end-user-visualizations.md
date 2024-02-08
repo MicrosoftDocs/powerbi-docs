@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-At its most basic, a ***visualization** (or *visual*) is a chart built by Power BI *designers* using the data in reports and datasets.
+At its most basic, a ***visualization** (or *visual*) is a chart built by Power BI *designers* using the data in reports and semantic models.
 
 Visuals are found on dashboards, in reports and can be created instantly using Power BI Q&A. When a designer creates a visual in a report, they can *pin* it to a dashboard. For more information, see [Interact with visuals in reports, dashboards, and apps](end-user-tiles.md). The following example shows a dashboard with eight tiles.
 
@@ -59,7 +59,8 @@ The administrator or the *designer* can disable your ability to see or use these
 | [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | No      | Yes  | n/a |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | No  | Yes   | No |
 
-## Next steps
+## Related content
+
 - [Basic concepts for the Power BI service business users](end-user-basic-concepts.md)
 - [View a report in the Power BI service for business users](end-user-report-open.md)
 - [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)

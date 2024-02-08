@@ -15,10 +15,10 @@ ms.custom: intro-deployment
 
 This article describes **Stage 5**, which is concerned with deploying, supporting, and monitoring content when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Image showing the stages of a Power BI migration. Stage 5 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-power-bi-stage-5.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 5 is emphasized for this article." border="false":::
 
 > [!NOTE]
-> For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
+> For a complete explanation of the above diagram, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The primary focus of Stage 5 is to deploy the new Power BI solution to production.
 
@@ -37,14 +37,11 @@ If your content has been published to a workspace on Premium capacity, [deployme
 
 Key activities during a deployment to the test workspace typically include:
 
-- **Connection strings and parameters:** Adjust dataset connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
-- **Workspace content:** Publish datasets and reports to the test workspace, and create dashboards.
+- **Connection strings and parameters:** Adjust semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) connection strings if the data source differs between development and test. [Parameterization](../connect-data/service-parameters.md) can be used to effectively manage connection strings.
+- **Workspace content:** Publish semantic models and reports to the test workspace, and create dashboards.
 - **App.** Publish an [app](../consumer/end-user-apps.md) using the content from the test workspace, if it will form part of the UAT process. Usually, app permissions are restricted to a small number of people involved with UAT.
-- **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any Import datasets for the period when UAT is actively occurring.
+- **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any Import semantic models for the period when UAT is actively occurring.
 - **Security:** Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
-
-> [!NOTE]
-> For more information about options for deployment to development, test, and production, see Section 9 of the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP).
 
 ### Conduct user acceptance testing
 
@@ -83,12 +80,12 @@ Key activities during a deployment to the production workspace typically include
 
 - **Change management:** If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There might be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
-- **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
-- **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
-- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
+- **Connection strings and parameters:** Adjust semantic model connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
+- **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any imported semantic models.
+- **Workspace content:** Publish semantic models and reports to the production workspace, and create dashboards. [Deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md) based on your content distribution and collaboration strategy.
-- **Dataset settings:** Update and verify settings for each dataset, including:
+- **Semantic model settings:** Update and verify settings for each semantic model, including:
   - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials
   - Scheduled refresh
@@ -154,27 +151,27 @@ Here's some questions that can be addressed by reviewing the activity log:
 
 Although the migration is complete, the post-migration period is vital for addressing issues and handling any performance concerns. Over time, the migrated solution will likely undergo changes as business needs evolve.
 
-[Support](powerbi-adoption-roadmap-user-support.md) tends to happen a little differently depending on how self-service BI is managed across the organization. Power BI champions throughout the business units often informally act as first-line support. Although it's an informal role, it's a vital one that should be encouraged.
+[Support](fabric-adoption-roadmap-user-support.md) tends to happen a little differently depending on how self-service BI is managed across the organization. Power BI champions throughout the business units often informally act as first-line support. Although it's an informal role, it's a vital one that should be encouraged.
 
 Having a formal support process, staffed by IT with support tickets, is also essential for handling routine system-oriented requests and for escalation purposes.
 
 > [!NOTE]
-> The different types of [internal and external support](powerbi-adoption-roadmap-user-support.md#types-of-user-support) are described in the Power BI adoption roadmap.
+> The different types of [internal and external support](fabric-adoption-roadmap-user-support.md#types-of-user-support) are described in the Fabric adoption roadmap.
 
-You might also have a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
+You might also have a [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md) that acts like internal consultants who support, educate, and govern Power BI in the organization. A COE can be responsible for curating helpful Power BI content in an internal portal.
 
 Lastly, it should be clear to content consumers to know who to contact with questions about the content, and to have a mechanism for providing feedback on issues or improvements.
 
-For more information about user support, with a focus on the resolution of issues, see [Power BI adoption roadmap: User support](powerbi-adoption-roadmap-user-support.md).
+For more information about user support, with a focus on the resolution of issues, see [User support](fabric-adoption-roadmap-user-support.md) in the Fabric adoption roadmap.
 
-## Next steps
+## Related content
 
 In the [final article in this series](powerbi-migration-learn-from-customers.md), learn from customers when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

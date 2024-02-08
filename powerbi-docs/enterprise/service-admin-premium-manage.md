@@ -19,7 +19,7 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 :::image type="content" source="media/service-admin-premium-manage/powerbi-premium-capacity-settings.png" alt-text="Screenshot that shows the Power B I Premium capacity settings screen.":::
 
-*Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) offerings. It's a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
+*Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) offerings. It's a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and semantic models to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
 
 >[!NOTE]
 >You can get [Premium Per User (PPU)](service-premium-per-user-faq.yml) licenses for individuals, which provide many of the features and capabilities of a Premium capacity, and incorporate all functionality included with a Power BI Pro license.
@@ -195,7 +195,7 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 
 ## Power BI Report Server product key
 
-On the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role and if you have purchased a Power BI Premium SKU.
+If your organization has purchased a Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Power BI Premium** tab in the admin portal. To access the key you need to be a Global admin or a Fabric admin.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
 
@@ -205,8 +205,8 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 For more information, see [Install Power BI Report Server](../report-server/install-report-server.md).
 
-## Next steps
+## Related content
 
-[Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
+* [Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
