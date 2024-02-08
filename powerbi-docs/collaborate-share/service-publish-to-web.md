@@ -51,7 +51,7 @@ Follow these steps to use Publish to web. Review the **Warning** earlier in this
 
 4. Review the warning, as shown here, and confirm that the data is okay to embed in a public website. If it is, select **Publish**.
 
-   ![Screenshot of dialog box with the warning.](media/service-publish-to-web/embed-publish-public-web-site.png)
+   :::image type="content" source="media/service-publish-to-web/embed-publish-public-web-site.png" alt-text="Screenshot of dialog box with the warning":::
 
 5. In the **Success** dialog, you see a preview of how the report will look. Select the **Size** and **Default page**. 
 
