@@ -52,7 +52,7 @@ A drillthrough report is a report that a user opens by clicking a link within an
 ## Considerations and limitations
 
 - Drillthrough to a report isn't supported in Report Preview.
-- Drillthrough links in report do not work upon exporting report to any format, e.g. Word, Excel, PDF.
+- Drillthrough links in report do not work upon exporting report to any format, e.g. Word, Excel, PDF in Power BI Report Builder as well as Power BI service.
 
 ## Related content
 
