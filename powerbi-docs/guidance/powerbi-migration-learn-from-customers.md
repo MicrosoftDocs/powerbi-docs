@@ -54,7 +54,7 @@ An analysis of the former BI platform was conducted to fully understand its usag
 
 ### Cautiously assess complexity
 
-Of the first prioritized reports, time estimates were compiled based on estimated effort levels: simple, medium, or complex. Although it sounds like a relatively straightforward process, don't expect time estimates to be accurate on an individual report basis. You may find an estimate can be wildly inaccurate. For example, the company had a report that it deemed highly complex. It received a conversion estimate of 50 days by the consultants. However, the redesigned report in Power BI was completed in about 50 hours.
+Of the first prioritized reports, time estimates were compiled based on estimated effort levels: simple, medium, or complex. Although it sounds like a relatively straightforward process, don't expect time estimates to be accurate on an individual report basis. You might find an estimate can be wildly inaccurate. For example, the company had a report that it deemed highly complex. It received a conversion estimate of 50 days by the consultants. However, the redesigned report in Power BI was completed in about 50 hours.
 
 > [!IMPORTANT]
 > Although time estimates are often necessary to obtain funding and personnel assignments, they're probably most valuable in the aggregate.
@@ -72,7 +72,7 @@ The company established a [Center of Excellence (COE)](powerbi-adoption-roadmap-
 
 There's also an [internal Power BI community](powerbi-adoption-roadmap-community-of-practice.md), which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
 
-An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert may define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
+An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert can define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
 
 > [!IMPORTANT]
 > Have a very well defined scope for what the COE does, such as: adoption, governance, guidance, best practices, training, support, and perhaps even hands-on development. While a COE is incredibly valuable, measuring its return on investment can be difficult.
@@ -99,7 +99,7 @@ The company started using Power BI in 2018. By mid-2019, Power BI became the pre
 
 In the company, there are two types of BI teams: a central BI team and analytics groups distributed throughout the organization. The central BI team has ownership responsibility for Power BI as a platform, but it doesn't own any of the content. This way, the central BI team is a technical enablement hub that supports the distributed analytics groups.
 
-Each of the analytics groups is dedicated to a specific business unit or a shared services function. A small group may contain a single analyst, while a larger group can have 10-15 analysts.
+Each of the analytics groups is dedicated to a specific business unit or a shared services function. A small group might contain a single analyst, while a larger group could have 10-15 analysts.
 
 > [!IMPORTANT]
 > The distributed analytics groups comprise subject matter experts who are familiar with the day-to-day business needs. This separation allows the central BI team to focus primarily on technical enablement and support of the BI services and tools.

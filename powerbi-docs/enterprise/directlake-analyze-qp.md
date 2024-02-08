@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/16/2023
+ms.date: 10/25/2023
 LocalizationGroup: Admin
 ---
 # Analyze query processing for Direct Lake datasets (PREVIEW)
@@ -45,8 +45,6 @@ Performance analyzer can provide a quick and easy look into how a visual queries
 
 SQL Server Profiler can provide more details about query performance by tracing query events. It's installed with [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms). Before starting, make sure you have the latest version of SSMS installed.
 
-> [!NOTE]
-> Currently, you can only trace query processing for manually created Direct Lake datasets. SQL Server Profiler and other XMLA-based management tools can't connect to default datasets.
 
 1. Start SQL Server Profiler from the Windows menu.
 

@@ -19,7 +19,7 @@ This article describes actions you can consider prior to migrating to Power BI.
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
-The pre-migration steps emphasize up-front planning, which is important preparation before moving through the five migration stages. Most of the pre-migration steps will occur once, though for larger organizations some portions may be iterative for each business unit or departmental area.
+The pre-migration steps emphasize up-front planning, which is important preparation before moving through the five migration stages. Most of the pre-migration steps will occur once, though for larger organizations some portions might be iterative for each business unit or departmental area.
 
 The output from the pre-migration steps includes an initial [governance](powerbi-adoption-roadmap-governance.md) model, initial high-level deployment planning, in addition to an inventory of the reports and data to be migrated. Additional information from activities in Stages 1, 2, and 3 will be necessary to fully estimate the level of effort for migrating individual solutions.
 
@@ -80,7 +80,7 @@ Some critical items to address early in a Power BI implementation include:
 - Change management approaches for managing centralized BI items and business-managed BI items.
 - Training plans for consumers, data modelers, report authors, and administrators.
 - Support for content authors by using [Power BI Desktop templates](../create-reports/desktop-templates.md), [custom visuals](https://powerbi.microsoft.com/blog/how-to-govern-power-bi-visuals-inside-your-organization/), and documented report design standards.
-- Procedures and processes for managing user requirements, such as requesting new licenses, adding new gateway data sources, gaining permission to gateway data sources, requesting new workspaces, workspace permissions changes, and other common requirements that may be encountered on a regular basis.
+- Procedures and processes for managing user requirements, such as requesting new licenses, adding new gateway data sources, gaining permission to gateway data sources, requesting new workspaces, workspace permissions changes, and other common requirements that might be encountered on a regular basis.
 
 > [!IMPORTANT]
 > Deployment planning is an iterative process. Deployment decisions will be refined and augmented many times as your organization's experience with Power BI grows, and as Power BI evolves. The decisions made during this process will be used during the solution-level deployment planning discussed in [Stage 2](powerbi-migration-planning.md) of the migration process.
@@ -102,7 +102,7 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 
 The first task is to understand what success looks like for migrating an individual solution. Questions you might ask include:
 
-- **What are the specific motivations and objectives for this migration?** For more information, see [Power BI migration overview (Consider migration reasons)](powerbi-migration-overview.md#consider-migration-reasons). This article describes the most common reasons for migrating to Power BI. Certainly, your objectives should be specified at the organizational level. Beyond that, migrating one legacy BI solution may benefit significantly from cost savings, whereas migrating a different legacy BI solution may focus on gaining workflow optimization benefits.
+- **What are the specific motivations and objectives for this migration?** For more information, see [Power BI migration overview (Consider migration reasons)](powerbi-migration-overview.md#consider-migration-reasons). This article describes the most common reasons for migrating to Power BI. Certainly, your objectives should be specified at the organizational level. Beyond that, migrating one legacy BI solution could benefit significantly from cost savings, whereas migrating a different legacy BI solution could focus on gaining workflow optimization benefits.
 - **What's the expected cost/benefit or ROI for this migration?** Having a clear understanding of expectations related to cost, increased capabilities, decreased complexity, or increased agility, is helpful in measuring success. It can provide guiding principles to help with decision-making during the migration process.
 - **What key performance indicators (KPIs) will be used to measure success?** The following list presents some example KPIs:
     - Number of reports rendered from legacy BI platform, decreasing month over month.
@@ -112,14 +112,14 @@ The first task is to understand what success looks like for migrating an individ
     - Cost reduction in licensing cost year over year.
 
 > [!TIP]
-> The [Power BI activity log](../admin/service-admin-auditing.md) can be used as a source for measuring KPI progress.
+> The [Power BI activity log](../enterprise/service-admin-auditing.md) can be used as a source for measuring KPI progress.
 
 ## Prepare inventory of existing reports
 
-Preparing an inventory of existing reports in the legacy BI platform is a critical step towards understanding what already exists. The outcome of this step is an input to assessing the migration effort level. Activities related to preparing an inventory may include:
+Preparing an inventory of existing reports in the legacy BI platform is a critical step towards understanding what already exists. The outcome of this step is an input to assessing the migration effort level. Activities related to preparing an inventory can include:
 
 1. **Inventory of reports:** Compile a list of reports and dashboards that are migration candidates.
-2. **Inventory of data sources:** Compile a list of all data sources accessed by existing reports. It should include both enterprise data sources as well as departmental and personal data sources. This process may unearth data sources not previously known to the IT department, often referred to as *shadow IT*.
+2. **Inventory of data sources:** Compile a list of all data sources accessed by existing reports. It should include both enterprise data sources as well as departmental and personal data sources. This process could unearth data sources not previously known to the IT department, often referred to as *shadow IT*.
 3. **Audit log:** Obtain data from the legacy BI platform audit log to understand usage patterns and assist with prioritization. Important information to obtain from the audit log includes:
     - Average number of times each report was executed per week/month/quarter.
     - Average number of consumers per report per week/month/quarter.

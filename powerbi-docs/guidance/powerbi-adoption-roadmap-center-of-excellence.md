@@ -19,7 +19,7 @@ An analytics Center of Excellence (COE) is an internal team of technical and bus
 A COE might also be known as _business intelligence (BI) competency center_, _capability center_, or a _center of expertise_. Some organizations use the term _squad_. Many organizations perform the COE responsibilities within their BI team or analytics team.
 
 > [!NOTE]
-> Having a COE team formally recognized in your organizational chart is recommended, but not required. What's most important is that the COE roles and responsibilities are identified, prioritized, and assigned. It's common for a centralized BI or analytics team to take on many of the COE responsibilities; some responsibilities may also reside within IT. For simplicity, in this series of articles, COE means a _specific group of people_, although you may implement it differently. It's also very common to implement the COE with a scope broader than Fabric or Power BI alone: for instance, a Power Platform COE or an analytics COE.
+> Having a COE team formally recognized in your organizational chart is recommended, but not required. What's most important is that the COE roles and responsibilities are identified, prioritized, and assigned. It's common for a centralized BI or analytics team to take on many of the COE responsibilities; some responsibilities might also reside within IT. For simplicity, in this series of articles, COE means a _specific group of people_, although you might implement it differently. It's also very common to implement the COE with a scope broader than Fabric or Power BI alone: for instance, a Power Platform COE or an analytics COE.
 
 ## Goals for a COE
 
@@ -99,7 +99,7 @@ As mentioned previously, the scope of responsibilities for a COE can vary signif
 The selected COE structure can vary among organizations. It's also possible for multiple structures to exist inside of a single large organization. That's particularly true when there are subsidiaries or acquisitions have occurred.
 
 > [!NOTE]
-> The following terms may differ to those defined for your organization, particularly the meaning of _federated_, which tends to have many different IT-related meanings.
+> The following terms might differ to those defined for your organization, particularly the meaning of _federated_, which tends to have many different IT-related meanings.
 
 ### Centralized COE
 
@@ -115,7 +115,7 @@ A centralized COE comprises a single shared services team.
 
 - A centralized team might have an authoritarian tendency to favor one-size-fits-all decisions that don't always work well for all business units.
 - There can be a tendency to prefer IT skills over business skills.
-- Due to the centralized nature, it may be more difficult for the COE members to sufficiently understand the needs of all business units.
+- Due to the centralized nature, it might be more difficult for the COE members to sufficiently understand the needs of all business units.
 
 ### Unified COE
 
@@ -129,7 +129,7 @@ A unified COE is a single, centralized, shared services team that has been expan
 
 **Cons:**
 
-- The embedded COE team members, who are dedicated to a specific business unit, have a different organizational chart responsibility than the people they serve directly within the business unit. The organizational structure may potentially lead to complications, differences in priorities, or necessitate the involvement of the executive sponsor. Preferably, the executive sponsor has a scope of authority that includes the COE and all involved business units to help resolve conflicts.
+- The embedded COE team members, who are dedicated to a specific business unit, have a different organizational chart responsibility than the people they serve directly within the business unit. The organizational structure could potentially lead to complications, differences in priorities, or necessitate the involvement of the executive sponsor. Preferably, the executive sponsor has a scope of authority that includes the COE and all involved business units to help resolve conflicts.
 
 ### Federated COE
 
@@ -163,18 +163,18 @@ Decentralized COEs are independently managed by business units.
 **Cons:**
 
 - There's a risk that decentralized COEs operate in isolation. As a result, they might not share best practices and lessons learned outside of their business unit.
-- Collaboration with a centralized team may be informal and/or inconsistent.
+- Collaboration with a centralized team might be informal and/or inconsistent.
 - Inconsistent policies are created and applied across business units.
 - It's difficult to scale a decentralized model.
 - There's potential rework to bring one or more decentralized COEs in alignment with organizational-wide policies.
-- Larger business units with significant funding may have more resources available to them, which may not serve cost optimization goals from an organizational-wide perspective.
+- Larger business units with significant funding might have more resources available to them, which might not serve cost optimization goals from an organizational-wide perspective.
 
 > [!IMPORTANT]
 > A highly centralized COE tends to be more _authoritarian_, while highly decentralized COEs tend to be more _siloed_. Each organization will need to weigh the pros and cons that apply to them to determine the best choice. For most organizations, the most effective approach tends to be the unified or federated, which bridges organizational boundaries.
 
 ## Funding the COE
 
-The COE may obtain its operating budget in multiple ways:
+The COE might obtain its operating budget in multiple ways:
 
 - Cost center.
 - Profit center with project budget(s).
@@ -184,7 +184,7 @@ When the COE operates as a cost center, it absorbs the operating costs. Generall
 
 When the COE operates as a profit center (for at least part of its budget), it could accept projects throughout the year based on funding from other business units. Sometimes this is called a _pull_ engagement model.
 
-Funding is important because it impacts the way the COE communicates and engages with the internal community. As the COE experiences more and more successes, they may receive more requests from business units for help. It's especially the case as awareness grows throughout the organization.
+Funding is important because it impacts the way the COE communicates and engages with the internal community. As the COE experiences more and more successes, they might receive more requests from business units for help. It's especially the case as awareness grows throughout the organization.
 
 > [!TIP]
 > The choice of funding model can determine how the COE actively grows its influence and ability to help. The funding model can also have a big impact on where authority resides and how decision-making works. Further, it impacts the types of services a COE can offer, such as co-development projects and/or best practices reviews. For more information, see the [Mentoring and user enablement](powerbi-adoption-roadmap-mentoring-and-user-enablement.md) article.
@@ -232,11 +232,11 @@ The following maturity levels will help you assess the current state of your COE
 
 | **Level** | **State of the Center of Excellence** |
 | --- | --- |
-| 100: Initial | &bull; One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities. </br></br>&bull; Requests for assistance from the COE are handled in an unplanned manner. |
-| 200: Repeatable | &bull; The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks. </br></br>&bull; The goals, scope of responsibilities, staffing, structure, and funding model are established for the COE. |
-| 300: Defined | &bull; The COE operates with active involvement from all business units in a unified or federated mode. |
-| 400: Capable | &bull; The goals of the COE align with organizational goals, and they are reassessed regularly. </br></br>&bull; The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
-| 500: Efficient | &bull; Regular reviews of KPIs or OKRs evaluate COE effectiveness in a measurable way. </br></br>&bull; Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. |
+| 100: Initial | &bull;&nbsp;One or more COEs exist, or the activities are performed within the BI team or IT. There's no clarity on the specific goals nor expectations for responsibilities. <br/><br/>&bull;&nbsp;Requests for assistance from the COE are handled in an unplanned manner. |
+| 200: Repeatable | &bull;&nbsp;The COE is in place with a specific charter to mentor, guide, and educate self-service users. The COE seeks to maximize benefits of self-service BI while reducing the risks. <br/><br/>&bull;&nbsp;The goals, scope of responsibilities, staffing, structure, and funding model are established for the COE. |
+| 300: Defined | &bull;&nbsp;The COE operates with active involvement from all business units in a unified or federated mode. |
+| 400: Capable | &bull;&nbsp;The goals of the COE align with organizational goals, and they are reassessed regularly. <br/><br/>&bull;&nbsp;The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
+| 500: Efficient | &bull;&nbsp;Regular reviews of KPIs or OKRs evaluate COE effectiveness in a measurable way. <br/><br/>&bull;&nbsp;Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. |
 
 ## Next steps
 

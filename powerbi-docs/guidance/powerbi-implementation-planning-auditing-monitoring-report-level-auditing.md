@@ -17,10 +17,10 @@ ms.date: 04/25/2023
 This report-level auditing article is targeted at multiple audiences:
 
 - **Report creators:** Users who need to understand usage, adoption, and performance of the reports that they've created, published, and shared.
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators may need to collaborate with IT, security, internal audit, and other relevant teams.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators and other relevant teams.
+- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
 
-The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](powerbi-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions may find the information in this article useful as well; however, they're not the primary target.
+The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](powerbi-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
 This article focuses on auditing and monitoring of reports and visuals. However, achieving good performance for a report and its visuals isn't possible when the underlying dataset and/or data source doesn't perform well. For information about auditing and monitoring of datasets, dataflows, and datamarts, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).
 
@@ -64,7 +64,7 @@ Use the usage metrics reports to:
 - Understand how often reports are viewed and rank those reports by popularity (based on usage).
 - Determine which report pages users access most frequently.
 - Find reports that haven't been viewed recently.
-- View high-level report performance statistics. These statistics can help guide report design optimization efforts, and identify reports that may have intermittent or consistent performance issues.
+- View high-level report performance statistics. These statistics can help guide report design optimization efforts, and identify reports that could have intermittent or consistent performance issues.
 - Understand which consumption methods (for example, browser or [Power BI mobile app](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices)) report consumers use. This information can help report creators decide how much effort to put into [optimizing reports for mobile use](/power-bi/create-reports/power-bi-create-mobile-optimized-report-about).
 
 > [!TIP]
@@ -72,7 +72,7 @@ Use the usage metrics reports to:
 
 Usage metrics are built into the Power BI service, which is a key advantage because report creators don't need to set up a process to extract and store the usage data. It's fast and simple for them to get started.
 
-Another advantage of the usage metrics is that the internal dataset (that contains the usage metrics data) includes information that's not easily found elsewhere. For example, it includes views per report page and report opening time duration. The report page views are obtained by using [client telemetry](/power-bi/collaborate-share/service-modern-usage-metrics#considerations-and-limitations), which has limitations. Client telemetry (used by report usage metrics) is different from server-side telemetry data (used by the [activity log](/power-bi/admin/service-admin-auditing)).
+Another advantage of the usage metrics is that the internal dataset (that contains the usage metrics data) includes information that's not easily found elsewhere. For example, it includes views per report page and report opening time duration. The report page views are obtained by using [client telemetry](/power-bi/collaborate-share/service-modern-usage-metrics#considerations-and-limitations), which has limitations. Client telemetry (used by report usage metrics) is different from server-side telemetry data (used by the [activity log](/power-bi/enterprise/service-admin-auditing)).
 
 Usage metrics include an internal dataset and a report. While the internal dataset can't be edited or customized, you can [customize the usage metrics report](/power-bi/collaborate-share/service-modern-usage-metrics#customize-the-usage-metrics-report). You can also update the report filters to learn about usage for all reports in a workspace (rather than just one report). By using this approach, the broadest range available is one workspace. You can view up to 30 days of history, including the most recent fully completed day.
 
@@ -92,10 +92,10 @@ The usage metrics reports are available to report creators and owners who are as
 
 There are two tenant settings related to usage metrics.
 
-- The _Usage metrics for content creators_ tenant setting controls which groups of report creators (who also have the necessary workspace role) may generate and view the usage metrics reports. Commonly, Power BI administrators leave this setting enabled for the entire organization. That way, all self-service report creators can view the usage patterns for their content.
+- The _Usage metrics for content creators_ tenant setting controls which groups of report creators (who also have the necessary workspace role) can generate and view the usage metrics reports. Commonly, Power BI administrators leave this setting enabled for the entire organization. That way, all self-service report creators can view the usage patterns for their content.
 - The _Per-user data in usage metrics for content creators_ tenant setting determines whether the names and email addresses of report consumers are displayed in the usage metrics reports. When this setting is disabled (for some or all report creators), Power BI suppresses names and email addresses in the usage metrics reports, which is referred to as _user masking_. Most often, Power BI administrators leave this setting enabled so that report creators can understand exactly who's using their reports. Also, the ability to contact other users directly for feedback about the content is valuable because it can help to improve the content. Occasionally, you might have a security need to mask user information for certain groups of report creators. When the setting is disabled, the report creator sees _unnamed user_ in place of the user details.
 
-The _ViewUsageMetrics_ operation in the [Power BI activity log](/power-bi/admin/service-admin-auditing) allows Power BI administrators to monitor which content creators and owners are using the usage metrics reports. You can use that information to guide training and documentation efforts.
+The _ViewUsageMetrics_ operation in the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) allows Power BI administrators to monitor which content creators and owners are using the usage metrics reports. You can use that information to guide training and documentation efforts.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -122,7 +122,7 @@ Performance Analyzer captures operations while a user interacts with a report in
 Summarized information is available in the **Performance Analyzer** pane. You can export log results to a JSON file, allowing you to follow through with more in-depth analysis. The export file contains more information about the logged operations. For more information about using the export file, see the [Performance Analyzer documentation](https://github.com/microsoft/powerbi-desktop-samples/tree/main/Performance%20Analyzer) on GitHub.
 
 > [!IMPORTANT]
-> Keep in mind that Performance Analyzer runs within Power BI Desktop. The environment of the report creator's machine may differ from the environment of the Power BI service.
+> Keep in mind that Performance Analyzer runs within Power BI Desktop. The environment of the report creator's machine might differ from the environment of the Power BI service.
 >
 > Some common differences that you should account for include:
 >
@@ -143,7 +143,7 @@ Data is logged when a user interacts with a report element. Logged data includes
 - DirectQuery activity (when applicable).
 - Other activities performed by a visual, such as query preparation, background processing activities, and wait time.
 
-Depending on their experience level, and how roles and responsibilities are divided, a report creator may need assistance to resolve performance issues. That's especially true when trying to understand why a query or calculation is slow. Assistance for a report creator could come in the form of:
+Depending on their experience level, and how roles and responsibilities are divided, a report creator might need assistance to resolve performance issues. That's especially true when trying to understand why a query or calculation is slow. Assistance for a report creator could come in the form of:
 
 - **Collaborating with a data creator:** The root cause of performance issues is often related to the design of the data model.
 - **User support:** Assistance is often [intra-team support](powerbi-adoption-roadmap-user-support.md#intra-team-support) from close colleagues or [internal community support](powerbi-adoption-roadmap-user-support.md#internal-community-support) from other Power BI users in the organization. In some situations, it could also involve [help desk support](powerbi-adoption-roadmap-user-support.md#help-desk-support).

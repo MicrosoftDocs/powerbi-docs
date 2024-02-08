@@ -74,11 +74,11 @@ Fabric administrators periodically need to work with the Microsoft Entra adminis
 
 The following list includes some common reasons for collaboration between Fabric administrators and Microsoft Entra administrators.
 
-- **Security groups:** You'll need to create new [security groups](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) to properly manage the Fabric tenant settings. You may also need new groups to secure workspace content or for distributing content.
-- **Security group ownership:** You may want to assign a [group owner](/azure/active-directory/fundamentals/active-directory-accessmanagement-managing-group-owners) to allow more flexibility in who can manage a security group. For example, it could be more efficient to permit the Center of Excellence (COE) to manage the memberships of certain Fabric-specific groups.
-- **Service principals:** You may need to create a Microsoft Entra app registration to provision a service principal. Authenticating with a service principal is a recommended practice when a Fabric administrator wants to run unattended, scheduled scripts that extract data by using the [admin APIs](/rest/api/power-bi/admin), or when [embedding content](/power-bi/developer/embedded/embed-service-principal) in an application.
+- **Security groups:** You'll need to create new [security groups](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) to properly manage the Fabric tenant settings. You might also need new groups to secure workspace content or for distributing content.
+- **Security group ownership:** You might want to assign a [group owner](/azure/active-directory/fundamentals/active-directory-accessmanagement-managing-group-owners) to allow more flexibility in who can manage a security group. For example, it could be more efficient to permit the Center of Excellence (COE) to manage the memberships of certain Fabric-specific groups.
+- **Service principals:** You might need to create a Microsoft Entra app registration to provision a service principal. Authenticating with a service principal is a recommended practice when a Fabric administrator wants to run unattended, scheduled scripts that extract data by using the [admin APIs](/rest/api/power-bi/admin), or when [embedding content](/power-bi/developer/embedded/embed-service-principal) in an application.
 - **External users:** You'll need to understand how the settings for [external (guest) users](/azure/active-directory/external-identities/external-identities-overview) are set up in Microsoft Entra ID. There are several Fabric [tenant settings](/power-bi/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-access-power-bi) related to external users, and they rely on how Microsoft Entra ID is set up. Also, certain security capabilities for the Power BI workload only work when using the [planned invitation](/power-bi/enterprise/service-admin-azure-ad-b2b#planned-invites) approach for external users in Microsoft Entra ID.
-- **Real-time control policies:** You may choose to set up [real-time session control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a Power BI report when it has a specific sensitivity label.
+- **Real-time control policies:** You can choose to set up [real-time session control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a Power BI report when it has a specific sensitivity label.
 
 :::image type="icon" source="media/common/checklist.png" border="false":::
 
@@ -97,13 +97,13 @@ When a new tenant is created, resources are provisioned in Azure, which is Micro
 The home region is important because:
 
 - The performance of reports and dashboards depends, in part, on users being in proximity to the tenant location.
-- There may be legal or regulatory reasons that the organization's data be stored in a specific jurisdiction.
+- There could be legal or regulatory reasons that the organization's data be stored in a specific jurisdiction.
 
 The home region for the organization's tenant is set to the location of the first user that signs up. If most of your users are located in a different region, that region might not be the best choice.
 
 You can [determine the home region](/fabric/admin/find-fabric-home-region) for your tenant by opening the _About Microsoft Fabric_ dialog window in the Fabric portal. The region is displayed next to the _Your data is stored in_ label.
 
-You may discover that your tenant resides in a region that isn't ideal. You can use the [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo) feature by creating a capacity in a specific region (described in the next section), or, you can move it. To [move your tenant](/power-bi/admin/service-admin-region-move) to another region, your global Microsoft 365 administrator should open a support request.
+You might discover that your tenant resides in a region that isn't ideal. You can use the [Multi-Geo](/power-bi/admin/service-admin-premium-multi-geo) feature by creating a capacity in a specific region (described in the next section), or, you can move it. To [move your tenant](/power-bi/admin/service-admin-region-move) to another region, your global Microsoft 365 administrator should open a support request.
 
 The relocation of a tenant to another region isn't a fully automated process, and some downtime is involved. Be sure to take into consideration the [prerequisites and actions](/power-bi/admin/service-admin-region-move) that are required before and after the move.
 

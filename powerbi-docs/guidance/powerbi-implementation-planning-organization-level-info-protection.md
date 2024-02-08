@@ -17,7 +17,7 @@ ms.date: 12/12/2022
 This article describes the initial assessment and preparatory activities for information protection in Power BI. It's targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators need to collaborate with information security and other relevant teams.
-- **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They may need to collaborate with Power BI administrator, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. They might need to collaborate with Power BI administrator, information security teams, and other relevant teams.
 
 > [!IMPORTANT]
 > Information protection and data loss prevention (DLP) is a significant organization-wide undertaking. Its scope and impact are far greater than Power BI alone. This type of initiative requires funding, prioritization, and planning. Expect to involve several cross-functional teams in your planning, usage, and oversight efforts.
@@ -66,7 +66,7 @@ As previously stated, many of the information protection and DLP capabilities th
 
 As you define roles and responsibilities for your team, we recommend that you include people who can capably translate requirements and communicate well with stakeholders.
 
-Your team may include pertinent stakeholders involving different individuals and groups in the organization, including:
+Your team should include pertinent stakeholders involving different individuals and groups in the organization, including:
 
 - Chief information security officer / data protection officer
 - Information security / cyber security team
@@ -111,12 +111,12 @@ It's important to consider what your goals are for implementing information prot
 
 At this point, we recommend that you focus on the strategic goals. If your team has started by defining implementation level details, we suggest that you step back and define the strategic goals. Well-defined strategic goals will help you to deliver a smoother implementation.
 
-Your information protection and DLP requirements may include the following goals.
+Your information protection and DLP requirements might include the following goals.
 
 - **Self-service user enablement:** Allow self-service BI content creators and owners to collaborate, share, and be as productive as possible–all within the guardrails established by the governance team. The goal is to balance self-service BI with centralized BI and make it easy for self-service users to do the right thing, without negatively impacting their productivity.
 - **Data culture that values protecting trusted data:** Implement information protection in a way that's low friction and doesn't get in the way of user productivity. When implemented in a balanced way, users are far more likely to work within your systems than around them. User education and user support are essential.
 - **Risk reduction:** Protect the organization by reducing its risks. Risk reduction goals often include minimizing the possibility of data leakage outside of the organization and protecting data against unauthorized access.
-- **Compliance:** Support compliance efforts for industry, regional, and governmental regulations. Additionally, your organization may also have internal governance and security requirements that are deemed critical.
+- **Compliance:** Support compliance efforts for industry, regional, and governmental regulations. Additionally, your organization might also have internal governance and security requirements that are deemed critical.
 - **Auditability and awareness:** Understand where the sensitive data is located throughout the organization and who's using it.
 
 Be aware that an initiative to introduce information protection is complementary to other related approaches that involve security and privacy. Coordinate information protection initiatives with other efforts, such as:

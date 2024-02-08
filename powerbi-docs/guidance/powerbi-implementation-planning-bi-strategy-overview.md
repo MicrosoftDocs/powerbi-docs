@@ -41,7 +41,7 @@ A BI strategy is a plan to implement, use, and manage data and analytics to bett
 
 ### Relationship between BI strategy and business strategy
 
-Your business strategy should directly inform your BI strategy. As your business objectives evolve, your BI processes and tools may also need to evolve, especially as new data needs arise. New opportunities and insights learned from BI solutions can also lead to changes to your business strategy. Understanding and supporting the relationship between your business and BI strategies is essential in order to make valuable BI solutions, and to ensure that people use them effectively.
+Your business strategy should directly inform your BI strategy. As your business objectives evolve, your BI processes and tools might also need to evolve, especially as new data needs arise. New opportunities and insights learned from BI solutions can also lead to changes to your business strategy. Understanding and supporting the relationship between your business and BI strategies is essential in order to make valuable BI solutions, and to ensure that people use them effectively.
 
 The following diagram depicts how a BI strategy supports the business strategy by enabling business users.
 
@@ -71,7 +71,7 @@ Consider the following, high-level example for a hypothetical organization.
 | **Area** | **Example** |
 | --- | --- |
 | **Business strategy** | The organizational goal is to improve customer satisfaction and reduce customer churn. One business strategy to achieve this goal is to reduce the number of late customer deliveries. |
-| **BI strategy** | &bull; **BI goal:** To support the business strategy, the BI goal is to improve the effectiveness of orders and deliveries reporting.  </br></br>&bull; **BI objectives:** To achieve the BI goal, the organization defines specific BI objectives, like producing a unified view of the order fulfillment process across all distribution centers. </br></br>&bull; **BI solutions and initiatives:** To achieve these BI objectives, the organization plans BI solutions and initiatives, like implementing a consolidated data lakehouse that stores business-ready orders data to support reporting and analytics. |
+| **BI strategy** | &bull;&nbsp;**BI goal:** To support the business strategy, the BI goal is to improve the effectiveness of orders and deliveries reporting.  <br/><br/>&bull;&nbsp;**BI objectives:** To achieve the BI goal, the organization defines specific BI objectives, like producing a unified view of the order fulfillment process across all distribution centers. <br/><br/>&bull;&nbsp;**BI solutions and initiatives:** To achieve these BI objectives, the organization plans BI solutions and initiatives, like implementing a consolidated data lakehouse that stores business-ready orders data to support reporting and analytics. |
 | **Business users** | Enabled by these BI solutions, business users can more effectively identify and mitigate potential late deliveries. These solutions result in fewer late deliveries and improved customer satisfaction, allowing the organization to achieve progress toward its business goals. |
 
 ### Relationship between BI strategy and data strategy
@@ -94,7 +94,7 @@ The diagram depicts the following concepts.
 A BI strategy can encompass many data culture and technical areas. However, when planning your BI strategy, you should be cautious not to attempt to address too many of these areas at first. A successful BI strategy starts small. It focuses on a few prioritized areas and broadens scope over time, ensuring consistent progress. Later, as you experience sustainable success with your BI strategy, it can incrementally evolve to encompass more areas.
 
 > [!IMPORTANT]
-> This series of BI strategy articles focuses on the Power BI workload in Fabric. However, planning a BI strategy is a technology-agnostic exercise. As such, the concepts described in the articles may apply irrespective of your chosen BI tools and technologies.
+> This series of BI strategy articles focuses on the Power BI workload in Fabric. However, planning a BI strategy is a technology-agnostic exercise. As such, the concepts described in the articles can apply irrespective of your chosen BI tools and technologies.
 
 ## Defining a BI strategy
 
@@ -147,7 +147,7 @@ In this example, the BI objectives are:
 - **Data literacy:** Ensure that 90 percent of the salespeople complete the data literacy program.
 - **Content ownership:** Adopt the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario, where central teams manage central, certified Power BI datasets and reports. Some self-service content creators can connect to these datasets for their own analysis and reporting needs.
 - **Mentoring and user enablement:** Create a [centralized portal](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal) to share [training resources](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#training-resources-and-approaches), [template files](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#template-files), and host weekly [office hours](powerbi-adoption-roadmap-mentoring-and-user-enablement.md#office-hours) Q&A sessions.
-- **Governance:** Draft a [tenant-wide monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md) for user activities based on data from the [Power BI activity log](/power-bi/admin/service-admin-auditing), and identify data democratization and data discovery priorities for the next quarter.
+- **Governance:** Draft a [tenant-wide monitoring solution](powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md) for user activities based on data from the [Power BI activity log](/power-bi/enterprise/service-admin-auditing), and identify data democratization and data discovery priorities for the next quarter.
 - **Data engineering:** Design and start a proof of concept for a [medallion lakehouse architecture](/azure/databricks/lakehouse/medallion) to store the sales and profitability data.
 - **Data security:** Define and implement data security rules for BI solutions.
 - **Information protection and data loss prevention (DLP):** Define how content creators should [endorse content](/power-bi/collaborate-share/service-endorse-content) by promoting or certifying data items. Conduct an investigation into whether to use [sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide&preserve-view=true) and implement DLP policies.

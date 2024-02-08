@@ -113,9 +113,11 @@ When you use the Power BI service live connection, keep a few considerations and
 - Because this connection is live, left navigation and modeling are disabled. The behavior is similar to a SQL Server Analysis Services (SSAS) connection. However, composite models in Power BI make it possible to combine data from different sources. For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 - Because this connection is live, row-level security (RLS) and similar connection behaviors are enforced. This behavior is the same as when connected to SSAS.
 - If the owner modifies the original shared *.pbix* file, the shared dataset and report in the Power BI service are overwritten. Reports based on the dataset aren't overwritten, but any changes to the dataset reflect in the report.
-- Members of a workspace can't replace the original shared report. If they try to do so, they get a prompt to rename the file and publish.
+- Members of a workspace can't replace the original shared report. If they try to do so, they get a prompt to rename the file and publish. 
+- If Members are required to publish, they need to download using the option *A Copy of your report and data*. Make the necessary changes then publish the report.
 - If you delete the shared dataset in the Power BI service, reports based on that dataset will no longer work properly or display visuals. You can no longer access that dataset from Power BI Desktop.
 - Reports that share a dataset on the Power BI service don't support automated deployments that use the Power BI REST API.
+
 
 ## Next steps
 For more information on DirectQuery and other Power BI data connection features, check out the following resources:
