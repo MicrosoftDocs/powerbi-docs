@@ -20,17 +20,6 @@ This visual brings the power of paginated reports to your Power BI reports. You 
 
 The paginated report visual is designed to integrate a paginated report with other visuals in a Power BI report. It enables large data exports, detail drills, and generating documents. If you are migrating paginated report content from on premises, or find that the paginated report visual is the only element on a page, consider using the paginated report directly.
 
-## Prerequisites
-
-For content with paginated report visuals, this table spells out the licenses and workspace permissions needed to publish, manage, and view the content.
-
-|Type of capacity that hosts the workspace | License type to _publish and manage_ these reports in a workspace  |License type to _view_ these reports |
-|---------|---------|---------|
-|[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses and read access to the workspace  |
-|[Power BI Premium](../enterprise/service-premium-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses and read access to the workspace |
-
-Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
-
 ## Create a paginated report visual
 
 1. Open your Power BI report in Power BI Desktop or in the Power BI service. If in the Power BI service, select **Edit**. 
@@ -108,6 +97,7 @@ You can decide whether report filters are automatically applied to the paginated
 - The paginated report visual isn't supported for Power BI report subscription or export. You can open the underlying paginated report itself and create a subscription to it, as explained in [Subscribe to paginated reports](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports).
 - The paginated report visual has a built-in 30,000-value data reduction limit due to the [Power BI visual maximum of 30,000](../visuals/power-bi-data-points.md?#power-bi-visuals). If any field used in the visual contains more than 30,000 values, a data reduction algorithm kicks in and drops the rows that are above the limit. As a result, the paginated report may show incorrect results due to missing data from report parameters. To work around this, try to use filters to filter out unnecessary values, or map the report parameters to fields with fewer values.
 - The duration of the paginated report session is capped by the expiration time of your access token. Currently there's no support to automatically refresh the token. After the session expires, a dialog prompts you to refresh the visual and start a new rendering session.
+- Paginated report visual does not get updated as part of Deployment Pipelines. As a workaround here, please edit the Power BI report in destination to update the paginated report visual to use the paginated report in destination workspace.
 
 ### Using a Power BI semantic model with a date parameter
 
