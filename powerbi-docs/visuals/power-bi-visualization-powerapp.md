@@ -100,7 +100,7 @@ Notice that the updated opportunity count in the Power App visual matches the co
 If you don't want to save the Opportunity Analysis sample with the Power Apps visual, delete the dashboard, report, and semantic model.
 
 ## Considerations and limitations
-For troubleshooting information, see [Power Apps visual for Power BI](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
+For troubleshooting information, see [Power Apps visual for Power BI.](/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## Related content
 

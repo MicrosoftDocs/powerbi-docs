@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 12/01/2022
+ms.date: 02/08/2024
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer or business user so I know if I am a consumer/business user (versus designer, admin, creator, or dev) and, as such, what I can accomplish with the Power BI service.
 ms.custom: intro-overview
@@ -39,7 +39,7 @@ The content isn't static, so you can dig in and look for trends, insights, and o
 
 How you interact with Power BI depends on your job role. As a consumer or business user, you receive content, like dashboards, reports, and apps, from colleagues. You work in the Power BI service, which is the online or mobile version of Power BI. You review and interact with your content to make business decisions.
 
-As a business user, you don't have access to all the capabilities of Power BI. That's ok, because your job isn't building dashboards and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
+As a business user, you might not have access to all the capabilities of Power BI. That's ok, because your job isn't building semantic models and reports. You use the Power BI service for analysis, monitoring, exploration, and decision making.
 
 You might hear the term "Power BI Desktop" or just "Desktop." Designers use this stand-alone tool to build and share dashboards and reports. It's important to know that there are other Power BI tools out there, but if you're a business user, you typically work only with the Power BI service.
 Because you are working with content that is shared with you, at least one of the following is true: 
@@ -47,17 +47,17 @@ Because you are working with content that is shared with you, at least one of th
 - Your organization has a Power BI Premium subscription, and the content that's shared with you comes from Premium capacity.
 
 > [!NOTE]
-> Users with PPU capacity subscriptions can't share content with users who have a Pro or free license.
+> Users with PPU capacity subscriptions can only share content with other users who also have a PPU license.
 
 For more information about licenses and subscriptions, see [Which license do I have?](end-user-license.md)
 
 ## Safely interact with content
 
-As you filter, slice, subscribe, and export, your work doesn't impact the underlying semantic model or the original shared content, like dashboards, reports, and apps.  
+As you filter, slice, subscribe, and export, your work doesn't impact the underlying semantic model or the original shared content. This includes all shared content, including dashboards, reports, apps, and more.  
 
 You can't corrupt your data. Power BI is a great place to explore and experiment without worrying that you might break something.  
 
-That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, you can select the **Reset** button.  
+That doesn't mean that you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view, select the **Reset** button.  
 
 :::image type="icon" source="media/end-user-consumer/power-bi-reset.png":::
 
@@ -66,5 +66,3 @@ That doesn't mean that you can't save your changes. You can, but those changes o
 [Take a tour of the Power BI service for business users](end-user-reading-view.md)  
 [Power BI service training for business users](/training/paths/consume-data-with-power-bi/)  
 [Terminology and concepts for Power BI business users](end-user-basic-concepts.md)
-
-
