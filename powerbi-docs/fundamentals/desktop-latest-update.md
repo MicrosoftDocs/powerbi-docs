@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/12/2023
+ms.date: 02/12/2024
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
