@@ -9,11 +9,20 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 12/13/2023
+ms.date: 02/09/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
 
+## February 2024
+
+### Change a direct link to a shareable Link
+
+When you paste a direct report link (the URL copied from the browser) to the Power BI add-in in a presentation, you can now make that link shareable within the Power BI add-in. Previously, when you pasted a direct report link into the Power BI add-in, there was no option to make it sharable in the add-in before you added it to the presentation. Viewers of the presentation had to have access to the report before you used the direct report link or they wouldn't be able to see the data. 
+
+Now, if you have permissions to re-share a report, the Power BI add-in can replace the link you pasted with a shareable link. When you have sharable links enabled, you'll see a checkbox added below the report URL that asks you if you want to give viewers automatic access to the data. Mark this checkbox and Power BI add-in creates a shareable link for you. If you use a sharable link, other users viewing the presentation will have the required permissions to see the report and won't need to request access when the viewing the presentation.
+
+You must have sharable links enabled for your organization to use this feature. For more information on using sharable links, go to [Change a direct link to a shareable link](./service-power-bi-powerpoint-add-in-install.md#change-a-direct-link-to-a-shareable-link).
 ## December 2023
 
 ### Suggested content
@@ -49,7 +58,7 @@ The Power BI add-in for PowerPoint is now supported in national/regional clouds 
 
 ### Add individual live Power BI visuals to your PowerPoint slides
 
-Ever want to put just a single live visual on a slide? Well, now it's super easy. Right click on the visual and choose **Open in PowerPoint** to open a new presentation with the visual already loaded into the add-in. If you're adding the visual to an existing presentation, choose **Link to selection** to get the visual's URL for pasting into the add-in in the existing presentation. You can do the same from the **More options (...)** menu. Check out the [documentation](./service-power-bi-powerpoint-add-in-install.md#use-the-direct-url-to-add-live-data-to-a-presentation) for details.
+Ever want to put just a single live visual on a slide? Well, now it's super easy. Right select on the visual and choose **Open in PowerPoint** to open a new presentation with the visual already loaded into the add-in. If you're adding the visual to an existing presentation, choose **Link to selection** to get the visual's URL for pasting into the add-in in the existing presentation. You can do the same from the **More options (...)** menu. Check out the [documentation](./service-power-bi-powerpoint-add-in-install.md#use-the-direct-url-to-add-live-data-to-a-presentation) for details.
 
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/share-visual-option.png" alt-text="Screenshot showing the share options for adding a visual to a PowerPoint slide.":::
 
