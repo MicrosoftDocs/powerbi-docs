@@ -120,7 +120,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The secure embed option works for reports that are published to the Power BI service.
 
-* To host securely embededde content, users must use HTTPS for their top-level page. Using an unsecured host page to access securely embedded content is not supported.
+* To host securely embedded content, users must use HTTPS for their top-level page. Using an unsecured host page to access securely embedded content is not supported.
 
 * The user needs to sign in to view the report whenever they open a new browser window.
 
