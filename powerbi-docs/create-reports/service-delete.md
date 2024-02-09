@@ -47,7 +47,7 @@ Only workspace admins can remove people from a workspace. If you're an admin, yo
 
 1. In the workspace list view, select **Manage access** in the upper-right corner.
 
-    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of the workspace list view, highlighting Access." lightbox="media/service-delete/power-bi-select-access.png" lightbox="Screenshot of the workspace list view, highlighting Access.":::
+    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of the workspace list view, highlighting Access." lightbox="media/service-delete/power-bi-select-access.png":::
 
 1. In the **Manage access** pane, select **More options (...)** next to the name of the person you want to remove, and choose **Remove**.
 
