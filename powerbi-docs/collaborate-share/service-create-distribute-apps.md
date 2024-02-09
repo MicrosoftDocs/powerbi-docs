@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 1/25/2023
+ms.date: 02/09/2024
 
 LocalizationGroup: Share your work
 ---
@@ -15,7 +15,8 @@ LocalizationGroup: Share your work
 # Publish an app in Power BI
 
 > [!IMPORTANT]
-> Legacy Power BI apps will be retired on May 1, 2024. Please upgrade to Power BI apps with audiences. Read below for how to publish a Power BI app with audiences.
+> Legacy Power BI apps will be retired on May 1, 2024. Please upgrade to Power BI apps with audiences. Read on for how to publish a Power BI app with audiences.
+
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
 
 :::image type="content" source="media/service-create-distribute-apps/power-bi-apps.png" alt-text="Screenshot of Power BI Apps." lightbox="media/service-create-distribute-apps/power-bi-apps.png":::
