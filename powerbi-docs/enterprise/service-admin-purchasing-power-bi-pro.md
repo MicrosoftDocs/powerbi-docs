@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 02/08/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -40,7 +40,6 @@ To Purchase Power BI Pro licenses in the Microsoft 365 admin center:
 1. Search for **Power BI** or select **Power BI** from the **View by category** section.
 1. Scroll to **Power BI Pro**, and select **Details**.
 1. Select the number of licenses you want to purchase.
-1. Under **Select billing frequency**, select if you want to be billed monthly or annually. An annual commitment is required.
 1. Select **Buy**.
 1. On the **Checkout** page:
    1. Verify your organization and contact information.
