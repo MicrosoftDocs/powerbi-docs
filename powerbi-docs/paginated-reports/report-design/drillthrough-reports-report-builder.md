@@ -3,7 +3,7 @@ title: "Drillthrough reports in a Power BI paginated report"
 description: Discover drillthrough reports, which open when you select a link in a Power BI paginated report to get details about an item in an original summary report in Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 06/27/2023
+ms.date: 02/08/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -52,6 +52,7 @@ A drillthrough report is a report that a user opens by clicking a link within an
 ## Considerations and limitations
 
 - Drillthrough to a report isn't supported in Report Preview.
+- Drillthrough links in a report don't work when you export the report to any format, for example, Word, Excel, or PDF, in Power BI Report Builder as well as the Power BI service.
 
 ## Related content
 
