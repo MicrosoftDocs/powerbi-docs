@@ -64,7 +64,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 6. Configure the **Create a certificate** fields as follows:
 
-    * **Method of Certificate Creation** - General
+    * **Method of Certificate Creation** - Generate
 
     * **Certificate Name** - Enter a name for your certificate
 
