@@ -2,7 +2,7 @@
 title: Learn about Direct Lake in Power BI and Microsoft Fabric
 description: Describes using Direct Lake to analyze very large semantic models in Power BI and Microsoft Fabric.
 author: kfollis
-ms.author: owend
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
@@ -166,6 +166,8 @@ You may want to disable if, for example, you need to allow completion of data pr
 - Table relationships require the data types of their key columns to coincide. Primary key columns must contain unique values. DAX queries will fail if duplicate primary key values are detected.
 
 - The length of string column values is limited to 32,764 Unicode characters.
+
+- The floating point value ‘NaN’ (Not A Number) is not supported in Direct Lake models.
 
 - Embedded scenarios that rely on embedded entities are not yet supported.
 

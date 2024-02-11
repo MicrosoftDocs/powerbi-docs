@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with reports
 ms.topic: how-to
-ms.date: 12/02/2022
+ms.date: 02/06/2024
 LocalizationGroup: Reports
 ---
 
@@ -20,19 +20,19 @@ A Power BI report is a multi-perspective view into a semantic model, with visual
 
 ## The parts of a report
 
-:::image type="content" source="./media/end-user-reports/power-bi-report.png" alt-text="Screenshot showing the Sales and Marketing Sample report page." lightbox="./media/end-user-reports/power-bi-report.png#lightbox":::
+:::image type="content" source="./media/end-user-reports/power-bi-numbered-report.png" alt-text="Screenshot showing the Sales and Marketing Sample report page." lightbox="./media/end-user-reports/power-bi-numbered-report.png#lightbox":::
 
-A. This report has four pages (or tabs). The example shows the **Sentiment** page.  
+A. This report has six pages (or tabs). The example shows the **Sentiment** page.  
 B. This page has five visuals and a page title.  
-C. The **Filters** pane shows any applied filters. To collapse the **Filters** pane, select the arrow (**>**).  
-D. The Power BI banner shows the name of the report and the last updated date. Select the arrow to open a menu that shows the name of the report owner.  
-E. The action bar contains actions to take on this report. For example, you can add a comment, view a bookmark, or export data from the report. Select **More options** (...) to see a list of report functions.
+C. The **Filters** pane shows all applied filters. To collapse the **Filters** pane, select the arrow (**>**).  
+D. The Power BI banner shows the title of the report and the sensitivity label. Select the title to open a menu that shows the report location, date it was last updated, and contact information for the report creator.  
+E. The action bar contains links to numerous actions you can take on this report. Some actions require extra permissions. For example, based on your permissions you may be able to edit, subscribe, and share the report. All users can add a comment, view a bookmark, or generate automatic insights. Select **More options** (...) to see the full list of report actions.
 
 If you're new to Power BI, read [Basic concepts for the Power BI service business users](end-user-basic-concepts.md) to get a good foundation. You can view, share, and annotate reports on mobile devices. For more information, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 
-Power BI bases a report on a single semantic model. Report designers create the visuals in a report to represent pieces of information. The visuals aren't static. They update as the underlying data changes. You interact with the visuals and filters as you dig into the data to discover insights and find answers. Like a dashboard, a report is interactive and customizable. The extent of what you can do with a report depends on your role and the permissions the report designer assigns to you.
+Power BI bases a report on a single semantic model. Report designers create the visuals in a report to represent pieces of information. Presenting data as visuals makes it easier to grasp the meaning of what you're seeing. And, the visuals aren't static. They update as the underlying data changes. The designers do the pre-work, adding visuals that they believe are interesting. But you get to explore and dig deeper. You interact with the visuals and filters as you dig into the data to discover insights and find answers. The extent of what you can do with a report depends on your role and the permissions the report designer assigns to you.
 
 ## Safely interact with content
 
@@ -43,37 +43,37 @@ As you explore and interact with your content by filtering, slicing, subscribing
 
 ## Save your changes or revert to the default settings
 
-Your changes won't affect underlying data, but that doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view of the report, select the **Reset** icon.
+Your changes don't affect underlying data, but that doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the default view of the report, select the **Reset** icon.
 
 :::image type="content" source="./media/end-user-reports/power-bi-reset.png" alt-text="Screenshot of the Revert to default icon.":::
 
 ## Dashboards versus reports
 
-[Dashboards](end-user-dashboards.md) can be confused with reports because they're both canvases filled with visualizations, but there are major differences. The following table shows an overview of the different capabilities of dashboards and reports:
+[Dashboards](end-user-dashboards.md) can be confused with reports because they're both canvases filled with visualizations. But there are major differences. The following table shows an overview of the different capabilities of dashboards and reports:
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
 | **Pages** | One page | One or more pages |
 | **Data sources** | One or more report or semantic model per dashboard |A single semantic model per report |
 | **Filtering** | No, you can't filter or slice | Yes, there are many ways to filter, highlight, and slice |
-| **Set alerts** | Yes, you can create email alerts when certain conditions are met | No, you can't set alerts |
 | **Can see underlying semantic model tables and fields** |No. Can export data but can't see the semantic model tables and fields in the dashboard itself |Yes. Can see semantic model tables and fields and values that you have permissions to see |
-| **Customization** | No  | Yes, you can filter, export, view related content, add bookmarks, generate QR codes, and analyze in Excel |
+| **Customization** | No  | Yes, depending on your permissions you can cross-filter, change visual type, apply design features, add bookmarks and comments, generate QR codes, analyze in Excel, and much more |
+| **Pinning** |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) and entire report pages to any of your dashboards |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
-| Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
+ -->
 
 ## Related content
 
-Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports.
+Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports.
 
-Or you may be a *business user*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
+Or you might be a *business user*, someone who receives reports from others. You want to learn how to understand and interact with the reports. If you're a report *business user*, these links are for you:
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md), so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to business users](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of a [sample](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * Explore [Dashboards in the Power BI service](end-user-dashboards.md).  
-* To see which semantic model the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
+* See which semantic model the report is using and which dashboards are showing visuals from the report, see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
 > If you didn't find what you're looking for here, use the table of contents on this page to browse more articles. 
