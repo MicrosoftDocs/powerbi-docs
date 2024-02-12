@@ -85,6 +85,7 @@ You receive an email and snapshot of the report or dashboard on the schedule you
 
 > [!NOTE]
 > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
+> Similarly, subscriptions email from Power BI report can be received by Mail-enabled Security Group after allowing it to receive email from Power BI email alias (no-reply-powerbi@microsoft.com).
 
 ## Sensitivity labels
 
