@@ -33,11 +33,11 @@ This new view mode is similar to how Show as a table displays underlying data fo
 
 To activate this view mode, navigate to the **View** dropdown menu and select **Show visuals as tables**. 
 
-    :::image type="content" source="media/whats-new/visuals-as-tables.png" alt-text="Screenshot showing visuals as tables.":::
+:::image type="content" source="media/whats-new/visuals-as-tables.png" alt-text="Screenshot showing visuals as tables.":::
  
 Use the keyboard shortcut <kbd>Ctrl+Shift+F11</kbd> to toggle between the two views.  
 
-    :::image type="content" source="media/whats-new/tables-as-visuals.png" alt-text="Screenshot showing tables as visuals.":::
+:::image type="content" source="media/whats-new/tables-as-visuals.png" alt-text="Screenshot showing tables as visuals.":::
 
 #### More styling options for column and bar charts 
 
@@ -71,9 +71,8 @@ Data labels have more options, too. Discover new enhanced capabilities for
 * **Visual label layout**: A new feature that lets you choose between a sleek single-line data label or a multi-line data label, where desired.  
 
 Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. We’re excited to hear your thoughts on these innovations and value your input on future Data Label enhancements!  
-  
 
-For more detailed information, see the [blog post about these new Data label features](https://www.linkedin.com/posts/pbicorevisuals_more-exciting-news-our-gift-to-the-activity-7138638604704129024).  
+For more detailed information, see the blog post about these new data label features.  
 
 Remember Power BI Report Server release cadence is September, January, and May.  
 
