@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/05/2023
+ms.date: 02/12/2024
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,70 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log fPower BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## February 2024
+
+A focus of this release is on accessibility. Power BI customers will notice a continuation in the work done in the previous year. We continue to provide more inclusivity for both creators and consumers in 2024.
+
+We've made it easier for report consumers with visual impairments to get tabular data for all visuals on a page with one selection. We're displaying the data in ways that best meet their needs with show visuals as tables, an added menu item. We promised better looking reports. We're delivering extended data labels and more styling options that improve aesthetics for column and bar charts. THese changes are an added benefit for neurodivergent individuals with cognitive disabilities. 
+
+### Reporting  
+
+#### Show visuals as tables 
+
+Leveraging previous accessibility improvements to table and matrix, we're introducing a new view mode called **Show visuals as tables**. It displays report visuals in a tabular format with a single action. Users might prefer to consume data in a text-based or tabular format depending on their learning styles and use of assistive technologies. This supplemental format for visuals allows users to display the data in the way that best meets their needs. 
+
+This new view mode is similar to how Show as a table displays underlying data for individual visuals today. Show visuals as tables displays the underlying data for visuals for all pages in the current report, with the added functionality of interaction and cross-filtering capabilities. 
+
+To activate this view mode, navigate to the **View** dropdown menu and select **Show visuals as tables**. 
+
+    :::image type="content" source="media/whats-new/visuals-as-tables.png" alt-text="Screenshot showing visuals as tables.":::
+ 
+Use the keyboard shortcut <kbd>Ctrl+Shift+F11</kbd> to toggle between the two views.  
+
+    :::image type="content" source="media/whats-new/tables-as-visuals.png" alt-text="Screenshot showing tables as visuals.":::
+
+#### More styling options for column and bar charts 
+
+This month brings new formatting enhancements for column and bar charts in Power BI. These additions can improve your data visualization, enabling more impactful analysis and storytelling capabilities. Here's a list of the new features available now.
+
+:::image type="content" source="media/whats-new/new-visual-formatting.png" alt-text="Screenshot showing enhanced formatting for column and bar charts in Power BI.":::
+
+##### Key Enhancements
+
+* **Apply Settings to All or Series**: Enjoy the versatility of applying formatting options globally across all categories or tailor them for each unique individual series, effortlessly and efficiently!  
+* **Transparency Control**: You can now adjust the fill color transparency to achieve the perfect balance of visibility and design.  
+* **Border Customization**: Gaining superior control, you can now introduce borders with unmatched precision, choosing a distinct color, or match it to the column’s fill, and define both the border’s width and transparency for a polished look.  
+* **Layout**: We’ve renamed the Spacing card to be the new Layout card, relocated the familiar Reverse Order toggle that allows you to invert series, and introduced Sort by Value, Space between categories, and Space between series. And, with clustered columns and bar charts, you now have the option to Erode or Explode the stacked series.  
+* **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options including matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.  
+
+These features aim to provide you with greater flexibility and creative freedom in presenting your data, ensuring that your insights stand out with clarity and style. Enjoy exploring these new capabilities and crafting compelling narratives with your data in Power BI. 
+  
+For comprehensive information, see this [dedicated blog post about new features for column and bar charts](https://www.linkedin.com/posts/pbicorevisuals_exciting-news-get-ready-for-a-game-changing-activity-7138587557533032449-qQcZ).  
+
+#### Extended customization for data labels 
+
+Data labels have more options, too. Discover new enhanced capabilities for data labels, that give you extended customization choices to seamlessly match your reporting needs. They bring integration of additional metrics, dramatically improving your data analysis experience. Here are this month’s highlights.
+
+:::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
+
+##### Key Enhancements
+
+* **Title**: The new Title card feature enables the display of legend fields on your data labels, offering the option to omit the legend for a cleaner look. It also allows customized data label titles using different data fields, adjustable font style, color, and transparency.  
+* **Value**: Easily spot the active field for your data label in the field well. Modifying it to another field is quick and easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.  
+* **Detail**: Our new Detail card feature unlocks new potential by allowing the inclusion of a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options at your disposal.  
+* **Visual label layout**: A new feature that lets you choose between a sleek single-line data label or a multi-line data label, where desired.  
+
+Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. We’re excited to hear your thoughts on these innovations and value your input on future Data Label enhancements!  
+  
+
+For more detailed information, see the [blog post about these new Data label features](https://www.linkedin.com/posts/pbicorevisuals_more-exciting-news-our-gift-to-the-activity-7138638604704129024).  
+
+Remember Power BI Report Server release cadence is September, January, and May.  
+
+### Customer feedback
+
+To be a part of our customer research for paginated reports and provide product feedback, prototype assessment, and stay abreast with what’s new, register here. If you would like to join our Reporting Services - Migration to Power BI user group, register now. We’d love to have you join in the fun and tune in to our monthly events! 
 
 ## September 2023
 
