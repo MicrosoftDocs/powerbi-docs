@@ -76,6 +76,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-admin-alternate-email-address-for-power-bi.md",
+            "redirect_url": "/entra/identity/authentication/howto-authentication-use-email-signin",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-203-decomposition-tree-shows-title-collapsed-level.md",
             "redirect_url": "/power-bi/troubleshoot/index",
             "redirect_document_id": false
