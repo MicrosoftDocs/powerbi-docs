@@ -119,19 +119,19 @@ Now let's add new group called *color* for configuring the circle color and thic
             name: "circleColor",
             displayName: "Color",
             value: { value: "#ffffff" },
-            show: true
+            visible: true
         });
 
         public circleThickness = new formattingSettings.NumUpDown({
             name: "circleThickness",
             displayName: "Thickness",
             value: 2,
-            show: true
+            visible: true
         });
 
         public name: string = "circle";
         public displayName: string = "Circle";
-        public show: boolean = true;
+        public visible: boolean = true;
         public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness]
     }
 
