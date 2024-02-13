@@ -141,9 +141,9 @@ At this time, we aren't enhancing the Emissions Impact Dashboard for Azure to di
 
 Yes, all historical Azure emissions data for your organization is recalculated using the new methodology.
 
-### Is the data on Emissions Impact Dashboard for Azure and Cloud for Sustainability API the same?
+### Is the data on the Emissions Impact Dashboard for Azure and Cloud for Sustainability API the same?
 
-Emissions Impact Dashboard and the Cloud for Sustainability API provide data based on the same source, and are the same.
+The Emissions Impact Dashboard and the Cloud for Sustainability API provide data based on the same source, and are the same.
 
 ### Is there an option for me to access my Azure emissions data using the old methodology?
 
