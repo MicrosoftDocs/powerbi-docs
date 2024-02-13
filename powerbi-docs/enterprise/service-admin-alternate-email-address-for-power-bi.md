@@ -8,13 +8,13 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom: has-azure-ad-ps-ref
 ms.topic: conceptual
-ms.date: 04/23/2019
+ms.date: 02/08/2024
 LocalizationGroup: Troubleshooting
 ---
 
 # Use an alternate email address
 
-When you sign up for Power BI, you provide an email address. By default, Power BI uses this address to send you updates about activity in the service. For example, when someone sends you a sharing invitation, it goes to this address.
+When you sign up for Power BI, you provide an email address. By default, Power BI uses this address to send you updates about activity in the service. For example, when someone sends you a sharing invitation, it goes to this address. This is also the email address used for data alerts and subscriptions.
 
 In some cases, you might want these emails delivered to an alternate email address rather than the one you signed up with. This article explains how to specify an alternate address in Microsoft 365 and in PowerShell. The article also explains how Microsoft Entra ID resolves an email address.
 
@@ -23,19 +23,38 @@ In some cases, you might want these emails delivered to an alternate email addre
 
 ## Use Microsoft 365
 
-To specify an alternate address in Microsoft 365, follow these steps.
+To specify an alternate address in Microsoft 365, follow these steps. 
 
-1. Open the [personal info](https://portal.office.com/account/#personalinfo) page of your account. If the app prompts you, sign in with the email address and password you use for Power BI.
+1. Open your [Microsoft account dashboard](https://account.microsoft.com). If the app prompts you, sign in with the email address and password you use for Power BI.
 
-1. On the left menu, select **Personal info**.
+1. To add or remove an email alias, select **Edit account info**.
 
-1. In the **Contact details** section, select **Edit**.
+1. To edit which aliases can be used to sign in, select **Sign-in preferences**.
 
     If you can't edit your details, an admin manages your email address. Contact your admin to update your alternate email address.
 
-    ![Screenshot of the contact details dialog, the edit icon and alternate email are highlighted.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+If you have admin privileges, you can add an alternative email address. 
 
-1. In the **Alternate email** field, enter the email address you'd like Microsoft 365 to use for Power BI updates.
+1. Open your [account portal.](myaccount.microsoft.com)
+1. Select **Settings & Privacy** > **Privacy** and scroll down to **Contact preferences**.
+1. Select **Contact preferences for admins only**.
+1. Select **I would like emails sent to an alternative address**.  
+
+## Use a Power Automate flow
+
+https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-flow-integration
+
+Just sign in -> My Flows -> Create from Blank -> Search "Power" -> select power bi "on trigger event" - Choose the Alert -> New Step -> Outlook (or some mail provider -> Choose action -> set up the email -> Create Flow
+
+Using Flow would be a work around if you just want to email yourself. But it extends the functionality of an alert by allowing you to email to other users, groups, etc. You are not able to do that in PowerBI, and in those cases I wouldn't consider it a work around.
+
+Actually I did just discover, that if you go to Manage Gateways, then you can change the contact address there.  I have not yet tested it but hopefully that will do it.
+
+You can also use Microsoft Flow for data alerts from Power BI to send it to a Email distribution group.
+
+ https://learn.microsoft.com/en-us/fabric/admin/service-admin-premium-capacity-notifications
+
+Turn insight into action using Microsoft Flow and Power BI
 
 ## Use PowerShell
 
@@ -49,7 +68,7 @@ Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.co
 
 ## Email address resolution in Microsoft Entra ID
 
-To capture a Microsoft Entra embed token for Power BI, you can use one of three different types of email addresses:
+To capture a Microsoft Entra embed token for Power BI, use one of three different types of email addresses:
 
 * The main email address associated with your Microsoft Entra account
 

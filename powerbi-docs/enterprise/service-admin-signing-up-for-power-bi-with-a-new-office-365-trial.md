@@ -1,5 +1,5 @@
 ---
-title: Sign up for Power BI with a new Microsoft 365 Trial
+title: Sign up for Power BI with a new Microsoft 365 Trial.
 description: Learn how to sign up for a Microsoft 365 trial to access Power BI when you don't have a work or school email account.
 author: mihart
 ms.author: mihart
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 11/04/2022
+ms.date: 02/08/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
