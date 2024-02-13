@@ -13,7 +13,7 @@ ms.custom: intro-whats-new
 
 # What's new in Power BI Report Server
 
-Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log fPower BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
@@ -55,7 +55,7 @@ This month brings new formatting enhancements for column and bar charts in Power
 
 These features aim to provide you with greater flexibility and creative freedom in presenting your data, ensuring that your insights stand out with clarity and style. Enjoy exploring these new capabilities and crafting compelling narratives with your data in Power BI. 
   
-For comprehensive information, see this [dedicated blog post about new features for column and bar charts](https://www.linkedin.com/posts/pbicorevisuals_exciting-news-get-ready-for-a-game-changing-activity-7138587557533032449-qQcZ).  
+For comprehensive information, see this [blog post about new features for column and bar charts](https://www.linkedin.com/posts/pbicorevisuals_exciting-news-get-ready-for-a-game-changing-activity-7138587557533032449-qQcZ).  
 
 #### Extended customization for data labels 
 
