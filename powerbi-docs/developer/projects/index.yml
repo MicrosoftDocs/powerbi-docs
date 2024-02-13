@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: mberdugo
   ms.author: monaberdugo
-  ms.date: 05/30/2023
+  ms.date: 01/30/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -47,18 +47,33 @@ landingContent:
         - text: "Interact with Power BI reports using the Power BI REST API"
           url: /rest/api/power-bi/reports
   # Card (optional)
-  - title: Using TOM with semantic models
+  - title: Power BI CI/CD
     linkLists:
       - linkListType: concept
         links:
+        - text: "Introduction to deployment pipelines"
+          url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
+        - text: "Azure DevOps Integration"
+          url: projects-azdo.md
+        - text: "Continuous integration with Azure DevOps and Git "
+          url: projects-build-pipelines.md
+        - text: "CI/CD with Git and Deployment Pipelines "
+          url: /fabric/cicd/cicd-tutorial
+  # Card (optional)
+  - title: Solutions and Best Practices
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "Hot and cold table partitions to optimize very large Power BI data models "
+          url: /analysis-services/tom/table-partitions
+        - text: "Register an external tool"
+          url: ../../transform-model/desktop-external-tools-register.md
         - text: "External tools in Power BI Tabular Object Model (TOM)"
           url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
         - text: "Programming Power BI semantic models with the Tabular Object Model (TOM)"
           url: /analysis-services/tom/tom-pbi-datasets
-        - text: "Hot and cold table partitions to optimize very large Power BI data models"
-          url: /analysis-services/tom/table-partitions
   # Card (optional)
-  - title: Lifecycle management collaboration with deployment pipelines
+  - title: External tools
     linkLists:
       - linkListType: concept
         links:
@@ -66,21 +81,3 @@ landingContent:
           url: ../../transform-model/desktop-external-tools.md
         - text: "Register an external tool"
           url: ../../transform-model/desktop-external-tools-register.md
-  # Card (optional)
-  - title: Solutions and Best Practices
-    linkLists:
-      - linkListType: concept
-        links:
-        - text: "Leveraging hot and cold table partitions to optimize very large Power BI data models "
-          url: /analysis-services/tom/table-partitions
-        - text: "Register an external tool"
-          url: ../../transform-model/desktop-external-tools-register.md
-  # Card (optional)
-  - title: External tools
-    linkLists:
-      - linkListType: concept
-        links:
-        - text: "Introduction to deployment pipelines"
-          url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
-        - text: "Get started with deployment pipelines"
-          url: /fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines?tabs=from-workspace
