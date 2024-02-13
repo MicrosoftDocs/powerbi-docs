@@ -33,7 +33,8 @@ Most organizations have one Microsoft Entra tenant, so it's commonly true that a
 Usually, Microsoft Entra ID is set up before a Fabric implementation begins. However, sometimes it's when you provision a cloud service that you become aware of the importance of Microsoft Entra ID.
 
 > [!TIP]
-> Because most organizations have one Microsoft Entra tenant, it can be challenging to explore new features in an isolated way. For non-production testing purposes, consider using a free [Microsoft 365 E5 instant sandbox](https://developer.microsoft.com/microsoft-365/dev-program). It's available through the [Microsoft 365 Developer Program](/office/developer-program/microsoft-365-developer-program-faq).
+> Because most organizations have one Microsoft Entra tenant, it can be challenging to explore new features in an isolated way. You might qualify for a non-production developer tenant through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
+
 
 ### Unmanaged tenant
 
