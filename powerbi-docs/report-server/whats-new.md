@@ -72,7 +72,9 @@ Explore these new features of data labels to increase the data density in your
 * **Detail**: Our new Detail card feature unlocks new potential by allowing the inclusion of a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options at your disposal.  
 * **Visual label layout**: A new feature that lets you choose between a sleek single-line data label or a multi-line data label, where desired.  
 
-Remember Power BI Report Server release cadence is September, January, and May.  
+For more detailed information, see the [blog post about these new data label features](https://powerbi.microsoft.com/blog/new-cards-reference-labels-public-preview/). 
+
+Remember that the Power BI Report Server release cadence is September, January, and May.  
 
 ## September 2023
 
