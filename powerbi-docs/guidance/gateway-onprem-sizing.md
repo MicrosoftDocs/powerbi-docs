@@ -7,14 +7,14 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 02/13/2024
 ---
 
 # On-premises data gateway sizing
 
 This article targets Power BI administrators who need to install and manage the [on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
-The gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. It can be installed on a server on-premises, or VM-hosted Infrastructure-as-a-Service (IaaS).
+The gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. It can be installed on a server on-premises, or VM-hosted infrastructure as a service (IaaS).
 
 ## Gateway workloads
 
@@ -120,6 +120,7 @@ For Live Connection semantic models:
 
 For more information related to this article, check out the following resources:
 
+- [Power BI implementation planning: Data gateways](powerbi-implementation-planning-data-gateways.md)
 - [Guidance for deploying a data gateway for Power BI](../connect-data/service-gateway-deployment-guidance.md)
 - [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 - [Monitor and optimize on-premises data gateway performance](/data-integration/gateway/service-gateway-performance)

@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.date: 02/13/2024
 ---
 
 # Learn from customer Power BI migrations
@@ -134,7 +134,7 @@ The company made a large investment in Premium workspaces, most notably to distr
 Early on, the company had many personal gateways. Using an on-premises data gateway cluster shifts the management efforts to the central BI team, which allows the content author community to focus on producing content. The central BI team worked with the internal Power BI user community to reduce the number of personal gateways.
 
 > [!IMPORTANT]
-> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies.
+> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies. For more information, see [Manage gateways](powerbi-implementation-planning-data-gateways.md#manage-gateways).
 
 ### Formalize your support plan
 
