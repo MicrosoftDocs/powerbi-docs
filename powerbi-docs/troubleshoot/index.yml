@@ -27,13 +27,13 @@ landingContent:
       - linkListType: reference
         links:
           - text: What are the current known issues for Power BI + Fabric - chart
-            url: /fabric/fabric-known-issues.md
+            url: /fabric/get-started/fabric-known-issues.md
           - text: Current known issues for Power BI and Fabric - report
             url: https://support.fabric.microsoft.com/known-issues
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
           - text: See more >
-            url: /fabric/fabric-known-issues.md
+            url: /fabric/get-started/fabric-known-issues.md
   # Card (optional)
   - title: Troubleshooting
     linkLists:
