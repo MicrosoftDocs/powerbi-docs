@@ -20,7 +20,7 @@ To try this preview feature, you need to turn it on.
 
 - In **Options** > **Preview features**, select **Measure descriptions with Copilot**.
 
-Learn more about how to access to Fabric Copilot for Power BI on your tenant in the [Copilot requirements](/create-reports/copilot-introduction.md#copilot-requirements) section of the Copilot introduction article.
+Learn more about how to access to Fabric Copilot for Power BI on your tenant in the [Copilot requirements](../create-reports/copilot-introduction.md#copilot-requirements) section of the Copilot introduction article.
 
 ## Create a description with Copilot
 
