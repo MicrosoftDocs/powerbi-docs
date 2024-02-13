@@ -255,6 +255,8 @@
           href: powerbi-implementation-planning-defender-for-cloud-apps.md
         - name: "Auditing of info protection and DLP for Power BI"
           href: powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md
+      - name: "Data gateways"
+        href: powerbi-implementation-planning-data-gateways.md
       - name: "Auditing and monitoring"
         items:
         - name: "Auditing and monitoring overview"
