@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/12/2024
+ms.date: 02/13/2024
 ms.custom: intro-whats-new
 ---
 
@@ -65,20 +65,14 @@ Data labels have more options, too. Discover new enhanced capabilities for
 
 ##### Key Enhancements
 
+Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. 
+
 * **Title**: The new Title card feature enables the display of legend fields on your data labels, offering the option to omit the legend for a cleaner look. It also allows customized data label titles using different data fields, adjustable font style, color, and transparency.  
 * **Value**: Easily spot the active field for your data label in the field well. Modifying it to another field is quick and easy, with customization options like font, color, transparency, and more, plus a new feature for blank value display.  
 * **Detail**: Our new Detail card feature unlocks new potential by allowing the inclusion of a secondary metric to your data labels. Choose any field to add an extra value, with the full range of formatting options at your disposal.  
 * **Visual label layout**: A new feature that lets you choose between a sleek single-line data label or a multi-line data label, where desired.  
 
-Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. We’re excited to hear your thoughts on these innovations and value your input on future Data Label enhancements.  
-
-For more detailed information, see the blog post about these new data label features.  
-
 Remember Power BI Report Server release cadence is September, January, and May.  
-
-### Customer feedback
-
-To be a part of our customer research for paginated reports and provide product feedback, prototype assessment, and stay abreast with what’s new, register here. If you would like to join our Reporting Services - Migration to Power BI user group, register now. We’d love to have you join in the fun and tune in to our monthly events. 
 
 ## September 2023
 
