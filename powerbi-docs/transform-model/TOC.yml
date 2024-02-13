@@ -123,6 +123,8 @@
       items: 
       - name: "Create quick measures for common calculations"
         href: desktop-quick-measures.md
+      - name: "Use Copilot to create measure descriptions"
+        href: desktop-measure-copilot-descriptions.md
       - name: "Create and use what-if parameters to visualize variables"
         href: desktop-what-if.md
       - name: "Specify data categories in Power BI Desktop"
