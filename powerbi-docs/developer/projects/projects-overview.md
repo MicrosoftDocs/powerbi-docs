@@ -100,7 +100,7 @@ Go to **File > Options and settings > Options > Preview features** and check the
 
 With the TMDL Preview feature enabled, when you save a project, your semantic model is saved as a TMDL folder named *\definition* inside of [semantic model folder](./projects-dataset.md):  
 
-:::image type="content" source="./media/projects-tmdl-folder/semantic-model-folder.png" alt-text="Screenshot of the definition folder inside a semantic model folder.":::
+:::image type="content" source="./media/projects-overview/semantic-model-folder.png" alt-text="Screenshot of the definition folder inside a semantic model folder.":::
 
 Learn more about the [TMDL folder structure](/analysis-services/tmdl/tmdl-overview#tmdl-folder-structure).
 
@@ -113,11 +113,11 @@ If you already have a PBIP using TMSL as semantic model format, you can convert 
 1. **Save** the project. A prompt appears asking you to upgrade into TMDL.
 1. Select **Upgrade**.
 
-:::image type="content" source="./media/projects-tmdl-folder/upgrade-project.png" alt-text="Screenshot of prompt to upgrade semantic model folder to TMDL.":::
+:::image type="content" source="./media/projects-overview/upgrade-project.png" alt-text="Screenshot of prompt to upgrade semantic model folder to TMDL.":::
 
 The existing Tabular Model Scripting Language (TMSL) file (*model.bim*) is replaced with a *\definition* folder containing the TMDL representation of the semantic model.
 
-:::image type="content" source="./media/projects-tmdl-folder/tmsl-to-tmdl-folders.png" alt-text="Screenshot of PBIP projects with TMSL folders and with TMDL folders.":::
+:::image type="content" source="./media/projects-overview/tmsl-to-tmdl-folders.png" alt-text="Screenshot of PBIP projects with TMSL folders and with TMDL folders.":::
 
 If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
@@ -127,7 +127,7 @@ For a better experience reading and editing your TMDL files, install the [TMDL -
 
 Open the PBIP folder using VS Code and navigate to semantic model definition folder.
 
-:::image type="content" source="./media/projects-tmdl-folder/semantic-model-definition-folder.png" alt-text="Screenshot of a semantic model definition folder in VS Code.":::
+:::image type="content" source="./media/projects-overview/semantic-model-definition-folder.png" alt-text="Screenshot of a semantic model definition folder in VS Code.":::
 
 Power BI Desktop isn't aware of changes to project files made by other tools. Therefore, if you make any changes to open files outside of Power BI Desktop, you need to restart for those changes to be shown in Power BI Desktop.
 
@@ -135,7 +135,7 @@ Power BI Desktop isn't aware of changes to project files made by other tools. Th
 
 If any invalid edits are made to the TMDL files, Power BI Desktop throws an error on open, with the location of the error:
 
-:::image type="content" source="./media/projects-tmdl-folder/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
+:::image type="content" source="./media/projects-overview/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
 
 ## Changes outside Power BI Desktop
 
