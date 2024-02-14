@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/05/2023
+ms.date: 02/14/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -85,7 +85,7 @@ You receive an email and snapshot of the report or dashboard on the schedule you
 
 > [!NOTE]
 > To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
-> Similarly, subscriptions email from Power BI report can be received by Mail-enabled Security Group after allowing it to receive email from Power BI email alias (no-reply-powerbi@microsoft.com).
+> Similarly, mail-enabled security groups can receive subscription emails from Power BI reports after you allow a group to receive email from the Power BI email alias (no-reply-powerbi@microsoft.com).
 
 ## Sensitivity labels
 
