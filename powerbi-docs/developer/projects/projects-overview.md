@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 01/31/2024
+ms.date: 02/14/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -106,14 +106,17 @@ Learn more about the [TMDL folder structure](/analysis-services/tmdl/tmdl-overvi
 
 ### Convert existing PBIP from TMSL to TMDL
 
-If you already have a PBIP using TMSL as semantic model format, you can convert it to TMDL as follows: 
+If you already have a PBIP using TMSL as semantic model format, you can convert it to TMDL as follows:
 
 1. Open the PBIP in Power BI Desktop.
 1. Ensure the Preview Feature is enabled.
 1. **Save** the project. A prompt appears asking you to upgrade into TMDL.
 1. Select **Upgrade**.
 
-:::image type="content" source="./media/projects-overview/upgrade-project.png" alt-text="Screenshot of prompt to upgrade semantic model folder to TMDL.":::
+    > [!IMPORTANT]
+    > Once you upgrade to TMDL, you can't revert back to TMSL. If you think you might want to revert back to TMSL, save a copy of your PBIP files first.
+
+    :::image type="content" source="./media/projects-overview/upgrade-project.png" alt-text="Screenshot of prompt to upgrade semantic model folder to TMDL.":::
 
 The existing Tabular Model Scripting Language (TMSL) file (*model.bim*) is replaced with a *\definition* folder containing the TMDL representation of the semantic model.
 
