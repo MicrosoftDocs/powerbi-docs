@@ -4873,7 +4873,7 @@
         {
             "source_path": "powerbi-docs/consumer/end-user-datasets-hub.md",
             "redirect_url": "/fabric/get-started/onelake-data-hub",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/guidance/report-design-tips-axes.md",
