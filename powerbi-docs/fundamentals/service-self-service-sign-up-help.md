@@ -8,7 +8,7 @@ ms.topic:  conceptual
 ms.service: powerbi
 ms.custom: pbibetadocbug
 ms.subservice: pbi-fundamentals
-ms.date: 01/19/2023
+ms.date: 02/14/2024
 ---
 # What to do if sign-up is disabled
 
