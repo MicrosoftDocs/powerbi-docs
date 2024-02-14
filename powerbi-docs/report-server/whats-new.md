@@ -33,17 +33,17 @@ This new view mode is similar to how Show as a table displays underlying data fo
 
 To activate this view mode, navigate to the **View** dropdown menu and select **Show visuals as tables**. 
 
-:::image type="content" source="media/whats-new/visuals-as-tables.png" alt-text="Screenshot showing visuals as tables." lightbox="media/whats-new/visuals-as-tables.png":::
+:::image type="content" source="media/whats-new/visuals-as-tables.png" alt-text="Screenshot showing visuals as tables.":::
  
 Use the keyboard shortcut <kbd>Ctrl+Shift+F11</kbd> to toggle between the two views.  
 
-:::image type="content" source="media/whats-new/tables-as-visuals.png" alt-text="Screenshot showing tables as visuals." lightbox="media/whats-new/tables-as-visuals.png":::
+:::image type="content" source="media/whats-new/tables-as-visuals.png" alt-text="Screenshot showing tables as visuals.":::
 
 #### More styling options for column and bar charts 
 
 This month brings new formatting enhancements for column and bar charts in Power BI. These additions can improve your data visualization, enabling more impactful analysis and storytelling capabilities. Here's a list of the new features available now.
 
-:::image type="content" source="media/whats-new/new-visual-formatting.png" alt-text="Screenshot showing enhanced formatting for column and bar charts in Power BI." lightbox="media/whats-new/new-visual-formatting.png":::
+:::image type="content" source="media/whats-new/new-visual-formatting.png" alt-text="Screenshot showing enhanced formatting for column and bar charts in Power BI.":::
 
 ##### Key Enhancements
 
@@ -61,7 +61,7 @@ For comprehensive information, see this [blog post about new features for column
 
 Data labels have more options, too. Discover new enhanced capabilities for data labels that give you extended customization choices to seamlessly match your reporting needs. They bring integration of additional metrics, dramatically improving your data analysis experience. Here are this month’s highlights.
 
-:::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels." lightbox="media/whats-new/extended-custom-data-labels.png":::
+:::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
 
 ##### Key Enhancements
 
