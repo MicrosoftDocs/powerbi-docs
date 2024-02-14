@@ -457,7 +457,7 @@ This article provided an overview of Automated Machine Learning for Dataflows in
 
 * [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 * [Tutorial: Use Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-* [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
+
 
 The following articles provide more information about dataflows and Power BI:
 

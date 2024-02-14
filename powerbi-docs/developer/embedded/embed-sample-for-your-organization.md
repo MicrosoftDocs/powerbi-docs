@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 01/22/2023
+ms.date: 01/30/2024
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -65,7 +65,7 @@ Before you start this tutorial, verify that you have both the following Power BI
     >To [move to production](move-to-production.md) you'll need one of the following configurations:
     >* All users with Pro licenses.
     >* All users with PPU licenses.
-    >* A *P* or *EM* [capacity](embedded-capacity.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
+    >* A SKU that's equivalent or higher to a [F64 SKU](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 

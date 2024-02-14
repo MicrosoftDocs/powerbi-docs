@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/18/2023
+ms.date: 02/08/2024
 LocalizationGroup: Common tasks
 ---
 # Delete almost anything in the Power BI service
@@ -21,7 +21,7 @@ This article shows you how to delete a dashboard, report, workbook, semantic mod
 1. In your workspace, select the **All** tab.
 1. Select **More options (...)** next to the asset you want to delete, and choose **Delete**.
 
-    ![Screenshot of the Power BI service, highlighting the more options icon and Delete.](media/service-delete/power-bi-delete-dashboard.png)
+    :::image type="content" source="media/service-delete/power-bi-delete-dashboard.png" alt-text="Screenshot of the Power BI service, highlighting the more options icon and Delete." lightbox="media/service-delete/power-bi-delete-dashboard.png":::
 
 1. Select **Delete** to confirm the deletion.
 
@@ -32,7 +32,7 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
 1. In the nav pane, select **Apps** to open the apps list page.
 2. Hover over the app you want to delete, select **More options (...)**, and then choose **Delete**.
 
-   ![Screenshot of the apps list page, highlighting the more options icon and Delete.](media/service-delete/power-bi-delete-app.png)
+   :::image type="content" source="media/service-delete/power-bi-delete-app.png" alt-text="Screenshot of the apps list page, highlighting the more options icon and Delete." lightbox="media/service-delete/power-bi-delete-app.png":::
 
    If you remove an app accidentally, you have several options for getting it back:
 
@@ -45,11 +45,11 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
 
 Only workspace admins can remove people from a workspace. If you're an admin, you can remove yourself or anyone else. However, if you're the only admin for a workspace, Power BI won't let you remove yourself.
 
-1. In the workspace list view, select **Access** in the upper-right corner.
+1. In the workspace list view, select **Manage access** in the upper-right corner.
 
-    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of the workspace list view, highlighting Access.":::
+    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of the workspace list view, highlighting Access." lightbox="media/service-delete/power-bi-select-access.png":::
 
-1. In the **Access** pane, select **More options (...)** next to the name of the person you want to remove, and choose **Remove**.
+1. In the **Manage access** pane, select **More options (...)** next to the name of the person you want to remove, and choose **Remove**.
 
     :::image type="content" source="media/service-delete/power-bi-access-remove.png" alt-text="Screenshot of the Access pane, highlighting the more options icon and Remove.":::
 
@@ -61,7 +61,11 @@ If you're a workspace admin, you can delete a workspace with no effect on any Mi
 
 2. Select **More options** (...) to the top banner of the workspace and select **Workspace settings**.
 
-3. In the **Workspace settings** pane, select **Other** > **Remove this workspace**.
+    :::image type="content" source="media/service-delete/more-options-workspace-settings.png" alt-text="Screenshot of the workspace page, highlighting the more options icon and Workspace settings." lightbox="media/service-delete/more-options-workspace-settings.png":::
+   
+4. In the **Workspace settings** pane, select **Other** > **Remove this workspace**.
+
+    :::image type="content" source="media/service-delete/delete-workspace.png" alt-text="Screenshot of the Workspace settings pane, highlighting Remove this workspace." lightbox="media/service-delete/delete-workspace.png":::
 
 ## Considerations and limitations
 
