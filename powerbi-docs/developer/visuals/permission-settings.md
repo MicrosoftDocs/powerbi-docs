@@ -26,27 +26,27 @@ Visuals can require permission for any or the following privileges:
 
 Visuals created using the Power BI SDK require special permission. If permission is granted, users in the organization can add, view, share, and interact with visuals imported from AppSource or from a file. Your admin can choose to block these visuals.
 
-To learn more, see [Visuals from AppSource or a file](organizational-visuals.md#visuals-from-appsource-or-a-file).
+To learn more, see [Visuals from AppSource or a file](/fabric/admin/organizational-visuals#visuals-from-appsource-or-a-file).
 
 ## Add and use certified visuals only (block uncertified)
 
 Users in the organization with permissions to add and use visuals can add and use certified visuals only.
 
-To learn more, see [Certified Power BI visuals](organizational-visuals.md#certified-power-bi-visuals).
+To learn more, see [Certified Power BI visuals](/fabric/admin/organizational-visuals#certified-power-bi-visuals).
 
 ## Allow downloads from custom visuals
 
-Enabling this setting lets [custom visuals](/power-bi/developer/visuals/power-bi-custom-visuals) download any information available to the visual (such as summarized data and visual configuration) upon user consent. It's not affected by download restrictions applied in your organization's Export and sharing settings.
+A [custom visuals](./power-bi-custom-visuals.md) needs permission in order to to download information available to it, such as summarized data or visual configuration, upon user consent. The admin can choose to block this permission in which case the custom visual will not be able to download any information.
 
-To learn more, see [Export data to file](organizational-visuals.md#export-data-to-file).
+To learn more, see [Export data to file](/fabric/admin/organizational-visuals#export-data-to-file).
 
 ## Allow custom visuals to get user Microsoft Entra ID access tokens
 
 Enabling this setting lets [custom visuals](/power-bi/developer/visuals/power-bi-custom-visuals) obtain Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication.
 
-To learn more, see [Obtain Microsoft Entra access token](organizational-visuals.md#obtain-microsoft-entra-access-token).
+To learn more, see [Obtain Microsoft Entra access token](/fbric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
 
 ## Related content
 
-* [About tenant settings](tenant-settings-index.md)
-* [Manage Power BI visuals admin settings](organizational-visuals.md).
+* [About tenant settings](fabric/admin/tenant-settings-index)
+* [Manage Power BI visuals admin settings](/fabric/admin/organizational-visuals).
