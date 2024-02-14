@@ -20,7 +20,7 @@ If you're having problems signing up for Power BI with your email address, first
 
 ## Sign up for a Microsoft 365 trial of Office
 
-Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft walks you through the steps to create one. Since commercial email accounts, such as Hotmail and Gmail don't work with Microsoft 365, you'll create a new Microsoft account.  That email account looks something like *zalan\@onmicrosoft.com*.
+Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft walks you through the steps to create one. Since commercial email accounts, such as Hotmail and Gmail don't work with Microsoft 365, create a new Microsoft account. That email account looks something like *zalan\@onmicrosoft.com*.
 
 :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-trial-option.png" alt-text="Screenshot showing available Microsoft Office 365 options. Try for free is highlighted.":::
 
@@ -32,7 +32,7 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.mi
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-trial-about-you.png" alt-text="Screenshot showing the getting started page with an input box for email address. The email input box is highlighted.":::
 
     If you need a new email address, select **Set up account**.
-    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-new-account.png" alt-text="Screenshot showing the message that the email address won't work. Set up account is highlighted.":::
+    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-new-account.png" alt-text="Screenshot showing the message that the email address don't work. Set up account is highlighted.":::
 
 1. Enter details about the new account and then select **Next**.
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-tell-us-about-you.png" alt-text="Screenshot of the account detail page for entering personal and company information. Next is highlighted.":::
@@ -56,7 +56,7 @@ If you have any issues when you sign in with the new account credentials, try us
 
 When you use this sign-up method, you create a new organizational tenant, and you become the User administrator of the tenant. For more information, see [What is Power BI administration](../admin/service-admin-administering-power-bi-in-your-organization.md). You can add new users to your tenant, then share with them, as described in the [Microsoft 365 admin documentation](https://support.office.com/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-If you'd like to use email with this new business account, enable email for your new account in Outlook. Alternatively, you can access your onmicrosoft email by going to the [Microsoft account sign-in page](https://account.microsoft.com/) and entering your email address and password. If you have admin permissions, use the [Microsoft 365 portal](https://portal.office.com) and select **Admin** to update the email or add an alternate email address 
+If you'd like to use email with this new business account, enable email for your new account in Outlook. Alternatively, you can access your onmicrosoft email by going to the [Microsoft account sign-in page](https://account.microsoft.com/) and entering your email address and password. If you have admin permissions, use the [Microsoft 365 portal](https://portal.office.com) and select **Admin** to update the email or add an alternate email address. 
 
 ## Related content
 
