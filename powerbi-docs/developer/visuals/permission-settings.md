@@ -21,6 +21,7 @@ Visuals can require permission for any or the following privileges:
 * [Add and use certified visuals only (block uncertified)](#add-and-use-certified-visuals-only-block-uncertified)
 * [Allow downloads from custom visuals](#allow-downloads-from-custom-visuals)
 * [Allow custom visuals to get user Microsoft Entra ID access tokens](#allow-custom-visuals-to-get-user-microsoft-entra-id-access-tokens)
+* [Allow custom visuals to use local storage](#allow-custom-visuals-to-use-local-storage)
 
 ## Allow visuals created using the Power BI SDK
 
@@ -45,6 +46,10 @@ To learn more, see [Export data to file](/fabric/admin/organizational-visuals#ex
 A visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication. The admin can choose to block this permission in which case the visual will not be able to obtain the access token.
 
 To learn more, see [Obtain Microsoft Entra access token](/fbric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
+
+## Allow custom visuals to use local storage
+
+The visual might need to store data locally on the user's device. The admin can choose to block this permission in which case the visual will not be able to store data locally.
 
 ## Related content
 
