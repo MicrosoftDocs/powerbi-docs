@@ -33,7 +33,7 @@ landingContent:
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
           - text: See more >
-            url: /fabric/get-started/fabric-known-issues.md
+            url: https://learn.microsoft.com/fabric/get-started/fabric-known-issues.md
   # Card (optional)
   - title: Troubleshooting
     linkLists:
