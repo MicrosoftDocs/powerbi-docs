@@ -10,7 +10,7 @@ ms.topic: reference
 ms.date: 02/14/2024
 ---
 
-# Subselection API
+# Subselection API (preview)
 
 [On-object formatting](../../create-reports/power-bi-on-object-interaction.md) allows users to quickly and easily modify the format of visuals by directly selecting the elements they want to modify. When an element is selected, the format pane automatically navigates and expands the specific formatting setting for the selected element. As part of [on-object formatting](./on-object-formatting.md), the subselection service is used to send subselections and outlines to Power BI.
 
