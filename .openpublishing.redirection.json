@@ -11,8 +11,73 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
+            "redirect_url": "/fabric/get-started/fabric-known-issues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-461-scheduled-refresh-dataset-hangs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-222-search-strings-japanese-symbols-dont-work",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-571-contributor-can-not-update-organizational-app.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-571-contributor-can-not-update-organizational-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-471-embedded-setup-tool-isnt-responsive.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-471-embedded-setup-tool-isnt-responsive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-535-new-card-visual-formatting-appears-disappears",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md",
+            "redirect_url": "/fabric/get-started/known-issues/known-issue-546-closing-dataflow-gen1-takes-wrong-workspace",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-207-scorecard-in-app-wont-load-until-user-visits-workspace-first.md",
             "redirect_url": "/power-bi/troubleshoot/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-alternate-email-address-for-power-bi.md",
+            "redirect_url": "/entra/identity/authentication/howto-authentication-use-email-signin",
             "redirect_document_id": false
         },
         {
