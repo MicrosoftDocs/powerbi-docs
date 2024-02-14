@@ -1,5 +1,5 @@
 ---
-title: Sign up for Power BI with a new Microsoft 365 Trial.
+title: Sign up for Power BI with a new Microsoft 365 trial
 description: Learn how to sign up for a Microsoft 365 trial to access Power BI when you don't have a work or school email account.
 author: mihart
 ms.author: mihart
@@ -12,7 +12,7 @@ ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
-# Sign up for Power BI with a new Microsoft 365 Trial
+# Sign up for Power BI with a new Microsoft 365 trial
 
 This article describes an alternative way to sign up for the Power BI service if you don't already have a work or school email account.
 
@@ -32,7 +32,7 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.mi
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-trial-about-you.png" alt-text="Screenshot showing the getting started page with an input box for email address. The email input box is highlighted.":::
 
     If you need a new email address, select **Set up account**.
-    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-new-account.png" alt-text="Screenshot showing the message that the email address don't work. Set up account is highlighted.":::
+    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-new-account.png" alt-text="Screenshot showing the message that the email address doesn't work. Set up account is highlighted.":::
 
 1. Enter details about the new account and then select **Next**.
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-tell-us-about-you.png" alt-text="Screenshot of the account detail page for entering personal and company information. Next is highlighted.":::
@@ -44,7 +44,7 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.mi
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-setup-password.png" alt-text="Screenshot showing the newly created user name and domain name with input boxes for entering and confirming a password. Next is highlighted.":::
 
 1. Select the number of licenses you want and select **Update** to calculate your subtotal. Select **Add payment method**.
-   :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-trial-payment.png" alt-text="Screenshot of the quantity and payment page, you can select the number of licenses needed. Update is highlighted.":::
+   :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-trial-payment.png" alt-text="Screenshot of the quantity and payment page showing that you can select the number of licenses needed. Update is highlighted.":::
 
 1. Enter your payment information, and then select **Save**.
 
