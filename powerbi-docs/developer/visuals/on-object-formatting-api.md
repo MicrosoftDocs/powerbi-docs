@@ -22,9 +22,13 @@ To add these functionalities to your visual, each visual needs to provide a subs
 > * Visuals that support on-object formatting need to implement the [getFormattingModel API](./format-pane.md#formatting-model) which is available from API version 5.1.
 > * If you are using powerbi-visuals-utils-formattingmodel, use version 6.0.0 at least.
 
+## Create an on-object experience
+
+Use the subselection service when the user selects a subselectable element to send Power BI the subselection. Provide the subselection styles and shortcuts using the [subselction API](./subselection-api.md). The [subselection helper](./utils-on-object.md) can be used to simplify the process.
+
 ## Format mode
 
-In authoring mode this is a new mode where the user can turn on and off onObject formatting. The visual will be updated with the stat of the format mode in the update options, the update options will also include the currently sub-selected subSelection as CustomVisualSubSelection.
+Format mode is a new mode where the user can turn `onObject` formatting on and off when in authoring mode. The visual is updated with the status of the format mode in the update options. The update options also include the currently sub-selected subSelection as `CustomVisualSubSelection`.
 
 ## How to implement the on-object formatting API
 
@@ -51,7 +55,7 @@ VisualOnObjectFormatting contains three methods:
 
 #### getSubSelectionStyles
 
-Each visual is required to implement a `getSubSelectionStyles` method, which is called when a subselectable element is subselected. The `getSubSelectionStyles` method is provided with the current subselected elements as a `CustomVisualSubSelection` array and is expected to return either a `SubSelectionStyles object` or `undefined`.
+Each visual is required to implement a `getSubSelectionStyles` method, which is called when a subselectable element is subselected. The `getSubSelectionStyles` method is provided with the current subselected elements as a `CustomVisualSubSelection` array and is expected to return either a `SubSelectionStyles` object or `undefined`.
 
 There are three categories of subselection styles that cover most scenarios:
 
@@ -77,13 +81,13 @@ If the `HTMLSubSelectionHelper` is being utilized to create a subselection, the 
 
 **Sub-Selection Direct Text Editing:**
 With On-Object formatting, you can double click the text of a subs-electable element to directly edit it.
-To provide direct-edit capability, you need to provide a RectangleSubSelectionOutline with the appropriate cVDirectEdit Property populated with a SubSelectableDirectEdit object. The outline can either be provided as a custom outline or, if you're using the HTMLSubSelectionHelper you can use the SubSelectableDirectEdit attribute. (see the attributes provided by the HTMLSubSelectionHelper)
+To provide direct-edit capability, you need to provide a `RectangleSubSelectionOutline` with the appropriate cVDirectEdit Property populated with a SubSelectableDirectEdit object. The outline can either be provided as a custom outline or, if you're using the `HTMLSubSelectionHelper` you can use the `SubSelectableDirectEdit` attribute. (see the attributes provided by the HTMLSubSelectionHelper)
 
 Adding a direct edit for a specific datapoint (using selectors) isn't yet supported.
 
 ### FormattingId interface
 
-The following interface is used to reference the subSelction shortcuts and styles.
+The following interface is used to reference the `subSelction` shortcuts and styles.
 
 ```typescript
 interface FormattingId {
@@ -209,7 +213,7 @@ Build their formatting cards using the [formattingModel utils](./format-pane.md#
 
 #### Color selector card settings
 
-```javascript
+```typescript
 class ColorSelectorCardSettings extends Card {
     name: string = "colorSelector";
     displayName: string = "Data Colors";
@@ -219,7 +223,7 @@ class ColorSelectorCardSettings extends Card {
 
 Add a method to the formattingSetting so we can populate the slices dynamically for the colorSelector object (these are our datapoints).
 
-```javascript
+```typescript
 populateColorSelector(dataPoints: BarChartDataPoint[]) {
         let slices: formattingSettings.ColorPicker[] = this.colorSelector.slices;
         if (dataPoints) {
@@ -239,7 +243,7 @@ We pass the selector of the specific datapoint in the selector field. This selec
 
 #### Direct edit card settings
 
-```javascript
+```typescript
 class DirectEditSettings extends Card {
     displayName = 'Direct Edit';
     name = 'directEdit';
@@ -311,13 +315,13 @@ class DirectEditSettings extends Card {
 }
 ```
 
-### Subselection helper attributes
+### Use subselection helper attributes
 
-Add the HTMLSubSelectionHelper attributes to our objects. To see which attributes the HTMLSubSelectionHelper provide, check the on [object utils documentation]().
+Add the `HTMLSubSelectionHelper` attributes to our objects. To see which attributes the HTMLSubSelectionHelper provide, check the on [object utils documentation](./utils-on-object.md).
 
 * For the directEdit attribute:
 
-  ```javascript
+  ```typescript
   const DirectEdit: powerbi.visuals.SubSelectableDirectEdit = {
       reference: {
           objectName: 'directEdit',
@@ -339,9 +343,11 @@ Add the HTMLSubSelectionHelper attributes to our objects. To see which attribute
 
   The `HTMLSubSelectionHelper` uses the `SubSelectableDirectEditAttr` attribute to provide the directEdit reference of the directEdit outline, so a direct edit starts when a user double clicks on the element.
 
+:::image type="content" source="./media/on-object-formatting-api/sub-selection-helper.png" alt-text="Screenshot showing how the subselection helper works.":::
+
 * For the colorSelector:
 
-  ```javascript
+  ```typescript
   barSelectionMerged
             .attr(SubSelectableObjectNameAttribute, 'colorSelector')
             .attr(SubSelectableDisplayNameAttribute, (dataPoint: BarChartDataPoint) => this.formattingSettings.colorSelector.slices[dataPoint.index].displayName)
@@ -352,9 +358,13 @@ Add the HTMLSubSelectionHelper attributes to our objects. To see which attribute
 
 ### Define references
 
-Define the following interface to make it simpler for the examples:
+Define the following interface to simplify the examples:
 
-```javascript
+> [!NOTE]
+> The `cardUid` you provide should be the same as the one provided for the getFormattingModel API. For example, if you're using powerbi-visuals-utils-formattingmodel, provide the `cardUid` as *Visual-cardName-card*, where the cardName is the name you assigned to this card in the formatting model settings. Otherwise, provide it as *Visual-cardUid*, you assigned to this card.
+
+
+```typescript
 interface References {
     cardUid?: string;
     groupUid?: string;
@@ -372,18 +382,18 @@ interface References {
 }
 ```
 
-Create an enum for the objects names:
+For the purpose of this example, create an enum for the objects names:
 
-```javascript
+```typescript
 const enum BarChartObjectNames {
     ColorSelector = 'colorSelector',
     DirectEdit = 'directEdit'
 }
 ```
 
-* References for the directEdit object:
+* References for the `directEdit` object:
 
-```javascript
+```typescript
 const directEditReferences: References = {
     cardUid: 'Visual-directEdit-card',
     groupUid: 'directEdit-group',
@@ -426,9 +436,9 @@ const directEditReferences: References = {
 };
 ```
 
-* For colorSelctor:
+* For `colorSelctor`:
 
-```javascript
+```typescript
 const colorSelectorReferences: References = {
     cardUid: 'Visual-colorSelector-card',
     groupUid: 'colorSelector-group',
@@ -445,7 +455,7 @@ Now let's implement the get APIs for the onObject formatting and provide them in
 
 1. In the constructor code, provide the get methods in the visualOnObjectFormatting:
 
-    ```javascript
+    ```typescript
     public visualOnObjectFormatting: powerbi.extensibility.visual.VisualOnObjectFormatting;
     constructor(options: VisualConstructorOptions) {
             this.subSelectionHelper = HtmlSubSelectionHelper.createHtmlSubselectionHelper({
@@ -488,7 +498,7 @@ Now let's implement the get APIs for the onObject formatting and provide them in
 
 1. Implement the getSubSelction shortcuts and style for the colorSelector:
 
-    ```javascript
+    ```typescript
     private getColorSelectorShortcuts(subSelections:  CustomVisualSubSelection[]): VisualSubSelectionShortcuts   {
             const selector = subSelections[0].customVisualObjects[0].selectionId?.getSelector();
             return [
@@ -513,7 +523,7 @@ Now let's implement the get APIs for the onObject formatting and provide them in
     * VisualShortcutType.Navigate: when a user clicks on one of the bars (data point), and the formatting pane is open, the format pane scrolls to the color selector card and open it
     * VisualShortcutType.Reset: this adds a reset shortcut to the context menu, it is enabled if the fill color was changed.
 
-    ```javascript
+    ```typescript
     private getColorSelectorStyles(subSelections: CustomVisualSubSelection[]): SubSelectionStyles {
             const selector = subSelections[0].customVisualObjects[0].selectionId?.getSelector();
             return {
@@ -541,7 +551,7 @@ When changing the color:
 
 To implement the subSelection shortcuts and styles for the directEdit:
 
-```javascript
+```typescript
 private getDirectEditShortcuts(): VisualSubSelectionShortcuts {
         return [
             {
@@ -585,7 +595,7 @@ This shortcut adds a relevant menu item in the context menu and adds the followi
 * VisualShortcutType.Picker: Adds an option in the context menu to pick between Right and Left, since we added the position slice in the formatting card for the *directEdit*.
 * VisualShortcutType.Navigate: When the format pane is open and the user clicks on the *directEdit* element, the format pane scrolls and opens the *directEdit* card.
 
-```javascript
+```typescript
 private getDirectEditStyles(): SubSelectionStyles {
         return {
             type: powerbi.visuals.SubSelectionStylesType.Text,
@@ -651,3 +661,8 @@ The visual should handle the localization and provide localized strings.
 * All on object formatting interfaces can be found in (link to be provided once the API is released) in on-object-formatting-api.d.ts
 * We recommend using the [on object utils], which includes the [HTMLSubSelectionHelper](link to be provided once the API is released)
 * You can find an example of a custom visual [SampleBarChart](./create-bar-chart.md) that uses API version 5.8.0 and implements the support for the on object formatting using the on object utils at (link to be provided once the API is released)
+
+## Related content
+
+* [Subselection API](./subselection-api.md)
+* [On-object utils](./utils-on-object.md)

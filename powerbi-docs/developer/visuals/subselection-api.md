@@ -7,7 +7,7 @@ ms.reviewer: sranins, shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 01/23/2024
+ms.date: 02/14/2024
 ---
 
 # Subselection API
@@ -23,9 +23,9 @@ The SubSelection Service provides two methods:
 
 ### subSelect
 
-Returns the subselection for Power BI to use when a user selects an element that allows subselections.
+Sends the subselection for Power BI to use when a user selects an element that allows subselections.
 
-```javascript
+```typescript
 subSelect(args: visuals.CustomVisualSubSelection | undefined): void
 
 CustomVisualSubSelection
@@ -63,7 +63,7 @@ If you don't use the [`HTMLSubSelectionHelper`](./utils-on-object.md), you need 
 
 In this example, we add an event listener to the host element, for the click, context menu events.
 
-```javascript
+```typescript
 constructor(options: VisualConstructorOptions) {
         this.hostElement = options.element;
         this.subSelectionService = options.host.subSelectionService;
@@ -116,7 +116,7 @@ private subSelectFromEvent(event: MouseEvent, showUI: boolean): void {
 
 This method sends outlines to Power BI to render. Use it in the `update` method of the visual since that's where Power BI sends the subselection that the visual sent previously. You can also use it when you want to render an outline for a hovered element.
 
-```javascript
+```tyepscript
 updateRegionOutlines(outlines: visuals.SubSelectionRegionOutline[]): void
 
 SubSelectionRegionOutline
@@ -135,7 +135,7 @@ In this example we assume that we have an object called `myObject`, and we want 
 In the update, we also need to add an event listener for the `pointerover` event.  
 We want to manage our outlines using a Record.
 
-```javascript
+```typescript
 private subSelectionRegionOutlines: Record<string, SubSelectionRegionOutline > = {};
 
 
@@ -193,3 +193,8 @@ public update(options: VisualUpdateOptions) {
          this.subSelectionService.updateRegionOutlines(regionOutlines);
      }
 ```
+
+## Related content
+
+* [On object utils](./utils-on-object.md)
+* [On-object formatting API](./on-object-formatting-api.md)

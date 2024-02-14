@@ -7,10 +7,10 @@ ms.reviewer: sranins, shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 01/23/2024
+ms.date: 02/14/2024
 ---
 
-# On-object utils
+# On-object utils - subselection helper
 
 The `HTMLSubSelectionHelper` provides an easy way for your Power BI custom visual to emit subselections to Power BI, get and render outlines.
 
@@ -78,7 +78,7 @@ The public methods of the helper include:
 
 ### HtmlSubselectionHelperArgs
 
-```javascript
+```typescript
 interface HtmlSubselectionHelperArgs {
     /** Element which contains the items that can be sub-selected */
     hostElement: HTMLElement; // The host element, the helper will attach the listeners to this element
@@ -92,7 +92,7 @@ interface HtmlSubselectionHelperArgs {
 
 ### SubSelectionStylesType
 
-```javascript
+```typescript
 const enum SubSelectionStylesType {
             None = 0,
             Text = 1,
@@ -103,7 +103,7 @@ const enum SubSelectionStylesType {
 
 ### SubSelectableDirectEdit
 
-```javascript
+```typescript
 interface SubSelectableDirectEdit {
             reference: SliceFormattingModelReference;
             style: SubSelectableDirectEditStyle;
@@ -113,7 +113,7 @@ interface SubSelectableDirectEdit {
 
 ### SubSelectionOutlineRestrictionType
 
-```javascript
+```typescript
 const enum SubSelectionOutlineRestrictionType {
             /**
              * A clamping element will adjust the outline to prevent it from extending beyond
@@ -130,7 +130,7 @@ const enum SubSelectionOutlineRestrictionType {
 
 To add restriction options to a specific element use the HTMLSubSelectionHelper setDataForElement with this data type, the helper uses the data to update the outlines:
 
-```javascript
+```typescript
 interface SubSelectionElementData {
     outlineRestrictionOptions?: SubSelectionOutlineRestrictionOptions;
 }
@@ -151,7 +151,7 @@ In this example, we implement `customOutlineCallback` and `selectionIdCallback`:
 The following code is in Visual Code.
 We have an object in the visual called arcElement. We want to render the outline when the element is hovered or subselected.
 
-```javascript
+```typescript
 import ISelectionId = powerbi.visuals.ISelectionId;
 
 const enum BarChartObjectNames {
@@ -205,7 +205,7 @@ constructor(options: VisualConstructorOptions) {
 
 In update method of the visual add the following code to update the outlines of the subSeselection, update the state of the format mode for the HTMLSubSelectionHelper and disable interactions that aren't for format mode if format mode is on:
 
-```javascript
+```typescript
 public update(options: VisualUpdateOptions) {
  …
  
@@ -228,3 +228,8 @@ public update(options: VisualUpdateOptions) {
  …
 }
 ```
+
+## Related content
+
+* [Subselection API](./subselection-api.md)
+* [On-object formatting API](./on-object-formatting-api.md)
