@@ -22,8 +22,8 @@ To define subselectable elements, we also need to add a class to each desired el
 
 |     CSS Class               |     Purpose                                                                                 |     Required    |
 |-----------------------------|---------------------------------------------------------------------------------------------|-----------------|
-|     subselectable          |     Provides a selector   for the HTMLSubSelectionHelper to find possible subselections    |     yes         |
- 
+|     subselectable          |     Provides a selector   for the `HTMLSubSelectionHelper` to find possible subselections    |     yes         |
+  
 To define subselections for the visual, there are a few attributes that need to be added to the desired elements.
 
 |     Attribute Name                              |     Attribute                                 |     Purpose                                                                                                            |     Required                                                 |     Type                                                        |     Example                                                                                                                                     |
@@ -42,19 +42,19 @@ When the visual enters format mode, You need to disable interactivity for the vi
 
 ### HTMLSubSelectionHelper public methods
 
-The `HTMLSubSelectionHelper` has some public methods that you can use, but there are two main methods and the helper will do the rest.
+The `HTMLSubSelectionHelper` has some public methods that you can use, but there are two main methods and the helper does the rest.
 
 The two methods are `setFormatMode` and `updateOutlinesFromSubSelections`.
 
 The public methods of the helper include:
 
-* createHtmlSubselectionHelper(args: HtmlSubselectionHelperArgs): HtmlSubSelectionHelper - This is a static method, it takes args of type HtmlSubselectionHelperArgs and returns an instance of HTMLSubSelectionHelper.
+* createHtmlSubselectionHelper(args: HtmlSubselectionHelperArgs): HtmlSubSelectionHelper - This is a static method that takes args of type `HtmlSubselectionHelperArgs` and returns an instance of `HTMLSubSelectionHelper`.
 
 * setFormatMode(isFormatMode: boolean): void - This method sets the format mode for the HTMLSubSelectionHelper, If isFormatMode is true, the helper attaches relevant event listeners to the host element to enable format mode functionality (subselecting, rendering outlines).
 
-* getSubSelectionSourceFromEvent(event: PointerEvent): HtmlSubSelectionSource | undefined - returns a HtmlSubSelectionSource object that is built according to the event parameter.
+* getSubSelectionSourceFromEvent(event: PointerEvent): HtmlSubSelectionSource | undefined - returns an `HtmlSubSelectionSource` object that is built according to the event parameter.
 
-* onVisualScroll(): void - Indicates to the HTMLSubSelectionHelper that scrolling is currently occurring. Scrolling should remove outlines until scrolling is finished
+* onVisualScroll(): void - Indicates to the HTMLSubSelectionHelper that scrolling is currently occurring. Scrolling should remove outlines until scrolling is finished.
 
 * updateElementOutlines(elements: HTMLElement[], visibility: SubSelectionOutlineVisibility, suppressRender: boolean = false): SubSelectionRegionOutlineId[] - update the outlines (and emits them to Power BI to be rendered) of the elements.
 
@@ -74,7 +74,7 @@ The public methods of the helper include:
 
 * setDataForElement(el: HTMLElement | SVGElement, data: SubSelectionElementData): void - a static method that sets data for the elements.
 
-* getDataForElement(el: HTMLElement | SVGElement): SubSelectionElementData - this is a static method that gets the associated previously assigned using setDataForElement.
+* getDataForElement(el: HTMLElement | SVGElement): SubSelectionElementData - a static method that gets the associated previously assigned using setDataForElement.
 
 ### HtmlSubselectionHelperArgs
 
@@ -128,7 +128,7 @@ const enum SubSelectionOutlineRestrictionType {
         }
 ```
 
-To add restriction options to a specific element use the HTMLSubSelectionHelper setDataForElement with this data type, the helper uses the data to update the outlines:
+To add restriction options to a specific element use the `HTMLSubSelectionHelper` `setDataForElement` with this data type, the helper uses the data to update the outlines:
 
 ```typescript
 interface SubSelectionElementData {
@@ -149,7 +149,7 @@ export interface SubSelectionOutlineRestrictionOptions {
 
 In this example, we implement `customOutlineCallback` and `selectionIdCallback`:
 The following code is in Visual Code.
-We have an object in the visual called arcElement. We want to render the outline when the element is hovered or subselected.
+We have an object in the visual called `arcElement`. We want to render the outline when the element is hovered or subselected.
 
 ```typescript
 import ISelectionId = powerbi.visuals.ISelectionId;
@@ -203,7 +203,7 @@ constructor(options: VisualConstructorOptions) {
 }
 ```
 
-In update method of the visual add the following code to update the outlines of the subSeselection, update the state of the format mode for the HTMLSubSelectionHelper and disable interactions that aren't for format mode if format mode is on:
+In update method of the visual add the following code to update the outlines of the subSeselection, update the state of the format mode for the `HTMLSubSelectionHelper` and disable interactions that aren't for format mode if format mode is on:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
