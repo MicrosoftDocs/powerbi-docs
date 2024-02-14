@@ -7,10 +7,10 @@ ms.reviewer: sranins, shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 01/28/2024
+ms.date: 02/14/2024
 ---
 
-# On-object formatting API
+# On-object formatting API (preview)
 
 [On-object formatting](../../create-reports/power-bi-on-object-interaction.md) allows users to quickly and easily modify the format of visuals by directly selecting the elements they want to modify. When an element is selected, the format pane automatically navigates and expands the specific formatting setting for the selected element.
 For more information about on-object formatting, see [On-object formatting in Power BI Desktop](../../create-reports/power-bi-on-object-interaction.md).
@@ -18,7 +18,13 @@ For more information about on-object formatting, see [On-object formatting in Po
 To add these functionalities to your visual, each visual needs to provide a subselection style option and shortcut for each subselectable region.
 
 > [!NOTE]
-> Visuals that support on-object formatting need to implement the [getFormattingModel API](./format-pane.md#formatting-model) which is available from API version 5.1.
+>
+> * Visuals that support on-object formatting need to implement the [getFormattingModel API](./format-pane.md#formatting-model) which is available from API version 5.1.
+> * If you are using powerbi-visuals-utils-formattingmodel, use version 6.0.0 at least.
+
+## Format mode
+
+In authoring mode this is a new mode where the user can turn on and off onObject formatting. The visual will be updated with the stat of the format mode in the update options, the update options will also include the currently sub-selected subSelection as CustomVisualSubSelection.
 
 ## How to implement the on-object formatting API
 
@@ -27,7 +33,6 @@ To add these functionalities to your visual, each visual needs to provide a subs
 In the *capabilites.json* file, add the following properties to declare that the visual supports on-object formatting:
 
 ```json
-The visuals need to declare that it is supporting OnObject formatting by adding the relevant capabilities to the capabiliites.json file:
 {
   "supportsOnObjectFormatting": true,
   "enablePointerEventsFormatMode": true,
@@ -58,7 +63,7 @@ Each `SubSelectionStyles` object provides a different experience for the user fo
 
 #### getSubSelectionShortcuts
 
-The `getSubSelectionShortcuts` method provides options for the user. It returns either `VisualSubSelectionShortcuts` or `undefined`. Additionally, if `SubSelectionShortcuts` are provided, a `VisualNavigateSubSelectionShortcut` must also be provided so that when a user subselects an element and the format pane is open, the pane automatically scrolls to the appropriate card.
+To provide more options for the user, the visual must implement the `getSubSelectionShortcuts` method. This  method returns either `VisualSubSelectionShortcuts` or `undefined`. Additionally, if `SubSelectionShortcuts` are provided, a `VisualNavigateSubSelectionShortcut` must also be provided so that when a user subselects an element and the format pane is open, the pane automatically scrolls to the appropriate card.
 
 There are several subselection shortcuts to modify the visual state. Each one defines a menu item in the context menu with the appropriate label.
 
@@ -80,7 +85,7 @@ Adding a direct edit for a specific datapoint (using selectors) isn't yet suppor
 
 The following interface is used to reference the subSelction shortcuts and styles.
 
-```javascript
+```typescript
 interface FormattingId {
             objectName: string;
             propertyName: string;
@@ -95,11 +100,13 @@ interface FormattingId {
 ## Examples
 
 In this example, we  build a custom visual that has two objects, `colorSelector` and `directEdit`. We use the `HTMLSubSelectionHelper` from the `onobjectFormatting` utils, to handle most of the subSelection job.
-For more information, see [on-object utils].
+For more information, see [on-object utils](./utils-on-object.md).
+
+First, we build cards for the formatting pane and provide *subSelectionShortcuts* and *styles* for each subselectable.
 
 ### Define the objects
 
-First, we build cards for the formatting pane and provide *subSelectionShortcuts* and *styles* for each subselectable. Define the objects and declare that the visual is supporting OnObject Formatting in the capabilities.json:
+Define the objects and declare that the visual is supporting OnObject Formatting in the capabilities.json:
 
 ```json
 "objects": {
@@ -200,6 +207,8 @@ First, we build cards for the formatting pane and provide *subSelectionShortcuts
 
 Build their formatting cards using the [formattingModel utils](./format-pane.md#formatting-model).
 
+#### Color selector card settings
+
 ```javascript
 class ColorSelectorCardSettings extends Card {
     name: string = "colorSelector";
@@ -208,9 +217,27 @@ class ColorSelectorCardSettings extends Card {
 }
 ```
 
-### Formatting settings
-
 Add a method to the formattingSetting so we can populate the slices dynamically for the colorSelector object (these are our datapoints).
+
+```javascript
+populateColorSelector(dataPoints: BarChartDataPoint[]) {
+        let slices: formattingSettings.ColorPicker[] = this.colorSelector.slices;
+        if (dataPoints) {
+            dataPoints.forEach(dataPoint => {
+                slices.push(new formattingSettings.ColorPicker({
+                    name: "fill",
+                    displayName: dataPoint.category,
+                    value: { value: dataPoint.color },
+                    selector: dataPoint.selectionId.getSelector(),
+                }));
+            });
+        }
+    }
+```
+
+We pass the selector of the specific datapoint in the selector field. This selector is the one used when implementing the get APIs of the OnObject.
+
+#### Direct edit card settings
 
 ```javascript
 class DirectEditSettings extends Card {
@@ -283,28 +310,6 @@ class DirectEditSettings extends Card {
     slices = [this.show, this.textProperty, this.font, this.fontColor, this.background, this.position];
 }
 ```
-
-### Formatting settings model
-
-Add the following method to the FormattingSettingModel for our visual:
-
-```javascript
-populateColorSelector(dataPoints: BarChartDataPoint[]) {
-        let slices: formattingSettings.ColorPicker[] = this.colorSelector.slices;
-        if (dataPoints) {
-            dataPoints.forEach(dataPoint => {
-                slices.push(new formattingSettings.ColorPicker({
-                    name: "fill",
-                    displayName: dataPoint.category,
-                    value: { value: dataPoint.color },
-                    selector: dataPoint.selectionId.getSelector(),
-                }));
-            });
-        }
-    }
-```
-
-We pass the selector of the specific datapoint in the selector field. This selector is the one used when implementing the get APIs of the OnObject.
 
 ### Subselection helper attributes
 
