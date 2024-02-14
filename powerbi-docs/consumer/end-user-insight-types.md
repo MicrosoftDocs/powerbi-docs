@@ -32,7 +32,7 @@ Power BI uses statistical algorithms to uncover Insights. The algorithms are lis
   
 * *Dimension* - Dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a semantic model, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
-* *Correlation* - A correlation tells us how the behavior of things relate.  If their patterns of increase and decrease are similar, they're positively correlated. If their patterns are opposite, they're negatively correlated. For example, if sales of red skateboards increase each time we run a tv marketing campaign, sales of the red skateboards and the tv marketing campaign are positively correlated.
+* *Correlation* - A correlation tells us how the behavior of things relates. If their patterns of increase and decrease are similar, they're positively correlated. If their patterns are opposite, they're negatively correlated. For example, sales of red skateboards increase each time we run a tv marketing campaign.  Sales of the red skateboards and the tv marketing campaign are positively correlated.
 
 * *Time series* - A time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.
   
@@ -44,7 +44,7 @@ For reports, Power BI proactively performs analyses for anomalies, trends, and K
 
 ### Category outliers (top/bottom)
 
-Highlights cases where one or two categories have much larger values than other categories.  
+Highlights cases where one or two categories have larger values than other categories.  
 
 ![Screenshot of a category outlier Insight report window.](./media/end-user-insight-types/pbi-auto-insight-type-category-outliers.png)
 
@@ -62,7 +62,7 @@ Detects cases where multiple measures show a similar pattern or trend when plott
 
 ### Low Variance
 
-Detects cases where data points for a dimension aren't far from the mean, so the *variance* is low. Let's say you have the measure "sales" and a dimension "region". And looking across the region you see that there's little difference between the data points and the mean (of the data points). The insight triggers when the variance of sales across all regions is below a threshold. In other words, when sales are similar across all regions.
+Detects cases where data points for a dimension aren't far from the mean, so the *variance* is low. Let's say you have the measure "sales" and a dimension "region." And looking across the region you see that there's little difference between the data points and the mean (of the data points). The insight triggers when the variance of sales across all regions is below a threshold. In other words, when sales are similar across all regions.
 
 ![Screenshot of a low variance Insight visual.](./media/end-user-insight-types/power-bi-insights-low-variance.png)
 
@@ -74,7 +74,7 @@ Finds cases where most of a total value can be attributed to a single factor whe
 
 ### Outliers
 
-This insight type uses a clustering model to find outliers in non-time series data. Outliers detect when there are specific categories with values significantly different than the other categories.
+This insight type uses a clustering model to find outliers not related to time in series data. Outliers detect when there are specific categories with values significantly different than the other categories.
 
 ![Screenshot of an outlier Insight Visual.](./media/end-user-insight-types/power-bi-outliers.png)
 
@@ -92,7 +92,7 @@ Finds periodic patterns in time series data, such as weekly, monthly, or yearly 
 
 ### Steady share
 
-Highlights cases where there's a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable. The steady share insight applies to the context of a measure, a dimension, and another date/time dimension. This insight triggers when a particular dimension value, for example "the east region", has a steady percentage of overall sales across that date/time dimension.
+Highlights cases where there's a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable. The steady share insight applies to the context of a measure, a dimension, and another date/time dimension. This insight triggers when a particular dimension value, for example "the east region," has a steady percentage of overall sales across that date/time dimension.
 
 The steady share insight is similar to the low variance insight, because they both relate to the lack of variance of a value across time. However, the steady share insight measures the lack of variance of the **percentage of overall** across time, while the low variance insight measures the lack of variance of the absolute measure values across a dimension.
 
@@ -106,6 +106,6 @@ For data across a time series, detects when there are specific dates or times wi
 
 ## Related content
 
-* [View data insights on dashboard tiles with Power BI](end-user-insights.md)
+* [View data insights on dashboard tiles with Power BI.](end-user-insights.md)
 
-More questions? Ask the [Power BI Community](https://community.powerbi.com/)
+More questions? Ask the [Power BI Community.](https://community.powerbi.com/)
