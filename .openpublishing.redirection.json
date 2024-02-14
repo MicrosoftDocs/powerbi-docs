@@ -13,7 +13,7 @@
         {
             "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
             "redirect_url": "/fabric/get-started/fabric-known-issues",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md",
