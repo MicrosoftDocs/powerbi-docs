@@ -7,16 +7,16 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 02/14/2024
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-You can ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented as visuals called *Insights*. Insights are available for visuals on dashboards, visuals in reports, and entire report pages.
+Ask Power BI to look through your data and find interesting trends and patterns. These trends and patterns are presented as visuals called *Insights*. Insights are available for visuals on dashboards, visuals in reports, and entire report pages.
 
-To learn how to use Insights, see [View data insights on dashboard tiles with Power BI](end-user-insights.md).
+To learn how to use dashboard Insights, see [View data insights on dashboard tiles with Power BI](end-user-insights.md).
 
 [ ![Screenshot of a set of Insights with the Insights panel highlighted.](media/end-user-insight-types/power-bi-insight-line.png) ](media/end-user-insight-types/power-bi-insight-line.png)
 
@@ -40,7 +40,7 @@ Power BI uses statistical algorithms to uncover Insights. The algorithms are lis
 
 ## What types of insights can you find?
 
-For reports, Power BI proactively performs analyses for anomalies, trends, and KPIs. Withing dashboard tiles Power BI can find 10 types of Insights.
+For reports, Power BI proactively performs analyses for anomalies, trends, and KPIs. For dashboard tiles, Power BI can find 10 types of Insights.
 
 ### Category outliers (top/bottom)
 
@@ -58,7 +58,7 @@ Highlights when there are significant changes in trends in a time series of data
 
 Detects cases where multiple measures show a similar pattern or trend when plotted against a category or value in the semantic model.
 
-![Screenshot of a correlation Insight visual.](./media/end-user-insight-types/pbi-auto-insight-type-correlation.png)
+:::image type="content" source="./media/end-user-insight-types/power-bi-auto-insight-type-correlation.png" alt-text="Screenshot of a correlation Insight visual.":::
 
 ### Low Variance
 
