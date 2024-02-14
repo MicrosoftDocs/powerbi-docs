@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/19/2022
+ms.date: 12/19/2023
 ---
 
 # Tutorial: Add formatting options to the Circle Card visual
