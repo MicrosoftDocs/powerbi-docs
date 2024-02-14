@@ -162,9 +162,9 @@ To add the data source, make sure focus is on the appropriate data source option
 
 When focus is on the Data Source Properties Navigation Side Bar List, you can switch between the options displayed with the <kbd>Up</kbd> and <kbd>Down</kbd> arrow keys, a screen reader reads out the names as you move across the list.
 
-### B. When you choose Power BI Dataset Connection
+### B. When you choose Power BI Semantic Model Connection
 
-:::image type="content" source="media/paginated-use-accessibility-tools/report-builder-data-source-properties.png" alt-text="Screenshot showing Power BI dataset connection.":::
+:::image type="content" source="media/paginated-use-accessibility-tools/report-builder-data-source-properties.png" alt-text="Screenshot showing Power BI semantic model connection.":::
 
 1. Dialog box header
 1. Dialog box description
@@ -282,6 +282,6 @@ It will show the preview of the table. Use <kbd>Alt</kbd> + <kbd>F</kbd> keys or
 > [!NOTE]
 > All dialogs in Power BI Report Builder are keyboard navigable except for the **Expression** dialog. Items can't be added to the **Expression** dialog with any of the keyboard keys.
 
-## Next steps
+## Related content
 
 - [Accessibility in Power BI paginated reports (Power BI Report Builder)](paginated-accessibility-overview.md)

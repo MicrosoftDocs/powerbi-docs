@@ -7,14 +7,13 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 09/29/2022
-ms.custom: contperf-fy20q4
+ms.date: 12/31/2023
 LocalizationGroup: Share your work
 ---
 
 # Ways to collaborate and share in Power BI
 
-You've created reports, dashboards, scorecards, and datasets. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
+You've created reports, dashboards, scorecards, and semantic models. Maybe you want to collaborate on them with your coworkers. Or maybe you're ready to distribute them more widely. What's the best way to collaborate and share them? In this article, we compare your options.
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -29,7 +28,6 @@ You've created reports, dashboards, scorecards, and datasets. Maybe you want to 
 
 - [Share reports, dashboards, and scorecards](#share-reports-or-dashboards) from your My Workspace or another workspace.
 - Annotate and [share from the Power BI *mobile apps*](#annotate-and-share-from-the-power-bi-mobile-apps).
-- Use [presentation mode to display reports and dashboards](#display-reports-and-dashboards-full-screen-on-windows-devices) in full-screen on Windows devices and Surface Hub.
 - Present live [Power BI report pages in PowerPoint](#present-live-report-pages-in-powerpoint).
 - [Print reports](#print-or-save-as-pdf-or-other-static-file).
 - [Create a *template app*](#create-and-deploy-template-apps) that you can distribute to external Power BI users, via Microsoft AppSource.
@@ -38,14 +36,14 @@ You've created reports, dashboards, scorecards, and datasets. Maybe you want to 
  
 **Share data**
 
-- [Create *shared datasets*](#share-a-dataset) that coworkers can use as the basis for their own reports, in their own workspaces.
+- [Create *shared semantic models*](#share-a-semantic-model) that coworkers can use as the basis for their own reports, in their own workspaces.
 - [Create *dataflows*](#create-dataflows) as a way to share a common data source.
 
 No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
 ## Collaborate in a workspace
 
-When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
+When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, semantic models, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
 Workspaces provide roles that determine what permissions your coworkers have. Use those roles to determine who can manage the workspace, edit or distribute content, or just view content. Read more about [roles in workspaces](service-roles-new-workspaces.md).
 
@@ -79,7 +77,7 @@ Let's say your report in Power BI Desktop is ready, and you want other people to
 ![Screenshot of sharing a report.](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-new-look.png)
 
 
-You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying dataset, unless [row-level security (RLS)](../enterprise/service-admin-rls.md) is applied.
+You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying semantic model, unless [row-level security (RLS)](../enterprise/service-admin-rls.md) is applied.
 
 You can share reports via links that give access:
 
@@ -112,7 +110,7 @@ You can also [share a snapshot of a tile](../consumer/mobile/mobile-windows-10-p
 
 ## Distribute insights in an app
 
-Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and datasets in the workspace. Now you select the dashboards and reports and publish them as an *app*, either to a group or to your whole organization.
+Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and semantic models in the workspace. Now you select the dashboards and reports and publish them as an *app*, either to a group or to your whole organization.
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
@@ -141,14 +139,6 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
 
-## Display reports and dashboards full-screen on Windows devices
-
-You can use *presentation mode* to display reports and dashboards full-screen on Windows devices and Surface Hub. Presentation mode is a feature of the [Power BI app for Windows](https://go.microsoft.com/fwlink/?LinkID=526478). It's useful for sharing on display monitors in hallways, at meetings or conferences, on a dedicated projector at the office, and so on.
-
-![Screenshot of a report in presentation mode.](../consumer/mobile/media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
-
-Read more about [presentation mode](../consumer/mobile/mobile-windows-10-app-presentation-mode.md).
-
 ## Present live report pages in PowerPoint
 
 You can enhance your data storytelling with live, interactive Power BI data by adding Power BI report pages to PowerPoint. You can interact with them just as you would in Power BI. The live report page is interactive in both PowerPoint edit and slide-show modes. You can apply filters and slicers, select data points, and drill down on data.
@@ -175,13 +165,13 @@ Paginated reports, on the other hand, are designed to be printed. Read a [compar
 
 *Template apps* are designed to be distributed publicly, often in Microsoft AppSource. You build an app, and with little or no coding, you can deploy it to any Power BI customer. Your customers connect to their own data and instantiate their own accounts. Read more about [Power BI template apps](../connect-data/service-template-apps-overview.md).
 
-## Share a dataset
+## Share a semantic model
 
-Let's face it, some people are more skilled at creating high-quality, well-designed data models in their reports. Maybe you're that person. Your whole organization can benefit from using the same well-designed data models. *Shared datasets* fill that role. When you create a report with a data model that everyone should use, you can save that report to the Power BI service and give the right people permission to use it. Then they can build their reports on your dataset. That way, everyone is basing their reports on the same data, and seeing the same "version of the truth."
+Let's face it, some people are more skilled at creating high-quality, well-designed data models in their reports. Maybe you're that person. Your whole organization can benefit from using the same well-designed data models. *Shared semantic models* fill that role. When you create a report with a data model that everyone should use, you can save that report to the Power BI service and give the right people permission to use it. Then they can build their reports on your semantic model. That way, everyone is basing their reports on the same data, and seeing the same "version of the truth."
 
-![Find a shared dataset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
+![Find a shared semantic model](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
 
-Read more about [creating and using shared datasets](../connect-data/service-datasets-across-workspaces.md).
+Read more about [creating and using shared semantic models](../connect-data/service-datasets-across-workspaces.md).
 
 ## Create dataflows
 
@@ -191,8 +181,7 @@ Read more about [creating and using shared datasets](../connect-data/service-dat
 
 - You can't share reports from Power BI Report Server. Instead, you can create [subscriptions for yourself or others](/sql/reporting-services/working-with-subscriptions-web-portal).
 
-
-## Next steps
+## Related content
 
 - [Share dashboards with coworkers and others](service-share-dashboards.md)
 - [Create and publish an app in Power BI](service-create-distribute-apps.md)

@@ -1,24 +1,24 @@
 ---
-title: Using enhanced dataset metadata in Power BI Desktop
-description: Learn about enhanced dataset metadata in Power BI Desktop, which uses a format similar to what is used for Analysis Services tabular models.
+title: Using enhanced semantic model metadata in Power BI Desktop
+description: Learn about enhanced semantic model metadata in Power BI Desktop, which uses a format similar to what is used for Analysis Services tabular models.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/17/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
-# Using enhanced dataset metadata
+# Using enhanced semantic model metadata
 
-When Power BI Desktop creates reports, it also creates dataset metadata in the corresponding PBIX and PBIT files. Previously, the metadata was stored in a format that was specific to Power BI Desktop. The metadata used base-64 encoded M expressions and data sources. Power BI made assumptions about how that metadata was stored.
+When Power BI Desktop creates reports, it also creates semantic model metadata in the corresponding PBIX and PBIT files. Previously, the metadata was stored in a format that was specific to Power BI Desktop. The metadata used base-64 encoded M expressions and data sources. Power BI made assumptions about how that metadata was stored.
 
-With the release of the *enhanced dataset metadata* feature, many of these limitations are removed. PBIX files are automatically upgraded to enhanced metadata upon opening the file. With enhanced dataset metadata, metadata created by Power BI Desktop uses a format similar to what is used for Analysis Services tabular models, based on the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+With the release of the *enhanced semantic model metadata* feature, many of these limitations are removed. PBIX files are automatically upgraded to enhanced metadata upon opening the file. With enhanced semantic model metadata, metadata created by Power BI Desktop uses a format similar to what is used for Analysis Services tabular models, based on the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
-The enhanced dataset metadata feature is strategic and foundational. Future Power BI functionality will be built upon its metadata. These other capabilities stand to benefit from enhanced dataset metadata:
+The enhanced semantic model metadata feature is strategic and foundational. Future Power BI functionality will be built upon its metadata. These other capabilities stand to benefit from enhanced semantic model metadata:
 
-- [XMLA read/write](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI datasets.
+- [XMLA read/write](/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI semantic models.
 - Migration of Analysis Services workloads to Power BI to benefit from next-generation features.
 
 ## Upgrade
@@ -27,7 +27,7 @@ Your reports are automatically upgraded to the enhanced metadata format when you
 
 ## Exclude table from report refresh
 
-Once a data model has been upgraded to the enhanced metadata format, some metadata that was previously only used in Power BI Desktop is now respected in the Power BI service as well. This metadata includes the **Include in Report Refresh** option. For upgraded models, if the **Include in Report Refresh** option is unselected in the Power Query Editor, then that table isn't refreshed when the report or dataset is refreshed in Power BI Desktop or the Power BI service. Reports already published in the Power BI service that aren't yet upgraded to the new enhanced metadata formal need to be upgraded in Power BI Desktop before this new behavior takes effect.
+Once a data model has been upgraded to the enhanced metadata format, some metadata that was previously only used in Power BI Desktop is now respected in the Power BI service as well. This metadata includes the **Include in Report Refresh** option. For upgraded models, if the **Include in Report Refresh** option is unselected in the Power Query Editor, then that table isn't refreshed when the report or semantic model is refreshed in Power BI Desktop or the Power BI service. Reports already published in the Power BI service that aren't yet upgraded to the new enhanced metadata formal need to be upgraded in Power BI Desktop before this new behavior takes effect.
 
 ## Considerations and limitations
 
@@ -44,9 +44,9 @@ You can fix your queries in three different places in Power BI Desktop:
 
 - When you run evaluations when you open a report to check if you have unsupported queries. Running these evaluations can result in performance implications.
 
-Certain character combinations in M expressions that would be unsupported in the Tabular Object Model (TOM) are also unsupported in the enhanced dataset metadata environment.
+Certain character combinations in M expressions that would be unsupported in the Tabular Object Model (TOM) are also unsupported in the enhanced semantic model metadata environment.
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

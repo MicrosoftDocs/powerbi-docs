@@ -112,8 +112,8 @@ We enable the ability to update connections for Power BI reports for DirectQuery
 
     :::image type="content" source="media/connect-data-source-apis/report-server-manage-executionlogparameter-dialog.png" alt-text="Set credentials for the updated server and database.":::
 
-## Next steps
+## Related content
 
-[Paginated report data sources in Power BI Report Server](connect-data-sources.md) 
+- [Paginated report data sources in Power BI Report Server](connect-data-sources.md) 
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

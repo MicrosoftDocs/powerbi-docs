@@ -8,7 +8,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 02/22/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from databases
 ---
 
@@ -22,7 +22,7 @@ When you use the Azure Synapse Analytics connector:
 * Ensure firewall rules for the server are configured to "Allow access to Azure services".
 * Every action such as selecting a column or adding a filter will directly query the data warehouse.
 * Tiles are set to refresh approximately every 15 minutes and you don't need to schedule a refresh.  You can adjust refresh in the Advanced settings when you connect.
-* Q&A isn't available for DirectQuery datasets.
+* Q&A isn't available for DirectQuery semantic models.
 * Schema changes aren't picked up automatically.
 
 These restrictions and notes can change as we continue to improve the experience. Steps to connect are in the next section.
@@ -49,7 +49,7 @@ Your fully qualified server name and database name can be found in the Azure por
 
 [!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 
-## Next steps
+## Related content
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [What is Power BI?](../fundamentals/power-bi-overview.md)  

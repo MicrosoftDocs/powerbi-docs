@@ -119,9 +119,9 @@ You can authenticate using a user (or master user) or a [service principal](embe
 
 ### Row Level Security (RLS)
 
-When using a Power BI dataset that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
+When using a Power BI semantic model that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
 
-To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
+To export using RLS, you must have read permission for the Power BI semantic model the report is using as a data source.
 
 Here's an example of supplying an effective user name for RLS.
 
@@ -345,24 +345,24 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
+* Exporting a paginated report that has a Power BI semantic model as its data source, isn't supported in the following cases:
 
   * The caller is a [service principal profile](./embed-multi-tenancy.md).
-  * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
-  * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
+  * One of the semantic model's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI semantic model has DirectQuery to Azure Analysis Services or to another Power BI semantic model, and an effective identity was provided.
 
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 
   * The caller is a [service principal profile](./embed-multi-tenancy.md).
   * The caller is a master user and an effective identity was provided.
 
-* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
+* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Microsoft Entra ID.
 
 * Export of a report is limited to 60 minutes, which matches the life of the user access token. If you get a timeout error past the 60-minute mark when exporting large amounts of data, consider reducing the amount of data using appropriate filters.
 
 * The file share URL hyperlink (file share /UNC path) doesn't works when exporting a published paginated report on Power BI service online.  
 
-## Next steps
+## Related content
 
 Review how to embed content for your customers and your organization:
 

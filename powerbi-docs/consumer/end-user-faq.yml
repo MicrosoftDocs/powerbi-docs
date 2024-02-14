@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: faq
-  ms.date: 01/06/2023
+  ms.date: 02/07/2024
   ms.custom: licensing support
   LocalizationGroup: Get started
 title: Frequently asked questions about Power BI
@@ -26,17 +26,19 @@ sections:
       - question: |
          What's a Power BI business user?
         answer: |
-          The way you interact with Power BI will depend on your job role. As an end user or *business user*, you're the person who receives content (dashboards, reports, and apps) from colleagues. If you work in the online or mobile version of Power BI, then you're using the Power BI service to review and interact with content to make business decisions.  For more information, see [Power BI for business users](index.yml).
+          The way you interact with Power BI depends on your job role. As an end user or *business user*, you're the person who receives content (dashboards, reports, and apps) from colleagues. If you work in the online or mobile version of Power BI, then you're using the Power BI service to review and interact with content to make business decisions. For more information, see [Power BI for business users](index.yml).
           
           
       - question: |
-         What's the difference between Power BI Pro and Power BI Premium?
+         What's the difference between Power BI Pro, Premium Per User (PPU) and Power BI Premium?
         answer: |
           Power BI Pro is an individual user license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to other workspaces, share dashboards, and subscribe to dashboards and reports. 
+
+          Premium Per User (PPU) gives organizations a way to license premium features on a per-user basis. PPU includes all Power BI Pro license capabilities that were previously only available with a Premium capacity subscription. With a PPU license, you don't need a separate Power BI Pro license because all Pro license capabilities are included.
           
-          Power BI Premium provides a capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users, and doesn't require per-user Pro licenses for recipients viewing the content. This means *business users* can collaborate with colleagues and view and interact with dashboards, reports, and apps that have been shared with them. 
+          Power BI Premium is a subscription that provides a capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users, and doesn't require per-user Pro licenses for recipients viewing the content. This means *business users* can collaborate with colleagues and view and interact with dashboards, reports, and apps that are shared with them. 
           
-          To learn more, see [What type of license do I have?](end-user-license.md)
+          To learn more, see [What type of license do I have?](end-user-license.md) and [Premium Per User FAQ](../enterprise/service-premium-per-user-faq.yml)
           
       - question: |
          What if I have questions about Power BI Premium?
@@ -46,12 +48,12 @@ sections:
       - question: |
          What is Power BI Desktop?
         answer: |
-          Power BI Desktop is a free application you can install on your computer. Power BI Desktop works cohesively with the Power BI service.  Data scientists, report designers, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *business users* like you. For more information, see [What is Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
+          Power BI Desktop is a free application you install on your computer. Power BI Desktop works cohesively with the Power BI service. Data scientists, report designers, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *business users* like you. For more information, see [What is Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
           
       - question: |
          What do I need as a business user to get started with the Power BI service?
         answer: |
-          If your company has purchased Power BI licenses or a Premium capacity account, all you'll need to start is a Web browser and credentials. To log in, you'll use your work email address and a password (set by your Power BI administrator).  
+          If your company purchased Power BI licenses or a Premium capacity account, all you need to start is a Web browser and credentials. To log in, use your work email address and a password (set by your Power BI administrator).  
           
           You can also sign up for the Power BI service as an individual. For more information, see [the Power BI self-service sign-up process](../fundamentals/service-self-service-signup-for-power-bi.md).
           
@@ -105,9 +107,9 @@ sections:
         answer: |
           Learn more about Power BI security, privacy, and compliance here:
           
-          * This [Power BI Security](../guidance/whitepaper-powerbi-security.md) white paper
+          * [Power BI Security white paper](../guidance/whitepaper-powerbi-security.md)
           
-          * This [Power BI security support](../enterprise/service-admin-power-bi-security.md) article
+          * [Power BI security support article](../enterprise/service-admin-power-bi-security.md)
           
       - question: |
          How do I undo in Power BI?

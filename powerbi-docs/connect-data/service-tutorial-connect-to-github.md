@@ -70,10 +70,10 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 1. If prompted, follow the GitHub authentication instructions and give Power BI permission to access your data.
 
-   * After Power BI can connect with GitHub, the data in your Power BI dataset is refreshed once a day.
+   * After Power BI can connect with GitHub, the data in your Power BI semantic model is refreshed once a day.
    * After Power BI imports the data, you see the contents in your new GitHub workspace.
 
-1. Select **Workspaces** in the nav pane to see the dashboard, reports, and datasets. You can select **More options** (...) to view settings.
+1. Select **Workspaces** in the nav pane to see the dashboard, reports, and semantic models. You can select **More options** (...) to view settings.
 
    :::image type="content" source="media/service-tutorial-connect-to-github/github-workspace-more-options.png" alt-text="Screenshot of the workspaces list. Workspaces and the GitHub workspace are highlighted.":::
 
@@ -126,7 +126,7 @@ Now that you've finished the tutorial, you can delete the GitHub app.
 
    :::image type="content" source="media/service-tutorial-connect-to-github/delete-an-app.png" alt-text="Screenshot of the GitHub app tile with apps, more options, and delete highlighted.":::
 
-## Next steps
+## Related content
 
 In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics.
 

@@ -97,7 +97,7 @@ The two queries named **Translated Month Names Table** and **Translated Day Name
 
 ## Configure sort values
 
-When you run these two queries for the first time, they create two tables in the dataset with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
+When you run these two queries for the first time, they create two tables in the semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) with the names **Translated Month Names Table** and **Translated Day Names Table**. There's a translation column for each language. You need to configure the sort column for each of the translation columns:
 
 - Configure the translation columns in **Translated Month Names Table** to use the sort column  **MonthNumber**
 - Configure the translations columns in **Translated Day Names Table** to use the sort column **DayNumber**
@@ -130,6 +130,6 @@ After you set up everything, you can test your work using a report-level filter 
 
 :::image type="content" source="./media/data-translation-calendar-table/report-level-filter.png" alt-text="Screenshot shows a filter with a language selected and the visuals reflecting the selection." lightbox="./media/data-translation-calendar-table/report-level-filter.png":::
 
-## Next steps
+## Related content
 
 - [Load multiple-language reports](data-translation-load-report-bookmark.md)

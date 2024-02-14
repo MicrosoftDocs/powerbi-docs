@@ -14,7 +14,7 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You can import datasets into Power BI, or you can create a *live connection* to them. Live connection datasets are often on premises, and are managed by using a [gateway](../connect-data/service-gateway-onprem.md). Data and inquiries are sent back and forth using live queries. To use Q&A with the datasets you access through a gateway, you need to enable them first.
+You can import semantic models into Power BI, or you can create a *live connection* to them. Live connection semantic models are often on premises, and are managed by using a [gateway](../connect-data/service-gateway-onprem.md). Data and inquiries are sent back and forth using live queries. To use Q&A with the semantic models you access through a gateway, you need to enable them first.
 
 > [!NOTE]
 > Live connections also support Azure Analysis Services datasets, which don't require a gateway.
@@ -34,21 +34,21 @@ For more information, see:
 
 ## Enable Q&A
 
-Once you have the data gateway set up, connect to your data from Power BI. Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data. You might also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
+Once you have the data gateway set up, connect to your data from Power BI. Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data. You might also already have on-premises data in dashboards, reports, and semantic models that have been shared with you.
 
 1. In Power BI, select the cog icon :::image type="icon" source="media/service-q-and-a-direct-query/power-bi-cog-2.png"::: and choose **Settings**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/powerbi-settings-2.png" alt-text="Screenshot of Settings menu, highlighting the Settings option.":::
-1. Select **Datasets** and choose the dataset to enable for Q&A.
+1. Select **Semantic models** and choose the semantic model to enable for Q&A.
 
-   :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Datasets in Settings menu.":::
+   :::image type="content" source="media/service-q-and-a-direct-query/power-bi-q-and-a-settings-2.png" alt-text="Screenshot of Semantic models in Settings menu.":::
 1. Expand **Q&A**, select the checkbox for **Turn on Q&A to ask natural language questions about your data**, and choose **Apply**.
 
    :::image type="content" source="media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query-2.png" alt-text="Screenshot highlighting the expanded Q&A area.":::
 
 ## What data is cached and how is privacy protected?
 
-When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This caching ensures that Q&A works with a reasonable performance. Power BI excludes values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A to ask natural language questions about your data** or when you delete your dataset.
+When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This caching ensures that Q&A works with a reasonable performance. Power BI excludes values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A to ask natural language questions about your data** or when you delete your semantic model.
 
 ## Considerations and troubleshooting
 
@@ -59,7 +59,7 @@ The feature has some limitations:
 * Q&A isn't supported for data models with 0bject-level security (OLS). For more information, see [Q&A limitations](../natural-language/q-and-a-limitations.md#data-sources-not-supported).
 * Live connections are only supported with the on-premises data gateway. As a result, this feature can't be used with the personal gateway.
 
-## Next steps
+## Related content
 
 * [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 * [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)

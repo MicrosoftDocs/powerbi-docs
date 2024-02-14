@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/07/2023
+ms.date: 10/05/2023
 ms.custom: intro-whats-new
 ---
 
@@ -17,7 +17,84 @@ Learn about what's new in the latest versions of Power BI Report Server and Powe
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
+## September 2023
+
+Welcome to the September 2023 Power BI Report Server release! This release focuses on new features that enhance viewing, like the Report Server mobile view port improvements, full screen for PBIX and RDL report viewing, and mobile layout switcher. We're excited to support Power BI Desktop Developer mode for developers, and bubble range scaling for reporting. These features have been inclusively designed with better UX for report viewing and sharing. Read on for the details.
+
+### Power BI Report Server
+
+### Full-screen view 
+
+You've asked for the ability to allow your report consumers to present reports in full-screen mode. We're excited to share that we've fulfilled this request. The full-screen viewing option has been added to the **View** menu for Power BI (.pbix) reports and to the toolbar for paginated (.rdl) reports. 
+
+- **In a Power BI report**: To change the view, on the **View** menu item, select **Full screen**  as shown in the following image.  
+
+    :::image type="content" source="media/whats-new/full-screen-view.png" alt-text="Screenshot showing Full-screen view of a Power BI report.":::
+
+    *Full-screen view in a Power BI report*
+
+- **In a paginated (.rdl) report**: We added full-screen view to the toolbar. It's located on the far right side of the pagination toolbar, as shown in the following image.
+
+    :::image type="content" source="media/whats-new/full-screen-paginated-rdl-report.png" alt-text="Screenshot showing full-screen view of a paginated report." lightbox="media/whats-new/full-screen-paginated-rdl-report.png":::
+
+    *Full-screen view in paginated (.rdl) report*
+
+### Responsive view navigation 
+
+Customers log in to Power BI Report Server with varying devices. We've enhanced the view port for smaller screens to make viewing reports more accessible. Users no longer need to scroll across to locate menu items. The view port has a responsive design enabled for smaller viewers. Additional menu items are collapsed to accommodate the smaller screen size.
+
+:::image type="content" source="media/whats-new/collapsed-menu-items-small-screen.png" alt-text="Screenshot showing collapsed menu on a small screen.":::
+
+*Collapsed menu items*
+
+### Reporting 
+
+### New layout switcher 
+
+We’ve added new buttons in Power BI Desktop that make it easy to switch quickly between web and mobile layouts while you’re developing reports. The new switcher buttons are in the lower-left corner of the screen, next to the page navigator. 
+
+:::image type="content" source="media/whats-new/new-layout-switcher-web-mobile.png" alt-text="Screenshot showing new layout switcher between web and mobile views." lightbox="media/whats-new/new-layout-switcher-web-mobile.png":::
+
+*New layout switcher from web to mobile layout*
+
+### Mobile layout interactive canvas
+
+In this latest update, we've made the mobile canvas interactive. 
+
+With this new capability, you can test how buttons, slicers, and visuals behave in the app before you publish the report.  
+
+:::image type="content" source="media/whats-new/mobile-layout-test-interactivity.png" alt-text="Screenshot of testing mobile functionality while authoring a report.":::
+
+This canvas interactivity means that your report users can now interact with visuals directly. They can adjust table and matrix column headers to make them fit perfectly in mobile screens.
+
+:::image type="content" source="media/whats-new/mobile-adjust-column-widths.png" alt-text="Screenshot of adjusting column widths to fit mobile screen.":::
+
+### New bubble range scaling setting 
+
+We're introducing the new bubble range scaling setting for scatter chart and map visuals. This setting gives report creators more control over how the bubble (marker) sizes respond to the data, making it more accurate or distinctive, based on preference. 
+
+With the **magnitude** option, the bubble areas closely follow the data proportions. With the **data-rang**e option, the bubble size limits are mapped to data minimum and maximum. The **auto** option is the default setting for new reports. It selects the appropriate option based on data characteristics. For more information, see [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)
+
+You can adjust this setting in the Format pane in Power BI Desktop.
+
+- For scatter charts, under **Markers**, select **Shape** and **Range scaling**.
+- For maps, select **Bubbles** > **Size** > **Range scaling**.
+
+For reports authored in earlier Power BI versions, these settings default to **(Deprecated)** for scatter charts, which differs in handling negative values, and **Data range** for maps. 
+
+Azure Maps will also include this feature in a coming product update.
+
+In the following figure, the size of each country represents Urban Population, which is also shown on the y-axis. 
+
+:::image type="content" source="media/whats-new/scatter-chart-bubble-size-range-scaling.png" alt-text="Screenshot showing scatter chart bubble size range scaling." lightbox="media/whats-new/scatter-chart-bubble-size-range-scaling.png":::
+
+### Want to get involved?
+
+- To be a part of our customer research for paginated reports, and provide product feedback, prototype assessment, and staying abreast with what’s new, join the [Paginated Operational Reports Feedback Panel](https://ux.microsoft.com/Panel/PBIPaginatedFeedback). 
+- Or join our [Reporting Services - Migration to Power BI](https://community.fabric.microsoft.com/t5/Reporting-Services-Migration-to/gh-p/ReportingServices-MigrationtoPowerBI) user group. Join the fun and tune in to our monthly events.
+
 ## May 2023
+
 This release has a number of new features like the Report Server accessibility tagging for screen-reader report consumers, new accessibility for matrix navigation and selection, and updates to existing features for modeling and reporting. See the [Power BI Report Server May 2023](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2023-feature-summary) blog for all the details. 
 
 ### Report Server
@@ -343,14 +420,16 @@ Note the following:
  
 As an administrator, you can disable this preview, force V3 off, and hide the preview feature check box. Set the following DWORD value to 0 in the registry: AllowV3Models in either:
 
-```
+
+```yaml
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 ```
 
 or
 
-```
+
+```yaml
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop SSRS]
 "AllowV3Models"=dword:00000000
 ```
@@ -748,7 +827,6 @@ Here's the complete list of features.
 - New Transform: Split column by positions
 - Copy to clipboard from data profiling
 
-
 ## May 2019
 
 ### Power BI Desktop for Power BI Report Server
@@ -1141,10 +1219,11 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. F
   - Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 - Enhanced collaboration in reports with comments
 
-## Next steps
+## Related content
 
 Check these sources to keep up-to-date on new features in Power BI Report Server.
 
 - [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 05/03/2023
+ms.date: 11/10/2023
 LocalizationGroup: Transform and shape data
 ---
 # Using Azure Log Analytics in Power BI
@@ -75,14 +75,14 @@ Keep the following considerations and limitations in mind when working with Azur
 * Only Premium workspaces are supported.
 * Only Workspace v2 support Log Analytics connections.
 * Azure Log Analytics doesn't support tenant migration.
-* Activities are only captured for datasets physically hosted within the Premium workspace where you configure logging. For example, if you configure logging for Premium workspace A, you won't see logs for any reports within that use datasets hosted in [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/#overview). You also won't see any logs for [shared datasets](../../connect-data/service-datasets-share.md) that aren't in Premium workspace A. To capture activities for shared datasets, configure logging on the workspace that contains the shared dataset, not the workspace that contains the report.
-* Datasets created on the web by uploading a CSV file don't generate logs.
+* Activities are only captured for semantic models physically hosted within the Premium workspace where you configure logging. For example, if you configure logging for Premium workspace A, you won't see logs for any reports within that use semantic models hosted in [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/#overview). You also won't see any logs for [shared semantic models](../../connect-data/service-datasets-share.md) that aren't in Premium workspace A. To capture activities for shared semantic models, configure logging on the workspace that contains the shared semantic model, not the workspace that contains the report.
+* Semantic models created on the web by uploading a CSV file don't generate logs.
 * If you have Multi-Factor Auth (MFA) in place for Azure but not Power BI, the configuration screens will give general Azure errors. A workaround is to first sign in to the [Azure portal](https://portal.azure.com), complete the MFA challenge and then log into Power BI in the same browser session.
 * If you're using private links/VNets to isolate your Log Analytics workspaces, data ingestion into Log Analytics is unaffected. However, the [Log Analytics Template app(https://appsource.microsoft.com/product/power-bi/pbi_pcmm.powerbiloganalyticsforasengine?tab=Overview)] won't work because it relies on a public endpoint that is no longer accessible by the Power Service as a private link. A workaround is to use the [.pbit report template(https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports)] and refresh the data from inside the private VNet. You must set up a custom DNS mapping to ensure the public endpoint uses a private internal IP.
 * For the Log Analytics feature, Power BI only sends data to the *PowerBIDatasetsWorkspace* table and doesn't send data to the to *PowerBIDatasetsTenant* table. This avoids storing duplicate data about log analytics in both locations. 
 
 
-## Next steps
+## Related content
 The following articles provide more information about Power BI and its many features:
 
 * [Configuring Azure Log Analytics for Power BI](desktop-log-analytics-configure.md)

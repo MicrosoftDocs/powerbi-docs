@@ -12,10 +12,10 @@ LocalizationGroup: Share your work
 ---
 # Set featured tables in Power BI Desktop to appear in Excel
 
-In the Data Types Gallery in Excel, users can find data from *featured tables* in your Power BI datasets. In this article, you learn how to set tables as *featured* in your datasets. These tags make it easier for users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
+In the Data Types Gallery in Excel, users can find data from *featured tables* in your Power BI semantic models. In this article, you learn how to set tables as *featured* in your semantic models. These tags make it easier for users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
 
-1. Identify featured tables in your datasets in Power BI Desktop (this article).
-1. Save those datasets with featured tables to a shared workspace. Report creators can create reports with those featured tables.
+1. Identify featured tables in your semantic models in Power BI Desktop (this article).
+1. Save those semantic models with featured tables to a shared workspace. Report creators can create reports with those featured tables.
 1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel](service-excel-featured-tables.md) describes how to consume these featured tables in Excel.
 
 ## Select a table
@@ -38,11 +38,11 @@ In the Data Types Gallery in Excel, users can find data from *featured tables* i
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Screenshot that shows how to set up featured table.":::
 
-1. After you publish or import the dataset to the Power BI service, the featured table appears in the Excel Data Types Gallery. You and other report creators can also create reports built on this dataset.
+1. After you publish or import the semantic model to the Power BI service, the featured table appears in the Excel Data Types Gallery. You and other report creators can also create reports built on this semantic model.
 
 1. In Excel: 
     - Restart Excel. Excel caches the list of data types so you need to restart Excel to see newly published featured tables.
-    - Because some datasets aren't supported, featured tables defined in those datasets don't appear in Excel. See the next section, [Considerations and limitations](#considerations-and-limitations), for details.
+    - Because some semantic models aren't supported, featured tables defined in those semantic models don't appear in Excel. See the next section, [Considerations and limitations](#considerations-and-limitations), for details.
 
 ## The Data Types experience in Excel
 
@@ -61,7 +61,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 
 ### Considerations
 
-- You can [promote or certify datasets in Power BI](../collaborate-share/service-endorse-content.md), which is called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
+- You can [promote or certify semantic models in Power BI](../collaborate-share/service-endorse-content.md), which is called *endorsement*. Excel prioritizes tables in endorsed semantic models in the Data Types Gallery. Excel lists featured tables in certified semantic models first, then tables in promoted semantic models. Excel lists featured tables in unendorsed semantic models after that. 
 - Creating featured tables is available by default. You can change the **Featured tables** capability through **File** > **Options and Settings** > **Options** > **Preview Features**.
 - You can use Excel files with a data model to publish featured tables. Load the data into Power BI Desktop and then publish the featured table.
 
@@ -70,10 +70,10 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 Here are the current limitations:
 
 - The integration is available in Excel in the current channel.
-- Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel: 
+- Featured tables in Power BI semantic models that use the following capabilities aren't shown in Excel: 
 
-    - DirectQuery datasets
-    - Datasets with a live connection
+    - DirectQuery semantic models
+    - Semantic models with a live connection
 
 - Excel shows only data in columns, calculated columns, and measures defined in the featured table. The following aren't provided:
 
@@ -84,10 +84,10 @@ Here are the current limitations:
 - Some symbols aren't supported.
 - Setting or updating the featured table isn't supported in the XMLA endpoint.
 - Changing the Table name, Row Label, or Key Column in the featured table may impact Excel users with linked cells to rows in the table. 
-- Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
+- Excel shows when the data was retrieved from the Power BI semantic model. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a semantic model. For example, say a semantic model in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
 - See [Considerations and limitations](service-excel-featured-tables.md#considerations-and-limitations) in the article "Access Power BI featured tables in Excel" for other Excel considerations.
 
-## Next steps
+## Related content
 
 - [Access Power BI featured tables in Excel](service-excel-featured-tables.md)
 - Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.

@@ -1,8 +1,8 @@
 ---
 title: DirectQuery optimization scenarios with the Optimize ribbon in Power BI Desktop
 description: This articles describes DirectQuery reporting scenarios by using the Optimize ribbon in Power BI Desktop
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -116,8 +116,8 @@ Want to learn more, or maybe have your own scenario to share? Power BI has a vib
 
 You can contribute too! With Microsoft Learn, Power BI documentation like this article is open-source. To learn more about how you can contribute, be sure to checkout the [Microsoft Learn documentations contributors guide](/contribute/).
 
-## See also
+## Related content
 
-[Optimize ribbon in Power BI Desktop](desktop-optimize-ribbon.md)  
-[Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)  
-[Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+- [Optimize ribbon in Power BI Desktop](desktop-optimize-ribbon.md)  
+- [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)  
+- [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)

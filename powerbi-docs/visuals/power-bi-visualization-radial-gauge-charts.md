@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 07/25/2023
+ms.date: 12/25/2023
 LocalizationGroup: Visualizations
 ms.custom: sample-financialsample
 ---
@@ -75,15 +75,15 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
 4. In the **Data** pane, expand **financials** and select the **Gross Sales** checkbox.
 
-   By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** > **Build** visual pane, the **Y-axis** option is aligned to the **Sum of Gross Sales** value. Notice that by default, Power BI shows the _sum_ value for the selected field.
+   By default, Power BI creates a clustered column chart to display the data. On the **Visualizations** > **Build visual** pane, the **Y-axis** option is aligned to the **Gross Sales** value. Notice that by default, Power BI uses the _sum_ value for the selected field.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-clustered-column-chart.png" alt-text="Screenshot that shows the default cluster column chart for the selected data field.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-sum.png" alt-text="Screenshot that shows the default cluster column chart for the selected data field.":::
 
-1. On the **Visualizations** pane, open the drop-down menu for the **Sum of Gross Sales** value under the **Y-axis** option and select **Average**.
+1. On the **Visualizations** pane, open the drop-down menu for the **Gross Sales** value under the **Y-axis** option and select **Average**.
 
    This action changes the aggregation for the chart to use the average of gross sales rather than the sum.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-convert-chart-average.png" alt-text="Screenshot that shows how to change the aggregation view for the chart to use the average of the gross sales values.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-average.png" alt-text="Screenshot that shows how to change the aggregation view for the chart to use the average of the gross sales values.":::
 
    You can convert the clustered column chart visual into a gauge chart.
 
@@ -91,9 +91,9 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
    Notice the changes to the **Visualizations** pane. The **Average of Gross Sales** value is now listed under the **Value** option. Several other value options are listed, including the **Minimum**, **Maximum**, and **Target**.
 
-   By default, Power BI sets the current value (in this case, **Average of Gross Sales**) as the halfway point on the gauge. Because the **Average of Gross Sales** value is $182.76 K, the start point on the gauge (**Minimum value**) is set to 0. The end point on the gauge (**Maximum value**) is set to double the current value.
+   By default, Power BI sets the current value (in this case, **Average of Gross Sales**) as the halfway point on the gauge. Because the **Average of Gross Sales** value is $184.21 K, the start point on the gauge (**Minimum value**) is set to 0. The end point on the gauge (**Maximum value**) is set to double the current value.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-chart.png" alt-text="Screenshot of the initial gauge chart in Power BI that shows the average of gross sales as the gauge value.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge.png" alt-text="Screenshot of the initial gauge chart in Power BI that shows the average of gross sales as the gauge value.":::
 
    > [!NOTE]
    > Depending on when you download the Financial Sample Excel file, your chart might show different values.
@@ -102,32 +102,32 @@ Let's begin by creating a simple radial gauge chart in Power BI. We can track gr
 
 You can modify the gauge chart to show a target value. This action creates a _needle_ on the gauge chart to identify the target.
 
-1. On the **Data** pane, select and drag the **COGS** field to the **Target value** option on the **Visualizations** > **Build** visual pane.
+1. On the **Data** pane, select and drag the **COGS** field to the **Target value** option on the **Visualizations** > **Build visual** pane.
 
-   Power BI changes the chart view to show _Average of Gross Sales_ and _Sum of COGS_.
+   Power BI changes the chart view to show _Average of Gross Sales_ and _COGS_ (Sum).
 
 1. On the **Visualizations** pane under the **Value** option, open the drop-down menu for the **Sum of COGS** value and select **Average**.
 
    By default, Power BI calculates the average of the two values _Gross Sales_ and _COGS_ to determine the target value. Power BI adds a needle to the gauge to represent the target.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-chart-needle.png" alt-text="Screenshot that shows the updated gauge chart with a needle that represents the target value.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-needle.png" alt-text="Screenshot that shows the updated gauge chart with a needle that represents the target value.":::
 
-   Power BI calculates the target value as $145.48 K. The position of the gauge needle shows that the average of the _Gross Sales_ and _COGS_ values exceeds the target.
+   Power BI calculates the target value as $146.65K. The position of the gauge needle shows that the average of the _Gross Sales_ and _COGS_ values exceeds the target.
 
    > [!NOTE]
    > You can manually specify a target value rather than using the calculation from Power BI. For more information, see the [Use manual options to set values](#use-manual-options-to-set-values) section.
 
 ## Set a maximum value
 
-Power BI uses the **Value** field on the **Visualizations** > **Build** visual pane to automatically set the minimum and maximum values for the gauge. You can rely on the calculations from Power BI or set your own values.
+Power BI uses the **Value** field on the **Visualizations** > **Build visual** pane to automatically set the minimum and maximum values for the gauge. You can rely on the calculations from Power BI or set your own values.
 
-Let's see how you can set the maximum value to the highest gross sales number in your dataset.
+Let's see how you can set the maximum value to the highest gross sales number in your semantic model.
 
 1. On the **Data** pane, select and drag the **Gross Sales** field to the **Maximum value** option on the **Visualizations** pane.
 
 1. On the **Visualizations** pane under the **Maximum value** option, open the drop-down menu for the **Gross Sales** value and select **Maximum**.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-chart-max.png" alt-text="Screenshot that shows how to set the maximum value for the gauge chart.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-max.png" alt-text="Screenshot that shows how to set the maximum value for the gauge chart.":::
 
    The gauge is redrawn with a new end value of 1.21 million in gross sales.
 
@@ -143,7 +143,7 @@ You can also use manual settings in Power BI to configure the maximum, minimum, 
 
 1. Expand the **Gauge axis** option and enter values for the **Min** and **Max** settings. In our example, we set the values to 100,000 and 250,000.
 
-   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-format-gauge-axis.png" alt-text="Screenshot that shows how to format the minimum and maximum values for the gauge axis.":::
+   :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-min-max.png" alt-text="Screenshot that shows how to format the minimum and maximum values for the gauge axis.":::
 
 1. On the **Data** pane, clear the **COGS** checkbox to remove the target value.
 
@@ -155,9 +155,9 @@ You can also use manual settings in Power BI to configure the maximum, minimum, 
 
 When you're done, you have a gauge chart similar to the following example:
 
-:::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-final.png" alt-text="Screenshot that shows a customized gauge chart in Power BI with a needle at the target value of 200,000.":::
+:::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-chart-final.png" alt-text="Screenshot that shows a customized gauge chart in Power BI with a needle at the target value of 200,000.":::
 
-## Next steps
+## Related content
 
 - Read about [Key Performance Indicator (KPI) visuals](power-bi-visualization-kpi.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

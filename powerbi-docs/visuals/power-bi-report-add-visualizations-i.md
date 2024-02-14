@@ -90,7 +90,7 @@ In this section, you create a visualization and then change its type.
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/change-type-3.png" alt-text="Screenshot that shows the More options list." lightbox="media/power-bi-report-add-visualizations-i/change-type-3.png":::
   
-## Next steps
+## Related content
 
 - [Read part 2 of this article](power-bi-report-add-visualizations-ii.md)
 - [Learn about interacting with visualizations](../consumer/end-user-reading-view.md) 

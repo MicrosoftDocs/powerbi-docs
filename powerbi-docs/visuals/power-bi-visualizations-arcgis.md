@@ -321,7 +321,7 @@ To add a demographic layer, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/reference-layer-demographics.png" alt-text="Screenshot shows the Demographic layer.":::
 
-Demographic reference layers are interactive. You can select an area to view a [tooltip](https://doc.arcgis.com/en/power-bi/design/view-tooltips.htm) containing more information about that area. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
+Demographic reference layers are interactive. You can select an area to view a [tooltip](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/configure-and-view-tooltips.htm) containing more information about that area. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
 
 #### Add a reference layer from ArcGIS
 
@@ -346,7 +346,7 @@ To add an ArcGIS reference layer, follow these steps:
 
    :::image type="content" source="media/power-bi-visualizations-arcgis/reference-layer-arcgis.png" alt-text="Screenshot shows the map with the ArcGIS public reference layer.":::
 
-ArcGIS reference layers are interactive. Select an area to view a [tooltip](https://doc.arcgis.com/en/power-bi/design/view-tooltips.htm) containing more information. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
+ArcGIS reference layers are interactive. Select an area to view a [tooltip](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/configure-and-view-tooltips.htm) containing more information. You can also [select areas on the map](https://doc.arcgis.com/en/power-bi/design/select-features-on-the-map.htm) that fall within an area on the reference layer.
 
 ### Find nearby locations
 
@@ -508,7 +508,7 @@ The following table compares the standard features available to all Power BI use
 | | A maximum of two variables | A maximum of five variables |
 | | Support for **Drive Time** and **Radius** settings | Support for all distance and travel settings |
 
-## Next steps
+## Related content
 
 * [Interact with an ArcGIS map that has been shared with you](../consumer/end-user-arcgis.md)
 * [ArcGIS for Power BI blog posts announcing ArcGIS for Power BI updates](https://www.esri.com/arcgis-blog/?s=#ArcGIS%20for%20Power%20BI)  

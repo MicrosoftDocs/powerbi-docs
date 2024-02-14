@@ -55,9 +55,9 @@ The following basic flow lists what the application does when the customer launc
 
 ## Prerequisites
 
-* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
+* Your own Microsoft Entra tenant set up. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
 * A [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) registered in the preceding tenant.
-* A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
+* A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
 * To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -65,7 +65,9 @@ The following basic flow lists what the application does when the customer launc
 
 Before you continue setting up your application, follow the instructions in [Quickstart: Create an Azure Functions app with Azure App Configuration](/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure function along with an Azure app configuration. Create your app configuration as described in the article.
 
-### Register an application in Azure AD
+<a name='register-an-application-in-azure-ad'></a>
+
+### Register an application in Microsoft Entra ID
 
 Create a service principal as described in [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md).
 
@@ -85,7 +87,7 @@ After you've created your template app and it's ready for installation, save the
 
     You can also get the same link by selecting **Get link** in the template app's [Release Management pane](service-template-apps-create.md#manage-the-template-app-release).
 
-* *Parameter names* as they're defined in the template app's dataset. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
+* *Parameter names* as they're defined in the template app's semantic model. Parameter names are case-sensitive strings. They can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the semantic model settings in Power BI.
 
 >[!NOTE]
 >You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in the [Power BI apps marketplace](https://app.powerbi.com/getdata/services). Before you distribute your template app by using the automated installation application you're creating, be sure to publish it to [Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
@@ -213,7 +215,7 @@ The desired flow should be:
 1. If everything is configured properly, the browser should automatically redirect to the customer's Power BI account and show the automated installation flow.
 1. Upon installation, parameter values are set as configured in steps 1 and 2.
  
-## Next steps
+## Related content
 
 ### Publish your project to Azure
 

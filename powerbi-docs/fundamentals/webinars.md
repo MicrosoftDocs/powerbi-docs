@@ -94,7 +94,7 @@ Understanding Power BI Premium Gen 2
 by David Magar  
 [Watch now]( https://info.microsoft.com/ww-Landing-Understanding-Power-BI-Premium-Gen-2.html?LCID=EN-US)  
 
-Demystifying Power BI datasets  
+Demystifying Power BI semantic models  
 by Peter Myers, Bitwise Solutions and Chris Webb, Microsoft  
 [Watch now](https://info.microsoft.com/ww-landing-demystifying-PowerBI-datasets.html?LCID=EN-US)  
 
@@ -365,7 +365,7 @@ Be a full stack Power BI Jedi - A walkthrough of Power BI most advanced features
 by Gil Raviv  
 [Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-## See also
+## Related content
 
 - [Power BI whitepapers](../guidance/whitepapers.md)
 

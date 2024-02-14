@@ -69,8 +69,8 @@ You can change data source connection strings of Power BI reports hosted in Powe
     Set-RsRestItemDataSource -RsItem '/MyPbixReport' -RsItemType 'PowerBIReport' -DataSources $dataSources
     ```
 
-## Next steps
+## Related content
 
-[Paginated report data sources in Power BI Report Server](connect-data-sources.md) 
+- [Paginated report data sources in Power BI Report Server](connect-data-sources.md) 
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

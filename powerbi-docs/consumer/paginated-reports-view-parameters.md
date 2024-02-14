@@ -31,6 +31,6 @@ When you view a report that has parameters, the report viewer toolbar displays e
 
 1. **Default values** If all parameters have default values, the report runs automatically on first view. The parameters in this report have default values, so you see the report with those values.  
 
-## Next steps
+## Related content
 
-[Paginated reports in the Power BI service](end-user-paginated-report.md)
+- [Paginated reports in the Power BI service](end-user-paginated-report.md)

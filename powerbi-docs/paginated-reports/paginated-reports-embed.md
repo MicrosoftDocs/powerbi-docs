@@ -16,13 +16,13 @@ ms.date: 01/31/2023
 
 This article provides an overview of the differences between embedding a Power BI report, and embedding a Power BI paginated report. The article is aimed at developers using Power BI [embedded analytics](/power-bi/developer/embedded/) to embed a paginated report.
 
-## Dataset considerations
+## Semantic model considerations
 
-A Power BI report is always bound to a single data source. However, a paginated report doesn't require a Power BI dataset as a data source. A paginated report can also be built on multiple datasets. This means you cannot rely on the `datasetId` property of a report object, when embedding a paginated report.
+A Power BI report is always bound to a single data source. However, a paginated report doesn't require a Power BI semantic model as a data source. A paginated report can also be built on multiple semantic models. This means you cannot rely on the `datasetId` property of a report object, when embedding a paginated report.
 
 ## Token considerations
 
-There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) solution. If the paginated report has one or more Power BI datasets configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each dataset, with the following parameters:
+There are some special considerations when generating an embed token for a paginated report with an [Embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers) solution. If the paginated report has one or more Power BI semantic models configured as its data sources, you must create a [GenerateTokenRequestV2Dataset](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2dataset) object for each semantic model, with the following parameters:
 
 * `xmlaPermissions` must be set to `ReadOnly`
 
@@ -46,13 +46,13 @@ Before embedding a paginated report, consider the following Power BI features wh
  
 ## Code example
 
-The following code listing demonstrates generating an embed token to embed a paginated report built on top of a Power BI dataset.
+The following code listing demonstrates generating an embed token to embed a paginated report built on top of a Power BI semantic model.
 
 ```javascript
 string datasetId = "11111111-1111-1111-1111-111111111111";
 Guid reportId = new Guid("22222222-2222-2222-2222-222222222222");
 
-// create dataset request for embed token with XmlaPermissions.ReadOnly
+// create semantic model request for embed token with XmlaPermissions.ReadOnly
 var datasetRequests = new List<GenerateTokenRequestV2Dataset> {
   new GenerateTokenRequestV2Dataset(datasetId, xmlaPermissions: XmlaPermissions.ReadOnly)
 };
@@ -75,7 +75,7 @@ var EmbedTokenResult = pbiClient.EmbedToken.GenerateToken(tokenRequest);
 var embedToken = EmbedTokenResult.Token;
 ```
 
-## Next steps 
+## Related content 
 
 > [!div class="nextstepaction"]
 > [Using the Power BI REST APIs](/rest/api/power-bi/)

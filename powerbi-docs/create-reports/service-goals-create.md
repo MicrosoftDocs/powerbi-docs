@@ -32,7 +32,7 @@ You can also connect metrics to an existing report visual in Power BI. See [Crea
 You need a Power BI Pro license to author and share metrics in standard workspaces. You also need:
 
 - Admin, Member, or Contributor role in a workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
-- [Build permission](../connect-data/service-datasets-build-permissions.md) for a dataset.
+- [Build permission](../connect-data/service-datasets-build-permissions.md) for a semantic model.
 
 ## Step 1: Create a scorecard 
 
@@ -57,16 +57,16 @@ You need a Power BI Pro license to author and share metrics in standard workspac
 
     :::image type="content" source="media/service-goals-create/metrics-move-scorecard-confirm.png" alt-text="Screenshot of confirmation to move a scorecard to another workspace, and a dropdown to select the correct workspace.":::
 
-    Power BI saves these items in the workspace: the scorecard itself, and a *dataset* associated with your scorecard that houses all the metrics data. 
+    Power BI saves these items in the workspace: the scorecard itself, and a *semantic model* associated with your scorecard that houses all the metrics data. 
 
-    :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and dataset that Power BI created.":::
+    :::image type="content" source="media/service-goals-create/power-bi-goals-scorecard-dataset.png" alt-text="Screenshot of The new scorecard and semantic model that Power BI created.":::
 
 ## Step 2: Create a manual metric
 
 1. In the scorecard, select **New Metric**. 
 2. Decide on a **Metric name** and an **Owner**. 
 
-    Owners can be individuals or distribution groups within your organization’s Azure Active Directory.  
+    Owners can be individuals or distribution groups within your organization’s Microsoft Entra ID.  
 
 1. Set **Current** and **Target** values for your metrics. In this article, you enter the number manually. You can also connect it to an existing report visual in Power BI. See [Create connected metrics](service-goals-create-connected.md) for details. 
 1. Set the format for your values, and choose a **Status**, **Start date**, and **End date**. 
@@ -109,7 +109,7 @@ When you share a scorecard, the people you share it with can view and interact w
 
     When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-what-is.md) capacity.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)

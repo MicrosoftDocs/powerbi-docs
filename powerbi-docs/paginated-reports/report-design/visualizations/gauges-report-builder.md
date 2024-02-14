@@ -44,7 +44,7 @@ ms.reviewer: monaraya
   
  ![Screenshot showing radial gauge.](media/paginated-reports-visualizations/radial-gauge.gif "Image of radial gauge.")  
   
- Radial gauge options: Radial, Radial with Mini Gauge, Two Scales, 90 Degrees Northeast, 90 Degrees Northwest, 90 Degrees Southwest, 90 Degrees Southeast, 180 Degrees North, 180 Degrees South, 180 Degrees West180 Degrees East, and Meter.  
+ Radial gauge options: Radial, Radial with Mini Gauge, Two Scales, 90 Degrees Northeast, 90 Degrees Northwest, 90 Degrees Southwest, 90 Degrees Southeast, 180 Degrees North, 180 Degrees South, 180 Degrees West, 180 Degrees East, and Meter.  
   
 ### Linear gauge
   
@@ -91,13 +91,13 @@ ms.reviewer: monaraya
   
  `=Sum(CDbl(Fields!MyField.Value))`  
   
- For more information about aggregate expressions, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
+ For more information about aggregate expressions, see [Aggregate Functions Reference (Power BI Report Builder)](../../expressions/report-builder-functions-aggregate-functions-reference.md).  
   
 ### Define a group on a gauge
 
  After you have added a field to the gauge, you can add one data group. The gauge differs from all other data regions in Power BI paginated reports, which can display multiple groups in one data region. When you add a group by defining a group expression on the gauge, it is the same as when you add a row group on the Tablix data region. However, when the group is added, only the value of the last group is displayed as the pointer value on the gauge. For example, if you add a grouping expression on Year, the pointer will point to the value that represents the aggregate sales value for the last year in the dataset. For more information about groups, see [Understanding Groups &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/understanding-groups-report-builder-and-ssrs).  
   
- You might want to add a group on the gauge if, for example, you are displaying multiple gauges in a table or list and you want to display data aggregated by group. For more information, see [Add or Delete a Group in a Data Region &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs).  
+ You might want to add a group on the gauge if, for example, you are displaying multiple gauges in a table or list and you want to display data aggregated by group. For more information, see [Add or Delete a Group in a Data Region (Power BI Report Builder)](../add-delete-group-data-region-report-builder.md).  
   
 ##  <a name="PositioningData"></a> Position elements in a gauge  
  The gauge panel is the top-level container that holds one or more gauges. You can view the **Gauge Panel Properties** dialog box by clicking just outside the gauge. Each gauge, in turn, contains several gauge elements: a gauge scale, a gauge range, and a gauge pointer. When you are using the gauge, you will need to understand how elements are measured in the gauge panel in order to modify the size and location of these elements.  
@@ -146,11 +146,10 @@ ms.reviewer: monaraya
 |[Format pointers on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)|Provides general information about formatting pointers on gauges and detailed information about the formatting options for pointer styles available for radial and linear gauges.|  
 |[Format ranges on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-ranges-on-a-gauge-report-builder-and-ssrs)|Provides information about formatting ranges on gauges to indicate an important subsection of values on the gauge or visually indicate when the pointer value has gone into a certain span of values.|  
   
-## Next steps
+## Related content
 
- [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md)
- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Report parameters in Power BI Report Builder](../../parameters/report-builder-parameters.md)
- [Charts in Power BI paginated reports (Power BI Report Builder)](charts-report-builder.md)
- [Tables, matrixes, and lists in Power BI Report Builder](../../report-builder-tables-matrices-lists.md)
-  
+- [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md)
+- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../filter-group-sort-data-report-builder.md)
+- [Report parameters in Power BI Report Builder](../../parameters/report-builder-parameters.md)
+- [Charts in Power BI paginated reports (Power BI Report Builder)](charts-report-builder.md)
+- [Tables, matrixes, and lists in Power BI Report Builder](../../report-builder-tables-matrices-lists.md)

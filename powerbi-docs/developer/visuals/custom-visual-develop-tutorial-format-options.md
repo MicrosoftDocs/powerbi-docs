@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/19/2022
+ms.date: 12/19/2023
 ---
 
 # Tutorial: Add formatting options to the Circle Card visual
@@ -110,7 +110,7 @@ Now let's add new group called *color* for configuring the circle color and thic
     ```typescript
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
@@ -118,17 +118,20 @@ Now let's add new group called *color* for configuring the circle color and thic
         public circleColor = new formattingSettings.ColorPicker({
             name: "circleColor",
             displayName: "Color",
-            value: { value: "#ffffff" }
+            value: { value: "#ffffff" },
+            visible: true
         });
 
         public circleThickness = new formattingSettings.NumUpDown({
             name: "circleThickness",
             displayName: "Thickness",
-            value: 2
+            value: 2,
+            visible: true
         });
 
         public name: string = "circle";
         public displayName: string = "Circle";
+        public visible: boolean = true;
         public slices: FormattingSettingsSlice[] = [this.circleColor, this.circleThickness]
     }
 
@@ -181,7 +184,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 11. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
     ```typescript
-    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
+    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews[0]);
     this.visualSettings.circle.circleThickness.value = Math.max(0, this.visualSettings.circle.circleThickness.value);
     this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```
@@ -232,7 +235,7 @@ Now that the visual is completed and ready to be used, it's time to package it. 
 
 When your visual is ready, follow the directions in [Package a Power BI visual](./package-visual.md) and then, if you want, share it with others so they can [import](./import-visual.md) and enjoy it. 
 
-## Next steps
+## Related content
 
 * [Create a Power BI bar chart visual](create-bar-chart.md)
 * [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)

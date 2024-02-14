@@ -253,7 +253,6 @@ Some features aren't available yet in the current version of the new Format pane
 
 - Some visuals, such as Azure maps, Esri maps, Power Automate, and decomposition tree, haven't been updated with subcategories yet.
 
+## Related content
 
-## Next steps
-
-[Get started with Power BI Desktop](desktop-getting-started.md)
+- [Get started with Power BI Desktop](desktop-getting-started.md)

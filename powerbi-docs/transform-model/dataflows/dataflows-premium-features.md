@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/07/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -24,8 +24,6 @@ The following features are available only with Power BI Premium (PPU or a Premiu
 
 The following sections describe each of these features in detail.
 
-> [!NOTE]
-> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 > [!IMPORTANT]
 > This article applies to the first generation of dataflows (Gen1), and does not apply to the second generation (Gen2) of dataflows, which are available in Microsoft Fabric (preview). For more information, see [Getting from dataflows Generation 1 to dataflows Generation 2](/fabric/data-factory/dataflows-gen2-overview).
@@ -113,7 +111,7 @@ You can use DirectQuery to connect directly to dataflows, and thereby connect di
 
 Using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
-* **Avoid separate refresh schedules** - DirectQuery connects directly to a dataflow, removing the need to create an imported dataset. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
+* **Avoid separate refresh schedules** - DirectQuery connects directly to a dataflow, removing the need to create an imported semantic model. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the semantic model to ensure your data is synchronized.
 
 * **Filtering data** - DirectQuery is useful for working on a filtered view of data inside a dataflow. You can use DirectQuery with the compute engine to filter dataflow data and work with the filtered subset you need. Filtering data lets you work with a smaller and more manageable subset of the data in your dataflow.
 
@@ -144,7 +142,7 @@ There are a few known limitations with DirectQuery and dataflows:
 
 * Large dataflows might have trouble with timeout issues when viewing visualizations. Large dataflows that run into trouble with timeout issues should use Import mode.
 
-* Under data source settings, the dataflow connector will show invalid credentials if you're using DirectQuery. This warning doesn't affect the behavior, and the dataset will work properly.
+* Under data source settings, the dataflow connector will show invalid credentials if you're using DirectQuery. This warning doesn't affect the behavior, and the semantic model will work properly.
 
 ## Computed entities
 
@@ -178,7 +176,7 @@ Don't set a dataflow to incremental refresh in the following situations:
 
 * Linked entities shouldn't use incremental refresh if they reference a dataflow.
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

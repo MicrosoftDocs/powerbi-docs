@@ -70,7 +70,7 @@ You can generate a date table in your model by creating a calculated table using
 
 When your model already has a date table and you need an additional date table, you can easily clone the existing date table. It's the case when date is a [role playing dimension](star-schema.md#role-playing-dimensions). You can clone a table by creating a calculated table. The calculated table expression is simply the name of the existing date table.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

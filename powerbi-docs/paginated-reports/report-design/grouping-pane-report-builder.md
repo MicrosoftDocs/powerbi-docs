@@ -27,7 +27,7 @@ ms.reviewer: saurkumar
 - **Advanced**. Use the **Advanced mode** to view all members of row and column groups, and to set properties on static members. Read more about [advanced mode](#advanced-mode). 
   
 ## Default mode  
- In default mode, the Row Groups pane and the Column Groups pane display a hierarchical view for all parent groups, child groups, and adjacent groups. You can add parent, child, and detail groups by dragging fields from the Report Data pane and inserting them in the group hierarchy. A child group appears indented under its parent group. An adjacent group appears at the same indent level as its sibling groups. To add an adjacent group, use the **Add Group** shortcut. For more information, see [Add or delete a group in a data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs).  
+ In default mode, the Row Groups pane and the Column Groups pane display a hierarchical view for all parent groups, child groups, and adjacent groups. You can add parent, child, and detail groups by dragging fields from the Report Data pane and inserting them in the group hierarchy. A child group appears indented under its parent group. An adjacent group appears at the same indent level as its sibling groups. To add an adjacent group, use the **Add Group** shortcut. For more information, see [Add or delete a group in a data region (Power BI Report Builder)](add-delete-group-data-region-report-builder.md).  
  
  The following figure shows a tablix data region with nested row groups and nested and adjacent column groups.  
   
@@ -76,8 +76,9 @@ In Advanced mode, the Row Groups pane and the Column Groups pane display a hiera
   
 - **(Static)** Indicates a static member with no header cell, known as a hidden static.  
   
-## Next steps  
- [Filter, group, and sort data (Power BI Report Builder)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
+## Related content
+
+- [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)   
+- [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)  
   
   

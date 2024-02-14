@@ -34,7 +34,7 @@ Here are some examples of how you can use the planning tool.
 
 ### Review the test results
 
-Review the results of your load assessment using the [Premium metrics app](../../enterprise/service-premium-metrics-app.md).
+Review the results of your load assessment using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
 ## Power BI capacity tools GitHub repository
 
@@ -42,7 +42,7 @@ The [Power BI capacity tools GitHub repository](https://github.com/microsoft/Pow
 
 The repository is open source. Users are encouraged to contribute by adding more tools related to Power BI Premium and Embedded capacities, and improving the existing ones.
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Power BI Embedded performance best practices](embedded-performance-best-practices.md)

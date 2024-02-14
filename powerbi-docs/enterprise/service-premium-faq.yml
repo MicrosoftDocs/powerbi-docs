@@ -8,8 +8,9 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 11/24/2022
+  ms.date: 12/19/2023
   LocalizationGroup: Premium
+  
 title: Power BI Premium FAQ
 summary: |
   This article addresses questions frequently asked about Power BI Premium. For an overview, see [What is Power BI Premium?](service-premium-what-is.md).
@@ -33,8 +34,11 @@ sections:
           
           * **Proactive limit** – a proactive limit sets the rate of expenses that Autoscale can generate, by limiting the number of autoscale v-cores a capacity can use. For example, by setting a maximum autoscale of v-cores to one v-core, you ensure that the maximum charge you can incur is 30 days of autoscaling with one v-core.
           
-          * **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, by setting an expenditure limit on the Azure subscription used with autoscale. If the subscription’s budget is exhausted, Power BI is prevented from using the v-core resources for that subscription, and autoscale shuts off. You can set a budget for the Azure subscription that autoscale uses by following the [Azure budget tutorial](/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
+          * **Reactive limit** – you can also set a reactive limit to the cost for autoscaling, by setting an expenditure limit on the Azure subscription used with autoscale. To set a reactive limit, you'll need to do the following:
           
+            * Set an [Azure Policy](/azure/governance/policy/overview) to restrict the resource group to resources of type `microsoft.powerbidedicated/autoscalevcores` only.
+
+            * Create an [Action Group](/azure/azure-monitor/alerts/action-groups) within your [Azure budget](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) which calls a custom Azure PowerShell Runbook to get and delete all resources in the resource group.
           
       - question: |
           How does resource utilization cause Premium to autoscale?
@@ -45,7 +49,7 @@ sections:
           
           *Background utilization* is evaluated by considering all the background operations that completed during the past twenty-four hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
           
-          A capacity consists of a defined number of v-cores. The [Power BI Premium Utilization and Metrics](service-premium-metrics-app.md) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
+          A capacity consists of a defined number of v-cores. The [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
           
           If you have a P1 subscription with eight v-cores, each evaluation cycle quota is 240 (8 × 30) seconds of CPU utilization. If the sum of both utilizations exceeds the total v-quota in your capacity, your capacity will autoscale using an additional v-core for the next 24 hours.
           
@@ -56,9 +60,7 @@ sections:
       - question: |
           What happens to traffic during overload if I don't autoscale?
         answer: |
-          If a capacity’s utilization exceeded a 100% and it cannot use autoscale, due to being turned off or already at its maximum v-core utilization value, the capacity enters into a temporary *interactive request delay* mode, during which each interactive request (such as report load, visual interaction, and so on) is delayed before it is sent to the engine for execution. The amount of delay is proportional to the amount of overload detected. Overload of 100% will incur a delay of 20 seconds. 
-          
-          The capacity stays in *interactive request delay* mode if the previous evaluation is at greater than 100% resource usage.
+          During overload, if you don't autoscale [throttling](/fabric/enterprise/throttling) is applied.
 
       - question: |
           How is the overload score calculated?
@@ -74,12 +76,12 @@ sections:
       - question: |
           How can I use my utilization data to predict my capacity needs?
         answer: |
-          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you are to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you will arrive at 100% utilization of your resources.
+          Your metrics report dataset retains 30 to 45 days of data. You can use the report to indicate how close you're to your capacity's maximum resources, and if you save monthly snapshots, you can compare them to indicate trends of growth and extrapolate the rate in which you'll arrive at 100% utilization of your resources.
 
       - question: |
           How can my utilization data inform me I should turn on autoscale?
         answer: |
-          Utilization data does not currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
+          Utilization data doesn't currently indicate whether requests were throttled due to capacity being in *interactive request delay* mode. The information will be added to the utilization app so admins can determine whether users experienced delays, and to what extent the delays are due to overload without autoscaling.
 
       - question: |
           How can I get notified that I'm approaching my max capacity?
@@ -94,7 +96,7 @@ sections:
       - question: |
           How do I get visibility into resources of Premium beyond CPU time?
         answer: |
-          Customers don't have visibility through utilization data to the memory footprint of their operations, and cannot know ahead of time whether any of their operations is subject to failures.
+          Customers don't have visibility through utilization data to the memory footprint of their operations, and can't know ahead of time whether any of their operations is subject to failures.
 
       - question: |
           How do I use utilization data to perform chargebacks?
@@ -106,7 +108,7 @@ sections:
         answer: |
           When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
           
-          By displaying your capacity's CPU usage levels, the [Power BI Premium Utilization and Metrics](service-premium-metrics-app.md) app helps you understand how your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data that's displayed in the app.      
+          By displaying your capacity's CPU usage levels, the [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app helps you understand how your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data that's displayed in the app.      
           
       - question: |
           Premium Per User (PPU)

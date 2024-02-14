@@ -38,7 +38,7 @@ An image is a Power BI paginated report item that contains a reference to an ima
 - When the report is run in Report Builder or Report Designer, preview uses the credentials of the user to display the image.
 - When the report is run in the Power BI service, the image must be publicly available and not require authentication or additional sign-in to locate the image via external URL.
   
- For more information about adding an external image to a report, see [Add an External image &#40;Report Builder and SSRS&#41;](./add-external-image-report-builder-service.md).  
+ For more information about adding an external image to a report, see [Add an External image &#40;Report Builder)](./add-external-image-report-builder-service.md).  
   
 ##  <a name="BackgroundImages"></a> Background images
 
@@ -64,9 +64,9 @@ These are the image file types you can use in paginated reports:
  
 SVG files aren't supported.
  
-## Next steps
+## Related content
 
- [Add an external image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)  
- [Embed an image in a report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)  
- [Add a background image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)  
- [Add a data-bound image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)  
+- [Add an external image &#40;Power BI Report Builder and service&#41;](./add-external-image-report-builder-service.md)  
+- [Embed an image in a report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)  
+- [Add a background image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)  
+- [Add a data-bound image &#40;Power BI Report Builder and service&#41;](./add-data-bound-image-report-builder-service.md)  

@@ -1,5 +1,5 @@
 ---
-title: View Power BI content as an external guest user (Azure AD B2B)
+title: View Power BI content as an external guest user (Microsoft Entra B2B)
 description: Learn how to use the Power BI mobile app to view content shared with you from an external organization.
 author: paulinbar
 ms.author: painbar
@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 03/27/2023
+ms.date: 10/22/2023
 ---
 
 # View Power BI content shared with you from an external organization
 
-Power BI integrates with Azure Active Directory business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users. The Power BI mobile app supports this Azure AD B2B integration, so you can access Power BI content from external organizations that has been shared with you directly from your app.
+Power BI integrates with Microsoft Entra business-to-business (Microsoft Entra B2B) to allow secure distribution of Power BI content to guest users. The Power BI mobile app supports this Microsoft Entra B2B integration, so you can access Power BI content from external organizations that has been shared with you directly from your app.
 
 Applies to:
 
@@ -22,9 +22,9 @@ Applies to:
 
 ## Access shared external content
 
-Before you can access content from external orgs, someone first needs to share something with you. If this is the first item shared with you as an external guest user of an org, you must first claim the invitation in a browser. You cannot claim the invitation in the Power BI app.
+Before you can access content from external orgs, someone first needs to share something with you. If this is the first item shared with you as an external guest user of an org, you must first claim the invitation in a browser. You can't claim the invitation in the Power BI app.
 
-To access content that has been shared with you from external organizations, on the home page, tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip will change to **From external orgs**, and a number of external items will be shown on the strip.
+To access content that has been shared with you from external organizations, on the home page, tap the arrow on the **Recommended** strip and choose **Content from external orgs**. The name of the strip changes to **From external orgs**, and a number of external items will be shown on the strip.
 
 :::image type="content" source="./media/mobile-apps-b2b/power-bi-mobile-external-content-strip.gif" alt-text="Animation showing how to switch the Recommended strip to the From external orgs strip." border="false":::
 
@@ -45,7 +45,7 @@ From the **From external orgs** strip or from the list of shared external conten
 
 ::::image type="content" source="./media/mobile-apps-b2b/mobile-b2b-go-to-shared-list.png" alt-text="Screenshot of guest view navigation." border="false":::
 
-In the header you can see that you are connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
+In the header you can see that you're connected as a guest. To see all the content that's been shared with you in that organization, tap the arrow to the left of the item's name. To get back to your home organization, tap **Exit**.
 
 The following image shows your **Shared with me** page in the external organization you're connected to as a guest. It shows you all the content in that organization that you can access.
 
@@ -53,14 +53,13 @@ The following image shows your **Shared with me** page in the external organizat
 
 ## Access external shared content via email link 
 
-When someone shares an item with you, you get an email with a link to the item. If the item is in an external organization, you can still access the item by clicking the link. When you click the link, the app will open, you'll be asked to confirm switching to the external organization, and then the item will open.
+When someone shares an item with you, you get an email with a link to the item. If the item is in an external organization, you can still access the item by clicking the link. When you select the link, the app will open, you'll be asked to confirm switching to the external organization, and then the item will open.
 
 ## Considerations and limitations
 
 - Users must have an active Power BI account and home tenant.
 - Users must be signed in to their Power BI home tenant, before they can access the content shared with them from an external tenant.
-- The app doesn't support cross-cloud B2B sharing scenarios, where a user's home tenant and the external item being shared with them are hosted in different clouds.
-- Conditional access and other Intune policies aren't supported in Azure AD B2B and in Power BI mobile. That means that the app enforces only the home organization's policies, if they exist.
+- Conditional access and other Intune policies aren't supported in Microsoft Entra B2B and in Power BI mobile. That means that the app enforces only the home organization's policies, if they exist.
 - Push notifications are received from the home organization site only (even when the user is connected as a guest to an external organization). Opening the notification reconnects the app to the user's home organization site.
 - If the user shuts down the app, when reopened the app connects automatically to the user's home organization.
 - When connected to an external organization, some actions are disabled: favorite items, data alerts, commenting, and sharing.

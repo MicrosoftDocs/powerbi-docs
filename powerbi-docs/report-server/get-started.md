@@ -47,7 +47,7 @@ A Power BI report is a multi-perspective view into a data model, with visualizat
 Read about [installing Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## Paginated reports
-Paginated reports (.rdl) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. They're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files. 
+Paginated reports (.rdl) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. They're great for generating fixed-layout, print-ready documents optimized for printing, such as PDF and Word files. 
 
 ![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 
@@ -65,8 +65,9 @@ Take advantage of Power BI Report Server programming features to extend and cust
 
 More [Report Server developer documentation](/sql/reporting-services/reporting-services-developer-documentation).
 
-## Next steps
-[Install Power BI Report Server](install-report-server.md)  
-[Download Microsoft Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+## Related content
+
+* [Install Power BI Report Server](install-report-server.md)  
+* [Download Microsoft Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

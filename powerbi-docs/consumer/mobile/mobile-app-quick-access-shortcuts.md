@@ -69,8 +69,7 @@ Long tap the app launcher to display a quick access menu for frequently viewed i
 
 You can create a permanent shortcut to any of the listed items just by dragging the desired shortcut icon to your device's home screen.
 
-## Next steps
+## Related content
 
-* [Find and access your content with Google Search](mobile-app-find-access-google-search.md)
 * If you are on iOS and are looking for Siri shortcuts, see [Using Siri Shortcuts in Power BI Mobile iOS App](mobile-apps-ios-siri-shortcuts.md).
 * [Make and view favorites in the Power BI mobile apps](mobile-apps-favorites.md)

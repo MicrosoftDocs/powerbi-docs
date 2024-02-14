@@ -45,9 +45,10 @@ chart-areas-diagram.png "Shows a diagram of a chart area")
 ## Using Range Charts  
  Range charts have two values per data point. If your chart contains two series that share the same category (x) axis, you can use a range chart to show the difference between the two series. Range charts are best suited for displaying high-low or top-bottom information. For example, if your first series contains the highest sale for each day in January, and your second series contains the lowest sale for each day in January, you can use a range chart to show the difference between the highest and lowest sale for each day. For more information, see [Range Charts &#40;Report Builder&#41;](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs).  
   
-## Next steps
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
- [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)   
- [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)  
+## Related content
+
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
+- [Displaying a Series with Multiple Data Ranges on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)   
+- [Chart Types &#40;Power BI Report Builder&#41;](chart-types-report-builder.md)  
   
   

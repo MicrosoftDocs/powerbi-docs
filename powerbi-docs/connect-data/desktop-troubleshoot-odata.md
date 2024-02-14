@@ -67,7 +67,7 @@ If you encounter such an error, ensure the application registration for your ODa
 * Scope *user_impersonation* is defined.
 * The application's permissions are appropriately set by the administrator.
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

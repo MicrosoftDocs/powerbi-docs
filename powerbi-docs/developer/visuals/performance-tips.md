@@ -3,7 +3,7 @@ title: Performance tips for creating quality Power BI custom visuals
 description: Learn specific techniques to develop high performance Power BI custom visuals for your organization.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: sranins, asafmozes
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
@@ -163,8 +163,6 @@ For example, learn how to [avoid unnecessary canvas state changes](https://web.d
 
 Use [requestAnimationFrame](https://www.w3.org/TR/animation-timing/) to update your on-screen animations, so your animation functions are called **before** the browser calls another repaint.
 
-For more information, see this [sample](https://testdrive-archive.azurewebsites.net/Graphics/RequestAnimationFrame/Default.html) on smooth animation using `requestAnimationFrame`.
-
 ### Animation loops
 
 Does the animation loop redraw unchanged elements?
@@ -185,7 +183,7 @@ Instead, consider using a visual constructor method to draw everything static. T
 * Text size calculation: When there are a lot of data points, don't waste time calculating text size for each point. Calculate a few points and then estimate.
 * If some elements of the visual aren't seen in the display, there's not need to render them.
 
-## Next steps
+## Related content
 
 [Optimization guide for Power BI](../../guidance/power-bi-optimization.md)
 

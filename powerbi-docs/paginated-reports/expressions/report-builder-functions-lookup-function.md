@@ -92,7 +92,7 @@ In the following expression, **Lookup** compares the value of ProductID to ID in
 =Lookup(Fields!ProductID.Value, Fields!ID.Value, Fields!Name.Value, "Product")
 ```
 
-## See also
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

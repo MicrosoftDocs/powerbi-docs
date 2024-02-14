@@ -10,7 +10,7 @@ ms.date: 07/21/2023
 ---
 # Add a language to a report in Translations Builder
 
-When you open a .pbix project in Translations Builder for the first time, the translation grid displays a row  for each unhidden table, measure, and column in the project's underlying data model. The translation grid doesn't display rows for dataset objects in the data model that are hidden from the report view. Hidden objects aren't displayed on a report and don't require translations.
+When you open a .pbix project in Translations Builder for the first time, the translation grid displays a row for each unhidden table, measure, and column in the project's underlying data model. The translation grid doesn't display rows for data model objects in the data model that are hidden from the report view. Hidden objects aren't displayed on a report and don't require translations.
 
 The following screenshot shows the starting point for a simple data model before it's been modified to support secondary languages.
 
@@ -21,7 +21,7 @@ The following screenshot shows the starting point for a simple data model before
 
 If you examine the translation grid for this .pbix project, you can see the first three columns contain read-only columns used to identity each metadata translation. Each metadata translation has an **Object Type**, a **Property**, and a **Name**. Translations for the **Caption** property are always used. You can add translations for the **Description** and **DisplayFolder** properties if necessary.
 
-The fourth column in the translation grid always displays the translations for the dataset's default language and locale, which in this case is **English [en-US]**.
+The fourth column in the translation grid always displays the translations for the data model's default language and locale, which in this case is **English [en-US]**.
 
 :::image type="content" source="./media/translation-builder-add-language/translation-grid-start.png" alt-text="Screenshot shows a grid of string values for the default language and locale.":::
 
@@ -55,7 +55,7 @@ To add one or more secondary languages, follow these steps.
    :::image type="content" source="./media/translation-builder-add-language/power-bi-save-icon.png" alt-text="Screenshot shows the Power BI Desktop window with the save icon highlighted." lightbox="./media/translation-builder-add-language/power-bi-save-icon.png":::
 
    > [!IMPORTANT]
-   > Translations Builder can modify the dataset loaded in memory, but it can't save the in-memory changes back to the underlying .pbix file. Always return to Power BI Desktop and select the **Save** command after you add languages or create or update translations.
+   > Translations Builder can modify the data model loaded in memory, but it can't save the in-memory changes back to the underlying .pbix file. Always return to Power BI Desktop and select the **Save** command after you add languages or create or update translations.
 
 Adding a new language adds a new column of editable cells to the translations grid.
 
@@ -121,6 +121,6 @@ let config = {
 let report = powerbi.embed(reportContainer, config);
 ```
 
-## Next steps
+## Related content
 
 - [Add a Localized Labels table to a Power BI report](translation-builder-localize-label.md)

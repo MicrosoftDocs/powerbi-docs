@@ -180,9 +180,9 @@ You can specify additional output parameters for the following export formats.
     - rdl:UseFormattedValues=true/false
 
 #### Open hyperlink in same browser window
-You can append `rdl:targetSameWindow=true` to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
+You can append `rdl:targetSameWindow=true` to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](report-design/add-hyperlink-url-report-builder.md).
 
-## Next steps
+## Related content
 
 - [Pass a report parameter in a URL for a paginated report in Power BI](parameters/pass-report-parameter-url.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

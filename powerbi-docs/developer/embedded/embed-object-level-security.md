@@ -38,7 +38,7 @@ If the report you want to embed is using one of the following scenarios, you mig
 
 * [Cloud OLS](./cloud-rls.md#generate-an-embed-token)
 * [SQL Server Analysis Services (SSAS)](sql-server-analysis-services-embed.md#generate-an-embed-token)
-* [Azure AD](./embed-azure-analysis-services.md#generate-an-embed-token)
+* [Microsoft Entra ID](./embed-azure-analysis-services.md#generate-an-embed-token)
 
 The following example shows how to generate a token to hide a table with sensitive information using OLS:
 
@@ -73,7 +73,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 [See restrictions for OLS models](/analysis-services/tabular-models/object-level-security#restrictions)
 
-## Next steps
+## Related content
 
 [Object-level security in Azure Analysis Services](/analysis-services/tabular-models/object-level-security)
 

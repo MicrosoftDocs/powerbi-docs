@@ -3,10 +3,8 @@ title: View dashboards in the Power BI mobile apps
 description: Create or connect to dashboards in the Power BI service. Then view them in the Power BI mobile apps.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.custom: contperf-fy21q3
 ms.topic: how-to
 ms.date: 08/10/2020
 ---
@@ -144,7 +142,8 @@ If you're the dashboard owner, *in the Power BI service* you can create a view o
 
 Read more about [creating a phone view of a dashboard](../../create-reports/service-create-dashboard-mobile-phone-view.md).
 
-## Next steps
+## Related content
+
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 * [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)

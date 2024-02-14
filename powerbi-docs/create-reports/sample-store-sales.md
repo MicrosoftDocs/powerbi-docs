@@ -12,7 +12,7 @@ LocalizationGroup: Samples
 ---
 # Store Sales sample for Power BI: Take a tour
 
-The Store Sales built-in sample contains a report and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, variance, and new-store analysis.
+The Store Sales built-in sample contains a report and semantic model that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, variance, and new-store analysis.
 
 :::image type="content" source="media/sample-store-sales/power-bi-store-sales.png" alt-text="Screenshot shows the report for the Store Sales sample." lightbox="media/sample-store-sales/power-bi-store-sales.png":::
 
@@ -20,7 +20,7 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -37,7 +37,7 @@ This tour explores the Store Sales sample in the Power BI service. Because the r
 
 1. Select the sample. It opens the report in Reading mode.
 
-   Power BI imports the built-in sample, adding a report and a dataset to your **My workspace**.
+   Power BI imports the built-in sample, adding a report and a semantic model to your **My workspace**.
 
 ### Get the .pbix file for this sample
 
@@ -53,7 +53,7 @@ If you'd like to view it in the Power BI service, you can publish it there.
 
 1. In the **Publish to Power BI** dialog box, choose a workspace, and then **Select**.
 
-   Power BI imports the sample, adding the report and dataset to your selected workspace.
+   Power BI imports the sample, adding the report and semantic model to your selected workspace.
 
 ## Explore the report
 
@@ -63,7 +63,7 @@ To open the Store Sales report, go to your workspace and select that report:
 
 If you're following along in Power BI Desktop, open the *.pbix* file to see the report.
 
-You can edit current visualizations and create your own visualizations that use the dataset for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
+You can edit current visualizations and create your own visualizations that use the semantic model for this sample. This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
 Select **Edit** in the **Power BI** header bar to explore in the editing view:
 
@@ -128,7 +128,7 @@ Under **Pages**, select **District Monthly Sales**. This page includes the follo
 
 ## Create a Store Sales dashboard
 
-A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one dataset. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and datasets. Select a visualization to take you to the report that was used to create it.
+A Power BI *dashboard* is a single page that contains visualizations that can come from one or more reports, and each report is based on one semantic model. You can also generate visualizations on the dashboard by using the Q&A *Ask a question about your data* feature to explore the data associated with a report. Think of a dashboard as an entryway into the underlying reports and semantic models. Select a visualization to take you to the report that was used to create it.
 
 To create a dashboard in the Power BI service:
 
@@ -154,7 +154,7 @@ For more information, see [Introduction to dashboards for Power BI designers](se
 
 ## Ask questions of the data
 
-A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any dataset attached to your dashboard.
+A dashboard offers the ability to ask questions about data in natural language to create visuals. It doesn't matter how you create your dashboard or which tiles it has. You can ask questions about any semantic model attached to your dashboard.
 
 1. In the dashboard, select **Ask a question about your data**.
 
@@ -181,7 +181,7 @@ A dashboard offers the ability to ask questions about data in natural language t
 > [!NOTE]
 > If you create a useful visual, you can add it to this dashboard or a new dashboard. Select **Pin visual** and follow the procedure from the previous section.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

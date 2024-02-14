@@ -53,7 +53,7 @@ Are you looking for information about viewing dashboards on a mobile device? Try
 
     Power BI saves the phone layout automatically.
 
-## Next steps
+## Related content
 
 * [About mobile-optimized Power BI reports](power-bi-create-mobile-optimized-report-about.md)
 * [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)

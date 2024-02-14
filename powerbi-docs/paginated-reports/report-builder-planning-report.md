@@ -43,6 +43,6 @@ Consider whether you want to hide report items, including data regions, groups, 
   
 You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to upload the report to Power BI. Uploading it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and deliver the report by email to other individuals. You can have the report delivered in a specific export format, if you prefer. 
   
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

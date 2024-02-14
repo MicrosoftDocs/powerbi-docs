@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/24/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 
@@ -505,7 +505,7 @@ For more information about the feature, see [Automatic page refresh in Power BI]
 
    :::image type="content" source="media/dataflows-streaming/dataflows-streaming-39.png" alt-text="Screenshot that shows frequency settings for automatic page refresh.":::
 
-5. To share a real-time report, first publish back to the Power BI service. Then you can set up your dataflow credentials for the dataset and share.
+5. To share a real-time report, first publish back to the Power BI service. Then you can set up your dataflow credentials for the semantic model and share.
 
 > [!TIP]
 > If your report isn't updated as fast as you need it to be or in real time, check the [documentation for automatic page refresh](../../create-reports/desktop-automatic-page-refresh.md). Follow the FAQs and troubleshooting instructions to figure out why this problem might be happening.
@@ -560,7 +560,7 @@ When you're authoring streaming dataflows, be mindful of the following considera
 
 You can access cold storage only by using the **Dataflows** connector available starting in the July 2021 Power BI Desktop update. The previous Power BI dataflow connector allows only connections to streaming data (hot) storage. The connector's data preview doesn't work.
 
-## Next steps
+## Related content
 
 This article provided an overview of self-service streaming data preparation by using streaming dataflows. The following articles provide information about how to test this capability and how to use other streaming data features in Power BI:
 

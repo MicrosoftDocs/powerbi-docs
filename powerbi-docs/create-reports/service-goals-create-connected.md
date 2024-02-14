@@ -103,7 +103,7 @@ Currently there are limitations on the values you can choose in a visual.
 - In a table with more than one column of measures, Power BI selects the first measure in the row.
 
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

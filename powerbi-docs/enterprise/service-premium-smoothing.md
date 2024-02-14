@@ -13,11 +13,11 @@ LocalizationGroup: Premium
 
 # Performance smoothing
 
-Power BI runs performance smoothing on all Premium capacities. Smoothing is used to calculate the impact of your operations on your capacity. Knowing what impact your operations have on your capacity affects many Power BI functions such as billing, [autoscale](service-premium-auto-scale.md) and the metrics you see in the [Premium metrics app](service-premium-metrics-app.md).
+Power BI runs performance smoothing on all Premium capacities. Smoothing is used to calculate the impact of your operations on your capacity. Knowing what impact your operations have on your capacity affects many Power BI functions such as billing, [autoscale](service-premium-auto-scale.md) and the metrics you see in the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
 In a Premium capacity, CPU usage is the most important measure, because it determines how much of your capacity is in use. By flattening your CPU usage over time, smoothing helps you avoid being penalized due to bursts of intensive CPU usage. When your CPU usage is flatter, you can avoid being throttled when small bursts occur.
 
-The figures below show the way CPU usage is currently reported in the [CPU over time](service-premium-metrics-app.md#cpu-over-time) chart, as opposed to the way it used to be reported.  
+The figures below show the way CPU usage is reported in the [Utilization](/fabric/enterprise/metrics-app-compute-page#utilization) chart, as opposed to the way it used to be reported.  
 
 :::row:::
    :::column span="":::
@@ -44,7 +44,7 @@ During each timepoint, Power BI adds up the average CPU usage from both the inte
 
 ## How to detect overload?
 
-You can see if your capacity is overloading, by reviewing the [CPU over time](service-premium-metrics-app.md#cpu-over-time) chart in the Premium metrics app. A spike that goes over the yellow line, indicates an overload. To further investigate the overload, drill through to the [timepoint](service-premium-metrics-app.md#timepoint) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
+You can see if your capacity is overloading, by reviewing the [Utilization](/fabric/enterprise/metrics-app-compute-page#utilization) chart in the Premium metrics app. A spike that goes over the line indicates an overload. To further investigate the overload, drill through to the [timepoint](/fabric/enterprise/metrics-app-timepoint-page) page. You can then review both your *interactive* and *background* operations, and see which ones were responsible for overloading your capacity. You can also determine, when the overloading events took place.
 
 ## How to resolve overload?
 
@@ -56,7 +56,7 @@ When your capacity overloads, you can choose to either turn on [autoscale](servi
 | A few overload incidents during the day | Turn on [autoscale](service-premium-auto-scale.md) | When you encounter a fairly low number of overload incidents, it's important to note when they happen. If these incidents happen during peak time, when your capacity is heavily used, throttling will be applied and slow down operations on your capacity. As a result, your capacity will provide a below average experience to the people who use it. In these situations, it's worth turning on [autoscale](service-premium-auto-scale.md), to avoid throttling. |
 | Many overload incidents | Upgrade to a higher SKU | When your investigation indicates that there are many overload incidents on your capacity, it's worth considering an upgrade to a higher SKU. In such cases, consider the cost of constant autoscale versus the cost of upgrading to a higher SKU. |
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [What is Power BI Premium?](service-premium-what-is.md)

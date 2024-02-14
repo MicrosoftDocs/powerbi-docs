@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 02/03/2023
+ms.date: 10/26/2023
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -27,10 +27,10 @@ Paginated reports natively support the following list of data sources:
 | Data source | Authentication | Notes |
 | --- | --- | --- |
 | Azure SQL Database <br>Azure Synapse Analytics | Basic, single sign-on (SSO), OAuth2 | You can use an Enterprise Gateway with Azure SQL Database.   |
-| Azure SQL Managed Instance | Basic | Through public or private endpoints (private endpoints need to be routed through Enterprise Gateway)  |
+| Azure SQL Managed Instance | Basic, SSO, OAuth2 | Through public or VNet-local endpoints (VNet-local endpoints need to be routed through Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | The Azure Analysis Services firewall must be disabled or configured to allow all IP ranges in the Azure Germany region. This applies only in the Azure Germany region. SSO from external tenant isn't supported. |
-| Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission. Only Import mode and DirectQuery Power BI datasets are supported. Report queries using a DirectQuery Power BI dataset as a data source have a fixed 10-minute time-out. For report queries that take longer than 10 minutes, use the Power BI dataset's [XMLA Read/Write endpoint](../enterprise/service-premium-connect-tools.md) as the report data source. |
-| Premium Power BI dataset (XMLA) | SSO | To ensure proper connectivity in Power BI Report Builder, ensure that the **Do not use credentials** option is selected when setting your data source.<br> Access through the XMLA honors security group membership set at the workspace or app level.<br> Users with at least a [Contributor role in a workspace](../collaborate-share/service-roles-new-workspaces.md) can render paginated reports with Premium Power BI datasets. Other users need [Build permission on the underlying datasets](../connect-data/service-datasets-build-permissions.md).    |
+| Power BI semantic model | SSO | Premium and non-Premium Power BI semantic models. Requires Read permission. Only Import mode and DirectQuery Power BI semantic models are supported. Report queries using a DirectQuery Power BI semantic model as a data source have a fixed 10-minute time-out. For report queries that take longer than 10 minutes, use the Power BI semantic model's [XMLA Read/Write endpoint](../enterprise/service-premium-connect-tools.md) as the report data source. |
+| Premium Power BI semantic model (XMLA) | SSO | To ensure proper connectivity in Power BI Report Builder, ensure that the **Do not use credentials** option is selected when setting your data source.<br> Access through the XMLA honors security group membership set at the workspace or app level.<br> Users with at least a [Contributor role in a workspace](../collaborate-share/service-roles-new-workspaces.md) can render paginated reports with Premium Power BI semantic models. Other users need [Build permission on the underlying datasets](../connect-data/service-datasets-build-permissions.md).    |
 | Dataverse | SSO, OAuth2 | Can't use a gateway as multifactor authentication (MFA)  isn't supported.
 | Enter data | N/A | Data is embedded in the report. |
 
@@ -75,16 +75,16 @@ For Azure SQL Database data sources, here are the supported authentication types
 
 - Basic (user name and password)
 - SSO (single sign-on)
-- OAuth2 (stored Azure Active Directory token)
+- OAuth2 (stored Microsoft Entra token)
 
-For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source connects to needs to have [Azure Active Directory (Azure AD) authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Azure AD generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
+For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source connects to needs to have [Microsoft Entra authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, Microsoft Entra ID generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
   
 ## Considerations and limitations
 
-When using a Power BI dataset as a data source, you might see an error message **Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint.** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the **Analyze in Excel** endpoint [(which has a 2-GB data limit)](../collaborate-share/service-analyze-in-excel.md#considerations-and-limitations) to support Power BI datasets in any workspace.
+When using a Power BI semantic model as a data source, you might see an error message **Request failed because response is too large, either reduce the amount of data or use the XMLA endpoint.** if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. Note that when using XMLA endpoint, you need to grant Build permission on the Power BI semantic model to all users viewing the paginated report. Learn more about the [XMLA endpoint](../enterprise/service-premium-connect-tools.md). By default, Power BI Report Builder and paginated reports use the **Analyze in Excel** endpoint [(which has a 2-GB data limit)](../collaborate-share/service-analyze-in-excel.md#considerations-and-limitations) to support Power BI semantic models in any workspace.
 
 ## Next steps
-
-[View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
+- [Connect to an Oracle data source](./report-data/oracle-connection-type.md)
+- [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md).
 
 More questions? [Try the Power BI Community.](https://community.powerbi.com/)

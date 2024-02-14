@@ -16,9 +16,9 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. The exercises show you how to work with data on a dashboard and design dataset visualizations. Here's an example dashboard:
+This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. The exercises show you how to work with data on a dashboard and design semantic model visualizations. Here's an example dashboard:
 
-:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot of an example Power BI dashboard with sample dataset visualizations." border="false":::
+:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot of an example Power BI dashboard with sample semantic model visualizations." border="false":::
 
 In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md)?
 
@@ -34,7 +34,7 @@ In this tutorial, you complete the following tasks:
 > * Create a dashboard by pinning tiles from the report.
 > * Add other visualizations to a dashboard with the Q&A natural-language tool.
 > * Resize, rearrange, and edit details for the tiles on the dashboard.
-> * Clean up resources by deleting the dataset, report, and dashboard.
+> * Clean up resources by deleting the semantic model, report, and dashboard.
 
 ## Sign up for the Power BI service
 
@@ -46,7 +46,7 @@ You need a Power BI Pro or Premium Per User (PPU) license to create content in P
 
 Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports.
 
-For this tutorial, we start from scratch by creating a report in the Power BI service rather than through the Desktop. We create a dataset from a simple Microsoft Excel file that contains sample financial data.
+For this tutorial, we start from scratch by creating a report in the Power BI service rather than through the Desktop. We create a semantic model from a simple Microsoft Excel file that contains sample financial data.
 
 1. Open the Power BI service (app.powerbi.com) in your browser. 
 
@@ -56,28 +56,28 @@ For this tutorial, we start from scratch by creating a report in the Power BI se
 
 1. Select **My workspace** in the navigation pane.
 
-1. Select **New** > **Dataset** to initiate the import process. The **Add data to start building a report** page opens.
+1. Select **New** > **Semantic model** to initiate the import process. The **Add data to start building a report** page opens.
 
-   :::image type="content" source="media/service-get-started/new-dataset.png" alt-text="Screenshot that shows how to create a new dataset to initiate the import process." border="false":::
+   :::image type="content" source="media/service-get-started/new-dataset.png" alt-text="Screenshot that shows how to create a new semantic model to initiate the import process." border="false":::
 
    > [!NOTE]
    > If you select **Upload** instead of **New**, the Power BI service uploads the entire Excel workbook. You can then open and edit the workbook in Excel Online.
 
 1. On the **Add data to start building a report** page, select **Excel**.
 
-   :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel dataset." border="false":::
+   :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel semantic model." border="false":::
 
 1. In the **Select a file** dialog, browse to the location where you saved the Excel file on your computer.
 
 1. Select the file and choose **Import**.
 
-   The Power BI service imports the sample data from the Excel file as a dataset and opens the Financial Sample page.
+   The Power BI service imports the sample data from the Excel file as a semantic model and opens the Financial Sample page.
    
-   :::image type="content" source="media/service-get-started/financial-sample-dataset.png" alt-text="Screenshot that shows the imported Financial Sample dataset page." border="false":::
+   :::image type="content" source="media/service-get-started/financial-sample-dataset.png" alt-text="Screenshot that shows the imported Financial Sample semantic model page." border="false":::
    
-   You can now use the sample dataset to create reports and dashboards. 
+   You can now use the sample semantic model to create reports and dashboards. 
 
-1. On the Financial Sample dataset page, at the top, select **Create a report** > **Start from scratch** to open the report editor.
+1. On the Financial Sample semantic model page, at the top, select **Create a report** > **Start from scratch** to open the report editor.
 
    :::image type="content" source="media/service-get-started/create-report-from-scratch.png" alt-text="Screenshot that shows how to create a report from scratch.":::
 
@@ -277,24 +277,24 @@ Here's an example of the dashboard with the improved layout:
 
 ## Clean up resources
 
-After you finish the tutorial, it's a good practice to delete the dataset, report, and dashboard.
+After you finish the tutorial, it's a good practice to delete the semantic model, report, and dashboard.
 
-When you delete a dataset, the Power BI service also deletes all reports and dashboard tiles that use data from the dataset.
+When you delete a semantic model, the Power BI service also deletes all reports and dashboard tiles that use data from the semantic model.
 
 1. In the Power BI service, select **My workspace**.
 
-1. Locate the Financial Sample **dataset**.
+1. Locate the Financial Sample **semantic model**.
 
 1. Select **More options (...)** > **Delete**.
 
-   :::image type="content" source="media/service-get-started/delete-dataset.png" alt-text="Screenshot that shows how to delete a dataset in My workspace.":::
+   :::image type="content" source="media/service-get-started/delete-dataset.png" alt-text="Screenshot that shows how to delete a semantic model in My workspace.":::
 
-   Power BI displays a warning message: _All reports and dashboard tiles containing data from this dataset will also be deleted_.
+   Power BI displays a warning message: _All reports and dashboard tiles containing data from this semantic model will also be deleted_.
 
 1. Select **Delete**.
 
-## Next steps
+## Related content
 
-- [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
-- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
-- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).
+* [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+* Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+* Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).

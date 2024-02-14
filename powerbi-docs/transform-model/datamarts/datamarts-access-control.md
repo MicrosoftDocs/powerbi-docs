@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 07/12/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 
@@ -20,9 +20,9 @@ Assigning users to the various workspace roles provides the following capabiliti
 
 | Workspace role   |  Description |
 |---|---|
-|**Admin**|Grants the user permissions to ingest data through a dataflow, write SQL and visual queries, and update the model or dataset (create relationships, create measures etc.)|
-|**Member**|Grants the user permissions to ingest data through a dataflow,  write SQL and visual queries, and  update the model or dataset (create relationships, create measures etc.)|
-|**Contributor**|Grants the user permissions to ingest data through a dataflow, write SQL and visual queries, and update the model or dataset (create relationships, create measures etc.) |
+|**Admin**|Grants the user permissions to ingest data through a dataflow, write SQL and visual queries, and update the model or semantic model (create relationships, create measures etc.)|
+|**Member**|Grants the user permissions to ingest data through a dataflow,  write SQL and visual queries, and  update the model or semantic model (create relationships, create measures etc.)|
+|**Contributor**|Grants the user permissions to ingest data through a dataflow, write SQL and visual queries, and update the model or semantic model (create relationships, create measures etc.) |
 |**Viewer**|Grants the user permissions to write SQL and visual queries and access the “Model view” in read-only mode. For more information, see [Viewer restrictions](#viewer-restrictions).|
 
 ## Viewer restrictions
@@ -35,7 +35,7 @@ The Viewer role is a more limited role in comparison with the other workspace ro
 |**Model view**|Viewers have read-only mode on the Model view.|
 |**Run queries**|Viewers do not have full DML/DDL capabilities unless granted specifically. Viewers can read data using SELECT statement in SQL query editor and use all tools in the toolbar in the Visual query editor. Viewers can also read data from Power BI Desktop and other SQL client tools.|
 |**Analyze in Excel**|Viewers do not have permission to Analyze in Excel.|
-|**Manually update dataset**|Viewers cannot manually update the default dataset to which the datamart is connected.|
+|**Manually update semantic model**|Viewers cannot manually update the default semantic model to which the datamart is connected.|
 |**New measure**|Viewers do not have permission to create measures.|
 |**Lineage view**|Viewers do not have access to reading the lineage view chart.|
 |**Share/Manage permissions**|Viewers do not have permission to share datamarts with others.|
@@ -46,7 +46,7 @@ The Viewer role is a more limited role in comparison with the other workspace ro
 
 Row-level security (RLS) can be used to restrict data access for specified users to a datamart. Filters restrict data access at the row level, and you can define filters within roles. In the Power BI service, members of a workspace have access to datamarts in the workspace, and RLS doesn't restrict such data access.
 
-You can configure RLS for datamarts in the **Datamart editor**. The configured RLS on datamarts automatically gets applied to downstream items, including the auto-generated datasets and reports. 
+You can configure RLS for datamarts in the **Datamart editor**. The configured RLS on datamarts automatically gets applied to downstream items, including the auto-generated semantic models and reports. 
 
 > [!NOTE]
 > Datamarts use the enhanced row-level security editor, which means that not all row-level security filters supported in Power BI can be defined. Limitations include expressions that today can only be defined using DAX including dynamic rules such as USERNAME() or USERPRINCIPALNAME(). To define roles using these filters switch to use the DAX editor.
@@ -85,15 +85,15 @@ To revert to your access, select the **View as** button on the ribbon again, and
 
 A datamart can get marked as an unavailable datamart when one of the following situations occurs.
 
-**Situation 1:** When a Premium workspace is changed from Premium to non-premium, all datamarts in that workspace become unavailable. The **Datamart editor** becomes unavailable and downstream usage of the datamart and auto-generated datasets is blocked. Users or administrators must upgrade the workspace to its original Premium capacity to restore datamarts.
+**Situation 1:** When a Premium workspace is changed from Premium to non-premium, all datamarts in that workspace become unavailable. The **Datamart editor** becomes unavailable and downstream usage of the datamart and auto-generated semantic models is blocked. Users or administrators must upgrade the workspace to its original Premium capacity to restore datamarts.
 
-**Situation 2:** When dataflow updates a datamart and associated dataset, but due to a system lock the datamart or dataset update is pending, the datamart becomes unavailable. The **Datamart editor** isn't accessible when a datamart goes into unavailable state. The **try again** action, shown in the following image, enables users to trigger synchronization between dataflow, datamart and dataset. It may take a few minutes to complete the requested action but downstream consumption can be continued.
+**Situation 2:** When dataflow updates a datamart and associated semantic model, but due to a system lock the datamart or semantic model update is pending, the datamart becomes unavailable. The **Datamart editor** isn't accessible when a datamart goes into unavailable state. The **try again** action, shown in the following image, enables users to trigger synchronization between dataflow, datamart and semantic model. It may take a few minutes to complete the requested action but downstream consumption can be continued.
 
 :::image type="content" source="media/datamarts-access-control/datamarts-access-control-01.png" alt-text="Screenshot of the request access setting.":::
 
 **Situation 3:** When a Premium workspace is migrated to another Premium capacity in a different region, the datamart will become unavailable with the error: "Unable to open the datamart because the workspace region has changed. To open the datamart, reconnect the workspace to the region connected when the datamart was created." This behavior is by design since the region where the datamarts were created must be the region where the workspace resides, and migrations are not supported.
 
-## Next steps
+## Related content
 This article provided information about controlling access to datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

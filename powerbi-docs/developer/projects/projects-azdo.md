@@ -1,8 +1,8 @@
 ---
 title: Azure DevOps integration with Power BI Desktop projects
 description: Learn about Azure DevOps integration with Power BI. Desktop projects
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
@@ -51,7 +51,7 @@ And that's it! You can see with Azure DevOps integration, you can now have multi
 
 If you're using Microsoft Fabric, you can also connect a Fabric workspace to an Azure DevOps Git repo and get all your content automatically deployed into the service. Git and Azure DevOps integration can provide a continuous integration workflow not only from Power BI Desktop to the service, but also from changes made in the service to Power BI Desktop. To learn more, see [Microsoft Fabric - Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
 
-## See also
+## Related content
 
-[Power BI Desktop projects Git integration](projects-git.md)  
-[Power BI Desktop projects](projects-overview.md)  
+- [Power BI Desktop projects Git integration](projects-git.md)  
+- [Power BI Desktop projects](projects-overview.md)  

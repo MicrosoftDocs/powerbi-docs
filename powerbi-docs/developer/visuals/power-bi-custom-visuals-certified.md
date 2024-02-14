@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/11/2022
+ms.date: 12/14/2023
 ---
 
 # Get your Power BI visual certified
@@ -98,7 +98,7 @@ Follow the code requirements listed below to make sure that your code is in line
 
 #### Not allowed
 
-* Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
+* Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services. Therefore, [WebAccess privileges](./capabilities.md#allow-web-access) should be empty, or omitted, in the capabilities settings.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
 * JavaScript errors or exceptions in the browser console, for any input data.
 * Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.
@@ -170,7 +170,7 @@ The process of deploying to AppSource may take some time. Your Power BI visual w
 
 The certification badge should be visible within three weeks after your submission is approved.
 
-## Next steps
+## Related content
 
 * [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml).
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)

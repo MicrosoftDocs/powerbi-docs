@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Creating a dataflow
@@ -113,7 +113,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 * The ADLS Gen 2 account must be accessible by the user trying to create the dataflow.
 
-* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core isn't supported (example: https://myaccount.dfs.core.windows.net/filesystem/path/model.json)
+* The URL must be a direct file path to the JSON file and use the ADLS Gen 2 endpoint; blob.core isn't supported.
 
 ## Create a dataflow by using import/export
 
@@ -125,9 +125,9 @@ To export a dataflow, select the dataflow you created and select the **More** me
 
 To import a dataflow, select the import box and upload the file. Power BI creates the dataflow for you, and allows you to save the dataflow as is, or to perform other transformations.
 
-## Next steps
+## Related content
 
-By putting your data into a dataflow you can use Power BI Desktop and the Power BI service to create datasets, reports, dashboards, and apps. These new resources can give you insights into your business activities. The following articles go into more detail about common usage scenarios for dataflows:
+By putting your data into a dataflow you can use Power BI Desktop and the Power BI service to create semantic models, reports, dashboards, and apps. These new resources can give you insights into your business activities. The following articles go into more detail about common usage scenarios for dataflows:
 
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Configure and consume a dataflow](dataflows-configure-consume.md)

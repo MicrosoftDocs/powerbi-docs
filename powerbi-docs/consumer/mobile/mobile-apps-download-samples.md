@@ -30,13 +30,13 @@ You must have a Power BI service account to be able to download data. If you're 
    > [!Note]
    > Be sure to choose the sample that's described in the tutorial, quickstart, or article that you're using. 
    
-Power BI imports the sample, and adds a new dashboard, report, and dataset to **My workspace**.
+Power BI imports the sample, and adds a new dashboard, report, and semantic model to **My workspace**.
    
 :::image type="content" source="media/mobile-apps-download-samples/power-bi-service-sample-dashboard.png" alt-text="Screenshot shows imported samples in My workspace in the Power BI service.":::
 
 You're now ready to view the samples on your mobile device.
 
-## Next steps
+## Related content
 
 - Complete a quickstart and [explore dashboards and reports in the Power BI mobile apps](mobile-apps-quickstart-view-dashboard-report.md).
 - Questions? Check the [Mobile apps section of the Power BI Community](https://community.fabric.microsoft.com/t5/Mobile-Apps/bd-p/power-bi-mobile).

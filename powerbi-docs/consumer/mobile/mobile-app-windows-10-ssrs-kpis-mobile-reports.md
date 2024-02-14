@@ -6,9 +6,14 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/02/2021
+ms.date: 01/01/2024
 ---
 # View on-premises KPIs in the Power BI Windows app
+
+>[!NOTE]
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
+>
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
 
 The Power BI app for Windows offers live, touch-enabled access to your important on-premises business information in SQL Server 2016 Reporting Services.
 
@@ -99,7 +104,8 @@ You don't create Reporting Services KPIs in the Power BI app. You create them in
 
 * Create [KPIs on a Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services)
 
-## Next steps
+## Related content
+
 * [Get started with the Power BI Windows app](mobile-windows-10-phone-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

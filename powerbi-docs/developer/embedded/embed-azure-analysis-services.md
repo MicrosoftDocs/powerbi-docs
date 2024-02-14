@@ -7,7 +7,7 @@ ms.reviewer: sabre
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 06/01/2023
+ms.date: 11/08/2023
 ---
 
 # Embed a report with an Azure Analysis Services (AAS) database
@@ -177,11 +177,8 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 Use the embed token to embed the report into your app or website. Your report will filter data according to the applied RLS in the report.
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Row-level security with Power BI Embedded](embedded-row-level-security.md)
->[!div class="nextstepaction"]
->[Embed a report with cloud-based RLS](cloud-rls.md)
->[!div class="nextstepaction"]
->[paginated-reports-row-level-security](paginated-reports-row-level-security.md)
+* [Row-level security with Power BI Embedded](embedded-row-level-security.md)
+* [Embed a report with cloud-based RLS](cloud-rls.md)
+* [paginated-reports-row-level-security](paginated-reports-row-level-security.md)

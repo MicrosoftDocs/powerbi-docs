@@ -15,27 +15,28 @@ LocalizationGroup: Samples
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Power BI has several samples that you can either download in the Power BI service or open in Power BI Desktop. In a *built-in sample*, the report is bundled with a dashboard and dataset, and built into the Power BI service. The *.pbix file* that you can view in Power BI Desktop contains a report and dataset.
+Power BI has several samples that you can either download in the Power BI service or open in Power BI Desktop. In a *built-in sample*, the report is bundled with a dashboard and semantic model, and built into the Power BI service. The *.pbix file* that you can view in Power BI Desktop contains a report and semantic model.
 
 :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png" alt-text="Screenshot showing the Overview page of the Retail Analysis Sample." lightbox="media/sample-tutorial-connect-to-the-samples/retail-report-overview.png":::
 
 This tutorial shows you how to:
 
 > [!div class="checklist"]
+>
 > - Sign up for a Power BI license, if you don't have one.
 > - Import the Retail Analysis sample and add it to the Power BI service.
 > - Explore the sample in the service.
 > - Create a visual by using natural language in *Q&A*.
-> - Generate *quick insights* based on the dataset.
+> - Generate *quick insights* based on the semantic model.
 > - Open the Retail Analysis sample *.pbix* file in Power BI Desktop.
 
-If you'd like more background information, see [Sample datasets for Power BI](sample-datasets.md). In that article you learn about how to get the samples, where to save them, and how to use them.
+If you'd like more background information, see [Sample semantic models for Power BI](sample-datasets.md). In that article you learn about how to get the samples, where to save them, and how to use them.
 
 If you want to familiarize yourself with the built-in sample in this tutorial and its scenario, see [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md).
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md). It's a free download.
 
@@ -49,13 +50,13 @@ To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundament
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
 ## What was imported?
 
 With the built-in samples, Power BI gets a copy of that built-in sample and stores it for you in the cloud.
 
-1. Power BI creates the new dashboard, report, and dataset in your workspace.
+1. Power BI creates the new dashboard, report, and semantic model in your workspace.
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-entry.png" alt-text="Screenshot showing the Retail Analysis Sample entry in your workspace." lightbox="media/sample-tutorial-connect-to-the-samples/retail-entry.png":::
 
@@ -63,13 +64,13 @@ With the built-in samples, Power BI gets a copy of that built-in sample and stor
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png" alt-text="Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png":::
 
-1. On the **Datasets + dataflows** tab, you see the dataset, also named *Retail Analysis Sample*.
+1. On the **Semantic models + dataflows** tab, you see the semantic model, also named *Retail Analysis Sample*.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample Datasets + dataflows tab with the dataset entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample Semantic models + dataflows tab with the semantic model entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
 
 ## Explore your new content
 
-Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. First, let's start from the dashboard.
+Now explore the dashboard, semantic model, and report on your own. There are many different ways to navigate to your dashboards, reports, and semantic models. First, let's start from the dashboard.
 
 - If a tile was created by using [Power BI Q&A](#explore-in-qa), the Q&A page opens when you select it.
 - If a tile was [pinned from a report](#explore-the-report), the report opens.
@@ -77,10 +78,10 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
 The first two of these methods are described in the following procedures. This tutorial doesn't have any tiles [pinned from Excel](service-dashboard-pin-tile-from-excel.md).
 
-You can also explore the dataset directly:
+You can also explore the semantic model directly:
 
 - Try [quick insights](#explore-quick-insights).
-- Let Power BI [Auto-create a report](#create-a-report-from-the-dataset) for you.
+- Let Power BI [Auto-create a report](#create-a-report-from-the-semantic-model) for you.
 
 ### Explore in Q&A
 
@@ -126,9 +127,9 @@ The Q&A feature in the Power BI service lets you explore your data in your own w
 
 ### Explore quick insights
 
-One easy way of exploring a *dataset* is to run [quick insights](../consumer/end-user-insights.md).
+One easy way of exploring a *semantic model* is to run [quick insights](../consumer/end-user-insights.md).
 
-1. On the **Datasets + dataflows** tab, select **More options (...)** next to the **Retail Analysis Sample** dataset, then choose **Get quick insights**.
+1. On the **Semantic models + dataflows** tab, select **More options (...)** next to the **Retail Analysis Sample** semantic model, then choose **Get quick insights**.
 
 1. When the insights are ready, select **View insights**.
 
@@ -136,15 +137,15 @@ One easy way of exploring a *dataset* is to run [quick insights](../consumer/end
 
 1. If an insight is interesting, pin it to the dashboard.
 
-### Create a report from the dataset
+### Create a report from the semantic model
 
-On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. One way to explore the dataset is to create a report by using **Auto-create**.
+On the **Semantic models** tab, you have several options for exploring your semantic model. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. One way to explore the semantic model is to create a report by using **Auto-create**.
 
 To auto-create a report:
 
-1. In your workspace, select the **Retail Analysis Sample** dataset to open it.
+1. In your workspace, select the **Retail Analysis Sample** semantic model to open it.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample dataset entry in your workspace.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample semantic model entry in your workspace.":::
 
 1. Select **Create a report**, then **Auto-create**.
 
@@ -174,7 +175,7 @@ To download the sample:
 
 ## What's in your report?
 
-When you download a sample *.pbix* file, you've downloaded not just a report but also the *underlying dataset*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
+When you download a sample *.pbix* file, you've downloaded not just a report but also the *underlying semantic model*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
 
 To view the underlying data and model:
 
@@ -192,11 +193,11 @@ To view the underlying data and model:
 
    Model view shows all of the tables and columns in your model, and the relationships between them. From here you can view, change, and create relationships.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 
-We hope this tour has shown how Power BI dashboards, datasets, relationships, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md) and [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md).  
+We hope this tour has shown how Power BI dashboards, semantic models, relationships, and reports can provide insights into sample data. Now it's your turn. Connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md) and [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md).  
 
 > [!div class="nextstepaction"]
 > [Samples for the Power BI service](sample-datasets.md)

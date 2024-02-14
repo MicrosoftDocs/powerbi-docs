@@ -1,22 +1,22 @@
 ---
 title: Run R scripts in Power BI Desktop
-description: Learn how to run R scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model.
+description: Learn how to run R scripts directly in Power BI Desktop and import the resulting semantic models into a Power BI Desktop data model.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Run R scripts in Power BI Desktop
 
-You can run R scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model.
+You can run R scripts directly in Power BI Desktop and import the resulting semantic models into a Power BI Desktop data model.
 
 ## Install R
 
-To run R scripts in Power BI Desktop, you need to install R on your local machine. You can download and install R for free from many locations, including the [Microsoft R Application Network](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release supports Unicode characters and spaces (empty characters) in the installation path.
+To run R scripts in Power BI Desktop, you need to install R on your local machine. You can download and install R for free from many locations, including the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release supports Unicode characters and spaces (empty characters) in the installation path.
 
 ## Run R scripts
 
@@ -60,7 +60,7 @@ You can control which R installation to use to run your script. To specify your 
 
 You can refresh an R script in Power BI Desktop. When you refresh an R script, Power BI Desktop runs the R script again in the Power BI Desktop environment.
 
-## Next steps
+## Related content
 
 Take a look at the following additional information about R in Power BI.
 

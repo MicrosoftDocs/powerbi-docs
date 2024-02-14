@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/23/2022
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Understand and optimize dataflows refresh
@@ -32,7 +32,7 @@ Incremental refresh enables large dataflows in Power BI with the following benef
 * Refreshes are faster after the first refresh, due to the following facts:
 
   * Power BI refreshes the last *N* partitions specified by the user (where partition is day/week/month, and so on), or
-  * Power BI refreshes only data that needs to be refreshed. For example, refreshing only the last five days of a 10-year dataset.
+  * Power BI refreshes only data that needs to be refreshed. For example, refreshing only the last five days of a 10-year semantic model.
   * Power BI only refreshes data that has changed, as long as you specify the column you want to check for changes.
 
 * Refreshes are more reliable - it's no longer necessary to maintain long-running connections to volatile source systems.
@@ -120,7 +120,7 @@ Next, it can help to evaluate whether you can use incremental refresh.
 
 Using [incremental refresh](../../connect-data/incremental-refresh-overview.md) can improve performance. It's important that the partition filters are pushed to the source system when queries are submitted for refresh operations. To push filtering down means the data source should support query folding, or you can express business logic through a function or other means that can help Power Query eliminate and filter files or folders. Most data sources that support SQL queries support query folding, and some OData feeds can also support filtering.
 
-However, data sources like flat files, blobs, and APIs typically don't support filtering. In cases where the data source back-end doesn't support the filter, it can't be pushed down. In such cases, the mash-up engine compensates and applies the filter locally, which might require retrieving the full dataset from the data source. This operation can cause incremental refresh to be slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway, if used.
+However, data sources like flat files, blobs, and APIs typically don't support filtering. In cases where the data source back-end doesn't support the filter, it can't be pushed down. In such cases, the mash-up engine compensates and applies the filter locally, which might require retrieving the full semantic model from the data source. This operation can cause incremental refresh to be slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway, if used.
 
 Given the various levels of query folding support for each data source, you should perform verification to ensure the filter logic is included in the source queries. To make this easier, Power BI attempts to perform this verification for you, with [step folding indicators for Power Query Online](https://powerbi.microsoft.com/blog/step-folding-indicators-for-power-query-online/). Many of these optimizations are design-time experiences, but after a refresh occurs, you have an opportunity to analyze and optimize your refresh performance.
 
@@ -188,7 +188,7 @@ The following steps enable workloads to trigger the compute engine, and thereby,
 
 **Computed and linked entities in the same workspace:**
 
-For *ingestion*, focus on getting the data into the storage as fast as possible, use filters only if they reduce the overall dataset size. Keep your transformation logic separate from this step. Next, separate your transformation and business logic into a separate dataflow in the same workspace. Use linked or computed entities. Doing so allows for the engine to activate and accelerate your computations. For a simple analogy, it's like food preparation in a kitchen: food preparation is typically a separate and distinct step from gathering your raw ingredients, and a pre-requisite for putting the food in the oven. Similarly, you need to prepare your logic separately before it can take advantage of the compute engine.
+For *ingestion*, focus on getting the data into the storage as fast as possible, use filters only if they reduce the overall semantic model size. Keep your transformation logic separate from this step. Next, separate your transformation and business logic into a separate dataflow in the same workspace. Use linked or computed entities. Doing so allows for the engine to activate and accelerate your computations. For a simple analogy, it's like food preparation in a kitchen: food preparation is typically a separate and distinct step from gathering your raw ingredients, and a pre-requisite for putting the food in the oven. Similarly, you need to prepare your logic separately before it can take advantage of the compute engine.
 
 Ensure you perform the operations that fold, such as merges, joins, conversion, and [others](/power-query/power-query-folding#transformations-that-can-achieve-folding).
 
@@ -206,10 +206,10 @@ Take the following steps when investigating scenarios where the compute engine i
 
 A Power BI Pro license has a dataflows refresh limit of 8 refreshes per day.
 
-## Next steps
+## Related content
 
 * [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)
-* [Incremental refresh and real-time data for datasets](../../connect-data/incremental-refresh-overview.md)
+* [Incremental refresh and real-time data for semantic models](../../connect-data/incremental-refresh-overview.md)
 * [Dataflows best practices](dataflows-best-practices.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [Dataflows considerations and limitations](dataflows-features-limitations.md)

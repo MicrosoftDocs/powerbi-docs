@@ -13,7 +13,7 @@ LocalizationGroup: Samples
 
 # Procurement Analysis sample for Power BI: Take a tour
 
-The Procurement Analysis built-in sample contains a dashboard, report, and dataset that analyze a manufacturing company's spending on vendors by category and location. In the sample, we explore:
+The Procurement Analysis built-in sample contains a dashboard, report, and semantic model that analyze a manufacturing company's spending on vendors by category and location. In the sample, we explore:
 
 * Who the top vendors are.
 * What categories we spend the most on.
@@ -27,7 +27,7 @@ This tutorial explores the Procurement Analysis built-in sample in the Power BI 
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the sample in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -45,7 +45,7 @@ Before you can use the sample, you must first get the sample in one of the follo
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
     :::image type="content" source="media/sample-procurement/procurement-entry.png" alt-text="Screenshot that shows the Procurement Analysis sample entries in the workspace.":::
 
@@ -79,7 +79,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
    There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
 1. Select **Save**, enter a name for your report, and then choose **Save**.
 
@@ -176,7 +176,7 @@ Select **Edit** in the **Power BI** header bar to explore in the editing view:
 - Change the visualization type for each chart.
 - Pin charts of interest to your dashboard.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 10/24/2023
 LocalizationGroup: Transform and shape data
 ---
 # Query overview in Power BI Desktop
@@ -40,9 +40,7 @@ With no data connections, Power Query Editor appears as a blank pane, ready for 
 
 :::image type="content" source="media/desktop-query-overview/query-overview-blank-panes.png" alt-text="Screenshot of Power BI Desktop showing Power Query Editor with no data connections.":::
 
-After a query is loaded, Power Query Editor view becomes more interesting. If you connect to the following Web data source using the New Source button in the top left, Power Query Editor loads information about the data, which you can then begin to shape:
-
-[*https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/*](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/)
+After a query is loaded, Power Query Editor view becomes more interesting. If you connect to a Web data source using the New Source button in the top left, Power Query Editor loads information about the data, which you can then begin to shape.
 
 Here's how Power Query Editor appears after a data connection is established:
 
@@ -140,7 +138,7 @@ When you're ready, Power BI Desktop can save your work in the form of a *.pbix* 
 To save your work, select **File** \> **Save** (or **File** \> **Save As**), as shown in the following image.
 :::image type="content" source="media/desktop-query-overview/query-overview-save-work.png" alt-text=" Screenshot of Power BI Desktop showing the Power Query Editor File tab. The save and save as options highlighted.":::
 
-## Next steps
+## Related content
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

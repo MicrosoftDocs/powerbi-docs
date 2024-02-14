@@ -46,8 +46,8 @@ In Power BI paginated reports, pie chart labeling is optimized to display labels
   
 1. If you want the chart to have more room for labels but still appear two-dimensional, set the **Rotation** and **Inclination** properties to **0**.  
   
-## Next steps
+## Related content
 
- [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
- [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs)   
- [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](display-percentage-values-pie-chart-report-builder.md)  
+- [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
+- [Collect Small Slices on a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/collect-small-slices-on-a-pie-chart-report-builder-and-ssrs)   
+- [Display Percentage Values on a Pie Chart &#40;Power BI Report Builder&#41;](display-percentage-values-pie-chart-report-builder.md)  

@@ -136,7 +136,7 @@ Under **Style**, set **Fill** to **On**, and then **Browse** for an image for ea
 
 :::image type="content" source="media/desktop-buttons/button-set-fill.png" alt-text="Screenshot showing Fill image settings.":::
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 

@@ -60,6 +60,6 @@ In the settings, you see your personal launch item, if any, and any item that th
 
 Use the radio buttons to choose which launch item to use. Use the toggle switch to enable/disable the launch item functionality.
 
-## Next steps
+## Related content
 
 Admins: [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android)

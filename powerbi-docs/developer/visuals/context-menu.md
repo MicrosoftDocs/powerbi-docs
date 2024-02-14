@@ -59,7 +59,7 @@ private handleContextMenu() {
     }
 ```
 
-## Next steps
+## Related content
 
 * [Add interactivity into visual by Power BI visuals selections](selection-api.md)
 * [Build a bar chart](create-bar-chart.md)

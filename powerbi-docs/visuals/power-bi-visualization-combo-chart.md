@@ -63,7 +63,7 @@ To follow along below, use the [Retail Analysis sample](../create-reports/sample
 
     :::image type="content" source="media/power-bi-visualization-combo-chart/get-data-samples.png" alt-text="Screenshot of Discover content link to Samples.":::
 
-1. Choose **Retail Analysis Sample**. Power BI loads the sample dataset.
+1. Choose **Retail Analysis Sample**. Power BI loads the sample semantic model.
 
 1. From the menubar, select **Edit** :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-edit-icon.png":::.
 
@@ -129,7 +129,7 @@ In this task, we'll compare gross margin and sales.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-line-and-stacked-column-chart-fields.png" alt-text="Screenshot of combo chart fields showing Line y-axis field.":::
 
-1. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures sales dollars and the right measures percentage. And we see the answer to our question: yes, we do see a similar pattern.
+1. Power BI creates two axes, thus allowing the semantic models to be scaled differently; the left measures sales dollars and the right measures percentage. And we see the answer to our question: yes, we do see a similar pattern.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png" alt-text="Cluster combo chart example.":::
 
@@ -172,8 +172,7 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 * The secondary y-axis (line values) will automatically show or hide by default if its data range sufficiently overlaps with the primary y-axis (column values).  To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
 * Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
 
-## Next steps
+## Related content
 
-[Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
-
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
+* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

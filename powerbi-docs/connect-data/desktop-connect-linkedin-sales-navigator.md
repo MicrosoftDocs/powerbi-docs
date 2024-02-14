@@ -84,7 +84,7 @@ Once the data updates, you can see the app populated with your own data.
 
 If you run into problems when connecting to your data, you can contact [LinkedIn Sales Navigator support](https://www.linkedin.com/help/sales-navigator).
 
-## Next steps
+## Related content
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 10/18/2023
 LocalizationGroup: Create reports
 ---
 # Use cross-report drillthrough in Power BI
@@ -18,11 +18,11 @@ With the Power BI *cross-report drillthrough* feature, you can contextually jump
 
 To initiate cross-report drillthrough, you select a data point in a *source visual* of a *source report*, and then select the cross-report **Drillthrough** target from the context menu. 
 
-![Power BI cross-report drillthrough option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+![Screenshot showing Power BI cross-report drillthrough option.](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
 The drillthrough action opens the *target page* in the *target report*. 
 
-![Power B I Desktop cross-report drillthrough target](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
+![Screenshot showing Power B I Desktop cross-report drillthrough target.](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
 
 This article shows you how to set up and use cross-report drillthrough for Power BI reports.
 
@@ -37,24 +37,22 @@ For example, if you want to pass a filter on a field **State** within a table **
 
 After you validate your models, enable the source report to use cross-report drillthrough. 
 
-# [Power BI Desktop](#tab/powerbi-desktop)
+### Step 1: In Power BI Desktop
  
 1. Go to **File** > **Options and settings** > **Options**. 
 1. In the **Options** window left navigation, at the bottom of the **Current file** section, select **Report settings**. 
 1. At bottom right, under **Cross-report drillthrough**, select **Allow visuals in this report to use drillthrough targets from other reports**. 
 1. Select **OK**. 
    
-   ![Enable cross-report drillthrough in Power B I Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
+   ![Screenshot showing enabling cross-report drillthrough in Power B I Desktop.](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-# [Power BI service](#tab/powerbi-service)
+### Step 2: In the Power BI service
 
 1. Select the workspace that contains your target and source reports.
 1. Next to the source report name in the workspace list, select the **More options** symbol, and then select **Settings**. 
 1. Near the bottom of the **Settings** pane, under **Cross-report drillthrough**, select **Allow visuals in this report to use drill-through targets from other reports**, and then select **Save**.
    
-   ![Enable cross-report drillthrough in the Power B I service](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
-
----
+   ![Screenshot showing enabling cross-report drillthrough in the Power B I service.](media/desktop-cross-report-drill-through/cross-report-drill-through-02a.png)
 
 ## Set up a cross-report drillthrough target
 
@@ -66,7 +64,7 @@ You can set up a target for cross-report drillthrough in Power BI Desktop or Pow
 1. Drag the fields you want to use as drillthrough targets into **Add drill-through fields here**. For each field, select whether you want to allow drillthrough when the field is used as a category, or when it's summarized like a measure. 
 1. Select whether you want to **Keep all filters** for the visual. If you don't want to pass filters applied to the source visual to your target visual, select **Off**.
    
-   ![Visualizations pane, with Drillthrough options highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-visualizations-pane.png)
+   ![Screenshot showing Visualizations pane, with Drillthrough options highlighted.](media/desktop-cross-report-drill-through/cross-report-drill-through-visualizations-pane.png)
    
 1. If you're using the page for cross-report drillthrough only, delete the **Back** button that's automatically added to the canvas. The **Back** button only works for navigation within a report. 
 1. After you configure the target page, save the report if you're using the Power BI service, or save and publish the report if you're using Power BI Desktop.
@@ -77,11 +75,11 @@ That's it. Your reports are ready for cross-report drillthrough.
 
 To use cross-report drillthrough, select the source report in the Power BI service, and then select a visual that uses the drillthrough field in the way you specified when you set up the target page. Right-click a data point to open the visual context menu, select **Drillthrough**, and then select the drillthrough target. Cross-report drillthrough targets are formatted as **Page name [Report name]**.
 
-![Power B I cross-report drillthrough option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+![Screenshot showing Power B I cross-report drillthrough option.](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
 You see the results in the target cross-report drillthrough page, just as you set them up when you created the target. The results are filtered according to the drillthrough settings.
 
-![Power B I Desktop cross-report drillthrough target](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
+![Screenshot showing Power B I Desktop cross-report drillthrough target.](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
 
 > [!IMPORTANT]
 > Power BI caches cross-report drillthrough targets. If you make changes, be sure to refresh your browser if you don't see the drillthrough targets as expected. 
@@ -105,7 +103,7 @@ If you want to return to the source report after the cross-report drillthrough a
 
 Cross-report drillthrough doesn't work in Power BI reports in Power BI Report Server.
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

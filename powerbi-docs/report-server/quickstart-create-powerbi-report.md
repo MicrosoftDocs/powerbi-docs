@@ -91,7 +91,8 @@ When your report is ready, you save it to the Power BI Report Server you chose i
 > [!NOTE]
 > If you choose to edit the report in the future, the report data you see in the desktop will always be the cached data from when the report was initially created.  To view the latest data when editing the report, you must refresh the data in your Power BI Desktop application.
 
-## Next steps
+## Related content
+
 ### Power BI Desktop
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 

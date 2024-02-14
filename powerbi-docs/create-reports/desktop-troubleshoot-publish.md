@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/05/2023
+ms.date: 11/10/2023
 ms.author: maggies
 
 LocalizationGroup: Troubleshooting
@@ -15,7 +15,7 @@ LocalizationGroup: Troubleshooting
 
 # Troubleshoot Power BI Desktop publishing
 
-When you publish a report and dataset from Power BI Desktop to the Power BI service, you might sometimes get unexpected results. This article provides troubleshooting guidance for problems related to publishing from Power BI Desktop to the Power BI service.
+When you publish a report and semantic model from Power BI Desktop to the Power BI service, you might sometimes get unexpected results. This article provides troubleshooting guidance for problems related to publishing from Power BI Desktop to the Power BI service.
 
 ## Solutions to common problems
 
@@ -40,11 +40,11 @@ In Power BI Desktop, go to **File** > **Options and settings** > **Options**. Un
 
 ### Clear cached credentials
 
-If you've previously connected to the published dataset with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings**, and then select **Clear Permissions** to clear any cached credentials.
+If you've previously connected to the published semantic model with different credentials or an expired token, cached credentials might cause connection issues. In Power BI Desktop, go to **File** > **Options and settings** > **Data source settings**, and then select **Clear Permissions** to clear any cached credentials.
 
-### Check your dataset permissions
+### Check your semantic model permissions
 
-Be sure that you have the permissions that are needed to access the published dataset. Check with the dataset owner or administrator to verify that you've been granted access.
+Be sure that you have the permissions that are needed to access the published semantic model. Check with the semantic model owner or administrator to verify that you've been granted access.
 
 ### Sign in to the Power BI service
 
@@ -68,7 +68,7 @@ This error is most likely caused by a network problem. Try the following trouble
 
 ### Can't publish to a different workspace
 
-This problem can occur if the Power BI tenant setting [Use datasets across workspaces](/fabric/admin/portal-workspace#use-datasets-across-workspaces) is disabled. Work with your Power BI tenant administrator to enable this setting.
+This problem can occur if the Power BI tenant setting [Use semantic models across workspaces](/fabric/admin/portal-workspace#use-semantic-models-across-workspaces) is disabled. Work with your Power BI tenant administrator to enable this setting.
 
 ### Can't republish or replace an existing report
 
@@ -76,8 +76,8 @@ This problem can occur in the following scenarios.
 
 - The Power BI tenant setting [Block republish and disable package refresh](/fabric/admin/service-admin-portal-dataset-security#block-republish-and-disable-package-refresh) is enabled. Work with your Power BI tenant administrator to disable this setting.
 
-- If you see the error **A report has already been published with this name**, you're trying to publish a report that's connected via live connection on top of an original report that includes a dataset. If you publish a live-connected report with the same name as the original, the dataset is overwritten. This error is intended to prevent the loss of the dataset. Members of a workspace can't replace an original shared report. If they try to do so, they're prompted to rename the file and then publish.
+- If you see the error **A report has already been published with this name**, you're trying to publish a report that's connected via live connection on top of an original report that includes a semantic model. If you publish a live-connected report with the same name as the original, the semantic model is overwritten. This error is intended to prevent the loss of the semantic model. Members of a workspace can't replace an original shared report. If they try to do so, they're prompted to rename the file and then publish.
 
    You can download the original report (not the live-connected one). You should be able to publish that copy correctly to overwrite the original report. If you need a separate live-connected report, you can publish it with a different name.
 
-For more information about this problem, see [Republish or replace a dataset published from Power BI Desktop](desktop-upload-desktop-files.md#republish-or-replace-a-dataset-published-from-power-bi-desktop).
+For more information about this problem, see [Republish or replace a semantic model published from Power BI Desktop](desktop-upload-desktop-files.md#republish-or-replace-a-semantic-model-published-from-power-bi-desktop).

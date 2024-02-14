@@ -38,6 +38,6 @@ When you create a field parameter, you can populate the fields collection using 
 
 When you use field parameters to implement data translations, use columns instead of measures. The primary role that field parameters play in implementing data translations is providing a single, unified field use in report authoring that can be dynamically switched between source columns.
 
-## Next steps
+## Related content
 
 - [Implement data translation using field parameters](data-translation-implement-field.md)

@@ -24,7 +24,7 @@ To build a recursive hierarchy in a tablix data region, you must set the group e
 
 A group that is defined as a recursive hierarchy (that is, a group that uses the Parent property) can have only one group expression. You can use the **Level** function in text box padding to indent employee names based on their level in the hierarchy.
 
-For more information, see [Add or Delete a Group in a Data Region (Power BI Report Builder)](/sql/reporting-services/report-design/add-or-delete-a-group-in-a-data-region-report-builder-and-ssrs) and  [Create a Recursive Hierarchy Group (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-recursive-hierarchy-group-report-builder-and-ssrs).
+For more information, see [Add or Delete a Group in a Data Region (Power BI Report Builder)](../report-design/add-delete-group-data-region-report-builder.md) and  [Create a Recursive Hierarchy Group (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-recursive-hierarchy-group-report-builder-and-ssrs).
 
 ### Aggregate Functions that support Recursion
 
@@ -45,10 +45,10 @@ You can use Reporting Services aggregate functions that accept the parameter *Re
 
 For more information, see [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md).
 
-## See also
+## Related content
 
 - [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)
-- [Tablix Data Region (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-report-builder-and-ssrs)
+- [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)
 - [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md)
 - [Tables (Power BI Report Builder)](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)
 - [Matrices (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)

@@ -7,7 +7,7 @@ ms.reviewer: jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 12/12/2023
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -71,7 +71,7 @@ If your organization already has a Microsoft 365 Government plan, add a Power BI
 
 2. On the navigation menu, select **Billing**, and then select **Purchase services**.
 
-3. Search or scroll to locate the Power BI Pro Government offer, and choose **Try** or **Buy Now**.
+3. Search or scroll to locate the Power BI Pro Government offer, and select **Buy Now**.
 
 4. Complete your order.
 
@@ -83,7 +83,7 @@ Before you can use the Power BI service for the US government, you have to work 
 
 To start the allowlist process, contact your Microsoft account team for assistance. Only administrators can request to be added to the allowlist. The process takes about three weeks. During this time, the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US government cloud.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Overview of Power BI for US government](service-govus-overview.md)

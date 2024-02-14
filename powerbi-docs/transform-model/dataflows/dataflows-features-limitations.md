@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 09/07/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -116,44 +116,15 @@ Dataflows that exist in Premium have the following considerations and limitation
 
 * The approximate number of containers can be found out by dividing the total memory allocated to the workload by the amount of memory allocated to a container.
 
-**Unsupported connectors:**
-
-Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
-
-The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
-
-* Linkar
-* Actian
-* AmazonAthena
-* AmazonOpenSearchService
-* BIConnector
-* DataVirtuality
-* DenodoForPowerBI
-* Exasol
-* Foundry
-* Indexima
-* IRIS
-* JethroODBC
-* Kyligence
-* MariaDB
-* MarkLogicODBC
-* OpenSearchProject
-* QubolePresto
-* SingleStoreODBC
-* StarburstPresto
-* TibcoTdv
-
-The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that aren't Premium.
 
 
+## Dataflow usage in semantic models
 
-## Dataflow usage in datasets
-
-* When creating a dataset in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the dataflows data source are the same credentials used when the dataset is published to the service.
-  1. Failing to ensure those credentials are the same results in a *Key not found* error upon dataset refresh
+* When creating a semantic model in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the dataflows data source are the same credentials used when the semantic model is published to the service.
+  1. Failing to ensure those credentials are the same results in a *Key not found* error upon semantic model refresh
 
 > [!NOTE]
-> If the dataflow structure is changed, such as a new or renamed column, the dataset will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the dataset, until refreshed in Power BI Desktop and re-published.
+> If the dataflow structure is changed, such as a new or renamed column, the semantic model will not show the change, and the change may also cause a data refresh to fail in the Power BI service for the semantic model, until refreshed in Power BI Desktop and re-published.
 
 ## Dataflows and named connections
 
@@ -172,7 +143,7 @@ When using dataflows with [named connections](/power-query/connection-authentica
     * Second approach: if the previous approach isn't feasible, submit a support request to change the subscription ID in the database.
 * ADLS doesn't support most elements in the list in the [Directories and file names](/rest/api/storageservices/naming-and-referencing-shares--directories--files--and-metadata) section of the article for workspace naming and dataflow naming, due to the following limitations:
     * Power BI either returns an unhelpful error, or allows the process to happen but the refresh will fail. 
-* Cross tenant ADLS subscriptions aren't supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Azure Active Directory (Azure AD).
+* Cross tenant ADLS subscriptions aren't supported. The ADLS attached to Power BI must be part of the same Azure tenant that Power BI uses for Microsoft Entra ID.
 
 ## Dataflow data types
 
@@ -209,7 +180,7 @@ The data types supported in dataflows are the following:
 |Null	|Not Supported|
 
 
-## Next steps
+## Related content
 The following articles provide more information about dataflows and Power BI:
 
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)

@@ -111,10 +111,10 @@ A report can also contain subreports.
  [Page headers and footers &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/page-headers-and-footers-report-builder-and-ssrs)  
  Provides information about using headers and footers in reports and how to control pagination using them.  
   
- [Controlling page breaks, headings, columns, and rows &#40;Report Builder and SSRS&#41;](control-page-breaks-headings-columns-rows-report-builder.md)  
+ [Controlling page breaks, headings, columns, and rows &#40;Report Builder)](control-page-breaks-headings-columns-rows-report-builder.md)  
  Provides information about using page breaks.  
   
-## Next steps
+## Related content
 
- [Interactive functionality for different report rendering extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)
+- [Interactive functionality for different report rendering extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)
 

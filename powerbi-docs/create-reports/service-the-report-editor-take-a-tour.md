@@ -4,7 +4,9 @@ description: Learn how to use the report editor and design the reports your end 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-IkJda4O7oGs
+ms.custom:
+  - video-IkJda4O7oGs
+  - ignite-2023-fabric
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
@@ -142,7 +144,7 @@ In Power BI Desktop, you also have options to show or hide fields, add calculati
 
 Power BI uses many different icons to indicate the types of fields in a report. When you recognize them, you understand better how they act in different visuals. For a complete list, see the Field list section of [Use the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes).
 
-## Next steps
+## Related content
 
 * [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
 * [Work with Report view in Power BI Desktop](desktop-report-view.md)

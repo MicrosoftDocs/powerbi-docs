@@ -203,9 +203,10 @@ ms.reviewer: saurkumar
   
  ![Screenshot of an Arrow icon used with Back to Top link.](media/up-arrow.gif "Screenshot of an Arrow icon used with Back to Top link.") [Back to Top](#BackToTop)  
   
-## Next steps  
- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
- [Interactive Sort &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/interactive-sort-report-builder.md)   
- [Sort Data in a Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
- [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)  
+## Related content
+
+- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
+- [Interactive Sort &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/interactive-sort-report-builder.md)   
+- [Sort Data in a Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md)   
+- [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)  
   

@@ -193,7 +193,7 @@ The following built-in function retrieves the current level when a recursive hie
 
 
 
-## See also
+## Related content
 
 - [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
 - [Expression Examples (Power BI Report Builder)](./report-builder-expression-examples.md)

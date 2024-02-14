@@ -73,7 +73,7 @@ By default, the gateway spools data before returning it to the dataset, potentia
 
 If installing the gateway on an Azure Virtual Machine, ensure optimal networking performance by configuring accelerated networking. To learn more, see [Create a Windows VM with accelerated networking](/azure/virtual-network/create-vm-accelerated-networking-powershell).
 
-## Next steps
+## Related content
 
 * [Configure proxy settings](/data-integration/gateway/service-gateway-proxy)  
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  

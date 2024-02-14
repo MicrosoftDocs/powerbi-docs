@@ -64,17 +64,17 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. Select **Excel** > **Browse this device**, and browse to where you saved the Financial Sample Excel file. Then select **Open**.
 
-    Now you have a Financial Sample dataset. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
+    Now you have a Financial Sample semantic model. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-dataset.png" alt-text="Screenshot of My Workspace, highlighting the Financial Sample dataset.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-dataset.png" alt-text="Screenshot of My Workspace, highlighting the Financial Sample semantic model.":::
 
 1. You want to create a report. While still in **My workspace**, select **New** > **Report**.
 
    ![Screenshot of My workspace, highlighting the New dropdown menu and the Report option.](media/service-from-excel-to-stunning-report/power-bi-new-report.png)
 
-1. Select **Pick a published dataset**. Then in the **Data hub** dialogue box, choose your **Financial Sample** dataset > **Auto-create report**.
+1. Select **Pick a published semantic model**. Then in the **Data hub** dialogue box, choose your **Financial Sample** semantic model > **Auto-create report**.
 
-   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-data-hub.png" alt-text="Screenshot of the Data hub dialog box, highlighting the Financial Sample dataset." lightbox="media/service-from-excel-to-stunning-report/power-bi-data-hub.png":::
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-data-hub.png" alt-text="Screenshot of the Data hub dialog box, highlighting the Financial Sample semantic model." lightbox="media/service-from-excel-to-stunning-report/power-bi-data-hub.png":::
 
 ## Build your report
 
@@ -169,7 +169,7 @@ The dashboard and report are ready.
 
 ## Share a link to your dashboard
 
-Now it's time to share your dashboard with your manager. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but they can't save changes. If you allow it, they can reshare with others or build a new report based on the underlying dataset.
+Now it's time to share your dashboard with your manager. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but they can't save changes. If you allow it, they can reshare with others or build a new report based on the underlying semantic model.
 
 1. To share your report, at the top of the dashboard, select **Share**.
 
@@ -202,7 +202,7 @@ You can also share reports and dashboards directly to your colleagues in Microso
 
    ![Screenshot of an example post in Microsoft Teams.](media/service-from-excel-to-stunning-report/power-bi-teams-chat.png)
 
-## Next steps
+## Related content
 
 * Now that you've created a basic report in the Power BI service, how about creating a report in Power BI Desktop? Try the tutorial, [From Excel workbook to stunning report in Power BI Desktop](desktop-excel-stunning-report.md).
 

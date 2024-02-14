@@ -688,6 +688,6 @@ Your visual opens in the Chrome browser.
 
 :::image type="content" source="media/unit-tests-introduction/karmajs-chrome-ut-runned.png" alt-text="Screenshot of the Chrome browser window, which shows the custom Power BI visual.":::
 
-## Next steps
+## Related content
 
 When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](office-store.md).

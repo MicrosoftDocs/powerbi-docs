@@ -29,19 +29,19 @@ For a list of culture name values, see [ISO 639 Language codes](https://www.iso.
 
 ## Organize project for metadata translation
 
-At the start of a project that involves creating a new Power BI dataset with metadata translation, list the culture names that you plan to support. Next, extend the dataset by adding metadata translations for each culture name.
+At the start of a project that involves creating a new Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) with metadata translation, list the culture names that you plan to support. Next, extend the semantic model by adding metadata translations for each culture name.
 
-The following diagram shows a dataset that has a default language setting of `en-US`. The dataset has been extended with metadata translations for three other culture names: `es-ES`, `fr-FR`, and `de-DE`.
+The following diagram shows a semantic model that has a default language setting of `en-US`. The semantic model has been extended with metadata translations for three other culture names: `es-ES`, `fr-FR`, and `de-DE`.
 
-:::image type="content" source="./media/multiple-language-locale/dataset-definition-translation.png" alt-text="Diagram shows dataset objects and their metadata translations in two brief tables for the default values and three languages." lightbox="./media/multiple-language-locale/dataset-definition-translation.png":::
+:::image type="content" source="./media/multiple-language-locale/semantic-model-definition-translation.png" alt-text="Diagram shows semantic model objects and their metadata translations in two brief tables for the default values and three languages." lightbox="./media/multiple-language-locale/semantic-model-definition-translation.png":::
 
-Every metadata translation is associated with a specific culture name. Cultures names act as lookup keys that are used to add and retrieve metadata translations within the context of a Power BI dataset.
+Every metadata translation is associated with a specific culture name. Cultures names act as lookup keys that are used to add and retrieve metadata translations within the context of a Power BI semantic model.
 
-You don't need to supply metadata translations for dataset's default language. Power BI can just use the dataset object names directly for that culture name. One way to think about this is that the dataset object names act as a virtual set of metadata translations for the default language.
+You don't need to supply metadata translations for the default language of the semantic model. Power BI can just use the semantic model object names directly for that culture name. One way to think about this is that the semantic model object names act as a virtual set of metadata translations for the default language.
 
-:::image type="content" source="./media/multiple-language-locale/dataset-definition-english.png" alt-text="Diagram shows dataset objects and their metadata translations including a translation for the default language." lightbox="./media/multiple-language-locale/dataset-definition-english.png":::
+:::image type="content" source="./media/multiple-language-locale/semantic-model-definition-english.png" alt-text="Diagram shows semantic model objects and their metadata translations including a translation for the default language." lightbox="./media/multiple-language-locale/semantic-model-definition-english.png":::
 
-It's possible to explicitly add metadata translation for the default language. Use this approach sparingly. Power BI Desktop doesn't support loading metadata translations in its report designer. Instead, Power BI Desktop only loads dataset object names. If you explicitly add metadata translations for the default language, Power BI reports look different in Power BI Desktop than they do in the Power BI service.
+It's possible to explicitly add metadata translation for the default language. Use this approach sparingly. Power BI Desktop doesn't support loading metadata translations in its report designer. Instead, Power BI Desktop only loads semantic model object names. If you explicitly add metadata translations for the default language, Power BI reports look different in Power BI Desktop than they do in the Power BI service.
 
 ## Load a report in Power BI
 
@@ -60,28 +60,28 @@ When you open a Power BI report in the Power BI service, you can override the `A
 
 ## Support multiple locales for a single language
 
-You might need to support multiple locales for a single spoken language. Consider a scenario with users who speak French but live in different countries, such as France, Belgium, and Canada. You publish a dataset with a default language of `en-US` and metadata translations for three more culture names including `es-ES`, `fr-FR`, and `de-DE`.
+You might need to support multiple locales for a single spoken language. Consider a scenario with users who speak French but live in different countries, such as France, Belgium, and Canada. You publish a semantic model with a default language of `en-US` and metadata translations for three more culture names including `es-ES`, `fr-FR`, and `de-DE`.
 
-What happens when a French-speaking Canadian user opens report with an **Accept-Language** header value of `fr-CA`? Does the Power BI service load translations for French (`fr-FR`) or does it fall back on the English dataset object names?
+What happens when a French-speaking Canadian user opens report with an **Accept-Language** header value of `fr-CA`? Does the Power BI service load translations for French (`fr-FR`) or does it fall back on the English semantic model object names?
 
-:::image type="content" source="./media/multiple-language-locale/browser-translation-dataset.png" alt-text="Diagram represents a browser with a locale setting of fr-CA connecting to a dataset that has several locales but lacks fr-CA." lightbox="./media/multiple-language-locale/browser-translation-dataset.png":::
+:::image type="content" source="./media/multiple-language-locale/browser-translation-semantic-model.png" alt-text="Diagram represents a browser with a locale setting of fr-CA connecting to a semantic model that has several locales but lacks fr-CA." lightbox="./media/multiple-language-locale/browser-translation-semantic-model.png":::
 
 Measures currently act differently than tables and columns in Power BI. With measures, the Power BI service attempts to find the closest match. For the culture name of `fr-CA`, the names of measures would load using the metadata translations for `fr-FR`.
 
-With tables and columns, the Power BI service requires an exact match between the culture name in the request and the supported metadata translations. If there isn't an exact match, the Power BI service falls back to loading dataset object names. The names of tables and columns in this scenario would load using English dataset object names.
+With tables and columns, the Power BI service requires an exact match between the culture name in the request and the supported metadata translations. If there isn't an exact match, the Power BI service falls back to loading semantic model object names. The names of tables and columns in this scenario would load using English semantic model object names.
 
 > [!NOTE]
 > This use of the default language for the names of tables and columns is a known issue for Power BI.
 
 We recommend that you add metadata translation for any culture name you want to support. In this example, add three sets of French translations to support the culture names of `fr-FR`, `fr-BE` and `fr-CA`. The approach handles the scenario where the French translations for users in France are different from French translations for users in Canada.
 
-:::image type="content" source="./media/multiple-language-locale/dataset-definition-english-metadata.png" alt-text="Diagram shows dataset objects and their metadata translations including three French locales." lightbox="./media/multiple-language-locale/dataset-definition-english-metadata.png":::
+:::image type="content" source="./media/multiple-language-locale/semantic-model-definition-english-metadata.png" alt-text="Diagram shows semantic model objects and their metadata translations including three French locales." lightbox="./media/multiple-language-locale/semantic-model-definition-english-metadata.png":::
 
 ## Implement translations using measures and USERCULTURE
 
 Another feature in Power BI that helps with building multiple-language reports is the Data Analysis Expressions (DAX) `USERCULTURE` function. When called inside a measure, the `USERCULTURE` function returns the culture name of the current report loading context. This approach makes it possible to write DAX logic in measures that implement translations dynamically.
 
-You can implement translations dynamically by calling `USERCULTURE` in a measure, but you can't achieve the same result with calculated tables or calculated columns. The DAX expressions for calculated tables and calculated columns get evaluated at dataset load time. If you call the `USERCULTURE` function in the DAX expression for a calculated table or calculated column, it returns the culture name of the dataset's default language. Calling `USERCULTURE` in a measure returns the culture name for the current user.
+You can implement translations dynamically by calling `USERCULTURE` in a measure, but you can't achieve the same result with calculated tables or calculated columns. The DAX expressions for calculated tables and calculated columns get evaluated at semantic model load time. If you call the `USERCULTURE` function in the DAX expression for a calculated table or calculated column, it returns the culture name of the semantic model's default language. Calling `USERCULTURE` in a measure returns the culture name for the current user.
 
 The example report displays the `USERCULTURE` return value in the upper right corner of the report banner. You don't typically display a report element like this in a real application.
 
@@ -122,6 +122,6 @@ Here are a few examples of how a date value formatted with **Short Date** appear
 | de-DE  | 31.12.2022 |
 | ja-JP  | 2022/12/31 |
 
-## Next steps
+## Related content
 
 - [Create multiple-language reports with Translations Builder](translation-builder.md)

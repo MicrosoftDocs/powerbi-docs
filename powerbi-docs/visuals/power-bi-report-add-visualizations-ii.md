@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/17/2023
+ms.date: 12/25/2023
 ms.custom: sample-retailanalysissample
 LocalizationGroup: Visualizations
 ---
@@ -20,7 +20,7 @@ In [part 1](power-bi-report-add-visualizations-i.md) of this series of two artic
 
 ## Create a new visualization
 
-In this tutorial, you use the Retail Analysis Sample dataset to create a few visualizations.
+In this tutorial, you use the Retail Analysis Sample semantic model to create a few visualizations.
 
 ## Prerequisites
 
@@ -72,7 +72,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-2.png" alt-text="Screenshot that shows a column chart with FiscalMonth as the axis.":::
 
-1. In this step, you [change the visualization type](power-bi-report-change-visualization-type.md). There are many visualization types to choose from. To decide which type to use, see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md). To use an area chart, in the **Visualizations** pane, select the **Area chart** button:
+1. In this step, you change the visualization type. There are many visualization types to choose from. To decide which type to use, see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md). To use an area chart, in the **Visualizations** pane, select the **Area chart** button:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/compare-3.png" alt-text="Screenshot that shows the Area chart button.":::
 
@@ -96,7 +96,7 @@ You can create a visualization by selecting a field in the **Data** pane. Power 
 
    :::image type="content" source="media/power-bi-report-add-visualizations-ii/map-2.png" alt-text="Screenshot that shows Chain in the fields list and in the Legend area.":::
 
-## Next steps
+## Related content
 
 * Learn more about [visualizations in Power BI reports](power-bi-report-visualizations.md).
 * If you have questions, see the [Power BI Community](https://community.powerbi.com/) site.

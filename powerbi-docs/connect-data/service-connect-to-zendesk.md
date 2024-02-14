@@ -58,7 +58,7 @@ After you've installed the template app, you can change the dashboard and report
 
 1. Select **Connect** to begin the import process. 
 
-1. After Power BI imports the data, you see the content list for your Zendesk app: a new dashboard, report, and dataset.
+1. After Power BI imports the data, you see the content list for your Zendesk app: a new dashboard, report, and semantic model.
 
 1. Select the dashboard to start the exploration process.
 
@@ -76,7 +76,7 @@ You've installed the Zendesk template app. That means you've also created the Ze
 
     ![Zendesk content list](media/service-connect-to-zendesk/power-bi-zendesk-content-list.png)
 
-2. Select **Reports** and **Datasets** to see the other elements in the workspace.
+2. Select **Reports** and **Semantic models** to see the other elements in the workspace.
 
     Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
 
@@ -89,7 +89,7 @@ Your Zendesk URL will be the same as the URL you use to sign into your Zendesk a
 ## Troubleshooting
 If you're having issues connecting, check your Zendesk URL and confirm you're using a Zendesk administrator account.
 
-## Next steps
+## Related content
 
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)

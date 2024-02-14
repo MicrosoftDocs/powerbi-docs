@@ -1,8 +1,8 @@
 ---
 title: Use Power BI metrics to improve results in Microsoft Teams
 description: Use metrics in Power BI to help you curate metrics that matter, assign them to the right people, and track over time.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -96,7 +96,7 @@ Each project and organization can have its own metrics. You can find all your me
 
     :::image type="content" source="media/business-user-teams-goals/power-bi-teams-goals-home.png" alt-text="Metrics home hub in Power BI.":::
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Create scorecards and metrics in Power BI](../create-reports/service-goals-introduction.md)

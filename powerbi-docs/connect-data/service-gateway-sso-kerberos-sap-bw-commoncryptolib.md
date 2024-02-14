@@ -268,7 +268,7 @@ There are different resolutions, based on the symptoms you see in the data sourc
 [2020.05.26 14:21:28.668325][4][disp+work ][SAPCRYPTOLIB][435584] { gss_display_name [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] gss_display_name output buffer (41 bytes) [2020.05.26 14:21:28.668338][4][disp+work ][GSS ][435584] CN=DAVID@XS.CONTOSO.COM@CONTOSO.COM
 ```
 
-**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](./service-gateway-sso-kerberos.md). You'll need to complete those steps even if you already have the Azure AD Connect configured.
+**Resolution**: Complete the configuration steps to [set user mapping configuration parameters on the gateway machine if necessary](./service-gateway-sso-kerberos.md). You'll need to complete those steps even if you already have the Microsoft Entra Connect configured.
 
 **Validation**: You'll be able to successfully load the report in the Power BI service. If not successful, see the steps in symptom 2.
 
@@ -290,7 +290,7 @@ There are different resolutions, based on the symptoms you see in the data sourc
 **Validation**: When properly completed, you'll be able to create and refresh reports in the Power BI service.
 
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/29/2023
+ms.date: 12/14/2023
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 ---
@@ -225,10 +225,10 @@ When you use the **View** feature of bookmarks, the following details apply:
 In this release of bookmark features, there are a few considerations and limitations to keep in mind.
 
 * Most Power BI visuals work well with bookmarks. However, if you encounter problems with bookmarks and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
-* If you add a visual on a report page after creating a bookmark, the visual is displayed in its default state. That is, if you add a slicer to a page where you previously created bookmarks, the slicer behaves in its default state.
+* If you add a slicer to a page where you previously created bookmarks, the slicer will be cleared.
 * If you move a visual after you create a bookmark, when you select the bookmark, the visual appears where you moved it.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with bookmarks, see the following articles:
 

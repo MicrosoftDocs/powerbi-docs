@@ -19,7 +19,7 @@ ms.reviewer: saurkumar
   
  For example, if your report displays a table grouped by color, you would add a bookmark based on the group expression to the group header. Then you would add a table with a single text box at the beginning of the report that displayed the color values, and set the bookmark link on that text box. When you select the color, the report jumps to the page that displays the group header row for that color.  
   
- You can add a bookmark to any report item and add a bookmark link to any item that has an **Action** property, for example, a text box, an image, or a calculated series in a chart. For more information, see the [Action properties dialog box (Power BI Report Builder)](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs).  
+ You can add a bookmark to any report item and add a bookmark link to any item that has an **Action** property, for example, a text box, an image, or a calculated series in a chart. For more information, see the [Action properties dialog box (Power BI Report Builder)](add-hyperlink-url-report-builder.md).  
   
   
 ## Add a bookmark  
@@ -45,10 +45,10 @@ ms.reviewer: saurkumar
   
 6. (Optional) The text is not automatically formatted like a link. For text, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline in the **Font** section in the Home tab of the Ribbon.  
   
-7. To test the link, select **Run** to preview the report, and then select the report item that you set this link on..  
+7. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.
   
-## Next steps  
+## Related content  
 
- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
- [Filter, group, and sort data (Power BI Report Builder)](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)  
+- [Expressions (Power BI Report Builder)](../expressions/report-builder-expressions.md)   
+- [Filter, group, and sort data (Power BI Report Builder)](filter-group-sort-data-report-builder.md)  
   

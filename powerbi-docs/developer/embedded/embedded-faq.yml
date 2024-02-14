@@ -72,7 +72,7 @@ sections:
           
           *Background utilization* is evaluated by considering all the background operations that completed during the past 24 hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
           
-          A capacity consists of a defined number of v-cores. The [Power BI Premium Utilization and Metrics](../../enterprise/service-premium-metrics-app.md) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
+          A capacity consists of a defined number of v-cores. The [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
 
       - question: |
           What happens to traffic during overload?
@@ -136,7 +136,7 @@ sections:
         answer: |
           * Using the [Power BI Admin portal](../../admin/service-admin-portal-capacity-settings.md#power-bi-embedded).
           
-          * Downloading the [metric app](../../enterprise/service-premium-install-app.md) in Power BI.
+          * Downloading the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app-install) in Power BI.
           
           * Using [Azure diagnostic logging](./monitor-power-bi-embedded.md).
           
@@ -207,13 +207,13 @@ sections:
       - question: |
           What is Power BI Embedded's authentication model?
         answer: |
-          Power BI Embedded continues to use Azure AD for *master user* (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
+          Power BI Embedded continues to use Microsoft Entra ID for *master user* (a designated Power BI Pro or Premium Per User (PPU) licensed user) authentication, or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
           
            An ISV can implement their own authentication and authorization for their applications.
           
-          You can use your existing directory if you already have an Azure AD tenant. You can also create a new Azure AD tenant for your embedded application content security.
+          You can use your existing directory if you already have a Microsoft Entra tenant. You can also create a new Microsoft Entra tenant for your embedded application content security.
           
-          To get an Azure AD token, use one of the [Microsoft Authentication Libraries](/azure/active-directory/develop/msal-overview). There are client libraries available for multiple platforms.
+          To get a Microsoft Entra token, use one of the [Microsoft Authentication Libraries](/azure/active-directory/develop/msal-overview). There are client libraries available for multiple platforms.
           
       - question: |
           What object ID is the service principal object ID?
@@ -415,7 +415,7 @@ sections:
       - question: |
           How can I edit my registered application?
         answer: |
-          To learn how to edit Azure AD-registered applications, see [Quickstart: Update an application in Azure Active Directory](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
+          To learn how to edit Microsoft Entra registered applications, see [Quickstart: Update an application in Microsoft Entra ID](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
           
       - question: |
           How can I edit my Power BI user profile or data?

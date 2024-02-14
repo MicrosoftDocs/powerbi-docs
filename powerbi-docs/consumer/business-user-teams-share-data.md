@@ -1,8 +1,8 @@
 ---
 title: Lead data-driven discussions in Microsoft Teams
 description: Learn how to easily share data with your team with the Power BI app in Teams channels, chats, and meetings.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
@@ -101,7 +101,7 @@ If you use Power BI in a web browser, it’s easy to send a link to a colleague.
 
     :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png" alt-text="Screenshot of a rich card sent in a Teams chat message." lightbox="media/business-user-teams-share-data/teams-power-bi-rich-card-chat.png":::
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use data to make better meetings in Microsoft Teams](business-user-teams-meetings.md)
