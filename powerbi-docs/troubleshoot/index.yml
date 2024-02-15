@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: mihart
   ms.author: mihart
-  ms.date: 05/23/2023
+  ms.date: 02/13/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,14 +26,14 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: What are the current known issues for Power BI - chart
-            url: known-issues/power-bi-known-issues.md
+          - text: What are the current known issues for Power BI + Fabric - chart
+            url: https://learn.microsoft.com/fabric/get-started/fabric-known-issues
           - text: Current known issues for Power BI and Fabric - report
             url: https://support.fabric.microsoft.com/known-issues
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
           - text: See more >
-            url: known-issues/power-bi-known-issues.md
+            url: https://learn.microsoft.com/fabric/get-started/fabric-known-issues
   # Card (optional)
   - title: Troubleshooting
     linkLists:
