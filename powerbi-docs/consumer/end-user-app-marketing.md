@@ -25,13 +25,13 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
 1. Open [https://appsource.microsoft.com](https://appsource.microsoft.com).
 
-    :::image type="content" source="./media/end-user-app-marketing/power-bi-appsource-start.png" alt-text="Screenshot showing the Appsource main page.":::
+    :::image type="content" source="./media/end-user-app-marketing/power-bi-appsource-start.png" alt-text="Screenshot showing the AppSource main page.":::
 
 2. In the search box, enter **Microsoft sample** and select **Microsoft sample - Sales & Marketing**.
 
     :::image type="content" source="./media/end-user-app-marketing/power-bi-appsource-search.png" alt-text="Screenshot showing search result for Microsoft sample - Sales & Marketing.":::
 
-3. Optionally, read through the overview and reviews, and take a look at the images.  Then, select **Get it now** > **Install**.
+3. Optionally, read through the overview and reviews, and take a look at the images. Then, select **Get it now** > **Install**.
 
 4. The Power BI service displays a success message once the app is installed. Select **Go to workspace**. Or select the app itself from the **Apps** container. 
 
@@ -43,10 +43,10 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
 ## Interact with the dashboards and reports in the app
 
-Take some time to explore the data in the dashboard and reports that make up the app. You have access to all of the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. If you are confused by the difference between dashboards and reports, see the [article about dashboards](end-user-dashboards.md) and the [article about reports](end-user-reports.md).  
+Take some time to explore the data in the dashboard and reports that make up the app. You have access to all of the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down. If you're confused by the difference between dashboards and reports, see the [article about dashboards](end-user-dashboards.md) and the [article about reports](end-user-reports.md).  
 
 ## Related content
 
 - View [Apps in Power BI](end-user-apps.md)
 - [View a report in the Power BI service for business users](end-user-report-open.md)
-- [Display the dashboards and reports that have been shared with me](../collaborate-share/end-user-shared-with-me.md)
+- [Display the dashboards and reports that are shared with me](../collaborate-share/end-user-shared-with-me.md)
