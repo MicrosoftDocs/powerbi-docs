@@ -110,11 +110,11 @@ With the objective of providing a better source control and co-development exper
 
 Unlike Tabular Model Scripting Language (TMSL), TMDL has been designed from the ground up to be human-friendly, facilitating not only *readability* but also easy *editing* in any text editor. This represents a substantial enhancement for source control and *collaborative* development experiences.
 
-:::image type="content" source="./media/projects-dataset/semantic-model-tmslvstmdl.png" alt-text="Screenshot of friendly TMDL diffs.":::
+:::image type="content" source="./media/projects-dataset/semantic-model-tmslvstmdl.png" alt-text="Screenshot of friendly TMDL diffs." lightbox="./media/projects-dataset/semantic-model-tmslvstmdl.png":::
 
 Instead of a big JSON file like Tabular Model Scripting Language (TMSL), TMDL has a folder structure with separate files for each table, perspective, role, and culture. This makes it easier to work with others, and to understand the semantic model structure by just looking at the folder and files. Ultimately, this leads to a great source control and co-development experience when dealing with git diff’s and merge conflicts.
 
-:::image type="content" source="./media/projects-dataset/semantic-model-diffs.png" alt-text="Screenshot of friendly TMDL diffs.":::
+:::image type="content" source="./media/projects-dataset/semantic-model-diffs.png" alt-text="Screenshot of semantic model TMDL diffs." lightbox="./media/projects-dataset/semantic-model-diffs.png":::
 
 Learn more about TMDL [here](/analysis-services/tmdl/tmdl-overview).
 
