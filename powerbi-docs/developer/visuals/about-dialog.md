@@ -13,14 +13,13 @@ ms.date: 02/14/2024
 
 # About Power BI visuals
 
-For Report author/creator/visualUser
-Every visual has an *About* dialog that gives you information about the visual, including what what version it is, who created it, and what permission it requests. To open the About dialog, right click the visual and select **About**.
+Every visual has an *About* dialog that gives you information about the visual, including the version number, who created it, and what permission it requests. To open the About dialog, right-click the visual and select **About**.
 
-:::image type="content" source="./media/permission-settings/open-about-dialog.png" alt-text="Screenshot showing how to open the About dialog.":::
+:::image type="content" source="./media/about-dialog/open-about-dialog.png" alt-text="Screenshot showing how to open the About dialog.":::
 
 The About dialog for custom visuals shows the following information:
 
-:::image type="content" source="./media/permission-settings/about-dialog.png" alt-text="Screenshot of the About dialog.":::
+:::image type="content" source="./media/about-dialog/about-dialog.png" alt-text="Screenshot of the About dialog.":::
 
 * [About](#about)
 * [Certification](#certification)
@@ -47,7 +46,9 @@ For more information about certified visuals, see [Certified Power BI visuals](.
 ## Privileges
 
 Power BI visuals sometimes require access to data or other resources in your organization. This section describes what permissions a visual might need in order to work properly.
-It's important to note that the admin can choose to block a visual from requesting a certain permission. If a visual requests a permission that the admin has blocked, the visual will not be able to use that permission.
+It's important to note that the admin can choose to block a visual from requesting a certain permission. If a visual requests a permission that the admin blocked, the visual can't use that permission.
+
+:::image type="content" source="./media/about-dialog/about-dialog.png" alt-text="Screenshot of list of privileges in the About dialog.":::
 
 The following are the permissions a visual might request:
 
@@ -60,25 +61,25 @@ Visuals can request permission for any or the following privileges:
 
 ### Call Power BI Download APIs
 
-The visual might request to download data from Power BI to a file. The admin can choose to block this permission in which case the visual will not be able to download data from Power BI.
+The visual might request to download data from Power BI to a file. The admin can choose to block this permission in which case the visual can't download data from Power BI.
 
 To learn more, see []().
 
 ### Make calls on behalf of signed in users
 
-The visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication. The admin can choose to block this permission in which case the visual will not be able to obtain the access token.
+The visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication. The admin can choose to block this permission in which case the visual can't obtain the access token.
 
 To learn more, see [Obtain Microsoft Entra access token](/fbric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
 
 ### Access URLs
 
-The visual can send HTTP requests to specific URLs that were declared by the visual builder.
+The visual can send HTTP requests to specific URLs that the visual builder declared.
 
 To learn more, see []().
 
 ### Call Power BI local storage APIs
 
-The visual might need to store data locally on the user's device. The admin can choose to block this permission in which case the visual will not be able to store data locally.
+The visual might need to store data locally on the user's device. The admin can choose to block this permission in which case the visual can't store data locally.
 
 To learn more, see [Obtain Microsoft Entra access token](/fbric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
 
