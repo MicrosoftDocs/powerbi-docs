@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 07/11/2022
+ms.date: 02/15/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -46,11 +46,9 @@ Follow these steps to view and assign Power BI licenses using the Azure portal.
 
 3. Under **Manage** on the Microsoft Entra resource menu, select **Licenses**.
 
-4. Select **All products** from the resource menu, then select a Power BI license type to display the list of licensed users.
+4. Select **Manage** > **All products** resource menu, then select a Power BI license type to display the list of licensed users.
 
-5. To assign a license, from the command bar, select **+ Assign**. On the **Assign license** page, choose a user then select **Assignment options** to turn on a Power BI license for the selected user account.
-
-6. To remove a license, select the checkbox next to the user's name, then select **Remove license**.
+From here, you can assign and remove Power BI licenses.  
 
 ## Related content
 
