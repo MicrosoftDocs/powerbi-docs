@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 02/15/2024
 LocalizationGroup: Dashboards
 ---
 
@@ -329,6 +329,8 @@ In addition to the above differences between previous and improved usage metrics
        - When a report is included in a Power BI App, it will generate a new Report ObjectId for the embedded report with the same name.
     - Semantic model re-initialization
        - Each time a new semantic model is created, a new report could be created.
+  > [!NOTE]
+  > Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
 - The usage metrics report is not supported in My Workspace.
 - During the process of [disaster recovery (while Business continuity and disaster recovery (BCDR)](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery) is in progress) any new incoming data experiencing data loss may be irrecoverable.
 - Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
