@@ -324,11 +324,15 @@ In addition to the above differences between previous and improved usage metrics
 - Page views that are made from mobile devices are not shown in the usage metrics report.
 - Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
     - Reports have been deleted and re-created with the same name
-       - If a report has been deleted and then re-created with the same name, it will continue to show up in the filters for the usage metrics report.
+       - If a report has been deleted and then re-created with the same name, it continues to show up in the filters for the usage metrics report.
     - Report is included in an App
-       - When a report is included in a Power BI App, it will generate a new Report ObjectId for the embedded report with the same name.
+       - When a report is included in a Power BI App, it generates a new Report ObjectId for the embedded report with the same name.
     - Semantic model re-initialization
        - Each time a new semantic model is created, a new report could be created.
+    - To filter out pseudo-duplicates from the Usage Report, you could add a **Report views** measure to filter out these duplicates.
+
+      :::image type="content" source="media/service-modern-usage-metrics/report-view-measure.png" alt-text="Screenshot showing adding a Report Views measure.":::
+
   > [!NOTE]
   > Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
 - The usage metrics report is not supported in My Workspace.
