@@ -202,7 +202,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
 * You can't set built-in or custom [format strings](../create-reports/desktop-custom-format-strings.md) on visual calculations.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
-* You can't [change aggregations](../create-reports/service-aggregates#change-how-a-numeric-field-is-aggregated) on visual calculations.
+* You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
