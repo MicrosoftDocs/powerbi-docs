@@ -230,6 +230,14 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 > - The report is treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
 > - The report is built on the original semantic model. If there are any changes from Power BI, this may break your copy of the report.
 
+### Filter out pseudo-duplicates 
+
+To filter out pseudo-duplicates from the Usage Report, you can add a **Report views** measure to filter them out.
+
+- Under **Model measures**, expand **Views**, and add **Report views** to the **Filters** pane.
+
+  :::image type="content" source="media/service-modern-usage-metrics/report-views-measure.png" alt-text="Screenshot showing adding a Report Views measure.":::
+  
 ### Create a usage report in Power BI Desktop
 
 You can create a usage report in Power BI Desktop, based on the Usage Metrics Report semantic model. To establish a connection to the Usage Metrics Report semantic model and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
@@ -329,9 +337,6 @@ In addition to the above differences between previous and improved usage metrics
        - When a report is included in a Power BI App, it generates a new Report ObjectId for the embedded report with the same name.
     - Semantic model re-initialization
        - Each time a new semantic model is created, a new report could be created.
-    - To filter out pseudo-duplicates from the Usage Report, you could add a **Report views** measure to filter them out.
-
-      :::image type="content" source="media/service-modern-usage-metrics/report-view-measure.png" alt-text="Screenshot showing adding a Report Views measure.":::
 
   > [!NOTE]
   > Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
