@@ -232,7 +232,7 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 
 ### Filter out pseudo-duplicates 
 
-To filter out pseudo-duplicates from the Usage Report, you can add a **Report views** measure to filter them out.
+To remove pseudo-duplicates from the Usage Report, you can add a **Report views** measure to filter them out.
 
 - Under **Model measures**, expand **Views**, and add **Report views** to the **Filters** pane.
 
