@@ -329,7 +329,7 @@ In addition to the above differences between previous and improved usage metrics
        - When a report is included in a Power BI App, it generates a new Report ObjectId for the embedded report with the same name.
     - Semantic model re-initialization
        - Each time a new semantic model is created, a new report could be created.
-    - To filter out pseudo-duplicates from the Usage Report, you could add a **Report views** measure to filter out these duplicates.
+    - To filter out pseudo-duplicates from the Usage Report, you could add a **Report views** measure to filter them out.
 
       :::image type="content" source="media/service-modern-usage-metrics/report-view-measure.png" alt-text="Screenshot showing adding a Report Views measure.":::
 
