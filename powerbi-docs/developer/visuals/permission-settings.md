@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 02/14/2024
 ---
 
-# Power BI visuals tenant settings
+# Power BI visual privileges
 
 Power BI visuals sometimes require access to data or other resources in your organization. Your admin can decide whether set tenant switches that control what permissions to grant visuals. This article describes what permissions a visual might need in order to work properly.
 
