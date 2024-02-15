@@ -86,60 +86,6 @@ You can save multiple reports and semantic models to the same folder. Having a s
 
 :::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screen grab showing Power BI Project files with multiple report folders":::
 
-## Power BI Project using TMDL format
-
-The primary objective of Power BI Desktop developer mode is to provide a friendly source control and co-development experience. With this objective in mind, you can save your Power BI Project files (PBIP) using Tabular Model Definition Language (TMDL) format.
-TMDL is easily *readable* and *editable* in any text editor. It was designed for humans and is *collaborative* by default with its native folder structure. Learn more about TMDL [here](/analysis-services/tmdl/tmdl-overview).
-
-### Enable TMDL format Preview feature
-Saving as a Power BI Project using TMDL is currently in preview. Before using it, you must first enable it in Preview features:
-
-Go to **File > Options and settings > Options > Preview features** and check the box next to **Store semantic model using TMDL format**.
-
-### Save as a Power BI project file using TMDL
-
-With the TMDL Preview feature enabled, when you save a project, your semantic model is saved as a TMDL folder named *\definition* inside of [semantic model folder](./projects-dataset.md):  
-
-:::image type="content" source="./media/projects-overview/semantic-model-folder.png" alt-text="Screenshot of the definition folder inside a semantic model folder.":::
-
-Learn more about the [TMDL folder structure](/analysis-services/tmdl/tmdl-overview#tmdl-folder-structure).
-
-### Convert existing PBIP from TMSL to TMDL
-
-If you already have a PBIP using TMSL as semantic model format, you can convert it to TMDL as follows:
-
-1. Open the PBIP in Power BI Desktop.
-1. Ensure the Preview Feature is enabled.
-1. **Save** the project. A prompt appears asking you to upgrade into TMDL.
-1. Select **Upgrade**.
-
-    > [!IMPORTANT]
-    > Once you upgrade to TMDL, you can't revert back to TMSL. If you think you might want to revert back to TMSL, save a copy of your PBIP files first.
-
-    :::image type="content" source="./media/projects-overview/upgrade-project.png" alt-text="Screenshot of prompt to upgrade semantic model folder to TMDL.":::
-
-The existing Tabular Model Scripting Language (TMSL) file (*model.bim*) is replaced with a *\definition* folder containing the TMDL representation of the semantic model.
-
-:::image type="content" source="./media/projects-overview/tmsl-to-tmdl-folders.png" alt-text="Screenshot of PBIP projects with TMSL folders and with TMDL folders.":::
-
-If you select to **Keep current** format, Desktop won't prompt again to upgrade.
-
-### Make external changes to TMDL files
-
-For a better experience reading and editing your TMDL files, install the [TMDL - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=analysis-services.TMDL) Microsoft VS Code extension.
-
-Open the PBIP folder using VS Code and navigate to semantic model definition folder.
-
-:::image type="content" source="./media/projects-overview/semantic-model-definition-folder.png" alt-text="Screenshot of a semantic model definition folder in VS Code.":::
-
-Power BI Desktop isn't aware of changes to project files made by other tools. Therefore, if you make any changes to open files outside of Power BI Desktop, you need to restart for those changes to be shown in Power BI Desktop.
-
-#### TMDL Errors
-
-If any invalid edits are made to the TMDL files, Power BI Desktop throws an error on open, with the location of the error:
-
-:::image type="content" source="./media/projects-overview/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
-
 ## Changes outside Power BI Desktop
 
 When saved as a project, you're not forced into making changes to your semantic model and report definitions only in Power BI Desktop. You can use other tools such as VS Code, open-source community tools like Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.

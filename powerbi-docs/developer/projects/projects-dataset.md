@@ -84,7 +84,8 @@ This file is only available if the Power BI project is saved using the TMSL form
 
 #### definition\ folder
 
-This file is only available if the Power BI project is saved using the TMDL format. It replaces the [model.bim](#modelbim) file.  
+This file is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
+
 This file contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### diagramLayout.json
@@ -102,6 +103,75 @@ For more information, see the [item.config.json schema document](https://github.
 Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file).
 
 For more information, see the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
+
+## TMDL format
+
+With the objective of providing a better source control and co-development experience, you can save your Power BI Project files (PBIP) using Tabular Model Definition Language (TMDL) as the semantic model file format.
+
+Unlike Tabular Model Scripting Language (TMSL), TMDL has been designed from the ground up to be human-friendly, facilitating not only *readability* but also easy *editing* in any text editor. This represents a substantial enhancement for source control and *collaborative* development experiences.
+
+:::image type="content" source="./media/projects-dataset/semantic-model-tmslvstmdl.png" alt-text="Screenshot of friendly TMDL diffs.":::
+
+Instead of a big JSON file like Tabular Model Scripting Language (TMSL), TMDL has a folder structure with separate files for each table, perspective, role, and culture. This makes it easier to work with others, and to understand the semantic model structure by just looking at the folder and files. Ultimately, this leads to a great source control and co-development experience when dealing with git diff’s and merge conflicts.
+
+:::image type="content" source="./media/projects-dataset/semantic-model-diffs.png" alt-text="Screenshot of friendly TMDL diffs.":::
+
+Learn more about TMDL [here](/analysis-services/tmdl/tmdl-overview).
+
+### Enable TMDL format Preview feature
+Saving as a Power BI Project using TMDL is currently in preview. Before using it, you must first enable it in Preview features:
+
+Go to **File > Options and settings > Options > Preview features** and check the box next to **Store semantic model using TMDL format**.
+
+### Save as a project using TMDL
+
+With the TMDL Preview feature enabled, when you save a project, your semantic model is saved as a TMDL folder named *\definition* inside of [semantic model folder](./projects-dataset.md):  
+
+:::image type="content" source="./media/projects-dataset/semantic-model-folder.png" alt-text="Screenshot of the definition folder inside a semantic model folder.":::
+
+Learn more about the [TMDL folder structure](/analysis-services/tmdl/tmdl-overview#tmdl-folder-structure).
+
+### Convert existing PBIP to TMDL
+
+If you already have a PBIP using TMSL as semantic model format, you can convert it to TMDL as follows:
+
+1. Open the PBIP in Power BI Desktop.
+1. Ensure the Preview Feature is enabled.
+1. **Save** the project. A prompt appears asking you to upgrade into TMDL.
+1. Select **Upgrade**.
+
+    > [!IMPORTANT]
+    > Once you upgrade to TMDL, you can't revert back to TMSL. If you think you might want to revert back to TMSL, save a copy of your PBIP files first.
+
+    :::image type="content" source="./media/projects-dataset/upgrade-project.png" alt-text="Screenshot of prompt to upgrade semantic model folder to TMDL.":::
+
+The existing Tabular Model Scripting Language (TMSL) file (*model.bim*) is replaced with a *\definition* folder containing the TMDL representation of the semantic model.
+
+:::image type="content" source="./media/projects-dataset/tmsl-to-tmdl-folders.png" alt-text="Screenshot of PBIP projects with TMSL folders and with TMDL folders.":::
+
+If you select to **Keep current** format, Desktop won't prompt again to upgrade.
+
+### Make external changes to TMDL files
+
+For a better experience reading and editing your TMDL files, install the [TMDL - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=analysis-services.TMDL) Microsoft VS Code extension.
+
+Open the PBIP folder using VS Code and navigate to semantic model definition folder.
+
+:::image type="content" source="./media/projects-dataset/semantic-model-definition-folder.png" alt-text="Screenshot of a semantic model definition folder in VS Code.":::
+
+Power BI Desktop isn't aware of changes to project files made by other tools. Therefore, if you make any changes to open files outside of Power BI Desktop, you need to restart for those changes to be shown in Power BI Desktop.
+
+Please refer [here](./projects-overview.md#model-authoring) for supported write operations outside of Power BI Desktop.
+
+#### TMDL Errors
+
+If any invalid edits are made to the TMDL files, Power BI Desktop throws an error on open, with the location of the error:
+
+:::image type="content" source="./media/projects-dataset/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
+
+### Fabric Git Integration with TMDL
+
+During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) will still export the semantic model using TMSL by default. However, if the semantic model is imported into Fabric using TMDL format, then Fabric Git Integration will use TMDL format to export the semantic model definition to Git if there are any semantic model changes in the service. 
 
 ## Related content
 
