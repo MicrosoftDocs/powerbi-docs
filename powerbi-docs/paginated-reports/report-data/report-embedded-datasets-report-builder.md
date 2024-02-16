@@ -111,7 +111,7 @@ ms.reviewer: rpatkar
 
 ### Group data in a dataset
 
- You cannot group data in a dataset. To aggregate data in a dataset, you can edit the query command to calculate aggregates before the data is retrieved for a report. These are known as *server aggregates*. In expressions, to identify these values as precalculated aggregates, use the Aggregate function. For more information, see [Aggregate Function (Power BI Report Builder)](https://learn.microsoft.com/sql/reporting-services/report-design/report-builder-functions-aggregate-function).
+ You cannot group data in a dataset. To aggregate data in a dataset, you can edit the query command to calculate aggregates before the data is retrieved for a report. These are known as *server aggregates*. In expressions, to identify these values as precalculated aggregates, use the Aggregate function. For more information, see [Aggregate Function (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-function).
   
 ##  <a name="Parameters"></a> Use parameters and datasets
 

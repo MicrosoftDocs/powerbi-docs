@@ -169,7 +169,7 @@ The following built-in function retrieves custom aggregates from the data provid
 
 | **Function** | **Description** |
 | --- | --- |
-| [Aggregate](https://learn.microsoft.com/sql/reporting-services/report-design/report-builder-functions-aggregate-function) | Returns a custom aggregate of the specified expression, as defined by the data provider. |
+| [Aggregate](/sql/reporting-services/report-design/report-builder-functions-aggregate-function) | Returns a custom aggregate of the specified expression, as defined by the data provider. |
 
 
 
