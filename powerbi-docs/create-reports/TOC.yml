@@ -977,7 +977,7 @@
         - name: Aggregate functions reference in paginated reports
           href: ../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md
         - name: Aggregate function
-          href: ../paginated-reports/expressions/report-builder-functions-aggregate-function.md
+          href: https://learn.microsoft.com/sql/reporting-services/report-design/report-builder-functions-aggregate-function
         - name: Avg function
           href: ../paginated-reports/expressions/report-builder-functions-avg-function.md
         - name: Count function
