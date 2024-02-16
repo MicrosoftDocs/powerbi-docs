@@ -5839,7 +5839,7 @@
         {
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-aggregate-function.md",
             "redirect_url": "https://learn.microsoft.com/sql/reporting-services/report-design/report-builder-functions-aggregate-function",
-            "redirect_document_id": true
+            "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                             
   ]          
 
