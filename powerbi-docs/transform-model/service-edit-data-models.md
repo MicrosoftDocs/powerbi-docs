@@ -280,7 +280,7 @@ There are still many functional gaps between the model view in Power BI desktop 
 
 ### Semantic models edited with external tools
 
-Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected results if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring). 
+Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring). 
 
 ### Accessibility
 Full accessibility isn’t currently supported for data model editing in the Power BI service.
