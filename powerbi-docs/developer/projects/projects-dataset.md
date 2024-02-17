@@ -119,6 +119,7 @@ Instead of a big JSON file like Tabular Model Scripting Language (TMSL), TMDL ha
 Learn more about TMDL [here](/analysis-services/tmdl/tmdl-overview).
 
 ### Enable TMDL format Preview feature
+
 Saving as a Power BI Project using TMDL is currently in preview. Before using it, you must first enable it in Preview features:
 
 Go to **File > Options and settings > Options > Preview features** and check the box next to **Store semantic model using TMDL format**.
