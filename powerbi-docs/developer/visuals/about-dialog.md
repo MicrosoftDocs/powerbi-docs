@@ -1,6 +1,6 @@
 ---
-title: Power BI visuals permission settings
-description: Learn what each of the permission settings for Power BI visuals does.
+title: Power BI visuals About dialog
+description: Learn what each of the tabs in the Power BI visuals About dialog describes and what each permission setting does.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom:
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 02/18/2024
 ---
 
 # About Power BI visuals
