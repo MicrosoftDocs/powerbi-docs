@@ -89,5 +89,5 @@ The visual might want to [store data locally](./local-storage.md) on the user's 
 
 ## Related content
 
-* [About tenant settings](fabric/admin/tenant-settings-index)
+* [About tenant settings](/fabric/admin/tenant-settings-index)
 * [Manage Power BI visuals admin settings](/fabric/admin/organizational-visuals).
