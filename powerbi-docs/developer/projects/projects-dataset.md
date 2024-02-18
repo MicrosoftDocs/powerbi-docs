@@ -110,7 +110,7 @@ With the objective of providing a better source control and co-development exper
 
 Unlike Tabular Model Scripting Language (TMSL), TMDL has been designed from the ground up to be human-friendly, facilitating not only *readability* but also easy *editing* in any text editor. This represents a substantial enhancement for source control and *collaborative* development experiences.
 
-:::image type="content" source="./media/projects-dataset/semantic-model-tmslvstmdl.png" alt-text="Screenshot of friendly TMDL diffs." lightbox="./media/projects-dataset/semantic-model-tmslvstmdl.png":::
+:::image type="content" source="./media/projects-dataset/semantic-model-compare.png" alt-text="Screenshot of friendly TMDL diffs." lightbox="./media/projects-dataset/semantic-model-compare.png":::
 
 Instead of a big JSON file like Tabular Model Scripting Language (TMSL), TMDL has a folder structure with separate files for each table, perspective, role, and culture. This makes it easier to work with others, and to understand the semantic model structure by just looking at the folder and files. Ultimately, this leads to a great source control and co-development experience when dealing with git diff’s and merge conflicts.
 
@@ -148,7 +148,7 @@ If you already have a PBIP using TMSL as semantic model format, you can convert 
 
 The existing Tabular Model Scripting Language (TMSL) file (*model.bim*) is replaced with a *\definition* folder containing the TMDL representation of the semantic model.
 
-:::image type="content" source="./media/projects-dataset/tmsl-to-tmdl-folders.png" alt-text="Screenshot of PBIP projects with TMSL folders and with TMDL folders.":::
+:::image type="content" source="./media/projects-dataset/folders-compare.png" alt-text="Screenshot of PBIP projects with TMSL folders and with TMDL folders.":::
 
 If you select to **Keep current** format, Desktop won't prompt again to upgrade.
 
@@ -178,4 +178,4 @@ During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration
 
 - [Power BI Desktop project report folder](projects-report.md)  
 - [Power BI Desktop projects](projects-overview.md)  
-- [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference)  
+- [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference)
