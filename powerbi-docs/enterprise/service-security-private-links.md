@@ -23,7 +23,7 @@ To learn more about Azure Private Link, see [What is Azure Private Link](/azure/
 Enabling private endpoints has an impact on many items, so you should review the [considerations and limitations](#considerations-and-limitations) section in this article before enabling private endpoints.
 
 >[!IMPORTANT]
->Private endpoints are not supported for most items in Microsoft Fabric, including Microsoft Fabric trial capacities. When the tenant setting **Block public Internet access** is **enabled** you can continue using Power BI, datasets and pipelines, but other items will be disabled or return errors and third-party application access to OneLake APIs will also be blocked. When **Block public Internet access** is **disabled** and the tenant setting **Azure Private Link** is **enabled**, you may run into errors when using Fabric artifacts from the private-link-setup machine. 
+>Private endpoints are not supported for most items in Microsoft Fabric, including Microsoft Fabric trial capacities. When the tenant setting **Block public Internet access** is **enabled** you can continue using Power BI semantic models and pipelines, but other items will be disabled or return errors, and third-party application access to OneLake APIs will also be blocked. When **Block public Internet access** is **disabled** and the tenant setting **Azure Private Link** is **enabled**, you may run into errors when using Fabric items from the private-link-setup machine. 
 
 ## Understand private endpoints
 
