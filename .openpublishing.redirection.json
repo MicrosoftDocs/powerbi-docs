@@ -5835,6 +5835,11 @@
             "source_path": "powerbi-docs/connect-data/service-data-details-page.md",
             "redirect_url": "/power-bi/connect-data/service-dataset-details-page",
             "redirect_document_id": false
+        },                                                                                                                                                                                                                                                                                                                                             
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-aggregate-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-aggregate-function",
+            "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                             
   ]          
 
