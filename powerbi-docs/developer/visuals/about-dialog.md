@@ -45,8 +45,8 @@ For more information about certified visuals, see [Certified Power BI visuals](.
 
 ## Privileges
 
-Power BI visuals sometimes require access to data or other resources in your organization. This section describes what permissions a visual might need in order to work properly.
-It's important to note that the admin can choose to block a visual from requesting a certain permission. If a visual requests a permission that the admin blocked, the visual can't use that permission.
+Power BI visuals sometimes require access to data or other resources in your organization. This section describes what permissions a visual might need in order to work properly in the current version.
+It's important to note that the admin can choose to block a visual from requesting a certain permission through the [Power BI visuals admin settings](/fabric/admin/organizational-visuals). If a visual requests a permission that's disables, the visual can't use that permission.
 
 :::image type="content" source="./media/about-dialog/about-dialog.png" alt-text="Screenshot of list of privileges in the About dialog.":::
 
@@ -61,27 +61,31 @@ Visuals can request permission for any or the following privileges:
 
 ### Call Power BI Download APIs
 
-The visual might request to download data from Power BI to a file. The admin can choose to block this permission in which case the visual can't download data from Power BI.
+The [file download API](./file-download-api.md) lets users download data from a custom visual into a file on their storage device. Downloading data from a visual requires user consent and admin permission provided in the [Allow downloads from custom visuals tenant switch](/fabric/admin/organizational-visuals#export-data-to-file). If the admin doesn't enable this switch, the visual can't download data from Power BI.
 
-To learn more, see []().
+If the visual has permission to call the download API, it can export files of the following types:
+
+* .txt
+* .csv
+* .json
+* .tmplt
+* .xml
+* .pdf
+* .xlsx
 
 ### Make calls on behalf of signed in users
 
-The visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, facilitating single sign-on authentication. The admin can choose to block this permission in which case the visual can't obtain the access token.
-
-To learn more, see [Obtain Microsoft Entra access token](/fbric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
+The visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, to facilitate single sign-on authentication. Permission to access tokens requires user consent and admin permission provided in the [Obtain Microsoft Entra access token tenant switch](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token). If the admin doesn't enable this switch, the visual can't access a token or make API calls on behalf of the user.
 
 ### Access URLs
 
-The visual can send HTTP requests to specific URLs that the visual builder declared.
+This privilege allows a visual to send HTTP requests to specific URLs that the visual builder declares in advance.
 
-To learn more, see []().
+There is no tenant admin switch for this permission. As long as non-certified visuals are allowed, this privilege is granted.
 
 ### Call Power BI local storage APIs
 
-The visual might need to store data locally on the user's device. The admin can choose to block this permission in which case the visual can't store data locally.
-
-To learn more, see [Obtain Microsoft Entra access token](/fbric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
+The visual might want to [store data locally](./local-storage.md) on the user's device to help improve performance. The admin can [choose to block this permission](/fabric/admin/organizational-visuals#local-storage) in which case the visual can't store data locally.
 
 ## Related content
 
