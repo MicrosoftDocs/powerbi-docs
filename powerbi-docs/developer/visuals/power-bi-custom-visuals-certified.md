@@ -14,13 +14,17 @@ ms.date: 02/18/2024
 
 Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements) and testing. The tests performed are designed to check that the visual does not access external services or resources. However, Microsoft is not the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of these visuals.
 
-Certified Power BI visuals offer more features than non-certified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](/power-bi/collaborate-share/end-user-subscribe).
+Certified Power BI visuals can be used like any other Power BI visual. They offer more features than non-certified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](../../collaborate-share/end-user-subscribe.md).
 
-The certification process is optional. Power BI visuals that aren't certified, aren't necessarily unsafe. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries can't be certified.
+The certification process is optional. It's up to the developers to decide if they want their visual certified. Power BI visuals that aren't certified, aren't necessarily unsafe. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries can't be certified.
+
+## Removal of certification
+
+Microsoft reserves the right to remove a visual from the certified list, at its discretion.
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-your-power-bi-visual-certified), it must meet the requirements listed in this section.
+To get your Power BI visual certified, it must meet the requirements listed in this section.
 
 ### General requirements
 

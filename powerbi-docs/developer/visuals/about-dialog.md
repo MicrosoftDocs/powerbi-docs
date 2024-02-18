@@ -81,7 +81,7 @@ The visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD
 
 This privilege allows a visual to send HTTP requests to specific URLs that the visual builder declares in advance.
 
-There is no tenant admin switch for this permission. As long as non-certified visuals are allowed, this privilege is granted.
+There is no tenant admin switch for this permission. As long as [non-certified visuals are allowed](/fabric/admin/organizational-visuals#certified-power-bi-visuals), this privilege is granted.
 
 ### Call Power BI local storage APIs
 
