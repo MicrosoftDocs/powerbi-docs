@@ -52,6 +52,8 @@ Direct Lake models support write operations through the XMLA endpoint by using t
 
 - Automation tasks like refreshing, and applying changes to Direct Lake models by using PowerShell and REST APIs.
 
+Note that Direct Lake tables created using XMLA applications will initially be in an unprocessed state until the application issues a refresh command. Unprocessed tables fall back to DirectQuery mode. When creating a new semantic model make sure to refresh your semantic model to process your tables.
+
 #### Enable XMLA read-write
 
 Before performing write operations on Direct Lake models through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
@@ -172,8 +174,6 @@ You may want to disable if, for example, you need to allow completion of data pr
 - Embedded scenarios that rely on embedded entities are not yet supported.
 
 - Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
-
-- Unprocessed tables fall back to DirectQuery mode. When creating a new semantic model make sure to refresh your semantic model to process your tables.
 
 ## Get started
 
