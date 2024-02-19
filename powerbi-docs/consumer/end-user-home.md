@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-In Power BI, the term *content* refers to visuals, apps, dashboards, and reports. Content is created by Power BI designers who share it with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
+In Power BI, the term *content* refers to visuals, apps, dashboards, and reports. Power BI designers create content and share that content with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
 
 ## Explore Power BI Home
 
@@ -118,7 +118,7 @@ Use the nav pane to locate and move between dashboards, reports, apps, and other
   
 The nav pane organizes your content into containers that are similar to what you also see on the Home canvas. Select the **Browse** tab to display lists of your **Recent**, **Favorites**, and **Shared with me** content. 
 
-The number of visible buttons on the nav pane depends on space. Select the ellipses (...) to view hidden buttons. As you open workspaces, they appear below **My workspace**. To remove the workspace from the nav pane, select the X. This doesn't delete the workspace, it only removes it from the nav pane. To reopen a workspace, select it from **Workspaces**.
+The number of visible buttons on the nav pane depends on space. To view hidden buttons, select the ellipses (...). As you open workspaces, they appear below **My workspace**. To remove the workspace from the nav pane, select the X. Selecting the X doesn't delete the workspace, it only removes it from the nav pane. To reopen a workspace, select it from **Workspaces**.
 
 Quickly find the content you want on the nav pane. Content is organized similar to the Home canvas, but shows lists instead of cards.
 
