@@ -7,7 +7,7 @@ ms.reviewer: sranins, shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/14/2024
+ms.date: 02/19/2024
 ---
 
 # On-object formatting API (preview)
@@ -49,9 +49,9 @@ The visual needs to implement the `VisualOnObjectFormatting` interface as part o
 
 VisualOnObjectFormatting contains three methods:
 
-* [getSubSelectionStyles]
-* getSubSelectionShortcuts
-* getSubSelectables
+* [getSubSelectionStyles](#getsubselectionstyles)
+* [getSubSelectionShortcuts](#getsubselectionshortcuts)
+* [getSubSelectables](#getsubselectables)
 
 #### getSubSelectionStyles
 
@@ -87,7 +87,7 @@ Adding a direct edit for a specific datapoint (using selectors) isn't yet suppor
 
 ### FormattingId interface
 
-The following interface is used to reference the `subSelction` shortcuts and styles.
+The following interface is used to reference the `subSelection` shortcuts and styles.
 
 ```typescript
 interface FormattingId {
@@ -361,8 +361,7 @@ Add the `HTMLSubSelectionHelper` attributes to our objects. To see which attribu
 Define the following interface to simplify the examples:
 
 > [!NOTE]
-> The `cardUid` you provide should be the same as the one provided for the getFormattingModel API. For example, if you're using powerbi-visuals-utils-formattingmodel, provide the `cardUid` as *Visual-cardName-card*, where the cardName is the name you assigned to this card in the formatting model settings. Otherwise, provide it as *Visual-cardUid*, you assigned to this card.
-
+> The `cardUid` you provide should be the same as the one provided for the getFormattingModel API. For example, if you're using powerbi-visuals-utils-formattingmodel, provide the `cardUid` as *Visual-cardName-card*, where the cardName is the name you assigned to this card in the formatting model settings. Otherwise, provide it as the *Visual-cardUid* you assigned to this card.
 
 ```typescript
 interface References {
@@ -436,7 +435,7 @@ const directEditReferences: References = {
 };
 ```
 
-* For `colorSelctor`:
+* For `colorSelector`:
 
 ```typescript
 const colorSelectorReferences: References = {
@@ -496,7 +495,7 @@ Now let's implement the get APIs for the onObject formatting and provide them in
         }
     ```
 
-1. Implement the getSubSelction shortcuts and style for the colorSelector:
+1. Implement the getSubSelection shortcuts and style for the colorSelector:
 
     ```typescript
     private getColorSelectorShortcuts(subSelections:  CustomVisualSubSelection[]): VisualSubSelectionShortcuts   {
@@ -648,7 +647,7 @@ private getDirectEditStyles(): SubSelectionStyles {
 
 We provided the relevant properties as we added them in the formattingSettings.
 
-This is how the UI look when right clicking on the directEdit element:
+This is how the UI looks when right clicking on the directEdit element:
 
 :::image type="content" source="./media/on-object-formatting-api/direct-edit.png" alt-text="Screenshot of the direct edit interface.":::
 
@@ -656,10 +655,10 @@ This is how the UI look when right clicking on the directEdit element:
 
 The visual should handle the localization and provide localized strings.
 
-## Git hub resources
+## GitHub resources
 
 * All on object formatting interfaces can be found in (link to be provided once the API is released) in on-object-formatting-api.d.ts
-* We recommend using the [on object utils], which includes the [HTMLSubSelectionHelper](link to be provided once the API is released)
+* We recommend using the [on object utils], which include the [HTMLSubSelectionHelper](link to be provided once the API is released)
 * You can find an example of a custom visual [SampleBarChart](./create-bar-chart.md) that uses API version 5.8.0 and implements the support for the on object formatting using the on object utils at (link to be provided once the API is released)
 
 ## Related content

@@ -7,7 +7,7 @@ ms.reviewer: sranins, shafeeq
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 02/14/2024
+ms.date: 02/19/2024
 ---
 
 # Subselection API (preview)
@@ -52,7 +52,7 @@ This method has the following parameters:
 
 * customVisualObjects: an array that contains `customVisualObjects`, the objectName of the object should be the same as the one declared in the *capabilities.json*, and the selectionId for the selected data point, if it exists.
 * displayName:  the display name should be localized if the visual supports localization.
-* subSelectionType: the type of the subselection(shape, text, or Numeric text).
+* subSelectionType: the type of the subselection (shape, text, or Numeric text).
 * selectionOrigin: the coordinates of the subselected element.
 * showUI: Whether to show the UI for this subselection, like formatting context menus and toolbar.
 * immediateDirectEdit:  If immediate direct edit should be triggered, the ID of the subselection outline to edit.
@@ -61,7 +61,7 @@ If you don't use the [`HTMLSubSelectionHelper`](./utils-on-object.md), you need 
 
 #### Subselection example
 
-In this example, we add an event listener to the host element, for the click, context menu events.
+In this example, we add an event listener to the host element, for the right-click, context menu events.
 
 ```typescript
 constructor(options: VisualConstructorOptions) {
@@ -131,8 +131,10 @@ If you don't use the [`HTMLSubSelectionHelper`](./utils-on-object.md), you have 
 
 #### Update region outlines example
 
-In this example we assume that we have an object called `myObject`, and we want to render a rectangle outline when the relevant element is hovered. We use the code in the previous example for subSelect.  
+In this example we assume that we have an object called `myObject`, and we want to render a rectangle outline when the relevant element is hovered. We use the code in the previous example for subSelect.
+
 In the update, we also need to add an event listener for the `pointerover` event.  
+
 We want to manage our outlines using a Record.
 
 ```typescript

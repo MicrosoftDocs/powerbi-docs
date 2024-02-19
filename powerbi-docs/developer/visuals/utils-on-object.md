@@ -1,5 +1,5 @@
 ---
-title: Introduction to on object formatting utils in Power BI visual
+title: Introduction to on object formatting utils in Power BI visuals
 description: This article describes how to use on object utils for on-object formatting in Power BI custom visuals.
 author: mberdugo
 ms.author: monaberdugo
@@ -52,7 +52,7 @@ The public methods of the helper include:
 
 * setFormatMode(isFormatMode: boolean): void - This method sets the format mode for the HTMLSubSelectionHelper, If isFormatMode is true, the helper attaches relevant event listeners to the host element to enable format mode functionality (subselecting, rendering outlines).
 
-* getSubSelectionSourceFromEvent(event: PointerEvent): HtmlSubSelectionSource | undefined - returns an `HtmlSubSelectionSource` object that is built according to the event parameter.
+* getSubSelectionSourceFromEvent(event: PointerEvent): *HtmlSubSelectionSource* or *undefined* - returns an `HtmlSubSelectionSource` object that is built according to the event parameter.
 
 * onVisualScroll(): void - Indicates to the HTMLSubSelectionHelper that scrolling is currently occurring. Scrolling should remove outlines until scrolling is finished.
 
