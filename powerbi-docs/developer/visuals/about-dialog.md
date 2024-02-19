@@ -25,8 +25,6 @@ The About dialog for custom visuals shows the following information:
 * [Certification](#certification)
 * [Privileges](#privileges)
 
-Out of the box visuals have only the *About* section.
-
 ## About
 
 The *About* section shows the following information:
