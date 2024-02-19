@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: tutorial
-ms.date: 10/24/2023
+ms.date: 02/17/2024
 ---
 
 # Power BI Project (PBIP) and Azure DevOps build pipelines for continuous integration
