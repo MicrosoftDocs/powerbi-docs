@@ -21,17 +21,17 @@ sections:
       - question: |
           What's Microsoft Fabric?
         answer: |
-          [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is a platform that allows users to get, create, share, and visualize data using an array of tools. Power BI is a visualization tool, and is one of Fabric's experiences. 
+          [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is a platform that allows users to get, create, share, and visualize data using an array of tools. Power BI is a visualization tool, and is one of Fabric's [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric). 
 
       - question: |
           What's happening to Power BI Premium?
         answer: |
-          Power BI Premium transitioned to Microsoft Fabric. Power BI Premium is now part of Fabric. You can use Power BI in Fabric alongside all the additional Fabric [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric).\\n[!NOTE]\\n* You can share content with [Free users](/fabric/enterprise/licenses#per-user-licenses) only if you have an F64 SKU or a higher SKU.\\n* Power BI [Report Server](../report-server/get-started.md) isn't available for Fabric.
+          Power BI Premium transitioned to Microsoft Fabric. Power BI Premium is now part of Fabric. You can use Power BI in Fabric alongside all the additional Fabric [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric).
 
       - question: |
           Can I use Power BI without Fabric?
         answer: |
-          Yes. To use Power BI without Fabric, disable the *Users can create Fabric items* [tenant switch](/fabric/admin/fabric-switch#enable-for-your-tenant).
+          Power BI is part of the Fabric platform. To use Power BI without any of the other Fabric [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric), disable the *Users can create Fabric items* [tenant switch](/fabric/admin/fabric-switch#enable-for-your-tenant).
 
       - question: |
           Can I buy Power BI Premium?
@@ -46,7 +46,7 @@ sections:
       - question: |
           How do I renew a P SKU?
         answer: |
-          At the time of your next contract renewal, speak with your Microsoft representative about renewing your contract using an F SKU instead of your P-SKU.
+          At the time of your next contract renewal, talk to your Microsoft representative about renewing your contract using an F SKU instead of your P SKU.
 
       - question: |
           I'm using Power BI Premium, how does the the transition impact me?
@@ -66,25 +66,20 @@ sections:
       - question: |
           How do P SKUs compare to F SKUs?
         answer: |
-          Stock Keeping Units (SKUs) indicate how much compute power your [capacity](/fabric/enterprise/licenses#capacity) has. You can find a comparison between P and F SKUs in the [Capacity license](/fabric/enterprise/licenses#capacity-license) section.              
+          Stock Keeping Units (SKUs) indicate how much compute power your [capacity](/fabric/enterprise/licenses#capacity) has. You can find a comparison between P and F SKUs in [Capacity license](/fabric/enterprise/licenses#capacity-license).              
 
       - question: |
-          How can I estimate which F SKU to buy? 
+          How do I know what's the size of the F SKU I need? 
         answer: |
-          To estimate the size of the capacity you need, work with your Microsoft account representatives who can recommend which SKU to buy, according to your current consumption. You can also use a [Fabric trial]( /fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app]( /fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
+          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your Microsoft account representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial]( /fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app]( /fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
 
       - question: |
           Do I need a Pro license with Fabric? 
         answer: |
-          Power BI report authors and consumers need a Power BI Pro license. With an F64 or higher SKUs, users can view content with a Microsoft Fabric free license if the content is hosted in the capacity. Fabric items that are not Power BI items, don’t require a Pro license. [Per user licenses](/fabric/enterprise/licenses#per-user-licenses) has more information about per user licenses in Fabric.
+          To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, users can view content with a Microsoft Fabric free per user license, if the content is in the capacity. Fabric items that are not Power BI items, don’t require a Pro license. [Per user licenses](/fabric/enterprise/licenses#per-user-licenses) has more information about user licenses in Fabric.
 
   - name: Power BI Premium operations
     questions:
-      - question: |
-          Power BI Premium
-        answer: |
-          This section addresses questions and answers for Power BI Premium. 
-
       - question: |
           How can I control the costs of autoscaling?
         answer: |
