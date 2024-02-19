@@ -193,7 +193,7 @@ export class Visual implements IVisual {
   * Length must be fewer than 128 characters
   * Can't contain the character '|'
 * If the browser is in kiosk mode, local storage availability might differ between browsers, and by the kiosk owner's settings.
-* There are many reasons this API might not be supported. For example,the environment might not be supported or the browser’s local storage isn't available. We recommend checking the *status* of the API before using the *set/get/remove* methods. Error handling is important since even if the API is supported, it might fail.
+* There are many reasons this API might not be supported. For example, the environment might not be supported or the browser’s local storage isn't available. We recommend checking the *status* of the API before using the *set/get/remove* methods. Error handling is important since even if the API is supported, it might fail.
 
 ---
 
