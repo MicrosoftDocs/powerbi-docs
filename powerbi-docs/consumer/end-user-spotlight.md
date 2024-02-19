@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.custom: sample-sales-and-marketing
 ms.topic: how-to
-ms.date: 02/06/2024
+ms.date: 02/19/2024
 LocalizationGroup: Consumer
 ---
 # Add spotlights to Power BI reports
@@ -26,7 +26,7 @@ Use spotlights to draw attention to a specific visual on a report page.
     :::image type="content" source="media/end-user-spotlight/power-bi-spotlights.png" alt-text="Screenshot of visuals and the More options dropdown menu showing the Spotlight option highlighted.":::
 
     > [!NOTE]
-    > If the spotlight mode is actove when you add a bookmark, that mode is retained in the bookmark.
+    > If the spotlight mode is active when you add a bookmark, that mode is retained in the bookmark.
 
 1. The selected visual is highlighted, which causes all other visuals on the page to fade to near transparency.
 
