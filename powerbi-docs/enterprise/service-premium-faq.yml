@@ -51,7 +51,7 @@ sections:
       - question: |
           I'm using Power BI Premium, how does the the transition impact me?
         answer: |
-          You can buy P SKUs until your agreement with Microsoft ends. However, you'll need to replace all your P SKUs with F SKUs.
+          You can buy P SKUs until your agreement with Microsoft ends. However, to keep your Power BI content, you'll need to replace all your P SKUs with F SKUs before your agreement ends.
 
       - question: |
           How do I migrate my Power BI Premium content to Fabric?
@@ -69,14 +69,14 @@ sections:
           Stock Keeping Units (SKUs) indicate how much compute power your [capacity](/fabric/enterprise/licenses#capacity) has. You can find a comparison between P and F SKUs in [Capacity license](/fabric/enterprise/licenses#capacity-license).              
 
       - question: |
-          How do I know what's the size of the F SKU I need? 
+          How do I know what F SKU size I need? 
         answer: |
-          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your Microsoft account representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial]( /fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app]( /fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
+          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial]( /fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app]( /fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
 
       - question: |
           Do I need a Pro license with Fabric? 
         answer: |
-          To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, users can view content with a Microsoft Fabric free per user license, if the content is in the capacity. Fabric items that are not Power BI items, don’t require a Pro license. [Per user licenses](/fabric/enterprise/licenses#per-user-licenses) has more information about user licenses in Fabric.
+          To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, you can view content with a Microsoft Fabric free license, if the content is in the capacity. Fabric items that are not Power BI items, don't require a Pro license. For more information about user licenses in Fabric, see [Per user licenses](/fabric/enterprise/licenses#per-user-licenses).
 
   - name: Power BI Premium operations
     questions:
