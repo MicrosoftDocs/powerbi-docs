@@ -12,9 +12,9 @@ ms.date: 02/18/2024
 
 # Certified Power BI visuals
 
-Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements) and testing. The tests performed are designed to check that the visual does not access external services or resources. However, Microsoft is not the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of these visuals.
+Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements) and testing. The tests performed are designed to check that the visual doesn't access external services or resources. However, Microsoft isn't the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of these visuals.
 
-Certified Power BI visuals can be used like any other Power BI visual. They offer more features than non-certified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](../../collaborate-share/end-user-subscribe.md).
+Certified Power BI visuals can be used like any other Power BI visual. They offer more features than noncertified visuals. For example, you can [export them to PowerPoint](../../collaborate-share/end-user-powerpoint.md), or display the visual in received emails when a user [subscribes to report pages](../../collaborate-share/end-user-subscribe.md).
 
 The certification process is optional. It's up to the developers to decide if they want their visual certified. Power BI visuals that aren't certified, aren't necessarily unsafe. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries can't be certified.
 
@@ -88,7 +88,7 @@ Compile your Power BI visual with `pbiviz package`. If you're using your own bui
 
 Make sure you follow the [Power BI visuals additional certification](/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, you'll get a rejection email from Partner Center with the policy numbers listed in this link.
 
-Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
+Follow the code requirements listed here to make sure that your code is in line with the Power BI certification policies.  
 
 #### Required
 
@@ -156,7 +156,7 @@ Once a Power BI visual is certified, it gets a designated badge indicating that 
 
 ## Publication timeline
 
-The process of deploying to AppSource may take some time. Your Power BI visual will be available to download from AppSource when this process is complete.
+The process of deploying to AppSource can take time. Your Power BI visual will be available to download from AppSource when this process is complete.
 
 ### When will users be able to download my visual?
 
@@ -176,4 +176,4 @@ The certification badge should be visible within three weeks after your submissi
 * [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.yml).
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+More questions? [Try the Power BI Community.](https://community.powerbi.com/)
