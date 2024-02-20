@@ -201,6 +201,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't [export underlying data](../visuals/power-bi-visualization-export-data.md) from visuals that use visual calculations or hidden fields.
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
 * You can't set built-in or custom [format strings](../create-reports/desktop-custom-format-strings.md) on visual calculations.
+* You can't apply [conditional formatting](../create-reports/desktop-conditional-table-formatting) on visual calculations.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
 * You can't change the sort order for visual calculations.
