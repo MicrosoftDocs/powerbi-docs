@@ -61,10 +61,11 @@ Now generate a table of contents across your report pages.
 
 ## Send feedback
 
-We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
+We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
 
 ## Next steps
 
+- [Overview of Copilot for Power BI](copilot-introduction.md)
 - [Create a report with Copilot for Power BI](copilot-create-report.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
