@@ -68,6 +68,8 @@
       href: sample-financial-download.md
   - name: Power BI reports
     items: 
+    - name: Home in Power BI Desktop
+      href: desktop-home.md
     - name: Power BI modern ribbon
       href: desktop-ribbon.md
     - name: Optimize ribbon in Power BI Desktop
