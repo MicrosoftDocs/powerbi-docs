@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/14/2023
+ms.date: 12/19/2023
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 ---
@@ -226,7 +226,7 @@ In this release of bookmark features, there are a few considerations and limitat
 
 * Most Power BI visuals work well with bookmarks. However, if you encounter problems with bookmarks and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a slicer to a page where you previously created bookmarks, the slicer will be cleared.
-* If you move a visual after you create a bookmark, when you select the bookmark, the visual appears where you moved it.
+* Bookmarks apply to the state of the visuals on a report page, and not to the visuals' location on the report page. You can create a bookmark and then move visuals on that page. Selecting the bookmark does not return those visuals to their previous locations.
 
 ## Related content
 

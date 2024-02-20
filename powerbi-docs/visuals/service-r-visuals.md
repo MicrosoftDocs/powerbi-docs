@@ -7,7 +7,7 @@ ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/12/2022
+ms.date: 02/20/2024
 ms.custom: sample-RVisual
 LocalizationGroup: Visualizations
 ---
@@ -22,7 +22,7 @@ R visuals currently can only be created in **Power BI Desktop**, and then publis
 The Power BI service supports viewing and interacting with visuals created with R scripts. Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R.
 
 > [!NOTE]
-> The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open-source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Microsoft R 3.4.4.*
+> The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open-source community that offers over 7,000 add-on packages, as well as widely used R User Groups.
 
 R visuals are created in a [Power BI Desktop report](../fundamentals/desktop-get-the-desktop.md), like the report shown in the following image.
 
@@ -34,7 +34,7 @@ In the service, not all of the R packages are supported. See supported packages 
 
 You can download this [sample Power BI Desktop file](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix file) that contains a few R visuals to see how they work, and to experiment.
 
-R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, usually behave like any other visual in the Power BI service. You can interact, filter, slice, or share them with others. However, unlike other visuals, R visuals can't show tool tips, can't be pinned to dashboards, and can't be used to filter other visuals.
+R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, usually behave like any other visual in the Power BI service. You can interact, filter, slice, or share them with others. However, unlike other visuals, R visuals can't show tool tips, and can't be used to filter other visuals.
 
 As you can see in the following image, R visuals in the Power BI service largely appear and behave like any other visual. Users don't need to be aware of the underlying R script that created the visual.
 
@@ -48,7 +48,7 @@ These risks mainly exist in the authoring phase when the script author runs the 
 
 The Power BI service applies a *sandbox* technology to protect users and the service from security risks.
 
-This *sandbox* approach imposes some restrictions on the R scripts running in the Power BI service, such as accessing the Internet, or accessing to other resources that aren't required to create the R visual.
+This *sandbox* approach imposes some restrictions on the R scripts running in the Power BI service, such as accessing the Internet, or accessing other resources that aren't required to create the R visual.
 
 ## R scripts error experience
 
@@ -74,41 +74,6 @@ The following table describes R visuals capabilities based on licensing.
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported | 
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    |  
 **Managed tenant** with Pro or PPU license     |   Supported      | Supported      | Supported    | 
-
-## Considerations and limitations
-
-R visuals in the Power BI service have a few limitations:
-
-* R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
-* Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
-* If the input semantic model of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
-* Resolution - all R visuals are displayed at 72 DPI.
-* Plotting device - only plotting to the default device is supported. 
-* Calculation time limitation – if an R visual calculation exceeds 60 seconds the script times out, resulting in an error.
-* R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and doesn't support tool tips.
-* R visuals respond to highlighting other visuals, but you can't select elements in the R visual in order to cross filter other elements.
-* R visuals are currently not supported for the *Time* data type. Use Date/Time instead.
-* R visuals don't display when using **Publish to web**.
-* R visuals don't support renaming input columns. Columns will be referred to by their original name during script execution.
-* R visuals currently don't print with reports printing.
-* R visuals are currently not supported in the DirectQuery mode of Analysis Services.
-* R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following extra step:
-  
-  * Add the following line at the beginning of the R script:
-
-     ```powerbi_rEnableShowText =  1```
-
-* Chinese, Japanese, and Korean fonts require all of the following steps to work properly in the Power BI service:
-  
-  1. Install the R package *showtext* and all of its dependencies. You can do install it by running the following script:
-
-     ```install.packages("showtext")```
-
-  1. Add the following line at the beginning of the R script:
-
-    ```R script
-      powerbi_rEnableShowTextForCJKLanguages =  1
-    ```
 
 ## Overview of R packages
 
@@ -136,3 +101,38 @@ There are a handful of requirements and limitations for R packages:
 For a long list of supported R packages (and the short list of unsupported packages), see the following article:
 
 * [R packages in the Power BI service](../connect-data/service-r-packages-support.md)
+
+## Considerations and limitations
+
+* R visuals support is limited to the packages identified [in Learn which R packages are supported](../connect-data/service-r-packages-support.md). There currently is no support for custom packages.
+* Data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
+* If the input semantic model of an R Visual has a column that contains a string value longer than 32766 characters, that value is truncated.
+* All R visuals are displayed at 72 DPI.
+* Only plotting to the default device is supported. 
+* If an R visual calculation exceeds 60 seconds the script times out, resulting in an error.
+* R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and doesn't support tool tips.
+* R visuals respond to highlighting other visuals, but you can't select elements in the R visual in order to cross filter other visuals.
+* R visuals are currently not supported for the *Time* data type. Use Date/Time instead.
+* R visuals don't display when using **Publish to web**.
+* R visuals don't support renaming input columns. Columns will be referred to by their original name during script execution.
+* R visuals don't print with reports printing.
+* R visuals aren't supported in the DirectQuery mode of Analysis Services.
+* R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following extra step:
+  
+  * Add the following line at the beginning of the R script:
+
+     ```powerbi_rEnableShowText =  1```
+
+* Chinese, Japanese, and Korean fonts require all of the following steps to work properly in the Power BI service:
+  
+  1. Install the R package *showtext* and all of its dependencies. You can install it by running the following script:
+
+     ```install.packages("showtext")```
+
+  1. Add the following line at the beginning of the R script:
+
+    ```R script
+      powerbi_rEnableShowTextForCJKLanguages =  1
+    ```
+
+
