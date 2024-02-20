@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 # What's new in Power BI?
 
 
-## December 2023 Update (2.124.581.0)
+## February 2024 Update (2.126.927.0)
 
 Our hearts are full of love for this month's collection of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
 
