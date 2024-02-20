@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/11/2024
+ms.date: 01/24/2024
 LocalizationGroup: Create reports
 ---
 
@@ -35,7 +35,11 @@ Copilot can also create a narrative visual that summarizes a page or a whole rep
 
 And Copilot can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports.
 
-What follows are examples of what Copilot can generate.
+Here are three examples of what Copilot can generate.
+
+- A [report outline of suggested pages](#a-report-outline-of-suggested-pages)
+- A [narrative visual](#a-narrative-visual)
+- A [summary response about your report content](#a-summary-response-about-your-report-content)
 
 ### A report outline of suggested pages
 
@@ -50,13 +54,24 @@ With Copilot, you can create a visual that generates a text summary of the data 
 
 Learn more [narrative visuals](copilot-create-narrative.md).
 
-:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Narrative visual answering questions.":::
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions.":::
+
+### A summary response about your report content
+
+Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page." 
+ 
+You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report. 
+
+:::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
+
+Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
+
 
 ### Synonyms to enhance Q&A
 
 - [Synonyms that you can add to Q&A](../natural-language/q-and-a-copilot-enhancements.md) to improve the Q&A visual's ability to understand user questions.
 
-    :::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Copilot can add suggestions for synonyms.":::
+    :::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Screenshot showing Copilot can add suggestions for synonyms.":::
 
 ## Copilot requirements
 
@@ -88,7 +103,7 @@ For answers to common questions related to business data security and privacy to
 
 ## Send feedback
 
-We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
+We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
 
 ## Next steps
 
