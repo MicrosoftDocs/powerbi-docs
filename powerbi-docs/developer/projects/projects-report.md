@@ -87,7 +87,7 @@ Example definition.pbir:
 
 The definition includes the `datasetReference` property, which references the semantic model used in the report. The reference can be either:
 
-`byPath` - Specifies a relative path to the target semantic model folder. Absolute paths aren't supported. A backslash (\) is used as a folder separator. When used, Power BI Desktop also opens the semantic model in full edit mode.
+`byPath` - Specifies a relative path to the target semantic model folder. Absolute paths aren't supported. A forward slash (/) is used as a folder separator. When used, Power BI Desktop also opens the semantic model in full edit mode.
 
 `byConnection` - Specifies a remote semantic model in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode.
 
@@ -119,6 +119,8 @@ Example using `byConnection`:
 }
 
 ```
+
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
 
 For more information, refer to the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
