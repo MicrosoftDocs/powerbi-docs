@@ -24,13 +24,11 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 1. Select the Power Automate icon from the **Visualizations** pane.
 
-    :::image type="content" source="media/power-bi-automate-visual/power-automate-visual-resized-repositioned-report.png" alt-text="Flow button resized and repositioned on the report.":::
-    ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
+    :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane":::
 
     In **Power BI Desktop**, you can also add the visual from the ribbon. On the **Insert** tab, select **Power Automate** in the **Power Platform** section.
 
-    :::image type="content" source="media/power-bi-automate-visual/power-automate-visual-resized-repositioned-report.png" alt-text="Flow button resized and repositioned on the report.":::
-    ![Screenshot of selecting the Power Automate icon from the Insert ribbon.](https://github.com/MicrosoftDocs/powerbi-docs/assets/79485235/0f5c51e9-f84d-43c0-b258-e585e27c6e07)
+    :::image type="content" source="media/power-bi-automate-visual/create-power-automate-button.png" alt-text="Screenshot of selecting the Power Automate icon from the Insert ribbon.":::
    
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
