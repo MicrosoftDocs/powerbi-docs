@@ -160,13 +160,13 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | COLLAPSEALL | Calculation is evaluated at the total level of the axis. | Percent of grand total = DIVIDE([Sales Amount], COLLAPSEALL([Sales Amount], ROWS)) | N/A |
 | EXPAND | Calculation is evaluated at a lower level of the axis. | Average of children = EXPAND(AVERAGE([Sales Amount]), ROWS) | N/A |
 | EXPANDALL | Calculation is evaluated at the leaf level of the axis. | Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), ROWS) | N/A |
-| FIRST | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – FIRST([Profit]) | [INDEX(1)](/dax/index-function-dax) |
-| LAST | Refers to the last row of an axis. | ProfitVSLast = [Profit] – LAST([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
-| MOVINGAVERAGE | Adds a moving average on an axis. | MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
-| NEXT | Refers to a next row of an axis. | ProfitVSNext = [Profit] – NEXT([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
-| PREVIOUS | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
-| RANGE | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(RANGE(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
-| RUNNINGSUM | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [FIRST](/dax/first-function.dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – FIRST([Profit]) | [INDEX(1)](/dax/index-function-dax) |
+| [LAST](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – LAST([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
+| [MOVINGAVERAGE](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
+| [NEXT](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – NEXT([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
+| [PREVIOUS](/dax/movingaverage-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
+| [RANGE](/dax/movingaverage-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(RANGE(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [RUNNINGSUM](/dax/movingaverage-function-dax) | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
 
 ## Considerations and limitations
 
@@ -206,6 +206,9 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
+* You can't use [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
+* You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
+
 
 ## Next steps
 
