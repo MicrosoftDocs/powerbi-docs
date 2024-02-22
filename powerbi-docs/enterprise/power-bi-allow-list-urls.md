@@ -48,6 +48,7 @@ For the general use of Power BI, you must be able to connect to the endpoints an
 | **Required:** Content Delivery Network (CDN) | content.powerapps.com | TCP 443 |
 | **Required:** Microsoft 365 integration | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | **Required:** Portal | *.powerbi.com | TCP 443 |
+| **Required:** Manage gateways, connections and data policies (preview) | gatewayadminportal.azure.com | TCP 443 |
 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
 | **Optional:** Informational messages | arc.msn.com | TCP 443 |
 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
