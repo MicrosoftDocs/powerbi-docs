@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/22/2024
+ms.date: 02/23/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service (Preview)
