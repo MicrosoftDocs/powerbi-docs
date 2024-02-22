@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/22/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service (Preview)
@@ -77,6 +77,8 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 ## Limitations and considerations
 
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
+
+* You can't mix an Excel on-premises data source with an existing Analysis Services DirectQuery data source; you can only include an Excel on-premises data source to your report if it's in a separate query. In such situations, you can map the Excel data source to a gateway, and leave the Analysis Services DirectQuery cloud data source as-is.
 
 ## Related content
 
