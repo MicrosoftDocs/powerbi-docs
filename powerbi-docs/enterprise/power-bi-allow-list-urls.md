@@ -46,6 +46,7 @@ For the general use of Power BI, you must be able to connect to the endpoints an
 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
 | **Required:** Backend APIs | *.pbidedicated.windows.net | TCP 443 |
 | **Required:** Content Delivery Network (CDN) | content.powerapps.com | TCP 443 |
+| **Required:** Datamart SQL | One of the following:<li>datamart.fabric.microsoft.com</li><li>datamart.pbidedicated.windows.net</li> | 1433 |
 | **Required:** Microsoft 365 integration | See the documentation for [Microsoft 365 Common and Office Online URLs](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | **Required:** Portal | *.powerbi.com | TCP 443 |
 | **Required:** Manage gateways, connections and data policies (preview) | gatewayadminportal.azure.com | TCP 443 |
