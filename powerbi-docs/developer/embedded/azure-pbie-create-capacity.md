@@ -5,7 +5,6 @@ author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
