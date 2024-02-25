@@ -322,6 +322,13 @@ Add the `HTMLSubSelectionHelper` attributes to our objects. To see which attribu
 * For the directEdit attribute:
 
   ```typescript
+  import {
+
+      HtmlSubSelectableClass, HtmlSubSelectionHelper, SubSelectableDirectEdit as SubSelectableDirectEditAttr,
+      SubSelectableDisplayNameAttribute, SubSelectableObjectNameAttribute, SubSelectableTypeAttribute
+
+  } from 'powerbi-visuals-utils-onobjectutils';
+
   const DirectEdit: powerbi.visuals.SubSelectableDirectEdit = {
       reference: {
           objectName: 'directEdit',
