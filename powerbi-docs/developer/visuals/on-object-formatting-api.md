@@ -28,7 +28,7 @@ Use the subselection service when the user selects a subselectable element to se
 
 ## Format mode
 
-Format mode is a new mode where the user can turn `onObject` formatting on and off when in authoring mode. The visual is updated with the status of the format mode in the update options. The update options also include the currently sub-selected subSelection as `CustomVisualSubSelection`.
+Format mode is a new mode where the user can turn `onObject` formatting on and off when in authoring mode. The visual is updated with the status of the format mode in the update options. The update options also include the currently subselected subSelection as `CustomVisualSubSelection`.
 
 ## How to implement the on-object formatting API
 
@@ -80,8 +80,8 @@ To provide subselections to the disambiguation menu, the visual needs to impleme
 If the `HTMLSubSelectionHelper` is being utilized to create a subselection, the *HTMLSubSelectionHelper.getSubSelectables()* method can be used to gather subselectable elements from the DOM.
 
 **Sub-Selection Direct Text Editing:**
-With On-Object formatting, you can double click the text of a subs-electable element to directly edit it.
-To provide direct-edit capability, you need to provide a `RectangleSubSelectionOutline` with the appropriate cVDirectEdit Property populated with a SubSelectableDirectEdit object. The outline can either be provided as a custom outline or, if you're using the `HTMLSubSelectionHelper` you can use the `SubSelectableDirectEdit` attribute. (see the attributes provided by the HTMLSubSelectionHelper)
+With On-Object formatting, you can double-click the text of a subs-electable element to directly edit it.
+To provide direct-edit capability, you need to provide a `RectangleSubSelectionOutline` with the appropriate cVDirectEdit Property populated with a SubSelectableDirectEdit object. The outline can either be provided as a custom outline or, if you're using the `HTMLSubSelectionHelper` you can use the `SubSelectableDirectEdit` attribute. (See the attributes provided by the HTMLSubSelectionHelper)
 
 Adding a direct edit for a specific datapoint (using selectors) isn't yet supported.
 
@@ -221,7 +221,7 @@ class ColorSelectorCardSettings extends Card {
 }
 ```
 
-Add a method to the formattingSetting so we can populate the slices dynamically for the colorSelector object (these are our datapoints).
+Add a method to the formattingSetting so we can populate the slices dynamically for the colorSelector object (our datapoints).
 
 ```typescript
 populateColorSelector(dataPoints: BarChartDataPoint[]) {
@@ -323,10 +323,8 @@ Add the `HTMLSubSelectionHelper` attributes to our objects. To see which attribu
 
   ```typescript
   import {
-
-      HtmlSubSelectableClass, HtmlSubSelectionHelper, SubSelectableDirectEdit as SubSelectableDirectEditAttr,
-      SubSelectableDisplayNameAttribute, SubSelectableObjectNameAttribute, SubSelectableTypeAttribute
-
+     HtmlSubSelectableClass, HtmlSubSelectionHelper, SubSelectableDirectEdit as SubSelectableDirectEditAttr,
+     SubSelectableDisplayNameAttribute, SubSelectableObjectNameAttribute, SubSelectableTypeAttribute 
   } from 'powerbi-visuals-utils-onobjectutils';
 
   const DirectEdit: powerbi.visuals.SubSelectableDirectEdit = {
@@ -345,12 +343,11 @@ Add the `HTMLSubSelectionHelper` attributes to our objects. To see which attribu
               .attr(SubSelectableObjectNameAttribute, 'directEdit')
               .attr(SubSelectableDisplayNameAttribute, 'Direct Edit')
               .attr(SubSelectableDirectEditAttr, this.visualDirectEditSubSelection)
-   …..
   ```
 
   The `HTMLSubSelectionHelper` uses the `SubSelectableDirectEditAttr` attribute to provide the directEdit reference of the directEdit outline, so a direct edit starts when a user double clicks on the element.
 
-:::image type="content" source="./media/on-object-formatting-api/sub-selection-helper.png" alt-text="Screenshot showing how the subselection helper works.":::
+    :::image type="content" source="./media/on-object-formatting-api/sub-selection-helper.png" alt-text="Screenshot showing how the subselection helper works.":::
 
 * For the colorSelector:
 
@@ -526,8 +523,8 @@ Now let's implement the get APIs for the onObject formatting and provide them in
 
     The above shortcut returns relevant menu item in the context menu and adds the following functionalities:
 
-    * VisualShortcutType.Navigate: when a user clicks on one of the bars (data point), and the formatting pane is open, the format pane scrolls to the color selector card and open it
-    * VisualShortcutType.Reset: this adds a reset shortcut to the context menu, it is enabled if the fill color was changed.
+    * VisualShortcutType.Navigate: when a user selects on one of the bars (data point), and the formatting pane is open, the format pane scrolls to the color selector card and open it
+    * VisualShortcutType.Reset: adds a reset shortcut to the context menu. It's enabled if the fill color was changed.
 
     ```typescript
     private getColorSelectorStyles(subSelections: CustomVisualSubSelection[]): SubSelectionStyles {
@@ -547,7 +544,7 @@ Now let's implement the get APIs for the onObject formatting and provide them in
 
 When a user right-clicks on a bar, the following appears:
 
-:::image type="content" source="./media/on-object-formatting-api/right-click-bar.png" alt-text="Screenshot of user interface when a user right clicks on a bar.":::
+:::image type="content" source="./media/on-object-formatting-api/right-click-bar.png" alt-text="Screenshot of user interface when a user right-clicks on a bar.":::
 
 When changing the color:
 
@@ -599,7 +596,7 @@ This shortcut adds a relevant menu item in the context menu and adds the followi
 * VisualShortcutType.Reset: adds a reset to the default item to the context menu, when one of the properties provided in relatedResetFormattingIds array changes.
 * VisualShortcutType.Toggle: adds a Delete options to the context menu. When clicked, the toggle switch for the *directEdit* card is turned off.
 * VisualShortcutType.Picker: Adds an option in the context menu to pick between Right and Left, since we added the position slice in the formatting card for the *directEdit*.
-* VisualShortcutType.Navigate: When the format pane is open and the user clicks on the *directEdit* element, the format pane scrolls and opens the *directEdit* card.
+* VisualShortcutType.Navigate: When the format pane is open and the user selects the *directEdit* element, the format pane scrolls and opens the *directEdit* card.
 
 ```typescript
 private getDirectEditStyles(): SubSelectionStyles {
@@ -654,7 +651,7 @@ private getDirectEditStyles(): SubSelectionStyles {
 
 We provided the relevant properties as we added them in the formattingSettings.
 
-This is how the UI looks when right clicking on the directEdit element:
+The following image illustrates how the UI looks when right-clicking on the directEdit element:
 
 :::image type="content" source="./media/on-object-formatting-api/direct-edit.png" alt-text="Screenshot of the direct edit interface.":::
 
