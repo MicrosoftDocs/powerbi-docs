@@ -117,12 +117,14 @@ To create this policy, you need to be a **Global Administrator** for the directo
 
    $sp = Get-MgServicePrincipal -Filter "DisplayName eq 'Name_Of_Application'"
 
-   $policy = New-MgBetaPolicyActivityBasedTimeoutPolicy -Definition @("{`"AllowCloudPasswordValidation`":true}") -DisplayName EnableDirectAuth -IsOrganizationDefault:$false
+   $policy = New-MgBetaPolicyActivityBasedTimeoutPolicy -Definition @("{`"AllowCloudPasswordValidation`":true}") `
+      -DisplayName EnableDirectAuth -IsOrganizationDefault:$false
 
    $params = @{
       "@odata.id" = "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/$policy.Id"
    }
-   New-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $sp.Id -BodyParameter $params
+   New-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $sp.Id `
+      -BodyParameter $params
    ```
 
 After assigning the policy, wait approximately 15-20 seconds for propagation before testing.
