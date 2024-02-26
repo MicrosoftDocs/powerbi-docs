@@ -112,24 +112,18 @@ To create this policy, you need to be a **Global Administrator** for the directo
 
 2. Run the following PowerShell commands line-by-line (making sure the variable `$sp` doesn't have more than one application as a result).
 
-```powershell
-Connect-MgGraph -Scopes "Directory.Read.All","Policy.ReadWrite.ApplicationConfiguration"
-```
+   ```powershell
+   Connect-MgGraph -Scopes "Directory.Read.All","Policy.ReadWrite.ApplicationConfiguration"
 
-```powershell
-$sp = Get-MgServicePrincipal -Filter "DisplayName eq 'Name_Of_Application'"
-```
+   $sp = Get-MgServicePrincipal -Filter "DisplayName eq 'Name_Of_Application'"
 
-```powershell
-$policy = New-MgBetaPolicyActivityBasedTimeoutPolicy -Definition @("{`"AllowCloudPasswordValidation`":true}") -DisplayName EnableDirectAuth -IsOrganizationDefault:$false
-```
+   $policy = New-MgBetaPolicyActivityBasedTimeoutPolicy -Definition @("{`"AllowCloudPasswordValidation`":true}") -DisplayName EnableDirectAuth -IsOrganizationDefault:$false
 
-```powershell
-$params = @{
-   "@odata.id" = "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/$policy.Id"
-}
-New-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $sp.Id -BodyParameter $params
-```
+   $params = @{
+      "@odata.id" = "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/$policy.Id"
+   }
+   New-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $sp.Id -BodyParameter $params
+   ```
 
 After assigning the policy, wait approximately 15-20 seconds for propagation before testing.
 
