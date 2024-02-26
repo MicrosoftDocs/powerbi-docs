@@ -18,6 +18,9 @@ The `HTMLSubSelectionHelper` provides an easy way for your Power BI custom visua
 
 The utils exports CSS classes and attributes making it easier for the visual to define and maintain subselections.
 
+> [!NOTE]
+> Use version 6.0.1 or higher of the utils.
+
 To define subselectable elements, we also need to add a class to each desired element.
 
 |     CSS Class               |     Purpose                                                                                 |     Required    |
@@ -189,8 +192,15 @@ public selectionIdCallback(e: Element): ISelectionId {
                 return undefined;
         }
     }
-And in the constructor code we will create the HTMLSubSelectionHelper
+```
 
+Import the HtmlSubSelectionHelper:
+
+`import {  HtmlSubSelectionHelper } from 'powerbi-visuals-utils-onobjectutils';`
+
+In the constructor code, create the HTMLSubSelectionHelper:
+
+```typescript
 constructor(options: VisualConstructorOptions) {
     …….
     this.subSelectionHelper = HtmlSubSelectionHelper.createHtmlSubselectionHelper({
