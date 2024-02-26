@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/06/2023
+ms.date: 02/26/2024
 ---
 
 # Change log for Power BI Desktop
@@ -16,6 +16,37 @@ This change log is for Power BI Desktop and lists new items along with bug fixes
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+
+## December 2023 QFE 3
+
+*Version: 2.124.2028.0, Released: January 29, 2024*
+
+Bug fixes/improvements:
+
+* Fix v5.50 upgrader for multi-static series and 100% stacked charts
+*	Remove Force Refresh on Token Refresh
+
+## December 2023 QFE 2
+
+*Version: 2.124.1805.0, Released: January 19, 2024*
+
+Bug fixes/improvements:
+
+*	Sign-in Flighting Feature Update
+* Updated Q&A Copilot telemetry
+
+## December 2023 QFE 1
+
+*Version: 2.124.1554.0, Released: January 09, 2024*
+
+Bug fixes/improvements:
+
+*	Updated PQO announcement dialog image path.
+*	Updated the learn more link for PQO announcement dialog.
+*	Added flighted features to Power BI Desktop frown telemetry event.
+*	Disable NewNonEmptyFilteringSemantics feature switch.
+*	Small-multiple single-series column-chart style-formatting.
+*	Fixed formatting pane is not allowing formatting multiple visuals of same type
 
 ## November 2023 QFE 1
 
