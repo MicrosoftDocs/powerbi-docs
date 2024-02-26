@@ -12,7 +12,7 @@ ms.date: 02/26/2024
 
 # Change log for Power BI Desktop
 
-This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
+This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
