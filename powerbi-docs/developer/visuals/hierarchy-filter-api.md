@@ -71,13 +71,13 @@ interface IHierarchyIdentityFilter<IdentityType> extends IFilter {
 }
 ```
 
-*$schema*: https://powerbi.com/product/schema#hierarchyIdentity
+* *$schema*: https://powerbi.com/product/schema#hierarchyIdentity
 
-*filterType*: FilterType.HierarchyIdentity
+* *filterType*: FilterType.HierarchyIdentity
 
-*target*: Array of relevant columns in the query. Currently only a single role is supported; therefore, the target is not required and should be empty.
+* *target*: Array of relevant columns in the query. Currently only a single role is supported; therefore, the target is not required and should be empty.
 
-*hierarchyData*: the selected and unselected items in a hierarchy tree where each `IHierarchyIdentityFilterNode<IdentityType>` represents a single value selection.
+* *hierarchyData*: the selected and unselected items in a hierarchy tree where each `IHierarchyIdentityFilterNode<IdentityType>` represents a single value selection.
 
 Keep the following rules in mind when defining your hierarchy identity filter:
 
