@@ -39,7 +39,7 @@ Explore these new capabilities to create compelling narratives with your data in
   - For clustered column charts, you can [overlap the columns](#overlap-columns-in-series).
   - For clustered column and bar charts, you have the option to **Erode** or **Explode** the stacked series.
 
-- **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options including matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.
+- **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options. These options include matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.
 
 For more comprehensive information about these features for column and bar charts, see the [Power BI Visuals blog post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7138638604704129024/).
 
@@ -51,7 +51,7 @@ By default, in column charts, the series columns are touching. You have alternat
 
 ### Add space between series
 
-In the **Format** pane, on the **Visual** tab, under **Layout**, type a values in the **Space between series** box, or slide the slider to the value you want.
+In the **Format** pane, on the **Visual** tab, under **Layout**, type a value in the **Space between series** box, or slide the slider to the value you want.
 
 :::image type="content" source="media/power-bi-visualization-column-bar-format/column-chart-space-between.png" alt-text="Screenshot showing column chart with 20% between series columns.":::
 
