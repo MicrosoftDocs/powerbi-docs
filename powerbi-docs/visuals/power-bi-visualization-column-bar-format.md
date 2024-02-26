@@ -45,7 +45,7 @@ For more comprehensive information about these features for column and bar cha
 
 ## Separate or overlap columns
 
-By default, in column charts, the series columns are touching. You have alternatives to change that layout.
+By default, in column charts, the series columns are touching. You have alternatives to change that layout. Here's the default layout.
 
 :::image type="content" source="media/power-bi-visualization-column-bar-format/column-chart-basic.png" alt-text="Screenshot showing basic layout with series columns touching.":::
 
