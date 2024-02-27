@@ -36,6 +36,7 @@ If you update the measure later, just select the button again so Copilot can upd
 
 ## Related content
 
+- [Overview of Copilot for Power BI (preview)](../create-reports/copilot-introduction.md)
 - [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md). Download a sample file and get step-by-step lessons on how to create more measures.  
 - [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). 
 - [Data Analysis Expressions Reference](/dax/)
