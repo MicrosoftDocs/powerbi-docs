@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 02/27/2024
 LocalizationGroup: Create reports
 ---
 
@@ -15,11 +15,11 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+Copilot for Microsoft Fabric Public Preview is available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot capabilities for Power BI.
+
 Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
-
-Copilot for Microsoft Fabric Public Preview is available in Power BI. It helps you use the transformational power of generative AI to help in you get the most from your data. This article provides an overview of the capabilities that were introduced for Power BI.
 
 ## Get started with report creation
 
@@ -35,11 +35,12 @@ Copilot can also create a narrative visual that summarizes a page or a whole rep
 
 And Copilot can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports.
 
-Here are three examples of what Copilot can generate.
+Here are four examples of what Copilot can generate.
 
 - A [report outline of suggested pages](#a-report-outline-of-suggested-pages)
 - A [narrative visual](#a-narrative-visual)
 - A [summary response about your report content](#a-summary-response-about-your-report-content)
+- [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
 
 ### A report outline of suggested pages
 
@@ -66,12 +67,17 @@ You can also pose specific questions about the visualized data on a report page 
 
 Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
 
-
 ### Synonyms to enhance Q&A
 
-- [Synonyms that you can add to Q&A](../natural-language/q-and-a-copilot-enhancements.md) to improve the Q&A visual's ability to understand user questions.
+Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a-copilot-enhancements.md) to improve the Q&A visual's ability to understand user questions.
 
-    :::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Screenshot showing Copilot can add suggestions for synonyms.":::
+:::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Screenshot showing Copilot can add suggestions for synonyms.":::
+
+### Descriptions for semantic model measures
+
+Copilot can add descriptions to your semantic model measures. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation.
+
+[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md)
 
 ## Copilot requirements
 
