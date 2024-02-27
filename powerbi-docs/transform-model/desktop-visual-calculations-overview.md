@@ -152,7 +152,10 @@ You can think of the ORDERBY and PARTITIONBY pair as pinning field references do
 
 You can use many of the existing DAX functions in visual calculations. Since visual calculations work within the confines of the visual matrix, functions that rely on model relationships such as [USERELATIONSHIP](/dax/userelationship-function-dax), [RELATED](/dax/related-function-dax) or [RELATEDTABLE](/dax/relatedtable-function-dax) aren't available.
 
-Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions:
+Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions. 
+
+> [!NOTE]
+> Only use the visual calculations specific functions mentioned in the table below. Other visual calculations specific functions are for internal use only at this time and should not be used. Refer to the table below for any updates of the functions available for use as this preview progresses.
 
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
@@ -167,6 +170,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [PREVIOUS](/dax/movingaverage-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
 | [RANGE](/dax/movingaverage-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(RANGE(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
 | [RUNNINGSUM](/dax/movingaverage-function-dax) | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+
 
 ## Considerations and limitations
 
@@ -207,7 +211,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
-* You can't use [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
 
 
