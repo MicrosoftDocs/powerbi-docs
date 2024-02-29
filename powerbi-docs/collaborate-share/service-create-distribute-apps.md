@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 02/14/2024
+ms.date: 02/28/2024
 
 LocalizationGroup: Share your work
 ---
@@ -309,31 +309,31 @@ You can't copy a link to an Excel workbook in an app.
 
 ## Automatically install apps for end users
 
-If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permission, you can install apps automatically when you publish them, and push the apps to app consumers This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [publishing apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users) in the Power BI admin portal article.
 
-### How to push an app automatically to end users
+### How to publish an app automatically to end users
 
-Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
+Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is published to all audience groups defined in the **Audience** tab of the app.
 
 :::image type="content" source="media/service-create-distribute-apps/install-app-automatically.png" alt-text="Screenshot shows Power B I Publish app option with Install app automatically selected.":::
 
-### How users get the apps that you push to them
+### How users get the apps that you publish to them
 
-After you push an app, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
+After you publish an app to your users, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
 
 :::image type="content" source="media/service-create-distribute-apps/get-app.png" alt-text="Screenshot shows Power B I apps with your published app included.":::
 
 ### Considerations for automatically installing apps
 
-Keep these things in mind when pushing apps to end users:
+Keep these things in mind when publishing apps and pushing them automatically to end users:
 
 - You can't automatically install an app for an entire organization. You notice that when you select the checkbox for **install app automatically**, the option for **entire organization** becomes inactive.
 
-- Installing an app automatically to users can take time. Most apps install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
+- Installing an app automatically to users can take time. Most apps install immediately for users, but publishing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend publishing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
 - If users don't immediately see the app in the **Apps** list, they should refresh or close and reopen their browser.
 
-- Try not to overwhelm users. Be careful not to push too many apps, so your users perceive the pre-installed apps are useful to them. It's best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
+- Try not to overwhelm users. Be careful not to publish too many apps to your users, so they perceive the pre-installed apps are useful to them. It's best to control who can publish apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization published to end users.
 
 - Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
