@@ -12,7 +12,7 @@ ms.date: 11/22/2023
 
 # Microsoft Entra ID application setup
 
-To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and pre-authorize the Power BI applications with a dedicated scope for each visual. The tenant administrator then needs to grant consent. This article outlines all of these essential steps.
+To use the Authentication API, the ISV must first register an application in Microsoft Entra ID and preauthorize the Power BI applications with a dedicated scope for each visual. The tenant administrator then needs to grant consent. This article outlines all of these essential steps.
 
 ## Register the app in Microsoft Entra ID
 
@@ -28,7 +28,7 @@ ISV backend application (for example, `https://contoso.com`) should be consented
 
 If the ISV application is running on a different tenant than the visual consumer's tenant, grant consent for the ISV's application in one of the following ways:
 
-* Administrator pre-consent:
+* Administrator preconsent:
 
   Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent).
 

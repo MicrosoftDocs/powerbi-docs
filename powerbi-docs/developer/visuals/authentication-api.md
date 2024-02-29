@@ -27,11 +27,11 @@ Only uncertified visuals are eligible to use the API, as certified visuals are r
 This feature is blocked in the following scenarios:
 
 * The tenant switch is turned off.
-* The user is not signed in (in desktop).
-* The admin or user has not given consent.
-* The ISV has not preauthorized the Power BI application.
+* The user isn't signed in (in desktop).
+* The admin or user didn't give consent.
+* The ISV didn't preauthorize the Power BI application.
 * The format of the AADAuthentication Privilege parameter is invalid.
-* The visual is not publicly approved and is not in Debug Visual mode.
+* The visual isn't publicly approved and isn't in Debug Visual mode.
 
 ### Supported environments
 
@@ -67,7 +67,7 @@ For each cloud intended to be supported by the visual, navigate to the relevant 
 
    1. [COM](https://portal.azure.com)
    1. [CN](https://portal.azure.cn)
-   1. [GCC, GCCHIGH and DOD](https://portal.azure.us)
+   1. [GCC, GCCHIGH, and DOD](https://portal.azure.us)
 
 [!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
