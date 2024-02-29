@@ -18,7 +18,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
 Navigate to [Azure services](https://portal.azure.com) and select **App registrations**.
 
-[!INCLUDE[registration steps](../../includes/entra-id-authentication.md)]
+[!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
 ## Consenting the ISV app
 

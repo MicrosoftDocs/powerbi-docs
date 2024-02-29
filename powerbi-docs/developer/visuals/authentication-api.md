@@ -69,7 +69,7 @@ For each cloud intended to be supported by the visual, navigate to the relevant 
    1. [CN](https://portal.azure.cn)
    1. [GCC, GCCHIGH and DOD](https://portal.azure.us)
 
-[!INCLUDE[registration steps](../../includes/entra-id-authentication.md)]
+[!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
 ## How to use the Authentication API
 
