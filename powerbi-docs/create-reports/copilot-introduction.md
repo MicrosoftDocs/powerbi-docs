@@ -41,7 +41,7 @@ Here are four examples of what Copilot can generate.
 - A [narrative visual](#a-narrative-visual)
 - A [summary response about your report content](#a-summary-response-about-your-report-content)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
-- [DAX queries](/dax/dax-copilot)
+- [DAX queries](#write-dax-expressions)
 
 ### A report outline of suggested pages
 
