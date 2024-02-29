@@ -20,6 +20,9 @@ Navigate to [Azure services](https://portal.azure.com) and select **App registra
 
 [!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
+* COM and CN: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
+* GCC, GCCHIGH and DOD: “ce76e270-35f5-4bea-94ff-eab975103dc6".
+
 ## Consenting the ISV app
 
 The tenant administrator can determine whether or not users are allowed to consent for themselves. This consent process takes place outside of Power BI.
