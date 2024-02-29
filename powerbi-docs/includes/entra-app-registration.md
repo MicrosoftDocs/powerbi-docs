@@ -25,25 +25,25 @@
    1. Add your custom domain.
    1. Ensure your domain name doesn't contain *onmicrosoft.com*.  
 
-    :::image type="content" source="./media/entra-app-registration/edit-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the Edit application ID URI page open." lightbox="./media/entra-id-authentication/edit-app-id-uri.png":::
+    :::image type="content" source="./media/entra-app-registration/edit-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the Edit application ID URI page open." lightbox="./media/entra-app-registration/edit-app-id-uri.png":::
 
 1. Select **+ Add a scope**.
 
 1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the required information. Fill in the *Admin consent* fields. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
 
-    :::image type="content" source="./media/entra-app-registration/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information." lightbox="./media/entra-id-authentication/edit-scope.png":::
+    :::image type="content" source="./media/entra-app-registration/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information." lightbox="./media/entra-app-registration/edit-scope.png":::
 
 1. To pre-authorize Power BI applications:
 
    1. Select **+ Add a client application**.
 
-      :::image type="content" source="./media/entra-app-registration/add-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application." lightbox="./media/entra-id-authentication/add-client.png":::
+      :::image type="content" source="./media/entra-app-registration/add-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application." lightbox="./media/entra-app-registration/add-client.png":::
 
    1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
    1. Select your desired scope.
    1. Select **Add application**.
 
-      :::image type="content" source="./media/entra-app-registration/preauthorization.png" alt-text="Screenshot showing the UI to add a client application." lightbox="./media/entra-id-authentication/preauthorization.png":::
+      :::image type="content" source="./media/entra-app-registration/preauthorization.png" alt-text="Screenshot showing the UI to add a client application." lightbox="./media/entra-app-registration/preauthorization.png":::
 
    1. Repeat this process with:
 
