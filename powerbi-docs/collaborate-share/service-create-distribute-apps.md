@@ -325,7 +325,7 @@ After you publish an app to your users, it shows up in their Apps list automatic
 
 ### Considerations for automatically installing apps
 
-Keep these things in mind when publishing apps to end users:
+Keep these things in mind when publishing apps and pushing them automatically to end users:
 
 - You can't automatically install an app for an entire organization. You notice that when you select the checkbox for **install app automatically**, the option for **entire organization** becomes inactive.
 
