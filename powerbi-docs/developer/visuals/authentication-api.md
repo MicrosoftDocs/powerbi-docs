@@ -87,11 +87,11 @@ In the *parameters* object, define key-value pairs, where the key represents the
 
 Available cloud names:
 
-* “COM”: Commercial Cloud. (Required)
-* “CN”: China Cloud.
-* “GCC”: US Government Community Cloud.
-* “GCCHIGH”: US Government Community Cloud High.
-* “DOD”: US Department of Defense Cloud.
+* **COM**: Commercial Cloud. (Required)
+* **CN**: China Cloud.
+* **GCC**: US Government Community Cloud.
+* **GCCHIGH**: US Government Community Cloud High.
+* **DOD**: US Department of Defense Cloud.
 
 For example:
 
