@@ -16,9 +16,24 @@ The Authentication API enables visuals to obtain Microsoft Entra ID (formerly kn
 
 Power BI administrators can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting blocks (disables) the API.
 
-The API is applicable only for AppSource visuals, and not for private visuals. Visuals that are under development can be tested in debug mode before they're published.
+The API is applicable only for AppSource visuals (and not for private visuals), providing enhanced security and control. Visuals that are under development can be tested in debug mode before they're published.
 
-## Supported environments
+Only uncertified visuals are eligible to use the API, as certified visuals are restricted from making external calls.
+
+## Authentication API limitations
+
+### Availability
+
+This feature is blocked in the following scenarios:
+
+* The tenant switch is turned off.
+* The user is not signed in (in desktop).
+* The admin or user has not given consent.
+* The ISV has not preauthorized the Power BI application.
+* The format of the AADAuthentication Privilege parameter is invalid.
+* The visual is not publicly approved and is not in Debug Visual mode.
+
+### Supported environments
 
 The following environments are supported:
 
@@ -27,7 +42,7 @@ The following environments are supported:
 * RS Desktop
 * Mobile
 
-## Unsupported environments
+### Unsupported environments
 
 The following environments aren't yet supported:
 
@@ -36,23 +51,64 @@ The following environments aren't yet supported:
 * Embedded analytics
 * Teams (partially supported if consents are granted in advance)
 
+## Prerequisites
+
+### Set up Microsoft Entra ID application
+
+The Authentication API is supported in the following clouds:
+
+   1. COM - Commercial Cloud (Required)
+   1. CN - China Cloud
+   1. GCC - US Government Community Cloud
+   1. GCCHIGH - US Government Community Cloud High
+   1. DOD - US Department of Defense Cloud
+
+For each cloud intended to be supported by the visual, navigate to the relevant Azure Portal and select **App registrations**:
+
+   1. [COM](https://portal.azure.com)
+   1. [CN](https://portal.azure.cn)
+   1. [GCC, GCCHIGH and DOD](https://portal.azure.us)
+
+[!INCLUDE[registration steps](../../includes/entra-id-authentication.md)]
+
 ## How to use the Authentication API
 
-In the *capabilities.json* file, add the "AADAuthentication" privilege with your Microsoft Entra ID registered application URI. Fabric will generate a token with this audience, and deliver it to the visual.  
-The visual can then utilize the token to authenticate against the audience https://contoso.com, representing its backend service:
+### Set the API version
+
+In the *pbiviz.json* file, set the API version to 5.9.0 or higher:
+
+:::image type="content" source="./media/authentication-api/api-version.png" alt-text="Screenshot of the pbiviz.json file with the API version set to 5.9.0":::
+
+### Include the authentication privilege
+
+
+In the *capabilities.json* file, include the "AADAuthentication" privilege.
+
+In the *parameters* object, define key-value pairs, where the key represents the cloud name, and the value represents your Microsoft Enterprise ID registered application URI in that cloud.
+
+Available cloud names:
+
+* “COM”: Commercial Cloud. (Required)
+* “CN”: China Cloud.
+* “GCC”: US Government Community Cloud.
+* “GCCHIGH”: US Government Community Cloud High.
+* “DOD”: US Department of Defense Cloud.
+
+For example:
 
 ```json
 "privileges": [
     {
         "name": "AADAuthentication",
-        "parameters": [
-            "https://contoso.com"
-        ]
+        "parameters": {
+             "COM": "https://contoso.com",
+             "CN": "https://contoso.cn"
+        }
     }
 ]
 ```
 
-In the *pbiviz.json* file, set the API version to 5.7.0 or higher:
+### Acquire a token
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
@@ -67,23 +123,23 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
 ```typescript
-// Step 1: Check the status of AAD token acquisition
-const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstatus();
- 
-// Step 2: Verify if acquiring the token is allowed
-if (acquireTokenStatus === PrivilegeStatus.Allowed) {
- 
-    // Step 3: Acquire the Microsoft Entra ID token
-    const { accessToken }: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken();
- 
-    // Step 4: Confirm successful acquisition of the access token
-    if (accessToken) {
- 
-        // Step 5: Call your backend API with the obtained token
+    // Step 1: Check the status of AAD token acquisition
+    const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenStatus();
+
+    // Step 2: Verify if acquiring the token is allowed
+    if (acquireTokenStatus === PrivilegeStatus.Allowed) {
+
+        // Step 3: Acquire the AAD token
+        const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken();
+
+        // Step 4: Confirm successful acquisition of the access token
+        if (acquireAADTokenResult.accessToken) {
+
+            // Step 5: Call your backend API with the obtained token
+        }
     }
-}
- 
-// Step 6: Handle unsuccessful AAD token acquisition
+
+    // Step 6: Handle unsuccessful AAD token acquisition
 ```
 
 ## Considerations and limitations
