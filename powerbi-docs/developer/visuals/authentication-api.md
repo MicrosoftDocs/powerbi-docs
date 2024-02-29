@@ -71,6 +71,9 @@ For each cloud intended to be supported by the visual, navigate to the relevant 
 
 [!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
+* COM and CN: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
+* GCC, GCCHIGH and DOD: “ce76e270-35f5-4bea-94ff-eab975103dc6".
+
 ### Tenant admin consent
 
 This consent process takes place outside of Power BI. The tenant admin has the authority to determine whether or not users are allowed to consent for themselves. It is important to note that only the tenant admin can grant consent on behalf of the entire organization. Furthermore, the decision to revoke or delete the consent lies solely with the Microsoft Entra ID admin.
