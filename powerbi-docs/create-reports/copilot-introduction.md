@@ -87,7 +87,7 @@ Copilot can create a DAX query for you. Type in a prompt to describe the DAX que
 - List products and show the last three months' profit compared to the previous three months.
 - Add a column to show the difference between the last three months' profit and the previous three months.
 - Explain what this query does.
-- What is SUMMARIZECOLUMNS used for.
+- What is SUMMARIZECOLUMNS used for?
 
 See the article [Write DAX queries with Copilot](/dax/dax-copilot) for details.
 
