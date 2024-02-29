@@ -81,7 +81,6 @@ In the *pbiviz.json* file, set the API version to 5.9.0 or higher:
 
 ### Include the authentication privilege
 
-
 In the *capabilities.json* file, include the "AADAuthentication" privilege.
 
 In the *parameters* object, define key-value pairs, where the key represents the cloud name, and the value represents your Microsoft Enterprise ID registered application URI in that cloud.
