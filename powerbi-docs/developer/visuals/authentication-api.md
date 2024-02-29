@@ -71,6 +71,37 @@ For each cloud intended to be supported by the visual, navigate to the relevant 
 
 [!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
+### Tenant admin consent
+
+This consent process takes place outside of Power BI. The tenant admin has the authority to determine whether or not users are allowed to consent for themselves. It is important to note that only the tenant admin can grant consent on behalf of the entire organization. Furthermore, the decision to revoke or delete the consent lies solely with the Microsoft Entra ID admin.
+
+If the ISV application is running on a different tenant than the visual consumer's tenant, the consent should be granted for the ISV's application either in [advance](#preconsent), or [interactively](#interactive-consent):
+
+#### Preconsent
+
+1. Navigate to:
+
+   * COM: https://login.microsoftonline.com/{tenantId}/adminconsent?client_id={clientId}
+   * CN: https://login.chinacloudapi.cn/{tenantId}/adminconsent?client_id={clientId}
+   * GCC, GCCHIGH and DOD: https://login.microsoftonline.us/{tenantId}/adminconsent?client_id={clientId}
+
+      * tenantId - the id of the visual consumer's tenant
+      * clientId - the appId of ISV’s application
+
+      :::image type="content" source="{source}" alt-text="{alt-text}":::
+
+1. Sign in with tenant admin credentials.
+1. Accept the permissions request:
+ 
+
+If you get the following error, it means that there's no reply address, but the consent has been granted successfully.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+#### Interactive consent
+
+### Authentication API admin setting
+
 ## How to use the Authentication API
 
 ### Set the API version
