@@ -91,16 +91,29 @@ If the ISV application is running on a different tenant than the visual consumer
       :::image type="content" source="{source}" alt-text="{alt-text}":::
 
 1. Sign in with tenant admin credentials.
-1. Accept the permissions request:
- 
+1. Accept the permissions request.
 
 If you get the following error, it means that there's no reply address, but the consent has been granted successfully.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="./media/authentication-api/error-message.png" alt-text="Screenshot of error message saying that they are having trouble signing you in.":::
 
 #### Interactive consent
 
+* If the tenant admin didn't preconsent, any user utilizing a visual that triggers the API will receive a one-time consent prompt when rendering the visual.
+
+   :::image type="content" source="./media/authentication-api/single-user-permission.png" alt-text="Screenshot requesting API permissions for a single user.":::
+
+* If the tenant admin signs in as the Power BI user, they will receive a consent prompt with an option to provide consent on behalf of the entire organization.
+
+   :::image type="content" source="./media/authentication-api/tenant-permission.png" alt-text="Screenshot requesting tenant to grant permission to all users.":::
+
 ### Authentication API admin setting
+
+The Power BI admin can enable the Authentication API feature with this global switch:
+
+:::image type="content" source="./media/authentication-api/global-switch.png" alt-text="Screenshot of global tenant admin switch.":::
+
+For more information about admin switches, see [Power BI visuals tenant settings](/fabric/admin/service-admin-portal-power-bi-visuals).
 
 ## How to use the Authentication API
 
