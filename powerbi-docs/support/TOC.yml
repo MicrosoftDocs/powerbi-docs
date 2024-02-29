@@ -28,7 +28,7 @@
     - name: Check the planned maintenance schedule
       href: service-planned-maintenance.md
     - name: Find out if your problem is a known issue
-      href: ../troubleshoot/known-issues/power-bi-known-issues.md
+      href: /fabric/get-started/fabric-known-issues.md
     - name: Look for an answer in the Community forum
       href: https://community.powerbi.com
     - name: Tips for getting answers to your Power BI questions

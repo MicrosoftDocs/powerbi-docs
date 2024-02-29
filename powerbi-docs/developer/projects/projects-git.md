@@ -1,8 +1,8 @@
 ---
 title: Git integration with Power BI Desktop projects
 description: Learn about Git integration with Power BI Desktop. projects.
-author: minewiskan
-ms.author: owend
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
@@ -55,5 +55,5 @@ With Git integration, you can not only backup your work, but also track your cha
 ## Related content
 
 - [Power BI Desktop projects Azure DevOps integration](projects-azdo.md)  
-- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop project semantic model folder](projects-dataset.md)  
 - [Power BI Desktop project report folder](projects-report.md)  

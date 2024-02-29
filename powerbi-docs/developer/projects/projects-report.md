@@ -1,13 +1,13 @@
 ---
 title: Power BI Desktop project report folder
 description: Learn about the Power BI Desktop project report folder.
-author: minewiskan
-ms.author: owend
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/31/2023
+ms.date: 01/31/2024
 ---
 
 # Power BI Desktop project report folder
@@ -64,11 +64,11 @@ Every resource file must have a corresponding entry in the report.json file, whi
 
 #### datasetDiagramLayout.json
 
-Contains data model diagrams describing the structure of the dataset associated with the report. During **preview**, this file doesn't support external editing.
+Contains data model diagrams describing the structure of the semantic model associated with the report. During **preview**, this file doesn't support external editing.
 
 #### definition.pbir
 
-Contains the overall definition of a report and core settings. This file also holds the reference to the dataset used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the dataset alongside if there's a relative reference using `byPath`.
+Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the semantic model alongside if there's a relative reference using `byPath`.
 
 Example definition.pbir:
 
@@ -85,19 +85,19 @@ Example definition.pbir:
 
 ```
 
-The definition includes the `datasetReference` property, which references the dataset used in the report. The reference can be either:
+The definition includes the `datasetReference` property, which references the semantic model used in the report. The reference can be either:
 
-`byPath` - Specifies a relative path to the target dataset folder. Absolute paths aren't supported. A backslash (\) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
+`byPath` - Specifies a relative path to the target semantic model folder. Absolute paths aren't supported. A forward slash (/) is used as a folder separator. When used, Power BI Desktop also opens the semantic model in full edit mode.
 
-`byConnection` - Specifies a remote dataset in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the dataset in edit mode.
+`byConnection` - Specifies a remote semantic model in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode.
 
 When using a `byConnection` reference, the following properties must be specified:
 
 |Property |Description  |
 |---------|---------|
-|connectionString    |   The connection string referring to the remote dataset.      |
-|pbiModelDatabaseName     |   The remote dataset ID.      |
-|connectionType     |   Type of connection. For service remote dataset, this value should be `pbiServiceXmlaStyleLive`.      |
+|connectionString    |   The connection string referring to the remote semantic model.      |
+|pbiModelDatabaseName     |   The remote semantic model ID.      |
+|connectionType     |   Type of connection. For service remote semantic model, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
 
 Example using `byConnection`:
@@ -108,7 +108,7 @@ Example using `byConnection`:
   "datasetReference": {
     "byPath": null,
     "byConnection": {
-      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/Datasets\";Initial Catalog=Sales;Integrated Security=ClaimsToken",
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/WorkpaceName;Initial Catalog=SemanticModelName;Integrated Security=ClaimsToken",
       "pbiServiceModelId": null,
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
       "pbiModelDatabaseName": "e244efd3-e253-4390-be28-6be45d9da47e",
@@ -119,6 +119,8 @@ Example using `byConnection`:
 }
 
 ```
+
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
 
 For more information, refer to the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
@@ -144,5 +146,5 @@ For more information, refer to the [item.metadata.json schema document](https://
 
 ## Related content
 
-- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop project semantic model folder](projects-dataset.md)  
 - [Power BI Desktop projects](projects-overview.md)  

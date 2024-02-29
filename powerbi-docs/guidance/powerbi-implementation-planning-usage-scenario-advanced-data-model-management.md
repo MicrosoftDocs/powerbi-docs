@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/05/2023
+ms.date: 02/13/2024
 ---
 
 # Power BI usage scenarios: Advanced data model management
@@ -147,6 +147,8 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 > [!NOTE]
 > A centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
+>
+> For more information, see [On-premises data gateway (standard mode)](powerbi-implementation-planning-data-gateways.md#on-premises-data-gateway-standard-mode).
 
 ### System oversight
 

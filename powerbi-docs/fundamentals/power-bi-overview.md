@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.search.form: product-power-bi
 ms.topic: overview
-ms.date: 01/18/2024
+ms.date: 01/30/2024
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ms.custom: intro-overview
@@ -33,6 +33,7 @@ Beyond those three, Power BI also features two other elements:
 
 - **Power BI Report Builder**, for creating paginated reports to share in the Power BI service. Read more about [paginated reports](#paginated-reports-in-the-power-bi-service) later in this article.
 - **Power BI Report Server**, an on-premises report server where you can publish your Power BI reports, after creating them in Power BI Desktop. Read more about [Power BI Report Server](#on-premises-reporting-with-power-bi-report-server) later in this article.
+
 
 ## How Power BI matches your role
 
@@ -63,11 +64,18 @@ One common workflow in Power BI begins by connecting to data sources in Power BI
 
 This workflow is common, and shows how the three main Power BI elements complement one another.
 
-Here's a detailed [comparison of Power BI Desktop and the Power BI service](../fundamentals/service-service-vs-desktop.md).
 
 ### Use the deployment pipeline tool
 
 In the Power BI service, you can use the [deployment pipeline tool](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) to test your content before you release it to your users. The deployment pipeline tool can help you deploy reports, dashboards, semantic models, and paginated reports. Read about how to [get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines) in the Power BI service.
+
+
+## How Microsoft Fabric works with Power BI
+
+[Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is an offering that combines data + services in a unified environment, making it easier to perform analysis and analytics on various sets of data. **Power BI** is an example of one of the *services* that's integrated with Microsoft Fabric, and your organization's **OneLake** data store is an example of the *data* that can be used, analyzed, or visualized. Large organizations find Microsoft Fabric particularly useful, since it can corral and then bring greater value to large stores of data, then using services (like Power BI) to bring such data to business life.
+
+Administration of Power BI is now handled by Microsoft Fabric, but your favorite tools like the **Power BI service** and **Power BI Desktop** still operate like they always have - as a service that can turn your data, whether in OneLake or in Excel, into powerful business intelligence insights.
+
 
 ## Paginated reports in the Power BI service
 
@@ -91,6 +99,8 @@ Read more about [Power BI Report Server](../report-server/get-started.md).
 
 ## Related content
 
+- [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview) 
+- [Comparison of Power BI Desktop and the Power BI service](../fundamentals/service-service-vs-desktop.md)
 - [Tutorial: Learn your way around the Power BI service](../consumer/end-user-experience.md)
 - [Tutorial: Get started with the Power BI service](service-get-started.md)
 - [Quickstart: Connect to data in Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

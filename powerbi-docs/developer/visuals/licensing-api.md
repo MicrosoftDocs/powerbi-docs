@@ -200,6 +200,7 @@ Use this account to validate the offer before making it public.
 
 * Tooltip for feature banner is limited by 500 chars.
 * Tooltip for feature banner requires localization.
+* License bundling, (i.e. one license that covers multiple offers from the same publisher) is not yet supported.
 
 ## Related content
 

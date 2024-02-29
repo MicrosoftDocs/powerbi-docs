@@ -1,13 +1,13 @@
 ---
 title: Power BI Desktop projects (PBIP)
 description: Learn how to save and edit a Power BI Desktop project.
-author: minewiskan
-ms.author: owend
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/31/2023
+ms.date: 02/14/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -15,15 +15,15 @@ ms.date: 05/31/2023
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and dataset *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and semantic model *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Artifact definition files are JSON formatted text files containing model dataset and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+- **Text editor support** - Artifact definition files are JSON formatted text files containing semantic model and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
 
 - **Programmatic generation and editing artifact definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your artifact definitions. Applications can be based on public documentation of the artifact definition schemas and/or client libraries.
 
-- **Source control** - Power BI dataset and report artifact definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
+- **Source control** - Power BI semantic model and report artifact definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
 
 - **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
@@ -45,7 +45,7 @@ If you're working on a new project or you've opened an existing Power BI Desktop
 
 :::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screen grab showing save file as Power BI Project":::
 
-When you save as a project, Power BI Desktop saves report and dataset artifacts as folders, each containing text files that define the artifact. You see the following:
+When you save as a project, Power BI Desktop saves report and semantic model items as folders, each containing text files that define the artifact. You see the following:
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
@@ -53,7 +53,7 @@ Let's take a closer look at what you see in your project's root folder:
 
 ##### \<project name>.Dataset
 
-A collection of files and folders that represent a Power BI dataset. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Dataset folder](projects-dataset.md).
+A collection of files and folders that represent a Power BI semantic model. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
 
 ##### \<project name>.Report
 
@@ -63,7 +63,7 @@ A collection of files and folders that represent a Power BI report. To learn mor
 
 Specifies intentionally untracked files Git should ignore. Power BI Desktop creates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving if it doesn't already exist.
 
-Dataset and report subfolders each have default git ignored files specified in .gitIgnore:
+Semantic model and report subfolders each have default git ignored files specified in .gitIgnore:
 
 - Dataset
   - \.pbi\localSettings.json
@@ -80,15 +80,15 @@ For more information, refer to the [pbip schema document](https://github.com/mic
 
 ## Open a Power BI Project
 
-You can open Power BI Desktop from the Power BI Project folder either by opening the **[pbip](#project-namepbip)** file or the **[pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the dataset, if there's a relative reference to a dataset.
+You can open Power BI Desktop from the Power BI Project folder either by opening the **[pbip](#project-namepbip)** file or the **[pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the semantic model, if there's a relative reference to a semantic model.
 
-You can save multiple reports and datasets to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the pbir within the report folder.
+You can save multiple reports and semantic models to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the pbir within the report folder.
 
 :::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screen grab showing Power BI Project files with multiple report folders":::
 
 ## Changes outside Power BI Desktop
 
-When saved as a project, you're not forced into making changes to your dataset and report definitions only in Power BI Desktop. You can use other tools such as VS Code, open-source community tools like Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.
+When saved as a project, you're not forced into making changes to your semantic model and report definitions only in Power BI Desktop. You can use other tools such as VS Code, open-source community tools like Tabular Editor, or even Notepad. However, not every file or change supports editing by external, open-source tools.
 
 Changes to files or properties outside of Power BI Desktop can cause unexpected errors, or even prevent Power BI Desktop from opening. In those cases, you must resolve the issues in the files before trying to open the project again in Power BI Desktop.
 
@@ -107,7 +107,7 @@ Schema details for the following files aren't documented. During **preview**, ch
 
 ### Model authoring
 
-You can make changes to the model definition by using external tools in two ways:
+You can make changes to the semantic model definition by using external tools in two ways:
 
 - By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
 - By editing JSON metadata in the model.bim file using VS Code or another external tool.
@@ -142,15 +142,17 @@ Keep in mind:
 
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 
-- When changing a model that uses Direct Query to connect a Power BI dataset or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties.  If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties.  If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
 
 - <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
 
-- <a name="dt">2</a> - If the dataset has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
+- <a name="dt">2</a> - If the semantic model has the [Auto date/time](../../transform-model/desktop-auto-date-time.md) feature enabled, and you create a new datetime column outside of Power BI Desktop, the local date table isn't automatically generated.
 
 - <a name="mp">3</a> - Partition [SourceType](/dotnet/api/microsoft.analysisservices.tabular.partitionsourcetype) must be Calculated, M, Entity, or CalculationGroup. Partition [Mode](/dotnet/api/microsoft.analysisservices.tabular.modetype) must be Import, DirectQuery, or Dual.
 
 - <a name="ee">4</a> - Any expression edits outside of Power BI Desktop in a project with [unappliedChanges.json](./projects-dataset.md#pbiunappliedchangesjson) are lost when those changes are applied.
+
+- Modifying table query expressions outside of Power BI Desktop results in the removal of the table data upon restarting Power BI Desktop.
 
 ## JSON file schemas
 
@@ -169,7 +171,6 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 - Power BI Desktop isn't aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
 - Sensitivity labels aren't supported with Power BI projects.
-- Download PBIX isn't supported for workspaces with Git integration.
 - Diagram view is ignored when editing models in the Service.
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
 - In Power BI Desktop, you can't save as a PBIP directly to OneDrive for Business and SharePoint.
@@ -180,7 +181,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Frequently asked questions
 
-**Question:** Looking at dataset and report artifact folder definitions only a few files are marked as required, what happens if I delete them?
+**Question:** Looking at semantic model and report artifact folder definitions only a few files are marked as required, what happens if I delete them?
 
 **Answer:** Power BI Desktop automatically creates them when you save as a project (PBIP).
 
@@ -202,7 +203,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Related content
 
-- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop project semantic model folder](projects-dataset.md)  
 - [Power BI Desktop project report folder](projects-report.md)  
 - [Power BI Desktop projects Git integration](projects-git.md)  
 - [Power BI Desktop projects Azure DevOps integration](projects-git.md)  

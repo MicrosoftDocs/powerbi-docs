@@ -1,8 +1,8 @@
 ---
 title: Configure incremental refresh and real-time data for Power BI semantic models
 description: Learn how to configure incremental refresh for Power BI semantic models and real-time data.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources

@@ -1,8 +1,8 @@
 ---
 title: Create dynamic format strings for measures in Power BI Desktop
 description: Learn how to create dynamic format strings for measures in Power BI Desktop measures.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards

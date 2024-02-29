@@ -1,19 +1,19 @@
 ### YamlMime:Landing
 
-title: Power BI Desktop developer mode documentation
-summary: Microsoft Power BI Desktop developer mode brings Pro BI developer experiences right into Power BI Desktop. It provides a suite of features that enable developer focused capabilities like external tool support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps.
+title: Power BI developer solutions documentation
+summary: Solutions and best practices for Power BI developers of all kinds. It provides a suite of features that enable developer focused capabilities like external tool support, script and API support, source control with Git integration, and Continuous Integration/Continuous Delivery (CI\CD) with Azure DevOps. Microsoft Power BI Desktop developer mode brings Pro BI developer experiences right into Power BI Desktop. 
 
 metadata:
   title: Power BI Desktop developer mode documentation
-  description: Power BI Desktop developer mode is a suite a of tools for Pro BI developers.
+  description: Power BI Desktop developer mode is a suite of tools for Pro BI developers.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: minewiskan
-  ms.author: owend
-  ms.date: 05/30/2023
+  author: mberdugo
+  ms.author: monaberdugo
+  ms.date: 02/14/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -35,6 +35,41 @@ landingContent:
             url: projects-git.md
           - text: "Project Azure DevOps integration"
             url: projects-azdo.md
+  # Card (optional)
+  - title: Automation with Power BI REST APIs
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "Using the Fabric REST APIs"
+          url: /rest/api/fabric/
+        - text: "Using the Power BI REST APIs"
+          url: /rest/api/power-bi/
+        - text: "Interact with Power BI reports using the Power BI REST API"
+          url: /rest/api/power-bi/reports
+  # Card (optional)
+  - title: Power BI CI/CD
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "Introduction to deployment pipelines"
+          url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
+        - text: "Azure DevOps Integration"
+          url: projects-azdo.md
+        - text: "Continuous integration with Azure DevOps and Git "
+          url: projects-build-pipelines.md
+        - text: "CI/CD with Git and Deployment Pipelines "
+          url: /fabric/cicd/cicd-tutorial
+  # Card (optional)
+  - title: Solutions and Best Practices
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: "Hot and cold table partitions to optimize very large Power BI data models "
+          url: /analysis-services/tom/table-partitions
+        - text: "External tools in Power BI Tabular Object Model (TOM)"
+          url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
+        - text: "Programming Power BI semantic models with the Tabular Object Model (TOM)"
+          url: /analysis-services/tom/tom-pbi-datasets
   # Card (optional)
   - title: External tools
     linkLists:

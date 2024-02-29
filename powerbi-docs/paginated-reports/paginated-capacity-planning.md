@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 
 # Paginated reports capacity planning
 
-[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)]
+[!INCLUDE [applies-yes-paginated-yes-service-no-desktop](../includes/applies-yes-paginated-yes-service-no-desktop.md)]
 
 Learn how to plan your [Premium capacity](./../enterprise/service-premium-what-is.md) to get the best performance out of your [paginated reports](paginated-reports-report-builder-power-bi.md), at a minimum cost. If you're migrating to Power BI from a different business intelligence tool, consider reading the articles listed below before you decide which capacity to use.
 
@@ -29,7 +29,7 @@ Before you start planning which capacity you need, review the [Capacities and SK
 
 When you plan your capacity, consider the following:
 
-* The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md),  multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources. report-builder-tables-matrices-lists
+* The complexity of the report design. Nested [tablix](report-builder-tables-matrices-lists.md), multiple subreport and multiple row and column groups add to the complexity of the design, and require capacity resources.
 
 * The amount of data retrieved by the report. The more data the report needs, the more resources it requires from your capacity.
 
@@ -55,7 +55,7 @@ Based on the five percent concurrency ratio, the following table describes the a
 |------------|----------------|-----------------|
 | **Small**  | 2,500 users    | 5,000 users     |
 | **Medium** | 1,900 users    | 3,800 users     |
-| **Large**  | 1300 users     | 2,600 users     |
+| **Large**  | 1,300 users     | 2,600 users     |
 
 Take into consideration that the numbers in the table refer to designated capacities that don't run other operations. Your capacity may already use CPU resources for operations such as:
 
@@ -75,11 +75,11 @@ To avoid congestion, plan your concurrent requests load in advance. If you excee
 
 ## Using the metrics app
 
-Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginate report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
+Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginated report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
 
-To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads. For this test, we suggest using an *F SKU*.
+To test your paginated report, we suggest that you use a dedicated clean capacity. A clean capacity helps isolate results from the impact of other users and workloads.
 
-Depending on the targeted test scenario, for example average or maximum usage validation, select or create a report representative of the anticipated resource consumption, and upload it to a Premium workspace in the capacity you created for the test.
+Depending on the targeted test scenario, for example average or maximum usage validation, select or create a report representative of the anticipated resource consumption, and upload it to a Premium/Fabric workspace in the capacity you created for the test.
 
 Run the report several times, and use the metrics app to get the average CPU seconds spent to run your report. When calculating the time it took to run your report, consider the following:
 
@@ -87,7 +87,7 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 * There are multiple Power BI items and operations that might be involved in report rendering. You might need to sum their CPU consumption.
 
-* There are multiple Power BI items and operations that might be involved in report rendering as renders may take long time. A long running operation in the *Timepoint* page can be displayed as a list of operations, with none of the durations longer than 30 seconds. You might need to sum the render operations CPU consumption. Sorting by the start time can help display the full history of the render.
+* There are multiple Power BI items and operations that might be involved in report rendering as renders may take a long time. A long running operation in the *Timepoint* page can be displayed as a list of operations, with none of the durations longer than 30 seconds. You might need to sum the render operations CPU consumption. Sorting by the start time can help display the full history of the render.
 
 ### Calculate the max report renders
 
@@ -99,7 +99,7 @@ $ \text {max concurrent report renders} = {\text {number of capacity SKU cores} 
 
 Using the estimated [five percent concurrency](#how-many-users-can-a-sku-handle) for the correlation between the number of total users, and the maximum concurrent renders, you can get the number of total users a SKU can handle.
 
-$ \text {max SKU users} = {\text {max concurrent reports renders} \over 0.05} $
+$ \text {max SKU users} = {\text {max concurrent report renders} \over 0.05} $
 
 ### Calculate capacity resources for multiple reports
 

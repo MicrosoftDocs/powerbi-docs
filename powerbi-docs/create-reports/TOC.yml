@@ -68,6 +68,8 @@
       href: sample-financial-download.md
   - name: Power BI reports
     items: 
+    - name: Home in Power BI Desktop
+      href: desktop-home.md
     - name: Power BI modern ribbon
       href: desktop-ribbon.md
     - name: Optimize ribbon in Power BI Desktop
@@ -114,8 +116,12 @@
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
+        - name: Summarize a report in the Copilot pane
+          href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
           href: copilot-prompts-narratives.md
+        - name: "Use Copilot to create measure descriptions"
+          href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
         - name: Copilot in Fabric and Power BI FAQ
@@ -396,8 +402,6 @@
       href: ../connect-data/service-tutorial-use-cognitive-services.md
     - name: Build a machine learning model
       href: ../connect-data/service-tutorial-build-machine-learning-model.md
-    - name: Consume a machine learning model in a report
-      href: ../connect-data/service-aml-integrate.md
     - name: Use Machine Learning and Cognitive Services with dataflows
       href: ../transform-model/dataflows/dataflows-machine-learning-integration.md 
     - name: Anomaly detection
@@ -979,7 +983,7 @@
         - name: Aggregate functions reference in paginated reports
           href: ../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md
         - name: Aggregate function
-          href: ../paginated-reports/expressions/report-builder-functions-aggregate-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-aggregate-function?context=/power-bi/create-reports/context/context
         - name: Avg function
           href: ../paginated-reports/expressions/report-builder-functions-avg-function.md
         - name: Count function

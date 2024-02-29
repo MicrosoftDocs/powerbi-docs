@@ -250,10 +250,10 @@ There are a few limitations for this release of editing data models in the Power
 The following scenarios don't support opening the data model for a semantic model in the service:
 * Semantic models that have incremental refresh.
 * Semantic models that have been deployed by a deployment pipeline.
-* Semantic models modified by an XMLA endpoint.
 * Semantic models that haven't yet been upgraded to enhanced metadata format. You can upgrade to enhanced metadata format by opening the corresponding pbix in Desktop and republishing. 
 * Semantic models that have automatic aggregations configured.
 * Semantic models that have a live connection.
+* Semantic models migrated from Azure Analysis Services (AAS).
 * Not all semantic models in Pro workspaces are currently supported in UAE North.
 
 To see which limitation is preventing you from opening your data model, hover over the **Open data model** button in the semantic model details page. This displays a tooltip indicating which limitation is causing the **Open data model** button to be disabled.
@@ -265,7 +265,6 @@ To see which limitation is preventing you from opening your data model, hover ov
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
 * Setting a table as a feature table
 * Configuring any feature table properties
-* Editing the sort by property for a column 
 * Changing the storage mode of a table 
 * Changing to and from the data category ‘barcode’
 * Connecting to new data sources
@@ -277,6 +276,10 @@ There are still many functional gaps between the model view in Power BI desktop 
 * External tools integration
 * When modifying your data model within the Service, creating a relationship between DirectQuery tables from the same Power BI semantic model or Azure Analysis Services instance will not be properly prevented. Like Desktop, this scenario is not supported, but no error will be generated when you try to perform this action.
 * When modifying your data model within the Service, changing the name of data fields will not automatically update in existing visuals in downstream artifacts that depend on that semantic model.
+
+### Semantic models edited with external tools
+
+Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring). 
 
 ### Accessibility
 Full accessibility isn’t currently supported for data model editing in the Power BI service.
