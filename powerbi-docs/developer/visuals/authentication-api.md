@@ -57,11 +57,11 @@ The following environments aren't yet supported:
 
 The Authentication API is supported in the following clouds:
 
-   1. COM - Commercial Cloud (Required)
-   1. CN - China Cloud
-   1. GCC - US Government Community Cloud
-   1. GCCHIGH - US Government Community Cloud High
-   1. DOD - US Department of Defense Cloud
+   1. **COM** - Commercial Cloud (Required)
+   1. **CN** - China Cloud
+   1. **GCC** - US Government Community Cloud
+   1. **GCCHIGH** - US Government Community Cloud High
+   1. **DOD** - US Department of Defense Cloud
 
 For each cloud intended to be supported by the visual, navigate to the relevant Azure Portal and select **App registrations**:
 
