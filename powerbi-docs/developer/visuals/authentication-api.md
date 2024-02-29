@@ -71,8 +71,8 @@ For each cloud intended to be supported by the visual, navigate to the relevant 
 
 [!INCLUDE[registration steps](../../includes/entra-app-registration.md)]
 
-* COM and CN: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
-* GCC, GCCHIGH and DOD: “ce76e270-35f5-4bea-94ff-eab975103dc6".
+      * **COM** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
+      * **GCC**, **GCCHIGH** and **DOD**: “ce76e270-35f5-4bea-94ff-eab975103dc6".
 
 ### Tenant admin consent
 
