@@ -81,14 +81,12 @@ If the ISV application is running on a different tenant than the visual consumer
 
 1. Navigate to:
 
-   * COM: https://login.microsoftonline.com/{tenantId}/adminconsent?client_id={clientId}
-   * CN: https://login.chinacloudapi.cn/{tenantId}/adminconsent?client_id={clientId}
-   * GCC, GCCHIGH and DOD: https://login.microsoftonline.us/{tenantId}/adminconsent?client_id={clientId}
+   * [COM](https://login.microsoftonline.com/{tenantId}/adminconsent?client_id={clientId})
+   * [CN](https://login.chinacloudapi.cn/{tenantId}/adminconsent?client_id={clientId})
+   * [GCC, GCCHIGH and DOD](https://login.microsoftonline.us/{tenantId}/adminconsent?client_id={clientId})
 
       * tenantId - the id of the visual consumer's tenant
       * clientId - the appId of ISV’s application
-
-      :::image type="content" source="{source}" alt-text="{alt-text}":::
 
 1. Sign in with tenant admin credentials.
 1. Accept the permissions request.
