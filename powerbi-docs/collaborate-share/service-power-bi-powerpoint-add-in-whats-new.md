@@ -9,10 +9,42 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/09/2024
+ms.date: 02/26/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## March 2024
+
+### Improved static image mode in the Power BI add-in for PowerPoint
+
+The "save as static image" functionalilty that enables you to turn your live view of Power BI data into a static image has been improved and expanded. It's now easier to use, and provides an option that lets you use static image mode without having to worry about the image exposing Power BI content to unauthorized users.
+
+First, a new dropdown menu in the add-in footer makes it easier to switch between live data and a static image.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/snapshot-toggle.png" alt-text="Screenshot of the Power BI PowerPoint add-in showing the snapshot menu." border="false":::
+
+Next, for the static image, you now have two options: *Snapshot* and *Public snapshot*.
+
+* **Snapshot**: If you select Snapshot, only users who have permission to view the report in Power BI will be able see the static image of the Power BI content. Users who don't have permission will be able to request access. This option helps you keep from inadvertently showing Power BI content to unauthorized users.
+
+* **Public snapshot**: If you select Public snapshot, anyone who can view the presentation to be able to see the static image of the Power BI content, regardless of their permissions in Power BI.
+
+#### Slide thumbnails
+
+The improved functionality also prevents static images from being exposed to unauthorized users in the slide thumbnail images that appear in such places as the slide navigation pane and the slide sorter.
+
+Here's how it works. When you open a presentation, the thumbnail images of slides that have the add-in just display a blue-cube. Then, when a slide with the add-in is actually loaded into edit mode, permissions are checked. At that point
+* If the static image was saved as "Snapshot", the thumbnail will switch to display the Power BI logo.
+* If the static image was saved as "Public snapshot", the thumbnail will switch to display the saved static image.
+
+In short, with the snapshot option, you don't have to worry about your static image exposing Power BI content to unauthorized users, even in the slide thumbnails!
+
+#### Important considerations
+
+The improved save-as-static-image functionallty requires **Office version 2312 (Build 17126)** or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
+
+You can only switch between **Live Data** and **Snapshot** in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
 
 ## February 2024
 
