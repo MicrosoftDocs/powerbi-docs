@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/27/2024
+ms.date: 03/01/2024
 LocalizationGroup: Create reports
 ---
 
@@ -41,6 +41,7 @@ Here are four examples of what Copilot can generate.
 - A [narrative visual](#a-narrative-visual)
 - A [summary response about your report content](#a-summary-response-about-your-report-content)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
+- [DAX queries](#write-dax-expressions)
 
 ### A report outline of suggested pages
 
@@ -53,9 +54,9 @@ Copilot can provide a summary of your dataset and an outline of suggested pages 
 
 With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 
 
-Learn more [narrative visuals](copilot-create-narrative.md).
+Learn more about [narrative visuals](copilot-create-narrative.md).
 
-:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions.":::
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
 
 ### A summary response about your report content
 
@@ -78,6 +79,17 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 Copilot can add descriptions to your semantic model measures. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation.
 
 [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
+
+### Write DAX expressions
+
+Copilot can create a DAX query for you. Type in a prompt to describe the DAX query you would like DAX to generate. Here are a few examples: 
+
+- List products and show the last three months' profit compared to the previous three months.
+- Add a column to show the difference between the last three months' profit and the previous three months.
+- Explain what this query does.
+- What is SUMMARIZECOLUMNS used for?
+
+See the article [Write DAX queries with Copilot](/dax/dax-copilot) for details.
 
 ## Copilot requirements
 
