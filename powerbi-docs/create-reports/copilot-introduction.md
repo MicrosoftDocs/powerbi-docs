@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/27/2024
+ms.date: 02/29/2024
 LocalizationGroup: Create reports
 ---
 
@@ -54,9 +54,9 @@ Copilot can provide a summary of your dataset and an outline of suggested pages 
 
 With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 
 
-Learn more [narrative visuals](copilot-create-narrative.md).
+Learn more about [narrative visuals](copilot-create-narrative.md).
 
-:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions.":::
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
 
 ### A summary response about your report content
 
