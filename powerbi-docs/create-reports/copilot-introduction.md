@@ -60,9 +60,9 @@ Learn more about [narrative visuals](copilot-create-narrative.md).
 
 ### A summary response about your report content
 
-Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page." 
+Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
  
-You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report. 
+You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
 
 :::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
 
@@ -82,7 +82,7 @@ Copilot can add descriptions to your semantic model measures. People building re
 
 ### Write DAX expressions
 
-Copilot can create a DAX query for you. Type in a prompt to describe the DAX query you would like DAX to generate. Here are a few examples: 
+Copilot can create a DAX query for you. Type in a prompt to describe the DAX query you would like DAX to generate. Here are a few examples:
 
 - List products and show the last three months' profit compared to the previous three months.
 - Add a column to show the difference between the last three months' profit and the previous three months.
