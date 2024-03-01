@@ -123,7 +123,7 @@
         - name: "Use Copilot to create measure descriptions"
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: "Write DAX queries with Copilot"
-          href: /dax/dax-copilot?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          href: /dax/dax-copilot
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
         - name: Copilot in Fabric and Power BI FAQ
