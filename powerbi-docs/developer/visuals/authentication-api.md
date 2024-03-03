@@ -46,10 +46,9 @@ The following environments are supported:
 
 The following environments aren't yet supported:
 
-* Sovereign clouds
 * RS Service
 * Embedded analytics
-* Teams (partially supported if consents are granted in advance)
+* Teams
 
 ## Prerequisites
 
