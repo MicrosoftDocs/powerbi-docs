@@ -20,7 +20,7 @@ On demand requests and operations that can be triggered by user interactions wit
 
 ## Background operations
 
-Longer running operations such as semantic model or dataflow refreshes are classified as *background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes, XMLA-based refresh operations , and report subscriptions. Users aren't expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
+Longer running operations such as semantic model or dataflow refreshes are classified as *background* operations. They can be triggered manually by a user, or automatically without user interaction. Background operations include scheduled refreshes, interactive refreshes, REST-based refreshes, XMLA-based refresh operations, and report subscriptions. Users aren't expected to wait for these operations to finish. Instead, they might come back later to check the status of the operations.
 
 ## Operation list
 
