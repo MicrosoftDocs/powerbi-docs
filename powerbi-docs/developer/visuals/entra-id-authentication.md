@@ -20,7 +20,7 @@ Navigate to [Azure services](https://portal.azure.com) and select **App registra
 
 1. Select **+ New Registration**
 
-   :::image type="content" source="./media/entra-app-registration/new-registration.png" alt-text="Screenshot of Microsoft Entra app new registration UI.":::
+   :::image type="content" source="./media/entra-id-authentication/new-registration.png" alt-text="Screenshot of Microsoft Entra app new registration UI.":::
 
 1. On the **Register an application** page, do the following:
    1. Enter your desired application name in the **Name** section.
