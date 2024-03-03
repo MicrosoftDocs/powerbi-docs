@@ -87,7 +87,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 | Purpose | Destination | Port |
 | --- | --- | --- |
-| **Required:** Import a custom visual from the Marketplace interface or from a file | *.powerbi.com <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com <br> visuals.azureedge.net | TCP 443 |
+| **Required:** Import a custom visual from the Marketplace interface or from a file | *.powerbi.com <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> store-images.s-microsoft.com <br> visuals.azureedge.net | TCP 443 |
 | **Optional:**  Azure Maps | `https://atlas.microsoft.com`<br>`https://us.atlas.microsoft.com`<br>`https://eu.atlas.microsoft.com` | N/A |
 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> r.bing.com <br> *.virtualearth.net | TCP 443 |
 | **Optional:** Esri Maps | *.esri.com <br> *.arcgis.com | TCP 443 |
