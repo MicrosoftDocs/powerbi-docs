@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/27/2024
+ms.date: 03/01/2024
 LocalizationGroup: Create reports
 ---
 
@@ -19,13 +19,13 @@ Copilot for Microsoft Fabric Public Preview is available in Power BI. Copilot he
 
 Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
-[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
-
 ## Get started with report creation
 
 Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and create a narrative visual that generates a summary of your report using generative AI. The following sections cover the details of the features and how to use Copilot.
 
 :::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page." lightbox="media/copilot-introduction/copilot-internet-sales-analysis.png":::
+
+[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Feature overview: Copilot capabilities
 
@@ -41,6 +41,7 @@ Here are four examples of what Copilot can generate.
 - A [narrative visual](#a-narrative-visual)
 - A [summary response about your report content](#a-summary-response-about-your-report-content)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
+- [DAX queries](#write-dax-expressions)
 
 ### A report outline of suggested pages
 
@@ -53,15 +54,15 @@ Copilot can provide a summary of your dataset and an outline of suggested pages 
 
 With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 
 
-Learn more [narrative visuals](copilot-create-narrative.md).
+Learn more about [narrative visuals](copilot-create-narrative.md).
 
-:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions.":::
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
 
 ### A summary response about your report content
 
-Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page." 
+Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
  
-You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report. 
+You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
 
 :::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
 
@@ -77,7 +78,18 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 
 Copilot can add descriptions to your semantic model measures. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation.
 
-[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md)
+[Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
+
+### Write DAX expressions
+
+Copilot can create a DAX query for you. Type in a prompt to describe the DAX query you would like DAX to generate. Here are a few examples:
+
+- List products and show the last three months' profit compared to the previous three months.
+- Add a column to show the difference between the last three months' profit and the previous three months.
+- Explain what this query does.
+- What is SUMMARIZECOLUMNS used for?
+
+See the article [Write DAX queries with Copilot](/dax/dax-copilot) for details.
 
 ## Copilot requirements
 
