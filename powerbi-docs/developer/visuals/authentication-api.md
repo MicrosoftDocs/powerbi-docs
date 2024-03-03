@@ -62,7 +62,7 @@ The Authentication API is supported in the following clouds:
 * **GCCHIGH** - US Government Community Cloud High
 * **DOD** - US Department of Defense Cloud
 
-1. For each cloud intended to be supported by the visual, navigate to the relevant Azure Portal.
+1. For each cloud the visual should support, navigate to the relevant Azure Portal:
 
     * [COM](https://portal.azure.com)
     * [CN](https://portal.azure.cn)
@@ -73,11 +73,11 @@ The Authentication API is supported in the following clouds:
 1. Repeat this process with:
 
       * **COM** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
-      * **GCC**, **GCCHIGH** and **DOD**: “ce76e270-35f5-4bea-94ff-eab975103dc6".
+      * **GCC**, **GCCHIGH**, and **DOD**: “ce76e270-35f5-4bea-94ff-eab975103dc6".
 
 ### Tenant admin consent
 
-This consent process takes place outside of Power BI. The tenant admin has the authority to determine whether or not users are allowed to consent for themselves. It is important to note that only the tenant admin can grant consent on behalf of the entire organization. Furthermore, the decision to revoke or delete the consent lies solely with the Microsoft Entra ID admin.
+This consent process takes place outside of Power BI. The tenant admin has the authority to determine whether or not users are allowed to consent for themselves. It's important to note that only the tenant admin can grant consent on behalf of the entire organization. Furthermore, the decision to revoke or delete the consent lies solely with the Microsoft Entra ID admin.
 
 If the ISV application is running on a different tenant than the visual consumer's tenant, the consent should be granted for the ISV's application either in [advance](#preconsent), or [interactively](#interactive-consent):
 
@@ -95,9 +95,9 @@ If the ISV application is running on a different tenant than the visual consumer
 1. Sign in with tenant admin credentials.
 1. Accept the permissions request.
 
-If you get the following error, it means that there's no reply address, but the consent has been granted successfully.
+If you get the following error, it means that there's no reply address, but the consent was granted successfully.
 
-:::image type="content" source="./media/authentication-api/error-message.png" alt-text="Screenshot of error message saying that they are having trouble signing you in.":::
+:::image type="content" source="./media/authentication-api/error-message.png" alt-text="Screenshot of error message saying that they're having trouble signing you in.":::
 
 #### Interactive consent
 
@@ -105,13 +105,13 @@ If you get the following error, it means that there's no reply address, but the 
 
    :::image type="content" source="./media/authentication-api/single-user-permission.png" alt-text="Screenshot requesting API permissions for a single user.":::
 
-* If the tenant admin signs in as the Power BI user, they will receive a consent prompt with an option to provide consent on behalf of the entire organization.
+* If the tenant admin signs in as the Power BI user, they receive a consent prompt with an option to provide consent on behalf of the entire organization.
 
    :::image type="content" source="./media/authentication-api/tenant-permission.png" alt-text="Screenshot requesting tenant to grant permission to all users.":::
 
 ### Authentication API admin setting
 
-The Power BI admin can enable the Authentication API feature with the [Obtain Microsoft Entra access token](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token)
+The Power BI admin can enable the Authentication API feature with the [Obtain Microsoft Entra access token](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token).
 
 :::image type="content" source="./media/authentication-api/global-switch.png" alt-text="Screenshot of global tenant admin switch.":::
 
