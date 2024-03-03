@@ -68,59 +68,10 @@ The Authentication API is supported in the following clouds:
     * [CN](https://portal.azure.cn)
     * [GCC, GCCHIGH, and DOD](https://portal.azure.us)
 
-1. Select **App registrations**.
+1. Set up an app using the instructions in [Microsoft Entra ID application setup](./entra-id-authentication.md)
 
-1. Select **+ New Registration**.
+1. Repeat this process with:
 
-   :::image type="content" source="./media/authentication-api/new-registration.png" alt-text="Screenshot of Microsoft Entra app new registration UI.":::
-
-1. On the **Register an application** page, do the following:
-   1. Enter your desired application name in the **Name** section.
-   1. Select *Accounts in any organizational directory (Any Azure AD directory - Multitenant)* in the **Supported account types** section.
-   1. Select **Register**.
-
-   :::image type="content" source="./media/authentication-api/register-app.png" alt-text="Screenshot of the Register an app page of the Microsoft Entra ID registration app.":::
-
-1. Once your application is successfully registered, select **Expose an API** on the left side menu.
-
-    :::image type="content" source="./media/authentication-api/expose-api.png" alt-text="Screenshot of the Expose an API page of the Microsoft Entra ID registration app.":::
-
-1. In the **Application ID URI** field, select *Add*.
-
-    :::image type="content" source="./media/authentication-api/add-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the option to add an application ID URI.":::
-
-1. In the **Edit Application ID URI** field, enter your [verified custom domain](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Domains), beginning with **https://**, and select **Save**.
-
-   To add a custom domain:
-
-   1. Navigate to [Microsoft Entra ID Custom domain names](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/DomainsList.ReactView).
-   1. Add your custom domain.
-   1. Ensure your domain name doesn't contain *onmicrosoft.com*.  
-
-    :::image type="content" source="./media/authentication-api/edit-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the Edit application ID URI page open." lightbox="./media/authentication-api/edit-app-id-uri.png":::
-
-1. Select **+ Add a scope**.
-
-1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the required information. Fill in the *Admin consent* fields. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
-
-    :::image type="content" source="./media/authentication-api/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information." lightbox="./media/authentication-api/edit-scope.png":::
-
-1. To pre-authorize Power BI applications:
-
-   1. Select **+ Add a client application**.
-
-      :::image type="content" source="./media/authentication-api/add-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application." lightbox="./media/authentication-api/add-client.png":::
-
-   1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
-   1. Select your desired scope.
-   1. Select **Add application**.
-
-      :::image type="content" source="./media/authentication-api/preauthorization.png" alt-text="Screenshot showing the UI to add a client application." lightbox="./media/authentication-api/preauthorization.png":::
-
-   1. Repeat this process with:
-
-      * **Power BI Desktop**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
-      * **Power BI Mobile**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
       * **COM** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
       * **GCC**, **GCCHIGH** and **DOD**: “ce76e270-35f5-4bea-94ff-eab975103dc6".
 
@@ -160,11 +111,9 @@ If you get the following error, it means that there's no reply address, but the 
 
 ### Authentication API admin setting
 
-The Power BI admin can enable the Authentication API feature with this global switch:
+The Power BI admin can enable the Authentication API feature with the [Obtain Microsoft Entra access token](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token)
 
 :::image type="content" source="./media/authentication-api/global-switch.png" alt-text="Screenshot of global tenant admin switch.":::
-
-For more information about admin switches, see [Power BI visuals tenant settings](/fabric/admin/service-admin-portal-power-bi-visuals).
 
 ## How to use the Authentication API
 
