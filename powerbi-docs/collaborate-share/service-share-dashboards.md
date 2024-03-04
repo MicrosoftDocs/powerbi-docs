@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/15/2024
+ms.date: 03/04/2024
 LocalizationGroup: Share your work
 ---
 # Share Power BI reports and dashboards with coworkers and others
@@ -226,7 +226,7 @@ Things to keep in mind about sharing reports and dashboards:
 * Everyone can manually [refresh the data](../connect-data/refresh-data.md).
 * You can't share reports that are distributed to you in an app. Ask the app owner to add the person you want to share the report with and republish the app.
 * If you use Microsoft Exchange Online for email, you can enter the email address of a distribution group to share with its members. 
-* You can’t use Microsoft 365 Unified groups for direct sharing and email subscriptions. If you don’t want to specify individuals, you can use email-enabled distribution groups or security groups to share with multiple users.
+* You can’t use Microsoft 365 Unified groups for direct sharing and email subscriptions. If you don’t want to specify individuals, you can use email-enabled distribution groups or security groups to share with multiple users. See [Use group email aliases](https://learn.microsoft.com/en-us/power-bi/collaborate-share/end-user-subscribe?tabs=creator#use-group-email-aliases) in "Email subscriptions for reports and dashboards in the Power BI service" for more information.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
 * If your coworkers already have access to a specific report or dashboard, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://app.powerbi.com/reports/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 
