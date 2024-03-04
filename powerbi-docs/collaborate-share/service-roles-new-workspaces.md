@@ -67,11 +67,11 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 <sup>5</sup> If the items are in a workspace in a Premium capacity, you can view and interact with items in the Power BI service even if you don't have a Power BI Pro license.
 
-<sup>6</sup> To subscribe yourself or others requires a paid (Power BI Pro or Premium Per User (PPU)() license. When subscribing others, recipients also need a paid subscription, unless the items are in a workspace in a Premium capacity. B2B guest users can't subscribe others, only themselves.
+<sup>6</sup> To subscribe yourself or others requires a paid (Power BI Pro or Premium Per User (PPU)() license. When you subscribe others, those recipients also need a paid subscription, unless the items are in a workspace in a Premium capacity. B2B guest users can't subscribe others, only themselves.
 
 <sup>7</sup> If your admin has enabled this feature, see [Manage featured content](/fabric/admin/service-admin-portal-featured-content).
 
-<sup>8</sup> If your admin has enabled this feature. see [Users can try Microsoft Fabric paid features](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features).
+<sup>8</sup> If your admin has enabled this feature, see [Users can try Microsoft Fabric paid features](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features).
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
