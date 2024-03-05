@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # Change log for Power BI Desktop
@@ -15,6 +15,17 @@ ms.date: 02/26/2024
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## February 2024 QFE 1
+
+*Version: 2.126.1261.0, Released: March 01, 2024*
+
+Bug fixes/improvements:
+
+* Fix for refresh failures for certain reports having a DirectQuery connection to AAS or a published semantic model
+* Fix for null reference to telemetry object
+* Make visual calculation lookup invisible in Power BI Desktop
 
 
 ## December 2023 QFE 3
