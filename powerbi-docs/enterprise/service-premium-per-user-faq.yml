@@ -38,7 +38,7 @@ sections:
           |Feature description  |Per User  |Per Capacity  |
           |---------|---------|---------|
           |Model size limit     | 100 GB<sup>1</sup>        | 25-400 GB<sup>1, 2</sup>        |
-          |Refresh rate     | 48/day        | 48/day        |
+          |Refresh rate limit per semantic model     | 48/day        | 48/day        |
           |AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
           |Advanced dataflows features, such as DirectQuery     | ✔        | ✔        |
           |Usage-based aggregate optimization     | ✔        | ✔        |
