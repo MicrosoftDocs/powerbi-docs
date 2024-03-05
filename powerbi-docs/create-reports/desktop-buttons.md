@@ -118,6 +118,9 @@ To set up a single-page navigation button:
 
 1. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
 
+> [!NOTE]
+> If the text content of the tooltip matches the button text content, the tooltips are hidden to enhance the readability for accessibility tools.
+
 1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Shapes and images for navigation
