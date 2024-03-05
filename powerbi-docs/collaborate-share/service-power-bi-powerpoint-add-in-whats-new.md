@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/02/2024
+ms.date: 03/05/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
@@ -20,7 +20,7 @@ ms.date: 03/02/2024
 
 The "save as static image" functionalilty that enables you to turn your live view of Power BI data into a static image has been improved and expanded!
 
-* A new dropdown menu in the add-in footer makes it easy to switch between live-data and a static image.
+* A new dropdown menu in the add-in footer makes it easy to switch between live data and a static image.
 
     :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/snapshot-toggle.png" alt-text="Screenshot of the Power BI PowerPoint add-in showing the snapshot menu." border="false":::
 	
@@ -34,7 +34,7 @@ The improved functionality also helps prevent inadvertant exposure of Power BI c
 
 The improved save-as-static-image functionallty requires **Office version 2312 (Build 17126)** or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
 
-You can only switch between live data and a static image in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
+You can only switch between live data and a static image in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
 
 ## February 2024
 
