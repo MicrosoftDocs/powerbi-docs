@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: conceptual
-ms.date: 08/31/2023
+ms.date: 03/06/2024
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -409,7 +409,6 @@ Here are some technologies you can use to retrieve data by using the Power BI RE
 | Microsoft Purview audit log search | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Microsoft Purview audit log search is a good choice for manual auditing processes." border="false"::: | |
 | Defender for Cloud Apps | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Defender for Cloud Apps is a good choice for manual auditing processes." border="false"::: | |
 | Microsoft Sentinel | | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Microsoft Sentinel is a good choice for automated auditing processes." border="false"::: |
-| Postman | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Postman is a good choice for manual auditing processes." border="false"::: | :::image type="content" source="../includes/media/yes-icon.svg" alt-text="Postman is a good choice for automated auditing processes." border="false"::: |
 
 The remainder of this section provides a brief introduction to each of the options presented in the table.
 
@@ -521,10 +520,6 @@ The audit log interface in Defender for Cloud Apps is a good option for manual a
 [Microsoft Sentinel](/azure/sentinel/overview) is an Azure service that allows you to collect, detect, investigate, and respond to security incidents and threats. Power BI can be set up in Microsoft Sentinel as a data connector so that audit logs are streamed from Power BI into Microsoft Sentinel Azure Log Analytics (which is a component of the [Azure Monitor](/azure/azure-monitor/) service). You can use the [Kusto Query Language](/azure/data-explorer/kusto/query/) (KQL) to analyze the activity log events that are stored in Azure Log Analytics.
 
 Using KQL to search the data in Azure Monitor is a good option for viewing part of the audit log. It's a good option for manual auditing processes, too. For more information, see [Microsoft Sentinel](#microsoft-sentinel) later in this article.
-
-###### Postman
-
-[Postman](https://www.postman.com/) is a platform for building and using APIs. Many Power BI community members like to use Postman for learning purposes and for automated scripts. Developers often prefer tools like Postman because it supports advanced API development and testing.
 
 ##### Platform considerations
 
