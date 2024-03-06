@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 05/21/2023
+ms.date: 01/31/2024
 ms.custom: ""
 LocalizationGroup: Get started
 ---
