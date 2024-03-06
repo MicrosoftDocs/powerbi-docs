@@ -1055,7 +1055,7 @@ For information about which option to use, see [Choose APIs or PowerShell cmdlet
 > [!TIP]
 > For examples of how to access the Power BI activity log with PowerShell, see [Access the Power BI activity log](admin-activity-log.md).
 
-Power BI activity log data is available to all Power BI administrators, Power Platform administrators, and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Audit log requirements](../enterprise/service-admin-auditing.md#audit-log-requirements).
+Power BI activity log data is available to all Power BI administrators, Power Platform administrators, and global administrators. The data can be accessed from the unified audit log, available to certain Exchange Online roles. For more information, see [Track user activities in Power BI](../enterprise/service-admin-auditing.md).
 
 We recommend that you use the Power BI activity log when your intention is to only retrieve Power BI audit log records.
 
@@ -1502,7 +1502,7 @@ JSON represents data objects that consist of attribute-value pairs and arrays. F
 Here are some considerations for when you extract and store the raw data retrieved from the APIs.
 
 - **What naming convention will be used?** For a file-based system, a naming convention is necessary for files, folders, and data lake zones. For a database, a naming convention is necessary for tables and columns.
-- **What format will be used to store the raw data?** As Power BI continues to introduce new features, new [audit events](../enterprise/service-admin-auditing.md#operations-available-in-the-audit-and-activity-logs) will appear that don't exist today. For this reason, we recommend that you extract and retain the original JSON results. Don't parse, filter, or format the data while it's extracted. That way, you can use the original raw data to regenerate your curated audit data.
+- **What format will be used to store the raw data?** As Power BI continues to introduce new features, new [activities](/fabric/admin/operation-list) will appear that don't exist today. For this reason, we recommend that you extract and retain the original JSON results. Don't parse, filter, or format the data while it's extracted. That way, you can use the original raw data to regenerate your curated audit data.
 - **What storage location will be used?** A data lake or blob storage is commonly used to store raw data. For more information, see [Determine where to store audit data](#determine-where-to-store-audit-data) earlier in this article.
 - **How much history will you store?** Export the audit data to a location where you can store the history. Plan to accumulate at least two years of history. That way, you can analyze trends and changes beyond the default 30-day retention period. You might choose to store the data indefinitely, or you might decide on a shorter period, depending on the data retention policies for your organization.
 - **How will you track when the process last ran?** Set up a configuration file, or the equivalent, to record the time stamps when a process starts and finishes. The next time the process runs, it can retrieve these time stamps. It's especially important that you store time stamps when you extract data by using the [metadata scanning APIs](#metadata-scanning-apis).
