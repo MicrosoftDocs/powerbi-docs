@@ -52,13 +52,13 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
 
 Copilot uses Azure Open AI to look at the visuals on the report page, and create a natural language summary using the data in those visuals.  It doesn't take into account other pages or data that's not currently visualized in your current view.
 
-### References
+## Reference footnotes
 
 In a summary response from the Copilot pane, reference footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These footnotes help you quickly cross-check the summary output to ensure accuracy, increasing productivity.
  
 :::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing that footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary." lightbox="media/copilot-pane-summarize-content/reference-hover-state.png":::
 
-### Custom prompts
+## Custom prompts
 
 The summary skill benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted summary or a summary specifically about sales, or about another nuanced slice of your data. 
  
@@ -72,7 +72,7 @@ Copilot allows you to generate a custom summary to fit your business needs. Here
 - Summarize the data in a way that allows me to use it in an email to leadership.
 - Summarize the data on this page specific to Seattle, WA.
  
-### Benefits
+## Benefits
 
 This customization allows you to focus on nuanced aspects of the data that are relevant to your objectives or questions. Some key advantages include: 
 
@@ -83,13 +83,13 @@ This customization allows you to focus on nuanced aspects of the data that are r
 - **Improved decision-making**: Customized summaries empower you to make informed decisions based on specific, tailored insights, contributing to more effective and strategic decision-making. 
 - **Flexibility**: You have the flexibility to adapt the summary to changing business needs or evolving questions, ensuring that the insights remain pertinent over time. 
 
-### Answer questions about your report content in the Copilot pane
+## Answer questions about your report content in the Copilot pane
 
 The Copilot pane also allows you to ask specific questions about your report content and receive a summarized response. This allows you to not only request summaries but ask additional follow-up questions about your report page or about a summary you've received. The Copilot pane generates an answer that contains visual references within the report. You can ask fact-based questions from the report page you're on, or speculative questions like "what are some reasons", "why might", and some "what if" questions. 
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing ask specific questions about your report content and receive a summarized response." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
 
-### Examples of questions you can ask 
+## Examples of questions you can ask 
 
 - Which team had the highest sales? 
 - Which product had the highest profit margin? 
@@ -99,7 +99,7 @@ The Copilot pane also allows you to ask specific questions about your report con
 - What are the trends in wait times and call lengths across different cities, and how can we improve these metrics? 
 - What are some questions leadership might ask about this data? 
 
-### Limitations and considerations
+## Limitations and considerations
 
 - For the Copilot button to be available in a report, the report needs to be in:
     - An eligible workspace: the workspace needs to have a paid dedicated capacity. The workspace needs to be a paid Premium or F64 or higher.
