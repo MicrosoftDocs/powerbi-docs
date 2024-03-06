@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/15/2022
+ms.date: 03/05/2024
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix"
 LocalizationGroup: Create reports
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Create reports
 
 With *drillthrough* in Power BI reports, you can create a destination *target* page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers right-click a data point in other *source* report pages, they drill through to the target page to get details that are filtered to that context. You can set up drillthrough in your reports in Power BI Desktop or the Power BI service. 
 
-Want to investigate this report yourself? Open this [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Then select **Download** to download the Sales & Returns sample .pbix file to your computer.
+Want to investigate this report yourself? Open this [GitHub repo for Power BI Desktop samples](https://github.com/microsoft/powerbi-desktop-samples/blob/main/Sample%20Reports/Sales%20%26%20Returns%20Sample%20v201912.pbix). Then select **Download** to download the Sales & Returns sample .pbix file to your computer. This visual is on the Returns page of the report.
 
 ![Screenshot of Using drillthrough.](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
 
@@ -32,9 +32,14 @@ Here are some articles explaining other ways to use drillthrough.
 
     For example, suppose you want to provide drillthrough for manufacturers. You might create a drillthrough target page with visuals that show total sales, total units shipped, sales by category, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
 
-2. Then, on that drillthrough target page, in the **Build visual** section of the **Visualizations** pane, drag the field for which you want to enable drillthrough into the **Drill through** well.
+2. On that drillthrough target page, select **Build a visual** to open the **Format** pane, and in the **Page information** section:
 
-    ![Screenshot of Drillthrough well.](media/desktop-drillthrough/drillthrough-add-fields-here.png)
+    - Select the **Page type** > **Drillthrough**.
+    - Turn **Keep all filters** to **On**.
+    - In **Drill through from**, select the field that you want to filter this page.
+    - In **Drill through when**, select **Used as category**.
+
+    ![Screenshot of Page information in the Format pane.](media/desktop-drillthrough/drillthrough-add-fields-here.png)
 
     When you add a field to the **Drillthrough filters** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who view your report in the Power BI service use this button on the target page to get back to the original source report page from which they came.
 
