@@ -26,7 +26,7 @@ Microsoft Fabric is a platform that allows users to get, create, share, and visu
 
 Power BI is one of the experiences available in Microsoft Fabric. Power BI is one component of Fabric. You might be someone who uses only the Power BI experience in Fabric and you might be someone who works with more than one of the Fabric experiences.
 
-- For more information, see [What is Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview.md)
+- For more information, see [What is Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview)
 
 ## License scenarios
 
@@ -64,7 +64,7 @@ The exact steps for signup vary depending on your organization and what you sele
 - Receive an email with a link to a Power BI dashboard, report, or app. You haven't previously signed in to your Power BI account.
 
 > [!NOTE]
-> Power BI is one of the experiences available in Microsoft Fabric. Microsoft Fabric is a comprehensive suite of analytics services, all in one place. To learn more about Fabric, see [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview.md)
+> Power BI is one of the experiences available in Microsoft Fabric. Microsoft Fabric is a comprehensive suite of analytics services, all in one place. To learn more about Fabric, see [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview)
 
 1. Select **Try free** or **Get started** from [powerbi.microsoft.com](https://powerbi.com).
 
@@ -96,7 +96,7 @@ Congratulations on signing into your Fabric account for the first time. You now 
 
 If a Fabric free license is sufficient, you don't have to do anything else. There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 
-However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses.md). And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. 
+However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses). And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. 
 
 A Fabric trial gives you a license for the paid version of Power BI, which includes Power BI Pro and Power BI Premium Per User (PPU). The trial also includes a trial Fabric capacity to use for exploring all of the Fabric experiences.
 
@@ -120,7 +120,7 @@ The trial license upgrades you with a Microsoft Fabric trial capacity. Create an
 
 You can cancel your trial from the Account manager. If you cancel your trial, you might not be able to start another trial. 
 
-When you cancel your Fabric trial, or your trial expires, the trial capacity is deleted. This deletion includes deletion of all of the capacity's [workspaces](/fabric/get-started/workspaces.md) and related data. To migrate your workspaces and data, [purchase a Fabric capacity](/fabric/enterprise/buy-subscription.md).  
+When you cancel your Fabric trial, or your trial expires, the trial capacity is deleted. This deletion includes deletion of all of the capacity's [workspaces](/fabric/get-started/workspaces) and related data. To migrate your workspaces and data, [purchase a Fabric capacity](/fabric/enterprise/buy-subscription).  
 
 When your trial expires, or you cancel your trial, your license changes back to its previous version, either Fabric free or Power BI Pro. The trial can't be automatically extended. For more information, see [Features by license type](service-features-license-type.md). 
 
@@ -148,7 +148,7 @@ In most cases, you can sign up for the Power BI service and for Fabric by follow
 
 ### Can't access your Fabric items
 
-- If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](/fabric/admin/fabric-switch.md).
+- If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](/fabric/admin/fabric-switch).
 
 - If you're using Microsoft 365, certain versions include a free Fabric license and a free or paid Power BI license. For example, the E5 SKU includes a Fabric free license (but no capacity) and a Power BI Pro license. Without a trial or purchased capacity, you might not be able to access your Fabric items. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
 
