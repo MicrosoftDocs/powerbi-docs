@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/03/2024
+ms.date: 03/06/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
-For descriptions of the license and subscription options for Power BI and Fabric, see [Microsoft Fabric concepts and licenses.](/fabric/enterprise/licenses.md)
+For descriptions of the license and subscription options for Power BI and Fabric, see [Microsoft Fabric concepts and licenses.](/fabric/enterprise/licenses)
 
 ## Power BI and Fabric
 
@@ -92,7 +92,7 @@ You now have a Fabric free license to explore the free features of all of the Fa
 
 ## Use self-service sign-up to start an individual trial
 
-Congratulations on signing into your Fabric account for the first time. You now have a free license. This section describes how to start a trial. To purchase a paid license for Power BI, see [purchase Power BI.](.md)
+Congratulations on signing into your Fabric account for the first time. You now have a free license. This section describes how to start a trial. To purchase a paid license for Power BI, see [purchase Power BI.](#use-self-service-purchase-to-buy-an-individual-Power-BI-license)
 
 If a Fabric free license is sufficient, you don't have to do anything else. There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 
@@ -110,7 +110,7 @@ Customers typically start a trial one of two ways:
 
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-me.png" alt-text="Screenshot showing an Account manager and the Start trial button.":::
 
-    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-trial.png" alt-text="Screenshot showing an Account manager and the Start trial button.":::
+    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-trial.png" alt-text="Screenshot showing the dialog to select Start trial.":::
 
 The trial license upgrades you with a Microsoft Fabric trial capacity. Create and work with any Fabric item types and access the paid features of the Power BI service. 
 
@@ -148,7 +148,7 @@ In most cases, you can sign up for the Power BI service and for Fabric by follow
 
 ### Can't access your Fabric items
 
-- If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](../admin/fabric-switch.md).
+- If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](/fabric/admin/fabric-switch.md).
 
 - If you're using Microsoft 365, certain versions include a free Fabric license and a free or paid Power BI license. For example, the E5 SKU includes a Fabric free license (but no capacity) and a Power BI Pro license. Without a trial or purchased capacity, you might not be able to access your Fabric items. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
 
