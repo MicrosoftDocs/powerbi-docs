@@ -37,7 +37,7 @@ Use this chart to help determine which type of license and subscription you need
 
 To learn more about licenses and subscriptions, see [Licenses and subscriptions.](service-features-license-type.md)
 
-When deciding which license + subscription model you need, ask yourself these questions. "Will I be creating content or will I only be consuming content created by others?" "Will I be sharing my content with others?", "Do I have access to a Premium capacity subscription?" For help answering these questions, see the [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
+When deciding which license + subscription model you need, ask yourself these questions. "Will I be creating content or will I only be consuming content created by others?" "Will I be sharing my content with others?", "Do I have access to a Premium capacity subscription?" For help with answering these questions, see the [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
 
 | Scenario  | Creator  | Consumer |
 |-----------|----------|----------|
@@ -60,8 +60,8 @@ Follow these steps to sign up for an account for the Power BI service. Each acco
 
 The exact steps for signup vary depending on your organization and what you select to start the process. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.
 
-- Select a **Try free** or **Start free** button. Find the **Try free** type of buttons on `powerbi.microsoft.com`, in related Microsoft products, and in documentation and marketing articles.
-- Receive an email with a link to a Power BI dashboard, report, or app. You haven't previously signed in to your Power BI account.
+- Select a **Try free** or **Start free** button. Find these types of buttons on `powerbi.microsoft.com`, in related Microsoft products, and in documentation and marketing articles.
+- Receive an email with a link to a Power BI dashboard, report, or app. And, clicking the link is your first time signing in to this Power BI account.
 
 > [!NOTE]
 > Power BI is one of the experiences available in Microsoft Fabric. Microsoft Fabric is a comprehensive suite of analytics services, all in one place. To learn more about Fabric, see [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview)
@@ -130,11 +130,11 @@ If you'd like to cancel your trial before the expiration date, select your accou
 
 ## Use self-service purchase to buy an individual Power BI license
 
-You can make a self-service Power BI Pro purchase online from the Power BI website or from in-product purchase prompts. 
+You can use self-service to purchase Power BI Pro from the Power BI website or from in-product purchase prompts. 
 
 :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-buy-pro.png" alt-text="Screenshot of your Account manager with a red arrow pointing to Buy Pro now.":::
 
-You are first asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After you sign in, you're asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your subscription. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in their organization.
+You're first asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After you sign in, you're asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your subscription. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in their organization.
 
 If you have more questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
@@ -163,7 +163,7 @@ In most cases, you can sign up for the Power BI service and for Fabric by follow
 
 The Power BI service doesn't support email addresses provided by consumer email services or telecommunications providers. To finish signing up, try again using an email address assigned by your work or school. 
 
-If sign up still doesn't work, try a more advanced setup process.  [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+If signup still doesn't work, try a more advanced setup process.  [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
 You can also have an existing user [invite you as a guest](../enterprise/service-admin-azure-ad-b2b.md).
 
@@ -179,7 +179,7 @@ Your organization uses IDs that are different than your email address to sign in
 
 To finish signing up or purchasing, use the ID that your organization assigned to you for signing in to Microsoft 365 or other Microsoft services. If you don't know what this ID is, contact your global administrator.  
 
-If you still can't sign up or purchase and are willing to complete a more advanced setup process, you can [register for a new Microsoft 365 trial subscription and use that email address to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+If you still can't sign up or purchase there is a more advanced setup process available. [Register for a new Microsoft 365 trial subscription and use that email address to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
 
 ### Sign-in doesn't recognize your password
 
