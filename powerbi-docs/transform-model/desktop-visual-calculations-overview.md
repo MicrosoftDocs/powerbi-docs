@@ -214,6 +214,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
+* [Show items with no data](../create-reports/desktop-show-items-no-data.md) is not available with visual calculations.
 
 
 ## Next steps
