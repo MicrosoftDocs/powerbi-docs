@@ -78,7 +78,7 @@ We can determine whether Zalan's organization has Premium capacity by looking up
 
     :::image type="content" source="media/end-user-license/power-bi-free-capacity.png" alt-text="Screenshot showing the Manage storage screen with 100 GB available.":::
 
-    If you see any amount of storage, the words **Pro user** next to your name, and the heading **Owned by me**, then you have a [Premium per-user license.](../enterprise/service-premium-per-user-faq.md).  
+    If you see any amount of storage, the words **Pro user** next to your name, and the heading **Owned by me**, then you have a [Premium per-user license.](../enterprise/service-premium-per-user-faq.yml).  
 
 ## Identify content hosted in Premium capacity
 
