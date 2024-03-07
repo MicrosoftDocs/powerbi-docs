@@ -12,11 +12,11 @@ ms.date: 11/22/2023
 
 # Microsoft Entra ID application setup
 
-To leverage the Authentication API, the ISV must first register an application in Microsoft Entra ID and pre-authorize the Power BI applications with a dedicated scope for each visual. The tenant administrator then needs to grant consent. This article outlines all of these essential steps.
+To use the Authentication API, the ISV must first register an application in Microsoft Entra ID and preauthorize the Power BI applications with a dedicated scope for each visual. The tenant administrator then needs to grant consent. This article outlines all of these essential steps.
 
 ## Register the app in Microsoft Entra ID
 
-1. Navigate to [Microsoft Entra ID App registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps).
+Navigate to [Azure services](https://portal.azure.com) and select **App registrations**.
 
 1. Select **+ New Registration**
 
@@ -49,7 +49,7 @@ To leverage the Authentication API, the ISV must first register an application i
 
 1. Select **+ Add a scope**.
 
-1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the required information. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
+1. In the **Scope name** field, enter *<visual_guid>_CV_ForPBI* and add the required information. Fill in the *Admin consent* fields. Then select **Add scope** button. (There's a 40 characters scope length limitation, but you can  manually modify the scope name in the registered application manifest to manage this limitation).
 
     :::image type="content" source="./media/entra-id-authentication/edit-scope.png" alt-text="Screenshot of the edit a scope window with fields for scope name and other information." lightbox="./media/entra-id-authentication/edit-scope.png":::
 
@@ -62,12 +62,13 @@ To leverage the Authentication API, the ISV must first register an application i
    1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
    1. Select your desired scope.
    1. Select **Add application**.
+
+      :::image type="content" source="./media/entra-id-authentication/preauthorization.png" alt-text="Screenshot showing the UI to add a client application." lightbox="./media/entra-id-authentication/preauthorization.png":::
+
    1. Repeat this process with:
 
       * **Power BI Desktop**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
       * **Power BI Mobile**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
-
-       :::image type="content" source="./media/entra-id-authentication/preauthorization.png" alt-text="Screenshot showing the UI to add a client application." lightbox="./media/entra-id-authentication/preauthorization.png":::
 
 ## Consenting the ISV app
 
@@ -77,7 +78,7 @@ ISV backend application (for example, `https://contoso.com`) should be consented
 
 If the ISV application is running on a different tenant than the visual consumer's tenant, grant consent for the ISV's application in one of the following ways:
 
-* Administrator pre-consent:
+* Administrator preconsent:
 
   Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent).
 
