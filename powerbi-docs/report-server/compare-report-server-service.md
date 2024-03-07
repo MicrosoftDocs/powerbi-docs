@@ -27,7 +27,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
 | Lifecycle | Modern lifecycle policy | Fully managed service |  |
 | Release cycle | Three times a year (January, May, September) | Once a month | Latest features and fixes come to the Power BI service first. A rollup of features from Power BI Desktop releases for the service comes to Power BI Report Server in each release; most other features are only meant for the Power BI service. |
-| Composite models | No | Yes |
+| Composite models | No | Yes | |
 | Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../connect-data/service-connect-to-services.md) with template apps in the Power BI service. In Power BI Report Server, use certified connectors to connect to services. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details. |
 | Create Power BI reports in Power BI Desktop | Yes | Yes |  |
 | Create Power BI reports in the browser | No | Yes |  |
