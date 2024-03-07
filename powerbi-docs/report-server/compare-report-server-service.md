@@ -38,7 +38,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
-| Paginated reports | Yes | Yes |  |
+| Paginated reports | Yes | Yes | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |
