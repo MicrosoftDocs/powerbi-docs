@@ -14,10 +14,10 @@ ms.date: 12/19/2023
 
 This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
-## Coming soon
+## API v5.8.0
 
-* **Local storage API**: A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
-* **On-object support for custom visuals**: On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
+* [**Local storage API**](./local-storage.md): A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
+* [**On-object support for custom visuals**](./on-object-formatting-api.md): On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
 
 ## API v5.7.0
 
