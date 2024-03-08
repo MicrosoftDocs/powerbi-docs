@@ -560,6 +560,8 @@
         href: ../paginated-reports/paginated-reports-change-log.md
       - name: Get around Report Design View
         href: ../paginated-reports/paginated-reports-report-design-view.md
+      - name: Connect to Snowflake and Databricks
+        href: ../paginated-reports/connect-snowflake-databricks-power-query-online.md
       - name: Preview reports
         href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Print reports
