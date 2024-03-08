@@ -25,11 +25,9 @@ You also need to sign in to Power BI Report Builder with your Power BI account.
 
 ## Get started 
 
- 
-
 Follow these steps to connect to a data source using Power Query Online: 
 
-- Select Get Data from the toolbar, or right-click on Data Sources or Datasets in the Report Data pane. 
+- Select **Get Data** from the toolbar, or right-click **Data Sources or Datasets** in the Report Data pane. 
 
  
 
@@ -39,17 +37,11 @@ Follow these steps to connect to a data source using Power Query Online:
 
     OR 
 
- 
-
- 
 
 After you select **Get data**, you must select the data source that you want to connect to from the list, or search for it by name or category. For example, select Snowflake, a cloud data warehouse service. 
 
 A screenshot of a computer
 
-
-
- 
 
 Enter the required information to connect to the data source, such as the server name, database name, and authentication method.  
 
@@ -97,11 +89,10 @@ A screenshot of a computer
 
 You can edit the RDL dataset via the Get Data experience. For this, right-click the dataset and select **Edit Mashup**. This will open the power query editor where you can edit the M query. 
 
-<Add image> 
+screenshot
 
- 
 > [!NOTE]
-> If you had defined a parameter, you may have to define it again if the field is not part of the new M- query. 
+> If you had defined a parameter, you may have to define it again if the field is not part of the new M query. 
 
 ## Next steps 
 
