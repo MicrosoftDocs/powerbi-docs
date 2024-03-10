@@ -59,7 +59,7 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 * **acquireAADToken**: Returns an authentication token payload of type `AcquireAADTokenResult` for the visual or null if it can't be fetched.
 
     ```typescript
-        /**
+     /**
      * Enum representing the various clouds supported by the Authentication API.
      */
     export const enum CloudName {
