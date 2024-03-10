@@ -21,7 +21,7 @@ The Authentication API is supported in the following clouds:
 **COM** - Commercial Cloud (Required)
 **CN** - China Cloud
 **GCC** - US Government Community Cloud
-**GCCHIGH* - US Government Community Cloud High
+**GCCHIGH** - US Government Community Cloud High
 **DOD** - US Department of Defense Cloud
 
 ## Register the app in Microsoft Entra ID
