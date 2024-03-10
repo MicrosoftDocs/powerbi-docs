@@ -6,7 +6,7 @@ ms.author: anbichse
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 02/13/2024
+ms.date: 03/06/2024
 LocalizationGroup: Connect to services
 ---
 
@@ -150,7 +150,7 @@ Your emissions can be reported as part of your company's Scope 3 indirect carbon
 
 **What can I do to reduce emissions further?**
 
-Being resource and cost efficient in Azure reduces the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Microsoft Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) gives you the tools to plan for, analyze and reduce your spending to maximize your cloud investment. The [sustainability guidance within the Azure Well-Architected Framework (WAF)](/azure/architecture/framework/sustainability/) is also designed to help you optimize your cloud workloads and reduce your operational footprint.
+Being resource and cost efficient in Azure reduces the environmental impact from your use of Azure. As an example, unused virtual machines are wasteful whether in the cloud or on-premises. Right-sizing virtual machines to improve compute utilization factors (CUF) decreases energy use per useful output, just as it does with physical servers. [Microsoft Cost Management](/azure/cost-management-billing/costs/cost-mgt-best-practices) and [Azure carbon optimization](/azure/carbon-optimization/overview) give you the tools to plan for, analyze and reduce your spending to maximize your cloud investment. The [sustainability guidance within the Azure Well-Architected Framework (WAF)](/azure/architecture/framework/sustainability/) is also designed to help you optimize your cloud workloads and reduce your operational footprint.
 
 **My company contract renewal process is underway and we'll have a new account number. Will I lose my historical emissions data?**
 
