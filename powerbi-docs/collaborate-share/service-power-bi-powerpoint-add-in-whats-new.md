@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/05/2024
+ms.date: 03/10/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
