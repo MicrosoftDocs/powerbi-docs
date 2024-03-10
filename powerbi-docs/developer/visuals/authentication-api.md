@@ -1,12 +1,12 @@
 ---
 title: The authentication API in Power BI custom visuals
-description: This article describes the API used to obtain access tokens for single sign-on (SSO) users.
+description: This article describes the Authentication API needed to obtain Microsoft Entra ID access tokens for for single sign-on (SSO) users.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: sranins, david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 03/10/2024
 ---
 

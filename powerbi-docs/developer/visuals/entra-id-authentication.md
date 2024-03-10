@@ -1,6 +1,6 @@
 ---
 title: Microsoft Entra ID application setup
-description: This article describes how to set up authentication for third party ISVs in Microsoft Entra.
+description: This article describes how to set up authentication for third party ISVs in Microsoft Entra for single sign-in users.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -8,6 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/10/2024
+
+#customer intent: As a <role>, I want <what> so that <why>.
 ---
 
 # Microsoft Entra ID application setup
@@ -28,9 +30,9 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
 1. Navigate to the respective Azure portal and go to **App registrations**.
 
-    * [COM](https://portal.azure.com/)
-    * [CN](https://portal.azure.cn/)
-    * [GCC, GCCHIGH, and DOD](https://portal.azure.us/)
+    * [**COM**](https://portal.azure.com/)
+    * [**CN**](https://portal.azure.cn/)
+    * [**GCC**, **GCCHIGH**, and **DOD**](https://portal.azure.us/)
 
 1. Select **+ New Registration**
 
@@ -60,9 +62,10 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
     :::image type="content" source="./media/entra-id-authentication/edit-app-id-uri.png" alt-text="Screenshot of the Expose an API page with the Edit application ID URI page open." lightbox="./media/entra-id-authentication/edit-app-id-uri.png":::
 
-    Note: the application URI can be manually added to the application manifest under the **“identifierUris”** array.
-
-    :::image type="content" source="{source}" alt-text="{alt-text}":::
+    > [!NOTE]
+    > The application URI can be manually added to the application manifest under the **“identifierUris”** array.
+    >
+    > :::image type="content" source="./media/entra-id-authentication/application-uri.png" alt-text="Screenshot showing an example of code for adding an application URI.":::
 
 1. Select **+ Add a scope**.
 
@@ -90,7 +93,7 @@ For each cloud intended to be supported by the visual, follow the steps outlined
           * **COM** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
           * **GCC**, **GCCHIGH** and *DOD*: “ce76e270-35f5-4bea-94ff-eab975103dc6".
 
-## Consenting the ISV app
+## ISV consent
 
 The tenant administrator can determine whether or not users are allowed to consent for themselves. This consent process takes place outside of Power BI.
 
@@ -102,9 +105,9 @@ If the ISV application is running on a different tenant than the visual consumer
 
   Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent). Replace the **tenant-wide admin consent URL** with the respective link for each cloud:
 
-    * **COM**: `https://login.microsoftonline.com/{organization}/adminconsent?client_id={clientId}`
-    * **CN**: `https://login.partner.microsoftonline.cn/{organization}/adminconsent?client_id={clientId}`
-    * **GCC**, **GCCHIGH** and **DOD**: `https://login.microsoftonline.us/{organization}/adminconsent?client_id={clientId}`
+  * **COM**: `https://login.microsoftonline.com/{organization}/adminconsent?client_id={clientId}`
+  * **CN**: `https://login.partner.microsoftonline.cn/{organization}/adminconsent?client_id={clientId}`
+  * **GCC**, **GCCHIGH** and **DOD**: `https://login.microsoftonline.us/{organization}/adminconsent?client_id={clientId}`
 
 * Interactive consent:
 
@@ -112,3 +115,4 @@ If the ISV application is running on a different tenant than the visual consumer
 
 ## Related content
 
+* [Authentication API](./authentication-api.md)
