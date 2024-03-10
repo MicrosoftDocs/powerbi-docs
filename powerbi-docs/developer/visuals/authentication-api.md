@@ -56,7 +56,46 @@ In the *pbiviz.json* file, set the API version to 5.9.0 or higher:
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
-* **acquireAADToken**: Returns an authentication token payload for the visual or null if it can't be fetched.
+* **acquireAADToken**: Returns an authentication token payload of type `AcquireAADTokenResult` for the visual or null if it can't be fetched.
+
+    ```typescript
+        /**
+     * Enum representing the various clouds supported by the Authentication API.
+     */
+    export const enum CloudName {
+        COM = "COM",         // Commercial Cloud
+        CN = "CN",           // China Cloud
+        GCC = "GCC",         // US Government Community Cloud
+        GCCHIGH = "GCCHIGH", // US Government Community Cloud High
+        DOD = "DOD",         // US Department of Defense Cloud
+    }
+ 
+    /**
+     * Interface representing information about the user associated with the token.
+     */
+    export interface AcquireAADTokenUserInfo {
+        userId?: string;   // Unique identifier for the user
+        tenantId?: string; // Unique identifier for the tenant
+    }
+ 
+    /**
+     * Interface representing information about the fabric environment.
+     */
+    export interface AcquireAADTokenFabricInfo {
+        cloudName?: CloudName; // Name of the cloud environment
+    }
+ 
+    /**
+     * Interface representing the result of acquiring a Microsoft Entra ID token.
+     */
+    export interface AcquireAADTokenResult {
+        accessToken?: string;       // Access token issued by Microsoft Entra ID
+        expiresOn?: number;         // Expiration time of the access token
+        userInfo?: AcquireAADTokenUserInfo;     // Information about the user associated with the token
+        fabricInfo?: AcquireAADTokenFabricInfo; // Information about the fabric environment
+    }
+    ```
+
 * **acquireAADTokenstatus**: Returns one of the following privilege statuses associated with acquiring the token.
 
   * **Allowed**: The privilege is allowed in the current environment.
