@@ -91,7 +91,7 @@ For each cloud intended to be supported by the visual, follow the steps outlined
       * **Power BI Mobile**:
 
           * **COM** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
-          * **GCC**, **GCCHIGH** and *DOD*: “ce76e270-35f5-4bea-94ff-eab975103dc6".
+          * **GCC**, **GCCHIGH** and **DOD**: “ce76e270-35f5-4bea-94ff-eab975103dc6".
 
 ## ISV consent
 
