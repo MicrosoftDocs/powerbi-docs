@@ -5844,7 +5844,7 @@
         {
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                             
   ]          
 
