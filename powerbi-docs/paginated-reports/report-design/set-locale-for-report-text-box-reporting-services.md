@@ -43,7 +43,7 @@ ms.reviewer: saurkumar
   
     - **UnicodeBiDi** property: select the level of bidirectional embedding to use in the text box.
   
-# Set the locale for a paginated report prompt (Power BI Report Builder)
+## Set the locale for a paginated report prompt (Power BI Report Builder)
 
 The **User!Language** expression can be used to define the language that must be displayed based on the user's browser language. To do this follow the steps:
 
@@ -51,7 +51,7 @@ The **User!Language** expression can be used to define the language that must be
 2. Specify the **Name** for the parameter.
 3. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md)
    
-   :::image type="content" source="..media/set-locale-parameter-prompts" alt-text="Screenshot of locale for parameter prompt.":::
+   :::image type="content" source="../media/set-locale-parameter-prompts.png" alt-text="Screenshot of locale for parameter prompt.":::
 
 
   
