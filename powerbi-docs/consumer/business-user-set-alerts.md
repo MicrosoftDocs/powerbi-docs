@@ -7,13 +7,13 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 12/19/2023
+ms.date: 02/21/2024
 LocalizationGroup: Get started
 ---
 
 # Set alerts on Power BI reports (public preview)
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+**APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium or Fabric license 
 
 With Data Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Data Activator?](/fabric/data-activator/data-activator-introduction)
 

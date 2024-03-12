@@ -186,7 +186,7 @@ The Power BI [Reports REST APIs](/rest/api/power-bi/reports) and [Admin REST API
 
 ### Report usage metrics aren't supported with Private Links 
 
-If your organization is using [Private Links](../enterprise/service-security-private-links.md), report usage metrics will contain no data. There is currently a limitation when transferring client information over private links.
+If your organization is using [Private Links](/fabric/security/security-private-links-overview), report usage metrics will contain no data. There is currently a limitation when transferring client information over private links.
 
 ### Other considerations
 

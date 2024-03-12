@@ -30,7 +30,7 @@ sections:
         answer: |
           Premium Per User (PPU) gives organizations a way to license premium features on a per-user basis. PPU includes all Power BI Pro license capabilities, including features like AI, and other capabilities that were only available with a Premium capacity. With a PPU license, you don't need a separate Power BI Pro license because all Pro license capabilities are included. 
 
-          You can use a Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) to try PPU as long as your organization hasn't disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
+          You can use a Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-a-free-individual-license-for-fabric-and-power-bi) to try PPU as long as your organization hasn't disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
 
           The following table compares the features of Premium Per User (PPU) with Premium capacity:
 
@@ -38,7 +38,7 @@ sections:
           |Feature description  |Per User  |Per Capacity  |
           |---------|---------|---------|
           |Model size limit     | 100 GB<sup>1</sup>        | 25-400 GB<sup>1, 2</sup>        |
-          |Refresh rate     | 48/day        | 48/day        |
+          |Refresh rate limit per semantic model     | 48/day        | 48/day        |
           |AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
           |Advanced dataflows features, such as DirectQuery     | ✔        | ✔        |
           |Usage-based aggregate optimization     | ✔        | ✔        |
