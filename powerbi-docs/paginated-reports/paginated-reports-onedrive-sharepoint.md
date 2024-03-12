@@ -1,5 +1,5 @@
 ---
-title: "Subscribe to paginated reports in the Power BI service on OneDrive SharePoint"
+title: "Send report subscriptions to OneDrive SharePoint"
 description: Subscribe to deliver your full Power BI and paginated reports to the OneDrive SharePoint location when you set up your subscription.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,12 +7,32 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/08/2024
+ms.date: 03/11/2024
 ---
 
-# Subscribe to paginated reports in the Power BI service on OneDrive SharePoint
+# Send report subscriptions to OneDrive SharePoint
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+
+Send subscriptions to OneDrive SharePoint. You can send all of your large reports, both PBIX and paginated reports can be sent to OneDriveSharePoint. The workspace must be backed by a [Premium capacity](../enterprise/service-premium-what-is.md) or equivalent [Fabric capacity](/fabric/enterprise/licenses#microsoft-fabric-license-types). 
+
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="in the Subscriptions pane, select create a subscription.":::
+
+We currently support Standard subscriptions.
+
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="in the Subscriptions pane, create a standard subscription.":::
+
+Select the **Attach full report** option.
+
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png" alt-text="in the Subscriptions pane, select the Attach full report option.":::
+
+We support more output formats for paginated reports.
+
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-save-pdf.png" alt-text="in the Subscriptions pane, select the format for the full report.":::
+
+After you select the output format, select the **OneDrive** or **SharePoint** option, select the location, and enter the subscription schedule to have your report delivered.
+
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="in the Subscriptions pane, select the subscription schedule for the report.":::
 
 Subscribe to your Power BI and paginated reports to deliver them to OneDrive SharePoint. Your full report gets delivered to the OneDrive SharePoint location that you can select when you set up your subscription.
 
@@ -52,11 +72,12 @@ You can only subscribe to a full report to be delivered to OneDrive SharePoint a
 
 1. Select the format that you want your report to be in. 
 
-    For Power BI reports, we support .pdf and .pptx 
+    Power BI reports support two formats:
 
- 
+    - PDF (.pdf)
+    - Microsoft PowerPoint (.pptx)
 
-    For paginated reports, we support several formats:
+    Paginated reports support several formats:
 
     - Microsoft Excel (.xlsx)
     - PDF (.pdf)
@@ -71,11 +92,11 @@ You can only subscribe to a full report to be delivered to OneDrive SharePoint a
 
   
 
-1. When you select **OneDrive** or **SharePoint**, select the folder location that you want the subscription to be delivered to. 
+1. When you select **OneDrive** or **SharePoint**, select the folder location where you want the subscription to be delivered. 
 
  
 
-1. By default, the File Name is the same as the Subscription name. Optionally, you can change this. Also by default, the option to append the file name with date and time is selected. You have the option to un-select that. 
+1. By default, the File Name is the same as the Subscription name. Optionally, you can change this. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
 
    
 
@@ -89,11 +110,11 @@ You can only subscribe to a full report to be delivered to OneDrive SharePoint a
 
  
 
-You receive the full report in the OneDrive or SharePoint location that you selected at the frequency that you selected. 
+You receive the full report saved to the OneDrive or SharePoint location that you selected at the frequency that you selected. 
 
  
 
 ## Considerations and limitations 
 
-- [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md) can't choose OneDrive Share Point. 
+- [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md) can't choose OneDrive SharePoint. 
 - Premium per user accounts can't choose OneDrive SharePoint. 
