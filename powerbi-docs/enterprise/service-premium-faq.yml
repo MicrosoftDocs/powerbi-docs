@@ -26,12 +26,12 @@ sections:
       - question: |
           What's Power BI Premium per capacity?
         answer: |
-          Power BI Premium per capacity is another name for Power BI Premium. Power BI requires two types of licenses, a *per capacity* license and a *per user license*. For this reason, Power BI Premium is sometimes referred to as Power BI Premium per capacity. Because of this change, the Power BI Premium SKUs are being retired.  
+          Power BI Premium per capacity is another name for Power BI Premium. Power BI requires two types of licenses, a *per capacity* license and a *per user license*. For this reason, Power BI Premium is sometimes referred to as Power BI Premium per capacity. 
 
       - question: |
           What's happening to Power BI Premium?
         answer: |
-          Power BI Premium transitioned to Microsoft Fabric. Power BI Premium is now part of Fabric. You can use Power BI in Fabric alongside all the additional Fabric [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric).
+          Power BI Premium transitioned to Microsoft Fabric. Power BI Premium is now part of Fabric. You can use Power BI in Fabric alongside all the additional Fabric [experiences](/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric). Because of this change, the Power BI Premium SKUs are being retired.
 
       - question: |
           Can I use Power BI without Fabric?
@@ -94,9 +94,9 @@ sections:
           To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, you can view content with a Microsoft Fabric free license, if the content is in the capacity. Fabric items that are not Power BI items, don't require a Pro license. For more information about user licenses in Fabric, see [Per user licenses](/fabric/enterprise/licenses#per-user-licenses).
 
       - question: |
-          How can I continue to access Power BI Report Server without P-SKUs?   
+          How can I continue to access Power BI Report Server without P SKUs?   
         answer: |
-          You can Power BI Report Server through SQL Server Enterprise Edition with Software Assurance. For more details, see the [SQL Server pricing page](https://www.microsoft.com/sql-server/sql-server-2019-pricing).
+          You can Power BI Report Server through SQL Server Enterprise Edition with Software Assurance. For more information, see the [SQL Server pricing page](https://www.microsoft.com/sql-server/sql-server-2019-pricing).
 
       - question: |
           What are the key differences between F SKUs and P SKUs?  
@@ -111,7 +111,7 @@ sections:
           | Power BI Embedded          | Included when buying EM SKUs | Included      |
           | Azure features<sup>*</sup> | Not included                 | Included      |
 
-          <sup>*</sup> Azure only features such [Trusted workspace access](/fabric/security/security-trusted-workspace-access) and [Managed Private Endpoint](/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) are only available with F SKUs.
+          <sup>*</sup> Fabric has Azure features such [Trusted workspace access](/fabric/security/security-trusted-workspace-access) and [Managed Private Endpoint](/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) that are only available with F SKUs.
 
 
 
