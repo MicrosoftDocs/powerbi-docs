@@ -37,7 +37,7 @@ The following **Azure Decom** workspace contains several reports and a dashboard
 
 Access permissions determine what you can do in a workspace, so teams can collaborate. When *designers* grant access to a workspace, they add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
 
-As a Power BI *business user*, you typically interact in workspaces using the **Viewer** role. But a *designers* can also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying semantic model, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.
+As a Power BI *business user*, you typically interact in workspaces using the **Viewer** role. But *designers* can also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying semantic model, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.
 
 For a detailed list of what you can do as a *business user* with the Viewer role, see [Power BI features for business users](end-user-features.md).
 
