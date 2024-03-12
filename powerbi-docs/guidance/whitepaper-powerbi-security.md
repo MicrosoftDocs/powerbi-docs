@@ -325,7 +325,7 @@ Using Private Link with Power BI provides the following benefits:
 * Private Link ensures that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 * Network traffic isolation from non-Azure-based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
 
-See [Private links for accessing Power BI](../enterprise/service-security-private-links.md) for additional information.
+See [Private links for accessing Power BI](/fabric/security/security-private-links-overview) for additional information.
 
 ### VNet connectivity (preview - coming soon)
 
