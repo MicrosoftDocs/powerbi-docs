@@ -13,7 +13,7 @@ ms.subservice: pbi-explore
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/27/2023
+ms.date: 03/12/2024
 ms.custom: mode-portal, intro-quickstart
 ---
 # Quickstart: learn about the Power BI capabilities for *business users*
@@ -32,9 +32,11 @@ Power BI is a collection of software services, apps, and connectors that work to
 Open the Power BI service, in a browser or on a mobile device. You and your colleagues work from the same trusted apps, dashboards, and reports, that update and refresh automatically, so you're always working with the freshest content.   
 
 ## Reading view
+
 There are two modes for interacting with reports in the Power BI service: Editing view and Reading view.  If you are a *business user*, then you are more likely to use Reading view to consume reports created by others. Editing view is used by report *designers*, who create the reports and share them with you. Reading view is your way to explore and interact with reports created by colleagues. 
 
 ## Select Editing view and Reading view
+
 Most reports open in Reading view. To switch from Reading view to Editing view, select **Edit** from the action bar. If **Edit** is grayed out, that means that you don't have permissions to edit the report.
 
 :::image type="content" source="media/end-user-reading-view/power-bi-edit.png" alt-text="Screenshot of action bar with the word Edit outlined in red.":::
@@ -45,18 +47,18 @@ To switch back to Reading view, select **Reading view** from the action bar.
 
 Even in Reading view, the content isn't static. You can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, any time, in the cloud or on-premises, from any device. 
 
-Read on to learn about these features and more.
-
+Read on to learn about these features and mor
 
 ## Power BI content
-When we use the term "content" in Power BI, we're referring to reports, dashboards, and apps. These are the building blocks you use to explore your data and make business decisions. 
+
+When we use the term "content" in Power BI, we're referring to items such as reports, dashboards, and apps. These are the building blocks you use to explore your data and make business decisions. 
 
 > [!NOTE]
 > Dashboards, reports, and apps can be viewed and shared on mobile devices, too.
 
 ###  Apps
 
-An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with *business users* like you. 
+An *app* is a Power BI content type that combines related dashboards, reports, workbooks, and more all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with *business users* like you. 
 
 One way to view your apps is to select **Apps** from the nav pane and choose an app to open.
 
@@ -112,6 +114,7 @@ Learn more about [Power BI alerts](end-user-alerts.md)
 
 
 ### Use Q&A to ask questions using natural language
+
 Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A question box is available at the top of your dashboard. For example, "show me count of large opportunities by sales stage as a funnel." 
 
 ![Q&A](./media/end-user-reading-view/power-bi-q-and-a-funnel.png)
@@ -124,32 +127,29 @@ Visuals are made up of datapoints, and by hovering over a datapoint, you can vie
 ![hover to see details](media/end-user-reading-view/power-bi-hover.gif)
 
 ### Adjust the display dimensions
-Reports are viewed on many different devices, with varying screen sizes and aspect ratios.  The default rendering may not be what you want to see on your device.  
+
+Reports are viewed on many different devices, with varying screen sizes and aspect ratios. The default rendering may not be what you want to see on your device.  
 
 To adjust, from the upper right menu bar select the **View** icon and choose one of the display options. 
 
 ![report View menu](media/end-user-reading-view/power-bi-view-icon.png)
 
 ### See how all the visuals on a page are interconnected
-Cross-highlight and cross-filter the related visualizations on a report page. The visualizations on a single report page are all "connected" to each other.  What this means is that if you select one or more values in one visualization, other visualizations that use that same value will change based on your selection.
+
+Cross-highlight and cross-filter the related visualizations on a report page. The visualizations on a single report page are all "connected" to each other. What this means is that if you select one or more values in one visualization, other visualizations that use that same value will change based on your selection.
 
 ![cross highlight](media/end-user-reading-view/pagefilter3b.gif)
-> 
 
 Learn more about [visual interactions](end-user-interactions.md)
 
-<!-- ###  Open the **Selection** pane
-Easily navigate between the visualizations on the report page. 
+### Update the filters used in the report
 
-1. Select **View > Selection pane** to open the Selection pane. Toggle **Selection pane** to On.
+Open the **Filters** pane to reveal the filters applied to the page, report, and visualization. 
 
-    ![Turn on the report Selection pane](media/end-user-reading-view/power-bi-selection-pane2.png)
 
-2. The Selection pane opens on your report canvas. Select a visual from the list to make it active.
-
-    ![report Selection pane](media/end-user-reading-view/power-bi-selection-pane-new.png) -->
 
 ### Zoom in on individual visuals
+
 Hover over a visual and select the **Focus mode** icon ![select Focus mode from menu ](media/end-user-reading-view/pbi_popouticon.jpg). When you view a visualization in Focus mode, it expands to fill the entire report canvas.
 
 ![Screenshot with arrow pointing to the icon for Focus mode.](media/end-user-reading-view/power-bi-fullscreen.png)
@@ -165,6 +165,7 @@ To display that same visualization without the distraction of menu bars, filter 
 Learn more about [focus mode and full screen mode](end-user-focus.md)
 
 ### Sort a visualization
+
 Visuals on a report page can be sorted and saved with your changes applied. 
 
 Hover over a visual to make it active, and select **More options** (...) to open sorting options.
@@ -174,6 +175,7 @@ Hover over a visual to make it active, and select **More options** (...) to open
 Learn more about [sorting visuals](end-user-search-sort.md)
 
 ### Show the data used to create a visualization
+
 A Power BI visualization is constructed using data from underlying semantic models. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show as a table**, Power BI displays the data below (or next to) the visualization.
 
 With a visual active, select **More options** (...) and choose **Show as a table**.
@@ -190,6 +192,7 @@ Exporting isn't limited to individual visuals; you can export entire reports to 
 This article has been a quick overview of just some of the things *business users* can do with the Power BI service.  
 
 ## Clean up resources
+
 - If you connected to an app, from the nav pane, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
 
 - If you imported or connected to a Power BI sample report, from the nav pane, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and semantic model, and select the trashcan icon for each.
