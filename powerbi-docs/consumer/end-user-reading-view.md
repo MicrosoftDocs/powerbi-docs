@@ -146,7 +146,9 @@ Learn more about [visual interactions](end-user-interactions.md)
 
 Open the **Filters** pane to reveal the filters applied to the page, report, and visualization. 
 
+:::image type="content" source="media/end-user-reading-view/power-bi-filters.png" alt-text="Screenshot of the Filters pane expanded.":::
 
+If the report has filters applied, they'll display in the **Filters** pane. Make changes to the filters to see the effect on the visuals. Save your changes, or use the ![Reset icon](media/end-user-reading-view/power-bi-revert-icon.png) to revert to the default report page state. 
 
 ### Zoom in on individual visuals
 
