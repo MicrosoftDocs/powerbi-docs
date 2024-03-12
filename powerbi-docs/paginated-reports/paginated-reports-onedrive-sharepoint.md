@@ -31,9 +31,9 @@ Your Fabric admin (previously Power BI admin) needs to enable subscriptions in y
 
 ## Subscribe to a report 
 
-You can only subscribe to a full report to be delivered to OneDrive SharePoint as follows: 
+Here's how you subscribe to a full report to be delivered to OneDrive SharePoint: 
 
-1. Open a report in the Power BI service. This can be a Power BI report or a paginated report from the top menu bar. 
+1. From the top menu bar, open a report in the Power BI service. This can be a Power BI report or a paginated report. 
 
 1. Select **Create a subscription**. 
 
