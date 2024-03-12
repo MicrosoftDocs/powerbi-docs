@@ -52,7 +52,7 @@ The visual can then utilize the token to authenticate against the respective aud
 ]
 ```
 
-In the *pbiviz.json* file, set the API version to 5.9.0 or higher:
+In the *pbiviz.json* file, set the API version to **5.9.0** or higher:
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
