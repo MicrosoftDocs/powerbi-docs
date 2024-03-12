@@ -14,25 +14,9 @@ ms.date: 03/11/2024
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-Send subscriptions to OneDrive SharePoint. You can send all of your large reports, both PBIX and paginated reports can be sent to OneDriveSharePoint. The workspace must be backed by a [Premium capacity](../enterprise/service-premium-what-is.md) or equivalent [Fabric capacity](/fabric/enterprise/licenses#microsoft-fabric-license-types). 
+You can send all of your large reports, both PBIX and paginated reports, to OneDrive SharePoint. 
 
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="in the Subscriptions pane, select create a subscription.":::
-
-We currently support Standard subscriptions.
-
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="in the Subscriptions pane, create a standard subscription.":::
-
-Select the **Attach full report** option.
-
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png" alt-text="in the Subscriptions pane, select the Attach full report option.":::
-
-We support more output formats for paginated reports.
-
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-save-pdf.png" alt-text="in the Subscriptions pane, select the format for the full report.":::
-
-After you select the output format, select the **OneDrive** or **SharePoint** option, select the location, and enter the subscription schedule to have your report delivered.
-
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="in the Subscriptions pane, select the subscription schedule for the report.":::
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screeenshot showing in the Subscriptions pane, select create a subscription.":::
 
 Subscribe to your Power BI and paginated reports to deliver them to OneDrive SharePoint. Your full report gets delivered to the OneDrive SharePoint location that you can select when you set up your subscription.
 
@@ -41,11 +25,9 @@ Subscribe to your Power BI and paginated reports to deliver them to OneDrive Sha
 The requirements apply to users in the organization. To create a subscription, you need:
 
 - Permissions to access the report.
-- Access to a workspace backed by a Power BI Premium capacity or equivalent Fabric capacity.
+- Access to a workspace backed by a [Premium capacity](../enterprise/service-premium-what-is.md) or equivalent [Fabric capacity](/fabric/enterprise/licenses#microsoft-fabric-license-types). 
 
 Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions). 
-
- 
 
 ## Subscribe to a report 
 
@@ -53,17 +35,15 @@ You can only subscribe to a full report to be delivered to OneDrive SharePoint a
 
 1. Open a report in the Power BI service. This can be a Power BI report or a paginated report from the top menu bar. 
 
- 
-
- 
-
 1. Select **Create a subscription**. 
 
- 
+1. We currently support Standard subscriptions. Select **Standard**.  
 
-1. Select **Standard**.  
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="Screeenshot showing in the Subscriptions pane, create a standard subscription.":::
 
- 
+1. Select the **Attach full report** option.
+
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png" alt-text="Screeenshot showing in the Subscriptions pane, select the Attach full report option.":::
 
 1. By default:  
 
@@ -86,33 +66,23 @@ You can only subscribe to a full report to be delivered to OneDrive SharePoint a
     - XML (.xml)
     - Comma-separated values (.csv)
 
- 
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-save-pdf.png" alt-text="Screeenshot showing in the Subscriptions pane, select the format for the full report."::: 
 
 1. Select the type of subscription. 
 
-  
+1. When you select **OneDrive** or **SharePoint**, select the folder location where you want the subscription to be delivered, and enter the subscription schedule to have your report delivered.
 
-1. When you select **OneDrive** or **SharePoint**, select the folder location where you want the subscription to be delivered. 
-
- 
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="Screeenshot showing in the Subscriptions pane, select the subscription schedule for the report.":::
 
 1. By default, the File Name is the same as the Subscription name. Optionally, you can change this. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
 
-   
-
 1. Select the **Start date**, frequency of delivery, **Scheduled time** of delivery and **Time zone**. You can select an **End date**, if you want. 
-
- 
 
 1. Save the subscription. 
 
- 
-
- 
-
 You receive the full report saved to the OneDrive or SharePoint location that you selected at the frequency that you selected. 
 
- 
+Learn more about [subscribing to OneDrive SharePoint](/sharepoint/onedrive-overview).
 
 ## Considerations and limitations 
 
