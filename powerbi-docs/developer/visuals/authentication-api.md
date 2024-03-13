@@ -1,13 +1,13 @@
 ---
 title: The authentication API in Power BI custom visuals
-description: This article describes the Authentication API needed to obtain Microsoft Entra ID access tokens for for single sign-on (SSO) users.
+description: This article describes the Authentication API needed to obtain Microsoft Entra ID access tokens for single sign-on (SSO) users.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins, david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 03/10/2024
+ms.date: 03/13/2024
 #customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 
@@ -38,7 +38,7 @@ The following environments aren't yet supported:
 
 ## How to use the Authentication API
 
-In the *capabilities.json* file, add the "AADAuthentication" privilege with a Microsoft Entra ID registered application URI for each supported cloud. Fabric will generate a token with according to the audience configured for the current cloud, and deliver it to the visual.  
+In the *capabilities.json* file, add the "AADAuthentication" privilege with a Microsoft Entra ID registered application URI for each supported cloud. Fabric generates a token according to the audience configured for the current cloud, and delivers it to the visual.  
 The visual can then utilize the token to authenticate against the respective audience, representing its backend service:
 
 ```json
@@ -140,7 +140,7 @@ Token acquisition is blocked if any of the following conditions apply:​
 
 * The visual isn't publicly approved or isn't a debug visual.
 
-* The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consents, see [tenant administrator consent](entra-id-authentication.md#isv-consent).
+* The visual’s backend service, configured as the audience by the visual, doesn't have appropriate consents for the Graph API in the consumer tenant using the visual. For more about consent, see [tenant administrator consent](entra-id-authentication.md#isv-consent).
 
 ## Related content
 
