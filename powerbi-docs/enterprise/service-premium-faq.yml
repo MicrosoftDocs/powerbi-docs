@@ -54,7 +54,7 @@ sections:
           At the time of your next contract renewal, talk to your Microsoft representative about renewing your contract using an F SKU instead of your P SKU.
 
       - question: |
-          I'm using Power BI Premium, how does the the transition impact me?
+          I'm using Power BI Premium, how does the transition impact me?
         answer: |
           At the end of your current agreement with Microsoft, you'll need to work with your Microsoft account representatives to migrate your P SKU purchase to an F SKU purchase. No immediate action is required. You can continue using your existing Power BI Premium capacity until the time of your next renewal.
 
@@ -112,10 +112,6 @@ sections:
           | Azure features<sup>*</sup> | Not included                 | Included      |
 
           <sup>*</sup> Fabric has Azure features such [Trusted workspace access](/fabric/security/security-trusted-workspace-access) and [Managed Private Endpoint](/azure/synapse-analytics/security/synapse-workspace-managed-private-endpoints) that are only available with F SKUs.
-
-
-
-
 
   - name: Power BI Premium operations
     questions:
