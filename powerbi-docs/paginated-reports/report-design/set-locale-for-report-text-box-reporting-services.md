@@ -50,6 +50,7 @@ The **User!Language** expression can be used to define the language that must be
 1. In Design view, define the [parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md).
 2. Specify the **Name** for the parameter.
 3. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md). For example:
+
      ```=IIF(User!Language.StartsWith("en"), "Color", "Farbe")```
    
     :::image type="content" source="media/set-locale-parameter-prompts.png" alt-text="Screenshot of locale for parameter prompt.":::
