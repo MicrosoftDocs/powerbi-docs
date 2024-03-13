@@ -197,7 +197,6 @@ Visual calculations are currently in preview, and during preview, you should be 
   * Power Apps
   * Power Automate
   * Small multiples
-* Visual calculations and hidden fields can only be added and edited using Power BI Desktop. While you can publish a report that contains visual calculations to the Power BI service, you can't edit visual calculations or hidden fields in the Power BI service.
 * Performance of this feature isn't representative of the end product.
 * Reuse of visual calculations using copy/paste or other mechanisms isn't available.
 * You can't filter on visual calculations.
