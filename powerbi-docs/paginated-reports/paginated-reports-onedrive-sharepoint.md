@@ -14,7 +14,7 @@ ms.date: 03/11/2024
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-You can send all of your large reports, both PBIX and paginated reports, to OneDrive SharePoint. 
+You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint. 
 
 :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screeenshot showing in the Subscriptions pane, select create a subscription.":::
 
@@ -31,7 +31,7 @@ Your Fabric admin (previously Power BI admin) needs to enable subscriptions in y
 
 ## Subscribe to a report 
 
-Here's how you subscribe to a full report to be delivered to OneDrive SharePoint: 
+Here's how you subscribe to a full report to be delivered to OneDrive SharePoint.
 
 1. From the top menu bar, open a report in the Power BI service. This can be a Power BI report or a paginated report. 
 
@@ -74,9 +74,9 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
     :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="Screeenshot showing in the Subscriptions pane, select the subscription schedule for the report.":::
 
-1. By default, the File Name is the same as the Subscription name. Optionally, you can change this. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
+1. By default, the File Name is the same as the Subscription name. Optionally, you can change these values. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
 
-1. Select the **Start date**, frequency of delivery, **Scheduled time** of delivery and **Time zone**. You can select an **End date**, if you want. 
+1. Select the **Start date**, frequency of delivery, **Scheduled time** of delivery and **Time zone**. You can also select an **End date**, if you want. 
 
 1. Save the subscription. 
 
