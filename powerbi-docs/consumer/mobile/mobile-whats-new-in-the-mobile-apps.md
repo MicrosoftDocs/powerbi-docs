@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/22/2024
+ms.date: 03/13/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,12 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## March 2024
+
+### Custom visual single sign-on (SSO) support
+
+Custom visuals using the new authentication API are now also supported when viewed in the Power BI Mobile apps. No additional authentication is required, ensuring that your data exploration experience in the mobile app is as smooth and delightful as possible, without any interruptions.
 
 ## January 2024
 
