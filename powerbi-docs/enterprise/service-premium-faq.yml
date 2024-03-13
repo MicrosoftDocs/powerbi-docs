@@ -86,7 +86,7 @@ sections:
       - question: |
           How do I know what F SKU size I need? 
         answer: |
-          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial](/fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
+          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial](/fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) can help you analyze your capacity’s consumption.  
 
       - question: |
           Do I need a Power BI Pro license with Fabric? 
