@@ -1,7 +1,7 @@
 ---
 title: "Set the locale for a Power BI paginated report or text box | Microsoft Docs"
 description: Use the Language property on a text box to provide the locale setting for formats in a Power BI paginated report that display data that differ by language and region in Power BI Report Builder.
-ms.date: 03/11/2024
+ms.date: 03/13/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -49,10 +49,12 @@ The **User!Language** expression can be used to define the language that must be
 
 1. In Design view, define the [parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md).
 2. Specify the **Name** for the parameter.
-3. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md)
+3. For the **Prompt**, define an [expression](../../paginated-reports/expressions/expression-uses-reports-report-builder.md). For example:
+     ```=IIF(User!Language.StartsWith("en"), "Color", "Farbe")```
    
-   :::image type="content" source="/media/set-locale-parameter-prompts.png" alt-text="Screenshot of locale for parameter prompt.":::
+    :::image type="content" source="../media/set-locale-parameter-prompts.png" alt-text="Screenshot of locale for parameter prompt.":::
 
+    To support more than two languages, use the [VB Switch function](/office/vba/language/reference/user-interface-help/switch-function).
 
   
 ## Related content
