@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Custom visual single sign-on (SSO) support
 
-Custom visuals using the new authentication API are now also supported when viewed in the Power BI Mobile apps. No additional authentication is required, ensuring that your data exploration experience in the mobile app is as smooth and delightful as possible, without any interruptions.
+Custom visuals using the new authentication API are now also supported when viewed in the Power BI Mobile apps. No additional authentication is required, ensuring that your data exploration experience in the mobile app is as smooth and delightful as possible, without any interruptions. [Learn more about the authentication API for custom visuals](../../developer/visuals/authentication-api.md)
 
 ## January 2024
 
