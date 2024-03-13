@@ -1,5 +1,5 @@
 ---
-title: "Set the locale for a Power BI paginated report or text box | Microsoft Docs"
+title: "Set translated labels for a paginated report parameter prompt | Microsoft Docs"
 description: Use the Language property on a text box to provide the locale setting for formats in a Power BI paginated report that display data that differ by language and region in Power BI Report Builder.
 ms.date: 03/13/2024
 ms.service: powerbi
@@ -9,11 +9,11 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Set the locale for a paginated report or text box (Power BI Report Builder)
+# Set translated labels for a paginated report parameter prompt (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
-  The **Language** property on a Power BI paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, Power BI Services uses the language setting of the browser for published reports.
+  The **Language** property on a Power BI paginated report or a text box contains the locale setting, which determines the default formats for displaying report data that differ by language and region, for example, date, currency, or number values. The **Language** property on a text box overrides the **Language** property on the report. If no value is specified for **Language**, the Power BI service uses the language setting of the browser for published reports. By default, the Power BI language is the browser language, but you can overwrite that in the Power BI settings and use a fixed language.
   
  For HTML reports, you can override the default **Language** value and use the language specified by the HTTP header of the browser client by using the built-in field User!Language in an expression for the **Language** property of a report or a text box.  
   
