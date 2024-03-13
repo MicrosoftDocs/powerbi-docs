@@ -41,7 +41,7 @@ sections:
       - question: |
           Can I buy Power BI Premium?
         answer: |
-          No. P SKUs are no longer available for purchase they can only be renewed. To use the Power BI Premium features, you need to buy an F SKU. Purchasing an F SKU allows you to use all the Fabric features, as well as the Power BI Premium features. You can read more about this transition in the [xxx blog]().
+          No. P SKUs are no longer available for purchase they can only be renewed. To use the Power BI Premium features, you need to buy an F SKU. Purchasing an F SKU allows you to use all the Fabric features, as well as the Power BI Premium features. You can read more about this transition in the [Power BI Premium P SKU](https://aka.ms/P-SKU-Blog).
 
       - question: |
           How do I buy Microsoft Fabric?
@@ -61,7 +61,7 @@ sections:
       - question: |
           How do I migrate my Power BI Premium content to Fabric?
         answer: |
-          To transfer your content to Fabric, you need to reassign your workspaces to a Fabric capacity. Workspaces can be assigned to a new capacity in the [admin portal]( ../enterprise/service-admin-premium-manage.md#assign-from-the-admin-portal) or the [workspace pane]( /fabric/get-started/workspaces#license-mode). To accelerate the transfer process, admins can [reassign workspaces to a Fabric capacity in bulk](). 
+          To transfer your content to Fabric, you need to reassign your workspaces to a Fabric capacity. Workspaces can be assigned to a new capacity in the [admin portal](../enterprise/service-admin-premium-manage.md#assign-from-the-admin-portal) or the [workspace pane](/fabric/get-started/workspaces#license-mode). To accelerate the transfer process, admins can [reassign workspaces to a Fabric capacity in bulk](/power-bi/enterprise/service-admin-premium-manage#assign-from-the-admin-portal). 
 
       - question: |
           If I take no action, will my Power BI Premium capacity be automatically converted to a Fabric capacity?   
@@ -86,7 +86,7 @@ sections:
       - question: |
           How do I know what F SKU size I need? 
         answer: |
-          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial]( /fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app]( /fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
+          To estimate the size of the capacity you need, work with your Microsoft account representatives. Your representatives can recommend which SKU to buy, according to your current consumption. You can use a [Fabric trial](/fabric/get-started/fabric-trial) to measure your capacity consumption. The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) can help your analyze your capacity’s consumption.  
 
       - question: |
           Do I need a Power BI Pro license with Fabric? 
