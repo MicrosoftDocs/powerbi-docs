@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: sranins, david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/10/2024
+#customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 
 # Authentication API
