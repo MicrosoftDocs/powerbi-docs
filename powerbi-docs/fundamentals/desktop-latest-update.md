@@ -8,15 +8,15 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/12/2023
+ms.date: 02/16/2024
 LocalizationGroup: Get started
 ---
 # What's new in Power BI?
 
 
-## December 2023 Update (2.124.581.0)
+## February 2024 Update (2.126.927.0)
 
-Like a collection of holiday gifts, this month's Power BI updates are full of analytics tools, toys, and capabilities for the Power BI service and Power BI Desktop. 
+Our hearts are full of love for this month's collection of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -42,44 +42,47 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The following updates are new to Power BI Desktop this month:
 
-
 ### Reporting
-* On-object interaction updates (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674237)  [[video]](https://youtu.be/PycL2_T0DxM?t=29) 
-* More styling options for column and bar charts  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674238)  [[video]](https://youtu.be/PycL2_T0DxM?t=311) 
-* Extended customization for data labels  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674239)  [[video]](https://youtu.be/PycL2_T0DxM?t=526) 
-* Azure Maps clustering aggregation support for bubble layer  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674240)
-* Alerting on your Power BI reports with Data Activator  [[video]](https://youtu.be/PycL2_T0DxM?t=168)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674241)  [[article]](/fabric/data-activator/data-activator-introduction)
+* Visual calculations (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305657)  [[video]](https://youtu.be/D21bSYXAqTA?t=110) [[article]](../transform-model/desktop-visual-calculations-overview.md)
+* Dynamic subscriptions for Power BI reports (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305658)  [[video]](https://youtu.be/D21bSYXAqTA?t=330)  [[article]](../collaborate-share/power-bi-dynamic-report-subscriptions.md)
+* On-object interaction updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305659)  
+* Power BI Home in Power BI Desktop is enabled by default (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305660)  [[video]](https://youtu.be/D21bSYXAqTA?t=600)  [[article]](../create-reports/desktop-home.md)
+* Enhanced reference layer in Power BI Azure Maps visual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305657)  
 
-### Data connectivity
-* OneLake data hub in Power BI Desktop  [[video]](https://youtu.be/PycL2_T0DxM?t=469)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674246)  [[article]](https://aka.ms/dax-queries)
-* Power BI connector updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674247) 
-
+### Modeling
+* Measure descriptions with Copilot (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305663)  [[video]](https://youtu.be/D21bSYXAqTA?t=684) [[article]](../create-reports/copilot-introduction.md)
+* DAX query view improvements (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305664) [[article]](../transform-model/dax-query-view.md)
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674254)
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305677)  [[video]](https://youtu.be/D21bSYXAqTA?t=29)  
+
+### Other
+* Protected PBIX in Power BI Desktop  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305687)  [[video]](https://youtu.be/D21bSYXAqTA?t=1503)  
+
 
 
 # [Power BI service](#tab/powerbi-service)
 
 The following updates are new to the Power BI service this month:
 
-* Storytelling in PowerPoint - suggested content [[video]](https://youtu.be/PycL2_T0DxM?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674249)  [[video]](https://youtu.be/PycL2_T0DxM?t=675)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-* Search and sort in paginated reports  [[blog]](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/#post-25451-_Toc152674250)  [[article]](../consumer/paginated-reports-view-power-bi-service.md)
+* Storytelling in PowerPoint - replace report URLs with shareable links in Power BI add-in [[video]](https://youtu.be/D21bSYXAqTA?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305668)  [[video]](https://youtu.be/D21bSYXAqTA?t=907)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+* Data overview in Explore [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305669)  [[video]](https://youtu.be/D21bSYXAqTA?t=950)  
+* DirectQuery connections update [[blog]](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/#post-25940-_Toc158305670)  [[article]](../consumer/paginated-reports-view-power-bi-service.md)
 
 ---
 
 
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-december-2023-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-february-2024-feature-summary/).
 
 
 ### Power BI monthly update video
-The following video describes each of these updates. You can also watch this video from the blog post.
+The following video describes many of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/PycL2_T0DxM]
+> [!VIDEO https://www.youtube.com/embed/D21bSYXAqTA]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.

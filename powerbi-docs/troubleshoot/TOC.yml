@@ -6,7 +6,7 @@
     expanded: false
     items:
     - name: Active known issues for Power BI + Fabric - chart
-      href: /fabric/get-started/fabric-known-issues.md
+      href: /fabric/get-started/fabric-known-issues
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
   - name: Troubleshoot
