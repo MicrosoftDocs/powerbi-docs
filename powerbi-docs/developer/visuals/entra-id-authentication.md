@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/10/2024
+ms.date: 03/14/2024
 
 #customer intent: As a <role>, I want <what> so that <why>.
 ---
@@ -18,7 +18,7 @@ To use the Authentication API, the ISV must first register an application in Mic
 
 The Authentication API is supported in the following clouds:
 
-* **COM** - Commercial Cloud (Required)
+* **COM** **(Required)** - Commercial Cloud 
 * **CN** - China Cloud
 * **GCC** - US Government Community Cloud
 * **GCCHIGH** - US Government Community Cloud High
@@ -30,7 +30,7 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
 1. Navigate to the respective Azure portal and go to **App registrations**.
 
-    * [**COM**](https://portal.azure.com/)
+    * [**COM (required)**](https://portal.azure.com/) 
     * [**CN**](https://portal.azure.cn/)
     * [**GCC**, **GCCHIGH**, and **DOD**](https://portal.azure.us/)
 
@@ -90,7 +90,7 @@ For each cloud intended to be supported by the visual, follow the steps outlined
       * **Power BI Desktop**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
       * **Power BI Mobile**:
 
-          * **COM** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
+          * **COM (required)** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
           * **GCC**, **GCCHIGH** and **DOD**: “ce76e270-35f5-4bea-94ff-eab975103dc6".
 
 ## ISV consent
