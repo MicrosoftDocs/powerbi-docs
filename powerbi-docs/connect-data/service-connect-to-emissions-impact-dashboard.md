@@ -123,6 +123,32 @@ Follow these steps to find your company's billing account ID, or ask your organi
 
    ![Find billing account ID](media/service-connect-to-emissions-impact-dashboard/billing-account-id.png)
 
+## Calculations update FAQ
+
+### Why are there updated values for my organization’s Azure emissions data?
+
+In January 2024, we refined our methodology for attributing carbon estimates. This update allows for a more granular and precise allocation of carbon emissions to each Azure resource, subscription, and customer.
+
+### What is the difference between the old and new methodologies?
+
+The new methodology now allows for a more enhanced and detailed attribution of carbon emissions when a resource belongs to a nonspecific region such as **All**, **Null**, or **Global**. Instead of only subscription-level carbon emissions data, you can now access emissions information for each of your individual Azure resources. This granular data is accessible through the Cloud for Sustainability export APIs, Project ESG lake, and Azure Carbon Optimization capabilities. It enhances transparency and control over environmental impact.
+
+### Is there a plan to update the Emissions Impact Dashboard for Azure to display granular, resource-grain emissions data?
+
+At this time, we aren't enhancing the Emissions Impact Dashboard for Azure to display resource-level emissions data. The dashboard maintains its current functionality, continuing to present data at the subscription level. This data, powered by our updated methodology, aggregates all resource-level data in the background and displays it at the subscription level for a comprehensive view.
+
+### Has all the historical data been updated to reflect the new methodology?
+
+Yes, all historical Azure emissions data for your organization is recalculated using the new methodology.
+
+### Is the data on the Emissions Impact Dashboard for Azure and Cloud for Sustainability API the same?
+
+The Emissions Impact Dashboard and the Cloud for Sustainability API provide data based on the same source, and are the same.
+
+### Is there an option for me to access my Azure emissions data using the old methodology?
+
+Unfortunately, it isn't possible for us to provide the emissions data using the old methodology.
+
 ## General FAQs
 
 ### App setup
