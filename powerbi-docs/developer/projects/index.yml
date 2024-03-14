@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: mberdugo
   ms.author: monaberdugo
-  ms.date: 01/30/2024
+  ms.date: 02/14/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -40,10 +40,10 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+        - text: "Using the Fabric REST APIs"
+          url: /rest/api/fabric/
         - text: "Using the Power BI REST APIs"
           url: /rest/api/power-bi/
-        - text: "Generate an embed token using the Power BI REST API"
-          url: /rest/api/power-bi/embed-token
         - text: "Interact with Power BI reports using the Power BI REST API"
           url: /rest/api/power-bi/reports
   # Card (optional)
@@ -66,8 +66,6 @@ landingContent:
         links:
         - text: "Hot and cold table partitions to optimize very large Power BI data models "
           url: /analysis-services/tom/table-partitions
-        - text: "Register an external tool"
-          url: ../../transform-model/desktop-external-tools-register.md
         - text: "External tools in Power BI Tabular Object Model (TOM)"
           url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
         - text: "Programming Power BI semantic models with the Tabular Object Model (TOM)"
