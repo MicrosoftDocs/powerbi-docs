@@ -1,5 +1,5 @@
 ---
-title: "Set translated labels for a paginated report parameter prompt | Microsoft Docs"
+title: "Set the locale for a Power BI paginated report or text box | Microsoft Docs"
 description: Use the Language property on a text box to provide the locale setting for formats in a Power BI paginated report that display data that differ by language and region in Power BI Report Builder.
 ms.date: 03/13/2024
 ms.service: powerbi
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
-# Set translated labels for a paginated report parameter prompt (Power BI Report Builder)
+# Set the locale for a Power BI paginated report or text box (Power BI Report Builder)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -43,9 +43,9 @@ ms.reviewer: saurkumar
   
     - **UnicodeBiDi** property: select the level of bidirectional embedding to use in the text box.
   
-## Set the locale for a paginated report prompt (Power BI Report Builder)
+## Set translated labels for a paginated report parameter prompt (Power BI Report Builder)
 
-The **User!Language** expression can be used to define the language that must be displayed based on the user's browser language. To do this follow the steps:
+You can use the **User!Language** expression to define translated parameter prompts. To do so, follow these steps:
 
 1. In Design view, define the [parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md).
 2. Specify the **Name** for the parameter.
