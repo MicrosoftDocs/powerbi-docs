@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/14/2023
+ms.date: 03/13/2024
 ---
 
 # Explore your data in the Power BI service (preview)
@@ -22,7 +22,7 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Find a dataset or report](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
 
-1. [Create an overview of the data](#2-create-an-overview-of-the-data)
+1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
 
 1. [Begin exploring by building your matrix or PivotTable](#3-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
 
@@ -55,7 +55,7 @@ What if while working with a datamart, you’d like to visualize and explore the
 
 :::image type="content" source="media/explore-data-service/sql-query-explore-data.png" alt-text="Screenshot showing Explore this data for a SQL query.":::
 
-## 2. Create an overview of the data
+## 2. Create an overview of the data with Copilot
 
 1. Select **Data overview** > **Create with Copilot**.
 
