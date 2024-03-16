@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/11/2024
+ms.date: 03/15/2024
 ---
 
 # Send report subscriptions to OneDrive SharePoint
@@ -16,7 +16,7 @@ ms.date: 03/11/2024
 
 You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint. 
 
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screeenshot showing in the Subscriptions pane, select create a subscription.":::
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screeenshot showing in the Subscriptions pane, select create a subscription." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png":::
 
 Subscribe to your Power BI and paginated reports to deliver them to OneDrive SharePoint. Your full report gets delivered to the OneDrive SharePoint location that you can select when you set up your subscription.
 
@@ -39,11 +39,11 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
 1. We currently support Standard subscriptions. Select **Standard**.  
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="Screeenshot showing in the Subscriptions pane, create a standard subscription.":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="Screeenshot showing in the Subscriptions pane, create a standard subscription." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png":::
 
 1. Select the **Attach full report** option.
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png" alt-text="Screeenshot showing in the Subscriptions pane, select the Attach full report option.":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png" alt-text="Screeenshot showing in the Subscriptions pane, select the Attach full report option." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png"::
 
 1. By default:  
 
@@ -66,13 +66,13 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
     - XML (.xml)
     - Comma-separated values (.csv)
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-save-pdf.png" alt-text="Screeenshot showing in the Subscriptions pane, select the format for the full report."::: 
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-save-pdf.png" alt-text="Screeenshot showing in the Subscriptions pane, select the format for the full report." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-save-pdf.png"::: 
 
 1. Select the type of subscription. 
 
 1. When you select **OneDrive** or **SharePoint**, select the folder location where you want the subscription to be delivered, and enter the subscription schedule to have your report delivered.
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="Screeenshot showing in the Subscriptions pane, select the subscription schedule for the report.":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="Screeenshot showing in the Subscriptions pane, select the subscription schedule for the report." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png":::
 
 1. By default, the File Name is the same as the Subscription name. Optionally, you can change these values. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
 
