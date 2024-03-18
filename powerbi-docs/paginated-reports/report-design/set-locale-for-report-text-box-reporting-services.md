@@ -45,7 +45,7 @@ ms.reviewer: saurkumar
   
 ## Set translated labels for a paginated report parameter prompt (Power BI Report Builder)
 
-You can use the **User!Language** expression to define translated parameter prompts. To do so, follow these steps:
+The **User!Language** expression can be used to define translated parameter prompts based on the user's browser language. To do so, follow these steps:
 
 1. In Design view, define the [parameter](../../paginated-reports/parameters/paginated-reports-create-parameters.md).
 2. Specify the **Name** for the parameter.
@@ -57,6 +57,7 @@ You can use the **User!Language** expression to define translated parameter prom
 
     To support more than two languages, use the [VB Switch function](/office/vba/language/reference/user-interface-help/switch-function).
 
+Note: The Power BI language that is used for when the report is executed in the Power BI service. By default the Power BI language is the browser language, but users can overwrite that in the Power BI settings and use a fixed language.
   
 ## Related content
 
