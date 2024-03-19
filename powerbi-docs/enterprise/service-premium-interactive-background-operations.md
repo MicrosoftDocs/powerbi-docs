@@ -34,7 +34,7 @@ The table below lists the Power BI operations. It provides a short description f
 | [Dataflow refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) | An on demand or scheduled background dataflow refresh, performed by the service or with REST APIs | Dataflows | Background |
 | Semantic model on-demand refresh | A background semantic model refresh initiated by the user, using the service, REST APIs or public XMLA endpoints | Semantic models | Background |
 | Semantic model scheduled refresh | A scheduled background semantic model refresh, performed by the service, REST APIs or public XMLA endpoints | Semantic models | Background |
-| Full report email subscription | A PDF or PowerPoint copy of an entire Power BI report, attached to an [email subscription](../collaborate-share/end-user-subscribe.md) | Report | Background |
+| Full report email subscription | A PDF or PowerPoint copy of an entire Power BI report, attached to an [email subscription](../collaborate-share/end-user-subscribe.md) | Report | Interactive |
 | Interactive query    | Queries initiated by an on-demand data request from a user. For example, loading a model when opening a report, user interaction with a report, or Power BI report snapshots. | Semantic models | Interactive |
 | PublicApiExport | A Power BI report exported with the [Export report to file](../developer/embedded/export-to.md) REST API | Report | Background |
 | Render | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
