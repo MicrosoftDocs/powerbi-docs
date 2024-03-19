@@ -49,9 +49,17 @@ When you save as a project, Power BI Desktop saves report and semantic model ite
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
+After saving as project, you can quickly recognize when you are working on a project by looking at the title bar:
+
+:::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project":::
+
+If you click on the title bar, you will see a new flyout that is specific for Power BI Project. This lets you easily locate the project files as well as the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
+
+:::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout":::
+
 Let's take a closer look at what you see in your project's root folder:
 
-##### \<project name>.Dataset
+##### \<project name>.SemanticModel
 
 A collection of files and folders that represent a Power BI semantic model. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
 
@@ -65,12 +73,17 @@ Specifies intentionally untracked files Git should ignore. Power BI Desktop crea
 
 Semantic model and report subfolders each have default git ignored files specified in .gitIgnore:
 
-- Dataset
-  - \.pbi\localSettings.json
-  - \.pbi\cache.abf
+```md
+├── project
+│   ├── *.SemanticModel
+│   │   ├── .pbi
+│   │   │   ├── localSettings.json
+│   │   │   └── cache.abf
+│   ├── *.Report
+│   │   ├── .pbi
+│   │   │   └── localSettings.json
 
-- Report
-  - \.pbi\localSettings.json
+```
 
 ##### \<project name>.pbip
 
@@ -82,9 +95,19 @@ For more information, refer to the [pbip schema document](https://github.com/mic
 
 You can open Power BI Desktop from the Power BI Project folder either by opening the **[pbip](#project-namepbip)** file or the **[pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the semantic model, if there's a relative reference to a semantic model.
 
-You can save multiple reports and semantic models to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the pbir within the report folder.
+You can save multiple reports and semantic models to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the **.pbir** within the report folder.
 
-:::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screen grab showing Power BI Project files with multiple report folders":::
+```md
+├── project
+│   ├── AdventureWorks-Sales.Report
+│   │   └── definition.pbir
+│   ├── AdventureWorks-Stocks.Report
+│   │   └── definition.pbir
+│   ├── AdventureWorks.SemanticModel
+|   |   └── *.*
+│   .gitignore
+└──  AdventureWorks.pbip
+```
 
 ## Changes outside Power BI Desktop
 
@@ -101,8 +124,8 @@ Schema details for the following files aren't documented. During **preview**, ch
 - Report\
   - [report.json](projects-report.md#reportjson)
   - [mobileState.json](projects-report.md#mobilestatejson)
-  - [datasetDiagramLayout.json](projects-report.md#datasetdiagramlayoutjson)
-- Dataset\
+  - [semanticModelDiagramLayout.json](projects-report.md#datasetdiagramlayoutjson)
+- SemanticModel\
   - [diagramLayout.json](projects-dataset.md#diagramlayoutjson)
 
 ### Model authoring

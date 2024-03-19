@@ -22,12 +22,11 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
   - [editorSettings.json](#pbieditorsettingsjson)
   - [cache.abf](#pbicacheabf)
   - [unappliedChanges.json](#pbiunappliedchangesjson)
-- [definition.pbidataset](#definitionpbidataset)<sup>[1](#required1)</sup>
+- [definition.pbism](#definitionpbism)<sup>[1](#required1)</sup>
 - [model.bim](#modelbim)<sup>[2](#required2)</sup>
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
 - [diagramLayout.json](#diagramlayoutjson)
-- [item.config.json](#itemconfigjson)
-- [item.metadata.json](#itemmetadatajson)
+- [.platform](#platform)
 
 <a name="required1">1</a> - This file is required.  
 <a name="required2">2</a> - This file is required when saving using TMSL format.  
@@ -71,11 +70,11 @@ The unappliedChanges.json file is automatically incorporated into the semantic m
 
 For more information, see the [unappliedChanges.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/unappliedChanges.md).
 
-#### definition.pbidataset
+#### definition.pbism
 
 Contains the overall definition of a semantic model and core settings.
 
-For more information, see the [definition.pbidataset schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
+For more information, see the [definition.pbism schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
 
 
 #### model.bim
@@ -92,17 +91,11 @@ This file contains a [Tabular Model Definition Language (TMDL)](/analysis-servic
 
 Contains diagram metadata that defines the structure of the semantic model associated with the report. During **PREVIEW**, this file doesn't support external editing.  
 
-#### item.config.json
+#### .platform
 
-Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
+Fabric platform file that holds properties vital for establishing and mantaining the connection between Fabric items and Git.
 
-For more information, see the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md).
-
-#### item.metadata.json
-
-Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file).
-
-For more information, see the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
+To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
 
 ## TMDL format
 

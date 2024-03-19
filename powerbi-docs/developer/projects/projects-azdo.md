@@ -31,21 +31,34 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-new-project-details.png" alt-text="PBIP and Azure DevOps integration new project details.":::
 
-1. Select **Repos** > **Files**, and then copy the URL of the remote repo:
+1. Select **Repos** > **Files**, and then click on 'Initialize' to create a empty branch:
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-copy-repo-url.png" alt-text="PBIP and Azure DevOps integration copy URL.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-initBranch" alt-text="PBIP and Azure DevOps integration init branch.":::
 
-1. In Visual Studio Code (VS Code) > **Source Control** > **Remote**, select **Add Remote**.
+1. In **Repos** > **Files**, select **Clone** > **Clone in VS Code**
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-add-remote.png" alt-text="Add Remote in VS Code.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode.png" alt-text="PBIP and Azure DevOps integration clone repo.":::
 
-1. Select **Publish Branch**.
+1. In Visual Studio Code (VS Code) > pick a folder and open
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-publish-branch.png" alt-text="Publish Branch in VS Code.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-pickfolder.png" alt-text="PBIP and Azure DevOps integration clone repo.":::
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-open.png" alt-text="PBIP and Azure DevOps integration clone repo.":::
+
+1. Save your Power BI Project files to the selected folder
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-vscode-saveAs.png" alt-text="PBIP in vs code.":::
+
+1. Commit and sync changes
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-commit.png" alt-text="Commit in VS Code.":::
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-sync.png" alt-text="Sync in VS Code.":::
 
     VS Code takes care of publishing your project into Azure DevOps, where you can see your project files.
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-see-project.png" alt-text="See your project in Azure DevOps.":::
+
 
 And that's it! You can see with Azure DevOps integration, you can now have multiple developers working on the same Power BI project. All they need to do is be synced with the same Azure Devops Git Repo.
 
