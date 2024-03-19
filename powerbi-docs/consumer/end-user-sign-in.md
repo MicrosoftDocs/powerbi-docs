@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 01/28/2024
+ms.date: 03/12/2024
 LocalizationGroup: Get started
 ---
 
@@ -22,7 +22,7 @@ Before you can sign in to Power BI, you need an account. There are two ways to g
 
 ## Sign in for the first time
 
-After you have an account set up, you can sign in and get started in the Power BI service. Use the steps here for general guidance. The exact screens may vary from what you see here, depending on your version of Microsoft software, browser version, and how your admin sets up your license and tenant.
+After you have an account set up, you can sign in and get started in the Power BI service. Use the steps here for general guidance. The exact screens may vary from what you see here, depending on your version of Microsoft software, browser version, and how your admin set up your license and tenant.
 
 ### Step 1: Open the Power BI service
 
