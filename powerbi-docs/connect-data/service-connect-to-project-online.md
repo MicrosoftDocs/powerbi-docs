@@ -44,9 +44,9 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
     > [!NOTE]
     > You need to have Portfolio Viewer, Portfolio Manager, or Administrator permissions for the Project Web App you are connecting to.
 
-9. You'll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data, you will see the contents of your new workspace. You may need to refresh the dataset to get the latest updates. 
+9. You'll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data, you will see the contents of your new workspace. You may need to refresh the semantic model to get the latest updates. 
 
-    After Power BI imports the data you will see the report with 13 pages and dataset in the nav pane. 
+    After Power BI imports the data you will see the report with 13 pages and semantic model in the nav pane. 
 
 10. Once your reports are ready, go ahead and start exploring your Project Web App data! The Template App comes with 13 rich and detailed reports for the Portfolio Overview (6 report pages), Resource Overview (5 report pages) and Project Status (2 report pages). 
 
@@ -58,13 +58,13 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 **What now?**
 
-* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**.
+* While your semantic model will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**.
 
 **Expand the Template App**
 
 Download the [GitHub PBIT file](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) to further customize and update the template app.
 
-## Next steps
-[Get started in Power BI](../fundamentals/service-get-started.md)
+## Related content
 
-[Get data in Power BI](service-get-data.md)
+* [Get started in Power BI](../fundamentals/service-get-started.md)
+* [Get data in Power BI](service-get-data.md)

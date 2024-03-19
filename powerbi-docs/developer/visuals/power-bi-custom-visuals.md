@@ -40,7 +40,7 @@ Microsoft and community members develop Power BI visuals for public benefit, and
 
 >[!NOTE]
 >
-> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, a third party or other service outside of your Power BI tenant’s geographic area, compliance boundary, or national cloud instance.
+> * By using Power BI visuals created with our SDK, you may be importing data from, or sending data to, a third party or other service outside of your Power BI tenant’s geographic area, compliance boundary, or national/regional cloud instance.
 > * Once Power BI visuals from AppSource are imported, they may be updated automatically without any additional notice.
 
 ### Download from AppSource
@@ -111,12 +111,12 @@ For some examples of Power BI custom visuals available for downloading on github
 
 Licensed visuals aren't supported in the following environments. Therefore, if licensed visuals are used in these environments, Power BI can't tell the ISV if the user is licensed, nor will it block the visual.
 
-* RS (report server) - no Azure AD
+* RS (report server) - no Microsoft Entra ID
 * Sovereign or government clouds
 * PaaS Power BI embedded App owns data
 * Publish to web (P2W)
 
-## Next steps
+## Related content
 
 * [Develop a Power BI circle card visual](develop-circle-card.md)
 * [Power BI visuals project structure](visual-project-structure.md)

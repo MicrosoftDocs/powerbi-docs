@@ -1,193 +1,151 @@
 ---
-title: Power BI Dataset Scale-Out
-description: Learn how Power BI Dataset Scale-Out improves your Power BI performance by reducing dataset query and refresh times
+title: Power BI semantic model scale-out
+description: Learn how Power BI semantic model scale-out improves your Power BI performance by reducing semantic model query and refresh times
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 02/07/2023
+ms.date: 11/27/2023
 LocalizationGroup: Premium
 ---
 
-# Power BI Dataset Scale-Out (preview)
+# Power BI semantic model scale-out
 
-Power BI Dataset Scale-Out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Scale-Out uses your Premium capacity to host copies of your dataset. By increasing throughput, the dataset copies ensure that performance doesn’t slow down when multiple users submit queries at the same time.
+Semantic model scale-out helps Power BI deliver fast performance while your reports and dashboards are consumed by a large audience. Semantic model scale-out uses your Premium capacity to host one or more read-only *replicas* of your *primary* semantic model. By increasing throughput, the read-only replicas ensure performance doesn’t slow down when multiple users submit queries at the same time.
 
-When Power BI creates the dataset copies, it separates *read-only* copies of the dataset from a *read/write* copy of the dataset. The *read-only* dataset copies serve the Power BI report and dashboard consumption, and the *read/write* dataset copy is used when write operations and refreshes are performed. During write operations and refreshes, the *read-only* dataset copies continue to serve your reports and dashboards without being disrupted. When needed, the *read-only* and *read/write* datasets are synced so that the *read-only* copies are kept up-to-date. Using this method, Power BI Dataset Scale-Out reduces the impact of write operations and dataset refreshes on your capacity.
+When Power BI creates read-only replicas, it separates them from the primary read-write semantic model. The read-only replicas serve Power BI report and dashboard queries, and the read-write semantic model is used when write and refresh operations are performed. During write and refresh operations, the read-only replicas continue to serve your reports and dashboard queries without being disrupted. By default, the read-only and read-write semantic models are automatically synchronized so that the read-only replicas are kept up-to-date. However, you can disable automatic sync, and choose to synchronize manually at the command line or by script.
 
-Only XMLA endpoints and advanced APIs connect to the *read/write* dataset copy. All other operations connect to the *read-only* dataset copy. The table below lists the required sync for each refresh method, when Power BI Dataset Scale-Out is enabled.
+The following table shows the required synchronization for each refresh method when Power BI semantic model scale-out is *enabled*, and automatic synchronization is *disabled*:
 
 | Refresh method    | Sync                 |
 |-------------------|----------------------|
 | OnDemand UI       | Always syncs         |
 | Scheduled Refresh | Always syncs         |
-| Basic REST API    | Manual sync required |
-| Advanced REST API | Manual sync required |
-| XMLA              | Manual sync required |
+| Basic REST API    | Manual sync required <sup>[1](#setting)</sup>|
+| Advanced REST API | Manual sync required <sup>[1](#setting)</sup>|
+| XMLA              | Manual sync required <sup>[1](#setting)</sup>|
+
+<a name="setting">1</a> - With `autoSyncReadOnlyReplicas` in `queryScaleOutSettings` set to false.
+
+## Replica management
+
+Scale-out creates one read-write semantic model replica, and as many read-only replicas as needed. All write operations are directed to the read-write replica. This includes queries on sessions that target the read-write replica explicitly, that is, don't use `?readonly` in the connection string. These queries can cause high interactive CPU usage on the read-write replica. In such cases, a new replica isn't created because the query load targeting the read-write replica can't be distributed to read-only replicas.
+
+The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus). A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model is high, and stays high. However, the current load on the capacity might by high enough to cause [throttling](/fabric/enterprise/throttling) if more replicas are added. Throttling prevents additional read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created.
+
+A replica is removed when CPU use reduces and consistently stays low.
 
 ## Prerequisites
 
-Before you enable Power BI Dataset Scale-Out, verify that the following Prerequisites are met.
+By default, scale-out is enabled for your tenant, but it's not enabled for semantic models in your tenant. To enable scale-out for a semantic model, you must use the [Power BI REST APIs](/rest/api/power-bi/datasets/update-dataset-in-group). Before enabling, the following prerequisites must be met:
+
+* The **Scale-out queries for large semantic models** setting for your tenant is enabled (default).
 
 * Your workspace resides on a Power BI Premium [capacity](service-premium-what-is.md#capacities-and-skus):
-    * P SKUs
-    * A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
+    * Premium Per User (PPU)
+    * Power BI Premium P SKUs
+    * Power BI A SKUs for Power BI Embedded (also known as [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers)).
+    * Fabric F SKUs
 
-* Your workspace is configured to use the [Large datasets](service-premium-large-models.md) storage format.
+* The [Large semantic model storage format](service-premium-large-models.md) setting is enabled.
 
-* [XMLA read/write](service-premium-connect-tools.md#enable-xmla-read-write) is enabled.
-
-* Power BI Management cmdlets. Install by opening PowerShell in Administrator mode, and running the command:
+* To manage semantic models by using the REST API, use [Power BI Management cmdlets](/powershell/power-bi/overview?view=powerbi-ps&preserve-view=true). Install by opening PowerShell in Administrator mode, and running the command:
 
     ```powershell
     Install-Module -Name MicrosoftPowerBIMgmt
     ```
 
-* The following (or higher) app, library and service versions:
+* The following (or higher) app, library, and service versions support connecting to read-only replicas:
 
     | App, library or service  | Version |
     |--------------------------|---------|
     | Microsoft Analysis Services OLE DB Provider for Microsoft SQL Server (MSOLAP) | 16.0.20.201 (March 2022) |
     | Microsoft.AnalysisServices.AdomdClient (ADOMD.NET) | 19.36.0 (March 2022) |
     | Power BI Desktop         | June 2022 |
-    | SQL Server Management Studio (SSMS) | 19.0 Preview 4 |
+    | SQL Server Management Studio (SSMS) | 19.0 |
     | Tabular Editor 2         | 2.16.6   |
     | Tabular Editor 3         | 3.2.3    |
     | DAX Studio               | 3.0.0    |
 
-## Enable Dataset Scale-Out
+## Configure scale-out for a semantic model
 
-Power BI Dataset Scale-Out is enabled by default for your tenant. However, you'll need to enable it for each workspace individually.
+To learn how to enable or disable scale-out for a semantic model, or get scale-out status by using PowerShell and the REST APIs, see [Configure semantic model scale-out](service-premium-scale-out-configure.md).
 
-### Enable Scale-Out for your workspace
+## Connect to a specific semantic model type
 
-Use the XMLA endpoint to turn on Scale-Out for each workspace you want to enable it for. Make sure that the XMLA endpoint has been [enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write).
+When scale-out is enabled, the following connections are retained:
 
-1. Start SQL Server Management Studio (SSMS) and in the **Connect to Server** dialog box, fill in the fields as listed below.
+* By default, Power BI Desktop connects to a read-only replica.
 
-    | Field          | Value |
-    |----------------|-------|
-    | **Server type**    | Analysis Services |
-    | **Server name**    | Paste the workspace connection string. You can get the connection string by going into your workspace settings, selecting Premium and copying the *Workspace Connection* string. |
-    | **Authentication** | Select the correct authentication type for your environment |
-    | **User name**      | Provide a valid UPN |
+* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports connect to a read-only replica.
 
-2. Select **Connect**.
+* XMLA client applications connect to the read-write semantic model by default.
 
-3. In the *Object Explorer* pane, select the **Databases** node.
+* Refreshes in the Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md) connect to the read-write semantic model.
 
-4. In the toolbar, select **XMLA**. If a *Connect to Analysis Services* dialog box appears, select *Connect*.
+You can connect to a read-only replica or the read-write semantic model by appending one of the following strings to the semantic model's URL:
 
-5. Paste the following request into the XMLA window. Replace `[WorkspaceName]` with the name of your workspace.  
+* **Read-only** - `?readonly`
+* **Read-write** - `?readwrite`
 
-    ```xml
-    <Execute xmlns="urn:schemas-microsoft-com:xml-analysis"> 
-        <Command> 
-            <Batch xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
-                <Alter ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"> 
-                    <Object /> 
-                    <ObjectDefinition>
-                       <Server xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                                xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" 
-                                xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" 
-                                xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" 
-                                xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" 
-                                xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" 
-                                xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" 
-                                xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" 
-                                xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" 
-                                xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" 
-                                xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" 
-                                xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500"> 
-                            <Name>[WorkspaceName]</Name> 
-                            <ServerProperties> 
-                                <ServerProperty> 
-                                    <Name>Feature\PBIP\QueryScaleOut</Name> 
-                                    <Value>1</Value> 
-                                </ServerProperty> 
-                            </ServerProperties> 
-                        </Server> 
-                    </ObjectDefinition> 
-                </Alter> 
-            </Batch> 
-        </Command> 
-        <Properties /> 
-    </Execute>  
-    ```
+## Disable semantic model scale-out for your tenant
 
-6. Select **Execute**.
+Power BI semantic model scale-out is enabled by default for a tenant. Power BI tenant admins can disable this setting. To disable semantic model scale-out for the tenant, do the following:
 
-    :::image type="content" source="media/service-premium-scale-out/ssms-connect.png" alt-text="A screenshot showing how to add the Scale-Out XMLA script to S Q L Server Management Studio (S S M S).":::
+1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md).
 
-### Disable Scale Out for your workspace
+2. In **Scale-out settings**, expand **Scale-out queries for large semantic models**.
 
-To disable Power BI Dataset Scale out for your workspace, set the `value` field to zero.
-
-```xml
-<Value>0</Value>
-```
-
-For more information, see the code snippet in [Enable Scale-Out for your workspace](#enable-scale-out-for-your-workspace), step 5.
-
-### Disable Scale-Out for your tenant
-
-Power BI Dataset Scale-Out is enabled by default for each tenant. A Power BI admin can disable this tenant setting. To disable Dataset Scale-Out, follow the instructions below.
-
-1. Go to your [tenant settings](./../admin/service-admin-portal-about-tenant-settings.md)
-
-2. In **Scale-out settings**, expand **Scale-out queries for large datasets**.
-
-3. Toggle the switch so that it shows **Disabled**.
+3. Toggle the switch to **Disabled**.
 
 4. Select **Apply**.
 
     :::image type="content" source="media/service-premium-scale-out/disable-scale-out.png" alt-text="A screenshot showing how to disable the scale out tenant settings in the Power BI admin portal.":::
 
-## Connect to a specific dataset type
-
-When Scale-Out is enabled, the following connections are maintained.
-
-* Power BI Desktop connects to the *read-only* dataset by default.
-
-* [Live connection](./../connect-data/desktop-report-lifecycle-datasets.md) reports, are connected to the *read-only* dataset copy.
-
-* XMLA clients are connected to the *read/write* dataset copy by default.
-
-* Refreshes in Power BI service and refreshes using the [Enhanced Refresh REST API](./../connect-data/asynchronous-refresh.md), are connected to the *read/write* dataset copy.
-
-You can connect to specific type of dataset copy by appending one of the following strings to the dataset's URL.
-
-* **Read-only** - `?readonly`
-* **Read/write** - `?readwrite`
-
 ## Considerations and limitations
 
-* Client applications can connect to the *read-only* dataset copy through the XMLA endpoint, provided they support the mode specified on the connection string. Client applications can also connect to the *read/write* instance using XMLA endpoint.
+* Client applications can connect to a read-only replica through the XMLA endpoint, provided they support the mode specified in the connection string. Client applications can also connect to the read-write instance by using the XMLA endpoint.
 
-* Manual and scheduled refreshes are automatically synchronized with the latest version of the *read-only* dataset copies. REST API refreshes must be synced with the *read-only* dataset copies using the manual sync REST API.
+* Manual and scheduled refreshes are always automatically synchronized with the latest version of the read-only  replicas. REST API refreshes respect the automatic sync configuration. If automatic sync is disabled, your semantic model must be synced with the read-only replicas by using the manual sync REST API.
 
-* XMLA updates and refreshes must be synced with the *read-only* dataset copies using the Sync REST API.
+* With automatic sync disabled, XMLA updates and refreshes must be synced with the read-only semantic model copies by using the sync REST API.
 
-* When deleting a Power BI Scale-Out dataset, and creating another dataset with the same name. Allow five minutes to pass before creating the new dataset. It might take Power BI a short while to remove the copies of the original dataset.
+* When deleting a Power BI scale-out semantic model, and creating another semantic model with the same name, allow five minutes to pass before creating the new semantic model. It might take Power BI a while to remove the replicas of the primary semantic model.
 
-* Backup and restore operations are not supported for Power BI Scale-Out datasets. If you want to restore a dataset, disable Scale-Out before you restore the dataset. After the restore operation ends, you can enable Scale-Out again.
+* When Power BI semantic model scale-out is enabled and `autoSyncReadOnlyReplicas=false`, changes to the following features, are not supported:
+    * Adding or deleting roles
+    * Updating the set of role memberships for any role
+    * Modifying a data source
+    * Deleting data sources used by a DirectQuery or a Dual table
+    * Changes to object-level security (OLS) or dynamic row-level security (RLS) expressions
 
-* When Power BI Dataset Scale-Out is turned on, changes to the following features, are not supported:
-    * Model roles for RLS and OLS
-    * Tables that use DirectQuery and Dual data sources
+    To make changes to these features, disable scale-out and allow a few minutes for the change to take place before reenabling.
 
-    To make changes to these features, disable Scale-Out and allow a few minutes for the change to take place.
+* Discovering role memberships using the [Dynamic Management View (DMV)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) TMSCHEMA_ROLE_MEMBERSHIPS rowset, doesn't return any results when run against the read-only replica.
 
-## Next steps
+* Reports that use a [Live connection](../connect-data/service-live-connect-dq-datasets.md#live-connection) always connect to the read-only replica, even if the connection string uses `?readwrite`. However, in Power BI Desktop, live connection reports using `?readwrite` connect to the read-write replica.
 
-> [!div class="nextstepaction"]
-> [Tutorial: Test Power BI Dataset Scale-Out](service-premium-scale-out-test.md)
+* The DBSCHEMA_CATALOGS and DISCOVER_XML_METADATA the [Dynamic Management View (DMV)](/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services) rowsets, return read-write replica information when using `?readonly` in the connection string.
 
-> [!div class="nextstepaction"]
-> [Sync a read-only Scale-Out replica](service-premium-scale-out-sync-replica.md)
+* SQL server profiler doesn't work with the `?readonly` connection string.
 
-> [!div class="nextstepaction"]
-> [Compare Scale-Out dataset copies](service-premium-scale-out-app.md)
+* These operations trigger auto-sync even when auto sync is turned off (`AutoSync=Off`).
+    * Migrating a workspace from one capacity to another.
+    * Switching (or rotating) the version of the key used for Bring your own encryption keys (BYOK).
+    * Moving a semantic model's workspace from a capacity that doesn't use BYOK to a capacity that uses BYOK.
+    * Moving a semantic model's workspace from a capacity that uses BYOK to a capacity that doesn't uses BYOK.
+    * Restoring a semantic model using the public XMLA endpoint.
+
+* Disabling [Large semantic model storage format](service-premium-large-models.md) disables scale-out and loses all sync information.
+
+## Related content
+
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
+
+* [Tutorial: Test semantic model scale-out](service-premium-scale-out-test.md)
+
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+
+* [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)

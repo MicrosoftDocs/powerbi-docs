@@ -57,9 +57,9 @@ The default permissions apply to anyone accessing the scorecard who is not a mem
 
     :::image type="content" source="media/service-goals-set-permissions/goals-permissions-create-default.png" alt-text="Screenshot of setting a role to become the default role from the More options menu.":::
 
-Metric-level permissions roles apply to the underlying scorecard dataset we generate, with the exception of the default role. For example, say you create a role and assign the sales team view access to five metrics on the scorecard. Those five metrics are the ones they'll see in the underlying dataset as well. 
+Metric-level permissions roles apply to the underlying scorecard semantic model we generate, with the exception of the default role. For example, say you create a role and assign the sales team view access to five metrics on the scorecard. Those five metrics are the ones they'll see in the underlying semantic model as well. 
 
-Default permissions do *not* apply to the underlying dataset. If I give view permissions to all metrics as the default role, anyone who adopts those default permissions will not have access to any metrics in the underlying dataset.
+Default permissions do *not* apply to the underlying semantic model. If I give view permissions to all metrics as the default role, anyone who adopts those default permissions will not have access to any metrics in the underlying semantic model.
 
 ## Share the scorecard
 
@@ -67,7 +67,7 @@ After you've created roles and set up permissions, the final step is to share th
 
 - Select the **Share** button in the ribbon, same as you would share a normal report.  
 
-    If you don't want to give permissions to the underlying scorecard dataset, in the Share dialog clear the option **Allow recipients to build content with the data associated with this report** to give build permissions to the underlying report.
+    If you don't want to give permissions to the underlying scorecard semantic model, in the Share dialog clear the option **Allow recipients to build content with the data associated with this report** to give build permissions to the underlying report.
 
 ### Workspace roles and scorecard roles
 
@@ -77,6 +77,6 @@ Workspace roles are separate from metric level permissions roles.  While workspa
 
 The support for automatic roles based on metric-level permissions (full row-level security (RLS) support) is coming, but isn't yet available.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)

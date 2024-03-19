@@ -1,24 +1,24 @@
 ---
 title: Troubleshoot XMLA endpoint connectivity in Power BI
 description: Describes how to troubleshoot connectivity through the XMLA endpoint.
-author: Minewiskan
+author: kfollis
 ms.author: davidi
 ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/20/2023
+ms.date: 11/10/2023
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
 
 # Troubleshoot XMLA endpoint connectivity
 
-XMLA endpoints in Power BI rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
+XMLA endpoints in Power BI rely on the native Analysis Services communication protocol for access to Power BI semantic models. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
 
 ## Before you begin
 
-Before troubleshooting an XMLA endpoint scenario, be sure to review the basics covered in [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md). Most common XMLA endpoint use cases are covered there. Other Power BI troubleshooting guides, such as [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md) and [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md), can also be helpful.
+Before troubleshooting an XMLA endpoint scenario, be sure to review the basics covered in [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md). Most common XMLA endpoint use cases are covered there. Other Power BI troubleshooting guides, such as [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md) and [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md), can also be helpful.
 
 ## Enabling the XMLA endpoint
 
@@ -37,7 +37,7 @@ After enabling the XMLA endpoint, it's a good idea to test connectivity to a wor
 
 ### Connecting with a service principal
 
-If you've enabled tenant settings to allow service principals to use Power BI APIs, as described in [Enable service principals](service-premium-service-principal.md#enable-service-principals), you can connect to an XMLA endpoint by using a service principal. Keep in mind the service principal requires the same level of access permissions at the workspace or dataset level as regular users.
+If you've enabled tenant settings to allow service principals to use Power BI APIs, as described in [Enable service principals](service-premium-service-principal.md#enable-service-principals), you can connect to an XMLA endpoint by using a service principal. Keep in mind the service principal requires the same level of access permissions at the workspace or semantic model level as regular users.
 
 To use a service principal, be sure to specify the application identity information in the connection string as:
 
@@ -50,37 +50,39 @@ For example:
 
 If you receive the following error:
 
-"We cannot connect to the dataset due to incomplete account information. For service principals, make sure you specify the tenant ID together with the app ID using the format app:\<appId>@\<tenantId>, then try again."
+"We cannot connect to the semantic model due to incomplete account information. For service principals, make sure you specify the tenant ID together with the app ID using the format app:\<appId>@\<tenantId>, then try again."
 
 Make sure you specify the tenant ID together with the app ID using the correct format.
 
 It's also valid to specify the app ID without the tenant ID. However, in this case, you must replace the `myorg` alias in the data source URL with the actual tenant ID. Power BI can then locate the service principal in the correct tenant. But, as a best practice, use the `myorg` alias and specify the tenant ID together with the app ID in the User ID parameter.
 
-### Connecting with Azure Active Directory B2B
+<a name='connecting-with-azure-active-directory-b2b'></a>
 
-With support for Azure Active Directory (Azure AD) business-to-business (B2B) in Power BI, you can provide external guest users with access to datasets over the XMLA endpoint. Make sure the [Share content with external users](../admin/service-admin-portal-export-sharing.md) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
+### Connecting with Microsoft Entra B2B
 
-## Deploying a dataset
+With support for Microsoft Entra business-to-business (B2B) in Power BI, you can provide external guest users with access to semantic models over the XMLA endpoint. Make sure the [Share content with external users](/fabric/admin/service-admin-portal-export-sharing) setting is enabled in the Power BI Admin portal. To learn more, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](service-admin-azure-ad-b2b.md).
 
-You can deploy a tabular model project in Visual Studio (SSDT) to a workspace assigned to a Premium capacity, much the same as to a server resource in Azure Analysis Services. However, when deploying there are some additional considerations. Be sure to review the section [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt) in the Dataset connectivity with the XMLA endpoint article.
+## Deploying a semantic model
+
+You can deploy a tabular model project in Visual Studio (SSDT) to a workspace assigned to a Premium capacity, much the same as to a server resource in Azure Analysis Services. However, when deploying there are some additional considerations. Be sure to review the section [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt) in the semantic model connectivity with the XMLA endpoint article.
 
 ### Deploying a new model
 
-In the default configuration, Visual Studio attempts to process the model as part of the deployment operation to load data into the dataset from the data sources. As described in [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt), this operation can fail because data source credentials cannot be specified as part of the deployment operation. Instead, if credentials for your data source aren't already defined for any of your existing datasets, you must specify the data source credentials in the dataset settings using the Power BI user interface (**Datasets** > **Settings** > **Data source credentials** > **Edit credentials**). Having defined the data source credentials, Power BI can then apply the credentials to this data source automatically for any new dataset, after metadata deployment has succeeded and the dataset has been created.
+In the default configuration, Visual Studio attempts to process the model as part of the deployment operation to load data into the semantic model from the data sources. As described in [Deploy model projects from Visual Studio (SSDT)](service-premium-connect-tools.md#deploy-model-projects-from-visual-studio-ssdt), this operation can fail because data source credentials cannot be specified as part of the deployment operation. Instead, if credentials for your data source aren't already defined for any of your existing semantic models, you must specify the data source credentials in the semantic model settings using the Power BI user interface (**Semantic models** > **Settings** > **Data source credentials** > **Edit credentials**). Having defined the data source credentials, Power BI can then apply the credentials to this data source automatically for any new semantic model, after metadata deployment has succeeded and the semantic model has been created.
 
-If Power BI cannot bind your new dataset to data source credentials, you will receive an error stating "Cannot process database. Reason: Failed to save modifications to the server." with the error code "DMTS_DatasourceHasNoCredentialError", as shown below:
+If Power BI cannot bind your new semantic model to data source credentials, you will receive an error stating "Cannot process database. Reason: Failed to save modifications to the server." with the error code "DMTS_DatasourceHasNoCredentialError", as shown below:
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/deploy-refresh-error.png" alt-text="Model deployment error":::
 
-To avoid the processing failure, set the **Deployment Options** > **Processing Options** to **Do not Process**, as shown in the following image. Visual Studio  then deploys only metadata. You can then configure the data source credentials, and click on **Refresh now** for the dataset in the Power BI user interface.
+To avoid the processing failure, set the **Deployment Options** > **Processing Options** to **Do not Process**, as shown in the following image. Visual Studio  then deploys only metadata. You can then configure the data source credentials, and click on **Refresh now** for the semantic model in the Power BI user interface.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/do-not-process.png" alt-text="Do not process option":::
 
-### New project from an existing dataset
+### New project from an existing semantic model
 
-Creating a new tabular project in Visual Studio by importing the metadata from an existing dataset is not supported. However, you can connect to the dataset by using SQL Server Management Studio, script out the metadata, and reuse it in other tabular projects.
+Creating a new tabular project in Visual Studio by importing the metadata from an existing semantic model is not supported. However, you can connect to the semantic model by using SQL Server Management Studio, script out the metadata, and reuse it in other tabular projects.
 
-## Migrating a dataset to Power BI
+## Migrating a semantic model to Power BI
 
 It's recommended you specify the 1500 (or higher) compatibility level for tabular models. This compatibility level supports the most capabilities and data source types. Later compatibility levels are backwards compatible with earlier levels.
 
@@ -104,7 +106,7 @@ The following table provides an example of a .NET Framework Data Provider for SQ
 
 ### Cross-referencing partition sources
 
-Just as there are multiple data source types, there are also multiple partition source types a tabular model can include to import data into a table. Specifically, a partition can use a query partition source or an M partition source. These partition source types, in turn, can reference provider data sources or structured data sources. While tabular models in Azure Analysis Services support cross-referencing these various data source and partition types, Power BI enforces a more strict relationship. Query partition sources must reference provider data sources, and M partition sources must reference structured data sources. Other combinations are not supported in Power BI. If you want to migrate a cross-referencing dataset, the following table describes supported configurations:  
+Just as there are multiple data source types, there are also multiple partition source types a tabular model can include to import data into a table. Specifically, a partition can use a query partition source or an M partition source. These partition source types, in turn, can reference provider data sources or structured data sources. While tabular models in Azure Analysis Services support cross-referencing these various data source and partition types, Power BI enforces a more strict relationship. Query partition sources must reference provider data sources, and M partition sources must reference structured data sources. Other combinations are not supported in Power BI. If you want to migrate a cross-referencing semantic model, the following table describes supported configurations:  
 
 |Data source   |Partition source   |Comments   |Supported  with XMLA endpoint   |
 |---------|---------|---------|---------|
@@ -116,13 +118,13 @@ Just as there are multiple data source types, there are also multiple partition 
 
 ### Data sources and impersonation
 
-Impersonation settings you can define for provider data sources are not relevant for Power BI. Power BI uses a different mechanism based on dataset settings to manage data source credentials. For this reason, make sure you select **Service Account** if you are creating a Provider Data Source.
+Impersonation settings you can define for provider data sources are not relevant for Power BI. Power BI uses a different mechanism based on semantic model settings to manage data source credentials. For this reason, make sure you select **Service Account** if you are creating a Provider Data Source.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/impersonate-services-account.png" alt-text="Impersonate service account":::
 
 ### Fine-grained processing
 
-When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI typically refreshes the entire dataset. In many cases, it's more efficient to perform refreshes more selectively. You can perform fine-grained processing tasks in SQL Server Management Studio (SSMS) as shown below, or by using third-party tools or scripts.
+When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI typically refreshes the entire semantic model. In many cases, it's more efficient to perform refreshes more selectively. You can perform fine-grained processing tasks in SQL Server Management Studio (SSMS) as shown below, or by using third-party tools or scripts.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Process tables in SSMS":::
 
@@ -132,7 +134,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ## Email subscriptions
 
-Datasets that are refreshed using an XMLA endpoint don't trigger an [email subscription](/power-bi/collaborate-share/end-user-subscribe).
+Semantic models that are refreshed using an XMLA endpoint don't trigger an [email subscription](/power-bi/collaborate-share/end-user-subscribe).
 
 ## Errors on Premium capacity
 
@@ -157,7 +159,7 @@ The remote server returned an error: (400) Bad Request. (System)
 When connecting to a Power BI workspace with SSMS, ensure the following:
 
 - The XMLA endpoint setting is enabled for your tenant's capacity. To learn more, see  [Enable XMLA read-write](service-premium-connect-tools.md#enable-xmla-read-write).
-- The [Allow XMLA endpoints and Analyze in Excel with on-premises datasets](service-premium-connect-tools.md#security) setting is enabled in Tenant settings.
+- The [Allow XMLA endpoints and Analyze in Excel with on-premises semantic models](service-premium-connect-tools.md#security) setting is enabled in Tenant settings.
 - You're using the latest version of SSMS. [Download the latest](/sql/ssms/download-sql-server-management-studio-ssms).
 
 ### Query execution in SSMS
@@ -186,11 +188,11 @@ Date (UTC): 11/13/2020 7:57:16 PM
 Run complete
 ```
 
-When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a dataset in a Power BI Premium or a [Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi) capacity, SSMS may display this error even though the refresh operation succeeds. This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
+When using SSMS v18.7.1 or lower to perform a long running (>1 min) refresh operation on a semantic model in a Power BI Premium or a [Power BI Embedded](/power-bi/developer/embedded/embedded-analytics-power-bi) capacity, SSMS may display this error even though the refresh operation succeeds. This is due to a known issue in the client libraries where the status of the refresh request is incorrectly tracked. This is resolved in SSMS 18.8 and higher. [Download the latest SSMS](/sql/ssms/download-sql-server-management-studio-ssms).
 
-This error can also occur when a very large request needs to be redirected to a different node in the Premium cluster. It's often seen when you try to create or alter a dataset using a large TMSL script. In such cases, the error can usually be avoided by specifying the Initial Catalog to the name of the database before executing the command.
+This error can also occur when a very large request needs to be redirected to a different node in the Premium cluster. It's often seen when you try to create or alter a semantic model using a large TMSL script. In such cases, the error can usually be avoided by specifying the Initial Catalog to the name of the database before executing the command.
 
-When creating a new database, you can create an empty dataset, for example:
+When creating a new database, you can create an empty semantic model, for example:
 
 ```json
 {   
@@ -202,11 +204,11 @@ When creating a new database, you can create an empty dataset, for example:
 } 
 ```
 
-After you create the new dataset, specify the Initial Catalog and then make changes to the dataset.
+After you create the new semantic model, specify the Initial Catalog and then make changes to the semantic model.
 
 ### Other client applications and tools
 
- Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with datasets in Power BI Premium capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with datasets in a Premium capacity through the XMLA endpoint are:
+ Client applications and tools such as Excel, Power BI Desktop, SSMS, or external tools connecting to and working with semantic models in Power BI Premium capacities may cause the following error: **The remote server returned an error: (400) Bad Request.**. The error can be caused especially if an underlying DAX query or XMLA command is long running. To mitigate potential errors, be sure to use the most recent applications and tools that install recent versions of the [Analysis Services client libraries](/analysis-services/client-libraries?view=power-bi-premium-current&preserve-view=true) with regular updates. Regardless of application or tool, the minimum required client library versions to connect to and work with semantic models in a Premium capacity through the XMLA endpoint are:
 
 |Client Library | Version  |
 |---------|---------|
@@ -216,7 +218,7 @@ After you create the new dataset, specify the Initial Catalog and then make chan
 
 ## Editing role memberships in SSMS
 
-When using the SQL Server Management Studio (SSMS) v18.8 to edit a role membership on a dataset, SSMS may display the following error:
+When using the SQL Server Management Studio (SSMS) v18.8 to edit a role membership on a semantic model, SSMS may display the following error:
 
 ```
 Failed to save modifications to the server. 
@@ -250,14 +252,14 @@ This is due to a known issue in the app services REST API. This will be resolved
 } 
 ```
 
-## Publish Error - Live connected dataset
+## Publish Error - Live connected semantic model
 
-When republishing a live connected dataset utilizing the Analysis Services connector, the following error, "**There is an existing report/dataset with the same name. Please delete or rename the existing dataset and retry.**"
+When republishing a live connected semantic model utilizing the Analysis Services connector, the following error, "**There is an existing report/semantic model with the same name. Please delete or rename the existing semantic model and retry.**"
  may be shown.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/couldnt-publish-to-power-bi.png" alt-text="Couldn't publish to Power BI error.":::
 
-This is due to the dataset being published having a different connection string but having the same name as the existing dataset. To resolve this issue, either delete or rename the existing dataset. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
+This is due to the semantic model being published having a different connection string but having the same name as the existing semantic model. To resolve this issue, either delete or rename the existing semantic model. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
 ## Workspace/server alias
 
@@ -269,7 +271,7 @@ The DMV DISCOVER_M_EXPRESSIONS data management view (DMV) is currently not suppo
 
 ## Resource governing command memory limit in Premium
 
-Premium capacities use resource governing to ensure no single dataset operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per item of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to dataset (database) size, the effective memory limit also applies to underlying dataset command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
+Premium capacities use resource governing to ensure no single semantic model operation can exceed the amount of available memory resources for the capacity - determined by SKU. For example, a P1 subscription has an *effective memory limit* per item of 25 GB, for a P2 subscription the limit is 50 GB, and for a P3 subscription the limit is 100 GB. In addition to semantic model (database) size, the effective memory limit also applies to underlying semantic model command operations like [Create](/analysis-services/tmsl/create-command-tmsl?view=power-bi-premium-current&preserve-view=true), [Alter](/analysis-services/tmsl/alter-command-tmsl?view=power-bi-premium-current&preserve-view=true), and [Refresh](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true).
 
 The effective memory limit for a command is based on the lesser of the capacity's memory limit (determined by SKU) or the value of the [DbpropMsmdRequestMemoryLimit](/analysis-services/xmla/xml-elements-properties/dbpropmsmdrequestmemorylimit-element-xmla?view=asallproducts-allversions&preserve-view=true) XMLA property.
 
@@ -281,25 +283,25 @@ For example, for a P1 capacity, if:
 
 - DbpropMsmdRequestMemoryLimit = 50 GB, the effective memory limit for the command is 25 GB.
 
-Typically, the effective memory limit for a command is calculated on the memory allowed for the dataset by the capacity (25 GB, 50 GB, 100 GB) and how much memory the dataset is already consuming when the command starts executing. For example, a dataset using 12 GB on a P1 capacity allows an effective memory limit for a new command of 13 GB. However, the effective memory limit can be further constrained by the DbPropMsmdRequestMemoryLimit XMLA property when optionally specified by an application. Using the previous example, if 10 GB is specified in the DbPropMsmdRequestMemoryLimit property, then the command’s effective limit is further reduced to 10 GB.
+Typically, the effective memory limit for a command is calculated on the memory allowed for the semantic model by the capacity (25 GB, 50 GB, 100 GB) and how much memory the semantic model is already consuming when the command starts executing. For example, a semantic model using 12 GB on a P1 capacity allows an effective memory limit for a new command of 13 GB. However, the effective memory limit can be further constrained by the DbPropMsmdRequestMemoryLimit XMLA property when optionally specified by an application. Using the previous example, if 10 GB is specified in the DbPropMsmdRequestMemoryLimit property, then the command’s effective limit is further reduced to 10 GB.
 
-If the command operation attempts to consume more memory than allowed by the limit, the operation can fail, and an error is returned. For example, the following error describes an effective memory limit of 25 GB (P1 capacity) has been exceeded because the dataset already consumed 12 GB (12288 MB) when the command started execution, and an effective limit of 13 GB (13312 MB) was applied for the command operation:
+If the command operation attempts to consume more memory than allowed by the limit, the operation can fail, and an error is returned. For example, the following error describes an effective memory limit of 25 GB (P1 capacity) has been exceeded because the semantic model already consumed 12 GB (12288 MB) when the command started execution, and an effective limit of 13 GB (13312 MB) was applied for the command operation:
 
-**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 13312 MB, memory limit 13312 MB, database size before command execution 12288 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this semantic model is hosted or reduce the memory footprint of your semantic model by doing things like limiting the amount of imported data. More details: consumed memory 13312 MB, memory limit 13312 MB, database size before command execution 12288 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
 
-In some cases, as shown in the following error, "consumed memory" is 0 but the amount shown for "database size before command execution" is already greater than the effective memory limit. This means the operation failed to begin execution because the amount of memory already used by the dataset is greater than the memory limit for the SKU.
+In some cases, as shown in the following error, "consumed memory" is 0 but the amount shown for "database size before command execution" is already greater than the effective memory limit. This means the operation failed to begin execution because the amount of memory already used by the semantic model is greater than the memory limit for the SKU.
 
-**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this dataset is hosted or reduce the memory footprint of your dataset by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
+**"Resource governing: This operation was canceled because there wasn’t enough memory to finish running it. Either increase the memory of the Premium capacity where this semantic model is hosted or reduce the memory footprint of your semantic model by doing things like limiting the amount of imported data. More details: consumed memory 0 MB, memory limit 25600 MB, database size before command execution 26000 MB. Learn more: `https://go.microsoft.com/fwlink/?linkid=2159753`."**
 
 To potentially avoid exceeding the effective memory limit:
 
-- Upgrade to a larger Premium capacity (SKU) size for the dataset.
-- Reduce the memory footprint of your dataset by limiting the amount of data loaded with each refresh.
+- Upgrade to a larger Premium capacity (SKU) size for the semantic model.
+- Reduce the memory footprint of your semantic model by limiting the amount of data loaded with each refresh.
 - For refresh operations through the XMLA endpoint, reduce the number of partitions being processed in parallel. Too many partitions being processed in parallel with a single command can exceed the effective memory limit.
 
-## See also
+## Related content
 
-[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
-[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)  
-[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
-[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)
+- [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+- [Automate Premium workspace and semantic model tasks with service principals](service-premium-service-principal.md)  
+- [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+- [Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)

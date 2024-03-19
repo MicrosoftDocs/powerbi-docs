@@ -13,7 +13,7 @@ ms.date: 01/25/2023
 
 # Understand paginated report data in Power BI Report Builder
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
 Paginated report data can come from multiple sources of data in your organization. Your first step in designing a Power BI Report Builder paginated report is to create data sources and datasets that represent the underlying report data.
 
@@ -63,7 +63,7 @@ Use the following list to help define sources of data for a report.
   
 - Data sources and datasets are authored in a report and published to the Power BI service. After they're published, you can configure credentials directly in the Power BI service or in your Enterprise Gateway.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) 
 

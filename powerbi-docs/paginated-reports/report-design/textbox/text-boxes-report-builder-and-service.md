@@ -11,7 +11,7 @@ ms.reviewer: rpatkar
 ---
 # Text boxes in paginated reports (Power BI Report Builder)
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../../includes/applies-yes-report-builder-no-desktop.md)]
 
   When you think of a text box in a Power BI paginated report, you probably think of a stand-alone box containing text on a surface like in [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Office PowerPoint. In paginated reports, some text boxes are like that, and they can display static text for titles, descriptions, and labels, or dynamic text based on expressions. But every cell in a table or matrix (a tablix data region) also contains a text box, which you can format the same way you format stand-alone text boxes in your report.  
   
@@ -48,7 +48,7 @@ If you drag a report dataset field value directly to the report design surface, 
 - [Set Text Box Orientation &#40;Power BI Report Builder&#41;](set-text-box-orientation-report-builder-and-service.md)
 - [Allow a Text Box to Grow or Shrink &#40;Power BI Report Builder&#41;](allow-a-text-box-to-grow-or-shrink-report-builder-and-service.md)
   
-## Next steps
+## Related content
 
 - [Formatting Text and Placeholders &#40;Report Builder&#41;](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
 - [Formatting Numbers and Dates &#40;Report Builder&#41;](/sql/reporting-services/report-design/formatting-numbers-and-dates-report-builder-and-ssrs)  

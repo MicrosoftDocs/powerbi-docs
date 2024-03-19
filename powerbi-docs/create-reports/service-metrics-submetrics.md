@@ -95,7 +95,7 @@ You may want to preserve historical values if you're switching metric type from 
 - New rollup types calculate with the new aggregation moving forward, but don't replace the history.
 - Rollups always show the same aggregation value of all submetrics, regardless of metric level permissions.  This means if person A only has view access to 3 out of 5 submetrics, they still see the same parent metric value as someone who has access to all submetrics.  
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

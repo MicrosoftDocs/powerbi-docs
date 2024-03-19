@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 11/10/2023
 ms.custom: video-OZO3x2NF8Ak
 LocalizationGroup: Visualizations
 ---
@@ -20,11 +20,11 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="400" height="450" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/OZO3x2NF8Ak]
 
 In the Power BI service, you can also [create a report quickly from data in a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md).
 
-If your purpose is to quickly create a dataset in the Power BI service, you can do so directly from the SharePoint list. For more information, see [Create a dataset from a SharePoint list](./create-dataset-sharepoint-online-list.md).
+If your purpose is to quickly create a semantic model in the Power BI service, you can do so directly from the SharePoint list. For more information, see [Create a semantic model from a SharePoint list](./create-dataset-sharepoint-online-list.md).
 
 ## Part 1: Connect to your SharePoint List
 
@@ -42,7 +42,7 @@ If your purpose is to quickly create a dataset in the Power BI service, you can 
    > [!NOTE]  
    > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-   <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=48&end=90" frameborder="0" allowfullscreen></iframe>
+   > [!VIDEO https://www.youtube.com/embed/OZO3x2NF8Ak?start=48&end=90]
 
 5. In Power BI Desktop, paste the address into the **Site URL** field of the **SharePoint Online Lists** dialog box, and then select **OK**.
 
@@ -73,7 +73,7 @@ If your purpose is to quickly create a dataset in the Power BI service, you can 
    > [!NOTE]  
    > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-   <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204" frameborder="0" allowfullscreen></iframe>
+   > [!VIDEO https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204]
 
 3. On the left side of the Power BI Desktop screen, select the **Report** icon.
 4. Select columns you want to visualize by selecting the checkboxes beside them in the **Fields** pane on the right.
@@ -83,12 +83,12 @@ If your purpose is to quickly create a dataset in the Power BI service, you can 
    > [!NOTE]  
    > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-   <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=215&end=252" frameborder="0" allowfullscreen></iframe>
+   > [!VIDEO https://www.youtube.com/embed/OZO3x2NF8Ak?start=215&end=252]
 
 5. Change the visual type if you need to.
 6. You can create multiple visualizations in the same report by deselecting the existing visual, then selecting checkboxes for other columns in the **Fields** pane.
 7. Select **Save** to save your report.
 
-## Next steps
+## Related content
 
 - [Create a report quickly from a SharePoint list](../create-reports/service-quick-create-sharepoint-list.md)

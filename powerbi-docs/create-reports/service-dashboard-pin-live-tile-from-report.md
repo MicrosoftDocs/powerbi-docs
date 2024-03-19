@@ -33,7 +33,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EzhfBpPboPA" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/EzhfBpPboPA]
 
 1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
 2. With no visualizations selected, from the menu bar, select the **Pin** icon.
@@ -55,8 +55,8 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
     :::image type="content" source="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png" alt-text="Screenshot showing dashboards with a live tile." lightbox="media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png":::!
 
-## Next steps
+## Related content
 
-[Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)
+- [Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

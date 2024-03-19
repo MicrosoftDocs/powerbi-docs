@@ -55,7 +55,7 @@ The general process to develop and submit a template app involves several stages
 
 ## Before you begin
 
-To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](../admin/service-admin-portal-template-app.md).
+To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](/fabric/admin/service-admin-portal-template-app).
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
 
@@ -83,7 +83,7 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](../admin/service-admin-portal-template-app.md).
+To create the template app, you need permissions to create one. For more information, see [Template app tenant settings](/fabric/admin/service-admin-portal-template-app).
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
 
@@ -93,7 +93,7 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 ## Tips
 
 - Make sure your app includes sample data to get everyone started in a click.
-- Limit dataset size (rule of thumb: *.pbix* file < 10MBs). This typically means keeping the size of sample data as small as possible.
+- Limit semantic model size (rule of thumb: *.pbix* file < 10MBs). This typically means keeping the size of sample data as small as possible.
 - Carefully examine your application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see.
 - Use AppSource as your online store to host your application. This way everyone using Power BI can find your app.
 - Consider offering more than one template app for separate unique scenarios.
@@ -106,24 +106,24 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 
 | Feature | Known Limitation |
 |---------|---------|
-| Contents: Datasets | Exactly one dataset should be present. Only datasets built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (*.rdl* files), and Excel workbooks. |
+| Contents: Semantic models | Exactly one semantic model should be present. Only semantic models built into Power BI Desktop (*.pbix* files) are allowed. Not supported: Semantic models from other template apps, cross-workspace semantic models, paginated reports (*.rdl* files), and Excel workbooks. |
 |Contents:  Reports   | A single template app can't include more than 20 reports. |
 |Contents: Dashboards | Real-time tiles aren't allowed. In other words, no support for push or streaming datasets. |
 |Contents: Dataflows | Not supported: Dataflows. |
 |Contents from files | Only *.pbix* files are allowed. Not supported: *.rdl* files (paginated reports) and Excel workbooks. |
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. Not supported: Live connections, on-premises data sources (personal and enterprise gateways aren't supported), real time (no support for push dataset), and composite models. |
-| Dataset: cross-workspace | No cross-workspace datasets are allowed. |
-| Query parameters | Not supported: Parameters of type *Any*, *Date*, or *Binary* type block refresh operation for dataset. |
+| Semantic model: cross-workspace | No cross-workspace semantic models are allowed. |
+| Query parameters | Not supported: Parameters of type *Any*, *Date*, or *Binary* type block refresh operation for semantic model. |
 | Incremental refresh | Template apps don't support incremental refresh. |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) aren't supported. |
 | Sovereign clouds | Template apps aren't available in sovereign clouds. |
 | Composite models | Composite models shouldn't be used in the app builder workspace. App installers can use composite models after installing the app. |
-| Large dataset storage format | Large dataset storage format isn't supported for template apps. |
+| Large semantic model storage format | Large semantic model storage format isn't supported for template apps. |
 
 ## Support
 
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
 
-## Next steps
+## Related content
 
 - [Create a template app](service-template-apps-create.md)

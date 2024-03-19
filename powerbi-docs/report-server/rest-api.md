@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 02/06/2024
 ---
 
 # Develop with the REST APIs for Power BI Report Server
@@ -43,15 +43,15 @@ A REST API request/response pair can be separated into five components:
 
 ## API documentation
 
-A modern REST API calls for modern API documentation. The REST API is built on the OpenAPI specification (a.k.a. the swagger specification) and documentation is available on [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Beyond documenting the API, SwaggerHub helps generate a client library in the language of choice – JavaScript, TypeScript, C#, Java, Python, Ruby, and more.
+A modern REST API calls for modern API documentation. The REST API is built on the OpenAPI specification (a.k.a. the swagger specification) and documentation is available on [Microsoft Learn](/rest/api/power-bi-report/).
 
 ## Testing API calls
 
 A tool for testing HTTP request/response messages is [Fiddler](https://www.telerik.com/fiddler). Fiddler is a free web debugging proxy that can intercept your REST requests, making it easy to diagnose the HTTP request/ response messages.
 
-## Next steps
+## Related content
 
-Review the available APIs over on [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
+Review the available APIs over on [Microsoft Learn](/rest/api/power-bi-report/).
 
 Samples are available on [GitHub](https://github.com/Microsoft/Reporting-Services). The sample includes an HTML5 app built on TypeScript, React, and webpack along with a PowerShell example.
 

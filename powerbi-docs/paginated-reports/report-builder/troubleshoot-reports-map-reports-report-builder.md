@@ -11,6 +11,8 @@ ms.reviewer: saurkumar
 ---
 # Troubleshoot reports: Map reports in a paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
 Issues with maps in a Power BI paginated report might occur when you add a map or map layer to your report, when you customize an existing map or map layer in your report, when you preview a map in a report, or when you publish a report with a map. Use this topic to help troubleshoot these issues.  
  
 ##  <a name="Spatial"></a> Spatial data issues
@@ -184,6 +186,6 @@ Issues with maps in a Power BI paginated report might occur when you add a map o
   
  To specify data that is related to spatial data that is not part of a report dataset, you must use the symbol # followed by a label that specifies the name of the data.  
   
-## Next steps
+## Related content
 
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)

@@ -1,6 +1,6 @@
 ---
 title: Add hyperlinks (URLs) to a table or matrix
-description: This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. Then, in Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes.
+description: This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a semantic model. Then, in Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
+This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a semantic model. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
 
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
@@ -26,7 +26,7 @@ You can also create hyperlinks in [text boxes in reports](service-add-hyperlink-
 
 You can format a field with URLs as hyperlinks in Power BI Desktop, but not in the Power BI service. You can also [format hyperlinks in Excel Power Pivot](#create-a-table-or-matrix-hyperlink-in-excel-power-pivot) before you import the workbook into Power BI.
 
-1. In Power BI Desktop, if a field with a hyperlink doesn't already exist in your dataset, add it as a [custom column](../transform-model/desktop-common-query-tasks.md).
+1. In Power BI Desktop, if a field with a hyperlink doesn't already exist in your semantic model, add it as a [custom column](../transform-model/desktop-common-query-tasks.md).
 
     > [!NOTE]
     > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
@@ -76,7 +76,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 ### Create a column with a hyperlink
 
-1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
+1. If a field with a hyperlink doesn't already exist in your semantic model, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
 1. In Data view, select the column that contains the URL. 
 
@@ -113,7 +113,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 ## Create a table or matrix hyperlink in Excel Power Pivot
 
-Another way to add hyperlinks to your Power BI tables and matrixes is to create the hyperlinks in the dataset before you import/connect to that dataset from Power BI. This example uses an Excel workbook.
+Another way to add hyperlinks to your Power BI tables and matrixes is to create the hyperlinks in the semantic model before you import/connect to that semantic model from Power BI. This example uses an Excel workbook.
 
 1. Open the workbook in Excel.
 2. Select the **PowerPivot** tab and then choose **Manage**.
@@ -148,10 +148,10 @@ URLs must start with one of the following:
 Q: Can I use a custom URL as a hyperlink in a table or matrix?    
 A: No. You can use a link icon. If you need custom text for your hyperlinks and your list of URLs is short, consider using a text box instead.
 
+## Related content
 
-## Next steps
-[Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
+- [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

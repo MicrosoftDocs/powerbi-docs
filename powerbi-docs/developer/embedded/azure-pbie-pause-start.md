@@ -76,7 +76,7 @@ You can also start or pause your capacity from the command line using:
   * [Suspend](/powershell/module/az.powerbiembedded/suspend-azpowerbiembeddedcapacity)
   * [Resume](/powershell/module/az.powerbiembedded/resume-azpowerbiembeddedcapacity)
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Scale your Power BI Embedded capacity](azure-pbie-scale-capacity.md).

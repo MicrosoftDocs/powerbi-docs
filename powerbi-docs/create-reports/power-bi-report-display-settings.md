@@ -23,7 +23,7 @@ The default display view is **Fit to page** and the default display size is **16
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/5tg-OXzxe2g]
 
 ## Where to find page view settings
 
@@ -69,14 +69,14 @@ The second set of Page view settings controls the positioning of objects on the 
 * Letter
 * Custom (height and width in pixels)
 
-## Next steps
+## Related content
 
-[Report view in Power BI Desktop](desktop-report-view.md)
+* [Report view in Power BI Desktop](desktop-report-view.md)
 
-[Change Page view and Page size settings in your own Power BI reports](../consumer/end-user-report-view.md)
+* [Change Page view and Page size settings in your own Power BI reports](../consumer/end-user-report-view.md)
 
-Read more about [reports in Power BI](../consumer/end-user-reports.md)
+* Read more about [reports in Power BI](../consumer/end-user-reports.md)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

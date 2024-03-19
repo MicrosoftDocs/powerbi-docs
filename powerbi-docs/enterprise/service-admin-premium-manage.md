@@ -19,7 +19,7 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 :::image type="content" source="media/service-admin-premium-manage/powerbi-premium-capacity-settings.png" alt-text="Screenshot that shows the Power B I Premium capacity settings screen.":::
 
-*Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) offerings. It's a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
+*Capacity* is at the heart of the Power BI Premium and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md) offerings. It's a set of resources reserved for exclusive use by your organization. Having a capacity enables you to publish dashboards, reports, and semantic models to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium-what-is.md).
 
 >[!NOTE]
 >You can get [Premium Per User (PPU)](service-premium-per-user-faq.yml) licenses for individuals, which provide many of the features and capabilities of a Premium capacity, and incorporate all functionality included with a Power BI Pro license.
@@ -107,10 +107,8 @@ Power BI admins and global administrators can change Power BI Premium capacity. 
 
     P SKUs can't be downgraded to EM SKUs. You can hover over any disabled options to see an explanation.
 
-
-
 > [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](../support/service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [Notifications](../admin/service-admin-premium-capacity-notifications.md) for more information.
 
 
 ### Manage user permissions
@@ -174,7 +172,7 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 * [They can designate the capacity as the default capacity for all new My workspaces **and** all existing My workspaces](#designate-a-default-capacity-for-all-existing-and-new-my-workspaces). In this case, all existing My workspaces will be reassigned to that capacity, and all new My workspaces will be assigned to that capacity by default upon creation.
 
 > [!NOTE]
-> My workspace owners can remove their My workspace from Premium capacity and reassign it to non-premium capacity. Reassigning My workspaces to non-premium capacity may cause data residency compliance issues. Power BI administrators can prevent such issues by turning off the [Users can reassign personal workspaces](../admin/service-admin-portal-workspace.md#users-can-reassign-personal-workspaces) tenant admin setting in the Admin portal. When this admin setting is off, My workspace owners can't reassign their My workspaces to other capacities.
+> My workspace owners can remove their My workspace from Premium capacity and reassign it to non-premium capacity. Reassigning My workspaces to non-premium capacity may cause data residency compliance issues. Power BI administrators can prevent such issues by turning off the [Users can reassign personal workspaces](/fabric/admin/portal-workspace#block-users-from-reassigning-personal-workspaces) tenant admin setting in the Admin portal. When this admin setting is off, My workspace owners can't reassign their My workspaces to other capacities.
 
 ### Designate a default capacity for all new My workspaces
 
@@ -197,7 +195,7 @@ A Power BI admin or capacity admin can designate a capacity as the default capac
 
 ## Power BI Report Server product key
 
-On the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Power BI service administrator role and if you have purchased a Power BI Premium SKU.
+If your organization has purchased a Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Power BI Premium** tab in the admin portal. To access the key you need to be a Global admin or a Fabric admin.
 
 ![Power BI Report Server key within Capacity settings](media/service-admin-premium-manage/pbirs-product-key.png)
 
@@ -207,8 +205,8 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 For more information, see [Install Power BI Report Server](../report-server/install-report-server.md).
 
-## Next steps
+## Related content
 
-[Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
+* [Managing Premium capacities](/power-bi/enterprise/service-premium-capacity-manage)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -13,7 +13,7 @@ ms.date: 01/18/2023
 
 # URL parameters in paginated reports in Power BI
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../includes/applies-yes-report-builder-yes-service-no-desktop.md)] 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
 You can send commands to paginated reports in Power BI by adding a parameter to a URL. For example, you might have viewed the report using a specific set of report parameter values. You encapsulate this information in the URL by using predefined URL access parameters. You further customize how Power BI processes the report by embedding parameters for rendering formats, or for the look and feel of the report toolbar. You then paste this URL directly into an email or Web page so others experience your report in the same manner in the browser. 
 
@@ -180,9 +180,9 @@ You can specify additional output parameters for the following export formats.
     - rdl:UseFormattedValues=true/false
 
 #### Open hyperlink in same browser window
-You can append `rdl:targetSameWindow=true` to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
+You can append `rdl:targetSameWindow=true` to the hyperlink URL in your report to make Power BI open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](report-design/add-hyperlink-url-report-builder.md).
 
-## Next steps
+## Related content
 
 - [Pass a report parameter in a URL for a paginated report in Power BI](parameters/pass-report-parameter-url.md)
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

@@ -13,7 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Define parameters in DAX for Analysis Services data source of a Power BI paginated report
 
-[!INCLUDE [applies-yes-report-builder-yes-service-no-desktop](../../includes/applies-yes-report-builder-yes-service-no-desktop.md)]
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 To parameterize a DAX query for a PBI dataset of a Power BI paginated report, you must add a query parameter to the query. In the DAX query designer, you can add a query parameter in both Design mode and Query mode by specifying a filter. After you define the query with a query parameter, Reporting Services automatically creates a report parameter and a dataset to provide the list of valid values. This enables a user to specify a value that is passed directly to the query.  
  
@@ -69,7 +69,8 @@ To parameterize a DAX query for a PBI dataset of a Power BI paginated report, yo
   
      To view the dataset that provides available values for the report parameter, right-click any blank area in the Report Data pane, and then click **Show Hidden Datasets**. The Report Data pane displays all datasets in the report.  
   
-## Next steps  
- [Analysis Services MDX Query Designer User Interface](/sql/reporting-services/report-data/analysis-services-mdx-query-designer-user-interface)  
+## Related content
+
+- [Analysis Services MDX Query Designer User Interface](/sql/reporting-services/report-data/analysis-services-mdx-query-designer-user-interface)  
   
   

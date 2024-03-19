@@ -84,6 +84,6 @@ export interface IDownloadService {
 }
 ```
 
-## Next steps
+## Related content
 
 [Power BI custom visual API](visual-api.md)

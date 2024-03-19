@@ -1,13 +1,13 @@
 ---
 title: "Auto date/time in Power BI Desktop"
 description: Learn how to use the auto date/time functionality to give you more options for data filtering in Power BI Desktop.
-author: kfollis
-ms.author: kfollis
-ms.reviewer: asaxton
+author: davidiseminger
+ms.author: davidi
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 10/27/2023
 ---
 
 # Apply auto date/time in Power BI Desktop
@@ -100,11 +100,7 @@ In Power BI Desktop, you select **File > Options and settings > Options**, and t
    The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.
 :::image-end:::
 
-## Considerations and limitations
-
-While you're using Analysis Services data sources, having relationships defined on the **DateTime** columns might not behave as expected. Analysis Services only uses _DateTime_ data types; _Date_ and _Time_ data types are Power BI formatting constructs implemented on top of Analysis Services. Any model-dependent objects will still appear as _DateTime_ to Analysis Services (such as relationships, groups, and so on). As such, if a user selects **Date** from the **Modeling** tab for such columns, they still don't register as being the same date, because the time portion of the data is still being considered by Analysis Services. To correct the behavior, the column data types should be updated in the **Power Query Editor** to remove the _Time_ portion from the imported data, so when Analysis Services is handling the data, the values will appear the same.
-
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

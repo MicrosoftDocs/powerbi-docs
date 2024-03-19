@@ -29,10 +29,10 @@ The datamart details page enables you to perform actions on the datamart. The fo
 |--|--|
 | **Manage permissions** | Opens the manage datamart permissions page. | **File** > **Manage permissions** |
 | **Settings** | Opens the datamart settings page. | **File** > **Settings** |
-| **Refresh now** | Launches a refresh of the dataset. | **Refresh** > **Refresh now** |
-| **Schedule refresh** | Opens the dataset settings page where you can set scheduled refresh. | **Refresh** > **Schedule refresh** |
+| **Refresh now** | Launches a refresh of the semantic model. | **Refresh** > **Refresh now** |
+| **Schedule refresh** | Opens the semantic model settings page where you can set scheduled refresh. | **Refresh** > **Schedule refresh** |
 | **Refresh history** | Opens Refresh history window where you see the time, duration, and status of each refresh. You can download the history as a *.csv* file. | **Refresh** > **Refresh history** |
-| **Share** | Opens the **Share datamart** dialog. Sharing a datamart allows recipients to build content based on the underlying dataset and query the corresponding SQL endpoint. | **Share**, or use the [Share this data](#share-this-data) tile. |
+| **Share** | Opens the **Share datamart** dialog. Sharing a datamart allows recipients to build content based on the underlying semantic model and query the corresponding SQL endpoint. | **Share**, or use the [Share this data](#share-this-data) tile. |
 | **Create a report from scratch** | Opens the report editing canvas where you can create a new report based on the datamart. | **Create a report** > **From scratch**, or use the [Visualize this data](#visualize-this-data) tile. |
 | **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) using this datamart. | **Analyze in Excel** |
 | **Open lineage view** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the datamart. | **Lineage** > **Open lineage view** |
@@ -54,12 +54,12 @@ The datamart details section shows:
 
 ## Explore related reports
 
-The **See what already exists** section shows you reports that are built on top of the datamart's auto-generated dataset. You can create a copy of a report by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
+The **See what already exists** section shows you reports that are built on top of the datamart's auto-generated semantic model. You can create a copy of a report by selecting the line the item is on and clicking the **Save a copy** icon that appears. This section also shows you usage metrics for the related items.
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-explore-related-reports.png" alt-text="Screenshot of datamart explore related reports section on datamart details page." lightbox="media/service-datamart-details-page/datamart-details-page-explore-related-reports.png":::
 
 > [!NOTE]
-> Reports build on top of other datasets created from the datamart aren't shown in this section.
+> Reports build on top of other semantic models created from the datamart aren't shown in this section.
 
 The columns in the list of related reports are:
 
@@ -74,25 +74,25 @@ The columns in the list of related reports are:
 
 ## Visualize this data
 
-To create a report based on the dataset, select the **Create a report** button on this tile and choose the desired option.
+To create a report based on the semantic model, select the **Create a report** button on this tile and choose the desired option.
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-visualize-data.png" alt-text="Screenshot of datamart related section on datamart details page.":::
 
-* The **Create from scratch** option opens the report editing canvas to a new report built on the dataset.
+* The **Create from scratch** option opens the report editing canvas to a new report built on the semantic model.
 
-  When you save your new report, it's saved in the workspace that contains the dataset, if you have write permissions on that workspace.
+  When you save your new report, it's saved in the workspace that contains the semantic model, if you have write permissions on that workspace.
 
-  If you don't have write permissions on the workspace, the report is saved in My workspace. If you're a free user and the dataset resides in a Premium-capacity workspace, the report is saved in My workspace.
+  If you don't have write permissions on the workspace, the report is saved in My workspace. If you're a free user and the semantic model resides in a Premium-capacity workspace, the report is saved in My workspace.
 
 * The **Paginated report** option opens the paginated report online editor. For information about creating a paginated report using the online editor, see [Create exportable paginated reports in the Power BI service](../paginated-reports/web-authoring/paginated-formatted-table.md).
 
 ## Share this data
 
-You can share the datamart with other users in your organization. Selecting the **Share datamart** button opens the [Share datamart dialog](service-datasets-share.md). People you share the datamart with can build content based on the underlying dataset and query the corresponding SQL endpoint.
+You can share the datamart with other users in your organization. Selecting the **Share datamart** button opens the [Share datamart dialog](service-datasets-share.md). People you share the datamart with can build content based on the underlying semantic model and query the corresponding SQL endpoint.
 
 :::image type="content" source="media/service-datamart-details-page/datamart-details-page-share-datamart.png" alt-text="Screenshot of datamart share this data section on datamart details page.":::
   
-## Next steps
+## Related content
 
 * [Create exportable paginated reports in the Power BI service](../paginated-reports/web-authoring/paginated-formatted-table.md)
 * [Endorse your content](../collaborate-share/service-endorse-content.md)

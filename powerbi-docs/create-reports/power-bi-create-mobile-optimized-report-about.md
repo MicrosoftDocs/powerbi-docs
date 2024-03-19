@@ -3,12 +3,10 @@ title: About mobile-optimized Power BI reports
 description: Learn how to create, format, and show Power BI report views that are optimized for mobile device users.
 author: paulinbar
 ms.author: painbar
-ms.reviewer: ''
-ms.custom: contperf-fy22q3
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/11/2022
+ms.date: 09/12/2023
 LocalizationGroup: Create reports
 ---
 # About mobile-optimized Power BI reports
@@ -31,7 +29,7 @@ In the Power BI mobile app, reports that have mobile-optimized pages are indicat
 ## Mobile authoring features
 
 Power BI provides several features to help you create mobile-optimized versions of your reports:
-- A **mobile layout view** where you create mobile-optimized reports by dragging and dropping visuals onto a phone emulator canvas.
+- A **mobile layout view** where you create mobile-optimized reports by dragging and dropping visuals onto an interactive phone emulator canvas. The interactive canvas enables you to test out how buttons, slicers, and visuals will behave in your mobile-optimized report while you're designing it.
 - A **formatting pane** (preview) that enables you to precisely format your report visuals by changing their format settings.
 - **Visuals and slicers** that can be optimized for use on small, mobile screens.
 
@@ -45,7 +43,8 @@ If you created your mobile-optimized report in Power BI Desktop, all you have to
 
 If you created the mobile-optimized report in the Power BI service, just save the report.
 
-## Next steps
+## Related content
+
 * [Start creating a mobile optimized report in mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).

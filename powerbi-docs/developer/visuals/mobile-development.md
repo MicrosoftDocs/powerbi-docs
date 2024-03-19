@@ -30,7 +30,7 @@ The following requirements are essential for developing mobile-friendly visuals:
 
   Mobile devices should have the same interactive functionality as desktop devices. All events handled on desktop browsers must be supported, or have comparable event handlers, on mobile devices.
   
-  For example, if a desktop visual supports multi-selection using the **Ctrl** key, consider adding a similar event handler for mobile devices.
+  For example, if a desktop visual supports multi-selection using the <kbd>Ctrl</kbd> key, consider adding a similar event handler for mobile devices.
 
   The following table provides a list of corresponding events on mobile devices.
 
@@ -74,7 +74,7 @@ The following functions are optional. The optional functions can be used to crea
 
 Power BI visuals must render on all devices that support Power BI apps. For more information, see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Develop a Power BI circle card visual](./develop-circle-card.md)

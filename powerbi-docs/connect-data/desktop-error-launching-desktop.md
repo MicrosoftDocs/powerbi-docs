@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/09/2023
+ms.date: 11/10/2023
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot Power BI Desktop startup
@@ -42,12 +42,14 @@ Users who installed and are running earlier versions of the Power BI on-premises
 
 ## Issues connecting to SQL Server
 
-When you attempt to connect to a SQL Server database, you might see a message similar to the following error:
+If you attempt to connect to a SQL Server database using a different account than the account you have logged-in on your computer, using _Windows > Use alternate credentials_, you might see a message similar to the following error:
 
 **An error happened while reading data from the provider:<br>
 'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies. Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'**
 
-**Solution:** You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection. Opening Power BI Desktop as an administrator and establishing the connection registers the required DLLs. After that, you no longer have to open Power BI Desktop as an administrator. However, if you're connecting to SQL server with alternate Windows credentials, you have to open Power BI Desktop as an administrator every time you connect.
+**Cause:** This is due to the way your local system and accounts are configured by your IT department. If the alternate Windows account you're trying to use is not allowed access to the system, then it is blocked from registering the needed DLLs for Power BI Desktop to establish the connection. 
+
+**Solution:** You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection, or if you ask your system administrators to provide the alternate windows account the correct permissions for your computer. Opening Power BI Desktop as an administrator and establishing the connection registers the required DLLs, after that, you no longer have to open Power BI Desktop as an administrator for this connection. However, if you choose to connect to SQL server with yet another different alternate Windows credentials, you have to open Power BI Desktop as an administrator every time you connect.
 
 ## "Unable to sign in" issues
 
@@ -114,7 +116,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
   |%localappdata%\Temp\ | msedge_installer.log|
   |%localappdata%\Temp\ | MicrosoftEdgeUpdate.log|
 
-- **Event Viewer logs.** Start Event Viewer from the **Start** menu. In Event Viewer, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right-click **Operational** in the left pane and choose **Save All Events As**. Store the file somewhere you can retrieve it.
+- **Event Viewer logs.** Start Event Viewer from the **Start** menu. In Event Viewer, go to **Applications and Services log** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**. Right-click **Operational** in the left pane and choose **Save All Events As**. Store the file somewhere you can retrieve it. Do the same for **Windows Logs** > **Application**.
 
   :::image type="content" source="media/desktop-error-launching-desktop/eventviewer-save-all-events-as.png" alt-text="Screenshot of Event viewer showing the context menu with Save All Events As highlighted.":::
 
@@ -186,7 +188,7 @@ If you still have issues, submit a support incident to [Power BI support](https:
 
 ## Data connection time-outs
 
-When you try to create a new connection or connect to an existing Power BI dataset, Power BI Desktop might time out without establishing the connection. The connection spinner might continue to turn, but the connection never completes.
+When you try to create a new connection or connect to an existing Power BI semantic model, Power BI Desktop might time out without establishing the connection. The connection spinner might continue to turn, but the connection never completes.
 
 This situation can happen if your machine has a security product such as Digital Guardian or other security products installed. In some cases, the installed security product can interfere with outgoing network connection request calls, causing the connection attempt to time out or fail.
 
@@ -200,6 +202,6 @@ If your issue isn't related to an on-premises data gateway, or if the resolution
 
 Whenever you experience issues with Power BI Desktop, it's helpful to turn on tracing and gather log files. Log files can help isolate and identify the issue. To turn on tracing in Power BI Desktop, choose **File** > **Options and settings** > **Options**, select **Diagnostics**, and then select **Enable tracing**. Power BI Desktop must be running to set this option, but it's helpful for any future issues associated with opening Power BI Desktop.
 
-## Next steps
+## Related content
 
 * [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)

@@ -34,13 +34,13 @@ In most cases, the common procedures to use in Power BI are **Enter** to select 
 
 ## Ribbon navigation
 
-Press **Alt + Windows** to see the little boxes called *KeyTips* over each command available in the current view of the ribbon. Then you can press the letter shown in the *KeyTip* that hovers over the command you want to use.
+Press **Alt** to see the little boxes called *KeyTips* over each command available in the current view of the ribbon. Then you can press the letter shown in the *KeyTip* that hovers over the command you want to use.
 
-For example, in the following image, the **Alt + Windows** keys have been pressed to display KeyTips, which contain the letters for accessible commands. Pressing **M** opens the **Modeling** tab on the ribbon.
+For example, in the following image, the **Alt** key has been pressed to display KeyTips, which contain the letters for accessible commands. Pressing **M** opens the **Modeling** tab on the ribbon.
 
 :::image type="content" source="media/desktop-accessibility/accessibility-create-reports-01.png" alt-text="Screenshot of Power BI Desktop showing KeyTips.":::
 
-Depending on which letter you press, you might see other KeyTips. For example, if the **Home** tab is active and you press **V**, the **View** tab is displayed along with the KeyTips for the groups in that **View** ribbon tab. You can continue pressing letters displayed in KeyTips until you press the letter of the specific command you want to use. To move to the previous set of KeyTips, press **Esc**. To cancel the action you’re taking and hide the KeyTips, press the **Alt + Windows** keys.
+Depending on which letter you press, you might see other KeyTips. For example, if the **Home** tab is active and you press **V**, the **View** tab is displayed along with the KeyTips for the groups in that **View** ribbon tab. You can continue pressing letters displayed in KeyTips until you press the letter of the specific command you want to use. To move to the previous set of KeyTips, press **Esc**. To cancel the action you’re taking and hide the KeyTips, press the **Alt** key.
 
 ## Visual pane navigation
 
@@ -162,7 +162,7 @@ Power BI Desktop automatically detects which high-contrast theme Windows uses an
 
 :::image type="content" source="media/desktop-accessibility/accessibility-05b-2.png" alt-text="Screenshot of the high contrast settings on the Power BI service.":::
 
-## Next steps
+## Related content
 
 * [Overview of accessibility in Power BI](desktop-accessibility-overview.md)
 * [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md)

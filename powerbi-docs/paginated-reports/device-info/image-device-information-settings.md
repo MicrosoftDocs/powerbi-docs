@@ -9,6 +9,9 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Image device information settings for Power BI paginated reports
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
   The following table lists the device information settings for rendering in an image format in Power BI paginated reports.  
 
 ## Settings 
@@ -31,7 +34,7 @@ ms.author: maggies
 |**PrintDpiY**|The vertical resolution of the output image. The default value is **300**. Applies to the Enhanced MetaFile (**EMF**) output format.|  
 |**StartPage**|The first page of the report to render. A value of **0** indicates that all pages are rendered. The default value is **1**.|  
   
-## Next steps
+## Related content
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
 

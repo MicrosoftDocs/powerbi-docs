@@ -27,7 +27,7 @@ Familiarity with Power BI will be beneficial, but not essential. We'll introduce
 After you complete the course, you'll know how to:
 
 > [!div class="checklist"]
-> - Acquire access using Azure AD apps and tokens
+> - Acquire access using Microsoft Entra apps and tokens
 > - Work with the Power BI REST API
 > - Embed Power BI content in your apps
 > - Integrate Power BI content in your apps using the Power BI JavaScript API
@@ -116,7 +116,7 @@ When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\Pow
 
 Use [this link](https://aka.ms/deviad-instructor) to download the instructor kit (.zip) locally to your PC. You'll find classroom setup notes in slide one of the PowerPoint slide deck.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

@@ -1,8 +1,8 @@
 ---
 title: Add the Power BI app to Microsoft Teams
 description: Learn how to add the Power BI app to Microsoft Teams. The Power BI app brings the entire basic Power BI service experience into Microsoft Teams.
-author: maggiesMSFT
-ms.author: maggies
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: lukaszp
 featuredvideoid: ''
 ms.service: powerbi
@@ -36,8 +36,8 @@ There are a few features that you can access only in the Power BI service in a b
 Ensure the following elements are in place to install the Power BI app in Microsoft Teams:
 
 - Power BI app is enabled in the Teams Admin center apps list.
-- Your users with a Power BI (Free) license can access personal analytics. They can use the built-in Teams analytics report and create reports in their My workspace.
-- Your users with Power BI (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md).
+- Your users with a Fabric (Free) license can access personal analytics. They can use the built-in Teams analytics report and create reports in their My workspace.
+- Your users with Fabric (Free) licenses can also access content that's shared with them from a workspace that's part of a [Power BI Premium capacity (P SKU)](../enterprise/service-premium-what-is.md) or [Fabric F64 or greater capacity](/fabric/enterprise/licenses#capacity-and-skus).
 - Your users with a Power BI Pro or Premium Per User (PPU) license can share content with others or build content in workspaces.
 - Users have signed in within the Power BI app for Teams or the Power BI service and activated their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
@@ -71,6 +71,7 @@ The Power BI app in Microsoft Teams also features a hub for training. Select **L
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of the Learning center in the Power BI app in Microsoft Teams. The Learn tab is selected in Teams and the Power BI navigation pane.":::
 
 The Power BI app in Microsoft Teams helps you multi-task by remembering where you navigated to for one hour. When you leave the app and return within one hour, the app *automatically takes you back* to where you were working by navigating to: 
+
 - Items you visited, such as the report page you were on and the filters you applied.
 - Places you visited, such as Home, Create, Data hub, Workspaces, and so on.
 
@@ -108,7 +109,7 @@ With the search experience in Teams, you can find recent reports, dashboards, an
     The first time you use this capability, you need to sign in.
 
 1. If you haven't installed the Power BI app yet, Teams asks you to add it.
- 
+
     :::image type="content" source="media/service-microsoft-teams-app/power-bi-search-teams-apps.png" alt-text="Screenshot of the Teams page showing the Power BI icon and the tutorial video for Power BI. The Add button is selected.":::
 
 ## Increase Power BI app adoption in Teams
@@ -119,7 +120,7 @@ Are you a leader in your organization? You can encourage individuals and teams t
 
 ### Install the Power BI app for Teams automatically
 
-Are you a Power BI admin or a Teams admin? By default, the Power BI app for Teams is installed automatically in some circumstances. See [Install the Power BI app for Teams automatically](../admin/service-admin-portal-export-sharing.md#install-the-power-bi-app-for-teams-automatically) for details. To encourage the users in your organization to use the app more regularly, pin the app proactively in Teams through an app setup policy. It's useful to include Power BI as a pinned app, so users in Teams can easily find and use data. After November 1, 2021, installation occurs automatically for users who visit the Power BI service and meet the criteria.
+Are you a Power BI admin or a Teams admin? By default, the Power BI app for Teams is installed automatically in some circumstances. See [Install the Power BI app for Teams automatically](/fabric/admin/service-admin-portal-export-sharing#install-the-power-bi-app-for-teams-automatically) for details. To encourage the users in your organization to use the app more regularly, pin the app proactively in Teams through an app setup policy. It's useful to include Power BI as a pinned app, so users in Teams can easily find and use data. After November 1, 2021, installation occurs automatically for users who visit the Power BI service and meet the criteria.
 
 Power BI end users might see a notification in the Power BI service notification pane that says the Microsoft Teams app was automatically installed.
 
@@ -128,16 +129,18 @@ Power BI end users might see a notification in the Power BI service notification
 ## Known issues and limitations
 
 - Some options in the Power BI service aren't available in Microsoft Teams. These options include:
-    - Notifications.
-    - Downloading apps such as Power BI Desktop and Power BI Paginated Report Builder.
-    - Sending feedback.
-    - Settings such as managing personal storage and accessing the admin portal.
+
+  - Notifications.
+  - Downloading apps such as Power BI Desktop and Power BI Paginated Report Builder.
+  - Sending feedback.
+  - Settings such as managing personal storage and accessing the admin portal.
+
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
 - The Power BI app for Microsoft Teams is available to Commercial Cloud and US Government Community Cloud (GCC) customers.
 - Search experience isn't available in US GCC.
 - To automatically take you back when navigating back to the app, your navigation history is saved approximately every 15 seconds. The history is stored locally on your computer or in your web browser window. If you navigate to a place and filter, then quickly switch to another part of Teams, such as to Chat, Calendar, or Teams, your navigation may not be captured. If you change computers or start a new browser window, the history isn't available.  
 
-## Next steps
+## Related content
 
 - [Enable remote work in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 

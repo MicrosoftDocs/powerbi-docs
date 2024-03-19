@@ -45,7 +45,7 @@ If you don't have a gateway installed, [install an on-premises data gateway](/da
 
    If you selected **OAuth2** authentication method:
    - Any query that runs longer than the OAuth token expiration policy may fail.
-   - Cross-tenant Azure Active Directory (Azure AD) accounts aren't supported.
+   - Cross-tenant Microsoft Entra accounts aren't supported.
    
    If you selected **Windows** authentication method, make sure that account has access on the machine. If you're not sure, make sure to add *NT-AUTHORITY\\Authenticated Users (S-1-5-11)* to the local machine **Users** group.
 
@@ -53,21 +53,21 @@ If you don't have a gateway installed, [install an on-premises data gateway](/da
 
     :::image type="content" source="media/service-gateway-data-sources/single-sign-on.png" alt-text="Screenshot of Single sign-on settings for data sources.":::
 
-   Depending on your organization settings, for DirectQuery-based reports, you can configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Azure AD for DirectQuery queries**. You can configure **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
+   Depending on your organization settings, for DirectQuery-based reports, you can configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Microsoft Entra ID for DirectQuery queries**. You can configure **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
 
    If you use **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery-based report, the report uses the credentials of the user that signs in to the Power BI service. A refresh-based report uses the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method you choose.
 
-   When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, the report uses the user that's mapped to the Azure AD user that signs in to the Power BI service. A refresh-based report uses the dataset owner's security context.
+   When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, the report uses the user that's mapped to the Microsoft Entra user that signs in to the Power BI service. A refresh-based report uses the dataset owner's security context.
 
    For more information about **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries**, see [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md).
 
-   If you use **Use SSO via Azure AD for DirectQuery queries** and use this data source for a DirectQuery-based report, the report uses the Azure AD token of the user who signs into the Power BI service. A refresh-based report uses the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method you choose. The **Use SSO via Azure AD for DirectQuery queries** option is available only if the tenant admin allows Azure AD SSO via the on-premises data gateway, and for the following data sources:
+   If you use **Use SSO via Microsoft Entra ID for DirectQuery queries** and use this data source for a DirectQuery-based report, the report uses the Microsoft Entra token of the user who signs into the Power BI service. A refresh-based report uses the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method you choose. The **Use SSO via Microsoft Entra ID for DirectQuery queries** option is available only if the tenant admin allows Microsoft Entra SSO via the on-premises data gateway, and for the following data sources:
 
    * SQL Server
    * Azure Data Explorer
    * Snowflake
 
-   For more information about **Use SSO via Azure AD for DirectQuery queries**, see [Azure AD single sign-on (SSO) for Gateway](../admin/service-admin-portal-integration.md#azure-ad-single-sign-on-sso-for-gateway).
+   For more information about **Use SSO via Microsoft Entra ID for DirectQuery queries**, see [Microsoft Entra single sign-on (SSO) for Gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway).
 
     >[!NOTE]
     > SSO for Import queries is available only for the SSO data sources that use [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
@@ -138,7 +138,7 @@ When you add a data source to the gateway, you must provide credentials for that
 
 For information about which data sources the on-premises data gateway supports, see [Power BI data sources](power-bi-data-sources.md).
 
-## Next steps
+## Related content
 
 * [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)
 * [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)

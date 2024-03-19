@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/05/2023
+ms.date: 02/25/2024
 ---
 
 # Troubleshoot the Power BI add-in for PowerPoint
@@ -80,13 +80,21 @@ Open **File Explorer**, right-click **This PC**, and choose **Properties**. In t
 
 ## Adding a registry key
 
-If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can create the following registry key to enable you to use the add-in.
+If you have a Microsoft 365 Office subscription, and the Office build on your device is 16.0.13530.20424 or later but earlier than 16.0.14326.xxxxx, someone with admin permissions on your device can use the following steps to create a registry key that enables you to use the add-in.
 
-```HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\WEF\Win32WebView2```
+1. Open the Registry Editor by typing *regedit* in the Start menu search bar and selecting the Registry Editor app.
 
-The key's value should be set to:
+1. Navigate to the following registry key: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Wef`
 
-```dword:00000001```
+1. Right-click on the `Wef` folder and select `New > DWORD (32-bit) Value`.
+
+1. Name the new value `Win32WebView2`.
+
+1. Double-click on the new value and set its value data to `1`.
+
+1. Close the Registry Editor.
+
+1. Restart your Office application.
 
 ## How do I know if my presentation is protected by Windows Information Protection?
 
@@ -103,7 +111,7 @@ If you get the **Cannot run Power BI** error even though you're sure that WebVie
 
 * [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
 
-## Next Steps
+## Related content
 
 * [About storytelling with Power BI in PowerPoint](./service-power-bi-powerpoint-add-in-about.md)
 * [Add live Power BI data to PowerPoint](./service-power-bi-powerpoint-add-in-install.md)

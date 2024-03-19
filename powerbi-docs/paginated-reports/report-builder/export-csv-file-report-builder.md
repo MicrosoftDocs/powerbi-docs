@@ -13,6 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Export Power BI paginated report to a CSV file (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   The Comma-Separated Value (CSV) rendering extension renders paginated reports as a flattened representation of data from a report in a standardized, plain-text format that is easily readable and exchangeable with many applications.  
   
@@ -139,11 +140,12 @@ ms.reviewer: saurkumar
  You can change some default settings for this renderer, including which mode to render in, which characters to use as delimiters and which characters to use as the text qualifier default string, by changing the device information settings. For more information, see [CSV device information settings](../device-info/csv-device-information-settings.md).  
   
   
-## Next steps  
- [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
- [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
- [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
- [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+- [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+- [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+- [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
   
   

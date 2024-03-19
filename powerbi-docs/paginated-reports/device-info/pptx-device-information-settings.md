@@ -9,6 +9,9 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # PPTX device information settings for Power BI paginated reports
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
   The following table lists the device information settings for rendering Power BI paginated reports in the PPTX format.  
 
 ## Settings 
@@ -29,7 +32,7 @@ ms.author: maggies
 |**StartPage**|The first page of the report to render. A value of **0** indicates that all pages are rendered. The default value is **1**.|  
 |**UseReportPageSize**|If UseReportPageSize =**false** then the default slide size is PowerPoint's default of 13.333" x 7.5" (16:9 aspect ratio). If UseReportPageSize =true, then the default slide size is the define page size of the report.<br /><br /> The default value is **false**<br /><br /> Note, the PageWidth and PageHeight settings override the default width and height.|  
   
-## Next steps
+## Related content
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
 

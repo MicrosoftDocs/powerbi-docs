@@ -28,7 +28,7 @@ These benefits can be grouped into the following categories:
 
 <!--    Watch this video to see it in action.
 
-    > [!VIDEO <iframe width="560" height="315" src="https://www.microsoft.com/videoplayer/embed/RWyUE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyUE]
 -->
 * **Improved look, feel, and organization** - Icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 
@@ -44,7 +44,7 @@ These benefits can be grouped into the following categories:
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-06.png" alt-text="Screenshot showing the new single-line ribbon.":::
 
-* **Keytips to navigate and select buttons** - To help navigate the ribbon, you can press **Alt + Windows Key** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
+* **Keytips to navigate and select buttons** - To help navigate the ribbon, you can press **Alt** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-07.png" alt-text="Screenshot showing the new keytips on the ribbon." lightbox="media/desktop-ribbon/desktop-ribbon-07.png":::
 
@@ -60,7 +60,7 @@ In addition to those visible changes, an updated ribbon also allows for future u
 * The addition *black* and *dark gray* Office themes to Power BI Desktop
 * An improved accessibility
 
-## Next steps
+## Related content
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 

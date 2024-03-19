@@ -23,7 +23,7 @@ Watch Will Thompson create a text box and add a hyperlink to it.
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s]
 
 For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlinks to a table](power-bi-hyperlinks-in-tables.md). For information on adding text boxes to your dashboard, see [Add images, videos, and more to your dashboard](service-dashboard-add-widget.md).
 
@@ -61,8 +61,8 @@ For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlin
 
    Power BI Desktop removes the hyperlink but leaves the text.
 
-## Next steps
+## Related content
 
-[Add text boxes, shapes, and smart narrative visuals to Power BI reports](power-bi-reports-add-text-and-shapes.md)
+- [Add text boxes, shapes, and smart narrative visuals to Power BI reports](power-bi-reports-add-text-and-shapes.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/).

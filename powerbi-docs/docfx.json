@@ -51,8 +51,11 @@
       "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi",
       "search.appverid": "met150",
       "search.app": [
-        "Capaedac-PowerBI"
-      ]
+        "fabric-powerbi-docs",
+        "capaedac-PowerBI",
+        "powerbi",
+        "powerbipremium-docs",
+        "powerbipro-docs"]
     },
     "fileMetadata": {
           "featureFlags": {

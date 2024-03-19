@@ -4,14 +4,14 @@ description: Inspire action and insight with presentation of analytical data aga
 ms.date: 02/17/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: saurkumar
 ---
 # Plan for adding a map to a Power BI paginated report (Power BI Report Builder)
+
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
 Good reports present information that leads to actions or insights. To present analytical data such as sales totals or demographics against a geographic background, you can add a map to your Power BI paginated report. A map can contain multiple layers, where each layer displays map elements that are defined by a specific type of spatial data: points that represent locations, lines that represent routes, or polygons that represent areas. You can associate your analytical data with map elements on each layer.  
 
@@ -135,11 +135,11 @@ Good reports present information that leads to actions or insights. To present a
   
 - When the source of spatial data is located on your computer, map elements are always embedded in the report definition. This includes spatial data from the Map Gallery that have been installed locally.  
 
-## Next steps
+## Related content
 
- [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs)   
- [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder.md)   
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
+- [Customize the Data and Display of a Map or Map Layer &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs)   
+- [Tutorial: Map Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-map-report-report-builder)   
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)   
+- [Troubleshoot Reports: Map Reports &#40;Power BI Report Builder&#41;](troubleshoot-reports-map-reports-report-builder.md)  
   
   

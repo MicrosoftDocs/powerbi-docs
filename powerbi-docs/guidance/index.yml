@@ -136,7 +136,7 @@ landingContent:
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
           - text: Deployment pipelines best practices
-            url: ../create-reports/deployment-pipelines-best-practices.md
+            url: /fabric/cicd/best-practices-cicd
           - text: Access the Power BI activity log
             url: admin-activity-log.md
 
@@ -165,30 +165,30 @@ landingContent:
             url: migrate-azure-analysis-services-to-powerbi-premium.md
 
   # Card (optional)
-  - title: Adoption roadmap
+  - title: Fabric adoption roadmap
     linkLists:
       - linkListType: concept
         links:
-          - text: Overview
-            url: powerbi-adoption-roadmap-overview.md
+          - text: Introduction
+            url: fabric-adoption-roadmap.md
           - text: Data culture
-            url: powerbi-adoption-roadmap-data-culture.md
+            url: fabric-adoption-roadmap-data-culture.md
           - text: Executive sponsorship
-            url: powerbi-adoption-roadmap-executive-sponsorship.md
+            url: fabric-adoption-roadmap-executive-sponsorship.md
           - text: Content ownership
-            url: powerbi-adoption-roadmap-content-ownership-and-management.md
+            url: fabric-adoption-roadmap-content-ownership-and-management.md
           - text: Content delivery scope
-            url: powerbi-adoption-roadmap-content-delivery-scope.md
+            url: fabric-adoption-roadmap-content-delivery-scope.md
           - text: Center of Excellence
-            url: powerbi-adoption-roadmap-center-of-excellence.md
+            url: fabric-adoption-roadmap-center-of-excellence.md
           - text: Governance
-            url: powerbi-adoption-roadmap-governance.md
+            url: fabric-adoption-roadmap-governance.md
           - text: Mentoring and user enablement
-            url: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+            url: fabric-adoption-roadmap-mentoring-and-user-enablement.md
           - text: Community of practice
-            url: powerbi-adoption-roadmap-community-of-practice.md
+            url: fabric-adoption-roadmap-community-of-practice.md
           - text: User support
-            url: powerbi-adoption-roadmap-user-support.md
+            url: fabric-adoption-roadmap-user-support.md
 
   # Card (optional)
   - title: Implementation planning
@@ -197,16 +197,22 @@ landingContent:
         links:
           - text: Introduction
             url: powerbi-implementation-planning-introduction.md
-          - text: Usage scenarios
-            url: powerbi-implementation-planning-usage-scenario-overview.md
+          - text: BI strategy
+            url: powerbi-implementation-planning-bi-strategy-overview.md
           - text: Tenant setup
             url: powerbi-implementation-planning-tenant-setup.md
+          - text: User tools and devices
+            url: powerbi-implementation-planning-user-tools-devices.md
           - text: Workspaces
             url: powerbi-implementation-planning-workspaces-overview.md
           - text: Security
             url: powerbi-implementation-planning-security-overview.md
           - text: Info protection and DLP
             url: powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md
+          - text: Auditing and monitoring
+            url: powerbi-implementation-planning-auditing-monitoring-overview.md
+          - text: Usage scenarios
+            url: powerbi-implementation-planning-usage-scenario-overview.md
 
   # Card (optional)
   - title: Center of Excellence (COE)
@@ -219,3 +225,5 @@ landingContent:
             url: center-of-excellence-establish.md
           - text: BI solution architecture in the COE
             url: center-of-excellence-business-intelligence-solution-architecture.md
+          - text: Fabric adoption roadmap
+            url: fabric-adoption-roadmap-center-of-excellence.md

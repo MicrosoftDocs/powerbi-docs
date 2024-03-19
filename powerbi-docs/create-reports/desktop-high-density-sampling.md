@@ -44,9 +44,9 @@ For any visualization, the following limitations apply:
 The maximum number of data limits is higher for the following visual types, which are *exceptions* to the 3,500 data point limit:
 
 * **150,000** data points maximum for R visuals.
-* **30,000** data points for Power BI visuals.
-* **10,000** data points for scatter charts (scatter charts default to 3,500).
-* **3,500** for all other visuals.
+* **30,000** data points for Azure Map visuals.
+* **10,000** data points for some scatter chart configurations (scatter charts default to 3500).
+* **3,500** for all other visuals using high-density sampling. Some other visuals may visualize more data, but they will not use sampling. 
 
 These parameters ensure that visuals in Power BI Desktop render quickly, are responsive to interaction with users, and don't result in undue computational overhead on the computer rendering the visual.
 
@@ -93,6 +93,6 @@ The algorithm for high-density line sampling is an important improvement to Powe
 * The **Show items with no data** setting isn't supported with the algorithm.
 * The algorithm isn't supported when using a live connection to a model hosted in SQL Server Analysis Services version 2016 or earlier. It's supported in models hosted in **Power BI** or Azure Analysis Services.
 
-## Next steps
+## Related content
 
 * [High Density Sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.date: 12/14/2022
-ms.custom: contperf-fy21q3
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 # Give users access to workspaces in Power BI
@@ -32,7 +32,8 @@ After you [create a workspace](service-create-the-new-workspaces.md) in Power BI
 
 9. Select **Add** > **Close**.
 
-## Next steps
+## Related content
+
 * Read about [the workspace experience in Power BI](service-new-workspaces.md).
 * [Create workspaces](service-create-the-new-workspaces.md).
 * [Publish an app from a workspace in Power BI](service-create-distribute-apps.md).

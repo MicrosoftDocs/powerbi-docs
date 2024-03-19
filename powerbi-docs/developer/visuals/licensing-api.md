@@ -82,7 +82,7 @@ export interface LicenseInfoResult {
 * `isLicenseUnsupportedEnv` - indicates that the visual is being rendered in a Power BI environment that doesn't support licenses management or enforcement.
 Currently, the following Power BI environments don't support license management or license enforcement:
   * Embedded - Publish To Web, PaaS embed
-  * National clouds (Depends on general support for transactability in national clouds)
+  * National/Regional clouds (Depends on general support for transactability in national/regional clouds)
   * RS Server (No planned support)
   * Exporting (PDF\PPT) using [REST API](/rest/api/power-bi/reports/export-to-file)
 
@@ -200,8 +200,9 @@ Use this account to validate the offer before making it public.
 
 * Tooltip for feature banner is limited by 500 chars.
 * Tooltip for feature banner requires localization.
+* License bundling, (i.e. one license that covers multiple offers from the same publisher) is not yet supported.
 
-## Next steps
+## Related content
 
 [Publish a Power BI custom visual](office-store.md)
 

@@ -51,7 +51,7 @@ Watch this video to learn how to create a key influencers visual with a categori
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/fDb5zZ3xmxU]
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -272,7 +272,7 @@ If you would like to learn more about how you can analyze measures with the key 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/2X1cW8oPtc8]
 
 ## Considerations and troubleshooting 
  
@@ -413,7 +413,8 @@ The visualization evaluates all explanatory factors together. A factor might be 
 
 Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
-## Next steps
+## Related content
+
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 - [How Power BI uses ML.NET to identify key influencers](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi)

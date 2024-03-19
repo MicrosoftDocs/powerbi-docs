@@ -53,8 +53,6 @@ landingContent:
             url: end-user-report-view.md
           - text: Display content larger or alone
             url: end-user-focus.md
-          - text: Show the data used to create a visual
-            url: end-user-show-data.md
           - text: Export data to Excel
             url: /power-bi/visuals/power-bi-visualization-export-data
 

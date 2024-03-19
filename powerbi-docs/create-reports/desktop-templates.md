@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/6/2022
+ms.date: 03/15/2024
 LocalizationGroup: Connect to data
 ---
 # Create and use report templates in Power BI Desktop
@@ -64,7 +64,7 @@ Once parameters and data have been specified, a report is created. This report c
 
 That's it. Creating and using report templates in Power BI Desktop enables you to easily reproduce compelling layouts and other report aspects, and share them with others.
 
-## Next steps
+## Related content
 
 You might also be interested in learning about **Query Parameters**:
 

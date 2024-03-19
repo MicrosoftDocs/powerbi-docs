@@ -34,9 +34,9 @@ Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/JbL2-HJ8clE]
 
-This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample) if you want to follow along.
+This example uses a card tile from the Retail Analysis sample dashboard. [Get the Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) if you want to follow along.
 
 1. Start on a dashboard. From the **Total stores** tile, select the ellipses.
 
@@ -126,7 +126,7 @@ There are many ways to manage your alerts:
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
 * You can create up to 250 alerts across all your models.
 
-## Next steps
+## Related content
 
 * [Create a Power Automate workflow that includes a data alert](../collaborate-share/service-flow-integration.md).
 * [Set data alerts on your mobile device](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).

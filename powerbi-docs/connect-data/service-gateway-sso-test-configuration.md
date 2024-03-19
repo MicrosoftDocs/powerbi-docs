@@ -60,7 +60,7 @@ If the gateway cluster can't impersonate the user and connect to the data source
 
 There can be the following possible causes and solutions:
 
-- The user doesn't exist in Azure Active Directory (Azure AD). Check if the user is present in Azure AD.
+- The user doesn't exist in Microsoft Entra ID. Check if the user is present in Microsoft Entra ID.
 - The user isn't mapped correctly to a local AD account. Check configurations and follow the steps in [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md).
 - The gateway doesn't have impersonation rights. Grant the gateway service account local policy rights on the gateway machine as described in [Grant the gateway service account local policy rights on the gateway machine](service-gateway-sso-kerberos.md#step-6-grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine).
 
@@ -70,9 +70,9 @@ The error **Error: Invalid connection credentials** appears when the gateway can
 
 :::image type="content" source="media/service-gateway-sso-test-configuration/sso-test-failed-credentials.png" alt-text="Screenshot of the error dialog when testing fails because the UPN doesn't have access to the data source.":::
 
-Check whether the user has access to the data source, and if not, add the user to the data source by following the instructions in [Manage users](service-gateway-data-sources.md#manage-users).
+Check whether the data source has been misconfigured to deny access to the user. You may need to work with your data source/database administrator to access the data source's configuration and settings.
 
-## Next steps
+## Related content
 
 - [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md)
 - [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)

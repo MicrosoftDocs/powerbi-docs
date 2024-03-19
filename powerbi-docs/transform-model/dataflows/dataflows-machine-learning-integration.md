@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 03/03/2023
+ms.date: 01/10/2024
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -102,11 +102,13 @@ Automated machine learning is available for dataflows that are hosted on Power B
 
 ### Work with AutoML
 
+Machine learning and AI are seeing an unprecedented rise in popularity from industries and scientific research fields. Businesses are also looking for ways to integrate these new technologies into their operations.
+
 Dataflows offer self-serve data prep for big data. AutoML is integrated into dataflows and enables you to use your data prep effort for building machine learning models, right within Power BI.
 
 AutoML in Power BI enables data analysts to use dataflows to build machine learning models with a simplified experience by using just Power BI skills. Power BI automates most of the data science behind the creation of the ML models. It has guardrails to ensure that the model produced has good quality and provides visibility into the process used to create your ML model.
 
-AutoML supports the creation of **Binary Prediction**, **Classification**, and **Regression Models** for dataflows. These features are types of supervised machine learning techniques, which means that they learn from the known outcomes of past observations to predict the outcomes of other observations. The input dataset for training an AutoML model is a set of rows that are *labeled* with the known outcomes.
+AutoML supports the creation of **Binary Prediction**, **Classification**, and **Regression Models** for dataflows. These features are types of supervised machine learning techniques, which means that they learn from the known outcomes of past observations to predict the outcomes of other observations. The input semantic model for training an AutoML model is a set of rows that are *labeled* with the known outcomes.
 
 AutoML in Power BI integrates [automated ML](/azure/machine-learning/service/concept-automated-ml) from [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The Power BI service entirely manages the process of training and hosting the ML models.
 
@@ -168,21 +170,21 @@ In the final step, you can name the model, select **Save**, and choose which beg
 #### ML model training
 
 Training of AutoML models is a part of the dataflow refresh. AutoML first prepares your data for training.
-AutoML splits the historical data you provide into training and testing datasets. The test dataset is a holdout set that is used for validating the model performance after training. These sets are realized as **Training and Testing** tables in the dataflow. AutoML uses cross-validation for the model validation.
+AutoML splits the historical data you provide into training and testing semantic models. The test semantic model is a holdout set that is used for validating the model performance after training. These sets are realized as **Training and Testing** tables in the dataflow. AutoML uses cross-validation for the model validation.
 
-Next, each input column is analyzed and imputation is applied, which replaces any missing values with substituted values. A couple of different imputation strategies are used by AutoML. For input attributes treated as numeric features, the mean of the column values is used for imputation. For input attributes treated as categorical features, AutoML uses the mode of the column values for imputation. The AutoML framework calculates the mean and mode of values used for imputation on the subsampled training dataset.
+Next, each input column is analyzed and imputation is applied, which replaces any missing values with substituted values. A couple of different imputation strategies are used by AutoML. For input attributes treated as numeric features, the mean of the column values is used for imputation. For input attributes treated as categorical features, AutoML uses the mode of the column values for imputation. The AutoML framework calculates the mean and mode of values used for imputation on the subsampled training semantic model.
 
 Then, sampling and normalization are applied to your data as required. For classification models, AutoML runs the input data through stratified sampling and balances the classes to ensure the row counts are equal for all.
 
 AutoML applies several transformations on each selected input column based on its data type and statistical properties. AutoML uses these transformations to extract features for use in training your ML model.
 
-The training process for AutoML models consists of up to 50 iterations with different modeling algorithms and hyperparameter settings to find the model with the best performance. Training can end early with lesser iterations if AutoML notices that there's no performance improvement being observed. AutoML assesses the performance of each of these models by validating with the holdout test dataset. During this training step, AutoML creates several pipelines for training and validation of these iterations. The process of assessing the performance of the models can take time, anywhere from several minutes, to a couple of hours, up-to the training time configured in the wizard. The time taken depends on the size of your dataset and the capacity resources available.
+The training process for AutoML models consists of up to 50 iterations with different modeling algorithms and hyperparameter settings to find the model with the best performance. Training can end early with lesser iterations if AutoML notices that there's no performance improvement being observed. AutoML assesses the performance of each of these models by validating with the holdout test semantic model. During this training step, AutoML creates several pipelines for training and validation of these iterations. The process of assessing the performance of the models can take time, anywhere from several minutes, to a couple of hours, up-to the training time configured in the wizard. The time taken depends on the size of your semantic model and the capacity resources available.
 
 In some cases, the final model generated might use ensemble learning, where multiple models are used to deliver better predictive performance.
 
 #### AutoML model explainability
 
-After the model has been trained, AutoML analyzes the relationship between the input features and the model output. It assesses the magnitude of change to the model output for the holdout test dataset for each input feature. This relationship is known as the *feature importance*. This analysis happens as a part of the refresh after training is complete. Hence your refresh might take longer than the training time configured in the wizard.
+After the model has been trained, AutoML analyzes the relationship between the input features and the model output. It assesses the magnitude of change to the model output for the holdout test semantic model for each input feature. This relationship is known as the *feature importance*. This analysis happens as a part of the refresh after training is complete. Hence your refresh might take longer than the training time configured in the wizard.
 
 :::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png" alt-text="Screenshot of the Model Performance page on the model report.":::
 
@@ -228,7 +230,7 @@ To use the insights and predictions from the ML model in a Power BI report, you 
 
 ### Binary Prediction models
 
-Binary Prediction models, more formally known as *binary classification models*, are used to classify a dataset into two groups. They're used to predict events that can have a binary outcome. For instance, whether a sales opportunity will convert, whether an account will churn, whether an invoice will be paid on time, whether a transaction is fraudulent, and so on.
+Binary Prediction models, more formally known as *binary classification models*, are used to classify a semantic model into two groups. They're used to predict events that can have a binary outcome. For instance, whether a sales opportunity will convert, whether an account will churn, whether an invoice will be paid on time, whether a transaction is fraudulent, and so on.
 
 The output of a Binary Prediction model is a probability score, which identifies the likelihood that the target outcome will be achieved.
 
@@ -276,7 +278,7 @@ The **PredictionExplanation** column contains an explanation with the specific i
 
 ### Classification models
 
-Classification models are used to classify a dataset into multiple groups or classes. They're used to predict events that can have one of the multiple possible outcomes. For instance, whether a customer is likely to have a high, medium, or low Lifetime Value. They can also predict whether the risk of default is high, moderate, low, and so on.
+Classification models are used to classify a semantic model into multiple groups or classes. They're used to predict events that can have one of the multiple possible outcomes. For instance, whether a customer is likely to have a high, medium, or low Lifetime Value. They can also predict whether the risk of default is high, moderate, low, and so on.
 
 The output of a Classification model is a probability score, which identifies the likelihood that a row will achieve the criteria for a given class.
 
@@ -345,7 +347,7 @@ Like the other AutoML model reports, the Regression report is based on the resul
 
 The model report includes a chart that compares the predicted values to the actual values. In this chart, the distance from the diagonal indicates the error in the prediction.
 
-The residual error chart shows the distribution of the percentage of average error for different values in the holdout test dataset. The horizontal axis represents the mean of the actual value for the group. The size of the bubble shows the frequency or count of values in that range. The vertical axis is the average residual error.
+The residual error chart shows the distribution of the percentage of average error for different values in the holdout test semantic model. The horizontal axis represents the mean of the actual value for the group. The size of the bubble shows the frequency or count of values in that range. The vertical axis is the average residual error.
 
 :::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-18.png" alt-text="Screenshot of the Residual error by price chart.":::
 
@@ -445,17 +447,19 @@ After you save your dataflow, the model is automatically invoked when the datafl
 
 ## Considerations and limitations
 
+* Dataflows Gen2 does not currently integrate with automated machine learning. 
 * AI insights (Cognitive Services and Azure Machine Learning models) aren't supported on machines with proxy authentication setup.
 * Azure Machine Learning models aren't supported for Guest users.
 * There are some known issues with using Gateway with AutoML and Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models and AI functions.
+* If your AI work with dataflows fails, you may need to enable Fast Combine when using AI with dataflows. Once you have imported your table and *before* you begin to add AI features, select **Options** from the Home ribbon, and in the window that appears select the checkbox beside *Allow combining data from multiple sources* to enable the feature, then select **OK** to save your selection. Then you can add AI features to your dataflow.
 
-## Next steps
+## Related content
 
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles might also be useful.
 
 * [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 * [Tutorial: Use Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-* [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
+
 
 The following articles provide more information about dataflows and Power BI:
 

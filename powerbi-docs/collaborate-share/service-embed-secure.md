@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 02/09/2024
 LocalizationGroup: Share your work
 ---
 
@@ -120,7 +120,13 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The secure embed option works for reports that are published to the Power BI service.
 
+* To host securely embedded content, users must use HTTPS for their top-level page. Using an unsecured host page to access securely embedded content isn't supported.
+
 * The user needs to sign in to view the report whenever they open a new browser window.
+
+* For authentication, users need to have popup windows enabled.
+
+* If users have successfully accessed reports in the past but are now encountering issues, they should clear their browser cache.
 
 * Some browsers require you to refresh the page after sign-in, especially when you use InPrivate or Incognito modes.
 
@@ -134,9 +140,9 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The automatic authentication capabilities don't work when they're embedded in applications, including in mobile and desktop applications.
 
-* The authentication token lifetime is controlled based on your Azure AD settings. When the authentication token expires, the user will need to sign in again to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
+* The authentication token lifetime is controlled based on your Microsoft Entra settings. When the authentication token expires, the user will need to sign in again to get an updated authentication token. The default lifetime is one hour, but it might be shorter or longer in your organization. You can't automatically refresh the token in this scenario.
 
-## Next steps
+## Related content
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Filter a report using query string parameters in the URL](service-url-filters.md)

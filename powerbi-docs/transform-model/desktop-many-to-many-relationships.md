@@ -7,22 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/17/2023
+ms.date: 11/10/2023
 LocalizationGroup: Transform and shape data
 ---
 # Apply many-to-many relationships in Power BI Desktop
 
-With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop.
+With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop. For more information about **composite models**, see [Use composite models in Power BI Desktop](desktop-composite-models.md)
 
 :::image type="content" source="media/desktop-many-to-many-relationships/many-to-many-relationships_01.png" alt-text="Screenshot of a many-to-many relationship in the Edit relationship pane.":::
-
-A *relationship with a many-to-many cardinality* in Power BI Desktop is composed of one of three related features:
-
-* **Composite models**: A *composite model* allows a report to have two or more data connections, including DirectQuery connections or Import, in any combo. For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
-
-* **Relationships with a many-to-many cardinality**: With composite models, you can establish *relationships with a many-to-many cardinality* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
-
-* **Storage mode**: You can now specify which visuals require a query to backend data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce backend load. Previously, even simple visuals, such as slicers, began queries that were sent to backend sources. For more information, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
 ## What a relationship with a many-to-many cardinality solves
 
@@ -141,14 +133,14 @@ The following Live Connect (multidimensional) sources can't be used with composi
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
-* Power BI datasets
+* Power BI semantic models
 * Azure Analysis Services
 
 When you connect to these multidimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
 
 The existing limitations of using DirectQuery still apply when you use *relationships with a many-to-many cardinality*. Many limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the whole model if any tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are unavailable on a model if any table within it has a storage mode of DirectQuery.
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

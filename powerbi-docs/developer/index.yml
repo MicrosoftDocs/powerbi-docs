@@ -86,22 +86,40 @@ conceptualContent:
         url: visuals/index.yml
         text: See more
     # Card
-    - title: Embedded analytics client APIs
+    - title: Solutions and best practices for Power BI developers
       links:
-        - url: /javascript/api/overview/powerbi/embedded-analytics-client-api
+        - url: /rest/api/power-bi/
           itemType: overview
-          text: What is the Power BI embedded analytics Client API?
-        - url: /javascript/api/overview/powerbi/showcase-export-events
+          text: Automation with Power BI REST APIs
+        - url: /analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo
+          itemType: reference
+          text: Using TOM with semantic models
+        - url: /fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines
           itemType: overview
-          text: Go from insights to quick action showcase
-        - url: /javascript/api/overview/powerbi/embed-report
-          itemType: how-to-guide
-          text: Embed a report
+          text: Lifecycle management collaboration with deployment pipelines
       # footerLink (optional)
       footerLink:
-        url: /javascript/api/overview/powerbi/
+        url: projects/index.yml
         text: See more
-
+    # Card
+    - title: Power BI Desktop developer mode
+      links:
+        - url: projects/projects-overview.md
+          itemType: overview
+          text: Power BI Desktop projects
+        - url: projects/projects-git.md
+          itemType: concept
+          text: Projects Git integration
+        - url: projects/projects-azdo.md
+          itemType: concept
+          text: Projects AzDo integration
+        - url:  ../transform-model/desktop-external-tools.md
+          itemType: concept
+          text: Power BI Desktop external tools
+      # footerLink (optional)
+      footerLink:
+        url: projects/index.yml
+        text: See more
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:

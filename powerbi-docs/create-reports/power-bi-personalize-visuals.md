@@ -143,10 +143,8 @@ The feature has a few limitations to be aware of.
 - User explorations don't automatically persist. Encourage your report readers to [save their views as personal bookmarks](../consumer/end-user-bookmarks.md#create-personal-bookmarks-in-the-power-bi-service) to capture their changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets, and in the Power BI Windows app. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
-## Next steps
+## Related content
 
 - [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md).
-
-   Try the visual personalization experience. Give us your feedback for this feature and tell us how we can continue to improve it on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi).
 
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

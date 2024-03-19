@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 02/26/2023
+ms.date: 05/23/2023
 ---
 
 # Service interruption notifications
@@ -22,30 +22,14 @@ At this time, emails are sent for the following _reliability scenarios_:
 - Model refresh reliability
 - Query refresh reliability
 
-Notifications are sent when there's an _extended delay_ in operations like opening reports, dataset refresh, or query executions. After an incident is resolved, you receive a follow-up email.
+Notifications are sent when there's an _extended delay_ in operations like opening reports, semantic model refresh, or query executions. After an incident is resolved, you receive a follow-up email.
 
 > [!NOTE]
 > This feature is currently available only for capacities in Power BI Premium. It's not available for shared or embedded capacity.
 
-## Capacity and reliability notifications
+## Enable notifications for service outages or incidents
 
-When a Power BI Premium capacity is experiencing extended periods of high resource use that potentially impacts reliability, a notification email is sent. Examples of such impacts include extended delays in operations such as opening a report, dataset refresh, and query executions.
-
-The notification email provides information about the reason for the high resource usage, including the following details:
-
-- Dataset ID of the responsible dataset
-- Operation type
-- CPU time associated with the high resource usage. Here's the [definition of CPU time](https://wikipedia.org/wiki/CPU_time) in Wikipedia.
-
-Power BI also sends email notifications when an overload in a Power BI Premium capacity is detected. The email explains the likely reason for the overload, which operations generated the load in the previous 10 minutes, and how much load each operation generated.
-
-If you have more than one Premium capacity, the email includes information about those capacities during the overloaded period. This information helps you consider moving the workspaces containing resource-intensive items to capacities with the least load.
-
-Overload email notifications are only sent when an overload threshold is triggered. You won't receive a second email when the load on that Premium capacity returns to non-overloaded levels.
-
-## Enable notifications
-
-A Power BI admin enables notifications in the admin portal:
+A Power BI admin can enable notifications for service outages or incidents in the admin portal:
 
 1. Identify or create an email-enabled security group that should receive notifications.
 
@@ -62,7 +46,6 @@ A Power BI admin enables notifications in the admin portal:
 
 This article describes how to receive service notifications through Power BI. You can also monitor Power BI service health through Microsoft 365. Opt in to receive email notifications about service health from Microsoft 365. Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Power BI Pro and Power BI Premium support options](service-support-options.md)
+- [Power BI Pro and Power BI Premium support options](service-support-options.md)

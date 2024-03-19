@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/06/2023
+ms.date: 09/12/2023
 LocalizationGroup: Create reports
 ---
 
@@ -42,6 +42,7 @@ The following animation illustrates dragging, dropping, resizing, and overlaying
 >[!NOTE]
 > * You can add some or all of the visuals in the Page visuals pane to the mobile-optimized report page.
 > * You can drag and drop hidden visuals onto the canvas. They'll be placed, but not shown unless their visibility status changes in the current desktop report view.
+> * The canvas is interactive, so you can test the behavior of buttons, slicers, and other visuals. Some [limitations](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#considerations-and-limitations) apply.
 
 ### Remove visuals from the mobile layout canvas
 
@@ -51,6 +52,6 @@ The following animation illustrates dragging, dropping, resizing, and overlaying
 
 Removing visuals from the mobile layout canvas removes them from the mobile layout canvas only. The visuals remain available for use in the **Page visuals** pane, and the original desktop layout report remains unaffected.
 
-## Next steps
+## Related content
 
 * [Style and format visuals for mobile layout](power-bi-create-mobile-optimized-report-format-visuals.md)

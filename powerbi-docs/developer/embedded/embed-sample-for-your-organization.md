@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: ''
-ms.date: 01/22/2023
+ms.date: 01/30/2024
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -28,7 +28,7 @@ To use your application, your users will need to sign in to Power BI.
 The embed for your organization solution is typically used by enterprises and large organizations, and is intended for internal users.
 
 > [!IMPORTANT]
-> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
+> If you are embedding content for a national/regional cloud, the first few steps of this tutorial are different. See [Embed content for national/regional clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -53,43 +53,43 @@ Before you start this tutorial, verify that you have both the following Power BI
 
 * **Power BI dependencies**
 
-    * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+  * Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md).
 
     * One of the following licenses:
 
-        * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
+      * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md)
 
-        * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
+      * [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml)
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need one of the following configurations:
     >* All users with Pro licenses.
     >* All users with PPU licenses.
-    >* A *P* or *EM* [capacity](embedded-capacity.md). This configuration allows all users to have free licenses.
+    >* A SKU that's equivalent or higher to a [F64 SKU](/fabric/enterprise/licenses#capacity-and-skus). This configuration allows all users to have free licenses.
 
 * **Code dependencies**
 
     # [.NET Core](#tab/net-core)
 
-    * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
-    
-    * An integrated development environment (IDE). We recommend using one of the following IDEs:
+  * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
-        * [Visual Studio](https://visualstudio.microsoft.com/)
+  * An integrated development environment (IDE). We recommend using one of the following IDEs:
 
-        * [Visual Studio Code](https://code.visualstudio.com/)
-
-    # [.NET Framework](#tab/net-framework)
-
-    * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
-    
     * [Visual Studio](https://visualstudio.microsoft.com/)
 
-    # [React TypeScript](#tab/react)
+    * [Visual Studio Code](https://code.visualstudio.com/)
 
-    * A text editor
+  # [.NET Framework](#tab/net-framework)
 
-    * Command line terminal (or PowerShell)
+  * [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/)
+
+  * [Visual Studio](https://visualstudio.microsoft.com/)
+
+   # [React TypeScript](#tab/react)
+
+  * A text editor
+
+  * Command line terminal (or PowerShell)
 
 ---
 
@@ -97,7 +97,7 @@ Before you start this tutorial, verify that you have both the following Power BI
 
 To create an *embed for your organization* sample app, follow these steps:
 
-1. [Register an Azure AD application](#step-1---register-an-azure-ad-application).
+1. [Register a Microsoft Entra application](#step-1---register-an-azure-ad-application).
 
 2. [Create a Power BI workspace](#step-2---create-a-power-bi-workspace).
 
@@ -107,9 +107,11 @@ To create an *embed for your organization* sample app, follow these steps:
 
 5. [Embed your content](#step-5---embed-your-content).
 
-## Step 1 - Register an Azure AD application
+<a name='step-1---register-an-azure-ad-application'></a>
 
-Registering your application with Azure AD allows you to establish an identity for your app.
+## Step 1 - Register a Microsoft Entra application
+
+Registering your application with Microsoft Entra ID allows you to establish an identity for your app.
 
 [!INCLUDE[Register Azure AD app](../../includes/embed-tutorial-register-app.md)]
 
@@ -179,7 +181,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 # [.NET Core](#tab/net-core)
 
-### Configure your Azure AD app
+<a name='configure-your-azure-ad-app'></a>
+
+### Configure your Microsoft Entra app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -220,7 +224,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 # [.NET Framework](#tab/net-framework)
 
-### Configure your Azure AD app
+<a name='configure-your-azure-ad-app'></a>
+
+### Configure your Microsoft Entra app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -257,7 +263,9 @@ Follow these steps to modify the *embed for your organization* sample applicatio
 
 # [React TypeScript](#tab/react)
 
-### Configure your Azure AD app
+<a name='configure-your-azure-ad-app'></a>
+
+### Configure your Microsoft Entra app
 
 [!INCLUDE[Configure the Azure AD authentication options](../../includes/embed-tutorial-org-azure-ad-app.md)]
 
@@ -274,7 +282,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
     
 6. Save your changes.
 
-:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the Azure AD app authentication configurations and the web redirect URI set for localhost 3000.":::
+:::image type="content" source="media/embed-sample-for-your-organization/azure-ad-react-configurations.png" alt-text="Screenshot of the Azure portal window, which shows the Microsoft Entra app authentication configurations and the web redirect URI set for localhost 3000.":::
 
 ### Configure the sample embedding app
 
@@ -303,7 +311,7 @@ Follow these steps to modify the *embed for your organization* sample applicatio
    `npm run start`
 
     >[!NOTE]
-    >During your first sign in, you'll be prompted to allow Azure AD permissions for the app.
+    >During your first sign in, you'll be prompted to allow Microsoft Entra permissions for the app.
 
 ---
 
@@ -315,7 +323,7 @@ After configuring and running the *embed for your customers* sample application,
 
 Users need permission to access the Power BI folder the report is in. When you grant a user permission to access a folder, the change usually takes effect only after the user logs in to the Power BI Portal. For the new permissions to take effect immediately, in the Embedded scenario, make an explicit call to the [RefreshUser Permissions REST API](/rest/api/power-bi/users/refresh-user-permissions) at startup. This API call will refresh the permissions and avoid authorization failures for users with newly granted permissions.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)

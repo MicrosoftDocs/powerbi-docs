@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/06/2021
+ms.date: 12/31/2023
 ---
 # Explore reports in the Power BI mobile apps
 Applies to:
@@ -17,7 +17,9 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
+>
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
 
 A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
@@ -80,22 +82,23 @@ You probably noticed that when you tap a visual, a border appears. In the upper-
 ### Tooltip and drill actions
 When you long tap (tap and hold) a data point, a tooltip that shows the values the data point represents will appear:
 
-![Tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
+:::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-tooltip.png" alt-text="Screenshot of a tool tip on a visual." border="false":::
+
+> [!IMPORTANT]
+> Remember, the mobile apps support tooltips on data points only.
 
 If the report author configured a report page tooltip, the default tooltip is replaced with the report page tooltip:
 
-![Report page tooltip](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
+:::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png" alt-text="Screenshot of a report-page tooltip." border="false":::
 
 > [!NOTE]
 > Report tooltips are supported for devices of at least 640 pixels and 320 pixel viewports. If your device is smaller, the app shows default tooltips.
 
 Report authors can define hierarchies in the data and relationships among report pages. Hierarchies allow you to drill down, drill up, and drill through to another report page from a visual and a value. So, when you long tap a value, in addition to the tooltip, the relevant drill options will appear in the footer:
 
-![Drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
-
+:::image type="content" source="./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png" alt-text="Screenshot of tooltip with dril down, drill up, and drill through options.":::
 
 When you tap a specific part of a visual and then tap the *drillthrough* option, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drillthrough options, each taking you to a different page. In that case, you can choose which option you want to drill through. The back button takes you back to the previous page.
-
 
 For more information, read about how to [add drillthrough in Power BI Desktop](../../create-reports/desktop-drillthrough.md).
    
@@ -134,7 +137,7 @@ For example:
 
 **Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](../../transform-model/desktop-mobile-geofiltering.md).
 
-**Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
+**Scan to filter the report by barcode** is enabled only if the semantic model in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 
 ### Bookmarks
 
@@ -147,6 +150,9 @@ Default bookmarks are indicated by a special icon. For personal bookmarks you ca
 When a bookmark view of a report is open, the name of the bookmark appears at the top of the report.
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+> [!NOTE]
+> You can't create bookmarks in the mobile apps - you can only use them. Bookmarks are created in Power BI Desktop and in the service.
 
 [Learn more about bookmarks in the Power BI service](../end-user-bookmarks.md).
 
@@ -184,7 +190,7 @@ If you're not sure you’re viewing the most up-to-date data, you can pull new d
     Report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured (Windows app only).
 
 >[!NOTE]
->The above refresh methods do not refresh the underlying dataset. Rather, they update the report you're viewing on the mobile app with any new data that might exist in Power BI.
+>The above refresh methods do not refresh the underlying semantic model. Rather, they update the report you're viewing on the mobile app with any new data that might exist in Power BI.
 
 ### How do I know when my report was last refreshed?
 
@@ -200,8 +206,8 @@ The Power BI mobile app has a number of settings that enable you to control your
 
 See [app interaction settings](./mobile-app-interaction-settings.md) for information about how to change these settings.
 
+## Related content
 
-## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * [Create a version of a report that's optimized for phones](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

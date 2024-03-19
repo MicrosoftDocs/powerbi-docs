@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 11/28/2023
 ---
 
 # Support timeline for Power BI Report Server
@@ -25,18 +25,19 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 | **Version** | **Availability date** | **Support end date** |
 | --- | --- | --- |
+| September 2023 | September 2023 | September 2024|
+| May 2023 | May 2023 | May 2024|
 | January 2023 | January 2023 | January 2024|
-| September 2022 | September 2022 | September 2023|
-| May 2022 | May 2022 | May 2023|
-| January 2022 | January 2022 | January 2022 and all previous versions no longer supported|
+| September 2022 | September 2022 | September 2022 and all previous versions no longer supported|
 
 To download Power BI Report Server, and Power BI Desktop for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-## Next steps
-[What's new in Power BI Report Server](whats-new.md)  
-[What is Power BI Report Server?](get-started.md)
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
+## Related content
+
+* [What's new in Power BI Report Server](whats-new.md)  
+* [What is Power BI Report Server?](get-started.md)
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

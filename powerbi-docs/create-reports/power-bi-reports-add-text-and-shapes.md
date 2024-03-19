@@ -22,7 +22,7 @@ Watch Will use Power BI Desktop to add static images to a report. You can then t
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-> <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
+> > [!VIDEO https://www.youtube.com/embed/_3q6VEBhGew]
 >
 
 ## Add a text box to a report
@@ -103,7 +103,7 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
 Read more about [smart narratives](../visuals/power-bi-visualization-smart-narrative.md).
 
-## Next steps
+## Related content
 
 For more information, see:
 

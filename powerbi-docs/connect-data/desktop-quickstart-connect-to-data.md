@@ -66,7 +66,7 @@ Once you've loaded the tables, the **Fields** pane shows you the data. You can e
 
 And that's it! You've connected to data in Power BI Desktop, loaded that data, and now you can see all the available fields within those tables.
 
-## Next steps
+## Related content
 
 There are all sorts of things you can do with Power BI Desktop once you've connected to data. You can create visuals and reports. Take a look at the following resource to get you going:
 

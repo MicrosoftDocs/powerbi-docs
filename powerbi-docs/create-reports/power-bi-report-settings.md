@@ -30,7 +30,7 @@ It might be helpful to first read:
 - For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md).
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md).
 - You need to have edit permission for the report in the Power BI service. See [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md) for details on permission.
-- If you don't already have a report in the Power BI service, you can [install a sample](sample-datasets.md#install-built-in-samples) containing a dashboard, report, and dataset.
+- If you don't already have a report in the Power BI service, you can [install a sample](sample-datasets.md#install-built-in-samples) containing a dashboard, report, and semantic model.
 
 ## Open the Settings pane
 
@@ -82,7 +82,7 @@ By default, [report readers can export summarized or underlying data](/power-bi/
 
 Allow your readers to change and personalize the visuals in your report. For more information, see [Let users personalize visuals in a report](power-bi-personalize-visuals.md).
 
-## Next steps
+## Related content
 
 * [Feature content on others' Power BI Home pages](../collaborate-share/service-featured-content.md)
 * [Let users personalize visuals in a report](power-bi-personalize-visuals.md)

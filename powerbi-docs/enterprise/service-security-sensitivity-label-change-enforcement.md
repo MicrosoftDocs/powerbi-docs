@@ -41,5 +41,6 @@ To enable this setting, go to: **Admin portal > Tenant settings > Information pr
 
 ![Screenshot tenant switch allowing workspace admins to override automatically set sensitivity labels.](media/service-security-sensitivity-label-change-enforcement/lce-relaxations-allow-workspace-admins-tenant-switch.png)
 
-## Next steps
+## Related content
+
 * [Sensitivity label overview](service-security-sensitivity-label-overview.md)

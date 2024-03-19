@@ -51,7 +51,7 @@ To install, customize, and distribute a template app, you need:
     > [!NOTE]
     > If you use an installation link for an app that isn't listed on AppSource, a validation dialog box will ask you to confirm your choice.
     >
-    >To be able to install a template app that isn't listed on AppSource, you can request the relevant permissions from your admin. See the [template app settings](../admin/service-admin-portal-template-app.md) in Power BI admin portal for details.
+    >To be able to install a template app that isn't listed on AppSource, you can request the relevant permissions from your admin. See the [template app settings](/fabric/admin/service-admin-portal-template-app) in Power BI admin portal for details.
 
     When the installation finishes successfully, a notification tells you that your new app is ready.
 
@@ -116,19 +116,19 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 * **Update the workspace and the app:** Updates both the workspace and the app, and republishes the app to your organization. Choose this option if you didn't make any changes to the app or its content and want to overwrite the old app. Your connections will be re-established, and the new version of the app will include any updated app branding, such as app name, logo, and navigation, as well as the latest publisher improvements to content.
 
-* **Update only workspace content without updating the app:** Updates the reports, dashboards, and dataset in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you need to update the app to republish it to your organization with the changes.
+* **Update only workspace content without updating the app:** Updates the reports, dashboards, and semantic model in the workspace. After updating the workspace, you can choose what you want to include in the app, and then you need to update the app to republish it to your organization with the changes.
 
 * **Install another copy of the app into a new workspace:** Installs a fresh version of the workspace and app. Choose this option if you don’t want to change your current app.
 
 ### Overwrite behavior
 
-* Overwriting updates the reports, dashboards, and dataset in the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
+* Overwriting updates the reports, dashboards, and semantic model in the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
 * If you chose the second option, after you've updated the workspace **you need to update the app to apply changes from the workspace to the app**.
-* Overwriting keeps configured parameters and authentication. After the update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
+* Overwriting keeps configured parameters and authentication. After the update, an automatic semantic model refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
 
   :::image type="content" source="media/service-template-apps-install-distribute/power-bi-sample-data.png" alt-text="Screenshot of the banner showing information about the update." lightbox="media/service-template-apps-install-distribute/power-bi-sample-data.png":::
 
-* Overwriting always presents sample data until the refresh is complete. If the template app author made changes to the dataset or parameters, users of the workspace and app won't see the new data until the refresh is complete. Instead, they'll still see sample data during this time.
+* Overwriting always presents sample data until the refresh is complete. If the template app author made changes to the semantic model or parameters, users of the workspace and app won't see the new data until the refresh is complete. Instead, they'll still see sample data during this time.
 * Overwriting never deletes new reports or dashboards you've added to the workspace. It only overwrites the original reports and dashboards with changes from the original author.
 
 >[!IMPORTANT]
@@ -148,6 +148,6 @@ An installed template app consists of the app and its associated workspace. If y
 
        :::image type="content" source="media/service-template-apps-install-distribute/power-bi-template-app-unpublish.png" alt-text="Screenshot of the app workspace with more options and unpublish app highlighted.":::
 
-## Next steps
+## Related content
 
-[Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md)

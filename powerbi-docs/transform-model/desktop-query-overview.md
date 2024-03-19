@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 10/24/2023
 LocalizationGroup: Transform and shape data
 ---
 # Query overview in Power BI Desktop
@@ -28,7 +28,7 @@ Power BI Desktop also comes with Power Query Editor. Use Power Query Editor to c
 
 This article provides an overview of the work with data in the Power Query Editor, but there's more to learn. At the end of this article, you'll find links to detailed guidance about supported data types. You'll also find guidance about connecting to data, shaping data, creating relationships, and how to get started.
 
-But first, let's see get acquainted with Power Query Editor.
+But first, let's get acquainted with Power Query Editor.
 
 ## Power Query Editor
 
@@ -40,9 +40,7 @@ With no data connections, Power Query Editor appears as a blank pane, ready for 
 
 :::image type="content" source="media/desktop-query-overview/query-overview-blank-panes.png" alt-text="Screenshot of Power BI Desktop showing Power Query Editor with no data connections.":::
 
-After a query is loaded, Power Query Editor view becomes more interesting. If you connect to the following Web data source, Power Query Editor loads information about the data, which you can then begin to shape:
-
-[*https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/*](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/)
+After a query is loaded, Power Query Editor view becomes more interesting. If you connect to a Web data source using the New Source button in the top left, Power Query Editor loads information about the data, which you can then begin to shape.
 
 Here's how Power Query Editor appears after a data connection is established:
 
@@ -122,7 +120,7 @@ In the **Query Settings** pane, you can rename steps, delete steps, or reorder t
 
 ## Advanced Editor
 
-The **Advanced Editor** lets you see the code that Power Query Editor is creating with each step. It also lets you create your own shaping code. To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the existing query code.  
+The **Advanced Editor** lets you see the code that Power Query Editor is creating with each step. It also lets you create your own code in the [Power Query M formula language](/powerquery-m/). To launch the advanced editor, select **View** from the ribbon, then select **Advanced Editor**. A window appears, showing the code generated for the selected query.  
 :::image type="content" source="media/desktop-query-overview/query-overview-advanced-editor.png" alt-text="Screenshot of Power BI Desktop showing the Advanced Editor dialog box.":::
 
 You can directly edit the code in the **Advanced Editor** window. To close the window, select the **Done** or **Cancel** button.  
@@ -140,7 +138,7 @@ When you're ready, Power BI Desktop can save your work in the form of a *.pbix* 
 To save your work, select **File** \> **Save** (or **File** \> **Save As**), as shown in the following image.
 :::image type="content" source="media/desktop-query-overview/query-overview-save-work.png" alt-text=" Screenshot of Power BI Desktop showing the Power Query Editor File tab. The save and save as options highlighted.":::
 
-## Next steps
+## Related content
 
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

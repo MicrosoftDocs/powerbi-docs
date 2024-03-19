@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 01/05/2023
+ms.date: 08/09/2023
 ---
 
 # Power BI visual project structure
@@ -111,6 +111,7 @@ The comments in the following code caption from the `pbiviz.json` file describe 
 > [!NOTE]
 >
 > * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't supported.
+> * Version numbers should contain four digits in the following format `x.x.x.x`.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
 ```json
@@ -129,7 +130,7 @@ The comments in the following code caption from the `pbiviz.json` file describe 
     "visualClassName": "Visual",
 
     // The visual's version number.
-    "version": "1.0.0",
+    "version": "1.0.0.0",
     
     // The visual's description (optional)
     "description": "",
@@ -167,7 +168,7 @@ The comments in the following code caption from the `pbiviz.json` file describe 
 }
 ```
 
-## Next steps
+## Related content
 
 * [Power BI visuals system integration](power-bi-visuals-concept.md)
 * [Develop a Power BI circle card visual](develop-circle-card.md)

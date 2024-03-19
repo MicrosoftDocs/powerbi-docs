@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2023
+ms.date: 03/13/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -17,12 +17,113 @@ Power BI Mobile app versions are released on a monthly cadence. The latest ver
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)  
+* [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+## March 2024
+
+### Custom visual single sign-on (SSO) support
+
+Custom visuals using the new authentication API are now also supported when viewed in the Power BI Mobile apps. No additional authentication is required, ensuring that your data exploration experience in the mobile app is as smooth and delightful as possible, without any interruptions. [Learn more about the authentication API for custom visuals](../../developer/visuals/authentication-api.md)
+
+## January 2024
+
+### Get to know Power BI with sample reports on your mobile
+
+Power BI's sample reports help you quickly get up to speed with Power BI. You can now use a sample report directly from the mobile app. On the app's home page, simply select the down arrow on the Recommended strip, choose **Sample reports**, and then pick one of the sample reports. The report will install in your personal workspace and you'll be all set to start exploring it in the app. You can also get to the sample reports on the Explore page!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-sample-reports.png" alt-text="Screenshot showing downloadable sample reports on the mobile Home and Explore pages." border="false":::
+
+## December 2023
+
+### Shared device mode is now GA
+
+Introduced last September, shared device mode is now generally available! With shared device mode, organizations can safely deploy the Power BI mobile app across their pool of shared devices. [Check it out](./mobile-app-shared-device-mode.md)!
+
+## November 2023
+
+### Semantic model: the new name for Power BI datasets
+
+Microsoft has renamed the Power BI *dataset* content type to *semantic model*. For more information, see [New name for Power BI datasets](../../connect-data/service-datasets-rename.md).
+
+## October 2023
+
+### Cross-cloud sharing support
+
+The Power BI mobile app's support for accessing Power BI content shared with you from external organizations now allows you even to open links to items shared with you from other Power BI clouds.
+
+## September 2023
+
+### Interactive mobile layout canvas
+
+Interactivity has come to the mobile layout canvas! This means that you can use your mouse or other selection methods to interact with the visuals you've laid out on the canvas. With canvas interactivity, you can now test how bookmarks and navigation work when you select buttons, navigation visuals, and slicers, while you're in the process of building your mobile-optimized view. You can also make your tables and matrixes pixel-perfect for mobile layout by selecting table and matrix headers and adjusting column widths. [Check out the new interactive mobile layout canvas today](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-interactive-canvas.gif" alt-text="Screenshot illustrating interactivity on the mobile layout canvas.":::
+
+### Introducing shared device mode (iOS and Android) (preview)
+
+The Power BI mobile apps now support the Microsoft Entra ID feature *shared device mode*.
+
+Shared devices are company-owned devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign-on (SSO) across applications and keeping users signed in on their device. This behavior isn't suitable for devices that are shared by multiple users. In the case of shared devices, employees expect to pick a device from the pool, "make it theirs" for the duration of their shift, and then to be able, at the end of their shift, to sign out from the device globally and have all their personal and company information removed so they can return the device to the pool. This is exactly what Microsoft Entra ID shared device mode enables.
+
+With the Power BI mobile app's new support for shared device mode, organizations can now safely deploy the app across pools of shared devices. [Check out the details](./mobile-app-shared-device-mode.md)!
+
+## August 2023
+
+### Customize your launch experience with launch items
+
+If you always go right to a particular report, dashboard, scorecard, or app when you open your Power BI mobile app, you can now save time by configuring that item to be your launch item. The item will then open automatically whenever you start up your app. You'll no longer have to waste time navigating to it every time. [Check out the details](./mobile-apps-launch-item.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/set-as-launch-item-option.png" alt-text="Screenshot of the Set as launch item option on a report in the Power BI mobile app." border="false":::
+
+Organizations can also configure a launch item for groups of users via mobile device management. See [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android) for details.
+
+### New layout switcher makes creating mobile-optimized reports easier
+
+Now it's easy to quickly switch between web and mobile layouts when you're developing your reports. You'll find the new switcher buttons down at the bottom of the screen, right next to the page navigator. [Check it out](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#how-to-open-mobile-layout-view)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-layout-switcher.png" alt-text="Screenshot showing the mobile report layout switcher.":::
+
+## July 2023
+
+### Semantic model refresh (iOS and Android)
+
+Now you can view semantic model info and refresh status, and even refresh semantic models manually, right from the mobile app! Moreover, whenever one of your semantic models has a refresh failure, you'll get notified in the mobile app so that you can start addressing the issue right away. [Check out the details](./mobile-apps-dataset-refresh.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-app-dataset-refresh.png" alt-text="Screenshot showing the semantic model info page in the Power BI app for mobile devices." border="false":::
+
+## May 2023
+
+### Export to Excel (Windows)
+
+When applicable, you can now export data from a Power BI visual to Excel. Just open the visual's options menu and select **Export data**.
+
+## April 2023
+
+### Hierarchies are now supported for your metrics! (iOS and Android)
+
+Hierarchies are now available in the mobile apps, where you can drill into the hierarchy to check progress and statuses, as well as do check-ins, at different levels. To view the available hierarchies and change the selection, use the new **Hierarchies** button in the scorecard footer.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-hierarchies.png" alt-text="Screenshot showing Power BI metrics hierarchies in the Power BI mobile app." border="false":::
+
+[Learn more about viewing hierarchies in the Power BI service](../../create-reports/service-metrics-view-hierarchies.md)
 
 ## March 2023
+
+### New look and feel for tooltips on visuals (iOS and Android)
+
+Tooltips on visuals have a new look and feel! Now, when you tap and hold on a data point, you'll enjoy a sleek, user-friendly tooltip. The re-designed tooltip features a pointer to help you identify the selected data point, and clear, easy-to-use actions such as drill-down and drill-through. The new tooltip supports custom styling configured by the report creator, and report creators can even disable tooltips for a visual if they think it's better without one.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-tooltips.png" alt-text="Screenshot showing new tooltip on a data point in the Power BI mobile app." border="false":::
+
+### Discover content from external orgs (iOS and Android)
+
+It's just gotten easier to access your external content from your Power BI mobile app! If you have access to items from external organizations, you can now have these items always available for quick access right from the app's home page. Just tap the newly added drop-down arrow on the third content strip and change **Recommended** to **From external orgs**. You can also get to your external content by tapping **More (...)** and choosing **From external orgs**. [Check it out](./mobile-apps-b2b.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-external-content-strip.png" alt-text="Screenshot of the From external orgs option on the Power BI mobile app home page." border="false":::
+
+### Set your language for the app (Android)
+
+Just as you could for iOS devices, you can now set individual language preferences for the Power BI app on your Android device! On your Android device, go to **Settings > Apps > Power BI**, and set your preferred language. Available for Android 13 and above.
 
 ### Automatic page refresh support (iOS and Android)
 
@@ -36,7 +137,7 @@ You now get a push notification on your mobile app whenever someone requests acc
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-app-access-request-push-notification.png" alt-text="Screenshot of access request push notification on mobile app screen." border="false":::
 
-### Easier app browsing (iOS and Android)
+### Easier app browsing
 
 Some apps now come with [audience views](https://powerbi.microsoft.com/blog/announcing-public-preview-of-multiple-audiences-for-power-bi-apps/) to help you find insights faster. 
 
@@ -110,7 +211,7 @@ The Power BI mobile apps for iOS and Android now support the full range of fonts
 
  The Power BI app for Windows is now aligned with the overall Power BI migration to Microsoft Edge WebView2, delivering faster performance and a better browsing experience all around.
 
-To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this does not apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
+To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this doesn't apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
 
 ## July 2022
 
@@ -151,7 +252,7 @@ Changes and updates to goals related to you now show up in your activity feed, a
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
 ### Minimum OS requirement for the Windows app
-The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades won't be available for Windows devices running on the earlier versions.
 
 ### Goals now supports push notifications (Android and iOS)
 Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](/power-bi/consumer/mobile/mobile-apps-metrics#notifications)
@@ -382,7 +483,7 @@ Now you can view your dashboards in full-screen mode, giving you more space to v
 ### March 2020
 
 #### Use shortcuts and Google Search to launch your content (Android)
-We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. Learn more about [Android app shortcuts](mobile-app-quick-access-shortcuts.md) and [Google Search](mobile-app-find-access-google-search.md)!
+We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. Learn more about [Android app shortcuts](mobile-app-quick-access-shortcuts.md)!
 
 #### Enhanced security using device protection (preview) (Android)
 Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. [Learn about native secure access](mobile-native-secure-access.md)
@@ -473,7 +574,7 @@ This month we've added support for cross-report drillthrough. You can now tap on
 
 #### Data sensitivity labels
 
-You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../enterprise/service-security-data-protection-overview.md).
+You can now see sensitivity labels that content owners have set on reports, dashboards, semantic models, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../enterprise/service-security-data-protection-overview.md).
 
 #### Support for custom app navigation (Windows)
 
@@ -558,7 +659,7 @@ Now you can use comments to collaborate and share your feedback on report pages 
 
 #### Maximize the view with full screen mode (Android and iOS)
 
-We added new button that let you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
+We added a new button that lets you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
 
 ### March 2019
 
@@ -779,7 +880,7 @@ We've added support for conditional access (CA) and Microsoft Intune mobile devi
 
 #### Improved permission management
 
-We've made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
+We've made some changes that allow for more precise management of user permissions for semantic models, dashboards, and reports.
 
 #### Auto-installed apps
 
@@ -1000,7 +1101,7 @@ The Apple Watch mobile app has been improved for Watch OS3
 
 #### Android phones
 **Added manual tile refresh**
-You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the dataset.
+You can now manually refresh your dashboard tiles. For tiles based on DirectQuery, this will retrieve the latest data from the semantic model.
 
 #### Windows 10 phones
 **Geographic filtering**
@@ -1158,7 +1259,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **Pinch to zoom** Use pinch-to-zoom on your tablet to examine dashboards in greater detail.
 
-**Notifications** Get notified when your datasets, reports, and dashboards update with new data.
+**Notifications** Get notified when your semantic models, reports, and dashboards update with new data.
 
 **Report gallery** Open your reports directly in the report gallery.​
 

@@ -13,6 +13,7 @@ ms.reviewer: saurkumar
 ---
 # Export Power BI paginated report to an Image File (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
   The Image rendering extension renders a Power BI paginated report to a bitmap or metafile. By default, the Image rendering extension produces a TIFF file of the report, which can be viewed in multiple pages. When the client receives the image, it can be displayed in an image viewer and printed. This topic provides Image renderer-specific information and describes exceptions to the rendering rules.  
   
@@ -61,11 +62,12 @@ ms.reviewer: saurkumar
  You can change some default settings for this renderer by changing the device information settings. For more information, see [Image device information settings](../device-info/image-device-information-settings.md).  
   
   
-## Next steps  
- [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
- [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
- [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
- [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Pagination in Reporting Services &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+- [Rendering Behaviors &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+- [Interactive Functionality for Different Report Rendering Extensions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+- [Rendering Report Items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../report-builder-tables-matrices-lists.md)  
   
   

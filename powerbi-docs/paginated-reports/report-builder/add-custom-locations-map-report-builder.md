@@ -13,6 +13,8 @@ ms.reviewer: saurkumar
 ---
 # Add custom locations to a map in a Power BI paginated report (Power BI Report Builder)
 
+[!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
+
  After you add a map to a Power BI paginated report, you can add your own point locations.  
   
  Display properties for all points on a layer are controlled by setting options for the point properties for the layer. For a selected embedded point, you can override the display properties.  
@@ -48,8 +50,9 @@ ms.reviewer: saurkumar
   
 3.  Select the pages and set the display properties that you want to apply to this point.  
   
-## Next steps  
- [Maps &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/maps-report-builder-and-ssrs)   
- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
+## Related content
+
+- [Maps &#40;Power BI Report Builder&#41;](../report-builder/maps-report-builder.md)   
+- [Vary Polygon, Line, and Point Display by Rules and Analytical Data &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data)  
   
   

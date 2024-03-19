@@ -101,10 +101,11 @@ Use a browser that has script support enabled. If the browser cannot run scripts
   
   **(+)** Latest publicly released version
 
-## Next steps
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+## Related content
+
+* [Administrator overview](admin-handbook-overview.md)  
+* [Install Power BI Report Server](install-report-server.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

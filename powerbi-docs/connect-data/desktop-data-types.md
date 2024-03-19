@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 01/11/2023
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
@@ -38,7 +38,7 @@ The **Binary** data type isn't supported outside of the Power Query Editor. In t
 
 Power BI Desktop supports three number types: **Decimal number**, **Fixed decimal number**, and **Whole number**.
 
-You can use the Tabular Object Model (TOM) Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> property to specify the <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums for number types. For more information about programmatically modifying objects in Power BI, see [Program Power BI datasets with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
+You can use the Tabular Object Model (TOM) Column <xref:Microsoft.AnalysisServices.Tabular.Column.DataType> property to specify the <xref:Microsoft.AnalysisServices.Tabular.DataType> Enums for number types. For more information about programmatically modifying objects in Power BI, see [Program Power BI semantic models with the Tabular Object Model](/analysis-services/tom/tom-pbi-datasets?view=power-bi-premium-current&preserve-view=true).
 
 ### Decimal number
 
@@ -93,7 +93,7 @@ Power BI Desktop supports five **Date/Time** data types in Power Query Editor. B
 
 ## Text type
 
-The **Text** data type is a Unicode character data string, which can be letters, numbers, or dates represented in a text format. The maximum string length is 268,435,456 Unicode characters (256 mega characters), or 536,870,912 bytes.
+The **Text** data type is a Unicode character data string, which can be letters, numbers, or dates represented in a text format. The practical maximum limit for string length is approximately 32,000 Unicode characters, based on Power BI's underlying Power Query engine, and its limits on **text** data type lengths. Text data types beyond the practical maximum limit are likely to result in errors.
 
 The way Power BI stores text data can cause the data to display differently in certain situations. The next sections describe common situations that can cause **Text** data to change appearance slightly between querying data in Power Query Editor and loading it into Power BI.
 
@@ -187,7 +187,7 @@ When you add a simple visualization that shows the detailed information per cust
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-03.png" alt-text="Screenshot of a visual that shows the data appearing as expected.":::
 
-However, when you refresh the dataset in the Power BI service, the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
+However, when you refresh the semantic model in the Power BI service, the **Subscribed To Newsletter** column in the visuals displays values as *-1* and *0*, instead of displaying them as *TRUE* or *FALSE*:
 
 :::image type="content" source="media/desktop-data-types/desktop-data-types-boolean-04.png" alt-text="Screenshot of a visual that shows data appearing in an unexpected format after refresh.":::
 
@@ -338,7 +338,7 @@ How operations such as addition or concatenation handle blanks depends on the in
 | BLANK OR BLANK |BLANK |Error |
 | BLANK AND BLANK |BLANK |Error |
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop and data. For more information on Power BI capabilities, see the following resources:
 

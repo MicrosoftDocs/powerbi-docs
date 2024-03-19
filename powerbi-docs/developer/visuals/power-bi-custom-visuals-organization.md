@@ -48,7 +48,7 @@ Be aware of the following [admin](#admin-considerations) and [user](#user-consid
   - Power Automate
   - Charticulator
 
-## Next steps
+## Related content
 
 - [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
 - [Publish Power BI visuals to Partner Center](office-store.md)

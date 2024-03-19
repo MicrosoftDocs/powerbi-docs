@@ -17,7 +17,7 @@ Starting from API version 5.1, developers can create visuals that use the [new P
 The new API uses the **FormattingModel** method to customize parts of the format and analytics panes.
 
 > [!TIP]
-> The `getFormattingModel` method replaces the `enumerateObjectInstances` method used in earlier API versions.
+> The `getFormattingModel` method replaces the `enumerateObjectInstances` method in earlier API versions.
 
 The `getFormattingModel` returns a `FormattingModel` that defines how the visual's formatting and analytics pane look.
 
@@ -25,7 +25,10 @@ In addition to all the old formatting pane capabilities, the [new formatting mod
 
 :::image type="content" source="media/format-pane/formatting-model.png" alt-text="Screenshot of the new formatting pane.":::
 
-To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1` or later.
+To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1` or later and do **one** of the following:
+
+* Use [formattingmodel util](./utils-formatting-model.md). (**Recommended**)
+* Without this util, use only APIs according to the following method.
 
 ## Create a visual that supports the new format pane
 
@@ -474,6 +477,6 @@ To localize formatting model utils [formatting utils localization](utils-formatt
 
 * You can find an example of a custom visual *SampleBarChart* that uses API version 5.1.0 and implements `getFormattingModel` using the new formatting model utils at [GitHub - microsoft/PowerBI-visuals-sampleBarChart: Bar Chart Custom Visual for tutorial](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial).
 
-## Next steps
+## Related content
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com)

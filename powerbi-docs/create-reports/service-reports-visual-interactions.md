@@ -30,7 +30,7 @@ The terms *cross-filter* and *cross-highlight* distinguish the behavior describe
 >
 >
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N_xYsCbyHPw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/N_xYsCbyHPw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP]
 
 
 ## Enable the visual interaction controls
@@ -109,5 +109,6 @@ For both Power BI Desktop and Power BI service, [certain Power BI visualizations
 ## Considerations and troubleshooting
 If you build a matrix with fields from different tables, then try to cross-highlight by selecting multiple items at different levels of the hierarchy, you get errors on the other visuals.
 
-## Next steps
-[Filtering and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)
+## Related content
+
+* [Filtering and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)

@@ -2,12 +2,12 @@
 title: Install Power BI Report Server
 description: 'Learn how to install Power BI Report Server, or create a virtual machine running Power BI Report Server on Azure.'
 author: maggiesMSFT
-ms.author: maggies
+ms.author: nisrinivasan
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 06/22/2022
+ms.date: 01/26/2023
 ms.custom: intro-installation
 ---
 
@@ -40,9 +40,9 @@ You can get the product key for Power BI Report Server from two different source
 
 Read on for details.
 
-#### Power BI Premium
+#### Power BI Premium / Fabric Capacity
 
-If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Power BI service administrator role.
+If your organization has purchased Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Power BI Premium** tab in the admin portal. The key is only accessible to users with Global admin, Fabric admin, or PowerBI Premium capacity admin privileges.
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
@@ -134,8 +134,8 @@ URL reservations are composed of a prefix, host name, port, and virtual director
 
 An example of the complete URL string might be as follows:
 
-* `https://+:80/reportserver`, provides access to the report server.
-* `https://+:80/reports`, provides access to the web portal.
+* `https://+:80/reportserver` provides access to the report server.
+* `https://+:80/reports` provides access to the web portal.
 
 ## Firewall
 
@@ -150,18 +150,18 @@ Open up the TCP port that you've configured for your Web Service URL and Web Por
 * To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) and [Configure a report server for remote administration](/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
 * For details on setting report server system properties in SQL Server Management Studio, see [Server Properties Advanced Page](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Unless it specifies otherwise, the options apply to both Power BI Report Server and SQL Server Reporting Services.
 
-## Next steps
+## Related content
 
-[Administrator overview](admin-handbook-overview.md)  
-[How to find your report server product key](find-product-key.md)  
-[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
-[Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
-[Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
-[Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
-[Configure a report server database connection](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
-[Initialize a report server](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
-[Configure SSL connections on a report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
-[Configure windows service accounts and permissions](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
-[Browser support for Power BI Report Server](browser-support.md)
+- [Administrator overview](admin-handbook-overview.md)  
+- [How to find your report server product key](find-product-key.md)  
+- [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
+- [Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+- [Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
+- [Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
+- [Configure a report server database connection](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
+- [Initialize a report server](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
+- [Configure SSL connections on a report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
+- [Configure windows service accounts and permissions](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
+- [Browser support for Power BI Report Server](browser-support.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

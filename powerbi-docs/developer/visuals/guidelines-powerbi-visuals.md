@@ -56,7 +56,7 @@ All Power BI visuals should enable the context menu to give users a unified expe
 
 ## Commercial logo
 
-This section describes the specifications for adding commercial logos in Power BI visuals. Commercial logos aren't mandatory. If you add them, make sure they follow these guidelines.
+This section describes the specifications for adding commercial logos in Power BI visuals. Commercial logos aren't required. If you add them, make sure they follow these guidelines.
 
 > [!NOTE]
 >
@@ -149,7 +149,7 @@ When publishing a Power BI visual, consider the following recommendations to giv
 
 For more information about Power BI visuals, see [Frequently asked questions about Power BI visuals with extra purchases](/power-bi/developer/visuals/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
-## Next steps
+## Related content
 
 Learn how you can publish your Power BI visual to for others to discover and use.
 

@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.search.form: Get started with metrics
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 11/03/2023
 ms.custom: intro-get-started
 ---
 # Get started with metrics in Power BI
@@ -42,7 +42,7 @@ Metrics are a Pro feature. Users can access various aspects of the experience de
 |Permission  |Minimum requirements  |
 |---------|---------|
 |Author and share scorecards and metrics, and perform check-ins | Power BI Pro license |
-|View scorecards and metrics  | Power BI Premium capacity + Free user <br><br>OR <br><br>Power BI Pro license |
+|View scorecards and metrics  | Power BI Premium or Fabric F64 or greater capacity + Free user <br><br>OR <br><br>Power BI Pro license |
 |View scorecard samples and author scorecards in My Workspace  |  Free user |
 
 If you don’t meet the minimum requirements for any of these, contact your Power BI administrator before you begin.  
@@ -99,7 +99,7 @@ We don't pull in the history of time series if we only have a partial date, for 
 There are a few reasons why your metric may not be getting updated:
 
 - It’s a manual metric: Manual metrics aren't updated automatically as they're not connected to a data source with regular refreshes.  To create a history for a manual metric, do regular check-ins.
-- You don't have scheduled refresh for the dataset: Metric values are only updated as often as the dataset is refreshed.  If you don’t have a scheduled refresh on your dataset, you don't see any updates in the metric value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
+- You don't have scheduled refresh for the semantic model: Metric values are only updated as often as the semantic model is refreshed.  If you don’t have a scheduled refresh on your semantic model, you don't see any updates in the metric value. Learn about [scheduled refresh](../connect-data/refresh-scheduled-refresh.md).
 - Metrics don’t get updated if they're created from a push dataset. 
 
 **I'm trying to create a metric but I can’t connect to a report. Why do I see a yellow warning icon?**
@@ -112,11 +112,11 @@ Currently, users need to have edit permissions for the scorecard to add check-in
 
 **Why can’t I update the value as part of my check-in?**
 
-You can only update values in manual metrics.  If a metric value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the dataset refreshes.
+You can only update values in manual metrics.  If a metric value is connected to data, you can't update it manually. The data is pulled directly from the report and is updated as often as the semantic model refreshes.
 
 **How often do metrics update in the scorecard?**
 
-Metrics only update as often as the data updates in the dataset.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the metrics data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying dataset we create, which you can then build content on top of.
+Metrics only update as often as the data updates in the semantic model.  We support connecting via import, live connection, and DirectQuery.  Additionally, we take snapshots of the metrics data at a maximum daily cadence, and always retain the last updated value for a given day. The snapshots are always available in the underlying semantic model we create, which you can then build content on top of.
 
 **I changed the tracking cycle of my metric. Why does the data still look the same?**
 
@@ -130,20 +130,20 @@ Scorecards do have metric-level permissions roles. While workspace permissions g
 
 ## Issues and limitations 
   
-- Metrics don't yet support bring your own key (BYOK). 
-- Metrics don't yet support row-level security (RLS). 
+- Metrics don't yet support bring your own key (BYOK).
+- Metrics don't yet support row-level security (RLS).
 - For now, the maximum number of submetric levels is four.
-- Metrics don't support publish-to-web or app-owns-data scenarios for embedded.
+- Metrics don't support publish-to-web.
 - Business-to-business sharing (sharing across tenants) isn't supported.
-- Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md). 
+- Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
+- Scorecards aren't supported in [embedded analytics](../developer/embedded/embedded-analytics-power-bi.md).
 
-
-## Next steps
+## Related content
 
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)
 - [Stay on top of your metrics in Power BI](service-goals-check-in.md)
 - [Protect your scorecard with metric-level permissions](service-goals-set-permissions.md)
+- [Metrics admin settings](/fabric/admin/service-admin-portal-goals-settings)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-

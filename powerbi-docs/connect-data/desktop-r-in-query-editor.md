@@ -8,20 +8,20 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 11/20/2023
 LocalizationGroup: Connect to data
 ---
 # Use R in Power Query Editor
 
-[The R language](https://mran.microsoft.com/documents/what-is-r) is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
+The R language is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
 
 * Prepare data models.
 * Create reports.
-* Do data cleansing, advanced data shaping, and dataset analytics, which include missing data completion, predictions, clustering, and more.  
+* Do data cleansing, advanced data shaping, and semantic model analytics, which include missing data completion, predictions, clustering, and more.  
 
 ## Install R
 
-You can download R for free from the [Revolution R Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+You can download R for free from the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
 ## Install mice
 
@@ -39,7 +39,7 @@ To install the mice library:
 
 ## Use an R script in Power Query Editor
 
-To demonstrate using R in Power Query Editor, this example uses a stock market dataset contained in a .csv file.
+To demonstrate using R in Power Query Editor, this example uses a stock market semantic model contained in a .csv file.
 
 1. [Download the EuStockMarkets_NA.csv file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
@@ -63,10 +63,9 @@ To demonstrate using R in Power Query Editor, this example uses a stock market d
 
    :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor_5d.png" alt-text="[Screenshot shows Power Query Editor with Run R Script selected." lightbox="media/desktop-r-in-query-editor/r-in-query-editor_5d.png":::
 
-1. For this example, enter the following script code in the **Script** box of the **Run R script** window. Replace *&lt;Your File Path&gt;* with the path to *EuStockMarkets_NA.csv* on your local file system, for example, *C:/Users/admin/Documents/Microsoft/EuStockMarkets_NA.csv*.
+1. For this example, enter the following script code in the **Script** box of the **Run R script** window.
 
     ```r
-       dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
@@ -75,7 +74,7 @@ To demonstrate using R in Power Query Editor, this example uses a stock market d
     ```
 
     > [!NOTE]
-    > You might need to overwrite a variable named *output* to properly create the new dataset with the filters applied.
+    > You might need to overwrite a variable named *output* to properly create the new semantic model with the filters applied.
 
 1. Select **OK**. Power Query Editor displays a warning about data privacy.
 
@@ -89,7 +88,15 @@ To demonstrate using R in Power Query Editor, this example uses a stock market d
 
 1. Select **Save** to run the script.
 
-   Notice a new column in the **Fields** pane called **completedValues**. This column has a few missing data elements, such as on row 15 and 18. Take a look at how R handles that in the next section.
+   When you run the script, you see the following result:
+
+   :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor-11.png" alt-text="Screenshot of results of R script.":::
+   
+   When you select **Table** next to **Output** in the table that appears, the table is presented, as shown in the following image.
+
+   :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor-12.png" alt-text="Screenshot of table results from R script.":::
+   
+   Notice the new column in the **Fields** pane called **completedValues**. The SMI missing values column has a few missing data elements. Take a look at how R handles that in the next section.
 
    With just five lines of R script, Power Query Editor filled in the missing values with a predictive model.
 
@@ -106,7 +113,7 @@ You can save all completed visuals in one Power BI Desktop .pbix file and use th
 
 After you've uploaded the .pbix file to the Power BI service, you need to take other steps to enable service data refresh and updated visuals:  
 
-* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
+* **Enable scheduled refresh for the semantic model**: To enable scheduled refresh for the workbook containing your semantic model with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about on-premises data gateways.
 
 * **Install a gateway**: You need an on-premises data gateway (personal mode) installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [use personal gateways in Power BI](service-gateway-personal-mode.md).
 
@@ -124,13 +131,12 @@ There are some limitations to queries that include R scripts created in Power Qu
   
    :::image type="content" source="media/desktop-r-in-query-editor/r-in-query-editor_10.png" alt-text="Screenshot shows Data source settings dialog where you can edit permissions." lightbox="media/desktop-r-in-query-editor/r-in-query-editor_10.png":::
 
-* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R.
+* To schedule refresh of your R visuals or semantic model, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. You can't use an enterprise gateway to refresh semantic models containing R scripts in Power Query.
 
-## Next Steps
+## Related content
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
 
-* [Introduction to R](https://mran.microsoft.com/documents/what-is-r)
 * [Run R scripts in Power BI Desktop](desktop-r-scripts.md)
 * [Use an external R IDE with Power BI](desktop-r-ide.md)
 * [Create visuals by using R packages in the Power BI service](service-r-packages-support.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Get data from Power BI Desktop files
@@ -24,13 +24,13 @@ There are several locations where you might store Power BI Desktop files:
 
 - **Local**. If you save your file to a local drive on your computer or another location in your organization, you can *import* your file, or you can *publish* from Power BI Desktop to get its data and reports into the Power BI service.
 
-  Your file remains on your local drive. The whole file isn't moved into Power BI. A new dataset is created in Power BI and data and the data model from the Power BI Desktop file are loaded into the dataset. If your file has any reports, those reports appear in your Power BI service site under **Reports**.
+  Your file remains on your local drive. The whole file isn't moved into Power BI. A new semantic model is created in Power BI and data and the data model from the Power BI Desktop file are loaded into the semantic model. If your file has any reports, those reports appear in your Power BI service site under **Reports**.
 
-- **OneDrive for work or school**. By far, the most effective way to keep your work in Power BI Desktop in sync with the Power BI service is to use your OneDrive for work or school and sign in with the same account as the Power BI service. Your work includes dataset, reports, and dashboards. Because both the Power BI service and OneDrive are in the cloud, Power BI *connects* to your file on OneDrive about every hour. If it finds any changes, your dataset, reports, and dashboards are updated in the Power BI service.
+- **OneDrive for work or school**. By far, the most effective way to keep your work in Power BI Desktop in sync with the Power BI service is to use your OneDrive for work or school and sign in with the same account as the Power BI service. Your work includes semantic model, reports, and dashboards. Because both the Power BI service and OneDrive are in the cloud, Power BI *connects* to your file on OneDrive about every hour. If it finds any changes, your semantic model, reports, and dashboards are updated in the Power BI service.
 
 - **OneDrive - Personal**. If you save your files to your own OneDrive account, you get many of the same benefits as you would with OneDrive for work or school. The biggest difference is when you first connect to your file, you need to sign in to your OneDrive with your Microsoft account. This account is usually different from what you use to sign in to the Power BI service.
 
-  When signing in with your OneDrive with your Microsoft account, be sure to select the **Keep me signed in** option. This way, the Power BI service can connect to your file about every hour and make sure that your dataset in the Power BI service is in-sync.
+  When signing in with your OneDrive with your Microsoft account, be sure to select the **Keep me signed in** option. This way, the Power BI service can connect to your file about every hour and make sure that your semantic model in the Power BI service is in-sync.
 
 - **SharePoint Team-Sites**. Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for work or school. The biggest difference is how you connect to the file from the Power BI service. You can specify a URL or connect to the root folder. You can also [set up a Sync folder](https://support.microsoft.com/office/sync-sharepoint-and-teams-files-with-the-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88) that points to the SharePoint folder. Files in that folder sync up with the ones on SharePoint.
 
@@ -54,7 +54,8 @@ If you don't have a subscription, *OneDrive for work or school* and *SharePoint*
 
 :::image type="content" source="media/service-excel-workbook-files/excel-files-new-03.png" alt-text="Screenshot of subscription services disabled.":::
 
-You can't upload files from personal OneDrive accounts.
+> [!NOTE]
+> You can't upload files from SharePoint Document set folder or from personal OneDrive accounts.
 
 ## Publish a file from Power BI Desktop to the Power BI service
 
@@ -72,8 +73,8 @@ Here's the quick how to, but you can see [Publish from Power BI Desktop](../crea
 
    :::image type="content" source="media/service-desktop-files/pbid_publishing.png" alt-text="Screenshot of the Sign-in confirmation dialog, showing that you've successfully signed in with a link to open your report.":::
 
-## Next steps
+## Related content
 
-- **Explore your data**: Once you get data and reports from your file into the Power BI service, it's time to explore. If your file already has reports in it, they appear in the navigator pane in **Reports**. If your file just had data, you can create new reports; just right-click the new dataset and then select **Explore**.
+- **Explore your data**: Once you get data and reports from your file into the Power BI service, it's time to explore. If your file already has reports in it, they appear in the navigator pane in **Reports**. If your file just had data, you can create new reports; just right-click the new semantic model and then select **Explore**.
 
-- **Refresh external data sources**: If your Power BI Desktop file connects to external data sources, you can set up scheduled refresh to make sure your dataset is always up-to-date. In most cases, setting up scheduled refresh is easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](refresh-data.md) to learn more.
+- **Refresh external data sources**: If your Power BI Desktop file connects to external data sources, you can set up scheduled refresh to make sure your semantic model is always up-to-date. In most cases, setting up scheduled refresh is easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](refresh-data.md) to learn more.

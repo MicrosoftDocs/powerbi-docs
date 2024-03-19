@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/18/2022
+ms.date: 05/14/2023
 ---
 
 # Security features in Power BI Embedded
@@ -21,17 +21,17 @@ Power BI Embedded has several ways to filter data and restrict data access to sp
   OLS enables you to hide specific tables or columns from report viewers. You can also secure sensitive object names and metadata to prevent them from being discovered.
 
 * [**Workspace based isolation**](./embed-multi-tenancy.md) and multitenancy  
- In this scenario, each customer has their own separate dataset. Since each customer only has access to their own workspace, no further filtering needed, though this method can be combined with RLS to further filter data within each organization.
+ In this scenario, each customer has their own separate semantic model. Since each customer only has access to their own workspace, no further filtering needed, though this method can be combined with RLS to further filter data within each organization.
 
 ## Security solutions for different ISV scenarios
 
 Depending on the situation, some common cases where security measures can be applied include:
 
-* Small to medium sized [ISVs](pbi-glossary.md#independent-software-vendor-isv) who serve multiple customers and want each customer to see their own data only. If the customer base isn't too large, the ISV can use a single dataset and report for all their customers, and use [dynamic RLS](cloud-rls.md#dynamic-security) to filter the data for each customer.
+* Small to medium sized [ISVs](pbi-glossary.md#independent-software-vendor-isv) who serve multiple customers and want each customer to see their own data only. If the customer base isn't too large, the ISV can use a single semantic model and report for all their customers, and use [dynamic RLS](cloud-rls.md#dynamic-security) to filter the data for each customer.
 
 * ISVs who serve one or more large customers or organizations with multiple departments. The ISV can  separate their customers with a combination of [static and dynamic RLS](./embed-multi-tenancy.md#row-level-security), and possibly OLS.
 
-* Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and dataset and the ISV can further [filter within each organization using RLS](./embed-multi-tenancy.md#row-level-security).
+* Large scale ISVs with thousands of customers where each customer needs to see only their own data. The ISV can use [workspace based isolation with service principal profiles](./embed-multi-tenancy.md). Each customer can get their own report and semantic model and the ISV can further [filter within each organization using RLS](./embed-multi-tenancy.md#row-level-security).
 
 ## Embed a report that uses security features
 
@@ -49,7 +49,7 @@ For instructions on how to embed reports or other items, go to the link that bes
 * Assigning users to roles within the Power BI service doesn't affect RLS or OLS when using an embed token (*App owns data* scenario only).
 * Although RLS settings don't apply to admins, members, or contributors, when you supply an identity with an embed token, the RLS permissions of that identity will be applied to the data.
 
-## Next steps
+## Related content
 
 * [Generate an embed token](./generate-embed-token.md)
 * [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md)

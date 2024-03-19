@@ -44,9 +44,10 @@ There are five main steps for using a gateway:
 1. [Use the gateway](service-gateway-sql-tutorial.md) to refresh an on-premises data source.
 1. [Troubleshoot](service-gateway-onprem-tshoot.md) issues with the gateway.
 
-## Next steps
+## Related content
 
 * [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
+* [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
  

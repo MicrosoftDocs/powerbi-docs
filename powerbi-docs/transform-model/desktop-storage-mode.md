@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/31/2023
+ms.date: 01/08/2024
 LocalizationGroup: Transform and shape data
 ---
 
 # Manage storage mode in Power BI Desktop
 
-In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports.
+In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports. Caching means temporarily storing data in memory.
 
-Setting the storage mode provides many advantages. You can set the storage mode for each table individually in your model. This action enables a single dataset, which provides the following benefits:
+Setting the storage mode provides many advantages. You can set the storage mode for each table individually in your model. This action enables a single semantic model, which provides the following benefits:
 
-* **Query performance**: As users interact with visuals in Power BI reports, Data Analysis Expressions (DAX) queries are submitted to the dataset. Caching data into memory by properly setting the storage mode can boost the query performance and interactivity of your reports.
+* **Query performance**: As users interact with visuals in Power BI reports, Data Analysis Expressions (DAX) queries are submitted to the semantic model. Caching data into memory by properly setting the storage mode can boost the query performance and interactivity of your reports.
 
-* **Large datasets**: Tables that aren't cached don't consume memory for caching purposes. You can enable interactive analysis over large datasets that are too large or expensive to completely cache into memory. You can choose which tables are worth caching, and which aren't.
+* **Large semantic models**: Tables that aren't cached don't consume memory for caching purposes. You can enable interactive analysis over large semantic models that are too large or expensive to completely cache into memory. You can choose which tables are worth caching, and which aren't.
 
 * **Data refresh optimization**: You don't need to refresh tables that aren't cached. You can reduce refresh times by caching only the data that's necessary to meet your service level agreements and your business requirements.
 
@@ -48,11 +48,11 @@ To set the **Storage mode** property, or view its current setting:
 
 You set the **Storage mode** property to one of these three values:
 
-* **Import**: Imported tables with this setting are cached. Queries submitted to the Power BI dataset that return data from Import tables can be fulfilled only from cached data.
+* **Import**: Imported tables with this setting are cached. Queries submitted to the Power BI semantic model that return data from Import tables can be fulfilled only from cached data.
 
-* **DirectQuery**: Tables with this setting aren't cached. Queries that you submit to the Power BI dataset&mdash;for example, DAX queries&mdash;and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that you submit to the data source use the query language for that data source, for example, SQL.
+* **DirectQuery**: Tables with this setting aren't cached. Queries that you submit to the Power BI semantic model - for example, DAX queries - and that return data from DirectQuery tables can be fulfilled only by executing on-demand queries to the data source. Queries that you submit to the data source use the query language for that data source, for example, SQL.
 
-* **Dual**: Tables with this setting can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI dataset. In some cases, you fulfill queries from cached data. In other cases, you fulfill queries by executing an on-demand query to the data source.
+* **Dual**: Tables with this setting can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI semantic model. In some cases, you fulfill queries from cached data. In other cases, you fulfill queries by executing an on-demand query to the data source.
 
 Changing the **Storage mode** of a table to **Import** is an *irreversible* operation. After this property is set, it can't later be changed to either **DirectQuery** or **Dual**.
 
@@ -73,7 +73,7 @@ Let’s say all tables in this model are initially set to **DirectQuery**. If yo
 
 :::image type="content" source="media/desktop-storage-mode/storage-mode-05.png" alt-text="Screenshot showing a warning window that describes the results of changing the storage mode to Import.":::
 
-You can set the dimension tables (**Customer**, **Geography**, and **Date**) to **Dual** to reduce the number of limited relationships in the dataset, and improve performance. Limited relationships normally involve at least one DirectQuery table where join logic can't be pushed to the source systems. Because Dual tables can act as either DirectQuery or Import tables, this situation is avoided.
+You can set the dimension tables (**Customer**, **Geography**, and **Date**) to **Dual** to reduce the number of limited relationships in the semantic model, and improve performance. Limited relationships normally involve at least one DirectQuery table where join logic can't be pushed to the source systems. Because Dual tables can act as either DirectQuery or Import tables, this situation is avoided.
 
 The propagation logic is designed to help with models that contain many tables. Suppose you have a model with 50 tables and only certain fact (transactional) tables need to be cached. The logic in Power BI Desktop calculates the minimum set of dimension tables that must be set to **Dual**, so you don’t have to.
 
@@ -135,7 +135,7 @@ The **Dual** storage mode is a performance optimization. It should be used only 
 
 ## Data view
 
-If at least one table in the dataset has its storage mode set to either **Import** or **Dual**, the **Data** view tab is displayable.
+If at least one table in the semantic model has its storage mode set to either **Import** or **Dual**, the **Data** view tab is displayable.
 
 :::image type="content" source="media/desktop-storage-mode/storage-mode-03.png" alt-text="Screenshot highlighting the Data view icon.":::
 
@@ -143,21 +143,18 @@ When you select Dual and Import tables in **Data** view, they show cached data. 
 
 ## Considerations and limitations
 
-There are a few limitations for this release of storage mode and its correlation with composite models.
+There are a few limitations for the current release of storage mode and its correlation with composite models.
 
 The following live connection (multi-dimensional) sources can't be used with composite models:
 
 * SAP HANA
 * SAP Business Warehouse
-* SQL Server Analysis Services
-* Power BI datasets
-* Azure Analysis Services
 
-When you connect to those multi-dimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
+When you connect to those multi-dimensional sources using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
 
 The existing limitations of using DirectQuery still apply when you use composite models. Many of those limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery.
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

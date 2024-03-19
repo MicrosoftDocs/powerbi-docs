@@ -1,23 +1,21 @@
 ---
-title: Enhanced refresh with the Power BI REST API 
-description: Learn how to do enhanced dataset refreshes by using the Power BI Refresh Dataset REST API.
-author: minewiskan
-ms.author: owend
+title: Enhanced refresh with the Power BI REST API
+description: Learn how to do enhanced semantic model refreshes by using the Power BI Refresh Dataset REST API.
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 02/14/2023
-ms.custom: contperf-fy21q4
-LocalizationGroup: 
+ms.date: 01/08/2024
 ---
 
 # Enhanced refresh with the Power BI REST API
 
-You can use any programming language that supports REST calls to do dataset refresh operations by using the Power BI Refresh Dataset REST API.
+You can use any programming language that supports REST calls to do semantic model refresh operations by using the Power BI Refresh Dataset REST API.
 
-Optimized refresh for large and complex partitioned datasets is traditionally invoked with programming methods that use TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). However, these methods require long-running HTTP connections that can be unreliable.
+Optimized refresh for large and complex partitioned models is traditionally invoked with programming methods that use TOM (Tabular Object Model), PowerShell cmdlets, or TMSL (Tabular Model Scripting Language). However, these methods require long-running HTTP connections that can be unreliable.
 
-The Power BI Refresh Dataset REST API can carry out dataset refresh operations asynchronously, so long-running HTTP connections from client applications aren't necessary. Compared to standard refresh operations, *enhanced refresh* with the REST API provides more customization options and the following features that are helpful for large models:
+The Power BI Refresh Dataset REST API can carry out model refresh operations asynchronously, so long-running HTTP connections from client applications aren't necessary. Compared to standard refresh operations, *enhanced refresh* with the REST API provides more customization options and the following features that are helpful for large models:
 
 - Batched commits
 - Table and partition-level refresh
@@ -45,22 +43,22 @@ You can append resources and operations to the base URL based on parameters. In 
 
 You need the following requirements to use the REST API:
 
-- A dataset in Power BI Premium, Premium per user, or Power BI Embedded.
+- A semantic model in Power BI Premium, Premium per user, or Power BI Embedded.
 - A group ID and dataset ID to use in the request URL.
 - **Dataset.ReadWrite.All** permission scope.
 
-The number of refreshes is limited per the general limitations for API-based refreshes for Pro and Premium datasets.
+The number of refreshes is limited per the general limitations for API-based refreshes for Pro and Premium models.
 
 ## Authentication
 
-All calls must authenticate with a valid Azure Active Directory (Azure AD) OAuth 2 token in the Authorization header. The token must meet the following requirements:
+All calls must authenticate with a valid Microsoft Entra ID OAuth 2 token in the Authorization header. The token must meet the following requirements:
 
 - Be either a user token or an application service principal.
 - Have the audience correctly set to `https://api.powerbi.com`.
-- Be used by a user or application that has sufficient permissions on the dataset.
+- Be used by a user or application that has sufficient permissions on the model.
 
 > [!NOTE]
-> REST API modifications don't change currently defined permissions for dataset refreshes.
+> REST API modifications don't change currently defined permissions for model refreshes.
 
 ## POST /refreshes
 
@@ -94,7 +92,7 @@ The request body might resemble the following example:
 ```
 
 > [!NOTE]
-> The service accepts only one refresh operation at a time for a dataset. If there's a current running refresh and another request is submitted, a `400 Conflict` HTTP status code returns.
+> The service accepts only one refresh operation at a time for a model. If there's a current running refresh and another request is submitted, a `400 Bad Request` HTTP status code returns.
 
 ### Parameters
 
@@ -103,12 +101,12 @@ To do an enhanced refresh operation, you must specify one or more parameters in 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types align with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. The `add` type isn't supported.      |
-|`commitMode`    |   Enum       |    `transactional`     |     Determines whether to commit objects in batches or only when complete. Modes are `transactional` and `partialBatch`.     |
+|`commitMode`    |   Enum       |    `transactional`     |     Determines whether to commit objects in batches or only when complete. Modes are `transactional` and `partialBatch`. When using `partialBatch` the refresh operation doesn’t occur within one transaction. Each command is committed individually. If there’s a failure, the model might be empty or include only a subset of the data. To safeguard against failure and keep the data that was in the model before the operation started, execute the operation with `commitMode = transactional`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads that can run the processing commands in parallel. This value aligns with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation retries before failing.      |
-|`objects`     |    Array      |    Entire dataset      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire dataset refreshes.      |
+|`objects`     |    Array      |    Entire model      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire model refreshes.      |
 |`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
-|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
+|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date. If not specified, UTC is used to determine the current day.      |
 
 ### Response
 
@@ -144,8 +142,7 @@ The response body might look like the following example:
         "startTime": "2020-12-07T01:05:54.157324Z",
         "refreshType": "ViaEnhancedApi",
         "endTime": "2020-12-07T01:05:57.353371Z",
-        "status": "Unknown",
-        "extendedStatus": "InProgress"
+        "status": "Unknown"
     }
     {
         "requestId": "85a82498-2209-428c-b273-f87b3a1eb905",
@@ -167,7 +164,7 @@ The response body might look like the following example:
 |Name  |Type  |Description  |
 |---------|---------|---------|
 |`requestId`     |    Guid     |    The identifier of the refresh request. You need `requestId` to query for individual refresh operation status or cancel an in-progress refresh operation. |
-|`refreshType`   |   String      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates that a dataset refresh schedule triggered the refresh. <br>`ViaApi` indicates that an API call triggered the refresh. <br>`ViaEnhancedApi` indicates that an API call triggered an enhanced refresh.|
+|`refreshType`   |   String      |    `OnDemand` indicates the refresh was triggered interactively through the Power BI portal.<br>`Scheduled` indicates that a model refresh schedule triggered the refresh. <br>`ViaApi` indicates that an API call triggered the refresh. <br>`ViaEnhancedApi` indicates that an API call triggered an enhanced refresh.|
 |`startTime`     |    String     |    Date and time of refresh start.     |
 |`endTime`     |   String      |    Date and time of refresh end.     |
 |`status`     |  String       |   `Completed`  indicates the refresh operation completed successfully. <br>`Failed` indicates the refresh operation failed. <br>`Unknown` indicates that the completion state can't be determined. With this status, `endTime` is empty.   <br>`Disabled` indicates that the refresh was disabled by selective refresh. <br>`Cancelled` indicates the refresh was canceled successfully.|
@@ -181,7 +178,7 @@ The response body might look like the following example:
 The Power BI REST API supports limiting the requested number of entries in the refresh history by using the optional `$top` parameter. If not specified, the default is all available entries.
 
 ```http
-GET https://api.powerbi.com/v1.0/myorg/datasets/{datasetId}/refreshes?$top={$top}      
+GET https://api.powerbi.com/v1.0/myorg/groups/{groupId}/datasets/{datasetId}/refreshes?$top={$top}      
 ```
 
 ## GET /refreshes/\<requestId>
@@ -227,17 +224,17 @@ The refresh operation has the following considerations and limitations:
 
 #### Standard refresh operations
 
-- You can't cancel scheduled or on-demand manual dataset refreshes by using `DELETE /refreshes/<requestId>`.
-- Scheduled and on-demand manual dataset refreshes don't support getting refresh operation details by using `GET /refreshes/<requestId>`.
+- You can't cancel scheduled or on-demand manual model refreshes by using `DELETE /refreshes/<requestId>`.
+- Scheduled and on-demand manual model refreshes don't support getting refresh operation details by using `GET /refreshes/<requestId>`.
 - Get details and Cancel are new operations for enhanced refresh only. Standard refresh doesn't support these operations.
 
 #### Power BI Embedded
 
 If capacity is paused manually in the Power BI portal or by using PowerShell, or a system outage occurs, the status of any ongoing enhanced refresh operation remains `InProgress` for a maximum of six hours. If the capacity resumes within six hours, the refresh operation resumes automatically. If the capacity resumes after longer than six hours, the refresh operation might return a timeout error. You must then restart the refresh operation.
 
-#### Dataset eviction
+#### Semantic model eviction
 
-Power BI uses dynamic memory management to optimize capacity memory. If the dataset is evicted from memory during a refresh operation, the following error might return:
+Power BI uses dynamic memory management to optimize capacity memory. If the model is evicted from memory during a refresh operation, the following error might return:
 
 ```json
 {
@@ -252,7 +249,7 @@ Power BI uses dynamic memory management to optimize capacity memory. If the data
 
 ```
 
-The solution is to rerun the refresh operation. To learn more about dynamic memory management and dataset eviction, see [Dataset eviction](../enterprise/service-premium-large-models.md#dataset-eviction).
+The solution is to rerun the refresh operation. To learn more about dynamic memory management and model eviction, see [Model eviction](../enterprise/service-premium-large-models.md#semantic-model-eviction).
 
 #### Refresh operation time limits
 
@@ -260,7 +257,7 @@ The maximum amount of time for a single refresh operation is five hours. If the 
 
 If `retryCount` specifies `1` or another number, a new refresh operation with a five-hour limit starts. If this retry operation fails, the service continues to retry the refresh operation up to the greatest number of retries that `retryCount` specifies, or the enhanced refresh processing time limit of 24 hours from the beginning of the first refresh request.
 
-When you plan your enhanced dataset refresh solution with the Refresh Dataset REST API, it's important to consider these time limits and the `retryCount` parameter. A successful refresh completion can exceed five hours if an initial refresh operation fails and `retryCount` specifies `1` or more.
+When you plan your enhanced model refresh solution with the Refresh Dataset REST API, it's important to consider these time limits and the `retryCount` parameter. A successful refresh completion can exceed five hours if an initial refresh operation fails and `retryCount` specifies `1` or more.
 
 For example, if you request a refresh operation with `"retryCount": 1`, and the initial retry operation fails four hours from the start time, a second refresh operation for that request begins. If that second refresh operation succeeds in three hours, the total time for successful execution of the refresh request is seven hours.
 
@@ -278,7 +275,7 @@ To use the code sample:
 
 The code sample uses service principal authentication.
 
-## See also
+## Related content
 
 - [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset)  
 - [Use the Power BI REST APIs](/rest/api/power-bi/)  

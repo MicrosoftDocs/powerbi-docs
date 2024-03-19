@@ -131,8 +131,8 @@ To see all the metrics you're following, tap the metrics display dropdown in the
 
 It makes no difference whether the metric was marked for following in the Power BI service or in the mobile app - you'll see them all. Likewise, in the Power BI service you'll also be able to see all your followed metrics - including those that you started following from the mobile app.
 
-## Next steps
- 
+## Related content
+
 * [Introducing metrics in Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-goals-in-power-bi/)
 * [Get started with metrics in Power BI](../../create-reports/service-goals-introduction.md)
 * [Stay on top of your metrics in Power BI](../../create-reports/service-goals-check-in.md)

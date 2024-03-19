@@ -7,7 +7,6 @@ ms.reviewer: 'sunaraya'
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.custom: contperf-fy21q4
 ms.date: 11/11/2022
 LocalizationGroup: Create reports
 ---
@@ -93,7 +92,7 @@ Go to the menu and select **SalesQuantity** again, the visual defaults to being 
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
 --->
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

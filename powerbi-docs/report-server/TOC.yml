@@ -68,7 +68,7 @@
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: /sql/reporting-services/working-with-kpis-in-reporting-services
-      - name: "Access shared datasets as OData feeds"
+      - name: "Access shared semantic models as OData feeds"
         href: access-dataset-odata.md
       - name: "Change data source connection strings with PowerShell"
         href: connect-data-source-apis.md
@@ -92,12 +92,14 @@
         href: configure-kerberos-powerbi-reports.md
       - name: "Configure mobile app access remotely"
         href: configure-powerbi-mobile-apps-remote.md
+      - name: "Configure a report server with Azure Application Proxy"
+        href: azure-application-proxy.md 
       - name: "Configure WAP and AD FS"
         href: connect-adfs-wap-report-server.md
-      - name: "Configure a report server with Azure Application Proxy"
+      - name: "Configure a report server with Microsoft Entra application proxy"
         href: azure-application-proxy.md
-      - name: "Remote mobile access with Azure AD"
-        href: /azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
+      - name: "Remote mobile access with Microsoft Entra ID"
+        href: /entra/identity/app-proxy/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
         href: excel-oos.md
   - name: Troubleshoot

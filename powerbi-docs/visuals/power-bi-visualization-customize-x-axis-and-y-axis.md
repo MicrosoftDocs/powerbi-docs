@@ -10,7 +10,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 06/13/2022
+ms.date: 04/17/2023
 LocalizationGroup: Visualizations
 ---
 
@@ -25,7 +25,7 @@ Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different 
 > [!NOTE]  
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/9DeAKM4SNJM]
 
 ## Prerequisites
 
@@ -57,7 +57,9 @@ Now you can customize your X-axis. Power BI gives you almost limitless options f
 
 ## Customize the X-axis
 
-There are many features that are customizable for the X-axis. You can add and modify the data labels and X-axis title. For categories, you can modify the width, size, and padding of bars, columns, lines, and areas. And for values, you can modify the display units, decimal places, and grid lines. The following example shows customization for a column chart. Let's add a few customizations to get you familiar with the options and then you can explore the rest on your own.
+There are many features that are customizable for the X-axis. You can add and modify the data labels and X-axis title. For categories, you can modify the width, size, and padding of bars, columns, lines, and areas. And for values, you can modify the display units, decimal places, and grid lines. If the primary axis data type is scalar, you can choose between continuous axis (the default for scalar types like numeric and datetime) or categorical. Continuous axes can be linear or log scale, and show all the data without scrolling. Categorical axes show the category label for each data point, and will scroll if content doesn't fit within the plot area.
+
+The following example shows customization for a column chart. Let's add a few customizations to get you familiar with the options and then you can explore the rest on your own.
 
 ### Customize the X-axis labels
 
@@ -238,7 +240,11 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png" alt-text="Screenshot of the column chart with values on the y axis inverted.":::
 
-## Next steps
+## Considerations and limitations
+
+- For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
+
+## Related content
 
 - [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 

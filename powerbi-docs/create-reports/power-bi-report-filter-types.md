@@ -84,12 +84,12 @@ Pass-through filters are visual-level filters created through Q&A. If you can ed
 
 ![Screenshot of a visual, highlighting the information that has the pass-through filter applied.](media/power-bi-report-filter-types/power-bi-filters-qna.png)
 
-## Next steps
+## Related content
 
-[Add filters to reports](power-bi-report-add-filter.md)
+- [Add filters to reports](power-bi-report-add-filter.md)
 
-[Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
+- [Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
 
-[Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
+- [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
 For more information, see [the Power BI Community](https://community.powerbi.com/)

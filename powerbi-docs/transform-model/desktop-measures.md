@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 11/17/2023
 LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
@@ -35,23 +35,23 @@ DAX formulas are a lot like Excel formulas. DAX even has many of the same functi
 
 ## Let’s look at an example
 
-Jan is a sales manager at Contoso. Jan has been asked to provide reseller sales projections over the next fiscal year. Jan decides to base the estimates on last year's sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
+Janice is a sales manager at Contoso. Janice has been asked to provide reseller sales projections over the next fiscal year. Janice decides to base the estimates on last year's sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Jan imports last year's sales data into Power BI Desktop. Jan finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Jan renames the **SalesAmount** field to *Last Years Sales*. Jan then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that is the sum of all reseller sales from last year.
+To report the estimates, Janice imports last year's sales data into Power BI Desktop. Janice finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Janice renames the **SalesAmount** field to *Last Years Sales*. Janice then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that is the sum of all reseller sales from last year.
 
-Jan notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
+Janice notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
 
-But Jan needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Jan will create a measure. Jan creates a new measure by using the *New Measure* feature, then enters the following DAX formula:
+But Janice needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Janice will create a measure. Janice creates a new measure by using the *New Measure* feature, then enters the following DAX formula:
 
 ```dax
-    Projected Sales = SUM('Sales'[Last Years Sales])*1.06
+    Projected Sales = SUM('Reseller Sales'[Last Years Sales])*1.06
 ```
 
-Jan then drags the new Projected Sales measure into the chart.
+Janice then drags the new Projected Sales measure into the chart.
 
 :::image type="content" source="media/desktop-measures/measuresinpbid_lastyearsales.png" alt-text="Screenshot of the new Projected Sales visual.":::
 
-Quickly and with minimal effort, Jan now has a measure to calculate projected sales. Jan can further analyze the projections by filtering on specific resellers or by adding other fields to the report.
+Quickly and with minimal effort, Janice now has a measure to calculate projected sales. Janice can further analyze the projections by filtering on specific resellers or by adding other fields to the report.
 
 ## Data categories for measures
 
@@ -81,6 +81,10 @@ You can create a special table that contains only measures. That table always ap
 
 > [!TIP]
 > Hidden measures are displayed and accessible in Power BI Desktop, however, you won't see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
+
+## Dynamic format strings
+
+With *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. To learn more, see [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md).
 
 ## Learn more
 
