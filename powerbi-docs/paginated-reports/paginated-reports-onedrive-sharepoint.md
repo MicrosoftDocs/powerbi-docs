@@ -17,7 +17,7 @@ ms.date: 03/19/2024
 
 You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint. 
 
-:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screeenshot showing in the Subscriptions pane, select create a subscription." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png":::
+:::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screenshot showing in the Subscriptions pane, select create a subscription." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png":::
 
 Subscribe to your Power BI and paginated reports to deliver them to OneDrive SharePoint. Your full report gets delivered to the OneDrive SharePoint location that you can select when you set up your subscription.
 
