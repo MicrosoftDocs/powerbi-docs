@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/14/2023
+ms.date: 03/13/2024
 ---
 
 # Explore your data in the Power BI service (preview)
@@ -22,14 +22,16 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Find a dataset or report](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
 
-1. [Begin exploring by building your matrix or PivotTable](#2-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
+1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
+
+1. [Begin exploring by building your matrix or PivotTable](#3-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
 
     > [!NOTE]
     > A matrix is like a [PivotTable in Excel](https://support.microsoft.com/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576).
 
-1. [Add filters if you need them](#3-add-filters-if-you-need-them). 
+1. [Add filters if you need them](#4-add-filters-if-you-need-them). 
 
-1. [Save and share your exploration](#4-save-and-share-your-exploration). 
+1. [Save and share your exploration](#5-save-and-share-your-exploration). 
 
 ## 1. Find a dataset or report you’d like to explore
 
@@ -53,7 +55,17 @@ What if while working with a datamart, you’d like to visualize and explore the
 
 :::image type="content" source="media/explore-data-service/sql-query-explore-data.png" alt-text="Screenshot showing Explore this data for a SQL query.":::
 
-## 2. Begin exploring by building your matrix or visual 
+## 2. Create an overview of the data with Copilot
+
+1. Select **Data overview** > **Create with Copilot**.
+
+    :::image type="content" source="media/explore-data-service/create-data-overview-copilot.png" alt-text="Screenshot showing select Create with Copilot.":::
+
+    Copilot creates a paragraph describing the data.
+
+    :::image type="content" source="media/explore-data-service/copilot-paragraph-overview.png" alt-text="Screenshot showing the paragraph Copilot created.":::
+
+## 3. Begin exploring by building your matrix or visual 
 
 Regardless of where you start from, when you launch the explore experience you land in the new focused view. Your data is on the right, and you can edit, drag and drop, or select fields to start building a matrix or visual.  
 
@@ -90,7 +102,7 @@ When you do so on the visual, the matrix also updates accordingly.
 > [!NOTE]
 > Certain matrix configurations can't currently be visualized in other chart types. Depending on the situation, a visual may not be rendered or the sort and drill state may not apply. For example, if you expand one specific row in the matrix, that won't apply in the visual, because that interaction within other visual types isn't currently supported.  
 
-## 3. Add filters if you need them
+## 4. Add filters if you need them
 
 As you build out your exploration, you can also take advantage of a new filtering experience. Select the **Add filter** button on the top left to quickly add filters on the fields already in your visual or pick from any fields in your dataset in the **All data** section.  
 
@@ -99,9 +111,8 @@ As you build out your exploration, you can also take advantage of a new filterin
 In this exploration experience, the filters are added as pills at the top of view, so you can easily see what the current filter state is and quickly modify it on the fly.  
 
 :::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
- 
 
-## 4. Save and share your exploration 
+## 5. Save and share your exploration 
 
 ### Save your exploration
 
