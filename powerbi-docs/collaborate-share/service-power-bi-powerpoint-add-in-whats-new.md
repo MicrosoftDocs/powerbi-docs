@@ -1,18 +1,40 @@
 ---
 title: What's new in the Power BI add-in for PowerPoint
 description: Learn about new features recently added to the Power BI add-in for PowerPoint.
-author: ajburnle
-ms.author: ajburnle
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.topic: how-to
+ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 02/09/2024
+ms.date: 03/10/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## March 2024
+
+### Improved static image mode
+
+The "save as static image" functionalilty that enables you to turn your live view of Power BI data into a static image has been improved and expanded!
+
+* A new dropdown menu in the add-in footer makes it easy to switch between live data and a static image.
+
+    :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/snapshot-toggle.png" alt-text="Screenshot of the Power BI PowerPoint add-in showing the snapshot menu." border="false":::
+	
+* New static image options make it possible to use static images without having to worry about inadvertently exposing Power BI content to unauthorized users.
+
+    * **Snapshot**: When you choose Snapshot, only users who have permission to view the report in Power BI will see the static image. Users who don't have permission will be able to request access. This option helps prevent inadvertently showing Power BI content to unauthorized users.
+
+	* **Public snapshot**: When you choose Public snapshot, anyone who can view the presentation will see the static image, regardless of their permissions in Power BI.
+
+The improved functionality also helps prevent inadvertant exposure of Power BI content in the slide thumbnails you see in such places as the navigation pane and slide sorter. Now thumbnails of slides that include an add-in merely display a blue-cube until the slide with the add-in actually loads and Power BI permissions are checked. At that point the thumbnail captures an image of whatever is displayed in the slide.
+
+The improved save-as-static-image functionallty requires **Office version 2312 (Build 17126)** or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
+
+You can only switch between live data and a static image in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
 
 ## February 2024
 

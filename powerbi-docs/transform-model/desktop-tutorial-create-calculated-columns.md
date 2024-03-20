@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: tutorial
-ms.date: 01/06/2023
+ms.date: 03/15/2024
 LocalizationGroup: Learn more
 ---
 # Tutorial: Create calculated columns in Power BI Desktop
@@ -128,3 +128,8 @@ Calculated columns can enrich your data and provide easier insights. You've lear
 If you want to take a deeper dive into DAX formulas and create calculated columns with more advanced formulas, see [DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/) to your favorites. This reference is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.
+
+Other articles of interest:
+
+* [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+* [Using calculations options in Power BI Desktop](desktop-calculations-options.md)

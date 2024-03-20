@@ -1,8 +1,8 @@
 ---
 title: The Power BI add-in for PowerPoint in national/regional clouds
 description: See a summary of how and why the add-in when it's deployed in a national/regional cloud differs slightly from when it's deployed in a public cloud.
-author: ajburnle
-ms.author: ajburnle
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,7 +10,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.custom: references_regions
 LocalizationGroup: Share your work
-ms.date: 08/15/2023
+ms.date: 02/25/2024
 ---
 
 # The Power BI add-in for PowerPoint in national/regional clouds
