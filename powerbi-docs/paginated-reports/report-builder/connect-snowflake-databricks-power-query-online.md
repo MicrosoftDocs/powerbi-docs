@@ -1,7 +1,7 @@
 ---
 title: "Connect to Snowflake and Databricks with Power Query Online"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 03/07/2024
+ms.date: 03/20/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -65,17 +65,11 @@ This will open the Power Query Editor, where you can transform and load your dat
 
 As an example, I merged 3 tables in the Power Query Editor to create a new merged table named **ALL_Merged**. 
 
-A screenshot of a computer
+Select **Create** to add the data source and the dataset to Power BI Report Builder. You will see a success message and you need to select **OK** for the dataset and data source to be created. 
 
-> [!NOTE]
-> The **Enable load** option must be selected for the dataset/table to be loaded correctly in Power BI Report builder. 
+A screenshout of a computer
 
-A screenshot of a computer
-
-
-
-- Select **Create** to add the data source and the dataset to Power BI Report Builder. You will see a success message and you need to select **OK** for the dataset and data source to be created. 
-- You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under Data Sources and Datasets respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
+You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under Data Sources and Datasets respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
 
  
 
