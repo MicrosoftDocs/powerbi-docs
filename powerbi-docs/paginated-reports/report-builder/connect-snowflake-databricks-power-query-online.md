@@ -1,15 +1,15 @@
 ---
 title: "Connect to Snowflake and Databricks with Power Query Online"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 03/07/2024
+ms.date: 03/20/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: cookiemccray
+ms.reviewer: nirusrin
 ---
-# Connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder
+# Connect to Snowflake, Databricks, and others with Power Query Online in Power BI Report Builder
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -19,7 +19,7 @@ That's where Power Query Online comes in. Power Query Online is a data transform
 
 ## Prerequisites 
 
-To use the new Get Data feature in Power BI Report Builder, you need to have the latest version of Power BI Report Builder installed on your machine. You can [download it].  
+To use the new Get Data feature in Power BI Report Builder, you need to have the latest version of Power BI Report Builder installed on your machine. You can [download it](https://go.microsoft.com/fwlink/?linkid=2086513).  
 
 You also need to sign in to Power BI Report Builder with your Power BI account.
 
@@ -29,93 +29,66 @@ Follow these steps to connect to a data source using Power Query Online:
 
 - Select **Get Data** from the toolbar, or right-click **Data Sources or Datasets** in the Report Data pane. 
 
- 
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-data-toolbar.png" alt-text="Screenshot showing select Get data on the toolbar.":::
 
     OR 
 
- 
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/get-data-data-source.png" alt-text="Screenshot showing select Get data from  Data Sources.":::
 
     OR 
 
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/get-data-dataset.png" alt-text="Screenshot showing select Get data from  Datasets.":::
 
-After you select **Get data**, you must select the data source that you want to connect to from the list, or search for it by name or category. For example, select Snowflake, a cloud data warehouse service. 
+- After you select **Get data**, select the data source that you want to connect to from the list, or search for it by name or category. For example, select Snowflake, a cloud data warehouse service. 
 
-A screenshot of a computer
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-view-more-data-sources.png" alt-text="Screenshot showing select a data source.":::
 
+- Enter the required information to connect to the data source, such as the server name, database name, and authentication method.  
 
-Enter the required information to connect to the data source, such as the server name, database name, and authentication method.  
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png" alt-text="Screenshot showing enter your credentials.":::
 
-A screenshot of a computer
+    You can either use an existing shareable cloud connection or create a new connection. Learn more about [shareable cloud connections](../connect-data/service-create-share-cloud-data-sources.md). 
 
-
-
-You can either use an existing shareable cloud connection or create a new connection. Learn more about shareable cloud connections. 
-
-A screenshot of a computer
-
-
-
-Once you select/create a connection, select **Next**. Select the tables that you want to use in your report and select Transform Data.  
+- After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
 
 A screenshot of a computer
 
+This opens the Power Query Editor, where you can transform and load your data. All Power Query editor functionality is available. Learn more about [Power Query](/power-query.md). 
 
+As an example, I merged three tables in the Power Query Editor to create a new merged table named **ALL_Merged**. 
 
-This will open the Power Query Editor, where you can transform and load your data. All power query editor functionality is available. Learn more about Power Query. 
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png" alt-text="Screenshot showing a new merged table.":::
 
-As an example, I merged 3 tables in the Power Query Editor to create a new merged table named **ALL_Merged**. 
+- Select **Create** to add the data source and the dataset to Power BI Report Builder. You see a success message. Select **OK** for the dataset and data source to be created. 
+- You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under Data Sources and Datasets, respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
 
-A screenshot of a computer
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-created.png" alt-text="Screenshot showing the new table.":::
 
-> [!NOTE]
-> The **Enable load** option must be selected for the dataset/table to be loaded correctly in Power BI Report builder. 
+## Edit an RDL dataset created by using Get Data 
 
-A screenshot of a computer
+You can edit the RDL dataset in the Get Data experience. For this, right-click the dataset and select **Edit Mashup**. This opens the Power Query editor, where you can edit the M query. 
 
-
-
-- Select **Create** to add the data source and the dataset to Power BI Report Builder. You will see a success message and you need to select **OK** for the dataset and data source to be created. 
-- You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under Data Sources and Datasets respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
-
- 
-
-A screenshot of a computer
-
- 
-
- 
-
-## Edit an RDL Dataset created using Get Data 
-
-You can edit the RDL dataset via the Get Data experience. For this, right-click the dataset and select **Edit Mashup**. This will open the power query editor where you can edit the M query. 
-
-screenshot
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
 > [!NOTE]
 > If you had defined a parameter, you may have to define it again if the field is not part of the new M query. 
 
 ## Next steps 
 
-Once you have a dataset that you created using Power Query Online, you can use it to create a paginated report in Power BI Report Builder, like you would with any other RDL dataset. You can use the report design tools, such as the Report Wizard, the Toolbox, the Properties window, and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report. 
+After you have a dataset that you created using Power Query, you can use it to create a paginated report in Power BI Report Builder, like you would with any other RDL dataset. You can use the report design tools, such as the Report Wizard, the Toolbox, the Properties window, and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report. 
 
 When you are done with the report design, you can save the report to your local machine, or publish it to the Power BI service, where you can share it with others, or view it in the Power BI mobile app. 
 
 ## Considerations and limitations
 
-- Only one dataset per M query is supported unless other data source is **Enter data**. 
-
-- The last query in the **Queries** window in the power query editor will be used to generate the RDL dataset.  
-
+- Only one dataset per M query is supported unless the other data source is **Enter data**. 
+- The last query in the **Queries** window in the Power Query editor is used to generate the RDL dataset.  
 - Dataset (thus query name to execute) must be CLS compliant. 
-
-- Gateway data sources aren't supported even though you connect in Mashup Editor 
-
+- Gateway data sources aren't supported even though you connect in Mashup Editor. 
 - In the Power BI Service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
-
-- Parameters aren't automatically bound in Power BI Report builder. You must bind parameters like any other data source.
+- Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source.
 
 ## Related content  
 
-- [Use accessibility tools to create accessible paginated reports(Power BI Report Builder)](paginated-use-accessibility-tools.md)
-- [Accessibility features in paginated reports (Power BI Report Builder)](paginated-create-accessible-reports.md)
-- [Use accessibility tools to interact with paginated reports (Power BI Report Builder)](paginated-consume-accessible-reports.md)
+- [Power BI Report Builder](../report-builder-power-bi.md)
+- [Intro to report data in Power BI Report Builder](../report-data/report-data.md)
