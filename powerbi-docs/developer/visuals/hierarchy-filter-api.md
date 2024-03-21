@@ -194,14 +194,14 @@ A, C, D, E are hierarchically related: false (violated rule #3)
 > 
 > * When these validations are enabled, and the fields are not hierarchically related, the visual won't render, and an error message will be displayed:
 >
->  :::image type="content" source="./media/hierarchy-filter-api/validated-unsupported-relationships.png" alt-text="Screenshot of visual with validations enabled failing to load because the fields aren't hierarchically related. The error message says 'you are using fields that don't have a supported set of relationships'.":::
+>    :::image type="content" source="./media/hierarchy-filter-api/validated-unsupported-relationships.png" alt-text="Screenshot of visual with validations enabled failing to load because the fields aren't hierarchically related. The error message says 'you are using fields that don't have a supported set of relationships'.":::
 >
 >    :::image type="content" source="./media/hierarchy-filter-api/cant-display-visual.png" alt-text="Screenshot of error message when validations are enabled and the fields aren't hierarchically related. The message says 'can't display this visual'.":::
 >
 > * When these validations are disabled, and the filter visual applies a filter that contains nodes related to non-hierarchically related fields, other visuals might not render properly when measures are in use:
 >
 >    :::image type="content" source="./media/hierarchy-filter-api/no-validation-unsupported.png" alt-text="Screenshot of visual with validations disabled failing to load because the fields aren't hierarchically related. The error message says 'couldn't load the data for this visual'.":::
-
+>
 >    :::image type="content" source="./media/hierarchy-filter-api/no-validation-cant-load.png" alt-text="Screenshot of error message when validations are disabled and the fields aren't hierarchically related. The message says 'couldn't load data for this visual'.":::
 
 ## Code example for updating the hierarchy data tree after new selection
