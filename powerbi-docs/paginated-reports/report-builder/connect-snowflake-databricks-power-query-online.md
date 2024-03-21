@@ -1,7 +1,7 @@
 ---
 title: "Connect to Snowflake and Databricks with Power Query Online"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 03/07/2024
+ms.date: 03/20/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -19,7 +19,7 @@ That's where Power Query Online comes in. Power Query Online is a data transform
 
 ## Prerequisites 
 
-To use the new Get Data feature in Power BI Report Builder, you need to have the latest version of Power BI Report Builder installed on your machine. You can [download it](https://go.microsoft.com/fwlink/?linkid=2086513).  
+To use the new Get Data feature in Power BI Report Builder, you need to have the latest version of Power BI Report Builder installed on your machine. You can [download Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).  
 
 You also need to sign in to Power BI Report Builder with your Power BI account.
 
@@ -47,13 +47,13 @@ Follow these steps to connect to a data source using Power Query Online:
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png" alt-text="Screenshot showing enter your credentials.":::
 
-    You can either use an existing shareable cloud connection or create a new connection. Learn more about [shareable cloud connections](../connect-data/service-create-share-cloud-data-sources.md). 
+    You can either use an existing shareable cloud connection or create a new connection. Learn more about [shareable cloud connections](/connect-data/service-create-share-cloud-data-sources.md). 
 
 - After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
 
 A screenshot of a computer
 
-This opens the Power Query Editor, where you can transform and load your data. All Power Query editor functionality is available. Learn more about [Power Query](/power-query.md). 
+This opens the Power Query Editor, where you can transform and load your data. All Power Query editor functionality is available. Learn more about [Power Query](/power-query/power-query-what-is-power-query.md). 
 
 As an example, I merged three tables in the Power Query Editor to create a new merged table named **ALL_Merged**. 
 
