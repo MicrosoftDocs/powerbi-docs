@@ -7,30 +7,38 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/19/2022
+ms.date: 03/21/2024
 ---
 
 # The hierarchical identity filters API in Power BI visuals
 
-The **Hierarchy Identity filter API** enables visuals that use [Matrix DataView Mapping](./dataview-mappings.md#matrix-data-mapping) to filter data on multiple fields at a time based on data points that use a [hierarchy structure].
-
-This filter is similar to the [tuple filter](./filter-api.md#the-tuple-filter-api-multi-column-filter), but more efficient, but supports group on keys.
-
-Hover over filter and see what it's set to filter
+The **Hierarchy Identity filter API** enables visuals that use [Matrix DataView Mapping](./dataview-mappings.md#matrix-data-mapping) to filter data on multiple fields at a time based on data points that use a [hierarchy structure](./dataview-mappings.md#hierarchical-structure-of-matrix-data).
 
 This API is useful in the following scenarios:
 
 * Filtering hierarchies based on data points
 * Custom visuals that use semantic models with [group on keys]
 
-> [!NOTE]
->
-> * The Hierarchy Identity filter API is available from API version 5.9.0
-> * To use this filter, the visual should contain only one *grouping* [data role](./capabilities.md#datarole-properties).
+The Hierarchy Identity filter API is available from API version **5.9.0**
 
 The filter interface is shown in the following code:
 
-```javascript
+```typescript
+interface IHierarchyIdentityFilter<IdentityType> extends IFilter {
+    target: IHierarchyIdentityFilterTarget;
+    hierarchyData: IHierarchyIdentityFilterNode<IdentityType>[];
+}
+```
+
+* *$schema*: `https://powerbi.com/product/schema#hierarchyIdentity` (inherited from IFilter)
+
+* *filterType*: FilterType.HierarchyIdentity (inherited from IFilter)
+
+* *target*: Array of relevant columns in the query. Currently only a single role is supported; therefore, the target is not required and should be empty.
+
+* *hierarchyData*: the selected and unselected items in a hierarchy tree where each `IHierarchyIdentityFilterNode<IdentityType>` represents a single value selection.
+
+```typescript
 interface IQueryNameTarget {
     queryName: string;
 }
@@ -38,7 +46,7 @@ interface IQueryNameTarget {
 
 * *queryName*: query name of the source column in the query. It comes from the `DataViewMetadataColumn`
 
-```javascript
+```typescript
 type IHierarchyIdentityFilterTarget = IQueryNameTarget[]
 
 interface IHierarchyIdentityFilterNode<IdentityType> {
@@ -48,7 +56,7 @@ interface IHierarchyIdentityFilterNode<IdentityType> {
 }
 ```
 
-* *identity*: The Node identity in `DataView`. The `IdentityType` Should be `CustomVisualOpaqueIdentity`
+* *identity*: The Node identity in DataView. The `IdentityType` Should be `CustomVisualOpaqueIdentity`
 
 * *children*: List of node children relevant to the current selection
 
@@ -60,24 +68,9 @@ interface IHierarchyIdentityFilterNode<IdentityType> {
 
   * *Inherited*: value selection is according to the parent value in the hierarchy, or default if it's the root value.
 
-  ```javascript
+  ```typescript
   type HierarchyFilterNodeOperators = "Selected" | "NotSelected" | "Inherited";
   ```
-
-```javascript
-interface IHierarchyIdentityFilter<IdentityType> extends IFilter {
-    target: IHierarchyIdentityFilterTarget;
-    hierarchyData: IHierarchyIdentityFilterNode<IdentityType>[];
-}
-```
-
-* *$schema*: https://powerbi.com/product/schema#hierarchyIdentity
-
-* *filterType*: FilterType.HierarchyIdentity
-
-* *target*: Array of relevant columns in the query. Currently only a single role is supported; therefore, the target is not required and should be empty.
-
-* *hierarchyData*: the selected and unselected items in a hierarchy tree where each `IHierarchyIdentityFilterNode<IdentityType>` represents a single value selection.
 
 Keep the following rules in mind when defining your hierarchy identity filter:
 
@@ -91,7 +84,7 @@ Keep the following rules in mind when defining your hierarchy identity filter:
 
 The following is an example of :
 
-```javascript
+```typescript
 const filter = {
     $schema: "https://powerbi.com/product/schema#hierarchyIdentity",
     filterType: FilterType.HierarchyIdentity,
@@ -121,16 +114,15 @@ const filter = {
 }
 ```
 
-To apply the filter:
+To apply the filter, use the `applyJsonFilter` API call:
 
-```javascript
-"applyJsonFilter":
+```typescript
 this.host.applyJsonFilter(filter, "general", "filter", action);
 ```
 
 To restore the active JSON filter from the "VisualUpdateOptions":
 
-```java
+```typescript
 export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
 //...
 jsonFilters?: IFilter[];
@@ -143,7 +135,7 @@ The `HierarchyIdnetity` filter is supported only for hierarchically related fiel
 
 To activate hierarchically related validation, add the 'areHierarchicallyRelated' property to the relevant role condition in the capabilities.json file:
 
-```json
+```typescript
 "dataViewMappings": [
     {
          "conditions": [
@@ -170,17 +162,13 @@ Fields are hierarchically related if the following conditions are met:
 
 * Every relationship in the path has the same direction or bidirectional.
 
-* The relationship direction matches the cardinality for one to many. Basically, it should be either from one to many or bidirectional.
+* The relationship direction matches the cardinality for one to many or bidirectional.
 
-## Example of hierarchy relationships
+### Example of hierarchy relationships
 
 For example, given the following entity relationship:
 
-[A] 1 <--> 1 [B] 1 ---> * [C] * <--- 1 [D]
-
-│                         │
-
-└─ 1 ---> * [E] 1 ---> * ─┘
+:::image type="content" source="./hierarchy-filter-example.png" alt-text="Diagram showing the bidirectional nature of the filter.":::
 
 A, B are hierarchically related: true
 
@@ -202,25 +190,25 @@ B, C, D are hierarchically related: false (violated rule #3)
 
 A, C, D, E are hierarchically related: false (violated rule #3)
 
-Note:
+> [!NOTE]
+> 
+> * When these validations are enabled, and the fields are not hierarchically related, the visual won't render, and an error message will be displayed:
+>
+>  :::image type="content" source="./media/hierarchy-filter-api/validated-unsupported-relationships.png" alt-text="Screenshot of visual with validations enabled failing to load because the fields aren't hierarchically related. The error message says 'you are using fields that don't have a supported set of relationships'.":::
+>
+>    :::image type="content" source="./media/hierarchy-filter-api/cant-display-visual.png" alt-text="Screenshot of error message when validations are enabled and the fields aren't hierarchically related. The message says 'can't display this visual'.":::
+>
+> * When these validations are disabled, and the filter visual applies a filter that contains nodes related to non-hierarchically related fields, other visuals might not render properly when measures are in use:
+>
+>    :::image type="content" source="./media/hierarchy-filter-api/no-validation-unsupported.png" alt-text="Screenshot of visual with validations disabled failing to load because the fields aren't hierarchically related. The error message says 'couldn't load the data for this visual'.":::
 
-* When these validations are enabled, and the fields are not hierarchically related, the visual won't render, and an error message will be displayed:
-
-    :::image type="content" source="./media/hierarchy-filter-api/validated-unsupported-relationships.png" alt-text="Screenshot of visual with validations enabled failing to load because the fields aren't hierarchically related. The error message says 'you are using fields that don't have a supported set of relationships'.":::
-
-    :::image type="content" source="./media/hierarchy-filter-api/cant-display-visual.png" alt-text="Screenshot of error message when validations are enabled and the fields aren't hierarchically related. The message says 'can't display this visual'.":::
-
-* When these validations are disabled, and the filter visual applies a filter that contains nodes related to non-hierarchically related fields, other visuals might not render properly when measures are in use:
-
-    :::image type="content" source="./media/hierarchy-filter-api/no-validation-unsupported.png" alt-text="Screenshot of visual with validations disabled failing to load because the fields aren't hierarchically related. The error message says 'couldn't load the data for this visual'.":::
-
-    :::image type="content" source="./media/hierarchy-filter-api/no-validation-cant-load.png" alt-text="Screenshot of error message when validations are disabled and the fields aren't hierarchically related. The message says 'couldn't load data for this visual'.":::
+>    :::image type="content" source="./media/hierarchy-filter-api/no-validation-cant-load.png" alt-text="Screenshot of error message when validations are disabled and the fields aren't hierarchically related. The message says 'couldn't load data for this visual'.":::
 
 ## Code example for updating the hierarchy data tree after new selection
 
 The following code shows how to update the `hierarchyData` tree after new a selection:
 
-```javascript
+```typescript
 type CompareIdentitiesFunc = (id1: CustomVisualOpaqueIdentity, id2: CustomVisualOpaqueIdentity) => boolean;
 /**
 * Updates the filter tree following a new node selection.
@@ -338,4 +326,10 @@ function removeElement(arr: any[], index: number): void {
 }
 ```
 
-## Related content
+## Considerations and limitations
+
+* This filter is supported only for matrix dataView mapping.
+
+* To use this filter, the visual should contain only one *grouping* [data role](./capabilities.md#datarole-properties).
+
+* A visual that uses the Hierarchy identity filter type should apply only a single filter of this type.
