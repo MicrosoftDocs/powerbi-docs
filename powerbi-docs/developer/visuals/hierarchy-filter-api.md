@@ -168,7 +168,7 @@ Fields are hierarchically related if the following conditions are met:
 
 For example, given the following entity relationship:
 
-:::image type="content" source="./hierarchy-filter-example.png" alt-text="Diagram showing the bidirectional nature of the filter.":::
+:::image type="content" source="./media/hierarchy-filter-example.png" alt-text="Diagram showing the bidirectional nature of the filter.":::
 
 A, B are hierarchically related: true
 
