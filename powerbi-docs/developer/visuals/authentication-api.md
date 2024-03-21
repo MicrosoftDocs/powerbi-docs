@@ -97,7 +97,7 @@ if (acquireTokenStatus === PrivilegeStatus.Allowed) {
     const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
  
     // Step 4: Confirm successful acquisition of the access token
-    if (acquireAADTokenResult?.accessToken) { 
+    if (acquireAADTokenResult.accessToken) { 
  
         // Step 5: Call your backend API with the obtained token
     }
