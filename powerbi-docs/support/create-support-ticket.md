@@ -90,7 +90,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin, Incident Manager, or Customer Success Account Manager (CSAM).
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of a new support contract.](media/create-support-ticket/new-support-contract.png)
+   ![Screenshot of a new support contract.](media/create-support-ticket/new-support-contract.png)
 
    > [!TIP]
    >- For **Contract ID/Password**, enter your Unified or Premier contract ID.
@@ -100,27 +100,27 @@ The steps you take to create a support ticket vary, depending on your role.
 
 1. On the [Fabric Support page](https://support.fabric.microsoft.com/en-US/support), review the status dashboard, outage/degradation and **Awareness** fields, and **Known issues** to ensure that your issue isn't already known. Then, scroll down to **Create a support request** and select the product you're experiencing an issue with.
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of Support page product selection.](media/create-support-ticket/support-page-product-selection.png)
+   ![Screenshot of Support page product selection.](media/create-support-ticket/support-page-product-selection.png)
 
 1. Fill in the description of the issue and select the arrow to the right of the text box. Solutions matching the issue's description appear.
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of iframe issue description.](media/create-support-ticket/iframe-issue-description.png)
+   ![Screenshot of iframe issue description.](media/create-support-ticket/iframe-issue-description.png)
 
 1. If you don't find the correct solution, select the problem type and subtype, and then choose **Get solutions**. For some problem type and subtype selections, you're asked to provide additional information.
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of iframe ST selection.](media/create-support-ticket/iframe-support-topic-selection-1.png)
+   ![Screenshot of iframe ST selection.](media/create-support-ticket/iframe-support-topic-selection-1.png)
 
 1. Based on the information you provide, you see a list of possible solutions to your issue. Select the relevant solution and see if the content can successfully guide you to a fix.
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of Solutions and contact support.](media/create-support-ticket/solutions-and-contact-support.png)
+   ![Screenshot of Solutions and contact support.](media/create-support-ticket/solutions-and-contact-support.png)
 
 1. If the guidance doesn't resolve your issue, scroll down and select **Contact Support**, and fill in the fields in the following pages.
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of Support tab.](media/create-support-ticket/support-tab.png)
+   ![Screenshot of Support tab.](media/create-support-ticket/support-tab.png)
 
 1. If you have a **Unified or Premier** support plan that isn't listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
 
-   :::image type="content" source="" alt-text="" lightbox="":::![Screenshot of New support contract.](media/create-support-ticket/new-support-contract.png)
+   ![Screenshot of New support contract.](media/create-support-ticket/new-support-contract.png)
 
    > [!TIP]
    >- For **Contract ID/Password**, enter your Unified or Premier contract ID.
