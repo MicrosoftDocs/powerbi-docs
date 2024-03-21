@@ -5845,7 +5845,33 @@
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                             
+        },    
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-mandatory-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-mandatory-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-metadata-scanning.md",
+            "redirect_url": "/fabric/governance/metadata-scanning-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-default-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-default-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-downstream-inheritance.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-downstream-inheritance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-security-sensitivity-label-inheritance-from-data-sources.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                 
   ]          
 
 }

@@ -76,7 +76,7 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### Information protection
 
-[Information protection](fabric-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
+[Information protection](fabric-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) that requires a sensitivity label be assigned, even within a personal workspace.
 
 ### System oversight
 

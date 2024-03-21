@@ -66,13 +66,13 @@ The [data protection metrics report](/power-bi/enterprise/service-security-data-
 
 ## Power BI scanner APIs
 
-The [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) allow you to scan the metadata in your Power BI tenant. The metadata of Power BI items, like semantic models and reports, can help you to monitor and review self-service user activity.
+The [Power BI scanner APIs](/fabric/governance/metadata-scanning-overview) allow you to scan the metadata in your Power BI tenant. The metadata of Power BI items, like semantic models and reports, can help you to monitor and review self-service user activity.
 
 For example, you might discover that content in a financial workspace has been assigned to three different sensitivity labels. If any of these labels aren't appropriate for financial data, you can apply more suitable labels.
 
 - **What to look for:** You can create an inventory of Power BI items in your tenant, including the sensitivity label of each item.
 - **Actions to take:** Create a process to scan your tenant on a weekly or monthly basis. Use the metadata retrieved by the scanner APIs to understand how Power BI content has been labeled. Investigate further if you find that some labels don't meet expectations for the workspace. Correlate metadata from the scanner APIs with events from the Power BI activity log to determine when a sensitivity label was applied, changed, deleted, and by which user.
-- **Where to find this data:** Power BI administrators can use the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) to retrieve a snapshot of the sensitivity labels applied to all Power BI content. If you prefer to build your own inventory reports, you can use the APIs directly by writing scripts. Alternatively, you can use the APIs indirectly by [registering Power BI in the Microsoft Purview Data Map](/azure/purview/register-scan-power-bi-tenant) (which uses the Power BI scanner APIs to scan the Power BI tenant).
+- **Where to find this data:** Power BI administrators can use the [Power BI scanner APIs](/fabric/governance/metadata-scanning-overview) to retrieve a snapshot of the sensitivity labels applied to all Power BI content. If you prefer to build your own inventory reports, you can use the APIs directly by writing scripts. Alternatively, you can use the APIs indirectly by [registering Power BI in the Microsoft Purview Data Map](/azure/purview/register-scan-power-bi-tenant) (which uses the Power BI scanner APIs to scan the Power BI tenant).
 
 ## Microsoft Purview activity explorer
 

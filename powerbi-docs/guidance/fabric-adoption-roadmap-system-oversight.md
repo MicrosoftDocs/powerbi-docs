@@ -357,7 +357,7 @@ You can retrieve auditing data to build an auditing solution, manage content pro
 | **Action** | **Documentation resource(s)** |
 |---|---|
 | Audit user activities | [REST API to get activity events](/rest/api/power-bi/admin/get-activity-events) |
-| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/power-bi/enterprise/service-admin-metadata-scanning) |
+| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/fabric/governance/metadata-scanning-overview) |
 | Audit content shared to entire organization | [REST API to check use of widely shared links](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) |
 | Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/get-tenant-settings) |
 | Publish content | [REST API to deploy items from a deployment pipeline](/rest/api/power-bi/pipelines/selective-deploy) or [clone a report to another workspace](/rest/api/power-bi/reports/clone-report-in-group) |

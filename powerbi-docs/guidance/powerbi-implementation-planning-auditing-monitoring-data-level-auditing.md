@@ -388,7 +388,7 @@ Content creators can initiate semantic model refreshes programmatically by using
 
 ### Data refresh schedule monitoring
 
-Power BI administrators can monitor data refresh schedules in the tenant to determine whether there are many refresh operations scheduled concurrently during a specific timeframe (for example, between 5am and 7am, which could be a particularly busy data refresh time). Administrators have permission to access the semantic model refresh schedule metadata from the [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), which are known as the _scanner APIs_.
+Power BI administrators can monitor data refresh schedules in the tenant to determine whether there are many refresh operations scheduled concurrently during a specific timeframe (for example, between 5am and 7am, which could be a particularly busy data refresh time). Administrators have permission to access the semantic model refresh schedule metadata from the [metadata scanning APIs](/fabric/governance/metadata-scanning-overview), which are known as the _scanner APIs_.
 
 ### Power BI REST APIs
 

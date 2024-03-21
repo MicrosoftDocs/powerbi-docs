@@ -75,7 +75,7 @@ To prevent leakage of sensitive data, the Power BI admin can block export from n
 
 * Power BI doesn’t support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
-* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an **unprotected** sensitivity label will succeed, but the sensitivity label won't be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
+* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an **unprotected** sensitivity label will succeed, but the sensitivity label won't be inherited. See [Sensitivity label inheritance from data sources](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources) for detail.
 
 ## Problems with PBIX files
 
@@ -175,7 +175,7 @@ Downstream inheritance never overwrites labels that were applied manually.
 
 Downstream inheritance never overwrites a label with a less restrictive label.
 
-Sensitivity labels inherited from data sources are automatically propagated downstream only when [fully automated downstream inheritance mode](./service-security-sensitivity-label-downstream-inheritance.md) is enabled.
+Sensitivity labels inherited from data sources are automatically propagated downstream only when [fully automated downstream inheritance mode](/fabric/governance/service-security-sensitivity-label-downstream-inheritance) is enabled.
 
 ## Sensitivity label inheritance from data sources
 

@@ -21,8 +21,8 @@ Sensitivity labels on paginated reports are included in protection metrics (as p
 
 ## Considerations and limitations
 
-* [Downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md) isn't supported. The label of an upstream model won't propagate down to its downstream paginated reports. Likewise, the label of a paginated report won't propagate down to the report’s downstream content.
-* [Mandatory labeling](service-security-sensitivity-label-mandatory-label-policy.md) doesn't apply to paginated reports.
+* [Downstream inheritance](/fabric/governance/service-security-sensitivity-label-downstream-inheritance) isn't supported. The label of an upstream model won't propagate down to its downstream paginated reports. Likewise, the label of a paginated report won't propagate down to the report’s downstream content.
+* [Mandatory labeling](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) doesn't apply to paginated reports.
 
 ## Paginated Report visuals
 

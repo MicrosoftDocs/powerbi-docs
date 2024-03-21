@@ -181,7 +181,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 
 * Information protection in Power BI doesn't support B2B and multi-tenant scenarios. This means that although external users may be able to see sensitivity labels in Power BI:
     * They can't set labels
-    * [Mandatory](service-security-sensitivity-label-mandatory-label-policy.md) and [default label](service-security-sensitivity-label-default-label-policy.md) polices won't be enforced for them
+    * [Mandatory](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) and [default label](/fabric/governance/service-security-sensitivity-label-default-label-policy) polices won't be enforced for them
     * While they can view a report that has a label with protection settings, if they export data from that report to a file, they may not be able to open the file, as it has the Microsoft Entra permissions of the original organization that it got due to the label on the report.
 
 * Some experiences aren't available to guest users even when they have higher-level permissions. To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files. The following experiences aren't supported:
