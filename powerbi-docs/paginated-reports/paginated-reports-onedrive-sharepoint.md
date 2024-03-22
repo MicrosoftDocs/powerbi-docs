@@ -13,7 +13,7 @@ ms.date: 03/21/2024
 
 # Send large report subscriptions to OneDrive SharePoint
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-power-bi-desktop.md)] 
+[!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)] 
 
 You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint. 
 
