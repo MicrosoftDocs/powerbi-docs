@@ -267,7 +267,6 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 | **Server version** | **Required SKU** |
 | --- | --- |
-| 2012 SP1 CU4 or later |Business Intelligence and Enterprise SKU |
 | 2014 |Business Intelligence and Enterprise SKU |
 | 2016 |Standard SKU or higher |
 | 2017 |Standard SKU or higher |
