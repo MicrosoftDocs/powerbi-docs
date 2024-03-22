@@ -7,13 +7,13 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/19/2024
+ms.date: 03/21/2024
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
 # Send large report subscriptions to OneDrive SharePoint
 
-[!INCLUDE [applies-yes-power-bi-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-power-bi-desktop.md)] 
 
 You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint. 
 
