@@ -59,7 +59,7 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-see-project.png" alt-text="Screenshot showing how to see your project in Azure DevOps.":::
 
-As you can see, with Azure DevOps integration, you can now have multiple developers working on the same Power BI project as long as they're synced with the same Azure Devops Git Repo.
+As you can see, with Azure DevOps integration, you can have multiple developers working on the same Power BI project as long as they're synced with the same Azure Devops Git Repo.
 
 If you're using Microsoft Fabric, you can also connect a Fabric workspace to an Azure DevOps Git repo and get all your content automatically deployed into the service. Git and Azure DevOps integration can provide a continuous integration workflow not only from Power BI Desktop to the service, but also from changes made in the service to Power BI Desktop. To learn more, see [Microsoft Fabric - Introduction to git integration](/fabric/cicd/git-integration/intro-to-git-integration).
 
