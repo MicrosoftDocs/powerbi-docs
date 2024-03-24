@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/14/2024
+ms.date: 03/22/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -352,9 +352,9 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 
 
-
 **Row-level security (RLS)**
-- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS, but customers often scroll past the warning message. 
+
+- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS. A bubble info icon shows up next to the recipients header. If you hover over that icon, you can see the warning message. However, users often scroll past the warning message. 
 
   The static image sent in the subscription email displays data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself opens (or not) and displays data based on the user's permissions.  
 
