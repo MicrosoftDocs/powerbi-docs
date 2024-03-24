@@ -17,9 +17,10 @@ The **Hierarchy Identity filter API** enables visuals that use [Matrix DataView 
 This API is useful in the following scenarios:
 
 * Filtering hierarchies based on data points
-* Custom visuals that use semantic models with [group on keys]
+* Custom visuals that use semantic models with group on keys
 
-The Hierarchy Identity filter API is available from API version **5.9.0**
+> [!NOTE]
+> The Hierarchy Identity filter API is available from API version **5.9.0**
 
 The filter interface is shown in the following code:
 
@@ -39,6 +40,8 @@ interface IHierarchyIdentityFilter<IdentityType> extends IFilter {
 * *hierarchyData*: the selected and unselected items in a hierarchy tree where each `IHierarchyIdentityFilterNode<IdentityType>` represents a single value selection.
 
 ```typescript
+type IHierarchyIdentityFilterTarget = IQueryNameTarget[]
+
 interface IQueryNameTarget {
     queryName: string;
 }
@@ -47,8 +50,6 @@ interface IQueryNameTarget {
 * *queryName*: query name of the source column in the query. It comes from the `DataViewMetadataColumn`
 
 ```typescript
-type IHierarchyIdentityFilterTarget = IQueryNameTarget[]
-
 interface IHierarchyIdentityFilterNode<IdentityType> {
     identity: IdentityType;
     children?: IHierarchyIdentityFilterNode<IdentityType>[];
@@ -62,15 +63,15 @@ interface IHierarchyIdentityFilterNode<IdentityType> {
 
 * *operator*: The operator for single objects in the tree. The operator can be one of the following:
 
+  ```typescript
+  type HierarchyFilterNodeOperators = "Selected" | "NotSelected" | "Inherited";
+  ```
+  
   * *Selected*: value is explicitly selected.
 
   * *NotSelected*: value is explicitly not selected.
 
   * *Inherited*: value selection is according to the parent value in the hierarchy, or default if it's the root value.
-
-  ```typescript
-  type HierarchyFilterNodeOperators = "Selected" | "NotSelected" | "Inherited";
-  ```
 
 Keep the following rules in mind when defining your hierarchy identity filter:
 
@@ -82,7 +83,7 @@ Keep the following rules in mind when defining your hierarchy identity filter:
 
 ## How to use the Hierarchy identity filter API
 
-The following is an example of :
+The following is an example of how to use the hierarchy identity filter API in a custom visual:
 
 ```typescript
 const filter = {
@@ -120,12 +121,12 @@ To apply the filter, use the `applyJsonFilter` API call:
 this.host.applyJsonFilter(filter, "general", "filter", action);
 ```
 
-To restore the active JSON filter from the "VisualUpdateOptions":
+To restore the active JSON filter, use the `jsonFilters` property found in the "VisualUpdateOptions":
 
 ```typescript
 export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
-//...
-jsonFilters?: IFilter[];
+   //...
+   jsonFilters?: IFilter[];
 }
 ```
 
@@ -170,28 +171,19 @@ For example, given the following entity relationship:
 
 :::image type="content" source="./media/hierarchy-filter-api/hierarchy-filter-example.png" alt-text="Diagram showing the bidirectional nature of the filter.":::
 
-A, B are hierarchically related: true
-
-B, C are hierarchically related: true
-
-A, B, C are hierarchically related: true
-
-A, C, E are hierarchically related: true (A --> E --> C)
-
-A, B, E are hierarchically related: true (B --> A --> E)
-
-A, B, C, E are hierarchically related: true (B --> A --> E --> C)
-
-A, B, C, D are hierarchically related: false (violated rule #3)
-
-C, D are hierarchically related: true
-
-B, C, D are hierarchically related: false (violated rule #3)
-
-A, C, D, E are hierarchically related: false (violated rule #3)
+* A, B are hierarchically related: true
+* B, C are hierarchically related: true
+* A, B, C are hierarchically related: true
+* A, C, E are hierarchically related: true (A --> E --> C)
+* A, B, E are hierarchically related: true (B --> A --> E)
+* A, B, C, E are hierarchically related: true (B --> A --> E --> C)
+* A, B, C, D are hierarchically related: false (violated rule #3)
+* C, D are hierarchically related: true
+* B, C, D are hierarchically related: false (violated rule #3)
+* A, C, D, E are hierarchically related: false (violated rule #3)
 
 > [!NOTE]
-> 
+>
 > * When these validations are enabled, and the fields are not hierarchically related, the visual won't render, and an error message will be displayed:
 >
 >    :::image type="content" source="./media/hierarchy-filter-api/validated-unsupported-relationships.png" alt-text="Screenshot of visual with validations enabled failing to load because the fields aren't hierarchically related. The error message says 'you are using fields that don't have a supported set of relationships'.":::
