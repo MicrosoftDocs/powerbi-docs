@@ -124,7 +124,7 @@ Schema details for the following files aren't documented. During **preview**, ch
 - Report\
   - [report.json](projects-report.md#reportjson)
   - [mobileState.json](projects-report.md#mobilestatejson)
-  - [semanticModelDiagramLayout.json](projects-report.md#datasetdiagramlayoutjson)
+  - [semanticModelDiagramLayout.json](projects-report.md#semanticmodeldiagramlayoutjson)
 - SemanticModel\
   - [diagramLayout.json](projects-dataset.md#diagramlayoutjson)
 
