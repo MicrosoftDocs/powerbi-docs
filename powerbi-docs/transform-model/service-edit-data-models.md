@@ -265,7 +265,6 @@ To see which limitation is preventing you from opening your data model, hover ov
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
 * Setting a table as a feature table
 * Configuring any feature table properties
-* Editing the sort by property for a column 
 * Changing the storage mode of a table 
 * Changing to and from the data category ‘barcode’
 * Connecting to new data sources

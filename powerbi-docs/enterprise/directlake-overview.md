@@ -175,6 +175,8 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
 
+- The Direct Lake tab in the Refresh history only lists Direct Lake-related refresh failures. Successful refreshes are currently omitted. 
+
 ## Get started
 
 The best way to get started with a Direct Lake solution in your organization is to create a Lakehouse, create a delta table in it, and then create a basic semantic model for the Lakehouse in your Microsoft Fabric or Power BI workspace. To learn more, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).

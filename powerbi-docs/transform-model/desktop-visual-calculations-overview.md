@@ -152,21 +152,26 @@ You can think of the ORDERBY and PARTITIONBY pair as pinning field references do
 
 You can use many of the existing DAX functions in visual calculations. Since visual calculations work within the confines of the visual matrix, functions that rely on model relationships such as [USERELATIONSHIP](/dax/userelationship-function-dax), [RELATED](/dax/related-function-dax) or [RELATEDTABLE](/dax/relatedtable-function-dax) aren't available.
 
-Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions:
+Visual calculations also introduce a set of functions specific to visual calculations. Many of these functions are easier to use shortcuts to DAX window functions. 
+
+> [!NOTE]
+> Only use the visual calculations specific functions mentioned in the table below. Other visual calculations specific functions are for internal use only at this time and should not be used. Refer to the table below for any updates of the functions available for use as this preview progresses.
 
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
-| COLLAPSE | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS)) | N/A |
-| COLLAPSEALL | Calculation is evaluated at the total level of the axis. | Percent of grand total = DIVIDE([Sales Amount], COLLAPSEALL([Sales Amount], ROWS)) | N/A |
-| EXPAND | Calculation is evaluated at a lower level of the axis. | Average of children = EXPAND(AVERAGE([Sales Amount]), ROWS) | N/A |
-| EXPANDALL | Calculation is evaluated at the leaf level of the axis. | Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), ROWS) | N/A |
+| [COLLAPSE](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS)) | N/A |
+| [COLLAPSEALL](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | Percent of grand total = DIVIDE([Sales Amount], COLLAPSEALL([Sales Amount], ROWS)) | N/A |
+| [EXPAND](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | Average of children = EXPAND(AVERAGE([Sales Amount]), ROWS) | N/A |
+| [EXPANDALL](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), ROWS) | N/A |
 | [FIRST](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – FIRST([Profit]) | [INDEX(1)](/dax/index-function-dax) |
+| [ISATLEVEL](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = ISATLEVEL([Fiscal Year]) | N/A |
 | [LAST](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – LAST([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
 | [MOVINGAVERAGE](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
 | [NEXT](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – NEXT([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
-| [PREVIOUS](/dax/movingaverage-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
-| [RANGE](/dax/movingaverage-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(RANGE(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
-| [RUNNINGSUM](/dax/movingaverage-function-dax) | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [PREVIOUS](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
+| [RANGE](/dax/range-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(RANGE(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [RUNNINGSUM](/dax/runningsum-function-dax) | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+
 
 ## Considerations and limitations
 
@@ -174,6 +179,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 * Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
 * The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
+  * Line and stacked column chart
   * Treemap
   * Map
   * Shape Map
@@ -207,8 +213,8 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
-* You can't use [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
+* [Show items with no data](../create-reports/desktop-show-items-no-data.md) is not available with visual calculations.
 
 
 ## Next steps

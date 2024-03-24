@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 03/12/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -15,15 +15,15 @@ ms.date: 02/14/2024
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and semantic model *artifact* definitions are saved as individual plain text files in a simple, intuitive folder structure.
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and semantic model *item* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Artifact definition files are JSON formatted text files containing semantic model and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+- **Text editor support** - Item definition files are JSON formatted text files containing semantic model and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
 
-- **Programmatic generation and editing artifact definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your artifact definitions. Applications can be based on public documentation of the artifact definition schemas and/or client libraries.
+- **Programmatic generation and editing item definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your item definitions. Applications can be based on public documentation of the item definition schemas and/or client libraries.
 
-- **Source control** - Power BI semantic model and report artifact definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
+- **Source control** - Power BI semantic model and report item definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
 
 - **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
@@ -45,7 +45,7 @@ If you're working on a new project or you've opened an existing Power BI Desktop
 
 :::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screen grab showing save file as Power BI Project":::
 
-When you save as a project, Power BI Desktop saves report and semantic model items as folders, each containing text files that define the artifact. You see the following:
+When you save as a project, Power BI Desktop saves report and semantic model items as folders, each containing text files that define the item. You see the following:
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
@@ -181,7 +181,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Frequently asked questions
 
-**Question:** Looking at semantic model and report artifact folder definitions only a few files are marked as required, what happens if I delete them?
+**Question:** Looking at semantic model and report item folder definitions only a few files are marked as required, what happens if I delete them?
 
 **Answer:** Power BI Desktop automatically creates them when you save as a project (PBIP).
 
