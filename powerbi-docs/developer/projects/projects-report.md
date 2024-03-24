@@ -22,7 +22,7 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [CustomVisuals\\](#customvisuals)
 - StaticResources\\
   - [RegisteredResources\\](#registeredresources)
-- [semanticModelDiagramLayout.json](#semanticModelDiagramLayoutjson)
+- [semanticModelDiagramLayout.json](#semanticmodeldiagramlayoutjson)
 - [definition.pbir](#definitionpbir)<sup>[1](#required)</sup>
 - [mobileState.json](#mobilestatejson)
 - [report.json](#reportjson)<sup>[1](#required)</sup>
