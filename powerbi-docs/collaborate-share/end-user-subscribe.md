@@ -354,7 +354,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **Row-level security (RLS)**
 
-- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS. A new bubble info icon shows up next to the recipients header. If you hover over that icon, you can see the warning message, "Any previews or attachments show data based on your permissions," but customers often scroll past the warning message. 
+- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS. A bubble info icon shows up next to the recipients header. If you hover over that icon, you can see the warning message. However, users often scroll past the warning message. 
 
   The static image sent in the subscription email displays data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself opens (or not) and displays data based on the user's permissions.  
 
