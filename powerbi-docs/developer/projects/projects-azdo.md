@@ -17,7 +17,7 @@ ms.date: 05/31/2023
 
 Microsoft Power BI Desktop projects enable developer collaboration by connecting your local Git repo to a remote Git host, like Azure DevOps.
 
-:::image type="content" source="media/projects-azdo/pbip-azdo-diagram.png" alt-text="Diagram od PBIP and Azure DevOps integration.":::
+:::image type="content" source="media/projects-azdo/pbip-azdo-diagram.png" alt-text="Diagram of PBIP and Azure DevOps integration.":::
 
 ## Create a Git repo in Azure DevOps
 
