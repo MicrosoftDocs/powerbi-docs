@@ -49,11 +49,11 @@ When you save as a project, Power BI Desktop saves report and semantic model ite
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
-After saving as project, you can quickly recognize when you are working on a project by looking at the title bar:
+After saving as a project, you can see when you are working on a project by looking at the title bar:
 
 :::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project":::
 
-If you click on the title bar, you will see a new flyout that is specific for Power BI Project. This lets you easily locate the project files as well as the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
+If you click on the title bar, a flyout appears that's specific for Power BI Project. This lets you locate the project files as well as the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
 
 :::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout":::
 
