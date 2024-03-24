@@ -168,7 +168,7 @@ If any invalid edits are made to the TMDL files, Power BI Desktop throws an erro
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) will still export the semantic model using TMSL by default. However, if the semantic model is imported into Fabric using Fabric Git Integration with TMDL format, then Fabric Git Integration will use TMDL format to export the semantic model definition to Git if there are any semantic model changes in the service.
 
 > [!IMPORTANT]
-> If you import your semantic model using any other import method, such as [Power BI Desktop Publish](https://learn.microsoft.com/power-bi/create-reports/desktop-upload-desktop-files), Fabric Git Integration will switch back to the default TMSL format.
+> If you import your semantic model using any other import method, such as [Power BI Desktop Publish](../../create-reports/desktop-upload-desktop-files.md), Fabric Git Integration will switch back to the default TMSL format.
 
 ## Related content
 
