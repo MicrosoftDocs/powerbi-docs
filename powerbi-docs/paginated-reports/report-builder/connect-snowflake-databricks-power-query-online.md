@@ -71,7 +71,7 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
 > [!NOTE]
-> If you had defined a parameter, you have to define it again in the Power BI Report BUilder.
+> If you had defined a parameter, you have to define it again in Power BI Report BUilder.
 
 ## Next steps 
 
