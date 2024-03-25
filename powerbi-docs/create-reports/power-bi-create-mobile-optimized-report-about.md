@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 09/12/2023
+ms.date: 03/25/2024
 LocalizationGroup: Create reports
 ---
 # About mobile-optimized Power BI reports
@@ -29,9 +29,10 @@ In the Power BI mobile app, reports that have mobile-optimized pages are indicat
 ## Mobile authoring features
 
 Power BI provides several features to help you create mobile-optimized versions of your reports:
-- A **mobile layout view** where you create mobile-optimized reports by dragging and dropping visuals onto an interactive phone emulator canvas. The interactive canvas enables you to test out how buttons, slicers, and visuals will behave in your mobile-optimized report while you're designing it.
-- A **formatting pane** (preview) that enables you to precisely format your report visuals by changing their format settings.
-- **Visuals and slicers** that can be optimized for use on small, mobile screens.
+- A **[mobile layout view](./power-bi-create-mobile-optimized-report-mobile-layout-view.md)** where you create mobile-optimized reports either automatically or by dragging and dropping visuals onto an interactive phone emulator canvas. The interactive canvas enables you to test out how buttons, slicers, and visuals will behave in your mobile-optimized report while you're designing it.
+- An **[auto-create mobile layout option](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation)** (preview) in the mobile layout view that automatically generates a mobile-optimized version of your report on the layout canvas. You can use the the auto-generated layout as is or as a starting point for your edits.
+- A **[formatting pane](./power-bi-create-mobile-optimized-report-format-visuals.md)** that enables you to precisely format your report visuals by changing their format settings.
+- **[Visuals and slicers](./power-bi-create-mobile-optimized-report-format-visuals.md)** that can be optimized for use on small, mobile screens.
 
 With these mobile authoring capabilities, you can select, rearrange, and reformat just those visuals that make sense for mobile users, enabling you to create report page views that are attractive, focused, and easy to read and use on mobile devices.
 

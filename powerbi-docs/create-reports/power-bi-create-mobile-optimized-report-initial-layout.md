@@ -8,20 +8,21 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/12/2023
+ms.date: 03/25/2024
 LocalizationGroup: Create reports
 ---
 
-# Create an initial layout
+# Create a mobile-optimized layout
 
-Use the **Page visuals** pane to create an initial layout for your mobile-optimized view.
+Use the **Page visuals** pane to create a layout for your mobile-optimized view.
 
 ## The Page visuals pane
 
-The **Page visuals** pane lists all of the visuals, both shown and hidden, that are on the original report page. The following features help you select the visuals you want to use in your mobile-optimized view:
+The **Page visuals** pane lists all of the visuals, both shown and hidden, that are on the original report page. The following features help you start creating your mobile-optimized view:
 
-:::image type="content" source="media/power-bi-create-mobile-optimized-report-initial-layout/mobile-layout-page-visuals-pane.png" alt-text="Screenshot of the Page visuals pane in Power BI mobile layout view.":::
+:::image type="content" source="media/power-bi-create-mobile-optimized-report-initial-layout/mobile-layout-page-visuals-pane.png" alt-text="Screenshot of the Page visuals pane in Power BI mobile layout view." border="false":::
 
+* **Auto-create**: Creates a mobile layout using the visuals in your report. Any visuals that are already on the canvas will be removed. If you aren't satisfied with the auto-generated layout, you can use *Undo* (Ctrl+Z) to go back to the previous layout. The automatically generated layout is intended to help you get started creating a mobile-optimized view for a report, and the quality of the layout depends on a number of factors. For more information, see [Automatic mobile layout creation](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation).
 * **Visual name**: Helps to identify the visual.
 * **Appearance status**: Indicates the appearance status of the visual&mdash;visible or hidden. This indicator changes depending on the appearance status of the visual in the current state of the web report view. The appearance indicator is useful when working with bookmarks.
 * **Filter by appearance status**: Filters the visuals according to appearance status, making it easier to find a visual.
@@ -29,9 +30,9 @@ The **Page visuals** pane lists all of the visuals, both shown and hidden, that 
 
 ## Lay out visuals on the canvas
 
-To place a visual on the canvas, drag and drop the visual you want to use from the page visuals pane onto the mobile layout canvas. When you drag a visual to the canvas, by default, it snaps to the grid. Alternatively, you can double-click the visual on the page visuals pane, and it will be added to the canvas.
+To create your layout, you can either use the auto-create option to get a complete, automatically-generated initial layout that you can then modify as necessary, or you can start placing the visuals on the canvas manually, draging and dropping them from the page visuals pane onto the mobile layout canvas. When you drag a visual to the canvas, by default, it snaps to the grid. Alternatively, you can double-click the visual on the page visuals pane, and it will be added to the canvas.
 
-Once you've placed a visual on the canvas, you can resize it by selecting it and dragging the handles that appear around the edge of the visual. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
+Once a visual has been placed on the canvas, you can resize it by selecting it and dragging the handles that appear around the edge of the visual. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
 Each time you drag a visual onto the canvas, it's added on its own layer on top of any other visuals that are already on the canvas. Visuals can be layered one on top of the other to create interactive reports using bookmarks or to build attractive reports by layering visuals over images. Use the [Selection pane](power-bi-create-mobile-optimized-report-order-layers.md) to change the layering order of the visuals.
 
