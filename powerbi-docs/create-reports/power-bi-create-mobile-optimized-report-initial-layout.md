@@ -30,7 +30,7 @@ The **Page visuals** pane lists all of the visuals, both shown and hidden, that 
 
 ## Lay out visuals on the canvas
 
-To create your layout, you can either use the auto-create option to get a complete, automatically-generated initial layout that you can then modify as necessary, or you can start placing the visuals on the canvas manually, dragging and dropping them from the page visuals pane onto the mobile layout canvas. When you drag a visual to the canvas, by default, it snaps to the grid. Alternatively, you can double-click the visual on the page visuals pane, and it will be added to the canvas.
+To create your layout, you can either use the auto-create option to get a complete, automatically generated initial layout that you can then modify as necessary, or you can start placing the visuals on the canvas manually, dragging and dropping them from the page visuals pane onto the mobile layout canvas. When you drag a visual to the canvas, by default, it snaps to the grid. Alternatively, you can double-click the visual on the page visuals pane, and it will be added to the canvas.
 
 Once a visual has been placed on the canvas, you can resize it by selecting it and dragging the handles that appear around the edge of the visual. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
