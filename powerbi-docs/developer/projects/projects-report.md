@@ -133,7 +133,7 @@ Defines a report including visuals, page layout, and intended interactions. Duri
 
 #### .platform
 
-Fabric platform file that holds properties vital for establishing and mantaining the connection between Fabric items and Git.
+Fabric platform file that holds properties vital for establishing and maintaining the connection between Fabric items and Git.
 
 To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
 
