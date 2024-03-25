@@ -127,7 +127,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 ## Considerations and limitations
 
 - Rendering the report uses some of your capacity. It's classified as a **interactive** activity.
-- During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
+- Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access is set separately.
 - This preview feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
