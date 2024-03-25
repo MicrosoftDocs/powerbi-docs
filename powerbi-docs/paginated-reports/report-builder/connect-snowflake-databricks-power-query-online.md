@@ -1,7 +1,7 @@
 ---
 title: "Connect to Snowflake and Databricks with Power Query Online"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 03/20/2024
+ms.date: 03/25/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -71,11 +71,11 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
 > [!NOTE]
-> If you had defined a parameter, you may have to define it again if the field is not part of the new M query. 
+> If you had defined a parameter, you have to define it again in the Power BI Report BUilder.
 
 ## Next steps 
 
-After you have a dataset that you created using Power Query, you can use it to create a paginated report in Power BI Report Builder, as you would with any other RDL dataset. You can use the report design tools, such as the Report Wizard, the Toolbox, the Properties window, and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report. 
+After you have a dataset that you created using Power Query, you can use it to create a paginated report in Power BI Report Builder, as you would with any other RDL dataset. You can use the report design tools, such as the Properties window and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report.
 
 When you're done with the report design, you can save the report to your local machine, or publish it to the Power BI service, where you can share it with others, or view it in the Power BI mobile app. 
 
