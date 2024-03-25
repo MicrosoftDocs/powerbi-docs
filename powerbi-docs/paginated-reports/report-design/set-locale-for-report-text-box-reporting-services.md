@@ -57,7 +57,8 @@ The **User!Language** expression can be used to define translated parameter prom
 
     To support more than two languages, use the [VB Switch function](/office/vba/language/reference/user-interface-help/switch-function).
 
-Note: The Power BI language that is used for when the report is executed in the Power BI service. By default the Power BI language is the browser language, but users can overwrite that in the Power BI settings and use a fixed language.
+> [!NOTE]
+> The Power BI language that's used for when the report is executed in the Power BI service. By default the Power BI language is the browser language, but users can overwrite that in the Power BI settings and use a fixed language.
   
 ## Related content
 
