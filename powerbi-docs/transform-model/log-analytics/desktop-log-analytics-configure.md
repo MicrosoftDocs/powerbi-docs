@@ -157,6 +157,89 @@ The following table describes the **schema**.
 | **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
 | **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA'  |
 
+### ExecutionMetrics event
+
+For every **DiscoverEnd**, **CommandEnd** and **QueryEnd** request, a single event named **ExecutionMetrics** is logged, holding execution statistics for the entire request. These statistics can assist you in diagnosing and troubleshooting more effectively.
+
+The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model.
+
+```sql
+let executionMetrics = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(10d)
+    | where ArtifactId == "[Semantic Model Id]"
+    | where OperationName == "ExecutionMetrics"
+    | project TimeGenerated, XmlaRequestId, CorrelationId, EventText;
+let commands = PowerBIDatasetsWorkspace
+    | where OperationName in ("CommandEnd")
+    | where EventText contains "<Refresh"
+    | project TimeGenerated, ArtifactId, CommandOperationName = OperationName, XmlaRequestId, CorrelationId, CommandText = EventText;
+commands
+| join kind=inner executionMetrics on XmlaRequestId
+| project TimeGenerated, ArtifactId, CommandOperationName, XmlaRequestId, EventText, CommandText
+
+```
+
+The statistics are presented as a JSON text in the **EventText** property:
+
+```json
+{
+    "timeStart": "2024-03-20T12:39:59.681Z",
+    "timeEnd": "2024-03-20T13:01:14.241Z",
+    "durationMs": 1274559,
+    "directQueryExecutionTimeMs": 55727,
+    "vertipaqJobCpuTimeMs": 156,
+    "mEngineCpuTimeMs": 9617484,
+    "totalCpuTimeMs": 9618469,
+    "executionDelayMs": 10,
+    "approximatePeakMemConsumptionKB": 1683409,
+    "mEnginePeakMemoryKB": 1676816,
+    "tabularConnectionTimeoutMs": 18000000,
+    "commandType": 2,
+    "refreshParallelism": 16,
+    "vertipaqTotalRows": 114,
+    "intendedUsage": 2
+}
+```
+
+The following table describes all the possible properties; not every property is emitted, as it depends on the type of request.
+
+| Property | Description |
+| --- | --- |
+| timeStart | The timestamp (UTC) of when the request started. |
+| timeEnd | The timestamp (UTC) of when the request ended. |
+| durationMs | Total duration of the execution. |
+| datasourceConnectionThrottleTimeMs | Total amount of time spent in BeginThrottleConnectionOnDatasource |
+| directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
+| directQueryExecutionTimeMs | Total time spent on executing all DirectQuery queries during the request. |
+| directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
+| directQueryTotalTimeMs | Total time spent on executing and reading all DirectQuery queries during the request. |
+| executionDelayMs | Total time spent waiting for Analysis Services engine thread pool thread availability. |
+| totalCpuTimeMs | Total CPU time of the request. |
+| vertipaqJobCpuTimeMs | Total CPU time spent by Vertipaq engine.  |
+| mEngineCpuTimeMs | Total CPU time spent by PowerQuery engine.  |
+| queryProcessingCpuTimeMs | Total CPU time spent by tasks on Analysis Services query thread pool thread. |
+| approximatePeakMemoryConsumptionKB | Approximate peak memory consumption during the request. |
+| mEnginePeakMemoryKB  | Max memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
+| directQueryTimeoutMs  | Timeout associated with DirectQuery queries. |
+| xmlaCommandTimeoutMs  | Timeout associated with XMLA command. |
+| externalConnectionTimeoutMs  | Timeout associated with creating external datasource connections. |
+| externalQueryTimeoutMs  | Timeout associated with queries to external datasources. |
+| tabularConnectionTimeoutMs  | Timeout associated with external tabular connections. |
+| refreshParallelism  | Effective MaxParallelism used in the request.|
+| vertipaqTotalRows   | Total number of processed rows by the Vertipaq engine.  |
+| queryResultRows   | Total number of rows returned as a result of the DAX query. |
+| directQueryTotalRows   | Total number of rows read from the various DirectQuery queries. |
+| directQueryRequestCount   | Total number of DirectQuery storage engine queries executed from DAX engine. |
+| commandType   | Analysis Services command type. |
+| errorCount   | Total number of errors for the current request. |
+| qsoReplicaVersion   | Replica version for QSO enabled semantic models. |
+| intendedUsage   | Intended usage: Default (0); Schedule refresh (1); On Demand Refresh (2); Cache refresh (3) |
+| discoverType    | Type of Discover requested by the client: Unknown (-1); Tables (0); Columns (1); Segments (2) |
+| queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
+| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling.  |
+
+- All durations and cpu times are presented in milliseconds
+
 ## Sample Log Analytics KQL queries
 
 The following collection of sample queries might be helpful when you use Azure Log Analytics with Power BI. They can be run directly in the Azure portal or through APIs to query the latest data, typically about 5-10 minutes old.
