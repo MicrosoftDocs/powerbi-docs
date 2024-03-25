@@ -262,7 +262,7 @@
         href: power-bi-create-mobile-optimized-report-about.md
       - name: Mobile layout view
         href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
-      - name: Create an initial layout
+      - name: Create a mobile-optimized layout
         href: power-bi-create-mobile-optimized-report-initial-layout.md
       - name: Optimize visual formatting
         href: power-bi-create-mobile-optimized-report-format-visuals.md
