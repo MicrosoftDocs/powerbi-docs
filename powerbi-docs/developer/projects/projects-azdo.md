@@ -41,7 +41,7 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
 1. In Visual Studio Code (VS Code) > pick a folder and open
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-pickfolder.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo selection.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-pick-folder.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo selection.":::
 
     :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-open.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo.":::
 
