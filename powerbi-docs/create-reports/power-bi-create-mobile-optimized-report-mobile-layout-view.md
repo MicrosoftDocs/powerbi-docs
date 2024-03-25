@@ -83,4 +83,4 @@ The auto-create mobile layout feature is in preview. It's enabled in the Power B
 
 ## Related content
 
-* [Create an initial layout for a mobile-optimized report](power-bi-create-mobile-optimized-report-initial-layout.md)
+* [Create a layout for a mobile-optimized report](power-bi-create-mobile-optimized-report-initial-layout.md)
