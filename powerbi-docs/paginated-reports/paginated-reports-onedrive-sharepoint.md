@@ -7,7 +7,7 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/21/2024
+ms.date: 03/25/2024
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
@@ -73,7 +73,7 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
 1. When you select **OneDrive** or **SharePoint**, select the folder location where you want the subscription to be delivered, and enter the subscription schedule to have your report delivered.
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png" alt-text="Screenshot showing in the Subscriptions pane, select the subscription schedule for the report." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-sharepoint.png":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-schedule-subscriptions.png" alt-text="Screenshot showing in the Subscriptions pane, select the subscription schedule for the report." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-onedrive-schedule-subscriptions.png":::
 
 1. By default, the File Name is the same as the Subscription name. Optionally, you can change these values. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
 
