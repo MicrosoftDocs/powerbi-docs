@@ -13,15 +13,15 @@ ms.date: 03/25/2024
 
 # Send large report subscriptions to OneDrive SharePoint
 
-[!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)] 
+[!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint. 
+You can send all of your large reports, both Power BI (.pbix) and paginated reports, to OneDrive SharePoint.
 
 :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png" alt-text="Screenshot showing in the Subscriptions pane, select create a subscription." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-subscriptions.png":::
 
 Subscribe to your Power BI and paginated reports to deliver them to OneDrive SharePoint. Your full report gets delivered to the OneDrive SharePoint location that you can select when you set up your subscription.
 
-## Requirements 
+## Requirements
 
 The requirements apply to users in the organization. To create a subscription, you need:
 
@@ -30,7 +30,7 @@ The requirements apply to users in the organization. To create a subscription, y
 
 Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions). 
 
-## Subscribe to a report 
+## Subscribe to a report
 
 Here's how you subscribe to a full report to be delivered to OneDrive SharePoint.
 
