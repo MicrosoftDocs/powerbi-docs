@@ -53,7 +53,7 @@ The **User!Language** expression can be used to define translated parameter prom
 
      ```=IIF(User!Language.StartsWith("en"), "Color", "Farbe")```
    
-    :::image type="content" source="media/set-locale-parameter-prompts.png" alt-text="Screenshot of locale for parameter prompt.":::
+    :::image type="content" source="media/set-locale-parameter-prompts-2.png" alt-text="Screenshot of locale for parameter prompt.":::
 
     To support more than two languages, use the [VB Switch function](/office/vba/language/reference/user-interface-help/switch-function).
 
