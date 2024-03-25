@@ -51,11 +51,11 @@ When you save as a project, Power BI Desktop saves report and semantic model ite
 
 After saving as a project, you can see when you are working on a project by looking at the title bar:
 
-:::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project":::
+:::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project.":::
 
 If you click on the title bar, a flyout appears that's specific for Power BI Project. This lets you locate the project files as well as the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
 
-:::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout":::
+:::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout.":::
 
 Let's take a closer look at what you see in your project's root folder:
 
@@ -196,7 +196,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - Sensitivity labels aren't supported with Power BI projects.
 - Diagram view is ignored when editing models in the Service.
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
-- In Power BI Desktop, you can't save as a PBIP directly to OneDrive for Business and SharePoint.
+- In Power BI Desktop, you can't save as a PBIP directly to OneDrive and SharePoint.
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
