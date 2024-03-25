@@ -152,8 +152,6 @@
       href: filter-api.md
     - name: "Identity filter API" 
       href: identity-filter-api.md
-    - name: "Hierarchy identity filter API"
-      href: hierarchy-filter-api.md
     - name: "Detect filter API"
       href: detect-filter-api.md
     - name: "'Rendering' events API" 
