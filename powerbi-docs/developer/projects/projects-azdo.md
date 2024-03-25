@@ -33,7 +33,7 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
 1. Select **Repos** > **Files**, and then select 'Initialize' to create an empty branch:
 
-    :::image type="content" source="./media/projects-azdo/pbip-azdo-initBranch.png" alt-text="Screenshot of PBIP and Azure DevOps integration init branch.":::
+    :::image type="content" source="./media/projects-azdo/pbip-azdo-init-branch.png" alt-text="Screenshot of PBIP and Azure DevOps integration init branch.":::
 
 1. In **Repos** > **Files**, select **Clone** > **Clone in VS Code**
 
@@ -47,7 +47,7 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
 1. Save your Power BI Project files to the selected folder
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-vscode-saveAs.png" alt-text="Screenshot of saving a PBIP in VS Code.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-vscode-save-as.png" alt-text="Screenshot of saving a PBIP in VS Code.":::
 
 1. Commit and sync changes
 
