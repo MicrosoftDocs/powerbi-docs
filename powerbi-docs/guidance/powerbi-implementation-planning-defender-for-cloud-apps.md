@@ -236,7 +236,7 @@ Here are two examples of administrator alerts.
 Before you create policies in Defender for Cloud Apps, it's a good idea to first create a naming convention. A naming convention is helpful when there are many types of policies for many types of applications. It's also useful when Power BI administrators become involved in monitoring.
 
 > [!TIP]
-> Consider granting Defender for Cloud Apps access to your Power BI administrators. Use the [admin role](/fabric/governance/service-security-using-defender-for-cloud-apps-controls), which allows viewing the activity log, sign-in events, and events related to the Power BI service.
+> Consider granting Defender for Cloud Apps access to your Power BI administrators. Use the [admin role](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps), which allows viewing the activity log, sign-in events, and events related to the Power BI service.
 
 Consider a naming convention template that includes component placeholders: \<Application\> - \<Description\> - \<Action\> - \<Type of Policy\>
 
