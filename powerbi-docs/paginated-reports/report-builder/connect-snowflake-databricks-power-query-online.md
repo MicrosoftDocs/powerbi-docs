@@ -47,13 +47,13 @@ Follow these steps to connect to a data source using Power Query Online:
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png" alt-text="Screenshot showing enter your credentials." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png":::
 
-    You can either use an existing shareable cloud connection or create a new connection. Learn more about [shareable cloud connections](/connect-data/service-create-share-cloud-data-sources.md). 
-
+    You can either use an existing shareable cloud connection or create a new connection.
+  
 - After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-choose-data.png" alt-text="Screenshot showing Select the tables that you want to use in your report and select Transform Data." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-choose-data.png":::
 
-    This action opens the Power Query Editor, where you can transform and load your data. All Power Query editor functionality is available. Learn more about [Power Query](/power-query/power-query-what-is-power-query.md). 
+    This action opens the Power Query Editor, where you can transform and load your data. All Power Query editor functionality is available.
 
     As an example, I merged three tables in the Power Query Editor to create a new merged table named **ALL_Merged**. 
 
