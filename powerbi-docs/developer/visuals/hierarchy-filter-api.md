@@ -35,7 +35,7 @@ interface IHierarchyIdentityFilter<IdentityType> extends IFilter {
 
 * *filterType*: FilterType.HierarchyIdentity (inherited from IFilter)
 
-* *target*: Array of relevant columns in the query. Currently only a single role is supported; therefore, the target is not required and should be empty.
+* *target*: Array of relevant columns in the query. Currently only a single role is supported; therefore, the target isn't required and should be empty.
 
 * *hierarchyData*: the selected and unselected items in a hierarchy tree where each `IHierarchyIdentityFilterNode<IdentityType>` represents a single value selection.
 
@@ -61,7 +61,7 @@ interface IHierarchyIdentityFilterNode<IdentityType> {
 
 * *children*: List of node children relevant to the current selection
 
-* *operator*: The operator for single objects in the tree. The operator can be one of the following:
+* *operator*: The operator for single objects in the tree. The operator can be one of the following three options:
 
   ```typescript
   type HierarchyFilterNodeOperators = "Selected" | "NotSelected" | "Inherited";
@@ -79,11 +79,11 @@ Keep the following rules in mind when defining your hierarchy identity filter:
 * Each *identity* path should be a valid path in the *DataView*.
 * Every leaf should have an operator of *Selected* or *NotSelected*.
 * To compare identities, use the `ICustomVisualsOpaqueUtils.compareCustomVisualOpaqueIdentities` function.
-* The identities might change following fields changes (e.g. addition/removal fields). PowerBI will assign the updated identities to the existing filter.hierarchyData.
+* The identities might change following fields changes (for example, adding or removing fields). Power BI  assigns the updated identities to the existing filter.hierarchyData.
 
 ## How to use the Hierarchy identity filter API
 
-The following is an example of how to use the hierarchy identity filter API in a custom visual:
+The following code is an example of how to use the hierarchy identity filter API in a custom visual:
 
 ```typescript
 const filter = {
@@ -132,7 +132,7 @@ export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
 
 ## Hierarchy related fields validation (optional)
 
-The `HierarchyIdnetity` filter is supported only for hierarchically related fields. By default, PowerBI doesn't validate if the fields are hierarchically related.
+The `HierarchyIdnetity` filter is supported only for hierarchically related fields. By default, Power BI doesn't validate if the fields are hierarchically related.
 
 To activate hierarchically related validation, add the 'areHierarchicallyRelated' property to the relevant role condition in the capabilities.json file:
 
