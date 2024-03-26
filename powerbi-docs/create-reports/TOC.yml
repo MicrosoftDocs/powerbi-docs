@@ -1164,6 +1164,10 @@
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
+    - name: Publish a paginated report
+      href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+    - name: Subscribe to reports on OneDrive SharePoint
+      href: ../paginated-reports/paginated-reports-onedrive-sharepoint.md
     - name: Embed a paginated report
       href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1
