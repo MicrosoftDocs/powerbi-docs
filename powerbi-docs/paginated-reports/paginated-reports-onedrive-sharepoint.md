@@ -81,7 +81,7 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
 1. By default, the File Name is the same as the Subscription name. Optionally, you can change these values. Also by default, the option to append the file name with date and time is selected. You can unselect that. 
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-file-name.png" alt-text="Screenshot showing in the Subscriptions pane, select the Attach full report option." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-file-name.png":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-file-name.png" alt-text="Screenshot showing in the File Name option." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-file-name.png":::
 
 1. Select the **Start date**, frequency of delivery, **Scheduled time** of delivery and **Time zone**. You can also select an **End date**, if you want. 
 
