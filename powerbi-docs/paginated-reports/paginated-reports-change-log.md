@@ -22,14 +22,14 @@ Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com
 
 Version 15.7.1807.730, released March 24, 2024
 
-- Fixed issue with jpg files not respecting the EXIF rotation property.
+- Fixed issue with JPEG files not respecting the EXIF rotation property.
 - Updated to use the last MSAL authentication library functionality.
 - Various accessibilty fixes across all areas of the product.
 - Bug fix for Power BI Report Builder freezing during certain operations.
 - Various bug fixes. 
 
 ### Features
-- Power Query Online connectivity to 100’s of new data sources is now in preview.
+- Power Query Online connectivity to hundreds of new data sources is now in preview.
 - Added support for TLS 1.3.
 
 ## July 2023
