@@ -64,7 +64,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
 
-To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by simply typing: *Profit = [Sales Amount] – [Total Product Cost]*.
+To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by simply typing: *:::no-loc text="Profit = [Sales Amount] – [Total Product Cost]":::*.
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-04.png" alt-text="Screenshot of entering a visual calculation.":::
 
@@ -96,55 +96,55 @@ Visual calculations include templates to make it easier to write common calculat
 
 The following templates are available:
 
-* **Running sum.** Calculates the sum of values, adding the current value to the preceding values. Uses the RUNNINGSUM function.
-* **Moving average.** Calculates an average of a set of values in a given window by dividing the sum of the values by the size of the window. Uses the MOVINGAVERAGE function.
-* **Percent of parent.** Calculates the percentage of a value relative to its parent. Uses the COLLAPSE function.
-* **Percent of grand total.** Calculates the percentage of a value relative to all values, using the COLLAPSEALL function.
-* **Average of children.** Calculates the average value of the set of child values. Uses the EXPAND function.
-* **Versus previous.** Compares a value to a preceding value, using the PREVIOUS function.
-* **Versus next.** Compares a value to a subsequent value, using the NEXT function.
-* **Versus first.** Compares a value to the first value, using the FIRST function.
-* **Versus last.** Compares a value to the last value, using the LAST function.
+* **Running sum.** Calculates the sum of values, adding the current value to the preceding values. Uses the :::no-loc text="RUNNINGSUM"::: function.
+* **Moving average.** Calculates an average of a set of values in a given window by dividing the sum of the values by the size of the window. Uses the :::no-loc text="MOVINGAVERAGE"::: function.
+* **Percent of parent.** Calculates the percentage of a value relative to its parent. Uses the :::no-loc text="COLLAPSE"::: function.
+* **Percent of grand total.** Calculates the percentage of a value relative to all values, using the :::no-loc text="COLLAPSEALL"::: function.
+* **Average of children.** Calculates the average value of the set of child values. Uses the :::no-loc text="EXPAND"::: function.
+* **Versus previous.** Compares a value to a preceding value, using the :::no-loc text="PREVIOUS"::: function.
+* **Versus next.** Compares a value to a subsequent value, using the :::no-loc text="NEXT"::: function.
+* **Versus first.** Compares a value to the first value, using the :::no-loc text="FIRST"::: function.
+* **Versus last.** Compares a value to the last value, using the :::no-loc text="LAST"::: function.
 
 Selecting a template inserts the template in the formula bar. You can use these templates as starting points. You can also add your own expressions without relying on templates.
 
-## Axis
+## :::no-loc text="Axis":::
 
-Many functions have an optional **Axis** parameter, which can only be used in visual calculations. Axis influences how the visual calculation traverses the visual matrix. The Axis parameter is set to the first axis in the visual by default. For many visuals the first axis is ROWS, which means that the visual calculation is evaluated row-by-row in the visual matrix, from top to bottom. The following table shows the valid values for the Axis parameter:
+Many functions have an optional **:::no-loc text="Axis":::** parameter, which can only be used in visual calculations. :::no-loc text="Axis"::: influences how the visual calculation traverses the visual matrix. The :::no-loc text="Axis"::: parameter is set to the first axis in the visual by default. For many visuals the first axis is :::no-loc text="ROWS":::, which means that the visual calculation is evaluated row-by-row in the visual matrix, from top to bottom. The following table shows the valid values for the :::no-loc text="Axis"::: parameter:
 
-| Axis icon | Axis name | Description |
+| :::no-loc text="Axis"::: icon | :::no-loc text="Axis"::: name | Description |
 | --- | --- | --- |
-| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-10.png" border="false"::: | ROWS | Calculates vertically across rows from top to bottom. |
-| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-11.png" border="false":::  | COLUMNS | Calculates horizontally across columns from left to right. |
-| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-12.png" border="false":::  | ROWS COLUMNS | Calculates vertically across rows from top to bottom, continuing column by column from left to right. |
-| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-13.png" border="false":::  | COLUMNS ROWS | Calculates horizontally across columns from left to right, continuing row by row from top to bottom. |
+| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-10.png" border="false"::: | :::no-loc text="ROWS"::: | Calculates vertically across rows from top to bottom. |
+| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-11.png" border="false":::  | :::no-loc text="COLUMNS"::: | Calculates horizontally across columns from left to right. |
+| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-12.png" border="false":::  | :::no-loc text="ROWS COLUMNS"::: | Calculates vertically across rows from top to bottom, continuing column by column from left to right. |
+| :::image type="icon" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-13.png" border="false":::  | :::no-loc text="COLUMNS ROWS"::: | Calculates horizontally across columns from left to right, continuing row by row from top to bottom. |
 
 > [!NOTE]
 > You can only use axis values that are available in the visual you're working on. Not all visuals provide all axes, and some visuals provide no axes.
 
-## Reset
+## :::no-loc text="Reset":::
 
-Many functions have an optional **Reset** parameter that is available in visual calculations only. Reset influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The Reset parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the only valid values for the Reset parameter:
+Many functions have an optional **:::no-loc text="Reset":::** parameter that is available in visual calculations only. :::no-loc text="Reset"::: influences if and when the function resets its value to 0 or switches to a different scope while traversing the visual matrix. The :::no-loc text="Reset"::: parameter is set to None by default, which means the visual calculation is never restarted. Reset expects there to be multiple levels on the axis. If there's only one level on the axis, you can use [PARTITIONBY](/dax/partitionby-function-dax). The following list describes the only valid values for the :::no-loc text="Reset"::: parameter:
 
-* **NONE** is the default value and doesn't reset the calculation.
-* **HIGHESTPARENT** resets the calculation when the value of the highest parent on the axis changes.
-* **LOWESTPARENT** resets the calculations when the value of the lowest parent on the axis changes.
+* **:::no-loc text="NONE":::** is the default value and doesn't reset the calculation.
+* **:::no-loc text="HIGHESTPARENT":::** resets the calculation when the value of the highest parent on the axis changes.
+* **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
 * A numerical value, referring to the fields on the axis, with the highest field being one.
 
-To understand HIGHESTPARENT and LOWESTPARENT, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The HIGHESTPARENT is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as *RUNNINGSUM([Sales Amount], HIGHESTPARENT)* or *RUNNINGSUM([Sales Amount], 1)* returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as *RUNNINGSUM([Sales Amount], LOWESTPARENT)* or *RUNNINGSUM([Sales Amount], 2)* returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as *RUNNINGSUM([Sales Amount])* does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
+To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as *RUNNINGSUM([Sales Amount], HIGHESTPARENT)* or *RUNNINGSUM([Sales Amount], 1)* returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as *RUNNINGSUM([Sales Amount], LOWESTPARENT)* or *RUNNINGSUM([Sales Amount], 2)* returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as *RUNNINGSUM([Sales Amount])* does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
 
-## Axis and Reset vs ORDERBY and PARTITIONBY
+## :::no-loc text="Axis"::: and :::no-loc text="Reset"::: vs ORDERBY and PARTITIONBY
 
-Axis, Reset, [ORDERBY](/dax/orderby-function-dax), and [PARTITIONBY](/dax/partitionby-function-dax) are four functions that can be used in pairs or together to influence how a calculation is evaluated. They form two pairs that are often used together:
+:::no-loc text="Axis":::, :::no-loc text="Reset":::, [ORDERBY](/dax/orderby-function-dax), and [PARTITIONBY](/dax/partitionby-function-dax) are four functions that can be used in pairs or together to influence how a calculation is evaluated. They form two pairs that are often used together:
 
-* Axis and Reset
+* :::no-loc text="Axis"::: and :::no-loc text="Reset":::
 * ORDERBY and PARTITIONBY
 
-Axis and Reset are only available for functions that can be used in visual calculations and can only be used in a visual calculation, as they reference the visual structure. ORDERBY and PARTITIONBY are functions that can be used in calculated columns, measures, and visual calculations and refer to fields. While they perform the same function, they're different in the level of abstraction provided; referring to the visual structure is more flexible than the explicit referencing to fields using ORDERBY or PARTITIONBY.
+:::no-loc text="Axis"::: and :::no-loc text="Reset"::: are only available for functions that can be used in visual calculations and can only be used in a visual calculation, as they reference the visual structure. ORDERBY and PARTITIONBY are functions that can be used in calculated columns, measures, and visual calculations and refer to fields. While they perform the same function, they're different in the level of abstraction provided; referring to the visual structure is more flexible than the explicit referencing to fields using ORDERBY or PARTITIONBY.
 
 Reset expects there to be multiple levels on the axis. In case you don't have multiple levels on the axis, either because there's only one field or multiple fields in one single level on the axis, you can use PARTITIONBY.
 
-Specifying either pair works well, but you can also specify Axis, ORDERBY and/or PARTITIONBY together, in which case the values specified for ORDERBY and PARTITIONBY override the values dictated by Axis. Reset can't be combined with ORDERBY and PARTITIONBY.
+Specifying either pair works well, but you can also specify :::no-loc text="Axis":::, ORDERBY and/or PARTITIONBY together, in which case the values specified for ORDERBY and PARTITIONBY override the values dictated by :::no-loc text="Axis":::. :::no-loc text="Reset"::: can't be combined with ORDERBY and PARTITIONBY.
 
 You can think of the ORDERBY and PARTITIONBY pair as pinning field references down by explicitly specifying fields, where Axis and Reset are field agnostic – they refer to the structure and whatever field happens to be on the structure that is getting used.
 
@@ -159,18 +159,18 @@ Visual calculations also introduce a set of functions specific to visual calcula
 
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
-| [COLLAPSE](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS)) | N/A |
-| [COLLAPSEALL](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | Percent of grand total = DIVIDE([Sales Amount], COLLAPSEALL([Sales Amount], ROWS)) | N/A |
-| [EXPAND](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | Average of children = EXPAND(AVERAGE([Sales Amount]), ROWS) | N/A |
-| [EXPANDALL](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), ROWS) | N/A |
-| [FIRST](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – FIRST([Profit]) | [INDEX(1)](/dax/index-function-dax) |
-| [ISATLEVEL](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = ISATLEVEL([Fiscal Year]) | N/A |
-| [LAST](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – LAST([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
-| [MOVINGAVERAGE](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
-| [NEXT](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – NEXT([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
-| [PREVIOUS](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – PREVIOUS([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
-| [RANGE](/dax/range-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(RANGE(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
-| [RUNNINGSUM](/dax/runningsum-function-dax) | Adds a running sum on an axis. | RunningSumSales = RUNNINGSUM([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [:::no-loc text="COLLAPSE":::](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], :::no-loc text="COLLAPSE":::([Sales Amount], :::no-loc text="ROWS":::)) | N/A |
+| [:::no-loc text="COLLAPSEALL":::](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | Percent of grand total = DIVIDE([Sales Amount], :::no-loc text="COLLAPSEALL":::([Sales Amount], :::no-loc text="ROWS":::)) | N/A |
+| [:::no-loc text="EXPAND":::](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | Average of children = :::no-loc text="EXPAND":::(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::) | N/A |
+| [:::no-loc text="EXPANDALL":::](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::) | N/A |
+| [:::no-loc text="FIRST":::](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – :::no-loc text="FIRST":::([Profit]) | [INDEX(1)](/dax/index-function-dax) |
+| [:::no-loc text="ISATLEVEL":::](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = :::no-loc text="ISATLEVEL":::([Fiscal Year]) | N/A |
+| [:::no-loc text="LAST":::](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – :::no-loc text="LAST":::([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
+| [:::no-loc text="MOVINGAVERAGE":::](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = :::no-loc text="MOVINGAVERAGE":::([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
+| [:::no-loc text="NEXT":::](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – :::no-loc text="NEXT":::([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
+| [:::no-loc text="PREVIOUS":::](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – :::no-loc text="PREVIOUS":::([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
+| [:::no-loc text="RANGE":::](/dax/range-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(:::no-loc text="RANGE":::(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [:::no-loc text="RUNNINGSUM":::](/dax/runningsum-function-dax) | Adds a running sum on an axis. | RunningSumSales = :::no-loc text="RUNNINGSUM":::([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
 
 
 ## Considerations and limitations
@@ -197,7 +197,6 @@ Visual calculations are currently in preview, and during preview, you should be 
   * Power Apps
   * Power Automate
   * Small multiples
-* Visual calculations and hidden fields can only be added and edited using Power BI Desktop. While you can publish a report that contains visual calculations to the Power BI service, you can't edit visual calculations or hidden fields in the Power BI service.
 * Performance of this feature isn't representative of the end product.
 * Reuse of visual calculations using copy/paste or other mechanisms isn't available.
 * You can't filter on visual calculations.
@@ -223,8 +222,8 @@ The following articles may be useful when learning and using visual calculations
 
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
 * [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
-* [WINDOW DAX function](/dax/window-function-dax)
-* [OFFSET DAX function](/dax/offset-function-dax)
-* [INDEX DAX function](/dax/index-function-dax)
-* [ORDERBY DAX function](/dax/orderby-function-dax)
+* [:::no-loc text="WINDOW"::: DAX function](/dax/window-function-dax)
+* [:::no-loc text="OFFSET"::: DAX function](/dax/offset-function-dax)
+* [:::no-loc text="INDEX"::: DAX function](/dax/index-function-dax)
+* [:::no-loc text="ORDERBY"::: DAX function](/dax/orderby-function-dax)
 
