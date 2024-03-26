@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 03/21/2024
+ms.date: 03/26/2024
 ---
 
 # The hierarchical identity filters API in Power BI visuals
