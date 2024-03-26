@@ -86,33 +86,34 @@ Keep the following rules in mind when defining your hierarchy identity filter:
 The following code is an example of how to use the hierarchy identity filter API in a custom visual:
 
 ```typescript
-const filter = {
-    $schema: "https://powerbi.com/product/schema#hierarchyIdentity",
-    filterType: FilterType.HierarchyIdentity,
-    target: [],
-    hierarchyData: [
-        {
-            identity: {...},
-            operator: "Selected",
-            children: [
-                {
-                    identity: {...},
-                    operator: "NotSelected"
-                }
-            ]
-        },
-        {
-            identity: {...},
-            operator: "Inherited",
-            children: [
-                {
-                      identity: {...},
-                      operator: "Selected"
-                }
-            ]
-        }
-    ]
-}
+import { IHierarchyIdentityFilterTarget, IHierarchyIdentityFilterNode, HierarchyIdentityFilter } from "powerbi-models"
+
+const target: IHierarchyIdentityFilterTarget = [];
+
+const hierarchyData: IHierarchyIdentityFilterNode<CustomVisualOpaqueIdentity>[] = [
+    {
+        identity: {...},
+        operator: "Selected",
+        children: [
+            {
+                identity: {...},
+                operator: "NotSelected"
+            }
+        ]
+    },
+    {
+        identity: {...},
+        operator: "Inherited",
+        children: [
+            {
+                identity: {...},
+                operator: "Selected"
+            }
+        ]
+    }
+];
+
+const filter = new HierarchyIdentityFilter(target, hierarchyData).toJSON();
 ```
 
 To apply the filter, use the `applyJsonFilter` API call:
