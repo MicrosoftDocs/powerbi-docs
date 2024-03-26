@@ -1034,7 +1034,7 @@ Like the Microsoft Purview compliance portal (described in the previous section)
 There are [licensing requirements](/defender-cloud-apps/get-started#prerequisites) to access Defender for Cloud Apps. Separate [permissions](/defender-cloud-apps/manage-admins) are also required.
 
 > [!TIP]
-> By default, Power BI administrators don't have permission to access Defender for Cloud Apps. There's a [Power BI role](../enterprise/service-security-using-defender-for-cloud-apps-controls.md#power-bi-admin-role-in-defender-for-cloud-apps) in Defender for Cloud Apps. Adding Power BI administrators to this role is a good way to grant them access to a limited set of data.
+> By default, Power BI administrators don't have permission to access Defender for Cloud Apps. There's a [Power BI role](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps) in Defender for Cloud Apps. Adding Power BI administrators to this role is a good way to grant them access to a limited set of data.
 
 The user interface in Defender for Cloud Apps is useful for manual auditing processes and one-off investigations of user activities.
 
@@ -1147,7 +1147,7 @@ User activities (previously described) are audited events; they're a record of a
 
 To properly analyze what's happening in your Power BI tenant, you need both the user activity data and the tenant inventory. Combining them allows you to understand how much content you have and where it's located. It also allows you to find unused or under-utilized content (because there won't be any events for it in the activity log). The tenant inventory also helps you compile a list of current names for all items, which is helpful when item names change.
 
-For more information about the value of the tenant inventory, see [Tenant inventory](#tenant-inventory) earlier in this article
+For more information about the value of the tenant inventory, see [Tenant inventory](#tenant-inventory) earlier in this article.
 
 > [!TIP]
 > You can use the [Get Unused Artifacts as Admin](/rest/api/power-bi/admin/groups-get-unused-artifacts-as-admin) API to search for items that don't have any user activity in that last 30 days. However, you can't customize that time period. For example, you might have critical content that's only used quarterly. By combining your tenant inventory with the user activity data, you can find unused items in ways that you can customize.

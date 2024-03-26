@@ -178,7 +178,7 @@ The following embedding scenarios are supported:
 
 ## Sensitivity labels in paginated reports
 
-Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a regular Power BI report. See [Sensitivity label support for paginated reports](service-security-sensitivity-label-paginated-reports.md) for detail.
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a regular Power BI report. See [Sensitivity label support for paginated reports](/fabric/governance/service-security-sensitivity-label-paginated-reports) for detail.
 
 ## Sensitivity labels in deployment pipelines
 
@@ -248,7 +248,7 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 ### Power BI service
 
-* Sensitivity labels can be applied only on dashboards, reports, semantic models, dataflows, and [paginated reports](service-security-sensitivity-label-paginated-reports.md). They aren't currently available for workbooks.
+* Sensitivity labels can be applied only on dashboards, reports, semantic models, dataflows, and [paginated reports](/fabric/governance/service-security-sensitivity-label-paginated-reports). They aren't currently available for workbooks.
 
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels aren't currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, PDF, and PBIX files.
 
@@ -291,6 +291,6 @@ This article provided an overview of data protection in Power BI. The following 
 
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
 * [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
-* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
+* [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
 * [Protection metrics report](service-security-data-protection-metrics-report.md)
 * [Power BI implementation planning: Information protection for Power BI](/power-bi/guidance/powerbi-implementation-planning-info-protection)

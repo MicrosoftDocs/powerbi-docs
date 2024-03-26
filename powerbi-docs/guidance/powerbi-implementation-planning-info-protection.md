@@ -133,7 +133,7 @@ To this end, you should publish (or republish) the label policy to a small subse
 
 The implementation phase is usually an iterative process.
 
-Often, the initial objective is to get to a state where all Power BI content has a sensitivity label assigned. To achieve this objective, you might introduce a mandatory label policy or a default label policy. You might also use the [information protection admin APIs](/power-bi/enterprise/service-security-sensitivity-label-inheritance-set-remove-api) to programmatically set or remove sensitivity labels.
+Often, the initial objective is to get to a state where all Power BI content has a sensitivity label assigned. To achieve this objective, you might introduce a mandatory label policy or a default label policy. You might also use the [information protection admin APIs](/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api) to programmatically set or remove sensitivity labels.
 
 You can gradually include more groups of users until the entire organization is included. This process involves republishing each [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide&preserve-view=true#publish-sensitivity-labels-by-creating-a-label-policy) to increasingly larger groups of users.
 
@@ -369,7 +369,7 @@ You can set up the default label in the label policy specifically for Power BI c
 > [!TIP]
 > While you can set different default labels (for Power BI and non-Power BI content), consider whether that's the best option for users.
 
-It's important to understand that a new default label policy will apply to content created, or edited, _after_ the label policy is published. It won't retroactively assign the default label to existing content. Your Power BI administrator can use the [information protection APIs](/power-bi/enterprise/service-security-sensitivity-label-inheritance-set-remove-api) to set sensitivity labels in bulk to ensure that existing content is assigned to a default sensitivity label.
+It's important to understand that a new default label policy will apply to content created, or edited, _after_ the label policy is published. It won't retroactively assign the default label to existing content. Your Power BI administrator can use the [information protection APIs](/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api) to set sensitivity labels in bulk to ensure that existing content is assigned to a default sensitivity label.
 
 The default label options are set in the Microsoft Purview compliance portal when the label policy is published.
 

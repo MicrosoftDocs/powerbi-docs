@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 Administrators can sign up for the Power BI service from the **Purchase services** page of the Microsoft 365 admin center. As an administrator, after signing up for Power BI you can assign licenses to users in your organization.
 
-Users in your organization can sign up for Power BI on the Power BI website. When a user signs up for Power BI, they automatically receive a Power BI license. Administrators can turn off these self-service capabilities by following [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+Users in your organization can sign up for Power BI on the Power BI website. When a user signs up for Power BI, they automatically receive a Power BI license. Administrators can turn off these self-service capabilities by following [Enable or disable self-service sign-up and purchasing](/fabric/admin/service-admin-disable-self-service).
 
 ## Sign up through Microsoft 365
 
@@ -82,5 +82,5 @@ Review the confirmation details. The account you created is now the global admin
 ## Related content
 
 - [View and manage user licenses](service-admin-manage-licenses.md)
-- [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md)
+- [Enable or disable self-service sign-up and purchasing](/fabric/admin/service-admin-disable-self-service)
 - [Business subscriptions and billing documentation](/microsoft-365/commerce/)

@@ -54,7 +54,7 @@ By default, individual sign-ups (also known as ad-hoc subscriptions) are disable
 
 ![Screenshot showing the Power BI sorry image and message.](media/service-admin-syndication-partner/sorry.png)
 
-To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
+To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](/fabric/admin/service-admin-disable-self-service).
 
 ## Related content
 
