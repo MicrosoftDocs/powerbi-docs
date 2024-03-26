@@ -36,11 +36,11 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
 1. From the top menu bar, open a report in the Power BI service. This can be a Power BI report or a paginated report. 
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-standard.png" alt-text="Screenshot showing subscribe to." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-subscribe-to.png":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-subscribe-to.png" alt-text="Screenshot showing subscribe to." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-subscribe-to.png":::
 
 1. Select **Create a subscription**. 
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png" alt-text="Screenshot showing subscribe to paginated" lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png" alt-text="Screenshot showing subscribe to paginated" lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-create-subscription.png":::
 
 1. We currently support Standard subscriptions. Select **Standard**.  
 
