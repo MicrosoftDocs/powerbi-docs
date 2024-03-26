@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2024
+ms.date: 03/25/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,6 +20,16 @@ For related "What's New" information, see:
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
 ## March 2024
+
+### Mobile layout auto-create (preview)
+
+The new auto-create mobile layout feature enables you to easily create mobile-optimized layouts for any new or existing report page. In mobile layout view, simply select **Auto-create**.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png" alt-text="Screenshot of the auto-create mobile layout option." lightbox="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png":::
+
+A new complete layout, with your report's visuals, will be created on the canvas. The auto-create engine understands the desktop layout of your report and tries its best to create an attractive mobile-optimized view that preserves your report's functionality. The feature is intended to help you get started. If the layout isn't exactly what you wanted or expected, you can tweak it to make it suit your needs, or you can undo it and go back to the previous layout.
+
+Check out our [documentation](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation) and get started!
 
 ### Custom visual single sign-on (SSO) support
 
