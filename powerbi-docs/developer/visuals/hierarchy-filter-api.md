@@ -322,6 +322,6 @@ function removeElement(arr: any[], index: number): void {
 
 * This filter is supported only for matrix dataView mapping.
 
-* To use this filter, the visual should contain only one *grouping* [data role](./capabilities.md#datarole-properties).
+* The visual should contain only one *grouping* [data role](./capabilities.md#datarole-properties).
 
 * A visual that uses the Hierarchy identity filter type should apply only a single filter of this type.
