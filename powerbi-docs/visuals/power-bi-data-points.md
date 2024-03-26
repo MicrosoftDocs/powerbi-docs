@@ -7,7 +7,7 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 03/20/2024
+ms.date: 03/26/2024
 LocalizationGroup: Visualizations
 ---
 
@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
 
-Visualizations in Power BI must be quick and accurate, which requires that you configure underlying algorithms for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of semantic models. Some semantic models have only a handful of data points, while other semantic models have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
+Visualization rendering in Power BI must be quick and accurate, which requires configuration of underlying algorithms for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of semantic models. Some semantic models have only a handful of data points, while other semantic models have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 
 ## Data reduction strategies
 
