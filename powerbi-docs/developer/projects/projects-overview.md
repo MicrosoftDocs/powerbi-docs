@@ -135,7 +135,7 @@ You can make changes to the semantic model definition by using external tools in
 - By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
 - By editing JSON metadata in the model.bim file using VS Code or another external tool.
 
-Not every model object supports write operations. Applying changes outside of the those supported can cause unexpected results.
+Not every model object supports write operations. Applying changes outside of those supported can cause unexpected results.
 
 Objects that support write operations:
 
