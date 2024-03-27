@@ -52,12 +52,22 @@ It's important to note that the admin can choose to block a visual from requesti
 
 The following are the permissions a visual might request:
 
+* [Call Power BI local storage APIs](#call-power-bi-local-storage-apis)
+* [Access URLs](#access-urls)
 * [Call Power BI Download APIs](#call-power-bi-download-apis)
 * [Make calls on behalf of signed in users](#make-calls-on-behalf-of-signed-in-users)
-* [Access URLs](#access-urls)
-* [Call Power BI local storage APIs](#call-power-bi-local-storage-apis)
 
 Visuals can request permission for any or the following privileges:
+
+### Call Power BI local storage APIs
+
+The visual might want to [store data locally](./local-storage.md) on the user's device to help improve performance. The admin can [choose to block this permission](/fabric/admin/organizational-visuals#local-storage) in which case the visual can't store data locally.
+
+### Access URLs
+
+This privilege allows a visual to send HTTP requests to specific URLs that the visual builder declares in advance.
+
+There is no tenant admin switch for this permission. As long as [non-certified visuals are allowed](/fabric/admin/organizational-visuals#certified-power-bi-visuals), this privilege is granted.
 
 ### Call Power BI Download APIs
 
@@ -76,16 +86,6 @@ If the visual has permission to call the download API, it can export files of th
 ### Make calls on behalf of signed in users
 
 The visual might need to obtain a Microsoft Entra ID (formerly known as Azure AD) access tokens for signed-in users, to facilitate single sign-on authentication. Permission to access tokens requires user consent and admin permission provided in the [Obtain Microsoft Entra access token tenant switch](/fabric/admin/organizational-visuals#obtain-microsoft-entra-access-token). If the admin doesn't enable this switch, the visual can't access a token or make API calls on behalf of the user.
-
-### Access URLs
-
-This privilege allows a visual to send HTTP requests to specific URLs that the visual builder declares in advance.
-
-There is no tenant admin switch for this permission. As long as [non-certified visuals are allowed](/fabric/admin/organizational-visuals#certified-power-bi-visuals), this privilege is granted.
-
-### Call Power BI local storage APIs
-
-The visual might want to [store data locally](./local-storage.md) on the user's device to help improve performance. The admin can [choose to block this permission](/fabric/admin/organizational-visuals#local-storage) in which case the visual can't store data locally.
 
 ## Related content
 
