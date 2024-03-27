@@ -11,6 +11,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/service-admin-org-subscription.md",
+            "redirect_url": "/power-bi/service-admin-licensing-organization/",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
             "redirect_url": "/fabric/get-started/fabric-known-issues",
             "redirect_document_id": false

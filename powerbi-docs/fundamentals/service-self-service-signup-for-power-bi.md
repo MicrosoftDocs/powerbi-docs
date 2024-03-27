@@ -33,7 +33,8 @@ Power BI is one of the experiences available in Microsoft Fabric. Power BI is on
 Use this chart to help determine which type of license and subscription you need. Power BI Desktop is always free. Fabric offers a Fabric free license, a Fabric capacity trial, and paid Power BI license options (Pro and PPU).  
 
 - A Microsoft Fabric free license gives you an opportunity to try all of the Fabric features available to free users. 
-- A Fabric 60-day trial provides a trial capacity for you to create and work with all of the item types available in Fabric (including Power BI).  
+- A Fabric 60-day trial provides a trial capacity for you to create and work with all of the item types available in Fabric (including Power BI). 
+- A Power BI Pro 60-day trial provides the paid features of Pro. You become the admin for the subscription and can add users and assign free licenses for Power BI and Fabric.
 
 To learn more about licenses and subscriptions, see [Licenses and subscriptions.](service-features-license-type.md)
 
@@ -90,13 +91,13 @@ The exact steps for signup vary depending on your organization and what you sele
 
 You now have a Fabric free license to explore the free features of all of the Fabric experiences, including the Power BI service. If a Fabric free license is sufficient, you don't have to do anything else. If you find that you need to upgrade, start a trial or purchase a paid license.
 
-## Use self-service sign-up to start an individual trial
+## Use self-service sign-up to start an individual Fabric trial
 
 Congratulations on signing into your Fabric account for the first time. You now have a free license. This section describes how to start a trial. To purchase a paid license for Power BI, see [purchase Power BI.](#use-self-service-purchase-to-buy-an-individual-power-bi-license)
 
 If a Fabric free license is sufficient, you don't have to do anything else. There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 
-However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses). And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. 
+However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses) And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. 
 
 A Fabric trial gives you a license for the paid version of Power BI, which includes Power BI Pro and Power BI Premium Per User (PPU). The trial also includes a trial Fabric capacity to use for exploring all of the Fabric experiences.
 
@@ -141,6 +142,43 @@ If you have more questions about self-service purchase, visit the [Self-service 
 To purchase a Power BI Pro license, select **Buy now** when prompted, or visit [Power BI pricing](https://powerbi.microsoft.com/pricing). Self-service purchase is also available for Power BI Premium Per User, and the steps are similar.
 
 If self-service purchase isn't available, contact your administrator about purchasing a Power BI Pro license.
+
+
+
+
+To sign up for Power BI Pro:
+
+1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085) and enter an email address. Select **Next**.
+
+     :::image type="content" source="../media/service-admin-get-started-email.png" alt-text="Screenshot showing the get started window.":::
+
+1. The email address you entered is evaluated. Select **Set up account** or **Change my email** to enter a different address.
+
+   > [!NOTE]
+   >If your email address is already in use with another Microsoft service, you can **Sign in** or **Create a new account instead**. If you choose to create a new account, continue to the next step.
+
+1. Complete the **Tell us about yourself** form and select **Next**. The country/region selected determines where your data is stored. For more information, see [Find the default region for your organization](../admin/service-admin-where-is-my-tenant-located.md#find-the-default-region-for-your-organization). The country/region doesn't have to match your physical location, but should match the location for most of your users.
+
+   :::image type="content" source="../media/service-admin-tell-us-dialog.png" alt-text="Screenshot showing the tell us about yourself window.":::
+
+1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
+
+1. Enter the verification code, and then select **Verify**.
+
+1. Complete the **How you'll sign in** form. This step creates your user ID and password to sign in to your account. You can change the pre-filled username and domain. Domain name is validated to ensure that it isn't a duplicate. Once validated, the domain name is used to create your organization in the datacenter as a subdomain of `onmicrosoft.com`. Create and confirm a password. Select **Next**.
+
+   :::image type="content" source="../media/business-identity-dialog.png" alt-text="Screenshot showing the window for creating the onmicrosoft.com subdomain.":::
+
+
+MH: If I already have account, I'm charged.  If I create new, no charge. Click "Start using trial". takes me to M365 admin center. Here I see the other figgyfarm users. I have 100,000 Fabric free with 8 assigned licenses. My billing account details have only cell phone and email address. 
+
+
+
+Review the confirmation details. The account you created is now the global admin of a new Power BI Pro trial tenant. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) to add more users, set up a custom domain, purchase more services, and manage your Power BI subscription.
+
+
+
+
 
 ## Considerations and limitations
 
