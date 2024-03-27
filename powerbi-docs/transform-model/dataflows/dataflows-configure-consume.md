@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a semantic model in Power BI Desktop, or referenced as a linked or computed table.
 
 > [!NOTE]
-> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+> Dataflows may not be available in the Power BI service for all U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 ## Configure a dataflow
 
