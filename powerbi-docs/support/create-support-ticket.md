@@ -15,7 +15,7 @@ ms.date: 03/22/2024
 
 # Create a support ticket
 
-Before creating a support ticket, get real-time help by using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) (admin roles only) or the [Microsoft Fabric support](https://support.fabric.microsoft.com/en-US/support) page. If you can't resolve the issue through self-help, create a support ticket.
+Before creating a support ticket, get real-time help by using the [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) (admin roles only) or the [Microsoft Fabric support](https://support.fabric.microsoft.com/support) page. If you can't resolve the issue through self-help, create a support ticket.
 
 ## Prerequisites
 
@@ -98,7 +98,7 @@ The steps you take to create a support ticket vary, depending on your role.
 
 ### For Fabric users and Power BI Pro users
 
-1. On the [Microsoft Fabric support](https://support.fabric.microsoft.com/en-US/support) page, review the **Product status dashboard** list, the **Service Outage/Degradation** status, the **Awareness** status, and the **current known issues**, to ensure that your issue isn't already known.
+1. On the [Microsoft Fabric support](https://support.fabric.microsoft.com/support) page, review the **Product status dashboard** list, the **Service Outage/Degradation** status, the **Awareness** status, and the **current known issues**, to ensure that your issue isn't already known.
 
 1. If you don't find your issue, scroll down to **Create a support request** and select the **Get support** link below the product you're experiencing an issue with.
 
@@ -130,6 +130,6 @@ The steps you take to create a support ticket vary, depending on your role.
 
 ### Live Chat
 
-1. For some of the combinations of problem type and subtype, users might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page.
+- For some of the combinations of problem type and subtype, users might see the option to start a live chat session with a Microsoft Support representative. The option to start a live chat session appears on the **Contact** page.
 
    :::image type="content" source="media/create-support-ticket/livechat.png" alt-text="Screenshot of the Contact tab, showing where to select Live Chat.":::
