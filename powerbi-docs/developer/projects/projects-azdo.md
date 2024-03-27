@@ -35,17 +35,17 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
 1. In **Repos** > **Files**, select **Clone** > **Clone in VS Code**
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode.png" alt-text="Screenshot of UI for PBIP and Azure DevOps integration clone repo.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vs-code.png" alt-text="Screenshot of UI for PBIP and Azure DevOps integration clone repo.":::
 
 1. In Visual Studio Code (VS Code) > pick a folder and open
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-pick-folder.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo selection.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vs-code-pick-folder.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo selection.":::
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vscode-open.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-clone-vs-code-open.png" alt-text="Screenshot of PBIP and Azure DevOps integration clone repo.":::
 
 1. Save your Power BI Project files to the selected folder
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-vscode-save-as.png" alt-text="Screenshot of saving a PBIP in VS Code.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-vs-code-save-as.png" alt-text="Screenshot of saving a PBIP in VS Code.":::
 
 1. Commit and sync changes
 
