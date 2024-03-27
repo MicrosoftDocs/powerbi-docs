@@ -1,5 +1,5 @@
 ---
-title: "Connect to Snowflake and Databricks with Power Query Online"
+title: "Connect to Snowflake and Databricks with Power Query Online (Preview)"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
 ms.date: 03/25/2024
 ms.service: powerbi
@@ -87,6 +87,7 @@ When you're done with the report design, you can save the report to your local m
 - Gateway data sources aren't supported even though you connect in Mashup Editor. 
 - In the Power BI Service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source.
+- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report will fail to render. 
 
 ## Related content  
 
