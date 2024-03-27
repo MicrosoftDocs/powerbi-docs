@@ -13,13 +13,13 @@ ms.date: 03/18/2024
 
 # About Power BI visuals
 
-Every visual has an *About* dialog that gives you information about the visual, including the version number, who created it, and what permission it requests. To open the About dialog, right-click the visual and select **About**.
+Every visual has an *About* dialog that gives you information about the visual, including the version number, who created it, and what permission it requests. 
+
+To open the *About* dialog, right-click the visual and select **About**.
 
 :::image type="content" source="./media/about-dialog/open-about-dialog.png" alt-text="Screenshot showing how to open the About dialog.":::
 
-The About dialog for custom visuals shows the following information:
-
-:::image type="content" source="./media/about-dialog/about-dialog.png" alt-text="Screenshot of the About dialog.":::
+The *About* dialog for custom visuals has three tabs that show the following information:
 
 * [About](#about)
 * [Certification](#certification)
@@ -27,7 +27,7 @@ The About dialog for custom visuals shows the following information:
 
 ## About
 
-The *About* section shows the following information:
+The *About* tab provides the following information:
 
 * **Name**: The name of the visual.
 * **Publisher**: The name of the publisher of the visual.
@@ -35,6 +35,8 @@ The *About* section shows the following information:
 * **Version**: The version of the visual.
 * **Source**: The source of the visual, if available.
 * **Support**: Link to support information, if available.
+
+:::image type="content" source="./media/about-dialog/about-dialog.png" alt-text="Screenshot of the About dialog.":::
 
 ## Certification
 
@@ -46,7 +48,7 @@ For more information about certified visuals, see [Certified Power BI visuals](.
 Power BI visuals sometimes require access to data or other resources in your organization. This section describes what permissions a visual might need in order to work properly in the current version.
 It's important to note that the admin can choose to block a visual from requesting a certain permission through the [Power BI visuals admin settings](/fabric/admin/organizational-visuals). If a visual requests a permission that's disables, the visual can't use that permission.
 
-:::image type="content" source="./media/about-dialog/about-dialog.png" alt-text="Screenshot of list of privileges in the About dialog.":::
+:::image type="content" source="./media/about-dialog/about-privileges.png" alt-text="Screenshot of list of privileges in the About dialog.":::
 
 The following are the permissions a visual might request:
 
