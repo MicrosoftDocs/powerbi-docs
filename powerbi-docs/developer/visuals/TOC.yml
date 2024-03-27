@@ -144,10 +144,16 @@
       href: local-storage.md
     - name: Authentication API
       href: authentication-api.md
+    - name: "On object formatting API" 
+      href: on-object-formatting-api.md
+    - name: "Subselection API" 
+      href: subselection-api.md
     - name: "Filter visuals API" 
       href: filter-api.md
     - name: "Identity filter API" 
       href: identity-filter-api.md
+    - name: "Hierarchy identity filter API"
+      href: hierarchy-filter-api.md
     - name: "Detect filter API"
       href: detect-filter-api.md
     - name: "'Rendering' events API" 
@@ -170,6 +176,8 @@
         href: utils-formatting.md
       - name: "Formatting model utils"
         href: utils-formatting-model.md
+      - name: "On object utils"
+        href: utils-on-object.md
       - name: "Data view utils"
         href: utils-dataview.md
       - name: "Chart utils"

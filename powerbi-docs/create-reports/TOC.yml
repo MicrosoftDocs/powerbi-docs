@@ -68,6 +68,8 @@
       href: sample-financial-download.md
   - name: Power BI reports
     items: 
+    - name: Home in Power BI Desktop
+      href: desktop-home.md
     - name: Power BI modern ribbon
       href: desktop-ribbon.md
     - name: Optimize ribbon in Power BI Desktop
@@ -114,8 +116,12 @@
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
           href: copilot-create-narrative.md
+        - name: Summarize a report in the Copilot pane
+          href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
           href: copilot-prompts-narratives.md
+        - name: "Use Copilot to create measure descriptions"
+          href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
         - name: Copilot in Fabric and Power BI FAQ
@@ -256,7 +262,7 @@
         href: power-bi-create-mobile-optimized-report-about.md
       - name: Mobile layout view
         href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
-      - name: Create an initial layout
+      - name: Create a mobile-optimized layout
         href: power-bi-create-mobile-optimized-report-initial-layout.md
       - name: Optimize visual formatting
         href: power-bi-create-mobile-optimized-report-format-visuals.md
@@ -902,6 +908,8 @@
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
+      - name: Connect to Snowflake and Databricks
+        href: ../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md
       - name: Support for ODBC data sources
         href: ../paginated-reports/paginated-reports-odbc-support.md
       - name: Create an embedded data source
@@ -1158,6 +1166,10 @@
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
+    - name: Publish a paginated report
+      href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+    - name: Subscribe to reports on OneDrive SharePoint
+      href: ../paginated-reports/paginated-reports-onedrive-sharepoint.md
     - name: Embed a paginated report
       href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1

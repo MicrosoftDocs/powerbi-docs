@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 01/16/2024
+  ms.date: 03/20/2024
 
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -192,7 +192,14 @@ sections:
           In some customer scenarios, admins have allowed external users to their organization access to workspaces and content. 
 
           What is an external user? One example would be a BikeManufacturer (`user@MyBikes.com`) account that has been given access to the Contoso (`user@Contoso.com`) tenant. An external user may see an "Access denied" error or see no content with Power BI Report Builder when accessing workspaces, or editing or creating reports. We look to adding this functionality in a future update.
-          
+            
+      - question: |
+          Is there a limit to the number of data sources per paginated report?
+        answer: |
+          Paginated reports are limited to 250 data sources per report.
+
+          Generally, customers have three or four data sources per report. We have set an upper limit of 250 data sources. If the report has more data sources than 250, the report doesn't publish. If it's an existing published report, the report isn't rendered.          
+
 additionalContent: |
 
   ## Next steps

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/09/2024
+ms.date: 02/26/2024
 LocalizationGroup: Model your data
 ---
 # Use Copilot to create measure descriptions (preview)
@@ -24,7 +24,7 @@ Learn more about how to access to Fabric Copilot for Power BI on your tenant in 
 
 ## Create a description with Copilot
 
-1. Select the model measure in the Data pane of Model view to see the measure properties.  
+1. Select an existing model measure in the Data pane of Model view to see the measure properties.  
 
 1. Select the **Create with Copilot** (preview) button under the **Description** textbox.  
 
@@ -36,6 +36,7 @@ If you update the measure later, just select the button again so Copilot can upd
 
 ## Related content
 
+- [Overview of Copilot for Power BI (preview)](../create-reports/copilot-introduction.md)
 - [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md). Download a sample file and get step-by-step lessons on how to create more measures.  
 - [Learn DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). 
 - [Data Analysis Expressions Reference](/dax/)

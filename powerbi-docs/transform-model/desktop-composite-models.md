@@ -337,7 +337,7 @@ When working with DirectQuery for Power BI semantic models and Analysis Services
 * To build reports in the Power BI service on a composite model that's based on another semantic model, all credentials must be set.  
 * Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an On-premises data gateway (Standard mode). 
 * All connections to remote Power BI semantic models are made using single sign-on. Authenticating with a service principal isn't currently supported. 
-* RLS rules will be applied on the source on which they're defined, but won't be applied to any other semantic models in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group. 
+* RLS rules will be applied on the source on which they're defined, but won't be applied to any other semantic models in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables will not filter any tables loaded from a remote source. 
 * KPIs, row level security, and translations won't be imported from the source. 
 * You may see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using Date Hierarchy: 
 

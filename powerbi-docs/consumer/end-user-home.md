@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Find your content
 ms.topic: conceptual
-ms.date: 01/17/2024
+ms.date: 02/17/2024
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-In Power BI, the term *content* refers to visuals, apps, dashboards, and reports. Content is created by Power BI designers who share it with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
+In Power BI, the term *content* refers to visuals, apps, dashboards, and reports. Power BI designers create content and share that content with their colleagues. Your content is accessible and viewable in the Power BI service, and often the best place to start working in the Power BI service is from Power BI **Home**.
 
 ## Explore Power BI Home
 
@@ -114,9 +114,11 @@ The nav pane classifies your content in ways that help you find what you need qu
 
 :::image type="content" source="media/end-user-home/power-bi-nav-pane.png" alt-text="A screenshot of the navigation pane on Home.":::
 
-Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane is the quickest way to get to content. The nav pane is there when you open your Home landing page and remains there as you open other areas of the Power BI service. It can be collapsed by selecting this icon. :::image type="icon" source="media/end-user-home/power-bi-hide.png"::: 
+Use the nav pane to locate and move between dashboards, reports, apps, and other content. Occasionally, using the nav pane is the quickest way to get to content. The nav pane is there when you open your Home landing page and remains there as you open other areas of the Power BI service. 
   
 The nav pane organizes your content into containers that are similar to what you also see on the Home canvas. Select the **Browse** tab to display lists of your **Recent**, **Favorites**, and **Shared with me** content. 
+
+The number of visible buttons on the nav pane depends on space. To view hidden buttons, select the ellipses (...). As you open workspaces, they appear below **My workspace**. To remove the workspace from the nav pane, select the X. Selecting the X doesn't delete the workspace, it only removes it from the nav pane. To reopen a workspace, select it from **Workspaces**.
 
 Quickly find the content you want on the nav pane. Content is organized similar to the Home canvas, but shows lists instead of cards.
 

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.custom:
   - ignite-2023-fabric
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/09/2023
 LocalizationGroup: Admin
 ---
@@ -24,21 +24,23 @@ On the other hand, with import mode, performance can be better because the data 
 
 Direct Lake mode eliminates the import requirement by loading the data directly from OneLake. Unlike DirectQuery, there is no translation from DAX or MDX to other query languages or query execution on other database systems, yielding performance similar to import mode. Because there's no explicit import process, it's possible to pick up any changes at the data source as they occur, combining the advantages of both DirectQuery and import modes while avoiding their disadvantages. Direct Lake mode can be the ideal choice for analyzing very large models and models with frequent updates at the data source.
 
+Direct Lake also supports [row-level security](./service-admin-ols.md) and [object-level](./service-admin-rls.md) security so users only see the data they have permission to see.
+
 ## Prerequisites
 
 Direct Lake is supported on Power BI Premium P and Microsoft Fabric F SKUs only. It's not supported on Power BI Pro, Premium Per User, or Power BI Embedded A/EM SKUs.
 
-#### Lakehouse
+### Lakehouse
 
 Before using Direct Lake, you must provision a Lakehouse (or a Warehouse) with one or more Delta tables in a workspace hosted on a supported Power BI or Microsoft Fabric capacity. The Lakehouse is required because it provides the storage location for your parquet-formatted files in OneLake. The Lakehouse also provides an access point to launch the Web modeling feature to create a Direct Lake model.
 
 To learn how to provision a Lakehouse, create a delta table in the Lakehouse, and create a basic model for the Lakehouse, see [Create a Lakehouse for Direct Lake](directlake-create-lakehouse.md).
 
-#### SQL endpoint
+### SQL endpoint
 
 As part of provisioning a Lakehouse, a SQL endpoint for SQL querying and a default model for reporting are created and updated with any tables added to the Lakehouse. While Direct Lake mode doesn't query the SQL endpoint when loading data directly from OneLake, it's required when a Direct Lake model must seamlessly fall back to DirectQuery mode, such as when the data source uses specific features like advanced security or views that can't be read through Direct Lake. Direct Lake mode also queries the SQL endpoint for schema- and security-related information.
 
-#### Data Warehouse
+### Data Warehouse
 
 As an alternative to a Lakehouse with SQL endpoint, you can also provision a Warehouse and add tables by using SQL statements or data pipelines. The procedure to provision a standalone Data Warehouse is almost identical to the procedure for a Lakehouse.
 
@@ -52,7 +54,9 @@ Direct Lake models support write operations through the XMLA endpoint by using t
 
 - Automation tasks like refreshing, and applying changes to Direct Lake models by using PowerShell and REST APIs.
 
-#### Enable XMLA read-write
+Note that Direct Lake tables created using XMLA applications will initially be in an unprocessed state until the application issues a refresh command. Unprocessed tables fall back to DirectQuery mode. When creating a new semantic model make sure to refresh your semantic model to process your tables.
+
+### Enable XMLA read-write
 
 Before performing write operations on Direct Lake models through the XMLA endpoint, XMLA read-write must be enabled for the capacity.
 
@@ -116,7 +120,7 @@ The following table lists both resource guardrails and MaxMemory:
 
 Depending on your Fabric or Power BI SKU, additional **Capacity unit** and **Max memory per query** limits also apply to Direct Lake models. To learn more, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
 
-#### Fallback behavior
+### Fallback behavior
 
 Direct Lake models include the **DirectLakeBehavior** property, which has three options:
 
@@ -173,7 +177,7 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 - Validation is limited for Direct Lake models. User selections are assumed correct and no queries will validate cardinality and cross filter selections for relationships, or for the selected date column in a date table.
 
-- Unprocessed tables fall back to DirectQuery mode. When creating a new semantic model make sure to refresh your semantic model to process your tables.
+- The Direct Lake tab in the Refresh history only lists Direct Lake-related refresh failures. Successful refreshes are currently omitted. 
 
 ## Get started
 

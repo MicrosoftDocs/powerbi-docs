@@ -86,7 +86,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | **Security** |||
 | [Bring Your Own Key (BYOK)](../enterprise/service-encryption-byok.md), which allows customers to use their own encryption key to encrypt data stored in the Microsoft cloud | No | Yes |
 | [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes  |
-| [Azure Private Link](../enterprise/service-security-private-links.md), which provides secure access for data traffic in Power BI | No | Yes |
+| [Azure Private Link](/fabric/security/security-private-links-overview), which provides secure access for data traffic in Power BI | No | Yes |
 | Single sign-on (SSO) for DirectQuery sources, which allows connecting to data sources by using the report user's identity | No | Yes |
 | [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
 | [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to specific tables or columns for specific users | Yes | Yes |

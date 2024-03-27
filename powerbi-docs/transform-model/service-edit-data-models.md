@@ -265,7 +265,6 @@ To see which limitation is preventing you from opening your data model, hover ov
 There are still many functional gaps between the model view in Power BI desktop and service. Functionality not yet supported in the service includes:
 * Setting a table as a feature table
 * Configuring any feature table properties
-* Editing the sort by property for a column 
 * Changing the storage mode of a table 
 * Changing to and from the data category ‘barcode’
 * Connecting to new data sources
@@ -280,7 +279,7 @@ There are still many functional gaps between the model view in Power BI desktop 
 
 ### Semantic models edited with external tools
 
-Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected results if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring). 
+Utilizing [external tools](../transform-model/desktop-external-tools.md) to modify the semantic model using the XMLA endpoint might cause unexpected behavior when editing your semantic model in the web if the write operation is not supported. For more information about supported write operations, please refer to our documentation on [changes outside of Power BI](../developer/projects/projects-overview.md#model-authoring). 
 
 ### Accessibility
 Full accessibility isn’t currently supported for data model editing in the Power BI service.

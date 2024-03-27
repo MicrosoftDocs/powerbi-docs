@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc, intro-overview
-ms.date: 10/30/2023
+ms.date: 03/07/2024
 #Customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -27,7 +27,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
 | Lifecycle | Modern lifecycle policy | Fully managed service |  |
 | Release cycle | Three times a year (January, May, September) | Once a month | Latest features and fixes come to the Power BI service first. A rollup of features from Power BI Desktop releases for the service comes to Power BI Report Server in each release; most other features are only meant for the Power BI service. |
-| Composite models | No | Yes |
+| Composite models | No | Yes | |
 | Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../connect-data/service-connect-to-services.md) with template apps in the Power BI service. In Power BI Report Server, use certified connectors to connect to services. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details. |
 | Create Power BI reports in Power BI Desktop | Yes | Yes |  |
 | Create Power BI reports in the browser | No | Yes |  |
@@ -38,7 +38,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
-| Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports/paginated-reports-report-builder-power-bi.md) in a Premium capacity |
+| Paginated reports | Yes | Yes | [Paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) |
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../connect-data/service-real-time-streaming.md) |
 | Automatic page refresh for DirectQuery models | No | Yes | [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) |

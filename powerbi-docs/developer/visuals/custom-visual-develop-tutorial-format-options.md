@@ -184,7 +184,7 @@ Now let's add new group called *color* for configuring the circle color and thic
 11. In the **update** method, after the declaration of the **radius** variable, add the following code.
 
     ```typescript
-    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews[0]);
+    this.visualSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualSettings, options.dataViews);
     this.visualSettings.circle.circleThickness.value = Math.max(0, this.visualSettings.circle.circleThickness.value);
     this.visualSettings.circle.circleThickness.value = Math.min(10, this.visualSettings.circle.circleThickness.value);
     ```

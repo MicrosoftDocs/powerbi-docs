@@ -13,8 +13,7 @@ ms.custom: template-how-to; subject-moving-resources
 # Move between regions
 
 > [!IMPORTANT]
-> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU or F (Fabric) SKU.  
-
+> At this time, we only offer the tenant migration service to customers with a P (Premium) SKU only. 
 The location selected during sign-up determines your default data region. However, this region might not be optimal if most of your users are located in a different geographic location. You might want to move to another region to reduce latency or to ensure data governance. You can’t move your organization’s tenant between regions by yourself. Self-service migration of Power BI resources stored in Azure isn’t supported. If you need to change your default data location from the current region to another region, you have to contact Microsoft support to manage the migration for you.
 
 > [!CAUTION]
@@ -56,7 +55,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
 
    Our support team works with you to verify that the following steps are done to prepare for the migration:
 
-   - We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
+- We can't migrate capacities and Premium workspaces, so you have to delete all capacities before migration. After the region move, these resources can be recreated. If you move resources from a Premium workspace to a shared workspace, datasets larger than 1 GB can't be viewed until they're moved back to Premium capacity.
 
    - To avoid conflicts during migration, delete any gateways that are already in the target region.
 

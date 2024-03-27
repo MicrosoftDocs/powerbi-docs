@@ -90,7 +90,7 @@ Another way to consider the different refresh types is what they impact and wher
  What do the different refresh types do? | **Queries used to populate visuals are refreshed.** <br><br> For visuals using DirectQuery tables the visual will query to get the latest data from the data source. <br><br> For visuals using imported tables the visual will only query data already imported to the semantic model on the last data refresh. | **Data is refreshed from the data source.** <br><br>Doesn't apply to DirectQuery tables as they are at the visual level and rely on refresh of report visuals. <br><br> For imported tables the data is refreshed from the source. | **Any data source table structure change since previous refresh will show.** <br><br> For example: To show a new column added to a Power BI Dataflow or SQL Database view. <br><br> Applies to both imported and DirectQuery tables.
  
  In **Power BI Desktop** refresh of report visuals, data refresh, and schema refresh all happen together using
- - **Home** ribbon > **Refresh** button
+- **Home** ribbon > **Refresh** button
  - **Home** ribbon > **Transform data** > **Close & Apply** button
  - The context menu (right-click or select the ellipsis) on any table then choosing **Refresh data**
 
@@ -381,7 +381,7 @@ Significant use of dashboard tiles or premium caching can increase refresh durat
 
 The data and query cache phases are independent of each other, but run in sequence. The data refresh runs first and when that succeeds, the query cache refresh runs. If the data refresh fails, the query refresh is not initiated. It's possible that the data refresh can run successfully, but the query cache refresh fails. 
 
-Refreshes made using the [enhanced refresh API](asynchronous-refresh.md) or [XMLA Endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
+Refreshes made using the [XMLA Endpoint](../enterprise/service-premium-connect-tools.md#semantic-model-refresh) won't show attempt details in the **Refresh history** window.
 
 
 

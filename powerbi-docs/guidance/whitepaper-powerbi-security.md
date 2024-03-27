@@ -94,7 +94,7 @@ Back-end functionality is served by micro-services running on different machines
 
 ### Power BI Premium infrastructure
 
-Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
+Power BI Premium offers a service for subscribers who require premium Power BI features, such as advanced AI, distribution to unlicensed users, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
 
 Power BI Premium capacities are hosted in back-end clusters that are independent of the regular Power BI back end – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
 
@@ -325,7 +325,7 @@ Using Private Link with Power BI provides the following benefits:
 * Private Link ensures that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 * Network traffic isolation from non-Azure-based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
 
-See [Private links for accessing Power BI](../enterprise/service-security-private-links.md) for additional information.
+See [Private links for accessing Power BI](/fabric/security/security-private-links-overview) for additional information.
 
 ### VNet connectivity (preview - coming soon)
 

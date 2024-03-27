@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/22/2024
+ms.date: 03/25/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,22 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## March 2024
+
+### Mobile layout auto-create (preview)
+
+The new auto-create mobile layout feature enables you to easily create mobile-optimized layouts for any new or existing report page. In mobile layout view, simply select **Auto-create**.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png" alt-text="Screenshot of the auto-create mobile layout option." lightbox="./media/mobile-whats-new-in-the-mobile-apps/auto-create-mobile-layout-option.png":::
+
+A new complete layout, with your report's visuals, will be created on the canvas. The auto-create engine understands the desktop layout of your report and tries its best to create an attractive mobile-optimized view that preserves your report's functionality. The feature is intended to help you get started. If the layout isn't exactly what you wanted or expected, you can tweak it to make it suit your needs, or you can undo it and go back to the previous layout.
+
+Check out our [documentation](../../create-reports/power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation) and get started!
+
+### Custom visual single sign-on (SSO) support
+
+Custom visuals using the new authentication API are now also supported when viewed in the Power BI Mobile apps. No additional authentication is required, ensuring that your data exploration experience in the mobile app is as smooth and delightful as possible, without any interruptions. [Learn more about the authentication API for custom visuals](../../developer/visuals/authentication-api.md)
 
 ## January 2024
 
@@ -57,7 +73,7 @@ Interactivity has come to the mobile layout canvas! This means that you can use 
 
 The Power BI mobile apps now support the Microsoft Entra ID feature *shared device mode*.
 
-Shared devices are company-owned devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign on (SSO) across applications and keeping users signed in on their device. This behavior isn't suitable for devices that are shared by multiple users. In the case of shared devices, employees expect to pick a device from the pool, "make it theirs" for the duration of their shift, and then to be able, at the end of their shift, to sign out from the device globally and have all their personal and company information removed so they can return the device to the pool. This is exactly what Microsoft Entra ID shared device mode enables.
+Shared devices are company-owned devices that are shared between employees, often frontline workers, across tasks, shifts, or locations. Most mobile apps, however, are designed for single users, and optimize their experience for use by a single user, with single sign-on (SSO) across applications and keeping users signed in on their device. This behavior isn't suitable for devices that are shared by multiple users. In the case of shared devices, employees expect to pick a device from the pool, "make it theirs" for the duration of their shift, and then to be able, at the end of their shift, to sign out from the device globally and have all their personal and company information removed so they can return the device to the pool. This is exactly what Microsoft Entra ID shared device mode enables.
 
 With the Power BI mobile app's new support for shared device mode, organizations can now safely deploy the app across pools of shared devices. [Check out the details](./mobile-app-shared-device-mode.md)!
 
@@ -205,7 +221,7 @@ The Power BI mobile apps for iOS and Android now support the full range of fonts
 
  The Power BI app for Windows is now aligned with the overall Power BI migration to Microsoft Edge WebView2, delivering faster performance and a better browsing experience all around.
 
-To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this does not apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
+To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this doesn't apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
 
 ## July 2022
 
@@ -246,7 +262,7 @@ Changes and updates to goals related to you now show up in your activity feed, a
 ![Screenshot of goals update in activity feed.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-goals-activity-feed.png)
 
 ### Minimum OS requirement for the Windows app
-The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades will not be available for Windows devices running on the earlier versions.
+The minimum OS required by the Power BI Windows app has changed to Windows 10 version 16299, in preparation for using WebView2. App upgrades won't be available for Windows devices running on the earlier versions.
 
 ### Goals now supports push notifications (Android and iOS)
 Now you can get notified when someone assigns you a goal or mentions you, so you won't miss out. [Learn more!](/power-bi/consumer/mobile/mobile-apps-metrics#notifications)

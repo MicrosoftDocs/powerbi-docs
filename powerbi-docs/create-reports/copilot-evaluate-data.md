@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/11/2024
+ms.date: 01/23/2024
 LocalizationGroup: Create reports
 ---
 
@@ -15,11 +15,9 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
+Before you start using Copilot with your semantic model, evaluate your data. You may need to do some clean-up work on your semantic model so that Copilot can derive insights from it.
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
-
-Before you start using Copilot with your semantic model, evaluate your data. You may need to do some clean-up work on your semantic model so that Copilot can derive insights from it.
 
 ## Considerations for datasets for Copilot use
 

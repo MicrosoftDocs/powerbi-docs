@@ -26,6 +26,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: Use Power BI Home
+            url: desktop-home.md
           - text: Use the updated ribbon
             url: desktop-ribbon.md
           - text: "Accessibility overview"
