@@ -26,10 +26,10 @@ There are three kinds of Power BI *per-user* licenses: Fabric free, Power BI Pro
 
 There are several ways to begin using the Power BI service and Fabric. 
 - If you already have a subscription to Microsoft 365, [check to see if that subscriptions includes a Power BI and Fabric license](../consumer/end-user-license.md).  
-- If you don't already have Microsoft 365, [Sign up for a new Microsoft 365 trial](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). 
+- If you don't already have Microsoft 365, [Sign up for a new Microsoft 365 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). 
 - If your [administrator already purchased a subscription and assigned you a license](../enterprise/service-admin-manage-licenses.md). Check for a license by typing app.powerbi.com into your browser.
-- Start with a [trial license](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-trial).
-- [Use self-service to sign up as an individual to try or buy](../fundamentals/service-self-service-signup-purchase-for-power-bi) the Power BI service or Fabric.
+- Start with a [trial license](service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial).
+- [Use self-service to sign up as an individual to try or buy](service-self-service-signup-purchase-for-power-bi.md) the Power BI service or Fabric.
 
 
 ## Power BI service licenses
