@@ -25,19 +25,20 @@ If you give them permissions, users in your organization can get one of the orga
 
 ## Fabric and the Power BI service
 
-The Power BI service is one of the experiences available in Microsoft Fabric. Power BI is also available as a standalone service. Everyone who uses Power BI or Fabric must have a per-user license. To use Fabric, organizations must also purchase a capacity subscription.
-
-To learn more, see [Licenses and capacities](/fabric/enterprise/licenses).
+Power BI is available as a standalone SaaS service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
 ## Licenses and subscriptions
-Fabric and the Power BI service are both SaaS platforms and require licenses. 
+Fabric and the Power BI service are both SaaS platforms and require licenses and at least one capacity subscription. There are some differences in how these licenses and capacities are acquired.    
 
 ### Power BI licenses
 
-To access the Power BI SaaS platform, you need a license and a subscription.
+Use of the Power BI service requires a license and a capacity. 
+
+- [Per user license](../fundamentals/service-features-license-type.md#power-bi-service-licenses) - Per user licenses allow users to work in the Power BI service. The options are Fabric free, Pro, and Premium Per User (PPU).
 
 - [Capacity subscription](../fundamentals/service-features-license-type.md#premium-capacity) - There are two types of Power BI subscriptions for organizations: standard and Premium. Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md). Power BI Premium is a tenant-level Microsoft 365 subscription, available in a choice of SKUs (Stock Keeping Units).
-- [Per user license](../fundamentals/service-features-license-type.md#power-bi-service-licenses) - Per user licenses allow users to work in the Power BI service. The options are Fabric free, Pro, and Premium Per User (PPU).
+
+Each Microsoft 365 E5 subscription includes standard capacity and a Pro license. 
 
 ### Fabric licenses
 
@@ -47,30 +48,29 @@ To access the Fabric SaaS platform, you need a license and a capacity.
 
 - [Per user license](/fabric/enterprise/licenses#per-user-licenses) - Per user licenses allow users to work in Fabric. The options are Fabric free, Pro, and Premium Per User (PPU).
 
-Fabric admins can buy licenses and control them with tools such as capacity pause and resume and scale.
-
 ## Which admins can purchase licenses and subscriptions
 
 ### Admin roles for purchasing licenses and subscriptions
 
-You must belong to Global or Billing admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+You must belong to the Global or Billing admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Admin roles for managing licenses and subscriptions
 
-After the licenses and subscriptions are purchased, Global, Billing, License, or User admins can manage licensing for an organization. For details on the differences between these four admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
+After the licenses and subscriptions are purchased, Global, Billing, License, or User admins can manage licenses for an organization. For details about these four admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
 
 ## Get Fabric or Power BI for your organization
 
-For information about pricing, see [Pricing & Product Comparison](https://powerbi.microsoft.com/pricing/).
-
 Fabric and the Power BI service are available for organizations to purchase and to try for free. For detailed instructions, select the option you prefer. 
+
+> [!TIP]
+> For up-to-date pricing information, see [Pricing & product comparison](https://powerbi.microsoft.com/pricing/).
 
 1. [Purchase a Fabric subscription.](/fabric/enterprise/buy-subscription) If you're ready to purchase, your options include bulk purchasing for your organization or enabling your users to upgrade their own licenses.
 
     After you purchase a Fabric subscription, [enable Fabric for your organization](/fabric/admin/fabric-switch). This includes setting up tenants and capacities.
 1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, can assign licenses to individual users or allow self-service.  [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-sign-up-and-purchase).
 1. [Start a free 60-day Fabric trial for your organization.](/fabric/get-started/fabric-trial) The trial includes a trial capacity, 1 TB of storage, and access to all of the Fabric experiences and features.
-1. Get free Fabric and Power BI licenses for all of your users. The Fabric free license doesn't include a Fabric capacity. The Fabric free license includes access to the paid features of the Power BI service. 
+1. Get free licenses for all of your users. The Fabric free license doesn't include a Fabric capacity. The Fabric free license includes access to the paid features of the Power BI service. 
 1. [Start a free 30-day trial of Power BI Pro.](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) The trial includes up to 25 licenses. After the 30 days expire, you're charged for the licenses.
 
 ## View existing licenses
