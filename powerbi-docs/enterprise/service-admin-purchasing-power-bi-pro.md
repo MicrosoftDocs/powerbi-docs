@@ -36,9 +36,9 @@ To Purchase Power BI paid licenses in the Microsoft 365 admin center:
 
    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-purchase-services.png" alt-text="Screenshot showing the Microsoft 365 billing menu with Purchase services selected.":::
 1. Select the number of licenses you want to purchase and the billing frequency. 
-    - If you haven't previously used it, start a **Fabric free** trial subscription. The Fabric free trial expires after 60 days.
+    - If you didn't already use it, start a **Fabric free** trial subscription. The Fabric free trial expires after 60 days.
     - Not ready to purchase Power BI, start with a **Power BI Pro** trial. The Power BI Pro trial includes up to 25 licenses. You'll need to enter your payment information because you'll be charged the monthly fee after the 30-day trial expires. 
-1. Ready to purchase a Power BI paid license?  Select **Buy**.
+1. Ready to purchase a Power BI paid license? Select **Buy**.
 
 1. Complete the information on the checkout page, and then select **Place order**.
 1. To verify your purchase, on the navigation menu, select **Billing**, and then select **Your Products**.
@@ -53,7 +53,7 @@ To learn how to assign licenses from the Microsoft 365 admin center, see [Assign
 
 For guest users, see [Use the licenses page to assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users#assign-licenses-by-using-the-licenses-page). Before assigning paid licenses to guest users, contact your Microsoft account representative to make sure you're in compliance with the terms of your agreement.
 
-## Assign licenses from the the Azure portal
+## Assign licenses from the Azure portal
 
 Follow these steps to assign Power BI licenses to individual user accounts:
 
