@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 01/14/2024
+ms.date: 03/14/2024
 ---
 
 # Power BI Desktop project semantic model folder

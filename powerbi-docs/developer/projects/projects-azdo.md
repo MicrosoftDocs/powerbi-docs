@@ -1,8 +1,8 @@
 ---
 title: Azure DevOps integration with Power BI Desktop projects
 description: Learn about Azure DevOps integration with Power BI. Desktop projects
-author: kfollis
-ms.author: kfollis
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
@@ -25,13 +25,15 @@ Microsoft Power BI Desktop projects enable developer collaboration by connecting
 
 1. Create a new Project within the organization:
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-new-project.png" border="false" alt-text="PBIP and Azure DevOps integration new project.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-new-project.png" alt-text="Screenshot of PBIP and Azure DevOps integration new project button.":::
 
 1. Enter your project details.
 
-    :::image type="content" source="media/projects-azdo/pbip-azdo-new-project-details.png" alt-text="PBIP and Azure DevOps integration new project details.":::
+    :::image type="content" source="media/projects-azdo/pbip-azdo-new-project-details.png" alt-text="Screenshot showing how to add new project details in PBIP and Azure DevOps integration.":::
 
 1. Select **Repos** > **Files**, and then select 'Initialize' to create an empty branch:
+
+    :::image type="content" source="media/projects-azdo/pbip-azdo-init-branch.png" alt-text="Screenshot showing how to initializa a new branch.":::
 
 1. In **Repos** > **Files**, select **Clone** > **Clone in VS Code**
 
