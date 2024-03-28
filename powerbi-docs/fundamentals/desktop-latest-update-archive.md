@@ -27,8 +27,6 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following sections describe previous months' updates to **Power BI Desktop** and the **Power BI service**.
 
-
-
 ## February 2024 Update (2.126.927.0)
 
 Our hearts were full of love for this month's collection of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
@@ -112,8 +110,8 @@ You can also download previous versions of Power BI Desktop if your organization
 
 Select the following links to download this earlier version: 
 
-* [December 2023 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-02.exe)
-* [December 2023 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-02_x64.exe)
+* [February 2024 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-02.exe)
+* [February 2024 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2024-02_x64.exe)
 
 
 
