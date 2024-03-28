@@ -43,9 +43,9 @@ To access the Power BI SaaS platform, you need a license and a subscription.
 
 To access the Fabric SaaS platform, you need a license and a capacity.  
 
-- [Capacity license](licenses.md#capacity-license) - An organizational license that provides a pool of resources for Fabric operations. Capacity licenses are divided into stock keeping units (SKUs). Each SKU provides a different number of capacity units (CUs) which are used to calculate the capacity's compute power.
+- [Capacity license](/fabric/enterprise/licenses#capacity-license) - An organizational license that provides a pool of resources for Fabric operations. Capacity licenses are divided into stock keeping units (SKUs). Each SKU provides a different number of capacity units (CUs) which are used to calculate the capacity's compute power.
 
-- [Per user license](licenses.md#per-user-licenses) - Per user licenses allow users to work in Fabric. The options are Fabric free, Pro, and Premium Per User (PPU).
+- [Per user license](/fabric/enterprise/licenses#per-user-licenses) - Per user licenses allow users to work in Fabric. The options are Fabric free, Pro, and Premium Per User (PPU).
 
 Fabric admins can buy licenses and control them with tools such as capacity pause and resume and scale.
 
@@ -84,7 +84,7 @@ You purchased licenses or signed up for an organizational trial. Now, decide whe
 **Self-service**
 
 - [When to use self-service sign-up and purchase](service-admin-disable-self-service.md)
-- [Manage self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins.md)
+- [Manage self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
 - [Manage self-service license requests in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-license-requests)
 - [Manage self-service sign-up subscriptions in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/manage-self-service-signup-subscriptions)
 - [How to combine self-service settings](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features)

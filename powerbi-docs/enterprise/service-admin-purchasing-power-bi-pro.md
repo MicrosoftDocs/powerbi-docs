@@ -27,7 +27,7 @@ Power BI Pro and Power BI Premium Per User (PPU) are individual user licenses th
 
 ## Purchase licenses in Microsoft 365
 
-To Purchase Power BI paid licenses in the Microsoft 365 admin center:
+To purchase Power BI paid licenses in the Microsoft 365 admin center:
 
 1. Using your administrator account, sign in to the [Microsoft 365 admin center.](https://admin.microsoft.com)
 1. On the navigation menu, select **Billing**, and then select **Purchase services**.
