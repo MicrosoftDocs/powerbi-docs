@@ -36,8 +36,8 @@ Fabric and the Power BI service are both SaaS platforms and require licenses.
 
 To access the Power BI SaaS platform, you need a license and a subscription.
 
-- [Capacity subscription](../fundamentals/service-features-license-type.md) - There are two types of Power BI subscriptions for organizations: standard and Premium. Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md). Power BI Premium is a tenant-level Microsoft 365 subscription, available in a choice of SKUs (Stock Keeping Units).
-- [Per user license](licenses.md#per-user-licenses) - Per user licenses allow users to work in the Power BI service. The options are Fabric free, Pro, and Premium Per User (PPU).
+- [Capacity subscription](../fundamentals/service-features-license-type.md#premium-capacity) - There are two types of Power BI subscriptions for organizations: standard and Premium. Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md). Power BI Premium is a tenant-level Microsoft 365 subscription, available in a choice of SKUs (Stock Keeping Units).
+- [Per user license](../fundamentals/service-features-license-type.md#power-bi-service-licenses) - Per user licenses allow users to work in the Power BI service. The options are Fabric free, Pro, and Premium Per User (PPU).
 
 ### Fabric licenses
 
@@ -65,28 +65,28 @@ For information about pricing, see [Pricing & Product Comparison](https://powerb
 
 Fabric and the Power BI service are available for organizations to purchase and to try for free. For detailed instructions, select the option you prefer. 
 
-1. [Purchase a Fabric subscription.](/fabric/enterprise/buy-subscription) If you're ready to purchase, your options include bulk purchasing for your organization or [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-signup-for-power-bi-and-fabric).
+1. [Purchase a Fabric subscription.](/fabric/enterprise/buy-subscription) If you're ready to purchase, your options include bulk purchasing for your organization or enabling your users to upgrade their own licenses.
 
     After you purchase a Fabric subscription, [enable Fabric for your organization](/fabric/admin/fabric-switch). This includes setting up tenants and capacities.
-1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, can assign licenses to individual users or allow self-service.  [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-signup-for-power-bi-and-fabric).
+1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, can assign licenses to individual users or allow self-service.  [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-sign-up-and-purchase).
 1. [Start a free 60-day Fabric trial for your organization.](/fabric/get-started/fabric-trial) The trial includes a trial capacity, 1 TB of storage, and access to all of the Fabric experiences and features.
 1. Get free Fabric and Power BI licenses for all of your users. The Fabric free license doesn't include a Fabric capacity. The Fabric free license includes access to the paid features of the Power BI service. 
 1. [Start a free 30-day trial of Power BI Pro.](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) The trial includes up to 25 licenses. After the 30 days expire, you're charged for the licenses.
 
 ## View existing licenses
 
-To see which users in your organization already have a license, see [View and manage user licenses](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins?view=o365-worldwide#view-self-service-subscriptions).
+To see which users in your organization already have a license, see [View and manage user licenses](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins#view-self-service-subscriptions).
 
-### Enable and disable self-service sign-up and purchase 
+## Enable and disable self-service sign-up and purchase 
 
 You purchased licenses or signed up for an organizational trial. Now, decide whether your users can assign themselves a license or give themselves an automatic license upgrade. Here are links to help you decide which settings to use. 
 
 **Self-service**
 
 - [When to use self-service sign-up and purchase](service-admin-disable-self-service.md)
-- [Manage self-service purchases and trials](/commerce/subscriptions/manage-self-service-purchases-admins?view=o365-worldwide)
-- [Manage self-service license requests in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide)
-- [Manage self-service sign-up subscriptions in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/manage-self-service-signup-subscriptions?view=o365-worldwide)
+- [Manage self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins.md)
+- [Manage self-service license requests in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-license-requests)
+- [Manage self-service sign-up subscriptions in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/manage-self-service-signup-subscriptions)
 - [How to combine self-service settings](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features)
 
 ## Guest user licenses
@@ -123,7 +123,7 @@ A Microsoft 365 E5 subscription includes Power BI Pro licenses. To learn how to 
 ## Related content
 
 - [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
-- [About self-service sign-up](/microsoft-365/admin/misc/self-service-sign-up?view=o365-worldwide)
+- [About self-service sign-up](/microsoft-365/admin/misc/self-service-sign-up)
 - [Business subscriptions and billing documentation](/microsoft-365/commerce/)
 - [Find Power BI users that are signed in](../admin/service-admin-access-usage.md)
-- [Self service FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+- [Self service FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
