@@ -12,7 +12,7 @@
         },
         {
             "source_path": "powerbi-docs/enterprise/service-admin-org-subscription.md",
-            "redirect_url": "/power-bi/service-admin-licensing-organization/",
+            "redirect_url": "/power-bi/enterprise/service-admin-licensing-organization/",
             "redirect_document_id": true
         },
         {
