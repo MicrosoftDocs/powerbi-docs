@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/10/2024
+ms.date: 03/29/2024
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -49,6 +49,10 @@ As you work with the report or visual in edit mode, you can always restore the i
 To get more space and a cleaner display for your slide show, you can collapse the toolbar across the bottom of the report page or visual using the [Expand/collapse toolbar](#expandcollapse-toolbar) control.
 
 If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode aren't, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
+
+## Automatically refresh data during slide shows
+
+
 
 ## Add styles to your presentation
 
@@ -142,6 +146,7 @@ Controls that help you work with your data in PowerPoint are described below.
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint add-in options menu.":::
 
 * **Clear data**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
+* **Slide show settings**: Controls data refresh during slide shows. With this setting, you can turn on/turn off automatic data refresh during a slide show, and set the refresh frequency.
 * **Learn**: Opens help pages.
 
 ### Expand/collapse toolbar
