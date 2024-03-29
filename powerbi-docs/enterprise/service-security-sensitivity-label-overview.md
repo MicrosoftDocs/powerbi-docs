@@ -7,7 +7,7 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 11/26/2023
+ms.date: 03/26/2024
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -103,7 +103,7 @@ The following image shows how a semantic model's sensitivity label is automatica
 > [!NOTE]
 > If for any reason the sensitivity label can't be applied on the new report or dashboard, Power BI **will not** block creation of the new item.
 
-## Sensitivity label inheritance from data sources (preview)
+## Sensitivity label inheritance from data sources
 
 Power BI semantic models that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
 
