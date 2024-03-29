@@ -22,16 +22,14 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Find a dataset or report](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
 
-1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
-
-1. [Begin exploring by building your matrix or PivotTable](#3-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
+1. [Begin exploring by building your matrix or PivotTable](#2-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
 
     > [!NOTE]
     > A matrix is like a [PivotTable in Excel](https://support.microsoft.com/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576).
 
-1. [Add filters if you need them](#4-add-filters-if-you-need-them). 
+1. [Add filters if you need them](#3-add-filters-if-you-need-them). 
 
-1. [Save and share your exploration](#5-save-and-share-your-exploration). 
+1. [Save and share your exploration](#4-save-and-share-your-exploration). 
 
 ## 1. Find a dataset or report you’d like to explore
 
