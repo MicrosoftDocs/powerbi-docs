@@ -155,15 +155,16 @@ You may want to disable if, for example, you need to allow completion of data pr
 
 ## Known issues and limitations
 
-- Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fall back to DirectQuery mode.
+- By design, only tables in the semantic model derived from tables in a Lakehouse or Warehouse support Direct Lake mode. Although tables in the model can be derived from SQL views in the Lakehouse or Warehouse, queries using those tables will fall back to DirectQuery mode.
+- Direct Lake semantic model tables can only be derived from tables and views from a single Lakehouse or Warehouse.
 
-- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are not yet supported.
+- Direct Lake tables cannot currently be mixed with other table types, such as Import, DirectQuery, or Dual, in the same model. Composite models are currently not supported.
 
 - DateTime relationships are not supported in Direct Lake models.
 
-- Calculated columns and calculated tables are not yet supported.
+- Calculated columns and calculated tables are not supported.
 
-- Some data types may not be supported.
+- Some data types may not be supported, such as high-precision decimals and money types.
 
 - Direct Lake tables do not support complex delta table column types. Binary and Guid semantic types are also unsupported. You must convert these data types into strings or other supported data types.
 
