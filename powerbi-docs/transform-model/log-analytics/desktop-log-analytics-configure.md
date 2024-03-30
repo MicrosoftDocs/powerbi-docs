@@ -234,9 +234,9 @@ The following table describes all the possible properties; not every property is
 | errorCount   | Total number of errors for the current request. |
 | qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](https://learn.microsoft.com/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
 | intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Cache refresh (3) |
-| discoverType    | Type of Discover requested by the client: Unknown (-1); Tables (0); Columns (1); Segments (2) |
+| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](https://learn.microsoft.com/analysis-services/trace-events/discover-events-data-columns?view=asallproducts-allversions#discover-begin-classdata-columns) for list of discover types. |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
-| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more [here](https://learn.microsoft.com/en-us/fabric/enterprise/throttling). |
+| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here](https://learn.microsoft.com/en-us/fabric/enterprise/throttling). |
 
 - All durations and cpu times are presented in milliseconds
 
