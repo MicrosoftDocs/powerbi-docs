@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/16/2023
+ms.date: 03/30/2024
 ---
 # Choose a launch item for your Power BI mobile app
 
