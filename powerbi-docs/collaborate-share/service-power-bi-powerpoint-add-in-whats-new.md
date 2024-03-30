@@ -18,7 +18,7 @@ ms.date: 03/30/2024
 
 ### Continuous slide show auto refresh
 
-PowerPoint allows you to continuously playback a presentation. This is especially useful when you want to present information in public displays without any human interaction.  
+PowerPoint allows you to continuously play back a presentation. This is especially useful when you want to present information in public displays without any human interaction.  
 
 Until now, if the presentation you wanted to run continuously as a slide show had slides with the Power BI add-in, there was the possibility that the data in the add-in would become outdated, since the add-in only got the data from Power BI when the slide loaded or when you manually refreshed the data being presented.  
 
@@ -35,7 +35,7 @@ To set up automatic refresh for your slide show, go to the add-in footer, select
 
 ### Improved static image mode
 
-The "save as static image" functionalilty that enables you to turn your live view of Power BI data into a static image has been improved and expanded!
+The "save as static image" functionality that enables you to turn your live view of Power BI data into a static image has been improved and expanded!
 
 * A new dropdown menu in the add-in footer makes it easy to switch between live data and a static image.
 
@@ -47,11 +47,11 @@ The "save as static image" functionalilty that enables you to turn your live vie
 
 	* **Public snapshot**: When you choose Public snapshot, anyone who can view the presentation will see the static image, regardless of their permissions in Power BI.
 
-The improved functionality also helps prevent inadvertant exposure of Power BI content in the slide thumbnails you see in such places as the navigation pane and slide sorter. Now thumbnails of slides that include an add-in merely display a blue-cube until the slide with the add-in actually loads and Power BI permissions are checked. At that point the thumbnail captures an image of whatever is displayed in the slide.
+The improved functionality also helps prevent inadvertent exposure of Power BI content in the slide thumbnails you see in such places as the navigation pane and slide sorter. Now thumbnails of slides that include an add-in merely display a blue-cube until the slide with the add-in actually loads and Power BI permissions are checked. At that point the thumbnail captures an image of whatever is displayed in the slide.
 
-The improved save-as-static-image functionallty requires **Office version 2312 (Build 17126)** or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
+The improved save-as-static-image functionality requires **Office version 2312 (Build 17126)** or later. If your Office version meets this requirement, don't use the *Save as image* option located the add-in side pane.
 
-You can only switch between live data and a static image in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatnever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
+You can only switch between live data and a static image in the PowerPoint desktop application - you can't do this in PowerPoint for the web. However, PowerPoint for the web **does** respect the choice you made in the desktop application. So whatever view you selected in the desktop app will be the view that you'll see in PowerPoint for the web.
 
 ## February 2024
 
@@ -59,7 +59,7 @@ You can only switch between live data and a static image in the PowerPoint deskt
 
 When you paste a direct report link (the URL copied from the browser) to the Power BI add-in in a presentation, you can now make that link shareable within the Power BI add-in. Previously, when you pasted a direct report link into the Power BI add-in, there was no option to make it sharable in the add-in before you added it to the presentation. Viewers of the presentation had to have access to the report before you used the direct report link or they wouldn't be able to see the data. 
 
-Now, if you have permissions to re-share a report, the Power BI add-in can replace the link you pasted with a shareable link. When you have sharable links enabled, you'll see a checkbox added below the report URL that asks you if you want to give viewers automatic access to the data. Mark this checkbox and Power BI add-in creates a shareable link for you. If you use a sharable link, other users viewing the presentation will have the required permissions to see the report and won't need to request access when the viewing the presentation.
+Now, if you have permissions to reshare a report, the Power BI add-in can replace the link you pasted with a shareable link. When you have sharable links enabled, you'll see a checkbox added below the report URL that asks you if you want to give viewers automatic access to the data. Mark this checkbox and Power BI add-in creates a shareable link for you. If you use a sharable link, other users viewing the presentation will have the required permissions to see the report and won't need to request access when the viewing the presentation.
 
 You must have sharable links enabled for your organization to use this feature. For more information on using sharable links, go to [Change a direct link to a shareable link](./service-power-bi-powerpoint-add-in-install.md#change-a-direct-link-to-a-shareable-link).
 ## December 2023

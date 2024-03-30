@@ -52,13 +52,13 @@ If you need to present a slide show multiple times, you most likely want to set 
 
 ## Automatically refresh data during slide shows
 
-PowerPoint allows you to continuously playback a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction.  
+PowerPoint allows you to continuously play back a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction.  
 
 If a presentation that is running continuously has slides that include the Power BI add-in, the data in the add-in might become outdated, since normally the add-in only gets the data from Power BI when the slide is loaded or when the user manually refreshes the data being presented.
 
 To prevent the data in the add-in from becoming stale while being played back as part of a slideshow, you can set the add-in to automatically pull fresh data from Power BI while the presentation is in slide show mode. This ensures that the presentation will always show the most recent data.
 
-To enable automatic refresh, go to the add-in footer, select **Add-in options**, choose **Slide show settings**, check **Automatic refresh in slide show** and set the desired frequency.
+To enable automatic refresh, go to the add-in footer, select **Add-in options**, choose **Slide show settings**, check **Automatic refresh in slide show**, and set the desired frequency.
 
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/slide-show-settings.png" alt-text="Screenshot showing the Slide show settings option in the Power BI add-in options.":::
 
@@ -98,7 +98,7 @@ To generate data insights:
 
 ## Freeze a snapshot of the current view
 
-Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There may be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
+Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There might be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
