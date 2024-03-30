@@ -208,7 +208,7 @@ The following table describes all the possible properties; not every property is
 | timeStart | The timestamp (UTC) of when the request started. |
 | timeEnd | The timestamp (UTC) of when the request ended. |
 | durationMs | Total duration of the execution. |
-| datasourceConnectionThrottleTimeMs | Total amount of time spent in BeginThrottleConnectionOnDatasource |
+| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](https://learn.microsoft.com/power-bi/enterprise/service-premium-what-is#semantic-model-sku-limitation). |
 | directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
 | directQueryExecutionTimeMs | Total time spent on executing all DirectQuery queries during the request. |
 | directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
@@ -232,11 +232,11 @@ The following table describes all the possible properties; not every property is
 | directQueryRequestCount   | Total number of DirectQuery storage engine queries executed from DAX engine. |
 | commandType   | Analysis Services command type. |
 | errorCount   | Total number of errors for the current request. |
-| qsoReplicaVersion   | Replica version for QSO enabled semantic models. |
-| intendedUsage   | Intended usage: Default (0); Schedule refresh (1); On Demand Refresh (2); Cache refresh (3) |
+| qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](https://learn.microsoft.com/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
+| intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Cache refresh (3) |
 | discoverType    | Type of Discover requested by the client: Unknown (-1); Tables (0); Columns (1); Segments (2) |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
-| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling.  |
+| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more [here](https://learn.microsoft.com/en-us/fabric/enterprise/throttling). |
 
 - All durations and cpu times are presented in milliseconds
 
