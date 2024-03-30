@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/29/2024
+ms.date: 03/30/2024
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -58,7 +58,9 @@ If a presentation that is running continuously has slides that include the Power
 
 To prevent the data in the add-in from becoming stale while being played back as part of a slideshow, you can set the add-in to automatically pull fresh data from Power BI while the presentation is in slide show mode. This ensures that the presentation will always show the most recent data.
 
-To enable automatic refresh, go to the add-in footer, select Add-in options, choose Slide show settings, check Automatic refresh in slide show and set the desired frequency.  
+To enable automatic refresh, go to the add-in footer, select **Add-in options**, choose **Slide show settings**, check **Automatic refresh in slide show** and set the desired frequency.
+
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/slide-show-settings.png" alt-text="Screenshot showing the Slide show settings option in the Power BI add-in options.":::
 
 > [!NOTE]
 > Auto refresh only happens in slide show mode, and not while you're editing the presentation.
@@ -155,7 +157,7 @@ Controls that help you work with your data in PowerPoint are described below.
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint add-in options menu.":::
 
 * **Clear data**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
-* **Slide show settings**: Controls data refresh during slide shows. With this setting, you can turn on/turn off automatic data refresh during a slide show, and set the refresh frequency.
+* **Slide show settings**: Controls data refresh during slide shows. With this setting, you can turn on/turn off automatic data refresh during a slide show, and set the refresh frequency. For more information, see [Automatically refresh data during slide shows](#automatically-refresh-data-during-slide-shows).
 * **Learn**: Opens help pages.
 
 ### Expand/collapse toolbar
