@@ -9,10 +9,27 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/10/2024
+ms.date: 03/30/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
+
+## April 2024
+
+### Continuous slide show auto refresh
+
+PowerPoint allows you to continuously playback a presentation. This is especially useful when you want to present information in public displays without any human interaction.  
+
+Until now, if the presentation you wanted to run continuously as a slide show had slides with the Power BI add-in, there was the possibility that the data in the add-in would become outdated, since the add-in only got the data from Power BI when the slide loaded or when you manually refreshed the data being presented.  
+
+With this new automatic refresh in slide show feature, you can now set the add-in to automatically pull fresh data from Power BI while the presentation is in slide show mode, ensuring that your presentation always shows the most recent data.
+
+To set up automatic refresh for your slide show, go to the add-in footer, select **Add-in options**, choose **Slide show settings**, check **Automatic refresh in slide show** and set the desired refresh frequency.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/slide-show-settings.png" alt-text="Screenshot showing the Power BI add-in's slide show settings option.":::
+
+> [!NOTE]
+> Auto refresh only happens in slide show mode, and not while you're editing the presentation.
 
 ## March 2024
 
