@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 01/23/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Update your data model to work well with Copilot for Power BI
