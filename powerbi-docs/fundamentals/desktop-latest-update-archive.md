@@ -9,6 +9,7 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 03/26/2024
 LocalizationGroup: Get started
+no-loc: [Copilot]
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 
