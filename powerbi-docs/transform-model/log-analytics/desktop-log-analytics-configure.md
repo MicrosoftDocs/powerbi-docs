@@ -222,9 +222,9 @@ The following table describes all the possible properties; not every property is
 | mEnginePeakMemoryKB  | Max memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
 | directQueryTimeoutMs  | Timeout associated with DirectQuery queries. |
 | xmlaCommandTimeoutMs  | Timeout associated with XMLA command. |
-| externalConnectionTimeoutMs  | Timeout associated with creating external datasource connections. |
+| externalConnectionTimeoutMs  | Timeout associated with creating external non-tabular datasource connections (e.g. Blob Storage). |
 | externalQueryTimeoutMs  | Timeout associated with queries to external datasources. |
-| tabularConnectionTimeoutMs  | Timeout associated with external tabular connections. |
+| tabularConnectionTimeoutMs  | Timeout associated with external tabular datasource connections (e.g. SQL). |
 | refreshParallelism  | Effective MaxParallelism used in the request.|
 | vertipaqTotalRows   | Total number of processed rows by the Vertipaq engine.  |
 | queryResultRows   | Total number of rows returned as a result of the DAX query. |
