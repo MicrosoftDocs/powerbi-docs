@@ -30,7 +30,7 @@ To mark an item as the launch item, open the desired item, tap **More options (â
 
 :::image type="content" source="./media/mobile-apps-launch-item/set-as-launch-item-option.png" alt-text="Screenshot of Set as launch item option in the Power BI mobile apps." border="false":::
 
-Select Always open the item in full screen if you want the launch item to always open in full screen mode.
+Select **Always open the item in full screen** if you want the launch item to always open in full screen mode.
 
 :::image type="content" source="./media/mobile-apps-launch-item/always-open-full-screen.png" alt-text="Screenshot of showing how to select the always open the item in full screen mode option." border="false":::
 
