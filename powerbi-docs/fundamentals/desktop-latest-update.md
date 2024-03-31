@@ -10,6 +10,7 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 03/26/2024
 LocalizationGroup: Get started
+no-loc: [Copilot]
 ---
 # What's new in Power BI?
 

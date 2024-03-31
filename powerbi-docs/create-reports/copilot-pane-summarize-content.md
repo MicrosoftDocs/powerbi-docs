@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/06/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Summarize a report page in the Copilot pane  
