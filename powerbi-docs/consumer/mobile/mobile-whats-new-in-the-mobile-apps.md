@@ -43,7 +43,7 @@ A new "Clear barcode" button in the report footer makes it easy to clear an acti
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/clear-barcode-icon.png" alt-text="Screenshot showing the clear barcode icon in the footer of a report." border="false":::
 
-[Learn more about scanning barcode from the mobile app](./mobile-apps-scan-barcode.md).
+[Learn more about scanning barcodes from the mobile app](./mobile-apps-scan-barcode.md).
 
 ## March 2024
 
