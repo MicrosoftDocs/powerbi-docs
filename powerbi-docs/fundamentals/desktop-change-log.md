@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 03/05/2024
+no-loc: [Copilot]
 ---
 
 # Change log for Power BI Desktop

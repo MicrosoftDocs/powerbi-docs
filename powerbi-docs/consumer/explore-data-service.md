@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 03/13/2024
+no-loc: [Copilot]
 ---
 
 # Explore your data in the Power BI service (preview)

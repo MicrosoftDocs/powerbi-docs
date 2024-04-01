@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 02/29/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Create a narrative with Copilot for Power BI

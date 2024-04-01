@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 03/01/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Overview of Copilot for Power BI (preview)
