@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 03/30/2024
+ms.date: 04/01/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
@@ -29,6 +29,7 @@ To set up automatic refresh for your slide show, go to the add-in footer, select
 :::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/slide-show-settings.png" alt-text="Screenshot showing the Power BI add-in's slide show settings option.":::
 
 > [!NOTE]
+> This feature requires that your Office version meet the add-in's [minimum Office version requirement](./service-power-bi-powerpoint-add-in-about.md#requirements).
 > Auto refresh only happens in slide show mode, and not while you're editing the presentation.
 
 ## March 2024

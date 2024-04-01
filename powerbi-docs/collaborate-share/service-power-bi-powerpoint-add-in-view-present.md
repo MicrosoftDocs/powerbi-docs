@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/30/2024
+ms.date: 04/01/2024
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -52,7 +52,7 @@ If you need to present a slide show multiple times, you most likely want to set 
 
 ## Automatically refresh data during slide shows
 
-PowerPoint allows you to continuously play back a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction.  
+PowerPoint allows you to continuously play back a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction. For information about setting up a continuously running slideshow, see [Create a self-running presentation](https://support.microsoft.com/office/create-a-self-running-presentation-57fc41ae-f36a-4fb5-94a3-52d5bc466037). 
 
 If a presentation that is running continuously has slides that include the Power BI add-in, the data in the add-in might become outdated, since normally the add-in only gets the data from Power BI when the slide is loaded or when the user manually refreshes the data being presented.
 
@@ -63,6 +63,7 @@ To enable automatic refresh, go to the add-in footer, select **Add-in options**,
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/slide-show-settings.png" alt-text="Screenshot showing the Slide show settings option in the Power BI add-in options.":::
 
 > [!NOTE]
+> This feature requires that your Office version meet the add-in's [minimum Office version requirement](./service-power-bi-powerpoint-add-in-about.md#requirements).
 > Auto refresh only happens in slide show mode, and not while you're editing the presentation.
 
 ## Add styles to your presentation
