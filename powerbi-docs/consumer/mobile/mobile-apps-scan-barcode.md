@@ -66,13 +66,14 @@ A floating scanner opens with a small menu.
 
 ## Considerations and limitations
 
-- The Filters pane gives no indication of barcode filtering. To know whether a report is currently filtered by a barcode, look at the icon on the Barcode Scanner menu item:
+The Filters pane gives no indication of barcode filtering. To know whether a report is currently filtered by a barcode, look at the barcode icons on the report footer:
 
-    :::image type="icon" source="media/mobile-apps-scan-barcode/power-bi-barcode-filtered-icon-black.png"::: indicates that the report is currently filtered by a barcode.
+| Icons| Meaning|
+|:-----------|:------------|
+| :::image type="icon" source="media/mobile-apps-scan-barcode/power-bi-barcode-filtered-icon-black.png"::: | Indicates that the report is currently filtered by a barcode.|
+| :::image type="icon" source="media/mobile-apps-scan-barcode/power-bi-barcode-unfiltered-icon.png"::: | Indicates that the report is currently **not** filtered by a barcode.|
 
-    :::image type="icon" source="media/mobile-apps-scan-barcode/power-bi-barcode-unfiltered-icon.png"::: indicates that the report is currently not filtered by a barcode.
-
-- The mobile apps support Barcode filtering for reports that have only one barcode column across all report data tables. If you scan a barcode for a report that has more than one barcode column, no filtering takes place.
+The mobile apps support Barcode filtering for reports that have only one barcode column across all report data tables. If you scan a barcode for a report that has more than one barcode column, no filtering takes place.
 
 ## Issues with scanning a barcode
 
