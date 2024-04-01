@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 03/28/2024
 LocalizationGroup: Get started
+no-loc: [Copilot]
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 

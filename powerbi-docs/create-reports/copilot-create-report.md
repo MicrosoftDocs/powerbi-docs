@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 03/01/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Create report pages with Copilot for the Power BI service

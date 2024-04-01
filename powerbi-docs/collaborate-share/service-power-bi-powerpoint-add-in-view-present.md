@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/10/2024
+ms.date: 04/01/2024
 ---
 
 # View and present live Power BI data in PowerPoint
@@ -50,6 +50,22 @@ To get more space and a cleaner display for your slide show, you can collapse th
 
 If you need to present a slide show multiple times, you most likely want to set it up just once, and have it automatically return to its beginning state when it's finished, so you're ready to go for the next time. The add-in makes this easy. Since data selections you make in edit mode are saved, while selections you make in slide show mode aren't, you can set up the presentation just once in advance in edit mode, and then present it as a slide show multiple times without having to set it up again each time, no matter how much slicing, dicing, and filtering you do in the course of the show - when the slide show is over, the report page or visual goes back to the state it was in at the beginning of the slide show.
 
+## Automatically refresh data during slide shows
+
+PowerPoint allows you to continuously play back a presentation in slide show mode. This feature is especially useful when you want to present information in public displays without any human interaction. For information about setting up a continuously running slideshow, see [Create a self-running presentation](https://support.microsoft.com/office/create-a-self-running-presentation-57fc41ae-f36a-4fb5-94a3-52d5bc466037). 
+
+If a presentation that is running continuously has slides that include the Power BI add-in, the data in the add-in might become outdated, since normally the add-in only gets the data from Power BI when the slide is loaded or when the user manually refreshes the data being presented.
+
+To prevent the data in the add-in from becoming stale while being played back as part of a slideshow, you can set the add-in to automatically pull fresh data from Power BI while the presentation is in slide show mode. This ensures that the presentation will always show the most recent data.
+
+To enable automatic refresh, go to the add-in footer, select **Add-in options**, choose **Slide show settings**, check **Automatic refresh in slide show**, and set the desired frequency.
+
+:::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/slide-show-settings.png" alt-text="Screenshot showing the Slide show settings option in the Power BI add-in options.":::
+
+> [!NOTE]
+> This feature requires that your Office version meet the add-in's [minimum Office version requirement](./service-power-bi-powerpoint-add-in-about.md#requirements).
+> Auto refresh only happens in slide show mode, and not while you're editing the presentation.
+
 ## Add styles to your presentation
 
 You can improve the appearance of your presentation by applying styles to the add-in. Currently, you can put a border around the add-in to give it a clear definition on the slide.
@@ -83,7 +99,7 @@ To generate data insights:
 
 ## Freeze a snapshot of the current view
 
-Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There may be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
+Every time you open your presentation, the report page or visual reloads into the add-in, bringing fresh data from the Power BI service. There might be times when you don't want this to happen, and instead would like the data to remain static. For this you can use the [View](#add-in-side-pane) menu in the toolbar. Choosing one of the snapshot options turns the current live view into a static, non-interactive image. Then, when you next open the presentation, you'll see the static view you saved.
 
 ![Screenshot of add-in show as saved image option in add-in side pane.](media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-show-saved-image.png)
 
@@ -142,6 +158,7 @@ Controls that help you work with your data in PowerPoint are described below.
 :::image type="content" source="media/service-power-bi-powerpoint-add-in-view-present/power-bi-powerpoint-addin-addin-options.png" alt-text="Screenshot of Power BI add-in for PowerPoint add-in options menu.":::
 
 * **Clear data**: Removes the report page or visual from the add-in and returns you to the add-in **Insert** screen, where you can start over by pasting in the URL of a different report page or visual.
+* **Slide show settings**: Controls data refresh during slide shows. With this setting, you can turn on/turn off automatic data refresh during a slide show, and set the refresh frequency. For more information, see [Automatically refresh data during slide shows](#automatically-refresh-data-during-slide-shows).
 * **Learn**: Opens help pages.
 
 ### Expand/collapse toolbar
