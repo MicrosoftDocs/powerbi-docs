@@ -19,6 +19,20 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
+## April 2024
+
+### Open Power BI items in full screen mode
+
+It's now possible to have the mobile app open Power BI items in full-screen mode, so users can view their data at its max. Opening an item in full-screen mode is supported both for launch items and when using a universal link.
+
+To set a launch item to open in full screen mode, either choose Always open in full screen mode when you choose a launch item, or go to the Launch item section in the app settings and turn on the Open in full screen toggle.
+
+:::image type="content" source="{source}" alt-text="{alt-text}":::
+
+Using an MDM tool that supports an AppConfig file, mobile device administrators can also configure a launch item to be opened in full screen mode for their users.
+
+You can also add the query parameter? fullscreen=1 to a Power BI item’s link. When you use a link with this parameter on your mobile device, the mobile app will open the item in full screen mode. 
+
 ## March 2024
 
 ### Mobile layout auto-create (preview)

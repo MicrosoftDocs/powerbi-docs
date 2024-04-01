@@ -22,7 +22,7 @@ If both you and your organization have configured launch items, you can choose w
 
 Setting up a launch item doesn't mean you lose any features of the mobile app. All your Power BI content, and all the app's navigation features and pages, including the home page, are all still fully accessible.
 
-**Admins**: For information about setting up a launch item for your organization, see [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android)
+**Admins**: For information about setting up a launch item for your organization, see [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android).
 
 ## Set up a launch item
 
