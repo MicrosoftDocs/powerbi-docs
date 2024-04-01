@@ -17,7 +17,7 @@
         },
         {
             "source_path": "powerbi-docs/enterprise/service-admin-manage-licenses.md",
-            "redirect_url": "/fabric/admin/admin-overview.md",
+            "redirect_url": "/fabric/admin/admin-overview",
             "redirect_document_id": false
         },
         {
