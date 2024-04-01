@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/22/2022
+ms.date: 04/01/2024
 LocalizationGroup: Share your work
 ---
 
@@ -24,7 +24,7 @@ Some of the effects of turning off this setting are listed below:
 * In the Power BI service, the discovery experience only shows semantic models in the current workspace.
 * In Power BI Desktop, the discovery experience only shows semantic models from workspaces where you're a member.
 * In the Data hub, users see semantic models that were shared with them outside of the workspace, but they can't interact with them.
-* In Power BI Desktop, if users open a *.pbix* file with a live connection to a semantic model outside any workspaces they are a member of, they see an error message asking them to connect to a different semantic model.
+* In Power BI Desktop, if users open a *.pbix* file with a live connection to a semantic model outside any workspaces they are a member of, they see an error message asking them to connect to a different semantic model. See the "Limitations" section of [Download a report from the Power BI service to Power BI Desktop](/create-reports/service-export-to-pbix.md#limitations) for more information.
 
 ## Provide a link for the certification process
 
