@@ -23,15 +23,19 @@ For related "What's New" information, see:
 
 ### Open Power BI items in full screen mode
 
-It's now possible to have the mobile app open Power BI items in full-screen mode, so users can view their data at its max. Opening an item in full-screen mode is supported both for launch items and when using a universal link.
+It's now possible to open Power BI items in full screen mode so users can get right to the largest unobstructed view of their data possible. This capability is especially convenient for frontline workers who need quick access to their content.
 
-To set a launch item to open in full screen mode, either choose Always open in full screen mode when you choose a launch item, or go to the Launch item section in the app settings and turn on the Open in full screen toggle.
+Opening an item directly in full screen mode is supported for launch items and universal links.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+To set a launch item to open in full screen mode, either choose **Always open in full screen mode** when you choose a launch item, or go to the Launch item section in the app settings and turn on the **Open in full screen** toggle.
 
-Using an MDM tool that supports an AppConfig file, mobile device administrators can also configure a launch item to be opened in full screen mode for their users.
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/full-screen-launch-item.png" alt-text="Screenshot showing open in full screen options for launch items." border="false":::
 
-You can also add the query parameter? fullscreen=1 to a Power BI item’s link. When you use a link with this parameter on your mobile device, the mobile app will open the item in full screen mode. 
+For more information about launch items, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
+
+Using an MDM tool that supports an AppConfig file, mobile device administrators can also configure a launch item to open in full screen mode for their users. For more information, see [Launch item configuration](./mobile-app-configuration.md#launch-item-configuration-ios-and-android).
+
+You can also add the query parameter *?fullScreen=1* to a Power BI item's link. When you select a link with this parameter on your mobile device, the mobile app will open the item in full screen mode. For more information, see [Create a link that works anywhere](./mobile-apps-deep-link-specific-location#create-a-link-that-works-anywhere).
 
 ### New "Clear barcode" action in the report footer  
 
