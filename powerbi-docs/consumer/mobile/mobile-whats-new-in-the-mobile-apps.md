@@ -27,15 +27,12 @@ It's now possible to open Power BI items in full screen mode so users can get ri
 
 Opening an item directly in full screen mode is supported for launch items and universal links.
 
-To set a launch item to open in full screen mode, either choose **Always open in full screen mode** when you choose a launch item, or go to the Launch item section in the app settings and turn on the **Open in full screen** toggle.
+* To make a launch item open in full screen mode, select **Always open in full screen mode** when setting a new launch item, or turn on the **Open in full screen** toggle in the app settings if you already have a launch item chosen. For more information, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
 
-:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/full-screen-launch-item.png" alt-text="Screenshot showing open in full screen options for launch items." border="false":::
+* To open an item in full screen mode using a universal link, add the query parameter *?fullScreen=1* to the item's link. For more information, see [Create a link that works anywhere](./mobile-apps-deep-link-specific-location.md#create-a-link-that-works-anywhere).
 
-For more information about launch items, see [Choose a launch item for your Power BI mobile app](./mobile-apps-launch-item.md).
-
-Using an MDM tool that supports an AppConfig file, mobile device administrators can also configure a launch item to open in full screen mode for their users. For more information, see [Launch item configuration](./mobile-app-configuration.md#launch-item-configuration-ios-and-android).
-
-You can also add the query parameter *?fullScreen=1* to a Power BI item's link. When you select a link with this parameter on your mobile device, the mobile app will open the item in full screen mode. For more information, see [Create a link that works anywhere](./mobile-apps-deep-link-specific-location.md#create-a-link-that-works-anywhere).
+    > [!NOTE]
+    > Mobile device admins can add the *?fullScreen=1* query parameter to launch item link configuration as well. For more information, see [Launch item configuration](./mobile-app-configuration.md#launch-item-configuration-ios-and-android).
 
 ### New "Clear barcode" action in the report footer  
 
