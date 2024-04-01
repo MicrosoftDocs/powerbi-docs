@@ -33,6 +33,14 @@ Using an MDM tool that supports an AppConfig file, mobile device administrators 
 
 You can also add the query parameter? fullscreen=1 to a Power BI item’s link. When you use a link with this parameter on your mobile device, the mobile app will open the item in full screen mode. 
 
+### New "Clear barcode" action in the report footer  
+
+A new "Clear barcode" button in the report footer makes it easy to clear an active barcode filter and go back to the unfiltered report.
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/clear-barcode-icon.png" alt-text="Screenshot showing the clear barcode icon in the footer of a report." border="false":::
+
+[Learn more about scanning barcode from the mobile app](./mobile-apps-scan-barcode.md).
+
 ## March 2024
 
 ### Mobile layout auto-create (preview)
