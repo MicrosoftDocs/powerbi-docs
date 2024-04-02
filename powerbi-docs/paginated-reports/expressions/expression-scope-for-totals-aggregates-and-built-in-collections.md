@@ -62,7 +62,7 @@ As the report processor combines data from a report dataset with the tablix data
 
 - **Named scope** The name of a dataset, a data region, or a data region group that is in scope for the expression. For aggregate calculations, you can specify a containing scope. You cannot specify a named scope for both a row group and a column group in a single expression. You cannot specify a contained scope unless the expression is for an aggregate of an aggregate.
 
-     The following expression generates the interval years between SellStartDate and LastReceiptDate. These fields are in two different datasets, DataSet1 and DataSet2. The [First Function (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-first-function), which is an aggregate function, returns the first value of SellStartDate in DataSet1 and the first value of LastReceiptDate in DataSet2.
+     The following expression generates the interval years between SellStartDate and LastReceiptDate. These fields are in two different datasets, DataSet1 and DataSet2. The [First Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-first-function), which is an aggregate function, returns the first value of SellStartDate in DataSet1 and the first value of LastReceiptDate in DataSet2.
 
     ```
     =DATEDIFF("yyyy", First(Fields!SellStartDate.Value, "DataSet1"), First(Fields!LastReceiptDate.Value, "DataSet2"))
