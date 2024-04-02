@@ -48,17 +48,17 @@ The following built-in functions calculate summary values for a set of non-null 
 
 | **Function** | **Description** |
 | --- | --- |
-| [Avg](./report-builder-functions-avg-function.md) | Returns the average of all non-null numeric values specified by the expression, evaluated in the given scope. |
-| [Count](./report-builder-functions-count-function.md) | Returns a count of non-null values specified by the expression, evaluated in the context of the given scope. |
-| [CountDistinct](./report-builder-functions-countdistinct-function.md) | Returns a count of all distinct non-null values specified by the expression, evaluated in the context of the given scope. |
-| [Max](./report-builder-functions-max-function.md) | Returns the maximum value of all non-null numeric values specified by the expression, in the context of the given scope. You can use this for specifying a chart axis maximum value to control the scale. |
-| [Min](./report-builder-functions-min-function.md) | Returns the minimum value of all non-null numeric values specified by the expression, in the context of the given scope. You can use this for specifying a chart axis minimum value to control the scale. |
-| [StDev](./report-builder-functions-stdev-function.md) | Returns the standard deviation of all non-null numeric values specified by the expression, evaluated in the given scope. |
-| [StDevP](./report-builder-functions-stdevp-function.md) | Returns the population standard deviation of all non-null numeric values specified by the expression, evaluated in the context of the given scope. |
-| [Sum](./report-builder-functions-sum-function.md) | Returns the sum of all the non-null numeric values specified by the expression, evaluated in the given scope. |
-| [Union](./report-builder-functions-union-function.md) | Returns the union of all the non-null spatial data values of type **SqlGeometry** or **SqlGeography** that are specified by the expression, evaluated in the given scope. |
-| [Var](./report-builder-functions-var-function.md) | Returns the variance of all non-null numeric values specified by the expression, evaluated in the given scope. |
-| [VarP](./report-builder-functions-varp-function.md) | Returns the population variance of all non-null numeric values specified by the expression, evaluated in the context of the given scope. |
+| [Avg](/sql/reporting-services/report-design/report-builder-functions-avg-function) | Returns the average of all non-null numeric values specified by the expression, evaluated in the given scope. |
+| [Count](/sql/reporting-services/report-design/report-builder-functions-count-function) | Returns a count of non-null values specified by the expression, evaluated in the context of the given scope. |
+| [CountDistinct](/sql/reporting-services/report-design/report-builder-functions-countdistinct-function) | Returns a count of all distinct non-null values specified by the expression, evaluated in the context of the given scope. |
+| [Max](/sql/reporting-services/report-design/report-builder-functions-max-function) | Returns the maximum value of all non-null numeric values specified by the expression, in the context of the given scope. You can use this for specifying a chart axis maximum value to control the scale. |
+| [Min](/sql/reporting-services/report-design/report-builder-functions-min-function) | Returns the minimum value of all non-null numeric values specified by the expression, in the context of the given scope. You can use this for specifying a chart axis minimum value to control the scale. |
+| [StDev](/sql/reporting-services/report-design/report-builder-functions-stdev-function) | Returns the standard deviation of all non-null numeric values specified by the expression, evaluated in the given scope. |
+| [StDevP](/sql/reporting-services/report-design/report-builder-functions-stdevp-function) | Returns the population standard deviation of all non-null numeric values specified by the expression, evaluated in the context of the given scope. |
+| [Sum](/sql/reporting-services/report-design/report-builder-functions-sum-function) | Returns the sum of all the non-null numeric values specified by the expression, evaluated in the given scope. |
+| [Union](/sql/reporting-services/report-design/report-builder-functions-union-function) | Returns the union of all the non-null spatial data values of type **SqlGeometry** or **SqlGeography** that are specified by the expression, evaluated in the given scope. |
+| [Var](/sql/reporting-services/report-design/report-builder-functions-var-function) | Returns the variance of all non-null numeric values specified by the expression, evaluated in the given scope. |
+| [VarP](/sql/reporting-services/report-design/report-builder-functions-varp-function) | Returns the population variance of all non-null numeric values specified by the expression, evaluated in the context of the given scope. |
 
 
 
@@ -124,8 +124,8 @@ The following built-in functions calculate running values for a set of data. **R
 
 | **Function** | **Description** |
 | --- | --- |
-| [RowNumber](./report-builder-functions-rownumber-function.md) | Returns a running count of the number of rows for the specified scope. The **RowNumber** function restarts counting at 1, not 0. |
-| [RunningValue](./report-builder-functions-runningvalue-function.md) | Returns a running aggregate of all non-null numeric values specified by the expression, evaluated for the given scope. |
+| [RowNumber](/sql/reporting-services/report-design/report-builder-functions-rownumber-function) | Returns a running count of the number of rows for the specified scope. The **RowNumber** function restarts counting at 1, not 0. |
+| [RunningValue](/sql/reporting-services/report-design/report-builder-functions-runningvalue-function) | Returns a running aggregate of all non-null numeric values specified by the expression, evaluated for the given scope. |
 
 
 
@@ -135,7 +135,7 @@ The following built-in function calculates the number of rows in the given scope
 
 | **Function** | **Description** |
 | --- | --- |
-| [CountRows](./report-builder-functions-countrows-function.md) | Returns the number of rows in the specified scope, including rows with null values. |
+| [CountRows](/sql/reporting-services/report-design/report-builder-functions-countrows-function) | Returns the number of rows in the specified scope, including rows with null values. |
 
 
 
@@ -145,9 +145,9 @@ The following lookup functions retrieve values from a specified dataset.
 
 | **Function** | **Description** |
 | --- | --- |
-| [Lookup Function](./report-builder-functions-lookup-function.md) | Returns a value from a dataset for a specified expression. |
-| [LookupSet Function](./report-builder-functions-lookupset-function.md) | Returns a set of values from a dataset for a specified expression. |
-| [Multilookup Function](./report-builder-functions-multilookup-function.md) | Returns the set of first-match values for a set of names from a dataset that contains name/value pairs. |
+| [Lookup Function](/sql/reporting-services/report-design/report-builder-functions-lookup-function) | Returns a value from a dataset for a specified expression. |
+| [LookupSet Function](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) | Returns a set of values from a dataset for a specified expression. |
+| [Multilookup Function](/sql/reporting-services/report-design/report-builder-functions-multilookup-function) | Returns the set of first-match values for a set of names from a dataset that contains name/value pairs. |
 
 
 
@@ -157,9 +157,9 @@ The following built-in functions return the first, last, or previous value withi
 
 | **Function** | **Description** |
 | --- | --- |
-| [First](./report-builder-functions-first-function.md) | Returns the first value in the given scope of the specified expression. |
-| [Last](./report-builder-functions-last-function.md) | Returns the last value in the given scope of the specified expression. |
-| [Previous](./report-builder-functions-previous-function.md) | Returns the value or the specified aggregate value for the previous instance of an item within the specified scope. |
+| [First](/sql/reporting-services/report-design/report-builder-functions-first-function) | Returns the first value in the given scope of the specified expression. |
+| [Last](/sql/reporting-services/report-design/report-builder-functions-last-function) | Returns the last value in the given scope of the specified expression. |
+| [Previous](/sql/reporting-services/report-design//report-builder-functions-previous-function) | Returns the value or the specified aggregate value for the previous instance of an item within the specified scope. |
 
 
 
@@ -179,7 +179,7 @@ The following built-in function tests the current context of a report item to se
 
 | Function | Description |
 | --- | --- |
-| [InScope](./report-builder-functions-inscope-function.md) | Indicates whether the current instance of an item is within the specified scope. |
+| [InScope](/sql/reporting-services/report-design/report-builder-functions-inscope-function) | Indicates whether the current instance of an item is within the specified scope. |
 
 
 
@@ -189,7 +189,7 @@ The following built-in function retrieves the current level when a recursive hie
 
 | Function | Description |
 | --- | --- |
-| [Level](./report-builder-functions-level-function.md) | Returns the current level of depth in a recursive hierarchy. |
+| [Level](/sql/reporting-services/report-design/report-builder-functions-level-function) | Returns the current level of depth in a recursive hierarchy. |
 
 
 

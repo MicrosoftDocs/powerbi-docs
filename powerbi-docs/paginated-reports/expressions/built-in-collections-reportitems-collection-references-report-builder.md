@@ -42,7 +42,7 @@ ms.custom: updatefrequency5
 ## Scope for the ReportItems Collection  
  As the report is processed, each text box in the report body or in a data region is evaluated in the context of its dataset, data region, and group associations. The scope for a reference to the **ReportItems** collection is the current scope or any point higher than the current scope.  
   
- For example, a text box in a row that is in a parent group must not contain an expression that refers to the name of a text box in a child group row. Such an expression does not resolve to a value in the report because the child row text box is out of scope. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](./report-builder-functions-aggregate-functions-reference.md).  
+ For example, a text box in a row that is in a parent group must not contain an expression that refers to the name of a text box in a child group row. Such an expression does not resolve to a value in the report because the child row text box is out of scope. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
      
 
 ## Next steps

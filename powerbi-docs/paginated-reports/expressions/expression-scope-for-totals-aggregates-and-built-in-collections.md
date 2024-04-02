@@ -62,7 +62,7 @@ As the report processor combines data from a report dataset with the tablix data
 
 - **Named scope** The name of a dataset, a data region, or a data region group that is in scope for the expression. For aggregate calculations, you can specify a containing scope. You cannot specify a named scope for both a row group and a column group in a single expression. You cannot specify a contained scope unless the expression is for an aggregate of an aggregate.
 
-     The following expression generates the interval years between SellStartDate and LastReceiptDate. These fields are in two different datasets, DataSet1 and DataSet2. The [First Function (Power BI Report Builder)](./report-builder-functions-first-function.md), which is an aggregate function, returns the first value of SellStartDate in DataSet1 and the first value of LastReceiptDate in DataSet2.
+     The following expression generates the interval years between SellStartDate and LastReceiptDate. These fields are in two different datasets, DataSet1 and DataSet2. The [First Function (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-first-function), which is an aggregate function, returns the first value of SellStartDate in DataSet1 and the first value of LastReceiptDate in DataSet2.
 
     ```
     =DATEDIFF("yyyy", First(Fields!SellStartDate.Value, "DataSet1"), First(Fields!LastReceiptDate.Value, "DataSet2"))
@@ -72,7 +72,7 @@ As the report processor combines data from a report dataset with the tablix data
 
 In some locations of a report, you must specify a scope. For example, for a text box on the design surface, you must specify the name of the dataset to use: `=Max(Fields!Sales.Value,"Dataset1")`. In other locations, there is an implicit default scope. For example, if you do not specify an aggregate for a text box in a group scope, the default aggregate First is used.
 
-Each aggregate function topic lists the scopes that are valid for its use. For more information, see [Aggregate Functions Reference (Power BI Report Builder)](report-builder-functions-aggregate-functions-reference.md).
+Each aggregate function topic lists the scopes that are valid for its use. For more information, see [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
 
 ## <a id="Examples"></a> Example Aggregate Expressions for a Table Data Region
 
@@ -117,7 +117,7 @@ For more information about these subjects:
 - Interpreting visual cues on tablix data regions: [Tablix Data Region Cells, Rows, and Columns (Power BI Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
 - The tablix data region: [Tablix Data Region Cells, Rows, and Columns (Report Builder)](/sql/reporting-services/report-design/tablix-data-region-cells-rows-and-columns-report-builder-and-ssrs).
 - Expressions: [Expression Uses in Reports (Power BI Report Builder)](./expression-uses-reports-report-builder.md)
-- Aggregates: [Aggregate Functions Reference (Power BI Report Builder)](report-builder-functions-aggregate-functions-reference.md).
+- Aggregates: [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
 
 ## <a id="Sparklines"></a> Synchronize Scales for Sparklines
 

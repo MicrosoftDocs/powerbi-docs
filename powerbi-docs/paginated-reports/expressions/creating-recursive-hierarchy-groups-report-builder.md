@@ -30,26 +30,26 @@ For more information, see [Add or Delete a Group in a Data Region (Power BI Repo
 
 You can use Reporting Services aggregate functions that accept the parameter *Recursive* to calculate summary data for a recursive hierarchy. The following functions accept **Recursive** as a parameter:
 
-- [Sum](./report-builder-functions-sum-function.md)
-- [Avg](./report-builder-functions-avg-function.md)
-- [Count](./report-builder-functions-count-function.md)
-- [CountDistinct](./report-builder-functions-countdistinct-function.md)
-- [CountRows](./report-builder-functions-countrows-function.md)
-- [Max](./report-builder-functions-max-function.md)
-- [Min](./report-builder-functions-min-function.md)
-- [StDev](./report-builder-functions-stdev-function.md)
-- [StDevP](./report-builder-functions-stdevp-function.md)
-- [Sum](./report-builder-functions-sum-function.md)
-- [Var](./report-builder-functions-var-function.md)
-- [VarP](./report-builder-functions-varp-function.md).
+- [Sum](/sql/reporting-services/report-design/report-builder-functions-sum-function)
+- [Avg](/sql/reporting-services/report-design/report-builder-functions-avg-function)
+- [Count](/sql/reporting-services/report-design/report-builder-functions-count-function)
+- [CountDistinct](/sql/reporting-services/report-design/report-builder-functions-countdistinct-function)
+- [CountRows](/sql/reporting-services/report-design/report-builder-functions-countrows-function)
+- [Max](/sql/reporting-services/report-design/report-builder-functions-max-function)
+- [Min](/sql/reporting-services/report-design/report-builder-functions-min-function)
+- [StDev](/sql/reporting-services/report-design/report-builder-functions-stdev-function)
+- [StDevP](/sql/reporting-services/report-design/report-builder-functions-stdevp-function)
+- [Sum](/sql/reporting-services/report-design/report-builder-functions-sum-function)
+- [Var](/sql/reporting-services/report-design/report-builder-functions-var-function)
+- [VarP](/sql/reporting-services/report-design/report-builder-functions-varp-function).
 
-For more information, see [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md).
+For more information, see [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
 
 ## Related content
 
 - [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)
 - [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)
-- [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md)
+- [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference)
 - [Tables (Power BI Report Builder)](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)
 - [Matrices (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)
 - [Lists (Power BI Report Builder)](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)
