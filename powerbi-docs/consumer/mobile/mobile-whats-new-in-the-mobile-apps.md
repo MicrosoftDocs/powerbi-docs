@@ -241,7 +241,7 @@ The Power BI mobile apps for iOS and Android now support the full range of fonts
 
  The Power BI app for Windows is now aligned with the overall Power BI migration to Microsoft Edge WebView2, delivering faster performance and a better browsing experience all around.
 
-To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this doesn't apply to Microsoft Surface Hub).  App upgrades will not be available for Windows devices running on earlier versions.
+To support WebView2, the minimum OS required by the Power BI Windows app has changed to Windows 10 version 17763 (this doesn't apply to Microsoft Surface Hub).  App upgrades won't be available for Windows devices running on earlier versions.
 
 ## July 2022
 
@@ -330,7 +330,7 @@ Try out the new dark mode in the Power BI app for Windows. In dark mode, you'll 
 ![Screenshot of dark mode in Windows app.](media/mobile-whats-new-in-the-mobile-apps/power-bi-dark-mode-windows-app.png)
 
 ### Recommended content hints now supported on Android devices
-Recommended content hints are supported on Android devices, just as they are for iOS devices. Hints on the items recommended for you by Power BI help you understand why the items were recommended.
+Recommended content hints are supported on Android devices, just as they're for iOS devices. Hints on the items recommended for you by Power BI help you understand why the items were recommended.
 
 ## November 2021
 ### Recommended content supports hints (iOS)
@@ -535,7 +535,7 @@ We've added the capability to select multiple data points on a report page. When
 
 #### Report footer can now always be visible in the mobile app for iPhones
 
-On your iPhone, like on your Android phone, you can now decide to dock the report footer at the bottom of the report page, where it is always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides. To dock the footer, toggle the **Docked report footer** switch on the [mobile app settings](./mobile-app-interaction-settings.md) page.
+On your iPhone, like on your Android phone, you can now decide to dock the report footer at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides. To dock the footer, toggle the **Docked report footer** switch on the [mobile app settings](./mobile-app-interaction-settings.md) page.
 
 #### Support for PBIRS reports (preview) (Windows)
 
@@ -557,7 +557,7 @@ Annotations you create during presentations become an integral part of the prese
 
 #### Docked report footer and a refresh button - new experiences for interacting with reports (Android)
 
-We've heard from our Android users that their experience using reports is not optimal - that it is hard to use the report footer and that pull-to-refresh is too sensitive in some devices. Therefore, in this release, we've changed these behaviors:
+We've heard from our Android users that their experience using reports isn't optimal - that it's hard to use the report footer and that pull-to-refresh is too sensitive in some devices. Therefore, in this release, we've changed these behaviors:
 * **Docked report footer** - now, when you open a report on your phone, you'll find the report footer docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides.
 * **Refresh button on report header** - you'll also find a refresh button in the report header, making it easy to refresh the report exactly when you intend to.
 
@@ -622,7 +622,7 @@ Read more about [custom navigation](https://powerbi.microsoft.com/blog/designing
 #### Introducing Power BI Mobile new look (preview) (iOS and Android)
 
 We've refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new nav panes that give you an easy way of navigating through the app. With the new and refreshed experiences, it's now quicker and easier to find what you need, when you need it.
-Since the new look is in preview, you will need to turn it on to enjoy it.
+Since the new look is in preview, you'll need to turn it on to enjoy it.
 Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
 ![Power BI Mobile new look](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look2.gif)
@@ -674,7 +674,7 @@ Users can use device built-in protection to secure Power BI, by asking for Face 
 
 #### One page report Slideshow (Windows)
 
-Supporting auto refresh also for one-page reports in slideshow. So, if the report's underlying data source is updated, we will pick it up and update the data in the page.
+Supporting auto refresh also for one-page reports in slideshow. So, if the report's underlying data source is updated, we'll pick it up and update the data in the page.
 
 
 ### April 2019
@@ -758,7 +758,7 @@ Links in reports that point to other Power BI artifacts now open directly inside
 
 #### Show data and copy values
 
-Report visual action menu (...) now has the option to show the underlying data in table format. Once in the table, you can long-tap to select and copy values from that table (assuming that there is no Intune policy restricting copying).
+Report visual action menu (...) now has the option to show the underlying data in table format. Once in the table, you can long-tap to select and copy values from that table (assuming that there's no Intune policy restricting copying).
 
 ### October 2018
 
@@ -853,7 +853,7 @@ You can now drill down and drill up to dive into report visuals on your mobile d
 
 #### Persistent filters
 
-We recently updated report filters and slicers, so they are automatically saved from Power BI on the web to the Power BI mobile app. Now, filters and slicers you set in the mobile app are automatically saved to Power BI on the web.
+We recently updated report filters and slicers, so they're automatically saved from Power BI on the web to the Power BI mobile app. Now, filters and slicers you set in the mobile app are automatically saved to Power BI on the web.
 
 
 ### March 2018
@@ -1263,7 +1263,7 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 #### iPhone mobile app
 **Apple Watch** View your Power BI tiles and KPIs on your [Apple Watch](mobile-apple-watch.md).
 
-**iOS 9.0 and later** To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 9.0 and later.​
+**iOS 9.0 and later** To accommodate the best possible experience and new features for Power BI, we're now supporting only devices running iOS 9.0 and later.​
 
 **Global search** Added a new "recently viewed" list and global search so you can find the data you need quickly.
 
@@ -1392,7 +1392,7 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 * Improved user experience when using with role-based security.
 * Touch-optimized improvements for matrix chart tiles: Now you can easily scroll through your matrix data and view all its data easily and intuitively.
 * Improved data formatting of charts and alignments of dashboard tiles. 
-* Removal of iOS 7 support: To maintain highest security standards for Power BI, we will no longer support iOS 7 installed devices. iOS 8 and above is required. 
+* Removal of iOS 7 support: To maintain highest security standards for Power BI, we'll no longer support iOS 7 installed devices. iOS 8 and above is required. 
 * Send feedback and rating added in app: Added in-app capability to send feedback and provide ratings so that we can increase the community's influence on our roadmap and promote issues easily and directly from the app.
 
 #### Windows
