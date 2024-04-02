@@ -54,7 +54,7 @@ Use **Lookup** to retrieve the value from the specified dataset for a name/value
 
 - Returns the result expression value.
 
-To retrieve multiple values for a single name or key field where there is a 1-to-many relationship, use [LookupSet Function (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-lookupset-function). To call **Lookup** for a set of values, use [Multilookup Function (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-multilookup-function).
+To retrieve multiple values for a single name or key field where there is a 1-to-many relationship, use [LookupSet Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-lookupset-function). To call **Lookup** for a set of values, use [Multilookup Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-multilookup-function).
 
 The following restrictions apply:
 
@@ -80,7 +80,7 @@ The following restrictions apply:
 
     - The Report.Language property.
 
-For more information, see [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
+For more information, see [Aggregate Functions Reference (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
 
 ## Example
 
