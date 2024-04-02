@@ -44,9 +44,8 @@ Each Microsoft 365 E5 subscription includes standard capacity and a Pro license.
 
 To access the Fabric SaaS platform, you need a license and a capacity.  
 
-- [Capacity license](/fabric/enterprise/licenses#capacity-license) - An organizational license that provides a pool of resources for Fabric operations. Capacity licenses are divided into stock keeping units (SKUs). Each SKU provides a different number of capacity units (CUs) which are used to calculate the capacity's compute power.
-
 - [Per user license](/fabric/enterprise/licenses#per-user-licenses) - Per user licenses allow users to work in Fabric. The options are Fabric free, Pro, and Premium Per User (PPU).
+- [Capacity license](/fabric/enterprise/licenses#capacity-license) - An organizational license that provides a pool of resources for Fabric operations. Capacity licenses are divided into stock keeping units (SKUs). Each SKU provides a different number of capacity units (CUs) which are used to calculate the capacity's compute power.
 
 ## Which admins can purchase licenses and subscriptions
 
@@ -68,7 +67,7 @@ Fabric and the Power BI service are available for organizations to purchase and 
 1. [Purchase a Fabric subscription.](/fabric/enterprise/buy-subscription) If you're ready to purchase, your options include bulk purchasing for your organization or enabling your users to upgrade their own licenses.
 
     After you purchase a Fabric subscription, [enable Fabric for your organization](/fabric/admin/fabric-switch). This includes setting up tenants and capacities.
-1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, can assign licenses to individual users or allow self-service.  [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-sign-up-and-purchase).
+1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, you can assign licenses to individual users or allow self-service. For more information, see [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-sign-up-and-purchase).
 1. [Start a free 60-day Fabric trial for your organization.](/fabric/get-started/fabric-trial) The trial includes a trial capacity, 1 TB of storage, and access to all of the Fabric experiences and features.
 1. Get free licenses for all of your users. The Fabric free license doesn't include a Fabric capacity. The Fabric free license includes access to the paid features of the Power BI service. 
 1. [Start a free 30-day trial of Power BI Pro.](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) The trial includes up to 25 licenses. After the 30 days expire, you're charged for the licenses.
@@ -103,16 +102,16 @@ For more information about guest user access, see [Distribute Power BI content t
 
 There are many other admin tasks related to licenses and subscriptions. Some of them are listed and linked here. 
 
-- Assign and manage licenses with [Microsoft 365]() and with the [Azure portal]().
-- Remove or reassign a license, enable, disable a license
-- Cancel a trial
-- Takeover a license or tenant
-- Handling expiring trials
+- Assign and manage licenses with [Microsoft 365](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) and with the [Azure portal](service-admin-purchasing-power-bi-pro.md).
+- [Remove or reassign a license, enable, disable a license](/microsoft-365/admin/manage/assign-licenses-to-users)
+- [Cancel a trial](/fabric/get-started/fabric-trial)
+- [Takeover a license or tenant](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
+- [Handling expiring trials](/microsoft-365/commerce/subscriptions/cancel-your-subscription).
 - Handle expiring licenses for Power BI
 
 ### Power BI license expiration
 
-There's a grace period after a Power BI license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days.
+There's a grace period after a Power BI license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days. For license trials, there is no grace period.
 
 Power BI has the same license lifecycle as Microsoft 365. For more information, see [What happens to my data and access when my Microsoft 365 for business subscription ends](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
 
