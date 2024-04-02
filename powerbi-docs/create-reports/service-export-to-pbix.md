@@ -131,7 +131,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
 * Downloading a .pbix file that's larger than 1 GB is only supported when the .pbix is in [live connected report mode](#download-modes). 
 * You can't download reports that are created in the Power BI service and based on a semantic model in **My Workspace** in [live connected report mode](#download-modes).
-* If you disable the switch in the tenant settings described in [Control the use of semantic models across workspaces](service-export-to-pbix.md), your users can't download a .pbix file from copied reports or reports created from datasets in the same workspace.
+* If you disable the switch in the tenant settings described in [Control the use of semantic models across workspaces](../connect-data/service-datasets-admin-across-workspaces.md), your users can't download a .pbix file from copied reports or reports created from datasets in the same workspace.
 
 ### Limitations when downloading a semantic model .pbix file
 
