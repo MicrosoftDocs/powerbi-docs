@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 04/02/2024
 LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
@@ -19,7 +19,7 @@ Datamarts help bridge the gap between business users and IT. Datamarts are self-
 
 Once data is loaded into a datamart, you can additionally define relationships and policies for business intelligence and analysis. Datamarts automatically generate a semantic model or semantic model, which can be used to create Power BI reports and dashboards. You can also query a datamart using a T-SQL endpoint or using a visual experience.
 
-:::image type="content" source="media/datamarts-overview/datamarts-overview-01.png" alt-text="Diagram that shows datamarts and power B I relationship.":::
+:::image type="content" source="media/datamarts-overview/datamarts-overview-01.png" alt-text="Diagram that shows datamarts and power B I relationship." lightbox="media/datamarts-overview/datamarts-overview-01.png":::
 
 Datamarts offer the following benefits:
 
@@ -72,7 +72,7 @@ In some cases it can be useful to incorporate both dataflows and datamarts in th
     * Perform reusable extract, transform and load (ETL) at scale for large data volumes
     * Bring your own data lake and use dataflows as a pipeline for datamarts
 
-:::image type="content" source="media/datamarts-overview/datamarts-overview-03.png" alt-text="Diagram that shows datamarts and dataflows and power B I relationships.":::
+:::image type="content" source="../dataflows/media/dataflows-introduction-self-service-flow.png" alt-text="Diagram that shows datamarts and dataflows." lightbox="../dataflows/media/dataflows-introduction-self-service-flow.png":::
 
 
 ## Comparing dataflows to datamarts
