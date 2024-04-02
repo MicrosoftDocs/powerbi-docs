@@ -21,7 +21,7 @@ ms.custom: updatefrequency5
 ## Displaying the Field Collection for a Dataset  
  To display the individual values for a field collection, drag each field to a table detail row and run the report. References from the detail row of a table or list data region display a value for each row in the dataset.  
   
- To display summarized values for a field, drag each numeric field to the data area of a matrix. The default aggregate function for the total row is Sum, for example, `=Sum(Fields!Sales.Value)`. You can change the default function in order to calculate different totals. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
+ To display summarized values for a field, drag each numeric field to the data area of a matrix. The default aggregate function for the total row is Sum, for example, `=Sum(Fields!Sales.Value)`. You can change the default function in order to calculate different totals. For more information, see [Aggregate Functions Reference (Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
   
  To display summarized values for a field collection in a text box directly on the design surface (not part of a data region), you must specify the dataset name as a scope for the aggregate function. For example, for a dataset named `SalesData`, the following expression specifies the total of all values for the field `Sales`: `=Sum(Fields!Sales,"SalesData")`.  
   
