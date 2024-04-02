@@ -47,7 +47,7 @@ To download a report as a .pbix file, follow these steps:
 
 ### Download modes
 
-For downloading a report .pbix file, two **modes** are available:
+To download a report .pbix file, two **modes** are available:
 
 - **A copy of the report and data**. Choosing this mode results in downloading a .pbix file that includes both the report you're downloading and the data on which the report is based.
 - **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you're downloading, but no data. Instead, the .pbix has a live connection to the semantic model in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a semantic model that is configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or reports that have been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
