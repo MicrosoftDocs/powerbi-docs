@@ -5845,6 +5845,41 @@
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/power-bi-allow-list-urls.md",
+            "redirect_url": "/fabric/security/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-overview.md",
+            "redirect_url": "/fabric/onelake/directlake-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-create-lakehouse.md",
+            "redirect_url": "/fabric/onelake/directlake-create-lakehouse",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-fixed-identity.md",
+            "redirect_url": "/fabric/onelake/directlake-fixed-identity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
+            "redirect_url": "/fabric/onelake/directlake-analyze-qp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/onelake-integration-overview.md",
+            "redirect_url": "/fabric/onelake/onelake-integration-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-data-protection-metrics-report.md",
+            "redirect_url": "/fabric/governance/use-microsoft-purview-hub",
+            "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                             
   ]          
 

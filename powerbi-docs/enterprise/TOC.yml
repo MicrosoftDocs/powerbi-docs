@@ -16,8 +16,6 @@
       href: desktop-admin-sign-in-form.md
     - name: Track user activities in Power BI
       href: service-admin-auditing.md
-    - name: Add Power BI URLs to your allowlist
-      href: power-bi-allow-list-urls.md
     - name: Power BI site reliability engineering model
       href: service-admin-site-reliability-engineering-model.md
     - name: Release management and deployment process
@@ -32,19 +30,6 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
-    - name: Direct Lake
-      expanded: false
-      items:
-      - name: Direct Lake overview
-        href: directlake-overview.md
-      - name: Create a Lakehouse for Direct Lake
-        href: directlake-create-lakehouse.md
-      - name: Specify a fixed identity
-        href: directlake-fixed-identity.md
-      - name: Analyze query processing
-        href: directlake-analyze-qp.md
-    - name: OneLake integration for semantic models (Preview)
-      href: onelake-integration-overview.md
   - name: Licensing
     expanded: false
     items:
@@ -155,8 +140,6 @@
         href: service-security-sensitivity-label-inheritance-set-remove-api.md    
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md  
-      - name: Protection metrics report
-        href: service-security-data-protection-metrics-report.md
       - name: Troubleshoot sensitivity labels
         href: service-security-sensitivity-label-troubleshooting.md
     - name: Data loss prevention
