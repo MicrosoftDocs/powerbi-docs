@@ -72,7 +72,7 @@ In some cases it can be useful to incorporate both dataflows and datamarts in th
     * Perform reusable extract, transform and load (ETL) at scale for large data volumes
     * Bring your own data lake and use dataflows as a pipeline for datamarts
 
-:::image type="content" source="media/datamarts-overview/datamarts-overview-03.png" alt-text="Diagram that shows datamarts and dataflows and power B I relationships." lightbox="media/datamarts-overview/datamarts-overview-03.png":::
+:::image type="content" source="../dataflows/media/dataflows-introduction-self-service-flow.png" alt-text="Diagram that shows datamarts and dataflows." lightbox="../dataflows/media/dataflows-introduction-self-service-flow.png":::
 
 
 ## Comparing dataflows to datamarts
