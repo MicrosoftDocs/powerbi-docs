@@ -17,7 +17,7 @@ LocalizationGroup: Administration
 > [!IMPORTANT]
 > This article is for administrators. If you are an individual and want to purchase a Power BI Pro license, go to [Get started with Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) to set up your account.
 
-This article explains how to purchase Power BI user licenses in the Microsoft 365 admin center. After purchasing, you can assign licenses to users from either the Microsoft 365 admin center or the Azure portal.
+This article explains how to purchase Power BI Pro and PPU (Premium Per User) user licenses in the Microsoft 365 admin center. After purchasing, you can assign licenses to users from either the Microsoft 365 admin center or the Azure portal.
 
 To learn about license types, see [Licensing for Fabric](/power-bi/fundamentals/service-features-license-type).
 
