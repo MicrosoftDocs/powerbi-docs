@@ -43,11 +43,11 @@ You can use Reporting Services aggregate functions that accept the parameter *Re
 - [Var](/sql/reporting-services/report-design/report-builder-functions-var-function)
 - [VarP](/sql/reporting-services/report-design/report-builder-functions-varp-function).
 
-For more information, see [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
+For more information, see [Aggregate Functions Reference (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).
 
 ## Related content
 
-- [Tables, Matrices, and Lists (Power BI Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)
+- [Tables, Matrices, and Lists (Report Builder)](/sql/reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs)
 - [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)
 - [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference)
 - [Tables (Power BI Report Builder)](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)
