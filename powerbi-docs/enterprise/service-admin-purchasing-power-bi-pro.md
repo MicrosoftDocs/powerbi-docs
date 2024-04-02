@@ -14,8 +14,10 @@ LocalizationGroup: Administration
 
 # Purchase and assign Power BI paid user licenses
 
-> [!IMPORTANT]
->This article is for administrators and explains how to purchase Power BI paid user licenses in the Microsoft 365 admin center. After purchasing, you assign licenses to users from either the Microsoft 365 admin center or the Azure portal.
+This article is for administrators and explains how to purchase paid user licenses for Power BI and Fabric in the Microsoft 365 admin center. After purchasing, you assign licenses to users from either the Microsoft 365 admin center or the Azure portal.
+
+> [!NOTE]
+>The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
 Power BI Pro and Power BI Premium Per User (PPU) are individual user licenses that let users read and interact with reports and dashboards that others publish to the Power BI service. Users with a paid license can share content and collaborate with other Pro or PPU users. Only paid users can publish or share content with other users or use content that's created by others, unless a Power BI Premium capacity hosts that content. For more information about the available types of licenses and subscriptions, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
@@ -36,7 +38,7 @@ To purchase Power BI paid licenses in the Microsoft 365 admin center:
 
    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-purchase-services.png" alt-text="Screenshot showing the Microsoft 365 billing menu with Purchase services selected.":::
 1. Select the number of licenses you want to purchase and the billing frequency. 
-    - If you didn't already use it, start a **Fabric free** trial subscription. The Fabric free trial expires after 60 days.
+    - If you didn't already use it, start a [**Fabric free** trial subscription](/fabric/getting-started/fabric-trial. The Fabric free trial expires after 60 days.
     - Not ready to purchase Power BI, start with a **Power BI Pro** trial. The Power BI Pro trial includes up to 25 licenses. You'll need to enter your payment information because you'll be charged the monthly fee after the 30-day trial expires. 
 1. Ready to purchase a Power BI paid license? Select **Buy**.
 
