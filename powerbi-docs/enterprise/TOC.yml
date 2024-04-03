@@ -17,9 +17,7 @@
     - name: Track user activities in Power BI
       href: service-admin-auditing.md
     - name: Power BI site reliability engineering model
-      href: service-admin-site-reliability-engineering-model.md
-    - name: Release management and deployment process
-      href: service-admin-release-management.md     
+      href: service-admin-site-reliability-engineering-model.md    
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
     - name: Using Microsoft Entra B2B
