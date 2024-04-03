@@ -20,7 +20,7 @@ You try to start a trial, sign up for a free license, or purchase a Power BI lic
 
 To finish your purchase, contact your IT department or help desk and ask them to [follow these instructions to provide you with a license](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-There are scenarios where you yourself used self-service to purchase or trial Power BI. This self-service action makes you an admin and gives you limited access to the Microsoft 365 admin center. Use the admin center to add and manage your users' self-service licenses, trials, and purchases. Follow the instructions in [Manage self-service purchases and trials (for users)](microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) to learn how to enable and disable self-service for your tenant. 
+There are scenarios where you yourself used self-service to purchase or trial Power BI. This self-service action makes you an admin and gives you limited access to the Microsoft 365 admin center. Use the admin center to add and manage your users' self-service licenses, trials, and purchases. Follow the instructions in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) to learn how to enable and disable self-service for your tenant. 
 
 ## Related content
 

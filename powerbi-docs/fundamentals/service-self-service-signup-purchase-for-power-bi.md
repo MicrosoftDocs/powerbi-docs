@@ -92,7 +92,7 @@ To cancel a trial, select **Cancel trial** from the **Me** icon.
 
 ### Unable to sign up or purchase Power BI
 
-If you're unable to use self-service to get your own Power BI license, check to see if your administrator disabled this option. The admins who manage the domain can disable self-service sign-ups, self-service purchases, upgrades, and free trials. For help when you can't use self-service, go to [Self-service purchase help](service-self-service-purchase-help.md).
+If you're unable to use self-service to get your own Power BI license, check to see if your administrator disabled this option. The admins who manage the domain can disable self-service sign-ups, self-service purchases, upgrades, and free trials. For help when you can't use self-service, go to [Self-service sign up and purchase help](service-self-service-sign-up-help.md).
 
 If you're an admin, [learn how to enable and disable self-service.](../enterprise/service-admin-disable-self-service.md)
 
