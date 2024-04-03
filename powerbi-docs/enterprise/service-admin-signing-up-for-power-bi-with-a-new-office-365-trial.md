@@ -16,19 +16,19 @@ LocalizationGroup: Administration
 
 This article describes an alternative way to sign up for the Power BI service if you don't already have a work or school email account.
 
-If you're having problems signing up for Power BI with your email address, first make sure it's an [email address that can be used with Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). If that's not successful, sign up for a Microsoft 365 trial and create a work account. Then, use that new work account to sign up for the Power BI service. You can use Power BI even after the Microsoft 365 trial expires.
+You're unable to sign up for Power BI with your [personal email address](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). You can still try out Power BI and Fabric with a Microsoft 365 trial.  During the Microsoft 365 trial sign-up process you'll create an "onmicrosoft" email work account.  Use that new work account to sign up for the Power BI service and get a Fabric free or Power BI Pro license. Continue to use that work account even after your Microsoft 365 trial expires.
 
 > [!NOTE]
 > You must use a credit or debit card when you sign up for this free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends.
 
 ## Sign up for a Microsoft 365 trial of Office
 
-Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft walks you through the steps to create one. Since commercial email accounts, such as Hotmail and Gmail don't work with Microsoft 365, create a new Microsoft account. That email account looks something like *zalan\@onmicrosoft.com*.
+Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft walks you through the steps to create one. Since commercial email accounts, such as Hotmail and Gmail don't work with Microsoft 365, create a new Microsoft account. That email account looks something like *zalanb@onmicrosoft.com*.
 
 :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-m365-trial.png" alt-text="Screenshot showing available Microsoft Office 365 options. Try for free is highlighted.":::
 
-- If you select **Business premium**, your trial includes Power BI Pro. The Power BI Pro 30-day trial expires at the same time as your Microsoft 365 trial.
-- If you select **Business standard**, you can sign up for Power BI as a *free* user and upgrade to **Premium Per User** for a 30-day trial. For more information about Premium Per User (PPU), see [Power BI Premium Per User](service-premium-per-user-faq.yml).
+- If you select **E5**, your trial includes Power BI Pro. The Power BI Pro 30-day trial expires at the same time as your Microsoft 365 trial.
+- If you select **E3**, you can sign up for Power BI as a *free* user and then upgrade to **Premium Per User** for a 30-day trial. For more information about Premium Per User (PPU), see [Power BI Premium Per User](service-premium-per-user-faq.yml).
 
 1. On one of the Microsoft 365 options, select **Try free for one month**.
 1. Enter the number of users, then your email address, and select **Next**.  
