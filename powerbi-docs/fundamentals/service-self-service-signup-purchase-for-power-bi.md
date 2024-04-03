@@ -53,7 +53,7 @@ For step-by-step instructions on using self-service sign-up and self-service pur
 
 ### Power BI license types
 
-Before you sign up or purchase, determine which [per-user license type](../enterprise/service-admin-licensing-organization.md) you need. Power BI and Fabric offer several per-user licenses: Fabric (free), Pro, and PPU. Power BI also offers a free trial upgrade for Pro and for Premium Per User.When an individual signs up or purchases Power BI, they're assigned a Power BI license automatically. Some versions of Microsoft 365 include a Pro license. Not sure what type of license you need? 
+Before you sign up or purchase, determine which [per-user license type](../enterprise/service-admin-licensing-organization.md) you need. Power BI and Fabric offer several per-user licenses: Fabric (free), Pro, and PPU. Power BI also offers a free trial upgrade for Pro and for Premium Per User. When an individual signs up or purchases Power BI, they're assigned a Power BI license automatically. Some versions of Microsoft 365 include a Pro license. Not sure what type of license you need? 
 
 - With a free license, you can explore Power BI for personal data analysis and visualization using My Workspace, but you can't share with other users. A Power BI Pro or Power BI Premium Per User license is required to share content.
 - With a free license, you can open Fabric and do some viewing of experiences other than Power BI. But to work with the other experiences and to see and share content, you need a Fabric capacity. A capacity is included in the [Fabric free trial](/fabric/get-started/fabric-trial).
