@@ -271,7 +271,7 @@ When working with multiple environments, it's common to set up development, test
 
 The [activity log](/power-bi/enterprise/service-admin-auditing) records events that occur in the Power BI service. Power BI administrators can use the activity log to [audit](powerbi-implementation-planning-auditing-monitoring-overview.md) deployment activities.
 
-You can use the Power BI [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning) to create a tenant inventory. The API results are helpful to verify which items have been deployed to each workspace, to check lineage, and to validate security settings.
+You can use the Power BI [metadata scanning APIs](/fabric/governance/metadata-scanning-overview) to create a tenant inventory. The API results are helpful to verify which items have been deployed to each workspace, to check lineage, and to validate security settings.
 
 There's also an [audit log](/azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page&preserve-view=true) within Azure DevOps, which is outside of the Power BI service. Azure DevOps administrators can use the audit log to review activities in remote repositories and pipelines.
 

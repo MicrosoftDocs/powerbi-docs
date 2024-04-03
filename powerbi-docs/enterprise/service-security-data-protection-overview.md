@@ -43,6 +43,6 @@ The product team would love to get your **[feedback](https://forms.office.com/pa
 ## Related content
 
 * [Learn about sensitivity labels in Power BI and how to use them](service-security-sensitivity-label-overview.md)
-* [Set up and use Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
+* [Set up and use Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 * [Power BI implementation planning: Information protection and data loss prevention](/power-bi/guidance/powerbi-implementation-planning-info-protection-data-loss-prevention-overview)
