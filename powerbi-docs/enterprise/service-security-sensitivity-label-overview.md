@@ -43,7 +43,7 @@ In Power BI Desktop, sensitivity labels with encryption settings **do** affect a
 Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI admin can block export from non-supported export paths.
 
 > [!NOTE]
-> Users who are granted access to a report are granted access to the entire underlying semantic model, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
+> Users who are granted access to a report are granted access to the entire underlying semantic model, unless [row-level security (RLS)](/fabric/security/service-admin-rls) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
 
 ## Supported export paths
 

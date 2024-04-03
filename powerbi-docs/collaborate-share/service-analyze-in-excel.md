@@ -144,7 +144,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 
 ## Considerations and limitations
 
-- Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](../enterprise/service-admin-rls.md) and [object-level security](../enterprise/service-admin-ols.md).
+- Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](/fabric/security/service-admin-rls) and [object-level security](/fabric/security/service-admin-ols).
 - When inserting a connected PivotTable or connected query table, the  Microsoft Purview Information Protection sensitivity label for the semantic model is automatically applied to the Excel workbook. If the Excel workbook has a sensitivity label already, the strictest label is applied. 
 - For Analyze in Excel, only Power BI semantic models that use Import mode preserve hierarchies in the PivotTable Fields in the Excel workbook. Power BI semantic models that are built on Direct Lake, DirectQuery, or composite models don't retain their hierarchies when you use Analyze in Excel.
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string after the workbook has been generated.

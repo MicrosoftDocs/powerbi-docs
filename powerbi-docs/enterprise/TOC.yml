@@ -16,8 +16,6 @@
       href: desktop-admin-sign-in-form.md
     - name: Track user activities in Power BI
       href: service-admin-auditing.md
-    - name: Power BI site reliability engineering model
-      href: service-admin-site-reliability-engineering-model.md    
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
     - name: Using Microsoft Entra B2B
@@ -156,13 +154,6 @@
     items:
     - name: Power BI security
       href: service-admin-power-bi-security.md
-    - name: Row-level security
-      expanded: false
-      items:
-      - name: Row-level security
-        href: service-admin-rls.md 
-    - name: Object-level security
-      href: service-admin-ols.md     
     - name: Privacy levels
       href: desktop-privacy-levels.md
     - name: Use service tags with Power BI

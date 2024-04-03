@@ -13,7 +13,7 @@ LocalizationGroup: Connect to data
 ---
 # Implement row-level security in an on-premises Analysis Services tabular model
 
-Using a sample semantic model to work through the steps below, this tutorial shows you how to implement [**row-level security**](../enterprise/service-admin-rls.md) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
+Using a sample semantic model to work through the steps below, this tutorial shows you how to implement [**row-level security**](/fabric/security/service-admin-rls) in an on-premises *Analysis Services Tabular Model* and use it in a Power BI report.
 
 * Create a new security table in the [AdventureworksDW2012 database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Build the tabular model with necessary fact and dimension tables

@@ -5885,6 +5885,21 @@
             "source_path": "powerbi-docs/enterprise/service-admin-release-management.md",
             "redirect_url": "/fabric/release-plan/",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-site-reliability-engineering-model.md",
+            "redirect_url": "/fabric/admin/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-ols.md",
+            "redirect_url": "/fabric/admin/service-admin-ols.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-rls.md",
+            "redirect_url": "/fabric/admin/service-admin-rls.md",
+            "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                             
   ]          
 

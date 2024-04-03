@@ -134,7 +134,7 @@ Summarized information is available in the **Performance Analyzer** pane. You ca
 > - Whether [query caching](/power-bi/connect-data/power-bi-query-caching) is enabled
 > - Whether [query parallelization](https://powerbi.microsoft.com/blog/query-parallelization-helps-to-boost-power-bi-dataset-performance-in-directquery-mode/) is used
 > - The number of [active connections](/power-bi/connect-data/desktop-directquery-about#maximum-number-of-connections-option-for-directquery)
-> - Whether [row-level security](/power-bi/enterprise/service-admin-rls) (RLS) is enforced by the Power BI service.
+> - Whether [row-level security](/fabric/security/service-admin-rls) (RLS) is enforced by the Power BI service.
 
 Data is logged when a user interacts with a report element. Logged data includes more than the visual display elements. It also includes:
 

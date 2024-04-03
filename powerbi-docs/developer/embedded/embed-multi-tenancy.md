@@ -250,7 +250,7 @@ This article explains how to use profiles to create a separate semantic model fo
 
 Before using RLS, however, make sure you understand its limitations. All the data for all customers are in one large Power BI semantic model. This semantic model runs in a single capacity with its own scaling and other limitations.
 
-Even if you use service principal profiles to separate your customers' data, you can still use RLS within a single customer's semantic model to give different groups access to different parts of the data. For example, you could use [RLS]( ../../admin/service-admin-rls.md) to prevent members of one department from accessing data of another department in the same organization.
+Even if you use service principal profiles to separate your customers' data, you can still use RLS within a single customer's semantic model to give different groups access to different parts of the data. For example, you could use [RLS](/fabric/security/service-admin-rls) to prevent members of one department from accessing data of another department in the same organization.
 
 ## Considerations and limitations
 

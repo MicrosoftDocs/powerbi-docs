@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Embed a report in a secure portal or website
 
-With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iframe. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](/fabric/security/service-admin-rls) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iframe. 
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
@@ -33,7 +33,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     :::image type="content" source="./media/service-embed-secure/sign-in-power-bi-report.png" alt-text="Screenshot of Power BI Sign-in page displaying sign-in to view this report dialogue.":::
 
-5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. The users need to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a workspace that's in a Power BI Premium capacity. Users need to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
+5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](/fabric/security/service-admin-rls) rules are also applied. The users need to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a workspace that's in a Power BI Premium capacity. Users need to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
     :::image type="content" source="./media/service-embed-secure/sales-and-marketing-sample-1.png" alt-text="Screenshot of Sales and Marketing sample report.":::
 

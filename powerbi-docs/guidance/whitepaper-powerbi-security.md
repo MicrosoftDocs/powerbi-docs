@@ -433,7 +433,7 @@ The following questions are common security questions and answers for Power BI. 
 
     If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) and/or object-level security (OLS) is configured, the Power BI service will apply that row level security, and users who don't have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) won't see data for which the user doesn't have sufficient privileges.
 
-    [Row Level security with Power BI](../enterprise/service-admin-rls.md) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.
+    [Row Level security with Power BI](/fabric/security/service-admin-rls) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.
 
     [Object-level security (OLS)](https://powerbi.microsoft.com/blog/object-level-security-ols-now-available-for-public-preview-in-power-bi-premium/) can be used to secure sensitive tables or columns. However, unlike row-level security, object-level security also secures object names and metadata. This helps prevent malicious users from discovering even the existence of such objects. Secured tables and columns are obscured in the field list when using reporting tools like Excel or Power BI, and moreover, users without permissions can't access secured metadata objects via DAX or any other method. From the standpoint of users without proper access permissions, secured tables and columns simply don't exist.
 
