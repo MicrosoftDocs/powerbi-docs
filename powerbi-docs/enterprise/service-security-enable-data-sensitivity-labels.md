@@ -87,4 +87,4 @@ This article described how to enable sensitivity labels in Fabric. The following
 
 * [Overview of sensitivity labels](service-security-sensitivity-label-overview.md)
 * [Apply sensitivity labels to Fabric items](/fabric/get-started/apply-sensitivity-labels)
-* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
+* [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
