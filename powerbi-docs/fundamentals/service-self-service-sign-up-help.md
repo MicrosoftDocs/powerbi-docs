@@ -12,7 +12,7 @@ ms.date: 04/02/2024
 ---
 # What to do if self-service is disabled
 
-You try to start a trial, sign up for a free license, or purchase a Power BI license. You perform these actions on your own, which is referred to as ["self-service](/microsoft-365/admin/misc/self-service-sign-up)." It doesn't work and you get a message that self-service is disabled. For various reasons, some organizations block members from self-service sign-up, self-service trial, and self-service purchase. For example, your organization's centralized IT department or help desk might have a policy that all licenses and subscriptions are managed by them, even free licenses.
+You try to start a trial, sign up for a free license, or purchase a Power BI license. You perform these actions on your own, which is referred to as ["self-service](/microsoft-365/admin/misc/self-service-sign-up)." It doesn't work and you get a message that self-service is disabled. For various reasons, some organizations block members from self-service sign-up, self-service trial, and self-service purchase. For example, your organization's centralized IT department or help desk might have a policy that they manage all licenses and subscriptions, even free licenses.
 
 ![Screenshot of the getting started dialog showing the message that the organization doesn't allow users to purchase Power BI Pro.](media/service-self-service-purchase-help/power-bi-error.png)
 
