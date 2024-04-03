@@ -30,7 +30,7 @@ To skip ahead to using self-service, see [How to use self-service sign-up and se
 
 ## Self-service sign-up versus self-service purchase
 
-The **self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses and subscriptions. **Self-service purchase** is the feature used by individuals to buy a a license or subscription for themselves.
+The **self-service sign-up** feature is used by individuals who sign themselves up for free and trial licenses and subscriptions. **Self-service purchase** is the feature used by individuals to buy a license or subscription for themselves.
 
 ### Self-service for Power BI and Fabric
 
