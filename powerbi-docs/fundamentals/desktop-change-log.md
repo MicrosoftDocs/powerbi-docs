@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/05/2024
+ms.date: 04/02/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,27 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## March 2024 QFE 2
+
+*Version: 2.127.1327.0, Released: April 01, 2024*
+
+Bug fixes/improvements:
+
+* Fix for customize theme dialog margins: Fixed issue where theme dialog's margins were too large and were occluding the *Cancel* and *Apply* buttons.
+* Fix for DAX Query View copilot usage telemetry: Fix for spike in Customer Counts/Tenant Counts for Feature powerbi-copilot-usage.
+* Fixed issue where an error is thrown in live connect when users clicked on relationships.
+ 
+
+## March 2024 QFE 1
+
+*Version: 2.127.1235.0, Released: March 28, 2024*
+
+Bug fixes/improvements:
+
+* Fix for DataGrid copy to clipboard :  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
+* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents cancel button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
 
 
 ## February 2024 QFE 1

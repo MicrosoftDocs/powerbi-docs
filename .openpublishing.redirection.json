@@ -16,6 +16,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-admin-manage-licenses.md",
+            "redirect_url": "/fabric/admin/admin-overview",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md",
             "redirect_url": "/fabric/get-started/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work",
             "redirect_document_id": false
