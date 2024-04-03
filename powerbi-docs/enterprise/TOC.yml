@@ -56,6 +56,8 @@
       href: service-admin-licensing-organization.md
     - name: View and manage user licenses
       href: service-admin-manage-licenses.md
+    - name: Disable self-service sign-up
+      href: service-admin-disable-self-service.md
     - name: Sign up with a Microsoft 365 Trial
       href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
     - name: Add Power BI with a Microsoft 365 partner

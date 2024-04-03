@@ -94,7 +94,7 @@ To cancel a trial, select **Cancel trial** from the **Me** icon.
 
 If you're unable to use self-service to get your own Power BI license, check to see if your administrator disabled this option. The admins who manage the domain can disable self-service sign-ups, self-service purchases, upgrades, and free trials. For help when you can't use self-service, go to [Self-service purchase help](service-self-service-purchase-help.md).
 
-If you're an admin, [learn how to enable and disable self-service.](/fabric/admin/service-admin-disable-self-service)
+If you're an admin, [learn how to enable and disable self-service.](../enterprise/service-admin-disable-self-service.md)
 
 ## Considerations and troubleshooting
 
@@ -106,4 +106,4 @@ If you're an admin, [learn how to enable and disable self-service.](/fabric/admi
 - For step-by-step instructions for using self-service sign-up and self-service purchase to get your own Power BI free or trial license, go to [Power BI self-service for individuals](service-self-service-signup-for-power-bi.md).
 - To learn more about the concepts of self-service sign-up and self-service purchase, go to [What is self-service](/microsoft-365/admin/misc/self-service-sign-up).
 - If you're a global administrator or billing administrator, go to [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md).
-- If you're a global administrator or billing administrator, you might not want users in your organization to use self-service sign-up. To learn how to disable self-service, visit [Enable or disable self-service.](/fabric/admin/service-admin-disable-self-service)
+- If you're a global administrator or billing administrator, you might not want users in your organization to use self-service sign-up. To learn how to disable self-service, visit [Enable or disable self-service.](../enterprise/service-admin-disable-self-service.md)

@@ -24,7 +24,7 @@ Power BI Pro is an individual user license that lets users read and interact wit
 Self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers. For more information:
 
 - [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)  
-- [Enable or disable self-service sign-up and purchasing](/fabric/admin/service-admin-disable-self-service)
+- [Enable or disable self-service sign-up and purchasing](./service-admin-disable-self-service.md)
 
 ## Prerequisites
 
