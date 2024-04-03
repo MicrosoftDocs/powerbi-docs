@@ -16,6 +16,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/fundamentals/service-self-service-purchase-help.md",
+            "redirect_url": "/power-bi/fundamentals/service-self-service-signup-help",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md",
             "redirect_url": "/fabric/get-started/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work",
             "redirect_document_id": false
