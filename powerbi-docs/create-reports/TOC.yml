@@ -356,6 +356,8 @@
         href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
       - name: Show real-time traffic
         href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
+      - name: Azure Maps Power BI visual Data Residency
+        href: /azure/azure-maps/power-bi-visual-data-residency?context=/power-bi/create-reports/context/context
       - name: Manage the Azure Maps visual in your organization
         href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
     - name: Matrix visuals

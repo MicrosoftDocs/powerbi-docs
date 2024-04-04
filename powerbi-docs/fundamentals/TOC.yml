@@ -41,9 +41,7 @@
         href: service-self-service-signup-purchase-for-power-bi.md         
       - name: "Features by license type"
         href: service-features-license-type.md
-      - name: "Get help purchasing Power BI Pro"
-        href: service-self-service-purchase-help.md 
-      - name: "Get help signing up for Power BI"
+      - name: "Get help purchasing or signing up for Power BI"
         href: service-self-service-sign-up-help.md 
     - name: Security
       items: 

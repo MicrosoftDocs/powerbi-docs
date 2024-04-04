@@ -51,7 +51,7 @@ When you've implemented [DLP for Power BI](powerbi-implementation-planning-data-
   - Whether a changed label was upgraded (to a more sensitive label) or downgraded (to a less sensitive label)
   - How frequently DLP events are triggered, where, and by which users
 - **Actions to take:** Ensure that data from the activity log data is extracted regularly by an administrator who has permission to extract tenant-level metadata. Determine how to classify activities to support your auditing needs. Some activities might justify review by an administrator or content owner (for example, when a label is deleted). Other activities might justify being included in regular audit reviews (for example, when labels are downgraded, or when DLP rule matches occur).
-- **Where to find this data:** Power BI administrators can use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to view activities related to Power BI content. Alternatively, in Defender for Cloud Apps, you can grant your Power BI administrators a [limited view](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps) so they can see activity log events, sign-in events, and other events related to the Power BI service.
+- **Where to find this data:** Power BI administrators can use the [Power BI activity log](/power-bi/enterprise/service-admin-auditing) to view activities related to Power BI content. Alternatively, in Defender for Cloud Apps, you can grant your Power BI administrators a [limited view](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps) so they can see activity log events, sign-in events, and other events related to the Power BI service.
 
 ## Power BI protection metrics
 
@@ -66,13 +66,13 @@ The [data protection metrics report](/fabric/governance/use-microsoft-purview-hu
 
 ## Power BI scanner APIs
 
-The [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) allow you to scan the metadata in your Power BI tenant. The metadata of Power BI items, like semantic models and reports, can help you to monitor and review self-service user activity.
+The [Power BI scanner APIs](/fabric/governance/metadata-scanning-overview) allow you to scan the metadata in your Power BI tenant. The metadata of Power BI items, like semantic models and reports, can help you to monitor and review self-service user activity.
 
 For example, you might discover that content in a financial workspace has been assigned to three different sensitivity labels. If any of these labels aren't appropriate for financial data, you can apply more suitable labels.
 
 - **What to look for:** You can create an inventory of Power BI items in your tenant, including the sensitivity label of each item.
 - **Actions to take:** Create a process to scan your tenant on a weekly or monthly basis. Use the metadata retrieved by the scanner APIs to understand how Power BI content has been labeled. Investigate further if you find that some labels don't meet expectations for the workspace. Correlate metadata from the scanner APIs with events from the Power BI activity log to determine when a sensitivity label was applied, changed, deleted, and by which user.
-- **Where to find this data:** Power BI administrators can use the [Power BI scanner APIs](/power-bi/enterprise/service-admin-metadata-scanning) to retrieve a snapshot of the sensitivity labels applied to all Power BI content. If you prefer to build your own inventory reports, you can use the APIs directly by writing scripts. Alternatively, you can use the APIs indirectly by [registering Power BI in the Microsoft Purview Data Map](/azure/purview/register-scan-power-bi-tenant) (which uses the Power BI scanner APIs to scan the Power BI tenant).
+- **Where to find this data:** Power BI administrators can use the [Power BI scanner APIs](/fabric/governance/metadata-scanning-overview) to retrieve a snapshot of the sensitivity labels applied to all Power BI content. If you prefer to build your own inventory reports, you can use the APIs directly by writing scripts. Alternatively, you can use the APIs indirectly by [registering Power BI in the Microsoft Purview Data Map](/azure/purview/register-scan-power-bi-tenant) (which uses the Power BI scanner APIs to scan the Power BI tenant).
 
 ## Microsoft Purview activity explorer
 

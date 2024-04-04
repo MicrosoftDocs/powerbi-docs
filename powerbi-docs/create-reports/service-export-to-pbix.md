@@ -7,7 +7,7 @@ ms.reviewer: jterh
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/27/2023
+ms.date: 04/01/2024
 LocalizationGroup: Reports
 ---
 # Download a report from the Power BI service to Power BI Desktop
@@ -47,7 +47,7 @@ To download a report as a .pbix file, follow these steps:
 
 ### Download modes
 
-For downloading a report .pbix file, two **modes** are available:
+To download a report .pbix file, two **modes** are available:
 
 - **A copy of the report and data**. Choosing this mode results in downloading a .pbix file that includes both the report you're downloading and the data on which the report is based.
 - **A copy of the report with a live connection to the data online**. Choosing this mode results in downloading a .pbix file that contains the report you're downloading, but no data. Instead, the .pbix has a live connection to the semantic model in the Power BI service. This mode is especially useful in situations in which Power BI Desktop would be unable to open the .pbix file if the data was included, such as for reports based on a semantic model that is configured for [large models](../enterprise/service-premium-large-models.md) or [incremental refresh](../connect-data/incremental-refresh-configure.md), or reports that have been modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
@@ -131,7 +131,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
 * Downloading a .pbix file that's larger than 1 GB is only supported when the .pbix is in [live connected report mode](#download-modes). 
 * You can't download reports that are created in the Power BI service and based on a semantic model in **My Workspace** in [live connected report mode](#download-modes).
-
+* If you disable the switch in the tenant settings described in [Control the use of semantic models across workspaces](../connect-data/service-datasets-admin-across-workspaces.md), your users can't download a .pbix file from copied reports or reports created from datasets in the same workspace.
 
 ### Limitations when downloading a semantic model .pbix file
 

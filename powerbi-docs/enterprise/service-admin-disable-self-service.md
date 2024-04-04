@@ -1,13 +1,13 @@
 ---
 title: Enable or disable self-service sign-up and purchasing
-description: How to information for admins to turn off the ability for users to sign up for Power BI service and purchase or upgrade a license.
+description: How-to information for admins to turn off the ability for users to try, buy, or sign up for Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: how-to
-ms.date: 11/21/2023
+ms.topic: conceptual
+ms.date: 04/02/2024
 ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
 ---
@@ -27,7 +27,7 @@ Turning off self-service sign-up keeps users from exploring Power BI for data vi
 - Your large and decentralized organization (work or school) gives individuals the flexibility to purchase SaaS (Software as a service) licenses for their own use.
 - Your one-person or small organization purchases only one or a few Power BI Pro licenses.
 - Individuals want to try Power BI and become proficient before purchasing a subscription for the entire organization.
-- Current users with a Power BI free or Pro license want to create and share content and upgrade to a Power BI Premium Per User 60 day trial.
+- Current users with a free license want to create and share content and upgrade to a 60-day trial of the paid features of Power BI.
 
 ### Disable self-service when
 

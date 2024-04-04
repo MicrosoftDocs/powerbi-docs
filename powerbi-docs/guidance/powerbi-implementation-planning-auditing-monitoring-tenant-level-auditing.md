@@ -348,7 +348,7 @@ Consider several examples.
 
 - **Example 1:** The audit data shows that some users frequently export data to Excel. _Action taken:_ The COE contacts the specific users to understand their needs and to teach them better alternatives.
 - **Example 2:** The audit data shows external user access occurs in an unexpected way. _Actions taken:_ An IT system administrator updates the relevant Microsoft Entra ID settings for external user access. The Power BI administrator updates the tenant setting related to external user access. The COE updates documentation and training for content creators who manage security. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
-- **Example 3:** The audit data shows that several data models define the same measure differently (available from the [metadata scanning APIs](../enterprise/service-admin-metadata-scanning.md), if allowed by the detailed metadata tenant settings). _Action taken:_ The data governance committee starts a project to define common definitions. The COE updates documentation and training for content creators who create data models. The COE also works with content creators to update their models, as appropriate. For more information about retrieving detailed metadata, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
+- **Example 3:** The audit data shows that several data models define the same measure differently (available from the [metadata scanning APIs](/fabric/governance/metadata-scanning-overview), if allowed by the detailed metadata tenant settings). _Action taken:_ The data governance committee starts a project to define common definitions. The COE updates documentation and training for content creators who create data models. The COE also works with content creators to update their models, as appropriate. For more information about retrieving detailed metadata, see [Access tenant inventory data](#access-tenant-inventory-data) later in this article.
 
 > [!NOTE]
 > The setup of data extraction processes is usually a one-time effort with occasional enhancements and troubleshooting. Analyzing and acting on the data is an ongoing effort that requires continual effort on a recurring basis.
@@ -1034,7 +1034,7 @@ Like the Microsoft Purview compliance portal (described in the previous section)
 There are [licensing requirements](/defender-cloud-apps/get-started#prerequisites) to access Defender for Cloud Apps. Separate [permissions](/defender-cloud-apps/manage-admins) are also required.
 
 > [!TIP]
-> By default, Power BI administrators don't have permission to access Defender for Cloud Apps. There's a [Power BI role](../enterprise/service-security-using-defender-for-cloud-apps-controls.md#power-bi-admin-role-in-defender-for-cloud-apps) in Defender for Cloud Apps. Adding Power BI administrators to this role is a good way to grant them access to a limited set of data.
+> By default, Power BI administrators don't have permission to access Defender for Cloud Apps. There's a [Power BI role](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#power-bi-admin-role-in-defender-for-cloud-apps) in Defender for Cloud Apps. Adding Power BI administrators to this role is a good way to grant them access to a limited set of data.
 
 The user interface in Defender for Cloud Apps is useful for manual auditing processes and one-off investigations of user activities.
 
@@ -1147,7 +1147,7 @@ User activities (previously described) are audited events; they're a record of a
 
 To properly analyze what's happening in your Power BI tenant, you need both the user activity data and the tenant inventory. Combining them allows you to understand how much content you have and where it's located. It also allows you to find unused or under-utilized content (because there won't be any events for it in the activity log). The tenant inventory also helps you compile a list of current names for all items, which is helpful when item names change.
 
-For more information about the value of the tenant inventory, see [Tenant inventory](#tenant-inventory) earlier in this article
+For more information about the value of the tenant inventory, see [Tenant inventory](#tenant-inventory) earlier in this article.
 
 > [!TIP]
 > You can use the [Get Unused Artifacts as Admin](/rest/api/power-bi/admin/groups-get-unused-artifacts-as-admin) API to search for items that don't have any user activity in that last 30 days. However, you can't customize that time period. For example, you might have critical content that's only used quarterly. By combining your tenant inventory with the user activity data, you can find unused items in ways that you can customize.
@@ -1181,7 +1181,7 @@ The `Get Groups as Admin` REST API or the `Get-PowerBIWorkspace` PowerShell cmdl
 
 ##### Metadata scanning APIs
 
-The [metadata scanning APIs](../enterprise/service-admin-metadata-scanning.md), commonly called the _scanner APIs_, are a set of APIs that return a list of workspaces and their Power BI items (semantic models, reports, and other items). Conceptually, they provide the same data (and more) as the Groups APIs or the workspace cmdlet, which are described in the previous section. However, the method you use to retrieve the data is different and better suited to extracting the tenant inventory.
+The [metadata scanning APIs](/fabric/governance/metadata-scanning-overview), commonly called the _scanner APIs_, are a set of APIs that return a list of workspaces and their Power BI items (semantic models, reports, and other items). Conceptually, they provide the same data (and more) as the Groups APIs or the workspace cmdlet, which are described in the previous section. However, the method you use to retrieve the data is different and better suited to extracting the tenant inventory.
 
 > [!NOTE]
 > Take notice of how some people use the term _scanner APIs_ or the phrase _scanning the tenant_. They often use those terms to mean _compiling a tenant inventory_, distinguishing it from the user activity events. They might, or might not, be literally referring to the use of the metadata scanning APIs.

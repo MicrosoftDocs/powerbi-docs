@@ -16,6 +16,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/fundamentals/service-self-service-purchase-help.md",
+            "redirect_url": "/power-bi/fundamentals/service-self-service-sign-up-help",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-manage-licenses.md",
+            "redirect_url": "/fabric/admin/admin-overview",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md",
             "redirect_url": "/fabric/get-started/known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work",
             "redirect_document_id": false
@@ -5844,61 +5854,6 @@
         {
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/power-bi-allow-list-urls.md",
-            "redirect_url": "/fabric/security/power-bi-allow-list-urls",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/directlake-overview.md",
-            "redirect_url": "/fabric/onelake/directlake-overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/directlake-create-lakehouse.md",
-            "redirect_url": "/fabric/onelake/directlake-create-lakehouse",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/directlake-fixed-identity.md",
-            "redirect_url": "/fabric/onelake/directlake-fixed-identity",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
-            "redirect_url": "/fabric/onelake/directlake-analyze-qp",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/onelake-integration-overview.md",
-            "redirect_url": "/fabric/onelake/onelake-integration-overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-data-protection-metrics-report.md",
-            "redirect_url": "/fabric/governance/use-microsoft-purview-hub",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-admin-release-management.md",
-            "redirect_url": "/fabric/release-plan/",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-admin-site-reliability-engineering-model.md",
-            "redirect_url": "/fabric/admin/",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-admin-ols.md",
-            "redirect_url": "/fabric/admin/service-admin-ols.md",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-admin-rls.md",
-            "redirect_url": "/fabric/admin/service-admin-rls.md",
             "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                             
   ]          
