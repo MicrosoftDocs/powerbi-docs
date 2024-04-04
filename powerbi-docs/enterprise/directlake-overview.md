@@ -153,6 +153,19 @@ By default, data changes in OneLake are automatically reflected in a Direct Lake
 
 You may want to disable if, for example, you need to allow completion of data preparation jobs before exposing any new data to consumers of the model. When disabled, you can invoke refresh manually or by using the refresh APIs. Invoking a refresh for a Direct Lake model is a low cost operation where the model analyzes the metadata of the latest version of the Delta Lake table and is updated to reference the latest files in the OneLake.
 
+## Layered data access security
+
+Direct Lake models created on top of Lakehouses and Warehouses adhere to the layered security model that Lakehouses and Warehouses support by performing permission checks through the T-SQL Endpoint to determine if the identity trying to access the data has the required data access permissions. By default, Direct Lake models use Single Sign-On (SSO), so the effective permissions of the interactive user determine if the user is allowed or denied access to the data. If the Direct Lake model is configured to use a fixed identity, the effective permission of the fixed identity determines if users interacting with the semantic model can access the data. The T-SQL Endpoint returns Allowed or Denied to the Direct Lake model based on the combination of OneSecurity and SQL permissions.
+
+For example, a Warehouse administrator can grant a user SELECT permissions on a table so that the user can read from that table even if the user has no OneSecurity permissions. The user was authorized at the Lakehouse/Warehouse level. Conversely, a Warehouse administrator can also DENY a user read access to a table. The user will then not be able to read from that table even if the user has OneSecurity Read permissions. The DENY statement overrules any granted OneSecurity or SQL permissions. Refer to the following table for the effective permissions a user can have given any combination of OneSecurity and SQL permissions.
+
+| OneSecurity permissions | SQL permissions | Effective permissions |
+|-------------------------|-----------------|-----------------------|
+| Allow                   | None            | Allow                 |
+| None                    | Allow           | Allow                 |
+| Allow                   | Deny            | Deny                  |
+| None                    | Deny            | Deny                  |
+
 ## Known issues and limitations
 
 - Currently, Direct Lake models can only contain tables and views from a single Lakehouse or Data Warehouse. However, tables in the model based on T-SQL-based views cannot be queried in Direct Lake mode. DAX queries that use these model tables fall back to DirectQuery mode.
