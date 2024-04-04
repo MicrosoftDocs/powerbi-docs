@@ -131,13 +131,13 @@ If you'd like to cancel your trial before the expiration date, select your accou
 
 ## Use self-service purchase to buy an individual Power BI license
 
-You can use self-service to purchase Power BI Pro from the Power BI website or from in-product purchase prompts. 
+You can use self-service to buy Power BI Pro from the Power BI website or from in-product purchase prompts. 
 
 :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-buy-pro.png" alt-text="Screenshot of your Account manager with a red arrow pointing to Buy Pro now.":::
 
 You're first asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After you sign in, you're asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your subscription. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in their organization.
 
-If your email is not recognized, you have the option to start with a free trial. For instructions, see [Sign up for Power BI with a free trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) or see [Sign up for a free Fabric trial](/fabric/get-started/fabric-trial).
+If your email is not recognized, you can start with a Fabric free trial instead. For instructions, see [Sign up for Power BI with a free trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) or see [Sign up for a free Fabric trial](/fabric/get-started/fabric-trial).
 
 If you have more questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
@@ -145,7 +145,9 @@ To purchase a Power BI Pro license, select **Buy now** when prompted, or visit [
 
 If self-service purchase isn't available, contact your administrator about purchasing a Power BI Pro license.
 
-To purchase Power BI Pro:
+### Start with a Power BI Pro trial
+
+Another way to buy Power BI Pro is to sign up for a trial of Power BI Pro. After the trial ends, your credit card it charged. The following steps and screens apply to users signing up for Pro and who don't have a work or school email address. Instead, you create an @onmicrosoft.com account which is used to buy Power BI Pro. 
 
 1. Go to [Power BI Pro signup](https://signup.microsoft.com/create-account/signup?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&ali=1&products=d59682f3-3e3b-4686-9c00-7c7c1c736085) and enter an email address. Select **Next**.
 
