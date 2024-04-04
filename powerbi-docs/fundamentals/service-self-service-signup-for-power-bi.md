@@ -105,7 +105,7 @@ A Fabric trial includes a license for the paid version of Power BI, which includ
 
 Customers typically start a trial one of two ways:
 
-- As you start to explore the Power BI service or any of the other services in Fabric, you try to use a feature that requires a paid license or a capacity. Fabric automatically initiates the Fabric trial. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md).  
+- As you start to explore the Power BI service or any of the other services in Fabric, you try to use a feature that requires a paid license or a Fabric capacity. Fabric automatically initiates the Fabric trial. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md).  
 
     ![Screenshot of Power BI service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
 
