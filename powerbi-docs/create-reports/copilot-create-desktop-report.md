@@ -18,7 +18,7 @@ no-loc: [Copilot]
 
 When you use Copilot in Power BI Desktop, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages.
 
-:::image type="content" source="media/copilot-create-desktop-report/copilot-create-internet-sales-trends.png" alt-text="Screenshot showing Copilot creating internet sales trend report page." lightbox="media/copilot-create-desktop-report/copilot-create-internet-sales-trends.png":::
+:::image type="content" source="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png" alt-text="Screenshot showing Copilot creating a page about the popular islands." lightbox="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png":::
 
 The Copilot experience for report creation in the Power BI service is now available for preview in Power BI Desktop. With the current preview, you can create reports faster and easier in the Power BI Desktop experience. You can now open the Copilot pane in report view and ask Copilot to:
 
@@ -47,9 +47,7 @@ To use Copilot in your report, you first need to select a semantic model.
 
 1. In the Copilot pane, select **Suggest content for this report**. Copilot evaluates the data and makes suggestions.
 
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-suggest-content.png" alt-text="Screenshot showing Copilot pane, suggest content.":::
-
-    Copilot suggests possible pages for your report.
+    Copilot suggests four possible pages for your report.
 
 1. Select **Create** next to the first page you want Copilot to create.
 
@@ -57,7 +55,7 @@ To use Copilot in your report, you first need to select a semantic model.
 
     Copilot creates that page. 
 
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png" alt-text="Screenshot of Copilot creating the Sales Comparison page." lightbox="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png":::
+    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png" alt-text="Screenshot of Copilot creating the Visitor Analysis page." lightbox="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png":::
 
     Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 
@@ -73,9 +71,7 @@ After Copilot has generated the report, you can review the page. You have the op
 
 ## Save the report
 
-When you're satisfied with the report, you save the report just like any other report. If you close and reopen the report that Copilot generated in the Power BI service, the report is in Reading view and you don't see Copilot.
-
-- Select **Edit** to see the **Copilot** button again. 
+When you're satisfied with the report, you save the report just like any other report.
 
 ## Considerations and limitations
 
