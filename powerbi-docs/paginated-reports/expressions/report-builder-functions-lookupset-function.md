@@ -54,7 +54,7 @@ Use **LookupSet** to retrieve a set of values from the specified dataset for a n
 
 - Returns the set of result expression values.
 
-To retrieve a single value from a dataset with name/value pairs for a specified name where there's a 1-to-1 relationship, use [Lookup Function (Power BI Report Builder)](./report-builder-functions-lookup-function.md). To call **Lookup** for a set of values, use [Multilookup Function (Power BI Report Builder)](./report-builder-functions-multilookup-function.md).
+To retrieve a single value from a dataset with name/value pairs for a specified name where there's a 1-to-1 relationship, use [Lookup Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-lookup-function). To call **Lookup** for a set of values, use [Multilookup Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-multilookup-function).
 
 The following restrictions apply:
 
@@ -80,7 +80,7 @@ The following restrictions apply:
 
     - The Report.Language property.
 
-For more information, see [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
+For more information, see [Aggregate Functions Reference (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
 
 ## Examples
 
@@ -141,7 +141,7 @@ End Function
 
 ### D. Call the function
 
-To generate the HTML, you must call the function. Paste the following expression in the Value property for the text box and set the markup type for text to HTML. For more information, see [Add HTML into a Report (Power BI Report Builder)](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs).
+To generate the HTML, you must call the function. Paste the following expression in the Value property for the text box and set the markup type for text to HTML. For more information, see [Add HTML into a Report (Report Builder)](/sql/reporting-services/report-design/add-html-into-a-report-report-builder-and-ssrs).
 
 ```
 =Code.MakeList(LookupSet(Fields!TerritoryGroupID.Value, Fields!ID.Value, Fields!StoreName.Value, "Stores"))
