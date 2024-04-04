@@ -132,6 +132,8 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * You might encounter issues if you use unsupported browser versions. For a list of browsers that Power BI supports, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 
+* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin”, you will not be able to login to view your embedded content since MSAL does not support this. Instead, choose either "restrict-properties" (for Chromium based browsers) or "same-origin-allow-popups." Alternatively, link to the embedded URL directly instead of embedding in an iframe if the Cross-Origin-Opener-Policy cannot be changed.
+
 * The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
 * To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
