@@ -141,7 +141,7 @@ You can use self-service to purchase Power BI Pro from the Power BI website or f
 
 You're first asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After you sign in, you're asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your subscription. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in their organization.
 
-If your email is not recognized, you have the option to start with a free trial. For instructions, see [Sign up for Power BI with a free trial](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) or see [Sign up for a free Fabric trial](/fabric/get-started/fabric-trial).
+If your email is not recognized, you have the option to start with a free trial. For instructions, see [Sign up for Power BI with a free trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) or see [Sign up for a free Fabric trial](/fabric/get-started/fabric-trial).
 
 If you have more questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 
