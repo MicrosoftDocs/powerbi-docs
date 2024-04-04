@@ -106,7 +106,7 @@ There are many other admin tasks related to licenses and subscriptions. Some of 
 - [Remove or reassign a license, enable, disable a license](/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Cancel a trial](/fabric/get-started/fabric-trial)
 - [Takeover a license or tenant](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
-- [Handling expiring trials](/microsoft-365/commerce/subscriptions/cancel-your-subscription).
+- [Handle expiring trials](/microsoft-365/commerce/subscriptions/cancel-your-subscription).
 - Handle expiring licenses for Power BI
 
 ### Power BI license expiration
