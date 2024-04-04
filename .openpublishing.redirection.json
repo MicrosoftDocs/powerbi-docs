@@ -5845,7 +5845,7 @@
             "source_path": "powerbi-docs/connect-data/service-data-details-page.md",
             "redirect_url": "/power-bi/connect-data/service-dataset-details-page",
             "redirect_document_id": false
-        },                                                                                                                                                                                                                                                                                                                                             
+        },
         {
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-aggregate-function.md",
             "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-aggregate-function",
@@ -5854,12 +5854,6 @@
         {
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
-            "redirect_document_id": false
-<<<<<<< HEAD
-        },                                                                                                                                                                                                                                                                                                                                             
-        {
-            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-function-name-here.md",
-            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-function-name-here",
             "redirect_document_id": false
         },
         {
@@ -6021,7 +6015,7 @@
             "source_path": "powerbi-docs/enterprise/service-security-using-defender-for-cloud-apps-controls.md",
             "redirect_url": "/fabric/governance/service-security-using-defender-for-cloud-apps-controls",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                                
+        }
   ]          
 
 }
