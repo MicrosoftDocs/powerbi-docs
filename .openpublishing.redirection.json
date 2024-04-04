@@ -5947,8 +5947,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
-            "redirect_url": "/fabric/onelake/directlake-analyze-qp",
+            "source_path": "powerbi-docs/enterprise/service-admin-ols.md",
+            "redirect_url": "/fabric/onelake/service-admin-ols",
             "redirect_document_id": false
         },
         {
