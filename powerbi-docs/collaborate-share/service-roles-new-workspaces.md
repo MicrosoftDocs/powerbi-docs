@@ -79,7 +79,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) for details.
 > - Use the Viewer role to enforce [row-level security (RLS)](../enterprise/service-admin-rls.md) for users who browse content in a workspace. You can also enforce RLS without giving access to the workspace, [publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md).
 > - Members can add users to a workspace with lower permissions, but can't remove users from any workspace roles.
-> - Deleting a user from Microsoft Entra ID doesn't automatically remove their access from Power BI workspaces. This is by design to prevent accidental data loss. Even after deletion from Microsoft Entra ID, the user's workspace access remanins until explicitly removed.
+> - Deleting a user from Microsoft Entra ID doesn't automatically remove their access from Power BI workspaces. This is by design to prevent accidental data loss. Even after deletion from Microsoft Entra ID, the user's workspace access remains until explicitly removed.
 
 
 ## Licenses
