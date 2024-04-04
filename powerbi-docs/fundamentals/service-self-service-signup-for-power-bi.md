@@ -95,7 +95,7 @@ Congratulations on signing into your Fabric account for the first time. You now 
 
 If a Fabric free license is sufficient, you don't have to do anything else. There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 
-However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses) And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. If all of the content that you need is saved in Premium capacity, then a Pro or PPU license mmight not be necessary.
+However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses) And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. If all of the content that you need is saved in Premium capacity, then a Pro or PPU license might not be necessary.
 
 A Fabric trial includes a license for the paid version of Power BI, which includes a Power Power BI Premium Per User (PPU) license. The trial also includes a trial Fabric capacity to use for exploring all of the Fabric experiences.
 
@@ -162,7 +162,7 @@ Another way to buy Power BI Pro is to sign up for a trial of Power BI Pro. After
 
    :::image type="content" source="../media/service-admin-tell-us-dialog.png" alt-text="Screenshot showing the tell us about yourself window.":::
 
-1. Select whether you want to receive a verification code by text or call. Enter a phone number where the verification code will be sent. Select **Send verification code**.
+1. Select whether you want to receive a verification code by text or call. Enter a phone number. Select **Send verification code**.
 
 1. Enter the verification code, and then select **Verify**.
 
