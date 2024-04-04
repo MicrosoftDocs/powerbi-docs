@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/12/2023
+ms.date: 03/12/2024
 ---
 
 # Authentication API
@@ -34,7 +34,7 @@ The following environments aren't yet supported:
 * Sovereign clouds
 * RS Service
 * Embedded analytics
-* Teams (partially supported if consents are granted in advance)
+* Teams
 
 ## How to use the Authentication API
 
@@ -52,11 +52,31 @@ The visual can then utilize the token to authenticate against the audience https
 ]
 ```
 
-In the *pbiviz.json* file, set the API version to 5.7.0 or higher:
+In the *pbiviz.json* file, set the API version to 5.9.0 or higher:
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
-* **acquireAADToken**: Returns the token for the visual or null if it can't be fetched.
+* **acquireAADToken**: Returns an authentication token payload of type AcquireAADTokenResult for the visual or null if it can't be fetched.
+
+    ```typescript
+   /**
+   * Interface representing information about the user associated with the token.
+   */
+   export interface AcquireAADTokenUserInfo {
+       userId?: string;   // Unique identifier for the user
+       tenantId?: string; // Unique identifier for the tenant
+   }
+
+    /**
+    * Interface representing the result of acquiring a Microsoft Entra ID token.
+    */
+    export interface AcquireAADTokenResult {
+        accessToken?: string;       // Access token issued by Microsoft Entra ID
+        expiresOn?: number;         // Expiration time of the access token
+        userInfo?: AcquireAADTokenUserInfo;     // Information about the user associated with the token
+    }
+    ```
+
 * **acquireAADTokenstatus**: Returns one of the following privilege statuses associated with acquiring the token.
 
   * **Allowed**: The privilege is allowed in the current environment.
@@ -68,16 +88,16 @@ The following sample code demonstrates how to acquire a Microsoft Entra ID token
 
 ```typescript
 // Step 1: Check the status of AAD token acquisition
-const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstatus();
+const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenStatus(); 
  
 // Step 2: Verify if acquiring the token is allowed
 if (acquireTokenStatus === PrivilegeStatus.Allowed) {
  
     // Step 3: Acquire the Microsoft Entra ID token
-    const { accessToken }: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken();
+    const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
  
     // Step 4: Confirm successful acquisition of the access token
-    if (accessToken) {
+    if (acquireAADTokenResult.accessToken) { 
  
         // Step 5: Call your backend API with the obtained token
     }

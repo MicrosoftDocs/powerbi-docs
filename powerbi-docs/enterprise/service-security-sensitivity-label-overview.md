@@ -7,7 +7,7 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 11/26/2023
+ms.date: 03/26/2024
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -103,9 +103,9 @@ The following image shows how a semantic model's sensitivity label is automatica
 > [!NOTE]
 > If for any reason the sensitivity label can't be applied on the new report or dashboard, Power BI **will not** block creation of the new item.
 
-## Sensitivity label inheritance from data sources (preview)
+## Sensitivity label inheritance from data sources
 
-Power BI semantic models that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](service-security-sensitivity-label-inheritance-from-data-sources.md) to learn how inheritance from data sources works and how to enable it for your organization.
+Power BI semantic models that connect to sensitivity-labeled data in supported data sources can inherit those labels so that the data remains classified and secure when brought into Power BI. Currently, Azure Synapse Analytics (formerly SQL Data Warehouse) and Azure SQL Database are supported. See [Sensitivity label inheritance from data sources](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources) to learn how inheritance from data sources works and how to enable it for your organization.
 
 ## Sensitivity label downstream inheritance
 
@@ -113,7 +113,7 @@ When a sensitivity label is applied to a semantic model or report in the Power B
 
 Downstream inheritance is a critical link in Power BI's end-to-end information protection solution. Together with inheritance from data sources, inheritance upon creation of new content, inheritance upon export to file, and other capabilities for applying sensitivity labels, downstream inheritance helps ensure that sensitive data remains protected throughout its journey through Power BI, from data source to point of consumption.
 
-[Read more about downstream inheritance](service-security-sensitivity-label-downstream-inheritance.md)
+[Read more about downstream inheritance](/fabric/governance/service-security-sensitivity-label-downstream-inheritance)
 
 ## Data loss prevention (DLP) policies
 
@@ -121,11 +121,11 @@ Power BI leverages Microsoft 365 data loss prevention to enable central security
 
 ## Default label policy
 
-To help ensure comprehensive protection and governance of sensitive data, organizations can create default label policies for Power BI that automatically apply default sensitivity labels to unlabeled content. Currently, default label policies are supported in Power BI Desktop only. For more information, see [Default label policy](service-security-sensitivity-label-default-label-policy.md).
+To help ensure comprehensive protection and governance of sensitive data, organizations can create default label policies for Power BI that automatically apply default sensitivity labels to unlabeled content. Currently, default label policies are supported in Power BI Desktop only. For more information, see [Default label policy](/fabric/governance/service-security-sensitivity-label-default-label-policy).
 
 ## Mandatory label policy
 
-To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. For more information, see [Mandatory label policy](service-security-sensitivity-label-mandatory-label-policy.md).
+To help ensure comprehensive protection and governance of sensitive data, organizations can require users to apply labels to their sensitive Power BI content. Such a policy is called a mandatory label policy. For more information, see [Mandatory label policy for Power BI](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy).
 
 ## Admin APIs for setting and removing labels programmatically
 
@@ -178,7 +178,7 @@ The following embedding scenarios are supported:
 
 ## Sensitivity labels in paginated reports
 
-Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a regular Power BI report. See [Sensitivity label support for paginated reports](service-security-sensitivity-label-paginated-reports.md) for detail.
+Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you apply the label to the report just as you would to a regular Power BI report. See [Sensitivity label support for paginated reports](/fabric/governance/service-security-sensitivity-label-paginated-reports) for detail.
 
 ## Sensitivity labels in deployment pipelines
 
@@ -242,13 +242,13 @@ See [Custom help link for sensitivity labels](service-security-sensitivity-label
 
 * Power BI doesn't support sensitivity labels of the [Do Not Forward](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), [user-defined](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions), and [HYOK](/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Purview compliance portal](https://compliance.microsoft.com/).
 
-* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an *unprotected* sensitivity label will succeed, but the sensitivity label won't be inherited. See [Sensitivity label inheritance from data sources](./service-security-sensitivity-label-inheritance-from-data-sources.md) for detail.
+* Get data and refresh scenarios from encrypted Excel (*.xlsx*) files are supported, unless the file is stored behind a gateway, in which case the Get data/refresh action will fail. Get data and refresh actions from an Excel file that is stored behind a gateway and that has an *unprotected* sensitivity label will succeed, but the sensitivity label won't be inherited. See [Sensitivity label inheritance from data sources](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources) for detail.
 
 * Information protection in Power BI doesn't support **B2B** and **multi-tenant scenarios**.
 
 ### Power BI service
 
-* Sensitivity labels can be applied only on dashboards, reports, semantic models, dataflows, and [paginated reports](service-security-sensitivity-label-paginated-reports.md). They aren't currently available for workbooks.
+* Sensitivity labels can be applied only on dashboards, reports, semantic models, dataflows, and [paginated reports](/fabric/governance/service-security-sensitivity-label-paginated-reports). They aren't currently available for workbooks.
 
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels aren't currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, PDF, and PBIX files.
 
@@ -291,6 +291,6 @@ This article provided an overview of data protection in Power BI. The following 
 
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
 * [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
-* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
+* [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
 * [Protection metrics report](service-security-data-protection-metrics-report.md)
 * [Power BI implementation planning: Information protection for Power BI](/power-bi/guidance/powerbi-implementation-planning-info-protection)

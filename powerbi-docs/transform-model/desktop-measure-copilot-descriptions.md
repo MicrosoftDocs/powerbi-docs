@@ -9,6 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 02/26/2024
 LocalizationGroup: Model your data
+no-loc: [Copilot]
 ---
 # Use Copilot to create measure descriptions (preview)
 

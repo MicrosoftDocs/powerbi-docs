@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/25/2024
+ms.date: 03/30/2024
 ---
 
 # About storytelling with Power BI in PowerPoint
@@ -32,6 +32,8 @@ To start adding live Power BI data to your presentations, see [Add live Power BI
 To use the Power BI add-in for PowerPoint, you must have access to the Office add-in store, or the add-in must be available to you as an [admin managed add-in](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
 To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Fabric Free license, and access to the data. If the Power BI report isn't located in a Premium capacity or Fabric F64 or greater capacity, a Power BI Pro license is needed.
+
+The Power BI add-in for PowerPoint requires Office version 2312 (Build 17126) or higher.
 
 ## Security
 

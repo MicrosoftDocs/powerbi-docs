@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 01/11/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Write Copilot prompts for creating report pages in Power BI
