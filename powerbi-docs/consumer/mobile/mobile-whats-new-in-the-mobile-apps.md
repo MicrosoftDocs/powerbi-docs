@@ -21,13 +21,13 @@ For related "What's New" information, see:
 
 ## April 2024
 
-### View folder hierarchy in Power BI Mobile Apps
+### View folders in workspaces in the Power BI Mobile apps
 
-The Power BI mobile apps support folders in workspaces! Now When you're browsing a workspace in the mobile app, you'll see workspaces alongside any supported Power BI content that might be there.
+The Power BI mobile apps support folders in workspaces! Now, when you're browsing a workspace in the mobile app, you'll see folders alongside any supported Power BI content that might be there.
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/folders-in-workspaces-support.png" alt-text="Screenshot of the content tab folders in the workspace." border="false":::
 
-Tap on a folder to see any supported Power BI content it contains. Since the mobile app only shows you supported Power BI items, any Fabric or non-supported Power BI items that might be there won't be visible. When a folder doesn't contain any supported Power BI content, it appears empty in the mobile app, even if non-supported items are present.
+Tap on a folder to open it. You'll see any supported Power BI items it contains. Since the mobile app only shows you supported Power BI items, any Fabric or non-supported Power BI items won't be visible. When a folder doesn't contain any supported Power BI content, it appears empty in the mobile app, even if non-supported items are present.
 
 ### Open Power BI items in full screen mode
 
