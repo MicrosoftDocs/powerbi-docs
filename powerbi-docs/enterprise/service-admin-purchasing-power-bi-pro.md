@@ -1,13 +1,13 @@
 ---
-title: Purchase and assign Power BI paid licenses
-description: Learn how to purchase and assign Power BI paid user licenses to users so they can access content and collaborate with others in the Power BI service.
+title: Purchase Power BI and assign licenses
+description: Learn how to purchase Power BI and assign user licenses to users so they can access content and collaborate with others in the Power BI service.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -19,8 +19,11 @@ This article is for administrators and explains how to purchase paid user licens
 > [!NOTE]
 >The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
-Power BI Pro and Power BI Premium Per User (PPU) are individual user licenses that let users read and interact with reports and dashboards that others publish to the Power BI service. Users with a paid license can share content and collaborate with other Pro or PPU users. Only paid users can publish or share content with other users or use content that's created by others, unless a Power BI Premium capacity hosts that content. For more information about the available types of licenses and subscriptions, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
+To learn about license types, see [Licensing for Fabric](/power-bi/fundamentals/service-features-license-type).
 
+Self-service purchase, subscription, and license management capabilities for Power BI and Fabric are available for commercial cloud customers. For more information:
+- [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)  
+- [Enable or disable self-service sign-up and purchasing](./service-admin-disable-self-service.md)
 
 ## Prerequisites
 
@@ -34,15 +37,17 @@ To purchase Power BI paid licenses in the Microsoft 365 admin center:
 1. Using your administrator account, sign in to the [Microsoft 365 admin center.](https://admin.microsoft.com)
 1. On the navigation menu, select **Billing**, and then select **Purchase services**.
 1. Search for **Power BI** or select **Power BI** from the **View by category** section.
-1. Compare offers or select **Power BI**, and choose **Details**.
+1. Scroll to the license you want to purchase, and select **Details**.
 
-   :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-purchase-services.png" alt-text="Screenshot showing the Microsoft 365 billing menu with Purchase services selected.":::
-1. Select the number of licenses you want to purchase and the billing frequency. 
-    - If you didn't already use it, start a [**Fabric free** trial subscription](/fabric/getting-started/fabric-trial. The Fabric free trial expires after 60 days.
-    - Not ready to purchase Power BI, start with a **Power BI Pro** trial. The Power BI Pro trial includes up to 25 licenses. You'll need to enter your payment information because you'll be charged the monthly fee after the 30-day trial expires. 
-1. Ready to purchase a Power BI paid license? Select **Buy**.
+    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-purchase.png" alt-text="Screenshot showing the Power BI options for Purchase services." lightbox="media/service-admin-purchasing-power-bi-pro/power-bi-purchase.png":::
 
-1. Complete the information on the checkout page, and then select **Place order**.
+1. Select the number of licenses you need.
+1. Select **Buy**.
+1. On the **Checkout** page:
+   1. Verify your organization and contact information.
+   1. Enter payment information, and then select **Save**.
+   1. Review your order information.
+   1. Select **Place order**.
 1. To verify your purchase, on the navigation menu, select **Billing**, and then select **Your Products**.
 1. To assign licenses to users, from **Billing**, select **Licenses**.
 

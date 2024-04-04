@@ -7,8 +7,9 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 03/01/2024
+ms.date: 04/02/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Overview of Copilot for Power BI (preview)
@@ -41,6 +42,7 @@ Here are four examples of what Copilot can generate.
 - A [narrative visual](#a-narrative-visual)
 - A [summary response about your report content](#a-summary-response-about-your-report-content)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
+- Write [DAX queries](#write-dax-queries)
 
 ### A report outline of suggested pages
 
@@ -78,6 +80,10 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 Copilot can add descriptions to your semantic model measures. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation.
 
 [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
+
+### Write DAX queries
+
+Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
 
 ## Copilot requirements
 

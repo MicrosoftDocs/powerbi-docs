@@ -9,16 +9,16 @@ ms.subservice: pbi-fundamentals
 ms.topic: conceptual
 ms.date: 12/21/2022
 ---
-# Power BI webinars
+# Power BI :::no-loc text="webinars":::
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) and Anna Khachatryan (v-annakh) are vendors who work with Chauncy Freels and help to maintain this list of webinars"
 
 Register for our upcoming live webinars or watch our recorded sessions on-demand.
 
-## Upcoming webinars
+## Upcoming :::no-loc text="webinars":::
 
 [Upcoming events from the Power BI community](https://community.powerbi.com/t5/Upcoming-Events/bd-p/Community)
 
-## Featured webinars
+## Featured :::no-loc text="webinars":::
 
 Get started with these popular on-demand webinars:
 
@@ -54,22 +54,22 @@ Power BI how-to: Analyze real-time data with streaming dataflows
 by Mohammad Ali and Jeroen ter Heerdt  
 [Watch now](https://info.microsoft.com/ww-ondemand-power-bi-how-to-analyze-real-time-data-with-streaming-dataflows.html)
 
-Webinar series: Mastering data modeling with Power BI  
+:::no-loc text="Webinars"::: series: Mastering data modeling with Power BI  
 Episode 1 - Data modeling 101: Increasing the impact of Power BI  
 by Jeroen ter Heerdt, Microsoft and Marc Lelijveld, Macaw Netherlands  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-Power-BI.html)
 
-Webinar series: Mastering data modeling with Power BI  
+:::no-loc text="Webinars"::: series: Mastering data modeling with Power BI  
 Episode 2 - Learn advanced data modeling with Power BI  
 by Jeroen ter Heerdt, Microsoft and Marc Lelijveld, Macaw Netherlands  
 [Watch now](https://info.microsoft.com/ww-Landing-Mastering-Data-Modeling-with-PowerBI.html?LCID=EN-US)
 
-Webinar series: Mastering data modeling with Power BI  
+:::no-loc text="Webinars"::: series: Mastering data modeling with Power BI  
 Episode 3 - Data modeling for experts with Power BI  
 by Jeroen ter Heerdt, Microsoft and Marc Lelijveld, Macaw Netherlands  
 [Watch now](https://info.microsoft.com/ww-landing-MasteringDataModelingWithPowerBI.html?LCID=EN-US)  
 
-Webinar series: Data modeling with Power BI  
+:::no-loc text="Webinars"::: series: Data modeling with Power BI  
 Episode 4 - Calculation groups and composite models
 <br>By Jeroen ter Heerdt, Microsoft and Marc Lelijveld, Macaw Netherlands  
 [Watch now](https://info.microsoft.com/ww-ondemand-calculation-groups-and-composite-models.html)

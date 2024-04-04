@@ -262,7 +262,7 @@
         href: power-bi-create-mobile-optimized-report-about.md
       - name: Mobile layout view
         href: power-bi-create-mobile-optimized-report-mobile-layout-view.md
-      - name: Create an initial layout
+      - name: Create a mobile-optimized layout
         href: power-bi-create-mobile-optimized-report-initial-layout.md
       - name: Optimize visual formatting
         href: power-bi-create-mobile-optimized-report-format-visuals.md
@@ -356,6 +356,8 @@
         href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
       - name: Show real-time traffic
         href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
+      - name: Azure Maps Power BI visual Data Residency
+        href: /azure/azure-maps/power-bi-visual-data-residency?context=/power-bi/create-reports/context/context
       - name: Manage the Azure Maps visual in your organization
         href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
     - name: Matrix visuals
@@ -908,6 +910,8 @@
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
+      - name: Connect to Snowflake and Databricks
+        href: ../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md
       - name: Support for ODBC data sources
         href: ../paginated-reports/paginated-reports-odbc-support.md
       - name: Create an embedded data source
@@ -1164,6 +1168,10 @@
       href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: Publish .rdl files to Power BI
       href: ../guidance/publish-reporting-services-power-bi-service.md?context=/power-bi/create-reports/context/context
+    - name: Publish a paginated report
+      href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
+    - name: Subscribe to reports on OneDrive SharePoint
+      href: ../paginated-reports/paginated-reports-onedrive-sharepoint.md
     - name: Embed a paginated report
       href: ../paginated-reports/paginated-reports-embed.md      
     - name: PDF Rendering Extension conformance to ISO 14289-1

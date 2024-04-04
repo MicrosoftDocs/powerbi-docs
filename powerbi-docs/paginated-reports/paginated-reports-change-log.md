@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/17/2023
+ms.date: 3/26/2024
 ---
 
 # Power BI Report Builder change log
@@ -17,6 +17,20 @@ ms.date: 07/17/2023
 Learn about new items, bug fixes, and known issues for each release of Power BI Report Builder. We update this article with each new release. For news about the rest of Power BI, see [What's New in Power BI](../fundamentals/desktop-latest-update.md).
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
+
+## March 2024
+
+Version 15.7.1807.730, released March 24, 2024
+
+- Fixed issue with JPEG files not respecting the EXIF rotation property.
+- Updated to use the last MSAL authentication library functionality.
+- Various accessibilty fixes across all areas of the product.
+- Bug fix for Power BI Report Builder freezing during certain operations.
+- Various bug fixes. 
+
+### Features
+- Power Query Online connectivity to hundreds of new data sources is now in preview.
+- Added support for TLS 1.3.
 
 ## July 2023
 
