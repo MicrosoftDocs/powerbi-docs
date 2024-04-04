@@ -49,7 +49,7 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
   
      `=CStr(2 + (Level()*10)) + "pt"`  
   
-     The Padding properties all require a string in the format *nnyy*, where *nn* is a number and *yy* is the unit of measure. The example expression builds a string that uses the **Level** function to increase the size of the padding based on recursion level. For example, a row that has a level of 1 would result in a padding of (2 + (1\*10))=12pt, and a row that has a level of 3 would result in a padding of (2 + (3\*10))=32pt. For information about the **Level** function, see [Level](../../paginated-reports/expressions/report-builder-functions-level-function.md).  
+     The Padding properties all require a string in the format *nnyy*, where *nn* is a number and *yy* is the unit of measure. The example expression builds a string that uses the **Level** function to increase the size of the padding based on recursion level. For example, a row that has a level of 1 would result in a padding of (2 + (1\*10))=12pt, and a row that has a level of 3 would result in a padding of (2 + (3\*10))=32pt. For information about the **Level** function, see [Level](/sql/reporting-services/report-design/report-builder-functions-level-function).  
   
 1.  Select **OK**.
   
@@ -59,7 +59,7 @@ In paginated reports, a recursive hierarchy group organizes data from a single r
 
 - [Creating recursive hierarchy groups &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/creating-recursive-hierarchy-groups-report-builder.md)   
 - [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)   
-- [Aggregate functions reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md)   
+- [Aggregate functions reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference)   
 - [Tables &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/tables-report-builder-and-ssrs)   
 - [Matrices &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-a-matrix-report-builder-and-ssrs)   
 - [Lists &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs)   
