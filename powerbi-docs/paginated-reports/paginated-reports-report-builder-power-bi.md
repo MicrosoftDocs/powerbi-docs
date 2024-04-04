@@ -57,7 +57,7 @@ Paginated reports have their own design tool, Power BI Report Builder. It's a ne
 
 Sensitivity labels can be applied to paginated reports hosted in the Power BI service. After uploading a paginated report to the service, you [apply the label to the report](../enterprise/service-security-apply-data-sensitivity-labels.md#apply-sensitivity-labels-in-the-power-bi-service) just as you would to a regular Power BI report.
 
-Read more about [sensitivity label support for pagination reports](../enterprise/service-security-sensitivity-label-paginated-reports.md).
+Read more about [sensitivity label support for pagination reports](/fabric/governance/service-security-sensitivity-label-paginated-reports).
 
 ## Report from a variety of data sources
 
