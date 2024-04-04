@@ -56,7 +56,7 @@ landingContent:
           - text: Sensitivity labels
             url: service-security-sensitivity-label-overview.md                  
           - text: Microsoft Defender for Cloud Apps
-            url: service-security-using-defender-for-cloud-apps-controls.md           
+            url: /fabric/governance/service-security-using-defender-for-cloud-apps-controls           
       - linkListType: how-to-guide
         links:            
           - text: Enable sensitivity labels
@@ -76,7 +76,7 @@ landingContent:
           - text: Power BI Desktop privacy levels
             url: desktop-privacy-levels.md 
           - text: Row-level security (RLS)
-            url: service-admin-rls.md                       
+            url: /fabric/security/service-admin-rls                       
       - linkListType: how-to-guide
         links:                    
           - text: Use service tags
