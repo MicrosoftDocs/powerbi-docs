@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/01/2024
+ms.date: 04/05/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -18,7 +18,7 @@ no-loc: [Copilot]
 
 Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview).
 
-When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages.
+When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
 
 :::image type="content" source="media/copilot-create-report/copilot-create-internet-sales-trends.png" alt-text="Screenshot showing Copilot creating internet sales trend report page." lightbox="media/copilot-create-report/copilot-create-internet-sales-trends.png":::
 

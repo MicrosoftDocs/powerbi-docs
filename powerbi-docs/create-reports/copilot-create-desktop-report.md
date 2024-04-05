@@ -20,7 +20,7 @@ When you use Copilot in Power BI Desktop, you can quickly create report pages wi
 
 :::image type="content" source="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png" alt-text="Screenshot showing Copilot creating a page about the popular islands." lightbox="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png":::
 
-The Copilot experience for report creation in the Power BI service is now available for preview in Power BI Desktop. With the current preview, you can create reports faster and easier in the Power BI Desktop experience. You can now open the Copilot pane in report view and ask Copilot to:
+You can [create reports in the Power BI service with Copilot](copilot-create-report.md). Now the same report creation experience is available for preview in Power BI Desktop. With the current preview, you can create reports faster and easier in the Power BI Desktop experience. You can now open the Copilot pane in report view and ask Copilot to:
 
 - **Create a report page**: Copilot can create an entire report page for you by identifying the tables, fields, measures, and charts that can help you get started.
 - **Summarize a semantic model**: Copilot can help you understand your Power BI semantic model by summarizing the data in your model.
