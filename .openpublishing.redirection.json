@@ -11,9 +11,19 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-admin-org-subscription.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-licensing-organization/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
             "redirect_url": "/fabric/get-started/fabric-known-issues",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/service-self-service-purchase-help.md",
+            "redirect_url": "/power-bi/fundamentals/service-self-service-sign-up-help",
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/enterprise/service-admin-manage-licenses.md",
@@ -5850,7 +5860,53 @@
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                             
+        },    
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-mandatory-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-mandatory-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-metadata-scanning.md",
+            "redirect_url": "/fabric/governance/metadata-scanning-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-default-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-default-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-downstream-inheritance.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-downstream-inheritance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-from-data-sources.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-set-remove-api.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-paginated-reports.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-troubleshooting.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-troubleshooting",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-using-defender-for-cloud-apps-controls.md",
+            "redirect_url": "/fabric/governance/service-security-using-defender-for-cloud-apps-controls",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                 
   ]          
 
 }

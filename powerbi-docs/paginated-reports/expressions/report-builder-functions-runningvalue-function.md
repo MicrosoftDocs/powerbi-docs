@@ -57,9 +57,9 @@ The set of data for which the running value is calculated must have the same dat
 
 - *Expression* must not contain nested aggregates that specify *recursive*.
 
-To calculate the running value of the number of rows, use **RowNumber**. For more information, see [RowNumber Function (Power BI Report Builder)](./report-builder-functions-rownumber-function.md).
+To calculate the running value of the number of rows, use **RowNumber**. For more information, see [RowNumber Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-rownumber-function).
 
-For more information, see [Aggregate Functions Reference (Power BI Report Builder)](./report-builder-functions-aggregate-functions-reference.md) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
+For more information, see [Aggregate Functions Reference (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) and [Expression Scope for Totals, Aggregates, and Built-in Collections (Power BI Report Builder)](./expression-scope-for-totals-aggregates-and-built-in-collections.md).
 
 For more information about recursive aggregates, see [Creating Recursive Hierarchy Groups (Power BI Report Builder)](./creating-recursive-hierarchy-groups-report-builder.md).
 
