@@ -115,7 +115,7 @@ You can use the Power BI Excel add-in to insert connected PivotTables and connec
 > - Don't allow any web add-ins to start.
     
 > [!NOTE]
-> Insert Table experience is available in Current Channel and Monthly Enterprise Channel for customers who have Excel version 16.0.16732.0 or higher. The add-in is visible in Excel for users with a Power BI Pro license. The Insert Table experience is not available in Excel for the Web. 
+> The connected tables feature is now available in the Microsoft 365 Current Channel. Connected tables will be available to all Monthly Enterprise Channel and Semi-Annual Enterprise Channel customers in their next regularly scheduled [Microsoft 365 update](deployoffice/manage-software-download-settings-office-365#choose-how-often-to-get-feature-updates-for-office#choose-how-often-to-get-feature-updates-for-office). The connected tables feature is  available for everyone in Excel for the Web. The add-in is visible in Excel for users with a Power BI Pro license.
 
 You can open the Excel Add-in from the Excel ribbon. 
 
