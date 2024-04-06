@@ -48,7 +48,7 @@ Here are four examples of what Copilot can generate.
 
 Copilot can provide a summary of your dataset and an outline of suggested pages for your report. Copilot creates a starting point. It might not be perfect, and it might not be exactly what you had in mind. But once you have the starting point, you can modify it from there to be exactly what you want.
 
-- A [report outline of suggested pages for your report](copilot-create-report.md): for example, what each page in the report will be about, and how many pages it will create.  
+- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report will be about, and how many pages it will create.  
 - The visuals for the individual pages.
 
 ### A narrative visual
@@ -119,7 +119,7 @@ We always welcome your feedback about our products. Especially during public pre
 ## Next steps
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
-- [Create a report with Copilot for Power BI](copilot-create-report.md)
+- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)

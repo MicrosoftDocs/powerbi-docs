@@ -110,8 +110,10 @@
           href: /fabric/get-started/copilot-power-bi-privacy-security
         - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
+        - name: Create reports with Copilot in Power BI
+          href: copilot-create-reports.md
         - name: Create reports in the Power BI service with Copilot
-          href: copilot-create-report.md
+          href: copilot-create-report-service.md
         - name: Create reports in Power BI Desktop with Copilot
           href: copilot-create-desktop-report.md
         - name: Write prompts for Copilot report pages
