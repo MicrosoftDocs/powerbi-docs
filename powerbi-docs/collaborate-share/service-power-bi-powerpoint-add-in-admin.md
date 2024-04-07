@@ -37,7 +37,7 @@ By default, the Power BI service includes entry points that enable users to inse
 >[!NOTE]
 > Disabling this functionality in Power BI does not prevent people from adding Power BI report pages and visuals to PowerPoint slides starting from PowerPoint. To completely block adding live Power BI report pages and visuals to PowerPoint slides using the add-in, the functionality must be disabled in both Power BI and PowerPoint.
 
-Power BI entry points for the add-in aren't available in national/regional, government, and air-gapped clouds. See the Microsoft Office documentation for information about the availability of the add-in in PowerPoint in these clouds.
+Power BI entry points for the add-in aren't available in national/regional, government, and air-gapped clouds. See the [Microsoft Office documentation](/office/dev/add-ins/publish/government-cloud-guidance) for information about the availability of the add-in in PowerPoint in these clouds.
 
 ## Power BI add-in button in PowerPoint Insert ribbon
 
