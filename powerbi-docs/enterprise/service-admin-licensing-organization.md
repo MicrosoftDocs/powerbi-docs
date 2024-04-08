@@ -1,116 +1,128 @@
 ---
-title: Power BI licensing for users in your organization 
-description: Overview of the different user license types available in Power BI and how admins purchase and manage licensing for users in their organization.
+title: Sign up for Fabric and Power BI licensing for users in your organization. 
+description: Overview of how admins sign up, purchase, and manage Power BI and Fabric licenses.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/31/2023
+ms.date: 03/28/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
-# Licensing the Power BI service for users in your organization
+# Organizational licenses and subscriptions for Fabric and Power BI 
 
-Everyone who uses the Power BI service must have a license. What a user can do depends on the type of **per-user license** that they have. Licenses are Fabric free, Pro, or Power BI Premium Per User (PPU). The level of access provided by their license depends on whether the workspace is a **Premium** workspace or not.
+There are two ways for users to get a license, from an administrator or by using self-service. This article is for the administrators, who purchase and manage services and licenses.
 
-There are two ways for users to get a license, from an administrator or self-service. Self-service sign up capabilities and a work or school email account are needed for users to get their own free, Pro, or Premium Per User license. Administrators can get a Fabric license subscription and then assign licenses to users.
+Global and Billing administrators can sign up for the Power BI service and Fabric. After signing up and purchasing a subscription or a free trial, Billing, License, User, and Global administrators assign licenses to users in their organization.
 
-This article is for administrators who can purchase services and per-user licensing. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
+If you give them permissions, users in your organization can get one of the organization's licenses simply by signing in to Power BI (app.powerbi.com) or Fabric (app.fabric.com). When a user signs in, they automatically receive a license. Administrators can set these permissions by following [Enable and disable self-service]().
 
-## Who can purchase and assign licenses
+> [!NOTE]
+> If you're an individual, you can sign up for your own free, Pro, Premium Per User, and trial licenses. This process is called *self-service.* To learn more, see [the self-service process](../fundamentals/service-self-service-signup-for-power-bi.md). 
 
-You must belong to an admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+## Fabric and the Power BI service
 
-The following roles are required to manage licensing for an organization.
+Power BI is available as a standalone SaaS service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
-- To purchase services and licenses:
-  - Billing administrator
-  - Global administrator
-- To manage user licenses:
-  - License administrator
-  - User administrator
-  - Global administrator
+## Licenses and subscriptions
+Fabric and the Power BI service are both SaaS platforms and require licenses and at least one capacity subscription. There are some differences in how these licenses and capacities are acquired.    
 
-For information about Power BI service admin roles, see [Understanding Power BI administration roles](../admin/service-admin-role.md).
+### Power BI licenses
 
-## Get Power BI for your organization
+Use of the Power BI service requires a license and a capacity. 
 
-For information about pricing, see [Pricing & Product Comparison](https://powerbi.microsoft.com/pricing/).
+- [Per user license](../fundamentals/service-features-license-type.md#power-bi-service-licenses) - Per user licenses allow users to work in the Power BI service. The options are Fabric free, Pro, and Premium Per User (PPU).
 
-If you're not ready to purchase, select the Power BI Pro trial. You'll get 25 licenses to use for one month. For step-by-step instructions on how to sign up, see [Get a Power BI subscription for your organization](service-admin-org-subscription.md).
+- [Capacity subscription](../fundamentals/service-features-license-type.md#premium-capacity) - There are two types of Power BI subscriptions for organizations: standard and Premium. Premium provides enhancements to Power BI, and a comprehensive portfolio of [Premium features](service-premium-features.md). Power BI Premium is a tenant-level Microsoft 365 subscription, available in a choice of SKUs (Stock Keeping Units).
 
-## About self-service sign-up
+Each Microsoft 365 E5 subscription includes standard capacity and a Pro license. 
 
-Individual users can get their own Power BI license by signing up with their work or school email account. With a Fabric free license, users can explore Power BI for personal data analysis and visualization using My Workspace, but they can't share content with others. A Power BI Pro or Power BI Premium Per User (PPU) license is required before users can share content. For descriptions of the license types, see [license types for the Power BI service](../fundamentals/service-features-license-type.md).
+### Fabric licenses
 
-Users can upgrade their license type, or sign up for a different license directly, if the organization is using the commercial cloud. Direct purchase, or upgrade to Pro isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
+To access the Fabric SaaS platform, you need a license and a capacity.  
 
-Turning off self-service sign-up keeps users from exploring Power BI. If you block individual sign-up, you may want to get Fabric free licenses for your organization and assign them to all users.
+- [Per user license](/fabric/enterprise/licenses#per-user-licenses) - Per user licenses allow users to work in Fabric. The options are Fabric free, Pro, and Premium Per User (PPU).
+- [Capacity license](/fabric/enterprise/licenses#capacity-license) - An organizational license that provides a pool of resources for Fabric operations. Capacity licenses are divided into stock keeping units (SKUs). Each SKU provides a different number of capacity units (CUs) which are used to calculate the capacity's compute power.
 
-To assign a **Fabric free** license to all existing users:
+## Which admins can purchase licenses and subscriptions
 
-1. From your global admin or billing admin account, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. On the navigation menu, select **Billing** and then select **Purchase services**.
-1. Search or scroll to locate the Fabric (free) offer. Select **Details**.
-1. Select the number of licenses you want, and then select **Buy**.
+### Admin roles for purchasing licenses and subscriptions
 
-    :::image type="content" source="media/service-admin-licensing-organization/m365-assign-2021.png" alt-text="Screenshot showing the Fabric free subscription dialog.":::
+You must belong to the Global or Billing admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
-1. Complete the information on the **Checkout** page, and then select **Place order**.
-1. Select **Licenses** from the left sidebar, and then select **Fabric (free)** from the subscriptions.
-1. Select **Assign licenses** and assign the licenses to users.
+### Admin roles for managing licenses and subscriptions
 
-To see which users in your organization already have a license, see [View and manage user licenses](service-admin-manage-licenses.md).
+After the licenses and subscriptions are purchased, Global, Billing, License, or User admins can manage licenses for an organization. For details about these four admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
 
-## License types and capabilities
+## Get Fabric or Power BI for your organization
 
-There are three kinds of Power BI per-user licenses: Fabric free, Pro, and Premium Per User (PPU). The type of license a user needs is determined by where content is stored, how they'll interact with that content, and if that content uses Premium features. Where an organization stores content is determined by [subscription license type](#subscription-license-types).
+Fabric and the Power BI service are available for organizations to purchase and to try for free. For detailed instructions, select the option you prefer. 
 
-One type of organizational subscription, [Power BI Premium](service-admin-premium-purchase.md), is a capacity-based license. Premium capacity allows users with Pro and PPU licenses to share content and collaborate with others who have free, Pro, and PPU licenses.
+> [!TIP]
+> For up-to-date pricing information, see [Pricing & product comparison](https://powerbi.microsoft.com/pricing/).
 
-For detailed information about licensing, see [Licenses for the Power BI](../fundamentals/service-features-license-type.md).
+1. [Purchase a Fabric subscription.](/fabric/enterprise/buy-subscription) If you're ready to purchase, your options include bulk purchasing for your organization or enabling your users to upgrade their own licenses.
 
-Content created by a user who is assigned a PPU license can only be shared with other users who have a PPU license. Content that is saved in a workspace hosted with Premium capacity can be shared with users who don't have a PPU license. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
+    After you purchase a Fabric subscription, [enable Fabric for your organization](/fabric/admin/fabric-switch). This includes setting up tenants and capacities.
+1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, you can assign licenses to individual users or allow self-service. For more information, see [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-sign-up-and-purchase).
+1. [Start a free 60-day Fabric trial for your organization.](/fabric/get-started/fabric-trial) The trial includes a trial capacity, 1 TB of storage, and access to all of the Fabric experiences and features.
+1. Get free licenses for all of your users. The Fabric free license doesn't include a Fabric capacity. The Fabric free license includes access to the paid features of the Power BI service. 
+1. [Start a free 30-day trial of Power BI Pro.](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) The trial includes up to 25 licenses. After the 30 days expire, you're charged for the licenses.
 
-## Subscription license types
+## View existing licenses
 
-All user-based, commercial licenses from Microsoft are based on Microsoft Entra identities. To use the Power BI service, sign in with an identity that Microsoft Entra ID supports for commercial licenses. You can add Power BI to any Microsoft license that uses Microsoft Entra ID for identity services. Some licenses, such as Office 365 E5, include a Power BI Pro license.
+To see which users in your organization already have a license, see [View and manage user licenses](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins#view-self-service-subscriptions).
 
-There are two kinds of Power BI subscription licenses for organizations: standard and premium.
+## Enable and disable self-service sign-up and purchase 
 
-- Standard - With a standard, self-service Power BI subscription, administrators can assign per user licenses. There's a per user monthly fee for Power BI Pro licenses. This license type enables collaboration, publishing, sharing, and ad-hoc analysis. Content is saved to shared storage capacity that is fully managed by Microsoft.
-- Premium - A Power BI Premium subscription license allocates a capacity to an organization. This subscription type is suitable for enterprise BI, big data analytics, cloud and on-premises reporting. Premium provides advanced administration and deployment controls. Reserved compute and storage resources are managed by capacity admins in your organization. There's a monthly cost for this reserved environment. In addition to other Premium advantages, content stored in Premium capacity can be accessed by and distributed to users who don't have Power BI Pro licenses. At least one user must have a Power BI Pro license assigned to use Premium, and content creators and developers need a Power BI Pro license.
+You purchased licenses or signed up for an organizational trial. Now, decide whether your users can assign themselves a license or give themselves an automatic license upgrade. Here are links to help you decide which settings to use. 
 
-The two types of subscriptions aren't mutually exclusive. You can have both Power BI Premium and standard. In this configuration, content stored in Premium capacity can be shared with all users and shared capacity is available. For information about capacity limits, see [Manage data storage in Power BI workspaces](../admin/service-admin-manage-your-data-storage-in-power-bi.md).
+**Self-service**
 
-To compare product features and pricing, see [Power BI pricing](https://powerbi.microsoft.com/pricing).
+- [When to use self-service sign-up and purchase](service-admin-disable-self-service.md)
+- [Manage self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
+- [Manage self-service license requests in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-license-requests)
+- [Manage self-service sign-up subscriptions in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/manage-self-service-signup-subscriptions)
+- [How to combine self-service settings](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features)
 
-## Guest user access
+## Guest user licenses
 
 You might want to distribute content to users who are outside of your organization. You can share content with external users by inviting them to view content as a guest. Microsoft Entra Business-to-business (Microsoft Entra B2B) enables sharing with external guest users. Prerequisites:
 
-- The ability to share content with external users must be enabled
+- The ability to share content with external users must be enabled.
 
-- The guest user must have the proper licensing in place to view the shared content
+- The guest user must have the proper licensing in place to view the shared content.
 
 For more information about guest user access, see [Distribute Power BI content to external guest users with Microsoft Entra B2B](service-admin-azure-ad-b2b.md).
 
-## Purchase Power BI Pro licenses
+## Other articles for admins
 
-As an administrator, you can purchase Power BI Pro licenses through Microsoft 365 or through a Microsoft partner. After your purchase, you can assign them to individual users. For more information, see [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md).
+There are many other admin tasks related to licenses and subscriptions. Some of them are listed and linked here. 
+
+- Assign and manage licenses with [Microsoft 365](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) and with the [Azure portal](service-admin-purchasing-power-bi-pro.md).
+- [Remove or reassign a license, enable, disable a license](/microsoft-365/admin/manage/assign-licenses-to-users)
+- [Cancel a trial](/fabric/get-started/fabric-trial)
+- [Takeover a license or tenant](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
+- [Handle expiring trials](/microsoft-365/commerce/subscriptions/cancel-your-subscription).
+- Handle expiring licenses for Power BI
 
 ### Power BI license expiration
 
-There's a grace period after a Power BI license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days.
+There's a grace period after a Power BI license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days. For license trials, there is no grace period.
 
 Power BI has the same license lifecycle as Microsoft 365. For more information, see [What happens to my data and access when my Microsoft 365 for business subscription ends](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
+
+## Manage subscriptions included with Microsoft 365 E5 SKUs
+
+A Microsoft 365 E5 subscription includes Power BI Pro licenses. To learn how to manage licenses, see [View and manage user licenses](service-admin-manage-licenses.md).
 
 ## Related content
 
 - [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
+- [About self-service sign-up](/microsoft-365/admin/misc/self-service-sign-up)
 - [Business subscriptions and billing documentation](/microsoft-365/commerce/)
-- [Find Power BI users that have signed in](../admin/service-admin-access-usage.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Find Power BI users that are signed in](../admin/service-admin-access-usage.md)
+- [Self service FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)

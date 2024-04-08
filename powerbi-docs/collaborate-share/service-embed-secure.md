@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/09/2024
+ms.date: 04/04/2024
 LocalizationGroup: Share your work
 ---
 
@@ -131,6 +131,8 @@ You can add as many buttons as you'd like to create a low-code custom experience
 * Some browsers require you to refresh the page after sign-in, especially when you use InPrivate or Incognito modes.
 
 * You might encounter issues if you use unsupported browser versions. For a list of browsers that Power BI supports, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
+
+* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin,” you can't log in to view your embedded content because MSAL doesn't support this header. Instead, choose either "restrict-properties" (for Chromium-based browsers) or "same-origin-allow-popups." Alternatively, if you can't change the Cross-Origin-Opener-Policy, link to the embedded URL directly instead of embedding it in an iframe.
 
 * The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 

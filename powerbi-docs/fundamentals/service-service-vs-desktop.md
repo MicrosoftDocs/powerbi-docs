@@ -46,7 +46,7 @@ To learn more about licenses, see [Power BI licenses and subscriptions.](../fund
 
 In addition to permissions and licenses, *where the content is saved** also plays a role in what actions you can take with the content.
 
-To learn more about capacities, see [Power BI Premium and capacities.](../enterprise/service-admin-licensing-organization.md#license-types-and-capabilities)
+To learn more about capacities, see [Power BI Premium and capacities.](../fundamentals/service-features-license-type.md)
 
 ## Related content
 

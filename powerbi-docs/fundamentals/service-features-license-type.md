@@ -7,17 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 01/26/2024
+ms.date: 03/25/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
 
 # Power BI service per-user and capacity-based licenses
 
-There are three kinds of Power BI *per-user* licenses: Free, Pro, and Premium Per User (PPU). Which type of license you need is determined by where your content is stored, how you plan on interacting with that content, and if that content uses Premium features. The other type of license is a Premium *capacity-based* license. PPU and Pro users with access to a [Power BI Premium, Fabric F64 or greater](../enterprise/service-admin-premium-purchase.md) capacity-based license, can create content in workspaces that are assigned to Premium capacity. PPU and Pro users can then grant colleagues, including free users, access to those Premium workspaces. 
+> [!NOTE]
+> The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
+
+There are three kinds of Power BI *per-user* licenses: Fabric free, Power BI Pro, and Power BI Premium Per User (PPU). Which type of license you need to use Fabric and to use Power BI is determined by where your content is stored, how you plan on interacting with that content, and if that content uses Premium features. The other type of license is a Premium *capacity-based* license. PPU and Pro users with access to a [Power BI Premium, Fabric F64 or greater](../enterprise/service-admin-premium-purchase.md) capacity-based license, can create content in workspaces that are assigned to Premium capacity. PPU and Pro users can then grant colleagues, including free users, access to those Premium workspaces. 
 
 > [!NOTE]
 > A Premium Per User (PPU) workspace is not the same as a Premium capacity workspace.  
+
+## Sign up for a license
+
+There are several ways to begin using the Power BI service and Fabric. 
+- If you already have a subscription to Microsoft 365, [check to see if that subscriptions includes a Power BI and Fabric license](../consumer/end-user-license.md).  
+- If you don't already have Microsoft 365, [Sign up for a new Microsoft 365 trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). 
+- If your [administrator already purchased a subscription and assigned you a license](../enterprise/service-admin-manage-licenses.md). Check for a license by typing app.powerbi.com into your browser.
+- If you're not ready to buy, start with a [trial license](service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial).
+- If you're signing up as an individual and not an organization, [use self-service to try or buy](service-self-service-signup-purchase-for-power-bi.md) the Power BI service or Fabric.
+
 
 ## Power BI service licenses
 

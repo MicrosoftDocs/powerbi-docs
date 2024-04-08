@@ -30,7 +30,7 @@
     expanded: false
     items:
     - name: Get Power BI for your organization
-      href: service-admin-org-subscription.md 
+      href: service-admin-licensing-organization.md 
     - name: Purchase Power BI Pro
       href: service-admin-purchasing-power-bi-pro.md         
     - name: Licensing for your organization
