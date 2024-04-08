@@ -1,18 +1,19 @@
 ---
-title: Create report pages with Copilot
-description: Using Copilot in Power BI, you can quickly create a Power BI report.
+title: Get started creating reports with Copilot
+description: Get ready to use Copilot in Power BI Desktop and the Power BI service to create a Power BI report quickly.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 04/08/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+#customer intent: As a report creator, I want to learn how to use Copilot in Power BI Desktop and the Power BI service to create a Power BI report quickly.
 ---
 
-# Create reports with Copilot
+# Get started creating reports with Copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -20,10 +21,7 @@ When you use the Copilot chat pane in Power BI, Copilot helps you use the transf
 
 :::image type="content" source="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png" alt-text="Screenshot showing Copilot creating a page about the popular islands." lightbox="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png":::
 
-The same report creation experience is available for preview in the Power BI service and in Power BI Desktop.
-
-- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
-- [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
+Before you create reports, consider [evaluating your data model](copilot-evaluate-data.md) to see if Copilot can understand it easily. 
 
 With the current preview, you can create reports faster and easier in the Power BI experience. You can now open the Copilot pane and ask Copilot to:
 
@@ -35,62 +33,20 @@ With the current preview, you can create reports faster and easier in the Power 
   - Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
   - Create a page to compare the cost and material of each product and their impact on production.
 
-## Before you start
+## Start using Copilot
 
-To get started using Copilot, you need write access to at least one workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher). Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#power-bi-service).
+The same report creation experience is available for preview in the Power BI service and in Power BI Desktop.
 
-You may need to do some clean-up work on your dataset. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot can get insights from it.
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
+- [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
 
-[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
-
-## Get started using Copilot the first time
-
-You need to be signed in to start using Copilot in Desktop in report view.
-
-1. Open Power BI Desktop.
-
-1. In the ribbon, select **Get Data**, then select the type of data source, select a data source, and select **Connect**.
-
-1. Now that you have data, in the ribbon, select the **Copilot** icon in the ribbon to open the Copilot pane in the report view. 
-
-    > [!TIP]
-    > If you don't see **Copilot**, your admins may need to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview).
-
-1. The first time you select the **Copilot** ribbon button, Power BI prompts you to pick a Copilot-compatible workspace. Select any workspace assigned to required capacity. 
-
-    > [!NOTE]
-    > - The workspace you select here doesn’t need to be the workspace where you publish your report.
-    > - If you cancel or close the workspace picker dialog without any selection, you will see an error message saying that something went wrong.
-
-1. In the Copilot pane, you see a welcome card. Select **Get started** to start your interaction with Copilot.
-
-    After you've successfully completed those steps the first time, you won't have to repeat them again. 
-
-## Get started using Copilot
-
-1. In the ribbon, select the **Copilot** icon in the ribbon to open the Copilot pane in the report view.
-
-1. Select **Suggest content for this report**.
-
-    Copilot evaluates the data and suggests possible pages for your report.
-
-1. Select **Create** next to the first page you want Copilot to create.
-
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-suggests-four-pages.png" alt-text="Screenshot showing selecting the Create page button.":::
-
-    Copilot creates that page.
-
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png" alt-text="Screenshot of Copilot creating the Visitor Analysis page." lightbox="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png":::
-
-    Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
-
-1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
+If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
 ## Create a summary
 
 You can also use Copilot for Power BI to create a narrative summary with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals. See [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md) to learn how.
 
-## Undo a page  
+## Undo a page
 
 After Copilot has generated the report, you can review the page. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
 

@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/04/2024
+ms.date: 04/08/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -36,7 +36,7 @@ Copilot can also create a narrative visual that summarizes a page or a whole rep
 
 And Copilot can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports.
 
-Here are four examples of what Copilot can generate.
+Here are five examples of what Copilot can generate.
 
 - A [report outline of suggested pages](#a-report-outline-of-suggested-pages)
 - A [narrative visual](#a-narrative-visual)
@@ -48,7 +48,7 @@ Here are four examples of what Copilot can generate.
 
 Copilot can provide a summary of your dataset and an outline of suggested pages for your report. Copilot creates a starting point. It might not be perfect, and it might not be exactly what you had in mind. But once you have the starting point, you can modify it from there to be exactly what you want.
 
-- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report will be about, and how many pages it will create.  
+- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.  
 - The visuals for the individual pages.
 
 ### A narrative visual
@@ -77,7 +77,7 @@ Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a
 
 ### Descriptions for semantic model measures
 
-Copilot can add descriptions to your semantic model measures. People building reports from your semantic model can see the name and description of your measures, making the description property essential documentation.
+Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation.
 
 [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
@@ -87,11 +87,16 @@ Copilot can write a DAX query. For example, you can type in a prompt to describe
 
 ## Copilot requirements
 
+- Your tenant admin has to enable the Copilot setting at the tenant level. See the article [Copilot tenant settings (preview)](/fabric/admin/service-admin-portal-copilot)
+
+- Your F64 or P1 capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability).
+- If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the [Data sent to Azure OpenAI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance](/fabric/admin/service-admin-portal-copilot) tenant setting in the Fabric Admin portal.
+- Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
+
 ### Power BI service
 
 To use the narrative visual in Copilot reports and create Copilot reports:
 
-- Your tenant admin has to enable the Copilot setting at the tenant level. See the article [Copilot tenant settings (preview)](/fabric/admin/service-admin-portal-copilot)
 - The workspace has to be running on F64 or Premium capacity, for you to access Copilot for the Power BI service.
 - You need either read or write access to the workspace that's on F64 or Premium capacity.
 - If you have limited GPU capacity, Copilot may be throttled.
@@ -119,7 +124,8 @@ We always welcome your feedback about our products. Especially during public pre
 ## Next steps
 
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
-- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
+- [Create a report with Copilot in the Power BI service](copilot-create-report-service.md)
+- [Create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md)
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Write Copilot prompts for creating narrative visuals in Power BI](copilot-prompts-narratives.md)

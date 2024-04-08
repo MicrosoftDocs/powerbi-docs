@@ -111,7 +111,7 @@
         - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
         - name: Create reports with Copilot in Power BI
-          href: copilot-create-report-service.md
+          href: copilot-create-report.md
         - name: Create reports in the Power BI service with Copilot
           href: copilot-create-report-service.md
         - name: Create reports in Power BI Desktop with Copilot

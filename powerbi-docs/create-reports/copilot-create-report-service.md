@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 04/05/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+#customer intent: As a report creator, I want to learn how to use Copilot in the Power BI service to create a Power BI report quickly.
 ---
 
 # Create reports in the Power BI service with Copilot
@@ -24,7 +25,7 @@ When you use Copilot for Power BI, you can quickly create report pages with just
 
 ## Before you start
 
-You may need to do some clean-up work on your dataset. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot will get insights from it.
+See the article [Get started creating reports with Copilot](copilot-create-report.md) for more guidance before you start.
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 

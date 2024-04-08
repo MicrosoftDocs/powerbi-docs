@@ -7,9 +7,10 @@ ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 04/08/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+#customer intent: As a report creator, I want to learn how to use Copilot in Power BI Desktop to create a Power BI report quickly.
 ---
 
 # Create reports in Power BI Desktop with Copilot
@@ -24,34 +25,49 @@ Read about all the ways Copilot can help you [create reports in Power BI Desktop
 
 ## Before you start
 
-To get started using Copilot, you need write access to at least one workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher). Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#power-bi-service).
+See the article [Get started creating reports with Copilot](copilot-create-report.md) for more guidance before you start.
 
-You may need to do some clean-up work on your dataset. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot can get insights from it.
+1. You need to be signed in to the Power BI service to start using Copilot in Power BI Desktop in report view. 
+1. You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher). 
 
-## Get started using Copilot the first time
+    Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#power-bi-service).
 
-You need to be signed in to start using Copilot in Desktop in report view.
+[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
+
+## Start Copilot the first time
 
 1. Open Power BI Desktop.
 
 1. In the ribbon, select **Get Data**, then select the type of data source, select a data source, and select **Connect**.
 
-1. Now that you have data, in the ribbon, select the **Copilot** icon in the ribbon to open the Copilot pane in the report view. 
+1. Now that you have data, select the **Copilot** icon in the ribbon to open the Copilot pane in the report view. 
 
     > [!TIP]
     > If you don't see **Copilot**, your admins may need to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview).
 
-1. The first time you select the **Copilot** ribbon button, Power BI prompts you to pick a Copilot-compatible workspace. Select any workspace assigned to required capacity. 
+1. The first time you select the **Copilot** ribbon button, Power BI prompts you to pick a Copilot-compatible workspace. Select any workspace assigned to the required capacity. 
 
     > [!NOTE]
     > - The workspace you select here doesn’t need to be the workspace where you publish your report.
-    > - If you cancel or close the workspace picker dialog without any selection, you will see an error message saying that something went wrong.
+    > - If you cancel or close the workspace picker dialog without any selection, you see an error message saying that something went wrong.
 
 1. In the Copilot pane, you see a welcome card. Select **Get started** to start your interaction with Copilot.
 
-    After you've successfully completed those steps the first time, you won't have to repeat them again. 
+    After you've successfully completed those steps the first time, you won't have to repeat them again.
 
-## Get started using Copilot
+### Change the selected workspace
+
+You can change the selected workspace to another Copilot-compatible workspace any time. To change the selected workspace:
+
+- Select **File** > **Options and settings** > **Options** > **Copilot (preview)** setting under **Global**.
+
+  You see the name of the selected workspace and an option to select a new workspace.
+
+## Start using Copilot
+
+1. Open Power BI Desktop.
+
+1. In the ribbon, select **Get Data**, then select the data source, and select **Connect**.
 
 1. In the ribbon, select the **Copilot** icon in the ribbon to open the Copilot pane in the report view.
 
@@ -71,7 +87,7 @@ You need to be signed in to start using Copilot in Desktop in report view.
 
 1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
-## Create a summary
+## Create a narrative summary
 
 You can also use Copilot for Power BI to create a narrative summary with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals. See [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md) to learn how.
 
