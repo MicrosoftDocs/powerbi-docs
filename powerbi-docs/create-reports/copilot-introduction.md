@@ -39,12 +39,12 @@ And Copilot can generate synonyms for Q&A, to help your report readers find what
 Here are five examples of what Copilot can generate.
 
 - A [summary response about your report content](#a-summary-response-about-your-report-content).
-- [Suggested content for a report](#a-report-outline-of-suggested-pages).
+- [Suggested content for a report](#suggest-content-for-a-report).
 - A [narrative visual](#a-narrative-visual).
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
 
-Before you get started, your administrator needs to [enable Copilot in Microsoft Fabric and Power BI](/fabric/get-started/copilot-fabric-overview.md#enable-copilot).
+Before you get started, your administrator needs to [enable Copilot in Microsoft Fabric and Power BI](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
 ### A summary response about your report content
 
