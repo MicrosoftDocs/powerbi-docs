@@ -27,6 +27,9 @@ When you use Copilot for Power BI, you can quickly create report pages with just
 
 See the article [Get started creating reports with Copilot](copilot-create-report.md) for more guidance before you start.
 
+- You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher).
+
+    Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#power-bi-service).
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Get started
@@ -38,7 +41,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 1. In the ribbon, select the **Copilot** icon.
 
     > [!TIP]
-    > If you don't see **Copilot**, your admins may not have enabled it, or you may not have selected a semantic model. Select a semantic model to see it.
+    > If you don't see **Copilot**, your [admins may not have enabled it in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview), or you may not have selected a semantic model. Select a semantic model to see it.
 
 1. In the Copilot pane, select **Suggest content for this report**. Copilot evaluates the data and makes suggestions.
 
@@ -60,7 +63,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
 1. If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
-## Create a summary
+## Create a narrative summary
 
 You can also use Copilot for Power BI to create a narrative summary with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals. See [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md) to learn how.
 

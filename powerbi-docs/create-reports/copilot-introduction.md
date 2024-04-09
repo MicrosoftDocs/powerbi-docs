@@ -38,26 +38,13 @@ And Copilot can generate synonyms for Q&A, to help your report readers find what
 
 Here are five examples of what Copilot can generate.
 
-- A [report outline of suggested pages](#a-report-outline-of-suggested-pages)
-- A [narrative visual](#a-narrative-visual)
-- A [summary response about your report content](#a-summary-response-about-your-report-content)
-- [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
-- Write [DAX queries](#write-dax-queries)
+- A [summary response about your report content](#a-summary-response-about-your-report-content).
+- [Suggested content for a report](#a-report-outline-of-suggested-pages).
+- A [narrative visual](#a-narrative-visual).
+- [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures).
+- Write [DAX queries](#write-dax-queries).
 
-### A report outline of suggested pages
-
-Copilot can provide a summary of your dataset and an outline of suggested pages for your report. Copilot creates a starting point. It might not be perfect, and it might not be exactly what you had in mind. But once you have the starting point, you can modify it from there to be exactly what you want.
-
-- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.  
-- The visuals for the individual pages.
-
-### A narrative visual
-
-With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 
-
-Learn more about [narrative visuals](copilot-create-narrative.md).
-
-:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
+Before you get started, your administrator needs to [enable Copilot in Microsoft Fabric and Power BI](/fabric/get-started/copilot-fabric-overview.md#enable-copilot).
 
 ### A summary response about your report content
 
@@ -68,6 +55,33 @@ You can also pose specific questions about the visualized data on a report page 
 :::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
 
 Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
+
+### Suggest content for a report
+
+Copilot can help you get started on a new report by suggesting topics based on your data. By selecting this option directly in the chat, Copilot will evaluate the data and provide a report outline with suggested pages that you can explore and choose to create for you.
+
+- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.  
+- The visuals for the individual pages.
+
+Select **Create** next to the first page, and Copilot creates that page for you.
+
+### Create a report page
+
+Copilot for Power BI can help you create a report page by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. It can help you get started on your report page quickly and save you a lot of time and effort in the process. Here are some examples of high-level prompts to get you started: 
+
+- Create a page to evaluate the performance of different shifts based on good count, reject count, and alarm count over time.
+- Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
+- Create a page to compare the cost and material of each product and their impact on production.
+
+See [Create report pages with Copilot](copilot-create-report.md) for details. 
+
+### A narrative visual
+
+With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 
+
+Learn more about [narrative visuals](copilot-create-narrative.md).
+
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
 
 ### Synonyms to enhance Q&A
 
