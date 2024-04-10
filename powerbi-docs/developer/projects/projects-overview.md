@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 03/12/2024
+ms.date: 04/10/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -35,7 +35,7 @@ See Power BI Desktop projects and other developer mode features being introduced
 
 ## Enable preview features
 
-Saving as a project in Power BI Desktop is currently in **preview**. Before giving it a try, you must first enable it in **Preview features**.
+Saving as a project in Power BI Desktop is currently in **preview**. To use this feature, you need a **Premuim license** and you must enable it in **Preview features**.
 
 To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
 
@@ -169,6 +169,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Considerations and limitations
 
+- This feature requires a Premium license.
 - Power BI Desktop isn't aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
 - Sensitivity labels aren't supported with Power BI projects.
 - Diagram view is ignored when editing models in the Service.
