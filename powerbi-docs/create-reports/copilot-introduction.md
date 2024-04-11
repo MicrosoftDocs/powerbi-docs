@@ -7,14 +7,14 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/08/2024
+ms.date: 04/11/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
 
 # Overview of Copilot for Power BI (preview)
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 Copilot for Microsoft Fabric Public Preview is available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot capabilities for Power BI.
 
@@ -25,7 +25,6 @@ Before your business can start using Copilot capabilities in Power BI, your admi
 Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and create a narrative visual that generates a summary of your report using generative AI. The following sections cover the details of the features and how to use Copilot.
 
 :::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page." lightbox="media/copilot-introduction/copilot-internet-sales-analysis.png":::
-
 
 ## Before you start using Copilot
 
@@ -69,8 +68,6 @@ Here are five examples of what Copilot can generate.
 - [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
-
-Before you get started, your administrator needs to [enable Copilot in Microsoft Fabric and Power BI](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
 ### A summary response about your report content
 
@@ -124,6 +121,19 @@ Copilot can add descriptions to your semantic model measures. People who build r
 ### Write DAX queries
 
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
+
+## Start using Copilot to create reports
+
+The same report creation experience is available for preview in the Power BI service and in Power BI Desktop.
+
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
+- [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
+
+If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
+
+## Undo a page
+
+After Copilot has generated the report, you can review the page. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
 
 ## Copilot requirements
 

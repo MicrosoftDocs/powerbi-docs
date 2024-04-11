@@ -106,6 +106,7 @@ See the [current limitations](copilot-create-report-service.md#considerations-an
 ## Next steps
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Privacy, security, and responsible use for Copilot for Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)

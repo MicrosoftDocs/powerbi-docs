@@ -86,5 +86,6 @@ See the [current limitations](copilot-create-report-service.md#considerations-an
 ## Next steps
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
+- [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
