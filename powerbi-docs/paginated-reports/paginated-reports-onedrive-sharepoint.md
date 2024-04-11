@@ -97,7 +97,6 @@ Learn more about [subscribing to OneDrive SharePoint](/sharepoint/onedrive-overv
 
 - [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md) can't choose OneDrive SharePoint. 
 - Premium per user accounts can't choose OneDrive SharePoint.
-- For Paginated/RDL reports in the .pdf format, the subscription may fail for sizes over 24Mb. 
 
 ## Related content
 

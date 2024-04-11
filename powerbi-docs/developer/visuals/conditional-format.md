@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 10/12/2022
+ms.date: 1/12/2024
 ---
 
 # Add conditional formatting
