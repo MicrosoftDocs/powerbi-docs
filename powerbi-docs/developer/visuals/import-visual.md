@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/2/2022
+ms.date: 12/2/2023
 ---
 
 # Import a Power BI visual from AppSource into your workspace

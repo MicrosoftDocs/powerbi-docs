@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/17/2022
+ms.date: 09/17/2023
 ---
 
 # Power BI AppSource visual license models

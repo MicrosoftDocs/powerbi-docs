@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/06/2023
+ms.date: 01/06/2024
 ---
 
 # Add a context menu to your Power BI Visual
