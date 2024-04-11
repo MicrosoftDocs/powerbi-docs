@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 11/14/2023
+ms.date: 1104/10/2024
 no-loc: [Copilot]
 ---
 # Enhance Q&A with Copilot for Power BI

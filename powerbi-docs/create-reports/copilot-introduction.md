@@ -20,7 +20,7 @@ Copilot for Microsoft Fabric Public Preview is available in Power BI. Copilot he
 
 Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
 
-## Get started with report creation
+## Get ready for report creation
 
 Power BI has introduced generative AI that allows you to create reports automatically by selecting the topic for a report or by prompting Copilot on a particular topic, and create a narrative visual that generates a summary of your report using generative AI. The following sections cover the details of the features and how to use Copilot.
 
@@ -40,7 +40,9 @@ Here are five examples of what Copilot can generate.
 
 - A [summary response about your report content](#a-summary-response-about-your-report-content).
 - [Suggested content for a report](#suggest-content-for-a-report).
+- A [report page](#create-a-report-page)
 - A [narrative visual](#a-narrative-visual).
+- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
 
