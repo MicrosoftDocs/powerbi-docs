@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/03/2023
+ms.date: 01/03/2024
 ---
 
 # Add bookmark support to visuals in Power BI reports
