@@ -55,7 +55,7 @@ Read about all the ways Copilot can help you [create reports in Power BI Desktop
 
 ### Change the selected workspace
 
-You can change the selected workspace to another Copilot-compatible workspace any time. To change the selected workspace:
+You can change the selected workspace to another Copilot-compatible workspace anytime. To change the selected workspace:
 
 - Select **File** > **Options and settings** > **Options** > **Copilot (preview)** setting under **Global**.
 
