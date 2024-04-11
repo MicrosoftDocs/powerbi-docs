@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 07/20/2023
+ms.date: 01/20/2024
 ---
 
 # Support keyboard navigation in a custom visual
