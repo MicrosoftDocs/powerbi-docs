@@ -102,12 +102,8 @@
           href: jupyter-quick-report.md
     - name: Copilot for Power BI
       items: 
-        - name: Copilot in Fabric overview
-          href: /fabric/get-started/copilot-fabric-overview
         - name: Intro to Copilot for Power BI
           href: copilot-introduction.md
-        - name: Privacy, security, and responsible use for Copilot
-          href: /fabric/get-started/copilot-power-bi-privacy-security
         - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
         - name: Create reports with Copilot in Power BI
@@ -128,8 +124,14 @@
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
-        - name: Copilot in Fabric and Power BI FAQ
-          href: /fabric/get-started/copilot-faq-fabric
+        - name: Copilot for Fabric and Power BI
+          items: 
+          - name: Copilot in Fabric overview
+            href: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          - name: Privacy, security, and responsible use for Copilot in Fabric
+            href: /fabric/get-started/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          - name: Copilot in Fabric and Power BI FAQ
+            href: /fabric/get-started/copilot-faq-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
