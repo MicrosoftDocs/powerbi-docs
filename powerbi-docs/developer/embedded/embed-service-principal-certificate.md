@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 01/22/2023
+ms.date: 04/10/2024
 ---
 
 # Embed Power BI content with service principal and a certificate
@@ -64,7 +64,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 6. Configure the **Create a certificate** fields as follows:
 
-    * **Method of Certificate Creation** - Generate
+    * **Method of Certificate Creation** - General
 
     * **Certificate Name** - Enter a name for your certificate
 
