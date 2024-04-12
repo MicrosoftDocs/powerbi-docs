@@ -49,7 +49,7 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 3. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
 
 ## Change the environment in which your flow is created
-To select your preferred environment for creating your flow, use the environment picker in the Power Automate visual. This includes environments where you have any built-in security role, as well as any environments where you are a co-owner of one or more flows. If you cannot find your preferred environment, learn more about the [requirements for accessing environments in product experiences](/power-platform/admin/troubleshoot-missing-environments).
+To select your preferred environment for creating your flow, use the environment picker in the Power Automate custom visual. This includes environments where you have any built-in security role, as well as any environments where you are a co-owner of one or more flows. If you cannot find your preferred environment, learn more about the [requirements for accessing environments in product experiences](/power-platform/admin/troubleshoot-missing-environments).
 
 :::image type="content" source="media/power-bi-automate-visual/power-automate-step-1-select-environment.png" alt-text="Screenshot showing Change the environment in which your flow is created.":::
 
