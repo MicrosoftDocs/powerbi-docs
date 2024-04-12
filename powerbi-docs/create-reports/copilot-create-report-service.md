@@ -25,11 +25,12 @@ When you use Copilot for Power BI, you can quickly create report pages with just
 
 ## Before you start
 
-See the article [Get started creating reports with Copilot](copilot-create-report.md) for more guidance before you start.
+Read about all the ways Copilot can help you in the [overview of Copilot for Power BI](copilot-introduction.md) for more guidance before you start.
 
 - You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher).
 
     Learn more about [Copilot for Power BI capacity requirements](copilot-introduction.md#power-bi-service).
+
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
 ## Get started

@@ -96,8 +96,6 @@ Copilot for Power BI can help you create a report page by identifying the tables
 - Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
 - Create a page to compare the cost and material of each product and their impact on production.
 
-See [Create report pages with Copilot](copilot-create-report.md) for details. 
-
 ### A narrative visual
 
 With Copilot, you can create a visual that generates a text summary of the data visualized in your report canvas.  The visual offers suggested prompts, and a space that allows you to direct the summary for your specific needs, offering an easy to read, useful guide for the end user. The summary updates in keeping with slicers and filters, and as the data refreshes. 

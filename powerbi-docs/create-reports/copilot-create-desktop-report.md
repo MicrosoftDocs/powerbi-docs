@@ -23,7 +23,7 @@ When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use th
 
 ## Before you start
 
-Read about all the ways Copilot can help you [create reports in Power BI Desktop and in the Power BI service](copilot-create-report.md).
+Read about all the ways Copilot can help you in the [overview of Copilot for Power BI](copilot-introduction.md) for more guidance before you start.
 
 - You need to be signed in to the Power BI service to start using Copilot in Power BI Desktop in report view. 
 - You need to select a compatible workspace that you have write access to. It needs to be a workspace that's assigned to a Copilot-enabled capacity, in other words, a paid Fabric capacity (F64 or higher) or a Power BI Premium capacity (P1 or higher). 
