@@ -17,8 +17,6 @@ no-loc: [Copilot]
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview).
-
 When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
 
 :::image type="content" source="media/copilot-create-report/copilot-create-internet-sales-trends.png" alt-text="Screenshot showing Copilot creating internet sales trend report page." lightbox="media/copilot-create-report/copilot-create-internet-sales-trends.png":::
@@ -70,7 +68,7 @@ You can also use Copilot for Power BI to create a narrative summary with just a 
 
 ## Undo a page  
 
-After Copilot has generated the report, then you can review the page. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
+After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
 
 ## Save the report
 
@@ -89,4 +87,5 @@ See the [current limitations](copilot-create-report-service.md#considerations-an
 - [Overview of Copilot for Power BI](copilot-introduction.md)
 - [Create reports in Power BI Desktop with Copilot](copilot-create-desktop-report.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
+- [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)

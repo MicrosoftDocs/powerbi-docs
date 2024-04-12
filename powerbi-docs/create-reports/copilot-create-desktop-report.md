@@ -91,7 +91,7 @@ You can also use Copilot for Power BI to create a narrative summary with just a 
 
 ## Undo a page
 
-After Copilot has generated the report, you can review the page. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
+After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
 
 ## Save the report
 
@@ -108,5 +108,5 @@ See the [current limitations](copilot-create-report-service.md#considerations-an
 - [Overview of Copilot for Power BI](copilot-introduction.md)
 - [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
-- [Privacy, security, and responsible use for Copilot for Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
+- [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
