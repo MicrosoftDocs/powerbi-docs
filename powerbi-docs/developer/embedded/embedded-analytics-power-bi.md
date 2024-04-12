@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
-ms.date: 07/14/2022
+ms.date: 03/14/2024
 ms.custom: intro-overview
 ---
 

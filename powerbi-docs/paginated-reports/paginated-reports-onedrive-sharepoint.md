@@ -7,11 +7,11 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 04/10/2024
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
-# Send large report subscriptions to OneDrive SharePoint
+# Send large report subscriptions to OneDrive SharePoint (Preview)
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
@@ -97,7 +97,6 @@ Learn more about [subscribing to OneDrive SharePoint](/sharepoint/onedrive-overv
 
 - [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md) can't choose OneDrive SharePoint. 
 - Premium per user accounts can't choose OneDrive SharePoint.
-- For Paginated/RDL reports in the .pdf format, the subscription may fail for sizes over 24Mb. 
 
 ## Related content
 

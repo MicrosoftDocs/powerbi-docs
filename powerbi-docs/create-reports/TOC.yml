@@ -989,53 +989,53 @@
       - name: Expression reference
         items:
         - name: Aggregate functions reference in paginated reports
-          href: ../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md
+          href: /sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference?context=/power-bi/create-reports/context/context
         - name: Aggregate function
           href: /sql/reporting-services/report-design/report-builder-functions-aggregate-function?context=/power-bi/create-reports/context/context
         - name: Avg function
-          href: ../paginated-reports/expressions/report-builder-functions-avg-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-avg-function?context=/power-bi/create-reports/context/context
         - name: Count function
-          href: ../paginated-reports/expressions/report-builder-functions-count-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-count-function?context=/power-bi/create-reports/context/context
         - name: CountDistinct function
-          href: ../paginated-reports/expressions/report-builder-functions-countdistinct-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-countdistinct-function?context=/power-bi/create-reports/context/context
         - name: CountRows function
-          href: ../paginated-reports/expressions/report-builder-functions-countrows-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-countrows-function?context=/power-bi/create-reports/context/context
         - name: First function
-          href: ../paginated-reports/expressions/report-builder-functions-first-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-first-function?context=/power-bi/create-reports/context/context
         - name: InScope function
-          href: ../paginated-reports/expressions/report-builder-functions-inscope-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-inscope-function?context=/power-bi/create-reports/context/context
         - name: Level function
-          href: ../paginated-reports/expressions/report-builder-functions-level-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-level-function?context=/power-bi/create-reports/context/context
         - name: Lookup function
-          href: ../paginated-reports/expressions/report-builder-functions-lookup-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-lookup-function?context=/power-bi/create-reports/context/context
         - name: LookupSet function
-          href: ../paginated-reports/expressions/report-builder-functions-lookupset-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-lookupset-function?context=/power-bi/create-reports/context/context
         - name: Last function
-          href: ../paginated-reports/expressions/report-builder-functions-last-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-last-function?context=/power-bi/create-reports/context/context
         - name: Max function
-          href: ../paginated-reports/expressions/report-builder-functions-max-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-max-function?context=/power-bi/create-reports/context/context
         - name: Min function
-          href: ../paginated-reports/expressions/report-builder-functions-min-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-min-function?context=/power-bi/create-reports/context/context
         - name: Multilookup function
-          href: ../paginated-reports/expressions/report-builder-functions-multilookup-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-multilookup-function?context=/power-bi/create-reports/context/context
         - name: Previous function
-          href: ../paginated-reports/expressions/report-builder-functions-previous-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-previous-function?context=/power-bi/create-reports/context/context
         - name: RowNumber function
-          href: ../paginated-reports/expressions/report-builder-functions-rownumber-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-rownumber-function?context=/power-bi/create-reports/context/context
         - name: RunningValue function
-          href: ../paginated-reports/expressions/report-builder-functions-runningvalue-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-runningvalue-function?context=/power-bi/create-reports/context/context
         - name: StDev function
-          href: ../paginated-reports/expressions/report-builder-functions-stdev-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-stdev-function?context=/power-bi/create-reports/context/context
         - name: StDevP function
-          href: ../paginated-reports/expressions/report-builder-functions-stdevp-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-stdevp-function?context=/power-bi/create-reports/context/context
         - name: Sum function
-          href: ../paginated-reports/expressions/report-builder-functions-sum-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-sum-function?context=/power-bi/create-reports/context/context
         - name: Union function
-          href: ../paginated-reports/expressions/report-builder-functions-union-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-union-function?context=/power-bi/create-reports/context/context
         - name: Var function
-          href: ../paginated-reports/expressions/report-builder-functions-var-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-var-function?context=/power-bi/create-reports/context/context
         - name: VarP function
-          href: ../paginated-reports/expressions/report-builder-functions-varp-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-varp-function?context=/power-bi/create-reports/context/context
     - name: Parameters
       items:
       - name: Parameters
