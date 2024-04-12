@@ -81,7 +81,7 @@ Learn more about [Copilot creating a summary response to prompts about your repo
 
 ### Suggest content for a report
 
-Copilot can help you get started on a new report by suggesting topics based on your data. By selecting this option directly in the chat, Copilot will evaluate the data and provide a report outline with suggested pages that you can explore and choose to create for you.
+Copilot can help you get started on a new report by suggesting topics based on your data. When you select this option directly in the chat, Copilot evaluates the data and provide a report outline with suggested pages that you can explore and choose to create for you.
 
 - A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.  
 - The visuals for the individual pages.

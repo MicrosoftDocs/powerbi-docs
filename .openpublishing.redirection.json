@@ -1141,7 +1141,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/copilot-create-report.md",
+            "source_path": "powerbi-docs/create-reports/copilot-create-report.md",
             "redirect_url": "/power-bi/create-reports/copilot-introduction",
             "redirect_document_id": false
         },
