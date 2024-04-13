@@ -153,6 +153,7 @@ The following semantic models aren't accessible by using the XMLA endpoint. Thes
 - Semantic models based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
 - Semantic models based on a live connection to a Power BI semantic model in another workspace. To learn more, see [Intro to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Semantic models with Push data by using the REST API.
+- Semantic models in My Workspace.
 - Excel workbook semantic models.
 
 ### Server/workspace alias
