@@ -50,7 +50,7 @@ As described above, this ad-hoc sharing is performed by business users on an as 
 
 The process is considered ad-hoc since business users in Contoso perform the invite action as needed for their business purposes. Each item shared is a single link the external user can access to view the content.
 
-Once the external user has been invited to access Contoso resources, a shadow account may be created for them in Contoso Microsoft Entra ID, and they don't need to be invited again. The first time they try to access a Contoso resource like a Power BI dashboard, they go through a consent process, which redeems the invitation.  If they don't complete the consent, they can't access any of Contoso's content.  If they have trouble redeeming their invitation via the original link provided, a Microsoft Entra administrator can resent a specific invitation link for them to redeem.
+Once the external user has been invited to access Contoso resources, a shadow account may be created for them in Contoso Microsoft Entra ID, and they don't need to be invited again. The first time they try to access a Contoso resource like a Power BI dashboard, they go through a consent process, which redeems the invitation.  If they don't complete the consent, they can't access any of Contoso's content.  If they have trouble redeeming their invitation via the original link provided, a Microsoft Entra administrator can resend a specific invitation link for them to redeem.
 
 ### Planned per item sharing
 
@@ -76,7 +76,7 @@ Using a Power BI app makes it easy for Contoso to build a BI Portal for its supp
 
 1. The process starts by the user being invited to Contoso's Microsoft Entra organization through the Azure portal or PowerShell.
 2. The user can be added to a user group in Microsoft Entra ID. A static or dynamic user group can be used, but dynamic groups help reduce manual work.
-3. The external users are given access to the Power BI App through the user group. The app URL should be sent directly to the external user or placed on a site they have access to. Power BI makes a best effort to send an email with the app link to external users but when using user groups whose membership can change, Power BI isn't able to send to all external users managed through user groups.
+3. The external users are given access to the Power BI App through the user group. The app URL should be sent directly to the external user or placed on a site they have access to. Power BI makes the best effort to send an email with the app link to external users but when using user groups whose membership can change, Power BI isn't able to send to all external users managed through user groups.
 4. When the external user accesses the Power BI app URL, they're authenticated by Contoso's Microsoft Entra ID, the app is installed for the user, and the user can see all the contained reports and dashboards within the app.
 
 Apps also have a unique feature that allows app authors to install the application automatically for the user, so it's available when the user logs in. This feature only installs automatically for external users who are already part of Contoso's organization at the time the application is published or updated. Thus, it's best used with the planned invites approach, and depends on the app being published or updated after the users are added to Contoso's Microsoft Entra ID. External users can always install the app using the app link.
@@ -87,7 +87,7 @@ As Contoso continues to work with its subcontractors or suppliers, the external 
 
 Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users can't be @mentioned and don't receive notifications that they've received a comment. Guest users can use the subscriptions feature within Power BI to subscribe themselves to a report or dashboard. Learn more in [Email subscriptions for reports and dashboards in the Power BI service](../collaborate-share/end-user-subscribe.md).  
 
-### Access content in the Power BI mobile apps
+### Access content in Power BI mobile apps
 
 When the guest user opens the link to the report or dashboard on their mobile device, the content will open in the native Power BI mobile apps on their device, if they're installed. The guest user will then be able to navigate between content shared with them in the external tenant, and back to their own content from their home tenant. For more information about accessing content that has been shared with you from an external organization via Power BI mobile apps, see [View Power BI content shared with you from an external organization](../consumer/mobile/mobile-apps-b2b.md).
 
@@ -132,7 +132,7 @@ Three approaches are commonly used to distribute links to the content. The first
 
 The second approach is where the parent organization allows users from the subsidiaries to access its Power BI and controls that they can access through permission. This gives access to Power BI Home where the user from the subsidiary sees a comprehensive list of content shared to them in the Parent organization's tenant. Then the URL to the Parent organizations' Power BI environment is given to the users at the subsidiaries.
 
-The final approach uses a Power BI app created within the Power BI tenant for each subsidiary. The Power BI app includes a dashboard with [tiles configured with the external link option](../create-reports/service-dashboard-edit-tile.md#hyperlink). When the user presses the tile, they're taken to the appropriate report, dashboard, or app in the parent organization's Power BI. This approach has the added advantage that the app can be installed automatically for all users in the subsidiary and is available to them whenever they sign in to their own Power BI environment. An added advantage of this approach is that it works well with the Power BI mobile apps that can open the link natively. You can also combine this with the second approach to enable easier switching between Power BI environments.
+The final approach uses a Power BI app created within the Power BI tenant for each subsidiary. The Power BI app includes a dashboard with [tiles configured with the external link option](../create-reports/service-dashboard-edit-tile.md#hyperlink). When the user presses the tile, they're taken to the appropriate report, dashboard, or app in the parent organization's Power BI. This approach has the added advantage that the app can be installed automatically for all users in the subsidiary and is available to them whenever they sign in to their own Power BI environment. An added advantage of this approach is that it works well with Power BI mobile apps that can open the link natively. You can also combine this with the second approach to enable easier switching between Power BI environments.
 
 #### Allowing subsidiary users to access data sources hosted by the parent organization
 
@@ -148,7 +148,7 @@ More sophisticated approaches are also possible, however the above are by far th
 
 ### Case 3: Shared environment across partners
 
-Contoso may enter into a partnership with a competitor to jointly build a car on a shared assembly line, but to distribute the vehicle under different brands or in different regions. This requires extensive collaboration and coownership of data, intelligence, and analytics across organizations. This structure is also common in the consulting services industry where a team of consultants may do project-based analytics for a client.
+Contoso may enter into a partnership with a competitor to jointly build a car on a shared assembly line, but to distribute the vehicle under different brands or in different regions. This requires extensive collaboration and co-ownership of data, intelligence, and analytics across organizations. This structure is also common in the consulting services industry where a team of consultants may do project-based analytics for a client.
 
 ![Shared environment across partners](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_08.png)
 
@@ -267,9 +267,9 @@ Power BI's integration with Microsoft Entra B2B gives Contoso a seamless, hassle
 
     Using a Power BI app and Microsoft Entra B2B, Contoso was able to quickly create a BI Portal for its suppliers in a no-code way. This greatly simplified distributing standardized analytics to all the suppliers who needed it.
 
-    While the example showed how a single common report could be distributed among suppliers, Power BI can go much further. To ensure each partner sees only data relevant to themselves, Row Level Security can be added easily to the report and data model. The Data security for external partners section later in this document describes this process in details.
+    While the example showed how a single common report could be distributed among suppliers, Power BI can go much further. To ensure each partner sees only data relevant to themselves, Row Level Security can be added easily to the report and data model. The Data security for external partners section later in this document describes this process in detail.
 
-    Often individual reports and dashboards need to be embedded into an existing portal. This can also be accomplished reusing many of the techniques shown in the example. However, in those situations it may be easier to embed reports or dashboards directly from a workspace. The process for inviting and assigning security permission to the require users remain the same.
+    Often individual reports and dashboards need to be embedded into an existing portal. This can also be accomplished by reusing many of the techniques shown in the example. However, in those situations it may be easier to embed reports or dashboards directly from a workspace. The process for inviting and assigning security permission to the required users remain the same.
 
 ## Under the hood: How is Lucy from Supplier1 able to access Power BI content from Contoso's tenant?
 
@@ -330,14 +330,14 @@ Commonly when working with multiple external suppliers, Contoso needs to ensure 
 
 One of the most powerful features of Power BI is Row Level Security. This feature allows Contoso to create a single report and semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) but still apply different security rules for each user. For an in-depth explanation, see [Row-level security (RLS)](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/).
 
-Power BI's integration with Microsoft Entra B2B allows Contoso to assign Row Level Security rules to guest users as soon as they're invited to the Contoso tenant. As we have seen before, Contoso can add guest users through either planned or ad-hoc invites. If Contoso wants to enforce row level security, it's strongly recommended to use planned invites to add the guest users ahead of time and assigning them to the security roles before sharing the content. If Contoso instead uses ad-hoc invites, there might be a short period of time where the guest users won't be able to see any data.
+Power BI's integration with Microsoft Entra B2B allows Contoso to assign Row Level Security rules to guest users as soon as they're invited to the Contoso tenant. As we have seen before, Contoso can add guest users through either planned or ad-hoc invites. If Contoso wants to enforce row level security, it's strongly recommended to use planned invites to add the guest users ahead of time and assigning them to the security roles before sharing the content. If Contoso instead uses ad-hoc invites, there might be a short period of time when the guest users won't be able to see any data.
 
 > [!NOTE]
 > This delay in accessing data protected by RLS when using ad-hoc invites can lead to support requests to your IT team because users will see either blank or broken looking reports/dashboards when opening a sharing link in the email they receive. Therefore, it is strongly recommended to use planned invites in this scenario.
 
 Let's walk through this with an example.
 
-As mentioned before, Contoso has suppliers around the globe, and they want to make sure that the users from their supplier organizations get insights from data from just their territory.  But users from Contoso can access all the data. Instead of creating several different reports, Contoso creates a single report and filters the data based the user viewing it.
+As mentioned before, Contoso has suppliers around the globe, and they want to make sure that the users from their supplier organizations get insights from data from just their territory.  But users from Contoso can access all the data. Instead of creating several different reports, Contoso creates a single report and filters the data based on the user viewing it.
 
 ![Shared content](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_27.png)
 
@@ -485,7 +485,7 @@ Often, organizations have existing partner portals that centralize access to all
 
 In the example above, users from each supplier sign in to Contoso's Partner Portal that uses Microsoft Entra ID as an identity provider. It could use Microsoft Entra B2B, Azure Active Directory B2C, native identities, or federate with any number of other identity providers. The user would sign in and access a partner portal build using Azure Web App or a similar infrastructure.
 
-Within the web app, Power BI reports are embedded from a Power BI Embedded deployment. The web app would streamline access to the reports and any related services in a cohesive experience aimed to make it easy for suppliers to interact with Contoso. This portal environment would be isolated from the Contoso internal Microsoft Entra ID and Contoso's internal Power BI environment to ensure suppliers couldn't access those resources. Typically, data would be stored in a separate Partner data warehouse to ensure isolation of data as well. This isolation has benefits since it limits the number of external users with direct access to your organization's data, limiting what data could potentially be available to the external user, and limiting accidental sharing with external users.
+Within the web app, Power BI reports are embedded from a Power BI Embedded deployment. The web app would streamline access to the reports and any related services in a cohesive experience aimed at making it easy for suppliers to interact with Contoso. This portal environment would be isolated from the Contoso internal Microsoft Entra ID and Contoso's internal Power BI environment to ensure suppliers couldn't access those resources. Typically, data would be stored in a separate Partner data warehouse to ensure isolation of data as well. This isolation has benefits since it limits the number of external users with direct access to your organization's data, limiting what data could potentially be available to the external user, and limiting accidental sharing with external users.
 
 Using Power BI Embedded, the portal can use advantageous licensing, using an app token or the master user plus premium capacity purchased in Azure model, which simplifies concerns about assigning licenses to end users, and can scale up/down based on expected usage. The portal can offer an overall higher quality and consistent experience since partners access a single portal designed with all of a Partner's needs in mind. Lastly, since Power BI Embedded based solutions are typically designed to be multi-tenant, it makes it easier to ensure isolation between partner organizations.
 
