@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/02/2024
+ms.date: 04/16/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,18 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+
+## April 2024 QFE 1
+ 
+*Version: 2.128.952.0, Released: April 15, 2024*
+
+Bug fixes/improvements:
+
+* Fix for drag and drop picker tooltip, empty title fix
+* Fix duplicated truncation problem on Gauge Chart
+* Added error messaging when ignoring the workspace picker for Desktop Report Authoring Copilot 
 
 
 ## March 2024 QFE 2
