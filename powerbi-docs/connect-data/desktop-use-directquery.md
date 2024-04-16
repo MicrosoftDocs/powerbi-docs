@@ -104,8 +104,6 @@ Some other limitations of using DirectQuery include:
 
 - You can't change from import to DirectQuery mode. You can switch from DirectQuery mode to import mode if you import all the necessary data. It's not possible to switch back, mostly because of the feature set that DirectQuery doesn't support. DirectQuery models over multidimensional sources, like SAP BW, can't be switched from DirectQuery to import mode either, because of the different treatment of external measures.
 
-- Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication aren't supported in the Power BI service.
-
 <!-- Cannot repro. `is` and `is not` 12/31/9999 filters fine. Version: 2.111.581.0 64-bit (November 2022)
 
 - A known issue exists in DirectQuery when you filter a date column that contains December 31, 9999, which is often used as a special date placeholder. While it's common to filter the December 31, 9999 date from your analysis, using an `is` or `is not` filter doesn't correctly filter out that date. To avoid incorrect filtering when that date is present, use `is on or after` or `is on or before` to filter for that date. The following example provides more information to understand the filtering issue and the best way to avoid it.
