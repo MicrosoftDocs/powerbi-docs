@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/29/2023
+ms.date: 04/16/2024
 ms.custom: ''
 ---
 
@@ -15,7 +15,7 @@ ms.custom: ''
 
 [//]: # "suparnap, miwehnia, natham are contacts for maintaining this list."
 
-The Power BI service requires internet connectivity. The endpoints listed in the following tables should be reachable for customers who use the Power BI service.
+The Power BI service requires internet connectivity. The endpoints listed in the following tables should be reachable for customers who use the Power BI service. All endpoints in the Power BI service support HTTP/2.
 
 To use the Power BI service, you must be able to connect to the endpoints marked **required** in the tables in this article, and to any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
