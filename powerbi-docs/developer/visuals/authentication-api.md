@@ -106,6 +106,7 @@ The newly exposed **AcquireAADTokenService** contains two methods:
 
 The following sample code demonstrates how to acquire a Microsoft Entra ID token using the API:
 
+ ```typescript
     // Step 1: Check the status of AAD token acquisition 
     const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenStatus(); 
  
