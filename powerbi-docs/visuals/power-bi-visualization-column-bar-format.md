@@ -2,7 +2,7 @@
 title: Format column and bar charts
 description: Learn how to format column and bar charts with greater flexibility and freedom in presenting your data, to make your insights stand out.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals

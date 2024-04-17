@@ -2,7 +2,7 @@
 title: Create a "new" card visualization 
 description: The "new" card visual allows you to display individual and group callouts in a single container, with a wide range of formatting settings available to customize its appearance completely.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals

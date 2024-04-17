@@ -2,7 +2,7 @@
 title: Radial gauge charts in Power BI  
 description: Learn how to create radial gauge charts in Power BI Desktop and Power BI service.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi

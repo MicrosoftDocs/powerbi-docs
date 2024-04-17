@@ -2,7 +2,7 @@
 title: Create advanced analytics and visualizations using R scripts
 description: Use R scripts in Power BI Desktop to create advanced analytics and advanced visualizations.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals

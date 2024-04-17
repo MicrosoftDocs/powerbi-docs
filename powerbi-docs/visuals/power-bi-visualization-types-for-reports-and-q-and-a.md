@@ -2,7 +2,7 @@
 title: Visualization types in Power BI
 description: Visualization types in Power BI
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals

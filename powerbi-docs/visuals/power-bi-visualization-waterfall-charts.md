@@ -2,7 +2,7 @@
 title: Waterfall charts in Power BI
 description: Learn how to create and configure waterfall charts in the Power BI service and Power BI Desktop.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: removed
 ms.service: powerbi

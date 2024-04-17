@@ -2,7 +2,7 @@
 title: Apply data point limits and strategies by visual type
 description: Power BI strategies used to render visualizations include data reduction, dynamic limits, and data limits for visuals.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals

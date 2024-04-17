@@ -2,7 +2,7 @@
 title: Customize X-axis and Y-axis properties
 description: 'Customize X-axis and Y-axis properties'
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: 
    - video-9DeAKM4SNJM

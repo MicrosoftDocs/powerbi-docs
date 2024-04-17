@@ -2,7 +2,7 @@
 title: Card visualizations (large number tiles)
 description: Learn how to use the Retail Analysis Sample file to create a Card visualization in Power BI to view a single type of data, such as total sales.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals

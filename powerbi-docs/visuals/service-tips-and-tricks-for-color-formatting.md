@@ -2,7 +2,7 @@
 title: Tips and tricks for formatting in reports
 description: Learn tips and tricks for formatting in Power BI reports.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals

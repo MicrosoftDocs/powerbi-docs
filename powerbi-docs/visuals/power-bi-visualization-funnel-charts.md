@@ -2,7 +2,7 @@
 title: Create and use funnel charts in Power BI
 description: Learn how to work with Funnel charts in Power BI Desktop and the Power BI service.
 author: miguelmyersMS
-ms.author: miguel.myers
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: video-qKRZPBnaUXM, sample-opportunityanalysissample
 ms.service: powerbi
