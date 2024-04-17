@@ -1,8 +1,8 @@
 ---
 title: Create and use the paginated report visual
 description: In this article, you learn how to add the paginated report visual for Power BI reports. 
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals

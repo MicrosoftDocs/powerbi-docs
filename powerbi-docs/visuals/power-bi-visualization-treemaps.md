@@ -1,8 +1,8 @@
 ---
 title: Treemaps in Power BI
 description: Learn how to create and configure treemaps in the Power BI service and Power BI Desktop.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
