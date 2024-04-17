@@ -1,8 +1,8 @@
 ---
 title: Combo chart in Power BI
 description: This tutorial about combo charts explains when to use them and how to build them in the Power BI service and Desktop.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguel.myers
 ms.reviewer: 'mihart'
 ms.custom: video-lnv66cTZ5ho, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop.
-author: msftrien
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguel.myers
 ms.reviewer: 'sujata'
 ms.service: powerbi
 ms.subservice: pbi-visuals

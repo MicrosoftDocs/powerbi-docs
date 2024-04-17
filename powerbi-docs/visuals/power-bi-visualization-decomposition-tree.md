@@ -1,8 +1,8 @@
 ---
 title: Decomposition tree
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguel.myers
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-ai

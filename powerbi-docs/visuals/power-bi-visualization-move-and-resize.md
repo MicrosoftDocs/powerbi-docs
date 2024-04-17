@@ -1,8 +1,8 @@
 ---
 title: Move, resize, and pop out a visualization
 description: Learn how to move, resize, and see more detail in a visualization in Power BI service and Desktop.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguel.myers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
