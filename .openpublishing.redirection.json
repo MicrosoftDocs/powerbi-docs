@@ -6052,11 +6052,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/enterprise/onelake-integration-overview.md",
-            "redirect_url": "/fabric/onelake/onelake-integration-overview",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/enterprise/service-security-data-protection-metrics-report.md",
             "redirect_url": "/fabric/governance/use-microsoft-purview-hub",
             "redirect_document_id": false

@@ -26,6 +26,8 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
+    - name: OneLake integration for semantic models (Preview)
+      href: onelake-integration-overview.md
   - name: Licensing
     expanded: false
     items:
