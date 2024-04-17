@@ -11,8 +11,23 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-admin-org-subscription.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-licensing-organization/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
             "redirect_url": "/fabric/get-started/fabric-known-issues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/service-self-service-purchase-help.md",
+            "redirect_url": "/power-bi/fundamentals/service-self-service-sign-up-help",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-manage-licenses.md",
+            "redirect_url": "/fabric/admin/admin-overview",
             "redirect_document_id": false
         },
         {
@@ -1123,6 +1138,11 @@
         {
             "source_path": "powerbi-docs/power-bi-report-copy.md",
             "redirect_url": "/power-bi/create-reports/service-report-create-new",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/copilot-create-report.md",
+            "redirect_url": "/power-bi/create-reports/copilot-introduction",
             "redirect_document_id": false
         },
         {
@@ -5835,7 +5855,7 @@
             "source_path": "powerbi-docs/connect-data/service-data-details-page.md",
             "redirect_url": "/power-bi/connect-data/service-dataset-details-page",
             "redirect_document_id": false
-        },                                                                                                                                                                                                                                                                                                                                             
+        },
         {
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-aggregate-function.md",
             "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-aggregate-function",
@@ -5845,7 +5865,167 @@
             "source_path": "powerbi-docs/enterprise/service-security-private-links.md",
             "redirect_url": "/fabric/security/security-private-links-overview",
             "redirect_document_id": false
-        }                                                                                                                                                                                                                                                                                                                                             
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-lookup-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-lookup-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-sum-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-sum-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-countrows-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-countrows-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-count-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-count-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-first-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-first-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-previous-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-previous-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-countdistinct-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-countdistinct-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-multilookup-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-multilookup-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-last-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-last-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-lookupset-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-lookupset-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-rownumber-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-rownumber-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-runningvalue-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-runningvalue-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-max-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-max-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-avg-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-avg-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-inscope-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-inscope-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-var-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-var-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-min-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-min-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-union-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-union-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-level-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-level-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-stdev-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-stdev-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-stdevp-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-stdevp-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-varp-function.md",
+            "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-varp-function",
+            "redirect_document_id": false
+        },    
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-mandatory-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-mandatory-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-metadata-scanning.md",
+            "redirect_url": "/fabric/governance/metadata-scanning-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-default-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-default-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-downstream-inheritance.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-downstream-inheritance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-from-data-sources.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-set-remove-api.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-paginated-reports.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-troubleshooting.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-troubleshooting",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-using-defender-for-cloud-apps-controls.md",
+            "redirect_url": "/fabric/governance/service-security-using-defender-for-cloud-apps-controls",
+            "redirect_document_id": false
+        }
   ]          
 
 }

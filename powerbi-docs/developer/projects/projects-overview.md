@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 04/10/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -15,11 +15,11 @@ ms.date: 02/14/2024
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
-Power BI Desktop introduces a new way to author, collaborate, and save your projects. You can now save your work as a ***Power BI Project*** (PBIP). As a project, report and semantic model *item* definitions are saved as individual plain text files in a simple, intuitive folder structure.
+Power BI Desktop introduces a new way to author, collaborate, and save your projects. When you save your work as a ***Power BI Project*** (PBIP), report and semantic model *item* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Artifact definition files are JSON formatted text files containing semantic model and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+- **Text editor support** - Item definition files are JSON formatted text files containing semantic model and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
 
 - **Programmatic generation and editing item definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your item definitions. Applications can be based on public documentation of the item definition schemas and/or client libraries.
 
@@ -35,7 +35,7 @@ See Power BI Desktop projects and other developer mode features being introduced
 
 ## Enable preview features
 
-Saving as a project in Power BI Desktop is currently in **preview**. Before giving it a try, you must first enable it in **Preview features**.
+Saving as a project in Power BI Desktop is currently in **preview**. To use this feature, you need a **Premuim license** and you must enable it in **Preview features**.
 
 To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
 
@@ -49,9 +49,17 @@ When you save as a project, Power BI Desktop saves report and semantic model ite
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
+After saving as a project, you can see when you are working on a project by looking at the title bar:
+
+:::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project.":::
+
+If you click on the title bar, a flyout appears that's specific for Power BI Project. This lets you locate the project files as well as the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
+
+:::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout.":::
+
 Let's take a closer look at what you see in your project's root folder:
 
-##### \<project name>.Dataset
+##### \<project name>.SemanticModel
 
 A collection of files and folders that represent a Power BI semantic model. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
 
@@ -65,12 +73,17 @@ Specifies intentionally untracked files Git should ignore. Power BI Desktop crea
 
 Semantic model and report subfolders each have default git ignored files specified in .gitIgnore:
 
-- Dataset
-  - \.pbi\localSettings.json
-  - \.pbi\cache.abf
+```md
+├── project
+│   ├── *.SemanticModel
+│   │   ├── .pbi
+│   │   │   ├── localSettings.json
+│   │   │   └── cache.abf
+│   ├── *.Report
+│   │   ├── .pbi
+│   │   │   └── localSettings.json
 
-- Report
-  - \.pbi\localSettings.json
+```
 
 ##### \<project name>.pbip
 
@@ -82,9 +95,19 @@ For more information, refer to the [pbip schema document](https://github.com/mic
 
 You can open Power BI Desktop from the Power BI Project folder either by opening the **[pbip](#project-namepbip)** file or the **[pbir](./projects-report.md#definitionpbir)** file in the report folder. Both options open the report for editing, and the semantic model, if there's a relative reference to a semantic model.
 
-You can save multiple reports and semantic models to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the pbir within the report folder.
+You can save multiple reports and semantic models to the same folder. Having a separate pbip file for each report isn't required because you can open each report directly from the **.pbir** within the report folder.
 
-:::image type="content" source="media/projects-overview/pbip-files-reports.png" alt-text="Screen grab showing Power BI Project files with multiple report folders":::
+```md
+├── project
+│   ├── AdventureWorks-Sales.Report
+│   │   └── definition.pbir
+│   ├── AdventureWorks-Stocks.Report
+│   │   └── definition.pbir
+│   ├── AdventureWorks.SemanticModel
+|   |   └── *.*
+│   .gitignore
+└──  AdventureWorks.pbip
+```
 
 ## Changes outside Power BI Desktop
 
@@ -101,8 +124,8 @@ Schema details for the following files aren't documented. During **preview**, ch
 - Report\
   - [report.json](projects-report.md#reportjson)
   - [mobileState.json](projects-report.md#mobilestatejson)
-  - [datasetDiagramLayout.json](projects-report.md#datasetdiagramlayoutjson)
-- Dataset\
+  - [semanticModelDiagramLayout.json](projects-report.md#semanticmodeldiagramlayoutjson)
+- SemanticModel\
   - [diagramLayout.json](projects-dataset.md#diagramlayoutjson)
 
 ### Model authoring
@@ -112,7 +135,7 @@ You can make changes to the semantic model definition by using external tools in
 - By connecting to Power BI Desktop's Analysis Service (AS) instance with [external tools](../../transform-model/desktop-external-tools.md).
 - By editing JSON metadata in the model.bim file using VS Code or another external tool.
 
-Not every model object supports write operations. Applying changes outside of the those supported can cause unexpected results.
+Not every model object supports write operations. Applying changes outside of those supported can cause unexpected results.
 
 Objects that support write operations:
 
@@ -169,11 +192,12 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Considerations and limitations
 
+- This feature requires a Premium license.
 - Power BI Desktop isn't aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
 - Sensitivity labels aren't supported with Power BI projects.
 - Diagram view is ignored when editing models in the Service.
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
-- In Power BI Desktop, you can't save as a PBIP directly to OneDrive for Business and SharePoint.
+- In Power BI Desktop, you can't save as a PBIP directly to OneDrive and SharePoint.
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).

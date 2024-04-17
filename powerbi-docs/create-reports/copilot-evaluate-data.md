@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 01/23/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Update your data model to work well with Copilot for Power BI
@@ -44,4 +45,4 @@ The following table lists the criteria to help you create accurate reports with 
 ## Related content
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Create a report with Copilot for Power BI](copilot-create-report.md)
+- [Create a report with Copilot for Power BI](copilot-create-report-service.md)

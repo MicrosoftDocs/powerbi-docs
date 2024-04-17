@@ -82,7 +82,7 @@ An app can use a service principal to acquire a Microsoft Entra token. A Microso
 
 #### Master user account
 
-An app can use a _master user account_ to acquire an AD token. A master user account is a regular Microsoft Entra user. In Power BI, the account must belong to the workspace Amin or Member role to embed workspace content. It must also have either a Power BI Pro or Power BI Premium Per User (PPU) license.
+An app can use a _master user account_ to acquire an AD token. A master user account is a regular Microsoft Entra user. In Power BI, the account must belong to the workspace Admin or Member role to embed workspace content. It must also have either a Power BI Pro or Power BI Premium Per User (PPU) license.
 
 > [!NOTE]
 > It's not possible to use a master user account to embed paginated reports.

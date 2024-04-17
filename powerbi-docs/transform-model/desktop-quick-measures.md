@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 03/15/2024
 LocalizationGroup: Create reports
 ---
 # Use quick measures for common calculations
@@ -135,3 +135,10 @@ You can use your own custom date tables with time intelligence quick measures. I
 ### Additional information and examples
 
 Have an idea for a quick measure that isn't already provided? Great! Go to the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page, and submit your ideas and DAX formulas for quick measures you'd like to see in Power BI Desktop. We'll consider adding them to the quick measures list in a future release.
+
+## Related content
+
+Other articles of interest:
+
+* [Using visual calculations (preview)](desktop-visual-calculations-overview.md)
+* [Using calculations options in Power BI Desktop](desktop-calculations-options.md)

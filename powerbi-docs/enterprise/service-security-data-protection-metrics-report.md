@@ -20,7 +20,7 @@ The report features:
 
 * A 100 percent stacked column chart that shows daily sensitivity label usage in the tenant for the last 7, 30, or 90 days. This chart makes it easy to track the relative usage of the different label types over time.
 * Donut charts that show the current state of sensitivity label usage in the tenant for dashboards, reports, semantic models, and dataflows.
-* A link to the Defender for Cloud Apps portal where Power BI alerts, users-at-risk, activity logs, and other information is available. For more information, see [Using Microsoft Defender for Cloud Apps controls in Power BI](./service-security-using-defender-for-cloud-apps-controls.md).
+* A link to the Defender for Cloud Apps portal where Power BI alerts, users-at-risk, activity logs, and other information is available. For more information, see [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls).
 
 The report refreshes every 24 hours.
 
@@ -43,7 +43,7 @@ Improved versions of the data protection metrics report are released periodicall
 ## Notes and considerations
 
 * In order for the data protection metrics report to be successfully generated, you must enable [sensitivity labels](./service-security-enable-data-sensitivity-labels.md) on your tenant, and [sensitivity labels should be applied to reports](./service-security-apply-data-sensitivity-labels.md).
-* In order to access Defender for Cloud Apps information, your organization must have the appropriate [Defender for Cloud Apps license](./service-security-using-defender-for-cloud-apps-controls.md#defender-for-cloud-apps-licensing).
+* In order to access Defender for Cloud Apps information, your organization must have the appropriate [Defender for Cloud Apps license](/fabric/governance/service-security-using-defender-for-cloud-apps-controls#defender-for-cloud-apps-licensing).
 * Before you share information from the data protection metrics report with a user who isn't a Power BI administrator, keep in mind that this report contains sensitive information about your organization.
 * The data protection metrics report is a special report and doesn't show up in the **Shared with me**, **Recent**, and **Favorites** lists.
 
@@ -52,6 +52,6 @@ Improved versions of the data protection metrics report are released periodicall
 ## Related content
 
 * [Sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
-* [Using Microsoft Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
+* [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
 * [Understanding Power BI administration roles](../admin/service-admin-role.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)

@@ -7,8 +7,9 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/29/2024
+ms.date: 04/08/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Create a narrative with Copilot for Power BI
@@ -16,6 +17,8 @@ LocalizationGroup: Create reports
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. You can curate the tone and specificity of the narrative with suggested and custom prompts.
+
+If you don't have write permissions for a report, you can still [create a report summary in the Copilot pane](copilot-pane-summarize-content.md). 
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 

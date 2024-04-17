@@ -407,7 +407,7 @@ With Defender for Cloud Apps, organizations can gain the following DLP capabilit
 * Work with the Defender for Cloud Apps built-in anomaly detection. The Defender for Cloud Apps anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you're ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert.
 * Power BI admin role in the Defender for Cloud Apps portal. Defender for Cloud Apps provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
 
-See [Using Microsoft Defender for Cloud Apps Controls in Power BI](../enterprise/service-security-using-defender-for-cloud-apps-controls.md) for additional details.
+See [Using Microsoft Defender for Cloud Apps Controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) for additional details.
 
 ## Preview security features
 

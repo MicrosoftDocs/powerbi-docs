@@ -15,6 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
+  no-loc: [Copilot]
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -32,7 +33,7 @@ highlightedContent:
     # Card
     - title: Create report pages with Copilot
       itemType: how-to-guide
-      url: create-reports/copilot-create-report.md
+      url: create-reports/copilot-create-report-service.md
     # Card
     - title: Microsoft Fabric for Power BI users
       itemType: tutorial
@@ -86,7 +87,7 @@ conceptualContent:
             - url: create-reports/copilot-evaluate-data.md
               itemType: concept
               text: Update your data model to work with Copilot (preview)
-            - url: create-reports/copilot-create-report.md
+            - url: create-reports/copilot-create-report-service.md
               itemType: tutorial
               text: Create report pages with Copilot for Power BI (preview)
           # footerLink (optional)

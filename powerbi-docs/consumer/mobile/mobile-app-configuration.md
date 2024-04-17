@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/15/2023
+ms.date: 04/01/2024
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -76,7 +76,7 @@ If groups of users in an organization always need to get to a specific report, d
 
 When an admin has configured a launch item for a group of users, those users will be able to accept it or reject it. If they reject it, they can configure their own launch item, or they can just not use any launch item at all.
 
-A launch item can be a report, a specific report page, a dashboard, a scorecard, an app, or even a specific report within an app.
+A launch item can be a report, a specific report page, a dashboard, a scorecard, an app, or even a specific report within an app. The admin can have the launch item open for users in full screen mode by including the query parameter *?fullScreen=1* in the URI used to specify the launch item.
 
 | Key | Type | Description |
 |---|---|---|---|

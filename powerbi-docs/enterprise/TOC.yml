@@ -49,13 +49,13 @@
     expanded: false
     items:
     - name: Get Power BI for your organization
-      href: service-admin-org-subscription.md 
+      href: service-admin-licensing-organization.md 
     - name: Purchase Power BI Pro
       href: service-admin-purchasing-power-bi-pro.md         
     - name: Licensing for your organization
       href: service-admin-licensing-organization.md
     - name: View and manage user licenses
-      href: service-admin-manage-licenses.md      
+      href: service-admin-manage-licenses.md
     - name: Disable self-service sign-up
       href: service-admin-disable-self-service.md
     - name: Sign up with a Microsoft 365 Trial
@@ -118,11 +118,6 @@
         href: troubleshoot-xmla-endpoint.md
       - name: Power BI Premium FAQ
         href: service-premium-faq.yml
-  - name: Governance and compliance
-    expanded: false
-    items:                   
-    - name: Metadata scanning
-      href: service-admin-metadata-scanning.md
   - name: Information protection
     expanded: false
     items:
@@ -137,28 +132,14 @@
         href: service-security-enable-data-sensitivity-labels.md
       - name: Apply sensitivity labels
         href: service-security-apply-data-sensitivity-labels.md         
-      - name: Default label policy
-        href: service-security-sensitivity-label-default-label-policy.md
-      - name: Mandatory label policy
-        href: service-security-sensitivity-label-mandatory-label-policy.md
-      - name: Sensitivity label downstream inheritance
-        href: service-security-sensitivity-label-downstream-inheritance.md
-      - name: Sensitivity label inheritance from data sources (preview)
-        href: service-security-sensitivity-label-inheritance-from-data-sources.md
       - name: Sensitivity label change enforcement
         href: service-security-sensitivity-label-change-enforcement.md
       - name: Custom help link for sensitivity labels
-        href: service-security-sensitivity-label-custom-help-link.md
-      - name: Sensitivity label support for paginated reports
-        href: service-security-sensitivity-label-paginated-reports.md
-      - name: Set or remove sensitivity labels programmatically
-        href: service-security-sensitivity-label-inheritance-set-remove-api.md    
+        href: service-security-sensitivity-label-custom-help-link.md   
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md  
       - name: Protection metrics report
         href: service-security-data-protection-metrics-report.md
-      - name: Troubleshoot sensitivity labels
-        href: service-security-sensitivity-label-troubleshooting.md
     - name: Data loss prevention
       expanded: false
       items:              
@@ -168,8 +149,6 @@
         href: service-security-dlp-policies-for-power-bi-configure.md
       - name: Respond to a DLP policy violation
         href: service-security-dlp-policies-for-power-bi-respond.md
-    - name: Microsoft Defender for Cloud Apps with Power BI
-      href: service-security-using-defender-for-cloud-apps-controls.md
   - name: Security
     expanded: false
     items:
