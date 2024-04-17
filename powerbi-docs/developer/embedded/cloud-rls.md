@@ -93,7 +93,7 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
         var rlsIdentity = new EffectiveIdentity(
             username: "France",
             roles: new List<string>{ "CountryDynamic" },
-            datasets: new List<string>{ datasetId.ToString()}
+            datasets: datasetIds.Select(id => id.ToString()).ToList());
         );
        
         // Create a request for getting an embed token for the rls identity defined above

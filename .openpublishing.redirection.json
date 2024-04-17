@@ -1141,6 +1141,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/create-reports/copilot-create-report.md",
+            "redirect_url": "/power-bi/create-reports/copilot-introduction",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-shared-with-me.md",
             "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
             "redirect_document_id": false

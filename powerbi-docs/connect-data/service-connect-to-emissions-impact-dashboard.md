@@ -149,6 +149,10 @@ The Emissions Impact Dashboard and the Cloud for Sustainability API provide data
 
 Unfortunately, it isn't possible for us to provide the emissions data using the old methodology.
 
+### Why can't I see emissions data for the previous month?
+
+Emissions data for a given month will be available by the 15th day after the end of that month (including nonbusiness days).
+
 ## General FAQs
 
 ### App setup

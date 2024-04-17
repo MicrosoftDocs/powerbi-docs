@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.custom: linux-related-content
 ms.topic: how-to
-ms.date: 05/08/2020
+ms.date: 12/08/2023
 ---
 
 # Create an SSL certificate

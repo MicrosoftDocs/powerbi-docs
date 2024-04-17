@@ -156,8 +156,6 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 ## Considerations and limitations
 
 - Additional manual inputs to the button aren't supported.  
-- Currently, we only have a few built-in templates; we plan to add more based on user feedback.
-- The visual will only display flows within your default environment. We plan to add support for an environment selector by the general availability release.
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual doesn't work in Publish to Web (public) scenarios, because unauthenticated scenarios aren't supported by Power Automate.
 - The visual doesn't support export scenarios.

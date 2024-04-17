@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/26/2024
+ms.date: 04/10/2024
 LocalizationGroup: Model your data
 no-loc: [Copilot]
 ---
