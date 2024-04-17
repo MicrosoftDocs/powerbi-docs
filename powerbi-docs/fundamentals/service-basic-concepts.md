@@ -26,9 +26,9 @@ When you open the Power BI service in a browser, a good place to start is your *
 1. Navigation pane
 2. Microsoft 365 app launcher
 3. Power BI home button
-4. Icon buttons, including settings, help, feedback, and your Account manager.
+4. Icon buttons, including settings, help, feedback, and your Account manager
 5. Search box
-6. Recommended content that you use the most or have marked as favorites
+6. Recommended content that you use the most or is marked as favorites
 7. **Recent**, **Favorites**, and **My apps** tabs
 
 We'll dig into these features later, but first let's review some Power BI concepts. 
@@ -44,13 +44,13 @@ It's important to understand licenses, capacities, and workspaces before we dig 
  Several things determine the extent of what you can do in Power BI.
 - Which license you have (free, Pro, or Premium Per User)
 - If your organization has a subscription for Premium capacity and if content is stored in that Premium capacity
-- The workspace role that you are assigned
+- The workspace role that you're assigned
 
-The combination of these three things determines whether you are a creator or a consumer, whether you can share your content with others or access shared content, if you can use advanced features such as subscribing and exporting, and much more. 
+The combination of these three things determines whether you're a creator or a consumer, whether you can share your content with others or access shared content, if you can use advanced features such as subscribing and exporting, and much more. 
 
-Users with Pro and Premium Per User (PPU) licenses can create, share, and use advanced features of Power BI. If their organization has a Premium capacity subscriptions, Pro and PPU users can invite free users to workspaces saved in Premium capacity. With permissions to content in Premium capacity, free users can also create, collaborate, share, and use advanced features of Power BI. The extent of what a user can do in a workspace depends on the role that user is assigned. The options are: Admin, Member, Contributor, and Viewer. 
+Users with Pro and Premium Per User (PPU) licenses can create, share, and use advanced features of Power BI. If their organization has a Premium capacity subscription, Pro and PPU users can invite free users to workspaces saved in Premium capacity. With permissions to content in Premium capacity, free users can also create, collaborate, share, and use advanced features of Power BI. The extent of what a user can do in a workspace depends on the role that user is assigned. The options are: Admin, Member, Contributor, and Viewer. 
 
-Licenses and subscriptions is a complex topic and only described at a very high level in this article. For more information, visit these articles.  
+Licenses and subscriptions are complex topics and only described at a high level in this article. For more information, visit these articles.  
 
 - [Overview of licenses](../consumer/end-user-license.md)
 - [Licensing for your organization](../enterprise/service-admin-licensing-organization.md)
@@ -59,7 +59,7 @@ Licenses and subscriptions is a complex topic and only described at a very high 
 
 A capacity is a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either *shared* or *reserved*. A shared capacity is shared with other Microsoft customers, while a reserved capacity is reserved for a single customer. Reserved capacities require a [subscription](../enterprise/service-premium-what-is.md), and are fully described in [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
 
-By default, workspaces are created in a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
+By default, workspaces are created in a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play," such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
 As described in the [Licenses and subscriptions section of this article](#licenses-and-subscriptions), content in Premium capacity can be shared with free users.
 
@@ -92,13 +92,13 @@ Now, on to the Power BI building blocks.
 
 ## Reports
 
-A Power BI report is one or more pages of visualizations such as line charts, maps, and treemaps. Visualizations are also called *visuals*. All of the visualizations in a single report come from a single semantic model. Reports can be created from scratch by you and your colleagues, and can be shared with you directly, in a *workspace*, or as part of an *app*. Sometimes Power BI creates them for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications. For example, when you connect to an SaaS application, Power BI imports a pre-built report.
+A Power BI report is one or more pages of visualizations such as line charts, maps, and treemaps. Visualizations are also called *visuals*. All of the visualizations in a single report come from a single semantic model. Reports can be created from scratch by you and your colleagues, and can be shared with you directly, in a *workspace*, or as part of an *app*. Sometimes Power BI creates them for you when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications. For example, when you connect to an SaaS application, Power BI imports a prebuilt report.
 
 There are two modes to view and interact with reports: *Reading view* and *Editing view*. When you open a report, it opens in Reading view. If you have edit permissions, then you see **Edit report** in the upper-left corner, and you can view the report in Editing view. If a report is in a [workspace](#workspaces), everyone with an *admin*, *member*, or *contributor* role can edit it. They have access to all of the exploring, designing, building, and sharing capabilities of Editing view for that report. The people they share the report with can explore and interact with the report in Reading view but can't edit or share unless they're given a role in the workspace and have the necessary license type.
 
 **ONE** report...
 
-- Is created using data from one semantic model.  
+- Is created using data from one semantic model 
 - Is contained in a single workspace.
 - Can be associated with multiple dashboards within that workspace. Tiles pinned from that one report can appear on multiple dashboards.
 
@@ -116,9 +116,9 @@ A *semantic model* is a collection of data that you *import* or *connect* to. Po
 > [!NOTE]
 > The work you do in Power BI doesn't change the underlying semantic model.
 
-Semantic models are associated with *workspaces*, and a single semantic model can be part of many workspaces. When you open a workspace, the associated semantic models are listed. Each listed semantic model is a source of data available for one or more reports, and the semantic model can contain data that comes from one or more sources. Some examples are: an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](../connect-data/service-get-data.md).
+Semantic models are associated with *workspaces*, and a single semantic model can be part of many workspaces. When you open a workspace, the associated semantic models are listed. Each listed semantic model is a source of data available for one or more reports, and the semantic model can contain data that comes from one or more sources. Some examples are: an Excel workbook on OneDrive, or an on-premises SSAS (SQL Server Analysis Services) tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](../connect-data/service-get-data.md).
 
-Semantic models added by one workspace member are available to the other workspace members with an Admin, Member, or Contributor role. Semantic models are not available to members with a Viewer role.
+Semantic models added by one workspace member are available to the other workspace members with an Admin, Member, or Contributor role. Semantic models aren't available to members with a Viewer role.
 
 In the following example, we selected **My workspace** and then filtered for **Semantic models.** 
 
@@ -142,11 +142,11 @@ Semantic models can be refreshed, renamed, explored, and removed. Use a semantic
 - [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Get samples for Power BI](../create-reports/sample-datasets.md)
 
-Now, let's move on to the next section,dashboards.
+Now, let's move on to the next section, dashboards.
 
 ## Dashboards
 
-A *dashboard* is a single canvas of zero or more [tiles](../create-reports/service-dashboard-tiles.md). Dashboards can only be created and viewed in the Power BI service. They are not available in Power BI Desktop. The tiles that appear on a dashboard were specifically put there by a report creator or owner.  
+A *dashboard* is a single canvas of zero or more [tiles](../create-reports/service-dashboard-tiles.md). Dashboards can only be created and viewed in the Power BI service. They aren't available in Power BI Desktop. The tiles that appear on a dashboard were specifically put there by a report creator or owner.  
 
 You can create a dashboard by *pinning* tiles on the dashboard from a report, Q&A, other dashboards, Excel, SSRS, and more. Even entire report pages can be pinned to a dashboard. A special type of tile called a [widget](../create-reports/service-dashboard-add-widget.md) is added directly onto the dashboard. Examples of widget tiles are videos, URLs, and images. 
 
@@ -154,13 +154,13 @@ There are many ways to add tiles to your dashboard; too many to be covered in th
 
 :::image type="content" source="media/service-basic-concepts/power-bi-dashboard-sample.png" alt-text="Screenshot showing a dashboard.":::
 
-Why do people create dashboards?  Here are just some of the reasons:
+Why do people create dashboards? Here are just some of the reasons:
 
 - To see, in one glance, all the information needed to make decisions.
 - To monitor the most-important information about your business.
 - To ensure all colleagues are on the same page, viewing and using the same information.
 - To monitor the health of a business or product or business unit or marketing campaign, and more.
-- To create a personalized view of a larger dashboard&mdash;all the metrics that matter to you.
+- To create a personalized view of a larger dashboard with only the metrics that matter to you.
 
 When you open a workspace, the associated dashboards are listed along with other included content.
 
@@ -187,11 +187,11 @@ To open a dashboard, select it. If you own the dashboard, you also have edit acc
 
 An *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro or Premium Per User (PPU) licenses. An app can have permissions that are different than the permissions set on a workspace. This capability makes it easier for designers to manage permissions on an app.
 
-Apps are an easy way for designers to share many types of content at one time. App designers create dashboards and reports and then bundle them together into an app. The designers share or publish the app to a location where colleagues can access it. It's easier to find and install content in the Power BI service or on a mobile device when it's organized together as an app. After installing an app, a user doesn't have to remember the names of several dashboards or reports because they're all together in one app. 
+Apps are an easy way for designers to share many types of content at one time. App designers create dashboards and reports and then bundle them together into an app. The designers share or publish the app to a location where colleagues can access it. It's easier to find and install content in the Power BI service or on a mobile device when it's organized together as an app. After users install an app, they don't have to remember the names of several dashboards or reports because they're all together in one app. 
 
 When you open an app, you're presented with a dashboard or a report. If the app opens a dashboard, that might be all you need. But if you want to access the underlying report for a particular dashboard tile, select the tile to open the report. Keep in mind though that not all tiles are pinned from reports. Selecting a tile usually opens a report, but may also open a URL, a video, or a [natural language Q&A query](../natural-language/q-and-a-intro.md). You can open any of the underlying report pages by selecting them from the list on the left.  
 
-:::image type="content" source="media/service-basic-concepts/power-bi-app-dashboard.png" alt-text="Screenshot of an app that has opened to a dashboard.":::
+:::image type="content" source="media/service-basic-concepts/power-bi-app-dashboard.png" alt-text="Screenshot of an app that is displaying a dashboard.":::
 
 ### Dig deeper into apps
 
@@ -215,12 +215,12 @@ A dataflow can be consumed in the following three ways:
 
 ### Dig deeper into dataflows
 
-- To learn how to create dataflows, see [Creating a dataflow.](../transform-model/dataflows/dataflows-create.md)
+- To learn how to create dataflows, see [Creating a dataflow](../transform-model/dataflows/dataflows-create.md)
 - [Introduction to dataflows and self-service data prep](../transform-model/dataflows/dataflows-introduction-self-service.md)
 
 ## Workbooks
 
-Workbooks are a special type of semantic model. If you've read the previous **Semantic models** section, you know almost all you need to know about workbooks. But you might be wondering why sometimes Power BI classifies an Excel workbook as a **semantic model** and other times as a **workbook**.
+Workbooks are a special type of semantic model. If you read the previous **Semantic models** section, you know almost all you need to know about workbooks. But you might be wondering why sometimes Power BI classifies an Excel workbook as a **semantic model** and other times as a **workbook**.
 
 When you use data from Excel files, you can choose to either *Import* or *Connect* to the file. When you choose Connect, your workbook appears in Power BI just like it would in Excel Online. But, unlike Excel Online, you have some great features to help you pin elements from your worksheets right to your dashboards.
 
@@ -233,7 +233,7 @@ You can't edit your workbook in Power BI. If you need to make some changes, you 
 
 ## Navigate the Power BI service
 
-We've covered licenses and subscriptions, capacities, workspaces, apps, and building blocks. Let's bring it together for a quick tour of the Power BI service.
+We covered licenses and subscriptions, capacities, workspaces, apps, and building blocks. Let's bring it together for a quick tour of the Power BI service.
 
 :::image type="content" source="media/service-basic-concepts/power-bi-dashboard-identifier.png" lightbox="media/service-basic-concepts/power-bi-dashboard-identifier.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features in the list that follows.":::
 
@@ -257,7 +257,7 @@ Use the nav pane to locate and move between your workspaces and the Power BI bui
 
 ### 2. **Canvas**
 
-Because we've opened a dashboard, the canvas area displays visualization tiles. If for example, we had opened the report editor, the canvas area would display a report page instead.
+Because we opened a dashboard, the canvas area displays visualization tiles. If for example, we opened the report editor, the canvas area would display a report page instead.
 
 :::image type="content" source="media/service-basic-concepts/power-bi-dashboard-canvas.png" alt-text="Screenshot of Power BI service showing the dashboard canvas.":::
 
@@ -303,7 +303,6 @@ This area of the screen contains more options for interacting with your content 
 
 ## Related content
 
-- [What is Power BI?](power-bi-overview.md)  
-- [Power BI videos](videos.md)  
+- [What is Power BI?](power-bi-overview.md)    
 - [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
