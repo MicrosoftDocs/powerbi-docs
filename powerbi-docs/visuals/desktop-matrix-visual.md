@@ -1,8 +1,8 @@
 ---
 title: Create a matrix visual in Power BI
 description: Learn about the matrix visual in Power BI. See how to format a matrix, expand and collapse rows, hide and display totals and icons, and copy values.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
