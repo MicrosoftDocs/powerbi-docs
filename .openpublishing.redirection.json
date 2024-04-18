@@ -6033,22 +6033,22 @@
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-overview.md",
-            "redirect_url": "/fabric/onelake/directlake-overview",
+            "redirect_url": "/fabric/get-started/directlake-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-create-lakehouse.md",
-            "redirect_url": "/fabric/onelake/directlake-create-lakehouse",
+            "redirect_url": "/fabric/get-started/directlake-create-lakehouse",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-fixed-identity.md",
-            "redirect_url": "/fabric/onelake/directlake-fixed-identity",
+            "redirect_url": "/fabric/get-started/directlake-fixed-identity",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
-            "redirect_url": "/fabric/onelake/directlake-analyze-qp",
+            "redirect_url": "/fabric/get-started/directlake-analyze-qp",
             "redirect_document_id": false
         },
         {
@@ -6068,7 +6068,7 @@
         },
         {
             "source_path": "powerbi-docs/enterprise/service-admin-ols.md",
-            "redirect_url": "/fabric/onelake/service-admin-ols",
+            "redirect_url": "/fabric/security/service-admin-ols",
             "redirect_document_id": false
         },
         {

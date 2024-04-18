@@ -460,7 +460,7 @@ Content creators will need access to a gateway connection to successfully connec
 Gateway roles let you control who can manage the gateway and its data source connections. These roles work similarly to [workspace roles](/power-bi/collaborate-share/service-roles-new-workspaces), allowing different permissions depending on the role. Using roles helps you to manage gateway access more effectively.
 
 > [!TIP]
-> We recommend using [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage role membership instead of individual accounts. That way, it's easier to manage users, particularly across multiple gateways. You can use the same security groups to manage other access control, like [row-level security](//fabric/security/service-admin-rls#working-with-members) role membership and [app audience](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-multiple-audiences) membership.
+> We recommend using [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage role membership instead of individual accounts. That way, it's easier to manage users, particularly across multiple gateways. You can use the same security groups to manage other access control, like [row-level security](/fabric/security/service-admin-rls#working-with-members) role membership and [app audience](/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-multiple-audiences) membership.
 
 > [!IMPORTANT]
 > A user who just needs to use the gateway to connect to a data source doesn't need to belong to a gateway role. In this case, they'll only have the _User_ connection role.

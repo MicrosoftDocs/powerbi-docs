@@ -48,7 +48,7 @@ The migration process moves all tenant data to the new region. The GUID assigned
   - [Power BI Activity Log](../admin/service-admin-auditing.md)
   - View count in [Lineage view](../collaborate-share/service-data-lineage.md)
   - [Data protection metrics report](/fabric/governance/use-microsoft-purview-hub)
-   - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
+  - [Usage metrics(preview)](../collaborate-share/service-modern-usage-metrics.md)
 - If Fabric Metadata is linked to the Purview Data Map, it continues to be stored in the home region of the tenant. You can choose to delete the assets manually by navigating to Microsoft Purview and following the steps described here: [Asset management in the Microsoft Purview Data Catalog.](/purview/catalog-asset-details#delete-asset/)
 
 ### Preparation steps
