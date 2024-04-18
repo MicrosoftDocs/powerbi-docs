@@ -260,9 +260,9 @@ The icons in the upper right corner are your resource for settings, notification
 
 In the upper left corner, your current location is displayed along with the Microsoft logo. It's not always easy to figure out where you are in Power BI and what content is active. So Power BI shows you this information in the upper header bar. Select **Microsoft** to navigate to your Power BI **Home** screen. Home is often a great place to start since it provides alternate paths to all of your content. 
 
-:::image type="content" source="media/service-basic-concepts/power-bi-waffle.png" alt-text="Screenshot of Power BI service showing the Microsoft 365 app launcher.":::
-
 Also in the header bar is the Microsoft 365 app launcher. With the app launcher, your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
+
+:::image type="content" source="media/service-basic-concepts/power-bi-waffle.png" alt-text="Screenshot of Power BI service showing the Microsoft 365 app launcher.":::
 
 ### 4. Search field
 
