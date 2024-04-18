@@ -26,6 +26,9 @@ As a *designer* or *creator*, one typical workflow is to start in Power BI Deskt
 
 The major building blocks of Power BI are: *reports*, *workbooks*, *semantic models*, *dataflows*, *dashboards*, and *apps*. These building blocks are often referred to collectively as *content*. They're all organized into *workspaces*, and created in *capacities*. 
 
+:::image type="content" source="media/service-basic-concepts/power-bi-cloud.png" alt-text="Screenshot of a word cloud using Power BI words.":::
+
+
 It's important to understand licenses, capacities, and workspaces before we dig into the building blocks, so let's start there.
 
 ## Licenses and subscriptions
