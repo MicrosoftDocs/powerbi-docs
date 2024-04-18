@@ -17,21 +17,10 @@ LocalizationGroup: Get started
 
 The aim of this article is to familiarize you with the Power BI service: what the different elements are, how they work together, and how you can work with them. Before reading this article, we recommend that you [sign up for the Power BI service](service-self-service-signup-for-power-bi.md) and [add some data](../connect-data/service-get-data.md) so that you can follow along. If you don't have your own reports yet, install one of the [Power BI samples](../create-reports/sample-datasets.md).
 
-As a *designer* or *creator*, one typical workflow is to start in Power BI Desktop where you create *content* such as reports, dashboards, apps, and dataflows. When you publish this content to workspaces in the Power BI service, you share them with colleagues. In the Power BI service, you and your colleagues collaborate on content by continuing to modify and add content and sharing with others.  
+> [!NOTE]
+> This article describes concepts and building blocks from the point of view of a user of the Power BI service. To learn about Power BI Desktop, see [Power BI Desktop](service-service-vs-desktop.md).
 
-:::image type="content" source="media/service-basic-concepts/power-bi-home-screen-new.png" lightbox="media/service-basic-concepts/power-bi-home-screen-new.png" alt-text="Screenshot of the Power BI service Home screen in a browser with numbered areas in the list that follows.":::
-
-When you open the Power BI service in a browser, a good place to start is your **Home** screen. Here are the elements you might see:
-
-1. Navigation pane
-2. Microsoft 365 app launcher
-3. Power BI home button
-4. Icon buttons, including settings, help, feedback, and your Account manager
-5. Search box
-6. Recommended content that you use the most or is marked as favorites
-7. **Recent**, **Favorites**, and **My apps** tabs
-
-We'll dig into these features later, but first let's review some Power BI concepts. 
+As a *designer* or *creator*, one typical workflow is to start in Power BI Desktop where you create *content* such as reports, apps, and dataflows. When you publish this content to workspaces in the Power BI service, you share them with colleagues. In the Power BI service, you and your colleagues collaborate on content by continuing to modify and add content and sharing with others.  
 
 ## Power BI concepts
 
@@ -67,7 +56,7 @@ As described in the [Licenses and subscriptions section of this article](#licens
 
 Workspaces are created in capacities. Essentially, they're containers for dashboards, reports, apps, workbooks, semantic models, dataflows, and other content in Power BI.
 
-When you open a workspace, the included content is listed under the **Name** tab. In this example, the **Q1 Modern Insights** workspace has three reports, one dashboard, and one scorecard. 
+When you open a workspace, the included content is listed under the **Name** tab. In this example, the **Q1 Modern Insights** workspace has three reports, one dashboard, and one scorecard. To open the report page, dashboard, or scorecard, select it.
 
 :::image type="content" source="media/service-basic-concepts/power-bi-content.png" alt-text="Screenshot of a workspace.":::
 
@@ -75,11 +64,7 @@ There are two types of workspaces: *My workspace* and *workspaces*.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. If you want to collaborate on dashboards and reports, or create an [app](#apps), then you want to work in a different type of workspace.
 
-- *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, apps, workbooks, and semantic models. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license to share and collaborate. The exception is if the content is saved in a Premium capacity. In a Premium capacity, you can share content with users who have free licenses. For more information, see the[Licenses and subscriptions section of this article.](#licenses-and-subscriptions)
-
-In the following example, we selected **My workspace** and then chose the **Content** tab. This workspace contains two dashboards and four reports. To open a report or dashboard, select it.
-
-:::image type="content" source="media/service-basic-concepts/power-bi-reports-new.png" lightbox="media/service-basic-concepts/power-bi-reports-new.png" alt-text="Screenshot of Power BI showing a sample workspace with Content selected.":::
+- *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, apps, workbooks, and semantic models. With one exception, each workspace member needs a Power BI Pro or Premium Per User (PPU) license to share and collaborate. The exception is if the content is saved in a Premium capacity. In a Premium capacity, you can share content with users who have free licenses. For more information, see the [Licenses and subscriptions section of this article.](#licenses-and-subscriptions)
 
 - For more information about workspaces, see [Create a workspace in Power BI](../collaborate-share/service-create-the-new-workspaces.md).
 - For more information about licenses, see [Power BI service per-user and capacity-based licenses](service-features-license-type.md).
@@ -100,7 +85,7 @@ There are two modes to view and interact with reports: *Reading view* and *Editi
 
 - Is created using data from one semantic model 
 - Is contained in a single workspace.
-- Can be associated with multiple dashboards within that workspace. Tiles pinned from that one report can appear on multiple dashboards.
+- Is associated with zero or more dashboards within that workspace. Tiles pinned from that one report can appear on multiple dashboards.
 
   :::image type="content" source="media/service-basic-concepts/drawing-report.png" alt-text="Diagram showing Report relationships to a semantic model and a dashboard.":::
 
@@ -114,7 +99,7 @@ There are two modes to view and interact with reports: *Reading view* and *Editi
 A *semantic model* is a collection of data that you *import* or *connect* to. Power BI Desktop lets you connect to and import all sorts of semantic models and bring all of it together in one place. Semantic models can also source data from [dataflows](#dataflows).
 
 > [!NOTE]
-> The work you do in Power BI doesn't change the underlying semantic model.
+> The work you do in the Power BI service doesn't change the underlying semantic model.
 
 Semantic models are associated with *workspaces*, and a single semantic model can be part of many workspaces. When you open a workspace, the associated semantic models are listed. Each listed semantic model is a source of data available for one or more reports, and the semantic model can contain data that comes from one or more sources. Some examples are: an Excel workbook on OneDrive, or an on-premises SSAS (SQL Server Analysis Services) tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](../connect-data/service-get-data.md).
 
@@ -142,11 +127,11 @@ Semantic models can be refreshed, renamed, explored, and removed. Use a semantic
 - [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 - [Get samples for Power BI](../create-reports/sample-datasets.md)
 
-Now, let's move on to the next section, dashboards.
+Now, let's move on to the next building block, dashboards.
 
 ## Dashboards
 
-A *dashboard* is a single canvas of zero or more [tiles](../create-reports/service-dashboard-tiles.md). Dashboards can only be created and viewed in the Power BI service. They aren't available in Power BI Desktop. The tiles that appear on a dashboard were specifically put there by a report creator or owner.  
+A *dashboard* is a single canvas of zero or more [tiles](../create-reports/service-dashboard-tiles.md). Dashboards can only be created and viewed in the Power BI service. They aren't available in Power BI Desktop. The tiles that appear on a dashboard are specifically put there by a report creator or designer.  
 
 You can create a dashboard by *pinning* tiles on the dashboard from a report, Q&A, other dashboards, Excel, SSRS, and more. Even entire report pages can be pinned to a dashboard. A special type of tile called a [widget](../create-reports/service-dashboard-add-widget.md) is added directly onto the dashboard. Examples of widget tiles are videos, URLs, and images. 
 
@@ -235,16 +220,20 @@ You can't edit your workbook in Power BI. If you need to make some changes, you 
 
 We covered licenses and subscriptions, capacities, workspaces, apps, and building blocks. Let's bring it together for a quick tour of the Power BI service.
 
-:::image type="content" source="media/service-basic-concepts/power-bi-dashboard-identifier.png" lightbox="media/service-basic-concepts/power-bi-dashboard-identifier.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features in the list that follows.":::
+The first image displays Power BI **Home** in the Power BI service. The second image displays a dashboard in the Power BI service. Some UI elements are the same whether you're on **Home** or interacting with content such as a dashboard.
+
+:::image type="content" source="media/service-basic-concepts/power-bi-labeled-home.png" lightbox="media/service-basic-concepts/power-bi-labeled-home.png" alt-text="Screenshot showing the Home screen in the Power BI service. ":::
+
+:::image type="content" source="media/service-basic-concepts/power-bi-labeled-dashboard.png" lightbox="media/service-basic-concepts/power-bi-labeled-dashboard.png" alt-text="Screenshot of the Power BI service in a browser showing numbered features in the list that follows.":::
 
 ### 1. **Navigation pane**
 
 Use the nav pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, apps, workbooks, and semantic models.
 
-> [!NOTE]
-> Zoom out to see all of the nav pane options.  
 
-  :::image type="content" source="media/service-basic-concepts/power-bi-navigation-new.png" alt-text="Screenshot of Power BI service navigation pane.":::
+Zoom out to see all of the nav pane options. Or select the ellipses (...) to display a flyout menu. 
+
+  :::image type="content" source="media/service-basic-concepts/power-bi-nav-pane.png" alt-text="Screenshot of Power BI service navigation pane.":::
 
 - Add data or data sources by selecting **Create**.
 - Open or manage favorite content, recent content, or content shared with you by selecting **Browse**.
@@ -257,11 +246,35 @@ Use the nav pane to locate and move between your workspaces and the Power BI bui
 
 ### 2. **Canvas**
 
-Because we opened a dashboard, the canvas area displays visualization tiles. If for example, we opened the report editor, the canvas area would display a report page instead.
+On **Home**, the canvas displays options for navigating to content. On the dashboard example, the canvas area displays tiles. If for example, we opened the report editor, the canvas area would display a report page instead.
 
 :::image type="content" source="media/service-basic-concepts/power-bi-dashboard-canvas.png" alt-text="Screenshot of Power BI service showing the dashboard canvas.":::
 
-### 3. **Q&A question box**
+To learn more about the Home screen, see [Power BI Home.](../consumer/end-user-home.md) To learn more about the dashboard canvas, see [Dashboards.](../consumer/end-user-dashboard-open.md)
+
+### 3. **Icons in the black header bar**
+
+The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Selecting the round photo icon opens your Account manager. 
+
+:::image type="content" source="media/service-basic-concepts/power-bi-icon.png" alt-text="Screenshot of Power BI service showing the icon buttons.":::
+
+In the upper left corner, your current location is displayed along with the Microsoft logo. It's not always easy to figure out where you are in Power BI and what content is active. So Power BI shows you this information in the upper header bar. Select **Microsoft** to navigate to your Power BI **Home** screen. Home is often a great place to start since it provides alternate paths to all of your content. 
+
+:::image type="content" source="media/service-basic-concepts/power-bi-waffle.png" alt-text="Screenshot of Power BI service showing the Microsoft 365 app launcher.":::
+
+Also in the header bar is the Microsoft 365 app launcher. With the app launcher, your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
+
+### 4. Search field
+
+Use the global search bar to find Power BI content by keyword, title, owner name, and more. 
+
+### 5. **Labeled icons in the menu bar**
+
+:::image type="content" source="media/service-basic-concepts/power-bi-labeled-icons.png" alt-text="Screenshot of Power BI service showing labeled icon buttons.":::
+
+This area of the screen contains more options for interacting with your content (in this example, with the dashboard). Besides the labeled icons you can see, selecting **More options (…)** reveals even more choices for interacting with whatever content is currently active.
+
+### 6. **Q&A question box**
 
 One way to explore your data is to ask a question and let Power BI Q&A give you an answer, in the form of a visualization. Q&A can be used to add content to a dashboard or report.
 
@@ -270,36 +283,6 @@ Q&A looks for an answer in the semantic models connected to the dashboard. A con
 :::image type="content" source="media/service-basic-concepts/power-bi-qna.png" alt-text="Screenshot of Power BI service showing the Q and A question box.":::
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A introduction](../consumer/end-user-q-and-a.md).
-
-### 4. **Icons in the black header bar**
-
-The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Selecting the round photo icon opens your Account manager. 
-
-:::image type="content" source="media/service-basic-concepts/power-bi-icon.png" alt-text="Screenshot of Power BI service showing the icon buttons.":::
-
-### 5. **Dashboard title**
-
-It's not always easy to figure out which workspace and dashboard are active, so Power BI shows you the workspace and the dashboard title. In this example, we see the workspace (My workspace) and the dashboard title (Sales and Marketing Sample). If we opened a report, the name of the report would appear.
-
-:::image type="content" source="media/service-basic-concepts/power-bi-dashboard-title.png" alt-text="Screenshot of Power BI service showing the dashboard title.":::
-
-### 6. **Microsoft 365 app launcher**
-
-With the app launcher, your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
-
-:::image type="content" source="media/service-basic-concepts/power-bi-waffle.png" alt-text="Screenshot of Power BI service showing the Microsoft 365 app launcher.":::
-
-### 7. **Power BI home**
-
-Selecting **Power BI** or **Microsoft** brings you back to your Power BI Home screen. Home is often a great place to start since it provides alternate paths to all of your content. 
-
-:::image type="content" source="media/service-basic-concepts/version-new.png" alt-text="Screenshot of Power BI service showing icon to return to Power BI home.":::
-
-### 8. **Labeled icons in the gray menu bar**
-
-This area of the screen contains more options for interacting with your content (in this example, with the dashboard). Besides the labeled icons you can see, selecting **More options (…)** reveals options for seeing related content, opening lineage view, opening usage metrics, and more.
-
-:::image type="content" source="media/service-basic-concepts/power-bi-labeled-icons.png" alt-text="Screenshot of Power BI service showing labeled icon buttons.":::
 
 ## Related content
 
