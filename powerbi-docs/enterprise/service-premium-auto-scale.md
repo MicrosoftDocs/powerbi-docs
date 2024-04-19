@@ -41,8 +41,6 @@ To select an Azure subscription to work with Autoscale, take the following steps
 
 1. Sign on to the Azure portal and in the search box type and select **Subscriptions**.
 
-   :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-search.png" alt-text="Screenshot of the Azure portal showing the word subscriptions in the search box." lightbox="media/service-premium-auto-scale/azure-auto-scale-search.png":::
-
 1. From the **Subscriptions** page, select the subscription you want to work with Autoscale.
 
    :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-subscriptions.png" alt-text="Screenshot of the Azure portal showing a subscription name highlighted." lightbox="media/service-premium-auto-scale/azure-auto-scale-subscriptions.png":::
