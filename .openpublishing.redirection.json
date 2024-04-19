@@ -6025,7 +6025,57 @@
             "source_path": "powerbi-docs/enterprise/service-security-using-defender-for-cloud-apps-controls.md",
             "redirect_url": "/fabric/governance/service-security-using-defender-for-cloud-apps-controls",
             "redirect_document_id": false
-        }
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/power-bi-allow-list-urls.md",
+            "redirect_url": "/fabric/security/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-overview.md",
+            "redirect_url": "/fabric/get-started/directlake-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-create-lakehouse.md",
+            "redirect_url": "/fabric/get-started/directlake-create-lakehouse",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-fixed-identity.md",
+            "redirect_url": "/fabric/get-started/directlake-fixed-identity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
+            "redirect_url": "/fabric/get-started/directlake-analyze-query-processing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-data-protection-metrics-report.md",
+            "redirect_url": "/fabric/governance/use-microsoft-purview-hub",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-release-management.md",
+            "redirect_url": "/fabric/release-plan/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-site-reliability-engineering-model.md",
+            "redirect_url": "/fabric/admin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-ols.md",
+            "redirect_url": "/fabric/security/service-admin-ols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-rls.md",
+            "redirect_url": "/fabric/security/service-admin-rls",
+            "redirect_document_id": false
+        }                                                                                                                                                                                                                                                                                                                                           
   ]          
 
 }

@@ -32,7 +32,7 @@ In addition, sensitivity labels can be applied to .pbix files in Power BI Deskto
 
 Sensitivity labels on reports, dashboards, semantic models, and dataflows are visible from many places in the Power BI service. Sensitivity labels on reports and dashboards are also visible in the Power BI iOS and Android mobile apps and in embedded visuals. In Desktop, you can see the sensitivity label in the status bar.
 
-A [protection metrics report](service-security-data-protection-metrics-report.md) available in the Power BI admin portal gives Power BI admins full visibility over the sensitive data in the Power BI tenant. In addition, the Power BI audit logs include sensitivity label information about activities such as applying, removing, and changing labels, as well as about activities such as viewing reports, dashboards, etc. This gives Power BI and security admins visibility over sensitive data consumption for the purposes of monitoring and investigating security alerts.
+A [protection metrics report](/fabric/governance/use-microsoft-purview-hub) available in the Power BI admin portal gives Power BI admins full visibility over the sensitive data in the Power BI tenant. In addition, the Power BI audit logs include sensitivity label information about activities such as applying, removing, and changing labels, as well as about activities such as viewing reports, dashboards, etc. This gives Power BI and security admins visibility over sensitive data consumption for the purposes of monitoring and investigating security alerts.
 
 ## Important considerations
 
@@ -43,7 +43,7 @@ In Power BI Desktop, sensitivity labels with encryption settings **do** affect a
 Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI admin can block export from non-supported export paths.
 
 > [!NOTE]
-> Users who are granted access to a report are granted access to the entire underlying semantic model, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
+> Users who are granted access to a report are granted access to the entire underlying semantic model, unless [row-level security (RLS)](/fabric/security/service-admin-rls) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
 
 ## Supported export paths
 
@@ -292,5 +292,5 @@ This article provided an overview of data protection in Power BI. The following 
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
 * [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
 * [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
-* [Protection metrics report](service-security-data-protection-metrics-report.md)
+* [Protection metrics report](/fabric/governance/use-microsoft-purview-hub)
 * [Power BI implementation planning: Information protection for Power BI](/power-bi/guidance/powerbi-implementation-planning-info-protection)

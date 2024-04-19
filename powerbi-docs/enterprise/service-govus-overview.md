@@ -72,7 +72,7 @@ The following table lists the required endpoints to add to your allowlist to ena
 
 The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. 
 
-To add these URLs to your allowlist also, see [Add Power BI URLs to your allowlist](../admin/power-bi-allow-list-urls.md).
+To add these URLs to your allowlist also, see [Add Power BI URLs to your allowlist](/fabric/security/power-bi-allow-list-urls).
 
 Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also have to connect to Microsoft 365 to view audit logs. To identify the endpoints for these services, see "Microsoft 365 integration" in the following table:
 

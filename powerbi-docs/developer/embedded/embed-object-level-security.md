@@ -18,15 +18,15 @@ This article explains how to embed Power BI content that uses OLS in a Power BI 
 
 In this scenario, the ISV has a table with sensitive data and metadata that they want to hide from the report customers.
 
-For more information on OLS go to [Object level security (OLS)](../../enterprise/service-admin-ols.md).
+For more information on OLS go to [Object level security (OLS)](/fabric/security/service-admin-ols).
 
 ## Prerequisites
 
-This article assumes that you have a report that uses OLS and that you want to embed it into an app. To create a report that uses OLS, see [Object level security (OLS)](../../enterprise/service-admin-ols.md).
+This article assumes that you have a report that uses OLS and that you want to embed it into an app. To create a report that uses OLS, see [Object level security (OLS)](/fabric/security/service-admin-ols).
 
 The report can be built using any of the following models:
 
-* [Cloud OLS](../../enterprise/service-admin-ols.md)
+* [Cloud OLS](/fabric/security/service-admin-ols)
 * [Live connected report to Azure Analysis Services with OLS roles](./embed-azure-analysis-services.md)
 * [Live connected report to SQL Server Analysis Services with OLS roles](sql-server-analysis-services-embed.md)
 
