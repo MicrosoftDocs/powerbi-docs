@@ -96,7 +96,7 @@ A report creator might find a semantic model in the [data hub](../connect-data/s
 
 There are several advantages to publishing reports to a workspace different from where the semantic model is stored.
 
-First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](../enterprise/service-admin-rls.md) to take effect when necessary for users assigned to the viewer role.
+First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](/fabric/security/service-admin-rls) to take effect when necessary for users assigned to the viewer role.
 
 ### Dependency and impact analysis
 

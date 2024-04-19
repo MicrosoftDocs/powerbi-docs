@@ -88,7 +88,7 @@ AAS provides the Analysis Services database engine for hosting data models, whic
 | [Virtual network connectivity](/data-integration/vnet/overview), which allows Power BI to work seamlessly in an organization's virtual network (VNet) | No | Yes  |
 | [Azure Private Link](/fabric/security/security-private-links-overview), which provides secure access for data traffic in Power BI | No | Yes |
 | Single sign-on (SSO) for DirectQuery sources, which allows connecting to data sources by using the report user's identity | No | Yes |
-| [Row-level security (RLS)](../enterprise/service-admin-rls.md), which restricts access to specific rows of data for specific users | Yes | Yes |
+| [Row-level security (RLS)](/fabric/security/service-admin-rls), which restricts access to specific rows of data for specific users | Yes | Yes |
 | [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security), which restricts access to specific tables or columns for specific users | Yes | Yes |
 | [Firewall](/azure/analysis-services/analysis-services-qs-firewall), which when enabled, allows setting allowed IP address ranges | Yes | No <sup>1</sup> |
 | **Governance** |||
