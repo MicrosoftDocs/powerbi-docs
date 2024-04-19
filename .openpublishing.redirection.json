@@ -6048,7 +6048,7 @@
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
-            "redirect_url": "/fabric/get-started/directlake-analyze-qp",
+            "redirect_url": "/fabric/get-started/directlake-analyze-query-processing",
             "redirect_document_id": false
         },
         {
