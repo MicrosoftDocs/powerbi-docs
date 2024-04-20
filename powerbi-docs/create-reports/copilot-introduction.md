@@ -60,7 +60,7 @@ Copilot can also create a narrative visual that summarizes a page or a whole rep
 
 And Copilot can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports.
 
-Here are five examples of what Copilot can generate.
+Here are eight examples of what Copilot can generate.
 
 - A [summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane).
 - A [summary visual on the report itself](#a-summary-visual-on-the-report-itself)
