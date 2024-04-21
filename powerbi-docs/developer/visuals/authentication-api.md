@@ -16,7 +16,7 @@ The Authentication API enables visuals to obtain Microsoft Entra ID (formerly kn
 
 Power BI administrators can enable or disable the API through a [global switch](/fabric/admin/organizational-visuals). The default setting blocks (disables) the API.
 
-The API is applicable only for [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals&exp=ubp8) visuals, and not for private visuals. Visuals that are under development can be tested in debug mode before they're published.
+The API is applicable only for AppSource visuals, and not for private visuals. Visuals that are under development can be tested in debug mode before they're published.
 
 ## Supported environments
 

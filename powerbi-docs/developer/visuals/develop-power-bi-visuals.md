@@ -14,7 +14,7 @@ ms.custom: intro-overview
 
 # Power BI custom visuals
 
-Power BI comes with [core](power-bi-custom-visuals.md#core-power-bi-visuals) visuals readily available on the visualization pane. You can also [import visuals](power-bi-custom-visuals.md#appsource-power-bi-visuals) from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals&exp=ubp8) or Power BI.
+Power BI comes with [core](power-bi-custom-visuals.md#core-power-bi-visuals) visuals readily available on the visualization pane. You can also [import visuals](power-bi-custom-visuals.md#appsource-power-bi-visuals) from Microsoft [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or Power BI.
 
 If none of these visuals meet your specific needs, you can create your own custom Power BI visual to be used by you, your organization, or the entire Power BI community.
 

@@ -12,7 +12,7 @@ ms.date: 09/17/2023
 
 # Power BI AppSource visual license models
 
-When you buy a custom visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals&exp=ubp8), there are several business and licensing models (pricing, free trials etc.) available. Some visuals have free trial versions, while others have a basic version available for free with extra functionality available for purchase.
+When you buy a custom visual from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&exp=kyyw&page=1&filters=pay-as-you-go), there are several business and licensing models (pricing, free trials etc.) available. Some visuals have free trial versions, while others have a basic version available for free with extra functionality available for purchase.
 
 >[!NOTE]
 >Licensed visuals are supported from the July 2022 desktop.
