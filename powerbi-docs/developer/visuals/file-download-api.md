@@ -44,10 +44,20 @@ To use the file download API, add a declaration to the [privileges array in visu
 
 The **file download API** has two methods:
 
+* [status](#the-status-method): available from API version 4.6
 * [`exportVisualsContent`](#the-exportvisualscontent-method): available from API version 4.5
 * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method): available from API version 5.3.
 
 The difference between the two methods is the return value.
+
+### The `status` method
+
+The status method returns the status of the file download API:
+
+* *PrivilegeStatus.DisabledByAdmin*: the tenant admin switch is off
+* *PrivilegeStatus.NotDeclared*: the visual has no declaration for the local storage in the privileges array
+* *PrivilegeStatus.NotSupported*: the API isn't supported. See [limitations](#considerations-and-limitations) for more information.
+* *PrivilegeStatus.Allowed*: the API is supported and allowed.
 
 ### The `exportVisualsContent` method
 
@@ -57,12 +67,6 @@ The `exportVisualsContent` method has four parameters:
 * filename: string
 * fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`
 * fileDescription: string
-* status: Returns the status of the file download API:
-
-  * *PrivilegeStatus.DisabledByAdmin*: the tenant admin switch is off
-  * *PrivilegeStatus.NotDeclared*: the visual has no declaration for the local storage in the privileges array
-  * *PrivilegeStatus.NotSupported*: the API isn't supported. See [limitations](#considerations-and-limitations) for more information.
-  * *PrivilegeStatus.Allowed*: the API is supported and allowed.
 
 This method returns a promise that will be resolved for a Boolean value.
 
@@ -126,6 +130,22 @@ export class Visual implements IVisual {
                 //handle error
             });
         };
+
+        // if you are using API version > 4.6.0
+        downloadBtn.onclick = async () => {
+            try {
+                const status: powerbi.PrivilegeStatus = await this.downloadService.exportStatus();
+                if (status === powerbi.PrivilegeStatus.Allowed) {
+                    const result = await this.downloadService.exportVisualsContent('aaaaa','a.txt', 'text/plain', 'aa');
+                    // handle result
+                } else {
+                    // handle if the API is not allowed
+                }
+
+            } catch (err) {
+                //handle error
+            }
+        }
     }
 }
 ```
