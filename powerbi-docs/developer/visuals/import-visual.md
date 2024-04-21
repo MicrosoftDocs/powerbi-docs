@@ -14,7 +14,7 @@ ms.date: 12/2/2023
 
 Power BI comes with many out-of-the-box visuals that are available in the **Visualizations** pane of both [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and [Power BI Service](https://app.powerbi.com).
 
-Many more certified Power BI visuals are available from [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). These visuals are created by Microsoft and Microsoft partners, and are validated by the AppSource validation team. You can [download these visuals](#import-a-power-bi-visual-directly-from-appsource) directly to your **Visualizations** pane.
+Many more certified Power BI visuals are available from [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals&exp=ubp8). These visuals are created by Microsoft and Microsoft partners, and are validated by the AppSource validation team. You can [download these visuals](#import-a-power-bi-visual-directly-from-appsource) directly to your **Visualizations** pane.
 
 You can also [develop your own Power BI visual](develop-power-bi-visuals.md), or get one from a trusted friend or coworker.
 
