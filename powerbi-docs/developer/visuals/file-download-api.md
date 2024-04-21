@@ -42,7 +42,7 @@ Before the download begins, a window appears asking to confirm that the visual i
 
 To use the file download API, add a declaration to the [privileges array in visual capabilities.](./capabilities.md#define-privileges)
 
-The **file download API** has two methods:
+The **file download API** has three methods:
 
 * [status](#the-status-method): available from API version 4.6
 * [`exportVisualsContent`](#the-exportvisualscontent-method): available from API version 4.5
