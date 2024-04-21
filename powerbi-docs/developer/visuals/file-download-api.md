@@ -39,6 +39,8 @@ Before the download begins, a window appears asking to confirm that the visual i
 
 ## How to use the file download API
 
+To use the file download API, add a declaration to the [privileges array in visual capabilities.](./capabilities.md#define-privileges)
+
 The **file download API** has two methods:
 
 * [`exportVisualsContent`](#the-exportvisualscontent-method): available from API version 4.5
@@ -125,6 +127,7 @@ export class Visual implements IVisual {
 
 * The API is supported only in the Power BI service and Power BI desktop
 * The size limit for a downloaded file is 30 MB.
+* This API is a [privileged API](./capabilities.md#privileges-define-the-special-permissions-that-your-visual-requires).
 
 ## Related content
 
