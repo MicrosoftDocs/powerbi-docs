@@ -188,7 +188,7 @@ export class Visual implements IVisual {
 * Local storage isn't supported when Exporting to *PDF* or *pptx*.
 * The API is supported only when a user is signed in.
 * A visual’s data is cleared 29 days after the most recent modification time.
-* This API is a privileged API.
+* This API is a [privileged API](./capabilities.md#privileges-define-the-special-permissions-that-your-visual-requires).
 * The key (parameter provided to *set*, *get*, *Remove*) has the following restrictions:
   * Length must be fewer than 128 characters
   * Can't contain the character '|'
