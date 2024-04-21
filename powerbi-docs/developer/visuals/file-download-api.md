@@ -17,9 +17,10 @@ The **file download API** lets users download data from a custom visual into a f
 :::image type="content" source="./media/file-download-api/custom-visuals-download-admin-setting.png" alt-text="Screenshot of admin setting enabling custom visual downloads.":::
 
 >[!NOTE]
->The **file download API** has two methods:
+>The **file download API** has three methods:
 >
 > * [`exportVisualsContent`](#the-exportvisualscontent-method) is available from API version 4.5
+> * `status` is available from API version 4.6.
 > * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method) is available from API version 5.3.
 > * To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
@@ -56,6 +57,12 @@ The `exportVisualsContent` method has four parameters:
 * filename: string
 * fileType: string - When exporting to a *.pdf* or *.xlsx* file, the `fileType` parameter should be `base64`
 * fileDescription: string
+* status: Returns the status of the file download API:
+
+  * *PrivilegeStatus.DisabledByAdmin*: the tenant admin switch is off
+  * *PrivilegeStatus.NotDeclared*: the visual has no declaration for the local storage in the privileges array
+  * *PrivilegeStatus.NotSupported*: the API isn't supported. See [limitations](#considerations-and-limitations) for more information.
+  * *PrivilegeStatus.Allowed*: the API is supported and allowed.
 
 This method returns a promise that will be resolved for a Boolean value.
 
