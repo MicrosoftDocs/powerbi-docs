@@ -54,7 +54,7 @@ If you need help with writing prompts that get you the report page you want, see
 
 ## Feature overview: Copilot capabilities
 
-You can interact with Copilot in several different ways in Power BI. The main and most obvious way is to open the Copilot pane and ask Copilot to create a report page, or a summary of a page. 
+You can interact with Copilot in several different ways in Power BI. Before you start creating your report, you can ask Copilot for a [summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model), to see if that gives you ideas for the best visuals. After that, the most obvious way is to open the Copilot pane and ask Copilot to create a report page, or a summary of a page. 
 
 Copilot can also create a narrative visual that summarizes a page or a whole report. 
 
