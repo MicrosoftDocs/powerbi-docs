@@ -62,13 +62,13 @@ And Copilot can generate synonyms for Q&A, to help your report readers find what
 
 Here are eight examples of what Copilot can generate.
 
-- A [summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model)
+- A [summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model).
 - A [summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane).
-- A [summary visual on the report itself](#a-summary-visual-on-the-report-itself)
+- A [summary visual on the report itself](#a-summary-visual-on-the-report-itself).
 - [Suggested content for a report](#suggest-content-for-a-report).
-- A [report page](#create-a-report-page)
+- A [report page](#create-a-report-page).
 - A [narrative visual](#a-narrative-visual).
-- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
+- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa).
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
 
@@ -169,7 +169,7 @@ To use the narrative visual in Copilot reports and create Copilot reports:
 
 ### Power BI Desktop
 
-- You need write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report.
+- You need to have write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report.
 
 ## Considerations and limitations
 
