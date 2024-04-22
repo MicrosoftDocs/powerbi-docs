@@ -50,8 +50,8 @@ Before creating a Power BI Embedded capacity, make sure you're signed into Power
     * **Subscription** - The subscription you would like to create the capacity against.
 
     * **Resource group** - The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](/azure/azure-resource-manager/resource-group-overview).
-
-    * **Resource name** - The resource name of the capacity.
+      
+    * **Resource name** - The resource name of the capacity. Please note that capacity name must be unique within the same region and must start with a letter and have 3 to 63 lowercase letters or numbers.
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
