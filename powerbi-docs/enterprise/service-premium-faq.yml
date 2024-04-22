@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 03/13/2024
+  ms.date: 04/22/2024
   LocalizationGroup: Premium
   
 title: Power BI Premium FAQ
@@ -71,7 +71,7 @@ sections:
       - question: |
           What will happen to my Fabric and Power BI items once I cancel my P SKU capacity and purchase an F SKU capacity?    
         answer: |
-          You'll be able to access your Power BI items for 90 days after your P SKU capacity subscription has ended. During these 90 days, you'll be able to migrate your workspaces to your new F SKU capacity without losing access to your existing work. However, once the workspace is reassigned, all scheduled jobs will be canceled. These activities will need to be rescheduled once migrated. 
+          You'll be able to access your Power BI items for 90 days after your P SKU capacity subscription has ended. During these 90 days, you'll be able to migrate your workspaces to your new F SKU capacity without losing access to your existing work. However, once the workspace is reassigned, all currently active jobs will be canceled and will need to be rerun once migrated. Scheduled jobs are not impacted by migration. 
 
       - question: |
           Is Power BI Embedded included with Fabric's F SKUs?
