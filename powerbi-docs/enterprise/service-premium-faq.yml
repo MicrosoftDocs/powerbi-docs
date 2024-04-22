@@ -71,7 +71,7 @@ sections:
       - question: |
           What happens to my Fabric and Power BI items once I cancel my P SKU capacity and purchase an F SKU capacity?    
         answer: |
-          You can to access your Power BI items for 90 days after your P SKU capacity subscription ends. During these 90 days, migrate your workspaces to your new F SKU capacity without losing access to your existing work. However, once the workspace is reassigned, all currently active jobs are canceled. Rerun those jobs after migration. Migration does not impact scheduled jobs. 
+          You can access your Power BI items for 90 days after your P SKU capacity subscription ends. During these 90 days, migrate your workspaces to your new F SKU capacity without losing access to your existing work. However, once the workspace is reassigned, all currently active jobs are canceled. Rerun those jobs after migration. Migration doesn't impact scheduled jobs. 
 
       - question: |
           Is Power BI Embedded included with Fabric's F SKUs?
@@ -91,7 +91,7 @@ sections:
       - question: |
           Do I need a Power BI Pro license with Fabric? 
         answer: |
-          To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, you can view content with a Microsoft Fabric free license, if the content is in the capacity. Fabric items that are not Power BI items, don't require a Pro license. For more information about user licenses in Fabric, see [Per user licenses](/fabric/enterprise/licenses#per-user-licenses).
+          To create Power BI reports and consume content, you need a Power BI Pro license. With an F64 or higher SKU, you can view content with a Microsoft Fabric free license, if the content is in the capacity. Fabric items that aren't Power BI items, don't require a Pro license. For more information about user licenses in Fabric, see [Per user licenses](/fabric/enterprise/licenses#per-user-licenses).
 
       - question: |
           How can I continue to access Power BI Report Server without P SKUs?   
@@ -135,7 +135,7 @@ sections:
           
           *Interactive utilization* is evaluated by considering all the interactive operations that completed on or near the current half-minute evaluation cycle.
           
-          *Background utilization* is evaluated by considering all the background operations that completed during the past twenty-four hours, where each background operation contributes only 1/2880 of its total CPU cost (there are 2880 evaluation cycles in each 24-hour period).
+          *Background utilization* is evaluated by considering all the background operations that completed during the past 24 hours, where each background operation contributes only 1/2,880 of its total CPU cost (there are 2,880 evaluation cycles in each 24-hour period).
           
           A capacity consists of a defined number of v-cores. The [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app tracks the utilization of your capacity v-cores. The CPU usage reported in the app drives the need to autoscale.
           
@@ -196,7 +196,7 @@ sections:
         answer: |
           When you buy a capacity, you get a predefined number of v-cores, as listed in [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
           
-          By displaying your capacity's CPU usage levels, the [Microsoft Fabric Capacity Metrics](/fabric/enterprise/metrics-app) app helps you understand how your capacity is performing. To provide a simple way of measuring your capacity's performance, the app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data displayed in the app.      
+          The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) helps you understand how your capacity is performing by displaying your capacity's CPU usage levels. To provide a way of measuring your capacity's performance, The app reports CPU usage for the number of v-cores your capacity has. Power BI makes throttling and autoscale decisions based on the data displayed in the app.      
 
   - name: Premium Per User (PPU)
     questions:          
