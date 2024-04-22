@@ -54,6 +54,8 @@ The above diagram depicts the following user actions, tools, and features:
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Capacity administrators can enable or disable the automatic page refresh feature. When the feature is disabled, automatic page refresh won't work for any reports stored in workspaces assigned to the capacity. Capacity administrators can also set a minimum refresh interval and a minimum execution interval. These minimum intervals will override any report page setting that uses a lower interval. |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Fabric administrators oversee and monitor activity in the Fabric portal. |
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Key points
 
 The following are some key points to emphasize about the self-service real-time analytics scenario.

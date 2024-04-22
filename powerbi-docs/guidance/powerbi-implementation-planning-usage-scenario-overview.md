@@ -44,6 +44,8 @@ The following usage scenarios are about *content collaboration and delivery*. Th
     > [!NOTE]
     > Additional information about [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) and [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) are described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Self-service BI scenarios
 
 Four usage scenarios focus on supporting *self-service BI* activities, in which analytical responsibilities are handled by people throughout many areas of the organization. The content collaboration and delivery scenarios (described in the previous group of scenarios) also include aspects of self-service BI but from a slightly different viewpoint. The intention of this set of scenarios is to focus on several important aspects to plan for in a Power BI implementation.

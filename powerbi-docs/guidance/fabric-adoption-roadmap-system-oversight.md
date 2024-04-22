@@ -122,6 +122,8 @@ It's important for administrators to become fully aware of Fabric's technical ca
 
 [Capacity](/fabric/enterprise/licenses#capacity-and-skus) includes features and capabilities to deliver analytics solutions at scale. There are two types of Fabric [organizational licenses](/fabric/enterprise/licenses#organizational-licenses): Premium per User (PPU) and capacity. There are several types of [capacity licenses](/fabric/enterprise/licenses#workspace). The type of capacity license determines which Fabric workloads are supported.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 The use of capacity can play a significant role in your strategy for creating, managing, publishing, and distributing content. A few of the top reasons to invest in capacity include:
 
 - [Unlimited Power BI content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users is also available with an F64 Fabric capacity license or higher.

@@ -23,6 +23,8 @@ Despite the efficiencies achieved by the VertiPaq storage engine, it's important
 - Smaller models achieve faster data refresh, resulting in lower latency reporting, higher semantic model refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 There are eight different data reduction techniques covered in this article. These techniques include:
 
 - [Remove unnecessary columns](#remove-unnecessary-columns)

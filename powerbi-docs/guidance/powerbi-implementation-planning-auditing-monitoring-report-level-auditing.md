@@ -136,6 +136,8 @@ Summarized information is available in the **Performance Analyzer** pane. You ca
 > - The number of [active connections](/power-bi/connect-data/desktop-directquery-about#maximum-number-of-connections-option-for-directquery)
 > - Whether [row-level security](/power-bi/enterprise/service-admin-rls) (RLS) is enforced by the Power BI service.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 Data is logged when a user interacts with a report element. Logged data includes more than the visual display elements. It also includes:
 
 - Visual display activity.

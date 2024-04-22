@@ -167,6 +167,8 @@ You can use the auditing data to:
 - **Perform chargebacks:** Perform intercompany chargebacks of Power BI costs based on which users are using the service. In this situation, you should determine which [activities](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in the activity log are important, and correlate those activities to business units or departments.
 - **View trials:** The activity log records when users sign up for a [PPU trial](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). That information can prepare you to purchase a full license for those users before their trial period ends.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ### Performance monitoring
 
 Certain types of auditing data include information that you can use as an input to performance tuning activities.

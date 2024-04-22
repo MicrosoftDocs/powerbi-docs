@@ -27,6 +27,8 @@ As described in the Fabric adoption [maturity levels](fabric-adoption-roadmap-ma
 > [!NOTE]
 > Administering Fabric [capacity](/fabric/enterprise/licenses#microsoft-fabric-concepts) (or Premium capacity) and managing the Power BI service are different concepts. While most organizations have just one [Power BI tenant](powerbi-implementation-planning-tenant-setup.md), an organization can provision multiple capacities for different workloads or business units.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Define scope of responsibilities
 
 There's no single definition of the Fabric administrator role, meaning that the role and routine responsibilities of a Fabric administrator can vary between different organizations. What shouldn't vary is that the role can—and should—evolve over time as organizational priorities and goals change.

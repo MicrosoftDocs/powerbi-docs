@@ -215,6 +215,8 @@ A VNet gateway is a Microsoft managed service. If your organization uses private
 >
 > A VNet gateway is only supported for Power BI Fabric or Premium capacities. The VNet gateway is billed as an [additive premium infrastructure charge](https://powerbi.microsoft.com/blog/vnet-data-gateway-for-fabric-and-power-bi-is-now-generally-available/) for that capacity.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 The following diagram depicts a high-level overview of a VNet gateway.
 
 :::image type="content" source="media/powerbi-implementation-planning-data-gateways/vnet-gateway.svg" alt-text="Diagram shows the virtual network (VNet) gateway. Items in the diagram are described in the following table." border="false":::

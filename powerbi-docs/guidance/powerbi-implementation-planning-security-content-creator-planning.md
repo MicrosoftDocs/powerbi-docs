@@ -763,6 +763,8 @@ Content creators might also need:
 - Workspace creation permissions (when workspaces need to be created by the pipeline).
 - [Premium or Fabric capacity permissions](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#create-a-workspace) (when workspaces are assigned by the pipeline).
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 For more information, see [Deployment pipeline access](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md#access-for-deployment-pipeline).
 
 #### XMLA endpoint

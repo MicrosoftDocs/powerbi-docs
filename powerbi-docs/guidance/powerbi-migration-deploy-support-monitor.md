@@ -33,6 +33,8 @@ For IT-managed solutions, or solutions that are critical to business productivit
 
 If your content has been published to a workspace on Premium capacity, [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing can be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ### Deploy to test workspace
 
 Key activities during a deployment to the test workspace typically include:

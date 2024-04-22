@@ -146,7 +146,11 @@ Three types of dataflow tables (also known as *entities*) are depicted in the sc
 
 ### Enhanced compute engine
 
-The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium. The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md) from the enhanced compute engine:
+The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md) from the enhanced compute engine:
 
 - Split out the staging and transformation dataflows.
 - Use the same workspace to store the staging and transformation dataflows.
