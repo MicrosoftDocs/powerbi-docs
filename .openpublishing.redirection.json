@@ -4699,7 +4699,12 @@
             "source_path": "powerbi-docs/admin/service-admin-reference.md",
             "redirect_url": "/power-bi/enterprise/service-admin-reference",
             "redirect_document_id": false
-        }, 
+        },
+        {
+            "source_path": "powerbi-docs/consumer/fabric-trial.md",
+            "redirect_url": "/fabric/get-started/fabric-trial",
+            "redirect_document_id": false
+        },  
         {
             "source_path": "powerbi-docs/admin/service-admin-rls.md",
             "redirect_url": "/power-bi/enterprise/service-admin-rls",
