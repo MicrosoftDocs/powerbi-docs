@@ -242,7 +242,7 @@ Once you decide how to validate content, you can plan how you'll deploy it to an
 
 **Checklist** - When planning for how to validate content, key decisions and actions include:
 
-[!div class="checklist"]
+> [!div class="checklist"]
 > - **Design and document test conditions:** Describe the tests that you'll conduct, what they test, and how you'll perform them.
 > - **Decide on a peer review process:** Describe who else will validate the content aside from yourself.
 > - **Decide on an approach to manual testing:** Decide which tools and features you'll use to validate the content that you create.

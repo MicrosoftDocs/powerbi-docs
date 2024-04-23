@@ -214,7 +214,7 @@ The following sections describe approaches you can take to promote content betwe
 > [!CAUTION]
 > Avoid manually publishing content from your local machine to test and production workspaces. It can result in errors or disruptions due to mistakes. Generally, you should only publish to a development workspace, or to a [private workspace](powerbi-implementation-planning-content-lifecycle-management-validate.md#decide-how-creators-should-validate-content) if you use one.
 
-### Fabric deployment pipelines
+### Deploy with Fabric deployment pipelines
 
 Deployment pipelines allow you to set up two or more stages (such as development, test, or production) and to deploy Fabric content between these stages. A pipeline administrator assigns a single Power BI workspace to each stage in the deployment pipeline. How you use deployment pipelines depends upon how you've decided to [set up and use workspaces](powerbi-implementation-planning-content-lifecycle-management-deploy.md#decide-how-youll-promote-content-between-workspaces).
 
@@ -273,7 +273,7 @@ When you conduct a manual deployment, you can [compare stages](/fabric/cicd/depl
 
 You can use the Power BI REST APIs to [deploy content by using a deployment pipeline](/fabric/cicd/deployment-pipelines/pipeline-automation). A benefit of using the REST APIs is that you can automate deployment and integrate it with other tools, like Azure Pipelines in Azure DevOps.
 
-### Azure Pipelines
+### Deploy with Azure Pipelines
 
 Azure Pipelines allow you to orchestrate deployment between all stages. With this approach, you use the Fabric REST APIs to deploy and manage content, making use of different Azure Pipelines such as validation and release pipelines.
 
@@ -311,7 +311,7 @@ In summary, content creators commit and push content changes to a remote Git rep
 
 This approach doesn't require Fabric capacity or Premium licensing when you publish only Power BI Desktop files with the Power BI REST APIs. However, it does involve more setup effort and complexity because you must manage deployment outside of Power BI. Development teams that already use DevOps for data solutions outside of Power BI might be familiar with this approach. Development teams that use this approach can consolidate deployment of data solutions in Azure DevOps.
 
-### Fabric Git integration
+### Deploy with Fabric Git integration
 
 When you use Git integration, you can sync different branches to different workspaces instead of publishing or deploying content, explicitly. That way, you can have separate branches for development, test, and production workspaces. In this scenario, the _main_ branch syncs with the _production_ workspace. You then deploy content between workspaces by performing a pull request to merge the development branch into the test branch (to deploy to the test workspace) or to merge the test branch into the main branch (to deploy to the production workspace).
 
@@ -347,14 +347,14 @@ Once you've planned how you'll deploy content, you should next consider how you'
 
 **Checklist** - When planning how to deploy content, key decisions and actions include:
 
-[!div class="checklist"]
+> [!div class="checklist"]
 > - **Identify the deployment options available to you:** Depending on your licensing and content, you'll have different options available to publish content or promote it between workspaces. Identify whether you can use deployment pipelines, Azure DevOps, Git integration, the Fabric REST APIs, and XMLA read/write endpoints.
 > - **Decide how you'll publish content:** Choose an approach to publish content that best suits your workflow and needs. Ensure that this approach aligns with your other strategies, like how you track and manage changes.
 > - **Decide how you'll promote content between workspaces:** Choose an approach to deploy content from development to test workspaces and from test to production workspaces. Ensure that this approach aligns with your other strategies, like how you'll publish content.
 > - **Plan your release strategy:** Determine whether a specific individual will be responsible for the final review of content before approving a release or deployment. Ensure that this individual is aware of this task and what they should do to safeguard the deployment process without blocking progress.
 > - **Plan post-deployment activities:** Ensure that you've decided on a process to perform activities such as updating a Power BI app or refreshing data items after a metadata deployment. Consider automating this process by using the Fabric REST APIs.
 > - **Perform first-time set up of deployment tools and processes:** Ensure that you set up the appropriate access, and that permissions align to how you set up access to your content.
-> - **Deploy content to production:** Once you've planned and set up your deployment, deploy content to production.
+> - **Deploy content to production:** When you've planned and set up your deployment, deploy content to production.
 
 ## Related content
 

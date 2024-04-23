@@ -130,7 +130,7 @@ Auditing and monitoring of content throughout its lifecycle is important. Creati
 
 **Checklist** - When planning to support and monitor content, key decisions and actions include:
 
-[!div class="checklist"]
+> [!div class="checklist"]
 > - **Assess how user support is handled:** Investigate how support is currently handled to become familiar with the current state.
 > - **Decide how to handle support:** Determine how you'll support the content throughout its lifecycle. Decide how to support both consumers and authors.
 > - **Clarify support roles and responsibilities:** Confirm who's expected to do what, and when, for supporting content after it's published. Clarify specific expectations for content owners (including self-service authors). Also clarify expectations for the Center of Excellence (COE), IT team, BI team, and help desk staff.

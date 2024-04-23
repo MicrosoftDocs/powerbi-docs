@@ -127,7 +127,7 @@ At this point, you've identified content that can be retired, and taken the appr
 
 **Checklist** - When planning to retire and archive content, key decisions and actions include:
 
-[!div class="checklist"]
+> [!div class="checklist"]
 > - **Plan for content clean-up activities:** Determine whether the scope of the analysis will be at the tenant level, domain level, or workspace level. Also consider who'll perform the usage analysis.
 > - **Decide on a time window:** Based on the characteristics of the specific content, determine the best time window for identifying candidates for retirement.
 > - **Select usage metrics:** Consider what usage metrics related to content views and viewers are most important for the content.

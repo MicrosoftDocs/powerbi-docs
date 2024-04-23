@@ -425,7 +425,7 @@ When you use pull requests to merge changes to Power BI content, consider the fo
 
 **Checklist** - When planning where you'll store files, key decisions and actions include:
 
-[!div class="checklist"]
+> [!div class="checklist"]
 > - **Choose your development tools:** Ensure your approach to develop content aligns with how you'll collaborate with other content creators and use version control.
 > - **Choose between .pbip and .pbix formats for models and reports:** Typically, the .pbip format is more beneficial for source control, but self-service users can find .pbix files easier to use.
 > - **Separate semantic model and report development:** Version control is most effective when you manage changes for different item types, separately. [Separating model and report development](report-separate-from-model.md) is considered a good practice.

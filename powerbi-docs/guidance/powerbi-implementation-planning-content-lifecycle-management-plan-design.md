@@ -274,7 +274,7 @@ Content creators can author content directly in the Fabric portal. In this scena
 
 **Checklist** - When planning and designing content, key decisions and actions include:
 
-[!div class="checklist"]
+> [!div class="checklist"]
 > - **Conduct solution planning:** Gather [business requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-business-requirements) and [technical requirements](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#gather-technical-requirements) to sufficiently understand the problem your content will address, and to design how this content will address the problem.
 > - **Identify who will create the content:** Depending on the workflow, skills, and needs of the individual content creator, different approaches to lifecycle management might be needed.
 > - **Identify whether multiple content creators need to collaborate:** Ensure that collaborating content creators are using file types that support version control, like .pbip files.
