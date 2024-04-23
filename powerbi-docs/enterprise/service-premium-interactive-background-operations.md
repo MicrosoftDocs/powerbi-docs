@@ -41,6 +41,7 @@ The table below lists the Power BI operations. It provides a short description f
 | Render | A Power BI paginated report viewed in Power BI service | Paginated report | Interactive |
 | Web modeling read | A data model read operation in the semantic model web modeling user experience | Semantic models | Interactive |
 | Web modeling write | A data model write operation in the semantic model web modeling user experience  | Semantic models | Interactive |
+| VNet Data Gateway Uptime | A query run through a virtual network data gateway | Dataflows Gen2<br><br>Paginated Reports<br><br>Power Platform Dataflows<br><br>Semantic models (Datasets) | Interactive/background |
 | XMLA read | XMLA read operations initiated by the user, for queries and discoveries  | Semantic models | Interactive |
 | XMLA write | A background XMLA write operation that changes the model | Semantic models | Background |
 
