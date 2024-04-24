@@ -78,7 +78,7 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 
 If you want to define a parameter, follow these steps.
 
-1. Define the parameter in Power Query in the Get Data experience. Learn more about [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters).
+1. Define the parameter in Power Query in the Get Data experience. Learn more about [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md).
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pqo-new-parameter.png" alt-text="Screenshot showing new parameter in Power Query.":::
    
@@ -123,4 +123,4 @@ When you're done with the report design, you can save the report to your local m
 
 - [Power BI Report Builder](../report-builder-power-bi.md)
 - [Intro to report data in Power BI Report Builder](../report-data/report-data.md)
-- [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters)
+- [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md)
