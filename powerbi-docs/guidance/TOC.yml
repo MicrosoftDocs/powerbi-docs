@@ -231,6 +231,22 @@
           href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
         - name: "Workspace-level planning"
           href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
+      - name: Content lifecycle management (CLM)
+        items:
+        - name: "CLM overview"
+          href: powerbi-implementation-planning-content-lifecycle-management-overview.md
+        - name: "Plan and design content"
+          href: powerbi-implementation-planning-content-lifecycle-management-plan-design.md
+        - name: "Develop and manage content"
+          href: powerbi-implementation-planning-content-lifecycle-management-develop-manage.md
+        - name: "Validate content"
+          href: powerbi-implementation-planning-content-lifecycle-management-validate.md
+        - name: "Deploy content"
+          href: powerbi-implementation-planning-content-lifecycle-management-deploy.md
+        - name: "Support and monitor content"
+          href: powerbi-implementation-planning-content-lifecycle-management-support-monitor.md
+        - name: "Retire and archive content"
+          href: powerbi-implementation-planning-content-lifecycle-management-retire-archive.md
       - name: Security
         items:
         - name: "Security overview"
