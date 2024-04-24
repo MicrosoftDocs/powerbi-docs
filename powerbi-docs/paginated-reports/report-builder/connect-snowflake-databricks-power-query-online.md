@@ -76,38 +76,33 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 
 ## How to bind parameters
 
+If you want to define a parameter, follow these steps.
 
-If you want to define a parameter you need to:
+1. Define the parameter in Power Query in the Get Data experience. Learn more about [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters).
 
-**Step 1**. Define the parameter in Power Query/ the Get Data experience. [Learn more] (../../connect-data/desktop-dynamic-m-query-parameters)
-
-:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pqo-new-parameter.png" alt-text="Screenshot showing new parameter in pqo.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pqo-new-parameter.png" alt-text="Screenshot showing new parameter in Power Query.":::
    
-> [!NOTE]
-> Keep track of the exact parameter name and type. If you missed noting it down, you can **Edit Mashup** and find the parameter name.
+    > [!NOTE]
+    > Keep track of the exact parameter name and type. If you missed noting it down, you can **Edit Mashup** and find the parameter name.
 
-**Step 2**. In Power BI Report Builder, **Add parameter** by right clicking on the **Parameters** folder
+1. In Power BI Report Builder, **Add parameter** by right-clicking the **Parameters** folder.
 
-:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-rb-add-parameter.png" alt-text="Screenshot showing add parameter in PBI RB.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-rb-add-parameter.png" alt-text="Screenshot showing add parameter in Power BI Report Builder.":::
 
-**Step 3**. Enter the parameter name, prompt name, data type as you would when you set up parameters in RB.
+1. Enter the parameter name, prompt name, and data type, as you would when you set up parameters in Report Builder.
 
-> [!NOTE]
-> The data type must be as close to the data type in power query ( Step 1). For example, decimal in power query is closest to float in Power BI Report Builder.
+    > [!NOTE]
+    > The data type must be as close as possible to the data type in Power Query in Step 1. For example, *decimal* in Power Query is closest to *float* in Power BI Report Builder.
 
+1. Right-click the RDL dataset that you want the parameter for, and select **Dataset Properties**.
 
-**Step 4**.  Right click on the RDL dataset that you want the parameter for and select **Dataset Properties**
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pbirb-datasetproperties.png" alt-text="Screenshot showing dataset properties in Power BI Report Builder.":::
 
-:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pbirb-datasetproperties.png" alt-text="Screenshot showing dataset properties in PBI RB.":::
+1. In the **Dataset Properties** dialog, select the **Parameters** tab and map the parameters. The **Parameter name** is the name defined in the **Get data** experience. The **Parameter Value** is the name defined in Power BI Report Builder.
 
-
-**Step 5**.  In the **Dataset Properties** dialog, select the Parameters tab and map the parameters. The **Parameter name** is the name defined in the **Get data** experience. The **Parameter Value** is the name defined in Power BI Report Builder.
-
-:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-properties-parameter.png" alt-text="Screenshot showing parameters in dataset properties in PBI RB.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-properties-parameter.png" alt-text="Screenshot showing parameters in dataset properties in Power BI Report Builder.":::
     
 You can now build your report and use the parameters to render the report.
-
-
 
 ## Next steps 
 
@@ -129,3 +124,4 @@ When you're done with the report design, you can save the report to your local m
 
 - [Power BI Report Builder](../report-builder-power-bi.md)
 - [Intro to report data in Power BI Report Builder](../report-data/report-data.md)
+- [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters)
