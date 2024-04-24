@@ -159,24 +159,58 @@ The following table describes the **schema**.
 
 ### ExecutionMetrics event
 
-For every **DiscoverEnd**, **CommandEnd** and **QueryEnd** request, a single event named **ExecutionMetrics** is logged, holding execution statistics for the entire request. These statistics can assist you in diagnosing and troubleshooting more effectively.
+For every **Discover**, **Command** and **Query** request, a single event named **ExecutionMetrics** is logged after, holding execution statistics for the entire request. These statistics can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with with the nearest **[Discover|Command|Query]End** event.
 
-The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model.
+
+The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model in the last day:
 
 ```sql
 let executionMetrics = PowerBIDatasetsWorkspace
-    | where TimeGenerated > ago(10d)
+    | where TimeGenerated > ago(1d)
     | where ArtifactId == "[Semantic Model Id]"
     | where OperationName == "ExecutionMetrics"
     | project TimeGenerated, XmlaRequestId, CorrelationId, EventText;
 let commands = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)
     | where OperationName in ("CommandEnd")
     | where EventText contains "<Refresh"
     | project TimeGenerated, ArtifactId, CommandOperationName = OperationName, XmlaRequestId, CorrelationId, CommandText = EventText;
 commands
 | join kind=inner executionMetrics on XmlaRequestId
 | project TimeGenerated, ArtifactId, CommandOperationName, XmlaRequestId, EventText, CommandText
+```
 
+The following KQL query retrieves events that were throttled in the last day by workspace and item:
+
+```sql
+let executionMetrics = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)    
+    | where OperationName == "ExecutionMetrics"    
+    | extend eventTextJson = parse_json(EventText)      
+    | extend capacityThrottlingMs=toint(eventTextJson.capacityThrottlingMs)
+    | where capacityThrottlingMs > 0;
+let commands = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)    
+    | where OperationName in ("CommandEnd", "QueryEnd", "DiscoverEnd")    
+    | project
+        TimeGenerated,
+        ArtifactId,
+        PowerBIWorkspaceId,
+        CommandOperationName = OperationName,
+        XmlaRequestId,
+        CorrelationId,
+        CommandText = EventText;
+commands
+| join kind=inner executionMetrics on XmlaRequestId
+| project
+    TimeGenerated,
+    ArtifactId,
+    PowerBIWorkspaceId,
+    CommandOperationName,
+    XmlaRequestId,
+    EventText,
+    CommandText
+| summarize count() by PowerBIWorkspaceId, ArtifactId, CommandOperationName
 ```
 
 The statistics are presented as a JSON text in the **EventText** property:
