@@ -1,7 +1,7 @@
 ---
 title: "Connect to Snowflake and Databricks with Power Query Online (Preview)"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 03/25/2024
+ms.date: 04/23/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -71,7 +71,39 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
 > [!NOTE]
-> If you had defined a parameter, you have to define it again in Power BI Report BUilder.
+> If you had defined a parameter, you have to define it again in Power BI Report Builder.
+
+## How to bind parameters
+
+If you want to define a parameter you need to:
+
+Step 1. Define the parameter in Power Query/ the Get Data experience. [Learn more] (../../connect-data/desktop-dynamic-m-query-parameters)
+
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pqo-new-parameter.png" alt-text="Screenshot showing new parameter in pqo.":::
+   
+> [!NOTE]
+> Keep track of the exact parameter name and type. If you missed noting it down, you can **Edit Mashup** and find the parameter name.
+
+Step 2. In Power BI Report Builder, **Add parameter** by right clicking on the **Parameters** folder
+
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-rb-add-parameter.png" alt-text="Screenshot showing add parameter in PBI RB.":::
+
+Step 3. Enter the parameter name, prompt name, data type as you would when you set up parameters in RB.
+
+> [!NOTE]
+> The data type must be as close to the data type in power query ( Step 1). For example, decimal in power query is closest to float in Power BI Report Builder.
+
+
+4.  Right click on the RDL dataset that you want the parameter for and select **Dataset Properties**
+
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pbirb-datasetproperties.png" alt-text="Screenshot showing dataset properties in PBI RB.":::
+
+
+5.  In the **Dataset Properties** dialog, select the Parameters tab and map the parameters. The **Parameter name** is the name defined in the **Get data** experience. The **Parameter Value** is the name defined in Power BI Report Builder.
+
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-properties-parameter.png" alt-text="Screenshot showing parameters in dataset properties in PBI RB.":::
+    
+You can now build your report and use the parameters to render the report.
 
 ## Next steps 
 
