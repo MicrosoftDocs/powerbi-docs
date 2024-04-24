@@ -248,11 +248,10 @@ The following table shows settings for auto-generated semantic models. When thes
 | Query caching | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-18.png" alt-text="Screenshot of the query caching setting."::: |
 
 ## Datamarts considerations and limitations
-
-When using datamarts with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
-
-* You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
-* You cannot name or rename cloud data sources; you can name or rename gateway connections.
+* Only the Datamart owner can add/change data sources corresponding to that Datamart. If the current Datamart owner is unavailable, another workspace owner can use the Takeover feature to gain access.
+* When using datamarts with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
+   * You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
+   * You cannot name or rename cloud data sources; you can name or rename gateway connections.
 
 ## Related content
 This article provided sample data and instructions on how to create and interact with datamarts. 
