@@ -72,7 +72,7 @@ The error **Error: Invalid connection credentials** appears when the gateway can
 
 Check whether the data source has been misconfigured to deny access to the user. You may need to work with your data source/database administrator to access the data source's configuration and settings.
 
-## Next steps
+## Related content
 
 - [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md)
 - [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)

@@ -41,10 +41,10 @@ Data renderer formats are controlled by a different set of properties than layou
   
  The XML file with report data export option saves a report as an XML file. The XML schema for the report is specific to the report. The report layout information is not saved by the XML export option. The XML generated using this option can be imported into a database, used as an XML data message, or sent to a custom application. For more information about rendering your report in the XML file type, see [Exporting to XML &#40;Power BI Report Builder and service&#41;](../report-builder/export-xml-report-builder.md).  
   
-## Next steps
+## Related content
 
- [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
- [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
- [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
- [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)   
+* [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+* [Rendering Behaviors &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+* [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+* [Rendering Report Items &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+* [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)   

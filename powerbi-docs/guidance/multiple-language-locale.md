@@ -122,6 +122,6 @@ Here are a few examples of how a date value formatted with **Short Date** appear
 | de-DE  | 31.12.2022 |
 | ja-JP  | 2022/12/31 |
 
-## Next steps
+## Related content
 
 - [Create multiple-language reports with Translations Builder](translation-builder.md)

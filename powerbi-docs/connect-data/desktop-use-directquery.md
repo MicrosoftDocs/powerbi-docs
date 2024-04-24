@@ -90,7 +90,7 @@ The row limit doesn't apply to aggregations or calculations used to select the s
 
 By default, all users who consume a published report in the Power BI service connect to the underlying data source by using the credentials entered after publication. This situation is the same as for imported data. All users see the same data, regardless of any security rules that the underlying source defines.
 
-If you need per-user security implemented with DirectQuery sources, either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) and [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md).
+If you need per-user security implemented with DirectQuery sources, either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. For more information, see [Row-level security (RLS) with Power BI](/fabric/security/service-admin-rls) and [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md).
 
 ### Other DirectQuery limitations
 
@@ -124,7 +124,7 @@ Some other limitations of using DirectQuery include:
 
   :::image type="content" source="media/desktop-use-directquery/directquery-date-filter-is-on-or-after.png" alt-text="Screenshot that shows setting a filter to is on or after 12/31/9999 to return rows that contain 12/31/9999.":::
 -->
-## Next steps
+## Related content
 
 - [DirectQuery in Power BI](desktop-directquery-about.md)
 - [Data sources supported by DirectQuery](power-bi-data-sources.md)

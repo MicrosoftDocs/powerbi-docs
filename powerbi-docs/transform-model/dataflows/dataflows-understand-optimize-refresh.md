@@ -206,7 +206,7 @@ Take the following steps when investigating scenarios where the compute engine i
 
 A Power BI Pro license has a dataflows refresh limit of 8 refreshes per day.
 
-## Next steps
+## Related content
 
 * [Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)
 * [Incremental refresh and real-time data for semantic models](../../connect-data/incremental-refresh-overview.md)

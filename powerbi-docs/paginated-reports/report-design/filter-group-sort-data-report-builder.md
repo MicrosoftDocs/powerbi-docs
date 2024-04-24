@@ -91,7 +91,7 @@ ms.reviewer: saurkumar
   
  All three types of sorts can be combined in the same report. By default, sort order is determined by the order in which data is returned by the dataset query. Sort expressions are applied in the data region and data region group. Interactive sorts are applied after sort expressions.  
   
- For expressions that contain aggregate functions, most results are not affected by sort order. Return values for the following aggregate functions are affected by sort order: First, Last, and Previous. For more information, see [Aggregate functions reference (Power BI Report Builder)](../expressions/report-builder-functions-aggregate-functions-reference.md).  
+ For expressions that contain aggregate functions, most results are not affected by sort order. Return values for the following aggregate functions are affected by sort order: First, Last, and Previous. For more information, see [Aggregate functions reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
   
 ### Sort data in a dataset query  
  Include sort order in the dataset query to pre-sort data before it is retrieved for a report. By sorting data in the query, the sorting work is done by the data source instead of by the report processor.  
@@ -168,21 +168,22 @@ FROM Production.Product
   
  [Add a total to a group or tablix data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs)  
   
-## Next steps  
- [Group expression examples (Power BI Report Builder)](../expressions/group-expression-examples-report-builder.md)  
+## Related content
+
+- [Group expression examples (Power BI Report Builder)](../expressions/group-expression-examples-report-builder.md)  
   
- [Filter equation examples (Power BI Report Builder)](../expressions/filter-equation-examples-report-builder.md)  
+- [Filter equation examples (Power BI Report Builder)](../expressions/filter-equation-examples-report-builder.md)  
   
- [Add dataset filters, data region filters, and group filters (Power BI Report Builder)](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)  
+- [Add dataset filters, data region filters, and group filters (Power BI Report Builder)](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)  
   
- [Understanding groups (Power BI Report Builder)](/sql/reporting-services/report-design/understanding-groups-report-builder-and-ssrs)  
+- [Understanding groups (Power BI Report Builder)](/sql/reporting-services/report-design/understanding-groups-report-builder-and-ssrs)  
   
- [Creating recursive hierarchy groups (Power BI Report Builder)](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs)  
+- [Creating recursive hierarchy groups (Power BI Report Builder)](/sql/reporting-services/report-design/creating-recursive-hierarchy-groups-report-builder-and-ssrs)  
   
- [Expression scope for totals, aggregates, and built-in collections (Power BI Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
+- [Expression scope for totals, aggregates, and built-in collections (Power BI Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections)  
   
- [Report and group variables collections references (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder)  
+- [Report and group variables collections references (Power BI Report Builder)](/sql/reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder)  
   
- [Displaying a series with multiple data ranges on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)  
+- [Displaying a series with multiple data ranges on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/displaying-a-series-with-multiple-data-ranges-on-a-chart)  
   
- [Linking multiple data regions to the same dataset (Power BI Report Builder)](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)  
+- [Linking multiple data regions to the same dataset (Power BI Report Builder)](/sql/reporting-services/report-design/linking-multiple-data-regions-to-the-same-dataset-report-builder-and-ssrs)  

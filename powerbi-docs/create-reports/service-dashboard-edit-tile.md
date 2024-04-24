@@ -146,12 +146,12 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 1. Deleting a tile doesn't delete the underlying visualization. Open the underlying report by selecting the "Amount" tile. Open the last page in your report to see that the original visualization hasn't been deleted from the report.
 
-## Next steps
+## Related content
 
-[Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
+* [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
 
-[Dashboards in Power BI](../consumer/end-user-dashboards.md)
+* [Dashboards in Power BI](../consumer/end-user-dashboards.md)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

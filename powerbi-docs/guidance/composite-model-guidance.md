@@ -243,7 +243,7 @@ Here's some other guidance to help you design and maintain composite models.
 - **Data lineage:** Use the [data lineage](/power-bi/collaborate-share/service-data-lineage) and [semantic model impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features before publishing composite model changes. These features are available in the Power BI service, and they can help you to understand how semantic models are related and used. It's important to understand that you can't perform impact analysis on external semantic models that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external semantic model, you need to navigate to the source workspace.
 - **Schema updates:** You should refresh your composite model in Power BI Desktop when schema changes are made to upstream data sources. You'll then need to republish the model to the Power BI service. Be sure to thoroughly test calculations and dependent reports.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources.
 

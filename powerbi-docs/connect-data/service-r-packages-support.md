@@ -1033,7 +1033,7 @@ The following table shows which packages are not supported in the Power BI servi
 | mailR |10/03/2016 |Networking is blocked |
 | RevoScaleR |8/30/2016 |Ships only with Microsoft R Server |
 
-## Next steps
+## Related content
 
 For more information about R in Power BI, take a look at the following articles:
 

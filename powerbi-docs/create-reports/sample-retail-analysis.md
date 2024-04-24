@@ -212,7 +212,7 @@ The last area we want to explore is our growth by examining the new stores opene
 
 1. Explore by selecting other bars, lines, and bubbles throughout the charts and see what insights you can discover.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

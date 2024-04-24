@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-6CQnf-NGtpU
-ms.date: 09/19/2023
+ms.date: 02/07/2024
 ---
 # How to find your report server product key
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
@@ -28,13 +28,13 @@ You downloaded [Power BI Report Server](get-started.md), and you have a SQL Serv
 > For more details, see the section "Use of Power BI Report Server – SQL Server Enterprise Edition" in [SQL Server licensing](https://www.microsoft.com/licensing/terms/productoffering/SQLServer/EAEAS).
 
 ## Purchased Power BI Premium
-If you have purchased Power BI Premium, within the **Capacity settings** tab of the Power BI admin portal, you'll have access to your Power BI Report Server product key. This will only be available for Global Admins or users assigned the Fabric administrator role.
+If your organization has purchased Power BI Premium capacity, you can get the key for Power BI Report Server from the **Premium Settings** tab in the admin portal. The key is accessible to only users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
 
-![Power BI Report Server key within Premium settings](media/find-product-key/pbirs-product-key.png)
+![Screenshot of Power BI Report Server key within Premium settings.](media/find-product-key/pbirs-product-key.png)
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
-![Power BI Report Server product key](media/find-product-key/pbirs-product-key-dialog.png)
+![Screenshot of Power BI Report Server product key.](media/find-product-key/pbirs-product-key-dialog.png)
 
 ## Purchased Software Assurance agreement
 If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/). Look under the latest service pack, for the latest version of SQL Server. If you don't see it there, look under the RTM release of the latest SQL Server version.
@@ -46,7 +46,9 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 
 ### Volume licensing in the Microsoft 365 Admin Center
 
-If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **Downloads** section.
+If your volume licensing has moved to the Microsoft 365 Admin Center, you can find your product key by choosing a SQL Server version and then looking under the **View Downloads** section. 
+
+Check in **Billing** > **Your Products** > **Volume Licensing** > **View Downloads and Keys** > **Find SQL Server** > **View Downloads** > **View additional instructions**:
 
 1. Select the key next to the version of the software that you have.
 
@@ -60,11 +62,11 @@ If your volume licensing has moved to the Microsoft 365 Admin Center, you can fi
 
     :::image type="content" source="media/find-product-key/m365-additional-instructions.png" alt-text="Screenshot of View additional instructions.":::
 
-## Next steps
+## Related content
 
-[Install Power BI Report Server](install-report-server.md)  
-[Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
+* [Install Power BI Report Server](install-report-server.md)  
+* [Install Power BI Desktop for Power BI Report Server](install-powerbi-desktop.md)  
+* [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
+* [Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

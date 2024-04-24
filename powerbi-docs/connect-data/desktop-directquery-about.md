@@ -364,7 +364,7 @@ Once you publish a report to the Power BI service, the maximum number of concurr
 |Environment            |Upper limit per data source |
 |-----------------------|-------------|
 |Power BI Pro           |10 active connections|
-|Power BI Premium       |30 active connections|
+|Power BI Premium       |Depends on [semantic model SKU limitation](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation)|
 |Power BI Report Server |10 active connections|
 
 > [!NOTE]
@@ -514,7 +514,7 @@ Power Query Editor defines the exact subselect queries. This use of subselect qu
 
 Power BI uses this pattern because the analyst provides the SQL query directly. Power BI uses the query as provided, without any attempt to rewrite it.
 
-## Next steps
+## Related content
 
 For more information about DirectQuery in Power BI, see:
 

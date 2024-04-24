@@ -49,9 +49,10 @@ ms.reviewer: saurkumar
   
  If you're using a custom palette, you can change the order of the colors to change the color of different series in the chart.  
   
-## Next steps  
- [Formatting series colors on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
- [Charts (Power BI Report Builder)](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
- [Specify consistent colors across multiple shape charts (Power BI Report Builder)](/sql/reporting-services/report-design/specify-consistent-colors-across-multiple-shape-charts-report-builder-and-ssrs)  
+## Related content
+
+- [Formatting series colors on a chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
+- [Charts (Power BI Report Builder)](/sql/reporting-services/report-design/charts-report-builder-and-ssrs)   
+- [Specify consistent colors across multiple shape charts (Power BI Report Builder)](/sql/reporting-services/report-design/specify-consistent-colors-across-multiple-shape-charts-report-builder-and-ssrs)  
   
   

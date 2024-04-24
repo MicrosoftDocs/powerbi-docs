@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/15/2023
+ms.date: 04/01/2024
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
@@ -76,7 +76,7 @@ If groups of users in an organization always need to get to a specific report, d
 
 When an admin has configured a launch item for a group of users, those users will be able to accept it or reject it. If they reject it, they can configure their own launch item, or they can just not use any launch item at all.
 
-A launch item can be a report, a specific report page, a dashboard, a scorecard, an app, or even a specific report within an app.
+A launch item can be a report, a specific report page, a dashboard, a scorecard, an app, or even a specific report within an app. The admin can have the launch item open for users in full screen mode by including the query parameter *?fullScreen=1* in the URI used to specify the launch item.
 
 | Key | Type | Description |
 |---|---|---|---|
@@ -103,7 +103,7 @@ The following are the steps you need to create an app configuration policy. Once
 
 The Intune portal enables administrators to easily deploy these settings to the Power BI app via app configuration policies by selecting **Apps** > **App configuration policies** > **Add** > **Managed devices**. For further information, see [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios). However, any MDM provider is supported. If you aren't using Intune, you need to consult with your MDM documentation about how to deploy these settings.
 
-## Next steps
+## Related content
 
 - Get the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 - Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)

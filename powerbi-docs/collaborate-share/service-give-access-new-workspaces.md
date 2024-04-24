@@ -32,7 +32,8 @@ After you [create a workspace](service-create-the-new-workspaces.md) in Power BI
 
 9. Select **Add** > **Close**.
 
-## Next steps
+## Related content
+
 * Read about [the workspace experience in Power BI](service-new-workspaces.md).
 * [Create workspaces](service-create-the-new-workspaces.md).
 * [Publish an app from a workspace in Power BI](service-create-distribute-apps.md).

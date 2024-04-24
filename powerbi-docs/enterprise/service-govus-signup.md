@@ -83,7 +83,7 @@ Before you can use the Power BI service for the US government, you have to work 
 
 To start the allowlist process, contact your Microsoft account team for assistance. Only administrators can request to be added to the allowlist. The process takes about three weeks. During this time, the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US government cloud.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Overview of Power BI for US government](service-govus-overview.md)

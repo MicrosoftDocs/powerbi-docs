@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/27/2023
+ms.date: 03/07/2024
 ---
 
 # Model relationships in Power BI Desktop
@@ -55,7 +55,7 @@ A model relationship relates one column in a table to one column in a different 
 > It's not possible to relate a column to a different column *in the same table*. This concept is sometimes confused with the ability to define a relational database foreign key constraint that's table self-referencing. You can use this relational database concept to store parent-child relationships (for example, each employee record is related to a "reports to" employee). However, you can't use model relationships to generate a model hierarchy based on this type of relationship. To create a parent-child hierarchy, see [Parent and Child functions](/dax/parent-and-child-functions-dax).
 
 ### Data types of columns
-The data type for both the "from" and "to' column of the relationship should be the same. Working with relationships defined on **DateTime** columns might not behave as expected. The engine that stores Power BI data, only uses _DateTime_ data types; _Date_,  _Time_ and _Date/Time/Timezone_ data types are Power BI formatting constructs implemented on top. Any model-dependent objects will still appear as _DateTime_ in the engine (such as relationships, groups, and so on). As such, if a user selects **Date** from the **Modeling** tab for such columns, they still don't register as being the same date, because the time portion of the data is still being considered by the engine. [Read more about how Date/time types are handled](../connect-data/desktop-data-types.md#datetime-types). To correct the behavior, the column data types should be updated in the **Power Query Editor** to remove the _Time_ portion from the imported data, so when the egine is handling the data, the values will appear the same.
+The data type for both the "from" and "to' column of the relationship should be the same. Working with relationships defined on **DateTime** columns might not behave as expected. The engine that stores Power BI data, only uses _DateTime_ data types; _Date_,  _Time_ and _Date/Time/Timezone_ data types are Power BI formatting constructs implemented on top. Any model-dependent objects will still appear as _DateTime_ in the engine (such as relationships, groups, and so on). As such, if a user selects **Date** from the **Modeling** tab for such columns, they still don't register as being the same date, because the time portion of the data is still being considered by the engine. [Read more about how Date/time types are handled](../connect-data/desktop-data-types.md#datetime-types). To correct the behavior, the column data types should be updated in the **Power Query Editor** to remove the _Time_ portion from the imported data, so when the engine is handling the data, the values will appear the same.
 
 ### Cardinality
 
@@ -92,7 +92,7 @@ A **many-to-many** relationship means both columns can contain duplicate values.
 For guidance on using this cardinality type, see [Many-to-many relationship guidance](../guidance/relationships-many-to-many.md).
 
 > [!NOTE]
-> The Many-to-many cardinality type isn't currently supported for models developed for Power BI Report Server.
+> The Many-to-many cardinality type is supported for models developed for Power BI Report Server January 2024 and later.
 
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cardinality type by looking at the indicators (1 or \*) on either side of the relationship line. To determine which columns are related, you'll need to select, or hover the cursor over, the relationship line to highlight the columns.
@@ -113,7 +113,7 @@ Each model relationship is defined with a cross filter direction. Your setting d
 
 For one-to-many relationships, the cross filter direction is always from the "one" side, and optionally from the "many" side (bi-directional). For one-to-one relationships, the cross filter direction is always from both tables. Lastly, for many-to-many relationships, cross filter direction can be from either one of the tables, or from both tables. Notice that when the cardinality type includes a "one" side, that filters will always propagate from that side.
 
-When the cross filter direction is set to **Both**, another property becomes available. It can apply bi-directional filtering when Power BI enforces row-level security (RLS) rules. For more information about RLS, see [Row-level security (RLS) with Power BI Desktop](../enterprise/service-admin-rls.md).
+When the cross filter direction is set to **Both**, another property becomes available. It can apply bi-directional filtering when Power BI enforces row-level security (RLS) rules. For more information about RLS, see [Row-level security (RLS) with Power BI Desktop](/fabric/security/service-admin-rls).
 
 You can modify the relationship cross filter direction, including the disabling of filter propagation, by using a model calculation. It's achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
 
@@ -285,7 +285,7 @@ The following list orders filter propagation performance, from fastest to slowes
 3. Many-to-many cardinality relationships
 4. Cross source group relationships
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

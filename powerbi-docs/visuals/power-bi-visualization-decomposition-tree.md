@@ -1,8 +1,8 @@
 ---
 title: Decomposition tree
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -169,9 +169,9 @@ Other limitations:
 
 - Support inside Q&A
 
-## Next steps
+## Related content
 
-[Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
+- [Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
 
-[Power BI visualizations](power-bi-report-visualizations.md)
+- [Power BI visualizations](power-bi-report-visualizations.md)
 

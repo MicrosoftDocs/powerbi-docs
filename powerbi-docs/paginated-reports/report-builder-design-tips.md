@@ -141,6 +141,6 @@ For more information, see [Avoid blank pages when printing paginated reports](..
 
 The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support all combine to determine what report items fit together on a rendered page.
  
-## Next steps
+## Related content
 
-[What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
+- [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  

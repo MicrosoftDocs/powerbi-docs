@@ -46,6 +46,6 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 
 With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
 
-## Next steps
+## Related content
 
 To learn more about data refresh for gateways, see [Use the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#use-the-data-source-for-scheduled-refresh).

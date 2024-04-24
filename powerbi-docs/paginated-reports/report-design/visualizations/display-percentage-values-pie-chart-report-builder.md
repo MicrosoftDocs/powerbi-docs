@@ -39,9 +39,9 @@ In Power BI paginated reports, by default the legend shows categories. You may a
   
 1. In **Legend**, type **#PERCENT** for the **Custom legend text** property.  
   
-## Next steps
+## Related content
 
 * [Tutorial: Add a Pie Chart to Your Report (Power BI Report Builder)](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)
-*  [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
-*  [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)   
-*  [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-data-point-labels-outside-a-pie-chart-report-builder-and-ssrs)   
+* [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
+* [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)   
+* [Display Data Point Labels Outside a Pie Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/display-data-point-labels-outside-a-pie-chart-report-builder-and-ssrs)   

@@ -20,6 +20,6 @@
   - name: External tools
     items:
     - name: External tools in Power BI Desktop
-      href: ../../transform-model/desktop-external-tools.md
+      href: ../../transform-model/desktop-external-tools.md?toc=/power-bi/developer/projects/TOC.yml
     - name: Register an external tool
-      href: ../../transform-model/desktop-external-tools-register.md
+      href: ../../transform-model/desktop-external-tools-register.md?toc=/power-bi/developer/projects/TOC.yml

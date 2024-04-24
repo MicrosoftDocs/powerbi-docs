@@ -32,6 +32,6 @@ The workspace planning content is organized into the following articles:
 - **[Tenant-level workspace planning](powerbi-implementation-planning-workspaces-tenant-level-planning.md):** Strategic decisions and actions that affect all workspaces in the tenant.
 - **[Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md):** Tactical decisions and actions to take for each workspace.
 
-## Next steps
+## Related content
 
 In the [next article](powerbi-implementation-planning-workspaces-tenant-level-planning.md) in this series, learn about tenant-level workspace planning.

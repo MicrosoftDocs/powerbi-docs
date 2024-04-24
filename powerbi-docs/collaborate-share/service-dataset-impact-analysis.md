@@ -84,7 +84,7 @@ When you make a change to a semantic model in Power BI Desktop and then republis
 
 * Usage metrics aren't supported for personal workspaces.
 
-## Next steps
+## Related content
 
 * [Intro to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md)
 * [Data lineage](service-data-lineage.md)

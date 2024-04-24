@@ -56,7 +56,7 @@ For example, you could change the [visibility](desktop-storage-mode.md) for mult
 
 :::image type="content" source="media/desktop-modeling-view/modeling-view-06.png" alt-text="Screenshot highlighting changing the Storage mode on multiple tables." lightbox="media/desktop-modeling-view/modeling-view-06.png":::
 
-## Next steps
+## Related content
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 

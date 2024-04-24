@@ -100,10 +100,10 @@ A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-da
 
 There are several advantages to publishing reports to a workspace different from where the semantic model is stored.
 
-First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](../enterprise/service-admin-rls.md) to take effect when necessary for users assigned to the viewer role.
+First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](/fabric/security/service-admin-rls) to take effect when necessary for users assigned to the viewer role.
 
 > [!IMPORTANT]
-> When you publish a Power BI Desktop report to a workspace, the RLS roles are applied to members who are assigned to the viewer role in the workspace. Even if viewers have Build permission to the semantic model, RLS still applies. For more information, see [Using RLS with workspaces in Power BI](../enterprise/service-admin-rls.md#using-rls-with-workspaces-in-power-bi).
+> When you publish a Power BI Desktop report to a workspace, the RLS roles are applied to members who are assigned to the viewer role in the workspace. Even if viewers have Build permission to the semantic model, RLS still applies. For more information, see [Using RLS with workspaces in Power BI](/fabric/security/service-admin-rls#using-rls-with-workspaces-in-power-bi).
 
 ### Dependency and impact analysis
 
@@ -120,6 +120,6 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a managed self-service BI scenario, it's particularly helpful to track usage of shared semantic models. A high report-to-semantic model ratio indicates good reuse of semantic models.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md), learn about ways to customize and extend a shared semantic model to meet additional types of requirements.

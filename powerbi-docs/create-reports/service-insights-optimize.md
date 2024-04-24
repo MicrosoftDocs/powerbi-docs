@@ -24,7 +24,8 @@ Want to improve Quick Insights results? If you're a semantic model owner, try th
   * Data models that don't have much data.
   * Data models that don't have date or numeric columns.
 
-### Next steps
-[Power BI quick insights](../consumer/end-user-insights.md)
+## Related content
+
+* [Power BI quick insights](../consumer/end-user-insights.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -55,7 +55,7 @@ This scorecard shows the heatmap customization.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-scenario-3-2.png" alt-text="A screenshot of a heatmap view of a hierarchy scorecard applying to the described scenario 3 above, showing the heatmap customization." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-scenario-3-2.png":::
 
-## Next steps
+## Related content
 
 - [Get started with cascading scorecards in Power BI](service-metrics-get-started-hierarchies.md)
 - [View hierarchies in Power BI metrics](service-metrics-view-hierarchies.md)

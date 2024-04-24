@@ -49,7 +49,7 @@ Effective and consistent communication is critical to aligning processes. Consid
 - Strive for concise communication and documentation that's formatted and well organized. That way, people can easily find the information that they need.
 - Consider maintaining a visible roadmap that shows the planned solutions and activities relevant to the user community in the next quarter.
 - Be transparent when communicating policies, decisions, and changes.
-- Create a process for people to provide feedback, and review that feedback regularly as part of regular [planning activities](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-3-periodically-revise-the-plan).
+- Create a process for people to provide feedback, and review that feedback regularly as part of regular [planning activities](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md#step-4-periodically-revise-the-plan).
 
 > [!IMPORTANT]
 > To achieve effective business alignment, you should make it a priority to identify and dismantle any communication barriers between business teams and technical teams.
@@ -140,6 +140,6 @@ The following maturity levels will help you assess your current state of busines
 | **400: Capable** | &bull;&nbsp;There's a consistent, organization-wide view of how data initiatives and solutions support business objectives. <br/><br/>&bull;&nbsp;Regular and iterative strategic alignments occur between the business and technical teams. Changes to the business strategy result in clear actions that are reflected by changes to the data strategy to better support business needs. <br/><br/>&bull;&nbsp;Business and technical teams have healthy, productive relationships. |
 | **500: Efficient** | &bull;&nbsp;The data strategy and the business strategy are fully integrated. Continuous improvement processes drive consistent alignment, and they are themselves data driven. <br/><br/>&bull;&nbsp;Business and technical teams have healthy, productive relationships. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-content-ownership-and-management.md) in the Microsoft Fabric adoption roadmap series, learn more about content ownership and management, and its effect on business-led self-service BI, managed self-service BI, and enterprise BI.

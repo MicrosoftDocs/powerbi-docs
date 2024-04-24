@@ -69,7 +69,7 @@ Many organizations have 'template' scorecards that different departments or busi
     :::image type="content" source="media/service-goals-move/power-bi-goals-move-copy-toast.png" alt-text="Screenshot of notice on completion of move and copy scorecard.":::
      
      
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

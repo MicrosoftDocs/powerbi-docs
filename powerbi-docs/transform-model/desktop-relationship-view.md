@@ -36,7 +36,7 @@ If your model has fewer than 75 tables, Model view shows all of your tables. If 
 
  When your model has more than 75 tables, Power BI Desktop warns you that slowdowns might occur. Create a custom layout (select the *Create a custom layout* button) to reduce the significant CPU and memory used when Model view shows more than 75 tables.
 
-## Next steps
+## Related content
 
 There are all sorts of things you can do with Power BI Desktop. For more information on data sources, see the following resources:
 

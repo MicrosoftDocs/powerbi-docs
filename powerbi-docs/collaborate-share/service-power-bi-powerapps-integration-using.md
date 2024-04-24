@@ -20,7 +20,7 @@ This article describes behaviors of the special dedicated Power BI environment w
 
 When a managed solution has been imported into a Power Apps environment, you can customize the solution by making changes to the Power BI report or semantic model. To bring the changes into Power Apps as an unmanaged layer, you need to sync Power BI and Power Apps manually. First you make your changes in Power BI, then you detect and sync in Power Apps. After syncing changes, an unmanaged layer is created in the solution. Removing the unmanaged layer rolls back the changes to the active managed layer, **and the Power BI items (report and/or semantic model) in the Power BI environment workspace also revert to the original managed active layer**. 
 
-## Next Steps
+## Related content
 
 * [About Power BI in Power Apps Solutions](./service-power-bi-powerapps-integration-about.md)
 * [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-enable.md)

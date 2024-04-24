@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 01/08/2024
 LocalizationGroup: Transform and shape data
 ---
 
 # Manage storage mode in Power BI Desktop
 
-In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports.
+In Microsoft Power BI Desktop, you can specify the storage mode of a table. The storage mode lets you control whether or not Power BI Desktop caches table data in-memory for reports. Caching means temporarily storing data in memory.
 
 Setting the storage mode provides many advantages. You can set the storage mode for each table individually in your model. This action enables a single semantic model, which provides the following benefits:
 
@@ -154,7 +154,7 @@ When you connect to those multi-dimensional sources using DirectQuery, you can't
 
 The existing limitations of using DirectQuery still apply when you use composite models. Many of those limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery.
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

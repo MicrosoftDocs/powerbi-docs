@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/12/2023
+ms.date: 12/12/2023
 ---
 
 # Capabilities and properties of Power BI visuals
@@ -74,19 +74,20 @@ A JSON privilege definition contains these components:
 * `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege isn't mandatory.
 * `parameters` - (string array)(optional) Arguments. If `parameters` is missing, it's considered an empty array.
 
-There are two types of privileges that must be defined:
+The following are types of privileges that must be defined:
 
-* Access External resources
-* Download to file
+* [Access External resources](#allow-web-access)
+* [Download to file](#download-to-file)
+* [Local storage privileges](#local-storage-privileges)
 
 >[!NOTE]
 >Even with these privileges granted in the visual, the admin has to enable the switch in the admin settings to allow people in their organization to benefit from these settings.
 
-### Allow web access
+#### Allow web access
 
-To allow a visual to access an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+To allow a visual to access an external resource or web site, add that information as a *privilege* in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
-#### Example of privileges setting allowing access to external resources
+The following is an example of privileges setting allowing access to external resources:
 
 ```json
 {
@@ -98,7 +99,7 @@ To allow a visual to access an external resource or web site, add that informati
 
 The preceding `WebAccess` privilege means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual to work.
 
-### Download to file
+#### Download to file
 
 To allow the user to export data from a visual into a file, set `ExportContent` to `true`.
 
@@ -114,7 +115,7 @@ This `ExportContent` setting enables the visual to export data to files in the f
 
 This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
-#### Example of privileges setting allowing downloading to a file
+The following is an example of a privileges setting that allows downloading to a file:
 
 ```json
 "privileges": [
@@ -125,7 +126,32 @@ This setting is separate from and not affected by download restrictions applied 
 ]
 ```
 
-### Example of a privileges definition
+#### Local storage privileges
+
+This privilege allows a custom visual to store information on the user's local browser.
+
+The following is an example of a privileges setting that allows use of the local storage:
+
+```json
+"privileges": [
+    {
+        "name": "LocalStorage",
+        "essential": true
+    }
+]
+```
+
+#### No privileges needed
+
+If the visual doesn't requires any special permissions, the `privileges` array should be empty:
+
+```json
+  "privileges": []
+```
+
+#### Multiple privileges
+
+The following example shows how to set several privileges for a custom visual.
 
 ```json
 "privileges": [
@@ -139,14 +165,6 @@ This setting is separate from and not affected by download restrictions applied 
         "essential": false
     }
 ]
-```
-
-### No privileges needed
-
-If the visual doesn't requires any special permissions, the `privileges` array should be empty:
-
-```json
-  "privileges": []
 ```
 
 ## dataroles: define the data fields that your visual expects

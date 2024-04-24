@@ -7,15 +7,91 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/06/2023
+ms.date: 04/16/2024
+no-loc: [Copilot]
 ---
 
 # Change log for Power BI Desktop
 
-This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
+This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+
+
+## April 2024 QFE 1
+ 
+*Version: 2.128.952.0, Released: April 15, 2024*
+
+Bug fixes/improvements:
+
+* Fix for drag and drop picker tooltip, empty title fix
+* Fix duplicated truncation problem on Gauge Chart
+* Added error messaging when ignoring the workspace picker for Desktop Report Authoring Copilot 
+
+
+## March 2024 QFE 2
+
+*Version: 2.127.1327.0, Released: April 01, 2024*
+
+Bug fixes/improvements:
+
+* Fix for customize theme dialog margins: Fixed issue where theme dialog's margins were too large and were occluding the *Cancel* and *Apply* buttons.
+* Fix for DAX Query View copilot usage telemetry: Fix for spike in Customer Counts/Tenant Counts for Feature powerbi-copilot-usage.
+* Fixed issue where an error is thrown in live connect when users clicked on relationships.
+ 
+
+## March 2024 QFE 1
+
+*Version: 2.127.1235.0, Released: March 28, 2024*
+
+Bug fixes/improvements:
+
+* Fix for DataGrid copy to clipboard :  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
+* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents cancel button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
+
+
+## February 2024 QFE 1
+
+*Version: 2.126.1261.0, Released: March 01, 2024*
+
+Bug fixes/improvements:
+
+* Fix for refresh failures for certain reports having a DirectQuery connection to AAS or a published semantic model
+* Fix for null reference to telemetry object
+* Make visual calculation look up invisible in Power BI Desktop
+
+
+## December 2023 QFE 3
+
+*Version: 2.124.2028.0, Released: January 29, 2024*
+
+Bug fixes/improvements:
+
+* Fix v5.50 upgrader for multi-static series and 100% stacked charts
+*	Remove Force Refresh on Token Refresh
+
+## December 2023 QFE 2
+
+*Version: 2.124.1805.0, Released: January 19, 2024*
+
+Bug fixes/improvements:
+
+*	Sign-in Flighting Feature Update
+* Updated Q&A Copilot telemetry
+
+## December 2023 QFE 1
+
+*Version: 2.124.1554.0, Released: January 09, 2024*
+
+Bug fixes/improvements:
+
+*	Updated PQO announcement dialog image path.
+*	Updated the learn more link for PQO announcement dialog.
+*	Added flighted features to Power BI Desktop frown telemetry event.
+*	Disable NewNonEmptyFilteringSemantics feature switch.
+*	Small-multiple single-series column-chart style-formatting.
+*	Fixed formatting pane isn't allowing formatting multiple visuals of the same type
 
 ## November 2023 QFE 1
 
@@ -23,7 +99,7 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
 
 Bug fixes/improvements:
 
-* Fixed mobile canvas watermark that was throwing exceptions in auto-create
+* Fixed mobile canvas watermark that was throwing exceptions in autocreate
 * Frown fix - users no longer get a frown from the sync slicer view model update when a slicer is selected
 
 ## October 2023 QFE 1
@@ -124,7 +200,7 @@ Bug fixes/improvements:
 * Fix to UnappliedQueries. All exported templates would now include lineage tags.
 * Fix to AS on-premises connection type.
 * Localization fix. Tooltip for OneLake data hub button on Home Tab is now available in multiple languages.
-* Fix to the ribbon. Customers won't see the keytips in the ribbon when formula bar is edited.
+* Fix to the ribbon. Customers won't see the key tips in the ribbon when formula bar is edited.
 
 
 
@@ -512,9 +588,9 @@ Bug fixes:
 - Fix for Model view blurry fields and icon text inside a table card. 
 - Fix for Color picker: now it closes when you press ESC. 
 
-## Next steps
+## Related content
 
-[What's new in Power BI](desktop-latest-update.md)
-[Previous monthly updates to Power BI](desktop-latest-update-archive.md)
+* [What's new in Power BI](desktop-latest-update.md)
+* [Previous monthly updates to Power BI](desktop-latest-update-archive.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

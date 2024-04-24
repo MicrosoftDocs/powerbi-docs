@@ -47,7 +47,7 @@ There are several positive outcomes from distributing the processing of content 
 
 * Because of this new architecture, customer admins do not need to monitor their capacities for signs of approaching the limits of their resources, and instead are provided with clear indication when such limits are met. This significantly reduces the effort and overhead required of capacity administrators to maintain optimal capacity performance.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[What is Power BI Premium?](service-premium-what-is.md)

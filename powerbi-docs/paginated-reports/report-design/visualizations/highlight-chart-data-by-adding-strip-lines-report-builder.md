@@ -52,8 +52,8 @@ ms.reviewer: saurkumar
 > [!NOTE]  
 >  By default, Interval is set to Auto, which means the chart will not calculate an interval for custom strip lines. The chart only calculates intervals for strip lines if an interval value is set.  
   
-## Next steps
+## Related content
 
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Add a moving average to a chart in Power BI paginated report (Power BI Report Builder)](add-moving-average-chart-report-builder.md) 
+- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
+- [Add a moving average to a chart in Power BI paginated report (Power BI Report Builder)](add-moving-average-chart-report-builder.md) 

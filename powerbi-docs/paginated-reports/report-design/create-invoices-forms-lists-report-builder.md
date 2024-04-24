@@ -54,10 +54,10 @@ ms.reviewer: saurkumar
  In Preview, the table displays total sales for all subcategories of bicycles, and the table beside it displays the breakdown of sales per geographical area. By using an expression to specify the background color for the table and a custom palette for the chart, the first table also provides the legend for the chart colors.  
   
  ![Screenshot of a Preview, 2 tables, one with nested chart.](media/basic-list-group-preview.gif "Screenshot of a Preview, 2 tables, one with nested chart.")  
-  
-  
-## Next steps  
- [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md)   
- [Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expression-examples.md)  
+
+## Related content
+
+- [Aggregate Functions Reference (Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference)   
+- [Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expression-examples.md)  
   
   

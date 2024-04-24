@@ -81,7 +81,7 @@ Just like Power BI built-in shapes, Power BI buttons can have artistic effects t
 - **Shape glow** effects
 - Button **Shape rotation** and **Text rotation**
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 

@@ -133,7 +133,7 @@ Console.WriteLine("Test completed. Press any key to exit.");
 Console.Read(); 
 ```
 
-## Next steps
+## Related content
 
 * [Power BI semantic model scale-out](service-premium-scale-out.md)
 

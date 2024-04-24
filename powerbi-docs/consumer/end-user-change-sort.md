@@ -78,8 +78,8 @@ Sometimes you want to sort your data by using a field that isn't included in the
 
 ![Menu from the title showing contact information.](media/end-user-change-sort/power-bi-heading.png)
 
-## Next steps
+## Related content
 
-More about [Interactions with visuals in reports, dashboards, and apps](end-user-visualizations.md).
+- More about [Interactions with visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
-[Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
+- [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).

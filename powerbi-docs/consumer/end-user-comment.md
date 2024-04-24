@@ -102,6 +102,7 @@ Here's a conversation I'm having with the visualization *designer*. They're usin
 - Bookmarks aren't captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
 - If you're using a paginated report, you can only leave a general comment about your report. Support for leaving comments on individual paginated report visuals isn't available.
 
-## Next steps
-Back to [visualizations for business users](end-user-visualizations.md)    
-[Select a visualization to open a report](end-user-report-open.md)
+## Related content
+
+- Back to [visualizations for business users](end-user-visualizations.md)    
+- [Select a visualization to open a report](end-user-report-open.md)

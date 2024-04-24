@@ -40,7 +40,7 @@ You can use Power BI Desktop and the Power BI service with dataflows to create s
 > Dataflows may not be available in the Power BI service for all U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 
-## Next steps
+## Related content
 
 This article provided an overview of self-service data prep for big data in Power BI, and the many ways you can use it.
 

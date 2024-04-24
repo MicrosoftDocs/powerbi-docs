@@ -3,8 +3,7 @@ title: Get started with Power BI Desktop
 description: Get started with Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
-ms.reviewer: ''
-ms.custom: contperf-fy21q1, intro-get-started
+ms.custom: intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
@@ -349,7 +348,7 @@ There are many compelling data-related mash-ups and visualizations you can do wi
 - Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported. If you contact support for Power BI Desktop, you'll be asked to upgrade to the most recent version.
 - For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called [Power BI Desktop for Power BI Report Server](../report-server/install-powerbi-desktop.md), which updates three times a year. This article describes standard Power BI Desktop.
 
-## Next steps
+## Related content
 Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When you're using the diagnostics port, *making any changes to the model isn't supported. Changes to the model may lead to corruption and data loss.*
 
 For more information on the many capabilities of Power BI Desktop, check out the following resources:

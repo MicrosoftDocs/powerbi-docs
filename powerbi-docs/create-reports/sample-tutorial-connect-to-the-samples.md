@@ -193,7 +193,7 @@ To view the underlying data and model:
 
    Model view shows all of the tables and columns in your model, and the relationships between them. From here you can view, change, and create relationships.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

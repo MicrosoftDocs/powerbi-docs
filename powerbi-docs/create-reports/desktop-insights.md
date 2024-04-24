@@ -124,7 +124,7 @@ In addition, the following model types and data sources aren't currently support
 
 The insights feature doesn't support reports that are distributed as an App.
 
-## Next steps
+## Related content
 
 For more information about **Power BI**, and how to get started, see:
 

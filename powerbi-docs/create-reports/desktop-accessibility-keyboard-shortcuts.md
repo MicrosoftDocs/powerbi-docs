@@ -211,7 +211,7 @@ There are a few known issues and limitations with the accessibility features. Yo
 * When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
 * If you're using Narrator, you'll have some limitations around navigating **Show data** as an HTML table.
 
-## Next steps
+## Related content
 
 The collection of articles for Power BI accessibility are the following:
 

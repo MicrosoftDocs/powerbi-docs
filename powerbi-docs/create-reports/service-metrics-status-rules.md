@@ -58,7 +58,7 @@ Metrics in Power BI let customers curate their metrics and track them against ke
 
     :::image type="content" source="media/service-goals-check-in/conditions.png" alt-text="Screenshot of Adding a condition to a rule.":::
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

@@ -63,6 +63,6 @@ The Microsoft Entra SSO feature is disabled by default for on-premises data gate
 
 :::image type="content" source="media/service-gateway-azure-active-directory-sso/powerbi-admin-portal-azure-ad-sso-for-gateway-setting.png" alt-text="Screenshot of the Microsoft Entra SSO for gateway feature in the Power BI Admin portal.":::
 
-## Next steps
+## Related content
 
 * [Overview of single sign-on for on-premises data gateways in Power BI](service-gateway-sso-overview.md)

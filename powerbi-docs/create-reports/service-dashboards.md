@@ -64,8 +64,8 @@ The ability to create a dashboard is considered a *creator* feature and requires
 | Subscribe | Yes. You can subscribe to a dashboard. | Yes. You can subscribe to a report page. |
 | See underlying semantic model tables and fields | No. You can't see tables and fields in the dashboard itself, but you can export data. | Yes |
 
+## Related content
 
-## Next steps
 * Get comfortable with dashboards by taking a tour of one of the [sample dashboards](sample-tutorial-connect-to-the-samples.md).
 * Learn about [dashboard tiles](service-dashboard-tiles.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create an alert on a tile](service-set-data-alerts.md).

@@ -45,7 +45,7 @@ Select a template from the following list to start the step-by-step walkthrough.
 
 When you use Power Automate to export a paginated report that takes more than two minutes to download, the export fails due to the  Power Automate [outbound synchronous request](/power-automate/limits-and-config#timeout) limitation.
 
-## Next steps
+## Related content
 
 - [Power BI export API for paginated reports](../developer/embedded/export-paginated-report.md)
 - [Get started with Power Automate](/power-automate/getting-started/)

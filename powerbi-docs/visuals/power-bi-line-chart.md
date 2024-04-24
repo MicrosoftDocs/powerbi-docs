@@ -1,8 +1,8 @@
 ---
 title: Create line charts in Power BI
 description: Learn how to use line charts in Power BI.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -125,6 +125,6 @@ For more information, see [Filters and highlighting in Power BI reports](../crea
 * One line chart can't have dual y axes. You need to use a combo chart if you want two y axes.
 * In the preceding examples, you can see charts that are formatted with increased font sizes, changed font colors, added axis titles, centered chart titles and legends, axes that start at zero, and more. The **Visualizations** > **Format** pane, which you get to by selecting the image that shows a paint brush (:::image type="icon" source="media/power-bi-line-charts/format-icon.png":::), provides many options for making your charts look the way you want them to. The best way to learn about them is to open the **Format** pane and explore.
 
-## Next steps
+## Related content
 
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

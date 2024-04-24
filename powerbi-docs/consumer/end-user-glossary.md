@@ -9,7 +9,6 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
 ms.date: 11/13/2023
-ms.custom: contperf-fy21q1
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they're reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
 
@@ -599,6 +598,6 @@ The axis along the side, the vertical axis, of a line graph.
 
 ## Z
 
-## Next steps
+## Related content
 
 - [Basic concepts for Power BI service consumer](end-user-basic-concepts.md)

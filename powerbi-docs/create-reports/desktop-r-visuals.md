@@ -149,7 +149,7 @@ R visuals in Power BI Desktop have the following limitations:
 
 * RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
 
-## Next steps
+## Related content
 For more information about R in Power BI, see the following articles:
 
 * [Running R Scripts in Power BI Desktop](../connect-data/desktop-r-scripts.md)

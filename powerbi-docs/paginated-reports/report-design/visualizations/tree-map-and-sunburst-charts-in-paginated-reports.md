@@ -166,7 +166,7 @@ The query returns AdventureWorks sales order detail data with sales territory, p
   
      For more information about creating a dataset, see [Create a shared dataset or embedded dataset &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).  
   
-## Next steps
+## Related content
 
 * [Shared dataset design view &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/shared-dataset-design-view-report-builder)
 

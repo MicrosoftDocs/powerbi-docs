@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 01/10/2024
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -101,6 +101,8 @@ Automated machine learning (AutoML) for dataflows enables business analysts to t
 Automated machine learning is available for dataflows that are hosted on Power BI Premium and Embedded capacities only.
 
 ### Work with AutoML
+
+Machine learning and AI are seeing an unprecedented rise in popularity from industries and scientific research fields. Businesses are also looking for ways to integrate these new technologies into their operations.
 
 Dataflows offer self-serve data prep for big data. AutoML is integrated into dataflows and enables you to use your data prep effort for building machine learning models, right within Power BI.
 
@@ -445,18 +447,19 @@ After you save your dataflow, the model is automatically invoked when the datafl
 
 ## Considerations and limitations
 
+* Dataflows Gen2 does not currently integrate with automated machine learning. 
 * AI insights (Cognitive Services and Azure Machine Learning models) aren't supported on machines with proxy authentication setup.
 * Azure Machine Learning models aren't supported for Guest users.
 * There are some known issues with using Gateway with AutoML and Cognitive Services. If you need to use a gateway, we recommend creating a dataflow that imports the necessary data via gateway first. Then create another dataflow that references the first dataflow to create or apply these models and AI functions.
 * If your AI work with dataflows fails, you may need to enable Fast Combine when using AI with dataflows. Once you have imported your table and *before* you begin to add AI features, select **Options** from the Home ribbon, and in the window that appears select the checkbox beside *Allow combining data from multiple sources* to enable the feature, then select **OK** to save your selection. Then you can add AI features to your dataflow.
 
-## Next steps
+## Related content
 
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles might also be useful.
 
 * [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 * [Tutorial: Use Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-* [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
+
 
 The following articles provide more information about dataflows and Power BI:
 

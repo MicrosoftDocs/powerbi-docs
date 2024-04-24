@@ -65,7 +65,7 @@ This article explains how to create a paginated report from a Power BI report or
 
     You're ready to start designing your paginated report.
  
-## Next steps 
+## Related content 
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)  
 - [Tutorial: Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)

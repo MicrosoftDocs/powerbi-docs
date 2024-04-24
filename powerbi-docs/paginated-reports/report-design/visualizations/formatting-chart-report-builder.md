@@ -43,8 +43,8 @@ ms.reviewer: monaraya
 
  [Add Bevel, Emboss, and Texture Styles to a chart &#40;Power BI Report Builder&#41;](chart-effects-add-bevel-emboss-or-texture-report-builder.md)  
   
-## Next steps
+## Related content
 
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
   
   

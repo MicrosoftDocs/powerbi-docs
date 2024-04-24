@@ -24,7 +24,7 @@ The table below describes the four levels of permission that control access to s
 |Build       |Allows user to build new content from the semantic model, as well as find content that uses the semantic model.<br>Allows user to access reports that access composite models on Power BI Pro workspaces.<br>Allows user to build composite models.<br>Allows user to pull the data into Analyze in Excel.<br>Allows querying using external APIs such as XMLA.<br>Allows user to see hidden data fields. |
 |Reshare     |Allows user to grant semantic model access. |
 |Write       |Allows user to republish the semantic model.<br>Allows user to [backup and restore the semantic model](../enterprise/service-premium-backup-restore-dataset.md).<br>Allows user to make changes to the semantic model via XMLA.<br>Allows user to edit semantic model settings, except data refresh, credentials, and automatic aggregations.|
-|Owner       |The semantic model owner is not a permission per se, but rather a conceptual role that has all the permissions on a semantic model. The first semantic model owner is the person who created the semantic model, and afterwards the last person to configure the semantic model after taking it over in the semantic model settings.<br><br>The semantic model owner can do all of the things mentioned in the permissions above, as well as configure semantic model refresh, credentials, and automatic aggregations.|
+|Owner       |The semantic model owner is not a permission per se, but rather a conceptual role that has all the permissions on a semantic model. The first semantic model owner is the person who created the semantic model, and afterwards the last person to configure the semantic model after taking it over in the semantic model settings.<br><br>In addition to the permissions above that can be granted explicitly, a semantic model owner can configure semantic model refresh, credentials, and automatic aggregations.|
 
 ## How are the semantic model permissions acquired?
 
@@ -67,7 +67,7 @@ Row-level security may affect the ability of users with read or build permission
     * Users with only read or build permission on the semantic model will not be able to read data from the semantic model unless they belong to one of its RLS roles.
     * Users with write permission on the semantic model will be able to read data from the semantic model regardless of whether or not they belong to any of its RLS roles.
 
-## Next steps
+## Related content
 
 * [Share access to a semantic model](./service-datasets-share.md)
 * [Manage semantic model permissions](service-datasets-manage-access-permissions.md)

@@ -138,7 +138,7 @@ Let's see what happens when fields from both tables are added to a table visual,
 
 The table displays two rows only. Product SKU CL-02 is missing because there's no matching row in the **Product Category** table.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

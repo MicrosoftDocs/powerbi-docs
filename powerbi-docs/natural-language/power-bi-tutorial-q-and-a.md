@@ -102,7 +102,7 @@ Interact with the Q&A Explorer window as you would with the Q&A window on a dash
 ## Considerations and limitations
 At the current time, Power BI Q&A only supports answering natural language queries asked in English. There's a preview available for Spanish that your Fabric administrator can enable. 
 
-## Next steps
+## Related content
 
 - [Q&A basics](../consumer/end-user-q-and-a.md)
 - [Use a Q&A visual on a dashboard](end-user-q-and-a-tutorial.md)

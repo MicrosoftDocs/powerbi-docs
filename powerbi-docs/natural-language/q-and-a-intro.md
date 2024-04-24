@@ -79,14 +79,14 @@ As you enter your question, Q&A tries to instantly interpret and visualize the a
 
 :::image type="content" source="media/q-and-a-intro/power-bi-pick-visual-type.png" alt-text="Screenshot showing the same question but with a visual type specified.":::
 
-## Next steps
+## Related content
 
 You can integrate natural language in your reports in various ways. For more information, see:
 
-[Use Q&A to explore a dashboard](../natural-language/end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
+- [Use Q&A to explore a dashboard](../natural-language/end-user-q-and-a-tutorial.md). Every dashboard has a Q&A field in the upper left corner. Type a natural language question to explore your data.
 
-[Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
+- [Use a Q&A visual in a report](../visuals/power-bi-visualization-q-and-a.md). If a report creator has added a Q&A visual to a report, use and reuse that visual to explore your data. 
 
-[Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
+- [Create and save Q&A results to a dashboard or report](../visuals/power-bi-visualization-q-and-a.md). Report designers use Q&A to explore data and create visualizations in reports.
 
-[Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others. 
+- [Create a Q&A visual in a report](power-bi-tutorial-q-and-a.md) and share it with others. 

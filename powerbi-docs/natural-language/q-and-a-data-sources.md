@@ -52,7 +52,7 @@ If your model changes or the index becomes outdated, the index must update. Beca
 
 In the Power BI service, the index recreates on publish, republish, and refresh. Q&A index creation isn't always automatic, and can happen on demand to optimize the dataset refreshes. For DirectQuery, Q&A data indexes at most once per day, to reduce the impact on the DirectQuery source.
 
-## Next steps
+## Related content
 
 For more information on integrating natural language in your reports, see:
 

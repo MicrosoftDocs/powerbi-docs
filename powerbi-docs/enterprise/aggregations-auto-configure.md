@@ -1,8 +1,8 @@
 ---
 title: Configure automatic aggregations 
 description: Learn how to enable and configure automatic aggregations, enable training for a supported DirectQuery semantic model and configure one or more scheduled refreshes.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
@@ -94,7 +94,7 @@ You must have model owner permissions to disable automatic aggregations. Workspa
 
 1. Select **Apply**.
 
-## See also
+## Related content
 
 * [Automatic aggregations](aggregations-auto.md)  
 * [User-defined aggregations](../transform-model/aggregations-advanced.md)  

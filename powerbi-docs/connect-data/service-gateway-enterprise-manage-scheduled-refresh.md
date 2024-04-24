@@ -61,7 +61,7 @@ If you're listed in the **Users** tab of the data source configured within the g
 > [!WARNING]
 > If your dataset contains multiple data sources, each data source must be added within the gateway. If one or more data sources aren't added to the gateway, you don't see the gateway as available for scheduled refresh.
 
-## Next steps
+## Related content
 
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)

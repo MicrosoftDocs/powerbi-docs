@@ -1,8 +1,8 @@
 ---
 title: Slicers in Power BI
 description: A Power BI slicer is an alternate way of filtering. It narrows the portion of the semantic model shown in the other visualizations in a report you design.
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -258,7 +258,7 @@ Other formatting options are **Off** by default. Turn **On** these options to co
 
 - **Shadow**: Add a drop shadow to the slider. Under **General** > **Effects**.
 
-## Next steps
+## Related content
 
 For more about slicers, see the following articles:
 

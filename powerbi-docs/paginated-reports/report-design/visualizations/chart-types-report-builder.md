@@ -38,8 +38,8 @@ It is important to choose an appropriate chart type for the type of data that yo
 |[Sparklines](/sql/reporting-services/report-design/sparklines-and-data-bars-report-builder-and-ssrs)|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|  
 |[Stock charts in Power BI paginated reports (Power BI Report Builder)](stock-charts-report-builder.md)||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")||![Screenshot showing Available](media/paginated-reports-visualizations/green-check.png "Available")|  
 
-## Next steps
+## Related content
 
-[Charts](charts-report-builder.md)   
-[Empty and Null Data Points in charts](empty-null-data-points-charts-report-builder.md)   
-[Add a chart to a Report](add-chart-report-report-builder.md)  
+- [Charts](charts-report-builder.md)   
+- [Empty and Null Data Points in charts](empty-null-data-points-charts-report-builder.md)   
+- [Add a chart to a Report](add-chart-report-report-builder.md)  

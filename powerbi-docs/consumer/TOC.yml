@@ -122,8 +122,6 @@
       href: end-user-recent.md
     - name: "Search and sort content in Power BI"
       href: end-user-search-sort.md
-    - name: "Turn on preview features"
-      href: end-user-preview-features.md
   - name: Get data
     items: 
     - name: "Workspaces in Power BI"

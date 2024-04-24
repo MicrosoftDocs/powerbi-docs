@@ -223,7 +223,7 @@ To use PowerShell, first install the required **MicrosoftPowerBIMgmt** module. S
 
 - You can't use scheduled refresh for Excel workbooks that have connections to on-premises SSAS tabular models through a gateway.
 
-## Next steps
+## Related content
 
 - **Explore your data**. After you upload data and reports from your file into Power BI, you can select the new semantic model to explore the data. When you select the workbook, it opens in Power BI the same as if it were in Excel Online.
 

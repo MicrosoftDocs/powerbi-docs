@@ -1,5 +1,5 @@
 ---
-title: Create and share cloud data sources in the Power BI service (Preview)
+title: Create and share cloud data sources in the Power BI service
 description: Learn how to create and share cloud data source connections in the Power BI service.
 author: davidiseminger
 ms.author: davidi
@@ -7,10 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/28/2024
 LocalizationGroup: Connect to data
 ---
-# Create and share cloud data sources in the Power BI service (Preview)
+# Create and share cloud data sources in the Power BI service
 
 With Power BI, you can create, share, and manage cloud connections for semantic models and paginated reports, datamarts, and dataflows, as well as Power Query Online experiences in *Get data*, all within the Power BI service user experience.
 
@@ -75,10 +75,8 @@ If granular access control isn't enforced at the tenant level, workspace admins 
 
 By default, granular access control is disabled at all three levels, enabling individual artifact owners to enforce granular access control for each data connection type selectively. However, it's likely more efficient to enable granular access control on a workspace-by-workspace basis.
 
-
-
-## Next steps
+## Related content
 
 For important information about shareable cloud connections, including limitations and considerations, read the following article:
 
-[Connect to cloud data sources in the Power BI service (Preview)](service-connect-cloud-data-sources.md)
+- [Connect to cloud data sources in the Power BI service](service-connect-cloud-data-sources.md)

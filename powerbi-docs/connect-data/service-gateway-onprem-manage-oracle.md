@@ -90,7 +90,7 @@ To diagnose connectivity issues between the data source server and the gateway m
 
 For more gateway troubleshooting information, see [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
-## Next steps
+## Related content
 
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](../enterprise/service-premium-what-is.md)

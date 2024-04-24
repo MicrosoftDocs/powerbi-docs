@@ -60,7 +60,7 @@ The following concepts aren't affected.
 - [Power BI activity log operations](/fabric/admin/track-user-activities)
 - Other types of datasets that aren't related to Power BI, for example, [Azure Open Datasets](/azure/open-datasets/dataset-catalog)
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources.
 

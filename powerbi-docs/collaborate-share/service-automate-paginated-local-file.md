@@ -63,7 +63,7 @@ To follow along, make sure you meet these criteria:
 
     :::image type="content" source="media/service-automate-paginated-local-file/paginated-local-file-exported-10.png" alt-text="Power Automate exports a paginated report in the specified format.":::
 
-## Next steps
+## Related content
 
 - [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)

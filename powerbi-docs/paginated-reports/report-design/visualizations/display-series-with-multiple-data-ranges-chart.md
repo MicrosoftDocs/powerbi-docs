@@ -57,7 +57,7 @@ Charts use the minimum and maximum values of a series to calculate the axis scal
   
  An example of chart with scale breaks is available as a sample report. For more information about downloading this sample report and others, see [Power BI Report Builder and Report Designer sample reports](https://go.microsoft.com/fwlink/?LinkId=198283).  
 
-## Next steps
+## Related content
 
 - [Multiple Series on a Chart](/sql/reporting-services/report-design/multiple-series-on-a-chart-report-builder-and-ssrs)   
 - [Formatting a Chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   

@@ -152,6 +152,6 @@ The **Text** property of a shape can be configured with a hard-coded string. You
 
 You can use the same technique to localize a visual **Title** using a measure from the **Translated Localized Labels** table.
 
-## Next steps
+## Related content
 
 - [Generate machine translations using Azure Translator Service](translation-builder-machine-translation.md)

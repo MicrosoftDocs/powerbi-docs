@@ -70,10 +70,11 @@ ms.reviewer: saurkumar
   
  The Add Total feature automatically creates a row outside the current group on which to display values that are scoped to the group. You can also add static and dynamic rows manually. Visual indicators help you understand which rows are static and which rows are dynamic. For more information, see [Tablix Data Region Cells, Rows, and Columns &#40;Power BI Report Builder&#41;](tablix-data-region-cells-rows-columns-report-builder.md).  
   
-## Next steps  
- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](linking-multiple-data-regions-to-same-dataset-report-builder.md)   
- [Control the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md)   
- [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+* [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](linking-multiple-data-regions-to-same-dataset-report-builder.md)   
+* [Control the Tablix Data Region Display on a Report Page &#40;Power BI Report Builder&#41;](control-tablix-data-region-display-report-page.md)   
+* [Exploring the Flexibility of a Tablix Data Region &#40;Power BI Report Builder&#41;](explore-flexibility-tablix-data-region-report-builder.md)   
+* [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

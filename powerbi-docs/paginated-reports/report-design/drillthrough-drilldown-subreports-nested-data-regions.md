@@ -76,6 +76,6 @@ ms.topic: conceptual
 
 [Subreports in Power BI paginated reports](../subreports.md) Explains these reports that are displayed inside the body of a main report.  
 
-## Next steps  
+## Related content
 
-[Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
+- [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)

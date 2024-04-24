@@ -54,7 +54,7 @@ The Power BI mobile apps currently support these languages:
 - Power BI uses the language that corresponds with the locale of the mobile device. You can't set a different language.
 - Notifications are in English only. For example, if someone shares a dashboard with you, the notification will be in English.
 
-## Next steps
+## Related content
 
 - See [supported languages and countries/regions for Power BI](../../fundamentals/supported-languages-countries-regions.md)
 - Questions? Ask the [Power BI Community](https://community.powerbi.com/).

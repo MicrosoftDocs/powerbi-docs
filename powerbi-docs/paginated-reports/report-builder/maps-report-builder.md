@@ -214,7 +214,7 @@ ms.reviewer: monaraya
 - [Change map legends, color scale, and associated rules in a paginated report (Power BI Report Builder)](change-map-legends-color-scale-associated-rules-report-builder.md)
 - [Add Custom Locations to a Map &#40;Power BI Report Builder&#41;](add-custom-locations-map-report-builder.md)  
   
-##  <a name="Section"></a> Next steps
+##  <a name="Section"></a> Related content
 
 - [Plan a Map Report &#40;Power BI Report Builder&#41;](plan-map-report-report-builder.md)  
 - [Map Wizard and Map Layer Wizard &#40;Power BI Report Builder&#41;](map-wizard-map-layer-wizard-report-builder.md)  

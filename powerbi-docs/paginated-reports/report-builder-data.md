@@ -63,7 +63,7 @@ Use the following list to help define sources of data for a report.
   
 - Data sources and datasets are authored in a report and published to the Power BI service. After they're published, you can configure credentials directly in the Power BI service or in your Enterprise Gateway.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md) 
 

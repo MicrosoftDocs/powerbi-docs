@@ -156,7 +156,7 @@ Sometimes app designers release new versions of their apps. How you get the new 
 - The ability to install apps can be turned on and off by your Power BI administrator. Contact your IT department or help desk if you need this feature enabled.
 - The use of apps requires either a Pro or Premium Per User license or for the app to be stored in a workspace in Premium shared capacity. [Learn about licenses](end-user-license.md).
 
-## Next steps
+## Related content
 
 * [Back to the apps overview](end-user-apps.md)
 * [View a Power BI report](end-user-report-open.md)

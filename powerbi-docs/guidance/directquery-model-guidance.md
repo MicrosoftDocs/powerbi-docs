@@ -115,7 +115,7 @@ We recommend that you educate your report consumers about your reports that are 
 
 When delivering reports on volatile data sources, be sure to educate report users on the use of the Refresh button. Let them know also that it may be possible to see inconsistent results, and that a refresh of the report can resolve any inconsistencies on the report page.
 
-## Next steps
+## Related content
 
 For more information about DirectQuery, check out the following resources:
 

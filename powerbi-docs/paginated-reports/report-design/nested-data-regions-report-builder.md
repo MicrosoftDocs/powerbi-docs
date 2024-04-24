@@ -76,14 +76,15 @@ ms.reviewer: saurkumar
   
  For more information, see [Understanding groups &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/understand-groups-report-builder.md) and [Add, move, or delete a table, matrix, or list &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-move-or-delete-a-table-matrix-or-list-report-builder-and-ssrs).  
   
-## Next steps  
- [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)     
- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
- [Gauges &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/gauges-report-builder.md)   
- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
- [Formatting report items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)   
- [Tutorial: Adding a KPI to your report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-adding-a-kpi-to-your-report-report-builder)   
- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-scales-gauge-report-builder.md)  
+## Related content
+
+- [Filter, group, and sort data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)     
+- [Tables, matrices, and lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)   
+- [Gauges &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/gauges-report-builder.md)   
+- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
+- [Formatting report items &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)   
+- [Tutorial: Adding a KPI to your report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-adding-a-kpi-to-your-report-report-builder)   
+- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-scales-gauge-report-builder.md)  
   
   

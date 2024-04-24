@@ -34,11 +34,10 @@ You create report parameters in the following ways:
 
  If you plan to create report subscriptions to a published report, you need to understand how the parameters are used during the runtime of the subscriptions. 
   
-## Next steps  
- [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
- 
- [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](../paginated-reports-quickstart-aw.md) 
- 
- [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)  
+## Related content
+
+- [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
+- [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](../paginated-reports-quickstart-aw.md)
+- [Tutorial: Add a Parameter to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-parameter-to-your-report-report-builder)  
   
   

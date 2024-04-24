@@ -26,11 +26,11 @@ By default, any series added to a non-Shape chart in Power BI paginated report w
     > [!NOTE]  
     >  You cannot hide a series for one group and not for the others. If you have added a field to the **Series Groups** area, all series belonging to this group will be hidden.  
   
-## Next steps
+## Related content
 
- [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
- [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
- [Change the Text of a Legend Item &#40;Power BI Report Builder&#41;](chart-legend-change-item-text-report-builder.md)   
- [Add a moving average to a chart in Power BI paginated report (Power BI Report Builder)](add-moving-average-chart-report-builder.md)
- [Legend Properties Dialog Box, General &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)  
+- [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
+- [Formatting Data Points on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
+- [Change the Text of a Legend Item &#40;Power BI Report Builder&#41;](chart-legend-change-item-text-report-builder.md)   
+- [Add a moving average to a chart in Power BI paginated report (Power BI Report Builder)](add-moving-average-chart-report-builder.md)
+- [Legend Properties Dialog Box, General &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)  
   

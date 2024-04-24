@@ -204,7 +204,7 @@ Set **Visibility** options to control the display for a map layer.
   
     You can also conditionally hide the layer. For more information, see [Hide an Item (Power BI Report Builder)](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs).  
   
-## Next steps
+## Related content
 
- [Maps (Power BI Report Builder)](maps-report-builder.md)
- [Troubleshoot Map Reports (Power BI Report Builder)](troubleshoot-reports-map-reports-report-builder.md)  
+- [Maps (Power BI Report Builder)](maps-report-builder.md)
+- [Troubleshoot Map Reports (Power BI Report Builder)](troubleshoot-reports-map-reports-report-builder.md)  

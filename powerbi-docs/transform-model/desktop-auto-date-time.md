@@ -100,7 +100,7 @@ In Power BI Desktop, you select **File > Options and settings > Options**, and t
    The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.
 :::image-end:::
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

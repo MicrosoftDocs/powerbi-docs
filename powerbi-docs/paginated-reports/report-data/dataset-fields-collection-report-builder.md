@@ -76,7 +76,7 @@ ms.reviewer: rpatkar
 ##  <a name="MissingFields"></a> Detect missing fields at run time  
  When the report is processed, the result set for a dataset may not contain values for all of the columns specified because the columns no longer exist on the data source. You can use the field property IsMissing to detect whether values for a field were returned at run-time. For more information, see [Dataset Fields Collection References &#40;Power BI Report Builder&#41;](../expressions/built-in-collections-dataset-fields-collection-references-report-builder.md).
   
-## Next steps
+## Related content
 
 - [Report Embedded Datasets and Shared Datasets &#40;Power BI Report Builder&#41;](../report-data/report-embedded-datasets-report-builder.md)
 - [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)

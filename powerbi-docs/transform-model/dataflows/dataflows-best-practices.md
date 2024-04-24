@@ -51,7 +51,7 @@ The following table provides a collection of links to articles that describe bes
 |Incremental refresh      |Load the latest or changed data versus a full reload         |[Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)         |
 |||
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

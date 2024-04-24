@@ -48,7 +48,7 @@ We recommend that you use the DAX query designer—providing it entirely meets y
 The MDX query designer requires your model to include measures. The designer has two capabilities not supported by the DAX query designer. Specifically, it allows you to:
 
 - Define query-level calculated members (in MDX).
-- Configure data regions to request [server aggregates](../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md) in non-detail groups. If your report needs to present summaries of semi- or non-additive measures (like time intelligence calculations, or distinct counts), it will likely be more efficient to use server aggregates than to retrieve low-level detail rows and have the report compute summarizations.
+- Configure data regions to request [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) in non-detail groups. If your report needs to present summaries of semi- or non-additive measures (like time intelligence calculations, or distinct counts), it will likely be more efficient to use server aggregates than to retrieve low-level detail rows and have the report compute summarizations.
 
 ## Query result size
 
@@ -142,7 +142,7 @@ If you need to delete query fields from your dataset, we recommend you remove th
 
 When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish a report.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

@@ -120,7 +120,7 @@ To help users receive notifications in Teams, you can work with your Teams admin
 - See [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) to learn about the latest issues.
 - The recipient needs to have access to the scorecards to get the metrics notifications.
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md).
 - [Enable remote work in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md).

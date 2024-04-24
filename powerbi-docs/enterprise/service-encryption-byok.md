@@ -221,7 +221,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
     Note that the current key should be enabled.
 
-## Next steps
+## Related content
 
 - [Overview of Power BI PowerShell cmdlet module.](/powershell/power-bi/overview)
 

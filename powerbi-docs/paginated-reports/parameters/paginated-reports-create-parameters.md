@@ -62,7 +62,7 @@ The following illustration shows Design view in Power BI Report Builder for a re
   
 9. Select **OK**.
 
-## Next steps
+## Related content
 
 See [View parameters for paginated reports](../../consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
 

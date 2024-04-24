@@ -105,7 +105,7 @@ However, you can't start in Power BI Report Builder and save it. Use the [upload
    
     ![Paginated report in the browser](media/quickstart-create-paginated-report/reportserver-paginated-report.png)
 
-## Next steps
+## Related content
 There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.
 
 * [Report Builder tutorials](/sql/reporting-services/report-builder-tutorials)

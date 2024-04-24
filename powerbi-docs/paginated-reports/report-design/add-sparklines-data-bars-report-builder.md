@@ -40,8 +40,9 @@ ms.reviewer: saurkumar
   
      Typically for sparklines and data bars, you don't add a field to the **Series Group** area because you only want one series for each row.  
   
-## Next steps  
-  [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](align-data-chart-table-matrix-report-builder.md)  
-  [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)
+## Related content
+
+- [Align the Data in a Chart in a Table or Matrix &#40;Power BI Report Builder&#41;](align-data-chart-table-matrix-report-builder.md)  
+- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)
   
   

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 01/30/2024
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -77,7 +77,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 >[!NOTE]
 >
 >* A [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is needed for publishing content to a Power BI app workspace.
->* Only **P SKU**s and **F SKU**s larger than F64 allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller **F SKU**s require a Pro license to consume Power BI content.
+>* Only **P SKU**s and **F SKU**s equivalent to a **F64 SKU** or higher, allow free Power BI users to consume Power BI apps and shared content in Power BI service. Smaller SKUs require a Pro license to consume Power BI content.
 >* The **F SKU** is part of Fabric. To read more about *F* SKUs see [Microsoft Fabric licenses](/fabric/enterprise/licenses).
 
 ### Capacity considerations
@@ -111,11 +111,9 @@ More information about SKU limits, is available here:
 
 * Power BI interactive (not paginated) reports - [Export Power BI report to file](export-to.md).
 
-Note the amount of memory available on each node size described in the *RAM (GB)* column of the table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded A4 capacity, a *single dataset* size is limited to 25 GB, and not the total memory footprint of *all* datasets handled at the same time.
-
 ### Embedded memory enhancements
 
-The amount of memory available on each node size is described in the RAM (GB) column in the SKU memory and computing power table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an Embedded Premium A4 capacity, a single dataset size is limited to 25 GB.
+The amount of memory available on each node size is described in the *Max memory (GB)* column in the [Semantic model SKU limitation](/power-bi/enterprise/service-premium-what-is#semantic-model-sku-limitation) table. It's set to the memory footprint limit of a single Power BI item (such as a semantic model, report or dashboard), and not to the cumulative consumption of memory. For example, in an F64 capacity, a single dataset size is limited to 25 GB.
 
 ## Related content
 

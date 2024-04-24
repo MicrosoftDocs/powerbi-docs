@@ -30,11 +30,11 @@ This topic does not applies to pie, doughnut, funnel, or pyramid chart types.
     -   **Disabled** Bar, column, and scatter charts will have no side margins.  
   
 1.  Select **OK**.
-  
-   
-## Next steps  
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md)   
- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md)   
- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md)   
- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
+
+## Related content
+
+- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-axis-labels-chart-report-builder.md)   
+- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/specify-axis-interval-report-builder.md)   
+- [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/format-axis-labels-dates-currencies-report-builder.md)   
+- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
   

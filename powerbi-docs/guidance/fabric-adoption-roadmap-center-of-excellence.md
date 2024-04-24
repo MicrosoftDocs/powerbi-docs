@@ -238,6 +238,6 @@ The following maturity levels will help you assess the current state of your COE
 | 400: Capable | &bull;&nbsp;The goals of the COE align with organizational goals, and they are reassessed regularly. <br/><br/>&bull;&nbsp;The COE is well-known throughout the organization, and consistently proves its value to the internal user community. |
 | 500: Efficient | &bull;&nbsp;Regular reviews of KPIs or OKRs evaluate COE effectiveness in a measurable way. <br/><br/>&bull;&nbsp;Agility and implementing continual improvements from lessons learned (including scaling out methods that work) are top priorities for the COE. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-governance.md) in the Microsoft Fabric adoption roadmap series, learn about implementing governance guidelines, policies, and processes.

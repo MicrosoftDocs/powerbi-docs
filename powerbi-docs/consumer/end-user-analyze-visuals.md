@@ -116,7 +116,7 @@ The following list is the collection of currently unsupported scenarios for the 
 * Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition.
 * RLS or OLS enabled data models
 
-## Next steps
+## Related content
 
 * [Waterfall charts in Power BI](../visuals/power-bi-visualization-waterfall-charts.md)
 * [Scatter charts, bubble charts, and dot plot charts in Power BI](../visuals/power-bi-visualization-scatter.md)

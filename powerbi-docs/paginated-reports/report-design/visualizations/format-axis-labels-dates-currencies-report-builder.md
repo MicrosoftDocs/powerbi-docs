@@ -50,10 +50,11 @@ When you show properly formatted DateTime values on an axis in a Power BI pagina
   
 1. Select **OK**.
   
-## Next steps  
- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)   
- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-an-axis-interval-report-builder-and-ssrs)  
+## Related content
+
+- [Formatting Axis Labels on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)   
+- [Specify an Axis Interval &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-an-axis-interval-report-builder-and-ssrs)  
 
   

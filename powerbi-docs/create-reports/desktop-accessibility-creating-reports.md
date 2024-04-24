@@ -46,7 +46,7 @@ Power BI has accessibility features built into the product, which don't require 
 * Focus mode
 * Show data table
 
-There are also features that help with the report consumption experience. Articles describing those features can be found in the [Next steps](#next-steps) section at the end of this article.
+There are also features that help with the report consumption experience. Articles describing those features can be found in the [Related content](#related-content) section at the end of this article.
 
 Let's take a look at each of these built-in accessibility features, in turn.
 
@@ -58,7 +58,7 @@ As a report consumer navigates around a report, focus shows up to indicate where
 
 ![Screenshot of a visual in focus for accessibility navigation.](media/desktop-accessibility/accessibility-creating-reports-01.png)
 
-To access the most frequently used keyboard shortcuts, you can press **Shift + ?** to display a keyboard shortcut dialog. To learn more, see the articles on accessible consumption experiences and keyboard shortcuts in the [Next steps](#next-steps) section at the end of this article.
+To access the most frequently used keyboard shortcuts, you can press **Shift + ?** to display a keyboard shortcut dialog. To learn more, see the articles on accessible consumption experiences and keyboard shortcuts in the [Related content](#related-content) section at the end of this article.
 
 ### Screen reader compatibility
 
@@ -281,7 +281,7 @@ There are a few known issues and limitations with the accessibility features. De
 
 * When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
 
-## Next steps
+## Related content
 
 The collection of articles for Power BI accessibility are the following:
 

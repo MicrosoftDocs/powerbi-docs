@@ -209,6 +209,6 @@ The following maturity levels will help you assess the current state of your com
 | 400: Capable | &bull;&nbsp;Champions are identified for all business units. They actively support colleagues in their self-service efforts. <br/><br/>&bull;&nbsp;Incentives to recognize and reward knowledge sharing efforts are a common occurrence. <br/><br/>&bull;&nbsp;Regular and frequent communication occurs based on a predefined communication plan. |
 | 500: Efficient | &bull;&nbsp;Bidirectional feedback loops exist between the champions network and the COE. <br/><br/>&bull;&nbsp;Key performance indicators measure community engagement and satisfaction. <br/><br/>&bull;&nbsp;Automation is in place when it adds direct value to the user experience (for example, automatic access to a group that provides community resources). |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-user-support.md) in the Microsoft Fabric adoption roadmap series, learn about user support.

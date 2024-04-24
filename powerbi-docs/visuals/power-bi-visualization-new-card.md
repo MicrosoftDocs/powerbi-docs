@@ -1,8 +1,8 @@
 ---
 title: Create a "new" card visualization 
 description: The "new" card visual allows you to display individual and group callouts in a single container, with a wide range of formatting settings available to customize its appearance completely.
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -140,7 +140,7 @@ The new card visual provides a wide range of options for customization. To bette
 * There are no limits to the number of cards that you can add to the new card visual. However, adding a large number of cards may cause the report to experience latency and slow data loading.
 * The new card visual currently doesn't support scrolling or pagination. As a result, if the container is small and you add multiple cards, they may appear in a reduced size.
 
-## Next steps
+## Related content
 
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

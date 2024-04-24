@@ -60,7 +60,7 @@ You can control which R installation to use to run your script. To specify your 
 
 You can refresh an R script in Power BI Desktop. When you refresh an R script, Power BI Desktop runs the R script again in the Power BI Desktop environment.
 
-## Next steps
+## Related content
 
 Take a look at the following additional information about R in Power BI.
 

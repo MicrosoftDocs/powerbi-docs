@@ -49,7 +49,7 @@ The Power BI mobile app supports QR codes with [URL query parameters](../../coll
 
 2. If the Power BI app isn't installed on your device, you'll be redirected to the [Apple App Store (iOS)](https://go.microsoft.com/fwlink/?LinkId=522062) or to [Google Play (Android)](https://go.microsoft.com/fwlink/?LinkID=544867) to download and install the app on your mobile device.
 
-## Next steps
+## Related content
 
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps
 * [Create a QR code for a report in the Power BI service](../../create-reports/service-create-qr-code-for-report.md)

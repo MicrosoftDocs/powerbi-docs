@@ -101,6 +101,6 @@ uspGetWhereUsedProductID
   
  When you enter the table name Person.ContactType, it is the equivalent of creating the Transact-SQL statement `SELECT * FROM Person.ContactType`.  
   
-## See also
+## Related content
 
- [Power BI Report Builder](../report-builder-power-bi.md)  
+ - [Power BI Report Builder](../report-builder-power-bi.md)  

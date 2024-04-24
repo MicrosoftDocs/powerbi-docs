@@ -73,7 +73,7 @@ Here's the quick how to, but you can see [Publish from Power BI Desktop](../crea
 
    :::image type="content" source="media/service-desktop-files/pbid_publishing.png" alt-text="Screenshot of the Sign-in confirmation dialog, showing that you've successfully signed in with a link to open your report.":::
 
-## Next steps
+## Related content
 
 - **Explore your data**: Once you get data and reports from your file into the Power BI service, it's time to explore. If your file already has reports in it, they appear in the navigator pane in **Reports**. If your file just had data, you can create new reports; just right-click the new semantic model and then select **Explore**.
 

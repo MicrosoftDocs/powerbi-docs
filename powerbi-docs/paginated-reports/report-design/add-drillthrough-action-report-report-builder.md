@@ -44,9 +44,9 @@ When you're publishing to the Power BI service, you must publish drillthrough re
   
 1. (Optional) For text boxes, it is helpful to indicate to the user that the text is a link by changing the color and effect of the text on the **Home** tab of the Ribbon.  
 
-## Next steps
+## Related content
 
- [Action Properties Dialog Box &#40;Report Builder)](add-hyperlink-url-report-builder.md)   
- [Formatting Data Points on a Chart &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
- [Show ToolTips on a Series &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/show-tooltips-on-a-series-report-builder-and-ssrs)  
+- [Action Properties Dialog Box &#40;Report Builder)](add-hyperlink-url-report-builder.md)   
+- [Formatting Data Points on a Chart &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
+- [Show ToolTips on a Series &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-design/show-tooltips-on-a-series-report-builder-and-ssrs)  
   

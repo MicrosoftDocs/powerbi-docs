@@ -51,9 +51,9 @@ ms.reviewer: monaraya
   
  ![Screenshot showing bar chart with Light-To-Dark drawing effect.](media/paginated-reports-visualizations/bar-drawing-effects-light-to-dark.gif "Bar chart with Light-To-Dark drawing effect.")  
   
-## Next steps
+## Related content
 
- [Bar Charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder.md)   
- [Column Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/column-charts-report-builder-and-ssrs)   
- [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)  
+- [Bar Charts &#40;Power BI Report Builder&#41;](bar-charts-report-builder.md)   
+- [Column Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/column-charts-report-builder-and-ssrs)   
+- [Pie Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)   
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)  

@@ -97,7 +97,7 @@ As a Power BI customer, you can also take advantage of the following offerings f
   
 Contact your Microsoft Customer Account Manager for details. If you don't already have a Microsoft Premier or Unified support contract, learn more at [Premier and Unified support](https://www.microsoft.com/en-us/unifiedsupport).
 
-## Next steps
+## Related content
 
 * [Help and support tenant settings](/fabric/admin/service-admin-portal-help-support)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)

@@ -218,6 +218,6 @@ The following table lists some of the most common requirements when a workspace 
 > - **Create documentation for workspace governance requirements:** Create useful documentation targeted at content creators that includes what their responsibilities are for managing content in a governed workspace. Make the information available in your centralized portal and training materials.
 > - **Create workspace auditing processes:** For workspaces that are considered governed, create an auditing process to identify areas of noncompliance with the most important requirements. Ensure that someone is responsible for contacting content owners to address compliance issues.
 
-## Next steps
+## Related content
 
 In the [next article](powerbi-implementation-planning-workspaces-workspace-level-planning.md) in this series, learn about workspace-level planning.

@@ -96,6 +96,6 @@ We encourage you to download the [Power BI usage scenario](powerbi-implementatio
 - [Usage scenario diagram](media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-inline.svg)
 - [Usage scenario diagram (without legend numbers)](media/powerbi-implementation-planning-usage-scenario-team-bi/usage-scenario-team-bi-no-legend.svg)
 
-## Next steps
+## Related content
 
 For more information, see [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md).

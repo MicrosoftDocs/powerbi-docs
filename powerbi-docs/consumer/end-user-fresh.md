@@ -95,8 +95,8 @@ Another way to stay up-to-date is to subscribe to a report or dashboard. Instead
 
 Each individual piece of content within an app has its own updated date and owner. That information might be different from the published date and app owner for the entire app.
 
-## Next steps
+## Related content
 
-[Create a data alert](end-user-alerts.md)    
-[Subscribe to dashboards and reports](/power-bi/collaborate-share/end-user-subscribe)    
-[View related content](end-user-related.md)
+- [Create a data alert](end-user-alerts.md)    
+- [Subscribe to dashboards and reports](/power-bi/collaborate-share/end-user-subscribe)    
+- [View related content](end-user-related.md)

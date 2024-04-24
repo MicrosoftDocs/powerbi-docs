@@ -172,7 +172,7 @@ Queries can run in the background allowing you to continue working on other quer
 
 #### Saving of DAX queries
 
-DAX query view query tabs are saved in the file when you save from Power BI Desktop, so you can continue where you left off when you open the file again. If you use the developer mode to save a Power BI project, each query tab is included as a .dax file in the DAXQueries folder of the semantic model folder. Learn more at the [Power BI deverloper mode documenation](https://learn.microsoft.com/power-bi/developer/projects/).
+DAX query view query tabs are saved in the file when you save from Power BI Desktop, so you can continue where you left off when you open the file again. If you use the developer mode to save a Power BI project, each query tab is included as a .dax file in the DAXQueries folder of the semantic model folder. Learn more at the [Power BI deverloper mode documenation](/power-bi/developer/projects/).
 
 Currently, you cannot view or edit the DAX queries in the Power BI service. Viewers of the report or semantic model do not see the DAX queries saved with the semantic model.
 
@@ -244,7 +244,7 @@ DAX query view is currently in **preview**. Keep the following in mind:
 - Query tabs don't yet allow moving.
 - Result grid doesn't yet show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
 - *Download this file* from Power BI service will not include the DAX queries saved in published semantic model.
-- Setting up the *initial* Git integration *from* the workspace will not include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
+- Setting up the *initial* Git integration *from* the workspace will not include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
 
 And there are some limitations to keep in mind:
 
@@ -252,7 +252,7 @@ And there are some limitations to keep in mind:
 - Maximum of 1,000,000 values per query. If you query for 20 columns, you can get back max 50,000 rows (1 million divided by 20).
 - Define all measures in this table or model is unavailable when there are more than 500 measures.
 
-## See also
+## Related content
 
-[DAX queries](/dax/dax-queries)  
-[Work with Modeling view](desktop-modeling-view.md)
+- [DAX queries](/dax/dax-queries)  
+- [Work with Modeling view](desktop-modeling-view.md)

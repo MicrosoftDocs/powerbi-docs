@@ -94,7 +94,7 @@ Back-end functionality is served by micro-services running on different machines
 
 ### Power BI Premium infrastructure
 
-Power BI Premium offers a service for subscribers who require premium Power BI features, such as Dataflows, Paginated Reports, AI, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
+Power BI Premium offers a service for subscribers who require premium Power BI features, such as advanced AI, distribution to unlicensed users, etc. When a customer signs up for a Power BI Premium subscription, the Premium capacity is created through the Azure Resource Manager.
 
 Power BI Premium capacities are hosted in back-end clusters that are independent of the regular Power BI back end – see above). This provides better isolation, resource allocation, supportability, security isolation, and scalability of the Premium offering.
 
@@ -325,7 +325,7 @@ Using Private Link with Power BI provides the following benefits:
 * Private Link ensures that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources.
 * Network traffic isolation from non-Azure-based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.
 
-See [Private links for accessing Power BI](../enterprise/service-security-private-links.md) for additional information.
+See [Private links for accessing Power BI](/fabric/security/security-private-links-overview) for additional information.
 
 ### VNet connectivity (preview - coming soon)
 
@@ -407,7 +407,7 @@ With Defender for Cloud Apps, organizations can gain the following DLP capabilit
 * Work with the Defender for Cloud Apps built-in anomaly detection. The Defender for Cloud Apps anomaly detection policies provide out-of-the-box user behavioral analytics and machine learning so that you're ready from the outset to run advanced threat detection across your cloud environment. When an anomaly detection policy identifies a suspicious behavior, it triggers a security alert.
 * Power BI admin role in the Defender for Cloud Apps portal. Defender for Cloud Apps provides an app-specific admin role that can be used to grant Power BI admins only the permissions they need to access Power BI-relevant data in the portal, such as alerts, users at risk, activity logs, and other Power BI-related information.
 
-See [Using Microsoft Defender for Cloud Apps Controls in Power BI](../enterprise/service-security-using-defender-for-cloud-apps-controls.md) for additional details.
+See [Using Microsoft Defender for Cloud Apps Controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) for additional details.
 
 ## Preview security features
 
@@ -433,7 +433,7 @@ The following questions are common security questions and answers for Power BI. 
 
     If the data source is Azure Analysis Services or on-premises Analysis Services and Row Level Security (RLS) and/or object-level security (OLS) is configured, the Power BI service will apply that row level security, and users who don't have sufficient credentials to access the underlying data (which could be a query used in a dashboard, report, or other data artifact) won't see data for which the user doesn't have sufficient privileges.
 
-    [Row Level security with Power BI](../enterprise/service-admin-rls.md) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.
+    [Row Level security with Power BI](/fabric/security/service-admin-rls) can be used to restrict data access for given users. Filters restrict data access at the row level, and you can define filters within role.
 
     [Object-level security (OLS)](https://powerbi.microsoft.com/blog/object-level-security-ols-now-available-for-public-preview-in-power-bi-premium/) can be used to secure sensitive tables or columns. However, unlike row-level security, object-level security also secures object names and metadata. This helps prevent malicious users from discovering even the existence of such objects. Secured tables and columns are obscured in the field list when using reporting tools like Excel or Power BI, and moreover, users without permissions can't access secured metadata objects via DAX or any other method. From the standpoint of users without proper access permissions, secured tables and columns simply don't exist.
 

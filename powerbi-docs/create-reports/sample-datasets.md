@@ -268,7 +268,7 @@ Want to understand how the data in these Excel workbooks gets converted to Power
 
 The Power BI service uploads your Excel file.
 
-## Next steps
+## Related content
 
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Tutorial: Explore a Power BI sample](sample-tutorial-connect-to-the-samples.md)

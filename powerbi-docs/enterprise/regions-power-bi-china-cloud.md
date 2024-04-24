@@ -6,7 +6,7 @@ ms.author: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual 
-ms.date: 04/18/2023
+ms.date: 04/02/2024
 ms.custom: 
 ---
 
@@ -29,8 +29,10 @@ The following table lists features of Power BI that are **not** yet available in
 | Power BI | Datamart | Public preview | Not available |  |
 | Power BI and Office | Teams - embed interactive Power BI report | Generally available | Not available | |
 |Power BI scalability | Large models | Generally available | Generally available in China East 2 and China North 2 only |  |
+|Power BI | Scorecards | Generally available | Not available for 21Vianet multi-geo capacities |  |
 
-## Next steps
+
+## Related content
 
 To learn more about Power BI operated by 21Vianet in China, see the following resources:
 

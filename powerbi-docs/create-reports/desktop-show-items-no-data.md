@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/5/2022
+ms.date: 03/15/2024
 LocalizationGroup: Data from files
 ---
 # Show items with no data in Power BI
@@ -210,7 +210,7 @@ This section shows the sample data model used in the examples in this article.
 
 
 
-## Next steps
+## Related content
 
 This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles:
 

@@ -220,7 +220,7 @@ For guest accounts: Use the following settings or options as you're prompted wit
 
 
 
-## Next steps
+## Related content
 
 You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 

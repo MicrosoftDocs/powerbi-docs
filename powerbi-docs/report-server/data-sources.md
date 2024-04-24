@@ -220,9 +220,9 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 
 (2) SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
-## Next steps
+## Related content
 
-[Data sources for Power BI reports](../connect-data/power-bi-data-sources.md) in the Power BI service
+* [Data sources for Power BI reports](../connect-data/power-bi-data-sources.md) in the Power BI service
 
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 

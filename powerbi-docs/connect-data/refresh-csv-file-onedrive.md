@@ -44,7 +44,7 @@ When you make changes to your *.csv* file on OneDrive, and they don't synchroniz
 
 If data in the *.csv* file on OneDrive changes, and the changes aren’t reflected in Power BI, it’s most likely because Power BI can't connect to OneDrive. Try connecting to the file and importing it again. If you’re prompted to sign in, make sure you select **Keep me signed in**.
 
-## Next steps
+## Related content
 
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 * [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)

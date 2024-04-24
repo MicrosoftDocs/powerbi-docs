@@ -15,6 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
+  no-loc: [Copilot]
 
 # highlightedContent section (optional)
 # Maximum of 8 items 
@@ -22,34 +23,37 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: Join the Fabric Community Conference
+      itemType: whats-new
+      url: https://fabricconf.com/#!/
+    # Card
     - title: Download Power BI Desktop for free
       itemType: get-started
       url: fundamentals/desktop-get-the-desktop.md
+    # Card
+    - title: Create report pages with Copilot
+      itemType: how-to-guide
+      url: create-reports/copilot-create-report-service.md
     # Card
     - title: Microsoft Fabric for Power BI users
       itemType: tutorial
       url: fundamentals/fabric-get-started.md
     # Card
-    - title: What is Microsoft Fabric?
-      itemType: get-started
-      url: /fabric/get-started/microsoft-fabric-overview
-    # Card
+    - title: Share Power BI reports and dashboards
+      itemType: how-to-guide
+      url: collaborate-share/service-share-dashboards.md
     # Card
     - title: Get started with DAX
       itemType: training
       url: /training/paths/dax-power-bi/?WT.mc_id=powerbi_landingpage-docs-link
     # Card
-    - title: New name for Power BI datasets
-      itemType: concept
-      url: connect-data/service-datasets-rename.md
-    # Card
-    - title: Edit data models in the Power BI service
+    - title: Configure scheduled refresh
       itemType: how-to-guide
-      url: transform-model/service-edit-data-models.md
+      url: connect-data/refresh-scheduled-refresh.md
     # Card
-    - title: Create report pages with Copilot
-      itemType: how-to-guide
-      url: create-reports/copilot-create-report.md
+    - title: Row-level security (RLS) in Power BI
+      itemType: get-started
+      url: enterprise/service-admin-rls.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -75,37 +79,21 @@ conceptualContent:
             url: fundamentals/index.yml
             text: See all getting started docs
         # Card
-        - title: Enterprise
+        - title: Copilot in Power BI (preview)
           links:
-            - url: enterprise/service-admin-licensing-organization.md
-              itemType: overview
-              text: Licensing for users in your organization
-            - url: enterprise/service-admin-power-bi-security.md
+            - url: create-reports/copilot-introduction.md
               itemType: concept
-              text: Security
-            - url: enterprise/service-security-data-protection-overview.md
+              text: Copilot for Power BI overview
+            - url: create-reports/copilot-evaluate-data.md
               itemType: concept
-              text: Data protection
+              text: Update your data model to work with Copilot (preview)
+            - url: create-reports/copilot-create-report-service.md
+              itemType: tutorial
+              text: Create report pages with Copilot for Power BI (preview)
           # footerLink (optional)
           footerLink:
-            url: enterprise/index.yml
-            text: See all enterprise docs        
-        # Card
-        - title: Administer Power BI
-          links:
-            - url: admin/service-admin-administering-power-bi-in-your-organization.md
-              itemType: overview
-              text: What is Power BI administration?
-            - url: admin/service-admin-portal.md
-              itemType: how-to-guide
-              text: Admin portal settings
-            - url: /power-bi/admin/service-admin-how-to-use-the-same-account-as-azure
-              itemType: how-to-guide
-              text: Use the same account for Power BI and Azure
-          # footerLink (optional)
-          footerLink:
-            url: admin/index.yml
-            text: See all admin docs
+            url: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/breadcrumb/toc.yml
+            text: See all Copilot docs
         # Card
         - title: Develop in Power BI
           links:
@@ -139,22 +127,6 @@ conceptualContent:
             url: connect-data/index.yml
             text: See all data connection docs
         # Card
-        - title: Datamarts (preview)
-          links:
-            - url: transform-model/datamarts/datamarts-overview.md
-              itemType: overview
-              text: Datamarts overview (preview)
-            - url: transform-model/datamarts/datamarts-understand.md
-              itemType: concept
-              text: Understand datamarts (preview)
-            - url: transform-model/datamarts/datamarts-get-started.md
-              itemType: tutorial
-              text: Get started with datamarts (preview)
-          # footerLink (optional)
-          footerLink:
-            url: transform-model/index.yml
-            text: See all datamarts docs
-        # Card
         - title: Model data
           links:
             - url: create-reports/desktop-add-custom-column.md
@@ -179,9 +151,6 @@ conceptualContent:
             - url: paginated-reports/report-builder-shared-datasets.md
               itemType: concept
               text: Create a paginated report based on a shared semantic model
-            - url: create-reports/power-bi-customize-button.md
-              itemType: how-to-guide
-              text: Customize buttons in reports
           # footerLink (optional)
           footerLink:
             url: create-reports/index.yml
@@ -218,6 +187,38 @@ conceptualContent:
           footerLink:
             url: collaborate-share/index.yml
             text: See all product integration docs
+        # Card
+        - title: Enterprise
+          links:
+            - url: enterprise/service-admin-licensing-organization.md
+              itemType: overview
+              text: Licensing for users in your organization
+            - url: enterprise/service-admin-power-bi-security.md
+              itemType: concept
+              text: Security
+            - url: enterprise/service-security-data-protection-overview.md
+              itemType: concept
+              text: Data protection
+          # footerLink (optional)
+          footerLink:
+            url: enterprise/index.yml
+            text: See all enterprise docs        
+        # Card
+        - title: Administer Power BI
+          links:
+            - url: admin/service-admin-administering-power-bi-in-your-organization.md
+              itemType: overview
+              text: What is Power BI administration?
+            - url: admin/service-admin-portal.md
+              itemType: how-to-guide
+              text: Admin portal settings
+            - url: /power-bi/admin/service-admin-how-to-use-the-same-account-as-azure
+              itemType: how-to-guide
+              text: Use the same account for Power BI and Azure
+          # footerLink (optional)
+          footerLink:
+            url: admin/index.yml
+            text: See all admin docs
         # Card
         - title: Power BI for business users
           links:
@@ -271,18 +272,21 @@ conceptualContent:
         # Card
         - title: Learning
           links:
-            - url: https://www.microsoft.com/cloudskillschallenge/ignite/registration/2023?ocid=ignite23_CSC_pbidocs_card
+            - url: https://community.fabric.microsoft.com/t5/custom/page/page-id/CareerHubPage?ocid=fabric24_careerhub_pbidocs_card_clp
+              itemType: concept
+              text: Jumpstart your career with the Career Hub 
+            - url: https://developer.microsoft.com/offers/30-days-to-learn-it?challenge_option=bfb9f08c-b763-4f60-b5d7-360debaf4f8f&ocid=fabric24_30DTLI_pbidocs_card_clp?WT.mc_id=powerbi_landingpage-docs-link
               itemType: concept
               text: Skill up with the Cloud Skills Challenge 
-            - url: /training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+            - url: https://learn.microsoft.com/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link?WT.mc_id=powerbi_landingpage-docs-link
               itemType: concept
               text: Explore our learning paths 
             - url: fundamentals/fabric-get-started.md
               itemType: concept
-              text: Explore Fabric for Power BI users
+              text: Explore Fabric capabilities
           # footerLink (optional)
           footerLink:
-            url: https://powerbi.microsoft.com/learning/
+            url: https://community.fabric.microsoft.com/t5/custom/page/page-id/CareerHubPage?ocid=fabric24_careerhub_pbidocs_card_clp
             text: See more
         # Card
         - title: Troubleshooting

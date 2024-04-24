@@ -1,7 +1,7 @@
 ---
 title: Semantic model connectivity and management with the XMLA endpoint in Power BI
 description: Describes Power BI Premium and Premium Per User semantic model connectivity from client applications and tools by using the XMLA endpoint.
-author: Minewiskan
+author: kfollis
 ms.author: davidi
 ms.reviewer: kayu
 ms.service: powerbi
@@ -150,8 +150,8 @@ When you connect to a workspace, changes from new, deleted, and renamed semantic
 
 The following semantic models aren't accessible by using the XMLA endpoint. These semantic models won't appear under the workspace in SSMS or in other tools:
 
-- semantic models based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
-- semantic models based on a live connection to a Power BI semantic model in another workspace. To learn more, see [Intro to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md).
+- Semantic models based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model.
+- Semantic models based on a live connection to a Power BI semantic model in another workspace. To learn more, see [Intro to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md).
 - Semantic models with Push data by using the REST API.
 - Semantic models in My Workspace.
 - Excel workbook semantic models.
@@ -325,7 +325,7 @@ When applications connect to a workspace, access through XMLA endpoints is logge
 
 To learn more, see [Auditing Power BI](../admin/service-admin-auditing.md).
 
-## See also
+## Related content
 
 For more information related to this article, see:
 

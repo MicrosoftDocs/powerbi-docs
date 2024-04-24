@@ -111,7 +111,7 @@ ms.reviewer: rpatkar
 
 ### Group data in a dataset
 
- You cannot group data in a dataset. To aggregate data in a dataset, you can edit the query command to calculate aggregates before the data is retrieved for a report. These are known as *server aggregates*. In expressions, to identify these values as precalculated aggregates, use the Aggregate function. For more information, see [Aggregate Function (Power BI Report Builder)](../expressions/report-builder-functions-aggregate-function.md).
+ You cannot group data in a dataset. To aggregate data in a dataset, you can edit the query command to calculate aggregates before the data is retrieved for a report. These are known as *server aggregates*. In expressions, to identify these values as precalculated aggregates, use the Aggregate function. For more information, see [Aggregate Function (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-function).
   
 ##  <a name="Parameters"></a> Use parameters and datasets
 
@@ -151,7 +151,7 @@ ms.reviewer: rpatkar
   
 - You can link related data from multiple datasets by using parameters with drillthrough reports or subreports. For example, a sales report can show summary data for all stores, and a drillthrough link can specify the store identifier as a parameter to a report with a dataset query that retrieves the individual sales for the specified store. For more information, see [Drillthrough, Drilldown, Subreports, and Nested Data Regions (Power BI Report Builder)](../report-design/drillthrough-drilldown-subreports-nested-data-regions.md) and [Subreports (Power BI Report Builder)](../subreports.md).
   
-- You cannot display detail data from multiple datasets in a single data region. However, you can display aggregate or built-in function values for multiple datasets within a data region. For more information, see [Aggregate Functions Reference (Power BI Report Builder)](../expressions/report-builder-functions-aggregate-functions-reference.md). If you need to combine detail data from multiple datasets into one data region, you must rewrite your query to retrieve the data as a single dataset.  
+- You cannot display detail data from multiple datasets in a single data region. However, you can display aggregate or built-in function values for multiple datasets within a data region. For more information, see [Aggregate Functions Reference (Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference). If you need to combine detail data from multiple datasets into one data region, you must rewrite your query to retrieve the data as a single dataset.  
   
 ##  <a name="NoRows"></a> Display a message when no rows of data are available
 
@@ -161,7 +161,7 @@ ms.reviewer: rpatkar
 
  For data sources that support international data, you might need to adjust properties for a dataset that affect the sort order, international character properties, and case sensitivity. These properties include case, kanatype, width, accent, and collation. For more information about how to set these properties, see [Dataset Properties Dialog Box, Options (Power BI Report Builder)](./dataset-properties-dialog-box-options-report-builder.md).
   
-## Next steps
+## Related content
 
 - [Manage Report Data Sources](../../connect-data/service-gateway-data-sources.md)
 - [Data retrieval guidance for paginated reports](../../guidance/report-paginated-data-retrieval.md)

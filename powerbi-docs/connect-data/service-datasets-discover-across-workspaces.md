@@ -53,7 +53,7 @@ There are two different kinds of endorsed semantic models. Semantic model owners
 
   :::image type="content" source="media/service-datasets-across-workspaces/power-bi-dataset-promoted.png" alt-text="Screenshot shows a semantic model with Promoted and Certified labels." lightbox="media/service-datasets-across-workspaces/power-bi-dataset-promoted.png":::
 
-## Next steps
+## Related content
 
 - [Use semantic models across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

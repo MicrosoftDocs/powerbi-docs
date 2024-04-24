@@ -43,6 +43,7 @@ ms.reviewer: saurkumar
     > [!NOTE]    
     >  If you set the line style to **Double** and the line width is 1 1/2 pt or narrower, the line may not appear double when you run the report in Power BI Report Builder or in the Power BI web portal. It appears double when you export the report to other formats such as Microsoft Word and Acrobat PDF.    
     
-## Next steps    
- [Rectangles and Lines (Power BI Report Builder)](rectangles-lines-report-builder.md)     
- [Rendering Behaviors (Power BI Report Builder)](render-behaviors-report-builder-service.md)    
+## Related content
+
+- [Rectangles and Lines (Power BI Report Builder)](rectangles-lines-report-builder.md)     
+- [Rendering Behaviors (Power BI Report Builder)](render-behaviors-report-builder-service.md)    

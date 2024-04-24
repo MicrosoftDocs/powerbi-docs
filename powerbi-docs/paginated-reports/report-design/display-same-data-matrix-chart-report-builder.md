@@ -88,10 +88,11 @@ ms.reviewer: saurkumar
   
 1. Preview the result. The matrix row and column groups display the same data as the chart series and category groups.  
   
-## Next steps  
- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)   
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
+## Related content
+
+- [Linking Multiple Data Regions to the Same Dataset &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/linking-multiple-data-regions-to-same-dataset-report-builder.md)   
+- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)   
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+- [Charts &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
   
   

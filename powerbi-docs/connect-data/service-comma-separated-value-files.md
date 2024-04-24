@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 01/17/2024
 LocalizationGroup: Data from files
 ---
 # Get data from comma separated value (CSV) files
@@ -36,11 +36,11 @@ If you have a CSV, it’s time to get it into your Power BI site as a semantic m
 >[!IMPORTANT]
 >The maximum file size you can import into Power BI is 1 GB.
 
-1. In a Power BI workspace, select **+ New**, and choose **Upload a file**.
+1. In a Power BI workspace, select **My workspace > New > Semantic model**.
 
    :::image type="content" source="media/service-comma-separated-value-files/new-upload-menu.png" alt-text="Screenshot of the workspace new menu with new and upload a file highlighted.":::
 
-2. Select **CSV**.
+2. In the window that appears, select **CSV**.
 
    :::image type="content" source="media/service-comma-separated-value-files/add-data-to-get-started.png" alt-text="Screenshot of file type icons with CSV highlighted.":::
 
@@ -48,7 +48,7 @@ If you have a CSV, it’s time to get it into your Power BI site as a semantic m
 
    :::image type="content" source="media/service-comma-separated-value-files/uploaded-financial-file.png" alt-text="Screenshot of the workspace with the uploaded CSV file.":::
 
-## Next steps
+## Related content
 
 **Explore your data** - Once you get data from your file into Power BI, it's time to explore. Select **More options (...)**, and then choose an option from the menu.
 

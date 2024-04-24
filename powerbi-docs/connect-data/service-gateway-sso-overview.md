@@ -60,7 +60,7 @@ When a user interacts with a DirectQuery report in the Power BI service, each cr
 
 You can also configure a report that is set up for refresh in the Power BI service to use SSO. When you configure SSO for this data source, queries execute under the identity of the dataset owner within Power BI. Therefore, the refresh happens based on the dataset owner's permissions on the underlying data source. Refresh using SSO is currently enabled only for data sources using [Kerberos](service-gateway-sso-kerberos.md) constrained delegation.
 
-## Next steps
+## Related content
 
 Now that you understand the basics of SSO through the gateway, read detailed information about setting up SSO here:
 

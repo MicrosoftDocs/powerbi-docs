@@ -107,11 +107,15 @@
       href: rls-sso.md
     - name: "Embed with object-level security (OLS)"
       href: embed-object-level-security.md
+  - name: Partner solutions
+    items:
+    - name: "Embedded analytics solution accelerators"
+      href: embedded-analytics-accelerators.md
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"
       href: embedded-troubleshoot.md
-    - name: Troubleshoot REST APIs
+    - name: Troubleshoot REST API errors
       href: troubleshoot-rest-api.md
     - name: "Embedding FAQ"
       href: embedded-faq.yml

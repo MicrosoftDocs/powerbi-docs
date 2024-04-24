@@ -99,6 +99,6 @@ The following maturity levels will help you assess your current state of executi
 | 400: Capable | &bull;&nbsp;An executive sponsor is well established with someone with sufficient authority across organizational boundaries. <br/><br/>&bull;&nbsp;A healthy and productive partnership exists between the executive sponsor, COE, business units, and IT. The teams are working towards shared data culture goals. |
 | 500: Efficient | &bull;&nbsp;The executive sponsor is highly engaged. They're a key driver for advancing the organization's data culture vision. <br/><br/>&bull;&nbsp;The executive sponsor is involved with ongoing organizational adoption improvements. KPIs (key performance indicators) or OKRs (objectives and key results) are used to track data culture goals and the results of data, analytics, and BI efforts. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-business-alignment.md) in the Microsoft Fabric adoption roadmap series, learn about the importance of business alignment with organizational goals.

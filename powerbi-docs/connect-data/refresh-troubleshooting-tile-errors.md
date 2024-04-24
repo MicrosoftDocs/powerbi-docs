@@ -74,7 +74,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
 If you're still having problems, [contact support](https://support.powerbi.com) and ask them to investigate further.
 
-## Next steps
+## Related content
 
 - [Troubleshoot the on-premises data gateway](service-gateway-onprem-tshoot.md)
 - [Troubleshoot Power BI personal gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)

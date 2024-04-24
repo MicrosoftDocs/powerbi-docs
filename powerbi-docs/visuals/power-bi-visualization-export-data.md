@@ -1,8 +1,8 @@
 ---
 title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 manager: kfollis
 ms.reviewer:
 ms.service: powerbi
@@ -194,7 +194,7 @@ These considerations and limitations apply to Power BI Desktop and the Power BI 
 There are many considerations related to exporting to Excel. Exporting is one of those features that report designers and Power BI administrators may disable for individuals or even for an entire organization. They disable it to ensure that private data isn't exposed to the wrong audience.
 
 If you find that you can't use this feature, reach out to the report owner and your administrator. They can explain why you can't export data from a particular visual or from all visuals. It may be that this feature is purposely disabled and perhaps they can enable it for you. Other times, there may be particular reasons an export doesn't work. It could be related to permissions, data contents, data type, visual type, how the designer named the fields, and more. When contacting the report owner or administrator, refer them to these articles:
-[Admin tenant settings](../admin/service-admin-portal-about-tenant-settings.md), [Row level security](../enterprise/service-admin-rls.md), and [Data protection](../enterprise/service-security-data-protection-overview.md).
+[Admin tenant settings](../admin/service-admin-portal-about-tenant-settings.md), [Row level security](/fabric/security/service-admin-rls), and [Data protection](../enterprise/service-security-data-protection-overview.md).
 
 - When you're exporting data to Excel, the speed of download of the generated workbook can vary depending on network bandwidth.
 

@@ -88,7 +88,7 @@ The following considerations and limitations apply to the numeric range slicer:
 * You can type any number into a numeric slicer even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
 * The date range slicer allows for any date values even if they don't exist in the underlying date column.
 
-## Next steps
+## Related content
 
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -112,7 +112,7 @@ Every migration is slightly different. It can depend on the organizational struc
 
 This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/). Contributors and reviewers include Marc Reguera, Venkatesh Titte, Patrick Baumgartner, Tamer Farag, Richard Tkachuk, Matthew Roche, Adam Saxton, Chris Webb, Mark Vaillancourt, Daniel Rubiolo, David Iseminger, and Peter Myers.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-pre-migration-steps.md), learn about the pre-migration steps when migrating to Power BI.
 
@@ -121,7 +121,6 @@ Other helpful resources include:
 - [Fabric adoption roadmap](fabric-adoption-roadmap.md)
 - [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 - [Migrate SSRS reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

@@ -207,7 +207,7 @@ Before setting up a profile-based multitenant solution, you should be aware of t
 
 By separating the data into separate semantic models for each customer, you minimize the need for [large semantic models](/power-bi/enterprise/service-premium-large-models). When the capacity gets overloaded, it can evict unused semantic models to free memory for active semantic models. This optimization is impossible for a [single large semantic model](#row-level-security). By using multiple semantic models, you can also separate tenants into multiple Power BI capacities if necessary.
 
-Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
+Without profiles, a service principal is limited to 1,000 [workspaces](pbi-glossary.md#workspace). To overcome this limit, a service principal can create multiple profiles, where each profile can access/create up to 1,000 workspaces. With multiple profiles, the ISV app can isolate each customer's content using distinct logical containers.
 
 Once a service principal profile has access to a workspace, its parent service principal’s access to the workspace can be removed to avoid scalability problems.
 
@@ -250,7 +250,7 @@ This article explains how to use profiles to create a separate semantic model fo
 
 Before using RLS, however, make sure you understand its limitations. All the data for all customers are in one large Power BI semantic model. This semantic model runs in a single capacity with its own scaling and other limitations.
 
-Even if you use service principal profiles to separate your customers' data, you can still use RLS within a single customer's semantic model to give different groups access to different parts of the data. For example, you could use [RLS]( ../../admin/service-admin-rls.md) to prevent members of one department from accessing data of another department in the same organization.
+Even if you use service principal profiles to separate your customers' data, you can still use RLS within a single customer's semantic model to give different groups access to different parts of the data. For example, you could use [RLS](/fabric/security/service-admin-rls) to prevent members of one department from accessing data of another department in the same organization.
 
 ## Considerations and limitations
 

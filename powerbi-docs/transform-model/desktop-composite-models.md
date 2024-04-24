@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 01/03/2024
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -118,9 +118,12 @@ For more information about storage mode, see [Manage storage mode in Power BI De
 
 ## Calculated tables
 
-You can add calculated tables to a model that uses DirectQuery. The Data Analysis Expressions (DAX) that define the calculated table can reference either imported or DirectQuery tables or a combination of the two.
+You can add calculated tables to a model in Power BI Desktop that uses DirectQuery. The Data Analysis Expressions (DAX) that define the calculated table can reference either imported or DirectQuery tables or a combination of the two.
 
 Calculated tables are always imported, and their data is refreshed when you refresh the tables. If a calculated table refers to a DirectQuery table, visuals that refer to the DirectQuery table always show the latest values in the underlying source. Alternatively, visuals that refer to the calculated table show the values at the time when the calculated table was last refreshed.
+
+> [!IMPORTANT]
+> Calculated tables aren't supported in the Power BI service using this feature. See the [Working with a composite model based on a semantic model](#working-with-a-composite-model-based-on-a-semantic-model) section in this article for more information. 
 
 ## Security implications
 
@@ -191,8 +194,8 @@ For example, in the following image we've added three cross source group relatio
 
 ### Local and remote
 
-Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and isn't part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belongs to the “Import” source group and is considered **local**.
-Any item that is in the “Import” source group is considered local.
+Any item that is in a source group that is a DirectQuery source group is considered **remote**, unless the item was defined locally as part of an extension or enrichment to the DirectQuery source and isn't part of the remote source, such as a measure or a calculated table. A calculated table based on a table from the DirectQuery source group belongs to the "Import" source group and is considered **local**.
+Any item that is in the "Import" source group is considered local.
 For example, if you define the following measure in a composite model that uses a DirectQuery connection to the Inventory source, the measure is considered local:
 
 ```dax
@@ -238,7 +241,7 @@ Existing reports that leverage a composite model on a Power BI semantic model wi
 
 ![Screenshot showing Warning message informing the user that publication of a composite model that uses a Power BI semantic model is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-composite-models/directquery-connection-disabled-warning.png)
 
-This way you can still explore the semantic model in your local Power BI Desktop environment and create the composite model. However, you won't be able to publish the report to the Service. When you publish the report and model you'll see the following error message and publication will be blocked:
+This way you can still explore the semantic model in your local Power BI Desktop environment and create the composite model. However, you won't be able to publish the report to the Service. When you publish the report and model, you'll see the following error message and publication will be blocked:
 
 ![Screenshot showing Error message that blocks publication of a composite model that uses a Power BI semantic model because DirectQuery connections are not allowed by the admin.](media/desktop-composite-models/directquery-connection-disabled-publish-error.png)
 
@@ -281,7 +284,22 @@ The chain in the previous image is of length three, which is the maximum length.
 
 ### Permissions and licensing
 
-Users accessing reports need to have proper [permissions to all semantic models and models in the chain that's formed by the semantic model](#chaining) that they want to access and the semantic models on which the reports are based. This permission can be Read or Build depending on whether they need to view the reports or make changes and create new reports. Also notice that [these tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
+Users accessing reports using a composite model need to have proper permissions to [all semantic models and models in the chain](#chaining).
+
+The owner of the composite model requires **Build** permission on the semantic models used as sources so that other users can access those models on behalf of the owner. As a result, creating the composite model connection in Power BI Desktop or authoring the report in Power BI require **Build** permissions on the semantic models used as sources.
+
+Users who view reports using the composite model will generally require **Read** permissions on the composite model itself and the semantic models used as sources. **Build** permissions might be required if the reports are in a Pro workspace. [These tenant switches](#managing-composite-models-on-power-bi-semantic-models) should be enabled for the user.
+
+The required permissions can be illustrated with the following example:
+
+* **Composite Model A** (owned by **Owner A**)
+  - Data source A1: **Semantic Model B**.<br/>**Owner A** must have **Build** permission on **Semantic Model B** for users to view the report using **Composite Model A**.
+
+* **Composite Model C** (owned by **Owner C**)
+  - Data source C1: **Semantic Model D**<br/>**Owner C** must have **Build** permission on **Semantic Model D** for users to view the report using **Composite Model C**.
+  - Data source C2: **Composite Model A**<br/>**Owner C** must have **Build** permission on **Composite Model A** and **Read** permission on **Semantic Model B**.
+
+A user viewing reports using **Composite Model A** must have **Read** permissions to both **Composite Model A** and **Semantic Model B**, while a user viewing reports using **Composite Model C** must have **Read** permissions on **Composite Model C**, **Semantic Model D**, **Composite Model A** and **Semantic Model B**.
 
 > [!NOTE]
 > Refer to this blogpost for important information about [permissions required for composite models on Power BI semantic models and Analysis Services models](https://powerbi.microsoft.com/blog/announcing-general-availability-for-composite-models-on-power-bi-datasets-and-analysis-services-models/).
@@ -309,8 +327,6 @@ You can build composite models using data from Power BI semantic models or Analy
 - You can specify which tables to load, rather than having to load all tables when you only want a specific subset of tables. See Loading a subset of tables later in this document. 
 - You can specify whether to add any tables that are subsequently added to the semantic model after you make the connection in your model. 
 
-
-
 ### Working with a composite model based on a semantic model
 
 When working with DirectQuery for Power BI semantic models and Analysis Services, consider the following: 
@@ -321,7 +337,7 @@ When working with DirectQuery for Power BI semantic models and Analysis Services
 * To build reports in the Power BI service on a composite model that's based on another semantic model, all credentials must be set.  
 * Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an On-premises data gateway (Standard mode). 
 * All connections to remote Power BI semantic models are made using single sign-on. Authenticating with a service principal isn't currently supported. 
-* RLS rules will be applied on the source on which they're defined, but won't be applied to any other semantic models in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table from another source group nor can you define RLS on a local table that has a relationship to another source group. 
+* RLS rules will be applied on the source on which they're defined, but won't be applied to any other semantic models in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables will not filter any tables loaded from a remote source. 
 * KPIs, row level security, and translations won't be imported from the source. 
 * You may see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using Date Hierarchy: 
 
@@ -387,7 +403,7 @@ Object-level security (OLS) enables model authors to hide objects that make up t
 
 OLS is defined for and applied on the source model. It cannot be defined for a composite model built on the source model.
 
-When a composite model is built on top of an OLS-protected Power BI semantic model or Analysis Services model via DirectQuery connection, the model schema from the source model is actually copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
+When a composite model is built on top of an OLS-protected Power BI semantic model or Analysis Services model via DirectQuery connection, the model schema from the source model is copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
 
 Since the composite model isn't secured by OLS rules, the objects that consumers of the composite model see are those that the composite model author could see in the source model rather than what they themselves might have access to. This might result in the following situations
 
@@ -443,12 +459,12 @@ Note that you can:
 - apply the deduplication rule to tables, measures or both 
 - Choose to apply the deduplication rule only when a name conflict occurs or apply it all the time. The default is to apply the rule only when duplication occurs. In our example, any table or measure from the marketing source that does not have a duplicate in the sales source will not get a name change. 
 
-After you make the connections and set up the deduplication rule, your field list will show both ‘Customer’ and ‘Customer (marketing)’ according to the deduplication rule set up in our example:
+After you make the connections and set up the deduplication rule, your field list will show both 'Customer' and 'Customer (marketing)' according to the deduplication rule set up in our example:
 
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
 
 
-If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of a the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
+If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
 
 ## Considerations and limitations
 
@@ -471,7 +487,7 @@ The existing limitations of DirectQuery still apply when you use composite model
 
 
 
-## Next steps
+## Related content
 
 For more information about composite models and DirectQuery, see the following articles:
 

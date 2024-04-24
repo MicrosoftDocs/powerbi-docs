@@ -26,8 +26,9 @@ In paginated reports, only a non-container item, such as a text box, line, or im
 > [!NOTE]  
 >  The **Image Properties** dialog box opens when you drag an image report item to a cell, where you can set properties such as the source of the image before the image is added to the cell.  
   
-## Next steps  
- [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/images-text-boxes-rectangles-lines-report-builder-service.md)   
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/images-text-boxes-rectangles-lines-report-builder-service.md)   
+- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

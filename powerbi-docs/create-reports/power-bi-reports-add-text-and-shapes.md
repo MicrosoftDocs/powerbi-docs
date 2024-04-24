@@ -103,7 +103,7 @@ You can also add a *smart narrative* to your report. The smart narrative visuali
 
 Read more about [smart narratives](../visuals/power-bi-visualization-smart-narrative.md).
 
-## Next steps
+## Related content
 
 For more information, see:
 

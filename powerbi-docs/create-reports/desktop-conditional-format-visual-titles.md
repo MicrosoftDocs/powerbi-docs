@@ -68,7 +68,7 @@ There are a few limitations to the current implementation of expression-based ti
 * Expression based titles aren't carried over when you pin a visual to a dashboard.
 * Conditional formatting can only use measures defined in the underlying model and can't use measures locally created in a report (semantic model connection).
 
-## Next steps
+## Related content
 
 This article described how to create DAX expressions that turn the titles of your visuals into dynamic fields that can change as users interact with your reports. You might find the following articles useful as well.
 

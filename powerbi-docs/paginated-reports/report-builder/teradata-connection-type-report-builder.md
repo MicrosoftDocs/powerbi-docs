@@ -52,10 +52,10 @@ data source=<IP Address>
  [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
  Provides in-depth information about platform and version support for supported data sources.  
 
-## Next steps
+## Related content
 
- [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
- [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](../report-design/filter-group-sort-data-report-builder.md)
- [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)  
+- [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
+- [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](../report-design/filter-group-sort-data-report-builder.md)
+- [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)  
   
   

@@ -1,8 +1,8 @@
 ---
 title: Customize visualization titles, backgrounds, and more in Power BI
 description: 'In this tutorial, you learn a few different ways to customize your visualization titles, backgrounds, labels, and legends'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: removed
 ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
@@ -234,7 +234,7 @@ Here is a list of the customization options that are available for each visualiz
 | Treemap | Yes | Yes | Yes |n/a |
 | Waterfall | Yes | Yes | Yes |n/a |
 
-## Next steps
+## Related content
 
 - [Customize X-Axis and Y-Axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
 

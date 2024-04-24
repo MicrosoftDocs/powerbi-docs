@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/10/2023
+ms.date: 04/15/2024
 LocalizationGroup: Data refresh
 ---
 
@@ -21,9 +21,9 @@ This article describes different scenarios you might encounter when refreshing d
 You should always ensure that basic requirements for refresh are met and verified:
 
 * Verify the gateway version is up to date.
-* Verify the report has a gateway selected. If there is no gateway selected, the data source might have changed or might be missing.
+* Verify the report has a gateway selected. If there's no gateway selected, the data source might have changed or might be missing.
 
-After you've confirmed these requirements are met, take a look through the following sections for more troubleshooting. 
+After you confirm the requirements are met, take a look through the following sections for more troubleshooting. 
 
 ## Email notifications
 
@@ -69,11 +69,11 @@ Microsoft is investigating a solution that allows the data loading process to re
 
 For refresh to work properly when connecting to a **SharePoint Online** data source by using Microsoft Entra ID OAuth, you must use the same account that you use to sign in to the **Power BI service**.
 
-If you want to connect to a data source from Power BI service by using OAuth2, the data source must be in the same tenant as the Power BI service. Currently, multi-tenant connection scenarios aren’t supported with OAuth2.
+If you want to connect to a data source from Power BI service by using OAuth2, the data source must be in the same tenant as the Power BI service. Currently, multitenant connection scenarios aren’t supported with OAuth2.
 
 ## Uncompressed data limits for refresh
 
-The maximum size for semantic models imported into the **Power BI service** is 1 GB. These semantic models are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that's processed during refresh. This limit accounts for the compression, and therefore is much higher than the 1-GB maximum semantic model size. Semantic models in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
+The maximum size for semantic models imported into the **Power BI service** is 1 GB. These semantic models are heavily compressed to ensure high performance. In addition, in shared capacity, the service places a limit of 10 GB on the amount of uncompressed data that is processed during refresh. This limit accounts for the compression, and therefore is higher than the 1-GB maximum semantic model size. Semantic models in Power BI Premium aren't subject to these limits. If refresh in the Power BI service fails for this reason, reduce the amount of data being imported to Power BI and try again.
 
 ## Scheduled refresh time-out
 
@@ -123,9 +123,9 @@ This error indicates a system error in Power BI Premium based on semantic models
 
 ## Dataflows or datamart failures in Premium workspaces
 
-Some connectors are not supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
 
-The following connectors are not supported for dataflows and datamarts in Premium workspaces:
+The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
 
 * Linkar
 * Actian
@@ -150,11 +150,16 @@ The following connectors are not supported for dataflows and datamarts in Premiu
 
 The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that are not Premium.
 
+## There was a problem refreshing the dataflow, the gateway version you are using is not supported
 
-## Next steps
+This error occurs if the version of the on-premises data gateway being used to refresh your dataflow (Gen1 or Gen2) is out of support. Currently Microsoft supports only the [last six versions of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates). Update your gateway to the latest version, or a supported version to resolve this issue. Use the [update an on-premises data gateway](/data-integration/gateway/service-gateway-update) article for guidance on updating gateways.
+
+
+
+## Related content
 
 - [Data refresh in Power BI](refresh-data.md)  
 - [Troubleshoot the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/).

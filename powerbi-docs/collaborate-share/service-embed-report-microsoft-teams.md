@@ -132,7 +132,7 @@ When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatic
 - Cross-tenant links aren't supported.
 - For other issues, see "Known issues and limitations" in [Collaborate in Microsoft Teams](service-collaborate-microsoft-teams.md#known-issues-and-limitations).
 
-## Next steps
+## Related content
 
 - [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 

@@ -202,7 +202,7 @@ In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you ca
 
    Most of the female bad hires are under 30.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

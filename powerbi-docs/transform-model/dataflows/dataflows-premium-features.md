@@ -176,7 +176,7 @@ Don't set a dataflow to incremental refresh in the following situations:
 
 * Linked entities shouldn't use incremental refresh if they reference a dataflow.
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

@@ -258,7 +258,7 @@ You can use automatic page refresh at a report page level to set a refresh inter
 
 For more information about automatic page refresh, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 
-## Next steps
+## Related content
 
 - [Overview of the Power BI REST API with real-time data](/rest/api/power-bi)
 - [Load data in a Power BI streaming semantic model and build a dataflows monitoring report with Power BI](/power-query/dataflows/load-dataflow-metadata-into-power-bi-dataset)

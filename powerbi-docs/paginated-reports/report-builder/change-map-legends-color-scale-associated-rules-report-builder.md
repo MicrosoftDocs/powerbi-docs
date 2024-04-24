@@ -244,7 +244,7 @@ Legends include the following parts of a map:
   
 5.  Select **OK**.
   
-## Next steps
+## Related content
 
 - [Maps &#40;Power BI Report Builder&#41;](maps-report-builder.md)   
 - [Add, Change, or Delete a Map or Map Layer (Power BI Report Builder)](add-change-delete-map-map-layer-report-builder.md)

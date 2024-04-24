@@ -33,7 +33,7 @@ It's always possible to update the preview cache. You can update it for a single
 
 ![Screenshot of Power BI Desktop showing Power Query Editor commands to refresh preview data.](media/power-query-background-refresh/power-query-refresh-preview-data.png)
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

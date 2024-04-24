@@ -1,8 +1,8 @@
 ---
 title: Combo chart in Power BI
 description: This tutorial about combo charts explains when to use them and how to build them in the Power BI service and Desktop.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: video-lnv66cTZ5ho, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
@@ -172,8 +172,7 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 * The secondary y-axis (line values) will automatically show or hide by default if its data range sufficiently overlaps with the primary y-axis (column values).  To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
 * Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
 
-## Next steps
+## Related content
 
-[Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
-
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
+* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

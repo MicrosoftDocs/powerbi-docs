@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/11/2023
+ms.date: 02/06/2024
 LocalizationGroup: Visualizations
 ---
 # Use on-object interaction with visuals in your report (preview)
@@ -167,6 +167,20 @@ When selecting an element that's very close or overlapping another, Power BI tak
 
 :::image type="content" source="media/power-bi-on-object-interaction/select-overlapping-elements.png" alt-text="Screenshot showing selecting overlapping elements." lightbox="media/power-bi-on-object-interaction/select-overlapping-elements.png":::
 
+## Format multiple visuals at once
+
+You can now format containers for more than one visual at a time. When you multi-select different visuals, Power BI has added formatting support for container formatting such as changing the size, background color, adding a shadow, or turning on or off titles in bulk.
+
+When you multi-select different visual types, such as a line chart and bar chart, you see **Size and style** and **Title** in the **Visual** section of the **Format pane**.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-multiselect.png" alt-text="Screenshot showing formatting more than one visual at a time.":::
+
+## Format an empty visual
+
+You can also format the size and position of a visual before you add any data to it.
+
+:::image type="content" source="media/power-bi-on-object-interaction/on-object-empty-visual.png" alt-text="Screenshot showing formatting an empty visual.":::
+
 ## Attach the build menu to the pane switcher
 
 You can attach the build menu to the pane switcher, if you'd prefer that. Pick one of these three different ways to attach it:
@@ -240,10 +254,10 @@ We plan to release an API for custom visual developers to be able to define subs
 
 - Full accessibility isn't currently supported.
 
-## Next steps
+## Related content
 
-[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
+- [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI community](https://community.powerbi.com/)

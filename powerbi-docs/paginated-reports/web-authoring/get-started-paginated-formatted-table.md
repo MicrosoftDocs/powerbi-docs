@@ -79,7 +79,7 @@ To create a paginated report from the Power BI service, you can start in a numbe
 - You can't create a paginated report from Power BI semantic models based on a live connection.
 - The online editor does *not* replicate all existing Power BI Report Builder functionality.  
 
-## Next steps
+## Related content
 
 - [Create paginated reports that you can export in the Power BI service](paginated-formatted-table.md)
 - [View a paginated report in the Power BI service](../../consumer/paginated-reports-view-power-bi-service.md)

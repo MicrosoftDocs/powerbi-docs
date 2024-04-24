@@ -76,7 +76,7 @@ If you're listed in the **Users** column of the data source configured within th
 
 ![Screenshot that shows Displaying the users](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## Next steps
+## Related content
 
 - [Connect to on-premises data in SQL Server](service-gateway-sql-tutorial.md)
 - [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)

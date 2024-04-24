@@ -1,8 +1,8 @@
 ---
 title: Optimize ribbon in Power BI Desktop
 description: Describes features of the Optimize ribbon in Power BI Desktop
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -98,7 +98,7 @@ See the Optimize ribbon features introduction at Microsoft Ignite 2022.
 
 > [!VIDEO https://www.youtube.com/embed/TopbQfxcPxM]
 
-## See also
+## Related content
 
 * [DirectQuery optimization scenarios with the Optimize ribbon](desktop-optimize-ribbon-scenarios.md)  
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)

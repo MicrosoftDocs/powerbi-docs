@@ -140,7 +140,7 @@ Power BI semantic model scale-out is enabled by default for a tenant. Power BI t
 
 * Disabling [Large semantic model storage format](service-premium-large-models.md) disables scale-out and loses all sync information.
 
-## Next steps
+## Related content
 
 * [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 

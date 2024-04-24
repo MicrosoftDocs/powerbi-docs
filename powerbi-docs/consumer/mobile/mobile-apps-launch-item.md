@@ -6,11 +6,11 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/16/2023
+ms.date: 03/30/2024
 ---
 # Choose a launch item for your Power BI mobile app
 
-A launch item is an item that has been configured to display whenever you launch your mobile app instead of the app home page. It's useful if you have specific content that you always go to when you open your app, and you want to save time by being taken directly to that content rather than having to navigate to it every time.
+A launch item is an item that has been configured to display whenever you launch your mobile app instead of the app home page. It's useful if you have specific content that you always go to when you open your app, and you want to save time by being taken directly to that content rather than having to navigate to it every time. You set the launch item to open in either normal or full-screen mode.
 
 A launch item can be a report, a specific report page, a dashboard, a scorecard, an app, or even a specific report within an app.
 
@@ -22,7 +22,7 @@ If both you and your organization have configured launch items, you can choose w
 
 Setting up a launch item doesn't mean you lose any features of the mobile app. All your Power BI content, and all the app's navigation features and pages, including the home page, are all still fully accessible.
 
-**Admins**: For information about setting up a launch item for your organization, see [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android)
+**Admins**: For information about setting up a launch item for your organization, see [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android).
 
 ## Set up a launch item
 
@@ -30,9 +30,15 @@ To mark an item as the launch item, open the desired item, tap **More options (â
 
 :::image type="content" source="./media/mobile-apps-launch-item/set-as-launch-item-option.png" alt-text="Screenshot of Set as launch item option in the Power BI mobile apps." border="false":::
 
+Select **Always open the item in full screen** if you want the launch item to always open in full screen mode.
+
+:::image type="content" source="./media/mobile-apps-launch-item/always-open-full-screen.png" alt-text="Screenshot of showing how to select the always open the item in full screen mode option." border="false":::
+
+When done, choose **Set**.
+
 Once you set an item as the launch item, it will be readily identifiable throughout the app by an icon.
 
-:::image type="content" source="./media/mobile-apps-launch-item/set-as-launch-item-icon.png" alt-text="Screenshot of launch item icon in the Power BI mobile apps.":::
+:::image type="content" source="./media/mobile-apps-launch-item/set-as-launch-item-icon.png" alt-text="Screenshot of launch item icon in the Power BI mobile apps." border="false":::
 
 ## Change your launch item
 
@@ -58,8 +64,10 @@ In the settings, you see your personal launch item, if any, and any item that th
 
 :::image type="content" source="./media/mobile-apps-launch-item/launch-item-settings.png" alt-text="Screenshot of Launch item settings." border="false":::
 
-Use the radio buttons to choose which launch item to use. Use the toggle switch to enable/disable the launch item functionality.
+* Use the radio buttons to choose which launch item to use.
+* Use the **Open app and item together** toggle to enable/disable the launch item functionality.
+* Use the **Open in full screen** toggle to control whether the launch item opens by default in full screen mode (toggle on) or normal mode (toggle off).
 
-## Next steps
+## Related content
 
 Admins: [Remotely configure Power BI app using mobile device management (MDM) tool](./mobile-app-configuration.md#launch-item-configuration-ios-and-android)

@@ -179,6 +179,6 @@ This step can be important. Even with straightforward table and column names, us
 
  Be aware that adding the same synonym to more than one column or table introduces ambiguity. Q&A uses context where possible to choose between ambiguous synonyms, but not all questions have sufficient context. For example, when a user asks “count the customers”, if you have three things with the synonym “customer” in your model, the user might not get the answer they're looking for. In these cases, make the primary synonym unique because that synonym is what's used in the restatement. It can alert the user to the ambiguity (for example, a restatement of “show the number of archived customer records”), which hints that they might want to ask it differently.
 
-## Next steps
+## Related content
 
-[Intro to Power BI Q&A](q-and-a-intro.md)
+- [Intro to Power BI Q&A](q-and-a-intro.md)

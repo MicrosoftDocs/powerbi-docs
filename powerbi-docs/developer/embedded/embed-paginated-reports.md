@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 08/20/2023
+ms.date: 01/08/2024
 
 ---
 
@@ -38,7 +38,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 * You must have your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md) setup.
 
-* A Premium capacity. See [what size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-size-premium-capacity-do-i-need-for-paginated-reports-)
+* A Premium capacity. See [what size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.yml#what-capacity-size-do-i-need-for-paginated-reports-)
 
 If you don't have **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 

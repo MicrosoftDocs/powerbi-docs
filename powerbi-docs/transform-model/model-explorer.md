@@ -84,7 +84,7 @@ You can create or edit relationships between tables in **Model explorer**. Learn
 
 #### Roles
 
-You can create or edit security roles in **Model explorer**. Learn more about security roles in the [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) article.
+You can create or edit security roles in **Model explorer**. Learn more about security roles in the [Row-level security (RLS) with Power BI](/fabric/security/service-admin-rls) article.
 
 :::image type="content" source="media/model-explorer/model-explorer-10.png" alt-text="Screenshot of the roles area in Model explorer.":::
 
@@ -95,7 +95,7 @@ You can create or edit tables in your model in **Model explorer**. The approach 
 :::image type="content" source="media/model-explorer/model-explorer-11.png" alt-text="Screenshot of the tables area in Model explorer.":::
 
 
-## Next steps
+## Related content
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 

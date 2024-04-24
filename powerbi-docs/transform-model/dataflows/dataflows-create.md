@@ -125,7 +125,7 @@ To export a dataflow, select the dataflow you created and select the **More** me
 
 To import a dataflow, select the import box and upload the file. Power BI creates the dataflow for you, and allows you to save the dataflow as is, or to perform other transformations.
 
-## Next steps
+## Related content
 
 By putting your data into a dataflow you can use Power BI Desktop and the Power BI service to create semantic models, reports, dashboards, and apps. These new resources can give you insights into your business activities. The following articles go into more detail about common usage scenarios for dataflows:
 

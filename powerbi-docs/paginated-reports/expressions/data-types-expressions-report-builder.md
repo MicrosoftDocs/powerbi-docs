@@ -143,6 +143,6 @@ For more information about SQL Server database data types, see [Data Types (Tran
 
 For more information about SQL Server Analysis Services data types, see [Data Types in Analysis Services](/analysis-services/multidimensional-models/olap-physical/data-types-in-analysis-services).
 
-## See also
+## Related content
 
-[Formatting Report Items (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)
+- [Formatting Report Items (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)

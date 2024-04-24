@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 ms.date: 12/31/2023
-ms.custom: contperf-fy20q4
 LocalizationGroup: Share your work
 ---
 
@@ -78,7 +77,7 @@ Let's say your report in Power BI Desktop is ready, and you want other people to
 ![Screenshot of sharing a report.](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-new-look.png)
 
 
-You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying semantic model, unless [row-level security (RLS)](../enterprise/service-admin-rls.md) is applied.
+You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying semantic model, unless [row-level security (RLS)](/fabric/security/service-admin-rls) is applied.
 
 You can share reports via links that give access:
 
@@ -182,8 +181,7 @@ Read more about [creating and using shared semantic models](../connect-data/serv
 
 - You can't share reports from Power BI Report Server. Instead, you can create [subscriptions for yourself or others](/sql/reporting-services/working-with-subscriptions-web-portal).
 
-
-## Next steps
+## Related content
 
 - [Share dashboards with coworkers and others](service-share-dashboards.md)
 - [Create and publish an app in Power BI](service-create-distribute-apps.md)

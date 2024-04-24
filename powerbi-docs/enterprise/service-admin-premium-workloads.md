@@ -263,7 +263,7 @@ To get to the outbound connectivity settings, follow these steps:
 
 The paginated reports workload is enabled automatically, and is always enabled.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Power BI Premium](service-premium-what-is.md)

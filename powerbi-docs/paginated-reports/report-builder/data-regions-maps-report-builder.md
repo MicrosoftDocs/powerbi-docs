@@ -53,7 +53,7 @@ ms.reviewer: monaraya
   
  For more information, see [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md).  
   
-## Next steps 
+## Related content
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
 - [Power BI Report Builder](../report-builder-power-bi.md)   

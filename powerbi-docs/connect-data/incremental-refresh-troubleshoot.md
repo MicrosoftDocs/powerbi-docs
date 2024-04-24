@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot incremental refresh and real-time data in Power BI
 description: Learn about common troubleshooting scenarios for incremental refresh, divided into configuration and refresh operations.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -145,7 +145,7 @@ By default, Power BI caches query results, so that queries of report visuals can
 
 To keep fetching the latest data changes from the source, configure automatic page refresh for your reports in the Power BI service. Automatic page refresh can be performed in fixed intervals, such as five seconds or ten minutes. When that specific interval is reached, all visuals in that page send an update query to the data source and update accordingly. Alternatively, you can refresh visuals on a page based on detecting changes in the data. This approach requires a change detection measure that Power BI then uses to poll the data source for changes. Change detection is only supported in workspaces that are part of a Premium capacity. To learn more, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 
-## See also
+## Related content
 
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)

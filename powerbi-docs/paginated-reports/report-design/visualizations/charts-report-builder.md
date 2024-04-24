@@ -87,7 +87,7 @@ The more time you spend carefully preparing and understanding your data before y
   
  `=Sum(CDbl(Fields!MyField.Value))`  
   
- For more information about aggregate expressions, see [Aggregate Functions Reference (Power BI Report Builder)](../../expressions/report-builder-functions-aggregate-functions-reference.md).  
+ For more information about aggregate expressions, see [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
    
 ##  <a name="InThisSection"></a> In this section  
  [Add a Chart to a Report &#40;Power BI Report Builder&#41;](add-chart-report-report-builder.md)  
@@ -120,13 +120,13 @@ The more time you spend carefully preparing and understanding your data before y
  [Troubleshoot Charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  
  Describes tips for working with charts.  
   
-## Next steps 
+## Related content
 
- [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/images-text-boxes-rectangles-and-lines-report-builder-and-ssrs)   
- [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
- [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
- [Tutorial: Add a Column Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-column-chart-to-your-report-report-builder)   
- [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)   
- [Tutorial: Add a Bar Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-bar-chart-to-your-report-report-builder)  
+- [Images, Text Boxes, Rectangles, and Lines &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/images-text-boxes-rectangles-and-lines-report-builder-and-ssrs)   
+- [Interactive Sort, Document Maps, and Links &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/interactive-sort-document-maps-and-links-report-builder-and-ssrs)   
+- [Nested Data Regions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/nested-data-regions-report-builder-and-ssrs)   
+- [Tutorial: Add a Column Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-column-chart-to-your-report-report-builder)   
+- [Tutorial: Add a Pie Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-pie-chart-to-your-report-report-builder)   
+- [Tutorial: Add a Bar Chart to Your Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-add-a-bar-chart-to-your-report-report-builder)  
   
   

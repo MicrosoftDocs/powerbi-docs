@@ -7,10 +7,10 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/23/2022
+ms.date: 02/14/2024
 LocalizationGroup: Share your work
 ---
-# Share access to a semantic model (preview)
+# Share access to a semantic model
 
 To make it possible for other users to take advantage of a semantic model, you can *share* it with them. Sharing a semantic model means granting access to it. This document shows you how to grant access to a semantic model using the **Share semantic model** dialog.
 
@@ -18,13 +18,13 @@ To make it possible for other users to take advantage of a semantic model, you c
 
 To share a semantic model
 
-1. On either the [data hub page](service-data-hub.md#find-the-data-you-need) or on the [data details page](service-data-details-page.md), choose **Share** as follows:
+1. From either the semantic model's options menu on the [OneLake data hub](/fabric/get-started/onelake-data-hub#open-an-items-options-menu) or from the [data details page](./service-dataset-details-page.md#supported-actions), choose **Share** as follows:
 
-    * **Data  hub**: In the data items list, click the **Share** icon. On a recommended data item tile, choose **Share** on the **More options (…)** menu.
+    * **OneLake data hub**: In the data items list, open the [options menu](/fabric/get-started/onelake-data-hub#open-an-items-options-menu) and select **Share**. On a recommended data item tile, choose **Share** on the **More options (…)** menu.
 
         ![Screenshot of data item share option on the data hub.](media/service-datasets-share/power-bi-dataset-share-dataset.png)
 
-    * **Semantic model info page**: Click the **Share** icon on the action bar at the top of the page.
+    * **Semantic model details page**: Click the **Share** icon on the action bar at the top of the page.
 
         ![Screenshot of semantic model share icon on the semantic model info page.](media/service-datasets-share/power-bi-dataset-share-icon.png)
 
@@ -46,10 +46,10 @@ To share a semantic model
 
 To monitor, change, or remove user access to your semantic model, see [Manage semantic model access permissions](service-datasets-manage-access-permissions.md).
 
-## Next steps
+## Related content
 
 * [Semantic model permissions](service-datasets-permissions.md)
 * [Manage semantic model access permissions](service-datasets-manage-access-permissions.md)
 * [Use semantic models across workspaces](service-datasets-across-workspaces.md)
->* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
+* [Share a report via link](../collaborate-share/service-share-dashboards.md#share-a-report-via-link)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

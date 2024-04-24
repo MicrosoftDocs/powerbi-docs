@@ -7,7 +7,8 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/14/2023
+ms.date: 03/13/2024
+no-loc: [Copilot]
 ---
 
 # Explore your data in the Power BI service (preview)
@@ -99,7 +100,6 @@ As you build out your exploration, you can also take advantage of a new filterin
 In this exploration experience, the filters are added as pills at the top of view, so you can easily see what the current filter state is and quickly modify it on the fly.  
 
 :::image type="content" source="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png" alt-text="Screenshot showing applying the trip purpose filter." lightbox="media/explore-data-service/apply-filter-trip-purpose-honeymoon-2.png":::
- 
 
 ## 4. Save and share your exploration 
 
@@ -153,7 +153,7 @@ You can share this new report as with other reports by using the **Share** butto
 ### To share
 
 - Exploration users need a Power BI Pro or PPU license to share.
-- When you share, Power BI prompts you to grant build permissions to the underlying dataset so the recipient can view. If you skip this second dialog, the recipient can't see the exploration and has to ask you for permissions.
+- When you share your exploration, you also need to grant build permissions to the underlying dataset so your recipients can view the exploration. If you skip this second step, your recipients can't see the exploration, and have to request permissions.
 - Explorations aren't currently shown in lineage view as related to the dataset.
 
 ### To open a saved exploration
@@ -176,6 +176,6 @@ All native visuals are supported with the exception of these visuals:
 - Power Apps
 - Power Automate
 
-## Next steps
+## Related content
 
-[Personalize visuals in a report](end-user-personalize-visuals.md)
+- [Personalize visuals in a report](end-user-personalize-visuals.md)

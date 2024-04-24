@@ -1,8 +1,8 @@
 ---
 title: Advanced incremental refresh and real-time data with the XMLA endpoint in Power BI
 description: Find out about advanced incremental refresh and real-time data features with the XMLA endpoint in Power BI.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -258,7 +258,7 @@ namespace Hybrid_Tables
 }
 ```
 
-## Next steps
+## Related content
 
 - [Partitions in tabular models](/analysis-services/tabular-models/partitions-ssas-tabular?view=power-bi-premium-current&preserve-view=true)
 - [External tools in Power BI Desktop](../transform-model/desktop-external-tools.md)

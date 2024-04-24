@@ -136,6 +136,6 @@ Here's a sample theme JSON for the default Light theme:
 * You see dashboard themes on mobile devices, but you can only create a dashboard theme in the Power BI service.
 * Dashboard custom themes only work with tiles pinned from reports.
 
-## Next steps
+## Related content
 
 - [Apply themes to reports](desktop-report-themes.md)

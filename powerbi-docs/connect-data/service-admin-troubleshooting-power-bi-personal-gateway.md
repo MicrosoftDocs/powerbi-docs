@@ -146,7 +146,7 @@ Or, you can go to your Temp folder (*%temp%*) and look for files that start with
 
 ![Temp folder](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-logs2.png)
 
-## Next steps
+## Related content
 
 - [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 - [Data refresh in Power BI](refresh-data.md)  

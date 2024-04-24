@@ -1,15 +1,13 @@
 ---
 title: Incremental refresh for semantic models and real-time data in Power BI
 description: Learn how to configure and use the incremental refresh features in Power BI to capture fast-moving data.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/26/2023
-ms.custom: contperf-fy21q4
-LocalizationGroup: 
 ---
 # Incremental refresh and real-time data for semantic models
 
@@ -258,7 +256,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Search "Incremental refresh for files" on Bing](https://www.bing.com/search?q=incremental+refresh+for+files)
 - [Search "Keep existing data using incremental refresh" on Bing](https://www.bing.com/search?q=keep+existing+data+using+incremental+refresh)
 
-## Next steps
+## Related content
 
 - [Configure incremental refresh for semantic models](incremental-refresh-configure.md)  
 - [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  

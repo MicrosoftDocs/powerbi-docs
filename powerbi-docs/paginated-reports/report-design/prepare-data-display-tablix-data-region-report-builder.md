@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
   
   
 ## Work with nulls and blanks in field values  
- Data for the field collection in a dataset includes all values retrieved from the data source at run time, including null values and blanks. Normally null values and blanks are indistinguishable. In most cases, this is the desired behavior. For example, Numeric aggregate functions like [Sum](../../paginated-reports/expressions/report-builder-functions-sum-function.md) and [Avg](../../paginated-reports/expressions/report-builder-functions-avg-function.md) ignore null values. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md).  
+ Data for the field collection in a dataset includes all values retrieved from the data source at run time, including null values and blanks. Normally null values and blanks are indistinguishable. In most cases, this is the desired behavior. For example, Numeric aggregate functions like [Sum](/sql/reporting-services/report-design/report-builder-functions-sum-function) and [Avg](/sql/reporting-services/report-design/report-builder-functions-avg-function) ignore null values. For more information, see [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
   
  If you do want to handle null values differently, you can use conditional expressions or custom code to substitute a custom value for the null value. For example, the following expression substitutes the text `Null` wherever a null value occurs in the field `[Size]`.  
   
@@ -47,9 +47,10 @@ FROM Production.Product p
   
  To sort a table data region according to this sort order, set the sort expression on the detail group to `=Fields!ColorSortOrder.Value`. For more information, see [Sort Data in a Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/sort-data-data-region-report-builder.md).  
   
-## Next steps  
- [Dataset Fields Collection &#40;Power BI Report Builder&#41;](../../paginated-reports/report-data/dataset-fields-collection-report-builder.md)   
- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)  
+## Related content
+
+- [Dataset Fields Collection &#40;Power BI Report Builder&#41;](../../paginated-reports/report-data/dataset-fields-collection-report-builder.md)   
+- [Expressions &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expressions.md)   
+- [Filter, Group, and Sort Data &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)  
   
   

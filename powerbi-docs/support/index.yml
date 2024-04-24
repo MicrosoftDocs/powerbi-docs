@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: mihart
   ms.author: mihart
-  ms.date: 11/29/2022
+  ms.date: 01/17/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -52,7 +52,7 @@ landingContent:
             url:  service-admin-health.md
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
-          - text: Is this a known issue?
+          - text: Is this problem a known issue?
             url: ../troubleshoot/known-issues/power-bi-known-issues.md
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com

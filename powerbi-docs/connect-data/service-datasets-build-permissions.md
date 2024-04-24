@@ -89,7 +89,7 @@ Power BI provides Build permission as a complement to Read and Reshare permissio
 
 With the more granular Build permission, you can choose who can only view the content in an existing report or dashboard, and who can create content connected to the underlying semantic model.
 
-## Next steps
+## Related content
 
 * [Use semantic models across workspaces](service-datasets-across-workspaces.md)
 * [Share a semantic model](service-datasets-share.md)

@@ -129,7 +129,7 @@ The following list describes all known issues when connecting to SAP HANA (Direc
 
 * **Multiple Power BI columns from single SAP HANA column:** For some calculation views, where an SAP HANA column is used in more than one hierarchy, SAP HANA exposes the column as two separate attributes. This approach results in two columns being created in Power BI. Those columns are hidden by default, however, and all queries involving the hierarchies, or the columns directly, behave correctly.
 
-## Next steps
+## Related content
 
 For more information about DirectQuery, check out the following resources:
 

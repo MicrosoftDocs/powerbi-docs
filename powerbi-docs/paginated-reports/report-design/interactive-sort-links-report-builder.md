@@ -38,9 +38,10 @@ ms.reviewer: saurkumar
  [Add a hyperlink to a URL (Power BI Report Builder)](../../paginated-reports/report-design/add-hyperlink-url-report-builder.md)  
  Explains how to add a link from your report to a URL  
   
-## Next steps  
- [Drillthrough, drilldown, subreports, and nested data regions (Power BI Report Builder)](../../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md)  
- [Filter, group, and sort data (Power BI Report Builder)](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)
- [Add dataset filters, data region filters, and group filters (Power BI Report Builder)](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)
+## Related content
+
+- [Drillthrough, drilldown, subreports, and nested data regions (Power BI Report Builder)](../../paginated-reports/report-design/drillthrough-drilldown-subreports-nested-data-regions.md)  
+- [Filter, group, and sort data (Power BI Report Builder)](../../paginated-reports/report-design/filter-group-sort-data-report-builder.md)
+- [Add dataset filters, data region filters, and group filters (Power BI Report Builder)](../../paginated-reports/report-design/add-dataset-filters-data-region-filters-and-group-filters.md)
   
   

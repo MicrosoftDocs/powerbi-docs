@@ -57,7 +57,7 @@ You can integrate a Power BI report in Teams and share it with external users. H
 
 1. You invite the external user to the organization, and they accept your invitation. See [Distribute Power BI content to external guest users using Microsoft Entra B2B](../guidance/whitepaper-azure-b2b-power-bi.md) for details.
 2. Give the external user permission on the report. Individual permissions assignment works best.
-3. Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) or get a Premium Per User (PPU) license.
+3. Make sure the external user has a Power BI license assigned to them. If the content is in a Premium capacity, the user only needs a Free license. If not, the user can [sign up for an individual free trial of Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-a-free-individual-license-for-fabric-and-power-bi) or get a Premium Per User (PPU) license.
 
 ## Known issues and limitations
 
@@ -101,7 +101,7 @@ The other Microsoft Power Platform apps also integrate with Microsoft Teams.
 - [Power Apps](/powerapps/teams/overview)
 - [Power Virtual Agents](/power-virtual-agents/)
 
-## Next steps
+## Related content
 
 - [Embed Power BI content in Microsoft Teams.](service-embed-report-microsoft-teams.md)
 - [Get a Power BI link preview in Microsoft Teams.](service-teams-link-preview.md)

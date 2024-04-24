@@ -33,7 +33,7 @@ You control query caching behavior on the **Settings** page for the semantic mod
 - When you change caching settings from **On** to **Off**, all previously saved query results for the semantic model are removed from the capacity cache. You can turn off caching either explicitly or by reverting to capacity default setting that an administrator has set to **Off**. Turning it off can introduce a small delay the next time any report runs queries against this semantic model. The delay is caused by those report queries running on demand and not applying saved results. Also, the required semantic model might need to be loaded into memory before it can service queries.
 - The query cache is refreshed when Power BI performs a semantic model refresh. When the query cache is refreshed, Power BI must run queries against the underlying data models to get the latest results. If a large number of semantic models have query caching enabled and the Premium/Embedded capacity is under heavy load, some performance degradation might occur during cache refresh. Degradation results from the increased volume of queries being executed.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [What is Power BI embedded analytics?](../developer/embedded/embedded-analytics-power-bi.md)

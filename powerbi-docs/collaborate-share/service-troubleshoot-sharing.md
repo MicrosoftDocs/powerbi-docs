@@ -48,7 +48,7 @@ To share a dashboard or report, you need permission to reshare the underlying co
 
 If you see a "Request access" message when you select the link to a report or dashboard, you don't have permission to view it. You need to [request access to it](service-request-access.md).
 
-## Next steps
+## Related content
 
 - [Share Power BI dashboards and reports with coworkers and others](service-share-dashboards.md)
 - [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)

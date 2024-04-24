@@ -208,7 +208,7 @@ ON R.RelationshipId=C.RelationshipId
 - Visualize results currently does not support SQL queries with an ORDER BY clause. 
 
 
-## Next steps
+## Related content
 This article provided information about analyzing data in datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

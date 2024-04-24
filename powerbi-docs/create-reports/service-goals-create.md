@@ -109,7 +109,7 @@ When you share a scorecard, the people you share it with can view and interact w
 
     When you share scorecards, whether inside or outside your organization, your recipients need Power BI Pro licenses, unless the content is in a [Power BI Premium](../enterprise/service-premium-what-is.md) capacity.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)

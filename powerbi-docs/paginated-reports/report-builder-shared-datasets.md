@@ -227,6 +227,6 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 - If you want to use a Power BI semantic model that uses DirectQuery in Power BI Report Builder, the dataset has to include a measure, even if you don't plan to surface the measure in your report. Without the measure, the dataset won't return proper data results.
 - Datasets with Promoted or Certified endorsements appear in the list of available datasets, but they aren't marked as such.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

@@ -560,7 +560,7 @@ When you're authoring streaming dataflows, be mindful of the following considera
 
 You can access cold storage only by using the **Dataflows** connector available starting in the July 2021 Power BI Desktop update. The previous Power BI dataflow connector allows only connections to streaming data (hot) storage. The connector's data preview doesn't work.
 
-## Next steps
+## Related content
 
 This article provided an overview of self-service streaming data preparation by using streaming dataflows. The following articles provide information about how to test this capability and how to use other streaming data features in Power BI:
 

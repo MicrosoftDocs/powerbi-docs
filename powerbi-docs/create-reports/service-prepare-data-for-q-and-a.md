@@ -44,7 +44,7 @@ Here are some tips for making the most of Q&A in your workbook:
 
 * Open the semantic model in Power BI Desktop. Create new columns and measures, concatenate fields to create unique values, and classify data by types such as dates, strings, geography, images, URLs, and more.
 
-## Next steps
+## Related content
 
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)

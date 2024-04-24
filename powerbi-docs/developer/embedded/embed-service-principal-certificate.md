@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 01/22/2023
+ms.date: 04/10/2024
 ---
 
 # Embed Power BI content with service principal and a certificate

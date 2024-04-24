@@ -1,14 +1,14 @@
 ---
 title: Waterfall charts in Power BI
 description: Learn how to create and configure waterfall charts in the Power BI service and Power BI Desktop.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/26/2023
+ms.date: 03/19/2024
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -43,6 +43,16 @@ Waterfall charts are a great choice for many scenarios:
 
 > [!NOTE]
 > If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+
+* When you want to visualize the steps and relationships of business processes.
+
+* When you want to monitor and control data quality.
+
+* When you want to visualize and track the progress of project steps.
+
+* To analyze data defects and identify their causes.
+
+* To understand the workings of the organization and the connections between departments.
 
 ## Prerequisites
 
@@ -158,7 +168,7 @@ Let's take a closer look at the data to see what's contributing most to the chan
 
    :::image type="content" source="media/power-bi-visualization-waterfall-charts/power-bi-waterfall-two-contributors.png" alt-text="Screenshot of the waterfall chart that reveals Ohio and Pennsylvania as the territories that are the largest contributors.":::
 
-## Next steps
+## Related content
 
 - [Change how visuals interact](../create-reports/service-reports-visual-interactions.md) in a Power BI report.
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

@@ -271,7 +271,7 @@ Select a **Quantity by ProductName** chart product to see the map and the date c
 
 Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' or regions' order information, time frames, and products. When your report is ready, you can [upload it to the Power BI service](../create-reports/desktop-upload-desktop-files.md) to share it with other Power BI users.
 
-## Next steps
+## Related content
 
 * [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Watch Power BI videos](../fundamentals/videos.md)

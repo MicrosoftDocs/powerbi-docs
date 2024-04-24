@@ -1,13 +1,13 @@
 ---
 title: Copy and paste a visualization in Power BI.
-description: Copy and paste a visualization in Power BI
-author: mihart
-ms.author: mihart
+description: Copy and paste a visualization in Power BI.
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/21/2023
+ms.date: 01/31/2024
 ms.custom: sample-salesandmarketingsample
 LocalizationGroup: Visualizations
 ---
@@ -87,7 +87,7 @@ Visuals can be copied from dashboards and from reports.
 
     :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-reports.png" alt-text="Screenshot showing the Copy visual as image icon displayed.":::
 
-1. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In the screenshot below, we pasted the visual into an email.
+1. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In this screenshot, we pasted the visual into an email.
 
    :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-email.png" alt-text="Screenshot showing the visual pasted into Outlook.":::
 
@@ -117,7 +117,7 @@ If you don't want users to be able to copy a specific visual, you can remove the
 
 #### Disable copy and paste for a group of users
 
-If you own the content or are an administrator of the tenant, you can control who can copy visuals. This setting disables *copy as image with caption* in reports and *copy visual as image* on dashboards for all users of the Power BI tenant. Users may still see the copy and paste options but receive an error message when they try to use them.
+If you own the content or are an administrator of the tenant, you can control who can copy visuals. This setting disables *copy as image with caption* in reports and *copy visual as image* on dashboards for all users of the Power BI tenant. Users might still see the copy and paste options but they receive an error message when they try to use them.
   
 1. Navigate to the Admin Portal.
 
@@ -131,33 +131,33 @@ If you own the content or are an administrator of the tenant, you can control wh
 
 :::image type="content" source="media/power-bi-visualization-copy-paste/power-bi-copy-grey.png" alt-text="Screenshot showing the 'Copy not available' screen.":::
 
-Q: I don't see the copy and paste options.   
-A: If you're using Power BI Desktop, this feature isn't yet available.   
 Q: Why is the Copy icon disabled on a visual?   
-A: The content owner and admin can turn off this feature. 
+A: The content owner and admin can turn off this feature.    
+
+Q: Which visuals aren't fully supported for copying and pasting?    
 A: We currently support native Power BI visuals and certified custom visuals. There's limited support for certain visuals including:
 
-- ESRI and other Map visuals 
-- Python visuals 
-- R visuals 
-- PowerApps 
-- Noncertified custom visuals
+- ESRI and other map visuals. 
+- Python visuals. 
+- R visuals. 
+- Power Apps visuals. 
+- Slicer visuals and visuals that use *Filter APIs* which act as slicers. Learn more about [visual filter APIs](../developer/visuals/filter-api.md).
+- [Licensed visuals](../developer/visuals/licensing-faq.yml#what-are-licensed-visuals-)
+- Custom visuals that aren't certified. See [how to certify your custom visual.](../developer/visuals/power-bi-custom-visuals-certified.md) 
+- [AppSource visuals that are managed in your organizational store.](/fabric/admin/organizational-visuals#add-a-visual-from-appsoruce)
+- Visuals with applied themes and colors.
+- Freshly pinned dashboard tiles.
+- Visuals with Odata filters can't be redirected.
+- Visuals with personal bookmarks and other *sticky* states.
 
-For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
+Q: Can I paste into any application?    
+A: No, only applications with support for pasting HTML.    
+A: Formatted content from the clipboard may not render everything that was copied from the visual. 
 
-Q: Why is my visual not pasting correctly?   
-A: There are limitations around copy visual as an image, including:
+Q: I don't see the copy and paste options.   
+A: If you're using Power BI Desktop, this feature isn't yet available.   
 
-- For custom visuals
-  - Visuals with applied themes and colors
-  - Tile scaling when pasting
-  - Custom visuals with animations
-- Copying constraints
-  - Can't copy a freshly pinned dashboard tile
-  - Can't redirect users to content with Odata filters and sticky states such as personal bookmarks
-- Applications with limited support for pasting HTML-formatted content from the clipboard may not render everything that was copied from the visual
-
-## Next step
+## Related content
 
 More about [Visualizations in Power BI reports.](power-bi-report-visualizations.md)
 

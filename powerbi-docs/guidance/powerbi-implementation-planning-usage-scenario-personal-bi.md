@@ -76,12 +76,12 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 ### Information protection
 
-[Information protection](fabric-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](../enterprise/service-security-sensitivity-label-mandatory-label-policy.md) that requires a sensitivity label be assigned, even within a personal workspace.
+[Information protection](fabric-adoption-roadmap-system-oversight.md#information-protection-and-data-loss-prevention) policies can be applied to content in the Power BI service. Some organizations have a [mandatory label policy](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) that requires a sensitivity label be assigned, even within a personal workspace.
 
 ### System oversight
 
 The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service, and it extends to personal workspaces. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and detect risky activities. Auditing and governance requirements are typically less stringent for personal BI scenarios.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-team-bi.md), learn about small team collaboration with the team BI usage scenario.

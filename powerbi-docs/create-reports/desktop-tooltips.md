@@ -133,7 +133,7 @@ There are a few considerations and limitations for **tooltips** to keep in mind.
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 
 * You can turn tooltips off completely for a visual in Power BI reports. However, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with report tooltips, take a look at the following articles:
 

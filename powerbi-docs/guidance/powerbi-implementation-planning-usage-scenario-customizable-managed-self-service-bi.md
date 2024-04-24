@@ -96,7 +96,7 @@ A report creator might find a semantic model in the [data hub](../connect-data/s
 
 There are several advantages to publishing reports to a workspace different from where the semantic model is stored.
 
-First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](../enterprise/service-admin-rls.md) to take effect when necessary for users assigned to the viewer role.
+First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](/fabric/security/service-admin-rls) to take effect when necessary for users assigned to the viewer role.
 
 ### Dependency and impact analysis
 
@@ -113,6 +113,6 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. With a customizable managed self-service BI scenario, it's particularly helpful to track usage of the original shared semantic model as well as dependent semantic models.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md), learn about reusing data preparation work with dataflows in the self-service data preparation scenario.

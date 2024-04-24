@@ -60,7 +60,7 @@ Now everyone who has access to this app also sees it in the **Featured** section
 
 Endorsing an app or a report by promoting it automatically checks the **Feature on Home** checkbox. You can uncheck **Feature on Home** anytime. If you do, changing endorsement doesn't recheck **Feature on Home**. Read more about [promoting your content](service-endorse-content.md#promote-content).
 
-## Next steps
+## Related content
 
 * [How should I collaborate on and share dashboards and reports?](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 * Admins: [Manage featured content in the Admin portal](../admin/service-admin-portal-featured-content.md)

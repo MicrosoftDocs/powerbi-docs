@@ -75,7 +75,7 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 Monitor performance of content deployed into your organization's Power BI Premium capacity with the help of the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app).
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

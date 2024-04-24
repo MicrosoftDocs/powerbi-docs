@@ -7,19 +7,26 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/13/2023
+ms.date: 01/11/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
 # Write Copilot prompts for creating report pages in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
+Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
+
+[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
+
+## Sample prompts for report pages
+
 Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples.
 
 Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
 
-Also, see the [Considerations and limitations section](copilot-create-report.md#considerations-and-limitations) in the article "Create report pages with Copilot for the Power BI service."
+Also, see the [Considerations and limitations section](copilot-create-report-service.md#considerations-and-limitations) in the article "Create report pages with Copilot for the Power BI service."
 
 ## Sales performance by product
 
@@ -55,11 +62,12 @@ Now generate a table of contents across your report pages.
 
 ## Send feedback
 
-We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
+We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
 
 ## Next steps
 
-- [Create a report with Copilot for Power BI](copilot-create-report.md)
+- [Overview of Copilot for Power BI](copilot-introduction.md)
+- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - [Frequently asked questions about Copilot for Power BI and Fabric](/fabric/get-started/copilot-faq-fabric)

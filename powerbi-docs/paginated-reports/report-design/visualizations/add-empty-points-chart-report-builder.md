@@ -42,11 +42,11 @@ Null values are shown on the chart as empty spaces or gaps between data points i
   
     2.  Set the EmptyPointValue property. To insert empty points at an average of the previous and next data points, select **Average**. To insert empty points at zero, select **Zero**.  
   
-## Next steps
+## Related content
 
- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
- [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
- [Add Scale Breaks to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-scale-breaks-to-a-chart-report-builder-and-ssrs)   
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
+- [Add Dataset Filters, Data Region Filters, and Group Filters &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-dataset-filters-data-region-filters-and-group-filters)   
+- [Chart Types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
+- [Add Scale Breaks to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-scale-breaks-to-a-chart-report-builder-and-ssrs)   
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)  
   
   

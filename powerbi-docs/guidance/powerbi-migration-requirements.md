@@ -67,7 +67,7 @@ Compile detailed information pertaining to data, such as:
 - **Data volume and scalability:** Evaluate data volume expectations, which will factor into decisions about [large model support](../enterprise/service-premium-large-models.md) and designing DirectQuery or [Composite models](../transform-model/desktop-composite-models.md). Considerations related to historical data needs are essential to know too. For larger semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)), determining [incremental data refresh](../connect-data/incremental-refresh-overview.md) will also be necessary.
 - **Measures, KPIs, and business rules:** Assess needs for measures, KPIs, and business rules. They will impact decisions regarding where to apply the logic: in the semantic model or the data integration process.
 - **Master data and data catalog:** Consider whether there are master data issues requiring attention. Determine if integration with an enterprise data catalog is appropriate for enhancing discoverability, accessing definitions, or producing consistent terminology accepted by the organization.
-- **Security and data privacy:** Determine whether there are any specific security or data privacy considerations for semantic models, including [row-level security](../enterprise/service-admin-rls.md) requirements.
+- **Security and data privacy:** Determine whether there are any specific security or data privacy considerations for semantic models, including [row-level security](/fabric/security/service-admin-rls) requirements.
 - **Open issues and backlog items:** Add any known issues, known data quality defects, future maintenance, or deferred requests to the backlog at this time.
 
 > [!IMPORTANT]
@@ -102,14 +102,14 @@ Identify high priority data, which might include data that:
 - Can be used to create a shared semantic model for reuse by reports and many report creators.
 - Involves a reasonable level of complexity (to improve chances of success when in the initial migration iterations).
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-planning.md), learn about Stage 2, which is concerned with planning the migration for a single Power BI solution.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

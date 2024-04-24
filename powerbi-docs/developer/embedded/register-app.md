@@ -4,12 +4,13 @@ description: Set up Power BI Embedded by using a setup tool to register a Micros
 author: mberdugo
 ms.author: monaberdugo
 keywords: 
-ms.date: 01/23/2023
+ms.date: 01/23/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: intro-overview
 ---
+
 # Set up Power BI Embedded
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data

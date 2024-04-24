@@ -60,8 +60,7 @@ Another way to locate content quickly is to use the content list **Filter**. Dis
 * Search currently supports only English characters
 * Global search is currently supported only in Public cloud
 
-
-## Next step
+## Related content
 
 - [Change how a chart is sorted in a Power BI report](end-user-change-sort.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

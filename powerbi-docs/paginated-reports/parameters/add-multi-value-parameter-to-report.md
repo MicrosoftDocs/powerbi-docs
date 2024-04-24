@@ -53,8 +53,9 @@ ms.author: maggies
 
 - Multi-value parameters aren't supported with the CONTAINS operator.  
 
-## Next steps  
- [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
- [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter)  
+## Related content
+
+* [Add Cascading Parameters to a Report &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs)   
+* [Add, Change, or Delete a Report Parameter &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-change-or-delete-available-values-for-a-report-parameter)  
   
   

@@ -51,12 +51,13 @@ The tablix body is located in the lower right corner (lower left for RTL layout)
   
  The row group area displays two category group instances for Clothing and Components. The column group displays a geography group instance for North America, with two nested country/region group instances for Canada (CA) and the United States (US). In addition, the adjacent column displays two year group instances for 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with the category group shows subcategory totals, and the grand total row displays the category totals once for the data region.  
   
-## Next steps  
- [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
- [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   
- [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
- [Create a Matrix](create-matrix-report-builder.md)   
- [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)   
- [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
+## Related content
+
+* [Tables, Matrices, and Lists &#40;Power BI Report Builder&#41;](../../paginated-reports/report-builder-tables-matrices-lists.md)   
+* [Power BI Report Builder Tutorials](/sql/reporting-services/report-builder-tutorials)   
+* [Tables &#40;Power BI Report Builder&#41;](tables-report-builder.md)   
+* [Create a Matrix](create-matrix-report-builder.md)   
+* [Create Invoices and Forms with Lists](create-invoices-forms-lists-report-builder.md)   
+* [Tablix Data Region &#40;Power BI Report Builder&#41;](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)  
   
   

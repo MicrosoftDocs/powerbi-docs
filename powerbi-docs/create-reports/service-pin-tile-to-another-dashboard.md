@@ -50,7 +50,7 @@ One way to add a new [dashboard tile](../consumer/end-user-tiles.md) to a dashbo
 
 1. Select **Go to dashboard** to see the pinned tile. There, you can [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned visualization.
 
-## Next steps
+## Related content
 
 * [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)  
 * [Dashboards for business users of the Power BI service](../consumer/end-user-dashboards.md)  

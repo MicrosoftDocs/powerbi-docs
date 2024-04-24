@@ -8,14 +8,14 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/05/2022
+ms.date: 03/15/2024
 LocalizationGroup: Create reports
 ---
 # Use grouping and binning in Power BI Desktop
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-When Power BI Desktop creates visuals, it aggregates your data into chunks, or groups, based on values it finds in the underlying data. Often that's fine, but there might be times when you want to refine how those chunks are presented.
+When Power BI Desktop creates visuals it aggregates your data into chunks, or groups, based on values it finds in the underlying data. Often that's fine, but there might be times when you want to refine how those chunks are presented.
 
 For example, you might want to place three categories of products in one larger category or group, or you might want to see sales figures put into bin sizes of 1,000,000 dollars instead of chunks of 923,983-dollar sizes.
 
@@ -65,3 +65,11 @@ Use binning to right-size the data that Power BI Desktop displays. You can set t
 To see binning in action, take a look at this [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
 And that's all there is to using grouping and binning to ensure the visuals in your reports show your data just the way you want them to.
+
+## Related content
+
+You might also be interested in the following articles:
+
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
+

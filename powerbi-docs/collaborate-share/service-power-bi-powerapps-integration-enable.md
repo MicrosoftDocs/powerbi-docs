@@ -28,7 +28,7 @@ For the integration to work, the Power Platform Solutions Integration (Preview) 
 
 For information about enabling the Power BI/Power Apps Solutions integration in Power Platform, see the ***Power BI components** settings in [Manage feature settings](/power-platform/admin/settings-features#settings).
 
-## Next Steps
+## Related content
 
 * [About Power BI in Power Apps Solutions](./service-power-bi-powerapps-integration-about.md)
 * [Using the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-using.md)

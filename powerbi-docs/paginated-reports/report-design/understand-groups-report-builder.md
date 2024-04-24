@@ -65,7 +65,7 @@ ms.reviewer: saurkumar
      Basically, the details group specifies the data that you would see when you run a dataset query in a query designer. For example, you have a query that retrieves all columns from a sales order table. Thus, the data in this detail group includes all the values for every row for all the columns in the table. The data in this detail group also includes values for any calculated dataset fields that you have created.  
   
     > [!NOTE]  
-    >  The data in a Detail group can also include server aggregates, which are aggregates that are calculated on the data source and retrieved in your query. By default, Report Builder treats server aggregates as detail data unless your report includes an expression that uses the Aggregate function. For more information, see [Aggregate function](../expressions/report-builder-functions-aggregate-function.md).  
+    >  The data in a Detail group can also include server aggregates, which are aggregates that are calculated on the data source and retrieved in your query. By default, Report Builder treats server aggregates as detail data unless your report includes an expression that uses the Aggregate function. For more information, see [Aggregate function](/sql/reporting-services/report-design/report-builder-functions-aggregate-function).  
      By default, when you add a table or list to your report, Report Builder automatically creates the Details group for you, and adds a row to display the detail data. By default, when you add dataset fields to cells in this row, you see simple expressions for the fields, for example, [Sales]. When you view the data region, the details row repeats once for every value in the result set.  
   
 - **Row groups and column groups** You can organize data into groups by rows or columns. Row groups expand vertically on a page. Column groups expand horizontally on a page. Groups can be nested, for example, group first by [Year], then by [Quarter], then by [Month]. Groups can also be adjacent, for example, group on [Territory] and independently on [ProductCategory].  
@@ -91,11 +91,12 @@ ms.reviewer: saurkumar
 ### Understand group membership for tablix cells  
  Cells in a row or column of a tablix data region can belong to multiple row and column groups. When you define an expression in the text box of a cell that uses an aggregate function (for example, `=Sum(Fields!FieldName.Value`), the default group scope for a cell is the inner most child group to which it belongs. When a cell belongs to both row and column groups, the scope is both innermost groups. You can also write expressions that calculate aggregate subtotals scoped to a group relative to another set of data. For example, you can calculate the percent of a group relative to the column group or to all data for the data region (such as `=Sum(Fields!FieldName.Value)/Sum(Fields!FieldName.Value,"ColumnGroup")`). For more information, see [Tablix data region (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md) and [Expression scope for totals, aggregates, and built-in collections (Power BI Report Builder)](/sql/reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections).  
   
-## Next steps  
- [Add or delete a group in a data region (Power BI Report Builder)](add-delete-group-data-region-report-builder.md)   
- [Add a total to a group or tablix data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs)   
- [Sort data in a data region (Power BI Report Builder)](sort-data-data-region-report-builder.md)   
- [Drilldown action (Power BI Report Builder)](/sql/reporting-services/report-design/drilldown-action-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Add or delete a group in a data region (Power BI Report Builder)](add-delete-group-data-region-report-builder.md)   
+- [Add a total to a group or tablix data region (Power BI Report Builder)](/sql/reporting-services/report-design/add-a-total-to-a-group-or-tablix-data-region-report-builder-and-ssrs)   
+- [Sort data in a data region (Power BI Report Builder)](sort-data-data-region-report-builder.md)   
+- [Drilldown action (Power BI Report Builder)](/sql/reporting-services/report-design/drilldown-action-report-builder-and-ssrs)   
+- [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)  
   
   

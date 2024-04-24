@@ -37,6 +37,6 @@ After you configure an **Azure Translator Service Key**, Translations Builder di
 
 :::image type="content" source="./media/translation-builder-machine-translation/generate-machine-translation.png" alt-text="Screenshot shows the Translations Builder Machine Translations pane where you can generate translations." lightbox="./media/translation-builder-machine-translation/generate-machine-translation.png":::
 
-## Next steps
+## Related content
 
 - [Add support for multiple-language page navigation](multiple-language-page-navigation.md)

@@ -58,15 +58,15 @@ In Power BI paginated reports, expressions are used throughout the report defini
 |Specify a date formatted for a specific culture.|Value for a placeholder inside of a text box in a data region. Use **Textbox Properties Dialog Box, General**.|`=Fields!OrderDate.Value.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-DE"))`|  
 |Concatenate a string and a number formatted as a percentage to two decimal places.|Value for a placeholder inside of a text box in a data region. Use **Textbox Properties Dialog Box, General**.|`="Growth Percent: " & Format(Fields!Growth.Value,"p2")`|  
   
-## Next steps 
+## Related content
 
- [Expressions (Power BI Report Builder)](report-builder-expressions.md)
- [Expression Examples (Power BI Report Builder)](report-builder-expression-examples.md)
- [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)   
- [Filter Equation Examples (Report Builder and SSRS)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
- [Filter, Group, and Sort Data (Report Builder and SSRS)](../report-design/filter-group-sort-data-report-builder.md)
- [Page Headers and Footers (Report Builder)](../report-design/page-headers-footers-report-builder-service.md)
- [Formatting Text and Placeholders (Report Builder and SSRS)](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
- [Hide an Item (Report Builder and SSRS)](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs)  
+- [Expressions (Power BI Report Builder)](report-builder-expressions.md)
+- [Expression Examples (Power BI Report Builder)](report-builder-expression-examples.md)
+- [Report Parameters (Power BI Report Builder)](../parameters/report-builder-parameters.md)   
+- [Filter Equation Examples (Report Builder and SSRS)](/sql/reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs)   
+- [Filter, Group, and Sort Data (Report Builder and SSRS)](../report-design/filter-group-sort-data-report-builder.md)
+- [Page Headers and Footers (Report Builder)](../report-design/page-headers-footers-report-builder-service.md)
+- [Formatting Text and Placeholders (Report Builder and SSRS)](/sql/reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs)   
+- [Hide an Item (Report Builder and SSRS)](/sql/reporting-services/report-builder/hide-an-item-report-builder-and-ssrs)  
   
   

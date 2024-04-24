@@ -60,7 +60,7 @@ The counts in the impact summary include all impacted dataflows and semantic mod
 
 Data source impact analysis isn't yet supported for paginated reports, so you won't see if the data source has any direct impact on these kinds of reports in the tenant.
 
-## Next steps
+## Related content
 
 * [Semantic model impact analysis](service-dataset-impact-analysis.md)
 * [Data lineage](service-data-lineage.md)

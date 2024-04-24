@@ -93,7 +93,7 @@ An effective technique to reduce the model size is to set the Storage Mode prope
 
 There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
 
-## Next steps
+## Related content
 
 For more information about Power BI Import model design, see the following articles:
 

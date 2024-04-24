@@ -121,6 +121,6 @@ let config = {
 let report = powerbi.embed(reportContainer, config);
 ```
 
-## Next steps
+## Related content
 
 - [Add a Localized Labels table to a Power BI report](translation-builder-localize-label.md)

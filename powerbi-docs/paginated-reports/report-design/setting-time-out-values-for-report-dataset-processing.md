@@ -30,7 +30,7 @@ Most time-out errors occur during query processing. If you are encountering time
 - The maximum possible timeout value is 2147483646. However, configuring the dataset query timeout for this long could result in a timeout outside of the paginated report.
 - The report will abort after 12 hours and you get an error. [Process large Power BI paginated reports](process-large-reports.md) has recommendations.
 
-## Next steps
+## Related content
 
- [Understand paginated report data in Power BI Report Builder](../../report-builder-data.md) 
- [Create an embedded dataset for a Power BI paginated report](../../paginated-reports-create-embedded-dataset.md)   
+- [Understand paginated report data in Power BI Report Builder](../../report-builder-data.md) 
+- [Create an embedded dataset for a Power BI paginated report](../../paginated-reports-create-embedded-dataset.md)   

@@ -43,9 +43,6 @@ Key activities during a deployment to the test workspace typically include:
 - **Data refresh:** [Schedule the semantic model refresh](../connect-data/refresh-scheduled-refresh.md) for any Import semantic models for the period when UAT is actively occurring.
 - **Security:** Update or verify [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Testing workspace access includes a small number of people who are involved with UAT.
 
-> [!NOTE]
-> For more information about options for deployment to development, test, and production, see Section 9 of the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP).
-
 ### Conduct user acceptance testing
 
 Generally, UAT involves business users who are subject matter experts. Once verified, they provide their approval that the new content is accurate, meets requirements, and can be deployed for wider consumption by others.
@@ -167,14 +164,14 @@ Lastly, it should be clear to content consumers to know who to contact with ques
 
 For more information about user support, with a focus on the resolution of issues, see [User support](fabric-adoption-roadmap-user-support.md) in the Fabric adoption roadmap.
 
-## Next steps
+## Related content
 
 In the [final article in this series](powerbi-migration-learn-from-customers.md), learn from customers when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

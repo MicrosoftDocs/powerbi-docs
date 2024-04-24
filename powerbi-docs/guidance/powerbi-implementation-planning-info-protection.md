@@ -133,7 +133,7 @@ To this end, you should publish (or republish) the label policy to a small subse
 
 The implementation phase is usually an iterative process.
 
-Often, the initial objective is to get to a state where all Power BI content has a sensitivity label assigned. To achieve this objective, you might introduce a mandatory label policy or a default label policy. You might also use the [information protection admin APIs](/power-bi/enterprise/service-security-sensitivity-label-inheritance-set-remove-api) to programmatically set or remove sensitivity labels.
+Often, the initial objective is to get to a state where all Power BI content has a sensitivity label assigned. To achieve this objective, you might introduce a mandatory label policy or a default label policy. You might also use the [information protection admin APIs](/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api) to programmatically set or remove sensitivity labels.
 
 You can gradually include more groups of users until the entire organization is included. This process involves republishing each [label policy](/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide&preserve-view=true#publish-sensitivity-labels-by-creating-a-label-policy) to increasingly larger groups of users.
 
@@ -222,7 +222,7 @@ A sensitivity label scope limits the use of a label. While you can't specify Pow
 - Schematized data assets (supported sources that are registered in the [Purview Data Map](/azure/purview/concept-elastic-data-map))
 
 > [!IMPORTANT]
-> It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. The _items_ scope is used for the Power BI service. Sensitivity labels are handled differently from DLP policies, which are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention.md) article, in that some types of DLP policies can be defined specifically for Power BI. If you intend to use sensitivity label inheritance from data sources in Power BI, there are [specific requirements](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#requirements) for the label scope.
+> It's not possible to define a sensitivity label with a scope of Power BI only. While there are some settings that apply specifically to Power BI, scope isn't one of them. The _items_ scope is used for the Power BI service. Sensitivity labels are handled differently from DLP policies, which are described in the [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention.md) article, in that some types of DLP policies can be defined specifically for Power BI. If you intend to use sensitivity label inheritance from data sources in Power BI, there are [specific requirements](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources#requirements) for the label scope.
 
 Events related to sensitivity labels are recorded in the [activity explorer](/microsoft-365/compliance/data-classification-activity-explorer-available-events). Logged details of these events will be significantly richer when the scope is broader. You'll also be better prepared to protect data across a broader spectrum of applications and services.
 
@@ -300,7 +300,7 @@ When importing data from supported data sources (such as Azure Synapse Analytics
 - Reduce the risk of users accessing and sharing sensitive data with unauthorized users because it wasn't labeled.
 
 > [!TIP]
-> There are two types of inheritance for sensitivity labels. _[Downstream inheritance](/power-bi/enterprise/service-security-sensitivity-label-downstream-inheritance)_ refers to downstream items (like reports) that automatically inherit a label from its Power BI semantic model. However, the focus of this section is on _[upstream inheritance](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources)_. Upstream inheritance refers to a Power BI semantic model that inherits a label from a data source that's upstream from the semantic model.
+> There are two types of inheritance for sensitivity labels. _[Downstream inheritance](/fabric/governance/service-security-sensitivity-label-downstream-inheritance)_ refers to downstream items (like reports) that automatically inherit a label from its Power BI semantic model. However, the focus of this section is on _[upstream inheritance](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources). Upstream inheritance refers to a Power BI semantic model that inherits a label from a data source that's upstream from the semantic model.
 
 Consider an example where the organization's working definition for the sensitivity label of _Highly Restricted_ includes financial account numbers. Because financial account numbers are stored in an Azure SQL Database, the _Highly Restricted_ sensitivity label has been assigned to that source. When data from the Azure SQL Database is imported to Power BI, the intent is for the semantic model to inherit the label.
 
@@ -316,7 +316,7 @@ You can assign sensitivity labels to a supported data source in different ways.
 Inheritance will happen only when you enable the **Apply sensitivity labels from data sources to their data in Power BI** [tenant setting](/fabric/admin/service-admin-portal-information-protection). For more information about tenant settings, see the [Power BI tenant settings](#power-bi-tenant-settings) section later in this article.
 
 > [!TIP]
-> You'll need to become familiar with the [inheritance behavior](/power-bi/enterprise/service-security-sensitivity-label-inheritance-from-data-sources#inheritance-behavior). Be sure to include various circumstances in your test plan.
+> You'll need to become familiar with the [inheritance behavior](/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources#inheritance-behavior). Be sure to include various circumstances in your test plan.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
@@ -369,7 +369,7 @@ You can set up the default label in the label policy specifically for Power BI c
 > [!TIP]
 > While you can set different default labels (for Power BI and non-Power BI content), consider whether that's the best option for users.
 
-It's important to understand that a new default label policy will apply to content created, or edited, _after_ the label policy is published. It won't retroactively assign the default label to existing content. Your Power BI administrator can use the [information protection APIs](/power-bi/enterprise/service-security-sensitivity-label-inheritance-set-remove-api) to set sensitivity labels in bulk to ensure that existing content is assigned to a default sensitivity label.
+It's important to understand that a new default label policy will apply to content created, or edited, _after_ the label policy is published. It won't retroactively assign the default label to existing content. Your Power BI administrator can use the [information protection APIs](/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api) to set sensitivity labels in bulk to ensure that existing content is assigned to a default sensitivity label.
 
 The default label options are set in the Microsoft Purview compliance portal when the label policy is published.
 
@@ -383,7 +383,7 @@ The default label options are set in the Microsoft Purview compliance portal whe
 
 ### Mandatory labeling Power BI content
 
-Data classification is a common regulatory requirement. To meet this requirement, you can choose to require users to label all Power BI content. This [mandatory labeling](/power-bi/enterprise/service-security-sensitivity-label-mandatory-label-policy) requirement takes effect when users create or edit Power BI content.
+Data classification is a common regulatory requirement. To meet this requirement, you can choose to require users to label all Power BI content. This [mandatory labeling](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) requirement takes effect when users create or edit Power BI content.
 
 You might choose to implement mandatory labels, default labels (described in the previous section), or both. You should consider the following points.
 
@@ -648,6 +648,6 @@ Power BI administrators and security and compliance administrators will need to 
 > [!TIP]
 > For more information about auditing, see [Auditing of information protection and data loss prevention for Power BI](powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md).
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-data-loss-prevention.md), learn about data loss prevention for Power BI.

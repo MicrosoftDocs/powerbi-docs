@@ -145,7 +145,7 @@ Finally, if you add additional calculation groups to the model and you want to s
 You can learn more about calculation groups precedence in the [Calculation groups in Analysis Services tabular models](/analysis-services/tabular-models/calculation-groups) article. 
 
 
-## Next steps
+## Related content
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 

@@ -138,7 +138,7 @@ Scorecards do have metric-level permissions roles. While workspace permissions g
 - Scorecards aren't supported in a [Multi-Geo capacity](../admin/service-admin-premium-multi-geo.md).
 - Scorecards aren't supported in [embedded analytics](../developer/embedded/embedded-analytics-power-bi.md).
 
-## Next steps
+## Related content
 
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)
 - [Create connected metrics in Power BI](service-goals-create-connected.md)

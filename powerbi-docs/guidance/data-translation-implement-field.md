@@ -132,6 +132,6 @@ The field parameter is a table with three columns named **Product**, **Fields**,
 
 In this article, you created a field parameter named **Translated Product Names** and extended it with a column named **LanguageId**. The **LanguageId** column is used to filter which source column is used. That action determines which language is displayed to report consumers.
 
-## Next steps
+## Related content
 
 - [Add the languages table to filter field parameters](data-translation-add-language-table.md)

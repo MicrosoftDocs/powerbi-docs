@@ -29,10 +29,11 @@ In a paginated report, the detail data from a report dataset is specified as a g
   
      A new details group is added as a child group in the Grouping pane, and the row handle for the group you selected in step 1 displays the details group icon. For more information about handles, see [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-design/render-data-regions-report-builder-service.md).  
   
-## Next steps  
- [Add or Delete a Group in a Data Region (Power BI Report Builder)](../../paginated-reports/report-design/add-delete-group-data-region-report-builder.md)   
- [Understanding Groups (Power BI Report Builder)](../../paginated-reports/report-design/understand-groups-report-builder.md)   
- [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Add or Delete a Group in a Data Region (Power BI Report Builder)](../../paginated-reports/report-design/add-delete-group-data-region-report-builder.md)   
+- [Understanding Groups (Power BI Report Builder)](../../paginated-reports/report-design/understand-groups-report-builder.md)   
+- [Tablix Data Region (Power BI Report Builder)](../../paginated-reports/report-design/render-data-regions-report-builder-service.md)   
+- [Tables, Matrices, and Lists (Power BI Report Builder)](../../paginated-reports/report-builder-tables-matrices-lists.md)  
   
   

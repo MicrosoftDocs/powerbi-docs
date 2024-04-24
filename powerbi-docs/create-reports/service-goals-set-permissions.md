@@ -77,6 +77,6 @@ Workspace roles are separate from metric level permissions roles.  While workspa
 
 The support for automatic roles based on metric-level permissions (full row-level security (RLS) support) is coming, but isn't yet available.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)

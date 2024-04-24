@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 01/19/2023
+ms.date: 03/07/2024
 ms.custom:
 LocalizationGroup: Premium
 ---
@@ -77,7 +77,17 @@ Capacity Admins, as well as Global Administrators or Power BI service administra
 - **Specific workspaces**
 - **The entire organization's workspaces** - All workspaces, including My workspaces, are assigned to the Premium capacity. All current and future users are assigned workspace assignment permissions. This approach isn't recommended. A more targeted approach is preferred.
 
-You can enable Premium capabilities in a workspace by setting the proper license mode. To set a license mode, you must be both a workspace admin, and have assignment permissions. To enable Premium capabilities for P and EM SKUs, set the license mode to Premium per capacity. To enable Premium capabilities for A SKUs, set the license mode to Embedded. To enable Premium capabilities for Premium Per User (PPU), mark the license mode as Premium Per User. To remove a workspace from Premium, mark the workspace license mode as Pro.
+You can enable Premium capabilities in a workspace by setting the proper license mode. To set a license mode, you must be both a workspace admin, and have assignment permissions.
+
+- **P SKUs** - Set the license mode to Premium per capacity.
+
+- **A SKUs** - Set the license mode to Embedded.
+
+- **Premium Per User (PPU)** Mark the license mode as Premium Per User.
+
+- **EM SKUs** Set the license mode to Embedded.
+
+To remove a workspace from Premium, mark the workspace license mode as Pro.
 
 ![Using the Workspace pane to assign a workspace to a Premium capacity](media/service-premium-capacity-manage/assign-workspace-capacity-02.png)
 
@@ -111,7 +121,7 @@ Using the Power BI Premium [Microsoft Fabric Capacity Metrics app](/fabric/enter
 
 * The size of your Power BI items approach or exceed capacity limits. If the item size of any of the items reported in the metrics app approaches your capacity limit or exceeds it, operations against that item will fail. Therefore if a critical item approaches those limits (80% of the capacity size) it's advisable to consider upgrading the capacity in advance, to avoid interruption of service should that item exceed the capacity limit.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Using autoscale with Premium](service-premium-auto-scale.md)

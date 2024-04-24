@@ -166,9 +166,9 @@ You can then access the Public WAP URL, for example, `https://reports.contosolab
 
 ![AD FS sign in](media/connect-adfs-wap-report-server/report-server-adfs-sign-in.png)
 
-## Next steps
+## Related content
 
-* [Configure OAuth to connect to Power BI Report Server and SSRS](../consumer/mobile/mobile-oauth-ssrs.md)
-*[What is Power BI Report Server?](get-started.md)  
+- [Configure OAuth to connect to Power BI Report Server and SSRS](../consumer/mobile/mobile-oauth-ssrs.md)
+- [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

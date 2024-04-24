@@ -67,10 +67,14 @@ landingContent:
             url: desktop-tutorial-create-calculated-columns.md
       - linkListType: concept
         links:
+          - text: "Visual calculations"
+            url: desktop-visual-calculations-overview.md
           - text: "Calculated tables"
             url: desktop-calculated-tables.md
       - linkListType: how-to-guide
         links:
+          - text: "Calculations options"
+            url: desktop-calculations-options.md
           - text: "Use quick measures"
             url: desktop-quick-measures.md
 

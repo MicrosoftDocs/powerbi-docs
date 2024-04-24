@@ -215,7 +215,7 @@ Follow these instructions to clean up the resources you created for this tutoria
 - If you don't want to use the SQL Server data source, remove the data source from your data gateway. Also consider uninstalling the data gateway, if you installed it only for this tutorial.
 - Also delete the AdventureWorksProducts dataset and report that Power BI created when you published the *AdventureWorksProducts.pbix* file.
 
-## Next steps
+## Related content
 
 This tutorial explored how to:
 

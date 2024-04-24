@@ -325,7 +325,7 @@ Fabric supports capabilities for information protection and data loss prevention
 
 - **Information protection:** [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (formerly known as Microsoft Information Protection) includes capabilities for discovering, classifying, and protecting data. A key principle is that data can be better protected once it's been classified. The key building block for classifying data is [sensitivity labels](/power-bi/enterprise/service-security-sensitivity-label-overview). For more information, see [Information protection for Power BI planning](powerbi-implementation-planning-info-protection.md).
 - **Data loss prevention for Power BI:** Microsoft Purview Data Loss Prevention (formerly known as Office 365 Data Loss Prevention) supports [DLP policies for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi). By using sensitivity labels or sensitive information types, DLP policies for Power BI help an organization locate sensitive semantic models. For more information, see [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention.md).
-- **Microsoft Defender for Cloud Apps:** [Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) (formerly known as Microsoft Cloud App Security) supports policies that help protect data, including real-time controls when users interact with the Power BI service. For more information, see [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps.md).
+- **Microsoft Defender for Cloud Apps:** [Microsoft Defender for Cloud Apps](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) (formerly known as Microsoft Cloud App Security) supports policies that help protect data, including real-time controls when users interact with the Power BI service. For more information, see [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps.md).
 
 ### Data residency
 
@@ -357,7 +357,7 @@ You can retrieve auditing data to build an auditing solution, manage content pro
 | **Action** | **Documentation resource(s)** |
 |---|---|
 | Audit user activities | [REST API to get activity events](/rest/api/power-bi/admin/get-activity-events) |
-| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/power-bi/enterprise/service-admin-metadata-scanning) |
+| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/fabric/governance/metadata-scanning-overview) |
 | Audit content shared to entire organization | [REST API to check use of widely shared links](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) |
 | Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/get-tenant-settings) |
 | Publish content | [REST API to deploy items from a deployment pipeline](/rest/api/power-bi/pipelines/selective-deploy) or [clone a report to another workspace](/rest/api/power-bi/reports/clone-report-in-group) |
@@ -492,7 +492,7 @@ The following maturity levels will help you assess the current state of your Pow
 | 400: Capable | &bull;&nbsp;Administrators work closely with the COE and governance teams to provide oversight of Fabric. A balance of user empowerment and governance is successfully achieved. <br/><br/>&bull;&nbsp;Decentralized management of data architecture (such as gateways or capacity management) is effectively handled to balance agility and control. <br/><br/>&bull;&nbsp;Automated policies are set up and actively monitored in Microsoft Defender for Cloud Apps for data loss prevention. <br/><br/>&bull;&nbsp;Activity log and API data is actively analyzed to monitor and audit Fabric activities. Proactive action is taken based on the data. |
 | 500: Efficient | &bull;&nbsp;The Fabric administrators work closely with the COE actively stay current. Blog posts and release plans from the Fabric product team are reviewed frequently to plan for upcoming changes. <br/><br/>&bull;&nbsp;Regular cost management analysis is done to ensure user needs are met in a cost-effective way. <br/><br/>&bull;&nbsp;The Fabric REST API is used to retrieve tenant setting values on a regular basis. <br/><br/>&bull;&nbsp;Activity log and API data is actively used to inform and improve adoption and governance efforts. |
 
-## Next steps
+## Related content
 
 For more information about system oversight and Fabric administration, see the following resources.
 
@@ -503,6 +503,6 @@ For more information about system oversight and Fabric administration, see the f
 - [Administrator in a Day Training – Day 2](https://aka.ms/AdmPBI2)
 - [Power BI security whitepaper](whitepaper-powerbi-security.md)
 - [External guest users whitepaper](whitepaper-azure-b2b-power-bi.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 
 In the [next article](fabric-adoption-roadmap-change-management.md) in the Microsoft Fabric adoption roadmap series, learn about effective change management.

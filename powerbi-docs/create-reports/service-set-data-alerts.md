@@ -126,7 +126,7 @@ There are many ways to manage your alerts:
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
 * You can create up to 250 alerts across all your models.
 
-## Next steps
+## Related content
 
 * [Create a Power Automate workflow that includes a data alert](../collaborate-share/service-flow-integration.md).
 * [Set data alerts on your mobile device](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).

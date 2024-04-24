@@ -39,7 +39,7 @@ Here are things to keep in mind when you connect to Power BI semantic models in 
 - You must have a Fabric license: Fabric (free), Pro or Premium Per User (PPU). Fabric free license users can only work with datasets in My workspace or a Power BI Premium capacity or Fabric F64 or greater capacity. Learn more about [Power BI licenses](../fundamentals/service-features-license-type.md).
 - You can use Excel workbooks containing refreshable Power BI data in both Excel Desktop and Excel for the web.
 
-## Next steps
+## Related content
 
 - [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
 - [Design refreshable reports in Excel with Power BI data](service-analyze-power-bi-datasets-excel.md)

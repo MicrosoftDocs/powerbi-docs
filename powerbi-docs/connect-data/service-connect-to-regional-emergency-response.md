@@ -88,7 +88,8 @@ When the data refresh has completed, [set up a refresh schedule](../connect-data
 
 See [Customize and share the app](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) before publishing or distributing the app.
 
-## Next steps
+## Related content
+
 * [Understanding the Regional Emergency Response dashboard](/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights)
 * [Set up and learn about the Crisis Communication sample template in Power Apps](/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

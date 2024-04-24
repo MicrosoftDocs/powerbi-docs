@@ -82,8 +82,9 @@ ms.reviewer: saurkumar
  To add a total column for an adjacent column group, select in the column group definition cell and use the **Add Total** command. A new static column is added next to the column group, with a default aggregate sum for every numeric field in the existing rows. To change the expression, manually edit the default aggregate, for example, `Avg([Sales])`. For more information, see [Add a Total to a Group or Tablix Data Region &#40;Power BI Report Builder&#41;](add-total-group-tablix-data-region-report-builder.md).  
   
   
-## Next steps  
- [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md)   
- [Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expression-examples.md)  
+## Related content
+
+- [Aggregate Functions Reference &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference)   
+- [Expression Examples &#40;Power BI Report Builder&#41;](../../paginated-reports/expressions/report-builder-expression-examples.md)  
   
   

@@ -72,7 +72,7 @@ There are a couple considerations and limitations for parameters to keep in mind
 
 * Parameters are designed for measures within visuals, and might not calculate properly when used in a dimension calculation.
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

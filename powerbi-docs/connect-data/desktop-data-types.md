@@ -338,7 +338,7 @@ How operations such as addition or concatenation handle blanks depends on the in
 | BLANK OR BLANK |BLANK |Error |
 | BLANK AND BLANK |BLANK |Error |
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop and data. For more information on Power BI capabilities, see the following resources:
 

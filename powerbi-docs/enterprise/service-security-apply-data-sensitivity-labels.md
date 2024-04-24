@@ -123,10 +123,10 @@ To remove a sensitivity label from a .pbix file, select the **Sensitivity** opti
 
 For more information, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#considerations-and-limitations).
 
-## Next steps
+## Related content
 
 This article described how to apply sensitivity labels in Power BI. The following articles provide more details about data protection in Power BI.
 
 - [Overview of sensitivity labels in Power BI](./service-security-sensitivity-label-overview.md)
 - [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md)
-- [Using Microsoft Defender for Cloud Apps controls in Power BI](./service-security-using-defender-for-cloud-apps-controls.md)
+- [Using Microsoft Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)

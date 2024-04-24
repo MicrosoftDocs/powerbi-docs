@@ -1,8 +1,8 @@
 ---
 title: Key Performance Indicator (KPI) visuals
 description: Create Key Performance Indicator (KPI) visuals in Power BI. 
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
@@ -126,7 +126,7 @@ KPIs are also available on your mobile devices. It gives you the option to be al
 - If your KPI doesn't look like the example, it may be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. Start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.   
 - In general, if your KPI doesn't display a trend axis, make sure that the column in the **Value** well is continuous and doesn't include a null value.
 
-## Next steps
+## Related content
 
 * [Tips and tricks for Power BI Map visualizations](power-bi-map-tips-and-tricks.md)
 

@@ -39,7 +39,7 @@ Here are a few things to know about the **In Teams** list:
 
 - For information about other issues, see the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article.
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](service-microsoft-teams-app.md)
 - [Enable remote work in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)

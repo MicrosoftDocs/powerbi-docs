@@ -1,8 +1,8 @@
 ---
 title: Create dynamic format strings for measures in Power BI Desktop
 description: Learn how to create dynamic format strings for measures in Power BI Desktop measures.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -326,10 +326,10 @@ During Preview, the following issues and limitations are being addressed:
     - Remote model measures can't be changed from a static format string to a dynamic format string DAX expression defined in the local model.
     - Local model measures are blocked from using dynamic format strings for measures.
 
-## See also
+## Related content
 
-[Measures in Power BI Desktop](../transform-model/desktop-measures.md)  
-[Data types in Power BI Desktop](../connect-data/desktop-data-types.md)  
-[Custom format strings in Power BI Desktop](desktop-custom-format-strings.md)  
-[Dynamic format strings for calculation groups](/analysis-services/tabular-models/calculation-groups)  
-[FORMAT function](/dax/format-function-dax)
+- [Measures in Power BI Desktop](../transform-model/desktop-measures.md)  
+- [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)  
+- [Custom format strings in Power BI Desktop](desktop-custom-format-strings.md)  
+- [Dynamic format strings for calculation groups](/analysis-services/tabular-models/calculation-groups)  
+- [FORMAT function](/dax/format-function-dax)

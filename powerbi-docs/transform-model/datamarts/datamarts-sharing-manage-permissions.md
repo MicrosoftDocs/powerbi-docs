@@ -100,7 +100,7 @@ You can choose to add or remove permissions using the **Manage permissions** exp
 
 :::image type="content" source="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10.png" alt-text="Screenshot of the Remove reshare permission selected from the datamart Manage Permissions page." lightbox="media/datamarts-sharing-manage-permissions/datamarts-sharing-manage-permissions-10.png":::
 
-## Next steps
+## Related content
 This article provided information about creating reports using datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

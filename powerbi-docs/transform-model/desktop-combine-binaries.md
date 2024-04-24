@@ -48,7 +48,7 @@ With the behavior of combine files, you can easily combine all files within a gi
 
 Also you can easily apply more transformation or extraction steps by modifying the automatically created exemplar query, without having to worry about modifying or creating other function query steps. Any changes to the exemplar query are automatically generated in the linked function query.
 
-## Next steps
+## Related content
 
 You can connect to all sorts of data by using Power BI Desktop. For more information on data sources, see the following resources:
 

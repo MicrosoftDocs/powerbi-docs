@@ -87,9 +87,10 @@ You can link to bookmarks to a location in the current report. To link to a book
   
 1. To test the link, select **Run** to preview the report, and then select the report item that you set this link on.  
   
-## Next steps  
- [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)
- [Add a bookmark to a report](add-bookmark-report-report-builder.md)
+## Related content
+
+* [Add a drillthrough action on a paginated report](../../paginated-reports/report-design/add-drillthrough-action-report-report-builder.md)
+* [Add a bookmark to a report](add-bookmark-report-report-builder.md)
 
   
   

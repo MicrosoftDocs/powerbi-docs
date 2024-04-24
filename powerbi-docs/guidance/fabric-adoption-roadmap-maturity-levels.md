@@ -232,6 +232,6 @@ Common characteristics of phase 4 solution adoption include:
 - Most content is [certified](/power-bi/collaborate-share/service-endorse-content) due to its critical nature.
 - Formal user acceptance testing for new changes might occur, particularly for IT-managed content.
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-data-culture.md) in the Microsoft Fabric adoption roadmap series, learn about the organizational data culture and its impact on adoption efforts.

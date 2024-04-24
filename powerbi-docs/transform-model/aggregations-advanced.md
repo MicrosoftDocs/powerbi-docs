@@ -1,8 +1,8 @@
 ---
 title: User-defined aggregations
 description: Describes using manually configured aggregations to speed up data analysis over large semantic models.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
@@ -283,7 +283,7 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Power BI Community](https://community.powerbi.com/)  
 - [Search "Power BI aggregations" on Bing](https://www.bing.com/search?q=power+bi+aggregations)
 
-## See also
+## Related content
 
-[Automatic aggregations](../enterprise/aggregations-auto.md)  
-[Composite models](desktop-composite-models.md)  
+- [Automatic aggregations](../enterprise/aggregations-auto.md)  
+- [Composite models](desktop-composite-models.md)  

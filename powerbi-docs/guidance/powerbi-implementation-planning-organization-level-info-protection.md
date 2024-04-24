@@ -140,6 +140,6 @@ For more information about securing content in Power BI, see the [security plann
 > - **Verify and document regulatory and business requirements:** Ensure that all regulatory and business requirements for data privacy are documented. Refer to them for prioritization and compliance needs.
 > - **Begin creating a plan:** Start building a project plan by using the prioritized strategic goals and documented requirements.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-info-protection.md), learn about labeling and classification of data assets for use with Power BI.

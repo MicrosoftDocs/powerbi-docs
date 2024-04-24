@@ -33,7 +33,7 @@ ms.author: maggies
 |**PageWidth**|The page width, in inches, to set for the report. You must include an integer or decimal value followed by "in" (for example, 8.5in). This value overrides the report's original settings.|  
 |**StartPage**|The first page of the report to render. A value of **0** indicates that all pages are rendered. The default value is **1**.|  
   
-## Next steps
+## Related content
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)
  

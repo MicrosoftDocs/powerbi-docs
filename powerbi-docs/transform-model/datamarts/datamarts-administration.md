@@ -118,7 +118,7 @@ The use of the previous list of connectors with dataflows or datamarts is only s
 
 
 
-## Next steps
+## Related content
 This article provided information about the administration of datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

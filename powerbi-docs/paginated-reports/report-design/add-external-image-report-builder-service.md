@@ -33,9 +33,9 @@ When you include external images in your Power BI paginated report, you must ver
   
 1. Select **OK**.
   
-## Next steps
+## Related content
 
- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)   
- [Add a Background Image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)   
- [Image Properties Dialog Box, General &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)  
+- [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](./embed-image-report-report-builder-service.md)   
+- [Add a Background Image &#40;Power BI Report Builder and service&#41;](./add-background-image-report-builder-service.md)   
+- [Image Properties Dialog Box, General &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)  
   

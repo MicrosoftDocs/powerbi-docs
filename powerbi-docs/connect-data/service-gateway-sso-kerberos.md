@@ -3,12 +3,10 @@ title: Configure Kerberos-based SSO from Power BI service to on-premises data so
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
 author: paulinbar
 ms.author: painbar
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.custom: contperf-fy22q3
 ms.topic: how-to
-ms.date: 06/20/2023
+ms.date: 01/23/2024
 LocalizationGroup: Gateways
 ---
 
@@ -98,6 +96,10 @@ If Microsoft Entra Connect is configured and user accounts are synchronized, the
 To create the SPN for this SID against the Power BI Gateway computer, you would need to run the following command from an administrative command prompt (replace `<COMPUTERNAME>` with the name of the Power BI Gateway computer): 
 
 `SetSPN -s HTTP/S-1-5-80-1835761534-3291552707-3889884660-1303793167-3990676079 <COMPUTERNAME>`
+
+> [!NOTE]
+> Depending on your local security settings, you may need to add the gateway service account, NT SERVICE\PBIEgwService, to the local Administrators group on the gateway machine and then restart the gateway service in the [gateway app](/data-integration/gateway/service-gateway-app).
+> This option is not supported for scenarios that have multiple gateways, as Active Directory enforces unique SPNs across an entire forest. For these scenarios, use [option A](./service-gateway-sso-kerberos.md#option-a-run-the-gateway-windows-service-as-a-domain-account-with-spn) instead.
 
 ### Step 4: Configure Kerberos constrained delegation
 
@@ -351,7 +353,7 @@ Go to [Test single sign-on (SSO) configuration](service-gateway-sso-test-configu
 
 When you publish, select the gateway you've configured for SSO if you have multiple gateways.
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

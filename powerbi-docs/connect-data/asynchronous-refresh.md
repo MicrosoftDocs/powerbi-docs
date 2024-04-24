@@ -1,14 +1,12 @@
 ---
-title: Enhanced refresh with the Power BI REST API 
+title: Enhanced refresh with the Power BI REST API
 description: Learn how to do enhanced semantic model refreshes by using the Power BI Refresh Dataset REST API.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 05/09/2023
-ms.custom: contperf-fy21q4
-LocalizationGroup: 
+ms.date: 01/08/2024
 ---
 
 # Enhanced refresh with the Power BI REST API
@@ -103,12 +101,12 @@ To do an enhanced refresh operation, you must specify one or more parameters in 
 |Name  |Type  |Default  |Description  |
 |---------|---------|---------|---------|
 |`type`    |      Enum    |    `automatic`      |    The type of processing to perform. Types align with the TMSL refresh command types: `full`, `clearValues`, `calculate`, `dataOnly`, `automatic`, and `defragment`. The `add` type isn't supported.      |
-|`commitMode`    |   Enum       |    `transactional`     |     Determines whether to commit objects in batches or only when complete. Modes are `transactional` and `partialBatch`.     |
+|`commitMode`    |   Enum       |    `transactional`     |     Determines whether to commit objects in batches or only when complete. Modes are `transactional` and `partialBatch`. When using `partialBatch` the refresh operation doesn’t occur within one transaction. Each command is committed individually. If there’s a failure, the model might be empty or include only a subset of the data. To safeguard against failure and keep the data that was in the model before the operation started, execute the operation with `commitMode = transactional`.     |
 |`maxParallelism`     |   Int       |   `10`     |   Determines the maximum number of threads that can run the processing commands in parallel. This value aligns with the `MaxParallelism` property that can be set in the TMSL `Sequence` command or by using other methods.       |
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation retries before failing.      |
 |`objects`     |    Array      |    Entire model      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire model refreshes.      |
 |`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
-|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date.       |
+|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date. If not specified, UTC is used to determine the current day.      |
 
 ### Response
 
@@ -144,8 +142,7 @@ The response body might look like the following example:
         "startTime": "2020-12-07T01:05:54.157324Z",
         "refreshType": "ViaEnhancedApi",
         "endTime": "2020-12-07T01:05:57.353371Z",
-        "status": "Unknown",
-        "extendedStatus": "InProgress"
+        "status": "Unknown"
     }
     {
         "requestId": "85a82498-2209-428c-b273-f87b3a1eb905",
@@ -278,7 +275,7 @@ To use the code sample:
 
 The code sample uses service principal authentication.
 
-## See also
+## Related content
 
 - [Power BI Refresh Dataset REST API](/rest/api/power-bi/datasets/refresh-dataset)  
 - [Use the Power BI REST APIs](/rest/api/power-bi/)  

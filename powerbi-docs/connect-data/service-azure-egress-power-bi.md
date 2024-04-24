@@ -25,7 +25,7 @@ For Power BI Premium Multi-Geo customers, if your Power BI tenant isn't in the o
 > [!NOTE]
 > Power BI Premium Per User (PPU) is not supported for Multi-Geo.
 
-## Next steps
+## Related content
 
 For more information about Power BI Premium or Multi-Geo, take a look at the following resources:
 

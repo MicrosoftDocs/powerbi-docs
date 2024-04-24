@@ -1,8 +1,8 @@
 ---
 title: Interact with small multiples in Power BI
 description: This article explains how to interact with small multiples, or trellising.
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -61,6 +61,6 @@ With the sort functionality, you can sort multiple aspects of a visual at once. 
 
 :::image type="content" source="media/power-bi-visualization-small-multiples/small-multiple-sort.png" alt-text="Sort the small multiples.":::
 
-## Next steps
+## Related content
 
-[Create small multiples in Power BI](power-bi-visualization-small-multiples.md)
+- [Create small multiples in Power BI](power-bi-visualization-small-multiples.md)

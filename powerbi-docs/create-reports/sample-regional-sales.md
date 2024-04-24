@@ -177,7 +177,7 @@ A natural language query, or *Q&A* visualization, offers the ability to ask ques
 
    :::image type="content" source="media/sample-regional-sales/power-bi-ask-lost-category-week.png" alt-text="Screenshot shows the modified visual with a tooltip displayed with details." lightbox="media/sample-regional-sales/power-bi-ask-lost-category-week.png":::
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

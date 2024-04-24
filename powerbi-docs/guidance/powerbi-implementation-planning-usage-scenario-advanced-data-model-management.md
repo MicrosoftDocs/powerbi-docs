@@ -7,7 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/05/2023
+ms.date: 02/13/2024
 ---
 
 # Power BI usage scenarios: Advanced data model management
@@ -147,11 +147,13 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 > [!NOTE]
 > A centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
+>
+> For more information, see [On-premises data gateway (standard mode)](powerbi-implementation-planning-data-gateways.md#on-premises-data-gateway-standard-mode).
 
 ### System oversight
 
 The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand [activities that connect through XMLA endpoints](/power-bi/enterprise/service-premium-connect-tools#audit-logs).
 
-## Next steps
+## Related content
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.

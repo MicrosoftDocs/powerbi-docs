@@ -85,6 +85,6 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and detect risky activities. Auditing and governance requirements are typically less stringent for prototyping and [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) scenarios.
 
-## Next steps
+## Related content
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.

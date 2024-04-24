@@ -56,7 +56,7 @@ By default, individual sign-ups (also known as ad-hoc subscriptions) are disable
 
 To enable ad-hoc subscriptions, you can contact your partner and request that they turn them on. If you're an administrator of your tenant you can enable ad-hoc subscriptions yourself. For more information, follow the steps in [Enable or disable self-service purchasing](service-admin-disable-self-service.md).
 
-## Next steps
+## Related content
 
 * [Power BI licensing in your organization](service-admin-licensing-organization.md)
 * [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)

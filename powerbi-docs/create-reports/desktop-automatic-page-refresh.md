@@ -288,7 +288,7 @@ If your capacity is overloaded with low-priority queries, you can take these act
 * Make sure your Analysis Services model is in [Direct Query mode](/analysis-services/tabular-models/directquery-mode-ssas-tabular).
 
 
-## Next steps
+## Related content
 
 For more information, see these articles:
 

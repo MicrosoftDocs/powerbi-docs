@@ -49,7 +49,7 @@ Where you save your file makes a difference.
 > [!NOTE]
 > You can't update semantic models imported from OneDrive for work or school from local files. For Power BI to update the semantic model, you must replace the file in OneDrive for work or school. Alternatively, you can delete the semantic model and its related items and then import again from a local file.
 
-## Next steps
+## Related content
 
 - [Get data from Excel workbook files](service-excel-workbook-files.md)
 - [Get data from Power BI Desktop files](service-desktop-files.md)

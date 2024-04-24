@@ -40,7 +40,7 @@ When using *DirectQuery*, your report uses Data Analysis Expression (DAX) querie
 
 You can also use *DirectQuery* with Analysis Services, as described in [Using DirectQuery for Power BI semantic models and Analysis Services](desktop-directquery-datasets-azure-analysis-services.md).
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Semantic model modes in the Power BI service](service-dataset-modes-understand.md)

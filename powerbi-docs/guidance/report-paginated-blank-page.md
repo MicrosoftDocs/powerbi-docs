@@ -82,7 +82,7 @@ By default, it's enabled. It directs whether minimum whitespace in containers, s
 
 Lastly, if you're printing the report to paper, ensure the printer has the correct paper loaded. The physical paper size should correspond to the [report paper size](#page-setup).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

@@ -98,6 +98,6 @@ Sometimes refreshing data might not go as expected. Typically problems are cause
 * [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
 * [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-## Next steps
+## Related content
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

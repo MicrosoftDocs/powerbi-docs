@@ -48,7 +48,8 @@ In Power BI paginated reports, select the chart data region to display the **Cha
   
 1.  Right-click the group in the **Category Groups** or **Series Groups** area, and then select **Delete**.  
   
-## Next steps  
- [Charts (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
+## Related content
+
+- [Charts (Power BI Report Builder)](../../paginated-reports/report-design/visualizations/charts-report-builder.md)  
   
   

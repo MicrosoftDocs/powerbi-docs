@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 01/08/2024
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -85,16 +85,16 @@ When you launch Power BI Desktop, a welcome screen appears.
 
 When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
 
-After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Next steps](#next-steps) section for links to guides to help you get started using Power BI Desktop.
+After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
 
 ## Minimum requirements
 
 The following list provides the minimum requirements to run Power BI Desktop:
 
 > [!IMPORTANT]
-> Power BI Desktop is no longer supported on Windows 7.
+> Power BI Desktop is no longer supported on Windows 8.1.
 
-* Windows 8.1 or Windows Server 2012 R2 or later.
+* Windows 10 or Windows Server 2016 or later.
 * .NET 4.7.2 or later.
 * Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.
@@ -135,7 +135,6 @@ You can also use the following syntax parameters, which you specify with a `prop
 |`INSTALLDESKTOPSHORTCUT`  | A value of `1` adds a shortcut to the Windows desktop. |
 |`INSTALLLOCATION`  | The file path where you want Power BI Desktop installed. |
 |`LANGUAGE`   | The locale code, for example, `en-US`, `de-DE`, `pr-BR` to force the default language of the application. If you don't specify the language, Power BI Desktop uses the Windows OS language. You can change this setting in the **Options** dialog. |
-|`REG_SHOWLEADGENDIALOG` | A value of `0` disables the dialog that appears before you sign in to Power BI Desktop. |
 |`DISABLE_UPDATE_NOTIFICATION`| A value of `1` disables update notifications. |
 
 For example, you can run Power BI Desktop with the following options and parameters to install without any user interface, use the German language:
@@ -195,7 +194,7 @@ In certain circumstances, including some screen resolution configurations, some 
 
 This issue might resolve after later Windows updates are released.
 
-## Next steps
+## Related content
 
 After you install Power BI Desktop, see the following content to help you get up and running quickly:
 

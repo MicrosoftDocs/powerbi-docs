@@ -171,7 +171,7 @@ For more information about refresh, see [Understanding and optimizing dataflows 
 
 ## Ensure you protect data assets downstream
 
-You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../enterprise/service-security-sensitivity-label-downstream-inheritance.md).
+You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](/fabric/governance/service-security-sensitivity-label-downstream-inheritance).
 
 ## Multi-geo support
 
@@ -188,7 +188,7 @@ Many customers today have a need to secure your data assets behind a private end
 | Read virtual network data sources through an on-premises gateway. | Supported through an on-premises gateway |
 | Write data to a sensitivity label account behind a virtual network by using an on-premises gateway. | Not yet supported |
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

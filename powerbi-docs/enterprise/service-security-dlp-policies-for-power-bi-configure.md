@@ -171,7 +171,7 @@ Assign a severity level that will be shown in alerts generated from this policy.
 
 :::image type="content" source="./media/service-security-dlp-policies-for-power-bi-configure/power-bi-dlp-additional-options.png" alt-text="Screenshot of D L P additional options section.":::
 
-## Next steps
+## Related content
 
 * [Data loss prevention policies for Power BI](./service-security-dlp-policies-for-power-bi-overview.md).
 * [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).

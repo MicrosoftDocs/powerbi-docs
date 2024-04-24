@@ -56,7 +56,7 @@ At run time, the report processor runs the query for each dataset in a report an
   
      Alternatively, from the drop-down list, select **Expression** to open the **Expression** dialog box and create an expression.  
   
-## Next steps
+## Related content
 
 - [Subreports (Power BI Report Builder)](../subreports.md)
 - [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)

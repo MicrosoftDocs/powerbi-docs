@@ -30,6 +30,6 @@ ms.reviewer: rpatkar
  [Images &#40;Power BI Report Builder and service&#41;](./images-report-builder-service.md)  
  Images display binary image data in a report. You provide the source for the image. The source can be a URL reference to an external image available over internet without needing authentication or additional sign-in, a reference to embedded image data, or a reference to binary image data in a database. Report Builder and Report Designer support .bmp, .jpeg, .gif, and .png files.  
   
-## Next steps
+## Related content
 
- [Formatting Report Items &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)  
+- [Formatting Report Items &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)  

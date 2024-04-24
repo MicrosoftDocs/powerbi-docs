@@ -99,8 +99,7 @@ To follow along, make sure you meet these criteria:
 
 1. If there are errors, select **Edit flow** to fix them. Otherwise, select the **Back** arrow to view the flow details and run the new flow. 
 
-
-## Next steps
+## Related content
 
 - [Export Power BI paginated reports with Power Automate](service-automate-paginated-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)

@@ -35,7 +35,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 ### Dashboards
 
-It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your semantic model enforces dynamic [row-level security (RLS)](../enterprise/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
+It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your semantic model enforces dynamic [row-level security (RLS)](/fabric/security/service-admin-rls), be sure to understand performance implications as tiles will cache on a per-user basis.
 
 When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to v-cores on the fly.
 
@@ -101,7 +101,7 @@ Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) prov
 
 You can monitor performance to identify bottlenecks. Slow queries—or report visuals—should be a focal point of continued optimization. Monitoring can be done at design time in Power BI Desktop, or on production workloads in Power BI Premium capacities. For more information, see [Monitoring report performance in Power BI](monitor-report-performance.md).
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 

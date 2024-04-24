@@ -89,7 +89,7 @@ Your Zendesk URL will be the same as the URL you use to sign into your Zendesk a
 ## Troubleshooting
 If you're having issues connecting, check your Zendesk URL and confirm you're using a Zendesk administrator account.
 
-## Next steps
+## Related content
 
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)

@@ -14,7 +14,7 @@ ms.date: 05/14/2023
 
 Power BI Embedded has several ways to filter data and restrict data access to specific users. Some of these security methods are:
 
-* [**Row-Level Security (RLS)**](../../enterprise/service-admin-rls.md)
+* [**Row-Level Security (RLS)**](/fabric/security/service-admin-rls)
   RLS enables you to control access to rows in a database table through group memberships. When you embed items, you can use RLS to restrict user access to specific rows of data. With RLS, different users can work with the same items but see different data.
 
 * [**Object level security (OLS)**](/analysis-services/tabular-models/object-level-security)
@@ -52,6 +52,6 @@ For instructions on how to embed reports or other items, go to the link that bes
 ## Related content
 
 * [Generate an embed token](./generate-embed-token.md)
-* [Row-Level security (RLS) with Power BI](../../enterprise/service-admin-rls.md)
+* [Row-Level security (RLS) with Power BI](/fabric/security/service-admin-rls)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

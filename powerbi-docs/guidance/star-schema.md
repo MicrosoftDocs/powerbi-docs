@@ -84,7 +84,7 @@ It's important to understand that Power BI models support a second method for ac
 However, there are three compelling reasons for you to create measures, even for simple column-level summarizations:
 
 - When you know your report authors will query the model by using [Multidimensional Expressions (MDX)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), the model must include *explicit measures*. Explicit measures are defined by using DAX. This design approach is highly relevant when a Power BI dataset is queried by using MDX, because MDX can't achieve summarization of column values. Notably, MDX will be used when performing [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), because PivotTables issue MDX queries.
-- When you know your report authors will create Power BI paginated reports using the MDX query designer, the model must include explicit measures. Only the MDX query designer supports [server aggregates](../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
+- When you know your report authors will create Power BI paginated reports using the MDX query designer, the model must include explicit measures. Only the MDX query designer supports [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
 - When you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions like min, max, average, etc. In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
 
 This design approach works well for reports authored in the Power BI service and for Q&A. However, Power BI Desktop live connections allow report authors to show hidden fields in the **Fields** pane, which can result in circumventing this design approach.
@@ -214,7 +214,7 @@ For example, consider that salespeople can be assigned to one *or more* sales re
 
 This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
-## Next steps
+## Related content
 
 For more information about star schema design or Power BI model design, see the following articles:
 

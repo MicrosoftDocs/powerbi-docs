@@ -33,8 +33,8 @@ ms.reviewer: saurkumar
   
 4.  (Optional) If the values for your minimum and maximum are large, specify a value for the **Multiply scale labels by** option. To specify a multiplier that reduces your scale, use a decimal number. For example, if you have a scale from 0 to 1000, you can specify a multiplier value of 0.01 to reduce the scale to read 0 to 10.  
   
-## Next steps  
+## Related content  
 
- [Format scales on a gauge in Power BI paginated report (Power BI Report Builder)](format-scales-gauge-report-builder.md)  
- [Format Pointers on a Gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
- [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  
+- [Format scales on a gauge in Power BI paginated report (Power BI Report Builder)](format-scales-gauge-report-builder.md)  
+- [Format Pointers on a Gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
+- [Gauges &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs)  

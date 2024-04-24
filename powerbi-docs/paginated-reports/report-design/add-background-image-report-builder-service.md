@@ -59,6 +59,7 @@ You can add a background image to a Power BI paginated report item such as a rec
   
          For background images in a chart, **BackgroundRepeat** can be set to **Default**, **Repeat**, **Fit**, and **Clip**, but not **RepeatX** or **RepeatY**.  
   
-## Next steps
- [Images &#40;Power BI Report Builder and service&#41;](images-report-builder-service.md)
+## Related content
+
+- [Images &#40;Power BI Report Builder and service&#41;](images-report-builder-service.md)
  

@@ -85,7 +85,7 @@ The scorecard filtered to _Premium_.
 1. Select **Save**. 
 
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

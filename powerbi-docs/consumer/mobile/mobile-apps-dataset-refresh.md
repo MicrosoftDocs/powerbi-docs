@@ -36,6 +36,6 @@ If you're a semantic model owner, or a [specified recipient for scheduled refres
 
 :::image type="content" source="./media/mobile-apps-dataset-refresh/power-bi-app-dataset-failure-notification.png" alt-text="Screenshot of semantic model refresh failure notification in the Power BI mobile app." border="false":::
 
-## Next steps
+## Related content
 
-[Getting refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications)
+- [Getting refresh failure notifications](../../connect-data/refresh-data.md#getting-refresh-failure-notifications)

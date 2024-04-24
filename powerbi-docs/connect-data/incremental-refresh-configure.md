@@ -1,8 +1,8 @@
 ---
 title: Configure incremental refresh and real-time data for Power BI semantic models
 description: Learn how to configure incremental refresh for Power BI semantic models and real-time data.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
@@ -120,8 +120,8 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     :::image type="content" source="media/incremental-refresh-configure/apply-datekey-filter.png" alt-text="Power BI table showing DateKey filter.":::
 
-## See also
+## Related content
 
-[Troubleshoot configuring incremental refresh](incremental-refresh-troubleshoot.md#configuring-in-power-bi-desktop)  
-[Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
-[Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  
+- [Troubleshoot configuring incremental refresh](incremental-refresh-troubleshoot.md#configuring-in-power-bi-desktop)  
+- [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
+- [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  

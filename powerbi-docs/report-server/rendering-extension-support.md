@@ -106,9 +106,9 @@ Customization of the product voids this conformance statement from Microsoft. Pl
 
 This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
+## Related content
 
-## Next steps
-[Administrator overview](admin-handbook-overview.md)  
+- [Administrator overview](admin-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

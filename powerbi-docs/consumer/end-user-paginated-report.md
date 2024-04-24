@@ -101,7 +101,8 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 - If you don't have any paginated reports, check out these [sample paginated reports](../paginated-reports/paginated-reports-samples.md) that you can import to your workspace. 
 
-## Next steps
+## Related content
+
 - [Power BI reports](end-user-reports.md)
 - [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - More questions? Try the [Power BI Community](https://community.powerbi.com/).

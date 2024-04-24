@@ -1,8 +1,8 @@
 ---
 title: Radial gauge charts in Power BI  
 description: Learn how to create radial gauge charts in Power BI Desktop and Power BI service.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
@@ -157,7 +157,7 @@ When you're done, you have a gauge chart similar to the following example:
 
 :::image type="content" source="media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-chart-final.png" alt-text="Screenshot that shows a customized gauge chart in Power BI with a needle at the target value of 200,000.":::
 
-## Next steps
+## Related content
 
 - Read about [Key Performance Indicator (KPI) visuals](power-bi-visualization-kpi.md).
 - Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

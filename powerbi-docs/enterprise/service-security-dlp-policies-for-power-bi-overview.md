@@ -105,7 +105,7 @@ Log into the [Microsoft Purview compliance portal](https://go.microsoft.com/fwli
 
 Select an alert to start drilling down to its details and to see management options.
 
-## Next steps
+## Related content
 
 * [Configure a DLP policy for Power BI](./service-security-dlp-policies-for-power-bi-configure.md).
 * [Respond to DLP policy violation in Power BI](./service-security-dlp-policies-for-power-bi-respond.md).

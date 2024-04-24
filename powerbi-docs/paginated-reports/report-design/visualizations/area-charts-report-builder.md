@@ -43,7 +43,7 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - Area chart types are similar to column and line charts in behavior. If you are making a comparison between multiple series, consider using a column chart instead. If you are analyzing trends over a period of time, consider using a line chart.  
   
-## Next steps
+## Related content
 
 - [Charts (Power BI Report Builder)](charts-report-builder.md)
 - [Chart types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   

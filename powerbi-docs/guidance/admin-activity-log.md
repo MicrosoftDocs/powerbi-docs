@@ -636,7 +636,7 @@ For more information, see [Choose APIs or PowerShell cmdlets](powerbi-implementa
 > [!NOTE]
 > A sample response is omitted because it's an output similar to the responses shown in the previous examples.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

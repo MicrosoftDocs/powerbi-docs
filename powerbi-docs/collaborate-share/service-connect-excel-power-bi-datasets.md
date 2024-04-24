@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 01/11/2024
 LocalizationGroup: Share your work
 ---
 # Power BI semantic model experience in Excel
@@ -22,7 +22,7 @@ In Excel Desktop or Excel for the web, you can discover all the Power BI semanti
 
 - Your organization’s tenant administrator must enable the **Users can work with Power BI semantic models in Excel using a live connection** tenant setting. Learn more about the [Excel live connection](/fabric/admin/service-admin-portal-export-sharing#users-can-work-with-power-bi-semantic-models-in-excel-using-a-live-connection) tenant setting in the admin portal documentation.
 - For on-premises datasets, your organization’s tenant administrator also must enable the **Allow XMLA endpoints and Analyze in Excel with on-premises datasets** tenant setting. Learn more about the [Allow XMLA endpoints](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) tenant setting in the admin portal documentation.
-- You must have Excel Desktop (Builds greater than or equal to **16.0.15128**) and Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
+- Your version of Excel Desktop must be an updated version of Excel for the web. To see if you have the right build for Excel Desktop, open **File** > **Account** > **About Excel** and confirm that the first five digits of the Build number are greater than or equal to 15128.
 
     :::image type="content" source="media/service-analyze-in-excel/build-excel-number.png" alt-text="Screenshot showing About Excel with Build number.":::
 
@@ -83,17 +83,15 @@ When you select **Insert Table**, the **Create Table** dialog opens, where you c
 
 - The order of Power BI semantic models in the pane may be different from their order in the Data hub in the Power BI service.
 
-- For newly created semantic models, recently refreshed semantic models, or semantic models that you just got access to, it may take up to 24 hours for these semantic models to show up in the Power BI Semantic models pane. If you don't see the semantic model you want, navigate to the Power BI OneLace data hub (`https://app.powerbi.com/datahub`) from the Power BI Semantic models pane in Excel and use **Analyze in Excel** to create an Excel workbook for that semantic model.
+- For newly created semantic models, recently refreshed semantic models, or semantic models that you just got access to, it may take up to 24 hours for these semantic models to show up in the Power BI Semantic models pane. If you don't see the semantic model you want, navigate to the Power BI OneLake data hub (`https://app.powerbi.com/datahub`) from the Power BI Semantic models pane in Excel and use **Analyze in Excel** to create an Excel workbook for that semantic model.
 
 - Excel and Power BI visuals use different query languages and data load behaviors, so data load performance can be different between Excel and Power BI.
 
-## Next steps
+## Related content
 
 For more information about getting data into Excel, see [Create a PivotTable from Power BI semantic models](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) in the Excel documentation.
 
 You can also access **featured tables** in Excel, in the **Data Types** gallery. To learn more about featured tables and how to access them, see [Access Power BI featured tables in Excel organization data types](service-excel-featured-tables.md). You can also read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
-
-### Other related articles
 
 - [Create Excel workbooks with refreshable Power BI data](service-analyze-in-excel.md)
 - [Design refreshable reports in Excel with Power BI data](service-analyze-power-bi-datasets-excel.md)

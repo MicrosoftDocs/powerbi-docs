@@ -65,7 +65,7 @@ There are new Field list icons as well. The following table shows the original i
 |:::image type="icon" source="media/desktop-field-list/field-list-19a.png":::     |:::image type="icon" source="media/desktop-field-list/field-list-19b.png":::         |Group: Values in this column are based on grouping values from another column by using the groups and bins feature. For more information, see [Use grouping and binning in Power BI Desktop](../create-reports/desktop-grouping-and-binning.md).         |
 | no original icon    |:::image type="icon" source="media/desktop-field-list/field-list-20b.png":::          |Change detection measure: When you configure a page for automatic page refresh, you can configure a [change detection measure](../create-reports/desktop-grouping-and-binning.md) that is queried to determine if the rest of a page’s visuals should be updated.         |
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

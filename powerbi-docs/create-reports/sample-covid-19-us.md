@@ -117,7 +117,7 @@ The COVID-19 Data Repository by the Center for Systems Science and Engineering (
 
 This report and data are provided "as is", "with all faults", and without warranty of any kind. Microsoft gives no express warranties or guarantees and expressly disclaims all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-## Next steps
+## Related content
 
 - Download the [Power BI template (.pbit) file](https://go.microsoft.com/fwlink/?linkid=2125058)
 - [Get samples for Power BI](../create-reports/sample-datasets.md)

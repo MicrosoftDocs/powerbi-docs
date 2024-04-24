@@ -48,7 +48,7 @@ Jeff can now add it to the report canvas along with the number of shipments. Wit
 
 :::image type="content" source="media/desktop-calculated-columns/calccolinpbid_citystatemap.png" alt-text="Screenshot of Power BI Desktop showing data represented in a Map visual.":::
 
-## Next steps
+## Related content
 
 This article provides a quick introduction to calculated columns here. For more information, see the following resources:
 

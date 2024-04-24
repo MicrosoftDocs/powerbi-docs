@@ -267,11 +267,13 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 | **Server version** | **Required SKU** |
 | --- | --- |
-| 2012 SP1 CU4 or later |Business Intelligence and Enterprise SKU |
 | 2014 |Business Intelligence and Enterprise SKU |
 | 2016 |Standard SKU or higher |
+| 2017 |Standard SKU or higher |
+| 2019 |Standard SKU or higher |
+| 2022 |Standard SKU or higher |
 
-## Next steps
+## Related content
 
 * [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)

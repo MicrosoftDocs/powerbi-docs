@@ -171,7 +171,7 @@ public static string RedirectWithData(string url, string ticket)
 
 When the automation you've designed is ready, be sure to move it to production.
 
-## Next steps
+## Related content
 
 * Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure function to automate the configuration of a template app installation.
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

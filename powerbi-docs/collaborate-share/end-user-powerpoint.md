@@ -4,7 +4,6 @@ description: Learn how to export a Power BI report to PowerPoint.
 author: ajburnle
 ms.author: ajburnle
 ms.reviewer: mihart
-ms.custom: contperf-fy20q4 
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
@@ -133,8 +132,9 @@ The following aren't supported for **Export to PowerPoint**. Either the **PowerP
 * Export to PowerPoint isn't currently supported for tenants in the China North region. 
 * Export to PDF supports Unicode 6 and earlier. If for example, Unicode 7 is used, Power BI export displays that image as a blank box. 
 
-## Next steps
-[Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
-[Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)    
-[Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md)    
-[Print a report](../consumer/end-user-print.md)
+## Related content
+
+- [Add a live Power BI report page in PowerPoint](service-power-bi-powerpoint-add-in-install.md)    
+- [Use the Power BI Add-in for PowerPoint](service-power-bi-powerpoint-add-in-view-present.md)    
+- [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md)    
+- [Print a report](../consumer/end-user-print.md)

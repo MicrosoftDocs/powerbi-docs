@@ -1,13 +1,13 @@
 ---
 title: Create report bookmarks in Power BI to share insights and build stories
-description: Bookmarks in Power BI let you save views and settings in your reports, and build story-like presentations
+description: Bookmarks in Power BI let you save views and settings in your reports, and build story-like presentations.
 author: mihart
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/14/2023
+ms.date: 12/19/2023
 ms.custom: Sample-Retail Analysis Sample
 LocalizationGroup: Create reports
 ---
@@ -24,9 +24,7 @@ There are many uses for bookmarking. For example, you can create a collection of
 ## Other articles about bookmarks
 
 - In the Power BI service, anyone viewing a report can create a *personal bookmark*. For more about personal bookmarks, read about [personal bookmarks in the Power BI service](../consumer/end-user-bookmarks.md#use-personal-bookmarks-to-save-insights-and-build-stories-in-power-bi).
-- After you've created your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
-
-
+- After you create your report bookmarks, you and your report readers can do more with them. You can quickly build a [bookmark navigation experience](button-navigators.md#bookmark-navigator) with a few more clicks.
 
 ## Create report bookmarks
 
@@ -44,7 +42,7 @@ Open a report in Editing view.
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-edit.png" alt-text="Screenshot showing a red box around the menu item for Edit.":::
 
-Select **View** and turn on **Bookmarks pane**. 
+Select **View** and enable **Bookmarks pane**. 
 
 :::image type="content" source="media/desktop-bookmarks/service-view-bookmarks.png" alt-text="Screenshot showing how to turn on the Bookmarks pane in the Power BI service.":::
 
@@ -65,11 +63,11 @@ Configure a report page as you want it to appear in the bookmark. After your rep
 
 ![Screenshot of Add a bookmark.](media/desktop-bookmarks/bookmarks-add.png)
 
-Power BI creates a bookmark and gives it a generic name. You can easily **Rename**, **Delete**, or **Update** a bookmark by selecting **More options (...)** next to the bookmark's name, then selecting an action from the menu that appears.
+Power BI creates a bookmark and gives it a generic name. Easily **Rename**, **Delete**, or **Update** a bookmark by selecting **More options (...)** next to the bookmark's name, then selecting an action from the menu that appears.
 
 ![Screenshot showing selecting the bookmark menu by selecting More options.](media/desktop-bookmarks/bookmarks-more-options.png)
 
-After you've created a bookmark, display it by selecting it in the **Bookmarks** pane. 
+After you create a bookmark, display it by selecting it in the **Bookmarks** pane. 
 
 :::image type="content" source="media/desktop-bookmarks/power-bi-select-bookmark.png" alt-text="Screenshot of Bookmarks pane with one report bookmark outlined in red.":::
 
@@ -109,7 +107,7 @@ When you have a collection of bookmarks you'd like to present in order, you can 
 Read more about [using bookmarks as a slideshow](../consumer/end-user-bookmarks.md#bookmarks-as-a-slideshow) in the Power BI service.
 
 ## Visibility: Using the Selection pane
-Related to the **Bookmarks** pane, the **Selection** pane provides a list of all objects on the current page and allows you to select an object and specify whether it's visible. 
+The **Selection** pane is similar to the **Bookmarks** pane. They both display a list of all objects on the current page and allow you to select an object and specify whether it's visible. 
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -225,10 +223,10 @@ When you use the **View** feature of bookmarks, the following details apply:
 In this release of bookmark features, there are a few considerations and limitations to keep in mind.
 
 * Most Power BI visuals work well with bookmarks. However, if you encounter problems with bookmarks and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
-* If you add a slicer to a page where you previously created bookmarks, the slicer will be cleared.
-* If you move a visual after you create a bookmark, when you select the bookmark, the visual appears where you moved it.
+* If you add a slicer to a page where you previously created bookmarks, the slicer is cleared.
+* Bookmarks apply to the state of the visuals on a report page, and not to the visuals' location on the report page. You can create a bookmark and then move visuals on that page. Selecting the bookmark doesn't return those visuals to their previous locations.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with bookmarks, see the following articles:
 

@@ -94,7 +94,7 @@ Since the page opens in a separate window, close the window, or select your Powe
 
 :::image type="content" source="media/end-user-buttons/power-bi-url.png" alt-text="Screenshot of a Web URL button that opens a new browser window with a download link.":::
 
-## Next step
+## Related content
 
 - [Bookmarks in the Power BI service](end-user-bookmarks.md)
 - [Drill mode in the Power BI service](end-user-drill.md)

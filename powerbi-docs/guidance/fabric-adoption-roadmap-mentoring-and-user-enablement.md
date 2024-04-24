@@ -359,6 +359,6 @@ The following maturity levels will help you assess the current state of your men
 | 400: Capable | &bull;&nbsp;Office hours have regular and active participation from all business units in the organization. <br/><br/>&bull;&nbsp;Best practices reviews from the COE are regularly requested by business units. <br/><br/>&bull;&nbsp;Co-development projects are repeatedly executed with success by the COE and members of business units. |
 | 500: Efficient | &bull;&nbsp;Training, documentation, and resources are continually updated and improved by the COE to ensure the community has current and reliable information. <br/><br/>&bull;&nbsp;Measurable and tangible business value is gained from the mentoring program by using KPIs or OKRs. |
 
-## Next steps
+## Related content
 
 In the [next article](fabric-adoption-roadmap-community-of-practice.md) in the Microsoft Fabric adoption roadmap series, learn about the community of practice.

@@ -131,7 +131,7 @@ Same as the general troubleshooting steps for reports with data access issues. S
 
 **For non-authors:** Contact the author.
 
-## Next steps
+## Related content
 
 - [Subreports in Power BI paginated reports](subreports.md).
 

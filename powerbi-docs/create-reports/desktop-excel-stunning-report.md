@@ -335,7 +335,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-share-report.png" alt-text="Screenshot of sharing your report from the Power BI service.":::
 
-## Next steps
+## Related content
 
 - [Tutorial: Analyze sales data from Excel and an OData feed](../connect-data/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md)
 

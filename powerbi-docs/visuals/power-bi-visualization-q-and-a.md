@@ -1,8 +1,8 @@
 ---
 title: Create a Q&A visual in a report
 description: Learn how to create and format a Q&A visual in a report in Power BI Desktop or the Power BI service.
-author: maggiesMSFT
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: rien
 ms.service: powerbi
 ms.subservice: powerbi-ai
@@ -215,7 +215,7 @@ Keep in mind the following points when creating Q&A visuals in Power BI.
 
 - The Q&A visual integrates with Microsoft Office and Bing to attempt to match unrecognized common words with fields in your semantic model.  
 
-## Next steps
+## Related content
 
 There are several ways you can integrate natural language with Q&A in Power BI. For more information, see the following articles:
 

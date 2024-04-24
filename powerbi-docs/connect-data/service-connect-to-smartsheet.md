@@ -69,7 +69,7 @@ The Smartsheet template app for Power BI includes an overview of your Smartsheet
 
 To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](desktop-connect-to-data.md).  
 
-## Next steps
+## Related content
 
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)

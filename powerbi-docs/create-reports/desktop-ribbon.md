@@ -60,7 +60,7 @@ In addition to those visible changes, an updated ribbon also allows for future u
 * The addition *black* and *dark gray* Office themes to Power BI Desktop
 * An improved accessibility
 
-## Next steps
+## Related content
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 

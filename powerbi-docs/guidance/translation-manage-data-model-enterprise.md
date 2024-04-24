@@ -30,6 +30,6 @@ The **Import Translations** command provides special treatment for report labels
 
 Because the **Import Translations** command creates the **Localized Labels** table and copies report labels into a target .pbix project, it can be the foundation for maintaining an enterprise-level master translation sheet. Use a set of localized report labels across multiple .pbix projects. Each time you create a new .pbix project, you can import the enterprise-level translation sheet to add the generalized set of localized report labels.
 
-## Next steps
+## Related content
 
 - [Guidance for Power BI](overview.md)

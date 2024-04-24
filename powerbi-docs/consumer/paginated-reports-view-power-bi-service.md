@@ -3,12 +3,12 @@ title: "View a paginated report in the Power BI service"
 description: Learn how you can view a paginated report in the Power BI service that has parameters and then export it to  a different format.  
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: maggies
+ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View a paginated report
 ms.topic: how-to
-ms.date: 12/01/2023
+ms.date: 01/08/2024
 ---
 
 # View a paginated report in the Power BI service
@@ -47,9 +47,12 @@ You can also export paginated reports to many formats:
    
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-search.png" alt-text="Screenshot of Search highlighted.":::
 
-1. You can also sort by selecting the **sort** icon on the report.
+1. You can also sort by selecting the **sort** icon on the report. 
    
     :::image type="content" source="media/paginated-reports-view-power-bi-service/power-bi-paginated-report-sort.png" alt-text="Screenshot of sort highlighted.":::
+
+   > [!NOTE]
+   > The report author may have limited sorting for reports created in Power BI Report Builder. You have to update sort in Power BI Report Builder to be able to sort on all columns on the Power BI service.  
 
 1. To export your report to a different format, select **Export**. Then choose the format you want to use from the dropdown menu.
 
@@ -57,11 +60,12 @@ You can also export paginated reports to many formats:
 
 ## Considerations and limitations 
 
-- You can only search in "Web layout."
-- You need at least one letter, number, or character to search.
+- You can only search and sort in "Web layout."
 - Search doesn't work if there are over 300 rows per page.
-- You can only sort on one column at a time.
+- Sort:
+  - You can only sort on one column at a time.
+  - If a report was created in the service before December 2023, you have to edit the report for sorting to be available during consumption.
 
-## Next steps
+## Related content
 
-[Paginated reports in the Power BI service](end-user-paginated-report.md)
+- [Paginated reports in the Power BI service](end-user-paginated-report.md)

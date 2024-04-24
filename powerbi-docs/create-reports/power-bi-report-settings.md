@@ -82,7 +82,7 @@ By default, [report readers can export summarized or underlying data](/power-bi/
 
 Allow your readers to change and personalize the visuals in your report. For more information, see [Let users personalize visuals in a report](power-bi-personalize-visuals.md).
 
-## Next steps
+## Related content
 
 * [Feature content on others' Power BI Home pages](../collaborate-share/service-featured-content.md)
 * [Let users personalize visuals in a report](power-bi-personalize-visuals.md)

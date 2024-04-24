@@ -124,6 +124,6 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
 
-## Next steps
+## Related content
 
 - [Create a template app](service-template-apps-create.md)

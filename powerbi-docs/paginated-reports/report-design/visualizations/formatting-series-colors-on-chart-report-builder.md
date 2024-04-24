@@ -43,11 +43,11 @@ Power BI Report Builder provides several built-in palettes for paginated report 
   
  [Highlight Chart Data by Adding Strip Lines &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/highlight-chart-data-by-adding-strip-lines-report-builder-and-ssrs)  
   
-## Next steps
+## Related content
 
- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
- [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md)
- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md) 
- [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)  
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+- [Chart effects: Add bevel, emboss, or texture to a paginated report chart (Power BI Report Builder)](chart-effects-add-bevel-emboss-or-texture-report-builder.md)
+- [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md) 
+- [Formatting the Legend on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)  
   
   

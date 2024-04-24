@@ -133,7 +133,7 @@ There are some limitations to queries that include R scripts created in Power Qu
 
 * To schedule refresh of your R visuals or semantic model, enable scheduled refresh and install an on-premises data gateway (personal mode) on the computer containing the workbook and R. You can't use an enterprise gateway to refresh semantic models containing R scripts in Power Query.
 
-## Next Steps
+## Related content
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
 

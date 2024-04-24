@@ -1,6 +1,6 @@
 ---
-title: Create a dynamic subscription (Preview)
-description: Learn how to create per-recipient subscriptions based on parameters that you select.
+title: Create a dynamic subscription for a paginated report (Preview)
+description: Learn how to create per-recipient subscriptions for paginated reports based on parameters that you select.
 author: mihart
 ms.author: mihart
 ms.reviewer: mibruhje
@@ -8,22 +8,24 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/04/2023
+ms.date: 01/08/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
 
-# Dynamic per recipient subscriptions (Preview)
+# Dynamic per recipient subscriptions for paginated reports (Preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a paginated report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report. 
+Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which parameters are applied to their version of the report. 
+Dynamic per recipient subscriptions are available for paginated reports and for Power BI reports.  This article pertains to paginated reports. 
+To learn about dynamic subscriptions for Power BI reports, see [Dynamic per recipient subscriptions for reports](power-bi-dynamic-report-subscriptions.md)
 The dynamic subscription parameters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. 
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
 > [!IMPORTANT]
-> Dynamic subscriptions is currently in PREVIEW and only available for paginated reports.
+> Dynamic subscriptions is currently in PREVIEW.
 > This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 
@@ -137,12 +139,12 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Considerations and limitations
 - Rendering the report uses some of your capacity. It's classified as a **Background** activity.
-- During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
+- Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter).  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
 
-## Next steps
+## Related content
 
-[Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
-[Search for and sort content](../consumer/end-user-search-sort.md).
+- [Troubleshoot Power BI subscriptions](service-troubleshoot-subscribe.yml).   
+- [Search for and sort content](../consumer/end-user-search-sort.md).

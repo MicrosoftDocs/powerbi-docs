@@ -38,6 +38,6 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
 Grayed-out fields aren't editable. *Any* and *Binary* type parameters work in Power BI Desktop. The Power BI service doesn't currently support them for security reasons.
 
-## Next steps
+## Related content
 
-An ad-hoc way to add simple parameters is by [modifying filters](../collaborate-share/service-url-filters.md).
+- An ad-hoc way to add simple parameters is by [modifying filters](../collaborate-share/service-url-filters.md).

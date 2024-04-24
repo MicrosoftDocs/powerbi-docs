@@ -134,7 +134,7 @@ Summarized information is available in the **Performance Analyzer** pane. You ca
 > - Whether [query caching](/power-bi/connect-data/power-bi-query-caching) is enabled
 > - Whether [query parallelization](https://powerbi.microsoft.com/blog/query-parallelization-helps-to-boost-power-bi-dataset-performance-in-directquery-mode/) is used
 > - The number of [active connections](/power-bi/connect-data/desktop-directquery-about#maximum-number-of-connections-option-for-directquery)
-> - Whether [row-level security](/power-bi/enterprise/service-admin-rls) (RLS) is enforced by the Power BI service.
+> - Whether [row-level security](/fabric/security/service-admin-rls) (RLS) is enforced by the Power BI service.
 
 Data is logged when a user interacts with a report element. Logged data includes more than the visual display elements. It also includes:
 
@@ -165,6 +165,6 @@ Some organizations have specific requirements for [endorsed](/power-bi/collabora
 > - **Ensure support and skills mentoring are available:** Ensure that your report creators know how to get assistance to resolve performance issues.
 > - **Include in requirements to certify reports:** Decide whether you want to include Performance Analyzer results as a prerequisite to certifying (endorsing) reports. If so, ensure that this requirement is documented and communicated to report creators.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md), learn about data-level auditing.

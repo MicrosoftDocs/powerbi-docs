@@ -21,11 +21,12 @@ ms.reviewer: saurkumar
   
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
-## Next steps 
- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
- [Formatting pointers on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
- [Set a minimum or maximum on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-a-minimum-or-maximum-on-a-gauge-report-builder-and-ssrs)   
- [Tutorial: Adding a KPI to your report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-adding-a-kpi-to-your-report-report-builder)   
- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
+## Related content
+
+- [Formatting scales on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-scales-on-a-gauge-report-builder-and-ssrs)   
+- [Formatting pointers on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-pointers-on-a-gauge-report-builder-and-ssrs)   
+- [Set a minimum or maximum on a gauge &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/set-a-minimum-or-maximum-on-a-gauge-report-builder-and-ssrs)   
+- [Tutorial: Adding a KPI to your report &#40;Power BI Report Builder&#41;](/sql/reporting-services/tutorial-adding-a-kpi-to-your-report-report-builder)   
+- [Gauges &#40;Power BI Report Builder&#41;](gauges-report-builder.md)  
   
   

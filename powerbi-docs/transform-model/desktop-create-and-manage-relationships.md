@@ -458,7 +458,7 @@ When you see the **Can't determine relationships between the fields** error, you
 2. Add a constraint to the visual in the form of a summarized column or a model measure.
 3. If a summarized column is added and there still is an error, consider using a model measure.
 
-## Next steps
+## Related content
 
 For more information about models and relationships, see the following articles:
 

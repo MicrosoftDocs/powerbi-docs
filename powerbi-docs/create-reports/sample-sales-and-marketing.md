@@ -205,7 +205,7 @@ Notice the following details:
 
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, VanArsdel can discover growth opportunities.
 
-## Next steps
+## Related content
 
 After experimenting with this report, you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

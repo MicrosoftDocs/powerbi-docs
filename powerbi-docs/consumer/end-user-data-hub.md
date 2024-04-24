@@ -32,7 +32,7 @@ The data hub shows a selection of recommended data items and a list of all the d
 
 [Continue learning about the OneLake data hub](../connect-data/service-data-hub.md) and explore additional information, including how to select a semantic model, how to explore reports built using a semantic model, and how to create a new report yourself.
   
-## Next steps
+## Related content
 
 - Learn about [Data discovery using the data hub](../connect-data/service-data-hub.md)
 - Learn how to [Find your dashboards, reports, and apps](end-user-home.md)

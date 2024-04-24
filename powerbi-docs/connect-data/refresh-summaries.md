@@ -68,7 +68,7 @@ However, scheduled refresh #2 is scheduled for the 8:00 PM time slot, but becaus
 
 That's not good. The administrator in this case should contact the owners of that scheduled refresh instance and suggest they find a different time slot for that scheduled refresh, or reschedule the other refreshes so there's no overlap, or find some other solution to prevent such overlap.
 
-## Next steps
+## Related content
 
 - [Data refresh in Power BI](refresh-data.md)  
 - [Power BI Gateway - Personal](service-gateway-personal-mode.md)  

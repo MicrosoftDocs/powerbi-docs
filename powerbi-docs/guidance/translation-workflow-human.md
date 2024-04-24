@@ -40,6 +40,6 @@ After you configure the folder paths for *Outbox* and *Inbox*, you can begin to 
 
 :::image type="content" source="./media/translation-workflow-human/export-import-translation.png" alt-text="Screenshot shows Translations Builder with the Export/Import Translations pane highlighted." lightbox="./media/translation-workflow-human/export-import-translation.png":::
 
-## Next steps
+## Related content
 
 - [Export translation sheets in Translations Builder](translation-sheet-export.md)

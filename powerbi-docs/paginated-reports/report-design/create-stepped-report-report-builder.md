@@ -96,9 +96,10 @@ A stepped report is a type of Power BI paginated report that shows detail rows o
   
 1. Change the padding for the cell that displays the group data.  
   
-## Next steps  
- [Page headers and footers (Power BI Report Builder)](page-headers-footers-report-builder-service.md)   
- [Formatting report items (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)   
- [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)  
+## Related content
+
+- [Page headers and footers (Power BI Report Builder)](page-headers-footers-report-builder-service.md)   
+- [Formatting report items (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-report-items-report-builder-and-ssrs)   
+- [Tables, Matrices, and Lists (Power BI Report Builder)](../report-builder-tables-matrices-lists.md)  
   
   

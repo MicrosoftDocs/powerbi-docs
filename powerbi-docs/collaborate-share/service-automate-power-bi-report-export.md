@@ -88,7 +88,7 @@ Optionally, if you want to send the report based on row-level security (RLS), yo
 
 - **Identities Roles Item - 1** = RLS name defined in the report
 
-## Next steps
+## Related content
 
 - [Integrate Power BI data alerts with Power Automate](service-flow-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)

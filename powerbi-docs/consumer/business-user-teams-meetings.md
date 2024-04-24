@@ -137,7 +137,7 @@ It’s useful to share a summary of the most important data points discussed and
 
 Consider using key data points to create metrics and track them in a scorecard. Consistently tracking progress against a metric through a series of meetings is a great way to keep your team or project on track.
 
-## Next steps
+## Related content
 
 - [Add the Power BI app to Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md)
 - [Use Power BI metrics to improve results in Microsoft Teams](business-user-teams-goals.md)

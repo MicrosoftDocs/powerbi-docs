@@ -35,8 +35,6 @@ Decision-making of this nature is an iterative and non-linear process. Some plan
 
 One of the first decisions is to choose the Power BI product. It's a decision between the [Power BI service](../fundamentals/power-bi-service-overview.md) or [Power BI Report Server](../report-server/get-started.md). Once content has been published, many additional options become available, such as embedding, mobile delivery, and email subscriptions.
 
-For more information about architectural considerations, see **Section 3** of the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP).
-
 > [!CAUTION]
 > If you're tempted to rely on using Power BI Desktop files stored in a file system, be aware that it's not an optimal approach. Using the Power BI service (or Power BI Report Server) has significant advantages for security, content distribution, and collaboration. The ability to audit and monitor activities is also enabled by the Power BI service.
 
@@ -112,14 +110,14 @@ Once sufficient information is available from the requirements (which were descr
 > [!TIP]
 > Labor costs—salaries and wages—are usually among the highest expenses in most organizations. Although it can be difficult to accurately estimate, productivity enhancements have an excellent return on investment (ROI).
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-proof-of-concept.md), learn about Stage 3, which is concerned with conducting a proof of concept to mitigate risk and address unknowns as early as possible when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

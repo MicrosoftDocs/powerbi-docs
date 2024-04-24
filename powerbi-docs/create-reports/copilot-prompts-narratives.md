@@ -1,5 +1,5 @@
 ---
-title: Write Copilot prompts for creating narrative visuals in Power BI 
+title: Write Copilot prompts to create narrative visuals in Power BI 
 description: Read about samples of prompts that help Copilot produce useful narrative visuals in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,13 +7,20 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/13/2023
+ms.date: 01/11/2024
 LocalizationGroup: Create reports
+no-loc: [Copilot]
 ---
 
-# Write Copilot prompts for creating narrative visuals in Power BI
+# Write Copilot prompts to create narrative visuals in Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+If you have edit permission for a report, Copilot can create a narrative visual for you on the report page. If you don't have edit permission, you still use Copilot to get insights about the report, by asking questions in the Copilot pane. See the article [Summarize your report content in the Copilot pane](copilot-pane-summarize-content.md) for details. 
+
+[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
+
+## Sample prompts for narrative visuals
 
 Here are some examples of prompts that work well for creating narrative visuals with Copilot for Power BI. Use these prompts as examples.
 
@@ -71,11 +78,12 @@ Create a narrative answer investigating something specific in your report.  For 
 
 ## Send feedback
 
-We always welcome your feedback about our products, but especially during public preview, your feedback helps us improve the product faster.
+We always welcome your feedback about our products. Especially during public preview, your feedback helps us improve the product faster.
 
 ## Next steps
 
-- [Create a report with Copilot for Power BI](copilot-create-report.md)
+- [Overview of Copilot for Power BI](copilot-introduction.md)
+- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - [Frequently asked questions about Copilot for Power BI and Fabric](/fabric/get-started/copilot-faq-fabric)

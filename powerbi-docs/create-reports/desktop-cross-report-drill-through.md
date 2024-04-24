@@ -103,7 +103,7 @@ If you want to return to the source report after the cross-report drillthrough a
 
 Cross-report drillthrough doesn't work in Power BI reports in Power BI Report Server.
 
-## Next steps
+## Related content
 
 You might also be interested in the following articles:
 

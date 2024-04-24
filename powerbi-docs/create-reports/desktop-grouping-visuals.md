@@ -70,7 +70,7 @@ Once you apply a background color, clicking on the space between visuals in the 
 
 - Grouping is only available with the modern visual header style. Ensure that the **Options** > **Current file** > **Report settings** > **Visual options** > **Use the modern visual header with updated styling options** setting is checked to use grouping.
 
-## Next steps
+## Related content
 
 For more information about grouping, take a look at the following video:
 

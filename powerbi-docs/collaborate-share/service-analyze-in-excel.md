@@ -115,7 +115,7 @@ You can use the Power BI Excel add-in to insert connected PivotTables and connec
 > - Don't allow any web add-ins to start.
     
 > [!NOTE]
-> Insert Table experience is available in Current Channel and Monthly Enterprise Channel for customers who have Excel version 16.0.16732.0 or higher. The add-in is visible in Excel for users with a Power BI Pro license. The Insert Table experience is not available in Excel for the Web. 
+> The connected tables feature is now available in the Microsoft 365 Current Channel. Connected tables will be available to all Monthly Enterprise Channel and Semi-Annual Enterprise Channel customers in their next regularly scheduled [Microsoft 365 update](/deployoffice/manage-software-download-settings-office-365). The connected tables feature is  available for everyone in Excel for the Web. The add-in is visible in Excel for users with a Power BI Pro license.
 
 You can open the Excel Add-in from the Excel ribbon. 
 
@@ -144,9 +144,9 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 
 ## Considerations and limitations
 
-- Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](../enterprise/service-admin-rls.md) and [object-level security](../enterprise/service-admin-ols.md).
+- Row-level security (RLS) and object-level security (OLS) are supported for Analyze in Excel and Export with Live Connection. RLS is enforced at the data-model level while OLS is enforced at the table or column level and both security layers apply to all users who access data in a specific Power BI report. Read more about [row-level security](/fabric/security/service-admin-rls) and [object-level security](/fabric/security/service-admin-ols).
 - When inserting a connected PivotTable or connected query table, the  Microsoft Purview Information Protection sensitivity label for the semantic model is automatically applied to the Excel workbook. If the Excel workbook has a sensitivity label already, the strictest label is applied. 
-- For Analyze in Excel, only Power BI semantic models that use Import mode preserve hierarchies in the PivotTable Fields in the Excel workbook. Power BI semantic models that are built on DirectQuery or composite models don't retain their hierarchies when you use Analyze in Excel.
+- For Analyze in Excel, only Power BI semantic models that use Import mode preserve hierarchies in the PivotTable Fields in the Excel workbook. Power BI semantic models that are built on Direct Lake, DirectQuery, or composite models don't retain their hierarchies when you use Analyze in Excel.
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string after the workbook has been generated.
 - You might see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. For more information, see [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
 - Users external to the tenant hosting the Power BI semantic model can't analyze Power BI data in Excel.
@@ -157,7 +157,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - Mac users can only use Excel for the web to explore Excel workbooks containing Power BI semantic models.
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
 
-## Next steps
+## Related content
 
 - Now that you've created the Excel workbook with refreshable Power BI data, it's time to [design a report in Excel with that Power BI data](service-analyze-power-bi-datasets-excel.md)
 - [Connect Excel to Power BI semantic models](service-connect-power-bi-datasets-excel.md)

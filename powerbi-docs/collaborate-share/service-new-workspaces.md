@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Workspaces in Power BI, Get started with workspaces
 ms.topic: conceptual
-ms.date: 03/13/2023
+ms.date: 04/17/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
@@ -88,13 +88,12 @@ Read more about [Power BI auditing](../admin/service-admin-auditing.md).
 
 Limitations to be aware of:
 
-- Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per semantic model.
+- The total number of semantic models and reports in a workspace can't exceed a thousand.
 - Power BI publisher for Excel isn't supported.
 - Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
 - A user or a [service principal](../enterprise/service-premium-service-principal.md) can be a member of up to 1,000 workspaces.
 
-
-## Next steps
+## Related content
 
 * [Create workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)

@@ -208,7 +208,7 @@ Explore and get insights of Azure Log Analytics Power BI data using an open-sour
 
 
 
-## Next steps
+## Related content
 
 The following articles can help you learn more about Power BI and about its integration with Azure Log Analytics.
 

@@ -33,7 +33,7 @@ Here are additional details about each step:
 
 3. The gateway service process impersonates the mapped local user, opens the connection to the underlying database, and then sends the query. You don't need to install the gateway on the same machine as the database.
 
-## Next steps
+## Related content
 
 Now that you understand the basics of enabling SSO through the gateway, read more detailed information about Kerberos and SAML:
 

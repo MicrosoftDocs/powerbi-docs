@@ -39,7 +39,7 @@ Some Power BI Desktop app deployments use on-premises data gateway to connect to
 
 For information about connecting to an Oracle database or an Oracle Autonomous database from either Power BI Desktop or Power BI service, go to the Power Query article on [Oracle databases](/power-query/connectors/oracle-database).
 
-## Next steps
+## Related content
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [What is Power BI?](../fundamentals/power-bi-overview.md)  

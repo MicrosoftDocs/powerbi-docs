@@ -121,6 +121,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    Tap the Open Report icon ![Open Report icon](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) that the tile is based on. 
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
-## Next steps
+## Related content
+
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

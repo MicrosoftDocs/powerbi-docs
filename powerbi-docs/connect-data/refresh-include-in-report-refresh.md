@@ -39,7 +39,7 @@ You can also make this change in the **Properties** screen:
 > [!NOTE]
 > Any queries excluded from refresh are also excluded in automatic refresh in the Power BI service.
 
-## Next steps
+## Related content
 
 - [Shape and combine data](desktop-shape-and-combine-data.md)
 - [Configuring scheduled refresh](refresh-scheduled-refresh.md)  

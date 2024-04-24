@@ -60,5 +60,6 @@ Once enabled on provider side, consumers will be able to see the semantic models
 > [!Note]
 > For others to have access to a composite model or content built on top of an external semantic model, they must also have access to the underlying external data..
 
-## Next steps
+## Related content
+
 - [Use composite models](../transform-model/desktop-composite-models.md#use-composite-models)

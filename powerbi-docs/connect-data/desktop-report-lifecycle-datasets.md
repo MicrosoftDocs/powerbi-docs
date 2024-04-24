@@ -119,7 +119,7 @@ When you use the Power BI service live connection, keep a few considerations and
 - Reports that share a semantic model on the Power BI service don't support automated deployments that use the Power BI REST API.
 
 
-## Next steps
+## Related content
 For more information on DirectQuery and other Power BI data connection features, check out the following resources:
 
 - [Use DirectQuery in Power BI](desktop-directquery-about.md)

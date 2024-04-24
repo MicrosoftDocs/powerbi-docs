@@ -107,7 +107,7 @@ END;
 For more information about platform and version support, see [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md).
 
 
-## Next steps
+## Related content
 
 - [Manage your data source - Oracle](../../connect-data/service-gateway-onprem-manage-oracle.md)  
 - [Filter, Group, and Sort Data (Power BI Report Builder)](../report-design/filter-group-sort-data-report-builder.md)

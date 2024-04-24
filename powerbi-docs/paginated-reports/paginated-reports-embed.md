@@ -75,7 +75,7 @@ var EmbedTokenResult = pbiClient.EmbedToken.GenerateToken(tokenRequest);
 var embedToken = EmbedTokenResult.Token;
 ```
 
-## Next steps 
+## Related content 
 
 > [!div class="nextstepaction"]
 > [Using the Power BI REST APIs](/rest/api/power-bi/)

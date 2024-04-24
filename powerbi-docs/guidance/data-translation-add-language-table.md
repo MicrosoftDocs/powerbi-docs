@@ -65,6 +65,6 @@ After you establish the relationship between **Languages** and **Translated Prod
 
 :::image type="content" source="./media/data-translation-add-language-table/filter-pane.png" alt-text="Screenshot shows a filter for all pages with four languages, with one language selected." lightbox="./media/data-translation-add-language-table/filter-pane.png":::
 
-## Next steps
+## Related content
 
 - [Synchronize multiple field parameters](data-translation-synchronize-field.md)

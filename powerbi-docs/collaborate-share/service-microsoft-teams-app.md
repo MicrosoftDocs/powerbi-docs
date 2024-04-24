@@ -140,7 +140,7 @@ Power BI end users might see a notification in the Power BI service notification
 - Search experience isn't available in US GCC.
 - To automatically take you back when navigating back to the app, your navigation history is saved approximately every 15 seconds. The history is stored locally on your computer or in your web browser window. If you navigate to a place and filter, then quickly switch to another part of Teams, such as to Chat, Calendar, or Teams, your navigation may not be captured. If you change computers or start a new browser window, the history isn't available.  
 
-## Next steps
+## Related content
 
 - [Enable remote work in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 

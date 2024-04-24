@@ -116,7 +116,7 @@ The easiest way to create a hybrid table is to configure an incremental refresh 
 
 It's also possible to convert an Import table to a hybrid table by adding a DirectQuery partition using Tabular Model Scripting Language (TMSL) or the Tabular Object Model (TOM) or by using a third-party tool. For example, you can partition a fact table such that the bulk of the data is left in the data warehouse while only a fraction of the most recent data is imported. This approach can help to optimize performance if the bulk of this data is historical data that is infrequently accessed. A hybrid table can have multiple Import partitions, but only one DirectQuery partition.
 
-## Next steps
+## Related content
 
 - [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - [Using DirectQuery in Power BI](desktop-directquery-about.md)

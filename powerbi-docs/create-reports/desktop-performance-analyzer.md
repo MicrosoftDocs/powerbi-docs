@@ -80,7 +80,7 @@ You can save the information that Performance Analyzer creates about a report by
 
 ![Screenshot of the Save As window, showing the creation of a .json file.](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
-## Next steps
+## Related content
 
 For more information about **Power BI Desktop** and how to get started, see the following articles.
 

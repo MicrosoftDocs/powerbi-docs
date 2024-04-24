@@ -63,7 +63,7 @@ If a metric uses a status that is deleted, we preserve the metric’s deleted st
 
 You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for metrics to work seamlessly for your organization.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

@@ -7,7 +7,7 @@ ms.reviewer: v-asemenov
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/31/2022
+ms.date: 1/31/2024
 ---
 
 # Create custom Power BI visuals without data binding

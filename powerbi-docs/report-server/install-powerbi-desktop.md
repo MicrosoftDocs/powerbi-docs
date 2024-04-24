@@ -101,11 +101,11 @@ Power BI Desktop for Power BI Report Server does not support custom security. If
 
 When you save a Power BI report to Power BI Report Server, your Windows credentials are used. Saving directly to a report server in a different domain to your Windows credentials is not supported. You can use a web browser to view the report server and manually upload the file from your machine instead.
 
-## Next steps
+## Related content
 
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.
 
-[Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
-[What is Power BI Report Server?](get-started.md)
+- [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
+- [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

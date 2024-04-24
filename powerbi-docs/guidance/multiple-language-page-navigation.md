@@ -70,6 +70,6 @@ The multiple-language demo project contains buttons for navigation. To learn mor
 
 The report now has no visible tabs when you publish it to the Power BI service. The report opens to the **Sales Summary** page. Readers can move from page to page by using the buttons, which are localized by using the **Translated Localized Labels** table.
 
-## Next steps
+## Related content
 
 - [Guidance for Power BI](overview.md)

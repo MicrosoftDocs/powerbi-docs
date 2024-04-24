@@ -83,7 +83,7 @@ If you've never previously connected to the SharePoint site from Power BI, Power
 * This flow does not support business-to-business (B2B) scenarios or scenarios where authentication takes place against a service principal.
 * If the SharePoint service is configured to use multi-factor authentication, then in order for this flow to work, Power BI must also be configured to use multi-factor authentication. Consult your organization's IT support if you encounter a problem related to this consideration.
 
-## Next steps
+## Related content
 
 * [Semantic model details](./service-dataset-details-page.md)
 * [Share access to a semantic model](./service-datasets-share.md)

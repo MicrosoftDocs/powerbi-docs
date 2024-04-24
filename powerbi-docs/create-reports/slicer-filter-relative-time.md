@@ -89,7 +89,7 @@ The following considerations and limitations currently apply to the relative tim
 
 - **Query caching**: We use the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run unless you refresh the page or the page automatically refreshes.
 
-## Next steps
+## Related content
 
 - [Creating a relative date slicer and filter in Power BI](../visuals/desktop-slicer-filter-date-range.md)
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)

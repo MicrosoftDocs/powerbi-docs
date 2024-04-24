@@ -101,9 +101,9 @@ However, overlapping report items are *not* supported in HTML, MHTML, Word, Exce
   
  For more information about subreports, see [Subreports in Power BI paginated reports](../subreports.md).  
   
-## Next steps 
+## Related content 
 
- [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)
- [Rendering behaviors in a paginated report (Power BI Report Builder)](render-behaviors-report-builder-service.md)
- [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
- [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)
+* [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)
+* [Rendering behaviors in a paginated report (Power BI Report Builder)](render-behaviors-report-builder-service.md)
+* [Interactive Functionality for Different Report Rendering Extensions &#40;Report Builder and SSRS&#41;](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+* [Tables, matrixes, and lists in Power BI Report Builder](../report-builder-tables-matrices-lists.md)

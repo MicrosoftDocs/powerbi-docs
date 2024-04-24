@@ -5,40 +5,10 @@
   - name: Known issues
     expanded: false
     items:
-    - name: Active known issues for Power BI - chart
-      href: known-issues/power-bi-known-issues.md
+    - name: Active known issues for Power BI + Fabric - chart
+      href: /fabric/get-started/fabric-known-issues
     - name: Active known issues for Fabric + Power BI - interactive report
       href: https://support.fabric.microsoft.com/known-issues
-    - name: Contributor can't update organizational app
-      href: known-issues/known-issue-571-contributor-can-not-update-organizational-app.md
-    - name: Version 17 of the Fabric Capacity Metrics app doesn't work
-      href: known-issues/known-issue-570-version-17-capacity-metrics-app-does-not-work.md
-    - name: Autoscale not triggered by carry forward accumulated usage
-      href: known-issues/known-issue-552-autoscale-not-triggered-carry-forward-accumulated-usage.md
-    - name: Closing a Dataflow Gen1 takes you to the wrong workspace
-      href: known-issues/known-issue-546-closing-dataflow-gen1-takes-wrong-workspace.md
-    - name: New card visual formatting appears or disappears in Service
-      href: known-issues/known-issue-535-new-card-visual-formatting-appears-disappears.md
-    - name: Unable to sign in on 32-bit Power BI Desktop
-      href: known-issues/known-issue-533-unable-sign-in-32-bit-desktop.md
-    - name: Sign in fails for securely embedded reports using Chrome or Microsoft Edge browser
-      href: known-issues/known-issue-532-sign-in-fails-securely-embedded-reports-using-chrome-browser.md
-    - name: Dataflow REST API returns more data sources and gateways than expected
-      href: known-issues/known-issue-526-dataflow-rest-api-returns-more-data-sources-gateways.md
-    - name: Combo chart custom labels don't display
-      href: known-issues/known-issue-523-combo-chart-custom-labels-dont-display.md
-    - name: Failures in the Fabric Capacity Metrics app
-      href: known-issues/known-issue-522-failures-fabric-capacity-metrics-app.md
-    - name: Export to CSV file truncated at 300 rows
-      href: known-issues/known-issue-498-export-csv-file-truncated-300-rows.md
-    - name: Desktop sign-in prompt shows unsupported personal Microsoft accounts
-      href: known-issues/known-issue-482-desktop-sign-in-prompt-shows-unsupported-personal-microsoft-accounts.md
-    - name: Power BI Embedded setup tool isn't responsive
-      href: known-issues/known-issue-471-embedded-setup-tool-isnt-responsive.md
-    - name: A scheduled refresh of a semantic model intermittently hangs when connected to a dataflow
-      href: known-issues/known-issue-461-scheduled-refresh-dataset-hangs.md   
-    - name: Search strings with Japanese symbols won't return content in search results
-      href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
   - name: Troubleshoot
     expanded: true
     items:

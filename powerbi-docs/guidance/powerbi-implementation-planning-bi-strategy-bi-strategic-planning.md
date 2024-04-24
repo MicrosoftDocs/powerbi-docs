@@ -1,46 +1,43 @@
 ---
 title: "Power BI implementation planning: BI strategic planning"
-description: "This article helps you to define your business intelligence goals and priorities through strategic planning."
-author: peter-myers
-ms.author: v-myerspeter
+description: "This article helps you to define your business intelligence focus areas and objectives through strategic planning."
+author: data-goblin
+ms.author: v-kurtbuhler
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 09/09/2023
+ms.date: 01/24/2024
 ---
 
 # Power BI implementation planning: BI strategic planning
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This article helps you to define your business intelligence (BI) goals and priorities through strategic planning. It's primarily targeted at:
+This article helps you to define your business intelligence (BI) focus areas and objectives through strategic planning. It's primarily targeted at:
 
 - **BI and analytics directors or managers:** Decision makers who are responsible for overseeing the BI program and BI strategic planning.
-- **Center of Excellence (COE), IT, and BI teams:** The teams that are responsible for tactical planning, and for measuring and monitoring progress toward the BI objectives.
+- **Center of Excellence (COE), IT, and BI teams:** The teams that are responsible for tactical planning, and for measuring and monitoring progress toward the BI goals.
 - **Subject matter experts (SMEs) and content owners and creators:** The teams and individuals that champion analytics in a team or department and conduct BI solution planning. These teams and individuals are responsible for representing the strategy and data needs of their business area when you define the BI strategy.
 
 A BI strategy is a plan to implement, use, and manage data and analytics. As described in the [BI strategy overview](powerbi-implementation-planning-bi-strategy-overview.md) article, your BI strategy is a subset of your data strategy. It supports your business strategy by enabling business users to make decisions and take actions by using data and BI solutions more effectively.
 
-In short, this article describes how you can perform strategic planning to define the goals and priorities of your BI strategy.
+In short, this article describes how you can perform strategic planning to define the focus areas and objectives of your BI strategy.
 
-> [!NOTE]
-> In this series, we define _goals_ as high-level descriptions of what you want to achieve. In contrast, _objectives_ are specific, actionable targets that help you achieve a goal. While a goal describes the desired future state, objectives describe the path to get there.
->
-> Further, we define _solutions_ as processes or tools built to address specific business needs for users. A solution can take many forms, such as a data pipeline, a data lakehouse, a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report.
+[!INCLUDE [powerbi-implementation-planning-bi-strategy-context](includes/powerbi-implementation-planning-bi-strategy-context.md)]
 
 The following high-level diagram depicts how to conduct BI strategic planning.
 
 :::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-levels.svg" alt-text="Diagram shows an overview of strategic, tactical, and solution planning for business intelligence. Strategic planning is highlighted. The details about strategic planning are described in the table below." border="false":::
 
-You take the following steps to define your strategic BI goals and priorities.
+You take the following steps to define your strategic BI focus areas and objectives.
 
 | **Step** | **Description** |
 | :-: | --- |
 | **1** | Establish a working team to lead the BI strategy initiative. |
 | **2** | Establish business alignment by conducting research and workshops to gather information about the business objectives and data needs, and also existing BI solutions and initiatives. |
 | **3** | Complete a current state assessment by running a series of strategic planning workshops with key stakeholders. |
-| **4** | Use the assessments and stakeholder input to decide on the strategic BI goals and priorities. |
+| **4** | Use the assessments and stakeholder input to decide on the strategic BI focus areas and objectives. |
 
 This article describes each step of the BI strategic planning process.
 
@@ -48,7 +45,7 @@ This article describes each step of the BI strategic planning process.
 
 Your first step when defining your BI strategy is to establish a _working team_. A working team leads the initiative to describe and plan the BI strategy. It's a cross-functional group of experts that's enabled by the support of the executive sponsor. The group should have a deep understanding of technical and business processes across the organization.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-1.svg" alt-text="Diagram shows step 1 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 1 is about assembling a working team." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-1.svg" alt-text="Diagram shows step 1 in a series of four steps to define BI focus areas and objectives with BI strategic planning. Step 1 is about assembling a working team." border="false":::
 
 Ideally, the working team should represent each department, business unit, and region that's in scope for the initiative.
 
@@ -60,7 +57,7 @@ The diagram depicts the following roles.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) typically provides top-down goals and support of the working team, including funding. The executive sponsor might also appoint the working team members together with the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md). |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) typically provides top-down objectives and support of the working team, including funding. The executive sponsor might also appoint the working team members together with the [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md). |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | A COE or central BI team confers with the executive sponsor to identify and appoint working team members. The COE might also provide guidance to the working team to support their activities. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | COE members form part of the working team. They're responsible for using their BI expertise to drive BI information gathering and complete the current state assessments. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Business SMEs form part of the working team. They represent the interests of their department or business unit. SMEs are responsible for driving business strategy information gathering. |
@@ -73,13 +70,13 @@ The diagram depicts the following roles.
 > Not all roles depicted in the diagram have to be present in the working team. Involve roles that are relevant for the scope and scale of your BI strategy initiative.
 
 > [!IMPORTANT]
-> Defining the BI strategy is a significant undertaking. It's important that working team members understand what's expected of them, and that they have the resources and time to fulfill their role. An engaged executive sponsor can help by clarifying priorities and ensuring that all required resources are available.
+> Defining the BI strategy is a significant undertaking. It's important that working team members understand what's expected of them, and that they have the resources and time to fulfill their role. An engaged executive sponsor can help by clarifying focus areas and ensuring that all required resources are available.
 
 Working team members are typically appointed and guided by an executive sponsor of BI and analytics, like the [Power BI executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md). Identifying and engaging an executive sponsor is the first step of a BI strategy initiative.
 
 ### Identify and engage an executive sponsor
 
-A key role of the [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) is to help formulate strategic BI goals and priorities. The executive sponsor is an individual in a position of senior, strategic leadership who has an invested stake in BI efforts and the BI strategy. They provide top-down guidance and reinforcement by regularly promoting, motivating, and investing in the BI strategy.
+A key role of the [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md) is to help formulate strategic BI focus areas and objectives. The executive sponsor is an individual in a position of senior, strategic leadership who has an invested stake in BI efforts and the BI strategy. They provide top-down guidance and reinforcement by regularly promoting, motivating, and investing in the BI strategy.
 
 In addition to the many [activities listed in the adoption roadmap](fabric-adoption-roadmap-executive-sponsorship.md), an executive sponsor plays a key role in BI strategic planning by:
 
@@ -90,7 +87,7 @@ In addition to the many [activities listed in the adoption roadmap](fabric-adopt
   - Promoting the BI strategy initiative with announcements or public endorsement.
   - Motivating action and change to progress the BI strategy initiative.
   - Representing the working team and sharing the BI strategic plan among C-level executives to obtain executive feedback.
-- **Making strategic decisions:** They make decisions about priorities, goals, and desired outcomes.
+- **Making strategic decisions:** They make decisions about what should be the focus areas, objectives, and key results.
 
 > [!TIP]
 > Before assembling the working team, you should first identify and engage an [executive sponsor](fabric-adoption-roadmap-executive-sponsorship.md). Work through [this checklist](fabric-adoption-roadmap-executive-sponsorship.md#considerations-and-key-actions) to ensure that you take the necessary actions to ensure a sufficiently engaged executive sponsor.
@@ -99,7 +96,7 @@ In addition to the many [activities listed in the adoption roadmap](fabric-adopt
 
 Because the working team contains members from different business areas, the composition of the working team will depend on the scope of your BI initiative. Typically, a BI strategy encompasses many areas of an organization. However, you should refine this scope to define the specific areas it should address. You might limit the scope of your BI strategy initiative for two reasons.
 
-- **Practical reasons:** A successful BI strategy starts small and simple, achieving incremental growth as you experience success. When you first define the BI strategy, focus on priority areas so that you achieve quick wins and sustainable, incremental progress.
+- **Practical reasons:** A successful BI strategy starts small and simple, achieving incremental growth as you experience success. When you first define the BI strategy, focus on key areas so that you achieve quick wins to demonstrate value, while achieving sustainable, incremental progress.
 - **Strategic reasons:** You can have distinct initiatives for different business areas. For example, different parts of the organization might require independent BI strategies because their business strategies are sufficiently different. These independent strategies should align with an overall BI strategy, whenever possible.
 
 As part of the scoping exercise, you should also plan how you'll set expectations with stakeholders that the BI strategy will be defined iteratively.
@@ -112,13 +109,13 @@ The responsibilities of the working team include:
 
 - **Planning and preparation:** The working team should plan and prepare the various aspects of the BI strategy initiative, such as:
   - Defining the timelines, deliverables, and milestones for the initiative.
-  - Identifying stakeholders who can accurately describe the business goals and objectives of their respective departments.
+  - Identifying stakeholders who can accurately describe the business objectives and goals of their respective departments.
   - Communication with stakeholders, the executive sponsor, and each other.
 - **Information gathering:** The working team should gather sufficient information to accurately assess the current state of the BI implementation. Examples of information gathering activities include:
   - Conducting independent research about the business context and existing BI solutions or initiatives.
   - Running interactive workshops with stakeholders to elicit input about business objectives and data needs.
   - Documenting summarized findings and sharing conclusions.
-- **Feedback and follow-up:** The working team summarizes the findings from the information gathered and proposes BI goals, priorities, and next steps. It gathers feedback and follows up by:
+- **Feedback and follow-up:** The working team summarizes the findings from the information gathered and proposes BI objectives, focus areas, and next steps. It gathers feedback and follows up by:
   - Assessing the current state of BI adoption and implementation.
   - Creating a prioritized list of business data needs.
   - Presenting their conclusions and proposed next steps to stakeholders and executive leadership.
@@ -228,7 +225,7 @@ After you assemble the working team (step 1), the newly assembled working team c
 
 These activities are prerequisites for the workshops and complete assessments (step 3).
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-2.svg" alt-text="Diagram shows step 2 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 2 is about planning workshops and conducting research." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-2.svg" alt-text="Diagram shows step 2 in a series of four steps to define BI focus areas and objectives with BI strategic planning. Step 2 is about planning workshops and conducting research." border="false":::
 
 ### Conduct independent research
 
@@ -236,13 +233,13 @@ The working team conducts research to document the current state of BI adoption 
 
 #### Research the business context
 
-To define an effective BI strategy, the working team must understand the business goals. By understanding the business goals, the working team has the right business context to describe why people use data and BI tools, and comprehension of their desired outcomes. You should define data needs and use cases with respect to the business processes they support and the objectives they address.
+To define an effective BI strategy, the working team must understand the business objectives. By understanding the business objectives, the working team has the right business context to describe why people use data and BI tools, and comprehension of their desired outcomes. You should define data needs and use cases with respect to the business processes they support and the goals they address.
 
 Business SMEs in the working team should use their expertise to lead the effort to describe the business context. However, it's important that all members of the working team participate. It's essential that the working team has a shared understanding of the business strategy. That way, the BI strategy focuses on addressing business needs instead of solving abstract, technical problems.
 
 #### Research existing BI initiatives and solutions
 
-To define an effective BI strategy, the working team must also understand the current state of BI adoption and implementation. The current state describes how people use existing data and BI tools, and what data and tools are strategically important. You should identify the existing BI initiatives and solutions with respect to the business processes they support and objectives they address. These solutions help illustrate what business users do today to address their data needs, so that you can assess whether it's effective.
+To define an effective BI strategy, the working team must also understand the current state of BI adoption and implementation. The current state describes how people use existing data and BI tools, and what data and tools are strategically important. You should identify the existing BI initiatives and solutions with respect to the business processes they support and goals they address. These solutions help illustrate what business users do today to address their data needs, so that you can assess whether it's effective.
 
 COE members in the working team should use their expertise to lead the effort to describe the current state of BI adoption and implementation. An example of an activity that helps this effort is [tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md). Auditing allows the working team to collect an inventory of current BI initiatives and solutions to prepare for workshops.
 
@@ -260,20 +257,20 @@ The diagram depicts the following concepts and processes.
 | **Item** | **Description** |
 | :-: | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The working team researches the business context to document and understand the business strategy. This research is led by business SMEs for their respective departments or business units. |
-| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The working team researches the business context by first identifying the business goals. |
-| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The working team identifies specific business objectives that departments or business units have to make progress toward with their goals. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The working team researches the business context by first identifying the business objectives. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The working team identifies specific business objectives that departments or business units have to make progress toward with their objectives. |
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Business processes are initiatives or plans created to work toward business objectives. The working team identifies the processes in place to help achieve the business objectives. |
-| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Business data needs are the data, tools, and solutions required to support business processes and strategic objectives. The working team identifies the business data needs. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Business data needs are the data, tools, and solutions required to support business processes and strategic goals. The working team identifies the business data needs. |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | The working team researches any existing BI initiatives and solutions to understand the current state of BI adoption and implementation. COE members or BI experts lead this research. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | The working team investigates strategically important BI solutions to understand how the organization currently addresses business data needs. Specifically, the working team identifies who the business users are, how they use the solutions. The working team also documents key data questions or problems that these solutions address, and also potential flaws, opportunities, and inefficiencies. |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | The working team surveys and documents the existing tools and technologies that the organization uses to address business data needs. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | The working team identifies past or parallel initiatives to define the BI strategy. Past initiatives might contain valuable learnings, while parallel initiatives could be combined to avoid duplication of effort. |
-| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | The working team identifies strategically important KPIs and master data. These KPIs and master data are critical to enabling the business to achieve their business objectives. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | The working team identifies strategically important calculations and master data. These calculations and master data are critical to enabling the business to achieve their business objectives. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | The working team assesses the usage and adoption of strategically important BI solutions among the user community. |
 | ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | The working team identifies any potential governance and compliance risks identified in existing BI solutions. |
 
 > [!IMPORTANT]
-> The topics and examples presented in this section are intended to guide you in conducting your own independent research. These topics aren't an exhaustive or required list. Use these topics as inspiration. We recommend that you use the [maturity levels](fabric-adoption-roadmap-maturity-levels.md) documented in the Fabric adoption roadmap to help you evaluate and prioritize areas that are most important for your organization and its business context.
+> The topics and examples presented in this section are intended to guide you in conducting your own independent research. These topics aren't an exhaustive or required list. Use these topics as inspiration. We recommend that you use the [maturity levels](fabric-adoption-roadmap-maturity-levels.md) documented in the Fabric adoption roadmap to help you evaluate and focus upon areas that are most important for your organization and its business context.
 
 Taken together, research on the business context and existing BI initiatives and solutions describe the current state of BI adoption and implementation. The working team verifies this research in workshops when capturing stakeholder input.
 
@@ -282,7 +279,7 @@ Taken together, research on the business context and existing BI initiatives and
 While performing independent research, you should plan workshops with stakeholders. The purpose of these workshops is to gather input about the business objectives and data needs. You also validate the conclusions from independent research in these workshops.
 
 > [!NOTE]
-> This article uses the term _workshops_ to describe interactive meetings with key stakeholders. The objective of the workshops is to gather input so you can accurately describe and understand the objectives and data needs.
+> This article uses the term _workshops_ to describe interactive meetings with key stakeholders. The goal of the workshops is to gather input so you can accurately describe and understand the goals and data needs.
 
 The following sections describe key considerations for planning and preparing workshops.
 
@@ -293,7 +290,7 @@ Successful BI strategic planning requires the working team to involve the right 
 Identifying the right stakeholders is essential in order to run successful workshops and gain an accurate understanding of the business areas in scope.
 
 > [!WARNING]
-> If you engage the wrong stakeholders, there's significant risk that the BI strategy won't align with strategic business goals or support business users to achieve their objectives.
+> If you engage the wrong stakeholders, there's significant risk that the BI strategy won't align with strategic business objectives or support business users to achieve their goals.
 
 The following diagram depicts the process to identify and inform the right key stakeholders about the BI strategy initiative.
 
@@ -312,8 +309,8 @@ The diagram depicts the following steps.
 When you initially request key stakeholder participation, ensure that you:
 
 - Obtain approval from their manager, as appropriate.
-- Explain the scope of the initiative, and its objectives, timelines, and deliverables.
-- Describe specifically why they've been asked to participate and what the desired outcomes are.
+- Explain the scope of the initiative, and its goals, timelines, and deliverables.
+- Describe specifically why they've been asked to participate and what the desired outcomes of the initiative are.
 - Outline the necessary time commitment and participation that you need from them.
 - Communicate clearly and concisely.
 
@@ -336,16 +333,16 @@ When you initially request key stakeholder participation, ensure that you:
 
 ## Step 3: Run workshops and complete assessments
 
-After you complete independent research and workshop planning (step 2), you run the workshops and complete the assessments. The goal of the workshops is to use stakeholder input to document:
+After you complete independent research and workshop planning (step 2), you run the workshops and complete the assessments. The objective of the workshops is to use stakeholder input to document:
 
-- The business goals, strategy, and data needs of the in-scope business areas.
+- The business objectives, strategy, and data needs of the in-scope business areas.
 - The current state of BI adoption and implementation for the in-scope business areas.
 
 The working team combines the stakeholder input together with independent research. These inputs should provide the working team with a sufficient understanding of the business strategy and the current state of BI adoption and implementation.
 
-With this understanding, the working team evaluates the maturity and effectiveness of the current state of BI adoption and implementation. This evaluation is summarized in a data culture assessment and a technical assessment, which are the key outputs of the workshops. The objective of these assessments is to clearly identify both weaknesses and opportunities in the data culture, and technical areas that should be prioritized for the BI strategy.
+With this understanding, the working team evaluates the maturity and effectiveness of the current state of BI adoption and implementation. This evaluation is summarized in a data culture assessment and a technical assessment, which are the key outputs of the workshops. The goal of these assessments is to clearly identify both weaknesses and opportunities in the data culture, and technical areas that should be a focus for the BI strategy.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-3.svg" alt-text="Diagram shows step 3 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 3 is about running workshops and completing assessments." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-3.svg" alt-text="Diagram shows step 3 in a series of four steps to define BI focus areas and objectives with BI strategic planning. Step 3 is about running workshops and completing assessments." border="false":::
 
 > [!IMPORTANT]
 > If no working team members have experience running and moderating interactive meetings or workshops, the working team should first undertake training or seek support to help run the workshops.
@@ -358,9 +355,9 @@ The following sections describe the types of sessions you typically conduct when
 
 #### Introduction session
 
-The introduction session is run by the working team, and it should involve all stakeholders and the executive sponsor. It introduces the initiative and clarifies the scope, objectives, timeline, and deliverables.
+The introduction session is run by the working team, and it should involve all stakeholders and the executive sponsor. It introduces the initiative and clarifies the scope, goals, timeline, and deliverables.
 
-The objective of this session is to set expectations about the purpose of the workshops and what's needed for the BI initiative to succeed.
+The goal of this session is to set expectations about the purpose of the workshops and what's needed for the BI initiative to succeed.
 
 #### Workshops
 
@@ -369,7 +366,7 @@ Workshops are interactive meetings between a few members of the working team and
 > [!NOTE]
 > While a moderator should be proficient in eliciting information, they don't require deep domain knowledge. Ideally, all workshops for a given business area should be led by the same moderator.
 
-The objective of the workshops is to collect sufficient input from stakeholders to accurately describe their business objectives and data needs. A successful workshop concludes with stakeholders feeling that the working team members understand the business objectives and data needs. This stakeholder input is used together with the working team's independent research to complete an assessment of the current state of BI adoption and implementation.
+The goal of the workshops is to collect sufficient input from stakeholders to accurately describe their business objectives and data needs. A successful workshop concludes with stakeholders feeling that the working team members understand the business objectives and data needs. This stakeholder input is used together with the working team's independent research to complete an assessment of the current state of BI adoption and implementation.
 
 Here are some practical considerations to help you plan and organize effective workshops.
 
@@ -377,25 +374,25 @@ Here are some practical considerations to help you plan and organize effective w
 - **Keep the discussion focused:** Take any debates, excessively specific questions, or remarks offline to discuss later in short one-on-one meetings. Similarly, identify and address any resistance directly, and involve the executive sponsor whenever necessary. Keeping the discussion focused ensures that workshops concentrate on the overall discussion of strategic planning, and they don't get distracted by small details.
 - **Be flexible with preparation:** Depending on time and preference, you can use prepared material to conduct more effective discussion. However, understand that discussions could go in unexpected directions. If a session departs from your prepared material but still produces helpful input, don't force the discussion back to a fixed agenda. When stakeholders are focused on a different point, it means that it's important. Be flexible by addressing these points to capture the most valuable input.
 - **Document stakeholder input:** During the workshops, you should document stakeholders' inputs about their business objectives and the BI strategy.
-- **Document business data needs:** One outcome of workshop information gathering is a high-level list of the unmet business data needs. You should first organize the list from the highest to lowest priority. Determine these priorities based on stakeholder input, and the impact the list items have on business effectiveness.
+- **Document business data needs:** One outcome of workshop information gathering is a high-level list of the unmet business data needs. You should first organize the list from the highest to lowest priority. Determine these focus areas based on stakeholder input, and the impact the list items have on business effectiveness.
 
 > [!NOTE]
 > The list of prioritized data needs is a key outcome of strategic planning that later facilitates [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md) and [solution planning](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md).
 
 ### Complete assessments
 
-The working team should combine independent research and the stakeholder input into summarized findings. These objective findings should convey an accurate description of the current state of BI adoption and implementation (for conciseness, referred to as _the current state_). For each business area in scope, these findings should describe:
+The working team should combine independent research and the stakeholder input into summarized findings. These goal findings should convey an accurate description of the current state of BI adoption and implementation (for conciseness, referred to as _the current state_). For each business area in scope, these findings should describe:
 
-- Business goals.
-- Business objectives to make progress towards their goals.
-- Business processes and initiatives to achieve their objectives.
-- Business data needs to support the processes and initiatives.
+- Business objectives.
+- Business key results to measure progress towards their objectives.
+- Business key initiatives, which are intended to achieve their key results.
+- Business data needs to support the key initiatives.
 - BI tools and solutions that people use to address their business data needs.
 - How people use the tools and solutions, and any challenges that prevent them from using the tools and solutions effectively.
 
-With an understanding of the current state, the working team should then proceed to assess the overall BI maturity and its effectiveness in supporting the business strategy. These assessments address specific data culture and technical areas. They also help you to define your priorities by identifying weaknesses and opportunities that you'll prioritize in your BI strategy. To address these weaknesses and opportunities, you define high-level, strategic BI goals.
+With an understanding of the current state, the working team should then proceed to assess the overall BI maturity and its effectiveness in supporting the business strategy. These assessments address specific data culture and technical areas. They also help you to identify weaknesses and opportunities that you'll focus on in your BI strategy. To address these weaknesses and opportunities, you define high-level, strategic BI objectives.
 
-To help identify priorities, the working team conducts two types of assessment: a data culture assessment and a technical assessment.
+To help identify focus areas, the working team conducts two types of assessment: a data culture assessment and a technical assessment.
 
 #### Contents of an assessment
 
@@ -416,8 +413,8 @@ The data culture assessment evaluates the current state of BI adoption. In order
 
 1. **Review summarized findings:** The working team reviews the inputs collected from conducting independent research and running workshops.
 1. **Evaluate the maturity levels:** The working team proceeds through each of the data culture areas described in this section. Using the [Fabric adoption roadmap](fabric-adoption-roadmap.md), they evaluate the effectiveness of each area by assigning a maturity score.
-1. **Justify the subjective evaluation with objective evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
-1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's data culture. It can be the lowest-scoring or highest-scoring areas, or any areas that they feel have a high impact on the organization's data culture. These key areas will be used to identify the BI goals and priorities.
+1. **Justify the subjective evaluation with goal evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
+1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's data culture. It can be the lowest-scoring or highest-scoring areas, or any areas that they feel have a high impact on the organization's data culture. These key areas will be used to identify the BI focus areas and objectives.
 
 > [!TIP]
 > Use the [Fabric adoption roadmap](fabric-adoption-roadmap.md) to guide you when completing the data culture assessment. Also, consider other factors specific to your organizational culture and the ways your users work. If you're looking for more information, consult other reputable sources like the [Data Management Body of Knowledge (DMBOK)](https://www.dama.org/cpages/body-of-knowledge).
@@ -451,12 +448,12 @@ To evaluate these data culture areas, see the [Fabric adoption roadmap](fabric-a
 
 The technical assessment evaluates technical areas that strategically enable the success of BI implementation. The purpose of this assessment isn't to audit individual technical solutions or assess the entirety of technical areas related to BI. Instead, the working team describes the maturity level and general effectiveness for strategically critical areas, like those described in this section. To complete this assessment, the working team performs the following tasks.
 
-1. **Identify technical areas:** The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and show in the following diagram.
+1. **Identify technical areas:** The working team identifies specific technical areas that are relevant and strategically important to the success of BI to include in their assessment. Some examples of technical areas are described in this section and shown in the following diagram.
 1. **Define maturity levels:** The working team defines the maturity levels to score the high-level effectiveness for each technical area in the assessment. These maturity levels should follow a consistent scale, such as those found in the template provided in the [maturity levels of the Fabric adoption roadmap](fabric-adoption-roadmap-maturity-levels.md).
 1. **Review summarized findings:** The working team reviews the collected inputs by conducting independent research and running workshops.
 1. **Evaluate the maturity levels:** The working team evaluates the effectiveness of each area by assigning a maturity score.
-1. **Justify the subjective evaluation with objective evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
-1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's BI implementation. It can be the lowest-scoring technical areas, or any areas that they feel have a high impact on the organization's strategic success with implementing BI tools and processes. These key areas will be used to identify the BI goals and priorities.
+1. **Justify the subjective evaluation with goal evidence:** The working team describes several key business cases and supporting information that justifies their evaluation of the maturity scores for each area.
+1. **Identify weaknesses and opportunities:** The working team highlights or documents specific findings that could reflect a particular strength or challenge in the organization's BI implementation. It can be the lowest-scoring technical areas, or any areas that they feel have a high impact on the organization's strategic success with implementing BI tools and processes. These key areas will be used to identify the BI focus areas and objectives.
 
 The following diagram depicts technical areas that you might assess when defining your BI strategy.
 
@@ -488,7 +485,7 @@ The diagram depicts the following technical areas.
 > The technical areas depicted in the diagram aren't all necessarily part of BI; instead some are strategic enablers of a successful BI implementation. Further, these areas don't represent an exhaustive list. Be sure to identify and assess the technical areas that are strategically important for your organization.
 
 > [!CAUTION]
-> When performing the technical assessment, don't assess details beyond the scope of strategic planning. Ensure that all activities that investigate the BI implementation focus directly on defining and evaluating the current state to define your BI goals and priorities.
+> When performing the technical assessment, don't assess details beyond the scope of strategic planning. Ensure that all activities that investigate the BI implementation focus directly on defining and evaluating the current state to define your BI focus areas and objectives.
 >
 > Getting too detailed in the technical assessment risks diluting key messages about the BI strategy. Always keep in mind the big picture questions like: _Where do we want to go?_ and _How can BI effectively support the business?_
 
@@ -498,37 +495,37 @@ The diagram depicts the following technical areas.
 
 > [!div class="checklist"]
 > - **Decide and communicate the workshop format:** Outline the number of sessions, their length, participants, and other relevant details for participating stakeholders.
-> - **Nominate a moderator from the working team:** Decide who from the working team will moderate the workshops. Their goal is to guide discussions and elicit information.
+> - **Nominate a moderator from the working team:** Decide who from the working team will moderate the workshops. Their objective is to guide discussions and elicit information.
 > - **Collect input:** Organize the workshops so that you collect sufficient input about the business strategy and the current state of BI implementation and adoption.
 > - **Summarize findings:** Document the inputs that justify the assessments. Include specific business cases that illustrate strategically important processes and solutions.
 > - **Complete the maturity assessments:** Complete the relevant assessments for the current state of BI adoption and implementation.
-> - **Document business cases and supporting information:** Objectively document the evidence used to justify the maturity levels you assign in each assessment.
+> - **Document business cases and supporting information:** goally document the evidence used to justify the maturity levels you assign in each assessment.
 
-## Step 4: Decide on the BI goals and priorities
+## Step 4: Decide on the BI focus areas and objectives
 
-After you run the workshops and complete assessments (step 3), the working team, together with the executive sponsor, decide on the BI goals and priorities to address in tactical planning.
+After you run the workshops and complete assessments (step 3), the working team, together with the executive sponsor, decide on the BI focus areas and objectives to address in tactical planning.
 
-:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-4.svg" alt-text="Diagram shows step 4 in a series of four steps to define BI goals and priorities with BI strategic planning. Step 4 is about deciding on the BI goals and priorities." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-bi-strategy-bi-strategic-planning/bi-strategic-planning-step-4.svg" alt-text="Diagram shows step 4 in a series of four steps to define BI focus areas and objectives with BI strategic planning. Step 4 is about deciding on the BI focus areas and objectives." border="false":::
 
 > [!NOTE]
-> While the working team should be involved in clarifying and documenting goals and priorities, it isn't responsible for defining them. The executive sponsor and equivalent decision makers own these decisions. The executive sponsor and other decision makers have the authority to decide and allocate resources to deliver on these goals and priorities.
+> While the working team should be involved in clarifying and documenting focus areas and objectives, it isn't responsible for defining them. The executive sponsor and equivalent decision makers own these decisions. The executive sponsor and other decision makers have the authority to decide and allocate resources to deliver on these focus areas and objectives.
 
-### Decide on strategic priorities
+### Decide on strategic focus areas
 
-The assessments should clearly identify weaknesses and opportunities in the data culture or technical areas to prioritize for the BI strategy. From the weaknesses and opportunities in the assessments, work with key decision makers, like your executive sponsor, to decide which of the areas are priorities you'll focus on in the short-term. By prioritizing, you aim for sustainable, incremental progress toward your BI goals.
+The assessments should clearly identify weaknesses and opportunities in the data culture or technical areas to focus on for the BI strategy. From the weaknesses and opportunities in the assessments, work with key decision makers, like your executive sponsor, to decide which of the areas are focus areas you'll aim to improve in the short-term. With this focus, you aim for sustainable, incremental progress toward your BI objectives.
 
-### Decide on strategic BI goals
+### Decide on strategic BI objectives
 
-In the last step of BI strategic planning, for each of the prioritized areas, the working team usually defines several goals to work toward in the next 12-18 months. Typically, these goals represent the desired outcomes and maturity level growth.
+In the last step of BI strategic planning, for each of the focus areas, the working team defines several objectives to work toward in the next 12-18 months. Typically, these objectives represent the envisioned future state and maturity level growth.
 
 > [!TIP]
-> For data culture areas, we recommend that you define your goals by using the [Fabric adoption roadmap](fabric-adoption-roadmap.md). It can help you to identify the maturity level you should aim to achieve for your desired future state. However, it's not realistic to aim for a level 500 for each category. Instead, aim for an achievable maturity level increase in the next planning period.
+> For data culture areas, we recommend that you define your objectives by using the [Fabric adoption roadmap](fabric-adoption-roadmap.md). It can help you to identify the maturity level you should aim to achieve for your desired future state. However, it's not realistic to aim for a level 500 for each category. Instead, aim for an achievable maturity level increase in the next planning period.
 
-For technical areas, we recommend that you define your goals by using the maturity scales described in the [technical assessment](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-technical-assessment) by the working team.
+For technical areas, we recommend that you define your objectives by using the maturity scales described in the [technical assessment](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#complete-the-technical-assessment) by the working team.
 
-#### Examples of strategic BI goals
+#### Examples of strategic BI objectives
 
-Here are some examples of strategic BI goals.
+Here are some examples of strategic BI objectives.
 
 - Improve executive support of BI initiatives and solutions.
 - Improve the effectiveness of the COE.
@@ -538,11 +535,11 @@ Here are some examples of strategic BI goals.
 - Improve decision-making processes with more effective data visualization.
 - Expand the number of effective content creators to improve time-to-delivery and the business value obtained from BI solutions.
 
-Before you conclude strategic planning, the working team should align the decided BI goals and priorities with stakeholders and executives.
+Before you conclude strategic planning, the working team should align the decided BI focus areas and objectives with stakeholders and executives.
 
 ### Align with stakeholders and executives
 
-It's critical that the final assessments and decisions be shared with stakeholders. In the communication hub, stakeholders can asynchronously follow up on the progress of these deliverables and contribute feedback. However, you should conclude strategic planning by presenting the assessments and priorities back to stakeholders and executives.
+It's critical that the final assessments and decisions be shared with stakeholders. In the communication hub, stakeholders can asynchronously follow up on the progress of these deliverables and contribute feedback. However, you should conclude strategic planning by presenting the assessments and focus areas back to stakeholders and executives.
 
 The following sections describe how you align with stakeholders and executives.
 
@@ -550,31 +547,31 @@ The following sections describe how you align with stakeholders and executives.
 
 The alignment session is the final meeting for each business area. Each alignment session involves key stakeholders and the executive sponsor, who review the assessments made by the working team.
 
-The objective of this session is to achieve consensus about the conclusions and assessments, and the agreed BI goals and priorities.
+The goal of this session is to achieve consensus about the conclusions and assessments, and the agreed BI focus areas and objectives.
 
 > [!NOTE]
 > Ensure that stakeholders understand that the BI strategy isn't final and unchanging. Emphasize that the BI strategy evolves alongside the business and technology. Ideally, the same stakeholders will continue to take part in this iterative exercise.
 
 #### Prepare and present an executive summary
 
-The executive summary is typically delivered by the executive sponsor to other executives responsible for the overall business strategy. The executive sponsor describes the assessment results and outlines the key challenges and opportunities that justify the priority decisions. Importantly, the executive sponsor describes the next steps to define the future state.
+The executive summary is typically delivered by the executive sponsor to other executives responsible for the overall business strategy. The executive sponsor describes the assessment results and outlines the key challenges and opportunities that justify the focus areas identified. Importantly, the executive sponsor describes the next steps to start making actionable progress toward the future state.
 
-The objective of this session is to obtain executive alignment and approval on the outcomes of strategic planning and the next steps.
+The goal of this session is to obtain executive alignment and approval on the outcomes of strategic planning and the next steps.
 
 ### Proceed with tactical planning
 
-Once you've identified your BI goals and priorities, you have concluded strategic planning. The next step is to identify objectives to help you make progress towards your BI goals, which you do by conducting [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md).
+Once you've identified your BI focus areas and objectives, you have concluded strategic planning. The next step is to identify goals to help you make progress towards your BI objectives, which you do by conducting [tactical planning](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md).
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-**Checklist** – When deciding BI goals and priorities, key decisions and actions include:
+**Checklist** – When deciding BI focus areas and objectives, key decisions and actions include:
 
 > [!div class="checklist"]
 > - **Curate a list of business data needs and opportunities:** Create a consolidated, prioritized list of the business data needs, pain points, and opportunities. This output is used in tactical planning.
-> - **Decide on the strategic BI goals:** Work with your executive sponsor and other decision makers to identify high-level BI goals for the next 12-18 months.
+> - **Decide on the strategic BI objectives:** Work with your executive sponsor and other decision makers to identify high-level BI objectives for the next 12-18 months.
 > - **Align with stakeholders:** Obtain consensus agreement that the assessments and other deliverables are accurate.
 > - **Align with executives:** Obtain approvals on the outcomes of strategic planning and the next steps.
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md), learn how to conduct BI tactical planning.

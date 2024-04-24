@@ -37,7 +37,7 @@ You're now ready to use the data in Power BI Desktop. You can create visuals, re
 > To update, add, or delete data within items created by **Enter Data**, changes must be made in Power BI Desktop, and published.
 > Data updates cannot be made directly from the Power BI service.
 
-## Next steps
+## Related content
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 

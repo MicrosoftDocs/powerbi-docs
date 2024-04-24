@@ -104,7 +104,7 @@ Coordinate-based chart types (column, bar, area, point, line, and range) have tw
   
  [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)  
   
-## Next steps 
+## Related content 
 
 - [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)
 - [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   

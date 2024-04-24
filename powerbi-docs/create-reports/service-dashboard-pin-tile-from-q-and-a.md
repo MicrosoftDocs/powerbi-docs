@@ -64,7 +64,7 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 
 * **Don't see the question box**? Check with your Power BI administrator. The administrator has the ability to disable Q&A.
 
-## Next steps
+## Related content
 
 * [Edit or remove a dashboard tile](service-dashboard-edit-tile.md)
 * [Display content in more detail: focus mode and full screen mode](../consumer/end-user-focus.md)

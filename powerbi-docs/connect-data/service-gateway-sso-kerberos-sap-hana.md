@@ -200,7 +200,7 @@ Check the Kerberos external ID under **HANA User** to determine whether the IDs 
 
 After you've resolved the issue, you can create or refresh reports in the Power BI service.
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

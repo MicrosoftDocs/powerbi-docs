@@ -1,8 +1,8 @@
 ---
 title: Basic area chart
 description: 'Learn how to create and use basic area chart.'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -77,6 +77,6 @@ To learn more, see [Visual interactions in reports](../create-reports/service-re
 * [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
 * Basic area charts aren't effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using line charts. When you need to compare volume to more than three measures, try using treemap.
 
-## Next step
+## Related content
 
-[Reports in Power BI](power-bi-visualization-card.md)  
+- [Reports in Power BI](power-bi-visualization-card.md)  

@@ -60,7 +60,7 @@ At report design time, we recommend the following practices:
 > [!TIP]
 > It's also possible to configure drillthrough to your Power BI paginated reports. You can do this be adding links to Power BI reports. Links can define [URL parameters](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

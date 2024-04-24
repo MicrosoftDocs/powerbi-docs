@@ -90,7 +90,7 @@ Users also need `build` permissions to work with data outside Power BI:
 
 For a semantic model that uses row-level security (RLS), any permissions *higher* than `build` will enable the user to view all the data in the semantic model. `Build`, and permissions lower than `build`, will only give the semantic model user access to the data they're allowed to see as configured in your RLS settings.
 
-### Get and update datsemantic modelaset permissions with APIs
+### Get and update semantic model permissions with APIs
 
 * POST APIs let you add new permissions to a semantic model. You can use these APIs to add permissions for users but not to remove permissions. For example, you can add the `Reshare` permission to a user that has the `Read` permission. However, you can't remove the `Reshare` permission from a user that has both `Read` and `Reshare` permissions, by attempting to add the `Read` permission.
 

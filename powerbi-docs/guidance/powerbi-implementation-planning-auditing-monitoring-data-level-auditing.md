@@ -388,7 +388,7 @@ Content creators can initiate semantic model refreshes programmatically by using
 
 ### Data refresh schedule monitoring
 
-Power BI administrators can monitor data refresh schedules in the tenant to determine whether there are many refresh operations scheduled concurrently during a specific timeframe (for example, between 5am and 7am, which could be a particularly busy data refresh time). Administrators have permission to access the semantic model refresh schedule metadata from the [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), which are known as the _scanner APIs_.
+Power BI administrators can monitor data refresh schedules in the tenant to determine whether there are many refresh operations scheduled concurrently during a specific timeframe (for example, between 5am and 7am, which could be a particularly busy data refresh time). Administrators have permission to access the semantic model refresh schedule metadata from the [metadata scanning APIs](/fabric/governance/metadata-scanning-overview), which are known as the _scanner APIs_.
 
 ### Power BI REST APIs
 
@@ -434,6 +434,6 @@ A Power BI [datamart](/power-bi/transform-model/datamarts/datamarts-overview) in
 
 You can track user activities for Power BI datamarts by using the Power BI activity log. For more information, see [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
 
-## Next steps
+## Related content
 
 In the [next article in this series](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md), learn about tenant-level auditing.

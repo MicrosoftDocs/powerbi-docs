@@ -1,8 +1,8 @@
 ---
 title: Customize X-axis and Y-axis properties
 description: 'Customize X-axis and Y-axis properties'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: 
    - video-9DeAKM4SNJM
@@ -244,7 +244,7 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 - For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
 
-## Next steps
+## Related content
 
 - [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 

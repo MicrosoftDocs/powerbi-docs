@@ -136,7 +136,7 @@ Your favorite KPIs and reports from the web portal are all on this page, along w
 2. Tap the name of the server you don't want to be connected to.
 3. Tap **Remove Server**.
 
-## Next steps
+## Related content
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
 * Questions? [Ask the Power BI Community](https://community.powerbi.com/)

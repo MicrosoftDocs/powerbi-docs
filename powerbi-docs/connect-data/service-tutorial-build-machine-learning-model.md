@@ -187,7 +187,7 @@ There are some known issues with using gateways with automated machine learning.
 
 If your AI work with dataflows fails, you may need to enable Fast Combine when using AI with dataflows. Once you have imported your table and *before* you begin to add AI features, select **Options** from the Home ribbon, and in the window that appears select the checkbox beside *Allow combining data from multiple sources* to enable the feature, then select **OK** to save your selection. Then you can add AI features to your dataflow.
 
-## Next steps
+## Related content
 
 In this tutorial, you created and applied a binary prediction model in Power BI by doing these steps:
 

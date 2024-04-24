@@ -63,7 +63,7 @@ When you're offline with Power BI on your mobile device:
 * In the Power BI mobile apps, you can't see Power BI Desktop (PBIX) files saved to Power BI Report Server.
 * Paginated reports (RDL) are not available while the network is offline.
 
-## Next steps
+## Related content
 
 Your feedback helps us decide what to implement in the future, so don't forget to vote for other features you'd like to see in Power BI mobile apps.
 

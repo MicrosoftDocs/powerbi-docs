@@ -104,7 +104,8 @@ You don't create Reporting Services KPIs in the Power BI app. You create them in
 
 * Create [KPIs on a Reporting Services web portal](/sql/reporting-services/working-with-kpis-in-reporting-services)
 
-## Next steps
+## Related content
+
 * [Get started with the Power BI Windows app](mobile-windows-10-phone-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

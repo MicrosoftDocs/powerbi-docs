@@ -32,9 +32,9 @@ The Power BI paginated report chart has two axis types: primary and secondary. T
   
 2.  Click **Axes and Chart Area**, and select which of the secondary axes you want to enable, the value axis or the category axis.  
 
-## Next steps
+## Related content
 
-[Formatting Axis Labels on a Chart](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
-[Specify an Axis Interval](specify-axis-interval-report-builder.md)  
+- [Formatting Axis Labels on a Chart](/sql/reporting-services/report-design/formatting-axis-labels-on-a-chart-report-builder-and-ssrs)   
+- [Specify an Axis Interval](specify-axis-interval-report-builder.md)  
 
 More questions? [Try asking the Reporting Services forum](https://go.microsoft.com/fwlink/?LinkId=620231)

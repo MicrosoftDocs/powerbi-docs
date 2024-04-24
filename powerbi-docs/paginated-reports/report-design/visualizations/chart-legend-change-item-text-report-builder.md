@@ -46,8 +46,9 @@ When you place a field in the Values area of the Power BI paginated report chart
   
 1. Select **Legend** and in the **Custom legend text** box, type a legend label. The series is updated with your text.  
   
-## Next steps  
- [Formatting the Legend on a chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
- [Formatting Series Colors on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
- [Hide Legend Items on the chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-hide-items-report-builder)  
+## Related content
+
+- [Formatting the Legend on a chart &#40;Power BI Report Builder&#41;](chart-legend-formatting-report-builder.md)   
+- [Formatting Series Colors on a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
+- [Hide Legend Items on the chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-hide-items-report-builder)  
   

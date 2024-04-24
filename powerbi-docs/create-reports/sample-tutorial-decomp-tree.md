@@ -122,7 +122,7 @@ Now comes the ad hoc analysis part.
 
 Learn about everything else you can do with decomp trees in [Create and view decomposition tree visuals in Power BI](../visuals/power-bi-visualization-decomposition-tree.md).
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Tutorial: Explore a Power BI sample](sample-tutorial-connect-to-the-samples.md)
