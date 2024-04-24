@@ -87,7 +87,7 @@ You can change the selected workspace to another Copilot-compatible workspace an
 
 ## Create a narrative summary
 
-You can also use Copilot for Power BI to create a narrative summary with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals. See [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md) to learn how.
+You can also use Copilot for Power BI to create a narrative summary with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals. The summary can help you plan what visualizations you want to include in your report. See [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md) to learn how.
 
 ## Undo a page
 

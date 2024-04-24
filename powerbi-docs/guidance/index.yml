@@ -205,6 +205,8 @@ landingContent:
             url: powerbi-implementation-planning-user-tools-devices.md
           - text: Workspaces
             url: powerbi-implementation-planning-workspaces-overview.md
+          - text: Content lifecycle management
+            url: powerbi-implementation-planning-content-lifecycle-management-overview.md
           - text: Security
             url: powerbi-implementation-planning-security-overview.md
           - text: Info protection and DLP
