@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 09/12/2022
 ---
 
-# Object level security
+# Object-level security
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
@@ -18,19 +18,19 @@ This article explains how to embed Power BI content that uses OLS in a Power BI 
 
 In this scenario, the ISV has a table with sensitive data and metadata that they want to hide from the report customers.
 
-For more information on OLS go to [Object level security (OLS)](/fabric/security/service-admin-ols).
+For more information on OLS go to [Object-level security (OLS)](/fabric/security/service-admin-object-level-security).
 
 ## Prerequisites
 
-This article assumes that you have a report that uses OLS and that you want to embed it into an app. To create a report that uses OLS, see [Object level security (OLS)](/fabric/security/service-admin-ols).
+This article assumes that you have a report that uses OLS and that you want to embed it into an app. To create a report that uses OLS, see [Object-level security (OLS)](/fabric/security/service-admin-object-level-security).
 
 The report can be built using any of the following models:
 
-* [Cloud OLS](/fabric/security/service-admin-ols)
+* [Cloud OLS](/fabric/security/service-admin-object-level-security)
 * [Live connected report to Azure Analysis Services with OLS roles](./embed-azure-analysis-services.md)
 * [Live connected report to SQL Server Analysis Services with OLS roles](sql-server-analysis-services-embed.md)
 
-## Embed a report that use object level security
+## Embed a report that use object-level security
 
 The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for static RLS. You need the role and user name.
 

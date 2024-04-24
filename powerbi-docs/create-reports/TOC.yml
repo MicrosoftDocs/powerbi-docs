@@ -209,7 +209,7 @@
     - name: Use inline hierarchy labels
       href: desktop-inline-hierarchy-labels.md
     - name: Restrict data access with row-level security
-      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+      href: /fabric/security/service-admin-row-level-security?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: Add text boxes, shapes, and smart narratives
       href: power-bi-reports-add-text-and-shapes.md
     - name: Add a hyperlink to a text box

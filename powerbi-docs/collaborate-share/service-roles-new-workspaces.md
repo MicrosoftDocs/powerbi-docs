@@ -77,7 +77,7 @@ Everyone in a user group gets the role that you've assigned. If someone is in se
 
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro or PPU licenses to a role that requires a license. See [Licenses](#licenses) for details.
-> - Use the Viewer role to enforce [row-level security (RLS)](/fabric/security/service-admin-rls) for users who browse content in a workspace. You can also enforce RLS without giving access to the workspace, [publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md).
+> - Use the Viewer role to enforce [row-level security (RLS)](/fabric/security/service-admin-row-level-security) for users who browse content in a workspace. You can also enforce RLS without giving access to the workspace, [publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md).
 > - Members can add users to a workspace with lower permissions, but can't remove users from any workspace roles.
 
 
