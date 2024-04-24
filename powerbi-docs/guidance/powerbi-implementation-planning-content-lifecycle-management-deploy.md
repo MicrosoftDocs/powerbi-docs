@@ -52,7 +52,7 @@ When you develop content on your local machine, you need to publish that content
 > [!NOTE]
 > In this article, we refer to _publishing_ content as the initial deployment to the development workspace. However, in principle, publishing content is the same as deploying it.
 >
-> Content that's created in the Fabric portal (such as dataflows, dashboards, and scorecards) are created directly in the development workspace, and don't need to be published.
+> Content that's created in the Fabric portal (such as dataflows, dashboards, and scorecards) is created directly in the development workspace, and doesn't need to be published.
 
 The following sections describe different approaches you can take to publish content.
 
@@ -69,7 +69,7 @@ Consider using this approach when:
 - Content creators aren't familiar with Azure DevOps or Git.
 - Content comprises only semantic models or reports.
 
-### Publish with Third-party tools
+### Publish with third-party tools
 
 Third-party tools allow content creators to publish a semantic model by using the workspace [XMLA read/write endpoint](../enterprise/service-premium-connect-tools.md). For example, a content creator uses Tabular Editor to develop and manage model metadata, like TMDL (Tabular Model Definition Language) or .bim files.
 
@@ -117,7 +117,7 @@ Consider using this approach when:
 > - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
 > - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
 > - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true):** Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
-> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plan as work items, and link or refer to work items from other Azure DevOps services.
+> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
 > - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Allows you to share information with their team to understand and contribute to content.
 
 To summarize, content that's been committed and pushed to the remote repository is automatically published to the workspace via this sync process. A key benefit of this approach is that it allows you to couple your [source control management](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#source-control-by-using-a-remote-git-repository) processes with content publication. For instance, it allows for easier rollback of changes or entire versions of a solution.

@@ -34,7 +34,7 @@ The following image depicts the lifecycle of Power BI content, highlighting stag
 > This article focuses on key decisions and considerations to help you develop content and manage changes throughout its lifecycle. For more guidance about how to develop content and manage changes, see:
 >
 > - **[What is lifecycle management in Microsoft Fabric?](/fabric/cicd/cicd-overview):** This article provides a technical introduction and [tutorial](/fabric/cicd/cicd-tutorial) to Fabric Git integration and deployment pipelines.
-> - **[Lifecycle management best practices](/fabric/cicd/best-practices-cicd#content-preparation)** This article contains practical tips and guidance for using the lifecycle management features of Fabric and Power BI to develop content and manage changes.
+> - **[Lifecycle management best practices](/fabric/cicd/best-practices-cicd#content-preparation):** This article contains practical tips and guidance for using the lifecycle management features of Fabric and Power BI to develop content and manage changes.
 > - **[Power BI Desktop OneDrive and SharePoint integration](../create-reports/desktop-sharepoint-save-share.md):** This article contains an overview of the options to use and store files saved to OneDrive for Work and School or SharePoint when you perform version control with .pbix files.
 > - **[Get started with Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=azure-devops&tabs=visual-studio-2022&preserve-view=true):** This series of articles contain practical tips, tutorials, and guidance for performing source control by using a Git repository in Azure Repos.
 
@@ -72,10 +72,10 @@ You can use Power BI Desktop to create semantic models or reports, which you can
 
 ### Web authoring
 
-Certain content—such as dataflows, dashboards, and scorecards—can only be created in the Fabric portal. You can also create or modify some content—such as semantic models, reports, and paginated reports—in both the Fabric portal or by using local tools.When creating content by using web authoring, some key decisions you should make include:
+Certain content—such as dataflows, dashboards, and scorecards—can only be created in the Fabric portal. You can also create or modify some content—such as semantic models, reports, and paginated reports—in both the Fabric portal or by using local tools. When creating content by using web authoring, some key decisions you should make include:
 
 - **How to manage changes:** You can make changes to many item types by using web authoring, but these changes might be saved instantly, overwriting previous versions. For instance, if you are collaborating with others, you might want to avoid web authoring on shared items, working instead on your own copy.
-- **How to retrieve content backups:** You can create content like reports or semantic models by using web authoring, but these items [cannot be downloaded to local .pbix files](../create-reports/service-export-to-pbix.md#limitations). For instance, you can choose to backup this content by retrieving and storing its metadata.
+- **How to retrieve content backups:** You can create content like reports or semantic models by using web authoring, but these items [cannot be downloaded to local .pbix files](../create-reports/service-export-to-pbix.md#limitations). For instance, you can choose to back up this content by retrieving and storing its metadata.
 
 > [!TIP]
 > When developing dataflows and scorecards, we recommend that you retrieve the item definitions to manage changes and store a backup. You can automate dataflow and scorecard retrieval by using the [Fabric REST APIs](/rest/api/fabric/articles/using-fabric-apis). Specifically, you can use the [Get Dataflow](/rest/api/power-bi/dataflows/get-dataflow) and [Get Scorecards](/rest/api/power-bi/scorecards_%28preview%29/get) endpoints, respectively.
@@ -160,7 +160,7 @@ When delivering business-critical content, you typically use three or more separ
 
 The following diagram depicts a high-level example of how you might use separate environments with a development, test, and production workspace.
 
-:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/development-test-production-workspaces.svg" alt-text="Approach 2: Development, test, and production workspaces." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/development-test-production-workspaces.svg" alt-text="Diagram that shows approach 2: Development, test, and production workspaces." border="false":::
 
 The diagram depicts the following processes and components to separate workspaces in this approach.
 
@@ -184,12 +184,12 @@ When delivering business-critical content, each developer can also use their own
 > - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
 > - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
 > - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true):** Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
-> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plan as work items, and link or refer to work items from other Azure DevOps services.
+> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
 > - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Allows you to share information with their team to understand and contribute to content.
 
 The following diagram depicts a high-level example of how you might use separate environments by using a private workspace with Git integration.
 
-:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/private-workspace-git-integration.svg" alt-text="Approach 3: Private workspaces with Git integration." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/private-workspace-git-integration.svg" alt-text="Diagram that shows approach 3: Private workspaces with Git integration." border="false":::
 
 > [!NOTE]
 > The diagram depicts separate developers working on separate branches of a solution (branch one and branch two) before merging their changes into a main branch. This is a simplified depiction of a [Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops&preserve-view=true) to illustrate how developers can integrate their changes with a remote Git repository and benefit from Git integration in Fabric.
@@ -241,7 +241,7 @@ SharePoint has built-in version control for files. Content creators can develop 
 
 The following diagram depicts a high-level overview of how you perform version control by using SharePoint or OneDrive.
 
-:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/version-control-sharepoint-onedrive.svg" alt-text="Approach 1: Version control by using SharePoint or OneDrive." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/version-control-sharepoint-onedrive.svg" alt-text="Diagram that shows approach 1: Version control by using SharePoint or OneDrive." border="false":::
 
 The diagram describes the following processes and components.
 
@@ -270,7 +270,7 @@ Consider using SharePoint or OneDrive to track and manage changes in the followi
 - The .pbix files have a sensitivity label applied that encrypts their contents.
 
 > [!NOTE]
-> OneDrive and SharePoint support content that have sensitivity labels applied, except for some [limited scenarios](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). In contrast, Fabric Git integration [doesn't support sensitivity labels](/fabric/cicd/git-integration/git-integration-process#sync-and-commit-limitations).
+> OneDrive and SharePoint support content that has sensitivity labels applied, except for some [limited scenarios](../connect-data/refresh-desktop-file-onedrive.md#when-things-go-wrong). In contrast, Fabric Git integration [doesn't support sensitivity labels](/fabric/cicd/git-integration/git-integration-process#sync-and-commit-limitations).
 
 Avoid using SharePoint or OneDrive to track and manage changes in the following scenarios:
 
@@ -282,7 +282,7 @@ The following sections describe additional considerations to effectively use ver
 
 #### Microsoft Teams integration
 
-You might use the document libraries from Microsoft Teams if content creators use it for their collaboration. Document libraries are SharePoint sites, and using the document libraries (instead of a separate SharePoint site or OneDrive for Business folder) ensures centralization of content, files, and collaboration.
+You might use the document libraries from Microsoft Teams if content creators use it for their collaboration. Document libraries are SharePoint sites, and using the document libraries (instead of a separate SharePoint site or OneDrive folder) ensures centralization of content, files, and collaboration.
 
 #### Check-in and check-out files
 
@@ -299,11 +299,11 @@ For more sophisticated version control, you can store files in a remote reposito
 A remote Git repository facilitates source control of files, which allows content creators more options to track and manage changes. In brief, content creators can develop content either locally or in the Power BI service, then commit and push those changes to a remote Git repository like Azure Repos
 
 > [!NOTE]
-> You can also perform source control of your content without using Git integration. In this scenario, you still track and manage content changes in a remote Git repository, but you deploy content using either the REST APIs or XMLA read/write endpoints. For more information For more information about these methods of deploying content, see [Stage 4: Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
+> You can also perform source control of your content without using Git integration. In this scenario, you still track and manage content changes in a remote Git repository, but you deploy content using either the REST APIs or XMLA read/write endpoints. For more information about these methods of deploying content, see [Stage 4: Deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
 
 The following diagram depicts a high-level overview of how you perform source control by
 
-:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/source-control-azure-devops.svg" alt-text="Approach 2: Source control by using Azure DevOps." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/source-control-azure-devops.svg" alt-text="Diagram that shows approach 2: Source control by using Azure DevOps." border="false":::
 
 The diagram describes the following processes and components.
 
@@ -328,7 +328,7 @@ Consider using source control to track and manage changes in the following scena
 Here are some pre-requisites and considerations to help you effectively use source control with Azure DevOps.
 
 - **Git:** To commit and push changes to a remote repository, content creators need to [download](https://git-scm.com/downloads) and install _Git_. Git is a distributed version control system that tracks changes in your files. To learn Git basics, see [What is Git?](/devops/develop/git/what-is-git).
-- **Tools:** To use Git, content creators need to either use the a [command line interface (CLI)](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or a graphical user interface (GUI) client for SCM, like [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).
+- **Tools:** To use Git, content creators need to either use a [command line interface (CLI)](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or a graphical user interface (GUI) client for SCM, like [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/).
 - **Licenses and permissions:** To create and use an Azure Repos Git repository, content creators must have the following:
   - [Access level](/azure/devops/organizations/billing/buy-basic-access-add-users?view=azure-devops&preserve-view=true) set to Basic (as opposed to Stakeholder).
   - Belong to an [organization](/azure/devops/user-guide/manage-organization-collection?view=azure-devops&preserve-view=true#add-users-to-your-organization) and a [project](/azure/devops/organizations/security/add-users-team-project?view=azure-devops&tabs=preview-page&preserve-view=true).
@@ -347,7 +347,7 @@ A key benefit of using source control with Azure Repos is improved collaboration
 
 The following diagram depicts a high-level overview of how Azure DevOps enables collaboration with source control.
 
-:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/azure-devops-collaboration-flow.svg" alt-text="No title – Azure DevOps and Azure Repos." border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-content-lifecycle-management-develop-manage/azure-devops-collaboration-flow.svg" alt-text="Diagram that shows how to collaborate by using Azure DevOps." border="false":::
 
 > [!NOTE]
 > The previous diagram depicts one example of how to collaborate by using Azure DevOps. Choose an approach that best fits the needs and the way of working of your team.
@@ -433,7 +433,7 @@ When you use pull requests to merge changes to Power BI content, consider the fo
 > - **Decide how you'll implement version control:** Decide between a simpler approach by using SharePoint or OneDrive for Business, or by using Azure DevOps to facilitate source control.
 > - **Set up your remote repository:** Create a structured space in the OneDrive folder or Git Repo where you'll store content to track and manage changes.
 > - **If you're using source control, set up .gitignore and .gitattributes files:** Ensure that you set up your repository so that you're only tracking meaningful changes.
-> - **If you're using source control, define branching and merge strategies:** Ensure that you define clear processes for how you'll set up and use source control to best support development. Avoid overcomplicating your process. Instead, try to compliment the current way of working in your development teams.
+> - **If you're using source control, define branching and merge strategies:** Ensure that you define clear processes for how you'll set up and use source control to best support development. Avoid overcomplicating your process. Instead, try to complement the current way of working in your development teams.
 
 ## Related content
 

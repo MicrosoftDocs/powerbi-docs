@@ -62,8 +62,8 @@ There are two main types of users to consider when planning your support model.
 > [!NOTE]
 > There are different topics important to plan your support model.
 >
-> - **[User tools and devices](powerbi-implementation-planning-user-tools-devices.md):** Plan how to content creators and consumers can get help to install and use tools to make and view content.
-> - **[Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md):** Plan how you can improve the competences of the user community so they can create and use content effectively.
+> - **[User tools and devices](powerbi-implementation-planning-user-tools-devices.md):** Plan how content creators and consumers can get help to install and use tools to make and view content.
+> - **[Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md):** Plan how you can improve the competencies of the user community so they can create and use content effectively.
 > - **[User support](fabric-adoption-roadmap-user-support.md):** Plan how you can resolve issues for users with both internal and external support channels.
 
 The remainder of this section introduces considerations for both content consumers and creators.
@@ -123,7 +123,7 @@ Auditing and monitoring of content throughout its lifecycle is important. Creati
 > There are many planning considerations and decision-making criteria related to auditing and monitoring that are covered in other articles. The scope for your auditing and monitoring activities could differ depending on your focus and your job role. For more information, see:
 >
 > - [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) for auditing and monitoring reporting items, like paginated reports.
-> - [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md) for auditing and monitoring data items items, like semantic models.
+> - [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md) for auditing and monitoring data items, like semantic models.
 > - [Tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) for auditing content across your entire tenant.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::

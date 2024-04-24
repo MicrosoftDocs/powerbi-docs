@@ -49,7 +49,7 @@ When you design your solution, you should describe what the content is, who will
 
 Answer the following questions about your content to help you make later lifecycle management decisions.
 
-### What is the format of the content
+### What is the format of the content?
 
 The type, scope, and complexity of content motivates key decisions about how you'll manage it. For instance, a single report for a limited audience requires a different lifecycle management approach compared to a semantic model that will be used by the entire organization and by multiple different downstream workloads.
 
@@ -66,7 +66,7 @@ Answer questions like the following to help you determine the type of content yo
 >
 > For an example of such diagrams, see the Power BI implementation planning [usage scenario diagrams](powerbi-implementation-planning-usage-scenario-overview.md).
 
-### Who will create and support the content
+### Who will create and support the content?
 
 Content creators have varying needs, skills, and workflows. These factors will influence the success of different lifecycle management approaches. Larger, central teams with collaboration often require more sophisticated content lifecycle management than smaller teams of self-service creators.
 
@@ -81,7 +81,7 @@ Answer questions like the following to help you determine who will create or sup
 > [!IMPORTANT]
 > Ensure that you clearly document who is responsible for creating content, and who will support it once it's deployed to production. Involve all of these individuals in your content lifecycle management planning.
 
-### What is the importance of the content
+### What is the importance of the content?
 
 Depending upon how important the content is for the business, you'll make different decisions about how to manage it. Business-critical content requires more robust content lifecycle management approaches to safeguard quality and mitigate possible disruptions.
 
@@ -143,7 +143,7 @@ Content creators and owners can also communicate and collaborate in a central, o
 > - **[Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops&preserve-view=true):** Allows you to create and use a remote Git repository, which is a remote storage location you use to track and manage content changes.
 > - **[Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops&preserve-view=true):** Allows you to create and use a set of automated tasks to handle, test, and deploy content from a remote repository to a workspace.
 > - **[Azure Test Plans](/azure/devops/test/overview?view=azure-devops&preserve-view=true):** Allows you to design tests to validate the solution and automate quality control together with Azure Pipelines.
-> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plan as work items, and link or refer to work items from other Azure DevOps services.
+> - **[Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&preserve-view=true):** Allows you to use boards to track tasks and plans as work items, and link or refer to work items from other Azure DevOps services.
 > - **[Azure Wiki](/azure/devops/project/wiki/wiki-create-repo?view=azure-devops&tabs=browser&preserve-view=true):** Allows you to share information with their team to understand and contribute to content.
 
 By using Azure DevOps, content creators use projects to structure their communication, planning, and work. Additionally, content creators can orchestrate content lifecycle management from within Azure DevOps by performing _source control_, validation, and deployment. Source control is the process of managing more granular changes to content code and metadata.
@@ -261,14 +261,14 @@ Consider storing the following file types in a remote repository.
 > [!TIP]
 > When you use a remote repository, consider storing Power BI reports and semantic models as [Power BI Desktop projects (.pbip) files](../developer/projects/projects-overview.md) instead of .pbix files. That's because saved changes can't be identified in a .pbix file.
 
-### No files: content created in the Fabric portal
+### No files: Content created in the Fabric portal
 
 Content creators can author content directly in the Fabric portal. In this scenario, they don't typically work directly with content files. You should typically author content in the Fabric portal only when the item types can't be created elsewhere (like dataflows, dashboards, or scorecards). You can also author reports and semantic models in the Fabric portal when don't have access to a Windows machine, and therefore can't use Power BI Desktop. For more information, see [User tools and devices](powerbi-implementation-planning-user-tools-devices.md).
 
 > [!CAUTION]
 > You can't download as a file some content that's created in the Fabric portal. For instance, reports created in the Fabric portal can't be downloaded as .pbix files.  
 >
-> When authoring content in the Fabric portal, you should instead use the [Fabric APIs](/rest/api/fabric/articles/using-fabric-apis) or [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) to backup [content definitions](/rest/api/fabric/articles/item-management/definitions/item-definition-overview). When you backup content definitions, you mitigate disruption if that content gets accidentally deleted or unintentionally changed. If content is accidentally deleted or changed, you can replace it by using the backup.
+> When authoring content in the Fabric portal, you should instead use the [Fabric APIs](/rest/api/fabric/articles/using-fabric-apis) or [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) to back up [content definitions](/rest/api/fabric/articles/item-management/definitions/item-definition-overview). When you back up content definitions, you mitigate disruption if that content gets accidentally deleted or unintentionally changed. If content is accidentally deleted or changed, you can replace it by using the backup.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 

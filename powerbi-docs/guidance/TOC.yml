@@ -231,7 +231,7 @@
           href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
         - name: "Workspace-level planning"
           href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
-      - name: Content lifecycle management
+      - name: Content lifecycle management (CLM)
         items:
         - name: "CLM overview"
           href: powerbi-implementation-planning-content-lifecycle-management-overview.md
