@@ -114,7 +114,6 @@ When you're done with the report design, you can save the report to your local m
 
 - Only one dataset per M query is supported unless the other data source is **Enter data**. 
 - The last query in the **Queries** window in the Power Query editor is used to generate the RDL dataset.  
-- Dataset (thus query name to execute) must be CLS compliant. 
 - Gateway data sources aren't supported even though you connect in Mashup Editor. 
 - In the Power BI Service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source.
