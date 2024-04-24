@@ -27,7 +27,9 @@ You also need to sign in to Power BI Report Builder with your Power BI account.
 
 Follow these steps to connect to a data source using Power Query Online: 
 
-- Select **Get Data** from the toolbar. 
+1. Start the process of getting data in one of these ways.
+
+    Select **Get Data** from the toolbar. 
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-data-toolbar.png" alt-text="Screenshot showing select Get data on the toolbar." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-get-data-toolbar.png":::
 
@@ -39,17 +41,17 @@ Follow these steps to connect to a data source using Power Query Online:
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/get-data-dataset.png" alt-text="Screenshot showing select Get data from Datasets.":::
 
-- After you select **Get data**, select the data source that you want to connect to from the list, or search for it by name or category. For example, select Snowflake, a cloud data warehouse service. 
+1. After you select **Get data**, select the data source that you want to connect to from the list, or search for it by name or category. For example, select Snowflake, a cloud data warehouse service. 
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-view-more-data-sources.png" alt-text="Screenshot showing select a data source." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-view-more-data-sources.png":::
 
-- Enter the required information to connect to the data source, such as the server name, database name, and authentication method.  
+1. Enter the required information to connect to the data source, such as the server name, database name, and authentication method.  
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png" alt-text="Screenshot showing enter your credentials." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-enter-credentials.png":::
 
     You can either use an existing shareable cloud connection or create a new connection.
   
-- After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
+1. After you select or create a connection, select **Next**. Select the tables that you want to use in your report and select **Transform Data**.  
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-choose-data.png" alt-text="Screenshot showing Select the tables that you want to use in your report and select Transform Data." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-choose-data.png":::
 
@@ -59,8 +61,8 @@ Follow these steps to connect to a data source using Power Query Online:
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png" alt-text="Screenshot showing a new merged table." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png":::
 
-- Select **Create** to add the data source and the dataset to Power BI Report Builder. You see a success message. Select **OK** for the dataset and data source to be created. 
-- You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under **Data Sources** and **Datasets**, respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
+1. Select **Create** to add the data source and the dataset to Power BI Report Builder. You see a success message. Select **OK** for the dataset and data source to be created. 
+1. You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under **Data Sources** and **Datasets**, respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-created.png" alt-text="Screenshot showing the new table.":::
 
@@ -115,9 +117,9 @@ When you're done with the report design, you can save the report to your local m
 - Only one dataset per M query is supported unless the other data source is **Enter data**. 
 - The last query in the **Queries** window in the Power Query editor is used to generate the RDL dataset.  
 - Gateway data sources aren't supported even though you connect in Mashup Editor. 
-- In the Power BI Service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
-- Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source.
-- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report will fail to render. 
+- In the Power BI service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
+- Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
+- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render. 
 
 ## Related content  
 
