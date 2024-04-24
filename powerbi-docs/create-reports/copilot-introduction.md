@@ -38,7 +38,7 @@ For answers to common questions related to business data security and privacy to
 The Copilot button in Desktop report view is always visible in the ribbon. However, to start using Copilot, you need to meet these requirements:
 
 - You need to sign in.
-- Your admin needs to enable Copilot in the tenant settings.
+- Your admin needs to [enable Copilot in the tenant settings](/fabric/get-started/copilot-enable-fabric).
 - You need to have member or contributor access to at least one workspace that's assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]

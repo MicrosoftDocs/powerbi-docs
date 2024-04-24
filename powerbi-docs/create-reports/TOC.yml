@@ -126,6 +126,8 @@
           items: 
           - name: Copilot in Fabric overview
             href: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          - name: Enable Copilot in Fabric
+            href: /fabric/get-started/copilot-enable-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: Privacy, security, and responsible use for Copilot in Fabric
             href: /fabric/get-started/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
           - name: Copilot in Fabric and Power BI FAQ
