@@ -82,14 +82,14 @@ If you want to define a parameter, follow these steps.
 
 1. Define the parameter in Power Query in the Get Data experience. Learn more about [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md).
 
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pqo-new-parameter.png" alt-text="Screenshot showing new parameter in Power Query.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-power-query-new-parameter.png" alt-text="Screenshot showing new parameter in Power Query.":::
    
     > [!NOTE]
     > Keep track of the exact parameter name and type. If you missed noting it down, you can **Edit Mashup** and find the parameter name.
 
 1. In Power BI Report Builder, **Add parameter** by right-clicking the **Parameters** folder.
 
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-rb-add-parameter.png" alt-text="Screenshot showing add parameter in Power BI Report Builder.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-report-builder-add-parameter.png" alt-text="Screenshot showing add parameter in Power BI Report Builder.":::
 
 1. Enter the parameter name, prompt name, and data type, as you would when you set up parameters in Report Builder.
 
@@ -98,7 +98,7 @@ If you want to define a parameter, follow these steps.
 
 1. Right-click the RDL dataset that you want the parameter for, and select **Dataset Properties**.
 
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-pbirb-datasetproperties.png" alt-text="Screenshot showing dataset properties in Power BI Report Builder.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-power-bi-report-builder-dataset-properties.png" alt-text="Screenshot showing dataset properties in Power BI Report Builder.":::
 
 1. In the **Dataset Properties** dialog, select the **Parameters** tab and map the parameters. The **Parameter name** is the name defined in the **Get data** experience. The **Parameter Value** is the name defined in Power BI Report Builder.
 
