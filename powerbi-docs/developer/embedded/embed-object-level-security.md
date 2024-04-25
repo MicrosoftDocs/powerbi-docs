@@ -30,7 +30,7 @@ The report can be built using any of the following models:
 * [Live connected report to Azure Analysis Services with OLS roles](./embed-azure-analysis-services.md)
 * [Live connected report to SQL Server Analysis Services with OLS roles](sql-server-analysis-services-embed.md)
 
-## Embed a report that use object-level security
+## Embed a report that uses object-level security
 
 The process of [generating embed tokens](generate-embed-token.md#row-level-security) for items that use OLS is the same as for static RLS. You need the role and user name.
 
