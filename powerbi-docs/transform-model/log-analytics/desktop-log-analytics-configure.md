@@ -159,7 +159,7 @@ The following table describes the **schema**.
 
 ### ExecutionMetrics event
 
-For every **Discover**, **Command** and **Query** request, a single event named **ExecutionMetrics** is logged after, holding execution statistics for the entire request. These statistics can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with with the nearest **[Discover|Command|Query]End** event.
+For every **Discover**, **Command** and **Query** request, an event named **ExecutionMetrics** is produced at the end of the request. This event will contain execution metrics for the request, which can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with with the nearest **[Discover|Command|Query]End** event.
 
 
 The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model in the last day:
@@ -235,7 +235,7 @@ The statistics are presented as a JSON text in the **EventText** property:
 }
 ```
 
-The following table describes all the possible properties; not every property is emitted, as it depends on the type of request.
+The following table describes all the possible properties. Not every property is emitted in each event, as the contents will depend on the request and the semantic model.
 
 | Property | Description |
 | --- | --- |
