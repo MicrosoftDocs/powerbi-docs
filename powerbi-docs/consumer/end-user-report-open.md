@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 01/29/2024
+ms.date: 04/25/2024
 #This article teaches business users how to find and open a report if it has been shared directly or shared via an app, so that the consumer can view and interact with the report.
 ---
 # Open a report in the Power BI service
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-A Power BI report is one or more pages of organized visuals. All Power BI users can create and edit their own reports. However, opening reports created by others requires a paid license (Power BI Pro or Premium Per User) or special access to a [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). 
+A Power BI report is one or more pages of organized visuals. All Power BI users can create and edit their own reports. However, opening reports created by others requires a paid license (Power BI Pro or Premium Per User) or special access to a [Premium capacity](end-user-license.md#find-out-if-you-have-access-to-premium-capacity). 
 
 This article teaches you how to open reports that are shared with you. The most common scenarios are covered. The first scenario is when a Power BI designer creates a report and [shares it directly](../collaborate-share/end-user-shared-with-me.md). The second scenario is when a designer shares a report as part of an [app](end-user-apps.md). 
 
@@ -42,15 +42,15 @@ Power BI designers share reports with you by sending an email link or by adding 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-filters-pane.png" alt-text="Screenshot showing the Power BI service with Filters expanded.":::
 
-1. Hover over a visual to show the actions you can perform. For this treemap, we see pin, copy, filter, display the visual at full size, and an ellipses (...). 
+1. Hover over a visual to show the actions you can perform. For this treemap, we see pin, copy, filter, display the visual at full size, and an ellipsis (...). 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-visual-menu.png" alt-text="Screenshot showing the Power BI service with View options expanded.":::
 
-    Select the ellipses (...) to see more options. 
+    Select the ellipsis (...) to see more options. 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-more-options.png" alt-text="Screenshot showing the More options ellipses selected.":::
 
-1. Explore the action bar at the top of your report. From the **File** menu, you can make copies and print. If you have permissions, **Export** your report to PowerPoint or **Share** your report with colleagues. Select **Get insights** and Power BI searchs for and displays interesting information from the report data. All of the features available from the action bar are explained in separate Power BI articles.
+1. Explore the action bar at the top of your report. From the **File** menu, you can make copies and print. If you have permissions, **Export** your report to PowerPoint or **Share** your report with colleagues. Select **Get insights** and Power BI searches for and displays interesting information from the report data. All of the features available from the action bar are explained in separate Power BI articles.
 
 1. Change the size and display of your report. To adjust the report display size, use the slider in the bottom right. To select display options from a menu, open the **View** menu and choose a display option. Your choices are **Full screen**, **Actual size**, **Fit to page**, and **Fit to width**. Notice the difference that each display options makes.
 
@@ -64,7 +64,7 @@ There are many ways for you to interact with a report to discover insights and m
 
 The apps you receive from colleagues are located on the **Home** page and in the **Apps** container on your navigation pane. An [app](end-user-apps.md) is a collection of dashboards and reports that a Power BI designer compiles for you.
 
-You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#identify-content-hosted-in-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
+You must have a Power BI Pro license to open an app unless the app workspace is stored in [Premium capacity](end-user-license.md#find-out-if-you-have-access-to-premium-capacity). A user with any Power BI license can have access to reports stored in Premium capacity.  
 
 Follow along with Microsoft sample content.
 
@@ -88,7 +88,7 @@ Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a t
 
     :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
-2. The associated report opens to the *YTD Category Trend Analysis* page. The is the source page for the column chart tile.
+2. The associated report opens to the *YTD Category Trend Analysis* page. This is the source page for the column chart tile.
 
     :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 

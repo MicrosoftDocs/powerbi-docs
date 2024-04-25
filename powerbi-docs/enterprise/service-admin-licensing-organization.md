@@ -117,7 +117,7 @@ Power BI has the same license lifecycle as Microsoft 365. For more information, 
 
 ## Manage subscriptions included with Microsoft 365 E5 SKUs
 
-A Microsoft 365 E5 subscription includes Power BI Pro licenses. To learn how to manage licenses, see [View and manage user licenses](service-admin-manage-licenses.md).
+A Microsoft 365 E5 subscription includes Power BI Pro licenses. To learn how to manage licenses, see [Administration overview](/fabric/admin/admin-overview).
 
 ## Related content
 
