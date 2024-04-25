@@ -36,7 +36,7 @@ Each user of the Power BI service has either a *free* license, a *trial* license
 It's possible to have more than one license at the same time. The service always delivers you the experience equal to the most permissive license you currently have.
 
 > [!NOTE]
->* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license is required for publishing content to a Power BI app workspace and for sharing content with others.
+>* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.md) license is required for publishing content to a Power BI app workspace, editing content, and for sharing content with others.
 
 ## Power BI Premium capacity subscription
 
@@ -66,23 +66,13 @@ This second user, Zalan, has a Fabric free license that includes a Power BI free
 
 ## Find out if you have access to Premium capacity
 
-Next, check to see if you're part of an organization that has Premium capacity. Either of the users, Pro or free, can belong to an organization that has Premium capacity. Let's check for our second user, Zalan.  
+Next, check to see if you have access to content in Premium capacity. Either of the users, Pro or free, can belong to an organization that has Premium capacity.
 
-We can determine whether Zalan's organization has Premium capacity by looking up the amount of storage available. 
+Select **Workspaces** and scroll through the list of workspaces that have been shared with you. Workspaces in Premium capacity are marked with a diamond icon. Select a Premium workspace to open it. 
 
-- In the Power BI service, select **My workspace** and then select the cog icon from the upper right corner. Choose **Manage personal storage**.
+:::image type="content" source="media/end-user-license/power-bi-premium-diamond.png" alt-text="Screenshot of workspaces and some have diamond icons.":::
 
-    ![Cog Settings menu displays](media/end-user-license/power-bi-license-personal.png)
-
-    If you see more than 10 GB, then you're a member of an organization that has a Premium subscription. The image below shows that Zalan's organization has up to 100 GB of storage. Zalan, personally, doesn't own 100 GB as indicated by the heading **Owned by us**.  
-
-    :::image type="content" source="media/end-user-license/power-bi-free-capacity.png" alt-text="Screenshot showing the Manage storage screen with 100 GB available.":::
-
-    If you see any amount of storage, the words **Pro user** next to your name, and the heading **Owned by me**, then you have a [Premium per-user license.](../enterprise/service-premium-per-user-faq.yml).  
-
-## Identify content hosted in Premium capacity
-
-There are a couple of ways to identify content stored in Premium capacity. One way is to look for apps and app workspaces with a diamond icon. The diamond indicates that the content is stored in Premium capacity.
+Not only workspaces are marked with a diamond icon. Apps and app workspaces saved in Premium capacity also have a diamond icon. 
 
 In the following image, two of the apps are stored in Premium capacity.
 
@@ -94,12 +84,12 @@ There are many ways organizations set up their Power BI subscriptions and licens
 
 |License type  |Not in Premium capacity | Premium capacity  |
 |---------|---------|---------|
-|**Free**     |  Use as a personal sandbox to create content for yourself and interact with that content. A free license is a great way to try out the Power BI service. You can't consume content from anyone else or share your content with others.     |   Interact with content assigned to Premium capacity and shared with you. Free, Premium per-user, and Pro users can collaborate without requiring the paid licenses for free users.      |
+|**Free**     |  Use as a personal sandbox to create content for yourself and interact with that content. A free license is a great way to try out the Power BI service. You can't consume content from anyone else or share your content with others.     |   Interact with content assigned to Premium capacity and shared with you. Free, Premium per-user, and Pro users can collaborate without requiring the free user to have a paid license.      |
 |**Pro**     |  Collaborate with Premium per-user and Pro users by creating and sharing content.        |  Collaborate with free, Premium per-user, and Pro users by creating and sharing content.       |
 
 In the following diagram, the left side represents Pro users who create and share content in app workspaces.
 
-- **Workspace A** wasn't created in Premium capacity.
+- **Workspace A** isn't in Premium capacity.
 
 - **Workspace B** was created and saved in Premium capacity. This workspace has a diamond icon.  
 
@@ -112,8 +102,7 @@ The Power BI Pro creators can share and collaborate with other Pro users in eith
 - It's possible to have more than one Power BI license. The Power BI service always delivers the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service uses the Pro license.
 - Only SKUs equivalent or higher than a **F64 SKU** allow free Power BI users to consume Power BI apps and shared content in Premium capacity in the Power BI service. Smaller **F SKU**s require a paid license to consume Power BI content.
 - Users without a paid license can view apps created by colleagues if certain conditions are met. First, the workspace owner creates the app based on content in a workspace that is saved in Premium capacity. Second, the workspace owner assigns the free user a role that has permissions for that app. 
-
-- If you want to create and share content, or open content that someone else shared with you, you must have a paid license. You might be able to sign up for a [free trial of Power BI paid features](../fundamentals/service-self-service-signup-for-power-bi.md). If your organization has self-service trials enabled, you can select the upgrade dialog that appears in the Power BI service when you try to use a Pro feature.
+- You want to create and share content, or open content that someone else shared with you. That content isn't in Premium capacity. You must have a paid license. Either purchase a license or sign up for a trial, if ther is one available. One option that might be available is the [free trial of Power BI paid features](../fundamentals/service-self-service-signup-for-power-bi.md). If your organization has self-service trials enabled, you can select the upgrade dialog that appears in the Power BI service when you try to use a Pro feature.
 
     :::image type="content" source="media/end-user-license/power-bi-ppu-trial.png" alt-text="Screenshot showing the dialog for a Power BI Pro free trial.":::
 
