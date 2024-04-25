@@ -58,7 +58,7 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
   - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
-  - Whether semantic models enforce [Row-level Security (RLS)](/fabric/security/service-admin-rls)
+  - Whether semantic models enforce [Row-level Security (RLS)](/fabric/security/service-admin-row-level-security)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 

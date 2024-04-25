@@ -76,7 +76,7 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 
 <sup>2</sup> The *Max memory (GB)* column represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column.
 
-<sup>3</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](/fabric/get-started/directlake-overview#fallback).
+<sup>3</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](/fabric/get-started/direct-lake-overview#fallback).
 
 ### Semantic model memory usage
 

@@ -504,8 +504,8 @@ You can plan to create fewer semantic models and reports by enforcing data secur
 
 A semantic model creator can enforce data security in two ways.
 
-- [Row-level security (RLS)](/fabric/security/service-admin-rls) allows a data modeler to restrict access to a subset of data.
-- [Object-level security (OLS)](/fabric/security/service-admin-ols) allows a data modeler to restrict access to specific tables and columns, and their metadata.
+- [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) allows a data modeler to restrict access to a subset of data.
+- [Object-level security (OLS)](/fabric/security/service-admin-object-level-security) allows a data modeler to restrict access to specific tables and columns, and their metadata.
 
 The implementation of RLS and OLS are targeted at report consumers. For more information, see [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article. It describes how and when RLS and OLS are enforced for consumers who have view-only permission to the semantic model.
 
