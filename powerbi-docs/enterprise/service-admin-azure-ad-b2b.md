@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/07/2024
+ms.date: 04/24/2024
 LocalizationGroup: Administration
 ---
 
@@ -87,7 +87,7 @@ The guest user gets an email indicating that you shared the app with them.
 
 ![Screenshot of the email that guest user receives when the app has been shared.](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
-The guest user must sign in with their organization email address. They'll receive a prompt to accept the invitation after signing in. After signing in, the app opens for the guest user. To return to the app, they should bookmark the link or save the email.
+The guest user must sign in with their organization email address. They'll receive a prompt to accept the invitation after signing in. After they sign in, the app opens for the guest user. To return to the app, they should bookmark the link or save the email.
 
 ## Discoverability for B2B content
 
@@ -202,11 +202,11 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
-* If you disable the **Allow Microsoft Entra guest users to edit and manage content in the organization** tenant setting, guest users will continue to have any workspace role and item permissions that they have previously been granted, or will be granted, in the provider environment. For more information about the **Allow Microsoft Entra guest users to edit and manage content in the organization** tenant setting, see [Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization).  
+* If you disable the **Guest users can browse and access Fabric content** tenant setting, guest users continue to have any workspace role and item permissions that they were previously granted, or will be granted, in the provider environment. For more information, see the [Guest users can browse and access Fabric content](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-browse-and-access-fabric-content) tenant setting.  
 
 ## Related content
 
 * For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Microsoft Entra B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
-* For information about Microsoft Entra B2B, see [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
-* For information about in-place semantic model sharing, see [Power BI in-place semantic model sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md).
+* For information about Microsoft Entra B2B, see [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/)
+* For information about in-place semantic model sharing, see [Power BI in-place semantic model sharing with guest users in external organizations (preview)](../collaborate-share/service-dataset-external-org-share-about.md).
 * For information about government clouds, see [Power BI for US Government](service-govus-overview.md).
