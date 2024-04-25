@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/07/2024
+ms.date: 04/24/2024
 LocalizationGroup: Administration
 ---
 
@@ -202,7 +202,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
-* If you disable the **Allow Microsoft Entra guest users to edit and manage content in the organization** tenant setting, guest users will continue to have any workspace role and item permissions that they have previously been granted, or will be granted, in the provider environment. For more information about the **Allow Microsoft Entra guest users to edit and manage content in the organization** tenant setting, see [Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization).  
+* If you disable the **Guest users can browse and access Fabric content** tenant setting, guest users continue to have any workspace role and item permissions that they were previously granted, or will be granted, in the provider environment. For more information, see the [Guest users can browse and access Fabric content](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-browse-and-access-fabric-content) tenant setting.  
 
 ## Related content
 
