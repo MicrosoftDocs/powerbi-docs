@@ -252,22 +252,21 @@ The following table describes all the possible properties. Not every property is
 | vertipaqJobCpuTimeMs | Total CPU time spent by Vertipaq engine.  |
 | mEngineCpuTimeMs | Total CPU time spent by PowerQuery engine.  |
 | queryProcessingCpuTimeMs | Total CPU time spent by tasks on Analysis Services query thread pool thread. |
-| approximatePeakMemoryConsumptionKB | Approximate peak memory consumption during the request. |
-| mEnginePeakMemoryKB  | Max memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
+| approximatePeakMemoryConsumptionKB | Approximate peak total memory consumption during the request. |
+| mEnginePeakMemoryKB  | Approximate peak memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
 | directQueryTimeoutMs  | Timeout associated with DirectQuery queries. |
 | xmlaCommandTimeoutMs  | Timeout associated with XMLA command. |
-| externalConnectionTimeoutMs  | Timeout associated with creating external non-tabular datasource connections (e.g. Blob Storage). |
 | externalQueryTimeoutMs  | Timeout associated with queries to external datasources. |
 | tabularConnectionTimeoutMs  | Timeout associated with external tabular datasource connections (e.g. SQL). |
 | refreshParallelism  | Effective MaxParallelism used in the request.|
-| vertipaqTotalRows   | Total number of processed rows by the Vertipaq engine.  |
+| vertipaqTotalRows   | Total number of rows processed by the Vertipaq engine during a refresh operation.  |
 | queryResultRows   | Total number of rows returned as a result of the DAX query. |
 | directQueryTotalRows   | Total number of rows read from the various DirectQuery queries. |
-| directQueryRequestCount   | Total number of DirectQuery storage engine queries executed from DAX engine. |
+| directQueryRequestCount   | Total number of DirectQuery storage engine queries executed by the DAX engine. |
 | commandType   | Analysis Services command type. |
 | errorCount   | Total number of errors for the current request. |
 | qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](https://learn.microsoft.com/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
-| intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Cache refresh (3) |
+| intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
 | discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](https://learn.microsoft.com/analysis-services/trace-events/discover-events-data-columns?view=asallproducts-allversions#discover-begin-classdata-columns) for list of discover types. |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
 | capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here](https://learn.microsoft.com/en-us/fabric/enterprise/throttling). |
