@@ -7,7 +7,7 @@
 **Answer:** Yes, if you imported the data into Power BI Desktop. If you're using a live connection, you can't configure RLS within the Power BI service. You define RLS in the Analysis Services model on-premises.
 
 **Question:** Can I use RLS to limit the columns or measures accessible by my users?  
-**Answer:** No, if a user has access to a particular row of data, they can see all the columns of data for that row. To restrict access to columns and column metadata, consider using [object-level security](/fabric/security/service-admin-ols).
+**Answer:** No, if a user has access to a particular row of data, they can see all the columns of data for that row. To restrict access to columns and column metadata, consider using [object-level security](/fabric/security/service-admin-object-level-security).
 
 **Question:** Does RLS let me hide detailed data but give access to data summarized in visuals?  
 **Answer:** No, you secure individual rows of data, but users can always see either the details or the summarized data.

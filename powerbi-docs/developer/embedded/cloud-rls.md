@@ -19,9 +19,9 @@ This article explains how to embed Power BI content that uses RLS into a standar
 
 ## Prerequisites
 
-For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/fabric/security/service-admin-rls).
+For a detailed explanation on how to set up RLS, refer to [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security).
 
-When you [define your RLS roles](/fabric/security/service-admin-rls#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
+When you [define your RLS roles](/fabric/security/service-admin-row-level-security#define-roles-and-rules-in-power-bi-desktop), keep in mind that the DAX expression you use determines if the RLS model is static or dynamic.
 
 ## When to use static and dynamic security
 

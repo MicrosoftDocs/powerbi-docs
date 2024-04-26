@@ -76,7 +76,7 @@ landingContent:
           - text: Power BI Desktop privacy levels
             url: desktop-privacy-levels.md 
           - text: Row-level security (RLS)
-            url: /fabric/security/service-admin-rls                       
+            url: /fabric/security/service-admin-row-level-security                       
       - linkListType: how-to-guide
         links:                    
           - text: Use service tags
