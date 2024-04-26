@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 04/26/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,17 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## April 2024 QFE 2
+ 
+*Version 2.128.1177.0: , Released: April 24 , 2024*
+
+Bug fixes/improvements:
+
+* Version update for Mashup Provider NuGet packages (to include QFE fixes)
+* Disabled contextual summarize columns for Power BI Desktop to make consistent with the Power BI service
+* Updated error messages in the Azure Data Lake Storage (ADLS) connector
 
 
 
