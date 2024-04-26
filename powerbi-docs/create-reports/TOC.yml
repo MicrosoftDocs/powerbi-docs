@@ -105,9 +105,9 @@
         - name: Intro to Copilot for Power BI
           href: copilot-introduction.md
         - name: Enable Copilot in Power BI
-          href: copilot-evaluate-data.md
-        - name: Update a data model to work with Copilot
           href: copilot-enable-power-bi.md
+        - name: Update a data model to work with Copilot
+          href: copilot-evaluate-data.md
         - name: Create reports in the Power BI service with Copilot
           href: copilot-create-report-service.md
         - name: Create reports in Power BI Desktop with Copilot
