@@ -151,11 +151,12 @@ On the **Audience** tab, you create and manage audience groups within the app.
     >[!IMPORTANT]
     >
     >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you select [Allow access to hidden content](#allow-access-to-hidden-content), a user with a direct link to *any* of the content in the app can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
-    >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >- Dashboard tiles pointing at reports that are not added to the app or are added but hidden from the audience will not work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >    - If you only add dashboards with report tiles to your app the app will not display anything to your audience. Be sure to add the reports related to added dashboards and make them visible to the audience or select **Allow access to hidden content**.
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
     >
-    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
+    >To address these issues, make sure that all the dependent reports are added to the app and visible for the audience. If hidden from the audience select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
