@@ -100,10 +100,10 @@ A Power BI Desktop [live connection](../connect-data/desktop-report-lifecycle-da
 
 There are several advantages to publishing reports to a workspace different from where the semantic model is stored.
 
-First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](../enterprise/service-admin-rls.md) to take effect when necessary for users assigned to the viewer role.
+First, there's clarity on who's responsible for managing content in which workspace. Second, report creators have permissions to publish content to a reporting workspace (via workspace admin, member, or contributor roles). However, they only have Read and Build permissions for specific semantic models. This technique allows [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to take effect when necessary for users assigned to the viewer role.
 
 > [!IMPORTANT]
-> When you publish a Power BI Desktop report to a workspace, the RLS roles are applied to members who are assigned to the viewer role in the workspace. Even if viewers have Build permission to the semantic model, RLS still applies. For more information, see [Using RLS with workspaces in Power BI](../enterprise/service-admin-rls.md#using-rls-with-workspaces-in-power-bi).
+> When you publish a Power BI Desktop report to a workspace, the RLS roles are applied to members who are assigned to the viewer role in the workspace. Even if viewers have Build permission to the semantic model, RLS still applies. For more information, see [Using RLS with workspaces in Power BI](/fabric/security/service-admin-row-level-security#using-rls-with-workspaces-in-power-bi).
 
 ### Dependency and impact analysis
 

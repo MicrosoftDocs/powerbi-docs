@@ -91,7 +91,7 @@ It's possible for a service principal to create data source credentials that are
 
 :::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment-resuse-data-source-credentials.png" alt-text="Diagram that shows a setup for two tenants. Each tenant share the same data source credentials." border="false":::
 
-When data source credentials are shared by semantic mdoels that belong to different customer tenants, the customer tenants aren't fully isolated.
+When data source credentials are shared by semantic models that belong to different customer tenants, the customer tenants aren't fully isolated.
 
 ### Design strategies prior to service principal profiles
 

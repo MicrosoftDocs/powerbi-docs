@@ -89,7 +89,7 @@ Dataverse can enforce complex [role-based security](/power-platform/admin/wp-sec
 
 A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design, providing performance is acceptable.
 
-For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) to the model, if necessary.
+For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to the model, if necessary.
 
 > [!NOTE]
 > It might be challenging to replicate some Dataverse role-based security as Power BI RLS, especially when Dataverse enforces complex permissions. Further, it might require ongoing management to keep Power BI permissions in sync with Dataverse permissions.

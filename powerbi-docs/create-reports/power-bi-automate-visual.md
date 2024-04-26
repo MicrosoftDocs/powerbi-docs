@@ -7,7 +7,7 @@ ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/20/2024
+ms.date: 04/23/2024
 LocalizationGroup: Create reports
 ---
 # Create a Power Automate visual for Power BI 
@@ -47,11 +47,6 @@ When you create a Power Automate visual in a Power BI report, your end-users can
     :::image type="content" source="media/power-bi-automate-visual/power-automate-steps.png" alt-text="Screenshot showing Flow button resized and repositioned on the report.":::
 
 3. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
-
-## Change the environment in which your flow is created
-To select your preferred environment for creating your flow, use the environment picker in the Power Automate custom visual. This includes environments where you have any built-in security role, as well as any environments where you are a co-owner of one or more flows. If you cannot find your preferred environment, learn more about the [requirements for accessing environments in product experiences](/power-platform/admin/troubleshoot-missing-environments).
-
-:::image type="content" source="media/power-bi-automate-visual/power-automate-step-1-select-environment.png" alt-text="Screenshot showing Change the environment in which your flow is created.":::
 
 ## Edit the flow
 
@@ -159,6 +154,7 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
 - The visual doesn't work in Publish to Web (public) scenarios, because unauthenticated scenarios aren't supported by Power Automate.
 - The visual doesn't support export scenarios.
+- Changing the environment is currently not supported. 
 
 
 ## Related content

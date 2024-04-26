@@ -55,7 +55,7 @@ When you've implemented [DLP for Power BI](powerbi-implementation-planning-data-
 
 ## Power BI protection metrics
 
-The [data protection metrics report](/power-bi/enterprise/service-security-data-protection-metrics-report) is a dedicated report in the Power BI admin portal. It summarizes how sensitivity labels are assigned to content in your Power BI tenant.
+The [data protection metrics report](/fabric/governance/use-microsoft-purview-hub) is a dedicated report in the Power BI admin portal. It summarizes how sensitivity labels are assigned to content in your Power BI tenant.
 
 - **What to look for:** You can gain a quick sense for how frequently sensitivity labels are applied to each type of item (for example, semantic model or report) in the Power BI service.
 - **Actions to take:** Review this report to become familiar with how much content doesn't have a label applied.

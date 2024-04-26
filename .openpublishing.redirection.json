@@ -1141,6 +1141,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/create-reports/copilot-create-report.md",
+            "redirect_url": "/power-bi/create-reports/copilot-introduction",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-shared-with-me.md",
             "redirect_url": "/power-bi/collaborate-share/end-user-shared-with-me",
             "redirect_document_id": false
@@ -2990,6 +2995,101 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-mandatory-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-mandatory-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-metadata-scanning.md",
+            "redirect_url": "/fabric/governance/metadata-scanning-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-default-label-policy.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-default-label-policy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-downstream-inheritance.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-downstream-inheritance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-from-data-sources.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-set-remove-api.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-paginated-reports.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-paginated-reports",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-troubleshooting.md",
+            "redirect_url": "/fabric/governance/service-security-sensitivity-label-troubleshooting",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-using-defender-for-cloud-apps-controls.md",
+            "redirect_url": "/fabric/governance/service-security-using-defender-for-cloud-apps-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/power-bi-allow-list-urls.md",
+            "redirect_url": "/fabric/security/power-bi-allow-list-urls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-overview.md",
+            "redirect_url": "/fabric/get-started/direct-lake-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-create-lakehouse.md",
+            "redirect_url": "/fabric/get-started/direct-lake-create-lakehouse",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-fixed-identity.md",
+            "redirect_url": "/fabric/get-started/direct-lake-fixed-identity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/directlake-analyze-qp.md",
+            "redirect_url": "/fabric/get-started/direct-lake-analyze-query-processing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-security-data-protection-metrics-report.md",
+            "redirect_url": "/fabric/governance/use-microsoft-purview-hub",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-release-management.md",
+            "redirect_url": "/fabric/release-plan/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-site-reliability-engineering-model.md",
+            "redirect_url": "/fabric/admin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-ols.md",
+            "redirect_url": "/fabric/security/service-admin-object-level-security",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-rls.md",
+            "redirect_url": "/fabric/security/service-admin-row-level-security",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-connect-to-smartsheet.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-smartsheet",
             "redirect_document_id": true
@@ -4694,7 +4794,12 @@
             "source_path": "powerbi-docs/admin/service-admin-reference.md",
             "redirect_url": "/power-bi/enterprise/service-admin-reference",
             "redirect_document_id": false
-        }, 
+        },
+        {
+            "source_path": "powerbi-docs/consumer/fabric-trial.md",
+            "redirect_url": "/fabric/get-started/fabric-trial",
+            "redirect_document_id": false
+        },  
         {
             "source_path": "powerbi-docs/admin/service-admin-rls.md",
             "redirect_url": "/power-bi/enterprise/service-admin-rls",
@@ -5975,52 +6080,7 @@
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-varp-function.md",
             "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-varp-function",
             "redirect_document_id": false
-        },    
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-mandatory-label-policy.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-mandatory-label-policy",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-admin-metadata-scanning.md",
-            "redirect_url": "/fabric/governance/metadata-scanning-overview",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-default-label-policy.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-default-label-policy",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-downstream-inheritance.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-downstream-inheritance",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-from-data-sources.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-from-data-sources",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-inheritance-set-remove-api.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-inheritance-set-remove-api",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-paginated-reports.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-paginated-reports",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-troubleshooting.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-troubleshooting",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-security-using-defender-for-cloud-apps-controls.md",
-            "redirect_url": "/fabric/governance/service-security-using-defender-for-cloud-apps-controls",
-            "redirect_document_id": false
-        }
+        }                                                                                                                                                                                                                                                                                                                                           
   ]          
 
 }
