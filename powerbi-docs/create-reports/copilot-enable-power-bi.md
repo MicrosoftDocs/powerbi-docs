@@ -24,37 +24,44 @@ For more information on other Fabric workloads, see the [Copilot in Fabric overv
 ## Enable Fabric Copilot for Power BI in your tenant
 
 Before your business can start using Copilot for Power BI, you need to enable it in the Microsoft Fabric Admin Portal. There are two main settings related to Copilot that admins need to be aware of:
-1.	Enable Copilot setting
-    - Navigate to the [Tenant settings](https://app.powerbi.com/admin-portal/tenantSettings) in the Fabric Admin portal and use the **Search** feature to locate the Copilot settings.
+
+###	Enable Copilot setting
+
+1. Navigate to the [Tenant settings](/fabric/admin/service-admin-portal-copilot) in the Fabric Admin portal and use the **Search** feature to locate the Copilot settings.
     
-    - **Toggle the switch on** to Enable Copilot in Fabric.
-        - Enabling Copilot in Fabric means that users can access Copilot across workloads. This means Copilot access isn't limited to a specific workload, like Power BI.
+1. **Toggle the switch on** to Enable Copilot in Fabric.
+        
+    Enabling Copilot in Fabric means that users can access Copilot across workloads. This means Copilot access isn't limited to a specific workload, like Power BI.
 
-        :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" alt-text="Screenshot of Copilot settings in the Fabric Admin portal, with callouts to the search bar (1), the switch to enable Copilot (2), and who the settings should apply to (3)." lightbox="media/copilot-enable-power-bi/copilot-settings-admin-portal.png":::
-              1. Use the search bar (or scroll) to find the Copilot and Azure OpenAI Service (preview) settings.<br>
-              2. Toggle the switch to the on position. <br>
-              3. Specify who can access Copilot in Fabric. Select Apply to save your changes.
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-admin-portal.png" alt-text="Screenshot of Copilot settings in the Fabric Admin portal." lightbox="media/copilot-enable-power-bi/copilot-settings-admin-portal.png":::
+ 
+    1. Use the search bar (or scroll) to find the **Copilot and Azure OpenAI Service (preview)** settings.
+    1. Toggle the switch to the on position.
+    1. Specify who can access Copilot in Fabric. Select **Apply** to save your changes.
 
-2. Enable the sharing of data across geographic boundaries. Enabling this setting only applies if Azure OpenAI is not available in your geographic region.
-   - If Azure OpenAI isn't available in your geographic region, you need to adjust one additional setting. This means that your data may be handled outside of your area.
-   - If you’re okay with that, switch on the setting **Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance**.
+### Enable sharing data across geographic boundaries
 
-        :::image type="content" source="media/copilot-enable-power-bi/copilot-geographic-settings.png" alt-text="Screenshot of the second Copilot setting in the Fabric admin portal that asks admins to enable if OpenAI isn't available in the capacity's home region." lightbox="media/copilot-enable-power-bi/copilot-geographic-settings.png":::
+Enabling this setting only applies if Azure OpenAI isn't available in your geographic region.
 
-## Enable Fabric Copilot for Power BI in the service
+- If Azure OpenAI isn't available in your geographic region, you need to adjust one additional setting. This means that your data may be handled outside of your area.
+- If you’re okay with your data being handled outside of your area, switch on the setting **Data sent to Azure OpenAI can be processed outside your capacity's geographic region, compliance boundary, or national cloud instance**, and select **Apply**.
 
-To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace is in the right capacity. The workspace must be in either Premium Power BI (P1 and above) or paid Fabric (F64 and above) capacity.
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-geographic-settings.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that asks admins to enable if OpenAI isn't available in the capacity's home region." lightbox="media/copilot-enable-power-bi/copilot-geographic-settings.png":::
+
+### Enable Fabric Copilot for Power BI in the service
+
+To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](/enterprise/service-premium-features.md) or paid [Fabric (F64 and above)](/fabric/enterprise/licenses) capacity.
 
 > [!NOTE]
 > For a refresher on workspace access and permissions, see [Roles in workspaces in Power BI](/power-bi/collaborate-share/service-roles-new-workspaces).
 
 Check your license type in the **Workspace settings**.
 
-1. Select **More…** to navigate to the **Workspace settings**.
+1. Select **More** to navigate to the **Workspace settings**.
 
     :::image type="content" source="media/copilot-enable-power-bi/workspace-settings.png" alt-text="Screenshot of the more menu a workspace in the Power BI service with a red box around workspace settings." lightbox="media/copilot-enable-power-bi/workspace-settings.png":::
 
-2. Apply either **Premium capacity** or **Fabric capacity** to the workspace and use the x to exit workspace settings.
+1. Apply either **Premium capacity** or **Fabric capacity** to the workspace and use the x to exit workspace settings.
 
     :::image type="content" source="media/copilot-enable-power-bi/workspace-settings-license.png" alt-text="Screenshot of the Premium section of the workspace settings, with arrows pointing to Premium capacity and Fabric capacity." lightbox="media/copilot-enable-power-bi/workspace-settings-license.png":::
 
@@ -73,27 +80,27 @@ When you use Copilot in Power BI Desktop for the first time, you’re asked to p
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-button-ribbon.png" alt-text="Screenshot of the Copilot pane in Power BI desktop." lightbox="media/copilot-enable-power-bi/copilot-button-ribbon.png":::
 
-2. Select the **workspace** you’d like to associate this report with for Copilot use. Only workspaces that support Copilot appear.
+1. Select the **workspace** you’d like to associate this report with for Copilot use. Only workspaces that support Copilot appear.
 
-    :::image type="content" source="media/copilot-enable-power-bi/copilot-workspace-selection.png" alt-text="Screenshot of the workspace picker in Power BI desktop that appears to enable you to select a Copilot supported workspace." lightbox="media/copilot-enable-power-bi/copilot-workspace-selection.png":::
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-workspace-selection.png" alt-text="Screenshot of the workspace picker in Power BI desktop that appears to enable you to select a Copilot supported workspace.":::
 
     Use the **Settings** gear in the bottom right corner of Power BI to switch the associated workspace or check which workspace your report is associated with.
 
-    :::image type="content" source="media/copilot-enable-power-bi/report-settings-gear.png" alt-text="Screenshot of the workspace settings in Power BI desktop." lightbox="media/copilot-enable-power-bi/report-settings-gear.png":::
+    :::image type="content" source="media/copilot-enable-power-bi/report-settings-gear.png" alt-text="Screenshot of the workspace settings in Power BI desktop.":::
 
     This opens the **Options** window, where you can navigate to the **Copilot (preview)** settings to see which workspace you’re currently working with and select a new workspace.
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-settings.png" alt-text="Screenshot of the Power BI desktop options window, Copilot settings." lightbox="media/copilot-enable-power-bi/copilot-settings.png":::
 
-    If you don’t have access to any workspaces that are in the correct capacity to use Copilot, you’ll see the following message in the **Copilot (preview)** settings: *Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them.*
+    If you don’t have access to any workspaces that are in the correct capacity to use Copilot, you see the following message in the **Copilot (preview)** settings: *Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them.*
 
-    :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-error.png" alt-text="Screenshot of the Copilot settings with the error message: Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them." lightbox="media/copilot-enable-power-bi/copilot-settings-error.png":::
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-error.png" alt-text="Screenshot of the Copilot settings with the error message." lightbox="media/copilot-enable-power-bi/copilot-settings-error.png":::
 
 ## Licensing requirements
 
 To use Copilot for Power BI, you must have access to a Premium Power BI capacity (P1 and above) or paid Fabric capacity (F64 and above). Your capacity (either Premium or Fabric) needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability).
 
-> [Note!]
+> [!NOTE]
 > Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported.
 
 ## Send feedback
