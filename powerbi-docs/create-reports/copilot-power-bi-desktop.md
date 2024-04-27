@@ -1,6 +1,6 @@
 ---
 title: Use Copilot in Power BI Desktop
-description: Copilot in Power BI Desktop helps you create reports faster and easier.
+description: Fabric Copilot in Power BI Desktop helps you create reports faster and easier.
 author: shannonlindsay
 ms.author: shlindsay
 ms.reviewer: maggies

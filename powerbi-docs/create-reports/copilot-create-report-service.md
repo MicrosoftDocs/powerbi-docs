@@ -57,7 +57,7 @@ Check your license type in the **Workspace settings**.
 
 To see the **Copilot** button in your report, you first need to select a semantic model.
 
-1. If this is your first time using Copilot in the Power BI service, see [Start Fabric Copilot for Power BI in the service the first time](copilot-enable-power-bi.md##start-copilot-for-power-bi-in-the-service).
+1. If this is your first time using Copilot in the Power BI service, see [Start Fabric Copilot for Power BI in the service the first time](copilot-enable-power-bi.md#start-copilot-for-power-bi-in-the-service).
 
 1. Select the Data hub, then select **More options (...)** for the dataset you want to explore > **Create report**.
 
