@@ -34,7 +34,7 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Start Copilot the first time
+## Use Copilot the first time
 
 1. Open Power BI Desktop.
 

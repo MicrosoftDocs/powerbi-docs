@@ -31,7 +31,7 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Start Copilot for Power BI in the service the first time
+## Use Copilot for Power BI in the service the first time
 
 To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F64 and above)](/fabric/enterprise/licenses) capacity.
 
