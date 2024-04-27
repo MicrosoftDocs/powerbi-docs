@@ -7,7 +7,7 @@ ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/08/2024
+ms.date: 04/26/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI Desktop to create a Power BI report quickly.

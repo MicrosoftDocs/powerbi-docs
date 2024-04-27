@@ -22,6 +22,37 @@ To use Copilot in Power BI Desktop, you need admin, member, or contributor acces
 
 When you use Copilot in Power BI Desktop for the first time, you’re asked to pick a Copilot compatible workspace when you select the Copilot button in the ribbon. The workspace you select doesn’t need to be the same as the workspace where you plan to publish your report.
 
+## Start Copilot in Power BI Desktop the first time
+
+To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
+
+> [!NOTE]
+> The Copilot button in Desktop always appears in the ribbon. To be able to use Copilot, you must be signed in and have access to a workspace that is in Premium or Fabric capacity.
+
+When you use Copilot in Power BI Desktop for the first time, you’re asked to pick a Copilot compatible workspace when you select the Copilot button in the ribbon. The workspace you select doesn’t need to be the same as the workspace where you plan to publish your report.
+
+1. Open a Power BI report and select **Copilot** in the ribbon. The Copilot pane appears and prompts you to select a **workspace**.
+
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-button-ribbon.png" alt-text="Screenshot of the Copilot pane in Power BI desktop." lightbox="media/copilot-enable-power-bi/copilot-button-ribbon.png":::
+
+1. Select the **workspace** you’d like to associate this report with for Copilot use. Only workspaces that support Copilot appear.
+
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-workspace-selection.png" alt-text="Screenshot of the workspace picker in Power BI desktop that appears to enable you to select a Copilot supported workspace.":::
+
+    Use the **Settings** gear in the bottom-right corner of Power BI to switch the associated workspace or check which workspace your report is associated with.
+
+    :::image type="content" source="media/copilot-enable-power-bi/report-settings-gear.png" alt-text="Screenshot of the workspace settings in Power BI desktop.":::
+
+    This opens the **Options** window, where you can navigate to the **Copilot (preview)** settings to see which workspace you’re currently working with and select a new workspace.
+
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-settings.png" alt-text="Screenshot of the Power BI desktop options window, Copilot settings." lightbox="media/copilot-enable-power-bi/copilot-settings.png":::
+
+    If you don’t have access to any workspaces that are in the correct capacity to use Copilot, you see the following message in the **Copilot (preview)** settings: *Either none of your workspaces have the right capacity to use Copilot, or you don't have the right permission to use them.*
+
+    :::image type="content" source="media/copilot-enable-power-bi/copilot-settings-error.png" alt-text="Screenshot of the Copilot settings with the error message." lightbox="media/copilot-enable-power-bi/copilot-settings-error.png":::
+
+1. Now you're ready to [create a report with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
+
 1. Open a Power BI report and select **Copilot** in the ribbon. The Copilot pane appears and prompts you to select a **workspace**.
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-button-ribbon.png" alt-text="Screenshot of the Copilot pane in Power BI desktop." lightbox="media/copilot-enable-power-bi/copilot-button-ribbon.png":::
