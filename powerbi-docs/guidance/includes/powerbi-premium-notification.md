@@ -3,7 +3,7 @@ author: peter-myers
 ms.author: v-myerspeter
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: include
 ms.date: 04/26/2024
 ---
 
