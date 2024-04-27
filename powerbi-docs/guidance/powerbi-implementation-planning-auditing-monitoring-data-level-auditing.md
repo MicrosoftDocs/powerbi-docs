@@ -22,6 +22,8 @@ This data-level auditing article is targeted at multiple audiences:
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
 - **System administrators:** The team that's responsible for creating and securing [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-workspace-overview) resources, and the database administrators who manage data sources.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
 Achieving good performance in reports and visuals isn't possible when the underlying semantic model and/or data source isn't performing well. This article focuses on auditing and monitoring of semantic models, dataflows, and datamarts. It's the second article in the auditing and monitoring series because the tools and techniques are more complex than what's described in the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article. Ideally, you create shared semantic models (intended for reuse among many reports) before users create reports. Therefore, we recommend that you read this article together with the [Report-level auditing](powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md) article.

@@ -98,6 +98,8 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 - Procure initial [Premium capacity license](../enterprise/service-admin-premium-purchase.md) (if applicable).
 - Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Define success criteria for migration
 
 The first task is to understand what success looks like for migrating an individual solution. Questions you might ask include:

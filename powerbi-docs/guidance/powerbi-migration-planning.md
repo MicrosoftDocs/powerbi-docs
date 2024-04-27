@@ -72,6 +72,8 @@ There are several key decisions to be made related to allowing consumers to crea
 
 ## Evaluate needs for Premium capacity
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 Additional capabilities are available when a workspace is stored on a [Premium capacity](../enterprise/service-premium-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
 
 - Content can be accessed by consumers who don't have a Power BI Pro or Premium Per User (PPU) license.

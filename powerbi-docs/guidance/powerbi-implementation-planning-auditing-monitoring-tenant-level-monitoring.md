@@ -138,6 +138,8 @@ For more information about how to support users in your organization, see [User 
 
 You can receive alert notifications by email to inform you when there's a service outage, interruption, or degradation occurring in your Power BI tenant. These notifications are available only for Premium workspaces.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 To set up email alerts, enable the _Receive email notifications for service outages or incidents_ [tenant setting](/fabric/admin/service-admin-portal-help-support#receive-email-notifications-for-service-outages-or-incidents). Because its purpose is to send email, you must assign a mail-enabled security group to this setting. We recommend that you use a group name like _Power BI System Support_. You should add your Power BI administrators, key personnel from your [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md) (COE), and your [help desk](fabric-adoption-roadmap-user-support.md#help-desk-support) that handles user support to this group.
 
 > [!TIP]

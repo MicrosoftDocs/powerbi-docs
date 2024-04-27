@@ -229,6 +229,8 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Who has permission to manage [gateways](/data-integration/gateway/manage-security-roles#gateway-roles) and [data connections](/data-integration/gateway/manage-security-roles#connection-roles)?
   - Who has permission to manage a [Premium capacity](../enterprise/service-admin-premium-manage.md#manage-user-permissions)?
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 > [!TIP]
 > For more considerations about security, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
 

@@ -49,6 +49,8 @@ Broadly, there are two different services that can implement data loss preventio
 
 A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) is set up in the Microsoft Purview compliance portal. It can detect sensitive data in a semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) that's been published to a Premium workspace in the Power BI service.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 The goal for this type of DLP policy is to bring awareness to users and inform administrators of where sensitive data is stored. The DLP policy can generate user notifications and administrator alerts based on sensitive information types or sensitivity labels. For example, you can determine whether credit card information or personally identifiable information (PII) is stored in a semantic model.
 
 > [!NOTE]

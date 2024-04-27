@@ -349,7 +349,11 @@ There are several settings you can set up for each individual workspace. These s
 
 ### Workspace license mode
 
-Each workspace has a [license mode](/fabric/get-started/workspaces#license-mode) setting. It can be set to **Pro**, **Premium per user (PPU)**, **Fabric capacity**, **Embedded**, or **Trial**. The [type of license](/fabric/enterprise/licenses#microsoft-fabric-license-types) is important for workspace planning because it determines:
+Each workspace has a [license mode](/fabric/get-started/workspaces#license-mode) setting. It can be set to **Pro**, **Premium per user**, **Premium capacity**, **Embedded**, **Fabric capacity**, or **Trial**.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+The [type of license](/fabric/enterprise/licenses#microsoft-fabric-license-types) is important for workspace planning because it determines:
 
 - **Features:** Different features are supported. PPU includes more features (such as [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)) that aren't available in Pro. Many more Fabric features (such as [lakehouses](/fabric/data-engineering/lakehouse-overview)) become available for workspaces assigned to a Fabric capacity.
 - **Content access:** The license type determines who can access content in the workspace:
