@@ -6,9 +6,8 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: conceptual
-ms.custom: fabric-cat
+ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.date: 03/06/2024
 ---
 

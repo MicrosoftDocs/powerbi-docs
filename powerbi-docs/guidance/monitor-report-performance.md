@@ -4,7 +4,6 @@ description: Guidance on how to monitor report performance in Power BI.
 author: peter-myers
 ms.author: v-myerspeter
 ms.reviewer: maroche
-ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
