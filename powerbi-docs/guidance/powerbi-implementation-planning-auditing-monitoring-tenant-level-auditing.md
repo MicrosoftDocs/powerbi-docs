@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/06/2024
 ---
 

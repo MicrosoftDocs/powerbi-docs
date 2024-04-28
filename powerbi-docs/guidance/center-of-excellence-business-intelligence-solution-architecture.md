@@ -1,12 +1,13 @@
 ---
 title: BI solution architecture in the Center of Excellence
 description: Learn what to consider when designing and developing a robust BI platform.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/11/2022
 ---
 # BI solution architecture in the Center of Excellence

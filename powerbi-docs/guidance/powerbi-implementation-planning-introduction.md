@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.custom: video-RWUWA9
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 04/24/2024
 ---
 

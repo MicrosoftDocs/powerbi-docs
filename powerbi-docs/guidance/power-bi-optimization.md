@@ -1,12 +1,13 @@
 ---
 title: Optimization guide for Power BI
 description: This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: nisrinivasan
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/10/2023
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: Composite model guidance in Power BI Desktop
 description: Guidance for developing Power BI composite models.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/10/2023
 ---
 

@@ -7,8 +7,9 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 06/01/2023
+ms.custom: fabric-cat
 ms.custom: intro-migration
+ms.date: 06/01/2023
 ---
 
 # Plan to migrate .rdl reports to Power BI

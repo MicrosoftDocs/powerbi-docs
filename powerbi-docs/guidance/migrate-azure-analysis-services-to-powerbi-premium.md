@@ -7,8 +7,9 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.custom: fabric-cat
 ms.custom: intro-migration
+ms.date: 05/22/2023
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium
