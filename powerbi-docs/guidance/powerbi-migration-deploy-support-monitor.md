@@ -7,8 +7,8 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat, intro-deployment
 ms.date: 02/27/2022
-ms.custom: intro-deployment
 ---
 
 # Deploy to Power BI

@@ -6,8 +6,8 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.custom: video-RWUWA9
 ms.topic: conceptual
+ms.custom: fabric-cat, video-RWUWA9
 ms.date: 04/24/2024
 ---
 
