@@ -15,7 +15,7 @@ ms.date: 12/04/2023
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-This article explains how to set up row-level security (RLS) for paginated reports in Power BI. If your paginated report is based on a Power BI semantic model, the article [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) provides a solid background for setting up RLS to use in your paginated report.
+This article explains how to set up row-level security (RLS) for paginated reports in Power BI. If your paginated report is based on a Power BI semantic model, the article [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security) provides a solid background for setting up RLS to use in your paginated report.
 
 To use RLS in a paginated report, you first [create parameters](#create-a-parameter-using-userid) in that report. Then you take advantage of the built-in field **UserID**:
 
@@ -28,7 +28,7 @@ To use RLS in a paginated report, you first [create parameters](#create-a-parame
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-- For [row-level security (RLS)](../enterprise/service-admin-rls.md) to work in Power BI Report Builder, You need at least a Viewer role in the dataset workspace, and Build permission for the dataset. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- For [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to work in Power BI Report Builder, You need at least a Viewer role in the dataset workspace, and Build permission for the dataset. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - You create paginated reports using the SQL Server Reporting Services engine, and not the Power BI (Analysis Services) engine, so you set up RLS filtering in [Power BI Report Builder](report-builder-power-bi.md).
 
 ## Create a parameter using UserID

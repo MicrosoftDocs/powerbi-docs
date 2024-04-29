@@ -28,7 +28,7 @@ Be sure that you're using the latest version of Power BI Desktop. Go to one of t
 
 ### Check your firewall and proxy settings
 
-If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](../admin/power-bi-allow-list-urls.md). 
+If you're behind a firewall, using a proxy server, or using antivirus/security software, make sure that your network configurations allow Power BI Desktop to connect to the Power BI service. Work with your IT department or network administrator to [add Power BI URLs to your allowlist](/fabric/security/power-bi-allow-list-urls). 
 
 ### Check your network connectivity
 

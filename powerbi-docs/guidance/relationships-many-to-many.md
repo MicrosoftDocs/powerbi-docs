@@ -1,12 +1,13 @@
 ---
 title: Many-to-many relationship guidance
 description: Guidance for developing many-to-many model relationships.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/17/2022
 ---
 

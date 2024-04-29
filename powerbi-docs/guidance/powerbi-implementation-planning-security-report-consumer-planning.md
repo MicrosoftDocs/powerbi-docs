@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/15/2023
 ---
 
@@ -385,7 +386,7 @@ Some organizations have specific requirements for [endorsed](/power-bi/collabora
 
 You can accomplish data security in multiple ways.
 
-- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) and [object-level security (OLS)](/power-bi/enterprise/service-admin-ols). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. These defined RLS and OLS rules do not apply to references stored outside the semantic model such as slicer and filter selections. Both RLS and OLS techniques are further described later in this section.
+- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/fabric/security/service-admin-row-level-security) and [object-level security (OLS)](/fabric/security/service-admin-object-level-security). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. These defined RLS and OLS rules do not apply to references stored outside the semantic model such as slicer and filter selections. Both RLS and OLS techniques are further described later in this section.
 - **Analysis Services:** A live connection semantic model can connect to a remote data model, which is hosted by either Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS). The remote model can enforce RLS or OLS based on the consumer identity.
 - **Data source:** Some data sources, like Azure SQL Database, can enforce RLS. In this case, the Power BI model can take advantage of the existing security rather than redefining it. That approach can be a significant advantage when RLS defined in the source is complex. You can develop and publish a DirectQuery model and set the data source credentials of the semantic model in the Power BI service to enable [single sign-on (SSO)](/power-bi/connect-data/service-azure-sql-database-with-direct-connect). When a report consumer opens a report, Power BI passes their identity to the data source. The data source then enforces RLS based on the identity of the report consumer. For more information about Azure SQL Database RLS, see [this article](/sql/relational-databases/security/row-level-security).
 
@@ -394,7 +395,7 @@ You can accomplish data security in multiple ways.
 
 ### Row-level security
 
-[Row-level security (RLS)](/power-bi/enterprise/service-admin-rls) allows a data modeler to restrict access to a subset of data. It's typically used to ensure that some report consumers can't see specific data, like sales results of other sales regions.
+[Row-level security (RLS)](/fabric/security/service-admin-row-level-security) allows a data modeler to restrict access to a subset of data. It's typically used to ensure that some report consumers can't see specific data, like sales results of other sales regions.
 
 > [!TIP]
 > If you've noticed someone creating multiple data models to support different groups of consumers, check whether RLS will satisfy their requirements. It's typically better to create, test, and maintain one data model rather than multiple data models.
@@ -410,14 +411,14 @@ For semantic models, a data modeler can set up RLS in Power BI Desktop by creati
 > [!IMPORTANT]
 > A model without roles means that users (who have permission to query the data model) have access to all model data.
 
-[Rule expressions](/power-bi/enterprise/service-admin-rls#define-roles-and-rules-in-power-bi-desktop) are evaluated within row context. Row context means the expression is evaluated for each row by using the column values of that row. When the expression returns `TRUE`, the user can see the row. You can define rules that are either _static_ or _dynamic_.
+[Rule expressions](/fabric/security/service-admin-row-level-security#define-roles-and-rules-in-power-bi-desktop) are evaluated within row context. Row context means the expression is evaluated for each row by using the column values of that row. When the expression returns `TRUE`, the user can see the row. You can define rules that are either _static_ or _dynamic_.
 
 - **Static rules:** Use DAX expressions that refer to constants, like `[Region] = "Midwest"`.
 - **Dynamic rules:** Use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions: [USERNAME](/dax/username-function-dax), [USERPRINCIPALNAME](/dax/userprincipalname-function-dax), and [CUSTOMDATA](/dax/customdata-function-dax). Defining dynamic rules is simple and effective when a model table stores username values. They allow you to enforce a _data-driven_ RLS design.
 
 #### RLS role mappings
 
-After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
+After you publish the model to the Power BI service, you must set up [role mappings](/fabric/security/service-admin-row-level-security#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
 
 Whenever possible, it's a best practice to map roles to [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). That way, there will be fewer mappings, and group membership management can be handled by the owner of the group.
 
@@ -465,7 +466,7 @@ For more information, see [RLS for datamarts](/power-bi/transform-model/datamart
 
 ### Object-level security
 
-[Object-level security (OLS)](/power-bi/enterprise/service-admin-ols) allows a data modeler to restrict access to specific tables and columns, and their metadata. You typically use OLS to ensure sensitive columns, like employee salary, aren't visible to certain users. While it isn't possible to restrict access to measures, any measure that references a restricted column will itself be restricted.
+[Object-level security (OLS)](/fabric/security/service-admin-object-level-security) allows a data modeler to restrict access to specific tables and columns, and their metadata. You typically use OLS to ensure sensitive columns, like employee salary, aren't visible to certain users. While it isn't possible to restrict access to measures, any measure that references a restricted column will itself be restricted.
 
 Consider an example of an employee table. It contains columns that store the employee name and phone number, and also salary. You can use OLS to ensure that only certain users, like senior Human Resources staff, can see salary values. For those users that can't see salary values, it's as if that column doesn't exist.
 

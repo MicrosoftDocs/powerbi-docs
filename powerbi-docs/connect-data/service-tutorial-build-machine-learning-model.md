@@ -8,11 +8,15 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 11/10/2023
+ms.date: 04/25/2024
 #customer intent: "As a Power BI end user, I want to build a machine learning model so I can use machine learning with Power BI."
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Build a machine learning model in Power BI
+
+> [!IMPORTANT]
+> Creation of Power BI Automated Machine Learning (AutoML) models for dataflows v1 has been retired, and is no longer available. Customers are encouraged to migrate your solution to the AutoML feature in Microsoft Fabric. For more information, see [the retirement announcement](https://powerbi.microsoft.com/blog/announcing-the-deprecation-of-creation-of-machine-learning-models-in-power-bi-using-dataflows-v1/). 
+
 
 In this tutorial, you use *automated machine learning* to create and apply a binary prediction model in Power BI. You create a Power BI dataflow, and use the entities you define in the dataflow to train and validate a machine learning model directly in Power BI. You then use that model to score new data and generate predictions.
 
@@ -25,6 +29,7 @@ This tutorial consists of the following steps:
 > * Review the model validation report.
 > * Apply the model to a dataflow entity.
 > * Use the scored output from the model in a Power BI report.
+
 
 ## Create a dataflow with the input data
 

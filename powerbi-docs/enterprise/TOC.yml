@@ -16,12 +16,6 @@
       href: desktop-admin-sign-in-form.md
     - name: Track user activities in Power BI
       href: service-admin-auditing.md
-    - name: Add Power BI URLs to your allowlist
-      href: power-bi-allow-list-urls.md
-    - name: Power BI site reliability engineering model
-      href: service-admin-site-reliability-engineering-model.md
-    - name: Release management and deployment process
-      href: service-admin-release-management.md     
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
     - name: Using Microsoft Entra B2B
@@ -32,17 +26,6 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
-    - name: Direct Lake
-      expanded: false
-      items:
-      - name: Direct Lake overview
-        href: directlake-overview.md
-      - name: Create a Lakehouse for Direct Lake
-        href: directlake-create-lakehouse.md
-      - name: Specify a fixed identity
-        href: directlake-fixed-identity.md
-      - name: Analyze query processing
-        href: directlake-analyze-qp.md
     - name: OneLake integration for semantic models (Preview)
       href: onelake-integration-overview.md
   - name: Licensing
@@ -138,8 +121,6 @@
         href: service-security-sensitivity-label-custom-help-link.md   
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md  
-      - name: Protection metrics report
-        href: service-security-data-protection-metrics-report.md
     - name: Data loss prevention
       expanded: false
       items:              
@@ -154,13 +135,6 @@
     items:
     - name: Power BI security
       href: service-admin-power-bi-security.md
-    - name: Row-level security
-      expanded: false
-      items:
-      - name: Row-level security
-        href: service-admin-rls.md 
-    - name: Object-level security
-      href: service-admin-ols.md     
     - name: Privacy levels
       href: desktop-privacy-levels.md
     - name: Use service tags with Power BI

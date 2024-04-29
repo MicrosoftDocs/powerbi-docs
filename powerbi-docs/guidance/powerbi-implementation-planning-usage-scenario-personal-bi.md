@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/19/2023
 ---
 
@@ -66,6 +67,8 @@ For personal use, which by definition means there's no sharing or collaboration 
 
 > [!TIP]
 > The [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) scenario describes how users with a Fabric free license can view content when it's hosted in a Premium capacity.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Gateway setup
 

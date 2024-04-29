@@ -84,7 +84,7 @@ You can create or edit relationships between tables in **Model explorer**. Learn
 
 #### Roles
 
-You can create or edit security roles in **Model explorer**. Learn more about security roles in the [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) article.
+You can create or edit security roles in **Model explorer**. Learn more about security roles in the [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security) article.
 
 :::image type="content" source="media/model-explorer/model-explorer-10.png" alt-text="Screenshot of the roles area in Model explorer.":::
 

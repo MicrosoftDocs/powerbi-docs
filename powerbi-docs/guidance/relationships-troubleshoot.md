@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: troubleshooting
+ms.custom: fabric-cat
 ms.date: 10/14/2023
 ---
 
@@ -39,12 +40,12 @@ Here's a list of issues and their possible reasons.
 
 | **Issue** | **Possible reason(s)** |
 |---|---|
-| The visual displays no result | &bull;&nbsp;The model is yet to be loaded with data. <br/>&bull;&nbsp;No data exists within the filter context. <br/>&bull;&nbsp;Row-level security (RLS) is enforced. <br/>&bull;&nbsp;Relationships aren't propagating between tables—_follow checklist above_. <br/>&bull;&nbsp;RLS is enforced, but a bi-directional relationship isn't enabled to propagate—see [Row-level security (RLS) with Power BI Desktop](/power-bi/enterprise/service-admin-rls). |
+| The visual displays no result | &bull;&nbsp;The model is yet to be loaded with data. <br/>&bull;&nbsp;No data exists within the filter context. <br/>&bull;&nbsp;Row-level security (RLS) is enforced. <br/>&bull;&nbsp;Relationships aren't propagating between tables—_follow checklist above_. <br/>&bull;&nbsp;RLS is enforced, but a bi-directional relationship isn't enabled to propagate—see [Row-level security (RLS) with Power BI Desktop](/fabric/security/service-admin-row-level-security). |
 | The visual displays the same value for each grouping | &bull;&nbsp;Relationships don't exist. <br/>&bull;&nbsp;Relationships aren't propagating between tables—_follow checklist above_. |
 | The visual displays results, but they aren't correct | &bull;&nbsp;Visual is incorrectly set up. <br/>&bull;&nbsp;Measure calculation logic is incorrect. <br/>&bull;&nbsp;Model data needs to be refreshed. <br/>&bull;&nbsp;Source data is incorrect. <br/>&bull;&nbsp;Relationship columns are incorrectly related (for example, **ProductID** column maps to **CustomerID**). <br/>&bull;&nbsp;It's a relationship between two DirectQuery tables, and the "one"-side column of a relationship contains duplicate values. |
 | BLANK groupings or slicer/filter items appear, and the source columns don't contain BLANKs | &bull;&nbsp;It's a regular relationship, and "many"-side column contain values not stored in the "one"-side column—see [Model relationships in Power BI Desktop (Regular relationships)](/power-bi/transform-model/desktop-relationships-understand#regular-relationships). <br/>&bull;&nbsp;It's a regular one-to-one relationship, and related columns contain BLANKs—see [Model relationships in Power BI Desktop (Regular relationships)](/power-bi/transform-model/desktop-relationships-understand#regular-relationships). <br/>&bull;&nbsp;An inactive relationship "many"-side column stores BLANKs, or has values not stored on the "one" side. |
 | The visual is missing data | &bull;&nbsp;Incorrect/unexpected filters are applied. <br/>&bull;&nbsp;RLS is enforced. <br/>&bull;&nbsp;It's a limited relationship, and there are BLANKs in related columns, or data integrity issues—see [Model relationships in Power BI Desktop (limited relationships)](/power-bi/transform-model/desktop-relationships-understand#limited-relationships). <br/>&bull;&nbsp;It's a relationship between two DirectQuery tables, the relationship is set to [assume referential integrity](/power-bi/transform-model/desktop-relationships-understand#assume-referential-integrity), but there are data integrity issues (mismatched values in related columns). |
-| RLS isn't correctly enforced | &bull;&nbsp;Relationships aren't propagating between tables—_follow checklist above_. <br/>&bull;&nbsp;RLS is enforced, but a bi-directional relationship isn't enabled to propagate—see [Row-level security (RLS) with Power BI Desktop](/power-bi/enterprise/service-admin-rls). |
+| RLS isn't correctly enforced | &bull;&nbsp;Relationships aren't propagating between tables—_follow checklist above_. <br/>&bull;&nbsp;RLS is enforced, but a bi-directional relationship isn't enabled to propagate—see [Row-level security (RLS) with Power BI Desktop](/fabric/security/service-admin-row-level-security). |
 
 ## Related content
 
