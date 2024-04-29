@@ -9,13 +9,6 @@ ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 04/26/2024
 LocalizationGroup: Transform and shape data
-Search
-Name
-Country Currency Format Strings
-
-
-
-
 ---
 # User-defined aggregations
 
