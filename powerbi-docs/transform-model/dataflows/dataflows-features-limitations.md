@@ -48,6 +48,16 @@ Because dataflows authoring is done in the  Power Query Online (PQO) environment
 
 * Using the Web.Page connector requires a gateway.
 
+* In Dataflows Gen1 editing experience, users may be unable to remove an on-premises data gateway connection from the dataflow using **Options** > **Project** > **Data load** > **select (none)** on the dropdown list Data Gateway. If you come accross this situation try the following workaround:
+   1. Start editing the Dataflow where you want to remove the on-premises data gateway connection.
+   2. Go into **Options** > **Project Data load** > **Data gateway**, select none and hit OK.
+   3. If a yellow warning with a "_Configure connection_" button shows up, click in "_Configure connection_", select the cloud connection from the dropdown box and insert credentials if needed for the cloud connection.
+   4. Click in **Manage connections** > and then hit the **unlink** button of the gateway connection.
+   5. Close the **Manage connections** screen, if it requires you to "Configure connection" again please do so. Hit save and close, and wait for the save operation to complete.
+   6. If the warning "_Configure connection_" does not show after applying the steps above, apply the steps above, save and close the dataflow, then edit it again, check for the "_Configure connection_" warning to show up for you to take action on it.
+
+   If even with these steps the connection to gateway is not removed from the Dataflow, you may need to recrease a new dataflow with the same queries, not bound to the gateway.
+
 ## API considerations
 
 More about supported dataflows REST APIs can be found in the [REST API reference](/rest/api/power-bi/dataflows). Here are some considerations to keep in mind:
