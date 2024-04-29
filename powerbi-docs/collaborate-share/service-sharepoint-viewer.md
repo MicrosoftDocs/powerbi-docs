@@ -145,7 +145,7 @@ To view a report in OneDrive for Business or SharePoint Online, you must:
 
 ## Semantic model mode
 
-To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
+To view a Power BI file in OneDrive or SharePoint, the data must be in **import** mode or **live connected to a semantic model** in the Power BI service. Files with other modes prompt you to download the file to open locally in Power BI Desktop.
 
 ### Audit logs
 
