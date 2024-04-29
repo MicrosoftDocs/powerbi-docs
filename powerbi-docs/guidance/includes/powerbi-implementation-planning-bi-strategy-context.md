@@ -3,7 +3,7 @@ author: data-goblin
 ms.author: v-kurtbuhler
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: include
 ms.date: 01/24/2024
 ---
 

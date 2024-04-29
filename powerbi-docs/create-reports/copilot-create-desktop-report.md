@@ -7,7 +7,7 @@ ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/08/2024
+ms.date: 04/26/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI Desktop to create a Power BI report quickly.
@@ -17,7 +17,9 @@ no-loc: [Copilot]
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop.
+When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop. 
+
+To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
 :::image type="content" source="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png" alt-text="Screenshot showing Copilot creating a page about the popular islands." lightbox="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png":::
 
@@ -32,7 +34,7 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Start Copilot the first time
+## Use Copilot the first time
 
 1. Open Power BI Desktop.
 

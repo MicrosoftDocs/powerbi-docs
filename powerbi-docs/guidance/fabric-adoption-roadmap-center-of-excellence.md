@@ -191,6 +191,8 @@ Funding is important because it impacts the way the COE communicates and engages
 
 Some organizations cover the COE operating costs with chargebacks to business units based on the usage goals of Fabric. For a shared capacity, this could be based on number of active users. For Premium capacity, chargebacks could be allocated based on which business units are using the capacity. Ideally, chargebacks are directly correlated to the business value gained.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Considerations and key actions
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::

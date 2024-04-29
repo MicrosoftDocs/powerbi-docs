@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/07/2024
 ---
 

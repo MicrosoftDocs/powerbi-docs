@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 08/31/2023
 ---
 
@@ -166,6 +167,8 @@ You can use the auditing data to:
 - **Monitor the use of capacity autoscale:** Determine whether [Autoscale](/power-bi/enterprise/service-premium-auto-scale) (available with Power BI Premium) is set up in a cost-effective way. If autoscale is invoked too frequently, it can be more cost-effective to scale up to a higher P SKU (for example, from a P1 capacity to a P2 capacity). Or, you could scale out to more capacities (for example, provision another P1 capacity).
 - **Perform chargebacks:** Perform intercompany chargebacks of Power BI costs based on which users are using the service. In this situation, you should determine which [activities](/power-bi/enterprise/service-admin-auditing#operations-available-in-the-audit-and-activity-logs) in the activity log are important, and correlate those activities to business units or departments.
 - **View trials:** The activity log records when users sign up for a [PPU trial](/power-bi/fundamentals/service-self-service-signup-purchase-for-power-bi#information-about-power-bi-trials). That information can prepare you to purchase a full license for those users before their trial period ends.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Performance monitoring
 
