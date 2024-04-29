@@ -1,15 +1,16 @@
 ---
-title: User-defined aggregations
+title: "User-defined aggregations"
 description: Describes using manually configured aggregations to speed up data analysis over large semantic models.
 author: kfollis
 ms.author: kfollis
-ms.reviewer: ''
+ms.reviewer: kfollis
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
 ms.date: 04/26/2024
 LocalizationGroup: Transform and shape data
 ---
+
 # User-defined aggregations
 
 Aggregations in Power BI can improve query performance over very large DirectQuery semantic models. By using aggregations, you cache data at the aggregated level in-memory. Aggregations in Power BI can be manually configured in the data model, as described in this article, or for Premium subscriptions, automatically by enabling the [Automatic aggregations](../enterprise/aggregations-auto.md) feature in model Settings.
