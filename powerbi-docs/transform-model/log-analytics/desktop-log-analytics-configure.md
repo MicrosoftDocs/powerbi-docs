@@ -276,7 +276,6 @@ The following table describes all the possible properties. Not every property is
 | approximatePeakMemoryConsumptionKB | Approximate peak total memory consumption during the request. |
 | mEnginePeakMemoryKB  | Approximate peak memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
 | directQueryTimeoutMs  | Timeout associated with DirectQuery queries. |
-| xmlaCommandTimeoutMs  | Timeout associated with XMLA command. |
 | externalQueryTimeoutMs  | Timeout associated with queries to external datasources. |
 | tabularConnectionTimeoutMs  | Timeout associated with external tabular datasource connections (e.g. SQL). |
 | refreshParallelism  | Effective MaxParallelism used in the request.|
@@ -292,7 +291,8 @@ The following table describes all the possible properties. Not every property is
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
 | capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here](https://learn.microsoft.com/en-us/fabric/enterprise/throttling). |
 
-- All durations and cpu times are presented in milliseconds
+- All durations and cpu times are presented in milliseconds.
+- Additional properties beyond those described in the table above may be encountered, these should be considered as undocumented and subject to change.
 
 ## Sample Log Analytics KQL queries
 
