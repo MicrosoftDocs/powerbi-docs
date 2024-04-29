@@ -25,7 +25,7 @@ Viewing Power BI files in OneDrive for Business and SharePoint is enabled **by d
 
 If you **do not** want this capability on in your tenant, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
-If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience, we encourage admins to enable the functionality. 
+If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience and to ensure you always have a backup of your file in the cloud, we encourage admins to enable the functionality. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
 
@@ -121,6 +121,12 @@ You can also open the file in preview mode by right-clicking the file or selecti
 The preview provides a limited experience with options to download the .pbix file, share the file, or copy a link to the file. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-preview.png" alt-text="Screenshot of preview view of Power BI file in OneDrive and SharePoint." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-preview.png":::
+
+## Version history
+
+You can also use the built-in M365 version history capability to track report activity and revert back to old versions of a file. From your OneDrive and SharePoint document library, simply click on the ellipsis (...) next to the Power BI file name and select **Verion history** from the options. After selecting **Version history**, you will be able to store, track, and restore the file whenever a change is made.
+
+:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-version-history.png" alt-text="Screenshot of version history." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-version-history.png":::
 
 ## Prerequisites to viewing report in OneDrive and SharePoint
 
