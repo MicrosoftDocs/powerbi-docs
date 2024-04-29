@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/20/2023
+ms.date: 04/26/2024
 LocalizationGroup: 
 ---
 # Troubleshoot incremental refresh and real-time data
