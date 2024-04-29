@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 10/10/2023
+ms.date: 04/21/2024
 ---
 
 # File download API
@@ -17,9 +17,10 @@ The **file download API** lets users download data from a custom visual into a f
 :::image type="content" source="./media/file-download-api/custom-visuals-download-admin-setting.png" alt-text="Screenshot of admin setting enabling custom visual downloads.":::
 
 >[!NOTE]
->The **file download API** has two methods:
+>The **file download API** has three methods:
 >
 > * [`exportVisualsContent`](#the-exportvisualscontent-method) is available from API version 4.5
+> * [`status`](#the-status-method) is available from API version 4.6.
 > * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method) is available from API version 5.3.
 > * To find out which version you’re using, check the `apiVersion` in the *pbiviz.json* file.
 
@@ -39,12 +40,24 @@ Before the download begins, a window appears asking to confirm that the visual i
 
 ## How to use the file download API
 
-The **file download API** has two methods:
+To use the file download API, add a declaration to the [privileges array in visual capabilities.](./capabilities.md#define-privileges)
 
+The **file download API** has three methods:
+
+* [status](#the-status-method): available from API version 4.6
 * [`exportVisualsContent`](#the-exportvisualscontent-method): available from API version 4.5
 * [`exportVisualsContentExtended`](#the-exportvisualscontentextended-method): available from API version 5.3.
 
 The difference between the two methods is the return value.
+
+### The `status` method
+
+The status method returns the status of the file download API:
+
+* *PrivilegeStatus.DisabledByAdmin*: the tenant admin switch is off
+* *PrivilegeStatus.NotDeclared*: the visual has no declaration for the local storage in the privileges array
+* *PrivilegeStatus.NotSupported*: the API isn't supported. See [limitations](#considerations-and-limitations) for more information.
+* *PrivilegeStatus.Allowed*: the API is supported and allowed.
 
 ### The `exportVisualsContent` method
 
@@ -117,6 +130,22 @@ export class Visual implements IVisual {
                 //handle error
             });
         };
+
+        // if you are using API version > 4.6.0
+        downloadBtn.onclick = async () => {
+            try {
+                const status: powerbi.PrivilegeStatus = await this.downloadService.exportStatus();
+                if (status === powerbi.PrivilegeStatus.Allowed) {
+                    const result = await this.downloadService.exportVisualsContent('aaaaa','a.txt', 'text/plain', 'aa');
+                    // handle result
+                } else {
+                    // handle if the API is not allowed
+                }
+
+            } catch (err) {
+                //handle error
+            }
+        }
     }
 }
 ```
@@ -125,6 +154,7 @@ export class Visual implements IVisual {
 
 * The API is supported only in the Power BI service and Power BI desktop
 * The size limit for a downloaded file is 30 MB.
+* This API is a [privileged API](./capabilities.md#privileges-define-the-special-permissions-that-your-visual-requires).
 
 ## Related content
 

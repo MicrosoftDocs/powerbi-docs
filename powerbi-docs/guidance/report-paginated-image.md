@@ -1,12 +1,13 @@
 ---
 title: Image use guidance for paginated reports
 description: Guidance for using images in Power BI paginated reports.
-author: maggiemsft
-ms.author: maggies
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/4/2022
 ---
 

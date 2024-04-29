@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/12/2024
+ms.date: 04/22/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -38,7 +38,7 @@ For answers to common questions related to business data security and privacy to
 The Copilot button in Desktop report view is always visible in the ribbon. However, to start using Copilot, you need to meet these requirements:
 
 - You need to sign in.
-- Your admin needs to enable Copilot in the tenant settings.
+- Your admin needs to [enable Copilot in the tenant settings](/fabric/get-started/copilot-enable-fabric).
 - You need to have member or contributor access to at least one workspace that's assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
@@ -54,22 +54,29 @@ If you need help with writing prompts that get you the report page you want, see
 
 ## Feature overview: Copilot capabilities
 
-You can interact with Copilot in several different ways in Power BI. The main and most obvious way is to open the Copilot pane and ask Copilot to create a report page, or a summary of a page. 
+You can interact with Copilot in several different ways in Power BI. Before you start creating your report, you can ask Copilot for a [summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model), to see if that gives you ideas for the best visuals. After that, the most obvious way is to open the Copilot pane and ask Copilot to create a report page, or a summary of a page. 
 
 Copilot can also create a narrative visual that summarizes a page or a whole report. 
 
 And Copilot can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports.
 
-Here are five examples of what Copilot can generate.
+Here are eight examples of what Copilot can generate.
 
+- A [summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model).
 - A [summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane).
-- A [summary visual on the report itself](#a-summary-visual-on-the-report-itself)
+- A [summary visual on the report itself](#a-summary-visual-on-the-report-itself).
 - [Suggested content for a report](#suggest-content-for-a-report).
-- A [report page](#create-a-report-page)
+- A [report page](#create-a-report-page).
 - A [narrative visual](#a-narrative-visual).
-- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
+- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa).
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
+
+### A summary of the underlying semantic model
+
+Summarize a Power BI semantic model with Copilot. This summary can help you gain a better understanding of data in your semantic model, identify important insights, and improve your data exploration experience. Ultimately, this can help you build more meaningful reports.
+
+:::image type="content" source="media/copilot-introduction/copilot-summarize-model.png" alt-text="Screenshot showing the Copilot pane with Summarize the model.":::
 
 ### A summary of your report in the Copilot pane
 
@@ -162,7 +169,7 @@ To use the narrative visual in Copilot reports and create Copilot reports:
 
 ### Power BI Desktop
 
-- You need write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report.
+- You need to have write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report.
 
 ## Considerations and limitations
 

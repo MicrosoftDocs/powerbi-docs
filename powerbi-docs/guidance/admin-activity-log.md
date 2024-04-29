@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: sample
+ms.custom: fabric-cat
 ms.date: 04/25/2022
 ---
 

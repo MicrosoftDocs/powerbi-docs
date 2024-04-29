@@ -172,6 +172,8 @@ Here are some guidelines to help you become successful with enterprise content d
 > - **Create helpful documentation:** Ensure that you have sufficient training documentation and support so that your content creators understand when it's appropriate to use [workspaces](/power-bi/collaborate-share/service-create-the-new-workspaces), [apps](/power-bi/collaborate-share/service-create-distribute-apps), or [per-item sharing (direct access or link)](https://powerbi.microsoft.com/blog/announcing-the-new-sharing-experience/).
 > - **Create a licensing strategy:** Ensure that you have a specific strategy in place to handle [Fabric licensing](/fabric/enterprise/licenses) considerations. Create a process for how workspaces could be assigned each license type, and the prerequisites required for the type of content that could be assigned to Premium.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ## Questions to ask
 
 :::image type="icon" source="media/common/questions-to-ask.svg" border="false":::

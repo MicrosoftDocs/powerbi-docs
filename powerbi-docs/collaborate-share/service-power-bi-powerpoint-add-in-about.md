@@ -37,7 +37,7 @@ The Power BI add-in for PowerPoint requires Office version 2312 (Build 17126) or
 
 ## Security
 
-Power BI data added to PowerPoint using the Power BI add-in remains in Power BI. No data is exported from Power BI. As such, the data respects all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
+Power BI data added to PowerPoint using the Power BI add-in remains in Power BI. No data is exported from Power BI. As such, the data respects all Power BI permissions and data security, including [row-level security (RLS)](/fabric/security/service-admin-row-level-security), so your data remains secure.
 
 ## Information for the Power BI administrator
 
