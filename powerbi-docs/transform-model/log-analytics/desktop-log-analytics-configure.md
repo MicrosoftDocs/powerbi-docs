@@ -165,19 +165,18 @@ For every **Discover**, **Command** and **Query** request, an event named **Exec
 The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model in the last day:
 
 ```sql
-let executionMetrics = PowerBIDatasetsWorkspace
-    | where TimeGenerated > ago(1d)
-    | where ArtifactId == "[Semantic Model Id]"
-    | where OperationName == "ExecutionMetrics"
-    | project TimeGenerated, XmlaRequestId, CorrelationId, EventText;
 let commands = PowerBIDatasetsWorkspace
     | where TimeGenerated > ago(1d)
+    | where ArtifactId =~ "[Semantic Model Id]"
     | where OperationName in ("CommandEnd")
     | where EventText contains "<Refresh"
     | project TimeGenerated, ArtifactId, CommandOperationName = OperationName, XmlaRequestId, CorrelationId, CommandText = EventText;
+let executionMetrics = PowerBIDatasetsWorkspace        
+    | where OperationName == "ExecutionMetrics"
+    | project TimeGenerated, XmlaRequestId, CorrelationId, EventText;
 commands
-| join kind=inner executionMetrics on XmlaRequestId
-| project TimeGenerated, ArtifactId, CommandOperationName, XmlaRequestId, EventText, CommandText
+| join kind=leftouter executionMetrics on XmlaRequestId
+
 ```
 
 The following KQL query retrieves events that were throttled in the last day by workspace and item:
@@ -189,8 +188,7 @@ let executionMetrics = PowerBIDatasetsWorkspace
     | extend eventTextJson = parse_json(EventText)      
     | extend capacityThrottlingMs=toint(eventTextJson.capacityThrottlingMs)
     | where capacityThrottlingMs > 0;
-let commands = PowerBIDatasetsWorkspace
-    | where TimeGenerated > ago(1d)    
+let commands = PowerBIDatasetsWorkspace    
     | where OperationName in ("CommandEnd", "QueryEnd", "DiscoverEnd")    
     | project
         TimeGenerated,
@@ -213,9 +211,10 @@ commands
 | summarize count() by PowerBIWorkspaceId, ArtifactId, CommandOperationName
 ```
 
-The statistics are presented as a JSON text in the **EventText** property:
+The statistics are presented as a JSON text in the **EventText** property, see the following examples:
 
 ```json
+// Refresh command:
 {
     "timeStart": "2024-03-20T12:39:59.681Z",
     "timeEnd": "2024-03-20T13:01:14.241Z",
@@ -232,6 +231,28 @@ The statistics are presented as a JSON text in the **EventText** property:
     "refreshParallelism": 16,
     "vertipaqTotalRows": 114,
     "intendedUsage": 2
+}
+// DAX Query:
+{
+    "timeStart": "2024-04-29T11:19:36.025Z",
+    "timeEnd": "2024-04-29T11:20:46.881Z",
+    "durationMs": 70855,
+    "datasourceConnectionThrottleTimeMs": 0,
+    "directQueryConnectionTimeMs": 2435,
+    "directQueryExecutionTimeMs": 119553,
+    "directQueryIterationTimeMs": 1,
+    "directQueryTotalTimeMs": 121989,
+    "queryProcessingCpuTimeMs": 0,
+    "totalCpuTimeMs": 31,
+    "executionDelayMs": 0,
+    "approximatePeakMemConsumptionKB": 3632,
+    "directQueryTimeoutMs": 224000,
+    "tabularConnectionTimeoutMs": 225000,
+    "commandType": 27,
+    "queryDialect": 3,
+    "queryResultRows": 67,
+    "directQueryRequestCount": 2,
+    "directQueryTotalRows": 134
 }
 ```
 
