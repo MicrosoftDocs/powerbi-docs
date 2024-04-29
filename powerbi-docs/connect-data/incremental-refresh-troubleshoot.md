@@ -1,6 +1,6 @@
 ---
-title: "Troubleshoot incremental refresh and real-time data in Power BI"
-description: "Learn about common troubleshooting scenarios for incremental refresh, divided into configuration and refresh operations."
+title: Troubleshoot incremental refresh and real-time data
+description: Learn about common troubleshooting scenarios for incremental refresh, divided into configuration and refresh operations.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
@@ -120,7 +120,7 @@ The filter on the date column is used to dynamically partition the data into per
 
 When Power BI applies an incremental refresh policy with real-time data, it turns the incrementally refreshed table into a hybrid table that operates in both import and DirectQuery mode. Notice the DirectQuery partition at the end of the following partitions list of a sample table. The presence of a DirectQuery partition has implications for related tables and report visuals that query this table.
 
-:::image type="content" source="media/incremental-refresh-troubleshoot/hybrid-table-01.png" alt-text="Screenshot of hybrid table." lightbox="media/incremental-refresh-troubleshoot/hybrid-table-01.png":::
+:::image type="content" source="media/incremental-refresh-troubleshoot/hybrid-table-01.png" alt-text="Screenshot of hybrid table" lightbox="media/incremental-refresh-troubleshoot/hybrid-table-01.png":::
 
 ### Problem: Query performance is poor
 
