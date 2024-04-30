@@ -9,12 +9,18 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 04/01/2024
+ms.date: 04/30/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
 
 ## April 2024
+
+### Auto-populating the slide title
+
+When you add the Power BI add-in to an empty slide that doesn't have a title yet, the Power BI add-in offers you suggestions for the slide title based on the content of the add-in. The title can be the report name, the page or visual name, or both. Just choose the desired option and select **Add title**.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/suggested-slide-title-dialog.png" alt-text="Screen shot showing the dialog where you choose a suggested title for the slide.":::
 
 ### Continuous slide show auto refresh
 
