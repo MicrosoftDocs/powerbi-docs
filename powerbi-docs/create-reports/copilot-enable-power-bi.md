@@ -51,6 +51,9 @@ Enabling this setting only applies if Azure OpenAI isn't available in your geogr
 
     :::image type="content" source="media/copilot-enable-power-bi/copilot-geographic-settings.png" alt-text="Screenshot of the Copilot setting in the Fabric admin portal that asks admins to enable if OpenAI isn't available in the capacity's home region." lightbox="media/copilot-enable-power-bi/copilot-geographic-settings.png":::
 
+> [!IMPORTANT]
+> If you have Fabric enabled, enabling Copilot in Fabric means that users can access Copilot across workloads. Copilot access isn't limited to a specific workload, like Power BI. 
+
 ## Use Copilot for Power BI in the service
 
 To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F64 and above)](/fabric/enterprise/licenses) capacity.
