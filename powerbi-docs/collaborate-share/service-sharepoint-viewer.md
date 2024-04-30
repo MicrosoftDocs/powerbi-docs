@@ -126,7 +126,8 @@ The preview provides a limited experience with options to download the .pbix fil
 
 You can also use the built-in M365 version history capability to track report activity and revert back to old versions of a file. From your OneDrive and SharePoint document library, simply click on the ellipsis (...) next to the Power BI file name and select **Verion history** from the options. After selecting **Version history**, you will be able to store, track, and restore the file whenever a change is made.
 
-:::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-version-history.png" alt-text="Screenshot of version history." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-version-history.png":::
+:::image type="content" source="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png
+" alt-text="Screenshot of version history." lightbox="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png":::
 
 ## Prerequisites to viewing report in OneDrive and SharePoint
 
