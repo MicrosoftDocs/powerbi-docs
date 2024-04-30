@@ -226,8 +226,7 @@ The statistics are presented as a JSON text in the **EventText** property, see t
     "executionDelayMs": 10,
     "approximatePeakMemConsumptionKB": 1683409,
     "mEnginePeakMemoryKB": 1676816,
-    "tabularConnectionTimeoutMs": 18000000,
-    "commandType": 2,
+    "tabularConnectionTimeoutMs": 18000000,    
     "refreshParallelism": 16,
     "vertipaqTotalRows": 114,
     "intendedUsage": 2
@@ -247,8 +246,7 @@ The statistics are presented as a JSON text in the **EventText** property, see t
     "executionDelayMs": 10,
     "approximatePeakMemConsumptionKB": 1683409,
     "mEnginePeakMemoryKB": 1676816,
-    "tabularConnectionTimeoutMs": 18000000,
-    "commandType": 2,
+    "tabularConnectionTimeoutMs": 18000000,    
     "refreshParallelism": 16,
     "vertipaqTotalRows": 114,
     "intendedUsage": 2
@@ -281,7 +279,6 @@ The following table describes all the possible properties. Not every property is
 | queryResultRows   | Total number of rows returned as a result of the DAX query. |
 | directQueryTotalRows   | Total number of rows read from the various DirectQuery queries. |
 | directQueryRequestCount   | Total number of DirectQuery storage engine queries executed by the DAX engine. |
-| commandType   | Analysis Services command type. |
 | errorCount   | Total number of errors for the current request. |
 | qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](https://learn.microsoft.com/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
 | intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
