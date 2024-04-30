@@ -16,7 +16,7 @@ ms.date: 04/30/2024
 
 ## April 2024
 
-### Auto-populating the slide title
+### Autopopulating the slide title
 
 When you add the Power BI add-in to an empty slide that doesn't have a title yet, the Power BI add-in offers you suggestions for the slide title based on the content of the add-in. The title can be the report name, the page or visual name, or both. Just choose the desired option and select **Add title**.
 
@@ -94,7 +94,7 @@ With exciting, recently released features you can now:
 * Generate and add Smart insights to your presentations
 * Enjoy the Power BI/PowerPoint integration in national/regional clouds 
 
-[Check out the blog](https://powerbi.microsoft.com/blog/storytellingga/)
+[Check out the blog](https://powerbi.microsoft.com/blog/storytellingga/)!
 
 ### National cloud support
 
