@@ -213,7 +213,7 @@ commands
 
 The statistics are presented as a JSON text in the **EventText** property, see the following examples.
 
-Refresh command execution metrics:
+#### [Refresh command](#tab/refresh)
 
 ```json
 {
@@ -234,7 +234,7 @@ Refresh command execution metrics:
 }
 ```
 
-DAX Query command execution metrics:
+#### [DAX Query](#tab/query)
 
 ```json
 {
