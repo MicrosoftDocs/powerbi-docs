@@ -211,10 +211,11 @@ commands
 | summarize count() by PowerBIWorkspaceId, ArtifactId, CommandOperationName
 ```
 
-The statistics are presented as a JSON text in the **EventText** property, see the following examples:
+The statistics are presented as a JSON text in the **EventText** property, see the following examples.
+
+Refresh command execution metrics:
 
 ```json
-// Refresh command:
 {
     "timeStart": "2024-03-20T12:39:59.681Z",
     "timeEnd": "2024-03-20T13:01:14.241Z",
@@ -231,26 +232,26 @@ The statistics are presented as a JSON text in the **EventText** property, see t
     "vertipaqTotalRows": 114,
     "intendedUsage": 2
 }
-// DAX Query:
+```
+
+DAX Query command execution metrics:
+
+```json
 {
-    "timeStart": "2024-04-29T11:19:36.025Z",
-    "timeEnd": "2024-04-29T11:20:46.881Z",
-    "durationMs": 70855,
-    "datasourceConnectionThrottleTimeMs": 0,
-    "directQueryConnectionTimeMs": 2435,
-    "directQueryIterationTimeMs": 1,
-    "directQueryTotalTimeMs": 121989,
-    "queryProcessingCpuTimeMs": 0,
-    "totalCpuTimeMs": 31,
-    "executionDelayMs": 0,
-    "approximatePeakMemConsumptionKB": 3632,
-    "directQueryTimeoutMs": 224000,
-    "tabularConnectionTimeoutMs": 225000,
-    "commandType": 27,
-    "queryDialect": 3,
-    "queryResultRows": 67,
-    "directQueryRequestCount": 2,
-    "directQueryTotalRows": 134
+    "timeStart": "2024-03-20T12:39:59.681Z",
+    "timeEnd": "2024-03-20T13:01:14.241Z",
+    "durationMs": 1274559,    
+    "vertipaqJobCpuTimeMs": 156,
+    "mEngineCpuTimeMs": 9617484,
+    "totalCpuTimeMs": 9618469,
+    "executionDelayMs": 10,
+    "approximatePeakMemConsumptionKB": 1683409,
+    "mEnginePeakMemoryKB": 1676816,
+    "tabularConnectionTimeoutMs": 18000000,
+    "commandType": 2,
+    "refreshParallelism": 16,
+    "vertipaqTotalRows": 114,
+    "intendedUsage": 2
 }
 ```
 
