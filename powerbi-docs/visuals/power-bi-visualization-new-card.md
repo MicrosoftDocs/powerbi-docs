@@ -221,9 +221,9 @@ Reference labels are a new feature that allows you to add custom labels to your 
     > [!NOTE]
 > You can include multiple data fields when you add reference labels.
 
-      :::image type="content" source="media/power-bi-visualization-new-card/reference-label-add.png" alt-text="This image shows the Total Sales series selected and highlights two Callouts just added to the Total Sales card as selected under the Add label field of Reference labels section.":::
+   :::image type="content" source="media/power-bi-visualization-new-card/reference-label-add.png" alt-text="This image shows the Total Sales series selected and highlights two Callouts just added to the Total Sales card as selected under the Add label field of Reference labels section.":::
 
-    Reference labels are composed of three fully customizable key elements. The Title displays the content Field name. Value showcases the assigned data field value. And Detail adds extra context to showcase extra information from a single data field. Each element is fully customizable including Font, Color, and Transparency.
+   Reference labels are composed of three fully customizable key elements. The Title displays the content Field name. Value showcases the assigned data field value. And Detail adds extra context to showcase extra information from a single data field. Each element is fully customizable including Font, Color, and Transparency.
 
 1. Under **Apply settings to** select **Series all**
 1. Turn on the **Title** toggle and expand the **Title** Section:  
@@ -232,7 +232,7 @@ Reference labels are a new feature that allows you to add custom labels to your 
     1. Change the **Color** to green.
     1. Change the  **Transparency** to **0%**.
 
-     :::image type="content" source="media/power-bi-visualization-new-card/reference-label-font-value.png" alt-text="This image shows the Total Sales series selected and highlights two Callouts just added to the Total Sales card as selected under the Add label field of Reference labels section.":::
+   :::image type="content" source="media/power-bi-visualization-new-card/reference-label-font-value.png" alt-text="The image shows formatting settings for the Title and Value sections of the two recently added Reference labels on a single card, including font, color, and transparency":::
 
 1. Turn on the **Value** toggle and expand the **Value** Section:  
     1. Change the **Font** to **Segoe UI Bold**.
@@ -246,7 +246,7 @@ Reference labels are a new feature that allows you to add custom labels to your 
     1. Change the **Color** to light green.
     1. Change the **Transparency** to **0%**.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/reference-label-background-accent.png" alt-text="This image shows the Total Sales series selected and highlights two Callouts just added to the Total Sales card as selected under the Add label field of Reference labels section.":::
+    :::image type="content" source="media/power-bi-visualization-new-card/reference-label-background-accent.png" alt-text="This image displays the two cards with reference labels shown background set light green color and 0% transparency. The labels also have an accent bar positioned left of the values, with a green color and 0% transparency.":::
 
 1. Turn on the **Accent bar** toggle and expand the **Accent bar** Section:  
     1. Change the position to **Left** from the **Position** dropdown options.
