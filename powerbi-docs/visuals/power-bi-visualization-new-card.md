@@ -25,17 +25,17 @@ The (new) card is a helpful visual that presents important metrics such as total
 
 ## Prerequisites
 
-To share your report with a Power BI colleague you must both have individual Power BI Pro licenses, or you must save the report in Premium capacity. The card visual applies only to Desktop and isn’t available in Power BI service.
+To share your report with a Power BI colleague, you must both have individual Power BI Pro licenses, or you must save the report in Premium capacity. The card visual applies only to Desktop and isn’t available in Power BI service.
 
 ### Considerations and limitations (preview)
 
-* The new card visual is currently being developed and updated over several releases. Once it reaches its final stage, it will replace the existing Card, Multi-row card, and KPI card. However, reports that continue to use these older visuals will still be supported.
+* The new card visual is currently being developed and updated over several releases. Once it reaches its final stage, it replaces the existing Card, Multi-row card, and KPI card. However, reports that continue to use these older visuals will still be supported.
 * Certain settings only take effect if the **Apply settings to** option is set to **All**. Other settings can only be configured by selecting an independent measure series.
 * By design, the shadow and glow effect can cause the size of all cards to change unexpectedly.
 * **Edit interactions** and **Filters in this visual** influence all cards within the container.
 * You can't pin individual cards to a dashboard. Instead, all cards in the new card visual are pinned together.
-* There are no limits to the number of cards that you can add to the new card visual. However, adding a large number of cards may cause the report to experience latency and slow data loading.
-* The new card visual currently doesn't support scrolling or pagination. As a result, if the container is small and you add multiple cards, they may appear in a reduced size.
+* There are no limits to the number of cards that you can add to the new card visual. However, adding a large number of cards might cause the report to experience latency and slow data loading.
+* The new card visual currently doesn't support scrolling or pagination. As a result, if the container is small and you add multiple cards, they might appear in a reduced size.
 * The new card visual is a preview feature turned on by default. If you prefer to disable the preview, or control when you see it:
     1. In the Fabric Admin settings, go to **Options**.
     1. Then select **Preview features**.
@@ -92,7 +92,7 @@ A second way to create a card is directly from the report canvas.
 
 Another way to create a new card visual is to start from the Data pane.
 
-1. In the **Data** pane, select the **StoreCount** and **Value** data under **TotalSalesTY**. This will automatically create a container on the canvas that shows the selected data.
+1. In the **Data** pane, select the **StoreCount** and **Value** data under **TotalSalesTY**. This automatically creates a container on the canvas that shows the selected data.
 
    :::image type="content" source="media/power-bi-visualization-new-card/data-pane-new-visual.png" alt-text="This image displays a container with two data measures that were selected from the Data pane." lightbox="media/power-bi-visualization-new-card/data-pane-new-visual.png":::
 
@@ -113,7 +113,7 @@ The new card visual provides a wide range of options for customization. To bette
 1. To change all cards at the same time, first, expand the **Callout values** and the **Values** sections.
 1. Under **Apply settings** to section, select **Series All**.
 
-1. Then you can select and change **Font family**, then **Font size**, **Color**, **Transparency** and **Horizontal alignment** This will change all the cards at the same time. Apply the following settings for this exercise:
+1. Then you can select and change **Font family**, then **Font size**, **Color**, **Transparency**, and **Horizontal alignment**. This changes all the cards at the same time. Apply the following settings for this exercise:
     1. Change the **Font** to **Segoe UI Bold**.
     1. Change the **size** to **18**.
     1. Set the **Color** to blue.
@@ -128,13 +128,13 @@ The new card visual provides a wide range of options for customization. To bette
     1. Change the **size** to **18**.
     1. Set the **Color** to green.
     1. Set the **Transparency** to **0%**.
-    1. If you need a specific value format, under the **Display units**, select **Custom** and enter your desired **format code** in the text field. For example, typing **$#,###M,** as the format code changes the data type to currency format.
+    1. If you need a specific value format, under the **Display units**, select **Custom, and enter your desired **format code** in the text field. For example, typing **$#,###M,** as the format code changes the data type to currency format.
 
    :::image type="content" source="media/power-bi-visualization-new-card/format-3.png" alt-text="The image shows formatting settings for the Callout values of a single card, including font color, transparency, horizontal alignment, display units, and value decimal places.":::
 
 1. To format labels, in **Apply settings to**, select series **All** You can also select an individual series, but for this exercise set it to **All**.
 
-1. Expand the **Label** section where you can then change **Font** type and size, **Color**, **Transparency**, **Position**, **Space between label and value**, turn on **Text wrap**, and **Match value alignment** After you've expanded the **Label** section, apply the following settings for this exercise:
+1. Expand the **Label** section where you can then change **Font** type and size, **Color**, **Transparency**, **Position**, **Space between label and value**, turn on **Text wrap**, and **Match value alignment** After you expand the **Label** section, apply the following settings for this exercise:
     1. Change the **Font** to **Segoe UI Regular**.
     1. Change the **size** to **18**.
     1. Set the **Color** to dark gray color.
@@ -161,9 +161,9 @@ The new card visual provides a wide range of options for customization. To bette
     
    :::image type="content" source="media/power-bi-visualization-new-card/format-5.png" alt-text="Screenshot showing the two cards with a vertical spacing of four pixels between them." lightbox="media/power-bi-visualization-new-card/format-5.png":::
 
-1. Expand the **Layout** section and apply the following changes to the settings. You can also change **Callout size** if you're using **Reference labels**, otherwise this option will be disabled:
+1. Expand the **Layout** section and apply the following changes to the settings. You can also change **Callout size** if you're using **Reference labels**, otherwise this option is turned off:
     1. Change the **Vertical alignment** to **top**.
-    1. **Callout size** is **off** because this isn't a reference label.
+    1. **Callout size** is **off** because you didn't use a reference label.
 
    :::image type="content" source="media/power-bi-visualization-new-card/format-6.png" alt-text="This image displays the two cards with vertical alignment set to top, and the Callout size is turned off." lightbox="media/power-bi-visualization-new-card/format-6.png":::
 
@@ -177,8 +177,8 @@ There might be a time when you want to format all of the cards at once. Use the 
     1. Expand **Shape** and select **Rounded Rectangle** for the shape and set to **25 px**.
     1. Set the **Background** to the color blue.
     1. Set the **Transparency** to **90%**.
-    1. Turn the **Border** toggle on.
-    1. Turn **Shadow**, **Glow** and **Accent bar** off. 
+    1. Turn on the Border toggle.
+    1. Turn **Shadow**, **Glow, and **Accent bar** off. 
 
    :::image type="content" source="media/power-bi-visualization-new-card/format-7.png" alt-text="This image shows Series All selected, and displays the two cards with a Rounded Rectangle, Rounded Corners set to 25 pixels, a blue Background with 90% Transparency, and the Border toggle is on." lightbox="media/power-bi-visualization-new-card/format-7.png":::
 
@@ -205,9 +205,9 @@ There might be a time when you want to format only one of the cards in your visu
 
 ## New card’s reference labels
 
-Reference labels are a new feature that allow you to add custom labels to your new cards. These labels provide additional information and comparisons and will help you to highlight key metrics, benchmarks, and goals.  In the following procedure, you'll learn how to use reference labels:
+Reference labels are a new feature that allows you to add custom labels to your new cards. These labels provide additional information and comparisons and helps you to highlight key metrics, benchmarks, and goals. In the following procedure, you learn how to use reference labels:
 
-1. First, make sure you have already [created](#build-a-new-card-visualization) and [formatted](#format-the-new-card-visual) a (new) card visual.
+1. First, make sure you already [created](#build-a-new-card-visualization) and [formatted](#format-the-new-card-visual) a (new) card visual.
 
 1. To add reference labels, select the visual you created and select the **edit icon**.
 
