@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/25/2024
+ms.date: 04/30/2024
 ---
 
 # Add live Power BI data to PowerPoint
@@ -78,6 +78,9 @@ Add the report or visual to a new PowerPoint presentation with the following met
 
 1. Once you find the report you want, select it to insert it on the page.
 1. When you have the report open on PowerPoint, you can select a specific page or visual to insert. You can also update filters or slicers before you insert it on the page.
+
+    If the slide doesn't yet have a title, a dialog will suggest a title based on the content of the add-in. The title can be the report name, the page or visual name, or both.
+
 1. If you want to allow others to access this report, select the **Give people automatic access to this data** checkbox, so that when others in your org view this presentation, they can see the data you added to the slide.
 
     > [!NOTE]
