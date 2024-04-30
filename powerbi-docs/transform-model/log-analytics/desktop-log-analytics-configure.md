@@ -218,8 +218,7 @@ The statistics are presented as a JSON text in the **EventText** property, see t
 {
     "timeStart": "2024-03-20T12:39:59.681Z",
     "timeEnd": "2024-03-20T13:01:14.241Z",
-    "durationMs": 1274559,
-    "directQueryExecutionTimeMs": 55727,
+    "durationMs": 1274559,    
     "vertipaqJobCpuTimeMs": 156,
     "mEngineCpuTimeMs": 9617484,
     "totalCpuTimeMs": 9618469,
@@ -239,7 +238,6 @@ The statistics are presented as a JSON text in the **EventText** property, see t
     "durationMs": 70855,
     "datasourceConnectionThrottleTimeMs": 0,
     "directQueryConnectionTimeMs": 2435,
-    "directQueryExecutionTimeMs": 119553,
     "directQueryIterationTimeMs": 1,
     "directQueryTotalTimeMs": 121989,
     "queryProcessingCpuTimeMs": 0,
@@ -265,7 +263,6 @@ The following table describes all the possible properties. Not every property is
 | durationMs | Total duration of the execution. |
 | datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](https://learn.microsoft.com/power-bi/enterprise/service-premium-what-is#semantic-model-sku-limitation). |
 | directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
-| directQueryExecutionTimeMs | Total time spent on executing all DirectQuery queries during the request. |
 | directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
 | directQueryTotalTimeMs | Total time spent on executing and reading all DirectQuery queries during the request. |
 | executionDelayMs | Total time spent waiting for Analysis Services engine thread pool thread availability. |
