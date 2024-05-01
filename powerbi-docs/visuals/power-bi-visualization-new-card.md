@@ -66,11 +66,11 @@ The first way to create a new card is to use the ribbon in Power BI Desktop.
 
 1. In the **Insert** ribbon, select **Visual gallery**, then select the **Card (new)** visual icon. When the visual placeholder appears, a dialogue box that says **Suggest a visual** is automatically displayed. You can close this dialogue box before moving to the next step.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png" alt-text="This image displays the Insert menu with the visual gallery ribbon expanded to show the Card (new) visual selected, and the dialogue box ‘Suggest a visual’ is displayed." lightbox="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png" alt-text="This screen shows the Insert menu with the visual gallery ribbon expanded to show the Card (new) visual selected, and the dialogue box ‘Suggest a visual’ is displayed." lightbox="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png":::
 
 1. To add fields or measures, select **fields** in the **Data** pane. Add the **StoreCount** and **TotalSalesTY** data fields. Each data field you add is displayed as its own card.
  
-   :::image type="content" source="media/power-bi-visualization-new-card/add-data-data-pane.png" alt-text="This image displays the Data panel open with two data fields selected and afterwards added to the visual, creating two distinct cards." lightbox="media/power-bi-visualization-new-card/add-data-data-pane.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/add-data-data-pane.png" alt-text="This screen shows the Data panel open with two data fields selected and afterwards added to the visual, creating two distinct cards." lightbox="media/power-bi-visualization-new-card/add-data-data-pane.png":::
 
 # [On the report canvas](#tab/On-the-report-canvas)
 
@@ -94,11 +94,11 @@ Another way to create a new card visual is to start from the Data pane.
 
 1. In the **Data** pane, select the **StoreCount** and **Value** data under **TotalSalesTY**. This automatically creates a container on the canvas that shows the selected data.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/data-pane-new-visual.png" alt-text="This image displays a container with two data measures that were selected from the Data pane." lightbox="media/power-bi-visualization-new-card/data-pane-new-visual.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/data-pane-new-visual.png" alt-text="This screen shows a container with two data measures that were selected from the Data pane." lightbox="media/power-bi-visualization-new-card/data-pane-new-visual.png":::
 
 1. On the **Home** ribbon, select the **Visual gallery** and then select the **Card (new) visual**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/visual-gallery-new-card-style.png" alt-text="This image displays a card with Visual gallery highlighted in the Home ribbon. The Card (new) visual icon is also highlighted in the dropdown menu, in the same view." lightbox="media/power-bi-visualization-new-card/visual-gallery-new-card-style.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/visual-gallery-new-card-style.png" alt-text="This screen shows a card with Visual gallery highlighted in the Home ribbon. The Card (new) visual icon is also highlighted in the dropdown menu, in the same view." lightbox="media/power-bi-visualization-new-card/visual-gallery-new-card-style.png":::
 
 ---
 
@@ -108,7 +108,7 @@ The new card visual provides a wide range of options for customization. To bette
 
 1. Select the new card and choose the paint brush icon to open the **Format** pane.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-1.png" alt-text="This image displays a Format pane icon that opens up all available formatting settings for a card (new)." lightbox="media/power-bi-visualization-new-card/format-1.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-1.png" alt-text="This screen shows a Format pane icon that opens up all available formatting settings for a card (new)." lightbox="media/power-bi-visualization-new-card/format-1.png":::
 
 1. To change all cards at the same time, first, expand the **Callout values** and the **Values** sections.
 1. Under **Apply settings** to section, select **Series All**.
@@ -120,7 +120,7 @@ The new card visual provides a wide range of options for customization. To bette
     1. Set the **Transparency** to **0%**.
     1. Change the **Horizontal Alignment** to **left**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-2.png" alt-text="This image displays the formatting settings available to personalize the Callout of a card. These settings include font, color, and transparency, which can be applied to all cards.":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-2.png" alt-text="This screen shows the formatting settings available to personalize the Callout of a card. These settings include font, color, and transparency, which can be applied to all cards.":::
 
 1. To change a single card, under the **Apply settings to** section, select a single **Series** and then you can change **Font** type and **size**, **Color**, **Transparency**, **Horizontal alignment**, **Display units**, and **Value decimal places**. Apply the following settings for this exercise:
     1. Under **Apply settings to** select **Total Sales**.
@@ -165,7 +165,7 @@ The new card visual provides a wide range of options for customization. To bette
     1. Change the **Vertical alignment** to **top**.
     1. **Callout size** is **off** because you didn't use a reference label.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-6.png" alt-text="This image displays the two cards with vertical alignment set to top, and the Callout size is turned off." lightbox="media/power-bi-visualization-new-card/format-6.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-6.png" alt-text="This screen shows the two cards with vertical alignment set to top, and the Callout size is turned off." lightbox="media/power-bi-visualization-new-card/format-6.png":::
 
 ### Change all cards
 
@@ -247,7 +247,7 @@ Reference labels are a new feature that allows you to add custom labels to your 
     1. Change the **Color** to light green.
     1. Change the **Transparency** to **0%**.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/reference-label-background-accent.png" alt-text="This image displays the two cards with reference labels shown background set light green color and 0% transparency. The labels also have an accent bar positioned left of the values, with a green color and 0% transparency.":::
+    :::image type="content" source="media/power-bi-visualization-new-card/reference-label-background-accent.png" alt-text="This screen shows the two cards with reference labels shown background set light green color and 0% transparency. The labels also have an accent bar positioned left of the values, with a green color and 0% transparency.":::
 
 1. Turn on the **Accent bar** toggle and expand the **Accent bar** Section:  
     1. Change the position to **Left** from the **Position** dropdown options.
