@@ -6057,8 +6057,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/enterprise/service-admin-premium-manage.md",
-            "redirect_url": "fabric-docs/docs/admin/capacity-settings.md",
+            "source_path": "power-bi/enterprise/service-admin-premium-manage.md",
+            "redirect_url": "/fabric/admin/capacity-settings",
             "redirect_document_id": false
         },
         {
