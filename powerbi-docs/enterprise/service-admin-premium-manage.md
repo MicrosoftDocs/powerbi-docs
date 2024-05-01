@@ -1,8 +1,8 @@
 ---
 title: Configure and manage capacities in Power BI Premium
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
-author: KesemSharabi
-ms.author: kesharab
+author: v-halzucati
+ms.author: v-halzucati
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
