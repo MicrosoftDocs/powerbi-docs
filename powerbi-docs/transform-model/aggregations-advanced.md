@@ -26,7 +26,7 @@ Dimensional data sources, like data warehouses and data marts, can use [relation
 In the **Data** pane of any Power BI Desktop view, right-click the aggregations table, and then select **Manage aggregations**.
 
 
-:::image type="content" source="media/aggregations-advanced/aggregations-06-2.png" alt-text="Select Manage aggregations" :::
+:::image type="content" source="media/aggregations-advanced/aggregations-06-2.png" alt-text="Screenshot of select manage aggregations." :::
 
 The **Manage aggregations** dialog shows a row for each column in the table, where you can specify the aggregation behavior. In the following example, queries to the **Sales** detail table are internally redirected to the **Sales Agg** aggregation table. 
 
@@ -61,7 +61,7 @@ The aggregation feature interacts with table-level storage modes. Power BI table
 
 To set the storage mode of an aggregated table to Import to speed up queries, select the aggregated table in Power BI Desktop **Model** view. In the **Properties** pane, expand **Advanced**, drop down the selection under **Storage mode**, and select **Import**. Changing Import is irreversible.
 
-:::image type="content" source="media/aggregations-advanced/aggregations-04-2.png" alt-text="Select the storage mode" :::
+:::image type="content" source="media/aggregations-advanced/aggregations-04-2.png" alt-text="Screenshot of select the storage mode." :::
 
 To learn more about table storage modes, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
