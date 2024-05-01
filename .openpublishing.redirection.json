@@ -6080,7 +6080,10 @@
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-varp-function.md",
             "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-varp-function",
             "redirect_document_id": false
+        }
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-manage.md",
+            "redirect_url": "fabric-docs/docs/admin/capacity-settings.md",
+            "redirect_document_id": false
         }                                                                                                                                                                                                                                                                                                                                           
-  ]          
-
-}
+  ]
