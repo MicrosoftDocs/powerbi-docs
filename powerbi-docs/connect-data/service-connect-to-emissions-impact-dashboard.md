@@ -34,7 +34,7 @@ The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MP
 
 ## Install the app
 
-1. Select the following link to get to the app: [Emissions Impact Dashboard template app](https://go.microsoft.com/fwlink/?linkid=2151690). 
+1. Select the following link to get to the app: [Emissions Impact Dashboard template app](https://appsource.microsoft.com/en-us/marketplace/apps?search=emissions%20impact%20dashboard&page=1). 
 
 1. On the AppSource page for the app, select **GET IT NOW**.
 
