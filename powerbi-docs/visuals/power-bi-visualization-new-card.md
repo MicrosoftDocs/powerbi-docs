@@ -78,15 +78,15 @@ A second way to create a card is directly from the report canvas.
 
 1. In the report canvas, right click to display a menu, then select **Add visual**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/canvas-1.png" alt-text="This image shows a menu that appears when the user right clicks on the canvas. The menu shows an option to add a new visual." lightbox="media/power-bi-visualization-new-card/canvas-1.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/canvas-1.png" alt-text="This screen shows a menu that appears when the user right clicks on the canvas. The menu shows an option to add a new visual." lightbox="media/power-bi-visualization-new-card/canvas-1.png":::
 
 1. In the **Suggest a visual** menu, expand the Visual types dropdown to select the **Card (new)** visual icon.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/canvas-2.png" alt-text="This image shows an empty container with the visual dialog highlighting the card (new) icon selected." lightbox="media/power-bi-visualization-new-card/canvas-2.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/canvas-2.png" alt-text="This screen shows an empty container with the visual dialog highlighting the card (new) icon selected." lightbox="media/power-bi-visualization-new-card/canvas-2.png":::
 
 1. To add fields or measures, select **Add data**. Add the **StoreCount** and **TotalSalesTY** data fields. Each data field you add is shown as its own card.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/canvas-3.png" alt-text="This image shows a card with both the Store count and Total Sales fields visible. The Data section, where the fields were added, is also shown in the same view." lightbox="media/power-bi-visualization-new-card/canvas-3.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/canvas-3.png" alt-text="This screen shows a card with both the Store count and Total Sales fields visible. The Data section, where the fields were added, is also shown in the same view." lightbox="media/power-bi-visualization-new-card/canvas-3.png":::
 
 # [In the data pane](#tab/In-the-data-pane)
 
@@ -130,7 +130,7 @@ The new card visual provides a wide range of options for customization. To bette
     1. Set the **Transparency** to **0%**.
     1. If you need a specific value format, under the **Display units**, select **Custom, and enter your desired **format code** in the text field. For example, typing **$#,###M,** as the format code changes the data type to currency format.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-3.png" alt-text="The image shows formatting settings for the Callout values of a single card, including font color, transparency, horizontal alignment, display units, and value decimal places.":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-3.png" alt-text="The screen shows formatting settings for the Callout values of a single card, including font color, transparency, horizontal alignment, display units, and value decimal places.":::
 
 1. To format labels, in **Apply settings to**, select series **All** You can also select an individual series, but for this exercise set it to **All**.
 
@@ -148,7 +148,7 @@ The new card visual provides a wide range of options for customization. To bette
    > [!NOTE]
    > The Align baselines toggle is only available when **All series** is selected.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-4.png" alt-text="This image shows the two cards with labels shown in Segoe UI Regular font, dark gray color and 0% transparency. The labels are positioned below the values, with text wrap turned off and both value and baseline alignment turned on.":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-4.png" alt-text="This screen shows the two cards with labels shown in Segoe UI Regular font, dark gray color and 0% transparency. The labels are positioned below the values, with text wrap turned off and both value and baseline alignment turned on.":::
 
 1. Adjust the space between the value and label by using **Vertical spacing**.
 
@@ -180,7 +180,7 @@ There might be a time when you want to format all of the cards at once. Use the 
     1. Turn on the Border toggle.
     1. Turn **Shadow**, **Glow, and **Accent bar** off. 
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-7.png" alt-text="This image shows Series All selected, and displays the two cards with a Rounded Rectangle, Rounded Corners set to 25 pixels, a blue Background with 90% Transparency, and the Border toggle is on." lightbox="media/power-bi-visualization-new-card/format-7.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-7.png" alt-text="This screen shows Series All selected, and displays the two cards with a Rounded Rectangle, Rounded Corners set to 25 pixels, a blue Background with 90% Transparency, and the Border toggle is on." lightbox="media/power-bi-visualization-new-card/format-7.png":::
 
 ### Change a single Card
 
@@ -201,7 +201,7 @@ There might be a time when you want to format only one of the cards in your visu
     1. Then change the border **Width** to **2 px**
     1. Set the **Transparency** to **0%**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/format-8.png" alt-text="This image shows the visual with the Total Sales series selected, but the lower card is now displayed with a green Background color, 90% Transparency, and a 2-pixel darker green Border." lightbox="media/power-bi-visualization-new-card/format-8.png":::
+   :::image type="content" source="media/power-bi-visualization-new-card/format-8.png" alt-text="This screen shows the visual with the Total Sales series selected, but the lower card is now displayed with a green Background color, 90% Transparency, and a 2-pixel darker green Border." lightbox="media/power-bi-visualization-new-card/format-8.png":::
 
 ## New card’s reference labels
 
@@ -213,15 +213,16 @@ Reference labels are a new feature that allows you to add custom labels to your 
 
 1. Then, choose the **More options** button, and expand the **Reference labels** section.
 
-    :::image type="content" source="media/power-bi-visualization-new-card/reference-label-expanded.png" alt-text="This image shows the edit icon selected, and the More options button selected, with the Reference labels section expanded." lightbox="media/power-bi-visualization-new-card/format-7.png":::
+    :::image type="content" source="media/power-bi-visualization-new-card/reference-label-expanded.png" alt-text="This screen shows the edit icon selected, and the More options button selected, with the Reference labels section expanded." lightbox="media/power-bi-visualization-new-card/format-7.png":::
 
 1. In the **Select series** dropdown, choose the **Total Sales** card.
 
 1. Then, in the **Add label** field, select a data field or measure to add reference labels to. For this how-to exercise, select **Total Sales LY** and **Total Sales Variance**.
-    > [!NOTE]
-> You can include multiple data fields when you add reference labels.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/reference-label-add.png" alt-text="This image shows the Total Sales series selected and highlights two Callouts just added to the Total Sales card as selected under the Add label field of Reference labels section.":::
+   > [!NOTE]
+   > You can include multiple data fields when you add reference labels.
+
+   :::image type="content" source="media/power-bi-visualization-new-card/reference-label-add.png" alt-text="This screen shows the Total Sales series selected and highlights two Callouts just added to the Total Sales card as selected under the Add label field of Reference labels section.":::
 
    Reference labels are composed of three fully customizable key elements. The Title displays the content Field name. Value showcases the assigned data field value. And Detail adds extra context to showcase extra information from a single data field. Each element is fully customizable including Font, Color, and Transparency.
 
@@ -232,7 +233,7 @@ Reference labels are a new feature that allows you to add custom labels to your 
     1. Change the **Color** to green.
     1. Change the  **Transparency** to **0%**.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/reference-label-font-value.png" alt-text="The image shows formatting settings for the Title and Value sections of the two recently added Reference labels on a single card, including font, color, and transparency":::
+   :::image type="content" source="media/power-bi-visualization-new-card/reference-label-font-value.png" alt-text="The screen shows formatting settings for the Title and Value sections of the two recently added Reference labels on a single card, including font, color, and transparency":::
 
 1. Turn on the **Value** toggle and expand the **Value** Section:  
     1. Change the **Font** to **Segoe UI Bold**.
