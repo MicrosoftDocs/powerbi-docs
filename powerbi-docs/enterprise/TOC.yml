@@ -77,7 +77,7 @@
         href: service-admin-premium-testing.md                    
       - name: Managing Premium capacities
         href: service-premium-capacity-manage.md
-      - name: Configure and manage capacities
+      - name: Manage your Fabric capacity
         href: service-admin-premium-manage.md                                   
       - name: Premium capacity load evaluation
         href: service-premium-concepts.md
