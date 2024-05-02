@@ -106,6 +106,27 @@ If you want to define a parameter, follow these steps.
     
 You can now build your report and use the parameters to render the report.
 
+
+## How to share the report
+Now that you have built your paginated report and publish it to the Power BI service, you need to be able to share it. You need to also share the [shareable cloud connection](../../service-create-share-cloud-data-sources.md).
+
+Follow these steps:
+
+1.  Locate the name of the shareable cloud connection. To do this,
+
+    a. Right-click the dataset and select **Edit Mashup**.
+
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-power-bi-report-builder-dataset-properties.png" alt-text="Screenshot showing dataset properties in Power BI Report Builder.":::
+
+   b. Get the shareable cloud connection information
+   
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing scc location.":::
+
+
+2. Once you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../service-create-share-cloud-data-sources.md)..  
+
+
+
 ## Next steps 
 
 After you have a dataset that you created using Power Query, you can use it to create a paginated report in Power BI Report Builder, as you would with any other RDL dataset. You can use the report design tools, such as the Properties window and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report.
