@@ -18,7 +18,7 @@ Power BI Premium offers scale and performance for Power BI content in your organ
 
 :::image type="content" source="media/service-premium-auto-scale/service-premium-auto-scale-on.png" alt-text="Screenshot of the Power BI Admin portal screen showing P1 capacity settings.":::
 
-Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription. Autoscale only works with Power BI Premium.
+Autoscale uses an Azure subscription to automatically use more v-cores (virtual CPU cores) when the computing load on your Power BI Premium subscription would otherwise be slowed by its capacity. This article describes the steps necessary to get Autoscale working for your Power BI Premium subscription and the conditions under which Autoscale is enabled. Autoscale only works with Power BI Premium.
 
 To enable Autoscale, the following steps need to be completed:
 
@@ -89,6 +89,10 @@ The following steps show you how to enable and associate Autoscale with the reso
 The following short video shows how quickly you can configure Autoscale for Power BI Premium:
 
 :::image type="content" source="media/service-premium-auto-scale/configure-autoscale.gif" alt-text="Animation that shows how to configure Autoscale for Premium Generation 2.":::
+
+## When is Autoscale triggered?
+
+You only pay for autoscale when it's triggered. Autoscale is triggered when [interactive throttling](/fabric/enterprise/throttling) is implemented on your capacity. When interactive operations on your capacity are delayed, autoscale v-cores are added to cover the overage. As long as the overage is not covered, v-cores are added to the capacity every 30 seconds, until the number of v-cores you allocated for autoscale is reached. Once the number of v-cores allocated for autoscale is reached, new v-cores aren't added for 24 hours. During this time your capacity's throttling state is evaluated and if the capacity isn't throttled, autoscale usage returns to zero.
 
 ## Disable Autoscale
 
