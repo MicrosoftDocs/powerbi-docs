@@ -35,7 +35,7 @@ Power BI embedded analytics offers two publishing solutions, and Microsoft Fabri
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
-Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded is shipped with an [*A* SKU](/power-bi/enterprise).
 
 ### Power BI Premium
 
@@ -46,7 +46,7 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 Power BI premium offers two SKUs, *P* and *EM*.
 
 * [Understand the differences between the *P* and *EM* SKUs](../../enterprise/service-premium-what-is.md#subscriptions-and-licensing)
-* [Buy a Premium SKU](../../enterprise/service-admin-premium-purchase.md)
+* [Buy a Premium SKU](/power-bi/enterprise)
 
 ### Microsoft Fabric
 

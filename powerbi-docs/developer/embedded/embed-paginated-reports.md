@@ -96,7 +96,7 @@ The following table describes the resources and limits of each SKU. To determine
 
 By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with an *EM* or a *P* capacity. You can create a capacity with [Power BI Premium](../../enterprise/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that create a capacity for paginated reports in [Microsoft Office 365](../../enterprise/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs that create a capacity for paginated reports in [Microsoft Office 365](/power-bi/enterprise):
 
 | Capacity node | V-cores | RAM (GB) | DirectQuery/live connection limits (per sec) |
 | --- | --- | --- | --- |

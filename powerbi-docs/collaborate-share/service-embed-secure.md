@@ -49,7 +49,7 @@ In the Power BI service, you can share embedded reports with users who require a
 
 ## Licensing
 
-To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](../enterprise/service-admin-premium-purchase.md).
+To view the embedded report, you need  either a Power BI Pro or Premium Per User (PPU) license. Or, the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](/power-bi/enterprise).
 
 ## Customize your embed experience by using URL settings
 

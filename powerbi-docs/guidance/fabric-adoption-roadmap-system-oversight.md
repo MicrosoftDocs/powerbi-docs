@@ -164,7 +164,7 @@ It's possible to set up multiple capacities to facilitate decentralized manageme
 
 Here's an example that describes one way you could manage your capacity.
 
-- [Purchase](/power-bi/enterprise/service-admin-premium-purchase) a P3 capacity node in Microsoft 365. It includes 32 virtual cores (v-cores).
+- [Purchase](/power-bi/enterprise) a P3 capacity node in Microsoft 365. It includes 32 virtual cores (v-cores).
 - Use 16 v-cores to create the first capacity. It will be used by the Sales team.
 - Use 8 v-cores to create the second capacity. It will be used by the Operations team.
 - Use the remaining 8 v-cores to create the third capacity. It will support general use.

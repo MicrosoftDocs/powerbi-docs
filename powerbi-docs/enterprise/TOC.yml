@@ -43,8 +43,6 @@
       href: service-admin-disable-self-service.md
     - name: Sign up with a Microsoft 365 Trial
       href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-    - name: Add Power BI with a Microsoft 365 partner
-      href: service-admin-syndication-partner.md
     - name: Alternate email address for Power BI
       href: service-admin-alternate-email-address-for-power-bi.md
     - name: Closing your account
@@ -66,15 +64,9 @@
       - name: Power BI Premium features
         href: service-premium-features.md
       - name: What is Power BI Premium?
-        href: service-premium-what-is.md
-      - name: Premium architecture
-        href: service-premium-architecture.md          
+        href: service-premium-what-is.md          
       - name: Power BI Premium Per User
-        href: service-premium-per-user-faq.yml
-      - name: Purchase Power BI Premium
-        href: service-admin-premium-purchase.md   
-      - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md                    
+        href: service-premium-per-user-faq.yml                    
       - name: Managing Premium capacities
         href: service-premium-capacity-manage.md
       - name: Configure and manage capacities

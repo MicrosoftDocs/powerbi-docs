@@ -31,7 +31,7 @@ For more information about Power BI Premium or Multi-Geo, take a look at the fol
 
 * [Azure bandwidth pricing details](https://azure.microsoft.com/pricing/details/bandwidth/)
 * [What is Microsoft Power BI Premium?](../enterprise/service-premium-what-is.md)
-* [How to purchase Power BI Premium](../enterprise/service-admin-premium-purchase.md)
+* [How to purchase Power BI Premium](/power-bi/enterprise)
 * [Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md)
 * [Where is my Power BI tenant located?](../admin/service-admin-where-is-my-tenant-located.md)
 * [Power BI Premium FAQ](../enterprise/service-premium-faq.yml)
