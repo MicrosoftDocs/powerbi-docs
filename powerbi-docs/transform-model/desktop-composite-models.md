@@ -367,6 +367,7 @@ The following **limitations** apply when working with DirectQuery for Power BI s
 * Using Power BI Embedded with semantic models that include a DirectQuery connection to an Analysis Services model isn't currently supported.
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
+- Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](../connect-data/service-create-share-cloud-data-sources.md) and / or [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control).
 * If you rename a workspace after the DirectQuery connection has been set up you'll need to update the data source in Power BI Desktop for the report to continue working.
 * Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
 * Take over of a semantic model that is using the **DirectQuery to other semantic models** feature isn't currently supported.
