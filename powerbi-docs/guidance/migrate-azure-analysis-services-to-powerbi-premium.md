@@ -7,13 +7,15 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat, intro-migration
 ms.date: 05/22/2023
-ms.custom: intro-migration
 ---
 
 # Migrate from Azure Analysis Services to Power BI Premium
 
 This article targets [Azure Analysis Services (AAS)](/azure/analysis-services/analysis-services-overview) data modelers and administrators. It provides them with guidance and rationale to help migrate their AAS databases to Power BI Premium or Power BI Embedded.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Background
 

@@ -6,8 +6,8 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: conceptual
+ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.date: 03/06/2024
 ---
 
@@ -228,6 +228,8 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Who has permission to publish by using a [deployment pipeline](powerbi-implementation-planning-security-content-creator-planning.md#deployment-pipeline-access)?
   - Who has permission to manage [gateways](/data-integration/gateway/manage-security-roles#gateway-roles) and [data connections](/data-integration/gateway/manage-security-roles#connection-roles)?
   - Who has permission to manage a [Premium capacity](../enterprise/service-admin-premium-manage.md#manage-user-permissions)?
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!TIP]
 > For more considerations about security, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.

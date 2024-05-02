@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/27/2022
 ---
 
@@ -97,6 +98,8 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
 - Procure initial [Premium capacity license](/power-bi/enterprise) (if applicable).
 - Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Define success criteria for migration
 

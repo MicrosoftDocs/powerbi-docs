@@ -68,9 +68,7 @@
       - name: Power BI Premium Per User
         href: service-premium-per-user-faq.yml                    
       - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md
-      - name: Configure and manage capacities
-        href: service-admin-premium-manage.md                                   
+        href: service-premium-capacity-manage.md                                 
       - name: Premium capacity load evaluation
         href: service-premium-concepts.md
       - name: Performance smoothing
