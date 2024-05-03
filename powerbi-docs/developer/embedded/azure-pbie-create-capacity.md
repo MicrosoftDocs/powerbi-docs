@@ -55,7 +55,7 @@ Before creating a Power BI Embedded capacity, make sure you're signed into Power
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](/power-bi/enterprise) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **Size** - The [A SKU](./embedded-capacity.md) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md#sku-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -234,7 +234,7 @@ Use this template to create a Power BI Embedded resource.
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](./embedded-multi-geo.md
 ).
 
-    * **SKU** - The [A SKU](/power-bi/enterprise) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **SKU** - The [A SKU](./embedded-capacity.md) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md#sku-computing-power).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
