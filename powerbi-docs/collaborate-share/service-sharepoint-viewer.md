@@ -25,7 +25,7 @@ Viewing Power BI files in OneDrive for Business and SharePoint is enabled **by d
 
 If you **do not** want this capability on in your tenant, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
-If the capability isn't enabled in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the optimal viewing experience and to ensure you always have a backup of your file in the cloud, we encourage admins to enable the functionality. 
+If the capability isn't turned on in your tenant, you can't view a Power BI report in your browser. Instead, you're directed to download the file to your device. You can then open the file in Power BI Desktop. For the best viewing experience and to ensure you always have a backup of your file in the cloud, we encourage admins to turn on the functionality. 
 
 :::image type="content" source="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png" alt-text="Screenshot of capability disabled view." lightbox="media/service-sharepoint-viewer/power-bi-onedrive-setting-off.png":::
 
