@@ -108,7 +108,7 @@ You can now build your report and use the parameters to render the report.
 
 
 ## How to share the report
-Now that you have built your paginated report and publish it to the Power BI service, you need to be able to share it. You need to also share the [shareable cloud connection](../../service-create-share-cloud-data-sources.md).
+Now that you have built your paginated report and publish it to the Power BI service, you need to be able to share it. You need to also share the [shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).
 
 Follow these steps:
 
@@ -123,7 +123,7 @@ Follow these steps:
 :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing scc location.":::
 
 
-2. Once you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../service-create-share-cloud-data-sources.md)..  
+2. Once you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md)..  
 
 
 
