@@ -1,6 +1,6 @@
 ---
 title: View Power BI files in OneDrive and SharePoint
-description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive for Business.
+description: Learn how to view Power BI Desktop files in SharePoint document libraries and OneDrive.
 author: ajburnle
 ms.author: ajburnle
 ms.reviewer: lukaszp
@@ -21,7 +21,7 @@ You can quickly view Power BI files in OneDrive and SharePoint without needing t
 
 ## Enable viewing Power BI files in OneDrive and SharePoint
 
-Viewing Power BI files in OneDrive for Business and SharePoint is enabled **by default**. 
+Viewing Power BI files in OneDrive and SharePoint is enabled **by default**. 
 
 If you **do not** want this capability on in your tenant, your admin will need to [**disable** the capability in the Admin portal](/fabric/admin/service-admin-portal-integration#users-can-view-power-bi-files-saved-in-onedrive-and-sharepoint-preview).
 
@@ -124,13 +124,13 @@ The preview provides a limited experience with options to download the .pbix fil
 
 ## Version history
 
-You can also use the built-in M365 version history capability to track report activity and return to old versions of a file. From your OneDrive and SharePoint document library, select the ellipsis **(...)** next to the Power BI file name and select **Verion history** from the options. After selecting **Version history**, you will be able to store, track, and restore the file whenever a change is made.
+You can also use the built-in Microsoft 365 version history capability to track report activity and return to old versions of a file. From your OneDrive and SharePoint document library, select the ellipsis **(...)** next to the Power BI file name and select **Version history** from the options. After selecting **Version history**, you will be able to store, track, and restore the file whenever a change is made.
 
 :::image type="content" source="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png" alt-text="Screenshot of version history." lightbox="media/service-sharepoint-viewer/powerbi-onedrive-version-history.png":::
 
 ## Prerequisites to viewing report in OneDrive and SharePoint
 
-To view a report in OneDrive for Business or SharePoint Online, you must:
+To view a report in OneDrive or SharePoint Online, you must:
 
 -	Be signed in to OneDrive with your Microsoft Entra account.
 -	Have at least read access to the file.
