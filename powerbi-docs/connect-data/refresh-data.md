@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/03/2024
 LocalizationGroup: Data refresh
 ---
 
@@ -79,8 +79,8 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 | Storage mode | Data refresh | OneDrive refresh | Query caches | Tile refresh | Report visuals |
 | --- | --- | --- | --- | --- | --- |
 | Import | Scheduled and on-demand | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on-demand | No |
-| DirectQuery | Not applicable | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on-demand | No |
-| LiveConnect | Not applicable | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on-demand | Yes |
+| DirectQuery | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on-demand | No |
+| LiveConnect | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on-demand | Yes |
 | Push | Not applicable | Not applicable | Not practical | Automatically and on-demand | No |
 
 Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
