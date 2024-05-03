@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/10/2024
+ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -26,7 +26,7 @@ The services that are supported today are [Sentiment Analysis](/azure/cognitive-
 
 ### Enable AI features
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section.
 
 :::image type="content" source="media/service-cognitive-services/cognitive-services-01.png" alt-text="Screenshot of the Admin portal that shows the Capacity settings.":::
 
