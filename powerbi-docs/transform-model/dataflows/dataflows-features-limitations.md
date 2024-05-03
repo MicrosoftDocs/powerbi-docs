@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -31,6 +31,8 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * When you use *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 * In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
 * Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflows-or-datamart-failures-in-premium-workspaces) are not supported for dataflows and datamarts in Premium workspaces.
+* When using DirectQuery with a dataflow, searches using the slicer visual is case-sensitive.
+* 
 
 
 ## Dataflow authoring
