@@ -225,6 +225,10 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 **Answer:** No. Power BI Desktop project report definitions aren't supported in AAS and SSAS. And model definitions use an enhanced metadata unique to Power BI. For AAS and SSAS projects, use Microsoft Visual Studio for model authoring, Git, and Azure DevOps integration.
 
+**Question:** Why isn't there a *.pbip file when I connect my Fabric workspace to Git? How can I edit my report and semantic model in Power BI Desktop?
+
+**Answer:** The PBIP file is optional and simply serves as a shortcut to the report folder. You can open both the report and the semantic model for editing in Power BI Desktop by opening the definition.pbir file located in the report folder.
+
 ## Related content
 
 - [Power BI Desktop project semantic model folder](projects-dataset.md)  
