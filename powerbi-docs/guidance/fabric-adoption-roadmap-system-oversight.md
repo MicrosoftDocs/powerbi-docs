@@ -361,7 +361,7 @@ You can retrieve auditing data to build an auditing solution, manage content pro
 | Audit user activities | [REST API to get activity events](/rest/api/power-bi/admin/get-activity-events) |
 | Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/fabric/governance/metadata-scanning-overview) |
 | Audit content shared to entire organization | [REST API to check use of widely shared links](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) |
-| Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/get-tenant-settings) |
+| Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/list-tenant-settings) |
 | Publish content | [REST API to deploy items from a deployment pipeline](/rest/api/power-bi/pipelines/selective-deploy) or [clone a report to another workspace](/rest/api/power-bi/reports/clone-report-in-group) |
 | Manage content | [REST API to refresh a semantic model](/rest/api/power-bi/datasets/refresh-dataset-in-group) or [take over ownership of a semantic model](/rest/api/power-bi/datasets/take-over-in-group) |
 | Manage gateway data sources | [REST API to update credentials for a gateway data source](/rest/api/power-bi/gateways/update-datasource) |
@@ -402,7 +402,7 @@ Every month, Microsoft releases new Fabric features and capabilities. To be effe
 
 > [!div class="checklist"]
 > - **Review tenant settings:** Conduct a review of all tenant settings to ensure they're aligned with [data culture](fabric-adoption-roadmap-data-culture.md) objectives and [governance](fabric-adoption-roadmap-governance.md) guidelines and policies. Verify which groups are assigned for each setting.
-> - **Document the tenant settings:** Create documentation of your tenant settings for the internal Fabric community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature. Use the [Get Tenant Settings REST API](/rest/api/fabric/admin/tenants/get-tenant-settings) to make the process more efficient, and to create snapshots of the settings on a regular basis.
+> - **Document the tenant settings:** Create documentation of your tenant settings for the internal Fabric community and post it in the centralized portal. Include which groups a user would need to request to be able to use a feature. Use the [Get Tenant Settings REST API](/rest/api/fabric/admin/tenants/list-tenant-settings) to make the process more efficient, and to create snapshots of the settings on a regular basis.
 > - **Customize the _Get Help_ links:** When user resources are established, as described in the [Mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md) article, update the [tenant setting](/fabric/admin/service-admin-portal-help-support) to customize the links under the _Get Help_ menu option. It will direct users to your documentation, community, and help.
 
 **Improve management of user machines and devices:**

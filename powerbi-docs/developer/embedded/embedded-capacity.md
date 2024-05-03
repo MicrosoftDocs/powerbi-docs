@@ -35,7 +35,7 @@ Power BI embedded analytics offers two publishing solutions, and Microsoft Fabri
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
-Power BI Embedded is shipped with an [*A* SKU](../enterprise/service-premium-what-is.md#capacities-and-skus).
+Power BI Embedded is shipped with an [*A* SKU](../../enterprise/service-premium-what-is.md#capacities-and-skus).
 
 ### Power BI Premium
 
