@@ -144,6 +144,9 @@ There are a few known limitations with DirectQuery and dataflows:
 
 * Under data source settings, the dataflow connector will show invalid credentials if you're using DirectQuery. This warning doesn't affect the behavior, and the semantic model will work properly.
 
+* When a dataflow has 340 columns or more, using the dataflow connector in Power BI Desktop with the enhanced compute engine setting enabled results in the DirectQuery option being disabled for the dataflow. To use DirectQuery in such configurations, use fewer than 340 columns.
+
+
 ## Computed entities
 
 You can perform **in-storage computations** when using **dataflows** with a Power BI Premium subscription. This feature lets you perform calculations on your existing dataflows, and return results that enable you to focus on report creation and analytics.
