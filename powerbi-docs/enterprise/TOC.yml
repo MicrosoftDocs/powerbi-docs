@@ -159,8 +159,6 @@
   - name: Automation tools
     expanded: false
     items:
-    - name: Enable service principal authentication for read-only admin APIs
-      href: read-only-apis-service-principal-authentication.md
     - name: PowerShell, REST APIs, and .NET SDK
       href: service-admin-reference.md
     - name: Power BI cmdlets for PowerShell
