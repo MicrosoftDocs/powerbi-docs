@@ -18,7 +18,7 @@ This article explains how to embed Power BI content that uses OLS in a Power BI 
 
 In this scenario, the ISV has a table with sensitive data and metadata that they want to hide from the report customers.
 
-For more information on OLS go to [Object-level security (OLS)](/fabric/security/service-admin-object-level-security).
+For more information on OLS, go to [Object-level security (OLS)](/fabric/security/service-admin-object-level-security).
 
 ## Prerequisites
 
@@ -71,10 +71,10 @@ public EmbedToken GetEmbedToken(Guid reportId, IList<Guid> datasetIds, [Optional
 
 ## Considerations and limitations
 
-[See restrictions for OLS models](/analysis-services/tabular-models/object-level-security#restrictions)
+[See restrictions for OLS models](/analysis-services/tabular-models/object-level-security#restrictions).
 
 ## Related content
 
 [Object-level security in Azure Analysis Services](/analysis-services/tabular-models/object-level-security)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
