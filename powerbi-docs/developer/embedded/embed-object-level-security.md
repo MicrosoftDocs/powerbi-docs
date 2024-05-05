@@ -36,9 +36,9 @@ The process of [generating embed tokens](generate-embed-token.md#row-level-secur
 
 If the report you want to embed is using one of the following scenarios, you might need to take some extra steps:
 
-* [Cloud OLS](./cloud-rls.md#generate-an-embed-token)
-* [SQL Server Analysis Services (SSAS)](sql-server-analysis-services-embed.md#generate-an-embed-token)
-* [Microsoft Entra ID](./embed-azure-analysis-services.md#generate-an-embed-token)
+* [Cloud OLS token generation](./cloud-rls.md#generate-an-embed-token)
+* [SQL Server Analysis Services (SSAS) token generation](sql-server-analysis-services-embed.md#generate-an-embed-token)
+* [Microsoft Entra ID token generation](./embed-azure-analysis-services.md#generate-an-embed-token)
 
 The following example shows how to generate a token to hide a table with sensitive information using OLS:
 
