@@ -4686,6 +4686,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/read-only-apis-service-principal-authentication.md",
+            "redirect_url": "/fabric/admin/metadata-scanning-enable-read-only-apis",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/admin/service-admin-disable-self-service.md",
             "redirect_url": "/power-bi/enterprise/service-admin-disable-self-service",
             "redirect_document_id": false

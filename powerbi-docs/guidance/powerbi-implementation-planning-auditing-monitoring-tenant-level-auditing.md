@@ -1423,7 +1423,7 @@ If you've chosen to use any Azure services (such as Azure Functions, Azure Autom
 
 At this point, you've decided [how to authenticate](#determine-the-authentication-method). We recommend that you register a Microsoft Entra application (service principal). Commonly referred to as an _app registration_, it should be used for unattended operations that you'll automate.
 
-For more information about how to create an app registration to retrieve tenant-level auditing data, see [Enable service principal authentication for read-only admin APIs](../enterprise/read-only-apis-service-principal-authentication.md).
+For more information about how to create an app registration to retrieve tenant-level auditing data, see [Enable service principal authentication for read-only admin APIs](/fabric/admin/metadata-scanning-enable-read-only-apis).
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
