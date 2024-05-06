@@ -36,7 +36,7 @@ The following table describes the data that's captured in the diagnostics dialog
 |---|-----|
 | Report ID            | Paginated Report internal object ID.  |
 | Report Name          | The name of the paginated report rendered. |
-| Capacity Throttled   | Each capacity consists of a defined number of v-cores. The CPU time measured in utilization records reflects the v-cores' utilization, and that utilization determines if the workload exceeds the available resources. This value is displayed as either yes or no. For additional information, see [Power BI Premium capacity load, overload, and autoscale - Power BI](../enterprise/service-premium-concepts.md#how-capacity-size-limits-are-enforced-when-viewing-reports).  |
+| Capacity Throttled   | Each capacity consists of a defined number of v-cores. The CPU time measured in utilization records reflects the v-cores' utilization, and that utilization determines if the workload exceeds the available resources. This value is displayed as either yes or no. For additional information, see [The Fabric throttling policy](../fabric-docs/docs/enterprise/throttling.md).  |
 | Request ID           | Paginated Report internal object ID.  |
 | Data Retrieval time  | Number of milliseconds (ms) spent retrieving the data from its source. |
 | Row Count            | Number of rows returned from queries.|
