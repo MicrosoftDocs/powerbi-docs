@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 05/06/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,18 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## April 2024 QFE 3
+
+*Version : 2.128.1380.0, Released: May 02 , 2024*
+
+Bug fixes/improvements:
+
+* Introduced a new feature to synchronize the *DataType* when the *SourceProviderType* changes in the Power BI Modeling Engine
+* Added locks to prevent clearing the cache of the Data Grid data when it's being read at the same time
+* Set Trust Server Certificate irrespective of encrypt connection settings
+* Fixed issue occurring when select visuals' calculation groups were returning incorrect results due to incorrect optimization
 
 
 ## April 2024 QFE 2
