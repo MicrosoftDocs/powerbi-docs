@@ -1,8 +1,8 @@
 ---
 title: Power BI Premium capacity load, overload, and autoscale
 description: Understand your Power BI Premium capacity load, what overload means and how to autoscale.
-author: KesemSharabi
-ms.author: kesharab
+author: v-halzucati
+ms.author: v-halzucati
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
