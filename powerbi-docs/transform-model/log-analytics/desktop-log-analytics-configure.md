@@ -179,7 +179,7 @@ commands
 
 ```
 
-The following KQL query retrieves events that were throttled in the last day by workspace and item:
+The following KQL query retrieves events that were throttled in the last day by workspace, item and user:
 
 ```sql
 let executionMetrics = PowerBIDatasetsWorkspace
@@ -192,6 +192,7 @@ let commands = PowerBIDatasetsWorkspace
     | where OperationName in ("CommandEnd", "QueryEnd", "DiscoverEnd")    
     | project
         TimeGenerated,
+        ExecutingUser,
         ArtifactId,
         PowerBIWorkspaceId,
         CommandOperationName = OperationName,
@@ -204,11 +205,13 @@ commands
     TimeGenerated,
     ArtifactId,
     PowerBIWorkspaceId,
+    ExecutingUser,
     CommandOperationName,
     XmlaRequestId,
     EventText,
-    CommandText
-| summarize count() by PowerBIWorkspaceId, ArtifactId, CommandOperationName
+    CommandText,
+    capacityThrottlingMs
+| summarize countThrottling = count(), avgThrottlingDuration = avg(capacityThrottlingMs) by PowerBIWorkspaceId, ArtifactId, ExecutingUser, CommandOperationName
 ```
 
 The statistics are presented as a JSON text in the **EventText** property, see the following examples.
