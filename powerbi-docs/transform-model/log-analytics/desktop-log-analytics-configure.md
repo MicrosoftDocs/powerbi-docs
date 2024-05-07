@@ -159,7 +159,7 @@ The following table describes the **schema**.
 
 ### ExecutionMetrics event
 
-For every **Discover**, **Command** and **Query** request, an event named **ExecutionMetrics** is produced at the end of the request. This event will contain execution metrics for the request, which can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with with the nearest **[Discover|Command|Query]End** event.
+For every **Discover**, **Command** and **Query** request, an event named **ExecutionMetrics** is produced at the end of the request. This event contains execution metrics for the request, which can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with the nearest **[Discover|Command|Query]End** event.
 
 
 The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model in the last day:
@@ -179,7 +179,7 @@ commands
 
 ```
 
-The following KQL query retrieves events that were throttled in the last day by workspace, item and user:
+The following KQL query retrieves events that were throttled in the last day by workspace, item, and user:
 
 ```sql
 let executionMetrics = PowerBIDatasetsWorkspace
@@ -263,7 +263,7 @@ The following table describes all the possible properties. Not every property is
 | timeStart | The timestamp (UTC) of when the request started. |
 | timeEnd | The timestamp (UTC) of when the request ended. |
 | durationMs | Total duration of the execution. |
-| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](https://learn.microsoft.com/power-bi/enterprise/service-premium-what-is#semantic-model-sku-limitation). |
+| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](../../enterprise/service-premium-what-is#semantic-model-sku-limitation.md). |
 | directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
 | directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
 | directQueryTotalTimeMs | Total time spent on executing and reading all DirectQuery queries during the request. |
@@ -283,14 +283,14 @@ The following table describes all the possible properties. Not every property is
 | directQueryTotalRows   | Total number of rows read from the various DirectQuery queries. |
 | directQueryRequestCount   | Total number of DirectQuery storage engine queries executed by the DAX engine. |
 | errorCount   | Total number of errors for the current request. |
-| qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](https://learn.microsoft.com/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
+| qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
 | intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
-| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](https://learn.microsoft.com/analysis-services/trace-events/discover-events-data-columns?view=asallproducts-allversions#discover-begin-classdata-columns) for list of discover types. |
+| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns?view=asallproducts-allversions#discover-begin-classdata-columns) for list of discover types. |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
-| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here](https://learn.microsoft.com/en-us/fabric/enterprise/throttling). |
+| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here]/fabric/enterprise/throttling). |
 
-- All durations and cpu times are presented in milliseconds.
-- Additional properties beyond those described in the table above may be encountered, these should be considered as undocumented and subject to change.
+- All durations and CPU times are presented in milliseconds.
+- Additional properties beyond those described in the table above may be encountered and these should be considered as undocumented and subject to change.
 
 ## Sample Log Analytics KQL queries
 
