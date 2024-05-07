@@ -1,8 +1,8 @@
 ---
 title: Manage Microsoft Power BI Premium capacities
 description: Describes management tasks for Power BI Premium capacities.
-author: KesemSharabi
-ms.author: kesharab
+author: v-halzucati
+ms.author: v-halzucati
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
