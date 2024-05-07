@@ -263,7 +263,7 @@ The following table describes all the possible properties. Not every property is
 | timeStart | The timestamp (UTC) of when the request started. |
 | timeEnd | The timestamp (UTC) of when the request ended. |
 | durationMs | Total duration of the execution. |
-| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](../../enterprise/service-premium-what-is#semantic-model-sku-limitation.md). |
+| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](../../enterprise/service-premium-what-is.md#semantic-model-sku-limitation). |
 | directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
 | directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
 | directQueryTotalTimeMs | Total time spent on executing and reading all DirectQuery queries during the request. |
@@ -285,7 +285,7 @@ The following table describes all the possible properties. Not every property is
 | errorCount   | Total number of errors for the current request. |
 | qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
 | intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
-| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns?view=asallproducts-allversions#discover-begin-classdata-columns) for list of discover types. |
+| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns#discover-begin-classdata-columns) for list of discover types. |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
 | capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here]/fabric/enterprise/throttling). |
 
