@@ -287,7 +287,7 @@ The following table describes all the possible properties. Not every property is
 | intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
 | discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns#discover-begin-classdata-columns) for list of discover types. |
 | queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
-| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here]/fabric/enterprise/throttling). |
+| capacityThrottlingMs     | Total time the request got delayed dure to capacity throttling. Learn more about throttling [here](/fabric/enterprise/throttling). |
 
 - All durations and CPU times are presented in milliseconds.
 - Additional properties beyond those described in the table above may be encountered and these should be considered as undocumented and subject to change.
