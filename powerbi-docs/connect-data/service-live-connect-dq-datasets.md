@@ -12,7 +12,7 @@ ms.date: 12/12/2022
 
 # Live connection and DirectQuery comparison
 
-[Live connection](desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) is a way of connecting a Power BI report to a published Power BI semantic model. [DirectQuery](refresh-data.md#semantic-models-in-directquery-mode) is a method you can use to connect your semantic model to data. This article describes the main differences between these concepts.
+[Live connection](desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) is a way of connecting a Power BI report to a published Power BI semantic model. [DirectQuery](refresh-data.md#semantic-models-in-directquery-mode) is a method you can use to connect your semantic model to data. This article describes the main differences between these concepts. 
 
 ## Live connection
 
