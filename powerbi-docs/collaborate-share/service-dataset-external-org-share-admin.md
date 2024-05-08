@@ -1,14 +1,14 @@
 ---
 title: Share B2B semantic models with external guest users (preview)
 description: See information about the in-place semantic model sharing with external users that Power BI administrators need to be aware of.
-author: ajburnle
-ms.author: ajburnle
+author: paulinbar
+ms.author: painbar
 manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/21/2022
+ms.date: 02/07/2024
 LocalizationGroup: Administration
 ---
 
@@ -24,17 +24,15 @@ For a full list of requirements necessary to use in-place datset sharing, see th
 
 Users must have an active Power BI account and a Power BI Pro or Premium license. For detailed information on licensing requirements, see the licensing requirements section of [Distribute Power BI content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#licensing).
 
-## Allow guest users to work with shared semantic models in their own tenants 
+## Guest users can work with shared semantic models in their own tenants 
 
 Microsoft Entra B2B guest users can access semantic models shared with them in their own tenants. Use the following steps to enable access by external users of semantic models shared with them by users within your organization: 
 
 1. In the admin portal, go to **Tenant settings**.
 
-1. Click on **Allow guest users to work with shared semantic models in their own tenants**.
+1. Click on **Guest users can work with shared semantic models in their own tenants**.
  
 1. Set the toggle to **Enable**.
-
-    ![Screenshot of the Power BI Admin portal with the Allow guest users to work with shared semantic models setting shown.](media/service-dataset-external-org-share-admin/guest-user-shared-tenant-setting.png)
 
 > [!NOTE]
 > This setting is off by default for customers. If this setting is disabled, a guest user will still be able to access the semantic model in the provider tenant but not in their own tenant.
@@ -55,8 +53,6 @@ As a Power BI admin, you can specify which users or user groups can share semant
 1. Specify if you want this setting to apply to **The entire organization**, **Specific security groups**, or to exclude specific security groups. Click the checkbox next to **Except specific security groups** to add any groups you want to exclude.
  
 1. Click **Apply**.
-
-    ![Screenshot of the Power BI Admin portal with the Allow specific users to turn on external data sharing setting shown.](media/service-dataset-external-org-share-admin/specific-users-allowed-share.png)
 
 ## Related content
 

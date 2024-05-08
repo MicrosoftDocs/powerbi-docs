@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 12/25/2023
+ms.date: 03/22/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -94,7 +94,9 @@ If your subscription is ready, select **Save**. To make your subscription more p
 You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** only send an email after the first scheduled refresh on that day. All dates/times are normalized to UTC when checking for the first dataset refresh of the day. 
 
 > [!NOTE]
-> To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
+>
+> - To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
+> - You can have Power BI send subscription emails to a [mail-enabled security group](/power-bi/collaborate-share/end-user-subscribe#use-group-email-aliases). Be sure to add the Power BI alias (no-reply-powerbi@microsoft.com) to the approved sender list.
 
 ## Sensitivity labels
 
@@ -350,9 +352,9 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 
 
-
 **Row-level security (RLS)**
-- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS, but customers often scroll past the warning message. 
+
+- For Power BI reports, dashboards, or paginated reports that use a semantic model with row-level security (RLS), use caution when creating subscriptions for yourself and others. Power BI warns you that the data contains RLS. A bubble info icon shows up next to the recipients header. If you hover over that icon, you can see the warning message. However, users often scroll past the warning message. 
 
   The static image sent in the subscription email displays data ***based on the owner of the subscription***. For this reason, when creating subscriptions, be careful to ensure that confidential information isn't included in the static image. Other than that static image, the report or dashboard itself opens (or not) and displays data based on the user's permissions.  
 

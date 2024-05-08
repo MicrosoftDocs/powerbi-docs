@@ -3,8 +3,6 @@ title: Use report themes in Power BI Desktop
 description: Learn how to use report themes to create a custom color palette and apply it to an entire report in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
-ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to

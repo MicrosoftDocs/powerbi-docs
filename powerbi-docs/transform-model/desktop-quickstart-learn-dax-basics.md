@@ -1,18 +1,18 @@
 ---
 title: Learn DAX basics in Power BI Desktop
 description: Learn about how to effectively use DAX basics in Power BI Desktop to solve real business problems for your organization.
-author: Minewiskan
+author: kfollis
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/20/2022
+ms.date: 03/15/2024
 LocalizationGroup: Model your data
 ---
 # Learn DAX basics in Power BI Desktop
 
-This article is for users new to Power BI Desktop. It gives you a quick and easy introduction on how you can use Data Analysis Expressions (DAX) to solve many basic calculations and data analysis problems. We’ll go over some conceptual information, a series of tasks you can complete, and a knowledge check to test what you’ve learned. After completing this article, you should have a good understanding of the most important fundamental concepts in DAX.
+Users who are new to Power BI Desktop can use this article as a quick and easy introduction on how you can use Data Analysis Expressions (DAX) to solve many basic calculations and data analysis problems. We’ll go over some conceptual information, a series of tasks you can complete, and a knowledge check to test what you’ve learned. After completing this article, you should have a good understanding of the most important fundamental concepts in DAX.
 
 ## What is DAX?
 
@@ -220,7 +220,7 @@ Answers are provided at the end of this article.
 
 Now that you have a basic understanding of the most important concepts in DAX, you can begin creating DAX formulas for measures on your own. DAX can indeed be a little tricky to learn, but there are many resources available to you. After reading through this article and experimenting with a few of your own formulas, you can learn more about other DAX concepts and formulas that can help you solve your own business problems. There are many DAX resources available to you; most important is the [Data Analysis Expressions (DAX) Reference](/dax/).
 
-Because DAX has been around for several years in other Microsoft BI tools such as Power Pivot and Analysis Services Tabular models, there are many great sources information out there. You can find more information in books, whitepapers, and blogs from both Microsoft and leading BI professionals. The [DAX Resource Center Wiki on TechNet](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) is also a great place to start.
+Because DAX has been around for several years in other Microsoft BI tools such as Power Pivot and Analysis Services Tabular models, there are many great sources information out there. You can find more information in books, whitepapers, and blogs from both Microsoft and leading BI professionals. The [DAX Resource Center](https://social.technet.microsoft.com) is also a great place to start.
 
 ### QuickQuiz answers
 

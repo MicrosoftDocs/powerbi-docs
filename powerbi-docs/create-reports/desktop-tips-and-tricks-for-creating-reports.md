@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/27/2023
+ms.date: 03/07/2024
 ---
 # Tips and tricks for creating reports in Power BI Desktop
 
@@ -58,7 +58,7 @@ When you use a categorical (string) value in Power BI for chart axes or in a sli
 
 Power BI integrates with Bing to provide default map coordinates, in a process called geo-coding, so it's easier for you to create maps. Bing uses algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, you can use the following tips:
 
-When you create a map, you're often looking to plot countries/regions, states, and cities. In Power BI Desktop, if you name columns after the geographic designation, Bing is better able to find what you're looking to display. For example, if you have a field of US state names such as "California" and "Washington", Bing might return the location of Washington, DC instead of Washington state for the word "Washington". Naming the column "State" improves the geo-coding. The same goes for columns named "Country or Region" and "City".
+When you create a map, you're often looking to plot countries/regions, states, and cities. In Power BI Desktop, if you name columns after the geographic designation, Bing is better able to find what you're looking to display. For example, if you have a field of US state names such as "California" and "Washington" Bing might return the location of Washington, DC instead of Washington state for the word "Washington". Naming the column "State" improves the geo-coding. The same goes for columns named "Country or Region" and "City".
 
 Some designations are ambiguous when considered in the context of multiple countries/regions. In some cases, what one country/region considers a 'state' is treated as a 'province', a 'county', or some other designation. You can increase the accuracy of geo-coding by building columns that append multiple fields together and use those for plotting data locations. An example would be instead of passing only "Wiltshire", you can pass "Wiltshire, England" to get a more accurate geo-coding result.
 
@@ -70,7 +70,7 @@ Another way to ensure fields are correctly geo-coded is by setting the Data Cate
 
 ## Better geo-coding with more specific locations
 
-Sometimes, even setting the data categories for mapping is insufficient. Build a more specific location like a street address by using the Query Editor in Power BI Desktop. Use the Add Column feature to build a custom column. Then build the desired location as follows:
+Sometimes, even setting the data categories for mapping is insufficient. Build a more specific location like a street address by using the Query Editor in Power BI Desktop. Use the *Add Column* feature to build a custom column. Then build the desired location as follows:
 
 ```console
 = [Field1] & " " & [Field2]
@@ -84,7 +84,7 @@ There are several ways to build histograms in Power BI Desktop:
 
 Simplest Histograms: Determine which query has the field you want to build a histogram on. Use the **Reference** option for the query to create a new query and name it **FieldName Histogram**. Use the **Group by** option in the **Transform** ribbon and select the **count rows** aggregate. Ensure the data type is a number for the resulting aggregate column. Then visualize this data on the reports page. This histogram is fast and easy to build, but it doesn't work well if you have many data points, and it doesn't allow brushing across visuals.
 
-Defining buckets to build a histogram: Determine which query has the field you want to build a histogram on. Use the **Reference** option for the query to create a new query and name it **FieldName**. Now define the buckets with a rule. Use the Add Custom Column option on the Add Column ribbon and build a custom rule. A simple bucketing rule might look like this:
+Defining buckets to build a histogram: Determine which query has the field you want to build a histogram on. Use the **Reference** option for the query to create a new query and name it **FieldName**. Now define the buckets with a rule. Use the *Add Custom Column* option on the **Add Column** ribbon and build a custom rule. A simple bucketing rule might look like this:
 
 ```console
 if([FieldName] \< 2) then "\<2 min" else
@@ -111,7 +111,7 @@ The last step is to create the histogram. Drag the Bucket field from the **Bucke
 
 In Power BI Desktop, you can use a calculated field to define a Histogram. Identify the table and column onto which you want to create a histogram. In the calculation area, type the following formula:
 
-> Frequency:=COUNTROWS(\<Column Name\>)
+> Frequency:=COUNT(\<Column Name\>)
 >
 >
 
@@ -160,7 +160,7 @@ To create a relationship in this case, first create a logical data set of all th
 1. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
 1. In the **CustomerNames** query, select **Remove Duplicates**.
 
-Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each.
+Now you have a dimension table that you can use to relate to *CustomerIncidents* and *WorkItems* that contains all the values of each.
 
 ## Patterns to jump-start your use of the Query Editor
 
@@ -179,7 +179,7 @@ This is possible because the Power Query Editor  executes steps in order.
 
 ### Duplicate or Reference queries followed by merge to original query
 
-Sometimes it's useful to compute summary statistics for a data set. The easy way to do this is to duplicate or reference the query in the Power Query Editor . Then use **Group by** to compute the summary statistics. Summary statistics help you normalize the data in the original data, so they're more comparable. This is especially useful for comparing individual values to the whole. To do this, go to the original query and select the **merge** option. Then merge the data from the summary statistics query matching on the appropriate identifiers. Now you're ready to normalize the data as needed for your analysis.
+Sometimes it's useful to compute summary statistics for a data set. The easy way to do this is to duplicate or reference the query in the Power Query Editor. Then use **Group by** to compute the summary statistics. Summary statistics help you normalize the data in the original data, so they're more comparable. This is especially useful for comparing individual values to the whole. To do this, go to the original query and select the **merge** option. Then merge the data from the summary statistics query matching on the appropriate identifiers. Now you're ready to normalize the data as needed for your analysis.
 
 ## Use DAX for the first time
 

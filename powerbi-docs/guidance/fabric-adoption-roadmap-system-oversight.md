@@ -122,6 +122,8 @@ It's important for administrators to become fully aware of Fabric's technical ca
 
 [Capacity](/fabric/enterprise/licenses#capacity-and-skus) includes features and capabilities to deliver analytics solutions at scale. There are two types of Fabric [organizational licenses](/fabric/enterprise/licenses#organizational-licenses): Premium per User (PPU) and capacity. There are several types of [capacity licenses](/fabric/enterprise/licenses#workspace). The type of capacity license determines which Fabric workloads are supported.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 The use of capacity can play a significant role in your strategy for creating, managing, publishing, and distributing content. A few of the top reasons to invest in capacity include:
 
 - [Unlimited Power BI content distribution](/power-bi/enterprise/service-premium-what-is#unlimited-content-sharing) to large numbers of read-only users. Content consumption by users with a free Power BI license is available in Premium capacity only, not PPU. Content consumption by free users is also available with an F64 Fabric capacity license or higher.
@@ -325,7 +327,7 @@ Fabric supports capabilities for information protection and data loss prevention
 
 - **Information protection:** [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) (formerly known as Microsoft Information Protection) includes capabilities for discovering, classifying, and protecting data. A key principle is that data can be better protected once it's been classified. The key building block for classifying data is [sensitivity labels](/power-bi/enterprise/service-security-sensitivity-label-overview). For more information, see [Information protection for Power BI planning](powerbi-implementation-planning-info-protection.md).
 - **Data loss prevention for Power BI:** Microsoft Purview Data Loss Prevention (formerly known as Office 365 Data Loss Prevention) supports [DLP policies for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi). By using sensitivity labels or sensitive information types, DLP policies for Power BI help an organization locate sensitive semantic models. For more information, see [Data loss prevention for Power BI planning](powerbi-implementation-planning-data-loss-prevention.md).
-- **Microsoft Defender for Cloud Apps:** [Microsoft Defender for Cloud Apps](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls) (formerly known as Microsoft Cloud App Security) supports policies that help protect data, including real-time controls when users interact with the Power BI service. For more information, see [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps.md).
+- **Microsoft Defender for Cloud Apps:** [Microsoft Defender for Cloud Apps](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) (formerly known as Microsoft Cloud App Security) supports policies that help protect data, including real-time controls when users interact with the Power BI service. For more information, see [Defender for Cloud Apps for Power BI planning](powerbi-implementation-planning-defender-for-cloud-apps.md).
 
 ### Data residency
 
@@ -357,7 +359,7 @@ You can retrieve auditing data to build an auditing solution, manage content pro
 | **Action** | **Documentation resource(s)** |
 |---|---|
 | Audit user activities | [REST API to get activity events](/rest/api/power-bi/admin/get-activity-events) |
-| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/power-bi/enterprise/service-admin-metadata-scanning) |
+| Audit workspaces, items, and permissions | [Collection of asynchronous metadata scanning REST APIs to obtain a tenant inventory](/fabric/governance/metadata-scanning-overview) |
 | Audit content shared to entire organization | [REST API to check use of widely shared links](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) |
 | Audit tenant settings | [REST API to check tenant settings](/rest/api/fabric/admin/tenants/get-tenant-settings) |
 | Publish content | [REST API to deploy items from a deployment pipeline](/rest/api/power-bi/pipelines/selective-deploy) or [clone a report to another workspace](/rest/api/power-bi/reports/clone-report-in-group) |

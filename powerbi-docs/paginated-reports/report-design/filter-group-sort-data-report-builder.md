@@ -91,7 +91,7 @@ ms.reviewer: saurkumar
   
  All three types of sorts can be combined in the same report. By default, sort order is determined by the order in which data is returned by the dataset query. Sort expressions are applied in the data region and data region group. Interactive sorts are applied after sort expressions.  
   
- For expressions that contain aggregate functions, most results are not affected by sort order. Return values for the following aggregate functions are affected by sort order: First, Last, and Previous. For more information, see [Aggregate functions reference (Power BI Report Builder)](../expressions/report-builder-functions-aggregate-functions-reference.md).  
+ For expressions that contain aggregate functions, most results are not affected by sort order. Return values for the following aggregate functions are affected by sort order: First, Last, and Previous. For more information, see [Aggregate functions reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
   
 ### Sort data in a dataset query  
  Include sort order in the dataset query to pre-sort data before it is retrieved for a report. By sorting data in the query, the sorting work is done by the data source instead of by the report processor.  

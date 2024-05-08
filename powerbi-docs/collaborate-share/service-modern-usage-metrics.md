@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 02/15/2024
 LocalizationGroup: Dashboards
 ---
 
@@ -31,7 +31,7 @@ If you create reports in workspaces, you have access to improved usage metrics r
 
 ## Create and view a new usage metrics report
 
-Only users with admin, member, or contributor permissions can view the usage metrics report. Viewer permissions aren't enough. If you are at least a contributor in a workspace in which your report resides, you can use the following procedure to display the usage metrics:
+Only users with admin, member, or contributor permissions can view the usage metrics report. Viewer permissions aren't enough. If you're at least a contributor in a workspace in which your report resides, you can use the following procedure to display the usage metrics:
 
 1. Open the workspace that contains the report for which you want to analyze the usage metrics.
 2. From the workspace content list, select **More options (...)** for the report and select **View usage metrics report**.
@@ -95,7 +95,7 @@ The improved usage metrics report includes the following report pages:
 | Report usage | Platform slicer | If users accessed the report via the Power BI service (powerbi.com), Power BI Embedded, or a mobile device. |
 | Report usage | Users with report views | Shows the list of users who opened the report sorted by view count. |
 | Report usage | Pages | If the report has more than one page, slice the report by the pages that were viewed. "Blank" means either a report page was added within 24 hours of the new page appearing in the slicer list, or report pages have been deleted. "Blank" captures these types of situations. |
-| Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present, we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering, or changing pages are not included in performance metrics.  |
+| Report performance | Typical opening time | The typical report opening time corresponds to the 50th percentile of the time it takes to open the report. In other words, it is the time below which 50% of the open-report actions are completed. The Report performance page also breaks down the typical report opening time by consumption method and browser type. At present, we measure the performance for the initial report load and first page viewed. The measurement starts when the report is requested and ends when the last visual completes rendering. Report interactions such as slicing, filtering, or changing pages aren't included in performance metrics.  |
 | Report performance | Opening time trend | The opening time trend reflects open-report performance changes over time. It compares the opening times for the report of the first half of the selected time period with the opening times of the second half. |
 | Report performance | Date slicer | You can change the time period on the Report performance page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report performance page, you can determine the earliest and latest date for which usage data is available for the selected report. |
 | Report performance | Daily performance | The performance for 25%, 50%, and 75% of the open report actions calculated for each individual day. |
@@ -172,7 +172,7 @@ If semantic model owners in your workspace leave, are no longer a part of your o
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Audit and usage metrics](/fabric/admin/service-admin-portal-audit-usage) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they're On by default for all users in the organization. See [Audit and usage metrics](/fabric/admin/service-admin-portal-audit-usage) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -230,6 +230,14 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 > - The report is treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
 > - The report is built on the original semantic model. If there are any changes from Power BI, this may break your copy of the report.
 
+### Filter out pseudo-duplicates 
+
+To remove pseudo-duplicates from the Usage Report, you can add a **Report views** measure to filter them out.
+
+- Under **Model measures**, expand **Views**, and add **Report views** to the **Filters** pane.
+
+  :::image type="content" source="media/service-modern-usage-metrics/report-views-measure.png" alt-text="Screenshot showing adding a Report Views measure.":::
+  
 ### Create a usage report in Power BI Desktop
 
 You can create a usage report in Power BI Desktop, based on the Usage Metrics Report semantic model. To establish a connection to the Usage Metrics Report semantic model and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
@@ -246,7 +254,7 @@ You can create a usage report in Power BI Desktop, based on the Usage Metrics Re
 
 1. Scroll to the desired semantic model or type *Usage Metrics* in the search box. 
 
-6. Verify in the Workspace column that you are selecting the correct semantic model, then select **Create**. 
+6. Verify in the Workspace column that you're selecting the correct semantic model, then select **Create**. 
 
     ![Screenshot of selecting the Usage Metrics Report semantic model.](media/service-modern-usage-metrics/power-bi-desktop-select-usage-metrics.png)
 
@@ -308,7 +316,7 @@ It's important to understand that differences can occur when comparing the impro
 
 In addition to the above differences between previous and improved usage metrics reports, note the following limitations for the preview release:
 
-- Dashboard usage metrics still rely on the previous version of the usage metrics reports and are not yet available in modern usage metrics.
+- Dashboard usage metrics still rely on the previous version of the usage metrics reports and aren't yet available in modern usage metrics.
 - Performance data and Report Page View metrics rely on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, this data may never reach Power BI. Therefore, the performance and Report Page View data may not include all views or all users.
 - Certain types of views aren't included in performance measurements. For example, when a user selects a link to a report in an email message, the Report View is accounted for in the report usage but there is no event in the performance metrics.
 - Report performance metrics aren't available for Paginated Reports. The Pages tab on the Report usage page as well as the charts on the Report performance page don't show data for these types of reports.
@@ -318,17 +326,20 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report semantic model might fail due to a timeout encountered during refresh. Refer to the [Troubleshooting section](#troubleshoot-refresh-issues) below to resolve this or any general refresh issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, open the report and use the **Manage permissions** option to grant direct access.
 - In some scenarios, you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occurred during the report load. 
-- If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
-- If your organization is using [Azure Private Link](../enterprise/service-security-private-links.md) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
-- In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users are not allowed this authentication. This authentication is only allowed for members of the tenant.
-- Page views that are made from mobile devices are not shown in the usage metrics report.
+- If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) in Power BI, because client-telemetry is not available the usage metrics reports will only contain Report Open events.
+- If your organization is using [Azure Private Link](/fabric/security/security-private-links-overview) and **Block Public Internet Access** in Power BI, the refresh for the semantic model will fail and the usage metrics report won't show any data.
+- In order to create and refresh the usage metrics report, the user is required to authenticate to enable the backend API calls to extract the tenant telemetry. For privacy reasons, guest users aren't allowed this authentication. This authentication is only allowed for members of the tenant.
+- Page views that are made from mobile devices aren't shown in the usage metrics report.
 - Duplicate reports with different Report ObjectIds in the usage metrics report can show up for the following scenarios:
     - Reports have been deleted and re-created with the same name
-       - If a report has been deleted and then re-created with the same name, it will continue to show up in the filters for the usage metrics report.
+       - If a report has been deleted and then re-created with the same name, it continues to show up in the filters for the usage metrics report.
     - Report is included in an App
-       - When a report is included in a Power BI App, it will generate a new Report ObjectId for the embedded report with the same name.
+       - When a report is included in a Power BI App, it generates a new Report ObjectId for the embedded report with the same name.
     - Semantic model re-initialization
        - Each time a new semantic model is created, a new report could be created.
+
+  > [!NOTE]
+  > Both GUID and ObjectsIDs may be used interchangeably. Each Report ObjectId is uniquely represented by a 32 hexadecimal GUID (a globally unique identifier).
 - The usage metrics report is not supported in My Workspace.
 - During the process of [disaster recovery (while Business continuity and disaster recovery (BCDR)](/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery) is in progress) any new incoming data experiencing data loss may be irrecoverable.
 - Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.

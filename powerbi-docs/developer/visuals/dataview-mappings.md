@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 07/12/2023
+ms.date: 12/12/2023
 ---
 
 # Understand data view mapping in Power BI visuals

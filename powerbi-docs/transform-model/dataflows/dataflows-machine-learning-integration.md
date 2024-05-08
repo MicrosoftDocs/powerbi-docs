@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/10/2024
+ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -26,7 +26,7 @@ The services that are supported today are [Sentiment Analysis](/azure/cognitive-
 
 ### Enable AI features
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section.
 
 :::image type="content" source="media/service-cognitive-services/cognitive-services-01.png" alt-text="Screenshot of the Admin portal that shows the Capacity settings.":::
 
@@ -101,6 +101,8 @@ Automated machine learning (AutoML) for dataflows enables business analysts to t
 Automated machine learning is available for dataflows that are hosted on Power BI Premium and Embedded capacities only.
 
 ### Work with AutoML
+
+Machine learning and AI are seeing an unprecedented rise in popularity from industries and scientific research fields. Businesses are also looking for ways to integrate these new technologies into their operations.
 
 Dataflows offer self-serve data prep for big data. AutoML is integrated into dataflows and enables you to use your data prep effort for building machine learning models, right within Power BI.
 
@@ -218,7 +220,7 @@ Applying the ML model creates two new dataflow tables that contain the predictio
 
 :::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png" alt-text="Screenshot of Power Query showing the AutoML results.":::
 
-You can also apply any Power BI AutoML model to tables in any dataflow in the same workspace by using **AI Insights** in the **PQO function browser**. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows and for Power Query Online in the Power BI service. This process is different from applying ML models within a dataflow using the AutoML wizard. There's no explanations table created by using this method. Unless you're the owner of the dataflow, you can't access model training reports or retrain the model. Also, if the source model is edited by adding or removing input columns or the model or source dataflow is deleted,then this dependent dataflow would break.
+You can also apply any Power BI AutoML model to tables in any dataflow in the same workspace by using **AI Insights** in the **PQO function browser**. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows and for Power Query Online in the Power BI service. This process is different from applying ML models within a dataflow using the AutoML wizard. There's no explanations table created by using this method. Unless you're the owner of the dataflow, you can't access model training reports or retrain the model. Also, if the source model is edited by adding or removing input columns or the model or source dataflow is deleted, then this dependent dataflow would break.
 
 :::image type="content" source="media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png" alt-text="Screenshot of the AI insights dialog box highlighting the Power BI Machine Learning Models.":::
 
@@ -457,7 +459,7 @@ This article provided an overview of Automated Machine Learning for Dataflows in
 
 * [Tutorial: Build a Machine Learning model in Power BI](../../connect-data/service-tutorial-build-machine-learning-model.md)
 * [Tutorial: Use Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
-* [Tutorial: Consume Azure Machine Learning models in Power BI](../../connect-data/service-aml-integrate.md)
+
 
 The following articles provide more information about dataflows and Power BI:
 

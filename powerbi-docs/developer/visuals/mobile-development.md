@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/19/2022
+ms.date: 1/19/2024
 ---
 
 # How to create mobile-friendly Power BI visuals

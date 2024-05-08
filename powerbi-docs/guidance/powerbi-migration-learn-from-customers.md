@@ -7,7 +7,8 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.custom: fabric-cat
+ms.date: 02/13/2024
 ---
 
 # Learn from customer Power BI migrations
@@ -122,19 +123,21 @@ The company's data warehouse platform is DB2. Based on the current data warehous
 
 ### Educate authors about Premium licensing
 
-Since it was easier to get started with Power BI (compared with their legacy BI platform), many of the early adopters were people who didn't have a license to the previous BI tool. As expected, the number of content authors grew considerably. These content authors understandably wanted to share their content with others, resulting in a continual need for additional Power BI Pro licenses.
+Because it was easier to get started with Power BI (compared with their legacy BI platform), many of the early adopters were people who didn't have a license to the previous BI tool. As expected, the number of content authors grew considerably. These content authors understandably wanted to share their content with others, resulting in a continual need for additional Power BI Pro licenses.
 
 The company made a large investment in Premium workspaces, most notably to distribute Power BI content to many users with Fabric free licenses. The support team works with content authors to ensure they use Premium workspaces when appropriate. It avoids unnecessarily allocating Power BI Pro licenses when a user only needs to consume content.
 
 > [!IMPORTANT]
 > Licensing questions often arise. Be prepared to educate and help content authors to address licensing questions. Validate that user requests for Power BI Pro licenses are justified.
 
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
 ### Understand the data gateways
 
 Early on, the company had many personal gateways. Using an on-premises data gateway cluster shifts the management efforts to the central BI team, which allows the content author community to focus on producing content. The central BI team worked with the internal Power BI user community to reduce the number of personal gateways.
 
 > [!IMPORTANT]
-> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies.
+> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies. For more information, see [Manage gateways](powerbi-implementation-planning-data-gateways.md#manage-gateways).
 
 ### Formalize your support plan
 

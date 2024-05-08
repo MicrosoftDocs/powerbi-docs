@@ -7,7 +7,8 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/05/2023
+ms.custom: fabric-cat
+ms.date: 02/13/2024
 ---
 
 # Power BI usage scenarios: Advanced data model management
@@ -31,6 +32,8 @@ You can achieve connectivity to a data model by using the *[XML for Analysis (XM
 ## Scenario diagram
 
 The focus of this advanced data model management usage scenario is on using [Tabular Editor](#tabular-editor) to manage the data model. You can publish a data model to the Power BI service by using the XMLA endpoint, which is available with Power BI Premium.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!TIP]
 > We recommend that you review the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) usage scenario if you're not familiar with it. The advanced data model management scenario builds upon that scenario.
@@ -147,6 +150,8 @@ Typically, a data gateway is required when accessing data sources that reside wi
 
 > [!NOTE]
 > A centralized [data gateway](../connect-data/service-gateway-personal-mode.md#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in *standard mode* is strongly recommended over gateways in *[personal mode](../connect-data/service-gateway-personal-mode.md)*. In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).
+>
+> For more information, see [On-premises data gateway (standard mode)](powerbi-implementation-planning-data-gateways.md#on-premises-data-gateway-standard-mode).
 
 ### System oversight
 

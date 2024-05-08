@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/23/2022
+ms.date: 01/23/2024
 #Customer intent: As an ISV with an on-premises dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)

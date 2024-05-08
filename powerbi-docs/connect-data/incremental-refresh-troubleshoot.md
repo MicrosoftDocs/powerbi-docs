@@ -1,14 +1,15 @@
 ---
-title: Troubleshoot incremental refresh and real-time data in Power BI
+title: Troubleshoot incremental refresh and real-time data
 description: Learn about common troubleshooting scenarios for incremental refresh, divided into configuration and refresh operations.
-author: minewiskan
-ms.author: owend
-ms.reviewer: chwade
+author: kfollis
+ms.author: kfollis
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/20/2023
-LocalizationGroup: 
+ms.date: 04/26/2024
+ms.custom: ''
+LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot incremental refresh and real-time data
 

@@ -7,14 +7,15 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.custom: fabric-cat
+ms.date: 02/13/2024
 ---
 
 # On-premises data gateway sizing
 
 This article targets Power BI administrators who need to install and manage the [on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
-The gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. It can be installed on a server on-premises, or VM-hosted Infrastructure-as-a-Service (IaaS).
+The gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. It can be installed on a server on-premises, or VM-hosted infrastructure as a service (IaaS).
 
 ## Gateway workloads
 
@@ -58,12 +59,14 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
   - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
-  - Whether semantic models enforce [Row-level Security (RLS)](../enterprise/service-admin-rls.md)
+  - Whether semantic models enforce [Row-level Security (RLS)](/fabric/security/service-admin-row-level-security)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacities-and-skus).
+> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [Microsoft Fabric capacity licenses](/fabric/enterprise/licenses#capacity-license) and [What is Power BI Premium? (Capacity nodes)](../enterprise/service-premium-what-is.md#capacities-and-skus).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Recommendations
 
@@ -79,7 +82,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 - Strive for reliability, fast speeds, and low, consistent latencies.
 - Eliminate—or reduce—machine hops between the gateway and your data sources.
-- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](../admin/power-bi-allow-list-urls.md).
+- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](/fabric/security/power-bi-allow-list-urls).
 - Set up [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI.
 - For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../admin/service-admin-where-is-my-tenant-located.md).
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory.
@@ -120,6 +123,7 @@ For Live Connection semantic models:
 
 For more information related to this article, check out the following resources:
 
+- [Power BI implementation planning: Data gateways](powerbi-implementation-planning-data-gateways.md)
 - [Guidance for deploying a data gateway for Power BI](../connect-data/service-gateway-deployment-guidance.md)
 - [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 - [Monitor and optimize on-premises data gateway performance](/data-integration/gateway/service-gateway-performance)

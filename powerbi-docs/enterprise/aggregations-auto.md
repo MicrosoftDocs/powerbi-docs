@@ -1,8 +1,8 @@
 ---
 title: Automatic aggregations overview
 description: Learn about how to use automatic aggregations to optimize query performance for DirectQuery semantic models.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model

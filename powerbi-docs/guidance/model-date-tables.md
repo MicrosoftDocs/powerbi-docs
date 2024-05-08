@@ -1,18 +1,19 @@
 ---
 title: Create date tables in Power BI Desktop
 description: Techniques and guidance for creating date tables in Power BI Desktop.
-author: davidiseminger  
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 07/02/2022
+ms.custom: fabric-cat
+ms.date: 03/15/2024
 ---
 
 # Create date tables in Power BI Desktop
 
-This article targets you as a data modeler working with Power BI Desktop. It describes good design practices for creating date tables in your data models.
+This article describes good design practices for creating date tables in your data models when using Power BI Desktop.
 
 To work with Data Analysis Expressions (DAX) [time intelligence functions](/dax/time-intelligence-functions-dax), there's a prerequisite model requirement: You must have at least one _date table_ in your model. A date table is a table that meets the following requirements:
 

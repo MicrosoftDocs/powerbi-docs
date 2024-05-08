@@ -7,13 +7,15 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.custom: contperf-fy21q3
-ms.date: 1/25/2023
+ms.date: 05/01/2024
 
 LocalizationGroup: Share your work
 ---
 
 # Publish an app in Power BI
+
+> [!IMPORTANT]
+> Legacy Power BI apps will be retired on May 1, 2024. Please upgrade to Power BI apps with audiences.
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You [create apps in *workspaces*](service-create-the-new-workspaces.md), where you can collaborate on Power BI content with your colleagues. Then you can publish the finished app to large groups of people in your organization. The [app consumer view](#app-consumer-view) section of this article outlines the app consumer experience in the Power BI service and in the Power BI mobile apps.
 
@@ -149,11 +151,12 @@ On the **Audience** tab, you create and manage audience groups within the app.
     >[!IMPORTANT]
     >
     >- Hiding content from the audience makes it unavailable in the published app for that audience. However, if you select [Allow access to hidden content](#allow-access-to-hidden-content), a user with a direct link to *any* of the content in the app can access the hidden content, even if that item is visually hidden in the navigation pane for that audience.
-    >- Dashboard tiles pointing at reports that are hidden from the audience no longer work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >- Dashboard tiles pointing at reports that are not added to the app or are added but hidden from the audience will not work. Instead they display an error: "The report shown in this tile doesn’t exist or you don’t have permission to view it."
+    >- If you only add dashboards with report tiles to your app the app doesn't display anything to your audience. Be sure to add the reports related to added dashboards and make them visible to the audience or select **Allow access to hidden content**.
     >- Paginated reports with subreports don't display the content of the subreport if it's hidden from the audience.
     >- Users of drillthrough reports can't navigate to the destination reports if the destination reports are hidden.
     >
-    >To address these issues, make sure that all the dependent reports are available for the audience, or select **Allow access to hidden content**.
+    >To address these issues, make sure that all the dependent reports are added to the app and visible for the audience. If they're hidden from the audience, select **Allow access to hidden content**.
      
 1. In the **Manage audience access** pane, specify groups or users to add to the current audience group. 
 
@@ -307,31 +310,31 @@ You can't copy a link to an Excel workbook in an app.
 
 ## Automatically install apps for end users
 
-If an admin gives you permission, you can install apps automatically, pushing them to app consumers. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permission, you can install apps automatically when you publish them, and push the apps to app consumers This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from the Apps marketplace or Microsoft AppSource or follow an installation link. See how admins enable [publishing apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users) in the Power BI admin portal article.
 
-### How to push an app automatically to end users
+### How to publish an app automatically to end users
 
-Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all audience groups defined in the **Audience** tab of the app.
+Once the admin has assigned permissions to you, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is published to all audience groups defined in the **Audience** tab of the app.
 
 :::image type="content" source="media/service-create-distribute-apps/install-app-automatically.png" alt-text="Screenshot shows Power B I Publish app option with Install app automatically selected.":::
 
-### How users get the apps that you push to them
+### How users get the apps that you publish to them
 
-After you push an app, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
+After you publish an app to your users, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
 
 :::image type="content" source="media/service-create-distribute-apps/get-app.png" alt-text="Screenshot shows Power B I apps with your published app included.":::
 
 ### Considerations for automatically installing apps
 
-Keep these things in mind when pushing apps to end users:
+Keep these things in mind when publishing apps and pushing them automatically to end users:
 
 - You can't automatically install an app for an entire organization. You notice that when you select the checkbox for **install app automatically**, the option for **entire organization** becomes inactive.
 
-- Installing an app automatically to users can take time. Most apps install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
+- Installing an app automatically to users can take time. Most apps install immediately for users, but publishing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend publishing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
 - If users don't immediately see the app in the **Apps** list, they should refresh or close and reopen their browser.
 
-- Try not to overwhelm users. Be careful not to push too many apps, so your users perceive the pre-installed apps are useful to them. It's best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
+- Try not to overwhelm users. Be careful not to publish too many apps to your users, so they perceive the pre-installed apps are useful to them. It's best to control who can publish apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization published to end users.
 
 - Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 

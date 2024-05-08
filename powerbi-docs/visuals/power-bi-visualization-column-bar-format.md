@@ -1,15 +1,16 @@
 ---
 title: Format column and bar charts
-description: Learn how to format column and bar charts 
-author: maggiesMSFT
-ms.author: maggies
+description: Learn how to format column and bar charts with greater flexibility and freedom in presenting your data, to make your insights stand out.
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 02/26/2024
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations 
+#customer intent: As a report creator, I want format column and bar charts.
 ---
 
 # Format column and bar charts
@@ -35,11 +36,31 @@ Explore these new capabilities to create compelling narratives with your data in
   - The **Spacing** card is now the **Layout** card.
   - We relocated the **Reverse Order** toggle that allows you to invert series.
   - We introduced **Sort by Value**, **Space between categories**, and **Space between series**.
+  - For clustered column charts, you can [overlap the columns](#overlap-columns-in-series).
   - For clustered column and bar charts, you have the option to **Erode** or **Explode** the stacked series.
 
-- **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options including matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.
+- **Advanced ribbon settings**: Highlight a series or create visual continuity with an array of options. These options include matching series color or choosing a color selection, transparency, border color matching or color selection, border width, and border spacing.
 
 For more comprehensive information about these features for column and bar charts, see the [Power BI Visuals blog post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7138638604704129024/).
+
+## Separate or overlap columns
+
+By default, in column charts, the series columns are touching. You have alternatives to change that layout. Here's the default layout.
+
+:::image type="content" source="media/power-bi-visualization-column-bar-format/column-chart-basic.png" alt-text="Screenshot showing basic layout with series columns touching.":::
+
+### Add space between series
+
+In the **Format** pane, on the **Visual** tab, under **Layout**, type a value in the **Space between series** box, or slide the slider to the value you want.
+
+:::image type="content" source="media/power-bi-visualization-column-bar-format/column-chart-space-between.png" alt-text="Screenshot showing column chart with 20% between series columns.":::
+
+### Overlap columns in series
+
+In the **Format** pane, on the **Visual** tab, under **Layout**, turn **Overlap** to **On**. Then type a value in the **Space between series** box, or slide the slider to the value you want.
+
+:::image type="content" source="media/power-bi-visualization-column-bar-format/column-chart-overlap.png" alt-text="Screenshot showing column chart with 50% overlap of the series columns.":::
+
 
 ## Related content
 

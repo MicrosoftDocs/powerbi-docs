@@ -11,8 +11,6 @@
       href: service-gateway-onprem.md
     - name: "OneLake data hub"
       href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
-    - name: "Data details pages: Index"
-      href: service-data-details-page.md
     - name: "Semantic model details page"
       href: service-dataset-details-page.md
     - name: "Datamart details page"
@@ -41,8 +39,6 @@
       href: service-tutorial-use-cognitive-services.md
     - name: "Build a machine learning model"
       href: service-tutorial-build-machine-learning-model.md
-    - name: "Consume a machine learning model in a report"
-      href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
@@ -73,9 +69,9 @@
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
-    - name: "Connect to cloud data sources in the Power BI service (Preview)"
+    - name: "Connect to cloud data sources in the Power BI service"
       href: service-connect-cloud-data-sources.md      
-    - name: "Create and share cloud data sources in the Power BI service (Preview)"
+    - name: "Create and share cloud data sources in the Power BI service"
       href: service-create-share-cloud-data-sources.md          
     - name: Connect to data
       items: 

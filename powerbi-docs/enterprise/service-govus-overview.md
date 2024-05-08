@@ -7,7 +7,7 @@ ms.reviewer: dodruker; jonp
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/20/2023
+ms.date: 03/15/2024
 ms.custom: gcc
 LocalizationGroup: Get started
 ---
@@ -72,7 +72,7 @@ The following table lists the required endpoints to add to your allowlist to ena
 
 The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. 
 
-To add these URLs to your allowlist also, see [Add Power BI URLs to your allowlist](../admin/power-bi-allow-list-urls.md).
+To add these URLs to your allowlist also, see [Add Power BI URLs to your allowlist](/fabric/security/power-bi-allow-list-urls).
 
 Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also have to connect to Microsoft 365 to view audit logs. To identify the endpoints for these services, see "Microsoft 365 integration" in the following table:
 
@@ -86,6 +86,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us<br>**GCC High**: high.content.powerapps.us<br>**DoD**: mil.content.powerapps.us |
 | Microsoft 365 integration | **GCC**: [Worldwide endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br>**GCC High**: [US Government GCC High endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)<br>**DoD**: [US Government DOD endpoints](/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us<br>**GCC High**: *.high.powerbigov.us<br>**DoD**: *.mil.powerbigov.us |
+| Manage gateways, connections and data policies (preview) |**GCC**: gatewayadminportal-gov.azure.us<br>**GCC High**: gatewayadminportal-high.azure.us<br>**DoD**: gatewayadminportal-mil.azure.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
 | Informational messages (optional) | **All**: arc.msn.com |
 | | |
@@ -150,6 +151,8 @@ If a release is planned for an environment, we include the quarter of estimated 
 |[Call Quality Data Connector](/microsoftteams/cqd-power-bi-connector)| ![Image of "Available" button.](../media/yes.png)<sup>3</sup> | ![Image of "Available" button.](../media/yes.png)<sup>3</sup> | ![Image of "Available" button.](../media/yes.png)<sup>3</sup> |
 |[Bring your own storage (Azure Data Lake Gen 2)](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)|![Image of "Not available" button.](../media/no.png)|![Image of "Available" button.](../media/yes.png)|![Image of "Available" button.](../media/yes.png)|
 |[Autoscale](service-premium-auto-scale.md) |![Image of "Not available" button.](../media/no.png) |![Image of "Available" button.](../media/yes.png) |![Image of "Available" button.](../media/yes.png) |
+|[Azure Maps](/azure/azure-maps/power-bi-visual-get-started) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |![Image of "Not available" button.](../media/no.png) |
+
 
 <sup>1</sup> Although B2B collaboration is available for GCC, external users must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B collaboration for US government, see [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 

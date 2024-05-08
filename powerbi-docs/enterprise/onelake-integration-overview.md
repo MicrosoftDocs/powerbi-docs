@@ -1,8 +1,8 @@
 ---
 title: Learn about Microsoft OneLake Delta table integration in Power BI and Microsoft Fabric
 description: Describes using Microsoft OneLake integration to automatically write import data into Delta tables.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
@@ -110,6 +110,8 @@ By creating [shortcuts](/fabric/onelake/onelake-shortcuts) for your semantic mod
 
 - During preview, [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) capacities are not yet supported.
 
+- During preview, the operation of exporting the model to OneLake is not billed, but [compute and storage usage of the exported model on OneLake](/fabric/onelake/onelake-consumption) is billed.
+ 
 - For users with *contributor* permissions for exported model tables but only *viewer* permissions for the workspace, a model folder appears in Lakehouse explorer, but an error is returned when selected.
 
 - Measures, DirectQuery tables, hybrid tables, calculation group tables, and system managed aggregation tables can't be exported to Delta format tables.

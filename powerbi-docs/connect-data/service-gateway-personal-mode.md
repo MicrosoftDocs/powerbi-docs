@@ -102,5 +102,6 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
 
 * [Add or remove a gateway data source](service-gateway-data-sources.md)
 * [Configure proxy settings for an on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
+* [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).

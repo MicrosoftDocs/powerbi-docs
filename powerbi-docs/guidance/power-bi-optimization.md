@@ -1,12 +1,13 @@
 ---
 title: Optimization guide for Power BI
 description: This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: nisrinivasan
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/10/2023
 ---
 
@@ -35,7 +36,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 ### Dashboards
 
-It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your semantic model enforces dynamic [row-level security (RLS)](../enterprise/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
+It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. If your semantic model enforces dynamic [row-level security (RLS)](/fabric/security/service-admin-row-level-security), be sure to understand performance implications as tiles will cache on a per-user basis.
 
 When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to v-cores on the fly.
 
@@ -78,7 +79,9 @@ You can optimize the Power BI environment by configuring capacity settings, sizi
 
 ### Capacity settings
 
-When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
+When using capacities—available with Power BI Premium (P SKUs), Premium Per User (PPU) licenses, or Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more information, see [Microsoft Fabric capacity licenses](/fabric/enterprise/licenses#capacity-license) and [Managing Premium capacities](../enterprise/service-premium-capacity-manage.md).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Gateway sizing
 

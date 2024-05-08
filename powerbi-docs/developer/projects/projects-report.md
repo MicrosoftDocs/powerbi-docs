@@ -1,13 +1,13 @@
 ---
 title: Power BI Desktop project report folder
 description: Learn about the Power BI Desktop project report folder.
-author: minewiskan
-ms.author: owend
+author: mberdugo
+ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 05/31/2023
+ms.date: 03/27/2024
 ---
 
 # Power BI Desktop project report folder
@@ -22,12 +22,11 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [CustomVisuals\\](#customvisuals)
 - StaticResources\\
   - [RegisteredResources\\](#registeredresources)
-- [datasetDiagramLayout.json](#datasetdiagramlayoutjson)
+- [semanticModelDiagramLayout.json](#semanticmodeldiagramlayoutjson)
 - [definition.pbir](#definitionpbir)<sup>[1](#required)</sup>
 - [mobileState.json](#mobilestatejson)
 - [report.json](#reportjson)<sup>[1](#required)</sup>
-- [item.config.json](#itemconfigjson)
-- [item.metadata.json](#itemmetadatajson)
+- [.platform](#platform)
 
 <a name="required">1</a> - This file is required.
 
@@ -62,13 +61,13 @@ Developers are responsible for the files here and changes are supported. For exa
 
 Every resource file must have a corresponding entry in the report.json file, which during **preview** doesn't support editing. Edits to RegisteredResources files are only supported for already loaded resources that cause Power BI Desktop to register the resource in report.json.
 
-#### datasetDiagramLayout.json
+#### semanticModelDiagramLayout.json
 
-Contains data model diagrams describing the structure of the dataset associated with the report. During **preview**, this file doesn't support external editing.
+Contains data model diagrams describing the structure of the semantic model associated with the report. During **preview**, this file doesn't support external editing.
 
 #### definition.pbir
 
-Contains the overall definition of a report and core settings. This file also holds the reference to the dataset used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the dataset alongside if there's a relative reference using `byPath`.
+Contains the overall definition of a report and core settings. This file also holds the reference to the semantic model used by the report. Power BI Desktop can open a pbir file directly, just the same as if the report were opened from a pbip file. Opening a pbir also opens the semantic model alongside if there's a relative reference using `byPath`.
 
 Example definition.pbir:
 
@@ -85,19 +84,19 @@ Example definition.pbir:
 
 ```
 
-The definition includes the `datasetReference` property, which references the dataset used in the report. The reference can be either:
+The definition includes the `datasetReference` property, which references the semantic model used in the report. The reference can be either:
 
-`byPath` - Specifies a relative path to the target dataset folder. Absolute paths aren't supported. A backslash (\) is used as a folder separator. When used, Power BI Desktop also opens the dataset in full edit mode.
+`byPath` - Specifies a relative path to the target semantic model folder. Absolute paths aren't supported. A forward slash (/) is used as a folder separator. When used, Power BI Desktop also opens the semantic model in full edit mode.
 
-`byConnection` - Specifies a remote dataset in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the dataset in edit mode.
+`byConnection` - Specifies a remote semantic model in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode.
 
 When using a `byConnection` reference, the following properties must be specified:
 
 |Property |Description  |
 |---------|---------|
-|connectionString    |   The connection string referring to the remote dataset.      |
-|pbiModelDatabaseName     |   The remote dataset ID.      |
-|connectionType     |   Type of connection. For service remote dataset, this value should be `pbiServiceXmlaStyleLive`.      |
+|connectionString    |   The connection string referring to the remote semantic model.      |
+|pbiModelDatabaseName     |   The remote semantic model ID.      |
+|connectionType     |   Type of connection. For service remote semantic model, this value should be `pbiServiceXmlaStyleLive`.      |
 |pbiModelVirtualServerName    |  An internal property that should have the value, `sobe_wowvirtualserver`.       |
 
 Example using `byConnection`:
@@ -108,7 +107,7 @@ Example using `byConnection`:
   "datasetReference": {
     "byPath": null,
     "byConnection": {
-      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/Datasets\";Initial Catalog=Sales;Integrated Security=ClaimsToken",
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/WorkpaceName;Initial Catalog=SemanticModelName;Integrated Security=ClaimsToken",
       "pbiServiceModelId": null,
       "pbiModelVirtualServerName": "sobe_wowvirtualserver",
       "pbiModelDatabaseName": "e244efd3-e253-4390-be28-6be45d9da47e",
@@ -120,6 +119,8 @@ Example using `byConnection`:
 
 ```
 
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
+
 For more information, refer to the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
 #### mobileState.json
@@ -130,19 +131,13 @@ Contains report appearance and behavior settings when rendering on a mobile devi
 
 Defines a report including visuals, page layout, and intended interactions. During **preview**, this file doesn't support external editing.
 
-#### item.config.json
+#### .platform
 
-Identifies the folder as a source control representation of a service item. To learn more, see [Git integration source code format - Config file](/fabric/cicd/git-integration/source-code-format#config-file).
+Fabric platform file that holds properties vital for establishing and maintaining the connection between Fabric items and Git.
 
-For more information, refer to the [item.config.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.config.md).
-
-#### item.metadata.json
-
-Contains attributes that define the item. To learn more, see [Git integration source code format - Metadata file](/fabric/cicd/git-integration/source-code-format#metadata-file)
-
-For more information, refer to the [item.metadata.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/common/item.metadata.md).
+To learn more, see [Git integration automatically generated system files](/fabric/cicd/git-integration/source-code-format#automatically-generated-system-files).
 
 ## Related content
 
-- [Power BI Desktop project dataset folder](projects-dataset.md)  
+- [Power BI Desktop project semantic model folder](projects-dataset.md)  
 - [Power BI Desktop projects](projects-overview.md)  

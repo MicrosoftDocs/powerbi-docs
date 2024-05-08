@@ -7,7 +7,7 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/01/2024
+ms.date: 05/08/2024
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
@@ -22,7 +22,7 @@ Key advantages of using accelerators include:
 
 * Customization and White-Labeling: Once installed, you can white-label the solution, tailor its capabilities, and customize the user interface. White-label the solution, configure its capabilities, and customize the user experience once installed.​
 
-* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They're cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI workload services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
+* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They're cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
 
 * Integration Flexibility: Accelerators can function as standalone applications or be fully integrated with your existing application, as outlined in the [Deployment and integration options table](#deployment-and-integration-options).
 
@@ -33,19 +33,11 @@ The following table briefly describes each of the current partners’ embedded a
 
 There are several partner accelerators that vary in their deployment, acquisition/billing options and their capabilities. ​
 
-<!---
 | **Partner** <br> (accelerator)                  | **Description** | Website/Product link |
 |-------------------------------------------------|--------------------------------|---------|
 | :::image type="content" source="./media/embedded-analytics-accelerators/shift-logo.png" alt-text="Picture of the Shift Analytics logo.":::    | **Shift Analytics**' accelerator: <br> **The Reporting Hub** is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. <br> [Watch an overview interview video of the Reporting Hub](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/reportinghub). | :::image type="content" source="./media/embedded-analytics-accelerators/reporting-hub-logo.png" alt-text="Picture of the Reporting Hub logo."::: <br> [The Reporting Hub](https://thereportinghub.com/) |
 | :::image type="content" source="./media/embedded-analytics-accelerators/maq-logo.png" alt-text="Picture of the Maq Software logo."::: | **MAQ Software**'s accelerator: <br> **EmbedFAST** is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using EmbedFAST. <br> [Watch an overview interview video of EmbedFAST](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedfast). | :::image type="content" source="./media/embedded-analytics-accelerators/embed-fast-logo.png" alt-text="Picture of the EmbedFAST logo."::: <br> [EmbedFAST](https://maqsoftware.com/embedfast) |
 | :::image type="content" source="./media/embedded-analytics-accelerators/ilink-digital-logo.png" alt-text="Picture of the iLink Digital logo."::: | **iLink Digital**'s accelerator: <br> **EmbeDash** enables Independent Software Vendors (ISVs) to provide Analytics as a Service (AaaS) using Power BI Embedded. This Accelerator reduces the time to market and allows ISVs to add strong self-service reporting capabilities, without having to code them themselves. <br> [Watch an overview interview video of EmbeDash](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedash). | :::image type="content" source="./media/embedded-analytics-accelerators/embed-dash-logo.png" alt-text="Picture of the EmbeDash logo."::: <br> [EmbeDash](https://embedash.com/) |
---->
-
-| **Partner** <br> (accelerator)                  | **Description** | Website/Product link |
-|-------------------------------------------------|--------------------------------|---------|
-| **Shift Analytics**  | **Shift Analytics**' accelerator: <br> **The Reporting Hub** is a web-based business intelligence platform that seamlessly integrates with Power BI using Embedded technology. It's a plug 'n' play white label application that deploys to your Azure environment and allows you to instantly deliver Power BI in a more efficient and simplified manner. <br> [Watch an overview interview video of the Reporting Hub](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/reportinghub). | [The Reporting Hub](https://thereportinghub.com/) |
-| **Maq Software** | **MAQ Software**'s accelerator: <br> **EmbedFAST** is a ready-to-use API that embeds Power BI into your existing apps with ease. Seamlessly embed Power BI with comprehensive features such as role-based access management and no per user licenses—without having to build from scratch. Save time, effort, costs, and resources by using EmbedFAST. <br> [Watch an overview interview video of EmbedFAST](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedfast). |  [EmbedFAST](https://maqsoftware.com/embedfast) |
-| **iLink Digital** | **iLink Digital**'s accelerator: <br> **EmbeDash** enables Independent Software Vendors (ISVs) to provide Analytics as a Service (AaaS) using Power BI Embedded. This Accelerator reduces the time to market and allows ISVs to add strong self-service reporting capabilities, without having to code them themselves. <br> [Watch an overview interview video of EmbeDash](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedash). | [EmbeDash](https://embedash.com/) |
 
 The following diagram illustrates the main modules of an accelerator and how they relate to your existing multitenant web application:
 
@@ -143,6 +135,7 @@ The following tables compare features of the different accelerators from our par
 
 | Partner <br> **(accelerator)**               |  Monthly subscriptions: <br> **Direct billing**     |  Monthly subscriptions: <br> **Azure Marketplace** | Free trial | One time purchase ​ | As part of consulting engagement​ |
 |:---------------------------------------------|:---------------------------------------------------:|:--------------------------------------------------:|:--------------:|:----------------------:|:------------------------------------:|
+| **Power Tuning**​ <br> [Power Embedded](https://azuremarketplace.microsoft.com/marketplace/apps/powertuningperformanceemdados1702567987391.powerembedded?tab=Overview) | ✔​                                                 | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/powertuningperformanceemdados1702567987391.powerembedded?tab=Overview) | ✔​              | ​                      | ✔​                                   |
 | **Shift Analytics**​ <br> [The Reporting Hub](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview) | ✔​                                                 | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/shiftanalyticsinc1663186612563.reportinghub_prod_003?tab=Overview)​        | ✔​             | ​                       | ​              |
 | **MAQ Software**​ <br>[EmbedFAST](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi?tab=Overview)            |                                    | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/maqsoftware.embedfastpowerbi)                                  | ​               | ✔​                    | ✔​                                   |
 | **iLink​** <br>[EmbeDash](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                        |  ​                                                   | [:::image type="icon" source="./media/embedded-analytics-accelerators/marketplace-logo.png" border="false":::](https://azuremarketplace.microsoft.com/marketplace/apps/ilinksystems.embedash?tab=Overview)                               | ✔​              | ​                      | ✔​                                   |
@@ -151,6 +144,7 @@ The following tables compare features of the different accelerators from our par
 
 | Partner                                  | Personal​<br>bookmarks | Report​<br>Printout | Control​<br> UX options | Navigation​<br>Menu | Multi-tenancy​ | Tenant specific​<br>authN &​<br>white-labeling​ | Power BI item​<br>publishing | Report subs.​<br>scheduling & ​<br>distribution​ | Tenant billing​<br>& payment​<br>processing​ | Multi-language​<br>portal support​ |
 |----------------------------------------------|:-------------------------------:|:-----------------------------:|:--------------------------------:|:-----------------:|:----------------:|:----------------------------:|:--------------------:|:-----------------------------:|:--------------------------:|:-------------------------:|
+| **Power Tuning**​ <br> [Power Embedded](https://powerembedded.com.br/)​ | ✔                                         | ✔                                     | ✔                                          | ✔                 | ✔                | ✔                                        | ​✔                             | ✔​                                         | ✔​                                     | ✔                               |
 | **Shift Analytics**​ <br> [The Reporting Hub](https://thereportinghub.com/)​ | ✔                                         | ✔                                     | ✔                                          | ✔                 | ✔                | ✔                                        | ​                             | ✔​                                         | ✔​                                     | ✔                               |
 | **MAQ Software**​ <br>[EmbedFAST](https://maqsoftware.com/embedfast)​            | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 |✔​                 | ​                                          |✔​                            | ✔​                                         | ​                                       | ​                                   |
 | **iLink Digital​** <br> [EmbeDash](https://embedash.com/)                                   | ✔​                                         | ✔​                                     | ✔                                          | ✔​                 | ✔                 | ​                                         | ✔                           | ​                                           | ​                                        | ​                                  |
@@ -160,6 +154,8 @@ The following tables compare features of the different accelerators from our par
 * To watch interview video recordings describing the accelerator program and each accelerator visit the [Microsoft Partner Showcase - Embedded Analytics Solution Accelerators page](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics).
 
 * To learn more about each partner’s solution accelerator, visit their corresponding product website:
+
+  * [Power Embedded](https://powerembedded.com.br/)
 
   * [The Reporting Hub](https://thereportinghub.com/)
 

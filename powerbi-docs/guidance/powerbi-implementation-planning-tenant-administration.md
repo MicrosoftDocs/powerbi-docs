@@ -7,7 +7,8 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 11/27/2023
+ms.custom: fabric-cat
+ms.date: 02/13/2024
 ---
 
 # Power BI implementation planning: Tenant administration
@@ -26,6 +27,8 @@ As described in the Fabric adoption [maturity levels](fabric-adoption-roadmap-ma
 
 > [!NOTE]
 > Administering Fabric [capacity](/fabric/enterprise/licenses#microsoft-fabric-concepts) (or Premium capacity) and managing the Power BI service are different concepts. While most organizations have just one [Power BI tenant](powerbi-implementation-planning-tenant-setup.md), an organization can provision multiple capacities for different workloads or business units.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Define scope of responsibilities
 
@@ -96,7 +99,7 @@ Here are some common reasons why a Fabric administrator collaborates with [other
 - **Workspace administration:** You might need to collaborate with a [Fabric workspace administrator](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) to plan, organize, or secure content within specific workspaces.
 - **Lifecycle management:** When deploying and managing changes to content, you might need to collaborate with a [deployment pipeline administrator](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#permissions) or an [Azure DevOps administrator](/fabric/cicd/git-integration/git-integration-process#permissions).
 - **Premium capacity management:** You might need to collaborate with a capacity administrator when [managing a Premium capacity](/power-bi/enterprise/service-admin-premium-manage).
-- **Data gateway management:** You might need to collaborate with a [gateway administrator](/data-integration/gateway/manage-security-roles#gateway-roles) to manage and secure an on-premises data gateway.
+- **Data gateway management:** You might need to collaborate with a [gateway administrator](/data-integration/gateway/manage-security-roles#gateway-roles) to manage and secure an on-premises data gateway. For more information, see [Manage gateways](powerbi-implementation-planning-data-gateways.md#manage-gateways).
 - **Power Platform administration:** You might need to integrate solutions between Power BI and other Power Platform apps (such as Power Automate or Power Apps).
 - **Azure administration:** You might need to work with an Azure administrator to set up, access, and secure other [Azure services](/power-bi/connect-data/service-azure-and-power-bi) that you want to integrate with Power BI.
 - **Security administration and auditing:** Your organization could have specific compliance, security, or privacy requirements. In this case, you might need to collaborate with your security team to identify and mitigate risks.

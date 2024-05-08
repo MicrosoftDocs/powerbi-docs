@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: build-2023, build-2023-dataai
 ms.topic: how-to
-ms.date: 01/08/2024
+ms.date: 03/07/2024
 LocalizationGroup: 
 ---
 # Find Insights in your reports (preview)
@@ -93,12 +93,12 @@ Select the card to get more details about the insight.
 Expand/collapse the cards under **Possible Explanations** to view/hide the explanation visuals and text. 
 
 ### Anomalies
-When an anomaly in your data is flagged, Power BI runs the analysis across different dimensions in your data model to look for spikes or dips in the measure that correlate to the anomaly. They're shown as possible explanations ranked by strength. Check out this documentation to learn more.	
+When an anomaly in your data is flagged, Power BI runs the analysis across different dimensions in your data model to look for spikes or dips in the measure that correlate to the anomaly. They're shown as possible explanations ranked by strength. For more information, see [Apply insights in Power BI to explain fluctuations in visuals](desktop-insights.md).
 
 ![Screenshot showing explanations for anomaly insight.](media/power-bi-insights/anomalies-explanations.png)
 
 ### Trends
-When a trend in your data is flagged, Power BI looks for and identifies the categories that most influenced the increase or decrease in the identified trend. Possible explanations are ranked based on the relative contributions from different categories to the increase or decrease in trend. Learn more here.
+When a trend in your data is flagged, Power BI looks for and identifies the categories that most influenced the increase or decrease in the identified trend. Possible explanations are ranked based on the relative contributions from different categories to the increase or decrease in trend. For more information see [Run quick insights on a semantic model](service-insights.md#run-quick-insights-on-a-semantic-model).
 
 ![Screenshot showing explanations for trend insight.](media/power-bi-insights/trend-explanations.png)
 

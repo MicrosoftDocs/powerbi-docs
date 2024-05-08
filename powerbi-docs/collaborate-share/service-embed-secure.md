@@ -7,13 +7,13 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 04/04/2024
 LocalizationGroup: Share your work
 ---
 
 # Embed a report in a secure portal or website
 
-With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](../enterprise/service-admin-rls.md) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iframe. 
+With the **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](/fabric/security/service-admin-row-level-security) and Analysis Services tabular model [object-level security (OLS)](/analysis-services/tabular-models/object-level-security). They provide no-code embedding into any portal that accepts a URL or iframe. 
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
@@ -33,7 +33,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
     :::image type="content" source="./media/service-embed-secure/sign-in-power-bi-report.png" alt-text="Screenshot of Power BI Sign-in page displaying sign-in to view this report dialogue.":::
 
-5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](../enterprise/service-admin-rls.md) rules are also applied. The users need to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a workspace that's in a Power BI Premium capacity. Users need to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
+5. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users with view permission can see the report in Power BI. All [row-level security (RLS)](/fabric/security/service-admin-row-level-security) rules are also applied. The users need to be correctly licensed. They need a Power BI Pro or Premium Per User (PPU) license, or the content needs to be in a workspace that's in a Power BI Premium capacity. Users need to sign in each time they open a new browser window. However, after they're signed in, other reports load automatically.
 
     :::image type="content" source="./media/service-embed-secure/sales-and-marketing-sample-1.png" alt-text="Screenshot of Sales and Marketing sample report.":::
 
@@ -120,11 +120,19 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * The secure embed option works for reports that are published to the Power BI service.
 
+* To host securely embedded content, users must use HTTPS for their top-level page. Using an unsecured host page to access securely embedded content isn't supported.
+
 * The user needs to sign in to view the report whenever they open a new browser window.
+
+* For authentication, users need to have popup windows enabled.
+
+* If users have successfully accessed reports in the past but are now encountering issues, they should clear their browser cache.
 
 * Some browsers require you to refresh the page after sign-in, especially when you use InPrivate or Incognito modes.
 
 * You might encounter issues if you use unsupported browser versions. For a list of browsers that Power BI supports, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
+
+* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin,” you can't log in to view your embedded content because MSAL doesn't support this header. Instead, choose either "restrict-properties" (for Chromium-based browsers) or "same-origin-allow-popups." Alternatively, if you can't change the Cross-Origin-Opener-Policy, link to the embedded URL directly instead of embedding it in an iframe.
 
 * The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 

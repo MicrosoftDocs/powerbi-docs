@@ -4,7 +4,6 @@ ms.date: 09/20/2023
 ms.service: powerbi
 ms.subservice: report-builder
 description: The Word rendering extension renders Power BI paginated reports to the Microsoft Word format (.docx). The format is Office Open XML.
-ms.custom: seodec18
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies

@@ -1,16 +1,16 @@
 ---
-title: Create a Power Automate visual for Power BI (preview)
-description: You can create a Power Automate visual so your end-users can run an automated flow all within a Power BI report.
+title: Create a Power Automate visual for Power BI 
+description: You can create a Power Automate visual so your end-users can run an automated flow, all within a Power BI report.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: sunaraya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 09/08/2022
+ms.date: 04/23/2024
 LocalizationGroup: Create reports
 ---
-# Create a Power Automate visual for Power BI (preview)
+# Create a Power Automate visual for Power BI 
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -24,19 +24,19 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 1. Select the Power Automate icon from the **Visualizations** pane.
 
-    ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
+    :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane":::
 
-    In **Power BI Desktop**, you can also add the visual from the ribbon. On the **Insert** tab, select **Power Automate (preview)** in the **Power Platform** section.
+    In **Power BI Desktop**, you can also add the visual from the ribbon. On the **Insert** tab, select **Power Automate** in the **Power Platform** section.
 
-    ![Screenshot of selecting the Power Automate icon on the Insert tab.](media/power-bi-automate-visual/power-automate-icon-in-desktop-ribbon.png)
-
+    :::image type="content" source="media/power-bi-automate-visual/create-power-automate-button.png" alt-text="Screenshot of selecting the Power Automate icon from the Insert ribbon.":::
+   
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
 # [Power BI service](#tab/powerbi-service)
 
 1. Select the Power Automate icon from the **Visualizations** pane.
 
-    ![Screenshot of selecting the Power Automate icon from the Visualizations pane.](media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png)
+    :::image type="content" source="media/power-bi-automate-visual/power-automate-icon-in-visualization-pane.png" alt-text="Screenshot of selecting the Power Automate icon from the Visualizations pane.":::
 
     Once you select the visual, it automatically gets added to your current report page, with getting started instructions.
 
@@ -44,7 +44,7 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 2. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
-    :::image type="content" source="media/power-bi-automate-visual/automate-new-visual.png" alt-text="Power Automate new visual added to the report.":::
+    :::image type="content" source="media/power-bi-automate-visual/power-automate-steps.png" alt-text="Screenshot showing Flow button resized and repositioned on the report.":::
 
 3. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
 
@@ -150,13 +150,12 @@ Alternatively, you can give any users edit access to the flow, not just run perm
 
 ## Considerations and limitations
 
-- Additional manual inputs to the button aren't supported at this time. We plan to add support for this by the general availability release.
-- Currently, we only have a few built-in templates; we plan to add more based on user feedback.
-- The visual will only display flows within your default environment. We plan to add support for an environment selector by the general availability release.
+- Additional manual inputs to the button aren't supported.  
 - The visual isn't supported for [embedded analytics](./../developer/embedded/embedded-analytics-power-bi.md).
-- The visual isn't supported in sovereign clouds.
 - The visual doesn't work in Publish to Web (public) scenarios, because unauthenticated scenarios aren't supported by Power Automate.
-- The visual isn't certified while in preview. We plan to have complete certification by the general availability release.
+- The visual doesn't support export scenarios.
+- Changing the environment is currently not supported. 
+
 
 ## Related content
 

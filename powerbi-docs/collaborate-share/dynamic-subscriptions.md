@@ -25,7 +25,7 @@ The dynamic subscription parameters are stored in a separate Power BI semantic m
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
 
 > [!IMPORTANT]
-> Dynamic subscriptions is currently in PREVIEW and only available for paginated reports.
+> Dynamic subscriptions is currently in PREVIEW.
 > This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 
@@ -139,7 +139,7 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 
 ## Considerations and limitations
 - Rendering the report uses some of your capacity. It's classified as a **Background** activity.
-- During the Preview of dynamic per recipient subscriptions, your recipient semantic model has a limit of 50 rows of recipients. If the recipient list exceeds 50 rows at any point, only the first 50 recipients receive the subscription email, and the subscription creator receives an error email. 
+- Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter).  
 - As a Preview feature, it’s not available to customers located in Sovereign Clouds.  

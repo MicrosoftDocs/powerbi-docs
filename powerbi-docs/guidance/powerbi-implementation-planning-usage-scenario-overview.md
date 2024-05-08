@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 12/09/2023
 ---
 
@@ -43,6 +44,8 @@ The following usage scenarios are about *content collaboration and delivery*. Th
 
     > [!NOTE]
     > Additional information about [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) and [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) are described in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Self-service BI scenarios
 

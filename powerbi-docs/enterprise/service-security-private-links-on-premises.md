@@ -14,13 +14,13 @@ LocalizationGroup: Administration
 
 # Private endpoints for secure access to Power BI for on-premises clients
 
-If you've configured private links for secure access to data in Power BI, using Azure Private Links and Azure Networking private endpoints as described in [Private endpoints for secure access to Power BI](service-security-private-links.md), then you can also enable Azure Virtual Machines to access the Power BI service through private IP addresses.
+If you've configured private links for secure access to data in Power BI, using Azure Private Links and Azure Networking private endpoints as described in [Private endpoints for secure access to Fabric](/fabric/security/security-private-links-overview), then you can also enable Azure Virtual Machines to access the Power BI service through private IP addresses.
 
 You can extend your on-premises networks to the Azure Virtual Network (VNet) using an ExpressRoute circuit, or a site-to-site VPN, to access and use services deployed in the Azure Virtual Networks with private connections.
 
 ## Understand private endpoints for on-premises clients
 
-When access to the Power BI service from the Virtual Network is already established, described in [Private endpoints for secure access to Power BI](service-security-private-links.md), with few further steps you can extend private access to the Power BI service to on-premises clients.
+When access to the Power BI service from the Virtual Network is already established, described in [Private endpoints for secure access to Fabric](/fabric/security/security-private-links-overview), with few further steps you can extend private access to the Power BI service to on-premises clients.
 
 This article describes the steps you must take to configure such private connectivity between the Azure VNet and the on-premises networks. To successfully complete the configuration, you must already have an ExpressRoute connection successful established, with established communication between the on-premises networks and Azure VNet. For more details about ExpressRoute setup, see [Create and modify an ExpressRoute circuit](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager). 
 
@@ -124,11 +124,11 @@ The Power BI service URL is translated into the private IP that's assigned to th
 
 ## Considerations and limitations
 
-* You must configure private endpoints before enabling private endpoints for on-premises clients. See [Private endpoints for secure access to Power BI](service-security-private-links.md) for more information.
+* You must configure private endpoints before enabling private endpoints for on-premises clients. See [Private endpoints for secure access to Fabric](/fabric/security/security-private-links-overview) for more information.
 
 ## Related content
 
-- [Private endpoints for secure access to Power BI](service-security-private-links.md)
+- [Private endpoints for secure access to Fabric](/fabric/security/security-private-links-overview)
 - [Create and modify an ExpressRoute circuit](/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
 - [ExpressRoute documentation](/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager)
 - [ExpressRoute gateway](/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager)

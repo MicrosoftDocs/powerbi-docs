@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 01/13/2024
 ---
 
 # The Analytics pane in Power BI visuals

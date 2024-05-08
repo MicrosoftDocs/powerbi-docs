@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 02/02/2024
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow
@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a semantic model in Power BI Desktop, or referenced as a linked or computed table.
 
 > [!NOTE]
-> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+> Dataflows may not be available in the Power BI service for all U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 ## Configure a dataflow
 
@@ -85,12 +85,12 @@ A dataflow can be consumed in the following three ways:
 * Create a connection from external tools that can read from the CDM (Common Data Model) format.
 
 **Consume from Power BI Desktop**
-To consume a dataflow, open Power BI Desktop and select **Power BI dataflows** in the **Get Data** dropdown.
+To consume a dataflow, open Power BI Desktop and select **Dataflows** in the **Get Data** dropdown.
 
 > [!NOTE]
-> The Power BI dataflows connector uses a different set of credentials than the current logged in user. This is by design to support multi-tenant users.
+> The Dataflows connector uses a different set of credentials than the current logged in user. This is by design to support multi-tenant users.
 
-:::image type="content" source="media/dataflows-configure-consume/dataflow-connector.png" alt-text="Screenshot of Power BI Desktop highlighting the Power BI dataflows option in the Get data dropdown.":::
+:::image type="content" source="media/dataflows-configure-consume/dataflow-connector-menu.png" alt-text="Screenshot of Power BI Desktop highlighting the dataflows option in the Get data dropdown.":::
 
 Select the dataflow and tables to which you want to connect.
 

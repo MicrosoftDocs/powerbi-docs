@@ -7,8 +7,8 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat, intro-deployment
 ms.date: 02/27/2022
-ms.custom: intro-deployment
 ---
 
 # Deploy to Power BI
@@ -32,6 +32,8 @@ The output from this stage is a production solution ready for use by the busines
 For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before release to production.
 
 If your content has been published to a workspace on Premium capacity, [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing can be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Deploy to test workspace
 

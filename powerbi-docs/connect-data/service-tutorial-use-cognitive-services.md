@@ -180,5 +180,4 @@ In this tutorial, you applied sentiment scoring and image tagging functions on a
 
 You might also be interested in the following articles.
 
-* [Tutorial: Consume Azure Machine Learning models in Power BI](service-aml-integrate.md)
 * [AI with dataflows](../transform-model/dataflows/dataflows-machine-learning-integration.md)

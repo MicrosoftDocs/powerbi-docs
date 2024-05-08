@@ -7,7 +7,8 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.custom: fabric-cat
+ms.date: 02/13/2024
 ---
 
 # Power BI implementation planning: BI solution planning
@@ -236,7 +237,7 @@ The project team should plan for key areas of solution deployment. Typically, pl
 
 - **Compliance:** Ensure that all the compliance criteria identified in requirements gathering will be addressed by specific actions. Assign each of these actions to specific people, and clearly define the delivery timeframe.
 - **Security:** Decide how different layers of solution access will be managed, and any [data security](powerbi-implementation-planning-security-overview.md) rule requirements. Review whether the solution security will be more or less strict than standard content in the tenant.
-- **Data gateways:** Evaluate whether the solution needs a data gateway to connect to data sources. Determine whether specific gateway settings or [high availability clusters](/data-integration/gateway/service-gateway-high-availability-clusters) are necessary. Plan who will be able to manage gateway connections via the gateway [security roles](/data-integration/gateway/manage-security-roles), and how to [monitor the gateways](/data-integration/gateway/service-gateway-performance).
+- **Data gateways:** Evaluate whether the solution needs a data gateway to connect to data sources. Determine whether specific gateway settings or [high availability clusters](/data-integration/gateway/service-gateway-high-availability-clusters) are necessary. Plan who will be able to manage gateway connections via the gateway [security roles](/data-integration/gateway/manage-security-roles), and how to [monitor the gateways](/data-integration/gateway/service-gateway-performance). For more information, see [Provision gateway access](powerbi-implementation-planning-data-gateways.md#provision-gateway-access).
 - **Workspaces:** Decide how to [set up and use workspaces](powerbi-implementation-planning-workspaces-workspace-level-planning.md). Determine whether the solution requires lifecycle management tools like [Git integration](/fabric/cicd/git-integration/intro-to-git-integration) and [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines), and whether it requires advanced logging with [Azure Log Analytics](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview).
 - **Support:** Establish who's responsible for supporting and maintaining the solution after production deployment. If the individuals responsible for support are different than the project team, involve these individuals in development. Ensure that whoever will support the solution understands the solution design, the problem it should address, who should use it, and how.
 - **User training:** Anticipate the efforts needed to train the user community so they can effectively use the solution. Consider whether any specific [change management](fabric-adoption-roadmap-change-management.md) actions are necessary.

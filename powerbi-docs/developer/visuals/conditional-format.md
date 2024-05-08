@@ -8,12 +8,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 10/12/2022
+ms.date: 1/12/2024
 ---
 
 # Add conditional formatting
 
-[Conditional formatting](../../visuals/service-tips-and-tricks-for-color-formatting.md#conditional-formatting-for-visualizations) lets a report creator specify how colors are displayed in a report, according to a numerical value.
+[Conditional formatting](../../visuals/service-tips-and-tricks-for-color-formatting.md#add-conditional-formatting-for-visuals) lets a report creator specify how colors are displayed in a report, according to a numerical value.
 
 This article describes how to add the conditional formatting functionality to your Power BI visual.
 

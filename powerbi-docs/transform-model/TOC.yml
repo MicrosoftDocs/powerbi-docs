@@ -21,6 +21,8 @@
     items:
     - name: "Edit data models in the Power BI service (preview)"
       href: service-edit-data-models.md  
+    - name: "Using calculations options in Power BI Desktop"
+      href: desktop-calculations-options.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
     - name: "Work with DAX query view"
@@ -123,6 +125,8 @@
       items: 
       - name: "Create quick measures for common calculations"
         href: desktop-quick-measures.md
+      - name: "Use Copilot to create measure descriptions"
+        href: desktop-measure-copilot-descriptions.md
       - name: "Create and use what-if parameters to visualize variables"
         href: desktop-what-if.md
       - name: "Specify data categories in Power BI Desktop"
@@ -135,6 +139,8 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
+      - name: "Using visual calculations (preview)"
+        href: desktop-visual-calculations-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
       - name: "Import and display KPIs"

@@ -3,12 +3,10 @@ title: Apply conditional table formatting in Power BI
 description: Apply customized formatting to tables and matrixes in Power BI.
 author: davidiseminger
 ms.author: davidi
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/24/2023
-ms.custom: contperf-fy21q4
 LocalizationGroup: Create reports
 ---
 # Apply conditional formatting in tables and matrixes

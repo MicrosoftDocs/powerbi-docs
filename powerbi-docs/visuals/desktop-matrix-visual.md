@@ -1,13 +1,13 @@
 ---
 title: Create a matrix visual in Power BI
 description: Learn about the matrix visual in Power BI. See how to format a matrix, expand and collapse rows, hide and display totals and icons, and copy values.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 10/27/2023
+ms.date: 02/19/2024
 ms.custom: [pbibetadocbug, sample-Opportunity-Analysis]
 LocalizationGroup: Visualizations
 ---
@@ -16,13 +16,13 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-The matrix visual is similar to a table.  A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables you to drill down. 
+The matrix visual is similar to a table. A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions--it supports a stepped layout. The matrix automatically aggregates the data and enables you to drill down. 
 
 You can create matrix visuals in **Power BI** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can be copied and pasted into other applications. 
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-donut-cross-highlighting.png" alt-text="Screenshot that shows a matrix and a donut chart. Several matrix rows are selected, and the corresponding sections of the donut are highlighted.":::
 
-There are many features associated with the matrix, and we'll go through them in the following sections of this article.
+There are many features associated with the matrix, and we describe them in the following sections of this article.
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
@@ -35,23 +35,23 @@ Take a look at the following matrix visuals.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-totals-underlying-data.png" alt-text="Screenshot of matrix visuals. The total in the third matrix is taken over underlying data in another matrix, not visible values in the third matrix.":::
 
-In this example, each row in the matrix visual farthest to the right is showing the *Amount* for each salesperson/date combination. However, since a salesperson shows up against multiple dates, the numbers can appear more than once. Thus, the accurate total from the underlying data, and a simple addition of the visible values, do not equate. This is a common pattern when the value you’re summing is on the ‘one’ side of a one-to-many relationship.
+In this example, each row in the matrix visual farthest to the right is showing the *Amount* for each salesperson/date combination. However, since a salesperson shows up against multiple dates, the numbers can appear more than once. Thus, the accurate total from the underlying data, and a simple addition of the visible values, don't equate. This mismatch is a common pattern when the value you’re summing is on the *one* side of a one-to-many relationship.
 
 When you look at totals and subtotals, remember that those values are based on the underlying data. They aren't solely based on the visible values.
 
 ## Expanding and collapsing row headers
 
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you selected, the entire level, or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+There are two ways you can expand row headers. The first is through the right-click menu. You have options to expand the specific row header you selected, the entire level, or everything down to the last level of the hierarchy. You have similar options for collapsing row headers as well.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-right-click-expand.png" alt-text="Screenshot of a matrix visual. The shortcut menu of a row header is visible, with various expansions options available.":::
 
-You can also add +/- buttons to the row headers through the formatting pane under the **Row headers** card. By default, the icons will match the formatting of the row header, but you can customize the icons’ colors and sizes separately if you want.
+You can also add +/- buttons to the row headers through the formatting pane under the **Row headers** card. By default, the icons match the formatting of the row header, but you can customize the icons’ colors and sizes separately if you want.
 
 Once the icons are turned on, they work similar to PivotTable icons in Excel.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-plus-minus-icon-expand.png" alt-text="Screenshot of a matrix visual. A plus sign icon is visible next to each row header.":::
 
-The expansion state of the matrix will save with your report. A matrix can be pinned to a dashboard expanded or collapsed. When that dashboard tile is selected, and the report opens, the expansion state can still be changed in the report. 
+The expansion state of the matrix is saved with your report. A matrix can be pinned to a dashboard expanded or collapsed. When that dashboard tile is selected, and the report opens, the expansion state can still be changed in the report. 
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-expansion-state.png" alt-text="Screenshot of a matrix visual. Some Sales Stage rows are expanded, with Opportunity Size rows visible beneath them.":::
 
@@ -60,7 +60,7 @@ The expansion state of the matrix will save with your report. A matrix can be pi
 
 ## Using drill-down actions with the matrix visual
 
-With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
+With the matrix visual, you can do all sorts of interesting drill-down activities that weren't available before. These activities include the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
 
@@ -74,7 +74,7 @@ When the visual has a grouping created in the **Rows** section, the visual itsel
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-drilldown.png" alt-text="Screenshot of a matrix visual. The drill and expand icons are called out.":::
 
-Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the **drill down one level** icon (the pitchfork) has been selected.
+Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the **drill down one level** icon (the pitchfork) is selected.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-drill-one-level.png" alt-text="Screenshot of a matrix visual. All rows are expanded. The pitchfork icon appears dimmed and is called out.":::
 
@@ -96,7 +96,7 @@ Select the **Drill up** icon in the upper corner to have the matrix show all top
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-expand-next.png" alt-text="Screenshot of an expanded matrix visual with all Sales Stage and Opportunity Size rows visible.":::
 
-You can also use the **Expand** menu item to control the display further.  For example, select the **Drill up** icon. Then select **Proposal** > **Expand** > **Selection**. Power BI displays one total row for each *Sales stage* and all the *Opportunity size* options for *Proposal*.
+You can also use the **Expand** menu item to control the display further. For example, select the **Drill up** icon. Then select **Proposal** > **Expand** > **Selection**. Power BI displays one total row for each *Sales stage* and all the *Opportunity size* options for *Proposal*.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-expand.png" alt-text="Screenshot of a matrix visual. No Sales Stage rows are expanded except for the Proposal row, which has three Opportunity Size rows visible beneath it.":::
 
@@ -123,7 +123,7 @@ The rest of the menu items work on columns in the same way they do for rows (see
 
 The matrix visual automatically indents subcategories in a hierarchy beneath each parent, called a stepped layout.
 
-In the original version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in an original matrix visual; notice the subcategories in a separate column.
+In the original version of the matrix visual, subcategories were shown in an entirely different column, taking up more space in the visual. The following image shows the table in an original matrix visual; notice the subcategories in a separate column.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-matrix-no-stepped-layout.png" alt-text="Screenshot of a matrix visual. Instead of being nested under each Sales Stage row, the Opportunity Size subcategory rows appear in a separate column.":::
 
@@ -147,7 +147,7 @@ When you turn on **Row subtotals** and add a label, Power BI also adds a row, an
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-grand-total.png" alt-text="Screenshot of the Row grand total section of the Format pane. Controls are visible for setting the font and color of values and labels.":::
 
-If you want to turn subtotals and the grand total off, in the format section of the visualizations pane, expand the **Row subtotals** card. Turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
+If you want to turn off subtotals and the grand total, in the format section of the visualizations pane, expand the **Row subtotals** card. Turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-no-subtotals.png" alt-text="Screenshot of a matrix visual. All rows are expanded, and no totals are visible.":::
 
@@ -167,7 +167,7 @@ Adjust the conditions, icons, and colors for your matrix and select **OK**. In t
 
 ## Cross-highlighting with matrix visuals
 
-With the matrix visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a matrix and Power BI highlights the column, as does any other visuals on the report page. This type of cross-highlighting has been a common feature of other visuals and data point selections, so now the matrix visual offers the same function.
+With the matrix visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a matrix and Power BI highlights the column, as does any other visuals on the report page. This type of cross-highlighting is a common feature of other visuals and data point selections, so now the matrix visual offers the same function.
 
 In addition, using Ctrl+Click also works for cross-highlighting. For example, in the following image, a collection of subcategories were selected from the matrix visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the matrix visual.
 
@@ -181,11 +181,11 @@ Your matrix or table might have content that you'd like to use in other applicat
 
   :::image type="content" source="media/desktop-matrix-visual/power-bi-cell-copy.png" alt-text="Screenshot of a matrix visual. A cell shortcut menu is visible. Under Copy, the Copy Value option is called out.":::
 
-* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells.  **Copy selection** will ensure that measures are formatted according to the column's formatting rules, unlike the unformatted **Copy value** command.
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. **Copy selection** ensures that measures are formatted according to the column's formatting rules, unlike the unformatted **Copy value** command.
 
   :::image type="content" source="media/desktop-matrix-visual/power-bi-copy.png" alt-text="Screenshot of a matrix visual. Three selected rows are called out. In their shortcut menu, Copy selection is called out.":::
 
-* The copy will include the column and row headers.
+* The copy includes the column and row headers.
 
   :::image type="content" source="media/desktop-matrix-visual/power-bi-copy-selection.png" alt-text="Screenshot of Excel rows and columns. The cells contain the values that were copied from the matrix.":::
 
@@ -199,7 +199,7 @@ Your matrix or table might have content that you'd like to use in other applicat
 
 ## Setting a matrix value as a custom URL
 
-If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. You’ll find this option under the **Cell elements** card in the formatting pane.
+If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. This option is under the **Cell elements** card in the formatting pane.
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-web-url.png" alt-text="Screenshot of a matrix visual and the Format section of the Visualizations pane. Under Cell elements, the Web URL label and switch are called out.":::
 
@@ -221,13 +221,13 @@ Select a definitions icon to display a dialog that you can use to make adjustmen
 
 ## Ragged hierarchy
 
-A ragged hierarchy has levels with no data.  A good example is a company employee matrix. A company has many levels, from CEO on down.  The CEO is the highest level in the hierarchy and reports to no other employees.  Any other company employee, on the other hand, might report to a chain of managers who report to a vice-president who reports to the CEO. Depending on their level in the hierarchy and the way their department is organized, employees might have data for one, two, five, or ten levels in the hierarchy. And, for any given employee, there might be no data for particular hierarchy levels.  
+A ragged hierarchy has levels with no data. A good example is a company employee matrix. A company has many levels, from CEO on down. The CEO is the highest level in the hierarchy and reports to no other employees. Any other company employee, on the other hand, might report to a chain of managers who report to a vice-president who reports to the CEO. Depending on their level in the hierarchy and the way their department is organized, employees might have data for one, two, five, or 10 levels in the hierarchy. And, for any given employee, there might be no data for particular hierarchy levels.  
 
 :::image type="content" source="media/desktop-matrix-visual/power-bi-ragged-hr.png" alt-text="Screenshot of a matrix visual. Values are missing from several cells.":::
 
-There is currently no way to hide blank rows or identical parent and child values. And you can’t control which levels of the hierarchy can and can’t be expanded. However, there are a few steps you can take to make the visual look more appealing.    
+There's currently no way to hide blank rows or identical parent and child values. And you can’t control which levels of the hierarchy can and can’t be expanded. However, there are a few steps you can take to make the visual look more appealing.    
 
-* Turn off stepped layout. In the Format pane, expand the **Row headers** card. Then open the **Options** section of the card, and set the **Stepped layout** toggle to **Off**.  All the blank values for a hierarchy level will now display in the same row.
+* Turn off stepped layout. In the Format pane, expand the **Row headers** card. Then open the **Options** section of the card, and set the **Stepped layout** toggle to **Off**. All the blank values for a hierarchy level now display in the same row.
 
   :::image type="content" source="media/desktop-matrix-visual/power-bi-stepped-layout.png" alt-text="Screenshot of the Format section of the Visualizations pane. Under Options in the Row headers section, Stepped layout is turned off and called out.":::
 
@@ -237,9 +237,9 @@ There is currently no way to hide blank rows or identical parent and child value
 
 ## Considerations and troubleshooting
 
-* If the text data in your matrix's cells or headers contain new line characters, those characters will be ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card.
+* If the text data in your matrix's cells or headers contain new line characters, those characters are ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card.
 
-* Scroll bars will appear to help you scroll across body cells which don't all fit on the visual at once, but row header columns are fixed on the matrix visual and will not scroll.  If you include too many row headers in your matrix such that the body cells are hidden, scrolling will not reveal the body cells. Instead, reduce the number of row headers on your visual, adjust column width, reduce font size, or otherwise ensure the matrix body cells are visible in order to access your value data. 
+* The matrix visual displays a maximum of 100 columns.  
 
 ## Related content
 
