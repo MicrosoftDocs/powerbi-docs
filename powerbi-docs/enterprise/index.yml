@@ -89,7 +89,5 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Service principal authentication for read-only admin APIs
-            url: read-only-apis-service-principal-authentication.md
           - text: PowerShell cmdlets, REST APIs, and .NET Client library
             url: service-admin-reference.md          
