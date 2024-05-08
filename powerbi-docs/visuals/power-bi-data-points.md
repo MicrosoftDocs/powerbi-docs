@@ -93,7 +93,7 @@ Power BI visuals can get up to 30,000 data points, but it's up to the visual aut
 
 The filled map can use statistics or dynamic limits. Power BI tries to use reduction in the following order: dynamic limits, statistics, and configuration.
 
-* Max points: 10000
+* Max points: 3,500
 * Categories: Top 500
 * Series (when both X and Y are present): Top 20
 
