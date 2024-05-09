@@ -4,32 +4,12 @@ description: "[Article description]."
 author: [your GitHub alias]
 ms.author: mihart
 ms.service: [the approved service name]
-ms.topic: quickstart  #Don't change
-ms.date: [mm/dd/yyyy]
+ms.topic: quickstart
+ms.date: 05/08/2024
 
 #customer intent: As a Power BI service or Fabric user, I want to learn how to use self-service to buy or try so that I can use and evaluate.
 
 ---
-  
-<!-- --------------------------------------
-
-- Use this template with pattern instructions for:
-
-Quickstart
-
-- Use the Quickstart pattern when you want to show a user 
-how to complete a task to get started with a product or 
-service in their own environment.
-
-- Before you sign off or merge:
-
-Remove all comments except the customer intent.
-
-- Feedback:
-
-https://aka.ms/patterns-feedback
-
--->
 
 # Quickstart: Learn how to use self-service to try or buy Fabric and Power BI
 

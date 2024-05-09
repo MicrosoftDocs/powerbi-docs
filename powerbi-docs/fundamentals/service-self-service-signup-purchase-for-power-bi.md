@@ -1,6 +1,6 @@
 ---
-title: Sign up or purchase the Power BI service as an individual
-description: Learn how to sign up for or purchase the Power BI service and begin using it for your individual data analysis and visualization needs.
+title: Sign up or purchase Fabric as an individual
+description: Learn how to sign up for or purchase Microsoft Fabric and begin using it for your individual data analysis and visualization needs.
 level: intermediate
 author: mihart
 ms.author: mihart
@@ -19,7 +19,7 @@ This article explains how individuals can get a license for Microsoft Fabric.
 
 There are two ways for individuals to get a license. You can sign up for or purchase a license for yourself. This includes getting a free or paid license that an admin makes available for users in an organization. The other method is for an admin to assign you a license. This article explains the first option, which is called **self-service**. If the term *self-service* is new to you, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins) or [What is self-service](/microsoft-365/admin/misc/self-service-sign-up).
 
-If you are unable to sign up or to purchase Fabric, self-service options might be disabled by your administrator. Contact your administrator and ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization#enable-and-disable-self-service-sign-up-and-purchase)
+If you are unable to sign up or to purchase Fabric, self-service options might be disabled by your administrator. Contact your administrator and ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ This quickstart expects that you know the following information:
 
 - The [difference between Microsoft Fabric and the Power BI service](/power-bi/fundamentals/power-bi-overview#how-microsoft-fabric-works-with-power-bi)
 - The [licenses and capacities for Fabric and Power BI](/fabric/enterprise/licenses). 
-- The [license and trials](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-license#find-out-which-licenses-you-have) you already have.
+- The [license and trials](../consumer/end-user-license.md#find-out-which-licenses-you-have) you already have.
 - The definitions of [self-service sign-up and self-service purchase](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins). 
 - How self-service setting work with the [Users can try Microsoft Fabric paid features](../admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features) setting.
 - The type of email account that you have. [It must be a work or school account.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)  
@@ -38,7 +38,7 @@ Both the Power BI service and Fabric require all users to have access to a Fabri
 
 ## Fabric licensing and capacities
 
-A Fabric (Free) license is the minimum license that you need to work in all of the Fabric workloads. However, you do also need a capacity to save your Fabric items. Use self-service to get the licenses and capacities that you need. To learn about subscriptions, visit [Buy subscriptions](buy-subscription.md).  
+A Fabric (Free) license is the minimum license that you need to work in all of the Fabric workloads. However, you do also need a capacity to save your Fabric items. Use self-service to get the licenses and capacities that you need. To learn about subscriptions, visit [Buy subscriptions](/fabric/buy-subscription).  
 
 #### [Free sign-ups and trials](#tab/free-sign-ups-and-trials)
 
@@ -60,23 +60,23 @@ Microsoft offers trials of licenses,  capacities, and subscriptions.
 
 #### Start a trial of a Fabric capacity
 
-Start a [trial of a Fabric capacity](../get-started/fabric-trial.md). The trial includes a capacity and advanced permissions similar to a PPU license. The trial gives you access to all Fabric workloads and features and 1 TB of storage. 
+Start a [trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial includes a capacity and advanced permissions similar to a PPU license. The trial gives you access to all Fabric workloads and features and 1 TB of storage. 
 
-Sign up at [app.fabric.microsoft.com.](app.fabric.microsoft.com) The individual who starts the trial becomes the Capacity administrator. The Capacity administrator can share the trial by adding workspaces to the Trial capacity. Users with access to the workspaces are now part of the Fabric trial too.
+Sign up at (app.fabric.microsoft.com) The individual who starts the trial becomes the Capacity administrator. The Capacity administrator can share the trial by adding workspaces to the Trial capacity. Users with access to the workspaces are now part of the Fabric trial too.
 
 Open your Account manager from the upper right corner. Select **Start trial**. You have access to your Account manager if you already have a Fabric license.
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-start-trial.png" alt-text="Screenshot of the Account manager with Start trial outlined in red."::: 
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-start-trials.png" alt-text="Screenshot of the Account manager with Start trial outlined in red."::: 
 
 #### Start a Power BI individual user trial
 
 If you already have a free license and try to use an advanced Power BI feature, Fabric displays upgrade prompts. Depending on your configuration, you might receive prompts to join a trial or to make an upgrade purchase, or both. 
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-prompts.png" alt-text="Screenshot showing dialog with message to Upgrade to a paid Power BI license.":::
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-prompt.png" alt-text="Screenshot showing dialog with message to Upgrade to a paid Power BI license.":::
 
 #### Start a Microsoft 365 trial of Pro
 
-If you don't have a work or school email account, you can still start a trial of Power BI Pro. To do this, [sign up for a trial of Microsoft 365 E5](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). This version of Microsoft 365 includes a Pro license. The Microsoft 365 trial includes up to 25 licenses. Your Microsoft 365 trial lasts for 30 days. After the trial ends your credit card is charged. You become the admin for the new domain. 
+If you don't have a work or school email account, you can still start a trial of Power BI Pro. To do this, [sign up for a trial of Microsoft 365 E5](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). This version of Microsoft 365 includes a Pro license. The Microsoft 365 trial includes up to 25 licenses. Your Microsoft 365 trial lasts for 30 days. After the trial ends your credit card is charged. You become the admin for the new domain. 
 
 For more information about the Microsoft 365 trial, see [sign up for Power BI with a Microsoft 365 trial.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) 
 
@@ -90,13 +90,13 @@ There are many ways to buy a license. Three are described here. Use in-product p
  
 If you already have a license and try to use an advanced Power BI feature, Fabric displays upgrade prompts. Depending on your configuration, you might receive prompts to join a trial or to make an upgrade purchase, or both. 
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-prompts.png" alt-text="Screenshot showing dialog with message to Upgrade to a paid Power BI license.":::
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-prompt.png" alt-text="Screenshot showing dialog with message to Upgrade to a paid Power BI license.":::
 
 #### Buy a license using your Account manager
 
 Open your Account manager from the upper right corner. Select **Buy Pro now**. You have access to your Account manager if you already have a Fabric license.
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-buy-pro.png" alt-text="Screenshot of the Account manager with Buy Pro now outlined in red."::: 
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/fabric-pro-buy.png" alt-text="Screenshot of the Account manager with Buy Pro now outlined in red."::: 
 
 #### Buy a license from a commercial site
 
@@ -108,7 +108,7 @@ Purchase capacities from the Microsoft [pricing site](https://powerbi.microsoft.
 
 ### Buy a subscription
 
-[A Fabric capacity subscription](buy-subscription.md) includes a capacity and per-user licenses. There are a range of options available split into Stock Keeping Units (SKUs). Buying  subscriptions is an admin function. 
+[A Fabric capacity subscription](/fabric/enterprise/buy-subscription.md) includes a capacity and per-user licenses. There are a range of options available split into Stock Keeping Units (SKUs). Buying  subscriptions is an admin function. 
 
 ## Close your account, cancel your subscription, end your trial
 
