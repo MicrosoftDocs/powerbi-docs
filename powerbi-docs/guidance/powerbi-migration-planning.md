@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/17/2022
 ---
 
@@ -71,6 +72,8 @@ There are several key decisions to be made related to allowing consumers to crea
 > Although the *Save a copy* capability is a nice feature, it should be used with caution when the report includes certain graphics or header/footer messages. Since logos, icons, and textual messages often relate to branding requirements or regulatory compliance, it's important to carefully control how they're delivered and distributed. If *Save a copy* is used, but the original graphics or header/footer messages remain unchanged by the new author, it can result in confusion about who actually produced the report. It can also reduce the meaningfulness of the branding.
 
 ## Evaluate needs for Premium capacity
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 Additional capabilities are available when a workspace is stored on a [Premium capacity](../enterprise/service-premium-what-is.md). Here are several reasons why workspaces on Premium capacity can be advantageous:
 

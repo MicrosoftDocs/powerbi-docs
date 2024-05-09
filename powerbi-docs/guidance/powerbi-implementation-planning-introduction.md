@@ -6,9 +6,9 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.custom: fabric-cat, video-RWUWA9
+ms.date: 04/24/2024
 ---
 
 # Power BI implementation planning
@@ -30,7 +30,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [Tenant administration](powerbi-implementation-planning-tenant-administration.md)
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
 - Data management
-- Content deployment
+- [Content lifecycle management](powerbi-implementation-planning-content-lifecycle-management-overview.md)
 - Content distribution and sharing
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)

@@ -258,9 +258,9 @@ Any user with read permissions for a semantic model can see the entire schema (t
 
 To manage which portion of the data your users can view, use one of the following methods:
 
-* Row-level filtering using Power BI [row-level security (RLS)](../../enterprise/service-admin-rls.md).
+* Row-level filtering using Power BI [row-level security (RLS)](/fabric/security/service-admin-row-level-security).
 
-* [Object level security (OLS)](/analysis-services/tabular-models/object-level-security).
+* [Object-level security (OLS)](/analysis-services/tabular-models/object-level-security).
 
 * Separate the data into different semantic models. For example, you can create a semantic model that only contains aggregated data and give your users access to only that semantic model.
 

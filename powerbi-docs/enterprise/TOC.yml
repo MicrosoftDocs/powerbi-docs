@@ -16,12 +16,6 @@
       href: desktop-admin-sign-in-form.md
     - name: Track user activities in Power BI
       href: service-admin-auditing.md
-    - name: Add Power BI URLs to your allowlist
-      href: power-bi-allow-list-urls.md
-    - name: Power BI site reliability engineering model
-      href: service-admin-site-reliability-engineering-model.md
-    - name: Release management and deployment process
-      href: service-admin-release-management.md     
     - name: Bring your own encryption keys
       href: service-encryption-byok.md
     - name: Using Microsoft Entra B2B
@@ -32,17 +26,6 @@
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
       href: aas-pbi-migration-overview.md
-    - name: Direct Lake
-      expanded: false
-      items:
-      - name: Direct Lake overview
-        href: directlake-overview.md
-      - name: Create a Lakehouse for Direct Lake
-        href: directlake-create-lakehouse.md
-      - name: Specify a fixed identity
-        href: directlake-fixed-identity.md
-      - name: Analyze query processing
-        href: directlake-analyze-qp.md
     - name: OneLake integration for semantic models (Preview)
       href: onelake-integration-overview.md
   - name: Licensing
@@ -91,13 +74,7 @@
       - name: Purchase Power BI Premium
         href: service-admin-premium-purchase.md   
       - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md                    
-      - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md
-      - name: Configure and manage capacities
-        href: service-admin-premium-manage.md                                   
-      - name: Premium capacity load evaluation
-        href: service-premium-concepts.md
+        href: service-admin-premium-testing.md                                                  
       - name: Performance smoothing
         href: service-premium-smoothing.md                    
       - name: Backup and restore Power BI Premium semantic models
@@ -138,8 +115,6 @@
         href: service-security-sensitivity-label-custom-help-link.md   
       - name: Audit schema for sensitivity labels
         href: service-security-sensitivity-label-audit-schema.md  
-      - name: Protection metrics report
-        href: service-security-data-protection-metrics-report.md
     - name: Data loss prevention
       expanded: false
       items:              
@@ -154,13 +129,6 @@
     items:
     - name: Power BI security
       href: service-admin-power-bi-security.md
-    - name: Row-level security
-      expanded: false
-      items:
-      - name: Row-level security
-        href: service-admin-rls.md 
-    - name: Object-level security
-      href: service-admin-ols.md     
     - name: Privacy levels
       href: desktop-privacy-levels.md
     - name: Use service tags with Power BI
@@ -187,8 +155,6 @@
   - name: Automation tools
     expanded: false
     items:
-    - name: Enable service principal authentication for read-only admin APIs
-      href: read-only-apis-service-principal-authentication.md
     - name: PowerShell, REST APIs, and .NET SDK
       href: service-admin-reference.md
     - name: Power BI cmdlets for PowerShell

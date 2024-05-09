@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/13/2024
 ---
 
@@ -26,6 +27,8 @@ As described in the Fabric adoption [maturity levels](fabric-adoption-roadmap-ma
 
 > [!NOTE]
 > Administering Fabric [capacity](/fabric/enterprise/licenses#microsoft-fabric-concepts) (or Premium capacity) and managing the Power BI service are different concepts. While most organizations have just one [Power BI tenant](powerbi-implementation-planning-tenant-setup.md), an organization can provision multiple capacities for different workloads or business units.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Define scope of responsibilities
 

@@ -47,6 +47,8 @@ In addition to the previously mentioned strategies, visuals with two hierarchies
 
 Dynamic limits provide a better selection of points for sparse data than static limits. For example, you can configure a visual to select 100 categories and 10 series with a total of 1,000 points. But the actual data has 50 categories and 20 series. At query runtime, dynamic limits select all 20 series to fill up the 1,000 points requested.
 
+This also means that dynamic limits are responsive if only one of the grouping columns (just category, or just series) is defined.  In this case, the number of items possible to return can be up to the limit of maximum points the visual specifies it can handle.
+
 Dynamic limits are automatically applied when the server is capable:
 
 * In Power BI Desktop, with On-premises SSAS version 2016 or higher, [using the SuperDax capabilities of the server](/archive/blogs/analysisservices/whats-new-in-microsoft-sql-server-analysis-services-tabular-models-in-sql-server-2016-ctp-2-3).
@@ -83,11 +85,14 @@ For more information about area chart visuals, see [How the new line sampling al
 
 Power BI visuals can get up to 30,000 data points, but it's up to the visual authors to indicate which strategies to use. The default limit is 1,000, but the visual creator can change that up to a maximum of 30,000.
 
-### Doughnut
+### Donut chart
 
 * Max points: 3,500
-* Group: Top 500
-* Details: Top 20
+* Legend only:
+  * Legend: Top 1000
+* Legend and details:
+  * Legend: Top 500
+  * Details: Top 20
 
 ### Filled map choropleth
 
@@ -97,7 +102,7 @@ The filled map can use statistics or dynamic limits. Power BI tries to use reduc
 * Categories: Top 500
 * Series (when both X and Y are present): Top 20
 
-### Funnel
+### Funnel chart
 
 * Max points: 3,500
 * Categories: Top 3,500
@@ -160,11 +165,14 @@ No reduction strategy.
 
 For more information, see [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md).
 
-### Pie
+### Pie chart
 
 * Max points: 3,500
-* Group: Top 500
-* Details: Top 20
+* Legend only:
+  * Legend: Top 1000
+* Legend and details:
+  * Legend: Top 500
+  * Details: Top 20
 
 ### R & Python visuals
 

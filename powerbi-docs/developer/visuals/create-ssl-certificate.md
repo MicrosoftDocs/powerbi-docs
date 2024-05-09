@@ -191,6 +191,7 @@ If your PFX certificate file requires a passphrase:
     ```
 
 ## Related content
+
 - [Develop a Power circle card BI visual](develop-circle-card.md)
 - [Power BI visuals samples](samples.md)
 - [Publish a Power BI visual to AppSource](office-store.md)

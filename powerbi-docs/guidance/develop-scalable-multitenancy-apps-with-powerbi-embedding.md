@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/16/2023
 ---
 
@@ -36,7 +37,7 @@ To create a scalable multitenancy solution, you must be able to automate the cre
 
 :::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment.png" alt-text="Diagram that shows a setup for three tenants. Each tenant has its own data source and workspace." border="false":::
 
-When you develop an application that uses the *Embed for your customer* scenario, it's possible to make [Power BI REST API](/rest/api/power-bi/) calls by using an embedding identity that's either a master user account or a service principal. We recommend using a service principal for production applications. It provides the highest security and for this reason it's the approach recommended by Microsoft Entra. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to [set up and manage](/power-bi/enterprise/read-only-apis-service-principal-authentication).
+When you develop an application that uses the *Embed for your customer* scenario, it's possible to make [Power BI REST API](/rest/api/power-bi/) calls by using an embedding identity that's either a master user account or a service principal. We recommend using a service principal for production applications. It provides the highest security and for this reason it's the approach recommended by Microsoft Entra. Also, it supports better automation and scale and there's less management overhead. However, it requires Power BI admin rights to [set up and manage](/fabric/admin/metadata-scanning-enable-read-only-apis).
 
 By using a service principal, you can avoid common problems associated with master user accounts, such as authentication errors in environments where users are required to sign in by using multifactor authentication (MFA). Using a service principal is also consistent with the idea that the *Embed for your customer* scenario is based on embedding Power BI content by using a PaaS mindset as opposed to a SaaS mindset.
 

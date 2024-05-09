@@ -42,15 +42,15 @@ Power BI designers share reports with you by sending an email link or by adding 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-filters-pane.png" alt-text="Screenshot showing the Power BI service with Filters expanded.":::
 
-1. Hover over a visual to show the actions you can perform. For this treemap, we see pin, copy, filter, display the visual at full size, and an ellipses (...). 
+1. Hover over a visual to show the actions you can perform. For this treemap, we see pin, copy, filter, display the visual at full size, and an ellipsis (...). 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-visual-menu.png" alt-text="Screenshot showing the Power BI service with View options expanded.":::
 
-    Select the ellipses (...) to see more options. 
+    Select the ellipsis (...) to see more options. 
 
     :::image type="content" source="./media/end-user-report-open/power-bi-more-options.png" alt-text="Screenshot showing the More options ellipses selected.":::
 
-1. Explore the action bar at the top of your report. From the **File** menu, you can make copies and print. If you have permissions, **Export** your report to PowerPoint or **Share** your report with colleagues. Select **Get insights** and Power BI searchs for and displays interesting information from the report data. All of the features available from the action bar are explained in separate Power BI articles.
+1. Explore the action bar at the top of your report. From the **File** menu, you can make copies and print. If you have permissions, **Export** your report to PowerPoint or **Share** your report with colleagues. Select **Get insights** and Power BI searches for and displays interesting information from the report data. All of the features available from the action bar are explained in separate Power BI articles.
 
 1. Change the size and display of your report. To adjust the report display size, use the slider in the bottom right. To select display options from a menu, open the **View** menu and choose a display option. Your choices are **Full screen**, **Actual size**, **Fit to page**, and **Fit to width**. Notice the difference that each display options makes.
 
@@ -88,7 +88,7 @@ Most dashboard [tiles](end-user-tiles.md) are pinned from reports. Selecting a t
 
     :::image type="content" source="./media/end-user-report-open/power-bi-dashboards.png" alt-text="Screenshot showing a dashboard and a tile is selected.":::
 
-2. The associated report opens to the *YTD Category Trend Analysis* page. The is the source page for the column chart tile.
+2. The associated report opens to the *YTD Category Trend Analysis* page. This is the source page for the column chart tile.
 
     :::image type="content" source="./media/end-user-report-open/power-bi-report-tab.png" alt-text="Screenshot showing the YTD Category Trend Analysis page.":::
 
