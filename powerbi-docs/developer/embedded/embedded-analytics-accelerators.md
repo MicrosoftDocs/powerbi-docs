@@ -153,8 +153,6 @@ The following tables compare features of the different accelerators from our par
 
 * To learn more about each partner’s solution accelerator, visit their corresponding product website:
 
-  * [Power Embedded](https://powerembedded.com.br/)
-
   * [The Reporting Hub](https://thereportinghub.com/)
 
   * [EmbedFAST](https://maqsoftware.com/embedfast)
