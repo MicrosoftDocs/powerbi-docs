@@ -17,6 +17,9 @@ With the **Embed** option for Power BI reports, you can easily and securely embe
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
+> [!IMPORTANT]
+> Due to ongoing Chromium security updates, the **Embed** option no longer works exactly as it used to, and users may be asked to authenticate more than once. To address this, consider creating your own [Power BI embedded solution](/power-bi/developer/embedded/embed-sample-for-your-organization).  
+
 ## How to embed Power BI reports into portals
 
 1. Open a report in the Power BI service.
