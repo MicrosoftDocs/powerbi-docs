@@ -240,21 +240,26 @@ The statistics are presented as a JSON text in the **EventText** property, see t
 
 ```json
 {
-    "timeStart": "2024-03-20T12:39:59.681Z",
-    "timeEnd": "2024-03-20T13:01:14.241Z",
-    "durationMs": 1274559,    
-    "vertipaqJobCpuTimeMs": 156,
-    "mEngineCpuTimeMs": 9617484,
-    "totalCpuTimeMs": 9618469,
-    "executionDelayMs": 10,
-    "approximatePeakMemConsumptionKB": 1683409,
-    "mEnginePeakMemoryKB": 1676816,
-    "tabularConnectionTimeoutMs": 18000000,    
-    "refreshParallelism": 16,
-    "vertipaqTotalRows": 114,
-    "intendedUsage": 2
+    "timeStart": "2024-05-07T13:42:21.362Z",
+    "timeEnd": "2024-05-07T13:43:30.505Z",
+    "durationMs": 69143,
+    "datasourceConnectionThrottleTimeMs": 0,
+    "directQueryConnectionTimeMs": 3,
+    "directQueryIterationTimeMs": 1,
+    "directQueryTotalTimeMs": 121872,
+    "queryProcessingCpuTimeMs": 16,
+    "totalCpuTimeMs": 63,
+    "executionDelayMs": 0,
+    "approximatePeakMemConsumptionKB": 3632,
+    "directQueryTimeoutMs": 225000,
+    "tabularConnectionTimeoutMs": 225000,
+    "queryDialect": 3,
+    "queryResultRows": 67,
+    "directQueryRequestCount": 2,
+    "directQueryTotalRows": 134
 }
 ```
+---
 
 The following table describes all the possible properties. Not every property is emitted in each event, as the contents will depend on the request and the semantic model.
 
