@@ -149,7 +149,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - For Analyze in Excel, only Power BI semantic models that use Import mode preserve hierarchies in the PivotTable Fields in the Excel workbook. Power BI semantic models that are built on Direct Lake, DirectQuery, or composite models don't retain their hierarchies when you use Analyze in Excel.
 - Analyze in Excel doesn't support specifying a locale by modifying the connection string after the workbook has been generated.
 - You might see an error message if the data is larger than 2 GB. In that case, either reduce the amount of data, for example by applying filters, or use the XMLA endpoint. For more information, see [XMLA endpoint](../enterprise/service-premium-connect-tools.md).
-- Users external to the tenant hosting the Power BI semantic model can't analyze Power BI data in Excel.
+- Users external to the tenant hosting the Power BI semantic model can't analyze Power BI data nor load Power BI data with live connection in Excel.
 - Analyze in Excel and Export with live connection aren't supported in Power BI Report Server or Power BI PaaS Embedded, except for Power BI reports in Premium capacities.
 - Analyze in Excel might not work as expected if field parameters are used in the underlying Power BI semantic model.
 - Analyze in Excel and Export with live connection aren't available for Power BI semantic models with a live connection to Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS).
