@@ -1,7 +1,6 @@
 ---
 title: Sign up or purchase Fabric as an individual
 description: Learn how to sign up for or purchase Microsoft Fabric and begin using it for your individual data analysis and visualization needs.
-level: intermediate
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
@@ -29,7 +28,7 @@ This quickstart expects that you know the following information:
 - The [licenses and capacities for Fabric and Power BI](/fabric/enterprise/licenses). 
 - The [license and trials](../consumer/end-user-license.md#find-out-which-licenses-you-have) you already have.
 - The definitions of [self-service sign-up and self-service purchase](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins). 
-- How self-service setting work with the [Users can try Microsoft Fabric paid features](../admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features) setting.
+- How self-service setting work with the [Users can try Microsoft Fabric paid features](../admin/service-admin-portal-help-support.md#users-can-try-microsoft-fabric-paid-features) setting.
 - The type of email account that you have. [It must be a work or school account.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)  
 
 ## Licenses and capacities
@@ -38,7 +37,7 @@ Both the Power BI service and Fabric require all users to have access to a Fabri
 
 ## Fabric licensing and capacities
 
-A Fabric (Free) license is the minimum license that you need to work in all of the Fabric workloads. However, you do also need a capacity to save your Fabric items. Use self-service to get the licenses and capacities that you need. To learn about subscriptions, visit [Buy subscriptions](/fabric/buy-subscription).  
+A Fabric (Free) license is the minimum license that you need to work in all of the Fabric workloads. However, you do also need a capacity to save your Fabric items. Use self-service to get the licenses and capacities that you need. To learn about subscriptions, visit [Buy subscriptions](/fabric/enterprise/buy-subscription).  
 
 #### [Free sign-ups and trials](#tab/free-sign-ups-and-trials)
 
@@ -108,7 +107,7 @@ Purchase capacities from the Microsoft [pricing site](https://powerbi.microsoft.
 
 ### Buy a subscription
 
-[A Fabric capacity subscription](/fabric/enterprise/buy-subscription.md) includes a capacity and per-user licenses. There are a range of options available split into Stock Keeping Units (SKUs). Buying  subscriptions is an admin function. 
+[A Fabric capacity subscription](/fabric/enterprise/buy-subscription) includes a capacity and per-user licenses. There are a range of options available split into Stock Keeping Units (SKUs). Buying  subscriptions is an admin function. 
 
 ## Close your account, cancel your subscription, end your trial
 
