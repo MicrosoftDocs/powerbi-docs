@@ -172,7 +172,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
+1. In the **Add data to your visual** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
 
@@ -224,7 +224,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 **Date slicer using the original table**
 
 1. In the Fields pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
+2. In the Visualizations pane, choose **Slicer** (The icon with a funnel next to a tab, but without the small lightning bolt). 
 
     Power BI automatically creates a numeric range slicer. 
 
@@ -275,7 +275,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Add a background shape for the title**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
+1. In the **Format shape** pane, in the **Border** section, change **Transparency** to **100%**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Screenshot of Theme color 5.":::
@@ -286,7 +286,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Add a background shape for visuals 2 and 3**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
-1. In the **Format shape** pane, in the **Outline** section, change **Transparency** to **100%**. 
+1. In the **Format shape** pane, in the **Border** section, change **Transparency** to **100%**. 
 2. In the **Fill** section, set the color to **White, 10% darker**.
 3. On the **Format** tab, select **Send backward** > **Send to back**. 
 
@@ -312,7 +312,7 @@ In summary, this report answers your manager’s top questions:
 
 ## Save your report
 
-- On the **File** menu, select **Save**.
+- On the **File** menu, select **Save** (or hold **Ctrl** and then press **S**). If you're saving the Report for the first time, you'll be prompted for a location for it to be saved to.
 
 ## Publish to the Power BI service to share 
 
