@@ -116,7 +116,7 @@ Follow these steps:
 
     a. Right-click the dataset and select **Edit Mashup**.
 
-:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-power-bi-report-builder-dataset-properties.png" alt-text="Screenshot showing dataset properties in Power BI Report Builder.":::
+:::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
    b. Get the shareable cloud connection information
    
