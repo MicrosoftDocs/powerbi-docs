@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 06/15/2022
+ms.date: 05/10/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -224,9 +224,9 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 **Date slicer using the original table**
 
 1. In the Fields pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer** (The icon with a funnel next to a tab, but without the small lightning bolt). 
+2. In the Visualizations pane, choose **Slicer**. 
 
-    Power BI automatically creates a numeric range slicer. 
+    Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-numeric-range.png" alt-text="Screenshot of Date numeric range slicer.":::
 
@@ -312,7 +312,7 @@ In summary, this report answers your manager’s top questions:
 
 ## Save your report
 
-- On the **File** menu, select **Save** (or hold **Ctrl** and then press **S**). If you're saving the Report for the first time, you'll be prompted for a location for it to be saved to.
+- On the **File** menu, select **Save**, or hold **Ctrl** and then press the **S** key. If you're saving the report for the first time, you're prompted for a location to save it to.
 
 ## Publish to the Power BI service to share 
 
