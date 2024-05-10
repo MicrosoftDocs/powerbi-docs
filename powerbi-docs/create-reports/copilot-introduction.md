@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/22/2024
+ms.date: 05/10/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -19,6 +19,9 @@ no-loc: [Copilot]
 Copilot for Microsoft Fabric Public Preview is available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot capabilities for Power BI.
 
 Before your business can start using Copilot capabilities in Power BI, your administrator needs to [enable Copilot in Microsoft Fabric](/fabric/get-started/copilot-fabric-overview#enable-copilot).
+
+> [!NOTE]
+> Copilot is not yet supported for sovereign clouds due to GPU availability.
 
 ## Get ready to create reports
 
