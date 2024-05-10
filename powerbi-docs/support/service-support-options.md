@@ -10,13 +10,157 @@ ms.topic: troubleshooting
 ms.date: 05/10/2023
 ---
 
-# Fabric and Power BI support options
+# Fabric and Power BI support overview
 
-This article describes the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Power BI administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric (Preview) for administrators, see [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
+This article describes how to find self-help resources and the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Fabric administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric for administrators, see [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
 
-## Get started with support
+## Finding self-help resources
 
-Many resources are available to help you identify, research, and solve issues.  From the top menu bar, select the **?** **> Get Help** to open the Fabric and Power BI Support site. The [Fabric and Power BI support site](https://blog.fabric.microsoft.com/support) has links to documentation, Community, known issues, troubleshooting, and a Support dashboard. If you Fabric or if you have a paid version of Power BI, options to contact Microsoft Support directly are available from the **Help and support** site. 
+Many resources are available to help you identify, research, and solve issues. From the top menu bar, select the **?** to open the Fabric Help Pane. In the Help Pane you can search for content from Microsoft Learn and the different Fabric communities. 
+
+### Checking for service health and known issues
+
+From the Help Pane you can navigate to the Fabric Support page to check [Fabric service status](https://support.fabric.microsoft.com/support) or to view [Fabric current known issues](https://support.fabric.microsoft.com/known-issues).
+
+![Check for service status and known issues in the Help Pane.](media/service-support-options/image2.png)
+
+### Searching for content in the Help Pane
+
+In the Help Pane, enter a keyword to find relevant information and resources from Microsoft documentation and community forum topics. Use the dropdown to filter the results.![Screenshot of help pane search.](media/service-support-options/image.png)
+
+### Search for help in Fabric communities
+
+Clicking on "Ask the community" in the Help Pane will take you to the Fabric Community in which you can post questions and seek help from other users.
+
+![Nevigate to Fabric Community from the Help Pane.](media/service-support-options/image3.png)
+
+
+
+## About Support
+
+### For which languages does Microsoft provide support?
+
+Microsoft provides support in English globally and in additional languages (Japanese, Spanish, French, German, Italian, Portuguese, Traditional Chinese, and Simplified Chinese) within certain regions.  
+
+|English <sup>*</sup>  |Japanese <sup>**</sup>  |Spanish, French, German, Italian, Portuguese <sup>**</sup> |Traditional Chinese, Simplified Chinese <sup>**</sup>  |
+|---------|---------|---------|---------|
+|Provided globally all day, every day   |Available to customers in Japan region during that region's business hours        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region's business hours   | Available to customers in Asia/Pacific region during that region's business hours        |
+
+<sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English may be available during local business hours subject to availability.
+
+> [!NOTE]
+> Translation services might be available to assist with additional languages outside normal business hours.
+
+### Do I get around the clock support? 
+
+- Microsoft provides all day, every day support in English for all **Severity A** issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
+- For those issues that don't qualify for all day, every day support, Microsoft provides assistance during local business hours only.
+### What hours are considered local business hours for support?
+
+For **most countries**, business hours are from 9:00 AM to 5:00 PM during weekdays (weekends and holidays excluded). For **North America**, business hours are 6:00 AM to 6:00 PM Pacific time, Monday through Friday excluding holidays. In **Japan**, business hours are from 9:00 AM to 5:30 PM weekdays.
+
+### What's the difference between technical support and advisory services?
+
+- Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
+- How functionality works isn't considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training isn't included in support plans.
+
+### What is a preview (beta) service or feature?
+
+Microsoft may provide access to Fabric workloads, artifacts or features that are still in preview to obtain feedback and for evaluation purposes. There are different kinds of preview services and features, with service availability and access being the biggest differentiators:
+
+- **Public Preview**: Made available to all Fabric or Power BI users. Some preview experiences or features will have to be enabled or disabled by Fabric admins in the Admin Portal. The public preview experience is intended to give users an early look into what is coming and a chance to test upcoming features.
+
+- **Private Preview**: Provided only to a small subset of customers, in direct contact with product engineering teams who are building the features, focused on direct and continual feedback during the development phase of a service.
+
+When Microsoft offers you early access to a Fabric workload and/or features, these preview services and features are subject to reduced or different service terms as set forth in your service agreement and the preview supplemental terms. Preview services and features are provided "as-is," "with all faults," and "as available," and are excluded from any Limited Warranties provided by Microsoft for services released to general availability (GA), and are made available to you on the condition that you agree to these terms of use, which supplement your agreement governing use of customer engagement apps.
+
+### Does Fabric support cover preview (beta) services or features?
+
+- Support for Fabric workloads and features is provided for "Public Preview" and "Generally Available" programs — see above.
+
+- Any technical support for a public preview service or feature is limited to break-fix scenarios. 
+
+- Users might find additional support for Public Preview features through our [forums](https://community.fabric.microsoft.com/) or other channels.
+
+## Using Support
+
+### How do I contact Support?
+
+You get access to Support through either Fabric [Admin Portal](https://app.powerbi.com/admin-portal/supportCenter), [Fabric Support page](https://support.fabric.microsoft.com/support), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) . Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) or the Premier support path listed in the table, as applicable. For detailed instructions on how to create a support ticket, review [How to contact support ](/power-bi/support/create-support-ticket)document.
+
+### Why is submitting a request online the preferred method of contacting Support?
+
+Submitting support requests online allows us to deliver fast and deep technical expertise in the most effective and efficient manner possible. Due to the detailed nature of the requests, it's easier to provide relevant information online, compared to reading this information over the phone. This model also eliminates unproductive hold time and provides instead a simple, intuitive online process. As a result, customer problems are routed more quickly, to the most qualified engineer.
+
+### Is there a phone number I can call to contact Support?
+
+Contacting Support over the phone won't speed up the processing of your request, and you'll get a better and faster experience by contacting support via the correct support portals listed earlier in this article. If you can't submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+
+### How do I submit a support request if I can't sign in?
+
+If you can't submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+
+### Who can submit a support request for Fabric or Power BI?
+
+- Any users with the Fabric admin role on the tenant can submit a support request. 
+
+- Users with appropriate admin roles as listed in [here](/power-bi/support/create-support-ticket). 
+
+- Users with a Fabric license or a paid version of Power BI.
+
+> [!NOTE]
+> If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options
+### What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request? 
+
+Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the Business Impact of the request (also known as Severity). Initial Response Times are calculated using business-hours support for subscription-based support. Elevated support plans will contain non–business hours response times.
+
+|Severity level  |Customer's situation  |Initial Response Time  |
+|---------|---------|---------|
+|**Critical**     |**Critical business impact** <br />Customer's business has significant loss or degradation of services and requires immediate attention.   |Unified Core/Advanced: < 1 hour, around the clock <br />Unified Performance: < 30 minutes, around the clock    |
+|**Severity A**    |**Critical business impact** <br />Customer's business has significant loss or degradation of services and requires immediate attention.        |Subscription: < 1 hour, around the clock <br />Premier: < 1 hour, around the clock   |
+|**Severity B**    |**Moderate business impact** <br />Customer's business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner.  |Subscription: < 4 hours <br />Premier: < 2 hours, around the clock   |
+|**Standard**     |**Standard business impact** <br />Customer's business has moderate loss or degradation of services, but work can reasonably continue in an impaired manner. |Unified Core: < 8 hours, around the clock <br />Unified Advanced/Performance: < 4 hours, around the clock    |
+|**Severity C**     |**Minimum business impact** <br />Customer's business is functioning with minor impediments of services.      |Subscription: < 8 hours <br />Premier: < 4 hours    |
+
+### How quickly will you resolve my support request?
+
+Microsoft is committed to assisting you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We will work with you to get the issue resolved as fast as possible. This applies to all levels of support.
+
+### I'm running a non-Microsoft technology with Fabric. What support will I get? 
+
+- Microsoft offers customers the ability to run non-Microsoft technologies along with Fabric. For all scenarios that are eligible for support, Microsoft Support will investigate the issue to find its root cause. help in isolating the issue between the environment and your custom application.
+
+- Full technical support will be provided if the issue is determined to be caused by a Fabric. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
+
+### How do I get support during an outage or Service Interruption Event (SIE)?
+
+- View the service health updates we post on the [Fabric Support page](https://support.fabric.microsoft.com/support). 
+- View the service health in Microsoft 365 at a glance. You can also check out more details and the service health history. 
+- Use Message center in Microsoft 365 to keep track of upcoming changes to features and services. 
+
+- Finally, if service health and Message center do not show any active or recent service issues, contact support.
+
+### Which support plan do I need in order to request a Root-Cause Analysis (RCA)?
+
+Technical support does not conduct RCAs as part of any support experience. If any RCA is conducted, the engineering team will conduct the RCA. RCAs are only provided to published service-related incidents when multiple customers or services are not available. Any RCA created will be published through the Microsoft 365 Message center and will not be emailed directly to Power Platform admins. These published RCAs are only available in English. Any other request for an RCA to a specific scenario impacting your tenant will not be honored by the engineering team.
+
+### How is support provided for Performance issues?
+
+**Premier/Unified Support**:  Depending on the situation, performance issues may be handled via a normal reactive break fix support case or could require an advisory service at the discretion of the Microsoft Dynamics support team. For performance issues having impact in multiple areas of the business, an advisory service is required to investigate at a broader level. For isolated performance issues impacting a specific business function (i.e. Posting Sales Orders), these scenarios will start as a break-fix support case to troubleshoot to determine the cause. The Microsoft Dynamics support team will invest up to 4 hours of time on a break fix case to assist. If after 4 hours, we have not yet resolved the issue, an advisory case, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.  If at any point it is determined that the cause points to custom code, partner or ISV software, something environmental or anything else outside of core Microsoft code, the Microsoft Dynamics Support team will provide evidence that supports this in order for the Customer/Partner to proceed with further investigation and resolution of the problem.
+
+**Non-premier**: Advisory services are not included in support plans outside of Premier or Unified.  We recommend that you consult a partner or the community forums for additional assistance.
+
+### Does Microsoft provide support for Data Corruption?
+
+Data may become corrupt due to a variety of reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft does not provide assistance for correcting damaged data.  Note that per the Service Provider License Agreement (SPLA), Microsoft does not have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
+
+### What happens if the issue can not be reproduced or has to do with customized databases?
+
+In scenarios where a problem is not able to be reproduced in a standard non-modified Dynamics installation, the Microsoft Dynamics support team will invest best effort support up to 4 hours of time on a break fix case to assist. If after 4 hours, we have not yet identified the repro steps of an issue, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.
+
+
+
+
 
 > [!Note] 
 > If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
@@ -101,3 +245,4 @@ Contact your Microsoft Customer Account Manager for details. If you don't alread
 
 * [Help and support tenant settings](/fabric/admin/service-admin-portal-help-support)
 * [Find the right Power BI training for you](/training/powerplatform/power-bi?WT.mc_id=powerbi_docs-link)
+
