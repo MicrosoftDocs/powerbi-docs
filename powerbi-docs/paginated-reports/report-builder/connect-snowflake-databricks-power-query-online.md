@@ -135,15 +135,15 @@ When you're done with the report design, you can save the report to your local m
 
 ## Considerations and limitations
 
-- Only one dataset per M query is supported unless the other data source is **Enter data**. 
+- Only one RDL dataset per M query is supported. 
 - The last query in the **Queries** window in the Power Query editor is used to generate the RDL dataset.  
-- Gateway data sources aren't supported even though you connect in Mashup Editor. 
-- In the Power BI service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
+- Gateway data sources aren't supported even though you connect in Mashup Editor.  
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
-- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render. 
+- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
 
 ## Related content  
 
 - [Power BI Report Builder](../report-builder-power-bi.md)
 - [Intro to report data in Power BI Report Builder](../report-data/report-data.md)
 - [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md)
+- [Authentication in Power Query Online](https://learn.microsoft.com/en-us/power-query/connection-authentication-pqo)
