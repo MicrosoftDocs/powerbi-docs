@@ -4,11 +4,11 @@ After you've created your roles, test the results of the roles within Power BI D
 
 1. From the **Modeling** tab, select **View as**.
 
-    ![Screenshot of the Modeling tab, highlighting View as.](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+    ![Screenshot of the Modeling tab, highlighting View as.](/power-bi/includes/media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
     The **View as roles** window appears, where you see the roles you've created.
 
-    ![Screenshot of the View as roles window with None selected.](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    ![Screenshot of the View as roles window with None selected.](/power-bi/includes/media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
 1. Select a role you created. Then choose **OK** to apply that role.
 
@@ -16,7 +16,7 @@ After you've created your roles, test the results of the roles within Power BI D
 
 1. You can also select **Other user** and supply a given user.
 
-    ![Screenshot of the View as roles window with an example user entered.](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+    ![Screenshot of the View as roles window with an example user entered.](/power-bi/includes/media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 
    It's best to supply the User Principal Name (UPN) because that's what the Power BI service and Power BI Report Server use.
 
