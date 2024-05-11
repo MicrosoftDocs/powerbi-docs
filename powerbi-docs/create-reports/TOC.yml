@@ -918,7 +918,7 @@
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
-      - name: Connect to Snowflake and Databricks
+      - name: Connect via Get Data
         href: ../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md
       - name: Support for ODBC data sources
         href: ../paginated-reports/paginated-reports-odbc-support.md
