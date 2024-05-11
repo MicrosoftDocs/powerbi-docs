@@ -149,4 +149,4 @@ When you're done with the report design, you can save the report to your local m
 - [Power BI Report Builder](../report-builder-power-bi.md)
 - [Intro to report data in Power BI Report Builder](../report-data/report-data.md)
 - [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md)
-- [Authentication in Power Query Online](https://learn.microsoft.com/en-us/power-query/connection-authentication-pqo)
+- [Authentication in Power Query Online](/power-query/connection-authentication-pqo)
