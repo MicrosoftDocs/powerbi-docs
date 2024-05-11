@@ -62,6 +62,9 @@ Follow these steps to connect to a data source using Power Query Online:
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png" alt-text="Screenshot showing a new merged table." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png":::
 
 1. Select **Create** to add the data source and the dataset to Power BI Report Builder. You see a success message. Select **OK** for the dataset and data source to be created. 
+
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/send-to-odsp.png" alt-text="Screenshot showing otions to Send to OneDrive or SharePoint.":::
+
 1. You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under **Data Sources** and **Datasets**, respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-created.png" alt-text="Screenshot showing the new table.":::
