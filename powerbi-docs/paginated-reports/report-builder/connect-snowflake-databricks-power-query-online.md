@@ -121,11 +121,11 @@ Follow these steps:
 
     b. Get the shareable cloud connection information.
    
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing scc location.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing shareable cloud connection location.":::
 
 1. When you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).  
 
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/send-to-odsp.png" alt-text="Screenshot showing otions to Send to OneDrive or SharePoint.":::
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/send-to-odsp.png" alt-text="Screenshot showing options to Send to OneDrive or SharePoint.":::
 
 ## Next steps 
 
