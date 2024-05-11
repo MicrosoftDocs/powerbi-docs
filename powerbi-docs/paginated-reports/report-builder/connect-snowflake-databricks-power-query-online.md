@@ -1,7 +1,7 @@
 ---
 title: "Connect to Snowflake and Databricks with Power Query Online (Preview)"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 04/23/2024
+ms.date: 05/10/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
