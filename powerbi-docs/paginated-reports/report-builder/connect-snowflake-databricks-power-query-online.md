@@ -63,8 +63,6 @@ Follow these steps to connect to a data source using Power Query Online:
 
 1. Select **Create** to add the data source and the dataset to Power BI Report Builder. You see a success message. Select **OK** for the dataset and data source to be created. 
 
-    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/send-to-odsp.png" alt-text="Screenshot showing otions to Send to OneDrive or SharePoint.":::
-
 1. You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under **Data Sources** and **Datasets**, respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-created.png" alt-text="Screenshot showing the new table.":::
@@ -115,17 +113,19 @@ Now that you have built your paginated report and publish it to the Power BI ser
 
 Follow these steps:
 
-1. Locate the name of the shareable cloud connection. To do this,
+1. To locate the name of the shareable cloud connection:
 
     a. Right-click the dataset and select **Edit Mashup**.
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
-    a. Get the shareable cloud connection information
+    a. Get the shareable cloud connection information.
    
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing scc location.":::
 
 1. When you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).  
+
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/send-to-odsp.png" alt-text="Screenshot showing otions to Send to OneDrive or SharePoint.":::
 
 ## Next steps 
 
