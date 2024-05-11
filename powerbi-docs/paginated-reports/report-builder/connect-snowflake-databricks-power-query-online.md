@@ -119,7 +119,7 @@ Follow these steps:
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
-    a. Get the shareable cloud connection information.
+    b. Get the shareable cloud connection information.
    
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing scc location.":::
 
