@@ -105,9 +105,9 @@ If the ISV application is running on a different tenant than the visual consumer
 
   Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent). Replace the **tenant-wide admin consent URL** with the respective link for each cloud:
 
-  * **COM**: `https://login.microsoftonline.com/{organization}/adminconsent?client_id={clientId}`
+  * **COM** and **GCC**: `https://login.microsoftonline.com/{organization}/adminconsent?client_id={clientId}`
   * **CN**: `https://login.partner.microsoftonline.cn/{organization}/adminconsent?client_id={clientId}`
-  * **GCC**, **GCCHIGH** and **DOD**: `https://login.microsoftonline.us/{organization}/adminconsent?client_id={clientId}`
+  * **GCCHIGH** and **DOD**: `https://login.microsoftonline.us/{organization}/adminconsent?client_id={clientId}`
 
 * Interactive consent:
 
