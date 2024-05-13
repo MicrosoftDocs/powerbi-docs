@@ -50,11 +50,12 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 ## Change the environment in which your flow is created
 
-To select your preferred environment for creating your flow, use the environment picker in the Power Automate visual. This includes environments where you have any built-in security role, as well as any environments where you are a co-owner of one or more flows. If you cannot find your preferred environment, learn more about the [requirements for accessing environments in product experiences]
+To select your preferred environment for creating your flow, use the environment picker in the Power Automate visual. This includes environments where you have any built-in security role, as well as any environments where you are a co-owner of one or more flows. If you cannot find your preferred environment, learn more about the requirements for [accessing environments in product experiences](/power-platform/admin/troubleshoot-missing-environments)
 
 
+![User's image](media/power-bi-automate-visual/image2.png)
 
-![User's image](media/power-bi-automate-visual/image1.png)
+
 
 ## Edit the flow
 
