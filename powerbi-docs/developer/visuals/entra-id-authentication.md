@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/14/2024
+ms.date: 05/12/2024
 
 #customer intent: As a <role>, I want <what> so that <why>.
 ---
@@ -30,9 +30,9 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
 1. Navigate to the respective Azure portal and go to **App registrations**.
 
-    * [**COM (required)**](https://portal.azure.com/) 
+    * [**COM (required)** and **GCC**](https://portal.azure.com/)
     * [**CN**](https://portal.azure.cn/)
-    * [**GCC**, **GCCHIGH**, and **DOD**](https://portal.azure.us/)
+    * [**GCCHIGH** and **DOD**](https://portal.azure.us/)
 
 1. Select **+ New Registration**
 
@@ -105,9 +105,9 @@ If the ISV application is running on a different tenant than the visual consumer
 
   Follow the instructions in [Grant tenant-wide admin consent to an application](/entra/identity/enterprise-apps/grant-admin-consent). Replace the **tenant-wide admin consent URL** with the respective link for each cloud:
 
-  * **COM**: `https://login.microsoftonline.com/{organization}/adminconsent?client_id={clientId}`
+  * **COM** and **GCC**: `https://login.microsoftonline.com/{organization}/adminconsent?client_id={clientId}`
   * **CN**: `https://login.partner.microsoftonline.cn/{organization}/adminconsent?client_id={clientId}`
-  * **GCC**, **GCCHIGH** and **DOD**: `https://login.microsoftonline.us/{organization}/adminconsent?client_id={clientId}`
+  * **GCCHIGH** and **DOD**: `https://login.microsoftonline.us/{organization}/adminconsent?client_id={clientId}`
 
 * Interactive consent:
 
