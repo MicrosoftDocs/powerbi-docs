@@ -49,7 +49,7 @@ The code samples support the following browsers:
 
 ## Prerequisites
 
-Before you start this tutorial, verify that you have following the Power BI and code dependencies:
+Before you start this tutorial, verify that you have the following the Power BI and code dependencies:
 
 * **Power BI dependencies**
 
@@ -383,7 +383,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     g. In the **Installed JREs** window, select the available *jre*, and select **Apply and Close**.
 
-    h. In the **Tomcat Server** window, select **Finish**. You can to see the Tomcat server in the *Servers* tab.
+    h. In the **Tomcat Server** window, select **Finish**. You can see the Tomcat server in the *Servers* tab.
 
 8. Open the project in Eclipse:
 
