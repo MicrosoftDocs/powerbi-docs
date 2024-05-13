@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/09/2023
+ms.date: 05/13/2024
 
 ---
 
@@ -262,7 +262,7 @@ For a Microsoft Entra app to be able to access the Power BI content and APIs, a 
 
 2. Select **Tenant settings** and then scroll down to the **Developer settings** section.
 
-3. Expand **Allow service principals to use Power BI APIs**, and enable this option.
+3. Expand **Service principals can use Fabric APIs**, and enable this option.
 
     :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service.":::
 
