@@ -125,7 +125,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * To host securely embedded content, users must use HTTPS for their top-level page. Using an unsecured host page to access securely embedded content isn't supported.
 
-* The user needs to sign in to view the report whenever they open a new browser window.
+* The user needs to sign in to view the report whenever they open a new browser window or tab.
 
 * For authentication, users need to have popup windows enabled.
 
