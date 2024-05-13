@@ -42,7 +42,7 @@ You can also use *DirectQuery* with Analysis Services, as described in [Using Di
 
 ## Related content
 
-For more information, check ou the following resources:
+For more information, check out the following resources:
 
 * [Semantic model modes in the Power BI service](service-dataset-modes-understand.md)
 
