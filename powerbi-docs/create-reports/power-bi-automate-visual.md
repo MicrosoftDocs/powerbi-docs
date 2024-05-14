@@ -45,14 +45,14 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
    :::image type="content" source="media/power-bi-automate-visual/power-automate-steps.png" alt-text="Screenshot showing Flow button resized and repositioned on the report.":::
-   
-3. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
+
+1. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
 
 ## Change the environment in which your flow is created
 
 To select your preferred environment for creating your flow, use the environment picker in the Power Automate visual. This includes environments where you have any built-in security role, as well as any environments where you are a co-owner of one or more flows. If you cannot find your preferred environment, see the article [Troubleshoot missing environments](/power-platform/admin/troubleshoot-missing-environments) to learn more about the requirements.
 
-:::image type="content" source="media/power-bi-automate-visual/image2.png" alt-text="Screenshot showing selecting a different environment.":::
+:::image type="content" source="media/power-bi-automate-visual/image-2.png" alt-text="Screenshot showing selecting a different environment.":::
 
 ## Edit the flow
 
@@ -127,17 +127,17 @@ If your flow is data contextual, make sure you test how the filter selections in
 1. To test the flow in edit mode of the report, select **Back to report**, then press Ctrl while you select the button to run the flow.
 
    :::image type="content" source="media/power-bi-automate-visual/run-flow-button.png" alt-text="Screenshot shows Select the Run flow button.":::
-   
+
     The button text indicates that the flow has been triggered.
-   
+
 1. To check if the flow has run successfully, select the **More commands (...)** menu > **Details** in the flow that has been triggered:
 
    :::image type="content" source="media/power-bi-automate-visual/entry-point-flow-details-page.png" alt-text="Screenshot shows Select Details on the More options menu.":::
-   
+
 1. On the **Details** page, you can see the **run history** and **status** for the flow:
 
    :::image type="content" source="media/power-bi-automate-visual/details-page-executed-flow.png" alt-text="Screenshot shows See the run history on the Details page.":::
-   
+
 > [!IMPORTANT]
 > You can only run these Power BI flows within the context of a Power BI report. Flows cannot be ran from Power Automate portal.
 To test the flow in edit mode of the report, select Back to report, and then press Ctrl + click on the button to run the flow in the context of the report. You can also navigate to edit mode or to Power Automate to view the run history of the flow and ensure it is running successfully.
@@ -181,4 +181,3 @@ For more information about Power Automate, take a look at the following articles
 - [Export and email a Power BI report with Power Automate](../collaborate-share/service-automate-power-bi-report-export.md)
 - [Get started with Power Automate](/power-automate/getting-started/)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
