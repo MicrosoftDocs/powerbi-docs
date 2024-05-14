@@ -42,11 +42,11 @@ When you create a Power Automate visual in a Power BI report, your end-users can
 
 ---
 
-1. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
+2. Scroll, resize the visual, or select the **Focus mode** icon to see all the instructions.
 
    :::image type="content" source="media/power-bi-automate-visual/power-automate-steps.png" alt-text="Screenshot showing Flow button resized and repositioned on the report.":::
 
-1. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
+3. After you’ve reviewed the instructions, resize the button and place it where you’d like on the report.
 
 ## Change the environment in which your flow is created
 
