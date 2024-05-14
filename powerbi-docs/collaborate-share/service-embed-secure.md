@@ -17,6 +17,9 @@ With the **Embed** option for Power BI reports, you can easily and securely embe
 
 The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals by using a low-code approach that requires only basic HTML and JavaScript knowledge.
 
+> [!IMPORTANT]
+> Due to ongoing Chromium security updates, the **Embed** option no longer works exactly as it used to, and users may be asked to authenticate more than once. To address this, consider creating your own [Power BI embedded solution](/power-bi/developer/embedded/embed-sample-for-your-organization).  
+
 ## How to embed Power BI reports into portals
 
 1. Open a report in the Power BI service.
@@ -122,7 +125,7 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * To host securely embedded content, users must use HTTPS for their top-level page. Using an unsecured host page to access securely embedded content isn't supported.
 
-* The user needs to sign in to view the report whenever they open a new browser window.
+* The user needs to sign in to view the report whenever they open a new browser window or tab.
 
 * For authentication, users need to have popup windows enabled.
 

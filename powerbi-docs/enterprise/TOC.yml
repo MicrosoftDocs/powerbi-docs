@@ -74,11 +74,7 @@
       - name: Purchase Power BI Premium
         href: service-admin-premium-purchase.md   
       - name: Purchase Power BI Premium for testing
-        href: service-admin-premium-testing.md                    
-      - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md                                 
-      - name: Premium capacity load evaluation
-        href: service-premium-concepts.md
+        href: service-admin-premium-testing.md                                                  
       - name: Performance smoothing
         href: service-premium-smoothing.md                    
       - name: Backup and restore Power BI Premium semantic models
@@ -159,8 +155,6 @@
   - name: Automation tools
     expanded: false
     items:
-    - name: Enable service principal authentication for read-only admin APIs
-      href: read-only-apis-service-principal-authentication.md
     - name: PowerShell, REST APIs, and .NET SDK
       href: service-admin-reference.md
     - name: Power BI cmdlets for PowerShell

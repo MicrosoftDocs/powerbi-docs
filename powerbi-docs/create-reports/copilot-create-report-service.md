@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/26/2024
+ms.date: 05/10/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in the Power BI service to create a Power BI report quickly.
@@ -100,6 +100,12 @@ When you're satisfied with the report, you save the report just like any other r
 
 - Select **Edit** to see the **Copilot** button again. 
 
+## Considerations and limitations
+
+There are limitations related to creating pages in specific semantic model scenarios.
+- **Real-Time Streaming Models**: Report pages cannot be created by Copilot for semantic models utilizing real-time streaming.
+- **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services are not supported by page creation.
+  
 ## Next steps
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)

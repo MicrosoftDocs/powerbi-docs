@@ -74,6 +74,13 @@ For more information, see the [unappliedChanges.json schema document](https://gi
 
 Contains the overall definition of a semantic model and core settings.
 
+This file also specifies the supported semantic model definition formats through the 'version' property.
+
+| Version  | Supported formats    |
+|----------|----------------------------|
+| 1.0      | Semantic model definition must be stored as TMSL in the model.bim file. |
+| 4.0 or above | Semantic model definition can be stored as TMSL (model.bim file) or TMDL (\definition folder). |
+
 For more information, see the [definition.pbism schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/dataset/definition.pbidataset.md).
 
 
