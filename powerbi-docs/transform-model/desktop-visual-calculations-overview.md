@@ -15,7 +15,7 @@ LocalizationGroup: Model your data
 > [!NOTE]
 > Visual calculations are currently in  **preview**.
 
-A visual calculation is a DAX calculation that's defined and executed directly on a visual. Visual calculations make it easier to create calculations that were previously hard to create, leading to simpler DAX, easier maintenance, and better performance.
+A visual calculation is a DAX calculation defined and executed directly on a visual. Visual calculations make it easier to create calculations that were previously hard to create, leading to simpler DAX, easier maintenance, and better performance.
 
 Here's an example visual calculation that defines a running sum for **Sales Amount**. Notice that the DAX required is straightforward:
 
@@ -23,17 +23,17 @@ Here's an example visual calculation that defines a running sum for **Sales Amou
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-01.png" alt-text="Screenshot of DAX for visual calculations.":::
 
-A calculation can refer to any data in the visual including columns, measures, or other visual calculations, which removes the complexity of the semantic model and simplifies the process of writing DAX. You can use visual calculations to complete common business calculations such as running sums or moving averages.
+A calculation can refer to any data in the visual including columns, measures, or other visual calculations. This ability removes the complexity of the semantic model and simplifies the process of writing DAX. You can use visual calculations to complete common business calculations such as running sums or moving averages.
 
 Visual calculations differ from the other calculations options in DAX:
 
-* Visual calculations aren't stored in the model, and instead are stored on the visual, which means visual calculations can only refer to what's on the visual. Anything in the model must be added to the visual before the visual calculation can refer to it, freeing visual calculations from being concerned with the complexity of filter context and the model.
+* Visual calculations aren't stored in the model, and instead are stored on the visual. This means visual calculations can only refer to what's on the visual. Anything in the model must be added to the visual before the visual calculation can refer to it, freeing visual calculations from being concerned with the complexity of filter context and the model.
 
 * Visual calculations combine the simplicity of context from calculated columns with the on-demand calculation flexibility from measures.
 
 * Compared to measures, visual calculations operate on aggregated data instead of the detail level, often leading to performance benefits. When a calculation can be achieved either by a new measure or a visual calculation, the latter often leads to better performance.
 
-* Since visual calculations are part of the visual, they can refer to the visual structure which leads to more flexibility.
+* Since visual calculations are part of the visual, they can refer to the visual structure, which leads to more flexibility.
 
 For a more in-depth comparison of ways of adding calculations in Power BI, see [Using calculations options in Power BI Desktop](desktop-calculations-options.md).
 
@@ -86,7 +86,7 @@ In visual calculations edit mode, you can hide fields from the visual just like 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-07.png" alt-text="Screenshot of hiding elements from a visual's view.":::
 
-Hiding fields doesn't remove them from the visual or from the visual matrix, so your visual calculations can still refer to them and continue to work. A hidden field is still shown on the visual matrix but is simply not shown on the resulting visual. It's a recommended practice to only include hidden fields if they're necessary for your visual calculations to work.
+Hiding fields doesn't remove them from the visual or from the visual matrix, so your visual calculations can still refer to them and continue to work. A hidden field is still shown on the visual matrix but is not shown on the resulting visual. It's a recommended practice to only include hidden fields if they're necessary for your visual calculations to work.
 
 ## Using templates
 
@@ -211,7 +211,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
-* [Show items with no data](../create-reports/desktop-show-items-no-data.md) is not available with visual calculations.
+* [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 
 
 ## Next steps
