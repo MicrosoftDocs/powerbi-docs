@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/21/2023
+ms.date: 05/14/2024
 LocalizationGroup: Create reports
 ---
 
 # Work with DAX query view
-
-> [!IMPORTANT]
-> DAX query view is currently in **preview**.
 
 With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries in semantic models.
 
