@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/23/2024
+ms.date: 05/14/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
@@ -29,7 +29,7 @@ The following table shows how various types of connections map to the two primar
 
 Connections using a personal cloud connection come with several limitations. For example, with a personal cloud connection you can only create a single personal cloud connection object to a given data source. All semantic models that connect to the data source use the same personal cloud connection object, so if you change the credentials of the personal cloud connection, all semantic models using that personal cloud connection are affected. Often that's not a desired outcome.
 
-Another limitation of personal cloud connection is that they can't be shared with others, so other users can't bind their semantic models and paginated reports to the personal cloud connection you own; users must maintain their own personal cloud connections. 
+Another limitation of a personal cloud connection is that they can't be shared with others, so other users can't bind their semantic models and paginated reports to the personal cloud connection you own; users must maintain their own personal cloud connections. 
 
 Shareable connections have no such limitations, and provide for more streamlined, more flexible connection management, including the following:
 
@@ -62,6 +62,17 @@ A pane appears called **New connection** and automatically populates the configu
 
 Enabling the creation of new connections makes it easy to create separate shareable cloud connections for individual semantic models, if needed. You can also display the connection management page from anywhere in the Power BI service by selecting the **Settings** gear in the upper right corner of the Power BI service, then select **Manage connections and gateways**. 
 
+## Default connection settings
+
+When connecting to a data source, your Microsoft Entra Single Sign-On (SSO) credentials are used by default.
+
+You can also use your shareable cloud connection settings instead of your SSO credentials to connect a semantic model to a data source, and thereby retain the settings you configured for that shareable cloud connection. This enables you to bind the data source to the shareable cloud connection, and override the default SSO connection for that data source.
+
+To select your shareable cloud connection instead of your default SSO settings, select the shareable cloud connection in the **Maps to:** drop-down for the data source to which you want your semantic model to connect, as shown in the following image:
+
+:::image type="content" source="media/service-connect-cloud-data-sources/service-connect-cloud-data-sources-06.png" alt-text="Screenshot of using a shareable cloud connection instead of the default single sign-on credentials.":::
+
+If you don't have a shareable cloud connection, you can select *Create a connection* and create a new connection, as described in the previous section of this article.
 
 ## Using shareable cloud connections with paginated reports
 
