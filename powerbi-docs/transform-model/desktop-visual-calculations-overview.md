@@ -166,6 +166,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [:::no-loc text="FIRST":::](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – :::no-loc text="FIRST":::([Profit]) | [INDEX(1)](/dax/index-function-dax) |
 | [:::no-loc text="ISATLEVEL":::](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = :::no-loc text="ISATLEVEL":::([Fiscal Year]) | N/A |
 | [:::no-loc text="LAST":::](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – :::no-loc text="LAST":::([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
+| [:::no-loc text="LOOKUP":::](/dax/lookup-function-dax) | Retrieve value from a cell in the visual matrix | :::no-loc text="LOOKUP":::([Sales Amount], [Color], "Red", [Fiscal Year], "2024") | N/A |
 | [:::no-loc text="MOVINGAVERAGE":::](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = :::no-loc text="MOVINGAVERAGE":::([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
 | [:::no-loc text="NEXT":::](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – :::no-loc text="NEXT":::([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
 | [:::no-loc text="PREVIOUS":::](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – :::no-loc text="PREVIOUS":::([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
@@ -181,9 +182,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 * The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
   * Line and stacked column chart
   * Treemap
-  * Map
-  * Shape Map
-  * Azure Map
   * Slicer
   * R visual
   * Python visual
@@ -193,10 +191,10 @@ Visual calculations are currently in preview, and during preview, you should be 
   * Smart Narrative
   * Metrics
   * Paginated Report
-  * ArcGIS Maps
   * Power Apps
   * Power Automate
   * Small multiples
+  * Play axis on Scatter chart
 * Performance of this feature isn't representative of the end product.
 * Reuse of visual calculations using copy/paste or other mechanisms isn't available.
 * You can't filter on visual calculations.
