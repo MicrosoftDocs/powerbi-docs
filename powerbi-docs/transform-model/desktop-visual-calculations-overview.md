@@ -60,7 +60,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 
 * The **visual preview** which shows the visual you're working with
 * A **formula bar** where you can add visual calculations
-* The **visual matrix** which shows the data in the visual, and displays the results of visual calculations as you add them
+* The **visual matrix** which shows the data in the visual, and displays the results of visual calculations as you add them. Any styling or theming you apply to your visual is not applied to the visual matrix.
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
 
