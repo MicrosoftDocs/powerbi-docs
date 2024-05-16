@@ -75,7 +75,7 @@ In the Azure portal, Azure administrators can [assign per-user licenses](../ente
 > [!NOTE]
 > Many of the capabilities described in this article aren't available to Fabric administrators. Instead, Fabric administrators must [collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators) who have additional permissions to view (or update) subscriptions, billing, and licenses.
 
-The remainder of this article describes licensing considerations for both [per-user licensing](http://todo-link-to-later-spot-in-this-article) and [capacity licensing](http://todo-link-to-later-spot-in-this-article) when you need to review and manage licensing for your organization.
+The remainder of this article describes licensing considerations for both [per-user licensing](#review-and-manage-per-user-licensing) and [capacity licensing](#review-and-manage-capacity-licensing) when you need to review and manage licensing for your organization.
 
 ## Review and manage per-user licensing
 
@@ -83,7 +83,7 @@ Every user who works with Fabric requires a user license (either Free, Pro, or P
 
 ### Step 1: Review user licenses
 
-It's important that you first understand the current state of user subscriptions and licenses. Your [billing administrators](../enterprise/service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses) can help by confirming any user subscriptions you already currently have, and how user licenses are assigned.
+It's important that you first understand the current state of user subscriptions and licenses. Your [billing administrators](../enterprise/service-admin-licensing-organization.md#which-admins-can-purchase-licenses-and-subscriptions) can help by confirming any user subscriptions you already currently have, and how user licenses are assigned.
 
 Here are two common ways you can compile a list of user subscriptions and licenses.
 
@@ -176,7 +176,7 @@ Here are some questions you should consider.
   - In smaller organizations, you might choose to purchase each subscription (and assign the license) upon request. That approach works well when there's a low volume of requests.
   - In larger organizations, it's often efficient to purchase subscriptions in batches (such as 50 Pro licenses, for example). This approach works well when sufficient funds are available in the budget, and you expect the licenses to be assigned (and used) soon.
 - Do you have an Enterprise Agreement (EA)? For example, your organization procured a Microsoft 365 subscription that includes 500 enterprise [E5 licenses](https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing). In that case, each user that's assigned an E5 license will have a Power BI Pro license (note that [access to individual apps](/microsoft-365/admin/manage/assign-licenses-to-users#change-the-apps-and-services-a-user-has-access-to) can be removed for users when necessary).
-- Is purchasing a centralized function that's handled by one department? Or is [self-service purchasing](http://todo-link-to-SS-purchasing-a-couple-of-sections-lower-in-this-article) permitted?
+- Is purchasing a centralized function that's handled by one department? Or is [self-service purchasing](#decide-whether-self-service-purchasing-is-enabled) permitted?
 
 > [!TIP]
 > We recommend that you prioritize [mentoring and user enablement](fabric-adoption-roadmap-mentoring-and-user-enablement.md) and [user support](fabric-adoption-roadmap-user-support.md) activities. These activities become even more important when licenses are widely distributed to users throughout your organization.
@@ -235,7 +235,7 @@ Here are some other factors to consider.
 
 - Is there an existing organization-wide policy in place for [self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)?
 
-Does [Fabric](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-trial-of-the-power-bi-paid-version) follow the existing organizational policy for self-service purchases and trials?
+Does [Fabric](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial) follow the existing organizational policy for self-service purchases and trials?
 
 - Should purchasing and trials both be enabled, both be disabled, or a combination? The user's experience will depend on how you [combine the settings](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features) for purchasing and trials.
 - Should users that try to purchase a license be directed to a specific page?
@@ -270,7 +270,7 @@ The following topics are actions that might be appropriate.
 Based on the information you've gathered, you might choose to adjust your existing user [subscriptions](/microsoft-365/commerce). For example, you might choose to increase or decrease the quantity of your Pro or PPU subscriptions.
 
 > [!NOTE]
-> Adjustments to your user subscriptions might correlate with other changes to a capacity subscription. [Capacity licensing](http://todo-link-to-later-spot-in-this-article) is covered later in this article.
+> Adjustments to your user subscriptions might correlate with other changes to a capacity subscription. [Capacity licensing](#review-and-manage-capacity-licensing) is covered later in this article.
 
 #### Assign or unassign user licenses
 
@@ -278,7 +278,7 @@ You might need to [assign or unassign](/microsoft-365/admin/manage/assign-licens
 
 #### Take over self-service purchases
 
-If your objective is to centrally manage all subscriptions, you might need to [take over](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins#take-over-a-purchase-or-trial-subscription) a purchase previously made by a self-service user. For more information, see [Decide if self-service purchasing is enabled](http://todo-link-to-earlier-spot-in-this-article).
+If your objective is to centrally manage all subscriptions, you might need to [take over](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins#take-over-a-purchase-or-trial-subscription) a purchase previously made by a self-service user. For more information, see [Decide whether self-service purchasing is enabled](#decide-whether-self-service-purchasing-is-enabled).
 
 #### Adjust tenant settings
 
@@ -303,7 +303,7 @@ You can build on the information captured in [Step 1](#step-1-review-user-licens
 - Snapshot of user license information
 
 > [!TIP]
-> Unless you're a very small organization with very few changes, don't manually document every user license. Instead, use the [Microsoft Graph APIs](/graph/use-the-api) to extract information about subscriptions and licenses regularly. Consider storing a snapshot of the user license data every week or every month. That way, you can compare snapshots to find what's changed. For more information, see [Audit user licenses](http://todo-link-to-later-spot-in-this-article).
+> Unless you're a very small organization with very few changes, don't manually document every user license. Instead, use the [Microsoft Graph APIs](/graph/use-the-api) to extract information about subscriptions and licenses regularly. Consider storing a snapshot of the user license data every week or every month. That way, you can compare snapshots to find what's changed. For more information, see [Audit user licenses](#step-6-audit-user-licenses).
 
 > [!IMPORTANT]
 > Refer to the [Product plans and service plan identifiers](/entra/identity/users/licensing-service-plan-reference) documentation when comparing the Microsoft Graph results to what's displayed in the Microsoft 365 admin center.
@@ -314,11 +314,11 @@ User licenses will need attention on an ongoing basis. The following topics are 
 
 #### Create a process to accept user license requests
 
-You should create a repeatable, documented process for requesting a user license. It typically involves creating an online form. Information about required [prerequisites](http://todo-link-to-earlier-spot-Decide-prerequisites) should be included as well.
+You should create a repeatable, documented process for requesting a user license. It typically involves creating an online form. Information about required [prerequisites](#decide-prerequisites-for-obtaining-a-user-license) should be included as well.
 
 #### Monitor user trials
 
-Every month you should identify users who have started a trial that will soon expire. It's likely that the user will need to have a license assigned. The goal is to avoid a service interruption for these users. For more information, see [User trial auditing](http://todo-link-to-later-spot-in-this-article).
+Every month you should identify users who have started a trial that will soon expire. It's likely that the user will need to have a license assigned. The goal is to avoid a service interruption for these users. For more information, see [User trial auditing](#user-trial-auditing).
 
 #### Automate user license assignments
 
@@ -390,7 +390,7 @@ In addition to user licenses (described earlier in this article), your organizat
 
 ### Step 1: Review capacity subscriptions
 
-It's important that you first understand the current state of capacity subscriptions. Your [billing and license administrators](../enterprise/service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses) can help confirm what capacity subscriptions you have. You might also need to speak with current capacity administrators, or capacity contributors, to get a clear understanding of the purpose of each existing capacity. For more information, see [Manage user permissions](../enterprise/service-admin-premium-manage.md#manage-user-permissions).
+It's important that you first understand the current state of capacity subscriptions. Your [billing and license administrators](../enterprise/service-admin-licensing-organization.md#which-admins-can-purchase-licenses-and-subscriptions) can help confirm what capacity subscriptions you have. You might also need to speak with current capacity administrators, or capacity contributors, to get a clear understanding of the purpose of each existing capacity. For more information, see [Manage user permissions](../enterprise/service-admin-premium-manage.md#manage-user-permissions).
 
 You can compile the current state of your capacity subscriptions and licenses in different ways.
 
@@ -479,7 +479,7 @@ To gain confidence about the capacity size that you'll need, consider doing load
 
 #### Decide needs for scaling up and down
 
-It's important to consider scalability needs during the license planning process because it contributes to cost. For example, you might have needs to occasionally [resize](/fabric/enterprise/scale-capacity) (or pause) an F SKU capacity. Or, you can set up [autoscale](../enterprise/service-premium-auto-scale.md) to handle occasional or unexpected bursts in P SKU capacity usage levels. For more information, see [Resize capacity](http://todo-link-to-later-spot-in-this-article).
+It's important to consider scalability needs during the license planning process because it contributes to cost. For example, you might have needs to occasionally [resize](/fabric/enterprise/scale-capacity) (or pause) an F SKU capacity. Or, you can set up [autoscale](../enterprise/service-premium-auto-scale.md) to handle occasional or unexpected bursts in P SKU capacity usage levels. For more information, see [Resize capacity](#resize-capacity).
 
 > [!TIP]
 > You can think about scalability in two ways.
@@ -578,7 +578,7 @@ If your capacity is regularly overloaded, it indicates that you might need to pu
 
 You should set up the following notifications to be kept informed.
 
-- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications) so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
+- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents) so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
 - Set up [Azure Monitor](/azure/azure-monitor/alerts/alerts-overview) alerts to be notified when certain capacity metrics exceed a threshold. This feature is available for F SKUs, A SKUs, and autoscale for P SKUs.
 
 #### Review and optimize capacity costs
@@ -630,4 +630,4 @@ Here are some actions to identify when to audit subscriptions, trials, and cost 
 
 ## Related content
 
-For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](http://todo-introduction-article-subject-areas-header).
+For more considerations, actions, decision-making criteria, and recommendations to help you with Power BI implementation decisions, see [Power BI implementation planning](powerbi-implementation-planning-introduction.md).
