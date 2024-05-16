@@ -221,6 +221,8 @@
         href: powerbi-implementation-planning-tenant-setup.md
       - name: "User tools and devices"
         href: powerbi-implementation-planning-user-tools-devices.md
+      - name: "Subscriptions, licenses, and trials"
+        href: powerbi-implementation-planning-subscriptions-licenses-trials.md
       - name: "Tenant administration"
         href: powerbi-implementation-planning-tenant-administration.md
       - name: Workspaces
