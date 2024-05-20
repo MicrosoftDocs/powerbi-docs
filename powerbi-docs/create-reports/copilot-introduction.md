@@ -83,9 +83,9 @@ Summarize a Power BI semantic model with Copilot. This summary can help you gain
 
 ### A summary of your report in the Copilot pane
 
-Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
+Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "What is going on with sales in Washington" or "Give me a summary about bike sales"
  
-You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
+You can also pose specific questions about the visualized data on a report and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
 
 :::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
 
