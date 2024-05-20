@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, intro-migration
-ms.date: 06/01/2023
+ms.date: 05/20/2024
 ---
 
 # Plan to migrate .rdl reports to Power BI
