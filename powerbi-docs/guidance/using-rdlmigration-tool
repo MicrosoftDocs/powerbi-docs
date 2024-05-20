@@ -11,7 +11,6 @@ ms.custom: fabric-cat, intro-migration
 ms.date: 05/20/2024
 ---
 
-
 # RdlMigration 
 This tool is designed to help customers migrate SQL Server Reporting Services reports (RDL) from their local server(s) to a Power BI workspace in their tenant.  As part of the migration process, the tool will also:
 
@@ -64,7 +63,7 @@ RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://share
 #### Base url endpoint: 
 This is set in the Reporting Services Configuration Manager under Web Service URL-> Report Server Web Service URL
 
-![image](config-tool-webservice-url.png)
+![Screenshot of RS Config tool showing webservice url](media/using-rdlmigration-tool/config-tool-webservice-url.png)
 
 #### File Path: 
 This refers to the relative path to your file or folder on the report server. If the path references a file, the tool will convert and push only that individual file. If the path references a folder, the tool will convert and try to push all the report files within that folder. This would include any reports contained in the folder and would convert dependencies that might be located in other folders or subfolders (such as Shared DataSources and Shared DataSets). Report in subfolders will not be published.
