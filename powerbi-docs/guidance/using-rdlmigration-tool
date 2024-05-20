@@ -64,7 +64,7 @@ RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://share
 #### Base url endpoint: 
 This is set in the Reporting Services Configuration Manager under Web Service URL-> Report Server Web Service URL
 
-![image](https://user-images.githubusercontent.com/52690905/62327114-9ae5ee00-b464-11e9-9bf1-0fe399bcd152.png)
+![image](config-tool-webservice-url.png)
 
 #### File Path: 
 This refers to the relative path to your file or folder on the report server. If the path references a file, the tool will convert and push only that individual file. If the path references a folder, the tool will convert and try to push all the report files within that folder. This would include any reports contained in the folder and would convert dependencies that might be located in other folders or subfolders (such as Shared DataSources and Shared DataSets). Report in subfolders will not be published.
