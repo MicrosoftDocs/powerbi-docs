@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 3/26/2024
+ms.date: 5/20/2024
 ---
 
 # Power BI Report Builder change log
@@ -35,7 +35,7 @@ Version 15.7.1807.730, released March 24, 2024
 
 - Fixed issue with JPEG files not respecting the EXIF rotation property.
 - Updated to use the last MSAL authentication library functionality.
-- Various accessibilty fixes across all areas of the product.
+- Various accessibility fixes across all areas of the product.
 - Bug fix for Power BI Report Builder freezing during certain operations.
 - Various bug fixes. 
 
