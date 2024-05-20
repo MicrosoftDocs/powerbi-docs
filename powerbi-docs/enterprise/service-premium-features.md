@@ -1,8 +1,8 @@
 ---
 title: Power BI Premium features.
 description: Learn which features are available for Power BI Premium.
-author: KesemSharabi
-ms.author: kesharab
+author: v-halzucati
+ms.author: v-halzucati
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
