@@ -63,7 +63,7 @@ If you're using Power BI Report Server or SQL Server Reporting Services after SQ
 
 ### Migration tool for previous versions of SQL Server
 
-For earlier versions of SQL Server Reporting Services, we recommend that you use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) to help prepare and migrate your reports. This tool was developed by Microsoft to help customers migrate .rdl reports from their SSRS servers to Power BI. It's available on GitHub, and it documents an end-to-end walkthrough of the migration scenario.
+For earlier versions of SQL Server Reporting Services, we recommend that you use the [RDL Migration Tool](using-rdlmigration-tool.md) to help prepare and migrate your reports. This tool was developed by Microsoft to help customers migrate .rdl reports from their SSRS servers to Power BI. It's available on GitHub, and it documents an end-to-end walkthrough of the migration scenario.
 
 The tool automates the following tasks:
 
@@ -101,7 +101,7 @@ Your .rdl reports can be migrated from your report servers to Power BI. Each mig
 
 The following report server item types, however, can't be migrated to Power BI:
 
-- **Shared data sources** and **shared datasets**: The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets into embedded data sources and datasets, provided that they're using supported data sources.
+- **Shared data sources** and **shared datasets**: The [RDL Migration Tool](using-rdlmigration-tool.md) automatically converts shared data sources and shared datasets into embedded data sources and datasets, provided that they're using supported data sources.
 - **Resources** such as image files
 - **Linked reports** migrate, whether the *parent* report that links to them is selected for migration or no. In the Power BI service, they're regular .rdl reports. 
 - **KPIs**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only
@@ -162,7 +162,7 @@ Anyone with permission to access to the report server instance and the Power BI 
 There are three options for automated migration. You can use:
 
 - For Power BI Report Server and SQL Server 2022, see [Publish .rdl files to Power BI](publish-reporting-services-power-bi-service.md).
-- For previous versions of Reporting Services, use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) in GitHub.
+- For previous versions of Reporting Services, use the [RDL Migration Tool](using-rdlmigration-tool.md) in GitHub.
 - The publicly available APIs for Power BI Report Server, Reporting Services, and Power BI
 
 You can also use the publicly available Power BI Report Server, Reporting Services, and Power BI APIs to automate the migration of your content. While the RDL Migration Tool already uses these APIs, you can develop a custom tool suited to your exact requirements.
@@ -202,7 +202,7 @@ The Post-migration phase is crucial for reconciling any issues, and that you add
 For more information about this article, check out the following resources:
 
 - [Publish .rdl files to Power BI from Power BI Report Server and SQL Server Reporting Services](publish-reporting-services-power-bi-service.md)
-- [RDL Migration Tool for older versions of Reporting Services](https://github.com/microsoft/RdlMigration)
+- [RDL Migration Tool for older versions of Reporting Services](using-rdlmigration-tool.md)
 - [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
