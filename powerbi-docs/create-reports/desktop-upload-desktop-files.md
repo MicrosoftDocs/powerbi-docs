@@ -66,8 +66,7 @@ This process is straightforward, but you should know the following:
 ## Publish to a folder in a workspace (preview)
 The ability to publish reports and semantic models from Power BI Desktop into folders in a workspace is now in preview! 
 
-[Learn more about the feature and how to enable it](learn.microsoft.com/en-us/fabric/get-started/workspaces-folders).
-
+[Learn more about the feature and how to enable it](/fabric/get-started/workspaces-folders).
 
 ## Related content
 
