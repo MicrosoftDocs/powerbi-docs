@@ -76,7 +76,7 @@ Here are some examples of high-level prompts to get you started:
 - Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
 - Create a page to compare the cost and material of each product and their impact on production.
 
-If you need help writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
+If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
 
 ### A summary of your report in the Copilot pane
 
@@ -116,7 +116,7 @@ To access Copilot in Power BI service, the workspace has to be running on at lea
 
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
-- In Power BI Apps, free users can use the Copliot pane (as long as the workspace is compatible with Copilot).
+- In Power BI Apps, free users can use the Copilot pane (as long as the workspace is compatible with Copilot).
 
 ## Power BI Desktop
 
