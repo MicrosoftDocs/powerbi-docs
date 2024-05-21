@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/09/2024
+ms.date: 05/21/2024
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -80,10 +80,13 @@ The **Database** category provides the following data connections:
 * Essbase
 * AtScale Models
 * Actian (Beta)
+* Amazon Athena
 * AtScale cubes
 * BI Connector
 * Data Virtuality LDW
 * Denodo
+* Dremio Software
+* Dremio Cloud
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -94,9 +97,8 @@ The **Database** category provides the following data connections:
 * MarkLogic
 * MongoDB Atlas SQL (Beta)
 * TIBCO® Data Virtualization
-* Amazon Athena
-* Dremio Software
-* Dremio Cloud
+* Exact Online Premium (Beta)
+
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File** > **Options and settings** > **Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned previously and want to use them, check your **Preview Features** settings. Also note that any data source marked as **Beta** or **Preview** has limited support and functionality, and shouldn't be used in production environments.
@@ -177,7 +179,6 @@ The **Online Services** category provides the following data connections:
 * Zendesk (Beta)
 * Asana (Beta)
 * Assemble Views
-* Autodesk Construction Cloud
 * Automation Anywhere
 * Automy Data Analytics (Beta)
 * CData Connect Cloud
@@ -186,12 +187,12 @@ The **Online Services** category provides the following data connections:
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM
+* FactSet Analytics
 * Palantir Foundry
 * Funnel
 * Hexagon PPM Smart® API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
-* Planview OKR (Beta)
 * Planview ProjectPlace
 * Product Insights (Beta)
 * Profisee
@@ -204,8 +205,10 @@ The **Online Services** category provides the following data connections:
 * Zoho Creator
 * Autodesk Construction Cloud
 * Databricks
-* FactSet Analytics
+* Planview OKR (Beta)
 * Viva Insights
+
+* Autodesk Construction Cloud
 
 
 ### Other data sources
@@ -228,12 +231,12 @@ The **Other** category provides the following data connections:
 * Amazon OpenSearch Service (Beta)
 * Anaplan
 * Solver
-* BQE Core
 * Bloomberg Data and Analytics
-* Celonis EMS (Beta)
 * Cherwell (Beta)
 * CloudBluePSA (Beta)
 * Cognite Data Fusion
+* Delta Sharing
+* Emplifi Metrics (Beta)
 * EQuIS
 * FactSet RMS (Beta)
 * FHIR
@@ -248,8 +251,11 @@ The **Other** category provides the following data connections:
 * Roamler (Beta)
 * SIS-CC SDMX (Beta)
 * Shortcuts Business Insights (Beta)
+* SingleStore Direct Query Connector
 * Siteimprove
 * Socialbakers Metrics 1.1.0 (Beta)
+* SolarWinds Service Desk
+* Starburst Enterprise
 * SumTotal
 * SurveyMonkey
 * Microsoft Teams Personal Analytics (Beta)
@@ -261,15 +267,15 @@ The **Other** category provides the following data connections:
 * Zucchetti HR Infinity (Beta)
 * BitSight Security Ratings
 * BQE Core
-* CloudBluePSA (Beta)
-* Delta Sharing
+* Celonis EMS
 * Eduframe (Beta)
-* Emplifi Metrics (Beta)
-* SingleStore Direct Query Connector
-* SolarWinds Service Desk
-* Starburst Enterprise
-* inwink (Beta)
+* Wolters Kluwer CCH Tagetik (Beta)
+* LinkedIn Learning (Beta)
+* OneStream (Beta)
 * Blank Query
+
+
+
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Microsoft Entra ID.
