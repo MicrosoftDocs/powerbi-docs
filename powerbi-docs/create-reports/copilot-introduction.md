@@ -1,5 +1,5 @@
 ---
-title: Overview of Copilot for Power BI (preview) 
+title: Overview of Copilot for Power BI 
 description: Read all about how Copilot works in Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -12,7 +12,7 @@ LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
 
-# Overview of Copilot for Power BI (preview)
+# Overview of Copilot for Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
