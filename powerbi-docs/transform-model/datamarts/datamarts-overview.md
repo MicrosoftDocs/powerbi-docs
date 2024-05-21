@@ -17,7 +17,7 @@ Business users rely heavily on centrally governed data sources built by informat
 
 Datamarts help bridge the gap between business users and IT. Datamarts are self-service analytics solutions, enabling users to store and explore data that is loaded in a fully managed database. Datamarts provide a simple and optionally no-code experience to ingest data from different data sources, extract transform and load (ETL) the data using Power Query, then load it into an Azure SQL database that's fully managed and requires no tuning or optimization. 
 
-Once data is loaded into a datamart, you can additionally define relationships and policies for business intelligence and analysis. Datamarts automatically generate a semantic model or semantic model, which can be used to create Power BI reports and dashboards. You can also query a datamart using a T-SQL endpoint or using a visual experience.
+Once data is loaded into a datamart, you can additionally define relationships and policies for business intelligence and analysis. Datamarts automatically generate a dataset or semantic model, which can be used to create Power BI reports and dashboards. You can also query a datamart using a T-SQL endpoint or using a visual experience.
 
 :::image type="content" source="media/datamarts-overview/datamarts-overview-01.png" alt-text="Diagram that shows datamarts and power B I relationship." lightbox="media/datamarts-overview/datamarts-overview-01.png":::
 
