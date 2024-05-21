@@ -27,7 +27,7 @@ Version 15.7.1809.28, released May 20, 2024
 
 ### Features
 - Added support for subfolders in workspaces on Power BI service.
-- Added RDL Migration Tool to help migrate reports. This can be found in the RdlMigration folder of your installation directory. More information can be found [here](https://aka.ms/MigrateToPowerBI).
+- Added RDL Migration Tool to help migrate reports. This can be found in the RdlMigration folder of your installation directory. More information can be found in the article [Plan to migrate .rdl reports to Power BI](https://aka.ms/MigrateToPowerBI).
 
 ## March 2024
 
