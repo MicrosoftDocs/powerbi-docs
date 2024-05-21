@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/14/2023
+ms.date: 05/13/2024
 ---
 
 # Tutorial: Build a bar chart
@@ -40,7 +40,7 @@ Creating a bar chart visual involves the following steps:
 
 ## Create a new project
 
-The purpose of this tutorial is to help you understand how a visual is structured and written. You can follow these instructions to create a bar code visual from scratch, or you can [clone the source code repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/barChartTutorial) and use it to follow along without creating your own visual.
+The purpose of this tutorial is to help you understand how a visual is structured and written. You can follow these instructions to create a bar code visual from scratch, or you can [clone the source code repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/tree/main) and use it to follow along without creating your own visual.
 
 ## [Create a new visual](#tab/CreateNewVisual)
 
@@ -64,9 +64,9 @@ The purpose of this tutorial is to help you understand how a visual is structure
 
     The *tsconfig.json* "files" object points to the file where the main class of the visual is located.
 
-    Your final *tsconfig.json* file should look like [this](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/tsconfig.json).
+    Your final *tsconfig.json* file should look like [this](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/tsconfig.json).
 
-4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *package.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/package.json).
+4. The [*package.json*](visual-project-structure.md#packagejson) file contains a list of project dependencies. Replace your *package.json* file with [this one](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/package.json).
 
 ## [Clone source code](#tab/CloneSourcecode)
 
@@ -205,13 +205,13 @@ Replace the content of the "objects" section with the following code:
 
 Save the *capabilities.json* file.
 
-Your final *capabilities* file should look like [the one in this example](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/capabilities.json).
+Your final *capabilities* file should look like [the one in this example](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/capabilities.json).
 
 ## Visual API
 
 All visuals start with a class that implements the `IVisual` interface. The *src/visual.ts* file is the default file that contains this class.
 
-In this tutorial, we call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and save it to the */src* folder, if you didn't do so already. In this section, we go through this file in detail and describe the various sections.
+In this tutorial, we call our `IVisual` file *barChart.ts*. [Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts) and save it to the */src* folder, if you didn't do so already. In this section, we go through this file in detail and describe the various sections.
 
 ### Imports
 
@@ -534,7 +534,7 @@ The final method in the `IVisual` function is [`getFormattingModel`](visual-api.
 
 To build a formatting model, the developer should be familiar with all its components. Check out the components of the format pane in [`Format Pane`](./format-pane.md). Check out `getFormattingModel` API of the [`FormattingModel utils`](./utils-formatting-model.md) in the [formatting model utils repository](https://github.com/microsoft/powerbi-visuals-utils-formattingmodel).
 
-[Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChartSettingsModel.ts) and save it to the */src* folder.
+[Download the file](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChartSettingsModel.ts) and save it to the */src* folder.
 Declare formatting properties and their values in a formatting settings class:
 
 ```typescript
@@ -727,7 +727,7 @@ The `colorPalette` service, in the `createSelectorDataPoints` function, manages 
 For more detailed instructions on how to add color to your bar chart go to [Add colors to your Power BI visual](add-colors-power-bi-visual.md).
 
 > [!NOTE]
-> Verify that your final *barChart.ts* file looks like this [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts), or download the [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/barChartTutorial/src/barChart.ts) and use it to replace your file.
+> Verify that your final *barChart.ts* file looks like this [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts), or download the [*barChart.ts* source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/main/src/barChart.ts) and use it to replace your file.
 
 ## Test the visual
 

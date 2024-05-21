@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 05/03/2024
+ms.date: 05/17/2024
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
@@ -17,6 +17,11 @@ This article shows how you can use artificial intelligence (AI) with dataflows. 
 * Cognitive Services
 * Automated machine learning
 * Azure Machine Learning Integration
+
+> [!IMPORTANT]
+> Creation of Power BI Automated Machine Learning (AutoML) models for dataflows v1 has been retired, and is no longer available. Customers are encouraged to migrate your solution to the AutoML feature in Microsoft Fabric. For more information, see [the retirement announcement](https://powerbi.microsoft.com/blog/announcing-the-deprecation-of-creation-of-machine-learning-models-in-power-bi-using-dataflows-v1/). 
+
+
 
 ## Cognitive Services in Power BI
 
