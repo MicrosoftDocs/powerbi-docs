@@ -23,7 +23,7 @@ To configure credentials programmatically for Power BI, follow the steps in this
 
 ## Update the credentials flow for data sources
 
-1. Discover the data sources of the semantic model by calling [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup). The response body for each data source contains the type, connection details, gateway, and data source ID.
+1. Discover the semantic model's data sources by calling [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup). The response body for each data source contains the type, connection details, gateway, and data source ID.
 
     ```csharp
     // Select a datasource
@@ -236,5 +236,4 @@ To discover gateways that are bindable, use [Discover Gateways](/rest/api/power-
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Power BI REST APIs](/rest/api/power-bi/)
+* [Power BI REST APIs](/rest/api/power-bi/)
