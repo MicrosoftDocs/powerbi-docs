@@ -51,7 +51,7 @@ The table below lists the Power BI operations. It provides a short description f
 > [What is Power BI Premium?](service-premium-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium architecture](service-premium-architecture.md)
+> [Power BI Premium architecture](/fabric/security/security-fundamentals)
 
 > [!div class="nextstepaction"]
 > [Managing Premium capacities](service-premium-capacity-manage.md)
