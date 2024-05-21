@@ -63,8 +63,6 @@
   - name: Premium
     expanded: false
     items:
-      - name: Power BI Premium features
-        href: service-premium-features.md
       - name: What is Power BI Premium?
         href: service-premium-what-is.md
       - name: Premium architecture

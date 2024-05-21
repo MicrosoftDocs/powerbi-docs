@@ -1,14 +1,14 @@
 ---
 title: "Power BI Paginated Reports in a Day course"
 description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
-author: data-goblin
-ms.author: v-kurtbuhler
-ms.reviewer: maggies
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maggies, nisrinivasan
 ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
-ms.date: 06/26/2023
+ms.date: 05/14/2024
 ---
 
 # Power BI Paginated Reports in a Day course
@@ -85,11 +85,15 @@ The [course of 27 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 You can download and set up an attendee kit, which consists of the presentation content and nine hands-on labs:
 
+> [!IMPORTANT]
+> When you download and extract the course content, you must update the database connection string. Open the **MyEnvironment** folder and modify the content of the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net
+
 1. Use [this link](https://aka.ms/priad-en) to download the _English_ language attendee kit (.zip) locally to your PC (Windows 8, or later). Alternatively, use [this link](https://aka.ms/priad-student) to download the _localized_ attendee kit (.zip) locally to your PC (Windows 8, or later).
 1. Open the file properties of the zip file, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Create a root course folder. We recommend you name it something like "C:\Training". Remember this location, because you'll need to access the course files during the labs. All lab documents refer to this location as **&lt;CourseFolder&gt;**.
 1. Extract the **PowerBIPRIAD-Attendee.zip** file contents to your root course folder.
 1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A** folder, open the PDF lab document and follow the lab instructions.
+1. Open the **&lt;CourseFolder&gt;\PowerBIPRIAD\MyEnvironment** folder, and then open the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net - then save the file.
 
 > [!NOTE]
 > In the localized attendee kit, you will find documents for the following eight languages:

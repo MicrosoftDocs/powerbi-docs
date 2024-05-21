@@ -7,14 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 11/21/2023
+ms.date: 05/14/2024
 LocalizationGroup: Create reports
 ---
 
 # Work with DAX query view
-
-> [!IMPORTANT]
-> DAX query view is currently in **preview**.
 
 With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries in semantic models.
 
@@ -55,15 +52,15 @@ Let's take a closer look at elements in the ribbon:
 
 #### Format query
 
-Click the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and additional lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
+Select the **Format query** ribbon button or use SHIFT+ALT+F to format the current query. The query is indented with tabs. DAX functions are changed to UPPERCASE, and additional lines are added. Formatting your DAX query is considered a best practice and improves the DAX query readability. The formatting also indents in such a way that you can collapse and expand sections of the query.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-format-query.png" alt-text="Screenshot of the Format query button.":::
 
 #### Comment and Uncomment
 
-Click the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This comments out the lines and when the DAX query is run, those lines are ignored.
+Select the **Comment** ribbon button to add a double backslash (**//**) to the beginning of the line where the cursor is or all the selected lines. This comments out the lines and when the DAX query is run, those lines are ignored.
 
-Click the **Uncomment** ribbon button to remove **//** at the beginning of any line where the cursor is, or all the selected lines. It doesn't work on lines where multiple line comment notation is added.
+Select the **Uncomment** ribbon button to remove **//** at the beginning of any line where the cursor is, or all the selected lines. It doesn't work on lines where multiple line comment notation is added.
 
 You can also use CTRL+/ to toggle between comment and uncomment.
 
@@ -71,17 +68,17 @@ You can also use CTRL+/ to toggle between comment and uncomment.
 
 #### Find and Replace
 
-Click on the **Find** ribbon button or use CTRL+F to search for text in the DAX query editor. Find includes options to match case, match whole word, use a regular expression, and cycle through all matches for the current query. You can also click the chevron to the left of the **Find** box to enter Replace.
+Select the **Find** ribbon button or use CTRL+F to search for text in the DAX query editor. Find includes options to match case, match whole word, use a regular expression, and cycle through all matches for the current query. You can also select the chevron to the left of the **Find** box to enter Replace.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-find.png" alt-text="Screenshot of the find button in the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-find.png":::
 
-Click on the **Replace** button in the ribbon or use CTRL+H to search for and replace text in the DAX query editor. Replace includes options to preserve the case and replace one at a time or all at once.
+Select the **Replace** button in the ribbon or use CTRL+H to search for and replace text in the DAX query editor. Replace includes options to preserve the case and replace one at a time or all at once.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-replace.png" alt-text="Screenshot of the Replace capability in the DAX query view ribbon." lightbox="media/dax-query-view/dax-query-view-replace.png":::
 
 #### Command palette
 
-Click the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for additional DAX query editor actions and see their associated keyboard shortcuts.
+Select the **Command palette** ribbon button or use CTRL+ALT+P to open the command palette box. You can search for additional DAX query editor actions and see their associated keyboard shortcuts.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-command-palette.png" alt-text="Screenshot of the DAX query view command palette.":::
 
@@ -107,7 +104,7 @@ Type in your query and get help with suggestions and Intellisense while editing.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-intellisense.png" alt-text="Screenshot of the DAX query editor intellisense.":::
 
-Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the intellisense option. Clicking ESC closes any of the overlays.
+Use ENTER or TAB to add the highlighted intellisense, or SHIFT+ENTER or ALT+ENTER to move to another line without adding the intellisense option. Selecting ESC closes any of the overlays.
 
 #### Hover to see measure formulas
 
@@ -115,9 +112,9 @@ When a measure is included in the DAX query, you can hover on it to see the form
 
 :::image type="content" source="media/dax-query-view/dax-query-view-measure.png" alt-text="Screenshot of the hover to see measure formula feature.":::
 
-#### Click to see measure lightbulb quick actions
+#### Select to see measure lightbulb quick actions
 
-Clicking on a measure in an EVALUATE statement in a query without a DEFINE statement shows the quick actions lightbulb. Click on **Define** or **Define with references** to create a DEFINE statement with this measure’s formula with or without the reference measure DAX formulas.
+Selecting on a measure in an EVALUATE statement in a query without a DEFINE statement shows the quick actions lightbulb. Select **Define** or **Define with references** to create a DEFINE statement with this measure’s formula with or without the reference measure DAX formulas.
 
 #### Update model measures using CodeLens  
 
@@ -128,7 +125,7 @@ Using DEFINE MEASURE is helpful when creating measures. You can edit multiple me
 The lightbulb quick actions and CodeLens can be used together in a complete workflow:
 
 1. In the context menu of a measure, choose Quick queries, then Evaluate to have the query created for you in a new Query tab.
-1. Click on the measure in the query to Define or Define with references, adding the DEFINE statement.
+1. Select the measure in the query to Define or Define with references, adding the DEFINE statement.
 1. Make expression updates to the measure, then run the DAX query to show the change.
 1. When the change appears as expected, then use the CodeLens Update model: Overwrite measure to save it back to the model.
 
@@ -172,7 +169,7 @@ Queries can run in the background allowing you to continue working on other quer
 
 #### Saving of DAX queries
 
-DAX query view query tabs are saved in the file when you save from Power BI Desktop, so you can continue where you left off when you open the file again. If you use the developer mode to save a Power BI project, each query tab is included as a .dax file in the DAXQueries folder of the semantic model folder. Learn more at the [Power BI deverloper mode documenation](/power-bi/developer/projects/).
+DAX query view query tabs are saved in the file when you save from Power BI Desktop, so you can continue where you left off when you open the file again. If you use the developer mode to save a Power BI project, each query tab is included as a .dax file in the DAXQueries folder of the semantic model folder. Learn more at the [Power BI developer mode documentation](/power-bi/developer/projects/).
 
 Currently, you cannot view or edit the DAX queries in the Power BI service. Viewers of the report or semantic model do not see the DAX queries saved with the semantic model.
 
@@ -226,7 +223,7 @@ Define all measures in the model creates a query with all the measure formulas s
 
 Visuals in Report view get data from the model by creating a DAX query. The visual query can be viewed in DAX query view by using Performance Analyzer. Performance Analyzer can give you insight into why a visual may be showing an unexpected value or simply as a way to quickly start a query you can further modify.
 
-In **Report view**, go to the **Optimize** ribbon, then click **Performance Analyzer**. Click **Start recording**, then **Refresh visuals**. In the table below, expand a visual to see options to copy query or run in DAX query view. Clicking on **Run** in DAX query view takes the visual query, adds it as a new Query tab in DAX query view, and then runs it.
+In **Report view**, go to the **Optimize** ribbon, then select **Performance Analyzer**. Select **Start recording**, then **Refresh visuals**. In the table below, expand a visual to see options to copy query or run in DAX query view. Selecting on **Run** in DAX query view takes the visual query, adds it as a new Query tab in DAX query view, and then runs it.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-performance-analyzer.png" alt-text="Screenshot of the visual DAX queries in Performance Analyzer feature." lightbox="media/dax-query-view/dax-query-view-performance-analyzer.png":::
 
