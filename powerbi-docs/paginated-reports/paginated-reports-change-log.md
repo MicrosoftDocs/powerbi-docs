@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 3/26/2024
+ms.date: 5/20/2024
 ---
 
 # Power BI Report Builder change log
@@ -18,13 +18,24 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
+## May 2024
+
+Version 15.7.1809.28, released May 20, 2024
+
+- Fixes for Power Query Online interactions 
+- Various bug fixes
+
+### Features
+- Added support for subfolders in workspaces on Power BI service.
+- Added RDL Migration Tool to help migrate reports. This can be found in the RdlMigration folder of your installation directory. More information can be found in the article [Plan to migrate .rdl reports to Power BI](https://aka.ms/MigrateToPowerBI).
+
 ## March 2024
 
 Version 15.7.1807.730, released March 24, 2024
 
 - Fixed issue with JPEG files not respecting the EXIF rotation property.
 - Updated to use the last MSAL authentication library functionality.
-- Various accessibilty fixes across all areas of the product.
+- Various accessibility fixes across all areas of the product.
 - Bug fix for Power BI Report Builder freezing during certain operations.
 - Various bug fixes. 
 

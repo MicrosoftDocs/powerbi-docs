@@ -31,9 +31,9 @@ landingContent:
           - text: Power BI Premium features
             url: service-premium-features.md           
       - linkListType: concept
-        links:            
+        links:
           - text: Power BI Premium architecture
-            url: service-premium-architecture.md
+            url: /fabric/security/security-fundamentals            
           - text: Managing Premium capacities
             url: service-premium-capacity-manage.md           
           - text: Power BI for US government

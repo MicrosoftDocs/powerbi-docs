@@ -96,7 +96,7 @@ Your [BI solution architecture](powerbi-implementation-planning-usage-scenario-o
 - Configure and review [Power BI tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
 - Setup [workspace roles](../collaborate-share/service-roles-new-workspaces.md) and assign access to Microsoft Entra security groups and users.
 - Configure an initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster—with a plan to update regularly.
-- Procure initial [Premium capacity license](../enterprise/service-admin-premium-purchase.md) (if applicable).
+- Procure initial [Premium capacity license](/power-bi/enterprise) (if applicable).
 - Configure [Premium capacity workloads](../enterprise/service-admin-premium-workloads.md)—with a plan to manage on an ongoing basis.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
