@@ -7,7 +7,7 @@ ms.reviewer: sranins, david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 03/13/2024
+ms.date: 05/21/2024
 #customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 
@@ -53,7 +53,7 @@ The visual can then utilize the token to authenticate against the respective aud
 ]
 ```
 
-In the *pbiviz.json* file, set the API version to **5.9.0** or higher:
+In the *pbiviz.json* file, set the API version to **5.9.1** or higher:
 
 The newly exposed **AcquireAADTokenService** contains two methods:
 
