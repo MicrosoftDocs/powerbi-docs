@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/22/2023
+ms.date: 05/15/2024
 ms.custom: licensing support
 LocalizationGroup: Premium
 ---
@@ -92,7 +92,7 @@ The following short video shows how quickly you can configure Autoscale for Powe
 
 ## When is Autoscale triggered?
 
-You only pay for autoscale when it's triggered. Autoscale is triggered when [interactive throttling](/fabric/enterprise/throttling) is implemented on your capacity. When interactive operations on your capacity are delayed, autoscale v-cores are added to cover the overage. As long as the overage is not covered, v-cores are added to the capacity every 30 seconds, until the number of v-cores you allocated for autoscale is reached. Once the number of v-cores allocated for autoscale is reached, new v-cores aren't added for 24 hours. During this time your capacity's throttling state is evaluated and if the capacity isn't throttled, autoscale usage returns to zero.
+You only pay for autoscale when it's triggered. Autoscale is triggered when [interactive throttling](/fabric/enterprise/throttling) is implemented on your capacity. When interactive operations on your capacity are delayed, autoscale v-cores are added to cover the overage. As long as the overage is not covered, v-cores are added to the capacity every 30 seconds, until the number of v-cores you allocated for autoscale is reached. Once an autoscale core is added, it remains active for a minimum of 24 hours. After 24 hours, your capacity's throttling state is evaluated and if the capacity isn't throttled, autoscale usage returns to zero.
 
 ## Disable Autoscale
 
