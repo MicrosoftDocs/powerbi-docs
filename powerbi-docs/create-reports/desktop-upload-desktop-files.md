@@ -62,7 +62,12 @@ This process is straightforward, but you should know the following:
 
 > [!NOTE]
 > Some data connection in Power BI reports may include links to data, rather than including the data in the semantic model that's imported into the Power BI service. For example, DirectQuery connections link to data as updates or interactions occur, rather than importing the data itself. If linked data sources in your report are on premises, you may need a gateway to access them from Power BI. For more information, see [what is an on-premises data gateway?](../connect-data/service-gateway-onprem.md).
-> 
+
+## Publish to a folder in a workspace (preview)
+The ability to publish reports and semantic models from Power BI Desktop into folders in a workspace is now in preview! 
+
+[Learn more about the feature and how to enable it](learn.microsoft.com/en-us/fabric/get-started/workspaces-folders).
+
 
 ## Related content
 
