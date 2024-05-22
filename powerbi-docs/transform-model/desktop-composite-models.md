@@ -484,7 +484,7 @@ Using streaming semantic models in composite models isn't supported.
 
 The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables that aren't in DirectQuery, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
 
-
+If you are using row-level security in a composite model with some of the tables in DirectQuery mode, you must refresh the model to apply new updates from the DirectQuery tables. For example, if a Users table in  DirectQuery mode has new user records at the source, the new records will only be included after the next  model refresh. Power BI Service caches the Users query to improve performance and doesn’t reload the data from the source until the next manual or scheduled refresh.
 
 ## Related content
 
