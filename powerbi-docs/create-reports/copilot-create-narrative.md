@@ -36,14 +36,12 @@ In the Power BI service, you need to be in an appropriate workspace to see the N
 
 1. The **Narrative** visual needs content to summarize, so in the Power BI service, select the **OneLake data hub**, select **More options** next to a semantic model.
 1. Select **Create report**.
-
 ### [Power BI Desktop](#tab/powerbi-desktop)
 
 If you're not signed in to Power BI Desktop, you still see the Copilot entry points. When you select Copilot, you're asked to sign in.  If your tenant admin has disabled it, you see that it's disabled.  If your tenant admin has enabled it and you have access to an appropriate workspace capacity, you can use Copilot.
 
 1. In Power BI Desktop, select **Get data**, then select a data source. See [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md) for more info.
 1. Create a page with visualizations of the data that you want the Copilot narrative to summarize.
-
 ---
 
 3. In the **Visualizations** pane, select the **Narrative** icon. 
