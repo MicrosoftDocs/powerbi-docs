@@ -112,6 +112,8 @@
           href: copilot-create-report-service.md
         - name: Create reports in Power BI Desktop with Copilot
           href: copilot-create-desktop-report.md
+        - name: Create a report summary in Power BI Desktop with Copilot
+          href: copilot-pane-summarize-report-data.md
         - name: Write prompts for Copilot report pages
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page

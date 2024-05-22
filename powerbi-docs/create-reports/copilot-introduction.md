@@ -68,6 +68,7 @@ Here are eight examples of what Copilot can generate.
 - A [summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model).
 - A [summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane).
 - A [summary visual on the report itself](#a-summary-visual-on-the-report-itself).
+- A [summary of the data](copilot-pane-summarize-report-data.md)
 - [Suggested content for a report](#suggest-content-for-a-report).
 - A [report page](#create-a-report-page).
 - A [narrative visual](#a-narrative-visual).
