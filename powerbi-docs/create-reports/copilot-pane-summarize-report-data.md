@@ -18,6 +18,8 @@ no-loc: [Copilot]
 
  The Copilot pane in Power BI offers new capabilities in public preview in view and edit modes. You can ask Power BI Copilot questions about the data in your model. You could already ask questions about the data present in the visuals on your report pages. Now you can get answers directly from the underlying model. Just ask questions about your data, and if the answer isn't already on your report, Copilot queries your model for the data instead and returns the answer in the form of a visual. You can ask Copilot for summaries, insights, and answers from your report content.
 
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane open and showing interesting customer information on report page.":::
+
 ## Copilot in view mode
 
 In view mode, Copilot can act as a knowledgeable assistant as you navigate through your Power BI report. Copilot can generate summaries of your report content with a few clicks. Copilot streamlines the process of manual analysis, delivering concise overviews that illuminate key trends, patterns, and insights across your visuals. Copilot can create an overview of your report page, and you can ask questions about the data visualized on the page, improving your data exploration experience and empowering you to dig deeper. This capability elevates a typical viewing experience to an analysis experience.
