@@ -45,7 +45,7 @@ Or you can dig deeper for more nuanced exploration into key slices of your data 
 
 :::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane showing customer segments."::: 
 
-Copilot scans the report page visuals and answers your request in natural language, making analysis of the report easy.  From uncovering insights to highlighting key sales metrics, your Copilot prompts pave the way for data discovery. Then you can copy and paste the Copilot responses into emails, PowerPoints, or Teams threads to keep everyone up to date.
+Copilot scans the report page visuals and answers your request in natural language, making analysis of the report easy.  From uncovering insights to highlighting key sales metrics, your Copilot prompts pave the way for data discovery. Then you can copy and paste the Copilot responses into emails, PowerPoint slides, or Teams threads to keep everyone up to date.
 
 :::image type="content" source="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane explaining the report data.":::
 
@@ -55,7 +55,7 @@ Copilot scans the report page visuals and answers your request in natural langua
 Another aspect of Copilot's consumption mode is its ability to respond to your questions in real time. Need to know which team dominated in sales or which product boasted the highest profit margin? Ask, and Copilot provides you with a tailored, simple response. What sets Copilot apart is that it shows you the specific visuals within your report it used to answer your question, making it easier to understand the underlying data driving each insight and answer. Here are some real examples: 
 
 - What is the highest grossing product?
-- What was the total sales in 2021?
+- What were the total sales in 2021?
 - What is the average length of stay?
 - Copilot pane answering a data question
 
