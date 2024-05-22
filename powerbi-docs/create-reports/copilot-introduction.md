@@ -21,7 +21,7 @@ Copilot for Microsoft Fabric Public Preview is available in Power BI. Copilot he
 Before your business can start using Copilot capabilities in Power BI, your administrator needs to [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
 > [!NOTE]
-> Copilot is not yet supported for sovereign clouds due to GPU availability.
+> Copilot isn't yet supported for sovereign clouds due to GPU availability.
 
 ## Before you start using Copilot
 
@@ -42,7 +42,7 @@ Copilot for Power BI offers several capabilities to enhance your data interactio
 
 As a report author, you can use Copilot to help you write DAX queries, streamline your semantic model documentation, provide a summary about your semantic model, and help you get started with report creation. Additionally, Copilot can also create a narrative visual that summarizes a page or a whole report and can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports. As a report consumer, you can use the Copilot pane to ask a question about your report content or summarize key insights in seconds.
 
-Here are some examples of what Copilot can generate:
+Here are examples of what Copilot can generate:
 
 - [Summarize the underlying semantic model](#summarize-the-underlying-semantic-model).
 - [Suggest content for a report](#suggest-content-for-a-report).
