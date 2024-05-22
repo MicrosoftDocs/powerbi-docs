@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/1/2022
+ms.date: 05/21/2024
 ---
 
 # Configure credentials programmatically for Power BI
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
-Follow the steps in this article, to configure credentials programmatically for Power BI. Configuring credentials programmatically also allows you to encrypt credentials.
+To configure credentials programmatically for Power BI, follow the steps in this article. Configuring credentials programmatically also allows you to encrypt credentials.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 
 ## Update the credentials flow for data sources
 
-1. Discover the data sources of the semantic model by calling [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup). The response body for each data source contains the type, connection details, gateway, and data source ID.
+1. Discover the semantic model's data sources by calling [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup). The response body for each data source contains the type, connection details, gateway, and data source ID.
 
     ```csharp
     // Select a datasource
@@ -236,5 +236,4 @@ To discover gateways that are bindable, use [Discover Gateways](/rest/api/power-
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Power BI REST APIs](/rest/api/power-bi/)
+* [Power BI REST APIs](/rest/api/power-bi/)
