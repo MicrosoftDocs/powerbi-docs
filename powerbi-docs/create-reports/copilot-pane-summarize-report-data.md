@@ -1,5 +1,5 @@
 ---
-title: Ask Copilot questions about data in your model (preview) 
+title: Ask Copilot questions about data in the model (preview) 
 description: Copilot can create a summary of the data in your report for you in the Copilot pane.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,12 +7,12 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 05/22/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
 
-# Ask Copilot questions about data in your model (preview)
+# Ask Copilot questions about data in the model (preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -27,28 +27,25 @@ In view mode, Copilot can act as a knowledgeable assistant as you navigate throu
 
 ## Customized guidance at your fingertips 
 
-Copilot doesn't just provide overviews and insights of report content. With customized requests, Copilot tailors its assistance to your specific needs, guiding you through the exploration process. Whether you're unsure where to begin or you're seeking deeper insights, Copilot can lend a helping hand.  You can start with the out-of-box prompts like: 
+Copilot doesn't just provide overviews and insights of report content. With customized requests, Copilot tailors its assistance to your specific needs, guiding you through the exploration process. Whether you're unsure where to begin or you're seeking deeper insights, Copilot can lend a helping hand.  You can start with the out-of-box prompts like:
 
 - Create a bulleted list of insights.
 - Summarize visuals on this page.
 - Give an executive summary of this report.
  
-
-[Image of Power BI Copilot pane open and showing summary for visuals on report page.]
-
- 
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-summarize-visuals-page.png" alt-text="Screenshot of Power BI Copilot pane open and showing summary for visuals on report page.":::
 
 Or you can dig deeper for more nuanced exploration into key slices of your data with custom requests that deliver tailored insights and answers.  Here are some examples of custom requests to get you started. Keep in mind, the requests are specific to the data in the report you're viewing:
 
 - What are some key sales insights on this page?
 - What are some interesting customer segments?
 - What is the relationship between product type and revenue?
- 
 
-[Power BI Copilot pane showing customer segments] 
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane showing customer segments."::: 
 
 Copilot scans the report page visuals and answers your request in natural language, making analysis of the report easy.  From uncovering insights to highlighting key sales metrics, your Copilot prompts pave the way for data discovery. Then you can copy and paste the Copilot responses into emails, PowerPoints, or Teams threads to keep everyone up to date.
 
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane explaining the report data.":::
 
 
 ## Unleash the power of questions 
@@ -59,6 +56,8 @@ Another aspect of Copilot's consumption mode is its ability to respond to your q
 - What was the total sales in 2021?
 - What is the average length of stay?
 - Copilot pane answering a data question
+
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png" alt-text="Screenshot of Power BI Copilot pane highlighting relevant visual.":::
 
 ## Empower data exploration 
 
