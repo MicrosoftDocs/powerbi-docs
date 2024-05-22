@@ -49,9 +49,8 @@ Here are some examples of what Copilot can generate:
 - Create a [report page](#create-a-report-page).
 - [Generate a summary of your report in the Copilot pane](#generate-a-summary-of-your-report-in-the-copilot-pane).
 - Create a [summary visual on the report itself](#create-a-summary-visual-on-the-report-itself).
-- [Add synonyms to enhance Q&A](#synonyms-to-enhance-qa).
+- [Add synonyms to enhance Q&A](#add-synonyms-to-enhance-qa).
 - [Ask Copilot questions about data in the model](copilot-pane-summarize-report-data.md).
-- [Suggest content for a report](#suggest-content-for-a-report).
 - Create a [narrative visual](copilot-create-narrative.md).
 - [Add descriptions for your semantic model measures](#add-descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
