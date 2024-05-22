@@ -22,7 +22,7 @@ Add-ins that were saved as *Public snapshot* can be printed, and don't require y
 
 For add-ins that were saved as *Public snapshot*, you might be able to improve loading times by using the *Show as saved image* option on the add-in side menu. This replaces the entire add-in with an image representation of it. This can be useful when you are presenting your presentation and need the fastest loading times possible.
 
-### *Data updated* notification
+### Notification of data update in Power BI
 
 When a presentation is open for a long time, the Power BI data shown in the add-in can become outdated. To make sure the data you have in your slides is up to date, a new notification tells you when more up-to-date data exists in Power BI, and gives you an option to refresh the data with the latest data from Power BI.
 
