@@ -138,6 +138,9 @@ When you add a data source to the gateway, you must provide credentials for that
 
 For information about which data sources the on-premises data gateway supports, see [Power BI data sources](power-bi-data-sources.md).
 
+   > [!NOTE]
+   > MySQL is not supported on the personal on-premises data gateway.
+
 ## Related content
 
 * [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)
