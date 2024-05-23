@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: nirusrin
 ---
-# Connect to Snowflake, Databricks, and others with Power Query Online in Power BI Report Builder
+# Connect paginated reports to data sources using Power Query in Power BI Report Builder (Preview)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
