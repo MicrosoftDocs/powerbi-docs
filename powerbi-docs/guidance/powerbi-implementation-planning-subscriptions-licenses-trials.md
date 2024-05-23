@@ -1,6 +1,6 @@
 ---
 title: "Power BI implementation planning: Subscriptions, licenses, and trials"
-description: "This article helps you to plan for subscriptions, licenses, and trials for Power BI and Fabric."
+description: "This article helps you to plan for subscriptions, licenses, and trials for Power BI and Microsoft Fabric."
 author: peter-myers
 ms.author: v-myerspeter
 ms.reviewer: maroche
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 05/16/2024
+ms.date: 05/23/2024
 ---
 
 # Power BI implementation planning: Subscriptions, licenses, and trials
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This article guides you in the key considerations for planning subscriptions, licenses, and trials for Power BI and Fabric. This article is targeted at:
+This article introduces the key considerations for planning subscriptions, licenses, and trials for Power BI and Fabric. This article is targeted at:
 
 - **Billing administrators:** The administrators who are responsible for purchasing subscriptions and analyzing costs.
 - **Azure administrators:** The administrators who are responsible for purchasing and managing Azure subscriptions and services.
@@ -27,11 +27,11 @@ This article guides you in the key considerations for planning subscriptions, li
 One key aspect of managing Microsoft Fabric is to ensure that users have access to the capabilities that they need. To this end, you must purchase and manage subscriptions, licenses, and trials for your organization. Managing subscriptions, licenses, and trials is necessary to ensure that both content creators and content consumers can use Fabric and Power BI.
 
 > [!NOTE]
-> Licensing is an important topic that can be complex, especially when your organization is implementing Fabric or Power BI for the first time. While this article describes key decisions and considerations about subscriptions, licenses, and trails, refer to the following supplementary articles and resources for more detailed and practical information.
+> Licensing is an important topic that can be complex, especially when your organization is implementing Fabric or Power BI for the first time. While this article describes key decisions and considerations about subscriptions, licenses, and trails, we recommend that you refer to the following supplementary articles and resources for more detailed and practical information.
 >
 > - **[Power BI pricing](https://powerbi.microsoft.com/pricing/):** This webpage provides the latest information about the pricing of the different licenses available for Power BI and Fabric in your region, as well as a feature comparison.
 > - **[Power BI service per-user and capacity-based licenses](../fundamentals/service-features-license-type.md):** This article provides detailed information about the different licenses available to use Power BI.
-> - **[Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md):** This article (and related articles) provide practical information about how to purchase and assign licenses for Power BI.
+> - **[Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md):** This article (and related articles) provides practical information about how to purchase and assign licenses for Power BI.
 > - **[Microsoft Fabric concepts and licenses](/fabric/enterprise/licenses):** This article provides detailed information about the different capacity licenses available to use Fabric, including information about the different [stock-keeping units (SKUs)](/fabric/enterprise/licenses#capacity-license) for each license. It also describes the difference between a [Premium capacity](../enterprise/service-premium-what-is.md) and a [Fabric capacity](/fabric/enterprise/licenses#capacity), both with respect to the SKUs and capabilities.
 > - **[Buy a Microsoft Fabric subscription](/fabric/enterprise/buy-subscription):** This article provides practical information about where and how you can purchase Fabric capacity licenses for your organization. It also describes the difference between pay-as-you-go subscriptions ([Azure SKUs](/fabric/enterprise/buy-subscription#azure-skus)) and reserved instances with monthly or yearly billing ([Microsoft 365 SKUs](/fabric/enterprise/buy-subscription#microsoft-365-skus)).
 
@@ -41,12 +41,12 @@ The following table introduces key concepts used by this article.
 
 | **Concept** | **Description** | **Example** |
 |---|---|---|
-| **Tenant** | Fabric operates within the organization's Microsoft Entra [tenant](powerbi-implementation-planning-tenant-setup.md). An organization will typically have a single _tenant_ (though some large organizations might have multiple tenants). | One tenant exists for _contoso.com_. |
-| **Subscription** | One or more _subscriptions_ must be active for a tenant. Each subscription has a start date and an end date that references a product: <br/><br/>&bull;&nbsp;[Per-user subscriptions](/fabric/enterprise/licenses#per-user-licenses) are managed in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview). A specific number of licenses are available within each subscription. <br/>&bull;&nbsp;A Power BI Premium capacity subscription is managed in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview). <br/>&bull;&nbsp;>A Fabric capacity subscription is managed in the [Azure portal](/azure/azure-portal/azure-portal-overview). | Contoso has four active subscriptions: <br/><br/>&bull;&nbsp;Unlimited Free licenses. <br/>&bull;&nbsp;100 Pro licenses. <br/>&bull;&nbsp;15 PPU licenses. <br/>&bull;&nbsp;Three capacity licenses. |
-| **Per-user license** | A _user license_ is based on a subscription. All users require a [user license](/fabric/enterprise/licenses#per-user-licenses), which can be Fabric Free, Power BI Pro, or PPU. | Contoso has 450 active users: <br/><br/>&bull;&nbsp;All 450 users are assigned a Fabric Free license. <br/>&bull;&nbsp;92 users are assigned a Power BI Pro license (leaving eight available on the subscription). <br/>&bull;&nbsp;15 users are assigned a PPU license (leaving none available on the subscription). |
-| **Capacity license** | A _capacity license_ is based on a subscription. Workspaces are assigned to a [capacity](/fabric/enterprise/licenses#capacity-license), which affects the capabilities and resources that are available to the content and users of the workspace. | Contoso has three active capacities: <br/><br/>&bull;&nbsp;Two Fabric capacities. <br/>&bull;&nbsp;One Power BI Premium capacity. |
-| **SKU** (Stock-Keeping Unit) | _SKUs_ are a product ID for the subscription that was purchased. For capacity, there are two ways to refer to SKUs. <br/><br/>&bull;&nbsp;**Grouping:** The type of [capacity](/fabric/enterprise/licenses#capacity-license) that's purchased. For example: an _F SKU_ refers to a Fabric capacity in general.<br/>&bull;&nbsp;**Specific:** The specific SKU for a capacity designates the level of compute power it has. For example: an _F64 capacity_ has a specific set of [compute resources](/fabric/enterprise/licenses#capacity-license) (such as CPU and memory) that are available to each workspace that's assigned to that capacity. | Contoso has three active capacities: <br/><br/>&bull;&nbsp;One F16 capacity. <br/>&bull;&nbsp;One F64 capacity. <br/>&bull;&nbsp;One P1 capacity. |
-| **Trial** | A [trial](../fundamentals/service-self-service-signup-for-power-bi.md) license allows you to try features. A trial can be activated for either a per-user license or a Fabric capacity license. | Contoso has active trials: <br/><br/>&bull;&nbsp;Two users have an active PPU trial. <br/>&bull;&nbsp;One Fabric capacity trial is active. |
+| **Tenant** | Fabric operates within the organization's Microsoft Entra [tenant](powerbi-implementation-planning-tenant-setup.md). An organization will typically have a single _tenant_ (though some large organizations might have multiple tenants). | At Contoso, one tenant exists for _contoso.com_. |
+| **Subscription** | One or more _subscriptions_ must be active for a tenant. Each subscription has a start date and an end date that references a product: <br/><br/>&bull;&nbsp;[Per-user subscriptions](/fabric/enterprise/licenses#per-user-licenses) are managed in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview). A specific number of licenses are available within each subscription. <br/>&bull;&nbsp;A Power BI Premium capacity subscription is managed in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview). <br/>&bull;&nbsp;A Fabric capacity subscription is managed in the [Azure portal](/azure/azure-portal/azure-portal-overview). | Contoso has four active subscriptions: <br/><br/>&bull;&nbsp;Unlimited Free licenses. <br/>&bull;&nbsp;100 Pro licenses. <br/>&bull;&nbsp;15 PPU licenses. <br/>&bull;&nbsp;Three capacity licenses. |
+| **Per-user license** | A _per-user license_ is based on a subscription. All users require a [user license](/fabric/enterprise/licenses#per-user-licenses), which can be Fabric Free, Power BI Pro (Pro), or Premium Per User (PPU). | Contoso has 450 active users: <br/><br/>&bull;&nbsp;All 450 users are assigned a Fabric Free license. <br/>&bull;&nbsp;92 users are assigned a Power BI Pro license (leaving eight available on the subscription). <br/>&bull;&nbsp;15 users are assigned a PPU license (leaving none available on the subscription). |
+| **Capacity license** | A _capacity license_ is based on a subscription. Workspaces are assigned to a [capacity](/fabric/enterprise/licenses#capacity-license), which determines the capabilities and resources that are available to the content and users of the workspace. | Contoso has three active capacities: <br/><br/>&bull;&nbsp;Two Fabric capacities. <br/>&bull;&nbsp;One Power BI Premium capacity. |
+| **SKU** (stock-keeping unit) | _SKUs_ are a product ID for the subscription that was purchased. For capacity, there are two ways to refer to SKUs. <br/><br/>&bull;&nbsp;**Grouping:** The type of [capacity](/fabric/enterprise/licenses#capacity-license) that's purchased. For example, an _F SKU_ refers to a Fabric capacity in general.<br/>&bull;&nbsp;**Specific:** The specific SKU for a capacity designates the level of its compute power. For example, an _F64 capacity_ has a specific set of [compute resources](/fabric/enterprise/licenses#capacity-license) (such as CPU and memory) that are available to all workspaces that are assigned to that capacity. | Contoso has three active capacities: <br/><br/>&bull;&nbsp;One F16 capacity. <br/>&bull;&nbsp;One F64 capacity. <br/>&bull;&nbsp;One P1 capacity. |
+| **Trial** | A [trial](../fundamentals/service-self-service-signup-for-power-bi.md) license allows you to try out features. A trial can be activated for either a per-user license or a Fabric capacity license. | Contoso has active trials: <br/><br/>&bull;&nbsp;Two users have an active PPU trial. <br/>&bull;&nbsp;One Fabric capacity trial is active. |
 
 > [!NOTE]
 > The _subscriptions_ referred to in this article relate to costs for a product. It's a different concept than _[report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true)_, which are reports delivered on a schedule.
@@ -67,7 +67,7 @@ In the Microsoft 365 admin center, administrators can [purchase](../enterprise/s
 
 In the Azure portal, Azure administrators can [assign per-user licenses](../enterprise/service-admin-purchasing-power-bi-pro.md#assign-licenses-from-the-azure-portal) and purchase and manage per-capacity licenses.
 
-- Azure administrators assign per-user licenses like Microsoft Fabric Free in the Azure portal in Microsoft Entra ID.
+- Azure administrators assign per-user licenses, like Microsoft Fabric Free, in the Azure portal in Microsoft Entra ID.
 - Azure administrators manage their Azure subscription, where they can purchase and manage per-capacity licenses.
   - Billing administrators can purchase Premium capacity subscriptions (A SKUs or EM SKUs), which are linked to, and billed as part of, an Azure subscription.
   - Billing administrators can purchase Fabric capacity subscriptions (F SKUs), which are linked to, and billed as part of, an Azure subscription.
@@ -75,23 +75,23 @@ In the Azure portal, Azure administrators can [assign per-user licenses](../ente
 > [!NOTE]
 > Many of the capabilities described in this article aren't available to Fabric administrators. Instead, Fabric administrators must [collaborate with other administrators](powerbi-implementation-planning-tenant-administration.md#collaborate-with-other-administrators) who have additional permissions to view (or update) subscriptions, billing, and licenses.
 
-The remainder of this article describes licensing considerations for both [per-user licensing](#review-and-manage-per-user-licensing) and [capacity licensing](#review-and-manage-capacity-licensing) when you need to review and manage licensing for your organization.
+The remainder of this article describes licensing considerations for both [per-user licensing](#review-and-manage-per-user-licensing) and [capacity licensing](#review-and-manage-capacity-licensing).
 
 ## Review and manage per-user licensing
 
-Every user who works with Fabric requires a user license (either Free, Pro, or PPU, will be described in Step 2). Even if you intend to purchase capacity licenses (covered later in this article), per-user licenses are required so that each user can access Fabric. This access is facilitated by [integration with Microsoft Entra ID](powerbi-implementation-planning-security-tenant-level-planning.md#integration-with-microsoft-entra-id).
+Every user who works with Fabric requires a user license (either Free, Pro, or PPU, which will be described in [Step 2](#step-2-decide-on-user-licenses)). Even if you intend to purchase capacity licenses (covered later in this article), per-user licenses are required so that each user can access Fabric. This access is facilitated by [integration with Microsoft Entra ID](powerbi-implementation-planning-security-tenant-level-planning.md#integration-with-microsoft-entra-id).
 
 ### Step 1: Review user licenses
 
-It's important that you first understand the current state of user subscriptions and licenses. Your [billing administrators](../enterprise/service-admin-licensing-organization.md#which-admins-can-purchase-licenses-and-subscriptions) can help by confirming any user subscriptions you already currently have, and how user licenses are assigned.
+It's important that you first understand the current state of user subscriptions and licenses. Your [billing administrators](../enterprise/service-admin-licensing-organization.md#which-admins-can-purchase-licenses-and-subscriptions) can help by confirming any user subscriptions you currently have, and how user licenses are assigned.
 
-Here are two common ways you can compile a list of user subscriptions and licenses.
+Here are two common ways that you can compile a list of user subscriptions and licenses.
 
 - View the [Billing](/microsoft-365/commerce) area of the Microsoft 365 admin center.
 - Programmatically extract the data by using the relevant [Microsoft Graph](/graph/overview) REST APIs.
 
 > [!TIP]
-> You also use this information as part of your [tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md). Specifically, see this section about retrieving data about [users and groups](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#users-and-groups-data).
+> You can also use this information as part of your [tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md). Specifically, see this section about retrieving data about [users and groups](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#users-and-groups-data).
 
 As you conduct your review, compile the following information.
 
@@ -116,26 +116,26 @@ As you conduct your review, compile the following information.
 
 ### Step 2: Decide on user licenses
 
-After you've reviewed user licenses, you next make some key decisions about how you'll assign and manage these licenses in your organization.
+After you've reviewed user licenses, you should next make some key decisions about how to assign and manage these licenses in your organization.
 
 > [!IMPORTANT]
 > Your decisions for per-user licenses, with or without capacity (described in the next section of this article), will significantly impact what capabilities are available for authors and consumers.
 
 #### Decide which per-user licenses you need
 
-You'll need to determine which user licenses are required. Every user needs to be assigned a Microsoft Fabric (Free) license _or_ a Power BI Pro license. If they're creating or viewing content that's published to a workspace that uses Premium per user license mode, then they also need a Power BI Premium per user (PPU) license.
+You should determine which user licenses are required. Every user needs to be assigned a Microsoft Fabric (Free) license _or_ a Power BI Pro license. If they're creating or viewing content that's published to a workspace that uses _Premium per user_ license mode, then they also need a Power BI Premium Per User (PPU) license.
 
 Here's each of the [user license types](/fabric/enterprise/licenses#per-user-licenses) and their uses.
 
-- **Microsoft Fabric (Free) license:** A [Free license](../fundamentals/service-features-license-type.md#free-per-user-license) that has no subscription cost. It can be used different ways:
+- **Microsoft Fabric (Free) license:** A [Free license](../fundamentals/service-features-license-type.md#free-per-user-license) that has no subscription cost. It can be used in different ways:
   - **Personal BI:** A Free user can [use their personal workspace](/fabric/enterprise/licenses#:~:text=you%20need%20a-,Microsoft%20Fabric%20%28Free%29%20license,-with%20a%20viewer) in the Fabric portal. Because the purpose is [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md), no report distribution, sharing, or collaboration features are available to the Free user.
   - **Consuming BI**: A Free user can view content that's been deployed to a workspace that's assigned to a capacity (minimum of F64 or P1). This [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) use case is significant when you have a large number of report consumers who don't author BI content, because you don't have to purchase a Power BI Pro license for these consumers. For more information, see [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md).
   - **Fabric authoring:** A Free user can [create and share Fabric (non-Power BI) items](/fabric/enterprise/licenses#per-user-licenses) in a workspace that's assigned to an F SKU.
 - **Power BI Pro license:** A [Power BI Pro license](../fundamentals/service-features-license-type.md#pro-license) is required to author Power BI content. It's required for any form of sharing, collaboration, or content distribution. For more information, see [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md).
-- **Power BI Premium per user (PPU) license:** A [PPU license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license) provides all Pro license capabilities and includes certain Premium features, on a per-user basis. It's a good choice for smaller organizations and teams who want to use specific features but don't need the full set of Fabric capabilities. For more information, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
+- **Power BI Premium Per User (PPU) license:** A [PPU license](../fundamentals/service-features-license-type.md#premium-per-user-ppu-license) provides all Pro license capabilities and includes certain Premium features, on a per-user basis. It's a good choice for smaller organizations and teams that want to use specific features but don't need the full set of Fabric capabilities. For more information, see [Power BI Premium Per User](../enterprise/service-premium-per-user-faq.yml).
 
 > [!TIP]
-> There are options for mixing and matching user licenses with capacity licenses. For example, you might have development, test, and production workspaces that rely on [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) approaches. Since the development and test workspaces have very few users, those workspaces might be assigned a smaller capacity size or PPU license mode (if they don't require a Fabric experience or capabilities). The production workspace could use a capacity license to support many consumers (with Free licenses). That way, you might potentially reduce cost, while segregating the development and test content from the production workload.
+> You can mix and match user licenses with capacity licenses. For example, you might have development, test, and production workspaces that rely on specific [enterprise content publishing](powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md) approaches. Since the development and test workspaces have very few users, those workspaces might be assigned a smaller capacity size or PPU license mode (if they don't require a Fabric experience or capabilities). The production workspace could use a capacity license to support many consumers (with Free licenses). That way, you might potentially reduce cost, while segregating the development and test content from the production workload.
 
 #### Decide prerequisites for obtaining a user license
 
@@ -164,7 +164,7 @@ Determine whether you need to implement a custom license request process that's 
 - Determining how costs will be allocated, or how chargebacks will be done.
 
 > [!TIP]
-> You can set a custom URL for licensing requests within the _[Publish Get Help Information](/fabric/admin/service-admin-portal-help-support#publish-get-help-information)_ tenant setting. The URL can direct users to a form, or to your internal licensing request page.
+> You can set a custom URL for licensing requests in the _[Publish Get Help Information](/fabric/admin/service-admin-portal-help-support#publish-get-help-information)_ tenant setting. The URL can direct users to a form, or to your internal licensing request page.
 
 #### Decide how user subscriptions will be purchased
 
@@ -183,9 +183,9 @@ Here are some questions you should consider.
 
 #### Decide whether trials are enabled
 
-An important [governance](fabric-adoption-roadmap-governance.md) decision is whether user trials are allowed. An in-product trial provides users with a way to try features before making a commitment to buy a license. There are two types of trials that a user could initiate: a [Premium per user trial](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) and a [Fabric capacity trial](/fabric/get-started/fabric-trial).
+An important [governance](fabric-adoption-roadmap-governance.md) decision is whether user trials are allowed. An in-product trial provides users with a way to try out features before making a commitment to buy a license. There are two types of trials that a user could initiate: a [Premium Per User (PPU) trial](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) and a [Fabric capacity trial](/fabric/get-started/fabric-trial).
 
-When trials are enabled, a _Start trial_ button is displayed in the portal that permits a user to begin a Fabric trial. Also, a user can be prompted to start a trial while they're working. For example, if a Free user tries to create a workspace or share a report, they'll be prompted to start a PPU trial by selecting the _Try free_ button. If a Pro user tries to view content in a PPU workspace, they'll be prompted to start a trial by selecting the _Try free_ button.
+When trials are enabled, a _Start trial_ button is displayed in the portal that permits a user to begin a Fabric trial. Also, a user can be prompted to start a trial while they're working. For example, if a Free user tries to create a workspace or share a report, they'll be prompted to start a PPU trial by selecting the _Try free_ button. Similarly, if a Pro user tries to view content in a PPU workspace, they'll be prompted to start a trial by selecting the _Try free_ button.
 
 The ability to use in-product trials is controlled by the _[Users can try Microsoft Fabric paid features](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features)_ tenant setting. Its behavior is closely correlated with how self-service purchasing works (described next). For more information, see [Users can try Microsoft Fabric paid features](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features).
 
@@ -195,7 +195,7 @@ The ability to use in-product trials is controlled by the _[Users can try Micros
 Consider disabling trials only when:
 
 - There are significant cost concerns that would make it unlikely to grant the user a full license at the end of the trial period.
-- Prerequisites are required for obtaining a license (such as approval, justification, or a training requirement) that must be met before beginning a trial or obtaining a license.
+- Prerequisites are required for obtaining a license (such as approval, justification, or a training requirement) that must be met prior to beginning a trial or obtaining a license.
 - There's a valid need, such as a regulatory requirement, to control access to Fabric closely.
 
 #### Decide whether self-service purchasing is enabled
@@ -234,27 +234,26 @@ There are many considerations when planning for self-service purchasing.
 Here are some other factors to consider.
 
 - Is there an existing organization-wide policy in place for [self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)?
-
-Does [Fabric](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial) follow the existing organizational policy for self-service purchases and trials?
-
+- Does [Fabric](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial) follow the existing organizational policy for self-service purchases and trials?
 - Should purchasing and trials both be enabled, both be disabled, or a combination? The user's experience will depend on how you [combine the settings](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features) for purchasing and trials.
-- Should users that try to purchase a license be directed to a specific page?
-  - With a [custom URL for licensing requests](/fabric/admin/service-admin-portal-help-support#publish-get-help-information), the user is immediately directed to that page if they select the _Upgrade account_ or the _Buy now_ button. You can provide further instructions or ask them to submit details in a form. Using this custom URL is a way to disallow the use of self-service purchasing by redirecting the user elsewhere.
-  - Without the custom URL, a user choosing to purchase a license is directed to Microsoft 365 to complete their purchase.
+- Should users who try to purchase a license be directed to a specific page?
+  - With a [custom URL for licensing requests](/fabric/admin/service-admin-portal-help-support#publish-get-help-information), the user is immediately directed to that page when they select the _Upgrade account_ or the _Buy now_ button. You can provide further instructions or ask them to submit details in a form. Using a custom URL is a way to disallow the use of self-service purchasing by redirecting the user elsewhere.
+  - Without a custom URL, a user choosing to purchase a license is directed to Microsoft 365 to complete their purchase.
 
 #### Decide how to handle licensing for external users
 
-You might need to regularly work with guest users who are external to your organization. Guests could include customers, partners, or vendors. They might be consultants or external collaborators. This topic could also apply to organizations that have multiple legal entities or [tenants](powerbi-implementation-planning-tenant-setup.md) due to mergers and acquisitions.
+You might need to work with guest users who are external to your organization. Guests could include customers, partners, or vendors. They could also be consultants or external collaborators. This topic could also apply to organizations that have multiple legal entities or [tenants](powerbi-implementation-planning-tenant-setup.md) due to mergers and acquisitions.
 
 Here are some considerations when you're planning how to handle licensing for guest users.
 
 - How will your process for assigning user licenses be different when an external user is involved?
 - Does the external user work for an organization that has Microsoft Entra ID set up? In that case, their credentials can be managed by their home tenant. For more information, see [Strategy for external users](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-external-users).
-- Which external users are consumers only vs. those who need to create and publish content?
+- Which external users are consumers only versus those who need to create and publish content?
 - In what situations will a license be provided by the external user (known as bring-your-own-license, or BYOL). In what circumstances will a license be provided by your organization? For more information, see the licensing topic in [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md#licensing).
-- Which type of guest invitation process will you use? There are different capabilities for occasional vs. planned guest user invitations. The user experience is different as well. For more information, see [Guest invitation process](powerbi-implementation-planning-security-tenant-level-planning.md#guest-invitation-process).
+- Which type of guest invitation process will you use? There are different capabilities for occasional versus planned guest user invitations. The user experience is different as well. For more information, see [Guest invitation process](powerbi-implementation-planning-security-tenant-level-planning.md#guest-invitation-process).
 
-For more information, see the [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md). It's a good resource to learn about strategies for handling external users.
+> [!TIP]
+> For more information, see the [Microsoft Entra B2B white paper](whitepaper-azure-b2b-power-bi.md). It's a good resource to learn about strategies for handling external users.
 
 ### Step 3: Update user licenses
 
@@ -267,7 +266,7 @@ The following topics are actions that might be appropriate.
 
 #### Increase or decrease user subscription quantity
 
-Based on the information you've gathered, you might choose to adjust your existing user [subscriptions](/microsoft-365/commerce). For example, you might choose to increase or decrease the quantity of your Pro or PPU subscriptions.
+Based on the information you've gathered, you might choose to adjust your existing [user subscriptions](/microsoft-365/commerce). For example, you might choose to increase or decrease the quantity of your Pro or PPU subscriptions.
 
 > [!NOTE]
 > Adjustments to your user subscriptions might correlate with other changes to a capacity subscription. [Capacity licensing](#review-and-manage-capacity-licensing) is covered later in this article.
@@ -300,10 +299,10 @@ You can build on the information captured in [Step 1](#step-1-review-user-licens
 - Timing or pending action items
 - Governance requirements related to user licenses
 - Auditing requirements related to user licenses
-- Snapshot of user license information
+- A snapshot of user license information
 
 > [!TIP]
-> Unless you're a very small organization with very few changes, don't manually document every user license. Instead, use the [Microsoft Graph APIs](/graph/use-the-api) to extract information about subscriptions and licenses regularly. Consider storing a snapshot of the user license data every week or every month. That way, you can compare snapshots to find what's changed. For more information, see [Audit user licenses](#step-6-audit-user-licenses).
+> Unless you're a very small organization with very few changes, don't manually document every user license. Instead, use the [Microsoft Graph APIs](/graph/use-the-api) to extract information about subscriptions and licenses regularly. Consider storing a snapshot of the user license data every week or every month. That way, you can compare snapshots to determine what's changed. For more information, see [Audit user licenses](#step-6-audit-user-licenses).
 
 > [!IMPORTANT]
 > Refer to the [Product plans and service plan identifiers](/entra/identity/users/licensing-service-plan-reference) documentation when comparing the Microsoft Graph results to what's displayed in the Microsoft 365 admin center.
@@ -318,30 +317,32 @@ You should create a repeatable, documented process for requesting a user license
 
 #### Monitor user trials
 
-Every month you should identify users who have started a trial that will soon expire. It's likely that the user will need to have a license assigned. The goal is to avoid a service interruption for these users. For more information, see [User trial auditing](#user-trial-auditing).
+Every month you should identify users who have started a trial that will soon expire. It's possible that the user will need to have a license assigned. The goal is to avoid a service interruption for these users. For more information, see [User trial auditing](#user-trial-auditing).
 
 #### Automate user license assignments
 
-In large organizations, handling requests for user licenses can involve much administrative effort. One way to improve efficiency is to use [group-based licensing](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). Group-based licensing allows you to automatically assign a license based on membership of a security group. A group such as _Fabric content authors_ works well for this purpose, allowing the assignment of licenses to users in an efficient manner.
+In large organizations, handling requests for user licenses can involve significant administrative effort. One way to improve efficiency is to use [group-based licensing](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). Group-based licensing allows you to automatically assign a license based on membership of a security group. A group such as _Fabric content authors_ works well for this purpose, allowing the assignment of licenses to users in an efficient manner.
+
+The following diagram depicts how group-based licensing works.
 
 :::image type="content" source="media/powerbi-implementation-planning-subscriptions-licenses-trials/group-based-licensing.svg" alt-text="Diagram shows group-based licensing." border="false":::
 
-The diagram depicts the following processes and steps in group-based licensing.
+The diagram depicts the following processes and steps involved in group-based licensing.
 
 | **Item** | **Description** |
 | --- | --- |
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Billing administrators purchase and assign per-user licenses from the Microsoft 365 admin center. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Administrators assign these licenses to groups that they manage in Microsoft Entra ID. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | The groups are set up to assign licenses to all members. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Any user added to the group is automatically granted the Power BI license that's assigned to that group (providing one is available). |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Any user added to a group is automatically granted the Power BI license that's assigned to that group (providing one is available). |
 
 #### Review and optimize user licensing costs
 
-Periodically compare licensed users with the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) to determine whether users are actively using the license that's assigned to them. Look for users who are assigned a license but haven't used it. For example, a user might have a Pro license assigned but they only view content that exists in a capacity. Use consistent criteria whenever possible, such as:
+Periodically compare licensed users with the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) to determine whether users are actively using their license. Look for users who are assigned a license but haven't used it. For example, a user might have a Pro license assigned but they only view content that exists in a capacity. Use consistent criteria whenever possible, such as:
 
 - The license isn't used for a specific period (for example, six months).
 - The license is used infrequently or sporadically.
-- The license was used once, for a single activity.
+- The license was used once for a single activity.
 
 The [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) will help you identify when activities occurred for a user, and what they are (for example, viewing a report or publishing a report).
 
@@ -351,19 +352,19 @@ It's important to have a process to regularly audit subscriptions, licenses, and
 
 #### User subscription auditing
 
-Here are some actions to identify when you audit subscriptions.
+Here are some actions to look for when you audit subscriptions.
 
-- **List of active subscriptions:** You can view products that have an active subscription in the [billing](/microsoft-365/commerce) area of the Microsoft 365 admin center. Or, with [Microsoft Graph](/graph/api/overview), use the [List Subscribed SKUs](/graph/api/subscribedsku-list) REST API to extract active subscriptions.
-- **New subscription was created:** Recently purchased products display a _New_ indicator in the [billing](/microsoft-365/commerce) area of the Microsoft 365 admin center.
+- **List of active subscriptions:** You can view products that have an active subscription in the [billing area](/microsoft-365/commerce) of the Microsoft 365 admin center. Or, with [Microsoft Graph](/graph/api/overview), use the [List Subscribed SKUs](/graph/api/subscribedsku-list) REST API to extract active subscriptions.
+- **New subscription was created:** Recently purchased products display a _New_ indicator in the [billing area](/microsoft-365/commerce) of the Microsoft 365 admin center.
 
 #### User license auditing
 
-Here are some actions to identify when to audit user licenses.
+Here are some actions to look for when to audit user licenses.
 
-- **List of user licenses:** In the Billing area of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), you can view the total number of licenses that are available and assigned. You can also drill down further to review users who are assigned a license for each product subscription. Or, with [Microsoft Graph](/graph/api/overview), use the [List License Details](/graph/api/user-list-licensedetails) REST API to extract details of each user (to provide the ID parameter, first obtain each user ID from the [List Users](/graph/api/user-list) REST API).
-- **User was assigned a license:** In the [Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center), search the audit log. Look for the operation _Change user license_. The _ModifiedProperties_ property will indicate that a new license was assigned.
-- **Users who are assigned a license but haven't used it:** Use the list of user licenses (described previously). Compare those results to the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data). Look for users that have no activity in the activity log. To make this easier, you can also view activities from the [Feature usage and adoption report](/fabric/admin/feature-usage-adoption#activity-overview-page) and its underlying semantic model from the [Admin Monitoring Workspace](/fabric/admin/monitoring-workspace).
-- **Subscription has available licenses not yet assigned:** In the Billing area of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), you can view the number of available licenses per product subscription. Or, with [Microsoft Graph](/graph/api/overview), use the [List Subscribed SKUs](/graph/api/subscribedsku-list) REST API to extract license details. The _ConsumedUnits_ property indicates how many licenses are assigned, and the _Enabled_ property indicates the number of licenses purchased.
+- **List of user licenses:** View the total number of licenses that are available and assigned in the billing area of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview). You can also drill down to review users who are assigned a license for each product subscription. Or, with [Microsoft Graph](/graph/api/overview), use the [List License Details](/graph/api/user-list-licensedetails) REST API to extract details of each user (to provide the ID parameter, first obtain each user ID from the [List Users](/graph/api/user-list) REST API).
+- **User was assigned a license:** Search the audit log in the [Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center). Look for the _Change user license_ operation. The _ModifiedProperties_ property indicates that a new license was assigned.
+- **Users who are assigned a license but haven't used it:** Use the list of user licenses (described previously). Compare those results to the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data). Look for users that have no activity in the activity log. To make this easier, you can also view activities from the [Feature usage and adoption report](/fabric/admin/feature-usage-adoption#activity-overview-page) and its underlying semantic model from the [Admin monitoring workspace](/fabric/admin/monitoring-workspace).
+- **Subscription has available licenses not yet assigned:** View the number of available licenses per product subscription in the billing area of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview). Or, with [Microsoft Graph](/graph/api/overview), use the [List Subscribed SKUs](/graph/api/subscribedsku-list) REST API to extract license details. The _ConsumedUnits_ property indicates how many licenses are assigned, and the _Enabled_ property indicates the number of licenses purchased.
 
 #### User trial auditing
 
@@ -381,21 +382,21 @@ When searching for new user trials in the [activity log](powerbi-implementation-
 - **Discuss and decide:** Schedule [workshops](powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md#plan-workshops) to make key decisions related to user subscriptions, licenses, and trials. Involve all relevant decision makers, stakeholders, and the executive sponsor, when appropriate.
 - **Create documentation:** Compile the information gathered, and document key decisions for future reference.
 - **Make updates:** Update user subscriptions and licenses based on the decisions made in the workshops.
-- **Create a process to manage user requests:** Set up a process for how users can request a new license.
+- **Create a process to manage user requests:** Set up a process for how users can request a license.
 - **Set up auditing:** Create auditing processes so you can track activities related to user subscriptions, licenses, and trials.
 
 ## Review and manage capacity licensing
 
-In addition to user licenses (described earlier in this article), your organization might find significant value in purchasing one or more capacity licenses. For instance, capacity licenses provide access to other features, such as the Fabric experiences that come with a Fabric license. These features can help you to support and scale your Power BI implementation.
+In addition to user licenses (described [earlier in this article](#review-and-manage-per-user-licensing)), your organization might find significant value in purchasing one or more capacity licenses. For instance, capacity licenses provide access to other features, such as the Fabric experiences that come with a Fabric license. These features can help you to support and scale your Power BI implementation.
 
 ### Step 1: Review capacity subscriptions
 
-It's important that you first understand the current state of capacity subscriptions. Your [billing and license administrators](../enterprise/service-admin-licensing-organization.md#which-admins-can-purchase-licenses-and-subscriptions) can help confirm what capacity subscriptions you have. You might also need to speak with current capacity administrators, or capacity contributors, to get a clear understanding of the purpose of each existing capacity. For more information, see [Manage user permissions](../enterprise/service-admin-premium-manage.md#manage-user-permissions).
+It's important that you first understand the current state of your capacity subscriptions. Your [billing and license administrators](../enterprise/service-admin-licensing-organization.md#which-admins-can-purchase-licenses-and-subscriptions) can help confirm what capacity subscriptions you have. You might also need to speak with current capacity administrators or capacity contributors to gain a clear understanding of the purpose of each existing capacity. For more information, see [Manage user permissions](../enterprise/service-admin-premium-manage.md#manage-user-permissions).
 
 You can compile the current state of your capacity subscriptions and licenses in different ways.
 
 - View [capacity settings](/fabric/admin/service-admin-portal-capacity-settings) in the Fabric admin portal.
-- View the [Billing](/microsoft-365/commerce) area of the Microsoft 365 admin center (applicable to Power BI Premium).
+- View the [billing area](/microsoft-365/commerce) of the Microsoft 365 admin center (applicable to Power BI Premium).
 - View the [Azure portal](/azure/azure-portal/azure-portal-overview) (applicable to Fabric capacity and Power BI Embedded).
 - Programmatically extract the data by using the relevant [Microsoft Graph](/graph/overview) APIs.
 
@@ -415,9 +416,9 @@ As you conduct your review, compile the following information.
 
 ### Step 2: Decide on capacity licenses
 
-After you've reviewed the capacity subscriptions, it's time to decide on capacity licenses.
+After you've reviewed the capacity subscriptions, you should decide on capacity licenses.
 
-The use of capacity can play a significant role in your strategy for creating, managing, publishing, and distributing content. Your decisions related to capacity licenses are in addition to the per-user licenses (described earlier in this article).
+The use of capacity can play a significant role in your strategy for creating, managing, publishing, and distributing content. Your decisions related to capacity licenses are in addition to the per-user licenses, which were [described earlier](#review-and-manage-per-user-licensing).
 
 #### Decide whether you need a capacity license
 
@@ -426,7 +427,7 @@ As you begin to analyze the needs for a capacity license, it's important to have
 Here are some questions you might initially explore.
 
 - **Data architecture:** What type of data architecture investments are currently in progress? How will they affect the choices you make? Do you have large semantic models that contain large volumes of data?
-- **Fabric experiences:** Which experiences are currently in use or are planned for future use? For example, you might be currently using Power BI experience but you intend to invest in a lakehouse architecture in Fabric, which is part of the Data Engineering experience.
+- **Fabric experiences:** Which experiences are currently in use or are planned for future use? For example, you might be currently using the Power BI experience but you intend to invest in a lakehouse architecture in Fabric, which is part of the Data Engineering experience.
 - **Data and BI requirements:** Are there business requirements to address analytical needs that are currently unmet? How do the requirements correlate to architecture (and licensing) decisions?
 - **Consumers:** How many view-only consumers do you have?
 - **Authors:** How many content authors do you have? Are authors centralized, distributed across various business units, or both?
@@ -437,28 +438,28 @@ Here are some questions you might initially explore.
 
 #### Decide which capacity license you need
 
-When you know that you need a capacity, you'll need to determine which type of capacity license is best suited.
+When you determine that you need a capacity, you'll need to decide which type of capacity license is best suited.
 
 Here's each of the capacity licenses and their uses and suitability.
 
 - **Fabric capacity (F SKUs):** F SKUs are purchased in Azure (note the pricing is regional). F SKUs have some advantages (that aren't available with P SKUs), including the ability to:
-  - [Scale](/fabric/enterprise/scale-capacity) the capacity to resize it up or down at any time. This ability to scale allows you to adjust the size–and cost–as you better understand your workload.
+  - [Scale](/fabric/enterprise/scale-capacity) the capacity to resize it up or down at any time. This ability to scale allows you to adjust the size—and cost—as you better understand your workload.
   - [Pause](/fabric/enterprise/pause-resume) the capacity at any time. This functionality is useful for infrequently used capacities.
   - Test the capabilities with a [Fabric trial](/fabric/get-started/fabric-trial) before committing to a purchase.
   - Use a lower tier [capacity license](/fabric/enterprise/licenses#capacity-license) for small workloads as a way to reduce the cost.
   - Choose the preferred commitment level:
     - **Pay-as-you-go:** The pay-as-you-go pricing model has no usage commitment. You can [resize](/fabric/enterprise/scale-capacity) the capacity up and down as needed, and even pause it. It's suitable when you want flexibility.
     - **Reservation:** The reserved pricing model involves a precommitted size (SKU) for a specific period, which results in a lower cost option than pay-as-you-go. However, a reserved instance can't be paused, so it's suitable when you need to run a capacity 24/7.
-  - Use organizational pricing incentives. If you have a monetary agreement in place with Microsoft, programs such as the [Microsoft Azure Consumption Commitment](/azure/cost-management-billing/manage/track-consumption-commitment) (MACC) apply to F SKUs.
+  - Use organizational pricing incentives. If you have a monetary agreement in place with Microsoft, programs such as the [Microsoft Azure Consumption Commitment (MACC)](/azure/cost-management-billing/manage/track-consumption-commitment) apply to F SKUs.
   - Use [Microsoft Cost Management](/fabric/enterprise/azure-billing) capabilities to monitor and track costs.
 - **Power BI Premium per capacity (P SKUs):** P SKUs are purchased in the Microsoft 365 admin portal. Power BI Premium uses a reserved pricing model, so it runs 24/7 and can't be scaled or paused. [You can't purchase P SKUs after July 1, 2024.](https://powerbi.microsoft.com/blog/important-update-coming-to-power-bi-premium-licensing/)
-- **Power BI Premium (EM SKUs):** EM SKUs are a specialized type of Power BI Premium capacity license that are purchased in the Microsoft 365 admin portal or through volume licensing (available through your Microsoft account manager). EM SKUs are targeted at straightforward embedding scenarios, such as [embedding a report](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md) in an internal application. The EM SKUs offer is a subset of functionality that's available in the P SKUs. They have less computing power, and no access to the Power BI service. Also, EM SKUs don't support Fabric experiences. For more information, see [Capacity and SKUs](../developer/embedded/embedded-capacity.md#capacity-and-skus).
-- **Power BI Embedded (A SKUs):** A SKUs are purchased in Azure (however, this offering is different from the F SKUs previously described). Power BI Embedded is primarily targeted to independent software vendors (ISVs) that want to embed Power BI content in their application. The A SKUs don't support Fabric items. For more information, see the [Embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md) usage scenario.
+- **Power BI Premium (EM SKUs):** EM SKUs are a specialized type of Power BI Premium capacity license that are purchased in the Microsoft 365 admin portal or through volume licensing (available through your Microsoft account manager). EM SKUs are targeted at straightforward embedding scenarios, such as [embedding a report](powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md) in an application. The EM SKUs offer is a subset of functionality that's available in the P SKUs. They have less compute power, and no access to the Power BI service. Also, EM SKUs don't support Fabric experiences. For more information, see [Capacity and SKUs](../developer/embedded/embedded-capacity.md#capacity-and-skus).
+- **Power BI Embedded (A SKUs):** A SKUs are purchased in Azure (however, this offering is different from the F SKUs previously described). Power BI Embedded is primarily targeted to independent software vendors (ISVs) that want to embed Power BI content in their applications. A SKUs don't support Fabric items. For more information, see the [Embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md) usage scenario.
 
 > [!TIP]
-> You can also use F SKUs for embedding Power BI content as you would with A and EM SKUs. For more information, see [Power BI Embedded with Microsoft Fabric](https://powerbi.microsoft.com/blog/power-bi-embedded-with-microsoft-fabric/).
+> You can also use F SKUs to embed Power BI content as you would with the A and EM SKUs. For more information, see [Power BI Embedded with Microsoft Fabric](https://powerbi.microsoft.com/blog/power-bi-embedded-with-microsoft-fabric/).
 
-The remainder of the article focuses on the F SKUs and P SKUs.
+The remainder of this article focuses on the F SKUs and P SKUs.
 
 #### Decide to use one or multiple capacities
 
@@ -467,19 +468,19 @@ A key decision is whether to use one larger capacity or multiple smaller capacit
 - **Level of centralization versus decentralization:** How important is centralized management versus decentralized management for the capacity? When you have a distributed or mesh architecture, it's more likely that multiple capacities will be necessary to allow different teams to manage their own capacities.
 - **Data storage location:** Do you have regional, industry-specific, or organizational data residency requirements? The geographic location where data is stored is correlated to the capacity using the [Multi-Geo](/fabric/admin/service-admin-premium-multi-geo) feature.
 - **Resource isolation:** What level of resource isolation per capacity is required? For example, you might need to create different capacities for specific business units. Or, you might create a capacity specifically to support workspaces for a [domain](/fabric/governance/domains).
-- **Compute resources:** What level of compute resources are required for each capacity? For example, if you choose to provision two F32 capacities, instead of one F64, then fewer capacity units are available for both capacities because they're split. The capacity units translate to [constraints for each SKU](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation), such as the maximum memory size for a semantic model.
-- **Features required:** In addition to the level of computing power, are certain capabilities necessary? For example, an F64 (or P1) or higher capacity allows users with a Free license to view BI content, or the ability to use [Copilot](/fabric/get-started/copilot-fabric-enable).
-- **Cost:** Do you need to track or allocate the cost separately for each SKU? That's easier to accomplish when you have separate capacities.
+- **Compute resources:** What level of compute resources are required for each capacity? For example, if you choose to provision two F32 capacities instead of one F64, then fewer capacity units are available for both capacities because they're split. The capacity units translate to [constraints for each SKU](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation), such as the maximum memory size for a semantic model.
+- **Features required:** In addition to the level of compute power, are certain capabilities necessary? For example, an F64 (or P1) or higher capacity allows users with a Free license to view BI content or use [Copilot](/fabric/get-started/copilot-fabric-enable).
+- **Cost:** Do you need to track or allocate cost separately for each SKU? That's easier to accomplish when you have separate capacities.
 
 #### Decide size of capacity
 
 At this point, you're ready to select a specific [capacity SKU](/fabric/enterprise/licenses#capacity-license). Consider what environment(s) you intend to run: development, test, and/or production. It's common for development and test environments to run on a smaller capacity than what's required for a production environment.
 
-To gain confidence about the capacity size that you'll need, consider doing load testing of the capacity. See [Capacity Planning](../developer/embedded/embedded-capacity-planning.md) and [Assess Your Capacity Load](../developer/embedded/load-assessment-planning-tool.md) for more information.
+To gain confidence about the capacity size that you'll need, consider doing load testing of the capacity. For more information, see [Capacity Planning](../developer/embedded/embedded-capacity-planning.md) and [Assess Your Capacity Load](../developer/embedded/load-assessment-planning-tool.md).
 
 #### Decide needs for scaling up and down
 
-It's important to consider scalability needs during the license planning process because it contributes to cost. For example, you might have needs to occasionally [resize](/fabric/enterprise/scale-capacity) (or pause) an F SKU capacity. Or, you can set up [autoscale](../enterprise/service-premium-auto-scale.md) to handle occasional or unexpected bursts in P SKU capacity usage levels. For more information, see [Resize capacity](#resize-capacity).
+It's important to consider scalability needs during the license planning process because it contributes to cost. For example, you might have needs to occasionally [resize](/fabric/enterprise/scale-capacity) (or pause) an F SKU capacity. Alternatively, you can set up [autoscale](../enterprise/service-premium-auto-scale.md) to handle occasional or unexpected bursts in P SKU capacity usage levels. For more information, see [Resize capacity](#resize-capacity).
 
 > [!TIP]
 > You can think about scalability in two ways.
@@ -487,16 +488,17 @@ It's important to consider scalability needs during the license planning process
 > - _Scaling up or down_ is when you add or remove resources (for example, scaling up to an F16 from an F8 capacity).
 > - _Scaling out_ is when you add more capacities (for example, you could purchase two F8s instead of an F16). However, capacities don't use combined resources (like a [data gateway cluster](/data-integration/gateway/service-gateway-high-availability-clusters) would when you scale out). Therefore, if you're considering scaling out to multiple capacities, be aware that separate capacities purposefully work in isolation.
 
-#### Decide whether on-premises or hybrid license is needed
+#### Decide whether on-premises or a hybrid license is needed
 
-Power BI Report Server (PBIRS) is a simplified reporting solution. It's targeted at organizations who want to implement a hybrid approach where Power BI content might be published to either the cloud-based Fabric portal, to Power BI Report Server, or both. You can install Report Server on a machine that's running within on-premises infrastructure, or on an Azure virtual machine (with Azure Hybrid Benefit).
+Power BI Report Server (PBIRS) is a simplified reporting solution. It's targeted at organizations that want to implement a hybrid approach where Power BI content might be published to either the cloud-based Fabric portal, to Power BI Report Server, or both. You can install Report Server on a machine that's running within on-premises infrastructure, or on an Azure virtual machine (with [Azure Hybrid Benefit](/windows-server/get-started/azure-hybrid-benefit)).
 
-You can obtain a Report Server license in one of two ways:
+You can obtain a Report Server license in one of two ways.
 
 - Power BI Premium (P SKU) subscription
 - SQL Server Enterprise Edition with Software Assurance (SA)
 
-Also, an author who publishes content to the Report Server is required to have a Pro license.
+> [!NOTE]
+> An author who publishes content to the Report Server is required to have a Pro license.
 
 > [!TIP]
 > Conduct a technical [proof of concept](powerbi-implementation-planning-bi-strategy-bi-solution-planning.md#step-3-conduct-a-proof-of-concept) to ensure that Power BI Report Server will meet your needs. Be aware that feature parity with the Fabric portal isn't a goal. Also, when publishing content to Power BI Report Server, the use of [Power BI Desktop for Report Server](powerbi-implementation-planning-user-tools-devices.md#power-bi-desktop-for-report-server) (different from regular Power BI Desktop) is recommended.
@@ -504,7 +506,7 @@ Also, an author who publishes content to the Report Server is required to have a
 For more information, see [Licensing Power BI Report Server](../report-server/get-started.md#licensing-power-bi-report-server).
 
 > [!IMPORTANT]
-> We strongly recommend that you consult your volume license agreement and speak with your Microsoft account representative for specific details. For example, the Report Server licensing agreement includes limits related to the number of cores on the target machine.
+> We strongly recommend that you refer to your volume license agreement and speak with your Microsoft account representative for specific details. For example, the Report Server licensing agreement includes limits related to the number of cores on the target machine.
 
 ### Step 3: Update capacity licenses
 
@@ -514,7 +516,7 @@ The following topics are actions that might be appropriate.
 
 #### Adjust capacity subscription
 
-Sometimes you might need to make an adjustment to an existing capacity subscription based on what you found during your review (Step 1) and the decisions made (Step 2).
+Sometimes you might need to make an adjustment to an existing capacity subscription based on what you found during your review ([Step 1](#step-1-review-capacity-subscriptions)) and the decisions made ([Step 2](#step-2-decide-on-capacity-licenses)).
 
 Here are some examples of changes you might make.
 
@@ -526,12 +528,12 @@ Here are some examples of changes you might make.
 
 #### Resize capacity
 
-You might discover there's a need to resize your capacity if a smaller or larger size would better meet your needs.
+You might discover there's a need to resize your capacity when a smaller or larger size would better meet your needs.
 
 There are two ways to handle resizing of a capacity.
 
 - **Manual scaling:** You can choose to [resize](/fabric/enterprise/scale-capacity) (or pause) an F SKU capacity in the Azure portal. That's helpful when you're troubleshooting performance issues, or you have a known period of time when the load will be higher (such as the final week of every month).
-- **Automated scaling:** You can enable [autoscale](../enterprise/service-premium-auto-scale.md) to handle occasional or unexpected bursts in P SKU capacity usage levels without requiring any manual effort. Autoscale can respond to these bursts by elastically resizing the resources to support the increased workload. Automated scaling up reduces the risk of incurring performance or user experience challenges, in exchange for extra cost. If your capacity isn't well managed, autoscale might trigger more often than expected, which could prompt you to consider a larger capacity size.
+- **Automated scaling:** You can enable [autoscale](../enterprise/service-premium-auto-scale.md) to handle occasional or unexpected bursts in P SKU capacity usage levels without requiring any manual effort. Autoscale can respond to these bursts by elastically resizing the resources to support the increased workload. Automated scaling up reduces the risk of incurring performance or user experience challenges, in exchange for extra cost. If your capacity isn't well managed, autoscale might trigger more often than expected, which could lead you to consider a larger capacity size.
 
 ### Step 4: Document capacity licenses
 
@@ -544,13 +546,13 @@ You can build on the information captured in [Step 1](#step-1-review-capacity-su
 - Timing or pending action items
 - Governance requirements related to capacity licenses
 - Auditing requirements related to capacity licenses
-- Snapshot of capacity license information
+- A snapshot of capacity license information
 
 ### Step 5: Manage capacity licenses
 
 Capacity management and subscription management are two separate topics. However, they're highly interrelated. Both need attention on an ongoing basis. The following topics are aspects to consider.
 
-#### Create process to accept capacity requests
+#### Create a process to accept capacity requests
 
 You should create a repeatable, documented, process for users to request a capacity. It typically involves creating an online form. Request information that you'll need to assess the capacity request, such as:
 
@@ -564,21 +566,21 @@ You should create a repeatable, documented, process for users to request a capac
 
 Here are some considerations for monitoring and understanding [capacity usage](/fabric/enterprise/metrics-app).
 
-- Analyze the load to determine whether the current capacity size (SKU) works well for the specific data and BI needs. Be sure to understand how [capacity units](/fabric/enterprise/licenses#capacity-license) (CUs) work. Analyze any [bursting and smoothing](https://blog.fabric.microsoft.com/blog/fabric-capacities-everything-you-need-to-know-about-whats-new-and-whats-coming/#BurstSmooth) activity to analyze whether you're using your capacity efficiently over time or whether it's consistently overloaded. You can analyze capacity usage by using the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app).
+- Analyze the load to determine whether the current capacity size (SKU) works well for the specific data and BI needs. Be sure to understand how [capacity units (CUs)](/fabric/enterprise/licenses#capacity-license) work. Analyze any [bursting and smoothing](https://blog.fabric.microsoft.com/blog/fabric-capacities-everything-you-need-to-know-about-whats-new-and-whats-coming/#BurstSmooth) activity to analyze whether you're using your capacity efficiently over time, or whether it's consistently overloaded. You can analyze capacity usage by using the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app).
 - Resize a capacity when you discover that it's too large or too small to serve your current needs. Changing the size is the same as changing the SKU. The change affects the pricing tier.
 - Create a new capacity when you need to:
   - Segregate a workload.
   - Store data in a different region.
   - Assign different capacity administrators (for decentralized capacity administration).
-- Create user training, or communicate with authors, when you find that they can take specific action to improve the efficiency of the capacity.
+- Create user training or communicate with authors when you find that they can take specific action to improve the efficiency of the capacity.
 
 #### Set up notifications
 
-If your capacity is regularly overloaded, it indicates that you might need to purchase a larger capacity (scale up) or create other capacities (scale out)—or move content to a different capacity. For that reason, [capacity management](/fabric/admin/capacity-settings?tabs=power-bi-premium) and licensing management have a significant impact on each other.
+If your capacity is regularly overloaded, it indicates that you might need to purchase a larger capacity (scale up) or create other capacities (scale out)—or move content to a different capacity. For these reasons, [capacity management](/fabric/admin/capacity-settings?tabs=power-bi-premium) and licensing management have a significant impact on each other.
 
 You should set up the following notifications to be kept informed.
 
-- Set the [tenant setting](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents) so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
+- Set the _[Enable notifications for service outages or incidents](../support/service-interruption-notifications.md#enable-notifications-for-service-outages-or-incidents)_ tenant setting so Fabric notifies you when the capacity becomes overloaded, or when an outage or incident occurs.
 - Set up [Azure Monitor](/azure/azure-monitor/alerts/alerts-overview) alerts to be notified when certain capacity metrics exceed a threshold. This feature is available for F SKUs, A SKUs, and autoscale for P SKUs.
 
 #### Review and optimize capacity costs
@@ -586,7 +588,7 @@ You should set up the following notifications to be kept informed.
 You should regularly review and manage your billing. Consider the following options to optimize cost.
 
 - **Differences in purpose:** For example, you might choose to use a smaller capacity size (such as an F16) for test workspaces, and a larger capacity size (such as an F64) for production workspaces.
-- **Efficient use of computing resources:** Use the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app) to determine whether the compute resources are being used efficiently and whether there's any potential to optimize cost.
+- **Efficient use of compute resources:** Use the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app) to determine whether the compute resources are being used efficiently and whether there's any potential to optimize cost.
 - **Monitoring compute cost:** Monitor the cost of your capacity, and how frequently capacities are scaled up and down. Consider using cost analysis, spending limits, or budgets with [Microsoft Cost Management](/azure/cost-management-billing/costs/overview-cost-management).
 - **Billable storage cost:** Check the billable storage for each workspace in the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app). For Fabric items, storage cost is computed separately from the compute cost. Also, check the [disaster recovery](/fabric/security/disaster-recovery-guide#disaster-recovery-capacity-setting) capacity setting. This setting will have an impact on the billable storage costs.
 - **Scale up and down:** Create a process to automatically scale the capacity up or down (or pause it, when applicable) when the workload is intermittent yet predictable.
@@ -597,21 +599,21 @@ You should regularly review and manage your billing. Consider the following opti
 It's important to have a process to regularly audit capacities. A Fabric administrator will need to work together with other [administrators](/microsoft-365/admin/add-users/about-admin-roles) to obtain this information (such as a global administrator, billing administrator, or Azure administrator).
 
 > [!TIP]
-> This section focuses on auditing for subscriptions, licenses, and trials. There are many additional auditing and monitoring aspects for capacity, including monitoring of usage and performance (and identifying needs to scale up or down) by using the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app). You will also want to monitor the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) for situations such as: capacity settings changed, capacity administrators are updated, capacity contributors are added, or when workspaces are assigned to a capacity.
+> This section focuses on auditing for subscriptions, licenses, and trials. There are many additional auditing and monitoring aspects for capacity, including monitoring of usage and performance (and identifying needs to scale up or down) by using the [Fabric Capacity Metrics App](/fabric/enterprise/metrics-app). You will also want to monitor the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) for situations such as when capacity settings change, capacity administrators are updated, capacity contributors are added, or when workspaces are assigned to a capacity.
 
 Here are some actions to identify when to audit subscriptions, trials, and cost for capacities.
 
-- **List of active capacities:** The [Get Capacities as Admin](/rest/api/power-bi/capacities/get-capacities) REST API can provide you with information such as SKU, state, administrators, and region for all of the capacities in your tenant. It's an [admin API](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-a-user-api-or-admin-api) that returns a snapshot as of a point in time. If you capture this data regularly, you can compare snapshots (for example, this week versus. last week) to detect changes that have occurred.
-- **A new Fabric trial was started by a user:** In the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data), look for the _ChangeCapacityState_ activity. The _CapacityState_ property indicates a new Fabric capacity was provisioned. The _ItemName property_ indicates that it's a trial capacity, the SKU, and its ID.
-- **A new Fabric capacity was created, or an existing capacity was resized:** In [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log), look for the _Update Fabric Capacity Create_ operation. You can also view Microsoft Fabric capacities in the Azure portal.
+- **List of active capacities:** The [Get Capacities as Admin](/rest/api/power-bi/capacities/get-capacities) REST API can provide you with information such as SKU, state, administrators, and region for all of the capacities in your tenant. It's an [admin API](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#choose-a-user-api-or-admin-api) that returns a snapshot as of a point in time. If you capture this data regularly, you can compare snapshots (for example, this week versus last week) to detect changes that have occurred.
+- **A new Fabric trial was started by a user:** Look for the _ChangeCapacityState_ activity in the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data). The _CapacityState_ property indicates a new Fabric capacity was provisioned. The _ItemName property_ indicates that it's a trial capacity, the SKU, and its ID.
+- **A new Fabric capacity was created, or an existing capacity was resized:** Look for the _Update Fabric Capacity Create_ operation in the [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log). You can also view Fabric capacities in the Azure portal.
 - **The compute engine for a Fabric capacity was paused or restarted:** In [Azure Monitor activity log](/azure/azure-monitor/essentials/activity-log), look for the _Suspend_ operation, or the _Resume_ operation. You can also view the state of a Fabric capacity in the Azure portal.
-- **A new Premium capacity was created:** In the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data), look for the _ChangeCapacityState_ activity. The _CapacityState_ property indicates it was provisioned as a new capacity. You can also view products that have an active subscription in the [billing](/microsoft-365/commerce) area of the Microsoft 365 admin center.
+- **A new Premium capacity was created:** In the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data), look for the _ChangeCapacityState_ activity. The _CapacityState_ property indicates that it was provisioned as a new capacity. You can also view products that have an active subscription in the [billing area](/microsoft-365/commerce) of the Microsoft 365 admin center.
 - **Monitor cost for a Fabric capacity:** Use [Microsoft Cost Management](/fabric/enterprise/azure-billing) capabilities to [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) for Microsoft Fabric capacities and other Azure services.
 - **Monitor cost for Premium capacity:** You can [view invoices](/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice) in the billing area of the Microsoft 365 admin center.
-- **A workspace was assigned to, or removed from, a capacity:** In the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data), look for the _MigrateWorkspaceIntoCapacity_ activity or the _RemoveWorkspacesFromCapacity_ activity.
+- **A workspace was assigned to, or removed from, a capacity:** Look for the _MigrateWorkspaceIntoCapacity_ activity or the _RemoveWorkspacesFromCapacity_ activity in the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data).
 
 > [!TIP]
-> When you navigate the Azure Portal, ignore the _Service Fabric_ resources. These resources are different services from Microsoft Fabric.
+> When you navigate the Azure Portal, don't be confused by the _Service Fabric_ resources. These resources are different services from Microsoft Fabric.
 
 > [!IMPORTANT]
 > The information presented in this step isn't intended to be an all-inclusive list of ways to audit the data. Rather, it's intended to provide you with ideas to get you started with your auditing efforts. For other ideas, we recommend that you consult with your billing administrators.
