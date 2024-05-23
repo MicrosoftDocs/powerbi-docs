@@ -31,6 +31,8 @@
       href: dax-query-copilot-features.md
     - name: "Use Copilot to write and explain DAX queries"
       href: dax-query-copilot-create.md
+    - name: Use Copilot to create measure descriptions
+      href: desktop-measure-copilot-descriptions.md
     - name: "Work with Model explorer (preview)"
       href: model-explorer.md        
     - name: "Understand model relationships"
