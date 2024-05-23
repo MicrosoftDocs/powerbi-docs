@@ -119,10 +119,12 @@ To access Copilot in Power BI service, the workspace has to be running on at lea
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
 - In Power BI Apps, free users can use the Copilot pane (as long as the workspace is compatible with Copilot).
+ 
+Read more about using [Copilot in the Power BI service](copilot-create-report-service.md).
 
 ## Power BI Desktop
 
-- To use Copilot in Power BI Desktop, you need edit access to a workspace that is on at least F64 or Power BI Premium in the Power BI service.
+- To use Copilot in Power BI Desktop, you need edit access to a workspace that is on at least F64 or Power BI Premium in the Power BI service. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 
 ## Considerations and limitations
 
