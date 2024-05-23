@@ -122,6 +122,10 @@
           href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
           href: copilot-prompts-narratives.md
+        - name: Copilot DAX query features
+          href: ../transform-model/dax-query-copilot-features.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+        - name: Use Copilot to write and explain DAX queries
+          href: ../transform-model/dax-query-copilot-create.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Use Copilot to create measure descriptions
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Enhance Q&A with Copilot
