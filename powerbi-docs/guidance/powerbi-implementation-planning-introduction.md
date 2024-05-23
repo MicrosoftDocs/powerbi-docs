@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, video-RWUWA9
-ms.date: 04/24/2024
+ms.date: 05/16/2024
 ---
 
 # Power BI implementation planning
@@ -26,7 +26,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [BI strategy](powerbi-implementation-planning-bi-strategy-overview.md)
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
 - [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
-- Subscriptions, licenses, and trials
+- [Subscriptions, licenses, and trials](powerbi-implementation-planning-subscriptions-licenses-trials.md)
 - [Tenant administration](powerbi-implementation-planning-tenant-administration.md)
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
 - Data management
