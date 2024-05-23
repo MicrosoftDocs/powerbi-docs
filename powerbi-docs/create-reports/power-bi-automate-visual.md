@@ -139,7 +139,7 @@ If your flow is data contextual, make sure you test how the filter selections in
    :::image type="content" source="media/power-bi-automate-visual/details-page-executed-flow.png" alt-text="Screenshot shows See the run history on the Details page.":::
 
 > [!IMPORTANT]
-> You can only run these Power BI flows within the context of a Power BI report. Flows cannot be started from Power Automate portal.
+> You can only run these Power BI flows within the context of a Power BI report. You can't start flows from the Power Automate portal.
 To test the flow in edit mode of the report, select Back to report, and then press Ctrl + click on the button to run the flow in the context of the report. You can also navigate to edit mode or to Power Automate to view the run history of the flow and ensure it is running successfully.
 
 ## Share the flow
