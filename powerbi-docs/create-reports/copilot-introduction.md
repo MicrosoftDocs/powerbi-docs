@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/22/2024
+ms.date: 05/23/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -31,6 +31,19 @@ For answers to common questions related to business data security and privacy to
 
 - [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview) 
 - [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
+
+### Access Copilot in the Power BI service
+
+To access Copilot in Power BI service, the workspace has to be running on F64 or Premium capacity.
+
+- To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
+- To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
+ 
+Read more about using [Copilot in the Power BI service](copilot-create-report-service.md).
+
+### Access Copilot in Power BI Desktop
+
+- You need to have write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 
 ## Copilot requirements
 
@@ -111,19 +124,6 @@ Copilot can add descriptions to your semantic model measures. People who build r
 ### Write DAX queries
 
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
-
-### Power BI service
-
-To access Copilot in Power BI service, the workspace has to be running on F64 or Premium capacity.
-
-- To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
-- To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
- 
-Read more about using [Copilot in the Power BI service](copilot-create-report-service.md).
-
-### Power BI Desktop
-
-- You need to have write access to a workspace that is on F64 or Power BI Premium in the Power BI service, where you plan to publish the report. Read more about using [Copilot in Power BI Desktop](copilot-power-bi-desktop.md).
 
 ## Considerations and limitations
 
