@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 With DAX query view in Power BI, you can use Copilot to write and explain DAX queries in DAX query view with Data Analysis Expressions (DAX) queries in semantic models. DAX query view comes with several ways to help you be as productive as possible with DAX queries. This feature is currently in public preview. See [Copilot DAX query features](dax-query-copilot-features.md) for ways that Copilot can help you be as productive as possible with DAX queries.
 
-Copilot can write and explain DAX queries in DAX query view in public preview. DAX query view includes an inline Fabric Copilot to write and explain DAX queries, which remains in public preview.
+Copilot can write and explain DAX queries in DAX query view in public preview. DAX query view includes an inline Fabric Copilot to write and explain DAX queries, which remain in public preview.
 
 > [!NOTE]
 > DirectQuery model authors can also use DAX query view. View the data in your tables whenever you want.
