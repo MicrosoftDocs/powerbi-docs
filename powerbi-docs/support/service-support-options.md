@@ -1,9 +1,9 @@
 ---
-title: Power BI Pro, Power BI Premium, and Fabric support options
-description: This article describes how users of Power BI Pro, Power BI Premium, and Fabric can access self-service and assisted support options.
+title: Power BI and Fabric support overview
+description: This article describes how users of Power BI and Fabric an overview of the support
 author: mihart
 ms.author: kfollis
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-troubleshooting
 ms.topic: troubleshooting
