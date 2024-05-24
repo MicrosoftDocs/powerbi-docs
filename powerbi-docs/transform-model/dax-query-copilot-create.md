@@ -34,9 +34,9 @@ Previously the DAX query generated was not considered if you typed additional pr
 
 ## 3. Syntax checks on the generated DAX query
 
-Previously there was no syntax check before the generated DAX query was returned. Now the syntax is checked, and the prompt automatically retried once. If the retry is also invalid, the generated DAX query is returned with a note that there is an issue, giving you the option to rephrase your request or fix the generated DAX query. 
+Previously there was no syntax check before the generated DAX query was returned. Now the syntax is checked, and the prompt automatically retried once. If the retry is also invalid, the generated DAX query is returned with a note that there is an issue, giving you the option to rephrase your request or fix the generated DAX query:
 
-:::image type="content" source="media/dax-query-copilot/copilot-query-contains-errors.png" alt-text="Screenshot of showing the query contains errors."::: 
+"This query contains errors. Rephrase your request and try again or try fixing it yourself."
 
 ## 4. Inspire buttons to get you started with Copilot
  

@@ -70,7 +70,7 @@ In a world overflowing with data, the ability to extract meaningful insights is 
 ## Limitations and considerations
 
 - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F64 or higher, or P1 or higher) are supported. 
-- Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot) for details. 
+- Your administrator needs to enable the tenant switch before you start using Copilot. See the article [Copilot tenant settings](/fabric/admin/service-admin-portal-copilot) for details.
 - Your F64 or P1 capacity needs to be in one of the regions listed in this article, [Fabric region availability](/fabric/admin/region-availability). If it isn't, you can't use Copilot.  
 - These capabilities are also available in edit mode, and in Desktop.
 - Fabric Copilot experiences in Power BI are preview experiences.  This experience is in public preview.
