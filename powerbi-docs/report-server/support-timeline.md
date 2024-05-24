@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/24
+ms.date: 05/24/2024
 ---
 
 # Support timeline for Power BI Report Server
