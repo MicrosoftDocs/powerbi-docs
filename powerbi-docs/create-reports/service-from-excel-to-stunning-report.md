@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/10/2023
+ms.date: 05/24/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a Power BI report in Microsoft Teams
@@ -58,15 +58,23 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
-1. In **My workspace**, select **New** > **Upload a file**.
+1. In **My workspace**, select **New** > **Report**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-upload.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Upload a file option.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report-from-excel.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Report option.":::
 
-1. Select **Excel** > **Browse this device**, and browse to where you saved the Financial Sample Excel file. Then select **Open**.
+1. Select **Excel**.
+
+    :::image type="content" source="media/service-from-excel-to-stunning-report/new-report-select-excel.png.png" alt-text="Screenshot of My Workspace, highlighting the Financial Sample semantic model.":::
 
     Now you have a Financial Sample semantic model. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-dataset.png" alt-text="Screenshot of My Workspace, highlighting the Financial Sample semantic model.":::
+1. Select **Upload file**, and drag or browse to the Excel file location.
+
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-upload-file.png" alt-text="Screenshot of the Power Query dialog, highlighting the Connect to data source dialog box.":::
+
+1. If you aren't signed in, you need to sign in before you can upload the Excel file. Select **Next**.
+
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-signed-in-next.png" alt-text="Screenshot of Power Query dialog, with Excel file uploaded in the the Connect to data source dialog box.":::
 
 1. You want to create a report. While still in **My workspace**, select **New** > **Report**.
 
