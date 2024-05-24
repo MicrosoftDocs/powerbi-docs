@@ -47,7 +47,7 @@ Or you can dig deeper for more nuanced exploration into key slices of your data 
 
 Copilot scans the report page visuals and answers your request in natural language, making analysis of the report easy.  From uncovering insights to highlighting key sales metrics, your Copilot prompts pave the way for data discovery. Then you can copy and paste the Copilot responses into emails, PowerPoint slides, or Teams threads to keep everyone up to date.
 
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane explaining the report data." light="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png":::
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane explaining the report data." lightbox="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png":::
 
 
 ## Unleash the power of questions 
@@ -59,7 +59,7 @@ Another aspect of Copilot's consumption mode is its ability to respond to your q
 - What is the average length of stay?
 - Copilot pane answering a data question
 
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png" alt-text="Screenshot of Power BI Copilot pane highlighting relevant visual." light="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png":::
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png" alt-text="Screenshot of Power BI Copilot pane highlighting relevant visual." lightbox="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png":::
 
 ## Empower data exploration 
 
