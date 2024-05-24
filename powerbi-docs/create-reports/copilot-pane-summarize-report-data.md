@@ -18,7 +18,7 @@ no-loc: [Copilot]
 
  The Copilot pane in Power BI offers new capabilities in public preview in view and edit modes. You can ask Power BI Copilot questions about the data in your model. You could already ask questions about the data present in the visuals on your report pages. Now you can get answers directly from the underlying model. Just ask questions about your data, and if the answer isn't already on your report, Copilot queries your model for the data instead and returns the answer in the form of a visual. You can ask Copilot for summaries, insights, and answers from your report content.
 
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane open and showing interesting customer information on report page.":::
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane open and showing interesting customer information on report page." lightbox="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png":::
 
 ## Copilot in view mode
 
@@ -35,7 +35,7 @@ Copilot doesn't just provide overviews and insights of report content. With cust
 - Summarize visuals on this page.
 - Give an executive summary of this report.
  
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-summarize-visuals-page.png" alt-text="Screenshot of Power BI Copilot pane open and showing summary for visuals on report page.":::
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-summarize-visuals-page.png" alt-text="Screenshot of Power BI Copilot pane open and showing summary for visuals on report page." lightbox="media/copilot-pane-summarize-report-data/copilot-summarize-visuals-page.png":::
 
 Or you can dig deeper for more nuanced exploration into key slices of your data with custom requests that deliver tailored insights and answers.  Here are some examples of custom requests to get you started. Keep in mind, the requests are specific to the data in the report you're viewing:
 
@@ -43,11 +43,11 @@ Or you can dig deeper for more nuanced exploration into key slices of your data 
 - What are some interesting customer segments?
 - What is the relationship between product type and revenue?
 
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane showing customer segments."::: 
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane showing customer segments." lightbox="media/copilot-pane-summarize-report-data/copilot-show-interesting-customer-segments.png":::
 
 Copilot scans the report page visuals and answers your request in natural language, making analysis of the report easy.  From uncovering insights to highlighting key sales metrics, your Copilot prompts pave the way for data discovery. Then you can copy and paste the Copilot responses into emails, PowerPoint slides, or Teams threads to keep everyone up to date.
 
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane explaining the report data.":::
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png" alt-text="Screenshot of Power BI Copilot pane explaining the report data." light="media/copilot-pane-summarize-report-data/copilot-interesting-customer-segments.png":::
 
 
 ## Unleash the power of questions 
@@ -59,7 +59,7 @@ Another aspect of Copilot's consumption mode is its ability to respond to your q
 - What is the average length of stay?
 - Copilot pane answering a data question
 
-:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png" alt-text="Screenshot of Power BI Copilot pane highlighting relevant visual.":::
+:::image type="content" source="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png" alt-text="Screenshot of Power BI Copilot pane highlighting relevant visual." light="media/copilot-pane-summarize-report-data/copilot-show-relevant-visual.png":::
 
 ## Empower data exploration 
 
