@@ -14,7 +14,7 @@ ms.date: 05/27/2024
 
 # Best practices for creating mobile-optimized reports
 
-Well-designed, mobile-optimized layouts for your Power BI reports offer the best way for users to consume your data using their mobile device while on the go. This article presents best practices and techniques for getting the most out of the features Power BI offers for creating such attractive, effective, mobile-optimized views of Power BI reports.
+Well-designed, mobile-optimized layouts for your Power BI reports offer the best way for users to consume your data while on the go using their mobile device . This article presents best practices and techniques for getting the most out of the features Power BI offers for creating such attractive, effective, mobile-optimized views of Power BI reports.
 
 :::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/mobile-desktop-comparison.png" alt-text="Image showing mobile layout and desktop layout, side by side." border="false":::
 
