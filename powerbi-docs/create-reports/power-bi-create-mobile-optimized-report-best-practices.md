@@ -41,7 +41,7 @@ Consider the following tips:
 
 * Avoid extra white space in each visual.
 
-## Space out your visuals
+## Space your visuals out
 
 Consider expanding your visuals to match the maximum width of your device, which is 324 pixels. A default margin is automatically included, even when visuals are extended to the device's maximum width, so there's no need to reserve extra space.
 
