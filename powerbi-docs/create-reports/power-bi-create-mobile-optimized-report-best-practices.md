@@ -16,26 +16,26 @@ ms.date: 05/27/2024
 
 Using mobile layout for your Power BI reports is the best way to consume your data on the go. This article explores the best practices and techniques for designing mobile-friendly reports.
 
-:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/image1.png" alt-text="{alt-text}":::
+:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/mobile-desktop-comparison.png" alt-text="Image showing mobile layout and desktop layout, side by side." border="false":::
 
-## Keep mobile in mind while designing your desktop report
+## Keep mobile devices in mind while designing your desktop report
 
 The best practice when designing a report in Power BI is to build each report page desktop layout alongside the mobile layout. This allows for coherence between desktop and mobile. 
 
 When duplicating a desktop report page that has both desktop and mobile layout, both layouts will be duplicated. This allows for easier page formatting when you want to maintain a certain visual layout between pages such as a report header or page navigator. Try creating a report page with both desktop and mobile layouts that will be used as a skeleton for building the rest of the report pages.
 
-## Keep it focused
+## Focus on the most important content
 
 Add only significant and regularly used visuals to your mobile layout. Opt for simplified headers and designs due to the limited screen space on mobile compared to desktop. Use the [mobile visualization pane](/power-bi/create-reports/power-bi-create-mobile-optimized-report-format-visuals) to optimize visuals’ format specifically for mobile layout. (changes made to the mobile layout will not affect the desktop layout). Consider these following tips:
 
 * Minimize visual titles by using smaller font sizes, avoiding fonts smaller than 9 points.
 * Remove insignificant details when possible, such as axis titles, gridlines and legend. 
 
-:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/image2.png" alt-text="{alt-text}":::
+:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/font-size-illustration.png" alt-text="Image of mobile device illustrating an acceptable font size in a Power BI report." border="false":::
 
 * Prefer to place objects like page navigator and slicers horizontally instead of vertically.
 
-:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/image3.png" alt-text="{alt-text}":::
+:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/object-placement.png" alt-text="Image of a mobile device showing how to effectively place objects on the mobile layout." border="false":::
 
 * Avoid extra white space in each visual.
 
@@ -51,7 +51,7 @@ Space out your visuals keeping at least 6-8 pixels (single arrow press on the ke
 
 The flow of mobile layout is from top to bottom. The most important visuals of the page should be positioned at the top, whether they are the most significant data-driven visuals or slicers that illustrate a point. Visuals closely linked to each other should be placed adjacent. Less significant visuals should find their place towards the bottom of the report page, accessible through downward scrolling, or not added to the mobile layout at all. Less visuals help improve the report’s loading time and overall performance. Keep in mind that you can always tilt your device to landscape to view the original report page. 
 
-:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/image4.png" alt-text="{alt-text}":::
+:::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/arrange-items-as-story.png" alt-text="Image illustrating how items can be arranged in the mobile-optimized report to tell a story." border="false":::
 
 ## Avoid in-visual vertical scroll
 
