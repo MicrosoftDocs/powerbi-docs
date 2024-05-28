@@ -19,15 +19,15 @@ The following sections go through some common issues you might come across when 
 
 ## Update to the latest version
 
-The current version of the gateway for personal use is the on-premises data gateway (personal mode). Update your installation to use that version.
+The current version of the gateway for personal use is the on-premises data gateway (personal mode). To use that version, update your installation.
 
-Many issues can surface when the gateway version is out of date. It's a good general practice to make sure you're on the latest version. If you haven't updated the gateway for a month or longer, consider installing the latest version of the gateway. Then see if you can reproduce the issue.
+Many issues can surface when the gateway version is out of date. It's a good general practice to make sure you're on the latest version. If the date of the last the gateway update is a month or longer, consider installing the latest version of the gateway. Then attempt to reproduce the issue.
 
 ## Installation
 
 **Gateway (personal mode) operates on 64-bit versions:** If your computer is a 32-bit version, you can't install the gateway (personal mode). Your operating system has to be a 64-bit version. Install a 64-bit version of Windows or install the gateway (personal mode) on a 64-bit computer.
 
-**Operation timed out:** This message is common if the computer, physical or virtual machine, on which you’re installing the gateway (personal mode) has a single core processor. Close any applications, turn off any non-essential processes, and try installing again.
+**Operation timed out:** This message is common if the computer, physical or virtual machine, on which you’re installing the gateway (personal mode) has a single core processor. Close any applications, turn off any nonessential processes, and try installing again.
 
 **Data management gateway or Analysis Services connector can't be installed on the same computer as gateway (personal mode):** If you already have an Analysis Services connector or a data management gateway installed, you must first uninstall the connector or the gateway. Then, try installing the gateway (personal mode).
 
@@ -70,7 +70,7 @@ You might get this error in settings for a dataset if you have a scheduled refre
 
 **Error: There is not enough space for this row.**
 
-**Solution:** This error occurs if you have a single row greater than 4 MB in size. Find the row from your data source, and attempt to filter it out or reduce the size for that row.
+**Solution:** This error occurs if you have a single row greater than 4 MB in size. Find the row from your data source and filter out the row or reduce the size for that row.
 
 ## Data sources
 
@@ -119,7 +119,7 @@ With **Refresh history**, you can see what errors occurred and find useful data 
 
 ### Event logs
 
-Several event logs can provide information. The first two, **Data Management Gateway** and **PowerBIGateway**, are present if you're an admin on the machine. If you're not an admin, and you're using the data gateway (personal mode), you'll see the log entries within the **Application** log.
+Several event logs can provide information. The first two, **Data Management Gateway** and **PowerBIGateway**, are present if you're an admin on the machine. If you're not an admin, and you're using the data gateway (personal mode), the log entries within the **Application** log displays.
 
 The **Data Management Gateway** and **PowerBIGateway** logs are present under **Application and Services Logs**.
 
@@ -135,7 +135,7 @@ The **Data Management Gateway** and **PowerBIGateway** logs are present under **
 
 ### Setup logs
 
-If the gateway (personal mode) fails to install, you'll see a link to show the setup log. The setup log can show you details about the failure. These logs are Windows Install logs, also known as MSI logs. They can be fairly complex and hard to read. Typically, the resulting error is at the bottom, but determining the cause of the error isn't trivial. It could be a result of errors in a different log. It could also be a result of an error higher up in the log.
+If the gateway (personal mode) fails to install, a link to show the setup log displays. The setup log can show you details about the failure. These logs are Windows Install logs, also known as Microsoft Software Installer (MSI) logs. They can be fairly complex and hard to read. Typically, the resulting error is at the bottom, but determining the cause of the error isn't trivial. It could be a result of errors in a different log. It could also be a result of an error higher up in the log.
 
 ![Link to the setup log](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-log.png)
 
