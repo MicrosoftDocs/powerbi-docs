@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 12/20/2022
+ms.date: 05/28/2024
 LocalizationGroup: Troubleshooting
 ---
 
