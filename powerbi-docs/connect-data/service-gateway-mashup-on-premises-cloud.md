@@ -48,4 +48,4 @@ With the cloud credentials set, you can now refresh the dataset by using the **R
 
 ## Related content
 
-To learn more about data refresh for gateways, see [Use the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#use-the-data-source-for-scheduled-refresh).
+To learn more about data refresh for gateways, see: [Use the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#use-the-data-source-for-scheduled-refresh).
