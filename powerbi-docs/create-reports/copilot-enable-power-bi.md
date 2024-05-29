@@ -23,10 +23,14 @@ For more information on other Fabric workloads, see the [Copilot in Fabric overv
 
 ## Enable Fabric Copilot for Power BI in your tenant
 
-Before your business can start using Copilot for Power BI, you need to enable it in the Microsoft Fabric Admin Portal. There are two main settings related to Copilot that admins need to be aware of:
+Copilot for Microsoft Fabric is now enabled by default in the Fabric Admin portal. Admins can disable Copilot if your organization is not ready to use it.
+
+There are two main settings related to Copilot that admins need to be aware of:
 
 - [Enable Copilot setting](#enable-copilot-setting)
 - [Enable sharing data across geographic boundaries](#enable-sharing-data-across-geographic-boundaries)
+
+If Copilot has been disabled by admins, the instructions below will assist in turning Copilot back on.
 
 ## Enable Copilot setting
 
