@@ -27,19 +27,19 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 ## What's available in the Copilot public preview experience?
 
-When using the preview toggle to switch into the Copilot public preview experience all the generally available (GA) features are available with additional public preview features. 
+When using the preview toggle to switch into the Copilot public preview experience all generally available (GA) features are available with additional public preview features. 
 
-**You can use the following public preview features in public preview mode:**
+**You can use the following public preview features in the preview experience:**
 - Ask Copilot for data from your semantic model
 
-You can also use generally available features in public preview mode.
+You can also use all generally available features in the preview experience including:
 - [Create reports in the Power BI service with Copilot](copilot-create-report-service) (GA)
 - [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages) (GA) 
 - [Summarize a report page in the Copilot pane](copilot-pane-summarize-content) (GA)
 
 ## What is the preview toggle?
 
-When using the Copilot pane in the Power BI service, you'll see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities. By default, the toggle is off, giving you the generally available Copilot pane experience to start. Moving into preview mode allows you the opportunity to try the newest Copilot experiences.
+When using the Copilot pane in the Power BI service, you'll see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities. By default, the toggle is off, giving you the generally available Copilot pane experience to start. Moving into the preview experience allows you the opportunity to try the newest Copilot capabilities.
 
 If you do not want users in your organization to have access to the preview toggle, you will need to [disable Fabric Copilot](/fabric/admin/service-admin-portal-copilot) in your organization or for specific security groups.
 
@@ -49,7 +49,7 @@ To access Copilot features in public preview, select the preview toggle to activ
 
 :::image type="content" source="media/copilot-enable-power-bi/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
 
-When the preview toggle is green, you now have access to the public preview features. The welcome card notifies you that you are now in the preview version of Copilot. At any point in time, you can click on the toggle to turn off the preview experience and return to use only features that are generally available. 
+When the preview toggle is green, you now have access to the public preview experience. The welcome card notifies you that you are now in the preview version of Copilot. At any point in time, you can click on the toggle to turn off the preview experience and return to use only features that are generally available. 
 
 ## Considerations and limitations
 
