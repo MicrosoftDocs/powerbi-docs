@@ -27,15 +27,15 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 ## What's available in the Copilot public preview experience?
 
-When using the preview toggle to switch into the Copilot public preview experience all generally available (GA) features are available with additional public preview features. 
+When using the preview toggle to switch into the Copilot public preview experience all generally available features are available with additional public preview features. 
 
 **You can use the following public preview features in the preview experience:**
 - Ask Copilot for data from your semantic model
 
 You can also use all generally available features in the preview experience including:
-- [Create reports in the Power BI service with Copilot](copilot-create-report-service) (GA)
-- [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages) (GA) 
-- [Summarize a report page in the Copilot pane](copilot-pane-summarize-content) (GA)
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service)
+- [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages)
+- [Summarize a report page in the Copilot pane](copilot-pane-summarize-content)
 
 ## What is the preview toggle?
 
@@ -63,5 +63,5 @@ Limitations of the preview experience:
 - Chat history is not saved when switching between the GA state and the preview state. 
 - The preview toggle is not available in Power BI Desktop. The Copilot chat pane in Power BI Desktop is not yet generally available making **all Copilot Desktop experiences in a preview state.**
 - The state of the preview toggle **persists across sessions and tabs within the same browser**. For example, if you enable the preview experience in Microsoft Edge and then open the Copilot experience in a new report in Microsoft Edge, Copilot will remain in the preview state. 
-- The state of the preview toggle **does not persist across different browser types**. For example, if you enable the preview experience in Microsoft Edge and then open the Copilot experience within Google Chrome, Copilot will default to the GA experience. 
+- The state of the preview toggle **does not persist across different browser types**. For example, if you enable the preview experience in Microsoft Edge and then open the Copilot experience within Google Chrome, Copilot will default to the generally available experience. 
 
