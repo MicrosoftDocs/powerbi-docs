@@ -53,12 +53,12 @@ When the preview toggle is green, you now have access to the public preview feat
 
 ## Considerations and limitations
 
-Considerations for the preview toggle:
+Considerations for using the preview experience:
 
 - By having Fabric Copilot enabled in your organization, users will have access to the Copilot preview pane toggle by default. To disable the toggle for users you will need to [disable Fabric Copilot](/fabric/admin/service-admin-portal-copilot) in your organization or for specific security groups.
 - Experiences in the preview toggle are still in a **preview** state, and therefore will not meet all the requirements of a generally available Microsoft feature. 
 
-Limitations of the preview toggle:
+Limitations of the preview experience:
 
 - Chat history is not saved when switching between the GA state and the preview state. 
 - The preview toggle is not available in Power BI Desktop. The Copilot chat pane in Power BI Desktop is not yet generally available making **all Copilot Desktop experiences in a preview state.**
