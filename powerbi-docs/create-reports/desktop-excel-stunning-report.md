@@ -226,7 +226,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-an-expression-in-dax) earlier in this tutorial.
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#create-a-new-table) earlier in this tutorial.
 
 
 **Date slicer using the original table**
