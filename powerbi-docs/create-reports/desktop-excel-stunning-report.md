@@ -275,7 +275,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 **Add a background shape for the title**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
-1. In the **Format shape** pane, in the **Border** section, change **Transparency** to **100%**. 
+1. In the **Format shape** pane, in the **Visual border** section, set it to **Off**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Screenshot of Theme color 5.":::
