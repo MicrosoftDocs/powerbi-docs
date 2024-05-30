@@ -72,6 +72,12 @@ Read about how to [get started with deployment pipelines](/fabric/cicd/deploymen
 
 You might not be able to configure Parameters as both "Multi-value" and "Allow null". "Multi value" and "Allow blank" is an allowed combination but Null is treated differently.
 
+### Power BI Report Builder in a virtualized environment
+
+Power BI Report Builder is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
+
+Running Power BI Report Builder as a virtualized application (for example, as a Citrix application) isn't supported.
+
 ## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)
