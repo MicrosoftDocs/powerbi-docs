@@ -100,11 +100,11 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Data list with numeric fields and date field.":::
 
-### Extra credit: Write an expression in DAX
+## Extra credit: Write two expressions in DAX
 
-Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression and join two tables. 
+Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression to create a new measure, and another expression to create a whole table.
 
-#### Create a new measure
+### Create a new measure
 
 1. On the **Home** ribbon, select **New measure**.
 
@@ -120,7 +120,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
     
     :::image type="content" source="media/desktop-excel-stunning-report/dax-total-units-sold.png" alt-text="Screenshot of DAX expression Total Units Sold.":::
 
- #### Create a new table
+ ### Create a new table
  
 1. Now select the **Data** view on the left.
 
