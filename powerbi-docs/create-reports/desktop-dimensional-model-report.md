@@ -345,7 +345,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-increase-width.png" alt-text="Screenshot of Widen the matrix to fill the report.":::
 
-1. In the Formatting pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
+1. In the Format pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
 
 1. Increase the width of the Sales Amount column so it fills the whole area by dragging the matrix.
 
