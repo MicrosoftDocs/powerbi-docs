@@ -49,6 +49,7 @@ Here are some examples of what Copilot can generate:
 - [A report page](#create-a-report-page)
 - [A summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane)
 - [A summary visual on the report itself](#a-summary-visual-on-the-report-itself)
+  [A visual using data from your semantic model](#a-visual-using-data-from-your-semantic-model)
 - [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
 - [DAX queries](#write-dax-queries)
@@ -93,6 +94,21 @@ Learn more about [Copilot creating a summary response to prompts about your repo
 In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. See [Create a narrative with Copilot for Power BI](copilot-create-narrative.md) for details.
 
 :::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
+
+### A visual using data from your semantic model
+
+Copilot can also use the measures and columns in your semnatic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot will first check if the answer can be found in the report, but if existing visuals don't answer the question, Copilot will then build a visual for you. 
+
+Some types of requests which Copilot can help you with include: 
+
+-	Can I see this measure filtered to a different region or span of time? 
+-	What are my top categories by a certain metric? 
+-	Show me how this measure has changed over time.
+
+See [Ask Copilot for data in your semantic model](copilot-data-question.md) for details.
+
+:::image type="content" source="media/copilot-introduction/data-question-skill.png" alt-text="Screenshot showing Copilot answering a data question using a visual built from data in the semantic model.." lightbox="media/copilot-introduction/data-question-skill.png":::
+
 
 ### Synonyms to enhance Q&A
 
