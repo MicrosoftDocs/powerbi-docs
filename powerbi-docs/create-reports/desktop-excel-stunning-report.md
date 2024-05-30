@@ -104,6 +104,8 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression and join two tables. 
 
+#### Create a new measure
+
 1. On the **Home** ribbon, select **New measure**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon.":::
@@ -117,6 +119,8 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 1. Select the check mark to commit.
     
     :::image type="content" source="media/desktop-excel-stunning-report/dax-total-units-sold.png" alt-text="Screenshot of DAX expression Total Units Sold.":::
+
+ #### Create a new table
  
 1. Now select the **Data** view on the left.
 
@@ -136,6 +140,10 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression Calendar.":::
 
+    Here are the first 23 rows of the single-column table you just created.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/calendar-result.png" alt-text="Screenshot of the calendar you created with the DAX expression.":::
+   
 1. Now select **Model** view on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
