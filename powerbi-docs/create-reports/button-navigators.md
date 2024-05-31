@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.custom: video-RWRCPO
-ms.date: 03/10/2023
+ms.date: 05/30/2024
 LocalizationGroup: Create reports
 ---
 
@@ -185,6 +185,10 @@ Create a page navigation button and select the conditional formatting option for
    Now the button can navigate to different pages, depending on the user’s selection.
 
    :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Screenshot showing Navigate with a Go button.":::
+
+## Considerations and limitations
+
+- If the bold, italic and underline settings are **On** for the **Default** state, you can't turn them off for the **Selected** state.
 
 ## Related content
 
