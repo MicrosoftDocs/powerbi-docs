@@ -27,7 +27,7 @@ Before your business can start using Copilot capabilities in Power BI, your admi
 
 For optimized results using Copilot for Power BI, you may need to do some clean-up work on your semantic model. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot can get insights from it.
 
-For answers to common questions related to business data security and privacy to help your organization get started with Copilot for Fabric, see the articles in the Fabric documentation:
+For answers to common questions related to data security and privacy to help your organization get started with Copilot for Fabric, see the articles in the Fabric documentation:
 
 - [Overview of Copilot for Fabric (preview)](/fabric/get-started/copilot-fabric-overview) 
 - [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
@@ -53,7 +53,7 @@ Read more about using [Copilot in the Power BI service](copilot-create-report-se
 
 Copilot for Power BI offers several capabilities to enhance your data interaction and report creation experience, currently available in Power BI Service and Desktop.
 
-As a report author, you can use Copilot to help you write DAX queries, streamline your semantic model documentation, provide a summary about your semantic model, and help you get started with report creation. Additionally, Copilot can also create a narrative visual that summarizes a page or a whole report and can generate synonyms for Q&A, to help your report readers find what they're looking for in your reports. As a report consumer, you can use the Copilot pane to ask a question about your report content or summarize key insights in seconds.
+As a report author, you can use Copilot to help you write DAX queries, streamline your semantic model documentation, provide a summary about your semantic model, and help you get started with report creation. Additionally, Copilot can also create a narrative visual that summarizes a page or a whole report and can generate synonyms for Q&A, to help report readers find what they're looking for in your reports. As a report consumer, you can use the Copilot pane to ask a question about your report content or summarize key insights in seconds.
 
 Here are examples of what Copilot can generate:
 
@@ -67,27 +67,22 @@ Here are examples of what Copilot can generate:
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
 - [DAX queries](#write-dax-queries)
 
-### Summarize the underlying semantic model
-
-Summarize a Power BI semantic model by asking Copilot to "summarize the model" in the Copilot pane. This summary can help you gain a better understanding of data in your semantic model, identify important insights, and improve your data exploration experience. Ultimately, this can help you build more meaningful reports.
-
-### Suggest content for a report
-
-Copilot can help you get started on a new report by suggesting topics based on your data. When you select this option directly in the chat, Copilot evaluates the data and provides a report outline with suggested pages that you can explore and choose to create for you.
-
-- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.  
-- The visuals for the individual pages.
-
-:::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page." lightbox="media/copilot-introduction/copilot-internet-sales-analysis.png":::
-
-### Create a report page
-
-Copilot for Power BI can help you create a report page by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. It can help you get started on your report page quickly and save you a lot of time and effort in the process.
-
-Here are some examples of high-level prompts to get you started:
-
-- Create a page to evaluate the performance of different shifts based on good count, reject count, and alarm count over time.
-- Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
+- [Overview of Copilot for Power BI](#overview-of-copilot-for-power-bi)
+  - [Before you start using Copilot](#before-you-start-using-copilot)
+    - [Access Copilot in the Power BI service](#access-copilot-in-the-power-bi-service)
+    - [Access Copilot in Power BI Desktop](#access-copilot-in-power-bi-desktop)
+  - [Copilot requirements](#copilot-requirements)
+  - [Feature overview: Copilot capabilities](#feature-overview-copilot-capabilities)
+    - [Create a report page](#create-a-report-page)
+    - [Generate a summary of your report in the Copilot pane](#generate-a-summary-of-your-report-in-the-copilot-pane)
+    - [Create a summary visual on the report itself](#create-a-summary-visual-on-the-report-itself)
+    - [A visual using data from your semantic model](#a-visual-using-data-from-your-semantic-model)
+    - [Synonyms to enhance Q\&A](#synonyms-to-enhance-qa)
+    - [Add descriptions for semantic model measures](#add-descriptions-for-semantic-model-measures)
+    - [Write DAX queries](#write-dax-queries)
+  - [Considerations and limitations](#considerations-and-limitations)
+  - [Send feedback](#send-feedback)
+  - [Next steps](#next-steps)
 - Create a page to compare the cost and material of each product and their impact on production.
 
 If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
@@ -95,8 +90,8 @@ If you need help with writing prompts that get you the report page you want, see
 ### Generate a summary of your report in the Copilot pane
 
 Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
- 
-You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
+
+You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, helping you understand the specific data sources contributing to each part of the answer or summary within the report.
 
 Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
 
@@ -110,17 +105,17 @@ In Power BI Desktop and the Power BI service, you can use Copilot for Power BI t
 
 ### A visual using data from your semantic model
 
-Copilot can also use the measures and columns in your semnatic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot will first check if the answer can be found in the report, but if existing visuals don't answer the question, Copilot will then build a visual for you. 
+Copilot can also use the measures and columns in your semantic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot checks if the answer can be found in the report visuals. If existing visuals don't answer the question, Copilot then builds a visual for you.
 
-Some types of requests which Copilot can help you with include: 
+Requests Copilot can help you with include:
 
--	Can I see this measure filtered to a different region or span of time? 
--	What are my top categories by a certain metric? 
--	Show me how this measure has changed over time.
+- Can I see this measure filtered to a different region or span of time?
+- What are the top categories by a certain metric?
+- Show me how this measure has changed over time.
 
 See [Ask Copilot for data in your semantic model](copilot-data-question.md) for details.
 
-:::image type="content" source="media/copilot-introduction/data-question-skill.png" alt-text="Screenshot showing Copilot answering a data question using a visual built from data in the semantic model.." lightbox="media/copilot-introduction/data-question-skill.png":::
+:::image type="content" source="media/copilot-introduction/data-question-skill.png" alt-text="Screenshot showing Copilot answering a data question using a visual built from data in the semantic model." lightbox="media/copilot-introduction/data-question-skill.png":::
 
 
 ### Synonyms to enhance Q&A
@@ -144,7 +139,7 @@ Copilot can write a DAX query. For example, you can type in a prompt to describe
 We're continuously working to improve the quality of the report pages, including visuals and summaries generated by Copilot. Here are the current limitations.
 
 - AI may generate content that has mistakes. Make sure it's accurate and appropriate before using it.
-- The Copilot button in Desktop report view is always visible in the ribbon; however, Copilot doesn't work unless Copilot for Microsoft Fabric is [enabled in tenant settings](/fabric/get-started/copilot-fabric-overview#enable-copilot) and you have member or contributor access to at least one workspace that's assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
+- The Copilot button in Desktop report view is always visible in the ribbon; however, Copilot doesn't work unless Copilot for Microsoft Fabric is [enabled in tenant settings](/fabric/get-started/copilot-fabric-overview#enable-copilot) and you have member or contributor access to at least one workspace assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher).
 - Unlike the Data pane or Visualization pane, you can't resize the Copilot pane at this time.
 - If you have limited GPU capacity, Copilot may be throttled.
 - Copilot can't modify the visuals after it has generated them.
