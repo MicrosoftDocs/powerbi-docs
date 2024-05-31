@@ -130,6 +130,8 @@
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
+        - name: Ask Copilot for data from your model
+          href: copilot-ask-data-question.md
         - name: Copilot preview toggle
           href: copilot-preview-toggle.md
         - name: Copilot for Fabric and Power BI
