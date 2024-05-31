@@ -71,9 +71,8 @@ Copilot can help authors with the following tasks:
 - [Suggest content for a report](#suggest-content-for-a-report).
 - Create a [report page](#create-a-report-page).
 - Create a [summary visual on the report itself](#create-a-summary-visual-on-the-report-itself).
-- [Ask Copilot questions about data in the model](copilot-pane-summarize-report-data.md).
-- [Add synonyms to enhance Q&A](#add-synonyms-to-enhance-qa).
-- Create a [narrative visual](copilot-create-narrative.md).
+- [Ask Copilot questions about data in the model](#ask-copilot-questions-about-data-in-the-model).
+- [Add synonyms to enhance Q&A](#synonyms-to-enhance-qa).
 - [Add descriptions for your semantic model measures](#add-descriptions-for-semantic-model-measures).
 - Write [DAX queries](#write-dax-queries).
 
@@ -147,6 +146,18 @@ Copilot can add descriptions to your semantic model measures. People who build r
 #### Write DAX queries
 
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
+
+## Copilot preview features
+
+When using the Copilot pane in the **Power BI service**, you'll see a toggle with the word **Preview** next to it. The preview toggle allows you the opportunity to move into an experience that includes both generally available and public preview capabilities. 
+
+To access Copilot features in public preview, select the preview toggle to activate the public preview experience.
+
+:::image type="content" source="media/copilot-preview-toggle/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
+
+If you don't want users in your organization to have access to the preview toggle, you need to [disable Fabric Copilot](/fabric/admin/service-admin-portal-copilot) in your organization or for specific security groups.
+
+See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for more information about what features are available in preview.
 
 ## Considerations and limitations
 
