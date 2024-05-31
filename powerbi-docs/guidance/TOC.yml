@@ -287,6 +287,8 @@
           href: powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md
         - name: "Tenant-level monitoring"
           href: powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md
+      - name: "Adoption tracking"
+        href: powerbi-implementation-planning-adoption-tracking.md
       - name: Usage scenarios
         items:
         - name: "Usage scenarios overview"
