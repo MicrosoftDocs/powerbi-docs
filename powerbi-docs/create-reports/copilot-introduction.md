@@ -57,16 +57,15 @@ As a report author, you can use Copilot to help you write DAX queries, streamlin
 
 Here are examples of what Copilot can generate:
 
-- [Summarize the underlying semantic model](#summarize-the-underlying-semantic-model).
-- [Suggest content for a report](#suggest-content-for-a-report).
-- Create a [report page](#create-a-report-page).
-- [Generate a summary of your report in the Copilot pane](#generate-a-summary-of-your-report-in-the-copilot-pane).
-- Create a [summary visual on the report itself](#create-a-summary-visual-on-the-report-itself).
-- [Add synonyms to enhance Q&A](#add-synonyms-to-enhance-qa).
-- [Ask Copilot questions about data in the model](copilot-pane-summarize-report-data.md).
-- Create a [narrative visual](copilot-create-narrative.md).
-- [Add descriptions for your semantic model measures](#add-descriptions-for-semantic-model-measures).
-- Write [DAX queries](#write-dax-queries).
+- [A summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model)
+- [Suggested content for a report](#suggest-content-for-a-report)
+- [A report page](#create-a-report-page)
+- [A summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane)
+- [A summary visual on the report itself](#a-summary-visual-on-the-report-itself)
+- [A visual using data from your semantic model](#a-visual-using-data-from-your-semantic-model)
+- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
+- [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
+- [DAX queries](#write-dax-queries)
 
 ### Summarize the underlying semantic model
 
@@ -109,7 +108,22 @@ In Power BI Desktop and the Power BI service, you can use Copilot for Power BI t
 
 :::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
 
-### Add synonyms to enhance Q&A
+### A visual using data from your semantic model
+
+Copilot can also use the measures and columns in your semnatic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot will first check if the answer can be found in the report, but if existing visuals don't answer the question, Copilot will then build a visual for you. 
+
+Some types of requests which Copilot can help you with include: 
+
+-	Can I see this measure filtered to a different region or span of time? 
+-	What are my top categories by a certain metric? 
+-	Show me how this measure has changed over time.
+
+See [Ask Copilot for data in your semantic model](copilot-data-question.md) for details.
+
+:::image type="content" source="media/copilot-introduction/data-question-skill.png" alt-text="Screenshot showing Copilot answering a data question using a visual built from data in the semantic model.." lightbox="media/copilot-introduction/data-question-skill.png":::
+
+
+### Synonyms to enhance Q&A
 
 Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a-copilot-enhancements.md) to improve the Q&A visual's ability to understand user questions.
 
