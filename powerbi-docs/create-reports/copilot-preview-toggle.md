@@ -30,7 +30,7 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 When you use the preview toggle to switch into the Copilot public preview experience, you have access to all generally available features along with additional public preview features.
 
 **You can use the following public preview features in the preview experience:**
-- Ask Copilot for data from your semantic model
+- [Ask Copilot for data from your semantic model](copilot-ask-data-question.md)
 
 You can also use all generally available features in the preview experience including:
 - [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
