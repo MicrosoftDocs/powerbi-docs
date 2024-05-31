@@ -90,9 +90,9 @@ This file is only available if the Power BI project is saved using the TMSL form
 
 #### definition\ folder
 
-This file is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
+This folder is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
 
-This file contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+This folder contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### diagramLayout.json
 
