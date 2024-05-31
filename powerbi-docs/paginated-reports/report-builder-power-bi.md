@@ -23,6 +23,10 @@ The following paginated report is a sample of an invoice. You can download it an
 
 ![Screenshot of a sample paginated report in Power BI Report Builder.](media/report-builder-power-bi/power-bi-report-builder-sample-invoice.png)
 
+## System requirements
+  
+See the **System requirements** section of the [Power BI Report Builder download page](https://go.microsoft.com/fwlink/?LinkID=2086513) on the Microsoft Download Center.
+
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
