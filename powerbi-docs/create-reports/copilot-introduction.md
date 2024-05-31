@@ -53,19 +53,72 @@ Read more about using [Copilot in the Power BI service](copilot-create-report-se
 
 Copilot for Power BI offers several capabilities to enhance your data interaction and report creation experience, currently available in Power BI Service and Desktop.
 
-As a report author, you can use Copilot to help you write DAX queries, streamline your semantic model documentation, provide a summary about your semantic model, and help you get started with report creation. Additionally, Copilot can also create a narrative visual that summarizes a page or a whole report and can generate synonyms for Q&A, to help report readers find what they're looking for in your reports. As a report consumer, you can use the Copilot pane to ask a question about your report content or summarize key insights in seconds.
+### Copilot for report consumers
 
-Here are examples of what Copilot can generate:
+Copilot is a powerful tool to help consumers get more from your data. Consumers can use the Copilot pane to ask a question about report content or summarize key insights in seconds.
 
-- [A summary of the underlying semantic model](#a-summary-of-the-underlying-semantic-model)
-- [Suggested content for a report](#suggest-content-for-a-report)
-- [A report page](#create-a-report-page)
-- [A summary of your report in the Copilot pane](#a-summary-of-your-report-in-the-copilot-pane)
-- [A summary visual on the report itself](#a-summary-visual-on-the-report-itself)
-- [A visual using data from your semantic model](#a-visual-using-data-from-your-semantic-model)
-- [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
-- [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
-- [DAX queries](#write-dax-queries)
+Copilot can help consumers with the following:
+
+- [Generate a summary of your report in the Copilot pane](#generate-a-summary-of-your-report-in-the-copilot-pane)
+
+### Copilot for report authors
+
+As a report author, you can use Copilot to help you write DAX queries, streamline your semantic model documentation, provide a summary about your semantic model, and help you get started with report creation. Additionally, Copilot can also create a narrative visual that summarizes a page or a whole report and can generate synonyms for Q&A, to help report readers find what they're looking for in your reports.
+
+Copilot can help authors with the following tasks:
+
+- [Summarize the underlying semantic model](#summarize-the-underlying-semantic-model).
+- [Suggest content for a report](#suggest-content-for-a-report).
+- Create a [report page](#create-a-report-page).
+- Create a [summary visual on the report itself](#create-a-summary-visual-on-the-report-itself).
+- [Ask Copilot questions about data in the model](copilot-pane-summarize-report-data.md).
+- [Add synonyms to enhance Q&A](#add-synonyms-to-enhance-qa).
+- Create a [narrative visual](copilot-create-narrative.md).
+- [Add descriptions for your semantic model measures](#add-descriptions-for-semantic-model-measures).
+- Write [DAX queries](#write-dax-queries).
+
+#### Generate a summary of your report in the Copilot pane
+
+Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
+ 
+You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
+
+Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
+
+:::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
+
+#### Summarize the underlying semantic model
+
+Summarize a Power BI semantic model by asking Copilot to "summarize the model" in the Copilot pane. This summary can help you gain a better understanding of data in your semantic model, identify important insights, and improve your data exploration experience. Ultimately, this can help you build more meaningful reports.
+
+#### Suggest content for a report
+
+Copilot can help you get started on a new report by suggesting topics based on your data. When you select this option directly in the chat, Copilot evaluates the data and provides a report outline with suggested pages that you can explore and choose to create for you.
+
+- A [report outline of suggested pages for your report](copilot-create-report-service.md): for example, what each page in the report is about, and how many pages it creates.  
+- The visuals for the individual pages.
+
+:::image type="content" source="media/copilot-introduction/copilot-internet-sales-analysis.png" alt-text="Screenshot showing Copilot suggested report page." lightbox="media/copilot-introduction/copilot-internet-sales-analysis.png":::
+
+#### Create a report page
+
+Copilot for Power BI can help you create a report page by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. It can help you get started on your report page quickly and save you a lot of time and effort in the process.
+
+Here are some examples of high-level prompts to get you started:
+
+- Create a page to evaluate the performance of different shifts based on good count, reject count, and alarm count over time.
+- Create a page to analyze the efficiency of the production line and overall equipment effectiveness.
+- Create a page to compare the cost and material of each product and their impact on production.
+
+If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
+
+#### Create a summary visual on the report itself
+
+In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. See [Create a narrative with Copilot for Power BI](copilot-create-narrative.md) for details.
+
+:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
+
+#### Ask Copilot questions about data in the model
 
 Copilot can also use the measures and columns in your semantic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot checks if the answer can be found in the report visuals. If existing visuals don't answer the question, Copilot then builds a visual for you.
 
@@ -79,20 +132,19 @@ See [Ask Copilot for data in your semantic model](copilot-data-question.md) for 
 
 :::image type="content" source="media/copilot-introduction/data-question-skill.png" alt-text="Screenshot showing Copilot answering a data question using a visual built from data in the semantic model." lightbox="media/copilot-introduction/data-question-skill.png":::
 
-
-### Synonyms to enhance Q&A
+#### Synonyms to enhance Q&A
 
 Copilot can write [synonyms that you can add to Q&A](../natural-language/q-and-a-copilot-enhancements.md) to improve the Q&A visual's ability to understand user questions.
 
 :::image type="content" source="media/copilot-introduction/q-and-a-copilot-suggestions.png" alt-text="Screenshot showing Copilot can add suggestions for synonyms.":::
 
-### Add descriptions for semantic model measures
+#### Add descriptions for semantic model measures
 
 Copilot can add descriptions to your semantic model measures. People who build reports from your semantic model can see the name and description of your measures, which makes the description property essential documentation.
 
 [Use Copilot to create measure descriptions](../transform-model/desktop-measure-copilot-descriptions.md).
 
-### Write DAX queries
+#### Write DAX queries
 
 Copilot can write a DAX query. For example, you can type in a prompt to describe what DAX query you would like it to generate, and select Send or press Enter. To run what is returned, select Keep it to add it to query tab. Then select Run or press F5 to see the results of the DAX query. Read more in the article [Write DAX queries](/dax/dax-copilot).
 
@@ -116,8 +168,6 @@ We're continuously working to improve the quality of the report pages, including
 We always welcome your feedback about our products to help us improve Copilot. Give us your feedback directly in the Copilot pane by selecting the feedback button.
 
 :::image type="content" source="media/copilot-introduction/copilot-feedback.png" alt-text="Screenshot showing Copilot can add suggestions for synonyms.":::
-
-
 
 ## Next steps
 
