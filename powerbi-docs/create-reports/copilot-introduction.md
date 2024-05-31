@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 05/23/2024
+ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -66,44 +66,6 @@ Here are examples of what Copilot can generate:
 - [Synonyms to enhance Q&A](#synonyms-to-enhance-qa)
 - [Descriptions for your semantic model measures](#descriptions-for-semantic-model-measures)
 - [DAX queries](#write-dax-queries)
-
-- [Overview of Copilot for Power BI](#overview-of-copilot-for-power-bi)
-  - [Before you start using Copilot](#before-you-start-using-copilot)
-    - [Access Copilot in the Power BI service](#access-copilot-in-the-power-bi-service)
-    - [Access Copilot in Power BI Desktop](#access-copilot-in-power-bi-desktop)
-  - [Copilot requirements](#copilot-requirements)
-  - [Feature overview: Copilot capabilities](#feature-overview-copilot-capabilities)
-    - [Create a report page](#create-a-report-page)
-    - [Generate a summary of your report in the Copilot pane](#generate-a-summary-of-your-report-in-the-copilot-pane)
-    - [Create a summary visual on the report itself](#create-a-summary-visual-on-the-report-itself)
-    - [A visual using data from your semantic model](#a-visual-using-data-from-your-semantic-model)
-    - [Synonyms to enhance Q\&A](#synonyms-to-enhance-qa)
-    - [Add descriptions for semantic model measures](#add-descriptions-for-semantic-model-measures)
-    - [Write DAX queries](#write-dax-queries)
-  - [Considerations and limitations](#considerations-and-limitations)
-  - [Send feedback](#send-feedback)
-  - [Next steps](#next-steps)
-- Create a page to compare the cost and material of each product and their impact on production.
-
-If you need help with writing prompts that get you the report page you want, see [Write Copilot prompts that produce results in Power BI](copilot-prompts-report-pages.md) for guidance.
-
-### Generate a summary of your report in the Copilot pane
-
-Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
-
-You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, helping you understand the specific data sources contributing to each part of the answer or summary within the report.
-
-Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
-
-:::image type="content" source="media/copilot-introduction/summary-skill.png" alt-text="Screenshot showing Copilot can generate a summary of your report page." lightbox="media/copilot-introduction/summary-skill.png":::
-
-### Create a summary visual on the report itself
-
-In Power BI Desktop and the Power BI service, you can use Copilot for Power BI to quickly create a narrative about a report page with just a few clicks. This narrative can summarize the entire report, specific pages, or even specific visuals that you select. See [Create a narrative with Copilot for Power BI](copilot-create-narrative.md) for details.
-
-:::image type="content" source="media/copilot-introduction/narrative-questions-leadership.png" alt-text="Screenshot showing Narrative visual answering questions." lightbox="media/copilot-introduction/narrative-questions-leadership.png":::
-
-### A visual using data from your semantic model
 
 Copilot can also use the measures and columns in your semantic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot checks if the answer can be found in the report visuals. If existing visuals don't answer the question, Copilot then builds a visual for you.
 
