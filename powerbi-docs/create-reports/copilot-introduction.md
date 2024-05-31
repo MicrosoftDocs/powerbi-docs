@@ -127,7 +127,7 @@ Requests Copilot can help you with include:
 - What are the top categories by a certain metric?
 - Show me how this measure has changed over time.
 
-See [Ask Copilot for data in your semantic model](copilot-data-question.md) for details.
+See [Ask Copilot for data in your semantic model](copilot-ask-data-question.md) for details.
 
 :::image type="content" source="media/copilot-introduction/data-question-skill.png" alt-text="Screenshot showing Copilot answering a data question using a visual built from data in the semantic model." lightbox="media/copilot-introduction/data-question-skill.png":::
 
@@ -178,7 +178,7 @@ We're continuously working to improve the quality of the report pages, including
 
 We always welcome your feedback about our products to help us improve Copilot. Give us your feedback directly in the Copilot pane by selecting the feedback button.
 
-:::image type="content" source="media/copilot-introduction/copilot-feedback.png" alt-text="Screenshot showing Copilot can add suggestions for synonyms.":::
+:::image type="content" source="media/copilot-introduction/copilot-feedback.png" alt-text="Screenshot showing the feedback mechanism thumbs up and thumbs down.":::
 
 ## Next steps
 
