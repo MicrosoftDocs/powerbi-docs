@@ -158,7 +158,7 @@ Once connected, your Power BI dataset to your SQL Server on-premises database th
 
 4. Leave the checkbox under **Send refresh failure notifications to** set to **Semantic model owner**, and select **Apply**.
 
-With configured refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
+With a configured refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
 
 ## Do an on-demand refresh
 
