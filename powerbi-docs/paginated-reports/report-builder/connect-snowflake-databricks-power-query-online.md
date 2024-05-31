@@ -1,7 +1,7 @@
 ---
-title: "Connect to Snowflake and Databricks with Power Query Online (Preview)"
+title: "Connect paginated reports to data sources using Power Query (Preview)"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 05/10/2024
+ms.date: 05/22/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: nirusrin
 ---
-# Connect to Snowflake, Databricks, and others with Power Query Online in Power BI Report Builder
+# Connect paginated reports to data sources using Power Query in Power BI Report Builder (Preview)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -74,14 +74,14 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
 > [!NOTE]
-> If you had defined a parameter, you have to define it again in Power BI Report Builder.
+> If you had defined a parameter in the Power Query editor, you have to define it again in Power BI Report Builder.
 
 
 ## How to bind parameters
 
 If you want to define a parameter, follow these steps.
 
-1. Define the parameter in Power Query in the Get Data experience. Learn more about [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md).
+1. Define the parameter in Power Query in the Get Data experience. Learn more about [Parameters in Power Query](/power-query/power-query-query-parameters).
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-power-query-new-parameter.png" alt-text="Screenshot showing new parameter in Power Query.":::
    
