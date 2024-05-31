@@ -48,11 +48,10 @@ To install the on-premises data gateway (personal mode):
 
 1. On the next screen, review the minimum requirements, verify or edit the installation path, and select the checkbox to accept the terms of use and privacy statement. Then select **Install**.
 
-1. After the installation completes successfully, enter your email address under **Email address to use with this gateway**, and select **Sign in**. 
+1. After the installation completes successfully, enter your email address under **Email address to use with this gateway**, and select **Sign in**.
 
-1. After you sign in, the following screen appears. Select **Close** to close the installer.
-
-   ![Screenshot that shows the On-premises data gateway (personal mode) success screen.](media/service-gateway-personal-mode/personal-gateway-complete.png)
+1. After you sign in, a confirmation screen displays. 
+1. Select **Close** to close the installer.
 
 ## Use Fast Combine with the personal gateway
 
