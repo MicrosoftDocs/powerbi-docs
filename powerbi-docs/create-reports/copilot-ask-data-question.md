@@ -63,15 +63,15 @@ Copilot can't currently answer questions that require on-the-fly calculations. I
 
 - **"Show me the difference in performance between sales in Europe and in America over time"**
 
-This question requires calculating sales for each region and finding the difference which isn't a current measure in the model.
+     This question requires calculating sales for each region and finding the difference which isn't a current measure in the model.
 
 - **"Why do our sales go down every July?”**
 
-This question involves generating deeper insights from the provided data.
+     This question involves generating deeper insights from the provided data.
 
 - **"How many books do you think we will sell next year?"**
 
-This question asks for forecasting, which isn't currently supported.
+     This question asks for forecasting, which isn't currently supported.
 
 ## Reading the answer
 
