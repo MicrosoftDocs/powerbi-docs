@@ -13,7 +13,7 @@ no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI to visualize data from my semantic model.
 ---
 
-# Ask Copilot for data from your model
+# Ask Copilot for data from your model (preview)
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
