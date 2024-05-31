@@ -2,7 +2,7 @@
 title: Use Copilot preview features in Power BI
 description: Fabric Copilot in Power BI has preview features that can be enabled with the flip of a switch.
 author: lafaberMSFT
-ms.author: lauren.faber
+ms.author: lafaber
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
@@ -33,9 +33,9 @@ When you use the preview toggle to switch into the Copilot public preview experi
 - Ask Copilot for data from your semantic model
 
 You can also use all generally available features in the preview experience including:
-- [Create reports in the Power BI service with Copilot](copilot-create-report-service)
-- [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages)
-- [Summarize a report page in the Copilot pane](copilot-pane-summarize-content)
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
+- [Write Copilot prompts for creating report pages in Power BI](copilot-prompts-report-pages.md)
+- [Summarize a report page in the Copilot pane](copilot-pane-summarize-content.md)
 
 ## What is the preview toggle?
 
