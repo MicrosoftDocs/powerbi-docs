@@ -147,7 +147,7 @@ To learn more, see [Git integration automatically generated system files](/fabri
 
 ## PBIR format
 
-You can save your Power BI Project files (PBIP) using Power BI enhanced report format (PBIR) as the report file format. The PBIR file format greatly simplifies the tracking of changes and resolution of merge conflicts by using properly formatted JSON:
+You can save your Power BI Project files (PBIP) using Power BI enhanced report format (PBIR) as the report file format. The PBIR file format greatly simplifies the tracking of changes and resolution of merge conflicts by using properly formatted JSON.
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
@@ -234,19 +234,16 @@ You can edit the PBIR JSON files using a code editor like [Visual Studio Code](h
 
 :::image type="content" source="./media/projects-report/pbir-jsonSchema-validation.png" alt-text="Screenshot of prompt PBIR JSON Schema validation.":::
 
-Consider the following scenarios of possible external changes:
+The following scenarios are just a subset of possibilities now available with PBIR and external changes:
 - Copy pages between reports.
-- Copy visuals between pages/reports, for example ensure a certain set of visuals exist in all pages.
-- Copy bookmarks.
+- Ensure a certain set of visuals across all pages by simply copy & paste the visual files.
 - Find and replace text across multiple reports.
-
-TODO
-- Scenarios
-- Encoding
+- Apply a batch edit across all visuals using a script (e.g. hide visual level filters)
 
 #### PBIR errors
 
 TODO
+- Types of errors: blocking vs non blocking
 
 ### Fabric Git Integration with PBIR
 
@@ -267,9 +264,9 @@ When publishing a PBIR report to service, the following constraints are applied:
 - 300mb max size for all resource package files.
 - 20mb max size of all report files.
 
-### PBIR Limitations
+### PBIR limitations
 
-PBIR reports published to service have the following limitations:
+During the Public Preview, PBIR reports published to service have the following limitations:
 
 - Cannot be included in Power BI Apps.
 - Cannot be downloaded as PBIX.
