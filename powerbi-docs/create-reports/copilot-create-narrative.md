@@ -43,7 +43,6 @@ If you're not signed in to Power BI Desktop, you still see the Copilot entry poi
 
 1. In Power BI Desktop, select **Get data**, then select a data source. See [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md) for more info.
 1. Create a page with visualizations of the data that you want the Copilot narrative to summarize.
-
 ---
 
 3. In the **Visualizations** pane, select the **Narrative** icon. 
