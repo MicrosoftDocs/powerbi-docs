@@ -31,9 +31,9 @@ Asking Copilot for data from your model is a preview feature.
 
 Since this is a preview feature, you'll need to enable it via the preview toggle in the Copilot pane. Find the preview toggle in the top right corner of the Copilot pane. Switch the toggle on to access all of the Copilot capabilities currently in public preview.
 
-:::image type="content" source="media/copilot-ask-data-questions/data-question-preview-toggle.png" alt-text="Screenshot showing the preview toggle in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-preview-toggle.png":::
+:::image type="content" source="media/copilot-ask-data-questions/data-question-preview-toggle.png" alt-text="Screenshot displaying the preview toggle in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-preview-toggle.png":::
 
-To learn more about enabling preview features in the Copilot pane, see [Use Copilot preview features in Power BI](copilot-preview-toggle).
+To learn more about enabling preview features in the Copilot pane, see [Use Copilot preview features in Power BI](copilot-preview-toggle.md).
 
 Q&A also needs to be enabled for your report because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
 
@@ -55,7 +55,7 @@ While the exact questions which Copilot can answer depends on the specifics of y
 
 Copilot also responds to follow up requests based on what you have already asked in your current session.
 
-:::image type="content" source="media/copilot-ask-data-questions/data-question-follow-up.png" alt-text="Screenshot showing the preview toggle in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-follow-up.png":::
+:::image type="content" source="media/copilot-ask-data-questions/data-question-follow-up.png" alt-text="Screenshot showing a follow-up question in the Copilot pane." lightbox="media/copilot-ask-data-questions/data-question-follow-up.png":::
 
 ## Unsupported question types
 
@@ -95,7 +95,7 @@ Authors can guide Copilot by:
 - structuring the model according to Power BI's best practices
 - adding synonyms to data field names to clarify business-specific terms for Copilot
 
-To learn more about linguistic modeling and ways to streamline the process of improving your linguistic schema with Copilot, see [Intro to Q&A tooling to train Power BI Q&A](/natural-language/q-and-a-tooling-intro).
+To learn more about linguistic modeling and ways to streamline the process of improving your linguistic schema with Copilot, see [Intro to Q&A tooling to train Power BI Q&A](/natural-language/q-and-a-tooling-intro.md).
 
 ## Limitations and considerations
 
