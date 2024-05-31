@@ -39,7 +39,7 @@ In this tutorial, you complete the following steps:
 
 ## Create and publish a Power BI Desktop file
 
-Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI dataset, which you configure and refresh in later steps.
+Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI dataset, which you configure and refreshes in later steps.
 
 1. In Power BI Desktop, on the **Home** tab, select **Get data** > **SQL Server**.
 
@@ -83,7 +83,7 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
    ![Screenshot that shows the finished column chart.](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This price will change when you later update the data and refresh the report.
+   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This price changes when you later update the data and refresh the report.
 
 1. Save the report with the name *AdventureWorksProducts.pbix*.
 
@@ -136,7 +136,7 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 ## Configure a refresh schedule
 
-Now that you've connected your Power BI dataset to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
+Once connected, your Power BI dataset to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
 
 1. In the left navigation pane, expand **My Workspace**.
 
@@ -158,7 +158,7 @@ Now that you've connected your Power BI dataset to your SQL Server on-premises d
 
 4. Leave the checkbox under **Send refresh failure notifications to** set to **Semantic model owner**, and select **Apply**.
 
-Now that you've configured a refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
+With configured refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
 
 ## Do an on-demand refresh
 
@@ -220,7 +220,7 @@ Follow these instructions to clean up the resources you created for this tutoria
 This tutorial explored how to:
 
 - Import data from an on-premises SQL Server database into a Power BI dataset.
-- Refresh the Power BI dataset on a scheduled and on-demand basis to update the reports and dashboards that use the dataset.
+- To update reports and dashboards that use the dataset, refresh the Power BI dataset on a scheduled and on-demand basis.
 
 Now, you can learn more about Power BI data refresh and managing data gateways and data sources.
 
