@@ -95,7 +95,7 @@ Authors can guide Copilot by:
 - structuring the model according to Power BI's best practices
 - adding synonyms to data field names to clarify business-specific terms for Copilot
 
-To learn more about linguistic modeling and ways to streamline the process of improving your linguistic schema with Copilot, see [Intro to Q&A tooling to train Power BI Q&A](/natural-language/q-and-a-tooling-intro.md).
+To learn more about linguistic modeling and ways to streamline the process of improving your linguistic schema with Copilot, see [Intro to Q&A tooling to train Power BI Q&A](/natural-language/q-and-a-tooling-intro).
 
 ## Limitations and considerations
 
@@ -107,4 +107,4 @@ There are a few other factors to consider at this time when using this capabilit
 
 ## Next steps
 
-Copilot offers many more capabilities for you to take advantage of, from helping report authors to get started creating reports to helping report viewers parse and explore their data. See the [overview of Copilot for Power BI](copilot-introduction) to learn more about everything Copilot can do.
+Copilot offers many more capabilities for you to take advantage of, from helping report authors to get started creating reports to helping report viewers parse and explore their data. See the [overview of Copilot for Power BI](copilot-introduction.md) to learn more about everything Copilot can do.
