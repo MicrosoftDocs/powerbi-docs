@@ -47,7 +47,7 @@ If you don't want users in your organization to have access to the preview toggl
 
 To access Copilot features in public preview, select the preview toggle to activate the public preview experience.
 
-:::image type="content" source="media/copilot-enable-power-bi/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
+:::image type="content" source="media/copilot-preview-toggle/copilot-preview-toggle.png" alt-text="Screenshot of the preview toggle in the on position in the Copilot chat pane.":::
 
 When the preview toggle is green, you now have access to the public preview experience. The welcome card notifies you that you're now in the preview version of Copilot. At any point in time, you can select the toggle to turn the preview experience off and return to use only features that are generally available.
 
