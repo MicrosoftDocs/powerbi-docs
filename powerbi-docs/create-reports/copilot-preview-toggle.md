@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/03/2024
+ms.collection: ce-skilling-ai-copilot
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a Power BI user, I want to learn how to enable the preview features in Fabric Copilot for Power BI.
