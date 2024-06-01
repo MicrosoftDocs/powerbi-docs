@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 06/03/2024
+ms.collection: ce-skilling-ai-copilot
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -18,7 +19,7 @@ no-loc: [Copilot]
 
 Copilot for Microsoft Fabric is generally available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. 
 
-Copilot is automatically enabled in your Fabric tenant. Administrators can disable Copilot in the Fabric admin portal if your organization is not ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
 This article provides an overview of the Copilot capabilities for Power BI.
 
@@ -36,7 +37,7 @@ For answers to common questions related to data security and privacy to help you
 
 ### Access Copilot in the Power BI service
 
-To access Copilot in Power BI service, the workspace has to be running on F64 or Premium capacity.
+To access Copilot in the Power BI service, the workspace has to be running on F64 or Premium capacity.
 
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.
@@ -55,11 +56,10 @@ Read more about using [Copilot in the Power BI service](copilot-create-report-se
 
 Copilot for Power BI offers several capabilities to enhance your data interaction and report creation experience, currently available in Power BI Service and Desktop.
 
-### Copilot for report consumers
+### Copilot for business users
+Copilot is a powerful tool to help business users get more from your data. Business users can use the Copilot pane to ask a question about report content or summarize key insights in seconds.
 
-Copilot is a powerful tool to help consumers get more from your data. Consumers can use the Copilot pane to ask a question about report content or summarize key insights in seconds.
-
-Copilot can help consumers with the following:
+Copilot can help business users with the following:
 
 - [Generate a summary of your report in the Copilot pane](#generate-a-summary-of-your-report-in-the-copilot-pane)
 
@@ -80,9 +80,9 @@ Copilot can help authors with the following tasks:
 
 #### Generate a summary of your report in the Copilot pane
 
-Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "Provide a summary of sales on this page."
+Even if you don't have edit permission for a report, with Copilot you can generate a summary of a report page in the Copilot pane. You have the flexibility to refine or guide the summary by customizing prompts, such as "summarize this page using bullet points" or "provide a summary of sales on this page."
  
-You can also pose specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
+You can also ask specific questions about the visualized data on a report page and receive a tailored response. This response includes references to specific visuals, aiding you in understanding the specific data sources contributing to each part of the answer or summary within the report.
 
 Learn more about [Copilot creating a summary response to prompts about your report](copilot-pane-summarize-content.md).
 
@@ -90,7 +90,7 @@ Learn more about [Copilot creating a summary response to prompts about your repo
 
 #### Summarize the underlying semantic model
 
-Summarize a Power BI semantic model by asking Copilot to "summarize the model" in the Copilot pane. This summary can help you gain a better understanding of data in your semantic model, identify important insights, and improve your data exploration experience. Ultimately, this can help you build more meaningful reports.
+Summarize a Power BI semantic model by asking Copilot to "summarize the model" in the Copilot pane. This summary can help you gain a better understanding of data in your semantic model, identify important insights, and improve your data exploration experience. Ultimately, better understanding the semantic model can help you build more meaningful reports.
 
 #### Suggest content for a report
 
@@ -103,7 +103,7 @@ Copilot can help you get started on a new report by suggesting topics based on y
 
 #### Create a report page
 
-Copilot for Power BI can help you create a report page by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. It can help you get started on your report page quickly and save you a lot of time and effort in the process.
+Copilot for Power BI can help you create a report page by identifying the tables, fields, measures, and charts for your data. If you give Copilot a high-level prompt that's specific to your data, it can generate a report page that you can then customize and modify, using the existing editing tools. Copilot can help you get started on your report page quickly and save you a lot of time and effort in the process.
 
 Here are some examples of high-level prompts to get you started:
 
