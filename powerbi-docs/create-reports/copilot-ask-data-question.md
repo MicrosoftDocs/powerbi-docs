@@ -38,7 +38,7 @@ To learn more about enabling preview features in the Copilot pane, see [Use Copi
 
 Q&A also needs to be enabled for your report because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
 
-For some sources, like DirectQuery or Direct Lake models, you might need to enable Q&A manually, either in your semantic model settings in the Service or in your Data Load settings in Power BI Desktop. To can learn more about the types of data sources Q&A supports, see Data sources for natural language Q&A](/natural-language/q-and-a-data-sources).
+For some sources, like DirectQuery or Direct Lake models, you might need to enable Q&A manually, either in your semantic model settings in the Service or in your Data Load settings in Power BI Desktop. To learn more about the types of data sources Q&A supports, see Data sources for natural language Q&A](/natural-language/q-and-a-data-sources).
 
 ## Use the feature
 
@@ -48,7 +48,7 @@ This capability allows Copilot to generate queries and return visuals based on d
 
 Copilot is best at answering questions using existing measures and columns in your semantic model. Questions may include asking for existing measures filtered to a different region or span of time than they are on the report, a metric split into categories, or how a measure changes with time.
 
-While the exact questions which Copilot can answer depends on the specifics of your model, here are some examples:
+While the exact questions that Copilot can answer depends on the specifics of your model, here are some examples:
 
 - **“Can you show me sales amount by region?”**  where both sales amount and region are already columns in the data.
 - **“What were the top 5 selling products in North America last month?”** where product, region, and date are already columns in the data, and Copilot helps with top N filtering to produce the visual.
@@ -108,4 +108,4 @@ There are a few other factors to consider at this time when using this capabilit
 
 ## Next steps
 
-Copilot offers many more capabilities for you to take advantage of, from helping report authors to get started creating reports to helping report viewers parse and explore their data. See the [overview of Copilot for Power BI](copilot-introduction.md) to learn more about everything Copilot can do.
+Copilot offers many more capabilities for you to take advantage of, from helping report authors to get started creating reports to helping report viewers parse and explore their data. See the [Overview of Copilot for Power BI](copilot-introduction.md) to learn more about everything Copilot can do.
