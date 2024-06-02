@@ -21,7 +21,7 @@ The Power BI/Power Apps solutions integration enables Power Apps app makers to a
 
 ## Flow overview
 
-Working in Power Apps, the Power Apps maker creates Power BI report and semantic model components based on reports and semantic models in Power BI workspaces and adds them to a solution. When the Power BI report or semantic model component is created and added to a solution, the Power BI artifacts are exported and uploaded to Dataverse, and a new dedicated workspace in Power BI is automatically created to store the artifacts. This dedicated Power BI workspace inherits privileges from several pre-defined roles in the Power Apps environment (see Permission sync between Power Apps environment and Power BI workspace), giving the users in these roles permission in the workspace, thus enabling co-authoring between Power Apps and Power BI. This process ensures that your Power BI reports and semantic models can be embedded as system dashboards or inside forms, and will survive deployment across environments and tenants.
+Working in Power Apps, the Power Apps maker creates Power BI report and semantic model components based on reports and semantic models in Power BI workspaces and adds them to a solution. When the Power BI report or semantic model component is created and added to a solution, the Power BI artifacts are exported and uploaded to Dataverse, and a new dedicated workspace in Power BI is automatically created to store the artifacts. This dedicated Power BI workspace inherits privileges from several predefined roles in the Power Apps environment (see Permission sync between Power Apps environment and Power BI workspace), giving the users in these roles permission in the workspace, thus enabling coauthoring between Power Apps and Power BI. This process ensures that your Power BI reports and semantic models can be embedded as system dashboards or inside forms, and will survive deployment across environments and tenants.
 
 The animation below illustrates how a Power BI report and semantic model are exported from a shared Power BI workspace into Dataverse, and then stored in a specially provisioned dedicated Power BI workspace. When the solution is exported (managed or unmanaged) it includes the Power BI content.​ In the deployment environment (cross-environment and cross-tenant) Dataverse provisions the Power BI workspace and artifacts in a dedicated environment workspace.
 
@@ -31,7 +31,7 @@ The animation below illustrates how a Power BI report and semantic model are exp
 
 For the integration to work, it needs to be enabled in Power BI by a Power BI administrator. See [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-enable.md).
 
-There are some non-typical ways in which Power BI reports and semantic models linked to Power BI components in Power Apps may behave. See [Using the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-using.md).
+There are some nontypical ways in which Power BI reports and semantic models linked to Power BI components in Power Apps may behave. See [Using the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-using.md).
 
 Finally, there are security and life cycle considerations to take into account when using Power BI components in Power Apps solutions. See [Considerations working with the Power BI/Power Apps solutions integration](./service-power-bi-powerapps-integration-considerations.md).
 
