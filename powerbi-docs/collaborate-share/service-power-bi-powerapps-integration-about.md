@@ -9,10 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/08/2023
+ms.date: 06/02/2024
 ---
 
 # About Power BI in Power Apps Solutions (preview)
+
+> [!IMPORTANT]
+> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](./create-edit-powerbi-embedded-page.md) instead.
 
 The Power BI/Power Apps solutions integration enables Power Apps app makers to add Power BI reports and semantic models as Dataverse components in Power Apps solutions. When a Power BI report or semantic model is added to a Power Apps solution, it will stay connected as the solution is deployed across environments and tenants, and can be seamlessly managed as part of the solutions Application Lifecycle Management process across environments and tenants.
 
