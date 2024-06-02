@@ -224,7 +224,7 @@ The previous example reads "Map my `category` data role so that for every field 
 The next example uses the same two data roles as the previous example and adds two more data roles named `grouping` and `measure2`.
 
 ```json
-"dataRole":[
+"dataRoles":[
     {
         "displayName": "Category",
         "name": "category",
