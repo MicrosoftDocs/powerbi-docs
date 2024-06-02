@@ -3,7 +3,7 @@ title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports that you can publish to the Power BI service. Paginated reports are designed to be printed or shared. They're formatted to fit well on a page, and they display *all* the data in a table, even if the table spans multiple pages.
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/24/2023
+ms.date: 05/30/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -71,6 +71,12 @@ Read about how to [get started with deployment pipelines](/fabric/cicd/deploymen
 ## Considerations and limitations
 
 You might not be able to configure Parameters as both "Multi-value" and "Allow null". "Multi value" and "Allow blank" is an allowed combination but Null is treated differently.
+
+## Power BI Report Builder in a virtualized environment
+
+Power BI Report Builder is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
+
+Running Power BI Report Builder as a virtualized application (for example, as a Citrix application) isn't supported.
 
 ## Related content
 
