@@ -8,7 +8,7 @@ ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 ms.reviewer: ""
 ms.cunstom: ""
-ms.date: 12/01/2023
+ms.date: 06/02/2024
 LocalizationGroup: Get started
 ms.custom: intro-get-started
 ---
