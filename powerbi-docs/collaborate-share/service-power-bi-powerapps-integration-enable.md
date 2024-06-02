@@ -15,7 +15,7 @@ ms.date: 06/02/2024
 # Enable the Power BI/Power Apps Solutions integration (preview)
 
 > [!IMPORTANT]
-> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](./create-edit-powerbi-embedded-page.md) instead.
+> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page) instead.
 
 The Power BI/Power Apps solutions integration enables Power Apps app makers to add Power BI reports and semantic models as Dataverse components in Power Apps solutions, and to seamlessly manage that content as part of their Application Lifecycle Management process across environments and tenants.
 

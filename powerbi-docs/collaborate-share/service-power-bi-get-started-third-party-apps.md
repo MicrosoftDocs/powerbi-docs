@@ -15,9 +15,6 @@ ms.custom: intro-get-started
 
 # Work with third-party apps in Power BI
 
-> [!IMPORTANT]
-> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](./create-edit-powerbi-embedded-page.md) instead.
-
 With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third-party app that integrates Power BI tiles into a custom-built web application. When you use a third-party app, you need to grant that application certain permissions to your Power BI account and resources. It's important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. For more information, see [Revoke third party app permissions](#revoke-third-party-app-permissions).
 
 The following section describes the access types an application can request.

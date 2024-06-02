@@ -15,7 +15,7 @@ ms.date: 06/02/2024
 # Using the Power BI/Power Apps solutions integration (preview)
 
 > [!IMPORTANT]
-> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](./create-edit-powerbi-embedded-page.md) instead.
+> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page) instead.
 
 This article describes behaviors of the special dedicated Power BI environment workspaces that are created when creating Power BI components for Power Apps solutions.
 
