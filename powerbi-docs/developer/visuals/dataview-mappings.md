@@ -246,22 +246,33 @@ The next example uses the same two data roles as the previous example and adds t
         "kind": "Grouping"
     }
 ],
-"dataViewMappings":{
-    "categorical": {
-        "categories": {
-            "for": { "in": "category" }
-        },
-        "values": {
-            "group": {
-                "by": "grouping",
-                "select":[
-                    { "bind": { "to": "measure" } },
-                    { "bind": { "to": "measure2" } }
-                ]
+"dataViewMappings": [
+    {
+        "categorical": {
+            "categories": {
+                "for": {
+                    "in": "category"
+                }
+            },
+            "values": {
+                "group": {
+                    "by": "grouping",
+                    "select": [{
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "measure2"
+                            }
+                        }
+                    ]
+                }
             }
         }
     }
-}
+]
 ```
 
 The difference between this mapping and the basic mapping is how `categorical.values` is mapped. When you map the `measure` and `measure2` data roles to the data role `grouping`, the x-axis and y-axis can be scaled appropriately.
