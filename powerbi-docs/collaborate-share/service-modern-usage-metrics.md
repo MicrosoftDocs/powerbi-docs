@@ -345,6 +345,7 @@ In addition to the above differences between previous and improved usage metrics
 - Certain metrics in usage metrics report aren't included in audit logs. For example, report page views aren't part of audit logs.
 - When a report is deleted, the ReportIds can show up in the usage metrics but not be available in the Reports semantic model.
 - Customers may be unable to view or download the usage metrics semantic model from Power BI service.
+- To access the user metrics report's semantic model settings and refresh history, follow the steps in [Update usage metrics report credentials](#update-usage-metrics-report-credentials).
 
 ## Frequently asked questions
 
