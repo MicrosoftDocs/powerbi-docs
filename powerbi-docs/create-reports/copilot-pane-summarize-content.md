@@ -53,7 +53,7 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
-Copilot uses Azure Open AI to look at the visuals on the report, and create a natural language summary using the data in those visuals. You can summarize across the current page, or across the entire report if you specify one or the other in your prompt.
+Copilot uses Azure OpenAI to look at the visuals on the report, and create a natural language summary using the data in those visuals. You can summarize across the current page, or across the entire report if you specify one or the other in your prompt.
 
 ## Reference footnotes
 
@@ -107,7 +107,7 @@ The Copilot pane also allows you to ask specific questions about your report con
     - A tenant where the admin setting is enabled.
 - If you have a visual with extensive data points, Copilot may answer on truncated data. We are working on techniques to improve this.
 - The accuracy of the public preview may be limited.
-- The Copilot summary pane doesn't return new visuals as data answers.  FOr this capability, turn on the preview switch to use Data Q&A capabilities. 
+- The Copilot summary pane doesn't return new visuals as data answers.  For this capability, turn on the preview switch to use Data Q&A capabilities. 
 
 
 ## Send feedback
