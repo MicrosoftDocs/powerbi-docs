@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2023
+ms.date: 02/05/2024
 ---
 
 # Embedded analytics access tokens
