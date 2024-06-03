@@ -286,6 +286,8 @@
         href: power-bi-create-mobile-optimized-report-format-visuals.md
       - name: Rearrange visual layering
         href: power-bi-create-mobile-optimized-report-order-layers.md
+      - name: Best practices for designing mobile layouts
+        href: power-bi-create-mobile-optimized-report-best-practices.md
   - name: Visualizations
     items: 
     - name: Visualization types in Power BI

@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 06/03/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,20 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+ ## May 2024 QFE 1
+
+*Version 2.129.1229.0, Released: May 30, 2024*
+
+Bug fixes/improvements:
+
+* Subfolders preview feature is disabled by default  
+* Fixed issue with hiding **Select** and **Cancel** buttons when publishing with the **Subfolder** feature and the tenant pre-publish message is visible
+* Added more telemetry for acquiring token to identify dynamic user impersonation culprits
+* Fixed **CTRL + F6** navigation so the Diagram view can be focused, also updated the focus priorities of some components.
+
+
 
 
 ## April 2024 QFE 3

@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom:
-ms.date: 11/03/2022
+ms.date: 06/03/2024
 ---
 
 # Automatically install Power BI apps when embedding content for your organization

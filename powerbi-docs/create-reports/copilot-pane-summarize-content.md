@@ -8,7 +8,6 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 04/11/2024
-ms.collection: ce-skilling-ai-copilot
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -17,7 +16,7 @@ no-loc: [Copilot]
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you in the Copilot pane when you have report reader permission. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
+Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you in the Copilot pane. You can just be a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
@@ -38,14 +37,14 @@ The Copilot pane opens.
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-prompts.png" alt-text="Screenshot showing the Copilot pane open." lightbox="media/copilot-pane-summarize-content/copilot-updated-prompts.png":::
  
-You can choose from suggested prompts of summaries from the main Copilot menu such as "Give me an executive summary," "Anticipate likely questions from leadership," or "What insights should I look into?"
- 
+You can choose from suggested prompts of summaries from the main Copilot menu such as "Give me an executive summary," "Anticipate likely questions from leadership" or "What insights should I look into?"
+
 Or you can select prompts from the user prompt guide in the sparkle menu in the lower left-hand corner of the dialogue input box. Those options are:
 
-- What insights should I look into
-- Answer questions from leadership
-- Give me an executive summary
-- Summarize visuals on the page
+- What insights should I look into.
+- Answer questions from leadership.
+- Give me an execuive summary.
+- Summarize visuals on this page.
 
 :::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
 
@@ -53,7 +52,7 @@ After you choose a prompt, select **Enter** and watch Copilot generate your summ
  
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
-Copilot uses Azure OpenAI to look at the visuals on the report, and create a natural language summary using the data in those visuals. You can summarize across the current page, or across the entire report if you specify one or the other in your prompt.
+Copilot uses Azure Open AI to look at the visuals on the report, and create a natural language summary using the data in those visuals.  It doesn't take into account data that's not currently visualized in your current view, for example data hidden behind filters or slicers that are not currently applied.  You can summarize or answer questions across the entire report or for just the current page by indicating the scope in the prompt.
 
 ## Reference footnotes
 
@@ -63,7 +62,7 @@ In a summary response from the Copilot pane, reference footnotes are provided wi
 
 ## Custom prompts
 
-The summary skill benefit goes beyond providing a generic summary for a business user. You can type custom prompts to request a specific summary, such as a bulleted summary or a summary specifically about sales, or about another nuanced slice of your data. 
+The summary skill benefit goes beyond providing a generic summary for a consumer. You can type custom prompts to request a specific summary, such as a bulleted summary or a summary specifically about sales, or about another nuanced slice of your data. 
  
 :::image type="content" source="media/copilot-pane-summarize-content/bulleted-insights.png" alt-text="Screenshot showing type custom prompts to request a specific summary." lightbox="media/copilot-pane-summarize-content/bulleted-insights.png":::
 
@@ -73,7 +72,7 @@ Copilot allows you to generate a custom summary to fit your business needs. Here
 - Summarize the trends that are shown across this report.
 - Outline the insights about bike sales and Washington.
 - Summarize the data in a way that allows me to use it in an email to leadership.
-- Give me a summary about sales in Seattle, WA.
+- Summarize the data specific to Seattle, WA.
  
 ## Benefits
 
@@ -108,7 +107,6 @@ The Copilot pane also allows you to ask specific questions about your report con
 - If you have a visual with extensive data points, Copilot may answer on truncated data. We are working on techniques to improve this.
 - The accuracy of the public preview may be limited.
 - The Copilot summary pane doesn't return new visuals as data answers.  For this capability, turn on the preview switch to use Data Q&A capabilities. 
-
 
 ## Send feedback
 

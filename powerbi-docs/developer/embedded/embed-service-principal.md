@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 09/04/2023
+ms.date: 06/03/2024
 ---
 
 # Embed Power BI content with service principal and an application secret

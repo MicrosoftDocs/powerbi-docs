@@ -8,7 +8,6 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 05/13/2024
-
 ---
 
 # Tutorial: Embed Power BI content using a sample *embed for your customers'* application

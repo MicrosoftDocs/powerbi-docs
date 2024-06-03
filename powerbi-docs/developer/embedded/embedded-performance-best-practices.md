@@ -7,7 +7,7 @@ ms.reviewer: noam, or, may
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/06/2023
+ms.date: 05/06/2024
 ---
 
 # Best practices for faster performance in Power BI embedded analytics
