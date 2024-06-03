@@ -4,7 +4,7 @@ description: Learn how to change the API permissions on your Microsoft Entra app
 author: mberdugo
 ms.author: monaberdugo
 keywords: 
-ms.date: 11/7/2022
+ms.date: 06/03/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer

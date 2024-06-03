@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/1/2022
+ms.date: 6/1/2024
 ---
 
 # Configure credentials programmatically for Power BI

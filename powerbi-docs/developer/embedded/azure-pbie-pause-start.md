@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/08/2022
+ms.date: 06/03/2024
 ---
 
 # Pause and start your Power BI Embedded capacity in the Azure portal
