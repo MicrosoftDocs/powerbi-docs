@@ -38,7 +38,7 @@ For example, by using composite models, you can build a model that combines the 
 
 * Sales data from an enterprise data warehouse.
 * Sales-target data from a departmental SQL Server database.
-* Data that's imported from a spreadsheet.
+* Data imported from a spreadsheet.
 
 A model that combines data from more than one DirectQuery source or that combines DirectQuery with import data is called a composite model.
 
@@ -49,7 +49,7 @@ You can create relationships between tables as you always have, even when those 
 
 ## Example of a composite model
 
-For an example of a composite model, consider a report that has connected to a corporate data warehouse in SQL Server by using DirectQuery. In this instance, the data warehouse contains **Sales by Country**, **Quarter**, and **Bike (Product)** data, as shown in the following image:
+For an example of a composite model, consider a report that connects to a corporate data warehouse in SQL Server by using DirectQuery. In this instance, the data warehouse contains **Sales by Country**, **Quarter**, and **Bike (Product)** data, as shown in the following image:
 
 :::image type="content" source="media/desktop-composite-models/composite-models_04.png" alt-text="Screenshot of an example with composite models in Relationship view.":::
 
@@ -57,7 +57,7 @@ At this point, you could build simple visuals by using fields from this source. 
 
 :::image type="content" source="media/desktop-composite-models/composite-models_05.png" alt-text="Screenshot of a visual based on data from the previous example.":::
 
-But what if you have data in an Excel spreadsheet about the product manager who's assigned to each product, along with the marketing priority? If you want to view **Sales Amount** by **Product Manager**, it might not be possible to add this local data to the corporate data warehouse. Or it might take months at best.
+But what if you have data in an Excel spreadsheet about the product manager assigned to each product, along with the marketing priority? If you want to view **Sales Amount** by **Product Manager**, it might not be possible to add this local data to the corporate data warehouse. Or it might take months at best.
 
 It might be possible to import that sales data from the data warehouse, instead of using DirectQuery. And the sales data could then be combined with the data that you imported from the spreadsheet. However, that approach is unreasonable, for the reasons that led to using DirectQuery in the first place. The reasons could include:
 
@@ -69,7 +69,7 @@ Here's where composite models come in. Composite models let you connect to the d
 
 :::image type="content" source="media/desktop-composite-models/composite-models_06.png" alt-text="Screenshot of the navigator window after selecting an excel file as a source.":::
 
-In the **Fields** list, you can see two tables: the original **Bike** table from SQL Server and a new **ProductManagers** table. The new table contains the data that's imported from Excel.
+In the **Fields** list, you can see two tables: the original **Bike** table from SQL Server and a new **ProductManagers** table. The new table contains the data imported from Excel.
 
 :::image type="content" source="media/desktop-composite-models/composite-models_07.png" alt-text="Screenshot of the Fields pane with the Bike and ProductManagers fields selected.":::
 
@@ -123,7 +123,7 @@ You can add calculated tables to a model in Power BI Desktop that uses DirectQue
 Calculated tables are always imported, and their data is refreshed when you refresh the tables. If a calculated table refers to a DirectQuery table, visuals that refer to the DirectQuery table always show the latest values in the underlying source. Alternatively, visuals that refer to the calculated table show the values at the time when the calculated table was last refreshed.
 
 > [!IMPORTANT]
-> Calculated tables aren't supported in the Power BI service using this feature. See the [Working with a composite model based on a semantic model](#working-with-a-composite-model-based-on-a-semantic-model) section in this article for more information. 
+> Calculated tables aren't supported in the Power BI service using this feature unless you meet specific requirements. For more information about this, see the [Working with a composite model based on a semantic model](#working-with-a-composite-model-based-on-a-semantic-model) section in this article. 
 
 ## Security implications
 
@@ -131,17 +131,17 @@ Composite models have some security implications. A query sent to one data sourc
 
 :::image type="content" source="media/desktop-composite-models/composite-models_17.png" alt-text="Screenshot of a script showing security implications.":::
 
-So, information that's stored in the spreadsheet is now included in a query that's sent to the relational database. If this information is confidential, you should consider the security implications. In particular, consider the following points:
+So, information stored in the spreadsheet is now included in a query sent to the relational database. If this information is confidential, you should consider the security implications. In particular, consider the following points:
 
 * Any administrator of the database who can view traces or audit logs could view this information, even without permissions to the data in its original source. In this example, the administrator would need permissions to the Excel file.
 
-* The encryption settings for each source should be considered. You want to avoid retrieving information from one source by an encrypted connection and then inadvertently including it in a query that's sent to another source by an unencrypted connection.
+* The encryption settings for each source should be considered. You want to avoid retrieving information from one source by an encrypted connection and then inadvertently including it in a query sent to another source by an unencrypted connection.
 
 To allow confirmation that you've considered any security implications, Power BI Desktop displays a warning message when you create a composite model.  
 
 Additionally, if an author adds *Table1* from *Model A* to a Composite Model (let's call it *Model C* for reference), then a user viewing a report built on *Model C* could query **any table** in *Model A* that isn't protected by row-level security RLS.
 
-For similar reasons, be careful when you open a Power BI Desktop file that's sent from an untrusted source. If the file contains composite models, information that someone retrieves from one source, by using the credentials of the user who opens the file, would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. When you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one that's displayed when you open a file that contains native SQL queries.  
+For similar reasons, be careful when you open a Power BI Desktop file sent from an untrusted source. If the file contains composite models, information that someone retrieves from one source, by using the credentials of the user who opens the file, would be sent to another data source as part of the query. The information could be viewed by the malicious author of the Power BI Desktop file. When you initially open a Power BI Desktop file that contains multiple sources, Power BI Desktop displays a warning. The warning is similar to the one displayed when you open a file that contains native SQL queries.  
 
 ## Performance implications  
 
@@ -155,7 +155,7 @@ Using composite models adds other performance considerations. A single visual ca
 
 * **Multiple source queries, one per group by value**: When the aggregation uses **DistinctCount** and is grouped by a column from another source, and if the external source doesn't support efficient passing of many literal values that define the grouping, it's necessary to send one SQL query per group by value.
 
-   A visual that requests a distinct count of **CustomerAccountNumber** from the SQL Server table by **Product Managers** imported from the spreadsheet would need to pass in the details from the **Product Managers** table in the query that's sent to SQL Server. Over other sources, Redshift, for example, this action is unfeasible. Instead, there would be one SQL query sent per **Sales Manager**, up to some practical limit, at which point the query would fail.
+   A visual that requests a distinct count of **CustomerAccountNumber** from the SQL Server table by **Product Managers** imported from the spreadsheet would need to pass in the details from the **Product Managers** table in the query sent to SQL Server. Over other sources, Redshift, for example, this action is unfeasible. Instead, there would be one SQL query sent per **Sales Manager**, up to some practical limit, at which point the query would fail.
 
 Each of these cases has its own implications on performance, and the exact details vary for each data source. Although the cardinality of the columns used in the relationship that joins the two sources remains low, a few thousand, performance shouldn't be affected. As this cardinality grows, you should pay more attention to the impact on the resulting performance.
 
@@ -172,9 +172,9 @@ A source group is a collection of items, such as tables and relationships, from 
 
 :::image type="content" source="media/desktop-composite-models/composite-models-source-groups.png" alt-text="Diagram showing the Import and Sales source groups containing the tables from the respective sources.":::
 
-If you added another DirectQuery connection to another source, such as a DirectQuery connection to a SQL Server database called **Inventory**, the items from that source will be added as another source group:
+If you added another DirectQuery connection to another source, such as a DirectQuery connection to a SQL Server database called **Inventory**, the items from that source are added another source group:
 
-:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources.":::
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-2.png" alt-text="Diagram showing the Import, Sales, and Inventory source groups containing the tables from the respective sources.":::
 
 > [!NOTE]
 > Importing data from another source will **not** add another source group, because all items from all imported sources are in one source group.
@@ -188,9 +188,9 @@ There are two types of relationships in a composite model:
 
 [Read more about the distinction between regular and limited relationships and their impact.](desktop-relationships-understand.md#relationship-evaluation)
 
-For example, in the following image we've added three cross source group relationships, relating tables across the various source groups together:
+For example, in the following image we added three cross source group relationships, relating tables across the various source groups together:
 
-:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-3.png" alt-text="Diagram showing the Import, Sales and Inventory source groups containing the tables from the respective sources and relationships between the source groups as described previously.":::
+:::image type="content" source="media/desktop-composite-models/composite-models-source-groups-3.png" alt-text="Diagram showing the Import, Sales, and Inventory source groups containing the tables from the respective sources and relationships between the source groups as described previously.":::
 
 ### Local and remote
 
@@ -202,10 +202,10 @@ For example, if you define the following measure in a composite model that uses 
 [Average Inventory Count] = Average(Inventory[Inventory Count])
 ```
 
-### Calculation groups, query and measure evaluation
+### Calculation groups, query, and measure evaluation
 
-[Calculation groups](/analysis-services/tabular-models/calculation-groups) provide a way to reduce the number of redundant measures and grouping common measure expressions together. Typical use cases are time-intelligence calculations where you want to be able to switch from actuals to month-to-date, quarter-to-date or year-to-date calculations.
-When working with composite models, it's important to be aware of the interaction between calculation groups and whether a measure only refers to items from a single remote source group. If a measure only refers to items from a single remote source group and the remote model defines a calculation group that impacts the measure, that calculation group will be applied, even if the measure was defined in the remote model or in the local model.
+[Calculation groups](/analysis-services/tabular-models/calculation-groups) provide a way to reduce the number of redundant measures and grouping common measure expressions together. Typical use cases are time-intelligence calculations where you want to be able to switch from actuals to month-to-date, quarter-to-date, or year-to-date calculations.
+When working with composite models, it's important to be aware of the interaction between calculation groups and whether a measure only refers to items from a single remote source group. If a measure only refers to items from a single remote source group and the remote model defines a calculation group that impacts the measure, that calculation group is applied, even if the measure was defined in the remote model or in the local model.
 However, if a measure doesn't refer to items from a single remote source group exclusively but refers to items from a remote source group on which a remote calculation group is applied, the results of the measure might still be impacted by the remote calculation group. Consider the following example:
 
 * Reseller Sales is a measure defined in the remote model.
@@ -233,19 +233,19 @@ To enable the creation and consumption of composite models on Power BI semantic 
 
 Additionally, for Premium capacities and Premium Per User the ["XMLA endpoint" setting should be enabled and set to to either "Read Only" or "Read/Write"](../enterprise/service-premium-connect-tools.md#enable-xmla-read-write).
 
-Tenant administrators can enable or disable DirectQuery connections to Power BI semantic models in the admin portal. While this is enabled by default, disabling it will effectively stop users from publishing new composite models on Power BI semantic models to the service.
+Tenant administrators can enable or disable DirectQuery connections to Power BI semantic models in the admin portal. While this is enabled by default, disabling it stops users from publishing new composite models on Power BI semantic models to the service.
 
 :::image type="content" source="media/desktop-composite-models/directquery-connections-datasets-admin-setting.png" alt-text="Admin setting to enable or disable DirectQuery connections to Power BI semantic models.":::
 
-Existing reports that leverage a composite model on a Power BI semantic model will continue to work and users can still create the composite model in using Desktop but won't be able to publish to the service. Instead, when you create a DirectQuery connection to the Power BI semantic model by selecting **Make changes to this model** you'll see the following warning message:
+Existing reports that use a composite model on a Power BI semantic model continue to work and users can still create the composite model in using Desktop but can't publish to the service. Instead, when you create a DirectQuery connection to the Power BI semantic model by selecting **Make changes to this model** you'll see the following warning message:
 
-![Screenshot showing Warning message informing the user that publication of a composite model that uses a Power BI semantic model is not allowed, because DirectQuery connections are not allowed by the admin. The user can still create the model using Desktop.](media/desktop-composite-models/directquery-connection-disabled-warning.png)
+![Screenshot showing Warning message informing the user that publication of a composite model that uses a Power BI semantic model isn't allowed, because DirectQuery connections aren't allowed by the admin. The user can still create the model using Desktop.](media/desktop-composite-models/directquery-connection-disabled-warning.png)
 
-This way you can still explore the semantic model in your local Power BI Desktop environment and create the composite model. However, you won't be able to publish the report to the Service. When you publish the report and model, you'll see the following error message and publication will be blocked:
+This way you can still explore the semantic model in your local Power BI Desktop environment and create the composite model. However, you aren't able to publish the report to the Service. When you publish the report and model, you'll see the following error message and publication is blocked:
 
-![Screenshot showing Error message that blocks publication of a composite model that uses a Power BI semantic model because DirectQuery connections are not allowed by the admin.](media/desktop-composite-models/directquery-connection-disabled-publish-error.png)
+![Screenshot showing Error message that blocks publication of a composite model that uses a Power BI semantic model because DirectQuery connections aren't allowed by the admin.](media/desktop-composite-models/directquery-connection-disabled-publish-error.png)
 
-Note that live connections to Power BI semantic models aren't influenced by the switch, nor are live or DirectQuery connections to Analysis Services. These will continue to work regardless of if the switch has been turned off. Also, any published reports that leverage a composite model on a Power BI semantic model will continue to work even if the switch has been turned off after they were published.
+Live connections to Power BI semantic models aren't influenced by the switch, nor are live or DirectQuery connections to Analysis Services. These continue to work regardless of if the switch has been turned off. Also, any published reports that use a composite model on a Power BI semantic model will continue to work even if the switch has been turned off after they were published.
 
 
 ### Building a composite model on a semantic model or model
@@ -264,7 +264,7 @@ If you want to customize the metadata of fields in your live connected semantic 
 
 ![Screenshot showing Make changes to this model button.](media/desktop-composite-models/directquery-datasets-02.png)
 
-Selecting the button displays a dialog confirming addition of a local model. Select **Add a local model** to enable creating new columns or modifying the metadata, for fields from Power BI semantic models or Analysis Services. The following image shows the dialog that's displayed. 
+Selecting the button displays a dialog confirming addition of a local model. Select **Add a local model** to enable creating new columns or modifying the metadata, for fields from Power BI semantic models or Analysis Services. The following image shows the dialog shown. 
 
 ![Screenshot showing Create local model dialog.](media/desktop-composite-models/directquery-datasets-03.png)
 
@@ -274,9 +274,9 @@ When you're connected live to an Analysis Services source, there's no local mode
 
 Semantic models and the semantic models on which they're based form a *chain*. This process, called *chaining*, lets you publish a report and semantic model based on other Power BI semantic models, a feature that previously wasn't possible.
 
-For example, imagine your colleague publishes a Power BI semantic model called *Sales and Budget* that's based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
+For example, imagine your colleague publishes a Power BI semantic model called *Sales and Budget* based on an Analysis Services model called *Sales*, and combines it with an Excel sheet called *Budget*.
 
-When you publish a new report (and semantic model) called *Sales and Budget Europe* that's based on the *Sales and Budget* Power BI semantic model published by your colleague, making some further modifications or extensions as you do so, you're effectively adding a report and semantic model to a chain of length three, which started with the *Sales* Analysis Services model, and ends with your *Sales and Budget Europe* Power BI semantic model. The following image visualizes this chaining process.
+When you publish a new report (and semantic model) called *Sales and Budget Europe* based on the *Sales and Budget* Power BI semantic model published by your colleague, making some further modifications or extensions as you do so, you're effectively adding a report and semantic model to a chain of length three, which started with the *Sales* Analysis Services model, and ends with your *Sales and Budget Europe* Power BI semantic model. The following image visualizes this chaining process.
 
 ![Screenshot showing The process of chaining semantic models.](media/desktop-composite-models/directquery-datasets-04.png)
 
@@ -308,11 +308,11 @@ If any dataset in the chain is in a Premium Per User workspace, the user accessi
 
 ### Security warning
 
-Using the **DirectQuery for Power BI semantic models and Analysis Services** feature will present you with a security warning dialog, shown in the following image.
+Using the **Composite models on Power BI semantic models and Analysis Services models** feature presents you with a security warning dialog, shown in the following image.
 
 ![Screenshot showing Security warning.](media/desktop-composite-models/directquery-datasets-05.png)
 
-Data may be pushed from one data source to another, which is the same security warning for combining DirectQuery and import sources in a data model. To learn more about this behavior, please see [using composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
+Data may be pushed from one data source to another, which is the same security warning for combining DirectQuery and import sources in a data model. To learn more about this behavior, see [using composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 ### Supported scenarios
 
@@ -323,31 +323,31 @@ You can build composite models using data from Power BI semantic models or Analy
 - Writing measures that use fields from different data sources
 - Creating new columns for tables from Power BI semantic models or Analysis Services models
 - Creating visuals that use columns from different data sources
-- You can remove a table from your model using the field list, to keep models as concise and lean as possible (if you connect to a perspective, you can't remove tables from the model) 
+- You can remove a table from your model using the field list, to keep models as concise, and lean as possible (if you connect to a perspective, you can't remove tables from the model) 
 - You can specify which tables to load, rather than having to load all tables when you only want a specific subset of tables. See Loading a subset of tables later in this document. 
-- You can specify whether to add any tables that are subsequently added to the semantic model after you make the connection in your model. 
+- You can specify whether to add any tables that are later added to the semantic model after you make the connection in your model. 
 
 ### Working with a composite model based on a semantic model
 
-When working with DirectQuery for Power BI semantic models and Analysis Services, consider the following: 
+When working with DirectQuery for Power BI semantic models and Analysis Services, consider the following information: 
 
 * If you refresh your data sources, and there are errors with conflicting field or table names, Power BI resolves the errors for you. 
-* You cannot edit, delete or create new relationships in the same Power BI semantic model or Analysis Services source. If you have edit access to these sources, you can make the changes directly in the data source instead. 
+* You can't edit, delete, or create new relationships in the same Power BI semantic model or Analysis Services source. If you have edit access to these sources, you can make the changes directly in the data source instead. 
 * You can't change data types of columns that are loaded from a Power BI semantic model or Analysis Services source. If you need to change the data type, either change it in the source or use a calculated column. 
-* To build reports in the Power BI service on a composite model that's based on another semantic model, all credentials must be set.  
+* To build reports in the Power BI service on a composite model based on another semantic model, all credentials must be set.  
 * Connections to a SQL Server 2022 and later Analysis Services server on-premises or IAAS require an On-premises data gateway (Standard mode). 
 * All connections to remote Power BI semantic models are made using single sign-on. Authenticating with a service principal isn't currently supported. 
-* RLS rules will be applied on the source on which they're defined, but won't be applied to any other semantic models in the model. RLS defined in the report won't be applied to remote sources, and RLS set on remote sources won't be applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables will not filter any tables loaded from a remote source. 
-* KPIs, row level security, and translations won't be imported from the source. 
-* You may see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using Date Hierarchy: 
+* RLS rules are applied on the source on which they're defined, but aren't applied to any other semantic models in the model. RLS defined in the report aren't applied to remote sources, and RLS set on remote sources aren't applied to other data sources. Also, you can't define RLS on a table loaded from a remote source, and RLS defined on local tables do not filter any tables loaded from a remote source. 
+* KPIs, row level security, and translations aren't imported from the source. 
+* You might see some unexpected behavior when using a date hierarchy. To resolve this issue, use a date column instead. After adding a date hierarchy to a visual, you can switch to a date column by clicking on the down arrow in the field name, and then clicking on the name of that field instead of using Date Hierarchy: 
 
     :::image type="content" source="media/desktop-composite-models/directquery-composite-models-01.png" alt-text="Screen shot of date hierarchy setting.":::
 
     For more information on using date columns versus date hierarchies, see [apply auto date or time in Power BI Desktop](desktop-auto-date-time.md).
 
 * The maximum length of a chain of models is three. Extending beyond the chain length of three isn't supported and results in errors.
-* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. See [Manage DirectQuery connections to a published semantic model](../connect-data/desktop-discourage-directquery-connections-to-dataset.md) for more information.
-* The connection to a Power BI semantic model or Analysis Services model won't be shown in Power Query.
+* A discourage chaining flag can be set on a model to prevent a chain from being created or extended. For more information, see [Manage DirectQuery connections to a published semantic model](../connect-data/desktop-discourage-directquery-connections-to-dataset.md).
+* The connection to a Power BI semantic model or Analysis Services model isn't shown in Power Query.
 
 The following **limitations** apply when working with DirectQuery for Power BI semantic models and Analysis Services:
 
@@ -367,15 +367,15 @@ The following **limitations** apply when working with DirectQuery for Power BI s
 * Using Power BI Embedded with semantic models that include a DirectQuery connection to an Analysis Services model isn't currently supported.
 * Publishing a report to web using the publish to web feature isn't supported.
 * Calculation groups on remote sources aren't supported, with undefined query results.
-* Calculated tables aren't supported in the Service using this feature. Attempting to perform a refresh on a semantic model with a calculated table or a calculated column that references a DirectQuery data source will result in a "Single sign-on (SSO) credential isn't provided" error message.
-* If you rename a workspace after the DirectQuery connection has been set up you'll need to update the data source in Power BI Desktop for the report to continue working.
-* Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. See the article [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md) for more information.
+- Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](../connect-data/service-create-share-cloud-data-sources.md) and / or [granular access control](../connect-data/service-create-share-cloud-data-sources.md#granular-access-control).
+* If you rename a workspace after the DirectQuery connection has been set up you need to update the data source in Power BI Desktop for the report to continue working.
+* Automatic page refresh (APR) is only supported for some scenarios, depending on the data source type. For more information, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 * Take over of a semantic model that is using the **DirectQuery to other semantic models** feature isn't currently supported.
-* As with any DirectQuery data source, hierarchies defined in an Analysis Services model or Power BI semantic model won't be shown when connecting to the model or semantic model in DirectQuery mode using Excel.
+* As with any DirectQuery data source, hierarchies defined in an Analysis Services model or Power BI semantic model aren't shown when connecting to the model or semantic model in DirectQuery mode using Excel.
 
 There are a few other things to **consider** when working with DirectQuery for Power BI semantic models and Analysis Services:
 
-* **Use low-cardinality columns in cross source group relationships:** When you create a relationship across two different source groups, the columns participating in the relationship (also called the join columns) should have low cardinality, ideally 50,000 or less. This consideration applies to non-string key columns; for string key columns, see the following consideration.
+* **Use low-cardinality columns in cross source group relationships:** When you create a relationship across two different source groups, the columns participating in the relationship (also called the join columns) should have low cardinality, ideally 50,000 or less. This consideration applies to nonstring key columns; for string key columns, see the following consideration.
 * **Avoid using large strings key columns in cross source group relationships:** When creating a cross source group relationship, avoid using large string columns as the relationship columns, especially for columns that have larger cardinality. When you must use strings columns as the relationship column, calculate the expected string length for the filter by multiplying cardinality (C) by the average length of the string column (A). Make sure the expected string length is below 250,000, such that *A ∗ C < 250,000*.
 
 For more considerations and guidance, refer to [composite model guidance](../guidance/composite-model-guidance.md).
@@ -388,35 +388,35 @@ Consider the following diagram. The numbered steps in the diagram are described 
 
 :::image type="content" source="media/desktop-composite-models/directquery-composite-models-02.png" alt-text="Diagram of numbered steps for tenant considerations.":::
 
-In the diagram, Ash works with Contoso and is accessing data provided by Fabrikam. Using Power BI Desktop, Ash creates a DirectQuery connection to an Analysis Services model that is hosted in Fabrikam’s tenant.
+In the diagram, Ash works with Contoso and is accessing data provided by Fabrikam. With Power BI Desktop, Ash creates a DirectQuery connection to an Analysis Services model that is hosted in Fabrikam’s tenant.
 
 To authenticate, Ash uses a B2B Guest user identity (step 1 in the diagram).
 
-If the report is published to Contoso’s Power BI service (step 2), the semantic model published in the Contoso tenant cannot successfully authenticate against Fabrikam’s Analysis Services model (step 3). As a result, the report won't work.
+If the report is published to Contoso’s Power BI service (step 2), the semantic model published in the Contoso tenant can't successfully authenticate against Fabrikam’s Analysis Services model (step 3). As a result, the report doesn't work.
 
-In this scenario, since the Analysis Services model used is hosted in Fabrikam’s tenant, the report also must be published in Fabrikam's tenant. After successful publication in Fabrikam’s tenant (step 4) the semantic model can successfully access the Analysis Services model (step 5) and the report will work properly.
+In this scenario, since the Analysis Services model used is hosted in Fabrikam’s tenant, the report also must be published in Fabrikam's tenant. After successful publication in Fabrikam’s tenant (step 4), the semantic model can successfully access the Analysis Services model (step 5) and the report works properly.
 
 ### Working with object-level security
-When a composite model gets data from a Power BI semantic model or Analysis Services via DirectQuery, and that source model is secured by object-level security, consumers of the composite model may notice unexpected results. The following section explains how these results might come about.
+When a composite model gets data from a Power BI semantic model or Analysis Services via DirectQuery, and that source model is secured by object-level security, consumers of the composite model might notice unexpected results. The following section explains how these results might come about.
 
 Object-level security (OLS) enables model authors to hide objects that make up the model schema (that is, tables, columns, metadata, etc.) from model consumers (for example, a report builder or a composite model author). In configuring OLS for an object, the model author creates a role, and then removes access to the object for users who are assigned to that role. From the standpoint of those users, the hidden object simply doesn't exist.
 
-OLS is defined for and applied on the source model. It cannot be defined for a composite model built on the source model.
+OLS is defined for and applied on the source model. It can't be defined for a composite model built on the source model.
 
-When a composite model is built on top of an OLS-protected Power BI semantic model or Analysis Services model via DirectQuery connection, the model schema from the source model is copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data itself isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
+When a composite model is built on top of an OLS-protected Power BI semantic model or Analysis Services model via DirectQuery connection, the model schema from the source model is copied over into the composite model. What gets copied depends on what the composite model author is permitted see in the source model according to the OLS rules that apply there. The data isn't copied over to the composite model – rather, it's always retrieved via DirectQuery from the source model when needed. In other words, data retrieval always gets back to the source model, where OLS rules apply.
 
-Since the composite model isn't secured by OLS rules, the objects that consumers of the composite model see are those that the composite model author could see in the source model rather than what they themselves might have access to. This might result in the following situations
+Since the composite model isn't secured by OLS rules, the objects that consumers of the composite model see are those that the composite model author could see in the source model rather than what they themselves might have access to. This might result in the following situations:
 
 * Someone looking at the composite model might see objects that are hidden from them in the source model by OLS.
 * Conversely, they might NOT see an object in the composite model that they CAN see in the source model, because that object was hidden from the composite model author by the OLS rules controlling access to the source model.
 
-An important point is that in spite of the case described in the first bullet, consumers of the composite model will never see actual data they aren't supposed to see, because the data isn't actually located in the composite model. Rather, because of DirectQuery, it's retrieved as needed from the source semantic model, where OLS blocks unauthorized access.
+An important point is that in spite of the case described in the first bullet, consumers of the composite model never see actual data they aren't supposed to see, because the data isn't located in the composite model. Rather, because of DirectQuery, it's retrieved as needed from the source semantic model, where OLS blocks unauthorized access.
 
 With this background in mind, consider the following scenario:
 
 :::image type="content" source="media/desktop-composite-models/directquery-composite-models-03.png" alt-text="Diagram showing what happens when a composite model connects to a source model protected by object-level security.":::
 
-1. Admin_user has published an enterprise semantic model using a Power BI semantic model or an Analysis Services model that has a Customer table and a Territory table. Admin_user publishes the semantic model to the Power BI service and sets OLS rules that have the following effect:
+1. Admin_user published an enterprise semantic model using a Power BI semantic model or an Analysis Services model that has a Customer table and a Territory table. Admin_user publishes the semantic model to the Power BI service and sets OLS rules that have the following effect:
     * Finance users can't see the Customer table
     * Marketing users can't see the Territory table
 
@@ -424,23 +424,23 @@ With this background in mind, consider the following scenario:
 
 1. Marketing_user opens the Finance report. The visual that uses the Territory table is displayed, but returns an error, because when the report is opened, DirectQuery tries to retrieve the data from the source model using the credentials of the Marketing_user, who is blocked from seeing the Territory table as per the OLS rules set on the enterprise semantic model.
 
-1. Marketing_user creates a new report called "Marketing Report" that uses the Finance semantic model as its source. The field list shows the tables and columns that Finance_user has access to. Hence, the Territory table is shown in the fields list, but the Customer table is not. However, when the Marketing_user tries to create a visual that leverages a column from the Territory table, an error is returned, because at that point DirectQuery tries to retrieve data from the source model using Marketing_user's credentials, and OLS rules once again kick in and block access. The same thing happens when Marketing_user creates a new semantic model and report that connect to the Finance semantic model with a DirectQuery connection – they see the Territory table in the fields list, since that is what Finance_user could see, but when they try to create a visual that leverages that table, they'll be blocked by the OLS rules on the enterprise semantic model.
+1. Marketing_user creates a new report called "Marketing Report" that uses the Finance semantic model as its source. The field list shows the tables and columns that Finance_user has access to. Hence, the Territory table is shown in the fields list, but the Customer table isn't. However, when the Marketing_user tries to create a visual that uses a column from the Territory table, an error is returned, because at that point DirectQuery tries to retrieve data from the source model using Marketing_user's credentials, and OLS rules once again kick in and block access. The same thing happens when Marketing_user creates a new semantic model and report that connect to the Finance semantic model with a DirectQuery connection – they see the Territory table in the fields list, since that is what Finance_user could see, but when they try to create a visual that uses that table, they are blocked by the OLS rules on the enterprise semantic model.
 
 1. Now let's say that Admin_user updates the OLS rules on the enterprise semantic model to stop Finance from seeing the Territory table.
 
-1. The updated OLS rules are only reflected in the Finance semantic model when it's refreshed. Thus, when the Finance_user refreshes the Finance semantic model, the Territory table will no longer be shown in the fields list, and the visual in the Finance report that uses a column from the Territory table will return an error for Finance_user, because they're now not allowed to access the Territory table.
+1. The updated OLS rules are only reflected in the Finance semantic model when it's refreshed. Thus, when the Finance_user refreshes the Finance semantic model, the Territory table is no longer shown in the fields list, and the visual in the Finance report that uses a column from the Territory table returns an error for Finance_user, because they're now not allowed to access the Territory table.
 
 To summarize:
 
-* Consumers of a composite model see the results of the OLS rules that were applicable to the author of the composite model when they created the model. Thus, when a new report is created based on the composite model, the field list will show the tables that the author of the composite model had access to when they created the model, regardless of what the current user has access to in the source model.
+* Consumers of a composite model see the results of the OLS rules that were applicable to the author of the composite model when they created the model. Thus, when a new report is created based on the composite model, the field list shows the tables that the author of the composite model had access to when they created the model, regardless of what the current user has access to in the source model.
 * OLS rules can't be defined on the composite model itself.
-* A consumer of a composite model will never see actual data they aren't supposed to see, because relevant OLS rules on the source model will block them when DirectQuery tries to retrieve the data using their credentials.
-* If the source model updates its OLS rules, those changes will only affect the composite model when it's refreshed.  
+* A consumer of a composite model will never see actual data they aren't supposed to see, because relevant OLS rules on the source model block them when DirectQuery tries to retrieve the data using their credentials.
+* If the source model updates its OLS rules, those changes only affect the composite model when it's refreshed.  
 
 ### Loading a subset of tables from a Power BI semantic model or Analysis Services model
-When connecting to a Power BI semantic model or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the semantic model or model after you make the connection to your model. When you connect to a perspective your model will contain all tables in the semantic model and any tables not included in the perspective will be hidden. Moreover, any table that might get added to the perspective will be added automatically. In the **Settings** menu you can decide to automatically connect to tables that are added to the semantic model after you first set up the connection.
+When connecting to a Power BI semantic model or Analysis Services model using a DirectQuery connection, you can decide which tables to connect to. You can also choose to automatically add any table that might get added to the semantic model or model after you make the connection to your model. When you connect to a perspective, your model contains all tables in the semantic model and any tables not included in the perspective are hidden. Moreover, any table that might get added to the perspective is added automatically. In the **Settings** menu, you can decide to automatically connect to tables that are added to the semantic model after you first set up the connection.
 
-This dialog won't be shown for live connections.
+This dialog isn't shown for live connections.
 
 >[!NOTE]
 >This dialog will only show if you add a DirectQuery connection to a Power BI semantic model or Analysis Services model to an existing model. You can also open this dialog by changing the DirectQuery connection to the Power BI semantic model or Analysis Services model in the Data source settings after you created it.
@@ -452,19 +452,18 @@ You can specify deduplication rules to keep measure and table names unique in a 
 
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-deduplication-rules.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a semantic model.":::
 
-In the previous example we have decided to add ' (marketing)' as a suffix to any table or measure name that is in conflict with another source in the composite model. 
-Note that you can: 
+In the previous example, we added ' (marketing)' as a suffix to any table or measure name that is in conflict with another source in the composite model. You can: 
 - enter a text to be added to the name of conflicting tables or measures
 - specify whether you want the text to be added to the table or measure name as a prefix or a suffix 
 - apply the deduplication rule to tables, measures or both 
-- Choose to apply the deduplication rule only when a name conflict occurs or apply it all the time. The default is to apply the rule only when duplication occurs. In our example, any table or measure from the marketing source that does not have a duplicate in the sales source will not get a name change. 
+- Choose to apply the deduplication rule only when a name conflict occurs or apply it all the time. The default is to apply the rule only when duplication occurs. In our example, any table or measure from the marketing source that doesn't have a duplicate in the sales source won't get a name change. 
 
 After you make the connections and set up the deduplication rule, your field list will show both 'Customer' and 'Customer (marketing)' according to the deduplication rule set up in our example:
 
 :::image type="content" source="media/desktop-composite-models/directquery-datasets-name-deduplication-rules-effect.png" alt-text="Dialog that allows specifying deduplication rules to apply when loading from a Power BI semantic model or Analysis Services model.":::
 
 
-If you do not specify a deduplication rule or the deduplication rules you specified do not resolve the name conflict the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. In case of a name conflict on the 'Customer' table one of the 'Customer' tables will be renamed 'Customer 2'.
+If you don't specify a deduplication rule, or the deduplication rules you specified don't resolve the name conflict, the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. If there is a name conflict on the 'Customer' table one of the 'Customer' tables is renamed 'Customer 2'.
 
 ## Considerations and limitations
 
@@ -483,9 +482,9 @@ The following Live Connect tabular sources can't be used with composite models:
 
 Using streaming semantic models in composite models isn't supported.
 
-The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables that are not in DirectQuery, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
+The existing limitations of DirectQuery still apply when you use composite models. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an import table can refer to other tables that aren't in DirectQuery, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the QuickInsights feature isn't available on a model if any of the tables within it has a storage mode of DirectQuery.
 
-
+If you are using row-level security in a composite model with some of the tables in DirectQuery mode, you must refresh the model to apply new updates from the DirectQuery tables. For example, if a Users table in  DirectQuery mode has new user records at the source, the new records will only be included after the next  model refresh. Power BI Service caches the Users query to improve performance and doesn’t reload the data from the source until the next manual or scheduled refresh.
 
 ## Related content
 

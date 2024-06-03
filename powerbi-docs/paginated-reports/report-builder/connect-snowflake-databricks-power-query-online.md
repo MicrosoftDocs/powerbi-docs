@@ -1,7 +1,7 @@
 ---
-title: "Connect to Snowflake and Databricks with Power Query Online (Preview)"
+title: "Connect paginated reports to data sources using Power Query (Preview)"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
-ms.date: 04/23/2024
+ms.date: 05/22/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: nirusrin
 ---
-# Connect to Snowflake, Databricks, and others with Power Query Online in Power BI Report Builder
+# Connect paginated reports to data sources using Power Query in Power BI Report Builder (Preview)
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
@@ -62,6 +62,7 @@ Follow these steps to connect to a data source using Power Query Online:
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png" alt-text="Screenshot showing a new merged table." lightbox="media/connect-snowflake-databricks-power-query-online/paginated-all-merged.png":::
 
 1. Select **Create** to add the data source and the dataset to Power BI Report Builder. You see a success message. Select **OK** for the dataset and data source to be created. 
+
 1. You can see the data source (**PowerQuery**) and the dataset in the Report Data pane, under **Data Sources** and **Datasets**, respectively. You can also see the fields and the data types of the dataset in the Fields window. You can use these fields to design your paginated report. 
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-dataset-created.png" alt-text="Screenshot showing the new table.":::
@@ -73,14 +74,14 @@ You can edit the RDL dataset in the Get Data experience. For this, right-click t
 :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
 
 > [!NOTE]
-> If you had defined a parameter, you have to define it again in Power BI Report Builder.
+> If you had defined a parameter in the Power Query editor, you have to define it again in Power BI Report Builder.
 
 
 ## How to bind parameters
 
 If you want to define a parameter, follow these steps.
 
-1. Define the parameter in Power Query in the Get Data experience. Learn more about [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md).
+1. Define the parameter in Power Query in the Get Data experience. Learn more about [Parameters in Power Query](/power-query/power-query-query-parameters).
 
     :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-power-query-new-parameter.png" alt-text="Screenshot showing new parameter in Power Query.":::
    
@@ -106,6 +107,25 @@ If you want to define a parameter, follow these steps.
     
 You can now build your report and use the parameters to render the report.
 
+## How to share the report
+
+Now that you have built your paginated report and publish it to the Power BI service, you need to be able to share it. You need to also share the [shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).
+
+Follow these steps:
+
+1. To locate the name of the shareable cloud connection:
+
+    a. Right-click the dataset and select **Edit Mashup**.
+
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-edit-mashup.png" alt-text="Screenshot showing edit the mashup.":::
+
+    b. Get the shareable cloud connection information.
+   
+    :::image type="content" source="media/connect-snowflake-databricks-power-query-online/paginated-get-scc.png" alt-text="Screenshot showing shareable cloud connection location.":::
+
+1. When you locate the name, add users who should have access by following steps to [share a shareable cloud connection](../../connect-data/service-create-share-cloud-data-sources.md).  
+
+
 ## Next steps 
 
 After you have a dataset that you created using Power Query, you can use it to create a paginated report in Power BI Report Builder, as you would with any other RDL dataset. You can use the report design tools, such as the Properties window and the Grouping pane, to design the layout, the data regions, the expressions, and the groups of your report.
@@ -114,15 +134,15 @@ When you're done with the report design, you can save the report to your local m
 
 ## Considerations and limitations
 
-- Only one dataset per M query is supported unless the other data source is **Enter data**. 
+- Only one RDL dataset per M query is supported. 
 - The last query in the **Queries** window in the Power Query editor is used to generate the RDL dataset.  
-- Gateway data sources aren't supported even though you connect in Mashup Editor. 
-- In the Power BI service,  only OAuth2, Basic, and no auth (Enter Data) supported.  No SSO. 
+- Gateway data sources aren't supported even though you connect in Mashup Editor.  
 - Parameters aren't automatically bound in Power BI Report Builder. You must bind parameters like any other data source. See the [How to bind parameters](#how-to-bind-parameters) section in this article.
-- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render. 
+- If you set a parameter as a list in Power Query but you select a single value (as a default or while rendering the report), the report fails to render.
 
 ## Related content  
 
 - [Power BI Report Builder](../report-builder-power-bi.md)
 - [Intro to report data in Power BI Report Builder](../report-data/report-data.md)
 - [Dynamic M query parameters in Power BI Desktop](../../connect-data/desktop-dynamic-m-query-parameters.md)
+- [Authentication in Power Query Online](/power-query/connection-authentication-pqo)

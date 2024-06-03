@@ -22,7 +22,7 @@ Even if you don't have permission to edit a Power BI report, Copilot can still c
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-Given a Power BI report page populated with visuals, you might spend anywhere from 30 minutes to a couple hours combing through the report to fully understand your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data displayed in the report in seconds, instead of the minutes or hours to manually interpret the data and then write a summary, or ask an analyst to interpret and write a summary for you.
+Given a Power BI report populated with visuals, you might spend anywhere from 30 minutes to a couple hours combing through the report to fully understand your key questions, key insights, and what's going on at a high level, so you can summarize it for your leadership team. That length of time varies depending on how familiar you are with the data and how much involvement the analyst has in answering your questions. Now, with the summary feature in the Copilot pane, you can generate a summary of the data displayed in that report in seconds, instead of the minutes or hours to manually interpret the data and then write a summary, or ask an analyst to interpret and write a summary for you.
 
 ## Get started with standard prompts
 
@@ -35,13 +35,13 @@ To get started, select the **Copilot** button in the ribbon in either Power BI D
 
 The Copilot pane opens. 
 
-:::image type="content" source="media/copilot-pane-summarize-content/copilot-pane.png" alt-text="Screenshot showing the Copilot pane open." lightbox="media/copilot-pane-summarize-content/copilot-pane.png":::
+:::image type="content" source="media/copilot-pane-summarize-content/copilot-updated-prompts.png" alt-text="Screenshot showing the Copilot pane open." lightbox="media/copilot-pane-summarize-content/copilot-updated-prompts.png":::
  
 You can choose from suggested prompts of summaries from the main Copilot menu such as "Give me an executive summary," "Anticipate likely questions from leadership" or "What insights should I look into?"
- 
+
 Or you can select prompts from the user prompt guide in the sparkle menu in the lower left-hand corner of the dialogue input box. Those options are:
 
-- What insights should I look into
+- What insights should I look into.
 - Answer questions from leadership.
 - Give me an execuive summary.
 - Summarize visuals on this page
@@ -56,7 +56,7 @@ Copilot uses Azure Open AI to look at the visuals on the report, and create a na
 
 ## Reference footnotes
 
-In a summary response from the Copilot pane, reference footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These footnotes help you quickly cross-check the summary output to ensure accuracy, increasing productivity.
+In a summary response from the Copilot pane, reference footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary. These footnotes help you quickly cross-check the summary output to ensure accuracy, increasing productivity.  If a reference is from a page you aren't currently on, the reference will take you to that page when clicked.
  
 :::image type="content" source="media/copilot-pane-summarize-content/reference-hover-state.png" alt-text="Screenshot showing that footnotes are provided within the summary to indicate which data visuals Copilot referenced to generate the summary." lightbox="media/copilot-pane-summarize-content/reference-hover-state.png":::
 
@@ -69,8 +69,8 @@ The summary skill benefit goes beyond providing a generic summary for a consumer
 Copilot allows you to generate a custom summary to fit your business needs. Here are some examples of custom summaries:
  
 - Give me a summary of my revenue over the last fiscal year and describe any significant outliers.
-- Summarize the trends that are shown on this report page.
-- Outline the insights on this page in reference to bike sales and geography.
+- Summarize the trends that are shown across this report.
+- Outline the insights about bike sales and Washington.
 - Summarize the data in a way that allows me to use it in an email to leadership.
 - Summarize the data specific to Seattle, WA.
  
@@ -93,11 +93,11 @@ The Copilot pane also allows you to ask specific questions about your report con
 
 ## Examples of questions you can ask 
 
-- Which team had the highest sales? 
+- Which team had the highest sales?
+- What was the spend per visitor for Maui in November 2023?
+- What is the value for revenue variance?
 - Which product had the highest profit margin? 
 - What is the difference in revenue by product streams, and are they statistically significant?  
-- What are the trends in wait times and call lengths across different cities, and how can we improve these metrics? 
-- What are some questions leadership might ask about this data? 
 
 ## Limitations and considerations
 
@@ -106,8 +106,7 @@ The Copilot pane also allows you to ask specific questions about your report con
     - A tenant where the admin setting is enabled.
 - If you have a visual with extensive data points, Copilot may answer on truncated data. We are working on techniques to improve this.
 - The accuracy of the public preview may be limited.
-- The Copilot summary pane doesn't return new visuals as data answers.
-
+- The Copilot summary pane doesn't return new visuals as data answers.  For this capability, turn on the preview switch to use Data Q&A capabilities. 
 
 ## Send feedback
 

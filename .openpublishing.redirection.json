@@ -3090,6 +3090,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-purchase.md",
+            "redirect_url": "/power-bi/enterprise",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-premium-testing.md",
+            "redirect_url": "/power-bi/enterprise",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-syndication-partner.md",
+            "redirect_url": "/fabric/enterprise/buy-subscription",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-architecture.md",
+            "redirect_url": "/fabric/security/security-fundamentals",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-connect-to-smartsheet.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-smartsheet",
             "redirect_document_id": true
@@ -6074,6 +6094,11 @@
         {
             "source_path": "powerbi-docs/enterprise/service-premium-capacity-manage.md",
             "redirect_url": "/fabric/admin/capacity-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-features.md",
+            "redirect_url": "/fabric/enterprise/fabric-operations",
             "redirect_document_id": false
         },
         {

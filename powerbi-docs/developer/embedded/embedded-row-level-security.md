@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/14/2023
+ms.date: 05/14/2024
 ---
 
 # Security features in Power BI Embedded

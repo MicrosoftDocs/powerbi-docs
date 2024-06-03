@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 11/20/2023
+ms.date: 06/03/2024
 ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
@@ -261,5 +261,8 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - If a dynamic format string is applied to a measure, the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
+- When using [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers), export data from a visual doesn't work in the following cases:
+    - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done using a Service Principal.
+    - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

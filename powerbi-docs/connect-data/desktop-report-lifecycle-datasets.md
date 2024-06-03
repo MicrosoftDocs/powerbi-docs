@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/22/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to semantic models in the Power BI service from Power BI Desktop
@@ -117,6 +117,7 @@ When you use the Power BI service live connection, keep a few considerations and
 - If Members are required to publish, they need to download using the option *A Copy of your report and data*. Make the necessary changes then publish the report.
 - If you delete the shared semantic model in the Power BI service, reports based on that semantic model will no longer work properly or display visuals. You can no longer access that semantic model from Power BI Desktop.
 - Reports that share a semantic model on the Power BI service don't support automated deployments that use the Power BI REST API.
+- Since the Power BI service connection is live, connecting to a dataset with shared report in other users' *My Workspace* is not supported.
 
 
 ## Related content
