@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/10/2022
+ms.date: 06/03/2024
 ---
 
 # Embed Power BI content in Salesforce

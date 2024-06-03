@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 06/07/2022
+ms.date: 06/03/2024
 ---
 
 # Connect a report to a semantic model using dynamic binding
