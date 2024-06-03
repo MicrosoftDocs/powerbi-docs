@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 05/10/2024
+ms.date: 05/30/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -96,13 +96,15 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Back on the **Home** tab, select **Close & Apply**. Our data is almost ready for building a report. 
 
-    You see the Sigma symbol in the Fields list? Power BI has detected that those fields are numeric. Power BI also indicates the date field with a calendar symbol.
+    You see the Sigma symbol in the Data list? Power BI has detected that those fields are numeric. Power BI also indicates the date field with a calendar symbol.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Fields list with numeric fields and date field.":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Data list with numeric fields and date field.":::
 
-### Extra credit: Write an expression in DAX
+## Extra credit: Write two expressions in DAX
 
-Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression and join two tables. 
+Writing *measures* and creating *tables* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic expression to create a new measure, and another expression to create a whole table.
+
+### Create a new measure
 
 1. On the **Home** ribbon, select **New measure**.
 
@@ -117,6 +119,8 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 1. Select the check mark to commit.
     
     :::image type="content" source="media/desktop-excel-stunning-report/dax-total-units-sold.png" alt-text="Screenshot of DAX expression Total Units Sold.":::
+
+ ### Create a new table
  
 1. Now select the **Data** view on the left.
 
@@ -136,6 +140,10 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression Calendar.":::
 
+    Here are the first 23 rows of the single-column table you just created.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/calendar-result.png" alt-text="Screenshot of the calendar you created with the DAX expression.":::
+   
 1. Now select **Model** view on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
@@ -146,7 +154,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 ## Build your report 
 
-Now that you've transformed and loaded your data, it's time to create your report. In the Fields pane on the right, you see the fields in the data model you created. 
+Now that you've transformed and loaded your data, it's time to create your report. In the Data pane on the right, you see the fields in the data model you created. 
 
 Let’s build the final report, one visual at a time. 
 
@@ -165,8 +173,8 @@ Let’s build the final report, one visual at a time.
 
 Now, you create a line chart to see which month and year had the highest profit. 
 
-1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#extra-credit-write-an-expression-in-dax) earlier in this article, drag the **Date** field from your Calendar table instead. 
+1. From the Data pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
+1. Drag the **Date** field to the same visual. If you created a Calendar table in [Extra credit: Create a table in DAX](#create-a-new-table) earlier in this article, drag the **Date** field from your Calendar table instead. 
 
     Power BI updates the column chart to show profit by the two years.
 
@@ -190,7 +198,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
 Create a map to see which country/region had the highest profits.
 
-1. From the Fields pane, drag the **Country** field to a blank area on your report canvas to create a map.
+1. From the Data pane, drag the **Country** field to a blank area on your report canvas to create a map.
 1. Drag the **Profit** field to the map.
 
     Power BI creates a map visual with bubbles representing the relative profit of each location. 
@@ -206,7 +214,7 @@ Create a bar chart to determine which companies and segments to invest in.
 1. Drag the two charts you've created to be side by side in the top half of the canvas. Save some room on the left side of the canvas. 
 1. Select a blank area in the lower half of your report canvas. 
 
-1. In the Fields pane, select the **Sales**, **Product**, and **Segment** fields. 
+1. In the Data pane, select the **Sales**, **Product**, and **Segment** fields. 
 
     Power BI automatically creates a clustered column chart. 
 
@@ -218,12 +226,12 @@ Create a bar chart to determine which companies and segments to invest in.
 
 ### Visual 5: Year slicer 
 
-Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#extra-credit-write-an-expression-in-dax) earlier in this tutorial.
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create two different slicers to narrow in on performance for each month and year. One slicer uses the date field in the original table. The other uses the [date table you may have created for "extra credit"](#create-a-new-table) earlier in this tutorial.
 
 
 **Date slicer using the original table**
 
-1. In the Fields pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
+1. In the Data pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
 2. In the Visualizations pane, choose **Slicer**. 
 
     Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer. 
@@ -234,9 +242,9 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
 **Date slicer using the DAX table**
 
-1. In the Fields pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
+1. In the Data pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
 2. In the Visualizations pane, choose **Slicer**. 
-3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
+3. In the Data section of the Visualizations pane, select the drop-down in **Data**. Remove Quarter and Day so only Year and Month are left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy.":::
 

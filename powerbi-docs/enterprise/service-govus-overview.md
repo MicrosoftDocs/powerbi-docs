@@ -158,7 +158,7 @@ If a release is planned for an environment, we include the quarter of estimated 
 
 <sup>2</sup> Because marketplace apps aren't available to US government cloud instances, template apps are limited to private and organizational apps.
 
-<sup>3</sup> Currently available for Power BI Desktop only. Publishing to the Power BI service isn't yet available.
+<sup>3</sup> Call Quality Data Connector must be installed on an [on-premises data gateway](/power-bi/connect-data/service-gateway-onprem) for compatibility with Power BI service. If the connector is not installed on an on-premises data gateway, usage is restricted to Power BI Desktop only.
 
 For more information about support for Power BI components in Power Apps, see [Power Apps US Government feature limitations](/power-platform/admin/powerapps-us-government#power-apps-us-government-feature-limitations).
 

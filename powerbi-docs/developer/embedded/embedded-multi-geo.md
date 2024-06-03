@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 07/19/2023
+ms.date: 06/03/2024
 ---
 
 # Multi-Geo support for Power BI Embedded
