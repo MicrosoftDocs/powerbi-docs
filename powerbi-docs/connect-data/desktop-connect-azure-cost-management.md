@@ -112,18 +112,18 @@ Once you successfully authenticate, a **Navigator** window appears with the foll
 | --- | --- | --- | --- |
 | **Balance summary** |  EA only | EA Enrollment | Summary of the balance for the current billing month for Enterprise Agreements (EA). |
 | **Billing events** |  MCA only | Billing Profile | Event log of new invoices, credit purchases, etc. Microsoft Customer Agreement only. |
-| **Budgets** |  EA, MCA | EA Enrollment,MCA Billing Account,MCA Billing Profile | Budget details to view actual costs or usage against existing budget targets. |
+| **Budgets** |  EA, MCA | EA Enrollment, MCA Billing Account, MCA Billing Profile | Budget details to view actual costs or usage against existing budget targets. |
 | **Charges** |  MCA only | MCA Billing Profile | A month-level summary of Azure usage, Marketplace charges, and charges billed separately. Microsoft Customer Agreement only. |
 | **Credit lots** |  MCA only | MCA Billing Profile | Azure credit lot purchase details for the provided billing profile. Microsoft Customer Agreement only. |
-| **Pricesheets** |  EA, MCA | EA Enrollment,MCA Billing Profile | Applicable meter rates for the provided billing profile or EA enrollment. |
-| **RI charges** |  EA, MCA | EA Enrollment,MCA Billing Profile | Charges associated to your Reserved Instances over the last 24 months. This table is in the process of being deprecated, please use RI transactions |
-| **RI recommendations (shared)** |  EA, MCA | EA Enrollment,MCA Billing Profile | Reserved Instance purchase recommendations based on all your subscription usage trends for the last 30 days. |
-| **RI recommendations (single)** |  EA, MCA | EA Enrollment,MCA Billing Profile | Reserved Instance purchase recommendations based on your single subscription usage trends for the last 30 days. |
-| **RI transactions** |  EA, MCA | EA Enrollment,MCA Billing Profile | List of transactions for reserved instances on billing account scope. |
-| **RI usage details** |  EA, MCA | EA Enrollment,MCA Billing Profile | Consumption details for your existing Reserved Instances over the last month. |
-| **RI usage summary** |  EA, MCA | EA Enrollment,MCA Billing Profile | Daily Azure reservation usage percentage. |
-| **Usage details** |  EA, MCA | EA Enrollment,MCA Billing Account,MCA Billing Profile | A breakdown of consumed quantities and estimated charges for the given billing profile on EA enrollment. |
-| **Usage details amortized** |  EA, MCA | EA Enrollment,MCA Billing Account,MCA Billing Profile | A breakdown of consumed quantities and estimated amortized charges for the given billing profile on EA enrollment. |
+| **Pricesheets** |  EA, MCA | EA Enrollment, MCA Billing Profile | Applicable meter rates for the provided billing profile or EA enrollment. |
+| **RI charges** |  EA, MCA | EA Enrollment, MCA Billing Profile | Charges associated to your Reserved Instances over the last 24 months. This table is in the process of being deprecated, use RI transactions instead |
+| **RI recommendations (shared)** |  EA, MCA | EA Enrollment, MCA Billing Profile | Reserved Instance purchase recommendations based on all your subscription usage trends for the last 30 days. |
+| **RI recommendations (single)** |  EA, MCA | EA Enrollment, MCA Billing Profile | Reserved Instance purchase recommendations based on your single subscription usage trends for the last 30 days. |
+| **RI transactions** |  EA, MCA | EA Enrollment, MCA Billing Profile | List of transactions for reserved instances on billing account scope. |
+| **RI usage details** |  EA, MCA | EA Enrollment, MCA Billing Profile | Consumption details for your existing Reserved Instances over the last month. |
+| **RI usage summary** |  EA, MCA | EA Enrollment, MCA Billing Profile | Daily Azure reservation usage percentage. |
+| **Usage details** |  EA, MCA | EA Enrollment, MCA Billing Account,MCA Billing Profile | A breakdown of consumed quantities and estimated charges for the given billing profile on EA enrollment. |
+| **Usage details amortized** |  EA, MCA | EA Enrollment, MCA Billing Account,MCA Billing Profile | A breakdown of consumed quantities and estimated amortized charges for the given billing profile on EA enrollment. |
 
 You can select a table to see a preview dialog. You can select one or more tables by selecting the boxes beside their name and then select **Load**.
 
