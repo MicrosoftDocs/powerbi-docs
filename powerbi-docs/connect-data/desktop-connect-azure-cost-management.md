@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 06/03/2024
 LocalizationGroup: Connect to data
 ---
 
@@ -95,9 +95,10 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 
 1.	In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 2.	Select your billing account.
-3.	On the **Overview** menu, copy the **Billing account ID**.
-4.	For **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step. 
-5.	Enter the number of months and then select **OK**.
+3.	From the **Overview** blade, copy the **Billing account ID**.
+4.	For **Choose Scope**, select **Enrollment Number**. 
+5.  In **Scope Identifier** paste the billing account ID copied in the previous step.
+6.	Enter the number of months and then select **OK**.
 
     ![Screenshot shows the Azure Cost Management properties with a scope of Enrollment number.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
