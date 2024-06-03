@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: best-practice #Don't change
-ms.date: 05/27/2024
+ms.date: 06/03/2024
 
 #customer intent: As a Power BI report creator, I want use best practices so as to get the best results when I create my mobile-optimized layout of a Power BI report..
 
@@ -30,7 +30,7 @@ Add only significant and regularly used visuals to your mobile layout. Simplify 
 
 Consider the following tips:
 
-* Minimize visual titles by using smaller font sizes. Don't use fonts smaller than 9 pixels.
+* Minimize visual titles by using smaller font sizes. Don't use fonts smaller than nine points.
 * Remove insignificant details whenever possible, such as axis titles, gridlines, and legends.
 
 :::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/font-size-illustration.png" alt-text="Image of mobile device illustrating an acceptable font size in a Power BI report." border="false":::
@@ -43,11 +43,11 @@ Consider the following tips:
 
 ## Space your visuals out
 
-Consider expanding your visuals to match the maximum width of your device, which is 324 pixels. A default margin is automatically included, even when visuals are extended to the device's maximum width, so there's no need to reserve extra space.
+Consider expanding your visuals to match the maximum width of your device (323 points is the maximum screen width). A default margin is automatically included, even when visuals are extended to the device's maximum width, so there's no need to reserve extra space.
 
 Don't place visuals side by side (except for single element visuals such as cards or KPI visuals and nondata visuals such as buttons).
 
-Space your visuals out, keeping at least six to eight pixels (a single arrow press on the keyboard) between elements, both vertically and horizontally. For pixel perfect design, turn off the **Snap to grid** option in the view menu.
+Space your visuals out, keeping at least six to eight points (a single arrow press on the keyboard) between elements, both vertically and horizontally. For pixel-perfect design, turn off the **[Snap to grid option](./desktop-gridlines-snap-to-grid.md#enable-gridlines-snap-to-grid-and-smart-guides)** in the view menu.
 
 ## Arrange your visuals to tell a story
 
@@ -63,10 +63,13 @@ Set the height of each visual such that all the elements inside the visual are v
 
 The following table lists the standard visuals, classified by their minimum recommended mobile size. Try not to go below these minimum standard sizes when designing your mobile layout.
 
-* XL – minimum width: 324 px, minimum height: 270 px
-* L – minimum width: 324 px, minimum height: 180 px
-* M – minimum width: 324 px, minimum height: 100 px
-* S – minimum width: 158 px, minimum height: 100 px
+* XL – minimum width: 323 pt, minimum height: 270 pt
+* L – minimum width: 323 pt, minimum height: 180 pt
+* M – minimum width: 323 pt, minimum height: 100 pt
+* S – minimum width: 158 pt, minimum height: 100 pt
+
+> [!NOTE]
+> 323 pt is the maximum screen width on the mobile layout canvas.
 
   | **Name** | **Visual size** |
   |---|---|
