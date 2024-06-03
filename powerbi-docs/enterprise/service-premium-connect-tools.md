@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 06/03/2024
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -324,6 +324,10 @@ When applications connect to a workspace, access through XMLA endpoints is logge
 |Deleted Power BI semantic model from an external application      |  DeleteDatasetFromExternalApplication        |
 
 To learn more, see [Auditing Power BI](../admin/service-admin-auditing.md).
+
+## Considerations and limitations
+
+[Default Power BI semantic Models](/fabric/data-warehouse/semantic-models) can't be modified using the XMLA endpoint.
 
 ## Related content
 
