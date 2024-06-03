@@ -20,9 +20,9 @@ Well-designed, mobile-optimized layouts for your Power BI reports offer the best
 
 ## Keep mobile devices in mind while designing your desktop report
 
-Build each report page desktop layout together with its mobile layout counterpart. This facilitates coherence between the two.
+Build the desktop and mobile layouts of each report page together. This facilitates coherence between the two.
 
-When you duplicate a desktop report page that has both a desktop layout and a mobile layout, both layouts are duplicated. This makes for easier page formatting when you want to maintain a certain visual layout, such as a report header or page navigator, across mulitple pages. Try creating a report page with both desktop and mobile layouts that you can use as a skeleton for building the rest of the report pages.
+When you duplicate a report page that has both desktop and mobile layouts, both layouts are duplicated. This makes page formatting easier if you have visual layout elements, such as a report header or page navigator, that you want to maintain across mulitple pages. If you have such elements, create a report page that has both desktop and mobile layouts, and then use that page as a template for building the rest of the report pages.
 
 ## Focus on the most important content
 
@@ -30,7 +30,7 @@ Add only significant and regularly used visuals to your mobile layout. Simplify 
 
 Consider the following tips:
 
-* Minimize visual titles by using smaller font sizes. Don't use fonts smaller than 9 points.
+* Minimize visual titles by using smaller font sizes. Don't use fonts smaller than 9 pixels.
 * Remove insignificant details whenever possible, such as axis titles, gridlines, and legends.
 
 :::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/font-size-illustration.png" alt-text="Image of mobile device illustrating an acceptable font size in a Power BI report." border="false":::
@@ -51,17 +51,17 @@ Space your visuals out, keeping at least six to eight pixels (a single arrow pre
 
 ## Arrange your visuals to tell a story
 
-The flow of mobile layout is from top to bottom. The most important visuals should be positioned at the top of the page, whether they are the most significant data-driven visuals or slicers that illustrate a point. Visuals that are closely linked to each other should be placed one after another. Place Less significant visuals towards the bottom of the page, accessible through downward scrolling, or just leave them out of the mobile layout completely. Having fewer visuals improves both the report’s loading time and its overall performance. Remember, users can always tilt their devices to landscape orientation if they want to view the original report page in its desktop layout.
+The flow of mobile layout is from top to bottom. Position the most important visuals at the top of the page, whether they are the most significant data-driven visuals or slicers that illustrate a point. Place closely related visuals one after another. Place less significant visuals towards the bottom of the page, where they can be reached via downward scrolling, or just leave them out of the mobile layout all together. Having fewer visuals improves both report loading time and overall performance. Remember, users can always tilt their devices to landscape orientation if they want to view the original report page in its desktop layout.
 
 :::image type="content" source="./media/power-bi-create-mobile-optimized-report-best-practices/arrange-items-as-story.png" alt-text="Image illustrating how items can be arranged in the mobile-optimized report to tell a story." border="false":::
 
-## Avoid in-visual vertical scroll bars
+## Avoid causing vertical scroll bars within visuals
 
-Set the height of each visual such that all the elements inside the visual are visible and not truncated. This eliminates having an in-visual vertical scroll bar in addition to the vertical scroll bar of the report page itself. Keep in mind that mobile devices vary in height.
+Set the height of each visual such that all the elements inside the visual are visible and not truncated. This prevents having an vertical scroll bar appear inside the visual, in addition to the vertical scroll bar of the report page itself. Keep in mind that mobile devices vary in height.
 
-## Stick to the standard sizes 
+## Stick to standard sizes
 
-The following table lists the standard visuals, classified by their minimum recommended mobile size. Try to stick to these minimum standard sizes when designing your mobile layout.
+The following table lists the standard visuals, classified by their minimum recommended mobile size. Try not to go below these minimum standard sizes when designing your mobile layout.
 
 * XL – minimum width: 324 px, minimum height: 270 px
 * L – minimum width: 324 px, minimum height: 180 px
@@ -88,6 +88,7 @@ The following table lists the standard visuals, classified by their minimum reco
   | **Card (New)** | L |
   | **Clustered bar chart** | L |
   | **Clustered column chart** | L |
+  | **Custom Visual** | L |
   | **Donut chart** | L |
   | **Funnel** | L |
   | **Line and clustered column chart** | L |
@@ -106,12 +107,6 @@ The following table lists the standard visuals, classified by their minimum reco
   | **Tree map** | L |
   | **Waterfall chart** | L |
   | **List Slicer** | L |
-  | **Button** | S |
-  | **Card** | S |
-  | **Gauge** | S |
-  | **KPI** | S |
-  | **Shape** | S |
-  | **Shape** | S |
   | **Continuous Slicer (Before/between/after)** | M |
   | **Continuous Slicer (Single value/Greater then/Less then)** | M |
   | **Tile slicer** | M |
@@ -120,7 +115,12 @@ The following table lists the standard visuals, classified by their minimum reco
   | **Page navigator button** | M |
   | **Drop down list slicer** | M |
   | **Text Box** | M |
-  | **Custom Visual** | L |
+  | **Button** | S |
+  | **Card** | S |
+  | **Gauge** | S |
+  | **KPI** | S |
+  | **Shape** | S |
+  | **Shape** | S |
 
 ## Related content
 
