@@ -9,12 +9,30 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 04/01/2024
+ms.date: 05/22/2024
 ---
 
 # What's new in the Power BI add-in for PowerPoint
 
+## May 2024
+
+### Image mode improvements
+
+Add-ins that were saved as *Public snapshot* can be printed, and don't require you to go over all the slides to load the add-ins for a permissions check before the public image is made visible.
+
+For add-ins that were saved as *Public snapshot*, you might be able to improve loading times by using the *Show as saved image* option on the add-in side menu. This replaces the entire add-in with an image representation of it. This can be useful when you are presenting your presentation and need the fastest loading times possible.
+
+### Data updated notification
+
+When a presentation is open for a long time, the Power BI data shown in the add-in can become outdated. To make sure the data you have in your slides is up to date, a new notification tells you when more up-to-date data exists in Power BI, and gives you an option to refresh the data with the latest data from Power BI.
+
 ## April 2024
+
+### Autopopulating the slide title
+
+When you add the Power BI add-in to an empty slide that doesn't have a title yet, the Power BI add-in offers you suggestions for the slide title based on the content of the add-in. The title can be the report name, the page or visual name, or both. Just choose the desired option and select **Add title**.
+
+:::image type="content" source="./media/service-power-bi-powerpoint-add-in-whats-new/suggested-slide-title-dialog.png" alt-text="Screen shot showing the dialog where you choose a suggested title for the slide.":::
 
 ### Continuous slide show auto refresh
 
@@ -88,7 +106,7 @@ With exciting, recently released features you can now:
 * Generate and add Smart insights to your presentations
 * Enjoy the Power BI/PowerPoint integration in national/regional clouds 
 
-[Check out the blog](https://powerbi.microsoft.com/blog/storytellingga/)
+[Check out the blog](https://powerbi.microsoft.com/blog/storytellingga/)!
 
 ### National cloud support
 

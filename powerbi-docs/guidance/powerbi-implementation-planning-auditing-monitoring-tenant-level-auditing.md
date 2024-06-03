@@ -6,8 +6,8 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.topic: conceptual
+ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.date: 03/06/2024
 ---
 
@@ -228,6 +228,8 @@ Here are some common questions that the [Power BI REST APIs](/rest/api/power-bi/
   - Who has permission to publish by using a [deployment pipeline](powerbi-implementation-planning-security-content-creator-planning.md#deployment-pipeline-access)?
   - Who has permission to manage [gateways](/data-integration/gateway/manage-security-roles#gateway-roles) and [data connections](/data-integration/gateway/manage-security-roles#connection-roles)?
   - Who has permission to manage a [Premium capacity](../enterprise/service-admin-premium-manage.md#manage-user-permissions)?
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!TIP]
 > For more considerations about security, see the [security planning](powerbi-implementation-planning-security-overview.md) articles.
@@ -1421,7 +1423,7 @@ If you've chosen to use any Azure services (such as Azure Functions, Azure Autom
 
 At this point, you've decided [how to authenticate](#determine-the-authentication-method). We recommend that you register a Microsoft Entra application (service principal). Commonly referred to as an _app registration_, it should be used for unattended operations that you'll automate.
 
-For more information about how to create an app registration to retrieve tenant-level auditing data, see [Enable service principal authentication for read-only admin APIs](../enterprise/read-only-apis-service-principal-authentication.md).
+For more information about how to create an app registration to retrieve tenant-level auditing data, see [Enable service principal authentication for read-only admin APIs](/fabric/admin/metadata-scanning-enable-read-only-apis).
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 

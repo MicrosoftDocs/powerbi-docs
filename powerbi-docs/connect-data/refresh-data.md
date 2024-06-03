@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/03/2024
 LocalizationGroup: Data refresh
 ---
 
@@ -79,8 +79,8 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 | Storage mode | Data refresh | OneDrive refresh | Query caches | Tile refresh | Report visuals |
 | --- | --- | --- | --- | --- | --- |
 | Import | Scheduled and on-demand | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on-demand | No |
-| DirectQuery | Not applicable | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on-demand | No |
-| LiveConnect | Not applicable | Yes, for connected semantic models | If enabled on Premium capacity | Automatically and on-demand | Yes |
+| DirectQuery | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on-demand | No |
+| LiveConnect | Not applicable | Yes, for connected semantic models | Not applicable | Automatically and on-demand | Yes |
 | Push | Not applicable | Not applicable | Not practical | Automatically and on-demand | No |
 
 Another way to consider the different refresh types is what they impact and where you can apply them. Changes in data source table structure, or schema, such as a new, renamed, or removed column can only be applied in Power BI Desktop, and in the Power BI service they can cause the refresh to fail. For a quick reference on what they impact, refer to the following table.
@@ -419,7 +419,7 @@ In addition, consider the following recommendations to establish and maintain re
 - Verify that your semantic model refresh time doesn't exceed the maximum refresh duration. Use Power BI Desktop to check the refresh duration. If it takes more than 2 hours, consider moving your semantic model to Power BI Premium. Your semantic model might not be refreshable on shared capacity. Also consider using [Incremental refresh](../connect-data/incremental-refresh-overview.md) for semantic models that are larger than 1 GB or take several hours to refresh.
 - Optimize your semantic models to include only those tables and columns that your reports and dashboards use. Optimize your mashup queries and, if possible, avoid dynamic data source definitions and expensive DAX calculations. Specifically avoid DAX functions that test every row in a table because of the high memory consumption and processing overhead.
 - Apply the same privacy settings as in Power BI Desktop to ensure that Power BI can generate efficient source queries. Keep in mind that Power BI Desktop does not publish privacy settings. You must manually reapply the settings in the data source definitions after publishing your semantic model.
-- Limit the number of visuals on your dashboards, especially if you use [row-level security (RLS)](../enterprise/service-admin-rls.md). As explained earlier in this article, an excessive number of dashboard tiles can significantly increase the refresh duration.
+- Limit the number of visuals on your dashboards, especially if you use [row-level security (RLS)](/fabric/security/service-admin-row-level-security). As explained earlier in this article, an excessive number of dashboard tiles can significantly increase the refresh duration.
 - Use a reliable enterprise data gateway deployment to connect your semantic models to on-premises data sources. If you notice gateway-related refresh failures, such as gateway unavailable or overloaded, follow up with gateway administrators to either add additional gateways to an existing cluster or deploy a new cluster (scale up versus scale out).
 - Use separate data gateways for Import semantic models and DirectQuery/LiveConnect semantic models so that the data imports during scheduled refresh don't impact the performance of reports and dashboards on top of DirectQuery/LiveConnect semantic models, which query the data sources with each user interaction.
 - Ensure that Power BI can send refresh failure notifications to your mailbox. Spam filters might block the email messages or move them into a separate folder where you might not notice them immediately.

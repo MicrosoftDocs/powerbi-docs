@@ -1,5 +1,5 @@
 ---
-title: Backup and restore Power BI Premium semantic models
+title: How to Backup and restore Power BI Premium semantic models
 description: Learn about the backup and restore feature for semantic models with a Power BI Premium or Premium Per User license.
 author: KesemSharabi
 ms.author: kesharab
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/11/2022
+ms.date: 05/31/2024
 LocalizationGroup: Premium
 ---
 
@@ -19,7 +19,7 @@ You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-
 
 :::image type="content" source="media/service-premium-backup-restore-datasets/premium-backup-restore-datasets-01.png" alt-text="Screenshot of the SSMS window, back up is selected from the databases menu. The backup database dialog is open, OK is selected.":::
 
-The ability to backup and restore Power BI semantic models provides a migration path from Azure Analysis Services workloads to Power BI Premium. It also enables semantic model backups for multiple reasons, including corruption or loss, data retention requirements, and tenant movement, among others.
+The ability to backup and restore Power BI semantic models provides a migration path from Azure Analysis Services workloads to Power BI Premium. Backup and restore also enables semantic model backups for multiple reasons, including corruption or loss, data retention requirements, and tenant movement, among others.
 
 ## Using semantic model backup and restore
 
@@ -60,7 +60,7 @@ During backup and restore, the following actions apply:
 * Backup files are placed into the backup folder in the *power-bi-backup* container
 * For restore, you must place the backup files (.abf files) into the folder before conducting a restore
 
-If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder will fail. 
+If you rename a workspace, the backup folder in the *power-bi-backup* container is automatically renamed to match. However, if you have an existing folder with the same name as the renamed workspace, the automatic renaming for the backup folder fails.
 
 ## Considerations and limitations
 

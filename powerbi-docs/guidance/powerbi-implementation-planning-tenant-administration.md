@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/13/2024
 ---
 
@@ -26,6 +27,8 @@ As described in the Fabric adoption [maturity levels](fabric-adoption-roadmap-ma
 
 > [!NOTE]
 > Administering Fabric [capacity](/fabric/enterprise/licenses#microsoft-fabric-concepts) (or Premium capacity) and managing the Power BI service are different concepts. While most organizations have just one [Power BI tenant](powerbi-implementation-planning-tenant-setup.md), an organization can provision multiple capacities for different workloads or business units.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Define scope of responsibilities
 
@@ -169,7 +172,7 @@ Here are some factors to consider during the review process.
 You can compile the current state of your tenant settings in one of two ways.
 
 - View the tenant setting state within the [admin portal](/power-bi/admin/service-admin-portal).
-- Programmatically extract the tenant setting state by using the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API.
+- Programmatically extract the tenant setting state by using the [Get Tenant Settings](/rest/api/fabric/admin/tenants/list-tenant-settings) REST API.
 
 The following table presents how you could record the current state of your tenant settings.
 
@@ -238,7 +241,7 @@ At this point, make sure you have a repeatable method in place for documenting t
 
 Here are some aspects to consider for documentation.
 
-- **Extract snapshot data:** When documenting tenant setting values, we recommend that you create a new point-in-time snapshot regularly. For this purpose, creating a snapshot once a week is a good frequency. Use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/get-tenant-settings) REST API to automate the process.
+- **Extract snapshot data:** When documenting tenant setting values, we recommend that you create a new point-in-time snapshot regularly. For this purpose, creating a snapshot once a week is a good frequency. Use the [Get Tenant Settings](/rest/api/fabric/admin/tenants/list-tenant-settings) REST API to automate the process.
 - **Provide admin access to snapshot data:** Administrators, the COE, and internal auditors should have access to all the snapshot data. To identify any tenant settings that have changed, compare two snapshots (for example, this week compared with last week). Data from the [activity log](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md#access-user-activity-data) complements the snapshot data to provide a complete understanding of what's changed, when, and by whom. For more information, see Step 6 below, which is about auditing tenant settings.
 - **Provide a summary of current settings to users:** The tenant setting values are one type of [documentation](fabric-adoption-roadmap-mentoring-and-user-enablement.md#documentation) that can be made available to your community of users in your [centralized portal](fabric-adoption-roadmap-mentoring-and-user-enablement.md#centralized-portal). It's a helpful reference for a user who, for example, doesn't understand why a feature isn't available to them. The documentation can also help users know which security group to request to join should they want to use a feature. To reduce the level of manual effort, the latest snapshot results from the REST API can be distributed to users as a Power BI report. Depending on your needs, you might need to merge the snapshot of data with other data that's manually maintained (such as the description of the tenant setting, justification for the setting, links to additional information, or link to a form to request access).
 

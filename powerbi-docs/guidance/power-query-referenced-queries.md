@@ -1,12 +1,13 @@
 ---
 title: Referencing Power Query queries
 description: Guidance for referencing Power Query queries.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/30/2019
 ---
 

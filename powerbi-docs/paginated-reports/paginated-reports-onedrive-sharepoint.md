@@ -7,7 +7,7 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/10/2024
+ms.date: 04/15/2024
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
@@ -97,6 +97,7 @@ Learn more about [subscribing to OneDrive SharePoint](/sharepoint/onedrive-overv
 
 - [Microsoft Entra Business-to-Business (B2B) guest users](../enterprise/service-admin-azure-ad-b2b.md) can't choose OneDrive SharePoint. 
 - Premium per user accounts can't choose OneDrive SharePoint.
+- You can't create a subscription that sends the report to OneDrive or SharePoint if the report is part of a Power BI organizational app.
 
 ## Related content
 

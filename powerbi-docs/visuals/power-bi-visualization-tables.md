@@ -1,8 +1,8 @@
 ---
 title: Table visualizations in Power BI reports and dashboards
 description: Learn how to work with table visualizations in Power BI reports and dashboards, including how to resize column widths.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'willt'
 featuredvideoid: ''
 ms.service: powerbi

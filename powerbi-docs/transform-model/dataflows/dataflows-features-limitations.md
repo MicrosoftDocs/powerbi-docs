@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
 # Dataflows considerations and limitations
@@ -31,6 +31,8 @@ There are a few dataflow limitations across authoring, refreshes, and capacity m
 * When you use *Computed entities* with gateway data sources, the data ingestion should be performed in different data sources than the computations. The computed entities should build upon entities that are only used for ingestion, and not ingest data within their own mash-up steps.
 * In Power BI dataflows, you can use parameters but you can't edit them unless you edit the entire dataflow. In this regard, parameters in dataflows behave similar to declared constants.
 * Some connectors found in [Troubleshoot refresh scenarios](../../connect-data/refresh-troubleshooting-refresh-scenarios.md#dataflows-or-datamart-failures-in-premium-workspaces) are not supported for dataflows and datamarts in Premium workspaces.
+* When using DirectQuery with a dataflow, searches using the slicer visual is case-sensitive.
+* 
 
 
 ## Dataflow authoring
@@ -47,6 +49,16 @@ Because dataflows authoring is done in the  Power Query Online (PQO) environment
 * Dataflows using gateway data sources don't support multiple credentials for the same data source.
 
 * Using the Web.Page connector requires a gateway.
+
+* In the dataflows Gen1 editing experience, users may be unable to remove an on-premises Data Gateway connection from the dataflow using **Options** > **Project** > **Data load** > **select (none)** on the dropdown list Data Gateway. The following steps may resolve the issue:
+   1. Start editing the dataflow where you want to remove the on-premises Data Gateway connection.
+   2. Select **Options** > **Project Data load** > **Data gateway**, select **None** and then **OK**.
+   3. If a yellow warning with a "_Configure connection_" button appears, select "_Configure connection_", select the cloud connection from the dropdown box and insert credentials if needed for the cloud connection.
+   4. Select **Manage connections** > and then select the **unlink** button of the Gateway connection.
+   5. Close the **Manage connections** dialog, if it requires you to "Configure connection" again, do so. Select **Save and close**, and wait for the save operation to complete.
+   6. If the warning "_Configure connection_" does not appear after applying the previous steps, apply the previous steps, save and close the dataflow, then edit it again and check for the "_Configure connection_" warning to appear for you to take action on it.
+
+   If the connection to the Gateway is still not removed from the dataflow, you may need to recreate a new dataflow with the same queries, not bound to the Gateway.
 
 ## API considerations
 

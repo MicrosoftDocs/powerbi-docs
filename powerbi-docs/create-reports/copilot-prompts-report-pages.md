@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 01/11/2024
+ms.date: 04/25/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -25,8 +25,6 @@ Before your business can start using Copilot capabilities in Power BI, your admi
 Here are some examples of prompts that work well with Copilot for Power BI. Use these prompts as examples.
 
 Each sample prompt is paired with a report page that Copilot generated based on the interpretation of that prompt. Your prompts help Copilot understand what you're looking for, but they may not produce a page that's exactly what you want. It's a starting point for report page creation. Use the user interface to modify the report page that Copilot created. 
-
-Also, see the [Considerations and limitations section](copilot-create-report.md#considerations-and-limitations) in the article "Create report pages with Copilot for the Power BI service."
 
 ## Sales performance by product
 
@@ -67,7 +65,7 @@ We always welcome your feedback about our products. Especially during public pre
 ## Next steps
 
 - [Overview of Copilot for Power BI](copilot-introduction.md)
-- [Create a report with Copilot for Power BI](copilot-create-report.md)
+- [Create a report with Copilot for Power BI](copilot-create-report-service.md)
 - [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
 - [Update your data model to work well with Copilot](copilot-evaluate-data.md)
 - [Frequently asked questions about Copilot for Power BI and Fabric](/fabric/get-started/copilot-faq-fabric)

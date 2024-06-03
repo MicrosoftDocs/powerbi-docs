@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 05/12/2022
 ---
 
@@ -94,7 +95,9 @@ When a semantic model creator [connects to a dataflow](../transform-model/deskto
 
 ### Dataflow advanced features
 
-There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its license mode set to **Premium per user** or **Premium per capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
+There are many design techniques, patterns, and best practices for dataflows that can take them from self-service to enterprise-ready. Dataflows in a workspace that has its license mode set to **Premium per user**, **Premium capacity**, or **Fabric capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 > [!NOTE]
 > One of the [advanced features](../transform-model/dataflows/dataflows-premium-features.md) is incremental refresh for dataflows. Although incremental refresh for *semantic models* is a Power BI Pro feature, incremental refresh for dataflows is a Premium feature.

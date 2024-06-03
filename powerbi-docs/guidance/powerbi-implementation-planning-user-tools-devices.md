@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/24/2023
 ---
 
@@ -342,7 +343,7 @@ Power BI custom visuals, which developers can create by using the [Power BI visu
 
 To use a custom visual in Power BI Desktop, it must first be installed on the machine of the content creator. There are several ways to distribute visuals to users.
 
-- **AppSource:** [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is a marketplace for applications, add-ins, and extensions for Microsoft software. Visuals are distributed in AppSource using a Power BI visual (.pbiviz) file. A visual might be distributed [freely or requires a license](/power-bi/developer/visuals/power-bi-custom-visuals#download-from-appsource).
+- **AppSource:** [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) is a marketplace for applications, add-ins, and extensions for Microsoft software. Visuals are distributed in AppSource using a Power BI visual (.pbiviz) file. A visual might be distributed [freely or requires a license](/power-bi/developer/visuals/power-bi-custom-visuals#download-from-appsource).
   - **Advantages:**
     - It's simple for users to search for, and locate, visuals in AppSource.
     - All reports and dashboards are automatically updated to use the latest version of custom visuals that have been sourced from AppSource.

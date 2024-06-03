@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 12/12/2022
 ---
 
@@ -504,8 +505,8 @@ You can plan to create fewer semantic models and reports by enforcing data secur
 
 A semantic model creator can enforce data security in two ways.
 
-- [Row-level security (RLS)](/power-bi/enterprise/service-admin-rls) allows a data modeler to restrict access to a subset of data.
-- [Object-level security (OLS)](/power-bi/enterprise/service-admin-ols) allows a data modeler to restrict access to specific tables and columns, and their metadata.
+- [Row-level security (RLS)](/fabric/security/service-admin-row-level-security) allows a data modeler to restrict access to a subset of data.
+- [Object-level security (OLS)](/fabric/security/service-admin-object-level-security) allows a data modeler to restrict access to specific tables and columns, and their metadata.
 
 The implementation of RLS and OLS are targeted at report consumers. For more information, see [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article. It describes how and when RLS and OLS are enforced for consumers who have view-only permission to the semantic model.
 
@@ -588,7 +589,7 @@ The _Allow connections to featured tables_ tenant setting allows Power BI admini
 
 #### Custom visual permissions
 
-In addition to core visuals, Power BI report creators can use _custom visuals_. In Power BI Desktop, custom visuals can be download from [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). They can also be developed in-house by using the [Power BI SDK](/power-bi/developer/visuals/environment-setup), and installed by opening the visual file (.pbviz).
+In addition to core visuals, Power BI report creators can use _custom visuals_. In Power BI Desktop, custom visuals can be download from [Microsoft AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals). They can also be developed in-house by using the [Power BI SDK](/power-bi/developer/visuals/environment-setup), and installed by opening the visual file (.pbviz).
 
 Some visuals available for download from AppSource are _certified visuals_. Certified visuals meet certain specified code requirements that the Power BI team has tested and approved. The tests check that visuals don't access external services or resources.
 
@@ -762,6 +763,8 @@ Content creators might also need:
 
 - Workspace creation permissions (when workspaces need to be created by the pipeline).
 - [Premium or Fabric capacity permissions](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#create-a-workspace) (when workspaces are assigned by the pipeline).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 For more information, see [Deployment pipeline access](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md#access-for-deployment-pipeline).
 

@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: sample
+ms.custom: fabric-cat
 ms.date: 04/25/2022
 ---
 
@@ -76,7 +77,7 @@ Connect-PowerBIServiceAccount
 ```
 
 > [!IMPORTANT]
-> Users without Power BI administrator privileges can't run any of the sample scripts that follow in this article. [Power BI administrators](/power-bi/admin/service-admin-role) have permission to manage the Power BI service and to retrieve tenant-wide metadata (such as activity log data). Although using service principal authentication is out of scope for these examples, we strongly recommend that you set up a [service principal](/power-bi/enterprise/read-only-apis-service-principal-authentication) for production-ready, unattended scripts that will run on a schedule.
+> Users without Power BI administrator privileges can't run any of the sample scripts that follow in this article. [Power BI administrators](/power-bi/admin/service-admin-role) have permission to manage the Power BI service and to retrieve tenant-wide metadata (such as activity log data). Although using service principal authentication is out of scope for these examples, we strongly recommend that you set up a [service principal](/fabric/admin/metadata-scanning-enable-read-only-apis) for production-ready, unattended scripts that will run on a schedule.
 >
 > Be sure to sign in before running any of the following scripts.
 

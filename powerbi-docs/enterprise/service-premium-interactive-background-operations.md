@@ -7,12 +7,12 @@ ms.reviewer: 'nirusrin'
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 03/06/2024
+ms.date: 05/28/2024
 LocalizationGroup: Premium
 ---
 # Interactive and background operations
 
-Power BI divides operations into two types, *interactive* and *background*. This article lists these operations and explains the difference between them
+Power BI divides operations into two types, *interactive* and *background*. This article lists these operations and explains the difference between them.
 
 ## Interactive operations
 
@@ -34,13 +34,14 @@ The table below lists the Power BI operations. It provides a short description f
 | [Dataflow refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) | An on demand or scheduled background dataflow refresh, performed by the service or with REST APIs | Dataflows | Background |
 | Semantic model on-demand refresh | A background semantic model refresh initiated by the user, using the service, REST APIs or public XMLA endpoints | Semantic models | Background |
 | Semantic model scheduled refresh | A scheduled background semantic model refresh, performed by the service, REST APIs or public XMLA endpoints | Semantic models | Background |
-| Full report email subscription | A PDF or PowerPoint copy of an entire Power BI report, attached to an [email subscription](../collaborate-share/end-user-subscribe.md) | Report | Interactive |
-| Interactive query    | Queries initiated by an on-demand data request from a user. For example, loading a model when opening a report, user interaction with a report, or Power BI report snapshots. | Semantic models | Interactive |
+| Full report email subscription | A PDF or PowerPoint copy of an entire Power BI report, attached to an [email subscription](../collaborate-share/end-user-subscribe.md) | Report | Background |
+| Interactive query    | Queries initiated by an on-demand data request. For example, loading a model when opening a report, user interaction with a report, Power BI report exports, or querying a dataset before rendering. | Semantic models | Interactive |
 | PublicApiExport | A Power BI report exported with the [Export report to file](../developer/embedded/export-to.md) REST API | Report | Background |
 | Render | A Power BI paginated report exported with the [Export paginated report to file](../developer/embedded/export-paginated-report.md) REST API | Paginated report | Background |
 | Render | A Power BI paginated report viewed in Power BI service | Paginated report | Interactive |
 | Web modeling read | A data model read operation in the semantic model web modeling user experience | Semantic models | Interactive |
 | Web modeling write | A data model write operation in the semantic model web modeling user experience  | Semantic models | Interactive |
+| VNet Data Gateway Uptime | A query run through a virtual network data gateway | <li>Dataflows Gen2</li><li>Paginated reports</li><li>Semantic models</li> | <li>Interactive</li><li>background</li> |
 | XMLA read | XMLA read operations initiated by the user, for queries and discoveries  | Semantic models | Interactive |
 | XMLA write | A background XMLA write operation that changes the model | Semantic models | Background |
 
@@ -50,7 +51,7 @@ The table below lists the Power BI operations. It provides a short description f
 > [What is Power BI Premium?](service-premium-what-is.md)
 
 > [!div class="nextstepaction"]
-> [Power BI Premium architecture](service-premium-architecture.md)
+> [Power BI Premium architecture](/fabric/security/security-fundamentals)
 
 > [!div class="nextstepaction"]
 > [Managing Premium capacities](service-premium-capacity-manage.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/28/2024
+ms.date: 05/03/2024
 LocalizationGroup: Connect to data
 ---
 # Create and share cloud data sources in the Power BI service
@@ -32,6 +32,9 @@ Enter a name for the new connection, select the appropriate **connection type** 
 :::image type="content" source="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-03.png" alt-text="Screenshot of filling out new connection form." lightbox="media/service-create-share-cloud-data-sources/service-create-share-cloud-data-sources-03.png":::
 
 With your connection created, you're ready to share it with others.
+
+> [!NOTE]
+>  When a .PBIX file with a cloud data source is published from Power BI Desktop, a cloud connection is created automatically.
 
 
 ## Share a shareable cloud connection

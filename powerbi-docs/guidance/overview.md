@@ -1,12 +1,13 @@
 ---
 title: Guidance for Power BI
 description: Guidance documentation provides recommended practices when using Power BI. 
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: ''
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 09/27/2019
 ---
 # Guidance for Power BI
