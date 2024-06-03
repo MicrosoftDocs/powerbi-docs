@@ -121,7 +121,7 @@
         href: desktop-connect-to-web.md
       - name: "Connect to Snowflake in the Power BI service"
         href: service-connect-snowflake.md        
-      - name: "Create visuals with the Azure Cost Management connector"
+      - name: "Create visuals with the Microsoft Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
       - name: "Edit SAP variables in the Power BI service"
         href: service-edit-sap-variables.md        
