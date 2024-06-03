@@ -62,9 +62,7 @@ Another aspect of Copilot's consumption mode is its ability to respond to your q
 
 ## Empower data exploration 
 
-In a world overflowing with data, the ability to extract meaningful insights is important. Copilot exploration empowers you to become masters of your data, providing you with the tools you need to more quickly understand your reports, and answer your questions promptly. Whether you're a seasoned analyst or a beginning explorer, Copilot's intuitive nature makes data exploration easy. To see our other Copilot capabilities like Copilot report page creation (available in edit mode), go here. 
-
- 
+In a world overflowing with data, the ability to extract meaningful insights is invaluable. Copilot aided exploration empowers users to be in charge of your data, providing you with the tools they need to more quickly understand your reports, and answer your questions promptly. Whether you're a seasoned analyst or a beginning explorer, Copilot's intuitive nature makes data exploration a breeze.  For more details on this feature, see our documentation. See other Copilot capabilities, such as [Copilot report page creation](copilot-create-desktop-report.md), available in edit mode. 
 
 ## Limitations and considerations
 
