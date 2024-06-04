@@ -196,12 +196,12 @@ The report definition is stored inside the **definition\\** folder with the foll
 |File/Folder                       |Required |Description  |
 |----------------------------------|---------|-------------|
 |\bookmarks                        |No       |Folder holding all bookmark files of the report.
-|── [bookmarkName].bookmark.json   |No       |Bookmark metadata, such as target visuals and filters.<br/>Name that consists of one or more word characters (letters, digits, underscores) or hyphens.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/bookmark).
+|── [bookmarkName].bookmark.json   |No       |Bookmark metadata, such as target visuals and filters.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/bookmark).
 |── bookmarks.json                 |No       |Bookmarks metadata, such as bookmark order and groups.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/bookmarksMetadata).
 |\pages                            |Yes      |Folder holding all pages of the report.
-|── \\[pageName]                   |Yes      |One folder per page.<br/>Name that consists of one or more word characters (letters, digits, underscores) or hyphens.
+|── \\[pageName]                   |Yes      |One folder per page.
 |──── \\visuals                    |No       |Folder holding all visuals of the page.
-|────── \\[visualName]             |No       |One folder per visual.<br/>Name that consists of one or more word characters (letters, digits, underscores) or hyphens.
+|────── \\[visualName]             |No       |One folder per visual.
 |──────── mobile.json              |No       |Visual mobile layout metadata, such as mobile position and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/visualContainerMobileState).
 |──────── visual.json              |Yes      |Visual metadata, such as position and formatting, query.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/visualContainer).
 |──── page.json                    |Yes      |Page metadata, such as page level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/page).
@@ -216,7 +216,7 @@ By default, the pages, visuals, and bookmarks use their report object name as th
 
 :::image type="content" source="./media/projects-report/pbir-objectName.png" alt-text="Screenshot of PBIR name property.":::
 
-Renaming the file or folder is supported, and the Power BI report authoring tool will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report).
+Renaming the file or folder is supported, and the Power BI report authoring tool will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
 
 ### PBIR Json Schemas
 
