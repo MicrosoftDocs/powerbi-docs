@@ -1,6 +1,6 @@
 ---
 title: Using the RDL Migration tool
-description: Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI.
+description: Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI using the RdlMigration tool included as part of Power BI Report Builder.
 author: peter-myers
 ms.author: v-myerspeter
 ms.reviewer: maroche
@@ -24,9 +24,15 @@ This tool is designed to help customers migrate SQL Server Reporting Services re
 
 Please note - None of the assets will be removed from the source as part of this process.
 
+## Installation:
+
+RdlMigration is shipped as part of Power BI Report Builder that can be downloaded from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=105942)
+
 ## Usage:
 
-    # RdlMigration <your Base url endpoint> <file Path> <WorkspaceName>
+```
+# RdlMigration <your Base url endpoint> <file Path> <WorkspaceName>
+```
 
 This command will save all the converted files to local disk and display the status of each file in the command window, as well as a file called ConversionLog.txt  
 
@@ -70,5 +76,6 @@ This refers to the relative path to your file or folder on the report server. If
 
 #### Workspace Name:
 This is the name of the workspace you want to upload your files to. Surround the name with quotation marks if there’s  a space in the name. For example:
-
-    "Paginated Workspace"
+```
+"Paginated Workspace"
+```
