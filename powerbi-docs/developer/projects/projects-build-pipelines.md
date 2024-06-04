@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.date: 02/17/2024
 ---
 
-# Power BI Project (PBIP) and Azure DevOps pipelines for continuous integration
+# Power BI Project (PBIP) and Azure DevOps build pipelines for validation
 
 Combining Fabric Git Integration with Azure DevOps, enables you to connect a workspace to a branch in an Azure DevOps repository and automatically synchronizes between them.
 
