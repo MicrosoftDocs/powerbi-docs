@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in the Power BI service to create a Power BI report quickly.
@@ -52,7 +52,7 @@ Check your license type in the **Workspace settings**.
 
 1. Now you're ready to create a report with Copilot in the Power BI service.
 
-## Get started
+## Get started using Copilot
 
 To see the **Copilot** button in your report, you first need to select a semantic model.
 

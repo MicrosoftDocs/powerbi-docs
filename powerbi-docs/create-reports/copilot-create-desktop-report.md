@@ -7,7 +7,7 @@ ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI Desktop to create a Power BI report quickly.
@@ -63,7 +63,7 @@ You can change the selected workspace to another Copilot-compatible workspace an
 
   You see the name of the selected workspace and an option to select a new workspace.
 
-## Start using Copilot
+## Get started using Copilot
 
 1. Open Power BI Desktop.
 
