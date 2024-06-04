@@ -1,13 +1,14 @@
 ---
 title: Capabilities and properties of Power BI visuals
-description: This article describes the capabilities.json file and properties of Power BI visuals.
+description: This article describes the capabilities.json file and properties of Power BI visuals that can be defined in the file.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/12/2023
+#customer intent: To understand the capabilities.json file and properties of Power BI visuals.
 ---
 
 # Capabilities and properties of Power BI visuals
