@@ -1,12 +1,13 @@
 ---
-title: Migrate multi-customer apps to the service principal profiles model
+title: Move multi-customer apps to service principal profile model
 description: Get better scalability by migrating Power BI embedded analytics multitenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/17/2023
+ms.date: 06/04/2024
+#customer intent: As a developer, I want to learn how to migrate my multi-customer app to the service principal profiles model so that I can get better scalability.
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
