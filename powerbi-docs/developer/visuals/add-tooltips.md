@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 12/29/2023
+# Customer intent: As a developer, I want to learn how to add tooltips to my custom visuals in Power BI so that I can provide more details to users.
 ---
 
 # Add tooltips to your Power BI visuals
