@@ -134,7 +134,7 @@ When completed, you should see the properties of your application group look sim
 
 ![ADFS Application Group Wizard](media/mobile-oauth-ssrs/adfs-application-group.png)
 
-Run the following PowerShell command on the ADFS server to ensure that token refresh is supported.
+Now run the following PowerShell command on the ADFS server to ensure that token refresh is supported.
 
 ```powershell
 Set-AdfsApplicationPermission -TargetClientRoleIdentifier '484d54fc-b481-4eee-9505-0258a1913020' -AddScope 'openid'
