@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: subject-monitoring
 ms.topic: how-to
-ms.date: 03/01/2023
+ms.date: 06/04/2024
+# customer intent: As a developer, I want to learn how to monitor my Power BI Embedded application so that I can ensure it's running smoothly.
 ---
 
 # Power BI Embedded monitoring data

@@ -1,6 +1,6 @@
 ---
 title: Add bookmark support for Power BI custom visuals
-description: Power BI visuals can handle bookmarks switching
+description: Learn how to add bookmark support to your custom visuals in Power BI so that you can switch between different bookmarked states.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 01/03/2024
+#customer intent: As a custom visuals developer, I want to learn how to add bookmark support to my visuals in Power BI so that I can switch between different bookmarked states.
 ---
 
 # Add bookmark support to visuals in Power BI reports
@@ -36,7 +37,7 @@ First, select one or more data points in your visual. The visual passes your sel
 
 Do this several times to create new bookmarks. After you create the bookmarks, you can switch between them.
 
-Each time you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. The visuals in the report are highlighted or filtered according to the state that's stored in the bookmark. To do this, your visual must pass the correct selection state to the host (for example, the colors of rendered data points).
+Each time you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. The visuals in the report are highlighted or filtered according to the state stored in the bookmark. To restore the correct state, your visual must pass the correct selection state to the host (for example, the colors of rendered data points).
 
 The new selection state (or filter) is communicated through the `options.jsonFilters` property in the `update` method. The `jsonFilters` can be either [`Advanced Filter`](filter-api.md#the-advanced-filter-api) or [`Tuple Filter`](filter-api.md#the-tuple-filter-api-multi-column-filter).
 
@@ -103,7 +104,7 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-After you update the data points, they'll reflect the current selection state that's stored in the `filter` object. Then, when the data points are rendered, the custom visual's selection state will match the state of the bookmark.
+After you update the data points, they'll reflect the current selection state stored in the `filter` object. Then, when the data points are rendered, the custom visual's selection state matches the state of the bookmark.
 
 ## Visuals with a filter
 
@@ -113,7 +114,7 @@ Let's assume that the visual creates a filter of data by date range. You have `s
 
 The visual creates an advanced filter and calls the host method `applyJsonFilter` to filter data by the relevant conditions.
 
-The target is the table that's used for filtering.
+The target is the table used for filtering.
 
 ```typescript
 import { AdvancedFilter } from "powerbi-models";

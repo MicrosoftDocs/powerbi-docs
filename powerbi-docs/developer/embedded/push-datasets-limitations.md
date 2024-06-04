@@ -1,6 +1,6 @@
 ---
 title: Power BI REST APIs push semantic model limitations
-description: This article lists the Power BI REST APIs push semantic model limitations
+description: This article lists the Power BI REST APIs push semantic model limitations that the user should be aware of before using the APIs.
 author: mberdugo
 ms.author: monaberdugo
 services: power-bi-embedded
@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: reference
-ms.date: 06/27/2022
+ms.date: 06/04/2024
 ---
 
 # Push semantic model limitations
