@@ -31,7 +31,7 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Use Copilot for Power BI in the service the first time
+## Use Copilot in the Power BI service for the first time
 
 To use Copilot in the Power BI service, you need to ensure that reports are located in a workspace in the right capacity. The workspace must be in either [Premium Power BI (P1 and above)](../enterprise/service-premium-features.md) or paid [Fabric (F64 and above)](/fabric/enterprise/licenses) capacity.
 
@@ -44,14 +44,13 @@ Check your license type in the **Workspace settings**.
 
     :::image type="content" source="media/copilot-enable-power-bi/workspace-settings.png" alt-text="Screenshot of the more menu a workspace in the Power BI service with a red box around workspace settings." lightbox="media/copilot-enable-power-bi/workspace-settings.png":::
 
-1. Apply either **Premium capacity** or **Fabric capacity** to the workspace and use the x to exit workspace settings.
+1. Apply either **Premium capacity** or **Fabric capacity** to the workspace and use the **X** to exit workspace settings.
 
     :::image type="content" source="media/copilot-enable-power-bi/workspace-settings-license.png" alt-text="Screenshot of the Premium section of the workspace settings, with arrows pointing to Premium capacity and Fabric capacity." lightbox="media/copilot-enable-power-bi/workspace-settings-license.png":::
 
     You can see which license mode is applied to your workspace under Premium. If License modes are grayed out, this workspace doesn't have access to the appropriate capacity.
 
-1. Now you're ready to [create a report with Copilot in the Power BI service](copilot-create-report-service.md).
-
+1. Now you're ready to create a report with Copilot in the Power BI service.
 
 ## Get started
 
@@ -92,7 +91,7 @@ You can also use Copilot for Power BI to create a narrative summary with just a 
 
 ## Undo a page  
 
-After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
+After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  If you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
 
 ## Save the report
 
@@ -103,8 +102,9 @@ When you're satisfied with the report, you save the report just like any other r
 ## Considerations and limitations
 
 There are limitations related to creating pages in specific semantic model scenarios.
-- **Real-Time Streaming Models**: Report pages cannot be created by Copilot for semantic models utilizing real-time streaming.
-- **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services are not supported by page creation.
+
+- **Real-Time Streaming Models**: Report pages can't be created by Copilot for semantic models utilizing real-time streaming.
+- **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services aren't supported by page creation.
   
 ## Next steps
 
