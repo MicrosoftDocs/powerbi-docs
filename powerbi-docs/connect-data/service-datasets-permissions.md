@@ -26,6 +26,9 @@ The table below describes the four levels of permission that control access to s
 |Write       |Allows user to republish the semantic model.<br>Allows user to [backup and restore the semantic model](../enterprise/service-premium-backup-restore-dataset.md).<br>Allows user to make changes to the semantic model via XMLA.<br>Allows user to edit semantic model settings, except data refresh, credentials, and automatic aggregations.|
 |Owner       |The semantic model owner is not a permission per se, but rather a conceptual role that has all the permissions on a semantic model. The first semantic model owner is the person who created the semantic model, and afterwards the last person to configure the semantic model after taking it over in the semantic model settings.<br><br>In addition to the permissions above that can be granted explicitly, a semantic model owner can configure semantic model refresh, credentials, and automatic aggregations.|
 
+>[!NOTE]
+>Build is primarily a discoverability feature. It enables users to easily discover semantic models and build Power BI reports and other consumption artefacts based on the discovered models such as Excel Pivot Tables and non-Microsoft data visualization tools using the XMLA endpoint. Users who have the Read permission without Build can consume and interact with existing reports shared with them. The enablement of Read without Build should not be relied on as a security feature for protecting sensitive data. Users with Read and not Build are able to access and interact with data in the semantic model.
+
 ## How are the semantic model permissions acquired?
 
 ### Permissions acquired implicitly via workspace role
