@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/11/2022
+ms.date: 06/04/2024
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
@@ -133,6 +133,12 @@ You can create the application group with the following steps.
 When completed, you should see the properties of your application group look similar to the following.
 
 ![ADFS Application Group Wizard](media/mobile-oauth-ssrs/adfs-application-group.png)
+
+Run the following PowerShell command on the ADFS server to ensure that token refresh is supported.
+
+```powershell
+Set-AdfsApplicationPermission -TargetClientRoleIdentifier '484d54fc-b481-4eee-9505-0258a1913020' -AddScope 'openid'
+```
 
 ## Web Application Proxy (WAP) Configuration
 
