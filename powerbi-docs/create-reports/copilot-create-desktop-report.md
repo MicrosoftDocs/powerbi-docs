@@ -7,7 +7,7 @@ ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI Desktop to create a Power BI report quickly.
@@ -17,7 +17,7 @@ no-loc: [Copilot]
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop. 
+When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop. You can also use [Copilot to create reports in the Power BI service](copilot-create-report-service.md).
 
 To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
@@ -34,7 +34,7 @@ Read about all the ways Copilot can help you in the [overview of Copilot for Pow
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Use Copilot the first time
+## Use Copilot the first time in Power BI Desktop
 
 1. Open Power BI Desktop.
 
@@ -63,7 +63,7 @@ You can change the selected workspace to another Copilot-compatible workspace an
 
   You see the name of the selected workspace and an option to select a new workspace.
 
-## Start using Copilot
+## Get started using Copilot
 
 1. Open Power BI Desktop.
 
@@ -93,7 +93,7 @@ You can also use Copilot for Power BI to create a narrative summary with just a 
 
 ## Undo a page
 
-After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  After you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
+After Copilot generates the page, then you can review it. You have the option to start over by selecting the **Undo** button.  If you select the **Undo** button, Copilot starts over. The content on the page is removed and you start over with topic selection by either generating new topics or selecting the one from the top, when you first started.
 
 ## Save the report
 

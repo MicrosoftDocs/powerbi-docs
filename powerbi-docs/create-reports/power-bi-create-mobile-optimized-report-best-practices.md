@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: best-practice #Don't change
-ms.date: 06/03/2024
+ms.date: 06/05/2024
 
 #customer intent: As a Power BI report creator, I want use best practices so as to get the best results when I create my mobile-optimized layout of a Power BI report..
 
@@ -58,6 +58,10 @@ The flow of mobile layout is from top to bottom. Position the most important vis
 ## Avoid causing vertical scroll bars within visuals
 
 Set the height of each visual such that all the elements inside the visual are visible and not truncated. This prevents having a vertical scroll bar appear inside the visual, in addition to the vertical scroll bar of the report page itself. Keep in mind that mobile devices vary in height.
+
+## Use the auto-create mobile layout option to get started
+
+Try using the **auto-create layout** option in the mobile layout view to get started. The auto-create mobile layout option generates a mobile-optimized view of your report on the mobile layout canvas. It places the report visuals on the canvas and tries its best to preserve the desktop report's functionality. Once you have the initial, auto-created layout on the canvas, you can further optimize it for mobile viewing using mobile layout view's [formatting options](./power-bi-create-mobile-optimized-report-format-visuals.md). For more information about the auto-create mobile layout option, see [Automatic mobile layout creation](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation).
 
 ## Stick to standard sizes
 

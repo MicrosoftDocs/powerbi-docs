@@ -1168,6 +1168,8 @@
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Using the RDL Migration tool
+      href: ../guidance/using-rdl-migration-tool.md?context=/power-bi/create-reports/context/context
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
     - name: Default system credentials for web proxy
