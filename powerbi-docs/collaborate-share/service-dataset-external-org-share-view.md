@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/20/2023
+ms.date: 06/05/2024
 LocalizationGroup: Administration
 ---
 
@@ -28,12 +28,12 @@ Before you can access the semantic models shared in-place, you'll need to enable
 1. Select the checkbox next to the **Connect to external semantic models shared with me** option. 
 
 ## Access shared semantic models
-Once enabled on provider side, consumers will be able to see the semantic models in the data hub in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a semantic model that a data provider shared to your tenant:
+Once enabled on provider side, consumers will be able to see the semantic models in the OneLake data hub in Power BI Desktop, on a tab called *External data*. Use the following instructions to access and build reports with a semantic model that a data provider shared to your tenant:
 
 > [!IMPORTANT]
 > If external sharing is ever disabled by the provider, reports built on top of the external semantic model will lose functionality within a few minutes and display an error message.
 
-1. In your tenant, go to the data hub in Power BI service.
+1. In your tenant, go to the OneLake data hub in Power BI Desktop.
  
 1. Select **External data** to see a list of external semantic models that have been shared with you.
 
