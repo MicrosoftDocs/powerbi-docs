@@ -1,6 +1,6 @@
 ---
 title: Build a bar chart visual in Power BI 
-description: Use this step-by-step guide to build a sample Power BI bar chart visual with code. 
+description: Learn how to build a sample Power BI visual with code using this step-by-step guide. This sample visual displays a bar chart.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 05/13/2024
+#customer intent: As a Power BI visual developer, I want to learn how to build a bar chart visual so I can display data in a simple, visual format.
 ---
 
 # Tutorial: Build a bar chart
