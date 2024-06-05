@@ -75,7 +75,7 @@ This is set in the Reporting Services Configuration Manager under Web Service UR
 
 ### File path
 
-This refers to the relative path to your file or folder on the report server. If the path references a file, the tool converts and pushes only that individual file. If the path references a folder, the tool converts and tries to push all the report files within that folder. This would include any reports contained in the folder and would convert dependencies that might be located in other folders or subfolders (such as Shared DataSources and Shared DataSets). Report in subfolders aren't published.
+This refers to the relative path to your file or folder on the report server. If the path references a file, the tool converts and pushes only that individual file. If the path references a folder, the tool converts and tries to push all the report files within that folder. This would include any reports contained in the folder and would convert dependencies that might be located in other folders or subfolders (such as Shared DataSources and Shared DataSets). Reports in subfolders aren't published.
 
 ### Workspace name
 
