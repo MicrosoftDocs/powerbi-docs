@@ -1,6 +1,6 @@
 ---
 title: License models for Power BI AppSource visuals
-description: This article explains how the licenses for Power BI visuals purchased on AppSource are enforced by Power BI.
+description: This article explains how the business licenses for Power BI visuals purchased on AppSource are enforced.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
