@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/28/2024
+ms.date: 06/04/2024
 ---
 
 # Change log for Power BI Report Server
@@ -23,7 +23,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - *Version: 1.20.8910.25479 (build 15.0.1115.165), Released: May 28, 2024*
   - Features
     - Removed AngularJS remnants
-    - A recent security change will require Power BI DirectQuery reports to include “Encrypt=True;TrustServerCertificate=True” as part of the connection string on data sources or apply the “PBI_SQL_TRUSTED_SERVERS” environment variable on their Power BI Report Server machine.
+    - A recent security change requires Power BI DirectQuery reports to include "Encrypt=True;TrustServerCertificate=True" as part of the connection string on data sources or apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine.
     - Custom Visual API shipped with release - version v5.8.0
     - Various bug fixes
 
