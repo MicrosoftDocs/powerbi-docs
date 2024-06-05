@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 06/05/2023
+ms.date: 06/05/2024
 #customer intent: As a Power BI user, I want to understand how the licenses for Power BI visuals purchased on AppSource are enforced so that I can use the visuals correctly.
 ---
 
@@ -20,27 +20,27 @@ When you buy a custom visual from [AppSource](https://appsource.microsoft.com/ma
 
 ## No license or partial license
 
-If you try to render an unlicensed visual or a visual that you only have a partial license for, you may see one of the following icons:
+If you try to render an unlicensed visual or a visual that you only have a partial license for, you might see one of the following icons:
 
-* If you have an unlicensed visual in your report, the visual will render with an icon in the corner. Hover over the icon for a link to that visual on AppSource.com.
+* If you have an unlicensed visual in your report, the visual renders with an icon in the corner. Hover over the icon for a link to that visual on AppSource.com.
 
   :::image type="content" source="media/custom-visual-licenses/unlicensed-icon.png" alt-text="Screenshot showing an unlicensed custom visual with the unlicensed user icon in the corner.":::
 
-* If you have a free version of the visual, a banner will appear with a link to upgrade your license. This banner will disappear after a while.
+* If you have a free version of the visual, a banner appears with a link to upgrade your license. This banner will disappear after a while.
 
   :::image type="content" source="media/custom-visual-licenses/upgrade-visual-banner.png" alt-text="Screenshot showing a banner offering to upgrade the visual license.":::
 
-* If you try using a feature in the visual that you don't have a license to use, a banner will appear with a link to upgrade your license.
+* If you try using a feature in the visual that you don't have a license to use, a banner appears with a link to upgrade your license.
 
   :::image type="content" source="media/custom-visual-licenses/upgrade-banner.png" alt-text="Screenshot showing a banner offering to upgrade the license.":::
 
-* If you have an unlicensed visual in your report, the visual won't render, and a button will appear enabling you to get a license or contact the report owner.
+* If you have an unlicensed visual in your report, the visual doesn't render, and a button appears enabling you to get a license or contact the report owner.
 
   :::image type="content" source="media/custom-visual-licenses/get-a-license.png" alt-text="Screenshot showing a button for getting a license or contacting owner.":::
 
 ## Unsupported environment
 
-If your report or dashboard contains a visual that isn't supported in your environment, the visual won't render and a notification will appear.
+If your report or dashboard contains a visual that isn't supported in your environment, the visual doesn't render and a notification appears.
 
   :::image type="content" source="media/custom-visual-licenses/unsupported-environment.png" alt-text="Screenshot showing notification of an unsupported environment.":::
 

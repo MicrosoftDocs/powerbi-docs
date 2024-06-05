@@ -31,15 +31,15 @@ This section shows how to add conditional formatting to an existing Power BI vis
 
 ### Add a conditional color formatting entry in the format pane
 
-In this section you'll learn how to add a conditional color formatting entry, to a data point in format pane.
+In this section you learn how to add a conditional color formatting entry, to a data point in format pane.
 
-1. You'll use the `propertyInstanceKind` array in `VisualObjectInstance`, which is exposed by `powerbi-visuals-api`. Your first step is to verify that your file includes this import:
+1. Use the `propertyInstanceKind` array in `VisualObjectInstance`, which is exposed by `powerbi-visuals-api`. Verify that your file includes this import:
 
     ```typescript
     import powerbiVisualsApi from "powerbi-visuals-api";
     ```
 
-2. To specify the appropriate type of formatting (*Constant*, *ConstantOrRule*, or *Rule*), you'll use  the `VisualEnumerationInstanceKinds` enum. Add the following import to your file:
+2. To specify the appropriate type of formatting (*Constant*, *ConstantOrRule*, or *Rule*), use  the `VisualEnumerationInstanceKinds` enum. Add the following import to your file:
 
     ```typescript
     import VisualEnumerationInstanceKinds = powerbiVisualsApi.VisualEnumerationInstanceKinds;
@@ -111,15 +111,15 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ---
 
-`VisualEnumerationInstanceKinds.ConstantOrRule` will create the conditional formatting UI entry alongside the constant formatting UI element.
+`VisualEnumerationInstanceKinds.ConstantOrRule` creates the conditional formatting UI entry alongside the constant formatting UI element.
 
 :::image type="content" source="media/conditional-formatting/conditional-formatting-ui.png" alt-text="Screenshot of the conditional formatting button, as it appears in Power BI, next to the regular color button.":::
 
 ### Define how conditional formatting behaves
 
-Define how formatting will be applied to your data points.
+Define how formatting is applied to your data points.
 
-Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether conditional formatting will be applied to instances, totals, or both. For more information, see [DataViewWildcard](utils-dataview.md#).
+Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether to apply conditional formatting to instances, totals, or both. For more information, see [DataViewWildcard](utils-dataview.md#).
 
 Make the following changes to the properties you want to apply conditional formatting to:
 
