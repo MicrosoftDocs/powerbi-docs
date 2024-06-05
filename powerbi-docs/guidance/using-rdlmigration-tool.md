@@ -11,7 +11,7 @@ ms.custom: fabric-cat, intro-migration
 ms.date: 06/04/2024
 ---
 
-# RdlMigration 
+# Using the RDL Migration tool
 This tool is designed to help customers migrate SQL Server Reporting Services reports (RDL) from their local server(s) to a Power BI workspace in their tenant.  As part of the migration process, the tool will also:
 
 •	Convert any shared datasources and/or shared datasets in these report files to be embedded in the report and save the files locally to disk.
