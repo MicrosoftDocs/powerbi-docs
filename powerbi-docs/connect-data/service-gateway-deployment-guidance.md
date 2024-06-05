@@ -55,7 +55,7 @@ The location of the gateway installation can have significant effect on your que
 
 ![Screenshot shows the question mark where you can determine your Power BI tenant location.](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
-If you intend to use the Power BI service gateway with Azure Analysis Services, be sure that the data regions in both match. For more information about how to set data regions for multiple services, watch [this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
+If you intend to use the Power BI service gateway with Azure Analysis Services, be sure that the data regions in both match.
 
 ### Optimizing performance
 
