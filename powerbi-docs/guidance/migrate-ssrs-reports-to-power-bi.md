@@ -35,11 +35,11 @@ You can achieve migration without downtime to your report servers, or disruption
 
 ## Before you start
 
-Before you start the migration, verify that your environment meets certain prerequisites. We'll describe these prerequisites, and also introduce you to a helpful migration tool.
+Before you start the migration, verify that your environment meets certain prerequisites. We describe these prerequisites, and also introduce you to a helpful migration tool.
 
 ### Preparing for migration
 
-As you prepare to migrate your reports to Power BI, first verify that you have a Power BI Pro or Premium Per User license to upload content to the target workspace.
+As you prepare to migrate your reports to Power BI, first verify that you have a Power BI Pro or Premium Per user license to upload content to the target workspace.
 
 ### Supported versions
 
@@ -95,31 +95,29 @@ Organizations may have hundreds of SQL Server Reporting Services (SSRS) reports.
 
 ### Assess
 
-Having discovered your report server instances, the goal of the _Assess_ phase is to understand any .rdl reports—or server items—that can't be migrated.
+Having discovered your report server instances, the goal of the _Assess_ phase is to understand any .rdl reports, or server items, that can't be migrated.
 
-Your .rdl reports can be migrated from your report servers to Power BI. Each migrated .rdl report will become a Power BI paginated report.
+Your .rdl reports can be migrated from your report servers to Power BI. Each migrated .rdl report becomes a Power BI paginated report.
 
 The following report server item types, however, can't be migrated to Power BI:
 
 - **Shared data sources** and **shared datasets**: The [RDL Migration Tool](using-rdlmigration-tool.md) automatically converts shared data sources and shared datasets into embedded data sources and datasets, provided that they're using supported data sources.
-- **Resources** such as image files
-- **Linked reports** migrate, whether the *parent* report that links to them is selected for migration or no. In the Power BI service, they're regular .rdl reports. 
-- **KPIs**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only
-- **Mobile reports**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only
-- **Report models**: deprecated
-- **Report parts**: deprecated
+- **Resources** such as image files.
+- **Linked reports** migrate, whether the *parent* report that links to them is selected for migration or not. In the Power BI service, they're regular .rdl reports. 
+- **KPIs**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only.
+- **Mobile reports**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only.
+- **Report models**: deprecated.
+- **Report parts**: deprecated.
 
 If your .rdl reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md), when it makes sense.
 
 For more information about supported data sources for paginated reports in the Power BI service, see [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md#other-data-sources).
 
-
 Generally, Power BI paginated reports are optimized for **printing**, or **PDF generation**. Power BI reports are optimized for **exploration and interactivity**. For more information, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
 Referencing [custom code](../paginated-reports/paginated-reports-faq.yml#can-i-run-custom-code-in-my-report-) DLL files within a report isn't supported.  
 
-Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](../paginated-reports/report-builder/export-pdf-file-report-builder.md#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
-
+Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. Test the [PDF rendering output](../paginated-reports/report-builder/export-pdf-file-report-builder.md#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
 
 ### Prepare
 
@@ -130,7 +128,7 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 1. Consider using [shared Power BI semantic models](../connect-data/service-datasets-build-permissions.md) in place of your report server shared data sources.
 1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083?tab=Overview) in place of your report server mobile reports and KPIs.
-1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\adelev_, the built-in field returns something like _adelev&commat;adventureworks.com_. You'll need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
+1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\adelev_, the built-in field returns something like _adelev&commat;adventureworks.com_. You need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
 1. Reevaluate the use of the **ExecutionTime** built-in field in your reports. For paginated reports (when hosted in the Power BI service), the built-in field returns the date/time _in Coordinated Universal Time (or UTC)_. It could impact on report parameter default values, and report execution time labels (typically added to report footers).
 1. If your data source is SQL Server (on premises), verify that reports aren't using map visualizations. The map visualization depends on SQL Server spatial data types, and these aren't supported by the gateway. For more information, see [Data retrieval guidance for paginated reports (SQL Server complex data types)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
 1. For cascading parameters, be mindful that parameters are evaluated sequentially. Try preaggregating report data first. For more information, see [Use cascading parameters in paginated reports](../guidance/paginated-report-cascading-parameter.md).
@@ -155,7 +153,7 @@ Anyone with permission to access to the report server instance and the Power BI 
    1. Preview the report to ensure it renders correctly.
    1. Select **Publish**, then select **Power BI service**.
    1. Select the workspace where you want to save the report.
-   1. Verify that the report saves. If certain features in your report design aren't yet supported, the save action will fail. You'll be notified of the reasons. You'll then need to revise your report design, and try saving again.
+   1. Verify that the report saves. If certain features in your report design aren't yet supported, the save action fails. You're notified of the reasons. You then need to revise your report design, and try saving again.
 
 ### Automated migration
 
@@ -169,8 +167,8 @@ You can also use the publicly available Power BI Report Server, Reporting Servic
 
 For more information about the APIs, see:
 
-- [Power BI REST APIs](/rest/api/power-bi/)
-- [SQL Server Reporting Services REST APIs](/sql/reporting-services/developer/rest-api)
+- [Power BI REST APIs](/rest/api/power-bi/).
+- [SQL Server Reporting Services REST APIs](/sql/reporting-services/developer/rest-api).
 
 ## Post-migration stage
 
@@ -182,7 +180,7 @@ You specify query time-out values during report authoring when you define an emb
 
 ### Configure data sources
 
-Once reports have been migrated to Power BI, you'll need to ensure their data sources are correctly set up. It can involve assigning to gateway data sources, and [securely storing data source credentials](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). These actions aren't done by the RDL Migration Tool.
+Once reports have been migrated to Power BI, you need to ensure their data sources are correctly set up. It can involve assigning to gateway data sources, and [securely storing data source credentials](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). These actions aren't done by the RDL Migration Tool.
 
 ### Review report performance
 
@@ -195,7 +193,7 @@ We highly recommended you complete the following actions to ensure the best poss
 
 ### Reconcile issues
 
-The Post-migration phase is crucial for reconciling any issues, and that you address any performance concerns. Adding the paginated reports workload to a capacity can contribute to slow performance—for paginated reports _and other content_ stored in the capacity.
+The Post-migration phase is crucial for reconciling any issues, and that you address any performance concerns. Adding the paginated reports workload to a capacity can contribute to slow performance for paginated reports _and other content_ stored in the capacity.
 
 ## Related content
 
