@@ -204,6 +204,9 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 
 Power BI Report Server does not support OAuth-based authentication for DirectQuery.
 
+> [!NOTE]
+> Power BI DirectQuery reports must include “Encrypt=True;TrustServerCertificate=True” as part of the connection string on data sources or apply the “PBI_SQL_TRUSTED_SERVERS” environment variable on their Power BI Report Server.
+
 | **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** | **Integrated Windows Authentication** |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server Database |No |No |Yes |Yes |Yes |
