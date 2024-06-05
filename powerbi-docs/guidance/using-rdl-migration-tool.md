@@ -71,7 +71,7 @@ RdlMigration "https://sharepointservername/_vti_bin/reportserver" "https://share
 
 This is set in the Reporting Services Configuration Manager under Web Service URL-> Report Server Web Service URL.
 
-![Screenshot of Reporting Services configuration tool showing web service url.](media/using-rdl-migration-tool/config-tool-web-service-url.png)
+![Screenshot of Reporting Services configuration tool showing web service url.](media/using-rdl-migration-tool/configuration-tool-web-service-url.png)
 
 ### File path
 
