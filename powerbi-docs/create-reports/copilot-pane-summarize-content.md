@@ -43,7 +43,7 @@ Or you can select prompts from the user prompt guide in the sparkle menu in the 
 
 - What insights should I look into.
 - Answer questions from leadership.
-- Give me an execuive summary.
+- Give me an executive summary.
 - Summarize visuals on this page.
 
 :::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
