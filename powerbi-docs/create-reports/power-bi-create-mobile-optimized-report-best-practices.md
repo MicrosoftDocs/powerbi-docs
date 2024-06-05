@@ -68,10 +68,6 @@ The following table lists the standard visuals, classified by their minimum reco
 * M – minimum width: 323 pt, minimum height: 100 pt
 * S – minimum width: 158 pt, minimum height: 100 pt
 
-## Use the auto-create mobile layout option to get started
-
-Try using the **auto-create layout** option in the mobile layout view to get started. The auto-create mobile layout option generates a mobile-optimized view of your report on the mobile layout canvas. It places the report visuals on the canvas and tries its best to preserve the desktop report's functionality. Once you have the initial, auto-created layout on the canvas, you can start modifying it as necessary. For more information, see [Automatic mobile layout creation](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation).
-
 > [!NOTE]
 > 323 pt is the maximum screen width on the mobile layout canvas.
 
@@ -128,6 +124,10 @@ Try using the **auto-create layout** option in the mobile layout view to get sta
   | **KPI** | S |
   | **Shape** | S |
   | **Shape** | S |
+
+## Use the auto-create mobile layout option to get started
+
+Try using the **auto-create layout** option in the mobile layout view to get started. The auto-create mobile layout option generates a mobile-optimized view of your report on the mobile layout canvas. It places the report visuals on the canvas and tries its best to preserve the desktop report's functionality. Once you have the initial, auto-created layout on the canvas, you can start modifying it as necessary. For more information, see [Automatic mobile layout creation](./power-bi-create-mobile-optimized-report-mobile-layout-view.md#automatic-mobile-layout-creation).
 
 ## Related content
 
