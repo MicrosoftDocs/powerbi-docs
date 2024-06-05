@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 04/11/2024
+ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ---
@@ -16,7 +16,7 @@ no-loc: [Copilot]
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Even if you don't have permission to edit a Power BI report, Copilot can still create a summary for you in the Copilot pane. You can just be a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
+Even if you don't have permission to edit a Power BI report, Copilot can create a summary for you in the Copilot pane. You can be just a report reader. If you can edit the report, you can also create a visual in the report that provides a summary. See the article [Write Copilot prompts to create narrative visuals in Power BI](copilot-prompts-narratives.md) for details.
 
 :::image type="content" source="media/copilot-pane-summarize-content/copilot-summary-1.png" alt-text="Screenshot showing select Enter and watch Copilot generate your summary." lightbox="media/copilot-pane-summarize-content/copilot-summary-1.png":::
 
@@ -43,7 +43,7 @@ Or you can select prompts from the user prompt guide in the sparkle menu in the 
 
 - What insights should I look into.
 - Answer questions from leadership.
-- Give me an execuive summary.
+- Give me an executive summary.
 - Summarize visuals on this page.
 
 :::image type="content" source="media/copilot-pane-summarize-content/empty-state-prompt-guide.png" alt-text="Screenshot showing select prompts from the user prompt guide." lightbox="media/copilot-pane-summarize-content/empty-state-prompt-guide.png":::
