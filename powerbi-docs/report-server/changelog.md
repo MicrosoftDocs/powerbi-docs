@@ -40,7 +40,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 - *Version: 1.19.8779.19175 (build 15.0.1114.33), Released: January 26, 2024*
   - Features
-    - Support for many to many cardinality in Power BI reports
+    - Support for many-to-many cardinality in Power BI reports
     - Custom Visual API shipped with release - version v5.7.0
   - Bug fixes
     - Fixed an issue with invisible Download and Reload buttons for Excel workbooks 
