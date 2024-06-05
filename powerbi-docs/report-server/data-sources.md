@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/04/2023
+ms.date: 06/04/2024
 ---
 
 # Power BI report data sources in Power BI Report Server
