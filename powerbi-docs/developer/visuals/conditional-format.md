@@ -1,6 +1,6 @@
 ---
 title: Conditional formatting of Power BI custom visuals
-description: Learn how to apply conditional formatting to your Power BI custom visual.
+description: Learn how to customize your Power BI visual by applying conditional formatting functionality based on data values.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 1/12/2024
+#customer intent: As a Power BI visual developer, I want to learn how to apply conditional formatting to my custom visual so I can customize the visual appearance based on the data values.
 ---
 
 # Add conditional formatting
