@@ -28,7 +28,7 @@ From the Help pane, you can navigate to the Fabric Support page to check [Fabric
 
 In the Help Pane, enter a keyword to find relevant information and resources from Microsoft documentation and community forum topics. Use the dropdown to filter the results.
 
-![Screenshot of search results in the Help Pane](media/service-support-options/help-pane-search-results.png)
+![Screenshot of search results in the Help Pane](media/service-support-options/help-pane-search.png)
 
 ### Search for help in Fabric communities
 
