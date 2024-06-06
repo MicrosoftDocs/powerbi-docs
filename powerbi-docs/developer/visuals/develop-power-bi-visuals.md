@@ -1,15 +1,16 @@
 ---
 title: Develop custom visuals in Power BI
-description: This article describes how to create Power BI visuals .pbiviz files.
+description: This article describes how to package a Power BI visual that you created as a .pbiviz file that you can share.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 08/07/2022
+ms.date: 06/06/2024
 LocalizationGroup: Visualizations
 ms.custom: intro-overview
+#customer intent: As a Power BI visual developer, I want to learn how to package a Power BI visual that I created as a .pbiviz file so that I can share it with others.
 ---
 
 # Power BI custom visuals
