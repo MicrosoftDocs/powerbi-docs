@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/01/2024
+ms.date: 06/17/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,14 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
+
+## June 2024
+
+### Show visuals as tables (preview)
+
+In this month’s update, we’ve added the Show Visuals as Tables view mode to all reports. Use this feature to instantly view all the visuals (excluding slicers, cards, and non-data-driven visuals) in your report as table visuals. This feature makes it possible for users who rely on accessibility screen readers to read the underlying data presented in each visual. It also benefits users who prefer to see their data in tabular form, which is more like viewing it in Excel. 
+
+To turn on the Show Visuals as Tables view mode, tap the new button that has been added to the options menu (...) in the report header. The view mode is applied to all pages in the report. To go back to the regular view, tap Show original visuals in the same menu.  
 
 ## April 2024
 
