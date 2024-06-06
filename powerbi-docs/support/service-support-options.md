@@ -1,6 +1,6 @@
 ---
 title: Power BI and Fabric support overview
-description: This article describes how users of Power BI and Fabric an overview of the support
+description: This article describes how users of Power BI and Fabric can access support
 author: mihart
 ms.author: kfollis
 ms.reviewer: mihart
@@ -12,11 +12,11 @@ ms.date: 05/10/2023
 
 # Fabric and Power BI support overview
 
-This article describes how to find self-help resources and the support options that are available to end users who have purchased Microsoft Fabric or Power BI. Fabric administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric for administrators, see [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
+This article describes how to find self-help resources and the support options that are available to  users who have purchased Microsoft Fabric or Power BI. Fabric administrators and other admins in your organization have access to expanded support options. Read [Commonly used Microsoft 365 admin center roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) to learn more about who can manage service requests for your organization. To learn about Microsoft Fabric for administrators, see [Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
 
 ## Finding self-help resources
 
-Many resources are available to help you identify, research, and solve issues. From the top menu bar, select the **?** to open the Fabric Help Pane. In the Help Pane you can search for content from Microsoft Learn and the different Fabric communities. 
+Many resources are available to help you identify, research, and solve issues. From the top menu bar, select the **?** to open the Fabric Help Pane. In the Help Pane, search for content from Microsoft Learn and the different Fabric workloads. 
 
 ### Checking for service health and known issues
 
@@ -32,7 +32,7 @@ In the Help Pane, enter a keyword to find relevant information and resources fro
 
 ### Search for help in Fabric communities
 
-Clicking on "Ask the community" in the Help Pane will take you to the Fabric Community in which you can post questions and seek help from other users.
+Clicking on "Ask the community" in the Help Pane will take you to the Fabric Community shere you can post questions and seek help from other users.
 
 ![Nevigate to Fabric Community from the Help Pane.](media/service-support-options/image1.png)
 
@@ -44,7 +44,7 @@ Microsoft provides support in English globally and in additional languages (Japa
 
 |English <sup>*</sup>  |Japanese <sup>**</sup>  |Spanish, French, German, Italian, Portuguese <sup>**</sup> |Traditional Chinese, Simplified Chinese <sup>**</sup>  |
 |---------|---------|---------|---------|
-|Provided globally all day, every day   |Available to customers in Japan region during that region's business hours        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours <br />Spanish/Portuguese available to customers in South America during that region's business hours   | Available to customers in Asia/Pacific region during that region's business hours        |
+|Provided globally all day, every day   |Available to customers in Japan region during that region's business hours.        |Available to customers in Europe/Middle East/Africa regions during those regions' business hours. <br />Spanish/Portuguese available to customers in South America during that region's business hours.   | Available to customers in Asia/Pacific region during that region's business hours.        |
 
 <sup>*</sup> Around the clock (all day, every day) support is available based on issue severity and your support offering.<br/><sup>**</sup> Support in languages other than English may be available during local business hours subject to availability.
 
@@ -63,7 +63,7 @@ For **most countries**, business hours are from 9:00 AM to 5:00 PM during weekda
 
 ### What's the difference between technical support and advisory services?
 
-- Technical support Break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
+- Technical support break-fix issues are technical problems you experience while using services. "Break-fix" is an industry term that refers to "work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order."
 - How functionality works isn't considered a break-fix issue but is more closely related to training. These "how-to" questions - or Advisory services - involve a transfer of knowledge and can often be answered by reviewing product documentation, raising a question in online community forums, or contacting a knowledgeable individual such as a partner. While there might be some elements of knowledge transfer involved in solving a break-fix issue, in general, assisted training isn't included in support plans.
 
 ### What is a preview (beta) service or feature?
@@ -82,7 +82,7 @@ When Microsoft offers you early access to a Fabric workload and/or features, the
 
 - Any technical support for a public preview service or feature is limited to break-fix scenarios. 
 
-- Users might find additional support for Public Preview features through our [forums](https://community.fabric.microsoft.com/) or other channels.
+- Users might find additional support for Public Preview features through our [Community forums](https://community.fabric.microsoft.com/) or other channels.
 
 ## Before you contact support
 
@@ -102,13 +102,11 @@ If Microsoft support is your admin's preferred option:
 
    :::image type="content" source="media/service-support-options/license-type.png" alt-text="Screen capture showing license type displayed with account profile.":::  
 
-
-
 ## Using Support
 
 ### How do I contact Support?
 
-You get access to Support through either Fabric [Admin Portal](https://app.powerbi.com/admin-portal/supportCenter), [Fabric Support page](https://support.fabric.microsoft.com/support), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/support) . Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support) . For detailed instructions on how to create a support ticket, review [How to contact support ](/power-bi/support/create-support-ticket)document. Make sure also to review our [best practices when creating a support ticket](/power-bi/support/best-practices-creating-sr) document.
+Access Support through either the Fabric [Admin Portal](https://app.powerbi.com/admin-portal/supportCenter), [Fabric Support page](https://support.fabric.microsoft.com/support), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/support). Microsoft partners should use the [Partner Center portal](https://partner.microsoft.com/support). For detailed instructions on how to create a support ticket, review [How to contact support ](/power-bi/support/create-support-ticket)document. Make sure also to review our [best practices when creating a support ticket](/power-bi/support/best-practices-creating-sr) document.
 
 | **Support option** |**Break-fix technical support** |**Billing support** |**Consulting and training** |**Service level <br>(time to initial engagement)** |**Support channel** |
 | --- | --- | --- | --- | --- | --- |
@@ -128,25 +126,26 @@ Submitting support requests online allows us to deliver fast and deep technical 
 
 ### Is there a phone number I can call to contact Support?
 
-Contacting Support over the phone won't speed up the processing of your request, and you'll get a better and faster experience by contacting support via the correct support portals listed earlier in this article. If you can't submit a request online, you can find a local support number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+Contacting Support over the phone won't speed up the processing of your request, and you'll get a better and faster experience by contacting support via the correct support portals listed earlier in this article. If you can't submit a request online, you can find a local support number from our list of regional [Global customer service centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### How do I submit a support request if I can't sign in?
 
-If you can't submit a support request online, you can find a local support phone number from our list of regional [Global Customer Service Centers](/microsoft-365/admin/contact-support-for-business-products).
+If you can't submit a support request online, you can find a local support phone number from our list of regional [Global customer service centers](/microsoft-365/admin/contact-support-for-business-products).
 
 ### Who can submit a support request for Fabric or Power BI?
 
 - Any users with the Fabric admin role on the tenant can submit a support request. 
 
-- Users with appropriate admin roles as listed in [here](/power-bi/support/create-support-ticket). 
+- Users with appropriate admin roles as listed in [the support role article](/power-bi/support/create-support-ticket). 
 
 - Users with a Fabric license or a paid version of Power BI.
 
 > [!NOTE]
-> If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options
+> If you got your Power BI Pro or Premium-per-user (PPU) license through a guest affiliation with another organization, you can't contact support. Your license must be assigned directly by the organization that manages your work or school account to enable support options.
+> 
 ### What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request? 
 
-Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the Business Impact of the request (also known as Severity). Initial Response Times are calculated using business-hours support for subscription-based support. Elevated support plans will contain non–business hours response times.
+Initial Response Time is the period from when you submit your support request to when a Microsoft Support Engineer contacts you and starts working on your support request. The Initial Response Time varies with both the support plan and the business impact of the request (also known as Severity). Initial Response Times are calculated using business-hours support for subscription-based support. Elevated support plans will contain non–business hours response times.
 
 |Severity level  |Customer's situation  |Initial Response Time  |
 |---------|---------|---------|
@@ -162,9 +161,9 @@ Microsoft is committed to assisting you in resolving your issue as soon as possi
 
 ### I'm running a non-Microsoft technology with Fabric. What support will I get? 
 
-- Microsoft offers customers the ability to run non-Microsoft technologies along with Fabric. For all scenarios that are eligible for support, Microsoft Support will investigate the issue to find its root cause. help in isolating the issue between the environment and your custom application.
+- Microsoft offers customers the ability to run non-Microsoft technologies along with Fabric. For all scenarios that are eligible for support, Microsoft Support will investigate the issue to find its root cause, help in isolating the issue between the environment and your custom application.
 
-- Full technical support will be provided if the issue is determined to be caused by a Fabric. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
+- Full technical support will be provided if the issue is determined to be caused by Fabric. Commercially reasonable support will be provided to all other scenarios. When an adequate solution to your issue is not achieved, you might be referred to other support channels that are available for the non-Microsoft software.
 
 ### How do I get support during an outage or Service Interruption Event (SIE)?
 
@@ -192,12 +191,12 @@ If you want this level of support, you can evaluate [Unified Support](https://ww
 
 ### Does Microsoft provide support for Data Corruption?
 
-Data may become corrupt due to a variety of reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft does not provide assistance for correcting damaged data.  Note that per the Service Provider License Agreement (SPLA), Microsoft does not have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
+Data may become corrupt due to a variety of reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft does not provide assistance for correcting damaged data.  Note that per the Service Provider License Agreement (SPLA), Microsoft does not have a legal obligation to change or correct data being corrupted due to malfunctioning software. Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
 
 ## Get started with support for administrators
 
 > [!TIP]
->Need help getting started with Power BI? Take advantage of the [one-hour workshops offered by our partners and get a free consultation](https://appsource.microsoft.com/marketplace/consulting-services?search=Onehourfreeconsultingoffer).
+> Need help getting started with Power BI? Take advantage of the [one-hour workshops offered by our partners and get a free consultation](https://appsource.microsoft.com/marketplace/consulting-services?search=Onehourfreeconsultingoffer).
 
 Admins can use the **Help + support** experience in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) to get self-help solutions and to create a new service request. Before you contact Microsoft support, follow these steps:
 
