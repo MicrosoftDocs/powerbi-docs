@@ -63,11 +63,6 @@ Make sure each field only has a single location category. For example, your City
 
 Add latitude and longitude values to your semantic model. This data removes any ambiguity and returns results more quickly. Latitude and Longitude fields must be in *Decimal Number* format, which you can set in the data model.
 
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
-
 ### 4. Use Place category for columns with full location information
 
 While we encourage you to use geo-hierarchies in your maps, if you must use a single location column with full geographical information, you can set the data categorization to **Place**. For example, if the data in your column is full addresses, such as 1 Microsoft Way, Redmond Washington 98052, this generalized data category works best with Bing. 

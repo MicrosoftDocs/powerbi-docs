@@ -83,6 +83,10 @@ To add a map to a report, follow these steps:
 
 You have created your first ArcGIS for Power BI visualization. Next, learn how to refine and format the visualization using basemaps, location types, themes, and more.
 
+## Embed a map-enabled ArcGIS for Power BI report
+
+You can embed a map-enabled ArcGIS for Power BI report containing private, secure, or proprietary ArcGIS data in a secure website or app. Viewers of the report must sign in to an ArcGIS account to view it. See [Content sharing](https://doc.arcgis.com/en/microsoft-365/latest/power-bi/embed-a-map-enabled-report.htm) for general information about embedding ArcGIS content.
+
 ## Format an ArcGIS for Power BI visualization
 
 To access **ArcGIS for Power BI** formatting features, in the Visualizations pane, select the **Format** tab to view the formatting options.
