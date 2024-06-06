@@ -22,19 +22,19 @@ Many resources are available to help you identify, research, and solve issues. F
 
 From the Help pane, you can navigate to the Fabric Support page to check [Fabric service status](https://support.fabric.microsoft.com/support) or to view [Fabric current known issues](https://support.fabric.microsoft.com/known-issues).
 
-![Check for service status and known issues in the Help Pane.](media/service-support-options/image.png)
+![Screenshot of links to service status and known issues in the Help Pane.](media/service-support-options/help-pane-service-status.png)
 
 ### Searching for content in the Help Pane
 
 In the Help Pane, enter a keyword to find relevant information and resources from Microsoft documentation and community forum topics. Use the dropdown to filter the results.
 
-![User's image](media/service-support-options/image2.png)
+![Screenshot of search results in the Help Pane](media/service-support-options/help-pane-search-results.png)
 
 ### Search for help in Fabric communities
 
 Clicking on "Ask the community" in the Help Pane takes you to the Fabric Community site where you can post questions and seek help from other users.
 
-![Nevigate to Fabric Community from the Help Pane.](media/service-support-options/image1.png)
+![Screenshot of additional resources in the Help Pane including link to community.](media/service-support-options/help-pane-community.png)
 
 ## About Support
 
@@ -157,7 +157,7 @@ Initial Response Time is the period from when you submit your support request to
 
 ### How quickly can you resolve my support request?
 
-Microsoft is committed to assisting you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We work with you to get the issue resolved as quickly as possible. This committment applies to all levels of support.
+Microsoft is committed to assisting you in resolving your issue as soon as possible. Sometimes that means focusing efforts on reducing the business impact and mitigating any negative impact to your operation, before moving to a full solution. Therefore, we make a commitment to Initial Response Time and working with you until the impact of your issue is mitigated, having no direct SLA for support request resolution. The time it takes to troubleshoot and resolve a support request varies greatly based on the specifics of the issue. We work with you to get the issue resolved as quickly as possible. This commitment applies to all levels of support.
 
 ### I'm running a non-Microsoft technology with Fabric. What support do I get? 
 
@@ -175,7 +175,7 @@ Microsoft is committed to assisting you in resolving your issue as soon as possi
 
 ### How is support provided for Performance issues?
 
-Microsoft Fabric subscription support primarily covers break-fix issues, which are technical problems that you experience while using Microsoft Fabric. "Break-fix" is an industry term, which refers to "work involved in supporting a technology when it fails in the normal course of its function . Break-fixes require intervention by a support organization to be restored to working order."
+Microsoft Fabric subscription support primarily covers break-fix issues, which are technical problems that you experience while using Microsoft Fabric. "Break-fix" is an industry term, which refers to "work involved in supporting a technology when it fails in the normal course of its function. Break-fixes require intervention by a support organization to be restored to working order."
 
 Microsoft Fabric subscription support doesn't cover the following issues:
 
@@ -212,7 +212,7 @@ Learn more about how admins can [contact support for help with Microsoft 365 bus
 
 ## Power BI and Fabric benefits for Microsoft Unified support contracts
 
-With Microsoft Premier or Unified contract support, you also get the following benefits:
+With Microsoft Unified contract support, you also get the following benefits:
 
 * Account management
 * Option for on-site support
@@ -220,7 +220,7 @@ With Microsoft Premier or Unified contract support, you also get the following b
 * Training and workshops
 * Developer support
 
-As a Power BI customer, you can also take advantage of the following offerings for proactive support hours:
+As a Power BI or Fabric customer, you can also take advantage of the following offerings for proactive support hours:
 
 * **Power BI Assessment**. A Microsoft-accredited Customer Engineer diagnoses potential issues and performance with your Power BI environment. The engineer provides valuable guidance on recommended practices to improve the health and performance of your Power BI environment. At the end of this assessment, you receive a comprehensive Power BI report of results, a detailed best practice guidance deck, and a summary report tailored to your environment.
 
