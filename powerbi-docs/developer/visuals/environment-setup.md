@@ -1,14 +1,15 @@
 ---
 title: Setting up an environment for developing a Power BI visual
-description: This article explains how to set up your environment so that you can develop a Power BI visual.
+description: This article explains how to set up your environment so you have all the tools necessary for developing a Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/31/2023
+ms.date: 05/31/2024
 ms.custom: engagement-fy23
+#customer intent: As a Power BI visual developer, I want to learn how to set up my environment so that I can develop a Power BI visual.
 ---
 
 # Set up your environment for developing a Power BI visual
