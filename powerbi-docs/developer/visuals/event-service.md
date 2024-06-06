@@ -1,13 +1,14 @@
 ---
 title: Render events in Power BI visuals
-description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
+description: Learn about the API needed so that Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 08/30/2022
+ms.date: 4/30/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use the rendering events API so that I can notify Power BI that my visual is ready for export to PowerPoint or PDF.
 ---
 
 # "Rendering" events in Power BI visuals

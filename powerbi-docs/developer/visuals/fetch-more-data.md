@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/18/2022
+ms.date: 11/18/2023
+#customer intent: As a Power BI visual developer, I want to learn how to fetch more data from Power BI so that I can display large semantic models in my visual.
 ---
 
 # Fetch more data from Power BI

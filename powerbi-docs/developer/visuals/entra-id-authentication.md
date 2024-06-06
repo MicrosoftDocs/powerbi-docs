@@ -9,7 +9,7 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 05/12/2024
 
-#customer intent: As a <role>, I want <what> so that <why>.
+#customer intent: As a Power BI visual developer, I want to learn how to set up authentication for third party ISVs in Microsoft Entra for single sign-in users.
 ---
 
 # Microsoft Entra ID application setup
