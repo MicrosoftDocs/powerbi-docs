@@ -188,7 +188,7 @@ The visual keeps the data view passed to it so it can access the data without ex
 
 ## Customized data reduction
 
-Since the developer can't always know in advance what type of data the visual will be used to display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
+Since the developer can't always know in advance what type of data the visual will display, they might want to allow the report author to set the data chunk size dynamically. From API version 5.2, you can allow the report author to set the size of the data chunks that are fetched each time.
 
 To allow the report author to set the count, first define a [property pane object](./capabilities.md#objects-define-property-pane-options) called `dataReductionCustomization` in your *capabilities.json* file:
 
@@ -241,7 +241,7 @@ Then, after the `dataViewMappings`, define the default values for `dataReduction
     }
 ```
 
-The data reduction information will appear under *visual* in the format pane.
+The data reduction information appears under *visual* in the format pane.
 
 :::image type="content" source="./media/fetch-more-data/custom-data-reduction.png" alt-text="Screenshot of the format pan with option to set data reduction count.":::
 
@@ -251,7 +251,7 @@ The data reduction information will appear under *visual* in the format pane.
 
 * The data view total row count is limited to 1,048,576 rows.
 
-* In segments aggregation mode, the data view memory size is limited to 100 MB.
+* The data view memory size is limited to 100 MB In segments aggregation mode.
 
 ## Related content
 
