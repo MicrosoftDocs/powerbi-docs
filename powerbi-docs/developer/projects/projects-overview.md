@@ -15,6 +15,9 @@ ms.date: 04/10/2024
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
+> [!TIP]
+> For guidance about how to plan a Power BI development, see [Power BI implementation planning](/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-overview#the-power-bi-content-lifecycle).
+
 Power BI Desktop introduces a new way to author, collaborate, and save your projects. When you save your work as a ***Power BI Project*** (PBIP), report and semantic model *item* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:

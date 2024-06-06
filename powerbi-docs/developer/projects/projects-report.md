@@ -206,7 +206,7 @@ The report definition is stored inside the **definition\\** folder with the foll
 |──────── visual.json              |Yes      |Visual metadata, such as position and formatting, query.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/visualContainer).
 |──── page.json                    |Yes      |Page metadata, such as page level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/page).
 |── pages.json                     |No       |Pages metadata, such as page order and active page.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/pagesMetadata).
-|version.json                      |Yes      |PBIR file version, determines the required files.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/versionMetadata)
+|version.json                      |Yes      |PBIR file version, among other factors, determines the required files to be loaded.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/versionMetadata)
 |reportExtensions.json             |No       |Report extensions, such as report level measures.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/reportExtension)
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
@@ -216,7 +216,7 @@ By default, the pages, visuals, and bookmarks use their report object name as th
 
 :::image type="content" source="./media/projects-report/pbir-objectName.png" alt-text="Screenshot of PBIR name property.":::
 
-Renaming the file or folder is supported, and the Power BI report authoring tool will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+Renaming the file or folder is supported, and the Power BI will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
 
 ### PBIR Json Schemas
 
@@ -235,17 +235,38 @@ You can edit the PBIR JSON files using a code editor like [Visual Studio Code](h
 :::image type="content" source="./media/projects-report/pbir-jsonSchema-validation.png" alt-text="Screenshot of prompt PBIR JSON Schema validation.":::
 
 The following scenarios are just a subset of possibilities now available with PBIR and external changes:
-- Copy pages between reports.
-- Ensure a certain set of visuals across all pages by simply copy & paste the visual files.
-- Find and replace text across multiple reports.
+- Copy pages/visuals/bookmarks between reports.
+- Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
+- Find and replace across multiple reports.
 - Apply a batch edit across all visuals using a script (e.g. hide visual level filters)
 
 #### PBIR errors
 
-TODO
-- Types of errors: blocking vs non blocking
+An external change to PBIR content may have errors, there are two types of errors:
 
-### Fabric Git Integration with PBIR
+**Blocking errors** prevent Power BI Desktop from opening the report. These errors help identify the issue and the offending file.
+
+:::image type="content" source="./media/projects-report/pbir-error-blocking.png" alt-text="Screenshot of prompt PBIR blocking error.":::
+
+Errors such as invalid schema or missing required properties are considered blocking issues. These schema errors can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
+
+**Non-blocking errors** do not prevent Power BI Desktop from opening and are automatically resolved.
+
+:::image type="content" source="./media/projects-report/pbir-error-nonblocking.png" alt-text="Screenshot of prompt PBIR non-blocking error.":::
+
+Errors such as an invalid *activePageName* configuration are examples of non-blocking errors that will be automatically fixed. The warning is necessary to give you the chance to avoid saving the report with the auto-fix, thereby preventing any potential loss of work.
+
+##### Common PBIR errors scenarios
+
+**Scenario:** Copy & pasted a page folders between reports and got 'Values for 'pageBinding.name' property must be unique.' error.
+
+**Solution:** TODO 
+
+**Scenario:** TODO
+
+**Solution:** TODO 
+
+### Fabric Git Integration and REST APIs with PBIR
 
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) will continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features will start exporting the report definition using PBIR format.
 
@@ -277,6 +298,7 @@ During the Public Preview, PBIR reports published to service have the following 
 - Cannot be saved as a copy.
 - Cannot be published from Power BI Desktop.
 - Cannot be uploaded to workspace as PBIX.
+- Cannot be utilized in Power BI Embedded.
 
 ## Related content
 
