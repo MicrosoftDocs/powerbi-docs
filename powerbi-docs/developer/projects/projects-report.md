@@ -167,7 +167,7 @@ Go to **File > Options and settings > Options > Preview features** and check the
 
 With the PBIR Preview feature enabled, when you save a project, your report is saved within a folder named *\definition* inside of [report folder](./projects-report.md):  
 
-:::image type="content" source="./media/projects-dataset/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report pbip folder.":::
+:::image type="content" source="./media/projects-report/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report pbip folder.":::
 
 Learn more about the [PBIR folder structure](#pbir-folder-structure).
 
