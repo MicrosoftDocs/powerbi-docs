@@ -148,19 +148,19 @@ To learn more, see [Git integration automatically generated system files](/fabri
 ## PBIR format
 
 > [!IMPORTANT]
-> Please take into account all PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
+> Please consider all the PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
 
-Saving your Power BI Project files (PBIP) using Power BI enhanced report format (PBIR) greatly improves the tracking of changes and the resolution of merge conflicts by using properly formatted JSON files.
+Saving your Power BI Project files (PBIP) using the Power BI Enhanced Report Format (PBIR) greatly improves change tracking and merge conflict resolution by using properly formatted JSON files.
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
-And organizing each page, visual, bookmark, etc., in separate individual files within a folder structure.
+Each page, visual, bookmark, etc., is organized into separate individual files within a folder structure, which is ideal for co-development.
 
 :::image type="content" source="./media/projects-report/pbir-folder.png" alt-text="Screenshot of friendly PBIR folder.":::
 
-Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format and allows modifications from  non-Power BI applications. Each file has a public JSON schema, which documents each property and lets code editors like Visual Studio Code perform syntax validation while editing. On open, Power BI Desktop will validate the changed PBIR files to guarantee successful loading.
+Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format and allows modifications from  non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
 
-The following scenarios are just a subset of possibilities now available with PBIR and external changes:
+The following scenarios are some of the possibilities now available with PBIR and external changes:
 - Copy pages/visuals/bookmarks between reports.
 - Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
 - Find and replace across multiple reports.
@@ -168,7 +168,7 @@ The following scenarios are just a subset of possibilities now available with PB
 
 ### Enable PBIR format Preview feature
 
-Saving as a Power BI Project using PBIR is currently in preview. Before using it, you must first enable it in Preview features:
+Saving as a Power BI Project using PBIR is currently in preview. Before using it, you must first enable it in Power BI Desktop preview features:
 
 Go to **File > Options and settings > Options > Preview features** and check the box next to **Store reports using enhanced metadata format (PBIR)**.
 
@@ -178,7 +178,7 @@ With the PBIR Preview feature enabled, when you save a project, your report is s
 
 :::image type="content" source="./media/projects-report/pbip-pbir-definitionfolder.png" alt-text="Screenshot of the definition folder inside a report pbip folder.":::
 
-Learn more about the [PBIR folder structure](#pbir-folder-structure).
+Learn more about the [PBIR folder structure](#pbir-folder-and-files).
 
 ### Convert existing PBIP to PBIR
 
@@ -189,10 +189,10 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 1. **Save** the project. A prompt appears asking you to upgrade into PBIR.
 1. Select **Upgrade**.
 
+    :::image type="content" source="./media/projects-report/pbir-upgrade.png" alt-text="Screenshot of prompt to upgrade to PBIR.":::
+
     > [!IMPORTANT]
     > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy. If you think you might want to revert back to PBIR-Legacy, save a copy of your PBIP files first.
-
-    :::image type="content" source="./media/projects-report/pbir-upgrade.png" alt-text="Screenshot of prompt to upgrade to PBIR.":::
 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
@@ -276,10 +276,6 @@ Errors such as an invalid *activePageName* configuration are examples of non-blo
 **Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they may be referenced by other pages, the name must be unique within the report. On the newly copied page, simply assign a unique value to resolve this situation. After June 2024, this is no longer an issue because the pageBinding name is a GUID by default.
 
 
-### Fabric Git Integration and REST APIs with PBIR
-
-During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) will continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features will start exporting the report definition using PBIR format.
-
 ### PBIR considerations and limitations
 
 PBIR is currently in **preview**. Keep the following in mind:
@@ -306,6 +302,8 @@ PBIR size limitations enforced by the service:
 - 1000 max resource package files per report.
 - 300mb max size for all resource package files.
 - 20mb max size of all report files.
+
+During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) will continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features will start exporting the report definition using PBIR format.
 
 ## Related content
 
