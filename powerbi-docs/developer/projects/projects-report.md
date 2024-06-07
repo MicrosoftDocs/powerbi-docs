@@ -23,9 +23,9 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - StaticResources\\
   - [RegisteredResources\\](#registeredresources)
 - [semanticModelDiagramLayout.json](#semanticmodeldiagramlayoutjson)
-- [definition.pbir](#definitionpbir)<sup>[1](#required)</sup>
+- [definition.pbir](#definitionpbir)<sup>[1](#required1)</sup>
 - [mobileState.json](#mobilestatejson)
-- [report.json](#reportjson)<sup>[2](#required)</sup>
+- [report.json](#reportjson)<sup>[2](#required1)</sup>
 - [definition\ folder](#definition-folder)<sup>[3](#required3)</sup>
 - [.platform](#platform)
 
