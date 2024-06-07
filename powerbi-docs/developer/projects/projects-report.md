@@ -291,7 +291,9 @@ PBIR is currently in **preview**. Keep the following in mind:
   - Cannot be published from Power BI Desktop.
   - Cannot be uploaded to workspace as PBIX.
   - Cannot be utilized in Power BI Embedded.
-- Large reports containing more than 500 files encounter performance issues both in Desktop and Service.
+- Large reports with more than 500 files experience authoring performance issues (report viewing is not affected), including:
+  - Saving in Power BI Desktop
+  - Synchronization in Fabric Git Integration
 
 PBIR size limitations enforced by the service:
 
