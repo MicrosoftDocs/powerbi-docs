@@ -147,7 +147,10 @@ To learn more, see [Git integration automatically generated system files](/fabri
 
 ## PBIR format
 
-You can save your Power BI Project files (PBIP) using Power BI enhanced report format (PBIR) as the report file format. The PBIR file format greatly simplifies the tracking of changes and resolution of merge conflicts by using properly formatted JSON.
+> [!IMPORTANT]
+> Please take into account all PBIR [limitations](#pbir-considerations-and-limitations) during the preview phase.
+
+Saving your Power BI Project files (PBIP) using Power BI enhanced report format (PBIR) greatly improves the tracking of changes and the resolution of merge conflicts by using properly formatted JSON files.
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
@@ -156,6 +159,12 @@ And organizing each page, visual, bookmark, etc., in separate individual files w
 :::image type="content" source="./media/projects-report/pbir-folder.png" alt-text="Screenshot of friendly PBIR folder.":::
 
 Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format and allows modifications from  non-Power BI applications. Each file has a public JSON schema, which documents each property and lets code editors like Visual Studio Code perform syntax validation while editing. On open, Power BI Desktop will validate the changed PBIR files to guarantee successful loading.
+
+The following scenarios are just a subset of possibilities now available with PBIR and external changes:
+- Copy pages/visuals/bookmarks between reports.
+- Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
+- Find and replace across multiple reports.
+- Apply a batch edit across all visuals using a script (e.g. hide visual level filters)
 
 ### Enable PBIR format Preview feature
 
@@ -181,7 +190,7 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 1. Select **Upgrade**.
 
     > [!IMPORTANT]
-    > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy. If you think you might want to revert back to TMSL, save a copy of your PBIP files first.
+    > Once you upgrade to PBIR, you can't revert back to PBIR-Legacy. If you think you might want to revert back to PBIR-Legacy, save a copy of your PBIP files first.
 
     :::image type="content" source="./media/projects-report/pbir-upgrade.png" alt-text="Screenshot of prompt to upgrade to PBIR.":::
 
@@ -216,7 +225,7 @@ By default, the pages, visuals, and bookmarks use their report object name as th
 
 :::image type="content" source="./media/projects-report/pbir-objectName.png" alt-text="Screenshot of PBIR name property.":::
 
-Renaming the file or folder is supported, and the Power BI will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+Renaming the file or folder is supported, and Power BI will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
 
 ### PBIR Json Schemas
 
@@ -230,52 +239,65 @@ All the JSON schemas are published [here](https://github.com/microsoft/json-sche
 
 ### External changes to PBIR files
 
-You can edit the PBIR JSON files using a code editor like [Visual Studio Code](https://code.visualstudio.com/) or an external tool, as long as the file JSON schema. Using a wrong property name or type can be easily detected directly in Visual Studio Code:
+You can edit the PBIR JSON files using a code editor like [Visual Studio Code](https://code.visualstudio.com/) or an external tool, as long as the file obey the JSON schema. Using a wrong property name or type can be easily detected directly in Visual Studio Code:
 
 :::image type="content" source="./media/projects-report/pbir-jsonSchema-validation.png" alt-text="Screenshot of prompt PBIR JSON Schema validation.":::
 
-The following scenarios are just a subset of possibilities now available with PBIR and external changes:
-- Copy pages/visuals/bookmarks between reports.
-- Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
-- Find and replace across multiple reports.
-- Apply a batch edit across all visuals using a script (e.g. hide visual level filters)
+External changes to PBIR content may result in errors when reopening the files in Power BI Desktop. These errors can be of two types:
 
-#### PBIR errors
-
-An external change to PBIR content may have errors, there are two types of errors:
-
-**Blocking errors** prevent Power BI Desktop from opening the report. These errors help identify the issue and the offending file.
+**Blocking errors** prevent Power BI Desktop from opening the report. These errors help identify the issue and the offending file that must be fixed before reopening:
 
 :::image type="content" source="./media/projects-report/pbir-error-blocking.png" alt-text="Screenshot of prompt PBIR blocking error.":::
 
-Errors such as invalid schema or missing required properties are considered blocking issues. These schema errors can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
+Errors such as an invalid schema or missing required properties are considered blocking errors. These can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
 
-**Non-blocking errors** do not prevent Power BI Desktop from opening and are automatically resolved.
+**Non-blocking errors** do not prevent Power BI Desktop from opening the report and are automatically resolved.
 
 :::image type="content" source="./media/projects-report/pbir-error-nonblocking.png" alt-text="Screenshot of prompt PBIR non-blocking error.":::
 
 Errors such as an invalid *activePageName* configuration are examples of non-blocking errors that will be automatically fixed. The warning is necessary to give you the chance to avoid saving the report with the auto-fix, thereby preventing any potential loss of work.
 
-##### Common PBIR errors scenarios
+#### Typical scenarios of PBIR errors
 
-**Scenario:** Copy & pasted a page folders between reports and got 'Values for 'pageBinding.name' property must be unique.' error.
+**Scenario:** *After renaming certain visual or page folder names, my visual or page no longer appears when opening the report.*
 
-**Solution:** TODO 
+**Solution:** Verify whether the name complies with the [naming convention](#pbir-naming-convention). If it does not, Power BI Desktop ignores the file or folder and treats it as private user files.
 
-**Scenario:** TODO
+**Scenario:** *New report objects are named differently from others. For example, most page folders are named 'ReportSection0e71dafbc949c0853608', while a few are named '1b3c2ab12b603618070b'.*
 
-**Solution:** TODO 
+**Solution:** PBIR has adopted a new [naming convention](#pbir-naming-convention) for every object, but it only applies to new objects. When you save an existing report as PBIP, the current names must be preserved to prevent breaking references. If you want consistency, a script a batch rename is allowed.
+
+**Scenario:** *I copied a bookmark file, and upon saving, most of the bookmark configuration was deleted.*
+
+**Solution:** This behavior is intentional, report bookmarks capture the state of a report page along with all its visuals. Since the captured state originates from another report page with different visuals, any invalid visuals will be removed from the bookmark configuration. If you also copy the dependent visuals and page, the bookmark will maintain its configuration.
+
+**Scenario:** *I copied a page folder from another report and encountered an error stating, "Values for the 'pageBinding.name' property must be unique."*
+
+**Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they may be referenced by other pages, the name must be unique within the report. On the newly copied page, simply assign a unique value to resolve this situation. After June 2024, this is no longer an issue because the pageBinding name is a GUID by default.
+
 
 ### Fabric Git Integration and REST APIs with PBIR
 
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) will continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features will start exporting the report definition using PBIR format.
 
-> [!IMPORTANT]
-> If you import your semantic model using any other import method, such as [Power BI Desktop Publish](../../create-reports/desktop-upload-desktop-files.md), Fabric Git Integration will switch back to the default TMSL format.
+### PBIR considerations and limitations
 
-### PBIR file constraints
+PBIR is currently in **preview**. Keep the following in mind:
 
-When publishing a PBIR report to service, the following constraints are applied:
+- Service limitations
+  - Cannot be included in Power BI Apps.
+  - Cannot be downloaded as PBIX.
+  - Cannot be exported to PPTX or PDF.
+  - Cannot be included in Subscriptions.
+  - Cannot be deployed with deployment pipelines.
+  - Mobile layouts are not applied.
+  - Cannot be saved as a copy.
+  - Cannot be published from Power BI Desktop.
+  - Cannot be uploaded to workspace as PBIX.
+  - Cannot be utilized in Power BI Embedded.
+- Large reports containing more than 500 files encounter performance issues both in Desktop and Service.
+
+PBIR size limitations enforced by the service:
 
 - 1000 max pages per report.
 - 300 max visuals per page.
@@ -284,21 +306,6 @@ When publishing a PBIR report to service, the following constraints are applied:
 - 1000 max resource package files per report.
 - 300mb max size for all resource package files.
 - 20mb max size of all report files.
-
-### PBIR limitations
-
-During the Public Preview, PBIR reports published to service have the following limitations:
-
-- Cannot be included in Power BI Apps.
-- Cannot be downloaded as PBIX.
-- Cannot be exported to PPTX or PDF.
-- Cannot be included in Subscriptions.
-- Cannot be deployed with deployment pipelines.
-- Mobile layouts are not applied.
-- Cannot be saved as a copy.
-- Cannot be published from Power BI Desktop.
-- Cannot be uploaded to workspace as PBIX.
-- Cannot be utilized in Power BI Embedded.
 
 ## Related content
 

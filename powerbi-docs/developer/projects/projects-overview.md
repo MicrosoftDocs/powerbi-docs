@@ -64,7 +64,7 @@ Let's take a closer look at what you see in your project's root folder:
 
 ##### \<project name>.SemanticModel
 
-A collection of files and folders that represent a Power BI semantic model. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
+A collection of files and folders that represent a Power BI semantic model. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
 
 ##### \<project name>.Report
 
@@ -195,7 +195,6 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Considerations and limitations
 
-- This feature requires a Premium license.
 - Power BI Desktop isn't aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
 - Sensitivity labels aren't supported with Power BI projects.
 - Diagram view is ignored when editing models in the Service.
@@ -204,7 +203,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
-- Power BI Projects currently not supported in Microsoft Power BI Desktop (Optimized for Power BI Report Server).
+- Power BI Projects currently not supported in Microsoft Power BI Desktop version Optimized for Power BI Report Server.
 
 ## Frequently asked questions
 
