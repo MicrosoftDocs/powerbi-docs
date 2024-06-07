@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 06/06/2024
 LocalizationGroup: Share your work
 ---
 # Create reports based on semantic models from different workspaces
@@ -17,7 +17,7 @@ Learn how you can create reports in your own workspaces based on semantic models
 - In the Power BI service: **Create** > **Report** > **Pick a published semantic model**.
 - In Power BI Desktop: from the **Home** ribbon, select **Get data** > **Power BI semantic models**.
 
-  ![Screenshot shows how to connect to an existing semantic model in the Power BI service and Power BI Desktop.](media/service-semantic models-across-workspaces/power-bi-connect-semantic model-pk.png)
+    :::image type="content" source="media/service-datasets-across-workspaces/power-bi-connect-semantic model-pk.png" alt-text="Screenshot shows how to connect to an existing semantic model in the Power BI service and Power BI Desktop." lightbox="media/service-datasets-across-workspaces/power-bi-connect-semantic model-pk.png":::
 
 In both cases, the semantic model discovery experience starts in the **Data hub**. You see all the semantic models that you have access to, regardless of where they are:
 
