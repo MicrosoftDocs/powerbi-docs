@@ -124,7 +124,7 @@ Example using `byConnection`:
 
 When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
 
-For more information, refer to the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
+For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
 #### mobileState.json
 
@@ -132,7 +132,7 @@ Contains report appearance and behavior settings when rendering on a mobile devi
 
 #### report.json
 
-This file contains the report definition in the Power BI Report Legacy format (PBIR-Legacy) and does not support external editing.
+This file contains the report definition in the Power BI Report Legacy format (PBIR-Legacy) and doesn't support external editing.
 
 #### definition\ folder
 
@@ -164,7 +164,7 @@ The following scenarios are some of the possibilities now available with PBIR an
 - Copy pages/visuals/bookmarks between reports.
 - Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
 - Find and replace across multiple reports.
-- Apply a batch edit across all visuals using a script (e.g. hide visual level filters)
+- Apply a batch edit across all visuals using a script (for example, hide visual level filters)
 
 ### Enable PBIR format Preview feature
 
@@ -196,7 +196,7 @@ If you already have a PBIP using PBIR-Legacy format, you can convert it to PBIR 
 
 The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* folder containing the PBIR representation of the report.
 
-If you select to **Keep current** format, Desktop won't prompt again to upgrade.
+If you select to **Keep current** format, Desktop don't prompt again to upgrade.
 
 ### PBIR folder and files
 
@@ -225,7 +225,7 @@ By default, the pages, visuals, and bookmarks use their report object name as th
 
 :::image type="content" source="./media/projects-report/pbir-objectName.png" alt-text="Screenshot of PBIR name property.":::
 
-Renaming the file or folder is supported, and Power BI will preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, may result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+Renaming the file or folder is supported, and Power BI preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, might result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
 
 ### PBIR Json Schemas
 
@@ -243,37 +243,37 @@ You can edit the PBIR JSON files using a code editor like [Visual Studio Code](h
 
 :::image type="content" source="./media/projects-report/pbir-jsonSchema-validation.png" alt-text="Screenshot of prompt PBIR JSON Schema validation.":::
 
-External changes to PBIR content may result in errors when reopening the files in Power BI Desktop. These errors can be of two types:
+External changes to PBIR content might result in errors when reopening the files in Power BI Desktop. These errors can be of two types:
 
 **Blocking errors** prevent Power BI Desktop from opening the report. These errors help identify the issue and the offending file that must be fixed before reopening:
 
 :::image type="content" source="./media/projects-report/pbir-error-blocking.png" alt-text="Screenshot of prompt PBIR blocking error.":::
 
-Errors such as an invalid schema or missing required properties are considered blocking errors. These can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
+Errors such as an invalid schema or missing required properties are considered blocking errors. This can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
 
-**Non-blocking errors** do not prevent Power BI Desktop from opening the report and are automatically resolved.
+**Non-blocking errors** don't prevent Power BI Desktop from opening the report and are automatically resolved.
 
-:::image type="content" source="./media/projects-report/pbir-error-nonblocking.png" alt-text="Screenshot of prompt PBIR non-blocking error.":::
+:::image type="content" source="./media/projects-report/pbir-error-nonblocking.png" alt-text="Screenshot of prompt PBIR nonblocking error.":::
 
-Errors such as an invalid *activePageName* configuration are examples of non-blocking errors that will be automatically fixed. The warning is necessary to give you the chance to avoid saving the report with the auto-fix, thereby preventing any potential loss of work.
+Errors such as an invalid *activePageName* configuration are examples of nonblocking errors that are automatically fixed. The warning is necessary to give you the chance to avoid saving the report with the autofix, by that preventing any potential loss of work.
 
 #### Typical scenarios of PBIR errors
 
-**Scenario:** *After renaming certain visual or page folder names, my visual or page no longer appears when opening the report.*
+**Scenario:** *After rename visual or page folder names, my visual or page no longer appears when opening the report.*
 
-**Solution:** Verify whether the name complies with the [naming convention](#pbir-naming-convention). If it does not, Power BI Desktop ignores the file or folder and treats it as private user files.
+**Solution:** Verify whether the name complies with the [naming convention](#pbir-naming-convention). If it doesn't, Power BI Desktop ignores the file, or folder and treats it as private user files.
 
 **Scenario:** *New report objects are named differently from others. For example, most page folders are named 'ReportSection0e71dafbc949c0853608', while a few are named '1b3c2ab12b603618070b'.*
 
-**Solution:** PBIR has adopted a new [naming convention](#pbir-naming-convention) for every object, but it only applies to new objects. When you save an existing report as PBIP, the current names must be preserved to prevent breaking references. If you want consistency, a script a batch rename is allowed.
+**Solution:** PBIR adopted a new [naming convention](#pbir-naming-convention) for every object, but it only applies to new objects. When you save an existing report as PBIP, the current names must be preserved to prevent breaking references. If you want consistency, a script a batch rename is allowed.
 
 **Scenario:** *I copied a bookmark file, and upon saving, most of the bookmark configuration was deleted.*
 
-**Solution:** This behavior is intentional, report bookmarks capture the state of a report page along with all its visuals. Since the captured state originates from another report page with different visuals, any invalid visuals will be removed from the bookmark configuration. If you also copy the dependent visuals and page, the bookmark will maintain its configuration.
+**Solution:** This behavior is intentional, report bookmarks capture the state of a report page along with all its visuals. Since the captured state originates from another report page with different visuals, any invalid visuals are removed from the bookmark configuration. If you also copy the dependent visuals and page, the bookmark maintain its configuration.
 
 **Scenario:** *I copied a page folder from another report and encountered an error stating, "Values for the 'pageBinding.name' property must be unique."*
 
-**Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they may be referenced by other pages, the name must be unique within the report. On the newly copied page, simply assign a unique value to resolve this situation. After June 2024, this is no longer an issue because the pageBinding name is a GUID by default.
+**Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they might be referenced by other pages, the name must be unique within the report. On the newly copied page, assign a unique value to resolve this situation. After June 2024, this is no longer an issue because the pageBinding name is a GUID by default.
 
 
 ### PBIR considerations and limitations
@@ -281,31 +281,31 @@ Errors such as an invalid *activePageName* configuration are examples of non-blo
 PBIR is currently in **preview**. Keep the following in mind:
 
 - Service limitations
-  - Cannot be included in Power BI Apps.
-  - Cannot be downloaded as PBIX.
-  - Cannot be exported to PPTX or PDF.
-  - Cannot be included in Subscriptions.
-  - Cannot be deployed with deployment pipelines.
-  - Mobile layouts are not applied.
-  - Cannot be saved as a copy.
-  - Cannot be published from Power BI Desktop.
-  - Cannot be uploaded to workspace as PBIX.
-  - Cannot be utilized in Power BI Embedded.
-- Large reports with more than 500 files experience authoring performance issues (report viewing is not affected), including:
+  - Can't be included in Power BI Apps.
+  - Can't be downloaded as PBIX.
+  - Can't be exported to PPTX or PDF.
+  - Can't be included in Subscriptions.
+  - Can't be deployed with deployment pipelines.
+  - Mobile layouts aren't applied.
+  - Can't be saved as a copy.
+  - Can't be published from Power BI Desktop.
+  - Can't be uploaded to workspace as PBIX.
+  - Can't be utilized in Power BI Embedded.
+- Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
 
 PBIR size limitations enforced by the service:
 
-- 1000 max pages per report.
+- 1,000 max pages per report.
 - 300 max visuals per page.
-- 5mb max for each bookmark file.
-- 1mb max for each file.
-- 1000 max resource package files per report.
-- 300mb max size for all resource package files.
-- 20mb max size of all report files.
+- 5 mb max for each bookmark file.
+- 1 mb max for each file.
+- 1,000 max resource package files per report.
+- 300 mb max size for all resource package files.
+- 20 mb max size of all report files.
 
-During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) will continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features will start exporting the report definition using PBIR format.
+During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) and [Fabric REST APIs](/rest/api/fabric/articles/item-management/item-management-overview) continue to use PBIR-Legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format.
 
 ## Related content
 
