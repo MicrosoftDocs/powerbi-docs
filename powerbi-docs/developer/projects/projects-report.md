@@ -154,16 +154,16 @@ Saving your Power BI Project files (PBIP) using the Power BI Enhanced Report For
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
-Each page, visual, bookmark, etc., is organized into separate individual files within a folder structure, which is ideal for co-development.
+Each page, visual, bookmark, etc., is organized into separate individual files within a folder structure, which is ideal for co-development conflict resolution.
 
 :::image type="content" source="./media/projects-report/pbir-folder.png" alt-text="Screenshot of friendly PBIR folder.":::
 
-Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format and allows modifications from  non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
+Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format and support modifications from  non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
 
-The following scenarios are some of the possibilities now available with PBIR and external changes:
+The following scenarios are some of the possibilities now available with PBIR:
 - Copy pages/visuals/bookmarks between reports.
 - Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
-- Find and replace across multiple reports.
+- Easily find and replace across multiple reports files.
 - Apply a batch edit across all visuals using a script (for example, hide visual level filters)
 
 ### Enable PBIR format Preview feature
