@@ -22,7 +22,7 @@ Learn more about PBIP and Fabric Git Integration in [project-overview](./project
 
 The following diagram illustrates the end-to-end scenario with two development workflows that trigger the Azure DevOps pipeline to validate development quality. The pipeline execute does the following actions:
 
-:::image type="content" source="./media/projects-build-pipelines/pipeline.png" alt-text="Diagram showing workflow of devops pipeline." border="false" lightbox="./media/projects-build-pipelines/pipeline.png":::
+:::image type="content" source="./media/projects-build-pipelines/pipeline.png" alt-text="Diagram showing workflow of DevOps pipeline." border="false" lightbox="./media/projects-build-pipelines/pipeline.png":::
 
 1. *User 1* develops [using Power BI Desktop](/fabric/cicd/git-integration/manage-branches#develop-using-client-tools).
 
