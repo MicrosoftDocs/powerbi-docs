@@ -203,7 +203,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
-- Power BI Projects currently not supported in Microsoft Power BI Desktop version Optimized for Power BI Report Server.
+- Power BI Projects is currently not supported in Microsoft Power BI Desktop version optimized for Power BI Report Server.
 
 ## Frequently asked questions
 
