@@ -30,8 +30,8 @@ This article describes the files and subfolders in a Microsoft Power BI Desktop 
 - [.platform](#platform)
 
 <a name="required1">1</a> - This file is required.  
-<a name="required2">2</a> - This file is required when saving using PBIR-Legacy format.  
-<a name="required3">3</a> - This file is required when saving using PBIR format.
+<a name="required2">2</a> - This file is required when saving to PBIR-Legacy format.  
+<a name="required3">3</a> - This file is required when saving to PBIR format.
 
 Not every project report folder includes all of the files and subfolders described here.
 
@@ -154,21 +154,21 @@ Saving your Power BI Project files (PBIP) using the Power BI Enhanced Report For
 
 :::image type="content" source="./media/projects-report/pbir-diff.png" alt-text="Screenshot of friendly PBIR diffs.":::
 
-Each page, visual, bookmark, etc., is organized into separate individual files within a folder structure, which is ideal for co-development conflict resolution.
+Each page, visual, bookmark, etc., is organized into a separate, individual file within a folder structure. This format is ideal for co-development conflict resolution.
 
 :::image type="content" source="./media/projects-report/pbir-folder.png" alt-text="Screenshot of friendly PBIR folder.":::
 
-Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format and support modifications from  non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
+Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format that supports modifications from non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
 
-The following scenarios are some of the possibilities now available with PBIR:
+Some of the possibie scenarios now available with PBIR include:
 - Copy pages/visuals/bookmarks between reports.
-- Ensure consistency of set of visuals across all pages, by simply copy & paste the visual files.
-- Easily find and replace across multiple reports files.
+- Ensure consistency of a set of visuals across all pages, by copying & pasting the visual files.
+- Easy find and replace across multiple reports files.
 - Apply a batch edit across all visuals using a script (for example, hide visual level filters)
 
 ### Enable PBIR format Preview feature
 
-Saving as a Power BI Project using PBIR is currently in preview. Before using it, you must first enable it in Power BI Desktop preview features:
+Saving as a Power BI Project using PBIR is currently in preview. Before using it, enable it in Power BI Desktop preview features:
 
 Go to **File > Options and settings > Options > Preview features** and check the box next to **Store reports using enhanced metadata format (PBIR)**.
 
@@ -257,7 +257,7 @@ Errors such as an invalid schema or missing required properties are considered b
 
 Errors such as an invalid *activePageName* configuration are examples of nonblocking errors that are automatically fixed. The warning is necessary to give you the chance to avoid saving the report with the autofix, by that preventing any potential loss of work.
 
-#### Typical scenarios of PBIR errors
+#### Common PBIR errors
 
 **Scenario:** *After rename visual or page folder names, my visual or page no longer appears when opening the report.*
 
