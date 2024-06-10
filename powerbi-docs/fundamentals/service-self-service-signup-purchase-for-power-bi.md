@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: quickstart
-ms.date: 05/07/2024
+ms.date: 06/07/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -111,7 +111,7 @@ Purchase capacities from the Microsoft [pricing site](https://powerbi.microsoft.
 
 ## Close your account, cancel your subscription, end your trial
 
-You always have the option to close your account, cancel your subscription, or end your trial. Each of these actions has a different set of procedures and considerations. For more information, see [Close your account, cancel your subscription, end your trial](/fabric/enterprise/fabric-close-end-cancel)
+You always have the option to close your account, cancel your subscription, or end your trial. Each of these actions has a different set of procedures and considerations. For more information, see [Close your account, cancel your subscription, end your trial](/fabric/enterprise/fabric-close-end-cancel).
 
 ## Considerations and troubleshooting
 
