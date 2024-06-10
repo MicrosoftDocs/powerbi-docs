@@ -1,0 +1,65 @@
+---
+title: Create a Power BI report in enhanced report format
+description: The Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) provides source-control friendly file formats to enhance development efficiency.
+author: maggiesMSFT
+ms.author: maggies
+ms.reviewer: ruiromano
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 06/05/2024
+LocalizationGroup: Create reports
+no-loc:
+#customer intent: As a report creator, I want to learn how to use the Power BI enhanced report format (PBIR).
+---
+
+# Create a Power BI report in enhanced report format
+
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
+
+The Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) marks a milestone in achieving the primary goal of Power BI Desktop developer mode. It provides source-control friendly file formats to unblock codevelopment and enhance development efficiency.
+
+:::image type="content" source="media/power-bi-enhanced-report-format/power-bi-project-tmdl-pbir.png" alt-text="Diagram of Power BI Project with TMDL and PBIR."lightbox="media/power-bi-enhanced-report-format/power-bi-project-tmdl-pbir.png":::
+
+Power BI Projects (PBIP) support saving the report and semantic model into a folder using source-control friendly formats: 
+
+- PBIR for the report.
+- TMDL for the semantic model.
+
+The PBIR file format simplifies tracking changes and resolving merge conflicts. It uses properly formatted JSON and organizes each visual, page, bookmark, and so on, in separate individual files within a folder structure.
+
+:::image type="content" source="media/power-bi-enhanced-report-format/pbir-visual-json.png" alt-text="Screenshot of visual json folder structure."lightbox="media/power-bi-enhanced-report-format/pbir-visual-json.png":::
+
+You can enhance report development efficiency in one of two ways:
+
+- Copy and paste visuals, pages, bookmarks, or files between reports.
+- Apply manual or programmatic batch changes to the PBIR files.
+
+Unlike PBIR-legacy format (report.json), PBIR is a publicly documented format. This format allows modifications from non-Power BI applications. Each file has a public JSON schema, which documents each property and lets code editors like Visual Studio Code perform syntax validation while editing. On open, Power BI Desktop validates the changed PBIR files to guarantee successful loading.
+
+## How to enable it
+
+PBIR is currently in preview. You can only create or convert existing Power BI project files to PBIR by using Power BI Desktop. You must first enable the feature in Power BI Desktop preview features.
+
+1. Go to **File** > **Options and settings** > **Options** > **Preview features**.
+1. Check the box next to **Store reports using enhanced metadata format (PBIR)**.  
+
+During preview, Fabric Git Integration and Fabric REST APIs continue to use PBIR-legacy (report.json) when exporting the report definitions. However, if the report is imported into Fabric using PBIR format, then both features start exporting the report definition using PBIR format. At general availability (GA), PBIR will become the default report format.
+
+## Limitations 
+
+Initially, the PBIR format has some service restrictions, such as these:
+
+- You can't publish the report in Power BI App.
+- You can't use subscriptions.
+- You can't download PBIX.
+
+These restrictions will be removed in the following months.  
+
+## Next steps
+
+- [Overview of Copilot for Power BI](copilot-introduction.md)
+- [Create reports in the Power BI service with Copilot](copilot-create-report-service.md)
+- [Create a narrative summary visual with Copilot for Power BI](copilot-create-narrative.md)
+- [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
+- [Update your data model to work well with Copilot](copilot-evaluate-data.md)
