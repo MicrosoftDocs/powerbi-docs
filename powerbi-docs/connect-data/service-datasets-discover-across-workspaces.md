@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/06/2024
+ms.date: 06/10/2024
 LocalizationGroup: Share your work
 ---
 # Create reports based on semantic models from different workspaces
@@ -21,7 +21,7 @@ In both cases, the semantic model discovery experience starts in the **Data hub*
 
 :::image type="content" source="media/service-datasets-across-workspaces/power-bi-select-dataset.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-dataset.png":::
 
-One of the semantic models is labeled **Promoted**. Learn about that label in [Find an endorsed semantic model](service-datasets-discover-across-workspaces.md#find-an-endorsed-semantic model), later in this article.
+One of the semantic models is labeled **Promoted**. Learn about that label in the section [Find an endorsed semantic model](#find-an-endorsed-semantic model), later in this article.
 
 The semantic models in this list meet at least one of the following conditions:
 
