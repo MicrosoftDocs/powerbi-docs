@@ -16,9 +16,9 @@ LocalizationGroup: Get started
 
 This article explains how individuals can get a license for Microsoft Fabric. 
 
-There are two ways for individuals to get a license. You can sign up for or purchase a license for yourself. This includes getting a free or paid license that an admin makes available for users in an organization. The other method is for an admin to assign you a license. This article explains the first option, which is called **self-service**. If the term *self-service* is new to you, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins) or [What is self-service](/microsoft-365/admin/misc/self-service-sign-up).
+There are two ways for individuals to get a license. You can sign up for or purchase a license for yourself. This self-service method includes getting a free or paid license that an admin makes available for users in an organization. The other method is for an admin to assign you a license. This article explains the first option, which is called **self-service**. If the term *self-service* is new to you, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins) or [What is self-service](/microsoft-365/admin/misc/self-service-sign-up).
 
-If you are unable to sign up or to purchase Fabric, self-service options might be disabled by your administrator. Contact your administrator and ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
+If you're unable to sign up or to purchase Fabric, your admin might've disabled self-service options. Contact your administrator and ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
 
 ## Prerequisites
 
@@ -43,9 +43,9 @@ A Fabric (Free) license is the minimum license that you need to work in all of t
 
 ### Activate a license for an organizational subscription
 
-Your organization has purchased a Fabric or Power BI subscription that includes capacities and licenses. Self-service is enabled. Open Fabric in a browser (app.fabric.microsoft.com) to activate a license for yourself. The license you are assigned depends on the organizational subscription and self-service settings. 
+Your organization purchased a Fabric or Power BI subscription that includes capacities and licenses. Self-service is enabled. Open Fabric in a browser (app.fabric.microsoft.com) to activate a license for yourself. The license you're assigned depends on the organizational subscription and self-service settings. 
 
-If you've never used Fabric, you can activate your license by selecting an email link. Colleagues share Fabric items in email, and selecting a Fabric link initiates signing up for a Fabric license. 
+If you haven't used Fabric, you can activate your license by selecting an email link. Colleagues share Fabric items in email, and selecting a Fabric link initiates signing up for a Fabric license. 
 
 Another way to activate your license is to select a **Try free** or **Buy now** button. 
 
@@ -75,7 +75,7 @@ If you already have a free license and try to use an advanced Power BI feature, 
 
 #### Start a Microsoft 365 trial of Pro
 
-If you don't have a work or school email account, you can still start a trial of Power BI Pro. To do this, [sign up for a trial of Microsoft 365 E5](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). This version of Microsoft 365 includes a Pro license. The Microsoft 365 trial includes up to 25 licenses. Your Microsoft 365 trial lasts for 30 days. After the trial ends your credit card is charged. You become the admin for the new domain. 
+If you don't have a work or school email account, you can still start a trial of Power BI Pro. To start a trial, [sign up for a trial of Microsoft 365 E5](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). This version of Microsoft 365 includes a Pro license. The Microsoft 365 trial includes up to 25 licenses. Your Microsoft 365 trial lasts for 30 days. After the trial ends, your credit card is charged. You become the admin for the new domain. 
 
 For more information about the Microsoft 365 trial, see [sign up for Power BI with a Microsoft 365 trial.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) 
 
@@ -111,7 +111,7 @@ Purchase capacities from the Microsoft [pricing site](https://powerbi.microsoft.
 
 ## Close your account, cancel your subscription, end your trial
 
-You always have the option to close your account, cancel your subscription, or end your trial. Each of these actions has a different set of procedures and considerations. For more information, see [Close your account, cancel your subscription, end your trial](/fabric/enterprise/fabric-close-end-cancel).
+You can always close your account, cancel your subscription, or end your trial. Each of these actions has a different set of procedures and considerations. For more information, see [Close your account, cancel your subscription, end your trial](/fabric/enterprise/fabric-close-end-cancel).
 
 ## Considerations and troubleshooting
 
@@ -128,7 +128,7 @@ You always have the option to close your account, cancel your subscription, or e
     - [Power BI Desktop (free download)](desktop-get-the-desktop.md)
     - [Power BI mobile apps (free download)](../consumer/mobile/mobile-apps-for-mobile-devices.md)
 
-- If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**takeover** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses.
+- If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**take over** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses.
 
 ## Related content
 
