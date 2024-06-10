@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/04/2024
+ms.date: 06/10/2024
 ---
 
 # Change log for Power BI Report Server
@@ -19,6 +19,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 ## May 2024
 
 ### Power BI Report Server
+
+- *Version: 1.20.8926.40580 (build 15.0.1115.178), Released: June 10, 2024*
+  - Bug fixes
+    - Fixed issue related to Office Online Server (OOS) not working as expected.
 
 - *Version: 1.20.8910.25479 (build 15.0.1115.165), Released: May 28, 2024*
   - Features
