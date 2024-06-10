@@ -15,7 +15,7 @@ no-loc:
 
 # Create a Power BI report in enhanced report format
 
-[!INCLUDE [applies-yes-desktop-no-service](../../includes/applies-yes-desktop-no-service.md)
+[!INCLUDE [applies-yes-desktop-no-service](../../includes/applies-yes-desktop-no-service.md)]
 
 The Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) marks a milestone in achieving the primary goal of Power BI Desktop developer mode. It provides source-control friendly file formats to unblock codevelopment and enhance development efficiency.
 
