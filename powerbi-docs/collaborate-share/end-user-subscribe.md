@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/22/2024
+ms.date: 05/22/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -307,7 +307,7 @@ Your Power BI admin must [enable subscriptions in your tenant](/fabric/admin/ser
 - Export reports as Word documents
 - Export reports as XML documents
 - Create email subscriptions (**Tenant settings** > **Export and sharing settings** > **Create email subscriptions**)
-:::image type="content" source="./media/end-user-subscribe/power-bi-paginated.png" alt-text="Screenshot of tenant settings with relevant export settings outlined.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-paginate.png" alt-text="Screenshot of tenant settings with relevant export settings outlined.":::
 
 In general, the process for subscribing to paginated reports is the same as [subscribing to reports and dashboards](#subscribe-to-a-report-or-dashboard), but there are a few differences worth noting. This section spells out these differences and other considerations to keep in mind when subscribing to paginated reports.  
 

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View recent content
 ms.topic: how-to
-ms.date: 01/07/2024
+ms.date: 05/22/2024
 ms.author: mihart
 LocalizationGroup: Common tasks
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-**Recent** content is the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, semantic models, workspaces, scorecards, and workbooks. When you select **Recent** from the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content is the last items you visited in the Power BI service. Recent content includes: dashboards, reports, apps, semantic models, workspaces, scorecards, and workbooks. When you select **Recent** from the Home pane, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending. Content cannot be removed from **Recent** until it is replaced by content you have viewed more recently.
 
 :::image type="content" source="./media/end-user-recent/power-bi-recents.png" alt-text="Screenshot showing Power BI service recent content list.":::
 
