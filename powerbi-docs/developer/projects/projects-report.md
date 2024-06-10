@@ -294,6 +294,7 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
+- Converting a PBIP file to a PBIX file using the "Save As" feature will embed the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 
 PBIR size limitations enforced by the service:
 
