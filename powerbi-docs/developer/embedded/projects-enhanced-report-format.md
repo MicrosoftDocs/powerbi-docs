@@ -19,7 +19,7 @@ no-loc:
 
 The Power BI enhanced report format (PBIR) for Power BI Project files (PBIP) marks a milestone in achieving the primary goal of Power BI Desktop developer mode. It provides source-control friendly file formats to unblock codevelopment and enhance development efficiency.
 
-:::image type="content" source="media/power-bi-enhanced-report-format/power-bi-project-tmdl-pbir.png" alt-text="Diagram of Power BI Project with TMDL and PBIR."lightbox="media/power-bi-enhanced-report-format/power-bi-project-tmdl-pbir.png":::
+:::image type="content" source="media/project-enhanced-report-format/power-bi-project-tmdl-pbir.png" alt-text="Diagram of Power BI Project with TMDL and PBIR."lightbox="media/project-enhanced-report-format/power-bi-project-tmdl-pbir.png":::
 
 Power BI Projects (PBIP) support saving the report and semantic model into a folder using source-control friendly formats: 
 
@@ -28,7 +28,7 @@ Power BI Projects (PBIP) support saving the report and semantic model into a fol
 
 The PBIR file format simplifies tracking changes and resolving merge conflicts. It uses properly formatted JSON and organizes each visual, page, bookmark, and so on, in separate individual files within a folder structure.
 
-:::image type="content" source="media/power-bi-enhanced-report-format/pbir-visual-json.png" alt-text="Screenshot of visual json folder structure."lightbox="media/power-bi-enhanced-report-format/pbir-visual-json.png":::
+:::image type="content" source="media/project-enhanced-report-format/pbir-visual-json.png" alt-text="Screenshot of visual json folder structure."lightbox="media/project-enhanced-report-format/pbir-visual-json.png":::
 
 You can enhance report development efficiency in one of two ways:
 
