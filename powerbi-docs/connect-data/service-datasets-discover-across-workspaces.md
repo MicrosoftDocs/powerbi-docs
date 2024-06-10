@@ -21,7 +21,7 @@ In both cases, the semantic model discovery experience starts in the **Data hub*
 
 :::image type="content" source="media/service-datasets-across-workspaces/power-bi-select-dataset.png" alt-text="Screenshot shows an option to select a semantic model." lightbox="media/service-datasets-across-workspaces/power-bi-select-dataset.png":::
 
-One of the semantic models is labeled **Promoted**. Learn about that label in the section [Find an endorsed semantic model](#find-an-endorsed-semantic model), later in this article.
+One of the semantic models is labeled **Promoted**. Learn about that label in the section [Find an endorsed semantic model](#find-an-endorsed-semantic-model), later in this article.
 
 The semantic models in this list meet at least one of the following conditions:
 
