@@ -160,7 +160,7 @@ Each page, visual, bookmark, etc., is organized into a separate, individual file
 
 Unlike PBIR-Legacy (report.json), PBIR is a publicly documented format that supports modifications from non-Power BI applications. Each file has a public JSON schema, which not only documents the file but also lets code editors like Visual Studio Code perform syntax validation while editing.
 
-Some of the possibie scenarios now available with PBIR include:
+Some of the possible scenarios now available with PBIR include:
 - Copy pages/visuals/bookmarks between reports.
 - Ensure consistency of a set of visuals across all pages, by copying & pasting the visual files.
 - Easy find and replace across multiple reports files.
@@ -198,9 +198,21 @@ The existing PBIR-Legacy file (*report.json*) is replaced with a *\definition* f
 
 If you select to **Keep current** format, Desktop don't prompt again to upgrade.
 
+### Publish a PBIR report to service
+
+During the **preview**, you can only publish a report with the PBIR format using [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration). Publishing directly from Power BI Desktop is disabled due to the [Upload PBIX with PBIR format limitation](#pbir-considerations-and-limitations). 
+
+If you wish to convert an existing report to PBIR in the service, follow these steps:
+1. Connect your workspace to Git.
+1. Clone the Git repository to your local file system.
+1. Open the report in Power BI Desktop by opening the `definition.pbir` file.
+1. Save the report and choose to upgrade to PBIR.
+1. Commit and sync the changes to Git.
+1. Update the workspace with the latest changes from Git.
+
 ### PBIR folder and files
 
-The report definition is stored inside the **definition\\** folder with the following structure:
+The report definition is stored inside the `definition\` folder with the following structure:
 
 ```md
 ├── bookmarks\
@@ -221,13 +233,13 @@ The report definition is stored inside the **definition\\** folder with the foll
 
 |File/Folder                       |Required |Description  |
 |----------------------------------|---------|-------------|
-|\bookmarks                        |No       |Folder holding all bookmark files of the report.
+|bookmarks\                        |No       |Folder holding all bookmark files of the report.
 |── [bookmarkName].bookmark.json   |No       |Bookmark metadata, such as target visuals and filters.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/bookmark).
 |── bookmarks.json                 |No       |Bookmarks metadata, such as bookmark order and groups.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/bookmarksMetadata).
-|\pages                            |Yes      |Folder holding all pages of the report.
-|── \\[pageName]                   |Yes      |One folder per page.
-|──── \\visuals                    |No       |Folder holding all visuals of the page.
-|────── \\[visualName]             |No       |One folder per visual.
+|pages\                            |Yes      |Folder holding all pages of the report.
+|── [pageName]\                    |Yes      |One folder per page.
+|──── visuals\                     |No       |Folder holding all visuals of the page.
+|────── [visualName]\              |No       |One folder per visual.
 |──────── mobile.json              |No       |Visual mobile layout metadata, such as mobile position and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/visualContainerMobileState).
 |──────── visual.json              |Yes      |Visual metadata, such as position and formatting, query.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/visualContainer).
 |──── page.json                    |Yes      |Page metadata, such as page level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/page).
@@ -266,7 +278,7 @@ External changes to PBIR content might result in errors when reopening the files
 
 :::image type="content" source="./media/projects-report/pbir-error-blocking.png" alt-text="Screenshot of prompt PBIR blocking error.":::
 
-Errors such as an invalid schema or missing required properties are considered blocking errors. This can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
+Errors such as an invalid schema or missing required properties are considered blocking errors. Those can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
 
 **Non-blocking errors** don't prevent Power BI Desktop from opening the report and are automatically resolved.
 
@@ -311,6 +323,7 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
+- Once a report is converted from PBIR-Legacy to PBIR, it is not possible to roll it back.
 - Converting a PBIP file to a PBIX file using the "Save As" feature will embed the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 
 PBIR size limitations enforced by the service:
