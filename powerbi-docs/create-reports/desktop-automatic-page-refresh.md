@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 06/11/2024
 LocalizationGroup: Connect to data
 ---
 
@@ -30,11 +30,11 @@ This refresh type allows you to update all visuals in a report page based on a c
 
 ### Change detection
 
-This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you must also select how frequently Power BI Desktop will check for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI semantic models are not supported.
+This refresh type allows you to refresh visuals on a page based on detecting changes in the data rather than a specific refresh interval. Specifically, this measure polls for changes to your [DirectQuery source](../connect-data/desktop-directquery-about.md). Besides defining the measure, you must also select how frequently Power BI Desktop checks for changes. When publishing to the service, this refresh type is only supported in workspaces that are part of a Premium capacity. LiveConnect sources such as Analysis Services and Power BI semantic models aren't supported.
 
 ## Authoring reports with automatic page refresh in Power BI Desktop
 
-Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you are connected to a supported data source. This restriction applies to both automatic page refresh types.
+Automatic page refresh is available for [DirectQuery sources](../connect-data/desktop-directquery-about.md) and some LiveConnect scenarios, so it will only be available when you're connected to a supported data source. This restriction applies to both automatic page refresh types.
 
 To use automatic page refresh in Power BI Desktop, select the report page for which you want to enable automatic page refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find the **Page refresh** section near the bottom of the pane.
 
@@ -44,15 +44,15 @@ To use automatic page refresh in Power BI Desktop, select the report page for wh
 2. Refresh type
 3. Inputs and information (depending on refresh type)
 
-The **Page refresh** card will only be available if you are connected to a [DirectQuery source](../connect-data/desktop-directquery-about.md). To enable automatic page refresh, the toggle needs to be on the "On" position. The inputs needed and information provided will depend on the refresh type selected.
+The **Page refresh** card will only be available if you're connected to a [DirectQuery source](../connect-data/desktop-directquery-about.md). To enable automatic page refresh, the toggle needs to be on the "On" position. The inputs needed and information provided will depend on the refresh type selected.
 
 ### Fixed interval setup
 
 When selecting **Auto page refresh** as the refresh type, you must provide the desired refresh interval. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set.
 
-If you are the administrator and need to make changes to the refresh interval, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
+If you're the administrator and need to make changes to the refresh interval, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
 
-When clicking on show details, Power BI will provide further information on:
+When clicking on show details, Power BI provides further information on:
 
 - If the feature is enabled by your admin (only when logged into your Power BI account).
 - The minimum interval allowed by your admin (only when logged into your Power BI account).
@@ -63,11 +63,11 @@ When clicking on show details, Power BI will provide further information on:
 
 ### Change detection setup
 
-When selecting **Change detection** as your refresh type, you are presented with a link to **Add change detection**. You can also access the **change detection** window from the Modeling tab in the ribbon. Then click on the **Change detection** icon on the **Page refresh** section. Finally, you can right-click or select the dropdown arrow next to any value in the Values well, and select **Change detection** from the menu.
+When selecting **Change detection** as your refresh type, you're presented with a link to **Add change detection**. You can also access the **change detection** window from the Modeling tab in the ribbon. Then click on the **Change detection** icon on the **Page refresh** section. Finally, you can right-click or select the dropdown arrow next to any value in the Values well, and select **Change detection** from the menu.
 
 ![Change detection card](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
 
-Once the window is open, you are presented with the **Measure type** option where you can select an existing measure or create a new one. When selecting an existing measure, you just have to select the desired measure from the fields list or drag and drop it into the **Choose existing measure** section. When creating a new measure, you can **Choose a calculation** for the measure between count, count distinct, minimum, maximum, and sum. For example, you can use count distinct to count customer IDs and only refresh when a new customer is added to the list. Once you have a measure selected, you must define how often Power BI will **Check for changes**. That's the interval on how often Power BI will calculate the measure and poll changes. Once you click apply, a new measure with the change detection icon appears in your field list.
+Once the window is open, you're presented with the **Measure type** option where you can select an existing measure or create a new one. When selecting an existing measure, you just have to select the desired measure from the fields list or drag and drop it into the **Choose existing measure** section. When creating a new measure, you can **Choose a calculation** for the measure between count, count distinct, minimum, maximum, and sum. For example, you can use count distinct to count customer IDs and only refresh when a new customer is added to the list. Once you have a measure selected, you must define how often Power BI will **Check for changes**. That's the interval on how often Power BI will calculate the measure and poll changes. Once you click apply, a new measure with the change detection icon appears in your field list.
 
 ![Change detection window](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
@@ -82,7 +82,7 @@ Then, back on the page refresh section, you see the information of which measure
 
 When automatic page refresh is enabled, Power BI Desktop is constantly sending queries to your DirectQuery source. After the query is sent, there's a delay before data is returned. Therefore, for short refresh intervals, you should confirm that queries are successfully returning the queried data within the configured interval. If data isn't returned within the interval, visuals will update less frequently than configured.
 
-These considerations apply for both fixed interval and change detection refresh types. The main difference is that for change detection there is only one query going back to the source at a fixed interval and the visuals refresh is triggered only when the value of the change detection measure changes.
+These considerations apply for both fixed interval and change detection refresh types. The main difference is that for change detection there's only one query going back to the source at a fixed interval and the visuals refresh is triggered only when the value of the change detection measure changes.
 
 As a best practice, the refresh interval should match your expected new data arrival rate:
 
@@ -118,7 +118,7 @@ Also note that this result might differ as you publish your report to the servic
 
 To account for queries and refresh timing, Power BI only runs the next refresh query when all the remaining refresh queries are complete. So even if your refresh interval is shorter than the time your queries take to process, Power BI refreshes only after remaining queries complete.
 
-In the case of change detection refresh type, these considerations still apply. Also, the [Performance Analyzer](desktop-performance-analyzer.md) shows you the results for the change detection measure query even though it does not match any visual in your report. We have provided this capability for you to be able to troubleshoot this type of measure following the same guidance we mentioned previously. The main difference for this refresh type is that only one query is going to the data source instead of all queries from all visuals. This is still the case if multiple users are viewing the report.
+In the case of change detection refresh type, these considerations still apply. Also, the [Performance Analyzer](desktop-performance-analyzer.md) shows you the results for the change detection measure query even though it doesn't match any visual in your report. We have provided this capability for you to be able to troubleshoot this type of measure following the same guidance we mentioned previously. The main difference for this refresh type is that only one query is going to the data source instead of all queries from all visuals. This is still the case if multiple users are viewing the report.
 
 ![Performance Analyzer results with change detection](media/desktop-automatic-page-refresh/automatic-page-refresh-07.png)
 
@@ -171,7 +171,7 @@ Power BI *workspaces* reside within capacities. They represent security, collabo
 
 Here are details for the two workspace scenarios:
 
-**Shared workspaces**. For regular workspaces (workspaces that aren't part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed). Change detection refresh type is not available in shared capacities.
+**Shared workspaces**. For regular workspaces (workspaces that aren't part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed). Change detection refresh type isn't available in shared capacities.
 
 **Premium workspaces**. The availability of automatic page refresh in Premium workspaces (both for fixed interval and change detection) depends on the workload settings your Premium administrator has set up for the Power BI Premium capacity. There are two variables that might affect your ability to set up automatic page refresh:
 
@@ -206,11 +206,17 @@ This table describes with more detail where this feature is available and the li
 > [!WARNING]
 > We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI semantic models and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
 
+## Refreshed data and open reports
+
+When a report page is open and a semantic model is refreshed, the open report page refreshes to reflect the most recent data. Showing refreshed data for open reports resolves issues related to stale data, and is similar to automatic page refresh. Only users with write permissions will see their open reports updated automatically when the semantic model is refreshed.
+
+If the semantic model has a large number of uses with Write permissions, for example more than a thousand users with Write permissions, automatic refresh for open reports can become unreliable.
+
 ## Considerations and limitations
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
 
-* Import storage mode is not supported for automatic page refresh.  
+* Import storage mode isn't supported for automatic page refresh, but open reports update automatically if the underlying semantic model is refreshed and the user has Write permissions. Refer to the [previous section](#refreshed-data-and-open-reports) for situations when the refresh may become unreliable.
 * Composite models that have at least one DirectQuery data source are supported.
 * You can only have one change detection measure per semantic model.
 * There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
@@ -254,7 +260,7 @@ If your capacity is overloaded with low-priority queries, you can take these act
 
 * It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
 * In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
-* Both refresh types are managed separately, so make sure that the type of refresh you are enabling is turned on.
+* Both refresh types are managed separately, so make sure that the type of refresh you're enabling is turned on.
 * For more information on enabling and configuring workloads in a Premium capacity, visit [Configure workloads in a Premium capacity](../enterprise/service-admin-premium-workloads.md).
 
 **My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
@@ -279,9 +285,9 @@ If your capacity is overloaded with low-priority queries, you can take these act
 **My change detection measure is not triggering any updates**
 
 * Ensure that change detection is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
-* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, change detection will not work.
+* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, change detection won't work.
 * If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum execution interval for the capacity is equal or lower than the interval for your report.
-* If you have checked for all of the items mentioned before, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it does not, the measure might not be a good choice to poll for data source changes.
+* If you have checked for all of the items mentioned before, check in Power BI Desktop or in edit mode if the measure is changing at all. To do this, drag it into the canvas and check if the value changes. If it doesn't, the measure might not be a good choice to poll for data source changes.
 
 **When connected to analysis services, I cannot see the APR toggle**
 
