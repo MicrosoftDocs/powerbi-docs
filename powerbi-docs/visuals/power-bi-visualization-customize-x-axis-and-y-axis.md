@@ -244,6 +244,8 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 - For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
 
+[!INCLUDE [visuals-variants-display-units-cont-axis](../includes/powerbi-docs/includes/visuals-variants-display-units-cont-axis.md)]
+
 ## Related content
 
 - [Visualizations in Power BI reports](power-bi-report-visualizations.md)
