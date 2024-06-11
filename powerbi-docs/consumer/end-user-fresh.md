@@ -23,7 +23,7 @@ This article shows you how to determine when your content was last updated or re
 
 As a business user, you interact with content that's created by designers and made available to you. The content contains timestamps, so you know when it was published, shared, or last updated. Knowing that you're working with the freshest content gives you confidence and is often critical in making the right decisions.
 
-What can you do to ensure you're using the latest content? In most cases, you don’t need to do anything at all. Content, like apps, dashboards, scorecards, or reports, is shared with you by designers. And the designers refreshes and updates the content. The designer either manually updates content, or they update it automatically by setting an automated refresh schedule.
+What can you do to ensure you're using the latest content? In most cases, you don’t need to do anything at all. Content, like apps, dashboards, scorecards, or reports, is shared with you by designers. And the designers refresh and update the content. The designers either manually update content, or they update it automatically by setting an automated refresh schedule.
 
 If you have questions about content freshness, contact the designer directly. The examples show you how to identify and contact the owner of your content.
 
@@ -37,19 +37,19 @@ It's less helpful to know which type of timestamp goes where, and more helpful t
 
 ## Content lists
 
-In a list of content in the Power BI service, there's an owner column and a timestamp column. The type of owner and timestamp depends on the content. The following example shows the Publisher name and Published date on the Apps page.
+In a list of content in the Power BI service, there's an owner column and a timestamp column. The type of owner and timestamp depends on the content. The following example shows the Publisher name and Published date on the **Apps** page.
 
 :::image type="content" source="media/end-user-fresh/power-bi-app.png" alt-text="Screenshot showing a list of apps with a published date and publisher." lightbox="media/end-user-fresh/power-bi-app.png":::
 
-The next example shows the Owner of the content and the Shared date when you go to the Browse page and then the Shared with me tab.
+The next example shows the Owner of the content and the Shared date when you go to the **Browse** page and then the **Shared with me** tab.
 
-:::image type="content" source="media/end-user-fresh/power-bi-shared.png" alt-text="Screenshot showing shared with me screen. Shared date and owner are outlined." lightbox="media/end-user-fresh/power-bi-shared.png":::
+:::image type="content" source="media/end-user-fresh/power-bi-shared.png" alt-text="Screenshot showing Shared with me screen. Shared date and owner are outlined." lightbox="media/end-user-fresh/power-bi-shared.png":::
 
 The final example shows a content list in a workspace. The Owner of the content, the Refreshed date, and the date of the Next refresh are listed.
 
 :::image type="content" source="media/end-user-fresh/power-bi-app-workspace-list.png" alt-text="Screenshot showing a workspace open to the content list. Refresh dates and owner are outlined." lightbox="media/end-user-fresh/power-bi-app-workspace-list.png":::
 
-The designer sets up the refresh schedule for content. Some content gets updates continually and other content might refresh daily, weekly, or not at all. Not all content is scheduled for refreshing, so you might see empty entries. If an error occurs during a refresh, an error icon appears in the timestamp column.
+The designer sets up the refresh schedule for content. Some content gets updated continually and other content might refresh daily, weekly, or not at all. Not all content is scheduled for refreshing, so you might see empty entries. If an error occurs during a refresh, an error icon appears in the timestamp column.
 
 ## View reports
 
@@ -69,7 +69,7 @@ The dashboard title menu shows a contact, but not a timestamp. However, you can 
 
     :::image type="content" source="media/end-user-fresh/power-bi-last-refreshed.png" alt-text="Screenshot showing the last refresh date in wide browser view.":::
 
-2. Open a dashboard, select **More actions (...)**, and then select **See related content** from the Power BI upper menu bar.
+2. Open a dashboard, select **More actions (...)**, and then choose **See related content** from the Power BI upper menu bar.
 
     :::image type="content" source="media/end-user-fresh/power-bi-related.png" alt-text="Screenshot showing See related content on the More options menu.":::
 
@@ -83,7 +83,7 @@ There are built-in Power BI features available that can help you stay up-to-date
 
 ## Set data alerts
 
-To be notified if data goes above or below a specified limit, [Create a data alert](end-user-alerts.md) for a dashboard. It's easy to stay up-to-date by using data alerts. Adjust your settings, so Power BI sends you an email if a value on a dashboard passes a specific threshold. For example, receive an alert if inventory falls below 25 units or if sales exceed stated goals.  
+To be notified if data goes above or below a specified limit, [Create a data alert](end-user-alerts.md) for a dashboard. Stay up-to-date by using data alerts. Adjust your settings, so Power BI sends you an email if a value on a dashboard passes a specific threshold. For example, receive an alert if inventory falls below 25 units or if sales exceed a specified goal.  
 
 ## Subscribe to see changes
 
