@@ -200,9 +200,10 @@ If you select to **Keep current** format, Desktop don't prompt again to upgrade.
 
 ### Publish a PBIR report to service
 
-During the **preview**, you can only publish a report with the PBIR format using [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration). Publishing directly from Power BI Desktop is disabled due to the [Upload PBIX with PBIR format limitation](#pbir-considerations-and-limitations). 
+While in the **preview** phase, the only way to publish a report with the PBIR format is through [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration). This involves connecting the workspace to a Git repository and pushing the PBIR report to it, which can then be synchronized with the service workspace at a later stage.
 
 If you wish to convert an existing report to PBIR in the service, follow these steps:
+
 1. Connect your workspace to Git.
 1. Clone the Git repository to your local file system.
 1. Open the report in Power BI Desktop by opening the `definition.pbir` file.
