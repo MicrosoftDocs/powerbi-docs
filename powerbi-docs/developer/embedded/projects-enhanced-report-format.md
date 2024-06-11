@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/05/2024
+ms.date: 06/10/2024
 LocalizationGroup: Create reports
 no-loc:
 #customer intent: As a report creator, I want to learn how to use the Power BI enhanced report format (PBIR).
