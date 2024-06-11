@@ -202,6 +202,23 @@ If you select to **Keep current** format, Desktop don't prompt again to upgrade.
 
 The report definition is stored inside the **definition\\** folder with the following structure:
 
+```md
+├── bookmarks\
+│   ├── [bookmarkName].bookmark.json
+|   └── bookmarks.json
+├── pages\
+│   ├── [pageName]\
+│   |   ├── \visuals
+|   │   |   ├── [visualName]\
+|   |   │   │   |── mobile.json
+|   |   |   └   └── visual.json
+|   |   └── page.json
+|   └── pages.json
+├── version.json
+├── reportExtensions.json
+└── report.json
+```
+
 |File/Folder                       |Required |Description  |
 |----------------------------------|---------|-------------|
 |\bookmarks                        |No       |Folder holding all bookmark files of the report.
