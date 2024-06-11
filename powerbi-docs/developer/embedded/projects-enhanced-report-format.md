@@ -58,8 +58,5 @@ These restrictions will be removed in the following months.
 
 ## Next steps
 
-- [Overview of Copilot for Power BI](../../create-reports/copilot-introduction.md)
-- [Privacy, security, and responsible use for Copilot for Fabric and Power BI](/fabric/get-started/copilot-power-bi-privacy-security)
-- [Create reports in the Power BI service with Copilot](../../create-reports/copilot-create-report-service.md)
-- [Update your data model to work well with Copilot](../../create-reports/copilot-evaluate-data.md)
-- [Create a narrative summary visual with Copilot for Power BI](../../create-reports/copilot-create-narrative.md)
+- [Power BI embedded analytics overview](embedded-analytics-power-bi.md)
+- [The Power BI embedded analytics playground](power-bi-playground.md)
