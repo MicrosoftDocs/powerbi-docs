@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View your Favorites
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 06/11/2024
 LocalizationGroup: Common tasks
 ---
 
@@ -23,11 +23,11 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
 
 ## Add a dashboard or report as a favorite
 
-1. Open a dashboard or report that you use often. Even content that has been shared with you can be a favorite.
+1. Open a dashboard or report that you use often. Even content that is shared with you can be a favorite.
 
 2. From the upper menu bar of the Power BI service, select **Add to Favorites** or the star :::image type="icon" source="./media/end-user-favorite/power-bi-favorite-icon.png"::: icon.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-fav-new.png" alt-text="Screenshot of the Favorites icon on the toolbar.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-favorite-menu.png" alt-text="Screenshot of the Favorites icon on the toolbar.":::
 
    You can also favorite a dashboard or report from anywhere you see the star icon, such as Home, Recent, Apps, and Shared with me.
 
@@ -38,13 +38,13 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
 
 You have several options for viewing your favorites.
 
-1. To see all the content that you've added as favorites, on the Browse pane, click the **Favorites** tab.
+1. To see all the content that you added as favorites, on the **Browse** pane, select the **Favorites** tab.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-favorites-browse-faves.png" alt-text="Screenshot of the Home page with the Favorites tab highlighted.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-browse.png" alt-text="Screenshot of the Home page with the Favorites tab highlighted.":::
 
    From here, you can take action. You can open a favorite, identify owners, and even share favorites with your colleagues.
 
-2. Favorites are also available from Power BI Home. If you've selected the **Expanded** display mode, your favorites are listed in the **Favorites + frequents** section. If you've selected the **Simplified** display mode, your favorites are listed in the **Favorites** tab.
+2. Favorites are also available from Power BI Home. If you selected the **Expanded** display mode, your favorites are listed in the **Favorites + frequents** section. If you selected the **Simplified** display mode, your favorites are listed in the **Favorites** tab.
 
    :::image type="content" source="media/end-user-favorite/power-bi-simplified-mode-new.png" alt-text="From the upper right corner of Home, select the Simplified display mode.":::
 
@@ -58,7 +58,7 @@ If you no longer use a report, dashboard, or app as often as you used to, you ca
 
 ## Considerations and limitations
 
-- When you favorite an app, it automatically favorites all the reports and dashboards for that app. It isn't possible to favorite individual app reports or dashboards.
+When you set an app as a favorite, it automatically favorites all the reports and dashboards for that app. It isn't possible to favorite individual app reports or dashboards.
 
 ## Related content
 
