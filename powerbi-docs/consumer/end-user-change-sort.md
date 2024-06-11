@@ -30,7 +30,7 @@ This video demonstrates sorting features, like how to change the sort order, and
 
 ## Get started
 
-To choose a sorting option, open any report that you've created or that has been shared with you, select a visual that can be sorted, and choose **More options** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by** and **Sort axis**.
+To choose a sorting option, open any report that you created or that is shared with you. Select a visual that can be sorted, and choose **More options** (...). Depending on the type of visual, the sorting options are **Sort descending**, **Sort ascending**, **Sort by** and **Sort axis**.
 
 :::image type="content" source="media/end-user-change-sort/power-bi-actions.png" alt-text="Screenshot showing the visual's More options menu. The sorting options are outlined.":::
 
@@ -54,7 +54,7 @@ You can sort multiple columns to create a sorting sequence. To add more columns 
 
 ![Screenshot showing a table sorted by two columns. Red outlines show changes.](media/end-user-change-sort/power-bi-sort-second.png)
 
-If you select Shift and then select the same column a second time, the sort direction (ascending or descending) is changed. If you select Shift and select a column you've previously added to the sort order, that column moves to the back of the sort order.
+If you select Shift and then select the same column a second time, the sort direction (ascending or descending) is changed. If you select Shift and select a column you previously added to the sort order, that column moves to the back of the sort order.
 
 ## Save your sort order changes
 
@@ -64,7 +64,7 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 
 The report designer can prevent changes from being saved. If they do, the **Reset to default** button is greyed out.
 
-You can also save your changes with [bookmarks](end-user-bookmarks.md). If the report designer enables the **Personalize visual** feature for the report, you can change the sort order of a visual and save it as a bookmark. If you see the personalize visual icon :::image type="icon" source="media/end-user-change-sort/power-bi-personalize-visual-icon.png"::: in the visual's header, this feature is enabled. You don't need edit permissions to use this feature.
+You can also save your changes with [bookmarks](end-user-bookmarks.md). If the report designer enables the **Personalize visual** feature for the report. You can change the sort order of a visual and save it as a bookmark. If you see the personalize visual icon :::image type="icon" source="media/end-user-change-sort/power-bi-personalize-visual-icon.png"::: in the visual's header, this feature is enabled. You don't need edit permissions to use this feature.
 
 For more information, see [Personalize visuals in a report](end-user-personalize-visuals.md).
 
