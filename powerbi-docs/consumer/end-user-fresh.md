@@ -23,15 +23,15 @@ This article shows you how to determine when your content was last updated or re
 
 As a business user, you interact with content that's created by designers and made available to you. The content contains timestamps, so you know when it was published, shared, or last updated. Knowing that you're working with the freshest content gives you confidence and is often critical in making the right decisions.
 
-What can you do to ensure you're using the latest content? In most cases, you don’t need to do anything at all. Content, like apps, dashboards, scorecards, or reports, that's been shared with you is automatically refreshed and updated on a schedule that's set by the designer. The designer either manually updates content, or they can update it automatically by setting an automated refresh schedule.
+What can you do to ensure you're using the latest content? In most cases, you don’t need to do anything at all. Content, like apps, dashboards, scorecards, or reports, is shared with you by designers. And the designers refreshes and updates the content. The designer either manually updates content, or they update it automatically by setting an automated refresh schedule.
 
-If you have questions about content freshness, contact the designer directly. The examples below show you how to identify and contact the owner of your content.
+If you have questions about content freshness, contact the designer directly. The examples show you how to identify and contact the owner of your content.
 
 :::image type="content" source="media/end-user-fresh/power-bi-owner-new.png" alt-text="Screenshot showing contact information in the title menu.":::
 
 ## Different types of timestamps
 
-Power BI adds date and time information when content is published, shared, updated, and refreshed. The type of date depends on the content. For example, apps have a published date and the content within an app has an updated date. Other types of content have shared and refreshed dates.
+Power BI adds date and time information when content is published, shared, updated, and refreshed. The type of date depends on the content. For example, apps have a published date and the content within an app has an updated date. Other types of content display shared and refreshed dates.
 
 It's less helpful to know which type of timestamp goes where, and more helpful to know where to find a timestamp. The following are general guidelines to help you determine the freshness of your content.
 
