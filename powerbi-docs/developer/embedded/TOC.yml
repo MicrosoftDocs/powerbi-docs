@@ -9,11 +9,12 @@
       href: embedded-analytics-power-bi.md
     - name: Power BI Embedded features
       href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
-    - name: "Create a Power BI report in enhanced report format"
+    - name: Create a Power BI report in enhanced report format
       href: projects-enhanced-report-format.md
     - name: "What is the Power BI Embedded analytics playground?"
       href: power-bi-playground.md
   - name: Power BI Embedded setup
+    expanded: true
     items: 
     - name: "Create a Microsoft Entra tenant"
       href: create-an-azure-active-directory-tenant.md
