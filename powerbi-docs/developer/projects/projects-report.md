@@ -41,7 +41,7 @@ Not every project report folder includes all of the files and subfolders describ
 
 Contains report settings that apply only for the current user and local computer. It should be included in gitIgnore or other source control exclusions. By default, Git ignores this file.
 
-For more information, refer to the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md).
+For more information, see the [localSettings.json schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/localSettings.md).
 
 #### CustomVisuals\\
 
@@ -93,7 +93,7 @@ The definition includes the `datasetReference` property, which references the se
 
 `byConnection` - Specifies a remote semantic model in the Power BI service by using a connection string. When a `byConnection` reference is used, Power BI Desktop doesn't open the semantic model in edit mode.
 
-When using a `byConnection` reference, the following properties must be specified:
+Using a `byConnection` reference, the following properties must be specified:
 
 |Property |Description  |
 |---------|---------|
@@ -252,7 +252,7 @@ The report definition is stored inside the `definition\` folder with the followi
 
 By default, the pages, visuals, and bookmarks use their report object name as their file or folder name. The object names are by default a 20-character unique identifier, such as '90c2e07d8e84e7d5c026'.
 
-:::image type="content" source="./media/projects-report/pbir-objectName.png" alt-text="Screenshot of PBIR name property.":::
+:::image type="content" source="./media/projects-report/pbir-objectname.png" alt-text="Screenshot of PBIR name property.":::
 
 Renaming the file or folder is supported, and Power BI preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, might result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
 
@@ -260,7 +260,7 @@ Renaming the file or folder is supported, and Power BI preserve the original fil
 
 Each PBIR JSON file includes a [JSON schema](https://json-schema.org/) declaration at the top of the document. This schema URL is publicly accessible and can be used to learn more about the available properties and objects for each file. Additionally, it provides built-in IntelliSense and validation when editing with code editors like [Visual Studio Code](https://code.visualstudio.com/).
 
-:::image type="content" source="./media/projects-report/pbir-jsonSchema-tooltip.png" alt-text="Screenshot of prompt PBIR JSON Schema tooltip.":::
+:::image type="content" source="./media/projects-report/pbir-jsonschema-tooltip.png" alt-text="Screenshot of prompt PBIR JSON Schema tooltip.":::
 
 The schema URL also defines the version of the document, which is expected to change as the report definition evolves.
 
@@ -270,7 +270,7 @@ All the JSON schemas are published [here](https://github.com/microsoft/json-sche
 
 You can edit the PBIR JSON files using a code editor like [Visual Studio Code](https://code.visualstudio.com/) or an external tool, as long as the file obey the JSON schema. Using a wrong property name or type can be easily detected directly in Visual Studio Code:
 
-:::image type="content" source="./media/projects-report/pbir-jsonSchema-validation.png" alt-text="Screenshot of prompt PBIR JSON Schema validation.":::
+:::image type="content" source="./media/projects-report/pbir-jsonschema-validation.png" alt-text="Screenshot of prompt PBIR JSON Schema validation.":::
 
 External changes to PBIR content might result in errors when reopening the files in Power BI Desktop. These errors can be of two types:
 
@@ -278,7 +278,7 @@ External changes to PBIR content might result in errors when reopening the files
 
 :::image type="content" source="./media/projects-report/pbir-error-blocking.png" alt-text="Screenshot of prompt PBIR blocking error.":::
 
-Errors such as an invalid schema or missing required properties are considered blocking errors. Those can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
+Errors such as an invalid schema or missing required properties are considered blocking errors. Those errors can be easily identified by opening the file in Visual Studio Code and inspecting the schema errors.
 
 **Non-blocking errors** don't prevent Power BI Desktop from opening the report and are automatically resolved.
 
@@ -302,7 +302,7 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 
 **Scenario:** *I copied a page folder from another report and encountered an error stating, "Values for the 'pageBinding.name' property must be unique."*
 
-**Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they might be referenced by other pages, the name must be unique within the report. On the newly copied page, assign a unique value to resolve this situation. After June 2024, this is no longer an issue because the pageBinding name is a GUID by default.
+**Solution:** The pageBinding object is necessary to support drillthrough and page tooltips. Since they might be referenced by other pages, the name must be unique within the report. On the newly copied page, assign a unique value to resolve the error. After June 2024, this situation is no longer an issue because the pageBinding name is a GUID by default.
 
 
 ### PBIR considerations and limitations
@@ -323,8 +323,8 @@ PBIR is currently in **preview**. Keep the following in mind:
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
-- Once a report is converted from PBIR-Legacy to PBIR, it is not possible to roll it back.
-- Converting a PBIP file to a PBIX file using the "Save As" feature will embed the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
+- Once a report is converted from PBIR-Legacy to PBIR, it isn't possible to roll it back.
+- Converting a PBIP file to a PBIX file using the "Save As" feature embeds the PBIR report within the PBIX file, carrying over all PBIR limitations to the PBIX.
 
 PBIR size limitations enforced by the service:
 
