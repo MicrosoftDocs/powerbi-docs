@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
 ms.custom: video-RWRpNT
-ms.date: 11/02/2022
+ms.date: 06/11/2024
 #customer intent: As a PBI business user, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
