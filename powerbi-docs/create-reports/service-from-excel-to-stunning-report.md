@@ -64,7 +64,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. Select **Excel**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/new-report-select-excel.png.png" alt-text="Screenshot of My Workspace, highlighting the Excel data source option.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/new-report-select-excel.png" alt-text="Screenshot of My Workspace, highlighting the Excel data source option.":::
 
 1. Select **Upload file**, and drag or browse to the Excel file location.
 
