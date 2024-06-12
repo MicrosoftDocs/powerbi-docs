@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 
 # Discover data items using the data hub
 
-The data hub helps you find, explore, and use data items in your organization, such as semantic models, datamarts, and their related reports. It provides information about the data items as well as about reports built using those items. In this way, report consumers can find reports based on trustworthy data.
+The data hub helps you find, explore, and use data items in your organization, such as semantic models, datamarts, and their related reports. It provides information about the data items and about reports built using those items. In this way, report consumers can find reports based on trustworthy data.
 
 This article explains what you see on the data hub and describes how to use it. For more details and advanced features available on the data hub, see [Data discovery using the data hub](../connect-data/service-data-hub.md).  
 
@@ -30,7 +30,7 @@ The image below shows the OneLake data hub in the Power BI service.
 
 The data hub shows a selection of recommended data items and a list of all the data items in the organization that you have permissions to access. If [semantic model discoverability](../collaborate-share/service-discovery.md) is enabled for your account, you also see a list of semantic models.
 
-[Continue learning about the OneLake data hub](../connect-data/service-data-hub.md) and explore additional information, including how to select a semantic model, how to explore reports built using a semantic model, and how to create a new report yourself.
+[Continue learning about the OneLake data hub.](../connect-data/service-data-hub.md) Explore how to select a semantic model, how to explore reports built using a semantic model, and how to create a new report yourself.
   
 ## Related content
 
