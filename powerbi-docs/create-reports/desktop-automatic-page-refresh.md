@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/11/2024
+ms.date: 06/12/2024
 LocalizationGroup: Connect to data
 ---
 
@@ -206,7 +206,7 @@ This table describes with more detail where this feature is available and the li
 > [!WARNING]
 > We have a known issue when connected from Power BI Desktop to Analysis Services or Power BI semantic models and the refresh interval is 30 minutes or more. Visuals in a report page might show an error after 30 minutes.
 
-## Refreshed data and open reports
+## Impact of model refresh on open reports when using Import mode
 
 When a report page is open and a semantic model is refreshed, the open report page refreshes to reflect the most recent data. Showing refreshed data for open reports resolves issues related to stale data, and is similar to automatic page refresh. Only users with write permissions will see their open reports updated automatically when the semantic model is refreshed.
 
@@ -216,7 +216,7 @@ If the semantic model has a large number of uses with Write permissions, for exa
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
 
-* Import storage mode isn't supported for automatic page refresh, but open reports update automatically if the underlying semantic model is refreshed and the user has Write permissions. Refer to the [previous section](#refreshed-data-and-open-reports) for situations when the refresh may become unreliable.
+* Import storage mode isn't supported for automatic page refresh, but open reports update automatically if the underlying semantic model is refreshed and the user has Write permissions. Refer to the [previous section](#impact-of-model-refresh-on-open-reports-when-using-import-mode) for situations when the refresh may become unreliable.
 * Composite models that have at least one DirectQuery data source are supported.
 * You can only have one change detection measure per semantic model.
 * There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
