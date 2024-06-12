@@ -505,9 +505,6 @@ Select the following links to download this earlier version:
 
 
 
-
-
-
 ## October 2023 Update (2.122.442.0)
 
 October was full of scary-good features and a pumpkin-patch of updates. Navigate through this section of this article for a corn-maze like expedition through October's offerings for Power BI Desktop and the Power BI service. 
