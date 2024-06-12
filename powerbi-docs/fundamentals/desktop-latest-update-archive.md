@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 05/21/2024
 LocalizationGroup: Get started
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 
@@ -497,12 +498,6 @@ You can also download previous versions of Power BI Desktop if your organization
 * It might not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
 * If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
 * We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [November 2023 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2023-11.exe)
-* [November 2023 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2023-11_x64.exe)
-
 
 
 ## October 2023 Update (2.122.442.0)

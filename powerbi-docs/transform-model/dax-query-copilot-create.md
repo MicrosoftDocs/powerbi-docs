@@ -9,6 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
 ms.date: 05/22/2024
 LocalizationGroup: Create reports
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Use Copilot to write and explain DAX queries

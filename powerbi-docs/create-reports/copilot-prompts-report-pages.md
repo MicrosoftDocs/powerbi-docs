@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 04/25/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Write Copilot prompts for creating report pages in Power BI
