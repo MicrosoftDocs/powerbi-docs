@@ -74,23 +74,21 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. If you aren't signed in, you need to sign in before you can upload the Excel file. Select **Next**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-signed-in-next.png" alt-text="Screenshot of Power Query dialog, with Excel file uploaded in the the Connect to data source dialog box.":::
-
 1. In the Power Query **Choose data** window, select the **financials** table in the Excel workbook, and select **Create**.
 
-   ![Screenshot of My workspace, highlighting the New dropdown menu and the Report option.](media/service-from-excel-to-stunning-report/power-query-choose-data.png)
+   ![Screenshot of Power Query Choose data window, select the financials table.](media/service-from-excel-to-stunning-report/power-query-choose-data.png)
 
 ## Build your report
 
 The report opens in Editing view and displays the blank report canvas. On the right are the **Filters**, **Visualizations**, and **Data** panes. Your Excel workbook table data appears in the **Data** pane. At the top is the name of the table, **financials**. Under that, Power BI lists the column headings as individual fields.
 
-Notice the Sigma symbols in the Fields list? Power BI has detected that those fields are numeric. Power BI can also detect geographic fields and date fields.
+Notice the Sigma symbols in the Data list? Power BI has detected that those fields are numeric. Power BI can also detect geographic fields and date fields.
 
-![Screenshot of the Fields pane, highlighting Excel entries.](media/service-from-excel-to-stunning-report/power-bi-fields-list-financial.png)
+![Screenshot of the Data pane, showing Excel columns as fields in the financials table.](media/service-from-excel-to-stunning-report/power-bi-fields-list-financial.png)
 
 1. To have more room for the report canvas, minimize the **Filters** pane.
 
-1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Fields** pane, drag **Profit** to the report canvas.
+1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Data** pane, drag **Profit** to the report canvas.
 
    By default, Power BI displays a column chart with one column.
 
@@ -118,21 +116,21 @@ Your manager wants to know which countries/regions are the most profitable. Impr
 
 1. Select a blank area on your report canvas.
 
-2. From the **Fields** pane, drag the **Country** field to your report canvas, then drag the **Profit** field to the map.
+2. From the **Data** pane, drag the **Country** field to your report canvas, then drag the **Profit** field to the map.
 
    Power BI creates a map visual with bubbles representing the relative profit of each location.
 
    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of map visual in report editor.":::
 
-    You can see that the European and the North American regions are profiting about the same.
+    You can see that the European and the North American region profits are about the same.
 
-### Create a visual showing sales
+### Create a visual showing sales segments
 
 What about displaying a visual showing sales by product and market segment? That's easy.
 
 1. Select the blank canvas.
 
-1. In the **Fields** pane, select the **Sales**, **Product**, and **Segment** fields.
+1. In the **Data** pane, select the **Sales**, **Product**, and **Segment** fields.
 
    Power BI creates a clustered column chart.
 
@@ -140,7 +138,7 @@ What about displaying a visual showing sales by product and market segment? That
 
 1. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**.
 
-   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of a clustered column chart in the report editor.":::
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of a stacked column chart in the report editor.":::
 
 1. To sort the chart, select **More options** (**...**) > **Sort by**.
 
