@@ -154,7 +154,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 1. Select the **Profit by Country** map. In the **Map styles** section, change **Theme** to **Grayscale**. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
 
-## Add a title
+## Add a report title
 
 1. Select the **Text box** option.
 
@@ -162,7 +162,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 1. Select the text, and make the **Font size** **36**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-add-title-worldwide-sales.png" alt-text="Screenshot of adding a title to the report.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-add-title-worldwide-sales.png" alt-text="Screenshot of adding a title to the report.":::
 
 ## Pin to a dashboard
 
