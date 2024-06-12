@@ -94,19 +94,19 @@ Change how a measure is computed by changing the aggregation in the **Personaliz
 
 Using personal bookmarks, capture your changes so you can return to your personalized view. Select **Bookmarks** > **Add a personal bookmark** and give the bookmark a name.
 
-:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark-new.png" alt-text="Screenshot of the Personal bookmarks dialog with the option to make this the default view selected.":::
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark-new.png" alt-text="Screenshot of the Personal bookmarks dialog with the option to change the default view selected.":::
 
 You can also make the bookmark your default view.
 
 ### Share changes
 
-If you have read and re-share permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
+If you have reshare and read permissions, when you share the report you can choose to include your changes. This personalized version doesn't overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes-new.png" alt-text="Screenshot of the Send link dialog with the option to include changes selected.":::
 
 ### Reset all your changes to a report
 
-From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the author's last saved view of the report.
+From the upper-right corner of your report canvas, select **Reset to default**. Resestting removes all your changes in the report and sets it back to the author's last saved view of the report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all-new.png" alt-text="Screenshot of the reset icon on the report canvas.":::
 
@@ -126,9 +126,9 @@ Select the eraser icon to clear all changes since you opened the **Personalize**
 
 Currently the feature has a few limitations to be aware of.
 
-- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
+- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have permissions to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
-- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
+- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app. It isn't supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 ## Related content
 
