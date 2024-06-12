@@ -9,6 +9,7 @@ ms.subservice: pbi-explore
 ms.topic: how-to
 ms.date: 05/02/2024
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Explore your data in the Power BI service (preview)

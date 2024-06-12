@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 04/10/2024
 LocalizationGroup: Model your data
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 # Use Copilot to create measure descriptions (preview)
 
