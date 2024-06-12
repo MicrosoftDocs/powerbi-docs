@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Discover data items
 ms.topic: conceptual
-ms.date: 06/12/2023
+ms.date: 06/12/2024
 LocalizationGroup: Get started
 ---
 
