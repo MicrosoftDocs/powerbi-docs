@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 06/12/2024
 LocalizationGroup: Reports
 ---
 
@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
-It's hard to make one visual that satisfies everyone's requirements. But, when a colleague shares a report with you, you might want to make changes to the visuals&mdash;without having to ask your colleague to make the changes for you.
+It's hard to make one visual that satisfies everyone's requirements. So, when a colleague shares a report with you, you might want to make changes to the visuals&mdash;without having to ask your colleague to make the changes for you.
 
 Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
 
@@ -40,7 +40,7 @@ Not only does this feature allow for new exploration capabilities, it also inclu
 - Clear out your recent changes.
 
 > [!IMPORTANT]
-> The ability to personalize a visual must be enabled by the report *designer*. If you don't see the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon, then the report designer didn't enable this feature for the current report. Check with the report owner or your Power BI administrator to have the feature enabled. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
+> The ability to personalize a visual must be enabled by the report *designer*. If you don't see the **Personalize this visual** :::image type="icon" source="media/end-user-personalize-visuals/power-bi-personalize-visual-icon-new.png"::: icon, then the report designer didn't enable this feature for the current report. Check with the report owner or your administrator to have the feature enabled. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 
 ## Personalize visuals in the Power BI service
 
@@ -92,7 +92,7 @@ Change how a measure is computed by changing the aggregation in the **Personaliz
 
 ### Capture changes
 
-Using personal bookmarks, capture your changes so you can return to your personalized view. Select **Bookmarks** > **Personal bookmarks** and give the bookmark a name.
+Using personal bookmarks, capture your changes so you can return to your personalized view. Select **Bookmarks** > **Add a personal bookmark** and give the bookmark a name.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark-new.png" alt-text="Screenshot of the Personal bookmarks dialog with the option to make this the default view selected.":::
 
@@ -100,7 +100,7 @@ You can also make the bookmark your default view.
 
 ### Share changes
 
-If you've read and re-share permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
+If you have read and re-share permissions, when you share the report you can choose to include your changes. This personalized version does not overwrite the author's version. The colleague who is viewing your personalized report can select **Reset to default** and return to the author's version of the report. If the colleague has editing permissions, they can save your personalized version as a new report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes-new.png" alt-text="Screenshot of the Send link dialog with the option to include changes selected.":::
 
