@@ -119,6 +119,8 @@ Example using `byConnection`:
     }
   }
 }
+```
+When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
 
 This file also specifies the supported report definition formats through the 'version' property.
 
@@ -126,10 +128,6 @@ This file also specifies the supported report definition formats through the 've
 |----------|----------------------------|
 | 1.0      | Report definition must be stored as PBIR-Legacy in the report.json file. |
 | 4.0 or above | Report definition can be stored as PBIR-Legacy (report.json file) or [PBIR](#pbir-format) (\definition folder). |
-
-```
-
-When the semantic model and report share the same workspace, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) always uses a `byPath` reference to the semantic model.
 
 For more information, see the [definition.pbir schema document](https://github.com/microsoft/powerbi-desktop-samples/tree/main/item-schemas/report/definition.pbir.md).
 
