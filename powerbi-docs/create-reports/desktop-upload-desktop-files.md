@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 06/12/2024
 LocalizationGroup: Create reports
 ---
 # Publish semantic models and reports from Power BI Desktop
@@ -64,11 +64,12 @@ This process is straightforward, but you should know the following:
 > Some data connection in Power BI reports may include links to data, rather than including the data in the semantic model that's imported into the Power BI service. For example, DirectQuery connections link to data as updates or interactions occur, rather than importing the data itself. If linked data sources in your report are on premises, you may need a gateway to access them from Power BI. For more information, see [what is an on-premises data gateway?](../connect-data/service-gateway-onprem.md).
 
 ## Publish semantic models and reports from Power BI Desktop to a folder in a workspace (preview)
-The ability to publish reports and semantic models from Power BI Desktop into a folder in a workspace is now in preview. This feature is enabled by default. To use this capability, follow the established pattern for publishing a semantic model and report. The workspace navigator now includes the option for you to select a folder within a workspace to publish to. Folders are organizational units inside a workspace that enable users to efficiently organize and manage artifacts in the workspace. 
 
-To turn the capability off, deselect the **Publish dialogs support folder selection** setting through the **Options and settings > Options > Preview features** menu in Power BI Desktop.
+The ability to publish reports and semantic models from Power BI Desktop into a folder in a workspace is now in preview, and enabled by default. To use this feature, follow the established pattern for publishing a semantic model and report. The workspace navigator provides the option for you to select a folder within a workspace to which it will publish. Folders are organizational units inside a workspace that enable users to efficiently organize and manage artifacts in the workspace. 
 
-[Learn more about the feature and how to enable it](/fabric/get-started/workspaces-folders).
+To turn the capability off, deselect the **Publish dialogs support folder selection** setting using the **Options and settings > Options > Preview features** menu in Power BI Desktop.
+
+To learn more about creating folders in Microsoft Fabric workspaces, read the [create folders in Microsoft Fabric workspaces](/fabric/get-started/workspaces-folders) article.
 
 ## Related content
 
