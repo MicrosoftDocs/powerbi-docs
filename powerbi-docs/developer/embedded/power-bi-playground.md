@@ -18,7 +18,7 @@ ms.custom: intro-overview
 
 The [Power BI embedded analytics playground](https://go.microsoft.com/fwlink/?linkid=848279) makes it easy for you to learn, explore, and try out Power BI embedded analytics. It’s also where you can keep up with all the new features and updates of Power BI embedded.
 
-:::image type="content" source="media/power-bi-playground/playground-home.png" alt-text="A screenshot of the playground home page.":::
+:::image type="content" source="media/power-bi-playground/playground-home.png" alt-text="A screenshot of the playground home page." lightbox="media/power-bi-playground/playground-home.png":::
 
 The playground gives you hands-on coding experience. It also lets you embed your own reports and interact with Power BI client APIs that give you instant results.
 
@@ -33,11 +33,11 @@ The playground provides the following main experiences:
 
 Go to the developer sandbox for hands-on experience using the client APIs. You can use the APIs with the sample report or with your own report.
 
-:::image type="content" source="media/power-bi-playground/playground-developer-sandbox.png" alt-text="A screenshot of the playground developer sandbox.":::
+:::image type="content" source="media/power-bi-playground/playground-developer-sandbox.png" alt-text="A screenshot of the playground developer sandbox." lightbox="media/power-bi-playground/playground-developer-sandbox.png":::
 
 Drag and drop code snippets into the report or type them directly into the code editor area to see how they work.
 
-:::image type="content" source="media/power-bi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use.":::
+:::image type="content" source="media/power-bi-playground/sandbox-add-code.png" alt-text="A screenshot of the developer sandbox in use." lightbox="media/power-bi-playground/sandbox-add-code.png":::
 
 You can choose between JavaScript and TypeScript for writing your code. All API code snippets then update based on your selection. The last language you use saves for next time.
 
@@ -47,13 +47,13 @@ You can choose between JavaScript and TypeScript for writing your code. All API 
 
 You can interact with code snippets and embed reports, dashboards, Q&As, and more in **Explore our APIs**.
 
-:::image type="content" source="media/power-bi-playground/playground-explore-apis.png" alt-text="A screenshot of the playground explore APIs page.":::
+:::image type="content" source="media/power-bi-playground/playground-explore-apis.png" alt-text="A screenshot of the playground explore APIs page." lightbox="media/power-bi-playground/playground-explore-apis.png":::
 
 ## Showcases
 
 The interactive showcases let you see how to apply these features in your applications. Each showcase presents an application that demonstrates what you can do with one or more of the client APIs.
 
-:::image type="content" source="media/power-bi-playground/playground-showcases-gallery.png" alt-text="A screenshot of the playground showcases gallery.":::
+:::image type="content" source="media/power-bi-playground/playground-showcases-gallery.png" alt-text="A screenshot of the playground showcases gallery." lightbox="media/power-bi-playground/playground-showcases-gallery.png":::
 
 The showcases code is open-sourced, and you can find the code behind all of them in our [GitHub repository](https://github.com/microsoft/PowerBI-Embedded-Showcases/).
 
@@ -76,7 +76,7 @@ Once you're happy with the look and feel of the report in your app, visit the [P
 
 The Learning center is a collection of Power BI embedded analytics resources. It's where you can dive into the documentation, learn about the APIs, find developer samples and videos, and learn where to get help.
 
-:::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center.":::
+:::image type="content" source="media/power-bi-playground/playground-learning-center.png" alt-text="A screenshot of the playground learning center." lightbox="media/power-bi-playground/playground-learning-center.png":::
 
 ## Related content
 

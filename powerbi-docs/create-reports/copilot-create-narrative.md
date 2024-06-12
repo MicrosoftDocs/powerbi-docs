@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 04/08/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Create a narrative with Copilot for Power BI
