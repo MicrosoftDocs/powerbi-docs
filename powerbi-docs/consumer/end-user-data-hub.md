@@ -24,7 +24,7 @@ The data discovery experience starts on the data hub. To get to the data hub:
 - In the Power BI service left navigation pane, select **Data hub**.
 - In the Power BI app in Teams, select either the **Data hub** tab or **Data hub** in the navigation pane.
 
-The image below shows the OneLake data hub in the Power BI service.
+The image shows the OneLake data hub in the Power BI service.
 
 :::image type="content" source="media/end-user-data-hub/power-bi-data-hub.png" alt-text="Screenshot of the Power BI service data hub page.":::
 
