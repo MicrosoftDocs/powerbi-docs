@@ -90,9 +90,9 @@ This file is only available if the Power BI project is saved using the TMSL form
 
 #### definition\ folder
 
-This file is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
+This folder is only available if the Power BI project is saved using the [TMDL format](#tmdl-format). It replaces the [model.bim](#modelbim) file.  
 
-This file contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
+This folder contains a [Tabular Model Definition Language (TMDL)](/analysis-services/tmdl/tmdl-overview) [Database object](/analysis-services/tmsl/database-object-tmsl) definition of the project model.
 
 #### diagramLayout.json
 
@@ -170,7 +170,7 @@ If any invalid edits are made to the TMDL files, Power BI Desktop throws an erro
 
 :::image type="content" source="./media/projects-dataset/edit-error.png" alt-text="Screenshot of an error message for an invalid file.":::
 
-### Fabric Git Integration with TMDL
+### TMDL considerations and limitations
 
 During the Public Preview, [Fabric Git Integration](/fabric/cicd/git-integration/intro-to-git-integration) will still export the semantic model using TMSL by default. However, if the semantic model is imported into Fabric using Fabric Git Integration with TMDL format, then Fabric Git Integration will use TMDL format to export the semantic model definition to Git if there are any semantic model changes in the service.
 
