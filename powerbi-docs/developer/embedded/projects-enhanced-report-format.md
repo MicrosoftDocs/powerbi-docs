@@ -54,7 +54,7 @@ Initially, the PBIR format has some service restrictions, such as these:
 - You can't use subscriptions.
 - You can't download PBIX.
 
-These restrictions will be removed in the following months.  
+These restrictions should be removed in the following months.  
 
 ## Next steps
 
