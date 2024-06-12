@@ -64,13 +64,13 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. Select **Excel**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/new-report-select-excel.png.png" alt-text="Screenshot of My Workspace, highlighting the Financial Sample semantic model.":::
-
-    Now you have a Financial Sample semantic model. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
+    :::image type="content" source="media/service-from-excel-to-stunning-report/new-report-select-excel.png.png" alt-text="Screenshot of My Workspace, highlighting the Excel data source option.":::
 
 1. Select **Upload file**, and drag or browse to the Excel file location.
 
     :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-upload-file.png" alt-text="Screenshot of the Power Query dialog, highlighting the Connect to data source dialog box.":::
+
+    Now you have a Financial Sample semantic model. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
 
 1. If you aren't signed in, you need to sign in before you can upload the Excel file. Select **Next**.
 
