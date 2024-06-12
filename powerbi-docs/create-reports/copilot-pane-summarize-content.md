@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Summarize a report in the Copilot pane  

@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 04/25/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 #customer intent: As a Power BI user, I want to learn how to enable Fabric Copilot for Power BI to use Copilot in the service and desktop.
 ---
 

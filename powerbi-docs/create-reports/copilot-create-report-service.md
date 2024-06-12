@@ -10,6 +10,7 @@ ms.topic: how-to
 ms.date: 06/03/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report creator, I want to learn how to use Copilot in the Power BI service to create a Power BI report quickly.
 ---
 

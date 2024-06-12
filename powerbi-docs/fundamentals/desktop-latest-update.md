@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 06/12/2024
 LocalizationGroup: Get started
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 # What's new in Power BI?
 
