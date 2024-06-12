@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 06/12/2024
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,9 +16,9 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## May 2024 Update (2.129.905.0)
+## June 2024 Update (2.130.754.0)
 
-This month brings a colorful bouquet of updates, capabilities, and features for the Power BI service and Power BI Desktop. 
+June's updates are a sunny collection of capabilities that let you chart a course to the best business intelligence insights using Power BI Desktop. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -45,15 +45,11 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
-
-
 ### Reporting
-* Modern Tooltip now on by default  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109006)  [[video]](https://youtu.be/k5EEdq6y_jo?t=29)  [[article]](../create-reports/desktop-visual-tooltips.md)
-* Matrix layouts  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109007)  [[video]](https://youtu.be/k5EEdq6y_jo?t=67) 
-* Line updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109008)  [[video]](https://youtu.be/k5EEdq6y_jo?t=97) 
-* On-object interactions updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109009)  [[video]](https://youtu.be/k5EEdq6y_jo?t=127)  [[article]](../create-reports/power-bi-on-object-interaction.md)
-* Publish to folders (Preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109010)  [[video]](https://youtu.be/k5EEdq6y_jo?t=227) 
-* You can now ask Copilot questions about data in your model (Preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109011)  [[video]](https://youtu.be/k5EEdq6y_jo?t=189) 
+* Visual calculations update (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491978)  [[video]](https://youtu.be/fbw09nHOm-c?t=27)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
+* Power BI Home in Power BI Desktop now generally available  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491979)  [[video]](https://youtu.be/fbw09nHOm-c?t=80)  [[article]](../create-reports/desktop-home.md) 
+
+
 
 
 > [!NOTE]
@@ -62,44 +58,25 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Modeling
-* DAX Query View now generally available  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109013)  [[video]](https://youtu.be/k5EEdq6y_jo?t=272)  [[article]](../transform-model/dax-query-view.md)
-* Copilot to write and explain DAX queries in DAX Query View updates (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109014)  [[video]](https://youtu.be/k5EEdq6y_jo?t=343)  [[article]](/dax/dax-copilot)
-* New Manage relationships dialog  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109015)  [[video]](https://youtu.be/k5EEdq6y_jo?t=387)  [[article]](../transform-model/desktop-create-and-manage-relationships.md) 
-* Refreshing calculated columns and calculated tables referencing DirectQuery sources with single sign-on  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109016)  [[video]](https://youtu.be/k5EEdq6y_jo?t=410)  
-* Model explorer and authoring calculation groups in Power BI Desktop now generally available  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109017)  [[video]](https://youtu.be/k5EEdq6y_jo?t=435)  [[article]](../transform-model/model-explorer.md) 
+* Download large semantic models  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491981)  [[video]](https://youtu.be/fbw09nHOm-c?t=105)  [[article]](../create-reports/service-export-to-pbix.md)
+* New INFO functions [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491982)  [[video]](https://youtu.be/fbw09nHOm-c?t=123)  
 
-### Data connectivity
-* Microsoft Entra ID SSO support for Oracle database  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109019)  [[video]](https://youtu.be/k5EEdq6y_jo?t=456)  [[article]](../connect-data/service-gateway-azure-active-directory-sso.md) 
-* Certified connector updates  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109020)  [[video]](https://youtu.be/k5EEdq6y_jo?t=471)  
-* View reports in OneDrive and SharePoint with live connected semantic models  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109021)  [[video]](https://youtu.be/k5EEdq6y_jo?t=488)  
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109027)  [[video]](https://youtu.be/k5EEdq6y_jo?t=684)  
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491988)  [[video]](https://youtu.be/fbw09nHOm-c?t=625)  
 
 
 
 
-
-# [Power BI service](#tab/powerbi-service)
-
-The following updates are new to the Power BI service this month:
-
-
-* Storytelling in PowerPoint - Image mode in the Power BI add-in for PowerPoint [[video]](https://youtu.be/k5EEdq6y_jo?t=624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109023)  [[video]](https://youtu.be/k5EEdq6y_jo?t=542)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-* Storytelling in PowerPoint - data updated notification  [[blog]](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/#post-27048-_Toc167109024)  [[video]](https://youtu.be/k5EEdq6y_jo?t=591)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
-
-
----
-
-
-
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-may-2024-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/).
 
 
 ### Power BI monthly update video
 The following video describes many of these updates. You can also watch this video from the blog post.
 
-> [!VIDEO https://www.youtube.com/embed/k5EEdq6y_jo]
+
+
+> [!VIDEO https://www.youtube.com/embed/fbw09nHOm-c]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
