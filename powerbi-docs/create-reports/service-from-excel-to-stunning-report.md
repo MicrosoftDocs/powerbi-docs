@@ -60,11 +60,11 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. In **My workspace**, select **New** > **Report**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report-from-excel.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Report option.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Report option.":::
 
 1. Select **Excel**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/new-report-select-excel.png" alt-text="Screenshot of My Workspace, highlighting the Excel data source option.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-select-excel.png" alt-text="Screenshot of My Workspace, highlighting the Excel data source option.":::
 
 1. Select **Upload file**, and drag or browse to the Excel file location.
 
@@ -136,9 +136,11 @@ What about displaying a visual showing sales by product and market segment? That
 
    Power BI creates a clustered column chart.
 
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-clustered-column.png" alt-text="Screenshot of a clustered column chart in the report editor.":::
+
 1. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**.
 
-   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of a Stacked column chart in the report editor.":::
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-stacked-column.png" alt-text="Screenshot of a clustered column chart in the report editor.":::
 
 1. To sort the chart, select **More options** (**...**) > **Sort by**.
 
@@ -160,9 +162,11 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 1. Drag the box to the upper-left corner. Type "Worldwide Sales" in the box.
 
+    :::image type="content" source="media/service-from-excel-to-stunning-report/create-text-box.png" alt-text="Screenshot of creating a text box in the report.":::
+
 1. Select the text, and make the **Font size** **36**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-add-title-worldwide-sales.png" alt-text="Screenshot of adding a title to the report.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-add-title-worldwide-sales.png" alt-text="Screenshot of formatting the title in the report.":::
 
 ## Pin to a dashboard
 
