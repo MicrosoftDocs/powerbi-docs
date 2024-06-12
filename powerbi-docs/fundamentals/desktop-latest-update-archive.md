@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 05/21/2024
 LocalizationGroup: Get started
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 # Previous monthly updates to Power BI Desktop and the Power BI service
 

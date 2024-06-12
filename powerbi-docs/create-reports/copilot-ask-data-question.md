@@ -11,6 +11,7 @@ ms.date: 06/03/2024
 ms.collection: ce-skilling-ai-copilot
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI to visualize data from my semantic model.
 ---
 

@@ -11,6 +11,7 @@ ms.date: 06/03/2024
 ms.collection: ce-skilling-ai-copilot
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Overview of Copilot for Power BI

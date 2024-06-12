@@ -9,6 +9,7 @@
  ms.author: maggies
  ms.custom: include file
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 > [!NOTE]
