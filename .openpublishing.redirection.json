@@ -3110,6 +3110,17 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-premium-interactive-background-operations.md",
+            "redirect_url": "/fabric/enterprise/fabric-operations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/enterprise/service-premium-smoothing.md",
+            "redirect_url": "/fabric/enterprise/throttling",
+            "redirect_document_id": false
+        },
+
+        {
             "source_path": "powerbi-docs/service-connect-to-smartsheet.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-smartsheet",
             "redirect_document_id": true

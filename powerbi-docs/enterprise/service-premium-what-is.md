@@ -102,9 +102,9 @@ To install the app, see [Install the Microsoft Fabric capacity metrics app](/fab
 
 Here's what happens when you exceed your CPU limit per the SKU size you purchased:
 
-* **Power BI Premium** - If enabled, [autoscale](service-premium-auto-scale.md) kicks in. If autoscale isn't enabled, your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations).
+* **Power BI Premium** - If enabled, [autoscale](service-premium-auto-scale.md) kicks in. If autoscale isn't enabled, your capacity throttles its [interactive operations](/fabric/enterprise/fabric-operations#interactive-operations).
 
-* **[Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)** - Your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations). To autoscale in Power BI Embedded, see [Autoscaling in Power BI Embedded](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity).
+* **[Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)** - Your capacity throttles its [interactive operations](/fabric/enterprise/fabric-operations#interactive-and-background-operations). To autoscale in Power BI Embedded, see [Autoscaling in Power BI Embedded](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity).
 
 ## Paginated reports
 
