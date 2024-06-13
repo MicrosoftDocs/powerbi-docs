@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 01/10/2023
+ms.date: 06/12/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a Power BI report in Microsoft Teams
@@ -58,11 +58,15 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
-1. In **My workspace**, select **New** > **Upload a file**.
+1. In **My workspace**, select **New** > **Report**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-upload.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Upload a file option.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the New report option.":::
 
-1. Select **Excel** > **Browse this device**, and browse to where you saved the Financial Sample Excel file. Then select **Open**.
+1. Select **Excel**
+
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-select-excel.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Excel option."::: 
+
+1.  > **Browse this device**, and browse to where you saved the Financial Sample Excel file. Then select **Open**.
 
     Now you have a Financial Sample semantic model. Power BI also automatically created a blank dashboard. If you don't see the dashboard, refresh your browser.
 
