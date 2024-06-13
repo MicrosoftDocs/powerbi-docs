@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 This article describes an alternative way to sign up for the Power BI service if you don't already have a work or school email account.
 
-You're unable to sign up for Power BI with your [personal email address](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). You can still try out Power BI and Fabric with a Microsoft 365 trial.  During the Microsoft 365 trial sign-up process you'll create an "onmicrosoft" email work account.  Use that new work account to sign up for the Power BI service and get a Fabric free or Power BI Pro license. Continue to use that work account even after you cancel your Microsoft 365 trial.
+You're unable to sign up for Power BI with your [personal email address](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). You can still try out Power BI and Fabric with a Microsoft 365 trial. During the Microsoft 365 trial sign-up process, you create an "onmicrosoft" email work account. Use that new work account to sign up for the Power BI service and get a Fabric free or Power BI Pro license. Continue to use that work account even after you cancel your Microsoft 365 trial.
 
 > [!NOTE]
 > You must use a credit or debit card when you sign up for the Microsoft 365 free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends.
@@ -33,7 +33,7 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](/microsoft-365
     If you need a new email address, select **Set up account**.
     :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-set-up-account.png" alt-text="Screenshot showing the message that the email address doesn't work. Set up account is highlighted.":::
 
-1. After you've completed the sign up process, Microsoft displays your new user name and domain, for example, *you@yourcompany.onmicrosoft.com*. Create a password, and then select **Next**.
+1. After completing the sign-up process, Microsoft displays your new user name and domain, for example, *you@yourcompany.onmicrosoft.com*. Create a password, and then select **Next**.
    :::image type="content" source="media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/office-365-trial-setup-password.png" alt-text="Screenshot showing the newly created user name and domain name with input boxes for entering and confirming a password. Next is highlighted.":::
 
 You used your new business account to sign up for a trial of Microsoft 365. If you signed up for Microsoft 365 Business Premium, your trial includes Power BI Pro. If you signed up for Microsoft 365 Business Standard, use your new business account to [sign up for a trial of the Power BI service as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
