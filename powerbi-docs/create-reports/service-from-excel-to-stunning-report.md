@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 05/24/2024
+ms.date: 06/12/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to a Power BI report in Microsoft Teams
@@ -18,7 +18,7 @@ Your manager wants to see a report on your latest sales and profit figures by th
 
 No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!
 
-:::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png" alt-text="Screenshot of the finished Financial Sample report." lightbox="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png":::
+:::image type="content" source="media/service-from-excel-to-stunning-report/worldwide-sales-report.png" alt-text="Screenshot of the finished Financial Sample report." lightbox="media/service-from-excel-to-stunning-report/worldwide-sales-report.png":::
 
 In this tutorial, we upload an Excel file, create a new report, and share it with colleagues in Microsoft Teams, all from within Power BI. You'll learn how to:
 
