@@ -18,7 +18,7 @@ Your manager wants to see a report on your latest sales and profit figures by th
 
 No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!
 
-:::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png" alt-text="Screenshot of the finished Financial Sample report.":::
+:::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png" alt-text="Screenshot of the finished Financial Sample report." lightbox="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png":::
 
 In this tutorial, we upload an Excel file, create a new report, and share it with colleagues in Microsoft Teams, all from within Power BI. You'll learn how to:
 
@@ -44,9 +44,9 @@ Let’s take an Excel file as an example.
 
    ![Screenshot of the data organized in Excel.](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
 
-2. Next, format your data as a table. In Excel, on the **Home** tab, in the **Styles** group, select **Format as Table**.
+1. Next, format your data as a table. In Excel, on the **Home** tab, in the **Styles** group, select **Format as Table**.
 
-3. Select a table style to apply to your worksheet.
+1. Select a table style to apply to your worksheet.
 
    Your Excel worksheet is now ready to load into Power BI.
 
@@ -76,7 +76,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. In the Power Query **Choose data** window, select the **financials** table in the Excel workbook, and select **Create**.
 
-   ![Screenshot of Power Query Choose data window, select the financials table.](media/service-from-excel-to-stunning-report/power-query-choose-data.png)
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-query-choose-data.png" alt-text="Screenshot of Power Query Choose data window, select the financials table." lightbox="media/service-from-excel-to-stunning-report/power-query-choose-data.png":::
 
 ## Build your report
 
@@ -134,7 +134,7 @@ What about displaying a visual showing sales by product and market segment? That
 
    Power BI creates a clustered column chart.
 
-   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-clustered-column.png" alt-text="Screenshot of a clustered column chart in the report editor.":::
+   :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-clustered-column.png" alt-text="Screenshot of a clustered column chart in the report editor." lightbox="media/service-from-excel-to-stunning-report/power-bi-clustered-column.png":::
 
 1. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**.
 
