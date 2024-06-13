@@ -60,7 +60,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
 1. In **My workspace**, select **New** > **Report**.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the Report option.":::
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-new-report.png" alt-text="Screenshot of My workspace, highlighting the New dropdown menu and the New report option.":::
 
 1. Select **Excel**.
 
