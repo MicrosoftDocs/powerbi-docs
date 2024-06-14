@@ -275,6 +275,32 @@ The schema URL also defines the version of the document, which is expected to ch
 
 All the JSON schemas are published [here](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition).
 
+### PBIR annotations
+
+You can include annotations as name-value pairs within the report definition. While Power BI Desktop will ignore these annotations, they can be valuable for external applications like scripts. For instance, you could specify the defaultPage for the report, which can then be utilized by the deployment script.
+
+You can include annotations as name-value pairs within each visual, page, and report file:
+
+```json
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU06",
+      "reportVersionAtImport": "5.55",
+      "type": "SharedResources"
+    }
+  },
+  ...
+  "annotations": [
+    {
+      "name": "defaultPage",
+      "value": "c2d9b4b1487b2eb30e98"
+    }
+  ]
+}
+```
+
 ### External changes to PBIR files
 
 You can edit the PBIR JSON files using a code editor like [Visual Studio Code](https://code.visualstudio.com/) or an external tool, as long as the file obey the JSON schema. Using a wrong property name or type can be easily detected directly in Visual Studio Code:
