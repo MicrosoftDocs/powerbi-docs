@@ -71,6 +71,13 @@ To turn the capability off, deselect the **Publish dialogs support folder select
 
 To learn more about creating folders in Microsoft Fabric workspaces, read the [create folders in Microsoft Fabric workspaces](/fabric/get-started/workspaces-folders) article.
 
+## Considerations and Limitations
+
+The following storage mode conversions are not supported during republish:
+
+- If you first publish a report using Import mode, then change it to DirectQuery or Live Connect in Power BI Desktop, you won't be able to overwrite the report when you republish. This will not work.
+- If you first publish a report using a live connection, then change the storage mode or the target dataset in Power BI Desktop, you won't be able to overwrite the report when you republish.
+
 ## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
