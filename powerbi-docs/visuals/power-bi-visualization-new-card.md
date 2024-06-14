@@ -257,6 +257,8 @@ Reference labels are a new feature that allows you to add custom labels to your 
 
 1. When you're finished formatting your cards, click your mouse anywhere on the canvas to close the visual elements editor.
 
+[!INCLUDE [core-viz-alignment-align-baselines](../includes/core-visuals/core-viz-alignment-align-baselines.md)]
+
 ## Related content
 
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
