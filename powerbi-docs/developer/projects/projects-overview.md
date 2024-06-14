@@ -72,20 +72,15 @@ A collection of files and folders that represent a Power BI report. To learn mor
 
 ##### .gitIgnore
 
-Specifies intentionally untracked files Git should ignore. Power BI Desktop creates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving if it doesn't already exist.
+Specifies intentionally untracked files Git should ignore for Power BI Project files, such as the cache.abf and localSettings.json. 
 
-Semantic model and report subfolders each have default git ignored files specified in .gitIgnore:
+Power BI Desktop will create the [.gitignore](https://git-scm.com/docs/gitignore) file only if one does not already exist in the chosen save folder or parent Git repository.
 
-```md
-├── project
-│   ├── *.SemanticModel
-│   │   ├── .pbi
-│   │   │   ├── localSettings.json
-│   │   │   └── cache.abf
-│   ├── *.Report
-│   │   ├── .pbi
-│   │   │   └── localSettings.json
+Default content of .gitignore when saving as PBIP:
 
+```
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
 ```
 
 ##### \<project name>.pbip
