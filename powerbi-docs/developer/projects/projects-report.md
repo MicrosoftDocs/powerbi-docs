@@ -277,9 +277,9 @@ All the JSON schemas are published [here](https://github.com/microsoft/json-sche
 
 ### PBIR annotations
 
-You can include annotations as name-value pairs within the report definition. While Power BI Desktop will ignore these annotations, they can be valuable for external applications like scripts. For instance, you could specify the defaultPage for the report, which can then be utilized by the deployment script.
+You can include annotations as name-value pairs within the report definition for each `visual`, `page` and `report`. While Power BI Desktop will ignore these annotations, they can be valuable for external applications like scripts. 
 
-You can include annotations as name-value pairs within each visual, page, and report file:
+For instance, you could specify the defaultPage for the report at the `report.json` file, which can then be utilized by a deployment script.
 
 ```json
 {
