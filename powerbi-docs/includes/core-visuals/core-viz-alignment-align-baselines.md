@@ -1,6 +1,6 @@
 ---
-title: align baselines
-description: setting - align baselines
+title: Align baselines
+description: Setting: Align baselines
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
