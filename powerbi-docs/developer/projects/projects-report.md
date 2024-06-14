@@ -254,13 +254,16 @@ The report definition is stored inside the `definition\` folder with the followi
 |reportExtensions.json             |No       |Report extensions, such as report level measures.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/reportExtension)
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
+
 #### PBIR naming convention
 
-By default, the pages, visuals, and bookmarks use their report object name as their file or folder name. The object names are by default a 20-character unique identifier, such as '90c2e07d8e84e7d5c026'.
+All names within square brackets ([]) in the table above follow a default naming convention but can be renamed to more user-friendly names. By default, pages, visuals, and bookmarks use their report object name as their file or folder name. These object names are initially a 20-character unique identifier, such as '90c2e07d8e84e7d5c026'.
 
 :::image type="content" source="./media/projects-report/pbir-objectname.png" alt-text="Screenshot of PBIR name property.":::
 
-Renaming the file or folder is supported, and Power BI preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, might result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+Renaming the 'name' property within each JSON file is supported but might break external references both inside and outside the report. The object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+
+After renaming any PBIR files or folders, you must restart Power BI Desktop. Upon restart, Power BI Desktop will preserve the original file or folder names when saving.
 
 ### PBIR Json Schemas
 
