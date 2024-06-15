@@ -240,7 +240,6 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png" alt-text="Screenshot of the column chart with values on the y axis inverted.":::
 
-[!INCLUDE [alignment-align-baselines](../includes/core-visuals/alignment-align-baselines.md)]
 
 ## Considerations and limitations
 
