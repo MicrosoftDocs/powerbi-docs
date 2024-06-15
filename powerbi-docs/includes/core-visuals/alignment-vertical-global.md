@@ -1,6 +1,6 @@
 ---
-title: vertical alignment
-description: setting - vertical alignment
+title: Vertical alignment
+description: Setting - Vertical alignment (global, multiple instances)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-## Vertical alignment
+#### Vertical alignment
 
 This setting controls the vertical alignment, allowing you to choose between left, center, or right.

@@ -1,6 +1,6 @@
 ---
-title: header alignment
-description: setting - header alignment
+title: Header alignment
+description: Setting - Header alignment (Column headers, text)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-## Header alignment
+#### Header alignment
 
 This setting controls the header alignment, allowing you to choose between left, center, or right.
