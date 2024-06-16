@@ -23,9 +23,11 @@ For related "What's New" information, see:
 
 ### Show visuals as tables (preview)
 
-In this month’s update, we’ve added the Show Visuals as Tables view mode to all reports. Use this feature to instantly view all the visuals (excluding slicers, cards, and non-data-driven visuals) in your report as table visuals. This feature makes it possible for users who rely on accessibility screen readers to read the underlying data presented in each visual. It also benefits users who prefer to see their data in tabular form, which is more like viewing it in Excel. 
+The Power BI mobile apps now support showing report visuals as tables, just like you can do in the Power BI service. This feature enables you to instantly view all the visuals in a report (except slicers, cards, and non-data-driven visuals) as table visuals, and makes the underlying data accesibile to users who rely on accessibility screen readers. It also benefits users who prefer to see their data in tabular form, which is more like viewing it in Excel.
 
-To turn on the Show Visuals as Tables view mode, tap the new button that has been added to the options menu (...) in the report header. The view mode is applied to all pages in the report. To go back to the regular view, tap Show original visuals in the same menu.  
+To turn on this new viewing mode, open the options menu in the report header and tap **Show all visuals as tables**. The view mode is applied to all pages in the report. To go back to the regular view, open the options menu in the report header again and tap **Show original visuals**.  
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/show-all-visuals-as-tables.png" alt-text="Image showing the Show all visuals as tables and Show original visuals options in report header options." border="false":::
 
 ## April 2024
 
