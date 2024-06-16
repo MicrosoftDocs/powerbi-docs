@@ -254,13 +254,16 @@ The report definition is stored inside the `definition\` folder with the followi
 |reportExtensions.json             |No       |Report extensions, such as report level measures.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/reportExtension)
 |report.json                       |Yes      |Report metadata, such as report level filters and formatting.<br/>More information at [schema](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition/report)
 
+
 #### PBIR naming convention
 
-By default, the pages, visuals, and bookmarks use their report object name as their file or folder name. The object names are by default a 20-character unique identifier, such as '90c2e07d8e84e7d5c026'.
+All names inside the square brackets ([]) in the preceding table follow a default naming convention but can be renamed to more user-friendly names. By default, pages, visuals, and bookmarks use their report object name as their file or folder name. These object names are initially a 20-character unique identifier, such as '90c2e07d8e84e7d5c026'.
 
 :::image type="content" source="./media/projects-report/pbir-objectname.png" alt-text="Screenshot of PBIR name property.":::
 
-Renaming the file or folder is supported, and Power BI preserve the original file name when saving. However, renaming the 'name' property within each JSON file, while also supported, might result in breaking external references (both inside and outside of the report). Both the object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+Renaming the 'name' property within each JSON file is supported but might break external references both inside and outside the report. The object name and/or file/folder name must consist of one or more word characters (letters, digits, underscores) or hyphens.
+
+After renaming any PBIR files or folders, you must restart Power BI Desktop. Upon restart, Power BI Desktop will preserve the original file or folder names when saving.
 
 ### PBIR Json Schemas
 
@@ -271,6 +274,32 @@ Each PBIR JSON file includes a [JSON schema](https://json-schema.org/) declarati
 The schema URL also defines the version of the document, which is expected to change as the report definition evolves.
 
 All the JSON schemas are published [here](https://github.com/microsoft/json-schemas/tree/main/fabric/item/report/definition).
+
+### PBIR annotations
+
+You can include annotations as name-value pairs within the report definition for each `visual`, `page` and `report`. While Power BI Desktop will ignore these annotations, they can be valuable for external applications like scripts. 
+
+For instance, you could specify the defaultPage for the report at the `report.json` file, which can then be utilized by a deployment script.
+
+```json
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU06",
+      "reportVersionAtImport": "5.55",
+      "type": "SharedResources"
+    }
+  },
+  ...
+  "annotations": [
+    {
+      "name": "defaultPage",
+      "value": "c2d9b4b1487b2eb30e98"
+    }
+  ]
+}
+```
 
 ### External changes to PBIR files
 
