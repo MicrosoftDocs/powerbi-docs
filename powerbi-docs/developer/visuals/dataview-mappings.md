@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/12/2023
+#customer intent: As a Power BI visual developer, I want to understand how data view mapping works in Power BI visuals so that I can create different types of visuals.
 ---
 
 # Understand data view mapping in Power BI visuals

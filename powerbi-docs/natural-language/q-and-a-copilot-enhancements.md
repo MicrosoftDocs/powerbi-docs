@@ -8,6 +8,7 @@ ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 04/10/2024
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 # Enhance Q&A with Copilot for Power BI
 

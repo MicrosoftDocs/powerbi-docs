@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 01/23/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Update your data model to work well with Copilot for Power BI

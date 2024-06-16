@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/04/2023
+ms.topic: concept-article
+ms.date: 01/04/2024
+#customer intent: As a Power BI visual developer, I want to learn how to publish Power BI custom visuals to Microsoft AppSource so that others can discover and use them.
 ---
 
 # Guidelines for publishing Power BI custom visuals

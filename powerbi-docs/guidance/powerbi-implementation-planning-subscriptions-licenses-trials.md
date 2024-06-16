@@ -9,6 +9,7 @@ ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
 ms.date: 05/23/2024
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Power BI implementation planning: Subscriptions, licenses, and trials

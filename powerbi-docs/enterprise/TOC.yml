@@ -46,7 +46,7 @@
     - name: Alternate email address for Power BI
       href: service-admin-alternate-email-address-for-power-bi.md
     - name: Closing your account
-      href: service-admin-closing-your-account.md      
+      href: /fabric/enterprise/fabric-close-end-cancel      
   - name: Power BI sovereign clouds
     expanded: false
     items:
@@ -72,7 +72,7 @@
       - name: Purchase Power BI Premium for testing
         href: service-admin-premium-testing.md                                                  
       - name: Performance smoothing
-        href: service-premium-smoothing.md                    
+        href: /fabric/enterprise/throttling                    
       - name: Backup and restore Power BI Premium semantic models
         href: service-premium-backup-restore-dataset.md
       - name: Using autoscale with Power BI Premium
@@ -86,7 +86,7 @@
       - name: Semantic model connectivity with the XMLA endpoint
         href: service-premium-connect-tools.md
       - name: Interactive and background operations
-        href: service-premium-interactive-background-operations.md                 
+        href: /fabric/enterprise/fabric-operations                 
       - name: Troubleshoot XMLA endpoint connectivity
         href: troubleshoot-xmla-endpoint.md
       - name: Power BI Premium FAQ

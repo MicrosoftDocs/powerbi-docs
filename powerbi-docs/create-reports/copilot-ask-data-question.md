@@ -8,9 +8,9 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 06/03/2024
-ms.collection: ce-skilling-ai-copilot
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report creator, I want to learn how to use Copilot in Power BI to visualize data from my semantic model.
 ---
 
@@ -36,7 +36,7 @@ Since this is a preview feature, you'll need to enable it via the preview toggle
 
 To learn more about enabling preview features in the Copilot pane, see [Use Copilot preview features in Power BI](copilot-preview-toggle.md).
 
-Q&A also needs to be enabled for your report because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
+Q&A also needs to be enabled for your model because Copilot uses the same underlying engine to build queries from your inputs. For most data sources, Q&A is enabled by default.
 
 For some sources, like DirectQuery or Direct Lake models, you might need to enable Q&A manually, either in your semantic model settings in the Service or in your Data Load settings in Power BI Desktop. To learn more about the types of data sources Q&A supports, see [Data sources for natural language Q&A](../natural-language/q-and-a-data-sources.md).
 

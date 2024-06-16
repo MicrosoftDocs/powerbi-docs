@@ -15,6 +15,9 @@ ms.date: 04/10/2024
 > [!IMPORTANT]
 > Power BI Desktop projects is currently in **preview**.
 
+> [!TIP]
+> For guidance about how to plan a Power BI development, see [Power BI implementation planning](/power-bi/guidance/powerbi-implementation-planning-content-lifecycle-management-overview#the-power-bi-content-lifecycle).
+
 Power BI Desktop introduces a new way to author, collaborate, and save your projects. When you save your work as a ***Power BI Project*** (PBIP), report and semantic model *item* definitions are saved as individual plain text files in a simple, intuitive folder structure.
 
 Saving your work as a project has the following benefits:
@@ -61,7 +64,7 @@ Let's take a closer look at what you see in your project's root folder:
 
 ##### \<project name>.SemanticModel
 
-A collection of files and folders that represent a Power BI semantic model. It contains some of the most important files you're likely to work on, like model.bim. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
+A collection of files and folders that represent a Power BI semantic model. To learn more about the files and subfolders and files in here, see [Project Semantic Model folder](projects-dataset.md).
 
 ##### \<project name>.Report
 
@@ -69,20 +72,15 @@ A collection of files and folders that represent a Power BI report. To learn mor
 
 ##### .gitIgnore
 
-Specifies intentionally untracked files Git should ignore. Power BI Desktop creates the [.gitignore](https://git-scm.com/docs/gitignore) file in the root folder when saving if it doesn't already exist.
+Specifies intentionally untracked files Git should ignore for Power BI Project files, such as the cache.abf and localSettings.json. 
 
-Semantic model and report subfolders each have default git ignored files specified in .gitIgnore:
+Power BI Desktop will create the [.gitignore](https://git-scm.com/docs/gitignore) file only if one does not already exist in the chosen save folder or parent Git repository.
 
-```md
-├── project
-│   ├── *.SemanticModel
-│   │   ├── .pbi
-│   │   │   ├── localSettings.json
-│   │   │   └── cache.abf
-│   ├── *.Report
-│   │   ├── .pbi
-│   │   │   └── localSettings.json
+Default content of .gitignore when saving as PBIP:
 
+```
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
 ```
 
 ##### \<project name>.pbip
@@ -192,7 +190,6 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 
 ## Considerations and limitations
 
-- This feature requires a Premium license.
 - Power BI Desktop isn't aware of changes made with other tools or applications. Changes made by using external tools require you to restart Power BI Desktop before those changes are shown.
 - Sensitivity labels aren't supported with Power BI projects.
 - Diagram view is ignored when editing models in the Service.
@@ -201,7 +198,7 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
 - Report Linguistic Schema is not supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
-- Power BI Projects currently not supported in Microsoft Power BI Desktop (Optimized for Power BI Report Server).
+- Power BI Projects is currently not supported in Microsoft Power BI Desktop version optimized for Power BI Report Server.
 
 ## Frequently asked questions
 

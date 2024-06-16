@@ -119,6 +119,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * If you create a [report by using the **Create** button](service-quick-create-report.md) in the Power BI service, and it's based on a semantic model in another workspace, you can't download it.
 * Reports created in Power BI Desktop must be *published* or *uploaded* to the Power BI service before you can download them.
 * If you create a report in the Power BI service, you have to save it before you can download it.
+* You can't download reports based on Direct Lake semantic models.
 * You can't download reports based on semantic models that are imported from OneDrive for work or school.
 * You can't download reports based on local [Excel](../connect-data/service-excel-workbook-files.md) or [CSV](../connect-data/service-comma-separated-value-files.md) files that were uploaded to Power BI.
 * The report you're downloading must be published or updated after November 23, 2016. Reports published earlier aren't downloadable.
@@ -143,6 +144,7 @@ This section lists the limitations of downloading a .pbix file. This section is 
 * Downloading a .pbix file after deployment isn't supported as part of the [deployment pipeline (ALM)](/fabric/cicd/deployment-pipelines/understand-the-deployment-process#considerations-and-limitations).
 * Semantic models modified by using the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) can't be downloaded to a .pbix file.
 * You can't download semantic models based on data imported from OneDrive for work or school.
+* You can't download Direct Lake semantic models.
 * Downloading a .pbix is subject to size limitations. The maximum sized allowed depends on the minimum of two factors: [maximum offline semantic model size for the capacity SKU](../enterprise/service-admin-premium-workloads.md#max-offline-semantic-model-size) and the customizable max offline dataset size. Downloading a .pbix where the data model size is larger than 50 GB is not supported. Downloading a .pbix file that's larger than any of these limits is only supported when the .pbix is in [live connected report mode](#download-modes).
 * Semantic models with [automatic aggregations](../enterprise/aggregations-auto.md#considerations-and-limitations) enabled can't be downloaded to a .pbix file. You must disable automatic aggregations training in the semantic model settings and delete the aggregations tables by selecting the checkbox **Delete automatic aggregations tables**.
 * Attempting to concurrently download a semantic model enabled for large semantic model storage format may result in errors.

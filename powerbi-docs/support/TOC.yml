@@ -5,8 +5,6 @@
   - name: About Support requests
     items:
     - name: Support overview
-      href: /power-platform/admin/support-overview
-    - name: How to contact Support
       href: service-support-options.md
     - name: Create a Support ticket
       href: create-support-ticket.md

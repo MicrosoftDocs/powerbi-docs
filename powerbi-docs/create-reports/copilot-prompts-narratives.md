@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 01/11/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Write Copilot prompts to create narrative visuals in Power BI
