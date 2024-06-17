@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-ms.date: 03/06/2024
+ms.date: 03/07/2024
 ---
 
 # Power BI implementation planning: Tenant-level auditing
