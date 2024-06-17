@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 12/2/2023
+#customer intent: As a Power BI user, I want to learn how to import a custom visual from AppSource or from a file so that I can use it in my Power BI reports.
 ---
 
 # Import a Power BI visual from AppSource into your workspace
