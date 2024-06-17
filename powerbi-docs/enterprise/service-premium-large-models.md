@@ -151,8 +151,6 @@ For semantic models using the large semantic model storage format, Power BI auto
 
 Keep in mind the following restrictions when using large semantic models:
 
-* **Download to Power BI Desktop**: If a semantic model is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
-
 * **Supported regions**: Large semantic models are available in Azure regions that support [Azure Premium Files Storage](/azure/storage/files/storage-files-planning#storage-tiers). Review the table in [region availability](#region-availability) to see a list of all the supported regions.
 
 * **Setting maximum semantic model size**: Maximum semantic model size can be set by administrators. For more information, see *Max Memory* in [Datasets](service-admin-premium-workloads.md#semantic-models).
