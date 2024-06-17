@@ -240,7 +240,6 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
   :::image type="content" source="media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis-invert.png" alt-text="Screenshot of the column chart with values on the y axis inverted.":::
 
-
 ## Considerations and limitations
 
 - For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
