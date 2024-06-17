@@ -6,8 +6,8 @@ ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
-ms.topic: conceptual
-ms.date: 04/04/2024
+ms.topic: quickstart
+ms.date: 06/12/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
