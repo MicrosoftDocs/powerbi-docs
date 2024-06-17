@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/12/2024
+ms.date: 06/17/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 ---
@@ -18,13 +18,13 @@ This article explains how individuals can sign up or purchase Microsoft Power BI
 
 This article is for business users who want to sign up for or purchase Power BI themselves. If you're part of an organization where your administrator assigns the licenses directly to you, then this article isn't for you. 
 
-This *self-service* method includes buying a paid licenses, starting trials, and getting free or paid licenses that an admin makes available for users in an organization. If the term self-service is new to you, or if you're an administrator who manages self-service, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins) or [What is self-service](/microsoft-365/admin/misc/self-service-sign-up).
+This *self-service* method includes buying a paid license, starting trials, and getting free or paid licenses that an admin makes available for users in an organization. If the term self-service is new to you, or if you're an administrator who manages self-service, visit [Self-service for Microsoft 365 products and services](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins) or [What is self-service](/microsoft-365/admin/misc/self-service-sign-up).
 
 If you're unable to sign up or to purchase Power BI, it might be because your admin disabled self-service options. Contact your administrator and ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
 
 ## Look up your current license or trial
 
-You may already have a Power BI license or trial. See, [licenses and trials](../consumer/end-user-license.md#find-out-which-licenses-you-have) to learn how to look it up.
+You may already have a Power BI license or trial. To learn more, see [licenses and trials](../consumer/end-user-license.md#find-out-which-licenses-you-have) to learn how to look it up.
 
 #### [Free sign-ups and trials](#tab/free-sign-ups-and-trials)
 
@@ -32,7 +32,7 @@ You may already have a Power BI license or trial. See, [licenses and trials](../
 
 Your organization purchased a Power BI subscription that includes licenses. Self-service is enabled. Open Power BI in a browser (app.powerbi.com) to activate a license for yourself. The license you're assigned depends on the organizational subscription and self-service settings. 
 
-If you haven't used Power BI before, you can activate your license by selecting a link in email. Colleagues share Power BI items in email, and selecting a one of these links initiates signing up for a license. 
+If you never used Power BI before, you can activate your license by selecting a link in email. Colleagues share Power BI items in email, and selecting a one of these links initiates signing up for a license. 
 
 Another way to activate your license is to select a **Try free** or **Upgrade now** button. 
 
