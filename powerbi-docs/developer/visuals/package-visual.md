@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/3/2022
+ms.date: 06/03/2024
+#customer intent: As a Power BI visual developer, I want to learn how to package a Power BI visual so that I can share it with others.
 ---
 
 # Package a Power BI visual

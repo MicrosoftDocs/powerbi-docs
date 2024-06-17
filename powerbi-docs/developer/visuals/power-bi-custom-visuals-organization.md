@@ -6,9 +6,10 @@ ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/27/2022
 LocalizationGroup: Visualizations
+#customer intent: As a Power BI admin, I want to learn how to deploy and manage organizational visuals so that I can meet the unique needs of my organization.
 ---
 
 # Power BI organizational visuals

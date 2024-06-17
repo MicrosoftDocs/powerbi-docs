@@ -1,15 +1,16 @@
 ---
 title: Main sources for acquiring Power BI custom visuals
-description: This article describes the main ways of getting Power BI custom visuals.
+description: This article describes the main ways of acquiring Power BI custom visuals that you can use in your Power BI reports.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: overview
-ms.date: 11/2/2022
+ms.date: 11/2/2023
 LocalizationGroup: Visualizations
 ms.custom: intro-overview, engagement-fy23
+#customer intent: As a Power BI user, I want to learn about the different sources for acquiring custom visuals so that I can enhance my Power BI reports.
 ---
 
 # What are custom visuals in Power BI and where can I get them?
