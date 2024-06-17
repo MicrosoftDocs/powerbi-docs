@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 06/17/2024
+#customer intent: As a Power BI visual developer, I want to learn how to add high-contrast mode support to Power BI visuals so that they are accessible to users with visual impairments.
 ---
 
 # High-contrast mode support in Power BI visuals
