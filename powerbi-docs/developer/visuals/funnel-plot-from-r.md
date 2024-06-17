@@ -30,7 +30,7 @@ In this example the funnel plot is used to compare and analyze various sets data
 
 ## Prerequisites
 
-- Get a [Microsoft Fabric subscription](/fabric/enterprise/licenses.md). Or, sign up for a free [Microsoft Fabric trial](/fabric/get-started/fabric-trial.md).
+- Get a [Microsoft Fabric subscription](/fabric/enterprise/licenses). Or, sign up for a free [Microsoft Fabric trial](/fabric/get-started/fabric-trial).
 
 - Install [pbiviz tools](./environment-setup.md#install-pbiviz).
 
