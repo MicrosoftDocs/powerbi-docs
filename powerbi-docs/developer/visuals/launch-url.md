@@ -7,14 +7,15 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 06/18/2019
+ms.date: 12/18/2023
+#customer intent: As a Power BI visual developer, I want to learn how to create a visual that opens a URL in a new browser tab so that I can provide additional information to the user.
 ---
 
 # Create a launch URL
 
-By creating a launch URL, you can open a new browser tab or window by adding the `host.launchUrl()` API call to the code of a Power BI visual.
+A launch URL lets you open a new browser tab or window by adding the `host.launchUrl()` API call to the code of a Power BI visual.
 
-> [!IMPORTANT]
+> [!NOTE]
 > The `host.launchUrl()` method was introduced in Visuals API 1.9.0.
 
 ## Sample
@@ -45,12 +46,6 @@ Use the `host.launchUrl()` API call and pass your destination URL as a string ar
 ```typescript
 this.host.launchUrl('https://some.link.net');
 ```
-
-## Restrictions
-
-* Use only absolute paths, not relative paths. For example, use an absolute path such as `https://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
-
-* Currently, only *HTTP* and *HTTPS* protocols are supported. Avoid *FTP*, *MAILTO*, and other protocols.
 
 ## Best practices
 
@@ -153,3 +148,9 @@ if (settings.generalView.showHelpLink) {
 ```
 
 The hidden class is defined in the *visual.less* file to control the display of the element.
+
+## Considerations and limitations
+
+* Use only absolute paths, not relative paths. For example, use an absolute path such as `https://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
+
+* Currently, only *HTTP* and *HTTPS* protocols are supported. Avoid *FTP*, *MAILTO*, and other protocols.

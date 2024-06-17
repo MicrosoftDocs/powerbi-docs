@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 1/19/2024
+#customer intent: As a Power BI visual developer, I want to learn how to create mobile-friendly visuals so that I can provide a better user experience on mobile devices.
 ---
 
 # How to create mobile-friendly Power BI visuals

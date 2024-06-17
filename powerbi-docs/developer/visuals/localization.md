@@ -8,7 +8,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 10/10/2023
+#customer intent: As a Power BI visual developer, I want to learn how to localize my visual to the Power BI locale so that I can provide content in the user's language.
 ---
 
 # Add the local language to your Power BI visual

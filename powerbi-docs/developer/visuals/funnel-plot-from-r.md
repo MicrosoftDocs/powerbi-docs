@@ -1,34 +1,38 @@
 ---
 title: Build a funnel plot from R script to R visual
-description: This article describes how to build a funnel plot from R script to R Power BI visual.
+description: This tutorial gives step by step instructions on how to build a funnel plot from R script to R Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 04/02/2020
+ms.date: 06/17/2024
+#customer intent: As a Power BI visual developer, I want to learn how to build a funnel plot from R script to R visual so that I can compare and analyze various sets of data.
 ---
 
 # Tutorial: Build a funnel plot from R script to R visual
 
-This article describes how to build a funnel plot using R script in R visual step by step.
+This article describes how to build a funnel plot using R script in R visual step by step. Source files are available for download under each set of steps.
 
 In this article, you learn how to create:
 
 > [!div class="checklist"]
 >
-> * an R-script for RStudio
-> * an R-visual in Power BI
-> * a *PNG-based* R-powered Visual in Power BI
-> * a *HTML-based* R-powered Visual in Power BI
+> - an R-script for RStudio
+> - an R-visual in Power BI
+> - a PNG-based R-powered Visual in Power BI
+> - a HTML-based R-powered Visual in Power BI
 
 The funnel plot provides an easy way to consume, interpret, and show the amount of expected variation. The **funnel** is formed using confidence limits and outliers are shown as dots outside the funnel.
 
-In this example the funnel plot is used to compare and analyze various sets data.  
+In this example the funnel plot is used to compare and analyze various sets data.
 
-> [!NOTE]
-> Source files are available for download under each set of steps.
+## Prerequisites
+
+- Get a [Microsoft Fabric subscription](/fabric/enterprise/licenses). Or, sign up for a free [Microsoft Fabric trial](/fabric/get-started/fabric-trial).
+
+- Install [pbiviz tools](./environment-setup.md#install-pbiviz).
 
 ## Build an R script with semantic model
 
@@ -44,8 +48,6 @@ Next, edit the script to mirror [this script](https://github.com/PowerBi-Project
 > The `dataset` is a hard-coded name for the input `data.frame` of any R-visual. 
 
 ## Create an R-powered visual and package in R code
-
-1. Before you begin, be sure to [install PBIVIZ tools](./environment-setup.md#install-pbiviz).
 
 1. Run the following command to create a new R-powered visual:
 
