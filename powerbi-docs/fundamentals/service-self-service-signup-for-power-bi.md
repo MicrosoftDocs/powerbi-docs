@@ -16,38 +16,18 @@ LocalizationGroup: Get started
 
 ***Power BI service*** can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how individuals can use *self-service sign-up* and *self-service purchase* to get a free, paid, or trial license for the Power BI service for themselves. If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md). To download the free Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md).
 
-For definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
+This quickstart takes you through the steps to XXX. For an in-depth review of the many ways to sign up or purchase Power BI, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
 
-For descriptions of the license and subscription options for Power BI and Fabric, see [Microsoft Fabric concepts and licenses.](/fabric/enterprise/licenses)
+## Prerequisites
 
-## Power BI and Fabric
+To complete this quickstart, first familiarize yourself with these concepts. 
 
-Microsoft Fabric is a platform that allows users to get, create, share, and visualize data using various tools. To share content and collaborate in Microsoft Fabric, your organization needs to have a capacity subscription and at least one per-user license. The per-user licenses are: Fabric free, Power BI Pro, and Power BI Premium per user. For more information, see the **Capacity licenses** and **User licenses** sections of the [Fabric licenses article.](/fabric/enterprise/licenses)
+- Definitions and an overview of self-service-sign-up and self-service purchase, visit [Self-service for Power BI](service-self-service-signup-purchase-for-power-bi.md).
 
-Power BI is one of the experiences available in Microsoft Fabric. Power BI is one component of Fabric. Power BI is also available as a standalone service. You might be someone who uses only the Power BI experience and you might be someone who works with more than one of the Fabric experiences.
+- Descriptions of the license and subscription options for Power BI and Fabric, see [Microsoft Fabric concepts and licenses.](/fabric/enterprise/licenses)
 
-- For more information, see [What is Microsoft Fabric.](/fabric/get-started/microsoft-fabric-overview)
-
-## License scenarios
-
-Use this chart to help determine which type of license and subscription you need. Power BI Desktop is always free. Fabric offers a Fabric free license, a Fabric capacity trial, and paid Power BI license options (Pro and PPU). Power BI offers three licenses: Fabric free, Power BI Pro, and PPU.
-
-- A Microsoft Fabric free license gives you an opportunity to use the Power BI features available to free users.
-- A Microsoft Fabric free license gives you an opportunity to try all of the Fabric features available to free users. To use collaboration and sharing features, you'll also need access to an organizational Premium capacity. Premium capacity is where your Pro and PPU colleagues share content with you. 
-- A Fabric 60-day trial provides a trial capacity for you to create and work with all of the item types available in Fabric (including Power BI). Otherwise, to fully use a Fabric free license, purchase Fabric capacity. 
-- A Power BI Pro 60-day trial provides the paid features of Pro. You become the admin for the subscription and can add users and assign free licenses for Power BI and Fabric.
-- A paid per-user license for Power BI (Pro or PPU) provides access to paid features of Power BI Pro. The access includes standalone Power BI and the Power BI experience within Fabric.
-
-To learn more about licenses and subscriptions, see [Licenses and subscriptions.](service-features-license-type.md)
-
-When deciding which license + subscription model you need, ask yourself these questions. "Will I be using only Power BI or will I be using other experiences in Fabric?" "Will I be creating content or will I only be consuming content created by others?" "Will I be sharing my content with others?", "Do I have access to a Power BI Premium capacity subscription?" For help with answering these questions, see the [Power BI feature list for consumers](../consumer/end-user-features.md), [What is Premium](../enterprise/service-premium-what-is.md), and [Licenses and subscriptions for business users and consumers](../consumer/end-user-license.md).
-
-| Scenario  | Creator  | Consumer |
-|-----------|----------|----------|
-| You create a report in Power BI Desktop (.PBIX). Then you publish it to your **My Workspace** on the Power BI service. | As a creator, you only need the free Desktop app and a Fabric free license to publish to your My Workspace in the Power BI service for your own use. However, to share that content with others requires a paid Power BI Pro or PPU license. | Consumers can't see content in other people's My Workspace unless the owners decide to share. To see shared content requires a paid license. |
-| You create a report in Power BI Desktop (.PBIX) and share the PBIX file to other people who open the file in Power BI Desktop. | No licensing needed, only the Power BI Desktop app to be downloaded and installed. | No licensing needed, only the Power BI Desktop app to be downloaded and installed. |
-| You create a report in Power BI Desktop (.PBIX) and publish it to a shared workspace in the Power BI service. |   Paid license needed to publish to shared workspaces. | Paid license required to view the content unless the workspace is hosted in Premium capacity. For workspaces in Premium capacity, the consumer only needs a Fabric (free) license to view that report. |
-| You're sent a link to a report hosted on the Power BI service and want to view it. | You need a paid license to share a link. You need a Fabric (free) license to share a link to a report that is in Premium capacity. | A paid license is required to view the report unless the report is hosted in Premium capacity. For reports hosted in Premium capacity, the consumer only needs a Fabric (free) license to view that report. |
+- [How Power BI and Fabric work together](../enterprise/service-admin-licensing-organization.md)
+- The types of email addresses that work with Power BI. 
 
 ## Supported email addresses
 
@@ -65,9 +45,6 @@ The exact steps for signup vary depending on your organization and what you sele
 
 - Select a **Try free** or **Start free** button. Find these types of buttons on `powerbi.microsoft.com`, in related Microsoft products, and in documentation and marketing articles.
 - Receive an email with a link to a Power BI dashboard, report, or app. And, clicking the link is your first time signing in to this Power BI account.
-
-> [!NOTE]
-> Power BI is one of the experiences available in Microsoft Fabric. Microsoft Fabric is a comprehensive suite of analytics services, all in one place. To learn more about Fabric, see [What is Microsoft Fabric?](/fabric/get-started/microsoft-fabric-overview)
 
 1. Select **Try free** or **Get started** from [powerbi.microsoft.com](https://powerbi.com).
 
@@ -87,11 +64,7 @@ The exact steps for signup vary depending on your organization and what you sele
 
 1. At this point, you might have to wait if Microsoft is [setting up a new tenant](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser. 
 
-You now have a Fabric free license to explore the free features of all of the Fabric experiences, including the Power BI service. If a Fabric free license is sufficient, you don't have to do anything else. If you find that you need to upgrade, start a trial or purchase a paid license.
-
-## Use self-service sign-up to start an individual Fabric trial
-
-Congratulations on signing into your Fabric account for the first time. You now have a free license. This section describes how to start a trial. To purchase a paid license for Power BI, see [purchase Power BI.](#use-self-service-purchase-to-buy-an-individual-power-bi-license)
+You now have a Fabric free license to work in Power BI and to explore the free features of all of the Fabric experiences. If a Fabric free license is sufficient, you don't have to do anything else. If you find that you need to upgrade, [start a Power BI trial], [start a Fabric capacity trial], or [purchase a paid license](#use-self-service-purchase-to-buy-an-individual-power-bi-license).
 
 If a Fabric free license is sufficient, you don't have to do anything else. There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 

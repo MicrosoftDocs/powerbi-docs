@@ -32,7 +32,7 @@ You may already have a Power BI license or trial. To learn more, see [licenses a
 
 Your organization purchased a Power BI subscription that includes licenses. Self-service is enabled. Open Power BI in a browser (app.powerbi.com) to activate a license for yourself. The license you're assigned depends on the organizational subscription and self-service settings. 
 
-If you never used Power BI before, you can activate your license by selecting a link in email. Colleagues share Power BI items in email, and selecting a one of these links initiates signing up for a license. 
+If you never used Power BI before, you can activate your license by selecting a link in email. Colleagues share Power BI items in email, and selecting one of these links initiates signing up for a license. 
 
 Another way to activate your license is to select a **Try free** or **Upgrade now** button. 
 
