@@ -69,7 +69,8 @@ What if while working with a datamart, you’d like to visualize and explore the
 
 ## 3. Begin exploring by building your matrix or visual 
 
-Regardless of where you start from, when you launch the explore experience you land in the new focused view. Your data is on the right, and you can edit, drag and drop, or select fields to start building a matrix or visual.  
+Regardless of where you start from, when you launch the explore experience you land in the new focused view. Your data appears in the data pane, and you can edit, drag and drop, or select fields to start building a matrix or visual. 
+*Note: Some users may see the data pane on the left as we experiment with placement to optimize the experience.*  
 
 :::image type="content" source="media/explore-data-service/begin-exploration.png" alt-text="Screenshot showing the Explore window opened." lightbox="media/explore-data-service/begin-exploration.png":::
 
