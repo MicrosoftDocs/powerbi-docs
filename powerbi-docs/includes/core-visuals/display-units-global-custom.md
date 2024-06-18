@@ -1,6 +1,6 @@
 ---
-title: display units for categorical axis
-description: setting - display units for categorical axis
+title: Display units
+description: Setting - Display units with custom option (Global use)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,7 +10,7 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-## Display units
+#### Display units
 
 The menu offers several options for defining the Display units:
 
@@ -20,3 +20,4 @@ The menu offers several options for defining the Display units:
 - **Millions**: Divides the value by 1,000,000 and appends an "M" suffix.
 - **Billions**: Divides the value by 1,000,000,000 and appends a "B" suffix.
 - **Trillions**: Divides the value by 1,000,000,000,000 and appends a "T" suffix.
+- **Custom**: Allows user to customize how data values are displayed in the visual. When the Custom option is selected, a Format code input field becomes as shown below.
