@@ -1,6 +1,6 @@
 ---
 title: Color
-description: Setting - Color (Color, (global use))
+description: Setting - Color (Color, fx (global use))
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 #### Color
 
-This setting allows you to customize the color by selecting colors from the color palette.
+This setting allows you to customize the color by either selecting from the color palette or applying conditional formatting.
