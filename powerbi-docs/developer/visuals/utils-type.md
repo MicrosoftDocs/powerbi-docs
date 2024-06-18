@@ -1,14 +1,15 @@
 ---
 title: Introduction to use type utils in Power BI visual
-description: This article describes how to use SVG utils to extend the basic types for Power BI visuals.
+description: This article describes how to use SVG utils to extend the basic types for Power BI visuals and provides examples for each function.
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/04/2023
+ms.topic: concept-article
+ms.date: 01/04/2024
+#customer intent: As a developer, I want to understand how to use type utils to enhance my Power BI visuals.
 ---
 
 # Type utils

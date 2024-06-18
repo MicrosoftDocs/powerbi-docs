@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 08/09/2023
+ms.topic: concept-article
+ms.date: 06/09/2024
+#customer intent: As a Power BI developer, I want to learn about the files and their contents that are created by the Power BI visuals tool when I create a new visual.
 ---
 
 # Power BI visual project structure

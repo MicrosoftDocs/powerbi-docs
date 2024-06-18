@@ -6,15 +6,16 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/12/2023
+ms.topic: concept-article
+ms.date: 01/12/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use the Power BI visuals test utils so I can create more efficient visuals.
 ---
 
 # Power BI visuals test utils
 
 This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements, such as data views, selections, and color schemas.
 
-## Requirements
+## Prerequisites
 
 To use this package, install:
 
