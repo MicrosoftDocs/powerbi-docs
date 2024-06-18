@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 01/13/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use color utils to apply themes and palettes on Power BI visual's data points.
 ---
 
 # Color utils

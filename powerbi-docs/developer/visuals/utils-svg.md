@@ -7,8 +7,9 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/10/2023
+ms.topic: concept-article
+ms.date: 01/10/2024
+#customer intent: As a developer, I want to learn about the SVG utils package and see examples of how I can use them to simplify SVG manipulations for Power BI visuals.
 ---
 
 # SVG utils

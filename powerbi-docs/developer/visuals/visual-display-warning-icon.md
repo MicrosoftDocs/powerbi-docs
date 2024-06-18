@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/16/2023
+ms.date: 03/16/2024
+#customer intent: As a Power BI developer, I want to learn how to add a display warning icon to my Power BI visual to notify users of possible problems or errors.
 ---
 
 # Add a display warning icon to your visual
