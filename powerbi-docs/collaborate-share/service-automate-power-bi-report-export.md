@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/24/2022
+ms.date: 06/19/2024
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
@@ -53,6 +53,9 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
 10. Select the desired **Export Format** for your Power BI report.
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for Power BI reports.":::
+
+    > [!NOTE]
+    > If you export multiple pages to PNG format, a series of *.png* files, each file representing one report page, will be compressed into a *.zip* file which will be attached to your email.
 
 11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL as shown in the example. 
  
