@@ -49,7 +49,7 @@ In this section, you create a project for the circle card visual.
 
 3. Open the *CircleCard* folder in the **VS Code** explorer. (**File** > **Open Folder**).
 
-   :::image type="content" source="./media/develop-circle-card/circle-card-explorer.png" alt-text="Screenshot of VS code window opened to the circle card folder.":::
+   :::image type="content" source="./media/develop-circle-card/circle-card-explorer.png" alt-text="Screenshot of VS Code window opened to the circle card folder.":::
 
    For a detailed explanation of the function of each of these files, see [Power BI visual project structure](./visual-project-structure.md).
 
@@ -366,7 +366,7 @@ Modify the **capabilities.json** file to define the data role, objects, and data
 
 * **Define the data role**
 
-    Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a field that's summed up.
+    Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a summed up field.
 
     1. Open the **capabilities.json** file in VS Code.
 
@@ -497,7 +497,7 @@ The visual now displays the name and value of the selected data field.
 
 :::image type="content" source="./media/develop-circle-card/circle-card-final-visual.png" alt-text="Screenshot of a circle card visual displaying the quantity value.":::
 
-You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
+You created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
 ## Related content
 
