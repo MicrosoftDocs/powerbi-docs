@@ -441,7 +441,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
 2. Notice that the circle card visual can now be configured with a field titled *Measure*. You can drag and drop elements from the **Data** pane into the *Measure* field.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the circle card measure filed, in the Power BI service visualization pane.](media/develop-circle-card/measure2.png)
+    >![Screenshot of the circle card measure filed, in the Power BI service visualization pane.](media/develop-circle-card/measure-2.png)
 
     > [!Note]
     > The visual project does not yet include data binding logic.
