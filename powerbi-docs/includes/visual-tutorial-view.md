@@ -5,7 +5,7 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 08/07/2022
+ms.date: 06/18/2024
 ms.custom: include file
 ---
 
@@ -47,10 +47,10 @@ You can also use your own report to test the visual.
     >
     >![Screenshot of the new visual displaying a connection error.](media/visual-tutorial-view/connection-error.png)
 
-6. While the new visual is selected, go to the **Fields** pane, expand **Sales**, and select **Quantity**.
+6. While the new visual is selected, go to the **Data** pane, expand **Sales**, and select **Quantity**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/visual-tutorial-view/fields-sales-quantity.png)
+    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/visual-tutorial-view/data-sales-quantity.png)
 
 7. To test how the visual is responding, resize it and notice that the *Update count* value increments every time you resize the visual.
 

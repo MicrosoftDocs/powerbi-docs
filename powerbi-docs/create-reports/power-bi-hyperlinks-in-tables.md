@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 08/03/2022
+ms.date: 06/19/2024
 LocalizationGroup: Visualizations
 ---
 # Add hyperlinks (URLs) to a table or matrix
@@ -151,7 +151,7 @@ A: No. You can use a link icon. If you need custom text for your hyperlinks and 
 ## Related content
 
 - [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
-
+- [Apply conditional formatting in tables and matrixes](desktop-conditional-table-formatting.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
