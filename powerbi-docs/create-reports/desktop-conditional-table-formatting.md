@@ -175,6 +175,8 @@ With **Web URL** formatting applied to the **State** field, each state name is a
 
 ![Table with web URL and data bars for Overall rank column.](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
+See [Add hyperlinks (URLs) to a table or matrix](power-bi-hyperlinks-in-tables.png) for more on formatting URLs in a table.
+
 ## Totals and subtotals
 
 You can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
