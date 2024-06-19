@@ -46,7 +46,7 @@ To format cell background or font color by color scale, in the **Format style** 
 
 Under **Summarization**, specify the aggregation type you want to use for the selected field. Under **Default formatting**, select a formatting to apply to blank values. 
 
-Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Drop down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Add a middle color** check box to also specify a **Center** value and color. 
+Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Select the drop-down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Add a middle color** check box to also specify a **Center** value and color. 
 
 ![Conditional formatting dialog for background color: Format style is set to Gradient](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
