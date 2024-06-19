@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
 ms.custom: video-6CQnf-NGtpU
-ms.date: 62/18/2024
+ms.date: 06/18/2024
 ---
 # How to find your report server product key
 Learn how you can find your Power BI Report Server product key to install your server in a production environment.
