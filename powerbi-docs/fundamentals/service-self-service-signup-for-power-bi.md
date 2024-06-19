@@ -74,13 +74,14 @@ There are many different buttons that Microsoft publishes for new Power BI users
 
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-account-manager.png" alt-text="Screenshot of your Power BI Account manager with your icon and license type outlined in red.":::
 
-You now have a Fabric free license to work in Power BI and to explore the free features of all of the Fabric workloads. If a Fabric free license is sufficient, you don't have to do anything else. If you find that you need to upgrade, [start a Power BI trial], [start a Fabric capacity trial], or [purchase a paid license](#use-self-service-purchase-to-buy-an-individual-power-bi-license).
+You now have a Fabric (Free) license to work in Power BI and to explore the free features of all of the Fabric workloads. If a Fabric free license is sufficient, you don't have to do anything else. 
+- If you find that you need more than a Fabric (Free) license to work in the Power BI service, the last section of this article explains how to upgrade to a Pro or PPU license. 
+- If you find that you need more than a Fabric (Free) license to work in Fabric, see [Trial of a Fabric capacity](/fabric/get-started/fabric-trial.md)
 
 There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 
-However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses) And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. If all of the content that you need is saved in Premium capacity, then a Pro or PPU license might not be necessary.
+### Get a license by selecting an email link
 
-A Fabric trial includes a license for the paid version of Power BI, which includes a Power Power BI Premium Per User (PPU) license. The trial also includes a trial Fabric capacity to use for exploring all of the Fabric experiences.
 
 Customers typically start a trial one of two ways:
 
@@ -214,6 +215,7 @@ The type of upgrade and trial options that you're offered depends on how your ad
 
 
 
+EXTRA CONTENT
 
   Or, select an email link to a Power BI dashboard, report, or app.
 
@@ -227,3 +229,13 @@ The type of upgrade and trial options that you're offered depends on how your ad
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-recognizes.png" alt-text="Screenshot of Power BI service showing that Microsoft recognizes the email.":::
 
 1. At this point, you might have to wait if Microsoft is [setting up a new tenant](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser. 
+1. 
+1. 
+1. 
+1. 
+1. upgrade, [start a Power BI trial], [start a Fabric capacity trial], or [purchase a paid license](#use-self-service-purchase-to-buy-an-individual-power-bi-license).
+1. 
+1. 
+1. However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses) And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. If all of the content that you need is saved in Premium capacity, then a Pro or PPU license might not be necessary.
+
+A Fabric trial includes a license for the paid version of Power BI, which includes a Power Power BI Premium Per User (PPU) license. The trial also includes a trial Fabric capacity to use for exploring all of the Fabric experiences.
