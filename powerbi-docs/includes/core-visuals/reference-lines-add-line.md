@@ -1,6 +1,6 @@
 ---
 title: Add line
-description: Setting - Add line (Reference line)
+description: Setting - Add line (Reference lines, Add line)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

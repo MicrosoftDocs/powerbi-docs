@@ -1,12 +1,12 @@
 ---
 title: Series explosion
-description: Setting - Series explosion (Column settings, Layout, Series)
+description: Setting - Series explosion (Columns, Layout, Series explosion)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 06/13/2024
+ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---

@@ -1,6 +1,6 @@
 ---
 title: Title alignment
-description: Setting - Title alignment (Column headers, Title, Alignment)
+description: Setting - Title alignment (Column headers, Title alignment)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

@@ -1,12 +1,12 @@
 ---
 title: Format code
-description: Setting - Format code (Global use)
+description: Setting - Format code (Reference labels, Value, Format code)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 06/13/2024
+ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---

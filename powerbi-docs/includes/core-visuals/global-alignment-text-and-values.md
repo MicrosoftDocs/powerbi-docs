@@ -1,6 +1,6 @@
 ---
 title: Alignment
-description: Setting - Alignment (Row headers, Text - Specific column, Values)
+description: Setting - Alignment (Global - Row headers, Text + Specific column, Values)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 #### Vertical alignment
 
-This setting controls the vertical alignment, allowing you to choose between left, center, or right.
+This setting controls the vertical alignment, allowing you to choose between top, middle, or bottom.

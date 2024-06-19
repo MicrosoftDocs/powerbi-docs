@@ -1,12 +1,12 @@
 ---
 title: Invert range
-description: Setting - Invert range (X-axis, Settings, Range, Invert )
+description: Setting - Invert range (X-axis, Range, Invert range)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 06/13/2024
+ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---

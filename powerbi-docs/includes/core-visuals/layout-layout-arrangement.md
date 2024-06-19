@@ -1,6 +1,6 @@
 ---
 title: Arrangement
-description: Setting - Arrangement (Card visual (new), Settings, Layout)
+description: Setting - Arrangement (Card visual (new), Layout, Layout, Arrangement)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

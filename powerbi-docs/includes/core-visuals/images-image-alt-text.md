@@ -1,6 +1,6 @@
 ---
-title: Angle
-description: Setting - Angle (Cards, Shadow & Glow)
+title: Alt text
+description: Setting - Alt text (Images, Image, Alt text)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Angle
+#### Alt text
 
-Define the angle at which the effect appears, creating a sense of the time of day or a specific light source.
+You can enter a description that will be read by a screen reader upon selecting the visual.

@@ -1,6 +1,6 @@
 ---
 title: Header alignment
-description: Setting - Header alignment (Column headers, text)
+description: Setting - Header alignment (Column headers, Header alignment)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
