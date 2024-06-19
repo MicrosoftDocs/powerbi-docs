@@ -1,0 +1,15 @@
+---
+title: Hide inner borders
+description: Setting - Hide inner borders (Inner borders, Column settings, Border toggle)
+author: v-jaedena
+ms.author: miguelmyers
+ms.service: powerbi
+ms.subservice: pbi-corevisuals
+ms.topic: include
+ms.date: 06/13/2024
+ms.custom: include file - variant
+LocalizationGroup: core-visuals
+---
+#### Hide inner borders
+
+This toggle conceals the inner borders between series, and is only available when using the **Stacked column chart**, the **100% Stacked column chart**, or the Line and stacked column chart. However, the toggle remains hidden when using other column charts.
