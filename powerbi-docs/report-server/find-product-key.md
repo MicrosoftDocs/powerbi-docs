@@ -30,16 +30,16 @@ You downloaded [Power BI Report Server](get-started.md), and you have a SQL Serv
 ## Purchased Power BI Premium
 If your organization has purchased Power BI Premium capacity, you can get the key for Power BI Report Server from the **Premium Settings** tab in the admin portal. The key is accessible to only users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
 
-![Screenshot of Power BI Report Server key within Premium settings.](media/find-product-key/pbirs-product-key.png)
+:::image type="content" source="./media/find-product-key/pbirs-product-key.png" alt-text="Screenshot of Power BI Report Server key within Premium settings." lightbox="./media/find-product-key/pbirs-product-key.png":::
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
-![Screenshot of Power BI Report Server product key.](media/find-product-key/pbirs-product-key-dialog.png)
+:::image type="content" source="./media/find-product-key/pbirs-product-key-dialog.png" alt-text="Screenshot of Power BI Report Server product key.":::
 
 ## Purchased F64+ Reserved Instance
 If your organization has purchased F64 SKU and above reserved instances, you can get the key for Power BI Report Server from the **Capacity Settings** tab in the admin portal. The key is accessible to only users with Global admin, Fabric admin, or Power BI Premium capacity admin privileges.
 
-![Screenshot of Power BI Report Server key within Fabric settings.](media/find-product-key/fabric-pbirs-product-key.png)
+:::image type="content" source="./media/find-product-key/fabric-pbirs-product-key.png" alt-text="Screenshot of Power BI Report Server key within Fabric settings." lightbox="./media/find-product-key/fabric-pbirs-product-key.png":::
 
 Selecting **Power BI Report Server key** will display a dialog contain your product key. You can copy it and use it with the installation.
 
@@ -49,7 +49,7 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 > [!NOTE]
 > You need to look under the download section. Not the keys section.
 
-![Screenshot of SQL Server Enterprise showing Downloads and Keys tab with Power B I Report integration information.](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
+:::image type="content" source="./media/find-product-key/vlsc-download.png" alt-text="Screenshot of SQL Server Enterprise showing Downloads and Keys tab with Power B I Report integration information." lightbox="./media/find-product-key/vlsc-download.png":::
 
 ### Volume licensing in the Microsoft 365 Admin Center
 
