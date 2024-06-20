@@ -1,6 +1,6 @@
 ---
 title: Font color
-description: Setting - Font color (Reference labels, Detail, Font)
+description: Setting - Font color (Reference labels, Detail, Font color)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

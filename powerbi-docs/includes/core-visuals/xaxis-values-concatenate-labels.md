@@ -1,6 +1,6 @@
 ---
 title: Concatenate labels
-description: Setting - Concatenate labels (x-Axis, Settings, Values)
+description: Setting - Concatenate labels (X-axis, Values, Concatenate labels)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
