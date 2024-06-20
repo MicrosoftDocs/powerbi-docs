@@ -76,7 +76,7 @@ There are many different buttons that Microsoft publishes for new Power BI users
 
 You now have a Fabric (Free) license to work in Power BI and to explore the free features of all of the Fabric workloads. If a Fabric free license is sufficient, you don't have to do anything else. 
 - If you find that you need more than a Fabric (Free) license to work in the Power BI service, the last section of this article explains how to upgrade to a Pro or PPU license. 
-- If you find that you need more than a Fabric (Free) license to work in Fabric, see [Trial of a Fabric capacity](/fabric/get-started/fabric-trial.md)
+- If you find that you need more than a Fabric (Free) license to work in Fabric, see [Trial of a Fabric capacity](/fabric/get-started/fabric-trial)
 
 There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 

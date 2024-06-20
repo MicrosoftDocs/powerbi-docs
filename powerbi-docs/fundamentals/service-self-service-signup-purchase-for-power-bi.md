@@ -59,7 +59,7 @@ If you already have a Fabric (Free) license and try to use a feature that requir
 
 ### Start a trial of a Fabric capacity
 
-Another way to start a trial of a paid Power BI license is to [start a trial of a Fabric capacity](/fabric/get-started/fabric-trial.md). The trial includes a license similar to Power BI Premium Per User (PPU). Open your Account manager and select **Start trial.**
+Another way to start a trial of a paid Power BI license is to [start a trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial includes a license similar to Power BI Premium Per User (PPU). Open your Account manager and select **Start trial.**
 
 :::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-account-manager.png" alt-text="Screenshot of the Account manager showing Start trial.":::
 
