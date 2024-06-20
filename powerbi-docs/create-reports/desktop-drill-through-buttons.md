@@ -148,7 +148,7 @@ Here are some scenarios where you might want the button drillthrough destination
 
     For example, you want users to select a single product *and* a single store before they can drill through to the market details page. Otherwise the button is disabled.
 
-    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-store.png" alt-text="Screenshot showing the product and store selected.":::
+    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-store.png" alt-text="Screenshot showing the product and store selected." lightbox="media/desktop-drill-through-buttons/drill-through-select-product-store.png":::
 
 - You want the button **to support multiple drillthrough destinations** based on user selections.
 
