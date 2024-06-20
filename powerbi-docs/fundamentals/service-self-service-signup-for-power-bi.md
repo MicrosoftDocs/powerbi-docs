@@ -14,11 +14,11 @@ LocalizationGroup: Get started
  
 # Sign up for or purchase the Power BI service as an individual
 
-***Power BI service*** can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains two ways individuals can get a license for the Power BI service for themselves. 
+***Power BI service*** can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains several ways individuals can get a license for the Power BI service for themselves. 
 
-If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md). To download the free Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md).
+If you're a Global administrator or Billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md). To download the free Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md).
 
-This quickstart takes you through the steps to sign up for Power BI from a *Try now* or *Buy now* link, from an email link, and how to upgrade your per user license from an in-product link. For an in-depth review of the many other ways to sign up or purchase Power BI, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
+This quickstart takes you through the steps to sign up for Power BI from a *Try now* or *Buy now* link, from an email link, from your Account manager, and how to upgrade your per user license from an in-product prompt. For an in-depth review of the many other ways to sign up or purchase Power BI, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
 
 ## Prerequisites
 
@@ -28,24 +28,17 @@ To complete this quickstart, you need:
 
 - an understanding of [how Power BI and Fabric work together](../enterprise/service-admin-licensing-organization.md)
 
-- A work or school email address that can be used with Power BI and Fabric. Commercial accounts, such as Google and Hotmail, can't be used.  
-
-## Supported email addresses
-
-Before you start the self-service process, it's important to understand which types of email addresses you can use to sign up for or purchase Power BI.
-
-Power BI requires that you use a work or school email address. You can't sign up or purchase using email addresses provided by consumer email services or telecommunication providers. These services include `outlook.com`, `hotmail.com`, `gmail.com`, and others. If you don't have a work or school account, [learn about alternate ways to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
-
-You can sign up for or purchase Power BI with .gov or .mil addresses, but this approach requires a different process. For more information, see [Enroll your US Government organization in the Power BI service](../enterprise/service-govus-signup.md).
+- [a work or school email address that can be used with Power BI and Fabric.](xxx)    
 
 ## Sign up to get a per-user license for Fabric and Power BI
 
-Follow these steps to sign up for per-user license for the Power BI service. The license options are Fabric (Free), Pro, PPU (Premium Per User), or trial. This section covers the sign-up process for a free license. With a free license you can try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, and initiate an individual Fabric trial. For more information, see [Power BI features by license type](service-features-license-type.md).
+Follow these steps to sign up for a per-user license for the Power BI service. The license options are Fabric (Free), Pro, PPU (Premium Per User), or trial. This section covers the sign-up process for a free license. With a free license you can try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, and initiate an individual Fabric trial. For more information, see [Power BI features by license type](service-features-license-type.md).
 
-The exact steps for sign-up vary depending on your organization and what you select to start the process. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to three of the most common.
+The exact steps for sign-up vary depending on your organization and what you select to start the process. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to several of the most common.
 
 - Select a **Try free** or **Start free** button. Find these types of buttons on `powerbi.microsoft.com`, in related Microsoft products, and in documentation and marketing articles.
 - Receive an email with a link to a Power BI dashboard, report, or app. And, clicking the link is your first time signing in to this Power BI account.
+- Purchasing or trying a license from your Account manager.
 - Receive an in-product link to upgrade or try the paid version of PPU or Pro.
 
 ### Select a button to purchase or try Power BI
@@ -75,55 +68,32 @@ There are many different buttons that Microsoft publishes for new Power BI users
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-account-manager.png" alt-text="Screenshot of your Power BI Account manager with your icon and license type outlined in red.":::
 
 You now have a Fabric (Free) license to work in Power BI and to explore the free features of all of the Fabric workloads. If a Fabric free license is sufficient, you don't have to do anything else. 
+
 - If you find that you need more than a Fabric (Free) license to work in the Power BI service, the last section of this article explains how to upgrade to a Pro or PPU license. 
-- If you find that you need more than a Fabric (Free) license to work in Fabric, see [Trial of a Fabric capacity](/fabric/get-started/fabric-trial)
+- If you find that you need more than a Fabric (Free) license to work in Fabric, see [Trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial of a Fabric capacity includes a license similar to PPU. 
 
 There's [plenty to do in the Power BI service with a free license](../consumer/end-user-license.md), especially if Power BI creators share their content with you in [Premium capacity.](../enterprise/service-premium-what-is.md) 
 
 ### Get a license by selecting an email link
 
+Another way get a Power BI license is to select a Power BI link that you receive in an email. 
 
-Customers typically start a trial one of two ways:
+:::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email with a Power BI link.":::
 
-- As you start to explore the Power BI service or any of the other services in Fabric, you try to use a feature that requires a paid license or a Fabric capacity. Fabric automatically initiates the Fabric trial. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md).  
+Selecting the link takes you to the Power BI report. If this is your very first time using Power BI, your email address will be evaluated to ensure that you have permission for a Power BI license. Depending on your organization's subscription and self-service settings, you'll receive either a free or paid individual license. 
 
-    ![Screenshot of Power BI service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
+### Use your Account manager to make a purchase
 
-- Trials can also be initiated from your Account manager. Open your Account manager by selecting the tiny photo in the upper right corner.  
-
-    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-me.png" alt-text="Screenshot showing an Account manager and the Start trial button.":::
-
-    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-trial.png" alt-text="Screenshot showing the dialog to select Start trial.":::
-
-The trial license upgrades you with a Microsoft Fabric trial capacity. Create and work with any Fabric item types and access the paid features of the Power BI service. 
-
-:::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-fabric-home.png" alt-text="Screenshot showing the Fabric Home screen.":::
-
-For more information about trials, see [Fabric trial](/fabric/get-started/fabric-trial)
-
-### Trial expiration
-
-You can cancel your trial from the Account manager. If you cancel your trial, you might not be able to start another trial. 
-
-When you cancel your Fabric trial, or your trial expires, the trial capacity is deleted. This deletion includes deletion of all of the capacity's [workspaces](/fabric/get-started/workspaces) and related data. To migrate your workspaces and data, [purchase a Fabric capacity](/fabric/enterprise/buy-subscription).  
-
-When your trial expires, or you cancel your trial, your license changes back to its previous version, either Fabric free, Pro, or PPU. The trial can't be automatically extended. For more information, see [Features by license type](service-features-license-type.md). 
-
-If you'd like to cancel your trial before the expiration date, select your account icon and choose **Cancel trial**.
-
-:::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-cancel-trial.png" alt-text="Screenshot of your account screen with Cancel trial selected.":::
-
-## Use self-service purchase to buy an individual Power BI license
-
-You can use self-service to buy Power BI Pro from the Power BI website or from in-product purchase prompts. 
+Your Account manager is accessed from the icon in the upper right corner. Select a **Buy now** link to make the purchase.
 
 :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-buy-pro.png" alt-text="Screenshot of your Account manager with a red arrow pointing to Buy Pro now.":::
 
-You're first asked to enter an email address to ensure that your email address is already associated with at least one other Microsoft online service. If you're recognized by Microsoft, you're next directed to sign in. After you sign in, you're asked to select how many subscriptions you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your subscription. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in their organization.
+After you sign in, you're asked to select how many licenses you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your Pro licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 
-If your email is not recognized, you can start with a Fabric free trial instead. For instructions, see [Sign up for Power BI with a free trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) or see [Sign up for a free Fabric trial](/fabric/get-started/fabric-trial).
+### Use an inproduct link to sign up for Power BI
 
-If you have more questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+The final option covered in this article is using self-service to buy a Power BI license. You can buy Power BI Pro from the Power BI website Account manager or from in-product purchase prompts. 
+
 
 To purchase a Power BI Pro license, select **Buy now** when prompted, or visit [Power BI pricing](https://powerbi.microsoft.com/pricing). Self-service purchase is also available for Power BI Premium Per User, and the steps are similar.
 
@@ -159,6 +129,10 @@ Review the confirmation details. The account you created is now the global admin
 ## Considerations and limitations
 
 In most cases, you can sign up for the Power BI service and for Fabric by following the described processes. Some of the issues that might prevent you from signing up are described here, with possible workarounds.
+
+add: if license doesn't work, ask to be added as b2b
+
+add if org redirects to own site for license signup
 
 ### Can't access your Fabric items
 
@@ -239,3 +213,49 @@ EXTRA CONTENT
 1. However, to share content and collaborate in the other Fabric services, you need [a Fabric capacity.](/fabric/enterprise/licenses) And to take advantage of paid features in the Power BI service, you need a Power BI Pro or PPU license. If all of the content that you need is saved in Premium capacity, then a Pro or PPU license might not be necessary.
 
 A Fabric trial includes a license for the paid version of Power BI, which includes a Power Power BI Premium Per User (PPU) license. The trial also includes a trial Fabric capacity to use for exploring all of the Fabric experiences.
+
+
+Customers typically start a trial one of two ways:
+
+- As you start to explore the Power BI service or any of the other services in Fabric, you try to use a feature that requires a paid license or a Fabric capacity. Fabric automatically initiates the Fabric trial. [Some features of the Power BI service require a Pro or PPU license](../consumer/end-user-license.md).  
+
+    ![Screenshot of Power BI service showing Power BI trial dialog.](media/service-self-service-signup-for-power-bi/power-bi-full-trial.png)
+
+- Trials can also be initiated from your Account manager. Open your Account manager by selecting the tiny photo in the upper right corner.  
+
+    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-me.png" alt-text="Screenshot showing an Account manager and the Start trial button.":::
+
+    :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-trial.png" alt-text="Screenshot showing the dialog to select Start trial.":::
+
+The trial license upgrades you with a Microsoft Fabric trial capacity. Create and work with any Fabric item types and access the paid features of the Power BI service. 
+
+:::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-fabric-home.png" alt-text="Screenshot showing the Fabric Home screen.":::
+
+For more information about trials, see [Fabric trial](/fabric/get-started/fabric-trial)
+
+### Trial expiration
+
+You can cancel your trial from the Account manager. If you cancel your trial, you might not be able to start another trial. 
+
+When you cancel your Fabric trial, or your trial expires, the trial capacity is deleted. This deletion includes deletion of all of the capacity's [workspaces](/fabric/get-started/workspaces) and related data. To migrate your workspaces and data, [purchase a Fabric capacity](/fabric/enterprise/buy-subscription).  
+
+When your trial expires, or you cancel your trial, your license changes back to its previous version, either Fabric free, Pro, or PPU. The trial can't be automatically extended. For more information, see [Features by license type](service-features-license-type.md). 
+
+If you'd like to cancel your trial before the expiration date, select your account icon and choose **Cancel trial**.
+
+:::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-cancel-trial.png" alt-text="Screenshot of your account screen with Cancel trial selected.":::
+
+Own article:
+## Supported email addresses
+
+Before you start the self-service process, it's important to understand which types of email addresses you can use to sign up for or purchase Power BI.
+
+Power BI requires that you use a work or school email address. You can't sign up or purchase using email addresses provided by consumer email services or telecommunication providers. These services include `outlook.com`, `hotmail.com`, `gmail.com`, and others. If you don't have a work or school account, [learn about alternate ways to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+
+You can sign up for or purchase Power BI with .gov or .mil addresses, but this approach requires a different process. For more information, see [Enroll your US Government organization in the Power BI service](../enterprise/service-govus-signup.md).
+
+
+
+If your email is not recognized, you can start with a Fabric free trial instead. For instructions, see [Sign up for Power BI with a free trial](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) or see [Sign up for a free Fabric trial](/fabric/get-started/fabric-trial).
+
+If you have more questions about self-service purchase, visit the [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).

@@ -35,7 +35,7 @@ Your organization purchased a Power BI subscription that includes licenses. Self
 
     :::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email that contains a Power BI link.":::
 
-All of these actions sign you up for a per-user license and open the Power BI service in a browser. The license you're assigned depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](xxx).
+All of these actions sign you up for a per-user license and open the Power BI service in a browser. The license you're assigned depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](/consumer/end-user-license).
 
 If the Power BI service doesn't open or if you receive an error message, it's possible that your organization hasn't purchased a Power BI subscription. See [Email validation](#email-validation) to learn what steps to take to get a per-user license.
 
@@ -43,7 +43,11 @@ If the Power BI service doesn't open or if you receive an error message, it's po
 
 The first time you attempt to sign up for a license, Microsoft asks for your email address. 
 
-If your organization didn't purchase Power BI, you are redirected to a sign up process. You're asked to create an account and possibly even create a new tenant. For more information on this process, see [xxx.](xxx)
+If your organization didn't purchase Power BI, you are redirected to a sign up process. You're asked to create an account and possibly even create a new tenant.
+
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-no-account.png" alt-text="Signup screen that appears if you don't already have a Power BI account.":::
+
+For more information about creating a Microsoft account, see [How to check if your email address is a Microsoft account](https://support.microsoft.com/account-billing/how-to-check-if-your-email-address-is-a-microsoft-account-b3ba5b92-5ead-4a28-adc9-b40558bb697e)
 
 #### [Individual trial](#tab/trial)
 
