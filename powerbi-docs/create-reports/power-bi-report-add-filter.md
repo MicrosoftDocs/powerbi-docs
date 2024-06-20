@@ -33,7 +33,7 @@ You can set filters at three different levels for the report:
 
 - The [visual level](#add-a-filter-to-a-visual).
 - The [page level](#add-a-filter-to-an-entire-page).
-- The [report level](#add-a-report-level-filter-to-filter-an-entire-report).
+- The [report level](#add-a-report-level-filter-for-an-entire-report).
 
 This article explains how to set the different levels.
 
