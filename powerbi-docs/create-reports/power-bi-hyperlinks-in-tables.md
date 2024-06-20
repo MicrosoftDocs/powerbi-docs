@@ -8,14 +8,16 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/19/2024
+ms.date: 06/21/2024
 LocalizationGroup: Visualizations
 ---
 # Add hyperlinks (URLs) to a table or matrix
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a semantic model. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
+This topic explains how to add hyperlinks (URLs) to a table or matrix visual. The process starts in Power BI Desktop where designers add hyperlinks (URLs) to a semantic model. Once the semantic model contains the hyperlinks, you can add them to tables and matrixes in Desktop or the Power BI service. Display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
+
+There is more than one way to add and format hyperlinks in visuals. For an alternate method, see [Conditional formatting.](desktop-conditional-table-formatting.md#format-as-web-urls)
 
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
@@ -28,10 +30,10 @@ You can format a field with URLs as hyperlinks in Power BI Desktop, but not in t
 
 1. In Power BI Desktop, if a field with a hyperlink doesn't already exist in your semantic model, add it as a [custom column](../transform-model/desktop-common-query-tasks.md).
 
-    > [!NOTE]
-    > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
+> [!NOTE]
+> You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Data view, select the column. 
+2. In Table view, select the column. 
 
 3. On the **Column tools** tab, select **Data category** > **Web URL**.
    
@@ -78,7 +80,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 1. If a field with a hyperlink doesn't already exist in your semantic model, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-1. In Data view, select the column that contains the URL. 
+1. In Table view, select the column that contains the URL. 
 
 1. On the **Column tools** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
 
@@ -101,13 +103,13 @@ You can also format another field in a table as the hyperlink, and not have a co
     ![Screenshot shows the Web U R L setting with a value of On.](media/power-bi-hyperlinks-in-tables/power-bi-desktop-format-conditional-web-url.png)
 
     > [!NOTE]
-    > If you don't see a **Web URL** option, in Power BI Desktop make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box.
+    > If you don't see a **Web URL** option, in Power BI Desktop make sure the column that contains the hyperlinks isn't already formatted as **Web URL** in the **Data Category** dropdown box.
 
-1. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
+1. In the **Web URL** dialog box, select the field that contains the URL in the **What field should we base this on** dropdown. Then select **OK**.
 
-    ![Web URL dialog box](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url-dialog.png)
+    ![Web URL dialog box](media/power-bi-hyperlinks-in-tables/power-bi-format-url.png)
 
-    Now the text in that column is formatted as the link.
+    Now the text in that column is formatted as an active hyperlink.
 
     ![Text formatted as hyperlink](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
