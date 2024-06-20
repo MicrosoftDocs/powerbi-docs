@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This topic explains how to add hyperlinks (URLs) to a table or matrix visual. The process starts in Power BI Desktop where designers add hyperlinks (URLs) to a semantic model. Once the semantic model contains the hyperlinks, you can add them to tables and matrixes in Desktop or the Power BI service.Display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
+This topic explains how to add hyperlinks (URLs) to a table or matrix visual. The process starts in Power BI Desktop where designers add hyperlinks (URLs) to a semantic model. Once the semantic model contains the hyperlinks, you can add them to tables and matrixes in Desktop or the Power BI service. Display the URL or a link icon, or format another column as link text. When report readers select a link, it opens in another browser page.
 
 There is more than one way to add and format hyperlinks in visuals. For an alternate method, see [Conditional formatting.](desktop-conditional-table-formatting.md#format-as-web-urls)
 
@@ -80,7 +80,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 1. If a field with a hyperlink doesn't already exist in your semantic model, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-1. In Data view, select the column that contains the URL. 
+1. In Table view, select the column that contains the URL. 
 
 1. On the **Column tools** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
 
