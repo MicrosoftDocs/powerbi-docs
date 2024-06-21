@@ -39,7 +39,11 @@ You've created reports, dashboards, scorecards, and semantic models. Maybe you w
 - [Create *shared semantic models*](#share-a-semantic-model) that coworkers can use as the basis for their own reports, in their own workspaces.
 - [Create *dataflows*](#create-dataflows) as a way to share a common data source.
 
-No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../enterprise/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Power BI or Microsoft Fabric Premium capacity](../enterprise/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+
+It's also important to recognize that security is defined on the Fabric workload that's being used to serve the data. For example, when you share a report, you also share access to the semantic model below. You need to define security on the semantic model using Row Level Security (RLS) or Object Level Security (OLS) to prevent a report consumer from accessing all the data in the semantic model. By default, the read access of a report consumer isn't restricted to  the elements and data they see in the report, but access restrictions can be enforced in the semantic model thanks to RLS and OLS. Use RLS to restrict access to rows of data being returned, and OLS to restrict the access to columns and tables. Hiding a table, column, measure, visual, or report page, on the other hand,  doesn't prevent a report user from accessing these hidden elements. Hiding therefore isn’t a  security measure, but an option to provide a clutter-free user experience focused on specific tasks or goals.  
+
+We look at each sharing scenario below and discuss the security implications in more detail for each. For more considerations on report consumer security planning, see [Power BI implementation planning: Report consumer security planning](../guidance/powerbi-implementation-planning-security-report-consumer-planning.md). For more information on other Fabric workloads, see [Permission model - Microsoft Fabric](/fabric/security/permission-model).
 
 ## Collaborate in a workspace
 
@@ -58,17 +62,21 @@ Now, imagine you have a finished report you need to share with your colleagues. 
 - If colleagues just need to see that report and not all the content in the workspace, you can share the report via link or grant them direct access.
 - If the report is better consumed with related reports or dashboards that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
 
+Whenever you collaborate with your team using a workspace, the team has access to all the data in the workspace. To restrict a user's access, give them the Viewer role in the workspace, and define RLS or OLS on the semantic model or other Fabric workload security. 
+
 Read about how to [create workspaces](service-create-the-new-workspaces.md). 
 
 ## Collaborate in Microsoft Teams
 
 Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. The Power BI service has a **Chat in Teams** button for reports. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. 
 
-When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation. 
+When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation if they have existing access to the report in Power BI service. 
 
 :::image type="content" source="media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-teams-conversation-tab.png" alt-text="Microsoft Teams conversation tab":::
 
 Read more about [collaborating in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md).
+
+Embedding a report in Microsoft Teams or sending a link to an item doesn't automatically give users permissions to view the report. You need to allow users to view the report in Power BI.
 
 ## Share reports or dashboards
 
@@ -77,7 +85,7 @@ Let's say your report in Power BI Desktop is ready, and you want other people to
 ![Screenshot of sharing a report.](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-new-look.png)
 
 
-You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying semantic model, unless [row-level security (RLS)](/fabric/security/service-admin-row-level-security) is applied.
+You need a Power BI Pro license to share your content. The people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](../enterprise/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it. If you give them permission, they can edit it, make a copy of it, and share it with their coworkers. They see the same data that you see in the dashboard or report. They have access to all the data in the underlying semantic model, unless [row-level security (RLS)](/fabric/security/service-admin-row-level-security) or object-level security (OLS) is is applied.
 
 You can share reports via links that give access:
 
@@ -92,8 +100,9 @@ You can also share dashboards by granting user direct access but not via links t
 
 ![Screenshot of Grant access to a dashboard dialog.](media/service-how-to-collaborate-distribute-dashboards-reports/grant-dashboard-access-dialog.png)
 
-If you share a dashboard with people outside your organization, they can view and interact with the dashboard, but they can't share it with others. 
+When you share a report with other users, they get read access to both the report and the underlaying semantic model that the report uses.  Without defining RLS or OLS in the semantic model, the report is shared with full access to all the data even when tables, columns, measures, or report pages aren't shown on the report or the field list.  
 
+When you share a report with build access in addition to read permissions,  the user not only gets full access to all elements in the semantic model but can also build new reports, dashboards, and other solutions. However, they only see data allowed based on security rules configured in the model. 
 Read about how to [share reports and dashboards](service-share-dashboards.md) from the Power BI service. Or read about adding a filter to a link and [share a filtered view of your report](service-share-reports.md).
 
 ## Annotate and share from the Power BI mobile apps
