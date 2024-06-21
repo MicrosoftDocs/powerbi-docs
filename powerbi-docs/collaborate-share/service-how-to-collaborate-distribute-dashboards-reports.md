@@ -129,6 +129,10 @@ After they install the app, they can view it in their browser or mobile device.
 
 For your users to view your app, they need a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](../enterprise/service-premium-what-is.md) for details.
 
+When sharing a report through an app the same counts as when sharing a report directly: they get read access to both the report but also the underlaying semantic model that is being used by the report.  Without defining RLS or OLS on the semantic model, the report is shared with full access to all the data even when it isn't shown on the report. If users have a direct link to *any* of the content in your app, they can access all the data, even if the table, column, or measure is visually hidden in the navigation pane for that audience. 
+
+When creating an app you can also give users build permissions on the semantic model in addition to read access. As discussed earlier, this enables the user to build new solutions on top of the semantic model.
+
 You can publish apps to people outside your organization, too. They can view and interact with the app content, but can't share it with others. Now you can create *template apps* and deploy them to any Power BI customer.
 
 ## Embed reports in secure portals or public web sites
@@ -136,7 +140,7 @@ You can publish apps to people outside your organization, too. They can view and
 ### Embed in secure portals
 
 You can embed Power BI reports in portals or web sites where your users expect to see them.  
-With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users see content. The person viewing the report needs the appropriate license.  
+With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users see content, similar to sharing a report. The person viewing the report needs the appropriate license.  
 
 - **Embed in SharePoint Online** works with the Power BI web part for SharePoint Online. It provides a single sign-on experience with control over how the report is embedded. Read more about [Embedding in SharePoint Online](service-embed-report-spo.md).
 - **Embed** works with any portal or web site that supports embedding content using a URL or an iFrame. Read more about the [Embed](service-embed-secure.md) option.
@@ -146,7 +150,7 @@ With the **Embed in SharePoint Online** and the **Embed** option in the Power BI
 **Publish to web** allows you to publish Power BI reports to the whole Internet by embedding visualizations in blog posts, web sites, social media, and other online communications. Anyone on the Internet can view your reports, and you have no control over who sees what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read about how to [publish to the web](service-publish-to-web.md).
 
 >[!Warning]
->Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
+>Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing. When you use Publish to web, anyone on the Internet can view your published report or visual. Viewing a report shared through  Publish to web requires no authentication. It includes viewing detail-level data that your reports aggregate. Before publishing a report, make sure it's okay for you to share the data and visualizations publicly on the Internet. Don't publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
 ## Present live report pages in PowerPoint
 
@@ -154,7 +158,7 @@ You can enhance your data storytelling with live, interactive Power BI data by a
 
 ![Animated gif that shows interacting with the report](media/service-power-bi-powerpoint-add-in-view-present/power-bi-add-in-interact-report.gif)
 
-Read more about [storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md).
+Read more about [storytelling with Power BI in PowerPoint](service-power-bi-powerpoint-add-in-about.md). When you use a report inside a PowerPoint presentation, the person who opens PowerPoint also needs access to the report to view it. The same permissions as before apply.
 
 ## Print or save as PDF or other static file
 
@@ -180,7 +184,7 @@ Let's face it, some people are more skilled at creating high-quality, well-desig
 
 ![Find a shared semantic model](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
 
-Read more about [creating and using shared semantic models](../connect-data/service-datasets-across-workspaces.md).
+ When you share a semantic model, by default, the user has full access to the semantic model. You can define appropriate security rules through RLS and OLS in the sematic model to restrict the data the user can access. Read more about [creating and using shared semantic models](../connect-data/service-datasets-across-workspaces.md).
 
 ## Create dataflows
 
