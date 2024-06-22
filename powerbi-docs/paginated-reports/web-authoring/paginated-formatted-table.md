@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 06/21/2024
 ---
 
 # Create paginated reports that you can export in the Power BI service
@@ -30,19 +30,19 @@ No matter which way you start, the new paginated report online editing experienc
 
 ## Create a table
 
-To create your first table, select field names in the **Data** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column or drag it to **Values** section of the **Build** pane.
+To create the table, select field names in the **Data** pane on the right.  This pane gives you a table-and-column based view of the chosen dataset.  When you find a column that you wish to add to your table, select the column.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-fields-list.png" alt-text="Screenshot of selecting fields.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-data-list.png" alt-text="Screenshot of selecting fields.":::
 
-Give the editor a few moments to run a new query on the dataset. The formatted table shows up in the paginated report viewer to the left side of the page.
+The selected columns appear in the **Editor** portion of the canvas. Give the editor a few moments to run the query on the dataset. The formatted table shows up in the **Preview** section of the canvas.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-table.png" alt-text="Screenshot of formatted table preview.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-addfieds.png" alt-text="Screenshot of formatted table preview.":::
 
 This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before editing or saving the report.
 
 If columns are in the wrong order in the **Build** pane, don't worry.  You can easily reorder the columns in the **Build** pane columns by dragging the columns into the desired order.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-build-pane-selected-fields.png" alt-text="Screenshot of dragging items.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-build-pane.png" alt-text="Screenshot of dragging items.":::
 
 When you select a field, we use the default aggregate set on the field. You can change the aggregate behavior. Select the arrow next to the field item in the **Build** pane.
 
@@ -50,19 +50,23 @@ When you select a field, we use the default aggregate set on the field. You can 
 
 ## Format the table
 
-Now that you have the columns that you want, you can format the table using the built-in format options.
+You can format the table from the **Build** pane or from the **Editor** ribbon. In the **Build** pane, you can format the table using the built-in format options.
 
-1. In the **Build** pane, select the **Format** tab.
-1. Select the drop-down arrow in the **Style** box, and experiment with the available styles.
+In the **Build** pane, select the **Format** tab.
+   
+Select the drop-down arrow in the **Style** box, and experiment with the available styles.
 
     :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
 
+  In the **Editor**, 
+  
 1. To resize the width of the columns, hover over the edge of a column header, and drag the double-headed arrow that appears.
 
-    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns.png" alt-text="Screenshot of resizing the width of the columns.":::
-1. To edit the text in a column header select the header you would like to edit and make your changes.
+    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns.":::
+   
+1. To edit the text in a column header select the header you would like to edit, doble click and make your changes.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename.png" alt-text="Screenshot of editing text in a column header.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename-1.png" alt-text="Screenshot of editing text in a column header.":::
 
 1. To sort the table on a column, select the sort icon in the column header.
   
@@ -72,6 +76,11 @@ Now that you have the columns that you want, you can format the table using the 
 
     :::image type="content" source="media/paginated-formatted-table/paginated-formatted-table-sorted.png" alt-text="Screenshot of sorted column in authoring." lightbox="media/paginated-formatted-table/paginated-formatted-table-sorted.png":::
 
+1. Insert textboxes, images, headers and footers from the ribbon.
+
+ :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png" alt-text="Screenshot of insert ribbon in authoring." lightbox="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png":::
+
+
 > [!NOTE]
 > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
 >
@@ -79,42 +88,47 @@ Now that you have the columns that you want, you can format the table using the 
 
 ## Edit a paginated report
 
-If you navigate to any paginated report that you've *authored online*, you have the option to edit the report within the paginated report viewer experience. This option is available in the toolbar above the viewer.
+If you are **Viewing** a paginated report that you've *authored in the Power BI service*, you have the option to edit the report by switching to  **Editing**
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit.png" alt-text="Screenshot of Edit button.":::
-
-This option takes you back to the online editor experience, where you can make changes to the report.  
-
-> [!NOTE]
-> This **Edit** button isn't the same as the **Edit** button on the **File** menu.  That **Edit** button opens Power BI Report Builder instead. *If you edit this report in Report Builder, you can't edit it online anymore.*
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-edit-1.png" alt-text="Screenshot of Edit button.":::
+ 
 
 ## Add images to the paginated report
-For any paginated report that you *author online*, you can insert images in the top section of your report to brand or describe your formatted table data.
+For any paginated report that you *author in the Power BI service*, you can insert images above or below the table in the report, into the header or footer of the report. 
 
-### Add an image item
-1. To add an image to your report, select **Insert**, then **Image**.
+1. To add an image to the body of your report, select **Insert**, then **Image**.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-insert.png" alt-text="Screenshot of insert image button.":::
 
     > [!NOTE]
-    > At this time, you can only insert external images that are available over the internet without needing authentication.
+    > At this time, you can only insert images from your local machine or external images that are available over the internet without needing authentication.
 
-1. Images are inserted at the top of the first page of your report.
+
 1. After you insert the image, you can use the **Picture format** tab to set an Alternate text for the image, set padding options, or set the display size option.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options.":::
 
 To learn more about external images, refer to [Add external images to paginated reports](../report-design/add-external-image-report-builder-service.md).
 
+2. To add images to the header or footer of the report, select **Insert**, then **Header** or **Footer**.
+
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-header-footer.png" alt-text="Screenshot of picture format options.":::
+
+3. Select **Image**, then the location and click where you want to place the image within the header or footer.
+
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image.png" alt-text="Screenshot of insert image.":::
+
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image-plus.png" alt-text="Screenshot of insert image.":::
+
+
 ## Add text to the paginated report
-For any paginated report you **author online**, you can insert text boxes in the top section of your report to brand, title, or describe your formatted table data below. 
+For any paginated report you author in the Power BI service, you can insert text boxes above or below the table in the report, as well as the header or footer of the report. 
 
 ### Add a text box and begin typing
 1. To add a text box to your report, select **Insert** and then **Text box**.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-add-text-box.png" alt-text="Screenshot of insert text box button.":::
     
-1. Text boxes are inserted at the top left of the first page of your report.
 
     > [!NOTE]
     > When you insert a new text box or select a text box, you're immediately editing the text in the text box.
@@ -147,34 +161,12 @@ For any paginated report you **author online**, you can insert text boxes in the
 ### Delete a text box
 To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
-### Working with sections
-1. When you add items to a paginated report, a section line appears on the first page that separates the text or image objects from your formatted table of data. The area above the section line is where items are added. The area below is where your formatted table of data is added.
-
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-section-line.png" alt-text="Screenshot of the section line.":::
-
-    > [!NOTE]
-    > The section line only shows when text or image objects are present.
-
-1. To move text or image objects lower on the page, move the section line down. To move the section line up, move the items up. Text objects will highlight when moving the section line.
-
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-move-section.gif" alt-text="Animation of moving the section line.":::
-
-    > [!NOTE]
-    > To leave room for the beginning of your formatted table of data, you can't move the section line to the very bottom of the first page.
-
-1. The page margins and section divider visibility can be turned off by going to **View** and selecting **Hide margin** and / or **Hide section divider**.
-
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-hide-margins-sections.png" alt-text="Screenshot of options to hide the section line or page margins.":::
-
-    > [!NOTE]
-    > The page margins and section line are design helpers while authoring the paginated report. They're not saved in the report and aren't visible in exported reports or while in reading view.
 
 ### Considerations and limitations when working with text
 - As with other objects in a report, you can only select one text box at a time. 
 - Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
-- You can only place text boxes above the section line within the boundaries of the print layout, even if web layout is selected. 
-- Text boxes may overlap. You can't change text box layer order. The most recently added text box is on top. 
-- When you enter text in a text box that's larger than the text box area, you can't select the bottom resize handle. Use the bottom corner resize handles or any other resize handles to resize the area. 
+
+### To do ( Add parameter creation section)
 
 ## Export your report
 
