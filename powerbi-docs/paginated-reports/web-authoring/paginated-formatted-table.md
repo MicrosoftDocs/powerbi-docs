@@ -56,7 +56,7 @@ In the **Build** pane, select the **Format** tab.
    
 Select the drop-down arrow in the **Style** box, and experiment with the available styles.
 
-    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
 
   In the **Editor**, 
   
@@ -112,13 +112,13 @@ To learn more about external images, refer to [Add external images to paginated 
 
 2. To add images to the header or footer of the report, select **Insert**, then **Header** or **Footer**.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-header-footer.png" alt-text="Screenshot of picture format options.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-header-footer.png" alt-text="Screenshot of picture insert header or footer.":::
 
 3. Select **Image**, then the location and click where you want to place the image within the header or footer.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image.png" alt-text="Screenshot of insert image.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image.png" alt-text="Screenshot of insert image web authoring.":::
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image-plus.png" alt-text="Screenshot of insert image.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image-plus.png" alt-text="Screenshot of insert image cross hair.":::
 
 
 ## Add text to the paginated report
