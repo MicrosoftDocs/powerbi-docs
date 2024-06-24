@@ -62,7 +62,7 @@ In the **Editor**:
   
 1. To resize the width of the columns, hover over the edge of a column header, and drag the double-headed arrow that appears.
 
-    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns." lightbox="media/paginated-formatted-table/paginated-table-resize-columns-1.png":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns.":::
    
 1. To edit the text in a column header select the header you would like to edit, doble click and make your changes.
 
@@ -78,13 +78,12 @@ In the **Editor**:
 
 1. Insert textboxes, images, headers and footers from the ribbon.
 
- :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png" alt-text="Screenshot of insert ribbon in authoring." lightbox="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-ribbon.png" alt-text="Screenshot of insert ribbon in authoring.":::
 
-
-> [!NOTE]
-> To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
->
-> When you export to CSV, it doesn't reflect the renamed column name. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
+    > [!NOTE]
+    > To revert to using the original column header based on your data source, remove and add the field again in the **Data** pane.
+    >
+    > When you export to CSV, it doesn't reflect the renamed column name. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
 
 ## Edit a paginated report
 
