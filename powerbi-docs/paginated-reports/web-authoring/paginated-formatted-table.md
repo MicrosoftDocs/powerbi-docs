@@ -137,38 +137,32 @@ For any paginated report you author in the Power BI service, you can insert text
 
 ### Select, move, and resize text boxes 
 
-1. To select a text box, hover over a text box and a text box outline appears, select within the text box area to select the text box you are hovered over.
+1. To select a text box, click on the text box and a text box outline appears. 
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-text-box-added.png" alt-text="Screenshot of text box hovered over and outlined.":::
 1. To move a selected text box, select and drag the move indicator on the text box outline.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-moving-text-box.gif" alt-text="Animation of moving a text box.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-move.png" alt-text="Moving a text box.":::
 
-    > [!NOTE]
-    > Alternatively, select the text box itself, not the text in it, by pressing ESC. And then use the arrow keys to move a selected text box horizontally or vertically.
 
 1. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press the SHIFT + arrow keys to resize horizontally or vertically.
 
     > [!NOTE]
-    > Text that doesn't fit within the text box area shows only while the text box is selected. Text outside the text box area doesn't show in the final design of your report. Resize the text box area to show the text you would like visible.
+    > Text that doesn't fit within the text box area may show only while the text box is selected. Text outside the text box area doesn't show in the final design of your report. Resize the text box area to show the text you would like visible.
 
 ### Format and style text in a text box
 
 1. After you select a text box, the **Text box format** tab is displayed. From this tab you can format the font style, including font, color, size, and text decoration like bold, italics, and underline. 
     
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-text-styles.png" alt-text="Screenshot of text styling options.":::    
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-formatting.png" alt-text="Screenshot of text styling options.":::    
 1. You can format font styles at the character and line level while you're editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
 
 ### Delete a text box
 
 To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
-
 ### Considerations and limitations when working with text
 - As with other objects in a report, you can only select one text box at a time. 
 - Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
-
-### To do (Add parameter creation section)
 
 ## Export your report
 
@@ -186,19 +180,13 @@ You can save the report to any workspace.
 
 2. In **Save your report**, give your report a name and select a workspace.
 
-    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog.png" alt-text="Screenshot of Save menu.":::
+    :::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-save-dialog-1.png" alt-text="Screenshot of Save menu.":::
 
 After you save the report, you see a success or failure notification in the top right of the editor.
 
 - If a report already exists where you have chosen to save, it asks you if you wish to overwrite the existing report.  
 - If it succeeds, you see a link to the report. You can either follow this link or continue editing.  
 
-After saving the report, you can preview it. Select **Reading view** on the top bar in the editor. You leave the editor experience and enter the normal paginated report viewer experience.
-
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-reading-view.png" alt-text="Screenshot of Reading View button.":::
-
-> [!NOTE]
-> If you haven't saved the report yet, or have unsaved changes, you receive a prompt asking you to save or discard your changes before taking you to the reading view.
 
 ## Considerations and limitations
 
