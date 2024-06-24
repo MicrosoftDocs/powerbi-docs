@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/03/2024
+ms.date: 06/24/2024
 no-loc: [Copilot]
 ---
 
@@ -18,7 +18,17 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
 
- ## May 2024 QFE 1
+## June 2024 QFE 1
+*Version 2.130.930.0, Released: June 17, 2024*
+
+Bug fixes/improvements:
+
+* Bug fix for an issue where the "Refresh" popup showing the number of rows loaded was not appearing on refresh of the data in the table view
+* Reverted cross-highlight optimization behavior for Custom Visuals
+* Improved the token fetching process in the SubstrateService of the Power BI client
+* Serialized bookmark groups properly
+
+## May 2024 QFE 1
 
 *Version 2.129.1229.0, Released: May 30, 2024*
 
