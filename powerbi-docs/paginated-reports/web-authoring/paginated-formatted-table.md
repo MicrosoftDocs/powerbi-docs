@@ -36,13 +36,13 @@ To create the table, select field names in the **Data** pane on the right.  This
 
 The selected columns appear in the **Editor** portion of the canvas. Give the editor a few moments to run the query on the dataset. The formatted table shows up in the **Preview** section of the canvas.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-addfieds.png" alt-text="Screenshot of formatted table preview.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-addfieds.png" alt-text="Screenshot of formatted table preview." lightbox="media/paginated-formatted-table/paginated-authoring-addfieds.png":::
 
 This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before editing or saving the report.
 
 If columns are in the wrong order in the **Build** pane, don't worry.  You can easily reorder the columns in the **Build** pane columns by dragging the columns into the desired order.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-build-pane.png" alt-text="Screenshot of dragging items.":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-build-pane.png" alt-text="Screenshot of dragging items." lightbox="media/paginated-formatted-table/paginated-authoring-build-pane.png":::
 
 When you select a field, we use the default aggregate set on the field. You can change the aggregate behavior. Select the arrow next to the field item in the **Build** pane.
 
@@ -56,17 +56,17 @@ In the **Build** pane, select the **Format** tab.
    
 Select the drop-down arrow in the **Style** box, and experiment with the available styles.
 
-:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options.":::
+:::image type="content" source="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png" alt-text="Screenshot of styling options." lightbox="media/paginated-formatted-table/power-bi-formatted-table-formatting-pane.png":::
 
-  In the **Editor**, 
+In the **Editor**:
   
 1. To resize the width of the columns, hover over the edge of a column header, and drag the double-headed arrow that appears.
 
-    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns.":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns." lightbox="media/paginated-formatted-table/paginated-table-resize-columns-1.png":::
    
 1. To edit the text in a column header select the header you would like to edit, doble click and make your changes.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename-1.png" alt-text="Screenshot of editing text in a column header.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename-1.png" alt-text="Screenshot of editing text in a column header." lightbox="media/paginated-formatted-table/rdl-web-authoring-column-rename-1.png":::
 
 1. To sort the table on a column, select the sort icon in the column header.
   
@@ -110,21 +110,22 @@ For any paginated report that you *author in the Power BI service*, you can inse
 
 To learn more about external images, refer to [Add external images to paginated reports](../report-design/add-external-image-report-builder-service.md).
 
-2. To add images to the header or footer of the report, select **Insert**, then **Header** or **Footer**.
+1. To add images to the header or footer of the report, select **Insert**, then **Header** or **Footer**.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-header-footer.png" alt-text="Screenshot of picture insert header or footer.":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-header-footer.png" alt-text="Screenshot of picture insert header or footer." lightbox="media/paginated-formatted-table/paginated-authoring-insert-header-footer.png":::
 
-3. Select **Image**, then the location and click where you want to place the image within the header or footer.
+1. Select **Image**, then the location and click where you want to place the image within the header or footer.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image.png" alt-text="Screenshot of insert image web authoring.":::
+    :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image.png" alt-text="Screenshot of insert image web authoring." lightbox="media/paginated-formatted-table/paginated-authoring-insert-image.png":::
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image-plus.png" alt-text="Screenshot of insert image cross hair.":::
-
+    :::image type="content" source="media/paginated-formatted-table/paginated-authoring-insert-image-plus.png" alt-text="Screenshot of insert image cross hair." lightbox="media/paginated-formatted-table/paginated-authoring-insert-image-plus.png":::
 
 ## Add text to the paginated report
+
 For any paginated report you author in the Power BI service, you can insert text boxes above or below the table in the report, as well as the header or footer of the report. 
 
 ### Add a text box and begin typing
+
 1. To add a text box to your report, select **Insert** and then **Text box**.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-add-text-box.png" alt-text="Screenshot of insert text box button.":::
@@ -136,6 +137,7 @@ For any paginated report you author in the Power BI service, you can insert text
 1. Begin typing within the text box.
 
 ### Select, move, and resize text boxes 
+
 1. To select a text box, hover over a text box and a text box outline appears, select within the text box area to select the text box you are hovered over.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-text-box-added.png" alt-text="Screenshot of text box hovered over and outlined.":::
@@ -159,6 +161,7 @@ For any paginated report you author in the Power BI service, you can insert text
 1. You can format font styles at the character and line level while you're editing the text box. Or select the text box to highlight all text and format all text within the text box at once.
 
 ### Delete a text box
+
 To delete a text box, right-click a text box and select **Remove**. Alternatively, with a text box selected press <kbd>DELETE</kbd>.
 
 
@@ -166,7 +169,7 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
 - As with other objects in a report, you can only select one text box at a time. 
 - Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
 
-### To do ( Add parameter creation section)
+### To do (Add parameter creation section)
 
 ## Export your report
 
