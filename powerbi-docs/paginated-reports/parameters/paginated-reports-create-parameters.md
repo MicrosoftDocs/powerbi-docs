@@ -1,6 +1,6 @@
 ---
 title: "Create parameters for paginated reports in the Power BI Report Builder"
-description: In this article, you learn how to create parameters for paginated reports in the Power BI REport Builder.
+description: In this article, you learn how to create parameters for paginated reports in the Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
