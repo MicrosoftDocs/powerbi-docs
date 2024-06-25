@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 #### Split positive and negative
 
-This toggle allows enables positive and negative values to be displayed separately, presenting one value above the column, and the other value below the column, within the same visualization. 
+This toggle allows enables positive and negative values to be displayed separately, presenting one value above the column, and the other value below the column, within the same visualization.
