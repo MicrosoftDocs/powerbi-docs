@@ -1,6 +1,6 @@
 ---
 title: Apply settings to
-description: Setting - Apply settings to (Columns, Series, Error bars)
+description: Setting - Apply settings to (Error bars, Apply settings to)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

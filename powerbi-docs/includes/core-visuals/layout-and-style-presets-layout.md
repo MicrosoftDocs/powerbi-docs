@@ -1,6 +1,6 @@
 ---
 title: Layout
-description: Setting - Layout (Error labels, Layout)
+description: Setting - Layout (Layout and style presets, Layout)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

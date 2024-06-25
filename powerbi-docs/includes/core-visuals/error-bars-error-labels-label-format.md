@@ -1,6 +1,6 @@
 ---
 title: Label format
-description: Setting - Label format (Error labels, Label format)
+description: Setting - Label format (Error bars, Error labels, Label format)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

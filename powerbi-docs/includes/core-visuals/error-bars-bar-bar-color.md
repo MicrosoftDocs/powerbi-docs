@@ -1,6 +1,6 @@
 ---
 title: Bar color
-description: Setting - Bar color (Options, Bar color)
+description: Setting - Bar color (Error bars, Bar, Bar color)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

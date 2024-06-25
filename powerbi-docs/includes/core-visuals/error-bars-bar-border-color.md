@@ -1,6 +1,6 @@
 ---
 title: Border color
-description: Setting - Border color (Options, Border color)
+description: Setting - Border color (Error bars, Bar, Border color)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi

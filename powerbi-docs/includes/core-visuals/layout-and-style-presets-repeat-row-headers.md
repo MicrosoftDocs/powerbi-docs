@@ -1,6 +1,6 @@
 ---
 title: Repeat row headers
-description: Setting - Repeat row headers (Error labels, Repeat row headers)
+description: Setting - Repeat row headers (Layout and style presets, Repeat row headers)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
