@@ -1,5 +1,5 @@
 ---
-title: "Create parameters for paginated reports in the Power BI Report Builder"
+title: "Create parameters for paginated reports in Power BI Report Builder"
 description: In this article, you learn how to create parameters for paginated reports in the Power BI Report Builder.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/16/2023
+ms.date: 06/25/2024
 ---
 
-# Create parameters for paginated reports in the Power BI Report Builder
+# Create parameters for paginated reports in Power BI Report Builder
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)] 
 
-In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data and vary the report presentation. You can provide a default value and a list of available values. Your report readers can change the selection. They can also type in the parameter text boxes to search for values. See [View parameters for paginated reports](../../consumer/paginated-reports-view-parameters.md) to see how your business users interact with parameters in the Power BI service.  
+In this article, you learn how to create parameters in Power BI Report Builder for paginated reports that are displayed in the Power BI service.  A report parameter provides a way for report readers to choose report data and vary the report presentation. You can provide a default value and a list of available values. Your report readers can change the selection. They can also type in the parameter text boxes to search for values. See [View parameters for paginated reports](../../consumer/paginated-reports-view-parameters.md) to see how your business users interact with parameters in the Power BI service.  
 
 The following illustration shows Design view in Power BI Report Builder for a report with the parameters @BuyingGroup, @Customer, @FromDate, and @ToDate. 
   
