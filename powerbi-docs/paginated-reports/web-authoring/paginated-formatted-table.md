@@ -164,6 +164,26 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
 - As with other objects in a report, you can only select one text box at a time. 
 - Text boxes can't be duplicated, or copied and pasted. You can highlight, copy, and paste text within text boxes. 
 
+### Add header and footer to your report
+
+1. To add a header to the report, select **Header** from the **Insert** option on the ribbon.
+
+:::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer.png" alt-text="Screenshot of header/footer.":::    
+
+   
+2. You can add a textbox, images, page numbers or execution times in the header/footer.
+
+:::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer-options.png" alt-text="Screenshot of header footer options.":::    
+   
+3. Once you are done creating your header/footer, you can exit either by selecting the **Close Header** or **Close Footer** option or double clicking outside the header or footer area.
+
+:::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-close-header-footer-options.png" alt-text="Screenshot of close header footer options."::   
+
+### Considerations and limitations when working with headers and footers
+
+1. You must exit the header or footer before you can continue editing the body of the report.
+2. The format of the page number is limited. We only support absolute page numbers.
+   
 ## Export your report
 
 You can export the table before or after you save it. Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
