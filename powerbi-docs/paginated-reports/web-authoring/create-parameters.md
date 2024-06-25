@@ -13,10 +13,7 @@ ms.date: 06/24/2024
 # Create parameters for paginated reports that you create in the Power BI service
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
-
-You can use the feature to create paginated reports in any workspace in the Power BI service, including workspaces that aren't in a Power BI Premium capacity.
-
-This article introduces you to defining parameters for paginated reports that you author in the Power BI service. This functionality doesn't apply to paginated reports that you author in Power BI Report Builder. You can use filters and parameters in the report that you author. However, a field **cannot be both** a filter and a parameter.  
+This article introduces you to defining parameters for paginated reports that you author in the Power BI service. You can use filters and parameters in the report that you author. However, a field **cannot be both** a filter and a parameter. This functionality doesn't apply to reports that you author in Power BI Report Builder.  
 
 ## Prerequisites
 See the Prerequisites section of [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table.md#prerequisites).
@@ -35,7 +32,7 @@ See the Prerequisites section of [Get started creating paginated reports in the 
 
 :::image type="content" source="media/paginated-formatted-table/paginated-create-parameter-preview.png" alt-text="Screenshot of parameters in the Preview pane.":::
 
-4. You can create several paramters by repeating the steps described above.
+4. You can create several parameters by repeating the steps described above.
 
 :::image type="content" source="media/paginated-formatted-table/paginated-create-multiple-parameters-preview.png" alt-text="Screenshot of multiple parameters in the Preview pane.":::
 
@@ -45,7 +42,7 @@ To save the report with parameters, select **Save** in the File menu.
 
 ## Remove parameters
 
-To remove a paramter, click on more options **(...)** and Remove paramter in the Filter pane.
+To remove a parameter, click on more options **(...)** and Remove parameter in the Filter pane.
 
 :::image type="content" source="media/paginated-formatted-table/paginated-remove-parameter-preview.png" alt-text="Screenshot of remove parameters in the Preview pane.":::
  
