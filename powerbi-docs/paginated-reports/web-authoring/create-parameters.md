@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 06/24/2024
 ---
 
-# Create paramters for paginated reports that you create in the Power BI service
+# Create parameters for paginated reports that you create in the Power BI service
 [!INCLUDE [applies-yes-service-no-report-builder-no-desktop](../../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
 
