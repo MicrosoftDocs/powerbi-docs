@@ -19,7 +19,7 @@ You can use the feature to create paginated reports in any workspace in the Powe
 This article introduces you to defining parameters for paginated reports that you author in the Power BI service. This functionality doesn't apply to paginated reports that you author in Power BI Report Builder. You can use filters and parameters in the report that you author. However, a field **cannot be both** a filter and a parameter.  
 
 ## Prerequisites
-See the [Create exportable paginated reports](paginated-formatted-table.md#prerequisites).
+See the Prerequisites section of [Get started creating paginated reports in the Power BI service](get-started-paginated-formatted-table#prerequisites).
 
 ## Create parameters
 
