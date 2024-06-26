@@ -21,7 +21,7 @@ The Power BI service can be your personal data analysis and visualization tool, 
 
 This quickstart takes you through several ways to sign up for or to purchase a Power BI license. For an in-depth review of the many other ways to sign up or purchase Power BI, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
 
-The exact steps for sign-up vary depending on your organization and what you select to start the process. There are many different ways to sign up for a free license or purchase a paid license for the Power BI service as an individual. The steps in this article apply to several of the most common.
+The exact steps for sign-up vary depending on your organization and what you select to start the process. There are many different ways to sign up for a free license or purchase a paid license for the Power BI service as an individual. The steps in this article apply to several of the most common:
 
 - From a **Try now** or **Buy now** type of button
 - From a Power BI link sent to you in email
@@ -68,7 +68,7 @@ With a free license you can try the Power BI service on your own using My Worksp
 
 - You might find that you need more than a Fabric (Free) license to work in the Power BI service. The next sections of this article explain how to upgrade to a Pro or Premium Per User (PPU) license.
 
-- You might find that you need more than a Fabric (Free) license to work in Fabric.  Try a [Trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial of a Fabric capacity includes a Fabric trial capacity and a license similar to PPU.  
+- You might find that you need more than a Fabric (Free) license to work in Fabric. Try a [Trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial of a Fabric capacity includes a Fabric trial capacity and a license similar to PPU.  
 
 ### Select an email link to get a license
 

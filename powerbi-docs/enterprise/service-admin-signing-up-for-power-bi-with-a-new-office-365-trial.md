@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 This article describes an alternative way to sign up for the Power BI service if you don't already have a work or school email account.
 
-You're unable to sign up for Power BI with your [personal email address](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). You can still try out Power BI and Fabric with a Microsoft 365 trial. During the Microsoft 365 trial sign-up process, you create an "onmicrosoft" email work account. Use that new work account to sign up for the Power BI service and get a Fabric free or Power BI Pro license. Continue to use that work account even after you cancel your Microsoft 365 trial.
+You're unable to sign up for Power BI with your [personal email address](../fundamentals/service-self-service-signup-purchase-for-power-bi.md#personal-email-addresses). You can still try out Power BI and Fabric with a Microsoft 365 trial. During the Microsoft 365 trial sign-up process, you create an "onmicrosoft" email work account. Use that new work account to sign up for the Power BI service and get a Fabric free or Power BI Pro license. Continue to use that work account even after you cancel your Microsoft 365 trial.
 
 > [!NOTE]
 > You must use a credit or debit card when you sign up for the Microsoft 365 free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends.

@@ -31,21 +31,21 @@ You may already have a Power BI license or trial. To learn more, see [licenses a
 Your organization purchased a Power BI subscription that includes licenses. Self-service is enabled. Sign up by:
 1. Opening Power BI in a browser (app.powerbi.com).
 1. Selecting a **Try for free** type of button. 
-1. Selecting a Power BI link in an email. Colleagues share Power BI items in email. If you've never opened Power BI before, selecting one of these links initiates signing up for a license. 
+1. Selecting a Power BI link in an email. Colleagues share Power BI items in email. If you never opened Power BI before, selecting one of these links initiates signing up for a license. 
 
     :::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email that contains a Power BI link.":::
 
-All of these actions sign you up for a per-user license and open the Power BI service in a browser. The license you're assigned depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](/consumer/end-user-license.md).
+All of these actions sign you up for a per-user license and open the Power BI service in a browser. The type of license assigned to you depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](../consumer/end-user-license.md).
 
-If the Power BI service doesn't open or if you receive an error message, it's possible that your organization hasn't purchased a Power BI subscription. See [Email validation](#email-validation) to learn what steps to take to get a per-user license.
+If the Power BI service doesn't open or if you receive an error message, it's possible that your organization doesn't have a Power BI subscription. See [Email validation](#email-validation) to learn what steps to take to get a per-user license.
 
 ### Email validation
 
 The first time you attempt to sign up for a license, Microsoft asks for your email address. 
 
-If your organization didn't purchase Power BI, you are redirected to a sign up process. You're asked to create an account and possibly even create a new tenant.
+If your organization didn't purchase Power BI, you're redirected to a sign-up process. This alternate sign-up process creates an account and possibly even creates a new tenant.
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-no-account.png" alt-text="Signup screen that appears if you don't already have a Power BI account.":::
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-no-account.png" alt-text="Sign-up screen that appears if you don't already have a Power BI account.":::
 
 For more information about creating a Microsoft account, see [How to check if your email address is a Microsoft account](https://support.microsoft.com/account-billing/how-to-check-if-your-email-address-is-a-microsoft-account-b3ba5b92-5ead-4a28-adc9-b40558bb697e)
 
@@ -69,7 +69,7 @@ Another way to start a trial of a paid Power BI license is to [start a trial of 
 
 ### Start a Microsoft 365 trial of Pro
 
-If you don't have a work or school email account, you can still start a trial of Power BI Pro or Fabric (Free). You can do this by [signing up for a trial of Microsoft Office 365 E5](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) and creating an *onmicrosoft* email account and a new tenant. The Microsoft 365 trial includes up to 25 licenses and you become the admin for the new tenant. The E5 version of Microsoft Office 365 includes a Pro license. A credit card is required to sign up, so be sure to cancel the trial before 30 days if you aren't ready to purchase.  
+If you don't have a work or school email account, you can still start a trial of Power BI Pro or Fabric (Free). [Sign up for a trial of Microsoft Office 365 E5](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) and creating an *onmicrosoft* email account and a new tenant. The Microsoft 365 trial includes up to 25 licenses and you become the admin for the new tenant. The E5 version of Microsoft Office 365 includes a Pro license. A credit card is required to sign up, so be sure to cancel the trial before 30 days if you aren't ready to purchase.  
 
 For more information about the Microsoft 365 trial, see [sign up for Power BI with a Microsoft 365 trial.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) 
 
@@ -99,11 +99,15 @@ You can also purchase Pro or PPU licenses from the [Microsoft Power BI pricing s
 
 You can always cancel your free subscription, cancel a purchase, or end your trial. Each of these actions has a different set of procedures and considerations. For more information, see [Close your account, cancel your subscription, end your trial](/fabric/enterprise/fabric-close-end-cancel).
 
-## Considerations and troubleshooting
+## Considerations and limitations
 
 - If you have a subscription for Microsoft 365 E5, you have a Pro license. 
 - You can sign up for or purchase Power BI with .gov or .mil addresses, but this approach requires a different process. For more information, see [Enroll your US Government organization in the Power BI service](../enterprise/service-govus-signup.md).
 - If you're unable to use self-service to get your own Power BI license, check to see if your Microsoft 365 Global administrator disabled the self-service options. Also check with the Fabric administrator to see if they changed the upgrade and trial options available to you. For help when you can't use self-service, go to [Self-service sign up and purchase help](service-self-service-sign-up-help.md).
+
+-  If you're a Global administrator or Billing administrator, you might not want users in your organization to use self-service sign-up. To learn how to disable self-service, visit [Enable or disable self-service.](../enterprise/service-admin-disable-self-service.md)
+
+- If you're a Global administrator or Billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md). 
 
 - If you're an admin, [learn how to enable and disable self-service.](../enterprise/service-admin-disable-self-service.md)
 
@@ -116,15 +120,11 @@ You can always cancel your free subscription, cancel a purchase, or end your tri
 
 - If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**take over** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses.
 
-## Considerations and limitations
-
 In most cases, you can sign up for the Power BI service and for Fabric by following the described processes. Some of the issues that might prevent you from signing up are described here, with possible workarounds.
 
-- Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you're asked to select how many licenses you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
+- Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you select how many licenses you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 
 - Your organization has its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
-
-
 
 ### Can't access your Fabric items
 
@@ -143,7 +143,7 @@ In most cases, you can sign up for the Power BI service and for Fabric by follow
 
 The Power BI service doesn't support email addresses provided by consumer email services or telecommunications providers. To finish signing up, try again using an email address assigned by your work or school. 
 
-If signup still doesn't work, try a more advanced setup process.  [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+If sign up still doesn't work, try a more advanced setup process.  [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
 You can also have an existing user [invite you as a guest](../enterprise/service-admin-azure-ad-b2b.md).
 
@@ -159,7 +159,7 @@ Your organization uses IDs that are different than your email address to sign in
 
 To finish signing up or purchasing, use the ID that your organization assigned to you for signing in to Microsoft 365 or other Microsoft services. If you don't know what this ID is, contact your global administrator.  
 
-If you still can't sign up or purchase there is a more advanced setup process available. [Register for a new Microsoft 365 trial subscription and use that email address to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+If you still can't sign up or purchase there's a more advanced setup process available. [Register for a new Microsoft 365 trial subscription and use that email address to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
 
 ### I'm trying to use Power BI Desktop
 
@@ -173,22 +173,12 @@ Sometimes it takes a few tries. If you retry your password several times and you
 
 You don't see prompts to upgrade (Buy now) or start a trial (Try now), and the UI doesn't display **Try now** or **Buy now** buttons.
 
-The type of upgrade and trial options that you're offered depends on how your administrator set up your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
+The type of upgrade and trial options available to you depends on how your administrator set up your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
 
 ## Related content
-
-- If you're a Global administrator or Billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md). 
 
 - [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
 - [Power BI features by license type](../consumer/end-user-features.md)
-- [Tips for finding help](../support/service-tips-for-finding-help.md)
-- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-## Related content
-
 - For step-by-step instructions for using self-service sign-up and self-service purchase to get your own Power BI free or trial license, go to [Power BI self-service for individuals](service-self-service-signup-for-power-bi.md).
 
 - If you're a Global administrator or Billing administrator, licensing and subscription information is available in [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md).
-
-- If you're a Global administrator or Billing administrator, you might not want users in your organization to use self-service sign-up. To learn how to disable self-service, visit [Enable or disable self-service.](../enterprise/service-admin-disable-self-service.md)
-
-- The definitions of [self-service purchase](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins). 
