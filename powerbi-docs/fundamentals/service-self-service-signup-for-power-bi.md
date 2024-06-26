@@ -17,9 +17,7 @@ LocalizationGroup: Get started
 
 In this quickstart, you assign yourself a license and purchase a license for the Power BI service. This article doesn't cover trials.
 
-The Power BI service can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains several ways individuals can get a license for the Power BI service for themselves.
-
-This quickstart takes you through several ways to sign up for or to purchase a Power BI license. For an in-depth review of the many other ways to sign up or purchase Power BI, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
+The Power BI service can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains several ways individuals can get a license for the Power BI service for themselves. For an in-depth review of the many other ways to sign up or purchase Power BI, and troubleshooting steps, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
 
 The exact steps for sign-up vary depending on your organization and what you select to start the process. There are many different ways to sign up for a free license or purchase a paid license for the Power BI service as an individual. The steps in this article apply to several of the most common:
 
@@ -42,7 +40,7 @@ To complete this quickstart, you need:
 
 ### Select a button to purchase or try Power BI
 
-There are many different buttons that Microsoft publishes for new Power BI users. Some of these buttons are **Try free**, **Buy now**, and **Start a free trial**. In this example, we select a **Start free** button. Find these buttons on related Microsoft product pages, in online product documentation, and in online marketing articles.
+Microsoft publishes *get started* buttons for new Power BI users. Some of these buttons are **Try free**, **Buy now**, and **Start a free trial**. In this example, we select a **Start free** button. Find these buttons on related Microsoft product pages, in online product documentation, and in online marketing articles.
 
 1. Select **Start free** from [powerbi.microsoft.com](https://powerbi.com).
 
@@ -98,7 +96,7 @@ Select **Buy now** to upgrade your license.
 
 ## Look up your license type
 
-Confirm your new license. Open your Account manager by selecting the circle from the upper right corner.
+At any time, you can look up your account type in your Account manager. Open your Account manager by selecting the circle from the upper right corner.
 
 :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-account-manager.png" alt-text="Screenshot of your Power BI Account manager with your icon and license type outlined in red.":::
 
@@ -115,6 +113,8 @@ In most cases, you can get a license for the Power BI service and for Fabric by 
 ### Sign-in doesn't recognize your password
 
 Sometimes it takes a few tries. If you retry your password several times and you still can't sign in, try running your browser in Incognito (Chrome) or InPrivate (Microsoft Edge) mode.
+
+For more limitations and considerations, see [Sign up or purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
 
 ## Related content
 
