@@ -134,7 +134,7 @@ You can conditionally format the tooltip for the drillthrough button when it's e
 
     If the user selects a single product but not a single store, the measure returns: "Ctrl + click to also select a single store."
 
-- Similarly, you can set the enabled-state tooltip to be specific to the user’s selection. For example, if you want the user to know which product and store the drillthrough page are filtered to, you can create a measure that returns:
+- Similarly, you can set the enabled-state tooltip to be specific to the user’s selection. For example, if you want the user to know which product and store the drillthrough page is filtered to, you can create a measure that returns:
 
     "Click to drill through to [drillthrough page name] to see more details on sales for [product name] at [store name] stores."
 
