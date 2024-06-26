@@ -1,6 +1,6 @@
 ---
-title: Format code
-description: Setting - Format code (Callout values, Values, Format code)
+title: Image URL
+description: Setting - Image URL (Images, Image, Image URL)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Format code
+#### Image URL
 
-Allows you to select one of seven possible date formats.
+Here you can specify an image URL, or use conditional formatting to insert an image.

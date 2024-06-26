@@ -1,6 +1,6 @@
 ---
-title: Format code
-description: Setting - Format code (Callout values, Values, Format code)
+title: Per row level
+description: Setting - Per row level (Row Subtotals, Apply settings to, Per row level)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Format code
+#### Per row level
 
-Allows you to select one of seven possible date formats.
+This toggle, when enabled, lets you customize subtotals for individual rows.

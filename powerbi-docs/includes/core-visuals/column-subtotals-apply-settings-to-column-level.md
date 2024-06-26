@@ -1,6 +1,6 @@
 ---
-title: Format code
-description: Setting - Format code (Callout values, Values, Format code)
+title: Column level
+description: Setting - Column level (Column Subtotals, Apply settings to, Column level)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Format code
+#### Column level
 
-Allows you to select one of seven possible date formats.
+Use this menu to set subtotal options for the entire column.

@@ -1,6 +1,6 @@
 ---
-title: Format code
-description: Setting - Format code (Callout values, Values, Format code)
+title: Value
+description: Setting - Value (Reference line, Line, Value)
 author: v-jaedena
 ms.author: miguelmyers
 ms.service: powerbi
@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Format code
+#### Value
 
-Allows you to select one of seven possible date formats.
+This option allows users to specify a fixed value, a date, or use conditional formatting, depending on the line type.
