@@ -116,6 +116,73 @@ You can always cancel your free subscription, cancel a purchase, or end your tri
 
 - If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**take over** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses.
 
+## Considerations and limitations
+
+In most cases, you can sign up for the Power BI service and for Fabric by following the described processes. Some of the issues that might prevent you from signing up are described here, with possible workarounds.
+
+- Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you're asked to select how many licenses you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
+
+- Your organization has its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
+
+
+
+### Can't access your Fabric items
+
+- If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](/fabric/admin/fabric-switch).
+
+- If you're using Microsoft 365, certain versions include a free Fabric license and a free or paid Power BI license. For example, the E5 SKU includes a Fabric free license (but no capacity) and a Power BI Pro license. Without a trial or purchased capacity, you might not be able to access your Fabric items. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
+
+### Personal email addresses
+
+**Personal email addresses**
+ You attempted to sign up using a personal email address (for example nancy@gmail.com) and you received a prompt similar to one of these messages. 
+
+*You entered a personal email address: Enter your work email address so we can securely store your company's data*.
+
+*That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don't worry. We don't share your address with anyone*.
+
+The Power BI service doesn't support email addresses provided by consumer email services or telecommunications providers. To finish signing up, try again using an email address assigned by your work or school. 
+
+If signup still doesn't work, try a more advanced setup process.  [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+
+You can also have an existing user [invite you as a guest](../enterprise/service-admin-azure-ad-b2b.md).
+
+[!INCLUDE[self-service-signup](../includes/self-service-signup-help.md)]
+
+### Your email address isn't a Microsoft 365 ID
+
+You attempt to sign up or purchase and receive a message like this:
+
+*We can't find you at contoso.com. Do you use a different ID at work or school? Try signing in with that ID. If it doesn't work, contact your IT department.*
+
+Your organization uses IDs that are different than your email address to sign in to Microsoft 365 and other Microsoft services. For example, your email address might be `zalan.bola@contoso.com` but your ID is `zalanb@contoso.com`.
+
+To finish signing up or purchasing, use the ID that your organization assigned to you for signing in to Microsoft 365 or other Microsoft services. If you don't know what this ID is, contact your global administrator.  
+
+If you still can't sign up or purchase there is a more advanced setup process available. [Register for a new Microsoft 365 trial subscription and use that email address to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
+
+### I'm trying to use Power BI Desktop
+
+To download the free Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md).
+
+### Sign-in doesn't recognize your password
+
+Sometimes it takes a few tries. If you retry your password several times and you still can't sign in, try running your browser in Incognito (Chrome) or InPrivate (Microsoft Edge) mode.
+
+### You don't receive in-product prompts
+
+You don't see prompts to upgrade (Buy now) or start a trial (Try now), and the UI doesn't display **Try now** or **Buy now** buttons.
+
+The type of upgrade and trial options that you're offered depends on how your administrator set up your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
+
+## Related content
+
+- If you're a Global administrator or Billing administrator, see [Power BI licensing for your organization](../enterprise/service-admin-licensing-organization.md). 
+
+- [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
+- [Power BI features by license type](../consumer/end-user-features.md)
+- [Tips for finding help](../support/service-tips-for-finding-help.md)
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 ## Related content
 
 - For step-by-step instructions for using self-service sign-up and self-service purchase to get your own Power BI free or trial license, go to [Power BI self-service for individuals](service-self-service-signup-for-power-bi.md).
