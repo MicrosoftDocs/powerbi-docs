@@ -35,7 +35,7 @@ Your organization purchased a Power BI subscription that includes licenses. Self
 
     :::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email that contains a Power BI link.":::
 
-All of these actions sign you up for a per-user license and open the Power BI service in a browser. The license you're assigned depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](/consumer/end-user-license).
+All of these actions sign you up for a per-user license and open the Power BI service in a browser. The license you're assigned depends on your organization's subscription and self-service settings. To learn more about the types of licenses, see [Power BI license types](/consumer/end-user-license.md).
 
 If the Power BI service doesn't open or if you receive an error message, it's possible that your organization hasn't purchased a Power BI subscription. See [Email validation](#email-validation) to learn what steps to take to get a per-user license.
 
