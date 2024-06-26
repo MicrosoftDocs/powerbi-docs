@@ -90,15 +90,19 @@ You can also specify an aggregation in the Q&A expression itself. For example, i
 
 You can only define a single condition in tooling. To define more complex conditions, use Data Analysis Expressions (DAX) to create a calculated column or measure and then use the tooling section to create a single condition for that column or measure.
 
-## Manage terms
+## Manage synonyms and relationships
 
 After you provide definitions, you can go back to see all the fixes you made and edit or delete them. 
 
-1. In **Q&A setup**, go to the **Manage terms** section.
+1. In **Q&A setup**, go to the **Synonyms** section to manage nouns.
 
-2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it.
+2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help adding more synonyms. For more information see [Enhance Q&A with Copilot for Power B] (q-and-a-copilot-enhancements.md).
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
+   
+3. In **Q&A setup**, go to the **Relationships** section to manage adjectives and other relationship types.
+4. Delete any relationships that you no longer want or edit the relationship using the pencil icon.
+
 
 ## Related content
 
