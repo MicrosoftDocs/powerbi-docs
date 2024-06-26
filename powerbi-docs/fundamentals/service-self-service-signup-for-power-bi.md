@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 # customer intent: As an individual, I want to use self-service to sign up for a Power BI license. 
 ---
  
-# Quickstart: Sign up for or purchase the a license for the Power BI service
+# Quickstart: Sign up for or purchase a license for the Power BI service
 
 In this quickstart, you assign yourself a license and purchase a license for the Power BI service. This article doesn't cover trials.
 
@@ -23,10 +23,10 @@ This quickstart takes you through several ways to sign up for or to purchase a P
 
 The exact steps for sign-up vary depending on your organization and what you select to start the process. There are many different ways to sign up for a free license or purchase a paid license for the Power BI service as an individual. The steps in this article apply to several of the most common.
 
-- From a **Try now** or **Buy now** type of button.
-- From a Power BI link sent to you in email.
-- From an in-product upgrade prompt.
-- From your Account manager.
+- From a **Try now** or **Buy now** type of button
+- From a Power BI link sent to you in email
+- From an in-product upgrade prompt
+- From your Account manager
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ To complete this quickstart, you need:
 
 - a work or school email address that can be used with Power BI and Fabric. If you don't have a work or school account, [learn about alternate ways to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
-- an email account with an organization that has enabled self-service sign-ups and self-service-purchase.
+- an email account with an organization with self-service sign-ups and self-service-purchases enabled.
 
 ### Select a button to purchase or try Power BI
 
@@ -50,15 +50,15 @@ There are many different buttons that Microsoft publishes for new Power BI users
 
 1. When prompted, sign in using your organizational account.
 
-1. In this example, Microsoft 365 recognizes you and knows that you already have at least one other Microsoft service installed. You're assigned a free license.  
+1. In this example, Microsoft 365 recognizes you and knows that you already have at least one other Microsoft service installed. You receive a free license.  
 
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-free.png" alt-text="Screenshot of screen confirming Fabric (Free) license assigned to you.":::
 
-    Because you are a new user, Power BI opens your Home screen. Home contains resources to help you get started. 
+    Because you're a new user, Power BI opens your Home screen. Home contains resources to help you get started. 
 
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-home.png" alt-text="Screenshot of your Power BI Home screen.":::
     
-1. You might even receive popups with suggestions to get started. Here is one example. 
+1. You might even receive popups with suggestions to get started. Here's one example. 
 
     :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-help-popup.png" alt-text="Screenshot of a popup help screen with tips for new users.":::
 
@@ -66,13 +66,13 @@ You now have a Fabric (Free) license to work in Power BI. You can also use this 
 
 With a free license you can try the Power BI service on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity, and initiate an individual Fabric trial. For more information, see [Power BI features by license type](service-features-license-type.md).
 
-- If you find that you need more than a Fabric (Free) license to work in the Power BI service, the next sections of this article explains how to upgrade to a Pro or PPU license.
+- You might find that you need more than a Fabric (Free) license to work in the Power BI service. The next sections of this article explain how to upgrade to a Pro or Premium Per User (PPU) license.
 
-- If you find that you need more than a Fabric (Free) license to work in Fabric, try a [Trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial of a Fabric capacity includes a Fabric trial capacity and a license similar to PPU.  
+- You might find that you need more than a Fabric (Free) license to work in Fabric.  Try a [Trial of a Fabric capacity](/fabric/get-started/fabric-trial). The trial of a Fabric capacity includes a Fabric trial capacity and a license similar to PPU.  
 
 ### Select an email link to get a license
 
-Another way get a Power BI license is to select a Power BI link that you receive in an email from a colleague. The link might take you to a Power BI dashboard, report, or app. And, clicking the link is your first time signing in to this Power BI account.
+Another way to get a Power BI license is to select a Power BI link that you receive in an email from a colleague. The link might take you to a Power BI dashboard, report, or app. And, clicking the link is your first time signing in to this Power BI account.
 
 :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-email.png" alt-text="Screenshot of an email with a Power BI link.":::
 
@@ -108,7 +108,7 @@ In most cases, you can get a license for the Power BI service and for Fabric by 
 
 - Your organization doesn't support self-service sign-up or self-service purchase. Contact your Global administrator to see if these self-service options can be turned on.
 
-- Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you're asked to select how many licenses you want to buy, and to provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
+- Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you select how many licenses you want to buy, and provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 
 - Your organization has its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
 
