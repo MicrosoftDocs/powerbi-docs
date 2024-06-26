@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 With the report settings in Power BI Desktop and the Power BI service, you can control how report readers interact with your report. For example, you can allow them to save filters for the report, personalize the visuals in the report, or display the report pages as tabs across the bottom of the report instead of along the side.
 
-:::image type="content" source="media/power-bi-report-settings/service-report-settings-pane.png" alt-text="Screenshot of the report Settings pane in the Power BI service." lightbox="media/power-bi-report-settings/service-report-settings-pane.png":::
+:::image type="content" source="media/power-bi-report-settings/service-report-settings-pane.png" alt-text="Screenshot of the report Settings pane in the Power BI service.":::
 
 It might be helpful to first read:
 
