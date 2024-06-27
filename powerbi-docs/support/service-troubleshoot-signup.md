@@ -116,9 +116,11 @@ The Power BI Pro license gives you access to a wider range of Power BI features.
 
 ## You can't access your Fabric items
 
+You've opened Microsoft Fabric. You see the landing page but can't access any of the Fabric items. 
+
 ## Cause: You don't have a Fabric capacity
 
-If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. 
+A Fabric (Free) license isn't the only thing that you need to access Fabric items. If you're using a Power BI Premium capacity, Microsoft Fabric items aren't supported. You need a Fabric capacity.
 
 ### Solution: Purchase or trial a Fabric capacity
 
@@ -128,25 +130,17 @@ If you're using a Power BI Premium capacity, Microsoft Fabric items aren't suppo
 
 1. If you're using Microsoft 365, certain versions include a free Fabric license and a free or paid Power BI license. For example, the Office 365 E5 SKU includes a Fabric free license (but no capacity) and a Power BI Pro license. Without a trial or a purchased capacity, you might not be able to access your Fabric items. 
 
-## My password doesn't work
-
-## Cause: You might already be logged in 
-
-You might have other browser tabs open or are running other apps on your computer. In one of these, you might be logged in as a different user. 
-
-### Solution: Try inPrivate mode
-
-1. Sometimes it takes a few tries. 
-
-1. If you retry your password several times and you still can't sign in, try running your browser in Incognito (Chrome) or InPrivate (Microsoft Edge) mode.
-
-1. For information about resetting your password, see [Troubleshoot signing in.](power-bi-cannot-sign-in.md).
-
 ## You don't receive in-product prompts
 
 You don't see prompts to upgrade (Buy now) or start a trial (Try now), and the UI doesn't display **Try now** or **Buy now** buttons.
 
+## Cause: This has been disabled by your admins
+
 The type of upgrade and trial options available to you depends on how your Global and Billing administrator setup your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
+
+### Solution: contact your admins
+
+Contact your Global and Billing administrators and ask them to enable self-service. 
 
 ## Related content
 
