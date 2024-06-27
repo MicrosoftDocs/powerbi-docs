@@ -22,7 +22,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
 1. In Power BI Desktop, on the **Modeling** ribbon, select **Q&A Setup** > **Teach Q&A**.
 
-    :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png" alt-text="Screenshot of the Teach Q and A page with a question entered in the search box." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png":::
+    :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fix-preview.png" alt-text="Screenshot of the Teach Q and A page with a question entered in the search box." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fix-preview.png":::
 
 2. Type a sentence with a term that Q&A doesn't recognize and select **Submit**.
 
@@ -32,7 +32,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
     
 3. After **Define the terms Q&A didn't understand**, provide a definition.
 
-    :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png" alt-text="Screenshot of the Teach Q and A page with a term selected and defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png":::
+    :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonyms.png" alt-text="Screenshot of the Teach Q and A page with a term selected and defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonyms.png":::
 
 4. Select **Save** to preview the updated visual.
 
@@ -96,7 +96,7 @@ After you provide definitions, you can go back to see all the fixes you made and
 
 1. In **Q&A setup**, go to the **Synonyms** section to manage nouns.
 
-2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help adding more synonyms. For more information see [Enhance Q&A with Copilot for Power B] (q-and-a-copilot-enhancements.md).
+2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help adding more synonyms. For more information see [Enhance Q&A with Copilot for Power B](q-and-a-copilot-enhancements.md).
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
    
