@@ -7,17 +7,22 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 03/11/2024
+ms.date: 06/27/2024
 ---
 
 # Power BI visuals API changelog
 
 This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
-## Coming soon
+<!--- ## Coming soon
 
-* Hierarchial identity filter
-* Authentication API extensions
+* Authentication API extensions --->
+
+## API 5.10.0
+
+## API 5.9.0
+
+* [**Hierarchial identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that can filter matrix data hierarchically based on data points. This is useful for custom visuals that leverage group-on keys and allow hierarchical filtering using identities.
 
 ## API v5.8.0
 
