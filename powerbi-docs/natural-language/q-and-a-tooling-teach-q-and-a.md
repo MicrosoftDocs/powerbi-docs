@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 06/26/2024
 LocalizationGroup: Ask questions of your datadefintion
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
