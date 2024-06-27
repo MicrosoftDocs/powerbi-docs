@@ -101,7 +101,10 @@ After you provide definitions, you can go back to see all the fixes you made and
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
    
 3. In **Q&A setup**, go to the **Relationships** section to manage adjectives and other relationship types.
-4. Delete any relationships that you no longer want or edit the relationship using the pencil icon.
+
+   :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-relationships.png" alt-text="Screenshot of the Linguistic relationships page of Q&A setup." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-relationships.png":::
+    
+5. Delete any relationships that you no longer want or edit the relationship using the pencil icon.
 
 
 ## Related content
