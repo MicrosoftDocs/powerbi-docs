@@ -12,5 +12,5 @@ LocalizationGroup: core-visuals
 ---
 ### Align baselines
  
-This toggle ensures the baselines of the labels are aligned when displaying multiple series in a chart to maintain a uniform look across all labels. This feature is only available when All series is selected in the Apply settings to option.
+This toggle ensures the baselines of the labels are aligned when displaying multiple series in a chart to maintain a uniform look across all labels. This feature is only available when you select **All series** in the **Apply settings to** option.
  
