@@ -49,7 +49,7 @@ You can teach Q&A two types of terms:
 
 ### Define a noun synonym
 
-When working with data, you might have names of fields that could be referred to by alternative names. An example could be 'Sales'. Numerous words or phrases could refer to sales, such as 'revenue'. If a column is named 'Sales' and report consumers type 'revenue', Q&A might fail to pick the correct column to answer the question appropriately. In that case, you want to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
+When working with data, you might have names of fields that could be referred to by alternative names. An example could be 'Sales.' Numerous words or phrases could refer to sales, such as 'revenue.' If a column is named 'Sales' and report consumers type 'revenue,' Q&A might fail to pick the correct column to answer the question appropriately. In that case, you want to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
 
 Q&A automatically detects when an unrecognized word is a noun by using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you by using the phrase:
 
@@ -63,7 +63,7 @@ If you provide something other than a field from the data model, you might get u
 
 ### Define an adjective filter condition
 
-Sometimes, you might want to define terms that act as a condition on the underlying data. An example could be 'Awesome Publishers'. 'Awesome' could be a condition that only selects publishers that have published X number of products. Q&A tries to detect adjectives and then provides the prompt:
+Sometimes, you might want to define terms that act as a condition on the underlying data. An example could be 'Awesome Publishers.' 'Awesome' could be a condition that only selects publishers that have published X number of products. Q&A tries to detect adjectives and then provides the prompt:
 
 - **that have**  
 
@@ -84,7 +84,7 @@ Some example conditions that you can define are:
 
 In these examples, 'Products' could be either a column name or a measure. 
 
-You can also specify an aggregation in the Q&A expression itself. For example, if ‘popular products’ are products with at least 100 units sold, you can define products with ‘sum of units sold > 100’ as popular.  
+You can also specify an aggregation in the Q&A expression itself. For example, if 'popular products' are products with at least 100 units sold, you can define products with 'sum of units sold > 100' as popular.  
 
 :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Screenshot of the section that defines the term named Popular products.":::
 
@@ -96,7 +96,7 @@ After you provide definitions, you can go back to see all the fixes you made and
 
 1. In **Q&A setup**, go to the **Synonyms** section to manage nouns.
 
-2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help adding more synonyms. For more information see [Enhance Q&A with Copilot for Power B](q-and-a-copilot-enhancements.md).
+2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help with adding more synonyms. For more information, see [Enhance Q&A with Copilot for Power B](q-and-a-copilot-enhancements.md).
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
    
