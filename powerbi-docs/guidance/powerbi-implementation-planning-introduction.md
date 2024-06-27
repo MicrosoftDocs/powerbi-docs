@@ -29,12 +29,10 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [Subscriptions, licenses, and trials](powerbi-implementation-planning-subscriptions-licenses-trials.md)
 - [Tenant administration](powerbi-implementation-planning-tenant-administration.md)
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
-- Data management
 - [Content lifecycle management](powerbi-implementation-planning-content-lifecycle-management-overview.md)
 - [Content distribution and sharing](powerbi-implementation-planning-content-distribution-sharing.md)
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
-- Capacity management
 - [Data gateways](powerbi-implementation-planning-data-gateways.md)
 - Integration with other services
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
@@ -42,6 +40,8 @@ When you implement Power BI, there are many subject areas to consider. The follo
 
 > [!NOTE]
 > The series is a work in progress. We will gradually release new and updated articles over time.
+>
+> In addition to these subject areas, managing your Fabric or Premium capacity usage is an important part of your Power BI implementation. It affects not only Power BI, but also the other experiences in Fabric. For information about how to manage your Fabric capacity, see [Manage your Fabric capacity](/fabric/admin/capacity-settings?tabs=power-bi-premium&preserve-view=true) and [Evaluate and optimize your Microsoft Fabric capacity](/fabric/enterprise/optimize-capacity).
 
 ## Usage scenarios
 
