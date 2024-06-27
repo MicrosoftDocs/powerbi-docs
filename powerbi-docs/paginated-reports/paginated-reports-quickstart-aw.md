@@ -175,7 +175,7 @@ To see the actual values, you need to run the report.
 
    Now you see the values. The matrix has many more rows than you saw in Design view. Note that Report Builder says it's page **1** of **2?**. Report Builder loads the report as quickly as possible, so it only retrieves enough data for a few pages at a time. The question mark indicates that Report Builder is still loading the data.
 
-   :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png" alt-text="Screenshot of a report, showing where to find the page number and page navigation arrows." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png":::
+   :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png" alt-text="Screenshot of a report, showing where to find the page number and page navigation arrows.":::
 
 ## Format the report
 
