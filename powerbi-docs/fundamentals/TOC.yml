@@ -18,6 +18,8 @@
     items: 
     - name: "Get started with Power BI Desktop"
       href: desktop-getting-started.md
+    - name: Sign up or purchase a license for PowerMicrosoft BizTalk ESB Toolkit
+      href: service-self-service-signup-for-power-bi.md
     - name: "Get started with the Power BI service"
       href: service-get-started.md
     - name: "Get started with Microsoft Fabric and Power BI"
@@ -35,9 +37,7 @@
       href: ../support/service-tips-for-finding-help.md
     - name: Licensing
       items: 
-      - name: "What is self-service sign-up and self-service purchase?"
-        href: service-self-service-signup-for-power-bi.md 
-      - name: "Sign up or purchase Power BI"
+      - name: "Sign up or purchase Power BI as an individual"
         href: service-self-service-signup-purchase-for-power-bi.md         
       - name: "Features by license type"
         href: service-features-license-type.md
