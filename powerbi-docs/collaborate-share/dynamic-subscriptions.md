@@ -28,9 +28,8 @@ The dynamic subscription parameters are stored in a separate Power BI semantic m
 > Dynamic subscriptions is currently in PREVIEW.
 > This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
-
-
 ## Prerequisites
+
 - A paginated report with parameters to share that is saved in a workspace backed by a capacity ([Power BI Premium capacity](../enterprise/service-premium-what-is.md), [Microsoft Fabric trial](/fabric/get-started/fabric-trial), or [Microsoft Fabric capacity](/fabric/enterprise/licenses)).
 - Build permissions to a Power BI semantic model that contains the email addresses of your recipients and parameter values that should be applied for each recipient.  
 - A Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [Roles in workspaces](service-roles-new-workspaces.md).
