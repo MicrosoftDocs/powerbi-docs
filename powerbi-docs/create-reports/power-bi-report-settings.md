@@ -35,9 +35,6 @@ It might be helpful to first read:
 # [Power BI Desktop](#tab/powerbi-desktop)
 
 1. Select **File** > **Options and settings** > **Options**.
-1. Under **Current file**, select **Report settings**.
-
-    :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Screenshot of report Settings pane in Power BI Desktop." lightbox="media/power-bi-report-settings/desktop-report-settings-pane.png":::
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -45,9 +42,10 @@ It might be helpful to first read:
 
     :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Screenshot of the Power BI service, highlighting the File menu on the ribbon and Settings options.":::
 
-1. In the **Settings** pane, you see many toggles you can set for the this report.
-
 ---
+1. Under **Current file**, select **Report settings**. In the **Settings** pane, you see many toggles you can set for the this report.
+
+    :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Screenshot of report Settings pane in Power BI Desktop." lightbox="media/power-bi-report-settings/desktop-report-settings-pane.png":::
 
 The rest of this article calls out some of the specific report settings.
 
