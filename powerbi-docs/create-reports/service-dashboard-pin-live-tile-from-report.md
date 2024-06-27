@@ -51,7 +51,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 
 1. Select **Pin live**. A Success message (near the top right corner) lets you know the page was added as a tile to your dashboard.
 
-## Pinned live tile on th dashboard
+## Pinned live tile on the dashboard
 
 Open the dashboard to see the pinned live tile:
 
