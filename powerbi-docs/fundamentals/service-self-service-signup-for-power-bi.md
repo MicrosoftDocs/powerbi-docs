@@ -110,11 +110,7 @@ In most cases, you can get a license for the Power BI service and for Fabric by 
 
 - Your organization has its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
 
-### Sign-in doesn't recognize your password
-
-Sometimes it takes a few tries. If you retry your password several times and you still can't sign in, try running your browser in Incognito (Chrome) or InPrivate (Microsoft Edge) mode.
-
-For more limitations and considerations, see [Sign up or purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md)
+For more limitations and considerations, see  [Troubleshooting signing up for an individual license](../support/service-troubleshoot-signup.md)
 
 ## Related content
 

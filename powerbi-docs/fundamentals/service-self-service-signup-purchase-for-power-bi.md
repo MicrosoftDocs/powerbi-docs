@@ -18,9 +18,9 @@ LocalizationGroup: Get started
 
 This article explains how individuals within an organization can sign up for Power BI or purchase Power BI for themselves. 
 
-These *self-service* methods include buying a paid license, starting individual trials, and getting free licenses if your organization allows self-service. If the term self-service is new to you, or if you're an administrator who manages self-service, visit these admin articles [What is self-service?](/microsoft-365/admin/misc/self-service-sign-up) and [Self-service for Microsoft 365 products and services.](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
+These *self-service* methods include upgrading to a paid license, starting individual trials, and getting free licenses if your organization allows self-service. If the term self-service is new to you, or if you're an administrator who manages self-service, visit these admin articles [What is self-service?](/microsoft-365/admin/misc/self-service-sign-up) and [Self-service for Microsoft 365 products and services.](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
 
-If you're unable to sign up for Power BI or to purchase Power BI, it might be because your Microsoft 365 Global administrator disabled self-service options. Ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
+If you're unable to sign up for Power BI or to purchase a Power BI individual license, it might be because your Microsoft 365 Global or Billing administrator disabled self-service options. Ask them to [enable self-service sign-up and self-service-purchase.](../enterprise/service-admin-licensing-organization.md#enable-and-disable-self-service-sign-up-and-purchase)
 
 ## Look up your current license or trial
 
