@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 01/20/2024
+#customer intent: As a Power BI visual developer, I want to learn how to enable keyboard navigation in my visual so that users can navigate through the visual using the keyboard.
 ---
 
 # Support keyboard navigation in a custom visual

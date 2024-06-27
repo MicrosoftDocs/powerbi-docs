@@ -8,7 +8,8 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 01/10/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use the interactivity utils to simplify the implementation of cross-selection and cross-filtering in my Power BI visuals.
 ---
 
 # Power BI visuals interactivity utils

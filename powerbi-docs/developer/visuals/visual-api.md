@@ -1,6 +1,6 @@
 ---
-title:  Visual API
-description: This article describes how to use IVisual API for Power BI visuals.
+title:  Visual API for Power BI Visuals
+description: This article provides a comprehensive guide on how to use the IVisual API for Power BI visuals, including step-by-step instructions and code examples.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins

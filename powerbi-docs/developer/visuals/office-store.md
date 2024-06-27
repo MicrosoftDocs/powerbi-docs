@@ -1,13 +1,14 @@
 ---
-title: Publish Power BI visuals to the Microsoft commercial marketplace.
-description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
+title: Publish Power BI visuals
+description: Learn how to publish your custom visual to Partner Center and make it available for others to discover and use in the Microsoft commercial marketplace.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/09/2023
+ms.date: 06/09/2024
+#customer intent: As a developer, I want to learn how to publish my Power BI visual to the Microsoft commercial marketplace so that others can discover and use it.
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace

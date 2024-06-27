@@ -46,7 +46,7 @@
     - name: Alternate email address for Power BI
       href: service-admin-alternate-email-address-for-power-bi.md
     - name: Closing your account
-      href: service-admin-closing-your-account.md      
+      href: /fabric/enterprise/fabric-close-end-cancel      
   - name: Power BI sovereign clouds
     expanded: false
     items:

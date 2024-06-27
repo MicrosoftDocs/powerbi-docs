@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 06/25/2024
 LocalizationGroup: Create reports
 ---
 # Customize buttons in Power BI reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Whether you create a button in Power BI Desktop or the Power BI service, you can customize it in many different ways to suit your requirements. For example, you can turn **Button Text** on or off, and you can change the button shape, icon, fill, title, or the action that's taken when users select the button in a report, among other properties.
+Whether you create a button in Power BI Desktop or the Power BI service, you can customize it in many different ways to suit your requirements. For example, you can turn **Button Text** on or off, and you can change the button shape, icon, fill, title, or the action that happens when users select the button in a report, among other properties.
 
 :::image type="content" source="media/power-bi-customize-button/power-bi-customize-shape-parallelogram.png" alt-text="Screenshot showing button shape options.":::
 
@@ -23,30 +23,32 @@ Whether you create a button in Power BI Desktop or the Power BI service, you can
 
 ## Change the shape
 
-A rectangle is the default shape for buttons, but you can change the shape.
+A rectangle is the default shape for buttons, but you can change the shape:
 
-- Select the button, navigate to the **Shape** tab of the **Format button** pane, and customize the button to any of these shapes:
+1. Select the button you want to change.
 
-    - Arrow
-    - Chevron arrow
-    - Pentagon arrow
-    - Heart
-    - Hexagon
-    - Isosceles triangle
-    - Octagon
-    - Oval
-    - Parallelogram
-    - Pentagon
-    - Pill
-    - Rectangle
-    - Right triangle
-    - Rounded rectangle
-    - Speech bubble
-    - Snipped tab, top right
-    - Snipped tab, both top
-    - Rounded tab, top right
-    - Rounded tab, both top
-    - Trapezoid
+1. Navigate to the **Shape** tab of the **Format button** pane, and customize the button to any of these shapes:
+
+   - Arrow
+   - Chevron arrow
+   - Pentagon arrow
+   - Heart
+   - Hexagon
+   - Isosceles triangle
+   - Octagon
+   - Oval
+   - Parallelogram
+   - Pentagon
+   - Pill
+   - Rectangle
+   - Right triangle
+   - Rounded rectangle
+   - Speech bubble
+   - Snipped tab, top right
+   - Snipped tab, both top
+   - Rounded tab, top right
+   - Rounded tab, both top
+   - Trapezoid
 
 ## Add a custom image or icon
 
@@ -56,9 +58,10 @@ Here’s an example of a button with a custom image:
 
 :::image type="content" source="media/power-bi-customize-button/power-bi-custom-image.png" alt-text="Screenshot showing an example of a button with a custom image.":::
 
-Here's how:
+To add a custom image or icon:
 
 1. Select the button, and navigate to the **Style** > **Icon** tab of the **Format button** pane.
+
 1. Select the **Custom** option for **Icon**, then select **Browse**.
 
     :::image type="content" source="media/power-bi-customize-button/power-bi-add-custom-icon-desktop.png" alt-text="Screenshot showing the Browse option to add an image to a custom image.":::
@@ -85,6 +88,6 @@ Just like Power BI built-in shapes, Power BI buttons can have artistic effects t
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
-* [Create buttons in Power BI reports](desktop-buttons.md)
-* [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md) describes how report readers experience buttons in your reports.
-* [Create a drillthrough button](desktop-drill-through-buttons.md)
+- [Create buttons in Power BI reports](desktop-buttons.md)
+- [Identify and use buttons in the Power BI service](../consumer/end-user-buttons.md) describes how report readers experience buttons in your reports.
+- [Create a drillthrough button in Power BI](desktop-drill-through-buttons.md)

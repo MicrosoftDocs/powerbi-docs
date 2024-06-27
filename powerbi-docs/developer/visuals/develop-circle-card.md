@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 11/07/2023
+ms.date: 06/18/2024
 ms.custom: engagement-fy23
 #customer intent: As a Power BI visual developer, I want to learn how to develop a Power BI visual so that I can create custom visuals for my reports.
 ---
@@ -49,7 +49,7 @@ In this section, you create a project for the circle card visual.
 
 3. Open the *CircleCard* folder in the **VS Code** explorer. (**File** > **Open Folder**).
 
-   :::image type="content" source="./media/develop-circle-card/circle-card-explorer.png" alt-text="Screenshot of VS code window opened to the circle card folder.":::
+   :::image type="content" source="./media/develop-circle-card/circle-card-explorer.png" alt-text="Screenshot of VS Code window opened to the circle card folder.":::
 
    For a detailed explanation of the function of each of these files, see [Power BI visual project structure](./visual-project-structure.md).
 
@@ -366,7 +366,7 @@ Modify the **capabilities.json** file to define the data role, objects, and data
 
 * **Define the data role**
 
-    Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a field that's summed up.
+    Define the *dataRoles* array with a single data role of the type *measure*. This data role is called *measure*, and is displayed as *Measure*. It allows passing either a measure field, or a summed up field.
 
     1. Open the **capabilities.json** file in VS Code.
 
@@ -438,10 +438,10 @@ Verify that the circle card visual displays the *measure* field, and review the 
 
 1. In Power BI service, open the *Power BI US Sales Analysis* report. If you're using a different report to develop the circle card visual, navigate to that report.
 
-2. Notice that the circle card visual can now be configured with a field titled *Measure*. You can drag and drop elements from the **Fields** pane into the *Measure* field.
+2. Notice that the circle card visual can now be configured with a field titled *Measure*. You can drag and drop elements from the **Data** pane into the *Measure* field.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the circle card measure filed, in the Power BI service visualization pane.](media/develop-circle-card/measure.png)
+    >![Screenshot of the circle card measure filed, in the Power BI service visualization pane.](media/develop-circle-card/measure-2.png)
 
     > [!Note]
     > The visual project does not yet include data binding logic.
@@ -497,7 +497,7 @@ The visual now displays the name and value of the selected data field.
 
 :::image type="content" source="./media/develop-circle-card/circle-card-final-visual.png" alt-text="Screenshot of a circle card visual displaying the quantity value.":::
 
-You have now created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
+You created a working Power BI visual. You can [add formatting options](custom-visual-develop-tutorial-format-options.md) to it, or you can [package](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual) it as is for immediate use.
 
 ## Related content
 

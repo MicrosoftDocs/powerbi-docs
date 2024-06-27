@@ -6,14 +6,15 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/10/2023
+ms.topic: concept-article
+ms.date: 01/10/2024
+#customer intent: As a Power BI developer, I want to learn how to use tooltip utils to simplify tooltip customization in my Power BI visuals.
 ---
 # Tooltip utils
 
 This article will help you to install, import, and use tooltip utils. This util is useful for tooltip customizations in Power BI visuals.
 
-## Requirements
+## Prerequisites
 
 To use the package, you need:
 

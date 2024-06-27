@@ -1,13 +1,14 @@
 ---
 title: Objects and properties of Power BI visuals
-description: This article describes the customizable properties of Power BI visuals.
+description: This article explains which Power BI visual properties are customizable and how to customize the visual properties in the formatting pane.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 10/11/2022
+ms.topic: concept-article
+ms.date: 10/11/2023
+#customer intent: As a Power BI visual developer, I want to learn about the objects and properties of Power BI visuals so that I can customize my visuals.
 ---
 
 # Objects and properties of Power BI visuals

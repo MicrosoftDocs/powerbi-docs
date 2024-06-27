@@ -3119,7 +3119,11 @@
             "redirect_url": "/fabric/enterprise/throttling",
             "redirect_document_id": false
         },
-
+        {
+            "source_path": "powerbi-docs/enterprise/service-admin-closing-your-account.md",
+            "redirect_url": "/fabric/enterprise/fabric-close-end-cancel",
+            "redirect_document_id": false
+        },
         {
             "source_path": "powerbi-docs/service-connect-to-smartsheet.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-smartsheet",
