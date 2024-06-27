@@ -113,11 +113,11 @@ The following sample code demonstrates how to acquire a Microsoft Entra ID token
     // Step 2: Verify if acquiring the token is allowed 
     if (acquireTokenStatus === PrivilegeStatus.Allowed) { 
  
-    // Step 3: Acquire the Microsoft Entra ID token
-    const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
+        // Step 3: Acquire the Microsoft Entra ID token
+        const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
  
-    // Step 4: Confirm successful acquisition of the access token
-    if (acquireAADTokenResult.accessToken) { 
+        // Step 4: Confirm successful acquisition of the access token
+        if (acquireAADTokenResult.accessToken) { 
  
             // Step 5: Call your backend API with the obtained token 
         } 
