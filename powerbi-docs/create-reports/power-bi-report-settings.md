@@ -43,7 +43,7 @@ It might be helpful to first read:
     :::image type="content" source="media/power-bi-report-settings/service-report-file-settings.png" alt-text="Screenshot of the Power BI service, highlighting the File menu on the ribbon and Settings options.":::
 
 ---
-1. Under **Current file**, select **Report settings**. In the **Settings** pane, you see many toggles you can set for the this report.
+1. Under **Current file**, select **Report settings**. In the **Settings** pane, you see many toggles you can set for this report.
 
     :::image type="content" source="media/power-bi-report-settings/desktop-report-settings-pane.png" alt-text="Screenshot of report Settings pane in Power BI Desktop." lightbox="media/power-bi-report-settings/desktop-report-settings-pane.png":::
 
