@@ -106,7 +106,7 @@ You can always cancel your free subscription, cancel a purchase, or end your tri
 
 ## Considerations and limitations
 
-There are many considerations and limitations associated with licenses. To help you identify and figure out issues you might encounter, we've put together a Troubleshooting guide. Use the [troubleshooting guide](service-troubleshoot-signup.md) to help you get a license or upgrade a license.
+There are many considerations and limitations associated with licenses. To help you identify and figure out issues you might encounter, we've put together a Troubleshooting guide. Use the [troubleshooting guide](../support/service-troubleshoot-signup.md) to help you get a license or upgrade a license.
 
 ## Related content
 

@@ -73,7 +73,7 @@ Your organization might not want employees to use self-service sign-up or to be 
 
 ### Solution: If self-service is not available
 
-1. If you're unable to use self-service to get your own Power BI license, check to see if your Microsoft 365 Global administrator disabled the self-service options. Also check with the Fabric administrator to see if they changed the upgrade and trial options available to you. For help when you can't use self-service, go to [Self-service sign up and purchase help](service-self-service-sign-up-help.md).
+1. If you're unable to use self-service to get your own Power BI license, check to see if your Microsoft 365 Global administrator disabled the self-service options. Also check with the Fabric administrator to see if they changed the upgrade and trial options available to you. For help when you can't use self-service, go to [Self-service sign up and purchase help](../fundamentals/service-self-service-sign-up-help.md).
 
 1. If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**take over** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses. Check with your Global and Billing administrators to see if this is the case.
 
@@ -98,7 +98,7 @@ Power BI Desktop is a free Windows application that you download. Power BI is al
 
 ### Solution: Download Desktop or the mobile apps
 
-- [Power BI Desktop (free download)](desktop-get-the-desktop.md)
+- [Power BI Desktop (free download)](https://powerbi.microsoft.com/desktop)
 - [Power BI mobile apps (free download)](../consumer/mobile/mobile-apps-for-mobile-devices.md)
 
 
@@ -150,6 +150,6 @@ The type of upgrade and trial options available to you depends on how your Globa
 
 ## Related content
 
-- [Power BI quickstart for getting an individual license](service-self-service-signup-for-power-bi.md).
+- [Power BI quickstart for getting an individual license](../fundamentals/service-self-service-signup-for-power-bi.md).
 - [Self-service purchase FAQ](/microsoft-365/commerce/subscriptions/self-service-purchase-faq)
 - [Power BI features by license type](../consumer/end-user-features.md)
