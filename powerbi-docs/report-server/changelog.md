@@ -20,6 +20,10 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Report Server
 
+- *Version:1.20.8944.34536 (build 15.0.1115.194), Released: June 27, 2024*
+  - Bug fixes
+    - Fixed issue related to exporting reports with images to Excel.
+
 - *Version: 1.20.8926.40580 (build 15.0.1115.178), Released: June 10, 2024*
   - Bug fixes
     - Fixed issue related to Office Online Server (OOS) not working as expected.
