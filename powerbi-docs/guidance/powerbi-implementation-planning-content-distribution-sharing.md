@@ -22,27 +22,27 @@ This article helps you to plan the distribution and sharing of content in Power 
 - **Center of Excellence (COE), IT, and BI teams:** The teams that are responsible for overseeing Power BI in the organization. These teams are responsible for defining and promoting a specific content distribution strategy.
 - **Content owners and creators:** The teams and individuals that champion analytics in a team or department and that make and distribute Power BI or Fabric content. Content owners and creators should collaborate with Azure administrators to distribute or share content to external users.
 
-Once you create content like semantic models or reports, you'll usually want to share it with other users in your organization so that they can use it to inform their decisions and actions. There are many different approaches that you can take to share Power BI and Fabric content, and each approach has its benefits and considerations. It's important to take care because oversharing of content is a common governance and security challenge for organizations. To overcome this challenge and get people access to the data and reports that they need, it's important that you implement a content distribution strategy that fits your needs and scenarios.
+Once you create content like semantic models or reports, you'll usually want to share it with other users in your organization so that they can use it to inform their decisions and actions. There are many different approaches that you can take to share Power BI and Fabric content, and each approach has its benefits and considerations. It's important to take care because oversharing of content is a common governance and security challenge for organizations. To overcome this challenge and grant people access to the data and reports that they need, it's important that you implement a content distribution strategy that fits your needs and scenarios.
 
 > [!NOTE]
-> The terms _sharing_ and _distribution_ are sometimes used interchangeably. In this article, we refer to content sharing and content distribution in the following context:
+> The terms _sharing_ and _distribution_ are sometimes used interchangeably. In this article, we refer to content sharing and content distribution in the following ways.
 >
-> - _Content sharing_ involves giving others access to an item as part of the day-to-day activities of a content creator. For example, you can share direct access to a report with someone else.
+> - _Content sharing_ involves giving others access to an item as part of the day-to-day activities of a content creator. For example, you can provide direct access to a report with someone else.
 > - _Content distribution_ involves sharing content at scale for a wider audience of content consumers. For example, you can distribute reports to an app audience by using an app.
 
-This article guides you to choose your approach to distribute content to both _content consumers_ and other _content creators_.
+This article guides you to determine your approach to distribute content to both _content consumers_ and other _content creators_.
 
-- **Content consumers:** Users who view content but don't create or share new items. These users typically have Read permission for reports, but more advanced content consumers might also request [Build permission](../connect-data/service-datasets-build-permissions.md) to perform ad hoc analysis on data items in [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) scenarios.
-- **Content creators:** Enterprise or self-service users who create and distribute content to consumers. These creators often use existing items created by other users in the organization to make new content, for example in [managed](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) or [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) scenarios.
+- **Content consumers:** Users who view content but don't create or share new items. These users typically have Read permission for reports, but more advanced content consumers might also request [Build permission](../connect-data/service-datasets-build-permissions.md) to perform ad hoc analysis on data items in [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) usage scenarios.
+- **Content creators:** Enterprise or self-service users who create and distribute content to consumers. These creators often use existing items created by other users in the organization to make new content, for example in [managed](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) or [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenarios.
 
 ## Set roles and manage permissions
 
-You share content with consumers or creators by granting them access to that content. To grant this access to users and groups, you set their roles and manage their permissions.
+You share content with consumers or creators by granting them access to that content. To grant access to users and groups, you set their roles and manage their permissions.
 
-- _Roles_ apply certain permissions to all content within a particular scope. For example, the Viewer workspace role applies Read-only permissions to all content within the workspace.
-- _Permissions_ define what an individual can do with that content. For example, applying Build permission to a semantic model allows a user to connect to and create reports from this model.
+- _Roles_ apply certain permissions to all content within a particular scope. For example, the Viewer workspace role applies read-only permission to all content within the workspace.
+- _Permissions_ define what an individual can do with that content. For example, applying Build permission to a semantic model allows a user to connect to and create reports based on the semantic model.
 
-The following diagram depicts where you can set roles and permissions in Power BI and Fabric.
+The following diagram shows where you can set roles and permissions in Power BI and Fabric.
 
 :::image type="content" source="media/powerbi-implementation-planning-content-distribution-sharing/content-permissions-control.svg" alt-text="Diagram shows where you can set roles or permissions. Each element of the diagram is described in the following table." border="false":::
 
@@ -50,60 +50,60 @@ The diagram depicts the following concepts and processes.
 
 | **Item** | **Description** |
 | :-: | --- |
-| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | You can share content in workspaces by assigning [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Workspace roles can grant permissions to all items within the workspace. |
-| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | You can share content from an app by adding people to [app audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences), or by creating an app that shares content with the entire organization. <br/><br/>&bull;&nbsp;An app audience member will receive Read-only permission to view content only in the app (and can't view individual items in the underlying workspace). <br/>&bull;&nbsp;You can grant Build permissions to app audience members for the underlying semantic models of app reports and dashboards. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | You can share content in workspaces by assigning users and groups to [workspace roles](../collaborate-share/service-roles-new-workspaces.md). Workspace roles can grant permissions to all items within the workspace. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | You can share content from an app by adding people to [app audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences), or by creating an app that shares content with the entire organization. <br/><br/>&bull;&nbsp;An app audience member will receive read-only permission to view content only in the app (and can't view individual items in the underlying workspace). <br/>&bull;&nbsp;You can grant Build permissions to app audience members for the underlying semantic models of app reports and dashboards. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | You can grant access to individual items by providing [direct access](../collaborate-share/service-share-dashboards.md) and setting specific permissions. Some items (like dataflows) don't support sharing by direct access. For these items, you share them via workspace roles. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Reports have more options. For instance, you can provide direct access with a link that works for specific users and groups, or with a link for the entire organization. Links work for specific distribution methods, like embedding in [SharePoint online](../collaborate-share/service-embed-report-spo.md) or [securely embedding in an internal webpage](../collaborate-share/service-embed-secure.md). We give an overview of all possible methods [later in this article](#plan-to-distribute-content-to-consumers). |
-| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | It's possible to distribute Power BI reports without setting roles or managing permissions for users and groups. <br/><br/>&bull;&nbsp;You might choose to share Power BI reports by embedding them in a custom website or application. In this case, you manage custom authentication, yourself. Embedding content this way requires an [F, P, EM, or A SKU](../developer/embedded/embedded-capacity.md). <br/>&bull;&nbsp;You can also share reports publicly by using [Publish to web](../collaborate-share/service-publish-to-web.md), which makes content available to everyone through the public internet. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Reports have more options. For instance, you can provide direct access with a link that works for specific users and groups, or with a link for the entire organization. Links work for specific distribution methods, like embedding in [SharePoint Online](../collaborate-share/service-embed-report-spo.md) or [securely embedding in an internal webpage](../collaborate-share/service-embed-secure.md). This article provides an overview of all possible methods [later in this article](#plan-to-distribute-content-to-consumers). |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | It's possible to distribute Power BI reports without setting roles or managing permissions for users and groups. <br/><br/>&bull;&nbsp;You might choose to share Power BI reports by embedding them in a custom website or application. In this case, you manage custom authentication yourself. Embedding content in this way requires an [F, P, EM, or A SKU](../developer/embedded/embedded-capacity.md). <br/>&bull;&nbsp;You can also share reports publicly by using [Publish to web](../collaborate-share/service-publish-to-web.md), which is a Power BI feature that makes content available to anyone through the public internet. |
 
 ### Set roles for workspaces or apps
 
-As introduced in the previous diagram, you can share a collection of content by setting roles in [workspaces](/fabric/get-started/workspaces) or [apps](../collaborate-share/service-create-distribute-apps.md). A workspace is a collaborative location to publish and organize content, while an app is a selection of reporting content that you can organize and distribute to audiences.
+As depicted in the previous diagram, you can share a collection of content by assigning people to roles in [workspaces](/fabric/get-started/workspaces) or [apps](../collaborate-share/service-create-distribute-apps.md). A workspace is a collaborative location to publish and organize content, while an app is a selection of reporting content that you organize and distribute to audiences.
 
 - _[Workspace roles](/fabric/get-started/roles-workspaces)_ control whether a user can manage workspaces, content, and connected apps (Admin, Member, or Contributor), or only view content in that workspace (Viewer).
-- _[App audiences_](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences)_ control which content is visible in an app to a user or group. You can also publish an app to your [entire organization](../collaborate-share/service-create-distribute-apps.md#publish-the-app-to-your-entire-organization).
+- _[App audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences)_ control which content is visible in an app to a user or group. You can also publish an app to your [entire organization](../collaborate-share/service-create-distribute-apps.md#publish-the-app-to-your-entire-organization).
 
 > [!NOTE]
 > Fabric administrators have access to all workspaces and workspace content. Also, Fabric capacities can contain one or more [domains](/fabric/governance/domains), which logically group workspaces together. Giving someone access to a domain _does not_ grant them access to its workspaces, items, or apps.
 
 #### Other supporting roles for content distribution or sharing
 
-There are other roles that don't directly affect how you share content, which you can use to support content distribution and sharing in certain circumstances.
+There are other roles that don't directly affect how you share content, but which you can use to support content distribution and sharing in certain circumstances.
 
-- _[Data source connection roles](powerbi-implementation-planning-data-gateways.md#data-source-connection-roles)_ control whether a user can use a data source connection of a [data gateway](powerbi-implementation-planning-data-gateways.md). If a DirectQuery semantic model uses [DirectQuery with single sign-on (SSO)](../connect-data/service-gateway-sso-overview.md), then you must add a user or group as a _User_ role so that they can use the model or view reports. You might also decide to grant creators a [data gateway role](powerbi-implementation-planning-data-gateways.md#gateway-roles) so that they can add and manage their own data source connections.
+- _[Data source connection roles](powerbi-implementation-planning-data-gateways.md#data-source-connection-roles)_ control whether a user can use a data source connection of a [data gateway](powerbi-implementation-planning-data-gateways.md). If a DirectQuery semantic model uses [DirectQuery with single sign-on (SSO)](../connect-data/service-gateway-sso-overview.md), then you must add a user or group as a _User_ role so that they can use the semantic model or view reports. You might also decide to assign creators to a [data gateway role](powerbi-implementation-planning-data-gateways.md#gateway-roles) so that they can add and manage their own data source connections.
 - _[Data security roles](/fabric/security/service-admin-row-level-security)_ control what data people can access in the semantic model. If a semantic model has a data security role, then you must add a user or group to that role before you share the model or any connected reports and dashboards.
-- _[OneLake data access roles](/fabric/onelake/security/get-started-data-access-roles)_ control what data people can access in a lakehouse. If you want to share only a subset of data in a lakehouse item, you must add a user or group to the OneLake data access role after you provide the appropriate lakehouse read permission.
+- _[OneLake data access roles](/fabric/onelake/security/get-started-data-access-roles)_ control what data people can access in a lakehouse. If you want to share only a subset of data in a lakehouse, you must add a user or group to the OneLake data access role after you grant the appropriate lakehouse Read permission.
 - _[Deployment pipeline roles](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines)_ control who can deploy content between workspaces. While deployment pipelines aren't directly related to content distribution and sharing, how you decide to deploy content and who deploys it might affect your strategy to share content with creators.
 
 > [!TIP]
-> We recommend that you use [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage permissions and role membership instead of using individual user accounts, where feasible. That way, it's easier to manage especially when you have many users. You can use the same security groups to manage other access control, like [row-level security](/fabric/security/service-admin-row-level-security#working-with-members) role membership.
+> We recommend that you use [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to manage permissions and role membership instead of using individual user accounts, where feasible. That way, it's easier to manage especially—when you have many users. You can also use the same security groups to manage other access control, like [data security](/fabric/security/service-admin-row-level-security#working-with-members) role membership.
 >
-> For more information and use-cases for using security groups in Fabric and Power BI, see [Strategy for using security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
+> For more information and use cases for using security groups in Fabric and Power BI, see [Strategy for using security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups).
 
 ### Manage item permissions
 
-When you share content via workspace roles or app audiences, you apply certain _permissions_ to a set of content. These permissions define what an individual can do with the content. For example, if you give someone the Viewer workspace role, they get Read-only permissions to all items in that workspace, which means that they can only view that content, but not modify it or connect to data items to create their own content.
+When you share content via workspace roles or app audiences, you apply certain _permissions_ to a set of content. These permissions define what an individual can do with the content. For example, if you assign someone to the Viewer workspace role, they get Read permission on all items in that workspace, which means that they can only view that content, but not modify it or connect to data items to create their own content.
 
-You can also share content via managing permissions to individual content items. For example, if you manage permissions of a semantic model, you can give someone Build permission to connect to and create their own content from that semantic model. When you share a content item via direct access, you're granting certain permissions to that item for user or group.
+You can also share content by managing permissions to individual content items. For example, if you manage permissions of a semantic model, you can grant someone Build permission to connect to and create their own content based on that semantic model. When you share a content item via direct access, you're granting certain permissions to that item for a user or group.
 
-You can assign users to the following permissions to Power BI or Fabric items.
+You can assign users to the following permissions for Power BI or Fabric items.
 
-- **Read-only (view) permission:** Let someone see the content without modifying it. Some items, like [lakehouses](/fabric/data-engineering/lakehouse-sharing#sharing-and-permissions), allow more granular control of how users can view the content (like ReadData or ReadAll). Other items, like [semantic models](../connect-data/service-datasets-share.md), allow users to see [information about the item](../connect-data/service-dataset-details-page.md), but not view its contents (like the data).
+- **Read-only (view) permission:** Let someone see the content without modifying it. Some items, like [lakehouses](/fabric/data-engineering/lakehouse-sharing#sharing-and-permissions), allow more granular control of how users can view the content (like [ReadData or ReadAll permissions](/fabric/data-engineering/lakehouse-sharing#sharing-and-permissions)). Other items, like [semantic models](../connect-data/service-datasets-share.md), allow users to see [information about the item](../connect-data/service-dataset-details-page.md), but not view its contents (like the data).
 - **Reshare permission:** Let someone share the content with others. If someone has both Reshare and Build permissions, they can also grant Build permission to someone else.
 - **[Build permission](../connect-data/service-datasets-build-permissions.md)**: Let someone connect to the data item (like a [semantic model](../connect-data/service-datasets-build-permissions.md)) to create their own content (like [reports](../connect-data/service-datasets-discover-across-workspaces.md)). Consumers might also need Build permission to view reports based on [composite semantic models](../transform-model/desktop-composite-models.md#permissions-and-licensing). If you grant Build permission to a report or app audience, it will automatically apply to the underlying semantic models.
-- **Write (modify) permission:** Let someone change an item and save their changes.
-
-The remainder of this article guides you to make decisions about which roles and permissions you should give to content consumers and creators to share content with them.
+- **Write (modify) permission:** Let someone modify an item and save their changes.
 
 > [!WARNING]
 > Don't confuse Build permission with Write permission. For example, Build permission _does_ respect any data security (like row-level security) that's enforced for an item, while Write permission _does not_ (because a user can set and change those security rules).
 
+The remainder of this article guides you to make decisions about which roles and permissions you should give to content consumers and creators to share content with them.
+
 > [!TIP]
-> Content distribution and sharing overlaps with many other important areas. The following are topics covered in the Power BI implementation planning that you should also reference as you plan how you'll share and distribute content.
+> Content distribution and sharing overlaps with many other important areas. The following are topics covered in the Power BI implementation planning series that you should also reference as you plan how you'll share and distribute content.
 >
 > - **[Workspaces](powerbi-implementation-planning-workspaces-overview.md):** How you plan to set up and use workspaces affects whether you'll share content from a workspace or not. [Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md) is particularly important for your content distribution strategy, such as how you'll set up and manage [workspace access](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-access).
 > - **[Data gateways](powerbi-implementation-planning-data-gateways.md):** When you distribute content to other users and that content relies on on-premises or VNet data gateways, you might also need to [manage gateway access](powerbi-implementation-planning-data-gateways.md#provision-gateway-access). Ensure that you manage access to both [the gateway](powerbi-implementation-planning-data-gateways.md#gateway-roles) and its [data source connections](powerbi-implementation-planning-data-gateways.md#data-source-connection-roles).
-> - **[Content lifecycle management](powerbi-implementation-planning-content-lifecycle-management-overview.md):** How you decide you'll share content can affect how you'll manage the lifecycle of that content. You typically share content as part of your post-deployment activities, during [Stage 4: deploy content](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
+> - **[Content lifecycle management](powerbi-implementation-planning-content-lifecycle-management-overview.md):** How you decide you'll share content can affect how you'll manage the lifecycle of that content. You typically share content as part of your [post-deployment activities](powerbi-implementation-planning-content-lifecycle-management-deploy.md).
 > - **[Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md):** Oversharing content or sharing content inappropriately is a governance and security risk for organizations. One way to mitigate this risk is to practice [data loss prevention for Power BI](powerbi-implementation-planning-data-loss-prevention.md).
 > - **[Security](powerbi-implementation-planning-security-report-consumer-planning.md):** Sharing is an important topic in the context of securing your Power BI and Fabric content. Ensure that you conduct [report consumer planning](powerbi-implementation-planning-security-report-consumer-planning.md) for sharing content to consumers, and [content creator planning](powerbi-implementation-planning-security-content-creator-planning.md) for sharing content to creators.
 > - **[Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md):** You should regularly audit and monitor sharing activities and prevalence by conducting [tenant-level auditing](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md).
@@ -113,7 +113,7 @@ The remainder of this article guides you to make decisions about which roles and
 
 ## Plan to distribute content to consumers
 
-Most people who use content in your organization will only need to view it (Read-only permission) and not change it (Write permission) or create their own content from it (Build permission). Content consumers are typically business users who need to access reporting items (in which case they're often called _[report consumers](powerbi-implementation-planning-security-report-consumer-planning.md)_). Some users might also need to request Build permission for data items to enable their own analyses in Power BI Desktop, Excel, or other client tools.
+Most people who use content in your organization will only need to view it (Read permission) and not change it (Write permission), or create their own content based on it (Build permission). Content consumers are typically business users who need to access reporting items (in which case they're often called _[report consumers](powerbi-implementation-planning-security-report-consumer-planning.md)_). Some users might also need to request Build permission for data items to enable their own data discovery in Power BI Desktop, Excel, or other client tools.
 
 > [!NOTE]
 > Typically, consumers who request Build permission perform [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md). However, over time, you can expect that some of these users will evolve from being strictly content consumers to becoming content creators who want to share their content with others.
@@ -128,7 +128,7 @@ Content consumers can be either internal or external to the organization, depend
 The following diagram presents an overview of the different approaches that you can take to distribute Power BI or Fabric content to consumers inside or outside your organization.
 
 > [!IMPORTANT]
-> This diagram depicts an overview of many possible approaches. The rest of this article helps you to navigate these options and choose the ones that best fit your specific needs.
+> This diagram depicts an overview of many possible approaches. The rest of this article helps you to understand these options and choose the ones that best fit your specific needs.
 
 :::image type="content" source="media/powerbi-implementation-planning-content-distribution-sharing/share-consumers.svg" alt-text="Diagram shows approaches to distribute or share content to consumers. Each element of the diagram is described in the following table." border="false":::
 
@@ -139,21 +139,21 @@ The diagram depicts the following concepts and processes.
 | ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | Content creators create and deploy content in their organization. They can distribute content to other internal users who use Fabric (such as the Fabric portal or the Power BI mobile app). Creators can also share reporting items by embedding them in other internal, non-Fabric services. |
 | ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | Creators can also share items outside the organization. They can distribute content to external guest users who have been added to the organization with Microsoft Entra B2B. Creators can also share reporting items to external users. |
 | ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Content is deployed in a Fabric tenant, where consumers can use or view it. |
-| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Fabric capacity is required to create and share Fabric items. Without a Fabric capacity, creators can still create, deploy, and share Power BI items (like dataflows, semantic models, and reports). |
-| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Content is deployed to a workspace, which contains different items that can be organized into folders. Workspaces can belong to deployment pipelines and domains (not depicted in this diagram). |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Fabric capacity is required to create and share Fabric items. If there isn't a Fabric capacity, creators can still create, deploy, and share Power BI items (like dataflows, semantic models, and reports). |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Content is deployed to a workspace, which can contain different items that might be organized into folders. Workspaces can belong to deployment pipelines and domains (not depicted in this diagram). |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | Creators can share content to internal users or external guest users who are content consumers by assigning them to the [Viewer workspace role](../collaborate-share/service-roles-new-workspaces.md). This role grants read-only access to all content in the workspace. |
 | ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Creators can share individual items to internal users or groups by providing direct access or sharing a link. People who use the link in the organization who don't have direct access can [request it](../collaborate-share/service-request-access.md#request-access). Creators who share content via links can also modify the URL to [filter the report by using query string parameters](../collaborate-share/service-url-filters.md). |
 | ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Selected reporting items in a workspace can be packaged into an app. |
-| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Creators can distribute content with apps by creating and adding internal or external guest users who are content consumers to one or more app audiences. Content creators can choose to organize app content into audiences, with each audience having access to different subsets of content. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Creators can distribute content via apps by creating and adding internal or external guest users who are content consumers to one or more app audiences. Creators can choose to organize app content into audiences, with each audience having access to different subsets of content. |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Creators might store content files—like Power BI Desktop (.pbix) files—in SharePoint or OneDrive for Work or School. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Creators can [share a link to .pbix files from SharePoint or OneDrive for Work or School](../collaborate-share/service-sharepoint-viewer.md#share-a-link-to-the-report-with-others). When an internal user has a Power BI Pro license, they can preview the reports from these files without opening them (even when the files aren't published to a workspace). Recipients of the link who don't have access or a Power BI Pro license can't preview the files. |
-| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Creators can share reporting items via direct access by using non-Fabric experiences, such as: <br/><br/>&bull;&nbsp;Embed content in [Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md) (as a tab in a chat or team channel). <br/>&bull;&nbsp;Embed content in a [PowerPoint presentation](../collaborate-share/service-power-bi-powerpoint-add-in-about.md). <br/>&bull;&nbsp;Embed content in [SharePoint Online](../collaborate-share/service-embed-report-spo.md). <br/>&bull;&nbsp;Embed content in a [PowerApps canvas app](/power-apps/maker/canvas-apps/how-to/build-powerbi-visual) (which requires [PowerApps licenses](/power-platform/admin/pricing-billing-skus), but not an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content in an [internal website](../collaborate-share/service-embed-secure.md) (also known as secure embed). <br/>&bull;&nbsp;Embed content in an [internal application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-organization) (also known as _Embed for your organization_, which requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;[Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true) and [paginated report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true#subscribe-to-paginated-reports), which provide scheduled delivery of static reports via email. You can also use regular subscriptions and dynamic per recipient subscriptions for both [reports](../collaborate-share/power-bi-dynamic-report-subscriptions.md) and [paginated reports](../collaborate-share/dynamic-subscriptions.md). <br/>&bull;&nbsp;[Export to file API](/rest/api/power-bi/reports/export-to-file) (such as by using [Power Automate](../collaborate-share/service-automate-power-bi-report-export.md) to deliver exported reports via email). |
-| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Creators also have various options to share reporting items to external users outside Fabric, such as: <br/><br/>&bull;&nbsp;Embed content securely in an external website (requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content securely in an [external application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) (also known as _Embed for your customers_, which requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;[Publish to web](../collaborate-share/service-publish-to-web.md) for reports, which makes content available to everyone through the public internet. Publish to web is recommended only for content that's suitable for a public audience. Publish to web isn't suited for sensitive or confidential reports. For more information, see [Publish to web from Power BI](../collaborate-share/service-publish-to-web.md). |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Creators can share reporting items via direct access by using non-Fabric experiences. They can: <br/><br/>&bull;&nbsp;Embed content in [Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md) (as a tab in a chat or team channel). <br/>&bull;&nbsp;Embed content in a [PowerPoint presentation](../collaborate-share/service-power-bi-powerpoint-add-in-about.md). <br/>&bull;&nbsp;Embed content in [SharePoint Online](../collaborate-share/service-embed-report-spo.md). <br/>&bull;&nbsp;Embed content in a [PowerApps canvas app](/power-apps/maker/canvas-apps/how-to/build-powerbi-visual) (which requires [PowerApps licenses](/power-platform/admin/pricing-billing-skus), but not an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content in an [internal website](../collaborate-share/service-embed-secure.md) (also known as secure embed). <br/>&bull;&nbsp;Embed content in an [internal application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-organization) (also known as _Embed for your organization_, which requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;[Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true) and [paginated report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true#subscribe-to-paginated-reports), which provide scheduled delivery of static reports via email. You can also use regular subscriptions and dynamic per recipient subscriptions for both [reports](../collaborate-share/power-bi-dynamic-report-subscriptions.md) and [paginated reports](../collaborate-share/dynamic-subscriptions.md). <br/>&bull;&nbsp;[Export to file API](/rest/api/power-bi/reports/export-to-file) (such as by using [Power Automate](../collaborate-share/service-automate-power-bi-report-export.md) to deliver exported reports via email). |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Creators also have various options to share reporting items to external users outside Fabric. They can: <br/><br/>&bull;&nbsp;Embed content securely in an external website (requires an F, P, A, or EM SKU). <br/>&bull;&nbsp;Embed content securely in an [external application](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) (also known as _Embed for your customers_). <br/>&bull;&nbsp;[Publish to web](../collaborate-share/service-publish-to-web.md) for reports, which makes content available to anyone through the public internet. Publish to web is recommended only for content that's suitable for a public audience. Publish to web isn't suitable for sensitive or confidential reports. For more information, see [Publish to web from Power BI](../collaborate-share/service-publish-to-web.md). |
 
 > [!NOTE]
-> There are many valid approaches to distributing content. You might even use multiple approaches to distribute the same content, depending on your needs and use cases. What's important is that you find an approach that's effective and sustainable for you.
+> There are many valid approaches to distributing content. You might even use multiple approaches to distribute the same content, depending on your needs and use cases. What's important is that you find an approach that's effective and sustainable.
 
-The following sections describe the steps you take to decide your approach to sharing content with consumers.
+The following sections describe the steps you take to determine your approach to sharing content with consumers.
 
 ### Step 1: Identify who consumers are and how they get access
 
@@ -162,11 +162,11 @@ The first step when distributing content to consumers is to identify who will ne
 Investigate and document answers to the following questions.
 
 - How many consumers are there?
-- Which content do these consumers need access to?
-- Do consumers need access to data gateway data source connections to view content that uses DirectQuery to query on-premises or private network data sources?
+- What content do these consumers need access to?
+- Do consumers need access to data gateway data source connections to view content that uses DirectQuery mode to query on-premises or private network data sources?
 
 > [!TIP]
-> Ensure that you define who the consumers of the content are and how they will use it. One group of consumers might have different needs and preferences than another group, and they could benefit from a different content distribution strategy.
+> Ensure that you define who the consumers of the content are and how they will use it. One group of consumers might have different needs and preferences than another group. The other group might benefit from a different content distribution strategy.
 
 Generally, you can choose to either proactively distribute content, set up processes for users to request access themselves, or provision organization-wide access for all users.
 
@@ -188,7 +188,7 @@ This approach is beneficial when:
 
 #### Option 2: Consumers request access to content
 
-You can also take a discovery-driven approach, where consumers can search for content that's relevant for them. With this approach, consumers browse a curated centralized portal for a list and description of the content that's available to them. When they select an item that they don't have access to, they can request access from the content owner, who must approve it before the content consumer can view that item.
+You can also take a discovery-driven approach, where consumers search for content that's relevant for them. With this approach, consumers browse a curated centralized portal for the content that's available to them. When they select an item that they don't have access to, they can request access from the content owner, who must approve it before the content consumer can view that item.
 
 This approach is beneficial when:
 
@@ -204,12 +204,12 @@ This approach is beneficial when:
 
 #### Option 3: The entire organization can access the content
 
-Some content might be relevant to the entire organization, like reports about organization-wide initiatives. With this approach, you share content either via apps or direct access, where the entire organization can access content in an app or by link.
+Some content might be relevant to the entire organization, like reports about organization-wide initiatives. With this approach, you share content either via apps or direct access, where the entire organization can access content in an app or by a link.
 
 This approach is beneficial when:
 
 - Content and the underlying data are suitable for the entire organization.
-- You have processes in place for content consumers to find and understand this content, such as training, office hours, or frequently asked questions (FAQ) pages.
+- You have processes in place for content consumers to find and understand this content, such as [training](fabric-adoption-roadmap-mentoring-and-user-enablement.md#training), [office hours](fabric-adoption-roadmap-mentoring-and-user-enablement.md#office-hours), or frequently asked questions (FAQ) pages.
 
 > [!WARNING]
 > Generally, you should limit which content is available to the entire organization. Some content owners might make apps and links available to the entire organization to circumvent the administrative overhead of managing content access. This approach can quickly lead to content oversharing, and users who can't find the content that they need.
@@ -217,24 +217,24 @@ This approach is beneficial when:
 > To avoid this situation, regularly [audit your tenant](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md) to identify and review the available organization-wide apps and links.
 
 > [!TIP]
-> Expect your approach to distributing content to evolve over time as you scale and grow. For example, you might start by distributing content to self-service users proactively. However, as you progress to higher [maturity levels](fabric-adoption-roadmap-maturity-levels.md) in key areas like [content ownership](fabric-adoption-roadmap-content-ownership-and-management.md), [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md), and [governance](fabric-adoption-roadmap-governance.md), you might scale to an approach where users discover and request access to content, themselves.
+> Expect your approach to distributing content to evolve over time as you scale and grow. For example, you might start by distributing content to self-service users proactively. However, as you progress to higher [maturity levels](fabric-adoption-roadmap-maturity-levels.md) in key areas like [content ownership](fabric-adoption-roadmap-content-ownership-and-management.md), [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md), and [governance](fabric-adoption-roadmap-governance.md), you might scale to an approach where users discover and request access to content themselves.
 
 ### Step 2: Identify where consumers will view the content
 
 Once you've defined who the consumers are and how they should get access to content, you then identify where these individuals will view the content.
 
-Consumers can view content in four different ways.
+Consumers can view content in four different ways, specifically by using:
 
-- Links to the individual content items
-- Workspaces
-- Apps
-- Embedded in non-Fabric experiences, like other services, custom apps, or websites
+- Links to the individual content items.
+- Workspaces.
+- Apps.
+- Non-Fabric experiences, like where content is embedded in other services, custom apps, or websites.
 
 The following sections help you to determine which is the better option for your circumstances.
 
 #### Option 1: View individual content items in Fabric
 
-You can give consumers access to individual content items, which they can access via a link. When you share content this way (called _direct access_), you can also give consumers the ability to reshare the content with others or build content with the underlying data items. If someone who receives the link doesn't have access to the item, they will be prompted to request access from the original content owner.
+You can give consumers access to individual content items, which they can access via a link. When you share content this way (called _direct access_), you can also give consumers the ability to reshare the content with others or build content based on the underlying data items. If someone who receives the link doesn't have access to the item, they will be prompted to request access from the original content owner.
 
 This approach is beneficial when:
 
@@ -247,19 +247,19 @@ When you share individual content items, consider the following points.
 
 - Use endorsements to help consumers find and request access to quality content.
 - [Audit and monitor published items](powerbi-implementation-planning-auditing-monitoring-overview.md#understand-published-items) to identify overshared or underutilized items to review.
-- Create a process to regularly review pending [access requests](../collaborate-share/service-request-access.md). Ensure that feedback is provided to users when their access request is denied, explaining the reason, and where they might find alternative information.
+- Create a process to regularly review pending [access requests](../collaborate-share/service-request-access.md). Ensure that feedback is provided to users when their access request is denied. It should explain the reason, and tell them where they might find alternative information.
 
 > [!WARNING]
-> Managing content access can quickly become a burden for content owners. As you improve your maturity level in content delivery scope, consider granting reshare access and training users how to share content among each other, where appropriate.
+> Managing content access can quickly become a burden for some content owners. As you improve your maturity level in content delivery scope, consider granting Reshare permission and training users how to share content among each other, where appropriate.
 
 > [!TIP]
-> Consumers with Reshare permission can make links to [shared views](../collaborate-share/service-share-reports.md), which can include state settings, like the current filter and slicer selections. Shared views can be helpful to facilitate discussions about interactive reports. They're also a good alternative to sharing static screenshots because recipients can interact with the content. For example, shared views are an effective way for users to report issues or discrepancies in reports, because creators can easily see the user's active slicer selections.
+> Consumers with Reshare permission can make links to [shared views](../collaborate-share/service-share-reports.md), which can include state settings, like the current filter and slicer selections. Shared views can be helpful to facilitate discussions about interactive reports. They're also a good alternative to sharing static screenshots because recipients can interact with the content. For example, shared views are an effective way for users to report issues or discrepancies in reports because creators can easily see the user's active slicer selections.
 >
 > Content owners can [manage shared views](../collaborate-share/service-share-reports.md#manage-the-shared-view) in the _Manage permissions_ pane.
 
 #### Option 2: View content in a workspace
 
-You can distribute content via [workspaces](powerbi-implementation-planning-workspaces-overview.md). With this approach, you grant consumers Read-only permission to workspace content by adding them to the Viewer role. Viewers can't modify the content or create new content from the items in that workspace. Instead, you distribute a link to the workspace where they can browse and open the individual content items, themselves.
+You can distribute content via [workspaces](powerbi-implementation-planning-workspaces-overview.md). With this approach, you grant read-only access to consumers to workspace content by adding them to the Viewer role. Viewers can't modify the content or create new content from the items in the workspace. Instead, you distribute a link to the workspace that lets them browse and open the individual content items.
 
 > [!TIP]
 > For more information about workspace roles, see [Roles in workspaces](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
@@ -268,12 +268,12 @@ This approach is beneficial when:
 
 - Consumers prefer the workspace experience over the app experience.
 - You separate workspaces by item type and have only reporting items in the workspace.
-- You want to give users the ability to view data items in a workspace and request Build permissions.
+- You want to give users the ability to view data items in a workspace and request Build permission.
 - You want the content reviewed prior to publishing an app.
 
 When you plan to distribute content to workspace viewers, consider the following points.
 
-- Organize workspace items into [folders](/fabric/get-started/workspaces-folders). Workspace organization makes it easier for consumers to find what they need.
+- Organize workspace items into [folders](/fabric/get-started/workspaces-folders). Workspace organization makes it easier for consumers to find what they're looking for.
 - Place content not meant for direct consumption in other workspaces. Separating workspaces by item type ensures that consumers won't be confused or overwhelmed by items that aren't for them to use.
 - Regularly [audit workspace role membership](powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md). Monitoring role membership helps to avoid situations where a consumer is mistakenly granted elevated permissions.
 
@@ -282,9 +282,10 @@ When you plan to distribute content to workspace viewers, consider the following
 
 #### Option 3: View content in an app
 
-You can distribute content via [apps](../consumer/end-user-apps.md), which bundle related content in a straightforward user interface that streamlines the experience for content consumers. Unlike viewing content in workspaces, apps don't confuse or overwhelm consumers by showing non-reporting items (like semantic models). Additionally, when you distribute content via apps, there's no risk of accidentally giving consumers Write permissions. Apps require you to share content by adding consumers to an [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences). It's also possible to share an app with the [entire organization](../collaborate-share/service-create-distribute-apps.md#publish-the-app-to-your-entire-organization).
+You can distribute content via [apps](../consumer/end-user-apps.md), which bundle related content in a straightforward user interface that streamlines the experience for content consumers. Unlike viewing content in workspaces, apps don't confuse or overwhelm consumers by showing non-reporting items (like semantic models). Additionally, when you distribute content via apps, there's no risk of accidentally giving consumers Write permission. Apps require you to share content by adding consumers to an [app audience](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences). It's also possible to share an app with the [entire organization](../collaborate-share/service-create-distribute-apps.md#publish-the-app-to-your-entire-organization).
 
-You can't publish an app to provide access to content from multiple workspaces. If you want to share content that's published to multiple workspaces with the same consumer, you must either publish multiple apps, or grant them access to the individual items or workspaces.
+> [!NOTE]
+> You can't publish an app to provide access to content from multiple workspaces. If you want to share content that's published to multiple workspaces with the same consumer, you must either publish multiple apps, or grant them access to the individual items or workspaces.
 
 This approach is beneficial when:
 
@@ -294,20 +295,20 @@ This approach is beneficial when:
 
 When you share content in an app, consider the following points.
 
-- Organize content into folders so that it's easier for consumers to find what they need.
+- Organize content into folders so that it's easier for consumers to find what they're looking for.
 - [Add links to the app](../collaborate-share/service-create-distribute-apps.md#add-content-to-the-app) for users to request support, report issues, or provide feedback.
 - Include a [useful app description and contact person](../collaborate-share/service-create-distribute-apps.md#set-up-the-app) so that users know what the app is about.
-- When reports use [shared semantic models](../connect-data/service-datasets-across-workspaces.md), which are located in other workspaces, ensure that consumers have access to those semantic models so they can view reports in the app.
+- When reports use [shared semantic models](../connect-data/service-datasets-across-workspaces.md), which are located in other workspaces, ensure that consumers have Read permission for those semantic models so they can view reports in the app.
 
 > [!TIP]
-> Generally, we recommend that you distribute content to consumers by using apps. Apps provide a more polished experience than providing access with workspace roles or sharing a collection of links to individual items.
+> Generally, we recommend that you distribute content to consumers by using apps. Apps provide a more polished experience than providing access with workspace roles or by sharing a collection of links to individual items.
 
 #### Option 4: View content from other services
 
-You have various options to distribute content for consumers in your organization outside of Fabric. In this situation, content consumers view the content from other applications and services.
+You have various options to distribute content for consumers in your organization outside Fabric. In this situation, content consumers view the content from other applications and services.
 
 > [!IMPORTANT]
-> Consumers who view content from other services still require direct access to the Power BI item. Ensure that you first share the individual items with these users or distribute the items via direct access to a security group that the users belong to.
+> Consumers who view content from other services still require direct access to the Power BI items. Ensure that you first share the individual items with these users, or distribute the items via direct access to a security group that the users belong to.
 
 This approach is beneficial when:
 
@@ -315,15 +316,15 @@ This approach is beneficial when:
 - You require other services or applications to deliver the best experience for consumers.
 - You want to provide convenient access to content spread across multiple workspaces (such as from a SharePoint Online or internal website portal).
 
-Additionally, each approach has specific use cases that they can support, such as the following examples.
+Additionally, each approach has specific use cases that they can support.
 
 - **[Embed in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md):** This option can be beneficial when you use Power BI reports to help coordinate project or other collaborative work.
 - **[Embed in PowerPoint](../collaborate-share/service-power-bi-powerpoint-add-in-about.md):** This option can be beneficial when you want to integrate Power BI reports in your presentations or display multiple reports continuously on a screen (such as reports that show incidents or open orders in a manufacturing plant).
 - **[Embed in SharePoint Online](../collaborate-share/service-embed-report-spo.md):** This option can be beneficial when you want to centralize reports in a SharePoint site to enable collaborative work, or when SharePoint is the preferred way to distribute and manage access to different kinds of content in the organization.
 - **[Embed in Power Apps canvas apps](/power-apps/maker/canvas-apps/how-to/build-powerbi-visual):** This option can be beneficial when you want Power BI content to inform user decisions and actions in an app built with [Power Apps](/power-apps/powerapps-overview). For example, you might have an app for registering seats in an open office, and a Power BI report that shows data about seat availability and office occupancy. However, Power Apps requires [licenses for both creators and consumers](/power-platform/admin/pricing-billing-skus).
 - **[Embed in an internal website or external application](../collaborate-share/service-embed-secure.md):** This option can be beneficial when you want to integrate Power BI reports with other custom developed content. However, this approach requires more development effort. When done for an internal website, you can use the [For your organization](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-organization) embedding approach. When done for an external application, you can use the [For your customers](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) embedding approach, and it will require either Fabric capacity (F SKU) or Power BI Embedded (EM SKU).
-- **[Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true):** This option lets you subscribe consumers to reports and paginated reports, which can deliver static reports to an email or SharePoint site on a schedule. Additionally, for reports, subscriptions have the benefit of notifying consumers when the data in the underlying semantic model is updated (after a refresh). This is best combined with other methods, like sharing content from an app. That way, consumers know only to check the app once the content inside is updated.
-- **[Export-to-file API](/rest/api/power-bi/reports/export-to-file):** This option enables limited scenarios when you want to distribute static versions of reports as a PDF document (.pdf) or PowerPoint (.pptx) file.
+- **[Report subscriptions](../collaborate-share/end-user-subscribe.md?tabs=creator&preserve-view=true):** This option lets you subscribe consumers to reports and paginated reports, which can deliver static reports by email or to a SharePoint site on a schedule. Additionally, for reports, subscriptions have the benefit of notifying consumers when the data in the underlying semantic model is refreshed. This approach is best combined with other methods, like sharing content from an app. That way, consumers know only to check the app once the content inside is updated.
+- **[Export to file API](/rest/api/power-bi/reports/export-to-file):** This option enables limited scenarios when you want to distribute static versions of reports as a PDF document (.pdf) or PowerPoint (.pptx) file.
 
 > [!WARNING]
 > Avoid distributing content as exported files unless it's absolutely necessary. For example, it's common for users to request exported reports via email or SharePoint. This approach isn't a content distribution strategy that scales. Also, files can create governance and security risks. Furthermore, users can't benefit from interactive functionality, like cross-filtering or drillthrough in reports.
@@ -333,7 +334,7 @@ Additionally, each approach has specific use cases that they can support, such a
 > A good example of when you might distribute files is when reports must be kept for auditing purposes.
 
 > [!TIP]
-> If you do choose to distribute content via report subscriptions or exports, consider using [sensitivity labels](powerbi-implementation-planning-info-protection.md#purpose-of-sensitivity-labels) with [Microsoft Purview Data Loss Prevention policy for Power BI](powerbi-implementation-planning-data-loss-prevention.md#microsoft-purview-dlp-policies-for-power-bi). For example, when you use sensitivity labels, you can prevent exported files with sensitive data from exfiltrating your organization.
+> If you choose to distribute content via report subscriptions or exports, consider using [sensitivity labels](powerbi-implementation-planning-info-protection.md#purpose-of-sensitivity-labels) with [Microsoft Purview Data Loss Prevention policy for Power BI](powerbi-implementation-planning-data-loss-prevention.md#microsoft-purview-dlp-policies-for-power-bi). Appropriate use of sensitivity labels can prevent exported files with sensitive data from exfiltrating your organization.
 
 ### Step 3: Identify whether consumers are outside the organization
 
@@ -341,14 +342,14 @@ In some cases, you might need to distribute content to external consumers. In th
 
 #### Option 1: Create duplicate identities for external consumers
 
-In this approach, you create duplicate identities for external consumers that become internal consumers. An Azure administrator creates a new account for the external consumer in the tenant that they must use to access that content. Then, a Microsoft 365 administrator allocates the appropriate per-user licenses to the new identity for them to access content. While this option is the simplest, it involves further overhead and cost to create and manage new accounts.
+In this approach, you create duplicate identities for external consumers that become internal consumers. An Azure administrator creates a new account for the external consumer in the tenant that they must use to access that content. Then, a Microsoft 365 administrator allocates the appropriate per-user licenses to the new identity for them to access content. While this option is the simplest, it involves overhead and cost to create and manage new accounts.
 
 This approach is beneficial when:
 
 - [Limitations of Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md#considerations-and-limitations) prevent you from doing what you need to do. Examples of limitations of Microsoft Entra B2B for consumers include:
   - External guest users might not be able to open files exported from reports that have a sensitivity label with protection settings.
   - External guest users can't use Power BI Desktop to connect to semantic models or dataflows that are in the Power BI service.
-  - External guest users can't use Analyze-in-Excel.
+  - External guest users can't use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel).
 - You don't have the development skills or resources to embed content in a custom application.
 - There aren't many long-term, external consumers.
 
@@ -357,9 +358,9 @@ This approach is beneficial when:
 [Microsoft Entra B2B](/azure/active-directory/b2b/what-is-b2b) is a good option to [distribute content to external consumers](whitepaper-azure-b2b-power-bi.md#alternative-option-1-create-duplicate-identities-for-partner-users). With this approach, an Azure administrator adds the external consumer as an external guest user in Microsoft Entra ID. If the external user is required to access content, the Azure administrator or a Microsoft 365 administrator can provision a per-user license for the identity. External users can also _bring your own license (BYOL)_ from their organization to access content that requires a per-user license. When the guest user has an appropriate license, creators can then share content with them.
 
 > [!TIP]
-> If you need to distribute content to consumers outside of your organization, we strongly recommend that you read [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md).
+> If you need to distribute content to consumers outside your organization, we strongly recommend that you read [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md).
 
-The following diagram depicts how you can share content with external users by using Microsoft Entra B2B.
+The following diagram shows how you can share content with external users by using Microsoft Entra B2B.
 
 In summary, external users are made external guest users by an Azure administrator. If the guest user requires a license, a Microsoft 365 administrator can then assign a license to the guest user. These guest users can then access Fabric, including workspaces, apps, and items. Access to Fabric by external guest users can be controlled in the tenant settings by a Fabric administrator.
 
@@ -367,7 +368,7 @@ In summary, external users are made external guest users by an Azure administrat
 > Consumers don't require a Power BI Pro license to view content in a Fabric capacity. However, creators do require a Power BI Pro license to create and share Power BI content, and consumers require a Power BI Pro license to view content in a workspace that uses Pro or Premium per user (PPU) license mode.
 
 > [!IMPORTANT]
-> Microsoft Entra B2B requires that you enable specific admin settings in the Fabric admin portal. For an overview of the relevant admin settings a Fabric administrator can use to control how creators share content, see [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing).
+> Microsoft Entra B2B requires that you enable specific settings in the Fabric admin portal. For an overview of the relevant settings a Fabric administrator can use to control how creators share content, see [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing).
 
 Here are some scenarios where you can use Microsoft Entra B2B to deliver content to external consumers.
 
@@ -387,7 +388,7 @@ This approach is beneficial when:
 
 #### Option 3: Embed content in a custom website or application
 
-In this approach, you use an F, P, A, or EM SKU to embed content in a custom external website or application ([Embed for your customers](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers)). This approach requires skills, time, and resources to develop a custom application and manage authentication. However, it provides flexibility and control over the access process.
+In this approach, you use either an F, P, A, or EM SKU to embed content in a custom external website or application ([Embed for your customers](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers)). This approach requires skills, time, and resources to develop a custom application and manage authentication. However, it provides flexibility and control over the access process.
 
 This approach is beneficial when:
 
@@ -406,10 +407,10 @@ This option is beneficial when:
 - You want to embed or link to the content in a public website, for example by using an HTML iframe element.
 
 > [!CAUTION]
-> The Publish to web feature is a powerful technique that shares Power BI reports with the world. However, it has the potential to expose private or sensitive data, whether accidentally or intentionally. For this reason, this feature is disabled by default. A Power BI administrator must enable the feature and should restrict its use to specific trusted users or security groups.
+> The Publish to web feature is a powerful technique that shares Power BI reports with the world. However, it has the potential to expose private or sensitive data, whether accidentally or intentionally. For this reason, this feature is disabled by default. A Power BI administrator must [enable the feature and should restrict its use to specific trusted users or security groups](/fabric/admin/service-admin-portal-export-sharing#publish-to-web).
 
 > [!WARNING]
-> Publish to web is subject to many [limitations](../collaborate-share/service-publish-to-web.md#considerations-and-limitations). Test that your report is supported by Publish to web before committing to this approach.
+> Publish to web is subject to many [limitations](../collaborate-share/service-publish-to-web.md#considerations-and-limitations). Test that your report design works when using Publish to web before committing to this approach.
 
 ### Step 4: Identify consumer licensing considerations
 
@@ -420,7 +421,7 @@ By now, you're ready to decide how to distribute content to consumers. You shoul
 - **Other licenses:** If you distribute content by using other services or applications, content consumers might require other licenses. For example, both content creators and consumers require a Power Apps license to distribute and view content by using this service.
 
 > [!NOTE]
-> Before you decide on your approach to distributing content, ensure that you estimate the monthly (and annual) licensing costs (if new licenses are required). This proactive approach can help to avoid surprises that could delay content delivery or lead to unexpected issues and costs later on.
+> Before you decide on your approach to distribute content, ensure that you estimate the monthly (and annual) licensing costs (if new licenses are required). This proactive approach can help to avoid surprises that could delay content delivery or lead to unexpected issues and costs later on.
 
 > [!TIP]
 > See [subscriptions, licenses, and trials](powerbi-implementation-planning-subscriptions-licenses-trials.md) for guidance about per-user and per-capacity licenses.
@@ -432,15 +433,15 @@ The following sections outline specific per-user licenses you might need for con
 While content creators always require a license to publish and share content, there are certain circumstances where consumers don't require a license to view published content.
 
 - Content is distributed publicly via Publish to web.
-- Consumers access embedded content via an external website or application (which uses the [For your customers](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) embedding approach).
+- Consumers access embedded content via an external website or application (which uses the [For your customers](/javascript/api/overview/powerbi/embedding-solutions#embed-for-your-customers) embedding scenario).
 
 #### Scenario 2: Consumers require Microsoft Fabric Free licenses
 
-When you distribute or share content that's published to a Fabric capacity, consumers still require a license to access that content. They can do so at no cost with a Microsoft Fabric Free license, and they don't need any other per-user license, like Power BI Pro. An organization has unlimited Microsoft Fabric Free licenses, which they can use to provide access to Fabric and Power BI content.
+When you distribute or share content that's published to a Fabric capacity, consumers still require a license to access that content. They can do so at no cost with a Microsoft Fabric Free license, and they don't need any other per-user license, like Power BI Pro. An organization has unlimited Microsoft Fabric Free licenses that they can use to provide access to Fabric and Power BI content.
 
 #### Scenario 3: Consumers require Power BI Pro licenses
 
-Content creators always require a Power BI Pro license to share Power BI content, even if that content is published in a workspace on Fabric capacity. However, content creators don't require a Power BI Pro license to create or share Fabric content.
+Content creators always require a Power BI Pro license to share Power BI content, even if that content is published to a workspace on Fabric capacity. However, content creators don't require a Power BI Pro license to create or share Fabric content.
 
 Content consumers require a Power BI Pro license to:
 
@@ -454,13 +455,13 @@ Content consumers require a Power BI Pro license to:
 If content is published to a workspace that uses PPU license mode, then both content creators and content consumers require a PPU license to share and view that content.
 
 > [!NOTE]
-> Granting a user a Power BI Pro or PPU license doesn't automatically grant them build or write permissions to Power BI items that are already deployed to a workspace. Licenses affect what a user can do, but have no effect on item permissions or the various roles within Fabric.
+> Granting a user a Power BI Pro or PPU license doesn't automatically grant them Build or Write permissions to Power BI items that are already deployed to a workspace. Licenses affect what a user can do, but have no effect on item permissions or the various roles within Fabric.
 
 ### Step 5: Identify whether consumers require Build permission
 
 Some consumers might have more advanced needs that aren't met with the available read-only content. These consumers could benefit from having Build permission on the underlying data items (like semantic models) so that they can create new content (like reports).
 
-Eventually, consumers might want to share this content with others, at which point they also become content creators.
+Eventually, consumers might want to share their content with others, at which point they also become content creators.
 
 > [!CAUTION]
 > If you grant Build permission, ensure that you train content consumers about how to create their own content by using Power BI or Excel. If you don't, these users might use their permissions to export data to Excel, which invalidates the benefit of them having Build permission in the first place.
@@ -472,7 +473,7 @@ The simplest scenario is when users only need to view content, and they don't wa
 This approach is beneficial when:
 
 - You currently lack the resources or processes to support consumers so that they can successfully create their own content.
-- You haven't yet trained users how to connect to and create content from data items.
+- You haven't yet trained users how to connect to, and create content from, data items.
 - Consumers express that they only want to view content and not create it.
 - There's no business need for consumers to create their own content.
 
@@ -480,12 +481,12 @@ In these scenarios, you should seek to provide alternative approaches to grantin
 
 Consider the following Power BI features that provide flexibility to consumers.
 
-- **Field parameters:** You can create [field parameters](../create-reports/power-bi-field-parameters.md) in semantic models that support the dynamic selection of dimensions and measures in reports. This option provides users with the ability to select the field from a slicer, and that field will be then used in visuals.
-- **Decomposition tree visual:** You can use the [decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md) visual in reports to let consumers explore data across multiple dimensions.
-- **Personalize visuals:** You can enable [personalization of visuals](../consumer/end-user-personalize-visuals.md) in a report, which lets consumers change visuals to suit themselves. They can modify any visual, including the visual type, format settings, and which fields the visual uses. They can also customize the report page to any field you pre-select from the model, enabling them to perform ad hoc analysis.
+- **Field parameters:** You can create [field parameters](../create-reports/power-bi-field-parameters.md) in semantic models that support the dynamic selection of dimensions and measures in reports. This option provides users with the ability to select a field from a slicer, and that field will be then used in visuals.
+- **Decomposition tree visual:** You can use the [decomposition tree](../visuals/power-bi-visualization-decomposition-tree.md) visual in reports to let consumers explore data across multiple dimensions that they choose.
+- **Personalize visuals:** You can enable [personalization of visuals](../consumer/end-user-personalize-visuals.md) in a report, which lets consumers change visuals to suit themselves. They can modify any visual, including the visual type, format settings, and which fields the visual uses. They can also customize the report page to any field you pre-select from the semantic model, enabling them to perform ad hoc analysis.
 
 > [!NOTE]
-> If consumers don't require Build permission now, they might need it in the future. Business objectives and data needs quickly evolve, and teaching users to create their own content and perform their own analysis is a good way to scale your implementation by [enabling users](fabric-adoption-roadmap-mentoring-and-user-enablement.md) and improving your [data culture maturity](fabric-adoption-roadmap-data-culture.md).
+> If consumers don't require Build permission now, they might need it in the future. Business objectives and data needs can evolve quickly. Teaching users to create their own content and perform their own analysis is a good way to scale your implementation by [enabling users](fabric-adoption-roadmap-mentoring-and-user-enablement.md), and advance your [data culture maturity](fabric-adoption-roadmap-data-culture.md).
 
 #### Option 2: App audience Build permission
 
@@ -498,16 +499,16 @@ This approach is beneficial when:
 - You need to give multiple users Build permission to multiple items in the same workspace.
 
 > [!WARNING]
-> Don't grant Build permission by adding consumers to the [Admin, Member, or Contributor workspace roles](../collaborate-share/service-roles-new-workspaces.md#workspace-roles). These roles grant _Write_ permission, and not _Build_ permission. When users have Write permission, RLS is not enforced, since consumers can view and modify the security rules.
+> Don't grant Build permission by adding consumers to the [Admin, Member, or Contributor workspace roles](../collaborate-share/service-roles-new-workspaces.md#workspace-roles). These roles grant _Write_ permission, and not _Build_ permission. When users have Write permission, RLS isn't enforced, and it allows them to view and modify the security rules.
 
 #### Option 3: Item Build permission
 
-You can grant build permissions to individual data items in a workspace.
+You can grant Build permission to individual data items in a workspace.
 
 This approach is beneficial when:
 
 - You provide access to workspace content by adding consumers to the Viewer role.
-- You need to grant Build permission on specific items.
+- You need to grant Build permission only on specific items.
 - You plan to grant Build permission to a small subset of users.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
@@ -515,18 +516,18 @@ This approach is beneficial when:
 **Checklist** - When planning content distribution to consumers, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Define who you'll distribute the content to:** If you haven't done so already, determine how many users will need access to the content. Define any relevant user segments, and whether these users have different needs or ways of using the content that could affect the distribution method.
+> - **Define who you'll distribute the content to:** If you haven't done so already, determine how many users will need access to the content. Define any relevant user segments, and whether these segments have different needs or ways of using the content that could affect the distribution method.
 > - **Plan your data security model:** Determine whether your content has data security applied, and how you'll manage security role membership.
 > - **Plan your permission model:** Determine who should get access to which content, and how this affects your distribution methods.
 > - **Create Microsoft Entra security groups and add users to groups:** Using security groups to manage role membership, access, and permissions is more efficient and scalable than managing individual accounts.
 > - **Add security groups to data security roles:** If you use row-level security or object-level security, ensure that you assign security groups to the appropriate roles.
-> - **Share data gateways:** If necessary, provision data gateway access by adding consumers to data source connections by using the User (or User with sharing) role.
+> - **Share data gateways:** If necessary, grant data gateway access by adding consumers to data source connections by using the User (or User with sharing) role.
 > - **Decide how you'll handle external users:** Identify whether you need to share content to any consumers outside the organization. If so, decide the approach you'll take to share content with these users.
 > - **Add external guest users:** If you'll share content using Microsoft Entra B2B, request that the relevant administrators add the guest users.
 > - **Allocate per-user licenses:** Ensure that consumers have the appropriate licenses to access content. If you plan to embed content in other services, ensure that you check whether those services have other licensing requirements.
-> - **Decide on the approach to share content:** Decide whether you'll share content via apps, workspaces, or direct access to individual items. If you use direct access, decide how users should access the items (such as via a centralized portal, or via content embedded in another service like Teams).
+> - **Decide on the approach to share content:** Decide whether you'll share content via apps, workspaces, or direct access to individual items. If you use direct access, decide how users should access the items (such as via a centralized portal, or via content embedded in another service, like Teams).
 > - **Decide how you'll grant Build permission:** Decide whether you'll grant Build permission at all, and if so, whether you grant it via app audiences or individual content items.
-> - **Grant Build permission:** If necessary, grant Build permission to users who need it to perform their own analysis on the underlying data items.
+> - **Grant Build permission:** If necessary, grant Build permission to users who'll need it to perform their own analysis on the underlying data items.
 
 ## Plan to share content with other creators
 
@@ -546,8 +547,8 @@ The diagram depicts the following concepts and processes.
 | ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | Fabric capacity is required to create and share Fabric items. |
 | ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Content is deployed to a workspace. |
 | ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | Creators can distribute content with other internal users or external guest users who are content creators by assigning them to the _Admin_, _Member_, or _Contributor_ [workspace roles](../collaborate-share/service-roles-new-workspaces.md). The [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) is recommended when sharing content by workspace role. |
-| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Creators can also share content with other internal users or external guest users who are content creators by sharing individual items via links. When creators have access to data items from direct access or workspace roles, they can discover this content by using the OneLake data hub. |
-| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | In a workspace on Fabric capacity, creators can make and use [lakehouses](/fabric/data-engineering/lakehouse-overview), which define tables and files in folders. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Creators can also share content with other internal users or external guest users who are content creators by sharing individual items via links. When creators have access to data items via direct access or workspace roles, they can discover this content by using the [OneLake data hub](fabric/get-started/onelake-data-hub). |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | In a workspace on Fabric capacity, creators can make and use [lakehouses](/fabric/data-engineering/lakehouse-overview), which comprise tables and files in folders. |
 | ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Creators can share data in a lakehouse folder to other internal users or external guest users who are creators by using [OneLake data access roles](/fabric/onelake/security/get-started-data-access-roles) (also known as role-based access control, or RBAC). |
 | ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | In a workspace on Fabric capacity, creators can make and use [KQL databases](/fabric/real-time-intelligence/create-database), which comprise tables and files in folders. |
 | ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Creators can share data from a lakehouse or KQL database folders with external users outside the organization by using [external data sharing](/fabric/governance/external-data-sharing-overview). |
@@ -558,12 +559,12 @@ The first step when sharing content with creators is to identify who they are an
 
 You're then ready to complete the following tasks.
 
-- **Share gateways:** If necessary, provision data gateway access by adding consumers to data source connections in the User (or User with sharing) role.
+- **Share gateways:** If necessary, set up data gateway access by adding consumers to data source connections in the User (or User with sharing) role.
 - **Create workspaces:** Create and share access to a workspace where creators should publish their content, if they don't have one already. Creators might need access to more than one workspace if they plan to use separate workspaces to develop, test, and share content with consumers. Alternatively, you might share access to an [existing workspace](#option-2-workspace-access) that contains other content that creators need access to (described later in this article).
 - **Allocate licenses:** Creators need different licenses depending on the content that they produce.
   - Power BI Pro licenses are always required to create and share Power BI content.
-  - PPU licenses are required to create and share content if the workspace uses PPU license mode.
-  - No license is required to create and share Fabric items if the workspace is on Fabric capacity.
+  - PPU licenses are required to create and share content when the workspace uses PPU license mode.
+  - No license is required to create and share Fabric items when the workspace is on Fabric capacity.
 
 #### Option 1: You provide access to creators
 
@@ -576,10 +577,10 @@ This approach is beneficial when:
 
 #### Option 2: Creators find items and request access from the OneLake data hub
 
-You should encourage users to use the [OneLake data hub](/fabric/get-started/onelake-data-hub) to discover content that they can use as a data source. There, and when necessary, content creators can request access to these data items. When they're granted Build permission, they can then create new content from these items.
+You should encourage users to use the [OneLake data hub](/fabric/get-started/onelake-data-hub) to discover content that they can use as a data source. There, and when necessary, content creators can request access to these data items. When they're granted Build permission, they can then create new content based on these items.
 
 > [!IMPORTANT]
-> To see a data item in the OneLake data hub, it creators must either have access to that item, or it must be marked as [discoverable](../collaborate-share/service-discovery.md). For example, you can give creators Read-only permission to semantic models or mark those models as discoverable, so that users can find them and then request Build permission to use them.
+> To see a data item in the OneLake data hub, creators must either have access to that item, or it must be marked as [discoverable](../collaborate-share/service-discovery.md). For example, you can give creators Read permission to semantic models or mark those semantic models as discoverable, which allows users to find them and request Build permission to use them.
 
 This approach is beneficial when:
 
@@ -602,24 +603,22 @@ Grant creators Write permissions when:
 - You will collaborate with the creators on the item.
 
 > [!TIP]
-> If content creators will collaborate, you should [plan how they can best do this](powerbi-implementation-planning-content-lifecycle-management-plan-design.md#decide-how-content-creators-should-collaborate). For example, consider how you can leverage [version control](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-how-youll-use-version-control) to track and manage changes.
+> If content creators will collaborate, you should [plan how they can best do so](powerbi-implementation-planning-content-lifecycle-management-plan-design.md#decide-how-content-creators-should-collaborate). For example, consider how you can use [version control](powerbi-implementation-planning-content-lifecycle-management-develop-manage.md#decide-how-youll-use-version-control) to track and manage changes.
 
 #### Option 2: Build permission
 
 You can grant content creators Build permission to connect to and use semantic models to create new content. With Build permission, content creators won't be able to modify the original item.
 
-Grant creators Build permissions when:
-
-- Creators will create new content from existing semantic models
+Grant creators Build permissions when creators will create new content from existing semantic models.
 
 > [!IMPORTANT]
-> Some data item types—like lakehouses or data warehouses—don't use Build permissions. Instead, if creators want to use these data items to create their own content, you should grant them Read permissions.
+> Some data item types—like lakehouses or data warehouses—don't support Build permission. Instead, if creators want to use these data items to create their own content, you should grant them Read permission.
 
 #### Option 3: Read permission
 
 You can grant creators Read permission to certain Fabric data items, like lakehouses. That way, they can make their own content (like semantic models and reports) without modifying the original data item.
 
-Grant creators Read permissions when:
+Grant creators Read permission when:
 
 - Creators should discover semantic models in the OneLake data hub to view their metadata and then request Build permission from the content owner.
 - Creators should use Fabric data items like lakehouses or data warehouses to make their own content.
@@ -628,7 +627,7 @@ Grant creators Read permissions when:
 
 If content creators outside the organization require access to items or data, then you'll need to take specific actions. The scenarios and considerations for content consumers also apply here.
 
-You have several options to share content with external creators. The first two options are similar to how you share content with external consumers, except you provide creators Write permissions.
+You have several options to share content with external creators. The first two options are similar to how you share content with external consumers, except you grant Write permission to creators.
 
 #### Option 1: Create duplicate identities for external creators
 
@@ -650,11 +649,11 @@ You can [add the external creator as a guest user](#option-2-create-a-microsoft-
 Consider distributing content to external guest users when:
 
 - External creators have their own Power BI Pro and PPU licenses.
-- You will share a few content items with a few external creators to use.
-- You will distribute content to many external creators who have.
+- You'll share a few content items with a few external creators to use.
+- You'll distribute content to many external creators who have.
 
 > [!IMPORTANT]
-> Ensure that you test whether Microsoft Entra B2B is the best approach for you before you decide to use it. We suggest that you conduct a small trial with several creators before you commit to this content distribution strategy. During this trial, ensure that the creators perform all their necessary activities to discover any possible caveats or limitations that might prevent them from doing what they need to do.
+> Ensure that you test whether Microsoft Entra B2B is the best approach before you decide to use it. We recommend that you conduct a small trial with several creators before you commit to this content distribution strategy. During this trial, ensure that the creators perform all their necessary activities to discover any possible caveats or limitations that might prevent them from doing what they need to do.
 
 > [!TIP]
 > External content consumers can use the OneLake data hub to [view and access semantic models in their own tenant that have been shared with them](../collaborate-share/service-dataset-external-org-share-view.md). This concept is known as _in-place semantic model sharing_, and it requires that Fabric administrators enable the [_Guest users can work with shared semantic models in their own tenants_](../collaborate-share/service-dataset-external-org-share-admin.md#guest-users-can-work-with-shared-semantic-models-in-their-own-tenants) tenant setting.
@@ -668,18 +667,18 @@ Consider distributing content to external guest users when:
 
 You can grant access to creators at four different levels, depending on what they need to do.
 
-- **Deployment pipeline access:** Gives creators access to a [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) and lets them trigger deployments to promote content between stages. Creators require access to the underlying workspaces to use deployment pipelines.
-- **Workspace access:** Gives creators access to all the content in a workspace.
-- **Item access:** Gives creators access to a single content item within a workspace.
-- **Data access:** Gives creators access to specific data within an item. Creators require Write permission for an item to apply data access to data within that item.
+- **Deployment pipeline access:** Provides creators access to a [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) and lets them trigger deployments to promote content between stages. Creators require access to the underlying workspaces to use deployment pipelines.
+- **Workspace access:** Provides creators access to all the content in a workspace.
+- **Item access:** Provides creators access to a single content item within a workspace.
+- **Data access:** Provides creators access to specific data within an item. Creators require Write permission for an item to apply data access to data within that item.
 
 > [!NOTE]
-> Creators might require access to multiple options, depending on your scenario. For example, you might provide a creator item access to a lakehouse, and data access to limit what they can use from that lakehouse. Then, you might provide that creator access to several workspaces to publish their semantic models and reports, and a deployment pipeline to deploy their content between those workspaces.
+> Creator access might involve multiple options, depending on the circumstances. For example, you might provide a creator item access to a lakehouse, and data access to limit what they can use from that lakehouse. Then, you might provide that creator access to several workspaces to publish their semantic models and reports, and a deployment pipeline to deploy their content between those workspaces.
 
 > [!CAUTION]
-> Follow the [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) when providing creators access to deployment pipelines, workspaces, and items. For example, avoid assigning creators to workspace roles with permissions that they don't need, like the Admin or—if they don't need to update the app or workspace configuration—the Member role.
+> Follow the [principle of least privilege](/entra/identity-platform/secure-least-privileged-access) when providing creators access to deployment pipelines, workspaces, and items. For example, avoid assigning creators to workspace roles with permissions that they don't need, like the Admin role or—if they don't need to update the app or workspace configuration—the Member role.
 
-The following sections help you to determine which access creators should get.
+The following sections help you to determine what access creators should get.
 
 #### Option 1: Deployment pipeline access
 
@@ -688,7 +687,7 @@ You can give creators access to a deployment pipeline to manage content deployme
 This approach is beneficial when:
 
 - You'll use deployment pipelines to deploy content between workspaces.
-- The content creator will be responsible for reviewing content and during the deployment process.
+- The content creator will be responsible for reviewing content during the deployment process.
 
 > [!TIP]
 > Limit deployment pipeline access to only a few individuals who will be responsible for deciding when to deploy or release content to the next stage.
@@ -702,10 +701,10 @@ This approach is beneficial when:
 - Creators will also get deployment pipeline access.
 - Creators should collaborate in the workspace.
 - You use Git integration to track and manage content changes in a remote repository that's linked to the workspace.
-- Creators need to use a Dataflow.
+- Creators need to use a dataflow.
 
 > [!TIP]
-> Ensure that you provide content creators access to a workspace to publish their content. If they should publish content to the same workspace as the original item they're using, ensure that you make this clear to them.
+> Ensure that you provide content creators access to a workspace to publish their content. If they should publish content to the same workspace as the original item they're using, ensure that you make it clear to them.
 
 #### Option 3: Item access
 
@@ -722,16 +721,16 @@ This approach is beneficial when:
 > Sharing access to a data item like a lakehouse or semantic model will also give that user access to the underlying data in that item. It's not the same as granting data access to objects like tables or files by using OneLake data access roles (or RBAC).
 
 > [!IMPORTANT]
-> You cannot share some individual content items, such as Dataflows. For these items, you must provide workspace access for creators to view and use the item.
+> You can't share some individual content items, such as dataflows. For these items, you must provide workspace access for creators to view and use them.
 
 #### Option 4: Data access
 
 In some circumstances, content creators will need access to underlying data. In this case, creators might want to transform or enrich that data for other purposes. You have two options to share data in Fabric.
 
-- **[OneLake data access role](/fabric/onelake/security/get-started-data-access-roles):** You can give someone a data access role for data in a folder of a lakehouse. This approach lets you apply RBAC to OneLake data to limit what data someone can see.
+- **[OneLake data access role](/fabric/onelake/security/get-started-data-access-roles):** You can assign someone to a data access role for data in a folder of a lakehouse. This approach lets you apply RBAC to OneLake data to limit what data someone can see.
 - **[OneLake shortcuts](/fabric/onelake/onelake-shortcuts):** While not strictly a sharing technique, you can provide access to data by creating [internal OneLake shortcuts](/fabric/onelake/onelake-shortcuts#internal-onelake-shortcuts) to reference data within existing Fabric items. This approach lets you reuse data across teams and workspace while maintaining a single copy of the data.
 
-These approaches might be beneficial when:
+These approaches are beneficial when:
 
 - Your organization has Fabric capacity and uses lakehouses to store data for creators.
 - You want to restrict the data that a creator can see and use from a lakehouse.
@@ -750,7 +749,7 @@ These approaches might be beneficial when:
 > - **Create a workspace for creators to publish content:** Ensure that creators have an available workspace to publish semantic models and reports, or to create other content in the Fabric portal.
 > - **Allocate licenses to creators:** Work with an appropriate administrator to ensure that creators have the appropriate per-user licenses to create and share content.
 > - **Decide what permissions creators should have:** Decide whether creators need Read, Build, or Write permission to existing content.
-> - **Share data gateways:** If necessary, provision data gateway access by adding consumers to data source connections in the User (or User with sharing) role.
+> - **Share data gateways:** If necessary, set up data gateway access by adding consumers to data source connections in the User (or User with sharing) role.
 > - **Decide how you'll handle external users:** Identify whether you'll collaborate with any creators outside the organization. If so, decide the approach you'll take to share content with these users.
 > - **Add external guest users:** If you'll share content by using Microsoft Entra B2B, request that the relevant administrators add the guest users.
 > - **Decide whether creators need access to existing items:** Identify whether content creators need access to deployment pipelines, workspaces, individual content items, or data within lakehouses or KQL databases.
