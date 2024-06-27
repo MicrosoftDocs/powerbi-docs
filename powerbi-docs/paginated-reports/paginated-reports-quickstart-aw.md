@@ -273,7 +273,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 1. Select **Print Layout**, if it's not already selected. Now the report has 29 pages. Scroll through a few pages. You see the currency is formatted, the columns have headings on every page, and the report has a footer with page numbers and date and time stamp on every page.
 
-    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png" alt-text="Screenshot of a sample report with Print Layout selected." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png":::
+    :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-finished-page.png" alt-text="Screenshot of a sample report with Print Layout selected.":::
 
 1. Save the report to your computer.
 
