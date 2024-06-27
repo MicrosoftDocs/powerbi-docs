@@ -249,6 +249,8 @@
           href: powerbi-implementation-planning-content-lifecycle-management-support-monitor.md
         - name: "Retire and archive content"
           href: powerbi-implementation-planning-content-lifecycle-management-retire-archive.md
+      - name: "Content distribution and sharing"
+        href: powerbi-implementation-planning-content-distribution-sharing.md
       - name: Security
         items:
         - name: "Security overview"

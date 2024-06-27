@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, video-RWUWA9
-ms.date: 05/31/2024
+ms.date: 06/27/2024
 ---
 
 # Power BI implementation planning
@@ -31,7 +31,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
 - Data management
 - [Content lifecycle management](powerbi-implementation-planning-content-lifecycle-management-overview.md)
-- Content distribution and sharing
+- [Content distribution and sharing](powerbi-implementation-planning-content-distribution-sharing.md)
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - Capacity management
@@ -39,7 +39,6 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - Integration with other services
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - [Adoption tracking](powerbi-implementation-planning-adoption-tracking.md)
-- Scaling and growing
 
 > [!NOTE]
 > The series is a work in progress. We will gradually release new and updated articles over time.
