@@ -28,7 +28,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png" alt-text="Screenshot of the Teach Q and A page with a question entered in the search box." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png":::
 
-    Q&A offers suggestions and prompts you to provide the correct definition of the term. 
+    Q&A offers suggestions and prompts you to provide the correct definition of the term.
 
 1. After **Define the terms Q&A didn't understand**, provide a definition.
 
@@ -53,7 +53,7 @@ When working with data, you might have names of fields that could be referred to
 
 Q&A automatically detects when an unrecognized word is a noun by using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you by using the phrase:
 
-- **refers to** 
+- **refers to**
 
 You fill in the box with the term from your data.
 
