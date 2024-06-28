@@ -96,9 +96,9 @@ After you provide definitions, you can go back to see all the fixes you made and
 
 1. In **Q&A setup**, go to the **Manage terms** section.
 
-1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it.
-
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
+
+1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it.
 
 ## Related content
 
