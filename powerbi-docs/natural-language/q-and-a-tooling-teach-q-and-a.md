@@ -13,7 +13,7 @@ LocalizationGroup: Ask questions of your datadefintion
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
-In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms that it hasn't recognized. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you save them.
+In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms that it doesn't recognize. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you save them.
 
 > [!NOTE]
 > The Teach Q&A functionality only supports import mode. It also doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This limitation should be removed in subsequent releases of Power BI.
@@ -38,7 +38,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
 1. Enter the next question, or select the **X** to close.
 
-Your report consumers won't see this change until you publish the report back to the service.
+Your report consumers don't see this change until you publish the report back to the service.
 
 ## Define nouns and adjectives
 
@@ -49,7 +49,7 @@ You can teach Q&A two types of terms:
 
 ### Define a noun synonym
 
-When working with data, you might have names of fields that could be referred to by alternative names. An example could be 'Sales'. Numerous words or phrases could refer to sales, such as 'revenue'. If a column is named 'Sales' and report consumers type 'revenue', Q&A might fail to pick the correct column to answer the question appropriately. In that case, you want to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
+When working with data, you might have names of fields that you could refer to by alternative names. An example could be 'Sales.' Numerous words or phrases could refer to sales, such as 'revenue.' If a column is named 'Sales' and report consumers type 'revenue,' Q&A might fail to pick the correct column to answer the question appropriately. In that case, you want to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
 
 Q&A automatically detects when an unrecognized word is a noun by using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you by using the phrase:
 
@@ -84,7 +84,7 @@ Some example conditions that you can define are:
 
 In these examples, 'Products' could be either a column name or a measure. 
 
-You can also specify an aggregation in the Q&A expression itself. For example, if ‘popular products’ are products with at least 100 units sold, you can define products with ‘sum of units sold > 100’ as popular.  
+You can also specify an aggregation in the Q&A expression itself. For example, if 'popular products' are products with at least 100 units sold, you can define products with 'sum of units sold > 100' as popular.  
 
 :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Screenshot of the section that defines the term named Popular products.":::
 
