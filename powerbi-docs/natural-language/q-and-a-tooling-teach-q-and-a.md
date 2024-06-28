@@ -22,21 +22,21 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
 1. In Power BI Desktop, on the **Modeling** ribbon, select **Q&A Setup** > **Teach Q&A**.
 
+1. Type a sentence with a term that Q&A doesn't recognize and select **Submit**.
+
+1. Select the red double-underlined word. 
+
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png" alt-text="Screenshot of the Teach Q and A page with a question entered in the search box." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png":::
 
-2. Type a sentence with a term that Q&A doesn't recognize and select **Submit**.
-
-3. Select the red double-underlined word. 
-
     Q&A offers suggestions and prompts you to provide the correct definition of the term. 
-    
-3. After **Define the terms Q&A didn't understand**, provide a definition.
+
+1. After **Define the terms Q&A didn't understand**, provide a definition.
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png" alt-text="Screenshot of the Teach Q and A page with a term selected and defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png":::
 
-4. Select **Save** to preview the updated visual.
+1. Select **Save** to preview the updated visual.
 
-5. Enter the next question, or select the **X** to close.
+1. Enter the next question, or select the **X** to close.
 
 Your report consumers won't see this change until you publish the report back to the service.
 
@@ -96,7 +96,7 @@ After you provide definitions, you can go back to see all the fixes you made and
 
 1. In **Q&A setup**, go to the **Manage terms** section.
 
-2. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it.
+1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it.
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
 
