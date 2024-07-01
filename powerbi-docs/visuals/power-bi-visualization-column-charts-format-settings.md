@@ -13,6 +13,12 @@ LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for column charts so that I can effectively and more easily format column chart visuals in Power BI Desktop and Power BI Service.
 ---
 
+# Format settings for column charts
+
+[!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
+
+## Overview
+
 ## Considerations and technical aspects
 
 ### Considerations
