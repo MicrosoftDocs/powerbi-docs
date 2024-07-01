@@ -104,7 +104,7 @@ When using a commercial logo, the color of the logo must be grey (hex color #C8C
 
 ### Commercial logo size
 
-A Power BI visual uses two commercial logos&mdash;one for the offer details page and one for the search page. Provide the large logo in PNG format at 300 x 300 px. The Partner Center will use this logo to generate a smaller logo for the search page. You can optionally replace this with a different image later.
+A Power BI visual uses two commercial logos&mdash;one for the offer details page and one for the search page. Provide the large logo in PNG format at 300 x 300 px. The Partner Center uses this logo to generate a smaller logo for the search page. You can optionally replace this logo with a different image later.
 
 ### Commercial logo behavior
 
