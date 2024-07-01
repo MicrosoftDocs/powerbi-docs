@@ -22,13 +22,12 @@ A column chart , also known as a vertical bar graph, is a type of chart used to 
 
 In the illustrated guide below, we demonstrate the process of building a column chart visual both in Power BI Desktop and the Power BI Service.
 
-After following the guide to build your visual, we've also provided a comprehensive list of all available format settings and controls for you to use as reference in a subsequent document, Format settings for column charts.
 
 Depending on the unique needs of your analysis, you can choose from three distinct types of column charts:
 
-```- **Stacked column chart** :::image type="icon" source="../includes/media/power-bi-visualization-column-charts/stacked-column-chart-icon.png":::```
-```- **Clustered column chart** :::image type="icon" source="../includes/media/power-bi-visualization-column-charts/clustered-column-chart-icon.png":::```
-```- **100% Stacked column chart** :::image type="icon" source="../includes/media/power-bi-visualization-column-charts/100-percent-stacked-column-chart-icon.png":::```
+- **Stacked column chart** :::image type="icon" source="../includes/media/power-bi-visualization-column-charts/stacked-column-chart-icon.png":::
+- **Clustered column chart** :::image type="icon" source="../includes/media/power-bi-visualization-column-charts/clustered-column-chart-icon.png":::
+- **100% Stacked column chart** :::image type="icon" source="../includes/media/power-bi-visualization-column-charts/100-percent-stacked-column-chart-icon.png":::
 
 ## Prerequisites
 
@@ -39,6 +38,10 @@ Depending on the unique needs of your analysis, you can choose from three distin
 [!INCLUDE [prerequisites-desktop-download-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-desktop-download-retail-analysis-sample-pbix.md)]
 
 # [Power BI Service](#tab/powerbi-service)
+
+[!INCLUDE [prerequisites-service-download-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-service-download-retail-analysis-sample-pbix.md)]
+
+---
 
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
@@ -96,6 +99,8 @@ For this example, let’s create a column chart starting from the **Visualizatio
 :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, the Visual and General tabs, and both the Legend and Ribbons sections, also highlighted.":::
 
 You've now successfully created a column chart with Power BI Service. Take some time to familiarize yourself with all the available **Format settings for column charts** in the **Related content** section below.
+
+---
 
 ## Considerations and technical aspects
 
