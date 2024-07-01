@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/01/2024
+ms.date: 07/01/2024
 ---
 
 # Scan barcodes from the mobile app to get filtered data
@@ -23,6 +23,9 @@ Applies to:
 Say your organization has reports containing data that has been [tagged as barcode data in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md). When you scan a product barcode using the Power BI mobile app's camera, you'll get a list of the reports that have barcode data. You can open the report you're looking for, automatically filtered to the information you need.
 
 :::image type="content" source="media/mobile-apps-scan-barcode/power-bi-barcode-scanner.png" alt-text="Screenshot of a product barcode scan, showing the scanner over the barcode of a colored beverage.":::
+
+> [!NOTE]
+> On Android devices, barcode scanning requires that an up-to-data version of Google Play services be installed.
 
 Here are examples of two scenarios where barcode scanning is useful:
 
@@ -82,6 +85,7 @@ Here are some issues you might encounter when you scan a barcode on an item.
 - You get a message **Couldn't filter report - Looks like this barcode doesn't exist in the report data**: This means that the value of the barcode you scanned doesn't appear in the data model of the report you chose to filter. This might be the case, for instance, if the product whose barcode you scanned isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered.
 - You get a message **Looks like you don't have any reports that can be filtered by barcodes**: This means you don't have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**. Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 - Filtering returns an empty state. This could mean that the barcode value you scanned exists in your model, but all or some of the visuals in your report don't contain this value. In this case, try looking at other report pages or edit your reports in Power BI Desktop to contain this value.
+- You get a message **Can't scan the barcode**. (Android users only): Verify that Google Play services is up to date.
 
 ## Related content
 
