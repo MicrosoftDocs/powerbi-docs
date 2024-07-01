@@ -49,7 +49,7 @@ The Power BI service doesn't support email addresses provided by consumer email 
 
 1. To finish signing up, try again using an email address assigned by your work or school. 
 
-2. If sign-up still doesn't work, try a more advanced setup process. This process creates a new onmicrosoft.com email address that can be used with the Power BI service. [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+2. If sign up still doesn't work, try a more advanced setup process. This process creates a new onmicrosoft.com email address that can be used with the Power BI service. [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
 ## Cause: Your email address isn't a Microsoft 365 ID
 
@@ -57,7 +57,7 @@ You attempt to sign up or purchase and receive a message like this:
 
 *We can't find you at contoso.com. Do you use a different ID at work or school? Try signing in with that ID. If it doesn't work, contact your IT department.*
 
-When signing in to Microsoft 365 and other services, your organization uses IDs that are different than your email address. For example, your email address might be `zalan.bola@contoso.com` but your ID is `zalanb@contoso.com`.
+When you sign in to Microsoft 365 and other services, your organization uses IDs that are different than your email address. For example, your email address might be `zalan.bola@contoso.com` but your ID is `zalanb@contoso.com`.
 
 ### Solution: Use your Microsoft 365 ID
 
@@ -65,7 +65,7 @@ To finish signing up or purchasing, use the ID that your organization assigned t
 
 ## You're unable to sign up for a free license or upgrade to a paid license
 
-When you try to sign up for a free or paid license, you receive an error message. The error message might state that self-service is disabled by your organization. Or, the error message might state that sign up is managed by your organization.
+When you try to sign up for a free or paid license, you receive an error message. The error message might state that self-service is disabled by your organization. Or, the error message might state that sign-up is managed by your organization.
 
 ## Cause: Your administrator has disabled self-service 
 
@@ -136,7 +136,7 @@ You don't see prompts to upgrade (Buy now) or start a trial (Try now), and the U
 
 ## Cause: This has been disabled by your admins
 
-The type of upgrade and trial options available to you depends on how your Global and Billing administrator setup your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
+The type of upgrade and trial options available to you depends on how your Global and Billing administrator set up your domain. Your administrators have the ability to disable all trials, disable self-service purchase, and more. 
 
 ### Solution: contact your admins
 
