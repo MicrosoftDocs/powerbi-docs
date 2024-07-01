@@ -49,7 +49,7 @@ The Power BI service doesn't support email addresses provided by consumer email 
 
 1. To finish signing up, try again using an email address assigned by your work or school. 
 
-2. If sign up still doesn't work, try a more advanced setup process. This process creates a new onmicrosoft.com email address that can be used with the Power BI service. [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+2. If sign-up still doesn't work, try a more advanced setup process. This process creates a new onmicrosoft.com email address that can be used with the Power BI service. [Register for a new Microsoft 365 trial subscription and use that email address to sign up.](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
 ## Cause: Your email address isn't a Microsoft 365 ID
 
@@ -65,9 +65,9 @@ To finish signing up or purchasing, use the ID that your organization assigned t
 
 ## You're unable to sign up for a free license or upgrade to a paid license
 
-When you try to sign up for a free or paid license, you receive an error message. The error message might state that self-service is disabled by your organization. Or, the error message might state that sign-up is managed by your organization.
+When you try to sign up for a free or paid license, you receive an error message. The error message might state that your organization disabled self-service. Or, the error message might state that your organization manages sign-up.
 
-## Cause: Your administrator has disabled self-service 
+## Cause: Your administrator disabled self-service 
 
 Your organization might not want employees to use self-service sign-up or to be able to upgrade to paid versions of the Power BI licenses. The paid versions are Pro and Premium Per User (PPU).
 
@@ -116,7 +116,7 @@ The Power BI Pro license gives you access to a wider range of Power BI features.
 
 ## You can't access your Fabric items
 
-You've opened Microsoft Fabric. You see the landing page but can't access any of the Fabric items. 
+You opened Microsoft Fabric. You see the landing page but can't access any of the Fabric items. 
 
 ## Cause: You don't have a Fabric capacity
 
