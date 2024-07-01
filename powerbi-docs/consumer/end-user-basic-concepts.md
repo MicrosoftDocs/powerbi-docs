@@ -43,7 +43,7 @@ At its most basic:
 
     For more info, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
-- ![A screenshot of the semantic model icon.](media/end-user-basic-concepts/power-bi-semantic-model-icon.png) A *semantic model* is a container of data. For example, it might be an Excel file from the World Health Organization. It might also be a company-owned database of customers or it might be a Salesforce file. Semantic models are managed by *designers*.
+- ![A screenshot of the semantic model icon.](media/end-user-basic-concepts/power-bi-semantic-model-icon.png) A *semantic model* is a container of data. For example, it might be an Excel file from the World Health Organization, a company-owned database of customers, a Salesforce file, or a combination of all 3. Semantic models are managed by *designers*.
 
 - ![A screenshot of the dashboard icon.](media/end-user-basic-concepts/power-bi-dashboard-icon.png) A *dashboard* is a single screen with *tiles* of interactive visuals, text, and graphics. A dashboard collects your most important metrics, on one screen, to tell a story or answer a question. The dashboard content comes from one or more reports and one or more semantic models.
 
@@ -76,7 +76,7 @@ _______________________________________________________
 
 A *semantic model* is a collection of data that *designers* import or connect to and then use to build reports and dashboards. As a *business user*, it's possible that you never interact directly with semantic models, but it's still helpful to learn how they fit into the bigger picture.  
 
-Each semantic model represents a single source of data. For example, the source could be an Excel workbook on OneDrive, an on-premises SQL Server Analysis Services tabular dataset, or a Google Analytics dataset. Power BI supports more than 150 data sources and is always adding more. 
+Each semantic model represents a single or multiple sources of data. For example, the source could be an Excel workbook on OneDrive, an on-premises SQL Server Analysis Services tabular dataset, or a Google Analytics dataset. It could also be a combination of multiple data sources. Power BI supports more than 150 data sources and is always adding more. 
 
 When a designer shares an app with you, or gives you permissions to a workspace, you can look up which semantic models are being used. But you can't add or change anything in the semantic model. This means that as you interact with dashboards and reports, the underlying data is safe. Changes you make to the dashboards and reports don't affect the semantic model. 
 
