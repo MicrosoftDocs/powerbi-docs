@@ -70,7 +70,7 @@ For this example, let’s create a column chart starting from the Visualizations
 
 1. To customize your column chart, select the Format icon in the Visualizations Pane, to reveal the Format pane, granting you access to all available formatting options under the Visual tab and the General tab. This allows you to tailor the chart's appearance and functionality to your specific requirements.
 
-:::image type="content" source="media/power-bi-visualization-column-charts/build-column-chart-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
 
 You've now successfully created a column chart with Power BI Desktop. Take some time to familiarize yourself with all the available **Format settings for column charts** in the **Related content** section below.
 
