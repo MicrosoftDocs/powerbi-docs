@@ -1,7 +1,7 @@
 ---
 title: Logarithmic scale
 description: Setting - Logarithmic scale (X-axis & Y-axis, Range, Logarithmic scale)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

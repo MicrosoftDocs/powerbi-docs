@@ -1,7 +1,7 @@
 ---
 title: Maximum height
 description: Setting - Maximum height (X-axis, Values, Maximum height)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

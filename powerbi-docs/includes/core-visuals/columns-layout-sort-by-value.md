@@ -1,7 +1,7 @@
 ---
 title: Sort by value
 description: Setting - Sort by value (Columns, Layout, Sort by value)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

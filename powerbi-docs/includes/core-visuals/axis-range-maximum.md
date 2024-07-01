@@ -1,7 +1,7 @@
 ---
 title: Maximum
 description: Setting - Maximum (X-axis & Y-axis, Range, Maximum)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

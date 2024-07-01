@@ -1,7 +1,7 @@
 ---
 title: Overflow style
 description: Setting - Overflow style (Layout, Overflow, Overflow style)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

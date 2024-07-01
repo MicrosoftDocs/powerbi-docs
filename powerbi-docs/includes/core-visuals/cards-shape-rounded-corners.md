@@ -1,7 +1,7 @@
 ---
 title: Rounded corners
 description: Setting - Rounded corners (Cards, Shape, Rounded corners)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

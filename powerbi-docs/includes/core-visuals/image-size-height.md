@@ -1,7 +1,7 @@
 ---
 title: Height
 description: Setting - Height (Image size, Height)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

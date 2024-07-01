@@ -1,7 +1,7 @@
 ---
 title: Image area size
 description: Setting - Image area size (Images, Image, Image area size)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

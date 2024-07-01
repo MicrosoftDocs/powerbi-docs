@@ -1,7 +1,7 @@
 ---
 title: Line style
 description: Setting - Line style (Global use)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

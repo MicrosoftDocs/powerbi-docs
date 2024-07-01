@@ -1,7 +1,7 @@
 ---
 title: Space between label and value
 description: Setting - Space between label and value (Callout values, Label, Space between label and value)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

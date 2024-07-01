@@ -1,7 +1,7 @@
 ---
 title: Position
 description: Setting - Position (Callout values, Label, Position)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Font color
 description: Setting - Font color (Reference labels, Detail, Font color)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

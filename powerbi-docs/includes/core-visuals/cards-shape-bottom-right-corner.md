@@ -1,7 +1,7 @@
 ---
 title: Bottom right corner
 description: Setting - Bottom right corner (Cards, Shape, Bottom right corner)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

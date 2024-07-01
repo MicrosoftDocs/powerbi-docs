@@ -1,7 +1,7 @@
 ---
 title: Border position
 description: Setting - Border position (Blank rows, Border, Border position)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

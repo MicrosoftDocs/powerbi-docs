@@ -1,7 +1,7 @@
 ---
 title: Blur
 description: Setting - Blur (Card visual (new), Cards, Shadow & Glow, Blur)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

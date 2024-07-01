@@ -1,7 +1,7 @@
 ---
 title: Icons
 description: Setting - Icons (Cell elemements, Icons)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

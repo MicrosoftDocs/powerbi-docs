@@ -1,7 +1,7 @@
 ---
 title: Type
 description: Setting - Type (Reference line, Apply settings to, Type)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

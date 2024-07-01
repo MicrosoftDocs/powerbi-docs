@@ -1,7 +1,7 @@
 ---
 title: Alternate background color
 description: Setting - Color (Values, Values, Alternate background color)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

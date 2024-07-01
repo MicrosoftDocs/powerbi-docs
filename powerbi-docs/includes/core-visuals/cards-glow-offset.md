@@ -1,7 +1,7 @@
 ---
 title: Offset
 description: Setting - Offset (Cards, Glow, Offset)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

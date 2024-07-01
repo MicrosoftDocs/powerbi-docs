@@ -1,7 +1,7 @@
 ---
 title: Global font size
 description: Setting - Global font size (Grid, Options, Global font size)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

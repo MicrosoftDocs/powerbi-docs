@@ -1,7 +1,7 @@
 ---
 title: Bottom left corner
 description: Setting - Bottom left corner (Cards, Shape, Bottom left corner)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

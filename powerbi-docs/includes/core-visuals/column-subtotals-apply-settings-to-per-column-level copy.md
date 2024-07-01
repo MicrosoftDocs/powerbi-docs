@@ -1,7 +1,7 @@
 ---
 title: Per column level
 description: Setting - Per column level (Column Subtotals, Apply settings to, Per column level)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

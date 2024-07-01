@@ -1,7 +1,7 @@
 ---
 title: Heading
 description: Setting - Heading (Hierarchy, Callout values, Label, Heading)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Per row level
 description: Setting - Per row level (Row Subtotals, Apply settings to, Per row level)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

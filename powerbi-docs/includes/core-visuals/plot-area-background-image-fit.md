@@ -1,7 +1,7 @@
 ---
 title: Image fit
 description: Setting - Image fit (Plot area background, Image fit)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

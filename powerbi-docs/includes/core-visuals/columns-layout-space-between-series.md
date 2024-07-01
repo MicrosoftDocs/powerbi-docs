@@ -1,7 +1,7 @@
 ---
 title: Space between series
 description: Setting - Space between series (Columns, Layout, Space between series)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

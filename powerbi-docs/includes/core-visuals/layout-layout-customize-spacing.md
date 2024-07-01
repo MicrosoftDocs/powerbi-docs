@@ -1,7 +1,7 @@
 ---
 title: Customize spacing
 description: Setting - Max Customize spacing (Layout, Layout, Customize spacing)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

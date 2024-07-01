@@ -1,7 +1,7 @@
 ---
 title: Width
 description: Setting - Width (Border & Divider, Width)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

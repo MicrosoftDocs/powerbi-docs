@@ -1,7 +1,7 @@
 ---
 title: Space between categories
 description: Setting - Space between categories (Columns, Layout, Space between categories)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

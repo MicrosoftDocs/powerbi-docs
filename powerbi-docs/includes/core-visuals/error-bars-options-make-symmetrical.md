@@ -1,7 +1,7 @@
 ---
 title: Make symmetrical
 description: Setting - Make symmetrical (Error bars, Options, Make symmetrical)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

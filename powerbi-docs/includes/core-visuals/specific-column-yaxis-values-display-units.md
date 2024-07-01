@@ -1,7 +1,7 @@
 ---
 title: Display units
 description: Setting - Display units with no auto or custom (x-axis & column values)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

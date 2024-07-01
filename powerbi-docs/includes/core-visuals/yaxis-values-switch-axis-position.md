@@ -1,7 +1,7 @@
 ---
 title: Switch axis position
 description: Setting - Switch axis position (Y-axis, Values, Switch axis position)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

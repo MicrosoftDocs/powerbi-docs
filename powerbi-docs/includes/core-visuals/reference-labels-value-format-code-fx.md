@@ -1,7 +1,7 @@
 ---
 title: Format code
 description: Setting - Format code (Reference labels, Value, Format code)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Padding
 description: Setting - Padding (Cards, Padding, Size)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

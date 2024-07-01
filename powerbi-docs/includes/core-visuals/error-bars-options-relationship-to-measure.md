@@ -1,7 +1,7 @@
 ---
 title: Relationship to measure
 description: Setting - Relationship to measure (Error bars, Options, Relationship to measure)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

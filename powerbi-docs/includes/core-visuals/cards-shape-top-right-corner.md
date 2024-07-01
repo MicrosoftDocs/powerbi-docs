@@ -1,7 +1,7 @@
 ---
 title: Top right corner
 description: Setting - Top right corner (Cards, Shape, Top right corner)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

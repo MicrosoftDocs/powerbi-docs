@@ -1,7 +1,7 @@
 ---
 title: Bar color
 description: Setting - Bar color (Error bars, Bar, Bar color)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

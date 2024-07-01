@@ -1,7 +1,7 @@
 ---
 title: Match value alignment
 description: Setting - Match value alignment (Callout values, Label)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

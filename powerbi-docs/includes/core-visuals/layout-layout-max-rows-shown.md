@@ -1,7 +1,7 @@
 ---
 title: Max rows shown
 description: Setting - Max rows shown (Layout, Layout, Max rows shown)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

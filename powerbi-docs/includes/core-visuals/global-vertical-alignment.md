@@ -1,7 +1,7 @@
 ---
 title: Vertical alignment
 description: Setting - Vertical alignment (global, multiple instances)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

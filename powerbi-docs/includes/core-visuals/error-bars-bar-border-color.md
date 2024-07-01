@@ -1,7 +1,7 @@
 ---
 title: Border color
 description: Setting - Border color (Error bars, Bar, Border color)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Match column color
 description: Setting - Match column color (Columns, Border, Match column color)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

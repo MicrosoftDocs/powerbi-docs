@@ -1,7 +1,7 @@
 ---
 title: Header alignment
 description: Setting - Header alignment (Column headers, Header alignment)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

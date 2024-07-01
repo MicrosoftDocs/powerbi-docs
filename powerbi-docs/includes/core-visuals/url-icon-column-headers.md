@@ -1,7 +1,7 @@
 ---
 title: Column headers
 description: Setting - Column headers (URL icon, Column headers)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

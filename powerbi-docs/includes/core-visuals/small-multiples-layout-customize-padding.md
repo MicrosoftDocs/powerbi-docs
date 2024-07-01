@@ -1,7 +1,7 @@
 ---
 title: Customize padding
 description: Setting - Customize padding (Small multiples, Layout, Customize padding)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

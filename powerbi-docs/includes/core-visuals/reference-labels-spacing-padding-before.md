@@ -1,7 +1,7 @@
 ---
 title: Padding before divider line
 description: Setting - Padding before divider line (Reference labels, Spacing, Padding before divider line)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

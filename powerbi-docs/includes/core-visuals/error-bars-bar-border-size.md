@@ -1,7 +1,7 @@
 ---
 title: Border size
 description: Setting - Border size (Error bars, Bar, Border size)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

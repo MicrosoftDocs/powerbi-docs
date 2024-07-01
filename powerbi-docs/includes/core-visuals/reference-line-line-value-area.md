@@ -1,7 +1,7 @@
 ---
 title: Value area
 description: Setting - Value area (Reference line, Line, Value area)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Vertical position
 description: Setting - Vertical position (Reference line, Data label, Vertical position)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

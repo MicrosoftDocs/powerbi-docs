@@ -1,7 +1,7 @@
 ---
 title: Columns shown
 description: Setting - Max columns shown (Layout, Layout, Columns shown)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

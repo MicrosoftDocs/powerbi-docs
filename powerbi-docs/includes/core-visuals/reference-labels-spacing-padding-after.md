@@ -1,7 +1,7 @@
 ---
 title: Padding after divider line
 description: Setting - Padding after divider line (Reference labels, Spacing, Padding after divider line)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

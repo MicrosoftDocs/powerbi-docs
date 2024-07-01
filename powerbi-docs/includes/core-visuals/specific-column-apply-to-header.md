@@ -1,7 +1,7 @@
 ---
 title: Apply to header
 description: Setting - Apply to header (Specific column, Header)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Label format
 description: Setting - Label format (Error bars, Error labels, Label format)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

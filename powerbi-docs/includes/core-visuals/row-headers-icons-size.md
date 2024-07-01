@@ -1,7 +1,7 @@
 ---
 title: Size
 description: Setting - Size (Row headers, Icons, Size)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

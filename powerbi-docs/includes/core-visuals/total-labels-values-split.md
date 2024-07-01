@@ -1,7 +1,7 @@
 ---
 title: Split positive and negative
 description: Setting - Split positive and negative (Total labels, Values, Split positive and negative)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

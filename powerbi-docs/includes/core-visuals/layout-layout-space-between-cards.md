@@ -1,7 +1,7 @@
 ---
 title: Space between cards
 description: Setting - Max Space between cards (Layout, Layout, Space between cards)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Browse…
 description: Setting - Browse… (Plot area background)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Values
 description: Setting - Values (URL icon, Values)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Space between ribbons and columns
 description: Setting - Space between ribbons and columns (Ribbon settings, Layout, Space between ribbons and columns)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

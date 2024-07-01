@@ -1,7 +1,7 @@
 ---
 title: Field
 description: Setting - Field (Data labels, Detail, Field)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

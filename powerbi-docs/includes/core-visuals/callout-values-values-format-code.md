@@ -1,7 +1,7 @@
 ---
 title: Format code
 description: Setting - Format code (Callout values, Values, Format code)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

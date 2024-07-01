@@ -1,7 +1,7 @@
 ---
 title: Invert range
 description: Setting - Invert range (Y-axis, Range, Invert range)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

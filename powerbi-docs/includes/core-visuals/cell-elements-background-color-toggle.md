@@ -1,7 +1,7 @@
 ---
 title: Background color
 description: Setting - Background color (Cell Elements, Background color toggle)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

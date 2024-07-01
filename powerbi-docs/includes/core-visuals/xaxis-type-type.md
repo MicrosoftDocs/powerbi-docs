@@ -1,7 +1,7 @@
 ---
 title: Type
 description: Setting - Type (X-axis, Type, Type)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Color
 description: Setting - Color (Small Multiple, Background color, fx)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

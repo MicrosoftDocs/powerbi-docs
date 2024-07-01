@@ -1,7 +1,7 @@
 ---
 title: Show blank as
 description: Setting - Show blank as (Global use)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

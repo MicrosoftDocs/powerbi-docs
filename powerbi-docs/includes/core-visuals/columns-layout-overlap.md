@@ -1,7 +1,7 @@
 ---
 title: Overlap
 description: Setting - Overlap (Columns, Layout, Overlap)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

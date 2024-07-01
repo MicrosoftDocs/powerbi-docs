@@ -1,7 +1,7 @@
 ---
 title: Upper bound
 description: Setting - Upper bound (Error bars, Options, Upper bound)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

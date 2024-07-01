@@ -1,7 +1,7 @@
 ---
 title: Size of top snips
 description: Setting - Size of top snips (Cards, Shape, Size of top snips)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

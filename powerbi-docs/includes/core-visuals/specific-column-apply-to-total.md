@@ -1,7 +1,7 @@
 ---
 title: Apply to total
 description: Setting - Apply to total (Specific column, Total)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

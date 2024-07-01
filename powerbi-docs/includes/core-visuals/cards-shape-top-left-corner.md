@@ -1,7 +1,7 @@
 ---
 title: Top left corner
 description: Setting - Top left corner (Cards, Shape, Top left corner)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

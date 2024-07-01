@@ -1,7 +1,7 @@
 ---
 title: Style
 description: Setting - Style (Layout and style presets, Style)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

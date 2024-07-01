@@ -1,7 +1,7 @@
 ---
 title: Optimize label display
 description: Setting - Optimize label display (Data labels, Options, Optimize label display)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

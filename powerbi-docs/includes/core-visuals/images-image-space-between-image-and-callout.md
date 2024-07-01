@@ -1,7 +1,7 @@
 ---
 title: Space between image and callout
 description: Setting - Space between image and callout (Images, Image, Space between image and callout)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

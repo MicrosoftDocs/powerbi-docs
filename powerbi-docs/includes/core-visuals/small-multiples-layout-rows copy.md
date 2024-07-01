@@ -1,7 +1,7 @@
 ---
 title: Rows
 description: Setting - Rows (Small multiples, Layout, Rows)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

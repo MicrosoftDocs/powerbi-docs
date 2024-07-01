@@ -1,7 +1,7 @@
 ---
 title: Banded row color
 description: Setting - Banded row color (Row headers, Text, Color)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

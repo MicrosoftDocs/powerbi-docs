@@ -1,7 +1,7 @@
 ---
 title: Value
 description: Setting - Value (Reference line, Line, Value)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

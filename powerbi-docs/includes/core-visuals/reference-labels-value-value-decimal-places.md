@@ -1,7 +1,7 @@
 ---
 title: Value decimal places
 description: Setting - Value decimal places (Reference labels, Value, Value decimal places)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

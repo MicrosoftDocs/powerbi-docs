@@ -1,7 +1,7 @@
 ---
 title: Arrangement
 description: Setting - Arrangement (Card visual (new), Layout, Layout, Arrangement)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

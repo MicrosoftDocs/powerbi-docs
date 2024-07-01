@@ -1,7 +1,7 @@
 ---
 title: Minimum
 description: Setting - Minimum (X-axis & Y-axis, Range, Minimum)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

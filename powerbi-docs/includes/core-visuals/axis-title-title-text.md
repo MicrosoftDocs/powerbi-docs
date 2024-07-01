@@ -1,7 +1,7 @@
 ---
 title: Title text
 description: Setting - Title text (X-axis & Y-axis, Title, Title text)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

@@ -1,7 +1,7 @@
 ---
 title: Content
 description: Setting - Content (Data, Reference labels, Title)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

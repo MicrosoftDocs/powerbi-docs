@@ -1,7 +1,7 @@
 ---
 title: Max cards shown
 description: Setting - Max cards shown (Layout, Layout, Max cards shown)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

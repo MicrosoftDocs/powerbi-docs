@@ -1,7 +1,7 @@
 ---
 title: Select series
 description: Setting - Select series (Reference labels, Apply settings to, Select series)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

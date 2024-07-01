@@ -1,7 +1,7 @@
 ---
 title: Customize outer padding
 description: Setting - Customize outer padding (Reference labels, Spacing, Customize outer padding)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

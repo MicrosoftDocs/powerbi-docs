@@ -1,7 +1,7 @@
 ---
 title: Orientation
 description: Setting - Orientation (Cards, Glow, Orientation)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals

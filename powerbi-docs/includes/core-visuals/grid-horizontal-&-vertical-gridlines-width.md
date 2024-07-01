@@ -1,7 +1,7 @@
 ---
 title: Width
 description: Setting - Width (Grid, Horizontal & Vertical gridlines, Width)
-author: v-jaedena
+author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
