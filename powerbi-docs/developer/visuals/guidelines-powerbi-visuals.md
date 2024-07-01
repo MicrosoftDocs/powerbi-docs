@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 06/27/2024
+ms.date: 07/01/2024
 #customer intent: As a Power BI visual developer, I want to learn how to publish Power BI custom visuals to Microsoft AppSource so that others can discover and use them.
 ---
 
@@ -23,9 +23,7 @@ Like the free Power BI visuals, an IAP Power BI visual can also be certified. Be
 
 ### Power BI visuals with IAP features
 
-An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate them. Manage the purchase of these apps and add-ins with the [Licensing API](./licensing-api.md).
-
-Developers can use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
+An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate them. We recommend using Microsoft's native [Licensing API](./licensing-api.md) to manage the purchase of these apps and add-ins, but developers can use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 >[!IMPORTANT]  
 > If you update your Power BI visual from *free* to *additional purchase may be required*, customers must receive the same level of free functionality as before the update. You can add optional advanced paid features in addition to the existing free features.
