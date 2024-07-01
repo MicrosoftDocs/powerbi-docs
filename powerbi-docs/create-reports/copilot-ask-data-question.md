@@ -102,6 +102,7 @@ To learn more about linguistic modeling and ways to streamline the process of im
 
 There are a few other factors to consider at this time when using this capability:
 
+- This capability is only available in Power BI Service, support for Power BI Desktop is coming soon.
 - The only supported language is English.
 - This capability doesn't apply filters or slicers currently affecting visuals on the report page to the answers it generates inside the Copilot pane.
 - The requirement to enable Q&A is unique to this Copilot capability. You can still use Copilot for other tasks, like [asking questions about content present in your report.](copilot-pane-summarize-content.md#answer-questions-about-your-report-content-in-the-copilot-pane)
