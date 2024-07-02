@@ -64,7 +64,7 @@ In the **Editor**:
 
     :::image type="content" source="media/paginated-formatted-table/paginated-table-resize-columns-1.png" alt-text="Screenshot of resizing the width of the columns.":::
    
-1. To edit the text in a column header select the header you would like to edit, doble click and make your changes.
+1. To edit the text in a column header select the header you would like to edit, double-click and make your changes.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-column-rename-1.png" alt-text="Screenshot of editing text in a column header." lightbox="media/paginated-formatted-table/rdl-web-authoring-column-rename-1.png":::
 
