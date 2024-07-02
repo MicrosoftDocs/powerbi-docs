@@ -48,7 +48,7 @@ To purchase Power BI paid licenses in the Microsoft 365 admin center:
 
 ## Assign licenses from the Microsoft 365 admin center
 
-To assign licenses to users, from **Billing**, select **Licenses** and **Power BI Pro** or **Power BI Premium Per User**. For detailed information about assigning licenses from the Microsoft 365 admin center, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
+To assign licenses to users, from **Billing**, select **Licenses**, and **Power BI Pro** or **Power BI Premium Per User**. For detailed information about assigning licenses from the Microsoft 365 admin center, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 For guest users, see [Use the licenses page to assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users#assign-licenses-by-using-the-licenses-page). Before assigning paid licenses to guest users, contact your Microsoft account representative to make sure you're in compliance with the terms of your agreement.
 
@@ -62,7 +62,7 @@ Follow these steps to assign Power BI licenses to individual user accounts:
 1. In the navigation pane, under **Manage**, select **Licenses**. 
 1. Select **Manage** again and choose **All products.**
 1. Select the name of your product (for example, **Power BI Premium Per User** or **Power BI Pro**) and then choose **+ Assign**.
-1. On the **Assign license** page, select a user or select **+ Add users and groups**. Select one or more users from the list. 
+1. On the **Assign license** page, select a user, or select **+ Add users and groups**. Select one or more users from the list. 
 1. Select **Assignment options** and set the required options to **On**.
 1. Select **Review + Assign**, and then select **Assign**.
 
