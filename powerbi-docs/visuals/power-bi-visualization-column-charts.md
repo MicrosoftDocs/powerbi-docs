@@ -18,10 +18,9 @@ LocalizationGroup: Visualizations
 
 ## Overview
 
-A column chart , also known as a vertical bar graph, is a type of chart used to display and compare data over categories. Each column represents a category, and the height of the column represents the value. This makes it easy to compare values across multiple categories or time periods. Column charts are commonly used in business and finance to display financial data such as revenue, expenses, and profits. They are also used in marketing to display data such as sales figures, market share, and customer demographics.
+A column chart, commonly referred to as a vertical bar graph, is a visual tool utilized to display and compare numerical data across different categories. Each column within the chart corresponds to a specific category, with the height of the column proportionally representing the associated value. This design facilitates an intuitive comparison of values across various categories or over distinct time periods. Column charts are frequently employed in the realms of business and finance to illustrate key financial metrics, including revenue, expenses, and profits. Additionally, they serve as a valuable asset in marketing for the depiction of data points such as sales figures, market share, and customer demographics.
 
-In the illustrated guide below, we demonstrate the process of building a column chart visual both in Power BI Desktop and the Power BI Service.
-
+The guide illustrated below provides a step-by-step walkthrough for constructing a column chart visual, encompassing both the Power BI Desktop and Power BI Service platforms.
 
 Depending on the unique needs of your analysis, you can choose from three distinct types of column charts:
 
