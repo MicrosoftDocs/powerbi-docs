@@ -36,7 +36,7 @@ To create the table, select field names in the **Data** pane on the right.  This
 
 The selected columns appear in the **Editor** portion of the canvas. Give the editor a few moments to run the query on the dataset. The formatted table shows up in the **Preview** section of the canvas.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-addfieds.png" alt-text="Screenshot of formatted table preview." lightbox="media/paginated-formatted-table/paginated-authoring-addfieds.png":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-add-fields.png" alt-text="Screenshot of formatted table preview." lightbox="media/paginated-formatted-table/paginated-authoring-addfieds.png":::
 
 This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before editing or saving the report.
 
