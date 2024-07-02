@@ -171,7 +171,7 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer.png" alt-text="Screenshot of header/footer.":::    
 
    
-2. You can add a textbox, images, page numbers or execution times in the header/footer. You can also unselect **Show on first page** or **Show on last page** if don't want the header/footer to be displayed on those pages.
+2. You can add a textbox, images, page numbers or execution times in the header/footer. You can also unselect **Show on first page** or **Show on last page** if you don't want the header/footer to be displayed on those pages.
 
    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-header-footer-options.png" alt-text="Screenshot of header footer options.":::    
    
