@@ -10,4 +10,4 @@ ms.date: 06/28/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-- For this guide, the **On-object interaction** feature in Power BI Desktop is *unselected*. This setting is found in the **Preview features** section, located in Global options when viewing Power BI Desktop settings
+- For the purposes of this guide, in Power BI Desktop's **Global options**, under the **Preview features** section, the **On-object interaction** feature is *not enabled*.

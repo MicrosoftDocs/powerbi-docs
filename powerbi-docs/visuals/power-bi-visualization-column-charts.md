@@ -39,7 +39,7 @@ Depending on the unique needs of your analysis, you can choose from three distin
 
 # [Power BI Service](#tab/powerbi-service)
 
-[!INCLUDE [prerequisites-service-download-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-service-download-retail-analysis-sample-pbix.md)]
+[!INCLUDE [prerequisites-service-open-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-service-open-retail-analysis-sample-pbix.md)]
 
 ---
 
@@ -56,21 +56,22 @@ For this example, let’s create a column chart starting from the Visualizations
 
 1. From the **Visualizations** pane, select any **Column chart** icon, and a visual placeholder is immediately added to the canvas.
 
-:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-1.png" alt-text="Screenshot of the Visualizations pane, with Build visual icon highlighted, and the three Column chart icons also highlighted.":::
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-1.png" alt-text="Screenshot of the Visualizations pane, with Build visual icon highlighted, and the three Column chart icons also highlighted.":::
 
 1. To add data to your column chart, simply open the **Data pane** and expand the Sales dropdown to select the desired fields or measures.
-```NOTE:  Any one of the following combinations are required to create column charts:```
-```- A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or```
-```- At least one data field on the **X-axis**, one measure on the **Y-axis**, and precisely one data field in the **Legend**, or```
-```- One or more data fields on the **X-axis** and multiple measures on the **Y-axis**, keeping in mind that column charts with multiple measures don’t support a **Legend**.```
 
-```The specific combination you choose depends on the data you’re working with and the insights you want to glean from your chart. As a visual guide, in the example below, we’ve selected one data field on the **X-axis** and one measure on the **Y-axis**.```
+   NOTE:  Any one of the following combinations are required to create column charts:
+   - A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or
+   - At least one data field on the **X-axis**, one measure on the **Y-axis**, and precisely one data field in the **Legend**, or
+   - One or more data fields on the **X-axis** and multiple measures on the **Y-axis**, keeping in mind that column charts with multiple measures don’t support a **Legend**.
 
-:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-2.png" alt-text="Screenshot of the Data pane highlighted, along with selected fields and the axes containing data fields also highlighted.":::
+   The specific combination you choose depends on the data you’re working with and the insights you want to glean from your chart. As a visual guide, in the example below, we’ve selected one data field on the **X-axis** and one measure on the **Y-axis**.
 
-1. To customize your column chart, select the Format icon in the Visualizations Pane, to reveal the Format pane, granting you access to all available formatting options under the Visual tab and the General tab. This allows you to tailor the chart's appearance and functionality to your specific requirements.
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-2.png" alt-text="Screenshot of the Data pane highlighted, along with selected fields and the axes containing data fields also highlighted.":::
 
-:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+1. To customize your column chart, select the **Format icon** in the **Visualizations Pane**, to reveal the **Format pane**, granting you access to all available formatting options under the **Visual** tab and the **General** tab. This allows you to tailor the chart's appearance and functionality to your specific requirements.
+
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
 
 You've now successfully created a column chart with Power BI Desktop. Take some time to familiarize yourself with all the available **Format settings for column charts** in the **Related content** section below.
 
@@ -82,21 +83,22 @@ For this example, let’s create a column chart starting from the **Visualizatio
 
 1. To create your column chart, we'll start in the **Visualizations pane**. With the **Build visual** icon selected, choose any **Column chart** icon, and a visual placeholder is added to the canvas.
 
-:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-1.png" alt-text="Screenshot of the Visualizations pane, with Build visual icon highlighted, and the three Column chart icons also highlighted.":::
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-1.png" alt-text="Screenshot of the Visualizations pane, with Build visual icon highlighted, and the three Column chart icons also highlighted.":::
 
 1. To add data to your column chart, simply choose fields and measures from the **Data pane**. This is done by selecting data from within the **Data pane** itself, or dragging them to the field wells within the **Visualizations pane**, or dragging directly to the placeholder on the canvas.
-```NOTE:  Any one of the following combinations are required to create column charts:```
-```- A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or```
-```- At least one data field on the **X-axis**, one measure on the **Y-axis**, and precisely one data field in the **Legend**, or```
-```- One or more data fields on the **X-axis** and multiple measures on the **Y-axis**, keeping in mind that column charts with multiple measures don’t support a **Legend**.```
 
-```The specific combination you choose depends on the data you’re working with and the insights you want to glean from your chart. As a visual guide, in the example below, we’ve selected one data field on the **X-axis** and one measure on the **Y-axis**.```
+   NOTE:  Any one of the following combinations are required to create column charts:
+   - A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or
+   - At least one data field on the **X-axis**, one measure on the **Y-axis**, and precisely one data field in the **Legend**, or
+   - One or more data fields on the **X-axis** and multiple measures on the **Y-axis**, keeping in mind that column charts with multiple measures don’t support a **Legend**.
 
-:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-2.png" alt-text="Screenshot of the Data pane highlighted, along with selected fields and the axes containing data fields also highlighted.":::
+   The specific combination you choose depends on the data you’re working with and the insights you want to glean from your chart. As a visual guide, in the example below, we’ve selected one data field on the **X-axis** and one measure on the **Y-axis**.
+
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-2.png" alt-text="Screenshot of the Data pane highlighted, along with selected fields and the axes containing data fields also highlighted.":::
 
 1. To customize your column chart, select the **Format visual** icon in the **Visualizations pane**, where you can select the Visual tab and the General tab to access an array of formatting options. This allows you to tailor the chart's appearance and functionality to your specific requirements.
 
-:::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, the Visual and General tabs, and both the Legend and Ribbons sections, also highlighted.":::
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, the Visual and General tabs, and both the Legend and Ribbons sections, also highlighted.":::
 
 You've now successfully created a column chart with Power BI Service. Take some time to familiarize yourself with all the available **Format settings for column charts** in the **Related content** section below.
 
