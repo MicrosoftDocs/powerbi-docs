@@ -8,9 +8,11 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: 
 ms.topic: how-to
-ms.date: 04/25/2024
+ms.date: 07/01/2024
 ms.custom: licensing support
 LocalizationGroup: consumers
+
+#customer intent: As a business user, I understand the license options for Power BI service and I can look up my current license. 
 ---
 
 # Licenses and subscriptions for business users
@@ -36,7 +38,7 @@ Each user of the Power BI service has either a *free* license, a *Pro* license, 
 It's possible to have more than one license at the same time. The service always delivers you the experience equal to the most permissive license you currently have.
 
 > [!NOTE]
->* A [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license is required for publishing content to a Power BI app workspace, editing content, and for sharing content with others.
+>* A paid license, either [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), is required for publishing content to a Power BI app workspace, editing content, and for sharing content with others.
 
 ## Power BI Premium capacity subscription
 
@@ -60,9 +62,15 @@ This first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro lic
 
 ![Office portal subscriptions tab showing Office 365 E5 subscription](media/end-user-license/power-bi-license-office.png)
 
-This second user, Zalan, has a Fabric free license that includes a Power BI free license. 
+This second user, Zalan, has a free license. The name of the license is Fabric (Free). 
 
 ![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png) 
+
+### Microsoft Power BI and Microsoft Fabric
+Power BI is one of the experiences available in Microsoft Fabric. Power BI is one component of Fabric. Power BI is also available as a standalone service. You might be someone who uses only the Power BI experience and you might be someone who works with more than one of the Fabric experiences.
+
+For more information, see [What is Microsoft Fabric.](/fabric/get-started/microsoft-fabric-overview)
+
 
 ## Find out if you have access to Premium capacity
 
@@ -77,6 +85,8 @@ Not only workspaces are marked with a diamond icon. Apps and app workspaces save
 In the following image, two of the apps are stored in Premium capacity.
 
 ![Screenshot showing the diamond icon that represents content stored in Premium capacity.](media/end-user-license/power-bi-premium.png)
+
+If you don't see any diamond icons, it may mean that no colleague has yet shared content from Premium capacity. 
 
 ## Put it all together
 
@@ -100,8 +110,7 @@ The Power BI Pro creators can share and collaborate with other Pro users in eith
 ## Considerations and limitations
 
 - It's possible to have more than one Power BI license. The Power BI service always delivers the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service uses the Pro license.
-- Only SKUs (Stock Keeping Units) equivalent or higher than a **F64 SKU** allow free Power BI users to consume Power BI apps and shared content in Premium capacity in the Power BI service. Smaller **F SKU**s require a paid license to consume Power BI content.
-- Users without a paid license can view apps created by colleagues if certain conditions are met. First, the workspace owner creates the app based on content in a workspace that is saved in Premium capacity. Second, the workspace owner assigns the free user a role that has permissions for that app. 
+- Only SKUs (Stock Keeping Units) equivalent or higher than a **F64 SKU** allow free Power BI users to consume Power BI apps and shared content in Premium capacity in the Power BI service. Smaller **F SKU**s require a paid license to 
 - You want to create and share content, or open content that someone else shared with you. That content isn't in Premium capacity. You must have a paid license. Either purchase a license or sign up for a trial, if there is one available. One option that might be available is the [free trial of Power BI paid features](../fundamentals/service-self-service-signup-for-power-bi.md). If your organization has self-service trials enabled, you can select the upgrade dialog that appears in the Power BI service when you try to use a Pro feature.
 
     :::image type="content" source="media/end-user-license/power-bi-ppu-trial.png" alt-text="Screenshot showing the dialog for a Power BI Pro free trial.":::
