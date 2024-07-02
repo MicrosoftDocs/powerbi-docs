@@ -42,6 +42,7 @@ To format and customize your column chart in **Power BI Service**, simply click 
 This document will guide you through these extensive settings for optimal column chart customization.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-service.png" alt-text="Power BI Service screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+
 ---
 
 > [!NOTE]
