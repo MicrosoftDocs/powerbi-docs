@@ -1,6 +1,6 @@
 ---
 title: Column charts in Power BI
-description: This tutorial about column charts explains and how to build them in the Power BI service and Desktop.
+description: This tutorial explains column charts and how to build them in Power BI Desktop and Power BI Service.
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.reviewer:
@@ -12,7 +12,7 @@ ms.date: 07/01/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about column charts so that I can effectively and more easily build column chart visuals in Power BI Desktop and Power BI Service.
 ---
-# Build a column chart
+# Column charts
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 

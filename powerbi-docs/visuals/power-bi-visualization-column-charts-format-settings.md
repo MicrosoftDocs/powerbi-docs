@@ -19,6 +19,53 @@ LocalizationGroup: Visualizations
 
 ## Overview
 
+The document you are about to delve into will provide a comprehensive and detailed exposition of the various format settings available for column charts in both Power BI Desktop and Power BI Service.
+
+Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements to advanced ribbon settings, this document will cover every setting for column chart formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
+
+Whether you’re a seasoned Power BI user or new to data visualization, this document will be an invaluable resource for mastering column chart formatting in Power BI Desktop and Power BI Service.
+
+## Prerequisites
+
+# [Power BI Desktop](#tab/powerbi-desktop)
+
+To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+
+This document will guide you through these extensive settings for optimal column chart customization.
+
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-desktop.png" alt-text="Power BI Desktop screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+
+# [Power BI Service](#tab/powerbi-service)
+
+To format and customize your column chart in **Power BI Service**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+
+This document will guide you through these extensive settings for optimal column chart customization.
+
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-service.png" alt-text="Power BI Service screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+---
+
+> [!NOTE]
+> [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
+
+## Settings
+
+### X-axis
+
+#### Type
+
+The **Type** setting within x-axis options is only available when you choose a single data field that is either numerical or date/time.
+
+[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-type-type.md)]
+
+#### Range
+
+The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
+
+[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-maximum.md)]
+[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-minimum.md)]
+[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-logarithmic-scale.md)]
+[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-range-invert-range.md)]
+
 ## Considerations and technical aspects
 
 ### Considerations

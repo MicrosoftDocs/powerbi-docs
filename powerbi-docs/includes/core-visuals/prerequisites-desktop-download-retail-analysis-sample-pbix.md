@@ -10,7 +10,7 @@ ms.date: 06/28/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-In the following guide, we're using the [**Retail Analysis Sample PBIX**](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file. After downloading the file, lets get started:
+In the following guide, we're using the [**Retail Analysis Sample PBIX**](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file. After downloading the file, let's get started:
 
 1. Launch **Power BI Desktop**.
 1. On the left-side navigation pane, select **Open**, otherwise on the top-left of the window, select **File** > **Open**.```
