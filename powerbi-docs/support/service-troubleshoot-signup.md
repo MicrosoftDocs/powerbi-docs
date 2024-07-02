@@ -73,17 +73,17 @@ Your organization might not want employees to use self-service sign-up or to be 
 
 ### Solution: If self-service isn't available
 
-1. If you're unable to use self-service to get your own Power BI license, check to see if your Microsoft 365 Global administrator disabled the self-service options. Also check with the Fabric administrator to see if they changed the upgrade and trial options available to you. For help when you can't use self-service, go to [Self-service sign up and purchase help](../fundamentals/service-self-service-sign-up-help.md).
+- If you're unable to use self-service to get your own Power BI license, check to see if your Microsoft 365 Global administrator disabled the self-service options. Also check with the Fabric administrator to see if they changed the upgrade and trial options available to you. For help when you can't use self-service, go to [Self-service sign up and purchase help](../fundamentals/service-self-service-sign-up-help.md).
 
-1. If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**take over** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses. Check with your Global and Billing administrators to see if so.
+- If you're part of an organization and used self-service to purchase Power BI, the Global or Billing admin for your organization can [**take over** ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses. Check with your Global and Billing administrators to see if so.
 
-1. You're following along with [Sign up or purchase the Power BI service as an individual](../fundamentals/service-self-service-signup-purchase-for-power-bi.md), and the screens look  different. It may be that your organization has its own process for self-service sign-ups and purchases. Follow that process instead to request a license.
+- If you're following along with [Sign up or purchase the Power BI service as an individual](../fundamentals/service-self-service-signup-purchase-for-power-bi.md), the screens might look different. It may be that your organization has its own process for self-service sign-ups and purchases. Follow that process instead to request a license.
 
-1. Self-service purchase of Pro and PPU licenses isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
+- Self-service purchase of Pro and PPU licenses isn't available to educational organizations or organizations deployed to Azure Government or Azure China 21Vianet clouds.
 
-1. You can sign up for or purchase Power BI with .gov or .mil addresses, but this approach requires a different process. For more information, see [Enroll your US Government organization in the Power BI service](../enterprise/service-govus-signup.md).
+- You can sign up for or purchase Power BI with .gov or .mil addresses, but this approach requires a different process. For more information, see [Enroll your US Government organization in the Power BI service](../enterprise/service-govus-signup.md).
 
-1. Pay for the new license yourself. After you sign in, you select how many licenses you want to buy, and provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
+- Pay for the new license yourself. After you sign in, you select how many licenses you want to buy, and provide credit card payment. When the purchase is complete, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 
 > [!TIP]
 > If you're a Global administrator or Billing administrator, learn how to enable self-service for users in your organization. See [Enable or disable self-service.](../enterprise/service-admin-disable-self-service.md)
@@ -124,11 +124,11 @@ A Fabric (Free) license isn't the only thing that you need to access Fabric item
 
 ### Solution: Purchase or trial a Fabric capacity
 
-1. To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](/fabric/admin/fabric-switch). 
+- To enable support for Microsoft Fabric items on your Power BI capacity, [enable Microsoft Fabric](/fabric/admin/fabric-switch). 
 
-1. If you don't have a Fabric capacity, sign up for a [trial of a Fabric capacity](/fabric/get-started/fabric-trial)
+- If you don't have a Fabric capacity, sign up for a [trial of a Fabric capacity](/fabric/get-started/fabric-trial)
 
-1. If you're using Microsoft 365, certain versions include a free Fabric license and a free or paid Power BI license. For example, the Office 365 E5 SKU includes a Fabric free license (but no capacity) and a Power BI Pro license. Without a trial or a purchased capacity, you might not be able to access your Fabric items. 
+- If you're using Microsoft 365, certain versions include a free Fabric license and a free or paid Power BI license. For example, the Office 365 E5 SKU includes a Fabric free license (but no capacity) and a Power BI Pro license. Without a trial or a purchased capacity, you might not be able to access your Fabric items. 
 
 ## You don't receive in-product prompts
 

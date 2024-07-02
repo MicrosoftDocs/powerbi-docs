@@ -50,7 +50,7 @@ The first time you attempt to sign up for a license, Microsoft asks for your ema
 
 If your organization didn't purchase Power BI, you're redirected to a sign-up process. This alternate sign-up process creates an account and possibly even creates a new tenant.
 
-:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-no-account.png" alt-text="Sign-up screen that appears if you don't already have a Power BI account.":::
+:::image type="content" source="media/service-self-service-signup-purchase-for-power-bi/power-bi-no-account.png" alt-text="Screenshot of the sign-up screen that appears if you don't already have a Power BI account.":::
 
 For more information about creating a Microsoft account, see [How to check if your email address is a Microsoft account](https://support.microsoft.com/account-billing/how-to-check-if-your-email-address-is-a-microsoft-account-b3ba5b92-5ead-4a28-adc9-b40558bb697e)
 
