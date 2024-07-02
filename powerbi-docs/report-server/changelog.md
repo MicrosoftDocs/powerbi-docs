@@ -31,7 +31,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - *Version: 1.20.8910.25479 (build 15.0.1115.165), Released: May 28, 2024*
   - Features
     - Removed AngularJS remnants
-    - A recent security change requires a machine admin to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
+    - A recent security change requires a privilaged user to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
     - Custom Visual API shipped with release - version v5.8.0
     - Various bug fixes
 
