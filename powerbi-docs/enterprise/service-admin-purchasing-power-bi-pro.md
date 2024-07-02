@@ -20,7 +20,7 @@ This article is for administrators and explains how to purchase paid user licens
 > [!NOTE]
 >The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
-To learn about license types, see [Licensing for Fabric](/power-bi/fundamentals/service-features-license-type).
+To learn about license types, see [Licensing for Fabric and Power BI](/power-bi/fundamentals/service-features-license-type).
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ To purchase Power BI paid licenses in the Microsoft 365 admin center:
 1. In the **View by category** section, search for **Power BI**.
 1. Scroll to the license you want to purchase, and select **Details**.
 
-    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-m365-purchase.png" alt-text="Screenshot showing the Power BI options for Purchase services." lightbox="media/service-admin-purchasing-power-bi-pro/power-bi-m365-purchase.png":::
+    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-m365-purchase.png" alt-text="Screenshot showing the Power BI options for Purchase services.":::
 
 1. Select the number of licenses you need and whether you want to be charged monthly or yearly.
 1. Select **Buy**.
