@@ -49,8 +49,8 @@ To remove a parameter, click on more options **(...)** and Remove parameter in t
  ## Considerations and Limitations
 
 1. You can't define default or hidden parameters for paginated reports create on the Power BI service.
-2. Cascading parameters are not supported.
-3. Once a field has been promoted to a paramter, you can't use it as a filter.  
+2. Cascading parameters aren't supported.
+3. After a field has been promoted to a parameter, you can't use it as a filter.  
  
 
 
