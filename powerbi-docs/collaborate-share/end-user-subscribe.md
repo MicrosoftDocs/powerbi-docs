@@ -175,7 +175,7 @@ Before Power BI updates the subscription, you're given the opportunity to previe
 1. Save your subscription. 
 
 > [!NOTE]
-> The page that you **Update** is the state of the current page, not that of the entire set of pages 
+> The update is applied to the current page only. Changes you made to other pages in the report are not included. To include changes made to a different page in the report, navigate to that page and apply an update. 
 
 ### Customize subscriptions
 
