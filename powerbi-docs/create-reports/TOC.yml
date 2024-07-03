@@ -596,6 +596,8 @@
         href: ../paginated-reports/web-authoring/get-started-paginated-formatted-table.md
       - name: Create exportable paginated reports
         href: ../paginated-reports/web-authoring/paginated-formatted-table.md
+      - name: Create parameters for paginated reports
+        href: ../paginated-reports/web-authoring/create-parameters.md
       - name: Add filters to paginated reports
         href: ../paginated-reports/web-authoring/filters-paginated-service.md
       - name: View a paginated report
