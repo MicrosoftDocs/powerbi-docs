@@ -18,6 +18,12 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
+## June 2024
+
+Version 15.7.1810.53, released June 27, 2024
+
+- Fixed issue related to reports visible in My workspace.
+
 ## May 2024
 
 Version 15.7.1809.28, released May 20, 2024

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-ms.date: 03/06/2024
+ms.date: 03/07/2024
 ---
 
 # Power BI implementation planning: Tenant-level auditing
@@ -1254,7 +1254,7 @@ Here are some other attributes you might extract and store.
 - **Disabled users:** When a user leaves the organization, usually an administrator disables their account. You can create a process to check whether disabled users are workspace administrators or semantic model owners.
 
 > [!TIP]
-> The Power BI [activity log](../enterprise/service-admin-auditing.md) includes an event that records when a user signs up for a [trial license](../fundamentals/service-self-service-signup-purchase-for-power-bi.md#fabric-licensing-and-capacities). You can combine that event with the user license data (sourced from Microsoft Entra ID) to produce a complete picture.
+> The Power BI [activity log](../enterprise/service-admin-auditing.md) includes an event that records when a user signs up for a [trial license](../fundamentals/service-self-service-signup-purchase-for-power-bi.md#start-a-trial). You can combine that event with the user license data (sourced from Microsoft Entra ID) to produce a complete picture.
 
 ##### Retrieve users and groups data
 
