@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: 
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 07/02/2024
 ms.custom: licensing support
 LocalizationGroup: consumers
 
