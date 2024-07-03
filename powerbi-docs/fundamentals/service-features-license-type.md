@@ -1,6 +1,6 @@
 ---
 title: Power BI service features by license type
-description: "In the Power BI service, users have capabilities that are based on the type of per-user license that they have (free, Pro, PPU) and whether the content they're interacting with is in a Premium capacity workspace."
+description: "In the Power BI service, users have capabilities that are based on their per-user license and where content is stored.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 > [!NOTE]
 > The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
-There are three kinds of Power BI *per-user* licenses: Fabric (Free), Power BI Pro, and Power BI Premium Per User (PPU). Which type of license you need to use Fabric and to use Power BI is determined by where your content is stored, how you plan on interacting with that content, and if that content uses Premium features. The other type of license is a Premium *capacity-based* license. PPU and Pro users with access to a [Power BI Premium, Fabric F64 or greater](/power-bi/enterprise) capacity-based license, can create content in workspaces that are assigned to Premium capacity. PPU and Pro users can then grant colleagues, including free users, access to those Premium workspaces.
+There are three kinds of Power BI *per-user* licenses: Fabric (Free), Power BI Pro, and Power BI Premium Per User (PPU). The type of license you need to use Fabric and to use Power BI is determined by several conditions.  The first condition is where your content is stored. The second condition is how you plan on interacting with that content. And the third condition is whether that content uses Premium features. The other type of license is a Premium *capacity-based* license. PPU and Pro users with access to a [Power BI Premium, Fabric F64 or greater](/power-bi/enterprise) capacity-based license, can create content in workspaces that are assigned to Premium capacity. PPU and Pro users can then grant colleagues, including free users, access to those Premium workspaces.
 
 > [!NOTE]
 > A Premium Per User (PPU) workspace is not the same as a Premium capacity workspace.  
