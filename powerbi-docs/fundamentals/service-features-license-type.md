@@ -1,6 +1,6 @@
 ---
 title: Power BI service features by license type
-description: "In the Power BI service, users have capabilities that are based on their per-user license and where content is stored.
+description: "In the Power BI service, users have capabilities that are based on their per-user license and where content is stored."
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
