@@ -174,6 +174,8 @@ Before Power BI updates the subscription, you're given the opportunity to previe
 1. To update the existing subscription to include your report changes, select **More options** > **Include my changes** > **Update**. **Update** changes the subscription to include the new changes. 
 1. Save your subscription. 
 
+> [!NOTE]
+> The update is applied to the current page only. Changes you made to other pages in the report are not included. To include changes made to a different page in the report, navigate to that page and apply an update. 
 
 ### Customize subscriptions
 

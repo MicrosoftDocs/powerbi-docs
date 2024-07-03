@@ -7,7 +7,7 @@ ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/26/2024
+ms.date: 06/26/2024
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations 
 #customer intent: As a report creator, I want format column and bar charts.
