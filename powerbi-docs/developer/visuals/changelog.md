@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 06/27/2024
+ms.date: 07/03/2024
 ---
 
 # Power BI visuals API changelog
@@ -15,10 +15,12 @@ ms.date: 06/27/2024
 This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
 <!--- ## Coming soon
-
+https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 * Authentication API extensions --->
 
 ## API 5.10.0
+
+**DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
 
 ## API 5.9.0
 
