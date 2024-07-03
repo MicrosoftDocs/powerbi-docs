@@ -325,6 +325,8 @@
     - name: Column charts
       items: 
       - name: Create a column chart
+        href: ../visuals/power-bi-visualization-column-charts.md
+      - name: Format column charts 
         href: ../visuals/power-bi-visualization-column-bar-format.md
       - name: Column chart format settings 
         href: ../visuals/power-bi-visualization-column-charts-format-settings.md
