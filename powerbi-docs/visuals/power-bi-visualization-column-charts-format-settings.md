@@ -58,10 +58,34 @@ The **Type** setting within x-axis options is only available when you choose a s
 
 The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
 
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-maximum.md)]
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-minimum.md)]
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-logarithmic-scale.md)]
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-range-invert-range.md)]
+[!INCLUDE [axis-range-maximum](../includes/core-visuals/axis-range-maximum.md)]
+[!INCLUDE [axis-range-minimum](../includes/core-visuals/axis-range-minimum.md)]
+[!INCLUDE [axis-range-logarithmic-scale](../includes/core-visuals/axis-range-logarithmic-scale.md)]
+[!INCLUDE [xaxis-range-invert-range](../includes/core-visuals/xaxis-range-invert-range.md)]
+
+#### Values
+
+The visibility of x-axis **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown below.
+
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-continuous-axis-display-units](../includes/core-visuals/global-continuous-axis-display-units.md)]
+[!INCLUDE [xaxis-values-value-decimal-places.md](../includes/core-visuals/xaxis-values-value-decimal-places.md)]
+[!INCLUDE [xaxis-values-maximum-height](../includes/core-visuals/xaxis-values-maximum-height.md)]
+[!INCLUDE [xaxis-values-concatenate-labels](../includes/core-visuals/xaxis-values-concatenate-labels.md)]
+
+#### Title
+
+[!INCLUDE [axis-title-title-text](../includes/core-visuals/axis-title-title-text.md)]
+[!INCLUDE [axis-title-style](../includes/core-visuals/axis-title-style.md)]
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+
+#### Layout
+
+The **Layout** setting within x-axis options is only available when you’re working with certain types of data which allow for a categorical axis.
+
+[!INCLUDE [xaxis-layout-minimum-category-width](../includes/core-visuals/xaxis-layout-minimum-category-width.md)]
 
 ## Considerations and technical aspects
 

@@ -10,7 +10,7 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Font
+###### Font
 
 The font is defined by a trio of controls:
 
