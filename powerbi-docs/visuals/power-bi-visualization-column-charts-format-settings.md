@@ -52,16 +52,16 @@ To format and customize your column chart in **Power BI Service**, simply click 
 
 The **Type** setting within x-axis options is only available when you choose a single data field that is either numerical or date/time.
 
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-type-type.md)]
+   [!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-type-type.md)]
 
 #### Range
 
 The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
 
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-maximum.md)]
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-minimum.md)]
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-logarithmic-scale.md)]
-[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-range-invert-range.md)]
+   [!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-maximum.md)]
+   [!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-minimum.md)]
+   [!INCLUDE [xaxis-type-type](../includes/core-visuals/axis-range-logarithmic-scale.md)]
+   [!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-range-invert-range.md)]
 
 ## Considerations and technical aspects
 
