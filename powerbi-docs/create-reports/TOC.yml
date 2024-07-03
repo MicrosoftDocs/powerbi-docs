@@ -320,8 +320,14 @@
       href: service-reports-visual-interactions.md
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-    - name: Format column and bar charts
-      href: ../visuals/power-bi-visualization-column-bar-format.md
+    - name: Column and bar charts
+      items: 
+      - name: Create a column chart
+        href: ../visuals/power-bi-visualization-column-charts.md
+      - name: Format column and bar charts 
+        href: ../visuals/power-bi-visualization-column-bar-format.md
+      - name: Column chart format settings 
+        href: ../visuals/power-bi-visualization-column-charts-format-settings.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Create card visuals with big number tiles

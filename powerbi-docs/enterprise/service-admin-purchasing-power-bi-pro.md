@@ -36,7 +36,7 @@ To purchase Power BI paid licenses in the Microsoft 365 admin center:
 1. In the **View by category** section, search for **Power BI**.
 1. Scroll to the license you want to purchase, and select **Details**.
 
-    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-m365-purchase.png" alt-text="Screenshot showing the Power BI options for Purchase services.":::
+    :::image type="content" source="media/service-admin-purchasing-power-bi-pro/power-bi-m365-purchases.png" alt-text="Screenshot showing the Power BI options for Purchase services.":::
 
 1. Select the number of licenses you need and whether you want to be charged monthly or yearly.
 1. Select **Buy**.
