@@ -32,8 +32,6 @@ There are several ways to begin using the Power BI service and Fabric.
 
 - If your [administrator already purchased a subscription and assigned you a license](../enterprise/service-admin-manage-licenses.md). Check for a license by typing app.powerbi.com into your browser.
 
-- If you're not ready to buy, start with a [trial license](service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial).
-
 - If you're signing up as an individual and not an organization, [use self-service to try or buy](service-self-service-signup-purchase-for-power-bi.md) the Power BI service or Fabric.
 
 ## Power BI service licenses

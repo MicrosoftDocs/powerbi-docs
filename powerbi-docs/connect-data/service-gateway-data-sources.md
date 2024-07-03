@@ -1,13 +1,13 @@
 ---
 title: "Add or remove a gateway data source"
 description: Learn how to add data sources to an on-premises gateway in Power BI.
-author: arthiriyer
-ms.author: arthii
+author: miquelladeboer
+ms.author: mideboer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/21/2022
+ms.date: 06/28/2024
 ms.custom: ''
 LocalizationGroup: Gateways
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 
 Power BI supports many [on-premises data sources](power-bi-data-sources.md), and each source has its own requirements. You can use a gateway for a single data source or multiple data sources. For this example, you learn how to add SQL Server as a data source. The steps are similar for other data sources.
 
-You can also do most data sources management operations by using APIs. For more information, see [REST APIs (Gateways)](/rest/api/power-bi/gateways).
+You can also do most data source management operations by using APIs. For more information, see [REST APIs (Gateways)](/rest/api/power-bi/gateways).
 
 If you don't have a gateway installed, [install an on-premises data gateway](/data-integration/gateway/service-gateway-install) to get started.
 
@@ -44,20 +44,16 @@ If you don't have a gateway installed, [install an on-premises data gateway](/da
    :::image type="content" source="media/service-gateway-data-sources/authentification.png" alt-text="Screenshot of how to fill out authentication settings.":::
 
    If you selected **OAuth2** authentication method:
-   - Any query that runs longer than the OAuth token expiration policy may fail.
+   - Any query that runs longer than the OAuth token expiration policy might fail.
    - Cross-tenant Microsoft Entra accounts aren't supported.
    
    If you selected **Windows** authentication method, make sure that account has access on the machine. If you're not sure, make sure to add *NT-AUTHORITY\\Authenticated Users (S-1-5-11)* to the local machine **Users** group.
 
-6. Optionally, under **Single sign-on**, you can configure [single sign-on (SSO)](service-gateway-sso-overview.md) for your data source. 
-
-    :::image type="content" source="media/service-gateway-data-sources/single-sign-on.png" alt-text="Screenshot of Single sign-on settings for data sources.":::
-
-   Depending on your organization settings, for DirectQuery-based reports, you can configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Microsoft Entra ID for DirectQuery queries**. You can configure **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
+6. Optionally, under **Single sign-on**, you can configure [single sign-on (SSO)](service-gateway-sso-overview.md) for your data source. Depending on your organization settings, for DirectQuery-based reports, you can configure **Use SSO via Kerberos for DirectQuery queries**,  **Use SSO via Kerberos for DirectQuery And Import queries** or **Use SSO via Microsoft Entra ID for DirectQuery queries**. You can configure **Use SSO via Kerberos for DirectQuery And Import queries** for refresh-based reports.
 
    If you use **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery-based report, the report uses the credentials of the user that signs in to the Power BI service. A refresh-based report uses the credentials that you enter in the **Username** and **Password** fields and the **Authentication** method you choose.
 
-   When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, the report uses the user that's mapped to the Microsoft Entra user that signs in to the Power BI service. A refresh-based report uses the dataset owner's security context.
+   When you use **Use SSO via Kerberos for DirectQuery And Import queries**, you don't need to provide any credentials. If this data source is used for DirectQuery-based reports, the report uses the user mapped to the Microsoft Entra user that signs in to the Power BI service. A refresh-based report uses the dataset owner's security context.
 
    For more information about **Use SSO via Kerberos for DirectQuery queries** and **Use SSO via Kerberos for DirectQuery And Import queries**, see [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md).
 
@@ -85,9 +81,9 @@ You can now use this data source to include data from SQL Server in your Power B
 
 ## Remove a data source
 
-You can remove a data source if you no longer use it. If you remove a data source, any dashboards and reports that rely on that data source no longer work.
+You can remove a data source if you no longer use it. If you remove a data source, any dashboards and reports that rely on that data source stop working.
 
-To remove a data source, select the data source from the **Data (preview)** screen in **Manage connections and gateways**, and then select **Remove** from the top ribbon. 
+To remove a data source, select the data source from the **Connections** screen in **Manage connections and gateways**, and then select **Remove**.
 
 :::image type="content" source="media/service-gateway-data-sources/data-source-remove.png" alt-text="Screenshot of how to remove a data source.":::
 
@@ -97,7 +93,7 @@ After you create the data source, it's available to use with DirectQuery connect
 
 The link between your dataset and the data source in the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name in Power BI Desktop, you must use the IP address for the data source in the gateway configuration. If you use `SERVER\INSTANCE` in Power BI Desktop, you must use the same format in the data source you configure for the gateway.
 
-If you're listed in the **Users** tab of the data source configured in the gateway, and the server and database name match, you see the gateway listed as **Running** under **Gateway connections** in the **Settings** for your data source. You can select **Scheduled refresh** to set up scheduled refresh for the data source.
+If your account is listed in the **Users** tab of the data source configured in the gateway, and the server and database name match, you see the gateway listed as **Running** under **Gateway connections** in the **Settings** for your data source. You can select **Scheduled refresh** to set up scheduled refresh for the data source.
 
 :::image type="content" source="media/service-gateway-data-sources/gateway-connection.png" alt-text="Screenshot of how to create gateway connection.":::
 
@@ -132,7 +128,7 @@ On the **Manage Users** tab for the data source, you can remove users and securi
 
 ## Store encrypted credentials in the cloud
 
-When you add a data source to the gateway, you must provide credentials for that data source. All queries to the data source run by using these credentials. The credentials are encrypted securely with symmetric encryption, so that they can't be decrypted in the cloud. The credentials are sent to the machine that runs the on-premises gateway, where they're decrypted when the data sources are accessed.
+When you add a data source to the gateway, you must provide credentials for that data source. All queries to the data source run by using these credentials. The credentials are encrypted securely with symmetric encryption, so that they can't be decrypted in the cloud. The credentials are sent to the machine that runs the on-premises gateway. This machine decrypts the credentials when the data sources are accessed.
 
 ## List of available data source types
 

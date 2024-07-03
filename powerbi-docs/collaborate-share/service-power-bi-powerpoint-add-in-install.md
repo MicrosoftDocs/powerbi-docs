@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 04/30/2024
+ms.date: 07/01/2024
 ---
 
 # Add live Power BI data to PowerPoint
@@ -48,20 +48,20 @@ Add the report or visual to a new PowerPoint presentation with the following met
 1. Choose **Open in PowerPoint**.
 1. In the **Embed live data in PowerPoint** dialog that appears, choose **Open in PowerPoint**. Then a new PowerPoint presentation will open with the visual already loaded into the add-in.
 
-:::image type="content" source="media/service-power-bi-powerpoint-add-in-install/copy-link-dialog.png" alt-text="Screenshot showing the embed live data in PowerPoint dialog window."::: 
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/copy-link-dialog.png" alt-text="Screenshot showing the embed live data in PowerPoint dialog window."::: 
 
 ### Export a report to add live data to a new presentation
 1. Select **Export**.
 1. Choose **PowerPoint**.
-1. Then select **Embed live data**.
+1. In the **Export to PowerPoint** dialog that appears, choose **Embed live data** from the dropdown menu.
 
-    ![Screenshot of Power BI report embed live data option.](media/service-power-bi-powerpoint-add-in-install/embed-live-data-option.png)
+    :::image type="content" source="media/service-power-bi-powerpoint-add-in-install/embed-live-data-option.png" alt-text="Screenshot of Power BI report embed live data option.":::
 
-1. Check the **Embed report with the data filters you selected** box if you want to export the current state,
+1. Check the **Embed report with the data filters you selected** box if you want to export the current state.
 1. Select **Open in PowerPoint**.
 
 > [!NOTE]
-> Although this option is located in the Export menu and is labeled "Embed live data", no data actually becomes part of the PowerPoint file. The data remains secure in Power BI.
+> Although this option is located in the Export menu and leads to the "Embed live data", no data actually becomes part of the PowerPoint file. The data remains secure in Power BI.
 
 ## Add live Power BI data to an existing presentation
 

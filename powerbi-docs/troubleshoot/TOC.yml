@@ -79,6 +79,8 @@
     - name: Account and license
       expanded: false
       items:
+      - name: Troubleshoot getting a license
+        href: ../support/service-troubleshoot-signup.md   
       - name: Troubleshoot sign-in issues
         href: ../support/power-bi-cannot-sign-in.md   
       - name: Troubleshoot sign-in for Power BI Desktop
