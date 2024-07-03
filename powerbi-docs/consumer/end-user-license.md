@@ -40,6 +40,8 @@ It's possible to have more than one license at the same time. The service always
 > [!NOTE]
 >* A paid license, either [Power BI Pro](../enterprise/service-admin-purchasing-power-bi-pro.md) or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml), is required for publishing content to a Power BI app workspace, editing content, and for sharing content with others.
 
+For a more detailed overview of licenses and subscriptions, see [License types for Power BI and Fabric.](../fundamentals/service-features-license-type.md)
+
 ## Power BI Premium capacity subscription
 
 Premium is an organizational subscription that provides a way to store content in a virtual container called a Power BI Premium capacity. With Premium capacity, anyone granted permissions, whether they're inside or outside your organization, can access content stored in this virtual container. This access includes users with free licenses.
