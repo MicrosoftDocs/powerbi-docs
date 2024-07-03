@@ -320,7 +320,7 @@
       href: service-reports-visual-interactions.md
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-    - name: Column charts
+    - name: Column and bar charts
       items: 
       - name: Create a column chart
         href: ../visuals/power-bi-visualization-column-charts.md
