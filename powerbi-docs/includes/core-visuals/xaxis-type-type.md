@@ -10,6 +10,11 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
+<style>
+  h6 {
+    margin-bottom: 0;
+  }
+</style>
    ###### Type
    This menu presents two distinct options for setting the axis type:
    - **Continuous:** This option arranges data values along the axis as evenly spaced discrete entries, without considering the actual distance between individual data points.

@@ -12,7 +12,7 @@ ms.date: 07/03/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about column charts so that I can effectively and more easily build column chart visuals in Power BI Desktop and Power BI Service.
 ---
-# Create a column chart in Power BI
+# Create a column chart
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -102,6 +102,12 @@ For this example, let’s create a column chart starting from the **Visualizatio
 You've now successfully created a column chart with Power BI Service. Take some time to familiarize yourself with all the available **Format settings for column charts** in the **Related content** section below.
 
 ---
+
+## Considerations and technical aspects
+
+### Considerations
+
+### Technical aspects
 
 ## Related content
 
