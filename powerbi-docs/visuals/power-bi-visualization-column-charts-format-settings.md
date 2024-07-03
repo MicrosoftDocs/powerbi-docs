@@ -67,11 +67,8 @@ The availability of **Range** settings depends on configuring the x-axis **Type*
 
 ### Considerations
 
-#lorem(20)
 
 ### Technical aspects
-
-#lorem(20)
 
 
 ## Related content
