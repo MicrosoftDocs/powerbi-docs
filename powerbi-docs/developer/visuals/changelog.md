@@ -20,7 +20,7 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 
 ## API 5.10.0
 
-**DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
+* **DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
 
 ## API 5.9.0
 
