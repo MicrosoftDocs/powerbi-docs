@@ -10,10 +10,9 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Font
+###### Font
 
-The font is defined by a trio of controls:
-
-**- Font family:** Select from pre-set font families.
-**- Font size:** Adjust text size within an 8 to 60 point range.
-**- Font style:** With normal being the default, you can also choose  bold, italic, or underlined.
+The font’s appearance is determined by three distinct controls:
+- **Font family:** Select from preset font families.
+- **Font size:** Font size can be adjusted within a range of 8 to 60 points.
+- **Font style:** With normal being the default, you can also choose  bold, italic, or underlined.

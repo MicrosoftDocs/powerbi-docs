@@ -324,10 +324,10 @@
       items: 
       - name: Create a column chart
         href: ../visuals/power-bi-visualization-column-charts.md
+      - name: Column charts format settings   
+        href: ../visuals/power-bi-visualization-column-charts-format-settings.md
       - name: Format column and bar charts 
         href: ../visuals/power-bi-visualization-column-bar-format.md
-      - name: Column chart format settings 
-        href: ../visuals/power-bi-visualization-column-charts-format-settings.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Create card visuals with big number tiles
