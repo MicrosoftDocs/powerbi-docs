@@ -23,9 +23,19 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 * **DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
 * Supports Desktop June 2024
 
+## API v5.9.1
+
+* [`acquireAADTokenService`](./authentication-api.md): Enhanced to support the following clouds.
+  * Commercial Cloud
+  * China Cloud
+  * US Government Community Cloud
+  * US Government Community Cloud High
+  * US Department of Defense Cloud
+
 ## API v5.9.0
 
 * [**Hierarchial identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that uses Matrix DataView Mapping to filter data based on data points that use a hierarchal structure. This is useful for custom visuals that leverage group-on keys semantic models and want to filter hierarchies based on data points.
+* [`acquireAADTokenService`](./authentication-api.md): Extended with additional properties
 * Supports Desktop March 2024
 
 ## API v5.8.0
