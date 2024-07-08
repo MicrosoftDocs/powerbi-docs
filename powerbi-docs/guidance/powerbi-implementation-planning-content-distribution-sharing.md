@@ -30,14 +30,14 @@ Once you create content like semantic models or reports, you'll usually want to 
 > - _Content sharing_ involves giving others access to an item as part of the day-to-day activities of a content creator. For example, you can provide direct access to a report with someone else.
 > - _Content distribution_ involves sharing content at scale for a wider audience of content consumers. For example, you can distribute reports to an app audience by using an app.
 
-This article guides you to determine your approach to distribute content to both _content consumers_ and other _content creators_.
+This article guides you to determine your approach to distribute content to both _content consumers_ and other _content creators_:
 
 - **Content consumers**: Users who view content but don't create or share new items. These users typically have Read permission for reports, but more advanced content consumers might also request [Build permission](../connect-data/service-datasets-build-permissions.md) to perform ad-hoc analysis on data items in [personal BI](powerbi-implementation-planning-usage-scenario-personal-bi.md) usage scenarios.
 - **Content creators**: Enterprise or self-service users who create and distribute content to consumers. These creators often use existing items created by other users in the organization to make new content, for example, in [managed](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) or [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenarios.
 
 ## Set roles and manage permissions
 
-You share content with consumers or creators by granting them access to that content. To grant access to users and groups, you set their roles and manage their permissions.
+You share content with consumers or creators by granting them access to that content. To grant access to users and groups, you set their roles and manage their permissions:
 
 - _Roles_ apply certain permissions to all content within a particular scope. For example, the Viewer workspace role applies read-only permission to all content within the workspace.
 - _Permissions_ define what an individual can do with that content. For example, applying Build permission to a semantic model allows a user to connect to and create reports based on the semantic model.
@@ -46,7 +46,7 @@ The following diagram shows where you can set roles and permissions in Power BI 
 
 :::image type="content" source="media/powerbi-implementation-planning-content-distribution-sharing/content-permissions-control.svg" alt-text="Diagram shows where you can set roles or permissions. Each element of the diagram is described in the following table." border="false":::
 
-The diagram depicts the following concepts and processes.
+The diagram depicts the following concepts and processes:
 
 | Item | Description |
 | :-: | --- |
@@ -58,7 +58,7 @@ The diagram depicts the following concepts and processes.
 
 ### Set roles for workspaces or apps
 
-As depicted in the previous diagram, you can share a collection of content by assigning people to roles in [workspaces](/fabric/get-started/workspaces) or [apps](../collaborate-share/service-create-distribute-apps.md). A workspace is a collaborative location to publish and organize content, while an app is a selection of reporting content that you organize and distribute to audiences.
+As depicted in the previous diagram, you can share a collection of content by assigning people to roles in [workspaces](/fabric/get-started/workspaces) or [apps](../collaborate-share/service-create-distribute-apps.md). A workspace is a collaborative location to publish and organize content. An app is a selection of reporting content that you organize and distribute to audiences.
 
 - _[Workspace roles](/fabric/get-started/roles-workspaces)_ control whether a user can manage workspaces, content, and connected apps (Admin, Member, or Contributor), or only view content in that workspace (Viewer).
 - _[App audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences)_ control which content is visible in an app to a user or group. You can also publish an app to your [entire organization](../collaborate-share/service-create-distribute-apps.md#publish-the-app-to-your-entire-organization).
@@ -67,7 +67,7 @@ Fabric administrators have access to all workspaces and workspace content. Also,
 
 #### Other supporting roles for content distribution or sharing
 
-There are other roles that don't directly affect how you share content, but which you can use to support content distribution and sharing in certain circumstances.
+There are other roles that don't directly affect how you share content, but which you can use to support content distribution and sharing in certain circumstances:
 
 - _[Data source connection roles](powerbi-implementation-planning-data-gateways.md#data-source-connection-roles)_ control whether a user can use a data source connection of a [data gateway](powerbi-implementation-planning-data-gateways.md). If a DirectQuery semantic model uses [DirectQuery with single sign-on (SSO)](../connect-data/service-gateway-sso-overview.md), then you must add a user or group as a _User_ role so that they can use the semantic model or view reports. You might also decide to assign creators to a [data gateway role](powerbi-implementation-planning-data-gateways.md#gateway-roles) so that they can add and manage their own data source connections.
 - _[Data security roles](/fabric/security/service-admin-row-level-security)_ control what data people can access in the semantic model. If a semantic model has a data security role, then you must add a user or group to that role before you share the model or any connected reports and dashboards.
@@ -84,7 +84,7 @@ When you share content via workspace roles or app audiences, you apply certain _
 
 You can also share content by managing permissions to individual content items. For example, if you manage permissions of a semantic model, you can grant someone Build permission to connect to and create their own content based on that semantic model. When you share a content item via direct access, you're granting certain permissions to that item for a user or group.
 
-You can assign users to the following permissions for Power BI or Fabric items.
+You can assign users to the following permissions for Power BI or Fabric items:
 
 - **Read-only (view) permission**: Let someone see the content without modifying it. Some items, like [lakehouses](/fabric/data-engineering/lakehouse-sharing#sharing-and-permissions), allow more granular control of how users can view the content (like [ReadData or ReadAll permissions](/fabric/data-engineering/lakehouse-sharing#sharing-and-permissions)). Other items, like [semantic models](../connect-data/service-datasets-share.md), allow users to see [information about the item](../connect-data/service-dataset-details-page.md) but not view its contents (like the data).
 - **Reshare permission**: Let someone share the content with others. If someone has both Reshare and Build permissions, they can also grant Build permission to someone else.
@@ -94,7 +94,7 @@ You can assign users to the following permissions for Power BI or Fabric items.
 > [!WARNING]
 > Don't confuse Build permission with Write permission. For example, Build permission _does_ respect any data security (like row-level security) that's enforced for an item, while Write permission _does not_ (because a user can set and change those security rules).
 
-Content distribution and sharing overlaps with many other important areas. The following subjects are covered in the Power BI implementation planning series. Refer to the articles in this series as you plan how you'll share and distribute content.
+Content distribution and sharing overlaps with many other important areas. The following subjects are covered in the Power BI implementation planning series. Refer to the articles in this series as you plan how you'll share and distribute content:
 
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md): How you plan to set up and use workspaces affects whether you'll share content from a workspace or not. [Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md) is important for your content distribution strategy, such as how you'll set up and manage [workspace access](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-access).
 - [Data gateways](powerbi-implementation-planning-data-gateways.md): When you distribute content to other users and that content relies on on-premises or VNet data gateways, you might also need to [manage gateway access](powerbi-implementation-planning-data-gateways.md#provision-gateway-access). Ensure that you manage access to both [the gateway](powerbi-implementation-planning-data-gateways.md#gateway-roles) and its [data source connections](powerbi-implementation-planning-data-gateways.md#data-source-connection-roles).
@@ -115,7 +115,7 @@ Typically, consumers who request Build permission perform [personal BI](powerbi-
 
 Anticipate early on how you'll [support and educate these users](fabric-adoption-roadmap-mentoring-and-user-enablement.md) not only on how to create content, but also on how they can appropriately share it.
 
-Content consumers can be either internal or external to the organization, depending on whether they have a Microsoft Entra identity in the same organization as where you publish the content.
+Content consumers can be either internal or external to the organization, depending on whether they have a Microsoft Entra identity in the same organization as where you publish the content:
 
 - **Internal users**: Users who belong to the same organization as the content that they consume.
 - **External users**: Users who belong to a different organization as the content that they consume. These users can belong to an affiliate or subsidiary organization, despite sharing the same parent organization. They can also be temporary collaborators (like consultants) or customers.
@@ -126,7 +126,7 @@ This diagram depicts an overview of many possible approaches. The rest of this a
 
 :::image type="content" source="media/powerbi-implementation-planning-content-distribution-sharing/share-consumers.svg" alt-text="Diagram shows approaches to distribute or share content to consumers. Each element of the diagram is described in the following table." border="false":::
 
-The diagram depicts the following concepts and processes.
+The diagram depicts the following concepts and processes:
 
 | Item | Description |
 | :-: | --- |
@@ -623,7 +623,7 @@ Consider distributing content to external guest users when:
 > [!IMPORTANT]
 > Ensure that you test whether Microsoft Entra B2B is the best approach before you decide to use it. We recommend that you conduct a small trial with several creators before you commit to this content distribution strategy. During this trial, ensure that the creators perform all their necessary activities to discover any possible caveats or limitations that might prevent them from doing what they need to do.
 
-External content consumers can use the OneLake data hub to [view and access semantic models in their own tenant that have been shared with them](../collaborate-share/service-dataset-external-org-share-view.md). This concept is known as _in-place semantic model sharing_. It requires that Fabric administrators enable the [**Guest users can work with shared semantic models in their own tenants**](../collaborate-share/service-dataset-external-org-share-admin.md#guest-users-can-work-with-shared-semantic-models-in-their-own-tenants) tenant setting.
+External content consumers can use the OneLake data hub to [view and access semantic models in their own tenant that have been shared with them](../collaborate-share/service-dataset-external-org-share-view.md). This concept is known as _in-place semantic model sharing_. It requires that Fabric administrators enable the [Guest users can work with shared semantic models in their own tenants](../collaborate-share/service-dataset-external-org-share-admin.md#guest-users-can-work-with-shared-semantic-models-in-their-own-tenants) tenant setting.
 
 External content consumers can connect to these semantic models to create [composite semantic models](../collaborate-share/service-dataset-external-org-share-view.md#access-shared-semantic-models) and [reports](../collaborate-share/service-dataset-external-org-share-view.md#publish-reports-made-from-shared-semantic-models) that they can publish to workspaces in their own tenant.
 
@@ -631,7 +631,7 @@ External content consumers can connect to these semantic models to create [compo
 
 ### Step 4: Identify what creators need to access
 
-You can grant access to creators at four different levels, depending on what they need to do.
+You can grant access to creators at four different levels, depending on what they need to do:
 
 - **Deployment pipeline access:** Provides creators access to a [deployment pipeline](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) and lets them trigger deployments to promote content between stages. Creators require access to the underlying workspaces to use deployment pipelines.
 - **Workspace access:** Provides creators access to all the content in a workspace.
