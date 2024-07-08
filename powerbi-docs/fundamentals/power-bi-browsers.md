@@ -33,7 +33,7 @@ The Calibri and Cambria fonts are only installed on Macs that have Microsoft Off
 
 ## Limitations and considerations
 
-- If you're creating reports viewed on Mac computers, select fonts that display properly on Macs. The following links provide information about which fonts are available on Macs. Microsoft doesn't support these links. We are providing them only for reference and further reading.
+- If you're creating reports viewed on Mac computers, select fonts that display properly on Macs. The following links provide information about which fonts are available on Macs. Microsoft doesn't support these links. We're providing them only for reference and further reading.
     - [Review the list of typefaces included with macOS.](https://wikipedia.org/wiki/List_of_typefaces_included_with_macOS)
     - [Find Calibri and Cambria for Macs.](https://apple.stackexchange.com/questions/128091/where-can-i-find-default-microsoft-fonts-calibri-cambria)
     - [Fix missing Calibri, Cambria, and Segoe UI fonts on a Mac.](https://ben.lobaugh.net/blog/204750/how-to-fix-missing-calibri-and-cambria-fonts-on-mac)
