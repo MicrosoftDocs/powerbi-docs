@@ -29,7 +29,7 @@ Power BI and Fabric work with these browsers on all platforms where they're avai
 
 Power BI and Fabric use the Segoe UI font for text as its default, and the Din font for numbers, and other fonts when creating reports, dashboards, and other items. These fonts might not be available on non-Windows computers such as Macs. As a result the font, alignment of items, and visuals for the same report look different when viewed on a Windows computer versus a Mac.
 
-The Calibri and Cambria fonts are only installed on Macs that have Microsoft Office installed. Calibiri and Cambria aren't included in the default set of fonts on Macs.
+The Calibri and Cambria fonts are only installed on Macs that have Microsoft Office installed. Calibri and Cambria aren't included in the default set of fonts on Macs.
 
 ## Limitations and considerations
 
