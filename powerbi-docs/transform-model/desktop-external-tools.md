@@ -33,7 +33,7 @@ Before installing external tools, keep the following notes in mind:
 
 - External tools aren't supported in Power BI Desktop for Power BI Report Server.
 
-- External tools are provided by external, third-party contributors. Microsoft doesn't provide support or documentation for external tools.
+- External tools are provided by external, third-party contributors. Except for the underlying public Microsoft APIs, Microsoft doesn't provide support or documentation for external tools. Microsoft does provide support if the issue can be reproduced with Microsoft tools, such as SQL Server Management Studio (SSMS), or sample code that uses the public Microsoft APIs.
 
 ## Featured open-source tools
 

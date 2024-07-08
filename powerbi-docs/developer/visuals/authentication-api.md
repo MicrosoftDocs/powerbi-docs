@@ -7,7 +7,7 @@ ms.reviewer: sranins, david
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 05/21/2024
+ms.date: 06/26/2024
 #customer intent: To understand how to use the Authentication API in Power BI custom visuals.
 ---
 
@@ -108,16 +108,16 @@ The following sample code demonstrates how to acquire a Microsoft Entra ID token
 
  ```typescript
     // Step 1: Check the status of AAD token acquisition 
-    const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenStatus(); 
+    const acquireTokenStatus = await this.acquireAADTokenService.acquireAADTokenstatus(); 
  
     // Step 2: Verify if acquiring the token is allowed 
     if (acquireTokenStatus === PrivilegeStatus.Allowed) { 
  
-    // Step 3: Acquire the Microsoft Entra ID token
-    const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
+        // Step 3: Acquire the Microsoft Entra ID token
+        const acquireAADTokenResult: AcquireAADTokenResult = await this.acquireAADTokenService.acquireAADToken(); 
  
-    // Step 4: Confirm successful acquisition of the access token
-    if (acquireAADTokenResult.accessToken) { 
+        // Step 4: Confirm successful acquisition of the access token
+        if (acquireAADTokenResult.accessToken) { 
  
             // Step 5: Call your backend API with the obtained token 
         } 
