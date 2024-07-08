@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 07/01/2024
+ms.date: 07/08/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -106,6 +106,7 @@ There are a few other factors to consider at this time when using this capabilit
 - The only supported language is English.
 - This capability doesn't apply filters or slicers currently affecting visuals on the report page to the answers it generates inside the Copilot pane.
 - The requirement to enable Q&A is unique to this Copilot capability. You can still use Copilot for other tasks, like [asking questions about content present in your report.](copilot-pane-summarize-content.md#answer-questions-about-your-report-content-in-the-copilot-pane)
+- For additional limitations on data sources, see [Limitations of Power BI Q&A](../natural-language/q-and-a-limitations.md).
 
 ## Next steps
 
