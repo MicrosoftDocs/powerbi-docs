@@ -141,7 +141,7 @@ For any paginated report you author in the Power BI service, you can insert text
 
 1. To move a selected text box, select and drag the move indicator on the text box outline.
 
-    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-move.png" alt-text="Moving a text box.":::
+    :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-textbox-move.png" alt-text="Screenshot of moving a text box.":::
 
 
 1. To resize a text box, select the text box itself and then select and drag any sizing handle. Alternatively, press the SHIFT + arrow keys to resize horizontally or vertically.
