@@ -39,7 +39,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
    > The capacity that the app builder workspace is assigned to does not determine the capacity assignment of workspaces where app installers install the app. This means that an app developed in a premium capacity workspace will not necessarily be installed on a premium capacity workspace. Therefore it is **not** recommended to use premium capacity for the builder workspace, as installer workspaces might not be premium capacity, and functionality that relies on premium capacity won't work unless the installer manually reassigns the installed workspace to premium capacity.
 
    >[!Important]
-   > Enabling the feature switch to develop template apps in the workspace settings, is an irreversible operation.  
+   > The **Develop a template app** option can only be selected when creating the app builder workspace. Once a workspace has been defined as an app builder workspace, the app builder functionality can never be removed from the workspace.
 
 1. When you're done creating the workspace, select **Save**.
 
