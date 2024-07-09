@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/12/2024
+ms.date: 07/10/2024
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,9 +16,9 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## June 2024 Update (2.130.754.0)
+## July 2024 Update (2.131.754.0)
 
-June's updates are a sunny collection of capabilities that let you chart a course to the best business intelligence insights using Power BI Desktop. 
+July lets you declare independence from waiting on others to create compelling reports and visuals, enabling you to launch your own spectacular display of sizzling analytics and insights. 
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -45,26 +45,40 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
+
 ### Reporting
-* Visual calculations update (preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491978)  [[video]](https://youtu.be/fbw09nHOm-c?t=27)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
-* Power BI Home in Power BI Desktop now generally available  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491979)  [[video]](https://youtu.be/fbw09nHOm-c?t=80)  [[article]](../create-reports/desktop-home.md) 
-
-
-
+* Customize your reference layers in the Azure Maps visual [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27650-_Toc1123183795)  [[video]](https://youtu.be/vnfDAkI9HgI?t=55)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 
-
 ### Modeling
-* Download large semantic models  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491981)  [[video]](https://youtu.be/fbw09nHOm-c?t=105)  [[article]](../create-reports/service-export-to-pbix.md)
-* New INFO functions [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491982)  [[video]](https://youtu.be/fbw09nHOm-c?t=123)  
+* General availability of enhanced row-level security editor in Power BI Desktop   [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27650-_Toc1740603259)  [[video]](https://youtu.be/vnfDAkI9HgI?t=287)  [[article]](/fabric/security/service-admin-row-level-security)
+* DAX Query View available in live connect [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27650-_Toc1615654178)  [[video]](https://youtu.be/vnfDAkI9HgI?t=329)  [[article]](../transform-model/dax-query-view.md)
+* Add or update multiple measures in DAX Query View  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27650-_Toc1849428006)  [[video]](https://youtu.be/vnfDAkI9HgI?t=530)  
+
+
+### Data connectivity
+* Certified connector updates   [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27650-27650_Toc170826173)  [[article]](../create-reports/service-export-to-pbix.md)
+
 
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491988)  [[video]](https://youtu.be/fbw09nHOm-c?t=625)  
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27650-_Toc1811699248)  [[video]](https://youtu.be/vnfDAkI9HgI?t=799)  
 
+
+
+
+# [Power BI service](#tab/powerbi-service)
+
+The following updates are new to the Power BI service this month:
+
+
+* Storytelling in PowerPoint - new export to PowerPoint dialog [[video]](https://youtu.be/1wmrtV2f-JQ?t=752)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-april-2024-feature-summary/#post-26731-_Toc1315300017)  [[article]](../collaborate-share/service-power-bi-powerpoint-add-in-about.md)
+
+
+---
 
 
 
@@ -76,7 +90,7 @@ The following video describes many of these updates. You can also watch this vid
 
 
 
-> [!VIDEO https://www.youtube.com/embed/fbw09nHOm-c]
+> [!VIDEO https://www.youtube.com/embed/vnfDAkI9HgI]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
