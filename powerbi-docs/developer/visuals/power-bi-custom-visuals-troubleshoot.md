@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 12/21/2022
+ms.date: 12/21/2023
 ---
 
 # Troubleshoot your Power BI developer environment setup
