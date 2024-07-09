@@ -1,5 +1,5 @@
 ---
-title: Create a dynamic subscription for a paginated report (Preview)
+title: Create a dynamic subscription for a paginated report 
 description: Learn how to create per-recipient subscriptions for paginated reports based on parameters that you select.
 author: mihart
 ms.author: mihart
@@ -13,7 +13,7 @@ ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
 
-# Dynamic per recipient subscriptions for paginated reports (Preview)
+# Dynamic per recipient subscriptions for paginated reports 
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -23,11 +23,6 @@ To learn about dynamic subscriptions for Power BI reports, see [Dynamic per reci
 The dynamic subscription parameters are stored in a separate Power BI semantic model. The semantic model defines the mapping between recipients and respective parameters. When it’s time to send out the report, the latest data available in your semantic model determines who receives a subscription and with what parameter applied. 
 
 :::image type="content" source="media/dynamic-subscriptions/power-bi-paginated-report.png" alt-text="Screenshot of a paginated report.":::
-
-> [!IMPORTANT]
-> Dynamic subscriptions is currently in PREVIEW.
-> This information relates to a prerelease product that might be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
-
 
 
 ## Prerequisites
@@ -57,7 +52,7 @@ Start with a paginated report that has parameters. You know that the report has 
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-create-subscription.png" alt-text="Screenshot of the Power BI service showing the Subscriptions screen with no subscriptions yet.":::
 
-1. Select **Dynamic per recipient (preview)**.
+1. Select **Dynamic per recipient**.
 
     :::image type="content" source="media/dynamic-subscriptions/power-bi-dynamic-option.png" alt-text="Screenshot of the Power BI service showing the New subscriptions screen and the option for Dynamic per recipient.":::
 
@@ -138,11 +133,10 @@ Another way to review your subscription is to select the arrow in the **Subscrip
 As with other subscriptions, you can edit, delete, turn on, and turn off the subscription. 
 
 ## Considerations and limitations
-- Rendering the report uses some of your capacity. It's classified as a **Background** activity.
 - Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access must be set separately.
 - [Parameter values attempt to map to the *value* and not to the *label*](../paginated-reports/parameters/associate-query-parameter-report-parameter-report-builder.md#associate-a-query-parameter-with-a-report-parameter).  
-- As a Preview feature, it’s not available to customers located in Sovereign Clouds.  
+  
 
 ## Related content
 
