@@ -82,6 +82,11 @@ The following updates are new to Power BI Desktop this month:
 * Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/#post-27479-_Toc168491988)  [[video]](https://youtu.be/fbw09nHOm-c?t=625)  
 
 
+# [Power BI service](#tab/powerbi-service)
+
+No updates for the Power BI service were provided this month.
+
+---
 
 
 For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-june-2024-feature-summary/).
@@ -7069,8 +7074,6 @@ The following features have been added in this update:
 -   Support for opening Recent Files in Start Page and "File -\> Open" menu.
 
 -   Support for Exchange UPN Credentials in the Exchange connector.
-
-In addition to all these new features, we're also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/download/details.aspx?id=45331).
 
 Take a look at the following video for more details:
 
