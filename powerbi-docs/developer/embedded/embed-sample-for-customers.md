@@ -7,10 +7,11 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 05/13/2024
+ms.date: 06/13/2024
+#customer intent: As a developer, I want to learn how to embed Power BI content into my application, so that I can provide my users with interactive reports, dashboards, and tiles.
 ---
 
-# Tutorial: Embed Power BI content using a sample *embed for your customers'* application
+# Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
@@ -275,9 +276,9 @@ For a Microsoft Entra app to be able to access the Power BI content and APIs, a 
 
 To enable your Microsoft Entra app access objects such as reports, dashboards and semantic models in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
 
-1. Sign in to Power BI service.
+1. Sign in to Fabric.
 
-2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
+2. Scroll to the workspace you want to enable access for, and select **Manage access**.
 
     :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power B I workspace.":::
 
