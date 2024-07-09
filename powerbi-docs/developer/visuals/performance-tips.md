@@ -7,7 +7,7 @@ ms.reviewer: sranins, asafmozes
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/15/2023
+ms.date: 05/15/2024
 ms.custom: engagement-fy23
 #customer intent: As a Power BI visual developer, I want to learn how to optimize my custom visual for performance so that it renders quickly and efficiently.
 ---
