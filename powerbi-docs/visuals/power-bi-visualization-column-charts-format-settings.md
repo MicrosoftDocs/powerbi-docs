@@ -87,6 +87,101 @@ The **Layout** setting within x-axis options is only available when you’re wor
 
 [!INCLUDE [xaxis-layout-minimum-category-width](../includes/core-visuals/xaxis-layout-minimum-category-width.md)]
 
+### Y-axis
+
+#### Range
+
+[!INCLUDE [axis-range-maximum](../includes/core-visuals/axis-range-maximum.md)]
+[!INCLUDE [axis-range-minimum](../includes/core-visuals/axis-range-minimum.md)]
+[!INCLUDE [axis-range-logarithmic-scale](../includes/core-visuals/axis-range-logarithmic-scale.md)]
+[!INCLUDE [xaxis-range-invert-range](../includes/core-visuals/xaxis-range-invert-range.md)]
+
+#### Values
+
+The visibility of y-axis **Values** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the Values settings shown below.
+
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [specific-column-yaxis-values-display-units](../includes/core-visuals/specific-column-yaxis-values-display-units.md)]
+[!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]
+[!INCLUDE [yaxis-values-switch-axis-position](../includes/core-visuals/yaxis-values-switch-axis-position.md)]
+
+#### Title
+
+The visibility of y-axis **Title** can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Title settings shown below.
+
+[!INCLUDE [axis-title-title-text](../includes/core-visuals/axis-title-title-text.md)]
+[!INCLUDE [axis-title-style](../includes/core-visuals/axis-title-style.md)]
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+
+### Legend
+
+This setting is accessible when a data field is active in the **Legend** field well within the **Build** pane. The legend's visibility can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Legend settings shown below.
+
+#### Options
+
+[!INCLUDE [legend-options-position](../includes/core-visuals/legend-options-position.md)]
+
+#### Text
+
+[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+
+#### Title
+
+[!INCLUDE [legend-title-title-text](../includes/core-visuals/legend-title-title-text.md)]
+
+### Small multiples
+
+The settings for **Small multiples** become accessible when a data field is active in the small multiple field well within the **Build** pane. However, it’s important to note that small multiples do not function properly when the x-axis and legend share the same data field.
+
+#### Layout
+
+[!INCLUDE [small-multiples-layout-rows](../includes/core-visuals/small-multiples-layout-rows.md)]
+[!INCLUDE [small-multiples-layout-columns](../includes/core-visuals/small-multiples-layout-columns.md)]
+[!INCLUDE [small-multiples-layout-all-padding](../includes/core-visuals/small-multiples-layout-all-padding.md)]
+[!INCLUDE [small-multiples-layout-customize-padding](../includes/core-visuals/small-multiples-layout-customize-padding.md)]
+
+#### Border
+
+[!INCLUDE [small-multiples-border-gridlines](../includes/core-visuals/small-multiples-border-gridlines.md)]
+[!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [border-and-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
+[!INCLUDE [border-and-divider-width](../includes/core-visuals/border-&-divider-width.md)]
+
+#### Background
+
+[!INCLUDE [small-multiples-background-color-palette-fx](../includes/core-visuals/small-multiples-background-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+
+### Gridlines
+
+#### Horizontal
+
+The visibility of **Horizontal gridlines** can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust the setting as shown below.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-line-style](../includes/core-visuals/global-line-style.md)]
+[!INCLUDE [global-dash-array](../includes/core-visuals/global-dash-array.md)]
+[!INCLUDE [global-dash-cap](../includes/core-visuals/global-dash-cap.md)]
+[!INCLUDE [global-scale-by-width](../includes/core-visuals/global-scale-by-width.md)]
+[!INCLUDE [gridlines-horizontal-&-vertical-width](../includes/core-visuals/gridlines-horizontal-&-vertical-width.md)]
+
+#### Vertical
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-line-style](../includes/core-visuals/global-line-style.md)]
+[!INCLUDE [global-dash-array](../includes/core-visuals/global-dash-array.md)]
+[!INCLUDE [global-dash-cap](../includes/core-visuals/global-dash-cap.md)]
+[!INCLUDE [global-scale-by-width](../includes/core-visuals/global-scale-by-width.md)]
+[!INCLUDE [gridlines-horizontal-&-vertical-width](../includes/core-visuals/gridlines-horizontal-&-vertical-width.md)]
+
+
+
 ## Considerations and technical aspects
 
 ### Considerations

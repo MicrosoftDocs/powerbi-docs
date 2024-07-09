@@ -10,7 +10,7 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Dash array
+##### Dash array
 
 The Dash array text input field enables the creation of custom line patterns. Enter a sequence of numbers to define the dash and gap lengths in pixels, using the syntax: dash length, gap length.
 

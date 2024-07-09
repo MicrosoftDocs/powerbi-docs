@@ -10,7 +10,7 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Line style
+##### Line style
 
 The menu provides three selections to customize the line style pattern:
 **- Solid:** A continuous line without breaks.
