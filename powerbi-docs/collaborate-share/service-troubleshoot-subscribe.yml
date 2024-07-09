@@ -155,7 +155,12 @@ sections:
           - The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-more-than-20-pages)).
           - The attachment file is under 25 MB in size.
           - You aren't an owner of the report.
- 
+
+      - question: |
+          The subscription times out after 60 minutes
+         answer: |
+          Subscriptions use the export feature to render the report in the desired format. Export of reports are limited to 60 minutes, the life of the users access token.
+  
       - question: |
           Which Power BI features aren't supported in subscriptions
         answer: |
