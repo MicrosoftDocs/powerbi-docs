@@ -158,8 +158,7 @@ sections:
 
       - question: |
           The subscription times out after 60 minutes
-
-         answer: |
+        answer: |
           Subscriptions use the export feature to render the report in the desired format. Export of reports are limited to 60 minutes, the life of the users access token.
   
       - question: |
