@@ -30,7 +30,7 @@ The exact steps for sign-up vary depending on your organization and what you sel
 
 To complete this quickstart, you need:
 
-- An understanding of the [license and subscription options for Power BI and Microsoft Fabric.](/fabric/enterprise/licenses).
+- An understanding of the [license and subscription options for Power BI and Microsoft Fabric](/fabric/enterprise/licenses).
 - An understanding of [how Power BI and Fabric work together](../enterprise/service-admin-licensing-organization.md).
 - A work or school email address that can be used with Power BI and Fabric. If you don't have a work or school account, [learn about alternate ways to sign up](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md).
 - An email account with an organization with self-service sign-ups and self-service-purchases enabled.
