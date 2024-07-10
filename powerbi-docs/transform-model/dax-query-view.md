@@ -13,7 +13,7 @@ LocalizationGroup: Create reports
 
 # Work with DAX query view
 
-With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries in semantic models.
+With DAX query view in Power BI, you can view and work with Data Analysis Expressions (DAX) queries in semantic models. 
 
 ## DAX queries
 
@@ -24,7 +24,7 @@ DAX queries are similar to SQL queries in that they can show you data you alread
 DAX queries have two main parts:
 
 - An **EVALUATE** statement, which is required. It specifies what and how data is returned in the query.
-- A **DEFINE** statement, which is optional. It allows you to define DAX formulas, such as a measure, to use in the query. Measures can be added to the model using CodeLens when used in DEFINE.
+- A **DEFINE** statement, which is optional. It allows you to define DAX formulas, such as a measure, to use in the query. Measures created or updated using the DAX query DEFINE MEASURE are DAX query scoped measures, running only in the context of the DAX query. DAX query scoped measures can be added to the model using CodeLens update model actions or **Update model with changes** button.
 
 To learn more about how queries are used, see [DAX queries](/dax/dax-queries) in the DAX reference.
 
@@ -82,15 +82,22 @@ Select the **Command palette** ribbon button or use CTRL+ALT+P to open the comma
 
 :::image type="content" source="media/dax-query-view/dax-query-view-command-palette.png" alt-text="Screenshot of the DAX query view command palette.":::
 
-#### Command bar
+### Command bar
 
-The DAX query view command bar includes the most important actions when using DAX query view. The **Run** button executes the DAX query or the selected lines of a query. The status of a query after it runs appears in the lower status bar.
+The DAX query view command bar includes the most important actions when using DAX query view. 
+
+#### Run and Cancel
+The **Run** button executes the DAX query or the selected lines of a query. The status of a query after it runs appears in the lower status bar.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-command-bar.png" alt-text="Screenshot of the DAX query view command bar.":::
 
 When a query is running, the button becomes a **Cancel** button, which can be used to stop a running query.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-cancel.png" alt-text="Screenshot of the DAX query view cancel.":::
+
+#### Update model with changes
+
+The **Update model with changes** button will add or overwrite model measures with the DAX formulas from the DAX query scoped measures. DAX query scoped measures are those in the **DEFINE MEASURE** block. Alternatively, you can choose to add or overwrite model measures individually using the CodeLens text that appears above each one.
 
 ### DAX query editor
 
@@ -118,7 +125,11 @@ Selecting on a measure in an EVALUATE statement in a query without a DEFINE stat
 
 #### Update model measures using CodeLens  
 
-Using DEFINE MEASURE is helpful when creating measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model, or if it doesn't, it can add it.
+Using **DEFINE MEASURE** is helpful when creating measures by first allowing you to create them as DAX query scoped measures. You can edit multiple measures in one window and then run the query to see the results of all or just some of them with specific group by columns. You don't need to create a table visual in Report view and switch back and forth between measure formulas. CodeLens takes this one step further by providing prompts when the measure already exists in the model, or if it doesn't, it can add it.
+
+CodeLens is the clickable text that shows above a DEFINE MEASURE block. For DAX query scoped measures that are not already present in the model, the **Update model: Add new measure** CodeLens appears, which will add the model measure when clicked. For DAX query scoped measures that are already present in the model, and when the DAX scoped measure DAX formula is different, the **Update model: Overwrite measure** CodeLens appears, which will change the model measure to this DAX formula when clicked.
+
+Alternatively, you can add or overwrite multiple measures at once by clicking the **Update model with changes** button in the **Command** bar.
 
 #### Measure update workflow
 
@@ -227,18 +238,27 @@ In **Report view**, go to the **Optimize** ribbon, then select **Performance Ana
 
 :::image type="content" source="media/dax-query-view/dax-query-view-performance-analyzer.png" alt-text="Screenshot of the visual DAX queries in Performance Analyzer feature." lightbox="media/dax-query-view/dax-query-view-performance-analyzer.png":::
 
+## DAX query view and live connect in Power BI Desktop
+
+Power BI Desktop can live connect to a published Power BI semantic model by clicking **Connect** when a semantic model is selected in the OneLake data hub. In the lower right-hand corner of the Report view will show **Live connected to the Power BI semantic model**. DAX query view can be used to write DAX queries when live connected.
+
+### Model measures
+
+When live connected to a published Power BI semantic model, you cannot view or edit model measures. **Quick queries** options are limited to only **Evaluate**. 
+
+### Report measures
+
+When live connected to a published Power BI semantic model, you can create report measures. Report measures can be created using the **New measure** action in **Report** and **Model** view, but as the name suggests, are only available in the current report. Once created, the **Quick queries** in DAX query view shows the option to **Define with references and evaluate**. DAX queries run on the semantic model, so report measures must always be converted to DAX query scoped measures in the DEFINE MEASURE block to run, as they do not exists in the model itself. 
+
+**Update model with changes** button and CodeLens options to **Update model** are not available for report measures.
+
 ## Considerations and limitations
 
-DAX query view is currently in **preview**. Keep the following in mind:
+Considerations to keep in mind:
 
-- Update model: Overwrite measure CodeLens removes comments in the DAX formula.
-- Update model: Overwrite measures CodeLens doesn't show with only formatting changes.
-- Update model: Overwrite measures CodeLens can bring in additional lines when there is a syntax error.
 - 500+ lines in DAX query editor has noticeable lag when typing.
 - Lightbulb quick actions for measures only displays when no DEFINE statement is in the query tab.
-- Format query breaks RANKX function.
-- Command palette shows commands that do not yet work.
-- Query tabs don't yet allow moving.
+- Command palette shows some commands that do not yet work.
 - Result grid doesn't yet show columns and measures with specified format, such as Currency, Whole number with thousands, etc.
 - *Download this file* from Power BI service will not include the DAX queries saved in published semantic model.
 - Setting up the *initial* Git integration *from* the workspace will not include DAX queries saved in published semantic model. Learn more at [Fabric Git integration](/fabric/cicd/git-integration/git-get-started?wt.mc_id=fabric_inproduct_gitintegration&tabs=commit-to-git#connect-a-workspace-to-an-azure-repo).
@@ -253,3 +273,4 @@ And there are some limitations to keep in mind:
 
 - [DAX queries](/dax/dax-queries)  
 - [Work with Modeling view](desktop-modeling-view.md)
+- [Copilot to write and explain DAX queries](/power-bi/transform-model/dax-query-copilot-create)

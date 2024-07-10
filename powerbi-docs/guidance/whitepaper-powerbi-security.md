@@ -327,7 +327,7 @@ Using Private Link with Power BI provides the following benefits:
 
 See [Private links for accessing Power BI](/fabric/security/security-private-links-overview) for additional information.
 
-### VNet connectivity (preview - coming soon)
+### VNet connectivity
 
 While the Private Link integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet.
 

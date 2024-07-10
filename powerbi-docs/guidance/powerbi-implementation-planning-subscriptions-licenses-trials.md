@@ -235,7 +235,7 @@ There are many considerations when planning for self-service purchasing.
 Here are some other factors to consider.
 
 - Is there an existing organization-wide policy in place for [self-service purchases and trials](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)?
-- Does [Fabric](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-start-an-individual-fabric-trial) follow the existing organizational policy for self-service purchases and trials?
+- Does [Fabric](../fundamentals/service-self-service-signup-for-power-bi.md) follow the existing organizational policy for self-service purchases and trials?
 - Should purchasing and trials both be enabled, both be disabled, or a combination? The user's experience will depend on how you [combine the settings](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features) for purchasing and trials.
 - Should users who try to purchase a license be directed to a specific page?
   - With a [custom URL for licensing requests](/fabric/admin/service-admin-portal-help-support#publish-get-help-information), the user is immediately directed to that page when they select the _Upgrade account_ or the _Buy now_ button. You can provide further instructions or ask them to submit details in a form. Using a custom URL is a way to disallow the use of self-service purchasing by redirecting the user elsewhere.

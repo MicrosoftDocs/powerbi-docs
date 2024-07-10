@@ -7,7 +7,7 @@ ms.reviewer: 'rien'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 06/20/2024
 ms.custom: video-zIZPA0UrJyA, sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---
@@ -16,17 +16,17 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data that's happened within the last 30 days (or month, calendar months, and so on). When you refresh the data, the relative time period automatically applies the appropriate relative date constraint.
+With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data from within the last 30 days (or month, calendar months, and so on). When you refresh the data, the relative time period automatically applies the appropriate relative date constraint.
 
-:::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png" alt-text="Screenshot showing a sales report and a relative date slicer with the date slicer called out.":::
+:::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png" alt-text="Screenshot showing a sales report and a relative date slicer with the date slicer called out." lightbox="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png":::
 
-To share your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+If you want to share your report with a Power BI colleague, you both must have individual Power BI Pro licenses or the report must be saved in Premium capacity.
 
 ## Video
 
 In this video, Will walks through creating a date range slicer.
 
-> [!NOTE]  
+> [!NOTE]
 > This video uses earlier versions of Power BI Desktop or the Power BI service.
 
 > [!VIDEO https://www.youtube.com/embed/zIZPA0UrJyA]
@@ -71,7 +71,7 @@ If you select **Months** from that list, and enter *2* in the middle setting, he
 
 - If today is July 20:
 
-  - The data included in visuals constrained by the slicer will show data for the previous two months,
+  - The data included in visuals constrained by the slicer shows data for the previous two months,
   - Starting on May 21 and going through July 20 (today's date).
 
 In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1 through June 30 (the last two complete calendar months).
@@ -86,7 +86,7 @@ Once there, you can change the relative date range. It's similar to how you can 
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png" alt-text="Screenshot showing the Relative date option highlighted in the Filter type drop-down.":::
 
-Once you've selected **Relative date**, you see three sections to change under **Show items when the value**, including a middle numeric box, just like the slicer.
+After you select **Relative date**, you see three sections to change under **Show items when the value**, including a middle numeric box, just like the slicer.
 
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png" alt-text="Screenshot showing the Filters on this page section of the Filters pane, with the 'Show items when the value' options called out.":::
 
@@ -101,5 +101,5 @@ The following considerations and limitations currently apply to the **relative d
 
 ## Related content
 
-- [Use a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
+- [Create a relative time slicer and filter in Power BI](../create-reports/slicer-filter-relative-time.md)
 - [Slicers in Power BI](power-bi-visualization-slicers.md)
