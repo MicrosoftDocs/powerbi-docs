@@ -36,7 +36,7 @@ To create the table, select field names in the **Data** pane on the right.  This
 
 The selected columns appear in the **Editor** portion of the canvas. Give the editor a few moments to run the query on the dataset. The formatted table shows up in the **Preview** section of the canvas.
 
-:::image type="content" source="media/paginated-formatted-table/paginated-authoring-add-fields.png" alt-text="Screenshot of formatted table preview." lightbox="media/paginated-formatted-table/paginated-authoring-addfieds.png":::
+:::image type="content" source="media/paginated-formatted-table/paginated-authoring-add-fields.png" alt-text="Screenshot of formatted table preview." lightbox="media/paginated-formatted-table/paginated-authoring-add-fields.png":::
 
 This viewer shows you a preview of your currently unsaved paginated report. Use this pane to make sure everything in your report looks good before editing or saving the report.
 
@@ -93,6 +93,9 @@ If you are **Viewing** a paginated report that you've *authored in the Power BI 
  
 
 ## Add images to the paginated report
+
+### Add images to the body of the paginated report
+
 For any paginated report that you *author in the Power BI service*, you can insert images above or below the table in the report, into the header or footer of the report. 
 
 1. To add an image to the body of your report, select **Insert**, then **Image**.
@@ -108,6 +111,8 @@ For any paginated report that you *author in the Power BI service*, you can inse
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-image-picture-format.png" alt-text="Screenshot of picture format options.":::
 
 To learn more about external images, refer to [Add external images to paginated reports](../report-design/add-external-image-report-builder-service.md).
+
+### Add images to the header or footer of the paginated report
 
 1. To add images to the header or footer of the report, select **Insert**, then **Header** or **Footer**.
 
@@ -128,7 +133,6 @@ For any paginated report you author in the Power BI service, you can insert text
 1. To add a text box to your report, select **Insert** and then **Text box**.
 
     :::image type="content" source="media/paginated-formatted-table/rdl-web-authoring-add-text-box.png" alt-text="Screenshot of insert text box button.":::
-    
 
     > [!NOTE]
     > When you insert a new text box or select a text box, you're immediately editing the text in the text box.
