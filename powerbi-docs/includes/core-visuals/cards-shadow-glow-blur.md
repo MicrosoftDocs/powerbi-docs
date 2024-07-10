@@ -10,6 +10,6 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Blur
+###### Blur
 
 Controls the sharpness of the edges, from a sharp outline to a soft haze.

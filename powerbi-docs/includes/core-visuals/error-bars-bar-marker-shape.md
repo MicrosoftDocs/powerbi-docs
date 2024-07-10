@@ -10,6 +10,6 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Marker shape
+###### Marker shape
 
 The Marker Shape setting offers eight different shapes as the bar marker or, if you prefer no marker, you can select *None*.

@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Style
+###### Style
 
 Offering two style options, this setting allows you to choose either Tabular style or Sentence style.

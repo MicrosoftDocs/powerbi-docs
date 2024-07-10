@@ -10,6 +10,6 @@ ms.date: 06/24/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Columns shown
+###### Columns shown
 
 Defines the maximum number of columns displayed, from 1-99, when selecting the **Grid** layout.

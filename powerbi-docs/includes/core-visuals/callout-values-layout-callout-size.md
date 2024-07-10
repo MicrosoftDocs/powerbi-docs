@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Callout size
+###### Callout size
 
 This setting allows you to establish the size, as a percentage of the card size, from 0%  to 100%.

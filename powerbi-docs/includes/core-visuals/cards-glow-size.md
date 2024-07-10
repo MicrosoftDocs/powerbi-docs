@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Size
+###### Size
 
 With this setting, you can customize the size of the glow, offering a range of 0 to 10 pixels, to make it subtle or prominent.

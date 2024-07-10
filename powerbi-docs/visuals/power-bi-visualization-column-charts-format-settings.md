@@ -1,5 +1,5 @@
 ---
-title: Column charts format settings
+title: Column chart formatting
 description: This document explains all available Format settings for Column charts in Power BI Desktop and Power BI Service.
 author: JaedenArmstrong
 ms.author: miguelmyers
@@ -179,6 +179,14 @@ The visibility of **Horizontal gridlines** can can be toggled on or off to make 
 [!INCLUDE [global-dash-cap](../includes/core-visuals/global-dash-cap.md)]
 [!INCLUDE [global-scale-by-width](../includes/core-visuals/global-scale-by-width.md)]
 [!INCLUDE [gridlines-horizontal-&-vertical-width](../includes/core-visuals/gridlines-horizontal-&-vertical-width.md)]
+
+### Columns
+
+#### Apply settings to
+[!INCLUDE [columns-apply-settings-to](../includes/core-visuals/columns-apply-settings-to.md)]
+
+[!INCLUDE [columns-apply-settings-to-categories](../includes/core-visuals/columns-apply-settings-to-categories.md)]
+[!INCLUDE [global-apply-settings-to-series-menu](../includes/core-visuals/global-apply-settings-to-series-menu.md)]
 
 
 
