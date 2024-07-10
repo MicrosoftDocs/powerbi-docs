@@ -159,7 +159,7 @@ sections:
       - question: |
           The subscription times out after 60 minutes
         answer: |
-          Subscriptions use the export feature to render the report in the desired format. Export of reports are limited to 60 minutes, the life of the users access token.
+          Subscriptions use the export feature to render the report in the desired format. Export of reports are limited to 60 minutes, the life of the users' access token.
   
       - question: |
           Which Power BI features aren't supported in subscriptions
