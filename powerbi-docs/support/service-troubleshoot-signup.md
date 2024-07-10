@@ -91,7 +91,7 @@ You're following along with a Power BI article and the screens look different. Y
 
 Power BI Desktop is a free Windows application that you download. Power BI is also available as a mobile app.
 
-#### Solution: Download Desktop or the mobile apps
+#### Solution: Download Power BI Desktop or the mobile apps
 
 - [Power BI Desktop (free download)](https://powerbi.microsoft.com/desktop)
 - [Power BI mobile apps (free download)](../consumer/mobile/mobile-apps-for-mobile-devices.md)
