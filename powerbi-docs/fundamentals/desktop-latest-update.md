@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.custom: intro-whats-new
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/10/2024
+ms.date: 07/11/2024
 LocalizationGroup: Get started
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## July 2024 Update (2.131.754.0)
+## July 2024 Update (2.131.901.0)
 
 July lets you declare independence from waiting on others to create compelling reports and visuals, enabling you to launch your own spectacular display of sizzling analytics and insights. 
 
