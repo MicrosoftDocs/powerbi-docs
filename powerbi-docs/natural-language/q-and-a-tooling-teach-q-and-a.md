@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/27/2024
+ms.date: 07/11/2024
 LocalizationGroup: Ask questions of your datadefintion
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
@@ -28,13 +28,8 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png" alt-text="Screenshot of the Teach Q and A page with a question entered in the search box." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png":::
 
-<<<<<<< HEAD
     Q&A offers suggestions and prompts you to provide the correct definition of the term.
 
-=======
-    Q&A offers suggestions and prompts you to provide the correct definition of the term. 
-    
->>>>>>> 677b2b303f52c4630eefd0e0848b9b5a9b1ff973
 1. After **Define the terms Q&A didn't understand**, provide a definition.
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png" alt-text="Screenshot of the Teach Q and A page with a term selected and defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fix-preview.png":::
@@ -101,19 +96,13 @@ After you provide definitions, you can go back to see all the fixes you made and
 
 1. In **Q&A setup**, go to the **Synonyms** section to manage nouns.
 
-<<<<<<< HEAD
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png" alt-text="Screenshot of the Manage terms page with the term named factory defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png":::
-=======
-    :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonyms.png" alt-text="Screenshot of the Teach Q and A page with a term selected and defined." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonyms.png":::
 
 1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it. You can use the new Copilot suggestions feature for help with adding more synonyms. For more information, see [Enhance Q&A with Copilot for Power B](q-and-a-copilot-enhancements.md).
    
 1. In **Q&A setup**, go to the **Relationships** section to manage adjectives and other relationship types.
 
    :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-relationships.png" alt-text="Screenshot of the Linguistic relationships page of Q&A setup." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-relationships.png":::
-    
-5. Delete any relationships that you no longer want or edit the relationship using the pencil icon.
->>>>>>> 677b2b303f52c4630eefd0e0848b9b5a9b1ff973
 
 1. Delete any terms that you no longer want. Currently, you can't edit terms. To redefine a term, delete the term and define it.
 
