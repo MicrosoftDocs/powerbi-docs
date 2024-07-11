@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/12/2024
+ms.date: 07/11/2024
 
 #customer intent: As a Power BI visual developer, I want to learn how to set up authentication for third party ISVs in Microsoft Entra for single sign-in users.
 ---
@@ -79,7 +79,7 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
       :::image type="content" source="./media/entra-id-authentication/add-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application." lightbox="./media/entra-id-authentication/add-client.png":::
 
-   1. Enter the **Power BI WFE** application appId "871c010f-5e61-4fb1-83ac-98610a7e9110" in the **Client ID** field of the right-hand window.
+   1. Enter the **Power BI Desktop** application appId "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf" in the **Client ID** field of the right-hand window.
    1. Select your desired scope.
    1. Select **Add application**.
 
@@ -87,7 +87,11 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
    1. Repeat this process with:
 
-      * **Power BI Desktop**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
+      * **Power BI WFE**:
+
+         * **COM (required)** and **CN**: "871c010f-5e61-4fb1-83ac-98610a7e9110".
+         * **GCC**, **GCCHIGH** and **DOD**: “ec04d7d8-0476-4acd-bce4-81f438363d37".
+
       * **Power BI Mobile**:
 
           * **COM (required)** and **CN**: "c0d2a505-13b8-4ae0-aa9e-cddd5eab0b12".
