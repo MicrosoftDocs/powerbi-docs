@@ -87,7 +87,7 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
    1. Repeat this process with:
 
-      * **Power BI WFE**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
+      * **Power BI WFE**:
 
          * **COM (required)** and **CN**: "871c010f-5e61-4fb1-83ac-98610a7e9110".
          * **GCC**, **GCCHIGH** and **DOD**: “ec04d7d8-0476-4acd-bce4-81f438363d37".
