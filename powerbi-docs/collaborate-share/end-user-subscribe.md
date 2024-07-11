@@ -352,7 +352,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - If you can't use the subscription feature, contact your system administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit was reached.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 
-- Reports for subscriptions have a 60-minute execution time limit. If the report takes longer than 60 minutes to execute, a timeout error occurs. The one-hour limit is a global limitation for Power BI paginated reports, meaning it doesn't matter where you're executing the report. It could be a subscription, the Export to File API, an embedding, or a Power BI visual. You always hit this one-hour limit, and presumably in less than one hour if the session token has been configured to be less than one hour via Entra.
+- Reports for subscriptions have a 60-minute execution time limit. If the report takes longer than 60 minutes to execute, a timeout error occurs.
 
 **Row-level security (RLS)**
 
