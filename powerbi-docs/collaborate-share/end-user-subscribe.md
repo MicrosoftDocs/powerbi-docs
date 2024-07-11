@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 07/11/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -341,8 +341,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 - There's no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
-- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. However, you can't create data-driven subscriptions for paginated reports in the Power BI service.
-
+- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. Data-driven subscriptions in the Power BI service are called Dynamic subscriptions. Learn more about [Creating a dynamic subscription for a Power BI report (Preview) - Power BI](power-bi-dynamic-report-subscriptions.md).
 
 ## Considerations and limitations 
 
@@ -353,6 +352,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 - If you can't use the subscription feature, contact your system administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit was reached.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 
+- Reports for subscriptions have a 60-minute execution time limit. If the report takes longer than 60 minutes to execute, a timeout error occurs. The one-hour limit is a global limitation for Power BI paginated reports, meaning it doesn't matter where you're executing the report. It could be a subscription, the Export to File API, an embedding, or a Power BI visual. You always hit this one-hour limit, and presumably in less than one hour if the session token has been configured to be less than one hour via Entra.
 
 **Row-level security (RLS)**
 
