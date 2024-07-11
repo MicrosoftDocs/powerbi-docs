@@ -60,11 +60,11 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 
 | SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQuery connections (per semantic model)<sup>1</sup> | Max DirectQuery parallelism<sup>3</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 4</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 4</sup> |
 | ---   | --- | --- | --- | -------    | -- | ----- | ------ | --------- |
-| F2    |   5 |   3 |   3     |   2    |  1 |     1 |    300 | 10        |
-| F4    |   5 |   3 |   3     |   2    |  1 |     2 |    300 | 10        |
-| F8    |  10 |   3 |   3     |   3.75 |  1 |     5 |    300 | 10        |
-| F16   |  10 |   5 |   5     |   7.5  |  2 |    10 |    300 | 20        |
-| F32   |  10 |  10 |  10     |  15    |  5 |    20 |    300 | 40        |
+| F2    |   5 |   3 |   1     |   2    |  1 |     1 |    300 | 10        |
+| F4    |   5 |   3 |   1     |   2    |  1 |     2 |    300 | 10        |
+| F8    |  10 |   3 |   1     |   3.75 |  1 |     5 |    300 | 10        |
+| F16   |  10 |   5 |   1     |   7.5  |  2 |    10 |    300 | 20        |
+| F32   |  10 |  10 |   1     |  15    |  5 |    20 |    300 | 40        |
 | F64   |  50 |  25 |  4 - 8  |  30    | 10 |    40 |  1,500 | Unlimited |
 | F128  |  75 |  50 |  6 - 12 |  60    | 10 |    80 |  3,000 | Unlimited |
 | F256  | 100 | 100 |  8 - 16 | 120    | 10 |   160 |  6,000 | Unlimited |
@@ -76,7 +76,7 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 
 <sup>2</sup> The *Max memory (GB)* column represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column.
 
-<sup>3</sup> [DirectQuery parallelism](https://powerbi.microsoft.com/blog/query-parallelization-helps-to-boost-power-bi-dataset-performance-in-directquery-mode/) can improve your query response times. The lowest number indicates the default maximum number of queries that can be processed at the same time. The highest number indicates the maximum number of queries that can be processed at the same time, which can be set by the user.
+<sup>3</sup> [DirectQuery parallelism](https://powerbi.microsoft.com/blog/query-parallelization-helps-to-boost-power-bi-dataset-performance-in-directquery-mode/) can improve your query response times. The lower number indicates the default maximum number of queries that can be processed at the same time. The higher number indicates the maximum number of queries that can be processed at the same time. To change the default use the [Model.MaxParallelismPerQuery](/dotnet/api/microsoft.analysisservices.tabular.model.maxparallelismperquery) property.
 
 <sup>4</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](/fabric/get-started/direct-lake-overview#fallback).
 
