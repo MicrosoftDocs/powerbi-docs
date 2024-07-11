@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 05/22/2024
+ms.date: 07/11/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -342,6 +342,7 @@ If you have an existing subscription to a paginated report, and you want to upda
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 - There's no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
 - Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. However, you can't create data-driven subscriptions for paginated reports in the Power BI service.
+- Reports for subscriptions have a 60-minute execution time limit. If the report takes longer than 60 minutes to execute, a timeout error occurs.
 
 
 ## Considerations and limitations 
