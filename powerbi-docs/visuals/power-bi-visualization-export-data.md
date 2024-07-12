@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/03/2024
-ms.custom: video-KjheMTGjDXw, video-jtlLGRKBvXY, sample-Procurement-Analysis
+ms.custom: sample-Procurement-Analysis
 LocalizationGroup: Visualizations
 ---
 
@@ -31,14 +31,6 @@ If you do have permissions to the data, you can see, and export the data that Po
 If you don't have permissions to the data, you can't export or open in Excel. Often, data is confidential or limited to specific users. For details, see the [Considerations and limitations](#considerations-and-limitations) section at the end of this document. If you're working in the Power BI service, you can contact your Power BI administrator, or you can look up the contact information for the dashboard owner to request export permissions. To find the owner, select the dropdown next to the report title.
 
 :::image type="content" source="media/power-bi-visualization-export-data/power-bi-contact.png" alt-text="Dashboard displaying contact information.":::
-
-## Video: View and export data
-
-Watch Will export the data from one of the visualizations in a report, save it as an *.xlsx* file, and open it in Excel. To try it out yourself, follow the step-by-step instructions.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-> [!VIDEO https://www.youtube.com/embed/KjheMTGjDXw]
 
 ## Data is protected when exported out of Power BI
 
