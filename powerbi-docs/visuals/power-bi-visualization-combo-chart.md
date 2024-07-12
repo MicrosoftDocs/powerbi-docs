@@ -29,14 +29,7 @@ Combo charts are a great choice:
 * to check whether one measure meets the target defined by another measure
 * to conserve canvas space.
 
-## How to create a combo chart
-
-Watch Will create a combo chart using the Sales and Marketing sample.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP]  
+## How to create a combo chart  
 
 <a name="create"></a>
 
