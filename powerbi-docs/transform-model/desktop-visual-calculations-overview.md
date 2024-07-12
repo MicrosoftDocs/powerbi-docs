@@ -172,6 +172,11 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [:::no-loc text="RANGE":::](/dax/range-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(:::no-loc text="RANGE":::(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
 | [:::no-loc text="RUNNINGSUM":::](/dax/runningsum-function-dax) | Adds a running sum on an axis. | RunningSumSales = :::no-loc text="RUNNINGSUM":::([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
 
+## Formatting visual calculations
+
+You can format a visual calculation using a visual level format string. Use the **Data format** options in the Properties section of the formatting pane for your visual to set the format:
+
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage using the format code #,#%.":::
 
 ## Considerations and limitations
 
@@ -202,7 +207,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
 * You can't [export underlying data](../visuals/power-bi-visualization-export-data.md) from visuals that use visual calculations or hidden fields.
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
-* You can't set built-in or custom [format strings](../create-reports/desktop-custom-format-strings.md) on visual calculations.
 * You can't apply [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
 * You can't [change aggregations](../create-reports/service-aggregates.md#change-how-a-numeric-field-is-aggregated) on visual calculations.
@@ -211,7 +215,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * Live connections to SQL Server Analysis Services aren't supported.
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
-
+* You can't use Data Limits with visual calculations.
 
 ## Next steps
 
