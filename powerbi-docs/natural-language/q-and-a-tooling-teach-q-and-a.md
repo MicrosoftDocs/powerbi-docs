@@ -24,7 +24,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
 1. Type a sentence with a term that Q&A doesn't recognize and select **Submit**.
 
-1. Select the red double-underlined word. 
+1. Select the red double-underlined word.
 
     :::image type="content" source="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png" alt-text="Screenshot of the Teach Q and A page with a question entered in the search box." lightbox="media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png":::
 
@@ -44,8 +44,8 @@ Your report consumers don't see this change until you publish the report back to
 
 You can teach Q&A two types of terms:
 
-- Nouns
-- Adjectives
+- [Nouns](#define-a-noun-synonym)
+- [Adjectives](#define-an-adjective-filter-condition)
 
 ### Define a noun synonym
 
