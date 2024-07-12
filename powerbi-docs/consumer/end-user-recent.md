@@ -3,7 +3,7 @@ title: Display recently visited content in the Power BI service
 description: Learn how to find and open your most recently visited dashboards, reports, and other content in the Power BI service.
 author: mihart
 ms.reviewer: mihart
-ms.custom: video-G26dr2PsEpk
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: View recent content

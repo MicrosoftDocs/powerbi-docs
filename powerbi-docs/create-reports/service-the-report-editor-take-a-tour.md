@@ -4,9 +4,7 @@ description: Learn how to use the report editor and design the reports your end 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom:
-  - video-IkJda4O7oGs
-  - ignite-2023-fabric
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
@@ -20,13 +18,6 @@ LocalizationGroup: Reports
 In Power BI Desktop and in the Power BI service, the *report editor* is where you design the reports your consumers see, with charts, tables, maps, and other visuals. It's similar in the two environments. Typically you start creating a report in Power BI Desktop. Then you publish it to the Power BI service, where you can continue modifying it. The Power BI service is also where you create the dashboards based on your reports.
 
 After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share the reports, your end users can interact with them in Reading view in the Power BI service, but not edit them. Read more about [what report consumers can do in the Power BI service](../consumer/end-user-reading-view.md).
-
-This video shows the report editor in Power BI Desktop.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/IkJda4O7oGs]
 
 In the Power BI service, the report editor is only available in Editing View. To open a report in Editing view, you must be a report owner or creator, or have at least a Contributor role in the workspace that houses the report.
 
