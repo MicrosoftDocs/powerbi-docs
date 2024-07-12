@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
 ms.date: 06/21/2024
-ms.custom: video-qMf7OLJfCz8
+ms.custom: video-removed
 LocalizationGroup: Ask questions of your data
 ---
 # Use Power BI Q&A in a report to explore your data and create visuals
