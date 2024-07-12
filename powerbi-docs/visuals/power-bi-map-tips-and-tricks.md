@@ -4,7 +4,7 @@ description: 'Tips and Tricks for Power BI Map visualizations, visuals, location
 author: miguelmyersMS
 ms.author: miguelmyers
 ms.reviewer: 'mihart'
-ms.custom: video-ajTPGNpthcg
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
