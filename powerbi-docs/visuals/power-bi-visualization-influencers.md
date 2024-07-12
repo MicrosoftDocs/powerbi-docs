@@ -6,7 +6,7 @@ ms.author: anphil
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-ai
-ms.custom: video-fDb5zZ3xmxU, video-2X1cW8oPtc8, sample-customer-feedback
+ms.custom: video-removed, sample-customer-feedback
 ms.topic: how-to
 ms.date: 06/27/2022
 LocalizationGroup: Visualizations
@@ -45,13 +45,6 @@ The key influencers visual is a great choice if you want to:
 1. **Check box**: Filters out the visual in the right pane to only show values that are influencers for that field. In this example, the visual is filtered to display usability, security, and navigation.
 
 ## Analyze a metric that is categorical
- 
-Watch this video to learn how to create a key influencers visual with a categorical metric. Then follow the steps to create one. 
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
- 
-> [!VIDEO https://www.youtube.com/embed/fDb5zZ3xmxU]
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -267,12 +260,7 @@ Take a look at what the visualization looks like once we add **ID** to **Expand 
 
 :::image type="content" source="media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png" alt-text="Screenshot that shows the house price visualization that depends on the three columns discussed in this section.":::
 
-If you would like to learn more about how you can analyze measures with the key influencers visualization, please watch the following video. To learn how Power BI uses ML.NET behind the scenes to reason over data and surface insights in a natural way, see [Power BI identifies key influencers using ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi).
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/2X1cW8oPtc8]
+To learn how Power BI uses ML.NET behind the scenes to reason over data and surface insights in a natural way, see [Power BI identifies key influencers using ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet/customers/power-bi).
 
 ## Considerations and troubleshooting 
  
