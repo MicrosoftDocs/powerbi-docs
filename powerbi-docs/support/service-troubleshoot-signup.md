@@ -41,17 +41,17 @@ When you attempt to sign up by using a personal email address, you receive promp
 
 "That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don't worry. We don't share your address with anyone."
 
-#### Cause: Personal email addresses aren't supported
+## Cause: Personal email addresses aren't supported
 
 The Power BI service doesn't support email addresses provided by consumer email services or telecommunications providers.
 
-#### Solution: For email issues
+### Solution: For email issues
 
 1. To finish signing up, try again by using an email address assigned by your work or school.
 
 1. If sign-up still doesn't work, try a more advanced setup process. This process creates a new `onmicrosoft.com` email address that can be used with the Power BI service. Register for a new [Microsoft 365 trial subscription](../enterprise/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md) and use that email address to sign up.
 
-#### Cause: Your email address isn't a Microsoft 365 ID
+## Cause: Your email address isn't a Microsoft 365 ID
 
 You attempt to sign up or purchase and receive a message like this:
 
@@ -59,7 +59,7 @@ You attempt to sign up or purchase and receive a message like this:
 
 When you sign in to Microsoft 365 and other services, your organization uses IDs that are different than your email address. For example, your email address might be `zalan.bola@contoso.com` but your ID is `zalanb@contoso.com`.
 
-#### Solution: Use your Microsoft 365 ID
+### Solution: Use your Microsoft 365 ID
 
 To finish signing up or purchasing, use the ID that your organization assigned to you for signing in to Microsoft 365 or other Microsoft services. If you don't know what this ID is, contact your global admin.
 
@@ -67,11 +67,11 @@ To finish signing up or purchasing, use the ID that your organization assigned t
 
 When you try to sign up for a free or paid license, you receive an error message. The error message might state that your organization disabled self-service. Or the error message might state that your organization manages sign-up.
 
-#### Cause: Your admin disabled self-service
+## Cause: Your admin disabled self-service
 
 Your organization might not want employees to use self-service sign-up or to be able to upgrade to paid versions of the Power BI licenses. The paid versions are Pro and Premium Per User (PPU).
 
-#### Solution: If self-service isn't available
+### Solution: If self-service isn't available
 
 - If you're unable to use self-service to get your own Power BI license, check to see if your Microsoft 365 global admin disabled the self-service options. Also check with the Fabric admin to see if they changed the upgrade and trial options available to you. For help when you can't use self-service, go to [Self-service sign-up and purchase help](../fundamentals/service-self-service-sign-up-help.md).
 - If you're part of an organization and used self-service to purchase Power BI, the global or billing admin for your organization can [take over ownership](/azure/active-directory/enterprise-users/domains-admin-takeover) of your subscription, and then assign or unassign licenses. Check with your global and billing admins.
@@ -87,11 +87,11 @@ Your organization might not want employees to use self-service sign-up or to be 
 
 You're following along with a Power BI article and the screens look different. You can't find your account manager. Or you can't find the features that you need to model your data.
 
-#### Cause: You want to open Power BI Desktop or one of the mobile apps
+## Cause: You want to open Power BI Desktop or one of the mobile apps
 
 Power BI Desktop is a free Windows application that you download. Power BI is also available as a mobile app.
 
-#### Solution: Download Power BI Desktop or the mobile apps
+### Solution: Download Power BI Desktop or the mobile apps
 
 - [Power BI Desktop (free download)](https://powerbi.microsoft.com/desktop)
 - [Power BI mobile apps (free download)](../consumer/mobile/mobile-apps-for-mobile-devices.md)
@@ -100,11 +100,11 @@ Power BI Desktop is a free Windows application that you download. Power BI is al
 
 You follow along with the Power BI or Fabric articles for getting a free license. But, when you check your account manager, it lists your license type as **Pro**.
 
-#### Cause: Your organization purchased a subscription that includes Pro licenses
+## Cause: Your organization purchased a subscription that includes Pro licenses
 
 If your organization provided you with access to a subscription for Microsoft Office 365 E5, you have a Pro license.
 
-#### Solution: Use Pro instead of Fabric (Free)
+### Solution: Use Pro instead of Fabric (Free)
 
 The Power BI Pro license gives you access to a wider range of Power BI features. Anything that you can do with a Fabric (Free) license, you can do with a Power BI Pro license.
 
@@ -112,11 +112,11 @@ The Power BI Pro license gives you access to a wider range of Power BI features.
 
 You opened Fabric. You see the landing page but can't access any of the Fabric items.
 
-#### Cause: You don't have a Fabric capacity
+## Cause: You don't have a Fabric capacity
 
 A Fabric (Free) license isn't the only thing that you need to access Fabric items. If you're using a Power BI Premium capacity, Fabric items aren't supported. You need a Fabric capacity.
 
-#### Solution: Purchase or use a trial Fabric capacity
+### Solution: Purchase or use a trial Fabric capacity
 
 - To enable support for Fabric items on your Power BI capacity, [enable Fabric](/fabric/admin/fabric-switch).
 - If you don't have a Fabric capacity, sign up for a [trial of a Fabric capacity](/fabric/get-started/fabric-trial).
@@ -126,11 +126,11 @@ A Fabric (Free) license isn't the only thing that you need to access Fabric item
 
 You don't see prompts to upgrade (**Buy now**) or start a trial (**Try now**), and the UI doesn't display **Buy now** or **Try now** buttons.
 
-#### Cause: Your admins disabled this option
+## Cause: Your admins disabled this option
 
 The type of upgrade and trial options available to you depends on how your global and billing admins set up your domain. Your admins have the ability to disable all trials, disable self-service purchase, and more.
 
-#### Solution: Contact your admins
+### Solution: Contact your admins
 
 Contact your global and billing admins and ask them to enable self-service.
 
