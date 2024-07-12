@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/16/2024
+ms.date: 07/12/2024
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
