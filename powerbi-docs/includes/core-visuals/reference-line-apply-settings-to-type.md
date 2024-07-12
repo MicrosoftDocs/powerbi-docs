@@ -23,4 +23,4 @@ There are several types of reference lines that can be added to column charts to
 - **Median Line:** A line that represents the median value of the data points in your visual, providing a sense of the distribution’s center.
 - **Percentile Line:** A line that represents a specific percentile in your data set, allowing you to see how a particular value compares to the rest of the distribution.
 
-The Constant line is available for all Column charts. The X-Axis constant line is also available for all Column charts, but only when the X-Axis is set to Continuous. The Min, Max, Average, Median, and Percentile lines are only available for Clustered column charts.
+The **Constant line** is available for *all* Column charts. The **X-Axis constant line** is also available for *all* Column charts, but *only* when the X-Axis is set to Continuous. The **Min**, **Max**, **Average**, **Median**, and **Percentile** lines are only available for Clustered column charts.
