@@ -106,6 +106,7 @@ There are limitations related to creating pages in specific semantic model scena
 
 - **Real-Time Streaming Models**: Report pages can't be created by Copilot for semantic models utilizing real-time streaming.
 - **Live Connection to Analysis Services**: Semantic models connected live to Analysis Services aren't supported by page creation.
+- **Semantic models with implicit measures disabled**: In scenarios where implicit measures are disabled in your semantic model, Copilot cannot create report pages.
   
 ## Next steps
 
