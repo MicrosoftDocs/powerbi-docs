@@ -1,5 +1,5 @@
 ---
-title: Column chart formatting
+title: Column chart format settings explained
 description: This document explains all available Format settings for Column charts in Power BI Desktop and Power BI Service.
 author: JaedenArmstrong
 ms.author: miguelmyers
@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for column charts so that I can effectively and more easily format column chart visuals in Power BI Desktop and Power BI Service.
 ---
 
-# Column charts format settings
+# Column chart format settings explained
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
