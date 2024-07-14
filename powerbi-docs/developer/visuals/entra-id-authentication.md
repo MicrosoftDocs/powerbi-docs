@@ -79,7 +79,11 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
       :::image type="content" source="./media/entra-id-authentication/add-client.png" alt-text="Screenshot of the edit a scope window with fields for adding a client application." lightbox="./media/entra-id-authentication/add-client.png":::
 
-   1. Enter the **Power BI Desktop** application appId "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf" in the **Client ID** field of the right-hand window.
+   1. Enter the **Power BI WFE** application appId in the **Client ID** field of the right-hand window.
+
+         * **COM (required)** and **CN**: "871c010f-5e61-4fb1-83ac-98610a7e9110".
+         * **GCC**, **GCCHIGH** and **DOD**: “ec04d7d8-0476-4acd-bce4-81f438363d37".
+
    1. Select your desired scope.
    1. Select **Add application**.
 
@@ -87,10 +91,10 @@ For each cloud intended to be supported by the visual, follow the steps outlined
 
    1. Repeat this process with:
 
-      * **Power BI WFE**:
+      * **Power BI Desktop**:
 
-         * **COM (required)** and **CN**: "871c010f-5e61-4fb1-83ac-98610a7e9110".
-         * **GCC**, **GCCHIGH** and **DOD**: “ec04d7d8-0476-4acd-bce4-81f438363d37".
+         * **COM (required)** and **CN**: "7f67af8a-fedc-4b08-8b4e-37c4d127b6cf".
+         * **GCC**, **GCCHIGH** and **DOD**: “6807062e-abc9-480a-ae93-9f7deee6b470".
 
       * **Power BI Mobile**:
 
