@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 07/10/2024
+ms.date: 07/14/2024
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -60,17 +60,17 @@ With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-a
 
 | SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQuery connections (per semantic model)<sup>1</sup> | Max DirectQuery parallelism<sup>3</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 4</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 4</sup> |
 | ---   | --- | --- | --- | -------    | -- | ----- | ------ | --------- |
-| F2    |   5 |   3 |   1     |   2    |  1 |     1 |    300 | 10        |
-| F4    |   5 |   3 |   1     |   2    |  1 |     2 |    300 | 10        |
-| F8    |  10 |   3 |   1     |   3.75 |  1 |     5 |    300 | 10        |
-| F16   |  10 |   5 |   1     |   7.5  |  2 |    10 |    300 | 20        |
+| F2    |   3 |   5 |   1     |   2    |  1 |     1 |    300 | 10        |
+| F4    |   3 |   5 |   1     |   2    |  1 |     2 |    300 | 10        |
+| F8    |   3 |  10 |   1     |   3.75 |  1 |     5 |    300 | 10        |
+| F16   |   5 |  10 |   1     |   7.5  |  2 |    10 |    300 | 20        |
 | F32   |  10 |  10 |   1     |  15    |  5 |    20 |    300 | 40        |
-| F64   |  50 |  25 |  4 - 8  |  30    | 10 |    40 |  1,500 | Unlimited |
-| F128  |  75 |  50 |  6 - 12 |  60    | 10 |    80 |  3,000 | Unlimited |
+| F64   |  25 |  50 |  4 - 8  |  30    | 10 |    40 |  1,500 | Unlimited |
+| F128  |  50 |  75 |  6 - 12 |  60    | 10 |    80 |  3,000 | Unlimited |
 | F256  | 100 | 100 |  8 - 16 | 120    | 10 |   160 |  6,000 | Unlimited |
 | F512  | 200 | 200 | 10 - 20 | 240    | 20 |   320 | 12,000 | Unlimited |
-| F1024 | 200 | 400 | 12 - 24 | 480    | 40 |   640 | 24,000 | Unlimited |
-| F2048 | 200 | 400 |         | 960    | 40 | 1,280 | 24,000 | Unlimited |
+| F1024 | 400 | 200 | 12 - 24 | 480    | 40 |   640 | 24,000 | Unlimited |
+| F2048 | 400 | 200 |         | 960    | 40 | 1,280 | 24,000 | Unlimited |
 
 <sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
