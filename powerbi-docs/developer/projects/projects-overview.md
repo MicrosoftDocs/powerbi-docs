@@ -38,9 +38,9 @@ See Power BI Desktop projects and other developer mode features being introduced
 
 ## Enable preview features
 
-Saving as a project in Power BI Desktop is currently in **preview**. To use this feature, you need a **Premuim license** and you must enable it in **Preview features**.
+Saving as a Power BI Project in Power BI Desktop is currently in **preview**, and you must enable it in **Preview features**.
 
-To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
+Go to **File > Options and settings > Options > Preview features** and check the box next to **Power BI Project (.pbip) save option**.
 
 ## Save as a project
 
