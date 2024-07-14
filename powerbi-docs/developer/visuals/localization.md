@@ -65,15 +65,13 @@ To test your visual, set Power BI to a language that isn't English. This section
 
     1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
 
-    2. Navigate to **Settings** > **Settings** > **Settings**.
+    2. Navigate to **Settings** > **General**.
 
-        >[!div class="mx-imgBorder"]
-        >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/localization/powerbi-settings.png)
+          :::image type="content" source="./media/localization/powerbi-settings.png" alt-text="Screenshot of the settings, general, menu option in Power B I service.":::
 
-    3. From the **General** tab, select **Language**. In the **Language Settings**, select the language you want Power BI to use, and then select **Apply**.
+    3. Select **Select display language** to select the language you want Power BI to use.
 
-        >[!div class="mx-imgBorder"]
-        >![A screenshot showing the language settings in Power BI service.](media/localization/webservice-settings.png)
+          :::image type="content" source="media/localization/webservice-settings.png" alt-text="Screenshot showing the language settings in Fabric.":::>
 
 ### Step 2 - Get the locale Power BI language
 
