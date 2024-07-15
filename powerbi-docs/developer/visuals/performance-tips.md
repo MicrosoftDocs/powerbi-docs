@@ -1,5 +1,5 @@
 ---
-title: Performance tips for creating quality Power BI custom visuals
+title: Tips for creating quality Power BI custom visuals
 description: Learn specific techniques to develop high performance Power BI custom visuals for your organization.
 author: mberdugo
 ms.author: monaberdugo
@@ -7,8 +7,9 @@ ms.reviewer: sranins, asafmozes
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 05/15/2023
+ms.date: 05/15/2024
 ms.custom: engagement-fy23
+#customer intent: As a Power BI visual developer, I want to learn how to optimize my custom visual for performance so that it renders quickly and efficiently.
 ---
 # Performance tips for creating quality Power BI custom visuals
 

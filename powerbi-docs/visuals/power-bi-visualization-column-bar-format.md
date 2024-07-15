@@ -1,13 +1,13 @@
 ---
 title: Format column and bar charts
 description: Learn how to format column and bar charts with greater flexibility and freedom in presenting your data, to make your insights stand out.
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 02/26/2024
+ms.date: 06/26/2024
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations 
 #customer intent: As a report creator, I want format column and bar charts.

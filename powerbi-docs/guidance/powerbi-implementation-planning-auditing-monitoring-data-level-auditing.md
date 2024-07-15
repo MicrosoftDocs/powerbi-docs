@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/24/2023
 ---
 
@@ -21,6 +22,8 @@ This data-level auditing article is targeted at multiple audiences:
 - **Power BI capacity administrators:** The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators might need to collaborate with content creators when troubleshooting performance.
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
 - **System administrators:** The team that's responsible for creating and securing [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-workspace-overview) resources, and the database administrators who manage data sources.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 The concepts covered in this article apply primarily to solutions created for three [content delivery scopes](fabric-adoption-roadmap-content-delivery-scope.md), specifically enterprise BI, departmental BI, and team BI. Creators of personal BI solutions might find the information in this article useful as well; however, they're not the primary target.
 
@@ -388,7 +391,7 @@ Content creators can initiate semantic model refreshes programmatically by using
 
 ### Data refresh schedule monitoring
 
-Power BI administrators can monitor data refresh schedules in the tenant to determine whether there are many refresh operations scheduled concurrently during a specific timeframe (for example, between 5am and 7am, which could be a particularly busy data refresh time). Administrators have permission to access the semantic model refresh schedule metadata from the [metadata scanning APIs](/power-bi/enterprise/service-admin-metadata-scanning), which are known as the _scanner APIs_.
+Power BI administrators can monitor data refresh schedules in the tenant to determine whether there are many refresh operations scheduled concurrently during a specific timeframe (for example, between 5am and 7am, which could be a particularly busy data refresh time). Administrators have permission to access the semantic model refresh schedule metadata from the [metadata scanning APIs](/fabric/governance/metadata-scanning-overview), which are known as the _scanner APIs_.
 
 ### Power BI REST APIs
 

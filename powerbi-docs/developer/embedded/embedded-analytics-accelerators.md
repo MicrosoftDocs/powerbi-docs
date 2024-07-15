@@ -7,7 +7,7 @@ ms.reviewer: ofer
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/31/2024
+ms.date: 05/09/2024
 ---
 
 # Embedded analytics solution accelerators from Microsoft partners
@@ -22,11 +22,11 @@ Key advantages of using accelerators include:
 
 * Customization and White-Labeling: Once installed, you can white-label the solution, tailor its capabilities, and customize the user interface. White-label the solution, configure its capabilities, and customize the user experience once installed.​
 
-* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They're cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI workload services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
+* Acquisition and Ownership: Accelerators are developed and owned by Microsoft's partners and need to be purchased directly from them. They're cloud-based solutions deployed in your Azure environment, utilizing Azure and Fabric with Power BI services from Microsoft. Existing Microsoft subscriptions or licenses can be reused, the accelerators are also available for deployment through the Azure Marketplace.
 
 * Integration Flexibility: Accelerators can function as standalone applications or be fully integrated with your existing application, as outlined in the [Deployment and integration options table](#deployment-and-integration-options).
 
-[Watch a video describing an overview of embedded solution accelerator partner programs](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics).
+[Watch a video that provides an overview of embedded solution accelerator partner programs](https://microsoft.github.io/PartnerResources/skilling/microsoft-partner-showcase/embedded-analytics).
 
 Different partner accelerators vary in their deployment, acquisition/billing methods, and capabilities.
 The following table briefly describes each of the current partners’ embedded analytics solution accelerators:"

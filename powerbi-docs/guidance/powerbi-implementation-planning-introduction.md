@@ -6,9 +6,9 @@ ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.custom: video-RWUWA9
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.custom: fabric-cat, video-RWUWA9
+ms.date: 06/27/2024
 ---
 
 # Power BI implementation planning
@@ -26,23 +26,22 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [BI strategy](powerbi-implementation-planning-bi-strategy-overview.md)
 - [Tenant setup](powerbi-implementation-planning-tenant-setup.md)
 - [User tools and devices](powerbi-implementation-planning-user-tools-devices.md)
-- Subscriptions, licenses, and trials
+- [Subscriptions, licenses, and trials](powerbi-implementation-planning-subscriptions-licenses-trials.md)
 - [Tenant administration](powerbi-implementation-planning-tenant-administration.md)
 - [Workspaces](powerbi-implementation-planning-workspaces-overview.md)
-- Data management
-- Content deployment
-- Content distribution and sharing
+- [Content lifecycle management](powerbi-implementation-planning-content-lifecycle-management-overview.md)
+- [Content distribution and sharing](powerbi-implementation-planning-content-distribution-sharing.md)
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
-- Capacity management
 - [Data gateways](powerbi-implementation-planning-data-gateways.md)
 - Integration with other services
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
-- Adoption tracking
-- Scaling and growing
+- [Adoption tracking](powerbi-implementation-planning-adoption-tracking.md)
 
 > [!NOTE]
 > The series is a work in progress. We will gradually release new and updated articles over time.
+>
+> In addition to these subject areas, managing your Fabric or Premium capacity usage is an important part of your Power BI implementation. It affects not only Power BI, but also the other experiences in Fabric. For information about how to manage your Fabric capacity, see [Manage your Fabric capacity](/fabric/admin/capacity-settings?tabs=power-bi-premium&preserve-view=true) and [Evaluate and optimize your Microsoft Fabric capacity](/fabric/enterprise/optimize-capacity).
 
 ## Usage scenarios
 

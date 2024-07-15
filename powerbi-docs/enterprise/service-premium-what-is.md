@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 12/13/2023
+ms.date: 07/14/2024
 ms.custom: licensing support, intro-overview
 LocalizationGroup: Premium
 ---
@@ -46,7 +46,7 @@ Power BI Premium is a tenant-level Microsoft 365 subscription, available in two 
 
 ## Purchasing
 
-Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only global administrators or billing administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
+Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only global administrators or billing administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](/power-bi/enterprise).
 
 ## Workspaces
 
@@ -58,25 +58,27 @@ Capacity administrators automatically have their My workspaces assigned to Premi
 
 With *Power BI Premium* and [Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md), there are memory limits and other constraints for each SKU listed in the table below.
 
-| SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQuery connections (per semantic model)<sup>1</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 3</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 3</sup> |
-| ----- | --- | --- | ------ | -- | ----- | ------ | --------- |
-| F2    |   3 |   5 |   2    |  1 |     1 |    300 | 10        |
-| F4    |   3 |   5 |   2    |  1 |     2 |    300 | 10        |
-| F8    |   3 |  10 |   3.75 |  1 |     5 |    300 | 10        |
-| F16   |   5 |  10 |   7.5  |  2 |    10 |    300 | 20        |
-| F32   |  10 |  10 |  15    |  5 |    20 |    300 | 40        |
-| F64   |  25 |  50 |  30    | 10 |    40 |  1,500 | Unlimited |
-| F128  |  50 |  75 |  60    | 10 |    80 |  3,000 | Unlimited |
-| F256  | 100 | 100 | 120    | 10 |   160 |  6,000 | Unlimited |
-| F512  | 200 | 200 | 240    | 20 |   320 | 12,000 | Unlimited |
-| F1024 | 400 | 200 | 480    | 40 |   640 | 24,000 | Unlimited |
-| F2048 | 400 | 200 | 960    | 40 | 1,280 | 24,000 | Unlimited |
+| SKU | Max memory (GB)<sup>1, 2</sup> | Max concurrent DirectQuery connections (per semantic model)<sup>1</sup> | Max DirectQuery parallelism<sup>3</sup> | Live connection (per second)<sup>1</sup> | Max memory per query (GB)<sup>1</sup> | Model refresh parallelism | Direct Lake rows per table (in millions)<sup>1, 4</sup>  | Max Direct Lake model size on OneLake (GB)<sup>1, 4</sup> |
+| ---   | --- | --- | --- | -------    | -- | ----- | ------ | --------- |
+| F2    |   3 |   5 |   1     |   2    |  1 |     1 |    300 | 10        |
+| F4    |   3 |   5 |   1     |   2    |  1 |     2 |    300 | 10        |
+| F8    |   3 |  10 |   1     |   3.75 |  1 |     5 |    300 | 10        |
+| F16   |   5 |  10 |   1     |   7.5  |  2 |    10 |    300 | 20        |
+| F32   |  10 |  10 |   1     |  15    |  5 |    20 |    300 | 40        |
+| F64   |  25 |  50 |  4 - 8  |  30    | 10 |    40 |  1,500 | Unlimited |
+| F128  |  50 |  75 |  6 - 12 |  60    | 10 |    80 |  3,000 | Unlimited |
+| F256  | 100 | 100 |  8 - 16 | 120    | 10 |   160 |  6,000 | Unlimited |
+| F512  | 200 | 200 | 10 - 20 | 240    | 20 |   320 | 12,000 | Unlimited |
+| F1024 | 400 | 200 | 12 - 24 | 480    | 40 |   640 | 24,000 | Unlimited |
+| F2048 | 400 | 200 |         | 960    | 40 | 1,280 | 24,000 | Unlimited |
 
 <sup>1</sup> The [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) doesn't currently expose these metrics.
 
 <sup>2</sup> The *Max memory (GB)* column represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers in this column.
 
-<sup>3</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](../enterprise/directlake-overview.md#fallback).
+<sup>3</sup> [DirectQuery parallelism](https://powerbi.microsoft.com/blog/query-parallelization-helps-to-boost-power-bi-dataset-performance-in-directquery-mode/) can improve your query response times. The lower number indicates the default maximum number of queries that can be processed at the same time. The higher number indicates the maximum number of queries that can be processed at the same time. To change the default use the [Model.MaxParallelismPerQuery](/dotnet/api/microsoft.analysisservices.tabular.model.maxparallelismperquery) property.
+
+<sup>4</sup> These limits apply to Direct Lake tables and models, and are guardrails that affect fallback to DirectQuery. Direct Lake semantic models have additional constraints that are based on SKUs, as listed in [fallback](/fabric/get-started/direct-lake-overview#fallback).
 
 ### Semantic model memory usage
 
@@ -102,9 +104,9 @@ To install the app, see [Install the Microsoft Fabric capacity metrics app](/fab
 
 Here's what happens when you exceed your CPU limit per the SKU size you purchased:
 
-* **Power BI Premium** - If enabled, [autoscale](service-premium-auto-scale.md) kicks in. If autoscale isn't enabled, your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations).
+* **Power BI Premium** - If enabled, [autoscale](service-premium-auto-scale.md) kicks in. If autoscale isn't enabled, your capacity throttles its [interactive operations](/fabric/enterprise/fabric-operations#interactive-operations).
 
-* **[Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)** - Your capacity throttles its [interactive operations](service-premium-interactive-background-operations.md#interactive-operations). To autoscale in Power BI Embedded, see [Autoscaling in Power BI Embedded](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity).
+* **[Power BI Embedded](../developer/embedded/embedded-analytics-power-bi.md)** - Your capacity throttles its [interactive operations](/fabric/enterprise/fabric-operations#interactive-and-background-operations). To autoscale in Power BI Embedded, see [Autoscaling in Power BI Embedded](../developer/embedded/azure-pbie-scale-capacity.md#autoscale-your-capacity).
 
 ## Paginated reports
 

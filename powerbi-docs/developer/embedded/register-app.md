@@ -1,15 +1,17 @@
 ---
 title: Get started with Power BI Embedded
-description: Set up Power BI Embedded by using a setup tool to register a Microsoft Entra app, create a workspace, import content, grant permissions, and download a sample app.
+description: Set up Power BI Embedded using a setup tool to register a Microsoft Entra app, create a workspace, import content, grant permissions, and download a sample app.
 author: mberdugo
 ms.author: monaberdugo
 keywords: 
-ms.date: 01/23/2023
+ms.date: 01/23/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: intro-overview
+#customer intent: As a developer, I want to learn how to set up Power BI Embedded so that I can share my reports with others.
 ---
+
 # Set up Power BI Embedded
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data

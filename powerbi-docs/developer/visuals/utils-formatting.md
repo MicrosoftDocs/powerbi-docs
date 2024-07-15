@@ -7,8 +7,9 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/06/2023
+ms.topic: concept-article
+ms.date: 01/06/2024
+#customer intent: As a developer, I want to learn how to use formatting utils to format values and apply localization to values in Power BI visuals.
 ---
 
 # Formatting utils

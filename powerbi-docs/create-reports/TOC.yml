@@ -102,16 +102,18 @@
           href: jupyter-quick-report.md
     - name: Copilot for Power BI
       items: 
-        - name: Copilot in Fabric overview
-          href: /fabric/get-started/copilot-fabric-overview
         - name: Intro to Copilot for Power BI
           href: copilot-introduction.md
-        - name: Privacy, security, and responsible use for Copilot
-          href: /fabric/get-started/copilot-power-bi-privacy-security
+        - name: Enable Copilot in Power BI
+          href: copilot-enable-power-bi.md
         - name: Update a data model to work with Copilot
           href: copilot-evaluate-data.md
-        - name: Create report pages with Copilot
-          href: copilot-create-report.md
+        - name: Create reports in the Power BI service with Copilot
+          href: copilot-create-report-service.md
+        - name: Create reports in Power BI Desktop with Copilot
+          href: copilot-create-desktop-report.md
+        - name: Ask Copilot questions about data in the model
+          href: copilot-pane-summarize-report-data.md
         - name: Write prompts for Copilot report pages
           href: copilot-prompts-report-pages.md
         - name: Create a narrative visual of a page
@@ -120,12 +122,28 @@
           href: copilot-pane-summarize-content.md
         - name: Write prompts for Copilot narratives
           href: copilot-prompts-narratives.md
-        - name: "Use Copilot to create measure descriptions"
+        - name: Copilot DAX query features
+          href: ../transform-model/dax-query-copilot-features.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+        - name: Use Copilot to write and explain DAX queries
+          href: ../transform-model/dax-query-copilot-create.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+        - name: Use Copilot to create measure descriptions
           href: ../transform-model/desktop-measure-copilot-descriptions.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
         - name: Enhance Q&A with Copilot
           href: ../natural-language/q-and-a-copilot-enhancements.md
-        - name: Copilot in Fabric and Power BI FAQ
-          href: /fabric/get-started/copilot-faq-fabric
+        - name: Ask Copilot for data from your model
+          href: copilot-ask-data-question.md
+        - name: Copilot preview toggle
+          href: copilot-preview-toggle.md
+        - name: Copilot for Fabric and Power BI
+          items: 
+          - name: Copilot in Fabric overview
+            href: /fabric/get-started/copilot-fabric-overview?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          - name: Enable Copilot in Fabric
+            href: /fabric/get-started/copilot-enable-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          - name: Privacy, security, and responsible use for Copilot in Fabric
+            href: /fabric/get-started/copilot-power-bi-privacy-security?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+          - name: Copilot in Fabric and Power BI FAQ
+            href: /fabric/get-started/copilot-faq-fabric?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: Enable automatic page refresh
       href: desktop-automatic-page-refresh.md
     - name: Examine report elements with Performance Analyzer
@@ -205,7 +223,7 @@
     - name: Use inline hierarchy labels
       href: desktop-inline-hierarchy-labels.md
     - name: Restrict data access with row-level security
-      href: ../enterprise/service-admin-rls.md?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
+      href: /fabric/security/service-admin-row-level-security?toc=/power-bi/create-reports/TOC.json&bc=/power-bi/create-reports/breadcrumb/toc.json
     - name: Add text boxes, shapes, and smart narratives
       href: power-bi-reports-add-text-and-shapes.md
     - name: Add a hyperlink to a text box
@@ -268,6 +286,8 @@
         href: power-bi-create-mobile-optimized-report-format-visuals.md
       - name: Rearrange visual layering
         href: power-bi-create-mobile-optimized-report-order-layers.md
+      - name: Best practices for designing mobile layouts
+        href: power-bi-create-mobile-optimized-report-best-practices.md
   - name: Visualizations
     items: 
     - name: Visualization types in Power BI
@@ -300,8 +320,14 @@
       href: service-reports-visual-interactions.md
     - name: Customize x-axis and y-axis properties
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-    - name: Format column and bar charts
-      href: ../visuals/power-bi-visualization-column-bar-format.md
+    - name: Column and bar charts
+      items: 
+      - name: Create a column chart
+        href: ../visuals/power-bi-visualization-column-charts.md
+      - name: Column charts format settings   
+        href: ../visuals/power-bi-visualization-column-charts-format-settings.md
+      - name: Format column and bar charts 
+        href: ../visuals/power-bi-visualization-column-bar-format.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Create card visuals with big number tiles
@@ -356,6 +382,8 @@
         href: /azure/azure-maps/power-bi-visual-geocode?context=/power-bi/create-reports/context/context
       - name: Show real-time traffic
         href: /azure/azure-maps/power-bi-visual-show-real-time-traffic?context=/power-bi/create-reports/context/context
+      - name: Azure Maps Power BI visual Data Residency
+        href: /azure/azure-maps/power-bi-visual-data-residency?context=/power-bi/create-reports/context/context
       - name: Manage the Azure Maps visual in your organization
         href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
     - name: Matrix visuals
@@ -574,6 +602,8 @@
         href: ../paginated-reports/web-authoring/get-started-paginated-formatted-table.md
       - name: Create exportable paginated reports
         href: ../paginated-reports/web-authoring/paginated-formatted-table.md
+      - name: Create parameters for paginated reports
+        href: ../paginated-reports/web-authoring/create-parameters.md
       - name: Add filters to paginated reports
         href: ../paginated-reports/web-authoring/filters-paginated-service.md
       - name: View a paginated report
@@ -908,7 +938,7 @@
         href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
         href: ../paginated-reports/paginated-reports-data-sources.md
-      - name: Connect to Snowflake and Databricks
+      - name: Connect via Get Data
         href: ../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md
       - name: Support for ODBC data sources
         href: ../paginated-reports/paginated-reports-odbc-support.md
@@ -983,53 +1013,53 @@
       - name: Expression reference
         items:
         - name: Aggregate functions reference in paginated reports
-          href: ../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md
+          href: /sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference?context=/power-bi/create-reports/context/context
         - name: Aggregate function
           href: /sql/reporting-services/report-design/report-builder-functions-aggregate-function?context=/power-bi/create-reports/context/context
         - name: Avg function
-          href: ../paginated-reports/expressions/report-builder-functions-avg-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-avg-function?context=/power-bi/create-reports/context/context
         - name: Count function
-          href: ../paginated-reports/expressions/report-builder-functions-count-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-count-function?context=/power-bi/create-reports/context/context
         - name: CountDistinct function
-          href: ../paginated-reports/expressions/report-builder-functions-countdistinct-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-countdistinct-function?context=/power-bi/create-reports/context/context
         - name: CountRows function
-          href: ../paginated-reports/expressions/report-builder-functions-countrows-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-countrows-function?context=/power-bi/create-reports/context/context
         - name: First function
-          href: ../paginated-reports/expressions/report-builder-functions-first-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-first-function?context=/power-bi/create-reports/context/context
         - name: InScope function
-          href: ../paginated-reports/expressions/report-builder-functions-inscope-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-inscope-function?context=/power-bi/create-reports/context/context
         - name: Level function
-          href: ../paginated-reports/expressions/report-builder-functions-level-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-level-function?context=/power-bi/create-reports/context/context
         - name: Lookup function
-          href: ../paginated-reports/expressions/report-builder-functions-lookup-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-lookup-function?context=/power-bi/create-reports/context/context
         - name: LookupSet function
-          href: ../paginated-reports/expressions/report-builder-functions-lookupset-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-lookupset-function?context=/power-bi/create-reports/context/context
         - name: Last function
-          href: ../paginated-reports/expressions/report-builder-functions-last-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-last-function?context=/power-bi/create-reports/context/context
         - name: Max function
-          href: ../paginated-reports/expressions/report-builder-functions-max-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-max-function?context=/power-bi/create-reports/context/context
         - name: Min function
-          href: ../paginated-reports/expressions/report-builder-functions-min-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-min-function?context=/power-bi/create-reports/context/context
         - name: Multilookup function
-          href: ../paginated-reports/expressions/report-builder-functions-multilookup-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-multilookup-function?context=/power-bi/create-reports/context/context
         - name: Previous function
-          href: ../paginated-reports/expressions/report-builder-functions-previous-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-previous-function?context=/power-bi/create-reports/context/context
         - name: RowNumber function
-          href: ../paginated-reports/expressions/report-builder-functions-rownumber-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-rownumber-function?context=/power-bi/create-reports/context/context
         - name: RunningValue function
-          href: ../paginated-reports/expressions/report-builder-functions-runningvalue-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-runningvalue-function?context=/power-bi/create-reports/context/context
         - name: StDev function
-          href: ../paginated-reports/expressions/report-builder-functions-stdev-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-stdev-function?context=/power-bi/create-reports/context/context
         - name: StDevP function
-          href: ../paginated-reports/expressions/report-builder-functions-stdevp-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-stdevp-function?context=/power-bi/create-reports/context/context
         - name: Sum function
-          href: ../paginated-reports/expressions/report-builder-functions-sum-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-sum-function?context=/power-bi/create-reports/context/context
         - name: Union function
-          href: ../paginated-reports/expressions/report-builder-functions-union-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-union-function?context=/power-bi/create-reports/context/context
         - name: Var function
-          href: ../paginated-reports/expressions/report-builder-functions-var-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-var-function?context=/power-bi/create-reports/context/context
         - name: VarP function
-          href: ../paginated-reports/expressions/report-builder-functions-varp-function.md
+          href: /sql/reporting-services/report-design/report-builder-functions-varp-function?context=/power-bi/create-reports/context/context
     - name: Parameters
       items:
       - name: Parameters
@@ -1146,6 +1176,8 @@
       href: ../paginated-reports/paginated-reports-samples.md
     - name: Plan to migrate .rdl reports to Power BI
       href: ../guidance/migrate-ssrs-reports-to-power-bi.md?context=/power-bi/create-reports/context/context
+    - name: Using the RDL Migration tool
+      href: ../guidance/using-rdl-migration-tool.md?context=/power-bi/create-reports/context/context
     - name: Report pagination
       href: ../paginated-reports/paginated-reports-pagination.md
     - name: Default system credentials for web proxy

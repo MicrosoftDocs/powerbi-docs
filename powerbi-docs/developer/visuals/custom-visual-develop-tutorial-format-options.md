@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 12/19/2023
+#customer intent: As a Power BI visual developer, I want to learn how to add formatting options to my custom visual so I can customize the visual appearance.
 ---
 
 # Tutorial: Add formatting options to the Circle Card visual

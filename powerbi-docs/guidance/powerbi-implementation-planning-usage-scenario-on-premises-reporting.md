@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/07/2022
 ---
 
@@ -78,6 +79,8 @@ Additional configurations must be done to enable remote mobile access to Power B
 ### Licensing Power BI Report Server
 
 There are two ways to [license Power BI Report Server](../report-server/get-started.md#licensing-power-bi-report-server): Power BI Premium and SQL Server Enterprise Edition with Software Assurance.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 With the purchase of Power BI Premium capacity, Power BI Report Server can be installed on an on-premises server, provided it has the same number of cores as the capacity node's v-cores. This way, it's possible to adopt a hybrid approach supporting publication of content to the Power BI service (cloud) and to Power BI Report Server (on-premises or hosted cloud in Azure).
 

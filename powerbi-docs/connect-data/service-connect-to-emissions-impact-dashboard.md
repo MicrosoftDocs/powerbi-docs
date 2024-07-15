@@ -34,7 +34,7 @@ The Emissions Impact Dashboard for Azure is supported for EA Direct, MCA, and MP
 
 ## Install the app
 
-1. Select the following link to get to the app: [Emissions Impact Dashboard template app](https://go.microsoft.com/fwlink/?linkid=2151690). 
+1. Select the following link to get to the app: [Emissions Impact Dashboard template app](https://appsource.microsoft.com/en-us/marketplace/apps?search=emissions%20impact%20dashboard&page=1). 
 
 1. On the AppSource page for the app, select **GET IT NOW**.
 
@@ -148,6 +148,10 @@ The Emissions Impact Dashboard and the Cloud for Sustainability API provide data
 ### Is there an option for me to access my Azure emissions data using the old methodology?
 
 Unfortunately, it isn't possible for us to provide the emissions data using the old methodology.
+
+### Why can't I see emissions data for the previous month?
+
+Emissions data for a given month will be available by the 15th day after the end of that month (including nonbusiness days).
 
 ## General FAQs
 

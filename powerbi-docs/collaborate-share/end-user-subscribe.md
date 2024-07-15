@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/22/2024
+ms.date: 07/11/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -174,6 +174,8 @@ Before Power BI updates the subscription, you're given the opportunity to previe
 1. To update the existing subscription to include your report changes, select **More options** > **Include my changes** > **Update**. **Update** changes the subscription to include the new changes. 
 1. Save your subscription. 
 
+> [!NOTE]
+> The update is applied to the current page only. Changes you made to other pages in the report are not included. To include changes made to a different page in the report, navigate to that page and apply an update. 
 
 ### Customize subscriptions
 
@@ -307,7 +309,7 @@ Your Power BI admin must [enable subscriptions in your tenant](/fabric/admin/ser
 - Export reports as Word documents
 - Export reports as XML documents
 - Create email subscriptions (**Tenant settings** > **Export and sharing settings** > **Create email subscriptions**)
-:::image type="content" source="./media/end-user-subscribe/power-bi-paginated.png" alt-text="Screenshot of tenant settings with relevant export settings outlined.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-paginate.png" alt-text="Screenshot of tenant settings with relevant export settings outlined.":::
 
 In general, the process for subscribing to paginated reports is the same as [subscribing to reports and dashboards](#subscribe-to-a-report-or-dashboard), but there are a few differences worth noting. This section spells out these differences and other considerations to keep in mind when subscribing to paginated reports.  
 
@@ -339,8 +341,8 @@ If you have an existing subscription to a paginated report, and you want to upda
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output. The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML. 
 - Optionally, include a preview image of the report in the email body. The image may differ slightly from the first page of your attached report document, depending on the attachment format you select. 
 - There's no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source.
-- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. However, you can't create data-driven subscriptions for paginated reports in the Power BI service.
-
+- Paginated report subscriptions in the Power BI service are similar to email standard subscriptions in Power BI Report Server and SQL Server Reporting Services. Data-driven subscriptions in the Power BI service are called Dynamic subscriptions. Learn more about [Creating a dynamic subscription for a Power BI report (Preview) - Power BI](power-bi-dynamic-report-subscriptions.md).
+- Reports for subscriptions have a 60-minute execution time limit. If the report takes longer than 60 minutes to execute, a timeout error occurs.
 
 ## Considerations and limitations 
 

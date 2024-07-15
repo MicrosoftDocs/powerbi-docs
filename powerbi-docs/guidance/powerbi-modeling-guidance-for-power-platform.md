@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 04/20/2023
 ---
 
@@ -75,9 +76,11 @@ When the Dataverse data changes rapidly and report users need to see up-to-date 
 > [!TIP]
 > You can create a Power BI report that uses [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) to show real-time updates, but only when the report connects to a DirectQuery model.
 
-Import data models must complete a data refresh to allow reporting on recent data changes. Keep in mind that there are limitations on the number of daily scheduled data refresh operations. You can schedule up to eight refreshes per day on a shared capacity. On a [Premium](/power-bi/enterprise/service-premium-what-is) capacity, you can schedule up to 48 refreshes per day, which can achieve a 15-minute refresh frequency.
+Import data models must complete a data refresh to allow reporting on recent data changes. Keep in mind that there are limitations on the number of daily scheduled data refresh operations. You can schedule up to eight refreshes per day on a shared capacity. On a [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Microsoft Fabric capacity](/fabric/enterprise/licenses#capacity-license), you can schedule up to 48 refreshes per day, which can achieve a 15-minute refresh frequency.
 
-You can also consider using [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to achieve faster refreshes and [near real-time](/power-bi/connect-data/incremental-refresh-overview?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](/power-bi/enterprise/service-premium-what-is)).
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+You can also consider using [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to achieve faster refreshes and [near real-time](/power-bi/connect-data/incremental-refresh-overview?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](/power-bi/enterprise/service-premium-what-is) or Fabric).
 
 ### Role-based security
 
@@ -87,7 +90,7 @@ Dataverse can enforce complex [role-based security](/power-platform/admin/wp-sec
 
 A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design, providing performance is acceptable.
 
-For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) to the model, if necessary.
+For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to the model, if necessary.
 
 > [!NOTE]
 > It might be challenging to replicate some Dataverse role-based security as Power BI RLS, especially when Dataverse enforces complex permissions. Further, it might require ongoing management to keep Power BI permissions in sync with Dataverse permissions.

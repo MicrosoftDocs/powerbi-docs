@@ -1,8 +1,8 @@
 ---
 title: Combo chart in Power BI
 description: This tutorial about combo charts explains when to use them and how to build them in the Power BI service and Desktop.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: video-lnv66cTZ5ho, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
@@ -29,14 +29,7 @@ Combo charts are a great choice:
 * to check whether one measure meets the target defined by another measure
 * to conserve canvas space.
 
-## How to create a combo chart
-
-Watch Will create a combo chart using the Sales and Marketing sample.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP]  
+## How to create a combo chart  
 
 <a name="create"></a>
 
@@ -45,19 +38,19 @@ Watch Will create a combo chart using the Sales and Marketing sample.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To follow along below, use the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+To follow along, use the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** > **Open report**.
 
 1. Find your copy of the **Retail Analysis Sample PBIX file**.
 
-1. Open the **Retail Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+1. Open the **Retail Analysis Sample PBIX file** in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
 
 1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
 
 # [Power BI service](#tab/powerbi-service)
 
-To follow along below, use the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
+To follow along, use the [Retail Analysis sample](../create-reports/sample-retail-analysis.md).
 
 1. On the Home page of the Power BI service, scroll down to **Getting started with Power BI** and select **Sample reports**.
 
@@ -83,7 +76,7 @@ To follow along below, use the [Retail Analysis sample](../create-reports/sample
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-column-chart-values.png" alt-text="Screenshot of the initial column chart values.":::
 
-1. The visualization will be similar to this one.
+1. The new visualization is similar to this one.
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-column-chart-visualization.png" alt-text="Screenshot of the column chart visualization.":::
 
@@ -107,13 +100,13 @@ To follow along below, use the [Retail Analysis sample](../create-reports/sample
 
 ## Create a combo chart with two axes
 
-In this task, we'll compare gross margin and sales.
+In this task, we compare gross margin and sales.
 
 1. Create a new line chart that tracks **Gross Margin Last Year %** by **FiscalMonth**. 
 
 1. Select the ellipsis to sort it by **FiscalMonth**, then select the ellipsis again and choose **Sort axis** \> **Sort ascending**.
   
-1. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+1. In January, GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
    :::image type="content" source="media/power-bi-visualization-combo-chart/power-bi-gross-margin-line-chart.png" alt-text="Line chart showing last year's gross margin percentage.":::
 
@@ -157,7 +150,7 @@ In this task, we'll compare gross margin and sales.
 
 1. Optionally, modify the text font, size, and color and set other formatting options to improve the display and readability of the chart.
 
-From here you might want to:
+From here, you might want to:
 
 * [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
 * Save the report.
@@ -169,8 +162,8 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 
 ## Considerations and limitations
 
-* The secondary y-axis (line values) will automatically show or hide by default if its data range sufficiently overlaps with the primary y-axis (column values).  To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
-* Depending on the size of your combo chart, the data labels may or may not display.  If you don't see data labels, resize the combo chart. 
+* The secondary y-axis (line values) automatically shows or hides by default if its data range sufficiently overlaps with the primary y-axis (column values). To force show or hide the secondary y-axis, toggle the top-level toggle switch to "On" or "Off" on the "Secondary y-axis" formatting card to override this automatic behavior.
+* The data labels may or may not display, depending on the size of your combo chart. If you don't see data labels, resize the combo chart. 
 
 ## Related content
 

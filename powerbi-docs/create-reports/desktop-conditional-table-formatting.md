@@ -46,7 +46,7 @@ To format cell background or font color by color scale, in the **Format style** 
 
 Under **Summarization**, specify the aggregation type you want to use for the selected field. Under **Default formatting**, select a formatting to apply to blank values. 
 
-Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Drop down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Add a middle color** check box to also specify a **Center** value and color. 
+Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Select the drop-down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Add a middle color** check box to also specify a **Center** value and color. 
 
 ![Conditional formatting dialog for background color: Format style is set to Gradient](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
@@ -174,6 +174,8 @@ To display each state name as a live link to its website, select **Conditional f
 With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** applied to the **Overall rank** column. 
 
 ![Table with web URL and data bars for Overall rank column.](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+
+See [Add hyperlinks (URLs) to a table or matrix](power-bi-hyperlinks-in-tables.md) for more on formatting URLs in a table.
 
 ## Totals and subtotals
 

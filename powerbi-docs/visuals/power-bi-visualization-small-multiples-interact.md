@@ -1,8 +1,8 @@
 ---
 title: Interact with small multiples in Power BI
 description: This article explains how to interact with small multiples, or trellising.
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals

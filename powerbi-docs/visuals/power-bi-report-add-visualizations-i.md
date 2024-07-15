@@ -1,14 +1,14 @@
 ---
 title: Add visualizations to a Power BI report (part 1)
 description: Learn how to create a visualization in a report. 
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/14/2023
+ms.date: 07/15/2023
 ms.custom: sample-Sales-and-Marketing
 LocalizationGroup: Visualizations
 ---
@@ -27,13 +27,15 @@ This tutorial uses the Sales and Marketing Sample.
 
 1. Download the [sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix) to your desktop.
 
-2. In Power BI Desktop, select **File** > **Open report**.
+1. In Power BI Desktop, select **File** > **Open report**.
 
-3. Browse to and select the **Sales and Marketing Sample PBIX** file, and then select **Open**.
+1. Browse to and select the **Sales and Marketing Sample PBIX** file, and then select **Open**.
 
-   The **Sales and Marketing Sample PBIX** file opens in report view. :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-report-view.png":::
+   The **Sales and Marketing Sample PBIX** file opens in report view. 
+   
+   :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-report-view.png" alt-text="Screenshot that shows a report view.":::
 
-5. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
 
@@ -41,17 +43,17 @@ This tutorial uses the Sales and Marketing Sample in the Power BI service.
 
 1. Sign in to the Power BI service (`app.powerbi.com`).
 
-2. Select **Learn** in the navigation pane.
+1. Select **Learn** in the navigation pane.
 
-3. On the **Learning center** page, under **Sample reports**, locate and select the **Sales and Marketing Sample** to download it.
+1. On the **Learning center** page, under **Sample reports**, locate and select the **Sales and Marketing Sample** to download it.
 
-4. The **Sales and Marketing Sample** opens in report view:
+1. The **Sales and Marketing Sample** opens in report view:
 
    :::image type="content" source="media/power-bi-report-add-visualizations-i/sales-marketing-sample.png" alt-text="Screenshot that shows the Sales and Marketing Sample open in report view in the Power BI service." lightbox="media/power-bi-report-add-visualizations-i/sales-marketing-sample.png" border="false":::
 
-4. At the top, select **Edit** to display the **Visualizations** pane.
+1. At the top, select **Edit** to display the **Visualizations** pane.
 
-5. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-report-add-visualizations-i/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 

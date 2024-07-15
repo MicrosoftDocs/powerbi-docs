@@ -6,8 +6,9 @@ ms.author: jennyfel
 ms.reviewer: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/17/2022
+#customer intent: As a Power BI visual developer, I want to learn how to retrieve the Power BI visual's licenses and trigger the display of out of box license related notifications to the PBI user.
 ---
 
 # Licensing and transactability enforcement (Public preview)

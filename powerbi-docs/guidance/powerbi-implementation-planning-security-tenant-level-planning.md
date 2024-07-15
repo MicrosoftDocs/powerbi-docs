@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/19/2023
 ---
 
@@ -111,7 +112,7 @@ Power BI security is built upon the foundation of a [Microsoft Entra](/azure/act
   - Allow only certain types of devices to connect.
   - Conditionally allow or deny access to Power BI for specific users.
 - **Service principals:** You might need to create a Microsoft Entra [app registration](/azure/active-directory/develop/quickstart-register-app) to provision a service principal. Service principal authentication is a recommended practice when a Power BI administrator wants to run unattended, scheduled, scripts that extract data by using the Power BI [admin APIs](/rest/api/power-bi/admin). Service principals are also useful when [embedding Power BI content](/power-bi/developer/embedded/embed-service-principal) in a custom application.
-- **Real-time policies:** You can choose to set up [real-time session control or access control policies](/power-bi/enterprise/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a report in the Power BI service when it has a specific sensitivity label. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) articles.
+- **Real-time policies:** You can choose to set up [real-time session control or access control policies](/fabric/governance/service-security-using-defender-for-cloud-apps-controls), which involves both Microsoft Entra ID and [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps). For example, you can prohibit the download of a report in the Power BI service when it has a specific sensitivity label. For more information, see the [information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) articles.
 
 It might be difficult to find the right balance between unrestricted access and overly restrictive access (which frustrates users). The best strategy is to work with your Microsoft Entra administrator to understand what's currently set up. Try to remain responsive to the needs of the business while being mindful of necessary restrictions.
 
@@ -140,6 +141,8 @@ There are advantages when an external user is from another organization that als
 - **Home tenant manages the credentials:** The user's home tenant stays in control of their identity and management of credentials. You don't need to synchronize identities.
 - **Home tenant manages the user's status:** When a user leaves that organization and the account is removed or disabled, with immediate effect, the user will no longer have access to your Power BI content. It's a significant advantage because you might not know when someone has left their organization.
 - **Flexibility for user licensing:** There are cost-effective [licensing options](whitepaper-azure-b2b-power-bi.md#licensing). An external user may already have a Power BI Pro or PPU license, in which case you don't need to assign one to them. It's also possible to grant them access to content in a Premium capacity or Fabric F64 or greater capacity workspace by assigning a Fabric (free) license to them.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Key settings
 

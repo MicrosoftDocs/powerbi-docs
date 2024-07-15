@@ -90,7 +90,7 @@ The row limit doesn't apply to aggregations or calculations used to select the s
 
 By default, all users who consume a published report in the Power BI service connect to the underlying data source by using the credentials entered after publication. This situation is the same as for imported data. All users see the same data, regardless of any security rules that the underlying source defines.
 
-If you need per-user security implemented with DirectQuery sources, either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) and [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md).
+If you need per-user security implemented with DirectQuery sources, either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. For more information, see [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security) and [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md).
 
 ### Other DirectQuery limitations
 
@@ -104,7 +104,7 @@ Some other limitations of using DirectQuery include:
 
 - You can't change from import to DirectQuery mode. You can switch from DirectQuery mode to import mode if you import all the necessary data. It's not possible to switch back, mostly because of the feature set that DirectQuery doesn't support. DirectQuery models over multidimensional sources, like SAP BW, can't be switched from DirectQuery to import mode either, because of the different treatment of external measures.
 
-- Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication aren't supported in the Power BI service.
+- Calculated tables and calculated columns that reference a DirectQuery table from a data source with single sign-on (SSO) authentication are supported in the Power BI service with an assigned [shareable cloud connection](service-create-share-cloud-data-sources.md) and / or [granular access control](service-create-share-cloud-data-sources.md#granular-access-control).
 
 <!-- Cannot repro. `is` and `is not` 12/31/9999 filters fine. Version: 2.111.581.0 64-bit (November 2022)
 

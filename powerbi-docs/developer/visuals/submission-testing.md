@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 08/09/2023
+ms.date: 06/09/2024
+#customer intent: As a Power BI visual developer, I want to learn how to test my custom visual before submitting it for publication so that it meets the required test cases.
 ---
 
 # Test a Power BI custom visual before submitting it for publication

@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 12/19/2023
+ms.date: 07/04/2024
 ---
 
 # Export Power BI report to file
@@ -372,6 +372,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 * The number of exports (single visuals or report pages) that can be included in a single exported report is 50 (not including exporting paginated reports). If the request includes more exports, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) aren't supported for Power BI report export to file.
 * The `exportToFile` API exports the report with default value if used without bookmarks or reportLevelFilters.
+* Exporting a Power BI report that's connected to one or more composite semantic model, which has at least one external data source with single sign-on (SSO) enabled, is not supported. When exporting, visuals  might not render correctly.
 * The Power BI visuals listed here aren't supported. When you export a report containing these visuals, the parts of the report that contain these visuals don't render, and display an error symbol.
   * Uncertified Power BI custom visuals
   * R visuals

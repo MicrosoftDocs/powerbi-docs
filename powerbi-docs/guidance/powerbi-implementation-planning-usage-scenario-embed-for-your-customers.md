@@ -7,6 +7,7 @@ ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/16/2023
 ---
 
@@ -82,7 +83,7 @@ An app can use a service principal to acquire a Microsoft Entra token. A Microso
 
 #### Master user account
 
-An app can use a _master user account_ to acquire an AD token. A master user account is a regular Microsoft Entra user. In Power BI, the account must belong to the workspace Amin or Member role to embed workspace content. It must also have either a Power BI Pro or Power BI Premium Per User (PPU) license.
+An app can use a _master user account_ to acquire an AD token. A master user account is a regular Microsoft Entra user. In Power BI, the account must belong to the workspace Admin or Member role to embed workspace content. It must also have either a Power BI Pro or Power BI Premium Per User (PPU) license.
 
 > [!NOTE]
 > It's not possible to use a master user account to embed paginated reports.
@@ -93,8 +94,11 @@ For more information about embedding identities, see [Set up permissions to embe
 
 When embedding Power BI content for your customers, you need to ensure that content resides in a workspace that has one of the following license modes:
 
-- **Premium per capacity:** This license mode is available with [Power BI Premium](/power-bi/enterprise/service-premium-what-is).
+- **Premium capacity:** This license mode is available with [Power BI Premium](/power-bi/enterprise/service-premium-what-is).
 - **Embedded:** This license mode is available with [Power BI Embedded](https://azure.microsoft.com/products/power-bi-embedded/).
+- **Fabric capacity:** This license mode is available with [Microsoft Fabric](/fabric/enterprise/licenses#capacity-license).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 Each license mode option requires the purchase of a billable product that is a capacity-based license. A capacity-based license allows you to create _reserved capacities_.
 

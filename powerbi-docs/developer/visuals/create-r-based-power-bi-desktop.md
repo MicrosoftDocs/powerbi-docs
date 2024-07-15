@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 01/11/2024
+#customer intent: As a developer, I want to learn how to create an R-powered visual for Power BI so that I can use R scripts to create custom visuals in Power BI.
 ---
 
 # Tutorial: Create an R-powered Power BI visual

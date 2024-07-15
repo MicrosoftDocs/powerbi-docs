@@ -1,12 +1,13 @@
 ---
 title: Data retrieval guidance for paginated reports
 description: Guidance for creating data sources and datasets for Power BI paginated reports.
-author: maggiemsft
-ms.author: maggies
-ms.reviewer: nisrinivasan
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 12/15/2022
 ---
 
@@ -48,7 +49,7 @@ We recommend that you use the DAX query designer—providing it entirely meets y
 The MDX query designer requires your model to include measures. The designer has two capabilities not supported by the DAX query designer. Specifically, it allows you to:
 
 - Define query-level calculated members (in MDX).
-- Configure data regions to request [server aggregates](../paginated-reports/expressions/report-builder-functions-aggregate-functions-reference.md) in non-detail groups. If your report needs to present summaries of semi- or non-additive measures (like time intelligence calculations, or distinct counts), it will likely be more efficient to use server aggregates than to retrieve low-level detail rows and have the report compute summarizations.
+- Configure data regions to request [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) in non-detail groups. If your report needs to present summaries of semi- or non-additive measures (like time intelligence calculations, or distinct counts), it will likely be more efficient to use server aggregates than to retrieve low-level detail rows and have the report compute summarizations.
 
 ## Query result size
 

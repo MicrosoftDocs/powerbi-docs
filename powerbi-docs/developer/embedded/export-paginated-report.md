@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 08/23/2023
+ms.date: 05/23/2024
 ---
 
 # Export paginated report to file

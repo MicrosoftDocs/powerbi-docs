@@ -151,7 +151,7 @@ Next, specify the date column by selecting it from the dropdown menu within the 
 Setting your own date table follows the same behavior as what exists in Power BI Desktop. Further details on column validation, scenarios for creating your own date table, and impact on date hierarchies can be found in the [date tables documentation](desktop-date-tables.md)
 
 ### Define row-level security roles and rules
-You can define [security roles](../enterprise/service-admin-rls.md) by taking the following steps:
+You can define [security roles](/fabric/security/service-admin-row-level-security) by taking the following steps:
 
 1. From the ribbon, select Manage roles.
 
@@ -232,7 +232,7 @@ For more information on accessing your audit logs, see the [Access your audit lo
 
 
 ## Capacity utilization and reporting
-You can monitor the effect editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity effect can be monitored for editing data models in the web using the following [operations](../enterprise/service-premium-interactive-background-operations.md#background-operations).
+You can monitor the effect editing data models in the service has on your Power BI Premium capacities using the [Premium metrics app](../enterprise/service-premium-metrics-app.md). Capacity effect can be monitored for editing data models in the web using the following [operations](/fabric/enterprise/fabric-operations#background-operations).
 
 |Operation  |Description  |Workload |Type  |
 |---------|---------|---------|---------|
@@ -292,4 +292,4 @@ This article provided information about the preview for editing data models in t
 * [Work with Modeling view](desktop-modeling-view.md)
 * [Understand model relationships](desktop-relationships-understand.md)
 * [Learn DAX basics](desktop-quickstart-learn-dax-basics.md)
-* [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md)
+* [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security)

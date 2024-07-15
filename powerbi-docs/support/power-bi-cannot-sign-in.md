@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
 ms.custom: ''
-ms.date: 01/25/2024
+ms.date: 06/25/2024
 ---
 
 # Troubleshoot sign-in issues for Power BI

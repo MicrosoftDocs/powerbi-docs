@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 07/12/2023
+ms.topic: concept-article
+ms.date: 12/12/2023
+#customer intent: As a Power BI visual developer, I want to understand how data view mapping works in Power BI visuals so that I can create different types of visuals.
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -224,7 +225,7 @@ The previous example reads "Map my `category` data role so that for every field 
 The next example uses the same two data roles as the previous example and adds two more data roles named `grouping` and `measure2`.
 
 ```json
-"dataRole":[
+"dataRoles":[
     {
         "displayName": "Category",
         "name": "category",
@@ -246,22 +247,33 @@ The next example uses the same two data roles as the previous example and adds t
         "kind": "Grouping"
     }
 ],
-"dataViewMappings":{
-    "categorical": {
-        "categories": {
-            "for": { "in": "category" }
-        },
-        "values": {
-            "group": {
-                "by": "grouping",
-                "select":[
-                    { "bind": { "to": "measure" } },
-                    { "bind": { "to": "measure2" } }
-                ]
+"dataViewMappings": [
+    {
+        "categorical": {
+            "categories": {
+                "for": {
+                    "in": "category"
+                }
+            },
+            "values": {
+                "group": {
+                    "by": "grouping",
+                    "select": [{
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "measure2"
+                            }
+                        }
+                    ]
+                }
             }
         }
     }
-}
+]
 ```
 
 The difference between this mapping and the basic mapping is how `categorical.values` is mapped. When you map the `measure` and `measure2` data roles to the data role `grouping`, the x-axis and y-axis can be scaled appropriately.

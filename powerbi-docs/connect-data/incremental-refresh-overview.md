@@ -147,9 +147,14 @@ For *very large* models in Premium capacities that likely contain billions of ro
 
 ### Current date and time
 
-The current date and time is based on the system date at the time of refresh. If scheduled refresh is enabled for the model in the service, the specified time zone is taken into account when determining the current date and time. Both individual and scheduled refreshes through the service observe the time zone if available. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone specified determines the current date and time based on Pacific Time, not Coordinated Universal Time (UTC), which would return the next day. Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), don't consider the scheduled refresh time zone.
+By default, the current date and time is determined based on Coordinated Universal Time (UTC) at the time of refresh. For on-demand and scheduled refreshes, you can configure a different time zone under 'Schedule refresh' that will be taken into account when determining the current date and time. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone configured determines the current date and time based on Pacific Time, not UTC, which would return the next day. 
+
+> [!NOTE]
+> The time zone configuration is taken into account even if the schedule refresh is disabled.
 
 :::image type="content" source="media/incremental-refresh-overview/time-zone.png" alt-text="Screenshot of Scheduled refresh dialog showing the Time zone input field":::
+
+Refresh operations not invoked through the Power BI service, such as the [XMLA TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true) or [Enhanced Refresh API](/power-bi/connect-data/asynchronous-refresh#parameters), do not consider the configured scheduled refresh time zone and default to UTC.
 
 ## Configure incremental refresh and real-time data
 

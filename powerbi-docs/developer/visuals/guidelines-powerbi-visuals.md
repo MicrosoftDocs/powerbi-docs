@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/04/2023
+ms.topic: concept-article
+ms.date: 07/02/2024
+#customer intent: As a Power BI visual developer, I want to learn how to publish Power BI custom visuals to Microsoft AppSource so that others can discover and use them.
 ---
 
 # Guidelines for publishing Power BI custom visuals
@@ -22,9 +23,11 @@ Like the free Power BI visuals, an IAP Power BI visual can also be certified. Be
 
 ### Power BI visuals with IAP features
 
-An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate them. Currently, Microsoft doesn't provide native APIs to support the purchase of apps and add-ins.
+An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features available for a fee. In the Power BI visual's description, developers must notify users about features that require additional purchases to operate them.
 
-Developers can use any third-party payment system for these purchases. For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies#11002-displaying-ads).
+The transactability and license management of these visuals are the responsibility of the ISV. They can be managed using any platform, but we recommend Microsoft's [Licensing API](./licensing-api.md). With the Licensing API, licensed visuals are purchased through [AppSource](./custom-visual-licenses.md) and customers can manage licenses in the [Microsoft 365 admin portal](https://admin.microsoft.com/Adminportal/Home?#/homepage). For more information about license management, see [Frequently asked questions about Custom visual license management](./licensing-faq.yml).
+
+For more information, see [our Commercial Marketplace certification policy](/legal/marketplace/certification-policies).
 
 >[!IMPORTANT]  
 > If you update your Power BI visual from *free* to *additional purchase may be required*, customers must receive the same level of free functionality as before the update. You can add optional advanced paid features in addition to the existing free features.
@@ -105,7 +108,7 @@ When using a commercial logo, the color of the logo must be grey (hex color #C8C
 
 ### Commercial logo size
 
-A Power BI visual uses two commercial logos&mdash;one for the offer details page and one for the search page. Provide the large logo in PNG format at 300 x 300 px. The Partner Center will use this logo to generate a smaller logo for the search page. You can optionally replace this with a different image later.
+A Power BI visual uses two commercial logos - one for the offer details page and one for the search page. Provide the large logo in PNG format at 300 x 300 px. The Partner Center uses this logo to generate a smaller logo for the search page. You can optionally replace this logo with a different image later.
 
 ### Commercial logo behavior
 
@@ -139,7 +142,7 @@ When publishing a Power BI visual, consider the following recommendations to giv
 * Create a [landing page](landing-page.md) that provides information about your Power BI visual. Include details like how to use the visual and where to purchase the license. A meaningful landing page helps report creators use the visual correctly and easily.
 * Don't include videos that are automatically triggered.
 * Add only material that improves the customer's experience, such as information or links to license purchasing details and how to use IAP features.
-* For the customer's convenience, add the license key or token related fields at the top of the format pane.
+* Add the license key or token related fields at the top of the format pane for the customer's convenience.
 * Submit a short screen-recording video that shows how to use the visual.
 * Submit a detailed description of the visual's functionality. Include information about supported features such as [high contrast](high-contrast-support.md), [report page tooltip](add-tooltips.md), and [drill down](drill-down-support.md).
 * Check the quality of your code. Make sure it's up to standard, including unhandled exceptions.

@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 02/25/2024
+ms.date: 03/30/2024
 ---
 
 # About storytelling with Power BI in PowerPoint
@@ -33,9 +33,11 @@ To use the Power BI add-in for PowerPoint, you must have access to the Office ad
 
 To be able to view live Power BI data in PowerPoint, you must have an active Power BI account and a Fabric Free license, and access to the data. If the Power BI report isn't located in a Premium capacity or Fabric F64 or greater capacity, a Power BI Pro license is needed.
 
+The Power BI add-in for PowerPoint requires Office version 2312 (Build 17126) or higher.
+
 ## Security
 
-Power BI data added to PowerPoint using the Power BI add-in remains in Power BI. No data is exported from Power BI. As such, the data respects all Power BI permissions and data security, including [row-level security (RLS)](../enterprise/service-admin-rls.md), so your data remains secure.
+Power BI data added to PowerPoint using the Power BI add-in remains in Power BI. No data is exported from Power BI. As such, the data respects all Power BI permissions and data security, including [row-level security (RLS)](/fabric/security/service-admin-row-level-security), so your data remains secure.
 
 ## Information for the Power BI administrator
 

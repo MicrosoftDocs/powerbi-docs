@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 05/03/2024
 LocalizationGroup: Data from files
 ---
 # Premium features of dataflows
@@ -84,7 +84,7 @@ To make the best use of the compute engine, split the ETL stage into two separat
 
 **Answer:** If you enable the enhanced compute engine, there are two possible explanations that could lead to slower refresh times:
 
-* When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued. That increase then reduces the number of dataflows that can refresh concurrently. To address this problem, when enabling enhanced compute, increase the memory assigned for dataflows to ensure that the memory available for concurrent dataflow refreshes remains the same.
+* When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued. That increase then reduces the number of dataflows that can refresh concurrently. To address this problem, when enabling enhanced compute, spread dataflow refreshes over time and evaluate if your capacity size is adequate, to ensure that there is memory available for concurrent dataflow refreshes.
 
 * Another reason you might encounter slower refreshes is that the compute engine only works on top of existing entities. If your dataflow references a data source that's not a dataflow, you won't see an improvement. There will be no performance increase, because in some big data scenarios, the initial read from a data source would be slower because the data needs to be passed to the enhanced compute engine.  
 
@@ -143,6 +143,9 @@ There are a few known limitations with DirectQuery and dataflows:
 * Large dataflows might have trouble with timeout issues when viewing visualizations. Large dataflows that run into trouble with timeout issues should use Import mode.
 
 * Under data source settings, the dataflow connector will show invalid credentials if you're using DirectQuery. This warning doesn't affect the behavior, and the semantic model will work properly.
+
+* When a dataflow has 340 columns or more, using the dataflow connector in Power BI Desktop with the enhanced compute engine setting enabled results in the DirectQuery option being disabled for the dataflow. To use DirectQuery in such configurations, use fewer than 340 columns.
+
 
 ## Computed entities
 

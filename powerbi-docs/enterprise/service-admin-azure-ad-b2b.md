@@ -8,7 +8,7 @@ ms.reviewer: painbar
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/07/2024
+ms.date: 04/24/2024
 LocalizationGroup: Administration
 ---
 
@@ -87,7 +87,7 @@ The guest user gets an email indicating that you shared the app with them.
 
 ![Screenshot of the email that guest user receives when the app has been shared.](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
-The guest user must sign in with their organization email address. They'll receive a prompt to accept the invitation after signing in. After signing in, the app opens for the guest user. To return to the app, they should bookmark the link or save the email.
+The guest user must sign in with their organization email address. They'll receive a prompt to accept the invitation after signing in. After they sign in, the app opens for the guest user. To return to the app, they should bookmark the link or save the email.
 
 ## Discoverability for B2B content
 
@@ -181,7 +181,7 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 
 * Information protection in Power BI doesn't support B2B and multi-tenant scenarios. This means that although external users may be able to see sensitivity labels in Power BI:
     * They can't set labels
-    * [Mandatory](service-security-sensitivity-label-mandatory-label-policy.md) and [default label](service-security-sensitivity-label-default-label-policy.md) polices won't be enforced for them
+    * [Mandatory](/fabric/governance/service-security-sensitivity-label-mandatory-label-policy) and [default label](/fabric/governance/service-security-sensitivity-label-default-label-policy) polices won't be enforced for them
     * While they can view a report that has a label with protection settings, if they export data from that report to a file, they may not be able to open the file, as it has the Microsoft Entra permissions of the original organization that it got due to the label on the report.
 
 * Some experiences aren't available to guest users even when they have higher-level permissions. To update or publish reports, guest users need to use the Power BI service, including Get Data, to upload Power BI Desktop files. The following experiences aren't supported:
@@ -202,11 +202,11 @@ Additionally, to use in-place semantic model sharing, tenant admins need to enab
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
 * If you share directly to a guest user, Power BI will send them an email with the link. To avoid sending an email, add the guest user to a security group and share to the security group.
-* If you disable the **Allow Microsoft Entra guest users to edit and manage content in the organization** tenant setting, guest users will continue to have any workspace role and item permissions that they have previously been granted, or will be granted, in the provider environment. For more information about the **Allow Microsoft Entra guest users to edit and manage content in the organization** tenant setting, see [Allow Microsoft Entra guest users to edit and manage content in the organization](/fabric/admin/service-admin-portal-export-sharing#allow-azure-active-directory-guest-users-to-edit-and-manage-content-in-the-organization).  
+* If you disable the **Guest users can browse and access Fabric content** tenant setting, guest users continue to have any workspace role and item permissions that they were previously granted, or will be granted, in the provider environment. For more information, see the [Guest users can browse and access Fabric content](/fabric/admin/service-admin-portal-export-sharing#guest-users-can-browse-and-access-fabric-content) tenant setting.  
 
 ## Related content
 
 * For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Microsoft Entra B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
-* For information about Microsoft Entra B2B, see [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/).
-* For information about in-place semantic model sharing, see [Power BI in-place semantic model sharing with guest users in external organizations(preview)](../collaborate-share/service-dataset-external-org-share-about.md).
+* For information about Microsoft Entra B2B, see [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b/)
+* For information about in-place semantic model sharing, see [Power BI in-place semantic model sharing with guest users in external organizations (preview)](../collaborate-share/service-dataset-external-org-share-about.md).
 * For information about government clouds, see [Power BI for US Government](service-govus-overview.md).

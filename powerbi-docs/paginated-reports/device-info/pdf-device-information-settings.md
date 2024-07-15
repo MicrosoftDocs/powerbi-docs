@@ -1,7 +1,7 @@
 ---
 title: "PDF device information settings for Power BI paginated reports"
 description: Learn about the device information settings that are available for rendering Power BI paginated reports in PDF format.
-ms.date: 01/05/2023
+ms.date: 06/28/2023
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -21,8 +21,6 @@ ms.author: maggies
 | **AccessiblePDF** | Indicates whether to render an accessible/tagged PDF, which is larger in size but easier for screen readers and other assistive technologies to read and navigate. The default value is **false**. [Available in Power BI Report Server (March 2018) and later] |
 |**Columns**|The number of columns to set for the report. This value overrides the report's original settings.|  
 |**ColumnSpacing**|The column spacing to set for the report. This value overrides the report's original settings.|  
-|**DpiX**|The resolution of the output device in x-direction.|  
-|**DpiY**|The resolution of the output device in y-direction.|  
 |**EndPage**|The last page of the report to render. The default value is the value for **StartPage**.|  
 |**HumanReadablePDF**|Indicates whether to render an uncompressed PDF file, which is larger in size but more human-readable in a plain-text editor. The default value is **false.**|  
 |**MarginBottom**|The bottom margin value, in inches, to set for the report. You must include an integer or decimal value followed by "in" (for example, 1in). This value overrides the report's original settings.|  

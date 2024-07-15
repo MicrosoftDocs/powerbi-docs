@@ -7,17 +7,26 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 03/11/2024
+ms.date: 07/03/2024
 ---
 
 # Power BI visuals API changelog
 
 This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
 
-## Coming soon
+<!--- ## Coming soon
+https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
+* Authentication API extensions --->
 
-* Hierarchial identity filter
-* Authentication API extensions
+## API v5.10.0
+
+* **DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
+* Supports Desktop June 2024
+
+## API v5.9.0
+
+* [**Hierarchial identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that uses Matrix DataView Mapping to filter data based on data points that use a hierarchal structure. This is useful for custom visuals that leverage group-on keys semantic models and want to filter hierarchies based on data points.
+* Supports Desktop March 2024
 
 ## API v5.8.0
 

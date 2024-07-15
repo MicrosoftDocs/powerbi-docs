@@ -7,6 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/10/2023
 ---
 
@@ -54,7 +55,7 @@ When working with semantic models using gateway and cloud connections, your abil
 
 ### Row-level security
 
-External-hosted models and Power BI desktop models can enforce row-level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group might be able to view report data only for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md).
+External-hosted models and Power BI desktop models can enforce row-level security (RLS) to limit the data that certain users can retrieve. For example, users assigned to a **Salespeople** security group might be able to view report data only for the sales regions they're assigned to. RLS roles are *dynamic* or *static*. Dynamic roles filter by the report user, while static roles apply the same filters for all users assigned to the role. For more information, see [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security).
 
 ### Excel workbook models
 

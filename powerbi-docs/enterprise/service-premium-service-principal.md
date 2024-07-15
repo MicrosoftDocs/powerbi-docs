@@ -54,7 +54,7 @@ Before you can start using service principals in Power BI, an admin must enable 
 1. Enter the group name.
 1. Select **Apply**.
 
-![Screenshot that shows the Admin portal with tenant settings selected. Allow service principals to use Power BI APIs is expanded with enabled highlighted.](media/service-premium-service-principal/admin-portal.png)
+:::image type="content" source= "media/service-premium-service-principal/admin-portal-2.png" alt-text="Screenshot that shows the Admin portal with tenant settings selected. Allow service principals to use Power BI APIs is expanded with enabled highlighted. ":::
 
 ## Workspace access
 

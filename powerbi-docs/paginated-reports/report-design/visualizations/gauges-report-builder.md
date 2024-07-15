@@ -91,7 +91,7 @@ ms.reviewer: monaraya
   
  `=Sum(CDbl(Fields!MyField.Value))`  
   
- For more information about aggregate expressions, see [Aggregate Functions Reference (Power BI Report Builder)](../../expressions/report-builder-functions-aggregate-functions-reference.md).  
+ For more information about aggregate expressions, see [Aggregate Functions Reference (Power BI Report Builder)](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference).  
   
 ### Define a group on a gauge
 

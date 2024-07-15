@@ -7,7 +7,9 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 03/13/2024
+ms.date: 06/20/2024
+no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Explore your data in the Power BI service (preview)
@@ -67,7 +69,10 @@ What if while working with a datamart, you’d like to visualize and explore the
 
 ## 3. Begin exploring by building your matrix or visual 
 
-Regardless of where you start from, when you launch the explore experience you land in the new focused view. Your data is on the right, and you can edit, drag and drop, or select fields to start building a matrix or visual.  
+Regardless of where you start from, when you launch the explore experience you land in the new focused view. Your data appears in the data pane, and you can edit, drag and drop, or select fields to start building a matrix or visual. 
+
+> [!NOTE]
+> Some users may see the data pane on the left as we experiment with placement to optimize the experience.  
 
 :::image type="content" source="media/explore-data-service/begin-exploration.png" alt-text="Screenshot showing the Explore window opened." lightbox="media/explore-data-service/begin-exploration.png":::
 
@@ -81,11 +86,7 @@ If you prefer, you can swap the layout to show the visual and matrix side by sid
 
 :::image type="content" source="media/explore-data-service/change-layout-view.png" alt-text="Screenshot showing switching the layout to side by side." lightbox="media/explore-data-service/change-layout-view.png":::
 
-To adjust which fields are located on the rows and columns, use the field wells in the **Rearrange data** section of the data pane. You only see the field wells of one visual, either the chart or the matrix.  
-
-:::image type="content" source="media/explore-data-service/rearrange-data-columns-rows.png" alt-text="Screenshot showing rearranging either the visual or the matrix.":::
-
-To see the other field wells, select the visual you want to edit. You know which one you’re editing by the black outline. 
+To adjust which fields are located on the rows and columns, use the field wells in the **Rearrange data** section of the data pane. You only see the field wells of one visual, either the chart or the matrix. To see the other field wells, select the visual you want to edit. You know which one you’re editing by the black outline. 
 
 :::image type="content" source="media/explore-data-service/rearrange-data-visual-black-outline.png" alt-text="Screenshot showing modifying the section with the black border." lightbox="media/explore-data-service/rearrange-data-visual-black-outline.png":::
 
@@ -97,7 +98,6 @@ For example, these visuals have a date hierarchy and you want to drill down to q
 
 When you do so on the visual, the matrix also updates accordingly.
 
-:::image type="content" source="media/explore-data-service/drill-down-quarter-chart-matrix.png" alt-text="Screenshot showing chart drilled down to the quarter level." lightbox="media/explore-data-service/drill-down-quarter-chart-matrix.png" :::
 
 > [!NOTE]
 > Certain matrix configurations can't currently be visualized in other chart types. Depending on the situation, a visual may not be rendered or the sort and drill state may not apply. For example, if you expand one specific row in the matrix, that won't apply in the visual, because that interaction within other visual types isn't currently supported.  
@@ -116,7 +116,7 @@ In this exploration experience, the filters are added as pills at the top of vie
 
 ### Save your exploration
 
-To save and share your exploration, select the **Save** button in the upper-left corner. In the dialog, you can name the exploration, pick a workspace to save it to, and add a sensitivity label, if applicable.  
+To save and share your exploration, select the **Save** button in the upper-left corner. In the dialog, you can name the exploration, pick a workspace to save it to, and add a sensitivity label, if applicable.  This will save your current canvas layout (horizontal or vertical) of the exploration as well.
 
 > [!NOTE]
 > You can only save explorations to workspaces in a Premium capacity at this time. 
@@ -125,23 +125,17 @@ To save and share your exploration, select the **Save** button in the upper-left
 
 ### Share your exploration
 
-Now you’re ready to share your exploration with others. Select the **Share** button in the upper-right corner. 
+Now you’re ready to share your exploration with others. Select the **Share** button in the upper-right corner. Continue to add your recipients' email addresses and share. You should be immediately prompted to share the underlying dataset so the recipients can view the contents of your exploration. If you're not prompted, ensure that you [share the dataset](../connect-data/service-datasets-share.md) with read permissions.
 
-Select **People in your organization can view**.
+If you'd like to change your audience, select **People in your organization can view**.
 
 :::image type="content" source="media/explore-data-service/create-send-link.png" alt-text="Screenshot showing selecting People in your organization can view.":::
 
-Choose your audience and their permissions, and select **Apply**. 
-
-:::image type="content" source="media/explore-data-service/select-audience-permissions.png" alt-text="Screenshot showing selecting audience and permissions.":::
-
-Provide email addresses and a message, then select **Send**.
+Choose your audience and their permissions, and select **Apply**. Provide email addresses and a message, then select **Send**.
 
 Or select **Copy link** and send it by another means.
 
-:::image type="content" source="media/explore-data-service/copy-link-send.png" alt-text="Screenshot showing selecting copy link to share it another way.":::
 
-Continue to add your recipients' email addresses and share. You should be immediately prompted to share the underlying dataset so the recipients can view the contents of your exploration. If you're not prompted, ensure that you [share the dataset](../connect-data/service-datasets-share.md) with read permissions.
 
 > [!NOTE]
 > Usually for reports, sharing the underlying dataset is done behind the scenes.
@@ -164,7 +158,7 @@ You can share this new report as with other reports by using the **Share** butto
 ### To share
 
 - Exploration users need a Power BI Pro or PPU license to share.
-- When you share, Power BI prompts you to grant build permissions to the underlying dataset so the recipient can view. If you skip this second dialog, the recipient can't see the exploration and has to ask you for permissions.
+- When you share your exploration, you also need to grant build permissions to the underlying dataset so your recipients can view the exploration. If you skip this second step, your recipients can't see the exploration, and have to request permissions.
 - Explorations aren't currently shown in lineage view as related to the dataset.
 
 ### To open a saved exploration
@@ -180,6 +174,7 @@ Explore isn't currently available from datasets and reports on the Power BI serv
 All native visuals are supported with the exception of these visuals: 
 
 - Matrix
+- Slicers
 - Q&A
 - Smart narratives
 - Metrics

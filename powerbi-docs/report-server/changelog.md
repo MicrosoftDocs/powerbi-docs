@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/26/2024
+ms.date: 07/02/2024
 ---
 
 # Change log for Power BI Report Server
@@ -16,13 +16,39 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
 
+## May 2024
+
+### Power BI Report Server
+
+- *Version:1.20.8944.34536 (build 15.0.1115.194), Released: June 27, 2024*
+  - Bug fixes
+    - Fixed issue related to exporting reports with images to Excel.
+
+- *Version: 1.20.8926.40580 (build 15.0.1115.178), Released: June 10, 2024*
+  - Bug fixes
+    - Fixed issue related to Office Online Server (OOS) not working as expected.
+
+- *Version: 1.20.8910.25479 (build 15.0.1115.165), Released: May 28, 2024*
+  - Features
+    - Removed AngularJS remnants
+    - A recent security change requires a privilaged user to apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server machine for certain data types. Read more details in the article, [SQL Server certificate isn't trusted on the client](/power-query/connectors/sql-server#sql-server-certificate-isnt-trusted-on-the-client-power-bi-desktop-or-on-premises-data-gateway).
+    - Custom Visual API shipped with release - version v5.8.0
+    - Various bug fixes
+
+### Power BI Desktop (optimized for Power BI Report Server)
+    
+- *Version: 2.129.1127.0 (May 2024), Released: May 28, 2024*   
+   - Features
+     - Support for many new visuals
+     - Updated snowflake connector support
+
 ## January 2024
 
 ### Power BI Report Server
 
-- *Version:1.19.8779.19175 (build 15.0.1114.33), Released: January 26, 2024*
+- *Version: 1.19.8779.19175 (build 15.0.1114.33), Released: January 26, 2024*
   - Features
-    - Support for many to many cardinality in Power BI reports
+    - Support for many-to-many cardinality in Power BI reports
     - Custom Visual API shipped with release - version v5.7.0
   - Bug fixes
     - Fixed an issue with invisible Download and Reload buttons for Excel workbooks 
