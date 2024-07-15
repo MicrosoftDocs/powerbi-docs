@@ -64,7 +64,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
 
-To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by simply typing: *:::no-loc text="Profit = [Sales Amount] – [Total Product Cost]":::*.
+To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by simply typing: `*:::no-loc text="Profit = [Sales Amount] – [Total Product Cost]":::*`.
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-04.png" alt-text="Screenshot of entering a visual calculation.":::
 
@@ -131,7 +131,7 @@ Many functions have an optional **:::no-loc text="Reset":::** parameter that is 
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
 * A numerical value, referring to the fields on the axis, with the highest field being one.
 
-To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as *RUNNINGSUM([Sales Amount], HIGHESTPARENT)* or *RUNNINGSUM([Sales Amount], 1)* returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as *RUNNINGSUM([Sales Amount], LOWESTPARENT)* or *RUNNINGSUM([Sales Amount], 2)* returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as *RUNNINGSUM([Sales Amount])* does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
+To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as `RUNNINGSUM([Sales Amount], :::no-loc text="HIGHESTPARENT")` or `RUNNINGSUM([Sales Amount], 1)` returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as `RUNNINGSUM([Sales Amount], :::no-loc text="LOWESTPARENT":::)` or `RUNNINGSUM([Sales Amount], 2)` returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as `RUNNINGSUM([Sales Amount])` does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
 
 ## :::no-loc text="Axis"::: and :::no-loc text="Reset"::: vs ORDERBY and PARTITIONBY
 
@@ -159,18 +159,18 @@ Visual calculations also introduce a set of functions specific to visual calcula
 
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
-| [:::no-loc text="COLLAPSE":::](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | Percent of parent = DIVIDE([Sales Amount], :::no-loc text="COLLAPSE":::([Sales Amount], :::no-loc text="ROWS":::)) | N/A |
-| [:::no-loc text="COLLAPSEALL":::](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | Percent of grand total = DIVIDE([Sales Amount], :::no-loc text="COLLAPSEALL":::([Sales Amount], :::no-loc text="ROWS":::)) | N/A |
-| [:::no-loc text="EXPAND":::](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | Average of children = :::no-loc text="EXPAND":::(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::) | N/A |
-| [:::no-loc text="EXPANDALL":::](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::) | N/A |
-| [:::no-loc text="FIRST":::](/dax/first-function-dax) | Refers to the first row of an axis. | ProfitVSFirst = [Profit] – :::no-loc text="FIRST":::([Profit]) | [INDEX(1)](/dax/index-function-dax) |
-| [:::no-loc text="ISATLEVEL":::](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | IsFiscalYearAtLevel = :::no-loc text="ISATLEVEL":::([Fiscal Year]) | N/A |
-| [:::no-loc text="LAST":::](/dax/last-function-dax) | Refers to the last row of an axis. | ProfitVSLast = [Profit] – :::no-loc text="LAST":::([Profit]) | [INDEX(-1)](/dax/index-function-dax) |
-| [:::no-loc text="MOVINGAVERAGE":::](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | MovingAverageSales = :::no-loc text="MOVINGAVERAGE":::([Sales Amount], 2) | [WINDOW](/dax/window-function-dax) |
-| [:::no-loc text="NEXT":::](/dax/next-function-dax) | Refers to a next row of an axis. | ProfitVSNext = [Profit] – :::no-loc text="NEXT":::([Profit]) | [OFFSET(1)](/dax/offset-function-dax) |
-| [:::no-loc text="PREVIOUS":::](/dax/previous-function-dax) | Refers to a previous row of an axis. | ProfitVSPrevious = [Profit] – :::no-loc text="PREVIOUS":::([Profit]) | [OFFSET(-1)](/dax/offset-function-dax) |
-| [:::no-loc text="RANGE":::](/dax/range-function-dax) | Refers to a slice of rows of an axis. | AverageSales = AVERAGEX(:::no-loc text="RANGE":::(1), [Sales Amount]) | [WINDOW](/dax/window-function-dax) |
-| [:::no-loc text="RUNNINGSUM":::](/dax/runningsum-function-dax) | Adds a running sum on an axis. | RunningSumSales = :::no-loc text="RUNNINGSUM":::([Sales Amount]) | [WINDOW](/dax/window-function-dax) |
+| [:::no-loc text="COLLAPSE":::](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | `Percent of parent = DIVIDE([Sales Amount], :::no-loc text="COLLAPSE":::([Sales Amount], :::no-loc text="ROWS":::))` | N/A |
+| [:::no-loc text="COLLAPSEALL":::](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | `Percent of grand total = DIVIDE([Sales Amount], :::no-loc text="COLLAPSEALL":::([Sales Amount], :::no-loc text="ROWS":::))` | N/A |
+| [:::no-loc text="EXPAND":::](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | `Average of children = :::no-loc text="EXPAND":::(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::)` | N/A |
+| [:::no-loc text="EXPANDALL":::](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | `Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::)` | N/A |
+| [:::no-loc text="FIRST":::](/dax/first-function-dax) | Refers to the first row of an axis. | `ProfitVSFirst = [Profit] – :::no-loc text="FIRST":::([Profit])` | [INDEX(1)](/dax/index-function-dax) |
+| [:::no-loc text="ISATLEVEL":::](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | `IsFiscalYearAtLevel = :::no-loc text="ISATLEVEL":::([Fiscal Year])` | N/A |
+| [:::no-loc text="LAST":::](/dax/last-function-dax) | Refers to the last row of an axis. | `ProfitVSLast = [Profit] – :::no-loc text="LAST":::([Profit])` | [INDEX(-1)](/dax/index-function-dax) |
+| [:::no-loc text="MOVINGAVERAGE":::](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | `MovingAverageSales = :::no-loc text="MOVINGAVERAGE":::([Sales Amount], 2)` | [WINDOW](/dax/window-function-dax) |
+| [:::no-loc text="NEXT":::](/dax/next-function-dax) | Refers to a next row of an axis. | `ProfitVSNext = [Profit] – :::no-loc text="NEXT":::([Profit])` | [OFFSET(1)](/dax/offset-function-dax) |
+| [:::no-loc text="PREVIOUS":::](/dax/previous-function-dax) | Refers to a previous row of an axis. | `ProfitVSPrevious = [Profit] – :::no-loc text="PREVIOUS":::([Profit])` | [OFFSET(-1)](/dax/offset-function-dax) |
+| [:::no-loc text="RANGE":::](/dax/range-function-dax) | Refers to a slice of rows of an axis. | `AverageSales = AVERAGEX(:::no-loc text="RANGE":::(1), [Sales Amount])` | [WINDOW](/dax/window-function-dax) |
+| [:::no-loc text="RUNNINGSUM":::](/dax/runningsum-function-dax) | Adds a running sum on an axis. | `RunningSumSales = :::no-loc text="RUNNINGSUM":::([Sales Amount])` | [WINDOW](/dax/window-function-dax) |
 
 ## Formatting visual calculations
 
