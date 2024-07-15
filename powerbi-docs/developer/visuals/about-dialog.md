@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.custom:
 ms.topic: concept-article
-ms.date: 03/18/2024
+ms.date: 07/15/2024
+#customer intent: As a Power BI user, I want to know what permissions a visual requests so that I can make an informed decision about using it.
 ---
 
 # About Power BI visuals
