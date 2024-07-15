@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/15/2023
+ms.date: 07/15/2023
 LocalizationGroup: Conceptual
 ---
 
@@ -331,7 +331,7 @@ See [Private links for accessing Power BI](/fabric/security/security-private-lin
 
 While the Private Link integration feature provides secure inbound connections to Power BI, the VNet connectivity feature enables secure outbound connectivity from Power BI to data sources within a VNet.
 
-VNet gateways (Microsoft-managed) will eliminate the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. They will, however, still follow the familiar process of managing security and data sources, as with an on-premises data gateway.
+VNet gateways (Microsoft-managed) eliminates the overhead of installing and monitoring on-premises data gateways for connecting to data sources associated with a VNet. However, they still follow the familiar process of managing security and data sources, as with an on-premises data gateway.
 
 The following is an overview of what happens when you interact with a Power BI report that is connected to a data source within a VNet using VNet gateways:
 
@@ -346,8 +346,6 @@ The following is an overview of what happens when you interact with a Power BI r
 1. The query is then sent to the data source for execution.
 
 1. After execution, the results are sent to the VNet gateway, and the PP VNet service securely pushes the data from the container to the Power BI cloud service.
-
-This feature will be available in public preview soon.
 
 ### Service principals
 
@@ -378,9 +376,9 @@ When information protection is enabled in Power BI:
 
 For more information, see [Sensitivity labels in Power BI](../enterprise/service-security-sensitivity-label-overview.md).
 
-### Microsoft Purview Data Loss Prevention (DLP) Policies for Power BI (preview)
+### Microsoft Purview Data Loss Prevention (DLP) Policies for Power BI
 
-Microsoft Purview's DLP policies can help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies can help them meet compliance requirements of government or industry regulations, such as GDPR (the European Union's General Data Protection Regulation) or CCPA (the California Consumer Privacy Act) and make sure their data in Power BI is managed.
+Microsoft Purview's DLP policies help organizations reduce the risk of sensitive business data leakage from Power BI. DLP policies help them meet compliance requirements of government or industry regulations, such as GDPR (the European Union's General Data Protection Regulation) or CCPA (the California Consumer Privacy Act) and make sure their data in Power BI is managed.
 
 When DLP policies for Power BI are set up:
 
