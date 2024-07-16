@@ -1,6 +1,6 @@
 ---
-title: Enable or disable self-service sign-up and purchasing
-description: How-to information for admins to turn off the ability for users to try, buy, or sign up for Power BI.
+title: Introduction to enabling and disabling self-service
+description: How-to information for admins to turn on and turn off the ability for users to try, buy, or sign up for Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
@@ -11,7 +11,7 @@ ms.date: 07/15/2024
 ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
 ---
-# Enable or disable self-service sign-up and purchasing
+# Introduction to enabling and disabling self-service sign-up and purchasing
 
 Administrators can determine whether to enable or disable self-service sign-up. As an administrator, you can determine whether users in your organization can make self-service purchases to get their own license.
 
@@ -41,4 +41,4 @@ Turning off self-service purchase keeps users from performing actions that requi
 
 ## Related content
 
-[Learn how to enable and disable licenses and subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).
+[How-to instructions for enabling and disabling self-service sign-up and purchasing of licenses and subscriptions](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins).

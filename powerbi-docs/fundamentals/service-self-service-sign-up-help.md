@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.custom:
 ms.subservice: pbi-fundamentals
-ms.date: 07/03/2024
+ms.date: 07/18/2024
 ---
 # What to do if self-service is disabled
 
@@ -29,6 +29,10 @@ Some organizations set up their own process for requesting trials, upgrades, and
 ## Solution: different process
 
 Your organization might have its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
+
+## You can't extend a trial
+
+Power BI and Fabric offer several different trials. Some trials can't be extended and the only option available is to make a purchase. 
 
 ## Related content
 
