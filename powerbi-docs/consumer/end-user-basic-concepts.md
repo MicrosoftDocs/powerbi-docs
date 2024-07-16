@@ -4,7 +4,7 @@ description: The Power BI service apps, workspaces, dashboards, reports, semanti
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-ms.custom: video-B2vd4MQrz4M
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
@@ -212,10 +212,3 @@ Now that you have an understanding of the building blocks that make up the Power
 - Take a [tour of the Power BI service](end-user-reading-view.md)
 
 - Read the [overview of Power BI written especially for business users](end-user-consumer.md)
-
-- Watch a video that reviews the basic concepts and gives a tour of the Power BI service.
-
-    > [!NOTE]  
-    > This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-    > [!VIDEO https://www.youtube.com/embed/B2vd4MQrz4M]

@@ -4,22 +4,17 @@ description: Documentation for displaying a Power BI dashboard, dashboard tile, 
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
-ms.custom: video-dtdLul6otYE
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 04/02/2024
+ms.date: 07/11/2024
 LocalizationGroup: Common tasks
 ---
 
 # Display content in more detail: focus mode and full screen mode
 
 [!INCLUDE [consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI.
-
-> [!VIDEO https://www.youtube.com/embed/dtdLul6otYE]
 
 
 You want your reports, dashboards, visuals, and tiles to display a certain way. Power BI offers you many options to get it just right. Two of those options: the **View** menu and **Focus mode** are discussed in this article. Used together, you can achieve the display that you want. And these display options aren't just for viewing, you can interact with the reports, dashboards, and visuals in all of these display modes. Most of these display options are also available in Power BI Desktop. 
