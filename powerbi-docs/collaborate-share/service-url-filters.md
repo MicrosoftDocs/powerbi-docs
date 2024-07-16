@@ -7,7 +7,7 @@ ms.reviewer: 'kayu'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
-ms.date: 06/19/2024
+ms.date: 07/16/2024
 ms.topic: how-to
 LocalizationGroup: Reports
 ---
@@ -28,7 +28,7 @@ Another use for query string parameters is for someone creating an advanced Powe
 
 ## Query string parameter syntax for filtering
 
-With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
+With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, then add your filter syntax in a query string. A query string in a URL starts with a question mark (?), for example:
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
@@ -36,6 +36,10 @@ With parameters, you can filter the report for one or more values, even if those
 
 * **Table** and **Field** names are case-sensitive; **value** isn't.
 * Fields that are hidden from report view can still be filtered.
+
+If the filter parameter isn't the first parameter in the query string, it is joined to the previous parameter with an ampersand (&), for example:
+
+*URL?reportId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&pageName=ReportSection*&filter=*Table*/*Field* eq '*value*'
 
 ### Field types
 
