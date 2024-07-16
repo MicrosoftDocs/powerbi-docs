@@ -86,7 +86,7 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
 
 * Card visuals that have a calculated function on the data label color, and that are pinned to a dashboard, might not appear on the Apple Watch when the dashboard is synced with it.
 
-## Next steps
+## Related content
 
 Your feedback will help us decide what to implement in the future, so please don't forget to vote for other features that you would like to see in Power BI mobile apps.
 

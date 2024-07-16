@@ -29,7 +29,7 @@ data source=<IP Address>
 ##  <a name="Credentials"></a> Credentials  
  Credentials are required to run queries and preview the report locally.
   
- Once report is published to the Power BI service, you need to set up a Power BI gateway for your report, to fetch data from your on-premises Teradata data source. To learn more about Power BI gateways, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
+ Once the report is published to the Power BI service, you need to set up a Power BI gateway for your report, to fetch data from your on-premises Teradata data source. To learn more about Power BI gateways, see [What is an on-premises data gateway&#63;](../../connect-data/service-gateway-onprem.md)
   
  For more information, see [Create data connection strings - Power BI Report Builder](/sql/reporting-services/report-data/data-connections-data-sources-and-connection-strings-report-builder-and-ssrs) or [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).  
   
@@ -51,11 +51,11 @@ data source=<IP Address>
   
  [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
  Provides in-depth information about platform and version support for supported data sources.  
- 
-  
-## Next steps
- [Report Parameters &#40;Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer)   
- [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/filter-group-and-sort-data-report-builder-and-ssrs)   
- [Expressions &#40;Report Builder and Service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs)  
+
+## Related content
+
+- [Report parameters in Power BI Report Builder](../parameters/report-builder-parameters.md)
+- [Filter, Group, and Sort Data &#40;Report Builder and Service&#41;](../report-design/filter-group-sort-data-report-builder.md)
+- [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md)  
   
   

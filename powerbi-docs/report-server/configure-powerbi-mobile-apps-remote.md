@@ -61,9 +61,9 @@ Here's an example of setting the configuration policy using Intune.
 
 Now they can view and interact with KPIs and Power BI reports stored on the Report Server.
 
-## Next steps
+## Related content
 
-- [Enable remote access to Power BI Mobile with Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+- [Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 - [Administrator overview](admin-handbook-overview.md)  
 - [Install Power BI Report Server](install-report-server.md)  
 

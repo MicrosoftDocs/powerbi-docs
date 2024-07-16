@@ -7,7 +7,8 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/2/2022
+ms.date: 12/2/2023
+#customer intent: As a Power BI user, I want to learn how to import a custom visual from AppSource or from a file so that I can use it in my Power BI reports.
 ---
 
 # Import a Power BI visual from AppSource into your workspace
@@ -40,7 +41,7 @@ If you download or receive a Power BI visual file, you have to [import](#import-
    :::image type="content" source="media/import-visual/add-download-sample.png" alt-text="Screenshot of the Power BI visual description dialog, which shows the Add and Download Sample buttons are highlighted.":::
 
     > [!TIP]
-    > Select **Download Sample** to download a sample Power BI dataset and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
+    > Select **Download Sample** to download a sample Power BI semantic model and report created by the visual publisher. The sample report demonstrates what the visual looks like and how it can be used. It can also include useful comments, tips, and tricks from the publisher.
   
 6. When the visual is successfully imported, select **OK**.
 
@@ -80,7 +81,7 @@ Power BI visuals are packaged as *.pbiviz* files that can be stored on your comp
 
 8. If you want the visual to remain on the **Visualizations** pane so you can use it in future reports, right-click the visual's icon and select **Pin to visualization pane**.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Developing a Power BI circle card visual](develop-circle-card.md)

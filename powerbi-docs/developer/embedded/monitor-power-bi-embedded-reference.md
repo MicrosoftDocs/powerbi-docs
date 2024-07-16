@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: subject-monitoring, engagement-fy23
-ms.date: 02/28/2023
+ms.date: 06/04/2024
+#customer intent: As a developer, I want to learn how to monitor my Power BI Embedded application so that I can ensure it's running smoothly.
 ---
 
 # Monitor Power BI Embedded data reference
@@ -16,7 +17,7 @@ ms.date: 02/28/2023
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on collecting and analyzing monitoring data for Power BI Embedded.
 
 >[!TIP]
->Use the [Premium metrics app](../../enterprise/service-premium-metrics-app.md) to monitor your capacity.
+>Use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
 ## Metrics
 
@@ -114,7 +115,7 @@ The following table shows an event example.
 | Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
 | Error | 0 | Error number of a given event. |
 | ConnectionID | 3 | Unique connection ID. |
-| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the dataset in which the statement of the user is running. |
+| DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID of the semantic model in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
 | SPID | 180 | Server process ID. This process ID uniquely identifies a user session. This ID directly corresponds to the session GUID used by XML/A. |
 | ClientProcessID | null | The process ID of the client application. |
@@ -139,7 +140,7 @@ The script uses Power BI and ARM REST APIs that are called in Azure Automation a
 
 You can either copy the script, or download it as part of the [PowerBI-Developer-Samples](https://github.com/microsoft/PowerBI-Developer-Samples) repository, by selecting the green *code* button, and downloading the ZIP.
 
-## Next steps
+## Related content
 
 * [Monitor Azure Power BI Embedded](monitor-power-bi-embedded.md)
 * [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)

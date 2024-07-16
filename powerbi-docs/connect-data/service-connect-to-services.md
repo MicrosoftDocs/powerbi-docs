@@ -42,7 +42,7 @@ When the import is complete, the new app appears on the Apps page.
 
 ## What's included
 
-After connecting to a service, you see a newly created app and workspace with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and might not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
+After connecting to a service, you see a newly created app and workspace with a dashboard, reports, and semantic model. The data from the service is focused on a specific scenario and might not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the semantic model.
 
 You can also [connect to many services in Power BI Desktop](desktop-data-sources.md), such as Google Analytics, and create your own customized dashboards and reports.  
 
@@ -64,7 +64,7 @@ Do you use a service you'd like to suggest for a Power BI app? Go to the [Power 
 
 If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md). Power BI partners can build Power BI apps with little or no coding, and deploy them to Power BI customers.
 
-## Next steps
+## Related content
 
 * [Distribute apps to your colleagues](../collaborate-share/service-create-distribute-apps.md)
 * [Create workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)

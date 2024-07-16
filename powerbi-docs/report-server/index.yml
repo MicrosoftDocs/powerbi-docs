@@ -86,7 +86,7 @@ landingContent:
             url: quickstart-create-powerbi-report.md
           - text: "Manage content in the web portal"
             url: getting-around.md
-          - text: "Access shared datasets as OData feeds"
+          - text: "Access shared semantic models as OData feeds"
             url: access-dataset-odata.md
           - text: "Row-level security"
             url: row-level-security-report-server.md

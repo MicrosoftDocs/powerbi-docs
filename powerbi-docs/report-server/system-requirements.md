@@ -68,10 +68,10 @@ You can use a live connection against tabular or multidimensional instances. You
 | 2014 |Business Intelligence and Enterprise SKU |
 | 2016 and later |Standard SKU or higher |
 
-## Next steps
+## Related content
 
-[What is Power BI Report Server?](get-started.md)  
-[Install Power BI Report Server](install-report-server.md) 
-[Capacity planning guidance for Power BI Report Server](capacity-planning.md)
+* [What is Power BI Report Server?](get-started.md)  
+* [Install Power BI Report Server](install-report-server.md) 
+* [Capacity planning guidance for Power BI Report Server](capacity-planning.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -9,10 +9,13 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
 LocalizationGroup: Share your work
-ms.date: 03/08/2023
+ms.date: 06/02/2024
 ---
 
 # Considerations working with the Power BI/Power Apps solutions integration (preview)
+
+> [!IMPORTANT]
+> This feature will reach retirement on July 31st, 2024. We recommend removing all Power BI report and dataset components from existing solutions and using a [Power BI embedded system dashboard](/power-apps/maker/model-driven-apps/create-edit-powerbi-embedded-page) instead.
 
 The integration between Power Apps solutions and Power BI involves behavior in some scenarios that may impact your work. This article describes some of these behaviors.
 
@@ -24,7 +27,7 @@ Since actions such as exporting a solution or adding a solution involve removing
 
 ## Cross-geo operations
 
-Working with Power Apps solutions, you can add Power BI report and dataset components from Power BI workspaces to a solution. If the report or the dataset you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
+Working with Power Apps solutions, you can add Power BI report and semantic model components from Power BI workspaces to a solution. If the report or the semantic model you selected to add to your solution is in a different geography than the Power Apps environment you are trying to move it to, it is called a cross-geo operation. Another example of a situation where cross-geo operations might take place is when the dedicated target environment workspace in Power BI (that was created automatically when the first Power BI component was added to the solution), is not located in the same geography as the Power Apps environment.
 
 The Power BI/Power Apps solutions integration supports cross-geo operations, provided that information sharing between the Power Platform environment and the Power BI workspaces has been [enabled](#enabling-and-disabling-cross-geo-operations).
 
@@ -36,7 +39,7 @@ When you perform a cross-geo operation, before you can complete the operation a 
 
 Cross-geo operations are controlled by two feature settings, one in Power BI and the other in Power Platform. The settings in both places must be ON in order for cross-geo operations to take place. The settings are on by default.
 
-* For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](../admin/service-admin-portal-integration.md#power-platform-interregional-access).
+* For detail about enabling/disabling the setting on the Power BI side, see [Power Platform interregional access](/fabric/admin/service-admin-portal-integration#power-platform-interregional-access).
 
 * For detail about enabling/disabling the setting on the Power Platform side, see [Manage feature settings](/power-platform/admin/settings-features) in the Power Platform documentation and look for the Power BI components setting **Allow information sharing between this environment and Power BI workspaces in other geographic regions**.
 
@@ -52,11 +55,11 @@ For Power Apps, the geography of an environment is the geography with the region
 
 ## Authentication
 
-When Power Platform makers perform any operation related to Power BI, their identities are authorized by policy settings on both the Power Platform and Power BI sides. However, only Azure Active Directory Conditional Access policies related to Power Platform are enforced. This is because maker operations, such as import, export, or adding Power BI components to Power Platform solutions, are implemented through so-called service-to-service communication between Power Platform and Power BI. For solution consumers, conditional access policies are validated for both Power Platform and Power BI as usual.
+When Power Platform makers perform any operation related to Power BI, their identities are authorized by policy settings on both the Power Platform and Power BI sides. However, only Microsoft Entra Conditional Access policies related to Power Platform are enforced. This is because maker operations, such as import, export, or adding Power BI components to Power Platform solutions, are implemented through so-called service-to-service communication between Power Platform and Power BI. For solution consumers, conditional access policies are validated for both Power Platform and Power BI as usual.
 
 ## Private links
 
-When a tenant enables [Private Links](../enterprise/service-security-private-links.md) with Public Access disabled, any operation originating from Power Platform (for example, maker operations, export, import) will be blocked. Consumption operations will adhere to Private link policies as regular operations.
+When a tenant enables [Private Links](/fabric/security/security-private-links-overview) with Public Access disabled, any operation originating from Power Platform (for example, maker operations, export, import) will be blocked. Consumption operations will adhere to Private link policies as regular operations.
 
 ## Sovereign clouds 
 
@@ -81,7 +84,7 @@ Environment life cycle operations aren't supported:
 
     * Delete the dedicated environment workspace in Power BI before deleting the Power Apps environment.
 
-## Next Steps
+## Related content
 
 * [About Power BI in Power Apps Solutions](./service-power-bi-powerapps-integration-about.md)
 * [Enable the Power BI/Power Apps Solutions integration](./service-power-bi-powerapps-integration-about.md)

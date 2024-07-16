@@ -1,13 +1,13 @@
 ---
 title: Manage a SQL Server data source
 description: Learn how to add and manage a SQL Server data source for an on-premises data gateway in Power BI.
-author: arthiriyer
-ms.author: arthii
+author: miquelladeboer
+ms.author: mideboer
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 06/28/2024
 LocalizationGroup: Gateways
 ---
 # Manage a SQL Server data source
@@ -27,7 +27,7 @@ Follow these instructions to add a SQL Server data source to your on-premises da
 
    :::image type="content" source="media/service-gateway-enterprise-manage-sql/add-data-source-sql.png" alt-text=" Screenshot of selecting the SQL Server data source." :::
 
-1. Fill in the **Server** and **Database** information for the data source. 
+1. Fill in the **Server** and **Database** information for the data source.
 
 1. Under **Authentication Method**, choose either **Windows** or **Basic**. Choose **Basic** if you plan to use SQL authentication instead of Windows authentication. Then enter the credentials to use for this data source.
 
@@ -72,11 +72,11 @@ After you publish reports, either from Power BI Desktop or by getting data in Po
 
 ### Use the data source with scheduled refresh
 
-If you're listed in the **Users** column of the data source configured within the gateway, and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
+If your account is in the **Users** column of the data source configured within the gateway, and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
 ![Screenshot that shows Displaying the users](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
-## Next steps
+## Related content
 
 - [Connect to on-premises data in SQL Server](service-gateway-sql-tutorial.md)
 - [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)

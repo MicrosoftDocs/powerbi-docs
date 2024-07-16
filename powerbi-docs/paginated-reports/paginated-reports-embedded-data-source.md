@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 01/19/2023
+ms.date: 09/21/2023
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service
@@ -19,7 +19,7 @@ This article explains how to create and modify an embedded data source for a pag
 - Azure SQL Database and Azure Synapse Analytics through Basic and oAuth
 - Azure Analysis Services through SSO
 - SQL Server through a gateway
-- Power BI datasets
+- Power BI semantic models
 - Oracle
 - Teradata
 
@@ -68,7 +68,7 @@ For more information, see [Understanding report data in Power BI Report Builder]
 
 ## Considerations and limitations
 
-Paginated reports that connect to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports that use Power BI datasets, and to ensure row-level security (RLS) is enabled and enforced for your viewers, follow these rules:
+Paginated reports that connect to Power BI semantic models follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports that use Power BI semantic models, and to ensure row-level security (RLS) is enabled and enforced for your viewers, follow these rules:
 
 |Scenario  |Rule  |
 |---------|---------|
@@ -78,6 +78,7 @@ Paginated reports that connect to Power BI datasets follow the rules for shared 
 |.rdl in same workspace as dataset (different user)   | Supported  |
 |.rdl in different workspace as dataset (different user)   |  You need *Read* permission assigned for each user viewing the report at the dataset level     |
 |Row-level security | You need *Read* permission assigned for each user viewing the report at the dataset level to have it enforced   |
+|Using hidden datasets | Not supported. |
 
 ## Next steps
 

@@ -27,8 +27,7 @@ You can export a Power BI paginated report to another file format, such as Power
     
  Report pagination might be affected when you export a report to a different format. When you preview a report, you are viewing the report as it is rendered by the HTML rendering extension, which follows soft-page break rules. When you export a report to a different file format, such as Adobe Acrobat (PDF), pagination is based on the physical page size, which follows hard-page break rules. Pages can also be separated by logical page breaks that you add to a report, but the actual length of a page varies based on the renderer type that you use. To change the pagination of your report, you must understand the pagination behavior of the rendering extension you choose. You might need to adjust the design of your report layout for this rendering extension. For more information see, [Page layout and rendering](/sql/reporting-services/report-design/page-layout-and-rendering-report-builder-and-ssrs).  
   
-> [!NOTE]  
-> You can create and modify Power BI paginated report definition (.rdl) files in Power BI Report Builder.
+
 
 ## <a name="bkmk_export_from_rb"></a> Export a report from Power BI Report Builder
 
@@ -125,10 +124,10 @@ When you export a paginated report in PowerPoint format, if the report has an em
  You can also access a report through a URL that specifies a rendering extension as a URL parameter and render the report directly to the specified format without rendering it in HTML first.   
  For more information, see [Export a Paginated Report using URL access](../report-builder-url-parameters.md).  
 
-## Next steps
+## Related content
 
-[Controlling Page Breaks, Headings, Columns, and Rows &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/controlling-page-breaks-headings-columns-and-rows-report-builder-and-ssrs)   
-[Finding, Viewing, and Managing Reports &#40;Power BI Report Builder &#41;](/sql/reporting-services/report-builder/finding-viewing-and-managing-reports-report-builder-and-ssrs)   
-[Print Reports &#40;Power BI Report Builder &#41;](/sql/reporting-services/report-builder/print-reports-report-builder-and-ssrs)   
-[Saving Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/saving-reports-report-builder)  
+- [Controlling Page Breaks, Headings, Columns, and Rows &#40;Power BI Report Builder&#41;](../report-design/control-page-breaks-headings-columns-rows-report-builder.md)   
+- [Finding, Viewing, and Managing Reports &#40;Power BI Report Builder &#41;](/sql/reporting-services/report-builder/finding-viewing-and-managing-reports-report-builder-and-ssrs)   
+- [Print Reports &#40;Power BI Report Builder &#41;](/sql/reporting-services/report-builder/print-reports-report-builder-and-ssrs)   
+- [Saving Reports &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-builder/saving-reports-report-builder)  
 

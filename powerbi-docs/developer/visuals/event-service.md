@@ -1,30 +1,31 @@
 ---
 title: Render events in Power BI visuals
-description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
+description: Learn about the API needed so that Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 08/30/2022
+ms.date: 4/30/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use the rendering events API so that I can notify Power BI that my visual is ready for export to PowerPoint or PDF.
 ---
 
 # "Rendering" events in Power BI visuals
 
 In order to get a [visual certified](power-bi-custom-visuals-certified.md), it must include **rendering events**.
-These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it is ready for export.
+These events let listeners (primarily, *export to PDF* and *export to PowerPoint*) know when the visual is being rendered and when it's ready for export.
 
 >[!IMPORTANT]
 >Any visual that exports data (for example, to a PowerPoint or *.pdf* file) must contain rendering events to ensure that the export doesn't begin before the visual finished rendering.
 
 The **rendering events API** consists of three methods that should be called during rendering:
 
-* `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started. **This method should always be the first line of the *update* method** since that is where the rendering process begins.
+* `renderingStarted`: The Power BI visual code calls the `renderingStarted` method to indicate that the rendering process started. **This method should always be the first line of the *update* method** since that is where the rendering process begins.
 
 * `renderingFinished`: When rendering is completed successfully, the Power BI visual code calls the `renderingFinished` method to notify the listeners that the visual's image is ready for export. This method should be the **last line of code executed** when the visual updates. It's usually, but not always, the last line of the update method.
 
-* `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
+* `renderingFailed`: If a problem occurs during the rendering process, the Power BI visual doesn't render successfully. To notify the listeners that the rendering process wasn't completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
 
 > [!NOTE]
 > *Rendering events* are a requirement for visuals certification. Without them your visual won't be approved by the Partner Center for publication. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
@@ -108,7 +109,7 @@ If the visual has animations or asynchronous functions for rendering, the `rende
         }
 ```
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Visual API](visual-api.md)

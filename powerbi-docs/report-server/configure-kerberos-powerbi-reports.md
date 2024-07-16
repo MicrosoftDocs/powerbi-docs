@@ -17,7 +17,7 @@ Learn how to configure your report server for Kerberos authentication to data so
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Server.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0]
 
 Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specifically on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
 
@@ -230,8 +230,9 @@ After all of the above configuration is in place, your report should display pro
 
 While this configuration should work in most cases, with Kerberos, there can be different configuration depending on your environment. If the report will still not load, you will want to reach out to your domain administrator to investigate further or contact support.
 
-## Next steps
-[Administrator overview](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
+## Related content
+
+- [Administrator overview](admin-handbook-overview.md)  
+- [Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -82,6 +82,6 @@ When you connect to an existing scorecard or metric in the Power BI service from
 - The visual doesn't support cross-filtering or highlighting.
 - You can't connect metrics to the current report until you publish the report to the Power BI service.
 
-## Next steps
+## Related content
 
-[Create scorecards and manual metrics in Power BI](../create-reports/service-goals-create.md)
+- [Create scorecards and manual metrics in Power BI](../create-reports/service-goals-create.md)

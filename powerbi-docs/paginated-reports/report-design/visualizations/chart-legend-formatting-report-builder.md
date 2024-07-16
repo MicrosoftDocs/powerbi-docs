@@ -53,11 +53,11 @@ The chart legend contains descriptions for each category in a Power BI paginated
   
  By default, the legend text is not optimized to fit the legend area. To cause the legend text to automatically fit the allocated space, set the AutoFitTextDisabled property to **False** and set a minimum font size for the MinFontSize property to the lowest font size that you think will be presentable and still allow for legend optimization.  
   
-## Next steps
+## Related content
 
 - [Legend Properties Dialog Box, General &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-formatting-report-builder)   
 - [Change the Text of a Legend Item &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-change-item-text-report-builder)   
-- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs) 
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md) 
 - [Formatting Series Colors on a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-series-colors-on-a-chart-report-builder-and-ssrs)   
 - [Charts &#40;Power BI Report Builder&#41;](charts-report-builder.md)   
 - [Hide Legend Items on the Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-legend-hide-items-report-builder)   

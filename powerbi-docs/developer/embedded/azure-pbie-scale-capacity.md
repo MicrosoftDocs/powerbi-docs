@@ -9,7 +9,7 @@ tags: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/04/2022
+ms.date: 06/03/2024
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
@@ -76,7 +76,7 @@ Use one of the autoscaling techniques described here to elastically resize your 
 
 Scaling capacities may involve a small amount of downtime.
 
-## Next steps
+## Related content
 
 * [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
 * [How to embed your Power BI dashboards, reports, and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).

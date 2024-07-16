@@ -30,15 +30,15 @@ sections:
         answer: |
           Premium Per User (PPU) gives organizations a way to license premium features on a per-user basis. PPU includes all Power BI Pro license capabilities, including features like AI, and other capabilities that were only available with a Premium capacity. With a PPU license, you don't need a separate Power BI Pro license because all Pro license capabilities are included. 
 
-          You can use a Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md#use-self-service-sign-up-to-get-an-individual-power-bi-license) to try PPU as long as your organization hasn't disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
+          You can use a Power BI [individual trial](../fundamentals/service-self-service-signup-for-power-bi.md) to try PPU as long as your organization hasn't disabled individual trials with the [Allow users to try Power BI paid features tenant setting](../admin/service-admin-portal-help-support.md#allow-users-to-try-power-bi-paid-features).
 
           The following table compares the features of Premium Per User (PPU) with Premium capacity:
 
 
           |Feature description  |Per User  |Per Capacity  |
           |---------|---------|---------|
-          |Model size limit     | 100 GB        | 25-400 GB<sup>1</sup>        |
-          |Refresh rate     | 48/day        | 48/day        |
+          |Model size limit     | 100 GB<sup>1</sup>        | 25-400 GB<sup>1, 2</sup>        |
+          |Refresh rate limit per semantic model     | 48/day        | 48/day        |
           |AI capabilities (AutoML, Impact Analysis, Cognitive Services)     | ✔        | ✔        |
           |Advanced dataflows features, such as DirectQuery     | ✔        | ✔        |
           |Usage-based aggregate optimization     | ✔        | ✔        |
@@ -50,9 +50,11 @@ sections:
           |Unlimited distribution     | X        | ✔        |
           |Power BI reports on-premises     | X        | ✔        |           
           |Bring Your Own Key (BYOK)     | ✔ *       | ✔        |        
+          
+          <sup>1</sup> The Model size limit represents an upper bound for the semantic model size. However, an amount of memory must be reserved for operations such as refreshes and queries on the semantic model. The maximum semantic model size permitted on a capacity might be smaller than the numbers shown here.
 
-          <sup>1</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
-
+          <sup>2</sup> Depending on the type of SKU you have. For more details, see [Capacities and SKUs](service-premium-what-is.md#capacities-and-skus).
+          
           > [!NOTE]
           > Premium Per User (PPU) only supports BYOK when it's enabled across the entire tenant.
 
@@ -126,6 +128,8 @@ sections:
           * You can't have a dataflow run in a PPU workspace, import it to a Power BI dataset in another workspace, and then allow users without a PPU license to access the content.
           
           * Any workspace migrated from a PPU environment to a non-PPU environment (such as Premium or shared environments) must have its datasets refreshed before use. Reports opened after such migrations without being refreshed will fail with an error like: *This operation isn't allowed, as the database 'database name' is in a blocked state.* You might need to do a full refresh through SSMS to fix this.
+          
+          * When using PPU you can't share data between tenants. For example, if you have a dataflow on a PPU capacity, you can't pull its data from a different tenant.
 
 additionalContent: |
  

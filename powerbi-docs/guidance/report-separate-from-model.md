@@ -1,12 +1,13 @@
 ---
 title: Separate reports from models in Power BI Desktop
 description: Guidance for separating reports from models in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 04/11/2020
 ---
 
@@ -14,7 +15,7 @@ ms.date: 04/11/2020
 
 When creating a new Power BI Desktop solution, one of the first tasks you need to do is "get data". Getting data can result in two distinctly different outcomes. It could:
 
-- Create a [Live Connection](../connect-data/desktop-report-lifecycle-datasets.md) to an already-published model, which could be a Power BI dataset or a remote-hosted Analysis Services model.
+- Create a [live connection](../connect-data/desktop-report-lifecycle-datasets.md) to an already-published model, which could be either a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or a remote-hosted Analysis Services model.
 - Commence the development of a new model, which could be either an Import, DirectQuery, or Composite model.
 
 This article is concerned with the second scenario. It provides guidance on whether a report and model should be combined into a single Power BI Desktop file.
@@ -34,7 +35,7 @@ It makes sense to separate model and report development into separate Power BI D
 
 :::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="There are three PBIX files. The first contains only a model. The other two contain only reports, and they live connect to the model hosted in the Power BI service. The reports are developed by different people." border="true":::
 
-Data modelers can still use the Power BI Desktop report authoring experience to test and validate their model designs. However, just after publishing their file to the Power BI service they should remove the report from the workspace. And, they must remember to remove the report each time they republish and overwrite the dataset.
+Data modelers can still use the Power BI Desktop report authoring experience to test and validate their model designs. However, just after publishing their file to the Power BI service they should remove the report from the workspace. And, they must remember to remove the report each time they republish and overwrite the semantic model.
 
 ### Preserve the model interface
 
@@ -51,18 +52,18 @@ Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, 
 
 If you must make breaking changes to your models, we recommend you either:
 
-- [View related content for the dataset](../consumer/end-user-related.md) in the Power BI service.
+- [View related content for the semantic model](../consumer/end-user-related.md) in the Power BI service.
 - Explore [Data lineage](../collaborate-share/service-data-lineage.md) view in the Power BI service.
 
 Both options allow you to quickly identify any related reports and dashboards. Data lineage view is probably the better choice because it's easy to see the contact person for each related item. In fact, it's a hyperlink that opens an email message addressed to the contact.
 
 We recommend you contact the owner of each related item to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize downtime and frustration.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 
-- [Connect to datasets in the Power BI service from Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
+- [Connect to semantic model in the Power BI service from Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
 - [View related content in the Power BI service](../consumer/end-user-related.md)
 - [Data lineage](../collaborate-share/service-data-lineage.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

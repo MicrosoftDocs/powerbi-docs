@@ -15,7 +15,7 @@ To get the client secret, follow these steps:
 
 2. Search for **App registrations** and select the **App registrations** link.
 
-3. Select the Azure AD app you're using for embedding your Power BI content.
+3. Select the Microsoft Entra app you're using for embedding your Power BI content.
 
 4. Under **Manage**, select **Certificates & secrets**.
 

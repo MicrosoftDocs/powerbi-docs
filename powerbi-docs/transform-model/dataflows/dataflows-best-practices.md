@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/07/2023
+ms.date: 10/27/2023
 LocalizationGroup: Data from files
 ---
 # Dataflows best practices
@@ -17,6 +17,17 @@ Power BI dataflows are an enterprise-focused data prep solution, enabling an eco
 ## Dataflows across the Power Platform
 
 Dataflows can be used across various Power Platform technologies, such as Power Query, Microsoft Dynamics 365, and other Microsoft offerings. For more information about how dataflows can work across the Power Platform, see [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
+
+## Deleted dataflows can't be recovered
+
+Deleted dataflows can't be recovered, but you can back them up with various methods described in this section.
+
+If you enable the Azure storage connection on your Power BI workspace, a copy of your dataflow definition and snapshots are automatically stored in a data lake. You can then recover a deleted or modified dataflow by downloading its model.json file from the data lake, then importing it back to Power BI.
+
+You can use Power Automate or Azure Logic Apps to export your dataflow definition to a JSON file, then store it in SharePoint or Azure Data Lake Gen2. Using either of these methods enables you to back up your dataflow using alternative file storage options and automate the process.
+
+You can also manually export your dataflow to a JSON file and import it to another workspace or location. Manually exporting your dataflow is simple and quick, but is a manual process that must be done each time you want to back up your dataflow. 
+
 
 ## Dataflows best practices table and links
 
@@ -40,7 +51,7 @@ The following table provides a collection of links to articles that describe bes
 |Incremental refresh      |Load the latest or changed data versus a full reload         |[Using incremental refresh with dataflows](/power-query/dataflows/incremental-refresh)         |
 |||
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

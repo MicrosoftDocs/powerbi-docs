@@ -1,8 +1,8 @@
 ---
 title: "Error: We couldn't find any data in your Excel workbook"
 description: "Learn how to address the following error in the Power BI service: We couldn't find any data in your Excel workbook."
-author: kfollis
-ms.author: kfollis
+author: ajburnle
+ms.author: ajburnle
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -38,7 +38,7 @@ Error: We couldn't find any data formatted as a table. To import from Excel into
 
 In Excel, you can create a *table* out of a range of cells, which makes it easier to sort, filter, and format data.
 
-When you import an Excel workbook, Power BI looks for these tables and imports them into a dataset. If it doesn't find any tables, you see this error message.
+When you import an Excel workbook, Power BI looks for these tables and imports them into a semantic model. If it doesn't find any tables, you see this error message.
 
 ### Solution
 

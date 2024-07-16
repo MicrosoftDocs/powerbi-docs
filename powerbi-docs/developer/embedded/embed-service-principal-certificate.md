@@ -1,6 +1,6 @@
 ---
 title: Embed Power BI content in a Power BI embedded analytics application with service principal and a certificate
-description: Learn how to authenticate for Power BI embedded analytics using an Azure Active Directory application service principal and a certificate.
+description: Learn how to authenticate for Power BI embedded analytics using a Microsoft Entra application service principal and a certificate.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 01/22/2023
+ms.date: 04/10/2024
 ---
 
 # Embed Power BI content with service principal and a certificate
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate. The client certificate can be on a Windows, Android, or iOS device, or the client certificate can be kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
+Certificate-based authentication enables you to be authenticated by Microsoft Entra ID with a client certificate. The client certificate can be on a Windows, Android, or iOS device, or the client certificate can be kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
 
 Using this method of authentication allows managing certificates from a central place using the certificate authority (CA) for rotation or revocation.
 
-You can learn more about certificates in Azure AD in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
+You can learn more about certificates in Microsoft Entra ID in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
 
 ## Method
 
@@ -94,7 +94,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 ## Step 3 - Set up certificate authentication
 
-1. In your Azure AD application, select the **Certificates & secrets** tab.
+1. In your Microsoft Entra application, select the **Certificates & secrets** tab.
 
     :::image type="content" source="media/embed-service-principal/certificates-and-secrets.png" alt-text="Screenshot of the Azure portal window, which shows the certificates and secrets pane for an app.":::
 
@@ -150,7 +150,7 @@ public async Task<AuthenticationResult> DoAuthentication(){
 
 ## Configure Visual Studio to use MSI
 
-When you create an embedded solution, it might be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+When you create an embedded solution, it might be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Microsoft Entra identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
 
 >[!NOTE]
 >The user that signs into Visual Studio requires Azure Key Vault permissions to get the certificate.
@@ -167,9 +167,9 @@ When you create an embedded solution, it might be useful to configure Visual Stu
 
 4. Add the account that has access to your Azure Key Vault.
 
-## Next steps
+## Related content
 
 * [Set up Power BI Embedded](register-app.md)
 * [Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
-* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
 * [Embed a report on an on-premises SQL Server Analysis Services (SSAS)](./sql-server-analysis-services-embed.md)

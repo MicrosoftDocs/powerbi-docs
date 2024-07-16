@@ -9,7 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: Create a workspace
 ms.topic: how-to
 ms.date: 04/12/2023
-ms.custom: contperf-fy21q3, contperf-fy21q1, contperf-fy20q4
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 # Create a workspace in Power BI
@@ -96,11 +96,11 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     Power BI should automatically detect the workspace OneDrive, so it appears under **Location**. It may take some time for the workspace OneDrive to appear on the **Data hub** page after you've configured it.
 
-1. Select the dataset.
+1. Select the semantic model.
 
 ### Allow contributors to update the app
 
-You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and datasets which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
+You can create and publish *apps* from a workspace. Each workspace can hold the content for an associated *app*, a collection of dashboards, reports, and semantic models which you can distribute to others in your organization. Read more about [publishing apps from workspaces](service-create-distribute-apps.md).
 
 By default, only workspace Admins and Members can create, publish and update the app for the workspace. The **Allow contributors to update the app for this workspace** setting lets workspace Admins delegate the ability to update the app for the workspace to users with the workspace Contributor role. Read more about the different [roles in workspaces](service-roles-new-workspaces.md).
 
@@ -116,7 +116,7 @@ By default, only workspace Admins and Members can create, publish and update the
 When these features are enabled, contributors can:
 
 * Update app metadata such as name, icon, description, support site, and color.
-* Add or remove items included in the app, like adding reports or datasets.
+* Add or remove items included in the app, like adding reports or semantic models.
 * Change the visibility of the items for all the audience groups in the audience tab.
 
 However, contributors can't:
@@ -124,7 +124,7 @@ However, contributors can't:
 * Create or publish the app for the first time.
 * Add users to the app or change who has permission to the app.
 * Enable or disable automatic installation of app for app users.
-* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the datasets in the audience groups.
+* Enable or disable advance settings under Manage audience access pane. These settings include share and build permissions for the semantic models in the audience groups.
 * Allow or prevent app consumers saving a copy of reports included in the app.  
 
 ## Premium capacity settings
@@ -139,7 +139,7 @@ On the **Premium** tab in the **Settings** pane, you can choose settings related
 
     :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-premium-per-user.png" alt-text="Screenshot of Choose Premium or Premium Per User.":::
 
-1. Choose **Default storage limit**. Read more about [enabling large datasets](../enterprise/service-premium-large-models.md#enable-large-datasets).
+1. Choose **Default storage limit**. Read more about [enabling large semantic models](../enterprise/service-premium-large-models.md#enable-large-semantic-models).
 
 ## Give users access to your workspace
 
@@ -164,8 +164,7 @@ Quickly access your favorite workspaces by pinning them to the top of the worksp
 
     ![Screenshot of unpin workspace.](media/service-create-the-new-workspaces/unpin-workspace.png)
 
-
-## Next steps
+## Related content
 
 * Read about [workspaces in Power BI](service-new-workspaces.md)
 * [Publish an app from a workspace in Power BI](service-create-distribute-apps.md)

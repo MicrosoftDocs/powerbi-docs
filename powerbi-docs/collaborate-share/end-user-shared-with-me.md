@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Your colleagues have created apps, reports, dashboards, scorecards, workspaces, and datasets. When it comes time to share them with you or to ask for your collaboration, there are several ways that they can do this. In this article, we explain how to view and open content that others have shared with you.
+Your colleagues have created apps, reports, dashboards, scorecards, workspaces, and semantic models. When it comes time to share them with you or to ask for your collaboration, there are several ways that they can do this. In this article, we explain how to view and open content that others have shared with you.
 
 :::image type="content" source="media/end-user-shared-with-me/power-bi-browse.png" alt-text="Screenshot showing the Shared with me item in the Browse menu.":::
 
@@ -29,7 +29,7 @@ You have options for interacting with the shared dashboards and reports, dependi
 To view content that others have shared with you, there are two options.
 
 - **The content *isn't* in a Power BI Premium capacity**: All business users need Power BI Pro or Premium Per User (PPU) licenses to view shared content.
-- **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying datasets. For more information, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
+- **The content *is* in a Power BI Premium capacity**: Business users without Power BI Pro or Premium Per User (PPU) licenses can view the content. However, you can't copy the reports, or create reports based on the underlying semantic models. For more information, see [What is Power BI Premium?](../enterprise/service-premium-what-is.md)
 
 ## View and open content from your *Shared with me* tab
 
@@ -67,7 +67,7 @@ For more information, see [Apps in Power BI](../consumer/end-user-apps.md).
 
 One way that *creators* can share with you is by granting you a [role](service-roles-new-workspaces.md) in a workspace. What you can do with the content in that workspace depends on the role assigned to you: Viewer, Contributor, Member, Admin.
 
-## Next steps
+## Related content
 
 - [Ways to collaborate and share reports and dashboards in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md#share-reports-or-dashboards)
-- [Introduction to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md)
+- [Introduction to semantic models across workspaces](../connect-data/service-datasets-across-workspaces.md)

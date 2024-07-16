@@ -59,7 +59,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 To learn more, see [filtering a report by location in the Power BI mobile apps](../consumer/mobile/mobile-apps-geographic-filtering.md).
 
-## Next steps
+## Related content
 
 * [Specify data categories in Power BI Desktop](desktop-data-categorization.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting
-ms.date: 12/21/2022
+ms.date: 12/21/2023
 ---
 
 # Troubleshoot your Power BI developer environment setup
@@ -52,7 +52,7 @@ This support channel is for custom visuals developers in the process of developi
 
 For customer experience issues when using custom Power BI visuals, submit a case request via the [Power Platform admin center portal](https://admin.powerplatform.microsoft.com/newsupportticket/powerbipro).
 
-## Next steps
+## Related content
 
 * [Setting up your Power BI environment](environment-setup.md)
 * [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)

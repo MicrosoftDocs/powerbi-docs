@@ -196,7 +196,7 @@ If you encounter any of the following problems, follow these steps to troublesho
     
     d. Examine the contents of the trace files to determine the blocking issue. For example, you may find that gx64krb5.dll was not loaded properly, or that an Active Directory user different than the one you were expecting initiated the SSO connection attempt.
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

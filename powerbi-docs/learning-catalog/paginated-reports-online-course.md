@@ -1,14 +1,14 @@
 ---
 title: "Power BI Paginated Reports in a Day course"
 description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
-author: kfollis
-ms.author: kfollis
-ms.reviewer: maggies
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maggies, nisrinivasan
 ms.custom: video-DN1t5p9aui0
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
-ms.date: 02/04/2022
+ms.date: 05/14/2024
 ---
 
 # Power BI Paginated Reports in a Day course
@@ -34,14 +34,11 @@ After you complete the course, you'll know how to:
 
 Watch the welcome and introduction video to start the course.
 
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
 > [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## Course outline
 
-The [course of 26 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 26.
+The [course of 27 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 27.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=DN1t5p9aui0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
@@ -79,16 +76,24 @@ The [course of 26 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 - **Updates**
   - Video 25: [December 2020 Update](https://www.youtube.com/watch?v=-7M4muS_3BI&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 26: [December 2021 Update](https://www.youtube.com/watch?v=tPasEyezQnc&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+  - Video 27: [March 2023 Update](https://www.youtube.com/watch?v=df1divWTGQ0&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
+
+> [!NOTE]  
+> These videos might use earlier versions of Power BI Report Builder, Power BI Desktop, or the Power BI service.
 
 ## Attendee kit
 
 You can download and set up an attendee kit, which consists of the presentation content and nine hands-on labs:
+
+> [!IMPORTANT]
+> When you download and extract the course content, you must update the database connection string. Open the **MyEnvironment** folder and modify the content of the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net
 
 1. Use [this link](https://aka.ms/priad-en) to download the _English_ language attendee kit (.zip) locally to your PC (Windows 8, or later). Alternatively, use [this link](https://aka.ms/priad-student) to download the _localized_ attendee kit (.zip) locally to your PC (Windows 8, or later).
 1. Open the file properties of the zip file, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Create a root course folder. We recommend you name it something like "C:\Training". Remember this location, because you'll need to access the course files during the labs. All lab documents refer to this location as **&lt;CourseFolder&gt;**.
 1. Extract the **PowerBIPRIAD-Attendee.zip** file contents to your root course folder.
 1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A** folder, open the PDF lab document and follow the lab instructions.
+1. Open the **&lt;CourseFolder&gt;\PowerBIPRIAD\MyEnvironment** folder, and then open the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net - then save the file.
 
 > [!NOTE]
 > In the localized attendee kit, you will find documents for the following eight languages:
@@ -102,17 +107,15 @@ You can download and set up an attendee kit, which consists of the presentation 
 > - Chinese, simplified characters (zh-CN)
 
 > [!IMPORTANT]
-> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md). A newly signed up account can benefit from a 60-day trial license.
+> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for or purchase the Power BI service as an individual](../fundamentals/service-self-service-signup-for-power-bi.md). A newly signed up account can benefit from a 60-day trial license.
 >
-> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You will need a Power BI Pro license or [Power BI Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml#using-premium-per-user--ppu-) license to use a dataset as a report data source.
->
-> Some lab tasks involve publishing paginated reports to a Power BI service workspace. You can only open a paginated report in the Power BI service when it's saved to a workspace that has its [license mode](../consumer/end-user-workspaces.md#licensing-workspaces-and-capacity) set to **Premium per user** or **Premium capacity**.
+> To complete the labs, you must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source.
 
 ## Instructor kit
 
 Use [this link](https://aka.ms/priad-instructor) to download the instructor kit (.zip) locally to your PC.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

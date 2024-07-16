@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/23/2023
+ms.date: 03/26/2024
 LocalizationGroup: Connect to data
 ---
 # Use the SAP Business Warehouse connector in Power BI Desktop
@@ -25,12 +25,9 @@ Follow these steps to install and connect to data with the SAP BW Connector.
 
 ### Prerequisite
 
-Implementation 2.0 of the SAP Connector requires the SAP .NET Connector 3.0. You can download the [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) from SAP. Access to the download requires a valid S-user sign-in.
+Implementation 2.0 of the SAP Connector requires the SAP .NET Connector 3.0 or 3.1. You can download the [SAP .NET Connector 3.0 or 3.1](https://support.sap.com/en/product/connectors/msnet.html) from SAP. Access to the download requires a valid S-user sign-in.
 
->[!IMPORTANT]
->Be sure to use SAP .NET Connector 3.0. The SAP BW Application Server connector doesn't currently support SAP .NET Connector 3.1.
-
-The .NET 4.0 framework connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation version.
+The .NET Framework connector comes in 32-bit and 64-bit versions. Choose the version that matches your Power BI Desktop installation version.
 
 When you install, in **Optional setup steps**, make sure you select **Install assemblies to GAC**.
 
@@ -102,7 +99,7 @@ You can set the following options under **Advanced options** on the SAP BW conne
 
   The default value is **BasXmlGzip**. This mode can improve performance for low latency or high volume queries.
 
-- **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large dataset. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
+- **Batch size** specifies the maximum number of rows to retrieve at a time when executing an MDX statement. A small number means more calls to the server while retrieving a large semantic model. A large value might improve performance, but could cause memory issues on the SAP BW server. The default value is **50000**.
 
 - **Enable characteristic structures** changes the way the **Navigator** displays characteristic structures. The default value for this option is false, or unchecked. This option affects the list of objects available for selection, and isn't supported in native query mode.
 
@@ -113,11 +110,11 @@ The following list describes other Implementation 2.0 improvements:
 - Better performance.
 - Ability to retrieve several million rows of data, and fine-tuning through the batch size parameter.
 - Ability to switch execution modes.
-- Support for compressed mode, especially beneficial for high-latency connections or large datasets.
+- Support for compressed mode, especially beneficial for high-latency connections or large semantic models.
 - Improved detection of `Date` variables.
 - `Date` (ABAP type `DATS`) and `Time` (ABAP type `TIMS`) dimensions exposed as dates and times, instead of text values. For more information, see [Support for typed dates in SAP BW](/power-query/connectors/sap-bw/implementation-details#support-for-typed-dates-in-sap-bw).
 - Better exception handling. Errors that occur in BAPI calls are now surfaced.
-- Column folding in `BasXml` and `BasXmlGzip` modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller dataset.
+- Column folding in `BasXml` and `BasXmlGzip` modes. For example, if the generated MDX query retrieves 40 columns but the current selection only needs 10, this request passes on to the server to retrieve a smaller semantic model.
 
 ## Update existing Implementation 1.0 reports
 
@@ -242,7 +239,7 @@ The following table describes current Power BI support for SAP BW.
 |Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | gsskrb5/gx64krb5  | No  |
 |Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | sapcrypto  | Yes  |
 
-## Next steps
+## Related content
 
 - [SAP BW fundamentals](/power-query/connectors/sap-bw/sap-bw-fundamentals)
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)

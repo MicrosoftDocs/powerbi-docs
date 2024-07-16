@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 08/23/2022
+ms.date: 01/23/2024
 #Customer intent: As an ISV with an on-premises dataset model, I want embed reports for my customers using RLS to maintain privacy and security.
 ---
 # Embed a report on an on-premises SQL Server Analysis Services (SSAS)
@@ -80,7 +80,7 @@ A service principal profile can't be an admin. If you're using a service princip
 
 ### Map User names
 
-If the usernames on the on-premises directory and the Azure AD directory are different and you want to view data in the portal, you need to create a user mapping table that maps each user or role in Azure AD to users from the on-premises database. For instructions on mapping user names, go to [Manual user name remapping](../../connect-data/service-gateway-enterprise-manage-ssas.md#manual-user-name-remapping)
+If the usernames on the on-premises directory and the Microsoft Entra directory are different and you want to view data in the portal, you need to create a user mapping table that maps each user or role in Microsoft Entra ID to users from the on-premises database. For instructions on mapping user names, go to [Manual user name remapping](../../connect-data/service-gateway-enterprise-manage-ssas.md#manual-user-name-remapping)
 
 For more information see [Map user names for Analysis Services data sources](../../connect-data/service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -198,6 +198,6 @@ Now you can embed your report in your app, and your report will filter data acco
 
 CustomData isn't supported.
 
-## Next steps
+## Related content
 
 [Generate an embed token](generate-embed-token.md#row-level-security)

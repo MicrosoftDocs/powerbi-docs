@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 01/31/2023
+ms.date: 11/10/2023
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot tile errors
@@ -51,7 +51,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
   The visual has tried to query too much data for Power BI to complete the result with available resources. Try filtering the visual to reduce the amount of data in the result.
 
-- **We are not able to identify the following fields: {0}. Please update the visual with fields that exist in the dataset.**
+- **We are not able to identify the following fields: {0}. Please update the visual with fields that exist in the semantic model.**
 
   The field was probably deleted or renamed. You can remove the broken field from the visual, add a different field, and repin it.
 
@@ -61,20 +61,20 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - Tiles continue to show unfiltered data after you enable single-sign on (SSO).
 
-  This issue can happen if the underlying dataset uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source, until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
+  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source, until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 
-  As a dataset owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, and then select **Settings**. On the **Datasets** tab, expand **Scheduled refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
+  As a semantic model owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, and then select **Settings**. On the **Semantic models** tab, expand **Scheduled refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
 
   > [!NOTE]
-  > **Automatic dashboard tile and metric refresh** is available only for datasets in DirectQuery or Live Connection modes. Datasets in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
+  > **Automatic dashboard tile and metric refresh** is available only for semantic models in DirectQuery or Live Connection modes. Semantic models in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.
 
 ## Support contact
 
 If you're still having problems, [contact support](https://support.powerbi.com) and ask them to investigate further.
 
-## Next steps
+## Related content
 
 - [Troubleshoot the on-premises data gateway](service-gateway-onprem-tshoot.md)
 - [Troubleshoot Power BI personal gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)

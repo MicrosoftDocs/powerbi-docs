@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/22/2023
+ms.date: 08/10/2023
 LocalizationGroup: Model your data
 ---
 # Work with Model view in Power BI Desktop
@@ -28,7 +28,7 @@ Current releases of Power BI Desktop have the updated **Model view** enabled.
 
 :::image type="content" source="media/desktop-relationship-view/model-view-02.png" alt-text="Screenshot of Model view after the update.":::
 
-The colors in the table card headers automatically match the colors you've selected in any report theme you're using. If the color is too close to white, Model view doesn't use it in the theme headers to avoid situations where it's difficult to differentiate tables in dual mode.
+The colors in the table card headers automatically match the colors you've selected in any report theme you're using. If the color is too close to white, Model view doesn't use it in the theme headers to avoid situations where it's difficult to differentiate tables in dual mode. In the previous image the card headers are white; if the report theme was using blue, the card headers in the **Model view** shown in the previous image would be blue instead of white. 
 
 If your model has fewer than 75 tables, Model view shows all of your tables. If your model has more than 75 tables, instead of showing all tables you see the following image:
 
@@ -36,7 +36,7 @@ If your model has fewer than 75 tables, Model view shows all of your tables. If 
 
  When your model has more than 75 tables, Power BI Desktop warns you that slowdowns might occur. Create a custom layout (select the *Create a custom layout* button) to reduce the significant CPU and memory used when Model view shows more than 75 tables.
 
-## Next steps
+## Related content
 
 There are all sorts of things you can do with Power BI Desktop. For more information on data sources, see the following resources:
 

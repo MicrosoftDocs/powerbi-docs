@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 07/14/2022
+ms.date: 05/29/2024
 ms.custom: "https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.xlsx"
 LocalizationGroup: Reports
 ---
@@ -345,7 +345,7 @@ Next we create a column chart to investigate which products are sold by what typ
 
     :::image type="content" source="media/desktop-dimensional-model-report/report-sales-amount-by-product-category-increase-width.png" alt-text="Screenshot of Widen the matrix to fill the report.":::
 
-1. In the Formatting pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
+1. In the Format pane for the matrix, search for *conditional*. In the **Cell elements** section, turn on **Data bars**. Select the **fx** option, and set a lighter color for the positive bar. Select **OK**. 
 
 1. Increase the width of the Sales Amount column so it fills the whole area by dragging the matrix.
 
@@ -470,7 +470,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
 1. Select **Share** at the top of the report to share your report with others.
 
-## Next steps 
+## Related content 
 
 - Download the [completed Power BI .pbix file](https://github.com/microsoft/powerbi-desktop-samples/blob/main/AdventureWorks%20Sales%20Sample/AdventureWorks%20Sales.pbix)
 - Learn more about [DAX and data modeling in Power BI Desktop](/training/modules/dax-power-bi-models/)

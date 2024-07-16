@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/10/2022
+ms.date: 06/03/2024
 ---
 
 # Embed Power BI content in Salesforce
@@ -29,9 +29,9 @@ The Salesforce *embed for your customers* solution uses a [service principal](em
 
 Here are some advantages of the `PowerBiEmbedManager` Apex class:
 
-* The `PowerBiEmbedManager` Apex class is programmed to interact with both Azure AD and the [Power BI REST APIs](/rest/api/power-bi/).
+* The `PowerBiEmbedManager` Apex class is programmed to interact with both Microsoft Entra ID and the [Power BI REST APIs](/rest/api/power-bi/).
 
-* The `PowerBiEmbedManager` Apex class implements [Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) when it interacts with Azure AD to acquire an app-only access token. App-only access tokens are important because they allow you to call the Power BI REST APIs under the identity of a service principal, instead of calling under the identity of a user.
+* The `PowerBiEmbedManager` Apex class implements [Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) when it interacts with Microsoft Entra ID to acquire an app-only access token. App-only access tokens are important because they allow you to call the Power BI REST APIs under the identity of a service principal, instead of calling under the identity of a user.
 
 ### Lightning Aura
 
@@ -61,7 +61,7 @@ In the Salesforce embed for your organization Salesforce solution, `powerbi.js` 
 
 To embed Power BI content that uses the embed for your organization solution, follow the instructions in the [SalesforceUserOwnsDataEmbedding](https://github.com/PowerBiDevCamp/SalesforceUserOwnsDataEmbedding) GitHub repository.
 
-## Next steps
+## Related content
 
 * [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 

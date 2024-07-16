@@ -3,12 +3,10 @@ title: Use report themes in Power BI Desktop
 description: Learn how to use report themes to create a custom color palette and apply it to an entire report in Power BI Desktop.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: ''
-ms.custom: contperf-fy20q4
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 07/12/2024
 LocalizationGroup: Create reports
 ---
 # Use report themes in Power BI Desktop
@@ -184,9 +182,11 @@ Setting a report theme changes the default colors used in visuals throughout the
 
 Power BI tracks the color for a dynamic series and uses the same color for the value in other visuals. In a *dynamic series*, the number of series presented in visuals may change based on measures, values, or other aspects. For example, if you show *Profit by Region* in a report, you might have five sales regions, or you might have nine. The number of regions is dynamic, so it's considered a dynamic series.
 
+Individual members of a dynamic series claim a color from the data color palette as they are read in.  For example, if one visual has a *Profit by Region* set of members **and** a second visual also has a *Profit by Region* set of members, **but** the set of members is disjoint, the first visual to have its data request completed reserves the earlier colors.  Since the colors for individual dynamic series members aren't explicitly stored, this behavior may lead to the appearance that colors are changing at random, depending on which visuals are loaded first.  You can always assign specific members to a particular color by using the formatting pane: see more information about how to [change the color of a single data point](../visuals/service-tips-and-tricks-for-color-formatting.md#change-the-color-of-a-single-data-point).
+
 ### Static series
 
-Conversely, for *static series*, the number of series is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
+Conversely, for *static series*, the number of series and their order is known. For example, *Profit* and *Revenue* revenue are static series. In static series, Power BI assigns colors by index within the theme palettes. You can override the default color assignment by selecting a color from the formatting pane under **Data colors**. You might have to change your slicer selections to see all potential series values and set their colors as well. If you explicitly set a color as a single visual by using the **Properties** pane, the imported theme does not apply to any of those explicitly defined colors.
 
 To undo the explicit color application and allow the theme to apply to those explicitly selected colors, use **Revert to default** in the **Data Colors** section of the visual to which the color has been explicitly set.
 
@@ -294,7 +294,7 @@ The following sections describe each in detail.
 
 Under `name`, you can add the following basic data color-related properties:
 
-- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI's default color palette.
+- `dataColors`: These hexadecimal codes determine the color of shapes that represent data in Power BI Desktop visuals. This list can have as many colors as you want. After all colors from this list have been used, if the visual still needs more colors, it rotates the theme color palette slightly with saturation/hue adjustment and cycle over and over to generate unique colors without repetition.
 - `good`, `neutral`, `bad`: These properties set the status colors used by the waterfall chart and the KPI visual.
 - `maximum`, `center`, `minimum`, `null`: These colors set the various gradient colors in the conditional formatting dialog box.
 
@@ -558,25 +558,27 @@ You can copy this JSON and use it as a basis to create your own custom report th
 
 ## Considerations and limitations
 
-If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
+- If you use one of the original themes, the Classic theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
 
-Built-in themes that are affected by this limitation include the following themes:
+    Built-in themes that are affected by this limitation include the following themes:
 
-- Classic
-- City park
-- Classroom
-- Color blind safe
-- Electric
-- High contrast
-- Sunset
-- Twilight
+    - Classic
+    - City park
+    - Classroom
+    - Color blind safe
+    - Electric
+    - High contrast
+    - Sunset
+    - Twilight
 
-If you use one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have the following options:
+    If you use one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have the following options:
 
-- The quickest and easiest way to enable the text classes is to select the Default theme options.
-- If you want to keep your current custom theme to enable the text tab:
-  1. Export your current theme.
-  1. Select the default theme.
-  1. Import the custom theme you exported in the first step.
+    - The quickest and easiest way to enable the text classes is to select the Default theme options.
+    - If you want to keep your current custom theme to enable the text tab:
+    1. Export your current theme.
+    1. Select the default theme.
+    1. Import the custom theme you exported in the first step.
 
-The text in your report will look different, but you'll be able to access the text tab in the theme dialog box.
+    The text in your report will look different, but you'll be able to access the text tab in the theme dialog box.
+
+- Elements that are considered part of the interface cannot be changed using a report theme. This includes the Filter, Format and Data panes and the [visual matrix in visual calculations](../transform-model/desktop-visual-calculations-overview.md).

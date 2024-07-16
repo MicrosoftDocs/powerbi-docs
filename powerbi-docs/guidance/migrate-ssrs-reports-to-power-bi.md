@@ -1,14 +1,14 @@
 ---
 title: Plan to migrate .rdl reports to Power BI
 description: Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI.
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: cookiemccray
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/23/2023
-ms.custom: intro-migration
+ms.custom: fabric-cat, intro-migration
+ms.date: 05/20/2024
 ---
 
 # Plan to migrate .rdl reports to Power BI
@@ -35,7 +35,7 @@ You can achieve migration without downtime to your report servers, or disruption
 
 ## Before you start
 
-Before you start the migration, verify that your environment meets certain prerequisites. We'll describe these prerequisites, and also introduce you to a helpful migration tool.
+Before you start the migration, verify that your environment meets certain prerequisites. We describe these prerequisites, and also introduce you to a helpful migration tool.
 
 ### Preparing for migration
 
@@ -63,7 +63,7 @@ If you're using Power BI Report Server or SQL Server Reporting Services after SQ
 
 ### Migration tool for previous versions of SQL Server
 
-For earlier versions of SQL Server Reporting Services, we recommend that you use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) to help prepare and migrate your reports. This tool was developed by Microsoft to help customers migrate .rdl reports from their SSRS servers to Power BI. It's available on GitHub, and it documents an end-to-end walkthrough of the migration scenario.
+For earlier versions of SQL Server Reporting Services, we recommend that you use the [RDL Migration Tool](using-rdl-migration-tool.md) to help prepare and migrate your reports. This tool was developed by Microsoft to help customers migrate .rdl reports from their SSRS servers to Power BI. It's available on GitHub, and it documents an end-to-end walkthrough of the migration scenario.
 
 The tool automates the following tasks:
 
@@ -95,31 +95,29 @@ Organizations may have hundreds of SQL Server Reporting Services (SSRS) reports.
 
 ### Assess
 
-Having discovered your report server instances, the goal of the _Assess_ phase is to understand any .rdl reports—or server items—that can't be migrated.
+Having discovered your report server instances, the goal of the _Assess_ phase is to understand any .rdl reports, or server items, that can't be migrated.
 
-Your .rdl reports can be migrated from your report servers to Power BI. Each migrated .rdl report will become a Power BI paginated report.
+Your .rdl reports can be migrated from your report servers to Power BI. Each migrated .rdl report becomes a Power BI paginated report.
 
 The following report server item types, however, can't be migrated to Power BI:
 
-- **Shared data sources** and **shared datasets**: The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets into embedded data sources and datasets, provided that they're using supported data sources.
-- **Resources** such as image files
-- **Linked reports** migrate, whether the *parent* report that links to them is selected for migration or no. In the Power BI service, they're regular .rdl reports. 
-- **KPIs**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only
-- **Mobile reports**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only
-- **Report models**: deprecated
-- **Report parts**: deprecated
+- **Shared data sources** and **shared datasets**: The [RDL Migration Tool](using-rdl-migration-tool.md) automatically converts shared data sources and shared datasets into embedded data sources and datasets, provided that they're using supported data sources.
+- **Resources** such as image files.
+- **Linked reports** migrate, whether the *parent* report that links to them is selected for migration or not. In the Power BI service, they're regular .rdl reports. 
+- **KPIs**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only.
+- **Mobile reports**: Power BI Report Server, or Reporting Services 2016 or later—Enterprise Edition only.
+- **Report models**: deprecated.
+- **Report parts**: deprecated.
 
 If your .rdl reports rely on features [not yet supported by Power BI paginated reports](../paginated-reports/paginated-reports-faq.yml#what-paginated-report-features-in-ssrs-aren-t-yet-supported-in-power-bi-), you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md), when it makes sense.
 
 For more information about supported data sources for paginated reports in the Power BI service, see [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md#other-data-sources).
 
-
 Generally, Power BI paginated reports are optimized for **printing**, or **PDF generation**. Power BI reports are optimized for **exploration and interactivity**. For more information, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
 Referencing [custom code](../paginated-reports/paginated-reports-faq.yml#can-i-run-custom-code-in-my-report-) DLL files within a report isn't supported.  
 
-Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. You should test the [PDF rendering output](/sql/reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
-
+Differences in PDF output occur most often when a font that doesn't support non-Latin characters is used in a report and then non-Latin characters are added to the report. Test the [PDF rendering output](../paginated-reports/report-builder/export-pdf-file-report-builder.md#verifying-fonts-in-a-pdf-file) on both the report server and the client computers to verify that the report renders correctly.
 
 ### Prepare
 
@@ -128,11 +126,12 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
 1. Become familiar with Power BI security, and plan [how you'll reproduce your report server folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
-1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your report server shared data sources.
-1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your report server mobile reports and KPIs.
-1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\adelev_, the built-in field returns something like _adelev&commat;adventureworks.com_. You'll need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
+1. Consider using [shared Power BI semantic models](../connect-data/service-datasets-build-permissions.md) in place of your report server shared data sources.
+1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083?tab=Overview) in place of your report server mobile reports and KPIs.
+1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\adelev_, the built-in field returns something like _adelev&commat;adventureworks.com_. You need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
 1. Reevaluate the use of the **ExecutionTime** built-in field in your reports. For paginated reports (when hosted in the Power BI service), the built-in field returns the date/time _in Coordinated Universal Time (or UTC)_. It could impact on report parameter default values, and report execution time labels (typically added to report footers).
 1. If your data source is SQL Server (on premises), verify that reports aren't using map visualizations. The map visualization depends on SQL Server spatial data types, and these aren't supported by the gateway. For more information, see [Data retrieval guidance for paginated reports (SQL Server complex data types)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
+1. For cascading parameters, be mindful that parameters are evaluated sequentially. Try preaggregating report data first. For more information, see [Use cascading parameters in paginated reports](../guidance/paginated-report-cascading-parameter.md).
 1. Ensure your report authors have [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md) installed, and that you can easily distribute later releases throughout your organization.
 1. Utilize [capacity planning](../paginated-reports/paginated-capacity-planning.md) documentation for paginated reports.
 
@@ -148,28 +147,28 @@ Anyone with permission to access to the report server instance and the Power BI 
 
 1. Open the report server portal that contains the reports you want to migrate.
 1. Download each report definition, saving the .rdl files locally.
-1. Open _the latest version_ of Power BI Report Builder, and connect to the Power BI service using your Azure AD credentials.
+1. Open _the latest version_ of Power BI Report Builder, and connect to the Power BI service using your Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) credentials.
 1. Open each report in Power BI Report Builder, and then:
    1. Verify all data sources and datasets are embedded in the report definition, and that they're [supported data sources](../paginated-reports/paginated-reports-data-sources.md).
    1. Preview the report to ensure it renders correctly.
    1. Select **Publish**, then select **Power BI service**.
    1. Select the workspace where you want to save the report.
-   1. Verify that the report saves. If certain features in your report design aren't yet supported, the save action will fail. You'll be notified of the reasons. You'll then need to revise your report design, and try saving again.
+   1. Verify that the report saves. If certain features in your report design aren't yet supported, the save action fails. You're notified of the reasons. You then need to revise your report design, and try saving again.
 
 ### Automated migration
 
 There are three options for automated migration. You can use:
 
 - For Power BI Report Server and SQL Server 2022, see [Publish .rdl files to Power BI](publish-reporting-services-power-bi-service.md).
-- For previous versions of Reporting Services, use the [RDL Migration Tool](https://github.com/microsoft/RdlMigration) in GitHub.
+- For previous versions of Reporting Services, use the [RDL Migration Tool](using-rdl-migration-tool.md) in GitHub.
 - The publicly available APIs for Power BI Report Server, Reporting Services, and Power BI
 
 You can also use the publicly available Power BI Report Server, Reporting Services, and Power BI APIs to automate the migration of your content. While the RDL Migration Tool already uses these APIs, you can develop a custom tool suited to your exact requirements.
 
 For more information about the APIs, see:
 
-- [Power BI REST APIs](/rest/api/power-bi/)
-- [SQL Server Reporting Services REST APIs](/sql/reporting-services/developer/rest-api)
+- [Power BI REST APIs](/rest/api/power-bi/).
+- [SQL Server Reporting Services REST APIs](/sql/reporting-services/developer/rest-api).
 
 ## Post-migration stage
 
@@ -181,7 +180,7 @@ You specify query time-out values during report authoring when you define an emb
 
 ### Configure data sources
 
-Once reports have been migrated to Power BI, you'll need to ensure their data sources are correctly set up. It can involve assigning to gateway data sources, and [securely storing data source credentials](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). These actions aren't done by the RDL Migration Tool.
+Once reports have been migrated to Power BI, you need to ensure their data sources are correctly set up. It can involve assigning to gateway data sources, and [securely storing data source credentials](../paginated-reports/paginated-reports-data-sources.md#azure-sql-database-authentication). These actions aren't done by the RDL Migration Tool.
 
 ### Review report performance
 
@@ -190,18 +189,18 @@ We highly recommended you complete the following actions to ensure the best poss
 1. Test the reports in each [browser supported by Power BI](../fundamentals/power-bi-browsers.md) to confirm the report renders correctly.
 1. Run tests to compare report rending times on the report server and in the Power BI service. Check that Power BI reports render in an acceptable time.
 1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../visuals/power-bi-visualization-export-data.md).
-1. For Power BI reports based on Power BI datasets, review model designs to ensure they're fully optimized.
+1. For Power BI reports based on Power BI semantic models, review model designs to ensure they're fully optimized.
 
 ### Reconcile issues
 
-The Post-migration phase is crucial for reconciling any issues, and that you address any performance concerns. Adding the paginated reports workload to a capacity can contribute to slow performance—for paginated reports _and other content_ stored in the capacity.
+The Post-migration phase is crucial for reconciling any issues, and that you address any performance concerns. Adding the paginated reports workload to a capacity can contribute to slow performance for paginated reports _and other content_ stored in the capacity.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
 - [Publish .rdl files to Power BI from Power BI Report Server and SQL Server Reporting Services](publish-reporting-services-power-bi-service.md)
-- [RDL Migration Tool for older versions of Reporting Services](https://github.com/microsoft/RdlMigration)
+- [RDL Migration Tool for older versions of Reporting Services](using-rdl-migration-tool.md)
 - [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)

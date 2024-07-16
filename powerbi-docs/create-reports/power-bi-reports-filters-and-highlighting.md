@@ -106,7 +106,7 @@ To remove the highlighting, select the value again, or select any empty space in
 
 :::image type="content" source="media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif" alt-text="Animation showing cross-filtering and cross-highlighting.":::
 
-## Next steps
+## Related content
 
 - [Add a filter to a report in Editing view](power-bi-report-add-filter.md)
 - [Format filters in Power BI reports](power-bi-report-filter.md)

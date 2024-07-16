@@ -1,19 +1,20 @@
 ---
 title: Understand star schema and the importance for Power BI
 description: Understand a star schema and its relevance to developing Power BI data models optimized for performance and usability.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 04/06/2022
 ---
 # Understand star schema and the importance for Power BI
 
 This article targets Power BI Desktop data modelers. It describes star schema design and its relevance to developing Power BI data models optimized for performance and usability.
 
-This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like **The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling** (3rd edition, 2013) by Ralph Kimball et al.
+This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like *The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling* (3rd edition, 2013) by Ralph Kimball and others.
 
 ## Star schema overview
 
@@ -47,7 +48,7 @@ As described in this article, you should strive to develop optimized Power BI da
 
 Star schema design and many related concepts introduced in this article are highly relevant to developing Power BI models that are optimized for performance and usability.
 
-Consider that each Power BI report visual generates a query that is sent to the Power BI model (which the Power BI service calls a dataset). These queries are used to filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:
+Consider that each Power BI report visual generates a query that is sent to the Power BI model (which the Power BI service calls a semantic model—[previously known as a dataset](..\connect-data\service-datasets-rename.md)). These queries are used to filter, group, and summarize model data. A well-designed model, then, is one that provides tables for filtering and grouping, and tables for summarizing. This design fits well with star schema principles:
 
 - Dimension tables support *filtering* and *grouping*
 - Fact tables support *summarization*
@@ -84,7 +85,7 @@ It's important to understand that Power BI models support a second method for ac
 However, there are three compelling reasons for you to create measures, even for simple column-level summarizations:
 
 - When you know your report authors will query the model by using [Multidimensional Expressions (MDX)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), the model must include *explicit measures*. Explicit measures are defined by using DAX. This design approach is highly relevant when a Power BI dataset is queried by using MDX, because MDX can't achieve summarization of column values. Notably, MDX will be used when performing [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), because PivotTables issue MDX queries.
-- When you know your report authors will create Power BI paginated reports using the MDX query designer, the model must include explicit measures. Only the MDX query designer supports [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
+- When you know your report authors will create Power BI paginated reports using the MDX query designer, the model must include explicit measures. Only the MDX query designer supports [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
 - When you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions like min, max, average, etc. In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
 
 This design approach works well for reports authored in the Power BI service and for Q&A. However, Power BI Desktop live connections allow report authors to show hidden fields in the **Fields** pane, which can result in circumventing this design approach.
@@ -214,7 +215,7 @@ For example, consider that salespeople can be assigned to one *or more* sales re
 
 This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
-## Next steps
+## Related content
 
 For more information about star schema design or Power BI model design, see the following articles:
 

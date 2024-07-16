@@ -1,8 +1,8 @@
 ---
 title: Show the data that was used to create the Power BI visualization
 description: This document explains how to show the data used to create a visual in Power BI and how to export that data to a .csv file.
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
@@ -17,12 +17,12 @@ LocalizationGroup: Visualizations
 
 ## Show data as a table
 
-A Power BI visualization is constructed using data from your datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show as a table**, Power BI displays the data as a table below (or next to) the visualization.
+A Power BI visualization is constructed using data from your semantic models. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show as a table**, Power BI displays the data as a table below (or next to) the visualization.
 
 You can also export the data that is being used to create the visualization as an .xlsx or .csv file and view it in Excel. For more information, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Show as a table* and *Export Data* are both available in Power BI Desktop and the Power BI service. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](../consumer/end-user-show-data.md).
+> *Show as a table* and *Export Data* are both available in Power BI Desktop and the Power BI service. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the semantic model](../consumer/end-user-show-data.md).
 
 ## Using *Show as a table*
 
@@ -58,8 +58,8 @@ You can also focus on one data record in a visualization, and drill into the det
 
 - If the **Data point table** button in the ribbon is disabled and grayed-out, it means the selected visualization doesn't support it.
 
-## Next steps
+## Related content
 
-[Export data from Power BI visualizations](power-bi-visualization-export-data.md)
+- [Export data from Power BI visualizations](power-bi-visualization-export-data.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 11/23/2022
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # DirectQuery in Power BI
@@ -27,7 +27,7 @@ The article focuses on the DirectQuery workflow when you create a report in Powe
 > [!NOTE]
 > DirectQuery is also a feature of SQL Server Analysis Services. That feature shares many details with Direct Query in Power BI, but there are also important differences. This article primarily covers DirectQuery with Power BI, not SQL Server Analysis Services.
 > 
-> For more information about using DirectQuery with SQL Server Analysis Services, see [Use DirectQuery for Power BI datasets and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md). You can also download the PDF [DirectQuery in SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).
+> For more information about using DirectQuery with SQL Server Analysis Services, see [Use DirectQuery for Power BI semantic models and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md). You can also download the PDF [DirectQuery in SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).
 
 ## Power BI data connectivity modes
 
@@ -60,11 +60,11 @@ When you connect to a data source like SQL Server and import data in Power BI De
 
 - Visuals don't reflect changes to the underlying data in the data store. You need to reimport to refresh the data.
 
-- Publishing the report to the Power BI service as a *.pbix* file creates and uploads a dataset that includes the imported data. You can then schedule data refresh, for example reimport the data every day. Depending on the location of the original data source, it might be necessary to configure an on-premises data gateway for the refresh.
+- Publishing the report to the Power BI service as a *.pbix* file creates and uploads a semantic model that includes the imported data. You can then schedule data refresh, for example reimport the data every day. Depending on the location of the original data source, it might be necessary to configure an on-premises data gateway for the refresh.
 
 - Opening an existing report or authoring a new report in the Power BI service queries the imported data again, ensuring interactivity.
 
-- You can pin visuals or entire report pages as dashboard tiles in the Power BI service. The tiles automatically refresh whenever the underlying dataset refreshes.
+- You can pin visuals or entire report pages as dashboard tiles in the Power BI service. The tiles automatically refresh whenever the underlying semantic model refreshes.
 
 ### DirectQuery connections
 
@@ -76,7 +76,7 @@ When you use DirectQuery to connect to a data source in Power BI Desktop, the fo
 
 - Any changes to the underlying data aren't immediately reflected in existing visuals. It's still necessary to refresh. Power BI Desktop resends the necessary queries for each visual, and updates the visual as necessary.
 
-- Publishing the report to the Power BI service creates and uploads a dataset, the same as for import. However, that dataset includes no data.
+- Publishing the report to the Power BI service creates and uploads a semantic model, the same as for import. However, that semantic model includes no data.
 
 - Opening an existing report or authoring a new report in the Power BI service queries the underlying data source to retrieve the necessary data. Depending upon the location of the original data source, it might be necessary to configure an on-premises data gateway to get the data.
 
@@ -92,7 +92,7 @@ For example, when you use import to connect to SQL Server Analysis Services, you
 
 This situation also applies when you connect to the following sources, except there's no option to import the data:
 
-- Power BI datasets, for example connecting to a Power BI dataset that's already published to the service, to author a new report over it.
+- Power BI semantic models, for example connecting to a Power BI semantic model that's already published to the service, to author a new report over it.
 
 - Microsoft Dataverse.
 
@@ -128,11 +128,11 @@ If the data is very large, it's not feasible to import all of it. DirectQuery re
 
 You don't always have to import full detailed data. The Power Query Editor makes it easy to pre-aggregate data during import. Technically, it's possible to import exactly the aggregate data you need for each visual. While DirectQuery is the simplest approach to large data, importing aggregate data might offer a solution if the underlying data source is too slow for DirectQuery.
 
-These details relate to using Power BI alone. For more information about using large models in Power BI, see [large datasets in Power BI Premium](../enterprise/service-premium-large-models.md). There's no restriction on how frequently the data can be refreshed.
+These details relate to using Power BI alone. For more information about using large models in Power BI, see [large semantic models in Power BI Premium](../enterprise/service-premium-large-models.md). There's no restriction on how frequently the data can be refreshed.
 
 ### The underlying source defines security rules
 
-When you import data, Power BI connects to the data source by using the current user's Power BI Desktop credentials, or the credentials configured for scheduled refresh from the Power BI service. In publishing and sharing reports that have imported data, you must be careful to share only with users allowed to see the data, or you must define row-level security as part of the dataset.
+When you import data, Power BI connects to the data source by using the current user's Power BI Desktop credentials, or the credentials configured for scheduled refresh from the Power BI service. In publishing and sharing reports that have imported data, you must be careful to share only with users allowed to see the data, or you must define row-level security as part of the semantic model.
 
 DirectQuery lets a report viewer's credentials pass through to the underlying source, which applies security rules. DirectQuery supports single sign-on (SSO) to Azure SQL data sources, and through a data gateway to on-premises SQL servers. For more information, see [Overview of single sign-on (SSO) for gateways in Power BI](service-gateway-sso-overview.md).
 
@@ -188,7 +188,7 @@ Unless the underlying data source uses SSO, a DirectQuery report always uses the
 
 Once you provide the user credentials, Power BI uses those credentials for whoever opens the report, the same as for imported data. Every user sees the same data, unless row-level security is defined as part of the report. You must pay the same attention to sharing the report as for imported data, even if there are security rules defined in the underlying source.
 
-- Connecting to Power BI datasets and Analysis Services in DirectQuery mode always uses SSO, so the security is similar to live connections to Analysis Services.
+- Connecting to Power BI semantic models and Analysis Services in DirectQuery mode always uses SSO, so the security is similar to live connections to Analysis Services.
 
 - Alternate credentials aren't supported when making DirectQuery connections to SQL Server from Power BI Desktop. You can use your current Windows credentials or database credentials.
 
@@ -221,7 +221,7 @@ The following limitations are common to all DirectQuery sources. More limitation
 
 - **No built-in date hierarchy:** With imported data, every date/datetime column also has a built-in date hierarchy available by default. For example, if you import a table of sales orders that includes a column **OrderDate**, and you use **OrderDate** in a visual, you can choose the appropriate date level to use, such as year, month, or day. This built-in date hierarchy isn't available with DirectQuery. If there's a **Date** table available in the underlying source, as is common in many data warehouses, you can use the Data Analysis Expressions (DAX) time-intelligence functions as usual.
 
-- **Date/time support only to the seconds level:** For datasets that use time columns, Power BI issues queries to the underlying DirectQuery source only up to the seconds detail level, not milliseconds. Remove milliseconds data from your source columns.
+- **Date/time support only to the seconds level:** For semantic models that use time columns, Power BI issues queries to the underlying DirectQuery source only up to the seconds detail level, not milliseconds. Remove milliseconds data from your source columns.
 
 - **Limitations in calculated columns:** Calculated columns can only be intra-row, that is they can refer only to values of other columns of the same table, without using any aggregate functions. Also, the allowed DAX scalar functions, such as `LEFT()`, are limited to those functions that can be pushed to the underlying source. The functions vary depending upon the exact capabilities of the source. Functions that aren't supported aren't listed in autocomplete when authoring the DAX query for a calculated column, and result in an error if used.
 
@@ -233,7 +233,7 @@ The following limitations are common to all DirectQuery sources. More limitation
 
 Almost all reporting capabilities are supported for DirectQuery models. As long as the underlying source offers a suitable level of performance, you can use the same set of visualizations as for imported data.
 
-One general limitation is that the maximum length of data in a text column for DirectQuery datasets is 32,764 characters. Reporting on longer texts results in an error.
+One general limitation is that the maximum length of data in a text column for DirectQuery semantic models is 32,764 characters. Reporting on longer texts results in an error.
 
 The following Power BI reporting capabilities can cause performance issues in DirectQuery-based reports:
 
@@ -364,7 +364,7 @@ Once you publish a report to the Power BI service, the maximum number of concurr
 |Environment            |Upper limit per data source |
 |-----------------------|-------------|
 |Power BI Pro           |10 active connections|
-|Power BI Premium       |30 active connections|
+|Power BI Premium       |Depends on [semantic model SKU limitation](../enterprise/service-premium-what-is.md#semantic-model-sku-limitation)|
 |Power BI Report Server |10 active connections|
 
 > [!NOTE]
@@ -397,19 +397,19 @@ There's some caching of results. The refresh of a visual is instantaneous if the
 
 Using DirectQuery imposes some important limitations in some of the capabilities the Power BI service offers for published reports:
 
-- **Quick insights aren't supported:** Power BI quick insights search different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially interesting insights. Because quick insights require high-performance queries, this feature isn't available on datasets that use DirectQuery.
+- **Quick insights aren't supported:** Power BI quick insights search different subsets of your semantic model while applying a set of sophisticated algorithms to discover potentially interesting insights. Because quick insights require high-performance queries, this feature isn't available on semantic models that use DirectQuery.
 
-- **Using Explore in Excel results in poor performance:** You can explore a dataset by using the **Explore in Excel** capability, which lets you create pivot tables and pivot charts in Excel. This capability is supported for datasets that use DirectQuery, but performance is slower than creating visuals in Power BI. If using Excel is important for your scenarios, account for this issue in deciding whether to use DirectQuery.
+- **Using Explore in Excel results in poor performance:** You can explore a semantic model by using the **Explore in Excel** capability, which lets you create pivot tables and pivot charts in Excel. This capability is supported for semantic models that use DirectQuery, but performance is slower than creating visuals in Power BI. If using Excel is important for your scenarios, account for this issue in deciding whether to use DirectQuery.
 
-- **Excel doesn't show hierarchies:** For example, when you use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), Excel doesn't show any hierarchies defined in Azure Analysis Services models or Power BI datasets that use DirectQuery.
+- **Excel doesn't show hierarchies:** For example, when you use [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), Excel doesn't show any hierarchies defined in Azure Analysis Services models or Power BI semantic models that use DirectQuery.
 
 ### Dashboard refresh
 
-In the Power BI service, you can pin individual visuals or entire pages to dashboards as tiles. Tiles that are based on DirectQuery datasets refresh automatically by sending queries to the underlying data sources on a schedule. By default, datasets refresh every hour, but you can configure refresh between weekly and every 15 minutes as part of dataset settings.
+In the Power BI service, you can pin individual visuals or entire pages to dashboards as tiles. Tiles that are based on DirectQuery semantic models refresh automatically by sending queries to the underlying data sources on a schedule. By default, semantic models refresh every hour, but you can configure refresh between weekly and every 15 minutes as part of semantic model settings.
 
 If no row-level security is defined in the model, each tile is refreshed once, and the results are shared across all users. If you use row-level security, each tile requires separate queries per user to be sent to the underlying source.
 
-There can be a large multiplier effect. A dashboard with 10 tiles, shared with 100 users, created on a dataset using DirectQuery with row-level security, results in at least 1000 queries being sent to the underlying data source for every refresh. Give careful consideration to the use of row-level security and the configuration of the refresh schedule.
+There can be a large multiplier effect. A dashboard with 10 tiles, shared with 100 users, created on a semantic model using DirectQuery with row-level security, results in at least 1000 queries being sent to the underlying data source for every refresh. Give careful consideration to the use of row-level security and the configuration of the refresh schedule.
 
 ### Query timeouts
 
@@ -514,15 +514,14 @@ Power Query Editor defines the exact subselect queries. This use of subselect qu
 
 Power BI uses this pattern because the analyst provides the SQL query directly. Power BI uses the query as provided, without any attempt to rewrite it.
 
-## Next steps
+## Related content
 
 For more information about DirectQuery in Power BI, see:
 
-- [Data sources supported by DirectQuery](power-bi-data-sources.md)
 - [Use DataQuery in Power BI Desktop](desktop-use-directquery.md)
 
 This article described aspects of DirectQuery that are common across all data sources. See the following articles for details about specific sources:
 
 - [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 - [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
-- [Use DirectQuery for Power BI datasets and Analysis Services (preview)](desktop-directquery-datasets-azure-analysis-services.md)
+- [Use DirectQuery for Power BI semantic models and Analysis Services](desktop-directquery-datasets-azure-analysis-services.md)

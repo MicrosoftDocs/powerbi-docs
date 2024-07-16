@@ -1,14 +1,15 @@
 ---
 title: Setting up an environment for developing a Power BI visual
-description: This article explains how to set up your environment so that you can develop a Power BI visual.
+description: This article explains how to set up your environment so you have all the tools necessary for developing a Power BI visual.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/12/2023
+ms.date: 05/31/2024
 ms.custom: engagement-fy23
+#customer intent: As a Power BI visual developer, I want to learn how to set up my environment so that I can develop a Power BI visual.
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -17,7 +18,7 @@ This article teaches you how to set up your environment for developing a Power B
 
 Before you start development, you need to install **node.js** and the **pbiviz** package. Then, when your local environment is set up, you need to configure Power BI service for developing a Power BI visual.
 
-In this article, you'll learn how to:
+In this article, you learn how to:
 > [!div class="checklist"]
 >
 > * [Install *node.js*](#install-nodejs).
@@ -31,7 +32,7 @@ In this article, you'll learn how to:
 
 To install *node.js*:
 
-1. In a web browser, navigate to [node.js](https://nodejs.org).
+1. Navigate to [node.js](https://nodejs.org), from your web browser.
 
 2. Download the latest recommended MSI installer.
 
@@ -63,31 +64,27 @@ Confirm that the Power BI visuals tools package is installed. In PowerShell, run
 
 ## Set up Power BI desktop for developing a visual
 
-To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. Follow the instructions in this section to enable this option.
+To develop a Power BI visual, enable the *Develop a visual* option in the Power BI desktop. To enable this option, follow the instructions in this section.
 
 1. From the Power BI desktop, navigate to **File** > **Options and settings**  > **Options**
    :::image type="content" source="./media/environment-setup/desktop-options.png" alt-text="Screenshot of Options menu in the Power BI desktop.":::
-1. Scroll down to Report settings and enable the Developer Mode check box.
+1. Scroll down to Report settings in the **Current file** section, and enable the *Develop a visual* check box.
    :::image type="content" source="./media/environment-setup/desktop-developer-mode.png" alt-text="Screenshot of Developer mode enabled in Power BI desktop.":::
 1. Select **OK**
 
 ## Set up Power BI service for developing a visual
 
-To develop a Power BI visual, enable custom visual debugging in Power BI service. Follow the instructions in this section to enable this option.
+To develop a Power BI visual, enable custom visual developer mode in Power BI service.
+To enable this option, follow the instructions in this section.
 
-1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
+1. Sign in to [Power BI developer settings](https://app.powerbi.com/user/user-settings/developer-settings?experience=power-bi).
 
-2. Navigate to **Settings** > **Settings** > **Settings**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
-
-3. From the **General** tab, select **Developer**. In the **Developer** setting, select the **Enable  developer mode** check box, and then select **Apply**.
+1. Enable the **Power BI Developer mode** switch. check box, and then select **Apply**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable developer mode, in the Power BI settings, general tab.](media/environment-setup/developer-settings.png)
 
-## Next steps
+## Related content
 
 * [Learn about the Power BI visual project structure](./visual-project-structure.md)
 * [Create a Power BI circle card visual](develop-circle-card.md)

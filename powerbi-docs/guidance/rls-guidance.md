@@ -1,13 +1,14 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
 description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/29/2022
+ms.custom: fabric-cat
+ms.date: 5/23/2023
 ---
 
 # Row-level security (RLS) guidance in Power BI Desktop
@@ -17,7 +18,7 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 It's important to understand RLS filters _table rows_. They can't be configured to restrict access to model objects, including tables, columns, or measures.
 
 > [!NOTE]
-> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](/power-bi/enterprise/service-admin-rls).
+> This article doesn't describe RLS or how to set it up. For more information, see [Restrict data access with row-level security (RLS) for Power BI Desktop](/fabric/security/service-admin-row-level-security).
 >
 > Also, it doesn't cover enforcing RLS in live connections to external-hosted models with Azure Analysis Services or SQL Server Analysis Services. In these cases, RLS is enforced by Analysis Services. When Power BI connects using single-sign on (SSO), Analysis Services will enforce RLS (unless the account has admin privileges).
 
@@ -51,7 +52,7 @@ RLS works by automatically applying filters to every DAX query, and these filter
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - All relationship guidance articles found in the [Power BI guidance documentation](./index.yml)
 
-In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
+In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. RLS filters only propagate through active relationships. So, avoid using the [LOOKUPVALUE](/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
 
 Whenever RLS filters are enforced on DirectQuery tables and there are relationships to other DirectQuery tables, be sure to optimize the source database. It can involve designing appropriate indexes or using persisted computed columns. For more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md).
 
@@ -61,9 +62,9 @@ It's possible to measure the performance impact of RLS filters in Power BI Deskt
 
 ## Configure role mappings
 
-Once published to Power BI, you must map members to dataset roles. Only dataset owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model).
+Once published to Power BI, you must map members to semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) roles. Only semantic model owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/fabric/security/service-admin-row-level-security#manage-security-on-your-model).
 
-Members can be user accounts or security groups. Whenever possible, we recommend you map security groups to dataset roles. It involves managing security group memberships in Azure Active Directory. Possibly, it delegates the task to your network administrators.
+Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to semantic model roles. It involves managing security group memberships in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). Possibly, it delegates the task to your network administrators.
 
 ## Validate roles
 
@@ -137,9 +138,9 @@ Each of the three model relationships is described in the following table:
 
 |Relationship|Description|
 |---------|---------|
-|![Flowchart terminator 1.](media/common/icon-01-red-30x30.png)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
-|![Flowchart terminator 2.](media/common/icon-02-red-30x30.png)|There's a one-to-many relationship between the **Date** and **Sales** tables.|
-|![Flowchart terminator 3.](media/common/icon-03-red-30x30.png)|There's a one-to-many relationship between the **Date** and **SalesRevenueSummary** tables.|
+|![Flowchart terminator 1.](../media/legend-number/legend-number-01-fabric.svg)|There's a many-to-many relationship between the **Salesperson** and **Sales** tables. The RLS rule filters the **EmailAddress** column of the hidden **Salesperson** table by using the [USERNAME](/dax/username-function-dax) DAX function. The **Region** column value (for the report user) propagates to the **Sales** table.|
+|![Flowchart terminator 2.](../media/legend-number/legend-number-02-fabric.svg)|There's a one-to-many relationship between the **Date** and **Sales** tables.|
+|![Flowchart terminator 3.](../media/legend-number/legend-number-03-fabric.svg)|There's a one-to-many relationship between the **Date** and **SalesRevenueSummary** tables.|
 
 The following expression defines the **Revenue % All Region** measure:
 
@@ -156,9 +157,9 @@ DIVIDE(
 
 ## When to avoid using RLS
 
-Sometimes it makes sense to avoid using RLS. If you have only a few simplistic RLS rules that apply static filters, consider publishing multiple datasets instead. None of the datasets define roles because each dataset contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
+Sometimes it makes sense to avoid using RLS. If you have only a few simplistic RLS rules that apply static filters, consider publishing multiple semantic models instead. None of the semantic models define roles because each semantic model contains data for a specific report user audience, which has the same data permissions. Then, create one workspace per audience and assign access permissions to the workspace or app.
 
-For example, a company that has just two sales regions decides to publish a dataset _for each sales region_ to different workspaces. The datasets don't enforce RLS. They do, however, use [query parameters](/power-query/power-query-query-parameters) to filter source data. This way, the same model is published to each workspace—they just have different dataset parameter values. Salespeople are assigned access to just one of the workspaces (or published apps).
+For example, a company that has just two sales regions decides to publish a semantic model _for each sales region_ to different workspaces. The semantic models don't enforce RLS. They do, however, use [query parameters](/power-query/power-query-query-parameters) to filter source data. This way, the same model is published to each workspace—they just have different semantic model parameter values. Salespeople are assigned access to just one of the workspaces (or published apps).
 
 There are several advantages associated with avoiding RLS:
 
@@ -176,7 +177,7 @@ However, there are disadvantages associated with avoiding RLS:
 
 If RLS produces unexpected results, check for the following issues:
 
-- Incorrect relationships exist between model tables, in terms of column mappings and filter directions.
+- Incorrect relationships exist between model tables, in terms of column mappings and filter directions. Keep in mind that RLS filters only propagate through active relationships.
 - The **Apply security filter in both directions** relationship property isn't correctly set. For more information, see [Bi-directional relationship guidance](relationships-bidirectional-filtering.md).
 - Tables contain no data.
 - Incorrect values are loaded into tables.
@@ -188,16 +189,16 @@ When a specific user can't see any data, it could be because their UPN isn't sto
 > [!TIP]
 > For testing purposes, add a measure that returns the [USERNAME](/dax/username-function-dax) DAX function. You might name it something like "Who Am I". Then, add the measure to a card visual in a report and publish it to Power BI.
 
-Creators and consumers with only Read permission on the dataset will only be able to view the data they're allowed to see (based on their RLS role mapping).
+Creators and consumers with only Read permission on the semantic model will only be able to view the data they're allowed to see (based on their RLS role mapping).
 
-When a user views a report in either a workspace or an app, RLS may or may not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying dataset when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
+When a user views a report in either a workspace or an app, RLS might or might not be enforced depending on their semantic model permissions. For this reason, it's critical that content consumers and creators only possess Read permission on the underlying semantic model when RLS must be enforced. For details about the permissions rules that determine whether RLS is enforced, see the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#rls-user-experience) article.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 
-- [Row-level security (RLS) with Power BI](/power-bi/enterprise/service-admin-rls)
-- [Restrict data access with row-level security (RLS) for Power BI Desktop](/power-bi/enterprise/service-admin-rls)
+- [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security)
+- [Restrict data access with row-level security (RLS) for Power BI Desktop](/fabric/security/service-admin-row-level-security)
 - [Model relationships in Power BI Desktop](/power-bi/transform-model/desktop-relationships-understand)
 - [Power BI implementation planning: Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

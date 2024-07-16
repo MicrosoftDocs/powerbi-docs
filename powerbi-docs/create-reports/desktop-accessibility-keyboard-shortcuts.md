@@ -40,6 +40,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move focus backward in a section | **Shift + Tab** |
 | Select or clear selection of an object | **Enter** or **spacebar** |
 | Multi-select objects | **Ctrl + spacebar** |
+| Keytips to navigate and select ribbon buttons | **Alt** |
 
 ## On visual
 
@@ -132,21 +133,22 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move down an object in the layering | **Ctrl + Shift + B** |
 | Hide / show (toggle) an object | **Ctrl + Shift + S** |
 
-## DAX editor
+## DAX formula bar
 
 | To do this action          | Press                |
 | :------------------- | :------------------- |
+| Submit | **Ctrl + Enter** or **Enter** |
 | Go to line number | **Ctrl + G** |
 | Move line up / down | **Alt + Up arrow key** / **Down arrow key** |
 | Copy line up / down | **Shift + Alt + Up arrow key** / **Down arrow key** |
-| Insert line below | **Shift + Enter** |
+| Insert line below | **Shift + Enter** or **Alt + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
 | Delete selected word | **Ctrl + Del**|
 | Delete all selected lines | **Ctrl + Shift + K**|
 | Jump to matching bracket | **Ctrl + Shift +** \ |
 | Jump to start of a line of code | **Ctrl + Home**  |
 | Jump to the end of a line of code | **Ctrl + End** |
-| Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
+| Indent line / Extend line into the margin | **Ctrl + ]** or **Ctrl + [** |
 | Insert cursor | **Alt + Click** |
 | Select current line | **Ctrl + L** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
@@ -157,15 +159,50 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Enter multiple lines of code up / down |**Ctrl + Alt + Up arrow key** / **Down arrow key**|
 | Comment a line | **Ctrl + /** or **Ctrl + K + C** |
 | Uncomment a line | **Ctrl + /** or **Ctrl + K + U** |
-| Increase font size | **Ctrl + +** Or **Scroll Up** |
-| Decrease font size | **Ctrl + -** Or **Scroll Down** |
+| Increase font size | **Ctrl + +** or **Scroll Up** |
+| Decrease font size | **Ctrl + -** or **Scroll Down** |
 | Show or hide "Read more" tooltips | **Ctrl + I** |
+| Show accessiblity widget | **Alt + F1** |
+| Close widget, suggestions, other dialogs, or closes DAX formula bar | **Esc** |
+| Show suggestions | **Ctrl + Space** |
+| Expand or Collapse DAX formula bar | **Ctrl + J** |
+| Focus on the DAX fomula bar itself to tab to next UI element | **Ctrl + M** |
 
 ## Enter data
-
 | To do this action           | Press                |
 | :------------------- | :------------------- |
 | Exit editable grid | **Ctrl + Tab** |
+
+## Model view navigation
+
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Move focus to first card in relationship diagram | **Tab** |
+| Move focus to the next card | **Tab** / **Right arrow key** / **Down arrow key** |
+| Move focus to the previous card | **Shift + Tab** / **Left arrow key** / **Up arrow key** |
+
+## On card in model view
+
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Move focus to relationship line connected to card | **Ctrl + Alt + R** |
+| Move focus to first field list item on the card | **Enter** |
+| Move focus to next item within the card | **Tab** |
+| Move focus back to entire card | **Esc** |
+| Open context menu | **Shift + F10** |
+| Move focus to the next field list item | **Right arrow key** / **Down arrow key** |
+| Move focus to the previous field list item | **Up arrow key** / **Left arrow key** |
+
+## On relationship in model view
+
+| To do this action           | Press                |
+| :------------------- | :------------------- |
+| Move focus to next card connected to relationship line | **Ctrl + Alt + R** |
+| Move focus to previously focused card connected to relationship line | **Shift + Alt + R** |
+| Open relationship properties pane | **Enter** |
+| Move focus to next relationship line connected to card | **Tab** / **Right arrow key** / **Down arrow key** |
+| Move focus to previous relationship line connected to card | **Shift + Tab** / **Left arrow key** / **Up arrow key** |
+| Select focused relationship | **Enter** |
 
 ## Considerations and limitations
 
@@ -174,7 +211,7 @@ There are a few known issues and limitations with the accessibility features. Yo
 * When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
 * If you're using Narrator, you'll have some limitations around navigating **Show data** as an HTML table.
 
-## Next steps
+## Related content
 
 The collection of articles for Power BI accessibility are the following:
 

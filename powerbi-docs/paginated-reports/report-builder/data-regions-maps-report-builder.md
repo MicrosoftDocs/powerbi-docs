@@ -4,8 +4,6 @@ description: Explore the types and characteristics of data regions and maps to d
 ms.date: 02/13/2023
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 helpviewer_keywords: 
   - "data regions"
@@ -29,10 +27,10 @@ ms.reviewer: monaraya
  A list is a data region that presents data arranged in a freeform fashion. You can arrange report items to create a form with text boxes, images, and other data regions placed anywhere within the list. Read more about [adding a list to a report](/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs).  
   
 ## Chart  
- A chart presents data graphically. Examples of charts include bar, pie, and line charts, but many more styles are supported. Read more about [adding a chart to a report](/sql/reporting-services/report-design/charts-report-builder-and-ssrs).  
+ A chart presents data graphically. Examples of charts include bar, pie, and line charts, but many more styles are supported. Read more about [Charts in Power BI paginated reports (Power BI Report Builder)](../report-design/visualizations/charts-report-builder.md).  
   
 ## Gauge  
- A gauge presents data as a range with an indicator pointing to a specific value within the range. Gauges are used to display key performance indicators (KPIs) and other metrics. Examples of gauges include linear and circular. Read more about [adding a gauge to a report](/sql/reporting-services/report-design/gauges-report-builder-and-ssrs).  
+ A gauge presents data as a range with an indicator pointing to a specific value within the range. Gauges are used to display key performance indicators (KPIs) and other metrics. Examples of gauges include linear and circular. Read more about [adding a gauge to a report](../report-design/visualizations/gauges-report-builder.md).  
   
 ## Map  
  A map enables you to present data against a geographical background. Map data can be spatial data from a query, an ESRI shapefile, or Bing map tiles. Spatial data consists of sets of coordinates that define polygons that represent shapes or areas, lines that represent routes or paths, and points represented by markers. You can associate aggregate data with map elements to automatically vary their color and size. For example, you can vary the marker type for a store based on sales amount or the color for a road based on speed limit. For more information, see [Maps &#40;Power BI Report Builder&#41;](maps-report-builder.md).  
@@ -53,9 +51,9 @@ ms.reviewer: monaraya
   
 - Lookup values from name/value pairs in a different dataset.  
   
- For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
+ For more information, see [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md).  
   
-## Next steps 
+## Related content
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)
 - [Power BI Report Builder](../report-builder-power-bi.md)   

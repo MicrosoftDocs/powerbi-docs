@@ -20,14 +20,14 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 
 ## Prerequisites
 
-- You just need a [Power BI free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
+- You just need a [Fabric free license](../consumer/end-user-features.md) to edit dashboards in My Workspace in the Power BI service.
 - You need a Power BI Pro license to edit dashboards in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [Retail Analysis sample dashboard](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service).
 
 ## How to pin a tile from Q&A
 
-1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any dataset that has a tile pinned to that dashboard.
+1. Open a dashboard that has at least one tile pinned from a report. When you ask a question, Power BI looks for the answer in any semantic model that has a tile pinned to that dashboard.
 1. In the question box at the top of your dashboard, start typing what you want to know about your data.
 
    :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png" alt-text="Screenshot of the Q&A question box.":::
@@ -56,15 +56,15 @@ In this how-to article, we open a [dashboard](../consumer/end-user-dashboards.md
 
 ## Considerations and troubleshooting
 
-* When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard. The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard.
+* When you start typing a question, Q&A immediately begins searching for the best answer from all semantic models associated with the current dashboard. The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard.
 
   :::image type="content" source="media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar-2.png" alt-text="screenshot of the tile pinned to the dashboard.":::
 
-* **How does Q&A know which datasets to use**? Q&A has access to all datasets that have at least one visualization pinned to that dashboard.
+* **How does Q&A know which semantic models to use**? Q&A has access to all semantic models that have at least one visualization pinned to that dashboard.
 
 * **Don't see the question box**? Check with your Power BI administrator. The administrator has the ability to disable Q&A.
 
-## Next steps
+## Related content
 
 * [Edit or remove a dashboard tile](service-dashboard-edit-tile.md)
 * [Display content in more detail: focus mode and full screen mode](../consumer/end-user-focus.md)

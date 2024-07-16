@@ -5,13 +5,15 @@
   - name: About Support requests
     items:
     - name: Support overview
-      href: /power-platform/admin/support-overview
-    - name: How to contact Support
       href: service-support-options.md
     - name: Create a Support ticket
-      href: /power-platform/admin/get-help-support
+      href: create-support-ticket.md
+      displayName: Power BI, Fabric, Support, ticket creation, support ticket
+    - name: Best practices when creating a support ticket
+      href: best-practices-creating-sr.md
+      displayName: support, support case, best practices
     - name: Consent to access customer data
-      href: /power-platform/admin/support-environment
+      href: access-customer-data.md
     - name: Policies and communications for Power BI
       href: /power-platform/admin/policies-communications
 
@@ -23,8 +25,8 @@
       href: https://support.powerbi.com
     - name: Check the planned maintenance schedule
       href: service-planned-maintenance.md
-    - name: Find out if this is a known issue
-      href: ../troubleshoot/known-issues/power-bi-known-issues.md
+    - name: Find out if your problem is a known issue
+      href: /fabric/get-started/fabric-known-issues.md
     - name: Look for an answer in the Community forum
       href: https://community.powerbi.com
     - name: Tips for getting answers to your Power BI questions

@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 06/17/2021
+ms.date: 11/10/2023
 LocalizationGroup: Connect to data
 ---
 # Create visuals by using R packages in the Power BI service
@@ -206,7 +206,7 @@ The following table shows which packages are supported in the Power BI service.
 |data.table|1.12.6|[https://cran.r-project.org/web/packages/data.table/index.html](https://cran.r-project.org/web/packages/data.table/index.html)|
 |data.tree|0.7.5|[https://cran.r-project.org/web/packages/data.tree/index.html](https://cran.r-project.org/web/packages/data.tree/index.html)|
 |datasauRus|0.1.4|[https://cran.r-project.org/web/packages/datasauRus/index.html](https://cran.r-project.org/web/packages/datasauRus/index.html)|
-|datasets|3.4.4|NA|
+|semantic models|3.4.4|NA|
 |date|1.2-38|[https://cran.r-project.org/web/packages/date/index.html](https://cran.r-project.org/web/packages/date/index.html)|
 |DBI|0.8|[https://cran.r-project.org/web/packages/DBI/index.html](https://cran.r-project.org/web/packages/DBI/index.html)|
 |dbplyr|1.2.1|[https://cran.r-project.org/web/packages/dbplyr/index.html](https://cran.r-project.org/web/packages/dbplyr/index.html)|
@@ -1033,7 +1033,7 @@ The following table shows which packages are not supported in the Power BI servi
 | mailR |10/03/2016 |Networking is blocked |
 | RevoScaleR |8/30/2016 |Ships only with Microsoft R Server |
 
-## Next steps
+## Related content
 
 For more information about R in Power BI, take a look at the following articles:
 

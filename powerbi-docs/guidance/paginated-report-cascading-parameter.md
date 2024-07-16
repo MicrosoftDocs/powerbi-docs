@@ -1,12 +1,13 @@
 ---
 title: Use cascading parameters in paginated reports
 description: Guidance for designing paginated reports using cascading parameters.
-author: maggiesMSFT
-ms.author: maggies
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/14/2020
 ---
 
@@ -272,7 +273,7 @@ Be sure to optimize your data sources by:
 - Adding appropriate indexes for efficient data retrieval
 - Materializing column values—and even rows—to avoid expensive query-time evaluations
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

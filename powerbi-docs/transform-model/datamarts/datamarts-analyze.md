@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 04/17/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 
@@ -58,21 +58,16 @@ The **SQL Query Editor** provides a text editor to write queries using T-SQL. To
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-05.png" alt-text="Screenshot of the S Q L query editor view icon.":::
 
-You can write your SQL query in the query editor window, which includes intellisense support. Once complete, select the **Run** button to execute the query. Query results appear in the results section. You can open the results in Excel for further analysis by selecting the **Open in Excel** button.
-
-As you work on your SQL query, the queries are automatically saved every few seconds. A “saving indicator” that shows up in your query tab at the bottom indicates that your query is being saved.
-
-:::image type="content" source="media/datamarts-analyze/datamarts-analyze-06.png" alt-text="Screenshot of the S Q L query editor query results.":::
-
-The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. The **Results** preview is displayed in the **Results** section. The **Open in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel.
+The SQL Query editor provides support for intellisense, code completion, syntax highlighting, client-side parsing and validation. Once you’ve written the T-SQL query, select **Run** to execute the query. As you work on your SQL query, the queries are automatically saved every few seconds. A “saving indicator” that shows up in your query tab at the bottom indicates that your query is being saved. The **Results** preview is displayed in the **Results** section. The **Download in Excel** button opens the corresponding T-SQL Query to Excel and executes the query, enabling you to view the results in Excel. The **Visualize results** allows you to create reports from your query results within the SQL query editor.
 
 There are a few things to keep in mind about the Visual Query editor:
 * You can only write DQL (not DDL or DML) 
 
+:::image type="content" source="media/datamarts-analyze/datamarts-analyze-15.png" alt-text="Screenshot of the SQL query editor query results.":::
 
 ## Analyze outside the editor
 
-Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Azure Active Directory or MFA. The login process is the same as the sign-in process for Power BI.
+Datamarts provide a SQL DQL (query) experience through your own development environment – such as SSMS or Azure Data Studio. You must run the latest version of the tools and authenticate using Microsoft Entra ID or MFA. The login process is the same as the sign-in process for Power BI.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-14.png" alt-text="Diagram that shows data sources and datamarts with S Q L and Azure data studio.":::
 
@@ -99,7 +94,7 @@ Use ADS for:
 
 For developers and analysts with SQL experience, using SQL Server Management Studio or Azure Data Studio as an extension to Power BI datamarts can provide a more thorough querying environment.
 
-To connect to a datamart’s SQL endpoint with client tooling, navigate to the dataset settings page by selecting the **Datamarts (Preview)** tab in Power BI. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
+To connect to a datamart’s SQL endpoint with client tooling, navigate to the semantic model settings page by selecting the **Datamarts (Preview)** tab in Power BI. From there, expand the **Server settings** section and copy the connection string, as shown in the following image.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-07.png" alt-text="Screenshot of the server settings connection string.":::
 
@@ -111,7 +106,7 @@ To use SQL Server Management Studio (SSMS), you must be using SSMS Version 18.0 
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-08.png" alt-text="Screenshot of the database engine option in S S M S.":::
 
-Once the **Connect to Server** window is open, paste the connection string copied from the previous section of this article into the **Server name** box. Select **Connect** and proceed with the appropriate credentials for authentication. Remember that only Azure Active Directory - MFA authentication is supported.
+Once the **Connect to Server** window is open, paste the connection string copied from the previous section of this article into the **Server name** box. Select **Connect** and proceed with the appropriate credentials for authentication. Remember that only Microsoft Entra ID - MFA authentication is supported.
 
 :::image type="content" source="media/datamarts-analyze/datamarts-analyze-09.png" alt-text="Screenshot of the S Q L server connect to server window.":::
 
@@ -209,9 +204,11 @@ FROM [METADATA].[relationships] AS R
 JOIN [metadata].[relationshipColumns] AS C
 ON R.RelationshipId=C.RelationshipId
 ```
+## Limitations
+- Visualize results currently does not support SQL queries with an ORDER BY clause. 
 
 
-## Next steps
+## Related content
 This article provided information about analyzing data in datamarts. 
 
 The following articles provide more information about datamarts and Power BI:
@@ -227,5 +224,3 @@ The following articles provide more information about datamarts and Power BI:
 For more information about dataflows and transforming data, see the following articles:
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
-
-

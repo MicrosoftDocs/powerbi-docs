@@ -112,7 +112,7 @@ If you want to use Report Builder to migrate large reports, you should work with
 
 The main report and subreports must be in the same workspace. Otherwise, the subreport doesn't render. When sharing the main report, you also need to share the subreports. If you share the main report in an app, make sure you also include the subreports in that app. If you share the main report with users or user groups directly, make sure you also share each subreport with the same set of users or user groups.
   
-## Next steps
+## Related content
 
 - [Troubleshoot subreports in Power BI paginated reports](subreports-troubleshoot.md)
 

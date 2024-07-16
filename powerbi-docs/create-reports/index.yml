@@ -26,6 +26,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: Use Power BI Home
+            url: desktop-home.md
           - text: Use the updated ribbon
             url: desktop-ribbon.md
           - text: "Accessibility overview"
@@ -163,7 +165,7 @@ landingContent:
             url: ../learning-catalog/paginated-reports-online-course.md
       - linkListType: how-to-guide
         links:
-          - text: "Create a report on a shared dataset"
+          - text: "Create a report on a shared semantic model"
             url: ../paginated-reports/report-builder-shared-datasets.md
 
   # Card (optional)

@@ -8,15 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 02/28/2023
+ms.date: 04/25/2024
 #customer intent: "As a Power BI end user, I want to build a machine learning model so I can use machine learning with Power BI."
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Build a machine learning model in Power BI
 
+> [!IMPORTANT]
+> Creation of Power BI Automated Machine Learning (AutoML) models for dataflows v1 has been retired, and is no longer available. Customers are encouraged to migrate your solution to the AutoML feature in Microsoft Fabric. For more information, see [the retirement announcement](https://powerbi.microsoft.com/blog/announcing-the-deprecation-of-creation-of-machine-learning-models-in-power-bi-using-dataflows-v1/). 
+
+
 In this tutorial, you use *automated machine learning* to create and apply a binary prediction model in Power BI. You create a Power BI dataflow, and use the entities you define in the dataflow to train and validate a machine learning model directly in Power BI. You then use that model to score new data and generate predictions.
 
-First, you create a binary prediction machine learning model to predict the purchase intent of online shoppers, based on a set of their online session attributes. You use a benchmark machine learning dataset for this exercise. Once you train a model, Power BI automatically generates a validation report that explains the model results. You can then review the validation report and apply the model to your data for scoring.
+First, you create a binary prediction machine learning model to predict the purchase intent of online shoppers, based on a set of their online session attributes. You use a benchmark machine learning semantic model for this exercise. Once you train a model, Power BI automatically generates a validation report that explains the model results. You can then review the validation report and apply the model to your data for scoring.
 
 This tutorial consists of the following steps:
 > [!div class="checklist"]
@@ -26,15 +30,16 @@ This tutorial consists of the following steps:
 > * Apply the model to a dataflow entity.
 > * Use the scored output from the model in a Power BI report.
 
+
 ## Create a dataflow with the input data
 
 Create a dataflow with input data by following these steps.
 
 ### Get data
 
-The first step in creating a dataflow is to have your data sources ready. In this case, you use a machine learning dataset from a set of online sessions, some of which culminated in a purchase. The dataset contains a set of attributes about these sessions, which you use to train your model.
+The first step in creating a dataflow is to have your data sources ready. In this case, you use a machine learning semantic model from a set of online sessions, some of which culminated in a purchase. The semantic model contains a set of attributes about these sessions, which you use to train your model.
 
-You can download the dataset from the UC Irvine website or by downloading the [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv). Later in this tutorial, you connect to the dataset by specifying its URL.
+You can download the semantic model from the UC Irvine website or by downloading the [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv). Later in this tutorial, you connect to the semantic model by specifying its URL.
 
 ### Create the tables
 
@@ -112,9 +117,9 @@ Select your dataflow under **Dataflows**, expand **Data source credentials**, an
 
 ### Track training status
 
-The training process begins by sampling and normalizing your historical data and splitting your dataset into two new entities: **Purchase Intent Prediction Training Data** and **Purchase Intent Prediction Testing Data**.
+The training process begins by sampling and normalizing your historical data and splitting your semantic model into two new entities: **Purchase Intent Prediction Training Data** and **Purchase Intent Prediction Testing Data**.
 
-Depending on the size of the dataset, the training process can take anywhere from a few minutes up to the training time you selected. You can confirm that the model is being trained and validated through the status of the dataflow. The status appears as a data refresh in progress in the **Datasets + dataflows** tab of the workspace.
+Depending on the size of the semantic model, the training process can take anywhere from a few minutes up to the training time you selected. You can confirm that the model is being trained and validated through the status of the dataflow. The status appears as a data refresh in progress in the **Semantic models + dataflows** tab of the workspace.
 
 [ ![Screenshot that shows the model under training.](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png#lightbox)
 
@@ -185,7 +190,9 @@ To use the scored output from your machine learning model, you can connect to yo
 
 There are some known issues with using gateways with automated machine learning. If you need to use a gateway, it's best to create a dataflow that imports the necessary data via the gateway first. Then create another dataflow that references the first dataflow to create or apply these models.
 
-## Next steps
+If your AI work with dataflows fails, you may need to enable Fast Combine when using AI with dataflows. Once you have imported your table and *before* you begin to add AI features, select **Options** from the Home ribbon, and in the window that appears select the checkbox beside *Allow combining data from multiple sources* to enable the feature, then select **OK** to save your selection. Then you can add AI features to your dataflow.
+
+## Related content
 
 In this tutorial, you created and applied a binary prediction model in Power BI by doing these steps:
 

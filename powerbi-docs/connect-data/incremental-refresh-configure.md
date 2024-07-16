@@ -1,21 +1,21 @@
 ---
-title: Configure incremental refresh and real-time data for Power BI datasets
-description: Learn how to configure incremental refresh for Power BI datasets and real-time data.
-author: minewiskan
-ms.author: owend
+title: Configure incremental refresh and real-time data for Power BI semantic models
+description: Learn how to configure incremental refresh for Power BI semantic models and real-time data.
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/01/2023
+ms.date: 04/25/2024
 LocalizationGroup: 
 ---
 
 # Configure incremental refresh and real-time data
 
-This article describes how to configure incremental refresh and real-time data for **datasets**. To learn about configuring incremental refresh for dataflows, see [Premium features of dataflows - Incremental refresh](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
+This article describes how to configure incremental refresh and real-time data for **semantic models**. To learn about configuring incremental refresh for dataflows, see [Premium features of dataflows - Incremental refresh](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh).
 
-Configuring incremental refresh includes creating RangeStart and RangeEnd parameters, applying filters, and defining an incremental refresh policy. After publishing to the Power BI service, you'll perform an initial refresh operation on the dataset. The initial refresh operation, and subsequent refresh operations apply the incremental refresh policy you defined. Before completing these steps, be sure you fully understand the functionality described in [Incremental refresh and real-time data for datasets](incremental-refresh-overview.md).
+Configuring incremental refresh includes creating RangeStart and RangeEnd parameters, applying filters, and defining an incremental refresh policy. After publishing to the Power BI service, you'll perform an initial refresh operation on the model. The initial refresh operation, and subsequent refresh operations apply the incremental refresh policy you defined. Before completing these steps, be sure you fully understand the functionality described in [Incremental refresh and real-time data for semantic models](incremental-refresh-overview.md).
 
 ## Create parameters
 
@@ -72,9 +72,9 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
     
     In **Set import and refresh ranges** > **Incrementally refresh this table** move the slider to **On**. If the slider is disabled, it means the Power Query expression for the table doesn't include a filter based on the RangeStart and RangeEnd parameters.
 
-    In **Archive data starting**, specify the historical *store* period you want to include in the dataset. All rows with dates in this period will be loaded into the dataset in the service, unless other filters apply.
+    In **Archive data starting**, specify the historical *store* period you want to include in the model. All rows with dates in this period will be loaded into the model in the service, unless other filters apply.
 
-    In **Incrementally refresh data starting**, specify the *refresh* period. All rows with dates in this period will be refreshed in the dataset each time a manual or scheduled refresh operation is performed by the Power BI service.
+    In **Incrementally refresh data starting**, specify the *refresh* period. All rows with dates in this period will be refreshed in the model each time a manual or scheduled refresh operation is performed by the Power BI service.
 
 1. Specify optional settings:
 
@@ -82,7 +82,7 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
     Select **Only refresh complete days** to refresh only whole days. If the refresh operation detects a day isn't complete, rows for that whole day aren't refreshed. This option is automatically enabled when you select **Get the latest data in real time with DirectQuery (Premium only)**.
 
-    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This column **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, the current period isn't refreshed. For datasets published to Premium capacities, you can also specify a custom query. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
+    Select **Detect data changes** to specify a date/time column used to identify and refresh only the days where the data has changed. A date/time column must exist, usually for auditing purposes, at the data source. This column **should not be the same column** used to partition the data with the RangeStart and RangeEnd parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, the current period isn't refreshed. For models published to Premium capacities, you can also specify a custom query. To learn more, see [Advanced incremental refresh - Custom queries for detect data changes](incremental-refresh-xmla.md#custom-queries-for-detect-data-changes).
     
     Depending on your settings, your policy should look something like this:
 
@@ -92,11 +92,11 @@ After you've defined RangeStart and RangeEnd parameters, and filtered data based
 
 ## Save and publish to the service
 
-Now that your RangeStart and RangeEnd parameters, filtering, and refresh policy settings are complete, save your model, and then publish to the service. If your dataset will become large, be sure to enable [Large dataset storage format](../enterprise/service-premium-large-models.md) *before* invoking the first refresh in the service.
+Now that your RangeStart and RangeEnd parameters, filtering, and refresh policy settings are complete, save your model, and then publish to the service. If your model will become large, be sure to enable [Large model storage format](../enterprise/service-premium-large-models.md) *before* invoking the first refresh in the service.
 
-## Refresh dataset
+## Refresh model
 
-In the service, refresh the dataset. The first refresh will load both new and updated data in the refresh period as well as historical data for the entire store period. Depending on the amount of data, this refresh can take quite a while.  Subsequent refreshes, whether manual or scheduled, are typically much faster because the incremental refresh policy is applied and only data for the period specified in the refresh policy setting is refreshed.
+In the service, refresh the model. The first refresh will load both new and updated data in the refresh period as well as historical data for the entire store period. Depending on the amount of data, this refresh can take quite a while.  Subsequent refreshes, whether manual or scheduled, are typically much faster because the incremental refresh policy is applied and only data for the period specified in the refresh policy setting is refreshed.
 
 ## Convert DateTime to integer
 
@@ -120,8 +120,8 @@ The data type of the RangeStart and RangeEnd parameters must be of date/time dat
 
     :::image type="content" source="media/incremental-refresh-configure/apply-datekey-filter.png" alt-text="Power BI table showing DateKey filter.":::
 
-## See also
+## Related content
 
-[Troubleshoot configuring incremental refresh](incremental-refresh-troubleshoot.md#configuring-in-power-bi-desktop)  
-[Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
-[Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  
+- [Troubleshoot configuring incremental refresh](incremental-refresh-troubleshoot.md#configuring-in-power-bi-desktop)  
+- [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
+- [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md)  

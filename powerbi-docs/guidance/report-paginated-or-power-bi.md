@@ -1,12 +1,13 @@
 ---
 title: When to use paginated reports in Power BI
 description: Guidance for when to use Power BI paginated reports.
-author: maggiemsft
-ms.author: maggies
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/17/2022
 ---
 
@@ -14,7 +15,7 @@ ms.date: 11/17/2022
 
 This article targets you as a report author who designs reports for Power BI. It provides suggestions to help you choose when to develop [Power BI paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
 
-Power BI paginated reports are optimized for **printing**, or **PDF generation**. They also provide you with the ability to produce highly formatted, pixel-perfect layouts. So, paginated reports are ideal for operational reports, like sales invoices.
+Power BI paginated reports are optimized for **printing**, or **PDF generation**. They also provide you with the ability to produce highly formatted, print-ready layouts. So, paginated reports are ideal for operational reports, like sales invoices.
 
 In contrast, Power BI reports are optimized for **exploration and interactivity**. Also, they can present your data using a comprehensive range of ultra-modern visuals. Power BI reports, therefore, are ideal for analytic reports, enabling your report users to explore data, and to discover relationships and patterns.
 
@@ -38,10 +39,10 @@ There are many compelling scenarios when you might favor developing a Power BI p
 
 - **Print-ready**: Paginated reports are optimized for printing, or PDF generation. When necessary, data regions can expand and overflow to multiple pages in a controlled way. Your report layouts can define margins, and page headers and footers.
 - **Render formats**: Power BI can render paginated reports in different formats. Formats include Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML, and MHTML. (The MHTML format is used by the Power BI service to render reports.) Your report users can decide to export in the format that suits them.
-- **Precision layout**: You can design highly formatted, pixel-perfect layouts—to the exact size and location configured in fractions of inches, or centimeters.
+- **Precision layout**: You can design highly formatted, print-ready layouts—to the exact size and location configured in fractions of inches, or centimeters.
 - **Dynamic layout**: You can produce highly responsive layouts by setting many report properties to use VB.NET expressions. Expressions have access to many core .NET Framework libraries.
 - **Render-specific layout**: You can use expressions to modify the report layout based on the rendering format applied. For example, you can design the report to disable toggling visibility (to drill down and drill up) when it's rendered using a non-interactive format, like PDF.
-- **Native queries**: You don't need to first develop a Power BI dataset. It's possible to author native queries (or use stored procedures) for any [supported data source](../paginated-reports/paginated-reports-data-sources.md). Queries can include parameterization.
+- **Native queries**: You don't need to first publish a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)). It's possible to author native queries (or use stored procedures) for any [supported data source](../paginated-reports/paginated-reports-data-sources.md). Queries can include parameterization.
 - **Graphic query designers**: Power BI Report Builder includes graphic query designers to help you write, and test, your dataset queries.
 - **Static datasets**: You can define a dataset, and enter data directly into your report definition. This capability is especially useful to support a demo, or for delivering a proof of concept (POC).
 - **Data integration**: You can combine data from different data sources, or with static datasets. It's done by creating custom fields using VB.NET expressions.
@@ -58,7 +59,7 @@ There are many compelling scenarios when you might favor developing a Power BI p
 - **Subscriptions**: Power BI can deliver paginated reports on a schedule as emails, with report attachments in any supported format.
 - **Per-user layouts**: You can create responsive report layouts based on the authenticated user who opens the report. You can design the report to filter data differently, hide data regions or visualizations, apply different formats, or set user-specific parameter defaults.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

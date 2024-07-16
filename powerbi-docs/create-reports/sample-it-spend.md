@@ -7,12 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 06/14/2023
 LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
 
-The IT Spend Analysis built-in sample contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps you understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
+> [!NOTE]
+> For an updated version of this sample, see [Corporate Spend sample for Power BI: Take a tour](sample-it-spend.md).
+
+The IT Spend Analysis built-in sample contains a dashboard, report, and semantic model that analyzes the planned vs. actual costs of an IT department. This comparison helps you understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 :::image type="content" source="media/sample-it-spend/it1.png" alt-text="Screenshot shows the dashboard for the IT Spend Analysis sample.":::
 
@@ -22,7 +25,7 @@ This tour explores the IT Spend Analysis built-in sample in the Power BI service
 
 ## Prerequisites
 
-You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Power BI free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
+You don't need a Power BI license to explore the samples in Power BI Desktop. You just need a [Fabric free license](../consumer/end-user-features.md) to explore the sample in the Power BI service, and save it to your **My workspace**.
 
 ## Get the sample
 
@@ -40,7 +43,7 @@ Before you can use the sample, get the sample in one of the following ways:
 
 1. Select the sample. It opens in Reading mode.
 
-1. Power BI imports the built-in sample, adding a new dashboard, report, and dataset to your current workspace.
+1. Power BI imports the built-in sample, adding a new dashboard, report, and semantic model to your current workspace.
 
    :::image type="content" source="media/sample-it-spend/it-spend-analysis-sample-entry.png" alt-text="Screenshot shows the IT Spend Analysis sample dashboard link.":::
 
@@ -74,7 +77,7 @@ If you want to get and use the Excel file in the Power BI service, follow these 
 
    There are different ways to work with Excel files. For more information, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-in-excel).
 
-1. In the Power BI service, the exported data appears as a dataset in the selected workspace. Select **More options** (...) > **Auto-create report**.
+1. In the Power BI service, the exported data appears as a semantic model in the selected workspace. Select **More options** (...) > **Auto-create report**.
 
 1. Select **Save**, enter a name for your report, and then choose **Save**.
 
@@ -159,7 +162,7 @@ Select **Edit** in the black **Power BI** header bar to explore in the editing v
 - Change the visualization type for each chart.
 - Pin charts of interest to your dashboard.
 
-## Next steps
+## Related content
 
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always return to the **Learning center** for a new copy of this sample.
 

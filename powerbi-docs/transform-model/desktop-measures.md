@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/10/2023
+ms.date: 11/17/2023
 LocalizationGroup: Model your data
 ---
 # Create measures for data analysis in Power BI Desktop
@@ -35,23 +35,23 @@ DAX formulas are a lot like Excel formulas. DAX even has many of the same functi
 
 ## Let’s look at an example
 
-Jan is a sales manager at Contoso. Jan has been asked to provide reseller sales projections over the next fiscal year. Jan decides to base the estimates on last year's sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
+Janice is a sales manager at Contoso. Janice has been asked to provide reseller sales projections over the next fiscal year. Janice decides to base the estimates on last year's sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Jan imports last year's sales data into Power BI Desktop. Jan finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Jan renames the **SalesAmount** field to *Last Years Sales*. Jan then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that is the sum of all reseller sales from last year.
+To report the estimates, Janice imports last year's sales data into Power BI Desktop. Janice finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Janice renames the **SalesAmount** field to *Last Years Sales*. Janice then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as a single value that is the sum of all reseller sales from last year.
 
-Jan notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
+Janice notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
 
-But Jan needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Jan will create a measure. Jan creates a new measure by using the *New Measure* feature, then enters the following DAX formula:
+But Janice needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Janice will create a measure. Janice creates a new measure by using the *New Measure* feature, then enters the following DAX formula:
 
 ```dax
-    Projected Sales = SUM('Sales'[Last Years Sales])*1.06
+    Projected Sales = SUM('Reseller Sales'[Last Years Sales])*1.06
 ```
 
-Jan then drags the new Projected Sales measure into the chart.
+Janice then drags the new Projected Sales measure into the chart.
 
 :::image type="content" source="media/desktop-measures/measuresinpbid_lastyearsales.png" alt-text="Screenshot of the new Projected Sales visual.":::
 
-Quickly and with minimal effort, Jan now has a measure to calculate projected sales. Jan can further analyze the projections by filtering on specific resellers or by adding other fields to the report.
+Quickly and with minimal effort, Janice now has a measure to calculate projected sales. Janice can further analyze the projections by filtering on specific resellers or by adding other fields to the report.
 
 ## Data categories for measures
 
@@ -82,25 +82,9 @@ You can create a special table that contains only measures. That table always ap
 > [!TIP]
 > Hidden measures are displayed and accessible in Power BI Desktop, however, you won't see hidden measures in Excel or the Power BI services, since Excel and the Power BI service are considered client tools.
 
-## Dynamic format strings (Preview)
+## Dynamic format strings
 
-> [!NOTE]
-> Dynamic format strings is currently in Preview. When in Preview, functionality and documentation are likely to change.
-
-With *dynamic format strings*, you can conditionally customize how measures appear in visuals by applying a format string with a separate DAX expression. Dynamic format strings overcome an inherent disadvantage of using the FORMAT function. When using dynamic format strings, the measure keeps its data type and is isn't forced to change to a string data type. This applies different format strings to the measure depending on the context.
-
-#### To specify a dynamic format string
-
-1. In the **Data** pane, select the measure for which you want to specify a dynamic format string.
-1. In the **Measure tools** ribbon > **Formatting** section > **Format** listbox, select **Dynamic**. A new listbox with **Format** already selected appears to the left of the DAX formula bar. This drop down is how you can switch between the measure DAX expression and the dynamic format string DAX expression. Whatever the static format string was in use before switching to Dynamic is pre-populated as a string in the DAX formula bar.
-:::image type="content" source="media/desktop-measures/format-dropdown.png" alt-text="Format dropdown":::
-1. Overwrite the string with a DAX expression that outputs the desired format string for your measure. For example, the following expression looks up the appropriate currency format string from a ‘Country Currency Format Strings’ table:
-:::image type="content" source="media/desktop-measures/format-dynamic-measure.png" alt-text="Dynamic format measure expression":::
-1. Verify your dynamic format string works in a visual.
-
-    To delete the dynamic format string and return to using a static format string, in the **Formatting** section > **Format** listbox, select a different format option. Because there is no undo to this action, a dialog appears asking if you want to proceed. If you want to go back to using a dynamic format string again, you must re-enter the DAX expression that outputs the desired format string.
-    
-    :::image type="content" source="media/desktop-measures/format-change-warning.png" alt-text="Format change warning":::
+With *dynamic format strings*, you can customize how measures appear in visuals by conditionally applying a format string with a separate DAX expression. To learn more, see [Dynamic format strings](../create-reports/desktop-dynamic-format-strings.md).
 
 ## Learn more
 

@@ -1,6 +1,6 @@
 ---
-title: Generate data insights on your dataset automatically
-description: Learn how to get insights about your datasets and dashboard tiles.
+title: Generate data insights on your semantic model automatically
+description: Learn how to get insights about your semantic models and dashboard tiles.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.date: 01/19/2023
 LocalizationGroup: Dashboards
 ---
-# Generate data insights on your dataset automatically with Power BI
+# Generate data insights on your semantic model automatically with Power BI
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Do you have a new dataset and aren't sure where to start? Need to build a dashboard quickly? Want to look for insights you might have missed?
+Do you have a new semantic model and aren't sure where to start? Need to build a dashboard quickly? Want to look for insights you might have missed?
 
-Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire dataset (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
+Run quick insights to generate interesting visualizations based on your data. This article explains how to run quick insights on an entire semantic model (quick insights). You can also run [quick insights on a specific dashboard tile](../consumer/end-user-insights.md) (scoped insights). You can even run insights on an insight!
 
 > [!NOTE]
 > The insights feature doesn't work with DirectQuery, streaming, and PUSH datasets; it only works with data uploaded to Power BI.
@@ -27,21 +27,21 @@ Run quick insights to generate interesting visualizations based on your data. Th
 
 We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
 
-## Run quick insights on a dataset
+## Run quick insights on a semantic model
 
-Watch Amanda run quick insights on a dataset and open an insight in Focus mode. Amanda pins an insight as a tile on the dashboard, then gets insights for a dashboard tile.
+Watch Amanda run quick insights on a semantic model and open an insight in Focus mode. Amanda pins an insight as a tile on the dashboard, then gets insights for a dashboard tile.
 
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/et_MLSL2sA8]
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. Choose the workspace where the dataset is located. From the **Datasets + dataflows** tab, select **More options** (...) next to the dataset, and then choose **Get quick insights**.
+1. Choose the workspace where the semantic model is located. From the **Semantic models + dataflows** tab, select **More options** (...) next to the semantic model, and then choose **Get quick insights**.
 
     ![Screenshot highlighting Get quick insights from the More options menu.](media/service-insights/power-bi-tab.png)
-2. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your dataset.
+2. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your semantic model.
 
     ![Screenshot of the Searching for insights dialog.](media/service-insights/pbi_autoinsightssearching.png)
 3. Within seconds, your insights are ready. Select **View insights** to display visualizations.
@@ -49,7 +49,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
     ![Screenshot of the Insights are ready dialog.](media/service-insights/pbi_autoinsightsuccess.png)
 
     > [!NOTE]
-    > Some datasets can't generate insights because the data isn't statistically significant. For more information, see [Optimize your data for Power BI quick insights](service-insights-optimize.md).
+    > Some semantic models can't generate insights because the data isn't statistically significant. For more information, see [Optimize your data for Power BI quick insights](service-insights-optimize.md).
     >
 
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
@@ -88,7 +88,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
        ![Screenshot of an insight and cards displaying data on that insight.](media/service-insights/power-bi-insights-on-insights-new.png)
 5. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
-## Next steps
+## Related content
 
 - [Optimize your data for Power BI quick insights](service-insights-optimize.md).
 - [Types of Insights supported by Power BI](../consumer/end-user-insight-types.md).

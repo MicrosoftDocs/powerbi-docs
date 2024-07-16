@@ -1,13 +1,14 @@
 ---
 title: "Bi-directional relationship guidance"
 description: Guidance for developing bi-directional filtering model relationships.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.custom: fabric-cat
+ms.date: 11/10/2023
 ---
 
 # Bi-directional relationship guidance
@@ -33,7 +34,7 @@ Bi-directional relationships play an important role when creating the following 
 
 ## Slicer items "with data"
 
-Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI dataset, or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
+Bi-directional relationships can deliver slicers that limit items to where data exists. (If you're familiar with Excel PivotTables and slicers, it's the default behavior when sourcing data from a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)), or an Analysis Services model.) To help explain what it means, first consider the following model diagram.
 
 ![Diagram showing a model containing three tables. The design is described in the following paragraph.](media/relationships-bidirectional-filtering/sales-model-diagram.png)
 
@@ -125,7 +126,7 @@ The following table visual present statistics for each product sold. The **Quant
 
 ![Diagram showing that two products are listed in a table visual. In the "Different Countries Sold" column, Jeans is 1, and T-shirt is 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/21/2022
+ms.date: 11/10/2023
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
@@ -230,7 +230,7 @@ There are three options that can be selected and enabled:
 
 * **Import relationships from data sources on first load**: This option is selected by default. When it's selected, Power BI checks for relationships defined in your data source, such as foreign key/primary key relationships in your data warehouse. If such relationships exist, they're mirrored into the Power BI data model when you initially load data. This option enables you to quickly begin working with your model, rather than requiring you find or define those relationships yourself.
 
-* **Update or delete relationships when refreshing data**: This option is unselected by default. If you select it, Power BI checks for changes in data source relationships when your dataset is refreshed. If those relationships changed or are removed, Power BI mirrors those changes in its own data model, updating or deleting them to match.
+* **Update or delete relationships when refreshing data**: This option is unselected by default. If you select it, Power BI checks for changes in data source relationships when your semantic model is refreshed. If those relationships changed or are removed, Power BI mirrors those changes in its own data model, updating or deleting them to match.
 
    > [!WARNING]
    > If you're using row-level security that relies on the defined relationships, we don't recommend selecting this option. If you remove a relationship that your RLS settings rely on, your model might become less secure.
@@ -440,7 +440,7 @@ In this situation, if we try to combine *Purchase[VenID]* and *Sales[CustID]* in
 
 :::image type="content" source="media/desktop-create-and-manage-relationships/create-manage-relationships-02.png" alt-text="Screenshot of an error dialog when relationship can’t be inferred. Alternatively, Screenshot of an error dialog where relationship isn’t inferred.":::
 
-**Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3, and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*) Power, BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* isn't blank.
+**Scenario 4: Non-star schema and measure constraint provided.** If we take the example from Scenario 3, and add a user provided constraint in the form of a summarized column (*Count of Product[ProdID]* for example) or a model measure (*Sales[Total Qty]*), Power BI can generate a query in the form of *Correlate Purchase[VenID]* and *Sales[CustID]* where *MeasureConstraint* isn't blank.
 
 In this case, Power BI respects the user's constraint as being the sole constraint Power BI needs to apply, and return the combinations that produce non-blank values for it. The user has guided Power BI to the scenario it wants, and Power BI applies the guidance.
 
@@ -458,7 +458,7 @@ When you see the **Can't determine relationships between the fields** error, you
 2. Add a constraint to the visual in the form of a summarized column or a model measure.
 3. If a summarized column is added and there still is an error, consider using a model measure.
 
-## Next steps
+## Related content
 
 For more information about models and relationships, see the following articles:
 

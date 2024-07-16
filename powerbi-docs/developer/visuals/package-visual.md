@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/3/2022
+ms.date: 06/03/2024
+#customer intent: As a Power BI visual developer, I want to learn how to package a Power BI visual so that I can share it with others.
 ---
 
 # Package a Power BI visual
@@ -78,7 +79,7 @@ Before you can load your custom visual into [Power BI Desktop](https://powerbi.m
 
 The package outputs to the */dist/* folder of the project. The package contains everything required to import the custom visual into either the Power BI service or a Power BI Desktop report. You packaged the custom visual, and it's ready for use.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Publish Power BI visuals to Partner Center](office-store.md)

@@ -8,9 +8,8 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 02/13/2023
-ms.custom: contperf-fy21q1
-#Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
+ms.date: 11/13/2023
+#Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they're reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
 
 # Glossary for business users of the Power BI service
@@ -23,7 +22,7 @@ This glossary is a community effort. If you don't see a word here, please ask us
 
 **account**
 
-Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Azure Active Directory. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See *license* and *Premium*.
+Use your work or school account to sign in to Power BI. Administrators manage work or school accounts in Microsoft Entra ID. Your level of access is determined by the Power BI license associated with that account and the capacity type where content is stored. See *license* and *Premium*.
 
 **Admin portal**
 
@@ -50,11 +49,11 @@ To write lines, text, or stamps on a snapshot copy of a tile, report, or visual 
 
 **app, apps**
 
-A bundle of dashboards, reports, and datasets. It also refers to the mobile apps for consuming content, such as the Power BI app for iOS.
+A bundle of dashboards, reports, and semantic models. It also refers to the mobile apps for consuming content, such as the Power BI app for iOS.
 
 **AppSource**
 
-Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
+Centralized online repository where you can browse and discover dashboards, reports, semantic models, and apps to download.
 
 **ArcGIS for Power BI**
 
@@ -62,7 +61,7 @@ ArcGIS is a mapping and analytics platform created by the company Esri. The name
 
 **Auto Insights**
 
-Are now called *Quick Insights*.
+Auto Insights are now called *Quick Insights*.
 
 ## B
 
@@ -110,11 +109,11 @@ Power BI Desktop includes an ever-growing collection of data connectors that are
 
 **container**
 
-The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Browse, Data hub, Apps, Metrics, Deployment pipelines, Learn, Workspaces, and Home.
+The areas on the navigation pane are *containers*. In the nav pane you find containers for: Browse, Data hub, Apps, Metrics, Deployment pipelines, Learn, Workspaces, and Home.
 
 **content**
 
-Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and datasets.
+Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and semantic models.
 
 **content list**
 
@@ -122,15 +121,15 @@ The content index for an app.
 
 **content view**
 
-The view that lists Power BI content you created or content that was shared by other designers.
+The view that lists Power BI content you created or content that designers shared with you.
 
 **continuous variable**
 
-A continuous variable can be any value between its minimum and maximum limits, otherwise it is a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.
+A continuous variable can be any value between its minimum and maximum limits, otherwise it's a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.
 
 **correlation**
 
-A correlation tells us how the behavior of things are related. If their patterns of increase and decrease are similar, then they're positively correlated. And if their patterns are opposite, then they're negatively correlated. For example, if sales of our red skateboard increase each time we run a TV marketing campaign, then sales of the red skateboard and the TV campaign are positively correlated.
+A correlation tells us how the behavior of things is related. If their patterns of increase and decrease are similar, then they're positively correlated. And if their patterns are opposite, then they're negatively correlated. For example, if sales of our red skateboard increase each time we run a TV marketing campaign, then sales of the red skateboard and the TV campaign are positively correlated.
 
 **cross-filter**
 
@@ -142,13 +141,13 @@ Applies to visual interactions. Cross-highlighting retains all the original data
 
 **custom visual**
 
-Visuals that are created by the community and Microsoft. They can be downloaded from the Microsoft Store for use in Power BI reports.
+Visuals that the community and Microsoft create. They can be downloaded from the Microsoft Store for use in Power BI reports.
 
 ## D
 
 **dashboard**
 
-In the Power BI service, a dashboard is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can be created and viewed only in the Power BI service, not in Power BI Desktop. For more information, see [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
+In the Power BI service, a dashboard is a single page, often called a canvas that uses visualizations to tell a story. Because it's limited to one page, a well-designed dashboard contains only the most important elements of that story. Dashboards can be created and viewed only in the Power BI service, not in Power BI Desktop. For more information, see [Basic concepts for the Power BI service business user](end-user-basic-concepts.md).
 
 **data connector**
 
@@ -160,15 +159,11 @@ In Power BI content, a data model refers to a map of data structures in a table 
 
 **dataflow**
 
-Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, Extract Transform Load (ETL) logic, refresh schedules, and more. Formerly called "data pool".
+Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, Extract Transform Load (ETL) logic, refresh schedules, and more. Formerly called "data pool."
 
 **dataset**
 
-A **dataset** is a collection of data used to create visualizations and reports.
-
-**Desktop** or **Power BI Desktop**
-
-Free Power BI tool used primarily be report designers, admins, and developers.
+Refer to **semantic model**.
 
 **diamond**
 
@@ -176,7 +171,7 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 
 **dimension**
 
-Dimensions are categorical (text) data. A dimension describes a person, object, item, product, place, and time. In a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
+Dimensions are categorical (text) data. A dimension describes a person, object, item, product, place, and time. In a semantic model, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country/region, or marketing campaign.
 
 **drill up, drill down, drillthrough**
 
@@ -192,7 +187,7 @@ The mode in which report *designers* can explore, design, build, and share a rep
 
 **ellipsis**
 
-(...) menu. Selecting an ellipsis displays additional menu options. Also referred to as the **More actions** or **More options** menu, depending on the menu options.
+(...) menu. Selecting an ellipsis displays the menu options. Also referred to as the **More actions** or **More options** menu, depending on the menu options.
 
 **embed code**
 
@@ -212,7 +207,7 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 **explicit measures**
 
-Power BI uses explicit measures and implicit measures (see definition). Explicit measures are created by report designers and saved with the dataset. They are displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that dataset, and who have edit access to the report, can select that field and use it to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI does not apply an aggregation. Creating explicit measures requires edit access to the dataset.
+Power BI uses explicit measures and implicit measures (see definition). Explicit measures are created by report designers and saved with the semantic model. They're displayed in Power BI as fields, and can therefore be used over and over. For example, a report designer creates an explicit measure *TotalInvoice* that sums all invoice amounts. Colleagues who use that semantic model, and who have edit access to the report, can select that field and use it to create a visual. When an explicit measure is added or dragged onto a report canvas, Power BI doesn't apply an aggregation. Creating explicit measures requires edit access to the semantic model.
 
 ## F
 
@@ -222,7 +217,7 @@ Verb meaning to add to the Favorites list for quick access to frequently visited
 
 **filter** versus **highlight**
 
-A filter removes data that does not apply. A highlight grays out the data that does not apply.
+A filter removes data that doesn't apply. A highlight grays out the data that doesn't apply.
 
 **focus mode**
 
@@ -234,7 +229,7 @@ See *account*.
 
 **full screen, full-screen mode**
 
-Use full screen mode to view Power BI content without the distraction of menus and navigation panes. This is sometimes referred to as TV mode.
+Use full screen mode to view Power BI content without the distraction of menus and navigation panes. Full screen is sometimes referred to as TV mode.
 
 ## G
 
@@ -274,15 +269,15 @@ Key performance indicators. A type of visual.
 
 **left navigation (left nav)**
 
-This was replaced with *nav pane* but might still appear in some documentation.
+This term was replaced with *nav pane* but might still appear in some documentation.
 The controls along the left edge of Power BI service.
 First instance: navigation pane. Subsequent mentions or tight spaces: nav pane.
 
 **license**
 
-Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity, users with a Pro license can share that content with users who are assigned a free license.
+Your level of access is determined by the Power BI license associated with your account and the capacity type where content is stored. For example, in shared capacity, a user with a Power BI Pro license can collaborate only with users who are also assigned a Pro license. In shared capacity, a free license enables access to only the user’s personal workspace. However, when content is in Premium capacity, users with a Pro license can share that content with users who are assigned a free license.
 A license is assigned to a user and can be a free or Pro license. Depending on how the license was acquired, it might be paid or unpaid. The accounts are either per-user or organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service stand-alone or is using Power BI service within an organization that has a Premium organizational subscription. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users.
-The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity.
+The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content hosted on Power BI Premium capacity.
 
 **list page** or **content list**
 
@@ -304,7 +299,7 @@ Apps that allow you to run Power BI on iOS, Android, and Windows mobile devices.
 
 **modeling**
 
-[Power BI Desktop] Getting the data you've connected to ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
+[Power BI Desktop] Getting the connected data ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
 
 **My workspace**
 
@@ -367,11 +362,11 @@ The file extension for a Power BI Desktop file (letters pronounced individually 
 
 **permissions**
 
-What a user can and can't do in Power BI is based on permissions. As a *consumer* you won't have the same permissions as a *designer*, *administrator*, or *developer*.
+What a user can and can't do in Power BI is based on permissions. As a *consumer* you don't have the same permissions as a *designer*, *administrator*, or *developer*.
 
 **phone report**
 
-The name for a Power BI report that's been formatted for viewing on a phone.
+The name for a Power BI report that's formatted for viewing on a phone.
 
 **phone view**
 
@@ -383,7 +378,7 @@ The action a report *designer* takes when placing a visual, usually from a repor
 
 **Power BI**, **Power BI service**, **Power BI Desktop**, **Power BI mobile**
 
-Some of the Power BI offerings. *Power BI* is the general term. It is often used in place of a full product name, such as *Power BI service* and *Power BI mobile*, after the first mention of the full product name.
+Some of the Power BI offerings. *Power BI* is the general term. It's often used in place of a full product name, such as *Power BI service* and *Power BI mobile*, after the first mention of the full product name.
 
 **Power BI Desktop**
 
@@ -399,11 +394,11 @@ An add-on to the Power BI Pro license that enables organizations to predictably 
 
 **Power BI Pro**
 
-A monthly per-user license that provides the ability to build reports and dashboards, collaborate on shared data, keep data up-to date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps). See *account* and *license*.
+A monthly per-user license that provides the ability to build reports and dashboards, collaborate on shared data, keep data up-to-date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps). See *account* and *license*.
 
 **Power BI Report Builder**
 
-It is a free, standalone Windows Desktop application used for authoring paginated reports. Used by report designers. For more information see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md). Power BI Report Builder can be downloaded from the Power BI site.
+It's a free, standalone Windows Desktop application used for authoring paginated reports. Used by report designers. For more information, see [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md). Power BI Report Builder can be downloaded from the Power BI site.
 
 **Power BI Report Server**
 
@@ -430,7 +425,7 @@ Power BI Desktop report *designers* use publish to refer to sending a Power BI D
 
 **Q&A**
 
-The Power BI feature that allows natural language questions about a dataset and get responses in the form of visualizations. Appears in the Power BI service and Desktop.
+The Power BI feature that allows natural language questions about a semantic model and get responses in the form of visualizations. Appears in the Power BI service and Desktop.
 
 **Q&A virtual analyst**
 
@@ -442,7 +437,7 @@ The Power BI feature that allows natural language questions about a dataset and 
 
 **query string parameter**
 
-In the broadest sense, a query string recovers information from a database. Add one to a URL to pre-filter the results seen in a Power BI report.
+In the broadest sense, a query string recovers information from a database. Add one to a URL to prefilter the results seen in a Power BI report.
 
 **Quick Insights**
 
@@ -464,15 +459,15 @@ The container on the home page that holds all the individual items that were acc
 
 **related content**
 
-Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and datasets providing the data and visualizations on the dashboard.
+Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and semantic models providing the data and visualizations on the dashboard.
 
 **relative links**
 
-Links from dashboard tiles to other dashboards and reports that have been shared directly or distributed through a Power BI app. This enables richer dashboards that support drillthrough.
+Links from dashboard tiles to other dashboards and reports that are shared directly or distributed through a Power BI app. Relative links enable richer dashboards that support drillthrough.
 
 **report**
 
-A multi-perspective view into a single dataset, with visualizations that represent different findings and insights from that dataset. Can have a single visualization or many, a single page or many pages.  
+A multi-perspective view into a single semantic model, with visualizations that represent different findings and insights from that semantic model. Can have a single visualization or many, a single page, or many pages.  
 
 **report editor**
 
@@ -499,6 +494,14 @@ Software as a service is a way of delivering applications over the internet as a
 **screenshot**
 
 Simple screenshots of a report can be emailed using the send a screenshot feature.
+
+**semantic model**
+
+A **semantic model** is a collection of data used to create visualizations and reports.
+
+**Desktop** or **Power BI Desktop**
+
+Free Power BI tool used primarily be report designers, admins, and developers.
 
 **service**
 
@@ -579,7 +582,7 @@ An Excel workbook to be used as a data source. Workbooks can contain a data mode
 
 **workspace**
 
-Containers for dashboards, reports, and datasets in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
+Containers for dashboards, reports, and semantic models in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Workspaces stored in Premium capacity can be shared with free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
 
 ## X
 
@@ -595,6 +598,6 @@ The axis along the side, the vertical axis, of a line graph.
 
 ## Z
 
-## Next steps
+## Related content
 
 - [Basic concepts for Power BI service consumer](end-user-basic-concepts.md)

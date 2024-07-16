@@ -1,5 +1,5 @@
 ---
-title: Move your Power BI embedded analytics application to production
+title: Move your Power BI embedded analytics app to production
 description: Find out how to move your Power BI embedded app to production by assigning a capacity to your workspace. See specifications for various capacities and SKUs.
 author: mberdugo
 ms.author: monaberdugo
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: ''
-ms.date: 01/20/2023
+ms.date: 01/20/2024
 #Customer intent: As an ISV developer, I want to embed a report, dashboard, or tile into an application so that my customers can share data.
 ---
 
@@ -18,7 +18,7 @@ ms.date: 01/20/2023
 >This article only applies to [embed-for-your-customers](embedded-analytics-power-bi.md#embed-for-your-customers) applications. If you're using the [embed-for-your-organization](embedded-analytics-power-bi.md#embed-for-your-organization) scenario, you need to use either a Pro or Premium license.
 
 After you've developed your application, you need to back your workspace with a [capacity](./pbi-glossary.md#capacity) before you can move to production.
-**All workspaces** (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
+**All workspaces** (the ones containing the reports or dashboards, and the ones containing the semantic models) must be assigned to a capacity.
 
 ## Create a capacity
 
@@ -52,7 +52,7 @@ If you run out of embed tokens while testing, you need to purchase a Power BI Em
 
 After you create a capacity, you can assign your workspace to that capacity.
 
-Each workspace that contains a Power BI item related to the embedded content (including datasets, reports, and dashboards) must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
+Each workspace that contains a Power BI item related to the embedded content (including semantic models, reports, and dashboards) must be assigned to capacities. For example, if an embedded report and the semantic model bound to it reside in different workspaces, both workspaces must be assigned to capacities.
 
 ### Assign a workspace to a capacity by using a service principal
 
@@ -80,7 +80,7 @@ You can also assign a workspace to a capacity from the settings of that workspac
 
    :::image type="content" source="media/move-to-production/premium-workspace.png" alt-text="Screenshot of the Power BI service. In the Workspaces list, a diamond is visible next to the name of a workspace that has a capacity assigned to it.":::
 
-## Next steps
+## Related content
 
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
 * [Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)

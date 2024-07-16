@@ -1,12 +1,13 @@
 ---
 title: One-to-one relationship guidance
 description: Guidance for developing one-to-one model relationships.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/02/2020
 ---
 
@@ -138,7 +139,7 @@ Let's see what happens when fields from both tables are added to a table visual,
 
 The table displays two rows only. Product SKU CL-02 is missing because there's no matching row in the **Product Category** table.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

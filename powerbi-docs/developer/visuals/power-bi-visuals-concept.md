@@ -7,8 +7,9 @@ manager:
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/04/2023
+ms.topic: concept-article
+ms.date: 01/04/2024
+#customer intent: As a Power BI visual developer, I want to learn how to integrate my visual with Power BI so that I can create a seamless experience for users.
 ---
 
 # Power BI visuals system integration
@@ -106,7 +107,7 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
 * A visual requests more data from Power BI.
 
-    A visual processes data part by part. The `fetchMoreData` API method requests the next fragment of data in the dataset.
+    A visual processes data part by part. The `fetchMoreData` API method requests the next fragment of data in the semantic model.
 
     For more information, see [Fetch more data from Power BI](fetch-more-data.md).
 
@@ -118,7 +119,7 @@ Sometimes the visual initiates communication with the Power BI host without any 
 
     To learn about the event service, see ["Rendering" events in Power BI visuals](event-service.md).
 
-## Next steps
+## Related content
 
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 

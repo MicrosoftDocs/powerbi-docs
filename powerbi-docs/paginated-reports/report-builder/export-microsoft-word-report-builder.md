@@ -1,10 +1,9 @@
 ---
 title: "Export Power BI paginated report to Microsoft Word (Power BI Report Builder) | Microsoft Docs"
-ms.date: 03/02/2023
+ms.date: 09/20/2023
 ms.service: powerbi
 ms.subservice: report-builder
 description: The Word rendering extension renders Power BI paginated reports to the Microsoft Word format (.docx). The format is Office Open XML.
-ms.custom: seodec18
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -75,7 +74,17 @@ The Word rendering extension renders Power BI paginated reports to the Microsoft
  To avoid this problem, use multiple text runs instead of one complex expression when you use expressions in footers and headers. The following two expressions are equivalent. The first one is a complex expression the second one uses text runs. The Word renderer parses only the second expression successfully.  
 
 ## Document map  
- If any document map labels exist in the report, they are rendered as Word Table of Contents (TOC) labels on the respective report items and groups. The document map label is used as the label text for the TOC labels. The target link is positioned near the item on which the label is set. While a TOC is not created for you in the Word document, you can build your own TOC using the document map labels that are rendered in the report. See [Create a document map or table of contents (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-document-map-report-builder-and-ssrs) for more information.
+ If any document map labels exist in the report, they are rendered as Word Table of Contents (TOC) labels on the respective report items and groups. The document map label is used as the label text for the TOC labels. The target link is positioned near the item on which the label is set. While a TOC is not created for you in the Word document, you can build your own TOC using the document map labels that are rendered in the report with the following steps.
+
+1. In the Word document, select the position where the TOC should go.
+1. From the ribbon, select **Insert**.
+1. Select the **Quick Parts** dropdown menu.
+1. Select **Field** from the dropdown menu.
+1. From Field names, select **TOC**, and select the **Table of Contents** button from the **Field properties** pane.
+1. In the popup window, select the **Options** button, and ensure the **Table entry fields** box is **checked**.
+1. Select **OK** from both popup windows to complete the process and generate the TOC.
+
+See [Create a document map or table of contents (Power BI Report Builder)](/sql/reporting-services/report-design/create-a-document-map-report-builder-and-ssrs) for more information.
 
 ##  <a name="Interactivity"></a> Interactivity  
  Some interactive elements are supported in Word. The following is a description of specific behaviors.  
@@ -149,10 +158,10 @@ The Word rendering extension renders Power BI paginated reports to the Microsoft
 ##  <a name="DeviceInfo"></a> Device information settings  
  You can change some default settings for this renderer, such as omit hyperlinks and drillthrough links or expand all items that can be toggled regardless of the original state of the item when rendered, by changing the device information settings. For more information, see [Word device information settings](../device-info/word-device-information-settings.md).  
 
-## Next steps
+## Related content
 
-[Pagination in Reporting Services](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
-[Rendering Behaviors](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
-[Interactive Functionality for Different Report Rendering Extensions](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
-[Rendering Report Items](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
-[Tables, Matrices, and Lists](../report-builder-tables-matrices-lists.md)  
+- [Pagination in Reporting Services](/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs)   
+- [Rendering Behaviors](/sql/reporting-services/report-design/rendering-behaviors-report-builder-and-ssrs)   
+- [Interactive Functionality for Different Report Rendering Extensions](/sql/reporting-services/report-builder/interactive-functionality-different-report-rendering-extensions)   
+- [Rendering Report Items](/sql/reporting-services/report-design/rendering-report-items-report-builder-and-ssrs)   
+- [Tables, Matrices, and Lists](../report-builder-tables-matrices-lists.md)  

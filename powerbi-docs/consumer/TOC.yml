@@ -62,16 +62,18 @@
       href: end-user-bookmarks.md
     - name: "Add a spotlight to a report"
       href: end-user-spotlight.md
+    - name: "Set an alert on a report"
+      href: business-user-set-alerts.md
     - name: "Personalize a visual"
       href: end-user-personalize-visuals.md
+    - name: "Explore your data in the Power BI service"
+      href: explore-data-service.md
     - name: "Analyze fluctuations in visuals"
       href: end-user-analyze-visuals.md  
   - name: Visualizations
     items: 
     - name: "Types of visualizations"
       href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
-    - name: "Copy a visual and paste it elsewhere"
-      href: end-user-copy-paste.md
     - name: "Drill down in a visualization"
       href: end-user-drill.md
     - name: "How to use an ArcGIS map in Power BI"
@@ -120,8 +122,6 @@
       href: end-user-recent.md
     - name: "Search and sort content in Power BI"
       href: end-user-search-sort.md
-    - name: "Turn on preview features"
-      href: end-user-preview-features.md
   - name: Get data
     items: 
     - name: "Workspaces in Power BI"
@@ -141,7 +141,7 @@
     - name: "Q&A in Power BI"
       href: end-user-q-and-a.md
     - name: "Q&A tutorial"
-      href: end-user-q-and-a-tutorial.md
+      href: ../natural-language/end-user-q-and-a-tutorial.md
     - name: "Tips and tricks for asking questions with Q&A in Power BI"
       href: end-user-q-and-a-tips.md
   - name: Resources

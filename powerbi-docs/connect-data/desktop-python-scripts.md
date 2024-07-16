@@ -59,7 +59,7 @@ Here's a simple example Python script that imports pandas and uses a data frame:
 ```python
 import pandas as pd
 data = [['Alex',10],['Bob',12],['Clarke',13]]
-df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+df = pd.DataFrame(data,columns=['Name','Age'])
 print (df)
 ```
 
@@ -97,7 +97,7 @@ Power BI imports the data, and you can use it to create visualizations and repor
 > 
 > ![Screenshot of a Warning that Python isn't installed.](media/desktop-python-scripts/python-scripts-3.png)
 
-## Next steps
+## Related content
 
 For more information about Python in Power BI, see:
 

@@ -1,6 +1,6 @@
 ---
-title: Dataset discoverability
-description: Learn how to make endorsed datasets discoverable for users who don't have access to them.
+title: Semantic model discoverability
+description: Learn how to make endorsed semantic models discoverable for users who don't have access to them.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -9,33 +9,33 @@ ms.topic: conceptual
 ms.date: 02/17/2023
 LocalizationGroup: Share your work
 ---
-# Dataset discoverability
+# Semantic model discoverability
 
-*Discoverability* is a feature that makes it possible for users to find endorsed datasets that they don't have access to. Without discoverability, the full value of [endorsement](service-endorsement-overview.md), that is, directing users to quality data, isn't fully realized.
+*Discoverability* is a feature that makes it possible for users to find endorsed semantic models that they don't have access to. Without discoverability, the full value of [endorsement](service-endorsement-overview.md), that is, directing users to quality data, isn't fully realized.
 
 ## Discoverability overview
 
-*Endorsement* is a way of telling users that a dataset is a trusted, quality source of data that they can safely use. However, in Power BI, endorsed datasets, like all other datasets, are only visible to users who have access to them. This makes it difficult for people without access to find these trusted sources of data. Not only do they not have access to an endorsed dataset, they don't know it exists, so they can't even request access.
+*Endorsement* is a way of telling users that a semantic model is a trusted, quality source of data that they can safely use. However, in Power BI, endorsed semantic models, like all other semantic models, are only visible to users who have access to them. This makes it difficult for people without access to find these trusted sources of data. Not only do they not have access to an endorsed semantic model, they don't know it exists, so they can't even request access.
 
-To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides can mark that dataset as discoverable. After the dataset has been marked as discoverable, it will be listed in the [data hub](../connect-data/service-data-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the dataset by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) is provided.
+To overcome this problem, authorized users who have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed semantic model resides can mark that semantic model as discoverable. After the semantic model has been marked as discoverable, it will be listed in the [data hub](../connect-data/service-data-hub.md), even for users who don't have access to it. They can then request [build permission](../connect-data/service-datasets-build-permissions.md) on the semantic model by whatever [access request mechanism](../connect-data/service-datasets-build-permissions.md#configure-how-users-request-build-permission) is provided.
 
-To be operable in an organization, dataset discovery must be set up by a Power BI administrator. See [How to set up dataset discoverability in an organization](#how-to-set-up-dataset-discovery-in-an-organization).
+To be operable in an organization, semantic model discovery must be set up by a Power BI administrator. See [How to set up semantic model discoverability in an organization](#how-to-set-up-semantic-model-discovery-in-an-organization).
 
-## How to mark a dataset as discoverable
+## How to mark a semantic model as discoverable
 
-If you have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed dataset resides, you can mark that dataset as discoverable.
+If you have an [Admin or Member role](service-roles-new-workspaces.md) in the workspace where an endorsed semantic model resides, you can mark that semantic model as discoverable.
 
-1. Go to dataset settings and open the **Endorsement and discovery** section.
+1. Go to semantic model settings and open the **Endorsement and discovery** section.
 
-1. In the dialog, select the **Make discoverable** checkbox. The checkbox will only be active if the dataset is promoted or certified.
+1. In the dialog, select the **Make discoverable** checkbox. The checkbox will only be active if the semantic model is promoted or certified.
 
-    :::image type="content" source="media/service-discovery/dataset-make-discoverable-checkbox.png" alt-text="Screenshot of the Make discoverable checkbox under dataset settings.":::
+    :::image type="content" source="media/service-discovery/dataset-make-discoverable-checkbox.png" alt-text="Screenshot of the Make discoverable checkbox under semantic model settings.":::
 
-When a dataset is marked as discoverable, users who don't yet have access to it can find it in the Datasets hub and request access to it.
+When a semantic model is marked as discoverable, users who don't yet have access to it can find it in the OneLake data hub and request access to it.
 
-## How to set up dataset discovery in an organization
+## How to set up semantic model discovery in an organization
 
-You must be a Power BI administrator to set up dataset discoverability in your organization.
+You must be a Power BI administrator to set up semantic model discoverability in your organization.
 
 Go to  **Admin portal > Tenant settings > Discovery settings** and configure the following settings:
 
@@ -45,8 +45,9 @@ Go to  **Admin portal > Tenant settings > Discovery settings** and configure the
 
 * **Discover content**: When you enable this setting, users you specify can find endorsed content that's marked as discoverable, even if they don't yet have access to it. You can also specify users and/or groups to exclude from the permitted, specified groups.
 
-## Next steps
+## Related content
+
 * [Data discovery using the data hub](../connect-data/service-data-hub.md)
 * [Endorsement: Promoting and certifying Power BI content](service-endorsement-overview.md)
-* [Build permission for shared datasets](../connect-data/service-datasets-build-permissions.md)
+* [Build permission for shared semantic models](../connect-data/service-datasets-build-permissions.md)
 * Questions? [Ask the Power BI Community](https://community.powerbi.com/)

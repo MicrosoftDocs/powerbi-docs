@@ -143,7 +143,7 @@ You can define a subscription for an on-demand report or for a snapshot, and spe
   
 - **On-demand report.**  For an on-demand report, you can specify a different parameter value than the published value for each parameter listed for the report. For example, suppose you have a Call Service report that uses a *Time Period* parameter to return customer service requests for the current day, week, or month. If the default parameter value for the report is set to **today**, your subscription can use a different parameter value (such as **week** or **month**) to produce a report that contains weekly or monthly figures.  
   
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](../paginated-reports-report-builder-power-bi.md)  
 - [Use cascading parameters in paginated reports](../../guidance/paginated-report-cascading-parameter.md)

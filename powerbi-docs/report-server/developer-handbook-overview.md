@@ -58,12 +58,12 @@ There are several types of extensions you can build.
 
 To learn more, see [Extension library](/sql/reporting-services/extensions/reporting-services-extension-library).
 
-## Next steps
+## Related content
 
-[Get started with the Report Viewer Control](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
-[Building Applications Using the Web Service and the .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
-[URL Access](/sql/reporting-services/url-access-ssrs)  
-[Extension library](/sql/reporting-services/extensions/reporting-services-extension-library)  
-[WMI Provider](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
+* [Get started with the Report Viewer Control](/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
+* [Building Applications Using the Web Service and the .NET Framework](/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
+* [URL Access](/sql/reporting-services/url-access-ssrs)  
+* [Extension library](/sql/reporting-services/extensions/reporting-services-extension-library)  
+* [WMI Provider](/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

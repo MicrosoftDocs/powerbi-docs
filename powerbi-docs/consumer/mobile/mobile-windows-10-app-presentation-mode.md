@@ -1,16 +1,22 @@
 ---
-title: View presentation mode on Surface Hub and Windows - Power BI
-description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in presentation mode on Windows devices.
+title: View presentation mode on Windows devices - Power BI
+description: Read about displaying Power BI dashboards, reports, and tiles in presentation mode on Windows devices.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 04/27/2022
+ms.date: 12/31/2023
 ---
-# View reports and dashboards in presentation mode on Surface Hub and Windows devices
-You can use presentation mode to display reports and dashboards in full-screen on Windows devices and Surface Hub. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
+# View reports and dashboards in presentation mode on Windows devices
+
+>[!NOTE]
+> The Power BI Windows app was retired on December 31st, 2023, and is no longer supported. It's been removed from the Microsoft apps store, and no further product updates for it will be released. Please use [the Power BI service](https://app.powerbi.com/) to view your Power BI content on Windows devices.
+>
+> This notice only applies to the Power BI Windows app. It does not affect the Power BI Desktop app.
+
+You can use presentation mode to display reports and dashboards in full-screen on Windows devices. Presentation mode is useful for displaying Power BI at meetings or conferences, or on a dedicated projector at the office, or even just for maximizing space on a small screen.
 
 ![Screenshot of a report in presentation mode.](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
@@ -19,11 +25,8 @@ In presentation mode:
 * An action toolbar becomes available to enable you to interact with your data and to control the presentation.
 * You can play a slideshow that cycles automatically between pages, bookmarks, or both pages and bookmarks.
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** has been discontinued as of March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
-
 ## Use presentation mode
-In the Power BI mobile app, tap the **Switch to presentation mode** icon.
+In the Power BI Windows app, tap the **Switch to presentation mode** icon.
 ![Full screen icon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png)
 The app chrome disappears and the action toolbar appears at the bottom of the screen or on the right and left sides (depending on your screen size).
 
@@ -63,7 +66,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 ### Auto play a slideshow on startup
 
-You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
+You can set up the Power BI Windows app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
 
 ### Slideshow settings
 
@@ -79,6 +82,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 ![Screenshot of slideshow settings](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 
-## Next steps
+## Related content
+
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

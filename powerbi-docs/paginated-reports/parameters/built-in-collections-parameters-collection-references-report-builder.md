@@ -44,7 +44,7 @@ ms.author: maggies
 |`=Split("Value1,Value2,Value3",",")`|Returns an array of values.<br /><br /> Create an array of values for a multivalue **String** parameter. You can use any delimiter in the second parameter to Split. This expression can be used to set defaults for a multivalue parameter or to create a multivalue parameter to send to a subreport or drillthrough report.|  
 |`=Join(Parameters!` *\<MultivalueParameterName>* `.Value,", ")`|Returns a **String** that consists of a comma-delimited list of values in a multivalue parameter. You can use any delimiter in the second parameter to Join.|  
   
- For more information about using parameters in a filter, see [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer).  
+ For more information about using parameters in a filter, see [Report Parameters &#40;Power BI Report Builder and Report Designer&#41;](report-builder-parameters.md).  
   
 ## Next steps
 [Change the order of a paginated report parameter - Power BI Report Builder](change-order-report-parameter-report-builder.md)

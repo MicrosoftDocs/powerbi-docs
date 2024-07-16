@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 07/01/2021
 ms.author: maggies
-ms.custom: include file
+ms.custom: include file, fabric
 ---
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
@@ -22,13 +22,13 @@ ms.custom: include file
 | Share an item or share an app.<sup>2</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Allow others to reshare items.<sup>2</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Feature apps on colleagues' Home |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
-| Manage dataset permissions.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |  |
+| Manage semantic model permissions.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |  |
 | Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |
 | Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>3</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
+| Create a report in another workspace based on a semantic model in this workspace.<sup>3</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |
 | Copy a report.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
-| Create metrics based on a dataset in the workspace.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
+| Create metrics based on a semantic model in the workspace.<sup>3</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Schedule data refreshes via the on-premises gateway.<sup>4</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | Modify gateway connection settings.<sup>4</sup> | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |  |
 | View and interact with an item.<sup>5</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |
@@ -38,7 +38,7 @@ ms.custom: include file
 
 <sup>2</sup> Contributors and Viewers can also share items in a workspace if they have Reshare permissions.
 
-<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a dataset in this workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. See [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md) for details.
+<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a semantic model in this workspace, you need [Build permission for the semantic model](../connect-data/service-datasets-build-permissions.md). For semantic models in the original workspace, if you have at least the Contributor role you automatically have Build permission through your workspace role. See [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md) for details.
 
 <sup>4</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. See [Manage an on-premises gateway](/data-integration/gateway/service-gateway-manage) for details.
 

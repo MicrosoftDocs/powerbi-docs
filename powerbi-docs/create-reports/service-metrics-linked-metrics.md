@@ -71,7 +71,7 @@ If you filter your scorecard by a hierarchy, linked metrics aren't filtered. The
 
 If you link a rollup metric onto a different scorecard, it continues to show its calculated value from the source scorecard and doesn't take into account any child metrics on the destination scorecard. Additionally, if a linked metric is the child of a rollup metric, it's not included in the parent's calculation.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

@@ -82,8 +82,8 @@ Currently the only supported aggregations against deterministic Always Encrypted
 
 You need to to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
-## Next steps
+## Related content
 
-[Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
+- [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

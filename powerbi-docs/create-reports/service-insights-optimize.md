@@ -14,9 +14,9 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-Want to improve Quick Insights results? If you're a dataset owner, try these suggestions:
+Want to improve Quick Insights results? If you're a semantic model owner, try these suggestions:
 
-* Hide or unhide columns in your dataset. Power BI Quick Insights doesn't search hidden columns, so hide duplicate or unnecessary columns, and unhide interesting columns.
+* Hide or unhide columns in your semantic model. Power BI Quick Insights doesn't search hidden columns, so hide duplicate or unnecessary columns, and unhide interesting columns.
 * Use a mix of data types such as names, times, dates, and numbers.
 * Avoid or hide columns with duplicate information. Duplicate data takes valuable time away from searching for meaningful patterns. For example, one column with state names spelled out and another column with state name abbreviations.
 * Do you get an error message stating that your data isn't statistically significant? Quick Insights might generate that message in one of these instances:
@@ -24,7 +24,8 @@ Want to improve Quick Insights results? If you're a dataset owner, try these sug
   * Data models that don't have much data.
   * Data models that don't have date or numeric columns.
 
-### Next steps
-[Power BI quick insights](../consumer/end-user-insights.md)
+## Related content
+
+* [Power BI quick insights](../consumer/end-user-insights.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

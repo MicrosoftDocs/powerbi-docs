@@ -65,6 +65,7 @@ You can [share a tile from the Power BI mobile app for Windows 10 devices](mobil
    The mail has an image, and a link to the specific tile, report, or visual. 
 4. Tap **Send**.
 
-## Next steps
+## Related content
+
 * [Share a dashboard from the Power BI mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

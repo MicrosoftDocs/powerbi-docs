@@ -16,7 +16,7 @@ If you create data models or build Excel workbooks for Power BI, this article ca
 
 In Power BI, Q&A can search structured data and choose the right visualization for your question.
 
-Q&A can work on any uploaded Excel file that contains tables, ranges, or a Power Pivot model. The more optimizations and data cleaning you do, the more robust Q&A performance is. If you plan on sharing reports and dashboards based on your dataset, you want your colleagues to have an easy time asking questions and getting quality answers.
+Q&A can work on any uploaded Excel file that contains tables, ranges, or a Power Pivot model. The more optimizations and data cleaning you do, the more robust Q&A performance is. If you plan on sharing reports and dashboards based on your semantic model, you want your colleagues to have an easy time asking questions and getting quality answers.
 
 ## How Q&A works with Excel
 
@@ -29,7 +29,7 @@ For example, in an Excel table named “Sales”, with columns “Product”, �
 
 Or get started.
 
-## Prepare an Excel dataset for Q&A
+## Prepare an Excel semantic model for Q&A
 
 Q&A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!
 
@@ -42,9 +42,9 @@ Here are some tips for making the most of Q&A in your workbook:
 
 * If your workbook has a Power Pivot data model, you can do even more optimizations. Read [Demystifying Power BI Q&A part 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/) from our in-house team of natural language experts.
 
-* Open the dataset in Power BI Desktop. Create new columns and measures, concatenate fields to create unique values, and classify data by types such as dates, strings, geography, images, URLs, and more.
+* Open the semantic model in Power BI Desktop. Create new columns and measures, concatenate fields to create unique values, and classify data by types such as dates, strings, geography, images, URLs, and more.
 
-## Next steps
+## Related content
 
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)

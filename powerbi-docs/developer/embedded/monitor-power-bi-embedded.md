@@ -8,7 +8,8 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: subject-monitoring
 ms.topic: how-to
-ms.date: 03/01/2023
+ms.date: 06/04/2024
+# customer intent: As a developer, I want to learn how to monitor my Power BI Embedded application so that I can ensure it's running smoothly.
 ---
 
 # Power BI Embedded monitoring data
@@ -16,7 +17,7 @@ ms.date: 03/01/2023
 When you have critical applications and business processes that rely on Azure resources, you want to monitor those resources for their availability, performance, and operation. This article describes the monitoring data that Microsoft Power BI Embedded generates and how you can use the features of Azure Monitor to analyze and set alerts for this data.
 
 >[!TIP]
->You can also use the [Premium metrics app](../../enterprise/service-premium-metrics-app.md) to monitor your capacity.
+>You can also use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
 ## Power BI Embedded Overview page
 
@@ -135,7 +136,7 @@ Here's an example of a query that completes in less than five minutes (300,000 m
 
 Azure Monitor alerts proactively notify you when important conditions are found in your monitoring data. These alerts allow you to identify and address issues in your system before your customers notice them. You can set alerts on [metrics](/azure/azure-monitor/alerts/alerts-types#metric-alerts), [logs](/azure/azure-monitor/alerts/alerts-types#log-alerts), and the [activity log](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts).
 
-## Next steps
+## Related content
 
 Learn more about monitoring data:
 

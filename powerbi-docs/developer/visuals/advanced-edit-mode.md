@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 12/27/2022
+ms.date: 1/27/2024
 ---
 
 # Advanced edit mode in Power BI visuals
@@ -43,7 +43,7 @@ When you select **Edit**, the visual gets an update() call with EditMode set to 
 
 The **Back to report** button appears if the `advancedEditModeSupport` property is set in the *capabilities.json* file to `SupportedInFocus`.
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Add conditional formatting](conditional-format.md)

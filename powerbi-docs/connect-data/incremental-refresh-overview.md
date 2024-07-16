@@ -1,19 +1,17 @@
 ---
-title: Incremental refresh for datasets and real-time data in Power BI
+title: Incremental refresh for semantic models and real-time data in Power BI
 description: Learn how to configure and use the incremental refresh features in Power BI to capture fast-moving data.
-author: minewiskan
-ms.author: owend
+author: kfollis
+ms.author: kfollis
 ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
 ms.date: 01/26/2023
-ms.custom: contperf-fy21q4
-LocalizationGroup: 
 ---
-# Incremental refresh and real-time data for datasets
+# Incremental refresh and real-time data for semantic models
 
-Incremental refresh extends scheduled refresh operations by providing automated partition creation and management for dataset tables that frequently load new and updated data. For most datasets, one or more tables contain transaction data that changes often and can grow exponentially, like a fact table in a relational or star database schema. An incremental refresh policy to partition the table, refreshing only the most recent import partitions, and optionally using another DirectQuery partition for real-time data can significantly reduce the amount of data that has to be refreshed. At the same time, this policy ensures that the latest changes at the data source are included in the query results.
+Incremental refresh extends scheduled refresh operations by providing automated partition creation and management for semantic model tables that frequently load new and updated data. For most models, one or more tables contain transaction data that changes often and can grow exponentially, like a fact table in a relational or star database schema. An incremental refresh policy to partition the table, refreshing only the most recent import partitions, and optionally using another DirectQuery partition for real-time data can significantly reduce the amount of data that has to be refreshed. At the same time, this policy ensures that the latest changes at the data source are included in the query results.
 
 With incremental refresh and real-time data:
 
@@ -21,18 +19,18 @@ With incremental refresh and real-time data:
 - **Refreshes are faster.** Only the most recent data that has changed needs to be refreshed.
 - **Refreshes are more reliable.** Long-running connections to volatile data sources aren't necessary. Queries to source data run faster, reducing potential for network problems to interfere.
 - **Resource consumption is reduced.** Less data to refresh reduces overall consumption of memory and other resources in both Power BI and data source systems.
-- **Large datasets are enabled.** Datasets with potentially billions of rows can grow without the need to fully refresh the entire dataset with each refresh operation.
+- **Large semantic models are enabled.** Semantic models with potentially billions of rows can grow without the need to fully refresh the entire model with each refresh operation.
 - **Setup is easy.** Incremental refresh *policies* are defined in Power BI Desktop with just a few tasks. When Power BI Desktop publishes the report, the service automatically applies those policies with each refresh.  
 
-When you publish a Power BI Desktop model to the service, each table in the new dataset has a single partition. That single partition contains all rows for that table. If the table is large, say with tens of millions of rows or more, a refresh for that table can take a long time and consume an excessive amount of resources.
+When you publish a Power BI Desktop model to the service, each table in the new model has a single partition. That single partition contains all rows for that table. If the table is large, say with tens of millions of rows or more, a refresh for that table can take a long time and consume an excessive amount of resources.
 
 With incremental refresh, the service dynamically partitions and separates data that needs to be refreshed frequently from data that can be refreshed less frequently. Table data is filtered by using Power Query date/time parameters with the reserved, case-sensitive names `RangeStart` and `RangeEnd`. When you configure incremental refresh in Power BI Desktop, these parameters are used to filter only a small period of data that's loaded into the model. When Power BI Desktop publishes the report to the Power BI service, with the first refresh operation the service creates incremental refresh and historical partitions, and optionally a real-time DirectQuery partition based on the incremental refresh policy settings. The service then overrides the parameter values to filter and query data for each partition based on date/time values for each row.
 
-With each subsequent refresh, the query filters return only those rows within the refresh period dynamically defined by the parameters. Those rows with a date/time within the refresh period are refreshed. Rows with a date/time no longer within the refresh period then become part of the historical period, which isn't refreshed. If a real-time DirectQuery partition is included in the incremental refresh policy, its filter is also updated so that it picks up any changes that occur after the refresh period. Both the refresh and historical periods are rolled forward. As new incremental refresh partitions are created, refresh partitions no longer in the refresh period become historical partitions. Over time, historical partitions become less granular as they're merged together. When a historical partition is no longer in the historical period defined by the policy, it's removed from the dataset entirely. This behavior is known as a *rolling window pattern*.
+With each subsequent refresh, the query filters return only those rows within the refresh period dynamically defined by the parameters. Those rows with a date/time within the refresh period are refreshed. Rows with a date/time no longer within the refresh period then become part of the historical period, which isn't refreshed. If a real-time DirectQuery partition is included in the incremental refresh policy, its filter is also updated so that it picks up any changes that occur after the refresh period. Both the refresh and historical periods are rolled forward. As new incremental refresh partitions are created, refresh partitions no longer in the refresh period become historical partitions. Over time, historical partitions become less granular as they're merged together. When a historical partition is no longer in the historical period defined by the policy, it's removed from the model entirely. This behavior is known as a *rolling window pattern*.
 
 :::image type="content" source="media/incremental-refresh-overview/incremental-refresh-rolling-window-pattern.png" alt-text="Graphic representing a rolling window pattern.":::
 
-The beauty of incremental refresh is that the service handles all of it for you based on the incremental refresh policies you define. In fact, the process and partitions created from it aren't visible in the service. In most cases, a well-defined incremental refresh policy is all that's necessary to significantly improve dataset refresh performance. However, the real-time DirectQuery partition is only supported for datasets in Premium capacities. Power BI Premium also enables more advanced partition and refresh scenarios through the [XML for Analysis (XMLA) endpoint](/power-bi/enterprise/service-premium-connect-tools).
+The beauty of incremental refresh is that the service handles all of it for you based on the incremental refresh policies you define. In fact, the process and partitions created from it aren't visible in the service. In most cases, a well-defined incremental refresh policy is all that's necessary to significantly improve model refresh performance. However, the real-time DirectQuery partition is only supported for models in Premium capacities. Power BI Premium also enables more advanced partition and refresh scenarios through the [XML for Analysis (XMLA) endpoint](/power-bi/enterprise/service-premium-connect-tools).
 
 ## Requirements
 
@@ -40,9 +38,9 @@ The next sections describe the supported plans and data sources.
 
 ### Supported plans
 
-Incremental refresh is supported for Power BI Premium, Premium per user, Power BI Pro, and Power BI Embedded datasets.
+Incremental refresh is supported for Power BI Premium, Premium per user, Power BI Pro, and Power BI Embedded models.
 
-Getting the latest data in real time with DirectQuery is only supported for Power BI Premium, Premium per user, and Power BI Embedded datasets.
+Getting the latest data in real time with DirectQuery is only supported for Power BI Premium, Premium per user, and Power BI Embedded models.
 
 ### Supported data sources
 
@@ -127,12 +125,12 @@ By using more custom query functions and query logic, incremental refresh can be
 
 ## Time limits
 
-Regardless of incremental refresh, Power BI Pro datasets have a refresh time limit of **two hours** and don't support getting real-time data with DirectQuery. For datasets in a Premium capacity, the time limit is **five hours**. Refresh operations are process and memory intensive. A full refresh operation can use as much as double the amount of memory required by the dataset alone, because the service maintains a snapshot of the dataset in memory until the refresh operation is complete. Refresh operations can also be process intensive, consuming a significant amount of available CPU resources. Refresh operations must also rely on volatile connections to data sources, and the ability of those data source systems to quickly return query output. The time limit is a safeguard to limit over-consumption of your available resources.
+Regardless of incremental refresh, Power BI Pro models have a refresh time limit of **two hours** and don't support getting real-time data with DirectQuery. For models in a Premium capacity, the time limit is **five hours**. Refresh operations are process and memory intensive. A full refresh operation can use as much as double the amount of memory required by the model alone, because the service maintains a snapshot of the model in memory until the refresh operation is complete. Refresh operations can also be process intensive, consuming a significant amount of available CPU resources. Refresh operations must also rely on volatile connections to data sources, and the ability of those data source systems to quickly return query output. The time limit is a safeguard to limit over-consumption of your available resources.
 
 > [!NOTE]
 > With Premium capacities, refresh operations performed through the XMLA endpoint have no time limit. To learn more, see [**Advanced incremental refresh with the XMLA endpoint**](incremental-refresh-xmla.md).
 
-Because incremental refresh optimizes refresh operations at the partition level in the dataset, resource consumption can be significantly reduced. At the same time, even with incremental refresh, unless they go through the XMLA endpoint, refresh operations are bound by those same two-hour and five-hour limits. An effective incremental refresh policy not only reduces the amount of data processed with a refresh operation, but also reduces the amount of unnecessary historical data stored in your dataset.
+Because incremental refresh optimizes refresh operations at the partition level in the model, resource consumption can be significantly reduced. At the same time, even with incremental refresh, unless they go through the XMLA endpoint, refresh operations are bound by those same two-hour and five-hour limits. An effective incremental refresh policy not only reduces the amount of data processed with a refresh operation, but also reduces the amount of unnecessary historical data stored in your model.
 
 Queries can also be limited by a default time limit for the data source. Most relational data sources allow overriding time limits in the Power Query M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set CommandTimeout to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting:
 
@@ -145,23 +143,28 @@ in
     #"Filtered Rows"
 ```
 
-For *very large* datasets in Premium capacities that likely contain billions of rows, the initial refresh operation can be bootstrapped. Bootstrapping allows the service to create table and partition objects for the dataset, but doesn't load and process data into any of the partitions. By using SQL Server Management Studio, you can set partitions to be processed individually, sequentially, or in parallel, to both reduce the amount of data returned in a single query, and also bypass the five-hour time limit. To learn more, see [Advanced incremental refresh - Prevent timeouts on initial full refresh](incremental-refresh-xmla.md#prevent-timeouts-on-initial-full-refresh).
+For *very large* models in Premium capacities that likely contain billions of rows, the initial refresh operation can be bootstrapped. Bootstrapping allows the service to create table and partition objects for the model, but doesn't load and process data into any of the partitions. By using SQL Server Management Studio, you can set partitions to be processed individually, sequentially, or in parallel, to both reduce the amount of data returned in a single query, and also bypass the five-hour time limit. To learn more, see [Advanced incremental refresh - Prevent timeouts on initial full refresh](incremental-refresh-xmla.md#prevent-timeouts-on-initial-full-refresh).
 
 ### Current date and time
 
-The current date and time is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the service, the specified time zone is taken into account when determining the current date and time. Both individual and scheduled refreshes through the service observe the time zone if available. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone specified determines the current date and time based on Pacific Time, not Coordinated Universal Time (UTC), which would return the next day. Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), don't consider the scheduled refresh time zone.
+By default, the current date and time is determined based on Coordinated Universal Time (UTC) at the time of refresh. For on-demand and scheduled refreshes, you can configure a different time zone under 'Schedule refresh' that will be taken into account when determining the current date and time. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone configured determines the current date and time based on Pacific Time, not UTC, which would return the next day. 
+
+> [!NOTE]
+> The time zone configuration is taken into account even if the schedule refresh is disabled.
 
 :::image type="content" source="media/incremental-refresh-overview/time-zone.png" alt-text="Screenshot of Scheduled refresh dialog showing the Time zone input field":::
 
+Refresh operations not invoked through the Power BI service, such as the [XMLA TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true) or [Enhanced Refresh API](/power-bi/connect-data/asynchronous-refresh#parameters), do not consider the configured scheduled refresh time zone and default to UTC.
+
 ## Configure incremental refresh and real-time data
 
-This sections describes important concepts of configuring incremental refresh and real-time data. When you're ready for more detailed step-by-step instructions, see [Configure incremental refresh and real-time data for datasets](incremental-refresh-configure.md).
+This section describes important concepts of configuring incremental refresh and real-time data. When you're ready for more detailed step-by-step instructions, see [Configure incremental refresh and real-time data for semantic models](incremental-refresh-configure.md).
 
 Configuring incremental refresh is done in Power BI Desktop. For most models, only a few tasks are required. However, keep the following points in mind:
 
-- After publishing to the Power BI service, you can't publish the same model again from Power BI Desktop. Republishing removes any existing partitions and data already in the dataset. If you're publishing to a Premium capacity, subsequent metadata schema changes can be made with tools such as the open-source ALM Toolkit, or by using TMSL. To learn more, see [Advanced incremental refresh - Metadata-only deployment](incremental-refresh-xmla.md#metadata-only-deployment).
-- After publishing to the Power BI service, you can't download the dataset back as a *.pbix* to Power BI Desktop. Because datasets in the service can grow so large, it's impractical to download and open them on a typical desktop computer.
-- When getting real-time data with DirectQuery, you can't publish the dataset to a non-Premium workspace. Incremental refresh with real-time data is only supported with Power BI Premium.
+- After publishing to the Power BI service, you can't publish the same model again from Power BI Desktop. Republishing removes any existing partitions and data already in the model. If you're publishing to a Premium capacity, subsequent metadata schema changes can be made with tools such as the open-source ALM Toolkit, or by using TMSL. To learn more, see [Advanced incremental refresh - Metadata-only deployment](incremental-refresh-xmla.md#metadata-only-deployment).
+- After publishing to the Power BI service, you can't download the model back as a *.pbix* to Power BI Desktop. Because models in the service can grow so large, it's impractical to download and open them on a typical desktop computer.
+- When getting real-time data with DirectQuery, you can't publish the model to a non-Premium workspace. Incremental refresh with real-time data is only supported with Power BI Premium.
 
 ### Create parameters
 
@@ -191,23 +194,23 @@ The **Select table** listbox defaults to the table you selected in Data view. En
 
 #### Required settings
 
-The **Archive data starting before refresh date** setting determines the historical period in which rows with a date/time in that period are included in the dataset, plus rows for the current incomplete historical period, plus rows in the refresh period up to the current date and time.
+The **Archive data starting before refresh date** setting determines the historical period in which rows with a date/time in that period are included in the model, plus rows for the current incomplete historical period, plus rows in the refresh period up to the current date and time.
 
 For example, if you specify five *years*, the table stores the last five whole years of historical data in year partitions. The table will also include rows for the current year in quarter, month, or day partitions, up to and including the refresh period.
 
-For datasets in Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting. To learn more, see [Advanced incremental refresh - Partitions](incremental-refresh-xmla.md#partitions).
+For models in Premium capacities, backdated historical partitions can be selectively refreshed at a granularity determined by this setting. To learn more, see [Advanced incremental refresh - Partitions](incremental-refresh-xmla.md#partitions).
 
 The **Incrementally refresh data starting before refresh date** setting determines the incremental refresh period in which all rows with a date/time in that period are included in the refresh partitions and refreshed with each refresh operation.
 
-For example, if you specify a refresh period of three days, with each refresh operation, the service overrides the `RangeStart` and `RangeEnd` parameters to create a query for rows with a date/time within a three-day period, with the beginning and ending dependent on the current date and time. Rows with a date/time in the last three days up to the current refresh operation time are refreshed. With this type of policy, you can expect our FactInternetSales dataset table in the service, which averages 10,000 new rows per day, to refresh roughly 30,000 rows with each refresh operation.
+For example, if you specify a refresh period of three days, with each refresh operation, the service overrides the `RangeStart` and `RangeEnd` parameters to create a query for rows with a date/time within a three-day period, with the beginning and ending dependent on the current date and time. Rows with a date/time in the last three days up to the current refresh operation time are refreshed. With this type of policy, you can expect our FactInternetSales model table in the service, which averages 10,000 new rows per day, to refresh roughly 30,000 rows with each refresh operation.
 
 Specify a period that includes only the minimum number of rows required to ensure accurate reporting. When you define policies for more than one table, the same `RangeStart` and `RangeEnd` parameters must be used even if different store and refresh periods are defined for each table.
 
 #### Optional settings
 
-The **Get the latest data in real time with DirectQuery (Premium only)** setting enables fetching the latest changes from the selected table at the data source beyond the incremental refresh period by using DirectQuery. All rows with a date/time later than the incremental refresh period are included in a DirectQuery partition and fetched from the data source with every dataset query.
+The **Get the latest data in real time with DirectQuery (Premium only)** setting enables fetching the latest changes from the selected table at the data source beyond the incremental refresh period by using DirectQuery. All rows with a date/time later than the incremental refresh period are included in a DirectQuery partition and fetched from the data source with every model query.
 
-For example, if this setting is enabled, with each refresh operation, the service still overrides the `RangeStart` and `RangeEnd` parameters to create a query for rows with a date/time after the refresh period, with the beginning dependent on the current date and time. Rows with a date/time after the current refresh operation time are also included. With this type of policy, the FactInternetSales dataset table in the service includes the latest data updates.
+For example, if this setting is enabled, with each refresh operation, the service still overrides the `RangeStart` and `RangeEnd` parameters to create a query for rows with a date/time after the refresh period, with the beginning dependent on the current date and time. Rows with a date/time after the current refresh operation time are also included. With this type of policy, the FactInternetSales model table in the service includes the latest data updates.
 
 The **Only refresh complete days** setting ensures all rows for the entire day are included in the refresh operation. This setting is optional *unless* you enable the **Get the latest data in real time with DirectQuery (Premium only)** setting. For example, say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you don't want to account for them. Some business metrics like barrels per day in the oil and gas industry make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the twelfth calendar day of the month. You could set the refresh period to one month and schedule the refresh to run on the twelfth day of the month. With this option selected, it would, for example, refresh January data on February 12.
 
@@ -225,29 +228,29 @@ In some cases, enabling the **Detect data changes*** option can be further enhan
 
 ## Publish
 
-After configuring the incremental refresh policy, you publish the model to the service. When publishing is complete, you can perform the initial refresh operation on the *dataset*.
+After configuring the incremental refresh policy, you publish the model to the service. When publishing is complete, you can perform the initial refresh operation on the *model*.
 
 > [!NOTE]
-> Datasets with an incremental refresh policy to get the latest data in real time with DirectQuery can only be published to a Premium workspace.
+> Semantic models with an incremental refresh policy to get the latest data in real time with DirectQuery can only be published to a Premium workspace.
 
-For datasets published to workspaces assigned to Premium capacities, if you think the dataset will grow beyond 1 GB, you can improve refresh operation performance and ensure the dataset doesn't max out size limits by enabling Large dataset storage format *before* performing the first refresh operation in the service. To learn more, see [Large datasets in Power BI Premium](../enterprise/service-premium-large-models.md).
+For models published to workspaces assigned to Premium capacities, if you think the model will grow beyond 1 GB, you can improve refresh operation performance and ensure the model doesn't max out size limits by enabling Large model storage format *before* performing the first refresh operation in the service. To learn more, see [Large models in Power BI Premium](../enterprise/service-premium-large-models.md).
 
 > [!IMPORTANT]
 > After Power BI Desktop publishes the model to the service, you can't download that *.pbix* back.
 
 ## Refresh
 
-After publishing to the service, you perform an initial refresh operation on the dataset. This refresh should be an individual (manual) refresh so you can monitor progress. The initial refresh operation can take quite a while to complete. Partitions must be created, historical data loaded, objects such as relationships and hierarchies built or rebuilt, and calculated objects recalculated.
+After publishing to the service, you perform an initial refresh operation on the model. This refresh should be an individual (manual) refresh so you can monitor progress. The initial refresh operation can take quite a while to complete. Partitions must be created, historical data loaded, objects such as relationships and hierarchies built or rebuilt, and calculated objects recalculated.
 
 Subsequent refresh operations, either individual or scheduled, are much faster because only the incremental refresh partitions are refreshed. Other processing operations must still occur, like merging partitions and recalculation, but it usually takes much less time than the initial refresh.
 
 ## Automatic report refresh
 
-For reports that use a dataset with an incremental refresh policy to get the latest data in real time with DirectQuery, it's a good idea to enable automatic page refresh at a fixed interval or based on change detection so that the reports include the latest data without delay. To learn more, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
+For reports that use a model with an incremental refresh policy to get the latest data in real time with DirectQuery, it's a good idea to enable automatic page refresh at a fixed interval or based on change detection so that the reports include the latest data without delay. To learn more, see [Automatic page refresh in Power BI](../create-reports/desktop-automatic-page-refresh.md).
 
 ## Advanced incremental refresh
 
-If your dataset is on a Premium capacity with an XMLA endpoint enabled, incremental refresh can be further extended for advanced scenarios. For example, you can use SQL Server Management Studio to view and manage partitions, bootstrap the initial refresh operation, or refresh backdated historical partitions. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
+If your model is on a Premium capacity with an XMLA endpoint enabled, incremental refresh can be further extended for advanced scenarios. For example, you can use SQL Server Management Studio to view and manage partitions, bootstrap the initial refresh operation, or refresh backdated historical partitions. To learn more, see [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md).
 
 ## Community
 
@@ -258,9 +261,9 @@ Power BI has a vibrant community where MVPs, BI pros, and peers share expertise 
 - [Search "Incremental refresh for files" on Bing](https://www.bing.com/search?q=incremental+refresh+for+files)
 - [Search "Keep existing data using incremental refresh" on Bing](https://www.bing.com/search?q=keep+existing+data+using+incremental+refresh)
 
-## Next steps
+## Related content
 
-- [Configure incremental refresh for datasets](incremental-refresh-configure.md)  
+- [Configure incremental refresh for semantic models](incremental-refresh-configure.md)  
 - [Advanced incremental refresh with the XMLA endpoint](incremental-refresh-xmla.md)  
 - [Troubleshoot incremental refresh](incremental-refresh-troubleshoot.md)  
 - [Incremental refresh for dataflows](../transform-model/dataflows/dataflows-premium-features.md#incremental-refresh)

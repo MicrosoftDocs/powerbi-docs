@@ -9,4 +9,4 @@ ms.date: 07/11/2022
 ms.custom: include file, service-premium-what-is.md, embedded-capacity.md
 ---
 
-Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
+Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for computing power. The type of SKU you require, depends on the type of solution you wish to deploy.

@@ -7,7 +7,7 @@ ms.reviewer: cookiemccray
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/21/2022
+ms.date: 12/04/2023
 #Customer intent: As a paginated report creator, I want to set up row-level security to maintain privacy and security.
 ---
 
@@ -15,17 +15,20 @@ ms.date: 06/21/2022
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../includes/applies-yes-report-builder-no-desktop.md)] 
 
-This article explains how to set up row-level security (RLS) for paginated reports in Power BI. If your paginated report is based on a Power BI dataset, the article [Row-level security (RLS) with Power BI](../enterprise/service-admin-rls.md) provides a solid background.
+This article explains how to set up row-level security (RLS) for paginated reports in Power BI. If your paginated report is based on a Power BI semantic model, the article [Row-level security (RLS) with Power BI](/fabric/security/service-admin-row-level-security) provides a solid background for setting up RLS to use in your paginated report.
 
 To use RLS in a paginated report, you first [create parameters](#create-a-parameter-using-userid) in that report. Then you take advantage of the built-in field **UserID**:
 
 - Use [UserID in a filter](#use-userid-in-a-filter).
 - Use [UserID in a query](#use-userid-in-a-query).
 
+    > [!NOTE]  
+    > Value for UserID expression during report preview in Power BI Report Builder could be in a different format than the value for UserID expression when run in a report on the Power BI service. It depends upon whether the computer running Power BI Report Builder uses Active Directory or Microsoft Entra ID.
+
 ## Prerequisites
 
 [!INCLUDE [power-bi-paginated-prerequisites](../includes/power-bi-paginated-prerequisites.md)]
-- For [row-level security (RLS)](../enterprise/service-admin-rls.md) to work in Power BI Report Builder, You need at least a Viewer role in the dataset workspace, and Build permission for the dataset. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+- For [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to work in Power BI Report Builder, You need at least a Viewer role in the dataset workspace, and Build permission for the dataset. Read about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - You create paginated reports using the SQL Server Reporting Services engine, and not the Power BI (Analysis Services) engine, so you set up RLS filtering in [Power BI Report Builder](report-builder-power-bi.md).
 
 ## Create a parameter using UserID
@@ -79,6 +82,10 @@ Then you use this parameter with **UserId** in a [*filter*](#use-userid-in-a-fil
     ![Screenshot shows Power BI Report Builder queries edit.](media/paginated-rls/query-edit.png)
 
 1. Select **OK**.
+
+## Considerations and limitations
+
+* The Test as role/View as role feature doesn't work for paginated reports.
 
 ## Next steps
 

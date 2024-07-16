@@ -80,7 +80,7 @@ Launching a Python IDE directly from Power BI Desktop has a few limitations:
 
 * Automatically exporting your script from your Python IDE into Power BI Desktop isn't supported.
 
-## Next steps
+## Related content
 
 Take a look at the following additional information about Python in Power BI.
 

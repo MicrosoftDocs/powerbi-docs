@@ -1,13 +1,14 @@
 ---
 title: Examples of Power BI visuals
-description: This article presents examples of Power BI visuals that can be found in GitHub, including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
+description: This article gives examples of Power BI visuals that can be found in GitHub, including slicers, more than 20 types of charts, WebGL, and R visuals and scripts.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 10/13/2022
+ms.topic: concept-article
+ms.date: 10/13/2023
+#customer intent: As a developer, I want to learn about various Power BI visuals available on GitHub so that I can use them in my projects.
 ---
 
 # Examples of Power BI visuals
@@ -78,7 +79,7 @@ These examples demonstrate how to harness the analytic and visual power of R vis
 | <img src="media/samples/time-series-decomposition-chart.png" alt="Screenshot shows Time Series decomposition chart." width="200"> | <img src="media/samples/time-series-forecasting-chart.png" alt="Screenshot shows Time series forecasting chart." width="200">|
 |[Time series decomposition chart](https://github.com/Microsoft/powerbi-visuals-timeseriesdecomposition/) </br>Understand the time series components using "Seasonal and Trend decomposition using Loess" | [Time series forecasting chart](https://github.com/Microsoft/powerbi-visuals-forcasting-exp/) </br>Using exponential smoothing model to predict future values based on previously observed values |
 
-## Next steps
+## Related content
 
 * [Import a Power BI visual](./import-visual.md)
 * [Develop your own Power BI custom visual](./develop-circle-card.md)

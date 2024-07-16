@@ -6,8 +6,9 @@ ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 02/13/2023
+ms.topic: concept-article
+ms.date: 12/12/2023
+#customer intent: As a Power BI visual developer, I want to understand how data view mapping works in Power BI visuals so that I can create different types of visuals.
 ---
 
 # Understand data view mapping in Power BI visuals
@@ -224,7 +225,7 @@ The previous example reads "Map my `category` data role so that for every field 
 The next example uses the same two data roles as the previous example and adds two more data roles named `grouping` and `measure2`.
 
 ```json
-"dataRole":[
+"dataRoles":[
     {
         "displayName": "Category",
         "name": "category",
@@ -246,22 +247,33 @@ The next example uses the same two data roles as the previous example and adds t
         "kind": "Grouping"
     }
 ],
-"dataViewMappings":{
-    "categorical": {
-        "categories": {
-            "for": { "in": "category" }
-        },
-        "values": {
-            "group": {
-                "by": "grouping",
-                "select":[
-                    { "bind": { "to": "measure" } },
-                    { "bind": { "to": "measure2" } }
-                ]
+"dataViewMappings": [
+    {
+        "categorical": {
+            "categories": {
+                "for": {
+                    "in": "category"
+                }
+            },
+            "values": {
+                "group": {
+                    "by": "grouping",
+                    "select": [{
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "measure2"
+                            }
+                        }
+                    ]
+                }
             }
         }
     }
-}
+]
 ```
 
 The difference between this mapping and the basic mapping is how `categorical.values` is mapped. When you map the `measure` and `measure2` data roles to the data role `grouping`, the x-axis and y-axis can be scaled appropriately.
@@ -448,7 +460,7 @@ export class Visual implements IVisual {
         let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
 
         let data = {};
-        // iterate categories/countries
+        // iterate categories/countries-regions
         categories.map((category: PrimitiveValue, categoryIndex: number) => {
             data[category.toString()] = {};
             // iterate series/years
@@ -718,7 +730,7 @@ The resulting visual looks like this:
 
 Power BI creates a hierarchical data structure. The root of the tree hierarchy includes the data from the **Parents** column of the `Category` data role with children from the **Children** column of the data role table.
 
-Dataset:
+Semantic model:
 
 | Parents | Children | Grandchildren | Columns | Values |
 |-----|-----|------|-------|-------|
@@ -820,12 +832,14 @@ The visual gets its data structure as described in the following code (only the 
 
 ### Expand and collapse row headers
 
-For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers).
+For **API 4.1.0** or later, matrix data supports [expanding and collapsing row headers](../../visuals/desktop-matrix-visual.md#expanding-and-collapsing-row-headers). From **API 4.2** you can expand/collapse entire level programmatically.
 The expand and collapse feature optimizes fetching data to the dataView by allowing the user to expand or collapse a row without fetching all the data for the next level. It only fetches the data for the selected row. The row header’s expansion state remains consistent across bookmarks and even across saved reports. It's not specific to each visual.
 
 Expand and collapse commands can be added to the context menu by supplying the `dataRoles` parameter to the `showContextMenu` method.
 
 :::image type="content" source="media/dataview-mappings/expand-collapse-context-menu.png" alt-text="Screenshot showing context menu with expand and collapse options.":::
+
+To expand a large number of data points, use the [fetch more data API](./fetch-more-data.md) with the expand/collapse API.
 
 #### API features
 
@@ -947,10 +961,10 @@ The *count* is set to the maximum number of values that the data view can accept
 
 There are four types of data reduction algorithm settings:
 
-* `top`: The first *count* values are taken from the dataset.
-* `bottom`: The last *count* values are taken from the dataset.
+* `top`: The first *count* values are taken from the semantic model.
+* `bottom`: The last *count* values are taken from the semantic model.
 * `sample`: The first and last items are included, and *count* number of items with equal intervals between them.
-For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9, you receive the values [0, 10, 20 ... 100].
+For example, if you have a semantic model [0, 1, 2, ... 100] and a *count* of 9, you receive the values [0, 10, 20 ... 100].
 * `window`: Loads one *window* of data points at a time containing *count* elements. Currently, `top` and `window` are equivalent. In the future, a windowing setting will be fully supported.
 
 By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. This default is equivalent to setting the following properties in the *capabilities.json* file:
@@ -1025,10 +1039,7 @@ In table data view mapping, apply the data reduction algorithm to the `rows` sec
 
 You can apply the data reduction algorithm to the `rows` and `columns` sections of the Data View mapping matrix.
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Add drill-down support](drill-down-support.md)
-
-> [!div class="nextstepaction"]
-> [Create custom Power BI visuals without data binding](no-dataroles-support.md)
+* [Add drill-down support](drill-down-support.md)
+* [Create custom Power BI visuals without data binding](no-dataroles-support.md)

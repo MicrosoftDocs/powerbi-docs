@@ -1,6 +1,6 @@
 ---
 title: Embed Power BI content in an embedded analytics application with service principal and an application secret
-description: Learn how to authenticate for embedded analytics by using an Azure Active Directory application service principal and an application secret.
+description: Learn how to authenticate for embedded analytics by using a Microsoft Entra application service principal and an application secret.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
@@ -8,16 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 04/17/2023
+ms.date: 06/03/2024
 ---
 
 # Embed Power BI content with service principal and an application secret
 
-Service principal is an authentication method that can be used to let an [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
+Service principal is an authentication method that can be used to let an [Microsoft Entra](/azure/active-directory/fundamentals/active-directory-whatis) application access Power BI service content and APIs.
 
-When you create an Azure AD app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Azure AD to authenticate your app. After it's authenticated, the app can access Azure AD tenant resources.
+When you create a Microsoft Entra app, a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Microsoft Entra ID to authenticate your app. After it's authenticated, the app can access Microsoft Entra tenant resources.
 
-To authenticate, the service principal uses the Azure AD app's *application ID* and one of the following:
+To authenticate, the service principal uses the Microsoft Entra app's *application ID* and one of the following:
 
 * A certificate
 * An application secret
@@ -27,26 +27,22 @@ This article describes service principal authentication using an *application ID
 >[!NOTE]
 >We recommend that you secure your back-end services by using certificates, rather than secret keys.
 >
->* [Learn more about getting access tokens from Azure AD by using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
+>* [Learn more about getting access tokens from Microsoft Entra ID by using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 >* To secure your solution by using a certificate, complete the instructions in this article and then follow the steps described in [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
-
-## Prerequisite
-
-This procedure requires you to have an **Azure AD Premium** license.
 
 ## Method
 
 To use service principal and an application ID for embedded analytics, you take the following steps. Subsequent sections describe these steps in detail.
 
-1. Create an [Azure AD app](/azure/active-directory/manage-apps/what-is-application-management).
+1. Create an [Microsoft Entra app](/azure/active-directory/manage-apps/what-is-application-management).
 
-    1. Create a secret for your Azure AD app.
+    1. Create a secret for your Microsoft Entra app.
     1. Get the app's *application ID* and *application secret*.
 
     >[!NOTE]
-    >These steps are described in **step 1**. For more information about creating an Azure AD app, see [create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal).
+    >These steps are described in **step 1**. For more information about creating a Microsoft Entra app, see [create a Microsoft Entra app](/azure/active-directory/develop/howto-create-service-principal-portal).
 
-1. Create an Azure AD security group.
+1. Create a Microsoft Entra security group.
 
 1. Enable the Power BI service admin settings.
 
@@ -55,16 +51,20 @@ To use service principal and an application ID for embedded analytics, you take 
 1. Embed your content.
 
 > [!IMPORTANT]
-> An Azure AD application doesn't require you to configure any delegated permissions or application permissions in the Azure portal when it has been created for a service principal. When you create an Azure AD application for a service principal to access the Power BI REST API, we recommended that you **avoid adding permissions**. They're never used and can cause errors that are hard to troubleshoot.
+> A Microsoft Entra application doesn't require you to configure any delegated permissions or application permissions in the Azure portal when it has been created for a service principal. When you create a Microsoft Entra application for a service principal to access the Power BI REST API, we recommended that you **avoid adding permissions**. They're never used and can cause errors that are hard to troubleshoot.
 
-## Step 1 - Create an Azure AD app
+<a name='step-1---create-an-azure-ad-app'></a>
 
-Create an Azure AD app by using one of these methods:
+## Step 1 - Create a Microsoft Entra app
+
+Create a Microsoft Entra app by using one of these methods:
 
 * [Create the app in the Azure portal](embed-service-principal.md#create-an-azure-ad-app-in-the-azure-portal).
 * [Create the app by using PowerShell](embed-service-principal.md#create-an-azure-ad-app-by-using-powershell).
 
-### Create an Azure AD app in the Azure portal
+<a name='create-an-azure-ad-app-in-the-azure-portal'></a>
+
+### Create a Microsoft Entra app in the Azure portal
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#allservices).
 
@@ -105,9 +105,11 @@ Create an Azure AD app by using one of these methods:
    >[!NOTE]
    >After you leave this window, the client secret value is hidden, and you can't view or copy it again.
 
-### Create an Azure AD app by using PowerShell
+<a name='create-an-azure-ad-app-by-using-powershell'></a>
 
-The following sample [PowerShell](/powershell/azure/create-azure-service-principal-azureps) script creates a new Azure AD app and a service principal. Before you run this script:
+### Create a Microsoft Entra app by using PowerShell
+
+The following sample [PowerShell](/powershell/azure/create-azure-service-principal-azureps) script creates a new Microsoft Entra app and a service principal. Before you run this script:
 
 - Install the [latest version of PowerShell](/powershell/scripting/install/installing-powershell-on-windows).
 - Install the [Microsoft Graph PowerShell SDK](/graph/sdks/sdk-installation#install-the-microsoft-graph-powershell-sdk).
@@ -146,14 +148,16 @@ $credential = Add-MgServicePrincipalPassword -ServicePrincipalId $($sp.Id)
 Write-Host "Credential of new service principal: " $($credential.SecretText)
 ```
 
-## Step 2 - Create an Azure AD security group
+<a name='step-2---create-an-azure-ad-security-group'></a>
 
-Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Azure AD. Then add the service principal you created to that security group.
+## Step 2 - Create a Microsoft Entra security group
+
+Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Microsoft Entra ID. Then add the service principal you created to that security group.
 
 >[!NOTE]
 >If you want to enable service principal access for the entire organization, skip this step.
 
-There are two ways to create an Azure AD security group:
+There are two ways to create a Microsoft Entra security group:
 
 * [Manually (in Azure)](embed-service-principal.md#create-a-security-group-manually)
 * [Use PowerShell](embed-service-principal.md#create-a-security-group-by-using-powershell)
@@ -186,18 +190,18 @@ New-MgGroupMember -GroupId $($group.Id) -DirectoryObjectId $($servicePrincipal.I
 
 ## Step 3 - Enable the Power BI service admin settings
 
-For an Azure AD app to access the Power BI content and APIs, a Power BI admin needs to enable the following settings:
+For a Microsoft Entra app to access the Power BI content and APIs, a Power BI admin needs to enable the following settings:
 
 * Embed content in apps
 * Allow service principals to use Power BI APIs
 
 In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to **Tenant settings**, and scroll down to **Developer settings**.
 
-* Enable **Embed content in apps** either for the entire organization or for the specific security group you created in Azure AD.
+* Enable **Embed content in apps** either for the entire organization or for the specific security group you created in Microsoft Entra ID.
 
   :::image type="content" source="./media/embed-service-principal/admin-portal-embed-content-in-apps.png" alt-text="Screenshot of the Developer settings in the Tenant settings section of the Admin portal. The option for embedding content in apps is turned on.":::
 
-* Enable **Allow service principals to use Power BI APIs** either for the entire organization or for the specific security group you created in Azure AD.
+* Enable **Allow service principals to use Power BI APIs** either for the entire organization or for the specific security group you created in Microsoft Entra ID.
 
   :::image type="content" source="media/embed-service-principal/admin-portal-allow-apis.png" alt-text="Screenshot of the Developer settings section. The option for allowing service principals to use Power BI APIs is turned on for one security group.":::
 
@@ -208,7 +212,7 @@ In the [**Power BI Admin portal**](../../admin/service-admin-portal.md), go to *
 
 ## Step 4 - Add the service principal to your workspace
 
-Your Azure AD app can access your Power BI reports, dashboards, and datasets only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
+Your Microsoft Entra app can access your Power BI reports, dashboards, and semantic models only when it has access to your Power BI workspace. You provide that access by adding the app's service principal or its security group to your workspace as a member or admin.
 
 There are three ways to add a service principal or its security group to your workspace:
 
@@ -224,7 +228,7 @@ There are three ways to add a service principal or its security group to your wo
 
 1. In the **Access** pane, under **Add admins, members, or contributors**, add one of the following:
 
-    * Your **service principal**. The name of your service principal is the **Display name** of your Azure AD app, as it appears in your Azure AD app's overview tab.
+    * Your **service principal**. The name of your service principal is the **Display name** of your Microsoft Entra app, as it appears in your Microsoft Entra app's overview tab.
     * The **security group** that includes your service principal.
 
 1. On the dropdown menu, select **Member** or **Admin**.
@@ -295,11 +299,11 @@ After your content is embedded, you're ready to [move to production](move-to-pro
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI Admin portal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md) management isn't supported.
-* Service principal only supports some read-only admin APIs. To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](../../enterprise/read-only-apis-service-principal-authentication.md).
+* Service principal only supports some read-only admin APIs. To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](/fabric/admin/metadata-scanning-enable-read-only-apis).
 * When you use service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose doesn't work.
 
-## Next steps
+## Related content
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
-* [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+* [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 12/07/2023
 LocalizationGroup: Transform and shape data
 ---
 # Configure Azure Log Analytics for Power BI
@@ -27,11 +27,9 @@ The following sections take you through the steps in to do both.
 
 Before you can configure Log Analytics integration from Power BI, you need to [create a Log Analytics Workspace](/azure/azure-monitor/logs/quick-create-workspace) in the Azure portal. You must also give permission in Azure for the Power BI service to write logs. The exact requirements are:
 
+* Contributor access to Azure subscription.
 * Register the 'microsoft.insights' resource provider in the Azure subscription where you'll collect Power BI log data.
-* The user who sets up Log Analytics integration in Power BI must be in the Owner role for the Log Analytics Workspace. See FAQ for workarounds if the Owner role can't be given.
-* The service principal 'Power BI Service' must be in the Owner role for the Log Analytics Workspace.
-
-The following section shows you how to meet these three requirements.
+* The user who sets up Log Analytics integration in Power BI must be in the Log Analytics Contributor role for the Log Analytics Workspace. See FAQ for workarounds if the Owner role can't be given.
 
 ### Enable the 'microsoft.insights' resource provider
 
@@ -47,9 +45,9 @@ Log Analytics requires the 'microsoft.insights' resource provider enabled at the
 
 ### Set permissions
 
-1. Make sure the user configuring Log Analytics integration and the Power BI Service principal are in the **Owner** role of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see at least two entries: **Owner** for the user who configures Log Analytics (1, in the following image), and **Owner** for the Power BI service (2, in the following image).
+1. Make sure the user configuring Log Analytics integration has **Log Analytics Contributor** role of the Log Analytics workspace. When you select **Access control (IAM)** for the subscription in the Azure portal, and then select **Role assignments** from the top selections in the panel, the current user must see one entry: **Log Analytics Contributor** for the user who configures Log Analytics:
 
-    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of the Access control pane with two owners highlighted.":::
+    :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-10.png" alt-text="Screenshot of the Access control pane with role highlighted.":::
 
 After you complete those steps, the Azure Log Analytics configuration portion is complete. The next section shows you how to continue and complete the configuration in the Power BI Admin portal.
 
@@ -90,7 +88,7 @@ There are many ways that Azure Log Analytics and Power BI can help solve real-wo
 
 * Identify periods of high or unusual Analysis Services engine activity by capacity, workspace, report, or user.
 * Analyze query performance and trends, including external DirectQuery operations.
-* Analyze dataset refresh duration, overlaps, and processing steps.
+* Analyze semantic model refresh duration, overlaps, and processing steps.
 * Analyze custom operations sent using the Premium XMLA endpoint.
 
 Send us feedback in the Power BI Community for how you're using logging and how it has helped your organization.
@@ -122,46 +120,182 @@ After you enable Azure Log Analytics, it starts to log the following **event cat
 * Query
 * Session Initialize
 * VertiPaqSEQuery
+* Notification
 
 The following table describes the **schema**.
 
 | Property | Existing Azure Analysis Services property | Description |
 | --- | --- | --- |
+| **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
+| **OperationName** | EventClass_s | The operation associated with the log record. |
+| **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| **PowerBIWorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
+| **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
 | **ApplicationContext** | ApplicationContext_s | Property bag of unique identifiers providing details about the application executing the request. for example, report ID. |
 | **ApplicationName** | ApplicationName_s | Contains the name of the client application that created the connection to the server. This column is populated with the values passed by the application rather than the displayed name of the program. |
 | **ArtifactId** | | Unique identifier of the resource logging the data. |
-| **ArtifactKind** | | Type of artifact logging the operation, for example,  Dataset. |
+| **ArtifactKind** | | Type of artifact logging the operation, for example, semantic model. |
+| **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
 | **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
-| **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
-| **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
-| **CustomerTenantId** | | Customer's Power BI tenant identifier. |
-| **DatasetMode** | | The mode of the dataset. Import, DirectQuery, or Composite. |
+| **DatasetMode** | | The mode of the semantic model. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
-| **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
-| **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
-| **Identity** | | Information about user and claims. |
-| **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
-| **OperationDetailName** | EventSubclass_s | More details about the operation. |
-| **OperationName** | EventClass_s | The operation associated with the log record. |
-| **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
-| **ProgressCounter** | ProgressTotal_s | Progress counter. |
-| **ProgressReportBegin** | | Collects all progress report begin events since the trace was started.  |
-| **ProgressReportCurrent** | | Collects all progress report current events since the trace was started.    |
-| **ProgressReportError** | | Collects all progress report error events since the trace was started.  |
-| **Status** | | Status of the operation.  |
-| **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
-| **TenantId** | | Unique identifier of Microsoft's Power BI tenant. This property doesn't refer to the customer tenant. |
-| **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
 | **User** | User_s | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
-| **VertipaqSEQueryBegin** |  | Vertipaq storage engine query start time.   |
-| **VertipaqSEQueryEnd** |  | Vertipaq storage engine query end time.   |
-| **WorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
-| **WorkspaceName** | ServerName_s | Name of the workspace containing the artifact. |
+| **ExecutingUser** | EffectiveUsername_s | The user running the operation. |
+| **OperationDetailName** | EventSubclass_s | More details about the operation. |
 | **XmlaObjectPath** | ObjectPath_s | Object path. A comma-separated list of parents, starting with the object's parent. |
+| **PowerBIWorkspaceName** |  | Name of the Power BI workspace containing the artifact. |
+| **StatusCode** | Error_s | Status code of the operation. It covers success and failure. |
+| **ProgressCounter** | ProgressTotal_s | Progress counter. |
 | **XmlaProperties** | RequestProperties_s | Properties of the XMLA request. |
-| **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
 | **XmlaSessionId** | SPID_s | Analysis Services session identifier. |
+| **Level** | Severity_s | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
+| **Identity** | | Information about user and claims. |
+| **Status** | | Status of the operation.  |
+| **EventText** | TextData_s | Contains verbose information associated with the operation, for example, DAX Query. |
+| **CustomerTenantId** | | Customer's Power BI tenant identifier. |
+| **XmlaRequestId** | RootActivityId_g | Unique Identifier of request. |
+| **ReplicaId** |  | Replica identifier that will let you identify the replica when [Query Scale Out (QSO)](../../enterprise/service-premium-scale-out.md) is enabled. Read-write replica always has ReplicaId='AAA' and read-only replicas have ReplicaId starting 'AAB' onwards. For non-QSO enabled semantic models the ReplicaId is always 'AAA'  |
+
+### ExecutionMetrics event
+
+For every **Discover**, **Command** and **Query** request, an event named **ExecutionMetrics** is produced at the end of the request. This event contains execution metrics for the request, which can assist you in diagnosing and troubleshooting more effectively. The ExecutionMetrics trace is correlated with the nearest **[Discover|Command|Query]End** event.
+
+
+The following KQL query retrieves the ExecutionMetrics events for all refresh operations of a Semantic Model in the last day:
+
+```sql
+let commands = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)
+    | where ArtifactId =~ "[Semantic Model Id]"
+    | where OperationName in ("CommandEnd")
+    | where EventText contains "<Refresh"
+    | project TimeGenerated, ArtifactId, CommandOperationName = OperationName, XmlaRequestId, CorrelationId, CommandText = EventText;
+let executionMetrics = PowerBIDatasetsWorkspace        
+    | where OperationName == "ExecutionMetrics"
+    | project TimeGenerated, XmlaRequestId, CorrelationId, EventText;
+commands
+| join kind=leftouter executionMetrics on XmlaRequestId
+
+```
+
+The following KQL query retrieves events that were throttled in the last day by workspace, item, and user:
+
+```sql
+let executionMetrics = PowerBIDatasetsWorkspace
+    | where TimeGenerated > ago(1d)    
+    | where OperationName == "ExecutionMetrics"    
+    | extend eventTextJson = parse_json(EventText)      
+    | extend capacityThrottlingMs=toint(eventTextJson.capacityThrottlingMs)
+    | where capacityThrottlingMs > 0;
+let commands = PowerBIDatasetsWorkspace    
+    | where OperationName in ("CommandEnd", "QueryEnd", "DiscoverEnd")    
+    | project
+        TimeGenerated,
+        ExecutingUser,
+        ArtifactId,
+        PowerBIWorkspaceId,
+        CommandOperationName = OperationName,
+        XmlaRequestId,
+        CorrelationId,
+        CommandText = EventText;
+commands
+| join kind=inner executionMetrics on XmlaRequestId
+| project
+    TimeGenerated,
+    ArtifactId,
+    PowerBIWorkspaceId,
+    ExecutingUser,
+    CommandOperationName,
+    XmlaRequestId,
+    EventText,
+    CommandText,
+    capacityThrottlingMs
+| summarize countThrottling = count(), avgThrottlingDuration = avg(capacityThrottlingMs) by PowerBIWorkspaceId, ArtifactId, ExecutingUser, CommandOperationName
+```
+
+The statistics are presented as a JSON text in the **EventText** property, see the following examples.
+
+#### [Refresh command](#tab/refresh)
+
+```json
+{
+    "timeStart": "2024-03-20T12:39:59.681Z",
+    "timeEnd": "2024-03-20T13:01:14.241Z",
+    "durationMs": 1274559,    
+    "vertipaqJobCpuTimeMs": 156,
+    "mEngineCpuTimeMs": 9617484,
+    "totalCpuTimeMs": 9618469,
+    "executionDelayMs": 10,
+    "approximatePeakMemConsumptionKB": 1683409,
+    "mEnginePeakMemoryKB": 1676816,
+    "tabularConnectionTimeoutMs": 18000000,    
+    "refreshParallelism": 16,
+    "vertipaqTotalRows": 114,
+    "intendedUsage": 2
+}
+```
+
+#### [DAX Query](#tab/query)
+
+```json
+{
+    "timeStart": "2024-05-07T13:42:21.362Z",
+    "timeEnd": "2024-05-07T13:43:30.505Z",
+    "durationMs": 69143,
+    "datasourceConnectionThrottleTimeMs": 0,
+    "directQueryConnectionTimeMs": 3,
+    "directQueryIterationTimeMs": 1,
+    "directQueryTotalTimeMs": 121872,
+    "queryProcessingCpuTimeMs": 16,
+    "totalCpuTimeMs": 63,
+    "executionDelayMs": 0,
+    "approximatePeakMemConsumptionKB": 3632,
+    "directQueryTimeoutMs": 225000,
+    "tabularConnectionTimeoutMs": 225000,
+    "queryDialect": 3,
+    "queryResultRows": 67,
+    "directQueryRequestCount": 2,
+    "directQueryTotalRows": 134
+}
+```
+---
+
+The following table describes all the possible properties. Not every property is emitted in each event, as the contents will depend on the request and the semantic model.
+
+| Property | Description |
+| --- | --- |
+| timeStart | The timestamp (UTC) of when the request started. |
+| timeEnd | The timestamp (UTC) of when the request ended. |
+| durationMs | Total duration of the execution. |
+| datasourceConnectionThrottleTimeMs | Total throttle time after hitting the datasource connection limit. Learn more about maximum concurrent connections [here](../../enterprise/service-premium-what-is.md#semantic-model-sku-limitation). |
+| directQueryConnectionTimeMs | Total time spent on creating new DirectQuery connection during the request |
+| directQueryIterationTimeMs | Total time spent on iterating the results returned by the DirectQuery queries. |
+| directQueryTotalTimeMs | Total time spent on executing and reading all DirectQuery queries during the request. |
+| executionDelayMs | Total time spent waiting for Analysis Services engine thread pool thread availability. |
+| totalCpuTimeMs | Total CPU time of the request. |
+| vertipaqJobCpuTimeMs | Total CPU time spent by Vertipaq engine.  |
+| mEngineCpuTimeMs | Total CPU time spent by PowerQuery engine.  |
+| queryProcessingCpuTimeMs | Total CPU time spent by tasks on Analysis Services query thread pool thread. |
+| approximatePeakMemoryConsumptionKB | Approximate peak total memory consumption during the request. |
+| mEnginePeakMemoryKB  | Approximate peak memory commit size (in kilobytes) across all PowerQuery engine mashup containers. |
+| directQueryTimeoutMs  | Timeout associated with DirectQuery queries. |
+| externalQueryTimeoutMs  | Timeout associated with queries to external datasources. |
+| tabularConnectionTimeoutMs  | Timeout associated with external tabular datasource connections (e.g. SQL). |
+| refreshParallelism  | Effective MaxParallelism used in the request.|
+| vertipaqTotalRows   | Total number of rows processed by the Vertipaq engine during a refresh operation.  |
+| queryResultRows   | Total number of rows returned as a result of the DAX query. |
+| directQueryTotalRows   | Total number of rows read from the various DirectQuery queries. |
+| directQueryRequestCount   | Total number of DirectQuery storage engine queries executed by the DAX engine. |
+| errorCount   | Total number of errors for the current request. |
+| qsoReplicaVersion   | Replica version for QSO enabled semantic models, represented in [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) format. |
+| intendedUsage   | Intended usage: Default (0); Scheduled or API refresh (1); On Demand Refresh (2); Dashboard tile/Query cache refresh (3) |
+| discoverType    | Type of Discover requested by the client. Refer to [EventSubclass](/analysis-services/trace-events/discover-events-data-columns#discover-begin-classdata-columns) for list of discover types. |
+| queryDialect     | Type of Dialect client has used to query the server: Unknown (-1); MDX (0); DMX (1); SQL (2); DAX (3); JSON (4)  |
+| capacityThrottlingMs     | Total time the request got delayed due to capacity throttling. Learn more about throttling [here](/fabric/enterprise/throttling). |
+
+- All durations and CPU times are presented in milliseconds.
+- Additional properties beyond those described in the table above may be encountered and these should be considered as undocumented and subject to change.
 
 ## Sample Log Analytics KQL queries
 
@@ -188,7 +322,7 @@ PowerBIDatasetsWorkspace
 | summarize percentiles(DurationMs, 0.5, 0.9) by bin(TimeGenerated, 1h)
 
 
-// refresh durations by workspace and dataset for last 30d
+// refresh durations by workspace and semantic model for last 30d
 PowerBIDatasetsWorkspace
 | where TimeGenerated > ago(30d)
 | where OperationName == 'CommandEnd'
@@ -196,13 +330,29 @@ PowerBIDatasetsWorkspace
 | where EventText contains 'refresh'
 | project PowerBIWorkspaceName, DatasetName = ArtifactName, DurationMs
 
+// query count, distinctUsers, avgCPU, avgDuration by workspace for last 30d
+PowerBIDatasetsWorkspace  
+| where TimeGenerated > ago(30d)
+| where OperationName == "QueryEnd" 
+| summarize QueryCount=count()
+    , Users = dcount(ExecutingUser)
+    , AvgCPU = avg(CpuTimeMs)
+    , AvgDuration = avg(DurationMs)
+by PowerBIWorkspaceId
+
 ```
 
-## Next steps
+## Sample Power BI Report Template
+
+Explore and get insights of Azure Log Analytics Power BI data using an open-source [Power BI Report Template](https://github.com/microsoft/PowerBI-LogAnalytics-Template-Reports) on GitHub.
+
+
+
+## Related content
 
 The following articles can help you learn more about Power BI and about its integration with Azure Log Analytics.
 
-* [Using Azure Log Analytics in Power BI (Preview)](desktop-log-analytics-overview.md)
-* [Azure Log Analytics in Power BI - FAQ (Preview)](desktop-log-analytics-faq.md)
+* [Using Azure Log Analytics in Power BI](desktop-log-analytics-overview.md)
+* [Azure Log Analytics in Power BI - FAQ](desktop-log-analytics-faq.md)
 * [What is Power BI Premium?](../../enterprise/service-premium-what-is.md)
 * [Workspaces in Power BI](../../collaborate-share/service-new-workspaces.md)

@@ -52,11 +52,11 @@ The basic flow of automating the configuration of a template app installation is
 To provide a preconfigured installation experience for your template app, the following prerequisites are required:
 
 * A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* Your own Azure Active Directory (Azure AD) tenant set up. For instructions on how to set one up, see [Create an Azure AD tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
+* Your own Microsoft Entra tenant set up. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
 * A **service principal (app-only token)** registered in the preceding tenant. For more information, see [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process, you need to save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
-* A **parameterized template app** that's ready for installation. The template app must be created in the same tenant in which you register your application in Azure AD. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md). From the template app, you need to note the following information for the next steps:
+* A **parameterized template app** that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md). From the template app, you need to note the following information for the next steps:
      * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at the end of the process of [defining the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) when the app was created. You can also get the same link by selecting **Get link** in the template app's [Release Management](service-template-apps-create.md#manage-the-template-app-release) pane.
-    * *Parameter names* as they're defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the dataset settings in Power BI.
+    * *Parameter names* as they're defined in the template app's semantic model. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the semantic model settings in Power BI.
 * To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 
     >[!NOTE]
@@ -68,7 +68,7 @@ The main steps for automating the configuration of a template app installation, 
 
 ## Step 1: Create a Power BI client object
 
-Using Power BI REST APIs requires you to get an *access token* for your [service principal](./../developer/embedded/embed-service-principal.md) from Azure AD. You're required to get an [Azure AD access token](./../developer/embedded/generate-embed-token.md) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
+Using Power BI REST APIs requires you to get an *access token* for your [service principal](./../developer/embedded/embed-service-principal.md) from Microsoft Entra ID. You're required to get an [Microsoft Entra access token](./../developer/embedded/generate-embed-token.md) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
 To create the Power BI client with your access token, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a **Microsoft.Rest.TokenCredentials** object.
 
 ```csharp
@@ -171,7 +171,7 @@ public static string RedirectWithData(string url, string ticket)
 
 When the automation you've designed is ready, be sure to move it to production.
 
-## Next steps
+## Related content
 
 * Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure function to automate the configuration of a template app installation.
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

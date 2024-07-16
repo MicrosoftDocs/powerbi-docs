@@ -1,14 +1,14 @@
 ---
 title: "Tutorial: Get started creating in the Power BI service"
-description: Get started with the Power BI online service (app.powerbi.com)
+description: Learn how to get started with the Power BI online service (app.powerbi.com) by following the steps in this tutorial.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 06/29/2022
-Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
+ms.date: 07/07/2023
+#customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 LocalizationGroup: Get started
 ---
 
@@ -16,217 +16,285 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial is an introduction to some of the features of the *Power BI service*. In this tutorial, you connect to data, create a report and a dashboard, and ask questions about your data. The exercises show you how to work with data on a dashboard and design semantic model visualizations. Here's an example dashboard:
 
-Are you a report *reader* rather than a creator? [Getting around in the Power BI service](../consumer/end-user-experience.md) is a good starting place for you.
+:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot of an example Power BI dashboard with sample semantic model visualizations." border="false":::
 
-:::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot of Financial Sample dashboard.":::
+In the Power BI service, you can accomplish many different tasks, and this tutorial can help you get started. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md)?
 
-In this tutorial, you complete the following steps:
+If you're a report *reader* rather than a creator, check out the [Getting around in the Power BI service](../consumer/end-user-experience.md) tutorial.
+
+In this tutorial, you complete the following tasks:
 
 > [!div class="checklist"]
 > * Sign in to your Power BI online account, or sign up, if you don't have an account yet.
 > * Open the Power BI service.
-> * Get some data and open it in report view.
-> * Use that data to create visualizations and save it as a report.
+> * Add and view data in reading or editing mode.
+> * Use data to create visualizations and save designs as a report.
 > * Create a dashboard by pinning tiles from the report.
-> * Add other visualizations to your dashboard by using the Q&A natural-language tool.
+> * Add other visualizations to a dashboard with the Q&A natural-language tool.
 > * Resize, rearrange, and edit details for the tiles on the dashboard.
-> * Clean up resources by deleting the dataset, report, and dashboard.
+> * Clean up resources by deleting the semantic model, report, and dashboard.
 
 ## Sign up for the Power BI service
 
-You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license, open the Power BI service (app.powerbi.com), select the **Me** icon and choose either **Buy Pro now** or **Try paid features for free**.
+You need a Power BI Pro or Premium Per User (PPU) license to create content in Power BI. If you don't have a Power BI account, and plan on creating content, [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin. Complete the wizard to get a free license. Open the Power BI service (app.powerbi.com), and select the **Me** icon. Choose **Premium Per User - Start trial** or **Buy Fabric now**.
 
- :::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot of choosing Buy or Try.":::
+:::image type="content" source="media/service-get-started/power-bi-pro.png" alt-text="Screenshot that shows how to choose the type of license to purchase." border="false":::
 
-## Step 1: Get data
+## Step 1: Add data to create a report
 
-Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports. This time though, we're going to start from scratch creating a report in the Power BI service.
+Often, when you want to create a Power BI report, you start in Power BI Desktop. Power BI Desktop offers more power. You can transform, shape, and model data, before you start designing reports.
 
-In this tutorial, we get data from a simple Microsoft Excel file. Want to follow along? [Download the Financial Sample file](https://go.microsoft.com/fwlink/?LinkID=521962).
+For this tutorial, we start from scratch by creating a report in the Power BI service rather than through the Desktop. We create a semantic model from a simple Microsoft Excel file that contains sample financial data.
 
-1. To begin, open the Power BI service (app.powerbi.com) in your browser. 
+1. Open the Power BI service (app.powerbi.com) in your browser. 
 
-    Don’t have an account? No worries, you can [sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web)
+   Don't have an account? [Sign up for a free Power BI Premium Per User 60 day trial](https://app.powerbi.com/signupredirect?pbi_source=web).
+
+1. [Download the Excel file](https://go.microsoft.com/fwlink/?LinkID=521962) that has the Financial Sample data.
 
 1. Select **My workspace** in the navigation pane.
 
-1. In **My workspace**, select **New** > **Upload a file**.
+1. Select **New** > **Semantic model** to initiate the import process. The **Add data to start building a report** page opens.
 
-    The **Get Data** page opens.   
+   :::image type="content" source="media/service-get-started/new-dataset.png" alt-text="Screenshot that shows how to create a new semantic model to initiate the import process." border="false":::
 
-3. Under the **Create new content** section, select **Files** > **Local File**, then select the location where you saved the Excel file.
+   > [!NOTE]
+   > If you select **Upload** instead of **New**, the Power BI service uploads the entire Excel workbook. You can then open and edit the workbook in Excel Online.
+
+1. On the **Add data to start building a report** page, select **Excel**.
+
+   :::image type="content" source="media/service-get-started/build-excel-report.png" alt-text="Screenshot that shows how to build a report from an Excel semantic model." border="false":::
+
+1. In the **Select a file** dialog, browse to the location where you saved the Excel file on your computer.
+
+1. Select the file and choose **Import**.
+
+   The Power BI service imports the sample data from the Excel file as a semantic model and opens the Financial Sample page.
    
-    :::image type="content" source="media/service-get-started/power-bi-service-get-data-local-file.png" alt-text="Screenshot of Create new content > Files.":::
-
-5. Browse to the file on your computer, and choose **Open**.
-
-6. For this tutorial, we select **Import** to add the Excel file as a dataset, which we can then use to create reports and dashboards. If you select **Upload**, the entire Excel workbook is uploaded to Power BI, where you can open and edit it in Excel Online.
+   :::image type="content" source="media/service-get-started/financial-sample-dataset.png" alt-text="Screenshot that shows the imported Financial Sample semantic model page." border="false":::
    
-   :::image type="content" source="media/service-get-started/power-bi-import.png" alt-text="Screenshot of choosing Import.":::
-7. When your dataset is ready, select **More options (...)** next to your Financial Sample dataset, then select **Create report** to open the report editor.
+   You can now use the sample semantic model to create reports and dashboards. 
 
-    :::image type="content" source="media/service-get-started/power-bi-service-datasets.png" alt-text="Screenshot of All content > Create report.":::
+1. On the Financial Sample semantic model page, at the top, select **Create a report** > **Start from scratch** to open the report editor.
 
-    The report canvas is blank. We see the **Filters**, **Visualizations**, and **Fields** panes on the right.
+   :::image type="content" source="media/service-get-started/create-report-from-scratch.png" alt-text="Screenshot that shows how to create a report from scratch.":::
 
-    :::image type="content" source="media/service-get-started/power-bi-service-blank-reports.png" alt-text="Screenshot of blank report canvas.":::
+The Power BI service opens the new report in **My workspace**. The report canvas is blank and shows the **Filters**, **Visualizations**, and **Data** panes.
 
-    > [!TIP]
-    > Select the global navigation button in the upper-left corner to collapse the navigation pane. That way your canvas has more room.
-    >
-    >:::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Global navigation button.":::
-    >
+:::image type="content" source="media/service-get-started/blank-report-canvas.png" alt-text="Screenshot that shows a blank report canvas in My workspace with the Filters, Visualizations, and Data panes open." border="false":::
 
-7. You're currently in Editing view. Notice the **Reading view** option in the menu bar. 
+### Switch between report views
 
-    :::image type="content" source="media/service-get-started/power-bi-service-reading-view.png" alt-text="Screenshot of Reading view option.":::
+The new report opens in **Editing** view. To view your report in progress, you can switch to the **Reading** view at the top of the page: 
 
-    While in Editing view, you can modify reports, because you're the *owner* and *creator* of the report. When you share your report with colleagues, often they can only interact with the report in Reading view. They are *consumers* of reports in your **My workspace**.
+:::image type="content" source="media/service-get-started/report-reading-view.png" alt-text="Screenshot that shows how to switch to the Reading view of a report canvas.":::
+
+In the Editing view, you can modify reports because you're the *owner* and *creator* of the report. When you share your report with colleagues, they often can interact with the report in Reading view only. Other users are *consumers* of reports in your **My workspace**.
+
+When you're ready to continue to working on your report, select **Edit**:
+
+:::image type="content" source="media/service-get-started/report-editing-view.png" alt-text="Screenshot that shows how to switch to the Editing view of a report canvas.":::
 
 ## Step 2: Create a chart in a report
 
-Now that you've connected to data, start exploring. When you've found something interesting, you can save it on the report canvas. Then you can pin it to a dashboard to monitor it and see how it changes over time. But first things first
+After you connect data to build a report, you're ready to start exploring. When you find an interesting item, you can save it on the report canvas. You can pin the item to a dashboard to monitor the data for changes over time.
 
-1. In the report editor, start in the **Fields** pane on the right side of the page to build a visualization. Select the  **Gross Sales** field, then the **Date** field.
+We can start by adding a column chart to the report in the editor to build a visualization of the data.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-fields-pane-selected.png" alt-text="Screenshot of Fields list.":::
+1. In the **Data** pane, select the arrow next to the **financials** heading to show the data items.
 
-    Power BI analyzes the data and creates a column chart visualization. 
+   Some data items have a sigma symbol (&Sigma;) next to the name. Power BI displays the sigma next to data that has numeric values.
 
-    > [!NOTE]
-    > If you selected the **Date** field first instead of **Gross Sales**, you see a table. No worries! We're going to change the visualization in the next step.
+   :::image type="content" source="media/service-get-started/data-pane-sigma-symbol.png" alt-text="Screenshot that shows items in the Data pane with a sigma symbol to indicate the data has numeric values.":::
 
-    Some fields have sigma symbols next to them because Power BI detected that they contain numeric values.
+1. Under **financials**, select the **Gross Sales** data item, and then select the **Date** item. 
 
-    :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="Fields with sigma symbols.":::
+   :::image type="content" source="media/service-get-started/data-pane-selected-items.png" alt-text="Screenshot that shows the Gross Sales and Date data items selected in the Data pane.":::
 
-2. Let's switch to a different way of displaying this data. Line charts are good visuals for displaying values over time. Select the **Line chart** icon from the **Visualizations** pane.
+   Power BI analyzes the selected data and creates a column chart visualization. 
 
-   :::image type="content" source="media/service-get-started/power-bi-service-select-line-chart.png" alt-text="Screenshot of Report editor with line chart selected.":::
+   :::image type="content" source="media/service-get-started/visualizations-column-chart.png" alt-text="Screenshot that shows a column chart visualization for the selected data items.":::
 
-3. This chart looks interesting, so let's *pin* it to a dashboard. Hover over the visualization and select the pin icon that appears either above or below it.
+   > [!NOTE]
+   > If you select the **Date** item before you select the **Gross Sales** item, Power BI creates a table rather than a column chart. If you selected the data items in this order, it's not a problem. We're going to change the visualization of the data in the next step.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-pin-visual.png" alt-text="Screenshot of Pin icon.":::
+1. Let's try a different display of the selected data. Line charts are good visuals for showing changes in values over time. In the **Visualizations** pane, select **Line chart**.
 
-4. Because this report is new, you're prompted to save it before you can pin a visualization to a dashboard. Give your report a name (for example, *Financial Sample report*), then **Save**.
+   :::image type="content" source="media/service-get-started/visualizations-select-line-chart.png" alt-text="Screenshot that shows how to select the line chart display in the Visualizations pane.":::
 
-    Now you're looking at the report in Reading view.
+1. The line chart looks interesting, so let's *pin* the visualization to a dashboard. Select the **Pin** icon on the visualization.
 
-5. Select the **Pin** icon again.
+   :::image type="content" source="media/service-get-started/visualizations-pin-line-chart.png" alt-text="Screenshot that shows how to pin a visualization to a dashboard.":::
 
-6. Select **New dashboard** and name it *Financial Sample dashboard*, for example. 
+   When the report is new, you're prompted to save the report before you can pin the visualization to a dashboard.
+   
+   - Enter a name for the report, such as **Financial Sample report**, and select **Save**.
 
-   :::image type="content" source="media/service-get-started/power-bi-pin.png" alt-text="Screenshot of Name the dashboard.":::
+   Power BI saves the report to the selected location. The default is **My workspace**. Power BI shows the report in Reading view.
+
+1. Position the mouse over the visualization and select the **Pin** icon again. The **Pin to dashboard** pop-up dialog opens.
+
+1. In the pop-up dialog, select **New dashboard**, and enter a name for the dashboard, such as **Financial Sample dashboard**. Select **Pin**.
+
+   :::image type="content" source="media/service-get-started/save-dashboard.png" alt-text="Screenshot that shows how to save a new dashboard so you can pin an item." border="false":::
   
-    A success message (near the top-right corner) lets you know the visualization was added as a tile to your dashboard.
+   Power BI displays a success message after the service adds the visualization to the dashboard. The success dialog includes an option to create an optimized layout of the dashboard for your mobile device.
 
-7. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile.
+1. In the message dialog, select **Go to dashboard**. 
 
-    :::image type="content" source="media/service-get-started/power-bi-pin-success.png" alt-text="Screenshot of Pinned to dashboard dialog.":::
+   :::image type="content" source="media/service-get-started/open-new-dashboard.png" alt-text="Screenshot of the Pinned to dashboard dialog with the option to go to the new dashboard." border="false":::
 
-    Now that you've pinned this visualization, it's stored on your dashboard. The data stays up-to-date so you can track the latest value at a glance. However, if you change the visualization type in the report, the visualization on the dashboard doesn't change.
+   After you pin a visualization, it's pinned on the dashboard as a *tile*. The data in the visualization stays up-to-date so you can track the latest value at a glance.
 
-   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tile.png" alt-text="Screenshot of dashboard with visualization pinned.":::
+   :::image type="content" source="media/service-get-started/dashboard-pin-tile-line-chart.png" alt-text="Screenshot that shows the dashboard with a pinned visualization tile." border="false":::
 
-8. Select the new tile on your dashboard. Power BI returns you to the report in Reading view.
+   > [!NOTE]
+   > After you pin a visualization, if you change the visualization type in the report, the pinned visualization on the dashboard **doesn't** change. To see the new visualization, pin it to the dashboard to create another tile. The use of multiple tiles lets you have more than one visualization of the same data on your dashboard.
 
-9. To switch back to Editing view, select **More options** (...) in the menu bar > **Edit**.
+1. Now select the tile on the dashboard:
 
-    :::image type="content" source="media/service-get-started/power-bi-service-edit-report.png" alt-text="Screenshot of select Edit to edit the report.":::
+   :::image type="content" source="media/service-get-started/dashboard-select-tile.png" alt-text="Screenshot that shows a selected tile on the dashboard.":::
 
-    Back in Editing view, you can continue to explore and pin tiles.
+   The Power BI service returns you to the report editor where you can refine the visualization:
 
-## Step 3: Explore with Q&A
+   :::image type="content" source="media/service-get-started/report-editor-line-chart.png" alt-text="Screenshot that shows a visualization open in the report editor and the Edit option selected." border="false":::
 
-For a quick exploration of your data, try asking a question in the Q&A question box. Q&A lets you ask natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**) under the menu bar. In a report, it's in the top menu bar (**Ask a question**).
+   You can select **Edit** to return to Editing view and continue to explore and pin tiles.
 
-1. To go back to the dashboard, select **My workspace** in the black **Power BI** header bar.
+## Step 3: Explore visualizations with Q&A
 
-    :::image type="content" source="media/service-get-started/power-bi-service-go-my-workspace.png" alt-text="Screenshot of Go back to My workspace.":::
+For a quick exploration of your data, try asking a question in the Q&A question box. Q&A lets you ask natural-language queries about your data.
 
-2. In **My workspace**, select your dashboard.
+In the Power BI service, you can find the Q&A question box in two places.
 
-    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tab.png" alt-text="Screenshot of select your dashboard.":::
+- On a dashboard, the **Ask a question about your data** Q&A box is at the top of the tile view:
 
-3. Select **Ask a question about your data**. Q&A automatically offers a number of suggestions. 
+   :::image type="content" source="media/service-get-started/dashboard-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the dashboard tile view.":::
 
-    :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Screenshot of Q&A canvas.":::
+- In the report editor, the **Ask a question** Q&A box is in the top menu bar:
 
-4. Some suggestions return a single value. For example, select **what is the average sale**.
+   :::image type="content" source="media/service-get-started/report-editor-qna-box.png" alt-text="Screenshot that shows the Q&A question box in the report editor menu bar.":::
 
-    Q&A searches for an answer and presents it in the form of a *card* visualization.
+When you select the Q&A box, Power BI opens an extended view to help you ask questions and find answers.
 
-5. Select **Pin visual** and pin this visualization to the Financial Sample dashboard.
+Let's try out the Q&A experience for a dashboard.
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Screenshot of pinning the visual.":::
+1. In the Power BI service, select **My workspace**, and then select your dashboard for the Financial Sample.
 
-6. Go back to Q&A and type *total profit by country*. 
+   :::image type="content" source="media/service-get-started/open-my-workspace-dashboard.png" alt-text="Screenshot that shows how to return to My workspace and open the Financial Sample dashboard." border="false":::
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country-region.png" alt-text="Screenshot of total profit by country/region.":::
+1. At the top of the tile view, select **Ask a question about your data**. The view expands and Q&A offers several suggestions. 
 
-8. Pin the map to the Financial Sample dashboard, too.
+   :::image type="content" source="media/service-get-started/dashboard-qna-expand-view.png" alt-text="Screenshot that shows the expanded view of Q&A with suggestions.":::
 
-9. On the dashboard, select the map you just pinned. See how it opens Q&A again?
+   You can select a suggestion and see the results, or enter your own question in the Q&A box.
 
-10. Place the cursor after *by country* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
+1. In the Q&A box, enter the question **what is the average sale**. As you type, Q&A tries to pattern match your text entry for recognized questions.
 
-    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-region-bar.png" alt-text="Screenshot of bar chart visualization.":::
+   :::image type="content" source="media/service-get-started/dashboard-qna-ask-question.png" alt-text="Screenshot that shows how Q&A tries to pattern match your text for recognized questions." border="false":::
 
-11. Pin the bar chart to your Financial Sample dashboard, too.
+   Q&A searches for an answer and displays the answer as a *card* visualization.
 
-12. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
+1. At the top right, select **Pin visual** and pin the visualization to the Financial Sample dashboard.
 
-    You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
+   :::image type="content" source="media/service-get-started/dashboard-qna-pin-average-sale.png" alt-text="Screenshot that shows how to pin the Q&A answer visualization to a dashboard." border="false":::
 
-    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
+1. Try another question in the Q&A box. Enter **total profit by country**. 
 
-## Step 4: Reposition tiles
+   :::image type="content" source="media/service-get-started/dashboard-qna-country-profit.png" alt-text="Screenshot of the Q&A map visualization of the Financial Sample data for total profit by country and region." border="false":::
 
-We can rearrange the tiles to make better use of the dashboard space.
+1. Pin the country/region map visualization to the Financial Sample dashboard.
 
-1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the *Average of Sales* tile, then release it.
+1. In the success dialog, select **Go to dashboard** to view the newly pinned tiles on your dashboard.
 
-    :::image type="content" source="media/service-get-started/power-bi-service-resize-tile.png" alt-text="Screenshot of resizing the tile.":::
+1. On the dashboard, select the pinned country/region map. Notice how the visualization opens in Q&A.
 
-    Now the two tiles are the same height.
+1. Place the cursor after **by country** in the Q&A box and enter **as bar**. Power BI creates a bar chart with the results.
 
-2. Select **More options (...)** for the Average of Sales tile > **Edit details**. 
+   :::image type="content" source="media/service-get-started/dashboard-qna-country-profit-bar.png" alt-text="Screenshot that shows the Q&A bar chart visualization for the Financial Sample country and region data." border="false":::
 
-    :::image type="content" source="media/service-get-started/power-bi-tile-edit-details.png" alt-text="Screenshot of More options menu for a tile.":::
+1. Pin the bar chart to your Financial Sample dashboard.
 
-3. In the **Title** box, type *Sales Average* > **Apply**.
+1. At the top, select **Exit Q&A** to return to your dashboard.
 
-    :::image type="content" source="media/service-get-started/power-bi-tile-details-dialog.png" alt-text="Screenshot of Edit details dialog box.":::
+You now have four pinned tiles on your dashboard: line chart, numeric average, country/region map, and bar chart.
 
-4. Rearrange the other visuals to fit together.
+:::image type="content" source="media/service-get-started/dashboard-qna-tiles.png" alt-text="Screenshot of the Financial Sample dashboard with pinned Q&A visualization tiles." border="false":::
 
-    That looks better.
+### Pin different views of data with multiple tiles
 
-    :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot of rearranged dashboard.":::
+Notice that although you changed the map visualization to a bar chart in Q&A, the corresponding tile on the dashboard still shows a map.
+
+When you pin a tile to a dashboard, the tile always displays the data by using the original visualization type. If you change the visualization type for an existing tile, and pin the tile, Power BI creates a new tile with the new visualization type. The original tile remains unchanged. The use of multiple tiles enables you to have more than one visualization of the same data on your dashboard.
+
+## Step 4: Adjust tile layout on the dashboard
+
+Tiles on the dashboard can be rearranged and adjusted to make better use of the space. You can change tile sizes, reposition tiles, and work with tile details to improve the layout.
+
+### Adjust tile size
+
+Let's change the size of the *Gross sales* line chart tile to be the same height as the *Average of Sales* tile.
+
+1. Select the lower-right corner of the *Gross sales* line chart tile and drag the tile outline upward to reduce the overall tile height.
+
+1. Continue to drag the tile outline upward until the tile snaps into place at the same height as the *Average of Sales* tile.
+
+1. When the tile has the desired height, release the mouse.
+
+:::image type="content" source="media/service-get-started/dashboard-resize-tile.png" alt-text="Screenshot that shows how to resize a tile on the dashboard.":::
+
+The two tiles are now the same height.
+ 
+### Modify tile details
+
+Sometimes changing **Tile details** can improve the dashboard presentation. 
+
+:::image type="content" source="media/service-get-started/dashboard-tile-edit-details.png" alt-text="Screenshot that shows how to open the details for a tile on the dashboard.":::
+
+1. On the *Average of Sales* tile, select **More options (...)** > **Edit details**. 
+
+1. In the **Tile details** dialog, in the **Title** box, enter **Sales Average**.
+
+1. Select **Apply**.
+
+:::image type="content" source="media/service-get-started/edit-tile-details.png" alt-text="Screenshot that shows how to edit the details for a tile on the dashboard.":::
+
+### Rearrange tiles
+
+You can move a tile by selecting the tile and dragging it to a new location.
+
+1. Select the country/region map tile, and drag the tile to the right of the bar chart. 
+
+1. When the tile's in the desired position, release the mouse.
+
+Notice that these two tiles take up more width on the dashboard than the *Gross sales* line chart tile and the *Sales Average* tile. You can improve the layout by increasing the overall width of the line chart tile.
+
+Here's an example of the dashboard with the improved layout:
+
+:::image type="content" source="media/service-get-started/dashboard.png" alt-text="Screenshot that shows the tiles rearranged on the dashboard to make better use of the space." border="false":::
 
 ## Clean up resources
 
-Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
+After you finish the tutorial, it's a good practice to delete the semantic model, report, and dashboard.
 
-1. Select **My workspace** in the black **Power BI** header bar.
-2. Select **More options (...)** next to the Financial Sample dataset > **Delete**.
+When you delete a semantic model, the Power BI service also deletes all reports and dashboard tiles that use data from the semantic model.
 
-    :::image type="content" source="media/service-get-started/power-bi-service-delete-dataset.png" alt-text="Screenshot of deleting the dataset.":::
+1. In the Power BI service, select **My workspace**.
 
-    You see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
+1. Locate the Financial Sample **semantic model**.
 
-3. Select **Delete**.
+1. Select **More options (...)** > **Delete**.
 
-## Next steps
+   :::image type="content" source="media/service-get-started/delete-dataset.png" alt-text="Screenshot that shows how to delete a semantic model in My workspace.":::
 
-[Quickly create a report by pasting data into the Power BI service](../create-reports/service-quick-create-report.md)
+   Power BI displays a warning message: _All reports and dashboard tiles containing data from this semantic model will also be deleted_.
 
-Explore these training resources for Power BI:
+1. Select **Delete**.
 
-> [!div class="nextstepaction"]
->[Learn Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+## Related content
 
-> [!div class="nextstepaction"]
-> [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+* [Create quick reports](../create-reports/service-quick-create-report.md) in the Power BI service.
+* Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+* Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).

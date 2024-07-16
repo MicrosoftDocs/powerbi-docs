@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 
 When working with Power BI, consider the different types of users who might interact with your reports. You can create reports that are easily navigated and understood by keyboard or screen reader users. Such reports enable users who might have visual or physical impairments to benefit from your reports.
 
-![Screenshot showing a high-contrast color setting in Power BI service.](media/desktop-accessibility/accessibility-05b.png)
+![High-contrast color setting in Power BI service showing yellow text and visuals on a black background.](media/desktop-accessibility/accessibility-05b.png)
 
 This article provides an overview of Power BI and accessibility. Other articles provide guidance, and tools, which can help you create great reports with accessibility in mind.
 
@@ -36,9 +36,9 @@ Web Content Accessibility Guidelines (WCAG) help make web content accessible to 
 3. **Understandable**. Information and the operation of user interface must be understandable.
 4. **Robust**. Content can be interpreted by a wide range of user agents including assistive technologies.
 
-### US Section 508
+### US Accessibility Conformance
 
-US Section 508 is a standard that requires governments and federal agencies to make their electronic and information technology accessible to people with disabilities.
+US Accessibility Conformance requires governments and federal agencies to make their electronic and information technology accessible to people with disabilities.
 
 ### EN 301 549
 
@@ -48,7 +48,7 @@ EN 301 549 is the Harmonized European Standard for Accessibility requirements fo
 
 To find updated conformance reports, search for Power BI in the [Microsoft Accessibility Conformance Portal](https://www.microsoft.com/en-us/accessibility/conformance-reports)
 
-## Next steps
+## Related content
 
 For more information about Power BI accessibility, see the following resources:
 

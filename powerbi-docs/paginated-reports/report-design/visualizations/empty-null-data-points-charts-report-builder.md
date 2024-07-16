@@ -16,7 +16,7 @@ ms.reviewer: monaraya
 
 If you are displaying fields with empty or null values in a chart in your paginated report, the chart may not look as you expect. Charts process empty values differently depending on the specified chart type:  
   
-- If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/add-empty-points-to-a-chart-report-builder-and-ssrs).  
+- If the chart type is a linear chart type (bar, column, scatter, line, area, range), empty values are displayed as empty spaces or "gaps" in the chart. If you want to indicate empty points, you must add empty point placeholders. For more information, see [Add Empty Points to a Chart &#40;Power BI Report Builder&#41;](add-empty-points-chart-report-builder.md).  
 - If the chart type is a contiguous, linear chart type (area, bar, column, line, scatter), empty data points are added to the chart to maintain continuity in the series.  
 - If the chart type is a nonlinear chart type (polar, pie, doughnut, funnel or pyramid), empty values are omitted from display on the chart. 
 - In shape chart types, null values are omitted.  
@@ -32,9 +32,9 @@ If you are displaying fields with empty or null values in a chart in your pagina
   
  This behavior differs from the case where there are zero rows of data in the returned dataset, which can occur when the report is parameterized and the selected value returns an empty result set. If your dataset query returns zero rows of data, a message is displayed at run time to indicate that no data can be shown. You can customize this message by modifying the NoDataMessage caption for the report in the **Properties** pane.
 
-## Next steps
+## Related content
 
-[Charts](charts-report-builder.md)   
-[Formatting a Chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
-[Add a Chart to a Report](add-chart-report-report-builder.md)   
-[Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  
+- [Charts](charts-report-builder.md)   
+- [Formatting a Chart](formatting-chart-report-builder.md)   
+- [Add a Chart to a Report](add-chart-report-report-builder.md)   
+- [Troubleshoot Charts](/sql/reporting-services/report-design/troubleshoot-charts-report-builder-and-ssrs)  

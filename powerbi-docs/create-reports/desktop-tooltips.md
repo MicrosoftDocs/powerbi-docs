@@ -7,9 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/28/2022
+ms.date: 06/13/2023
 LocalizationGroup: Create reports
 ---
+
 # Create tooltips based on report pages
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
@@ -126,13 +127,17 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 There are a few considerations and limitations for **tooltips** to keep in mind.
 
 * Button visuals also support tooltips.
+* Dashboards don't support page tooltips.
+* Python and R visuals are not currently supported to be shown in report tooltips.
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 
 * You can turn tooltips off completely for a visual in Power BI reports. However, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with report tooltips, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
 * [Display a dashboard tile or report visual in Focus mode](../consumer/end-user-focus.md)
+
+

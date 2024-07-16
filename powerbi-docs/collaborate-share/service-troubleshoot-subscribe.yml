@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: pbi-explore
   ms.topic: troubleshooting
-  ms.date: 02/09/2023
+  ms.date: 07/09/2024
   LocalizationGroup: Share your work
     
 title: Frequently asked questions about Troubleshooting Power BI subscriptions
@@ -30,7 +30,7 @@ sections:
           
           - If you can’t use the subscription feature, contact your Power BI administrator, or IT help desk. Your organization may have disabled this feature, generally or specifically for external users, or a maximum subscriber limit may have been reached. 
           
-          - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
+          - Your organization may configure certain settings in Microsoft Entra ID that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
           
           ### You've reached the maximum of 24 subscriptions
           There's a limit of 24 subscriptions per Power BI report or dashboard. You can provide unique recipients, times, and frequencies for each subscription. Paginated reports don't have this limit. 
@@ -51,11 +51,11 @@ sections:
           
           - Make sure that your User Principal Name (UPN) can receive emails. 
           
-          - Though you have a Power BI Pro or Premium Per User (PPU) license, you may not have a Microsoft Exchange license. If not, your Azure Active Directory account may not have an email, or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy. If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that email address for the subscription. 
+          - Though you have a Power BI Pro or Premium Per User (PPU) license, you may not have a Microsoft Exchange license. If not, your Microsoft Entra account may not have an email, or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy. If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that email address for the subscription. 
           - If you have an alternate email address but no primary, Power BI uses that to deliver the subscription. 
           
           ### Admin portal settings
-          - Email subscriptions aren't supported when Block Public Internet Access is enabled in the Power BI admin portal. 
+          - If your admin has enabled the tenant setting for **Block Public Internet Access**, then email subscriptions with full report attachment (FRA) or report preview aren't delivered.  
 
       - question: |
           The links in my email subscription no longer work
@@ -155,7 +155,12 @@ sections:
           - The report has fewer than 20 pages (see [this issue described above](#i-get-an-error-that-my-subscription-has-more-than-20-pages)).
           - The attachment file is under 25 MB in size.
           - You aren't an owner of the report.
- 
+
+      - question: |
+          The subscription times out after 60 minutes
+        answer: |
+          Subscriptions use the export feature to render the report in the desired format. Export of reports are limited to 60 minutes, the life of the users' access token.
+  
       - question: |
           Which Power BI features aren't supported in subscriptions
         answer: |

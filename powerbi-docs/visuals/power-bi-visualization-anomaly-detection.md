@@ -62,6 +62,6 @@ You can also control the fields that are used for analysis. For example, by drag
 - Anomaly Explanations don't work with 'Show Value As' options.
 - Drilling down to go to the next level in the hierarchy isn't supported.
 
-## Next steps
+## Related content
 
 To learn more about the algorithm that runs anomaly detection, see [Tony Xing's post on the SR-CNN algorithm in Azure Anomaly Detector](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/overview-of-sr-cnn-algorithm-in-azure-anomaly-detector/ba-p/982798)

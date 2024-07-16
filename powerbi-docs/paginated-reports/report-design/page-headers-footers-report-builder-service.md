@@ -47,7 +47,7 @@ A paginated report can contain a header and footer that run along the top and bo
 |Fields collection for items on the page|Indirectly. For example,<br /><br /> `=Sum(ReportItems!Textbox1.Value)`|Yes. For example,<br /><br /> `=Sum(Fields!Quantity.Value,"DataSet1")`|  
 |Data-bound image|Indirectly. For example, `=ReportItems!TXT_Photo.Value`|Yes. For example,<br /><br /> `=First(Fields!Photo.Value,"DataSet1")`|  
   
- The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions &#40;Report Builder and service&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).
+ The following sections in this topic show ready-to-use expressions that get variable data commonly used in headers and footers. There is also a section on how the Excel rendering extension processes headers and footers. For more information about expressions, see [Expressions in Power BI Report Builder](../expressions/report-builder-expressions.md).
   
 ## Add calculated page totals to a header or footer
 
@@ -113,7 +113,7 @@ A paginated report can contain a header and footer that run along the top and bo
   
  For more information, see [Exporting to Microsoft Excel &#40;Power BI Report Builder and service&#41;](../report-builder/export-microsoft-excel-report-builder.md).  
   
-## Next steps
+## Related content
 
 - [Embed an Image in a Report &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/embed-an-image-in-a-report-report-builder-and-ssrs)
 - [Rectangles and Lines &#40;Power BI Report Builder and service&#41;](/sql/reporting-services/report-design/rectangles-and-lines-report-builder-and-ssrs)

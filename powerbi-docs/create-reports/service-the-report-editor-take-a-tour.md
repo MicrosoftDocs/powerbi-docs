@@ -4,7 +4,7 @@ description: Learn how to use the report editor and design the reports your end 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-IkJda4O7oGs
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
@@ -18,13 +18,6 @@ LocalizationGroup: Reports
 In Power BI Desktop and in the Power BI service, the *report editor* is where you design the reports your consumers see, with charts, tables, maps, and other visuals. It's similar in the two environments. Typically you start creating a report in Power BI Desktop. Then you publish it to the Power BI service, where you can continue modifying it. The Power BI service is also where you create the dashboards based on your reports.
 
 After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share the reports, your end users can interact with them in Reading view in the Power BI service, but not edit them. Read more about [what report consumers can do in the Power BI service](../consumer/end-user-reading-view.md).
-
-This video shows the report editor in Power BI Desktop.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 In the Power BI service, the report editor is only available in Editing View. To open a report in Editing view, you must be a report owner or creator, or have at least a Contributor role in the workspace that houses the report.
 
@@ -142,7 +135,7 @@ In Power BI Desktop, you also have options to show or hide fields, add calculati
 
 Power BI uses many different icons to indicate the types of fields in a report. When you recognize them, you understand better how they act in different visuals. For a complete list, see the Field list section of [Use the Field list in Power BI Desktop](../transform-model/desktop-field-list.md#field-list-changes).
 
-## Next steps
+## Related content
 
 * [Create a report from an Excel file in the Power BI service](service-report-create-new.md)
 * [Work with Report view in Power BI Desktop](desktop-report-view.md)

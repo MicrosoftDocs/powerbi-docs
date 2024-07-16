@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/24/2023
+ms.date: 07/05/2023
 LocalizationGroup: Connect to data
 ---
 # Connect to SAP HANA data sources by using DirectQuery in Power BI
@@ -28,7 +28,7 @@ The two approaches constitute different behavior, and it's not possible to switc
 
 ## Treat SAP HANA as a multi-dimensional source (default)
 
-All new connections to SAP HANA use this connection method by default, treating SAP HANA as a multi-dimensional source. In order to treat a connection to SAP HANA as a relational source, you must select **File** > **Options and settings** > **Options**, then check the box under **Direct Query** > **Treat SAP HANA as a relational source**. While this feature is in Preview, reports created using the multi-dimensional approach *cannot* be published to the Power BI service. Doing so results in errors when the report is opened within the Power BI service.  
+All new connections to SAP HANA use this connection method by default, treating SAP HANA as a multi-dimensional source. In order to treat a connection to SAP HANA as a relational source, you must select **File** > **Options and settings** > **Options**, then check the box under **Direct Query** > **Treat SAP HANA as a relational source**.  
 
 When connecting to SAP HANA as a multi-dimensional source, the following considerations apply:
 
@@ -129,7 +129,7 @@ The following list describes all known issues when connecting to SAP HANA (Direc
 
 * **Multiple Power BI columns from single SAP HANA column:** For some calculation views, where an SAP HANA column is used in more than one hierarchy, SAP HANA exposes the column as two separate attributes. This approach results in two columns being created in Power BI. Those columns are hidden by default, however, and all queries involving the hierarchies, or the columns directly, behave correctly.
 
-## Next steps
+## Related content
 
 For more information about DirectQuery, check out the following resources:
 

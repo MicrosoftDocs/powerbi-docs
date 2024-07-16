@@ -7,7 +7,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 06/03/2024
 ---
 
 # Multi-Geo support for Power BI Embedded
@@ -34,11 +34,11 @@ When you choose a location other than the default tenant location, a message pro
 
 You can see your capacities' locations easily from the main Power BI Embedded management page in the Azure portal.
 
-:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-location-different.png" alt-text="Screenshot of the Azure portal Power BI Embedded management page, which shows the highlighted capacity location sorter.":::
+:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-location-different.png" alt-text="Screenshot of the Azure portal Power BI Embedded management page, which shows the highlighted capacity location sorter." lightbox="media/embedded-multi-geo/pbie-multi-geo-location-different.png":::
 
 The locations are also available in the Admin portal at `PowerBI.com`. In the Admin portal, choose **Capacity settings**, and then switch to the **Power BI Embedded** tab.
 
-:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-admin-portal.png" alt-text="Screenshot of the PowerBI.com Admin Portal, which shows the highlighted Power BI Embedded tab and the capacity region sorter.":::
+:::image type="content" source="media/embedded-multi-geo/pbie-multi-geo-admin-portal.png" alt-text="Screenshot of the PowerBI.com Admin Portal, which shows the highlighted Power BI Embedded tab and the capacity region sorter." lightbox="media/embedded-multi-geo/pbie-multi-geo-admin-portal.png":::
 
 [Learn more about creating capacities with Power BI Embedded.](azure-pbie-create-capacity.md)
 
@@ -70,15 +70,12 @@ To manage capacities with Multi-Geo through APIs, use the following APIs:
 
 * The Power BI Embedded multi-geo limitations are similar to the Power BI Premium multi-geo [considerations and limitations](../../admin/service-admin-premium-multi-geo.md#considerations-and-limitations).
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[What is Power BI Embedded?](embedded-analytics-power-bi.md)
+* [What is Power BI Embedded?](embedded-analytics-power-bi.md)
 
->[!div class="nextstepaction"]
->[Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
+* [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
 
->[!div class="nextstepaction"]
->[Multi-Geo in Power BI Premium capacities](../../admin/service-admin-premium-multi-geo.md)
+* [Multi-Geo in Power BI Premium capacities](../../admin/service-admin-premium-multi-geo.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

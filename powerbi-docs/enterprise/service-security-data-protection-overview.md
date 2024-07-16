@@ -32,7 +32,7 @@ The pillars of Power BI's data protection capabilities and how they help you pro
     * **Monitor and protect user activity on sensitive data in real time** with alerts, session monitoring, and risk remediation using Defender for Cloud Apps.
     * **Empower security administrators** who use data protection reports and security investigation capabilities with Defender for Cloud Apps to enhance organizational oversight.
 * **Microsoft 365 data loss prevention**
-    * **Data loss prevention policies for Power BI** enable central security teams to use Microsoft 365 data loss prevention policies to enforce the organization's DLP policies on Power BI. DLP policies for Power BI currently support detection of sensitive info types and sensitivity labels on datasets, and can trigger automatic risk remediation actions such as alerts to security admins in Microsoft 365 compliance portal and policy tips for end users.
+    * **Data loss prevention policies for Power BI** enable central security teams to use Microsoft 365 data loss prevention policies to enforce the organization's DLP policies on Power BI. DLP policies for Power BI currently support detection of sensitive info types and sensitivity labels on semantic models, and can trigger automatic risk remediation actions such as alerts to security admins in Microsoft 365 compliance portal and policy tips for end users.
 
 Read more about [sensitivity labels from Microsoft Purview Information Protection](/microsoft-365/compliance/sensitivity-labels), [Microsoft Defender for Cloud Apps](https://www.microsoft.com/en-us/security/business/cloud-apps-defender), and [Microsoft 365 data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
 
@@ -40,10 +40,9 @@ Read more about [sensitivity labels from Microsoft Purview Information Protectio
 
 The product team would love to get your **[feedback](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR-PPBJBIRPlBpEYIBVrF5lRUREtUREJJRzJZSzcyM1pZWU9LOUdSVkFKWC4u)** about Power BI's information protection capabilities and its integration with Microsoft Purview Information Protection. Help us meet your information protection needs! Thanks!
 
-## Next steps
+## Related content
 
 * [Learn about sensitivity labels in Power BI and how to use them](service-security-sensitivity-label-overview.md)
-* [Set up and use Defender for Cloud Apps controls in Power BI](service-security-using-defender-for-cloud-apps-controls.md)
+* [Set up and use Defender for Cloud Apps controls in Power BI](/fabric/governance/service-security-using-defender-for-cloud-apps-controls)
 * [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Microsoft Business Applications Summit video session - Power BI and Microsoft Purview Information Protection - The game changer for secure BI](https://mymbas.microsoft.com/sessions/f30c8368-6590-4be3-80d4-2bc677f596a4?source=sessions)
 * [Power BI implementation planning: Information protection and data loss prevention](/power-bi/guidance/powerbi-implementation-planning-info-protection-data-loss-prevention-overview)

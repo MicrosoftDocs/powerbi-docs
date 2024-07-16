@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 11/10/2023
 
 LocalizationGroup: Premium
 ---
 
 # Bring your own encryption keys for Power BI
 
-Power BI encrypts data *at-rest* and *in process*. By default, Power BI uses Microsoft-managed keys to encrypt your data. In Power BI Premium, you can also use your own keys for data at-rest that's imported into a dataset. This approach is often described as *bring your own key* (BYOK). For more information, see [Data source and storage considerations](#data-source-and-storage-considerations). 
+Power BI encrypts data *at-rest* and *in process*. By default, Power BI uses Microsoft-managed keys to encrypt your data. In Power BI Premium, you can also use your own keys for data at-rest that's imported into a semantic model. This approach is often described as *bring your own key* (BYOK). For more information, see [Data source and storage considerations](#data-source-and-storage-considerations). 
 
 ## Why use BYOK?
 
@@ -26,12 +26,12 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 
 - Analysis Services Live Connection
 - Excel workbooks, unless data is first imported into Power BI Desktop
-- [Push datasets](/rest/api/power-bi/pushdatasets)
-- [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+- [Push semantic models](/rest/api/power-bi/pushdatasets)
+- [Streaming semantic models](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-semantic-model-in-power-bi)
 - [Power BI metrics](../create-reports/service-goals-introduction.md) don't currently support BYOK
 
 
-BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service aren't encrypted using your own key. To identify which items are stored in your workspaces, use the following PowerShell command:
+BYOK applies only to semantic models. Push semantic models, Excel files, and CSV files that users can upload to the service aren't encrypted using your own key. To identify which items are stored in your workspaces, use the following PowerShell command:
 
 `PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All`
 
@@ -140,7 +140,7 @@ Before you enable BYOK, keep the following considerations in mind:
 
 - You can't *directly* move a workspace that uses BYOK from a capacity in Power BI Premium to a shared capacity. You must first move the workspace to a capacity that doesn't have BYOK enabled.
 
-- If you move a workspace that uses BYOK from a capacity in Power BI Premium to a shared capacity, reports and datasets become inaccessible since they're encrypted with the Key. To avoid this situation, you must first move the workspace to a capacity that doesn’t have BYOK enabled.
+- If you move a workspace that uses BYOK from a capacity in Power BI Premium to a shared capacity, reports and semantic models become inaccessible since they're encrypted with the Key. To avoid this situation, you must first move the workspace to a capacity that doesn’t have BYOK enabled.
 
 ### Enable BYOK
 
@@ -205,13 +205,13 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
     Get-PowerBIEncryptionKey
     ```
 
-- Use [Get-PowerBIWorkspaceEncryptionStatus](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus) to see whether the datasets in a workspace are encrypted and whether their encryption status is in sync with the workspace:
+- Use [Get-PowerBIWorkspaceEncryptionStatus](/powershell/module/microsoftpowerbimgmt.admin/get-powerbiworkspaceencryptionstatus) to see whether the semantic models in a workspace are encrypted and whether their encryption status is in sync with the workspace:
 
     ```powershell
     Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
     ```
 
-    Note that encryption is enabled at the capacity level, but you get encryption status at the dataset level for the specified workspace.
+    Note that encryption is enabled at the capacity level, but you get encryption status at the semantic model level for the specified workspace.
 
 - Use [Switch-PowerBIEncryptionKey](/powershell/module/microsoftpowerbimgmt.admin/switch-powerbiencryptionkey) to switch (or *rotate*) the version of the key being used for encryption. The cmdlet simply updates the `-KeyVaultKeyUri` for a key `-Name`:
 
@@ -221,7 +221,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
     Note that the current key should be enabled.
 
-## Next steps
+## Related content
 
 - [Overview of Power BI PowerShell cmdlet module.](/powershell/power-bi/overview)
 

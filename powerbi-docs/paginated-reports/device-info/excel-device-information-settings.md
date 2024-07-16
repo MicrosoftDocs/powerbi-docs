@@ -24,6 +24,6 @@ ms.author: maggies
 |**SimplePageHeaders**|Indicates whether the page header of the report is rendered to the Excel page header. A value of **false** indicates that the page header is rendered to the first row of the worksheet. The default value is **false**.|  
 |**DynamicImageDpi**|The resolution of dynamic images like charts, gauges, and maps. The default value is **96**.|  
 
-## Next steps
+## Related content
 
 - [Specify Device Information Settings in a URL](/sql/reporting-services/specify-device-information-settings-in-a-url)

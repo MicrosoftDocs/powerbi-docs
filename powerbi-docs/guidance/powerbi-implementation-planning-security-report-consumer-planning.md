@@ -1,13 +1,14 @@
 ---
 title: "Power BI implementation planning: Report consumer security planning"
 description: "Learn about report consumer security planning for Power BI."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.custom: fabric-cat
+ms.date: 11/15/2023
 ---
 
 # Power BI implementation planning: Report consumer security planning
@@ -17,7 +18,7 @@ ms.date: 12/12/2022
 This security planning article describes strategies for read-only consumers. The focus is on viewer permissions for reports and apps, and how to enforce data security. It's primarily targeted at:
 
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They may need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
 - **Content creators and owners:** Self-service BI creators who need to create, publish, secure, and manage content that other users consume.
 
 The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
@@ -28,19 +29,22 @@ To get the most from this article, it's helpful to understand the meaning of the
 
 _Sharing_ is where one user gives another user (or group of users) access to a specific item of content. The sharing capability in the Power BI service is scoped to one item. It most commonly takes place between individuals who know each other and work closely together.
 
-_Distribution_ is where content is delivered to other users, who are known as recipients. It often involves a larger number of users across multiple teams. Recipients may not have explicitly requested the content, but it's recognized that they need it to perform their role. Recipients who consume distributed content may or may not know the original creator of the content. As such, distribution as a concept is more formal than sharing.
+_Distribution_ is where content is delivered to other users, who are known as recipients. It often involves a larger number of users across multiple teams. Recipients might not have explicitly requested the content, but it's recognized that they need it to perform their role. Recipients who consume distributed content might or might not know the original creator of the content. As such, distribution as a concept is more formal than sharing.
 
 When you talk with other people, determine whether they're using the term _sharing_ in a general way, or literally. Use of the term _sharing_ can be interpreted in two ways.
 
 - The term _sharing_ is often used in a general way related to sharing content with colleagues. There are several techniques for delivering read-only content, which are described in this article.
 - _Sharing_ is also a specific feature in Power BI. It's a capability where a user or group is granted access to a single item. Sharing links and direct access sharing are described in this article.
 
+> [!IMPORTANT]
+> The **Power BI administrator** role has been renamed. The new name of the role is **Fabric administrator**.
+
 ## Strategy for read-only consumers
 
 In the Power BI service, consumers can view a report or dashboard when they have permission to both:
 
 - View the Power BI item that contains the visualizations (such as a report or dashboard).
-- Read the underlying data (dataset or other source).
+- Read the underlying data (semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)—or other source).
 
 You can provide read-only access to consumers by using different techniques. The common techniques used by self-service content creators include:
 
@@ -52,9 +56,9 @@ You can provide read-only access to consumers by using different techniques. The
 The Power BI app and Power BI workspace Viewer role options involve managing permissions for a set of items. The two per-item permissions techniques involve managing permissions for one individual item.
 
 > [!TIP]
-> Generally, it's a best practice to use a Power BI app for most consumers. Occasionally the workspace Viewer role may also be appropriate. Both Power BI apps and the workspace Viewer role allow managing permissions for many items, and should be used whenever possible. Managing permissions for individual items can be tedious, time consuming, and error prone. In contrast, managing a set of items reduces maintenance and improves accuracy.
+> Generally, it's a best practice to use a Power BI app for most consumers. Occasionally the workspace Viewer role could also be appropriate. Both Power BI apps and the workspace Viewer role allow managing permissions for many items, and should be used whenever possible. Managing permissions for individual items can be tedious, time consuming, and error prone. In contrast, managing a set of items reduces maintenance and improves accuracy.
 
-When reviewing security settings for an item, you may see that its permissions are either:
+When reviewing security settings for an item, you might see that its permissions are either:
 
 - Inherited from the workspace or an app.
 - Applied directly to the item.
@@ -63,9 +67,9 @@ In the following screenshot, the _Direct access_ permissions are shown for a rep
 
 :::image type="content" source="media/powerbi-implementation-planning-security-report-consumer-planning/direct-access-permissions.png" alt-text="Screenshot of the direct access permissions for a report in the Power BI service." border="false":::
 
-The strategy you choose for read-only consumers may be different, and it should be based on the individual solution, the preferences of who manages the solution, and the needs of the consumer. The remainder of this section describes when to consider using each of the available techniques.
+The strategy you choose for read-only consumers can be different. It should be based on the individual solution, the preferences of who manages the solution, or the needs of the consumer. The remainder of this section describes when to consider using each of the available techniques.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for how to provide content to read-only consumers, key decisions and actions include:
 
@@ -93,10 +97,10 @@ You can create one app for each workspace as a formal way to distribute some, or
 
 You manage app permissions separately from workspace roles. The separation of permissions has two advantages. It encourages:
 
-- Granting workspace access to content creators. It includes users that are actively collaborating on the content, like dataset creators, report creators, and testers.
+- Granting workspace access to content creators. It includes users that are actively collaborating on the content, like semantic model creators, report creators, and testers.
 - Granting app permissions to consumers. Unlike workspace permissions, app permissions are always read-only (or none).
 
-All users with workspace access may automatically view the app (when a Power BI app has been published for the workspace). Due to this behavior, you can conceptually think of workspace roles as being _inherited_ by each app audience. Some users with workspace access may also update the Power BI app, depending on their assigned [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles).
+All users with workspace access can automatically view the app (when a Power BI app has been published for the workspace). Due to this behavior, you can conceptually think of workspace roles as being _inherited_ by each app audience. Some users with workspace access can also update the Power BI app, depending on their assigned [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles).
 
 > [!TIP]
 > For more information about workspace access, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
@@ -106,13 +110,13 @@ Using an app to distribute content to read-only consumers is the best choice whe
 - You want users to be able to view only specific items that are visible for that [audience](#app-audience) (rather than all items within the underlying workspace).
 - You want to manage read-only permissions for the app separately from the workspace.
 - You want simpler permission management for read-only users than per-item permissions.
-- You want to ensure that [row-level security](#row-level-security) is enforced for consumers (when they have read-only permission on the underlying dataset).
+- You want to ensure that [row-level security](#row-level-security) is enforced for consumers (when they have read-only permission on the underlying semantic model).
 - You want to ensure that consumers can't view new and changed reports until the app is republished.
 
 While it's true that changes to reports and dashboards aren't visible to users of the app until the app is republished, there are two considerations that require caution.
 
-- **Immediate dataset changes:** Dataset changes always take effect immediately. For example, if you introduce breaking changes to a dataset in the workspace, it could inadvertently result in reports becoming unstable (even though they haven't been republished in the app). There are two ways to mitigate this risk: First, do all development work in Power BI Desktop (separate from the workspace). Second, insulate the production app by using separate workspaces for development and test. (Optionally, you can achieve a higher level of control over deploying workspace content from development to test and production by using [deployment pipelines](/power-bi/create-reports/deployment-pipelines-overview).)
-- **Content and permissions are published together:** When you publish an app, its permissions are published at the same time as the content. For example, you may have report changes in a workspace that aren't yet complete, fully tested, or approved. So, you can't republish the app merely to update permissions. To mitigate this risk, assign app permissions to security group(s), and use security [group](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) memberships (instead of individual users) when granting app permissions. Avoid republishing an app merely to apply permission changes.
+- **Immediate semantic model changes:** Semantic model changes always take effect immediately. For example, if you introduce breaking changes to a semantic model in the workspace, it could inadvertently result in reports becoming unstable (even though they haven't been republished in the app). There are two ways to mitigate this risk: First, do all development work in Power BI Desktop (separate from the workspace). Second, insulate the production app by using separate workspaces for development and test. (Optionally, you can achieve a higher level of control over deploying workspace content from development to test and production by using [deployment pipelines](/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines).)
+- **Content and permissions are published together:** When you publish an app, its permissions are published at the same time as the content. For example, you might have report changes in a workspace that aren't yet complete, fully tested, or approved. So, you can't republish the app merely to update permissions. To mitigate this risk, assign app permissions to security group(s), and use security [group](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) memberships (instead of individual users) when granting app permissions. Avoid republishing an app merely to apply permission changes.
 
 #### App audience
 
@@ -125,7 +129,7 @@ Each workspace in the Power BI service can have only one Power BI app. However, 
 This capability to _mix and match_ content and audiences has the following advantages.
 
 - Certain reports can be available for viewing by multiple audiences. So, creating multiple audiences removes the need to duplicate content across different workspaces.
-- Certain reports may be available to only one audience. So, content for that one audience can reside in the same workspace as other related content.
+- Certain reports should be available to only one audience. So, content for that one audience can reside in the same workspace as other related content.
 
 The following screenshot shows an app with two audiences: **Sales Leadership** and **Sales Reps**. The _Manage Audience Access_ pane provides access to the **Sales Leadership** audience group for two security groups: _Sales Leadership-North America_ and _Sales Leadership-Europe_. The _Gross Margin Analysis_ report that's shown in the screenshot for the **Sales Leadership** audience group isn't available to the **Sales Reps** audience group.
 
@@ -137,23 +141,23 @@ The following screenshot shows an app with two audiences: **Sales Leadership** a
 When you manage permissions for an app, on the _Direct Access_ page you can view the members of each audience. You can also see users with a workspace role listed under the _All_ audience. You can't update the app permissions from the _Direct Access_ page. Instead, you must republish the app. You can, however, update app permissions from the _Pending_ page when there are open [access requests](#app-access-requests) for the app.
 
 > [!TIP]
-> The primary use case for using app audiences is to define specific permissions for different sets of users. However, you can get a little creative when using audiences. A user can be a member of multiple audiences, and each audience is shown to viewers of the app as a secondary set of menus. For example, you can create an audience named _Start Here_ that contains information about how to use the app, who to contact, how to provide feedback, and how to get help. Or, you can create an audience named _KPI Definitions_ that includes a data dictionary. Providing this type of information helps new users and improves [solution adoption](powerbi-adoption-roadmap-maturity-levels.md#solution-adoption-phases) efforts.
+> The primary use case for using app audiences is to define specific permissions for different sets of users. However, you can get a little creative when using audiences. A user can be a member of multiple audiences, and each audience is shown to viewers of the app as a secondary set of menus. For example, you can create an audience named _Start Here_ that contains information about how to use the app, who to contact, how to provide feedback, and how to get help. Or, you can create an audience named _KPI Definitions_ that includes a data dictionary. Providing this type of information helps new users and improves [solution adoption](fabric-adoption-roadmap-maturity-levels.md#solution-adoption-phases) efforts.
 
 #### App permission options
 
 When you create (or republish) an app, each audience has a _Manage Audience Access_ pane. In that pane, the following permissions are available.
 
-- **Grant access to:** For each audience, you can grant access to individual users and groups. It's possible to publish the app to the entire organization when it's enabled by the _Publish content packs and apps to the entire organization_ tenant setting, and the app isn't installed automatically. Whenever possible, we recommend that you assign [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to audiences because adding or removing users involves republishing the app. Everyone with workspace access automatically has permission to view or update the app depending on their [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles).
-- **Dataset permissions:** Two types of dataset permissions can be [granted while publishing an app](/power-bi/connect-data/service-datasets-manage-access-permissions#managing-permissions-granted-through-an-app):
-  - **Dataset Reshare:** When enabled, app users are granted the [Reshare permission](/power-bi/connect-data/service-datasets-permissions) to the underlying dataset(s) with others. It makes sense to enable this option when the underlying dataset(s) can be readily reshared with anyone. We recommend that you get approval from the dataset owner(s) before granting the Reshare permission to an app audience.
-  - **Dataset Build:** When enabled, app users are granted the [Build permission](/power-bi/connect-data/service-datasets-build-permissions) for the datasets. Build permission allows users to create new reports, export underlying data from reports, and more. We recommend that you get approval from the dataset owner(s) before granting Build permission to an app audience.
+- **Grant access to:** For each audience, you can grant access to individual users and groups. It's possible to publish the app to the entire organization when it's enabled by the _Publish apps to the entire organization_ tenant setting, and the app isn't installed automatically. Whenever possible, we recommend that you assign [groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) to audiences because adding or removing users involves republishing the app. Everyone with workspace access automatically has permission to view or update the app depending on their [workspace role](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles).
+- **Semantic model permissions:** Two types of semantic model permissions can be [granted while publishing an app](/power-bi/connect-data/service-datasets-manage-access-permissions#managing-permissions-granted-through-an-app):
+  - **Semantic model Reshare:** When enabled, app users are granted the [Reshare permission](/power-bi/connect-data/service-datasets-permissions) to the underlying semantic model(s) with others. It makes sense to enable this option when the underlying semantic model(s) can be readily reshared with anyone. We recommend that you get approval from the semantic model owner(s) before granting the Reshare permission to an app audience.
+  - **Semantic model Build:** When enabled, app users are granted the [Build permission](/power-bi/connect-data/service-datasets-build-permissions) for the semantic models. Build permission allows users to create new reports, export underlying data from reports, and more. We recommend that you get approval from the semantic model owner(s) before granting Build permission to an app audience.
 
-The capability to add the dataset Reshare or Build permissions while publishing an app is convenient. However, we recommend that you consider managing app permissions and dataset permissions separately. Here are the reasons why.
+The capability to add the semantic model Reshare or Build permissions while publishing an app is convenient. However, we recommend that you consider managing app permissions and semantic model permissions separately. Here are the reasons why.
 
-- **Shared datasets might be in a separate workspace:** If the dataset is published to a separate workspace from the app, you'll need to manage its permissions directly. The ability to add Read, Build or Reshare permissions while publishing an app only works for datasets that are in the same workspace as the app. For this reason, we recommend that you get into the habit of managing dataset permissions independently.
-- **Dataset permissions are managed separately:** If you remove or change permissions for an app, that action only affects the app. It doesn't automatically remove any dataset permissions that were previously assigned. In this way, you can think of the app permissions and dataset permissions as being _decoupled_. You'll need to manage the dataset directly, separately from the app, when dataset permissions change or need to be removed.
-- **Dataset permissions should be controlled:** Granting dataset permissions through an app removes control from the dataset owner. Granting the Reshare permission relies on good judgment by users who are choosing to reshare the dataset(s). Your internal governance or security guidelines can become more difficult to manage when resharing is allowed.
-- **Consumers and creators have different goals:** Typically, there are many more content consumers than creators in an organization. In line with the [principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access), consumers only need Read permission for the underlying dataset. They don't need Build permission unless they intend to create new reports.
+- **Shared semantic model might be in a separate workspace:** If the semantic model is published to a separate workspace from the app, you'll need to manage its permissions directly. The ability to add Read, Build or Reshare permissions while publishing an app only works for semantic models that are in the same workspace as the app. For this reason, we recommend that you get into the habit of managing semantic model permissions independently.
+- **Semantic model permissions are managed separately:** If you remove or change permissions for an app, that action only affects the app. It doesn't automatically remove any semantic model permissions that were previously assigned. In this way, you can think of the app permissions and semantic model permissions as being _decoupled_. You'll need to manage the semantic model directly, separately from the app, when semantic model permissions change or need to be removed.
+- **Semantic model permissions should be controlled:** Granting semantic model permissions through an app removes control from the semantic model owner. Granting the Reshare permission relies on good judgment by users who are choosing to reshare the semantic model(s). Your internal governance or security guidelines can become more difficult to manage when resharing is allowed.
+- **Consumers and creators have different goals:** Typically, there are many more content consumers than creators in an organization. In line with the [principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access), consumers only need Read permission for the underlying semantic model. They don't need Build permission unless they intend to create new reports.
 
 > [!TIP]
 > For more information about when to use separate data workspaces and reporting workspaces, see the [Workspace-level planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md#workspace-item-types) article.
@@ -162,27 +166,27 @@ The capability to add the dataset Reshare or Build permissions while publishing 
 
 After you publish a Power BI app, a user typically needs to [install](/power-bi/consumer/end-user-app-view) it so they can open it. A user can install an app from the Apps page in the Power BI service, or by using a link they've received from another user. They'll be able to find (and install) an app when they're included in at least one audience of the app.
 
-An alternative approach to install an app is to _push_ it to app consumers. It results in the pre-installation of the app so that it automatically shows up in the Apps page in the Power BI service. This approach is a convenience for consumers because they don't need to find and install the app. However, pre-installed apps can become an annoyance for users because they may become overwhelmed by too many apps that aren't relevant to them.
+An alternative approach to install an app is to _push_ it to app consumers. It results in the pre-installation of the app so that it automatically shows up in the Apps page in the Power BI service. This approach is a convenience for consumers because they don't need to find and install the app. However, pre-installed apps can become an annoyance for users because they might become overwhelmed by too many apps that aren't relevant to them.
 
-The _[Push apps to end users](/power-bi/admin/service-admin-portal-content-pack-app#push-apps-to-end-users)_ tenant setting controls who's allowed to automatically install apps. We recommend that you use this feature because it's convenient for users. However, we also recommend that you educate your content creators on when to use it so that it isn't overused.
+The _[Push apps to end users](/fabric/admin/service-admin-portal-app#push-apps-to-end-users)_ tenant setting controls who's allowed to automatically install apps. We recommend that you use this feature because it's convenient for users. However, we also recommend that you educate your content creators on when to use it so that it isn't overused.
 
 > [!TIP]
 > When publishing an app, if you select the option to install the app automatically, you can't set the audience to be the entire organization (if enabled by the _Push apps to end users_ tenant setting).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for using apps for content viewers, key decisions and actions include:
 
 > [!div class="checklist"]
 > - **Decide on the strategy for use of apps:** Define your preferences for how to use apps. Ensure that it aligns with your overall strategy for read-only consumers.
-> - **Decide who can publish apps to the entire organization:** Decide which report creators are able to publish to the entire organization. Set the _Publish content packs and apps to the entire organization_ tenant setting to align with this decision.
+> - **Decide who can publish apps to the entire organization:** Decide which report creators are able to publish to the entire organization. Set the _Publish apps to the entire organization_ tenant setting to align with this decision.
 > - **Decide who can push apps to end users:** Decide which Power BI report creators can pre-install apps. Set the _Push apps to end users_ tenant setting to align with this decision.
 > - **Create and publish guidance for content creators:** Provide documentation and training for content creators. Include requirements and preferences for how to use apps most effectively.
 > - **Determine how to handle app access requests:** Ensure that a process is in place to assign contacts and handle app access requests in a timely manner.
 
 ### Workspace Viewer role
 
-As described in the [Workspace planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md#intent-for-collaboration) articles, the primary purpose of a workspace is collaboration. Workspace collaborators, such as dataset creators, report creators, and testers, should be assigned to one of three roles: Contributor, Member, or Admin. These [roles](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) are described in the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
+As described in the [Workspace planning](powerbi-implementation-planning-workspaces-workspace-level-planning.md#intent-for-collaboration) articles, the primary purpose of a workspace is collaboration. Workspace collaborators, such as semantic model creators, report creators, and testers, should be assigned to one of three roles: Contributor, Member, or Admin. These [roles](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) are described in the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
 
 You can assign the workspace Viewer role to consumers. Allowing consumers to access content directly in a workspace can make sense for small teams and informal teams who work closely together.
 
@@ -191,7 +195,7 @@ Allowing consumers to access workspace content directly is a good choice when:
 - The formality of an app, with its separate permissions, isn't necessary.
 - Viewers are permitted to view all items stored within the workspace.
 - You want simpler permissions management than per-item permissions.
-- Workspace users may also view an app (when an app is published for the workspace).
+- Workspace users might also view an app (when an app is published for the workspace).
 - The intention is for viewers to review content before it's published in an app.
 
 Here are some suggestions to support workspace viewers.
@@ -200,7 +204,7 @@ Here are some suggestions to support workspace viewers.
 - Separate development and test content from production content so that work-in-progress items can't be accessed by viewers.
 - Use apps (or per-item permissions when appropriate) when you expect to have many access requests to process. There isn't a _Request access_ workflow for workspaces.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for using workspaces for content viewers, key decisions and actions include:
 
@@ -230,14 +234,14 @@ Sharing many items by using per-item permissions can be tedious and error prone,
 
 When you share an individual item, you have several permission options.
 
-- **Reshare permission:** When enabled, users can share the item with other users, including its underlying datasets. It makes sense to grant this permission when the item can be readily shared with anyone. It removes control from the person or team that manages the item. So, it relies on good judgment by users who are granted the Reshare permission. However, your internal governance or security guidelines can become more difficult to manage when resharing is allowed.
-- **Build permission:** When enabled, users are granted [Build permission](/power-bi/connect-data/service-datasets-build-permissions) for the underlying dataset. Build permission allows users to create new content that's based on the dataset. It also allows them to export underlying data from reports, and more. Considerations for granting Build permission are described in the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
+- **Reshare permission:** When enabled, users can share the item with other users, including its underlying semantic models. It makes sense to grant this permission when the item can be readily shared with anyone. It removes control from the person or team that manages the item. So, it relies on good judgment by users who are granted the Reshare permission. However, your internal governance or security guidelines can become more difficult to manage when resharing is allowed.
+- **Build permission:** When enabled, users are granted [Build permission](/power-bi/connect-data/service-datasets-build-permissions) for the underlying semantic model. Build permission allows users to create new content that's based on the semantic model. It also allows them to export underlying data from reports, and more. Considerations for granting Build permission are described in the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
 
 Per-item permissions for reports and dashboards can make sense for informal scenarios when content is shared with a few users. It's a good idea to educate users on managing permissions with apps and workspaces instead, especially when they're sharing content to large numbers of users or users outside their team. It's important to emphasize the following points.
 
 - It becomes more difficult to determine which content has been shared with which users, because the permissions on each report and dashboard must be reviewed individually.
 - In many instances, Reshare permission is set because the user experience enables this option by default. So, there's a risk that content is shared to a wider set of users than intended. This outcome can be prevented by unchecking the _Allow recipients to share this report_ option when sharing. Minimizing oversharing in this way is a user training issue. The content creator that's setting the sharing permissions should consider this choice every time.
-- All changes to reports and dashboards are viewable by others immediately, which may confuse users when content modifications are a work in progress. This concern can be mitigated by distributing content in an app, or by using separate workspaces to segregate development, test, and production content. For more information, see the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) usage scenario.
+- All changes to reports and dashboards are viewable by others immediately, which could confuse users when content modifications are a work in progress. This concern can be mitigated by distributing content in an app, or by using separate workspaces to segregate development, test, and production content. For more information, see the [self-service content publishing](powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md) usage scenario.
 - When a user shares content from their personal workspace and they leave the organization, IT usually disables their user account. In this case, all recipients of the shared content will immediately lose access to the content.
 
 There are three specific types of sharing: sharing links, direct access sharing, and shared views.
@@ -248,15 +252,15 @@ When you share an individual item, the default experience results in a [sharing 
 
 - **People in your organization:** When enabled in your Power BI tenant settings, this type of sharing link is a straightforward way to provide read-only access to everyone within the organization. However, the sharing link won't work for external users. This option is best suited to when anyone can view the content, and the link can be freely shared throughout the organization. Unless it's disabled by the _Allow shareable links to grant access to everyone in your organization_ tenant setting, this type of sharing is the default.
 - **People with existing access:** This option doesn't create a new sharing link. Rather, it allows you to retrieve the URL so you can send it to someone who already has access.
-- **Specific people:** This option produces a sharing link for specific users or groups. We recommend that you use this option most of the time because it provides specific access. If you commonly work with external users, you can use this type of link for guest users who already exist in Azure Active Directory (Azure AD). For more information about the planned invitation process to create guest users, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md) article.
+- **Specific people:** This option produces a sharing link for specific users or groups. We recommend that you use this option most of the time because it provides specific access. If you commonly work with external users, you can use this type of link for guest users who already exist in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). For more information about the planned invitation process to create guest users, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md) article.
 
 > [!IMPORTANT]
 > We recommend that you consider restricting the _[Allow shareable links to grant access to everyone in your organization](/power-bi/admin/service-admin-portal-export-sharing#allow-shareable-links-to-grant-access-to-everyone-in-your-organization)_ tenant setting to members of a group. You can create a group name like _Power BI Share to Entire Organization_, and then add a small number of users who understand the implications of organization-wide sharing. If you're concerned about existing organization-wide links, you can use the [admin API](/rest/api/power-bi/admin/widely-shared-artifacts-links-shared-to-whole-organization) to find all items that have been shared with the entire organization.
 
-A sharing link adds Read permission to the item. The Reshare permission is selected by default. It's also possible to add Build permission to the underlying dataset at the same time that the sharing link is created.
+A sharing link adds Read permission to the item. The Reshare permission is selected by default. It's also possible to add Build permission to the underlying semantic model at the same time that the sharing link is created.
 
 > [!TIP]
-> We recommend that you teach content creators to enable the Build permission option _only_ when the consumer of the report is also a content creator who might need to create reports, export data, or create a composite model from the underlying dataset.
+> We recommend that you teach content creators to enable the Build permission option _only_ when the consumer of the report is also a content creator who might need to create reports, export data, or create a composite model from the underlying semantic model.
 
 Sharing links are easier to maintain than direct access sharing, particularly when you need to do bulk changes. It's a significant advantage when individual users are granted sharing permissions, more so than groups (which commonly occurs when self-service users are responsible for managing permissions). Consider the following comparisons.
 
@@ -267,7 +271,7 @@ Sharing links are easier to maintain than direct access sharing, particularly wh
 
 You can also achieve per-item permissions by using _direct access_. Direct access involves setting up the permissions for a single item. You can also determine any inherited permissions derived from [workspace roles](powerbi-implementation-planning-security-content-creator-planning.md#workspace-roles).
 
-When you grant a user direct access, they're granted Read permission for the item. The Reshare permission is selected by default, as is the Build permission for the underlying dataset. We recommend that you teach content creators to enable Build permission only when the consumer of this report is also a content creator who might need to create reports, export data, or create composite models from the underlying dataset.
+When you grant a user direct access, they're granted Read permission for the item. The Reshare permission is selected by default, as is the Build permission for the underlying semantic model. We recommend that you teach content creators to enable Build permission only when the consumer of this report is also a content creator who might need to create reports, export data, or create composite models from the underlying semantic model.
 
 > [!TIP]
 > The user experience makes granting Reshare and Build permissions very straightforward, but the user doing the sharing should always verify whether those permissions are necessary.
@@ -278,7 +282,7 @@ Use a [shared view](/power-bi/collaborate-share/service-share-reports) to share 
 
 Shared views are a temporary concept. They automatically expire after 180 days. For this reason, shared views are best suited to informal and temporary sharing scenarios. Be sure your users are aware of this limitation.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When creating your strategy for using per-item permissions, key decisions and actions include:
 
@@ -291,22 +295,22 @@ Shared views are a temporary concept. They automatically expire after 180 days. 
 
 The most common ways for consumers to interact with Power BI are with apps, workspaces, and per-item permissions (previously described in this article).
 
-There are other techniques that consumers can use to query Power BI data. Each of the following query techniques requires dataset or datamart Build permission.
+There are other techniques that consumers can use to query Power BI data. Each of the following query techniques requires semantic model or datamart Build permission.
 
-- **Analyze in Excel:** Consumers who prefer to use Excel can query a Power BI dataset by using [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel). This capability is a great alternative to exporting data to Excel because the data isn't duplicated. With a live connection to the dataset, users can create PivotTables, charts, and slicers. They can then publish the workbook to a workspace in the Power BI service which allows consumers to open it and interact with it.
-- **XMLA endpoint:** Consumers can query a dataset by connecting to the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). An application that's XMLA-compliant can connect to, query, and consume a dataset that's stored in a Premium workspace. This capability is helpful when consumers want to use a Power BI dataset as their data source for a data visualization tool outside of the Microsoft ecosystem.
-- **Datamart editor:** Consumers can query a Power BI datamart by using the [datamart editor](/power-bi/transform-model/datamarts/datamarts-analyze#visual-query). It's a web-based visual query editor for creating no-code queries. There's also a web-based SQL editor for when consumers prefer to write SQL queries. Both editors query the managed Azure SQL Database that underlies the Power BI datamart (rather than the built-in dataset).
-- **SQL endpoint:** Consumers can query a Power BI datamart by using the [SQL endpoint](/power-bi/transform-model/datamarts/datamarts-analyze#analyze-outside-the-editor). They can use tools like Azure Data Studio or SQL Server Management Studio (SSMS) to run SQL queries. The SQL endpoint directs queries to the managed Azure SQL Database that underlies the Power BI datamart (rather than the built-in dataset).
+- **Analyze in Excel:** Consumers who prefer to use Excel can query a Power BI semantic model by using [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel). This capability is a great alternative to exporting data to Excel because the data isn't duplicated. With a live connection to the semantic model, users can create PivotTables, charts, and slicers. They can then publish the workbook to a workspace in the Power BI service which allows consumers to open it and interact with it.
+- **XMLA endpoint:** Consumers can query a semantic model by connecting to the [XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools). An application that's XMLA-compliant can connect to, query, and consume a semantic model that's stored in a Premium workspace. This capability is helpful when consumers want to use a Power BI semantic model as their data source for a data visualization tool outside of the Microsoft ecosystem.
+- **Datamart editor:** Consumers can query a Power BI datamart by using the [datamart editor](/power-bi/transform-model/datamarts/datamarts-analyze#visual-query). It's a web-based visual query editor for creating no-code queries. There's also a web-based SQL editor for when consumers prefer to write SQL queries. Both editors query the managed Azure SQL Database that underlies the Power BI datamart (rather than the built-in semantic model).
+- **SQL endpoint:** Consumers can query a Power BI datamart by using the [SQL endpoint](/power-bi/transform-model/datamarts/datamarts-analyze#analyze-outside-the-editor). They can use tools like Azure Data Studio or SQL Server Management Studio (SSMS) to run SQL queries. The SQL endpoint directs queries to the managed Azure SQL Database that underlies the Power BI datamart (rather than the built-in semantic model).
 
 For more information about the Build permission, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md) article.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning which query techniques consumers will use, key decisions and actions include:
 
 > [!div class="checklist"]
-> - **Create guidance for users on using Analyze in Excel:** Provide documentation and training for consumers on the best way to reuse existing datasets with Excel.
-> - **Create guidance for users on using the XMLA endpoint:** Provide documentation and training for consumers on the best way to reuse existing datasets with the XMLA endpoint.
+> - **Create guidance for users on using Analyze in Excel:** Provide documentation and training for consumers on the best way to reuse existing semantic models with Excel.
+> - **Create guidance for users on using the XMLA endpoint:** Provide documentation and training for consumers on the best way to reuse existing semantic models with the XMLA endpoint.
 > - **Create guidance for users on datamart queries:** Provide documentation and training for consumers on the available techniques for querying Power BI datamarts.
 
 ## Request access workflow for consumers
@@ -317,7 +321,7 @@ A _Request access_ workflow exists for:
 
 - Access to a Power BI app.
 - Access to an item, like a report or dashboard.
-- Access to a dataset. For more information about the _Request access_ workflow when a dataset is discoverable, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md#request-access-workflow-for-creators) article.
+- Access to a semantic model. For more information about the _Request access_ workflow when a semantic model is discoverable, see the [Content creator security planning](powerbi-implementation-planning-security-content-creator-planning.md#request-access-workflow-for-creators) article.
 
 ### App access requests
 
@@ -345,11 +349,11 @@ A user who is attempting to view a workspace receives an _access denied_ message
 There are two ways to learn about pending access requests that have been submitted for an individual item, like a report.
 
 - **Email:** The contact(s) for the item receive an email notification. To provide better support for critical reports, we recommend that you set the contact to a group that's able to respond quickly to access requests.
-- **Manage permissions menu:** Workspace administrators and members may access the _Manage permissions_ page for each item. They can view, approve, or decline access pending requests.
+- **Manage permissions menu:** Workspace administrators and members can access the _Manage permissions_ page for each item. They can view, approve, or decline access pending requests.
 
 ### Manage access requests with groups
 
-When a user submits the _Request access_ form for a Power BI item (like a report or dataset) or a Power BI app, the request is submitted for an individual user. However, many large organizations need to use groups to comply with their internal security policies.
+When a user submits the _Request access_ form for a Power BI item (like a report or semantic model) or a Power BI app, the request is submitted for an individual user. However, many large organizations need to use groups to comply with their internal security policies.
 
 We recommend that you use groups, rather than individuals, for securing content whenever practical. For more information about planning for groups, see the [Tenant-level security planning](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups) article.
 
@@ -362,7 +366,7 @@ If you intend to provide access to groups instead of individual users, the conte
 > [!TIP]
 > See [Request access workflow for creators](powerbi-implementation-planning-security-content-creator-planning.md#request-access-workflow-for-creators) for information about responding to requests for Build access from content creators. It also includes recommendations about using a form for access requests.
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning the _Request access_ workflow, key decisions and actions include:
 
@@ -374,49 +378,51 @@ If you intend to provide access to groups instead of individual users, the conte
 
 ## Enforce data security based on consumer identity
 
-You can plan to create fewer datasets and reports by enforcing data security. The objective is to enforce data security based on the identity of the user who's viewing the content.
+You can plan to create fewer semantic models and reports by enforcing data security. The objective is to enforce data security based on the identity of the user who's viewing the content.
 
 For example, consider that you can share a single sales report with all salespeople (consumers), knowing that each salesperson will only see sales results for their region. This approach allows you to avoid the complexity of creating separate reports _per region_ that would need to be shared with the salespeople from that sales region.
 
-Some organizations have specific requirements for [endorsed](/power-bi/collaborate-share/service-endorse-content) (certified or promoted) datasets or datamarts. For data that will be widely used, there might be a requirement to use data security.
+Some organizations have specific requirements for [endorsed](/power-bi/collaborate-share/service-endorse-content) (certified or promoted) semantic models or datamarts. For data that will be widely used, there might be a requirement to use data security.
 
 You can accomplish data security in multiple ways.
 
-- **Power BI dataset:** As a Power BI data creator, you can enforce [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) and [object-level security (OLS)](/power-bi/enterprise/service-admin-ols). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. Both techniques are described later in this section.
-- **Analysis Services:** A live connection dataset can connect to a remote data model, which is hosted by either Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS). The remote model can enforce RLS or OLS based on the consumer identity.
-- **Data source:** Some data sources, like Azure SQL Database, can enforce RLS. In this case, the Power BI model may take advantage of the existing security rather than redefining it. That approach can be a significant advantage when RLS defined in the source is complex. You can develop and publish a DirectQuery model and set the data source credentials of the dataset in the Power BI service to enable [single sign-on (SSO)](/power-bi/connect-data/service-azure-sql-database-with-direct-connect). When a report consumer opens a report, Power BI passes their identity to the data source. The data source then enforces RLS based on the identity of the report consumer. For more information about Azure SQL Database RLS, see [this article](/sql/relational-databases/security/row-level-security).
+- **Power BI semantic model:** As a Power BI data creator, you can enforce [row-level security (RLS)](/fabric/security/service-admin-row-level-security) and [object-level security (OLS)](/fabric/security/service-admin-object-level-security). RLS involves defining roles and rules that filter data model rows, while OLS restricts access to specific tables or columns. These defined RLS and OLS rules do not apply to references stored outside the semantic model such as slicer and filter selections. Both RLS and OLS techniques are further described later in this section.
+- **Analysis Services:** A live connection semantic model can connect to a remote data model, which is hosted by either Azure Analysis Services (AAS) or SQL Server Analysis Services (SSAS). The remote model can enforce RLS or OLS based on the consumer identity.
+- **Data source:** Some data sources, like Azure SQL Database, can enforce RLS. In this case, the Power BI model can take advantage of the existing security rather than redefining it. That approach can be a significant advantage when RLS defined in the source is complex. You can develop and publish a DirectQuery model and set the data source credentials of the semantic model in the Power BI service to enable [single sign-on (SSO)](/power-bi/connect-data/service-azure-sql-database-with-direct-connect). When a report consumer opens a report, Power BI passes their identity to the data source. The data source then enforces RLS based on the identity of the report consumer. For more information about Azure SQL Database RLS, see [this article](/sql/relational-databases/security/row-level-security).
 
 > [!NOTE]
 > Source systems, like Azure SQL Database, can also use techniques like views to narrow down what the user can see. While that's a valid technique, it's not relevant to the focus of this section.
 
 ### Row-level security
 
-[Row-level security (RLS)](/power-bi/enterprise/service-admin-rls) allows a data modeler to restrict access to a subset of data. It's typically used to ensure that some report consumers can't see specific data, like sales results of other sales regions.
+[Row-level security (RLS)](/fabric/security/service-admin-row-level-security) allows a data modeler to restrict access to a subset of data. It's typically used to ensure that some report consumers can't see specific data, like sales results of other sales regions.
 
 > [!TIP]
 > If you've noticed someone creating multiple data models to support different groups of consumers, check whether RLS will satisfy their requirements. It's typically better to create, test, and maintain one data model rather than multiple data models.
+
+Take care, because if a Power BI report references a row with RLS configured then the same message will be displayed as for a deleted or non-existing field. To these users, it looks like the report is broken.
 
 There are two steps for setting up RLS: rules and role mappings.
 
 #### RLS rules
 
-For datasets, a data modeler can set up RLS in Power BI Desktop by creating one or more roles. A role has a unique name in the model, and it usually includes one or more rules. Rules enforce filters on model tables by using Data Analysis Expressions (DAX) filter expressions. By default, a model has no roles.
+For semantic models, a data modeler can set up RLS in Power BI Desktop by creating one or more roles. A role has a unique name in the model, and it usually includes one or more rules. Rules enforce filters on model tables by using Data Analysis Expressions (DAX) filter expressions. By default, a model has no roles.
 
 > [!IMPORTANT]
 > A model without roles means that users (who have permission to query the data model) have access to all model data.
 
-[Rule expressions](/power-bi/enterprise/service-admin-rls#define-roles-and-rules-in-power-bi-desktop) are evaluated within row context. Row context means the expression is evaluated for each row by using the column values of that row. When the expression returns `TRUE`, the user can see the row. You can define rules that are either _static_ or _dynamic_.
+[Rule expressions](/fabric/security/service-admin-row-level-security#define-roles-and-rules-in-power-bi-desktop) are evaluated within row context. Row context means the expression is evaluated for each row by using the column values of that row. When the expression returns `TRUE`, the user can see the row. You can define rules that are either _static_ or _dynamic_.
 
 - **Static rules:** Use DAX expressions that refer to constants, like `[Region] = "Midwest"`.
 - **Dynamic rules:** Use specific DAX functions that return environmental values (as opposed to constants). Environmental values are returned from three specific DAX functions: [USERNAME](/dax/username-function-dax), [USERPRINCIPALNAME](/dax/userprincipalname-function-dax), and [CUSTOMDATA](/dax/customdata-function-dax). Defining dynamic rules is simple and effective when a model table stores username values. They allow you to enforce a _data-driven_ RLS design.
 
 #### RLS role mappings
 
-After you publish the model to the Power BI service, you must set up [role mappings](/power-bi/enterprise/service-admin-rls#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Azure AD security objects to roles. Security objects can be user accounts or security groups.
+After you publish the model to the Power BI service, you must set up [role mappings](/fabric/security/service-admin-row-level-security#manage-security-on-your-model) in advance of users accessing related reports. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
 
 Whenever possible, it's a best practice to map roles to [security groups](powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). That way, there will be fewer mappings, and group membership management can be handled by the owner of the group.
 
-We recommend that you make security account information from Azure AD available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Azure AD. That way, content creators can integrate the dataflow data to produce a data-driven dataset.
+We recommend that you make security account information from Microsoft Entra available to your content creators. One option is to create a [dataflow](/power-bi/transform-model/dataflows/dataflows-create) with data that's kept in sync with Microsoft Entra ID. That way, content creators can integrate the dataflow data to produce a data-driven semantic model.
 
 > [!TIP]
 > It's possible to define a role that has no rules. In this case, the role provides access to all rows of all model tables. Setting up this type of role is suitable when an administrator or user is allowed to view all data in the model.
@@ -427,21 +433,21 @@ Some organizations choose to purposefully use RLS as a secondary layer of securi
 
 The presence of RLS changes the default experience for consumers.
 
-- **When RLS isn't defined for the dataset:** Creators and consumers with _at least_ Read permission on the dataset can view _all data_ in the dataset.
-- **When RLS is defined on the dataset:** Creators and consumers with _only_ Read permission on the dataset will only be able to view the data they're allowed to see (based on their RLS role mapping).
+- **When RLS isn't defined for the semantic model:** Creators and consumers with _at least_ Read permission on the semantic model can view _all data_ in the semantic model.
+- **When RLS is defined on the semantic model:** Creators and consumers with _only_ Read permission on the semantic model will only be able to view the data they're allowed to see (based on their RLS role mapping).
 
 > [!NOTE]
-> Some organizations enforce RLS as an additional layer of security, especially when sensitive data is involved. For this reason, you might choose to require RLS for datasets that are [certified](/power-bi/collaborate-share/service-endorse-content). That requirement can be accomplished with an internal review and approval process prior to certifying the dataset.
+> Some organizations enforce RLS as an additional layer of security, especially when sensitive data is involved. For this reason, you might choose to require RLS for semantic models that are [certified](/power-bi/collaborate-share/service-endorse-content). That requirement can be accomplished with an internal review and approval process prior to certifying the semantic model.
 
-When a user views a report in either a workspace or an app, RLS may or may not be enforced depending on their dataset permissions. For this reason, it's critical that content consumers and creators _only_ possess Read permission on the underlying dataset when RLS must be enforced.
+When a user views a report in either a workspace or an app, RLS might or might not be enforced depending on their semantic model permissions. For this reason, it's critical that content consumers and creators _only_ possess Read permission on the underlying semantic model when RLS must be enforced.
 
 Here are the permission rules that determine whether RLS is enforced.
 
-- **User has Read permission on the dataset:** RLS is enforced for the user.
-- **User has Read and Build permissions on the dataset:** RLS is enforced for the user.
-- **User has Write permission on the dataset:** RLS isn't enforced for the user, meaning that they can see all data in the dataset. The Write permission provides the ability to edit a dataset. It can be granted in one of two ways:
-  - With the Contributor, Member, or Admin [workspace roles](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) (for the workspace where the dataset is stored).
-  - With the per-item Write [dataset permission](/power-bi/connect-data/service-datasets-permissions).
+- **User has Read permission on the semantic model:** RLS is enforced for the user.
+- **User has Read and Build permissions on the semantic model:** RLS is enforced for the user.
+- **User has Write permission on the semantic model:** RLS isn't enforced for the user, meaning that they can see all data in the semantic model. The Write permission provides the ability to edit a semantic model. It can be granted in one of two ways:
+  - With the Contributor, Member, or Admin [workspace roles](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles) (for the workspace where the semantic model is stored).
+  - With the per-item Write [semantic model permission](/power-bi/connect-data/service-datasets-permissions).
 
 > [!TIP]
 > For more information about how to use separate workspaces so that RLS works for content creators, see the [managed self-service BI](powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md) usage scenario.
@@ -454,13 +460,13 @@ Power BI datamarts can also enforce RLS. However, the implementation is differen
 
 The main difference is that RLS for datamarts is set up in the Power BI service, rather than in Power BI Desktop.
 
-Another difference is that datamarts enforce RLS on both the dataset and the managed Azure SQL Database that's associated with the datamart. Enforcing RLS at both layers provides consistency and flexibility. The same RLS filters are applied regardless of how the user queries the data, whether it's by connecting to the dataset or to the managed Azure SQL Database.
+Another difference is that datamarts enforce RLS on both the semantic model and the managed Azure SQL Database that's associated with the datamart. Enforcing RLS at both layers provides consistency and flexibility. The same RLS filters are applied regardless of how the user queries the data, whether it's by connecting to the semantic model or to the managed Azure SQL Database.
 
 For more information, see [RLS for datamarts](/power-bi/transform-model/datamarts/datamarts-access-control#row-level-security).
 
 ### Object-level security
 
-[Object-level security (OLS)](/power-bi/enterprise/service-admin-ols) allows a data modeler to restrict access to specific tables and columns, and their metadata. You typically use OLS to ensure sensitive columns, like employee salary, aren't visible to certain users. While it isn't possible to restrict access to measures, any measure that references a restricted column will itself be restricted.
+[Object-level security (OLS)](/fabric/security/service-admin-object-level-security) allows a data modeler to restrict access to specific tables and columns, and their metadata. You typically use OLS to ensure sensitive columns, like employee salary, aren't visible to certain users. While it isn't possible to restrict access to measures, any measure that references a restricted column will itself be restricted.
 
 Consider an example of an employee table. It contains columns that store the employee name and phone number, and also salary. You can use OLS to ensure that only certain users, like senior Human Resources staff, can see salary values. For those users that can't see salary values, it's as if that column doesn't exist.
 
@@ -473,17 +479,17 @@ There isn't currently an interface in Power BI Desktop to set up OLS. You can us
 
 For more information about OLS, see [Restrict access to Power BI model objects](/learn/modules/enforce-power-bi-model-security/3-restrict-access-to-power-bi-model-objects).
 
-:::image type="icon" source="media/common/checklist.png" border="false":::
+:::image type="icon" source="media/common/checklist.svg" border="false":::
 
 **Checklist** - When planning for RLS and OLS, key decisions and actions include:
 
 > [!div class="checklist"]
 > - **Decide on the strategy for use of RLS:** Consider for which use cases and purposes you intend to use row-level security.
 > - **Decide on the strategy for use of OLS:** Consider for which use cases and purposes you intend to use object-level security.
-> - **Consider requirements for certified content:** If you have a process for what's required to certify a dataset, decide whether to include any specific requirements for using RLS or OLS.
+> - **Consider requirements for certified content:** If you have a process for what's required to certify a semantic model, decide whether to include any specific requirements for using RLS or OLS.
 > - **Create and publish user guidance:** Create documentation for users that includes requirements and preferences for using RLS and OLS. Describe how to obtain user mapping information if it exists in a centralized location.
 > - **Update training materials:** Include key information about requirements and preferences for RLS and OLS in user training materials. Provide examples for users to understand when it's appropriate to use either data security technique.
 
-## Next steps
+## Related content
 
-In the [next article in this series](powerbi-implementation-planning-security-content-creator-planning.md), learn about security planning for content creators who are responsible for creating datasets, dataflows, datamarts, reports, or dashboards.
+In the [next article in this series](powerbi-implementation-planning-security-content-creator-planning.md), learn about security planning for content creators who are responsible for creating semantic models, dataflows, datamarts, reports, or dashboards.

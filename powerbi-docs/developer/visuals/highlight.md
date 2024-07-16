@@ -7,7 +7,8 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 06/17/2024
+#customer intent: As a Power BI visual developer, I want to learn how to highlight data points on Power BI visuals with categorical and matrix data view mapping.
 ---
 
 # Highlight data points in Power BI Visuals
@@ -647,7 +648,7 @@ The result is a visual with buttons and values, like `highlighted value/default 
 
 :::image type="content" source="media/highlight/dev-matrix-visual-highlight-demo.gif" alt-text="Animation selecting data points on the visual, with matrix data views mapping and highlight." lightbox="media/highlight/dev-matrix-visual-highlight-demo.gif":::
 
-## Next steps
+## Related content
 
 * [Matrix data mappings](dataview-mappings.md#matrix-data-mapping)
 * [Add interactivity into visual by Power BI visuals selections](selection-api.md)

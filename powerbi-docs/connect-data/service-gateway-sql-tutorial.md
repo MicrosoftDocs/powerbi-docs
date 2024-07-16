@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 12/20/2022
+ms.date: 05/28/2024
 LocalizationGroup: Gateways
 ---
 
@@ -39,7 +39,7 @@ In this tutorial, you complete the following steps:
 
 ## Create and publish a Power BI Desktop file
 
-Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI dataset, which you configure and refresh in later steps.
+Use the following procedure to create a basic Power BI report that uses the AdventureWorksDW2017 sample database. Publish the report to the Power BI service to get a Power BI dataset, which you configure and refreshes in later steps.
 
 1. In Power BI Desktop, on the **Home** tab, select **Get data** > **SQL Server**.
 
@@ -83,7 +83,7 @@ Use the following procedure to create a basic Power BI report that uses the Adve
 
    ![Screenshot that shows the finished column chart.](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This price will change when you later update the data and refresh the report.
+   Notice that the **Road-250 Red** product has the same list price as the other **Road-250** products. This price changes when you later update the data and refresh the report.
 
 1. Save the report with the name *AdventureWorksProducts.pbix*.
 
@@ -103,7 +103,7 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
    ![Screenshot that shows selecting Settings on the Power BI Home page.](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-1. Select the **Datasets** tab, and then select the **AdventureWorksProducts** dataset from the list of datasets.
+1. Select the **Semantic models** tab, and then select the **AdventureWorksProducts** dataset from the list of datasets.
 
 1. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't see a gateway, make sure you followed the instructions to [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
@@ -136,11 +136,11 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 ## Configure a refresh schedule
 
-Now that you've connected your Power BI dataset to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
+Once connected, your Power BI dataset to your SQL Server on-premises database through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps ensure that your reports and dashboards have the most recent data.
 
 1. In the left navigation pane, expand **My Workspace**.
 
-1. In the **Datasets** section, point to the **AdventureWorksProducts** dataset, select the **Open menu** three vertical dots icon, and then select **Schedule refresh**.
+1. In the **Semantic models** section, point to the **AdventureWorksProducts** dataset, select the **Open menu** three vertical dots icon, and then select **Schedule refresh**.
 
    > [!TIP]
    > Make sure you point to the **AdventureWorksProducts** dataset, not the report with the same name, which doesn't have a **Schedule refresh** option.
@@ -156,13 +156,13 @@ Now that you've connected your Power BI dataset to your SQL Server on-premises d
    > [!NOTE]
    > You can configure up to eight daily time slots if your dataset is on shared capacity, or 48 time slots on Power BI Premium.
 
-4. Leave the checkbox under **Send refresh failure notifications to** set to **Dataset owner**, and select **Apply**.
+4. Leave the checkbox under **Send refresh failure notifications to** set to **Semantic model owner**, and select **Apply**.
 
-Now that you've configured a refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
+With a configured refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes.
 
 ## Do an on-demand refresh
 
-To refresh the data anytime, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh Now** option in the left pane **Dataset** menu. On-demand refreshes don't affect the next scheduled refresh time.
+To refresh the data anytime, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh Now** option in the left pane **Semantic model** menu. On-demand refreshes don't affect the next scheduled refresh time.
 
 To illustrate an on-demand refresh, first change the sample data by using SSMS to update the `DimProduct` table in the AdventureWorksDW2017 database, as follows:
 
@@ -178,7 +178,7 @@ Follow these steps to make the updated data flow through the gateway connection 
 
 1. In the Power BI service, expand **My Workspace** in the left navigation pane.
 
-2. In the **Datasets** section, hover over the **AdventureWorksProducts** dataset, select the three vertical dots **Open menu** icon, and then select **Refresh now**.
+2. In the **Semantic models** section, hover over the **AdventureWorksProducts** dataset, select the three vertical dots **Open menu** icon, and then select **Refresh now**.
 
    ![Screenshot that shows selecting Refresh now.](./media/service-gateway-sql-tutorial/refresh-now.png)
 
@@ -194,7 +194,7 @@ It's a good idea to periodically use the refresh history to check the outcomes o
 
 1. In the upper-right corner of the Power BI screen, select the settings gear icon and then select **Settings**.
 
-2. On the **Datasets** tab, select the dataset you want to examine, such as **AdventureWorksProducts**.
+2. On the **Semantic models** tab, select the dataset you want to examine, such as **AdventureWorksProducts**.
 
 3. Select the **Refresh history** link.
 
@@ -215,12 +215,12 @@ Follow these instructions to clean up the resources you created for this tutoria
 - If you don't want to use the SQL Server data source, remove the data source from your data gateway. Also consider uninstalling the data gateway, if you installed it only for this tutorial.
 - Also delete the AdventureWorksProducts dataset and report that Power BI created when you published the *AdventureWorksProducts.pbix* file.
 
-## Next steps
+## Related content
 
 This tutorial explored how to:
 
 - Import data from an on-premises SQL Server database into a Power BI dataset.
-- Refresh the Power BI dataset on a scheduled and on-demand basis to update the reports and dashboards that use the dataset.
+- To update reports and dashboards that use the dataset, refresh the Power BI dataset on a scheduled and on-demand basis.
 
 Now, you can learn more about Power BI data refresh and managing data gateways and data sources.
 

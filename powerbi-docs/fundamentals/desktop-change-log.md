@@ -7,14 +7,279 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 03/29/2023
+ms.date: 06/24/2024
+no-loc: [Copilot]
 ---
 
 # Change log for Power BI Desktop
 
-This change log is for Power BI Desktop and lists new items along with bug fixes for each released QFE build.
+This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## June 2024 QFE 1
+*Version 2.130.930.0, Released: June 17, 2024*
+
+Bug fixes/improvements:
+
+* Bug fix for an issue where the "Refresh" popup showing the number of rows loaded was not appearing on refresh of the data in the table view
+* Reverted cross-highlight optimization behavior for Custom Visuals
+* Improved the token fetching process in the SubstrateService of the Power BI client
+* Serialized bookmark groups properly
+
+## May 2024 QFE 1
+
+*Version 2.129.1229.0, Released: May 30, 2024*
+
+Bug fixes/improvements:
+
+* Subfolders preview feature is disabled by default  
+* Fixed issue with hiding **Select** and **Cancel** buttons when publishing with the **Subfolder** feature and the tenant pre-publish message is visible
+* Added more telemetry for acquiring token to identify dynamic user impersonation culprits
+* Fixed **CTRL + F6** navigation so the Diagram view can be focused, also updated the focus priorities of some components.
+
+
+
+
+## April 2024 QFE 3
+
+*Version : 2.128.1380.0, Released: May 02 , 2024*
+
+Bug fixes/improvements:
+
+* Introduced a new feature to synchronize the *DataType* when the *SourceProviderType* changes in the Power BI Modeling Engine
+* Added locks to prevent clearing the cache of the Data Grid data when it's being read at the same time
+* Set Trust Server Certificate irrespective of encrypt connection settings
+* Fixed issue occurring when select visuals' calculation groups were returning incorrect results due to incorrect optimization
+
+
+## April 2024 QFE 2
+ 
+*Version 2.128.1177.0: , Released: April 24 , 2024*
+
+Bug fixes/improvements:
+
+* Version update for Mashup Provider NuGet packages (to include QFE fixes)
+* Disabled contextual summarize columns for Power BI Desktop to make consistent with the Power BI service
+* Updated error messages in the Azure Data Lake Storage (ADLS) connector
+
+
+
+## April 2024 QFE 1
+ 
+*Version: 2.128.952.0, Released: April 15, 2024*
+
+Bug fixes/improvements:
+
+* Fix for drag and drop picker tooltip, empty title fix
+* Fix duplicated truncation problem on Gauge Chart
+* Added error messaging when ignoring the workspace picker for Desktop Report Authoring Copilot 
+
+
+## March 2024 QFE 2
+
+*Version: 2.127.1327.0, Released: April 01, 2024*
+
+Bug fixes/improvements:
+
+* Fix for customize theme dialog margins: Fixed issue where theme dialog's margins were too large and were occluding the *Cancel* and *Apply* buttons.
+* Fix for DAX Query View copilot usage telemetry: Fix for spike in Customer Counts/Tenant Counts for Feature powerbi-copilot-usage.
+* Fixed issue where an error is thrown in live connect when users clicked on relationships.
+ 
+
+## March 2024 QFE 1
+
+*Version: 2.127.1235.0, Released: March 28, 2024*
+
+Bug fixes/improvements:
+
+* Fix for DataGrid copy to clipboard :  Fixed issue of "Copy Table" not working in datagrid view of Power BI Desktop
+* Bug fixes for the DAX inline Copilot:  Fixed issue where invalid DAX query banner shows up unexpectedly in some cases. Prevents cancel button from being stuck when pressed too early. Prevents stale user input from showing when signing in again
+
+
+## February 2024 QFE 1
+
+*Version: 2.126.1261.0, Released: March 01, 2024*
+
+Bug fixes/improvements:
+
+* Fix for refresh failures for certain reports having a DirectQuery connection to AAS or a published semantic model
+* Fix for null reference to telemetry object
+* Make visual calculation look up invisible in Power BI Desktop
+
+
+## December 2023 QFE 3
+
+*Version: 2.124.2028.0, Released: January 29, 2024*
+
+Bug fixes/improvements:
+
+* Fix v5.50 upgrader for multi-static series and 100% stacked charts
+*	Remove Force Refresh on Token Refresh
+
+## December 2023 QFE 2
+
+*Version: 2.124.1805.0, Released: January 19, 2024*
+
+Bug fixes/improvements:
+
+*	Sign-in Flighting Feature Update
+* Updated Q&A Copilot telemetry
+
+## December 2023 QFE 1
+
+*Version: 2.124.1554.0, Released: January 09, 2024*
+
+Bug fixes/improvements:
+
+*	Updated PQO announcement dialog image path.
+*	Updated the learn more link for PQO announcement dialog.
+*	Added flighted features to Power BI Desktop frown telemetry event.
+*	Disable NewNonEmptyFilteringSemantics feature switch.
+*	Small-multiple single-series column-chart style-formatting.
+*	Fixed formatting pane isn't allowing formatting multiple visuals of the same type
+
+## November 2023 QFE 1
+
+*Version: 2.123.742.0, Released: November 21, 2023*
+
+Bug fixes/improvements:
+
+* Fixed mobile canvas watermark that was throwing exceptions in autocreate
+* Frown fix - users no longer get a frown from the sync slicer view model update when a slicer is selected
+
+## October 2023 QFE 1
+
+*Version: 2.122.1066.0, Released: November 01, 2023*
+
+Bug fixes/improvements:
+ 
+
+* 32-bit sign-in fix. Customers can now sign in to 32-bit Power BI Desktop.
+* CDM connector fix.
+* Telemetry fix.
+* Print PDF fix. Customers can now print and open .pdf files.
+* Semantic model fix. It's now confirmed whether a report object exists before showing Power BI semantic model *Unable to connect* dialog.
+* The freshness requirement for collecting AS logs and traces has been removed. 
+
+
+ 
+## September 2023 QFE 2
+
+*Version: 2.121.903.0, Released: September 25, 2023*
+
+Bug fixes/improvements:
+
+* Formula bar fix. An error message now appears when a user types an expression in the formula bar that results in an error from AS and reverting their expression.
+* Fix to data exporting. Customers exporting data from a visual are no longer restricted to 300 rows.
+ 
+
+
+
+## September 2023 QFE 1
+
+*Version: 2.121.762.0, Released: September 18, 2023*
+ 
+Bug fixes/improvements:
+
+* Fix to On Object. Now customers can select all sections on Pie/Donut chart.
+ 
+
+
+## August 2023 QFE 1
+
+*Version: 2.120.963.0, Released: August 29, 2023*
+
+Bug fixes/improvements:
+
+* Security update. Open SSL version updated to 3.0.9
+* Telemetry fix.
+
+
+## July 2023 QFE 2
+
+*Version: 2.119.986.0, Released: July 26, 2023*
+
+Bug fixes/improvements:
+
+* Fix to large models. Now customers would be able to see relationships lines in Model View. Template files with multiple queries now load faster.
+
+
+## July 2023 QFE 1
+
+*Version: 2.119.870.0, Released: July 24, 2023*
+
+Bug fixes/improvements:
+
+* TheProductForX tests fix
+* Template files with multiple queries now load faster.
+* Visual fix. Measure-driven data label now supports adding date type field to custom label and allows to adjust the size of the visual.
+* On-object fix. Disambig menu on treemap wouldn't be auto expanding.
+* ExeutingUserObjectId is now properly populated.
+* The calculation group ribbon button in the model view is now behind a feature switch.
+* Component governance fix.
+* On-object fix. Customers won't get an error when selecting two groups on selection pane and merge them.
+
+
+## June 2023 QFE 2
+
+*Version: 2.118.1063.0, Released: July 05, 2023*
+
+Bug fixes/improvements:
+
+* Sign in fix. Users are now able to sign in to Power BI Desktop using Azure Virtual Desktop
+* Users are now able to sign out from their accounts.
+
+
+## June 2023 QFE 1
+
+*Version: 2.118.828.0, Released: June 22, 2023*
+
+Bug fixes/improvements:
+
+* Fix to visual. Customers now could add field parameter to their visuals.
+* Fix to On-object. Updated table selector getter.
+* All accent and special characters are now supported in Spanish.
+* Fix to On-object. Build visual menu now supports setting values as *percent of column total* or *Percent of row total*.
+* Google analytics V2 is now able to save data to Power BI.
+* Telemetry fix.
+* Fix to UnappliedQueries. All exported templates would now include lineage tags.
+* Fix to AS on-premises connection type.
+* Localization fix. Tooltip for OneLake data hub button on Home Tab is now available in multiple languages.
+* Fix to the ribbon. Customers won't see the key tips in the ribbon when formula bar is edited.
+
+
+
+ ## April 2023 QFE 3
+
+*Version: 2.116.966.0, Released: April 26, 2023*
+
+Bug fixes/improvements:
+
+* Telemetry fix.
+* Fix to data grid header. Updated design is now available to customers.
+* Fix to context menu. In the data grid checkable options for sorting and hide in report view now available.
+* On-object fix. Customers now able to use the Format pane to change Row Subtotals position from bottom to top on Matrix.
+
+
+## April 2023 QFE 2
+
+*Version: 2.116.884.0, Released: April 21, 2023*
+
+Bug fixes/improvements:
+
+* Fixed issues with x86 installer
+* 20% increment ranges are now available for 100% stacked bar chart bar chart in x-axis and 100% stacked column visual in y-axis
+
+## April 2023 QFE 1
+
+*Version: 2.116.843.0, Released: April 19, 2023*
+
+Bug fixes/improvements:
+
+* Fixed issues with x86 installer
+* Fix to title bar. Customers are now able to update from *Untitled* to the Report Title
 
 
 ## March 2023 QFE 2
@@ -23,8 +288,8 @@ See [What's new in Power BI](desktop-latest-update.md) for more information abou
  
 Bug fixes/improvements:
 
-•	Fix for Proxy models. Customers can now use calculated column with time intelligence function.
-•	Reduced installer file size to match previous version.
+* Fix for Proxy models. Customers can now use calculated column with time intelligence function.
+* Reduced installer file size to match previous version.
  
 ## March 2023 QFE 1
 
@@ -47,7 +312,7 @@ Bug fixes/improvements:
 *Version:2.114.803.0, Released: February 21, 2023*
 
 Bug fixes/improvements:
-* Fix for Proxy models regression. Customers can now convert PBI Datasets and AS Live models with format strings to Direct Query and refresh existing models.
+* Fix for Proxy models regression. Customers can now convert PBI semantic models and AS Live models with format strings to Direct Query and refresh existing models.
 * Fix for creating Power Apps and Power Automate visuals.
 * Fix for windows and dialogs rendering in some multimonitor configurations.
 * Filter pane regression fix. Filter card input will now show blank values as default when advanced filtering is selected.
@@ -61,7 +326,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 * AS Engine fix. DAX queries that contain query-scope calculated tables and send through external tools won't return error in certain cases.
 * DAX window functions fix. Now function won't return error in certain cases when the *relation* parameter use CalculateTable function.
-* Fix to data view filter menu.  Customers will see correct distinct values after applying filter/sort by another column.
+* Fix to data view filter menu. Customers will see correct distinct values after applying filter/sort by another column.
 
 
 ## October 2022 QFE 2
@@ -92,7 +357,7 @@ Bug fixes/improvements:
 *Version: 2.109.844.0, Released: September 28, 2022*
 
 Bug fixes/improvements:
-* Horizontal Fusion improvement: now covers more query patterns, including patterns that rely on "TreatAs" to filter results.
+* Horizontal Fusion improvement: now covers more query patterns, including patterns that rely on *TreatAs* to filter results.
 
 ## September 2022 QFE 1
 
@@ -113,7 +378,7 @@ Bug fixes/improvements:
 - EvaluateAndLog  DAX function fix: now the function works as expected and won't return an error. 
 - SAP HANA regression fixes: now power query won't show "the index is outside the bounds of the records" error message and there won't be missing values for columns when using Cube.AttributeMemberID on the query.  
 - Roll back change for cashing: cashing will be done the same way as in previous releases
-- Formula bar fixes for cases when “Shift+Enter” is used. 
+- Formula bar fixes for cases when **Shift+Enter** is used. 
 - “Apply/discard changes” regression fix.
 
 
@@ -134,7 +399,7 @@ Bug fixes/improvements:
 *Version: 2.107.841.0, Released: July 21, 2022*
 
 Bug fixes/improvements:
-- Fix for SAP BW: now customers will be able to retrieve a full dataset when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
+- Fix for SAP BW: now customers will be able to retrieve a full semantic model when querying SAP BW and using paging operations (Table.skip, Table.FirstN etc.) even if the data exceeds the page size.
 - Fix for SAP HANA: now when creating new connections or refreshing data, a display name will be shown instead of a technical column name in the fields well.
 
 
@@ -191,11 +456,11 @@ Bug fixes/improvements:
 *Version: 2.102.845.0, Released: February 24, 2022*
 
 Bug fixes/improvements:
-- Dynamics 365 (Dataverse) entry in GetData which redirects to Dataverse connector is removed from the GetData list.
+- Dynamics 365 (Dataverse) entry in GetData, which redirects to Dataverse connector is removed from the GetData list.
 - Fix for the conditional formatting regression: conditional formatting for action > page navigation will work. 
 - Fix for fields well description: a multiline field's tooltip won't be cut off and will be fully visible.
 - Mashup engine fix: headers will be requested just once when accessing headers on paged HTTP values.
-- Fix for a DirectQuery connection to a dataset in workspace with a '/' in the name. 
+- Fix for a DirectQuery connection to a semantic model in workspace with a '/' in the name. 
 - Fix for perspective selection in the proxy models navigator.
 
 ## December 2021 QFE 3
@@ -228,7 +493,7 @@ Bug fixes/improvements:
 *Version: 2.99.862.0, Released: November 30, 2021*
 
 Bug fixes/improvements:
-- Fix for ArcGIS Maps visual sign-in issue: now the sign-in window for the visual will pop-up (when "Power BI Desktop infrastructure update" preview feature is off).
+- Fix for ArcGIS Maps visual sign-in issue: now the sign-in window for the visual will pop up (when "Power BI Desktop infrastructure update" preview feature is off).
 
 ## November 2021 QFE 1
 
@@ -331,7 +596,7 @@ Bug fixes/improvements:
 Bug fixes/improvements:
 - Fix for Adobe Analytics Connector V1 endpoint token not renewed issue.
 - Fix for a frown error that could occur in the model view while loading older PBIX files: now no frown dialog will be shown. 
-- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI dataset or Azure Analysis Services instance as this scenario isn't supported.
+- Fix for a model view bug: now users can't create relationships between DirectQuery tables from the same Power BI semantic model or Azure Analysis Services instance as this scenario isn't supported.
 
 ## April 2021 QFE 1
 
@@ -370,9 +635,9 @@ Bug fixes:
 - Fix for Model view blurry fields and icon text inside a table card. 
 - Fix for Color picker: now it closes when you press ESC. 
 
-## Next steps
+## Related content
 
-[What's new in Power BI](desktop-latest-update.md)
-[Previous monthly updates to Power BI](desktop-latest-update-archive.md)
+* [What's new in Power BI](desktop-latest-update.md)
+* [Previous monthly updates to Power BI](desktop-latest-update-archive.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

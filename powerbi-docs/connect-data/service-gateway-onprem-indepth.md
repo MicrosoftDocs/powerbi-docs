@@ -1,6 +1,6 @@
 ---
 title: On-premises data gateway in-depth
-description: Use these resources about how the Power BI service works with Azure Active Directory and your local Active Directory when working with Analysis Services. 
+description: Use these resources about how the Power BI service works with Microsoft Entra ID and your local Active Directory when working with Analysis Services. 
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
@@ -41,9 +41,11 @@ See [Role-based security](service-gateway-enterprise-manage-ssas.md#role-based-s
 
 See [Row-level security](service-gateway-enterprise-manage-ssas.md#row-level-security).
 
-## What about Azure Active Directory?
+<a name='what-about-azure-active-directory'></a>
 
-See [Azure Active Directory](/data-integration/gateway/service-gateway-onprem-indepth#azure-active-directory).
+## What about Microsoft Entra ID?
+
+See [Microsoft Entra ID](/data-integration/gateway/service-gateway-onprem-indepth#azure-active-directory).
 
 ## How do I tell what my UPN is?
 
@@ -53,9 +55,11 @@ See [How do I tell what my UPN is?](/data-integration/gateway/service-gateway-on
 
 See [Map user names for Analysis Services data sources](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
-## Synchronize an on-premises Active Directory with Azure Active Directory
+<a name='synchronize-an-on-premises-active-directory-with-azure-active-directory'></a>
 
-See [Synchronize an on-premises Active Directory with Azure Active Directory](/data-integration/gateway/service-gateway-onprem-indepth#synchronize-an-on-premises-active-directory-with-azure-active-directory).
+## Synchronize an on-premises Active Directory with Microsoft Entra ID
+
+See [Synchronize an on-premises Active Directory with Microsoft Entra ID](/data-integration/gateway/service-gateway-onprem-indepth#synchronize-an-on-premises-active-directory-with-azure-active-directory).
 
 ## What to do next?
 
@@ -96,7 +100,7 @@ See [TLS 1.2 for gateway traffic](/data-integration/gateway/service-gateway-comm
 
 See [Restart a gateway](/data-integration/gateway/service-gateway-restart).
 
-## Next steps
+## Related content
 
 - [What is the on-premises data gateway?](service-gateway-onprem.md)
 - More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/06/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 
@@ -36,7 +36,7 @@ Getting access to these [Premium features of dataflows](dataflows-premium-featur
 
 You can't consume PPU dataflows (or any other content) outside the PPU environment (such as in Premium or other SKUs or licenses).
 
-For Premium capacities, your consumers of dataflows in Power BI Desktop don't need explicit licenses to consume and publish to Power BI. But to publish to a workspace or share a resulting dataset, you'll need at least a Pro license.
+For Premium capacities, your consumers of dataflows in Power BI Desktop don't need explicit licenses to consume and publish to Power BI. But to publish to a workspace or share a resulting semantic model, you'll need at least a Pro license.
 
 For PPU, everyone who creates or consumes PPU content must have a PPU license. This requirement varies from the rest of Power BI in that you need to explicitly license everyone with PPU. You can't mix Free, Pro, or even Premium capacities with PPU content unless you migrate the workspace to a Premium capacity.
 
@@ -80,7 +80,7 @@ The following diagram illustrates this setup. On the left is the architectural p
 
 ## Reduce refresh times for dataflows
 
-Imagine you have a large dataflow, but you want to build datasets off of that dataflow and decrease the time required to refresh it. Typically, refreshes take a long time to complete from the data source to dataflows to the dataset. Lengthy refreshes are difficult to manage or maintain.
+Imagine you have a large dataflow, but you want to build semantic models off of that dataflow and decrease the time required to refresh it. Typically, refreshes take a long time to complete from the data source to dataflows to the semantic model. Lengthy refreshes are difficult to manage or maintain.
 
 ### Solution: Use tables with Enable Load explicitly configured for referenced tables and don't disable load
 
@@ -94,9 +94,9 @@ To simplify the query processing of your dataflow and ensure any engine optimiza
 
 Enabling load also enables you to keep the complete view of lineage, because Power BI considers a non-enabled load dataflow as a new item. If lineage is important to you, don't disable load for entities or dataflows connected to other dataflows.
 
-## Reduce refresh times for datasets
+## Reduce refresh times for semantic models
 
-Imagine you have a dataflow that's large, but you want to build datasets off of it and decrease the orchestration. Refreshes take a long time to complete from the data source to dataflows to datasets, which adds increased latency.
+Imagine you have a dataflow that's large, but you want to build semantic models off of it and decrease the orchestration. Refreshes take a long time to complete from the data source to dataflows to semantic models, which adds increased latency.
 
 ### Solution: Use DirectQuery dataflows
 
@@ -104,10 +104,10 @@ DirectQuery can be used whenever a workspace's enhanced compute engine (ECE) set
 
 To summarize, by using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
-- **Avoid separate refresh schedules**: DirectQuery connects directly to a dataflow, which removes the need to create an imported dataset. As such, by using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
+- **Avoid separate refresh schedules**: DirectQuery connects directly to a dataflow, which removes the need to create an imported semantic model. As such, by using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the semantic model to ensure your data is synchronized.
 - **Filtering data**: DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and in this way work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the ECE) to filter dataflow data and work with the filtered subset you need.
 
-Generally, by using DirectQuery trades up-to-date data in your dataset with slower report performance compared to import mode. Consider this approach only when:
+Generally, by using DirectQuery trades up-to-date data in your semantic model with slower report performance compared to import mode. Consider this approach only when:
 
 - Your use case requires low latency data coming from your dataflow.
 - The dataflow data is large.
@@ -119,7 +119,7 @@ Generally, by using DirectQuery trades up-to-date data in your dataset with slow
 The unified Dataflows connector can significantly reduce evaluation time for steps performed over computed entities, such as performing joins, distinct, filters, and group by operations. There are two specific benefits:
 
 - Downstream users connecting to the Dataflows connector in Power BI Desktop can take advantage of better performance in authoring scenarios because the new connector supports query folding.
-- Dataset refresh operations can also fold to the enhanced compute engine, which means even incremental refresh from a dataset can fold to a dataflow. This capability improves refresh performance and potentially decreases latency between refresh cycles.
+- Semantic model refresh operations can also fold to the enhanced compute engine, which means even incremental refresh from a semantic model can fold to a dataflow. This capability improves refresh performance and potentially decreases latency between refresh cycles.
 
 To enable this feature for any Premium dataflow, make sure the [compute engine](dataflows-premium-features.md#use-the-enhanced-compute-engine) is explicitly set to **On**. Then use the Dataflows connector in Power BI Desktop. You must use the August 2021 version of Power BI Desktop or later to take advantage of this feature.
 
@@ -171,7 +171,7 @@ For more information about refresh, see [Understanding and optimizing dataflows 
 
 ## Ensure you protect data assets downstream
 
-You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](../../enterprise/service-security-sensitivity-label-downstream-inheritance.md).
+You can use sensitivity labels to apply a data classification and any rules you configured on downstream items that connect to your dataflows. To learn more about sensitivity labels, see [sensitivity labels in Power BI](../../enterprise/service-security-sensitivity-label-overview.md). To review inheritance, see [Sensitivity label downstream inheritance in Power BI](/fabric/governance/service-security-sensitivity-label-downstream-inheritance).
 
 ## Multi-geo support
 
@@ -188,7 +188,7 @@ Many customers today have a need to secure your data assets behind a private end
 | Read virtual network data sources through an on-premises gateway. | Supported through an on-premises gateway |
 | Write data to a sensitivity label account behind a virtual network by using an on-premises gateway. | Not yet supported |
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

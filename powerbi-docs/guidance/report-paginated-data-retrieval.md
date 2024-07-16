@@ -1,12 +1,13 @@
 ---
 title: Data retrieval guidance for paginated reports
 description: Guidance for creating data sources and datasets for Power BI paginated reports.
-author: maggiemsft
-ms.author: maggies
-ms.reviewer: nisrinivasan
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 12/15/2022
 ---
 
@@ -39,16 +40,16 @@ In Power BI Report Builder, you can use the relational query designer to graphic
 
 ### Analytic data sources
 
-Analytic data sources are well suited to both operational and analytic reports, and can deliver fast summarized query results even over very large data volumes. Model measures and KPIs can encapsulate complex business rules to achieve summarization of data. These data sources, however, are not suited to reports that need to retrieve very large datasets (in excess of 10,000 rows).
+Analytic data sources—also known as _data models_ or just _models_—are well suited to both operational and analytic reports, and can deliver fast summarized query results even over very large data volumes. Model measures and KPIs can encapsulate complex business rules to achieve summarization of data. These data sources, however, aren't suited to reports that need to retrieve very large volumes of data (in excess of 10,000 rows).
 
-In Power BI Report Builder, you have a choice of two query designers: The Analysis Services DAX query designer, and the Analysis Services MDX query designer. These designers can be used for Power BI dataset data sources, or any SQL Server Analysis Services or Azure Analysis Services model—tabular or multidimensional.
+In Power BI Report Builder, you have a choice of two query designers: The Analysis Services DAX query designer, and the Analysis Services MDX query designer. These designers can be used for Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) data sources, or any SQL Server Analysis Services or Azure Analysis Services model—tabular or multidimensional.
 
-We suggest you use the DAX query designer—providing it entirely meets your query needs. If the model doesn't define the measures you need, you'll need to switch to query mode. In this mode, you can customize the query statement by adding expressions (to achieve summarization).
+We recommend that you use the DAX query designer—providing it entirely meets your query needs. If the model doesn't define the measures you need, you'll need to switch to query mode. In this mode, you can customize the query statement by adding expressions (to achieve summarization).
 
 The MDX query designer requires your model to include measures. The designer has two capabilities not supported by the DAX query designer. Specifically, it allows you to:
 
 - Define query-level calculated members (in MDX).
-- Configure data regions to request [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-function) in non-detail groups. If your report needs to present summaries of semi- or non-additive measures (like time intelligence calculations, or distinct counts), it will likely be more efficient to use server aggregates than to retrieve low-level detail rows and have the report compute summarizations.
+- Configure data regions to request [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-functions-reference) in non-detail groups. If your report needs to present summaries of semi- or non-additive measures (like time intelligence calculations, or distinct counts), it will likely be more efficient to use server aggregates than to retrieve low-level detail rows and have the report compute summarizations.
 
 ## Query result size
 
@@ -96,14 +97,14 @@ We recommend _dataset parameterization_ when you anticipate it's unlikely that a
 
 ## Non-native data sources
 
-If you need to develop paginated reports based on data sources that aren't [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can first develop a Power BI Desktop data model. This way, you can connect to over 100 [Power BI data sources](../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
+If you need to develop paginated reports based on data sources that aren't [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you should first develop a data model in Power BI Desktop. That way, you can connect to hundreds of [data sources supported by Power BI](../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI semantic model.
 
 ## Data integration
 
 If you need to combine data from multiple data sources, you have two options:
 
 - **Combine report datasets**: If the data sources are [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can consider creating calculated fields that use the [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) or [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) Report Builder functions.
-- **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
+- **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI semantic model.
 
 ## Network latency
 Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region.
@@ -142,7 +143,7 @@ If you need to delete query fields from your dataset, we recommend you remove th
 
 When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish a report.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

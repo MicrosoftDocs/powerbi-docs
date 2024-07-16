@@ -76,9 +76,9 @@ Once you've completed the prerequisites and downloaded the sample data, you're r
 
 ## Clean up resources
 
-When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and dataset. See [Clean up resources](../../fundamentals/service-get-started.md#clean-up-resources) for instructions about how to do this.
+When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and semantic model. See [Clean up resources](../../fundamentals/service-get-started.md#clean-up-resources) for instructions about how to do this.
 
-## Next steps
+## Related content
 
 You've tried the Q&A virtual assistant in the Power BI mobile apps for iOS. Learn more about Q&A in the Power BI service.
 > [!div class="nextstepaction"]

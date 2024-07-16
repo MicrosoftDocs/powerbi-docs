@@ -33,7 +33,7 @@ To change the `FullDomainResolutionEnabled` configuration on the gateway to enab
    </setting>
    ```
 
-## Next steps
+## Related content
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 

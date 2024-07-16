@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 01/08/2024
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -68,7 +68,7 @@ To download the Power BI Desktop executable from the Download Center, select **D
 
 You're prompted to run the installation file after you finish downloading it.
 
-Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The *.msi* packages are no longer available. You need the executable for installation. This approach makes distribution, updates, and installation much easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
+Power BI Desktop ships as a single *.exe* installation package that contains all supported languages, with separate *.exe* files for the 32-bit and 64-bit versions. The *.msi* packages are no longer available. You need the executable for installation. This approach makes distribution, updates, and installation easier and more convenient, especially for administrators. You can also use command-line parameters to customize the installation process, as described in [Using command-line options during installation](#use-command-line-options-during-installation).
 
 After you launch the installation package, Power BI Desktop installs as an application and runs on your desktop.
 
@@ -85,17 +85,17 @@ When you launch Power BI Desktop, a welcome screen appears.
 
 When you launch Power BI Desktop for the first time, if the installation isn't an upgrade, you're prompted to fill out a form or sign in to the Power BI service before you can continue.
 
-After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Next steps](#next-steps) section for links to guides to help you get started using Power BI Desktop.
+After that, you can begin creating data models or reports, and share them with others on the Power BI service. Check out the [Related content](#related-content) section for links to guides to help you get started using Power BI Desktop.
 
 ## Minimum requirements
 
 The following list provides the minimum requirements to run Power BI Desktop:
 
 > [!IMPORTANT]
-> Power BI Desktop is no longer supported on Windows 7.
+> Power BI Desktop is no longer supported on Windows 8.1.
 
-* Windows 8.1 or Windows Server 2012 R2 or later.
-* .NET 4.6.2 or later.
+* Windows 10 or Windows Server 2016 or later.
+* .NET 4.7.2 or later.
 * Microsoft Edge browser (Internet Explorer is no longer supported)
 * Memory (RAM): At least 2 GB available, 4 GB or more recommended.
 * Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported because some controls (such as closing the startup screens) display beyond those resolutions.
@@ -135,7 +135,6 @@ You can also use the following syntax parameters, which you specify with a `prop
 |`INSTALLDESKTOPSHORTCUT`  | A value of `1` adds a shortcut to the Windows desktop. |
 |`INSTALLLOCATION`  | The file path where you want Power BI Desktop installed. |
 |`LANGUAGE`   | The locale code, for example, `en-US`, `de-DE`, `pr-BR` to force the default language of the application. If you don't specify the language, Power BI Desktop uses the Windows OS language. You can change this setting in the **Options** dialog. |
-|`REG_SHOWLEADGENDIALOG` | A value of `0` disables the dialog that appears before you sign in to Power BI Desktop. |
 |`DISABLE_UPDATE_NOTIFICATION`| A value of `1` disables update notifications. |
 
 For example, you can run Power BI Desktop with the following options and parameters to install without any user interface, use the German language:
@@ -161,11 +160,13 @@ If you're deploying Power BI Desktop to your users with a tool that requires a W
 
     The output folder contains a folder named *AttachedContainer*, which includes the *.msi* files.
 
-Upgrading an install from an *.exe* to a *.msi* that you've extracted from an *.exe* isn't supported. In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
+Upgrading an install from an *.exe* to an .msi* that you've extracted from an *.exe* isn't supported. In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
 ### Power BI Desktop in a virtualized environment
 
 Power BI Desktop is fully supported on [Azure Virtual Desktop](/azure/virtual-desktop/overview) (formerly Windows Virtual Desktop) and [Windows 365](/windows-365/overview). 
+
+Running Power BI Desktop as a virtualized application (for example, as a Citrix application) isn't supported.
 
 ### Issues with previous releases of Power BI Desktop
 
@@ -193,7 +194,7 @@ In certain circumstances, including some screen resolution configurations, some 
 
 This issue might resolve after later Windows updates are released.
 
-## Next steps
+## Related content
 
 After you install Power BI Desktop, see the following content to help you get up and running quickly:
 

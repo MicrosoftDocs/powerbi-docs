@@ -17,7 +17,7 @@ ms.reviewer: saurkumar
   
  If the indicator and gauge are adjacent in the gauge panel and show data from different fields, you might want to add labels to make it clear what data the gauge and indicator convey.  
   
- Gauge and indicator options can be set by using expressions. For more information, see [Expressions &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/expressions-report-builder-and-ssrs).  
+ Gauge and indicator options can be set by using expressions. For more information, see [Expressions in Power BI Report Builder](../../expressions/report-builder-expressions.md).  
   
 You create and modify Power BI paginated reports in [Power BI Report Builder](../../report-builder-power-bi.md).
   
@@ -93,6 +93,6 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 1. Select **OK**.
   
-## Next steps
+## Related content
 
- [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  
+- [Indicators &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/indicators-report-builder-and-ssrs)  

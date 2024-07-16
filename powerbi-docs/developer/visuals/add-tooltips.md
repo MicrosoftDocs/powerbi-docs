@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/29/2022
+ms.date: 12/29/2023
+# Customer intent: As a developer, I want to learn how to add tooltips to my custom visuals in Power BI so that I can provide more details to users.
 ---
 
 # Add tooltips to your Power BI visuals
@@ -243,7 +244,7 @@ See an example of the modern tooltips feature being used in the [SampleBarChart]
 > [!NOTE]
 > Adding this feature to the *capabilities.json* file gives the user the possibility of enabling this feature for the report. Keep in mind that the user will still have to **[enable the modern tooltip feature](../../create-reports/desktop-visual-tooltips.md#turn-on-the-new-tooltips)** in the report settings.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Tooltip utils](utils-tooltip.md)

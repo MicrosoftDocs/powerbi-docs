@@ -1,6 +1,6 @@
 ---
 title: "Updates to the experience in the Power BI service"
-description: Read about changes coming to the Power BI online service (app.powerbi.com).
+description: Learn about changes coming to the Power BI online service (app.powerbi.com).
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'kdholakia'
@@ -8,8 +8,8 @@ ms.service: powerbi
 ms.search.form: product-power-bi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 07/08/2022
-Customer intent: As a Power BI customer or potential customer, I'm interested in reading about the new experience in the Power BI service.
+ms.date: 07/10/2023
+#Customer intent: As a Power BI customer or potential customer, I'm interested in reading about the new experience in the Power BI service.
 LocalizationGroup: Get started
 ---
 
@@ -17,79 +17,87 @@ LocalizationGroup: Get started
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This article spells out the changes that are coming to the Power BI service, and maps the old experience to the new experience.
+This article describes upcoming changes for the Power BI service, and maps the old experience to the new experience.
 
 > [!NOTE]
-> These features are currently under experimentation. Some customers may not see them yet. We'd love to hear your feedback at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
+> The features described in this article are currently under experimentation. Some customers might not see the features or changes. We'd love to hear your feedback at [Microsoft Fabric Ideas](https://ideas.fabric.microsoft.com/).
 
-Here’s an overview of the changes:
+Here's an overview of the feature changes:
 
-**Browse changes** The left navigation links for **Recent**, **Favorites**, and **Shared with me** full page lists are being combined in a new **Browse** tab. You can still search and filter these lists, and now you can even filter by keyword.
+- **Location of browsing links**. The links for full page lists, including **Recent**, **Favorites**, and **Shared with me**, are relocating to a new **Browse** tab on the navigation pane. You can continue to search and filter these lists, and now you can also filter by keyword.
 
-**Left navigation changes** A major change coming to the left navigation pane is tooltips. Before, to see what an icon represented in the left navigation pane, you had to expand the entire menu.
+- **Tooltips for navigation items**. A major change coming to the navigation pane is **tooltips**. In the current design, you need to expand the entire menu to read the explanation for an icon. Tooltips let you quickly discover the purpose of icons and menu items.
 
-**Workspace flyout menu changes** The **My Workspace** link moves below the **Search** box in the workspace flyout menu.
+- **Reordered Workspaces menu**. On the **Workspaces** extended menu, the **My Workspace** link is moving below the **Search** box.
 
-**Get Data changes** The Get Data experience moves from the bottom of the left navigation pane to the **Create** tab.
+- **Major changes for Get Data**. The **Get Data** feature is relocating from the bottom of the navigation pane to the **Create** tab. There are also major changes to the process for bringing data into the Power BI service.
 
-## Browse changes
+## New navigation tab: Browse
 
 Introducing the **Browse** page: 
  
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-browse.png" alt-text="Screenshot of the new Browse page in the Power BI service.":::
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-browse.png" alt-text="Screenshot of the new Browse page in the Power BI service." border="false":::
 
-**Browse** simplifies the left navigation. It includes as a sub-navigation all the lists that were previously available individually: **Recent**, **Favorites**, and **Shared with me**. 
+The addition of the **Browse** page simplifies the items in the navigation pane. The **Browse** page provides subnavigation for the lists that were previously available individually. On the new page, you can access the **Recent**, **Favorites**, and **Shared with me** lists.
 
-### Improved filtering
+### Filtering improvements
 
-It’s easier to find content in these lists with a new experience for filtering by keyword and improved filtering by content type, time, and endorsement.
+It's easier to find content in these lists with a new experience that lets you **Filter by keyword**. You can also filter the content by **Type**, **Time**, and **Owner** endorsement.
 
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-filter.png" alt-text="Screenshot showing the expanded filtering experience.":::
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-filter.png" alt-text="Screenshot that shows the expanded filtering experience that lets you filter by type, time, and owner." border="false":::
 
-Any browser bookmarks you made for the **Recent**, **Favorites**, and **Shared with me** pages will now take you to the new **Browse** view for each.
+Any browser bookmarks you saved for the **Recent**, **Favorites**, and **Shared with me** pages now take you to the new **Browse** view for each list.
 
-The Browse page will also be available in the Power BI personal app for Microsoft Teams. 
+The new **Browse** page is also available in the Power BI personal app for Microsoft Teams. 
 
 :::image type="content" source="../create-reports/media/service-experience-changes/experience-new-browse-teams.png" alt-text="Screenshot showing the new Browse experience also in the Power BI personal app in Teams.":::
 
-Don’t have the Power BI app for Teams yet? Get the [Power BI app for Microsoft Teams](../collaborate-share/service-microsoft-teams-app.md).
+Don't have the Power BI app for Microsoft Teams? Get the [app](../collaborate-share/service-microsoft-teams-app.md).
 
-## Navigation pane changes
+## Tooltips for navigation items
 
-The left navigation pane will feature tooltips to explain what the icons represent. You see the tooltips by hovering over the icon in the nav pane.  With the new update, the left nav no longer expands. Instead, you hover over any icon and a tooltip appears.
+The navigation pane now features tooltips to explain what the icons represent. You see the tooltips by hovering over the icon in the navigation pane. With these updates, the navigation pane no longer expands. Instead, you hover over any icon and the tooltip appears.
 
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-tooltips.png" alt-text="Screenshot showing the navigation pane with tooltips.":::
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-tooltips.png" alt-text="Screenshot that shows the navigation pane with the tooltip open for the Create tab." border="false":::
 
-We're also updating the way item navigation occurs. Previously, you could navigate between items through the expanded left nav pane workspace dropdown. Because the updated left nav pane is permanently collapsed, this flow goes away. You can still navigate between items by selecting the workspace icon, then selecting the relevant item from your workspace page.
+### Access to My workspace items
 
-## Workspace menu flyout changes
+We're also updating the way item navigation occurs for workspace items. Previously, you could navigate between items by using the drop-down list in the expanded navigation pane. The updated navigation pane is permanently sized and can't be expanded, so the drop-down list isn't available. You can navigate between your items by selecting **My workspace** and accessing the items on the page.
 
-In the previous workspace flyout, **My Workspace** was above the **Search** box.
+## Updated Workspaces extended menu
+
+In previous versions of the Power BI service, the **My Workspace** item is listed above the **Search** box on the **Workspaces** extended menu:
  
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-old-my-workspace.png" alt-text="Screenshot showing the old placement of My Workspace."::: 
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-old-my-workspace.png" alt-text="Screenshot that shows the My Workspace item above the Search box on the Workspaces extended menu."::: 
 
-It's shifting to below the **Search** box in the workspace flyout.
+The location of **My Workspace** is shifting to below the **Search** box on the extended menu:
 
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-my-workspace.png" alt-text="Screenshot showing the new placement of My Workspace.":::
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-my-workspace.png" alt-text="Screenshot that shows the new placement of My Workspace on the Workspaces extended menu below the Search box." border="false":::
  
-## Get Data changes
+## New experience for Get Data
 
-**Get data** is moving from the left navigation pane to the **Create** tab. Previously, to access **Get data**, you selected the icon at the bottom of the nav pane.
+The **Get Data** feature is transitioning to a broader experience for loading data into the Power BI service.
 
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-old-get-data.png" alt-text="Screenshot showing the old location of Get Data.":::
+In previous versions of the Power BI service, you access the **Get data** feature by using the link at the bottom of the navigation pane:
 
-Now the Get data experience is moving to the **Create** experience. You access it by selecting **Create** > **Report** > **these options**, and then you're on the **Get Data** page. 
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-old-get-data.png" alt-text="Screenshot that shows the Get Data link at the bottom of the navigation pane.":::
 
-:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-get-data.png" alt-text="Screenshot showing the new location of the Get Data experience.":::
+The new process for loading data into Power BI is now centered on the **Create** page. On this page, you can choose to enter your data or select from existing semantic models. There's also an option to help you build your first report.
 
-## Next steps
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-new-get-data.png" alt-text="Screenshot showing the new experience for loading data in the Power BI service." border="false":::
 
-Got feedback? We'd love to hear it at [Power BI Ideas](https://ideas.powerbi.com/ideas/).
+The **Paste or manually enter data** option lets you copy and paste data into a Power Query table, or enter data manually. After the data is present, you can create a report or semantic model.
 
-Explore these training resources for Power BI:
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-manual-data-entry.png" alt-text="Screenshot that shows the Power Query UX for adding data manually in the Power BI service." border="false":::
 
-> [!div class="nextstepaction"]
->[Learn Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+The **Pick a published semantic model** option opens the **OneLake data hub** so you can browse available semantic models. Choose a semantic model and the type of report to create.
 
-> [!div class="nextstepaction"]
-> [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+:::image type="content" source="../create-reports/media/service-experience-changes/experience-choose-published-data.png" alt-text="Screenshot that shows available semantic models in the OneLake data hub in the Power BI service." border="false":::
+
+The [Get started creating in the Power BI service](service-get-started.md#step-1-add-data-to-create-a-report) tutorial describes another way to load data into the Power BI service.
+
+## Related content
+
+- Share your feedback about Power BI at [Microsoft Fabric Ideas](https://ideas.fabric.microsoft.com/).
+- Learn all about [Microsoft Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link).
+- Become a [Microsoft Certified: Power BI Data Analyst Associate](/certifications/power-bi-data-analyst-associate/).

@@ -25,8 +25,9 @@ To try setting the axis interval with sample data, see [Tutorial: Add a Column C
 >  The category axis is usually the horizontal or x-axis. However, for bar charts, the category axis is the vertical or y-axis.  
 >
 > This topic doesn't apply to:
->- Date or time values on the category axis. Be default, **DateTime** values appear as days. You can specify a different date or time interval, such as a month or time interval. For more information, see [Format Axis Labels as Dates or Currencies](/sql/reporting-services/report-design/format-axis-labels-as-dates-or-currencies-report-builder-and-ssrs).
->- Pie, doughnut, funnel or pyramid charts, which don't have axes. 
+>
+>- Date or time values on the category axis. Be default, **DateTime** values appear as days. You can specify a different date or time interval, such as a month or time interval. For more information, see [Format Axis Labels as Dates or Currencies &#40;Power BI Report Builder&#41;](format-axis-labels-dates-currencies-report-builder.md).
+>- Pie, doughnut, funnel or pyramid charts, which don't have axes.
   
 ## Show all the category labels on the x-axis  
 
@@ -79,10 +80,11 @@ By default, axis interval is set to Auto. This procedure explains how to set it 
   
 1. Select **OK**.
   
-## Next steps  
- [Formatting a Chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Formatting Data Points on a Chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
- [Sort Data in a Data Region (Power BI Report Builder)](/sql/reporting-services/report-design/sort-data-in-a-data-region-report-builder-and-ssrs)     
- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)   
- [Plot Data on a Secondary Axis &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plot-data-on-a-secondary-axis-report-builder-and-ssrs)  
+## Related content
+
+- [Formatting a Chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+- [Formatting Data Points on a Chart (Power BI Report Builder)](/sql/reporting-services/report-design/formatting-data-points-on-a-chart-report-builder-and-ssrs)   
+- [Sort Data in a Data Region (Power BI Report Builder)](/sql/reporting-services/report-design/sort-data-in-a-data-region-report-builder-and-ssrs)     
+- [Specify a Logarithmic Scale &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/specify-a-logarithmic-scale-report-builder-and-ssrs)   
+- [Plot Data on a Secondary Axis &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/plot-data-on-a-secondary-axis-report-builder-and-ssrs)  
   

@@ -1,18 +1,19 @@
 ---
 title: Microsoft's BI transformation
 description: Learn how Microsoft successfully drives a data culture for business decision making. It describes their strategy and vision for BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/11/2022
 ---
 # Microsoft's BI transformation
 
 > [!TIP]
-> This article focuses on Microsoft's experience establishing a [Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Power BI adoption roadmap](powerbi-adoption-roadmap-overview.md).
+> This article focuses on Microsoft's experience establishing a [Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md). When setting up your own Center of Excellence, we recommend that you also review the information covered in the [Fabric adoption roadmap](fabric-adoption-roadmap.md).
 
 This article targets IT professionals and IT managers. You'll learn about our BI strategy and vision, which enables us to continuously leverage our data as an asset. You'll also learn how we successfully drive a data culture of business decision making with Power BI.
 
@@ -81,12 +82,12 @@ We see much evidence to support that a comprehensive and robust COE is critical 
 
 We invite you to read the articles in this COE series to learn more. Let's help you discover how your organization can embrace change to deliver success.
 
-## Next steps
+## Related content
 
 For more information about this article, check out the following resources:
 
 - [Establish a Center of Excellence](center-of-excellence-establish.md)
-- [Power BI adoption roadmap: Center of Excellence](powerbi-adoption-roadmap-center-of-excellence.md)
+- [Fabric adoption roadmap: Center of Excellence](fabric-adoption-roadmap-center-of-excellence.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 
@@ -96,4 +97,4 @@ In the [next article in this series](center-of-excellence-establish.md), learn h
 
 Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
 
-You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.
+You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/en-us/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

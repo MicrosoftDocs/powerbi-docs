@@ -5,48 +5,12 @@
   - name: Known issues
     expanded: false
     items:
-    - name: Active known issues for Power BI
-      href: known-issues/power-bi-known-issues.md  
-    - name: Tenant migrations paused
-      href: known-issues/known-issue-308-tenant-migrations-paused.md
-    - name: Paused visuals in Power BI Desktop Performance analyzer don't refresh
-      href: known-issues/known-issue-321-paused-visuals-in-performance-analyzer-dont-refresh.md
-    - name: Working in a dataflow shows irrelevant upgrade workspace message
-      href: known-issues/known-issue-290-dataflow-show-upgrade-workspace-message.md
-    - name: Accessing Power BI app report is denied due to no dataset access
-      href: known-issues/known-issue-284-accessing-app-report-denied-due-to-no-dataset-access.md
-    - name: Excel add-in can't find Power BI datasets
-      href: known-issues/known-issue-274-excel-add-in-cant-find-datasets.md
-    - name: Search strings that include Japanese symbols don't return matches
-      href: known-issues/known-issue-222-search-strings-japanese-symbols-dont-work.md
-    - name: Gateway data source owners cannot update data source credentials
-      href: known-issues/known-issue-220-gateway-data-source-owners-cant-update-credentials.md
-    - name: Excel Desktop crashes when opening data model that was refreshed by Power BI Service
-      href: known-issues/known-issue-214-excel-desktop-crashes-opening-data-model.md
-    - name: Visual context menus are cut off when using Power BI Embedded
-      href: known-issues/known-issue-213-visual-context-menus-cut-off-embedded.md
-    - name: GetVisuals() API for custom visuals may return a blank title
-      href: known-issues/known-issue-211-getvisuals-api-return-blank-title.md
-    - name: The scorecard visual's display name is blank in the visualizations pane
-      href: known-issues/known-issue-210-scorecard-visuals-display-name-blank-visualizations-pane.md
-    - name: Datamart editor doesn't allow saving row-level security (RLS) rules that contain double quotes in the string filter
-      href: known-issues/known-issue-208-datamart-editor-doesnt-allow-row-level-security-rules-with-double-quotes.md
-    - name: Dremio connector is missing
-      href: known-issues/known-issue-204-dremio-connector-missing.md
-    - name: Using a link in a paginated report subscription doesn't apply the report parameters
-      href: known-issues/known-issue-195-link-in-paginated-subscription-doesnt-apply-report-parameters.md
-    - name: Applying Show bar only for data bars doesn't work in Power BI Service or Power BI Desktop
-      href: known-issues/known-issue-187-show-bar-only-data-bars-doesnt-work.md
-    - name: Multi-role row-level security for composite models may fail
-      href: known-issues/known-issue-178-multi-role-rls-composite-model-fail.md
-    - name: Try it button missing on REST API pages
-      href: known-issues/known-issue-169-try-it-button-missing.md            
-    - name: Long running, failed or stuck dataflow in Power BI Premium 
-      href: known-issues/known-issue-dataflow-on-premium.md   
-    - name: Unable to open protected Desktop files 
-      href: known-issues/known-issue-unable-open-protected-desktop-file.md   
+    - name: Active known issues for Power BI + Fabric - chart
+      href: /fabric/get-started/fabric-known-issues
+    - name: Active known issues for Fabric + Power BI - interactive report
+      href: https://support.fabric.microsoft.com/known-issues
   - name: Troubleshoot
-    expanded: false
+    expanded: true
     items:
     - name: Embedded, REST API, PowerShell
       expanded: false
@@ -111,10 +75,12 @@
       - name: Troubleshoot Power BI REST APIs
         href: ../developer/embedded/troubleshoot-rest-api.md  
       - name: Troubleshoot deployment pipelines
-        href: ../create-reports/deployment-pipelines-troubleshooting.yml     
+        href: /fabric/cicd/troubleshoot-cicd     
     - name: Account and license
       expanded: false
       items:
+      - name: Troubleshoot getting a license
+        href: ../support/service-troubleshoot-signup.md   
       - name: Troubleshoot sign-in issues
         href: ../support/power-bi-cannot-sign-in.md   
       - name: Troubleshoot sign-in for Power BI Desktop

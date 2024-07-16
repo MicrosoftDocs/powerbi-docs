@@ -46,11 +46,14 @@
         "Power BI"
       ],
       "titleSuffix": "Power BI",
-      "feedback_system": "GitHub",
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://ideas.fabric.microsoft.com/?forum=2d80fd4a-16cb-4189-896b-e0dac5e08b41",
+      "feedback_help_link_url": "https://community.fabric.microsoft.com/powerbi",
+      "feedback_help_link_type": "ask-the-community",
       "feedback_github_repo": "MicrosoftDocs/powerbi-docs",
-      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi",
       "search.appverid": "met150",
       "search.app": [
+        "fabric-powerbi-docs",
         "capaedac-PowerBI",
         "powerbi",
         "powerbipremium-docs",

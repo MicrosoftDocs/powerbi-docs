@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: Advanced data preparation"
 description: "Learn how Power BI advanced data preparation is about improving the reach and reusability of dataflows."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 07/02/2022
 ---
 
@@ -25,7 +26,7 @@ Investing time and effort in centralized data preparation helps to:
 
 The *advanced data preparation* usage scenario expands on the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario. Advanced data preparation is about increasing dataflow reuse by multiple users across various teams and for various use cases.
 
-Separate workspaces, organized by dataflow purpose, are helpful when dataflow output is provided to multiple dataset creators, especially when they are on different teams in the organization. Separate workspaces are also helpful for managing security roles when the people who create and manage dataflows are different from the people consume them.
+Separate workspaces, organized by dataflow purpose, are helpful when dataflow output is provided to multiple semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) creators, especially when they are on different teams in the organization. Separate workspaces are also helpful for managing security roles when the people who create and manage dataflows are different from the people consume them.
 
 > [!NOTE]
 > The advanced data preparation scenario is the second of the data preparation scenarios. This scenario builds upon what can be done with centralized dataflows as described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) scenario.
@@ -42,36 +43,39 @@ Separate workspaces, organized by dataflow purpose, are helpful when dataflow ou
 The focus of this advanced data preparation scenario is on:
 
 - The use of separate dataflows based on purpose: staging, transformation, or final. We recommend using *composable building blocks* to obtain greater reuse, in various combinations, to support specific user requirements. Composable building blocks are described later in this article.
-- The use of separate workspaces that support dataflow *creators* or dataflow *consumers*. Data modelers, who consume dataflows, may be on different teams and/or have different use cases.
+- The use of separate workspaces that support dataflow *creators* or dataflow *consumers*. Data modelers, who consume dataflows, might be on different teams and/or have different use cases.
 - The use of linked tables (also known as *linked entities*), computed tables (also known as *computed entities*), and the enhanced compute engine.
 
 > [!NOTE]
-> Sometimes the terms *dataset* and *data model* are used interchangeably. Generally, from a Power BI service perspective, it's referred to as *dataset*. From a development perspective, it's referred to as a *data model* (or *model* for short). In this article, both terms have the same meaning. Similarly, a dataset creator and a data modeler have the same meaning.
+> Sometimes the terms *semantic model* and *data model* are used interchangeably. Generally, from a Power BI service perspective, it's referred to as *semantic model*. From a development perspective, it's referred to as a *data model* (or *model* for short). In this article, both terms have the same meaning. Similarly, a semantic model creator and a data modeler have the same meaning.
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components that support the advanced data preparation scenario.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-inline.png" alt-text="Diagram of advanced data preparation, which is about improving the reach and reusability of dataflows. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-inline.svg" alt-text="Diagram shows advanced data preparation, which is about improving the reach and reusability of dataflows. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-advanced-data-preparation/usage-scenario-advanced-data-preparation-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#advanced-data-preparation) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | The dataflow creator develops a collection of tables within a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). For a dataflow that's intended for reuse, it's common (but not required) that the creator belongs to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | The dataflow connects to data from one or more data sources. |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Dataflow creators develop dataflows by using Power Query Online, which is a [web-based version of Power Query](/power-query/power-query-what-is-power-query#where-can-you-use-power-query). |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | A *[staging dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#staging-dataflows)* is created in a workspace that's dedicated to the centralized management of dataflows. A staging dataflow copies the raw data as-is from the source. Few, if any, transformations are applied. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | A *[transformation dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#transformation-dataflows)* (also known as a *cleansed dataflow*) is created in the same workspace. It sources data by using [linked table(s)](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-linked-tables) to the staging dataflow. [Computed table(s) ](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-a-computed-table) include transformation steps that prepare, cleanse, and reshape the data. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | Dataflow creators have access to manage content in the workspace that's dedicated to the centralized management of dataflows. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | One or more other workspaces exist that are intended to provide access to the final dataflow, which delivers production-ready data to data models. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | The *final dataflow* is created in a workspace available to data modelers. It sources data by using linked table(s) to the transformation dataflow. Computed table(s) represent the prepared output that's visible to data modelers who are granted the workspace **viewer** role. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | Dataset creators (who consume the dataflow output) have viewer access to the workspace that contains the final dataflow output. Dataflow creators also have access to manage and publish content in the workspace (not depicted in the scenario diagram). |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | All of the workspaces involved have their [license mode](../collaborate-share/service-create-the-new-workspaces.md#premium-capacity-settings) set to **Premium per user**, **Premium per capacity**, or **Embedded**. These license modes allow for the use of linked tables and computed tables across workspaces, which are required in this scenario. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | Dataset creators use the *final dataflow* as a [data source](../transform-model/desktop-connect-dataflows.md) when developing a data model in Power BI Desktop. When ready, the dataset creator publishes the Power BI Desktop file (.pbix) that contains the data model to the Power BI service (not depicted in the scenario diagram). |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | Power BI administrators manage settings in the Admin portal. |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | In the Admin portal, Power BI administrators can configure [Azure connections](../admin/service-admin-portal-azure-connections.md) to store dataflow data in their [Azure Data Lake Storage Gen2 (ADLS Gen2)](/azure/storage/blobs/data-lake-storage-introduction) account. Settings include assigning a tenant-level storage account and enabling workspace-level storage permissions.|
-| ![Item 14.](media/common/icon-14-red-30x30.png) |By default, dataflows store data by using internal storage that's managed by the Power BI service. Optionally, data output by the dataflow can be stored in the organization's ADLS Gen2 account. |
-| ![Item 15.](media/common/icon-15-red-30x30.png) | To connect to data sources that reside within a private organizational network, an [On-premises data gateway](/power-query/dataflows/using-dataflows-with-on-premises-data) is required for authoring the dataflow in Power Query Online. The data gateway is also used for refreshing the dataflow. |
-| ![Item 16.](media/common/icon-16-red-30x30.png) | Power BI administrators oversee and monitor activity in the Power BI service. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | The dataflow creator develops a collection of tables within a [dataflow](../transform-model/dataflows/dataflows-introduction-self-service.md). For a dataflow that's intended for reuse, it's common (but not required) that the creator belongs to a centralized team that supports users across organizational boundaries (such as IT, enterprise BI, or the Center of Excellence). |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | The dataflow connects to data from one or more data sources. |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Some data sources may require an On-premises data gateway or VNet gateway for data refresh, like those that reside within a private organizational network. These gateways are used both for authoring the dataflow in Power Query Online and refreshing the dataflow. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | All of the workspaces involved have their license mode set to **Fabric capacity**, **Premium capacity**, **Premium Per User**, or **Embedded**. These license modes allow for the use of linked tables and computed tables across workspaces, which are required in this scenario. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | Dataflow creators develop dataflows by using Power Query Online, which is a [web-based version of Power Query](/power-query/power-query-what-is-power-query#where-can-you-use-power-query). |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | A *[staging dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#staging-dataflows)* is created in a workspace that's dedicated to the centralized management of dataflows. A staging dataflow copies the raw data as-is from the source. Few, if any, transformations are applied. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | A *[transformation dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#transformation-dataflows)* (also known as a *cleansed dataflow*) is created in the same workspace. It sources data by using [linked table(s)](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-linked-tables) to the staging dataflow. [Computed table(s)](/power-bi/transform-model/dataflows/dataflows-create#create-a-dataflow-using-a-computed-table) include transformation steps that prepare, cleanse, and reshape the data. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Dataflow creators have access to manage content in the workspace that's dedicated to the centralized management of dataflows. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | One or more other workspaces exist that are intended to provide access to the final dataflow, which delivers production-ready data to data models. |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | The *final dataflow* is created in a workspace available to data modelers. It sources data by using linked table(s) to the transformation dataflow. Computed table(s) represent the prepared output that's visible to data modelers who are granted the workspace **viewer** role. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Semantic model creators (who consume the dataflow output) have viewer access to the workspace that contains the final dataflow output. Dataflow creators also have access to manage and publish content in the workspace (not depicted in the scenario diagram). |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | Semantic model creators use the *final dataflow* as a [data source](../transform-model/desktop-connect-dataflows.md) when developing a data model in Power BI Desktop. When ready, the semantic model creator publishes the Power BI Desktop file (.pbix) that contains the data model to the Power BI service (not depicted in the scenario diagram). |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Fabric administrators manage settings in the Admin portal. |
+| ![Item 14.](../media/legend-number/legend-number-14-fabric.svg) | In the Admin portal, Power BI administrators can set up [Azure connections](../admin/service-admin-portal-azure-connections.md) to store dataflow data in their [Azure Data Lake Storage Gen2 (ADLS Gen2)](/azure/storage/blobs/data-lake-storage-introduction) account. Settings include assigning a tenant-level storage account and enabling workspace-level storage permissions.|
+| ![Item 15.](../media/legend-number/legend-number-15-fabric.svg) |By default, dataflows store data by using internal storage that's managed by the Power BI service. Optionally, data output by the dataflow can be stored in the organization's ADLS Gen2 account. |
+| ![Item 16.](../media/legend-number/legend-number-16-fabric.svg) | Fabric administrators oversee and monitor activity in the Fabric portal. |
 
 ## Key points
 
@@ -95,7 +99,7 @@ Three types of dataflows are shown in the scenario diagram: *staging dataflow*, 
 A [staging dataflow](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#staging-dataflows) (sometimes called a *data extraction dataflow*) copies raw data as-is from the source. Having the raw data extracted with minimal transformation means that downstream transformation dataflows (described next) can use the staging dataflow as their source. This modularity is useful when:
 
 - Access to a data source is restricted to narrow time windows and/or to a few users.
-- Temporal consistency is desired to ensure that all downstream dataflows (and related datasets) deliver data that was extracted from the data source at the same time.
+- Temporal consistency is desired to ensure that all downstream dataflows (and related semantic models) deliver data that was extracted from the data source at the same time.
 - Reducing the number of queries submitted to the data source is necessary due to source system restrictions or its ability to support analytical queries.
 - A copy of the source data is useful for reconciliation processes and data quality verifications.
 
@@ -107,7 +111,7 @@ A transformation dataflow includes all the transformation steps required to prep
 
 #### Final dataflow
 
-A final dataflow represents the prepared output. Some additional transformations may occur based on the use case and purpose. For analytics, a [star schema](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#build-a-star-schema) table (dimension or fact) is the preferred design of the final dataflow.
+A final dataflow represents the prepared output. Some additional transformations might occur based on the use case and purpose. For analytics, a [star schema](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#build-a-star-schema) table (dimension or fact) is the preferred design of the final dataflow.
 
 Computed tables are visible to data modelers that are granted the workspace **viewer** role. This table type is described in the [types of dataflow tables](#types-of-dataflow-tables) topic below.
 
@@ -121,10 +125,10 @@ If you were to create all dataflows in a single workspace, it would significantl
 The two types of workspaces shown in the scenario diagram include:
 
 - **Workspace 1:** It stores [centrally managed dataflows](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) (sometimes referred to as a *backend workspace*). It contains both the staging and transformation dataflows because they're managed by the same people. Dataflow creators are often from a centralized team, such as IT, BI, or the Center of Excellence. They should be assigned to either the workspace **admin**, **member**, or **contributor** role.
-- **Workspace 2:** It stores and delivers [the final dataflow output](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) to consumers of the data (sometimes referred to as a *user workspace*). Dataset creators are often self-service analysts, power users, or citizen data engineers. They should be assigned to the workspace **viewer** role because they only need to [consume the output](/power-query/dataflows/best-practices-reusing-dataflows#set-the-correct-access-levels-on-workspaces) of the final dataflow. To support dataset creators from various areas of the organization, you can create numerous workspaces like this one, based on use case and security needs.
+- **Workspace 2:** It stores and delivers [the final dataflow output](../transform-model/dataflows/dataflows-develop-solutions.md#create-user-dataflows-with-security-applied) to consumers of the data (sometimes referred to as a *user workspace*). Semantic model creators are often self-service analysts, power users, or citizen data engineers. They should be assigned to the workspace **viewer** role because they only need to [consume the output](/power-query/dataflows/best-practices-reusing-dataflows#set-the-correct-access-levels-on-workspaces) of the final dataflow. To support semantic model creators from various areas of the organization, you can create numerous workspaces like this one, based on use case and security needs.
 
 > [!TIP]
-> We recommend reviewing ways to [support dataset creators](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md#support-dataset-creators) as described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario. It's important to understand that dataset creators can still use the full capabilities of Power Query within Power BI Desktop. They can choose to add query steps to further transform the dataflow data or merge the dataflow output with other sources.
+> We recommend reviewing ways to [support semantic model creators](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md#support-semantic-model-creators) as described in the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario. It's important to understand that semantic model creators can still use the full capabilities of Power Query within Power BI Desktop. They can choose to add query steps to further transform the dataflow data or merge the dataflow output with other sources.
 
 ### Types of dataflow tables
 
@@ -136,14 +140,18 @@ Three types of dataflow tables (also known as *entities*) are depicted in the sc
   - In the final dataflow for accessing the data in the transformation dataflow.
 - **[Computed table](/power-query/dataflows/computed-entities):** Performs additional computations by using a different dataflow as its source. Computed tables allow customizing the output as needed for individual use cases. In the scenario diagram, computed tables are depicted twice:
   - In the transformation dataflow for performing [common transformations](/power-query/dataflows/best-practices-for-dimensional-model-using-dataflows#use-a-computed-entity-as-much-as-possible).
-  - In the final dataflow for delivering output to dataset creators. Since computed tables persist the data again (after the dataflow refresh), data modelers can access the computed tables in the final dataflow. In this case, data modelers should be granted access with the workspace **viewer** role.
+  - In the final dataflow for delivering output to semantic model creators. Since computed tables persist the data again (after the dataflow refresh), data modelers can access the computed tables in the final dataflow. In this case, data modelers should be granted access with the workspace **viewer** role.
 
 > [!NOTE]
 > There are many design techniques, patterns, and [best practices](../transform-model/dataflows/dataflows-best-practices.md) that can take dataflows from self-service to enterprise-ready. Also, dataflows in a workspace that has its license mode set to **Premium per user** or **Premium capacity** can benefit from [advanced features](../transform-model/dataflows/dataflows-premium-features.md). Linked tables and computed tables (also known as *entities*) are two advanced features that are essential for increasing the reusability of dataflows.
 
 ### Enhanced compute engine
 
-The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium. The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md) from the enhanced compute engine:
+The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-features.md#the-enhanced-compute-engine) is an advanced feature available with Power BI Premium.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+The enhanced compute engine improves performance of linked tables (within the same workspace) that reference (link to) the dataflow. To get [maximum benefit](../transform-model/dataflows/dataflows-premium-features.md) from the enhanced compute engine:
 
 - Split out the staging and transformation dataflows.
 - Use the same workspace to store the staging and transformation dataflows.
@@ -151,13 +159,13 @@ The [enhanced compute engine](../transform-model/dataflows/dataflows-premium-fea
 - Use [incremental refresh](../transform-model/dataflows/dataflows-understand-optimize-refresh.md) to reduce refresh durations and resource consumption.
 - Perform testing early and frequently during the development phase.
 
-### Dataflow and dataset refresh
+### Dataflow and semantic model refresh
 
-A dataflow is a source of data for datasets. In most cases, multiple data refresh schedules are involved: one for each dataflow and one for each dataset. Alternatively, it's possible to use [DirectQuery from the dataset to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which requires Power BI Premium and the enhanced compute engine (not depicted in the scenario diagram).
+A dataflow is a source of data for semantic models. In most cases, multiple data refresh schedules are involved: one for each dataflow and one for each semantic model. Alternatively, it's possible to use [DirectQuery from the semantic model to the dataflow](../transform-model/dataflows/dataflows-premium-features.md#use-directquery-with-dataflows-in-power-bi), which requires Power BI Premium and the enhanced compute engine (not depicted in the scenario diagram).
 
 ### Azure Data Lake Storage Gen2
 
-An ADLS Gen2 account is a specific type of Azure storage account that has the [hierarchical namespace](/azure/storage/blobs/create-data-lake-storage-account) enabled. ADLS Gen2 has [performance, management, and security advantages](/azure/storage/blobs/data-lake-storage-introduction) for operating analytical workloads. By default, Power BI dataflows use internal storage, which is a built-in data lake account managed by the Power BI service. Optionally, organizations may *bring their own data lake* by connecting to an ADLS Gen2 account in their organization.
+An ADLS Gen2 account is a specific type of Azure storage account that has the [hierarchical namespace](/azure/storage/blobs/create-data-lake-storage-account) enabled. ADLS Gen2 has [performance, management, and security advantages](/azure/storage/blobs/data-lake-storage-introduction) for operating analytical workloads. By default, Power BI dataflows use internal storage, which is a built-in data lake account managed by the Power BI service. Optionally, organizations can *bring their own data lake* by connecting to an ADLS Gen2 account in their organization.
 
 Here are some advantages of using your own data lake:
 
@@ -190,8 +198,8 @@ A data gateway is required when:
 
 ### System oversight
 
-The [activity log](../admin/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-adoption-roadmap-system-oversight.md#auditing) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. In the advanced data preparation scenario, the activity log data is helpful to track the management and use of dataflows.
+The [activity log](../enterprise/service-admin-auditing.md) records user activities that occur in the Power BI service. Power BI administrators can use the activity log data that's collected to perform [auditing](powerbi-implementation-planning-auditing-monitoring-overview.md) to help them understand usage patterns and adoption. The activity log is also valuable for supporting governance efforts, security audits, and compliance requirements. In the advanced data preparation scenario, the activity log data is helpful to track the management and use of dataflows.
 
-## Next steps
+## Related content
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.

@@ -75,6 +75,6 @@ To switch **High-density sampling** to **On**, select a scatter chart, go to the
 
 The high-density sampling algorithm is an important improvement to Power BI. However, the **High-density sampling** algorithm only works with live connections to Power BI service-based models, imported models, or DirectQuery.
 
-## Next steps
+## Related content
 
 * [High-density line sampling in Power BI](desktop-high-density-sampling.md)

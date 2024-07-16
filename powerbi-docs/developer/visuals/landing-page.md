@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 11/18/2022
+ms.date: 06/17/2024
+#customer intent: As a Power BI visual developer, I want to add a landing page to my visual so that I can display information in the visual card before the card gets data.
 ---
 
 # Add a landing page to your Power BI visual
@@ -25,7 +26,7 @@ This article explains how to design a landing page for your visual. The landing 
 >[!NOTE]
 >Designing a Power BI visual landing page is supported in API version 2.3.0 and above. To find out which version you're using, check the `apiVersion` in the *pbiviz.json* file.
 
-## Creating a landing page
+## Create a landing page
 
 To create a landing page, two capabilities must be set in the `capabilities.json` file.
 
@@ -80,7 +81,7 @@ export class BarChart implements IVisual {
     }
 ```
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Formatting utils](utils-formatting.md)

@@ -55,6 +55,6 @@ You can install Report Builder from a Power BI Report Server web portal. You may
 5.  Select **Install** to complete the installation of Report Builder.  
  
 
-## Next steps
+## Related content
 
-[What is Power BI Report Server?](get-started.md)
+- [What is Power BI Report Server?](get-started.md)

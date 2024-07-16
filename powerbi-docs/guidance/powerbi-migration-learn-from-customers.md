@@ -1,13 +1,14 @@
 ---
 title: Learn from customer Power BI migrations
 description: Learn from customers when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 02/27/2022
+ms.custom: fabric-cat
+ms.date: 02/13/2024
 ---
 
 # Learn from customer Power BI migrations
@@ -54,7 +55,7 @@ An analysis of the former BI platform was conducted to fully understand its usag
 
 ### Cautiously assess complexity
 
-Of the first prioritized reports, time estimates were compiled based on estimated effort levels: simple, medium, or complex. Although it sounds like a relatively straightforward process, don't expect time estimates to be accurate on an individual report basis. You may find an estimate can be wildly inaccurate. For example, the company had a report that it deemed highly complex. It received a conversion estimate of 50 days by the consultants. However, the redesigned report in Power BI was completed in about 50 hours.
+Of the first prioritized reports, time estimates were compiled based on estimated effort levels: simple, medium, or complex. Although it sounds like a relatively straightforward process, don't expect time estimates to be accurate on an individual report basis. You might find an estimate can be wildly inaccurate. For example, the company had a report that it deemed highly complex. It received a conversion estimate of 50 days by the consultants. However, the redesigned report in Power BI was completed in about 50 hours.
 
 > [!IMPORTANT]
 > Although time estimates are often necessary to obtain funding and personnel assignments, they're probably most valuable in the aggregate.
@@ -68,11 +69,11 @@ With such a high volume of BI assets, change management for the business-owned r
 
 ### Create an internal community
 
-The company established a [Center of Excellence (COE)](powerbi-adoption-roadmap-center-of-excellence.md) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
+The company established a [Center of Excellence (COE)](fabric-adoption-roadmap-center-of-excellence.md) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
 
-There's also an [internal Power BI community](powerbi-adoption-roadmap-community-of-practice.md), which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
+There's also an [internal Power BI community](fabric-adoption-roadmap-community-of-practice.md), which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
 
-An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert may define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
+An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert can define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
 
 > [!IMPORTANT]
 > Have a very well defined scope for what the COE does, such as: adoption, governance, guidance, best practices, training, support, and perhaps even hands-on development. While a COE is incredibly valuable, measuring its return on investment can be difficult.
@@ -99,16 +100,16 @@ The company started using Power BI in 2018. By mid-2019, Power BI became the pre
 
 In the company, there are two types of BI teams: a central BI team and analytics groups distributed throughout the organization. The central BI team has ownership responsibility for Power BI as a platform, but it doesn't own any of the content. This way, the central BI team is a technical enablement hub that supports the distributed analytics groups.
 
-Each of the analytics groups is dedicated to a specific business unit or a shared services function. A small group may contain a single analyst, while a larger group can have 10-15 analysts.
+Each of the analytics groups is dedicated to a specific business unit or a shared services function. A small group might contain a single analyst, while a larger group could have 10-15 analysts.
 
 > [!IMPORTANT]
 > The distributed analytics groups comprise subject matter experts who are familiar with the day-to-day business needs. This separation allows the central BI team to focus primarily on technical enablement and support of the BI services and tools.
 
-### Focus on dataset reusability
+### Focus on semantic model reusability
 
 Relying on custom ASP.NET BI solutions was a barrier to developing new BI solutions. The required skill set meant that the number of self-service content authors was small. Because Power BI is a much more approachable tool—specifically designed for self-service BI—it spread quickly throughout the organization once it was released.
 
-The empowerment of data analysts within the company resulted in immediate positive outcomes. However, the initial focus with Power BI development was on visualization. While it resulted in valuable BI solutions, this focus resulted in a large number of Power BI Desktop files, each with a one-to-one relationship between the report and its dataset. It resulted in many datasets and duplication of data and business logic. To reduce duplication of data, logic, and effort, the company delivered training and provided support to content authors.
+The empowerment of data analysts within the company resulted in immediate positive outcomes. However, the initial focus with Power BI development was on visualization. While it resulted in valuable BI solutions, this focus resulted in a large number of Power BI Desktop files, each with a one-to-one relationship between the report and its semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)). It resulted in many semantic models and duplication of data and business logic. To reduce duplication of data, logic, and effort, the company delivered training and provided support to content authors.
 
 > [!IMPORTANT]
 > Include information about the importance of data reusability in your internal training efforts. Address important concepts as early as is practical.
@@ -122,23 +123,25 @@ The company's data warehouse platform is DB2. Based on the current data warehous
 
 ### Educate authors about Premium licensing
 
-Since it was easier to get started with Power BI (compared with their legacy BI platform), many of the early adopters were people who didn't have a license to the previous BI tool. As expected, the number of content authors grew considerably. These content authors understandably wanted to share their content with others, resulting in a continual need for additional Power BI Pro licenses.
+Because it was easier to get started with Power BI (compared with their legacy BI platform), many of the early adopters were people who didn't have a license to the previous BI tool. As expected, the number of content authors grew considerably. These content authors understandably wanted to share their content with others, resulting in a continual need for additional Power BI Pro licenses.
 
-The company made a large investment in Premium workspaces, most notably to distribute Power BI content to many users with Power BI free licenses. The support team works with content authors to ensure they use Premium workspaces when appropriate. It avoids unnecessarily allocating Power BI Pro licenses when a user only needs to consume content.
+The company made a large investment in Premium workspaces, most notably to distribute Power BI content to many users with Fabric free licenses. The support team works with content authors to ensure they use Premium workspaces when appropriate. It avoids unnecessarily allocating Power BI Pro licenses when a user only needs to consume content.
 
 > [!IMPORTANT]
 > Licensing questions often arise. Be prepared to educate and help content authors to address licensing questions. Validate that user requests for Power BI Pro licenses are justified.
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ### Understand the data gateways
 
 Early on, the company had many personal gateways. Using an on-premises data gateway cluster shifts the management efforts to the central BI team, which allows the content author community to focus on producing content. The central BI team worked with the internal Power BI user community to reduce the number of personal gateways.
 
 > [!IMPORTANT]
-> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies.
+> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies. For more information, see [Manage gateways](powerbi-implementation-planning-data-gateways.md#manage-gateways).
 
 ### Formalize your support plan
 
-As the adoption of Power BI grew within the organization, the company found that a [multi-tier support approach](powerbi-adoption-roadmap-user-support.md) worked well:
+As the adoption of Power BI grew within the organization, the company found that a [multi-tier support approach](fabric-adoption-roadmap-user-support.md) worked well:
 
 - **Layer 1: Intra-team:** People learn from, and teach, each other on a day-to-day basis.
 - **Layer 2: Power BI community:** People ask questions of the internal Teams community to learn from each other and communicate important information.
@@ -149,7 +152,7 @@ As the adoption of Power BI grew within the organization, the company found that
 
 ### Invest in training and governance
 
-Over the past year, the company improved its internal training offerings and enhanced its [data governance](powerbi-adoption-roadmap-governance.md) program. The governance committee includes key members from each of the distributed analytics groups, plus the [COE](powerbi-adoption-roadmap-center-of-excellence.md).
+Over the past year, the company improved its internal training offerings and enhanced its [data governance](fabric-adoption-roadmap-governance.md) program. The governance committee includes key members from each of the distributed analytics groups, plus the [COE](fabric-adoption-roadmap-center-of-excellence.md).
 
 There are now six internal Power BI courses in their internal catalog. The [Dashboard in a Day](https://powerbi.microsoft.com/diad/) course remains a popular course for beginners. To help users deepen their skills, they deliver a series of three Power BI courses and two DAX courses.
 
@@ -158,12 +161,12 @@ One of their most important data governance decisions related to management of P
 > [!IMPORTANT]
 > Pay attention to how Premium capacities are used, and how workspaces are assigned to them.
 
-## Next steps
+## Related content
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - [Dashboard in a Day](https://powerbi.microsoft.com/diad/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

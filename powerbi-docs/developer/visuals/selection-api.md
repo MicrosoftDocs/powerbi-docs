@@ -1,6 +1,6 @@
 ---
 title: Power BI visual data point selections
-description: Learn how to use the selection manager to add data point selections to Power BI visuals.
+description: Learn how to use the selection manager to add data point selections to Power BI visuals and make them interactive.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: rkarlin
@@ -8,7 +8,8 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 12/29/2022
+ms.date: 12/29/2023
+#customer intent: As a Power BI visual developer, I want to learn how to add data point selections to my visual so that I can make it interactive.
 ---
 
 # Add interactivity into visual by Power BI visuals selections
@@ -81,7 +82,7 @@ This object has corresponding methods to create `selections` for different types
 
 ### Create selections for categorical data view mapping
 
-Let's review how selections represent categorical data view mapping for a sample dataset:
+Let's review how selections represent categorical data view mapping for a sample semantic model:
 
 | Manufacturer | Type | Value |
 | - | - | - |
@@ -365,7 +366,7 @@ interface ISelectionManager {
 
 The `select` method can accept an array of selections. This allows your visual to have several data points selected at once. The second parameter, `multiSelect`, is responsible for multi-selections. If `multiSelect` is true, Power BI doesn't clear the previous selection state when it applies the current selection. If the value is false, the previous selection is overwritten.
 
-A typical example of using `multiSelect` is handling the CTRL button state on a click event. When the CTRL button is held down, you can select more than one object.
+A typical example of using `multiSelect` is handling the <kbd>Ctrl</kbd> button state on a click event. When the <kbd>Ctrl</kbd> button is held down, you can select more than one object.
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {
@@ -374,7 +375,7 @@ button.addEventListener("click", (mouseEvent) => {
 });
 ```
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 > [Handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)

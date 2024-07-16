@@ -39,9 +39,9 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - By default, scatter charts display data points as circles. If you have multiple series on a scatter chart, consider changing the marker shape of each point to be square, triangle, diamond, or another shape.  
   
-## Next steps
+## Related content
 
- [Charts (Power BI Report Builder)](charts-report-builder.md)   
- [Chart types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
- [Formatting a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)   
- [Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)  
+- [Charts (Power BI Report Builder)](charts-report-builder.md)   
+- [Chart types &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/chart-types-report-builder-and-ssrs)   
+- [Formatting a chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)   
+- [Line charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/line-charts-report-builder-and-ssrs)  

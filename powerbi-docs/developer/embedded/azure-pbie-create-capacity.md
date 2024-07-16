@@ -5,11 +5,10 @@ author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 07/13/2022
+ms.date: 5/13/2024
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -20,9 +19,9 @@ This article walks you through how to create a [Power BI Embedded](embedded-anal
 
 Before you can create a capacity, you need the following:
 
-1. An **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
+1. An **Microsoft Entra ID:** Your subscription must be associated with a Microsoft Entra *organizational* tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft personal accounts aren't supported. To learn more, see [Authentication and user permissions](/azure/analysis-services/analysis-services-manage-users).
 
-2. A **Power BI tenant:** At least one account in your Azure AD tenant must be signed up for Power BI. Sign into Power BI from that account.
+2. A **Power BI tenant:** At least one account in your Microsoft Entra tenant must be signed up for Power BI. Sign into Power BI from that account.
 
 3. **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account, if you don't already have one.
 
@@ -56,7 +55,7 @@ Before creating a Power BI Embedded capacity, make sure you're signed into Power
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **Size** - The [A SKU](./embedded-capacity.md) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md#sku-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -85,9 +84,9 @@ To run the code in this article in Azure Cloud Shell:
 
 2. Select the **Copy** button on a code block to copy the code.
 
-3. Paste the code into the Cloud Shell session by selecting **Ctrl**+**Shift**+**V** on Windows and Linux or by selecting **Cmd**+**Shift**+**V** on macOS.
+3. Paste the code into the Cloud Shell session by selecting <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> on Windows and Linux or by selecting <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> on macOS.
 
-4. Select **Enter** to run the code.
+4. Select <kbd>Enter</kbd> to run the code.
 
 #### Prepare your environment
 
@@ -235,7 +234,7 @@ Use this template to create a Power BI Embedded resource.
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](./embedded-multi-geo.md
 ).
 
-    * **SKU** - The [A SKU](../../enterprise/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md).
+    * **SKU** - The [A SKU](./embedded-capacity.md) you require. For more information, see [SKU memory and computing power](./embedded-capacity.md#sku-computing-power).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
@@ -276,9 +275,9 @@ To delete the capacity you created, follow these steps:
 
 ## Considerations and limitations
 
-Your subscription must be associated with an Azure Active Directory (Azure AD) organizational account. Microsoft personal accounts aren't supported
+Your subscription must be associated with a Microsoft Entra organizational account. Microsoft personal accounts aren't supported
 
-## Next steps
+## Related content
 
 * [Manage capacities](../../enterprise/service-admin-premium-manage.md)
 * [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)

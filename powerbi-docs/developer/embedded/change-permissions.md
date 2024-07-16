@@ -1,27 +1,29 @@
 ---
-title: Edit your Azure AD app's permission settings
-description: Learn how to change the API permissions on your Azure AD application.
+title: Edit your Microsoft Entra app's permission settings
+description: Learn how to change the API permissions on your Microsoft Entra application.
 author: mberdugo
 ms.author: monaberdugo
 keywords: 
-ms.date: 11/7/2022
+ms.date: 06/03/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: 
 ---
 
-# Azure Active Directory permissions
+# Microsoft Entra permissions
 
-When you [register your Azure AD app](./register-app.md), you grant it permission to access various APIs. As your needs change, you might want to adjust these permissions. This article shows you how.
+When you [register your Microsoft Entra app](./register-app.md), you grant it permission to access various APIs. As your needs change, you might want to adjust these permissions. This article shows you how.
 
 >[!NOTE]
->Azure AD app permissions are only applicable for these scenarios:
+>Microsoft Entra app permissions are only applicable for these scenarios:
 >
 >* *Embed for your organization*
 >* *Embed for your customers* with the *master user* authentication method
 
-## Edit the permission settings on your Azure Active Directory app
+<a name='edit-the-permission-settings-on-your-azure-active-directory-app'></a>
+
+## Edit the permission settings on your Microsoft Entra app
 
 Permission changes can be made programmatically, or in the Azure portal.
 
@@ -31,7 +33,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. Select your Azure AD tenant by selecting your account in the upper right corner of the page.
+2. Select your Microsoft Entra tenant by selecting your account in the upper right corner of the page.
 
 3. Select **App registrations**. If you can't see this option, search for it.
 
@@ -64,7 +66,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 ### [HTTP](#tab/HTTP)
 
-To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
+To change your Microsoft Entra app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
 
 1. To get all the service principals within your tenant, call the `Get servicePrincipal` API without `{ID}`.
 
@@ -103,10 +105,10 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
     > [!NOTE]
     >
-    > * If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
-    > * The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
+    > * If you're using a **master user**, to avoid being prompted for consent by Microsoft Entra ID, you need to grant permissions to the master account.
+    > * The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Microsoft Entra ID. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
 
-4. Grant app permissions to Azure AD, by assigning a value to `consentType`.
+4. Grant app permissions to Microsoft Entra ID, by assigning a value to `consentType`.
 
     ```json
     Post https://graph.microsoft.com/v1.0/OAuth2PermissionGrants HTTP/1.1
@@ -124,7 +126,7 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
 ### [C#](#tab/CSharp)
 
-You can also change your Azure AD app permissions using C#. For more information see the [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering automating some of your processes.
+You can also change your Microsoft Entra app permissions using C#. For more information see the [oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-get) API. This method can be useful if you're considering automating some of your processes.
 
 ```csharp
 var graphClient = GetGraphClient();
@@ -164,7 +166,7 @@ var oAuth2PermissionGrant = await graphClient.Oauth2PermissionGrants["{id}"]
 
 ---
 
-## Next steps
+## Related content
 
 * [Considerations when generating an embed token](generate-embed-token.md)
 * [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)

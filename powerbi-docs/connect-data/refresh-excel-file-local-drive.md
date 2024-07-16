@@ -7,12 +7,28 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/20/2023
+ms.date: 08/23/2023
 LocalizationGroup: Data refresh
 ---
 # Refresh a dataset created from an Excel workbook on a local drive
 
 ## What's supported?
+
+> [!IMPORTANT]
+> The following capabilities are deprecated and will no longer be available starting September 29th, 2023:
+> - Upload of local workbooks to Power BI workspaces will no longer be allowed.
+> - Configuring scheduling of refresh and refresh now for Excel files that don’t already have scheduled refresh configured will no longer be allowed.
+>
+> The following capabilities are deprecated and will no longer be available starting October 31, 2023:
+> - Scheduled refresh and refresh now for existing Excel files that were previously configured for scheduled refresh will no longer be allowed.
+> - Local workbooks uploaded to Power BI workspaces will no longer open in Power BI.
+>
+> After October 31, 2023:
+> - You can download existing local workbooks from your Power BI workspace.
+> - You can publish your Excel data model as a Power BI dataset and schedule refresh.
+> - You can import Excel workbooks from OneDrive and SharePoint Document libraries to view them in Power BI.
+>   
+> If your organization uses these capabilities, see more details in [Migrating your Excel workbooks](service-excel-workbook-files.md#migrating-your-excel-workbooks).  
 
 In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Excel workbooks imported from a local drive where Power Query or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model. Power Query is *Get & Transform data* in Excel 2016.
 
@@ -82,6 +98,6 @@ Sometimes refreshing data might not go as expected. Typically problems are cause
 * [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
 * [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-## Next steps
+## Related content
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

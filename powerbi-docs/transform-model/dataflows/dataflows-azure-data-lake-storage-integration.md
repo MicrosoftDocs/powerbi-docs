@@ -26,7 +26,7 @@ There are two ways to configure which ADLS Gen 2 store to use: you can use a ten
 
 - The storage account must be created with the [Hierarchical Namespace (HNS)](/azure/storage/blobs/create-data-lake-storage-account) enabled.
 
-- The storage account must be created in the same Azure Active Directory (Azure AD) tenant as the [Power BI tenant](/power-bi/admin/service-admin-where-is-my-tenant-located#how-to-find-the-default-region-for-your-organization).
+- The storage account must be created in the same Microsoft Entra tenant as the [Power BI tenant](/power-bi/admin/service-admin-where-is-my-tenant-located#how-to-find-the-default-region-for-your-organization).
 
 - The user must have Storage Blob Data Owner role, Storage Blob Data Reader role, and an Owner role at the storage account level (scope should be *this resource* and not inherited). Any applied role changes might take a few minutes to sync, and must sync before the following steps can be completed in the Power BI service.
 
@@ -85,14 +85,9 @@ To summarize, if tenant-level storage and workspace-level storage permissions ar
 In the ADLS Gen 2 storage account, all dataflows are stored in the **powerbi** container of the filesystem.
 
 The structure of the **powerbi** container looks like this:
-`<workspace name>/<dataflow name>/model.json
-<workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>`
+`<workspace name>/<dataflow name>/model.json`, `<workspace name>/<dataflow name>/model.json.snapshots/<all snapshots>` and `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>`
 
-The location where dataflows store data in the folder hierarchy for ADLS Gen 2 is determined by whether the workspace is located in shared capacity or Premium capacity. The file structure after refresh for each capacity type is shown in the following table.
-
-| Premium capacity | Shared capacity |
-|---|---|
-| `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>` | `<workspace name>/<dataflow name>/<table name>/<tablesnapshots>` |
+The location where dataflows store data in the folder hierarchy for ADLS Gen 2 is the same whether the workspace is located in shared capacity or Premium capacity. 
 
 The following example uses the Orders table of the Northwind Odata sample.
 
@@ -102,12 +97,21 @@ In the preceding image:
 
 - The *model.json* is the most recent version of the dataflow.
 - The *model.json.snapshots* are all previous versions of the dataflow. This history is useful if you need a previous version of mashup, or incremental settings.
-- The *table.snapshots.csv* is the data you got from a refresh. This file is useful for incremental refreshes, and also for shared refreshes where a user is running into a refresh timeout issue because of data size. They can look at the most recent snapshot to see how much data is in the CSV file.
+- The *tablename* is the folder containing resulting data after a dataflow refresh has completed. 
 
 We only write to this storage account and don't currently delete data. So even after detach, we don’t delete from the ADLS account, so all of the files mentioned in the preceding list are still stored.
 
 > [!NOTE]
-> A *model.json* file can refer to another *model.json* that is another dataflow in the same workspace, or in a dataflow in another workspace. The only time where a *model.json* would refer to a *table.snapshot.csv* is for incremental refresh.
+> Dataflows allow linking or referencing tableds in other dataflows. In such dataflows, the *model.json* file can refer to another *model.json* of another dataflow in the same or other workspace.
+
+## Moving files between/within ADLS Gen 2 storage accounts
+
+When you move a dataflow from one ADLS Gen2 storage account to another, you need to make sure that the paths in the *model.json* file are updated to reflect the new location. This is because the *model.json* file contains the path to the dataflow and the path to the data. If you don't update the paths, the dataflow will not be able to find the data and causes permission errors. To update the paths, you can use the following steps:
+
+- Open the *model.json* file in a text editor.
+- Find the storage account URL and replace it with the new storage account URL.
+- Save the file.
+- Overwrite the existing *model.json* file in the ADLS Gen2 storage account.
 
 ## Extensibility for ADLS Gen 2 workspace connections
 
@@ -145,7 +149,7 @@ To revert the migration that you made to Gen 2, you need to delete your dataflow
 
 The scope of this document describes ADLS Gen 2 dataflows connections and not the Power BI ADLS Gen 2 connector. Working with the ADLS Gen 2 connector is a separate, possibly additive, scenario. The ADLS connector simply uses ADLS as a datasource. So using Power Query Online to query against that data doesn’t have to be in CDM format, it can be whatever data format the customer wants. For more information, see [Azure Data Lake Storage Gen2](/power-query/connectors/datalakestorage).
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

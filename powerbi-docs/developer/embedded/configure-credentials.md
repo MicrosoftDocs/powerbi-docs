@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 11/1/2022
+ms.date: 05/21/2024
 ---
 
 # Configure credentials programmatically for Power BI
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
-Follow the steps in this article, to configure credentials programmatically for Power BI. Configuring credentials programmatically also allows you to encrypt credentials.
+To configure credentials programmatically for Power BI, follow the steps in this article. Configuring credentials programmatically also allows you to encrypt credentials.
 
 >[!NOTE]
 >
->* The calling user must be a dataset owner or a gateway admin. You can also use a [service principal](../embedded/embed-service-principal.md). For example, the service principal can be the dataset owner.
+>* The calling user must be a semantic model owner or a gateway admin. You can also use a [service principal](../embedded/embed-service-principal.md). For example, the service principal can be the semantic model owner.
 >* Cloud data sources and their corresponding credentials are managed at the user level.
 
 ## Update the credentials flow for data sources
 
-1. Discover the data sources of the dataset by calling [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup). The response body for each data source contains the type, connection details, gateway, and data source ID.
+1. Discover the semantic model's data sources by calling [Get Datasources](/rest/api/power-bi/datasets/getdatasourcesingroup). The response body for each data source contains the type, connection details, gateway, and data source ID.
 
     ```csharp
     // Select a datasource
@@ -226,15 +226,14 @@ var credentials = "{\"credentialData\":\"\"}";
 
 ### No gateway and data source ID are found when calling get data sources
 
-This issue means that the dataset isn't bound to a gateway. When you create a new dataset, a data source with no credentials is created automatically on the user's cloud gateway for each cloud connection. The cloud gateway is used to store the credentials for cloud connections.
+This issue means that the semantic model isn't bound to a gateway. When you create a new semantic model, a data source with no credentials is created automatically on the user's cloud gateway for each cloud connection. The cloud gateway is used to store the credentials for cloud connections.
 
-After you create the dataset, an automatic binding is created between the dataset and a suitable gateway, which contains matching data sources for all connections. The automatic binding fails if there's no suitable gateway or gateways.
+After you create the semantic model, an automatic binding is created between the semantic model and a suitable gateway, which contains matching data sources for all connections. The automatic binding fails if there's no suitable gateway or gateways.
 
-If you're using on-premises datasets, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](/rest/api/power-bi/datasets/bindtogateway).
+If you're using on-premises semantic models, create the missing on-premises data sources, and bind the semantic model to a gateway manually by using [Bind To Gateway](/rest/api/power-bi/datasets/bindtogateway).
 
 To discover gateways that are bindable, use [Discover Gateways](/rest/api/power-bi/datasets/discovergateways).
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Power BI REST APIs](/rest/api/power-bi/)
+* [Power BI REST APIs](/rest/api/power-bi/)

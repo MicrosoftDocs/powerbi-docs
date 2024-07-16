@@ -89,7 +89,8 @@ When you select a tile, what happens next depends on how you created the tile. O
 * If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 * Some changes you make to a visual in a report aren't reflected in the tile you pin to a dashboard. For example, background color, width/height, and tooltips. Even if you turn tooltips off completely for a visual in a Power BI report, when you pin that visual to a dashboard in the Power BI service, the basic tooltip will still be displayed.
 
-## Next steps
+## Related content
+
 - [Create a card (large number tile) for your dashboard](../visuals/power-bi-visualization-card.md)
 - [Introduction to dashboards for Power BI designers](service-dashboards.md)  
 - [Data refresh in Power BI](../connect-data/refresh-data.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/05/2023
+ms.date: 11/10/2023
 LocalizationGroup: Create reports
 ---
 # Customize tooltips in Power BI
@@ -38,7 +38,7 @@ You can further customize a tooltip by selecting an aggregation function. Select
 
 In Power BI Desktop, you can also select a *quick measure*. Read about [creating quick measures](../transform-model/desktop-quick-measures.md) in Power BI Desktop.
 
-There are many ways to customize tooltips, using any field available in your dataset, to convey quick information and insights to users viewing your dashboards or reports.
+There are many ways to customize tooltips, using any field available in your semantic model, to convey quick information and insights to users viewing your dashboards or reports.
 
 ## Allow tooltips to auto-scale (preview)
 
@@ -60,6 +60,12 @@ In the **Settings** pane, select **Tooltip size is affected by canvas size**.
 
 :::image type="content" source="media/desktop-custom-tooltips/service-tooltip-auto-scale-setting.png" alt-text="Screenshot showing Tooltip size is affected by canvas size checkbox in the Power BI service.":::
 
-## Next steps
+---
 
-[Create tooltips based on report pages](desktop-tooltips.md)
+## Considerations and limitations
+
+- Default tooltips aren't designed to contain large amounts of content, and their look and feel may change with Power BI updates. To have more control over the look and feel of the content in a tooltip, [create tooltips based on custom report pages](desktop-tooltips.md) instead.
+
+## Related content
+
+- [Create tooltips based on report pages](desktop-tooltips.md)

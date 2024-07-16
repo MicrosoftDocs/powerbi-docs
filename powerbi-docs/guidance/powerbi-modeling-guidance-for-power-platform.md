@@ -1,13 +1,14 @@
 ---
 title: "Power BI modeling guidance for Power Platform"
 description: "Guidance on how to create Power BI data models for Dataverse, PowerApps, and Dynamics 365."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 10/20/2022
+ms.custom: fabric-cat
+ms.date: 04/20/2023
 ---
 
 # Power BI modeling guidance for Power Platform
@@ -64,9 +65,9 @@ A DirectQuery connection to Dataverse is a good choice when the report's query r
 > [!NOTE]
 > The 20,000 row size isn't a hard limit. However, each data source query must return a result within 10 minutes. Later in this article you will learn how to work within those limitations and about other Dataverse DirectQuery design considerations.
 
-You can improve the performance of larger datasets by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
+You can improve the performance of larger semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) by using the [Dataverse connector](/power-query/connectors/dataverse) to import the data into the data model.
 
-Even larger datasets—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
+Even larger semantic models—with several hundreds of thousand or even millions of rows—can benefit from using Azure Synapse Link for Dataverse. This approach sets up an ongoing managed pipeline that copies Dataverse data into ADLS Gen2 as CSV or Parquet files. Power BI can then query an [Azure Synapse serverless SQL pool](/azure/synapse-analytics/sql/on-demand-workspace-overview) to load an import model.
 
 ### Data latency
 
@@ -75,19 +76,21 @@ When the Dataverse data changes rapidly and report users need to see up-to-date 
 > [!TIP]
 > You can create a Power BI report that uses [automatic page refresh](/power-bi/create-reports/desktop-automatic-page-refresh) to show real-time updates, but only when the report connects to a DirectQuery model.
 
-Import data models must complete a data refresh to allow reporting on recent data changes. Keep in mind that there are limitations on the number of daily scheduled data refresh operations. You can schedule up to eight refreshes per day on a shared capacity. On a [Premium](/power-bi/enterprise/service-premium-what-is) capacity, you can schedule up to 48 refreshes per day, which can achieve a 15-minute refresh frequency.
+Import data models must complete a data refresh to allow reporting on recent data changes. Keep in mind that there are limitations on the number of daily scheduled data refresh operations. You can schedule up to eight refreshes per day on a shared capacity. On a [Premium capacity](/power-bi/enterprise/service-premium-what-is) or [Microsoft Fabric capacity](/fabric/enterprise/licenses#capacity-license), you can schedule up to 48 refreshes per day, which can achieve a 15-minute refresh frequency.
 
-You can also consider using [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to achieve faster refreshes and [near real-time](/power-bi/connect-data/incremental-refresh-overview?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](/power-bi/enterprise/service-premium-what-is)).
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+You can also consider using [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to achieve faster refreshes and [near real-time](/power-bi/connect-data/incremental-refresh-overview?branch=pr-en-us-8271#configuring-incremental-refresh-and-real-time-data) performance (only available with [Premium](/power-bi/enterprise/service-premium-what-is) or Fabric).
 
 ### Role-based security
 
 When there's a need to enforce role-based security, it can directly influence the choice of Power BI model framework.
 
-Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson may be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
+Dataverse can enforce complex [role-based security](/power-platform/admin/wp-security-cds) to control access of specific records to specific users. For example, a salesperson might be permitted to see only their sales opportunities, while the sales manager can see all sales opportunities for all salespeople. You can tailor the level of complexity based on the needs of your organization.
 
 A DirectQuery model based on Dataverse can connect by using the security context of the report user. That way, the report user will only see the data they're permitted to access. This approach can simplify the report design, providing performance is acceptable.
 
-For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/power-bi/enterprise/service-admin-rls) to the model, if necessary.
+For improved performance, you can create an import model that connects to Dataverse instead. In this case, you can add [row-level security (RLS)](/fabric/security/service-admin-row-level-security) to the model, if necessary.
 
 > [!NOTE]
 > It might be challenging to replicate some Dataverse role-based security as Power BI RLS, especially when Dataverse enforces complex permissions. Further, it might require ongoing management to keep Power BI permissions in sync with Dataverse permissions.
@@ -115,13 +118,13 @@ To help ensure that you have a clear understanding of the model's purpose, ask y
 - What topic area will this model support?
 - Who is the audience of the reports?
 - What questions are the reports trying to answer?
-- What is the minimum viable dataset?
+- What is the minimum viable semantic model?
 
 Resist combining multiple topic areas into a single model just because the report user has questions across multiple topic areas that they want addressed by a single report. By breaking that report out into multiple reports, each with a focus on a different topic (or [fact table](star-schema.md)), you can produce much more efficient, scalable, and manageable models.
 
 ### Design a star schema
 
-Dataverse developers and administrators who are comfortable with the Dataverse schema may be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
+Dataverse developers and administrators who are comfortable with the Dataverse schema might be tempted to reproduce the same schema in Power BI. This approach is an anti-pattern, and it's probably the toughest to overcome because it just *feels right* to maintain consistency.
 
 Dataverse, as a relational model, is well suited for its purpose. However, it's not designed as an analytic model that's optimized for [analytical reports](/learn/modules/power-bi-effective-structure/1-introduction). The most prevalent pattern for modeling analytics data is a *star schema* design. Star schema is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either dimension or fact. Reports can filter or group by using dimension table columns and summarize fact table columns.
 
@@ -244,7 +247,7 @@ If you discover that Dataverse [choice labels](/power-apps/developer/data-platfo
 
 In this case, open the Dataverse Maker Portal, navigate to the **Solutions** area, and then select **Publish all customizations**. The publication process will update the TDS endpoint with the latest metadata, making the option labels available to Power BI.
 
-## Larger datasets with Azure Synapse Link
+## Larger semantic models with Azure Synapse Link
 
 Dataverse includes the ability to synchronize tables to Azure Data Lake Storage (ADLS) and then connect to that data through an Azure Synapse workspace. With minimal effort, you can set up [Azure Synapse Link](/power-apps/maker/data-platform/export-to-data-lake) to populate Dataverse data into Azure Synapse and enable data teams to discover deeper insights.
 
@@ -273,15 +276,15 @@ The setup involves signing in to Power Apps and connecting Dataverse to the Azur
 > [!TIP]
 > For complete documentation on creating, managing, and monitoring Azure Synapse Link see [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/powerapps/maker/data-platform/azure-synapse-link-synapse).
 
-### Create a second serverless SQL pool
+### Create a second serverless SQL database
 
-You can create a second serverless SQL pool and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL pool becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
+You can create a second serverless SQL database and use it to add custom report views. That way, you can present a simplified set of data to the Power BI creator that allows them to create a model based on useful and relevant data. The new serverless SQL database becomes the creator's primary source connection and a friendly representation of the data sourced from the data lake.
 
 :::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/azure-synapse-link-for-dataverse-serverless.png" alt-text="Diagram shows Azure Synapse Link copying data to ADLS Gen2 storage, and Power BI connecting to Azure Synapse Analytics. It includes custom report views." border="false":::
 
 This approach delivers data to Power BI that's focused, enriched, and filtered.
 
-You can create a serverless SQL pool in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL pool type and enter a database name. Power Query can connect to this pool by connecting to the workspace SQL endpoint.
+You can create a serverless SQL database in the Azure Synapse workspace by using [Azure Synapse Studio](/azure/synapse-analytics/get-started-create-workspace). Select **Serverless** as the SQL database type and enter a database name. Power Query can connect to this database by connecting to the workspace SQL endpoint.
 
 ### Create custom views
 
@@ -367,11 +370,11 @@ For more information on table storage modes including dual storage, see [Manage 
 
 ### Enable single-sign on
 
-When you publish a DirectQuery model to the Power BI service, you can use the dataset settings to enable single sign-on (SSO) by using Azure Active Directory (Azure AD) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
+When you publish a DirectQuery model to the Power BI service, you can use the semantic model settings to enable single sign-on (SSO) by using Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) OAuth2 for your report users. You should enable this option when Dataverse queries must execute in the security context of the report user.
 
-When the SSO option is enabled, Power BI sends the report user's authenticated Azure AD credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
+When the SSO option is enabled, Power BI sends the report user's authenticated Microsoft Entra credentials in the queries to Dataverse. This option enables Power BI to honor the security settings that are set up in the data source.
 
-:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the dataset credentials window with the SSO option enabled." border="false":::
+:::image type="content" source="media/powerbi-modeling-guidance-for-power-platform/enable-single-sign-on.png" alt-text="Screenshot shows the semantic model credentials window with the SSO option enabled." border="false":::
 
 For more information, see [Single sign-on (SSO) for DirectQuery sources](/power-bi/connect-data/service-azure-sql-database-with-direct-connect#single-sign-on).
 
@@ -401,7 +404,7 @@ in
     dbo_account
 ```
 
-When you publish the model to the Power BI service, you must enable single sign-on (SSO) so that Power BI will send the report user's authenticated Azure AD credentials to Dataverse.
+When you publish the model to the Power BI service, you must enable single sign-on (SSO) so that Power BI will send the report user's authenticated Microsoft Entra credentials to Dataverse.
 
 ### Create supplementary import models
 
@@ -409,9 +412,9 @@ You can create a DirectQuery model that enforces Dataverse permissions _knowing_
 
 For example, an import model could provide access to all Dataverse data but not enforce any permissions. This model would be suited to executives who already have access to all Dataverse data.
 
-As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create a model for each sales region. You could then grant read permission to those models (datasets) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
+As another example, when Dataverse enforces role-based permissions by sales region, you could create one import model and replicate those permissions using RLS. Alternatively, you could create a model for each sales region. You could then grant read permission to those models (semantic models) to the salespeople of each region. To facilitate the creation of these regional models, you can use parameters and report templates. For more information, see [Create and use report templates in Power BI Desktop](/power-bi/create-reports/desktop-templates).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources.
 

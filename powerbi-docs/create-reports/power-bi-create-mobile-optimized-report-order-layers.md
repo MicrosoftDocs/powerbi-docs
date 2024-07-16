@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/26/2023
+ms.date: 03/25/2024
 LocalizationGroup: Create reports
 ---
 
@@ -26,7 +26,7 @@ The Selection pane also has an appearance indication for each visual in the list
 
 ![Screenshot showing Selection pane and how to open it.](media/power-bi-create-mobile-optimized-report-order-layers/mobile-layout-selection-pane.png)
 
-## Next steps
+## Related content
 
 * [Mobile layout view](power-bi-create-mobile-optimized-report-mobile-layout-view.md)
 * [Optimize visuals for mobile layout](power-bi-create-mobile-optimized-report-format-visuals.md)

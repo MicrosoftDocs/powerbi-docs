@@ -1,6 +1,6 @@
 ---
-title: Dataset modes in the Power BI service
-description: Understand Power BI service dataset modes, Import, DirectQuery, and Composite, including the rationale for each mode.
+title: Semantic model modes in the Power BI service
+description: Understand Power BI service semantic model modes, Import, DirectQuery, and Composite, including the rationale for each mode.
 author: davidiseminger
 ms.author: davidi
 manager: asaxton
@@ -8,14 +8,14 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: conceptual
-ms.date: 12/30/2022
+ms.date: 11/10/2023
 ---
 
-# Dataset modes in the Power BI service
+# Semantic model modes in the Power BI service
 
-This article provides a technical explanation of Power BI dataset modes. It applies to datasets that represent a live connection to an external-hosted Analysis Services model, and also to models developed in Power BI Desktop. The article emphasizes the rationale for each mode, and possible impacts on Power BI capacity resources.
+This article provides a technical explanation of Power BI semantic model modes. It applies to semantic models that represent a live connection to an external-hosted Analysis Services model, and also to models developed in Power BI Desktop. The article emphasizes the rationale for each mode, and possible impacts on Power BI capacity resources.
 
-The three dataset modes are:
+The three semantic model modes are:
 
 - [Import](#import-mode)
 - [DirectQuery](#directquery-mode)
@@ -23,7 +23,7 @@ The three dataset modes are:
 
 ## Import mode
 
-_Import_ mode is the most common mode used to develop datasets. This mode delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, and support for specific Power BI service features (Q&A, Quick Insights, etc.). Because of these strengths, it's the default mode when creating a new Power BI Desktop solution.
+_Import_ mode is the most common mode used to develop semantic models. This mode delivers fast performance thanks to in-memory querying. It also offers design flexibility to modelers, and support for specific Power BI service features (Q&A, Quick Insights, etc.). Because of these strengths, it's the default mode when creating a new Power BI Desktop solution.
 
 It's important to understand that imported data is always stored to disk. When queried or refreshed, the data must be fully loaded into memory of the Power BI capacity. Once in memory, Import models can then achieve very fast query results. It's also important to understand that there's no concept of an Import model being partially loaded into memory.
 
@@ -46,7 +46,7 @@ However, while there are compelling advantages associated with Import models, th
 - A full refresh removes all data from all tables and reloads it from the data source. This operation can be expensive in terms of time and resources for the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. For more information, including supported plans and licensing, see [Incremental refresh and real-time data for datasets](../connect-data/incremental-refresh-overview.md).
+> Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. For more information, including supported plans and licensing, see [Incremental refresh and real-time data for semantic models](../connect-data/incremental-refresh-overview.md).
 
 From a Power BI service resource perspective, Import models require:
 
@@ -105,18 +105,18 @@ For example, consider a model with a **Product** dimension-type table in Dual mo
 
 ## Hybrid tables
 
-Data modelers who develop Composite models can also configure fact tables as hybrid tables. A hybrid table is a table with one or multiple Import partitions and one DirectQuery partition. The advantage of a hybrid table is it could be efficiently and quickly queried from in-memory while at the same time including the latest data changes from the data source that occurred after the last import cycle, as the following visualization illustrates.
+Data modelers who develop Composite models can also configure fact tables as hybrid tables. A hybrid table is a table with one or multiple Import partitions and one DirectQuery partition. The advantage of a hybrid table is that it could be efficiently and quickly queried from in-memory while at the same time including the latest data changes from the data source that occurred after the last import cycle, as the following visualization illustrates.
 
 :::image type="content" source="media/service-dataset-modes-understand/hybrid-tables-partition.gif" alt-text="Screenshot shows a hybrid table partition with Archived, Incremental refresh, and Real time rows marked.":::
 
 The easiest way to create a hybrid table is to configure an incremental refresh policy in Power BI Desktop and enable the option **Get the latest data in real time with DirectQuery (Premium only)**. When Power BI applies an incremental refresh policy that has this option enabled, it partitions the table like the partitioning scheme displayed in the previous diagram. To ensure good performance, configure your dimension-type tables in Dual storage mode so that Power BI can generate efficient native SQL queries when querying the DirectQuery partition.
 
 > [!NOTE]
-> Power BI supports hybrid tables only when the dataset is hosted in workspaces on Premium capacities. Accordingly, you must upload your dataset to a Premium workspace if you configure an incremental refresh policy with the option to get the latest data in real time with DirectQuery. For more information, see [Incremental refresh and real-time data for datasets](incremental-refresh-overview.md).
+> Power BI supports hybrid tables only when the semantic model is hosted in workspaces on Premium capacities. Accordingly, you must upload your semantic model to a Premium workspace if you configure an incremental refresh policy with the option to get the latest data in real time with DirectQuery. For more information, see [Incremental refresh and real-time data for semantic models](incremental-refresh-overview.md).
 
 It's also possible to convert an Import table to a hybrid table by adding a DirectQuery partition using Tabular Model Scripting Language (TMSL) or the Tabular Object Model (TOM) or by using a third-party tool. For example, you can partition a fact table such that the bulk of the data is left in the data warehouse while only a fraction of the most recent data is imported. This approach can help to optimize performance if the bulk of this data is historical data that is infrequently accessed. A hybrid table can have multiple Import partitions, but only one DirectQuery partition.
 
-## Next steps
+## Related content
 
 - [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - [Using DirectQuery in Power BI](desktop-directquery-about.md)

@@ -1,21 +1,21 @@
 ---
-title: Power BI Dataset Scale-Out test
-description: Learn how test the Power BI Dataset Scale-Out feature after it's enabled
+title: Power BI semantic model scale-out test
+description: Learn how test the Power BI semantic model scale-out feature after it's enabled
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: tutorial
-ms.date: 01/18/2023
+ms.date: 11/21/2023
 LocalizationGroup: Premium
 ---
 
-# Test Power BI Dataset Scale-Out
+# Test semantic model scale-out
 
-This article details how you can test the [Power BI Dataset Scale-Out](service-premium-scale-out.md) feature after it's enabled.
+This article describes how you can test the semantic model scale-out feature.
 
-## Step 1 - Create a Scale-Out query
+## Step 1 - Create a scale-out query
 
 1. Open Power BI Desktop and sign into your account.
 
@@ -77,15 +77,15 @@ This article details how you can test the [Power BI Dataset Scale-Out](service-p
 
     :::image type="content" source="media/service-premium-scale-out-test/publish-dataset.png" alt-text="A screenshot showing the Microsoft Power B I Desktop pop up window after the publish button is selected. The publish and save buttons are highlighted.":::
 
-7. in the *Publish to Power BI* pop-up window, select the workspace you want to enable Scale-Out for, and then select **Select**.
+7. in the *Publish to Power BI* pop-up window, select the workspace you want to enable scale-out for, and then select **Select**.
 
     :::image type="content" source="media/service-premium-scale-out-test/publish.png" alt-text="A screenshot showing the publish to Power B I pop up window in the Power B I Desktop.":::
 
-## Step 3 - Connect to the read/write dataset copy (optional)
+## Step 3 - Connect to the read-write semantic model (optional)
 
-By default, Power BI Desktop connects to the *read-only* dataset copy. To connect to the *read/wrtie* replica, follow these steps:
+By default, Power BI Desktop connects to a read-only replica. To connect to the read-write semantic model, follow these steps:
 
-1. In SQL Server Management Studio (SSMS), expand *Databases* and select the uploaded Power BI dataset.
+1. In SQL Server Management Studio (SSMS), expand *Databases* and select the uploaded Power BI semantic model.
 
 2. Run a simple DAX query such as:
 
@@ -97,9 +97,9 @@ By default, Power BI Desktop connects to the *read-only* dataset copy. To connec
 
 ## Step 4 - Validate the read/write connection (optional)
 
-If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optional), you're connected to the *read/write* dataset copy. You can validate this connection by following these steps:
+If you followed step 3, you're connected to the read-write semantic model. You can validate this connection by following these steps:
 
-1. In SQL Server Management Studio (SSMS), right-click your dataset, select **Process Database**.
+1. In SQL Server Management Studio (SSMS), right-click your semantic model, select **Process Database**.
 
     :::image type="content" source="media/service-premium-scale-out-test/process-database.png" alt-text="A screenshot showing the process database option highlighted in S Q L Server Management Studio.":::
 
@@ -111,13 +111,12 @@ If you followed [step 3](#step-3---connect-to-the-readwrite-dataset-copy-optiona
 
 4. In the DAX query window, execute the query *Evaluate Query1* again. SQL Server Management Studio (SSMS) shows the latest refresh time because it's connected to the *read/write* replica.
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Power BI Dataset Scale-Out](service-premium-scale-out.md)
+* [Power BI semantic model scale-out](service-premium-scale-out.md)
 
-> [!div class="nextstepaction"]
-> [Sync a read-only scale-out replica](service-premium-scale-out-sync-replica.md)
+* [Configure semantic model scale-out](service-premium-scale-out-configure.md)
 
-> [!div class="nextstepaction"]
-> [Compare scale-out dataset copies](service-premium-scale-out-app.md)
+* [Synchronize scale-out replicas](service-premium-scale-out-sync-replica.md)
+
+>* [Compare semantic model scale-out replicas](service-premium-scale-out-app.md)

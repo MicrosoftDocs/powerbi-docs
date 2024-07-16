@@ -37,9 +37,9 @@ You might want the first value to start at the top instead.
   
  The first value now starts at the top of the pie chart.  
   
-## Next steps
+## Related content
 
- [Formatting a chart &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)
- [Pie charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)  
+- [Formatting a chart &#40;Power BI Report Builder&#41;](formatting-chart-report-builder.md)
+- [Pie charts &#40;Power BI Report Builder&#41;](/sql/reporting-services/report-design/pie-charts-report-builder-and-ssrs)  
   
   

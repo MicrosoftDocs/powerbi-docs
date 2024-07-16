@@ -174,7 +174,7 @@ The following table describes Python visuals capabilities based on licensing.
 
 For more information about Power BI Pro licenses and how they differ from free licenses, see [Purchase and assign Power BI Pro user licenses](../enterprise/service-admin-purchasing-power-bi-pro.md).
 
-## Next steps
+## Related content
 
 This tutorial barely scratches the surface of the options and capabilities for creating visual reports using by Python, pandas, and the Matplotlib library. For more information, see the following resources:
 

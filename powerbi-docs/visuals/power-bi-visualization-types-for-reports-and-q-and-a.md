@@ -1,14 +1,14 @@
 ---
 title: Visualization types in Power BI
 description: Visualization types in Power BI
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.search.form: Visualization types in Power BI
 ms.topic: conceptual
-ms.date: 09/01/2022
+ms.date: 06/05/2024
 ms.custom: retail-analysis-sample-PBIX
 LocalizationGroup: Visualizations
 ---
@@ -17,9 +17,9 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-This article lists visualizations available in Power BI. We'll be adding new visualizations, stay tuned!
+A visualization is an image created from data. Visualizations are also called "visuals." Some examples of visuals are: pie chart, line chart, map, and KPI. This article lists visualizations available in Power BI. We add new visualizations. Stay tuned!
 
-And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), where you find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
 ## Visualizations in Power BI
 
@@ -30,6 +30,7 @@ All of these visualizations can be added to Power BI reports, specified in Q&A, 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/basic-area-map-small.png" alt-text="Screenshot of an Area chart.":::
 
 The basic area chart is based on the line chart with the area between the axis and line filled in. Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
+On the other hand, stacked area charts display the cumulative total of multiple data series stacked on top of each other, showing how each series contributes to the total.
 
 For more information, see [Basic Area chart](power-bi-visualization-basic-area-chart.md).
 
@@ -68,7 +69,7 @@ Combo charts are a great choice:
 - When you have a line chart and a column chart with the same X axis.
 - To compare multiple measures with different value ranges.
 - To illustrate the correlation between two measures in one visual.
-- To check whether one measure meets the target which is defined by another measure.
+- To check whether one measure meets the target, which is defined by another measure.
 - To conserve canvas space.
 
 For more information, see [Combo charts in Power BI](power-bi-visualization-combo-chart.md).
@@ -77,7 +78,7 @@ For more information, see [Combo charts in Power BI](power-bi-visualization-comb
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition.png" alt-text="Screenshot of a Decomposition tree." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-decomposition-expanded.png":::
 
-The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This capability makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
 ## Doughnut charts
 
@@ -104,7 +105,7 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal. The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading. And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
-In the example above, we are a car retailer, tracking our Sales team's average sales per month. Our goal is $200,000 and represented by the location of the needle. The minimum possible average sales is $100,000 and we've set the maximum as $250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
+In the example, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 200,000 and represented by the location of the needle. The minimum possible average sales is 100,000 and we set the maximum as 250,000. The blue shading shows that we're currently averaging approximately $180,000 this month. Luckily, we still have another week to reach our goal.
 
 Radial gauges are a great choice to:
 
@@ -219,6 +220,10 @@ For more information, see [Add a Power Apps visual to your report](power-bi-visu
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png" alt-text="Screenshot of a Q&A visual.":::
 
+The Q&A visual provides users with a text box to query data in Power BI reports. Users can use natural language to query data, and the Q&A visual interprets the query and provides an appropriate visualization.
+
+For example, if a user asks a question like "What were the product sales in 2019?" the Q&A visual queries the relevant data and create an appropriate visualization to display the results. This visualization can be in many different formats, such as a chart or a table.
+
 >[!TIP]
 >Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language.
 
@@ -245,7 +250,7 @@ For more information, see [Ribbon charts in Power BI](desktop-ribbon-charts.md).
 
 ### Scatter, bubble, and dot plot chart
 
-A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
+A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points might be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-scatter-chart.png" alt-text="Screenshot of a scatter chart, with points at the intersection of the x and y axis.":::
 
@@ -265,7 +270,7 @@ For more information, see [Scatter charts in Power BI](power-bi-visualization-sc
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png" alt-text="Screenshot of a high density Scatter chart." lightbox="media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter-expanded.png":::
 
-By definition, high-density data is sampled to create visuals reasonably quickly that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
+By definition, high-density data is sampled to quickly create visuals that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
 
 This ensures the best combination of responsiveness, representation, and clear preservation of important points in the overall data set.
 
@@ -298,7 +303,7 @@ For more information, see [Create smart narrative summaries](power-bi-visualizat
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/visual-image.png" alt-text="Screenshot of a Standalone image visual.":::
 
-A standalone image is a graphic that has been added to a report or dashboard.
+A standalone image is a graphic that is added to a report or dashboard.
 
 For more information, see [Add an image widget to a dashboard](../create-reports/service-dashboard-add-widget.md).
 
@@ -306,7 +311,7 @@ For more information, see [Add an image widget to a dashboard](../create-reports
 
 :::image type="content" source="media/power-bi-visualization-types-for-reports-and-q-and-a/table-type.png" alt-text="Screenshot of a Table visual.":::
 
-A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
+A table is a grid that contains related data in a logical series of rows and columns. It might also contain headers and a row for totals. Tables work well with quantitative comparisons where you are looking at many values for a single category. For example, this table displays five different measures for Category.
 
 Tables are a great choice:
 
@@ -351,7 +356,7 @@ Waterfall charts are a great choice:
 
 For more information, see [Waterfall charts in Power BI](power-bi-visualization-waterfall-charts.md).
 
-## Next steps
+## Related content
 
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)
-[Power BI Visuals Reference from sqlbi.com](https://www.sqlbi.com/ref/power-bi-visuals-reference/), guidance for picking the right visual for your data
+- [Visualizations in Power BI reports](power-bi-report-visualizations.md)
+- [Power BI Visuals Reference from sqlbi.com](https://www.sqlbi.com/ref/power-bi-visuals-reference/), guidance for picking the right visual for your data

@@ -138,7 +138,8 @@ The following table identifies characters you can use to create **user-defined n
 | ( **\\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\\). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\\\). Date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :) can't be displayed as literal characters, the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, and !). |
 | ("ABC") | Display the string inside the double quotation marks (" "). |
 
-## Next steps
+## Related content
+
 For more information, see:
 
 * [VBA format strings](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)

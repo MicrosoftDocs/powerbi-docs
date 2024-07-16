@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/22/2023
+ms.date: 02/02/2024
 LocalizationGroup: Data from files
 ---
 # Configure and consume a dataflow
 
-With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a dataset in Power BI Desktop, or referenced as a linked or computed table.
+With dataflows, you can unify data from multiple sources and prepare that unified data for modeling. Whenever you create a dataflow, you're prompted to refresh the data for the dataflow. Refreshing a dataflow is required before it can be consumed in a semantic model in Power BI Desktop, or referenced as a linked or computed table.
 
 > [!NOTE]
-> Dataflows are not available in the Power BI service for U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
+> Dataflows may not be available in the Power BI service for all U.S. Government DoD customers. For more information about which features are available, and which are not, see [Power BI feature availability for U.S. Government customers](../../enterprise/service-govus-overview.md#power-bi-feature-availability).
 
 ## Configure a dataflow
 
@@ -35,7 +35,7 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 * **Sensitivity label:** Here you can define the sensitivity of the data in the dataflow. To learn more about sensitivity labels, see [How to apply sensitivity labels in Power BI](../../enterprise/service-security-apply-data-sensitivity-labels.md).
 
-* **Scheduled refresh:** Here you can define the times of day the selected dataflow refreshes. A dataflow can be refreshed at the same frequency as a dataset.
+* **Scheduled refresh:** Here you can define the times of day the selected dataflow refreshes. A dataflow can be refreshed at the same frequency as a semantic model.
 
 * **Enhanced compute engine settings:** Here you can define whether the dataflow is stored in the compute engine. The compute engine allows subsequent dataflows, which reference this dataflow, to perform merges and joins and other transformations faster than you would otherwise. It also allows DirectQuery to be performed over the dataflow. Selecting **On** ensures the dataflow is always supported in DirectQuery mode, and any references benefit from the engine. Selecting **Optimized** means the engine is only used if there's a reference to this dataflow. Selecting **Off** disables the compute engine and DirectQuery capability for this dataflow.
 
@@ -43,6 +43,10 @@ The **Settings** options provide many options for your dataflow, as the followin
 
 > [!NOTE]
 > Users with a Pro license or a Premium Per User (PPU) can create a dataflow in a Premium workspace.
+
+> [!CAUTION]
+> If a workspace is deleted that contains dataflows, all dataflows in that workspace are also deleted. Even if recovery of the workspace is possible, you cannot recover deleted dataflows, either directly or through support from Microsoft.
+
 
 ## Refresh a dataflow
 
@@ -55,7 +59,7 @@ Dataflows act as building blocks on top of one another. Suppose you have a dataf
 * Only referenced tables are refreshed when triggered by a source refresh completion. To schedule all the tables, you should set a schedule refresh on the linked table as well. Avoid setting a refresh schedule on linked dataflows to avoid double refresh.
 
 **Cancel Refresh**
-Dataflows support the ability to cancel a refresh, unlike datasets. If a refresh is running for a long time, you can select **More options** (the ellipses next to the dataflow) and then select **Cancel refresh**.
+Dataflows support the ability to cancel a refresh, unlike semantic models. If a refresh is running for a long time, you can select **More options** (the ellipses next to the dataflow) and then select **Cancel refresh**.
 
 **Incremental Refresh (Premium only)**
 Dataflows can also be set to refresh incrementally. To do so, select the dataflow you wish to set up for incremental refresh, and then choose the **Incremental Refresh** icon.
@@ -68,7 +72,7 @@ There are some circumstances under which you shouldn't set incremental refresh:
 
 * Linked tables shouldn't use incremental refresh if they reference a dataflow. Dataflows don't support query folding (even if the table is DirectQuery enabled).
 
-* Datasets referencing dataflows shouldn't use incremental refresh. Refreshes to dataflows are  generally performant, so incremental refreshes shouldn't be necessary. If refreshes take too long, consider using the compute engine, or DirectQuery mode.
+* Semantic models referencing dataflows shouldn't use incremental refresh. Refreshes to dataflows are  generally performant, so incremental refreshes shouldn't be necessary. If refreshes take too long, consider using the compute engine, or DirectQuery mode.
 
 ## Consume a dataflow
 
@@ -76,17 +80,17 @@ A dataflow can be consumed in the following three ways:
 
 * Create a linked table from the dataflow to allow another dataflow author to use the data.
 
-* Create a dataset from the dataflow to allow a user to utilize the data to create reports.
+* Create a semantic model from the dataflow to allow a user to utilize the data to create reports.
 
 * Create a connection from external tools that can read from the CDM (Common Data Model) format.
 
 **Consume from Power BI Desktop**
-To consume a dataflow, open Power BI Desktop and select **Power BI dataflows** in the **Get Data** dropdown.
+To consume a dataflow, open Power BI Desktop and select **Dataflows** in the **Get Data** dropdown.
 
 > [!NOTE]
-> The Power BI dataflows connector uses a different set of credentials than the current logged in user. This is by design to support multi-tenant users.
+> The Dataflows connector uses a different set of credentials than the current logged in user. This is by design to support multi-tenant users.
 
-:::image type="content" source="media/dataflows-configure-consume/dataflow-connector.png" alt-text="Screenshot of Power BI Desktop highlighting the Power BI dataflows option in the Get data dropdown.":::
+:::image type="content" source="media/dataflows-configure-consume/dataflow-connector-menu.png" alt-text="Screenshot of Power BI Desktop highlighting the dataflows option in the Get data dropdown.":::
 
 Select the dataflow and tables to which you want to connect.
 
@@ -97,11 +101,11 @@ Select the dataflow and tables to which you want to connect.
 
 If DirectQuery is available, you're prompted to choose whether you want to connect to the tables through DirectQuery or Import.
 
-In DirectQuery mode, you can quickly interrogate large-scale datasets locally. However, you can't perform any more transformations.
+In DirectQuery mode, you can quickly interrogate large-scale semantic models locally. However, you can't perform any more transformations.
 
-Using Import brings the data into Power BI, and requires the dataset to be refreshed independently of the dataflow.
+Using Import brings the data into Power BI, and requires the semantic model to be refreshed independently of the dataflow.
 
-## Next steps
+## Related content
 
 The following articles provide more information about dataflows and Power BI:
 

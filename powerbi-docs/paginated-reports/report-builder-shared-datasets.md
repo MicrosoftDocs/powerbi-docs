@@ -26,7 +26,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 
 - Download and install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
 - The dataset can be in any workspace, and you don't need to be a member of that workspace.
-- To access a Power BI dataset, you need to have *Build permission* for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
+- To access a Power BI semantic model, you need to have *Build permission* for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
 - You need a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) license or [Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) license to publish your paginated report.
 - You don't need a Power BI Pro or PPU license to create a paginated report in Power BI Report Builder. 
 - You can publish to *My Workspace*. For any other workspace, you need at least a [Contributor role](../collaborate-share/service-roles-new-workspaces.md#workspace-roles).
@@ -37,16 +37,16 @@ If you want to follow along with this article, download the [Retail Analysis sam
 
 Then [publish the report to a workspace](../create-reports/desktop-upload-desktop-files.md) in the Power BI service.
 
-## Connect to the Power BI dataset
+## Connect to the Power BI semantic model
 
 1. Open Power BI Report Builder.
 1. Select **Sign in** in the upper-right corner of Report Builder to sign in to your Power BI account.
-1. In the Report Data pane, select **New** > **Power BI Dataset Connection**.
+1. In the Report Data pane, select **New** > **Power BI Semantic Model Connection**.
 
     ![Screenshot of new dataset in the Report Data pane.](media/report-builder-shared-datasets/power-bi-report-builder-new-dataset.png)
 
     > [!NOTE]
-    > You can't create the data source or dataset for a Power BI dataset by using the Report Builder Table, Matrix, or Chart wizards. After you've created them, you can use the wizards to create tables, matrixes, or charts based on them.
+    > You can't create the data source or dataset for a Power BI Semantic Model by using the Report Builder Table, Matrix, or Chart wizards. After you've created them, you can use the wizards to create tables, matrixes, or charts based on them.
 
 1. Search or browse for the dataset, or for the workspace where the dataset resides, then choose **Select**. Report Builder fills in the dataset name.
 
@@ -56,7 +56,7 @@ Then [publish the report to a workspace](../create-reports/desktop-upload-deskto
 
     ![Screenshot of the Report Data pane with the dataset listed under Data Sources.](media/report-builder-shared-datasets/power-bi-report-builder-data-source.png)
 
-    Remember, you can connect to multiple Power BI datasets and other data sources in the same paginated report.
+    Remember, you can connect to multiple Power BI semantic models and other data sources in the same paginated report.
 
 ## Get the DAX query for the dataset
 
@@ -69,7 +69,7 @@ In the following video, Chris Finlan demonstrates how to get the DAX you need fo
 > [!NOTE]  
 > This video might use earlier versions of Power BI Report Builder or the Power BI service.
 
-<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/NfoOK4QRkhI]
 
 ### Steps to get the DAX query
 
@@ -224,9 +224,9 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 ## Considerations and limitations
 
 - For datasets that use *Live Connection to Analysis Services*, you can connect directly by using the underlying Analysis Services connection instead of a shared dataset.
-- If you want to use a Power BI dataset that uses DirectQuery in Power BI Report Builder, the dataset has to include a measure, even if you don't plan to surface the measure in your report. Without the measure, the dataset won't return proper data results.
+- If you want to use a Power BI semantic model that uses DirectQuery in Power BI Report Builder, the dataset has to include a measure, even if you don't plan to surface the measure in your report. Without the measure, the dataset won't return proper data results.
 - Datasets with Promoted or Certified endorsements appear in the list of available datasets, but they aren't marked as such.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

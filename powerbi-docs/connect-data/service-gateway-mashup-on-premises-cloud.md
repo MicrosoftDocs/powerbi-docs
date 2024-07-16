@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 05/28/2024
 LocalizationGroup: Gateways
 ---
 
@@ -46,6 +46,6 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 
 With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
 
-## Next steps
+## Related content
 
-To learn more about data refresh for gateways, see [Use the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#use-the-data-source-for-scheduled-refresh).
+To learn more about data refresh for gateways, see: [Use the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#use-the-data-source-for-scheduled-refresh).

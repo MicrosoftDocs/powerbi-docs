@@ -61,7 +61,7 @@ landingContent:
             url: service-share-dashboards.md
           - text: "Filter and share a report"
             url: service-share-reports.md
-          - text: "Share a dataset"
+          - text: "Share a semantic model"
             url: ../connect-data/service-datasets-share.md
 
   # Card (optional)

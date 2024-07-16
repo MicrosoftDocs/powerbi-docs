@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 10/24/2022
+ms.date: 05/23/2024
 ---
 
 # Export paginated report to file
@@ -32,7 +32,7 @@ The `exportToFile` API enables exporting a Power BI paginated report by using a 
 
 ## Usage examples
 
-You can use the export feature in a variety of ways. Here are a couple of examples:
+You can use the export feature in various ways. Here are a couple of examples:
 
 * **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx. When it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes, and other format-specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
@@ -40,21 +40,26 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 ## Using the API
 
+### License requirements
+
+* The report you're exporting must reside in a workspace backed by a Premium, Embedded, or Fabric capacity.
+* The `exportToFile` API, has [limited support](#concurrent-requests) in [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml).
+
 ### Rendering events
 
-To make sure the export doesn't begin before the visual finishes rendering use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
+To make sure the export doesn't begin before the visual finishes rendering, use the ["Rendering" events API](../visuals/event-service.md) and only begin the export when rendering is finished.
 
 ### Polling
 
 The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL is available for 24 hours.
 
 ## Supported features
 
 ### Format settings
 
-Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
+Specify various format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
 Here are two examples. The first is for exporting the first four pages of a report using the report page size to a .pptx file. The second example is for exporting the third page of a report to a .jpeg file.
 
@@ -114,9 +119,9 @@ You can authenticate using a user (or master user) or a [service principal](embe
 
 ### Row Level Security (RLS)
 
-When using a Power BI dataset that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
+When using a Power BI semantic model that has Row Level Security (RLS) defined as a data source, you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
 
-To export using RLS, you must have read permission for the Power BI dataset the report is using as a data source.
+To export using RLS, you must have read permission for the Power BI semantic model the report is using as a data source.
 
 Here's an example of supplying an effective user name for RLS.
 
@@ -140,7 +145,7 @@ Getting the correct access token for the resource that you want to access can so
 * For Azure SQL, the resource is `https://database.windows.net`.
 * For Dataverse, the resource is the `https://` address for your environment. For example, `https://contoso.crm.dynamics.com`.
 
-Access the token API using the [AuthenticationContext.AcquireTokenAsync](/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenasync) method.
+Access the token API using the [AuthenticationContext.AcquireTokenAsync](/azure/active-directory/develop/msal-net-migration-confidential-client) method.
 
 Here's an example for supplying an effective identity (user name) with an access token.
 
@@ -168,9 +173,9 @@ Here's an example for supplying an effective identity (user name) with an access
 
 ## Concurrent requests
 
-The `exportToFile` API supports concurrent export job requests. The maximum number of concurrent report pages depends on the type and number of SKUs you have. It's *not* the same number as for other Power BI reports. If you exceed the limit and get a *Too Many Requests* (429) error, try to distribute the load over time or get a larger capacity.
+The `exportToFile` supports a limited number of concurrent requests. The maximum number of [concurrent paginated report render requests](../../paginated-reports/paginated-capacity-planning.md#concurrent-requests) is 500. To avoid exceeding the limit and getting a Too Many Requests (429) error, either distribute the load over time or across capacities.
 
-when using [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within a five-minute window will result in a *Too Many Requests* (429) error.
+With [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml), the `exportToFile` API allows just *one* request in a five-minute window. Multiple requests within the five-minute window result in a *Too Many Requests* (429) error.
 
 ## Code examples
 
@@ -340,26 +345,24 @@ private async Task<ExportedFile> ExportPaginatedReport(
 
 ## Considerations and limitations
 
-* Exporting a paginated report that has a Power BI dataset as its data source, isn't supported in the following cases:
+* Exporting a paginated report that has a Power BI semantic model as its data source, isn't supported in the following cases:
 
-  * The caller is a service principal profile.
-  * One of the dataset's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
-  * The Power BI dataset has DirectQuery to Azure Analysis Services or to another Power BI dataset, and an effective identity was provided.
+  * The caller is a [service principal profile](./embed-multi-tenancy.md).
+  * One of the semantic model's data sources is configured with single sign-on (SSO) enabled and an effective identity was provided.
+  * The Power BI semantic model has DirectQuery to Azure Analysis Services or to another Power BI semantic model, and an effective identity was provided.
 
 * Exporting a paginated report that has Azure Analysis Services data source configured with single sign-on (SSO) enabled, isn't supported in the following cases:
 
-  * The caller is a service principal profile.
+  * The caller is a [service principal profile](./embed-multi-tenancy.md).
   * The caller is a master user and an effective identity was provided.
 
-* When exporting a paginated report with an effective identity, the username must be an existing user from your tenant’s Azure Active Directory.
+* To export a paginated report with an effective identity, the username must be an existing user from your tenant’s Microsoft Entra ID.
 
-* Export of a report is limited to 60 minutes, which matches the life of the user access token.
+* Export of a report is limited to 60 minutes, which matches the life of the user access token. If you get a timeout error past the 60-minute mark when exporting large amounts of data, consider reducing the amount of data using appropriate filters.
 
-* If you get a timeout error past the 60-minute mark while exporting large amounts of data, consider reducing the amount of data using appropriate filters.
+* The file share URL hyperlink (file share /UNC path) doesn't works when exporting a published paginated report on Power BI service online.  
 
-* The file share URL hyperlink (file share /UNC path) does not works when exporting a published paginated report on Power BI service online.  
-
-## Next steps
+## Related content
 
 Review how to embed content for your customers and your organization:
 

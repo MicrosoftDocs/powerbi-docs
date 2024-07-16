@@ -33,6 +33,6 @@ You can define a custom help link for sensitivity labels in two ways:
 
 If a user has more than one label policy, the custom URL is always taken from the policy with the highest priority, so be sure to configure the custom URL on that policy.
 
-## Next steps
+## Related content
 
 * [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)

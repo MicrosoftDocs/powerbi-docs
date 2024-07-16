@@ -18,8 +18,12 @@
     items: 
     - name: "Get started with Power BI Desktop"
       href: desktop-getting-started.md
+    - name: Sign up or purchase a license for Power BI
+      href: service-self-service-signup-for-power-bi.md
     - name: "Get started with the Power BI service"
       href: service-get-started.md
+    - name: "Get started with Microsoft Fabric and Power BI"
+      href: fabric-get-started.md      
   - name: Concepts
     expanded: true
     items: 
@@ -33,15 +37,11 @@
       href: ../support/service-tips-for-finding-help.md
     - name: Licensing
       items: 
-      - name: "What is self-service sign-up and self-service purchase?"
-        href: service-self-service-signup-for-power-bi.md 
-      - name: "Sign up or purchase Power BI"
+      - name: "Sign up or purchase Power BI as an individual"
         href: service-self-service-signup-purchase-for-power-bi.md         
       - name: "Features by license type"
         href: service-features-license-type.md
-      - name: "Get help purchasing Power BI Pro"
-        href: service-self-service-purchase-help.md 
-      - name: "Get help signing up for Power BI"
+      - name: "Get help purchasing or signing up for Power BI"
         href: service-self-service-sign-up-help.md 
     - name: Security
       items: 

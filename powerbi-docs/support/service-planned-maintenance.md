@@ -34,10 +34,10 @@ If your organization is affected, we'll provide you with advance notice. Microso
 
   * [Power BI activity log](../admin/service-admin-auditing.md#use-the-activity-log). Users should download activity logs before maintenance. You can also use the [Office 365 audit log data](../admin/service-admin-auditing.md#access-your-audit-logs) to get equivalent activity details.
   * View count in [lineage view](../collaborate-share/service-data-lineage.md#explore-lineage-view)
-  * [Data protection metrics report](../enterprise/service-security-data-protection-metrics-report.md)
+  * [Data protection metrics report](/fabric/governance/use-microsoft-purview-hub)
   * [Usage metrics (Preview)](../collaborate-share/service-modern-usage-metrics.md)
 
-## Next steps
+## Related content
 
 * [Enable service interruption notifications](/power-bi/support/service-interruption-notifications)
 * [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center)

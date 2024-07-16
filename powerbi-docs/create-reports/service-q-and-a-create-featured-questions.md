@@ -14,27 +14,27 @@ LocalizationGroup: Ask questions of your data
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-If you have edit permission for a dataset, you can add your own featured questions to that dataset. Power BI Q&A will show those questions to colleagues who consume dashboards based on that dataset. Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that might be hard to phrase.
+If you have edit permission for a semantic model, you can add your own featured questions to that semantic model. Power BI Q&A will show those questions to colleagues who consume dashboards based on that semantic model. Featured questions give your colleagues ideas about the types of questions they can ask about the semantic model. The featured questions you add are up to you. You can add popular questions, questions that display interesting results, or questions that might be hard to phrase.
 
 > [!NOTE]
 > Q&A featured questions are available for use in the [Microsoft Power BI app on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and in the Power BI service (app.powerbi.com). Creating the questions is only available in the Power BI service.
 
 ## Prerequisites
 
-- You just need a [Power BI free license](../consumer/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
+- You just need a [Fabric free license](../consumer/end-user-features.md) to add featured questions to a dataset in My Workspace in the Power BI service.
 - You need a Power BI Pro license to add featured questions in other workspaces in the Power BI service. Read more about [Power BI Pro licenses](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 - You also need at least a Contributor role in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
 - If you want to follow along, get the [Retail Analysis sample](sample-retail-analysis.md#get-the-built-in-sample-in-the-power-bi-service) in the Power BI service.
 
 ## Create a featured question
 
-This article uses the Retail Analysis sample. Follow these step-by-step instructions to explore a dataset.
+This article uses the Retail Analysis sample. Follow these step-by-step instructions to explore a semantic model.
 
 1. On the dashboard, select the **Ask a question about your data** Q&A question box. Notice that Q&A is already being helpful by displaying some suggested questions.
 1. To create a featured question, in Power BI, select **More options** (...), select **Settings** > **Settings**.
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/gear-icon-2.png" alt-text="Screenshot of Power BI, highlighting Settings and Settings.":::
-1. Select **Datasets** > **Retail Analysis sample** > **Featured Q&A questions**.
+1. Select **Semantic models** > **Retail Analysis sample** > **Featured Q&A questions**.
 1. Select **Add a question**.
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/power-bi-settings-2.png" alt-text="Screenshot of the Settings menu with Featured Q&A questions dropdown box.":::
@@ -53,7 +53,7 @@ This article uses the Retail Analysis sample. Follow these step-by-step instruct
 
    :::image type="content" source="media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-2.png" alt-text="Screenshot of the Q&A map visualization.":::
 
-## Next steps
+## Related content
 
 - [Q&A for Power BI business users](../consumer/end-user-q-and-a.md)
 - [Use Power BI Q&A to explore your data and create visuals](power-bi-tutorial-q-and-a.md)

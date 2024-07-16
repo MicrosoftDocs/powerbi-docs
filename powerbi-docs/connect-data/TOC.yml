@@ -9,11 +9,9 @@
       href: service-get-data.md
     - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
-    - name: "Data hub"
-      href: service-data-hub.md
-    - name: "Data details pages: Index"
-      href: service-data-details-page.md
-    - name: "Dataset details page"
+    - name: "OneLake data hub"
+      href: /fabric/get-started/onelake-data-hub?toc=/power-bi/connect-data/toc.json&bc=/power-bi/connect-data/breadcrumb/toc.json
+    - name: "Semantic model details page"
       href: service-dataset-details-page.md
     - name: "Datamart details page"
       href: service-datamart-details-page.md
@@ -41,8 +39,6 @@
       href: service-tutorial-use-cognitive-services.md
     - name: "Build a machine learning model"
       href: service-tutorial-build-machine-learning-model.md
-    - name: "Consume a machine learning model in a report"
-      href: service-aml-integrate.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md
     - name: "Automate template app configuration"
@@ -52,13 +48,15 @@
     items: 
     - name: "Power BI data sources"
       href: power-bi-data-sources.md
-    - name: "Datasets in the Power BI service"
+    - name: "New name for Power BI datasets"
+      href: service-datasets-rename.md      
+    - name: "Semantic models in the Power BI service"
       href: service-datasets-understand.md      
-    - name: "Dataset modes in the Power BI service"
+    - name: "Semantic model modes in the Power BI service"
       href: service-dataset-modes-understand.md        
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
-    - name: "Using enhanced dataset metadata in Power BI Desktop"
+    - name: "Using enhanced semantic model metadata in Power BI Desktop"
       href: desktop-enhanced-dataset-metadata.md      
     - name: "Work with multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
@@ -71,21 +69,25 @@
     items: 
     - name: "Connect to data sources in Power BI Desktop"
       href: desktop-connect-to-data.md
+    - name: "Connect to cloud data sources in the Power BI service"
+      href: service-connect-cloud-data-sources.md      
+    - name: "Create and share cloud data sources in the Power BI service"
+      href: service-create-share-cloud-data-sources.md          
     - name: Connect to data
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
       - name: "Use dynamic M query parameters"
         href: desktop-dynamic-m-query-parameters.md
-      - name: "Create a dataset from Log Analytics"
+      - name: "Create a semantic model from Log Analytics"
         href: create-dataset-log-analytics.md
-      - name: "Create a dataset from a SharePoint List"
+      - name: "Create a semantic model from a SharePoint List"
         href: create-dataset-sharepoint-online-list.md
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
-      - name: "Connect to datasets in the Power BI service"
+      - name: "Connect to semantic models in the Power BI service"
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
         href: desktop-import-excel-workbooks.md
@@ -119,7 +121,7 @@
         href: desktop-connect-to-web.md
       - name: "Connect to Snowflake in the Power BI service"
         href: service-connect-snowflake.md        
-      - name: "Create visuals with the Azure Cost Management connector"
+      - name: "Create visuals with the Microsoft Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
       - name: "Edit SAP variables in the Power BI service"
         href: service-edit-sap-variables.md        
@@ -157,25 +159,25 @@
         href: service-publish-from-excel.md
       - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
-    - name: Get data from shared datasets
+    - name: Get data from shared semantic models
       items: 
-      - name: "Use datasets across workspaces"
+      - name: "Use semantic models across workspaces"
         href: service-datasets-across-workspaces.md
-      - name: "Provide a dataset description"
+      - name: "Provide a semantic model description"
         href: service-dataset-description.md
-      - name: "Share dataset access (preview)"
+      - name: "Share semantic model access (preview)"
         href: service-datasets-share.md
-      - name: "Dataset permissions"
+      - name: "Semantic model permissions"
         href: service-datasets-permissions.md
-      - name: "Manage dataset access (preview)"
+      - name: "Manage semantic model access (preview)"
         href: service-datasets-manage-access-permissions.md
-      - name: "Build permission for shared datasets"
+      - name: "Build permission for shared semantic models"
         href: service-datasets-build-permissions.md
-      - name: "Create reports based on datasets"
+      - name: "Create reports based on semantic models"
         href: service-datasets-discover-across-workspaces.md
-      - name: "Copy reports based on datasets"
+      - name: "Copy reports based on semantic models"
         href: service-datasets-copy-reports.md
-      - name: "Control the use of datasets"
+      - name: "Control the use of semantic models"
         href: service-datasets-admin-across-workspaces.md
     - name: Get data from databases
       items: 
@@ -201,7 +203,7 @@
         href: asynchronous-refresh.md     
       - name: Incremental refresh
         items:
-        - name: Incremental refresh and real-time data for datasets
+        - name: Incremental refresh and real-time data for semantic models
           href: ../connect-data/incremental-refresh-overview.md
         - name: Configure incremental refresh and real-time data
           href: ../connect-data/incremental-refresh-configure.md
@@ -209,15 +211,15 @@
           href: ../connect-data/incremental-refresh-xmla.md
         - name: Troubleshoot incremental refresh and real-time data
           href: ../connect-data/incremental-refresh-troubleshoot.md
-      - name: "Refresh a dataset from a local Power BI Desktop file"
+      - name: "Refresh a semantic model from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
-      - name: "Refresh a dataset from a cloud Power BI Desktop file"
+      - name: "Refresh a semantic model from a cloud Power BI Desktop file"
         href: refresh-desktop-file-onedrive.md
-      - name: "Refresh a dataset from a local Excel workbook"
+      - name: "Refresh a semantic model from a local Excel workbook"
         href: refresh-excel-file-local-drive.md
-      - name: "Refresh a dataset from a cloud Excel workbook"
+      - name: "Refresh a semantic model from a cloud Excel workbook"
         href: refresh-excel-file-onedrive.md
-      - name: "Refresh a dataset from a .csv file on OneDrive"
+      - name: "Refresh a semantic model from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
       - name: "Query caching in Power BI Premium"
         href: power-bi-query-caching.md
@@ -253,8 +255,6 @@
         href: service-connect-emissions-impact-dashboard-microsoft-365.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
-      - name: "Power BI Premium Capacity Metrics"
-        href: service-connect-to-pbi-premium-capacity-metrics.md
       - name: "Project Online"
         href: service-connect-to-project-online.md
       - name: "Regional Emergency Response Dashboard"
@@ -317,7 +317,7 @@
             href: service-gateway-sso-saml.md
           - name: "Test single sign-on (SSO) configuration"
             href: service-gateway-sso-test-configuration.md
-        - name: "Azure Active Directory SSO"
+        - name: "Microsoft Entra SSO"
           href: service-gateway-azure-active-directory-sso.md
       - name: "Troubleshoot the gateway"
         href: service-gateway-onprem-tshoot.md
@@ -355,7 +355,7 @@
       href: desktop-connector-extensibility.md
     - name: "Trusted third-party connectors"
       href: desktop-trusted-third-party-connectors.md
-    - name: "Manage DirectQuery connections to a published dataset"
+    - name: "Manage DirectQuery connections to a published semantic model"
       href: desktop-discourage-directquery-connections-to-dataset.md
     - name: "Troubleshooting sign in with OData Feed connections"
       href: desktop-troubleshoot-odata.md      

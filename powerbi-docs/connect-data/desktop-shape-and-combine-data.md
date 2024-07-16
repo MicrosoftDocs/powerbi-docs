@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 12/9/2022
+ms.date: 11/10/2023
 LocalizationGroup: Transform and shape data
 #Customer intent: As a data analyst or report creator, I want to connect to more than one data source, so that I can use those data sources to create data models and build reports.
 ---
@@ -48,6 +48,9 @@ The steps you specify (such as rename a table, transform a data type, or delete 
 1. In the **Navigator** dialog, select `Table 1`, then choose **Transform Data**.
 
     :::image type="content" source="media/desktop-shape-and-combine-data/get-data-web-navigator-dialog-transform-data.png" alt-text="Screenshot of Power Query Editor's Navigator dialog with HTML Table 1 selected and the Transform Data button highlighted.":::
+
+> [!TIP]
+> Some information in the tables from the previous URL may change or be updated occasionally. As a result, you may need to adjust the selections or steps in this article accordingly.
 
 1. The Power Query Editor window opens. You can see the default steps applied so far, in the **Query Settings** pane under **APPLIED STEPS**. 
 
@@ -277,11 +280,11 @@ In this case, we want to merge the queries:
 
 1. To apply your changes and close Power Query Editor, select **Close & Apply** from the **Home** ribbon tab. 
 
-   The transformed dataset appears in Power BI Desktop, ready to be used for creating reports.
+   The transformed semantic model appears in Power BI Desktop, ready to be used for creating reports.
 
    :::image type="content" source="media/desktop-shape-and-combine-data/close-and-apply.png" alt-text="Screenshot of Power Query Editor's Close & Apply button.":::
 
-## Next steps
+## Related content
 
 For more information on Power BI Desktop and its capabilities, see the following resources:
 

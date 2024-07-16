@@ -1,12 +1,13 @@
 ---
-title: Migrate multi-customer apps to the service principal profiles model
+title: Move multi-customer apps to service principal profile model
 description: Get better scalability by migrating Power BI embedded analytics multitenancy applications to the service principal profiles model
 author: mberdugo
 ms.author: monaberdugo
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/17/2022
+ms.date: 06/04/2024
+#customer intent: As a developer, I want to learn how to migrate my multi-customer app to the service principal profiles model so that I can get better scalability.
 ---
 
 # Migrate multi-customer applications to the service principal profiles model
@@ -58,16 +59,16 @@ If you don't have one workspace per customer, use the corresponding profile to c
 
 ### Organize items in workspaces
 
-You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import items (like reports and datasets) into these workspaces. The datasets you import depend on your current solution:
+You should now have a profile and a workspace for each customer. If you created new workspaces in the previous step, you need to import items (like reports and semantic models) into these workspaces. The semantic models you import depend on your current solution:
 
-* If your app uses a separate dataset for each customer, the dataset design can work as it is.
+* If your app uses a separate semantic model for each customer, the semantic model design can work as it is.
 
-* If your app uses one dataset with row level security (RLS) to provide different data to different customers, you can get better scalability by creating [a separate dataset for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
+* If your app uses one semantic model with row level security (RLS) to provide different data to different customers, you can get better scalability by creating [a separate semantic model for each customer](embed-multi-tenancy.md#a-separate-database-for-each-customer) and using profiles as described in this article.
 * After overcoming scalability limitations by using profiles and separate data sources, you can get even more data separation by using [RLS](embedded-row-level-security.md) with profiles.
   * If you rely on Dynamic RLS, the name of the profile will be returned in the DAX function `UserName()`.
   * If you use static RLS and override roles when generating the embed token, you can continue doing this.
 
-Once the items are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-datasets).
+Once the items are ready, import them into the relevant workspaces. To automate the process, consider using the [Import API](embed-multi-tenancy.md#import-reports-and-semantic-models).
 
 ## Change the application codes to use profiles
 
@@ -77,7 +78,7 @@ Make the following code changes:
 
 * **Authorization code change**
 
-  * If you're using a *master user* in the [Azure AD](pbi-glossary.md#azure-ad-azure-active-directory) app, change the acquire token code. Read [embed with service principal](embed-service-principal.md) to learn about creating an app-only Azure AD token.
+  * If you're using a *master user* in the [Microsoft Entra ID](pbi-glossary.md#azure-ad-azure-active-directory) app, change the acquire token code. Read [embed with service principal](embed-service-principal.md) to learn about creating an app-only Microsoft Entra token.
   * If you're using a *service principal* and you created a new one for profiles, adjust the code to use the correct service principal ID and secrets.
 
 * **Management code change**
@@ -104,7 +105,7 @@ Now that you finished the migration and validated the results, remove what you d
 * Clean up workspaces and permissions in Power BI: If you created new workspaces, you can delete the old workspaces that are no longer in use.
 If you reused the same workspaces, you may want to delete the older permissions (such as *master user* permissions) on the workspace.
 
-## Next steps
+## Related content
 
 >[!div class="nextstepaction"]
 >[Manage service principal profiles](embed-multi-tenancy.md)

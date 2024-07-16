@@ -8,7 +8,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 10/10/2023
+#customer intent: As a Power BI visual developer, I want to learn how to localize my visual to the Power BI locale so that I can provide content in the user's language.
 ---
 
 # Add the local language to your Power BI visual
@@ -56,9 +57,9 @@ To add the local Power BI language to your visual, follow these steps:
 
 ### Step 1 - Set up your environment to display a language that isn't English
 
-To test your visual, you'll need Power BI to use a language that isn't English. This section shows how to change the settings of Power BI Desktop and Power BI service, so that they use a local language that isn't English.
+To test your visual, set Power BI to a language that isn't English. This section shows how to change the settings of Power BI Desktop and Power BI service, so that they use a local language that isn't English.
 
-* **Power BI Desktop** - Download the localized version of Power BI desktop from https://powerbi.microsoft.com.
+* **Power BI Desktop** - Download the localized version of Power BI desktop from https://powerbi.microsoft.com
 
 * **Power BI service** - If you're using Power BI service (web portal), change your language in settings:
 
@@ -67,7 +68,7 @@ To test your visual, you'll need Power BI to use a language that isn't English. 
     2. Navigate to **Settings** > **Settings** > **Settings**.
 
         >[!div class="mx-imgBorder"]
-        >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
+        >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/localization/powerbi-settings.png)
 
     3. From the **General** tab, select **Language**. In the **Language Settings**, select the language you want Power BI to use, and then select **Apply**.
 
@@ -76,7 +77,7 @@ To test your visual, you'll need Power BI to use a language that isn't English. 
 
 ### Step 2 - Get the locale Power BI language
 
-The local Power BI language is passed as a string called `locale` during the initialization of the visual. If a locale language is changed in Power BI, the visual will be generated again in the new language.
+The local Power BI language is passed as a string called `locale` during the initialization of the visual. If a locale language is changed in Power BI, the visual is generated again in the new language.
 
 ```typescript
 private locale: string;
@@ -89,7 +90,7 @@ this.locale = options.host.locale;
 
 ### Step 3 - Set the visual display names
 
-Every visual displays information in the property pane. For example, a non-localized custom visual created by using the `pbiviz new` command, will show the *Category Data* and *Measure Data* fields in the property pane.
+Every visual displays information in the property pane. For example, a nonlocalized custom visual created by using the `pbiviz new` command, will show the *Category Data* and *Measure Data* fields in the property pane.
 
 >[!div class="mx-imgBorder"]
 >![A screenshot showing the category data and measure data fields in a newly created Power BI visual.](media/localization/property-pane.png)
@@ -117,7 +118,7 @@ The property pane display fields are defined in the  **capabilities.json** file.
 
 ### Step 4 - Create a language folder
 
-To create localized visuals, your project needs to have a language folder. In your project, create a folder called **stringResources**. The folder will contain one sub folder for each local language you want your visual to support. For example, to support Arabic and Hebrew, add two folders in the following way:
+To create localized visuals, your project needs to have a language folder. In your project, create a folder called **stringResources**. The folder contains one sub folder for each local language you want your visual to support. For example, to support Arabic and Hebrew, add two folders in the following way:
 
 >[!div class="mx-imgBorder"]
 >![A VS code screenshot of a visual project folder.The string resources folder has two sub folders, one for Arabic and one for Hebrew.](media/localization/stringresources-files.png)
@@ -198,7 +199,7 @@ For **localize formatting model utils** see [formatting model utils - localizati
 
 ## Supported languages
 
-The table below contains a list of all the languages supported in Power BI, and the string that the `locale` variable returns for each one.
+The following table contains a list of all the languages supported in Power BI, and the string that the `locale` variable returns for each one.
 
 Locale string | Language
 --------------|---------------------
@@ -247,7 +248,7 @@ vi-VN | tiếng Việt (Vietnamese)
 zh-CN | 中国 (Chinese-Simplified)
 zh-TW | 中國 (Chinese-Tranditional)
 
-## Next steps
+## Related content
 
 [Formatting utils](utils-formatting.md)
 

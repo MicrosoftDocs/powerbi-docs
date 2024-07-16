@@ -1,13 +1,13 @@
 ---
 title: "Disable Power Query background refresh"
 description: Guidance on when to disable Power Query background refresh.
-author: davidiseminger
-ms.author: davidi
-manager: asaxton
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 09/26/2019
 ---
 
@@ -33,7 +33,7 @@ It's always possible to update the preview cache. You can update it for a single
 
 ![Screenshot of Power BI Desktop showing Power Query Editor commands to refresh preview data.](media/power-query-background-refresh/power-query-refresh-preview-data.png)
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

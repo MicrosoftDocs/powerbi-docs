@@ -1,23 +1,23 @@
 ---
 title: Using DirectQuery with dataflows
-description: Learn how to connect Power BI Desktop to the datasets in your Power BI dataflows by using DirectQuery.
+description: Learn how to connect Power BI Desktop to the semantic models in your Power BI dataflows by using DirectQuery.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 02/14/2023
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 # Use DirectQuery with dataflows
 
-Using DirectQuery with Power BI dataflows lets you connect directly to a dataflow without the need to import the data into a dataset. There are many reasons why using DirectQuery with dataflows, rather than importing data, is useful and helpful. The following are a few examples:
+Using DirectQuery with Power BI dataflows lets you connect directly to a dataflow without the need to import the data into a semantic model. There are many reasons why using DirectQuery with dataflows, rather than importing data, is useful and helpful. The following are a few examples:
 
 * Working with large dataflows
 * Decreasing orchestration needs for dataflows
 * Serving data to customers in a managed and performance-minded way
-* Preventing the need to duplicate data in a dataflow and an imported dataset
+* Preventing the need to duplicate data in a dataflow and an imported semantic model
 
 ## Configurations
 
@@ -42,9 +42,9 @@ This image shows the **Table** icon, indicating that the *Query* table only supp
 
 :::image type="content" source="media/dataflows-directquery/dataflows-directquery-not-supported.png" alt-text="Screenshot of the Table icon showing that direct query isn't supported.":::
 
-In DirectQuery mode, you can quickly interrogate large-scale datasets locally. However, you can't currently perform any other transformations.
+In DirectQuery mode, you can quickly interrogate large-scale semantic models locally. However, you can't currently perform any other transformations.
 
-## Next steps
+## Related content
 
 This article provided an overview of using DirectQuery with dataflows. The following articles might also be useful:
 

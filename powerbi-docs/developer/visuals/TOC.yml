@@ -45,6 +45,8 @@
       href: dataview-mappings.md
     - name: "Sort data"
       href: sort-options.md
+    - name: "Microsoft Entra ID application setup"
+      href: entra-id-authentication.md
     - name: "Objects and properties"
       href: objects-properties.md
     - name: "Performance tips"
@@ -72,16 +74,14 @@
       href: analytics-pane.md
     - name: "Add format pane"
       href: format-pane.md
-    - name: "Filter visuals" 
-      href: filter-api.md
-    - name: "Identity filter" 
-      href: identity-filter-api.md
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
       href: bookmarks-support.md
     - name: "Add context menu support"
       href: context-menu.md
+    - name: "Add dynamic format strings support"
+      href: dynamic-format.md
     - name: "Add drill-down support"
       href: drill-down-support.md
     - name: "Add colors to your visual" 
@@ -142,10 +142,26 @@
       href: visual-api.md
     - name: "Local storage API" 
       href: local-storage.md
+    - name: Authentication API
+      href: authentication-api.md
+    - name: "On object formatting API" 
+      href: on-object-formatting-api.md
+    - name: "Subselection API" 
+      href: subselection-api.md
+    - name: "Filter visuals API" 
+      href: filter-api.md
+    - name: "Identity filter API" 
+      href: identity-filter-api.md
+    - name: "Hierarchy identity filter API"
+      href: hierarchy-filter-api.md
+    - name: "Detect filter API"
+      href: detect-filter-api.md
     - name: "'Rendering' events API" 
       href: event-service.md
     - name: "Drilldown API"
       href: drilldown-api.md
+    - name: "Dynamic drill support API"
+      href: dynamic-drill-down.md
     - name: "File download API"
       href: file-download-api.md
     - name: "Permissions API"
@@ -160,6 +176,8 @@
         href: utils-formatting.md
       - name: "Formatting model utils"
         href: utils-formatting-model.md
+      - name: "On object utils"
+        href: utils-on-object.md
       - name: "Data view utils"
         href: utils-dataview.md
       - name: "Chart utils"

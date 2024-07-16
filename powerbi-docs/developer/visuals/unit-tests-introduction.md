@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 12/1/2022
+ms.date: 12/1/2023
+#customer intent: As a Power BI visual developer, I want to learn how to write unit tests for my visual so that I can ensure the visual works as expected.
 ---
 
 # Tutorial: Add unit tests for Power BI visual projects
@@ -688,6 +689,6 @@ Your visual opens in the Chrome browser.
 
 :::image type="content" source="media/unit-tests-introduction/karmajs-chrome-ut-runned.png" alt-text="Screenshot of the Chrome browser window, which shows the custom Power BI visual.":::
 
-## Next steps
+## Related content
 
 When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](office-store.md).

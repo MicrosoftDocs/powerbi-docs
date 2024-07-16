@@ -7,8 +7,9 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/06/2023
+ms.topic: concept-article
+ms.date: 01/06/2024
+#customer intent: As a developer, I want to learn how to use formatting utils to format values and apply localization to values in Power BI visuals.
 ---
 
 # Formatting utils
@@ -645,6 +646,29 @@ valueFormatter.create({});
 // returns: an instance of IValueFormatter.
 ```
 
-## Next steps
+## format
+
+Alternative way to format the value without creating `IValueFormatter`. Useful for cases with [dynamic formats string](./dynamic-format.md)
+
+```typescript
+import { format } from "powerbi-visuals-utils-formattingutils";
+import format = valueFormatter.format;
+
+function format(value: any, format?: string, allowFormatBeautification?: boolean, cultureSelector?: string): string;
+```
+
+### Example of using format
+
+```typescript
+import { valueFormatter } from "powerbi-visuals-utils-formattingutils";
+
+const value = 12
+const format = '¥ #,0'
+valueFormatter.format(value, format);
+
+// returns: formatted value as string (¥ 12)
+```
+
+## Related content
 
 [Add the local language to your Power BI visual](localization.md)  

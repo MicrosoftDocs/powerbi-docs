@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel file. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) for more articles.
+You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel file. Once you understand the basics of creating a report, check out the [Related content](#related-content) for more articles.
 
 ## Prerequisites
 
@@ -25,9 +25,9 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 
 This method of creating a report starts with a file and a blank report canvas. If you want to follow along, download the [Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to your computer or to OneDrive for work or school.
 
-1. In the navigation pane, select **My Workspace**. Then select **New** > **Dataset**.
+1. In the navigation pane, select **My Workspace**. Then select **New** > **Semantic model**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of the Power BI service, highlighting New and Dataset.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of the Power BI service, highlighting New and Semantic model.":::
 
 1. Select **Excel**.
 
@@ -37,9 +37,9 @@ This method of creating a report starts with a file and a blank report canvas. I
 
     :::image type="content" source="media/service-report-create-new/power-bi-select-files.png" alt-text="Screenshot of Select a file dialog, highlighting the Retail Analysis Sample.":::
 
-    After the Excel file imports, it's listed as a *dataset* in the workspace list.
+    After the Excel file imports, it's listed as a *semantic model* in the workspace list.
 
-1. Next to the dataset, select **More options (...)**, and then choose **Create report**.
+1. Next to the semantic model, select **More options (...)**, and then choose **Create report**.
 
     :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="Screenshot of My workspace, highlighting more options and Create report.":::
 
@@ -54,7 +54,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
 ## Add a radial gauge to the report
 
-Now that our dataset is imported, let's start answering some questions. Our Chief Marketing Officer (CMO) wants to know how close the company is to meeting this year's sales goals. Learn how a gauge is a good visualization choice for displaying this type of information with [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md).
+Now that our semantic model is imported, let's start answering some questions. Our Chief Marketing Officer (CMO) wants to know how close the company is to meeting this year's sales goals. Learn how a gauge is a good visualization choice for displaying this type of information with [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md).
 
 1. In the Data pane, select **Sales** > **This Year Sales** > **Total Sales Variance**.
 
@@ -104,7 +104,7 @@ Our CMO has other questions for us to answer. They'd like to know how sales this
 
 Continue exploring your data and adding visualizations. When you find especially interesting insights, learn how to pin them to a dashboard with [Create a Power BI dashboard from a report](service-dashboard-create.md).
 
-## Next steps
+## Related content
 
 * [Create a Power BI dashboard from a report](service-dashboard-create.md)
 * [Change settings for Power BI reports](power-bi-report-settings.md)

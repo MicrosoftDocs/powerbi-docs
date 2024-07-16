@@ -1,12 +1,13 @@
 ---
 title: Many-to-many relationship guidance
 description: Guidance for developing many-to-many model relationships.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/17/2022
 ---
 
@@ -289,7 +290,7 @@ When you need to relate a dimension-type table to a fact-type table, and the fac
   - Control summarization with measure logic—return BLANK when lower-level dimension-type columns are used to filter or group
   - Hide summarizable fact-type table columns—this way, only measures can be used to summarize the fact-type table
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

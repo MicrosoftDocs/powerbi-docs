@@ -1,8 +1,8 @@
 ---
 title: Customize visualization titles, backgrounds, and more in Power BI
 description: 'In this tutorial, you learn a few different ways to customize your visualization titles, backgrounds, labels, and legends'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 featuredvideoid: removed
 ms.custom: video-RE4HrRQ, video-RE4IY3L, pbibetadocbug, intro-get-started, sample-retailanalysissample
@@ -192,7 +192,7 @@ In this video, watch Rien change layer order behavior, and then follow the steps
 
 1. Save the report changes and switch to **Reading view**.
 
-Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#selecting-visuals-within-a-group).
+Now that the visual and the shape are grouped, you can select the shape and it remains in the background. If you leave the Selection pane open, you can see which layer has focus. Notice, that by selecting the canvas in between selecting layers, it activates the Group layer and maintains the layer order. For more information on this behavior, see [Selecting visuals within a group](../create-reports/desktop-grouping-visuals.md#select-visuals-within-a-group).
 
 ## Customize colors using a theme
 
@@ -234,7 +234,7 @@ Here is a list of the customization options that are available for each visualiz
 | Treemap | Yes | Yes | Yes |n/a |
 | Waterfall | Yes | Yes | Yes |n/a |
 
-## Next steps
+## Related content
 
 - [Customize X-Axis and Y-Axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
 

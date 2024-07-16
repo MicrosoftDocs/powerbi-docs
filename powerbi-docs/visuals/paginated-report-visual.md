@@ -1,13 +1,13 @@
 ---
 title: Create and use the paginated report visual
 description: In this article, you learn how to add the paginated report visual for Power BI reports. 
-author: maggiesMSFT
-ms.author: maggies
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mibruhje'
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 3/29/2023
+ms.date: 09/07/2023
 ---
 
 # Create and use the paginated report visual
@@ -16,20 +16,9 @@ ms.date: 3/29/2023
 
 In this article, you learn how to use the paginated report visual for Power BI reports. This native Power BI visual allows you to render any paginated report you’ve uploaded to the service in a Power BI report.  
 
-This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI dataset to be used as parameter values for your paginated report visual. The ability to map fields provides a fully interactive experience like any other visual.
+This visual brings the power of paginated reports to your Power BI reports. You can map fields from your Power BI semantic model to be used as parameter values for your paginated report visual. The ability to map fields provides a fully interactive experience like any other visual.
 
-The paginated report visual is designed to integrate a paginated report with other visuals in a Power BI report. It enables large data exports, detail drills, and generating documents. If you are migrating paginated report content from on premises, or find that the paginated report visual is the only element on a page, consider using the paginated report directly. 
-
-## Prerequisites
-
-For content with paginated report visuals, this table spells out the licenses and workspace permissions needed to publish, manage, and view the content.
-
-|Type of capacity that hosts the workspace | License type to _publish and manage_ these reports in a workspace  |License type to _view_ these reports |
-|---------|---------|---------|
-|[Premium Per User (PPU)](../enterprise/service-premium-per-user-faq.yml) | A PPU license and write access to the workspace | Only users with PPU licenses and read access to the workspace  |
-|[Power BI Premium](../enterprise/service-premium-what-is.md) | A PPU license or a [Power BI Pro license](../fundamentals/service-self-service-signup-for-power-bi.md), and write access to the workspace | Users with free, Pro, and PPU licenses and read access to the workspace |
-
-Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).
+The paginated report visual is designed to integrate a paginated report with other visuals in a Power BI report. It enables large data exports, detail drills, and generating documents. If you are migrating paginated report content from on premises, or find that the paginated report visual is the only element on a page, consider using the paginated report directly.
 
 ## Create a paginated report visual
 
@@ -104,23 +93,24 @@ You can decide whether report filters are automatically applied to the paginated
 - When connecting fields to a paginated report parameter, double-check whether the field values are used as is, in other words, **Don't summarize**, or as aggregates (for example, Sum, Average, and so on). You can use the **Show as a table** option from the context menu of the paginated report visual to see the actual values being passed to paginated reports during runtime. 
 - You can map an aggregate field in Power BI such as Sum, Average, Minimum, or Maximum to a paginated report parameter. If you do, consider whether your paginated report parameter is a single-value or multi-value parameter. If mapping to a single-value parameter, the aggregate value is used. If mapping to a multi-value parameter, the per-row aggregate values are mapped to the parameter.
 - When embedding a Power BI report that contains a paginated report visual, using the *embed for your customers* method, you need a service principal and a multi-resource embed token as explained in [How to embed a Power BI report that contains a paginated report visual](../developer/embedded/embedded-faq.yml#how-can-i-embed-a-power-bi-report-that-contains-a-paginated-report-visual-).
-- When you add a Power BI report that contains a paginated report visual to a Power BI app, your app users must have at least Viewer role access to the paginated report workspace in order to view the paginated report in the visual.
+- When you add a Power BI report that contains a paginated report visual to a Power BI app, make sure to include the paginated report in the app, as well as all subreports and drillthrough target reports that the report visual depends on. If your app doesn't have audiences or if the paginated report referenced by the visual is in another workspace, your app users must have at least Viewer role access to the paginated report workspace in order to view the paginated report in the visual. If you want to keep paginated report hidden from Power BI app navigation menu, refer to [Allow access to hidden content](/power-bi/collaborate-share/service-create-distribute-apps#allow-access-to-hidden-content).
 - The paginated report visual isn't supported for Power BI report subscription or export. You can open the underlying paginated report itself and create a subscription to it, as explained in [Subscribe to paginated reports](/power-bi/collaborate-share/end-user-subscribe#subscribe-to-paginated-reports).
 - The paginated report visual has a built-in 30,000-value data reduction limit due to the [Power BI visual maximum of 30,000](../visuals/power-bi-data-points.md?#power-bi-visuals). If any field used in the visual contains more than 30,000 values, a data reduction algorithm kicks in and drops the rows that are above the limit. As a result, the paginated report may show incorrect results due to missing data from report parameters. To work around this, try to use filters to filter out unnecessary values, or map the report parameters to fields with fewer values.
 - The duration of the paginated report session is capped by the expiration time of your access token. Currently there's no support to automatically refresh the token. After the session expires, a dialog prompts you to refresh the visual and start a new rendering session.
+- Paginated report visual does not get updated as part of Deployment Pipelines. As a workaround here, please edit the Power BI report in destination to update the paginated report visual to use the paginated report in destination workspace.
 
-### Using a Power BI dataset with a date parameter
+### Using a Power BI semantic model with a date parameter
 
 > [!NOTE]
 > Versions of Power BI Report Builder 15.7.01704.0001 and above allow you to use date parameters with the paginated report visual without having to follow these next steps. [Download the newest version of Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
-When you use a Power BI dataset as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. You have three work-around options:
+When you use a Power BI semantic model as the data source for your paginated report and set up a date parameter in your query that then automatically generates the parameter table and parameter, using that parameter in a paginated report parameter will fail. The paginated report visually treats the parameter as a text field and fails to match the Power BI date field. You have three work-around options:
 
 - From the same Power BI data source, create a new dataset with only the date values. Use this dataset as the available values for your parameter, setting the data type of the parameter as Date/Time.
 - Manually change the DAX query text in the auto-generated dataset to remove the part that sets the parameter to be a text value.  
-- Change the Power BI dataset using Power Query to add a column that formats the date field as a text field.
+- Change the Power BI semantic model using Power Query to add a column that formats the date field as a text field.
 
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](../paginated-reports/paginated-reports-report-builder-power-bi.md) 
 - [Tutorial: Create a paginated report and upload it to the Power BI service](../paginated-reports/paginated-reports-quickstart-aw.md) 

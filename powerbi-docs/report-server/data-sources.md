@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/10/2021
+ms.date: 06/04/2024
 ---
+
 # Power BI report data sources in Power BI Report Server
 Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery, or a live connection to SQL Server Analysis Services. Some data sources are available in Power BI Desktop that is optimized for use with Power BI Report Server, but they aren't supported when published to Power BI Report Server.
 
@@ -29,6 +30,7 @@ The data sources below are specific to Power BI reports used within Power BI Rep
 | Azure Synapse Analytics (formerly SQL Data Warehouse) |Yes |Yes |Yes |
 | Access Database |Yes |Yes |No |
 | Active Directory |Yes |Yes |No |
+| Amazon Athena |Yes |No |No |
 | Amazon Redshift |Yes |No |No |
 | Azure Blob Storage |Yes |Yes |No |
 | Azure Cosmos DB |Yes |No |No |
@@ -102,6 +104,7 @@ The data sources below are specific to Power BI reports used within Power BI Rep
 | Visual Studio Team Services (Beta) |Yes |No |No |
 | Webtrends Analytics (Beta) |Yes |No |No |
 | Zendesk (Beta) |Yes |No |No |
+| Other data sources available but not listed above |Yes |No |No |
 
 > [!IMPORTANT]
 > Row-level security configured at the data source should work for certain DirectQuery (SQL Server, Azure SQL Database, Oracle and Teradata) and live connections assuming Kerberos is configured properly in your environment.
@@ -120,6 +123,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Azure Analysis Services database |No |No |Yes (1) |No |
 | Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |
 | Active Directory |No |No |Yes |Yes |
+| Amazon Athena |No |No |No |No |
 | Amazon Redshift |No |No |No |No |
 | Azure Blob Storage |Yes |Yes |No |No |
 | Azure Cosmos DB |No |No |No |No |
@@ -188,8 +192,9 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Visual Studio Team Services (Beta) |No |No |No |No |
 | Webtrends Analytics (Beta) |No |No |No |No |
 | Zendesk (Beta) |No |No |No |No |
+| Other data sources available but not listed above |No |No |No |No |
 
-(1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review <a href="/azure/active-directory/conditional-access/overview">Azure Active Directory Conditional Access</a> as an option to disable multifactor authentication for the credentials used in the data source.
+(1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview) as an option to disable multifactor authentication for the credentials used in the data source.
 
 (2) Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
 
@@ -199,22 +204,28 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 
 Power BI Report Server does not support OAuth-based authentication for DirectQuery.
 
+> [!NOTE]
+> Power BI DirectQuery reports must include "Encrypt=True;TrustServerCertificate=True" as part of the connection string on data sources, or apply the "PBI_SQL_TRUSTED_SERVERS" environment variable on their Power BI Report Server.
+
 | **Data source** | **Anonymous Authentication** | **Key Authentication** | **Username and Password** | **Windows Authentication** | **Integrated Windows Authentication** |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server Database |No |No |Yes |Yes |Yes |
 | SQL Server Analysis Services |No |No |Yes |Yes |Yes |
 | Azure SQL Database |No |No |Yes |No |No |
+| Azure Analysis Services database |No |No |Yes (1) |No |No |
 | Azure Synapse Analytics (formerly SQL Data Warehouse) |No |No |Yes |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
 | SAP Business Warehouse server |No |No |Yes |No |No |
-| SAP HANA Database |No |No |Yes |Yes |Yes (1) |
+| SAP HANA Database |No |No |Yes |Yes |Yes (2) |
 | Teradata |No |No |Yes |Yes |Yes |
 
-(1) SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
+(1) For Azure Analysis Services data source, you must have multifactor authentication (MFA) disabled for the credentials being used to connect to the data source. If you need multifactor authentication enabled for your environment, review [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview) as an option to disable multifactor authentication for the credentials used in the data source.
 
-## Next steps
+(2) SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
-[Data sources for Power BI reports](../connect-data/power-bi-data-sources.md) in the Power BI service
+## Related content
+
+* [Data sources for Power BI reports](../connect-data/power-bi-data-sources.md) in the Power BI service
 
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 

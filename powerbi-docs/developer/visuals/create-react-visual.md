@@ -1,5 +1,5 @@
 ---
-title: Create a React-based visual for Power BI 
+title: Create a React-based visual for Power . 
 description: This tutorial shows how to create a Power BI visual using React. It displays a value in a circle. Adaptive size and settings allow you to customize it. 
 author: mberdugo
 ms.author: monaberdugo
@@ -8,16 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 10/12/2022
+#customer intent: As a Power BI visual developer, I want to learn how to create a Power BI visual using React so I can display a value in a circle.
 ---
 
 # Tutorial: Create a Power BI visual using React
 
 [!INCLUDE[Power B I visuals tutorials overview](../../includes/visual-tutorial-overview.md)]
 
-In this tutorial, you'll develop a Power BI visual using [React](https://reactjs.org/). The visual displays a formatted measure value inside a circle. The visual has adaptive size and allows you to customize its settings.
+In this tutorial, you develop a Power BI visual using [React](https://reactjs.org/). The visual displays a formatted measure value inside a circle. The visual has adaptive size and allows you to customize its settings.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Create a development project for your visual.
 > * Develop your visual using React.
 > * Configure your visual to process data.
@@ -33,7 +35,7 @@ In this tutorial, you learn how to:
 
 ## Create a development project
 
-In this section, you'll create a project for the React circle card visual.
+In this section, you create a project for the React circle card visual.
 
 1. Open PowerShell and navigate to the folder you want to create your project in.
 
@@ -54,16 +56,17 @@ In this section, you'll create a project for the React circle card visual.
     ```powershell
     pbiviz start
     ```
+
     >[!IMPORTANT]
-    >To stop the visual from running, in PowerShell enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
+    >To stop the visual from running, in PowerShell enter <kbd>Ctrl</kbd>+<kbd>C</kbd> and if prompted to terminate the batch job, enter <kbd>Y</kbd>, and press *Enter*.
 
-## View the React circle card in Power BI service
+## View the React circle card in the Power BI service
 
-[!INCLUDE[View the Power B I visual in Power B I service](../../includes/visual-tutorial-view.md)]
+[!INCLUDE[View the Power BI visual in Power BI service](../../includes/visual-tutorial-view.md)]
 
 ## Set up React in your project
 
-In this section, you'll learn how to set up React for your Power BI visual project.
+In this section, you learn how to set up React for your Power BI visual project.
 
 Open PowerShell and stop the visual from running by entering Ctrl+C. If prompted to terminate the batch job, enter Y, and press *Enter*.
 
@@ -255,7 +258,7 @@ Open PowerShell in the *CircleCardVisual* folder, and run your project:
 pbiviz start
 ```
 
-When you add a new **Developer Visual** to your report in Power BI service, it will look like this:
+When you add a new **Developer Visual** to your report in the Power BI service, it looks like this:
 
 >[!div class="mx-imgBorder"]
 >![Screenshot showing the hello React message in the newly created developer visual in Power B I service.](media/create-react-visual/hello-react-message-visual.png)
@@ -264,7 +267,7 @@ When you add a new **Developer Visual** to your report in Power BI service, it w
 
 Configure your visual's capabilities file so that only one data field can be submitted to the visual's *Measure data* field.
 
-1. In VS Code, from the **reactCircleCard** folder, open **capabilities.json**.
+1. In **VS Code**, from the **reactCircleCard** folder, open **capabilities.json**.
 
 2. The `ReactCircleCard` displays a single value, `Measure Data`. Remove the `Category Data` object from `dataRoles`.
 
@@ -282,13 +285,13 @@ Configure your visual's capabilities file so that only one data field can be sub
 
 3. Remove all the content of the `objects` key (you'll fill it in later).
 
-    After removing its content, the `objects` key looks like this: 
+    After you remove its content, the `objects` key looks like this:
 
     ```json
     "objects": {},
     ```
 
-4. Replace the `dataViewMappings` property with the code below. `max: 1` in `measure` specifies that only one data field can be submitted to the visual's *Measure data* field.
+4. Replace the `dataViewMappings` property with the following code. `max: 1` in `measure` specifies that only one data field can be submitted to the visual's *Measure data* field.
 
     ```json
     "dataViewMappings": [
@@ -316,11 +319,11 @@ Configure your visual's capabilities file so that only one data field can be sub
 
 ## Update the visual's style
 
-In this section, you'll turn your visual's shape into a circle. Use the **visual.less** file to control the style of your visual.
+In this section, you turn the visual's shape into a circle. Use the **visual.less** file to control the style of your visual.
 
 1. From the **style** folder, open **visual.less**.
 
-2. Replace the content of **visual.less** with the code below.
+2. Replace the content of **visual.less** with the following code.
 
     ```css
     .circleCard {
@@ -348,7 +351,7 @@ In this section, you'll turn your visual's shape into a circle. Use the **visual
 
 ## Set your visual to receive properties from Power BI
 
-In this section you'll configure your visual to receive data from Power BI, and send updates to the instances in the **component.tsx** file.
+In this section you configure the visual to receive data from Power BI, and send updates to the instances in the **component.tsx** file.
 
 ### Render data using React
 
@@ -356,7 +359,7 @@ You can render data using React. The component can display data from its own sta
 
 1. In VS Code, from the **reactCircleCard** folder, open **component.tsx**.
 
-2. Replace the content of **component.tsx** with the code below.
+2. Replace the content of **component.tsx** with the following code.
 
     ```javascript
     import * as React from "react";
@@ -397,9 +400,9 @@ You can render data using React. The component can display data from its own sta
 
 ### Set your visual to receive data
 
-Visuals receive data as an argument of the `update` method. In this section, you'll update this method to receive data.
+Visuals receive data as an argument of the `update` method. In this section, you update this method to receive data.
 
-The code below selects `textLabel` and `textValue` from `DataView`, and if the data exists, updates the component state.
+The following code selects `textLabel` and `textValue` from `DataView`, and if the data exists, updates the component state.
 
 1. In VS Code, from the **src** folder, open **visual.ts**.
 
@@ -436,7 +439,7 @@ The code below selects `textLabel` and `textValue` from `DataView`, and if the d
 
 ### Set your visual to send data
 
-In this section, you'll update your visual to send updates to instances in the *component* file.
+In this section, you update the visual to send updates to instances in the *component* file.
 
 1. In VS Code, from the **src** folder, open **component.tsx**.
 
@@ -468,18 +471,18 @@ In this section, you'll update your visual to send updates to instances in the *
 
 Test your *React Circle Card* visual to view the changes you made.
 
-1. Verify that `pbiviz start` is running, and in Power BI service, refresh your *React Circle Card* visual.
+1. Verify that `pbiviz start` is running, and in the Power BI service, refresh your *React Circle Card* visual.
 
 2. Add **Sales** to the visual's *Measure data* field.
 
 >[!div class="mx-imgBorder"]
->![Screenshot of the sales value displayed in the react circle card visual in Power B I service.](./media/create-react-visual/value-display-circle-powerbi-react.png)
+>![Screenshot of the sales value displayed in the react circle card visual in the Power BI service.](./media/create-react-visual/value-display-circle-powerbi-react.png)
 
 ## Make your visual resizable
 
-Currently, your visual has fixed width and height. To make the visual resizable you need to define the `size` variable in both the **visual.ts** and **component.tsx** files. In this section, you'll make the visual resizable.
+Currently, your visual has fixed width and height. To make the visual resizable you need to define the `size` variable in both the **visual.ts** and **component.tsx** files. In this section, you make the visual resizable.
 
-After completing the steps outlined in this section, the circle diameter in your visual will correspond to the minimal width or height size, and you'll be able to resize it in Power BI service.
+After you complete the steps outlined in this section, the circle diameter in your visual will correspond to the minimal width or height size, and you'll be able to resize it in Power BI service.
 
 ### Configure the visual.ts file
 
@@ -531,7 +534,7 @@ Get the current size of the visual viewport from the `options` object.
     size: 200
     ```
 
-4. In the `render` method, do the following:
+4. In the `render` method, make the following changes to the code:
 
     1. Add `size` to `const { textLabel, textValue, size } = this.state;`. This declaration should now look like this:
 
@@ -568,7 +571,7 @@ Get the current size of the visual viewport from the `options` object.
 
 ## Make your Power BI visual customizable
 
-In this section, you'll add the ability to customize your visual, allowing users to make changes to its color and border thickness.
+In this section, you add the ability to customize your visual, allowing users to make changes to its color and border thickness.
 
 ### Add color and thickness to the capabilities file
 
@@ -603,7 +606,7 @@ Add the color and border thickness to the `object` property in *capabilities.jso
 
 ### Add a circle formatting settings class to the settings file
 
-Add the `Circle` formatting settings to *settings.ts*. For more information how to build formatting model settings see [formatting utils](utils-formatting.md).
+Add the `Circle` formatting settings to *settings.ts*. For more information how to build formatting model settings, see [formatting utils](utils-formatting.md).
 
 1. In VS Code, from the **src** folder, open **settings.ts**.
 
@@ -614,7 +617,7 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
 
     import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
-    import FormattingSettingsCard = formattingSettings.Card;
+    import FormattingSettingsCard = formattingSettings.SimpleCard;
     import FormattingSettingsSlice = formattingSettings.Slice;
     import FormattingSettingsModel = formattingSettings.Model;
 
@@ -626,6 +629,7 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
             name: "circleColor", // circle color name should match circle color property name in capabilities.json
             displayName: "Color",
             description: "The fill color of the circle.",
+            show: true,
             value: { value: "white" }
         });
 
@@ -633,11 +637,13 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
             name: "circleThickness", // circle thickness name should match circle color property name in capabilities.json
             displayName: "Thickness",
             description: "The circle thickness.",
+            show: true,
             value: 2
         });
 
         name: string = "circle"; // circle card name should match circle object name in capabilities.json
         displayName: string = "Circle";
+        show: boolean = true;
         slices: Array<FormattingSettingsSlice> = [this.circleColor, this.circleThickness];
     }
 
@@ -657,9 +663,9 @@ Add the `Circle` formatting settings to *settings.ts*. For more information how 
 
 ### Add a method to apply visual settings
 
-Add the `getFormattingModel` method used to apply visual settings, and required imports to the *visuals.ts* file.
+Add the `getFormattingModel` method used to apply visual settings and required imports to the *visual.ts* file.
 
-1. In VS Code, from the **src** folder, open **visuals.ts**.
+1. In VS Code, from the **src** folder, open **visual.ts**.
 
 2. Add these `import` statements at the top of **visual.ts**.
 
@@ -693,11 +699,12 @@ Add the `getFormattingModel` method used to apply visual settings, and required 
     1. Add this code to the *if* statement after `const size = Math.min(width, height);`.
 
         ```typescript
-        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews);
+        this.formattingSettings = this.formattingSettingsService.populateFormattingSettingsModel(VisualFormattingSettingsModel, options.dataViews[0]);
         const circleSettings = this.formattingSettings.circleCard;
         ```
 
-    2. Add this code to call of `ReactCircleCard.update` after `size`:
+    2. Add this code to `ReactCircleCard.update` after `size`:
+
         ```typescript
         borderWidth: circleSettings.circleThickness.value,
         background: circleSettings.circleColor.value.value,
@@ -739,7 +746,7 @@ Edit the component file so that it can render the changes to the visual's color 
 
 Experiment with the visual's color and border thickness, which you can now control.
 
-1. Verify that `pbiviz start` is running, and in Power BI service, refresh your *React Circle Card* visual.
+1. Verify that `pbiviz start` is running, and in the Power BI service, refresh your *React Circle Card* visual.
 
 2. Select the **Format** tab and expand **Circle**.
 
@@ -748,7 +755,7 @@ Experiment with the visual's color and border thickness, which you can now contr
 >[!div class="mx-imgBorder"]
 >![A screenshot of the react circle card visual in Power B I service, showing the color and border thickness format options.](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
-## Next steps
+## Related content
 
 * [Add formatting options to the circle card visual](custom-visual-develop-tutorial-format-options.md)
 * [Create a Power BI bar chart visual](create-bar-chart.md)

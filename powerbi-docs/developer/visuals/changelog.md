@@ -1,25 +1,59 @@
 ---
 title: Power BI visuals API changelog
-description: This article describes main changes in different versions of Power BI visuals API
+description: This article provides a list of each Power BI visuals API version and the main changes made to each update.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 2/28/2023
+ms.date: 07/03/2024
 ---
 
 # Power BI visuals API changelog
 
-This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
+This page contains a short summary of the existing API versions and what to expect in the upcoming version. Versions listed here are considered stable and don't change.
+
+<!--- ## Coming soon
+https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
+* Authentication API extensions --->
+
+## API v5.10.0
+
+* **DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
+* Supports Desktop June 2024
+
+## API v5.9.0
+
+* [**Hierarchial identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that uses Matrix DataView Mapping to filter data based on data points that use a hierarchal structure. This is useful for custom visuals that leverage group-on keys semantic models and want to filter hierarchies based on data points.
+* Supports Desktop March 2024
+
+## API v5.8.0
+
+* [**Local storage API**](./local-storage.md): A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
+* [**On-object support for custom visuals**](./on-object-formatting-api.md): On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
+* Supports Desktop February 2024
+
+## API v5.7.0
+
+* [**Power BI Custom Visuals Authentication API**](./authentication-api.md): Allows Custom Visuals to obtain Microsoft Entra access tokens through single sign-on (SSO), facilitating secure and efficient user-contextual operations.
+* [**Dynamic drill control**](./dynamic-drill-down.md): Allows the visual to enable or disable the drill feature dynamically using an API call.
+  * When the drill feature is enabled, all the functionalities of drilldown and expand/collapse features are available. These functionalities include API calls, context menu commands, header drill buttons, and support for hierarchy data.
+  * When the drill feature is disabled, these functionalities aren't available.
+* Supports Desktop December 2023
+
+## API v5.4.0
+
+* [**Improved keyboard navigation**](./supportskeyboardfocus-feature.md#enhanced-keyboard-accessibility): Improves accessibility and usability of your visuals by providing more options for interacting with visual using the keyboard.
+* [**Detect filter use in reports**](./detect-filter-api.md): Detect if there are any filters applied to a report.
+* Supports Desktop May 2023
 
 ## API v5.3.0
 
 * SelectionId's update-fix for [matrix](./dataview-mappings.md#matrix-data-mapping) `dataView`.  
   > [!NOTE]
   > The selectionId's core data might change. Therefore, a persisted selectionId/identityIndex using an older API version might not be relevant in matrix visuals.
-* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` which returns expanded result information of the download.
+* [`downloadService`](./file-download-api.md): Adds a new method `exportVisualsContentExtended` that returns expanded result information of the download.
 * Supports Desktop March 2023
 
 ## API v5.2.0

@@ -254,7 +254,7 @@ This is a bug that is being addressed.  In the meantime, select the link in the 
 **Can I view my ArcGIS maps offline?**</br>
 No, Power BI needs network connectivity to display the maps.
 
-## Next steps
+## Related content
 
 - Get started: [Esri documentation and tutorials for ArcGIS for Power BI](https://go.microsoft.com/fwlink/?LinkID=828772).
 

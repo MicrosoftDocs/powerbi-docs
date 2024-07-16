@@ -3,12 +3,13 @@ title: Introduction to use chart utils in Power BI visual
 description: Learn about the chart utils interfaces and methods to draw axes, data labels, and legends in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-manager: rkarlin
+manager: kfollis
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 01/11/2023
+ms.topic: concept-article
+ms.date: 01/11/2024
+#customer intent: As a Power BI visual developer, I want to learn how to use the chart utils interfaces and methods to draw axes, data labels, and legends in Power BI visuals.
 ---
 
 # Chart utils
@@ -768,6 +769,6 @@ private renderLegend(): void {
 }
 ```
 
-## Next steps
+## Related content
 
 - [Power BI visuals interactivity utils](utils-interactivity-selections.md)

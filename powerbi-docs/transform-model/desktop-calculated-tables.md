@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 01/11/2023
+ms.date: 11/10/2023
 LocalizationGroup: Model your data
 ---
 
@@ -17,7 +17,7 @@ Most of the time, you create tables by importing data into your model from an ex
 
 DAX is a formula language for working with relational data, like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need. Calculated tables are best for intermediate calculations and data you want to store as part of the model, rather than calculating on the fly or as query results. For example, you might choose to *union* or *cross join* two existing tables.
 
-Just like other Power BI Desktop tables, calculated tables can have relationships with other tables. Calculated table columns have data types, formatting, and can belong to a data category. You can name your columns whatever you want, and add them to report visualizations just like other fields. Calculated tables are recalculated if any of the tables they pull data from are refreshed or updated. If the table uses data from DirectQuery, calculated tables aren't refreshed. In the case with DirectQuery, the table will only reflect the changes after the dataset has been refreshed. If a table needs to use DirectQuery, it's best to have the calculated table in DirectQuery as well.
+Just like other Power BI Desktop tables, calculated tables can have relationships with other tables. Calculated table columns have data types, formatting, and can belong to a data category. You can name your columns whatever you want, and add them to report visualizations just like other fields. Calculated tables are recalculated if any of the tables they pull data from are refreshed or updated. If the table uses data from DirectQuery, calculated tables aren't refreshed. In the case with DirectQuery, the table will only reflect the changes after the semantic model has been refreshed. If a table needs to use DirectQuery, it's best to have the calculated table in DirectQuery as well.
 
 ## Create a calculated table
 

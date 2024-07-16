@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 08/02/2022
+ms.date: 11/10/2023
 LocalizationGroup: Data from files
 ---
 
 # Get started with datamarts
 
-This article describes how to get started using datamarts, including various sample data that can jump-start your experience. You'll learn about sample datasets you can use with datamarts, how to create datamarts from scratch, how to rename or delete a datamart, and other helpful information to get you acquainted and proficient with datamarts.
+This article describes how to get started using datamarts, including various sample data that can jump-start your experience. You'll learn about sample semantic models you can use with datamarts, how to create datamarts from scratch, how to rename or delete a datamart, and other helpful information to get you acquainted and proficient with datamarts.
 
 ## Sample data
 
 You can use the following various types of sample data to explore datamarts. All of the following resources contain free sample data:
 
-* [Eight Departmental Samples in Excel workbook format](/power-bi/create-reports/sample-datasets), which are Excel versions of the Power BI built-in samples containing the datasets from numerous use cases:
+* [Eight Departmental Samples in Excel workbook format](/power-bi/create-reports/sample-datasets), which are Excel versions of the Power BI built-in samples containing the semantic models from numerous use cases:
     * Customer profitability
     * IT spend analysis
     * Human resources
@@ -73,19 +73,19 @@ To model your data, navigate to **Model view** by selecting on the **Model View*
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-14.png" alt-text="Screenshot of the model view icon.":::
 
-### Adding or removing objects to the default dataset
+### Adding or removing objects to the default semantic model
 
-In Power BI, a dataset is always required before any reports can be built, so the default dataset enables quick reporting capabilities on top of the datamart.  Within the datamart, a user can add datamart objects -  tables to their default dataset. They can also add additional semantic modeling properties, such as hierarchies and descriptions.  These are then used to create the Power BI dataset’s tables. Users can also remove objects from the default dataset. 
+In Power BI, a semantic model is always required before any reports can be built, so the default semantic model enables quick reporting capabilities on top of the datamart.  Within the datamart, a user can add datamart objects -  tables to their default semantic model. They can also add additional semantic modeling properties, such as hierarchies and descriptions.  These are then used to create the Power BI semantic model’s tables. Users can also remove objects from the default semantic model. 
 
-To add objects – tables or views to the default dataset, a user has 2 options:
+To add objects – tables or views to the default semantic model, a user has 2 options:
 
-- Automatically add objects to the dataset, which happens by default with no user intervention needed
-- Manually add objects to the dataset
+- Automatically add objects to the semantic model, which happens by default with no user intervention needed
+- Manually add objects to the semantic model
 
 
 The auto detect experience determines any tables or views and opportunistically adds them.
 
-The manually detect option in the ribbon allows fine grained control of which object(s) – tables and/or views, should be added to the default dataset:
+The manually detect option in the ribbon allows fine grained control of which object(s) – tables and/or views, should be added to the default semantic model:
 *	Select all
 *	Filter for tables or views
 *	Select specific objects 
@@ -128,15 +128,15 @@ You can also hide the entire table and individual columns by using the **Model v
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-18.png" alt-text="Screenshot of hiding an entire table from downstream reporting.":::
 
 
-### Access auto-generated datasets
+### Access auto-generated semantic models
 
-To access auto-generated datasets, go to the Premium workspace and find the dataset that matches the name of the datamart. 
+To access auto-generated semantic models, go to the Premium workspace and find the semantic model that matches the name of the datamart. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a dataset.":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-19.png" alt-text="Screenshot of finding a semantic model.":::
 
-To load the dataset, click the name of the dataset. 
+To load the semantic model, click the name of the semantic model. 
 
-:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a dataset." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
+:::image type="content" source="media/datamarts-get-started/datamarts-get-started-20.png" alt-text="Screenshot of loading a semantic model." lightbox="media/datamarts-get-started/datamarts-get-started-20.png":::
 
 
 
@@ -157,9 +157,7 @@ To set up incremental refresh for a datamart, select the table for which you wan
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-06.png" alt-text="Screenshot of configure incremental refresh for a table in a datamart.":::
 
 ## Datamarts and deployment pipelines
-Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipeline](../../create-reports/deployment-pipelines-get-started.md)s.
-
-
+Datamarts are supported in deployment pipelines. Using deployment pipelines, you can deploy updates to your datamart across a designated pipeline. You can also use rules to connect to relevant data in each stage of the pipeline. To learn how to use deployment pipelines, see [Get started with deployment pipelines](/fabric/cicd/deployment-pipelines/get-started-with-deployment-pipelines).
 
 ## Access or load an existing datamart
 
@@ -190,7 +188,7 @@ From the menu that appears, select *Rename*.
 
 :::image type="content" source="media/datamarts-get-started/datamarts-get-started-09.png" alt-text="Screenshot of renaming a datamart from the workspace.":::
 
-When you rename a datamart, the auto-generated dataset based on that datamart is also automatically renamed.
+When you rename a datamart, the auto-generated semantic model based on that datamart is also automatically renamed.
 
 
 ## Delete a datamart
@@ -213,15 +211,15 @@ The following table describes the datamart context menu options:
 
 | Menu Option | Option Description |
 | --- | --- |
-| Analyze in Excel | Uses the existing Analyze in Excel capability on auto-generated dataset. Learn more about [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) |
+| Analyze in Excel | Uses the existing Analyze in Excel capability on auto-generated semantic model. Learn more about [Analyze in Excel](/power-bi/collaborate-share/service-analyze-in-excel) |
 | Create report | Build a Power BI report in DirectQuery mode. Learn more about [get started creating in the Power BI service](/power-bi/fundamentals/service-get-started#step-1-get-data) |
-| Delete | Delete dataset from workspace. A confirmation dialog notifies you of the impact of delete action. If **Delete** action is confirmed, then the datamart and related downstream items will be deleted<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-03.png" alt-text="Screenshot of the datamart delete datamart menu."::: |
-| Manage permissions | Enables users to add other recipients with specified permissions, similar to allowing the sharing of an underlying dataset or allowing to build content with the data associated with the underlying dataset.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-04.png" alt-text="Screenshot of the datamart grant people access menu."::: |
+| Delete | Delete semantic model from workspace. A confirmation dialog notifies you of the impact of delete action. If **Delete** action is confirmed, then the datamart and related downstream items will be deleted<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-03.png" alt-text="Screenshot of the datamart delete datamart menu."::: |
+| Manage permissions | Enables users to add other recipients with specified permissions, similar to allowing the sharing of an underlying semantic model or allowing to build content with the data associated with the underlying semantic model.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-04.png" alt-text="Screenshot of the datamart grant people access menu."::: |
 | Refresh history | Provides the history of refresh activity with the duration of activity and status.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-05.png" alt-text="Screenshot of the datamart refresh history window."::: |
-| Rename | Updates the datamart and auto-generated dataset with the new name.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-06.png" alt-text="Screenshot of the datamart rename window."::: |
+| Rename | Updates the datamart and auto-generated semantic model with the new name.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-06.png" alt-text="Screenshot of the datamart rename window."::: |
 | Settings | Learn more about [datamart settings](#datamart-settings) |
-| Share | Lets users share the datamart to build content based on the underlying auto-generated dataset and query the corresponding SQL endpoint. Shares the datamart access (SQL- read only, and autogenerated dataset) with other users in your organization. Users receive an email with links to access the detail page where they can find the SQL Server URL and can access the auto-generated dataset to create reports based on it.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-07.png" alt-text="Screenshot of the datamart share menu."::: |
-| View lineage | This shows the end-to-end lineage of datamarts from the data sources to the datamart, the auto-generated dataset, and other datasets (if any) that were built on top of the datamarts, all the way to deports, dashboards and apps.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-08.png" alt-text="Screenshot of the datamart view lineage window." lightbox="media/datamarts-create-reports/datamarts-create-reports-08.png"::: |
+| Share | Lets users share the datamart to build content based on the underlying auto-generated semantic model and query the corresponding SQL endpoint. Shares the datamart access (SQL- read only, and autogenerated semantic model) with other users in your organization. Users receive an email with links to access the detail page where they can find the SQL Server URL and can access the auto-generated semantic model to create reports based on it.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-07.png" alt-text="Screenshot of the datamart share menu."::: |
+| View lineage | This shows the end-to-end lineage of datamarts from the data sources to the datamart, the auto-generated semantic model, and other semantic models (if any) that were built on top of the datamarts, all the way to deports, dashboards and apps.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-08.png" alt-text="Screenshot of the datamart view lineage window." lightbox="media/datamarts-create-reports/datamarts-create-reports-08.png"::: |
 
 
 ## Datamart settings
@@ -238,25 +236,24 @@ The following is a list of settings available for each datamart.
 | Server settings | The SQL endpoint connection string for a datamart. You can use the connection string to create a connection to the datamart using various tools, such as SSMS.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-11.png" alt-text="Screenshot of the datamart connection string."::: |
 | Data source credentials | Lets you get data source information and edit credentials.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-12.png" alt-text="Screenshot of the datamart source credentials menu."::: |
 | Schedule refresh | Data refresh information for the datamart, based on the schedule defined by the user.<br>:::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-13.png" alt-text="Screenshot of the datamart scheduled refresh menu."::: |
-| Sensitivity label | Sensitivity label applied on datamart, which also gets propagated on the downstream auto-generated dataset, reports, and so on.<br> :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-14.png" alt-text="Screenshot of the datamart sensitivity label settings."::: <br><br>The sensitivity labels propagation to downstream dataset, reports won't happen in the following scenarios:<ul><li>Sensitivity label downgrade<li>Specific items when the sensitivity label was manually set</ul> |
+| Sensitivity label | Sensitivity label applied on datamart, which also gets propagated on the downstream auto-generated semantic model, reports, and so on.<br> :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-14.png" alt-text="Screenshot of the datamart sensitivity label settings."::: <br><br>The sensitivity labels propagation to downstream semantic model, reports won't happen in the following scenarios:<ul><li>Sensitivity label downgrade<li>Specific items when the sensitivity label was manually set</ul> |
 
-The following table shows settings for auto-generated datasets. When these settings are applied on an auto-generated dataset, they're also applied to datamart as well.
+
+The following table shows settings for auto-generated semantic models. When these settings are applied on an auto-generated semantic model, they're also applied to datamart as well.
 
 | Setting | Details |
 | --- | --- |
-| Endorsement and discovery | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-15.png" alt-text="Screenshot of the endorsement and discovery setting."::: |
 | Request access | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-16.png" alt-text="Screenshot of the request access setting."::: |
 | Q&amp;A | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-17.png" alt-text="Screenshot of the Q and A setting."::: |
 | Query caching | :::image type="content" source="media/datamarts-create-reports/datamarts-create-reports-18.png" alt-text="Screenshot of the query caching setting."::: |
 
 ## Datamarts considerations and limitations
+* Only the datamart owner can add or change data sources corresponding to a datamart. If the current datamart owner is unavailable, another workspace owner can use the *Takeover* feature to gain access.
+* When using datamarts with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
+   * You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
+   * You cannot name or rename cloud data sources; you can name or rename gateway connections.
 
-When using datamarts with [named connections](/power-query/connection-authentication-pqo), the following limitations apply:
-
-* You can only create one cloud connection of a particular path and type, for example, you could only create one SQL plus server/database cloud connection. You can create multiple gateway connections.
-* You cannot name or rename cloud data sources; you can name or rename gateway connections.
-
-## Next steps
+## Related content
 This article provided sample data and instructions on how to create and interact with datamarts. 
 
 The following articles provide more information about datamarts and Power BI:

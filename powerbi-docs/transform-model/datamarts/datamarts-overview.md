@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 06/16/2022
+ms.date: 04/02/2024
 LocalizationGroup: Data from files
 ---
 # Introduction to datamarts
@@ -19,7 +19,7 @@ Datamarts help bridge the gap between business users and IT. Datamarts are self-
 
 Once data is loaded into a datamart, you can additionally define relationships and policies for business intelligence and analysis. Datamarts automatically generate a dataset or semantic model, which can be used to create Power BI reports and dashboards. You can also query a datamart using a T-SQL endpoint or using a visual experience.
 
-:::image type="content" source="media/datamarts-overview/datamarts-overview-01.png" alt-text="Diagram that shows datamarts and power B I relationship.":::
+:::image type="content" source="media/datamarts-overview/datamarts-overview-01.png" alt-text="Diagram that shows datamarts and power B I relationship." lightbox="media/datamarts-overview/datamarts-overview-01.png":::
 
 Datamarts offer the following benefits:
 
@@ -47,7 +47,7 @@ Datamarts are designed to support the following scenarios:
 
 * **Relational database analytics with Power BI:** Access a datamart’s data using external SQL clients. Azure Synapse and other services/tools that use T-SQL can also use datamarts in Power BI.
 
-* **End-to-end semantic models:** Enable Power BI creators to build end-to-end solutions without dependencies on other tooling or IT teams. Datamarts gets rid of managing orchestration between dataflows and datasets through auto-generated datasets, while providing visual experiences for querying data and ad-hoc analysis, all backed by Azure SQL DB.
+* **End-to-end semantic models:** Enable Power BI creators to build end-to-end solutions without dependencies on other tooling or IT teams. Datamarts gets rid of managing orchestration between dataflows and semantic models through auto-generated semantic models, while providing visual experiences for querying data and ad-hoc analysis, all backed by Azure SQL DB.
 
 
 
@@ -56,8 +56,8 @@ The following table describes these offerings and the best uses for each, includ
 | Item | Recommended Use Case | Complementing role with datamarts |
 | --- | --- | --- |
 | Datamarts | User-based data warehousing and SQL access to your data | Datamarts can be used as sources for other datamarts or items, using the SQL endpoint:<ul> <li>External sharing<li>Sharing across departmental or organizational boundaries with security enabled</ul> |
-| Dataflows | Reusable data prep (ETL) for datasets or marts | Datamarts use a single, built-in dataflow for ETL. Dataflows can accentuate this, enabling:<ul> <li>Loading data to datamarts with different refresh schedules<li>Separating ETL and data prep steps from storage, so it can be reused by datasets</ul> |
-| Datasets | Metrics and semantic layer for BI reporting | Datamarts provide an auto-generated dataset for reporting, enabling:<ul> <li>Combining data from multiple sources<li>Selective sharing of the datamart tables for fine-grained reporting<li>Composite models - a dataset with data from the datamart and other data sources outside of the datamart<li>Proxy models - a dataset that uses DirectQuery for the auto-generated model, using a single source of truth</ul> |
+| Dataflows | Reusable data prep (ETL) for semantic models or marts | Datamarts use a single, built-in dataflow for ETL. Dataflows can accentuate this, enabling:<ul> <li>Loading data to datamarts with different refresh schedules<li>Separating ETL and data prep steps from storage, so it can be reused by semantic models</ul> |
+| Semantic models | Metrics and semantic layer for BI reporting | Datamarts provide an auto-generated semantic model for reporting, enabling:<ul> <li>Combining data from multiple sources<li>Selective sharing of the datamart tables for fine-grained reporting<li>Composite models - a semantic model with data from the datamart and other data sources outside of the datamart<li>Proxy models - a semantic model that uses DirectQuery for the auto-generated model, using a single source of truth</ul> |
 
 
 ## Datamarts and dataflows integration
@@ -66,26 +66,26 @@ In some cases it can be useful to incorporate both dataflows and datamarts in th
 
 * For solutions with existing dataflows:
     * Easily consume the data with datamarts to apply any additional transformations or enable ad-hoc analysis and querying using SQL queries
-    * Easily integrate a no-code data warehousing solution with no management of datasets
+    * Easily integrate a no-code data warehousing solution with no management of semantic models
 
 * For solutions with existing datamarts:
     * Perform reusable extract, transform and load (ETL) at scale for large data volumes
     * Bring your own data lake and use dataflows as a pipeline for datamarts
 
-:::image type="content" source="media/datamarts-overview/datamarts-overview-03.png" alt-text="Diagram that shows datamarts and dataflows and power B I relationships.":::
+:::image type="content" source="../dataflows/media/dataflows-introduction-self-service-flow.png" alt-text="Diagram that shows datamarts and dataflows." lightbox="../dataflows/media/dataflows-introduction-self-service-flow.png":::
 
 
 ## Comparing dataflows to datamarts
 
 This section describes the differences between dataflows and datamarts. 
 
-**[Dataflows](../dataflows/dataflows-introduction-self-service.md)** provide reusable extract, transform and load (ETL). Tables can't be browsed, queried, or explored without a dataset, but can be defined for reuse. The data is exposed in Power BI or [CDM format](/common-data-model/) if you bring your own [data lake](../dataflows/dataflows-azure-data-lake-storage-integration.md). Dataflows are used by Power BI to ingest data into your datamarts. You should use dataflows whenever you want to reuse your ETL logic.
+**[Dataflows](../dataflows/dataflows-introduction-self-service.md)** provide reusable extract, transform and load (ETL). Tables can't be browsed, queried, or explored without a semantic model, but can be defined for reuse. The data is exposed in Power BI or [CDM format](/common-data-model/) if you bring your own [data lake](../dataflows/dataflows-azure-data-lake-storage-integration.md). Dataflows are used by Power BI to ingest data into your datamarts. You should use dataflows whenever you want to reuse your ETL logic.
 
 Use **dataflows** when you need to:
 * Build reusable and shareable data prep for items in Power BI.
 
 
-**Datamarts** are a fully managed database that enables you to store and explore your data in a relational and fully managed Azure SQL DB. Datamarts provide SQL support, a no-code visual query designer, Row Level Security (RLS), and auto-generation of a dataset for each datamart. You can perform ad-hoc analysis and create reports, all on the web.
+**Datamarts** are a fully managed database that enables you to store and explore your data in a relational and fully managed Azure SQL DB. Datamarts provide SQL support, a no-code visual query designer, Row Level Security (RLS), and auto-generation of a semantic model for each datamart. You can perform ad-hoc analysis and create reports, all on the web.
 
 Use **datamarts** when you need to:
 * Sort, filter, do simple aggregation visually or through expressions defined in SQL
@@ -94,7 +94,7 @@ Use **datamarts** when you need to:
 * Enable users who don’t have access to Power BI Desktop
 
 
-## Next steps
+## Related content
 This article provided an overview of datamarts and the many ways you can use them. 
 
 The following articles provide more information about datamarts and Power BI:
@@ -105,6 +105,7 @@ The following articles provide more information about datamarts and Power BI:
 * [Create reports with datamarts](datamarts-create-reports.md)
 * [Access control in datamarts](datamarts-access-control.md)
 * [Datamart administration](datamarts-administration.md)
+* [Microsoft Fabric decision guide: data warehouse or lakehouse](/fabric/get-started/decision-guide-warehouse-lakehouse)
 
 
 For more information about dataflows and transforming data, see the following articles:

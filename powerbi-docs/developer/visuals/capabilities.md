@@ -1,20 +1,21 @@
 ---
 title: Capabilities and properties of Power BI visuals
-description: This article describes the capabilities.json file and properties of Power BI visuals.
+description: This article describes the capabilities.json file and properties of Power BI visuals that can be defined in the file.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 10/12/2022
+ms.topic: concept-article
+ms.date: 12/12/2023
+#customer intent: To understand the capabilities.json file and properties of Power BI visuals.
 ---
 
 # Capabilities and properties of Power BI visuals
 
 Every visual has a *capabilities.json* file that is created automatically when you run the `pbiviz new <visual project name>` command to [create a new visual](develop-circle-card.md). The *capabilities.json* file describes the visual to the host.
 
-The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. Starting from API v4.6.0, **all properties on the capabilities model are *optional* except `privileges`, which are *mandatory*.**
+The *capabilities.json* file tells the host what kind of data the visual accepts, what customizable attributes to put on the properties pane, and other information needed to create the visual. Starting from API v4.6.0, **all properties on the capabilities model are *optional* except `privileges`, which are *required*.**
 
 The *capabilities.json* file lists the root objects in the following format:
 
@@ -40,7 +41,7 @@ When you create a new visual, the default *capabilities.json* file includes the 
 
 The above objects are the ones needed for data-binding. They can be edited as necessary for your visual.
 
-The following additional root objects are optional and can be added as needed:
+The following other root objects are optional and can be added as needed:
 
 * [tooltips](add-tooltips.md#add-tooltips-support-to-the-report-page)
 * [supportsHighlight](highlight.md)
@@ -50,8 +51,8 @@ The following additional root objects are optional and can be added as needed:
 * [supportsKeyboardFocus](supportskeyboardfocus-feature.md)
 * [supportsSynchronizingFilterState](enable-sync-slicers.md)
 * [advancedEditModeSupport](advanced-edit-mode.md)
-* [supportsLandingPage](landing-page.md#creating-a-landing-page)
-* [supportsEmptyDataView](landing-page.md#creating-a-landing-page)
+* [supportsLandingPage](landing-page.md#create-a-landing-page)
+* [supportsEmptyDataView](landing-page.md#create-a-landing-page)
 * [supportsMultiVisualSelection](supportsmultivisualselection-feature.md)
 * [subtotals](total-subtotal-api.md)
 * [keepAllMetadataColumns](dataview-mappings.md#keep-all-metadata-columns)
@@ -74,19 +75,20 @@ A JSON privilege definition contains these components:
 * `essential` - (Boolean) Indicates whether the visual functionality requires this privilege. A value of `true` means the privilege is required; `false` means the privilege isn't mandatory.
 * `parameters` - (string array)(optional) Arguments. If `parameters` is missing, it's considered an empty array.
 
-There are two types of privileges that must be defined:
+The following are types of privileges that must be defined:
 
-* Access External resources
-* Download to file
+* [Access External resources](#allow-web-access)
+* [Download to file](#download-to-file)
+* [Local storage privileges](#local-storage-privileges)
 
 >[!NOTE]
 >Even with these privileges granted in the visual, the admin has to enable the switch in the admin settings to allow people in their organization to benefit from these settings.
 
-### Allow web access
+#### Allow web access
 
-To allow a visual to access an external resource or web site, add that information as a privilege in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
+To allow a visual to access an external resource or web site, add that information as a *privilege* in the capabilities section. The privilege definition includes an optional list of URLs the visual is allowed to access in the format `http://xyz.com` or `https://xyz.com`. Each URL can also include a wildcard to specify subdomains.
 
-#### Example of privileges setting allowing access to external resources
+The following code is an example of privileges setting allowing access to external resources:
 
 ```json
 {
@@ -98,7 +100,7 @@ To allow a visual to access an external resource or web site, add that informati
 
 The preceding `WebAccess` privilege means that the visual needs to access any subdomain of the `microsoft.com` domain via HTTPS protocol only and `example.com` without subdomains via HTTP, and that this access privilege is essential for the visual to work.
 
-### Download to file
+#### Download to file
 
 To allow the user to export data from a visual into a file, set `ExportContent` to `true`.
 
@@ -114,7 +116,7 @@ This `ExportContent` setting enables the visual to export data to files in the f
 
 This setting is separate from and not affected by download restrictions applied in the organization's [export and sharing](/power-bi/admin/service-admin-portal-export-sharing) tenant settings.
 
-#### Example of privileges setting allowing downloading to a file
+The following code is an example of a privileges setting that allows downloading to a file:
 
 ```json
 "privileges": [
@@ -125,7 +127,32 @@ This setting is separate from and not affected by download restrictions applied 
 ]
 ```
 
-### Example of a privileges definition
+#### Local storage privileges
+
+This privilege allows a custom visual to store information on the user's local browser.
+
+The following is an example of a privileges setting that allows use of the local storage:
+
+```json
+"privileges": [
+    {
+        "name": "LocalStorage",
+        "essential": true
+    }
+]
+```
+
+#### No privileges needed
+
+If the visual doesn't requires any special permissions, the `privileges` array should be empty:
+
+```json
+  "privileges": []
+```
+
+#### Multiple privileges
+
+The following example shows how to set several privileges for a custom visual.
 
 ```json
 "privileges": [
@@ -141,14 +168,6 @@ This setting is separate from and not affected by download restrictions applied 
 ]
 ```
 
-### No privileges needed
-
-If the visual doesn't requires any special permissions, the `privileges` array should be empty:
-
-```json
-  "privileges": []
-```
-
 ## dataroles: define the data fields that your visual expects
 
 To define fields that can be bound to data, you use `dataRoles`. `dataRoles` is an array of `DataViewRole` objects, which defines all the required properties. The `dataRoles` objects are the **fields** that appear on the [Properties pane](../../visuals/service-getting-started-with-color-formatting-and-axis-properties.md).
@@ -157,7 +176,7 @@ The user drags data fields into them to bind data the data fields to the objects
 
 ### DataRole properties
 
-DataRoles are defined by the following properties:
+Define DataRoles with the following properties:
 
 * **name**: The internal name of this data field (must be unique).
 * **displayName**: The name displayed to the user in the **Properties** pane.
@@ -251,7 +270,7 @@ For more information, see [Understand data view mapping in Power BI visuals](dat
 
 ## objects: define property pane options
 
-Objects describe customizable properties that are associated with the visual. The objects defined in this section are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type that's associated with it.
+Objects describe customizable properties that are associated with the visual. The objects defined in this section are the objects that appear in the [Format pane](../../create-reports/service-the-report-editor-take-a-tour.md#format-your-visuals). Each object can have multiple properties, and each property has a type associated with it.
 
 ```json
 "objects": {
@@ -261,10 +280,27 @@ Objects describe customizable properties that are associated with the visual. Th
 }
 ```
 
+For example, to support [dynamic format strings](../../create-reports/desktop-custom-format-strings.md) in your custom visual, define the following object:
+
+```json
+"objects": {
+        "general": {
+            "properties": {
+                "formatString": {
+                    "type": {
+                        "formatting": {
+                            "formatString": true
+                        }
+                    }
+                }
+            }
+        },
+```
+
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
 
-## Next steps
+## Related content
 
 * [Understand data view mapping in Power BI visuals](dataview-mappings.md)
 * [Objects and properties of Power BI visuals](objects-properties.md)
-*[Sorting options for Power BI visuals](sort-options.md)
+* [Sorting options for Power BI visuals](sort-options.md)

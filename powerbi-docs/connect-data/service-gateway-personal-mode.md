@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 05/28/2024
 LocalizationGroup: Gateways
 ---
 
@@ -48,11 +48,10 @@ To install the on-premises data gateway (personal mode):
 
 1. On the next screen, review the minimum requirements, verify or edit the installation path, and select the checkbox to accept the terms of use and privacy statement. Then select **Install**.
 
-1. After the installation completes successfully, enter your email address under **Email address to use with this gateway**, and select **Sign in**. 
+1. After the installation completes successfully, enter your email address under **Email address to use with this gateway**, and select **Sign in**.
 
-1. After you sign in, the following screen appears. Select **Close** to close the installer.
-
-   ![Screenshot that shows the On-premises data gateway (personal mode) success screen.](media/service-gateway-personal-mode/personal-gateway-complete.png)
+1. After you sign in, a confirmation screen displays. 
+1. Select **Close** to close the installer.
 
 ## Use Fast Combine with the personal gateway
 
@@ -88,7 +87,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
   
   **Answer:** Many situations can trigger a request for credentials. The most common scenario is that you reinstalled the on-premises data gateway (personal mode) on a different machine than your original Power BI personal gateway. There could also be an issue in the data source, or Power BI failed to make a test connection, or a timeout or system error occurred.
   
-  To update your credentials in the Power BI service, select the gear icon in the header and then choose **Settings**. On the **Datasets** tab, select the dataset, and then choose **Data source credentials**.
+  To update your credentials in the Power BI service, select the gear icon in the header and then choose **Settings**. On the **Semantic models** tab, select the dataset, and then choose **Data source credentials**.
 
 - **Question:** How long is a personal gateway offline during an upgrade?
   
@@ -98,9 +97,10 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
   
   **Answer:** Yes, personal mode supports R and Python scripts.​
 
-## Next steps
+## Related content
 
 * [Add or remove a gateway data source](service-gateway-data-sources.md)
 * [Configure proxy settings for an on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
+* [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).

@@ -22,7 +22,7 @@ When you create or own a dashboard, you have many options for changing the look 
 > [!NOTE]
 > This video might use earlier versions of Power BI Desktop or the Power BI service.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/lJKgWnvl6bQ]
 
 This article covers how to:
 
@@ -39,7 +39,7 @@ This article covers how to:
 
 ## Prerequisites
 
-- You just need a [Power BI free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace. 
+You just need a [Fabric free license](../consumer/end-user-features.md) to explore the samples in the Power BI service, and save them to your My workspace.
 
 ## Get the sample
 
@@ -146,12 +146,12 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 1. Deleting a tile doesn't delete the underlying visualization. Open the underlying report by selecting the "Amount" tile. Open the last page in your report to see that the original visualization hasn't been deleted from the report.
 
-## Next steps
+## Related content
 
-[Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
+* [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
 
-[Dashboards in Power BI](../consumer/end-user-dashboards.md)
+* [Dashboards in Power BI](../consumer/end-user-dashboards.md)
 
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

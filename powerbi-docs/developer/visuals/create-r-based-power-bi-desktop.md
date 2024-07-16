@@ -7,7 +7,8 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 06/11/2021
+ms.date: 01/11/2024
+#customer intent: As a developer, I want to learn how to create an R-powered visual for Power BI so that I can use R scripts to create custom visuals in Power BI.
 ---
 
 # Tutorial: Create an R-powered Power BI visual
@@ -28,7 +29,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* An R engine. You can download one free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
+* An R engine. You can download one free from many locations, including the [Microsoft R Open download page](https://www.microsoft.com/download/details.aspx?id=51205) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
@@ -51,7 +52,7 @@ In this tutorial, you learn how to:
     | 11 | 3170 |
     | 12 | 2762 |
 
-2. To create a visual, open **PowerShell** or **Terminal**, and run the following command:
+1. To create a visual, open **PowerShell** or **Terminal**, and run the following command:
 
       ```cmd
       pbiviz new rVisualSample -t rvisual
@@ -59,45 +60,45 @@ In this tutorial, you learn how to:
 
       This command creates a new folder for the *rVisualSample* visual. The structure is based on the `rvisual` template. It creates a file called *script.r* in the root folder of the visual. This file holds the R-script that is run to generate the image when the visual is rendered. You can create your R-script in **Power BI Desktop**.
 
-3. From the newly created `rVisualSample` directory run
+1. From the newly created `rVisualSample` directory run the following command:
 
    ```cmd
    pbiviz start
    ```
 
-4. In **Power BI Desktop**, select **R script visual**:
+1. In **Power BI Desktop**, select **R script visual**:
 
-   ![Screenshot shows the R script visual control in the Power BI Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
+   :::image type="content" source="./media/create-r-based-power-bi-desktop/r-script-icon.png" alt-text="Screenshot of the R script visual control in the Power BI Desktop.":::
 
-5. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
+1. Assign data to the developer visual by dragging **MonthNo** and **Total units** to **Values** for the visual.
 
-    ![Add data to values](./media/create-r-based-power-bi-desktop/add-values.png)
+   :::image type="content" source="./media/create-r-based-power-bi-desktop/add-values.png" alt-text="Screenshot showing where to add data to values.":::
 
-6. Set the aggregation type of **Total units** to *Don't summarize*.
+1. Set the aggregation type of **Total units** to *Don't summarize*.
 
-    ![Don't summarize data](./media/create-r-based-power-bi-desktop/dont-summarize.png)
+    :::image type="content" source="./media/create-r-based-power-bi-desktop/dont-summarize.png" alt-text="Screenshot of menu with option for not summarizing data.":::
 
-7. From the R-script editor in your **Power BI Desktop**, type the following:
+1. From the R-script editor in your **Power BI Desktop**, type the following:
 
       ```r
       plot(dataset)
       ```
 
-      This command creates a scatter chart using the values in the dataset as input.
+      This command creates a scatter chart using the values in the semantic model as input.
 
-8. Select the **Run script** icon to see the result.
+1. Select the **Run script** icon to see the result.
 
-      ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
+   :::image type="content" source="./media/create-r-based-power-bi-desktop/r-data-values.png" alt-text="Screenshot of R visual chart with data.":::
 
 ## Edit the R Script
 
 The R-script can be modified to create other types of visuals. Let's create a line chart next.
 
-1. Paste the following R code into the **R script editor**:
+1. Paste the following R code into the **R script editor**.
 
    ```r
-   x <- dataset[,1] # get the first column from dataset
-   y <- dataset[,2] # get the second column from dataset
+   x <- dataset[,1] # get the first column from semantic model
+   y <- dataset[,2] # get the second column from semantic model
 
    columnNames = colnames(dataset) # get column names
 
@@ -107,7 +108,7 @@ The R-script can be modified to create other types of visuals. Let's create a li
 
 2. Select the **Run script** icon to see the result.
 
-    ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
+   :::image type="content" source="./media/create-r-based-power-bi-desktop/run-r-script.png" alt-text="Screenshot of the result of running the script, which is a line plot.":::
 
 3. When your R-script is ready, copy it to the `script.r` file located in the root directory of your visual project.
 
@@ -187,55 +188,29 @@ The `corrplot` package creates a graphical display of a correlation matrix. For 
 
     The result of using `corrplot` package looks like this example:
 
-    ![Screenshot shows the visualization pane with four ovals created by corrplot.](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
+    :::image type="content" source="./media/create-r-based-power-bi-desktop/r-corrplot-result.png" alt-text="Screenshot of the visualization pane with four ovals created by corrplot.":::
 
 ## Add a static property to the property pane
 
 Now that we have a basic `corrplot` visual, let's add properties to the property pane that allow the user to change the look and feel to the visual.
 
-We'll use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
+We use the `method` argument to configure the shape of the data points. The default script uses a circle. Modify your visual to let the user choose between several options.
 
-1. Define an `object` called *settings* in the *capabilities.json* file and give it the properties shown below. Then use this object name in the enumeration method to get the values from the property pane.
+1. Define an `object` called *settings* in the *capabilities.json* file and give it the following properties.
 
     ```json
-    {
-      "settings": {
-      "displayName": "Visual Settings",
-      "description": "Settings to control the look and feel of the visual",
+    "settings": {
       "properties": {
         "method": {
-          "displayName": "Data Look",
-          "description": "Control the look and feel of the data points in the visual",
           "type": {
             "enumeration": [
-              {
-                "displayName": "Circle",
-                "value": "circle"
-              },
-              {
-                "displayName": "Square",
-                "value": "square"
-              },
-              {
-                "displayName": "Ellipse",
-                "value": "ellipse"
-              },
-              {
-                "displayName": "Number",
-                "value": "number"
-              },
-              {
-                "displayName": "Shade",
-                "value": "shade"
-              },
-              {
-                "displayName": "Color",
-                "value": "color"
-              },
-              {
-                "displayName": "Pie",
-                "value": "pie"
-              }
+              { "value": "circle" },
+              { "value": "square" },
+              { "value": "ellipse" },
+              { "value": "number" },
+              { "value": "shade" },
+              { "value": "color" },
+              { "value": "pie" }
             ]
           }
         }
@@ -243,38 +218,65 @@ We'll use the `method` argument to configure the shape of the data points. The d
     }
     ```
 
-2. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
+1. Open the *src/settings.ts* file. Create a `VisualCardSettings` class with the public properties `method`, `name`, `displayName` and `slices` as shown in the code box bellow.
 
     ```typescript
-    "use strict";
+    import ItemDropdown = formattingSettings.ItemDropdown;
 
-    import { dataViewObjectsParser } from "powerbi-visuals-utils-dataviewutils";
-    import DataViewObjectsParser = dataViewObjectsParser.DataViewObjectsParser;
+    const methodOptions = [
+        {
+            displayName: "Circle",
+            value: "circle"
+        },
+        {
+            displayName: "Square",
+            value: "square"
+        },
+        {
+            displayName: "Ellipse",
+            value: "ellipse"
+        },
+        {
+            displayName: "Number",
+            value: "number"
+        },
+        {
+            displayName: "Shade",
+            value: "shade"
+        },
+        {
+            displayName: "Color",
+            value: "color"
+        },
+        {
+            displayName: "Pie",
+            value: "pie"
+        }
+    ]
 
-    export class VisualSettings extends DataViewObjectsParser {
-      public rcv_script: rcv_scriptSettings = new rcv_scriptSettings();
-      public settings: CorrPlotSettings = new CorrPlotSettings();
-    }
+    class VisualCardSettings extends FormattingSettingsCard {
+        method: FormattingSettingsSlice = new ItemDropdown({
+            name: "method",
+            displayName: "Method",
+            items: methodOptions,
+            value: methodOptions[0]
+        });
 
-    export class CorrPlotSettings {
-      public method: string = "circle";
-    }
-
-    export class rcv_scriptSettings {
-      public provider;
-      public source;
+        name: string = "settings";
+        displayName: string = "Settings";
+        slices: Array<FormattingSettingsSlice> = [this.method];
     }
     ```
 
     After these steps, you can change the property of the visual.
 
-   ![R visual settings](./media/create-r-based-power-bi-desktop/r-data-look-settings.png)
+    :::image type="content" source="./media/create-r-based-power-bi-desktop/r-data-look-settings.png" alt-text="Screenshot of R visual settings.":::
 
     Finally, the R-script must have a default property. If the user doesn't change the property value (in this case, the shape setting), the visual uses this value.
 
     For R runtime variables for the properties, the naming convention is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
-3. Run the following R-script:
+1. Run the following R-script:
 
     ```r
     library(corrplot)
@@ -293,8 +295,8 @@ We'll use the `method` argument to configure the shape of the data points. The d
 Now you can package the visual and import it to any Power BI report.
 
 1. Fill in the `displayName`, `supportUrl`, `description`, author's `name` and `email`, and any other important information in the `pbivis.json` file.
-2. If you want to change the visual's icon on the visualization pane, replace the **icon.png** file in the **assets** folder.
-3. From the root directory of your visual run:
+1. If you want to change the visual's icon on the visualization pane, replace the **icon.png** file in the **assets** folder.
+1. From the root directory of your visual run:
 
     ```powershell
     pbiviz package
@@ -302,16 +304,13 @@ Now you can package the visual and import it to any Power BI report.
 
     For more information on packaging your visual see [Packaging the custom visual](custom-visual-develop-tutorial-format-options.md#packaging-the-custom-visual)
 
-4. Import the visual's pbiviz file to any Power BI report. See [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) for instructions on how to do this.
+1. Import the visual's pbiviz file to any Power BI report. See [Import a visual file from your local computer into Power BI](import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) for instructions on how to do this.
 
-5. Your final visual looks like the following example:
+1. Your final visual looks like the following example:
 
-![R visual settings with changed value](./media/create-r-based-power-bi-desktop/r-final-settings-value.png)
+  :::image type="content" source="./media/create-r-based-power-bi-desktop/r-final-settings-value.png" alt-text="Screenshot of R visual settings with changed value.":::
 
-## Next steps
+## Related content
 
->[!div class="nextstepaction"]
->[Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
-
->[!div class="nextstepaction"]
->[Build a bar chart](create-bar-chart.md)
+* [Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
+* [Build a bar chart](create-bar-chart.md)

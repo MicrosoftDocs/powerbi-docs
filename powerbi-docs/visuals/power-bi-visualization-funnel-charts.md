@@ -1,128 +1,132 @@
 ---
-title: Funnel charts
-description: 'Funnel charts in Power BI'
-author: mihart
-ms.author: mihart
+title: Create and use funnel charts in Power BI
+description: Learn how to work with Funnel charts in Power BI Desktop and the Power BI service.
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: video-qKRZPBnaUXM, sample-opportunityanalysissample
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 06/30/2022
+ms.date: 07/28/2023
 LocalizationGroup: Visualizations
 ---
-# Create and use funnel charts
+
+# Create and use funnel charts in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-A funnel chart helps you visualize a linear process that has sequential, connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
+A funnel chart helps you visualize a linear process that has sequential, connected stages. A common use for a funnel chart is to track sales customers through stages, such as Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
-Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
+Each funnel stage represents a percentage of the total. In most cases, a funnel chart is shaped like a funnel where the first stage is the largest and each subsequent stage is smaller than its predecessor. A pear-shaped funnel is also useful and can help identify a problem in the process. Typically, the first stage (called the _intake_ stage) is the largest.
 
-:::image type="content" source="media/power-bi-visualization-funnel-charts/funnelplain.png" alt-text="Sample blue funnel.":::
+:::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-plain.png" alt-text="Diagram that shows a sample blue funnel.":::
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+Funnel charts support many capabilities, such as sorting and displaying multiples. You can highlight and cross-filter data in a funnel chart by selecting data on other visualizations on the same report page and vice versa.
 
 ## When to use a funnel chart
 
-Funnel charts are a great choice:
+Funnel charts are a great choice for many scenarios:
 
-* when the data is sequential and moves through at least 4 stages.
-* when the number of "items" in the first stage is expected to be greater than the number in the final stage.
-* to calculate potential (revenue/sales/deals/etc.) by stages.
-* to calculate and track conversion and retention rates.
-* to reveal bottlenecks in a linear process.
-* to track a shopping cart workflow.
-* to track the progress and success of click-through advertising/marketing campaigns.
+- Chart the progress of sequential data through at least four stages.
+- Chart items where the amount in the first stage is expected to be greater than the amount in the final stage.
+- Calculate potential, such as for revenue, sales, deals, and so on, by stages.
+- Calculate and track conversion and retention rates.
+- Reveal bottlenecks in a linear process.
+- Track the workflow for a shopping cart.
+- Track the progress and success of click-through advertising and marketing campaigns.
 
-## Working with funnel charts
+Watch the following video to see how to create a funnel chart by using data from the Sales and Marketing sample.
 
-Funnel charts:
+> [!VIDEO https://www.youtube.com/embed/qKRZPBnaUXM]
 
-* Can be sorted.
-* Support multiples.
-* Can be highlighted and cross-filtered by other visualizations on the same report page.
-* Can be used to highlight and cross-filter other visualizations on the same report page.
+> [!NOTE]  
+> The video might use earlier versions of Power BI Desktop or the Power BI service.
 
-   > [!NOTE]
-   > Watch this video to see Will create a funnel chart using the Sales and Marketing sample. Then follow the steps below the video to try it out yourself using the Opportunity Analysis PBIX sample file
+## Prerequisites
 
-## Prerequisite
+Review the following prerequisites for using funnel charts in Power BI Desktop or the Power BI service.
 
 # [Power BI Desktop](#tab/powerbi-desktop)
-This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
-).
 
-1. From the upper left section of the menubar, select **File** > **Open report**.
+This tutorial uses the Opportunity Analysis Sample .pbix file.
 
-1. Find your copy of the **Opportunity Analysis Sample PBIX file**.
+1. Download the [Opportunity Analysis Sample .pbix file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) to your desktop.
 
-1. Open the **Opportunity Analysis Sample PBIX file** in report view :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::.
+1. In Power BI Desktop, select **File** > **Open report**.
 
-1. Select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. Browse to and select the **Opportunity Analysis Sample** .pbix file, and then select **Open**.
+
+   The **Opportunity Analysis Sample** .pbix file opens in report view. :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-report-view.png":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 # [Power BI service](#tab/powerbi-service)
+
 This tutorial uses the Opportunity Analysis Sample in the Power BI service.
 
-1. Sign in to the Power BI service.
+1. Sign in to the Power BI service (`app.powerbi.com`).
 
-1. From the lower left corner, select **Get data**.
+1. Select **Learn** in the navigation pane.
 
-1. Select **Samples**, then **Opportunity Analysis Sample**. Select **Connect**.
+1. On the **Learning center** page, under **Sample reports**, locate and select the **Opportunity Analysis Sample** to download it. The sample opens in report view.
 
-1. In your workspace, select the Opportunity Analysis Sample report to open it.
+   :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-opportunity-analysis-sample.png" alt-text="Screenshot that shows the Opportunity Analysis Sample open in report view in the Power BI service." lightbox="media/power-bi-visualization-funnel-charts/power-bi-opportunity-analysis-sample-expanded.png" border="false":::
 
-1. Select **Edit** and then select :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-yellow-tab.png"::: to add a new page.
+1. At the top, select **Edit** to open the Report editor.
+
+   :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-edit-report.png" alt-text="Screenshot that shows how to select Edit to modify the report in the Power BI service." border="false":::
+
+1. At the bottom, select the green plus symbol :::image type="icon" source="media/power-bi-visualization-kpi/power-bi-plus-green-tab.png"::: to add a new page to the report.
 
 ---
 
+> [!NOTE]
+> If you want to share your report with a colleague, you both need to have individual Power BI Pro licenses. If both parties don't have individual Power BI Pro licenses, the report needs to be saved in Premium capacity to enable sharing. For more information, see [sharing reports](../collaborate-share/service-share-reports.md).
+
 ## Create a basic funnel chart
 
-Watch this video to see Will create a funnel chart using the Sales and Marketing sample.
+Let's create a funnel chart to show the number of opportunities in each sales stage in the Opportunity Analysis Sample data.
 
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
+1. On the **Data** pane, expand **SalesStage** and select the **Sales Stage** checkbox. By default, Power BI creates a table visual to display the data.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-select-field.png" alt-text="Screenshot that shows how to select the Sales Stage field on the Data pane in Power BI Desktop.":::
 
-Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
+   You can now convert the table visual into a funnel chart.
 
-1. Start on a blank report page and select the **SalesStage** \> **Sales Stage** field.
+1. Select the table visual, and then select **Funnel** on the **Visualizations** pane. Power BI converts the visual type to a funnel chart.
 
-    :::image type="content" source="media/power-bi-visualization-funnel-charts/funnelselectfield-new.png" alt-text="Select Sales Stage.":::
+1. On the **Fields** pane, expand **Fact** and select the **Opportunity Count** checkbox.
 
-1. Select the funnel icon :::image type="icon" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png"::: to convert the column chart to a funnel chart.
+   Power BI updates the funnel chart and the **Visualizations** pane. The **Opportunity Count** field is added to the **Values** option and the **Sales Stage** field is added to the **Category** option.
 
-1. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
+   :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-chart.png" alt-text="Screenshot that shows how to convert the visual to a funnel chart and add another data field.":::
 
-    :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png" alt-text="Build the funnel chart.":::
+1. When you hover over a bar in the chart, Power BI displays the details for that data. Hover over the **Proposal** bar.
 
-1. Hovering over a bar displays a wealth of information.
+   Some of the details include:
+   - The name of the stage.
+   - The number of opportunities currently in this stage.
+   - The overall conversion rate (% of Lead).
+   - The stage-to-stage value (also known as the _Drop Rate_), which is the percentage of the previous stage. In our example, the stage-to-stage value equals **Proposal Stage**/**Solution Stage**.
 
-   * The name of the stage
-   * Number of opportunities currently in this stage
-   * Overall conversion rate (% of Lead) 
-   * Stage-to-stage (also known as Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
-
-     :::image type="content" source="media/power-bi-visualization-funnel-charts/funnelhover-new.png" alt-text="Details for Proposal bar.":::
+   :::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-hover.png" alt-text="Screenshot that shows how to hover over a bar in a funnel chart to see details about the data." border="false":::
 
 1. Save the report.
 
-## Highlighting and cross-filtering
+## Use highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
+Highlighting a bar in a funnel chart cross-filters the other visualizations on the same report page and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
 
-Highlighting a bar in a funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
+On the funnel chart visual, select the **Proposal** bar. This action cross-highlights the related data in the other visualizations on the report page. You can use CTRL (+ select) to select multiple bars in the chart.
 
-1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
+:::image type="content" source="media/power-bi-visualization-funnel-charts/power-bi-funnel-cross-filter.png" alt-text="Screenshot of two bars selected in the funnel chart and cross-highlights and cross-filters on other visuals on the page." border="false":::
 
-   ![Screenshot shows two bars selected in the funnel visual with visual interactions.](media/power-bi-visualization-funnel-charts/funnel-chart-cross-filter.png)
+For information about setting preferences to cross-highlight and cross-filter multiple visuals, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
-1. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../create-reports/service-reports-visual-interactions.md)
+For information about working with the **Filters** pane in Power BI, see [Add a filter to a report in Power BI](../create-reports/power-bi-report-add-filter.md).
 
-## Next steps
+## Related content
 
-[Gauges in Power BI](power-bi-visualization-radial-gauge-charts.md)
-
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+- Create [radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
+- Review [visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).

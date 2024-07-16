@@ -1,13 +1,14 @@
 ---
-title: Publish Power BI visuals to the Microsoft commercial marketplace
-description: Learn how you can publish your custom visual to Partner Center for others to discover and use.
+title: Publish Power BI visuals
+description: Learn how to publish your custom visual to Partner Center and make it available for others to discover and use in the Microsoft commercial marketplace.
 author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/18/2022
+ms.date: 06/09/2024
+#customer intent: As a developer, I want to learn how to publish my Power BI visual to the Microsoft commercial marketplace so that others can discover and use it.
 ---
 
 # Publish Power BI visuals to the Microsoft commercial marketplace
@@ -31,11 +32,11 @@ Before submitting a Power BI visual to AppSource, ensure that it complies with t
 >[!IMPORTANT]
 >If you're resubmitting or updating a visual, **do not change its GUID**. Follow these instructions to [test a new version of a visual](submission-testing.md#testing-a-new-version-of-a-published-visual).
 
-When you are ready to submit your Power BI visual, verify that your visual meets all the requirements listed below.
+When you're ready to submit your Power BI visual, verify that your visual meets all the following requirements.
 
 | Item | Required | Description |
 | --- | --- | --- |
-| Pbiviz package |Yes |[Pack your Power BI visual into a *.pbiviz* package](package-visual.md). Ensure the *pbiviz.json* file contains all the required metadata: <br>- Visual name<br>- Display name<br> - GUID<br> - Version<br> - Description<br> - Support URL<br> - Author name and email |
+| Pbiviz package |Yes |[Pack your Power BI visual into a *.pbiviz* package](package-visual.md). Ensure the *pbiviz.json* file contains all the required metadata: <br>- Visual name<br>- Display name<br> - GUID<br> - Version (four digits: `x.x.x.x`)<br> - Description<br> - Support URL<br> - Author name and email |
 | Sample *.pbix* report file |Yes |To help users become familiar with the visual, highlight the value that the visual brings to the user and give examples of usage and formatting. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample *.pbix* report file must work offline, without any external connections. |
 | Logo |Yes |Include the custom visual logo that will appear in the Marketplace listing. It should be in PNG format and exactly 300 x 300 px.<BR>**Important!** Review the [AppSource store images guide](/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the logo. |
 | Screenshots |Yes |Provide at least one screenshot, and up to five, in PNG format. The dimensions must be exactly 1366 px (width) by 768 px (height), and the size not larger than 1024 kb.<br>Add text bubbles to explain the value of key features shown in each screenshot. |
@@ -69,9 +70,9 @@ When you're ready to create or update your offer, follow the instructions in [Cr
 
 ## Track submission status and usage
 
-You can review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
+* Review the [validation policies](/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-* After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
+<!--- * After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/). --->
 
 * To understand when your Power BI visual will be available to download from AppSource, review the Power BI visuals [publication timeline](power-bi-custom-visuals-certified.md#publication-timeline).
 
@@ -81,11 +82,10 @@ Certified Power BI visuals are visuals in the Marketplace that meet certain spec
 We recommend that you submit and publish your Power BI visual before you request certification, because the certification process can take time. When you request certification, be sure to provide all required certification information in the Notes for certification box on the Review and publish page.
 All certified visuals must pass all the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).
 
-## Next steps
+## Related content
 
-* [Learn how to create a Power BI visual](develop-circle-card.md)
+* [Performance tips for creating quality Power BI custom visuals](performance-tips.md)
 * [Guidelines for publishing Power BI visuals](guidelines-powerbi-visuals.md)
 * [Test your Power BI visual before submitting for certification](submission-testing.md)  
-* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
 
-**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/)
+**More questions?** [Try asking the Power BI Community](https://community.powerbi.com/).

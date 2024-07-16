@@ -129,7 +129,8 @@ Report authors can [define drillthrough](../../create-reports/desktop-drillthrou
 
 5. Use the back arrow on the app header to go back to the page you started from.
 
-## Next steps
+## Related content
+
 * [Create reports optimized for the Power BI mobile apps](../../create-reports/power-bi-create-mobile-optimized-report-about.md)
 * [Create a phone view of a dashboard in Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Create responsive visuals optimized for any size](../../visuals/power-bi-report-visualizations.md)

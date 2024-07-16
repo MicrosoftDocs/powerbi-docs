@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 01/13/2023
+ms.date: 01/13/2024
+#customer intent: As a developer, I want to learn how to manage the Analytics pane in Power BI visuals so that I can create dynamic reference lines, like min, max, or average, in my visuals.
 ---
 
 # The Analytics pane in Power BI visuals
@@ -182,6 +183,6 @@ Define other properties the same way that you do for **Format** objects, and enu
 * The **Analytics** pane has no multi-instance support yet. The only [selector](objects-properties.md#objects-selectors-types) an object can have is *static* (that is, `selector: null`), and Power BI visuals can't have multiple instances of a user-defined card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
-## Next Steps
+## Related content
 
 [Add conditional formatting](conditional-format.md)

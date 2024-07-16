@@ -26,16 +26,14 @@
     items: 
     - name: "Get real-world data with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
-    - name: "Data in space (preview)"
-      href: mobile-apps-data-in-space-overview.md
     - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for HoloLens 2"
-      href: mobile-hololens2-app.md
   - name: How to
     items: 
     - name: All mobile apps
-      items: 
+      items:
+      - name: "Download samples in the Power BI service"
+        href: mobile-apps-download-samples.md
       - name: "Dashboards for mobile Power BI"
         href: mobile-apps-view-dashboard.md
       - name: "Reports in the mobile apps"
@@ -62,18 +60,22 @@
         href: mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
+      - name: "Admin: Configuration using mobile device management"
+        href: mobile-app-configuration.md
+      - name: "Admin: Shared device mode"
+        href: mobile-app-shared-device-mode.md
       - name: "View reports optimized for your phone"
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Refresh semantic models"
+        href: mobile-apps-dataset-refresh.md
+      - name: "Set up a launch item"
+        href: mobile-apps-launch-item.md
       - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
         href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"
         href: mobile-apps-b2b.md
-      - name: "Pin reports in space at real world locations (preview)"
-        href: mobile-apps-data-in-space-pin-reports.md        
-      - name: "Find and access reports pinned in space (preview)"
-        href: mobile-apps-data-in-space-find-pinned-reports.md   
       - name: "Scan QR codes to open reports and tiles"
         href: mobile-apps-qr-code.md
       - name: "Scan barcodes to open filtered reports"
@@ -86,8 +88,6 @@
         href: mobile-app-interaction-settings.md
       - name: "Work side by side with other apps"
         href: mobile-apps-split-screen.md
-      - name: "Configure using mobile device management"
-        href: mobile-app-configuration.md
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
@@ -106,19 +106,17 @@
         href: mobile-android-app-get-started.md
       - name: "Use Android app Shortcuts"
         href: mobile-app-quick-access-shortcuts.md
-      - name: "Find and access content with Google Search"
-        href: mobile-app-find-access-google-search.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-    - name: Power BI app for Windows 10 devices
+    - name: Power BI Windows app
       items: 
-      - name: "Get started with the Windows 10 app"
+      - name: "Get started with the Windows app"
         href: mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
         href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: "View on-premises reports and KPIs"
+      - name: "View on-premises KPIs"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: "Presentation mode on Surface Hub and Windows 10 devices"
+      - name: "Presentation mode on Windows app"
         href: mobile-windows-10-app-presentation-mode.md
       - name: "Single Sign-On in the Windows app"
         href: mobile-windows-10-app-single-sign-on-sso.md

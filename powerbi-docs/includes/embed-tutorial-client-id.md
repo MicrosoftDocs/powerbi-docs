@@ -15,6 +15,6 @@ To get the client ID GUID (also know as *application ID*), follow these steps:
 
 2. Search for **App registrations** and select the **App registrations** link.
 
-3. Select the Azure AD app you're using for embedding your Power BI content.
+3. Select the Microsoft Entra app you're using for embedding your Power BI content.
 
 4. From the **Overview** section, copy the **Application (client) ID** GUID.

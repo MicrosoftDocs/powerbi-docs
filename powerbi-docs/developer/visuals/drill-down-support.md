@@ -1,6 +1,6 @@
 ---
 title: Add drill-down support in Power BI 
-description: This article describes how to add drill-down support to Power BI Visuals.
+description: This article describes how to add drill-down support to Power BI Visuals to make them interactive and reveal more details to users.
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
@@ -8,18 +8,20 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 10/12/2022
+ms.date: 10/12/2023
+#customer intent: As a Power BI visual developer, I want to learn how to add drill-down support to my custom visual so that users can reveal more details.
 ---
 
 # Add drill-down support
 
-When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal additional details.
+When a visual has a hierarchy, you can allow users to use the Power BI drill-down feature to reveal more details.
 
-Read more about the Power BI drill-down feature [here](./../../consumer/end-user-drill.md)
+Read more about the Power BI drill-down feature at [Drill mode in the Power BI service](./../../consumer/end-user-drill.md).
+To allows the visual to enable or disable the drill feature dynamically, see [Dynamic drill-down control](./dynamic-drill-down.md).
 
 ## Enable drill-down support in the visual
 
-To support drill-down actions in your visual, add a new field to `capabilities.json` named `drill-down`. This field has one  property called `roles` which contains the name of the dataRole you want to enable drill-down actions on.
+To support drill-down actions in your visual, add a new field to `capabilities.json` named `drill-down`. This field has one property called `roles` that contains the name of the dataRole you want to enable drill-down actions on.
 
 ```json
     "drilldown": {
@@ -79,15 +81,15 @@ For example:
 }
 ```
 
-## Create the visual with drill-down support
+### Create a visual with drill-down support
 
-Run
+To create a visual with drill-down support, run the following command:
 
 ```cmd
 pbiviz new testDrillDown -t default
 ```
 
-to create a default sample visual. And apply the above sample of `capabilities.json` to the newly created visual.
+To create a default sample visual, apply the above [sample](#enable-drill-down-support-in-the-visual) of `capabilities.json` to the newly created visual.
 
 Create the property for `div` container to hold HTML elements of the visual:
 
@@ -152,7 +154,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Update the `update` method of the visual to create `button`s:
+To create `button`s, update the `update` visual's method:
 
 ```typescript
 export class Visual implements IVisual {
@@ -205,7 +207,7 @@ button {
 }
 ```
 
-Prepare sample data to test the visual:
+Prepare sample data for testing the visual:
 
 |   H1  |   H2    | H3  |   VALUES  |
 |-----|-----|------|-------|
@@ -234,13 +236,13 @@ After those steps you should get following visual:
 
 ![Dev visual with buttons](media/drill-down-support/dev-visual-drilldown1.png)
 
-## Add context menu to visual elements
+### Add context menu to visual elements
 
-In this step you'll add context menu to the button's on the visual:
+To add a context menu to the buttons on the visual:
 
 ![Context menu in the visual](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
-To create context menu, save `host` object in the properties of the visual and call `createSelectionManager` method to the create selection manager to display a context menu by using Power BI Visuals API.
+Save `host` object in the properties of the visual and call `createSelectionManager` method to the create selection manager to display a context menu by using Power BI Visuals API.
 
 ```typescript
 "use strict";
@@ -317,11 +319,11 @@ In the final step you should get visual with selections and context menu:
 
 ![Animation shows selecting Drill down and Drill up from the visual context menu.](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
-## Add drill-down support for matrix data view mapping
+### Add drill-down support for matrix data view mapping
 
-Prepare sample data to test the visual with matrix data view mappings:
+To test the visual with matrix data view mappings, first prepare sample data:
 
-|   Row1   |   Row2   |   Row3   |   Column1   |   Column2   |   Column3   |   Values   |
+|   Row 1   |   Row 2   |   Row 3   |   Column 1   |   Column 2   |   Column 3   |   Values   |
 |-----|-----|------|-------|-------|-------|-------|
 |   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
 |   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
@@ -342,7 +344,7 @@ Prepare sample data to test the visual with matrix data view mappings:
 |   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
 |   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
 
-Apply following dataview mapping for the visual:
+Then apply the following data view mapping to the visual:
 
 ```json
 {
@@ -618,10 +620,11 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-At the final step you should get visual with context menu:
+Finally, you should get a visual with context menu:
 
 ![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
-## Next steps
+## Related content
 
-For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
+* [How to use the drill down support API](./drilldown-api.md)
+* [Dynamic drill-down control](./dynamic-drill-down.md)

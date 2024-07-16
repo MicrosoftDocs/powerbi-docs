@@ -32,7 +32,7 @@ In content lists and on your Home landing page, paginated reports can be identif
 
 These reports are called *paginated* because they're formatted to fit well on a printed page. One advantage is that they display all the data in a table, even if the table spans multiple pages. Report *designers* can control the report page layout exactly.
 
-Paginated reports are best for scenarios that require a highly formatted, pixel-perfect output optimized for printing or PDF generation. A profit and loss statement is a good example of the type of report you would probably want to see as a paginated report.
+Paginated reports are best for scenarios that require a highly formatted, print-ready output optimized for printing or PDF generation. A profit and loss statement is a good example of the type of report you would probably want to see as a paginated report.
 
 ## How do paginated reports work?
 
@@ -101,7 +101,8 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 - If you don't have any paginated reports, check out these [sample paginated reports](../paginated-reports/paginated-reports-samples.md) that you can import to your workspace. 
 
-## Next steps
+## Related content
+
 - [Power BI reports](end-user-reports.md)
 - [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.yml)
 - More questions? Try the [Power BI Community](https://community.powerbi.com/).

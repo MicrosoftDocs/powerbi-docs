@@ -6,7 +6,7 @@ ms.author: monaberdugo
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/08/2022
+ms.date: 06/03/2024
 ---
 
 # Tutorial: Embed a Power BI report in an application for your customers
@@ -32,9 +32,9 @@ In this tutorial, you learn how to embed:
 
 * A Power BI workspace with a report
 
-* Your own [Azure Active Directory (Azure AD) tenant](create-an-azure-active-directory-tenant.md)
+* Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md)
 
-* An [Azure AD app](register-app.md)
+* An [Microsoft Entra app](register-app.md)
 
 * A .NET Core 5 model view controller (MVC) app
 
@@ -60,7 +60,7 @@ In this tutorial, you use:
 
 To embed Power BI content in an embed-for-your-customers solution, follow these steps:
 
-1. [Configure your Azure AD app and service principal](#step-1---configure-your-azure-ad-app-and-service-principal).
+1. [Configure your Microsoft Entra app and service principal](#step-1---configure-your-azure-ad-app-and-service-principal).
 
 2. [Get the embedding parameter values](#step-2---get-the-embedding-parameter-values).
 
@@ -72,11 +72,13 @@ To embed Power BI content in an embed-for-your-customers solution, follow these 
 
 6. [Run your application](#step-6---run-your-application).
 
-## Step 1 - Configure your Azure AD app and service principal
+<a name='step-1---configure-your-azure-ad-app-and-service-principal'></a>
 
-In this tutorial, you use a service principal to authenticate your web app against Azure AD. You also need an Azure AD app, which makes it possible to generate an [Azure AD token](embed-tokens.md#azure-ad-token). By using the Azure AD token, your web app can call Power BI REST APIs and embed Power BI items, such as reports, dashboards, and tiles.
+## Step 1 - Configure your Microsoft Entra app and service principal
 
-Follow the [service principal instructions](embed-service-principal.md) to create an Azure AD app and enable the app's service principal to work with your Power BI content.
+In this tutorial, you use a service principal to authenticate your web app against Microsoft Entra ID. You also need a Microsoft Entra app, which makes it possible to generate an [Microsoft Entra token](embed-tokens.md#azure-ad-token). By using the Microsoft Entra token, your web app can call Power BI REST APIs and embed Power BI items, such as reports, dashboards, and tiles.
+
+Follow the [service principal instructions](embed-service-principal.md) to create a Microsoft Entra app and enable the app's service principal to work with your Power BI content.
 
 ## Step 2 - Get the embedding parameter values
 
@@ -91,7 +93,7 @@ To embed your report, you need the following values:
 
 ### Domain and tenant ID
 
-If you don't know your domain or tenant ID, see [Find the Microsoft Azure AD tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
+If you don't know your domain or tenant ID, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names#find-the-microsoft-azure-ad-tenant-id-and-primary-domain-name).
 
 >[!NOTE]
 >To [embed content for a user on a different tenant (guest user)](embedded-troubleshoot.md#azure-ad-token-for-a-different-tenant-guest-user), you need to adjust the `authorityUri` parameter.
@@ -142,7 +144,7 @@ Turn on server-side authentication in your app by creating or modifying the file
 |---------------------|-----|
 |Startup.cs           |Initialize the `Microsoft.Identity.Web` authentication service |
 |appsettings.json     |Configure authentication details |
-|PowerBiServiceApi.cs |Get the Azure AD token and embedding metadata    |
+|PowerBiServiceApi.cs |Get the Microsoft Entra token and embedding metadata    |
 |HomeController.cs    |Pass embedding data as a model to the view |
 
 ### Configure your startup file to support `Microsoft.Identity.Web`
@@ -154,8 +156,8 @@ Add the following code to your app's *Startup.cs* file.
 >[!NOTE]
 >The code in `ConfigureServices` accomplishes several important things:
 >
->1. The call to `AddMicrosoftWebAppCallsWebApi` configures the Microsoft authentication library to acquire access tokens (Azure AD tokens).
->2. The call to `AddInMemoryTokenCaches` configures a token cache that the Microsoft authentication library uses to cache access tokens and refresh tokens behind the scenes.
+>1. The call to `AddMicrosoftWebAppCallsWebApi` configures the Microsoft Authentication Library to acquire access tokens (Microsoft Entra tokens).
+>2. The call to `AddInMemoryTokenCaches` configures a token cache that the Microsoft Authentication Library uses to cache access tokens and refresh tokens behind the scenes.
 >3. The call to `services.AddScoped(typeof(PowerBiServiceApi))` configures the `PowerBiServiceApi` class as a service class that can be added to other classes by using dependency injection.
 
 ```csharp
@@ -283,16 +285,18 @@ In this tutorial, the *appsettings.json* file contains sensitive information, su
 >[!NOTE]
 >In the preceding code, the `PowerBi:ServiceRootUrl` parameter is added as a custom configuration value to track the base URL to the Power BI service. When you program against the Power BI service in the Microsoft public cloud, the URL is `https://api.powerbi.com/`. However, the root URL for the Power BI service is different in other clouds, such as the government cloud. Therefore, the custom configuration value is stored as a project configuration value, so you can change it as needed.
 
-### Get the Azure AD access token and call the Power BI service
+<a name='get-the-azure-ad-access-token-and-call-the-power-bi-service'></a>
 
-In order to embed Power BI content like reports and dashboards, your app needs to get an [Azure AD token](embed-tokens.md#azure-ad-token). To get the token, you need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-a-new-report).
+### Get the Microsoft Entra access token and call the Power BI service
 
-The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can add a constructor parameter for that service. The .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor injects an instance of the .NET Core configuration service by using the `IConfiguration` parameter, which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from *appsettings.json*. The `ITokenAcquisition` parameter, which is named `tokenAcquisition`, holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library. The `ITokenAcquisition` parameter is used to acquire access tokens from Azure AD.
+In order to embed Power BI content like reports and dashboards, your app needs to get an [Microsoft Entra token](embed-tokens.md#azure-ad-token). To get the token, you need a [configuration object](/javascript/api/overview/powerbi/embed-report#embed-a-new-report).
 
-The `RequiredScopes` field holds a string array that contains a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. When your application calls across the network to acquire an Azure AD token, it passes this set of delegated permissions so that Azure AD can include them in the access token it returns.
+The code in this section uses the .NET Core dependency injection pattern. When your class needs to use a service, you can add a constructor parameter for that service. The .NET Core runtime takes care of passing the service instance at run time. In this case, the constructor injects an instance of the .NET Core configuration service by using the `IConfiguration` parameter, which is used to retrieve the `PowerBi:ServiceRootUrl` configuration value from *appsettings.json*. The `ITokenAcquisition` parameter, which is named `tokenAcquisition`, holds a reference to the Microsoft authentication service provided by the `Microsoft.Identity.Web` library. The `ITokenAcquisition` parameter is used to acquire access tokens from Microsoft Entra ID.
+
+The `RequiredScopes` field holds a string array that contains a set of [delegated permissions](/azure/active-directory/develop/v2-permissions-and-consent) supported by the Power BI service API. When your application calls across the network to acquire a Microsoft Entra token, it passes this set of delegated permissions so that Microsoft Entra ID can include them in the access token it returns.
 
 >[!NOTE]
->Verify that your *Azure AD app* is configured with the scopes required by your web app. For more information, see [Change your Azure AD app's permissions](./change-permissions.md).
+>Verify that your *Microsoft Entra app* is configured with the scopes required by your web app. For more information, see [Change your Microsoft Entra app's permissions](./change-permissions.md).
 
 1. In your app's project, create a new folder titled *Services*.
 
@@ -537,7 +541,7 @@ After you've followed all previous steps, you're ready to run your application. 
 
 When your app is ready, you can [move your embedded app to production](move-to-production.md).
 
-## Next steps
+## Related content
 
 > [!div class="nextstepaction"]
 >[Embedded analytics application tokens](embed-tokens.md)

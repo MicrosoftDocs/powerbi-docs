@@ -33,7 +33,7 @@ You might want to narrow the scope of the report to specific users or locations,
   
 ## Do you need to create calculations? 
   
-Sometimes, your data source and datasets don't contain the exact fields that you need for your report. You might have to create your own calculated fields. For example, you can multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
+Sometimes, your data source and datasets don't contain the exact fields that you need for your report. You might have to create your own calculated fields. For example, you can multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](expressions/report-builder-expressions.md).  
   
 ## Do you want to hide report items initially?
   
@@ -43,6 +43,6 @@ Consider whether you want to hide report items, including data regions, groups, 
   
 You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to upload the report to Power BI. Uploading it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and deliver the report by email to other individuals. You can have the report delivered in a specific export format, if you prefer. 
   
-## Next steps
+## Related content
 
 - [What are paginated reports in Power BI?](paginated-reports-report-builder-power-bi.md)

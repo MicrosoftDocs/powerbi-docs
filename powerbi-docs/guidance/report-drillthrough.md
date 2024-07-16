@@ -1,12 +1,13 @@
 ---
 title: Use report page drillthrough
 description: Guidance for working with report page drillthrough.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/28/2019
 ---
 
@@ -60,7 +61,7 @@ At report design time, we recommend the following practices:
 > [!TIP]
 > It's also possible to configure drillthrough to your Power BI paginated reports. You can do this be adding links to Power BI reports. Links can define [URL parameters](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

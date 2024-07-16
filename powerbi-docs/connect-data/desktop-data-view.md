@@ -44,7 +44,7 @@ You can filter individual values, or use advanced filtering based on the data in
 > [!NOTE]
 > When a Power BI model is created in a different culture than your current user interface, the search box doesn't appear in the Data view user interface for anything other than text fields. For example, this behavior would apply for a model created in US English that you view in Spanish.
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

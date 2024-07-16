@@ -34,8 +34,8 @@ You create and modify Power BI paginated reports in [Power BI Report Builder](..
   
 - Power BI Report Builder provides many calculated formulas for use with stock charts, including Price Indicator, Relative Strength Index, MACD, and more.  
 
-## Next steps
+## Related content
 
-[Range charts](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs)
-[Charts in Power BI paginated reports (Power BI Report Builder)](charts-report-builder.md)
-[Formatting a chart](/sql/reporting-services/report-design/formatting-a-chart-report-builder-and-ssrs)    
+- [Range charts](/sql/reporting-services/report-design/range-charts-report-builder-and-ssrs)
+- [Charts in Power BI paginated reports (Power BI Report Builder)](charts-report-builder.md)
+- [Formatting a chart](formatting-chart-report-builder.md)    

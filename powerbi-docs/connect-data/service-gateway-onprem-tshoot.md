@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 08/31/2022
+ms.date: 11/01/2023
 LocalizationGroup: Gateways 
 ---
 
@@ -26,7 +26,7 @@ At the end of configuration, the Power BI service is called again to validate th
 ## Data sources
 
 > [!NOTE]
-> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options may vary between Power BI Desktop, and **Manage gateways > Data source settings** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI. 
+> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options might vary between Power BI Desktop, and **Manage gateways > Data source settings** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI. 
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
@@ -118,7 +118,7 @@ This error can occur when the gateway attempts a test connection, even if the cr
 When your refresh is completing properly and you do not experience runtime errors, you can ignore these test connection errors for data sources that requires optional parameters. 
 
 
-## Datasets
+## Semantic models
 
 ### Error: There is not enough space for this row.
 
@@ -144,7 +144,7 @@ The exact limitation is 10 GB of uncompressed data per table. If you're hitting 
 
 A few different scenarios could be responsible for this error
 
-- Gateway process may have restarted when the dataset refresh was in progress.
+- Gateway process might have restarted when the dataset refresh was in progress.
 - The gateway machine is cloned where gateway is running. We should not clone gateway machine.
 
 ## Reports
@@ -169,7 +169,7 @@ To confirm the effective username, follow these steps.
    whoami /upn
    ```
 
-Optionally, you can see what Power BI gets from Azure Active Directory.
+Optionally, you can see what Power BI gets from Microsoft Entra ID.
 
 1. Browse to [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign in** in the upper-right corner.
@@ -181,7 +181,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
+If your Microsoft Entra UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
 
 ## Kerberos
 
@@ -288,7 +288,7 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
 
 When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following steps show how you can get to the refresh history.
 
-1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule refresh**.
+1. In the Power BI nav pane, in **Semantic models**, select a dataset. Open the menu, and select **Schedule refresh**.
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -300,13 +300,7 @@ When you use the gateway for a scheduled refresh, **Refresh history** can help y
 
 For more information about troubleshooting refresh scenarios, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
-## Fiddler trace
-
-[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the back and forth with the Power BI service from the client machine. This traffic list might show errors and other related information.
-
-![Using the Fiddler trace](media/service-gateway-onprem-tshoot/fiddler.png)
-
-## Next steps
+## Related content
 
 * [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  

@@ -1,12 +1,13 @@
 ---
 title: Avoid blank pages when printing paginated reports
 description: Guidance for designing paginated reports to avoid blank pages when printed.
-author: maggiemsft
-ms.author: maggies
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 01/14/2020
 ---
 
@@ -82,7 +83,7 @@ By default, it's enabled. It directs whether minimum whitespace in containers, s
 
 Lastly, if you're printing the report to paper, ensure the printer has the correct paper loaded. The physical paper size should correspond to the [report paper size](#page-setup).
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

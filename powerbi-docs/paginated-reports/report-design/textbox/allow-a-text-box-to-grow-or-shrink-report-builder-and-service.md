@@ -25,7 +25,8 @@ ms.reviewer: rpatkar
   
     -   To allow the text box to shrink based on its contents, select **Allow height to decrease**.  
   
-## Next steps
- [Text boxes in paginated reports](text-boxes-report-builder-and-service.md)  
+## Related content
+
+- [Text boxes in paginated reports](text-boxes-report-builder-and-service.md)  
   
   

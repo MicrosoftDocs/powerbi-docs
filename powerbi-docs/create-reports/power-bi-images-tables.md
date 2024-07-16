@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 09/14/2023
 LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
@@ -38,9 +38,9 @@ A good way to enhance your reports is to add images to them. Static images on th
 
     :::image type="content" source="media/power-bi-images-tables/image-size-height-width.png" alt-text="Screenshot showing setting image height and width.":::
 
-### Add images from OneDrive
+### Add images from a personal OneDrive storage
 
-Images in your report need to be anonymously accessible. However, for images that are hosted on OneDrive, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the image uses an embed code.
+Images in your report need to be anonymously accessible. However, for images that are hosted on a personal OneDrive storage, you may be able to get an embed code that points directly to them. The Power BI mobile apps don't support such images, however. For the Power BI mobile apps to be able to display an image, the image URL must be anonymously accessible, regardless of whether or not the image uses an embed code.
 
 1. On your OneDrive site, open an image and select **More options (...)** > **Embed**.
 
@@ -54,26 +54,14 @@ Images in your report need to be anonymously accessible. However, for images tha
 
     :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-embed-copy-url.png" alt-text="Screenshot of the generated embed image URL.":::
 
-### Add images from OneDrive for work or school
-
-Your organization may not allow displaying images stored on OneDrive for work or school. If they do allow it, follow these steps.
-
-1. In OneDrive for work or school, open an image and select **View original**.
-1. Copy the URL that generates.
-1. Select **Anyone with the link** to generate a sharing link that anyone can view, so that it has anonymous access set.
-
-    :::image type="content" source="media/power-bi-images-tables/power-bi-onedrive-business-anyone.png" alt-text="Screesnshot of the Link settings window, highlighting the Anyone with a link selection.":::
-
 ## Considerations
 
 - The image needs to be in one of these file formats: .bmp, .jpg, .jpeg, .gif, .png, or .svg
-- The URL must be anonymously accessible, not on a site that requires a sign-in, such as SharePoint. However, if images are hosted on SharePoint or OneDrive, you might be able to get an embed code that points directly to them.
-- The Power BI mobile apps display the image only if the image URL is anonymously accessible, even if you can see the image in Power BI Desktop or in the service.
+- The URL must be anonymously accessible, not on a site that requires a sign-in, such as SharePoint or OneDrive for work or school.
+- The Power BI mobile apps display the image only if the image URL is anonymously accessible. The image cannot be hosted on a site that requires a sign-in, such as SharePoint, even if you can see the image in Power BI Desktop or in the service.
 
-## Next steps
+## Related content
 
-[Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
-
-[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
-
-More questions? [Try the Power BI community](https://community.powerbi.com/)
+* [Page layout and formatting](/training/modules/visuals-in-power-bi/12-formatting)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* More questions? [Try the Power BI community](https://community.powerbi.com/)

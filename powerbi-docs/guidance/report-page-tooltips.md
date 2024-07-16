@@ -1,12 +1,13 @@
 ---
 title: Extend visuals with report page tooltips
 description: Guidance for working with report page tooltips.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 03/14/2023
 ---
 
@@ -75,7 +76,7 @@ At report design time, we recommend the following practices:
 - **Tooltip filters:** Assign filters to the page tooltip so that you can preview a realistic result as you design it. Be sure to remove these filters before you publish your report.
 - **Page visibility:** Always hide tooltip pages—users shouldn't navigate directly to them.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

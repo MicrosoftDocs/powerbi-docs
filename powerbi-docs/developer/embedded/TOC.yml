@@ -9,11 +9,14 @@
       href: embedded-analytics-power-bi.md
     - name: Power BI Embedded features
       href: ../../enterprise/service-premium-features.md?toc=/power-bi/developer/embedded/TOC.json&bc=/power-bi/developer/embedded/breadcrumb/toc.json
+    - name: Create a Power BI report in enhanced report format
+      href: projects-enhanced-report-format.md
     - name: "What is the Power BI Embedded analytics playground?"
-      href: "power-bi-playground.md"    
+      href: power-bi-playground.md
   - name: Power BI Embedded setup
+    expanded: true
     items: 
-    - name: "Create an Azure Active Directory tenant"
+    - name: "Create a Microsoft Entra tenant"
       href: create-an-azure-active-directory-tenant.md
     - name: "Power BI app registration tool"
       href: register-app.md
@@ -37,7 +40,7 @@
       href: embed-sample-for-customers.md
     - name: "Embed content for your organization"
       href: embed-sample-for-your-organization.md
-    - name: "Embed content for national clouds"
+    - name: "Embed content for national/regional clouds"
       href: embed-sample-for-customers-national-clouds.md
     - name: "Embed a report in an app for your customers"
       href: embed-customer-app.md     
@@ -103,15 +106,19 @@
       href: sql-server-analysis-services-embed.md
     - name: "Embed with Azure Analysis Services (AAS)"
       href: embed-azure-analysis-services.md
-    - name: "Single sign-on systems (SSO)"
+    - name: "Embed with Single sign-on (SSO)"
       href: rls-sso.md
     - name: "Embed with object-level security (OLS)"
       href: embed-object-level-security.md
+  - name: Partner solutions
+    items:
+    - name: "Embedded analytics solution accelerators"
+      href: embedded-analytics-accelerators.md
   - name: Support
     items:
     - name: "Troubleshoot your embedded application"
       href: embedded-troubleshoot.md
-    - name: Troubleshoot REST APIs
+    - name: Troubleshoot REST API errors
       href: troubleshoot-rest-api.md
     - name: "Embedding FAQ"
       href: embedded-faq.yml
@@ -125,7 +132,7 @@
         href: /rest/api/power-bi/
       - name: "Push datasets limitations"
         href: push-datasets-limitations.md
-      - name: "Datasets permissions"
+      - name: "Semantic models permissions"
         href: datasets-permissions.md            
     - name: "Power BI Developer in a Day course"
       href: ../../learning-catalog/developer-online-course.md

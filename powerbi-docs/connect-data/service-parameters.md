@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 11/10/2023
 LocalizationGroup: Create reports
 ---
 # Edit parameter settings in the Power BI service
@@ -24,11 +24,11 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
    ![Screenshot shows the Settings cog icon in the Power BI service.](media/service-parameters/power-bi-cog.png)
 
-1. Select the tab for **Datasets** and highlight a dataset in the list.
+1. Select the tab for **Semantic models** and highlight a semantic model in the list.
 
-    ![Screenshot shows the Settings window with Datasets tab selected.](media/service-parameters/power-bi-select-dataset-2.png)
+    ![Screenshot shows the Settings window with Semantic models tab selected.](media/service-parameters/power-bi-select-dataset-2.png)
 
-1. Expand **Parameters**.  If the selected dataset has no parameters, you see a message with a link to **Learn more** about query parameters. If the dataset does have parameters, expand the **Parameters** heading to reveal those parameters.
+1. Expand **Parameters**.  If the selected semantic model has no parameters, you see a message with a link to **Learn more** about query parameters. If the semantic model does have parameters, expand the **Parameters** heading to reveal those parameters.
 
     ![Screenshot shows the Settings window with Parameters expanded.](media/service-parameters/power-bi-settings.png)
 
@@ -38,6 +38,6 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
 Grayed-out fields aren't editable. *Any* and *Binary* type parameters work in Power BI Desktop. The Power BI service doesn't currently support them for security reasons.
 
-## Next steps
+## Related content
 
-An ad-hoc way to add simple parameters is by [modifying filters](../collaborate-share/service-url-filters.md).
+- An ad-hoc way to add simple parameters is by [modifying filters](../collaborate-share/service-url-filters.md).

@@ -38,8 +38,9 @@ Because you rotate the text box not the text, the rotation applies to all the te
   
 5.  In the list box, select **Horizontal**, **Vertical**, or **Rotate270**.  
   
-## Next steps
- [Text Boxes &#40;Power BI Report Builder&#41;](./text-boxes-report-builder-and-service.md)   
- [Tutorial: Format Text &#40;Report Builder&#41;](/sql/reporting-services/tutorial-format-text-report-builder)  
+## Related content
+
+* [Text Boxes &#40;Power BI Report Builder&#41;](./text-boxes-report-builder-and-service.md)   
+* [Tutorial: Format Text &#40;Report Builder&#41;](/sql/reporting-services/tutorial-format-text-report-builder)  
   
   

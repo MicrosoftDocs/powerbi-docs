@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 12/14/2022
+ms.date: 05/21/2024
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
@@ -32,6 +32,7 @@ The **Get Data** dialog box organizes data types in the following categories:
 * All
 * File
 * Database
+* Microsoft Fabric
 * Power Platform
 * Azure
 * Online Services
@@ -73,10 +74,11 @@ The **Database** category provides the following data connections:
 * Amazon Redshift
 * Impala
 * Google BigQuery
-* Google BigQuery (Azure AD)(Beta)
+* Google BigQuery (Microsoft Entra ID)(Beta)
 * Vertica
 * Snowflake
 * Essbase
+* AtScale Models
 * Actian (Beta)
 * Amazon Athena
 * AtScale cubes
@@ -84,7 +86,7 @@ The **Database** category provides the following data connections:
 * Data Virtuality LDW
 * Denodo
 * Dremio Software
-* Dremio Cloud (Beta)
+* Dremio Cloud
 * Exasol
 * Indexima
 * InterSystems IRIS (Beta)
@@ -93,18 +95,29 @@ The **Database** category provides the following data connections:
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MariaDB
 * MarkLogic
+* MongoDB Atlas SQL (Beta)
 * TIBCO® Data Virtualization
+* Exact Online Premium (Beta)
 
 
 > [!NOTE]
-> Some database connectors require that you enable them by selecting **File** > **Options and settings** > **Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as **Beta** or **Preview** has limited support and functionality, and shouldn't be used in production environments.
+> Some database connectors require that you enable them by selecting **File** > **Options and settings** > **Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned previously and want to use them, check your **Preview Features** settings. Also note that any data source marked as **Beta** or **Preview** has limited support and functionality, and shouldn't be used in production environments.
+
+### Microsoft Fabric
+
+The **Microsoft Fabric** category provides the following data connections:
+
+* Power BI semantic models
+* Dataflows
+* Datamarts (preview)
+* Warehouses
+* Lakehouses
+* KQL Database
 
 ### Power Platform data sources
 
 The **Power Platform** category provides the following data connections:
 
-* Power BI datasets
-* Datamarts (preview)
 * Power BI dataflows (Legacy)
 * Common Data Service (Legacy)
 * Dataverse
@@ -123,14 +136,16 @@ The **Azure** category provides the following data connections:
 * Azure Cosmos DB v1
 * Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
-* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Cost Management
-* Azure Databricks
+* Azure HDInsight on AKS Trino (Beta)
+* Azure Cosmos DB v2 (Beta)
 * Azure Synapse Analytics workspace (Beta)
 * Azure Time Series Insights (Beta)
+* Azure Resource Graph (Beta)
+* Azure Databricks
 
 ### Online Services data sources
 
@@ -155,7 +170,7 @@ The **Online Services** category provides the following data connections:
 * LinkedIn Sales Navigator (Beta)
 * Marketo (Beta)
 * Mixpanel (Beta)
-* Planview Enterprise One - PRM (Beta)
+* Planview Portfolios
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
@@ -166,9 +181,9 @@ The **Online Services** category provides the following data connections:
 * Assemble Views
 * Automation Anywhere
 * Automy Data Analytics (Beta)
+* CData Connect Cloud
 * Dynamics 365 Customer Insights (Beta)
-* Databricks (Beta)
-* Digital Construction Works Insights (Beta)
+* Digital Construction Works Insights
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
 * eWay-CRM
@@ -178,17 +193,23 @@ The **Online Services** category provides the following data connections:
 * Hexagon PPM Smart® API
 * Industrial App Store
 * Intune Data Warehouse (Beta)
-* Projectplace for Power BI
+* Planview ProjectPlace
 * Product Insights (Beta)
-* Profisee (Beta)
+* Profisee
 * Quickbase
 * SoftOne BI (Beta)
-* Spigit (Beta)
+* Planview IdeaPlace
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
-* Viva Insights
 * Zoho Creator
+* Autodesk Construction Cloud
+* Databricks
+* Planview OKR (Beta)
+* Viva Insights
+
+* Autodesk Construction Cloud
+
 
 ### Other data sources
 
@@ -208,17 +229,15 @@ The **Other** category provides the following data connections:
 * OLE DB
 * Acterys : Model Automation & Planning (Beta)
 * Amazon OpenSearch Service (Beta)
-* Anaplan Connector
-* Autodesk Construction Cloud (Beta)
+* Anaplan
 * Solver
-* BitSight Security Ratings
-* BQE Core
 * Bloomberg Data and Analytics
 * Cherwell (Beta)
+* CloudBluePSA (Beta)
 * Cognite Data Fusion
 * Delta Sharing
-* Eduframe (Beta)
-* EQuIS (Beta)
+* Emplifi Metrics (Beta)
+* EQuIS
 * FactSet RMS (Beta)
 * FHIR
 * Google Sheets
@@ -232,22 +251,34 @@ The **Other** category provides the following data connections:
 * Roamler (Beta)
 * SIS-CC SDMX (Beta)
 * Shortcuts Business Insights (Beta)
-* SingleStore Direct Query Connector 1.0 (Beta)
+* SingleStore Direct Query Connector
 * Siteimprove
 * Socialbakers Metrics 1.1.0 (Beta)
+* SolarWinds Service Desk
 * Starburst Enterprise
 * SumTotal
-* SurveyMonkey (Beta)
+* SurveyMonkey
 * Microsoft Teams Personal Analytics (Beta)
 * Tenforce (Smart)List
 * Usercube (Beta)
 * Vena
 * Vessel Insight
+* Wrike (Beta)
 * Zucchetti HR Infinity (Beta)
+* BitSight Security Ratings
+* BQE Core
+* Celonis EMS
+* Eduframe (Beta)
+* Wolters Kluwer CCH Tagetik (Beta)
+* LinkedIn Learning (Beta)
+* OneStream (Beta)
 * Blank Query
 
+
+
+
 > [!NOTE]
-> At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
+> At this time, it's not possible to connect to custom data sources secured using Microsoft Entra ID.
 
 ### Template apps
 
@@ -273,16 +304,16 @@ Available Template Apps may vary based on your organization.
 
 1. Select the tables and other data that you want to load. To load the data, select the **Load** button at the bottom of the **Navigator** pane. To transform or edit the query in Power Query Editor before loading the data, select the **Transform Data** button.
 
-That's all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often. We continue to add to this list all the time.
+Connecting to data sources in Power BI Desktop is that easy. Try connecting to data from our growing list of data sources, and check back often. We continue to add to this list all the time.
 
 <a name="using-pbids-files-to-get-data"></a>
 ## Use PBIDS files to get data
 
-PBIDS files are Power BI Desktop files that have a specific structure and a *.PBIDS* extension to identify them as Power BI data source files.
+PBIDS files are Power BI Desktop files that have a specific structure and a *PBIDS* extension to identify them as Power BI data source files.
 
 You can create a PBIDS file to streamline the **Get Data** experience for new or beginner report creators in your organization. If you create the PBIDS file from existing reports, it's easier for beginning report authors to build new reports from the same data.
 
-When an author opens a PBIDS file, Power BI Desktop prompts the user for credentials to authenticate and connect to the data source that the file specifies. The **Navigator** dialog box appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) and connection mode if none was specified in the PBIDS file.
+When an author opens a PBIDS file, Power BI Desktop prompts the user for credentials to authenticate and connect to the data source that the file specifies. The **Navigator** dialog box appears, and the user must select the tables from that data source to load into the model. Users might also need to select the database and connection mode if none was specified in the PBIDS file.
 
 From that point forward, the user can begin building visualizations or select **Recent Sources** to load a new set of tables into the model.
 
@@ -291,7 +322,7 @@ Currently, PBIDS files only support a single data source in one file. Specifying
 
 ### How to create a PBIDS connection file
 
-If you have an existing Power BI Desktop PBIX file that's already connected to the data you’re interested in, you can export these connection files from within Power BI Desktop. This method is recommended, since the PBIDS file can be auto-generated from Desktop. You can also still edit or manually create the file in a text editor. 
+If you have an existing Power BI Desktop PBIX file already connected to the data you’re interested in, you can export the connection files from within Power BI Desktop. This method is recommended, since the PBIDS file can be autogenerated from Desktop. You can also still edit or manually create the file in a text editor. 
 
 1. To create the PBIDS file, select **File** > **Options and settings** > **Data source settings**.
 
@@ -307,7 +338,7 @@ You can also open the file in a text editor, and modify the file further, includ
 
 ![Screenshot that shows a PBIDS file open in a text editor.](media/desktop-data-sources/data-sources-11.png)
 
-If you prefer to manually create your PBIDS files in a text editor, you must specify the required inputs for a single connection and save the file with the *.PBIDS* extension. Optionally, you can also specify the connection `mode` as either `DirectQuery` or `Import`. If `mode` is missing or `null` in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
+If you prefer to manually create your PBIDS files in a text editor, you must specify the required inputs for a single connection and save the file with the *PBIDS* extension. Optionally, you can also specify the connection `mode` as either `DirectQuery` or `Import`. If `mode` is missing or `null` in the file, the user who opens the file in Power BI Desktop is prompted to select **DirectQuery** or **Import**.
 
 > [!IMPORTANT]
 > Some data sources will generate an error if columns are encrypted in the data source. For example, if two or more columns in an Azure SQL Database are encrypted during an Import action, an error will be returned. For more information, see [SQL Database](/power-query/connectors/azuresqldatabase).
@@ -513,7 +544,7 @@ The URL must point to the SharePoint site itself, not to a list within the site.
 }
 ```
 
-## Next steps
+## Related content
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 

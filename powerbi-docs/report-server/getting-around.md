@@ -59,7 +59,8 @@ Power BI Report Server offers detailed control of the items you store on the web
 
 Read more about [working with subscriptions in the web portal](/sql/reporting-services/working-with-subscriptions-web-portal).
 
-## Next steps
-[What is Power BI Report Server?](get-started.md)
+## Related content
+
+* [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

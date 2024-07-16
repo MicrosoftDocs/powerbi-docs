@@ -101,6 +101,46 @@
     items:
     - name: "Develop scalable multitenancy applications"
       href: develop-scalable-multitenancy-apps-with-powerbi-embedding.md 
+  - name: Build multiple-language reports
+    items:
+    - name: Plan translation for reports
+      href: multiple-language-translation.md
+    - name: Use locale values in reports
+      href: multiple-language-locale.md
+    - name: Use best practices to localize reports
+      href: multiple-language-best-practice.md
+    - name: Create reports with Translations Builder
+      href: translation-builder.md
+    - name: Add a language to a report
+      href: translation-builder-add-language.md
+    - name: Add a Localized Labels table
+      href: translation-builder-localize-label.md
+    - name: Generate machine translations
+      href: translation-builder-machine-translation.md
+    - name: Multiple-language page navigation
+      href: multiple-language-page-navigation.md
+    - name: Enable workflows for human translation
+      href: translation-workflow-human.md
+    - name: Export translation sheets
+      href: translation-sheet-export.md
+    - name: Import translation sheets
+      href: translation-sheet-import.md
+    - name: Manage enterprise-level translations
+      href: translation-manage-data-model-enterprise.md
+    - name: Implement data translation
+      href: data-translation.md
+    - name: Support data translations
+      href: data-translation-extend-schema.md
+    - name: Data translation with field parameters
+      href: data-translation-implement-field.md
+    - name: Add the languages table
+      href: data-translation-add-language-table.md
+    - name: Synchronize field parameters
+      href: data-translation-synchronize-field.md
+    - name: Data translation calendar table
+      href: data-translation-calendar-table.md
+    - name: Load multiple-language reports
+      href: data-translation-load-report-bookmark.md
   - name: Admin and deployment
     items:
     - name: "On-premises data gateway sizing"
@@ -110,7 +150,7 @@
     - name: "Troubleshoot report performance"
       href: report-performance-troubleshoot.md
     - name: "Deployment pipelines best practices"
-      href: ../create-reports/deployment-pipelines-best-practices.md
+      href: /fabric/cicd/best-practices-cicd
     - name: "Access the Power BI activity log"
       href: admin-activity-log.md
   - name: Migrate to Power BI
@@ -131,74 +171,60 @@
         href: powerbi-migration-deploy-support-monitor.md
       - name: "Learn from customer Power BI migrations"
         href: powerbi-migration-learn-from-customers.md
-  - name: Adoption roadmap
+  - name: Fabric adoption roadmap
     items: 
-      - name: "Overview"
-        href: powerbi-adoption-roadmap-overview.md
+      - name: "Introduction"
+        href: fabric-adoption-roadmap.md
       - name: "Maturity levels"
-        href: powerbi-adoption-roadmap-maturity-levels.md
+        href: fabric-adoption-roadmap-maturity-levels.md
       - name: "Data culture"
-        href: powerbi-adoption-roadmap-data-culture.md
+        href: fabric-adoption-roadmap-data-culture.md
       - name: "Executive sponsorship"
-        href: powerbi-adoption-roadmap-executive-sponsorship.md
+        href: fabric-adoption-roadmap-executive-sponsorship.md
+      - name: "Business alignment"
+        href: fabric-adoption-roadmap-business-alignment.md
       - name: "Content ownership"
-        href: powerbi-adoption-roadmap-content-ownership-and-management.md
+        href: fabric-adoption-roadmap-content-ownership-and-management.md
       - name: "Content delivery scope"
-        href: powerbi-adoption-roadmap-content-delivery-scope.md
+        href: fabric-adoption-roadmap-content-delivery-scope.md
       - name: "Center of Excellence"
-        href: powerbi-adoption-roadmap-center-of-excellence.md
+        href: fabric-adoption-roadmap-center-of-excellence.md
       - name: "Governance"
-        href: powerbi-adoption-roadmap-governance.md
+        href: fabric-adoption-roadmap-governance.md
       - name: "Mentoring and user enablement"
-        href: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+        href: fabric-adoption-roadmap-mentoring-and-user-enablement.md
       - name: "Community of practice"
-        href: powerbi-adoption-roadmap-community-of-practice.md
+        href: fabric-adoption-roadmap-community-of-practice.md
       - name: "User support"
-        href: powerbi-adoption-roadmap-user-support.md
+        href: fabric-adoption-roadmap-user-support.md
       - name: "System oversight"
-        href: powerbi-adoption-roadmap-system-oversight.md
+        href: fabric-adoption-roadmap-system-oversight.md
+      - name: "Change management"
+        href: fabric-adoption-roadmap-change-management.md
       - name: "Conclusion"
-        href: powerbi-adoption-roadmap-conclusion.md
+        href: fabric-adoption-roadmap-conclusion.md
   - name: Implementation planning
     items: 
       - name: "Introduction"
         href: powerbi-implementation-planning-introduction.md
-      - name: Usage scenarios
+      - name: "BI strategy"
         items:
-        - name: "Usage scenarios overview"
-          href: powerbi-implementation-planning-usage-scenario-overview.md
-        - name: "Personal BI"
-          href: powerbi-implementation-planning-usage-scenario-personal-bi.md
-        - name: "Team BI"
-          href: powerbi-implementation-planning-usage-scenario-team-bi.md
-        - name: "Departmental BI"
-          href: powerbi-implementation-planning-usage-scenario-departmental-bi.md
-        - name: "Enterprise BI"
-          href: powerbi-implementation-planning-usage-scenario-enterprise-bi.md
-        - name: "Managed self-service BI"
-          href: powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md
-        - name: "Customizable managed self-service BI"
-          href: powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md
-        - name: "Self-service data preparation"
-          href: powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md
-        - name: "Advanced data preparation"
-          href: powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md
-        - name: "Prototyping and sharing"
-          href: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
-        - name: "Self-service content publishing"
-          href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
-        - name: "Advanced data model management"
-          href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
-        - name: "Self-service real-time analytics"
-          href: powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md
-        - name: "Embed for your organization"
-          href: powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md
-        - name: "Embed for your customers"
-          href: powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md
-        - name: "On-premises reporting"
-          href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+        - name: "BI strategy overview"
+          href: powerbi-implementation-planning-bi-strategy-overview.md
+        - name: "BI strategic planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-strategic-planning.md
+        - name: "BI tactical planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-tactical-planning.md
+        - name: "BI solution planning"
+          href: powerbi-implementation-planning-bi-strategy-bi-solution-planning.md
       - name: "Tenant setup"
         href: powerbi-implementation-planning-tenant-setup.md
+      - name: "User tools and devices"
+        href: powerbi-implementation-planning-user-tools-devices.md
+      - name: "Subscriptions, licenses, and trials"
+        href: powerbi-implementation-planning-subscriptions-licenses-trials.md
+      - name: "Tenant administration"
+        href: powerbi-implementation-planning-tenant-administration.md
       - name: Workspaces
         items:
         - name: "Workspaces overview"
@@ -207,6 +233,24 @@
           href: powerbi-implementation-planning-workspaces-tenant-level-planning.md
         - name: "Workspace-level planning"
           href: powerbi-implementation-planning-workspaces-workspace-level-planning.md
+      - name: Content lifecycle management (CLM)
+        items:
+        - name: "CLM overview"
+          href: powerbi-implementation-planning-content-lifecycle-management-overview.md
+        - name: "Plan and design content"
+          href: powerbi-implementation-planning-content-lifecycle-management-plan-design.md
+        - name: "Develop and manage content"
+          href: powerbi-implementation-planning-content-lifecycle-management-develop-manage.md
+        - name: "Validate content"
+          href: powerbi-implementation-planning-content-lifecycle-management-validate.md
+        - name: "Deploy content"
+          href: powerbi-implementation-planning-content-lifecycle-management-deploy.md
+        - name: "Support and monitor content"
+          href: powerbi-implementation-planning-content-lifecycle-management-support-monitor.md
+        - name: "Retire and archive content"
+          href: powerbi-implementation-planning-content-lifecycle-management-retire-archive.md
+      - name: "Content distribution and sharing"
+        href: powerbi-implementation-planning-content-distribution-sharing.md
       - name: Security
         items:
         - name: "Security overview"
@@ -231,6 +275,60 @@
           href: powerbi-implementation-planning-defender-for-cloud-apps.md
         - name: "Auditing of info protection and DLP for Power BI"
           href: powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md
+      - name: "Data gateways"
+        href: powerbi-implementation-planning-data-gateways.md
+      - name: "Auditing and monitoring"
+        items:
+        - name: "Auditing and monitoring overview"
+          href: powerbi-implementation-planning-auditing-monitoring-overview.md
+        - name: "Report-level auditing"
+          href: powerbi-implementation-planning-auditing-monitoring-report-level-auditing.md
+        - name: "Data-level auditing"
+          href: powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md
+        - name: "Tenant-level auditing"
+          href: powerbi-implementation-planning-auditing-monitoring-tenant-level-auditing.md
+        - name: "Tenant-level monitoring"
+          href: powerbi-implementation-planning-auditing-monitoring-tenant-level-monitoring.md
+      - name: "Adoption tracking"
+        href: powerbi-implementation-planning-adoption-tracking.md
+      - name: Usage scenarios
+        items:
+        - name: "Usage scenarios overview"
+          href: powerbi-implementation-planning-usage-scenario-overview.md
+        - name: "Personal BI"
+          href: powerbi-implementation-planning-usage-scenario-personal-bi.md
+        - name: "Team BI"
+          href: powerbi-implementation-planning-usage-scenario-team-bi.md
+        - name: "Departmental BI"
+          href: powerbi-implementation-planning-usage-scenario-departmental-bi.md
+        - name: "Enterprise BI"
+          href: powerbi-implementation-planning-usage-scenario-enterprise-bi.md
+        - name: "Managed self-service BI"
+          href: powerbi-implementation-planning-usage-scenario-managed-self-service-bi.md
+        - name: "Customizable managed self-service BI"
+          href: powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md
+        - name: "Self-service data preparation"
+          href: powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md
+        - name: "Advanced data preparation"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-preparation.md
+        - name: "Prototyping and sharing"
+          href: powerbi-implementation-planning-usage-scenario-prototyping-and-sharing.md
+        - name: "Self-service content publishing"
+          href: powerbi-implementation-planning-usage-scenario-self-service-content-publishing.md
+        - name: "Enterprise content publishing"
+          href: powerbi-implementation-planning-usage-scenario-enterprise-content-publishing.md
+        - name: "Advanced data model management"
+          href: powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md
+        - name: "Self-service real-time analytics"
+          href: powerbi-implementation-planning-usage-scenario-self-service-real-time-analytics.md
+        - name: "Embed for your organization"
+          href: powerbi-implementation-planning-usage-scenario-embed-for-your-organization.md
+        - name: "Embed for your customers"
+          href: powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md
+        - name: "On-premises reporting"
+          href: powerbi-implementation-planning-usage-scenario-on-premises-reporting.md
+        - name: "Usage scenario diagrams"
+          href: powerbi-implementation-planning-usage-scenario-diagrams.md
   - name: Microsoft's Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
@@ -239,15 +337,13 @@
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
         href: center-of-excellence-business-intelligence-solution-architecture.md
-  - name: Whitepapers
+  - name: White papers
     items: 
-    - name: "Whitepapers overview"
+    - name: "White papers overview"
       href: whitepapers.md
-    - name: "Power BI security whitepaper"
-      href: whitepaper-powerbi-security.md
-    - name: "Power BI enterprise deployment whitepaper"
-      href: whitepaper-powerbi-enterprise-deployment.md      
+    - name: "Power BI security white paper"
+      href: whitepaper-powerbi-security.md  
     - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md
-    - name: "Distribute Power BI externally using Azure Active Directory B2B"
+    - name: "Distribute Power BI externally using Microsoft Entra B2B"
       href: whitepaper-azure-b2b-power-bi.md

@@ -14,11 +14,27 @@
       href: desktop-tutorial-create-measures.md
     - name: "Create calculated columns"
       href: desktop-tutorial-create-calculated-columns.md
+    - name: "Create calculation groups"
+      href: calculation-groups.md      
   - name: Concepts
     expanded: true
     items:
+    - name: "Edit data models in the Power BI service (preview)"
+      href: service-edit-data-models.md  
+    - name: "Using calculations options in Power BI Desktop"
+      href: desktop-calculations-options.md  
     - name: "Work with Modeling view"
       href: desktop-modeling-view.md  
+    - name: "Work with DAX query view"
+      href: dax-query-view.md
+    - name: "Copilot DAX query features"
+      href: dax-query-copilot-features.md
+    - name: "Use Copilot to write and explain DAX queries"
+      href: dax-query-copilot-create.md
+    - name: Use Copilot to create measure descriptions
+      href: desktop-measure-copilot-descriptions.md
+    - name: "Work with Model explorer (preview)"
+      href: model-explorer.md        
     - name: "Understand model relationships"
       href: desktop-relationships-understand.md
     - name: "Many-to-many relationships"
@@ -43,8 +59,10 @@
       href: datamarts/datamarts-get-started.md   
     - name: "Analyzing datamarts (preview)"
       href: datamarts/datamarts-analyze.md         
-    - name: "Sharing and discovery with datamarts (preview)"
-      href: datamarts/datamarts-sharing-discovery.md           
+    - name: "Discover data with datamarts (preview)"
+      href: datamarts/datamarts-discovery.md          
+    - name: "Share datamarts and manage permissions (preview)"
+      href: datamarts/datamarts-sharing-manage-permissions.md         
     - name: "Create reports with datamarts (preview)"
       href: datamarts/datamarts-create-reports.md         
     - name: "Access control in datamarts (preview)"
@@ -81,16 +99,12 @@
       href: dataflows/dataflows-develop-solutions.md      
   - name: Log analytics
     items: 
-    - name: "Using Azure Log Analytics in Power BI (preview)"
+    - name: "Using Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-overview.md
-    - name: "Configuring Azure Log Analytics in Power BI (preview)"
+    - name: "Configuring Azure Log Analytics in Power BI"
       href: log-analytics/desktop-log-analytics-configure.md
-    - name: "Azure Log Analytics in Power BI - FAQ (preview)"
+    - name: "Azure Log Analytics in Power BI - FAQ"
       href: log-analytics/desktop-log-analytics-faq.md
-    - name: "Installing the Log Analytics Template App (preview)"
-      href: log-analytics/install-as-engine-app.md   
-    - name: "Using the Log Analytics Template App (preview)"
-      href: log-analytics/desktop-loganalytics-reportguide-datasets.md
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -117,6 +131,8 @@
       items: 
       - name: "Create quick measures for common calculations"
         href: desktop-quick-measures.md
+      - name: "Use Copilot to create measure descriptions"
+        href: desktop-measure-copilot-descriptions.md
       - name: "Create and use what-if parameters to visualize variables"
         href: desktop-what-if.md
       - name: "Specify data categories in Power BI Desktop"
@@ -129,6 +145,8 @@
         href: desktop-calculated-columns.md
       - name: "Create calculated tables"
         href: desktop-calculated-tables.md
+      - name: "Using visual calculations (preview)"
+        href: desktop-visual-calculations-overview.md
       - name: "Create measures for data analysis"
         href: desktop-measures.md
       - name: "Import and display KPIs"

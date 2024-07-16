@@ -108,7 +108,7 @@ For more information on this setting, see [Maximum number of connections option 
 
 You can set the *maximum* number of concurrent jobs executed by the Power BI engine. This setting allows you to optimize Power BI performance after the Data Transformation step has been completed.
 
-The value for this setting, up to the maximum, is automatically determined by the Power BI engine. Changing the maximum can affect dataset refresh performance by increasing or decreasing the parallel loading of tables.
+The value for this setting, up to the maximum, is automatically determined by the Power BI engine. Changing the maximum can affect semantic model refresh performance by increasing or decreasing the parallel loading of tables.
 
 > [!NOTE]
 > This setting is impacted by the [maximum number of simultaneous evaluations settings](#maximum-number-of-simultaneous-evaluations). [Learn more about the interaction between these settings](#interaction-between-maximum-number-of-simultaneous-evaluations-and-maximum-number-of-concurrent-jobs). 
@@ -119,7 +119,7 @@ You can change this setting in the user interface in Power BI Desktop. On the **
 
 - Default. With this setting the maximum number of concurrent jobs is 6.
 - One. This limits the maximum number of concurrent jobs to 1 and effectively disables parallel loading of tables.
-- Custom. You can enter any positive number between 1-30. However, for Pro datasets any number greater than 6 is not applied. Specifying a number less than the 6, the same as default, can constrain parallelization.
+- Custom. You can enter any positive number between 1-30. However, for Pro semantic models any number greater than 6 is not applied. Specifying a number less than the 6, the same as default, can constrain parallelization.
 
 :::image type="content" source="media/desktop-evaluation-configuration/desktop-evaluation-configuration-settings-concurrent-jobs.png" alt-text="Screenshot that shows the changing maximum number of concurrent jobs data loading parallelization settings in Power BI Desktop.":::
 

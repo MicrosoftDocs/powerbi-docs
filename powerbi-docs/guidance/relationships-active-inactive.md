@@ -1,13 +1,14 @@
 ---
 title: "Active vs inactive relationship guidance"
 description: Guidance for using active or inactive model relationships.
-author: davidiseminger
-ms.author: davidi
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.custom: fabric-cat
+ms.date: 05/04/2023
 ---
 
 # Active vs inactive relationship guidance
@@ -28,7 +29,7 @@ Here's a partial model diagram of the two tables.
 
 There are two model relationships between the **Flight** and **Airport** tables. In the **Flight** table, the **DepartureAirport** and **ArrivalAirport** columns relate to the **Airport** column of the **Airport** table. In star schema design, the **Airport** table is described as a [role-playing dimension](star-schema.md#role-playing-dimensions). In this model, the two roles are _departure airport_ and _arrival airport_.
 
-While this design works well for relational star schema designs, it doesn't for Power BI models. It's because model relationships are paths for filter propagation, and these paths must be deterministic. For this reason, a model cannot have multiple active relationships between two tables. Therefore—as described in this example—one relationship is active while the other is inactive (represented by the dashed line). Specifically, it's the relationship to the **ArrivalAirport** column that's active. This means filters applied to the **Airport** table automatically propagate to the **ArrivalAirport** column of the **Flight** table.
+While this design works well for relational star schema designs, it doesn't for Power BI models. It's because model relationships are paths for filter propagation, and these paths must be deterministic. For more information on ensuring that filter propagation paths are deterministic see [resolve relationship path ambiguity](../transform-model/desktop-relationships-understand.md#resolve-relationship-path-ambiguity).Therefore—as described in this example—one relationship is active while the other is inactive (represented by the dashed line). Specifically, it's the relationship to the **ArrivalAirport** column that's active. This means filters applied to the **Airport** table automatically propagate to the **ArrivalAirport** column of the **Flight** table.
 
 This model design imposes severe limitations on how the data can be reported. Specifically, it's not possible to filter the **Airport** table to automatically isolate flight details for a departure airport. As reporting requirements involve filtering (or grouping) by departure and arrival airports _at the same time_, two active relationships are needed. Translating this requirement into a Power BI model design means the model must have two airport tables.
 
@@ -111,16 +112,19 @@ The report page filters by quarter 2019 Q4. The table visual groups by month and
 
 Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#regular-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
 
+> [!NOTE]
+> Row-level security filters only propagate through active relationships. Row-level security filters will not propagate for inactive relationships even if UseRelationship is added explicitly to a measure definition.
+
 ## Recommendations
 
-In summary, we recommend defining active relationships whenever possible. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A. It means that role-playing dimension-type tables should be duplicated in your model.
+In summary, we recommend defining active relationships whenever possible, especially when row-level security roles are defined for your data model. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A. It means that role-playing dimension-type tables should be duplicated in your model.
 
 In specific circumstances, however, you can define one or more inactive relationships for a role-playing dimension-type table. You can consider  this design when:
 
 - There's no requirement for report visuals to simultaneously filter by different roles
 - You use the USERELATIONSHIP DAX function to activate a specific relationship for relevant model calculations
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

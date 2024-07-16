@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 03/06/2024
 ms.custom: sample-get-started-desktop-best-worst-states, sample-sales-&-returns
 LocalizationGroup: Create reports
 ---
@@ -118,6 +118,9 @@ To set up a single-page navigation button:
 
 1. Optionally, you can conditionally format the **Tooltip** under **Action** as you can do with other button types.
 
+    > [!NOTE]
+    > If the text content of the tooltip matches the button text content, the tooltips are hidden to enhance the readability for accessibility tools.
+
 1. If you want a custom navigation pane, [create page and bookmark navigators](button-navigators.md) instead of individual buttons.
 
 ## Shapes and images for navigation
@@ -136,7 +139,7 @@ Under **Style**, set **Fill** to **On**, and then **Browse** for an image for ea
 
 :::image type="content" source="media/desktop-buttons/button-set-fill.png" alt-text="Screenshot showing Fill image settings.":::
 
-## Next steps
+## Related content
 
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 

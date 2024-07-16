@@ -13,7 +13,7 @@ metadata:
   ms.subservice: powerbi-resource
   ms.topic: landing-page # Required
   ms.collection: collection
-  ms.date: 09/22/2022
+  ms.date: 06/12/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -37,13 +37,13 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: The importance of query folding
+          - text: Query folding guidance
             url: power-query-folding.md
           - text: Disable Power Query background refresh
             url: power-query-background-refresh.md
           - text: Referencing Power Query queries
             url: power-query-referenced-queries.md
-          - text: Dataflows best practices
+          - text: Introduction to dataflows
             url: ../transform-model/dataflows/dataflows-introduction-self-service.md
  
   # Card (optional)
@@ -51,7 +51,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: What is a star schema?
+          - text: Understand star schema
             url: star-schema.md
           - text: Data reduction techniques
             url: import-modeling-data-reduction.md
@@ -101,7 +101,7 @@ landingContent:
         links:
           - text: Separate reports from models
             url: report-separate-from-model.md
-          - text: Use report page tooltips
+          - text: Extend visuals with report page tooltips
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
@@ -121,7 +121,7 @@ landingContent:
             url: paginated-report-cascading-parameter.md
           - text: Avoid blank pages when printing
             url: report-paginated-blank-page.md
-          - text: Migrate SSRS reports to Power BI
+          - text: Plan to migrate .rdl reports to Power BI
             url: migrate-ssrs-reports-to-power-bi.md
 
   # Card (optional)
@@ -135,8 +135,8 @@ landingContent:
             url: monitor-report-performance.md 
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
-          - text: Deployment pipelines best practices
-            url: ../create-reports/deployment-pipelines-best-practices.md
+          - text: Lifecycle management best practices
+            url: /fabric/cicd/best-practices-cicd
           - text: Access the Power BI activity log
             url: admin-activity-log.md
 
@@ -145,9 +145,9 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Migration overview
+          - text: Power BI migration overview
             url: powerbi-migration-overview.md
-          - text: Prepare to migrate
+          - text: Prepare to migrate to Power BI
             url: powerbi-migration-pre-migration-steps.md
           - text: Gather requirements
             url: powerbi-migration-requirements.md
@@ -165,30 +165,30 @@ landingContent:
             url: migrate-azure-analysis-services-to-powerbi-premium.md
 
   # Card (optional)
-  - title: Adoption roadmap
+  - title: Fabric adoption roadmap
     linkLists:
       - linkListType: concept
         links:
-          - text: Overview
-            url: powerbi-adoption-roadmap-overview.md
+          - text: Introduction
+            url: fabric-adoption-roadmap.md
           - text: Data culture
-            url: powerbi-adoption-roadmap-data-culture.md
+            url: fabric-adoption-roadmap-data-culture.md
           - text: Executive sponsorship
-            url: powerbi-adoption-roadmap-executive-sponsorship.md
+            url: fabric-adoption-roadmap-executive-sponsorship.md
           - text: Content ownership
-            url: powerbi-adoption-roadmap-content-ownership-and-management.md
+            url: fabric-adoption-roadmap-content-ownership-and-management.md
           - text: Content delivery scope
-            url: powerbi-adoption-roadmap-content-delivery-scope.md
+            url: fabric-adoption-roadmap-content-delivery-scope.md
           - text: Center of Excellence
-            url: powerbi-adoption-roadmap-center-of-excellence.md
+            url: fabric-adoption-roadmap-center-of-excellence.md
           - text: Governance
-            url: powerbi-adoption-roadmap-governance.md
+            url: fabric-adoption-roadmap-governance.md
           - text: Mentoring and user enablement
-            url: powerbi-adoption-roadmap-mentoring-and-user-enablement.md
+            url: fabric-adoption-roadmap-mentoring-and-user-enablement.md
           - text: Community of practice
-            url: powerbi-adoption-roadmap-community-of-practice.md
+            url: fabric-adoption-roadmap-community-of-practice.md
           - text: User support
-            url: powerbi-adoption-roadmap-user-support.md
+            url: fabric-adoption-roadmap-user-support.md
 
   # Card (optional)
   - title: Implementation planning
@@ -197,16 +197,24 @@ landingContent:
         links:
           - text: Introduction
             url: powerbi-implementation-planning-introduction.md
-          - text: Usage scenarios
-            url: powerbi-implementation-planning-usage-scenario-overview.md
+          - text: BI strategy
+            url: powerbi-implementation-planning-bi-strategy-overview.md
           - text: Tenant setup
             url: powerbi-implementation-planning-tenant-setup.md
+          - text: User tools and devices
+            url: powerbi-implementation-planning-user-tools-devices.md
           - text: Workspaces
             url: powerbi-implementation-planning-workspaces-overview.md
+          - text: Content lifecycle management
+            url: powerbi-implementation-planning-content-lifecycle-management-overview.md
           - text: Security
             url: powerbi-implementation-planning-security-overview.md
           - text: Info protection and DLP
             url: powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md
+          - text: Auditing and monitoring
+            url: powerbi-implementation-planning-auditing-monitoring-overview.md
+          - text: Usage scenarios
+            url: powerbi-implementation-planning-usage-scenario-overview.md
 
   # Card (optional)
   - title: Center of Excellence (COE)
@@ -219,3 +227,5 @@ landingContent:
             url: center-of-excellence-establish.md
           - text: BI solution architecture in the COE
             url: center-of-excellence-business-intelligence-solution-architecture.md
+          - text: Fabric adoption roadmap
+            url: fabric-adoption-roadmap-center-of-excellence.md

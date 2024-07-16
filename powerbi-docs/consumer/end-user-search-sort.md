@@ -3,12 +3,12 @@ title: Search and find your content using global search
 description: Learn how to use the search and filter tools in Power BI service to quickly find the content you want.
 author: mihart
 ms.author: mihart
-ms.reviewer: willt
+ms.reviewer: 
 ms.custom: 
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 12/22/2023
 LocalizationGroup: Get started
 ---
 
@@ -16,23 +16,26 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-When you're new to the Power BI service, you'll have only a few pieces of content (dashboards, reports, apps). But as colleagues begin sharing content with you and you begin downloading apps, you can end up with long lists of content. That's when you'll find searching and sorting extremely helpful.
+When you're new to the Power BI service, you have only a few pieces of content (dashboards, reports, apps). But as colleagues begin sharing content with you and you begin downloading apps, you can end up with long lists of content. That's when you find searching and sorting helpful.
 
 ## Search for content
 
-Search is available from almost every part of the Power BI service. Just look for the search box or search icon :::image type="icon" source="./media/end-user-search-sort/power-bi-search-icon.png" border="false":::.
+Search is available from almost every part of the Power BI service. Just look for the search box or search icon. :::image type="icon" source="./media/end-user-search-sort/power-bi-search-icon.png" border="false":::
 
 In the **Search** field, type all or part of the name of a dashboard, report, workbook, workspace, app, or owner. Power BI searches all of your content.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-search-field-new.png" alt-text="Screenshot of a search field with the term Sales in it.":::
 
-In some Power BI areas, such as workspaces, you'll find two different **Search** fields. The **Search** field in the menu bar searches all of your content while the **Search** field on the workspace canvas searches only that workspace.
+In some Power BI areas, such as workspaces, you find two different **Search** fields. The **Search** field in the menu bar searches all of your content while the **Search** field on the workspace canvas searches only that workspace.
 
-:::image type="content" source="./media/end-user-search-sort/power-bi-search-fields-new.png" alt-text="Screenshot of a workspace with two different search fields.":::
+:::image type="content" source="./media/end-user-search-sort/power-bi-workspace-search.png" alt-text="Screenshot of a workspace with two different search fields.":::
+
+> [!NOTE]
+> Search is disabled for [B2B guest users](../collaborate-share/service-roles-new-workspaces.md). If a guest user enters a search term, no results are shown. 
 
 ## Sort content lists
 
-If you have only a few pieces of content, sorting won't be necessary. But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has many items.
+If you have only a few pieces of content, sorting isn't necessary. But when you have long lists of dashboards and reports, sorting helps you find what you need. For example, this **Shared with me** content list has many items.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-shared-with-me-search.png" alt-text="Screenshot of a Shared with me content list with multiple items.":::
 
@@ -48,11 +51,16 @@ Not all columns can be sorted. Hover over the column headings to discover which 
 
 ## Filter content lists
 
-Another way to locate content quickly is to use the content list **Filter**. Display the filters by selecting **Filter** from the upper right corner. The filters available will depend on your location in the Power BI service. The example below is from a **Recent** content list. It allows you to filter the list by content **Type**, **Time**, or **Owner**.
+Another way to locate content quickly is to use the content list **Filter**. Display the filters by selecting **Filter** from the upper right corner. The filters available depend on your location in the Power BI service. This example is from a **Recent** content list. It allows you to filter the list by content **Type**, **Time**, or **Owner**.
 
 :::image type="content" source="./media/end-user-search-sort/power-bi-sort-filters-new.png" alt-text="Screenshot of the filter on a Recent content list.":::
 
-## Next steps
+## Limitations
+* Search isn't enabled for B2B users
+* Search currently supports only English characters
+* Global search is currently supported only in Public cloud
+
+## Related content
 
 - [Change how a chart is sorted in a Power BI report](end-user-change-sort.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)

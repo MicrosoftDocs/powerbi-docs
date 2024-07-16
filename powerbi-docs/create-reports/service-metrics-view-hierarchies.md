@@ -26,7 +26,7 @@ To view your hierarchical scorecard, you can use the slicer to navigate to which
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-cross-section.png" alt-text="Screenshot of a scorecard showing a hierarchy that's been set up." lightbox="media/service-metrics-get-started-hierarchies/hierarchies-cross-section.png":::
 
-All connected values, mapped owners, and statuses dictated by rules will reflect the appropriate data at each hierarchy level, so long as the relationships exist.  There needs to be a relationship between the hierarchy level fields in the underlying datasets to correctly filter the values.  Manual metrics will be indicated by an information icon showing which values are manual for that metric.
+All connected values, mapped owners, and statuses dictated by rules will reflect the appropriate data at each hierarchy level, so long as the relationships exist.  There needs to be a relationship between the hierarchy level fields in the underlying semantic models to correctly filter the values.  Manual metrics will be indicated by an information icon showing which values are manual for that metric.
 
 :::image type="content" source="media/service-metrics-get-started-hierarchies/hierarchies-manual-info-icon.png" alt-text="Screenshot of hover text indicating a manual metric.":::
 
@@ -57,7 +57,7 @@ Customize the heatmap view in the **Display settings** dialog box.
 - Premium or PPU workspace is required.
 - There are data limits on hierarchies:
 
-  - Up to 10,000 items per hierarchy (across all datasets)
+  - Up to 10,000 items per hierarchy (across all semantic models)
   - Up to five hierarchies
   - Up to five levels per hierarchy
 
@@ -65,14 +65,14 @@ Customize the heatmap view in the **Display settings** dialog box.
 - Data connections are evaluated by impersonating the hierarchy owner/creator where row-level security (RLS) may apply.  This does not change metric level permissions.
 - Dynamic and static RLS is supported but it is routed through the hierarchy creator.  All scorecard viewers impersonate the hierarchy creator’s access.
 - Hierarchy permissions can't be set at a specific hierarchy level. Metric level permissions are inherited from the original scorecard and are applied at all levels, and RLS via the hierarchy creator dictate permissions.
-- Non-admin users may experience refresh issues when setting up hierarchies on a dataset with dynamic RLS.
+- Non-admin users may experience refresh issues when setting up hierarchies on a semantic model with dynamic RLS.
 - Manual metrics are indicated by an information icon showing which values are manual for that metric.
 - Notifications regarding status changes on child scorecard levels aren't triggered. 
 - There is a limit of one selection per hierarchy for viewing a hierarchical scorecard.
-- History for hierarchical metrics isn't supported because data is always queried live from the dataset, instead of cached when the dataset refreshes.
+- History for hierarchical metrics isn't supported because data is always queried live from the semantic model, instead of cached when the semantic model refreshes.
 - Saving and sharing heatmap views isn't yet supported.
 
-## Next steps
+## Related content
 
 - [Get started with cascading scorecards in Power BI](service-metrics-get-started-hierarchies.md)
 - [Scenarios: When to use hierarchies in Power BI scorecards](service-metrics-hierarchies-scenarios.md)

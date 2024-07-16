@@ -1,12 +1,13 @@
 ---
 title: Create content to migrate to Power BI
 description: Guidance on creating and validating content when migrating to Power BI.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 08/20/2020
 ---
 
@@ -14,7 +15,7 @@ ms.date: 08/20/2020
 
 This article describes **Stage 4**, which is concerned with creating and validating content when migrating to Power BI.
 
-:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-powerbi-stage-4.png" alt-text="Image showing the stages of a Power BI migration. Stage 4 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-power-bi-stage-4.svg" alt-text="Diagram shows the stages of a Power BI migration. Stage 4 is emphasized for this article." border="false":::
 
 > [!NOTE]
 > For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
@@ -28,27 +29,27 @@ The output from this stage is a Power BI solution that has been validated in a d
 
 ## Create the production solution
 
-At this juncture, the same person who performed the POC may carry on with producing the production-ready Power BI solution. Or, someone different may be involved. If timelines are not jeopardized, it's great to get people involved who will be responsible for Power BI development in the future. This way, they can actively learn.
+At this juncture, the same person who performed the POC might carry on with producing the production-ready Power BI solution. Or, someone different could be involved. If timelines are not jeopardized, it's great to get people involved who will be responsible for Power BI development in the future. This way, they can actively learn.
 
 > [!IMPORTANT]
 > Reuse as much of the work from the POC as possible.
 
-### Develop new import dataset
+### Develop new Import semantic model
 
-You may choose to create a new Import dataset when an existing Power BI dataset doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
+You might choose to create a new Import semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) when an existing Power BI semantic model doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
 
 Ideally, from the very beginning, consider decoupling the development work for data and reports. [Decoupling data and reports](report-separate-from-model.md) will facilitate the separation of work, and permissions, when different people are responsible for data modeling and reports. It makes for a more scalable approach and encourages data reusability.
 
-The essential activities related to development of an Import dataset include:
+The essential activities related to development of an Import semantic model include:
 
-- [Acquire data](../connect-data/desktop-quickstart-connect-to-data.md) from one or more data sources (which may be a Power BI dataflow).
+- [Acquire data](../connect-data/desktop-quickstart-connect-to-data.md) from one or more data sources (which could be a Power BI dataflow).
 - [Shape, combine, and prepare](../connect-data/desktop-shape-and-combine-data.md) data.
-- Create the [dataset model](../transform-model/desktop-modeling-view.md), including [date tables](../transform-model/desktop-date-tables.md).
+- Create the [semantic model](../transform-model/desktop-modeling-view.md), including [date tables](../transform-model/desktop-date-tables.md).
 - Create and verify [model relationships](../transform-model/desktop-create-and-manage-relationships.md).
 - Define [measures](../transform-model/desktop-measures.md).
-- Set up [row-level security](../enterprise/service-admin-rls.md), if necessary.
+- Set up [row-level security](/fabric/security/service-admin-row-level-security), if necessary.
 - Configure synonyms and [optimize Q&A](../natural-language/q-and-a-best-practices.md).
-- Plan for scalability, performance, and concurrency, which may influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../enterprise/aggregations-auto.md).
+- Plan for scalability, performance, and concurrency, which might influence your decisions about data storage modes, such as using a [Composite model](../transform-model/desktop-composite-models.md) or [aggregations](../enterprise/aggregations-auto.md).
 
 > [!TIP]
 > If you have different development/test/production environments, consider [parameterizing](/power-query/power-query-query-parameters) data sources. It will make deployment, described in [Stage 5](powerbi-migration-deploy-support-monitor.md), significantly easier.
@@ -89,9 +90,9 @@ As part of ongoing data validation efforts, the new report will typically need t
 When validating security, there are two primary aspects to consider:
 
 - Data permissions
-- Access to datasets, reports, and dashboards
+- Access to semantic models, reports, and dashboards
 
-In an Import dataset, data permissions are applied by defining [row-level security](../enterprise/service-admin-rls.md) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
+In an Import semantic model, data permissions are applied by defining [row-level security](/fabric/security/service-admin-row-level-security) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
 
 The main ways to grant access to Power BI content are:
 
@@ -104,45 +105,47 @@ The main ways to grant access to Power BI content are:
 
 ### Validate functionality
 
-It's the time to double-check dataset details like field names, formatting, sorting, and default summarization behavior. Interactive report features, such as [slicers](../visuals/power-bi-visualization-slicers.md), [drill-down actions](../consumer/end-user-drill.md), [drillthrough actions](../create-reports/desktop-drillthrough.md), [expressions](../create-reports/desktop-conditional-format-visual-titles.md), [buttons](../create-reports/desktop-buttons.md), or [bookmarks](../create-reports/desktop-bookmarks.md), should all be verified, too.
+It's the time to double-check semantic model details like field names, formatting, sorting, and default summarization behavior. Interactive report features, such as [slicers](../visuals/power-bi-visualization-slicers.md), [drill-down actions](../consumer/end-user-drill.md), [drillthrough actions](../create-reports/desktop-drillthrough.md), [expressions](../create-reports/desktop-conditional-format-visual-titles.md), [buttons](../create-reports/desktop-buttons.md), or [bookmarks](../create-reports/desktop-bookmarks.md), should all be verified, too.
 
 During the development process, the Power BI solution should be published to a development workspace in the Power BI service on a regular basis. Verify all functionality works as expected in the service, such as the rendering of custom visuals. It's also a good time to do further testing. Test [scheduled refresh](../connect-data/refresh-scheduled-refresh.md), [Q&A](../consumer/end-user-q-and-a.md), and how reports and dashboards look on a [mobile device](../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 ### Validate performance
 
-Performance of the Power BI solution is important for consumer experience. Most reports should present visuals in under 10 seconds. If you have reports that take longer to load, pause and reconsider what may be contributing to delays. Report performance should be assessed regularly in the Power BI service, in addition to Power BI Desktop.
+Performance of the Power BI solution is important for consumer experience. Most reports should present visuals in under 10 seconds. If you have reports that take longer to load, pause and reconsider what might be contributing to delays. Report performance should be assessed regularly in the Power BI service, in addition to Power BI Desktop.
 
-Many performance issues arise from substandard [DAX (Data Analysis eXpressions)](../transform-model/desktop-quickstart-learn-dax-basics.md), poor dataset design, or suboptimal report design (for instance, trying to render too many visuals on a single page). Technical environment issues, such as the network, an overloaded data gateway, or how a Premium capacity is configured can also contribute to performance issues. For more information, see the [Optimization guide for Power BI](power-bi-optimization.md) and [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md).
+Many performance issues arise from substandard [DAX (Data Analysis eXpressions)](../transform-model/desktop-quickstart-learn-dax-basics.md), poor semantic model design, or suboptimal report design (for instance, trying to render too many visuals on a single page). Technical environment issues, such as the network, an overloaded data gateway, or how a Premium capacity is configured can also contribute to performance issues. For more information, see the [Optimization guide for Power BI](power-bi-optimization.md) and [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md).
+
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
 ## Document the solution
 
 There are two main types of documentation that are useful for a Power BI solution:
 
-- Dataset documentation
+- Semantic model documentation
 - Report documentation
 
 Documentation can be stored wherever it's most easily accessed by the target audience. Common options include:
 
-- **Within a SharePoint site:** A SharePoint site may exist for your Center of Excellence or an internal Power BI community site.
-- **Within an app:** URLs may be configured when publishing a Power BI app to direct the consumer to more information.
+- **Within a SharePoint site:** A SharePoint site might exist for your Center of Excellence or an internal Power BI community site.
+- **Within an app:** URLs can be set up when publishing a Power BI app to direct the consumer to more information.
 - **Within individual Power BI Desktop files:** Model elements, like tables and columns, can define a description. These descriptions appear as tooltips in the **Fields** pane when authoring reports.
 
 > [!TIP]
-> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](/power-bi/support/service-admin-portal-help-support#publish-get-help-information) with its URL location.
+> If you create a site to serve as a hub for Power BI-related documentation, consider [customizing the Get Help menu](/fabric/admin/service-admin-portal-help-support#publish-get-help-information) with its URL location.
 
-### Create dataset documentation
+### Create semantic model documentation
 
-Dataset documentation is targeted at users who will be managing the dataset in the future. It's useful to include:
+Semantic model documentation is targeted at users who will be managing the semantic model in the future. It's useful to include:
 
 - Design decisions made and reasons why.
-- Who owns, maintains, and certifies datasets.
+- Who owns, maintains, and certifies semantic models.
 - Data refresh requirements.
-- Custom business rules defined in datasets.
-- Specific dataset security or data privacy requirements.
+- Custom business rules defined in semantic models.
+- Specific semantic model security or data privacy requirements.
 - Future maintenance needs.
 - Known open issues or deferred backlog items.
 
-You may also elect to create a change log that summarizes the most important changes that have happened to the dataset over time.
+You might also elect to create a change log that summarizes the most important changes that have happened to the semantic model over time.
 
 ### Create report documentation
 
@@ -150,14 +153,14 @@ Report documentation, which is typically structured as a walk-through targeted a
 
 You may also choose to include additional report documentation on a hidden page of your report. It could include design decisions and a change log.
 
-## Next steps
+## Related content
 
 In the [next article in this Power BI migration series](powerbi-migration-deploy-support-monitor.md), learn about stage 5, which is concerned with deploying, supporting, and monitoring content when migrating to Power BI.
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Power BI implementation planning](powerbi-implementation-planning-introduction.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
 

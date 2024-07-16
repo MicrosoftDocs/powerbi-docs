@@ -7,29 +7,29 @@ ms.reviewer: ""
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 04/17/2023
-
+ms.date: 06/13/2024
+#customer intent: As a developer, I want to learn how to embed Power BI content into my application, so that I can provide my users with interactive reports, dashboards, and tiles.
 ---
 
-# Tutorial: Embed Power BI content using a sample *embed for your customers'* application
+# Tutorial: Embed Power BI content using a sample *embed for your customers* application
 
 [!INCLUDE[Customers yes Org no](../../includes/applies-embedded-app-yes-user-no.md)]
 
-**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards and tiles, into your application.
+**Embedded analytics** and **Power BI Embedded** (the Azure offer) allow you to embed Power BI content such as reports, dashboards, and tiles, into your application.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 >[!div class="checklist"]
 >
 >* Set up your embedded environment.
 >* Configure an *embed for your customers* (also known as *app owns data*) sample application.
 
-To use your application, your users won't need to sign in to Power BI or have a Power BI license.
+To use your application, your users don't need to sign in to Power BI or have a Power BI license.
 
 We recommend using the *embed for your customers* method to embed your Power BI content, if you're an independent software vendor (ISV) or a developer, who wants to create applications for third parties.
 
 > [!IMPORTANT]
-> If you are embedding content for a national cloud, the first few steps of this tutorial are different. See [Embed content for national clouds](embed-sample-for-customers-national-clouds.md) for details.
+> If you are embedding content for a national/regional cloud, the first few steps of this tutorial are different. See [Embed content for national/regional clouds](embed-sample-for-customers-national-clouds.md) for details.
 
 ## Code sample specifications
 
@@ -49,19 +49,19 @@ The code samples support the following browsers:
 
 ## Prerequisites
 
-Before you start this tutorial, verify that you have both the Power BI and code dependencies listed below:
+Before you start this tutorial, verify that you have the following the Power BI and code dependencies:
 
 * **Power BI dependencies**
 
-  * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md).
+  * Your own [Microsoft Entra tenant](create-an-azure-active-directory-tenant.md).
 
-  * To authenticate your app against Power BI, you'll need one of the following:
+  * To authenticate your app against Power BI, you need one of the following:
 
-    * [Service principal](embed-service-principal.md) - An Azure Active Directory (Azure AD) [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Azure AD to authenticate your app.
+    * [Service principal](embed-service-principal.md) - a Microsoft Entra [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) that allows Microsoft Entra ID to authenticate your app.
 
-    * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+    * [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) license - This is your **master user** and your app uses it to authenticate to Power BI.
 
-    * A Power BI [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license - This will be your **master user** and your app will use it to authenticate to Power BI.
+    * A Power BI [Premium Per User (PPU)](../../enterprise/service-premium-per-user-faq.yml) license - This is your **master user** and your app uses it to authenticate to Power BI.
 
     >[!NOTE]
     >To [move to production](move-to-production.md) you'll need a [capacity](embedded-capacity.md).
@@ -72,7 +72,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) (or higher)
 
-* An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following environments:
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -96,7 +96,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
 
 * [Node.js](https://nodejs.org/en/download/)
 
-* An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following environments:
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -111,7 +111,7 @@ Before you start this tutorial, verify that you have both the Power BI and code 
     >* If you're installing *Python* for the first time, select the **Add Python to PATH** option, to add the installation to the `PATH` variable.
     >* If you already have *Python* installed, verify that the `PATH` variable includes its installation path. For more information, see the [Excursus: Setting environment variables](https://docs.python.org/3/using/windows.html#excursus-setting-environment-variables) Python documentation (this link refers to Python 3).
 
-* An integrated development environment (IDE). We recommend using one of the following:
+* An integrated development environment (IDE). We recommend using one of the following environments:
 
   * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -125,7 +125,7 @@ To create an *embed for your customers* sample app, follow these steps:
 
 1. [Select your authentication method](#step-1---select-your-authentication-method).
 
-2. [Register an Azure AD application](#step-2---register-an-azure-ad-application).
+2. [Register a Microsoft Entra application](#step-2---register-an-azure-ad-application).
 
 3. [Create a Power BI workspace](#step-3---create-a-power-bi-workspace).
 
@@ -141,21 +141,23 @@ To create an *embed for your customers* sample app, follow these steps:
 
 ## Step 1 - Select your authentication method
 
-Your embedded solution will vary depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
+Your embedded solution varies depending on the authentication method you select. Therefore, it's important to understand the differences between the authentication methods, and decide which one best suits your solution.
 
-The table below describes a few key differences between the [service principal](embed-service-principal.md) and **master user** authentication methods.
+The following table describes a few key differences between the [service principal](embed-service-principal.md) and **master user** authentication methods.
 
 |Consideration  |Service principal  |Master user  |
 |---------|---------|---------|
-|Mechanism     |Your Azure AD app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) allows Azure AD to authenticate your embedded solution app against Power BI.        |Your Azure AD app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
-|Security     |*Service principal* is the Azure AD recommended authorization method. If you're using a service principal, you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method isn't as secure as  a *service principal*. You have to be vigilant with the *master user* credentials (username and password). For example, don't expose them in your embedding application, and change the password frequently.         |
-|Azure AD delegated permissions |Not required. |Your *master user* or an administrator has to grant consent for your app to access Power BI REST API [permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). For example, *Report.ReadWrite.All*. |
+|Mechanism     |Your Microsoft Entra app's [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) allows Microsoft Entra ID to authenticate your embedded solution app against Power BI.        |Your Microsoft Entra app uses the credentials (username and password) of a Power BI user, to authenticate against Power BI.         |
+|Security     |*Service principal* is the Microsoft Entra ID recommended authorization method. If you're using a service principal, you can authenticate using either an *application secret* or a *certificate*.</br></br>This tutorial only describes using *service principal* with an *application secret*. To embed using a *service principal* and a *certificate*, refer to the [service principal with a certificate](embed-service-principal-certificate.md) article.         |This authentication method isn't as secure as  a *service principal*. You have to be vigilant with the *master user* credentials (username and password). For example, don't expose them in your embedding application, and change the password frequently.         |
+|Microsoft Entra ID delegated permissions |Not required. |Your *master user* or an administrator has to grant consent for your app to access Power BI REST API [permissions](/azure/active-directory/develop/v2-permissions-and-consent) (also known as scopes). For example, *Report.ReadWrite.All*. |
 |Power BI service access |You can't access Power BI service with a *service principal*.|You can access Power BI service with your *master user* credentials.|
 |License     |Doesn't require a Pro license. You can use content from any workspace that you're a member or an admin of.         |Requires a [Power BI Pro](../../enterprise/service-admin-purchasing-power-bi-pro.md) or Premium Per User (PPU) license.         |
 
-## Step 2 - Register an Azure AD application
+<a name='step-2---register-an-azure-ad-application'></a>
 
-Registering your application with Azure AD allows you to:
+## Step 2 - Register a Microsoft Entra application
+
+Registering your application with Microsoft Entra ID allows you to:
 > [!div class="checklist"]
 >
 >* Establish an identity for your app
@@ -177,9 +179,9 @@ Registering your application with Azure AD allows you to:
 
 ## Step 5 - Get the embedding parameter values
 
-To embed your content, you need to obtain certain parameter values. The table below shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
+To embed your content, you need to obtain certain parameter values. The following table shows the required values, and indicates if they're applicable to the *service principal* authentication method, the *master user* authentication method, or both.
 
-Before you embed your content, make sure you have all the values listed below. Some of the values will differ, depending on the authentication method you're using.
+Before you embed your content, make sure you have all the values listed below. Some of the values might differ, depending on the authentication method you're using.
 
 |Parameter   |Service principal   |Master user  |
 |-------------------|---|---|
@@ -207,7 +209,7 @@ Before you embed your content, make sure you have all the values listed below. S
 
 Alternatively, you can find the workspace ID in the **Admin portal** settings by selecting **Details** next to the workspace name.
 
-  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace I D from the admin settings.":::
+  :::image type="content" source="media/embed-sample-for-customers/workspace-details.png" alt-text="A screenshot showing how to find the workspace ID from the admin settings.":::
 
 ### Report ID
 
@@ -234,7 +236,7 @@ To get the tenant ID GUID, follow these steps:
 
 2. Search for **App registrations** and select the **App registrations** link.
 
-3. Select the Azure AD app you're using for embedding your Power BI content.
+3. Select the Microsoft Entra app you're using for embedding your Power BI content.
 
 4. From the **Overview** section, copy the **Directory (tenant) ID** GUID.
 
@@ -252,7 +254,7 @@ Obtain the *username* and *password* of the Power BI user you're using as your *
 >
 >This step is only relevant if you're using the *service principal* authentication method. If you're using a *master user*, skip this step and continue with [Step 7 - Enable workspace access](#step-7---enable-workspace-access).
 
-For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal. If you're not the admin of your tenant, get the tenant's admin to enable the *Tenant settings* for you.
+For a Microsoft Entra app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal. If you're not the admin of your tenant, get the tenant's admin to enable the *Tenant settings* for you.
 
 1. In *Power BI service*, select **Settings** > **Settings** > **Admin portal**.
 
@@ -260,30 +262,30 @@ For an Azure AD app to be able to access the Power BI content and APIs, a Power 
 
 2. Select **Tenant settings** and then scroll down to the **Developer settings** section.
 
-3. Expand **Allow service principals to use Power BI APIs**, and enable this option.
+3. Expand **Service principals can use Fabric APIs**, and enable this option.
 
     :::image type="content" source="media/embed-sample-for-customers/developer-settings.png" alt-text="A screenshot showing how to enable the developer settings option, in the tenant settings menu option, in Power B I service.":::
 
 >[!NOTE]
 >When using a *service principal*, it's recommended to limit its access to the tenant settings using a *security group*. To learn more about this feature, see these sections in the [service principal](embed-service-principal.md) article:
 >
-> * [Create an Azure AD security group](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
+> * [Create a Microsoft Entra security group](embed-service-principal.md#step-2---create-an-azure-ad-security-group)
 > * [Enable the Power BI service admin settings](embed-service-principal.md#step-3---enable-the-power-bi-service-admin-settings)
 
 ## Step 7 - Enable workspace access
 
-To enable your Azure AD app access objects such as reports, dashboards and datasets in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
+To enable your Microsoft Entra app access objects such as reports, dashboards and semantic models in the Power BI service, add the *service principal* or *master user*, as a *member* or *admin* to your workspace.
 
-1. Sign in to Power BI service.
+1. Sign in to Fabric.
 
-2. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
+2. Scroll to the workspace you want to enable access for, and select **Manage access**.
 
     :::image type="content" source="media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power B I workspace.":::
 
 3. In the **Access** pane, depending on which authentication method you're using, copy the *service principal* or *master user* to the **Enter email address** text box.
 
     >[!NOTE]
-    >If you're using a *service principal*, its name is the name you gave your Azure AD app.
+    >If you're using a *service principal*, its name is the name you gave your Microsoft Entra app.
 
 4. Select **Add**.
 
@@ -323,11 +325,11 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
     |`AuthenticationMode` |ServicePrincipal         |MasterUser         |
-    |`ClientId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
-    |`TenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`ClientId`           |Your Microsoft Entra app [client ID](#client-id)         |Your Microsoft Entra app [client ID](#client-id)         |
+    |`TenantId`           |Your Microsoft Entra [tenant ID](#tenant-id)         |N/A         |
     |`PbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`PbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
-    |`ClientSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
+    |`ClientSecret`       |Your Microsoft Entra ID [client secret](#client-secret)         |N/A         |
     |`WorkspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`ReportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
 
@@ -348,13 +350,13 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
     |`authenticationType` |ServicePrincipal         |MasterUser         |
-    |`applicationId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
+    |`applicationId`           |Your Microsoft Entra app [client ID](#client-id)         |Your Microsoft Entra app [client ID](#client-id)         |
     |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
-    |`applicationSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
-    |`tenant`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
+    |`applicationSecret`       |Your Microsoft Entra ID [client secret](#client-secret)         |N/A         |
+    |`tenant`           |Your Microsoft Entra [tenant ID](#tenant-id)         |N/A         |
 
 9. Run the project by selecting **IIS Express** (play).
 
@@ -381,7 +383,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     g. In the **Installed JREs** window, select the available *jre*, and select **Apply and Close**.
 
-    h. In the **Tomcat Server** window, select **Finish**. You'll be able to see the Tomcat server in the *Servers* tab.
+    h. In the **Tomcat Server** window, select **Finish**. You can see the Tomcat server in the *Servers* tab.
 
 8. Open the project in Eclipse:
 
@@ -398,7 +400,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
     a. In the **Package Explorer** pane, right-click **AppOwnsData**, and select **Properties**.
 
-    b. In the **Properties for AppOwnsData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection will include the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
+    b. In the **Properties for AppOwnsData** window, select **Targeted Runtimes** and then select **Apache Tomcat**. This selection includes the version of *Apache Tomcat* you're using, for example *Apache Tomcat v9.0*.
 
     c. Select  **Apply and Close**.
 
@@ -421,11 +423,11 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`authenticationType` |ServicePrincipal         |MasterUser         |
     |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         | 
-    |`clientId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
+    |`clientId`           |Your Microsoft Entra app [client ID](#client-id)         |Your Microsoft Entra app [client ID](#client-id)         |
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
-    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
-    |`appSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
+    |`tenantId`           |Your Microsoft Entra [tenant ID](#tenant-id)         |N/A         |
+    |`appSecret`       |Your Microsoft Entra ID [client secret](#client-secret)         |N/A         |
 
 11. Run the project
 
@@ -454,13 +456,13 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |Parameter            |Service principal  |Master user  |
     |---------------------|---------|---------|
     |`authenticationMode` |ServicePrincipal         |MasterUser         |
-    |`clientId`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
+    |`clientId`           |Your Microsoft Entra app [client ID](#client-id)         |Your Microsoft Entra app [client ID](#client-id)         |
     |`workspaceId`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`reportId`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
     |`pbiUsername`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`pbiPassword`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
-    |`clientSecret`       |Your Azure AD [client secret](#client-secret)         |N/A         |
-    |`tenantId`           |Your Azure AD [tenant ID](#tenant-id)         |Your Azure AD [tenant ID](#tenant-id)         |
+    |`clientSecret`       |Your Microsoft Entra ID [client secret](#client-secret)         |N/A         |
+    |`tenantId`           |Your Microsoft Entra [tenant ID](#tenant-id)         |Your Microsoft Entra [tenant ID](#tenant-id)         |
 
 10. Run the project by doing the following:
 
@@ -474,7 +476,7 @@ Follow these steps to modify the *embed for your customers* sample application, 
 
 7. Verify that you're in the **Python** > **Embed for your customers** folder, and that the file **requirements.txt** is in the folder, and run `pip3 install -r requirements.txt`.
 
-8. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following:
+8. Open the **App Owns Data** folder using your preferred IDE. We recommend using one of the following environments:
 
     * [Visual Studio](https://visualstudio.microsoft.com/)
 
@@ -489,15 +491,15 @@ Follow these steps to modify the *embed for your customers* sample application, 
     |`AUTHENTICATION_MODE` |ServicePrincipal         |MasterUser         |
     |`WORKSPACE_ID`        |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)          |The ID of the workspace with your embedded report, see [Workspace ID](#workspace-id)         |
     |`REPORT_ID`           |The ID of the report you're embedding, see [Report ID](#report-id)            |The ID of the report you're embedding, see [Report ID](#report-id)         |
-    |`TENANT_ID`           |Your Azure AD [tenant ID](#tenant-id)         |N/A         |
-    |`CLIENT_ID`           |Your Azure AD app [client ID](#client-id)         |Your Azure AD app [client ID](#client-id)         |
-    |`CLIENT_SECRET`       |Your Azure AD [client secret](#client-secret)         |N/A         |
+    |`TENANT_ID`           |Your Microsoft Entra [tenant ID](#tenant-id)         |N/A         |
+    |`CLIENT_ID`           |Your Microsoft Entra app [client ID](#client-id)         |Your Microsoft Entra app [client ID](#client-id)         |
+    |`CLIENT_SECRET`       |Your Microsoft Entra ID [client secret](#client-secret)         |N/A         |
     |`POWER_BI_USER`        |N/A         |Your *master user* username, see [Power BI username and password](#power-bi-username-and-password)         |
     |`POWER_BI_PASS`        |N/A         |Your *master user* password, see [Power BI username and password](#power-bi-username-and-password)         |
 
 11. Save the file.
 
-12. Run the project by doing the following:
+12. Run the project by doing the following steps:
 
     a. In **PowerShell** or **Command Prompt**, navigate to the **Python** > **Embed for your customers** > **AppOwnesData** folder, and execute `flask run`.
 
@@ -516,7 +518,7 @@ Try out the [Power BI embedded analytics playground](./power-bi-playground.md) t
 > [!IMPORTANT]
 > If you used free embed trial tokens for development, you must buy a capacity for production. Until a capacity is purchased, the *Free trial version* banner will continue to appear at the top of the embedded report.
 
-## Next steps
+## Related content
 
 * [Move to production](move-to-production.md)
 * [Embed for your organization](embed-sample-for-your-organization.md)

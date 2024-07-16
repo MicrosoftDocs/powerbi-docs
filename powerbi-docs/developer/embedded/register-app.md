@@ -1,28 +1,30 @@
 ---
 title: Get started with Power BI Embedded
-description: Set up Power BI Embedded by using a setup tool to register an Azure AD app, create a workspace, import content, grant permissions, and download a sample app.
+description: Set up Power BI Embedded using a setup tool to register a Microsoft Entra app, create a workspace, import content, grant permissions, and download a sample app.
 author: mberdugo
 ms.author: monaberdugo
 keywords: 
-ms.date: 01/23/2023
+ms.date: 01/23/2024
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: intro-overview
+#customer intent: As a developer, I want to learn how to set up Power BI Embedded so that I can share my reports with others.
 ---
+
 # Set up Power BI Embedded
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
 If you want to start using Power BI Embedded to share your reports with others, use the [Power BI embedded analytics setup tool](https://app.powerbi.com/embedsetup) to get started. This article shows you how.
 
-To use Power BI embedded analytics, you need to register an Azure Active Directory (Azure AD) application in Azure. The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
+To use Power BI embedded analytics, you need to register a Microsoft Entra application in Azure. The Microsoft Entra app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 
 ## Prerequisite
 
 To set up a Power BI embedded analytics environment, you need one of the following:
 
-* [Azure AD tenant](./create-an-azure-active-directory-tenant.md) and an organizational (master) user
+* [Microsoft Entra tenant](./create-an-azure-active-directory-tenant.md) and an organizational (master) user
 * [Power BI Pro](https://powerbi.microsoft.com/power-bi-pro/) account
 
 ## Before you begin
@@ -61,12 +63,12 @@ To use the tool to set up your environment, go to the [Power BI embedded analyti
 
 ## Step 1 - Sign in to Power BI
 
-1. Under **Step 1** in the setup tool, select **Sign in**. This step signs you in to Power BI. If you're prompted to pick an account, sign in with a user that belongs to your Power BI tenant. The Azure AD app gets registered under this user.
+1. Under **Step 1** in the setup tool, select **Sign in**. This step signs you in to Power BI. If you're prompted to pick an account, sign in with a user that belongs to your Power BI tenant. The Microsoft Entra app gets registered under this user.
 
    :::image type="content" source="./media/register-app/step-one-sign-in.png" alt-text="Screenshot of the Power BI embedded analytics setup tool. Under Step 1, the Sign in button is highlighted.":::
 
    > [!NOTE]
-   > If you're already signed in, verify that you're signed in with the user you want to use to create the Azure AD app. To change users, select **sign out**. After the tool restarts, sign in with the correct user.
+   > If you're already signed in, verify that you're signed in with the user you want to use to create the Microsoft Entra app. To change users, select **sign out**. After the tool restarts, sign in with the correct user.
 
 1. Select **Next** to go to the next step.
 
@@ -74,7 +76,7 @@ To use the tool to set up your environment, go to the [Power BI embedded analyti
 
 ## Step 2 - Register your application
 
-In this step, you register an Azure AD application in Azure. The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/). You can always change these settings at a later time.
+In this step, you register a Microsoft Entra application in Azure. The Microsoft Entra app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/). You can always change these settings at a later time.
 
 ### [Embed for your customers](#tab/customers)
 
@@ -88,7 +90,7 @@ In this step, you register an Azure AD application in Azure. The Azure AD app es
 
 1. Select **Register**.
 
-1. Your Azure AD app **Application ID** is displayed in the **Summary** box. Copy this value for later use.
+1. Your Microsoft Entra app **Application ID** is displayed in the **Summary** box. Copy this value for later use.
 
    :::image type="content" source="./media/register-app/application-id.png" alt-text="Screenshot of the Power BI embedded analytics setup tool, with a Summary box on the right. Information in the box includes an application ID.":::
 
@@ -109,7 +111,7 @@ In this step, you register an Azure AD application in Azure. The Azure AD app es
 
 1. Select **Register**.
 
-1. Your Azure AD app **Application ID** and **Application secret** values are displayed in the **Summary** box. Copy these values for later use.
+1. Your Microsoft Entra app **Application ID** and **Application secret** values are displayed in the **Summary** box. Copy these values for later use.
 
 ---
 
@@ -136,7 +138,7 @@ Select one of the following options:
 
 ## Step 5 - Grant permissions (*Embed for your customers* only)
 
-Select **Grant permissions** and in the dialog, select **Accept**. This step allows your Azure AD app to access the APIs you selected (also known as scopes) with your signed-in user. This user is also known as the **master user**.
+Select **Grant permissions** and in the dialog, select **Accept**. This step allows your Microsoft Entra app to access the APIs you selected (also known as scopes) with your signed-in user. This user is also known as the **master user**.
 
 ## Download sample app (optional)
 
@@ -149,16 +151,16 @@ Make sure you copy all the information in the **Summary** box. Your Power BI emb
 
 ## Manual registration
 
-If you didn't use the Power BI embedded analytics setup tool, use the procedure in this section to manually register an Azure AD app. But take these steps only if you're creating one of the following solutions:
+If you didn't use the Power BI embedded analytics setup tool, use the procedure in this section to manually register a Microsoft Entra app. But take these steps only if you're creating one of the following solutions:
 
 * An embed-for-your-organization application
 * An embed-for-your-customers application with a *service principal*
 
-For more information about how to register applications in Azure AD, see [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
+For more information about how to register applications in Microsoft Entra ID, see [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. Select your Azure AD tenant by selecting your account in the upper-right corner of the page.
+1. Select your Microsoft Entra tenant by selecting your account in the upper-right corner of the page.
 
 1. Select **App registrations**. If you don't see this option, search for it.
 
@@ -174,6 +176,6 @@ For more information about how to register applications in Azure AD, see [Regist
 
 1. Select **Register**. After your app is registered, you're directed to your app's overview page, where you can obtain the **Application ID**.
 
-## Next steps
+## Related content
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

@@ -22,9 +22,9 @@ Dashboards are a feature of the Power BI service. They're not available in Power
 
 ## Dashboard basics
 
-The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports, and each report is based on a dataset. A dashboard is an introduction to the underlying reports and datasets. Selecting a visualization takes you to the report and dataset that it's based on. If you're new to Power BI, see [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md).
+The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports, and each report is based on a semantic model. A dashboard is an introduction to the underlying reports and semantic models. Selecting a visualization takes you to the report and semantic model that it's based on. If you're new to Power BI, see [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md).
 
-![Diagram that shows the relationship between dashboards, reports, datasets.](media/service-dashboards/power-bi-diagram.png)
+![Diagram that shows the relationship between dashboards, reports, semantic models.](media/service-dashboards/power-bi-diagram.png)
 
 You can pin many kinds of tiles to dashboards:
 
@@ -36,7 +36,7 @@ You can pin many kinds of tiles to dashboards:
 - Add [images, videos, and more](service-dashboard-add-widget.md) to a dashboard.
 
 ## Advantages of dashboards
-Dashboards are a way to monitor your business and see all your most important metrics at a glance. The visualizations on a dashboard can come from one underlying dataset or many, and from one underlying report or many. A dashboard combines on-premises and cloud data, providing a consolidated view of data.
+Dashboards are a way to monitor your business and see all your most important metrics at a glance. The visualizations on a dashboard can come from one underlying semantic model or many, and from one underlying report or many. A dashboard combines on-premises and cloud data, providing a consolidated view of data.
 
 A dashboard isn't just a pretty picture. It's highly interactive, and the tiles update as the underlying data changes.
 
@@ -53,19 +53,19 @@ The ability to create a dashboard is considered a *creator* feature and requires
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
 | Pages | One page | One or more pages |
-| Data sources | One or more reports and one or more datasets per dashboard | A single dataset per report |
+| Data sources | One or more reports and one or more semantic models per dashboard | A single semantic model per report |
 | Drilling down in visuals | Only if you [pin an entire report page](service-dashboard-pin-live-tile-from-report.md) to a dashboard. | Yes |
 | Available in Power BI Desktop | No | Yes. You can build and view reports in Power BI Desktop. |
 | Filtering | No. You can't filter or slice a dashboard. You can filter a [dashboard tile in focus mode](../consumer/end-user-focus.md#work-in-focus-mode), but can't save the filter. | Yes. There are many different ways to filter, highlight, and slice. |
 | [Feature content on colleagues' Home page](../collaborate-share/service-featured-content.md#feature-a-dashboard-or-report)  | Yes | Yes |
 | Favorites | Yes. You can set multiple dashboards as *favorites*. | Yes. You can set multiple reports as *favorites*. |
-| Natural language queries (Q&A) | Yes | Yes, provided you have edit permissions for the report and underlying dataset. |
+| Natural language queries (Q&A) | Yes | Yes, provided you have edit permissions for the report and underlying semantic model. |
 | Set alerts | Yes. Available for dashboard tiles in certain circumstances. | No |
 | Subscribe | Yes. You can subscribe to a dashboard. | Yes. You can subscribe to a report page. |
-| See underlying dataset tables and fields | No. You can't see tables and fields in the dashboard itself, but you can export data. | Yes |
+| See underlying semantic model tables and fields | No. You can't see tables and fields in the dashboard itself, but you can export data. | Yes |
 
+## Related content
 
-## Next steps
 * Get comfortable with dashboards by taking a tour of one of the [sample dashboards](sample-tutorial-connect-to-the-samples.md).
 * Learn about [dashboard tiles](service-dashboard-tiles.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create an alert on a tile](service-set-data-alerts.md).

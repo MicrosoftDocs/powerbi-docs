@@ -1,8 +1,8 @@
 ---
 title: Configure automatic aggregations 
-description: Learn how to enable and configure automatic aggregations, enable training for a supported DirectQuery dataset and configure one or more scheduled refreshes.
-author: minewiskan
-ms.author: owend
+description: Learn how to enable and configure automatic aggregations, enable training for a supported DirectQuery semantic model and configure one or more scheduled refreshes.
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
@@ -11,14 +11,14 @@ LocalizationGroup: Admin
 ---
 # Configure automatic aggregations
 
-Configuring automatic aggregations includes enabling training for a supported DirectQuery dataset and configuring one or more scheduled refreshes. After several iterations of the training and refresh operations have run, you can return to dataset settings to fine-tune the percentage of report queries that use the in-memory aggregations cache. Before completing these steps, be sure you fully understand the functionality and limitations described in [Automatic aggregations](aggregations-auto.md).
+Configuring automatic aggregations includes enabling training for a supported DirectQuery semantic model and configuring one or more scheduled refreshes. After several iterations of the training and refresh operations have run, you can return to semantic model settings to fine-tune the percentage of report queries that use the in-memory aggregations cache. Before completing these steps, be sure you fully understand the functionality and limitations described in [Automatic aggregations](aggregations-auto.md).
 
 ## Enable
 
-You must have dataset Owner permissions to enable automatic aggregations. Workspace admins can take over dataset owner permissions.
+You must have semantic model Owner permissions to enable automatic aggregations. Workspace admins can take over model owner permissions.
 
-1. In dataset Settings, expand **Scheduled refresh and performance optimization**.
-1. Switch **Automatic aggregations training** to **On**. If the switch is greyed out, ensure Data source credentials for the dataset are configured and you're signed in.
+1. In semantic model Settings, expand **Scheduled refresh and performance optimization**.
+1. Switch **Automatic aggregations training** to **On**. If the switch is greyed out, ensure Data source credentials are configured and you're signed in.
 
     :::image type="content" source="media/aggregations-automatic-configure/automatic-aggregations-training-on.png" alt-text="Screenshot of scheduled refresh and performance optimization expanded.":::
 
@@ -45,7 +45,7 @@ Keep in mind, training and refresh operations, whether scheduled or on-demand ar
 
 ## Fine-tuning
 
-Both user-defined and system-generated aggregations tables are part of the dataset, contribute to the dataset size, and are subject to existing Power BI dataset size constraints. Aggregations processing also consumes resources and impacts dataset refresh durations. An optimal configuration strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and a reduced burden on system resources.
+Both user-defined and system-generated aggregations tables are part of the model, contribute to the model size, and are subject to existing Power BI model size constraints. Aggregations processing also consumes resources and impacts model refresh durations. An optimal configuration strikes a balance between providing pre-aggregated results from the in-memory aggregations cache for the most frequently used report queries, while accepting slower results for outlier and ad-hoc queries in exchange for faster training and refresh times and a reduced burden on system resources.
 
 ### Adjust the percentage
 
@@ -55,7 +55,7 @@ Before the system can determine the optimal aggregations to include in the cache
 
 #### To adjust the percentage
 
-1. In dataset Settings, expand **Scheduled refresh and performance optimization**.
+1. In semantic model Settings, expand **Scheduled refresh and performance optimization**.
 1. In **Query coverage**, use the **Adjust the percentage of queries that will use the aggregated caches** slider to increase or decrease the percentage to the desired value. As you adjust the percentage, the Query Performance Impact Lift chart provides estimated query response times.
 
     :::image type="content" source="media/aggregations-automatic-configure/query-coverage.png" alt-text="Screenshot of the query coverage section showing the slider at 74 percent.":::
@@ -80,21 +80,21 @@ Threshold appears as a marker line on the lift chart and indicates the target qu
 
 ## Disable
 
-You must have dataset owner permissions to disable automatic aggregations. Workspace admins can take over dataset owner permissions.
+You must have model owner permissions to disable automatic aggregations. Workspace admins can take over model owner permissions.
 
 1. To disable, switch **Automatic aggregations training** to **Off**.
 
     When you disable training, you're prompted with an option to delete automatic aggregation tables.
 
-    :::image type="content" source="media/aggregations-automatic-configure/automatic-aggregations-training-off.png" alt-text="Screenshot of automatic aggregations training off with information about automatic aggregations tables in the dataset.":::
+    :::image type="content" source="media/aggregations-automatic-configure/automatic-aggregations-training-off.png" alt-text="Screenshot of automatic aggregations training off with information about automatic aggregations tables in the model.":::
 
-    If you choose *not* to delete existing automatic aggregation tables, the tables will remain in the dataset and continue to be refreshed. However, because training is disabled, no new aggregations will be added to them. Power BI will continue to use the existing tables to get aggregated query results when possible.
+    If you choose *not* to delete existing automatic aggregation tables, the tables will remain in the model and continue to be refreshed. However, because training is disabled, no new aggregations will be added to them. Power BI will continue to use the existing tables to get aggregated query results when possible.
 
-    If you choose to delete the tables, the dataset is reverted to its original state without any automatic aggregations.
+    If you choose to delete the tables, the model is reverted to its original state without any automatic aggregations.
 
 1. Select **Apply**.
 
-## See also
+## Related content
 
 * [Automatic aggregations](aggregations-auto.md)  
 * [User-defined aggregations](../transform-model/aggregations-advanced.md)  

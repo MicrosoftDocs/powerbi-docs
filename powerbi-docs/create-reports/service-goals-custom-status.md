@@ -55,7 +55,7 @@ Once you’re in the **Manage statuses** section, you can take a few different a
 
 ## Delete statuses
 
-When you delete a status, it's no longer available in your status list. You don't see the deleted status as an option when you perform check-ins. However, we preserve the history in your dataset and check-in history for up to 12 deleted statuses.
+When you delete a status, it's no longer available in your status list. You don't see the deleted status as an option when you perform check-ins. However, we preserve the history in your semantic model and check-in history for up to 12 deleted statuses.
 
 If a metric uses a status that is deleted, we preserve the metric’s deleted status until you change it, either by editing or by a check-in. For example, in the following image, you see that the status **Line Down** is no longer available in the status list, but we don't remove the metric statuses that use that status.
 
@@ -63,7 +63,7 @@ If a metric uses a status that is deleted, we preserve the metric’s deleted st
 
 You can customize the statuses to the terminology you use every day in your organization. You ensure that everyone in your team easily understands and make it easier than ever for metrics to work seamlessly for your organization.
 
-## Next steps
+## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
 - [Create scorecards and manual metrics in Power BI](service-goals-create.md)

@@ -96,7 +96,7 @@ You can unshare only if you're the owner of the shared content.
 
    For more information, see [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md).
 
-## Next steps
+## Related content
 
 * [Annotate and share a tile, report, or visual in Power BI mobile apps](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Share Power BI reports and dashboards with coworkers and others](../../collaborate-share/service-share-dashboards.md)

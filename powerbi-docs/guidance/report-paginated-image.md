@@ -1,12 +1,13 @@
 ---
 title: Image use guidance for paginated reports
 description: Guidance for using images in Power BI paginated reports.
-author: maggiemsft
-ms.author: maggies
-ms.reviewer: asaxton
+author: peter-myers
+ms.author: v-myerspeter
+ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 11/4/2022
 ---
 
@@ -44,7 +45,7 @@ Consider the following suggestions to deliver professional report layouts, ease 
 
     Also, be sure to use _watermark styled images_. Generally, watermark styled images have a transparent background (or have the same background color used by the report). They also use faint colors. Common examples of watermark styled images include the company logo, or sensitivity labels like "Draft" or "Confidential".
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

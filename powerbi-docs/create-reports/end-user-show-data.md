@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
 
-A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind the scenes, Power BI shows you the data that's being used to create a visual. The ability to do this is available in Power BI Desktop and in the Power BI service and is available for almost all visual types. 
+A Power BI visual is constructed using data from underlying semantic models. If you're interested in seeing behind the scenes, Power BI shows you the data that's being used to create a visual. The ability to do this is available in Power BI Desktop and in the Power BI service and is available for almost all visual types. 
 
 You can also [export the data to Excel](/power-bi/visuals/power-bi-visualization-export-data) for visuals in a report and visuals on a dashboard.   
 
@@ -70,7 +70,7 @@ When you select **Data point table** for a data element, the Power BI Desktop ca
 
 ## Display the data used to create a report visual
 
-In the Power BI service, report visuals are created from the data in the underlying dataset. **Show as a table** displays the data underlying a visual.  **Show data point as a table** displays the underlying data used to calculate a single data point. 
+In the Power BI service, report visuals are created from the data in the underlying semantic model. **Show as a table** displays the data underlying a visual.  **Show data point as a table** displays the underlying data used to calculate a single data point. 
 
 :::image type="content" source="media/end-user-show-data/power-bi-data-table-point.png" alt-text="Screenshot that shows where to find the Show as a table feature in a shortcut menu in the Power BI service.":::
 
@@ -135,7 +135,7 @@ To return to the report, select **Back to report** from the upper left corner.
 * Are not supported when you are connected to a live multidimensional (MD) model.
  
 
-## Next steps
+## Related content
 
 There are all sorts of report formatting and data management features in **Power BI**. Check out the following resources for a few examples:
 

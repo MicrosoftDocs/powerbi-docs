@@ -1,16 +1,16 @@
 ---
 title: Customize X-axis and Y-axis properties
 description: 'Customize X-axis and Y-axis properties'
-author: mihart
-ms.author: mihart
+author: miguelmyersMS
+ms.author: miguelmyers
 ms.reviewer: 'mihart'
 ms.custom: 
-   - video-9DeAKM4SNJM
+   - video-removed
    - sample-retail-analysis-sample-PBIX
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to 
-ms.date: 03/31/2023
+ms.date: 04/17/2023
 LocalizationGroup: Visualizations
 ---
 
@@ -19,13 +19,6 @@ LocalizationGroup: Visualizations
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 In this tutorial, you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes. Pie charts, for example, don't have axes. And customization options vary from visual to visual. There are too many options to cover in a single article, so we'll take a look at some of the most-used customizations and get comfortable using the visual **Format** pane in the Power BI report canvas.  
-
-Watch Amanda customize her X- and Y-axes. She'll also demonstrate the different ways to control concatenation when using drill-down and drill-up options.
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9DeAKM4SNJM" frameborder="0" allowfullscreen></iframe>
 
 ## Prerequisites
 
@@ -244,7 +237,7 @@ For line, bar, column, area, and combo charts, you can invert the y-axis, puttin
 
 - For continuous axis tick marks, you cannot control the format string. Power BI chooses the best tick interval based on your data range, and creates a minimal format string for this unit interval, to preserve space. Date values will be localized based on your system or browser locale.
 
-## Next steps
+## Related content
 
 - [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 

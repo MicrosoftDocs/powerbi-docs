@@ -1,13 +1,14 @@
 ---
 title: Composite model guidance in Power BI Desktop
 description: Guidance for developing Power BI composite models.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 03/24/2023
+ms.custom: fabric-cat
+ms.date: 11/10/2023
 ---
 
 # Composite model guidance in Power BI Desktop
@@ -21,12 +22,12 @@ This article targets data modelers developing Power BI composite models. It desc
 
 ## Composite model use cases
 
-By definition, a composite model combines multiple _source groups_. A source group can represent imported data or a connection to a DirectQuery source. A DirectQuery source can be either a relational database or another tabular model, which can be a Power BI dataset or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). When a tabular model connects to another tabular model, it's known as _chaining_. For more information, see [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services#chaining).
+By definition, a composite model combines multiple _source groups_. A source group can represent imported data or a connection to a DirectQuery source. A DirectQuery source can be either a relational database or another tabular model, which can be a Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or an [Analysis Services tabular model](/analysis-services/tabular-models/tabular-models-ssas?view=asallproducts-allversions&preserve-view=true). When a tabular model connects to another tabular model, it's known as _chaining_. For more information, see [Using DirectQuery for Power BI semantic models and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services#chaining).
 
 > [!NOTE]
 > When a model connects to a tabular model but doesn't extend it with additional data, it's not a composite model. In this case, it's a DirectQuery model that connects to a remote model—so it comprises just the one source group. You might create this type of model to modify source model object properties, like a table name, column sort order, or format string.
 
-Connecting to tabular models is especially relevant when extending an _enterprise semantic model_ (when it's a Power BI dataset or Analysis Services model). An enterprise semantic model is fundamental to the development and operation of a data warehouse. It provides an abstraction layer over the data in the data warehouse to present business definitions and terminology. It's commonly used as a link between physical data models and reporting tools, like Power BI. In most organizations, it's managed by a central team, and that's why it's described as _enterprise_. For more information, see the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) usage scenario.
+Connecting to tabular models is especially relevant when extending an _enterprise semantic model_ (when it's a Power BI semantic model or Analysis Services model). An enterprise semantic model is fundamental to the development and operation of a data warehouse. It provides an abstraction layer over the data in the data warehouse to present business definitions and terminology. It's commonly used as a link between physical data models and reporting tools, like Power BI. In most organizations, it's managed by a central team, and that's why it's described as _enterprise_. For more information, see the [enterprise BI](powerbi-implementation-planning-usage-scenario-enterprise-bi.md) usage scenario.
 
 You can consider developing a composite model in the following situations.
 
@@ -68,7 +69,7 @@ In summary, we recommend that you:
 
 - Consider carefully that a composite model is the right solution—while it allows model-level integration of different data sources, it also introduces design complexities with possible consequences (described later in this article).
 - Set the storage mode to **DirectQuery** when a table is a fact-type table storing large data volumes, or when it needs to deliver near real-time results.
-- Consider using hybrid mode by defining an incremental refresh policy and real-time data, or by partitioning the fact table by using [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions&preserve-view=true), [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=asallproducts-allversions&preserve-view=true), or a third-party tool. For more information, see [Incremental refresh and real-time data for datasets](../connect-data/incremental-refresh-overview.md) and the [Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
+- Consider using hybrid mode by defining an incremental refresh policy and real-time data, or by partitioning the fact table by using [TOM](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=asallproducts-allversions&preserve-view=true), [TMSL](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=asallproducts-allversions&preserve-view=true), or a third-party tool. For more information, see [Incremental refresh and real-time data for semantic models](../connect-data/incremental-refresh-overview.md) and the [Advanced data model management](powerbi-implementation-planning-usage-scenario-advanced-data-model-management.md) usage scenario.
 - Set the storage mode to **Dual** when a table is a dimension-type table, and it will be queried together with DirectQuery or hybrid fact-type tables that are in the same source group.
 - Set appropriate refresh frequencies to keep the model cache for dual and hybrid tables (and any dependent calculated tables) in sync with the source database(s).
 - Strive to ensure data integrity across source groups (including the model cache) because limited relationships will eliminate rows in query results when related column values don't match.
@@ -180,7 +181,7 @@ Calculated columns added to a DirectQuery table that source their data from a re
 
 A calculated column expression on a remote DirectQuery table is limited to intra-row evaluation only. However, you can author such an expression, but it will result in an error when it's used in a visual. For example, if you add a calculated column to a remote DirectQuery table named **DimProduct** by using the expression `[Product Sales] / SUM (DimProduct[ProductSales])`, you'll be able to successfully save the expression in the model. However, it will result in an error when it's used in a visual because it violates the intra-row evaluation restriction.
 
-In contrast, calculated columns added to a remote DirectQuery table that's a tabular model, which is either a Power BI dataset or Analysis Services model, are more flexible. In this case, all DAX functions are allowed because the expression will be evaluated within the source tabular model.
+In contrast, calculated columns added to a remote DirectQuery table that's a tabular model, which is either a Power BI semantic model or Analysis Services model, are more flexible. In this case, all DAX functions are allowed because the expression will be evaluated within the source tabular model.
 
 Many expressions require Power BI to materialize the calculated column before using it as a group or filter, or aggregating it. When a calculated column is materialized over a large table, it can be costly in terms of CPU and memory, depending on the cardinality of the columns that the calculated column depends on. In this case, we recommend that you add those calculated columns to the source model.
 
@@ -189,7 +190,7 @@ Many expressions require Power BI to materialize the calculated column before us
 
 ### Calculation groups
 
-If calculation groups exist in a source group that connects to a Power BI dataset or an Analysis Services model, Power BI could return unexpected results. For more information, see [Calculation groups, query and measure evaluation](/power-bi/transform-model/desktop-composite-models#calculation-groups-query-and-measure-evaluation).
+If calculation groups exist in a source group that connects to a Power BI semantic model or an Analysis Services model, Power BI could return unexpected results. For more information, see [Calculation groups, query and measure evaluation](/power-bi/transform-model/desktop-composite-models#calculation-groups-query-and-measure-evaluation).
 
 ## Model design
 
@@ -237,13 +238,13 @@ For more information, see [Sync separate slicers](/power-bi/visuals/power-bi-vis
 
 Here's some other guidance to help you design and maintain composite models.
 
-- **Performance and scale:** If your reports were previously live connected to a Power BI dataset or Analysis Services model, the Power BI service could reuse visual caches across reports. After you convert the live connection to create a local DirectQuery model, reports will no longer benefit from those caches. As a result, you might experience slower performance or even refresh failures. Also, the workload for the Power BI service will increase, which might require you to scale up your capacity or distribute the workload across other capacities. For more information about data refresh and caching, see [Data refresh in Power BI](/power-bi/connect-data/refresh-data).
-- **Renaming:** We don't recommend that you rename datasets used by composite models, or rename their workspaces. That's because composite models connect to Power BI datasets by using the workspace and dataset names (and not their internal unique identifiers). Renaming a dataset or workspace could break the connections used by your composite model.
+- **Performance and scale:** If your reports were previously live connected to a Power BI semantic model or Analysis Services model, the Power BI service could reuse visual caches across reports. After you convert the live connection to create a local DirectQuery model, reports will no longer benefit from those caches. As a result, you might experience slower performance or even refresh failures. Also, the workload for the Power BI service will increase, which might require you to scale up your capacity or distribute the workload across other capacities. For more information about data refresh and caching, see [Data refresh in Power BI](/power-bi/connect-data/refresh-data).
+- **Renaming:** We don't recommend that you rename semantic models used by composite models, or rename their workspaces. That's because composite models connect to Power BI semantic models by using the workspace and semantic model names (and not their internal unique identifiers). Renaming a semantic model or workspace could break the connections used by your composite model.
 - **Governance:** We don't recommend that your _single version of the truth_ model is a composite model. That's because it would be dependent on other data sources or models, which if updated, could result in breaking the composite model. Instead, we recommended that you publish an enterprise semantic model as the single version of truth. Consider this model to be a reliable foundation. Other data modelers can then create composite models that extend the foundation model to create specialized models.
-- **Data lineage:** Use the [data lineage](/power-bi/collaborate-share/service-data-lineage) and [dataset impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features before publishing composite model changes. These features are available in the Power BI service, and they can help you to understand how datasets are related and used. It's important to understand that you can't perform impact analysis on external datasets that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
+- **Data lineage:** Use the [data lineage](/power-bi/collaborate-share/service-data-lineage) and [semantic model impact analysis](/power-bi/collaborate-share/service-dataset-impact-analysis) features before publishing composite model changes. These features are available in the Power BI service, and they can help you to understand how semantic models are related and used. It's important to understand that you can't perform impact analysis on external semantic models that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external semantic model, you need to navigate to the source workspace.
 - **Schema updates:** You should refresh your composite model in Power BI Desktop when schema changes are made to upstream data sources. You'll then need to republish the model to the Power BI service. Be sure to thoroughly test calculations and dependent reports.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources.
 
@@ -251,7 +252,7 @@ For more information related to this article, check out the following resources.
 - [Model relationships in Power BI Desktop](/power-bi/transform-model/desktop-relationships-understand)
 - [DirectQuery models in Power BI Desktop](/power-bi/connect-data/desktop-directquery-about)
 - [Use DirectQuery in Power BI Desktop](/power-bi/connect-data/desktop-use-directquery)
-- [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services)
+- [Using DirectQuery for Power BI semantic models and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services)
 - [Storage mode in Power BI Desktop](/power-bi/transform-model/desktop-storage-mode)
 - [User-defined aggregations](/power-bi/transform-model/aggregations-advanced)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -1,12 +1,13 @@
 ---
 title: "Auto date/time guidance in Power BI Desktop"
 description: Guidance for using auto date/time functionality in Power BI Desktop.
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 07/02/2022
 ---
 
@@ -44,7 +45,7 @@ When your data source already defines a date dimension table, this table should 
 
 If the _Auto date/time_ option isn't relevant to your projects, we recommend that you disable the global _Auto date/time_ option. It will ensure that all new Power BI Desktop files you create won't enable the _Auto date/time_ option.
 
-## Next steps
+## Related content
 
 For more information related to this article, check out the following resources:
 

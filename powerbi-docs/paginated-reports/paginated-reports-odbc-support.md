@@ -7,7 +7,7 @@ ms.reviewer: swgupt
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/04/2023
+ms.date: 09/27/2023
 ---
 
 # Power BI gateway and Report Builder support for ODBC data sources
@@ -61,11 +61,6 @@ Follow these steps to set up the Power BI gateway for ODBC data sources.
     - Windows
 
 1. When you select the **Add** button, the Power BI service connects to the ODBC data source using the supplied connection string and credentials to validate that the gateway is able to connect.
-
-    >[!NOTE]
-    >For the public preview, the Anonymous authentication method isn't supported. You can select it for an ODBC data source, but you receive an "Unexpected error occurred" like the following one when rendering the report:
-
-    :::image type="content" source="media/paginated-reports-odbc-support/anonymous-error.png" alt-text="Screenshot of error message that says anonymous authentication isn't supported.":::
 
 ### ODBC connection string examples
 

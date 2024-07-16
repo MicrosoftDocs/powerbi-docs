@@ -8,21 +8,21 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: engagement-fy23
-ms.date: 11/18/2022
+ms.date: 06/03/2024
 ---
 
 # Generate an embed token
 
 **APPLIES TO:** :::image type="icon" source="../../includes/media/yes-icon.svg" border="false":::&nbsp;App&nbsp;owns&nbsp;data :::image type="icon" source="../../includes/media/no-icon.svg" border="false":::&nbsp;User&nbsp;owns&nbsp;data
 
-[Generate token](/rest/api/power-bi/embed-token/generate-token) is a REST API that lets you generate a token for embedding a Power BI report or dataset in a web app or a portal. It can generate a token for a single item or for multiple reports or datasets. The token is used to authorize your request against the Power BI service.
+[Generate token](/rest/api/power-bi/embed-token/generate-token) is a REST API that lets you generate a token for embedding a Power BI report or semantic model in a web app or a portal. It can generate a token for a single item or for multiple reports or semantic models. The token is used to authorize your request against the Power BI service.
 
 The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials in the app (effective identity).
 
 After successful authentication, access to the relevant data is granted.
 
 > [!NOTE]
-> [Generate token](/rest/api/power-bi/embed-token/generate-token) is the newer, version 2 API that works for both reports and datasets, and single or multiple items. It's preferred over the legacy version 1 APIs. For dashboards and tiles use the V1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) and [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group).
+> [Generate token](/rest/api/power-bi/embed-token/generate-token) is the newer, version 2 API that works for both reports and semantic models, and single or multiple items. It's preferred over the legacy version 1 APIs. For dashboards and tiles use the V1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) and [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group).
 
 ## Securing your data
 
@@ -44,7 +44,7 @@ In the generate token APIs, the *GenerateTokenRequest* section describes the tok
 
 With [Row Level Security (RLS)](embedded-row-level-security.md), the identity you use can be different from the identity of the service principal or master user you're using to generating the token. By using different identities, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
-If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). When you don't use the *EffectiveIdentity* parameter, the token has access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire dataset. However, you can't use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
+If you're using RLS, you can sometimes leave out the user's identity (the *EffectiveIdentity* parameter). When you don't use the *EffectiveIdentity* parameter, the token has access to the entire database. This method can be used to grant access to users such as admins and managers, who have permission to view the entire semantic model. However, you can't use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
@@ -60,17 +60,17 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >[!NOTE]
 >Service principals must always provide the following information:
 >
->* An identity for any item with an RLS dataset.
->* For an SSO dataset, an effective RLS identity with the contextual (SSO) identity defined.
+>* An identity for any item with an RLS semantic model.
+>* For an SSO semantic model, an effective RLS identity with the contextual (SSO) identity defined.
 
-### DirectQuery for Power BI datasets
+### DirectQuery for Power BI semantic models
 
-To embed Power BI report that has a dataset with a Direct Query connection to another Power BI dataset, do the following:
+To embed Power BI report that has a semantic model with a Direct Query connection to another Power BI semantic model, do the following:
 
 * In the Power BI portal, set the **XMLA endpoint** to *Read Only* or *Read Write* as described in [enable read-write for a Premium capacity](../../enterprise/service-premium-connect-tools.md#to-enable-read-write-for-a-premium-capacity). You only need to do this once per capacity.
 * Generate a [multi-resource embed token](/rest/api/power-bi/embed-token/generate-token)
   * Specify all dataset IDs in the request.
-  * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each dataset in the request.
+  * Set the [`XmlaPermissions`](/rest/api/power-bi/embed-token/generate-token#xmlapermissions) to *Read Only* for each semantic model in the request.
   * For each Single Sign-on (SSO) enabled data source, provide the identity blob for the data source in the [`DatasourceIdentity`](/rest/api/power-bi/embed-token/generate-token#datasourceidentity).
 
 ## Renew tokens before they expire
@@ -79,7 +79,7 @@ Tokens come with a time limit. This means that after embedding a Power BI item, 
 
 ## Dashboards and tiles
 
-The [Generate token](/rest/api/power-bi/embed-token/generate-token) works for reports and datasets. To generate an embed token for a dashboard or tile, use the version 1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embed-token/dashboards-generate-token-in-group) or [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group) APIs. These APIs generate tokens for only one item at a time. You can't generate a token for multiple items.
+The [Generate token](/rest/api/power-bi/embed-token/generate-token) works for reports and semantic models. To generate an embed token for a dashboard or tile, use the version 1 [Dashboards GenerateTokenInGroup](/rest/api/power-bi/embed-token/dashboards-generate-token-in-group) or [Tiles GenerateTokenInGroup](/rest/api/power-bi/embed-token/tiles-generate-token-in-group) APIs. These APIs generate tokens for only one item at a time. You can't generate a token for multiple items.
 
 For these APIs:
 
@@ -95,13 +95,13 @@ For these APIs:
 
 ## Considerations and limitations
 
-* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Azure AD token used to call the `GenerateToken` API. Therefore, if you use the same Azure AD token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
+* For security reasons, the lifetime of the embed token is set to the remaining lifetime of the Microsoft Entra token used to call the `GenerateToken` API. Therefore, if you use the same Microsoft Entra token to generate several embed tokens, the lifetime of the generated embed tokens will be shorter with each call.
 
-* If the dataset and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
+* If the semantic model and item to be embedded are in two different workspaces, the *service principal* or *master user* must be at least a member of both workspaces.
 
 * You can't create an embed token for [**My workspace**](../../consumer/end-user-workspaces.md#types-of-workspaces).
 
-## Next steps
+## Related content
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)

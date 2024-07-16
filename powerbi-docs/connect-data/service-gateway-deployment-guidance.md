@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/03/2023
+ms.date: 05/23/2024
 LocalizationGroup: Gateways
 ---
 
@@ -55,7 +55,7 @@ The location of the gateway installation can have significant effect on your que
 
 ![Screenshot shows the question mark where you can determine your Power BI tenant location.](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
-If you intend to use the Power BI service gateway with Azure Analysis Services, be sure that the data regions in both match. For more information about how to set data regions for multiple services, watch [this video](https://guyinacube.com/2018/01/power-bi-azure-analysis-services-gateway-data-region/).
+If you intend to use the Power BI service gateway with Azure Analysis Services, be sure that the data regions in both match.
 
 ### Optimizing performance
 
@@ -73,7 +73,7 @@ By default, the gateway spools data before returning it to the dataset, potentia
 
 If installing the gateway on an Azure Virtual Machine, ensure optimal networking performance by configuring accelerated networking. To learn more, see [Create a Windows VM with accelerated networking](/azure/virtual-network/create-vm-accelerated-networking-powershell).
 
-## Next steps
+## Related content
 
 * [Configure proxy settings](/data-integration/gateway/service-gateway-proxy)  
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  

@@ -3,12 +3,11 @@ title: Get started with Power BI Desktop
 description: Get started with Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
-ms.reviewer: ''
-ms.custom: contperf-fy21q1, intro-get-started
+ms.custom: intro-get-started
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: tutorial
-ms.date: 06/13/2022
+ms.date: 10/24/2023
 LocalizationGroup: Get started
 ---
 # Get started with Power BI Desktop
@@ -73,15 +72,18 @@ With Power BI Desktop installed, you're ready to connect to the ever-expanding w
 
 ![Screenshot of Power B I Desktop showing the Get Data tool.](media/desktop-getting-started/getdataweb.png)
 
-Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. The Bankrate.com [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) page has interesting data on this subject.
+Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. So you might want to find some information on the web about sunny locations.
 
 On the Power BI Desktop **Home** tab, select **Get Data** > **Web** to connect to a web data source. 
 
 ![Screenshot of Power B I Desktop showing the Web option of the Get Data tool.](media/desktop-getting-started/gsg_syw_2.png)
 
-In the **From Web** dialog box, paste the address *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* into the **URL** field, and select **OK**. 
+In the **From Web** dialog box, paste an address about sunny locations into the **URL** field, and select **OK**.
 
-![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/gettingstarted_8.png)
+![Screenshot of Power B I Desktop showing the From Web dialog box.](media/desktop-getting-started/getting-started-8.png)
+
+> [!NOTE]
+> The URL used in this example is fictitious, you can find your own data in various tables and sites on the web.
 
 If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
 
@@ -101,7 +103,7 @@ For more information about connecting to data, see [Connect to data in Power BI 
 Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
 
 > [!NOTE]
-> The table data used in this guide might change over time. As such, the steps you need to follow might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
+> The table data used in this guide is fictitious and for illustrative purposes. As such, the steps you need to follow with the data you find and use might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
 
 Shaping can mean *transforming* the data, such as renaming columns or tables, removing rows or columns, or changing data types. Power Query Editor captures these steps sequentially under **Applied Steps** in the **Query Settings** pane. Each time this query connects to the data source, those steps are carried out, so the data is always shaped the way you specify. This process occurs when you use the query in Power BI Desktop, or when anyone uses your shared query, such as in the Power BI service. 
 
@@ -298,7 +300,7 @@ To publish to the **Power BI** service from Power BI Desktop, from the **Home** 
 
 ![Screenshot of Power B I Desktop showing the Publish option.](media/desktop-getting-started/gsg_syw_1.png)
 
-You may be prompted to sign in to Power BI, or to select a destination.
+You might be prompted to sign in to Power BI, or to select a destination.
 
 When the publish process is complete, you see the following dialog:
 
@@ -346,7 +348,7 @@ There are many compelling data-related mash-ups and visualizations you can do wi
 - Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported. If you contact support for Power BI Desktop, you'll be asked to upgrade to the most recent version.
 - For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called [Power BI Desktop for Power BI Report Server](../report-server/install-powerbi-desktop.md), which updates three times a year. This article describes standard Power BI Desktop.
 
-## Next steps
+## Related content
 Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When you're using the diagnostics port, *making any changes to the model isn't supported. Changes to the model may lead to corruption and data loss.*
 
 For more information on the many capabilities of Power BI Desktop, check out the following resources:

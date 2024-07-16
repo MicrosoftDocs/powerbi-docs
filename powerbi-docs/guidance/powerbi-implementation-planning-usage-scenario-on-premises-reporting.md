@@ -1,12 +1,13 @@
 ---
 title: "Power BI usage scenarios: On-premises reporting"
 description: "Learn how Power BI on-premises reporting is about customer-managed reporting."
-author: davidiseminger
-ms.author: davidi
+author: peter-myers
+ms.author: v-myerspeter
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
+ms.custom: fabric-cat
 ms.date: 02/07/2022
 ---
 
@@ -16,31 +17,34 @@ ms.date: 02/07/2022
 
 The *on-premises reporting* scenario is one of several *hybrid and custom scenarios* for deploying Power BI solutions without using the Power BI service.
 
-This scenario involves using [Power BI Report Server](../report-server/get-started.md), which is an on-premises portal for publishing, sharing, and consuming business intelligence content within the organizational network. It's useful when the organization needs an alternative to the cloud-based Power BI service for deploying some (or all) BI content. For example, a fully customer-managed platform may be necessary for regulatory, legal, or intellectual property reasons.
+This scenario involves using [Power BI Report Server](../report-server/get-started.md), which is an on-premises portal for publishing, sharing, and consuming business intelligence content within the organizational network. It's useful when the organization needs an alternative to the cloud-based Power BI service for deploying some (or all) BI content. For example, a fully customer-managed platform could be necessary for regulatory, legal, or intellectual property reasons.
 
 ## Scenario diagram
 
 The following diagram depicts a high-level overview of the most common user actions and Power BI components to support on-premises reporting. The focus is on using Power BI Report Server, which runs on a Windows server within the organizational network.
 
-:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-inline.png" alt-text="Image shows a diagram of on-premises reporting, which is about delivering a customer-managed portal. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.png" border="false":::
+:::image type="content" source="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-inline.svg" alt-text="Diagram shows on-premises reporting, which is about delivering an internally managed reporting solution. Items in the diagram are described in the table below." lightbox="media/powerbi-implementation-planning-usage-scenario-on-premises-reporting/usage-scenario-on-premises-reporting-expanded.svg" border="false":::
+
+> [!TIP]
+> We encourage you to [download the scenario diagram](powerbi-implementation-planning-usage-scenario-diagrams.md#on-premises-reporting) if you'd like to embed it in your presentation, documentation, or blog post—or print it out as a wall poster. Because it's a Scalable Vector Graphics (SVG) image, you can scale it up or down without any loss of quality.
 
 The scenario diagram depicts the following user actions, tools, and features:
 
 | **Item** | **Description** |
 | --- | --- |
-| ![Item 1.](media/common/icon-01-red-30x30.png) | A Power BI content creator builds a BI solution. |
-| ![Item 2.](media/common/icon-02-red-30x30.png) | [Power BI Desktop for Report Server](../report-server/install-powerbi-desktop.md) connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
-| ![Item 3.](media/common/icon-03-red-30x30.png) | Data model development and report creation are done in Power BI Desktop for Report Server. It generates a specific type of Power BI Desktop file (.pbix) that can be published to Power BI Report Server. |
-| ![Item 4.](media/common/icon-04-red-30x30.png) | The report creator can also build paginated reports using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md). This tool generates a Report Definition Language file (.rdl) that can be published to Power BI Report Server. |
-| ![Item 5.](media/common/icon-05-red-30x30.png) | The report creator can also develop reports using Excel. The Excel workbook file (.xlsx) can be published to Power BI Report Server. |
-| ![Item 6.](media/common/icon-06-red-30x30.png) | When ready, the content creator publishes their file to Power BI Report Server. |
-| ![Item 7.](media/common/icon-07-red-30x30.png) | Content is published to a [folder](../report-server/getting-around.md) in Power BI Report Server. |
-| ![Item 8.](media/common/icon-08-red-30x30.png) | Report consumers view reports published to Power BI Report Server. |
-| ![Item 9.](media/common/icon-09-red-30x30.png) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
-| ![Item 10.](media/common/icon-10-red-30x30.png) | Server administrators manage the Windows server infrastructure. |
-| ![Item 11.](media/common/icon-11-red-30x30.png) | Database administrators manage Power BI Report Server, including the Report Server databases, and SQL Server Agent. |
-| ![Item 12.](media/common/icon-12-red-30x30.png) | SQL Server Agent jobs periodically [refresh import datasets](../report-server/configure-scheduled-refresh.md). |
-| ![Item 13.](media/common/icon-13-red-30x30.png) | Administrators oversee and monitor activity in Power BI Report Server. |
+| ![Item 1.](../media/legend-number/legend-number-01-fabric.svg) | A Power BI content creator builds a BI solution. |
+| ![Item 2.](../media/legend-number/legend-number-02-fabric.svg) | [Power BI Desktop for Report Server](../report-server/install-powerbi-desktop.md) connects to data from one or more data sources. Queries and data mashups, which combine multiple sources, are developed in the [Power Query Editor](/power-query/power-query-what-is-power-query). |
+| ![Item 3.](../media/legend-number/legend-number-03-fabric.svg) | Data model development and report creation are done in Power BI Desktop for Report Server. It generates a specific type of Power BI Desktop file (.pbix) that can be published to Power BI Report Server. |
+| ![Item 4.](../media/legend-number/legend-number-04-fabric.svg) | The report creator can also build paginated reports using [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md). This tool generates a Report Definition Language file (.rdl) that can be published to Power BI Report Server. |
+| ![Item 5.](../media/legend-number/legend-number-05-fabric.svg) | The report creator can also develop reports using Excel. The Excel workbook file (.xlsx) can be published to Power BI Report Server. |
+| ![Item 6.](../media/legend-number/legend-number-06-fabric.svg) | When ready, the content creator publishes their file to Power BI Report Server. |
+| ![Item 7.](../media/legend-number/legend-number-07-fabric.svg) | Content is published to a [folder](../report-server/getting-around.md) in Power BI Report Server. |
+| ![Item 8.](../media/legend-number/legend-number-08-fabric.svg) | Report consumers view reports published to Power BI Report Server. |
+| ![Item 9.](../media/legend-number/legend-number-09-fabric.svg) | Report consumers can also view reports using [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md). |
+| ![Item 10.](../media/legend-number/legend-number-10-fabric.svg) | Server administrators manage the Windows server infrastructure. |
+| ![Item 11.](../media/legend-number/legend-number-11-fabric.svg) | Database administrators manage Power BI Report Server, including the report server databases, and SQL Server Agent. |
+| ![Item 12.](../media/legend-number/legend-number-12-fabric.svg) | SQL Server Agent jobs periodically [refresh import semantic models](../report-server/configure-scheduled-refresh.md)—[previously known as datasets](../connect-data/service-datasets-rename.md). |
+| ![Item 13.](../media/legend-number/legend-number-13-fabric.svg) | Administrators oversee and monitor activity in Power BI Report Server. |
 
 ## Key points
 
@@ -76,11 +80,13 @@ Additional configurations must be done to enable remote mobile access to Power B
 
 There are two ways to [license Power BI Report Server](../report-server/get-started.md#licensing-power-bi-report-server): Power BI Premium and SQL Server Enterprise Edition with Software Assurance.
 
-With the purchase of Power BI Premium capacity, Power BI Report Server may be installed on an on-premises server, provided it has the same number of cores as the capacity node's v-cores. This way, it's possible to adopt a hybrid approach supporting publication of content to the Power BI service (cloud) and to Power BI Report Server (on-premises or hosted cloud in Azure).
+[!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
+
+With the purchase of Power BI Premium capacity, Power BI Report Server can be installed on an on-premises server, provided it has the same number of cores as the capacity node's v-cores. This way, it's possible to adopt a hybrid approach supporting publication of content to the Power BI service (cloud) and to Power BI Report Server (on-premises or hosted cloud in Azure).
 
 > [!NOTE]
 > When licensing Power BI Report Server as part of the Premium capacity feature set, it's only available with the P SKUs. The other capacity-based SKUs (EM and A SKUs) do not offer this benefit, nor does Power BI Premium Per User (PPU).
 
-## Next steps
+## Related content
 
 For other useful scenarios to help you with Power BI implementation decisions, see the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) article.

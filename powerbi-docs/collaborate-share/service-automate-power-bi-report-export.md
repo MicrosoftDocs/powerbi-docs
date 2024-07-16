@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 10/24/2022
+ms.date: 06/19/2024
 LocalizationGroup: Get started
 ---
 # Export and email a Power BI report with Power Automate
@@ -54,6 +54,9 @@ In this task, you create a simple flow from scratch. The flow exports a Power BI
  
     :::image type="content" source="media/service-automate-power-bi-report-export/automate-report-export-file-10.png" alt-text="Screenshot of the export to file for Power BI reports.":::
 
+    > [!NOTE]
+    > If you export multiple pages to PNG format, a series of *.png* files, each file representing one report page, will be compressed into a *.zip* file which will be attached to your email.
+
 11. Optionally, indicate specific pages to export in the **Pages pageName -1** field. The page name parameter is different from the display page name. To find the page name, navigate to the page in the Power BI service, and copy the last portion of the URL as shown in the example. 
  
     `https://app.powerbi.com/groups/workspaceGuid/reports/reportGuid/xxxxxxxxxx`
@@ -80,15 +83,15 @@ Optionally, if you want to send the report based on row-level security (RLS), yo
 :::image type="content" source="media/service-automate-power-bi-report-export/export-power-automate-rls-fields.png" alt-text="Screenshot of updating Identities Username fields.":::
 
 - **Identities Username - 1** = The effective username reflected by a token for applying RLS rules. For an on-premises model, username can be composed of alpha-numerical characters, or any of the following characters: `'.', '-', '_', '!', '#', '^', '~', '\', and '@'`. For cloud models, username can be composed of all ASCII characters. Also, username can be up to 256 characters, and can't contain spaces.
-- **Identities Dataset - 1** = You can get this value by going to the settings of the dataset, and then copying the dataset ID from the address bar, as shown in this example and in the following image:
+- **Identities Semantic model - 1** = You can get this value by going to the settings of the semantic model, and then copying the semantic model ID from the address bar, as shown in this example and in the following image:
 
     `https://app.powerbi.com/groups/me/settings/datasets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 
-    :::image type="content" source="media/service-automate-power-bi-report-export/export-power-automate-rls-dataset-id.png" alt-text="Screenshot of an example dataset ID.":::
+    :::image type="content" source="media/service-automate-power-bi-report-export/export-power-automate-rls-dataset-id.png" alt-text="Screenshot of an example semantic model ID.":::
 
 - **Identities Roles Item - 1** = RLS name defined in the report
 
-## Next steps
+## Related content
 
 - [Integrate Power BI data alerts with Power Automate](service-flow-integration.md)
 - [Get started with Power Automate](/power-automate/getting-started/)

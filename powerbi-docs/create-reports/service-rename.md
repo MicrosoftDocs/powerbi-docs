@@ -1,6 +1,6 @@
 ---
-title: Rename dashboards, reports, workspaces, report pages, datasets
-description: Learn how to rename a dashboard, report, report page, workbook, dataset, app, and workspace in the Power BI service.
+title: Rename dashboards, reports, workspaces, report pages, semantic models
+description: Learn how to rename a dashboard, report, report page, workbook, semantic model, app, and workspace in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -14,7 +14,7 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-This article teaches you how to rename a dashboard, report, report page, workbook, dataset, app, and workspace in Power BI service.
+This article teaches you how to rename a dashboard, report, report page, workbook, semantic model, app, and workspace in Power BI service.
 
 **Can I change the name?**
 
@@ -23,10 +23,10 @@ This article teaches you how to rename a dashboard, report, report page, workboo
 | Dashboard in a workspace |Yes |No |
 | Report in a workspace |Yes |No |
 | Workbook in a workspace |Yes |No |
-| Dataset in a workspace |Yes |No |
+| Semantic model in a workspace |Yes |No |
 | workspace |Yes, if you're the owner or have Admin permissions |No |
 | Published apps |Not from the App screen, but the app name can be changed from the workspace and republished with a new name if you have Admin permissions |No |
-| App content (dashboard, report, workbook, dataset) |Not from the App screen, but the app's content can be renamed from the workspace and republished with a new name if you have Admin permissions |No |
+| App content (dashboard, report, workbook, semantic model) |Not from the App screen, but the app's content can be renamed from the workspace and republished with a new name if you have Admin permissions |No |
 | Content in **Shared with me** |No |No |
 
 ## Rename a dashboard, report, or workbook
@@ -38,13 +38,13 @@ This article teaches you how to rename a dashboard, report, report page, workboo
 
    :::image type="content" source="media/service-rename/power-bi-rename-dashboard-3.png" alt-text="Screenshot of the Settings for Getting Started in Power BI dialog.":::
 
-## Rename a dataset
+## Rename a semantic model
 
-1. Start in a workspace and select the **Datasets + dataflows** tab.
+1. Start in a workspace and select the **Semantic models + dataflows** tab.
 
 2. Hover over the item to rename, select **More options** (...), and choose **Rename**.
 
-      :::image type="content" source="media/service-rename/power-bi-rename-datasets-2.png" alt-text="Screenshot of My workspace in the Power BI service, highlighting Datasets and dataflows.":::
+      :::image type="content" source="media/service-rename/power-bi-rename-datasets-2.png" alt-text="Screenshot of My workspace in the Power BI service, highlighting Semantic models and dataflows.":::
 
    > [!NOTE]
    > The options in the dropdown will vary.
@@ -86,6 +86,6 @@ Don't like the name of a page in your Power BI report? A new name is just a clic
 ## Considerations and troubleshooting
 
 * If the item to be renamed has been shared with you, or is part of an app, you won't see the gear icon and you won't have access to Settings.
-* On the **Datasets** tab, if you don't see **More options** (...), expand your browser window.
+* On the **Semantic models** tab, if you don't see **More options** (...), expand your browser window.
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Workspaces in Power BI, Get started with workspaces
 ms.topic: conceptual
-ms.date: 03/13/2023
-ms.custom: contperf-fy20q4
+ms.date: 04/17/2024
+ms.custom: fabric
 LocalizationGroup: Share your work
 ---
 
 # Workspaces in Power BI
 
-*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. This article describes workspaces, how to manage access to them, and how to use them to create and distribute apps.
+*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, semantic models, and paginated reports. This article describes workspaces, how to manage access to them, and how to use them to create and distribute apps.
 
 Ready to get started? Read [Create a workspace](service-create-the-new-workspaces.md).
 
@@ -28,7 +28,7 @@ Here are some useful tips about working with workspaces.
 - **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer.  Read more about [workspace roles](#roles-and-licenses) in this article.
 - **Contact list**: Specify who receives notification about workspace activity. Read more about [workspace contact lists](#workspace-contact-list) in this article.
 - **Create template apps**: You can create *template apps* in workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read the article about [template apps](../connect-data/service-template-apps-overview.md).
-- **Share datasets**: You can share datasets between workspaces. Read more about [shared datasets](../connect-data/service-datasets-across-workspaces.md).
+- **Share semantic models**: You can share semantic models between workspaces. Read more about [shared semantic models](../connect-data/service-datasets-across-workspaces.md).
 
 This article explains these features in more detail.
 
@@ -60,14 +60,14 @@ Roles let you manage who can do what in workspaces, so team members can collabor
 - **Licensing enforcement**: Publishing reports to a workspace enforces existing licensing rules. Users collaborating in workspaces or sharing content to others in the Power BI service need a Power BI Pro or Premium Per User (PPU) license. Users without a Pro or PPU license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 - **Read-only workspaces**: The Viewer role in workspaces gives users read-only access to the content in a workspace.
 - **Users without a Pro or Premium Per User (PPU) license** can access a workspace if the workspace is in a Power BI Premium capacity, but only if they have the Viewer role.
-- **Allow users to export data**: Even users with the Viewer role in the workspace can export data if they have Build permission on the datasets in that workspace. Read more about [Build permission for datasets](../connect-data/service-datasets-build-permissions.md).
+- **Allow users to export data**: Even users with the Viewer role in the workspace can export data if they have Build permission on the semantic models in that workspace. Read more about [Build permission for semantic models](../connect-data/service-datasets-build-permissions.md).
 - **Assign user groups to workspace roles**: You can add Active Directory security groups, distribution lists, or Microsoft 365 groups to these roles, for easier user management.
 
 See the article [Roles in workspaces](service-roles-new-workspaces.md) for more details about the different roles.
 
 ## Administering and auditing workspaces
 
-Administration for workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal-workspace.md#create-workspaces-new-workspace-experience) in the "Workspace settings" article.
+Administration for workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](/fabric/admin/portal-workspace#create-workspaces) in the "Workspace settings" article.
 
 Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal-workspaces.md) in the "Admin portal" article.
 
@@ -88,13 +88,12 @@ Read more about [Power BI auditing](../admin/service-admin-auditing.md).
 
 Limitations to be aware of:
 
-- Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset.
+- The total number of semantic models and reports in a workspace can't exceed a thousand.
 - Power BI publisher for Excel isn't supported.
 - Certain special characters aren't supported in workspace names when using an XMLA endpoint. As a workaround, use URL encoding of special characters, for example, for a forward slash **/**, use **%2F**.
 - A user or a [service principal](../enterprise/service-premium-service-principal.md) can be a member of up to 1,000 workspaces.
 
-
-## Next steps
+## Related content
 
 * [Create workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)

@@ -58,7 +58,7 @@ To understand how your end users can use the Power BI app on their device, revie
 - [Work or school apps for iOS](/intune-user-help/use-managed-apps-on-your-device-ios#how-do-i-know-im-using-a-managed-apps)
 - [Managed work and school apps for Android](/intune-user-help/use-managed-apps-on-your-device-android)
 
-## Next steps
+## Related content
 
 - [How to create and assign app protection policies](/intune/app-protection-policies)
 - [What are the Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md)  

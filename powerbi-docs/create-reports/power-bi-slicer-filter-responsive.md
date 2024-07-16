@@ -76,7 +76,7 @@ You can follow the same steps to make a time or range slicer responsive. After y
 - New round handlebars on the sliders optimize touch interactions.
 - When a visual becomes too small to be useful, it becomes an icon representing the visual type in its place. To interact with it, just double-tap to open it in focus mode. This saves valuable space on the report page without losing the functionality.
 
-## Next steps
+## Related content
 
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
 - More questions? [Ask the Power BI Community](https://community.powerbi.com/)
