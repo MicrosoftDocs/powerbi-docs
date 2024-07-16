@@ -270,7 +270,6 @@ There are still many functional gaps between the model view in Power BI desktop 
 * Connecting to new data sources
 * Transforming data using Power Query editor
 * View as dialog
-* Autodetect relationships
 * Q&A setup and configuration including editing synonyms
 * Classifying sensitivity of your report
 * External tools integration
