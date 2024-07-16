@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2024
+ms.date: 07/15/2024
 ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
 ---
@@ -17,14 +17,16 @@ Administrators can determine whether to enable or disable self-service sign-up. 
 
 Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Fabric (free) licenses for your organization and assign them to all users.
 
+Turning off self-service purchase keeps users from performing actions that require a paid license. These actions include sharing, exporting, and creating workspaces for collaboration. 
+
 > [!NOTE]
->If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the setting might be disabled to block users from signing up individually. Your CSP can act as the global admin for your organization, requiring that you contact them to help you change this setting.
+>If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the settings might be disabled to block users from signing up individually. Your CSP can act as the global admin for your organization, requiring that you contact them to help you change this setting.
 
 ## When to use self-service sign-up and purchase
 
-### Use self-service sign-up when
+### Use self-service when
 
-- Your large and decentralized organization (work or school) gives individuals the flexibility to purchase SaaS (Software as a service) licenses for their own use.
+- Your large and decentralized organization (work or school) gives individuals the flexibility to try or purchase SaaS (Software as a service) licenses for their own use.
 - Your one-person or small organization purchases only one or a few Power BI Pro licenses.
 - Individuals want to try Power BI and become proficient before purchasing a subscription for the entire organization.
 - Current users with a free license want to create and share content and upgrade to a 60-day trial of the paid features of Power BI.
