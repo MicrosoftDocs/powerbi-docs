@@ -141,13 +141,13 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * You might encounter issues if you use unsupported browser versions. For a list of browsers that Power BI supports, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 
-* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin,” you can't log in to view your embedded content because MSAL doesn't support this header. Instead, choose either "restrict-properties" (for Chromium-based browsers) or "same-origin-allow-popups." Alternatively, if you can't change the Cross-Origin-Opener-Policy, link to the embedded URL directly instead of embedding it in an iframe.
+* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin,” you can't sign in to view your embedded content because MSAL doesn't support this header. Instead, choose either "restrict-properties" (for Chromium-based browsers) or "same-origin-allow-popups." Alternatively, if you can't change the Cross-Origin-Opener-Policy, link to the embedded URL directly instead of embedding it in an iframe.
 
 * The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
 * To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They are blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
+* The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They're blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
 
 * The automatic authentication capabilities don't work when they're embedded in applications, including in mobile and desktop applications.
 
