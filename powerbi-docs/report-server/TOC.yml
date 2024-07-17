@@ -92,12 +92,10 @@
         href: configure-kerberos-powerbi-reports.md
       - name: "Configure mobile app access remotely"
         href: configure-powerbi-mobile-apps-remote.md
-      - name: "Configure a report server with Azure Application Proxy"
-        href: azure-application-proxy.md 
+      - name: "Configure a report server with Microsoft Entra application proxy"
+        href: microsoft-entra-application-proxy.md
       - name: "Configure WAP and AD FS"
         href: connect-adfs-wap-report-server.md
-      - name: "Configure a report server with Microsoft Entra application proxy"
-        href: azure-application-proxy.md
       - name: "Remote mobile access with Microsoft Entra ID"
         href: /entra/identity/app-proxy/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
