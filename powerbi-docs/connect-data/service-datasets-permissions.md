@@ -7,7 +7,7 @@ ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 06/04/2024
+ms.date: 07/17/2024
 LocalizationGroup: Share your work
 ---
 # Semantic model permissions
