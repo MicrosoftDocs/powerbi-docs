@@ -214,15 +214,15 @@ To finish setting up your application, go to the **Users and groups** section an
 
 1. After successfully verifying the DNS entry for the custom domain, you should be able to see the status as **Verified** corresponding to the domain from the portal.
 
-    ![Domain names](media/microsoft-entra-application-proxy/azure-ad-custom-domain-names.png)
+    ![Domain names](media/microsoft-entra-application-proxy/microsoft-entra-custom-domain-names.png)
 
 1. Install Microsoft Entra Connect on the domain controller server and configure it to sync with Microsoft Entra ID.
 
-    ![Connect directories](media/microsoft-entra-application-proxy/azure-ad-connect-configuration.png)
+    ![Connect directories](media/microsoft-entra-application-proxy/microsoft-entra-connect-configuration.png)
 
 1. Once the Microsoft Entra ID has synced with on-premises AD, we see the following status from the Azure portal:
 
-    ![Azure portal status](media/microsoft-entra-application-proxy/azure-ad-connect-portal.png)
+    ![Azure portal status](media/microsoft-entra-application-proxy/microsoft-entra-connect-portal.png)
 
 1. Also, once the sync is successful, open the AD domains and trusts on the Domain controller. Right-click Active Directory Domains and Trusts > Properties and add the UPN. In our environment, `umacontoso.com` is the custom domain we purchased.
 
@@ -230,7 +230,7 @@ To finish setting up your application, go to the **Users and groups** section an
 
     The AD domain name gets listed in the drop-down list of the **User logon name** section after you do the previous step. Configure the user name, and select the domain from the drop-down list in the **User logon name** section of the AD user properties.
 
-    ![Active Directory properties](media/microsoft-entra-application-proxy/active-directory-user-properties.png)
+    ![Active Directory properties](media/microsoft-entra-application-proxy/microsoft-entra-id-user-properties.png)
 
 1. Once the AD sync is successful, you see the on-premises AD account coming up in the Azure portal under the **Users and Groups** section of the application. The source for the account is **Windows Server AD.**
 2. Logging in with `umasm@umacontoso.com` will be equivalent to using the Windows credentials `Umacontoso\umasm`.
@@ -239,15 +239,15 @@ To finish setting up your application, go to the **Users and groups** section an
 
     Successful sign-in after implementing the above steps:
 
-    ![Sign-in screen](media/microsoft-entra-application-proxy/azure-ad-ad-fs-login-prompt.png)
+    ![Sign-in screen](media/microsoft-entra-application-proxy/microsoft-entra-ad-fs-login-prompt.png)
 
     Followed by the display of web portal:
 
-    ![Power BI Report Server portal](media/microsoft-entra-application-proxy/azure-ad-portal.png)
+    ![Power BI Report Server portal](media/microsoft-entra-application-proxy/microsoft-entra-portal.png)
 
     With a successful test connection to data source using Kerberos as the authentication:
 
-    ![Power BI Report Server portal connected successfully](media/microsoft-entra-application-proxy/azure-ad-datasource-success.png)
+    ![Power BI Report Server portal connected successfully](media/microsoft-entra-application-proxy/microsoft-entra-datasource-success.png)
 
 ## Access from Power BI mobile apps
 
