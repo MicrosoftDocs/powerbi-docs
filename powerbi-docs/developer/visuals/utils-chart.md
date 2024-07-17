@@ -771,4 +771,4 @@ private renderLegend(): void {
 
 ## Related content
 
-- [Power BI visuals interactivity utils](utils-interactivity-selections.md)
+- [Add interactivity into visual by Power BI visuals selections](selection-api.md)
