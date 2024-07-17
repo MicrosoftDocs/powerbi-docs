@@ -261,6 +261,16 @@ When republishing a live connected semantic model utilizing the Analysis Service
 
 This is due to the semantic model being published having a different connection string but having the same name as the existing semantic model. To resolve this issue, either delete or rename the existing semantic model. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
+## Live connected semantic model
+
+Users trying to create a new Live Connected report, or open an existing Live Connected report, using the March 2024 or later versions of Power BI Desktop may encounter an error to the effect, "**_We couldn't connect to your model in the Power BI Service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Couldn't publish to Power BI error.":::
+
+This error can be due to a proxy that is configured in the user’s environment that is preventing access to the Power BI Service. Beginning from the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI Service at endpoint ***.pbidedicated.windows.net**
+
+Please refer the [Establishing a client connection](/troubleshoot-xmla-endpoint#establishing-a-client-connection) section to test general XMLA connectivity.
+
 ## Workspace/server alias
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
