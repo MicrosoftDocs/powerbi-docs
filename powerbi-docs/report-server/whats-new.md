@@ -17,7 +17,7 @@ Learn about what's new in the latest versions of Power BI Report Server and Powe
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-## February 2024
+## January 2024
 
 A focus of this release is on accessibility. Power BI customers will notice a continuation in the work done in the previous year. We continue to provide more inclusivity for both creators and consumers in 2024.
 
