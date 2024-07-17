@@ -163,6 +163,8 @@ Users viewing a report in SharePoint need either a **Power BI Pro or Premium Per
   
   * Azure B2B Guest user accounts aren't supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
+* When viewing Power BI reports embedded in SharePoint Online, there is no option for users to switch between Power BI environments.
+
 * Power BI doesn't support the same localized languages that SharePoint Online does. As a result, you might not see proper localization within the embedded report.
 
 * You might encounter issues if you use Internet Explorer 10. Here's a link  [supported browsers for Power BI](../fundamentals/power-bi-browsers.md).

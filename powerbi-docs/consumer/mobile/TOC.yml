@@ -56,7 +56,7 @@
         href: mobile-apps-geographic-filtering.md
       - name: "Dark mode"
         href: mobile-apps-dark-mode.md
-      - name: "Using OAuth to connect to Reporting Services"
+      - name: "Connect to Power BI Report Server and SSRS"
         href: mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
