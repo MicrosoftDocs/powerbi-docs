@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/28/2024
+ms.date: 07/17/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
