@@ -261,7 +261,7 @@ When republishing a live connected semantic model utilizing the Analysis Service
 
 This is due to the semantic model being published having a different connection string but having the same name as the existing semantic model. To resolve this issue, either delete or rename the existing semantic model. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
-## Live connected semantic model
+## Live connected semantic model cannot be loaded
 
 Users trying to create a new Live Connected report, or open an existing Live Connected report, using the March 2024 or later versions of Power BI Desktop may encounter an error to the effect, "**_We couldn't connect to your model in the Power BI Service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
 
