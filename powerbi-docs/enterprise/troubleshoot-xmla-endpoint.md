@@ -267,9 +267,11 @@ Users trying to create a new Live Connected report, or open an existing Live Con
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Couldn't publish to Power BI error.":::
 
-This error can be due to a proxy that is configured in the user’s environment that is preventing access to the Power BI Service. Beginning from the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI Service at endpoint ***.pbidedicated.windows.net**
+This error can be due to a proxy that is configured in the user’s environment that is preventing access to the Power BI Service. Beginning from the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI Service at endpoint ***.pbidedicated.windows.net** or the corresponding service endpoints for National Clouds.
 
-Please refer the [Establishing a client connection](/troubleshoot-xmla-endpoint#establishing-a-client-connection) section to test general XMLA connectivity.
+To validate whether you are encountering an issue due to proxy settings, please try the **SQL Server Analysis Services** connector in Power BI Desktop, or any first party or third party external tool, such as **SQL Server Management Studio**, to connect to any premium workspace.
+
+Please refer the ['**Establishing a client connection**'](/power-bi/enterprise/troubleshoot-xmla-endpoint#establishing-a-client-connection) section for more information about testing general XML/A connectivity.
 
 ## Workspace/server alias
 
