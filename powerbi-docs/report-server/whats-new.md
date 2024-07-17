@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.date: 07/17/2024
 ms.custom: intro-whats-new
 ---
 
