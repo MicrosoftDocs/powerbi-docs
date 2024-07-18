@@ -53,5 +53,4 @@ The sync slicers feature only supports one field at a time. If your slicer has m
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Add a context menu to your Power BI visual](context-menu.md)
+[Add a context menu to your Power BI visual](context-menu.md)

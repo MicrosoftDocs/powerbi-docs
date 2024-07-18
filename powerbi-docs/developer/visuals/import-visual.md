@@ -83,10 +83,7 @@ Power BI visuals are packaged as *.pbiviz* files that can be stored on your comp
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Developing a Power BI circle card visual](develop-circle-card.md)
-
->[!div class="nextstepaction"]
->[Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)
+* [Developing a Power BI circle card visual](develop-circle-card.md)
+* [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

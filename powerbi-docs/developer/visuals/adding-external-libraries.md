@@ -67,5 +67,4 @@ For a full example, see the [Power BI visualizations](https://github.com/Microso
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Set up your environment for developing a Power BI visual](environment-setup.md)
+[Set up your environment for developing a Power BI visual](environment-setup.md)

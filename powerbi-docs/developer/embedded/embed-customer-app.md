@@ -543,14 +543,7 @@ When your app is ready, you can [move your embedded app to production](move-to-p
 
 ## Related content
 
-> [!div class="nextstepaction"]
->[Embedded analytics application tokens](embed-tokens.md)
-
-> [!div class="nextstepaction"]
->[Move your embedded app to production](move-to-production.md)
-
-> [!div class="nextstepaction"]
->[Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
-
-> [!div class="nextstepaction"]
->[Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)
+* [Embedded analytics application tokens](embed-tokens.md)
+* [Move your embedded app to production](move-to-production.md)
+* [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md)
+* [Capacity planning in Power BI embedded analytics](embedded-capacity-planning.md)

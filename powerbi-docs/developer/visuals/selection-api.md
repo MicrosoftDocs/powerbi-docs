@@ -382,3 +382,4 @@ button.addEventListener("click", (mouseEvent) => {
 
 > [!div class="nextstepaction"]
 > [Add a context menu for visuals data points](context-menu.md)
+
