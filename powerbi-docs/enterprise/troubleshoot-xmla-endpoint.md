@@ -263,11 +263,11 @@ This is due to the semantic model being published having a different connection 
 
 ## Live connected semantic model cannot be loaded
 
-Users trying to create a new Live Connected report, or open an existing Live Connected report, using the March 2024 or later versions of Power BI Desktop may encounter an error to the effect, "**_We couldn't connect to your model in the Power BI Service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
+Users trying to create a new Live Connected model, or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop may encounter an error to the effect, "**_We couldn't connect to your model in the Power BI Service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Cannot load model error.":::
 
-This error can be due to a proxy that is configured in the user’s environment that is preventing access to the Power BI Service. Beginning from the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI Service at endpoint ***.pbidedicated.windows.net** or the corresponding service endpoints for National Clouds.
+This error may occur when a proxy is configured in the user's environment and the proxy is preventing access to the Power BI Service. Beginning from the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI Service at endpoint ***.pbidedicated.windows.net** or the corresponding Power BI Service endpoints for National Clouds.
 
 To validate whether you are encountering an issue due to proxy settings, please try the **SQL Server Analysis Services** connector in Power BI Desktop, or any first party or third party external tool, such as **SQL Server Management Studio**, to connect to any premium workspace.
 
