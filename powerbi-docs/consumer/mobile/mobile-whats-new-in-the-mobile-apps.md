@@ -1064,7 +1064,7 @@ Power BI phone reports are now generally available. In Power BI Desktop, you can
 
 #### iOS
 **SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
-Now you can sign in to on-premises SQL Server Reporting Services servers from your mobile device with your organizational account. Read more about [using OAuth to connect to SSRS servers](../../create-reports/mobile-oauth-ssrs.md).
+Now you can sign in to on-premises SQL Server Reporting Services servers from your mobile device with your organizational account. Read more about [using OAuth to connect to SSRS servers](../../report-server/mobile-oauth-ssrs.md).
 
 #### Android
 **SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
