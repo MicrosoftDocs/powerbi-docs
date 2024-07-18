@@ -12,7 +12,7 @@ ms.date: 12/05/2023
 
 # Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server
 
-This article discusses how to use Web Application Proxy (WAP) and Active Directory Federated Services (AD FS) to connect to Power BI Report Server, and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by AD FS preauthentication. For the Power BI mobile apps, see also [Connect to Report Server and SSRS from your Power BI mobile applications](./mobile-oauth-ssrs.md).
+This article discusses how to use Web Application Proxy (WAP) and Active Directory Federated Services (AD FS) to connect to Power BI Report Server, and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by AD FS preauthentication. For the Power BI mobile apps, see also [Connect to Report Server and SSRS from Power BI mobile applications](./mobile-oauth-ssrs.md).
 
 > [!NOTE]
 > The configuration described in this article is no longer the preferred method of connecting to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Configure the connection using using Microsoft Entra application proxy instead, as described in [Configure Power BI Report Server with Microsoft Entra application proxy](./microsoft-entra-application-proxy.md)
@@ -168,7 +168,7 @@ You can then access the Public WAP URL, for example, `https://reports.contosolab
 
 ## Related content
 
-- [Connect to Report Server and SSRS from your Power BI mobile applications](./mobile-oauth-ssrs.md)
+- [Connect to Report Server and SSRS from Power BI mobile applications](./mobile-oauth-ssrs.md)
 - [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

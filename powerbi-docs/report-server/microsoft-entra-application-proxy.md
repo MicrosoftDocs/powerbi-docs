@@ -292,7 +292,7 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 
 ## Related content
 
-- [Connect to Report Server and SSRS from your Power BI mobile applications](./mobile-oauth-ssrs.md)
+- [Connect to Report Server and SSRS from Power BI mobile applications](./mobile-oauth-ssrs.md)
 - [Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
