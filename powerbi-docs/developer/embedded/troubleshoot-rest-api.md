@@ -62,7 +62,6 @@ When using the [Datasets - Update Parameters In Group](/rest/api/power-bi/datase
 
 ## Related content
 
-> [!div class="nextstepaction"]
->[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
+[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

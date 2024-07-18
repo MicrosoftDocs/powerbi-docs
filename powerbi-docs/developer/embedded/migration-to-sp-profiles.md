@@ -107,7 +107,6 @@ If you reused the same workspaces, you may want to delete the older permissions 
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Manage service principal profiles](embed-multi-tenancy.md)
+[Manage service principal profiles](embed-multi-tenancy.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
