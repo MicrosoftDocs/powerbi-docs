@@ -38,14 +38,14 @@ To define security roles:
    ![Screenshot of the Manage roles window, highlighting an example DAX expression.](/power-bi/includes/media/rls-desktop-define-roles/powerbi-security-daxeditor.png)
 
    > [!NOTE]
-   > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Alternatively, you can use *userprincipalname()*, which always returns the user in the format of their user principal name, *username\@contoso.com*. Additionally, in this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators (e.g. French or German).
+   > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Additionally, in this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators, such as French or German.
 
 1. You can switch back to the default editor by selecting **Switch to default editor**. All changes made in either editor interface persist when switching interfaces when possible. When defining a role using the DAX editor that can't be defined in the default editor, if you attempt to switch to the default editor you'll be prompted with a warning that switching editors may result in some information being lost. To keep this information, select **Cancel** and continue only editing this role in the DAX editor.
 
    ![Screenshot of the dialog confirming you would like to switch to the default editor.](/power-bi/includes/media/rls-desktop-define-roles/powerbi-security-switchtodefaulteditor.png)
 
    > [!NOTE]
-   > In this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators (e.g. French or German).
+   > In this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators, such as French or German.
 
 1. Select **Save**.
 
