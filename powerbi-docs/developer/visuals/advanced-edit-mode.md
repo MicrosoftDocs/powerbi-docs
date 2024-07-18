@@ -45,5 +45,4 @@ The **Back to report** button appears if the `advancedEditModeSupport` property 
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Add conditional formatting](conditional-format.md)
+[Add conditional formatting](conditional-format.md)

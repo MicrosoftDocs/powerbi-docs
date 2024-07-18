@@ -111,8 +111,5 @@ If the visual has animations or asynchronous functions for rendering, the `rende
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Visual API](visual-api.md)
-
-> [!div class="nextstepaction"]
-> [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)
+* [Visual API](visual-api.md)
+* [Get a Power BI visual certified](power-bi-custom-visuals-certified.md)

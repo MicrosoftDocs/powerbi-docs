@@ -296,8 +296,5 @@ This blocking is in effect only for the current session. So if a user blocks the
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Publish a Power BI custom visual](office-store.md)
-
-> [!div class="nextstepaction"]
-> [Create a Power BI bar chart visual](create-bar-chart.md)
+- [Publish a Power BI custom visual](office-store.md)
+- [Create a Power BI bar chart visual](create-bar-chart.md)

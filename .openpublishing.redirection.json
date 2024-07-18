@@ -657,8 +657,8 @@
         },
         {
             "source_path": "powerbi-docs/mobile-oauth-ssrs.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-oauth-ssrs",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/report-server/mobile-oauth-ssrs",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
@@ -3048,6 +3048,11 @@
             "source_path": "powerbi-docs/report-server/azure-application-proxy.md",
             "redirect_url": "/power-bi/report-server/microsoft-entra-application-proxy",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-oauth-ssrs.md",
+            "redirect_url": "/power-bi/report-server/mobile-oauth-ssrs",
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-overview.md",

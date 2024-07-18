@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 07/15/2024
+ms.date: 07/18/2024
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 
@@ -292,6 +292,7 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 
 ## Related content
 
+- [Connect to Report Server and SSRS from Power BI mobile applications](./mobile-oauth-ssrs.md)
 - [Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

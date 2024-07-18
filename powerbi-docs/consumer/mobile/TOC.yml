@@ -56,8 +56,8 @@
         href: mobile-apps-geographic-filtering.md
       - name: "Dark mode"
         href: mobile-apps-dark-mode.md
-      - name: "Connect to Power BI Report Server and SSRS"
-        href: mobile-oauth-ssrs.md
+      - name: "Connect to Power BI Report Server and SSRS from Power BI mobile applications"
+        href: ../../report-server/mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
       - name: "Admin: Configuration using mobile device management"
@@ -82,8 +82,6 @@
         href: mobile-apps-scan-barcode.md
       - name: "Annotate and share in the mobile apps"
         href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-      - name: "Scan a barcode from the Power BI mobile app"
-        href: mobile-apps-scan-barcode.md
       - name: "Configure interaction settings"
         href: mobile-app-interaction-settings.md
       - name: "Work side by side with other apps"
