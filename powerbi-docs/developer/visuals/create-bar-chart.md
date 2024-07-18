@@ -261,7 +261,7 @@ import { dataViewObjects} from "powerbi-visuals-utils-dataviewutils";
 
 ### Interfaces
 
-Next, we define the visual [interfaces](utils-interactivity-selections.md#defining-an-interface-for-data-points). The following interface is used to describe our bar chart visual:
+Next, we define the visual interfaces. The following interface is used to describe our bar chart visual:
 
 * BarChartDataPoint
 
