@@ -377,11 +377,6 @@ button.addEventListener("click", (mouseEvent) => {
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
-
-> [!div class="nextstepaction"]
-> [Add a context menu for visuals data points](context-menu.md)
-
-> [!div class="nextstepaction"]
-> [Add selections into Power BI Visuals](utils-interactivity-selections.md)
+- [Handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
+- [Add a context menu for visuals data points](context-menu.md)
+- [Add selections into Power BI Visuals](utils-interactivity-selections.md)
