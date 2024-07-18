@@ -51,7 +51,7 @@ The new selection state (or filter) is communicated through the `options.jsonFil
 
 If your visual interacts with other visuals using [Selection](https://github.com/PowerBi-Projects/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmark support in one of two ways:
 
-- Through [InteractivityService](#use-interactivityservice-to-restore-bookmark-selections) to manage selections, use the `applySelectionFromFilter`. This is deprecated method.
+- Through [InteractivityService](#use-interactivityservice-to-restore-bookmark-selections---deprecated) to manage selections, use the `applySelectionFromFilter`. This is deprecated method.
 - Through [SelectionManager](#use-selectionmanager-to-restore-bookmark-selections).
 
 ### Use **InteractivityService** to restore bookmark selections - deprecated
