@@ -94,6 +94,8 @@
         href: configure-powerbi-mobile-apps-remote.md
       - name: "Configure a report server with Microsoft Entra application proxy"
         href: microsoft-entra-application-proxy.md
+      - name: "Connect to Report Server and SSRS from Power BI mobile apps"
+        href: mobile-oauth-ssrs.md
       - name: "Configure WAP and AD FS"
         href: connect-adfs-wap-report-server.md
       - name: "Remote mobile access with Microsoft Entra ID"

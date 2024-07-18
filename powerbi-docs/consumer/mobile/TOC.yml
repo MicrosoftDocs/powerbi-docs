@@ -57,7 +57,7 @@
       - name: "Dark mode"
         href: mobile-apps-dark-mode.md
       - name: "Connect to Power BI Report Server and SSRS"
-        href: mobile-oauth-ssrs.md
+        href: ../../report-server/mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
       - name: "Admin: Configuration using mobile device management"
