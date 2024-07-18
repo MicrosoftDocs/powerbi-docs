@@ -45,7 +45,7 @@ To define security roles:
    ![Screenshot of the dialog confirming you would like to switch to the default editor.](/power-bi/includes/media/rls-desktop-define-roles/powerbi-security-switchtodefaulteditor.png)
 
    > [!NOTE]
-   > In this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators (e.g. French or German).
+   > In this expression box, use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators, such as French or German.
 
 1. Select **Save**.
 
