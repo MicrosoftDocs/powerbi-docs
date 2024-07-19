@@ -26,9 +26,9 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 
 |Scenario  |Supported  |
 |---------|---------|
-|[**Embed a report in a secure portal or website**](/collaborate-share/service-embed-secure.md) Power BI  | Yes |
-|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in (they need a license) (Also known as embed for your organization) This includes when users want to embed visuals in solutions like Power Point as well.    | Yes: user must be signed in with a valid workspace.   |
-|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as embed for your customer’s application  | No  |
+|[**Embed a report in a secure portal or website**](/collaborate-share/service-embed-secure.md) Power BI.  | Yes |
+|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in (they need a license) (Also known as embed for your organization) This includes when users want to embed visuals in solutions like PowerPoint as well.    | Yes: user must be signed in with a valid workspace.   |
+|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as embed for your customer’s application.  | No  |
 
 ## Why embed?
 
@@ -38,9 +38,9 @@ A sales team might want to embed a Power BI report in their internal CRM applica
 
 ## Get started
 
-Let's get started with unlocking this scenario for your organization. To unlocking this scenario, you must add a permission that authorizes your application to generate Copilot responses.
+Let's get started with unlocking this scenario for your organization. To unlock this scenario, you must add a permission that authorizes your application to generate Copilot responses.
 
-Navigate to the Azure portal (Entra ID) and find the registered application. For more information on registering applications, see this documentation: (../developer/embedded/register-app?tabs=organization)). Entra ID is where you can set up and manage the authentication for the embedded scenario. 
+Navigate to the Azure portal (Entra ID) and find the registered application. For more information on registering applications, see the documentation [Set up Power BI Embedded](../developer/embedded/register-app?tabs=organization). Entra ID is where you can set up and manage the authentication for the embedded scenario.
 
 Under API permissions in the left navigation, you can set up different permissions that users can access with this application.
 
@@ -48,21 +48,20 @@ Under API permissions in the left navigation, you can set up different permissio
 
 In the permission section on the right, select **Add a permission**.  
 
-add-permission.png
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/add-permission.png" alt-text="Screenshot showing Select add permission.":::
 
 Under **APIs my organizations uses**, find and select **Power BI Service**.
 
-power-bi-service-permissions.png
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png" alt-text="Screenshot showing Find and select Power BI service.":::
 
 
-delegated-permissions.png
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png" alt-text="Screenshot showing selecting delegated permissions.":::
 
-After selecting delegated permissions, search for ML model in the search bar and expand the ML model option that shows up.  To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission.  This will allow the visual to show up in the embedded application for signed in users that meet all other Copilot requirements. For these requirements, see the main Power BI Copilot documentation page.  Add this permission to the registered application, and you’re finished.  
+After you select delegated permissions, search for *ML model* in the search bar and expand the ML model option that shows up.  To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission.  This will allow the visual to show up in the embedded application for signed in users that meet all other Copilot requirements. For these requirements, see the main Power BI Copilot documentation page.  Add this permission to the registered application, and you’re finished.  
 
 
-MLmodel-permissions-selected.png) 
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/ml-model-permissions-selected.png" alt-text="Screenshot showing searching for the ML model permissions.":::
 
- 
 
 ### Consent 
 
