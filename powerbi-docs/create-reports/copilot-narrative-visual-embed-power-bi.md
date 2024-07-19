@@ -48,19 +48,19 @@ Under API permissions in the left navigation, you can set up different permissio
 
 In the permission section on the right, select **Add a permission**.  
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/add-permission.png" alt-text="Screenshot showing Select add permission.":::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/add-permission.png" alt-text="Screenshot showing Select add permission." lightbox="media/copilot-narrative-visual-embed-power-bi/add-permission.png":::
 
 Under **APIs my organizations uses**, find and select **Power BI Service**.
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png" alt-text="Screenshot showing Find and select Power BI service.":::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png" alt-text="Screenshot showing Find and select Power BI service." lightbox="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png:::
 
 Select **Delegated permissions**.
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png" alt-text="Screenshot showing selecting delegated permissions.":::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png" alt-text="Screenshot showing selecting delegated permissions." lightbox="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png":::
 
 After you select delegated permissions, search for *ML model* in the search bar and expand the ML model option that shows up.  To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission.  This allows the visual to show up in the embedded application for signed in users that meet all other Copilot requirements. For these requirements, see the main Power BI Copilot documentation page.  Add this permission to the registered application, and you’re finished.  
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/ml-model-permissions-selected.png" alt-text="Screenshot showing searching for the ML model permissions.":::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/ml-model-permissions-selected.png" alt-text="Screenshot showing searching for the ML model permissions." lightbox="media/copilot-narrative-visual-embed-power-bi/ml-model-permissions-selected.png":::
 
 ### Consent 
 
