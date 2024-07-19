@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 07/19/2024
 LocalizationGroup: Share your work
 ---
 # Manage semantic model access permissions (preview)
