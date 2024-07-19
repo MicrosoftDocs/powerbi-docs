@@ -33,29 +33,10 @@ Before you install Power BI Report Server, we recommend you review the [Hardware
 
 ### Power BI Report Server product key
 
-You can get the product key for Power BI Report Server from two different sources:
-
-- Power BI Premium
-- SQL Server Enterprise Software Assurance (SA)
-
-Read on for details.
-
-#### Power BI Premium / Fabric Capacity
-
-If your organization has purchased Power BI Premium capacity, you can obtain the key for Power BI Report Server from the **Power BI Premium** tab in the admin portal. The key is only accessible to users with Global admin, Fabric admin, or PowerBI Premium capacity admin privileges.
-
-![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
-
-Selecting **Power BI Report Server key** displays a dialog containing your product key. You can copy it and use it with the installation.
-
-![Product key](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI Report Server product key")
-
-#### SQL Server Enterprise Software Assurance (SA)
-
-If you have a SQL Server Enterprise SA agreement, you can get your product key from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/).
+[Find the Power BI Report Server product key](find-product-key.md)
 
  > [!IMPORTANT]
- > When installing Power BI Report Server on multiple servers for a scale-out scenario, all servers must use the same Power BI Premium product key or SQL Server Enterprise Software Assurance (SA) product key.
+ > When installing Power BI Report Server on multiple servers for a scale-out scenario, all servers must use the same Power BI Report server product key.
 
 ## Install your report server
 
