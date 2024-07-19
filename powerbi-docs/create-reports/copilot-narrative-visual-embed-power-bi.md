@@ -26,7 +26,7 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 
 |Scenario  |Supported  |
 |---------|---------|
-|[**Embed a report in a secure portal or website**](/collaborate-share/service-embed-secure.md) Power BI.  | Yes |
+|[**Embed a report in a secure portal or website**](./../collaborate-share/service-embed-secure.md) Power BI.  | Yes |
 |**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in (they need a license) (Also known as embed for your organization) This includes when users want to embed visuals in solutions like PowerPoint as well.    | Yes: user must be signed in with a valid workspace.   |
 |**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as embed for your customer’s application.  | No  |
 
@@ -40,7 +40,7 @@ A sales team might want to embed a Power BI report in their internal CRM applica
 
 Let's get started unlocking this scenario for your organization. To unlock this scenario, you must add a permission that authorizes your application to generate Copilot responses.
 
-Navigate to the Azure portal (Entra ID) and find the registered application. For more information on registering applications, see the documentation [Set up Power BI Embedded](../developer/embedded/register-app?tabs=organization). Entra ID is where you can set up and manage the authentication for the embedded scenario.
+Navigate to the Azure portal (Entra ID) and find the registered application. For more information on registering applications, see the documentation [Set up Power BI Embedded](./../developer/embedded/register-app?tabs=organization). Entra ID is where you can set up and manage the authentication for the embedded scenario.
 
 Under API permissions in the left navigation, you can set up different permissions that users can access with this application.
 
