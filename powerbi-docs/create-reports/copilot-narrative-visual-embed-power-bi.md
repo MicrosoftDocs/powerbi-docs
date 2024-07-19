@@ -32,13 +32,13 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 
 ## Why embed?
 
-Embedding a Power BI report in an application in the "embed for your organization" scenario allows organizations to seamlessly integrate rich, interactive data visualizations directly into their internal tools and workflows, and now the Copilot visual is supported in this solution. This enhances data-driven decision-making by providing users with real-time insights within the context of the applications they already use. Additionally, it ensures secure data access and consistent user experience by leveraging existing organizational permissions and authentication mechanisms. 
+Embedding a Power BI report in an application in the "embed for your organization" scenario allows organizations to seamlessly integrate rich, interactive data visualizations directly into their internal tools and workflows, and now the Copilot visual is supported in this solution. Copilot enhances data-driven decision-making by providing users with real-time insights within the context of the applications they already use. Additionally, it ensures secure data access and consistent user experience by leveraging existing organizational permissions and authentication mechanisms. 
 
 A sales team might want to embed a Power BI report in their internal CRM application to streamline their workflow. By integrating sales performance dashboards directly into the CRM, team members can easily monitor key metrics like monthly sales targets, pipeline status, and individual performance, without switching between different tools. This integration enables quicker access to actionable insights, helping the team make informed decisions, identify trends, and react swiftly to market changes, all within the secure environment of their organization's data infrastructure.
 
 ## Get started
 
-Let's get started with unlocking this scenario for your organization. To unlock this scenario, you must add a permission that authorizes your application to generate Copilot responses.
+Let's get started unlocking this scenario for your organization. To unlock this scenario, you must add a permission that authorizes your application to generate Copilot responses.
 
 Navigate to the Azure portal (Entra ID) and find the registered application. For more information on registering applications, see the documentation [Set up Power BI Embedded](../developer/embedded/register-app?tabs=organization). Entra ID is where you can set up and manage the authentication for the embedded scenario.
 
@@ -57,15 +57,14 @@ Under **APIs my organizations uses**, find and select **Power BI Service**.
 
 :::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png" alt-text="Screenshot showing selecting delegated permissions.":::
 
-After you select delegated permissions, search for *ML model* in the search bar and expand the ML model option that shows up.  To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission.  This will allow the visual to show up in the embedded application for signed in users that meet all other Copilot requirements. For these requirements, see the main Power BI Copilot documentation page.  Add this permission to the registered application, and you’re finished.  
+After you select delegated permissions, search for *ML model* in the search bar and expand the ML model option that shows up.  To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission.  This allows the visual to show up in the embedded application for signed in users that meet all other Copilot requirements. For these requirements, see the main Power BI Copilot documentation page.  Add this permission to the registered application, and you’re finished.  
 
 
 :::image type="content" source="media/copilot-narrative-visual-embed-power-bi/ml-model-permissions-selected.png" alt-text="Screenshot showing searching for the ML model permissions.":::
 
-
 ### Consent 
 
-One thing to keep in mind is that as with other embed for your organization scenarios, end users will be asked for consent for the application to use ML models upon using the application. For more information on user consent and delegated access, please read this documentation. Overview of permissions and consent in the Microsoft identity platform - Microsoft identity platform | Microsoft Learn.
+One thing to keep in mind is that as with other embed for your organization scenarios, end users will be asked for consent for the application to use ML models upon using the application. For more information on user consent and delegated access, please read this documentation, Overview of permissions and consent in the Microsoft identity platform - Microsoft identity platform | Microsoft Learn.
 
 ## Send feedback
 
