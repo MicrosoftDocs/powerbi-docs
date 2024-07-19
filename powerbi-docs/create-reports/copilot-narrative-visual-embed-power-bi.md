@@ -60,12 +60,11 @@ Select **Delegated permissions**.
 
 After you select delegated permissions, search for *ML model* in the search bar and expand the ML model option that shows up.  To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission.  This allows the visual to show up in the embedded application for signed in users that meet all other Copilot requirements. For these requirements, see the main Power BI Copilot documentation page.  Add this permission to the registered application, and you’re finished.  
 
-
 :::image type="content" source="media/copilot-narrative-visual-embed-power-bi/ml-model-permissions-selected.png" alt-text="Screenshot showing searching for the ML model permissions.":::
 
 ### Consent 
 
-One thing to keep in mind is that as with other embed for your organization scenarios, end users will be asked for consent for the application to use ML models upon using the application. For more information on user consent and delegated access, please read this documentation, Overview of permissions and consent in the Microsoft identity platform - Microsoft identity platform | Microsoft Learn.
+Keep in mind, as with other embed for your organization scenarios, end users are asked for consent for the application to use ML models upon using the application. For more information on user consent and delegated access, please read this documentation, [Overview of permissions and consent in the Microsoft identity platform](/entra/identity-platform/permissions-consent-overview).
 
 ## Send feedback
 
