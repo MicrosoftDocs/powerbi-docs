@@ -19,9 +19,9 @@ That's where Power Query Online comes in. Power Query Online is a data transform
 
 ## Prerequisites 
 
-To use the new Get Data feature in Power BI Report Builder, you need to have the latest version of Power BI Report Builder installed on your machine. You can [download Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).  
-
-You also need to sign in to Power BI Report Builder with your Power BI account.
+- To use the new Get Data feature in Power BI Report Builder, you need to have the latest version of Power BI Report Builder installed on your machine. You can [download Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).  
+- You need a paid license, either Power BI Pro or Premium Per User (PPU). To learn more, [check license requirements](../../consumer/end-user-license.md#licenses).
+- You also need to sign in to Power BI Report Builder with your Power BI account.
 
 ## Get started 
 
