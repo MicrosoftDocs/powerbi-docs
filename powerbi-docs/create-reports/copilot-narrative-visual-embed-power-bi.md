@@ -7,7 +7,7 @@ ms.reviewer: cnews
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 07/17/2024
+ms.date: 07/18/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -54,6 +54,7 @@ Under **APIs my organizations uses**, find and select **Power BI Service**.
 
 :::image type="content" source="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png" alt-text="Screenshot showing Find and select Power BI service.":::
 
+Select **Delegated permissions**.
 
 :::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png" alt-text="Screenshot showing selecting delegated permissions.":::
 
