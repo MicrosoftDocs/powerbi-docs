@@ -52,7 +52,7 @@ In the permission section on the right, select **Add a permission**.
 
 Under **APIs my organizations uses**, find and select **Power BI Service**.
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png" alt-text="Screenshot showing Find and select Power BI service." lightbox="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png:::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png" alt-text="Screenshot showing Find and select Power BI service." lightbox="media/copilot-narrative-visual-embed-power-bi/power-bi-service-permissions.png":::
 
 Select **Delegated permissions**.
 
