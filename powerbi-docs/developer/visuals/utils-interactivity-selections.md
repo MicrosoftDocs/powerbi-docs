@@ -14,6 +14,9 @@ ms.date: 01/10/2024
 
 # Power BI visuals interactivity utils
 
+> [!NOTE]
+> InteractivityService has been deprecated.
+
 Interactivity utils (`InteractivityUtils`) is a set of functions and classes that can be used to simplify the implementation of cross-selection and cross-filtering.
 
 > [!NOTE]
