@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/26/2023
+ms.date: 07/19/2024
 ms.custom: intro-installation
 ---
 
@@ -36,7 +36,7 @@ Before you install Power BI Report Server, we recommend you review the [Hardware
 [Find the Power BI Report Server product key](find-product-key.md)
 
  > [!IMPORTANT]
- > When installing Power BI Report Server on multiple servers for a scale-out scenario, all servers must use the same Power BI Report server product key.
+ > When installing Power BI Report Server on multiple servers for a scale-out scenario, all servers must use the same Power BI Report Server product key.
 
 ## Install your report server
 
