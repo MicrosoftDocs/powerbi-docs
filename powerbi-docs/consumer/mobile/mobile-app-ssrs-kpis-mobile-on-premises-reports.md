@@ -61,7 +61,7 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
    The mobile app needs to access the server in some way. There are a few ways to do that:
     * Being on the same network/using VPN is the easiest way.
-    * It's possible to use a Web Application Proxy to connect from outside the organization. See [Using OAuth to connect to Reporting Services](mobile-oauth-ssrs.md) for details.
+    * It's possible to use a Web Application Proxy to connect from outside the organization. For more information, see [Connect to Report Server and SSRS from your Power BI mobile applications](../../report-server/mobile-oauth-ssrs.md).
     * Open a connection (port) in the firewall.
 
 4. Fill in the server address and give the server a friendly name, if you'd like. Use this format for the server address:

@@ -81,8 +81,5 @@ The package outputs to the */dist/* folder of the project. The package contains 
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Publish Power BI visuals to Partner Center](office-store.md)
-
-> [!div class="nextstepaction"]
-> [Import a custom visual](import-visual.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)
+* [Import a custom visual](import-visual.md)

@@ -1,5 +1,5 @@
 ---
-title: Create a dynamic subscription for a Power BI report (Preview)
+title: Create a dynamic subscription for a Power BI report 
 description: Learn how to create per-recipient report subscriptions based on filters that you select.
 author: mihart
 ms.author: mihart
@@ -13,16 +13,10 @@ ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
 
-# Dynamic per recipient subscriptions for reports (Preview)
+# Dynamic per recipient subscriptions for reports 
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-> [!IMPORTANT]
-> Dynamic subscriptions is currently in PREVIEW.
-> This information relates to a prerelease product that might 
-> be substantially modified before it's released. Microsoft 
-> makes no warranties, expressed or implied, with respect 
-> to the information provided here.
 
 Dynamic per recipient subscriptions are designed to simplify distributing a personalized copy of a report to each recipient of an email subscription. You define which view of the report an individual receives by specifying which filters are applied to their version of the report.
 
@@ -53,7 +47,7 @@ For users familiar with SQL Server Reporting Services (SSRS), this feature is si
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-create-dynamic-subscription.png" alt-text="Screenshot of the Power BI service showing the Create subscription window.":::
 
-1. Select **Dynamic per recipient (preview)**.
+1. Select **Dynamic per recipient**.
 
     :::image type="content" source="media/power-bi-dynamic-report-subscriptions/power-bi-dynamic-subscription.png" alt-text="Screenshot of the Power BI service showing the New subscriptions screen and the option for Dynamic per recipient.":::
 
@@ -129,9 +123,9 @@ As with other subscriptions, you can edit, delete, turn on, and turn off the sub
 - Rendering the report uses some of your capacity. It's classified as an **interactive** activity.
 - Your recipient semantic model has a limit of 1000 rows of recipients. If the recipient list exceeds 1000 rows at any point, only the first 1000 recipients receive the subscription email, and the subscription creator receives an error email.
 - Receiving the subscription email doesn't guarantee access to the report. Report access is set separately.
-- This preview feature supports single value filters and doesn't support filters with multiple value options.
+- This feature supports single value filters and doesn't support filters with multiple value options.
 - If the names of columns or tables are changed in the semantic model while the subscription is processing, dynamic filters might not be applied properly.
-- As a preview feature, it’s not available to customers with content located in sovereign clouds.  
+
 
 ## Related content
 

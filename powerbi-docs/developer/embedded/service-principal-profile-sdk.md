@@ -7,7 +7,7 @@ ms.reviewer: mshmordo
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 6/04/2023
+ms.date: 07/09/2024
 # customer intent: As a developer, I want to learn how to use the Power BI SDK with service principal profiles so I can create and set the Power BI client when using a service principal profile.
 ---
 
@@ -80,5 +80,4 @@ There's no support for service principal profiles with Azure Analysis Services (
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Service principal profiles in Power BI Embedded](embed-multi-tenancy.md)
+[Service principal profiles in Power BI Embedded](embed-multi-tenancy.md)

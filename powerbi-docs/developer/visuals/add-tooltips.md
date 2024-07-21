@@ -246,11 +246,6 @@ See an example of the modern tooltips feature being used in the [SampleBarChart]
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Tooltip utils](utils-tooltip.md)
-
->[!div class="nextstepaction"]
->[Customize tooltips in Power BI](../../create-reports/desktop-custom-tooltips.md)
-
->[!div class="nextstepaction"]
->[Create tooltips based on report pages in Power BI Desktop](../../create-reports/desktop-tooltips.md)
+* [Tooltip utils](utils-tooltip.md)
+* [Customize tooltips in Power BI](../../create-reports/desktop-custom-tooltips.md)
+* [Create tooltips based on report pages in Power BI Desktop](../../create-reports/desktop-tooltips.md)

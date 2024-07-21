@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: how-to
-ms.date: 04/04/2024
+ms.date: 07/16/2024
 LocalizationGroup: Share your work
 ---
 
@@ -26,9 +26,7 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 2. On the **File** menu, select **Embed report** >  **Website or portal**.
 
-    :::image type="content" source="media/service-embed-secure/power-bi-more-options-website.png" alt-text="Screenshot of Embed report selected from File menu with website or portal option highlighted.":::
-
-3. In the **Secure embed code** dialog, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**.
+3. In the **Secure embed code** dialog that appears, select the value under **Here's a link you can use to embed this content**. Or if you'd like to use an iframe in a blog or website, select the value under **HTML you can paste into a website**.
 
     :::image type="content" source="../collaborate-share/media/service-embed-secure/securely-embed-report-in-website-or-portal.png" alt-text="Screenshot of Embed option dialogue box":::
 
@@ -42,7 +40,9 @@ The **Embed** option supports [URL filters](service-url-filters.md) and URL sett
 
 6. When you use an iframe, you might need to edit the **height**, and **width** values to have it fit in your portal's web page.
 
-    :::image type="content" source="media/service-embed-secure/secure-embed-size.png" alt-text="Screenshot of se height and width dialogue box":::
+```html
+<iframe width="1080" height="760" src="https://app.powerbi.com/reportEmbed?reportId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&autoAuth=true" frameborder="0" allowFullScreen="true"></iframe>
+```
 
 ## Grant report access
 
@@ -69,11 +69,15 @@ You can find the **pageName** value at the end of report's URL when you view a r
 
 1. Open the report from the Power BI service in your web browser, and then copy the address bar URL.
 
-    :::image type="content" source="media/service-embed-secure/secure-embed-report-section.png"alt-text="Screenshot of report section.":::
+    ```http
+    https://app.powerbi.com/groups/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/reports/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/ReportSection2
+    ```
 
 2. Append the **pageName** property and its value to the end of the URL.
 
-    :::image type="content" source="media/service-embed-secure/secure-embed-append-page-name.png"alt-text="Screenshot of Appending the pageName setting to the URL with pageName=ReportSection 2 highlighted.":::
+    ```http
+    https://app.powerbi.com/reportEmbed?reportId=/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&autoAuth=true&pageName=ReportSection2
+    ```
 
 ## Filter report content by using URL filters 
 
@@ -113,7 +117,9 @@ report.src = newUrl;
 }
 ```
 
-:::image type="content" source="media/service-embed-secure/secure-embed-filter.png"alt-text="Screenshot of Filter with $ filter equals industries slash industry e q Energy highlighted.":::
+```http
+https://app.powerbi.com/reportEmbed?reportId=/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&autoAuth=true&pageName=ReportSection&filter=Industries/Industry eq 'Energy'
+```
 
 You can add as many buttons as you'd like to create a low-code custom experience. 
 
@@ -135,13 +141,13 @@ You can add as many buttons as you'd like to create a low-code custom experience
 
 * You might encounter issues if you use unsupported browser versions. For a list of browsers that Power BI supports, see [Supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 
-* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin,” you can't log in to view your embedded content because MSAL doesn't support this header. Instead, choose either "restrict-properties" (for Chromium-based browsers) or "same-origin-allow-popups." Alternatively, if you can't change the Cross-Origin-Opener-Policy, link to the embedded URL directly instead of embedding it in an iframe.
+* If your website sets the Cross-Origin-Opener-Policy (COOP) header to “same-origin,” you can't sign in to view your embedded content because MSAL doesn't support this header. Instead, choose either "restrict-properties" (for Chromium-based browsers) or "same-origin-allow-popups." Alternatively, if you can't change the Cross-Origin-Opener-Policy, link to the embedded URL directly instead of embedding it in an iframe.
 
 * The classic SharePoint Server isn't supported, because it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
 * To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration by using the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They are blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
+* The automatic authentication capabilities provided with the **Embed** option don't work with the Power BI JavaScript API. They're blocked in PBI embedded client SDK starting with the version 2.10.4. For the Power BI JavaScript API, use the [user-owns-data](../developer/embedded/embed-sample-for-your-organization.md) embedding method.
 
 * The automatic authentication capabilities don't work when they're embedded in applications, including in mobile and desktop applications.
 

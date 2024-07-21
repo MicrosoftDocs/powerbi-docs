@@ -383,5 +383,3 @@ button.addEventListener("click", (mouseEvent) => {
 > [!div class="nextstepaction"]
 > [Add a context menu for visuals data points](context-menu.md)
 
-> [!div class="nextstepaction"]
-> [Add selections into Power BI Visuals](utils-interactivity-selections.md)

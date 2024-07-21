@@ -77,5 +77,4 @@ Power BI visuals must render on all devices that support Power BI apps. For more
 
 ## Related content
 
-> [!div class="nextstepaction"]
-> [Develop a Power BI circle card visual](./develop-circle-card.md)
+[Develop a Power BI circle card visual](./develop-circle-card.md)

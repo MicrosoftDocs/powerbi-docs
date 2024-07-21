@@ -359,7 +359,6 @@ For further assistance, [contact support](https://powerbi.microsoft.com/support/
 
 ## Related content
 
-> [!div class="nextstepaction"]
->[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
+[Power BI Embedded Frequently Asked Questions](embedded-faq.yml)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

@@ -39,7 +39,7 @@ This command saves all the converted files to local disk and displays the status
 
 ### Examples
 
-The examples below assume that you are running in a command prompt where the application RdlMigration.exe was copied to. You can get the application by cloning and building this repository, or by downloading the latest build from the 'Releases' tab. See details below on how to find your reportserver endpoint and how to create a Power BI client-id.
+The examples below assume that you are running in a command prompt where the application RdlMigration.exe was copied to. You can get the application by cloning and building this repository, or by downloading the latest build from the 'Releases' tab. See details below on how to find your reportserver endpoint.
 
 - Upload  all reports from 'My reports' folder from a native mode installation of SQL Server Reporting Services or Power BI Report Server to 'My Workspace' in powerbi.com.
     
