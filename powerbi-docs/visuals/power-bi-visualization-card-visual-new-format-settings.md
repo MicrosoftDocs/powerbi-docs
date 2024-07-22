@@ -1,5 +1,5 @@
 ---
-title: Card visual format settings explained
+title: Card visual format settings
 description: This document explains all available Format settings for Card visuals in Power BI Desktop and Power BI Service.
 author: JaedenArmstrong
 ms.author: miguelmyers
@@ -13,7 +13,7 @@ LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for card visuals so that I can effectively and more easily format card visuals in Power BI Desktop and Power BI Service.
 ---
 
-# Card visual format settings explained
+# Card visual format settings
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -44,18 +44,22 @@ To format and customize your column chart in **Power BI Service**, simply click 
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
 
-## Settings
+## X-axis settings
 
+### Type
 
+The **Type** setting within x-axis options is only available when you choose a single data field that is either numerical or date/time.
 
+[!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-type-type.md)]
 
+### Range
 
+The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
 
-
-
-
-
-
+[!INCLUDE [axis-range-maximum](../includes/core-visuals/axis-range-maximum.md)]
+[!INCLUDE [axis-range-minimum](../includes/core-visuals/axis-range-minimum.md)]
+[!INCLUDE [axis-range-logarithmic-scale](../includes/core-visuals/axis-range-logarithmic-scale.md)]
+[!INCLUDE [xaxis-range-invert-range](../includes/core-visuals/xaxis-range-invert-range.md)]
 
 
 
