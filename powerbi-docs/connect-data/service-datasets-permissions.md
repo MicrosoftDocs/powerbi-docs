@@ -16,15 +16,15 @@ This article describes semantic model permissions in the Power BI service and ho
 
 ## What are the semantic model permissions?
 
-The following table describes the four levels of user permissions that control access to semantic models in the Power BI service. The table also describes the semantic model owner permissions and other actions that only the semantic model owner can perform.
+The following table describes the four levels of permission that control access to semantic models in the Power BI service. The table also describes the permissions that the semantic model owner has on the semantic model, and other actions that only the semantic model owner can perform.
 
 |Permission  |Description  |
 |------------|-------------|
 |Read        |Allows user to access reports and other solutions, such as composite models on Premium/PPU workspaces, that read data from the semantic model.<br>Allows user to view semantic model settings.|
-|Build       |Allows user to build new content from the semantic model, and find content that uses the semantic model.<br>Allows user to access reports that access composite models on Power BI Pro workspaces.<br>Allows user to build composite models.<br>Allows user to pull the data into Analyze in Excel.<br>Allows querying using external APIs such as XMLA.<br>Allows user to see hidden data fields. |
+|Build       |Allows user to build new content from the semantic model and find content that uses the semantic model.<br>Allows user to access reports that access composite models on Power BI Pro workspaces.<br>Allows user to build composite models.<br>Allows user to pull the data into Analyze in Excel.<br>Allows querying using external APIs such as XMLA.<br>Allows user to see hidden data fields. |
 |Reshare     |Allows user to grant semantic model access. |
 |Write       |Allows user to republish the semantic model.<br>Allows user to [backup and restore the semantic model](../enterprise/service-premium-backup-restore-dataset.md).<br>Allows user to make changes to the semantic model via XMLA.<br>Allows user to edit semantic model settings, except data refresh, credentials, and automatic aggregations.|
-|Owner       |The semantic model owner isn't a permission in itself, but rather a conceptual role that has all the permissions on a semantic model. The first semantic model owner is the person who created the semantic model, and afterwards the last person to configure the semantic model after taking it over in the semantic model settings.<br><br>In addition to the permissions that can be granted explicitly in this table, a semantic model owner can configure semantic model refresh, credentials, and automatic aggregations.|
+|Owner       |The semantic model owner isn't a permission in itself, but rather a conceptual role that has all the permissions on a semantic model. The first semantic model owner is the person who created the semantic model, and afterwards the last person to configure the semantic model after taking it over in the semantic model settings.<br><br>In addition to the permissions described in this table that can be granted explicitly, a semantic model owner can configure semantic model refresh, credentials, and automatic aggregations.|
 
 >[!NOTE]
 >Build permission is primarily a discoverability feature. It enables users to easily discover semantic models and build Power BI reports and other consumable items based on the discovered models, such as Excel PivotTables and non-Microsoft data visualization tools, using the XMLA endpoint. Users who have Read permission without Build permission can consume and interact with existing reports that have been shared with them. Granting Read permission without Build permission should not be relied upon to secure sensitive data. Users with Read permission, even without Build permission, are able to access and interact with data in the semantic model.
@@ -67,8 +67,8 @@ Row-level security might affect the ability of users with read or build permissi
 
 * When RLS **isn't** defined on the semantic model, users with write, read, or build permission on the semantic model can read data from the semantic model.
 * When RLS **is** defined on the semantic model:
-    * Users with only read or build permission on the semantic model cannot read data from the semantic model unless they belong to one of its RLS roles.
-    * Users with write permission on the semantic model are able to read data from the semantic model regardless of whether or not they belong to any of its RLS roles.
+    * Users with only read or build permission on the semantic model can't read data from the semantic model unless they belong to one of its RLS roles.
+    * Users with write permission on the semantic model can read data from the semantic model regardless of whether or not they belong to any of its RLS roles.
 
 ## Related content
 
