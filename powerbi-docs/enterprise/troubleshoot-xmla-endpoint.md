@@ -263,15 +263,15 @@ This is due to the semantic model being published having a different connection 
 
 ## Live connected semantic model cannot be loaded
 
-Users trying to create a new Live Connected model, or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop may encounter an error to the effect, "**_We couldn't connect to your model in the Power BI Service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
+Users trying to create a new Live Connected model or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop, may encounter an error Similar to the following: "**_We couldn't connect to your model in the Power BI service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Cannot load model error.":::
 
-This error may occur when a proxy is configured in the user's environment and the proxy is preventing access to the Power BI Service. Beginning from the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI Service at endpoint ***.pbidedicated.windows.net** or the corresponding Power BI Service endpoints for National Clouds.
+The error may occur when a proxy is configured in the user's environment and the proxy is preventing access to the Power BI service. Beginning with the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI service at endpoint ***.pbidedicated.windows.net** or the corresponding Power BI service endpoints for sovereign clouds.
 
-To validate whether you are encountering an issue due to proxy settings, please try the **SQL Server Analysis Services** connector in Power BI Desktop, or any first party or third party external tool, such as **SQL Server Management Studio**, to connect to any premium workspace.
+To validate whether the issue is a result of proxy settings, try the **SQL Server Analysis Services** connector in Power BI Desktop or any first-party or third-party external tool, such as **SQL Server Management Studio**, to connect to any premium workspace.
 
-Please refer the ['**Establishing a client connection**'](/power-bi/enterprise/troubleshoot-xmla-endpoint#establishing-a-client-connection) section for more information about testing general XML/A connectivity.
+Refer to the [establishing a client connection](#establishing-a-client-connection) section in this article for more information about testing general XML/A connectivity.
 
 ## Workspace/server alias
 
