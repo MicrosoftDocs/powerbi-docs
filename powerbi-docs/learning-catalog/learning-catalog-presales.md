@@ -1,8 +1,8 @@
 ---
 title: Partner Pre-sales learning catalog
 description: Find all the training options for Power Apps for pre-sales experts, from most basic to most advanced.
-author: margoc
-ms.author: margoc
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: article
