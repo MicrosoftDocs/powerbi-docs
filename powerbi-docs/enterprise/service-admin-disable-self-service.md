@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 07/16/2024
 ms.custom: licensing support, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 LocalizationGroup: Administration
 ---
