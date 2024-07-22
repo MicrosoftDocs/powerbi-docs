@@ -215,7 +215,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * Live connections to SQL Server Analysis Services aren't supported.
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
-* You can't use Data Limits with visual calculations.
+* You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 
 ## Next steps
 
