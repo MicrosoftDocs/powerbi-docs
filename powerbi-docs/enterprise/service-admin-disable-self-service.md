@@ -15,7 +15,7 @@ LocalizationGroup: Administration
 
 Global administrators can determine whether to enable or disable self-service sign-up. As a Global administrator, you also determine whether users in your organization can make self-service purchases to get their own license.
 
-Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Fabric (free) licenses for your organization and assign them to all users.
+Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Fabric (Free) licenses for your organization and assign them to all users.
 
 Turning off self-service purchase keeps users from performing actions that require a paid license. These actions include sharing, exporting, and creating workspaces for collaboration. 
 
