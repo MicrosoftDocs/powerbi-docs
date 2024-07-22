@@ -8,9 +8,9 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.custom:
 ms.subservice: pbi-fundamentals
-ms.date: 07/18/2024
+ms.date: 07/22/2024
 ---
-# What to do if self-service is disabled
+# What to do if self-service doesn't work for sign up, trial, or purchase
 
 You try to start a trial, sign up for a free license, or purchase a Power BI license. You perform these actions on your own, which is referred to as ["self-service](/microsoft-365/admin/misc/self-service-sign-up)." It doesn't work and you get a message that self-service is disabled. For various reasons, some organizations block members from self-service sign-up, self-service trial, and self-service purchase. For example, your organization's centralized IT department or help desk might have a policy that they manage all licenses and subscriptions, even free licenses.
 
@@ -20,7 +20,7 @@ You try to start a trial, sign up for a free license, or purchase a Power BI lic
 
 To finish your purchase, contact your IT department or help desk and ask them to [follow these instructions to provide you with a license.](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins)
 
-There are scenarios where you yourself used self-service to purchase or trial Power BI. This self-service action makes you an admin and gives you limited access to the Microsoft 365 admin center. Use the admin center to add and manage your users' self-service licenses, trials, and purchases. Follow the instructions in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) to learn how to enable and disable self-service for your tenant. 
+There are scenarios where you yourself used self-service purchase or signed up for a trial of a Fabric capacity. These self-service actions give you limited access to the Microsoft 365 admin center. Use the admin center to add and manage your users' self-service licenses, trials, and purchases. Follow the instructions in [Manage self-service purchases and trials (for users)](/microsoft-365/commerce/subscriptions/manage-self-service-purchases-users) to learn how to view and manage licenses for your tenant. 
 
 ## The screens for getting a license look different
 
@@ -30,7 +30,7 @@ Some organizations set up their own process for requesting trials, upgrades, and
 
 Your organization might have its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
 
-## You can't extend a trial
+## I can't extend a trial
 
 Power BI and Fabric offer several different trials. Some trials can't be extended and the only option available is to make a purchase. 
 
