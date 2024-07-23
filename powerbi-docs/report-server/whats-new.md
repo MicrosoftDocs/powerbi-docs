@@ -17,6 +17,53 @@ Learn about what's new in the latest versions of Power BI Report Server and Powe
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
+## May 2024
+
+### Reporting
+
+- Expanding Spatial Data Integration: Shapefile Support in Azure Maps Visual
+- Data bars in matrix subtotal/total conditional formatting
+- Data labels alignment
+- New Visual – 100% Stacked Area Chart 
+- Line enhancements 
+- Enhance Q&A with Copilot-generated Linguistic Relationships 
+
+### Data Connectivity
+
+- Snowflake connector update
+
+### Modeling
+
+- Data connectivity
+- Certified connectors updates
+
+### Visualizations
+
+- New visuals in AppSource
+- Multiple sparklines
+- Rose donut pie chart by Powerviz
+- xViz gantt chart by Lumel
+- Control chart XmR by Nova Silva
+- Drill down graph PRO
+- New visuals in AppSource
+- Dumbbell bar chart by Nova Silva
+- Date picker by Powerviz
+- Drill down combo PRO
+- PDF uploader/viewer
+- Inforiver premium matrix
+- KPI MatrixGrowth rate chart by DJEENI v1.4Aimplan Comment Visual
+- Financial reporting matrix by Profitbase
+- Horizon chart by Powerviz
+- Drill Down Scatter PRO by ZoomCharts
+- Image Gallery
+- Horizontal Bar Chart
+- Trends
+- Multi-pane card 1.1
+
+### Purview
+
+- More users can now collaborate with protected PBIX files in Power BI Desktop.
+
 ## January 2024
 
 A focus of this release is on accessibility. Power BI customers will notice a continuation in the work done in the previous year. We continue to provide more inclusivity for both creators and consumers in 2024.
