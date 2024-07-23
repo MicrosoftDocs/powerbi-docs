@@ -1,16 +1,17 @@
 ---
-title: Use the Analyze feature to explain fluctuations in report visuals 
+title: Use the Analyze feature to explain fluctuations in visuals
 description: Learn how to use the Analyze feature in the Power BI service to explain fluctuations in report visuals.
 author: mihart
+ms.custom: Sales and marketing sample
 ms.author: mihart
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 02/07/2023
+ms.date: 07/17/2024
 LocalizationGroup: Create reports
 ---
-# Use the Analyze feature to explain fluctuations in report visuals
+# Use the Analyze feature to explain fluctuations in report visuals (Preview)
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
@@ -61,7 +62,7 @@ The details returned by insights are intended to highlight the differences betwe
 
 You can think of the algorithm like this&mdash;it takes all the other columns in the model and calculates the breakdown by that column (for the *before* and *after* time periods) to determine how much change occurred in that breakdown. Then returns those columns with the biggest change. In the previous example, *State* is selected in the waterfall insight, as the contribution made by Louisiana, Texas, and California fell from 13% to 19% from June to July. This change contributed the most to the decrease in *Total units*.  
 
-For each insight returned, there are four visuals that can be displayed. Three of those visuals are intended to highlight the change in contribution between the two periods, such as the explanation of the increase from *Qtr 2* to *Qtr 3*. The ribbon chart shows change both  before and after the selected data point.
+For each insight returned, there are four visuals that can be displayed. Three of those visuals are intended to highlight the change in contribution between the two periods, such as the explanation of the increase from *Qtr 2* to *Qtr 3*. The ribbon chart shows change both before and after the selected data point.
 
 ### The scatter plot
 
@@ -102,6 +103,8 @@ The fourth visual is a waterfall chart, showing actual increases or decreases be
 ## Considerations and limitations
 
 Since these insights are based on the change from the previous data point, they aren't available when you select the first data point in a visual.
+
+The **Analyze** feature isn't available for DQ and RLS-enabled models.
 
 The **Analyze** feature isn't available for all visual types.
 
