@@ -17,18 +17,22 @@ Learn about what's new in the latest versions of Power BI Report Server and Powe
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
+Reminder: [How you can find your report server product key](find-product-key.md)
+
 ## May 2024
+
+Read the Power BI blog post, [Power BI Report Server May 2024 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2024-feature-summary/) for details.
 
 ### Reporting
 
-- Expanding Spatial Data Integration: Shapefile Support in Azure Maps Visual
+- Expanding spatial data integration: Shapefile support in Azure Maps Visual
 - Data bars in matrix subtotal/total conditional formatting
 - Data labels alignment
-- New Visual – 100% Stacked Area Chart 
+- New visual: 100% stacked area chart 
 - Line enhancements 
-- Enhance Q&A with Copilot-generated Linguistic Relationships 
+- Enhance Q&A with Copilot-generated linguistic relationships 
 
-### Data Connectivity
+### Data connectivity
 
 - Snowflake connector update
 
@@ -92,7 +96,7 @@ This month brings new formatting enhancements for column and bar charts in Power
 
 :::image type="content" source="media/whats-new/new-visual-formatting.png" alt-text="Screenshot showing enhanced formatting for column and bar charts in Power BI.":::
 
-##### Key Enhancements
+##### Key enhancements
 
 * **Apply Settings to All or Series**: Enjoy the versatility of applying formatting options globally across all categories or tailor them for each unique individual series, effortlessly and efficiently.  
 * **Transparency Control**: You can now adjust the fill color transparency to achieve the perfect balance of visibility and design.  
@@ -110,7 +114,7 @@ Data labels have more options, too. Discover new enhanced capabilities for
 
 :::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
 
-##### Key Enhancements
+##### Key enhancements
 
 Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. 
 
