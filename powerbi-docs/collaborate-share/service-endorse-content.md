@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 11/18/2021
+ms.date: 07/23/2024
 LocalizationGroup: Share your work
 ---
 # Endorse your content
