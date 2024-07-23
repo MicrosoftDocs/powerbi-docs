@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/13/2024
+ms.date: 07/17/2024
 ms.custom: intro-whats-new
 ---
 
@@ -16,6 +16,57 @@ ms.custom: intro-whats-new
 Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+Reminder: [How you can find your report server product key](find-product-key.md)
+
+## May 2024
+
+Read the Power BI blog post, [Power BI Report Server May 2024 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-report-server-may-2024-feature-summary/) for details.
+
+### Reporting
+
+- Expanding spatial data integration: Shapefile support in Azure Maps Visual
+- Data bars in matrix subtotal/total conditional formatting
+- Data labels alignment
+- New visual: 100% stacked area chart 
+- Line enhancements 
+- Enhance Q&A with Copilot-generated linguistic relationships 
+
+### Data connectivity
+
+- Snowflake connector update
+
+### Modeling
+
+- Data connectivity
+- Certified connectors updates
+
+### Visualizations
+
+- New visuals in AppSource
+- Multiple sparklines
+- Rose donut pie chart by Powerviz
+- xViz gantt chart by Lumel
+- Control chart XmR by Nova Silva
+- Drill down graph PRO
+- New visuals in AppSource
+- Dumbbell bar chart by Nova Silva
+- Date picker by Powerviz
+- Drill down combo PRO
+- PDF uploader/viewer
+- Inforiver premium matrix
+- KPI MatrixGrowth rate chart by DJEENI v1.4Aimplan Comment Visual
+- Financial reporting matrix by Profitbase
+- Horizon chart by Powerviz
+- Drill Down Scatter PRO by ZoomCharts
+- Image Gallery
+- Horizontal Bar Chart
+- Trends
+- Multi-pane card 1.1
+
+### Purview
+
+- More users can now collaborate with protected PBIX files in Power BI Desktop.
 
 ## January 2024
 
@@ -45,7 +96,7 @@ This month brings new formatting enhancements for column and bar charts in Power
 
 :::image type="content" source="media/whats-new/new-visual-formatting.png" alt-text="Screenshot showing enhanced formatting for column and bar charts in Power BI.":::
 
-##### Key Enhancements
+##### Key enhancements
 
 * **Apply Settings to All or Series**: Enjoy the versatility of applying formatting options globally across all categories or tailor them for each unique individual series, effortlessly and efficiently.  
 * **Transparency Control**: You can now adjust the fill color transparency to achieve the perfect balance of visibility and design.  
@@ -63,7 +114,7 @@ Data labels have more options, too. Discover new enhanced capabilities for
 
 :::image type="content" source="media/whats-new/extended-custom-data-labels.png" alt-text="Screenshot showing extended customization for data labels.":::
 
-##### Key Enhancements
+##### Key enhancements
 
 Explore these new features of data labels to increase the data density in your charts. These advancements are available for column, bar, line, and ribbon charts. 
 
