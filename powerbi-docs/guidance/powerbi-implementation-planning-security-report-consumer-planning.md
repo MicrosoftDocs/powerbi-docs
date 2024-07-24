@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Report consumer security planning"
 description: "Learn about report consumer security planning for Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

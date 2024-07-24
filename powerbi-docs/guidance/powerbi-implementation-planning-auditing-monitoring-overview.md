@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Auditing and monitoring"
 description: "An introduction to the Power BI auditing and monitoring planning articles."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

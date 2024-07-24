@@ -261,6 +261,18 @@ When republishing a live connected semantic model utilizing the Analysis Service
 
 This is due to the semantic model being published having a different connection string but having the same name as the existing semantic model. To resolve this issue, either delete or rename the existing semantic model. Also be sure to republish any apps that are dependent on the report. If necessary, downstream users should be informed to update any bookmarks with the new report address to ensure they access the latest report.  
 
+## Live connected semantic model cannot be loaded
+
+Users trying to create a new Live Connected model or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop, may encounter an error similar to the following: "**_We couldn't connect to your model in the Power BI service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
+
+:::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Screenshot of cannot load model error.":::
+
+The error may occur when a proxy is configured in the user's environment and the proxy is preventing access to the Power BI service. Beginning with the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI service at endpoint ***.pbidedicated.windows.net** or the corresponding Power BI service endpoints for sovereign clouds.
+
+To validate whether the issue is a result of proxy settings, try the **SQL Server Analysis Services** connector in Power BI Desktop or any first-party or third-party external tool, such as **SQL Server Management Studio**, to connect to any premium workspace.
+
+Refer to the [establishing a client connection](#establishing-a-client-connection) section in this article for more information about testing general XML/A connectivity.
+
 ## Workspace/server alias
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
