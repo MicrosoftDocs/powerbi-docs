@@ -263,9 +263,9 @@ This is due to the semantic model being published having a different connection 
 
 ## Live connected semantic model cannot be loaded
 
-Users trying to create a new Live Connected model or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop, may encounter an error Similar to the following: "**_We couldn't connect to your model in the Power BI service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
+Users trying to create a new Live Connected model or open an existing Live Connected model, using the March 2024 or later versions of Power BI Desktop, may encounter an error similar to the following: "**_We couldn't connect to your model in the Power BI service. The dataset may have been deleted, renamed, moved, or it is possible that you don't have permission to access it._**"
 
-:::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Cannot load model error.":::
+:::image type="content" source="media/troubleshoot-xmla-endpoint/cannot-load-model.png" alt-text="Screenshot of cannot load model error.":::
 
 The error may occur when a proxy is configured in the user's environment and the proxy is preventing access to the Power BI service. Beginning with the March 2024 version of Power BI Desktop, the user’s environment must allow connections to the Power BI service at endpoint ***.pbidedicated.windows.net** or the corresponding Power BI service endpoints for sovereign clouds.
 
