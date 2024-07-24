@@ -37,7 +37,7 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 All three of the conditions below must be met for you to see location tags. 
 
 * The person who created the report in Power BI Desktop  must have [categorized geographical data](../../transform-model/desktop-mobile-geofiltering.md) for at least one column, such as City, State, or Country/Region.
-* The location data gathered by your device in your current location matches a value in the column marked as geographic data. 
+* The location data gathered by your device in your current location matches a value in the column marked as geographic data. For example, if a report has data that is marked as Seattle, Washington, and your device's current location data includes Washington, the geofilter will filter for records that are relevant for Washington. If your device's current location data includes both Seattle and Washington, then the geofilter will display data for both Seattle and Washington. If the current location data on your device doesn't include either Seattle or Washington, the geofilter will not appear.
 * You're using one of these mobile devices:
   * iOS (iPad, iPhone, iPod).
   * Android (phone, tablet).
