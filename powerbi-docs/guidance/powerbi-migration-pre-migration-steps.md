@@ -1,8 +1,8 @@
 ---
 title: Prepare to migrate to Power BI
 description: Guidance on pre-migration steps when migrating to Power BI.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

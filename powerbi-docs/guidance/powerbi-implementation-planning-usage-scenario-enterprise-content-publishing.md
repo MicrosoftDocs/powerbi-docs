@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Enterprise content publishing"
 description: "An explanation of how content creators and technical owners use Azure DevOps to manage and publish Power BI content"
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Tenant setup"
 description: "This article introduces important aspects to know about setting up your Fabric tenant for Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Develop content and manage changes"
 description: "This article helps you to develop content and manage changes as part of managing the content lifecycle."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
