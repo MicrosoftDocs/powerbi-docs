@@ -25,8 +25,11 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 
 ## Filter your report by your geographic location
 1. Open a report in the Power BI mobile app on your mobile device.
-2. If the report has geographic data, you see a message asking to allow Power BI to access your location. Click **Allow**, then tap **Allow** again.
-3. Tap the push pin ![Push pin icon](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-icon.png). You can filter by city, state/province, or country/region, depending on the data in the report. The filter only lists options that match your current location.
+1. If the report has geographic data, you see a message asking to allow Power BI to access your location. Click **Allow**, then tap **Allow** again.
+1. Tap the push pin ![Push pin icon](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-icon.png). You can filter by city, state/province, or country/region, depending on the data in the report.
+
+    > [!NOTE]
+    > The geographic filter only appears if a value in a column marked as geographic data (a city name, for example) appears in the location information your mobile device gathers in your current location.
    
     ![Push pin filter](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-map-set-filter.png)
 
@@ -34,7 +37,7 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 All three of the conditions below must be met for you to see location tags. 
 
 * The person who created the report in Power BI Desktop  must have [categorized geographical data](../../transform-model/desktop-mobile-geofiltering.md) for at least one column, such as City, State, or Country/Region.
-* You are in one of the locations that has data in that column.
+* The location data gathered by your device in your current location matches a value in the column marked as geographic data. 
 * You're using one of these mobile devices:
   * iOS (iPad, iPhone, iPod).
   * Android (phone, tablet).
