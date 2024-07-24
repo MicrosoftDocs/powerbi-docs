@@ -130,5 +130,4 @@ Now that you've finished the tutorial, you can delete the GitHub app.
 
 In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics.
 
-> [!div class="nextstepaction"]
-> [Connect to GitHub with a Power BI template app](service-connect-to-github.md)
+* [Connect to GitHub with a Power BI template app](service-connect-to-github.md)
