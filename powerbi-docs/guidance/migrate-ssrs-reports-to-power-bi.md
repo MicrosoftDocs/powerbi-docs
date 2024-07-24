@@ -1,8 +1,8 @@
 ---
 title: Plan to migrate .rdl reports to Power BI
 description: Guidance to help you migrate your .rdl reports from Power BI Report Server and SQL Server Reporting Services (SSRS) to Power BI.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

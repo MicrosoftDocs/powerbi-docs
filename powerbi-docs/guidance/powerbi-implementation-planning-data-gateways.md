@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Data gateways"
 description: "Learn how to plan and implement on-premises data gateways and virtual network (VNet) data gateways for Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

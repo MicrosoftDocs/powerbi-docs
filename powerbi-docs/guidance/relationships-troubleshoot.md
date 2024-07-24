@@ -1,8 +1,8 @@
 ---
 title: Relationship troubleshooting guidance
 description: Guidance for troubleshooting Power BI data model relationship issues.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

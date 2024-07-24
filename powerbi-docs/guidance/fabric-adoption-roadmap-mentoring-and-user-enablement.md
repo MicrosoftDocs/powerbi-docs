@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Mentoring and user enablement"
 description: "Mentor users to drive strong and successful adoption of Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
