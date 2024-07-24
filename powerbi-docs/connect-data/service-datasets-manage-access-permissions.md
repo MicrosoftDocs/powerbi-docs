@@ -23,7 +23,7 @@ This document explains how to use the semantic model manage permissions page.
 
 ## Open the semantic model manage permissions page
 
-To open the semantic model, manage permissions page:
+To open the semantic model manage permissions page:
 
 * From the [OneLake data hub](service-data-hub.md#find-the-data-you-need): Select **Manage permissions** on the **More options (…)** menu.
 
