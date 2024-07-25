@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Auditing of information protection and data loss prevention for Power BI"
 description: "Learn about auditing for information protection and data loss prevention for Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

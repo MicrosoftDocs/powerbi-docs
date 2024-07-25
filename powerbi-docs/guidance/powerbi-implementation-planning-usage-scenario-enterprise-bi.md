@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Enterprise BI"
 description: "Learn how Power BI enterprise BI is about organization-wide content distribution at scale."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

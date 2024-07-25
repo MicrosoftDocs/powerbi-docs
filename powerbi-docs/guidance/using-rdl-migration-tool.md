@@ -1,8 +1,8 @@
 ---
 title: Using the RDL Migration tool
 description: Guidance to help you migrate SQL Server Reporting Services reports (RDL) from your local server(s) to a Power BI workspace in your tenant.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

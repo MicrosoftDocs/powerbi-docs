@@ -1,8 +1,8 @@
 ---
 title: "Power BI Paginated Reports in a Day course"
 description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maggies, nisrinivasan
 ms.custom: video-DN1t5p9aui0
 ms.service: powerbi

@@ -1,6 +1,6 @@
 ---
-author: data-goblin
-ms.author: v-kurtbuhler
+author: denglishbi
+ms.author: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: include

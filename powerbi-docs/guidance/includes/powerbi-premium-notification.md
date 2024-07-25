@@ -1,6 +1,6 @@
 ---
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: include

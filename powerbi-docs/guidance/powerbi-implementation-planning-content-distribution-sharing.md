@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Content distribution and sharing"
 description: "This article helps you to plan the distribution and sharing of content in Power BI and Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
