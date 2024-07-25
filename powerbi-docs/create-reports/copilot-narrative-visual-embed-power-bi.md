@@ -68,7 +68,7 @@ After you select delegated permissions, search for *ML model* in the search bar 
 
 ### Consent 
 
-Keep in mind, as with other embed for your organization scenarios, end users are asked for consent for the application to use ML models upon using the application. For more information on user consent and delegated access, read this documentation, [Overview of permissions and consent in the Microsoft identity platform](/entra/identity-platform/permissions-consent-overview).
+Keep in mind, as with other embed for your organization scenarios, end users are asked for consent for the application to use ML models upon using the application. For more information on user consent and delegated access, read this documentation, [Overview of permissions and consent in the Microsoft identity platform](/entra/identity-platform/permissions-consent-overview.md).
 
 ## Send feedback
 
