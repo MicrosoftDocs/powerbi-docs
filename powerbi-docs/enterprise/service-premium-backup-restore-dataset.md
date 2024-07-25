@@ -74,7 +74,7 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 
 * Only **enhanced format model (V3 model)** is allowed to be restored.
 
-* When access to account key on your storage account is [disabled](/azure/storage/common/shared-key-authorization-prevent#disable-shared-key-authorization), you might get this error: *you might get the following error: *Key based authentication is not permitted on this storage account*.
+* When access to account key on your storage account is [disabled](/azure/storage/common/shared-key-authorization-prevent#disable-shared-key-authorization), you might get this error: *Key based authentication is not permitted on this storage account*.
 
 * The property, `ignoreIncompatibilities` for the `restore` command addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
 
