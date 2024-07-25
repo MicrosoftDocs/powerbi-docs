@@ -27,8 +27,10 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 |Scenario |Supported |
 |---------|---------|
 |[**Embed a report in a secure portal or website**](./../collaborate-share/service-embed-secure.md) Power BI. | Yes |
-|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to do so. This action is also known as embed for your organization, and includes when users want to embed visuals in solutions like PowerPoint as well. | Yes: user must be signed in with a valid workspace. |
-|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as embed for your customer’s application. | No |
+|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to do so. This action is also known as [embed for your organization](./../developer/embedded/embed-sample-for-your-organization?tabs=net-core). It includes when users want to embed visuals in solutions like PowerPoint as well. | Yes: user must be signed in with a valid workspace. |
+|**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](./../developer/embedded/embed-sample-for-customers?tabs=net-core). | No |
+
+Follow the instructions here to set up power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](./../developer/embedded/register-app?tabs=customers).
 
 ## Why embed?
 
@@ -44,9 +46,11 @@ Navigate to the Azure portal (Entra ID) and find the registered application. For
 
 Under API permissions in the left navigation, you can set up different permissions that users can access with this application.
 
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/permissions-api-azure-portal.png" alt-text="Screenshot showing setting up API permissions.":::
+
 ## Next steps
 
-In the permission section on the right, select **Add a permission**. 
+In the permission section on the right, select **Add a permission**.
 
 :::image type="content" source="media/copilot-narrative-visual-embed-power-bi/add-permission.png" alt-text="Screenshot showing Select add permission." lightbox="media/copilot-narrative-visual-embed-power-bi/add-permission.png":::
 
