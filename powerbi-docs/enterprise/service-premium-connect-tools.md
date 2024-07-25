@@ -162,7 +162,7 @@ Server name aliases, supported in Azure Analysis Services aren't supported for P
 
 ## Security
 
-In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting ***Users can work with semantic models in Excel using a live connection** should also be enabled. These settings are both enabled by default.
+In addition to the XMLA Endpoint property being enabled read-write by the capacity admin, the tenant-level setting **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** must be enabled in the admin portal. If you need to generate Analyze in Excel (AIXL) files that connect to the XMLA endpoint, the tenant-level setting **Users can work with semantic models in Excel using a live connection** should also be enabled. These settings are both enabled by default.
 
 **Allow XMLA endpoints and Analyze in Excel with on-premises semantic models** is an Integration setting.
 

@@ -22,6 +22,9 @@ In Power BI Desktop, measures are created and displayed in *Report View*, *Data 
 
 :::image type="content" source="media/desktop-measures/measuresinpbid_measinfieldlist.png" alt-text="Screenshot of Measure fields in the Fields pane.":::
 
+## Report level measures
+Report level measures or report measures are custom calculations or metrics created directly within a report, based on an existing dataset or a live connection. These measures allow users to add specific business logic, create visual calculations, or perform calculations that are relevant to the report's context without altering the original dataset. Report level measures are written using Data Analysis Expressions (DAX) and can be used in visualizations within the report to provide additional insights and tailor the data presentation to meet specific analytical needs. They enhance flexibility, enabling users to derive new insights from existing data models dynamically.
+
 > [!NOTE]
 > You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn Data Analysis Expressions (DAX) syntax, since their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
 > 

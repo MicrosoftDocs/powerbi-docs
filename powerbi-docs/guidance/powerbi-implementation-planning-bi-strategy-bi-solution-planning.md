@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: BI solution planning"
 description: "This article helps you to plan solutions that support your business intelligence strategy."
-author: data-goblin
-ms.author: v-kurtbuhler
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

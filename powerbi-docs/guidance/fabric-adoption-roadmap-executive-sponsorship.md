@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap: Executive sponsorship"
 description: "Appoint an executive sponsor to drive strong and successful adoption of Microsoft Fabric."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual

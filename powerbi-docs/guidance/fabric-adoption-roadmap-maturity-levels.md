@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap maturity levels"
 description: "A description of the maturity levels used in the Microsoft Fabric adoption roadmap series of articles."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual
