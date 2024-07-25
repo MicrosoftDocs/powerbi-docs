@@ -47,8 +47,5 @@ To use the support multiple visual selection feature, add the following code to 
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Visuals in Power BI](power-bi-visuals-concept.md).
-
->[!div class="nextstepaction"]
->[Developing a Power BI circle card](develop-circle-card.md).
+* [Visuals in Power BI](power-bi-visuals-concept.md).
+* [Developing a Power BI circle card](develop-circle-card.md).

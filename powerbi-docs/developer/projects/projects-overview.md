@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice:
 ms.topic: conceptual
-ms.date: 04/10/2024
+ms.date: 07/24/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
@@ -22,13 +22,13 @@ Power BI Desktop introduces a new way to author, collaborate, and save your proj
 
 Saving your work as a project has the following benefits:
 
-- **Text editor support** - Item definition files are JSON formatted text files containing semantic model and report metadata. They're publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
+- **Text editor support** - Item definition files are JSON formatted text files containing semantic model and report metadata. These files are publicly documented and human readable. While project files support simple text editing tools like Notepad, it's better to use a code editor like [Visual Studio Code (VS Code)](https://code.visualstudio.com/), which provides a rich editing experience including intellisense, validation, and Git integration.
 
 - **Programmatic generation and editing item definitions** - You can create scripts using the popular and easy to use [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current&preserve-view=true) , or create your own custom applications to make changes to your item definitions. Applications can be based on public documentation of the item definition schemas and/or client libraries.
 
 - **Source control** - Power BI semantic model and report item definitions can be stored in a source control system, like Git. With Git, you can track version history, compare revisions (diff), and revert to previous versions. Source control can also unblock collaboration when using Power BI Desktop by using familiar collaboration mechanisms for resolving conflicts (merge) and reviewing changes (pull requests). To learn more, see [Version control in Git](/devops/develop/git/what-is-version-control).
 
-- **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system.  These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
+- **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system. These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
 ## Video
 
@@ -38,25 +38,25 @@ See Power BI Desktop projects and other developer mode features being introduced
 
 ## Enable preview features
 
-Saving as a project in Power BI Desktop is currently in **preview**. To use this feature, you need a **Premuim license** and you must enable it in **Preview features**.
+Saving as a Power BI Project in Power BI Desktop is currently in **preview**, and you must enable it in **Preview features**.
 
-To enable, in Power BI Desktop > **File** > **Options and settings** > **Options** > **Preview features**, select the checkbox for **Power BI Project (.pbip) save option**.
+Go to **File > Options and settings > Options > Preview features** and check the box next to **Power BI Project (.pbip) save option**.
 
 ## Save as a project
 
-If you're working on a new project or you've opened an existing Power BI Desktop file (pbix), you can save your work as a Power BI *project* file (pbip):
+If you're working on a new project or you opened an existing Power BI Desktop file (pbix), you can save your work as a Power BI *project* file (pbip):
 
 :::image type="content" source="media/projects-overview/pbip-saveastype.png" alt-text="Screen grab showing save file as Power BI Project":::
 
-When you save as a project, Power BI Desktop saves report and semantic model items as folders, each containing text files that define the item. You see the following:
+When you save as a project, Power BI Desktop saves report and semantic model items as folders, each containing text files that define the item:
 
 :::image type="content" source="media/projects-overview/pbip-files.png" alt-text="Screen grab showing Power BI Project files":::
 
-After saving as a project, you can see when you are working on a project by looking at the title bar:
+After saving as a project, you can see when you're working on a project by looking at the title bar:
 
 :::image type="content" source="media/projects-overview/pbip-desktop-title.png" alt-text="Screen grab showing Power BI Desktop title when saving to project.":::
 
-If you click on the title bar, a flyout appears that's specific for Power BI Project. This lets you locate the project files as well as the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
+If you select on the title bar, a flyout appears that's specific for Power BI Project. This flyout lets you locate the project files and the display name settings for the report and the semantic model. You can also open the folder in file explorer by clicking on the paths.
 
 :::image type="content" source="media/projects-overview/pbip-desktop-flyout.png" alt-text="Screen grab showing Power BI Desktop title flyout.":::
 
@@ -72,9 +72,9 @@ A collection of files and folders that represent a Power BI report. To learn mor
 
 ##### .gitIgnore
 
-Specifies intentionally untracked files Git should ignore for Power BI Project files, such as the cache.abf and localSettings.json. 
+Specifies intentionally untracked files Git should ignore for Power BI Project files, such as the cache.abf and localSettings.json.
 
-Power BI Desktop will create the [.gitignore](https://git-scm.com/docs/gitignore) file only if one does not already exist in the chosen save folder or parent Git repository.
+Power BI Desktop creates the [.gitignore](https://git-scm.com/docs/gitignore) file only if one doesn't already exist in the chosen save folder or parent Git repository.
 
 Default content of .gitignore when saving as PBIP:
 
@@ -87,7 +87,7 @@ Default content of .gitignore when saving as PBIP:
 
 The PBIP file contains a pointer to a report folder, opening a PBIP opens the targeted report and model for authoring.
 
-For more information, refer to the [pbip schema document](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/common/pbip.md).
+For more information, see the [pbip schema document](https://github.com/microsoft/powerbi-desktop-samples/blob/main/item-schemas/common/pbip.md).
 
 ## Open a Power BI Project
 
@@ -163,7 +163,7 @@ Keep in mind:
 
 - Automatic date tables created by Power BI Desktop shouldn't be changed by using external tools.
 
-- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties.  If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop may overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
+- When changing a model that uses Direct Query to connect a Power BI semantic model or Analysis Services model, you must update the ChangedProperties and PBI_RemovedChildren collection for the changed object to include any modified or removed properties. If ChangedProperties and/or PBI_RemovedChildren isn't updated, Power BI Desktop might overwrite any changes the next time the query is edited or the model is refreshed in Power BI Desktop.
 
 - <a name="rc">1</a> - Changing a column's data type is supported. However, renaming columns isn't supported when connecting to the AS instance.
 
@@ -196,9 +196,10 @@ Use VS Code to map JSON schemas to the files being authored. JSON schemas for pr
 - When saving as a Power BI Project, the maximum length of the project files path is 260 characters.
 - In Power BI Desktop, you can't save as a PBIP directly to OneDrive and SharePoint.
 - When editing PBIP files outside of Power BI Desktop, they should be saved using UTF-8 without BOM encoding.
-- Report Linguistic Schema is not supported with Power BI projects.
+- Report Linguistic Schema isn't supported with Power BI projects.
 - Power BI Desktop uses CRLF as end-of-line. To avoid problems in your diffs, configure Git to handle line endings by enabling [autocrlf](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings).
 - Power BI Projects is currently not supported in Microsoft Power BI Desktop version optimized for Power BI Report Server.
+- [Live connect reports](/power-bi/connect-data/service-live-connect-dq-datasets#live-connection) saved as PBIP require the [XMLA Endpoint](/fabric/admin/service-admin-portal-integration#allow-xmla-endpoints-and-analyze-in-excel-with-on-premises-datasets) to be enabled.
 
 ## Frequently asked questions
 

@@ -43,5 +43,4 @@ For more information about using the `allowInteractions` flag, see the [SampleBa
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Visual API](visual-api.md)
+[Visual API](visual-api.md)

@@ -325,11 +325,7 @@ Users need permission to access the Power BI folder the report is in. When you g
 
 ## Related content
 
->[!div class="nextstepaction"]
->[Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
+* [Tutorial: Embed Power BI content using a sample embed for your customers' application](embed-sample-for-customers.md)
+* [Embed paginated reports](embed-paginated-reports.md)
 
-> [!div class="nextstepaction"]
->[Embed paginated reports](embed-paginated-reports.md)
-
->[!div class="nextstepaction"]
->[Ask the Power BI Community](https://community.powerbi.com/)
+[Ask the Power BI Community](https://community.powerbi.com/)

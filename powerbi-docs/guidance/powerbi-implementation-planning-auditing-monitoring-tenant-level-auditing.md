@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Tenant-level auditing"
 description: "Learn about tenant-level auditing planning for Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
@@ -919,7 +919,7 @@ Consider an example involving a raw data zone of a data lake. The zone has a fol
 
 We strongly recommend that you use a technology that allows you to write the raw data to _immutable storage_. Immutable storage guarantees that once the data is written, it can't be overwritten or deleted. That distinction is important to auditors, and it allows you to trust that the raw data is reliable.
 
-You also need to consider how to securely store the raw data. Typically, very few users require access the raw data. Access to raw data is typically provided on a needs-basis, typically for data engineers and system administrators. Your internal auditors might also need access. The team members who are responsible for creating the curated data (described next) also require access to the raw data.
+You also need to consider how to securely store the raw data. Typically, very few users require access to the raw data. Access to raw data is typically provided on a needs-basis, typically for data engineers and system administrators. Your internal auditors might also need access. The team members who are responsible for creating the curated data (described next) also require access to the raw data.
 
 Here are some considerations to help you choose your raw data storage.
 

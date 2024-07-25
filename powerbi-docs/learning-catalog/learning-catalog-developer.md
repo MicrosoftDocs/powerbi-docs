@@ -1,8 +1,8 @@
 ---
 title: Developer learning catalog
 description: Find all the training options for Power BI for developers, from most basic to most advanced.
-author: margoc
-ms.author: margoc
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: article

@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Fabric adoption roadmap"
 description: "The overview of the Microsoft Fabric adoption roadmap series of articles."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: fabric
 ms.topic: conceptual

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 12/19/2023
+ms.date: 07/18/2024
 ---
 # Configure Power BI Report Server with Microsoft Entra application proxy
 
@@ -29,7 +29,7 @@ After installing Power BI Report Server (assuming on an Azure VM), configure the
 2. The DNS name configured for the VM in our environment is `pbirsazureapp.eastus.cloudapp.azure.com`.
 3. Configure the Power BI Report Server external web service and web portal URL by selecting the **Advanced** tab > **Add** button > **Choose Host Header Name** and adding the host name (DNS name) as shown here.
 
-    ![Report Server Configuration Manager](media/azure-application-proxy/report-server-configuration-manager.png)
+    ![Report Server Configuration Manager](media/microsoft-entra-application-proxy/report-server-configuration-manager.png)
 
 1. We performed the previous step for both Web service and Web portal section and got the URLs registered on the report server Configuration Manager:
 
@@ -158,14 +158,14 @@ We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.ms
 - **Pre-authentication Method**: Microsoft Entra ID.
 - **Connector Group:** Default.
 
-![Default connector group](media/azure-application-proxy/report-server-application-proxy-1.png)
+![Default connector group](media/microsoft-entra-application-proxy/report-server-application-proxy-1.png)
 
 We haven't made any changes in the **Additional Settings** section. It's configured to work with the default options.
 
 > [!IMPORTANT]
 > When configuring the application proxy, note that the **Backend Application Timeout** property is set to **Default** (85 seconds). If you have reports that take longer than 85 seconds to execute, set this property to **Long** (180 seconds), which is the highest possible timeout value. When configured for **Long**, all reports need to complete within 180 seconds or they time out and result in an error.
 
-![Additional settings](media/azure-application-proxy/report-server-application-proxy-1.png)
+![Additional settings](media/microsoft-entra-application-proxy/report-server-application-proxy-1.png)
 
 ### Configure single sign-on
 
@@ -182,7 +182,7 @@ Once your app is published, configure the single sign-on settings with the follo
 
     We recommend using User Principal name. In our sample, we configured it to work with **User Principal name** option:
 
-    ![Configure Integrated Windows Authentication](media/azure-application-proxy/report-server-configure-iwa.png)
+    ![Configure Integrated Windows Authentication](media/microsoft-entra-application-proxy/report-server-configure-iwa.png)
 
 1. Click **Save** to save your changes.
 
@@ -195,7 +195,7 @@ To finish setting up your application, go to the **Users and groups** section an
     - Create a new Redirect URL and configure it with **Type** = **Web** and **Redirect URI** = `https://pbirsazureapp-umacontoso2410.msappproxy.net/`
     - In the **Advanced Settings** section, configure the **Logout URL** to `https://pbirsazureapp-umacontoso2410.msappproxy.net/?Appproxy=logout`
 
-    ![Screenshot shows the P B I R S Authentication pane with Redirect U R I s and Advanced settings.](media/azure-application-proxy/azure-report-server-authentication-1.png)
+    ![Screenshot shows the P B I R S Authentication pane with Redirect U R I s and Advanced settings.](media/microsoft-entra-application-proxy/azure-report-server-authentication-1.png)
 
 1. Continue configuring the **Authentication** section of App registration for the Power BI Report Server application as follows for **Implicit grant**, **Default client type**, and **Supported account types**:
 
@@ -203,7 +203,7 @@ To finish setting up your application, go to the **Users and groups** section an
     - Set **Default client type** to **No**.
     - Set **Supported account types** to **Accounts in this organizational directory only (UmaContoso only – Single tenant)**.
 
-    ![Screenshot shows the P B I R S Authentication pane with the settings as described.](media/azure-application-proxy/azure-report-server-authentication-2.png)
+    ![Screenshot shows the P B I R S Authentication pane with the settings as described.](media/microsoft-entra-application-proxy/azure-report-server-authentication-2.png)
 
 1. Once the single sign-on is set up and the URL `https://pbirsazureapp-umacontoso2410.msappproxy.net` is working, we have to make sure that the account that we log in with is synced with the account to which the permissions are provided in Power BI Report Server.
 
@@ -214,15 +214,15 @@ To finish setting up your application, go to the **Users and groups** section an
 
 1. After successfully verifying the DNS entry for the custom domain, you should be able to see the status as **Verified** corresponding to the domain from the portal.
 
-    ![Domain names](media/azure-application-proxy/azure-ad-custom-domain-names.png)
+    ![Domain names](media/microsoft-entra-application-proxy/microsoft-entra-custom-domain-names.png)
 
 1. Install Microsoft Entra Connect on the domain controller server and configure it to sync with Microsoft Entra ID.
 
-    ![Connect directories](media/azure-application-proxy/azure-ad-connect-configuration.png)
+    ![Connect directories](media/microsoft-entra-application-proxy/microsoft-entra-connect-configuration.png)
 
 1. Once the Microsoft Entra ID has synced with on-premises AD, we see the following status from the Azure portal:
 
-    ![Azure portal status](media/azure-application-proxy/azure-ad-connect-portal.png)
+    ![Azure portal status](media/microsoft-entra-application-proxy/microsoft-entra-connect-portal.png)
 
 1. Also, once the sync is successful, open the AD domains and trusts on the Domain controller. Right-click Active Directory Domains and Trusts > Properties and add the UPN. In our environment, `umacontoso.com` is the custom domain we purchased.
 
@@ -230,7 +230,7 @@ To finish setting up your application, go to the **Users and groups** section an
 
     The AD domain name gets listed in the drop-down list of the **User logon name** section after you do the previous step. Configure the user name, and select the domain from the drop-down list in the **User logon name** section of the AD user properties.
 
-    ![Active Directory properties](media/azure-application-proxy/active-directory-user-properties.png)
+    ![Active Directory properties](media/microsoft-entra-application-proxy/microsoft-entra-id-user-properties.png)
 
 1. Once the AD sync is successful, you see the on-premises AD account coming up in the Azure portal under the **Users and Groups** section of the application. The source for the account is **Windows Server AD.**
 2. Logging in with `umasm@umacontoso.com` will be equivalent to using the Windows credentials `Umacontoso\umasm`.
@@ -239,15 +239,15 @@ To finish setting up your application, go to the **Users and groups** section an
 
     Successful sign-in after implementing the above steps:
 
-    ![Sign-in screen](media/azure-application-proxy/azure-ad-ad-fs-login-prompt.png)
+    ![Sign-in screen](media/microsoft-entra-application-proxy/microsoft-entra-ad-fs-login-prompt.png)
 
     Followed by the display of web portal:
 
-    ![Power BI Report Server portal](media/azure-application-proxy/azure-ad-portal.png)
+    ![Power BI Report Server portal](media/microsoft-entra-application-proxy/microsoft-entra-portal.png)
 
     With a successful test connection to data source using Kerberos as the authentication:
 
-    ![Power BI Report Server portal connected successfully](media/azure-application-proxy/azure-ad-datasource-success.png)
+    ![Power BI Report Server portal connected successfully](media/microsoft-entra-application-proxy/microsoft-entra-datasource-success.png)
 
 ## Access from Power BI mobile apps
 
@@ -292,6 +292,7 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 
 ## Related content
 
+- [Connect to Report Server and SSRS from Power BI mobile applications](./mobile-oauth-ssrs.md)
 - [Enable remote access to Power BI Mobile with Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

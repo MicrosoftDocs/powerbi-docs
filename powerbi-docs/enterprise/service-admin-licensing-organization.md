@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/28/2024
+ms.date: 07/17/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
@@ -69,6 +69,8 @@ Fabric and the Power BI service are available for organizations to purchase and 
     After you purchase a Fabric subscription, [enable Fabric for your organization](/fabric/admin/fabric-switch). This includes setting up tenants and capacities.
 
 1. Purchase a Power BI subscription and licenses. Power BI Pro is included in Microsoft 365 E5. Otherwise, you can purchase Pro or PPU licenses from the [Microsoft pricing site](https://powerbi.microsoft.com/en-us/pricing/), through Microsoft 365, or through a Microsoft partner. After your purchase, you can assign licenses to individual users or allow self-service. For more information, see [enabling your users to upgrade their own licenses](#enable-and-disable-self-service-sign-up-and-purchase).
+
+1. Go directly to the [sign-up wizard for Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro). 
 
 1. [Start a free 60-day Fabric trial for your organization.](/fabric/get-started/fabric-trial) The trial includes a trial capacity, 1 TB of storage, and access to all of the Fabric experiences and features.
 1. Get free licenses for all of your users. The Fabric free license doesn't include a Fabric capacity. The Fabric free license includes access to the paid features of the Power BI service. Sign up on app.fabric.microsoft.com.

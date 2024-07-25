@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Deploy content"
 description: "This article helps you to deploy content as part of managing the content lifecycle."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

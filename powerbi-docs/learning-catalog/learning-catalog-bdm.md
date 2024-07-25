@@ -1,8 +1,8 @@
 ---
 title: Business and Technical Decision Makers learning catalog
 description: Find all the training options for Power BI for business and technical decision makers, from most basic to most advanced.
-author: margoc
-ms.author: margoc
+author: kfollis
+ms.author: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: article
