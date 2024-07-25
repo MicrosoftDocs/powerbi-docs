@@ -216,6 +216,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
+* You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
 
 ## Next steps
 
