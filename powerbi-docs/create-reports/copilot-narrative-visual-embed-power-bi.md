@@ -30,7 +30,7 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 |**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to do so. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). It includes when users want to embed visuals in solutions like PowerPoint as well. | Yes: user must be signed in with a valid workspace. |
 |**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](../developer/embedded/embed-sample-for-customers.md?tabs=net-core). | No |
 
-Follow the instructions here to set up power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](../developer/embedded/register-app.md?tabs=customers).
+Follow the instructions here to set up Power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](../developer/embedded/register-app.md?tabs=customers).
 
 ## Why embed?
 
@@ -42,7 +42,7 @@ A sales team might want to embed a Power BI report in their internal CRM applica
 
 Let's get started unlocking this scenario for your organization. To unlock this scenario, you must add a permission that authorizes your application to generate Copilot responses.
 
-Navigate to the Azure portal (Entra ID) and find the registered application. For more information on registering applications, see the documentation [Set up Power BI Embedded](./../developer/embedded/register-app.md?tabs=organization). Entra ID is where you can set up and manage the authentication for the embedded scenario. For more information, see the article [Edit your Microsoft Entra app permission settings - Power BI](./../developer/embedded/change-permissions.md).
+Navigate to the Azure portal (Microsoft Entra ID) and find the registered application. For more information on registering applications, see the documentation [Set up Power BI Embedded](./../developer/embedded/register-app.md?tabs=organization). Microsoft Entra ID is where you can set up and manage the authentication for the embedded scenario. For more information, see the article [Edit your Microsoft Entra app permission settings - Power BI](./../developer/embedded/change-permissions.md).
 
 Under API permissions in the left navigation, you can set up different permissions that users can access with this application.
 
