@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 12/28/2022
+ms.date: 07/25/2024
 LocalizationGroup: Model your data
+#customer intent: As a As a data analyst or report creator, I want to learn how to specify the data category for a column.
 ---
 # Specify data categories in Power BI Desktop
 
 In Power BI Desktop, you can specify the *data category* for a column so Power BI Desktop knows how it should treat its values when in a visualization.
 
-When Power BI Desktop imports data, it gets other information than the data itself, like the table and column names, and whether the data is a primary key. With that information, Power BI Desktop makes some assumptions about how to give you a good default experience when creating a visualization.
-For example, when a column has numeric values, you'll probably want to aggregate it in some way, so Power BI Desktop places it in the **Values** area of the **Visualizations** pane. Or, for a column with date-time values on a line chart, Power BI Desktop assumes you'll probably use it as a time hierarchy axis.
+When Power BI Desktop imports data, it gets other information than the data itself, like the table and column names, and whether the data is a primary key. With that information, Power BI Desktop makes some assumptions about how to give you a good default experience when creating a visualization. For example, when a column has numeric values, you'll probably want to aggregate it in some way, so Power BI Desktop places it in the **Values** area of the **Visualizations** pane. Or, for a column with date-time values on a line chart, Power BI Desktop assumes you'll probably use it as a time hierarchy axis.
 
 But, there are some cases that are a bit more challenging, like geography. Consider the following table from an Excel worksheet:
 
@@ -29,8 +29,10 @@ Should Power BI Desktop show a picture of the world with countries/regions highl
 
 Use the following steps to specify a data category:
 
-1. In **Report** View or **Data** View, in the **Fields** list, select the field you want to be sorted by a different categorization.
-2. On the ribbon, in the **Properties** area of the **Column tools** tab, select the drop-down arrow next to **Data Category**.  This list shows the data categories you can choose for your column. Some selections might be disabled if they won't work with the current data type of your column. For example, if a column is a date or time data type, Power BI Desktop won't let you choose geographic data categories.
+1. In **Report** view or **Table** view, in the **Data** pane, select the field you want to be sorted by a different categorization.
+
+2. On the ribbon, in the **Properties** area of the **Column tools** tab, select the dropdown arrow next to **Data category**.  This list shows the data categories you can choose for your column. Some selections might be disabled if they don't work with the current data type of your column. For example, if a column is a date or time data type, Power BI Desktop won't let you choose geographic data categories.
+
 3. Select the category you want.
 
     :::image type="content" source="media/desktop-data-categorization/desktop-data-categorization.png" alt-text="Screenshot of Power B I Desktop showing Data Category filter.":::

@@ -1,14 +1,15 @@
 ---
 title: Use visual elements to enhance Power BI reports
-description: Use visual elements such as wallpaper and visual headers to enhance reports
+description: Use visual elements such as wallpaper and visual headers to enhance the appearance of Power BI reports
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 01/12/2023
+ms.date: 07/25/2024
 LocalizationGroup: Create reports
+#customer intent: As a report creator, I want to learn how to use enhance the appearance of Power BI reports with visual elements.
 ---
 # Use visual elements to enhance Power BI reports
 
@@ -18,9 +19,9 @@ With **Power BI Desktop** you can use visual elements, such as wallpaper and imp
 
 ![Screenshot of a sample Power BI Desktop report with enhanced visuals.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_01.png)
 
-You can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The enhancements discussed in this article include the following:
+You can put enhancements to use in your reports and make your analytics and reports even more appealing than before. The following enhancements are discussed in this article:
 
-* Apply **wallpaper** to your reports so your background can enhance or highlight elements of the story you want to tell with your data
+* Apply **wallpaper** to your reports so your background can enhance or highlight elements of the story you want to tell with your data.
 * Use improved **visual headers** for individual visualizations to create perfectly aligned visuals on your report canvas.
 
 The following sections describe how to use these enhancements and how to apply them to your reports.
@@ -35,16 +36,16 @@ You can either set wallpaper on a per-report-page basis or have the same wallpap
 
 ![Screenshot of the Visualizations pane, highlighting the Wallpaper option.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_03.png)
 
-You can choose a color to apply as **wallpaper** by selecting the **Color** dropdown, or you can select the **Add Image** button to select an image to apply as wallpaper. You can also apply transparency to your wallpaper, whether it's a color or an image by using the **Transparency** slider.
+You can choose a color to apply as **wallpaper** by selecting the **Color** dropdown, or you can select the **Add file** button to select an image to apply as wallpaper. You can also apply transparency to your wallpaper, whether it's a color or an image, by using the **Transparency** slider.
 
 It's useful to keep in mind the following definitions that pertain to **wallpaper**:
 
 * The gray area outside of your report area is the **wallpaper** area.
-* The area in the canvas where you can place visuals is referred to as the report **page** and, in the **Format pane**, can be modified using the **Page background** dropdown.
+* The area in the canvas where you can place visuals is referred to as the report **page** and, in the **Format pane**, can be modified using the **Canvas background** dropdown.
 
 The report **page** is always in the foreground (when compared to the wallpaper), while the **wallpaper** is behind it and the furthest-back element on the report page. When you apply transparency to the page, the visuals in your report also have the transparency applied, allowing your wallpaper to be visible in the background through your visuals.
 
-For all new reports, the default settings are the following:
+All new reports have the following default settings:
 
 * The report **page** is set to **white** and its transparency is set to **100%**.
 * The **wallpaper** is set to **white** and its transparency is set to **0%**.
@@ -74,14 +75,14 @@ If your visual is positioned all the way to the top of your report, the visual h
 
 ![Screenshot of a visual, showing the header at the bottom of the visual.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_08.png)
 
-Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Visual header**. You can adjust all sorts of characteristics of the visual header.
+Each visual also has a card in the **Formatting** section of the **Visualizations** pane called **Header icons**. You can adjust all sorts of characteristics of the visual header.
 
 ![Screenshot shows formatting options for the Visual header.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_09.png)
 
 > [!NOTE]
-> The visibility of toggles don't affect your report when you're authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are important during editing, especially warning icons that alert you to issues while editing.
+> The visibility of toggles don't affect your report when you're authoring or editing the report. You must publish the report and view it in reading mode to see the effect. This behavior ensures that the many options provided in visual headers are visible during editing, especially warning icons that alert you to issues while editing.
 
-For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace > Reports**, selecting a report, and then choosing the **Settings** icon. There you see settings for the report for which you selected **Settings** and you can adjust the settings from there, as shown in the following image.
+For reports that only appear in the **Power BI service**, you can adjust the use of visual headers by going to **My Workspace**, selecting **More options** next to the report, and then choosing **Settings**. There you see settings for the report for which you selected **Settings**. You can adjust the settings from there, under **Visual options**, as shown in the following image.
 
 ![Screenshot of the settings for a report in the Power BI service.](media/desktop-visual-elements-for-reports/visual-elements-for-reports_10.png)
 
@@ -97,7 +98,7 @@ For more information about Power BI Desktop and how to get started, see:
 
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
-* [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to Data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
-* [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Perform common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
+* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Connect to data sources in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+* [Tutorial: Shape and combine Data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Perform common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

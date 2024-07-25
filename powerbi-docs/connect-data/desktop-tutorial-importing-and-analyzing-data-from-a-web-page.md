@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: tutorial
-ms.date: 01/04/2023
+ms.date: 07/25/2024
 LocalizationGroup: Learn more
 ---
 # Tutorial: Analyze webpage data by using Power BI Desktop
@@ -30,19 +30,19 @@ Web connections are only established using basic authentication. Web sites requi
 
 To import the data:
 
-1. In the Power BI Desktop **Home** ribbon tab, drop down the arrow next to **Get Data**, and then select **Web**.
+1. In the Power BI Desktop **Home** ribbon tab, drop down the arrow next to **Get data**, and then select **Web**.
 
    ![Screenshot shows the Get data option on the ribbon with Web selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png)
 
    > [!NOTE]
    >
-   > You can also select the **Get Data** item itself, or select **Get Data** from the Power BI Desktop get started dialog, then select **Web** from the **All** or **Other** section of the **Get Data** dialog, and then select **Connect**.
+   > You can also select the **Get data** item itself, or select **Get data from other sources** from Power BI Desktop Home, then select **Web** from the **All** or the **Other** section of the **Get Data** dialog, and then select **Connect**.
 
 1. In the **From Web** dialog, paste the URL `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship` into the **URL** text box, and then select **OK**.
 
     ![Screenshot shows the From Web dialog where you can enter the URL for the webpage.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
 
-   After you connect to the Wikipedia web page, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results[edit]** table has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
+   After you connect to the Wikipedia web page, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results** table has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
 
    :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png" alt-text="Screenshot shows the Navigator dialog with a table selected and Transform Data highlighted." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png":::
 
@@ -50,7 +50,7 @@ To import the data:
    >
    > The **Preview** pane shows the most recent table selected, but all selected tables load into the Power Query Editor when you select **Transform Data** or **Load**.
 
-1. Select the **Results[edit]** table in the **Navigator** list, and then select **Transform Data**.
+1. Select the **Results** table in the **Navigator** list, and then select **Transform Data**.
 
    A preview of the table opens in **Power Query Editor**, where you can apply transformations to clean up the data.
 
@@ -62,7 +62,7 @@ You want to make the data easier to scan by displaying only the years and the co
 
 First, remove all the columns except for two from the table. Rename these columns as *Year* and *CountryRegion* later in the process.
 
-1. In the **Power Query Editor** grid, select the columns. Select **Ctrl** to select multiple items.
+1. In the **Power Query Editor** grid, select the columns. Press **Ctrl** to select multiple items.
 
 1. Right-click and select **Remove Other Columns**, or select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab, to remove all other columns from the table.
 
@@ -90,17 +90,17 @@ This version of the imported data has the word *Details* appended to the year. Y
 
 Some cells contain only the word "Year" rather than year values. You can filter the column to only display rows that don't contain the word "Year".
 
-1. Select the filter drop-down arrow on the column.
+1. Select the filter dropdown arrow on the column.
 
-1. In the drop-down menu, scroll down and clear the checkbox next to the **Year** option, and then select **OK**.
+1. In the dropdown menu, scroll down and clear the checkbox next to the **Year** option, and then select **OK**.
 
    ![Screenshot shows Text Filters in the context menu where you can remove entries.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
 
 Since you're only looking at the final winners data now, you can rename the second column to **CountryRegion**. To rename the column:
 
 1. Double-click or tap and hold in the second column header, or
-   - Right-click the column header, and select **Rename**, or
-   - Select the *column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon.
+   - Right-click the column header and select **Rename**, or
+   - Select the column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon.
 
    ![Screenshot shows the Rename option selected from the context menu for a column.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png)
   
@@ -118,11 +118,11 @@ You also want to filter out rows that have `null` values in the **CountryRegion*
 
    ![Screenshot shows a context menu with Text Filters and Does Not Equal selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
 
-## Import the query into Report View
+## Import the query into Report view
 
 Now that you've shaped the data the way you want, you're ready to name your query "Euro Cup Winners" and import it into your report.
 
-1. In the **Query Settings** pane, in the **Name** text box, enter **Euro Cup Winners**.
+1. In the **Queries** pane, in the **Name** text box, enter **Euro Cup Winners**.
 
    ![Screenshot shows Query Settings with the name Euro Cup Winners entered.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
 
@@ -130,9 +130,9 @@ Now that you've shaped the data the way you want, you're ready to name your quer
 
    ![Screenshot shows the Close & Apply option on the Home ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
 
-The query loads into the Power BI Desktop *Report* view, where you can see it in the **Fields** pane.
+The query loads into the Power BI Desktop *Report* view, where you can see it in the **Data** pane.
 
-   ![Screenshot shows the Fields pane with Euro Cup Winners fields, Country and Year.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
+   ![Screenshot shows the Data pane with Euro Cup Winners fields, Country and Year.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 
 > [!TIP]
 >
