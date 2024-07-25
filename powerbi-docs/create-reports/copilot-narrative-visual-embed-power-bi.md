@@ -46,7 +46,7 @@ Navigate to the Azure portal (Microsoft Entra ID) and find the registered applic
 
 Under API permissions in the left navigation, you can set up different permissions that users can access with this application.
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/permissions-api-azure-portal.png" alt-text="Screenshot showing setting up API permissions." lightbox="media/copilot-narrative-visual-embed-power-bi/permissions-api-azure-portal.png":::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/api-permissions-azure-portal.png" alt-text="Screenshot showing setting up API permissions." lightbox="media/copilot-narrative-visual-embed-power-bi/api-permissions-azure-portal.png":::
 
 ## Next steps
 
