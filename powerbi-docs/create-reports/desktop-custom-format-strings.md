@@ -20,7 +20,7 @@ With custom format strings in **Power BI Desktop**, you can customize how fields
 
 Format strings exist on three levels:
 
--	**Model**. You can set a format string for fields in the model. Anywhere you use that field the format string is applied, unless overridden by a visual or element level format string. 
+-	**Model**. You can set a format string for fields in the model or use a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) to format your measure. Anywhere you use that field the format string is applied, unless overridden by a visual or element level format string. 
 -	**Visual**. You can set format strings on any column, measure, or visual calculation that is on your visual, even if they already had a format string. In that case the model level format string is overridden, and the visual level format string is used. If you change the aggregation on a field, which invalidates a previously set visual level format string, the format string is removed. Visual level format strings for fields are persisted for fields, but not for visual calculations. If you set a visual level format string on a field and then remove and readd that field to the same visual, the visual level format string is reinstated. In contrast, for a visual calculation, the format string isn't reinstated. 
 -	**Element**. You can set a format string for data labels and for specific elements of the new card and the new slicer visuals. This level will be expanded to include more in the future. Any format string you set here overrides the format string set on the visual and model level.
 
