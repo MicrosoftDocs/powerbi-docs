@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 05/31/2024
+ms.date: 07/25/2024
 LocalizationGroup: Premium
 ---
 
@@ -69,9 +69,14 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 * Power BI must be able to access your ADLS Gen2 directly. Your ADLS Gen2 can't be located in a VNET and the firewall can't be turned on.
 
 * If your ADLS Gen2 is already working with **Backup and Restore**, and you disconnect and later reconfigure it to work with **Backup and Restore** again. You must first rename or move the previous backup folder, or the attempt will result in errors and failure.
+
 * **Restore** only supports restoring the database as a **Large Model (Premium)** database.
+
 * Only **enhanced format model (V3 model)** is allowed to be restored.
-* There's a new property, `ignoreIncompatibilities`, for the `restore` command that addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
+
+* When access to account key on your storage account is [disabled](/azure/storage/common/shared-key-authorization-prevent#disable-shared-key-authorization), you might get this error: *you might get the following error: *Key based authentication is not permitted on this storage account*.
+
+* The property, `ignoreIncompatibilities` for the `restore` command addresses Row-level security (RLS) incompatibilities between Azure Analysis Services (AAS) and Power BI Premium. Power BI Premium only supports the read permission for roles, but AAS supports all permissions. If you try to restore a backup file for which some roles don't have *read* permissions, you must specify the `ignoreIncompatibilities` property in the `restore` command. If not specified, restore can fail. When specified, the role without the *read* permission is dropped. Currently, there's no setting in SSMS that supports the `ignoreIncompatibilities` property, however, you can specify it in a `restore` command using Tabular Model Scripting Language (TMSL). For example:
 
     ```json
       {
@@ -115,15 +120,8 @@ When using the **Backup and Restore** feature with Power BI, keep the following 
 
 ## Related content
 
-* [What is Power BI Premium?](service-premium-what-is.md)
-* [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 * [Analysis Services cmdlets for PowerShell](https://www.powershellgallery.com/packages/Az.AnalysisServices)
+
 * [Semantic model connectivity with the XMLA endpoint](service-premium-connect-tools.md)
-* [Using Autoscale with Power BI Premium](service-premium-auto-scale.md)
-* [Power BI Premium FAQ](service-premium-faq.yml)
-* [Power BI Premium Per User FAQ](service-premium-per-user-faq.yml)
-* [Add or change Azure subscription administrators](/azure/cost-management-billing/manage/add-change-subscription-administrator)
+
 * [Configuring tenant and workspace storage](../transform-model/dataflows/dataflows-azure-data-lake-storage-integration.md)
-
-More questions? [Ask the Power BI Community](https://community.powerbi.com/).
-
