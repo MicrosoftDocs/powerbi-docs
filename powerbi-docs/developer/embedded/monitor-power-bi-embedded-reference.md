@@ -22,7 +22,7 @@ See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on the
 
 [!INCLUDE [horz-monitor-ref-metrics-intro](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-intro.md)]
 
-### Supported metrics for Microsoft.PowerBIDedicated/capacities
+### <a name="capacities"></a>Supported metrics for Microsoft.PowerBIDedicated/capacities
 
 The following table lists the metrics available for the Microsoft.PowerBIDedicated/capacities resource type.
 
