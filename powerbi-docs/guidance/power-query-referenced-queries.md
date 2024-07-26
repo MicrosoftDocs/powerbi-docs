@@ -1,14 +1,15 @@
 ---
 title: Referencing Power Query queries
-description: Guidance for defining Power Query queries that reference other queries.
+description: Comprehensive guidance for defining Power Query queries that reference other queries and for optimizing data refresh performance.
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 07/25/2024
+#customer intent: As a data modeler working with Power BI Desktop, I want to understand how to reference Power Query queries so that I can optimize data refresh performance and avoid duplicating logic across my queries.
 ---
 
 # Referencing Power Query queries

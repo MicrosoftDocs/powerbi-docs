@@ -9,7 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 07/25/2024
 LocalizationGroup: Model your data
-#customer intent: As a As a data analyst or report creator, I want to learn how to specify the data category for a column.
+#customer intent: As a Power BI user, I want to learn how to specify data categories in Power BI Desktop so that I can effectively visualize and analyze my data.
 ---
 # Specify data categories in Power BI Desktop
 

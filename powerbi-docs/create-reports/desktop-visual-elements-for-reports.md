@@ -9,7 +9,7 @@ ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 07/25/2024
 LocalizationGroup: Create reports
-#customer intent: As a report creator, I want to learn how to use enhance the appearance of Power BI reports with visual elements.
+#customer intent: As a report creator, I want to learn how to use visual elements such as wallpaper and visual headers to enhance the appearance of Power BI reports so that I can create more appealing and visually engaging reports for better data storytelling.
 ---
 # Use visual elements to enhance Power BI reports
 

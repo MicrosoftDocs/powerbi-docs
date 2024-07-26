@@ -10,7 +10,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 07/25/2024
 LocalizationGroup: Connect to data
-#customer intent: As a As a data analyst or report creator, I want to learn how to connect to a webpage from Power BI Desktop.
+#customer intent: As a data analyst or report creator, I want to learn how to connect to a webpage from Power BI Desktop so that I can import webpage data into my visuals and data models.
 ---
 # Connect to webpages from Power BI Desktop
 

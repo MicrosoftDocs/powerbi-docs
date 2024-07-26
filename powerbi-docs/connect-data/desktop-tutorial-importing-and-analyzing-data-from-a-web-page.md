@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Import and analyze data from a webpage'
-description: 'This tutorial shows you how to import and analyze data from a webpage using Power BI Desktop. Learn how to create and customize a map and a pie chart.'
+title: Tutorial: Import and analyze data from a webpage
+description: This tutorial shows you how to import and analyze data from a webpage using Power BI Desktop. Learn how to create and customize a map and a pie chart.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -10,10 +10,11 @@ ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 07/25/2024
 LocalizationGroup: Learn more
+#customer intent: As a data analyst, I want to import and analyze data from a webpage using Power BI Desktop so that I can create visualizations and gain insights from the data.
 ---
 # Tutorial: Analyze webpage data by using Power BI Desktop
 
-As a long-time soccer fan, you want to report on the UEFA European Championship (Euro Cup) winners over the years. With Power BI Desktop, you can import this data from a web page into a report and create visualizations that show the data. In this tutorial, you learn how to use Power BI Desktop to:
+As a long-time soccer fan, you want to report on the UEFA European Championship (Euro Cup) winners over the years. With Power BI Desktop, you can import this data from a webpage into a report and create visualizations that show the data. In this tutorial, you learn how to use Power BI Desktop to:
 
 - Connect to a web data source and navigate across its available tables.
 - Shape and transform data in the Power Query Editor.
@@ -30,7 +31,7 @@ Web connections are only established using basic authentication. Web sites requi
 
 To import the data:
 
-1. In the Power BI Desktop **Home** ribbon tab, drop down the arrow next to **Get data**, and then select **Web**.
+1. In the Power BI Desktop **Home** ribbon tab, dropdown the arrow next to **Get data**, and then select **Web**.
 
    ![Screenshot shows the Get data option on the ribbon with Web selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png)
 
@@ -42,7 +43,7 @@ To import the data:
 
     ![Screenshot shows the From Web dialog where you can enter the URL for the webpage.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
 
-   After you connect to the Wikipedia web page, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. The **Results** table has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
+   After you connect to the Wikipedia webpage, the **Navigator** dialog shows a list of available tables on the page. You can select any of the table names to preview its data. **Table 3** has the data you want, although it's not exactly in the shape you want. You'll reshape and clean up the data before loading it into your report.
 
    :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png" alt-text="Screenshot shows the Navigator dialog with a table selected and Transform Data highlighted." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png":::
 
@@ -50,7 +51,7 @@ To import the data:
    >
    > The **Preview** pane shows the most recent table selected, but all selected tables load into the Power Query Editor when you select **Transform Data** or **Load**.
 
-1. Select the **Results** table in the **Navigator** list, and then select **Transform Data**.
+1. Select **Table 3** in the **Navigator** list, and then select **Transform Data**.
 
    A preview of the table opens in **Power Query Editor**, where you can apply transformations to clean up the data.
 
@@ -60,7 +61,7 @@ To import the data:
 
 You want to make the data easier to scan by displaying only the years and the countries/regions that won. You can use the Power Query Editor to perform these data shaping and cleansing steps.
 
-First, remove all the columns except for two from the table. Rename these columns as *Year* and *CountryRegion* later in the process.
+First, remove all the columns except for two from the table. Rename one of these columns as *CountryRegion* later in the process.
 
 1. In the **Power Query Editor** grid, select the columns. Press **Ctrl** to select multiple items.
 
@@ -72,29 +73,17 @@ First, remove all the columns except for two from the table. Rename these column
 
    ![Screenshot shows columns highlighted with Remove Other Columns selected in the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
-This version of the imported data has the word *Details* appended to the year. You can remove the extra word *Details* from the first column cells.
-
-1. Select the first column.
-
-1. Right-click, and select **Replace Values**, or select **Replace Values** from the **Transform** group in the **Home** tab of the ribbon. This option is also found in the **Any Column** group in the **Transform** tab.
-
-   ![Screenshot shows a column highlighted with Replace Values selected in the context menu.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png)
-
-   or
-
-   ![Screenshot shows a column highlighted with Replace Values selected in the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
-
-1. In the **Replace Values** dialog, type **Details** in the **Value To Find** text box, leave the **Replace With** text box empty, and then select **OK** to delete the word *Details* from this column.
-
-   ![Screenshot shows the Replace Values dialog where you can remove a word from a column.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
-
-Some cells contain only the word "Year" rather than year values. You can filter the column to only display rows that don't contain the word "Year".
+The second row of the imported data contains values that aren't needed. You can filter the **Final** column to exclude the word "Winners".
 
 1. Select the filter dropdown arrow on the column.
 
-1. In the dropdown menu, scroll down and clear the checkbox next to the **Year** option, and then select **OK**.
+1. In the dropdown menu, scroll down and clear the checkbox next to the **Winners** option, and then select **OK**.
 
    ![Screenshot shows Text Filters in the context menu where you can remove entries.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
+
+The cell with the word "Winners" is filtered out along with the one next to it, the `null` value in the same row for the other column.
+
+1. Do the same thing for **2028** and **2032**, as these games are yet to be played and the outcomes are unknown.
 
 Since you're only looking at the final winners data now, you can rename the second column to **CountryRegion**. To rename the column:
 
@@ -110,13 +99,29 @@ Since you're only looking at the final winners data now, you can rename the seco
 
 1. Type **CountryRegion** in the header and press **Enter** to rename the column.
 
-You also want to filter out rows that have `null` values in the **CountryRegion** column. You could use the filter menu as you did with the **Year** values, or you can:
+You also want to filter out rows that have `null` values in the **CountryRegion** column. You could use the filter menu as you did with the **Winner** value, or you can:
 
-1. Right-click on the **CountryRegion** cell in the **2020** row, which has the value *null*.
+1. Right-click on the row that has the value *null* in it. Since both columns have the value *null* in the same row, you can right-click on the cell in either column.
 
 1. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that cell's value.
 
    ![Screenshot shows a context menu with Text Filters and Does Not Equal selected.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
+
+The imported data has the superscript note marker *[c]* appended to the year 2020. You can remove the note marker *[c]*, or you can change the value to 2021, which is when the match took place, according to the note.
+
+1. Select the first column.
+
+1. Right-click and select **Replace Values**, or select **Replace Values** from the **Transform** group in the **Home** tab of the ribbon. This option is also found in the **Any Column** group in the **Transform** tab.
+
+   ![Screenshot shows a column highlighted with Replace Values selected in the context menu.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png)
+
+   or
+
+   ![Screenshot shows a column highlighted with Replace Values selected in the ribbon.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
+
+1. In the **Replace Values** dialog, type **2020[c]** in the **Value To Find** text box, enter **2021** in the **Replace With** text box, and then select **OK** to replace the value in the column.
+
+   ![Screenshot shows the Replace Values dialog where you can change a value in a column.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
 
 ## Import the query into Report view
 
@@ -145,7 +150,7 @@ The query loads into the Power BI Desktop *Report* view, where you can see it in
 
 To create a visualization based on your data:
 
-1. Select the **CountryRegion** field in the **Fields** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country/region names, and automatically creates a **Map** visualization.
+1. Select the **CountryRegion** field in the **Data** pane, or drag it to the report canvas. Power BI Desktop recognizes the data as country/region names, and automatically creates a **Map** visualization.
 
    :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png" alt-text="Screenshot shows a map visualization of the Country/Region field." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png":::
 
@@ -153,7 +158,7 @@ To create a visualization based on your data:
 
    ![Screenshot shows the map enlarged, as described.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
 
-1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Drag data fields here** under **Bubble size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
+1. The map shows identical data points for every country/region that won a Euro Cup tournament. To make the size of each data point reflect how often the country/region has won, drag the **Year** field to **Add data fields here** under **Bubble size** in the lower part of the **Visualizations** pane. The field automatically changes to a **Count of Year** measure, and the map visualization now shows larger data points for countries/regions that have won more tournaments.
 
    :::image type="content" source="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png" alt-text="Screenshot shows the result of dragging Count of Year into Bubble size." lightbox="media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png":::
 
@@ -169,7 +174,7 @@ You can change the appearance of a visualization by selecting it and then select
 
    ![Screenshot shows the Format icon selected with the Bubbles option open and Colors highlighted.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
 
-1. Turn **Show all** to **On**, and then select the drop-down menu next to **West Germany** and choose a yellow color.
+1. Turn **Show all** to **On**, and then select the dropdown menu next to **West Germany** and choose a yellow color.
 
    ![Screenshot shows colors you can select to change the color, including Theme colors and Recent colors.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
 
@@ -194,13 +199,12 @@ To change the map to a pie chart, select the map and then choose the **Pie chart
 > [!TIP]
 >
 > - You can use the **Data colors** formatting options to make "Germany" and "West Germany" the same color. 
-> - To group the countries/regions with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort by Count of Year**.
+> - To group the countries/regions with the most wins together on the pie chart, select the ellipsis (**...**) at the upper right of the visualization, and then select **Sort axis** and **Count of Year**.
 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
 ## Related content
 
-- [Microsoft Learn training for Power BI](/training/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 - [Watch Power BI videos](../fundamentals/videos.md)
 - [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 - [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

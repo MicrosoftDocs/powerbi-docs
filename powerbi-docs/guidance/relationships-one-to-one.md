@@ -1,14 +1,15 @@
 ---
 title: One-to-one relationship guidance
 description: Guidance for understanding, developing, and working with one-to-one model relationships in Power BI.
-author: daengli
-ms.author: denglishbi
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
 ms.date: 07/25/2024
+#customer intent: As a data modeler working with Power BI Desktop, I want guidance on working with one-to-one model relationships so that I can effectively design and develop my data models.
 ---
 
 # One-to-one relationship guidance
