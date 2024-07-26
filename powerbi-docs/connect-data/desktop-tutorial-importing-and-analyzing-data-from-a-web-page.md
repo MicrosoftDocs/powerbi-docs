@@ -81,7 +81,7 @@ The second row of the imported data contains values that aren't needed. You can 
 
    ![Screenshot shows Text Filters in the context menu where you can remove entries.](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
 
-The cell with the word "Winners" is filtered out along with the one next to it, the `null` value in the same row for the other column.
+   The cell with the word "Winners" is filtered out along with the one next to it, the `null` value in the same row for the other column.
 
 1. Do the same thing for **2028** and **2032**, as these games are yet to be played and the outcomes are unknown.
 
