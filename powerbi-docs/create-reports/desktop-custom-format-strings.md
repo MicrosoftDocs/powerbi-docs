@@ -51,9 +51,9 @@ Once you've selected **Custom** from the **Format** dropdown menu, choose from a
 ![Screenshot of the Formatting menu, highlighting Custom.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
 ### Add a visual level format string
-To create a visual level format string, first add the field or [visual calculation](../transform-model/desktop-visual-calculations-overview.md) to your visual. Then, with your visual selected, open the format pane and go to the **Properties** section of the format pane. Find the **Format data** settings and configure the format string there:
+To create a visual level format string, first add the field or [visual calculation](../transform-model/desktop-visual-calculations-overview.md) to your visual. Then, with your visual selected, open the format pane and go to the **General** section of the format pane. Find the **Format data** settings and configure the format string there:
 
-![Screenshot of the Format pane for a visual, showing the Data format settings in the Properties section.](media/desktop-custom-format-strings/custom-format-strings-visual-level-format-string.png)
+![Screenshot of the Format pane for a visual, showing the Data format settings in the General section.](media/desktop-custom-format-strings/custom-format-strings-visual-level-format-string.png)
 
 ### Add an element level format string
 To create an element level format string, open the format pane and find the format string sections for the element you want to set the format on. Keep in mind that not all elements support format strings. To set a format string on a data label, open the **Visual** section of the format pane, set **Data Labels** > **Value** > **Display units** to custom and enter the format code:
