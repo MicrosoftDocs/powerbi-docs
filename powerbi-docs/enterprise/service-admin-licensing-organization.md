@@ -1,6 +1,6 @@
 ---
-title: Sign up for Fabric and Power BI licensing for users in your organization. 
-description: Overview of how admins sign up, purchase, and manage Power BI and Fabric licenses.
+title: Get licenses for users in your organization. 
+description: Overview of how administrators sign up, purchase, and manage Power BI and Fabric licenses and subscriptions.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
