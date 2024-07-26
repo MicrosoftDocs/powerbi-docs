@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 01/09/2023
+ms.date: 07/26/2024
 LocalizationGroup: Connect to services
 ---
 # Connect to the services you use with Power BI
