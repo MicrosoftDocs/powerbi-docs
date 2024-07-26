@@ -28,7 +28,7 @@
       href: embed-auto-install-app.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
-    - name: "Monitor Power BI Embedded apps"
+    - name: "Monitor Power BI Embedded"
       href: monitor-power-bi-embedded.md
   - name: "Embed content"
     items:
@@ -136,7 +136,7 @@
         href: datasets-permissions.md            
     - name: "Power BI Developer in a Day course"
       href: ../../learning-catalog/developer-online-course.md
-    - name: "Monitor Power BI Embedded data reference"
+    - name: "Monitoring data reference"
       href: monitor-power-bi-embedded-reference.md            
     - name: "Power BI libraries"
       href: https://go.microsoft.com/fwlink/?linkid=848274
