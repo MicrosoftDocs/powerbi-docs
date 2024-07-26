@@ -66,7 +66,7 @@ Fabric and the Power BI service are available for organizations to purchase and 
 > 
 > - [Power BI Pricing & product comparison](https://powerbi.microsoft.com/pricing/)
 >
-> - [Pricing options for Fabric](/azure.microsoft.com/pricing/details/microsoft-fabric.md)
+> - [Pricing options for Fabric](/azure.microsoft.com/pricing/details/microsoft-fabric)
 
 1. [Purchase a Fabric subscription.](/fabric/enterprise/buy-subscription) If you're ready to purchase, your options include bulk purchasing for your organization or enabling your users to upgrade their own licenses.
 
