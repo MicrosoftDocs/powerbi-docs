@@ -1,6 +1,6 @@
 ---
 title: Referencing Power Query queries
-description: Comprehensive guidance for defining Power Query queries that reference other queries and for optimizing data refresh performance.
+description: Guidance for defining Power Query queries that reference other queries and for optimizing data refresh performance.
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche

@@ -1,6 +1,6 @@
 ---
-title: Tutorial: Import and analyze data from a webpage
-description: This tutorial shows you how to import and analyze data from a webpage using Power BI Desktop. Learn how to create and customize a map and a pie chart.
+title: 'Tutorial: Import and analyze data from a webpage'
+description: 'This tutorial shows you how to import and analyze data from a webpage using Power BI Desktop. Learn how to create and customize a map and a pie chart.'
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -101,7 +101,7 @@ Since you're only looking at the final winners data now, you can rename the seco
 
 You also want to filter out rows that have `null` values in the **CountryRegion** column. You could use the filter menu as you did with the **Winner** value, or you can:
 
-1. Right-click on the row that has the value *null* in it. Since both columns have the value *null* in the same row, you can right-click on the cell in either column.
+1. Right-click on the row that has the value *null* in it. Since both columns have *null* in the same row, you can right-click on the cell in either column.
 
 1. Select **Text Filters** > **Does not Equal** in the context menu to remove any rows that contain that cell's value.
 

@@ -84,7 +84,7 @@ If you choose to select items and get data, you import tabular model data direct
 
 - You might see measures in the model grouped together at the top of the **Data** pane list rather than in tables alongside columns. Don't worry, you can still use them as normal, it's just easier to find them this way.
 
-- If the tabular model has calculation groups defined, you can use them only with model measures and not with implicit measures you create by adding numeric fields to a visual. The model might also have had the **DiscourageImplicitMeasures** flag set manually, which has the same effect. For more information, see [Calculation groups](/analysis-services/tabular-models/calculation-groups#Benefits).
+- If the tabular model has calculation groups defined, you can use them only with model measures and not with implicit measures you create by adding numeric fields to a visual. The model might also have had the **DiscourageImplicitMeasures** flag set manually, which has the same effect. For more information, see [Calculation groups](/analysis-services/tabular-models/calculation-groups#benefits).
 
 ## To change the server name after initial connection
 
