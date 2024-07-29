@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 06/24/2024
+ms.date: 07/25/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,17 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## July 2024 QFE 1
+*Version 2.131.1126.0, Released July 21, 2024*
+
+Bug fixes/improvements:
+
+* Fixed the issue with bookmark groups serializing in exploration for version 2
+* Updated Analysis Services engine version to 16.0.138.23-PBID
+* Switched Power BI tests configurations to use the default VHD image
+* Fixed named expressions running through the table inclusion/exclusion logic for synchronizer sub-select
 
 
 ## June 2024 QFE 1
