@@ -13,7 +13,7 @@ ms.subservice: powerbi-developer
 ---
 # Power BI Embedded monitoring data reference
 
-[!INCLUDE [horz-monitor-ref-intro](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-intro.md)]
+[!INCLUDE [horz-monitor-ref-intro](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-intro.md)]
 
 See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on the data you can collect for Power BI Embedded and how to use it.
 
