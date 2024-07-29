@@ -57,7 +57,7 @@ Your files from OneDrive for Business and SharePoint are available for you to op
 
 Select the file to open it in Power BI Desktop.  
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png" alt-text="Screenshot of report opened from OneDrive or SharePoint." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-opened-report.png":::
 
 You can also navigate to a new OneDrive or SharePoint location through the **Quick access** option on the left. 
 
@@ -88,11 +88,11 @@ Upon saving, a dialog box appears while the file is being uploaded to the OneDri
 
 When new changes are saved to a file already uploaded to OneDrive, the top of the toolbar indicates that the new changes are uploading in the background to OneDrive. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png" alt-text="Screenshot of background upload for Power BI and ODSP" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png" alt-text="Screenshot of background upload for Power BI and ODSP." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png":::
 
 To enable background upload, select **File > Options and Settings > Options > Preview Features,** and then select **Saving to OneDrive and SharePoint uploads the file in the background** checkbox. You will need to restart Power BI Desktop after you make the selection. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png" alt-text="Toggle for background upload for Power BI and ODSP" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png" alt-text="Toggle for background upload for Power BI and ODSP." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-preview-toggle.png":::
 
 ## Change the default save location
 
@@ -118,7 +118,7 @@ You can also manage who has access to the file through the **Manage Access** opt
 
 To get a direct link to where the file is stored in OneDrive, you can select the title bar flyout in the toolbar to access more information about the file. You can select **View your file in OneDrive** to get a direct link to the Power BI file in OneDrive. 
 
-:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png" alt-text="Screenshot of link to file in OneDrive" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png":::
+:::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png" alt-text="Screenshot of link to file in OneDrive." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-link-to-onedrive.png":::
 
 > [!NOTE]
 > The new capabilities respect the OneDrive and SharePoint organizational settings for sharing.
