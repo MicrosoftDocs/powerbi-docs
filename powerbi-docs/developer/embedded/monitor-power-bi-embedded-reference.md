@@ -26,9 +26,9 @@ See [Monitor Power BI Embedded](monitor-power-bi-embedded.md) for details on the
 
 The following table lists the metrics available for the Microsoft.PowerBIDedicated/capacities resource type.
 
-[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
+[!INCLUDE [horz-monitor-ref-metrics-tableheader](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-tableheader.md)]
 
-[!INCLUDE [Microsoft.PowerBIDedicated/capacities](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-powerbidedicated-capacities-metrics-include.md)]
+[!INCLUDE [Microsoft.PowerBIDedicated/capacities](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/metrics/microsoft-powerbidedicated-capacities-metrics-include.md)]
 
 This table provides additional information about the preceding table.
 
@@ -38,17 +38,17 @@ This table provides additional information about the preceding table.
 | CPU Per Workload | cpu_workload_metric | CPU utilization per workload. |
 | Overload | overload_metric | Resource overload, 1 if resource is overloaded, otherwise 0. |
 
-[!INCLUDE [horz-monitor-ref-metrics-dimensions-intro](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions-intro.md)]
+[!INCLUDE [horz-monitor-ref-metrics-dimensions-intro](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-metrics-dimensions-intro.md)]
 
-[!INCLUDE [horz-monitor-ref-no-metrics-dimensions](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-no-metrics-dimensions.md)]
+[!INCLUDE [horz-monitor-ref-no-metrics-dimensions](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-no-metrics-dimensions.md)]
 
-[!INCLUDE [horz-monitor-ref-resource-logs](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-resource-logs.md)]
+[!INCLUDE [horz-monitor-ref-resource-logs](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-resource-logs.md)]
 
 ### Supported resource logs for Microsoft.PowerBIDedicated/capacities
 
-[!INCLUDE [Microsoft.PowerBIDedicated/capacities](~/reusable-content/ce-skilling/azure/includes/azure-monitor/reference/logs/microsoft-powerbidedicated-capacities-logs-include.md)]
+[!INCLUDE [Microsoft.PowerBIDedicated/capacities](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/logs/microsoft-powerbidedicated-capacities-logs-include.md)]
 
-[!INCLUDE [horz-monitor-ref-logs-tables](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-logs-tables.md)]
+[!INCLUDE [horz-monitor-ref-logs-tables](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-logs-tables.md)]
 
 ### Power BI Embedded Microsoft.PowerBIDedicated/capacities
 
@@ -58,7 +58,7 @@ This table provides additional information about the preceding table.
 | [AzureMetrics](/azure/azure-monitor/reference/tables/azuremetrics#columns) | Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources. |
 | [AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics#columns) | Metric data emitted by Azure services that measure their health and performance. |
 
-[!INCLUDE [horz-monitor-ref-activity-log](~/reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-activity-log.md)]
+[!INCLUDE [horz-monitor-ref-activity-log](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-ref-activity-log.md)]
 
 - [Analytics resource provider operations](/azure/role-based-access-control/resource-provider-operations#Analytics)
 
