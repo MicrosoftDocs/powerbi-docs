@@ -77,7 +77,7 @@ To save an existing file to OneDrive or SharePoint, select the **Save as** optio
 
 The default save location is your parent OneDrive folder, unless you change it. The default save location is the first option that appears in your save list. 
 
-Upon saving, a dialog box appears while the file is being uploaded to the OneDrive or SharePoint location. You can cancel the upload directly on the dialog box. This dialog will only show up the first time a new file is uploaded. 
+Upon saving, a dialog box appears while the file is being uploaded to the OneDrive or SharePoint location. You can cancel the upload directly on the dialog box. This dialog shows up the first time a new file is uploaded. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-updated-save-onedrive.png" alt-text="Screenshot of save dialog box in Power BI." lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-updated-save-onedrive.png":::
 
@@ -86,7 +86,7 @@ Upon saving, a dialog box appears while the file is being uploaded to the OneDri
 
 ## Background upload for existing Power BI files in OneDrive and SharePoint (Preview)
 
-When new changes are saved to a file already uploaded to OneDrive for Business or SharePoint, the top of the toolbar indicates that the new changes are also being uploaded in the background to OneDrive. 
+When new changes are saved to a file already uploaded to OneDrive, the top of the toolbar indicates that the new changes are uploading in the background to OneDrive. 
 
 :::image type="content" source="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png" alt-text="Screenshot of background upload for Power BI and ODSP" lightbox="media/desktop-sharepoint-save-share/power-bi-desktop-background-upload-onedrive.png":::
 
