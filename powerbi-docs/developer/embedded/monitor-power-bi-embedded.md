@@ -17,9 +17,6 @@ ms.subservice: powerbi-developer
 > [!TIP]
 > You can also use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
-<!-- ## Insights. OPTIONAL. If your service has Azure Monitor insights, add the following include and add information about what your insights provide. You can refer to another article that gives details or add a screenshot. 
-[!INCLUDE [horz-monitor-insights](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-insights.md)] -->
-
 [!INCLUDE [horz-monitor-resource-types](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-resource-types.md)]
 
 For more information about the resource types for Power BI Embedded, see [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md).
@@ -30,9 +27,9 @@ For more information about the resource types for Power BI Embedded, see [Power 
 
 For a list of available metrics for Power BI Embedded, see [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md#metrics).
 
-<!-- ## OPTIONAL [TODO-replace-with-service-name] metrics
-If your service uses any non-Azure Monitor based metrics, add the following include and more information.
-[!INCLUDE [horz-monitor-custom-metrics](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-non-monitor-metrics.md)] -->
+[!INCLUDE [horz-monitor-custom-metrics](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-non-monitor-metrics.md)]
+
+You can use the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) to monitor your capacity.
 
 [!INCLUDE [horz-monitor-resource-logs](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/horizontals/horz-monitor-resource-logs.md)]
 
@@ -71,5 +68,5 @@ You can set alerts for any metric, log entry, or activity log entry listed in th
 
 ## Related content
 
-- See [Power BI Embedded monitoring data reference](monitor-Power BI Embedded-reference.md) for a reference of the metrics, logs, and other important values created for Power BI Embedded.
+- See [Power BI Embedded monitoring data reference](monitor-power-bi-embedded-reference.md) for a reference of the metrics, logs, and other important values created for Power BI Embedded.
 - See [Monitoring Azure resources with Azure Monitor](/azure/azure-monitor/essentials/monitor-azure-resource) for general details on monitoring Azure resources.
