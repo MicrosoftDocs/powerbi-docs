@@ -7,7 +7,7 @@ manager: kfollis
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 07/29/2024
 LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
@@ -140,7 +140,7 @@ Whenever a sensitivity label on a semantic model, report, dashboard, or dataflow
 
 ## Sensitivity labels and protection on exported data
 
-When data is exported from Power BI to Excel, PDF files (service only) or PowerPoint files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label's file encryption settings. This way your sensitive data remains protected no matter where it is.
+When data is exported from Power BI to Excel, PDF files, or PowerPoint files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label's file encryption settings. This way your sensitive data remains protected no matter where it is.
 
 A user who exports a file from Power BI has permissions to access and edit that file according to the sensitivity label settings; they don't get owner permissions to the file.
 
