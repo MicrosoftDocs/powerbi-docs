@@ -27,16 +27,16 @@ There are a few embedded scenarios. Only two are supported at this time. This ch
 |Scenario |Supported |
 |---------|---------|
 |[**Embed a report in a secure portal or website**](./../collaborate-share/service-embed-secure.md) Power BI. | Yes |
-|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to do so. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). It includes when users want to embed visuals in solutions like PowerPoint as well. | Yes: user must be signed in with a valid workspace. |
+|**User owns data** A user embeds a report containing the narrative visual in a solution where users have to sign in. They need a license to sign in. This action is also known as [embed for your organization](../developer/embedded/embed-sample-for-your-organization.md?tabs=net-core). It includes when users want to embed visuals in solutions like PowerPoint as well. | Yes: user must be signed in with a valid workspace. |
 |**App owns data** A customer embeds a narrative visual on a website where users visit, and don't need to sign in. Also known as [embed for your customer's application](../developer/embedded/embed-sample-for-customers.md?tabs=net-core). | No |
 
 Follow the instructions here to set up Power BI embed and begin embedding your content for your organization: [Set up Power BI Embedded](../developer/embedded/register-app.md?tabs=customers).
 
 ## Why embed?
 
-When you embed a Power BI report in an application in the "embed for your organization" scenario, it allows organizations to integrate rich, interactive data visualizations seamlessly into their internal tools and workflows. Now this solution supports the Copilot visual. Copilot enhances data-driven decision-making by providing users with real-time insights within the context of the applications they already use. Additionally, it ensures secure data access and consistent user experience by using existing organizational permissions and authentication mechanisms. 
+Embedding a Power BI report in an application in the "embed for your organization" scenario allows organizations to seamlessly integrate rich, interactive data visualizations directly into their internal tools and workflows, and now the Copilot visual is supported in this solution. This enhances data-driven decision-making by providing users with real-time insights within the context of the applications they already use. Additionally, it ensures secure data access and consistent user experience by leveraging existing organizational permissions and authentication mechanisms. 
 
-A sales team might want to embed a Power BI report in their internal CRM application to streamline their workflow. By integrating sales performance dashboards directly into the CRM, team members can easily monitor key metrics like monthly sales targets, pipeline status, and individual performance, without switching between different tools. This integration enables quicker access to actionable insights, helping the team make informed decisions, identify trends, and react swiftly to market changes, all within the secure environment of their organization's data infrastructure.
+A sales team might want to embed a Power BI report in their internal CRM application to streamline their workflow. By integrating sales performance dashboards directly into the CRM, team members can easily monitor key metrics like monthly sales targets, pipeline status, and individual performance without switching between different tools. This integration enables quicker access to actionable insights, helping the team make informed decisions, identify trends, and react swiftly to market changes, all within the secure environment of their organization's data infrastructure. 
 
 ## Get started
 
