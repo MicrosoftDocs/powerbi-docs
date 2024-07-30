@@ -3,14 +3,12 @@ title: "What is Power BI? What is Fabric?"
 description: "This overview describes two Microsoft products and how they work together. The two products are Microsoft Fabric and Microsoft Power BI."
 author: mihart
 ms.author: mihart
-ms.service: power-bi
+ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: overview  
 ms.date: 07/29/2024
 # customer intent: As a Power BI user, I want an understanding of Microsoft Fabric and how it relates to the Power BI service so that I know how to use these two services separately or together.
 ---
-Free trial:aka.ms/TryFabric.
-
 
 # What is Microsoft Fabric for Power BI service users?
 
@@ -23,6 +21,8 @@ If you're a Power BI user, you probably have questions about the introduction of
 - How do I log in?
 
 This article answers your questions and helps you understand how these two tools work together. We start with a basic overview of both Fabric and the Power BI service. With an understanding of each service, we then look at what it means to *move* from using the Power BI service to using Fabric. *Moving* includes a discussion of licenses and capacities. The article wraps up with a discussion of the overlap between the two services.
+
+[Open Microsoft Fabric](app.fabric.microsoft.com)
 
 ## Power BI as a standalone service
 
