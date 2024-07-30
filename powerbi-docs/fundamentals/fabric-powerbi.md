@@ -14,7 +14,7 @@ Free trial:aka.ms/TryFabric.
 
 # What is Microsoft Fabric for Power BI service users?
 
-If you've been a Power BI user, you probably have questions about the introduction of [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview).
+If you're a Power BI user, you probably have questions about the introduction of [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview).
 
 - Are these two different tools? 
 - Do I have to migrate from Power BI to Fabric? 
@@ -22,7 +22,7 @@ If you've been a Power BI user, you probably have questions about the introducti
 - How do I buy Fabric? 
 - How do I log in?
 
-This article answers your questions and helps you understand how these two tools work together. We start with a basic overview of both Fabric and the Power BI service. With an understanding of each service, we then look at what it means to *move* from using the Power BI service to using Fabric. This includes a discussion of licenses and capacities. The article wraps up with a discussion of the overlap between the two services.
+This article answers your questions and helps you understand how these two tools work together. We start with a basic overview of both Fabric and the Power BI service. With an understanding of each service, we then look at what it means to *move* from using the Power BI service to using Fabric. *Moving* includes a discussion of licenses and capacities. The article wraps up with a discussion of the overlap between the two services.
 
 ## Power BI as a standalone service
 
@@ -38,7 +38,7 @@ To learn more about Power BI, read [What is Power BI](power-bi-overview.md).
 
 Fabric is an all-in-one data analytics solution that covers everything from data movement to data science, real-time analytics, and business intelligence. Fabric consolidates several Azure data workloads with Power BI so that you and your colleagues can all work with different workloads, and in different roles, in the same environment. With Fabric, you can go from raw fragmented data to meaningful insights across your organization and in other clouds in seconds.  
 
-The data for all of these workloads is consolidated in a multi-cloud data lake called OneLake. Each Fabric tenant has one OneLake, and all Fabric services work natively with data in OneLake. This one copy of the data can be used across all of Fabric. This centralized storage eliminates duplication, maintains a single data source, simplifies data discovery, and enforces security and data protection. The data is saved in a way that makes is accessible to the different workloads in the necessary format.  
+The data for all of these workloads is consolidated in a multicloud data lake called OneLake. Each Fabric tenant has one OneLake, and all Fabric services work natively with data in OneLake. This one copy of the data can be used across all of Fabric. This centralized storage eliminates duplication, maintains a single data source, simplifies data discovery, and enforces security and data protection. The data is saved in a way that makes is accessible to the different workloads in the necessary format.  
 
  AI capabilities are seamlessly embedded within Fabric, eliminating the need for manual integration. With Fabric, you can easily transition your raw data into actionable insights.
 
@@ -61,9 +61,9 @@ If you have a Power BI or Microsoft 365 account, you can sign in to Fabric. For 
 
 ## How Microsoft Fabric works with Power BI
 
-Microsoft Fabric is an offering that combines data, roles, and workloads in a unified environment. **Power BI** is an example of one of the *workloads* that's integrated with Microsoft Fabric. Each Fabric tenant has a single data store called **OneLake**. OneLake data can be used, analyzed, or visualized across all workloads and roles, making it easier to perform analysis and analytics on multiple sets of data. Large organizations find Microsoft Fabric particularly useful, since it can corral large sets of data and store it in a way that makes it available to all of the Fabric workloads, including Power BI.
+Microsoft Fabric is an offering that combines data, roles, and workloads in a unified environment. **Power BI** is an example of one of the *workloads* integrated with Microsoft Fabric. Each Fabric tenant has a single data store called **OneLake**. OneLake data can be used, analyzed, or visualized across all workloads and roles, making it easier to perform analysis and analytics on multiple sets of data. Large organizations find Microsoft Fabric useful, since it can corral large sets of data and store it in a way that makes it available to all of the Fabric workloads, including Power BI.
 
-Administration of Power BI is now handled by Microsoft Fabric. But your favorite tools like the **Power BI service** and **Power BI Desktop** still operate like they always have - as a service that can turn your data, whether in OneLake or in Excel, into powerful business intelligence insights.
+Microsoft Fabric now handles administration of Power BI. But your favorite tools like the **Power BI service** and **Power BI Desktop** still operate like they always have - as a service that can turn your data, whether in OneLake or in Excel, into powerful business intelligence insights.
 
 ## Related content
 
