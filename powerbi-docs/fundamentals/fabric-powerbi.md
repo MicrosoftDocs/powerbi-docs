@@ -22,7 +22,7 @@ If you're a Power BI user, you probably have questions about the introduction of
 
 This article answers your questions and helps you understand how these two tools work together. We start with a basic overview of both Fabric and the Power BI service. With an understanding of each service, we then look at what it means to *move* from using the Power BI service to using Fabric. *Moving* includes a discussion of licenses and capacities. The article wraps up with a discussion of the overlap between the two services.
 
-[Open Microsoft Fabric](app.fabric.microsoft.com)
+[Open Microsoft Fabric](https://app.fabric.microsoft.com)
 
 ## Power BI as a standalone service
 
