@@ -60,7 +60,7 @@ Under **APIs my organizations uses**, find and select **Power BI Service**.
 
 Select **Delegated permissions**.
 
-:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png" alt-text="Screenshot showing selecting delegated permissions." lightbox="media/copilot-narrative-visual-embed-power-bi/delegated-permissions.png":::
+:::image type="content" source="media/copilot-narrative-visual-embed-power-bi/delegated-permissions-model.png" alt-text="Screenshot showing selecting delegated permissions." lightbox="media/copilot-narrative-visual-embed-power-bi/delegated-permissions-model.png":::
 
 After you select delegated permissions, search for *ML model* in the search bar and expand the ML model option that shows up. To enable the embed scenario for the narrative visual with Copilot, select the MLModel.Execute.All permission. Now the visual can show up in the embedded application for signed in users that meet all other Copilot requirements. See the [Requirements section on the main Power BI Copilot](copilot-introduction.md#copilot-requirements) documentation page. Add this permission to the registered application, and you have finished.
 
