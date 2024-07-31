@@ -63,6 +63,8 @@
     items:
       - name: What is Power BI Premium?
         href: service-premium-what-is.md
+      - name: Power BI Premium feature list
+        href: service-premium-features.md       
       - name: Premium architecture
         href: /fabric/security/security-fundamentals           
       - name: Power BI Premium Per User
