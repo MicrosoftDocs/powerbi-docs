@@ -63,7 +63,7 @@ You can't modify permissions granted through an app directly from the Direct acc
 
 1. Republish the app.
 
-1. Go to the Direct access tab of the semantic model's manage semantic model permissions page as described [above](#manage-direct-access). The user has the permissions granted via the app before update, but now they're not tied to the app (note that the parentheses are gone). Now you can remove whatever permissions you desire.
+1. Go to the Direct access tab of the semantic model's manage semantic model permissions page as described [above](#manage-direct-access). The user still has the permissions granted via the app before update, but now they're not tied to the app (note that the parentheses are gone). Now you can remove whatever permissions you desire.
 
     ![Screenshot of editing former app permissions.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-app-permissions-remove.png)
 
