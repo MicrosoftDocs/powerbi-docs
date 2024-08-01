@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/09/2023
+ms.date: 08/01/2024
 ---
 
 # Service principal profiles for multitenancy apps in Power BI Embedded
@@ -262,6 +262,7 @@ Even if you use service principal profiles to separate your customers' data, you
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/power-bi/enterprise/service-premium-what-is#large-datasets).
 * To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/power-bi/enterprise/service-premium-large-models) setting.
 * For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
+* The maximum [profiles](/rest/api/power-bi/profiles) a single service principal can have, is 100,000.
 
 ### Manage service principals
 
