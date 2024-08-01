@@ -104,7 +104,7 @@ At any time, you can look up your account type in your account manager. Open you
 
 In most cases, you can get a license for the Power BI service and for Fabric by following the described processes. Some of the issues that might prevent you from signing up or purchasing are described here, with workarounds:
 
-- Your organization doesn't support self-service sign-up or self-service purchase. Contact your global admin to see if these self-service options can be turned on.
+- Your organization doesn't support self-service sign-up or self-service purchase. Contact your Billing admin to see if these self-service options can be turned on.
 - Your organization doesn't support self-service upgrades. Pay for the new license yourself. After you sign in, you select how many licenses you want to buy and provide credit card payment. When the purchase is finished, you can start using your paid licenses. You also have access to a limited view of the Microsoft 365 admin center where you can assign licenses for the product to other people in your organization.
 - Your organization has its own process for self-service sign-ups and purchases. Follow those steps instead to request a license.
 
