@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 There are two ways for users to get a license, from an administrator or by using self-service. This article is for the administrators, who purchase and manage services and licenses.
 
-Global and Billing administrators can sign up for the Power BI service and Fabric. After signing up and purchasing a subscription or a free trial, Billing, License, User, and Global administrators assign licenses to users in their organization.
+Billing administrators can sign up for the Power BI service and Fabric. After signing up and purchasing a subscription or a free trial, Billing, License, and User administrators assign licenses to users in their organization.
 
 If you give them permissions, users in your organization can get one of the organization's licenses simply by signing in to Power BI (app.powerbi.com) or Fabric (app.fabric.microsoft.com). When a user signs in, they automatically receive a license. Administrators can set these permissions by following [Enable and disable self-service](../enterprise/service-admin-disable-self-service.md).
 
@@ -51,11 +51,11 @@ To access the Fabric SaaS platform, you need a license and a capacity.
 
 ### Admin roles for purchasing licenses and subscriptions
 
-You must belong to the Global or Billing admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+You must belong to the Billing admin role to purchase or assign licenses for your organization. Admin roles are assigned from the Microsoft Entra admin center or the Microsoft 365 admin center. For more information about admin roles in Microsoft Entra ID, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Admin roles for managing licenses and subscriptions
 
-After the licenses and subscriptions are purchased, Global, Billing, License, or User admins can manage licenses for an organization. For details about these four admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
+After the licenses and subscriptions are purchased, Billing, License, or User admins can manage licenses for an organization. For details about these four admin roles, see [Admin roles.](/fabric/admin/microsoft-fabric-admin#microsoft-365-admin-roles)
 
 ## Get Fabric or Power BI for your organization
 

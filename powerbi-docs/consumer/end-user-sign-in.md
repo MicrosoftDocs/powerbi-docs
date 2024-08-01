@@ -44,7 +44,7 @@ The Power BI service runs in a browser.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="A screenshot that shows an Enter password dialog box.":::
 
-    Sometimes, your global administrator assigns you a license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this email account for your sign-in.
+    Sometimes, your administrator assigns you a license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this email account for your sign-in.
 
 ### Step 3: Review your Home landing page
 
