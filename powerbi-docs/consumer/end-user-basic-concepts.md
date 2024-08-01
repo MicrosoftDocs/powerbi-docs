@@ -31,7 +31,7 @@ To follow along, open app.powerbi.com in your browser.
 
 There are many objects and concepts that make up the Power BI service, too many to cover in a single article. So this article introduces you to the most common:  **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_semantic models_** (formerly called *datasets*). These objects are sometimes referred to as *Power BI* **_content_**. *Content* exists within **_workspaces_**. 
 
-A typical Power BI workflow involves many of the building blocks. A Power BI *designer* (yellow in the diagram) collects data from *semantic models*, brings it into Power BI Desktop for analysis, and creates *reports* full of *visualizations* that highlight interesting facts and insights. The *designer* pins visualizations from reports to *dashboards*, and shares the reports and dashboards with *business users* like you (black in the diagram). 
+A typical Power BI workflow involves more than one type of content. A Power BI *designer* (yellow in the diagram) collects data from *semantic models*, brings it into Power BI Desktop for analysis, and creates *reports* full of *visualizations* that highlight interesting facts and insights. The *designer* pins visualizations from reports to *dashboards*, and shares the reports and dashboards with *business users* like you (black in the diagram). 
 
 There are many different ways that a *designer* can share content with you: as individual pieces of content, content bundled together in an *app*, or by giving you permissions to a workspace where the content is stored. (Don't worry, we talk about the different ways that content is shared later in this article.)
 
@@ -45,7 +45,7 @@ At its most basic:
 
 - ![A screenshot of the semantic model icon.](media/end-user-basic-concepts/power-bi-semantic-model-icon.png) A *semantic model* is a container of data. For example, it might be an Excel file from the World Health Organization. It might also be a company-owned database of customers, or it might be a Salesforce file. And it might be all three if the *designer* combines them into a single model. *Designers* manage semantic models. The data contained in semantic models is used to build reports, dashboards, and apps that *designers* share with you. 
 
-- ![A screenshot of the dashboard icon.](media/end-user-basic-concepts/power-bi-dashboard-icon.png) A *dashboard* is a single screen with *tiles* of interactive visuals, text, and graphics. A dashboard collects your most important metrics, on one screen, to tell a story or answer a question. The dashboard content comes from one or more reports and one or more semantic models.
+- ![A screenshot of the dashboard icon.](media/end-user-basic-concepts/power-bi-dashboard-icon.png) A *dashboard* is a single screen with *tiles* of interactive visuals, text, and graphics. A dashboard collects your most important metrics, or a focused set of metrics, on one screen, to tell a story or answer a question. The dashboard content comes from one or more reports and one or more semantic models.
 
     For more info, see [Dashboards for the Power BI service business users](end-user-dashboards.md).
 
@@ -126,7 +126,7 @@ Dashboards can look similar to a report page. You know that you're on a dashboar
 
   ![Screenshot of a sample dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-Typically, a *tile* is pinned from a report. Most pinned tiles show a [visualization](end-user-visualizations.md) that a *designer* created from a semantic model, saved in a report, and then pinned to that dashboard. A tile can also contain an entire report page, can contain live streaming data, or a video. There are many ways that *designers* add tiles to dashboards, too many to cover in this overview article. To learn more, see [Dashboard tiles in Power BI](end-user-tiles.md).
+Typically, a dashboard *tile* is pinned from a report. Most pinned tiles show a [visualization](end-user-visualizations.md) that a *designer* created from a semantic model, saved in a report, and then pinned to that dashboard. A tile can also contain an entire report page, can contain live streaming data, or a video. There are many ways that *designers* add tiles to dashboards, too many to cover in this overview article. To learn more, see [Dashboard tiles in Power BI](end-user-tiles.md).
 
 *Business users* can't edit dashboards. You can however add comments, view related data, subscribe, and more.
 
