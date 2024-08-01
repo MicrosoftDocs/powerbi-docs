@@ -43,7 +43,7 @@ At its most basic:
 
     For more info, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
-- ![A screenshot of the semantic model icon.](media/end-user-basic-concepts/power-bi-semantic-model-icon.png) A *semantic model* is a container of data. For example, it might be an Excel file from the World Health Organization. It might also be a company-owned database of customers, or it might be a Salesforce file. And it might be all three if the *designer* combines them into a single model. Semantic models are managed by *designers.* The data contained in semantic models is used to build reports, dashboards, and apps that *designers* share with you. 
+- ![A screenshot of the semantic model icon.](media/end-user-basic-concepts/power-bi-semantic-model-icon.png) A *semantic model* is a container of data. For example, it might be an Excel file from the World Health Organization. It might also be a company-owned database of customers, or it might be a Salesforce file. And it might be all three if the *designer* combines them into a single model. *Designers* manage semantic models. The data contained in semantic models is used to build reports, dashboards, and apps that *designers* share with you. 
 
 - ![A screenshot of the dashboard icon.](media/end-user-basic-concepts/power-bi-dashboard-icon.png) A *dashboard* is a single screen with *tiles* of interactive visuals, text, and graphics. A dashboard collects your most important metrics, on one screen, to tell a story or answer a question. The dashboard content comes from one or more reports and one or more semantic models.
 
@@ -55,7 +55,7 @@ At its most basic:
 
 - ![A screenshot of the app icon.](media/end-user-basic-concepts/power-bi-app-icon.png) An *app* is a way for *designers* to bundle and share related dashboards, reports, and semantic models together. *Business users* receive some apps automatically but can go search for other apps created by colleagues or by the community. For example, out-of-the-box apps are available for external services you may already use, like Google Analytics and Microsoft Dynamics CRM.
 
-To be clear, if you're logged in to the Power BI service for the first time, you probably don't see any shared dashboards, apps, or reports yet.
+To be clear, if you logged in to the Power BI service for the first time, you probably don't see any shared dashboards, apps, or reports yet.
 
 _______________________________________________________
 
@@ -84,11 +84,11 @@ When a *designer* shares an app with you, or gives you permissions to a workspac
 
 One semantic model...
 
-- Can be used over and over by report *designers* to create dashboards, reports, and apps.
+- can be used over and over by report *designers* to create dashboards, reports, and apps.
 
-- Can be used to create many different reports.
+- can be used to create many different reports.
 
-- Visuals from that one semantic model can appear on many different dashboards.
+- can have visuals from that one semantic model appear on many different dashboards.
 
   ![A graphic showing a semantic model with many to one relationships.](media/end-user-basic-concepts/power-bi-semantic-model-diagram.png)
 
