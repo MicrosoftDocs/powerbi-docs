@@ -256,13 +256,13 @@ Even if you use service principal profiles to separate your customers' data, you
 
 * Service Principal Profiles are only supported through the Power [BI REST API](/rest/api/power-bi/), the [Power BI .NET SDK](https://www.nuget.org/packages/Microsoft.PowerBI.Api/), and through the XMLA endpoint and the Tabular Object Model (TOM) when using Analysis Services client libraries version 16.0.139.27 or higher. Service Principal Profiles are not supported in Power BI through the XMLA endpoint or the Tabular Object Model (TOM) with older client libraries.
 * Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
+* The maximum [profiles](/rest/api/power-bi/profiles) a single service principal can have, is 100,000.
 
 ### Power BI capacity limitations
 
 * Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](/power-bi/enterprise/service-premium-what-is). For the recommended semantic model size for each SKU, reference [Premium large semantic models](/power-bi/enterprise/service-premium-what-is#large-datasets).
 * To use a semantic model larger than 10 GB, use a Premium capacity and enable the [Large semantic models](/power-bi/enterprise/service-premium-large-models) setting.
 * For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](/power-bi/enterprise/service-premium-what-is#capacity-nodes).
-* The maximum [profiles](/rest/api/power-bi/profiles) a single service principal can have, is 100,000.
 
 ### Manage service principals
 
