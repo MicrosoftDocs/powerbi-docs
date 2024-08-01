@@ -6122,11 +6122,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/enterprise/service-premium-features.md",
-            "redirect_url": "/fabric/enterprise/fabric-operations",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-union-function.md",
             "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-union-function",
             "redirect_document_id": false
