@@ -25,7 +25,7 @@ You're unable to sign up for Power BI with your personal email address. You can 
 
 There are many trials available on the Microsoft 365 site at any time. Look for the **Try free for one month** buttons.
 
-Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](/microsoft-365/enterprise/office365-plans-and-pricing.md). If you don't already have an account, Microsoft walks you through the steps to create one. 
+Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](.https://www.microsoft.com/en-us/microsoft-365/enterprise/office365-plans-and-pricing). If you don't already have an account, Microsoft walks you through the steps to create one. 
 
 1. On one of the Microsoft 365 options, select **Try for free**.
 1. Follow the prompts to set up your trial. Enter the number of users, then your email address, and select **Next**.  
