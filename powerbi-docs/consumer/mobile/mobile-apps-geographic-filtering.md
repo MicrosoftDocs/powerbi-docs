@@ -20,7 +20,7 @@ If you look at the footer menu of at a Power BI report on your mobile device and
 :::image type="content" source="./media/mobile-apps-geographic-filtering/geographic-filter-menu-option.png" alt-text="Screenshot showing the globe icon in the report options menu that indicates that the report has geographic data you can filter." border="false":::
 
 > [!NOTE]
-> You can only filter by location if the geographic names in the report are in English; for example, "New York City" or "Germany".
+> The geographic filter only appears if location information gathered by your mobile device in your current location matches a value in a column marked as geographic data (city name, for example) in the report. Filtering works only if the geographic names in the report are in English; for example, "New York City" or "Germany".
 
 ## Filter your report by your geographic location
 
@@ -29,9 +29,6 @@ If you look at the footer menu of at a Power BI report on your mobile device and
 1. If the report has geographic data, you see a message asking to allow Power BI to access your location. Click **Allow**, then tap **Allow** again.
 
 1. Open the report's option's menu and tap the globe icon. You can filter by city, state/province, or country/region, depending on the data in the report.
-
-    > [!NOTE]
-    > The geographic filter only appears if a value in a column marked as geographic data (a city name, for example) appears in the location information gathered by your mobile device in your current location.
 
 ## Why don't I see location tags on a report?
 
