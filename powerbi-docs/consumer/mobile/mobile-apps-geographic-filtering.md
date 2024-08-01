@@ -17,7 +17,7 @@ Applies to:
 
 If you look at the footer menu of at a Power BI report on your mobile device and see a globe, it means you can filter that report based on your geographic location.
 
-:::image type="content" source="./media/geographic-filter-menu-option.png" alt-text="Screenshot showing the globe icon in the report options menu that indicates that the report has geographic data you can filter." border="false":::
+:::image type="content" source="./media/mobile-apps-geographic-filtering/geographic-filter-menu-option.png" alt-text="Screenshot showing the globe icon in the report options menu that indicates that the report has geographic data you can filter." border="false":::
 
 > [!NOTE]
 > You can only filter by location if the geographic names in the report are in English; for example, "New York City" or "Germany".
