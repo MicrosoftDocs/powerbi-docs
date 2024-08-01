@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: quickstart
-ms.date: 06/25/2024
+ms.date: 07/31/2024
 ms.custom: licensing support
 LocalizationGroup: Get started
 # customer intent: As an individual, I want to use self-service to sign up for a Power BI license. 
@@ -15,7 +15,7 @@ LocalizationGroup: Get started
  
 # Quickstart: Sign up for or purchase a license for the Power BI service
 
-In this quickstart, you assign yourself a license and purchase a license for the Power BI service. This article doesn't cover trials.
+In this quickstart, you assign yourself a license and purchase a license for the Power BI service. This article doesn't cover [signing up for a trial](service-get-started.md#sign-up-for-the-power-bi-service).
 
 The Power BI service can be your personal data analysis and visualization tool. It can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains several ways that individuals can get a license for the Power BI service for themselves. For an in-depth review of the many other ways to sign up or purchase Power BI, and troubleshooting steps, see [Sign up and purchase Power BI as an individual](service-self-service-signup-purchase-for-power-bi.md).
 
@@ -78,7 +78,7 @@ Selecting the link in this example takes you to the Power BI report. If this is 
 
 ### Use your account manager to buy a license
 
-Your account manager is accessed from the icon in the upper-right corner. Select **Buy now** to make a purchase.
+Your account manager is accessed from the icon in the upper-right corner. If you previously signed up for a trial, the **Trial Status** displays the number of days remaining in the trial. In this example, Zalan has Trial of a Fabric capacity. Although that trial gives him permissions *equivalent* to a Premium Per User (PPU) license, his actual license is listed under **License type**. Zalan has a Fabric (Free) license and has not purchased an actual Pro or PPU license. Select **Buy now** to make a purchase.
 
 :::image type="content" source="media/service-self-service-signup-for-power-bi/power-bi-buy-pro.png" alt-text="Screenshot of your account manager with an arrow pointing to Buy Pro now.":::
 
