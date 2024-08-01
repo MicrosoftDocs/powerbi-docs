@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 Ms.custom: 
 ms.topic: how-to
-ms.date: 07/02/2024
+ms.date: 07/29/2024
 ms.custom: licensing support
 LocalizationGroup: consumers
 
@@ -126,5 +126,5 @@ The Power BI Pro creators can share and collaborate with other Pro users in eith
 ## Related content
 
 - [Am I a Power BI business user?](end-user-consumer.md)  
-- [Learn about workspaces](end-user-workspaces.md)  
+- [Purchase Power BI](https://powerbi.microsoft.com/pricing/?pbi_source=pbidocs-purchasing-power-bi-pro)  
 - [Features for free users](end-user-features.md)
