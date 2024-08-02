@@ -19,6 +19,8 @@ If you look at the footer menu of at a Power BI report on your mobile device and
 
 :::image type="content" source="./media/mobile-apps-geographic-filtering/geographic-filter-menu-option.png" alt-text="Screenshot showing the globe icon in the report options menu that indicates that the report has geographic data you can filter." border="false":::
 
+The globe appears only when geographic filtering is available.
+
 > [!NOTE]
 > The geographic filter only appears if location information gathered by your mobile device in your current location matches a value in a column marked as geographic data (city name, for example) in the report. Filtering works only if the geographic names in the report are in English; for example, "New York City" or "Germany".
 
@@ -37,6 +39,8 @@ All three of the conditions below must be met for you to see location tags.
 * The person who created the report in Power BI Desktop must have [categorized geographical data](../../transform-model/desktop-mobile-geofiltering.md) for at least one column, such as City, State, or Country/Region.
 
 * The location data gathered by your device in your current location must match a value in the column marked as geographic data. For example, if a report has data that is marked as Seattle, Washington, and your device's current location data includes Washington, the geofilter will filter for records that are relevant for Washington. If your device's current location data includes both Seattle and Washington, then the geofilter will display data for both Seattle and Washington. If the current location data on your device doesn't include either Seattle or Washington, the geofilter will not appear.
+
+* The geographic names in the report must be in English; for example, "New York City" or "Germany".
 
 * You're using an iOS (iPad, iPhone or iPod) or Antroid (phone or tablet) mobile device.
 
