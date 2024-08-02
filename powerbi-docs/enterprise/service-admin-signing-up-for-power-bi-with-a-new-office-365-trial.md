@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 08/01/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
 # Sign up for Power BI with a new Microsoft 365 trial
 
-This article describes an alternative way to sign up for the Power BI service if you don't already have a work or school email account.
+This article describes an alternative way to sign up for the Power BI service if you don't already have a work or school email account and don't already have an account that works with Microsoft 365.
 
 You're unable to sign up for Power BI with your personal email address. You can still try out Power BI and Fabric with a Microsoft 365 trial. During the Microsoft 365 trial sign-up process, you create an "onmicrosoft" email work account. Use that new work account to sign up for the Power BI service and get a Fabric free or Power BI Pro license. Continue to use that work account even after you cancel your Microsoft 365 trial.
 
@@ -25,7 +25,7 @@ You're unable to sign up for Power BI with your personal email address. You can 
 
 There are many trials available on the Microsoft 365 site at any time. Look for the **Try free for one month** buttons.
 
-Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products). If you don't already have an account, Microsoft walks you through the steps to create one. 
+Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/en-us/microsoft-365/enterprise/office365-plans-and-pricing). If you don't already have an account, Microsoft walks you through the steps to create one. 
 
 1. On one of the Microsoft 365 options, select **Try for free**.
 1. Follow the prompts to set up your trial. Enter the number of users, then your email address, and select **Next**.  

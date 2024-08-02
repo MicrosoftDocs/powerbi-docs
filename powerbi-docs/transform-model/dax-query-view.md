@@ -1,6 +1,6 @@
 ---
-title: DAX query view in Power BI Desktop
-description: Learn how to use DAX query view in Power BI Desktop to evaluate your DAX queries.
+title: DAX query view
+description: Learn how to use DAX query view to evaluate your DAX queries.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -282,6 +282,12 @@ And there are some limitations to keep in mind:
 - Maximum of 15MB of data per query. Once 15MB is exceeded, the current row completes but no additional rows are written.
 - Maximum of 1,000,000 values per query. If you query for 20 columns, you can get back max 50,000 rows (1 million divided by 20).
 - Define all measures in this table or model is unavailable when there are more than 500 measures.
+
+ Running DAX queries in the web has additional limitaitons:
+- Maximum of 99,999 rows are returned per query.
+- Write permission on the semantic model. Viewers with build permission can use Power BI Desktop to live connect and use DAX query view to run DAX queries.
+- Only available for non-default semantic models. You can use Power BI Desktop to live connect to the default semantic model and use DAX query view to run DAX queries.
+-  **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models)
 
 ## Related content
 

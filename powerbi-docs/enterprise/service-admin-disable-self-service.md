@@ -13,14 +13,14 @@ LocalizationGroup: Administration
 ---
 # Introduction to enabling and disabling self-service sign-up and purchasing
 
-Global administrators can determine whether to enable or disable self-service sign-up. As a Global administrator, you also determine whether users in your organization can make self-service purchases to get their own license.
+Billing administrators can determine whether to enable or disable self-service sign-up. As a Billing administrator, you also determine whether users in your organization can make self-service purchases to get their own license.
 
 Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you block individual sign-up, you may want to get Fabric (Free) licenses for your organization and assign them to all users.
 
 Turning off self-service purchase keeps users from performing actions that require a paid license. These actions include sharing, exporting, and creating workspaces for collaboration. 
 
 > [!NOTE]
->If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the settings might be disabled to block users from signing up individually. Your CSP can act as the global admin for your organization, requiring that you contact them to help you change this setting.
+>If you acquired Power BI through a Microsoft Cloud Solution Provider (CSP), the settings might be disabled to block users from signing up individually. Your CSP can act as the admin for your organization, requiring that you contact them to help you change this setting.
 
 ## When to use self-service sign-up and purchase
 
