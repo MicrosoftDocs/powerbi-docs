@@ -8,7 +8,7 @@ ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.reviewer: 
 ms.custom: subject-armqs, devx-track-azurecli
-ms.date: 5/13/2024
+ms.date: 08/02/2024
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
