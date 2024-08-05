@@ -34,6 +34,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) |
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../collaborate-share/service-create-distribute-apps.md) |
 | Dynamic M Query Parameters | No | Yes | |
+| Export to Power Point (PPTX) | No | Yes | Export data for visuals to CSV or Excel options are available in Report Server. |
 | Gateway required | No | Yes for on-premises data sources |  |
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) |
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../create-reports/power-bi-tutorial-q-and-a.md) 
