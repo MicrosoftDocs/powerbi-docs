@@ -28,9 +28,9 @@ If the report your viewing has geographic data, and you're in a location to whic
 
     :::image type="content" source="./media/mobile-apps-geographic-filtering/geographic-filter-menu-option.png" alt-text="Screenshot showing the globe icon in the report options menu that indicates that the report has geographic data you can filter." border="false":::
 
-1. Tap the globe icon. You can filter by city, state/province, or country/region, depending on the data in the report.
+1. Tap the **Geo Filter** icon. You can filter by city, state/province, or country/region, depending on the data in the report.
 
-## Considerations and limitations
+## Why don't I see location tags on a report?
 
 All of the following conditions must be met for you to see location tags.
 
@@ -47,6 +47,8 @@ All of the following conditions must be met for you to see location tags.
     * If your device's location data shows that you're in Redmond, Washington, you'll be able to filter on Washington.
 
     * If your device's location data shows that you're in California, no geo filter will appear.
+
+* The spelling of the geographic data in the report must match the spelling used in the location data gathered by your mobile device. For example, if St. Louis is used in your report's geographic data, but you device location data shows you're in Saint Louis, the geo filter will not appear.
 
 ## Related content
 
