@@ -48,7 +48,7 @@ All of the following conditions must be met for you to see location tags.
 
     * If your device's location data shows that you're in California, no geo filter will appear.
 
-* The spelling of the geographic data in the report must match the spelling used in the location data gathered by your mobile device. For example, if St. Louis is used in your report's geographic data, but you device location data shows you're in Saint Louis, the geo filter will not appear.
+* The spelling of the geographic data in the report must match the spelling used in the location data gathered by your mobile device. For example, if St. Louis is used in your report's geographic data, but you device location data shows you're in Saint Louis, the geo filter won't appear.
 
 ## Related content
 
