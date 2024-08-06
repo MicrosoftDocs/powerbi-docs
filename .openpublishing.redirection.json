@@ -5708,7 +5708,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-workspaces.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-workspaces",
+            "redirect_url": "/fabric/admin/portal-workspaces",
             "redirect_document_id": false
         },
         {
