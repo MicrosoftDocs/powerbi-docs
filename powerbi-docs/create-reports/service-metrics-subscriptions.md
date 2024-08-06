@@ -71,7 +71,8 @@ You can see all the subscriptions for a scorecard.
 
 - If the scorecard isn't hosted in a Premium capacity, others must also have a Pro license. 
 - You can add other email addresses in the same domain to the subscription. 
-
+- You cannot subscribe to a scorecard from within a Power BI org app.
+  
 ## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
