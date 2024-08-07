@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 08/07/2024
 ---
 
 # Create email subscriptions for your metrics in Power BI (preview)
@@ -71,7 +71,8 @@ You can see all the subscriptions for a scorecard.
 
 - If the scorecard isn't hosted in a Premium capacity, others must also have a Pro license. 
 - You can add other email addresses in the same domain to the subscription. 
-
+- You can't subscribe to a scorecard from within a Power BI org app.
+  
 ## Related content
 
 - [Get started with metrics in Power BI](service-goals-introduction.md)
