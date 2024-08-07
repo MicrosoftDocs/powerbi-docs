@@ -6,7 +6,7 @@ ms.author: painbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/05/2024
+ms.date: 08/07/2024
 ---
 
 # Filter a report by geographic location in the Power BI mobile apps
@@ -34,21 +34,19 @@ If the report your viewing has geographic data, and you're in a location to whic
 
 All of the following conditions must be met for you to see location tags.
 
-* The report must contain geographic data. such as city, state, or country/region. Read about [setting up geographic filtering](../../transform-model/desktop-mobile-geofiltering.md) in Power BI Desktop.
+* The report must contain geographic data. such as city, state, country/region, or zip code. Read about [setting up geographic filtering](../../transform-model/desktop-mobile-geofiltering.md) in Power BI Desktop.
 
 * The geographic names in the report must be in English; for example, "New York City" or "Germany".
 
 * You must be using a mobile device that supports geo filtering: iOS (iPad or iPhone) or Android (phone or tablet).
 
-* The location information gathered by your mobile device in your current location must match a value in a column marked as geographic data (city name, for example) in the report. For example, if a report has data that is marked as Seattle, Washington:
+* The location information gathered by your mobile device in your current location must match a value in a column marked as geographic data (city name, for example) in the report. For example, if a report has data that is marked as Seattle, Washington, USA:
 
-    * If your device's location data shows that you're in Seattle, Washington, you'll be able to filter both on Seattle and on Washington.
+    * If your device's location data shows that you're in Seattle, Washington, you'll be able to filter on Seattle, on Washington, or on USA.
 
-    * If your device's location data shows that you're in Redmond, Washington, you'll be able to filter on Washington.
+    * If your device's location data shows that you're in Redmond, Washington, you'll be able to filter on Washington or on USA.
 
-    * If your device's location data shows that you're in California, no geo filter will appear.
-
-* The spelling of the geographic data in the report must match the spelling used in the location data gathered by your mobile device. For example, if St. Louis is used in your report's geographic data, but your device location data shows you're in Saint Louis, the geo filter won't appear.
+    * If your device's location data shows that you're in Toronto, Canada, no geo filter will be available.
 
 ## Related content
 
