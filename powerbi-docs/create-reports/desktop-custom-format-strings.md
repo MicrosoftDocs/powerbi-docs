@@ -57,7 +57,7 @@ To create a visual level format string, first add the field or [visual calculati
 ![Screenshot of the Format pane for a visual, showing the Data format settings in the General section.](media/desktop-custom-format-strings/custom-format-strings-visual-level-format-string.png)
 
 > [!NOTE]
-> For now, you will need to enter a [.NET format string](https://learn.microsoft.com/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead of a [VBA format string](#supported-custom-format-syntax). This is a temporary issue that will be resolved in a future release.
+> For now, you will need to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead of a [VBA format string](#supported-custom-format-syntax). This is a temporary issue that will be resolved in a future release.
 
 ### Add an element level format string
 To create an element level format string, open the format pane and find the format string sections for the element you want to set the format on. Keep in mind that not all elements support format strings. To set a format string on a data label, open the **Visual** section of the format pane, set **Data Labels** > **Value** > **Display units** to custom and enter the format code:
@@ -70,7 +70,7 @@ To create an element level format string, open the format pane and find the form
 Custom format strings follow the VBA style syntax, common to Excel and other Microsoft products, but they don't support all syntax used in other products.
 
 > [!NOTE]
-> For now, visual level format strings require you to enter a [.NET format string](https://learn.microsoft.com/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead. This is a temporary issue that will be resolved in a future release.
+> For now, visual level format strings require you to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead. This is a temporary issue that will be resolved in a future release.
 
 The following tables define the syntax supported in Power BI.
 
