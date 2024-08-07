@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.custom: 
 ms.topic: overview
-ms.date: 01/30/2024
+ms.date: 07/28/2024
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get an overview of Power BI so I can understand how the different parts fit together, so that I know which part to use to accomplish my tasks/goals.
 ---
@@ -34,12 +34,6 @@ After you've created reports and dashboards you can share them. Users of the Pow
 
 The ability to control how you share your work is one of the most important features of the Power BI service. You create workspaces where you and your colleagues can collaborate on reports and dashboards. Then you can bundle and distribute them as apps. You can also share the semantic models themselves, so others can use them as a basis for their own reports. Read more about [ways to collaborate and share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
-
-## How Microsoft Fabric works with Power BI
-
-[Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is an offering that combines data + services in a unified environment, making it easier to perform analysis and analytics on various sets of data. **Power BI** is an example of one of the *services* that's integrated with Microsoft Fabric, and your organization's **OneLake** data store is an example of the *data* that can be used, analyzed, or visualized. Large organizations find Microsoft Fabric particularly useful, since it can corral and then bring greater value to large stores of data, then using services (like Power BI) to bring such data to business life.
-
-Administration of Power BI is now handled by Microsoft Fabric, but your favorite tools like the **Power BI service** and **Power BI Desktop** still operate like they always have - as a service that can turn your data, whether in OneLake or in Excel, into powerful business intelligence insights.
 
 
 ## Related content
