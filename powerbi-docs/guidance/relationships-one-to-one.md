@@ -1,14 +1,15 @@
 ---
 title: One-to-one relationship guidance
-description: Guidance for developing one-to-one model relationships.
+description: Guidance for understanding, developing, and working with one-to-one model relationships in Power BI.
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: fabric-cat
-ms.date: 03/02/2020
+ms.date: 07/25/2024
+#customer intent: As a data modeler working with Power BI Desktop, I want guidance on working with one-to-one model relationships so that I can effectively design and develop my data models.
 ---
 
 # One-to-one relationship guidance
@@ -26,12 +27,12 @@ There are two scenarios that involve one-to-one relationships:
 
 ## Degenerate dimensions
 
-When columns from a fact-type table are used for filtering or grouping, you can consider making them available in a separate table. This way, you separate columns used for filter or grouping, from those columns used to summarize fact rows. This separation can:
+When columns from a fact-type table are used for filtering or grouping, you can consider making them available in a separate table. This way, you separate columns used for filtering or grouping from those columns used to summarize fact rows. This separation can:
 
 - Reduce storage space
 - Simplify model calculations
 - Contribute to improved query performance
-- Deliver a more intuitive **Fields** pane experience to your report authors
+- Deliver a more intuitive **Data** pane experience to your report authors
 
 Consider a source sales table that stores sales order details in two columns.
 
@@ -49,7 +50,7 @@ As the **Sales Order** table is derived from the sales data, there should be exa
 
 ## Row data spans across tables
 
-Consider an example involving two one-to-one related dimension-type tables: **Product**, and **Product Category**. Each table represents imported data and has a **SKU** (Stock-Keeping Unit) column containing unique values.
+Consider an example involving two one-to-one related dimension-type tables: **Product**, and **Product Category**. Each table represents imported data and has an **SKU** (Stock-Keeping Unit) column containing unique values.
 
 Here's a partial model diagram of the two tables.
 
@@ -76,9 +77,9 @@ The row details for the two tables are described in the following bulleted list:
 
 Notice that the **Product Category** table doesn't include a row for the product SKU CL-02. We'll discuss the consequences of this missing row later in this article.
 
-In the **Fields** pane, report authors will find product-related fields in two tables: **Product** and **Product Category**.
+In the **Data** pane, report authors will find product-related fields in two tables: **Product** and **Product Category**.
 
-![The Fields pane shows both tables expanded, and the columns are listed as fields with Product and Product category called out.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
+![The Data pane shows both tables expanded, and the columns are listed as fields with Product and Product category called out.](media/relationships-one-to-one/product-to-product-category-data-pane.png)
 
 Let's see what happens when fields from both tables are added to a table visual. In this example, the **SKU** column is sourced from the **Product** table.
 
@@ -90,10 +91,10 @@ Notice that the **Category** value for product SKU CL-02 is BLANK. It's because 
 
 When possible, we recommend you avoid creating one-to-one model relationships when row data spans across model tables. It's because this design can:
 
-- Contribute to **Fields** pane clutter, listing more tables than necessary
-- Make it difficult for report authors to find related fields, because they're distributed across multiple tables
-- Limit the ability to create hierarchies, as their levels must be based on columns from the _same table_
-- Produce unexpected results when there isn't a complete match of rows between the tables
+- Contribute to **Data** pane clutter, listing more tables than necessary.
+- Make it difficult for report authors to find related fields, because they're distributed across multiple tables.
+- Limit the ability to create hierarchies, as their levels must be based on columns from the _same table_.
+- Produce unexpected results when there isn't a complete match of rows between the tables.
 
 Specific recommendations differ depending on whether the one-to-one relationship is _intra source group_ or _cross source group_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
@@ -104,12 +105,12 @@ When a one-to-one _intra source group_ relationship exists between tables, we re
 The following steps present a methodology to consolidate and model the one-to-one related data:
 
 1. **Merge queries**: When [combining the two queries](../connect-data/desktop-shape-and-combine-data.md#combine-queries), give consideration to the completeness of data in each query. If one query contains a complete set of rows (like a master list), merge the other query with it. Configure the merge transformation to use a _left outer join_, which is the default join type. This join type ensures you'll keep all rows of the first query, and supplement them with any matching rows of the second query. Expand all required columns of the second query into the first query.
-2. **Disable query load**: Be sure to [disable the load](import-modeling-data-reduction.md#disable-power-query-query-load) of the second query. This way, it won't load its result as a model table. This configuration reduces the data model storage size, and helps to unclutter the **Fields** pane.
+2. **Disable query load**: Be sure to [disable the load](import-modeling-data-reduction.md#disable-power-query-query-load) of the second query. This way, it won't load its result as a model table. This configuration reduces the data model storage size, and helps to unclutter the **Data** pane.
 
-    In our example, report authors now find a single table named **Product** in the **Fields** pane. It contains all product-related fields.
+    In our example, report authors now find a single table named **Product** in the **Data** pane. It contains all product-related fields.
 
-    ![The Fields pane shows both tables expanded, and the columns are listed as fields with Product called out.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
-3. **Replace missing values**: If the second query has unmatched rows, NULLs will appear in the columns introduced from it. When appropriate, consider replacing NULLs with a token value. Replacing missing values is especially important when report authors filter or group by the column values, as BLANKs could appear in report visuals.
+    ![The Data pane shows both tables expanded, and the columns are listed as fields with Product called out.](media/relationships-one-to-one/product-to-product-category-data-pane-consolidated.png)
+3. **Replace missing values**: If the second query has unmatched rows, null values appear in the columns introduced from it. When appropriate, consider replacing null values with a token value. Replacing missing values is especially important when report authors filter or group by the column values, as BLANKs could appear in report visuals.
 
     In the following table visual, notice that the category for product SKU CL-02 now reads _[Undefined]_. In the query, null categories were replaced with this token text value.
 
@@ -119,13 +120,13 @@ The following steps present a methodology to consolidate and model the one-to-on
 
     In our example, report authors now can use a hierarchy that has two levels: **Category** and **Product**.
 
-    ![The Fields pane shows both tables expanded, and the columns are listed as fields with Products called out.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
+    ![The Data pane shows both tables expanded, and the columns are listed as fields with Products called out.](media/relationships-one-to-one/product-to-product-category-data-pane-consolidated-with-hierarchy.png)
 
 If you like how separate tables help organize your fields, we still recommend consolidating into a single table. You can still organize your fields, but by using _display folders_ instead.
 
 In our example, report authors can find the **Category** field within the **Marketing** display folder.
 
-![The Fields pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
+![The Data pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-data-pane-consolidated-display-folder.png)
 
 Should you still decide to define one-to-one intra source group relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra source group relationship is evaluated as a [regular relationship](../transform-model/desktop-relationships-understand.md#regular-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
 

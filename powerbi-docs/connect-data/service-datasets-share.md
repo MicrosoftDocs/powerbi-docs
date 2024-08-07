@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 02/14/2024
+ms.date: 07/24/2024
 LocalizationGroup: Share your work
 ---
 # Share access to a semantic model

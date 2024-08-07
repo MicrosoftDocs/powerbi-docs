@@ -7,7 +7,7 @@ ms.reviewer: yardena
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/18/2022
+ms.date: 07/19/2024
 LocalizationGroup: Share your work
 ---
 # Manage semantic model access permissions (preview)
@@ -33,11 +33,11 @@ To open the semantic model manage permissions page:
 
     ![Screenshot of semantic model manage permissions page entry points on the semantic model info page.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-dataset-info-page.png)
 
-* From the [Share semantic model dialog](service-datasets-share.md): In the dialog header, select **Manage permissions** on the **More options (…)** menu. This opens the **Manage permissions** side pane. In the side pane, choose **Advanced** at the bottom of the pane.
+* From the [Share semantic model dialog](service-datasets-share.md): In the dialog header, select **Manage permissions** on the **More options (…)** menu. The **Managed permissions** side pane opens. In the side pane, choose **Advanced** at the bottom of the pane.
 
     ![Screenshot of semantic model manage permissions page entry point on the Share semantic model dialog.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-share-dataset-dialog.png)
  
-These actions will open the semantic models manage permissions page. The manage permissions page has two tabs to help you manage semantic model access.
+These actions open the semantic models manage permissions page. The manage permissions page has two tabs to help you manage semantic model access.
 
 ## Manage direct access
 
@@ -47,13 +47,13 @@ The direct access tab lists users who have been granted access. For each user, y
 
     ![Screenshot of modifying permissions from the direct access tab on the semantic model manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-modify.png)
 
-* To grant semantic model access to another user, click **+ Add user**. The [Share semantic model dialog](service-datasets-share.md) will open.
+* To grant semantic model access to another user, click **+ Add user**. The [Share semantic model dialog](service-datasets-share.md) opens.
 
     ![Screenshot of granting access permissions from the direct access tab on the semantic model manage permissions page.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-add-user.png)
 
 ### Managing permissions granted through an app
 
-Permissions on the semantic model that have been granted through an app are indicated by the word "App" followed by the permissions enclosed in parentheses, as shown in the image below.
+Permissions on the semantic model granted through an app are indicated by the word "App" followed by the permissions enclosed in parentheses, as shown in the following image:
 
 ![Screenshot of app permissions on semantic models Direct access tab.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-app-permissions.png)
 
@@ -63,13 +63,13 @@ You can't modify permissions granted through an app directly from the Direct acc
 
 1. Republish the app.
 
-1. Go to the Direct access tab of the semantic model's manage semantic model permissions page as described [above](#manage-direct-access). The user will still have the permissions that were granted via the app before update, but now they won't be tied to the app (note that the parentheses are gone). Now you can remove whatever permissions you desire.
+1. Go to the Direct access tab of the semantic model's manage semantic model permissions page as described [above](#manage-direct-access). The user still has the permissions granted via the app before update, but now they're not tied to the app (note that the parentheses are gone). Now you can remove whatever permissions you desire.
 
     ![Screenshot of editing former app permissions.](media/service-datasets-manage-access-permissions/power-bi-dataset-direct-access-tab-app-permissions-remove.png)
 
 ## Manage links generated for report sharing
 
-The shared report links tab lists [links that have been created to shared reports](../collaborate-share/service-share-dashboards.md) that are based on your semantic model. Such links may also grant access to the report’s underlying semantic model, and so they are listed here. You can see what permissions the link carries and who created the link. You can also delete the link from the system if you so desire.
+The shared report links tab lists [links that have been created to shared reports](../collaborate-share/service-share-dashboards.md) that are based on your semantic model. Such links may also grant access to the report’s underlying semantic model, and so these links are listed here. You can see what permissions the link carries and who created the link. You can also delete the link from the system if you so desire.
 
 >[!WARNING]
 > Deleting a link removes it from the system. Users who use the link to access a report may lose access to that report.

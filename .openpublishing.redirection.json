@@ -5708,7 +5708,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-workspaces.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-workspaces",
+            "redirect_url": "/fabric/admin/portal-workspaces",
             "redirect_document_id": false
         },
         {
@@ -6119,11 +6119,6 @@
         {
             "source_path": "powerbi-docs/enterprise/service-premium-capacity-manage.md",
             "redirect_url": "/fabric/admin/capacity-settings",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-premium-features.md",
-            "redirect_url": "/fabric/enterprise/fabric-operations",
             "redirect_document_id": false
         },
         {
