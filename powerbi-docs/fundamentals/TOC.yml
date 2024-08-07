@@ -13,6 +13,8 @@
       href: power-bi-service-overview.md
     - name: "Comparing Power BI Desktop and the service"
       href: service-service-vs-desktop.md
+    - name: "Comparing Fabric and the Power BI service"
+      href: fabric-power-bi.md
   - name: Tutorials
     expanded: true
     items: 
