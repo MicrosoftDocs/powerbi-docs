@@ -30,6 +30,9 @@ If the report your viewing has geographic data, and you're in a location to whic
 
 1. Tap the **Geo Filter** icon. You can filter by city, state/province, or country/region, depending on the data in the report.
 
+    :::image type="content" source="./media/mobile-apps-geographic-filtering/geo-filter-filtering-options.png" alt-text="Screenshot showing the options available on a Geo filter." border="false":::
+
+
 ## Why don't I see location tags on a report?
 
 All of the following conditions must be met for you to see location tags.
@@ -40,11 +43,11 @@ All of the following conditions must be met for you to see location tags.
 
 * You must be using a mobile device that supports geo filtering: iOS (iPad or iPhone) or Android (phone or tablet).
 
-* The location information gathered by your mobile device in your current location must match a value in a column marked as geographic data (city name, for example) in the report. For example, if a report has data that is marked as Seattle, Washington, USA:
+* The location information gathered by your mobile device in your current location must match a value in a column marked as geographic data (city name, for example) in the report. For example, if a report has data that is marked as Queens, New York, USA:
 
-    * If your device's location data shows that you're in Seattle, Washington, you'll be able to filter on Seattle, on Washington, or on USA.
+    * If your device's location data shows that you're in Queens, you'll be able to filter on Queens, on New York, or on USA.
 
-    * If your device's location data shows that you're in Redmond, Washington, you'll be able to filter on Washington or on USA.
+    * If your device's location data shows that you're in Brooklyn, you'll be able to filter on New York or on USA.
 
     * If your device's location data shows that you're in Toronto, Canada, no geo filter will be available.
 
