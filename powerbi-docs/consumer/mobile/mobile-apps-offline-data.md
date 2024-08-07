@@ -18,9 +18,6 @@ Applies to:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |
 
->[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
-
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network.
 
 :::image type="content" source="./media/mobile-apps-offline-data/power-bi-iphone-no-network.png" alt-text="Screenshot that shows Power BI mobile app with 'No network' message.":::
@@ -59,7 +56,7 @@ When you're offline with Power BI on your mobile device:
 * Reports based on DirectQuery or live connection aren't cached and aren't available offline.
 * Some tile types require an active server connection, so they aren't available offline. For example, Bing map tiles and some custom tiles.
 * Whole Excel workbooks in Power BI aren't available offline.
-* You can see Reporting Services mobile reports and KPIs offline, if you viewed them while connected. They don't refresh in the background. They refresh every time you open them.
+* You can see Reporting Services KPIs offline, if you viewed them while connected. They don't refresh in the background. They refresh every time you open them.
 * In the Power BI mobile apps, you can't see Power BI Desktop (PBIX) files saved to Power BI Report Server.
 * Paginated reports (RDL) are not available while the network is offline.
 
