@@ -1,5 +1,5 @@
 ---
-title: Tutorial for setting data alerts on the Power BI service dashboards.
+title: Tutorial for setting data alerts on Power BI dashboards.
 description: In this tutorial, you learn to set alerts to notify you when data in your dashboards changes beyond limits you set in the Microsoft Power BI service.
 author: mihart
 ms.author: mihart
@@ -9,8 +9,8 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.custom: sample-sales-and-marketing-app
 ms.search.form: Set alerts on dashboards
-ms.topic: how-to
-ms.date: 02/08/2024
+ms.topic: tutorial
+ms.date: 08/06/2024
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
@@ -18,12 +18,11 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-
-Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. 
+Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. Only you receive the alerts that you set.
 
 :::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing part of a dashboard that includes a tile, a card, and a KPI.":::
 
-Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data reaches an alert threshold, an alert is triggered. 
+Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data reaches an alert threshold, an alert is triggered.
 
 This tutorial covers the following.
 > [!div class="checklist"]
@@ -36,16 +35,16 @@ This tutorial covers the following.
 
 ## Prerequisites
 
-- A Power BI license. If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-- Access to a dashboard with one of the following types of tile: gauge, KPI, or card. 
-- A semantic model that refreshes.
+* A Power BI license. If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* Access to a dashboard with one of the following types of tile: gauge, KPI, or card. 
+* A semantic model that refreshes.
 
 ## Who can set alerts
 
 Alerts can be created in the Power BI service by customers with any license type. Set alerts on dashboard tiles:
-- you create and save in **My workspace**.
-- shared with you in a [Premium reserved capacity](end-user-license.md). 
-- in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
+- that you created in **My workspace**.
+- that are shared with you in a [Premium reserved capacity](end-user-license.md). 
+- that are in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
 
 ## Who can see alerts I create?
 
@@ -70,7 +69,7 @@ Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power B
 
 1. Scroll down and enter the alert details. In this example, we create an alert that notifies us once a day if our market share increases to 40% (.4) or higher. We opt to have Power BI send us an email when an alert is triggered. Triggered alerts also appear in our Notification center. 
 
-   :::image type="content" source="media/end-user-alerts/power-bi-set-threshold.png" alt-text="Screenshot showing the window for managing alerts. The Condition box is set to Above, the Threshold box contains 40, and the email check box is selected.":::
+   :::image type="content" source="media/end-user-alerts/power-bi-set-threshold.png" alt-text="Screenshot showing the window for managing alerts. The Condition is set to Above.":::
 
 1. Select **Save and close**.
 
