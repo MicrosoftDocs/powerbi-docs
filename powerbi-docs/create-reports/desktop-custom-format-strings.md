@@ -27,6 +27,7 @@ Format strings exist on three levels:
 These levels are hierarchical, with the model level being the lowest level and the element level the highest. A format string defined on a column, measure, or visual calculation on a higher level overrides what was defined on a lower level. 
 
 Since visual calculations aren't in the model, they can't have a format string set on the model level but can on the visual, or element level. Measures and columns can have format strings on all three levels:
+
 | **Level** | **Impacts** | **Available for**|
 | --- | --- | --- |
 | Element | Selected element of the selected visual | Measures, Columns, Visual Calculations |
@@ -55,6 +56,9 @@ To create a visual level format string, first add the field or [visual calculati
 
 ![Screenshot of the Format pane for a visual, showing the Data format settings in the General section.](media/desktop-custom-format-strings/custom-format-strings-visual-level-format-string.png)
 
+> [!NOTE]
+> For now, you will need to enter a [.NET format string](https://learn.microsoft.com/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead of a [VBA format string](#supported-custom-format-syntax). This is a temporary issue that will be resolved in a future release.
+
 ### Add an element level format string
 To create an element level format string, open the format pane and find the format string sections for the element you want to set the format on. Keep in mind that not all elements support format strings. To set a format string on a data label, open the **Visual** section of the format pane, set **Data Labels** > **Value** > **Display units** to custom and enter the format code:
 
@@ -64,6 +68,9 @@ To create an element level format string, open the format pane and find the form
 ## Supported custom format syntax
 
 Custom format strings follow the VBA style syntax, common to Excel and other Microsoft products, but they don't support all syntax used in other products.
+
+> [!NOTE]
+> For now, visual level format strings require you to enter a [.NET format string](https://learn.microsoft.com/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead. This is a temporary issue that will be resolved in a future release.
 
 The following tables define the syntax supported in Power BI.
 
