@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/19/2021
+ms.date: 08/07/2024
 ---
 
 # View your data offline in the Power BI mobile apps
 
 Applies to:
 
-| :::image type="icon" source="./media/mobile-apps-offline-data/iphone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/ipad-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/android-phone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/android-tablet-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/win-10-logo-50-px.png"::: |
+| :::image type="icon" source="./media/mobile-apps-offline-data/iphone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/ipad-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/android-phone-logo-50-px.png"::: | :::image type="icon" source="./media/mobile-apps-offline-data/android-tablet-logo-50-px.png"::: |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Android tablets |Windows devices |
+| iPhones |iPads |Android phones |Android tablets |
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** was discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
@@ -31,14 +31,14 @@ By default, Power BI refreshes the data frequently so you get up-to-date answers
 
 While you're offline, you can access and interact with dashboards you've accessed previously from the mobile app.
 
-You also have read-only access to any Power BI reports you've accessed previously from the mobile app. You can see the full report, but not filter, cross-filter, sort, or use slicers on it.
+You also have read-only access to any Power BI reports you've accessed previously from the mobile app. However, the data that's available to see depends on what was cached on your device the previous time you viewed the report. For example, if the last time you viewed the report you only viewed filtered data, and now offline you want to view the full, unfiltered report, you might not be able to do so. This is because only the filtered data was cached the last time you viewed the report, and thus now remains available offline.
 
 >[!NOTE]
 > Reports based on DirectQuery or live connection are not cached and are not available offline.
 
 ## Background data refresh
 
-Background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks, with the data on the Power BI service (not the data source). If you're connected to Wi-Fi, background refresh updates every 2 hours. Otherwise, if you're on a 3G network, Power BI updates the content every 24 hours.
+Background refresh updates dashboards you've viewed in the last two weeks, and also dashboards you've marked as favorites, with the data on the Power BI service (not the data source). If you're connected to Wi-Fi, background refresh updates every 2 hours. Otherwise, if you're on a 3G network, Power BI updates the content every 24 hours.
 
 You can turn off background refresh, for example, to avoid network usage. Check the settings on your device.
 
