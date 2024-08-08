@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: pbi-explore; pbi-fundamentals
+ms.subservice: pbi-explore
 ms.custom: sample-sales-and-marketing sample
 ms.search.form: Set alerts on dashboards
 ms.topic: tutorial
