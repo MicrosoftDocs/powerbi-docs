@@ -1,13 +1,13 @@
 ---
-title: Tutorial for setting data alerts on Power BI dashboards.
+title: Tutorial for setting data alerts on Power BI service dashboards.
 description: In this tutorial, you learn to set alerts to notify you when data in your dashboards changes beyond limits you set in the Microsoft Power BI service.
 author: mihart
 ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: pbi-explore
-ms.custom: sample-sales-and-marketing-app
+ms.subservice: pbi-explore, pbi-fundamentals
+ms.custom: sample-sales-and-marketing sample
 ms.search.form: Set alerts on dashboards
 ms.topic: tutorial
 ms.date: 08/06/2024
@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. Only you receive the alerts that you set.
+Use this tutorial to set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. Only you receive the alerts that you set.
 
 :::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing part of a dashboard that includes a tile, a card, and a KPI.":::
 
@@ -26,7 +26,7 @@ Alerts only work on data that is refreshed. When data refreshes, Power BI looks 
 
 This tutorial covers the following.
 > [!div class="checklist"]
-> * Who can set alerts
+> * Who can set dashboard alerts
 > * Which visuals support alerts
 > * Who can see my alerts
 > * Do alerts work on Power BI Desktop and mobile
@@ -55,11 +55,9 @@ Only you can see the alerts you set, even if you share your dashboard. Data aler
 
 ## Add an alert to a dashboard tile
 
-Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power BI dashboard. This tutorial uses the Sales and Marketing app available from AppSource. To follow along, [get the sample](end-user-app-marketing.md). 
+Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power BI dashboard. This tutorial uses the Sales and Marketing sample. To follow along, open the sample from the left nav pane **Learn** tab. Open the *Market share* report page and pin the **% Units Market Share** card to a dashboard.
 
-1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
-
-   :::image type="content" source="media/end-user-alerts/power-bi-card.png" alt-text="Screenshot of a card tile showing market share, with an ellipsis called out in the upper right corner.":::
+1. From a dashboard gauge, KPI, or card tile, select the ellipses (...).
 
 1. Select the alert icon, :::image type="icon" source="media/end-user-alerts/power-bi-alert-icon.png"::: or **Manage alerts**, to add one or more alerts for the **Market share** card.
 
