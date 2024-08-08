@@ -1,13 +1,13 @@
 ---
 title: View your data offline in the Power BI mobile apps
-description: Learn about how you can view your data in Power BI mobile apps when you’re not connected to a network.
+description: Learn about how you can view your data in Power BI mobile apps when you're not connected to a network.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/07/2024
+ms.date: 08/08/2024
 ---
 
 # View your data offline in the Power BI mobile apps
@@ -22,7 +22,7 @@ One advantage of viewing Power BI in a mobile app rather than in a mobile browse
 
 :::image type="content" source="./media/mobile-apps-offline-data/power-bi-iphone-no-network.png" alt-text="Screenshot that shows Power BI mobile app with 'No network' message.":::
 
-By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions any time, even while commuting or roaming.
+By default, Power BI refreshes the data frequently so you get up-to-date answers to your business questions anytime, even while commuting or roaming.
 
 ## Data access while you're offline
 
@@ -58,7 +58,7 @@ When you're offline with Power BI on your mobile device:
 * Whole Excel workbooks in Power BI aren't available offline.
 * You can see Reporting Services KPIs offline, if you viewed them while connected. They don't refresh in the background. They refresh every time you open them.
 * In the Power BI mobile apps, you can't see Power BI Desktop (PBIX) files saved to Power BI Report Server.
-* Paginated reports (RDL) are not available while the network is offline.
+* Paginated reports (RDL) aren't available while the network is offline.
 
 ## Related content
 
