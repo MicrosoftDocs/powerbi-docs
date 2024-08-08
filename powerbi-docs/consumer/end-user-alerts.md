@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: mihart
 featuredvideoid: removed
 ms.service: powerbi
-ms.subservice: pbi-explore, pbi-fundamentals
+ms.subservice: pbi-explore; pbi-fundamentals
 ms.custom: sample-sales-and-marketing sample
 ms.search.form: Set alerts on dashboards
 ms.topic: tutorial
@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-Use this tutorial to set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. Only you receive the alerts that you set.
+Use this tutorial to set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can be set on tiles pinned from report visuals or from Power BI Q&A. Alerts can be set only on gauges, KPIs, and cards. When you set an alert, the only person who sees those alerts is you.
 
 :::image type="content" source="media/end-user-alerts/card-gauge-kpi.png" alt-text="Screenshot showing part of a dashboard that includes a tile, a card, and a KPI.":::
 
@@ -35,16 +35,16 @@ This tutorial covers the following.
 
 ## Prerequisites
 
-* A Power BI license. If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* A Power BI license. To sign in to Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 * Access to a dashboard with one of the following types of tile: gauge, KPI, or card. 
 * A semantic model that refreshes.
 
 ## Who can set alerts
 
 Alerts can be created in the Power BI service by customers with any license type. Set alerts on dashboard tiles:
-- that you created in **My workspace**.
-- that are shared with you in a [Premium reserved capacity](end-user-license.md). 
-- that are in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
+- created in **My workspace**.
+- shared with you in a [Premium reserved capacity](end-user-license.md). 
+- saved in any workspace you can access, if you have a Power BI Pro or Premium Per User (PPU) license.
 
 ## Who can see alerts I create?
 
@@ -72,7 +72,7 @@ Alerts can be set on three types of tiles (gauges, KPIs, and cards) on a Power B
 1. Select **Save and close**.
 
 ## Receiving alerts
-When the data being tracked reaches one of the thresholds you set, several things happen. First, Power BI checks to see if it's been more than an hour, or more than 24 hours (depending on the option you selected), since the last alert was sent. As long as the data is past the threshold, you get an alert.
+When the data being tracked reaches one of the thresholds you set, several things happen. First, Power BI checks to see if more than an hour has passed, or more than 24 hours (depending on the option you selected), since the last alert was sent. As long as the data is past the threshold, you get an alert.
 
 Next, Power BI sends an alert to your Notification center and, optionally, in email. Each alert contains a direct link to your data. Select the link to see the relevant tile.  
 
@@ -118,7 +118,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 * If you're unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They don't work on static data. Most of the samples supplied by Microsoft are static. 
-* The ability to receive and view shared content requires a Power BI Pro license, a Premium Per User license, or for the report to be saved in Premium reserved capacity. For more information, read [Which license do I have?](end-user-license.md).
+* The ability to receive and view shared content requires a few conditions to be met. Those conditions are that you have a Power BI Pro license, a Premium Per User license, or the report is saved in Premium reserved capacity. For more information, read [Which license do I have?](end-user-license.md).
 * Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 
