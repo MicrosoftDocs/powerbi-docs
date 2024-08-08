@@ -41,7 +41,7 @@ The Power BI service (in the browser) is available in the following 44 languages
 * Galician - galego
 * German - Deutsch
 * Greek - Ελληνικά
-* Hebrew
+* Hebrew - עברית
 * Hindi - हिंदी
 * Hungarian - magyar
 * Indonesian - Bahasa Indonesia
