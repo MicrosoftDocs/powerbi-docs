@@ -156,7 +156,7 @@ You can use Excel's refresh capabilities to update the data in the Excel workboo
 - Say you have a Power BI report that's built on a live connection to a data source, and you add other measures to the report in Power BI. If you use the Export with live connection option to export data from a visual in that report, the measures that you added won't be available in the data you export to Excel. Only measures from the data source will be available in the exported data.
 - Mac users can only use Excel for the web to explore Excel workbooks containing Power BI semantic models.
 - The column name and order in a Power BI visual may not be preserved when data is exported to Excel from that visual.
-- If the 'User Datasets Across Workspaces' tenant admin switch is off, users will need to use **Write** permissions to use the semantic model. Learn more about [using semantic models across workspaces](/power-bi/connect-data/service-datasets-admin-across-workspaces)
+- If the 'User Datasets Across Workspaces' tenant admin switch is off, users will need to use **Write** permissions to use the semantic model. Learn more about [using semantic models across workspaces](/power-bi/connect-data/service-datasets-admin-across-workspaces).
 
 ## Related content
 
