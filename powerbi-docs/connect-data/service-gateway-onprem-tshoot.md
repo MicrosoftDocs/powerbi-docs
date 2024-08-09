@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot gateways - Power BI
-description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway and Power BI. It provides potential workarounds to known issues, as well as tools to assist you.
+description: Troubleshoot issues with on-premises data gateways and Power BI. Find workarounds and tools to assist you.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 11/01/2023
+ms.date: 08/08/2024
 LocalizationGroup: Gateways 
 ---
 
@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-This article discusses some common issues when you use the on-premises data gateway with Power BI. If you encounter an issue that isn't listed here, you can use the Power BI [Community](https://community.powerbi.com) site. Or, you can create a [support ticket](https://powerbi.microsoft.com/support).
+This article discusses some common issues that might occur when you use the on-premises data gateway with Power BI. If you encounter an issue that isn't listed here, you can use the [Power BI Community site](https://community.powerbi.com). Or, you can create a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Configuration
 
@@ -26,11 +26,11 @@ At the end of configuration, the Power BI service is called again to validate th
 ## Data sources
 
 > [!NOTE]
-> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options might vary between Power BI Desktop, and **Manage gateways > Data source settings** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI. 
+> Not all data sources have dedicated articles detailing their connection settings or configuration. For many data sources and non-Microsoft connectors, connection options might vary between Power BI Desktop and the **Manage connections and gateways** configurations in the Power BI service. In such cases, the default settings provided are the currently supported scenarios for Power BI.
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
-Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see a message like the following:
+Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see a message like the one that follows:
 
 ```output
 Login failed for user 'username'.
@@ -40,9 +40,9 @@ Verify that you have the correct username and password. Also, verify that those 
 
 ### Error: Unable to Connect. Details: "Cannot connect to the database"
 
-You were able to connect to the server but not to the database that was supplied. Verify the name of the database and that the user credential has the proper permission to access that database.
+You were able to connect to the server but not to the database that was supplied. Verify the name of the database and that the username and password have the proper permission to access that database.
 
-Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see something like the following:
+Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see something like the following message:
 
 ```output
 Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
@@ -54,7 +54,7 @@ This error might occur for different reasons. Be sure to validate that you can c
 
 Within **Show details**, you can see an error code of **DM_GWPipeline_UnknownError**.
 
-You can also look in **Event Logs** > **Applications and Services Logs** > **On-premises data gateway Service** for more information.
+You can also look in **Event Logs** > **Applications and Services Logs** > **On-premises data gateway Service** for more information. See [Event logs](/data-integration/gateway/service-gateway-tshoot#event-logs) for a detailed depiction.
 
 ### Error: We encountered an error while trying to connect to \<server\>. Details: "We reached the data gateway, but the gateway can't access the on-premises data source."
 
@@ -62,13 +62,13 @@ You were unable to connect to the specified data source. Be sure to validate the
 
 Within **Show details**, you can see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
-If the underlying error message is similar to the following, this means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
+If the underlying error message is similar to the one that follows, it means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
 ```output
 The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 ```
 
-If the underlying error message is similar to the following, it could mean that the service account for Analysis Services might be missing the [token-groups-global-and-universal](/windows/win32/adschema/a-tokengroupsglobalanduniversal) (TGGAU) directory attribute.
+If the underlying error message is similar to the one that follows, it could mean that the service account for Analysis Services might be missing the [Token-Groups-Global-And-Universal](/windows/win32/adschema/a-tokengroupsglobalanduniversal) (TGGAU) directory attribute.
 
 ```output
 The username or password is incorrect.
@@ -85,7 +85,7 @@ To confirm whether the attribute is enabled, follow these steps.
    dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
    ```
 
-    You want to see something similar to the following in the results:
+    You want to see something similar to the following output in the results:
 
    ```console
    Allow BUILTIN\Windows Authorization Access Group
@@ -107,16 +107,15 @@ Make sure that your account is listed in the **Users** tab of the data source wi
 
 ### Error: You don't have any gateway installed or configured for the data sources in this dataset.
 
-Ensure that you've added one or more data sources to the gateway, as described in [Add a data source](service-gateway-data-sources.md#add-a-data-source). If the gateway doesn't appear in the admin portal under **Manage gateways**, clear your browser cache or sign out of the service and then sign back in.
+Ensure that you've added one or more data sources to the gateway, as described in [Add a data source](service-gateway-data-sources.md#add-a-data-source). If the gateway doesn't appear in the admin portal under **Manage connections and gateways**, clear your browser cache or sign out of the service and then sign back in.
 
 ### Error: Your data source can't be refreshed because the credentials are invalid. Please update your credentials and try again.
 
-You were able to connect and refresh the dataset, with no runtime errors for the connection, yet in the Power BI service this error bar appears. When the user attempts to update the credentials with known-good credentials, an error appears stating that the credentials supplied were invalid. 
+You were able to connect to and refresh the dataset with no runtime errors for the connection, yet in the Power BI service this error bar appears. When the user attempts to update the credentials with known-good credentials, an error appears stating that the credentials supplied were invalid.
 
-This error can occur when the gateway attempts a test connection, even if the credentials supplied are acceptable and the refresh operation is successful. This occurs because when the gateway performs a connection test, it does not include any optional parameters during the connection attempt, and some data connectors (such as Snowflake, for example) require optional connection parameters in order to connect.
+This error can occur when the gateway attempts a test connection, even if the credentials supplied are acceptable and the refresh operation is successful. It happens because when the gateway performs a connection test, it doesn't include any optional parameters during the connection attempt, and some data connectors, (Snowflake, for example) require optional connection parameters in order to connect.
 
-When your refresh is completing properly and you do not experience runtime errors, you can ignore these test connection errors for data sources that requires optional parameters. 
-
+When your refresh is completing properly and you don't experience runtime errors, you can ignore these test connection errors for data sources that require optional parameters.
 
 ## Semantic models
 
@@ -142,10 +141,10 @@ The exact limitation is 10 GB of uncompressed data per table. If you're hitting 
 
 ### Error: DM_GWPipeline_Gateway_SpooledOperationMissing
 
-A few different scenarios could be responsible for this error
+A few different scenarios could be responsible for this error:
 
-- Gateway process might have restarted when the dataset refresh was in progress.
-- The gateway machine is cloned where gateway is running. We should not clone gateway machine.
+- The gateway process might have restarted while the dataset refresh was in progress.
+- The gateway machine is cloned where the gateway is running. We should not clone the gateway machine.
 
 ## Reports
 
@@ -185,11 +184,11 @@ If your Microsoft Entra UPN doesn't match your local Active Directory UPN, you c
 
 ## Kerberos
 
-If the underlying database server and on-premises data gateway aren't appropriately configured for [Kerberos constrained delegation](service-gateway-sso-kerberos.md), enable [verbose logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries) on the gateway. Then, investigate based on the errors or traces in the gateway’s log files as a starting point for troubleshooting. To collect the gateway logs for viewing, see [Collect logs from the on-premises data gateway app](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
+If the underlying database server and on-premises data gateway aren't appropriately configured for [Kerberos constrained delegation](service-gateway-sso-kerberos.md), enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries) on the gateway. Then, investigate based on the errors or traces in the gateway’s log files as a starting point for troubleshooting. To collect the gateway logs for viewing, see [Collect logs from the on-premises data gateway app](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ### ImpersonationLevel
 
-The ImpersonationLevel is related to the SPN setup or the local policy setting.
+The ImpersonationLevel is related to the server principal name (SPN) setup or the local policy setting.
 
 ```
 [DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
@@ -208,12 +207,12 @@ The FailedToImpersonateUserException happens if you're unable to impersonate on 
 
 **Solution**
 
-* Verify that the configuration is correct as per the steps in the previous "ImpersonationLevel" section.
-* Ensure that the user ID it's trying to impersonate is a valid Active Directory account.
+- Verify that the configuration is correct as per the steps in the previous "ImpersonationLevel" section.
+- Ensure that the user ID it's trying to impersonate is a valid Active Directory account.
 
 ### General error: 1033 error while you parse the protocol
 
-You get the 1033 error when your external ID that's configured in SAP HANA doesn't match the sign-in if the user is impersonated by using the UPN (alias@domain.com). In the logs, you see "Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com'" at the top of the error logs, as seen here:
+You get the 1033 error when your external ID that's configured in SAP HANA doesn't match the sign-in if the user is impersonated by using the UPN (alias@domain.com). You see "Original UPN 'alias@domain.com' replaced with a new UPN 'alias@domain.com'" at the top of the error logs, as seen here:
 
 ```
 [DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com.'
@@ -221,11 +220,11 @@ You get the 1033 error when your external ID that's configured in SAP HANA doesn
 
 **Solution**
 
-* SAP HANA requires the impersonated user to use the sAMAccountName attribute in Active Directory (user alias). If this attribute isn't correct, you see the 1033 error.
+- SAP HANA requires the impersonated user to use the sAMAccountName attribute (user alias) in Active Directory. If this attribute isn't correct, you see the 1033 error.
 
     ![Attribute editor](media/service-gateway-onprem-tshoot/samaccountname-attribute.png)
 
-* In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com).
+- In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@domain.com).
 
     ![Account info in logs](media/service-gateway-onprem-tshoot/samaccount-attribute.png)
 
@@ -249,13 +248,13 @@ You get the "-10709 Connection failed" error message if your delegation isn't co
 
 **Solution**
 
-* Make sure that you have the SAP Hana server on the delegation tab in Active Directory for the gateway service account.
+- Make sure that you have the SAP HANA server on the Delegation tab in Active Directory for the gateway service account.
 
    ![Delegation tab](media/service-gateway-onprem-tshoot/delegation-ad.png)
 
 ## Export logs for a support ticket
 
-Gateway logs are required for troubleshooting and creating a support ticket. Use the following steps for extracting these logs.
+Gateway logs are required for troubleshooting and creating a support ticket. Use the following steps to extract these logs.
 
 1. Identify the gateway cluster.
 
@@ -274,39 +273,38 @@ Gateway logs are required for troubleshooting and creating a support ticket. Use
     Next, the gateway admin, who is also the administrator of the gateway system, should do the following steps:
 
     a. Sign in to the gateway machine, and then launch the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) to sign in to the gateway.
-    
-    b. Enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries).
-    
-    c. Optionally, you can [enable the performance monitoring features](/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
-    
-    d. Run the scenario for which you're trying to capture gateway logs.
-    
-    e. [Export the gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
+    b. Enable [additional logging](/data-integration/gateway/service-gateway-performance#slow-performing-queries).
+
+    c. Optionally, you can [enable the performance monitoring features](/data-integration/gateway/service-gateway-performance#enable-performance-logging) and include performance logs to provide additional details for troubleshooting.
+
+    d. Run the scenario for which you're trying to capture gateway logs.
+
+    e. [Export the gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ## Refresh history
 
-When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following steps show how you can get to the refresh history.
+When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following images show how you can get to the refresh history.
 
-1. In the Power BI nav pane, in **Semantic models**, select a dataset. Open the menu, and select **Schedule refresh**.
+On the details page for the semantic model, select **Refresh** in the ribbon, then select **Refresh history**.
 
-    ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
+  ![How to select schedule refresh](media/service-gateway-onprem-tshoot/refresh-history-1.png)
 
-2. In **Settings for...**, select **Refresh history**.
+You can also access the **Refresh history** from the semantic model settings. Select **File** in the ribbon, then select **Settings**.
 
-    ![Select refresh history](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
+  ![Select refresh history](media/service-gateway-onprem-tshoot/refresh-history-2.png)
 
-    ![Refresh history display](media/service-gateway-onprem-tshoot/refresh-history.png)
+  ![Refresh history display](media/service-gateway-onprem-tshoot/refresh-history-3.png)
 
 For more information about troubleshooting refresh scenarios, see [Troubleshoot refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
 ## Related content
 
-* [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
-* [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  
-* [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-* [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
-* [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
-* [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
+- [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
+- [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  
+- [Manage SQL Server Analysis Services data sources](service-gateway-enterprise-manage-ssas.md)  
+- [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)  
+- [Manage a SQL Server data source](service-gateway-enterprise-manage-sql.md)  
+- [Manage your data source - import and scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).

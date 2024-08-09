@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 04/15/2024
+ms.date: 08/08/2024
 LocalizationGroup: Data refresh
 ---
 
@@ -23,13 +23,13 @@ You should always ensure that basic requirements for refresh are met and verifie
 * Verify the gateway version is up to date.
 * Verify the report has a gateway selected. If there's no gateway selected, the data source might have changed or might be missing.
 
-After you confirm the requirements are met, take a look through the following sections for more troubleshooting. 
+After you confirm the requirements are met, take a look through the following sections for more troubleshooting.
 
 ## Email notifications
 
-If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate semantic models in Power BI. An admin uses the following area in the Power BI admin portal.
+If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate semantic models in Power BI. An admin uses the following area in the semantic model settings.
 
-:::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of admin area for changing Power BI email refresh notifications.":::
+:::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of the section in the semantic model settings for changing Power BI email refresh notifications.":::
 
 
 ## Refresh using Web connector doesn't work properly
@@ -47,7 +47,7 @@ Wait 10-15 minutes for a refresh to be reflected in the dashboard tiles. If it s
 
 ## GatewayNotReachable when setting credentials
 
-You might encounter a `GatewayNotReachable` error when you try to set credentials for a data source, which can be the result of an outdated gateway. Install the latest gateway and try again.
+You might encounter a `GatewayNotReachable` error when you try to set credentials for a data source, which can be the result of an outdated gateway. [Install the latest gateway](/data-integration/gateway/service-gateway-install) and try again.
 
 ## Processing Error: The following system error occurred: Type Mismatch
 
@@ -55,21 +55,21 @@ This error could be an issue with your [M script](/powerquery-m/m-spec-introduct
 
 ## Tile refresh errors
 
-For a list of errors you might encounter with dashboard tiles, and explanations, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
+For a list of errors you might encounter with dashboard tiles, and explanations, see [Troubleshoot tile errors](refresh-troubleshooting-tile-errors.md).
 
 <a name='refresh-fails-when-updating-data-from-sources-that-use-azure-ad-oauth'></a>
 
 ## Refresh fails when updating data from sources that use Microsoft Entra ID OAuth
 
-The Microsoft Entra ID (**Microsoft Entra ID**) OAuth token, used by many different data sources, expires in approximately one hour. Sometimes that token expires before the data has finished loading, since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
+The Microsoft Entra ID OAuth token, used by many different data sources, expires in approximately one hour. Sometimes that token expires before the data has finished loading, since the Power BI service waits for up to two hours when loading data. In that situation, the data loading process can fail with a credentials error.
 
 Data sources that use Microsoft Entra ID OAuth include **Microsoft Dynamics CRM Online**, **SharePoint Online** (SPO), and others. If you’re connecting to such data sources, and get a credentials failure when loading data takes more than an hour, OAuth might be the reason.
 
-Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SharePoint Online instance is so large that it runs over the two-hour data-load threshold, the Power BI service might report a data load time-out. This data load time-out also applies to other Microsoft Entra ID OAuth data sources.
+Microsoft is investigating a solution that allows the data loading process to refresh the token and continue. However, if your Dynamics CRM Online or SPO instance is so large that it runs over the two-hour data-load threshold, the Power BI service might report a data load time-out. This data load time-out also applies to other Microsoft Entra ID OAuth data sources.
 
-For refresh to work properly when connecting to a **SharePoint Online** data source by using Microsoft Entra ID OAuth, you must use the same account that you use to sign in to the **Power BI service**.
+For refresh to work properly when connecting to an **SPO** data source by using Microsoft Entra ID OAuth, you must use the same account that you use to sign in to the **Power BI service**.
 
-If you want to connect to a data source from Power BI service by using OAuth2, the data source must be in the same tenant as the Power BI service. Currently, multitenant connection scenarios aren’t supported with OAuth2.
+If you want to connect to a data source from the Power BI service by using OAuth2, the data source must be in the same tenant as the Power BI service. Currently, multitenant connection scenarios aren’t supported with OAuth2.
 
 ## Uncompressed data limits for refresh
 
@@ -77,7 +77,7 @@ The maximum size for semantic models imported into the **Power BI service** is 1
 
 ## Scheduled refresh time-out
 
-Scheduled refresh for imported semantic models time out after two hours. This time-out is increased to five hours for semantic models in **Premium** workspaces. If you encounter this limit, consider reducing the size or complexity of your semantic model, or consider refactoring the large semantic model into multiple smaller semantic models.
+Scheduled refreshes for imported semantic models time out after two hours. This time-out is increased to five hours for semantic models in Premium workspaces. If you encounter this limit, consider reducing the size or complexity of your semantic model, or consider refactoring the large semantic model into multiple smaller semantic models.
 
 ## Scheduled refresh disabled
 
@@ -105,7 +105,7 @@ If you get the **Container exited unexpectedly with code 0x0000DEAD** error, try
 
 ## Refresh operation throttled by Power BI Premium
 
-A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. Throttling can occur in Power BI Premium capacities. When a refresh operation is canceled, the following error messages are logged into the refresh history:
+A Premium capacity might throttle data refresh operations when too many semantic models are being processed concurrently. [Throttling](/fabric/enterprise/throttling) can occur in Power BI Premium capacities. When a refresh operation is canceled, the following error messages are logged into the refresh history:
 
 *You've exceeded the capacity limit for semantic model refreshes. Try again when fewer semantic models are being processed.*
  
@@ -123,7 +123,7 @@ This error indicates a system error in Power BI Premium based on semantic models
 
 ## Dataflows or datamart failures in Premium workspaces
 
-Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you may receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
+Some connectors aren't supported for dataflows and datamarts in Premium workspaces. When using an unsupported connector, you might receive the following error: *Expression.Error: The import "<"connector name">"* matches no exports. Did you miss a module reference?
 
 The following connectors aren't supported for dataflows and datamarts in Premium workspaces:
 
@@ -148,18 +148,17 @@ The following connectors aren't supported for dataflows and datamarts in Premium
 * StarburstPresto
 * TibcoTdv
 
-The use of the previous list of connectors with dataflows or datamarts is only supported workspaces that are not Premium.
+The use of the previous list of connectors with dataflows or datamarts is only supported in workspaces that are not Premium.
 
 ## There was a problem refreshing the dataflow, the gateway version you are using is not supported
 
-This error occurs if the version of the on-premises data gateway being used to refresh your dataflow (Gen1 or Gen2) is out of support. Currently Microsoft supports only the [last six versions of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates). Update your gateway to the latest version, or a supported version to resolve this issue. Use the [update an on-premises data gateway](/data-integration/gateway/service-gateway-update) article for guidance on updating gateways.
-
-
+This error occurs if the version of the on-premises data gateway being used to refresh your dataflow (Gen1 or Gen2) is out of support. Currently Microsoft supports only the [last six versions of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates). Update your gateway to the latest version, or to a supported version to resolve this issue. Use the [update an on-premises data gateway](/data-integration/gateway/service-gateway-update) article for guidance on updating gateways.
 
 ## Related content
 
-- [Data refresh in Power BI](refresh-data.md)  
-- [Troubleshoot the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-- [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+* [Data refresh in Power BI](refresh-data.md)  
+* [Configure scheduled refresh](refresh-scheduled-refresh.md)
+* [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  
+* [Troubleshooting the Power BI gateway (personal mode)](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/).

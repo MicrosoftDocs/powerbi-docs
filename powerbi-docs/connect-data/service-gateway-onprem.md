@@ -1,15 +1,16 @@
 ---
 title: On-premises data gateway
-description: This article is an overview of the on-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data.
+description: This article provides an overview of the on-premises data gateway and its functionality in Microsoft cloud services.
 author: arthiriyer
 ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
+ms.topic: concept-article
 LocalizationGroup: Gateways
-ms.date: 05/28/2024
+ms.date: 08/08/2024
 ms.custom: intro-overview
+#customer intent: As a Power BI user, I want to understand the purpose and functionality of the on-premises data gateway so that I can securely transfer and use on-premises data in various Microsoft cloud services.
 ---
 
 # What is an on-premises data gateway?
@@ -17,6 +18,8 @@ ms.custom: intro-overview
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services. These cloud services include Power BI, PowerApps, Power Automate, Azure Analysis Services, and Azure Logic Apps. By using a gateway, organizations can keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in cloud services.
+
+This article will help you understand the purpose and functionality of the on-premises data gateway so you can securely transfer and use on-premises data in various Microsoft cloud services. Keep reading to learn about how to bridge the gap between on-premises data and cloud services.
 
 ## How the gateway works
 
@@ -28,11 +31,11 @@ For more information on how the gateway works, see [On-premises data gateway arc
 
 There are three different types of gateways, each for a different scenario:
 
-* **On-premises data gateway**: Allows multiple users to connect to multiple on-premises data sources. With a single gateway installation, you can use an on-premises data gateway with all supported services. This gateway is well-suited to complex scenarios in which multiple people access multiple data sources.
+* **On-premises data gateway**: Allows multiple users to connect to multiple on-premises data sources. With a single gateway installation, you can use an on-premises data gateway with all supported services. This gateway is well suited to complex scenarios in which multiple people access multiple data sources.
 
-* **On-premises data gateway (personal mode)**: Allows one user to connect to sources and can’t be shared with others. An on-premises data gateway (personal mode) can only be used with Power BI. This gateway is well-suited to scenarios in which you’re the only person who creates reports, and you don't need to share any data sources with others.
+* **On-premises data gateway (personal mode)**: Allows one user to connect to sources and can’t be shared with others. An on-premises data gateway (personal mode) can only be used with Power BI. This gateway is well suited to scenarios in which you’re the only person who creates reports, and you don't need to share any data sources with others.
 
-* **Virtual network data gateway**: Allows multiple users to connect to multiple data sources secured using virtual networks. No installation is required because it's a Microsoft managed service. This gateway is well-suited to complex scenarios in which multiple people access multiple data sources.
+* **Virtual network data gateway**: Allows multiple users to connect to multiple data sources secured using virtual networks. No installation is required because it's a Microsoft managed service. This gateway is well suited to complex scenarios in which multiple people access multiple data sources.
 
 ## Use a gateway
 
@@ -50,4 +53,3 @@ There are five main steps for using a gateway:
 * [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
- 
