@@ -82,7 +82,6 @@
               "**/*.md": [
                  "show_binary_rating"
               ]
-          }
     },
     "template": [],
     "dest": "powerbi-docs",
