@@ -64,6 +64,25 @@
               "**/*.md": [
                  "show_binary_rating"
               ]
+          },
+          "ms.subservice": {
+              "collaborate-share/**/*.md": "pbi-collaborate-share",
+              "connect-data/**/*.md": "pbi-data-sources",
+              "consumer/**/*.md": "pbi-explore",
+              "create-reports/**/*.md": "pbi-reports-dashboards",
+              "developer/**/*.md": "powerbi-developer",
+              "enterprise/**/*.md": "powerbi-admin",
+              "fundamentals/**/*.md": "pbi-fundamentals",
+              "guidance/**/*.md": "powerbi-admin",
+              "guided-learning/**/*.md": "*",
+              "learning-catalog/**/*.md": "*",
+              "natural-language/**/*.md": "powerbi-ai",
+              "paginated-reports/**/*.md": "pbi-reports-dashboards",
+              "report-server/**/*.md": "powerbi-report-server",
+              "support/**/*.md": "powerbi-admin",
+              "transform-model/**/*.md": "pbi-transform-model",
+              "troubleshoot/**/*.md": "*",
+              "visuals/**/*.md": "pbi-visuals"
           }
     },
     "template": [],
