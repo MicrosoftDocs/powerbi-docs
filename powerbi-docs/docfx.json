@@ -88,6 +88,6 @@
     "dest": "powerbi-docs",
     "markdownEngineName": "markdig",
     "xrefService": [ "https://xref.learn.microsoft.com/query?uid={uid}" ]
+    }
   }
-}
 }
