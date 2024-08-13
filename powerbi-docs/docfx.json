@@ -77,7 +77,8 @@
               "support/**/*.md": "powerbi-admin",
               "transform-model/**/*.md": "pbi-transform-model",
               "troubleshoot/**/*.md": "*",
-              "visuals/**/*.md": "pbi-visuals",
+              "visuals/**/*.md": "pbi-visuals"
+          },
           "featureFlags": {
               "**/*.md": [
                  "show_binary_rating"
