@@ -42,7 +42,7 @@ The Power BI service runs in a browser.
 
 1. Enter your Microsoft 365 account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code sent to your email or mobile device.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="A screenshot that shows an Enter password dialog box.":::
+    :::image type="content" source="media/end-user-sign-in/power-bi-passes.png" alt-text="A screenshot that shows an Enter password dialog box.":::
 
     Sometimes, your administrator assigns you a license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this email account for your sign-in.
 
