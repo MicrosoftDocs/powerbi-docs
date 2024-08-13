@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 LocalizationGroup: Connect to data
 #customer intent: As a Power BI user, I want to understand DirectQuery in Power BI, as well as its limitations and implications, so that I can make informed decisions on when to use DirectQuery or other data connectivity options.
 ---
@@ -47,11 +47,11 @@ If you can't meet your goals by importing data, for example, if the data changes
 
 Power BI import and DirectQuery capabilities evolve over time. Changes that provide more flexibility when using imported data let you import more often, and eliminate some of the drawbacks of using DirectQuery. Regardless of improvements, the performance of the underlying data source is a major consideration when using DirectQuery. If an underlying data source is slow, using DirectQuery for that source remains infeasible.
 
-The following sections cover the three options for connecting to data: import, DirectQuery, and live connection. The remainder of the article focuses on DirectQuery.
+The following sections cover these three options for connecting to data: import, DirectQuery, and live connection. The remainder of the article focuses on DirectQuery.
 
 ### Import connections
 
-When you connect to a data source like SQL Server and import data in Power BI Desktop, the following connectivity conditions are established:
+When you connect to a data source like SQL Server and import data in Power BI Desktop, the following connectivity conditions are present:
 
 - When you initially use **Get data**, each set of tables you select defines a query that returns a set of data. You can edit those queries before loading the data, for example, to apply filters, aggregate the data, or join different tables.
 
@@ -311,7 +311,7 @@ When you define the model, follow this guidance:
 
 - **Experiment with setting *Assume referential integrity*.** The **Assume referential integrity** setting on relationships enables queries to use `INNER JOIN` rather than `OUTER JOIN` statements. This guidance generally improves query performance, although it depends on the specifics of the data source.
 
-- **Don't use the relative data filtering in Power Query Editor.** It's possible to define relative date filtering in Power Query Editor. For example, you can filter to the rows where the date is in the last 14 days.
+- **Don't use the relative date filtering in Power Query Editor.** It's possible to define relative date filtering in Power Query Editor. For example, you can filter to the rows where the date is in the last 14 days.
   
   ![Screenshot that shows filtering rows for the last 14 days.](media/desktop-directquery-about/directquery-about_02.png)
   

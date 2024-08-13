@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 LocalizationGroup: Data refresh
 ---
 
@@ -30,7 +30,6 @@ After you confirm the requirements are met, take a look through the following se
 If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email, or an email list you're subscribed to, from the appropriate semantic models in Power BI. An admin uses the following area in the semantic model settings.
 
 :::image type="content" source="media/refresh-troubleshooting-refresh-scenarios/refresh-email.png" alt-text="Screenshot of the section in the semantic model settings for changing Power BI email refresh notifications.":::
-
 
 ## Refresh using Web connector doesn't work properly
 

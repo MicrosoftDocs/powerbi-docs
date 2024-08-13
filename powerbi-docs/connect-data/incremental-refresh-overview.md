@@ -7,12 +7,12 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 #customer intent: As a Power BI user, I want to learn how to configure and use incremental refresh in Power BI to capture fast-moving data, so that I can improve the performance of model refreshes and reduce resource consumption.
 ---
 # Incremental refresh and real-time data for semantic models
 
-Incremental refresh and real-time data for semantic models in Power BI provide efficient ways to handle fast-moving data and improve model refresh performance. By automating partition creation and management, incremental refresh reduces the amount of data that needs to be refreshed and allows for the inclusion of real-time data. This article explains how to configure and use incremental refresh features in Power BI to capture fast-moving data and enhance performance.
+Incremental refresh and real-time data for semantic models in Power BI provide efficient ways to handle dynamic data and improve model refresh performance. By automating partition creation and management, incremental refresh reduces the amount of data that needs to be refreshed and allows for the inclusion of real-time data. This article explains how to configure and use incremental refresh features in Power BI to capture fast-moving data and enhance performance.
 
 Incremental refresh extends scheduled refresh operations by providing automated partition creation and management for semantic model tables that frequently load new and updated data. For most models, one or more tables contain transaction data that changes often and can grow exponentially, like a fact table in a relational or star database schema. An incremental refresh policy to partition the table, refreshing only the most recent import partitions, and optionally using another DirectQuery partition for real-time data can significantly reduce the amount of data that has to be refreshed. At the same time, this policy ensures that the latest changes at the data source are included in the query results.
 

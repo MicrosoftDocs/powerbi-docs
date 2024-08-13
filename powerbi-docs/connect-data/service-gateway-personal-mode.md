@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 LocalizationGroup: Gateways
 #customer intent: As a Power BI user, I want to understand how to use a personal gateway in Power BI so that I can easily and securely connect to on-premises data.
 ---

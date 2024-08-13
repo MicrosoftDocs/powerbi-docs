@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -184,9 +184,6 @@ You have the following options:
 - Choose an enterprise data gateway with the required data source definition.
 - Deploy a personal data gateway.
 
-> [!NOTE]
-> You can find a list of data source types that require a data gateway in the article [Manage your data source - import and scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
-
 #### Using an enterprise data gateway
 
 Microsoft recommends using an enterprise data gateway instead of a personal gateway to connect a semantic model to an on-premises data source. Make sure the gateway is properly configured, which means the gateway must have the latest updates and all required data source definitions. A data source definition provides Power BI with the connection information for a given source, including connection endpoints, authentication mode, and credentials. For more information about managing data sources on a gateway, see [Manage your data source - import and scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
@@ -355,7 +352,7 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 
 ## Semantic model refresh history
 
-Refresh attempts for Power BI semantic models might not always go smoothly, or might take longer than expected. You can use the **Refresh history** page to help you diagnose why a refresh might not have happened as you expected.
+Refresh attempts for Power BI semantic models might not always go smoothly, or they might take longer than expected. You can use the **Refresh history** page to help you diagnose why a refresh might not have happened as you expected.
 
 Power BI automatically makes multiple attempts to refresh a semantic model if it experiences a refresh failure. Without insight into refresh history activities, it might just seem like a refresh is taking longer than expected. With the **Refresh history** page, you can see those failed attempts and gain insight into the reason for the failure.
 
@@ -414,7 +411,7 @@ Checking the refresh history of your semantic models regularly is one of the mos
 In addition, consider the following recommendations to establish and maintain reliable data refresh processes for your semantic models:
 
 - Schedule your refreshes for less busy times, especially if your semantic models are on Power BI Premium. If you distribute the refresh cycles for your semantic models across a broader time window, you can help avoid peaks that might otherwise overtax available resources. Delays starting a refresh cycle are an indicator of resource overload. If a Premium capacity is exhausted, Power BI might even skip a refresh cycle.
-- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/LiveConnect mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode semantic model. You should also be aware that DirectQuery/LiveConnect mode has several limitations, such as a one-million-row limit for returning data and a 225-seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For large data volumes, consider the use of [aggregations in Power BI](../enterprise/aggregations-auto.md).
+- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/LiveConnect mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode semantic model. You should also be aware that DirectQuery/LiveConnect mode has several limitations, such as a one million-row limit for returning data and a 225-seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For large data volumes, consider the use of [aggregations in Power BI](../enterprise/aggregations-auto.md).
 - Verify that your semantic model refresh time doesn't exceed the maximum refresh duration. Use Power BI Desktop to check the refresh duration. If it takes more than two hours, consider moving your semantic model to Power BI Premium. Your semantic model might not be refreshable on shared capacity. Also consider using [incremental refresh](../connect-data/incremental-refresh-overview.md) for semantic models that are larger than 1 GB or that take several hours to refresh.
 - Optimize your semantic models to include only those tables and columns that your reports and dashboards use. Optimize your mashup queries and, if possible, avoid dynamic data source definitions and expensive DAX calculations. Specifically avoid DAX functions that test every row in a table because of the high memory consumption and processing overhead.
 - Apply the same privacy settings as in Power BI Desktop to ensure that Power BI can generate efficient source queries. Keep in mind that Power BI Desktop does not publish privacy settings. You must manually reapply the settings in the data source definitions after publishing your semantic model.

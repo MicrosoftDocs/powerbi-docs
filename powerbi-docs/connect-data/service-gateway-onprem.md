@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: concept-article
 LocalizationGroup: Gateways
-ms.date: 08/08/2024
+ms.date: 08/13/2024
 ms.custom: intro-overview
 #customer intent: As a Power BI user, I want to understand the purpose and functionality of the on-premises data gateway so that I can securely transfer and use on-premises data in various Microsoft cloud services.
 ---
