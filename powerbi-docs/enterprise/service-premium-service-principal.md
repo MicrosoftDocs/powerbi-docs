@@ -54,8 +54,6 @@ Before you can start using service principals in Power BI, an admin must enable 
 1. Enter the group name.
 1. Select **Apply**.
 
-:::image type="content" source= "media/service-premium-service-principal/admin-portal-2.png" alt-text="Screenshot that shows the Admin portal with tenant settings selected. Allow service principals to use Power BI APIs is expanded with enabled highlighted. ":::
-
 ## Workspace access
 
 In order for your service principal to have the necessary permissions to perform Premium workspace and semantic model operations, you must add the service principal as a workspace Member or Admin. Using workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](/rest/api/power-bi/groups/addgroupuser).
@@ -65,8 +63,6 @@ In order for your service principal to have the necessary permissions to perform
     ![Screenshot that shows a list of workspaces. The more icon and workspace access are highlighted.](media/service-premium-service-principal/workspace-access.png)
 
 2. Search by application name and then add the service principal as an **Admin** or **Member** to the workspace.
-
-    ![Screenshot that shows the access dialog showing a service principal name. Admin is selected.](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## Connection strings for the XMLA endpoint
 
