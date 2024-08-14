@@ -5,7 +5,7 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
-ms.subservice: developer
+ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.date: 08/13/2024
 ---
