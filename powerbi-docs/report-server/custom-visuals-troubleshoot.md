@@ -61,7 +61,7 @@ To get around the issue, use one of the solutions mentioned in this article.
 
 ## SQL Server certificate isn't trusted on the client
 
-When establishing a connection to an on-premises SQL Server using the on-premises data gateway or Power BI Desktop and the SQL Server utilizes a self-signed certificate, it's possible that the refresh operation for a Fabric semantic model or dataflow can fail with the following error message:
+When establishing a connection to an on-premises SQL Server using Power BI Desktop or Power BI Report Server and the SQL Server utilizes a self-signed certificate, it's possible that the refresh operation for a Fabric semantic model or dataflow can fail with the following error message:
 
 ```Microsoft SQL: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)```
 
