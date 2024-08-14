@@ -8,7 +8,7 @@ description: Learn how to create a support ticket for Fabric and Power BI, depen
 author: royrubinstein
 ms.author: mihart
 ms.service: powerbi
-ms.subservice: powberbi-admin
+ms.subservice: powerbi-admin
 # ms.prod: # To use ms.prod, uncomment it and delete ms.service
 ms.topic: troubleshooting 
 ms.date: 08/13/2024
