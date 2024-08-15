@@ -53,7 +53,7 @@ landingContent:
           - text: Are there any service-wide outages
             url: https://support.powerbi.com
           - text: Is this problem a known issue?
-            url: ../troubleshoot/known-issues/power-bi-known-issues.md
+            url: ../troubleshoot/known-issues/power-bi-known-issues.md ?
           - text: Look for an answer in the Community forum
             url: https://community.powerbi.com
           - text: Tips for getting answers to your Power BI questions
