@@ -20,7 +20,7 @@ This article is for administrators and explains how to purchase paid user licens
 > [!NOTE]
 >The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
 
-To learn about license types, see [Licensing for Fabric and Power BI](/power-bi/fundamentals/service-features-license-type).
+To learn about license types, including Pro and Premium Per User (PPU), see [Licensing for Fabric and Power BI](/power-bi/fundamentals/service-features-license-type).
 
 ## Prerequisites
 
