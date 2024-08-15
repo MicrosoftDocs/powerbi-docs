@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 03/12/2024
+ms.date: 08/14/2024
 LocalizationGroup: Get started
 ---
 
@@ -20,7 +20,7 @@ This article is for Power BI business user who are signing in to the Power BI se
 
 ## Power BI accounts
 
-Before you can sign in to the Power BI service, you need an account and a license. There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that have been purchased and allocated for their employees. 
+Before you can sign in to the Power BI service, you need an [account and a license](end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that have been purchased and allocated for their employees. 
 
 ## Sign in for the first time
 
