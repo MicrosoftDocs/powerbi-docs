@@ -232,7 +232,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 **Date slicer using the original table**
 
 1. In the Data pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
+1. In the Visualizations pane, choose **Slicer**. 
 
     Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer. 
 
@@ -243,12 +243,12 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 **Date slicer using the DAX table**
 
 1. In the Data pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
-3. In the Data section of the Visualizations pane, select the drop-down in **Data**. Remove Quarter and Day so only Year and Month are left. 
+1. In the Visualizations pane, choose **Slicer**. 
+1. In the Data section of the Visualizations pane, select the drop-down in **Data**. Remove Quarter and Day so only Year and Month are left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy.":::
 
-4. Expand each year and resize the visual, so all months are visible.
+1. Expand each year and resize the visual, so all months are visible.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
