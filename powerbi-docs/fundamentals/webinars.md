@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 12/21/2022
+ms.date: 18/15/2024
 ---
 # Power BI :::no-loc text="webinars":::
 [//]: # "Tatevik Tatero (tatevik.teroyan@simple-concepts.com) and Anna Khachatryan (v-annakh) are vendors who work with Chauncy Freels and help to maintain this list of webinars"
@@ -161,10 +161,6 @@ by Kim Manis and Lukasz Pawlowski
 ## On-demand webinars
 
 Watch recorded sessions at any time.
-
-Leverage Microsoft 365 sensitivity labels to improve your Power BI deployment compliance and protect sensitive business data
-<br>by Anton Fritz (Principal Program Manager, Power BI R&D) and Igor Bekerman (Microsoft 365 CxE)  
-[Register to watch](/microsoft-365/compliance/sensitivity-labels)
 
 Explore the total economic impact of Microsoft Power BI  
 by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting  
