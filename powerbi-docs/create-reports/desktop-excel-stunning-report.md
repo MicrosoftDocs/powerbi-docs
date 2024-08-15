@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 05/30/2024
+ms.date: 08/14/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -154,7 +154,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 ## Build your report 
 
-Now that you've transformed and loaded your data, it's time to create your report. In the Data pane on the right, you see the fields in the data model you created. 
+Now that you've transformed and loaded your data, it's time to create your report. In the left rail, select **Report view**. In the Data pane on the right, you see the fields in the data model you created. 
 
 Let’s build the final report, one visual at a time. 
 
