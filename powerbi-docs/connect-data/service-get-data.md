@@ -49,7 +49,7 @@ To import files:
 
 1. Go to the workspace to which you want to import the files. Select **New** and then **Semantic model**:
 
-   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu.":::
+   :::image type="content" source="media/service-get-data/new-menu.png ?" alt-text="Screenshot that shows the New menu.":::
    
 1. Select **Excel** or **CSV**. You can also paste or manually enter data.
 
