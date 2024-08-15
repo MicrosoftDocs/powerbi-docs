@@ -7,15 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 05/28/2024
+ms.date: 08/13/2024
 LocalizationGroup: Gateways
+#customer intent: As a Power BI user, I want to understand how to use a personal gateway in Power BI so that I can easily and securely connect to on-premises data.
 ---
 
 # Use a personal gateway in Power BI
 
 [!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
-The on-premises data gateway (personal mode) is a version of the on-premises data gateway that works only with Power BI. You can use a personal gateway to install a gateway on your own computer and get access to on-premises data.
+The on-premises data gateway (personal mode) is a version of the on-premises data gateway that works only with Power BI. You can use a personal gateway to install a gateway on your own computer and get access to on-premises data. This article provides information on how to use a personal gateway in Power BI to easily and securely connect to on-premises data.
 
 > [!NOTE]
 > Each Power BI user can have only one personal mode gateway running. If the same user installs another personal mode gateway, even on a different computer, the most recent installation replaces the existing previous installation.
@@ -71,7 +72,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
 
 ## Frequently asked questions (FAQ)
 
-- **Question:** Can you run the on-premises data gateway (personal mode) side-by-side with the on-premises data gateway that used to be called the Enterprise gateway?
+- **Question:** Can you run the on-premises data gateway (personal mode) side by side with the on-premises data gateway that used to be called the Enterprise gateway?
   
   **Answer:** Yes, both gateways can run simultaneously.
 
@@ -87,7 +88,7 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
   
   **Answer:** Many situations can trigger a request for credentials. The most common scenario is that you reinstalled the on-premises data gateway (personal mode) on a different machine than your original Power BI personal gateway. There could also be an issue in the data source, or Power BI failed to make a test connection, or a timeout or system error occurred.
   
-  To update your credentials in the Power BI service, select the gear icon in the header and then choose **Settings**. On the **Semantic models** tab, select the dataset, and then choose **Data source credentials**.
+  To update your credentials in the Power BI service, open the semantic model settings and choose **Data source credentials**.
 
 - **Question:** How long is a personal gateway offline during an upgrade?
   
@@ -99,8 +100,8 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whe
 
 ## Related content
 
-* [Add or remove a gateway data source](service-gateway-data-sources.md)
-* [Configure proxy settings for an on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
-* [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
+- [Add or remove a gateway data source](service-gateway-data-sources.md)
+- [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
+- [Power BI implementation planning: Data gateways](../guidance/powerbi-implementation-planning-data-gateways.md)
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).
