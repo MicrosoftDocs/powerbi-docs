@@ -122,7 +122,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
  ### Create a new table
  
-1. Now select the **Data** view on the left.
+1. Now select the **Table view** icon on the left.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
 
@@ -144,7 +144,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
     :::image type="content" source="media/desktop-excel-stunning-report/calendar-result.png" alt-text="Screenshot of the calendar you created with the DAX expression.":::
    
-1. Now select **Model** view on the left. 
+1. Now select **Model view** on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
