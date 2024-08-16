@@ -182,7 +182,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     Power BI updates the column chart to show profit by the two years.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart." lightbox="media/desktop-excel-stunning-report/power-bi-column-year.png":::
 
 1. In the **Add data to your visual** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
@@ -190,11 +190,11 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     Power BI updates the column chart to show profit for each month.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month." lightbox="media/desktop-excel-stunning-report/power-bi-column-month.png":::
 
 1. In the Visualizations pane, change the visualization type to **Line chart**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screenshot of changing column to bar chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screenshot of changing column to line chart.":::
 
     Now you can easily see that December 2014 had the most profit.
 
@@ -207,7 +207,7 @@ Create a map to see which country/region had the highest profits.
 
     Power BI creates a map visual with bubbles representing the relative profit of each location. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart." lightbox="media/desktop-excel-stunning-report/power-bi-map-visual.png":::
 
     Europe seems to be performing better than North America. 
 
