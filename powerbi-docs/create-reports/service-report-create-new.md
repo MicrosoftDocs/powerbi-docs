@@ -27,7 +27,7 @@ This method of creating a report starts with a file and a blank report canvas. I
 
 1. In the navigation pane, select **My Workspace**. Then select **New** > **Semantic model**.
 
-    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of the Power BI service, highlighting New and Semantic model.":::
+    :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png"? alt-text="Screenshot of the Power BI service, highlighting New and Semantic model.":::
 
 1. Select **Excel**.
 
