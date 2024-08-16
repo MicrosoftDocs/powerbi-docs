@@ -190,7 +190,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     Power BI updates the column chart to show profit for each month.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-month.png" alt-text="Screenshot of column chart by month.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month.":::
 
 1. In the Visualizations pane, change the visualization type to **Line chart**. 
 
