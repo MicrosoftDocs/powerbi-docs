@@ -20,7 +20,7 @@ This article explains how to create *workspaces*, spaces to collaborate with col
 
 ## Create a workspace
 
-1. Select **Workspaces** > **Create workspace**.
+1. Select **Workspaces** > **New workspace**.
    
      ![Screenshot of Create workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
 
