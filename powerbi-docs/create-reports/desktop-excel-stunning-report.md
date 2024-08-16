@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 08/14/2024
+ms.date: 08/16/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -156,7 +156,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 Now that you've transformed and loaded your data, it's time to create your report. In the left rail, select **Report view**. 
 
-:::image type="content" source="media/desktop-excel-stunning-report/report-view-icon.png" alt-text="Screenshot of relationship between Date fields.":::
+:::image type="content" source="media/desktop-excel-stunning-report/report-view-icon.png" alt-text="Screenshot of Report view icon.":::
 
 In the Data pane on the right, you see the fields in the data model you created. 
 
