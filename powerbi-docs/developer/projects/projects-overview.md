@@ -30,12 +30,6 @@ Saving your work as a project has the following benefits:
 
 - **Continuous Integration and Continuous Delivery (CI/CD)** - You can use systems where developers in your organization submit a proposed change to the CI/CD system. The system then validates the change with a series of *quality gates* before applying the change to the production system. These quality gates can include code reviews by other developers, automated testing, and automated build to validate the integrity of the changes. CI/CD systems are typically built on top of existing source control systems. To learn more, see [DevOps - Continuous integration](/devops/develop/what-is-continuous-integration), and [DevOps - Continuous delivery](/devops/deliver/what-is-continuous-delivery).
 
-## Video
-
-See Power BI Desktop projects and other developer mode features being introduced at Microsoft Build 2023.
-
-> [!VIDEO https://www.youtube.com/embed/OdkS7DF7ElY?start=277]
-
 ## Enable preview features
 
 Saving as a Power BI Project in Power BI Desktop is currently in **preview**, and you must enable it in **Preview features**.

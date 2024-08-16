@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 06/20/2024
-ms.custom: video-zIZPA0UrJyA, sample-Sales-and-Marketing
+ms.custom: video-removed, sample-Sales-and-Marketing
 LocalizationGroup: Create reports
 ---
 
@@ -21,15 +21,6 @@ With the **relative date slicer** or **relative date filter**, you can apply tim
 :::image type="content" source="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png" alt-text="Screenshot showing a sales report and a relative date slicer with the date slicer called out." lightbox="media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png":::
 
 If you want to share your report with a Power BI colleague, you both must have individual Power BI Pro licenses or the report must be saved in Premium capacity.
-
-## Video
-
-In this video, Will walks through creating a date range slicer.
-
-> [!NOTE]
-> This video uses earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/zIZPA0UrJyA]
 
 ## Create the relative date range slicer
 
