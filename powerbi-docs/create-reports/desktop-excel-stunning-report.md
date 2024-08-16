@@ -162,7 +162,7 @@ In the Data pane on the right, you see the fields in the data model you created.
 
 Let’s build the final report, one visual at a time. 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of relationship between Date fields." lightbox="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of all the elements of the report, by number." lightbox="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png":::
 
 ### Visual 1: Add a title 
 
