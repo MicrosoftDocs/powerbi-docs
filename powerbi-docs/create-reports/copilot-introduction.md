@@ -130,7 +130,7 @@ In Power BI Desktop and the Power BI service, you can use Copilot for Power BI t
 
 Copilot can also use the measures and columns in your semantic model to help you explore your data in new ways. As you ask questions about your reports and datasets, Copilot checks if the answer can be found in the report visuals. If existing visuals don't answer the question, Copilot then builds a visual for you.
 
-Requests Copilot can help you with include:
+Here are the sorts of requests that Copilot can help you with:
 
 - Can I see this measure filtered to a different region or span of time?
 - What are the top categories by a certain metric?
