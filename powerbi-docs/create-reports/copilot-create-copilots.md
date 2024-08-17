@@ -53,8 +53,6 @@ If you don't want users in your organization to have access to the preview toggl
 
 See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for more information about what features are available in preview.
 
-## Considerations and limitations
-
 [!INCLUDE [copilot-considerations](../includes/copilot-considerations.md)]
 
 ## Send feedback
