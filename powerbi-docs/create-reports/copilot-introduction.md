@@ -19,7 +19,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Copilot for Microsoft Fabric is generally available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. You can also create your own Copilots to help your coworkers with their tasks.
 
-Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric.md).
+Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
 This article provides an overview of the Copilot capabilities for Power BI.
 
@@ -28,7 +28,7 @@ This article provides an overview of the Copilot capabilities for Power BI.
 
 ## Before you start using Copilot
 
-For optimized results using Copilot for Power BI, you may need to do some clean-up work on your semantic model. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data) to see if you need to modify your semantic model so that Copilot can get insights from it.
+For optimized results using Copilot for Power BI, you may need to do some clean-up work on your semantic model. Read the article [Update your data model to work well with Copilot](copilot-evaluate-data.md) to see if you need to modify your semantic model so that Copilot can get insights from it.
 
 For answers to common questions related to data security and privacy to help your organization get started with Copilot for Fabric, see the articles in the Fabric documentation:
 
@@ -50,9 +50,8 @@ Read more about using [Copilot in the Power BI service](copilot-create-report-se
 
 ## Create your own Copilots
 
-You can create your own Copilots for your organization. See the documentation for [Azure AI Search](https://learn.microsoft.com/shows/azure/azure-search.md) to get started.
 
-You can create your own Copilots for your organization. See the documentation for [Azure AI Search](/shows/azure/azure-search.md) to get started.
+You can create your own Copilots for your organization. See the documentation for [Azure AI Search](/shows/azure/azure-search) to get started.
 
 ## Copilot requirements
 

@@ -35,7 +35,7 @@ For answers to common questions related to data security and privacy to help you
 
 ## Create your own Copilots
 
-You can create your own Copilots for your organization. See the documentation for [Azure AI Search](/azure/search/search-what-is-azure-search.md) to get started.
+You can create your own Copilots for your organization. See the documentation for [Azure AI Search](/azure/search/search-what-is-azure-search) to get started.
 
 ## Copilot requirements
 
