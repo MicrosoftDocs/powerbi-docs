@@ -19,7 +19,7 @@ ms.collection: ce-skilling-ai-copilot
 
 Copilot for Microsoft Fabric is generally available in Power BI. Copilot helps you use the transformational power of generative AI to get the most from your data. You can also create your own Copilots to help your coworkers with their tasks.
 
-Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
+Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric.md).
 
 This article provides an overview of the Copilot capabilities for Power BI.
 
