@@ -79,7 +79,7 @@
               "natural-language/**/*.md": "powerbi-ai",
               "paginated-reports/**/*.md": "pbi-reports-dashboards",
               "report-server/**/*.md": "powerbi-report-server",
-              "support/**/*.md": "admin",
+              "support/**/*.md": "*",
               "transform-model/**/*.md": "pbi-transform-model",
               "troubleshoot/**/*.md": "*",
               "visuals/**/*.md": "pbi-visuals"
