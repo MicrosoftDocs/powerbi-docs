@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 08/16/2024
+ms.date: 08/19/2024
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -109,6 +109,8 @@ The following list provides the minimum requirements to run Power BI Desktop:
 ## Considerations and limitations
 
 We want your experience with Power BI Desktop to be great. If you run into any issues with Power BI Desktop, this section contains solutions, or suggestions to address these issues.
+
+Power BI Desktop doesn't support running with a system account because WebView2 doesn't support system accounts. Running Power BI Desktop using a system account may cause this error: "Microsoft Edge can't read and write to its data directory."
 
 ### Use command-line options during installation
 
