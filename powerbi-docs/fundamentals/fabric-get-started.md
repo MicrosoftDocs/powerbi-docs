@@ -37,9 +37,9 @@ We start by creating a lakehouse to store our data, Dataflows Gen2 to prepare an
 
 ---
 
-1. Navigate to your workspace and select **New**. Then select **Show all**.
+1. Navigate to your workspace and select **New**. Then select **More options**.
 
-    :::image type="content" source="media/fabric-get-started/show-all-items.png" alt-text="Screenshot of the Show all option in the new item menu.":::
+    :::image type="content" source="media/fabric-get-started/show-all-item.png" alt-text="Screenshot of More options in the new item menu.":::
 
 1. In the **New** item creation screen, select **Lakehouse** under the Data engineering category.
 
