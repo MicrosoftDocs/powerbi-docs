@@ -5,7 +5,7 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
-ms.subservice:
+ms.subservice: powerbi-developer
 ms.topic: concept-article
 ms.date: 05/31/2024
 #customer intent: As a Power BI developer, I want to learn how to use Git integration with Power BI Desktop projects so that I can streamline my development processes, source control, and collaboration with Git repositories.

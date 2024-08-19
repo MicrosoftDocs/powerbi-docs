@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: how-to
-ms.date: 01/08/2024
+ms.date: 08/16/2024
 LocalizationGroup: Get started
 ---
 # Get Power BI Desktop
@@ -174,6 +174,10 @@ Some users might encounter an error message similar to the following message whe
 *We weren't able to restore the saved database to the model*.
 
 Updating to the current version of Power BI Desktop usually resolves this issue.
+
+### Other issues
+
+Power BI Desktop doesn't support running with a system account because WebView2 doesn't support system accounts. Running Power BI Desktop using a system account may result in the error: "Microsoft Edge can't read and write to its data directory."
 
 ### Disable notifications
 
