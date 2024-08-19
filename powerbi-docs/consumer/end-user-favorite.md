@@ -40,7 +40,7 @@ You have several options for viewing your favorites.
 
 1. To see all the content that you added as favorites, on the **Browse** pane, select the **Favorites** tab.
 
-   :::image type="content" source="./media/end-user-favorite/power-bi-browse.png" alt-text="Screenshot of the Home page with the Favorites tab highlighted.":::
+   :::image type="content" source="./media/end-user-favorite/power-bi-browse.png" alt-text="Screenshot of the Home page with the Favorites tab highlighted."::: ?
 
    From here, you can take action. You can open a favorite, identify owners, and even share favorites with your colleagues.
 
