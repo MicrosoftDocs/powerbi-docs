@@ -1,5 +1,5 @@
 ---
-title: "Create paginated reports that you can export in the Power BI service"
+title: "Create paginated reports that you can export in the Power BI service(Preview)"
 description: In this article, you learn how to create a paginated report using the interactive editor in the Power BI service, and then export it.
 author: maggiesMSFT
 ms.author: maggies
