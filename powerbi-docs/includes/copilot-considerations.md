@@ -24,4 +24,4 @@ We're continuously working to improve the quality of the report pages, including
 - Copilot can't make layout changes. For example, if you tell Copilot to resize the visuals, or to align all the visuals perfectly, it won't work.
 - Copilot can't understand complex intent. For example, suppose you frame a prompt like: "Generate a report to show incidents by team, incident type, owner of the incident, and do this for only 30 days." This prompt is complex, and Copilot will probably generate irrelevant visuals.
 - Copilot doesn't produce a message for the skills that it doesn't support. For example, if you ask Copilot to edit or add a slicer, it doesn't complete the instruction successfully, as mentioned above. Unfortunately, it *doesn't* give an error message either.
-- Read [Update your data model to work well with Copilot](copilot-evaluate-data) for more tips. 
+- Read [Update your data model to work well with Copilot](/create-reports/copilot-evaluate-data.md) for more tips. 
