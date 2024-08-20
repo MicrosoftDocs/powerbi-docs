@@ -39,7 +39,7 @@ You can create your own Copilots for your organization. See the documentation fo
 
 ## Copilot requirements
 
-See Copilot requirements in the [Overview of Copilot for Power BI](copilot-introduction) article.
+See Copilot requirements in the [Overview of Copilot for Power BI](copilot-introduction.md#copilot-requirements) article.
 
 ## Copilot preview features
 
