@@ -20,11 +20,8 @@ Now, you can personalize your data visualization experience to match your prefer
 ## Several themes are available
 
 - **Default**: The classic white theme that is currently standard for the desktop application.
-
 - **Dark**: The newly introduced dark theme that transforms your desktop application with a darker interface.
-
 - **Light**: A fresh white theme with updated stylings for a more modern look.
-
 - **Use system setting**: Adapts the theme based on your Windows system settings.
 
 ## Choose a theme
