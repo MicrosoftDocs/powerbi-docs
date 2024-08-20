@@ -39,7 +39,7 @@ You can create your own Copilots for your organization. See the documentation fo
 
 ## Copilot requirements
 
-[!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
+See Copilot requirements in the [Overview of Copilot for Power BI](copilot-introduction) article.
 
 ## Copilot preview features
 
@@ -53,7 +53,7 @@ If you don't want users in your organization to have access to the preview toggl
 
 See [Use Copilot preview features in Power BI](copilot-preview-toggle.md) for more information about what features are available in preview.
 
-[!INCLUDE [copilot-considerations](../includes/copilot-considerations.md)]
+See Copilot requirements in [Overview of Copilot for Power BI](copilot-introduction.md#copilot-requirements).
 
 ## Send feedback
 
