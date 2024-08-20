@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 05/30/2024
+ms.date: 08/16/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of finished Power BI report."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of finished Power BI report." lightbox="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png"::: 
 
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
@@ -47,7 +47,7 @@ You can get the data for this tutorial using one of two methods.
 
 When you open Power BI Desktop, select **Try a sample semantic model** from the blank canvas.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample semantic model on the canvas."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample semantic model on the canvas." lightbox="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png"::: 
 
 If you've landed on this tutorial from Power BI Desktop, go ahead and choose **Load data**.
 
@@ -68,7 +68,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Select the **Financials** table, and choose **Transform Data**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data." lightbox="media/desktop-excel-stunning-report/power-bi-financial-navigator.png"::: 
 
 1. Select the **Units Sold** column. On the **Transform** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
 
@@ -108,7 +108,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 1. On the **Home** ribbon, select **New measure**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/desktop-new-measure-icon.png" alt-text="Screenshot of New measure icon on the Home ribbon." lightbox="media/desktop-excel-stunning-report/desktop-new-measure-icon.png":::
 
 1. Type this expression to add all the numbers in the Units Sold column.
 
@@ -122,7 +122,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
  ### Create a new table
  
-1. Now select the **Data** view on the left.
+1. Now select the **Table view** icon on the left.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon.":::
 
@@ -144,7 +144,7 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
     :::image type="content" source="media/desktop-excel-stunning-report/calendar-result.png" alt-text="Screenshot of the calendar you created with the DAX expression.":::
    
-1. Now select **Model** view on the left. 
+1. Now select **Model view** on the left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon.":::
 
@@ -154,11 +154,15 @@ Writing *measures* and creating *tables* in the *DAX* formula language is super 
 
 ## Build your report 
 
-Now that you've transformed and loaded your data, it's time to create your report. In the Data pane on the right, you see the fields in the data model you created. 
+Now that you've transformed and loaded your data, it's time to create your report. In the left rail, select **Report view**. 
+
+:::image type="content" source="media/desktop-excel-stunning-report/report-view-icon.png" alt-text="Screenshot of Report view icon.":::
+
+In the Data pane on the right, you see the fields in the data model you created. 
 
 Let’s build the final report, one visual at a time. 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of all the elements of the report, by number.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of all the elements of the report, by number." lightbox="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png":::
 
 ### Visual 1: Add a title 
 
@@ -178,19 +182,19 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     Power BI updates the column chart to show profit by the two years.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart." lightbox="media/desktop-excel-stunning-report/power-bi-column-year.png":::
 
 1. In the **Add data to your visual** section of the Visualizations pane, select the drop-down in the **X-axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
 
     Power BI updates the column chart to show profit for each month.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month." lightbox="media/desktop-excel-stunning-report/power-bi-column-month.png":::
 
 1. In the Visualizations pane, change the visualization type to **Line chart**. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screentshot of changing column to bar chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screenshot of changing column to line chart.":::
 
     Now you can easily see that December 2014 had the most profit.
 
@@ -203,7 +207,7 @@ Create a map to see which country/region had the highest profits.
 
     Power BI creates a map visual with bubbles representing the relative profit of each location. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart.":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart." lightbox="media/desktop-excel-stunning-report/power-bi-map-visual.png":::
 
     Europe seems to be performing better than North America. 
 
@@ -220,7 +224,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 1. Drag the chart so it's wide enough to fill the space under the two upper charts.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-expanded.png":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png":::
 
     Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
@@ -302,7 +306,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 Here's how your final polished report will look:  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of final, formatted report.":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of final, formatted report." lightbox="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png":::
 
 In summary, this report answers your manager’s top questions: 
 

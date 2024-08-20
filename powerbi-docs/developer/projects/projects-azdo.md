@@ -13,7 +13,7 @@ ms.date: 08/13/2024
 
 # Power BI Desktop projects Azure DevOps integration
 
-> [!IMPORTANT]
+> [!NOTE]
 > Power BI Desktop projects is currently in **preview**.
 
 Microsoft Power BI Desktop projects enable developer collaboration by connecting your local Git repo to a remote Git host, like Azure DevOps.
