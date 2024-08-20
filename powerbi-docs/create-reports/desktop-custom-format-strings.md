@@ -180,7 +180,7 @@ The following table identifies characters you can use to create **user-defined n
 
 ## Considerations and limitations
 
-- You can't set a custom ormat string for fields that are of type string or boolean.
+- You can't set a custom format string for fields that are of type string or boolean.
 
 ## Related content
 
