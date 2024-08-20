@@ -1,8 +1,8 @@
 ---
 title: Dark mode is now in Power BI Desktop
-description: Learn how to create, format, and show Power BI report views that are optimized for mobile device users.
-author: paulinbar
-ms.author: painbar
+description: Learn how to Power BI Desktop allows you to choose from a variety of themes, including dark mode.
+author: maggieMSFT
+ms.author: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
