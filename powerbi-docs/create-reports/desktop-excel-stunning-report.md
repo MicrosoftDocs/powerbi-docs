@@ -224,7 +224,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 1. Drag the chart so it's wide enough to fill the space under the two upper charts.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of a line chart." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
     It looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
