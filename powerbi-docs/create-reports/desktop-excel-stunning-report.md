@@ -226,7 +226,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png":::
 
-    Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
+    It looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
 ### Visual 5: Year slicer 
 
