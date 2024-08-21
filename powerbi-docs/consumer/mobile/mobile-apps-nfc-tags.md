@@ -29,6 +29,8 @@ What is NFC
 
 For frontline workers - could be used for inventory management, manufacturing, healthcare...
 Different scenarios - an item per NFC tag, set of items (app, workspace, folder) in the entrance of a floor.
+Use apps to share multiple items
+Workspace example
 
 Personas:
 Someone sets up the tag
