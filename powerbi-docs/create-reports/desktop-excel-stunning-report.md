@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service." lightbox="media/desktop-excel-stunning-report/power-bi-excel-report-service.png"::: 
 
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
