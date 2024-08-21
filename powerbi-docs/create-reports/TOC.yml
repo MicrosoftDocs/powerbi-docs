@@ -134,6 +134,8 @@
           href: copilot-ask-data-question.md
         - name: Copilot preview toggle
           href: copilot-preview-toggle.md
+        - name: Create Copilots for your coworkers
+          href: copilot-create-copilots.md
         - name: Copilot for Fabric and Power BI
           items: 
           - name: Copilot in Fabric overview
