@@ -45,7 +45,7 @@ Power BI reports, dashboards, apps, scorcards, workspaces, and folders.
     The * Power BI mobile app must be installed on the device.
     * On Android devices, the NFC setting must be enabled.
 
-## Register
+## Register an item on an NFC tag
 
 To enable users to be able to open a report by tapping their devices on an NFC tag, you have to register the report on the tag.
 
@@ -68,8 +68,7 @@ To enable users to be able to open a report by tapping their devices on an NFC t
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-start-scanning.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
 
-
-## Read an NFC tag Access data via an NFC tag
+## Read an NFC tag to access an item
 
 To read the NFC tag, tap the tag with your device.
 
