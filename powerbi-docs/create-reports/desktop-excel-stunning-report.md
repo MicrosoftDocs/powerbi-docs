@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: tutorial
-ms.date: 08/16/2024
+ms.date: 08/20/2024
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of finished Power BI report." lightbox="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png"::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service." lightbox="media/desktop-excel-stunning-report/power-bi-excel-report-service.png"::: 
 
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
@@ -224,9 +224,9 @@ Create a bar chart to determine which companies and segments to invest in.
 
 1. Drag the chart so it's wide enough to fill the space under the two upper charts.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png" alt-text="Screenshot of a clustered column chart." lightbox="media/desktop-excel-stunning-report/power-bi-clustered-column-chart-inline.png":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of a line chart." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
-    Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
+    It looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
 
 ### Visual 5: Year slicer 
 
@@ -236,7 +236,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 **Date slicer using the original table**
 
 1. In the Data pane, select the **Date** field in the Financials table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
+1. In the Visualizations pane, choose **Slicer**. 
 
     Slicer is the icon with a funnel next to a tab, but without the small lightning bolt. Power BI automatically creates a numeric range slicer. 
 
@@ -247,18 +247,18 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 **Date slicer using the DAX table**
 
 1. In the Data pane, select the **Date** field in the Calendar table. Drag it to the blank area on the left of the canvas. 
-2. In the Visualizations pane, choose **Slicer**. 
-3. In the Data section of the Visualizations pane, select the drop-down in **Data**. Remove Quarter and Day so only Year and Month are left. 
+1. In the Visualizations pane, choose **Slicer**. 
+1. In the Data section of the Visualizations pane, select the drop-down in **Data**. Remove Quarter and Day so only Year and Month are left. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy.":::
 
-4. Expand each year and resize the visual, so all months are visible.
+1. Expand each year and resize the visual, so all months are visible.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer.":::
 
     We'll use this slicer in the finished report.
 
-Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
+Now if your manager asks to see just 2013 data, you can use the slicer to select years, or specific months of each year.
 
 ### Extra credit: Format the report
 
@@ -306,7 +306,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 Here's how your final polished report will look:  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of final, formatted report." lightbox="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of final, formatted report." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
 In summary, this report answers your manager’s top questions: 
 
