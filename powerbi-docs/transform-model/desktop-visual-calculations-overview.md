@@ -173,7 +173,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 | [:::no-loc text="RUNNINGSUM":::](/dax/runningsum-function-dax) | Adds a running sum on an axis. | `RunningSumSales = :::no-loc text="RUNNINGSUM":::([Sales Amount])` | [WINDOW](/dax/window-function-dax) |
 
 ## Formatting visual calculations
-
+ 
 You can format a visual calculation using a visual level format string. Use the **Data format** options in the Properties section of the formatting pane for your visual to set the format:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage using the format code #,#%.":::
