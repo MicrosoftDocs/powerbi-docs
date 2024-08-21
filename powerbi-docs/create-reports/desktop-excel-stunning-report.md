@@ -306,7 +306,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 Here's how your final polished report will look:  
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of final, formatted report." lightbox="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png" alt-text="Screenshot of final, formatted report." lightbox="media/desktop-excel-stunning-report/power-bi-line-column-chart-inline.png":::
 
 In summary, this report answers your manager’s top questions: 
 
