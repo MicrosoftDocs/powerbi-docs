@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 12/2/2022
+ms.date: 08/21/2024
 LocalizationGroup: Create reports
 ---
 # Use custom format strings in Power BI Desktop
