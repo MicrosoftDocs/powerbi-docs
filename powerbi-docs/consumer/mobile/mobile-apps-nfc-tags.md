@@ -45,7 +45,12 @@ Power BI reports, dashboards, apps, scorcards, workspaces, and folders.
     The * Power BI mobile app must be installed on the device.
     * On Android devices, the NFC setting must be enabled.
 
-## Register 
+## Register
+
+To enable users to be able to open a report by tapping their devices on an NFC tag, you have to register the report on the tag.
+
+> [!NOTE]
+> When you register an item on an NFC tag, anything previously registered on the tag will be overwritten.
 
 1. Launch the Power BI mobile app and open the view you want to register on the NFC tag.
 
@@ -53,17 +58,20 @@ Power BI reports, dashboards, apps, scorcards, workspaces, and folders.
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-option.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
 
+1. On the **Register on NFC tag** screen that appears, select your desired options and then tap **Start scanning NFC tag**.
 
+    * **Register in full screen**: When users tap their devices on the tag, the registered item will open in full-screen mode. 
+    * **Register this report in its current state** (this option is only available for reports): When users tap their devices on the tag, the report will open in the state you set up.
 
+        > [!NOTE]
+        > The current state is preserved for 180 days. If the tag isn't read within this period, this "current state" is forgotten and the report will open in the state it opens in in the Power BI service. Every time the tag is read, the current state (if any) is renewed for another 180 days.
 
+    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-start-scanning.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
 
-
-> [!NOTE]
-> When registering an item on an NFC tag, anything that was previously on the tag will be overwritten.
->
-> Current state for reports is saved for 180 days if the tag is not read - exact details TBD
 
 ## Read an NFC tag Access data via an NFC tag
+
+To read the NFC tag, tap the tag with your device.
 
 iOS read flow - possibly Android as well
 * Device setting to use NFC needs to be open in Android
