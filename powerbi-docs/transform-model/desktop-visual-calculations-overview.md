@@ -228,4 +228,3 @@ The following articles may be useful when learning and using visual calculations
 * [:::no-loc text="OFFSET"::: DAX function](/dax/offset-function-dax)
 * [:::no-loc text="INDEX"::: DAX function](/dax/index-function-dax)
 * [:::no-loc text="ORDERBY"::: DAX function](/dax/orderby-function-dax)
-
