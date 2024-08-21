@@ -160,7 +160,7 @@ Visual calculations also introduce a set of functions specific to visual calcula
 
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
-| [:::no-loc text="COLLAPSE":::](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | `Percent of parent = DIVIDE([Sales Amount], :::no-loc text="COLLAPSE":::([Sales Amount], :::no-loc text="ROWS":::))` | N/A |
+| [COLLAPSE](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | `Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS))` | N/A |
 | [:::no-loc text="COLLAPSEALL":::](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | `Percent of grand total = DIVIDE([Sales Amount], :::no-loc text="COLLAPSEALL":::([Sales Amount], :::no-loc text="ROWS":::))` | N/A |
 | [:::no-loc text="EXPAND":::](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | `Average of children = :::no-loc text="EXPAND":::(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::)` | N/A |
 | [:::no-loc text="EXPANDALL":::](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | `Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::)` | N/A |
