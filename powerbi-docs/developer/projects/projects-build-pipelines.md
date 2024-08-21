@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 02/17/2024
+ms.date: 08/13/2024
 ---
 
 # Power BI Project (PBIP) and Azure DevOps build pipelines for validation
