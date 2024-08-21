@@ -258,7 +258,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 
     We'll use this slicer in the finished report.
 
-Now if your manager asks to see just 2013 data, you can use either slicer to select years, or specific months of each year.
+Now if your manager asks to see just 2013 data, you can use the slicer to select years, or specific months of each year.
 
 ### Extra credit: Format the report
 
