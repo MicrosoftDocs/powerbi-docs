@@ -34,7 +34,7 @@ Since visual calculations aren't in the model, they can't have a format string s
 | Visual | Selected visual | Measures, Columns, Visual Calculations |
 | Model | All visuals, all pages, all reports on the same model | Measures, Columns |
 
-:::image type="diagram" source="media/desktop-custom-format-strings/custom-format-strings-levels.png" alt-text="Diagram showing the three levels of format strings available (model, visual, element). It shows that visual calculations can only have visual and element level format strings, while measures and columns can have format strings on all levels." lightbox="media/desktop-custom-format-strings/custom-format-strings-levels-larger.png":::
+:::image type="image" source="media/desktop-custom-format-strings/custom-format-strings-levels.png" alt-text="Diagram showing the three levels of format strings available (model, visual, element). It shows that visual calculations can only have visual and element level format strings, while measures and columns can have format strings on all levels." lightbox="media/desktop-custom-format-strings/custom-format-strings-levels-larger.png":::
 
 The element level format string is only available to specific visuals and data labels at this time.
 
