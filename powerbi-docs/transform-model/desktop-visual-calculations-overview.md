@@ -9,6 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 02/16/2024
 LocalizationGroup: Model your data
+no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
 # Using visual calculations (preview)
 
