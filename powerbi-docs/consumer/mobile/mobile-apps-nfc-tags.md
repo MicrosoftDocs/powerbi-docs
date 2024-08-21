@@ -34,16 +34,30 @@ Personas:
 Someone sets up the tag
 Readers
 
+What can you register
+Power BI reports, dashboards, apps, scorcards, workspaces, and folders.
+
 ## Requirements
 
-* Hardware requirements - High quality NFC tags that are NDEF compatible. Minimum memory requirement is 504 bytes
-* Users need to check if their device is compatible to work with NFC. Only compatible devices will see the NFC feature. can read Near Field Communication (NFC) tags of types 1 through 5 that contain data in the NFC Data Exchange Format (NDEF).
-* Device setting to use NFC needs to be open in Android
-* To read Power BI content via NFC tags, the Power BI mobile app must be installed on the device.
+* NFC tags: High quality NFC tags that are compatible with the NFC Data Exchange Format (NDEF). Minimum memory required: 504 bytes.
+* Mobile device:
+    * Mobile devices must be compatible to work with NFC and be able to read tags of types 1 through 5 that contain data in NDEF. Only compatible devices can see the Power BI mobile app NFC feature.
+    The * Power BI mobile app must be installed on the device.
+    * On Android devices, the NFC setting must be enabled.
 
 ## Register 
-Open and filter the report to the desired state.
-Hold the device close to the tag and then select More options... > Registers
+
+1. Launch the Power BI mobile app and open the view you want to register on the NFC tag.
+
+1. Hold the device close to the tag, select the options menu, and tap **Register on an NFC tag (preview)**.
+
+    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-option.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
+
+
+
+
+
+
 > [!NOTE]
 > When registering an item on an NFC tag, anything that was previously on the tag will be overwritten.
 >
@@ -52,6 +66,7 @@ Hold the device close to the tag and then select More options... > Registers
 ## Read an NFC tag Access data via an NFC tag
 
 iOS read flow - possibly Android as well
+* Device setting to use NFC needs to be open in Android
 
 ## Related content
 
