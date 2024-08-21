@@ -18,9 +18,32 @@ With custom format strings in **Power BI Desktop**, you can customize how fields
 
 ![Screenshot of Power BI desktop in Modeling view, highlighting Custom in the Format dropdown menu.](media/desktop-custom-format-strings/custom-format-strings-01.png)
 
+Format strings exist on three levels:
+
+-	**Model**. You can set a format string for fields in the model or use a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) to format your measure. Anywhere you use that field the format string is applied, unless overridden by a visual or element level format string. 
+-	**Visual**. You can set format strings on any column, measure, or visual calculation that is on your visual, even if they already had a format string. In that case the model level format string is overridden, and the visual level format string is used. If you change the aggregation on a field, which invalidates a previously set visual level format string, the format string is removed. Visual level format strings for fields are persisted for fields, but not for visual calculations. If you set a visual level format string on a field and then remove and readd that field to the same visual, the visual level format string is reinstated. In contrast, for a visual calculation, the format string isn't reinstated. 
+-	**Element**. You can set a format string for data labels and for specific elements of the new card and the new slicer visuals. This level will be expanded to include more in the future. Any format string you set here overrides the format string set on the visual and model level.
+
+These levels are hierarchical, with the model level being the lowest level and the element level the highest. A format string defined on a column, measure, or visual calculation on a higher level overrides what was defined on a lower level. 
+
+Since visual calculations aren't in the model, they can't have a format string set on the model level but can on the visual, or element level. Measures and columns can have format strings on all three levels:
+
+| **Level** | **Impacts** | **Available for**|
+| --- | --- | --- |
+| Element | Selected element of the selected visual | Measures, Columns, Visual Calculations |
+| Visual | Selected visual | Measures, Columns, Visual Calculations |
+| Model | All visuals, all pages, all reports on the same model | Measures, Columns |
+
+![Diagram showing the three levels of format strings available (model, visual, element. It also shows that visual calculations can only have visual and element level format strings, while measures and columns can have format strings on all levels.](media/desktop-custom-format-strings/custom-format-strings-levels.png)
+
+The element level format string is only available to specific visuals and data labels at this time.
+
 ## How to use custom format strings
 
-To create custom format strings, select the field in the **Modeling** view, and then select the dropdown arrow under **Format** in the **Properties** pane.
+To use custom format strings, you first need to decide which level you're going to work on: Model, Visual or Element.
+
+### Add a model level format string
+To create custom format strings in the model, select the field in the **Modeling** view, and then select the dropdown arrow under **Format** in the **Properties** pane.
 
 ![Screenshot of the Properties pane, highlighting the Format menu.](media/desktop-custom-format-strings/custom-format-strings-02.png)
 
@@ -28,9 +51,26 @@ Once you've selected **Custom** from the **Format** dropdown menu, choose from a
 
 ![Screenshot of the Formatting menu, highlighting Custom.](media/desktop-custom-format-strings/custom-format-strings-03.png)
 
+### Add a visual level format string
+To create a visual level format string, first add the field or [visual calculation](../transform-model/desktop-visual-calculations-overview.md) to your visual. Then, with your visual selected, open the format pane and go to the **General** section of the format pane. Find the **Format data** settings and configure the format string there:
+
+![Screenshot of the Format pane for a visual, showing the Data format settings in the General section.](media/desktop-custom-format-strings/custom-format-strings-visual-level-format-string.png)
+
+> [!NOTE]
+> For now, you will need to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead of a [VBA format string](#supported-custom-format-syntax). This is a temporary issue that will be resolved in a future release.
+
+### Add an element level format string
+To create an element level format string, open the format pane and find the format string sections for the element you want to set the format on. Keep in mind that not all elements support format strings. To set a format string on a data label, open the **Visual** section of the format pane, set **Data Labels** > **Value** > **Display units** to custom and enter the format code:
+
+![Screenshot of the Format pane for a visual, showing the Value format settings for Data Labels in the Visual section.](media/desktop-custom-format-strings/custom-format-strings-element-level-format-string.png)
+
+
 ## Supported custom format syntax
 
 Custom format strings follow the VBA style syntax, common to Excel and other Microsoft products, but they don't support all syntax used in other products.
+
+> [!NOTE]
+> For now, visual level format strings require you to enter a [.NET format string](/dotnet/standard/base-types/formatting-types#format-strings-and-net-types) instead. This is a temporary issue that will be resolved in a future release.
 
 The following tables define the syntax supported in Power BI.
 
@@ -137,6 +177,10 @@ The following table identifies characters you can use to create **user-defined n
 | **- + $**  ( ) | Display a literal character. To display a different character, precede it with a backslash (\\) or enclose it in double quotation marks (" "). |
 | ( **\\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\\). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\\\). Date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :) can't be displayed as literal characters, the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &, <, >, and !). |
 | ("ABC") | Display the string inside the double quotation marks (" "). |
+
+## Considerations and limitations
+
+- You can't set a custom format string for fields that are of type string or boolean.
 
 ## Related content
 
