@@ -7,7 +7,7 @@ ms.reviewer: chwade
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: concept-article
-ms.date: 08/13/2024
+ms.date: 08/20/2024
 #customer intent: As a Power BI user, I want to learn how to configure and use incremental refresh in Power BI to capture fast-moving data, so that I can improve the performance of model refreshes and reduce resource consumption.
 ---
 # Incremental refresh and real-time data for semantic models
@@ -151,9 +151,6 @@ For *very large* models in Premium capacities that likely contain billions of ro
 ### Current date and time
 
 By default, the current date and time is determined based on Coordinated Universal Time (UTC) at the time of refresh. For on-demand and scheduled refreshes, you can configure a different time zone under 'Refresh' that will be taken into account when determining the current date and time. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone configured determines the current date and time based on Pacific Time, not UTC, which would return the next day. 
-
-> [!NOTE]
-> The time zone configuration is taken into account even if the scheduled refresh is disabled.
 
 :::image type="content" source="media/incremental-refresh-overview/time-zone.png" alt-text="Screenshot of Scheduled refresh dialog showing the Time zone input field":::
 
