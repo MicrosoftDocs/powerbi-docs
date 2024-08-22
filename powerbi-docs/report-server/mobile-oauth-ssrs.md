@@ -71,6 +71,9 @@ For more information, see [Modify a Reporting Services Configuration File](/sql/
 
 You need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
+> [!IMPORTANT]
+> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. Customers will have to upgrade their ADFS server to Windows Service 2019 or later, or use Microsoft Entra application proxy.
+
 ### Create an application group
 
 Within the AD FS Management screen, you want to create an application group for Reporting Services that includes information for the Power BI Mobile apps.
