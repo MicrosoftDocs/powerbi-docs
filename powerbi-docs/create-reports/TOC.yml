@@ -72,6 +72,8 @@
       href: desktop-home.md
     - name: Power BI modern ribbon
       href: desktop-ribbon.md
+    - name: Power BI dark mode
+      href: power-bi-dark-mode.md
     - name: Optimize ribbon in Power BI Desktop
       items:
       - name: Optimize ribbon overview
