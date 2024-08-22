@@ -56,11 +56,14 @@ To enable a report server to use Kerberos authentication, you need to configure 
 
 For more information, see [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) and [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
-## 2. Configure Active Directory Federation Services (AD FS)
+## 2. Configure Active Directory Federation Services (ADFS)
 
-You need to configure AD FS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
+You need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
-On the AD FS server, using AD FS Management App, complete these steps.
+> [!IMPORTANT]
+> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. Customers will have to upgrade their ADFS server to Windows Server 2019 or later, or use Microsoft Entra application proxy.
+
+On the ADFS server, using ADFS Management App, complete these steps.
 
 1. Right-click **Relying Party Trusts** > **Add Relying Party Trust**.
 
