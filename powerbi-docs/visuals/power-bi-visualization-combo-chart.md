@@ -4,7 +4,7 @@ description: This tutorial about combo charts explains when to use them and how 
 author: miguelmyersMS
 ms.author: miguelmyers
 ms.reviewer: 'mihart'
-ms.custom: video-lnv66cTZ5ho, pbibetadocbug, sample-Retail-Analysis
+ms.custom: video-removed, pbibetadocbug, sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual

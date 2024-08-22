@@ -20,7 +20,6 @@ With *grouping* in **Power BI Desktop**, you can group visuals together in your 
 
 ![Screenshot showing Using grouping.](media/desktop-grouping-visuals/grouping-visuals-01.png)
 
-
 ## Create groups
 
 To create a group of visuals in Power BI Desktop, select the first visual from the canvas, then holding the CTRL button, click one or more additional visuals that you want in the group. In the **Format** menu, select **Group**, and from the submenu select **Group**.
@@ -64,7 +63,7 @@ You can also apply a background color to a group using the **Formatting** sectio
 
 ![Screenshot showing background color for groups.](media/desktop-grouping-visuals/grouping-visuals-background-color.png)
 
-Once you apply a background color, clicking on the space between visuals in the group selects the group (compare this to clicking on the white space between visuals in a group, which doesn't select the group). 
+Once you apply a background color, clicking on the space between visuals in the group selects the group (compare this to clicking on the white space between visuals in a group, which doesn't select the group).
 
 ## Considerations and limitations
 
@@ -72,13 +71,5 @@ Once you apply a background color, clicking on the space between visuals in the 
 
 ## Related content
 
-For more information about grouping, take a look at the following video:
-
-* [Grouping in Power BI Desktop - video](https://youtu.be/sf4n7VXoQHY?t=10)
-
-You might also be interested in the following articles:
-
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
-
-
