@@ -9,6 +9,7 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 02/16/2024
 LocalizationGroup: Model your data
+no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
 # Using visual calculations (preview)
 
@@ -131,7 +132,7 @@ Many functions have an optional **:::no-loc text="Reset":::** parameter that is 
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
 * A numerical value, referring to the fields on the axis, with the highest field being one.
 
-To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as `RUNNINGSUM([Sales Amount], :::no-loc text="HIGHESTPARENT")` or `RUNNINGSUM([Sales Amount], 1)` returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as `RUNNINGSUM([Sales Amount], :::no-loc text="LOWESTPARENT":::)` or `RUNNINGSUM([Sales Amount], 2)` returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as `RUNNINGSUM([Sales Amount])` does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
+To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as `RUNNINGSUM([Sales Amount], :::no-loc text="HIGHESTPARENT":::)` or `RUNNINGSUM([Sales Amount], 1)` returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as `RUNNINGSUM([Sales Amount], :::no-loc text="LOWESTPARENT":::)` or `RUNNINGSUM([Sales Amount], 2)` returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as `RUNNINGSUM([Sales Amount])` does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
 
 ## :::no-loc text="Axis"::: and :::no-loc text="Reset"::: vs ORDERBY and PARTITIONBY
 
@@ -159,21 +160,21 @@ Visual calculations also introduce a set of functions specific to visual calcula
 
 | Function | Description | Example | Shortcut to |
 | --- | --- | --- | --- |
-| [:::no-loc text="COLLAPSE":::](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | `Percent of parent = DIVIDE([Sales Amount], :::no-loc text="COLLAPSE":::([Sales Amount], :::no-loc text="ROWS":::))` | N/A |
-| [:::no-loc text="COLLAPSEALL":::](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | `Percent of grand total = DIVIDE([Sales Amount], :::no-loc text="COLLAPSEALL":::([Sales Amount], :::no-loc text="ROWS":::))` | N/A |
-| [:::no-loc text="EXPAND":::](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | `Average of children = :::no-loc text="EXPAND":::(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::)` | N/A |
-| [:::no-loc text="EXPANDALL":::](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | `Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), :::no-loc text="ROWS":::)` | N/A |
-| [:::no-loc text="FIRST":::](/dax/first-function-dax) | Refers to the first row of an axis. | `ProfitVSFirst = [Profit] – :::no-loc text="FIRST":::([Profit])` | [INDEX(1)](/dax/index-function-dax) |
-| [:::no-loc text="ISATLEVEL":::](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | `IsFiscalYearAtLevel = :::no-loc text="ISATLEVEL":::([Fiscal Year])` | N/A |
-| [:::no-loc text="LAST":::](/dax/last-function-dax) | Refers to the last row of an axis. | `ProfitVSLast = [Profit] – :::no-loc text="LAST":::([Profit])` | [INDEX(-1)](/dax/index-function-dax) |
-| [:::no-loc text="MOVINGAVERAGE":::](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | `MovingAverageSales = :::no-loc text="MOVINGAVERAGE":::([Sales Amount], 2)` | [WINDOW](/dax/window-function-dax) |
-| [:::no-loc text="NEXT":::](/dax/next-function-dax) | Refers to a next row of an axis. | `ProfitVSNext = [Profit] – :::no-loc text="NEXT":::([Profit])` | [OFFSET(1)](/dax/offset-function-dax) |
-| [:::no-loc text="PREVIOUS":::](/dax/previous-function-dax) | Refers to a previous row of an axis. | `ProfitVSPrevious = [Profit] – :::no-loc text="PREVIOUS":::([Profit])` | [OFFSET(-1)](/dax/offset-function-dax) |
-| [:::no-loc text="RANGE":::](/dax/range-function-dax) | Refers to a slice of rows of an axis. | `AverageSales = AVERAGEX(:::no-loc text="RANGE":::(1), [Sales Amount])` | [WINDOW](/dax/window-function-dax) |
-| [:::no-loc text="RUNNINGSUM":::](/dax/runningsum-function-dax) | Adds a running sum on an axis. | `RunningSumSales = :::no-loc text="RUNNINGSUM":::([Sales Amount])` | [WINDOW](/dax/window-function-dax) |
+| [COLLAPSE](/dax/collapse-function-dax) | Calculation is evaluated at a higher level of the axis. | `Percent of parent = DIVIDE([Sales Amount], COLLAPSE([Sales Amount], ROWS))` | N/A |
+| [COLLAPSEALL](/dax/collapseall-function-dax) | Calculation is evaluated at the total level of the axis. | `Percent of grand total = DIVIDE([Sales Amount], COLLAPSEALL([Sales Amount], ROWS))` | N/A |
+| [EXPAND](/dax/expand-function-dax) | Calculation is evaluated at a lower level of the axis. | `Average of children = EXPAND(AVERAGE([Sales Amount]), ROWS)` | N/A |
+| [EXPANDALL](/dax/expandall-function-dax) | Calculation is evaluated at the leaf level of the axis. | `Average of leaf level = EXPANDALL(AVERAGE([Sales Amount]), ROWS)` | N/A |
+| [FIRST](/dax/first-function-dax) | Refers to the first row of an axis. | `ProfitVSFirst = [Profit] – FIRST([Profit])` | [INDEX(1)](/dax/index-function-dax) |
+| [ISATLEVEL](/dax/isatlevel-function-dax) | Reports whether a specified column is present at the current level. | `IsFiscalYearAtLevel = ISATLEVEL([Fiscal Year])` | N/A |
+| [LAST](/dax/last-function-dax) | Refers to the last row of an axis. | `ProfitVSLast = [Profit] – LAST([Profit])` | [INDEX(-1)](/dax/index-function-dax) |
+| [MOVINGAVERAGE](/dax/movingaverage-function-dax) | Adds a moving average on an axis. | `MovingAverageSales = MOVINGAVERAGE([Sales Amount], 2)` | [WINDOW](/dax/window-function-dax) |
+| [NEXT](/dax/next-function-dax) | Refers to a next row of an axis. | `ProfitVSNext = [Profit] – NEXT([Profit])` | [OFFSET(1)](/dax/offset-function-dax) |
+| [PREVIOUS](/dax/previous-function-dax) | Refers to a previous row of an axis. | `ProfitVSPrevious = [Profit] – PREVIOUS([Profit])` | [OFFSET(-1)](/dax/offset-function-dax) |
+| [RANGE](/dax/range-function-dax) | Refers to a slice of rows of an axis. | `AverageSales = AVERAGEX(RANGE(1), [Sales Amount])` | [WINDOW](/dax/window-function-dax) |
+| [RUNNINGSUM](/dax/runningsum-function-dax) | Adds a running sum on an axis. | `RunningSumSales = RUNNINGSUM([Sales Amount])` | [WINDOW](/dax/window-function-dax) |
 
 ## Formatting visual calculations
-
+ 
 You can format a visual calculation using a visual level format string. Use the **Data format** options in the Properties section of the formatting pane for your visual to set the format:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage using the format code #,#%.":::
@@ -224,8 +225,8 @@ The following articles may be useful when learning and using visual calculations
 
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
 * [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
-* [:::no-loc text="WINDOW"::: DAX function](/dax/window-function-dax)
-* [:::no-loc text="OFFSET"::: DAX function](/dax/offset-function-dax)
-* [:::no-loc text="INDEX"::: DAX function](/dax/index-function-dax)
-* [:::no-loc text="ORDERBY"::: DAX function](/dax/orderby-function-dax)
+* [WINDOW DAX function](/dax/window-function-dax)
+* [OFFSET DAX function](/dax/offset-function-dax)
+* [INDEX DAX function](/dax/index-function-dax)
+* [ORDERBY DAX function](/dax/orderby-function-dax)
 

@@ -7,7 +7,7 @@ ms.reviewer: ruiromano
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 08/13/2024
 ---
 
 # Power BI Desktop projects (PREVIEW)
