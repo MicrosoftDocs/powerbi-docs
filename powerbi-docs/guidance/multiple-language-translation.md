@@ -48,8 +48,6 @@ In addition to the **Caption** property, which tracks an object's display name, 
 
 When you begin designing a semantic model that uses metadata translation, you can assume that you always need translations for the **Caption** property. If you require support for metadata translation for report authors who create and edit reports in the Power BI service, you also need to provide metadata translations for the **Description** and **DisplayFolder** properties.
 
-Power BI reports and semantic models that support metadata translation can only run in workspaces that are associated with a dedicated capacity created using Power BI Premium or the Power BI Embedded Service. Multiple-language reports don't load correctly when launched from a workspace in the shared capacity. If you're working in a Power BI workspace that doesn't display a diamond that indicates a Premium workspace, multiple-language reports might not work as expected.
-
 Power BI support for metadata translations only applies to semantic models. Power BI Desktop and the Power BI service don't support storing or loading translations for text values stored as part of the report layout.
 
 :::image type="content" source="./media/multiple-language-translation/pbix-file-structure.png" alt-text="Diagram shows the report layout, which doesn't support localization, next to the semantic model definition, which supports localization.":::
