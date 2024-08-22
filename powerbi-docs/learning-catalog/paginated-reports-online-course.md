@@ -4,7 +4,7 @@ description: This video-based course aims to empower you as a report author with
 author: denglishbi
 ms.author: daengli
 ms.reviewer: maggies, nisrinivasan
-ms.custom: video-DN1t5p9aui0
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: tutorial
@@ -31,10 +31,6 @@ After you complete the course, you'll know how to:
 > - Visualize report data
 > - Add interactive features
 > - Publish, consume, deliver, and embed paginated reports
-
-Watch the welcome and introduction video to start the course.
-
-> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## Course outline
 

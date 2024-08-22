@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 06/25/2024
-ms.custom: video-EzhfBpPboPA
+ms.custom: video-removed
 LocalizationGroup: Dashboards
 ---
 
@@ -29,12 +29,7 @@ Pinning live tiles from reports to dashboards is only available in the Power BI 
 
 ## Pin a report page
 
-Watch Amanda pin a live report page to a dashboard and then follow the step-by-step instructions after the video to try it yourself.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/EzhfBpPboPA]
+Follow these step-by-step instructions to try pinning a live report to a dashboard for yourself.
 
 1. Open a report in [Editing view](service-interact-with-a-report-in-editing-view.md).
 
