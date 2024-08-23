@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 05/01/2024
+ms.date: 08/22/2024
 
 LocalizationGroup: Share your work
 ---
