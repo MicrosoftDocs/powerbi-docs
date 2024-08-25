@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 07/18/2024
+ms.date: 08/26/2024
 ---
 
 # Connect to Power BI Report Server and SSRS from Power BI mobile applications
@@ -16,9 +16,13 @@ This article discusses how to configure your environment to support OAuth authen
 
 ## Requirements
 
-Windows Server 2016 is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You don't need to have a Windows 2016 functional level domain.
+Windows Server is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You don't need to have a Windows 2016 functional level domain.
 
 In order for users to be able to add a report server connection to their Power BI mobile app, you must grant them access to the report server's home folder.
+
+<a name="windows-server-upgrade-note"></a>
+> [!NOTE]
+> As of March 1st, 2025, due to a change in the authentication library it uses, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. Customers will have to upgrade their ADFS server to Windows Server 2019 or later, or use Microsoft Entra application proxy. After the Windows Server upgrade, users may have to re-sign in to Report Server.
 
 ## Domain Name Services (DNS) configuration
 
@@ -69,10 +73,10 @@ For more information, see [Modify a Reporting Services Configuration File](/sql/
 
 ## Active Directory Federation Services (ADFS) Configuration
 
-You need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
+You need to configure ADFS on a Windows server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 > [!IMPORTANT]
-> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. Customers will have to upgrade their ADFS server to Windows Server 2019 or later, or use Microsoft Entra application proxy.
+> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
 
 ### Create an application group
 
