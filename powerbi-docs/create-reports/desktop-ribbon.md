@@ -26,10 +26,6 @@ These benefits can be grouped into the following categories:
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-03.png" alt-text="Screenshot of the Power BI Desktop window, highlighting the new search bar." lightbox="media/desktop-ribbon/desktop-ribbon-03.png":::
 
-<!--    Watch this video to see it in action.
-
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyUE]
--->
 * **Improved look, feel, and organization** - Icons and functionality in the updated Power BI Desktop ribbon are aligned to the look, feel, and organization of ribbon items found in Office applications.
 
     :::image type="content" source="media/desktop-ribbon/desktop-ribbon-04.png" alt-text="Screenshot of the Power BI Desktop window, which shows the improved search bar." lightbox="media/desktop-ribbon/desktop-ribbon-04.png":::

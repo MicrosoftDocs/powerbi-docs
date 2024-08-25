@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.custom: video-ZqhmaiORLw0
+ms.custom: video-removed
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 02/22/2023
@@ -19,17 +19,9 @@ In Power BI Desktop, you can connect to *LinkedIn Sales Navigator* to help find 
 
 To connect to LinkedIn data using the **LinkedIn Sales Navigator**, you need to have a LinkedIn Sales Navigator Enterprise plan, and either be an Admin or Reporting User on the Sales Navigator Contract.
 
-The following video provides a quick tour and tutorial for using the **LinkedIn Sales Navigator** template app, which is described in detail [later in this article](#using-the-linkedin-sales-navigator-template-app).
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/ZqhmaiORLw0]
-
 ## Connect to LinkedIn Sales Navigator
 
-To connect to LinkedIn Sales Navigator data, follow the instructions in the [Power Query LinkedIn Sales Navigator article](/power-query/connectors/linkedin-sales-navigator). 
-
+To connect to LinkedIn Sales Navigator data, follow the instructions in the [Power Query LinkedIn Sales Navigator article](/power-query/connectors/linkedin-sales-navigator).
 
 ## Using the LinkedIn Sales Navigator template app
 
