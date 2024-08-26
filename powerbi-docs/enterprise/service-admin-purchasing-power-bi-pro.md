@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/30/2024
+ms.date: 08/14/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 #customer intent: As am admin, I need to know how to acquire and assign Power BI Pro licenses to users in my organization. 
