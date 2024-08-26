@@ -16,13 +16,15 @@ This article discusses how to configure your environment to support OAuth authen
 
 ## Requirements
 
-Windows Server is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You don't need to have a Windows 2016 functional level domain.
+Windows Server is required for the Web Application Proxy (WAP) and Active Directory Federation Services (AD FS) servers. You don't need to have a Windows functional level domain.
 
 In order for users to be able to add a report server connection to their Power BI mobile app, you must grant them access to the report server's home folder.
 
 <a name="windows-server-upgrade-note"></a>
 > [!NOTE]
-> As of March 1st, 2025, due to a change in the authentication library it uses, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. Customers will have to upgrade their ADFS server to Windows Server 2019 or later, or use Microsoft Entra application proxy. After the Windows Server upgrade, users may have to re-sign in to Report Server.
+> As of March 1st, 2025, the Power BI Mobile app will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. Customers will have to upgrade their AD FS server to Windows Server 2019 or later, or use Microsoft Entra application proxy. After the Windows Server upgrade, Power BI Mobile app users may have to re-sign in to Report Server.
+>
+> This upgrade is necessitated by a change in the authentication library used by the mobile app. The change in no way affects Microsoft support for AD FS on Windows Server 2016, but rather only the ability of the Power BI Mobile app to connect to it.
 
 ## Domain Name Services (DNS) configuration
 
@@ -32,7 +34,7 @@ The public URL is the URL that the Power BI mobile app will connect to. For exam
 https://reports.contoso.com
 ```
 
-Your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You also need to configure a public DNS record for your ADFS server. For example, you might have configured the ADFS server with the following URL.
+Your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You also need to configure a public DNS record for your AD FS server. For example, you might have configured the AD FS server with the following URL.
 
 ```https
 https://fs.contoso.com
@@ -42,7 +44,7 @@ Your DNS record for **fs** to the public IP address of the Web Application Proxy
 
 ## Certificates
 
-You need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
+You need to configure certificates for both the WAP application and the AD FS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
 
 ## Reporting Services configuration
 
@@ -71,12 +73,12 @@ To enable a report server to use Kerberos authentication, you need to configure 
 
 For more information, see [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) and [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
-## Active Directory Federation Services (ADFS) Configuration
+## Active Directory Federation Services (AD FS) Configuration
 
-You need to configure ADFS on a Windows server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
+You need to configure AD FS on a Windows server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 > [!IMPORTANT]
-> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
+> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
 
 ### Create an application group
 
@@ -86,11 +88,11 @@ You can create the application group with the following steps.
 
 1. Within the AD FS Management app, right-click **Application Groups** and select **Add Application Group…**
 
-   ![ADFS Add Application](media/mobile-oauth-ssrs/adfs-add-application-group.png)
+   ![AD FS Add Application](media/mobile-oauth-ssrs/adfs-add-application-group.png)
 
 2. Within the Add Application Group Wizard, provide a **name** for the application group and select **Native application accessing a web API**.
 
-   ![ADFS Application Group Wizard 01](media/mobile-oauth-ssrs/adfs-application-group-wizard1.png)
+   ![AD FS Application Group Wizard 01](media/mobile-oauth-ssrs/adfs-application-group-wizard1.png)
 
 3. Select **Next**.
 
@@ -109,7 +111,7 @@ You can create the application group with the following steps.
    **Android Apps only need the following steps:**  
    urn:ietf:wg:oauth:2.0:oob
 
-   ![ADFS Application Group Wizard 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
+   ![AD FS Application Group Wizard 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
 7. Select **Next**.
 
 8. Supply the URL for your Report Server. The URL is the external URL that will hit your Web Application Proxy. It should be in the following format.
@@ -119,12 +121,12 @@ You can create the application group with the following steps.
 
    `https://<report server url>/reports`
 
-   ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
+   ![AD FS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
 
 10. Choose the **Access Control Policy** that fits your organization's needs.
 
-    ![ADFS Application Group Wizard 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
+    ![AD FS Application Group Wizard 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
 11. Select **Next**.
 
@@ -136,9 +138,9 @@ You can create the application group with the following steps.
 
 When completed, you should see the properties of your application group look similar to the following.
 
-![ADFS Application Group Wizard](media/mobile-oauth-ssrs/adfs-application-group.png)
+![AD FS Application Group Wizard](media/mobile-oauth-ssrs/adfs-application-group.png)
 
-Now run the following PowerShell command on the ADFS server to ensure that token refresh is supported.
+Now run the following PowerShell command on the AD FS server to ensure that token refresh is supported.
 
 ```powershell
 Set-AdfsApplicationPermission -TargetClientRoleIdentifier '484d54fc-b481-4eee-9505-0258a1913020' -AddScope 'openid'
@@ -146,7 +148,7 @@ Set-AdfsApplicationPermission -TargetClientRoleIdentifier '484d54fc-b481-4eee-95
 
 ## Web Application Proxy (WAP) Configuration
 
-You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows server. For more information, see [Web Application Proxy in Windows Server](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### Constrained delegation configuration
 
@@ -201,7 +203,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 
 | Parameter | Comments |
 | --- | --- |
-| **ADFSRelyingPartyName** |The Web API name that you created as part of the Application Group within ADFS. |
+| **ADFSRelyingPartyName** |The Web API name that you created as part of the Application Group within AD FS. |
 | **ExternalCertificateThumbprint** |The certificate to use for the external users. It's important that the certificate is valid on mobile devices and come from a trusted certificate authority. |
 | **BackendServerUrl** |The URL to the Report Server from the WAP server. If the WAP server is in a DMZ, you might need to use a fully qualified domain name. Make sure you can hit this URL from the web browser on the WAP server. |
 | **BackendServerAuthenticationSPN** |The SPN you created as part of the Reporting Services configuration. |
@@ -230,9 +232,9 @@ Within the Power BI mobile app, you want to connect to your Reporting Services i
 
 ![Type the server address](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
-When you select **Connect**, you'll be directed to your ADFS sign-in page. Enter valid credentials for your domain.
+When you select **Connect**, you'll be directed to your AD FS sign-in page. Enter valid credentials for your domain.
 
-![Sign-in to ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Sign-in to AD FS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 After you select **Sign in**, you see the elements from your Reporting Services server.
 
@@ -248,7 +250,7 @@ You can enable multifactor authentication to enable additional security for your
 
 You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to set up the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
-If the sign-in works successfully when using Fiddler, you might have a certificate issue with either the WAP application or the ADFS server. 
+If the sign-in works successfully when using Fiddler, you might have a certificate issue with either the WAP application or the AD FS server. 
 
 ## Related content
 
@@ -256,7 +258,7 @@ If the sign-in works successfully when using Fiddler, you might have a certifica
 * [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
 * [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
 * [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services)  
-* [Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)  
+* [Web Application Proxy in Windows Server](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server)  
 * [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
-* [Configure AD FS 2016 and Microsoft Entra multifactor authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)  
+* [Configure Microsoft Entra multifactor authentication as authentication provider using AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)  
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -16,7 +16,9 @@ This article discusses how to use Web Application Proxy (WAP) and Active Directo
 
 <a name="windows-server-upgrade-note"></a>
 > [!NOTE]
-> As of March 1st, 2025, due to a change in the authentication library it uses, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. Customers will have to upgrade their ADFS server to Windows Server 2019 or later, or use Microsoft Entra application proxy. After the Windows Server upgrade, users may have to re-sign in to Report Server.
+> As of March 1st, 2025, the Power BI Mobile app will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. Customers will have to upgrade their AD FS server to Windows Server 2019 or later, or use Microsoft Entra application proxy. After the Windows Server upgrade, Power BI Mobile app users may have to re-sign in to Report Server.
+>
+> This upgrade is necessitated by a change in the authentication library used by the mobile app. The change in no way affects Microsoft support for AD FS on Windows Server 2016, but rather only the ability of the Power BI Mobile app to connect to it.
 
 > [!NOTE]
 > The configuration described in this article is no longer the preferred method of connecting to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Configure the connection using using Microsoft Entra application proxy instead, as described in [Configure Power BI Report Server with Microsoft Entra application proxy](./microsoft-entra-application-proxy.md)
@@ -60,14 +62,14 @@ To enable a report server to use Kerberos authentication, you need to configure 
 
 For more information, see [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) and [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
-## 2. Configure Active Directory Federation Services (ADFS)
+## 2. Configure Active Directory Federation Services (AD FS)
 
-You need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
+You need to configure AD FS on a Windows server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](/windows-server/identity/active-directory-federation-services).
 
 > [!IMPORTANT]
-> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through ADFS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article..
+> As of March 1st, 2025, the Power BI Mobile apps will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. See the [note](#windows-server-upgrade-note) at the beginning of this article.
 
-On the ADFS server, using ADFS Management App, complete these steps.
+On the AD FS server, using AD FS Management App, complete these steps.
 
 1. Right-click **Relying Party Trusts** > **Add Relying Party Trust**.
 
@@ -98,7 +100,7 @@ On the ADFS server, using ADFS Management App, complete these steps.
 
 ## 3. Configure Web Application Proxy (WAP)
 
-You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#BKMK_1.2).
+You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be a Windows server. For more information, see [Web Application Proxy in Windows Server](/windows-server/remote/remote-access/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](/windows-server/remote/remote-access/web-application-proxy/Publishing-Applications-using-AD-FS-Preauthentication#BKMK_1.2).
 
 ### Configure constrained delegation
 
