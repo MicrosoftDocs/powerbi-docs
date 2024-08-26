@@ -7,7 +7,7 @@ ms.reviewer: maggies, davidi
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 08/26/2024
 no-loc: [Copilot]
 ---
 
@@ -16,6 +16,14 @@ no-loc: [Copilot]
 This change log is for Power BI Desktop and lists new items and bug fixes for each released QFE build.
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
+
+
+## August 2024 QFE 1
+*Version 2.132.1053.0, Released: August 21,2024*
+
+Bug fixes/improvements:
+
+* Fixed an issue with July build to August build upgrade
 
 
 ## July 2024 QFE 1
