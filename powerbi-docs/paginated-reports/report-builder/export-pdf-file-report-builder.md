@@ -1,11 +1,9 @@
 ---
 title: "Export Power BI paginated report to a PDF File (Power BI Report Builder) | Microsoft Docs"
 description: In Power BI Report Builder, the PDF rendering extension renders Power BI paginated reports to files that can be opened in Adobe Acrobat and other third-party PDF viewers.
-ms.date: 02/27/2023
+ms.date: 08/26/2024
 ms.service: powerbi
 ms.subservice: report-builder
-
-
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -98,7 +96,8 @@ Windows 10 and 11 introduced a recommended Universal Windows Platform (UWP) font
  To preserve any compression for images included in the PDF file when possible, JPEG images are stored as JPEG and all other image types are stored as BMP.  
   
 > [!NOTE]  
->  PDF files don't support embedding PNG images.  
+> - PDF files don't support embedding PNG images.
+> - Reporting Services PDF exports don't support CMYK color format images.  
   
   
 ##  <a name="DeviceInfo"></a> Device information settings  

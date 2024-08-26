@@ -1,5 +1,5 @@
 ---
-title: Purchase Power BI and assign licenses
+title: Purchase Power BI and assign licenses.
 description: Learn how to purchase Power BI and assign user licenses to users so they can access content and collaborate with others in the Power BI service.
 author: mihart
 ms.author: mihart
@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/30/2024
+ms.date: 08/14/2024
 ms.custom: licensing support
 LocalizationGroup: Administration
 #customer intent: As am admin, I need to know how to acquire and assign Power BI Pro licenses to users in my organization. 
@@ -15,7 +15,7 @@ LocalizationGroup: Administration
 
 # Purchase and assign Power BI paid user licenses
 
-This article is for administrators and explains how to purchase paid user licenses for Power BI and Fabric in the Microsoft 365 admin center. After purchasing, you assign licenses to users from either the Microsoft 365 admin center or the Azure portal. Some organizations make licenses available for self-service upgrade and purchase by the organization's users. [This self-service can be disabled or alternate processes can be put in place by an organization](./service-admin-disable-self-service.md). 
+This article is for administrators and explains how to purchase paid user licenses for Power BI and Fabric in the Microsoft 365 admin center. After purchasing, you assign licenses to users from either the Microsoft 365 admin center or from the Azure portal. Some organizations make licenses available for self-service upgrade and purchase by the organization's users. [And, some organizations don't make licenses available for self-service or they might even put an alternate processes in place](./service-admin-disable-self-service.md). 
 
 > [!NOTE]
 >The Power BI service is available as a standalone service and as one of the services that's integrated with [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Administration and licensing of the Power BI service is now integrated with Microsoft Fabric.
