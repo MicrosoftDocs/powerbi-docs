@@ -40,7 +40,7 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 
 ## API v5.8.0
 
-* [**Local storage API**](./local-storage.md): A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
+* [**Local storage API**](./local-storage.md): A new version of local storage API available for all custom visuals and controlled by a global setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
 * [**On-object support for custom visuals**](./on-object-formatting-api.md): On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
 * Supports Desktop February 2024
 
