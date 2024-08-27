@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 08/26/2024
 ---
 
 # Supported data sources for Power BI paginated reports
