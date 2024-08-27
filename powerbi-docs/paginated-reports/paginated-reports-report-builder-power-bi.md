@@ -4,7 +4,7 @@ description: Paginated reports are now available in the Power BI service. They h
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-jXTiYJKw1Rs, intro-overview
+ms.custom: video-removed, intro-overview
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
@@ -36,18 +36,11 @@ You can preview your report in Report Builder, then publish it to the Power BI s
 
 ## Compare Power BI reports and paginated reports
 
-A major advantage of paginated reports is their ability to print all the data in a table, no matter how long. Picture that you place a table in a Power BI report. You see some of its rows in the table on the page, and you have a scroll bar to see the rest. If you print that page, or export it to PDF, the only rows that print are the ones you saw on the page. 
+A major advantage of paginated reports is their ability to print all the data in a table, no matter how long. Picture that you place a table in a Power BI report. You see some of its rows in the table on the page, and you have a scroll bar to see the rest. If you print that page, or export it to PDF, the only rows that print are the ones you saw on the page.
 
-Now say you place the same table in a paginated report. When you print it or export it to PDF, the paginated report has as many pages as necessary to print every row in that table. 
+Now say you place the same table in a paginated report. When you print it or export it to PDF, the paginated report has as many pages as necessary to print every row in that table.
 
-In the following video, Microsoft Most Valued Professional - Data Platform Peter Myers, and Principal Program Manager Chris Finlan demonstrate printing a similar table in the two report formats. 
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Report Builder or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT]
-
-This video is Module 1, part of an eight-module video-based course, [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md). The course is designed to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
+You can view a demonstration of a similar table being printed in the two report formats in [this video](https://www.youtube.com/embed/jXTiYJKw1Rs?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT), which is Module 1, part of an eight-module video-based course, [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md). The course is designed to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 
 ## Create reports in Power BI Report Builder
 

@@ -16,6 +16,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-recent.md",
+            "redirect_url": "/power-bi/consumer/end-user-basic-concepts/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
             "redirect_url": "/fabric/get-started/fabric-known-issues",
             "redirect_document_id": false

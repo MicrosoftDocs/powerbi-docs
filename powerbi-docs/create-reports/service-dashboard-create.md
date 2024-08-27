@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.custom: video-lJKgWnvl6bQ
+ms.custom: video-removed
 ms.date: 07/07/2023
 ---
 # Create a Power BI dashboard from a report
@@ -27,17 +27,11 @@ After you complete this article, you'll understand:
 > [!NOTE]
 > Dashboards are a feature of the Power BI service, not Power BI Desktop. You can't create dashboards in the Power BI mobile apps, but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them there.
 >
-> 
-
-## Video: Create a dashboard by pinning visuals from a report
-Watch Amanda create a new dashboard by pinning visualizations from a report. Then, follow the steps in the next section to try it out yourself by using the Procurement Analysis sample.
-    
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/lJKgWnvl6bQ]
+>
 
 ## Pin tiles to a dashboard
+
+You can use the following steps and the Procurement Analysis sample to try pinning visualizations to a new dashboard for yourself.
 
 1. Open a report and select **More options (...)** > **Edit** to open the report in Editing view.
 
