@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 05/11/2024
+ms.date: 08/25/2024
 ---
 
 # Create a Microsoft Entra tenant to use with Power BI

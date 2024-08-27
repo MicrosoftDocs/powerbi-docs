@@ -1,5 +1,5 @@
 ---
-title: Create calculation groups in Power BI (preview)
+title: Create calculation groups in Power BI
 description: Learn how to create calculation groups in Power BI.
 author: davidiseminger
 ms.author: davidi
@@ -149,7 +149,8 @@ You can learn more about calculation groups precedence in the [Calculation group
 
 The following articles describe more about data models, and also describe DirectQuery in detail.
 
-* [Work with Modeling view in Power BI Desktop](desktop-modeling-view.md)
+* [Work with Model Explorer in Power BI](/power-bi/transform-model/model-explorer)
+* [Work with Modeling view in Power BI](desktop-modeling-view.md)
 * [Automatic aggregations](../enterprise/aggregations-auto.md)
 * [Use composite models in Power BI Desktop](desktop-composite-models.md)
 * [Manage storage mode in Power BI Desktop](desktop-storage-mode.md)
