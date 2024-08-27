@@ -1,6 +1,6 @@
 ---
-title: Use Model explorer in Power BI (preview)
-description: Learn how to use Model explorer to see and work with complex semantic models in a visual format in Power BI.
+title: Use Model explorer in Power BI
+description: Learn how to use Model explorer to see and work with complex semantic models in a tree view in Power BI.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -68,7 +68,7 @@ You can create or edit a measure and view all the measures in your model togethe
 
 #### Perspectives
 
-View perspectives created by hiding tables, columns, or measures. Perspectives are commonly used in personalized visuals. Learn more about perspectives in the [Perspectives in Analysis Services](/analysis-services/tabular-models/perspectives-ssas-tabular) article.
+View perspectives created by hiding tables, columns, or measures. Perspectives are commonly used in [personalized visuals](/power-bi/create-reports/power-bi-personalize-visuals). Learn more about perspectives in the [Perspectives in Analysis Services](/analysis-services/tabular-models/perspectives-ssas-tabular) article.
 
 :::image type="content" source="media/model-explorer/model-explorer-07.png" alt-text="Screenshot of the perspectives area in Model explorer.":::
 
@@ -97,15 +97,10 @@ You can create or edit tables in your model in **Model explorer**. The approach 
 
 ## Related content
 
-The following articles describe more about data models, and also describe DirectQuery in detail.
+The following articles describe more about semantic modeling in detail.
 
-* [Work with Modeling view in Power BI Desktop](desktop-modeling-view.md)
-* [Automatic aggregations](../enterprise/aggregations-auto.md)
+* [Work with Modeling view in Power BI](desktop-modeling-view.md)
 * [Use composite models in Power BI Desktop](desktop-composite-models.md)
 * [Manage storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
 
-DirectQuery articles:
-
-* [DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-* [Power BI data sources](../connect-data/power-bi-data-sources.md)
