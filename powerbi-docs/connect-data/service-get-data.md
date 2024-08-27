@@ -6,9 +6,10 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
-ms.topic: conceptual
-ms.date: 01/31/2024
+ms.topic: concept-article
+ms.date: 08/28/2024
 LocalizationGroup: Get started
+#customer intent: As a Power BI user, I want to learn about data sources I can connect to so that I can effectively explore, analyze, and visualize my data in Power BI.
 ---
 
 # Data sources for the Power BI service
@@ -29,13 +30,13 @@ The tiles at the top of the page show recommended data items. For example, data 
 
 :::image type="content" source="media/service-get-data/recommended-data.png" alt-text="Screenshot that shows the Recommended data tiles.":::
 
-Below those tiles is a list of data that you have access to. You can filter to show all data, your own data, or data endorsed by someone in your organization: 
+Below those tiles is a list of data that you have access to. You can filter to show all data, your own data, or data endorsed by someone in your organization:
 
 :::image type="content" source="media/service-get-data/all-data.png" alt-text="Screenshot that shows the list of existing data.":::
 
 You can select **Apps** on the navigation pane to discover apps published by other people in your organization. At the top right of that tab, select **Get apps** to choose apps from online services that you use:
 
-:::image type="content" source="media/service-get-data/power-bi-apps.png" alt-text="Screenshot that shows the Apps tab.":::
+:::image type="content" source="media/service-get-data/power-bi-apps.png" alt-text="Screenshot that shows the Apps tab in the Power BI service.":::
 
 Many services have *template apps* for Power BI. Most services require an account. For more information, see [Connect to services you use with Power BI](service-connect-to-services.md).
 
@@ -49,21 +50,21 @@ To import files:
 
 1. Go to the workspace to which you want to import the files. Select **New** and then **Semantic model**:
 
-   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu.":::
-   
+   :::image type="content" source="media/service-get-data/new-menu.png" alt-text="Screenshot that shows the New menu in My Workspace.":::
+
 1. Select **Excel** or **CSV**. You can also paste or manually enter data.
 
    :::image type="content" source="media/service-get-data/add-data.png" alt-text="Screenshot that shows the choices under Add data to start building a report.":::
 
 When you import Excel or CSV files or manually create a workbook, Power BI imports any supported data in tables and any data model into a new Power BI semantic model.
 
-You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace. 
+You can also upload files. Use this method for *.pbix* files. When you upload Excel files from OneDrive or SharePoint, Power BI creates a connection to the file. When you upload a local file, Power BI adds a copy of the file to the workspace.
 
 To upload files, on the **My workspace** tab, select **Upload** to upload local files or files from SharePoint or OneDrive:
 
-:::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the Upload list."::: 
+:::image type="content" source="media/service-get-data/upload.png" alt-text="Screenshot that shows the options in the Upload menu in My Workspace.":::
 
-Following are some types of files that you can add: 
+Following are some types of files that you can add:
 
 - **Excel** workbooks, or *.xlsx* and *.xlsm* files, can include different data types. For example, workbooks can include data that you enter into worksheets yourself, or data that you query and load from external data sources by using Power Query. Power Query is available via **Get & Transform Data** on the **Data** tab of Excel, or via **Get External Data** in Power Pivot. You can import data from tables in worksheets or import data from a data model. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
@@ -77,7 +78,7 @@ Where you store your files makes a significant difference. OneDrive provides the
 
 ### Databases
 
-You can connect Azure databases to Power BI to get analytics and reports that provide real-time insights. For example, you can connect to Azure SQL Database and explore data by creating reports in Power BI. Whenever you slice data or add a field to a visualization, Power BI queries the database directly. 
+You can connect Azure databases to Power BI to get analytics and reports that provide real-time insights. For example, you can connect to Azure SQL Database and explore data by creating reports in Power BI. Whenever you slice data or add a field to a visualization, Power BI queries the database directly.
 
 For more information, see:
 
@@ -85,7 +86,7 @@ For more information, see:
 - [Azure SQL Database with DirectQuery](service-azure-sql-database-with-direct-connect.md)
 - [Azure Synapse Analytics with DirectQuery](service-azure-sql-data-warehouse-with-direct-connect.md)
 
-You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for various other databases. You can then import the file into Power BI where a semantic model exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the semantic model. For more information, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+You can also use Power BI Desktop or Excel to connect to, query, and load data into data models for various other databases. You can then import the file into Power BI where a semantic model exists. If you configure scheduled refresh, Power BI uses the configuration and connection information from the file to connect directly to the data source. Power BI queries for updates and loads the updates into the semantic model. For more information, see [Connect to data sources in Power BI Desktop](desktop-connect-to-data.md).
 
 ### Other data sources
 
@@ -115,7 +116,7 @@ The data in a semantic model comes from a data source. For example, data could c
 
 ## Data refresh
 
-If you save your file on a local drive or a drive in your organization, you might need an on-premises gateway to be able to refresh the semantic model in Power BI. The computer that stores the file must be running during the refresh. You can also reimport your file, or use **Publish** from Excel or Power BI Desktop, but those processes aren't automated.
+If you save your file on a local drive or on a drive in your organization, you might need an on-premises gateway to be able to refresh the semantic model in Power BI. The computer that stores the file must be running during the refresh. You can also reimport your file, or use **Publish** from Excel or Power BI Desktop, but those processes aren't automated.
 
 If you save your files on OneDrive for work or school or on a SharePoint team site, your semantic model, reports, and dashboard are always up to date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your files or import the files into Power BI. Power BI connects about once every hour and checks for updates. The semantic model and any visualizations refresh automatically if there are any updates.
 
@@ -135,21 +136,19 @@ Data sources for the Power BI service have the following limitations. Other limi
 
 - **Distinct values in a column**. When a Power BI semantic model caches data in Import mode, it can store a limit of 1,999,999,997 distinct values in a column.
 
-- **Row limit**. When you use DirectQuery, Power BI imposes a limit on the query results that it sends to your underlying data source. If the query sent to the data source returns more than one million rows, you see an error and the query fails. The underlying data can still contain more than one million rows. You're unlikely to reach this limit, because most reports aggregate the data into smaller sets of results.
+- **Row limit**. When you use DirectQuery, Power BI imposes a limit on the query results that it sends to your underlying data source. If the query sent to the data source returns more than 1 million rows, you see an error and the query fails. The underlying data can still contain more than 1 million rows. You're unlikely to reach this limit, because most reports aggregate the data into smaller sets of results.
 
 - **Column limit**. The maximum number of columns allowed across all tables in a semantic model is 16,000 columns. This limit applies to the Power BI service and to semantic models Power BI Desktop uses. Power BI uses this limit to track the number of both columns and tables in the semantic model, which means the maximum number of columns is 16,000 minus one for each table in the semantic model.
 
 - **Data source user limit**. The maximum number of data sources allowed per user is 1,000. This limit applies only to the Power BI service.
 
-- **Single Sign On (SSO) considerations**. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user. SSO can be enabled for each source connection that supports SSO (not all connection types support SSO), and each SSO connection might require configuring a gateway or VNET for certain types of sources. You can read more about enabling SSO for gateways in the [SSO for data gateways](service-gateway-sso-overview.md) article. 
- 
-    Querying the SSO-enabled DirectQuery model using a Service Principal (SPN) isn't supported, since the SPN credential can't be passed through to the DirectQuery source. Instead, use a User Principal (UPN) to execute such queries against the SSO-enabled DirectQuery semantic model. 
- 
+- **Single sign-on (SSO) considerations**. DirectQuery models can enable SSO access to their data sources, which allows the security in the source system to be implicitly applied to the DAX queries executed by each user. SSO can be enabled for each source connection that supports SSO (not all connection types support SSO), and each SSO connection might require configuring a gateway or VNET for certain types of sources. You can read more about enabling SSO for gateways in the [SSO for data gateways](service-gateway-sso-overview.md) article.
 
+    Querying the SSO-enabled DirectQuery model using a Service Principal Name (SPN) isn't supported, since the SPN credential can't be passed through to the DirectQuery source. Instead, use a User Principal Name (UPN) to execute such queries against the SSO-enabled DirectQuery semantic model.
 
 ## Related content
 
-- [Connect to services you use with Power BI](service-connect-to-services.md)
+- [Connect to the services you use with Power BI](service-connect-to-services.md)
 - [Get data from files for Power BI](service-get-data-from-files.md)
 - [Data refresh in Power BI](refresh-data.md)
 - [DirectQuery in Power BI](desktop-directquery-about.md)
