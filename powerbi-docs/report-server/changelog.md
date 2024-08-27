@@ -22,7 +22,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 - *Version:1.20.8959.12285 (build 15.0.1115.206), Released: July 12, 2024*
   - Bug fixes
-    - Fixed issue with specific custom visuals not loading in May version of PBIRS.
+    - Fixed issue with custom visuals failing to load initially in Power BI reports.
+    - Fixed issue with not applying styles to Matrix visuals in certain Power BI reports.
+    - Fixed issue when editing monthly schedules in the PBIRS portal.
 
 - *Version:1.20.8944.34536 (build 15.0.1115.194), Released: June 27, 2024*
   - Bug fixes
@@ -41,7 +43,9 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Desktop (optimized for Power BI Report Server)
 
-- *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*   
+- *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*
+   - Bug fixes
+    - Fixed issue with measures not appearing in PBIT with certain data sources.
    - Features
      - Fixed issue with direct connect reports causing issues in Power BI Desktop for RS.
 
