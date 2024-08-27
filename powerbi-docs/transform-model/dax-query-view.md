@@ -1,6 +1,6 @@
 ---
-title: DAX query view in Power BI Desktop
-description: Learn how to use DAX query view in Power BI Desktop to evaluate your DAX queries.
+title: DAX query view
+description: Learn how to use DAX query view to evaluate your DAX queries.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -33,6 +33,10 @@ To learn more about how queries are used, see [DAX queries](/dax/dax-queries) in
 In Power BI Desktop, select the **DAX Query View** icon on the left side.
 
 :::image type="content" source="media/dax-query-view/dax-query-view-icon.png" alt-text="Screenshot of the DAX query view icon in Power BI Desktop.":::
+
+In the Power BI service or Fabric portal workspace, choose **Write DAX queries** from the context menu. 
+
+In the Power BI service or Fabric portal semantic model details page, select **Write DAX queries** from the top of the page.
 
 ## DAX query view layout
 
@@ -180,9 +184,11 @@ Queries can run in the background allowing you to continue working on other quer
 
 #### Saving of DAX queries
 
-DAX query view query tabs are saved in the file when you save from Power BI Desktop, so you can continue where you left off when you open the file again. If you use the developer mode to save a Power BI project, each query tab is included as a .dax file in the DAXQueries folder of the semantic model folder. Learn more at the [Power BI developer mode documentation](/power-bi/developer/projects/).
+DAX query view query tabs are saved in the file when you save from Power BI Desktop, so you can continue where you left off when you open the file again. If you use the developer mode to save a Power BI project, each query tab is included as a .dax file in the DAXQueries folder of the semantic model folder, or report folder if they are created in a live connected report. Learn more at the [Power BI developer mode documentation](/power-bi/developer/projects/).
 
-Currently, you cannot view or edit the DAX queries in the Power BI service. Viewers of the report or semantic model do not see the DAX queries saved with the semantic model.
+Currently, you cannot view or edit the DAX queries previously added in Power BI Desktop in the Power BI service. Viewers of the report or semantic model do not see the DAX queries saved with the semantic model.
+
+DAX query view tabs are discarded on close when you **Write DAX queries** from the Power BI service or Fabric portal. 
 
 ### Data pane
 
@@ -252,6 +258,14 @@ When live connected to a published Power BI semantic model, you can create repor
 
 **Update model with changes** button and CodeLens options to **Update model** are not available for report measures.
 
+## DAX query view in web
+
+**Write DAX queries** from published semantic models use DAX query view in the web. DAX query view in the web is the same experience in Power BI Desktop, with a couple of exceptions.
+
+- **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models).
+- **DAX queries are discarded on close.** DAX queries in Power BI Desktop are saved to the model and a semantic model may have DAX queries already saved in the model. DAX query view in the web currently will not display any previously saved DAX queries that may exist in the semantic model, and queries created in the web are not kept after you close the browser.
+- **Write DAX queries requires write permission on the semantic model.** Workspace viewers have to use Power BI Desktop with live connection to the semantic model to write DAX queries.
+
 ## Considerations and limitations
 
 Considerations to keep in mind:
@@ -268,6 +282,12 @@ And there are some limitations to keep in mind:
 - Maximum of 15MB of data per query. Once 15MB is exceeded, the current row completes but no additional rows are written.
 - Maximum of 1,000,000 values per query. If you query for 20 columns, you can get back max 50,000 rows (1 million divided by 20).
 - Define all measures in this table or model is unavailable when there are more than 500 measures.
+
+ Running DAX queries in the web has additional limitaitons:
+- Maximum of 99,999 rows are returned per query.
+- Write permission on the semantic model. Viewers with build permission can use Power BI Desktop to live connect and use DAX query view to run DAX queries.
+- Only available for non-default semantic models. You can use Power BI Desktop to live connect to the default semantic model and use DAX query view to run DAX queries.
+-  **User can edit data models in the Power BI service (preview)** Power BI workspace setting needs to be enabled to write DAX queries. Learn more at [Edit data models in the Power BI service](/power-bi/transform-model/service-edit-data-models)
 
 ## Related content
 

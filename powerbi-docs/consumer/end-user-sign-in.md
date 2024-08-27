@@ -8,7 +8,7 @@ Ms.custom: css_fy20Q4
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: conceptual
-ms.date: 03/12/2024
+ms.date: 08/14/2024
 LocalizationGroup: Get started
 ---
 
@@ -16,21 +16,25 @@ LocalizationGroup: Get started
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
+This article is for Power BI business users who are signing in to the Power BI service for the first time. A *business user* is someone who uses the data and visualizations in reports that are created by their colleagues. A business user relies on this data to make data-driven business intelligence decisions. 
+
 ## Power BI accounts
 
-Before you can sign in to Power BI, you need an account. There are two ways to get a Power BI account. Your organization can purchase Power BI licenses for its employees or individuals can sign up for [free trials or personal licenses](../fundamentals/service-self-service-signup-for-power-bi.md). This article covers the first scenario.
+Before you can sign in to the Power BI service, you need an [account and a license](end-user-license.md). There are several ways to get an account and license. This article describes a common scenario where employees at a corporation use their work email to sign in to their Power BI account. And, the employees use licenses that were purchased and allocated for their employees. 
 
 ## Sign in for the first time
 
-After you have an account set up, you can sign in and get started in the Power BI service. Use the steps here for general guidance. The exact screens may vary from what you see here, depending on your version of Microsoft software, browser version, and how your admin set up your license and tenant.
+Use your work email to log in to the Power BI service for the first time. Follow the steps here for general guidance. The exact screens may vary from what you see here, depending on your version of Microsoft software, browser version, and how your admin set up your license and environment.
 
 ### Step 1: Open the Power BI service
 
-The Power BI service runs in a browser.
+The Power BI service runs in a browser. There are several ways to get started. 
 
 - If you receive an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
 
     :::image type="content" source="media/end-user-sign-in/power-bi-share.png" alt-text="A screenshot that shows an email that contains a link to a report.":::
+
+- Sometimes, your administrator assigns you a Power BI license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this same email account for your sign-in.
 
 - Otherwise, open your favorite browser and type **app.powerbi.com**.
 
@@ -38,13 +42,11 @@ The Power BI service runs in a browser.
 
 ### Step 2: Type your email address
 
-1. The first time you sign in, Microsoft checks to see if you already have a Microsoft 365 account. Enter your email address.
+1. The first time you sign in, Microsoft checks to see if you already have a Microsoft account. Enter your work or school email address.
 
-1. Enter your Microsoft 365 account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code sent to your email or mobile device.
+1. Enter your Microsoft account password. It's the same email and password that you use for other Microsoft products, like Outlook and Office. Depending on how your account is set up, you might be prompted to enter a code sent to your email or mobile device.
 
-    :::image type="content" source="media/end-user-sign-in/power-bi-pass.png" alt-text="A screenshot that shows an Enter password dialog box.":::
-
-    Sometimes, your global administrator assigns you a license and sends you an email with this information. Look in your inbox for a welcome email and follow the instructions to sign in for the first time. Use this email account for your sign-in.
+    :::image type="content" source="media/end-user-sign-in/power-bi-passes.png" alt-text="A screenshot that shows an Enter password dialog box.":::
 
 ### Step 3: Review your Home landing page
 
@@ -52,7 +54,7 @@ On your first visit, Power BI opens your **Home** landing page. If **Home** does
 
 :::image type="content" source="media/end-user-sign-in/power-bi-home-first.png" alt-text="A screenshot of the navigation pane with Home outlined.":::
 
-On Home, you can see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. You can find the report that your colleague emailed to you under **Recent** on the **Home** page.
+On Home, you see all the content that you have permission to use. There might not be much content at first, but that changes as you continue to use Power BI with your colleagues. If your colleagues have already shared content with you, you find it under **Recent** on **Home**.
 
 :::image type="content" source="media/end-user-sign-in/power-bi-home-recent.png" alt-text="A screenshot showing a report in the Recent section on the Home page.":::
 
@@ -85,9 +87,10 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 - If you [signed up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md), sign in with the email address that you used to sign up.
 
 - Some people use more than one Power BI account. If you do, you're prompted to select an account from a list when signing in.
+
 - If sign up is disabled, [use this article to get help.](../fundamentals/service-self-service-sign-up-help.md)
 
 
 ## Related content
 
-- [View a Power BI app.](end-user-app-view.md)
+- [Power BI Basic concepts](end-user-basic-concepts.md)

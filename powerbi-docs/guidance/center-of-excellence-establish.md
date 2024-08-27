@@ -1,8 +1,8 @@
 ---
 title: How Microsoft established a Center of Excellence
 description: Learn how a Center of Excellence helped Microsoft create a standardized analytics and data platform to unlock insights with the right operating model, stakeholder engagement, and shared and dedicated investments.
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

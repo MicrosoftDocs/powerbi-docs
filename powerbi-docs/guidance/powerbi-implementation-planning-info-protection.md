@@ -1,8 +1,8 @@
 ---
 title: "Power BI implementation planning: Information protection for Power BI"
 description: "Learn about labeling and classification of data assets for use with Power BI."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

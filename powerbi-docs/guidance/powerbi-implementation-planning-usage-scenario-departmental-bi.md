@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Departmental BI"
 description: "Learn how Power BI departmental BI is about business unit content distribution."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

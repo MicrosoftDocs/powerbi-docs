@@ -5,15 +5,15 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
-ms.subservice:
+ms.subservice: powerbi-developer
 ms.topic: concept-article
-ms.date: 05/31/2024
+ms.date: 08/13/2024
 #customer intent: As a Power BI developer, I want to learn how to use Azure DevOps integration with Power BI Desktop projects so that I can streamline my development processes, source control, and collaboration with Azure DevOps Git repositories.
 ---
 
 # Power BI Desktop projects Azure DevOps integration
 
-> [!IMPORTANT]
+> [!NOTE]
 > Power BI Desktop projects is currently in **preview**.
 
 Microsoft Power BI Desktop projects enable developer collaboration by connecting your local Git repo to a remote Git host, like Azure DevOps.

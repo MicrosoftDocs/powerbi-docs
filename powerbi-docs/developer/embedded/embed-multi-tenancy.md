@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/09/2023
+ms.date: 08/01/2024
 ---
 
 # Service principal profiles for multitenancy apps in Power BI Embedded
@@ -256,6 +256,7 @@ Even if you use service principal profiles to separate your customers' data, you
 
 * Service Principal Profiles are only supported through the Power [BI REST API](/rest/api/power-bi/), the [Power BI .NET SDK](https://www.nuget.org/packages/Microsoft.PowerBI.Api/), and through the XMLA endpoint and the Tabular Object Model (TOM) when using Analysis Services client libraries version 16.0.139.27 or higher. Service Principal Profiles are not supported in Power BI through the XMLA endpoint or the Tabular Object Model (TOM) with older client libraries.
 * Service principal profiles aren't supported with Azure Analysis Services (AAS) in live connection mode.
+* The maximum profiles a single service principal can have, is 100,000.
 
 ### Power BI capacity limitations
 

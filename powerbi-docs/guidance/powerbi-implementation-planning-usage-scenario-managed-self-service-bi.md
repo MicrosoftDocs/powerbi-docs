@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Managed self-service BI"
 description: "Learn how Power BI managed self-service BI is about reuse of centralized shared semantic models by other report creators."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

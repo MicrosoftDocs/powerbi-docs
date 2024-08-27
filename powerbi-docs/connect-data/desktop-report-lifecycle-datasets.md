@@ -107,6 +107,7 @@ Now you and others can create and share custom reports, all from the same semant
 
 When you use the Power BI service live connection, keep a few considerations and limitations in mind.
 
+- In live connection mode, you cannot modify the data model itself (for example, you cannot add new columns or tables). You can only create measures (Report Measures), calculated columns, visual calculations and calculated tables.
 - Only users with Build permission for a semantic model can connect to a published semantic model by using the Power BI service live connection.
 - Hidden columns will become visible to users with Build permissions when they create live connections to the semantic model in Power BI Desktop.
 - Free users only see datasets that are in their **My Workspace** and in Premium or Fabric based workspaces.

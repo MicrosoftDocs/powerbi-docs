@@ -43,11 +43,7 @@ To select an Azure subscription to work with Autoscale, take the following steps
 
 1. From the **Subscriptions** page, select the subscription you want to work with Autoscale.
 
-   :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-subscriptions.png" alt-text="Screenshot of the Azure portal showing a subscription name highlighted." lightbox="media/service-premium-auto-scale/azure-auto-scale-subscriptions.png":::
-
 1. From the *Settings* selections for your selected subscription, select **Resource groups**.
-
-    :::image type="content" source="media/service-premium-auto-scale/azure-auto-scale-resource-group-option.png" alt-text="Screenshot of the Azure portal showing the subscription pane. Resource groups is highlighted in the settings section." lightbox="media/service-premium-auto-scale/azure-auto-scale-resource-group-option.png":::
 
 1. Select **Create** to create a resource group to use with Autoscale.
 

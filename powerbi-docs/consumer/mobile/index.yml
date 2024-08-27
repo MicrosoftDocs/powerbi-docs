@@ -72,5 +72,5 @@ landingContent:
           - text: View on-premises reports & KPIs
             url: mobile-app-ssrs-kpis-mobile-on-premises-reports.md 
           - text: Connect with OAuth to on-premises reports
-            url: mobile-oauth-ssrs.md
+            url: ../../report-server/mobile-oauth-ssrs.md
 

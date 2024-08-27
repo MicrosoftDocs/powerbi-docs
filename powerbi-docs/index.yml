@@ -293,7 +293,7 @@ conceptualContent:
           links:
             - url: troubleshoot/known-issues/power-bi-known-issues.md
               itemType: overview
-              text: Known issues for Power BI features
+              text: Known issues for Fabric and Power BI features
             - url: connect-data/refresh-troubleshooting-refresh-scenarios.md
               itemType: how-to-guide
               text: Troubleshoot refresh scenarios

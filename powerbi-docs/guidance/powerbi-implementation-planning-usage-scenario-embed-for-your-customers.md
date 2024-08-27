@@ -1,8 +1,8 @@
 ---
 title: "Power BI usage scenarios: Embed for your customers"
 description: "Learn how a developer can programmatically embed Power BI content in a custom application for your customers."
-author: peter-myers
-ms.author: v-myerspeter
+author: denglishbi
+ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource

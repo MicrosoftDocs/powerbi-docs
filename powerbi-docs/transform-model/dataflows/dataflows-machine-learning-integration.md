@@ -31,7 +31,7 @@ The services that are supported today are [Sentiment Analysis](/azure/cognitive-
 
 ### Enable AI features
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section.
+Cognitive services are supported for Premium capacity nodes EM2, A2, P1, or F64 and other nodes with more resources. Cognitive services are also available with a Premium Per User (PPU) license. A separate AI workload on the capacity is used to run cognitive services. Before you use cognitive services in Power BI, the AI workload needs to be enabled in the **Capacity settings** of the **Admin portal**. You can turn on the AI workload in the workloads section.
 
 :::image type="content" source="media/service-cognitive-services/cognitive-services-01.png" alt-text="Screenshot of the Admin portal that shows the Capacity settings.":::
 

@@ -5,9 +5,9 @@ author: mberdugo
 ms.author: monaberdugo
 ms.reviewer: ruiromano
 ms.service: powerbi
-ms.subservice:
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2024
+ms.date: 08/13/2024
 ---
 
 # Power BI Desktop project report folder
@@ -346,15 +346,11 @@ PBIR is currently in **preview**. Keep the following in mind:
 
 - Service limitations
   - Can't be included in Power BI Apps.
-  - Can't be downloaded as PBIX.
-  - Can't be exported to PPTX or PDF.
-  - Can't be included in Subscriptions.
-  - Can't be deployed with deployment pipelines.
-  - Mobile layouts aren't applied.
+  - Can't be downloaded as PBIX.    
+  - Can't be deployed with deployment pipelines.  
   - Can't be saved as a copy.
   - Can't be published from Power BI Desktop.
-  - Can't be uploaded to workspace as PBIX.
-  - Can't be utilized in Power BI Embedded.
+  - Can't be uploaded to workspace as PBIX.  
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration

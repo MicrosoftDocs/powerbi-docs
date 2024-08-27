@@ -27,9 +27,9 @@
       href: service-troubleshoot-sharing.md
     - name: "Subscribe to reports and dashboards"
       href: end-user-subscribe.md
-    - name: "Create per recipient subscriptions for reports (preview)"
+    - name: "Create per recipient subscriptions for reports"
       href:  power-bi-dynamic-report-subscriptions.md  
-    - name: "Create per recipient subscriptions for paginated reports (preview)"
+    - name: "Create per recipient subscriptions for paginated reports"
       href:  dynamic-subscriptions.md
     - name: "Troubleshoot creating and using subscriptions"  
       href: service-troubleshoot-subscribe.yml

@@ -23,14 +23,24 @@ https://github.com/microsoft/powerbi-visuals-api/blob/main/CHANGELOG.md
 * **DataViewMetadataColumn** has a new property called `sourceFieldParameters`. This property indicates if the current field is the result of a field parameter. If a single field can originate from multiple field parameters, this property lists all the related field parameters.
 * Supports Desktop June 2024
 
+## API v5.9.1
+
+* [`acquireAADTokenService`](./authentication-api.md): Enhanced to support the following clouds.
+  * Commercial Cloud
+  * China Cloud
+  * US Government Community Cloud
+  * US Government Community Cloud High
+  * US Department of Defense Cloud
+
 ## API v5.9.0
 
 * [**Hierarchial identity filter API**](./hierarchy-filter-api.md): Allows you to create a visual that uses Matrix DataView Mapping to filter data based on data points that use a hierarchal structure. This is useful for custom visuals that leverage group-on keys semantic models and want to filter hierarchies based on data points.
+* [`acquireAADTokenService`](./authentication-api.md): Extended with additional properties
 * Supports Desktop March 2024
 
 ## API v5.8.0
 
-* [**Local storage API**](./local-storage.md): A new version of local storage API available for all custom visuals and controlled by a global admin setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
+* [**Local storage API**](./local-storage.md): A new version of local storage API available for all custom visuals and controlled by a global setting that is *on* by default. The admin can Turn off the global setting to disable both the legacy API and the new version of the API.
 * [**On-object support for custom visuals**](./on-object-formatting-api.md): On object support for custom visuals to optimize the user experience and provide a unified authoring experience on par with out of the box visuals.
 * Supports Desktop February 2024
 

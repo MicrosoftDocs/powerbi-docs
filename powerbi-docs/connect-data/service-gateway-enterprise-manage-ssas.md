@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
 ms.date: 02/15/2023
-ms.custom: video-Qb5EEjkHoLg, video-eATPS-c7YRU
+ms.custom: video-removed, video-removed
 LocalizationGroup: Gateways
 ---
 # Manage SQL Server Analysis Services data sources
@@ -39,7 +39,7 @@ To connect to either a multidimensional or tabular Analysis Services data source
 
    > [!NOTE]
    > The Windows account you enter must be a member of the Server Administrator role on the Analysis Services instance you're connecting to. If this account's password is set to expire, users get a connection error unless you update the data source password. For more information about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
-   
+
 1. Configure the **Privacy level** for your data source. This setting controls how data can be combined for scheduled refresh. The privacy-level setting doesn't apply to live connections. To learn more about privacy levels for your data source, see [Set privacy levels (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/privacy-level-setting.png" alt-text="Screenshot of the Privacy level setting." :::
@@ -52,25 +52,11 @@ You can now use this data source for scheduled refresh or live connections again
 
 ## User names for Analysis Services
 
-To learn about authentication with Analysis Services live connections in Power BI, watch this video:
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/Qb5EEjkHoLg]
-
 Each time a user interacts with a report connected to Analysis Services, the effective user name passes to the gateway and then passes on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI passes to Analysis Services as the effective user in the [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#effectiveusername) connection property.
 
 The email address must match a defined user principal name (UPN) within the local Active Directory (AD) domain. The UPN is a property of an AD account. The Windows account must be present in an Analysis Services role. If a match can't be found in AD, the sign-in isn't successful. To learn more about AD and user naming, see [User naming attributes](/windows/win32/ad/naming-properties).
 
 ## Map user names for Analysis Services data sources
-
-You can also map your Power BI sign-in name to a local directory UPN. To learn about UPN mapping in Power BI, watch this video:
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/eATPS-c7YRU]
 
 Power BI allows mapping user names for Analysis Services data sources. You can configure rules to map a Power BI sign-in user name to an `EffectiveUserName` that passes to the Analysis Services connection. This feature is a great workaround when your Microsoft Entra user name doesn't match a UPN in your local Active Directory instance. For example, if your email address is `meganb@contoso.onmicrosoft.com`, you can map it to `meganb@contoso.com`, and that value passes on to the gateway.
 

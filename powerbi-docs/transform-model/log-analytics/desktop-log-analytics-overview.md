@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 08/04/2024
 LocalizationGroup: Transform and shape data
 ---
 # Using Azure Log Analytics in Power BI
@@ -22,19 +22,7 @@ Once connected to Power BI, data is sent continuously and is available in Log An
 
 :::image type="content" source="media/desktop-log-analytics-overview/log-analytics-01.png" alt-text="Diagram of how Azure Monitor works with Power BI.":::
 
-The following sections describe the integration of Azure Log Analytics with Power BI, the requirements necessary to connect Azure Log Analytics to Power BI, and considerations to keep in mind.
-
-
-## Available scopes for logging
-
-An Azure Log Analytics connection is currently supported for Premium workspaces in Power BI. The following table provides more information about the Workspace-level Log Analytics configuration.
-
-
-|**Configuration level**  |**Role / permission**  |**Destination Table in Log Analytics**  |**Details**  |
-|---------|---------|---------|---------|
-|Workspace     |Power BI workspace owner, or Log Analytics workspace owner     |PowerBIDatasetsWorkspace  |- Must be allowed by the tenant administrator<br>- Logs activity from the workspace only<br>- Premium workspaces only<br>- Workspace v2 only |
-
-The following section provides examples of how you might put logging to use in Power BI.
+The following sections describe the integration of Azure Log Analytics with Power BI. Refer to [Configuring Azure Log Analytics in Power BI](./desktop-log-analytics-configure.md) for requirements necessary to connect Azure Log Analytics to Power BI, and considerations to keep in mind.
 
 ## Examples of logging scenarios
 

@@ -3,12 +3,11 @@ title: Conditional formatting of Power BI custom visuals
 description: Learn how to customize your Power BI visual by applying conditional formatting functionality based on data values.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: ""
-featuredvideoid: ''
+ms.reviewer: Jenny, Aleksei
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 1/12/2024
+ms.date: 08/19/2024
 #customer intent: As a Power BI visual developer, I want to learn how to apply conditional formatting to my custom visual so I can customize the visual appearance based on the data values.
 ---
 
@@ -18,12 +17,7 @@ ms.date: 1/12/2024
 
 This article describes how to add the conditional formatting functionality to your Power BI visual.
 
-Conditional formatting can only be applied to the following property types:
-
-* Color
-* Text
-* Icon
-* Web URL
+Currently, conditional formatting can only be applied to color.
 
 ## Add conditional formatting to your project
 

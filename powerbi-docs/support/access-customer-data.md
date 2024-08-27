@@ -3,7 +3,7 @@ title: Consent to access customer data
 description: Getting customer's consent to access their data.
 author: royrubinstein  
 ms.author: mihart  
-ms.service: fabric
+ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/31/2023
 ---

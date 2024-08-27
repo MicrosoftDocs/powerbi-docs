@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-fundamentals
 ms.topic: conceptual
-ms.date: 07/08/2024
+ms.date: 07/25/2024
 LocalizationGroup: Get started
 ---
 # Supported browsers for Power BI and Fabric
@@ -17,10 +17,10 @@ Power BI and Fabric are designed to work with any of the supported modern browse
 Power BI and Fabric work with these browsers on all platforms where they're available:
 
 - Microsoft Edge version 120 and newer.
-- Chrome desktop newest version (older than Chrome 94) and Windows 10 version 1703 and newer.
+- Chrome desktop newest version (newer than Chrome 94) and Windows 10 version 1703 and newer.
 - Safari Mac newest version.
 - Safari 16.4 and newer.
-- Firefox desktop newest version (older than version 93). Firefox might change the fonts used in Power BI.
+- Firefox desktop newest version (newer than version 93). Firefox might change the fonts used in Power BI.
 
 > [!NOTE]
 > Power BI and Fabric don't run in any browsers in iOS10 or previous versions.

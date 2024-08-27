@@ -16,6 +16,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-recent.md",
+            "redirect_url": "/power-bi/consumer/end-user-basic-concepts/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/troubleshoot/known-issues/power-bi-known-issues.md",
             "redirect_url": "/fabric/get-started/fabric-known-issues",
             "redirect_document_id": false
@@ -657,8 +662,8 @@
         },
         {
             "source_path": "powerbi-docs/mobile-oauth-ssrs.md",
-            "redirect_url": "/power-bi/consumer/mobile/mobile-oauth-ssrs",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/report-server/mobile-oauth-ssrs",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-pin-dashboard-start-screen-windows-10-phone-app.md",
@@ -2996,7 +3001,7 @@
         },
         {
             "source_path": "powerbi-docs/enterprise/service-security-sensitivity-label-mandatory-label-policy.md",
-            "redirect_url": "/fabric/governance/service-security-sensitivity-label-mandatory-label-policy",
+            "redirect_url": "/fabric/governance/mandatory-label-policy",
             "redirect_document_id": false
         },
         {
@@ -3043,6 +3048,16 @@
             "source_path": "powerbi-docs/enterprise/power-bi-allow-list-urls.md",
             "redirect_url": "/fabric/security/power-bi-allow-list-urls",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/report-server/azure-application-proxy.md",
+            "redirect_url": "/power-bi/report-server/microsoft-entra-application-proxy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/mobile/mobile-oauth-ssrs.md",
+            "redirect_url": "/power-bi/report-server/mobile-oauth-ssrs",
+            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/enterprise/directlake-overview.md",
@@ -5698,7 +5713,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-workspaces.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-workspaces",
+            "redirect_url": "/fabric/admin/portal-workspaces",
             "redirect_document_id": false
         },
         {
@@ -6109,11 +6124,6 @@
         {
             "source_path": "powerbi-docs/enterprise/service-premium-capacity-manage.md",
             "redirect_url": "/fabric/admin/capacity-settings",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/enterprise/service-premium-features.md",
-            "redirect_url": "/fabric/enterprise/fabric-operations",
             "redirect_document_id": false
         },
         {

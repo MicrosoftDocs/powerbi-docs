@@ -106,5 +106,4 @@ The following limitations refer to the display icon text:
 
 ## Related content
 
->[!div class="nextstepaction"]
->[DataViewUtils](utils-dataview.md)
+[DataViewUtils](utils-dataview.md)

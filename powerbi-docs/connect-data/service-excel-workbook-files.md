@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 11/10/2023
-ms.custom: video-l2wy4XgQIu0
+ms.custom: video-removed
 LocalizationGroup: Data from files
 ---
 
@@ -128,15 +128,6 @@ If you upload from OneDrive for Business, when you save changes, Power BI synchr
 
 > [!NOTE]
 > Pinned report pages don't support the automatic refresh feature.
-
-## Prepare your workbook for Power BI
-
-Watch this video to learn more about how to make sure your Excel workbooks are ready for Power BI:
-
-> [!NOTE]  
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/l2wy4XgQIu0]
 
 ## Where to save your workbook file
 

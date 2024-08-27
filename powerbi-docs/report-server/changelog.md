@@ -43,9 +43,11 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Desktop (optimized for Power BI Report Server)
 
-- *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*   
+- *Version: 2.129.2203.0 (May 2024), Released: July 12, 2024*
    - Bug fixes
     - Fixed issue with measures not appearing in PBIT with certain data sources.
+   - Features
+     - Fixed issue with direct connect reports causing issues in Power BI Desktop for RS.
 
 - *Version: 2.129.1127.0 (May 2024), Released: May 28, 2024*   
    - Features

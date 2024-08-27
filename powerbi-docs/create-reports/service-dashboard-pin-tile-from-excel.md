@@ -4,7 +4,7 @@ description: Learn how to pin a tile to a Power BI dashboard from Excel on OneDr
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
-ms.custom: video-l8JoB7w0zJA
+ms.custom: video-removed
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
@@ -20,13 +20,6 @@ Before you can pin a tile from your Excel workbook, you must connect that workbo
 If a workbook has been shared with you, you can view the tiles pinned by the owner but can't create any dashboard tiles yourself.
 
 For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](/power-bi/connect-data/service-excel-workbook-files).
-
-Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.
-
-> [!NOTE]
-> This video might use earlier versions of Power BI Desktop or the Power BI service.
-
-> [!VIDEO https://www.youtube.com/embed/l8JoB7w0zJA]
 
 ## Connect your Excel workbook from OneDrive for work or school to Power BI
 
