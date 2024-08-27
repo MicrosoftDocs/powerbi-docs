@@ -102,8 +102,6 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 1. In the Power BI service, go to your workspace and locate the **AdventureWorksProducts** semantic model in the workspace content list.
 
-   ![Screenshot that shows selecting Settings on the Power BI Home page.](./media/service-gateway-sql-tutorial/power-bi-settings.png)
-
 1. Select the **More options** three horizontal dots icon next to the name of the semantic model, then choose **Settings**.
 
 1. Expand **Gateway and cloud connections** and verify that at least one gateway is listed. If you don't see a gateway, make sure you followed the instructions to [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
@@ -165,7 +163,7 @@ With a configured refresh schedule, Power BI refreshes your semantic model at th
 
 ## Refresh on demand
 
-To refresh the data anytime, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh now** option in the ribbon at the top of the semantic model settings page. You can also find the **Refresh now** option in the workspace content list next to the name of the semantic model. On-demand refreshes don't affect the next scheduled refresh time.
+To refresh the data anytime, such as to test your gateway and data source configuration, you can do an on-demand refresh by using the **Refresh now** option in the ribbon at the top of the semantic model settings page. You can also find this option in the workspace content list next to the name of the semantic model. On-demand refreshes don't affect the next scheduled refresh time.
 
 To illustrate an on-demand refresh, first change the sample data by using SSMS to update the `DimProduct` table in the AdventureWorksDW2017 database, as follows:
 
