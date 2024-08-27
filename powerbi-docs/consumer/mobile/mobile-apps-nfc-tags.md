@@ -49,12 +49,12 @@ Power BI reports, dashboards, apps, scorcards, workspaces, and folders.
 
 ## Register an item on an NFC tag
 
-To enable users to be able to open a report by tapping their devices on an NFC tag, you have to register the report on the tag.
+To enable users to be able to open an item by tapping their devices on an NFC tag, you first have to register the report on the tag.
 
 > [!NOTE]
 > When you register an item on an NFC tag, anything previously registered on the tag will be overwritten.
 
-1. Launch the Power BI mobile app and open the view you want to register on the NFC tag.
+1. Launch the Power BI mobile app, open the item you want to register on the NFC tag. If the item is a report, filter the report as you want the users to see it when they open the report via the NFC tag.
 
 1. Hold the device close to the tag, select the options menu, and tap **Register on an NFC tag (preview)**.
 
@@ -62,17 +62,21 @@ To enable users to be able to open a report by tapping their devices on an NFC t
 
 1. On the **Register on NFC tag** screen that appears, select your desired options and then tap **Start scanning NFC tag**.
 
+    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-start-scanning.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
+
     * **Register in full screen**: When users tap their devices on the tag, the registered item will open in full-screen mode. 
-    * **Register this report in its current state** (this option is only available for reports): When users tap their devices on the tag, the report will open in the state you set up.
+    * **Register this report in its current state** (this option is only available for reports): When users tap their devices on the tag, the report will open in the state you set up when you registered the report.
 
         > [!NOTE]
-        > The current state is preserved for 180 days. If the tag isn't read within this period, this "current state" is forgotten and the report will open in the state it opens in in the Power BI service. Every time the tag is read, the current state (if any) is renewed for another 180 days.
-
-    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-start-scanning.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
+        > The current state is preserved for 180 days. If the tag isn't read during this time, the "current state" is forgotten and the report will open in the state it opens in in the Power BI service. Every time the tag is read, the current state (if any) is renewed for another 180 days.
 
 ## Read an NFC tag to access an item
 
 To read the NFC tag, tap the tag with your device.
+
+Tap the tag with your device.
+
+
 
 iOS read flow - possibly Android as well
 * Device setting to use NFC needs to be open in Android
