@@ -37,7 +37,7 @@ To follow along, sign up for an Office 365 E5 trial [on the Microsoft 365 web si
 
 You created a new onmicrosoft.com business account and started a free trial of Office 365. Your trial includes Power BI Pro. 
 
-A different way to try Power BI is to sign up for a trial of Microsoft 365. During the sign up process, create an onmicrosoft.com account. Use the onmicrosoft.com account to [sign up for a trial of the Power BI service as an individual](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
+A different way to try Power BI is to sign up for a trial of Microsoft 365. During the sign-up process, create an onmicrosoft.com account. Use the onmicrosoft.com account to [sign up for a trial of the Power BI service as an individual](../fundamentals/service-self-service-signup-purchase-for-power-bi.md).
 
 ## Important considerations
 
