@@ -20,7 +20,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 ### Power BI Report Server
 
-*Version:1.20.8959.12285 (build 15.0.1115.206), Released: July 12, 2024*
+- *Version:1.20.8959.12285 (build 15.0.1115.206), Released: July 12, 2024*
   - Bug fixes
     - Fixed issue with custom visuals failing to load initially in Power BI reports.
     - Fixed issue with not applying styles to Matrix visuals in certain Power BI reports.
