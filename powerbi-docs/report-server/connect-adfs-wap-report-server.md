@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 08/27/2024
+ms.date: 08/28/2024
 ---
 
 # Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server
@@ -16,7 +16,7 @@ This article discusses how to use Web Application Proxy (WAP) and Active Directo
 
 <a name="windows-server-upgrade-note"></a>
 > [!NOTE]
-> As of March 1st, 2025, the Power BI Mobile app will no longer be able to connect to Report Server through AD FS configured on Windows Server 2016. Customers who use OAuth with AD FS configured on Windows Server 2016 and Web Application Proxy (WAP) will have to upgrade their AD FS server to Windows Server 2019 or later, or use [Microsoft Entra application proxy](./microsoft-entra-application-proxy.md). After the Windows Server upgrade, Power BI Mobile app users may have to re-sign in to Report Server.
+> As of March 1st, 2025, the Power BI Mobile app will no longer be able to connect to Report Server using the OAuth protocol through AD FS configured on Windows Server 2016. Customers who use OAuth with AD FS configured on Windows Server 2016 and Web Application Proxy (WAP) will have to upgrade their AD FS server to Windows Server 2019 or later, or use [Microsoft Entra application proxy](./microsoft-entra-application-proxy.md). After the Windows Server upgrade, Power BI Mobile app users may have to re-sign in to Report Server.
 >
 > This upgrade is necessitated by a change in the authentication library used by the mobile app. The change in no way affects Microsoft support for AD FS on Windows Server 2016, but rather only the ability of the Power BI Mobile app to connect to it.
 
