@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/28/2024
+ms.date: 08/29/2024
 ---
 
 # Connect to Power BI Report Server and SSRS from Power BI mobile applications
