@@ -1,7 +1,7 @@
 {:allowed-branchname-matches ["main" "release-.*"]
  :allowed-filename-matches ["powerbi-docs/"]
  
- :guidance-profile "1889ea46-76de-460c-a27c-6667b60e201e" ;; testing March 2023 updated guidelines - Microsoft standard.
+ :guidance-profile "ddd70715-fa0d-3b81-98b1-11d94b0e731a" ;; Microsoft standard.
  
  :template-header ;; This displays in the pull request results pane.
  "
