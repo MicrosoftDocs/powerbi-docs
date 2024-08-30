@@ -101,18 +101,20 @@ Applications connecting to the workspace use the URL as if it were an Analysis S
 
 `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
-Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example:
-
-`powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
-
-B2B users must specify their organization UPN in tenant name. For example:
-
-`powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
-
-To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
-
 > [!NOTE]
 > Connecting to a [**My Workspace**](../consumer/end-user-workspaces.md#types-of-workspaces) by using the XMLA endpoint is currently not supported.
+
+#### B2B and guest users
+
+When users access workspace in their home tenant, the tenant name section in the URL can be replaced by `myorg`. For example:
+
+<code> powerbi://api.powerbi.com/v1.0/<b>myorg</b>/Sales Workspace</code>.
+
+When B2B\guest users users access workspace in a different tenantnt, the resource tenant name must be specified. For example, when a contoso.com user is invited to fabrikam.com tenant and granted permission to "Sales Workspace", they must use below URL to connect:
+
+<code> powerbi://api.powerbi.com/v1.0/<b>fabrikam.com</b>/Sales Workspace</code>.
+
+To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 ### To get the workspace connection URL
 
