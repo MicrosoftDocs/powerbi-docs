@@ -127,7 +127,7 @@ The following table describes the **schema**.
 | Property | Existing Azure Analysis Services property | Description |
 | --- | --- | --- |
 | **TimeGenerated** | | The timestamp (UTC) of when the log was generated. |
-| **OperationName** | EventClass_s | The Analysis Services trace event associated with the log record. Refer to [AS Trace Events](/analysis-services/trace-events/analysis-services-trace-events) documentation for more details about possible values.|
+| **OperationName** | EventClass_s | The Analysis Services trace event associated with the log record. Refer to AS Trace Events [documentation](/analysis-services/trace-events/analysis-services-trace-events) page for more details about possible events for each category.|
 | **CorrelationId** | | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | **PowerBIWorkspaceId** | | Unique identifier of the workspace containing the artifact being operated on. |
 | **PremiumCapacityId** | | Unique identifier of the Premium capacity hosting the artifact being operated on. |
@@ -137,7 +137,7 @@ The following table describes the **schema**.
 | **ArtifactKind** | | Type of artifact logging the operation, for example, semantic model. |
 | **CpuTimeMs** | CPUTime_s | Amount of CPU time (in milliseconds) used by the event. |
 | **ArtifactName** | DatabaseName_s | The name of the Power BI artifact logging this operation. |
-| **LogAnalyticsCategory**  | Unique | Category of the events, like Audit/Security/Request. |
+| **LogAnalyticsCategory**  | Unique | The Analysis Services trace event category associated with the log record. Refer to AS Trace Events [documentation](/analysis-services/trace-events/analysis-services-trace-events) page for more details about possible event categories.|
 | **DatasetMode** | | The mode of the semantic model. Import, DirectQuery, or Composite. |
 | **DurationMs** | Duration_s | Amount of time (in milliseconds) taken by the operation. |
 | **User** | User_s | The user associated with the running operation. Used when an end-user identity must be impersonated on the server. |
