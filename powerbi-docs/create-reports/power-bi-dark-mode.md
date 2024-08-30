@@ -14,13 +14,19 @@ LocalizationGroup: Create reports
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-When you create reports in Power BI Desktop, you can choose different modes, depending on what you're more comfortable looking at. *Dark mode* replaces all the chrome around the design surface with white-on-black text instead of black-on-white.
+When you create reports in Power BI Desktop, you can choose different modes, depending on what you're more comfortable looking at. For example, *Dark mode* replaces all the chrome around the design surface with white-on-black text instead of black-on-white.
 
-When you open Power BI Desktop, select **Dark mode**.
+## Select a mode
 
-:::image type="content" source="media/power-bi-dark-mode/dark-mode-select.png" alt-text="Select Dark mode to change Power BI Desktop appearance.":::
+1. Got to **File** > **Options and settings** > **Options** > **Global** > **Report settings**.
+1. In the **Personalization** section, select the theme you want:
 
-There's a Dark mode for every window in Power BI Desktop:
+    - Default mode
+    - Dark mode
+    - Light mode
+    - User system mode
+
+There's a mode for every window in Power BI Desktop. For example, for dark mode:
 
 - [Report view](#report-view)
 - [Model view](#model-view)
@@ -29,21 +35,21 @@ There's a Dark mode for every window in Power BI Desktop:
  
 ## Report view
 
-:::image type="content" source="media/power-bi-dark-mode/dark-mode-report-view.png" alt-text="Dark mode for report view.":::
+:::image type="content" source="media/power-bi-dark-mode/dark-mode-report-view.png" alt-text="Screenshot of Dark mode for report view." lightbox="media/power-bi-dark-mode/dark-mode-report-view.png":::
 
 ## Model view
 
-:::image type="content" source="media/power-bi-dark-mode/dark-mode-model-view.png" alt-text="Dark mode for model view.":::
+:::image type="content" source="media/power-bi-dark-mode/dark-mode-model-view.png" alt-text="Screenshot of Dark mode for model view." lightbox="media/power-bi-dark-mode/dark-mode-model-view.png":::
 
 ## Table view
 
-:::image type="content" source="media/power-bi-dark-mode/dark-mode-table-view.png" alt-text="Dark mode for table view.":::
+:::image type="content" source="media/power-bi-dark-mode/dark-mode-table-view.png" alt-text="Screenshot of Dark mode for table view." lightbox="media/power-bi-dark-mode/dark-mode-table-view.png":::
 
 ## DAX query view
 
-:::image type="content" source="media/power-bi-dark-mode/dark-mode-dax-query-view.png" alt-text="Dark mode for DAX query view.":::
+:::image type="content" source="media/power-bi-dark-mode/dark-mode-dax-query-view.png" alt-text="Screenshot of Dark mode for DAX query view." lightbox="media/power-bi-dark-mode/dark-mode-dax-query-view.png":::
 
-Try Dark mode and see which you prefer.
+Try the different modes and see which you prefer.
 
 ## See also
 
