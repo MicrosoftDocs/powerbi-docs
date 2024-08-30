@@ -21,10 +21,12 @@ When you create reports in Power BI Desktop, you can choose different modes, dep
 1. Got to **File** > **Options and settings** > **Options** > **Global** > **Report settings**.
 1. In the **Personalization** section, select the theme you want:
 
-    - Default mode
-    - Dark mode
-    - Light mode
-    - User system mode
+    - **Default mode**: The classic white theme that is currently standard for the desktop application.
+    - **Dark mode**: The newly introduced dark theme that transforms your desktop application with a darker interface.
+    - **Light mode**: A fresh white theme with updated stylings for a more modern look.
+    - **User system mode**: Adapts the theme based on your Windows system settings.
+
+1. Select **OK** and the theme is automatically applied. You don't need to restart the application.
 
 There's a mode for every window in Power BI Desktop. For example, for dark mode:
 
