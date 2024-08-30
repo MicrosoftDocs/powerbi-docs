@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.topic: conceptual
-ms.date: 02/15/2024
+ms.date: 08/29/2024
 LocalizationGroup: Dashboards
 ---
 
@@ -430,7 +430,7 @@ Follow these steps to delete the semantic model and then create a fresh data ref
     > [!NOTE]
     > This **Try it** button does not apply to GCC customers since their API endpoint is different.
 
-    You can use this API to delete the semantic model. You can use Postman or other API tools to make an API call on this endpoint to delete the semantic model. 
+    You can use this API to delete the semantic model. You can use API tools to make an API call on this endpoint to delete the semantic model. 
 
 1. If you don't see a **Try it** button, use the trigger **Scheduled cloud flow**. Select a starting time and run it every hour. Then refresh the semantic model. Let the flow run once, then switch off the flow. Read more about [cloud flows in Power Automate](/power-automate/run-scheduled-tasks).
     
