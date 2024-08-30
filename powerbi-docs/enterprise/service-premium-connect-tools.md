@@ -110,7 +110,7 @@ When users access workspace in their home tenant, the tenant name section in the
 
 <code> powerbi://api.powerbi.com/v1.0/<b>myorg</b>/Sales Workspace</code>.
 
-When B2B\guest users users access workspace in a different tenantnt, the resource tenant name must be specified. For example, when a contoso.com user is invited to fabrikam.com tenant and granted permission to "Sales Workspace", they must use below URL to connect:
+When B2B\guest users access workspace in a different tenantnt, that tenant name must be specified in the data source URL. For example, when a contoso.com user is invited to fabrikam.com tenant and granted permission to "Sales Workspace", they must use below URL to connect:
 
 <code> powerbi://api.powerbi.com/v1.0/<b>fabrikam.com</b>/Sales Workspace</code>.
 
