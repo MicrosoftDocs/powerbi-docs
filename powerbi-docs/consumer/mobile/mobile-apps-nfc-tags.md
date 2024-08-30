@@ -27,6 +27,20 @@ Connect between data and the physical world.
 About
 What is NFC
 
+Let's say you're managing the inventory of a chain of bicycle stores. You've got all the data you need in Power BI reports.  using Power BI reports. , and you want to  want to register a report on an nfc tag to manage the inventory of a bicyle retail chain named Advaneture works. I plan to place the nfc tag next to the mountain bike section, so I begin by filtering the report to focus on this specifc product group. Register three dots, current state to get filter. Can choose full screen or regular.
+
+Scan tap, done. Tag now configured this report filtered to mountain bikes. Now put the tag near the mountain bike section.
+
+Once configured in desired location. Can use it to get quick access to the data. Can now do the same thing for the other product categories using other tags, and placing them in the right place.
+
+Can overwrite if you want to configure a new report.
+
+Let’s say you use a set of reports to manage an inventoary. You can create an app that contains several items, and then register the app on the tag. By tapping the tag, the app will open and then the user can choose the desired report. Another possibility for providing quick access to multiple items is to register the workspace or folder they’re. In this case tapping the tag will open the folder or workspace, afterwhich the user can choose their desired item. If they don’t have access to an item, they get the request access flow. 
+
+Anyone with the Power BI app can read the tag. The app doesn’t need to be open while reading. When you get the push notification, if you tap it, the item will open immediately. In iOS, you can also open the scanner to read a tag by opening the more options menu and tapping Read NFC .
+
+
+
 For frontline workers - could be used for inventory management, manufacturing, healthcare...
 Different scenarios - an item per NFC tag, set of items (app, workspace, folder) in the entrance of a floor.
 Use apps to share multiple items
