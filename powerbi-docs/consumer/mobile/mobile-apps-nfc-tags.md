@@ -27,7 +27,11 @@ Connect between data and the physical world.
 About
 What is NFC
 
-Let's say you're managing the inventory of a chain of bicycle stores. You've got all the data you need in Power BI reports.  using Power BI reports. , and you want to  want to register a report on an nfc tag to manage the inventory of a bicyle retail chain named Advaneture works. I plan to place the nfc tag next to the mountain bike section, so I begin by filtering the report to focus on this specifc product group. Register three dots, current state to get filter. Can choose full screen or regular.
+Let's say you want to use NFC tags to help manage the inventory of a chain of bicycle stores, and you want to use NFC tags to help manage the inventory.You've got all the data you need in a Power BI report that you can filter in order to see the inventory of each store, and of each department in each store. NFC tags can make it easy for inventory takers to quickly get information about each section. To set this up, you could put an NFC tag next to each section that would open the Power BI report to the relevant data when the inventory taker taps their phone on the tag. , and you want to  want to register a report on an nfc tag to manage the inventory of a bicyle retail chain named Advaneture works. I plan to place the nfc tag next to the mountain bike section, so I begin by filtering the report to focus on this specifc product group. Register three dots, current state to get filter. Can choose full screen or regular.
+
+You want to use NFC tags to help manage the inventory. Start by filtering the report to focus on the mountain bikes department, [register the report](#register-an-item-on-an-nfc-tag) on the NFC tag, and then place the tag next to the department. Repeat this process for all the departments in the store. Later, store employees can [tap the tag with their phone to open the report to the relevant data](#read-an-nfc-tag-to-access-an-item).
+
+Now let's say that later you rearrange the store, moving the sports bikes to where the mountain bikes were and moving the mountain bikes to where the childrens bikes were. You don't have to move the NFC tags - you can just overwrite the previous report registration with a new one so that it now points to the relevant data.
 
 Scan tap, done. Tag now configured this report filtered to mountain bikes. Now put the tag near the mountain bike section.
 
@@ -58,7 +62,7 @@ Power BI reports, dashboards, apps, scorcards, workspaces, and folders.
 * NFC tags: High quality NFC tags that are compatible with the NFC Data Exchange Format (NDEF). Minimum memory required: 504 bytes.
 * Mobile device:
     * Mobile devices must be compatible to work with NFC and be able to read tags of types 1 through 5 that contain data in NDEF. Only compatible devices can see the Power BI mobile app NFC feature.
-    The * Power BI mobile app must be installed on the device.
+    * The Power BI mobile app must be installed on the device.
     * On Android devices, the NFC setting must be enabled.
 
 ## Register an item on an NFC tag
