@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 10/24/2023
+ms.date: 09/01/2024
 LocalizationGroup: Transform and shape data
 ---
 # Query overview in Power BI Desktop
