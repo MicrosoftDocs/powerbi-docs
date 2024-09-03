@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Customize padding
+###### Customize padding
 
 Activating this toggle unveils a suite of controls for granular padding adjustments:
 **- Inner column padding:** Modifies vertical padding within each grid.

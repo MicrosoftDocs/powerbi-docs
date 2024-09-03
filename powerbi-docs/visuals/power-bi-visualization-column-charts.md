@@ -36,7 +36,7 @@ Depending on the unique needs of your analysis, you can choose from three distin
 [!INCLUDE [prerequisites-desktop-preview-features-on-object-unselected](../includes/core-visuals/prerequisites-desktop-preview-features-on-object-unselected.md)]
 [!INCLUDE [prerequisites-desktop-download-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-desktop-download-retail-analysis-sample-pbix.md)]
 
-# [Power BI Service](#tab/powerbi-service)
+# [Power BI service](#tab/powerbi-service)
 
 [!INCLUDE [prerequisites-service-open-retail-analysis-sample-pbix](../includes/core-visuals/prerequisites-service-open-retail-analysis-sample-pbix.md)]
 
@@ -45,7 +45,7 @@ Depending on the unique needs of your analysis, you can choose from three distin
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
 
-## Build a column chart
+## Create a column chart
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
@@ -76,9 +76,9 @@ You've now successfully created a column chart with Power BI Desktop. Take some 
 
 # [Power BI service](#tab/powerbi-service)
 
-Before we begin, if you haven't already done so, refer to the **Prerequisites** section above, and follow the steps under the tab for **Power BI Service**.
+Before we begin, if you haven't already done so, refer to the **Prerequisites** section above, and follow the steps under the tab for **Power BI service**.
 
-For this example, let’s create a column chart starting from the **Visualizations pane** in **Power BI Service**.
+For this example, let’s create a column chart starting from the **Visualizations pane** in **Power BI service**.
 
 1. To create your column chart, we'll start in the **Visualizations pane**. With the **Build visual** icon selected, choose any **Column chart** icon, and a visual placeholder is added to the canvas.
 
@@ -103,14 +103,10 @@ You've now successfully created a column chart with Power BI Service. Take some 
 
 ---
 
-## Considerations and technical aspects
-
-### Considerations
-
-### Technical aspects
-
 ## Related content
 
 * [Format settings for column charts](power-bi-visualization-column-charts-format-settings.md)
+* [Considerations and limitations for column charts](power-bi-visualization-column-charts-considerations.md)
+* [Format column and bar charts](power-bi-visualization-column-bar-format.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
