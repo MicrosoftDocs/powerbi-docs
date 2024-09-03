@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 09/03/2024
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -106,15 +106,15 @@ Applications connecting to the workspace use the URL as if it were an Analysis S
 
 #### B2B and guest users
 
-When users access workspace in their home tenant, the tenant name section in the URL can be replaced by `myorg`. For example:
+When users access a workspace in their home tenant, the tenant name section in the URL can be replaced by `myorg`. For example:
 
 <code> powerbi://api.powerbi.com/v1.0/<b>myorg</b>/Sales Workspace</code>.
 
-When B2B\guest users access workspace in a different tenantnt, that tenant name must be specified in the data source URL. For example, when a contoso.com user is invited to fabrikam.com tenant and granted permission to "Sales Workspace", they must use below URL to connect:
+When B2B\guest users access workspaces in a different tenant, that tenant name must be specified in the data source URL. For example, when a contoso.com user is invited to the fabrikam.com tenant and granted permission to "Sales Workspace", they must use the below URL to connect:
 
 <code> powerbi://api.powerbi.com/v1.0/<b>fabrikam.com</b>/Sales Workspace</code>.
 
-To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
+To determine the primary domain name and ID of a tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 ### To get the workspace connection URL
 
