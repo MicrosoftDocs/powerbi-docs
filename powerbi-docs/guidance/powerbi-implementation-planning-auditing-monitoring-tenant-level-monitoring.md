@@ -246,7 +246,7 @@ Common Azure services that integrate with Power BI include:
 - **Data sources:** It's likely that you have many types of [data sources](/power-bi/connect-data/power-bi-data-sources) that Power BI connects to. Data sources could be Azure Analysis Services, Azure SQL Database, Azure Synapse Analytics, Azure storage, and others.
 - **Virtual machines:** A [data gateway](/power-bi/connect-data/service-gateway-onprem) for Power BI could run on a virtual machine (VM) in Azure. Or, a database containing data that's used as a data source for Power BI might run on a VM in Azure.
 - **Virtual network data gateway:** A [virtual network (VNet) data gateway](/data-integration/vnet/overview) could be implemented to securely access data sources in a private network.
-- **Azure Key Vault:** One common way to use Azure Key Vault is for customer management of the encryption keys for data at-rest in the Power BI service. For more information, see [bring your own key](/power-bi/enterprise/service-encryption-byok) (BYOK).
+- **Azure Key Vault:** One common way to use Azure Key Vault is for customer management of the encryption keys for data at-rest in the Power BI service. For more information, see [Bring your own encryption keys for Power BI](/power-bi/enterprise/service-encryption-byok).
 - **Microsoft Purview:** Used by [Microsoft Purview Information Protection](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md), or by Microsoft Purview Data Catalog to [scan your Power BI tenant](/azure/purview/register-scan-power-bi-tenant?tabs=Scenario1&preserve-view=true), to extract metadata.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
