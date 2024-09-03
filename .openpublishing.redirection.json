@@ -5663,7 +5663,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-capacity-settings.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-capacity-settings",
+            "redirect_url": "/fabric/admin/capacity-settings",
             "redirect_document_id": false
         },
         {
