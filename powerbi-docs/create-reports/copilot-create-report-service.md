@@ -20,7 +20,7 @@ ms.collection: ce-skilling-ai-copilot
 
 When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
 
-:::image type="content" source="media/copilot-create-report/copilot-create-internet-sales-trends.png" alt-text="Screenshot showing Copilot creating internet sales trend report page." lightbox="media/copilot-create-report/copilot-create-internet-sales-trends.png":::
+:::image type="content" source="media/copilot-create-report/copilot-create-sales-performance.png" alt-text="Screenshot showing Copilot creating sales performance analysis." lightbox="media/copilot-create-report/copilot-create-sales-performance.png":::
 
 ## Before you start
 
