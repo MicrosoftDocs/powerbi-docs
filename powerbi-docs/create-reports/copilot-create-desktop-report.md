@@ -22,7 +22,7 @@ When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use th
 
 To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
-:::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-perf-desktop.png" alt-text="Screenshot showing Copilot creating a page about sales performance." lightbox="media/copilot-create-desktop-report/copilot-create-sales-perf-desktop.png":::
+:::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png" alt-text="Screenshot showing Copilot creating a page about sales performance." lightbox="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png":::
 
 ## Before you start
 
@@ -82,7 +82,7 @@ You can change the selected workspace to another Copilot-compatible workspace an
 
     Copilot creates that page.
 
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-perf-desktop.png" alt-text="Screenshot of Copilot creating the Sales Performance page." lightbox="media/copilot-create-desktop-report/copilot-create-sales-perf-desktop.png":::
+    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png" alt-text="Screenshot of Copilot creating the Sales Performance page." lightbox="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png":::
 
     Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 
