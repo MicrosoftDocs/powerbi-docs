@@ -18,7 +18,7 @@ When you create reports in Power BI Desktop, you can choose different modes, dep
 
 ## Select a mode
 
-1. Got to **File** > **Options and settings** > **Options** > **Global** > **Report settings**.
+1. Go to **File** > **Options and settings** > **Options** > **Global** > **Report settings**.
 1. In the **Personalization** section, select the theme you want:
 
     - Default mode
