@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 09/04/2024
 LocalizationGroup: Model your data
 ---
 # Create and manage relationships in Power BI Desktop
