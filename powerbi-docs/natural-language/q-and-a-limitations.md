@@ -23,7 +23,7 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 - Live connect to SQL Server Analysis Services (with a gateway)
 - Power BI semantic models
 
-In each of these configurations, row-level security is also supported.
+In each of these configurations, row-level security and object-level security is also supported.
 
 #### DirectQuery support for Q&A (preview)
 
@@ -40,10 +40,7 @@ If the model contains a mix of data sources, we only index import columns or col
 
 ### Data sources not supported
 
-Power BI Q&A doesn't support the following configurations:
-
-- Object level security with any type of data source
-- Reporting Services 
+Power BI Q&A doesn't support Reporting Services.
 
 ## Tooling limitations
 
