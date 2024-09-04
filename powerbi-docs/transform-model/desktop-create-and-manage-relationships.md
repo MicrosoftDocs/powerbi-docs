@@ -9,10 +9,11 @@ ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 09/04/2024
 LocalizationGroup: Model your data
+#customer intent: As a Power BI Desktop user I want to learn to create and manage relationships.
 ---
 # Create and manage relationships in Power BI Desktop
 
-When you have multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports. In most cases you won’t have to do anything. The autodetect feature does it for you. However, sometimes you might have to create relationships yourself, or need to make changes to a relationship. Either way, it’s important to understand relationships in Power BI Desktop and how to create and edit them.
+When you have multiple tables, chances are you'll do some analysis using data from all those tables. Relationships between those tables are necessary to accurately calculate results and display the correct information in your reports. In most cases, you won’t have to do anything. The autodetect feature does it for you. However, sometimes you might have to create relationships yourself, or need to make changes to a relationship. Either way, it’s important to understand relationships in Power BI Desktop and how to create and edit them.
 
 ## Autodetect during load
 
@@ -41,7 +42,7 @@ If none of the tables selected for the relationship has unique values, you'll se
 If you encounter that error, there are a couple ways to fix the issue:
 
 * Use **Remove Duplicates** to create a column with unique values. The drawback to this approach is that you might lose information when duplicate rows are removed.  Often a key (row) is duplicated for good reason.
-* Add an intermediary table made of the list of distinct key values to the model, which will then be linked to both original columns in the relationship.
+* Add an intermediary table made of the list of distinct key values to the model, which is then linked to both original columns in the relationship.
 
 For more information, see this [blog post](/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message).
 
@@ -73,7 +74,7 @@ From the **Model** view do any of the following:
 * Right-click any line between two tables and then choose **Properties**.
 * Select any line between two tables, then choose **Open relationship editor** in the **Properties** pane.
 
-Finally, you can also edit a relationship from any view, right-click or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship and then select **Edit**
+Finally, you can also edit a relationship from any view, right-click, or select the ellipsis to get to the context menu of any table, then select **Manage relationships**, select the relationship, and then select **Edit**
 
 The following image shows a screenshot of the **Edit relationship** window.
 
@@ -85,7 +86,7 @@ Using the **Edit relationships dialog** is a more guided experience for editing 
 
 Editing relationships in the **Properties** pane is a streamlined approach to editing relationships in Power BI. You only see the table names and columns from which you can choose, you aren't presented with a data preview, and the relationship choices you make are only validated when you select **Apply changes**. Using the **Properties** pane and its streamlined approach reduces the number of queries generated when editing a relationship, which might be important for big data scenarios, especially when using DirectQuery connections. Relationships created using the **Properties** pane can also be more advanced than the relationships allowed to be created in the **Edit relationships dialog**.
 
-You can also multi-select relationships in the **Model** view diagram layouts by pressing the Ctrl key and selecting more than one line to choose multiple relationships. Common properties can be edited in the **Properties** pane and **Apply changes** will process the changes in one transaction.
+You can also multi-select relationships in the **Model** view diagram layouts by pressing the Ctrl key and selecting more than one line to choose multiple relationships. Common properties can be edited in the **Properties** pane and **Apply changes** process the changes in one transaction.
 
 Single or multi-selected relationships can also be deleted by pressing *Delete* on your keyboard. You can't undo the delete action, so a dialog prompts you to confirm deleting the relationships.
 
@@ -116,7 +117,7 @@ The **Cross filter direction** option can have one the following settings:
 
 **Both**: For filtering purposes, both tables are treated as if they're a single table. The **Both** setting works well with a single table that has many lookup tables that surround it. An example is a sales actuals table with a lookup table for its department. This configuration is often called a star schema configuration (a central table with several lookup tables). However, if you have two or more tables that also have lookup tables (with some in common) then you wouldn't want to use the **Both** setting. To continue the previous example, in this case, you also have a budget sales table that records target budget for each department. And, the department table is connected to both the sales and the budget table. Avoid the **Both** setting for this kind of configuration.
 
-**Single**: The most common, default direction, which means filtering choices in connected tables work on the table where values are being aggregated. If you import a Power Pivot in Excel 2013 or earlier data model, all relationships will have a single direction.
+**Single**: The most common, default direction, which means filtering choices in connected tables work on the table where values are being aggregated. If you import a Power Pivot in Excel 2013 or earlier data model, all relationships have a single direction.
 
 For more information about when to change cross filter direction, see [Understanding additional options](#understanding-additional-options).
 
@@ -192,7 +193,7 @@ If we look at the **ProjName** column in the **CompanyProject** table, we see th
 
 1. Select **Manage relationships** from the **Modeling** tab.
 2. In **Manage relationships**, select **New** to open the **Create relationship** dialog box, where we can select the tables, columns, and any other settings we want for our relationship.
-3. In the first drop-down list, select **ProjectHours** as the first table, then select the **Project** column. This side is the *many* side of our relationship.
+3. In the first drop-down list, select **ProjectHours** as the first table, then select the **Project** column. This side is the *many sides of our relationship.
 4. In the second drop-down list, **CompanyProject** is preselected as the second table. Select the **ProjName** column. This side is the *one* side of our relationship.
 5. Accept the defaults for the relationship options, and then select **OK**.
 
