@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 09/03/2024
 ms.custom: ''
 LocalizationGroup: Premium
 ---
@@ -101,18 +101,20 @@ Applications connecting to the workspace use the URL as if it were an Analysis S
 
 `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 
-Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example:
-
-`powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
-
-B2B users must specify their organization UPN in tenant name. For example:
-
-`powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
-
-To determine the primary domain name and ID of a Power BI tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
-
 > [!NOTE]
 > Connecting to a [**My Workspace**](../consumer/end-user-workspaces.md#types-of-workspaces) by using the XMLA endpoint is currently not supported.
+
+#### B2B and guest users
+
+When users access a workspace in their home tenant, the tenant name section in the URL can be replaced by `myorg`. For example:
+
+<code> powerbi://api.powerbi.com/v1.0/<b>myorg</b>/Sales Workspace</code>.
+
+When B2B\guest users access workspaces in a different tenant, that tenant name must be specified in the data source URL. For example, when a contoso.com user is invited to the fabrikam.com tenant and granted permission to "Sales Workspace", they must use the below URL to connect:
+
+<code> powerbi://api.powerbi.com/v1.0/<b>fabrikam.com</b>/Sales Workspace</code>.
+
+To determine the primary domain name and ID of a tenant, sign into the Azure portal, select Microsoft Entra ID from the main menu, and then note the information on the Microsoft Entra Overview page. For more information, see [Find the Microsoft Entra tenant ID and primary domain name](/partner-center/find-ids-and-domain-names).
 
 ### To get the workspace connection URL
 
@@ -176,8 +178,8 @@ The following table describes the implications of both settings:
 
 |Setting  |Allow XMLA endpoints and Analyze in Excel with on-premises semantic models = **disabled**  |Allow XMLA endpoints and Analyze in Excel with on-premises semantic models = **enabled**  |
 |---------|---------|---------|
-|**Users can work with semantic models in Excel using a live connection** = disabled     |XMLA *disallowed*, Analyze in Excel *disallowed*, AIXL for on-premises semantic models *disallowed*         |XMLA *allowed*, Analyze in Excel *disallowed*, AIXL for on-premises semantic models *allowed*         |
-|**Users can work with semantic models in Excel using a live connection** = enabled     | XMLA *disallowed*, Analyze in Excel *allowed*, AIXL for on-premises semantic models *disallowed*        | XMLA *allowed*, Analyze in Excel *allowed*, AIXL for on-premises semantic models *allowed*        |
+|**Users can work with semantic models in Excel using a live connection** = disabled     |XMLA: **disallowed**<br> Analyze in Excel: **disallowed**         |XMLA: **allowed**<br> Analyze in Excel: **disallowed**          |
+|**Users can work with semantic models in Excel using a live connection** = enabled     | XMLA: **disallowed**<br> Analyze in Excel: **allowed**        | XMLA: **allowed**<br> Analyze in Excel: **allowed**        |
 
 Access through the XMLA endpoint will honor security group membership set at the workspace/app level.
 

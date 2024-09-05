@@ -4886,6 +4886,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/enterprise/service-encryption-customer-managed-keys.md",
+            "redirect_url": "/power-bi/enterprise/service-encryption-byok",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/admin/service-govus-overview.md",
             "redirect_url": "/power-bi/enterprise/service-govus-overview",
             "redirect_document_id": false
@@ -5663,7 +5668,7 @@
         },
         {
             "source_path": "powerbi-docs/admin/service-admin-portal-capacity-settings.md",
-            "redirect_url": "/fabric/admin/service-admin-portal-capacity-settings",
+            "redirect_url": "/fabric/admin/capacity-settings",
             "redirect_document_id": false
         },
         {

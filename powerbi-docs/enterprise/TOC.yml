@@ -20,8 +20,6 @@
       href: service-encryption-byok.md
     - name: Using Microsoft Entra B2B
       href: service-admin-azure-ad-b2b.md
-    - name: Use customer managed keys
-      href: service-encryption-customer-managed-keys.md
     - name: High availability and failover FAQ
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
