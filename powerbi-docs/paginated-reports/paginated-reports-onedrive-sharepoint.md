@@ -7,7 +7,7 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/15/2024
+ms.date: 09/05/2024
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
