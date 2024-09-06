@@ -1,6 +1,6 @@
 ---
 title: Dynamic M query parameters in Power BI Desktop
-description: Create and work with dynamic M query parameters in Power BI Desktop.
+description: Create and work with dynamic M query parameters in Power BI Desktop for enhanced data filtering and performance optimization.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -8,12 +8,13 @@ ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.custom: video-RE4M2hq
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 08/28/2024
 LocalizationGroup: Connect to data
+#customer intent: As a Power BI Desktop user, I want to understand dynamic M query parameters and learn how to use them to improve data filtering and optimize query performance in my reports.
 ---
 # Dynamic M query parameters in Power BI Desktop
 
-This article describes how to create and work with dynamic M query parameters in Power BI Desktop. With dynamic M query parameters, model authors can configure the filter or slicer values that report viewers can use for an [M query parameter](/power-query/power-query-query-parameters). Dynamic M query parameters give model authors more control over the filter selections to incorporate into DirectQuery source queries.
+This article describes how to create and work with dynamic M query parameters in Power BI Desktop. With dynamic M query parameters, model authors can configure the filter or slicer values that report viewers can use for an M query [parameter](/power-query/power-query-query-parameters). Dynamic M query parameters give model authors more control over the filter selections to incorporate into DirectQuery source queries.
 
 Model authors understand the intended semantics of their filters, and often know how to write efficient queries against their data source. With dynamic M query parameters, model authors can ensure that filter selections incorporate into source queries at the right point to achieve the intended results with optimum performance. Dynamic M query parameters can be especially useful for query performance optimization.
 
@@ -40,7 +41,7 @@ The following example passes a single value through to a parameter dynamically.
 
    ![Screenshot that shows the Ribbon menu.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-02.png)
 
-1. In the **Manage Parameters** window, fill out the information about the parameter. For more information, see [Create a parameter](/power-query/power-query-query-parameters#creating-a-parameter).
+1. In the **Manage Parameters** window, fill out the information about the parameter. For more information, see [Creating a parameter](/power-query/power-query-query-parameters#creating-a-parameter).
 
    ![Screenshot that shows parameter information.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-03.png)
 
@@ -52,13 +53,13 @@ The following example passes a single value through to a parameter dynamically.
 
 ### Reference the parameters in the M query
 
-1. Once you create the parameters, you can reference them in the M query. To modify the M query, while you have the query selected, open the **Advanced editor**.
+1. Once you create the parameters, you can reference them in the M query. To modify the M query, while you have the query selected, open the **Advanced Editor**.
 
    ![Screenshot that shows opening the Advanced Editor.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-05.png)
 
 1. Reference the parameters in the M query, as highlighted in yellow in the following image:
 
-   [ ![Screenshot that shows referencing the parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png) ](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png#lightbox)
+   [![Screenshot that shows referencing the parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png)](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-06.png#lightbox)
 
 1. When you're done editing the query, select **Done**.
 
@@ -66,7 +67,7 @@ The following example passes a single value through to a parameter dynamically.
 
 Create a table for each parameter with a column that provides the possible values available to be dynamically set based on filter selection. In this example, you want the `StartTime` and `EndTime` parameters to be dynamic. Since these parameters require a `Date/Time` parameter, you generate the possible inputs to dynamically set the date for the parameter.
 
-1. In the Power BI Desktop ribbon, under **Modeling**, select **New Table**.
+1. In the Power BI Desktop ribbon, under **Modeling**, select **New table**.
 
    ![Screenshot that shows selecting New table.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-07.png)
 
@@ -94,7 +95,7 @@ Now that you created the tables with the `Date` fields, you can bind each field 
    > [!NOTE]
    > The column data type should match the M parameter data type.
 
-   [ ![Screenshot that shows binding the field to a parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-10.png) ](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-10.png#lightbox)
+   [![Screenshot that shows binding the field to a parameter.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-10.png)](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-10.png#lightbox)
 
 1. Select the dropdown under **Bind to parameter** and select the parameter that you want to bind to the field:
 
@@ -108,7 +109,7 @@ Now that you created the tables with the `Date` fields, you can bind each field 
 
    If your use cases require passing multiple values to a single parameter, set the control to **Yes** and make sure your M query is set up to accept multiple values. Here's an example for `RepoNameParameter`, which allows multiple values:
 
-   [ ![Screenshot that shows a multivalue example.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png) ](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png#lightbox)
+   [![Screenshot that shows a multivalue example.](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png)](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-13.png#lightbox)
 
 1. Repeat these steps if you have other fields to bind to other parameters.
 
@@ -131,12 +132,12 @@ To enable **Select all** for **Country**:
    ![Screenshot that shows Select all for an M parameter.](media/desktop-dynamic-m-query-parameters/select-all-settings-parameter.png)
 
    The **Select all value** passes to the parameter as a list that contains the value you defined. Therefore, when you define this value or use the default value, make sure the value is unique and doesn't exist in the field that's bound to the parameter.
-   
+
 1. Launch the Power Query Editor, select the query, and then select **Advanced Editor**. Edit the M query to use the **Select all value** to refer to the **Select all** option.
 
    ![Screenshot that shows an M query.](media/desktop-dynamic-m-query-parameters/m-query-screenshot.png)
 
-1. In the **Advanced Editor**, add a Boolean expression that evaluates to `true` if the parameter is enabled for **Multi-select** and contains the **Select all value**, and otherwise returns `false`: 
+1. In the **Advanced Editor**, add a Boolean expression that evaluates to `true` if the parameter is enabled for **Multi-select** and contains the **Select all value**, and otherwise returns `false`:
 
    ![Screenshot that shows an example Boolean expression for Select all.](media/desktop-dynamic-m-query-parameters/select-all-boolean-used-source-query.png)
 
@@ -184,7 +185,7 @@ in
 
 ## Potential security risk
 
-Report readers who can dynamically set the values for M query parameters may be able to access more data or trigger modifications to the source system by using *injection attacks*. This possibility depends on how you reference the parameters in the M query and what values you pass to the parameters.
+Report readers who can dynamically set the values for M query parameters might be able to access more data or trigger modifications to the source system by using *injection attacks*. This possibility depends on how you reference the parameters in the M query and what values you pass to the parameters.
 
 For example, you have a parameterized Kusto query constructed as follows:
 
@@ -200,7 +201,7 @@ There are no issues with a friendly user who passes an appropriate value for the
 | where Category == 'Games' & HasReleased == 'True'
 ```
 
-However, an attacker may be able to pass a value that modifies the query to get access to more data, for example, `'Games'//`:
+However, an attacker might be able to pass a value that modifies the query to get access to more data, for example, `'Games'//`:
 
 ```
 Products
@@ -214,7 +215,7 @@ In this example, the attacker can get access to information about games that hav
 
 To mitigate the security risk, avoid string concatenation of M parameter values within the query. Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query.
 
-If a data source supports importing stored procedures, consider storing your query logic there and invoking it in the M query. Alternatively, if available, use a parameter passing mechanism that's built in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
+If a data source supports importing stored procedures, consider storing your query logic there and invoking it in the M query. Alternatively, if available, use a parameter-passing mechanism that's built in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
 
 Here are some examples of these mitigations:
 
@@ -236,17 +237,17 @@ Here are some examples of these mitigations:
 
 ## Considerations and limitations
 
-There are some considerations and limitations when you use dynamic M query parameters:
+There are some considerations and limitations to take into account when you use dynamic M query parameters:
 
-- A single parameter can't be bound to multiple fields nor vice-versa.
+- A single parameter can't be bound to multiple fields nor vice versa.
 - Dynamic M query parameters don't support [aggregations](../enterprise/aggregations-auto.md).
-- Dynamic M query parameters don't support row-level security (RLS).
+- Dynamic M query parameters don't support [row-level security (RLS)](/fabric/security/service-admin-row-level-security).
 - Parameter names can't be Data Analysis Expressions (DAX) reserved words nor contain spaces. You can append `Parameter` to the end of the parameter name to help avoid this limitation.
 - Table names can't contain spaces or special characters.
 - If your parameter is the `Date/Time` data type, you need to cast it within the M query as `DateTime.Date(<YourDateParameter>)`.
 - If you use SQL sources, you might get a confirmation dialog every time the parameter value changes. This dialog is due to a security setting: **Require user approval for new native database queries**. You can find and turn off this setting in the **Security** section of the Power BI Desktop **Options**.
-- Dynamic M query parameters may not work when accessing a semantic model in Excel.
-- Dynamic M query parameters are not supported on Power BI Report Server.
+- Dynamic M query parameters might not work when accessing a semantic model in Excel.
+- Dynamic M query parameters aren't supported on Power BI Report Server.
 
 ### Unsupported out-of-box parameter types
 
@@ -256,14 +257,15 @@ There are some considerations and limitations when you use dynamic M query param
 - Binary
 
 ### Unsupported filters
+
 - Relative time slicer or filter
 - Relative date
 - Hierarchy slicer
 - Multifield include filter
 - Exclude filters / Not filters
-- Cross-highlighting
-- Drilldown filter
-- Cross drill filter
+- Cross highlighting
+- Drill-down filter
+- Cross-drill filter
 - Top N filter
 
 ### Unsupported operations
@@ -283,9 +285,9 @@ There are some considerations and limitations when you use dynamic M query param
 
 For more information about Power BI Desktop capabilities, check out the following resources:
 
-- [DirectQuery in Power BI Desktop](desktop-directquery-about.md)
+- [DirectQuery in Power BI](desktop-directquery-about.md)
 - [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
-- [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+- [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 - [Data types in Power BI Desktop](desktop-data-types.md)
-- [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
-- [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
+- [Tutorial: Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
+- [Perform common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

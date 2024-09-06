@@ -53,6 +53,7 @@ While the exact questions that Copilot can answer depends on the specifics of yo
 - **“Can you show me sales amount by region?”**  where both sales amount and region are already columns in the data.
 - **“What were the top 5 selling products in North America last month?”** where product, region, and date are already columns in the data, and Copilot helps with top N filtering to produce the visual.
 - **“Tell me the average price of gasoline per gallon over the last 30 days.”** where price per gallon is a measure already contained in the model, and Copilot helps by taking the average and filtering by relative date to produce the visual.
+- **"Which customers bought cheese and wine?"** where cheese and wine are multiple instances from the same Product entity in the model.
 
 Copilot also responds to follow up requests based on what you have already asked in your current session.
 
