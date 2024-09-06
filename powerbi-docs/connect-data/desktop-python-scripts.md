@@ -7,12 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date:  11/28/2022
+ms.date:  08/28/2024
 LocalizationGroup: Connect to data
+#customer intent: As a developer, I want to learn how to run Python scripts in Power BI Desktop and import the resulting datasets into a data model so that I can create reports and share them on the Power BI service.
 ---
 # Run Python scripts in Power BI Desktop
 
-You can run Python scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model. From this model, you can create reports and share them on the Power BI service.
+You can run Python scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model. From this model, you can create reports and share them on the Power BI service. This article shows you how to enable Python scripting and create a Python script that you can run to import data.
 
 ## Prerequisites
 
@@ -37,7 +38,7 @@ To enable Python scripting in Power BI:
 
    ![Screenshot that shows the Python script options for Power BI Desktop.](media/desktop-python-scripts/python-scripts-7.png)
 
-1. If necessary, supply or edit your local Python installation path under **Detected Python home directories**. In the preceding image, the Python's installation local path is *C:\\Python*. If you have more than one local Python installation, make sure to select the one that you want to use.
+1. If necessary, supply or edit your local Python installation path under **Detected Python home directories**. In the preceding image, the Python's installation local path is *C:\Users\Python*. If you have more than one local Python installation, make sure to select the one that you want to use.
 
 1. Select **OK**.
 
@@ -89,19 +90,18 @@ To run your Python script:
 1. If the script runs successfully, the **Navigator** window appears, and you can load the data. Select the **df** table, and then select **Load**.
 
    ![Screenshot of the Navigator window showing data to load and use.](media/desktop-python-scripts/python-scripts-5.png)
-   
+
 Power BI imports the data, and you can use it to create visualizations and reports. To refresh the data, select **Refresh** in the **Home** group of the Power BI Desktop ribbon. When you refresh, Power BI runs the Python script again.
 
 > [!IMPORTANT]
 > If Python isn't installed or identified, a warning appears. You might also get a warning if you have multiple local machine installations.
-> 
+>
 > ![Screenshot of a Warning that Python isn't installed.](media/desktop-python-scripts/python-scripts-3.png)
 
 ## Related content
 
 For more information about Python in Power BI, see:
 
-- [Create Python visuals in Power BI Desktop](desktop-python-visuals.md)
+- [Create Power BI visuals with Python](desktop-python-visuals.md)
 - [Use an external Python IDE with Power BI](desktop-python-ide.md)
 - [Use Python in Power Query Editor](desktop-python-in-query-editor.md)
-
