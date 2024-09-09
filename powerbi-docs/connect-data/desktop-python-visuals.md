@@ -1,14 +1,15 @@
 ---
 title: Create Power BI visuals using Python in Power BI Desktop
-description: Use Python scripts to create several kinds of visualizations in Power BI Desktop.
+description: Learn how to use Python scripts to create several kinds of visualizations in Power BI Desktop. Understand security, licensing, and limitations.
 author: otarb
 ms.author: otarb
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 11/28/2022
+ms.date: 08/28/2024
 LocalizationGroup: Create reports
+#customer intent: As a developer, I want to learn how to utilize Python scripts to create a variety of visualizations in Power BI Desktop so that I can enhance my data analysis and reporting capabilities.
 ---
 # Create Power BI visuals with Python
 
@@ -95,7 +96,7 @@ Create a scatter plot to see if there's a correlation between age and weight.
 
    The code imports the Matplotlib library, which plots and creates the visual.
 
-1. Select the **Run** script button to generate the following scatter plot in the Python visual.
+1. Select the **Run** button to generate the following scatter plot in the Python visual.
 
    ![Screenshot that shows the scatter plot visualization generated from the Python script.](media/desktop-python-visuals/python-visuals-12.png)
 
@@ -149,7 +150,7 @@ Python visuals in Power BI Desktop have the following limitations:
 
 - Python visuals refresh upon data updates, filtering, and highlighting. The image itself isn't interactive.
 
-- Python visuals respond to highlighting elements in other visuals, but you can't select elements in the Python visual to cross-filter other elements.
+- Python visuals respond to highlighting elements in other visuals, but you can't select elements in the Python visual to cross filter other elements.
 
 - Only plots to the Python default display device display correctly on the canvas. Avoid explicitly using a different Python display device.
 
@@ -161,7 +162,7 @@ Python visuals use Python scripts, which could contain code that has security or
 
 ### Licensing
 
-Python visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross-filter. Users of free Power BI can consume only tiles that are shared with them in Premium workspaces.
+Python visuals require a [Power BI Pro](../fundamentals/service-self-service-signup-for-power-bi.md) or Premium Per User (PPU) license to render in reports, refresh, filter, and cross filter. Users of free Power BI can consume only tiles that are shared with them in Premium workspaces.
 
 The following table describes Python visuals capabilities based on licensing.
 
@@ -176,18 +177,17 @@ For more information about Power BI Pro licenses and how they differ from free l
 
 ## Related content
 
-This tutorial barely scratches the surface of the options and capabilities for creating visual reports using by Python, pandas, and the Matplotlib library. For more information, see the following resources:
+This tutorial barely scratches the surface of the options and capabilities for creating visual reports using Python, pandas, and the Matplotlib library. For more information, see the following resources:
 
-- Documentation at the [Matplotlib](https://matplotlib.org/) website. 
+- Documentation on the [Matplotlib](https://matplotlib.org/) website.
 - [Matplotlib Tutorial : A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python)
 - [Matplotlib Tutorial – Python Matplotlib Library with Examples](https://www.edureka.co/blog/python-matplotlib-tutorial)
-- [Pandas API Reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
+- [Pandas API reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
 - [Python visualizations in Power BI service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service)
-- [Using Python Visuals in Power BI ](https://www.absentdata.com/how-to-user-python-and-power-bi)
+- [Using Python Visuals in Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi)
 - [Comprehensive Python Scripting Tutorial](https://www.janbasktraining.com/blog/python-scripting-tutorial/)
 
 For more information about Python in Power BI, see:
 
-- [Run Python Scripts in Power BI Desktop](desktop-python-scripts.md)
+- [Run Python scripts in Power BI Desktop](desktop-python-scripts.md)
 - [Use an external Python IDE with Power BI](desktop-python-ide.md)
-

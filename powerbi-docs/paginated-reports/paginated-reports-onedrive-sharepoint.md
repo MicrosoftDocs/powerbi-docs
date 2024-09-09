@@ -1,5 +1,5 @@
 ---
-title: "Send large report subscriptions to OneDrive SharePoint (Preview)"
+title: "Send large report subscriptions to OneDrive SharePoint"
 description: Subscribe to deliver your full Power BI and paginated reports to the OneDrive SharePoint location when you set up your subscription.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,11 +7,11 @@ ms.reviewer: nirusrin
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/15/2024
+ms.date: 09/05/2024
 #customer intent: The customer is looking to set up subscriptions to deliver large Power BI and paginated reports to OneDrive SharePoint.
 ---
 
-# Send large report subscriptions to OneDrive SharePoint (Preview)
+# Send large report subscriptions to OneDrive SharePoint
 
 [!INCLUDE [applies-yes-service-no-report-builder-no-power-bi-desktop](../includes/applies-yes-service-no-report-builder-no-desktop.md)]
 
