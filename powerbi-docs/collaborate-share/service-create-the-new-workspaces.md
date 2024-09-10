@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Create a workspace
 ms.topic: how-to
-ms.date: 09/09/2024
+ms.date: 09/10/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
@@ -20,7 +20,7 @@ This article explains how to create *workspaces*, spaces to collaborate with col
 
 ## Create a workspace
 
-1. Select **Workspaces** > **Create workspace**.
+1. Select **Create** >  **Workspaces** > **New workspace**.
    
      ![Screenshot of Create a new workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create-new.png)
 
