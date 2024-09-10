@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 07/11/2024
+ms.date: 09/07/2024
 ms.custom: retail analysis sample
 LocalizationGroup: Common tasks
 ---
@@ -38,17 +38,18 @@ The requirements apply to users in the organization and to [Microsoft Entra Busi
 Your Fabric admin (previously Power BI admin) needs to enable subscriptions in your tenant. If you’re an admin, see [Enable subscriptions in the Power BI admin portal](/fabric/admin/service-admin-portal-export-sharing#users-can-set-up-email-subscriptions) and see [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 ## Subscribe to a report or dashboard
+
 Whether you're subscribing to a dashboard, report page, or to a full report, the process is similar. A single button allows you to subscribe to the Power BI service dashboards and reports. Subscribing to a report offers you a few more field options, so we're using a report for our example. 
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-subscribe.png" alt-text="Screenshot showing the Subscribe to report icon on the top menu bar.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-subscribe-button.png" alt-text="Screenshot showing the Subscribe to report icon on the top menu bar.":::
 
-Subscribing to a *paginated* report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports) in this article.
+Subscribing to a *paginated* report is slightly different, as outlined in [Subscribe to paginated reports](#subscribe-to-paginated-reports).
 
-1. Open the report, and from the top menu bar, select **Subscribe to report** ![Screenshot showing the Subscribe icon.](./media/end-user-subscribe/power-bi-icon.png).  
+1. Open the report, and from the top menu bar, select **Subscribe** ![Screenshot showing the Subscribe icon.](./media/end-user-subscribe/power-bi-icon.png).  
 
 1. Select **Create a subscription** and give your subscription a name. By default, your subscription is given the same name as your report page or dashboard. Optionally, change the name of the subscription to something more meaningful.
 
-   :::image type="content" source="./media/end-user-subscribe/power-bi-report-subscribe.png" alt-text="Screenshot of the Subscribe to emails screen.":::
+   :::image type="content" source="./media/end-user-subscribe/power-bi-report-subscribes.png" alt-text="Screenshot of the Subscribe to emails screen.":::
 
 1. Use the green slider to turn the subscription on and off. Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
@@ -61,12 +62,9 @@ Subscribing to a *paginated* report is slightly different, as outlined in [Subsc
 1. Select a **Start date** and optionally, an **End date** for your subscription. By default, the start date is the date you created the subscription and the end date is one year later. You can change it to any date in the future at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You receive notifications before the scheduled end date to ask if you'd like to extend it.
 
 1. Use the **Repeat** dropdown to select a frequency for your subscription. You may choose hourly, daily, weekly, monthly, or after data refresh (once daily). Most of the options require that you set a time zone as well.  
-    
+
     > [!TIP]
-    > To receive a subscription email only on certain days, select 
-    > Hourly or Weekly and then select the week day checkboxes. 
-    > If you select Monthly, enter the day(s) of the month you 
-    > wish to receive the subscription email.
+    > To receive a subscription email only on certain days, select Hourly or Weekly and then select the week day checkboxes. If you select Monthly, enter the day(s) of the month you wish to receive the subscription email.
 
     - If you choose Hourly, Daily, Weekly, or Monthly, choose a **Scheduled Time** for the subscription. You can have it run on the hour, or at 15, 30, or 45 minutes past for a specified time zone. If you choose Hourly, select the **Scheduled Time** you want the subscription to start, and it runs every hour after the **Scheduled Time**.  
 
@@ -77,20 +75,18 @@ If your subscription is ready, select **Save**. To make your subscription more p
 1. Select the **Report page** you want to appear in the preview image. If you toggled' **Attach full report** to **On**, you see all the report pages listed in the dropdown. Otherwise, you only have the active report page listed in the dropdown. To subscribe to more than one page in a report, either select the **Attach full report** slider, or select **New subscription** and choose a different page from the dropdown.  
 
     > [!TIP]
-    > By default, a report subscription inherits the name of 
-    > the active report page. Consider changing the subscription 
-    > name if you select a different report page. 
+    > By default, a report subscription inherits the name of the active report page. Consider changing the subscription name if you select a different report page.
 
 1. Include additional information in the email. Select one or more of these checkboxes.
     - **Permission to view the report/dashboard in Power BI**: Give recipients permission to open and view the report or dashboard in the Power BI service (app.powerbi.com). This option isn't available in all situations. 
     - **Link to report/dashboard in Power BI**: Include a "Go to report" button in the body of the email that links to the report or dashboard in the Power BI service.
-    - **Preview image (for Power BI reports only)**: Include a preview of the report page in the body of the email. 
+    - **Report page preview (for Power BI reports only)**: Include a preview of the report page in the body of the email. 
 
     > [!CAUTION]
-    > Sensitivity labels are not applied to a subscription's 
-    > email or preview image. To protect against this, 
-    > turn off **Preview image**.  
-    
+    > Sensitivity labels are not applied to a subscription's email or preview image. To protect against this, turn off **Preview image**.  
+
+    - **Data activator**, **Trigger alert using Data activator**: Select this to learn how to use Data activator to set alerts on report visuals.  
+
 You receive an email and snapshot of the report or dashboard on the schedule you set. Subscriptions that have the frequency set to **After data refresh** only send an email after the first scheduled refresh on that day. All dates/times are normalized to UTC when checking for the first dataset refresh of the day. 
 
 > [!NOTE]
@@ -104,10 +100,9 @@ Sensitivity labels are applied to subscription email attachments but not to the 
 
 - Creating a subscription that attaches a copy of a report (including paginated report) to the subscription email is a Power BI Pro feature.  
 
-- For users with free subscriptions, the subscription email for a report (including paginated report) doesn't contain a sensitivity label in the email text or the subscription preview image. 
-- To ensure that your subscription has a sensitivity label, turn off **Preview image** in the **Subscriptions** screen. 
-- For subscriptions to dashboards, there's no option to attach a copy of the dashboard to the email. So, the subscription email doesn't have a sensitivity label in the text or preview image. 
-
+- For users with free subscriptions, the subscription email for a report (including paginated report) doesn't contain a sensitivity label in the email text or the subscription preview image.
+- To ensure that your subscription has a sensitivity label, turn off **Preview image** in the **Subscriptions** screen.
+- For subscriptions to dashboards, there's no option to attach a copy of the dashboard to the email. So, the subscription email doesn't have a sensitivity label in the text or preview image.
 
 ## Subscribe others
 
@@ -115,7 +110,7 @@ To create a subscription that includes others, in addition to the [requirements 
 
 - A Pro or PPU license with Contributor, Member, or Admin role in that workspace. You know that you have the Contributor, Member, or Admin role in a workspace if you're able to edit reports or dashboards in that workspace. Read more about [roles in workspaces](../collaborate-share/service-roles-new-workspaces.md).  
 
-- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+- To be part of the organization. [B2B guest users](../enterprise/service-admin-azure-ad-b2b.md) can't subscribe others, only themselves. For more information, read [B2B guest users can set up and be subscribed to email subscriptions](#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 - If the report or dashboard isn't hosted in a Premium capacity, as indicated by the diamond icon, you can still subscribe others. However, they must also have a Power BI Pro or Premium Per User (PPU) license. 
 
@@ -166,34 +161,35 @@ Before Power BI updates the subscription, you're given the opportunity to previe
  
 1. Apply any changes to the report so that it's in the state you want to subscribe or share. Changes might include applying filters, spotlights, drilling, slicers, or cross-highlighting.
 
-1. Select **Subscribe to report** from the top menubar of the report canvas to reopen the **Subscriptions** pane.
+1. Select **Subscribe** from the top menu bar of the report canvas to reopen the **Subscriptions** pane.
 
 1. Select the pencil icon to edit the details of your existing subscription. For example,  change the delivery frequency, add an email message, change permissions, and more.
 1. Select **More options** > **Include my changes** > **Preview** to display a view-only version of the original subscription that is being sent out to subscribers. Use this comparison to decide if you want to overwrite the original state of the subscribed report.
-1. Select **Back to subscription** and select the pencil icon. 
-1. To update the existing subscription to include your report changes, select **More options** > **Include my changes** > **Update**. **Update** changes the subscription to include the new changes. 
-1. Save your subscription. 
+1. Select **Back to subscription** and select the pencil icon.
+1. To update the existing subscription to include your report changes, select **More options** > **Include my changes** > **Update**. **Update** changes the subscription to include the new changes.
+1. Save your subscription.
 
 > [!NOTE]
-> The update is applied to the current page only. Changes you made to other pages in the report are not included. To include changes made to a different page in the report, navigate to that page and apply an update. 
+> The update is applied to the current page only. Changes you made to other pages in the report are not included. To include changes made to a different page in the report, navigate to that page and apply an update.
 
 ### Customize subscriptions
 
-If you're the author of the report, **Include my changes** is a great way to create individualized subscriptions for recipients. 
+If you're the author of the report, **Include my changes** is a great way to create individualized subscriptions for recipients.
 
 > [!NOTE]
-> The **Include my changes** field isn't available for dashboards or paginated reports. 
+> The **Include my changes** field isn't available for dashboards or paginated reports.
 
 ## Review and test the subscription
+
 Your **Subscriptions** page keeps track of all of your subscriptions for the current report. 
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-subscription-manage.png" alt-text="Screenshot showing the Subscriptions page with two subscriptions listed.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-manage-subscription.png" alt-text="Screenshot showing the Subscriptions page with two subscriptions listed.":::
 
 To review a subscription, select the arrow to the left of the subscription. 
 
-:::image type="content" source="./media/end-user-subscribe/power-bi-subscription-reviews.png" alt-text="Screenshot showing all the details for one subscription.":::
+:::image type="content" source="./media/end-user-subscribe/power-bi-subscription-review.png" alt-text="Screenshot showing all the details for one subscription.":::
 
-To test out your subscription, select the  **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying semantic model. 
+To test out your subscription, select **Run now** to send the email to you right away. It doesn't trigger a data refresh of the underlying semantic model. 
 
 ## Manage subscriptions
 
@@ -217,15 +213,14 @@ Select the **Edit** icon to return to the Subscriptions screen where you can:
 - make changes to a subscription’s settings by selecting the pencil icon.
 - open the report or dashboard by selecting **Edit in report** or **Edit in dashboard**.
 
-    :::image type="content" source="media/end-user-subscribe/power-bi-edit-in-report.png" alt-text="Screenshot showing the Subscriptions with Edit in report outlined in red.":::
+    :::image type="content" source="media/end-user-subscribe/power-bi-edit.png" alt-text="Screenshot showing the Subscriptions with Edit in report outlined in red.":::
 
 
 ### Subscriptions across all workspaces
 
-To see all of your subscriptions, start by selecting **My workspace** to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Notifications**.
+To see all of your subscriptions, start by selecting **My workspace** to make it active. Then, from the upper right corner of the Power BI service, select the gear icon ![cog icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Power BI settings** > **General** > **Notifications**.
 
-:::image type="content" source="media/end-user-subscribe/power-bi-settings-menu.png" alt-text="Screenshot showing cog icon selected.":::
-
+:::image type="content" source="media/end-user-subscribe/power-bi-settings.png" alt-text="Screenshot showing Notifications selected.":::
 
 From here, you see a list of all your subscriptions across all workspaces. Power BI displays the name of the subscription, the name of the content you're subscribing to, the name of the owner, the name of the associated workspace, and the content type. If you selected **Include my changes**, the **State** column includes the date when changes were included. Search for subscriptions by keyword or filter by any of these fields. Select the **Edit** icon to make changes to a subscription’s settings. 
 
@@ -239,7 +234,7 @@ Users who are assigned the [Admin role](../collaborate-share/service-roles-new-w
 > [!NOTE]
 > Subscriptions created for reports and dashboards in an app or those hosted in your **My workspace** can only be managed by the user who created the subscriptions. 
 
-To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Settings** > **Notifications**. 
+To navigate to this view from within a workspace, select the gear icon ![Settings icon](media/end-user-subscribe/power-bi-settings-icon.png) > **Power BI settings** > **General** > **Notifications**. 
 
 Users with the Admin role can also make edits or take over ownership of subscriptions that aren't their own.  
 
@@ -259,10 +254,10 @@ Fabric administrators have levers of control over subscriptions.
 
 - [Users can set up email subscriptions](/fabric/admin/service-admin-portal-export-sharing) for all members of the organization. 
 
-- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](/fabric/admin/service-admin-portal-export-sharing). 
+- Enable all members of the organization, or specific users, to send email subscriptions to external users. See [Users can send email subscriptions to external users](/fabric/admin/service-admin-portal-export-sharing).
 
 - [Enable specific attachment formats](/fabric/admin/service-admin-portal-export-sharing) for paginated report subscriptions (PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML).
-- [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions. 
+- [B2B guest users can set up and be subscribed to email subscriptions](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions) to allow B2B guest users to create and subscribe to their own email subscriptions. Consider assigning B2B guest users the Viewer workspace role. The Viewer role limits access to underlying data and the ability to edit content.
 
 ### View subscription audit and activity logs 
 
@@ -284,9 +279,12 @@ See [Operations available in the audit and activity logs](../admin/service-adm
 
 ### Subscribe external users 
 
-You can subscribe external users to a report or dashboard if your report or dashboard is hosted in a Premium capacity. B2B guest users can't add subscriptions for external users. 
+You can subscribe external B2B guests to a report or dashboard if your report or dashboard is hosted in Premium capacity. B2B guest users can subscribe themselves but can't add subscriptions for other external users.
 
-- If you subscribe external users to a report or dashboard, they'll receive a share notification immediately after you select  **Save** in the subscription pane. This notification is sent only to external users, not internal users, because external users require an invitation link to view the report or dashboard. 
+> [!IMPORTANT]
+> *Internal* guest users can't use the subscription feature. An internal guest has an account in your Entra directory but only guest-level access in your organization. 
+
+- If you subscribe external B2B guests to a report or dashboard, they'll receive a share notification immediately after you select  **Save** in the subscription pane. This notification is sent only to external guests, not internal guests, because external users require an invitation link to view the report or dashboard.
 
 - Premium Per User workspaces don't qualify as Premium capacity workspaces. 
 
@@ -294,9 +292,9 @@ You can subscribe external users to a report or dashboard if your report or dash
 
 ### B2B guest users can set up and be subscribed to email subscriptions
 
-B2B guest users can create their own content subscription to which they have access and users in the organization can subscribe them to emails. First, a member of the organization adds and subscribes the B2B guest user to the email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md).
+B2B guests can create their own content subscription to which they have access. Users in the organization can subscribe as well. First, a member of the organization adds and subscribes the B2B guest user to the email content. For more information about B2B guest users and how to add them to your organization, read [Distribute content to external guest users with Microsoft Entra B2B](../enterprise/service-admin-azure-ad-b2b.md).
 
-In addition to B2B guest users meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
+In addition to external B2B guests meeting the requirements to subscribe themselves, the Power BI tenant admin must turn on a setting to allow B2B guest users to create email subscriptions. For more information on how to turn on this setting, read [Export and sharing tenant settings](/fabric/admin/service-admin-portal-export-sharing#b2b-guest-users-can-set-up-and-be-subscribed-to-email-subscriptions).
 
 ## Subscribe to paginated reports 
 
@@ -350,7 +348,8 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **General**
   
-- If you can't use the subscription feature, contact your system administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit was reached.
+- Internal guests are users who have an account in your Entra directory but only guest-level access in your organization. External B2B guests are users with an external Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI. 
+- If you can't use the subscription feature, contact your Fabric administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit may be.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 
 
