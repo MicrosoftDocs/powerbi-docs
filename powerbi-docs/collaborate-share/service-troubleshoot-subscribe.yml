@@ -31,6 +31,8 @@ sections:
           - If you can’t use the subscription feature, contact your Power BI administrator, or IT help desk. Your organization may have disabled this feature, generally or specifically for external users, or a maximum subscriber limit may have been reached. 
           
           - Your organization may configure certain settings in Microsoft Entra ID that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multifactor authentication or IP range restrictions when accessing resources. 
+
+           ### You're an internal guest user. You have an account in the organization's Entra directory, but you only have guest-level access in that organization.  
           
           ### You've reached the maximum of 24 subscriptions
           There's a limit of 24 subscriptions per Power BI report or dashboard. You can provide unique recipients, times, and frequencies for each subscription. Paginated reports don't have this limit. 
@@ -123,7 +125,7 @@ sections:
           You may get an error message that the report has more than 20 pages even though your view of the report shows less than 20. One reason for this is that the report designer has hidden pages in the report. When Power BI counts the report pages, it includes hidden pages in that count.
 
       - question: |
-          Access the report or dashboard in the Power BI service  
+          How do I access the report or dashboard in the Power BI service? 
         answer: |
           You can choose to give subscription recipients access to open and view the content in Power BI by selecting **Permission to access the report or dashboard in Power BI** and whether to include a link to this content by selecting **Link to report or dashboard in Power BI**. 
 
