@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Create a workspace
 ms.topic: how-to
-ms.date: 09/09/2024
+ms.date: 09/10/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
