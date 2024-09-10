@@ -282,7 +282,7 @@ See [Operations available in the audit and activity logs](../admin/service-adm
 You can subscribe external B2B guests to a report or dashboard if your report or dashboard is hosted in Premium capacity. B2B guest users can subscribe themselves but can't add subscriptions for other external users.
 
 > [!IMPORTANT]
-> *Internal* guest users can't use the subscription feature. An internal guest has an account in your Entra directory but only guest-level access in your organization. 
+> *Internal* guest users can't use the subscription feature. An internal guest has an account in your Microsoft Entra directory but only guest-level access in your organization. 
 
 - If you subscribe external B2B guests to a report or dashboard, they'll receive a share notification immediately after you select  **Save** in the subscription pane. This notification is sent only to external guests, not internal guests, because external users require an invitation link to view the report or dashboard.
 
@@ -348,7 +348,7 @@ For help with troubleshooting for the subscriptions feature, see [Troubleshoot P
 
 **General**
   
-- Internal guests are users who have an account in your Entra directory but only guest-level access in your organization. External B2B guests are users with an external Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI. 
+- Internal guests are users who have an account in your Microsoft Entra directory but only guest-level access in your organization. External B2B guests are users with an external Microsoft Entra account, social identity, or other external identity provider sign-in. Internal guest users can't create email subscriptions in Power BI. 
 - If you can't use the subscription feature, contact your Fabric administrator or IT help desk. Your organization may disable this feature or the maximum subscriber limit may be.
 - Power BI automatically pauses refresh on semantic models associated with dashboards and reports that aren't visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - On Daylight savings day, you receive your subscription emails and the day after you receive two emails per subscription. 

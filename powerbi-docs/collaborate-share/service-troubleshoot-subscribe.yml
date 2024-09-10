@@ -34,7 +34,7 @@ sections:
 
            ### You're an internal guest user. 
            
-           You have an account in the organization's Entra directory, but you only have guest-level access in that organization.  
+           You have an account in the organization's Microsoft Entra directory, but you only have guest-level access in that organization.  
           
           ### You reached the maximum of 24 subscriptions
           
