@@ -101,6 +101,8 @@
     - name: Visuals
       expanded: false
       items:
+      - name: Troubleshoot visualizations in Power BI
+        href: ../visuals/power-bi-visualization-troubleshoot.md
       - name: Debug Power BI custom visuals
         href: ../developer/visuals/visuals-how-to-debug.md
       - name: Troubleshoot custom visuals in Power BI Desktop for Power BI Report Server
