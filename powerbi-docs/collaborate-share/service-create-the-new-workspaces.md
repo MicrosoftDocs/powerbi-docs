@@ -12,6 +12,7 @@ ms.date: 09/10/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
+
 # Create a workspace in Power BI
 
 This article explains how to create *workspaces*, spaces to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
