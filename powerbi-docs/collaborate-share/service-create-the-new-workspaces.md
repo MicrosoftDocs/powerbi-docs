@@ -8,10 +8,11 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Create a workspace
 ms.topic: how-to
-ms.date: 09/09/2024
+ms.date: 09/10/2024
 ms.custom: fabric
 LocalizationGroup: Share your work
 ---
+
 # Create a workspace in Power BI
 
 This article explains how to create *workspaces*, spaces to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. For more background, see the [Workspaces in Power BI](service-new-workspaces.md) article.
@@ -20,9 +21,9 @@ This article explains how to create *workspaces*, spaces to collaborate with col
 
 ## Create a workspace
 
-1. Select **New** > **Workspaces** > **New workspace**.
+1. Select **Create** >  **Workspaces** > **New workspace**.
    
-     ![Screenshot of New workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
+     ![Screenshot of Create a new workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create-new.png)
 
 2. Give the workspace a unique name. If the name isn't available, edit it to come up with a name that's unique.
    
