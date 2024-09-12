@@ -145,11 +145,11 @@ To auto-create a report:
 
 1. In your workspace, select the **Retail Analysis Sample** semantic model to open it.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample semantic model entry in your workspace.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" ? alt-text="Screenshot showing the Retail Analysis Sample semantic model entry in your workspace.":::
 
-1. Select **Create a report**, then **Auto-create**.
+1. Select **Explore this data**, then **Auto create a report**.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png" alt-text="Screenshot showing the Auto-create report menu item." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-auto-create-report.png"::: ?
 
    Power BI shows you the new report. Select **Edit** to revise and improve it.
 
