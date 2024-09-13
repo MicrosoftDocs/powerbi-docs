@@ -17,8 +17,8 @@ ms.date: 09/13/2024
 
 This tenant-level security planning article is primarily targeted at:
 
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Fabric administrators:** The administrators who are responsible for overseeing Power BI in the organization.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with administrators of Power BI, information security teams, and other relevant teams.
 
 This article might also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
 
