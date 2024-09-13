@@ -180,8 +180,7 @@ Geography,
 ...
 )
 ```
-This will remove the introduced blankrow and restore original behavior. In case of you have multiple calculated tables that employees SummarizeColumns, changes for all the tables should be submit together in a single transaction, in that case you will need to use Tabular Editor: https://www.sqlbi.com/tools/tabular-editor/ to make the modification since PBIDesktop lacks the ability to batch multiple table changes together into one transaction.
-
+This will remove the introduced blankrow and restore original behavior. In case of you have multiple calculated tables that employees SummarizeColumns, changes for all the tables should be submit together in a single transaction, in that case you will need to use Tabular Editor: https://www.sqlbi.com/tools/tabular-editor/ to make the modification since PowerBI Desktop lacks the ability to batch multiple table changes together into one transaction.
 
 ## Related content
 
