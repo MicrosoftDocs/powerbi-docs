@@ -153,6 +153,36 @@ The use of the previous list of connectors with dataflows or datamarts is only s
 
 This error occurs if the version of the on-premises data gateway being used to refresh your dataflow (Gen1 or Gen2) is out of support. Currently Microsoft supports only the [last six versions of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates). Update your gateway to the latest version, or to a supported version to resolve this issue. Use the [update an on-premises data gateway](/data-integration/gateway/service-gateway-update) article for guidance on updating gateways.
 
+## Circular Dependency error related to Calculated Table utilize SummarizeColumns
+
+Since September 5th, we enabled a feature that allows SummarizeColumns to be placed inside measure and to be evaluated within any external filter context. This feature might introduced new dependencies if summarizecolumns is used in CalculateTable. Those newly introduced dependencies might cause circluar dependency error during model refresh. 
+
+In case of this error please apply following steps to mitigate the issue:
+
+#### a. Identify all CalculateTables that utilize summarizecolumns 
+
+#### b. For each summarizecolumns expression make following changes:
+For a summarizecolumns expression with GB on "Product" and "Geography" for example:
+```
+SummarizeColumns(
+Product[Color],
+Geography[Country],
+...
+)
+```
+Add "Product" and "Geography" as filters into summarizecolumns, so it becames:
+```
+SummarizeColumns(
+Product[Color],
+Geography[Country],
+Product, 
+Geography,
+...
+)
+```
+This will remove the introduced blankrow and restore original behavior. In case of you have multiple calculated tables that employees SummarizeColumns, changes for all the tables should be submit together in a single transaction, in that case you will need to use Tabular Editor: https://www.sqlbi.com/tools/tabular-editor/ to make the modification since PBIDesktop lacks the ability to batch multiple table changes together into one transaction.
+
+
 ## Related content
 
 * [Data refresh in Power BI](refresh-data.md)  
