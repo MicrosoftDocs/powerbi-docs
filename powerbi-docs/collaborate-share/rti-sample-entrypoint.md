@@ -35,7 +35,7 @@ Here are the components that have been built:
 
 * **Eventhouse** An eventhouse is where data is stored and analysed. An eventhouse is designed to handle real-time data streams efficiently. An eventhouse can hold one or more KQL database. They're tailored to large volumes of time-based, streaming events with structured, semi structured, and unstructured data. Read more about (Eventhouse)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse].
 
-* **KQL database** A KQL (Kusto Query Language) database is where data is stored and managed. It allows you to query data in real-time, providing a powerful tool for data exploration and analysis. The KQL database supports various data policies and transformations. Read more about (KQL databases)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-database].
+* **KQL Database** A KQL (Kusto Query Language) database is where data is stored and managed. It allows you to query data in real-time, providing a powerful tool for data exploration and analysis. The KQL database supports various data policies and transformations. Read more about (KQL databases)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-database].
 
 * **KQL queryset** A KQL queryset is used to run queries, view, and customize query results on data from a KQL database. Read more about (KQL queryset)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-query-set].
 
