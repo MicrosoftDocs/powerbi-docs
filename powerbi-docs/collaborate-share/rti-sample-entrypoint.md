@@ -2,10 +2,12 @@
 title: Power BI entry point to Real-Time Intelligence sample experience
 description: Describes the entry point from Power BI to the Real-Time Intelligence sample epxerience for identified customers.
 author: andykop
-ms.author: andykop
+ms.author: v-andykop
+ms.service: powerbi
 ms.topic: concept-article
 ms.date: 09/15/2024
 ---
+# The Real-Time Intelligence sample experience
 
 You have been invited to a sample experience in Real-Time Intelligence in Microsoft Fabric.
 When integrated with Real-Time Intelligence, Power BI can leverage real-time data streams to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization. It is an especially effective solution for use cases with high volumes of data or high refresh rates.
