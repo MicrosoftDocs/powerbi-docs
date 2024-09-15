@@ -18,7 +18,7 @@ Real-Time Intelligence is a powerful service in the Fabric product suite that ca
 
 Real-Time Intelligence is a highly efficient and effective solution for customers working with large volumes of streaming data. It gives high levels of data freshness and high refresh rates, with only a few seconds of latency.
 
-Learn more about Real-Time Intelligence (here)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/].
+Learn more about (Real-Time Intelligence)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/].
 
 ## The Real-Time Intelligence sample experience
 
