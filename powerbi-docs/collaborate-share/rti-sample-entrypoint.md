@@ -37,7 +37,7 @@ Here are the components that have been built:
 
 * **KQL Database** A KQL (Kusto Query Language) database is where data is stored and managed. It allows you to query data in real-time, providing a powerful tool for data exploration and analysis. The KQL database supports various data policies and transformations. Read more about (KQL databases)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-database].
 
-* **KQL queryset** A KQL queryset is used to run queries, view, and customize query results on data from a KQL database. Read more about (KQL queryset)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-query-set].
+* **KQL Queryset** A KQL queryset is used to run queries, view, and customize query results on data from a KQL database. Read more about (KQL queryset)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-query-set].
 
 * **Real-Time Dashboard** A real-time dashboard provides an up-to-the-second snapshot of various metrics and data points in a collection of tiles. Each tile has an underlying query and a visual representation. It allows you to visualize data in real-time, providing insights and enabling data exploration. Read more about (Real-Time dashboards)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/dashboard-real-time-create].
 
