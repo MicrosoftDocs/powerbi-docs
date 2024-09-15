@@ -1,12 +1,11 @@
 ---
-title: Power BI entry point to RTI sample experience
-description: Describes the entry point from Power BI to the RTI sample epxerience for identified customers.
+title: Power BI entry point to Real-Time Intelligence sample experience
+description: Describes the entry point from Power BI to the Real-Time Intelligence sample epxerience for identified customers.
 author: andykop
 ms.author: andykop
 ms.topic: concept-article
 ms.date: 09/15/2024
 ---
-____________________________________________________________
 
 You have been invited to a sample experience in Real-Time Intelligence in Microsoft Fabric.
 When integrated with Real-Time Intelligence, Power BI can leverage real-time data streams to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization. It is an especially effective solution for use cases with high volumes of data or high refresh rates.
@@ -53,12 +52,12 @@ Before you begin, you need a workspace with a Microsoft Fabric-enabled capacity.
 
 Here is a summary of the steps you need to take:
 
-1. Create an eventhouse and set up your environment. See the tutorial (here)[/fabric/real-time-intelligence/tutorial-1-resources].
-1. Create an event stream and bring your data into a KQL database. See the tutorial (here)[/fabric/real-time-intelligence/tutorial-2-get-real-time-events].
-1. Create a KQL queryset and query your data. See the tutorial (here)[/fabric/real-time-intelligence/tutorial-3-query-data].
-1. Create a real-time dashboard and explore your data visually. See the tutorial (here)[/fabric/real-time-intelligence/tutorial-4-create-dashboard].
-1. Build a Power BI report. See the tutorial (here)[/fabric/real-time-intelligence/tutorial-5-power-bi-report].
-1. Set an alert on your event stream. See the tutorial (here)[/fabric/real-time-intelligence/tutorial-6-set-alert].
+1. (Create an eventhouse)[/fabric/real-time-intelligence/tutorial-1-resources] and set up your environment.
+1. (Create an event stream)[/fabric/real-time-intelligence/tutorial-2-get-real-time-events] and bring your data into a KQL database.
+1. (Create a KQL queryset)[/fabric/real-time-intelligence/tutorial-3-query-data] and query your data.
+1. (Create a real-time dashboard)[/fabric/real-time-intelligence/tutorial-4-create-dashboard] and explore your data visually.
+1. (Build a Power BI report)[/fabric/real-time-intelligence/tutorial-5-power-bi-report].
+1. (Set an alert)[/fabric/real-time-intelligence/tutorial-6-set-alert] on your event stream.
 
 To learn more, navigate through the (Real-Time Intelligence support articles)[/fabric/real-time-intelligence/].
 
