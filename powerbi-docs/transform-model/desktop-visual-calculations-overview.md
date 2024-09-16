@@ -65,7 +65,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
 
-To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by simply typing: :::no-loc`*text="Profit = [Sales Amount] – [Total Product Cost]"*`:::.
+To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by simply typing: :::no-loc text="`*text="Profit = [Sales Amount] – [Total Product Cost]"*`":::.
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-04.png" alt-text="Screenshot of entering a visual calculation.":::
 
