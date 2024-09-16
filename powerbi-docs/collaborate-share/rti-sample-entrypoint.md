@@ -19,7 +19,7 @@ Real-Time Intelligence is a powerful service in the Fabric product suite that ca
 
 Real-Time Intelligence is a highly efficient and effective solution for customers working with large volumes of streaming data. It gives high levels of data freshness and high refresh rates, with only a few seconds of latency.
 
-Learn more about (Real-Time Intelligence)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/].
+Learn more about (Real-Time Intelligence)[/fabric/real-time-intelligence/].
 
 ## The Real-Time Intelligence sample experience
 
@@ -33,15 +33,15 @@ Select **Explore** to close the dialogue box and go directly to the sample datab
 
 Here are the components that have been built:  
 
-* **Event stream** An event stream is the engine for data ingestion and processing of your real-time data into Microsoft Fabric. You can transform your data and route it via filters to various destinations. Read more about (event streams)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview].
+* **Event stream** An event stream is the engine for data ingestion and processing of your real-time data into Microsoft Fabric. You can transform your data and route it via filters to various destinations. Read more about (event streams)[/fabric/real-time-intelligence/event-streams/overview].
 
-* **Eventhouse** An eventhouse is where data is stored and analysed. An eventhouse is designed to handle real-time data streams efficiently. An eventhouse can hold one or more KQL database. They're tailored to large volumes of time-based, streaming events with structured, semi structured, and unstructured data. Read more about (Eventhouse)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse].
+* **Eventhouse** An eventhouse is where data is stored and analysed. An eventhouse is designed to handle real-time data streams efficiently. An eventhouse can hold one or more KQL database. They're tailored to large volumes of time-based, streaming events with structured, semi structured, and unstructured data. Read more about (Eventhouse)[/fabric/real-time-intelligence/eventhouse].
 
-* **KQL Database** A KQL (Kusto Query Language) database is where data is stored and managed. It allows you to query data in real-time, providing a powerful tool for data exploration and analysis. The KQL database supports various data policies and transformations. Read more about (KQL databases)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-database].
+* **KQL Database** A KQL (Kusto Query Language) database is where data is stored and managed. It allows you to query data in real-time, providing a powerful tool for data exploration and analysis. The KQL database supports various data policies and transformations. Read more about (KQL databases)[/fabric/real-time-intelligence/create-database].
 
-* **KQL Queryset** A KQL queryset is used to run queries, view, and customize query results on data from a KQL database. Read more about (KQL queryset)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/create-query-set].
+* **KQL Queryset** A KQL queryset is used to run queries, view, and customize query results on data from a KQL database. Read more about (KQL queryset)[/fabric/real-time-intelligence/create-query-set].
 
-* **Real-Time Dashboard** A Real-Time dashboard provides an up-to-the-second snapshot of various metrics and data points in a collection of tiles. Each tile has an underlying query and a visual representation. It allows you to visualize data in real-time, providing insights and enabling data exploration. Read more about (Real-Time dashboards)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/dashboard-real-time-create].
+* **Real-Time Dashboard** A Real-Time dashboard provides an up-to-the-second snapshot of various metrics and data points in a collection of tiles. Each tile has an underlying query and a visual representation. It allows you to visualize data in real-time, providing insights and enabling data exploration. Read more about (Real-Time dashboards)[/fabric/real-time-intelligence/dashboard-real-time-create].
 
 Power BI is used to create real-time reports that display data from event streams and KQL databases managed by Real-Time Intelligence.
 
@@ -49,7 +49,7 @@ Power BI is used to create real-time reports that display data from event stream
 
 ## Create your own Real-Time Dashboard
 
-If you want to implement this solution with our own data, see the step-by-step guide on how to do it in (Real-Time Intelligence tutorials)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-introduction].
+If you want to implement this solution with our own data, see the step-by-step guide on how to do it in (Real-Time Intelligence tutorials)[/fabric/real-time-intelligence/tutorial-introduction].
 
 Before you begin, you need a workspace with a Microsoft Fabric-enabled capacity.
 
@@ -66,4 +66,4 @@ To learn more, navigate through the (Real-Time Intelligence support articles)[/f
 
 ## Related content
 * (Real-Time Intelligence support articles)[/fabric/real-time-intelligence/].
-* (Real-Time Intelligence tutorials)[https://learn.microsoft.com/en-us/fabric/real-time-intelligence/tutorial-introduction].
+* (Real-Time Intelligence tutorials)[/fabric/real-time-intelligence/tutorial-introduction].
