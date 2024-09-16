@@ -64,9 +64,9 @@ Enabling the creation of new connections makes it easy to create separate sharea
 
 ## Default connection settings
 
-When connecting to a data source, your Microsoft Entra Single Sign-On (SSO) credentials are used by default.
+When connecting to a Fabric data source specifically, your Entra ID Single Sign-On (SSO) credentials are used by default.
 
-You can also use your shareable cloud connection settings instead of your SSO credentials to connect a semantic model to a data source, and thereby retain the settings you configured for that shareable cloud connection. This enables you to bind the data source to the shareable cloud connection, and override the default SSO connection for that data source.
+You can also use a shareable cloud connection instead of the default connection settings to connect a semantic model to a Fabric data source, and thereby apply the settings you configured for that shareable cloud connection, such as fixed credentials. This enables you to bind the data source to the shareable cloud connection, and override the default SSO connection for that data source.
 
 To select your shareable cloud connection instead of your default SSO settings, select the shareable cloud connection in the **Maps to:** drop-down for the data source to which you want your semantic model to connect, as shown in the following image:
 
