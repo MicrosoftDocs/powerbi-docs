@@ -49,7 +49,7 @@ Power BI is used to create real-time reports that display data from event stream
 
 If you want to implement this solution with our own data, see the step-by-step guide on how to do it in [Real-Time Intelligence tutorials](/fabric/real-time-intelligence/tutorial-introduction).
 
-Before you begin, you need a workspace with a Microsoft Fabric-enabled capacity.
+Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
 
 Here's a summary of the steps you need to take:
 
