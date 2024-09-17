@@ -80,7 +80,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
     Copilot creates that page. 
 
-    :::image type="content" source="media/copilot-create-report/copilot-create-visitor-insights.png" alt-text="Screenshot of Copilot creating the Visitor Patterns Analyiss Page." lightbox="media/copilot-create-report/copilot-create-visitor-insights.png":::
+    :::image type="content" source="media/copilot-create-report/copilot-create-visitor-insights.png" alt-text="Screenshot of Copilot creating the Visitor Patterns Analysis Page." lightbox="media/copilot-create-report/copilot-create-visitor-insights.png":::
 
     Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 
