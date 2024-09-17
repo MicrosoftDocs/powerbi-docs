@@ -11,13 +11,17 @@ ms.date: 09/15/2024
 
 You're invited to a sample experience in Real-Time Intelligence in Microsoft Fabric.
 
-When integrated with Real-Time Intelligence, Power BI can use data streams to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization. It's an especially effective solution for use cases with high volumes of data or high refresh rates.
+When integrated with Real-Time Intelligence, Power BI can use data streams to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization. It's tailored specifically for use cases with high volumes of data or high refresh rates, which makes it an especially effective solution.
 
 ## What is Real-Time Intelligence?
 
 Real-Time Intelligence is a powerful service in the Fabric product suite that can help you extract insights and visualize your data in motion.  It offers an end-to-end solution for event-driven scenarios, streaming data, and data logs.  
 
 Real-Time Intelligence is a highly efficient and effective solution for customers working with large volumes of streaming data. It gives high levels of data freshness and high refresh rates, with only a few seconds of latency.
+
+Users can gain real-time detection and monitoring of data and can act on data, triggering notifications and actions when specified patterns are found. Users can access a range of no-, low-, and pro-code experiences for everything from business insight discovery to complex stream processing, and application and model development. Some common use cases for Real-Time Intelligence include IoT systems, manufacturing, telemetry and logs, fraud detection, business operations management and anomaly detection.
+
+Even though it's called "real-time," your data doesn't have to be flowing at high rates and volumes. Real-Time Intelligence gives you event-driven, rather than schedule-driven solutions. The Real-Time Intelligence components are built on trusted, core Microsoft services, and together they extend the overall Fabric capabilities to provide event-driven solutions.
 
 Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/).
 
@@ -47,11 +51,9 @@ Power BI is used to create real-time reports that display data from event stream
 
 ## Create your own Real-Time Dashboard
 
-If you want to implement this solution with our own data, see the step-by-step guide on how to do it in [Real-Time Intelligence tutorials](/fabric/real-time-intelligence/tutorial-introduction).
+You can implement this solution with our own data. Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
 
-Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
-
-Here's a summary of the steps you need to take:
+To set up our own real-time dashboard, follow the [Real-Time Intelligence tutorials](/fabric/real-time-intelligence/tutorial-introduction). Here's a summary of the steps you need to take with links to each individual tutorial:
 
 1. [Create an eventhouse](/fabric/real-time-intelligence/tutorial-1-resources) and set up your environment.
 1. [Create an event stream](/fabric/real-time-intelligence/tutorial-2-get-real-time-events) and bring your data into a KQL database.
