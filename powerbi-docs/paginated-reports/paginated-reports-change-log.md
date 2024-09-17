@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 5/20/2024
+ms.date: 9/17/2024
 ---
 
 # Power BI Report Builder change log
@@ -22,12 +22,12 @@ Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com
 
 Version 15.7.1812.222, released September 16, 2024
 
-- Power Query Online general availability
-- Fixed issue editing data sources for PBI semantic models in a folder
-- Fixed issue with sign in dialog in some cases
-- Fixed issue preventing Report Builder being able to use window's "Run As A Different User"
-- Enhanced migration of SQL Azure based RDL reports in RdlMigration tool
-- Added some additional telemetry 
+- Power Query Online general availability.
+- Fixed issue editing data sources for PBI semantic models in a folder.
+- Fixed issue with sign in dialog in some cases.
+- Fixed issue preventing Report Builder being able to use window's "Run As A Different User."
+- Enhanced migration of SQL Azure based RDL reports in RdlMigration tool.
+- Added some additional telemetry.
 
 ## July 2024
 
