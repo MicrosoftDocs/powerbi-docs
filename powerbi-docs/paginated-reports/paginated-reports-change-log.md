@@ -18,6 +18,23 @@ Learn about new items, bug fixes, and known issues for each release of Power BI 
 
 Ready to get started? [Install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513) from the Microsoft Download Center.
 
+## September 2024
+
+Version 15.7.1812.222, released September 16, 2024
+
+- Power Query Online general availability
+- Fixed issue editing data sources for PBI semantic models in a folder
+- Fixed issue with sign in dialog in some cases
+- Fixed issue preventing Report Builder being able to use window's "Run As A Different User"
+- Enhanced migration of SQL Azure based RDL reports in RdlMigration tool
+- Added some additional telemetry 
+
+## July 2024
+
+Version 15.7.1811.11, released July 8, 2024
+
+- Fixed issue where Report Builder would fail to load properly in some cases.
+
 ## June 2024
 
 Version 15.7.1810.53, released June 27, 2024
