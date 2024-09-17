@@ -2995,6 +2995,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-covid-19-tracking.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-connect-to-services.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false

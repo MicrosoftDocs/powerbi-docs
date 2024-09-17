@@ -94,7 +94,7 @@ sections:
         answer: |
           Anyone with either a Premium Per User (PPU) license or a Pro license can receive the subscription and any attachment it includes, if the attachment is the same for all users. Pro users can't view the content in the product portal. 
           
-          To add subscription capabilities that allow different data views for different recipients, a PPU license (or Premium capacity) is required. A PPU license doesn't allow sending e-mail subscriptions to external users. The content must be hosted in a Premium capacity to offer subscriptions to external users.  
+          To add subscription capabilities that allow different data views for different recipients, a Premium capacity is required.  
           
           Users without a license can't view datasets, and reports that are built on these datasets, that were created in a PPU workspace. For example, users without a license can't access a report created from a Power BI dataset in a PPU workspace, and published in a non-PPU workspace. Similarly, content in a PPU workspace shared using **Publish to Web** isn't accessible to unlicensed users.
           
