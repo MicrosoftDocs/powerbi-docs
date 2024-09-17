@@ -6,7 +6,7 @@ ms.author: miguelmyers
 ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: pbi-visuals
-ms.topic:
+ms.topic: conceptual
 ms.date: 09/03/2024
 ms.custom: TSG - Troubleshooting Guide
 LocalizationGroup: Visualizations
@@ -18,19 +18,6 @@ LocalizationGroup: Visualizations
 
 The document provides considerations and limitations for Power BI visualizations, and how to troubleshoot common content distribution issues. It addresses potential issues, and known issues, while offering solutions to ensure consistency and optimal performance in report design and user experience.  
 
-## Fonts
-
-This section addresses potential issues users may encounter with fonts in Power BI.
-
-### Default fonts
-
-- MacOS users may encounter font rendering issues with [Microsoft-owned fonts](../fundamentals/power-bi-browsers.md#fonts), as these are not included by default on MacOS systems. Due to the absence of certain [Microsoft fonts](../fundamentals/power-bi-browsers.md#fonts), MacOS will default to alternative fonts. This fallback can result in discrepancies in text rendering, particularly in terms of font size and layout consistency. To address this, users can manually install the missing [Microsoft fonts](../fundamentals/power-bi-browsers.md#fonts) on their MacOS devices. This ensures that reports and documents render with the intended appearance. Alternatively, report creators can opt for fonts that are commonly available across both Windows and MacOS platforms to avoid such issues.
-
-### Custom fonts
-
-- When incorporating a custom font into Power BI reports, it’s essential to specify the font correctly in the Custom Theme file. The font must be referenced by its correct operating system (OS) name, which may differ from its display name. Using the display name can result in the font not being recognized or applied in the report. To ensure the correct font name is used, navigate to the Fonts section in the Windows Control Panel. Here, you can verify the exact OS name of the font. Once confirmed, use this name in your Custom Theme file to successfully apply the custom font to your Power BI report.
-- The font used in a Power BI report must be installed on the local machine of each end user. This is because fonts are not embedded within the report itself. If a font is not installed locally, it will not be displayed correctly when an end user views the report. This can lead to inconsistencies in the report’s appearance and can affect the overall user experience. To ensure uniformity in font usage across all end users, it is recommended to use an IT Group Policy for the centralized distribution of fonts within your company. This policy will facilitate the installation of the required fonts on all relevant machines, thereby maintaining the intended design and readability of the report.
-
 ## Slicers and filters
 
 This section addresses potential issues users may encounter with slicers and filters.
@@ -39,6 +26,7 @@ This section addresses potential issues users may encounter with slicers and fil
 
 - Users may experience difficulty locating the ‘Clear’ selection option within slicers. This challenge is due to the ‘Clear’ button’s design, which is embedded within the slicer header and only becomes visible upon mouse hover. The ‘Clear’ function is represented by a subtle eraser icon located in the top right corner of the slicer’s visual container. Its inconspicuous placement can lead to it being easily missed by users. If the eraser icon is not present, it typically indicates that the report creator has opted to disable the visual header in the report settings. To rectify this issue, the report creator must re-enable the visual header within the report’s settings. This action will make the eraser icon reappear, thus restoring the ‘Clear’ selection functionality for users.
 - In the new slicer (Preview), users may find it challenging to locate the ‘Clear’ button as it is situated in the visual header, not within the slicer header as previously designed. The absence of the ‘Clear’ button upon hovering over the slicer’s visual container typically signifies that the visual headers have been disabled by the report creator. To make the ‘Clear’ button accessible again, the report creator needs to enable the visual headers. This action will restore the visibility of the ‘Clear’ button, allowing users to easily reset their slicer selections.
+- It’s recommended that report authors click the ‘Clear’ icon and ‘Save’ before publishing, especially for range slicers. For other slicer types, you may prefer to save selection so that report consumers start with a specific set of filters, but Date Range slicers typically work best when starting cleared.
 
 ### Persistent filters
 
@@ -54,6 +42,27 @@ This section addresses potential issues users may encounter with slicers and fil
 
 - The '[What If](../transform-model/desktop-what-if.md#considerations-and-limitations)' parameters in Power BI are designed to handle up to 1000 unique values. If a parameter exceeds this limit, the values will be evenly sampled, which may not meet the needs of detailed scenario analysis. This limitation is in place to ensure performance and manageability within Power BI. When more than 1000 unique values are needed, the parameter values are sampled to fit within this constraint, potentially leading to a loss of granularity. To work around this limitation, you can adjust the granularity of your '[What If](../transform-model/desktop-what-if.md#considerations-and-limitations)' parameters to ensure that the total number of unique values does not exceed 1000.
 
+## Report locale
+
+This section addresses potential issues users may encounter with dates in visuals.
+
+### Format strings
+
+- In Power BI, certain visual elements do not utilize the model format string for dates to conserve space and present only the necessary detail. This can lead to confusion when the displayed date format does not match the user’s expectations.  For these elements, Power BI leverages the browser’s locale settings to determine the date format. This means that the format may vary depending on the user’s browser configuration, which influences how dates are displayed in the report. To ensure consistency, report creators should be aware of the browser locale’s impact on date formatting. Common areas affected by this include [Slicers](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), and [Cartesian Axis Tick Labels](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the Filter Pane.
+
+## Fonts
+
+This section addresses potential issues users may encounter with fonts in Power BI.
+
+### Default fonts
+
+- MacOS users may encounter font rendering issues with [Microsoft-owned fonts](../fundamentals/power-bi-browsers.md#fonts), as these are not included by default on MacOS systems. Due to the absence of certain [Microsoft fonts](../fundamentals/power-bi-browsers.md#fonts), MacOS will default to alternative fonts. This fallback can result in discrepancies in text rendering, particularly in terms of font size and layout consistency. To address this, users can manually install the missing [Microsoft fonts](../fundamentals/power-bi-browsers.md#fonts) on their MacOS devices. This ensures that reports and documents render with the intended appearance. Alternatively, report creators can opt for fonts that are commonly available across both Windows and MacOS platforms to avoid such issues.
+
+### Custom fonts
+
+- When incorporating a custom font into Power BI reports, it’s essential to specify the font correctly in the Custom Theme file. The font must be referenced by its correct operating system (OS) name, which may differ from its display name. Using the display name can result in the font not being recognized or applied in the report. To ensure the correct font name is used, navigate to the Fonts section in the Windows Control Panel. Here, you can verify the exact OS name of the font. Once confirmed, use this name in your Custom Theme file to successfully apply the custom font to your Power BI report.
+- The font used in a Power BI report must be installed on the local machine of each end user. This is because fonts are not embedded within the report itself. If a font is not installed locally, it will not be displayed correctly when an end user views the report. This can lead to inconsistencies in the report’s appearance and can affect the overall user experience. To ensure uniformity in font usage across all end users, it is recommended to use an IT Group Policy for the centralized distribution of fonts within your company. This policy will facilitate the installation of the required fonts on all relevant machines, thereby maintaining the intended design and readability of the report.
+
 ## Colors
 
 This section addresses potential issues users may encounter with report colors.
@@ -68,7 +77,11 @@ This section addresses potential issues users may encounter when working with cu
 
 ### Default settings
 
-- When setting visual-specific format options in Power BI, this can override any of the predefined properties in a [custom theme](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports). This occurs because explicit formatting at the visual level takes precedence over theme-level settings. As a result, any [custom theme](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) settings will not apply if existing format options have been set for a particular visual. To allow [custom theme](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) colors to take effect, you will need to reset the visual colors to default formatting. This can be done by clicking ‘Reset to Default’ within the color formatting options of the visual. Once the specific formatting is cleared, the [custom theme](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) colors should apply as intended, provided that an explicit color has not been set for that visual.
+- When setting visual-specific format options in Power BI, this can override any of the predefined properties in a custom theme. This occurs because explicit formatting at the visual level takes precedence over theme-level settings. As a result, any custom theme settings will not apply if existing format options have been set for a particular visual.
+
+  For example, to allow [custom theme colors](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) to take effect, you will need to reset the visual colors to default formatting. This can be done by clicking ‘Reset to Default’ within the color formatting options of the visual. Once the specific formatting is cleared, the [custom theme colors](../create-reports/desktop-report-themes.md#situations-when-report-theme-colors-wont-stick-to-your-reports) should apply as intended, provided that an explicit color has not been set for that visual.
+
+  As another example, if “Legend Position = Left” has been specified in a custom theme file, but something else has been set at the visual level, the user would need to ‘Reset to Default’ to allow the custom theme to apply.
 
 ## Maps
 
@@ -81,16 +94,6 @@ This section addresses potential issues users may encounter when working with ma
 ### Geocoding
 
 - To ensure [geocoding](/azure/azure-maps/power-bi-visual-geocode) accuracy in Power BI, make sure your model has pristine data for each distinct location entity and avoid concatenating strings. Assign the correct Data Category to each location entity, like ‘State’ or ‘Zipcode’. Build a Location hierarchy within your model or place  multiple fields in the location field well for precise [geocoding](/azure/azure-maps/power-bi-visual-geocode). Use the ‘Expand All Down’ icon to drill into the lowest hierarchy level, which includes all higher levels. This helps resolve ambiguities in locations with the same names, such as distinguishing ‘Paris, Texas’ from ‘Paris, France’. Adding ‘Country’ into your Location hierarchy and using the ‘Drill Down’ or ‘Expand All’ functions will improve [geocoding](/azure/azure-maps/power-bi-visual-geocode) outcomes.
-
-## Report locale
-
-This section addresses potential issues users may encounter with dates in visuals.
-
-### Format strings
-
-[Slicers](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer)
-
-- In Power BI, certain visual elements do not utilize the model format string for dates to conserve space and present only the necessary detail. This can lead to confusion when the displayed date format does not match the user’s expectations.  For these elements, Power BI leverages the browser’s locale settings to determine the date format. This means that the format may vary depending on the user’s browser configuration, which influences how dates are displayed in the report. To ensure consistency, report creators should be aware of the browser locale’s impact on date formatting. Common areas affected by this include [Slicers](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), and [Cartesian Axis Tick Labels](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the Filter Pane.
 
 ## Tooltips
 
