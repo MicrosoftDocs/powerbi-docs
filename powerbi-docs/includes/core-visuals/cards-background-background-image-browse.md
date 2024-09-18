@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 ###### Background image
 
-When selected, users can browse their device to add an image file that will be displayed in the background.
+When selected, users can browse their device to add an image file to display in the background.

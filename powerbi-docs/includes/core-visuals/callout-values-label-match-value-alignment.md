@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 ###### Match value alignment
 
-When enabled, and the **Apply settings to** is set to **Series all**, this toggle ensures that the horizontal alignment of all labels matches the alignment of the data values. When the toggle *isn't* enabled, the horizontal alignment options are available, allowing you to align the text to the left, center, or right according to your liking.
+When enabled, and the **Apply settings to** is set to **Series all**, this toggle ensures that the horizontal alignment of all labels matches the alignment of the data values. When the toggle *isn't* enabled, the horizontal alignment options are available, allowing you to align the text to your liking.
