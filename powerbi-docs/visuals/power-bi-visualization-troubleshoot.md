@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/03/2024
+ms.date: 09/18/2024
 ms.custom: TSG - Troubleshooting Guide
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to be aware of the various considerations, limitations, workarounds to overcome known obstacles or potential issues with Power BI Visualizations, so I can effectively and easily identify solutions in both Power BI Desktop and Power BI service.
