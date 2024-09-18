@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: concept-article
 ms.date: 09/04/2024
+ms.custom: dFY25Q1-Linter
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn abou the Power Query Editor.
 ---

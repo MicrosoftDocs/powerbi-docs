@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: concept-article
 ms.date: 09/04/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to learn about external tools in Power BI Desktop.
 ---
@@ -71,7 +72,7 @@ Objects that support write operations:
 | Object                        | Connect to AS instance    |
 |-------------------------------|---------------------------|
 | Tables                        | No                        |
-| Columns                       | Yes <sup>[1](#columns)</sup>                        |
+| Columns                       | Yes [1]                   |
 | Calculated tables             | Yes                       |
 | Calculated columns            | Yes                       |
 | Relationships                 | Yes                       |
@@ -85,7 +86,7 @@ Objects that support write operations:
 | Annotations                   | Yes                       |
 | M expressions                 | No                        |
 
-<a name="columns">1</a> - When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns isn't supported.
+[1] When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns isn't supported.
 
 Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Model authoring](../developer/projects/projects-overview.md#model-authoring).
 

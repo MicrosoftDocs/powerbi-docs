@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 09/16/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Model your data
 #customer intent: As a Power BI user I want to learn how to save time creating tables by using calculated tables.
 ---

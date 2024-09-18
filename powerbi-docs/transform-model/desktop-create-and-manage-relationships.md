@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 09/04/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Model your data
 #customer intent: As a Power BI Desktop user I want to learn to create and manage relationships.
 ---
@@ -144,7 +145,7 @@ Let’s go through a quick tutorial, to better show you how relationships work i
 
 The first table, **ProjectHours**, is a record of work tickets that record the number of hours a person has worked on a particular project.
 
-**ProjectHours**
+### ProjectHours
 
 | **Ticket** | **SubmittedBy** | **Hours** | **Project** | **DateSubmit** |
 | ---:|:--- | ---:|:--- | ---:|
@@ -162,7 +163,7 @@ The first table, **ProjectHours**, is a record of work tickets that record the n
 
 This second table, **CompanyProject**, is a list of projects with an assigned priority: A, B, or C.
 
-**CompanyProject**
+### CompanyProject
 
 | **ProjName** | **Priority** |
 | --- | --- |
@@ -244,7 +245,7 @@ Normally, Power BI Desktop can automatically determine the best cardinality for 
 
 The **CompanyProjectPriority** table is a list of all company projects and their priority. The **ProjectBudget** table is the set of projects for which a budget has been approved.
 
-**CompanyProjectPriority**
+### CompanyProjectPriority
 
 | **ProjName** | **Priority** |
 | --- | --- |
@@ -255,7 +256,7 @@ The **CompanyProjectPriority** table is a list of all company projects and their
 | Purple |B |
 | Orange |C |
 
-**ProjectBudget**
+### ProjectBudget Table
 
 | **Approved Projects** | **BudgetAllocation** | **AllocationDate** |
 |:--- | ---:| ---:|
@@ -274,15 +275,15 @@ The reason Power BI makes these settings is because, to Power BI Desktop, the be
 | Blue |A |40,000 |12/1/2012 |
 | Red |B |100,000 |12/1/2012 |
 | Green |C |50,000 |12/1/2012 |
-| Yellow |C |<br /> |<br /> |
-| Purple |B |<br /> |<br /> |
-| Orange |C |<br /> |<br /> |
+| Yellow |C | | |
+| Purple |B | | |
+| Orange |C | | |
 
 There's a one-to-one relationship between our two tables because there are no repeating values in the combined table’s **ProjName** column. The **ProjName** column is unique, because each value occurs only once; therefore, the rows from the two tables can be combined directly without any duplication.
 
 But, let’s say you know the data will change the next time you refresh it. A refreshed version of the **ProjectBudget** table now has additional rows for the Blue and Red projects:
 
-**ProjectBudget**
+### ProjectBudget
 
 | **Approved Projects** | **BudgetAllocation** | **AllocationDate** |
 | --- | ---:| ---:|
@@ -299,9 +300,9 @@ But, let’s say you know the data will change the next time you refresh it. A r
 | Blue |A |40,000 |12/1/2012 |
 | Red |B |100,000 |12/1/2012 |
 | Green |C |50,000 |12/1/2012 |
-| Yellow |C |<br /> |<br /> |
-| Purple |B |<br /> |<br /> |
-| Orange |C |<br /> |<br /> |
+| Yellow |C | | |
+| Purple |B | | |
+| Orange |C | | |
 | Blue |A |80000 |6/1/2013 |
 | Red |B |90000 |6/1/2013 |
 
@@ -354,7 +355,7 @@ To ensure there’s a default relationship, Power BI Desktop allows only a singl
 
 Let’s look at an example. The first table is **ProjectTickets**, and the second table is **EmployeeRole**.
 
-**ProjectTickets**
+### ProjectTickets
 
 | **Ticket** | **OpenedBy** | **SubmittedBy** | **Hours** | **Project** | **DateSubmit** |
 | ---:|:--- |:--- | ---:|:--- | ---:|
@@ -370,7 +371,7 @@ Let’s look at an example. The first table is **ProjectTickets**, and the secon
 | 1010 |Roth, Daniel |Bowen, Eli |28 |Green |10/1/2013 |
 | 1011 |Perham, Tom |Bowen, Eli |9 |Blue |10/15/2013 |
 
-**EmployeeRole**
+### EmployeeRole
 
 | **Employee** | **Role** |
 | --- | --- |
@@ -385,7 +386,9 @@ Let’s look at an example. The first table is **ProjectTickets**, and the secon
 | Roth, Daniel |Project Sponsor |
 
 There are actually two relationships here:
+
 * Between **Employee** in the **EmployeeRole** table and **SubmittedBy** in the **ProjectTickets** table.
+
 * Between **OpenedBy** in the **ProjectTickets** table and **Employee** in the **EmployeeRole** table.
 
  :::image type="content" source="media/desktop-create-and-manage-relationships/candmrel_activerelview.png" alt-text="Screenshot of a two-relationship example.":::
