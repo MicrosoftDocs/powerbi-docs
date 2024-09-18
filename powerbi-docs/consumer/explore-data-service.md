@@ -22,9 +22,9 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 ## Get started 
 
-1. [Create your exploration](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
+1. [Create the exploration](#1-create-your-exploration) you’d like to explore.
 
-    :::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing New exploration." lightbox="media/explore-data-service/more-options-explore-data.png":::
+    :::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing New exploration.":::
 
 1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
 
