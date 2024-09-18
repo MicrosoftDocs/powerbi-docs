@@ -51,9 +51,9 @@ Power BI is used to create real-time reports that display data from event stream
 
 ## Create your own Real-Time Dashboard
 
-You can implement this solution with our own data. Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
+You can implement this with your own data. Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
 
-To set up our own real-time dashboard, follow the [Real-Time Intelligence tutorials](/fabric/real-time-intelligence/tutorial-introduction). Here's a summary of the steps you need to take with links to each individual tutorial:
+To set up our own real-time dashboard, follow the [Real-Time Intelligence tutorials](/fabric/real-time-intelligence/tutorial-introduction). Here's a summary of the steps:
 
 1. [Create an eventhouse](/fabric/real-time-intelligence/tutorial-1-resources) and set up your environment.
 1. [Create an event stream](/fabric/real-time-intelligence/tutorial-2-get-real-time-events) and bring your data into a KQL database.
