@@ -22,7 +22,7 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 ## Get started 
 
-1. [Find a dataset or report](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
+1. [Create your exploration](#1-create-your-exploration) you’d like to explore.
 
 1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
 
@@ -35,7 +35,15 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Save and share your exploration](#5-save-and-share-your-exploration). 
 
-## 1. Find a dataset or report you’d like to explore
+## 1. Create your exploration
+
+### From the New button in a workspace
+
+Select the **New** button at the top of a workspace, then select **Exploration**.
+
+## From an artifact in a list
+
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore.":::For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
 
 For a given dataset, report, or datamart, begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view. 
 
