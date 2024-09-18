@@ -14,6 +14,6 @@ LocalizationGroup: core-visuals
 
 The menu provides options for configuring the axis title, but only when the axis value's Display units is set to display Thousands, Millions, Billions, or Trillions:
 
-- **Shows title only:** This default option displays only the title. If the Display units are set to *None*, this remains the only available option.
+- **Shows title only:** This default option displays only the title. If the Display units are set to *None*, displaying the title remains the only available option.
 - **Show unit only:** This exhibits solely the unit as determined in the display units control.
-- **Show both:** This presents both the title and the unit as selected in the Display units control.
+- **Show both:**: **Show both** presents both the title and the unit as selected in the Display units control.
