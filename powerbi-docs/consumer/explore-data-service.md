@@ -24,6 +24,8 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 1. [Create your exploration](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
 
+    :::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing New exploration." lightbox="media/explore-data-service/more-options-explore-data.png":::
+
 1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
 
 1. [Begin exploring by building your matrix or PivotTable](#3-begin-exploring-by-building-your-matrix-or-visual) by adding fields from the data pane.
