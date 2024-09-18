@@ -108,7 +108,7 @@ Report Page [Tooltips](../create-reports/desktop-tooltips.md#considerations-and-
 
 ### Line chart tooltips
 
-Users might notice that Line Chart **Tooltips** are displayed differently than other charts. By default, we show all series values and a vertical alignment bar to help users compare all series values within a specific category. In some cases, the standard datapoint tooltip will render, such as for Combo Charts and when Line Charts enter high-density sampling due to hitting data limits. Different filters may push the query slightly above or below the limits, resulting in different tooltips at different times for the same line chart visual. For more information about high-density line sampling, see our article: [High-Density Line Sampling in Power BI](../create-reports/desktop-high-density-sampling.md#tooltips-and-high-density-line-sampling)
+Users might notice that Line Chart **Tooltips** are displayed differently than other charts. By default, we show all series values and a vertical alignment bar to help users compare all series values within a specific category. In some cases, the standard datapoint tooltip will render, such as for Combo Charts and when Line Charts enter high-density sampling due to hitting data limits. Different filters may push the query slightly above or below the limits, resulting in different tooltips at different times for the same line chart visual. For more information about high-density line sampling, see our article: [High-Density Line Sampling in Power BI](../create-reports/desktop-high-density-sampling.md#tooltips-and-high-density-line-sampling).
 
 ## Images
 
