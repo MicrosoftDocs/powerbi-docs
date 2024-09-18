@@ -64,7 +64,7 @@ When incorporating a custom font into Power BI reports, it’s essential to spec
 
 The font used in a Power BI report must be installed on the local machine of each end user. This is because fonts aren't embedded within the report itself. If a font isn't installed locally, it isn't displayed correctly when an end user views the report. This can lead to inconsistencies in the report’s appearance and can affect the overall user experience. To ensure uniformity in font usage across all end users, we  recommend using an IT Group Policy for the centralized distribution of fonts within your company. This policy facilitates the installation of the required fonts on all relevant machines, thus maintaining the intended design and readability of the report.
 
-Also note that Custom Fonts may not be available when an Export command is executed that causes rendering on the server, such Export to PDF or Image generation with Copy, PowerPoint, or email Subscriptions.
+Also note that custom fonts might not be available or render correctly when an export command is executed that causes rendering on the server, such as exporting to PDF, exporting to Powerpoint, or exporting to images when using email subscriptions.
 
 ## Colors
 
