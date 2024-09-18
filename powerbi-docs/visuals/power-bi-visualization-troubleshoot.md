@@ -116,7 +116,7 @@ This section addresses potential issues users may encounter with including image
 
 ### Image URLs
 
-If an image within a Power BI report isn't rendering, it may be due to the [image URL](../create-reports/power-bi-images-tables.md#considerations) not being anonymously accessible. Power BI requires the [image URL](../create-reports/power-bi-images-tables.md#considerations) to be anonymously accessible without requiring a sign-in to view. Images can't be hosted on sites that require authentication, such as SharePoint or OneDrive. 
+If an image within a Power BI report isn't rendering, it may be due to the [image URL](../create-reports/power-bi-images-tables.md#considerations) not being anonymously accessible. Power BI requires the [image URL](../create-reports/power-bi-images-tables.md#considerations) to be anonymously accessible without requiring a sign-in to view. Images can't be hosted on sites that require authentication, such as SharePoint or OneDrive.
 
 To ensure the [image URL](../create-reports/power-bi-images-tables.md#considerations) is publicly accessible, open the [image URL](../create-reports/power-bi-images-tables.md#considerations) in an InPrivate mode browser window. If the image loads without requiring a sign-in, you correctly configured the image URL for use in Power BI. Loading images from a local path is also not supported in Power BI Desktop or in the Power BI service.
 
