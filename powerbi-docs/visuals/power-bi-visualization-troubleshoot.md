@@ -60,15 +60,15 @@ macOS users may encounter font rendering issues with [Microsoft-owned fonts](../
 
 ### Custom fonts
 
-When incorporating a custom font into Power BI reports, it’s essential to specify the font correctly in the Custom Theme file. You must reference the font by its correct operating system (OS) name, which may differ from its display name. Using the display name can result in the font not being recognized or applied in the report. To ensure the correct font name is used, navigate to the Fonts section in the Windows Control Panel. Here, you can verify the exact OS name of the font. Once confirmed, use this name in your Custom Theme file to successfully apply the custom font to your Power BI report.
+When incorporating a custom font into Power BI reports, it’s essential to specify the font correctly in the Custom Theme file. You must reference the font by its correct operating system (OS) name, which could differ from its display name. Using the display name can result in the font not being recognized or applied in the report. To ensure the correct font name is used, navigate to the Fonts section in the Windows Control Panel. Here, you can verify the exact OS name of the font. Once confirmed, use this name in your Custom Theme file to successfully apply the custom font to your Power BI report.
 
 The font used in a Power BI report must be installed on the local machine of each end user. This is because fonts aren't embedded within the report itself. If a font isn't installed locally, it isn't displayed correctly when an end user views the report. This can lead to inconsistencies in the report’s appearance and can affect the overall user experience. To ensure uniformity in font usage across all end users, we  recommend using an IT Group Policy for the centralized distribution of fonts within your company. This policy facilitates the installation of the required fonts on all relevant machines, thus maintaining the intended design and readability of the report.
 
-Also note that custom fonts might not be available or render correctly when an export command is executed that causes rendering on the server, such as exporting to PDF, exporting to Powerpoint, or exporting to images when using email subscriptions.
+Also note that custom fonts might not be available or render correctly when an export command is executed that causes rendering on the server, such as exporting to PDF, exporting to PowerPoint, or exporting to images when using email subscriptions.
 
 ## Colors
 
-This section addresses potential issues users may encounter with report colors.
+This section addresses potential issues users might encounter with report colors.
 
 ### Series color assignment
 
@@ -76,7 +76,7 @@ In Power BI, the assignment of [theme colors](../create-reports/desktop-report-t
 
 ## Themes
 
-This section addresses potential issues users may encounter when working with custom themes.
+This section addresses potential issues users might encounter when working with custom themes.
 
 ### Default settings
 
@@ -88,7 +88,7 @@ As another example, when you specify *Legend Position = Left* in a custom theme 
 
 ## Maps
 
-This section addresses potential issues users may encounter when working with map visuals.
+This section addresses potential issues users might encounter when working with map visuals.
 
 ### Bing maps
 
@@ -100,7 +100,7 @@ To ensure [geocoding](/azure/azure-maps/power-bi-visual-geocode) accuracy in Pow
 
 ## Tooltips
 
-This section addresses potential issues users may experience with tooltips.
+This section addresses potential issues users might experience with tooltips.
 
 ### Page tooltips
 
@@ -112,7 +112,7 @@ Users might notice that Line Chart **Tooltips** are displayed differently than o
 
 ## Images
 
-This section addresses potential issues users may encounter with including images into their visualizations.
+This section addresses potential issues users might encounter with including images into their visualizations.
 
 ### Image URLs
 
