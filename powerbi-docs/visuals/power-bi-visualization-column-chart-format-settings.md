@@ -19,23 +19,23 @@ LocalizationGroup: Visualizations
 
 ## Overview
 
-The document you are about to delve into will provide a comprehensive and detailed exposition of the various format settings available for column charts in both Power BI Desktop and Power BI Service.
+The document you are about to delve into provides a comprehensive and detailed exposition of the various format settings available for column charts in both Power BI Desktop and Power BI Service.
 
-Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements to advanced ribbon settings, this document will cover every setting for column chart formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
+Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements to advanced ribbon settings, this document covers every setting for column chart formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
 
-Whether you’re a seasoned Power BI user or new to data visualization, this document will be an invaluable resource for mastering column chart formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
+Whether you’re a seasoned Power BI user or new to data visualization, this document is an invaluable resource for mastering column chart formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
 
 ## Prerequisites
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-desktop.png" alt-text="Power BI Desktop screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
 
 # [Power BI Service](#tab/powerbi-service)
 
-To format and customize your column chart in **Power BI Service**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your column chart in **Power BI Service**, simply click the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-service.png" alt-text="Power BI Service screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
 
@@ -56,7 +56,7 @@ The **Type** setting within x-axis options is only available when you choose a s
 
 #### Range
 
-The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
+The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown here.
 
 [!INCLUDE [axis-range-maximum](../includes/core-visuals/axis-range-maximum.md)]
 [!INCLUDE [axis-range-minimum](../includes/core-visuals/axis-range-minimum.md)]
@@ -65,7 +65,7 @@ The availability of **Range** settings depends on configuring the x-axis **Type*
 
 #### Values
 
-The visibility of x-axis **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown below.
+The visibility of x-axis **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown here.
 
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
@@ -98,7 +98,7 @@ The **Layout** setting within x-axis options is only available when you’re wor
 
 #### Values
 
-The visibility of y-axis **Values** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the Values settings shown below.
+The visibility of y-axis **Values** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the Values settings shown here.
 
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
@@ -108,7 +108,7 @@ The visibility of y-axis **Values** can be toggled on or off to make them visibl
 
 #### Title
 
-The visibility of y-axis **Title** can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Title settings shown below.
+The visibility of y-axis **Title** can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Title settings shown here.
 
 [!INCLUDE [axis-title-title-text](../includes/core-visuals/axis-title-title-text.md)]
 [!INCLUDE [axis-title-style](../includes/core-visuals/axis-title-style.md)]
@@ -117,7 +117,7 @@ The visibility of y-axis **Title** can be toggled on or off to make it visible o
 
 ### Legend
 
-This setting is accessible when a data field is active in the **Legend** field well within the **Build** pane. The legend's visibility can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Legend settings shown below.
+This setting is accessible when a data field is active in the **Legend** field well within the **Build** pane. The legend's visibility can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Legend settings shown here.
 
 #### Options
 
@@ -160,7 +160,7 @@ The settings for **Small multiples** become accessible when a data field is acti
 
 #### Horizontal
 
-The visibility of **Horizontal gridlines** can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust the setting as shown below.
+The visibility of **Horizontal gridlines** can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust the setting as shown here.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
@@ -172,7 +172,7 @@ The visibility of **Horizontal gridlines** can can be toggled on or off to make 
 
 #### Vertical
 
-The **Vertical gridlines** are only available when the axis has been set to Continuous. This feature gives you the flexibility to show or hide the gridlines as needed. When toggled on, you can access and adjust the setting as shown below.
+The **Vertical gridlines** are only available when the axis has been set to Continuous. This feature gives you the flexibility to show or hide the gridlines as needed. When toggled on, you can access and adjust the setting as shown here.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
@@ -219,7 +219,7 @@ The layout settings are available only when **Apply settings to** is set to eith
 [!INCLUDE [columns-layout-flip-overlap](../includes/core-visuals/columns-layout-flip-overlap.md)]
 
 ### Ribbons
-The visibility od **Ribbons** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the ribbon settings shown below.
+The visibility od **Ribbons** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the ribbon settings shown here.
 
 #### Apply settings to
 [!INCLUDE [global-apply-settings-to-series](../includes/core-visuals/global-apply-settings-to-series.md)]
@@ -235,7 +235,7 @@ The **Color** setting feature enables you to select a hue from the color palette
 
 #### Border
 
-When toggled on, inner borders become apparent, allowing you to adjust the border settings shown below.
+When toggled on, inner borders become apparent, allowing you to adjust the border settings shown here.
 [!INCLUDE [ribbons-border-match-ribbon-color](../includes/core-visuals/ribbons-border-match-ribbon-color.md)]
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
@@ -248,7 +248,7 @@ The **Layout** settings are available only when **Apply settings to** is set to 
 
 ### Data labels
 
-The visibility of **Data labels** can can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the data labels settings shown below.
+The visibility of **Data labels** can can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the data labels settings shown here.
 
 #### Apply settings to
 [!INCLUDE [global-apply-settings-to-series](../includes/core-visuals/global-apply-settings-to-series.md)]
@@ -263,7 +263,7 @@ The **Options** dropdown provides a collection of settings that modify the appea
 [!INCLUDE [data-labels-options-optimize-label-display](../includes/core-visuals/data-labels-options-optimize-label-display.md)]
 
 #### Title
-The **Title** toggle controls the visibility of the Series title. When enabled, an array of settings become available as shown below allowing users to fully adjust the appearance of the Series title.
+The **Title** toggle controls the visibility of the Series title. When enabled, an array of settings become available allowing users to fully adjust the appearance of the Series title.
 [!INCLUDE [data-labels-title-content](../includes/core-visuals/data-labels-title-content.md)]
 [!INCLUDE [data-labels-title-data](../includes/core-visuals/data-labels-title-data.md)]
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
@@ -275,7 +275,7 @@ The **Title** toggle controls the visibility of the Series title. When enabled, 
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
 #### Value
-The **Value** toggle enables users to display the data value for each data point in the visualization. When enabled, the settings shown below become available allowing users to fully adjust the appearance of the data values.
+The **Value** toggle enables users to display the data value for each data point in the visualization. When enabled, the settings become available allowing users to fully adjust the appearance of the data values.
 [!INCLUDE [data-labels-value-field](../includes/core-visuals/data-labels-value-field.md)]
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
@@ -286,7 +286,7 @@ The **Value** toggle enables users to display the data value for each data point
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
 #### Detail
-The **Detail** toggle enables users to display the detail for each data point in the visualization. When enabled, the settings shown below become available allowing users to fully adjust the appearance of the data values.
+The **Detail** toggle enables users to display the detail for each data point in the visualization. When enabled, the settings become available allowing users to fully adjust the appearance of the data values.
 [!INCLUDE [data-labels-detail-field](../includes/core-visuals/data-labels-detail-field.md)]
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
@@ -297,15 +297,15 @@ The **Detail** toggle enables users to display the detail for each data point in
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
 #### Background
-The **Background** toggle allows users to display a background color behind the data label in visualizations. When disabled, data labels will appear directly overlaid on the chart without the addition of a background color. Enabling the Background toggle adds a colored background behind each data label, allowing users to adjust all the background settings shown below.
+The **Background** toggle allows users to display a background color behind the data label in visualizations. When disabled, data labels appear directly overlaid on the chart without the addition of a background color. Enabling the Background toggle adds a colored background behind each data label, allowing users to adjust all the background settings shown here.
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 ### Total labels
-The **Total labels** toggle enables users to display the total values for a set of data points in the visualization. When enabled, the settings shown below become available allowing users to fully adjust the appearance of the data values.
+The **Total labels** toggle enables users to display the total values for a set of data points in the visualization. When enabled, the settings shown here become available allowing users to fully adjust the appearance of the data values.
 
 #### Values
-The **Values** settings enables users to configure formatting options for font, color, display units, and more, as shown below.
+The **Values** settings enables users to configure formatting options for font, color, display units, and more, as shown here.
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [total-labels-values-display-units](../includes/core-visuals/total-labels-values-display-units.md)]
@@ -313,7 +313,7 @@ The **Values** settings enables users to configure formatting options for font, 
 [!INCLUDE [total-labels-values-split](../includes/core-visuals/total-labels-values-split.md)]
 
 #### Background
-The **Background** toggle allows users to display a background color behind the total label in visualizations. When disabled, data labels will appear directly overlaid on the chart without the addition of a background color.
+The **Background** toggle allows users to display a background color behind the total label in visualizations. When disabled, data labels appear directly overlaid on the chart without the addition of a background color.
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
@@ -332,11 +332,11 @@ A **Reference line** allows you to add context and benchmarks in your visual, di
 [!INCLUDE [reference-line-apply-settings-to-type](../includes/core-visuals/reference-line-apply-settings-to-type.md)]
 
 #### Series
-This **Series** setting only appears and is available when you have selected any line type other than Constant.
+This **Series** setting only appears and is available when you select any line type other than Constant.
 [!INCLUDE [reference-line-series-series](../includes/core-visuals/reference-line-series-series.md)]
 
 #### Line
-The **Line** toggle feature is activated by default when a Reference line is added to a visual. This allows you to access and modify the line format settings to adjust the appearance of the Reference line as shown below. 
+The **Line** toggle feature is activated by default when a Reference line is added to a visual. The **Line** toggle allows you to access and modify the line format settings to adjust the appearance of the Reference line as shown here. 
 [!INCLUDE [reference-line-line-value](../includes/core-visuals/reference-line-line-value.md)]
 [!INCLUDE [reference-line-line-percentile](../includes/core-visuals/reference-line-line-percentile.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
@@ -355,12 +355,12 @@ When working with column charts, the **Shade area** is a feature that allows you
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Background
-The **Background** toggle allows users to display a background color behind the total label in visualizations. When disabled, data labels will appear directly overlaid on the chart without the addition of a background color.
+The **Background** toggle allows users to display a background color behind the total label in visualizations. When disabled, data labels appear directly overlaid on the chart without the addition of a background color.
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Data label
-The **Data Label** for the reference line provides information about the value or category of the reference line at a glance. When the toggle is activated, the label can be formatted and positioned to best fit the chart visual using the settings as shown below.
+The **Data Label** for the reference line provides information about the value or category of the reference line at a glance. When the toggle is activated, the label can be formatted and positioned to best fit the chart visual using the settings as shown here.
 [!INCLUDE [reference-line-data-label-horizontal-position](../includes/core-visuals/reference-line-data-label-horizontal-position.md)]
 [!INCLUDE [reference-line-data-label-vertical-position](../includes/core-visuals/reference-line-data-label-vertical-position.md)]
 [!INCLUDE [reference-line-data-label-style](../includes/core-visuals/reference-line-data-label-style.md)]
@@ -371,7 +371,7 @@ The **Data Label** for the reference line provides information about the value
 [!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]
 
 ### Error bars
-**Error bars** in column charts are graphical representations that visually express the degree of uncertainty in the data points. This is crucial when the exact value isn’t as important as the trend or pattern. Smaller error bars suggest more precise measurements, while larger ones suggest higher variability and less reliability. They are a best practice in data visualization and they add a level of professionalism to reports, showing that you’ve considered and are presenting the variability in your data.
+**Error bars** in column charts are graphical representations that visually express the degree of uncertainty in the data points. Error bars are crucial when the exact value isn’t as important as the trend or pattern. Smaller error bars suggest more precise measurements, while larger ones suggest higher variability and less reliability. They are a best practice in data visualization and they add a level of professionalism to reports, showing that you’ve considered and are presenting the variability in your data.
 
 #### Apply settings to
 [!INCLUDE [error-bars-apply-settings-to](../includes/core-visuals/error-bars-apply-settings-to.md)]
@@ -386,7 +386,7 @@ The **Options** settings help tailor the **Error bars** to fit the context of yo
 [!INCLUDE [error-bars-options-make-symmetrical](../includes/core-visuals/error-bars-options-make-symmetrical.md)]
 
 #### Bar
-The **Bar** toggle enables **Error bars** in your visual after configuring the options as outlined above. When enabled, error bars can be formatted according to your needs, to best fit the visual using the settings as shown below.
+The **Bar** toggle enables **Error bars** in your visual after configuring the options as outlined earlier in this article. When enabled, error bars can be formatted according to your needs, to best fit the visual using the settings as shown here.
 [!INCLUDE [global-match-series-color](../includes/core-visuals/global-match-series-color.md)]
 [!INCLUDE [error-bars-bar-bar-color](../includes/core-visuals/error-bars-bar-bar-color.md)]
 [!INCLUDE [error-bars-bar-width](../includes/core-visuals/error-bars-bar-width.md)]
@@ -406,7 +406,7 @@ The **Bar** toggle enables **Error bars** in your visual after configuring the o
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Tooltip
-The **Tooltip** toggle only appears when the Options toggle, as outline above, has been activated. Subsequently, you can enable the Tooltip toggle, and you’re granted access to the settings depicted below. This sequential toggle design ensures that you can customize your visual elements in a structured and organized manner.
+The **Tooltip** toggle only appears when the Options toggle, as outline earlier in this article, has been activated. Subsequently, you can enable the Tooltip toggle, and you’re granted access to the settings shown here. This sequential toggle design ensures that you can customize your visual elements in a structured and organized manner.
 [!INCLUDE [error-bars-error-labels-label-format](../includes/core-visuals/error-bars-error-labels-label-format.md)]
 
 ## Considerations and technical aspects
