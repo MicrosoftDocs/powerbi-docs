@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Space between rows
+###### Space between rows
 
 Defines space between rows of 0-100 pixels. This setting is available after choosing **Grid** arrangement, with **Cards** style, and the **Customize spacing** toggle has been enabled.

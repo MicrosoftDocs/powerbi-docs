@@ -10,6 +10,6 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Make symmetrical
+###### Make symmetrical
 
 When enabled, the error bars extend equally above and below the data point, emphasizing the overall variability without distinguishing between positive and negative deviations.

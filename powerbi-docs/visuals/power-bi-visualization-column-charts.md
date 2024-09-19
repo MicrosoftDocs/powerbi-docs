@@ -111,6 +111,6 @@ You've now successfully created a column chart with Power BI Service. Take some 
 
 ## Related content
 
-* [Format settings for column charts](power-bi-visualization-column-charts-format-settings.md)
+* [Format settings for column charts](power-bi-visualization-column-chart-format-settings.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

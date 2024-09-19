@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### All padding
+###### All padding
 
 This setting simultaneously adjusts the padding within columns and rows.

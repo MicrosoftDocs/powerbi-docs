@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Per column level
+###### Per column level
 
 This toggle, when enabled, lets you customize subtotals for individual columns.
