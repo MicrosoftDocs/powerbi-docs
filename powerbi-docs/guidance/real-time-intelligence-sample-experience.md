@@ -19,7 +19,7 @@ When integrated with Real-Time Intelligence, Power BI can use streaming data to 
 
 ## Create a sample experience
 
-When your refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence. Get started with Real-Time Intelligence and see how it can help you with your real-time data analysis and visualization needs.
+When your semantic model refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence. Get started with Real-Time Intelligence and see how it can help you with your real-time data analysis and visualization needs.
 
 Select **Try a sample** to start building a sample end-to-end solution in Real-Time Intelligence. The following components are created:
 
