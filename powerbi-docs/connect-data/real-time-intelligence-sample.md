@@ -1,6 +1,6 @@
 ---
-title: Real-Time Intelligence sample experience
-description: Describes the entry point from Power BI to the Real-Time Intelligence sample epxerience for identified customers.
+title: Try a Real-Time Intelligence sample
+description: Describes the entry point from Power BI to the Real-Time Intelligence sample experience.
 author: YaelSchuster
 ms.author: yaschust
 ms.reviewer: tzgitlin
@@ -9,7 +9,7 @@ ms.subservice: powerbi-resource
 ms.topic: concept-article
 ms.date: 09/19/2024
 ---
-# Real-Time Intelligence sample experience
+# Try a Real-Time Intelligence sample
 
 Power BI can be integrated with Real-Time Intelligence to provide enhanced performance for users who need high refresh rates or high volumes of data. This article describes the Real-Time Intelligence sample experience, which is an entry point from Power BI to Real-Time Intelligence.
 
@@ -21,7 +21,7 @@ Real-Time Intelligence is a powerful service in the Fabric product suite that ca
 
 Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/).
 
-## Create a sample experience
+## Create a sample
 
 When your semantic model refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence.
 
@@ -37,7 +37,7 @@ Select **Try a sample** to start building a sample end-to-end solution in Real-T
 This solution is based on streaming sample data, to show you the ease and power of the solution in Real-Time Intelligence. Once the build is completed, a dialogue box opens with individual links to each of the sample items, which open in a new tab in the navigation bar.
 
 * Select the name of an item to open it in Real-Time Intelligence.
-* Select **Explore** to close the dialogue box and go to the KQL database window for the sample experience.
+* Select **Explore** to close the dialogue box and go to the KQL database window for the sample.
 
 :::image type="content" source="media/real-time-intelligence-sample-experience/landing-page-refresh.png" alt-text="Screen shot of the landing page for the sample experience." lightbox="media/real-time-intelligence-sample-experience/landing-page-refresh.png":::
 

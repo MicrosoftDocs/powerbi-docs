@@ -287,6 +287,8 @@
         href: refresh-excel-file-onedrive.md
       - name: "Refresh a semantic model from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
+      - name: "Frequent refreshes using Real-Time Intelligence"
+        href: real-time-intelligence-sample.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
