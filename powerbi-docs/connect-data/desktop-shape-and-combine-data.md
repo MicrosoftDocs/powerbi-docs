@@ -63,7 +63,7 @@ Power Query Editor records the steps you specify (such as rename a table, transf
 
     :::image type="content" source="media/desktop-shape-and-combine-data/query-settings-change-table-name.png" alt-text="Screenshot of Power Query Editor showing how to edit a table name in Query Settings.":::
 
-1. The existing data is ordered by a weighted score, as described on the source webpage under [Methodology](https://www.fool.com/research/best-states-to-retire/#:~:text=Methodology). Let's add a custom column to calculate a different score. We'll then sort the table on this column to compare the custom score's ranking to the existing score.
+1. The existing data is ordered by a weighted score, as described on the source webpage under [Methodology](https://www.fool.com/research/best-states-to-retire#:~:text=Methodology). Let's add a custom column to calculate a different score. We'll then sort the table on this column to compare the custom score's ranking to the existing score.
 
 1. From the **Add Column** ribbon, select **Custom Column**.
 
@@ -72,7 +72,7 @@ Power Query Editor records the steps you specify (such as rename a table, transf
 1. In the **Custom Column** dialog, in the **New column name** field, enter *New score*. For the **Custom column formula**, enter the following data:
 
     ```
-    ( [Quality of life] + [Cost of housing] + [#"Public health"] + [Crime] + [Taxes] + [Weather] + [#"Non-housing cost of living"] ) / 7
+    ( [Quality of life] + [Cost of housing] + [Public health] + [Crime] + [Taxes] + [Weather] + [#"Non-housing cost of living"] ) / 7
     ```
 
 1. Make sure the status message is *No syntax errors have been detected*, then select **OK**.
@@ -140,12 +140,12 @@ These changes are described in the following steps.
 
     1. Select the **New score** column, then display the column's data formula by enabling the **Formula Bar** checkbox from the **View** tab.
 
-       :::image type="content" source="media/desktop-shape-and-combine-data/new-score-column-show-formula-bar.png" alt-text="Screenshot of Power Query Editor showing the New score column and its data formula with errors fixed.":::
+       :::image type="content" source="media/desktop-shape-and-combine-data/new-score-column-show-formula-bar.png" alt-text="Screenshot of Power Query Editor showing the New score column and its data formula with errors fixed." lightbox="media/desktop-shape-and-combine-data/new-score-column-show-formula-bar.png":::
 
        Edit the formula as described previously, until it looks like this, then press **Enter**.
 
           ```
-          = Table.AddColumn(#"Removed Columns", "New score", each ( [Quality of life] + [Cost of housing] + [#"Public health"] + [Crime] + [Taxes] + [#"Non-housing cost of living"] ) / 6)
+          = Table.AddColumn(#"Removed Columns", "New score", each ( [Quality of life] + [Cost of housing] + [Public health] + [Crime] + [Taxes] + [#"Non-housing cost of living"] ) / 6)
           ```
 
    Power Query Editor replaces the data with the revised values and the **Added Custom** step completes with no errors.
@@ -212,7 +212,7 @@ To get the data into shape, follow these steps:
 
 1. Remove all unneeded columns. Because we need only the mapping of each state to its official two-letter abbreviation (**Name** and **ANSI** columns), we can remove the other columns. First select the **Name** column, then hold down the **CTRL** key and select the **ANSI** column. From the **Home** tab on the ribbon, select **Remove Columns \> Remove Other Columns**.
 
-   :::image type="content" source="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png" alt-text="Screenshot of Power Query Editor highlighting the Remove Columns dropdown and the Remove Other Columns item." lightbox="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png":::
+   :::image type="content" source="media/desktop-shape-and-combine-data/state-table-remove-other-columns.png" alt-text="Screenshot of Power Query Editor highlighting the Remove Columns dropdown and the Remove Other Columns item.":::
 
    > [!NOTE]
    > The *sequence* of applied steps in Power Query Editor is important, and affects how the data is shaped. It’s also important to consider how one step might impact another subsequent step. For example, if you remove a step from the applied steps, subsequent steps might not behave as originally intended.
@@ -267,7 +267,7 @@ In this case, we want to merge the queries:
 
 1. In this case, we want only the **State Code** column. Select that column, clear **Use original column name as prefix**, and then select **OK**.
 
-   If we had left the checkbox selected for **Use original column name as prefix**, the merged column would be named **State Codes.State Code**.
+   If we had left the checkbox selected for **Use original column name as prefix**, the merged column would be named **State Codes.State Codes**.
 
    > [!NOTE]
    > If you want to explore how to bring in the **State Codes** table, you can experiment a bit. If you don’t like the results, just delete that step from the **APPLIED STEPS** list in the **Query Settings** pane, and your query returns to the state prior to applying that **Expand** step. You can do this as many times as you like until the expand process looks the way you want it.
