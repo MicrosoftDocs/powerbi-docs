@@ -55,7 +55,7 @@
     - name: "Semantic model modes in the Power BI service"
       href: service-dataset-modes-understand.md      
     - name: "Real-Tme Intelligence sample experience"
-      href: rti-sample-experience.md           
+      href: ../guidance/rti-sample-experience.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
     - name: "Using enhanced semantic model metadata in Power BI Desktop"
