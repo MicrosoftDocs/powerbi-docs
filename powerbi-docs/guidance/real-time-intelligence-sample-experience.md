@@ -15,11 +15,11 @@ Power BI can be integrated with Real-Time Intelligence to provide enhanced perfo
 
 :::image type="content" source="media/real-time-intelligence-sample-experience/architecture-scheme.png" alt-text="Schematic of Real-Time Intelligence architecture with sample items.":::
 
-When integrated with Real-Time Intelligence, Power BI can use streaming data to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization. It's tailored specifically for use cases with high volumes of data or high refresh rates, which makes it an especially effective solution.
+When integrated with Real-Time Intelligence, Power BI can use streaming data to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization for use cases with high volumes of data or high refresh rates.
 
 ## Create a sample experience
 
-When your refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence. This is a great way to get started with Real-Time Intelligence and see how it can help you with your real-time data analysis and visualization needs.
+When your refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence. Get started with Real-Time Intelligence and see how it can help you with your real-time data analysis and visualization needs.
 
 Select **Try a sample** to start building a sample end-to-end solution in Real-Time Intelligence. The following components are created:
 
@@ -38,7 +38,7 @@ Select **Explore** to close the dialogue box and go directly to the Real-Time In
 
 :::image type="content" source="media/real-time-intelligence-sample-experience/landing-page-refresh.png" alt-text="Screen shot of the landing page for the sample experience." lightbox="media/real-time-intelligence-sample-experience/landing-page-refresh.png":::
 
-The histrogram and tables in the main view pane update automatically as the data refreshes.
+The histogram and tables in the main view pane update automatically as the data refreshes.
 
 ## Components of the Real-Time Intelligence solution
 
@@ -46,7 +46,7 @@ The components of the Real-Time Intelligence sample experience are:
 
 * **Eventstream** An event stream is the engine for data ingestion and processing of your real-time data into Microsoft Fabric. You can transform your data and route it via filters to various destinations. Read more about [event streams](/fabric/real-time-intelligence/event-streams/overview).
 
-* **Eventhouse** An eventhouse is where data is stored and analysed. An eventhouse is designed to handle real-time data streams efficiently. An eventhouse can hold one or more KQL databases. They're tailored to large volumes of time-based, streaming events with structured, semi structured, and unstructured data. Read more about [Eventhouse](/fabric/real-time-intelligence/eventhouse).
+* **Eventhouse** An eventhouse is where data is stored and analyzed. An eventhouse is designed to handle real-time data streams efficiently. An eventhouse can hold one or more KQL databases. They're tailored to large volumes of time-based, streaming events with structured, semi structured, and unstructured data. Read more about [Eventhouse](/fabric/real-time-intelligence/eventhouse).
 
 * **KQL Database** A KQL database is where data is stored and managed. It allows you to query data in real-time, providing a powerful tool for data exploration and analysis. The KQL database supports various data policies and transformations. Read more about [KQL databases](/fabric/real-time-intelligence/create-database).
 
@@ -58,7 +58,7 @@ The components of the Real-Time Intelligence sample experience are:
 
 ## Create your own solution in Real-Time Intelligence
 
-You can implement this with your own data. Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
+You can implement this solution with your own data. Before you begin, you need a [workspace](/fabric/get-started/create-workspaces) with a Microsoft Fabric-enabled [capacity](/fabric/enterprise/licenses#capacity).
 
 To set up our own real-time dashboard, follow the [Real-Time Intelligence tutorials](/fabric/real-time-intelligence/tutorial-introduction). Here's a summary of the steps:
 
@@ -71,7 +71,7 @@ To set up our own real-time dashboard, follow the [Real-Time Intelligence tutori
 
 ## Learn more about Real-Time Intelligence
 
-Real-Time Intelligence is a powerful service in the Fabric product suite that can help you extract insights and visualize your data in motion.  It offers an end-to-end solution for event-driven scenarios, streaming data, and data logs.  
+Real-Time Intelligence is a powerful service in the Fabric product suite that can help you extract insights and visualize your data in motion. It offers an end-to-end solution for event-driven scenarios, streaming data, and data logs.  
 
 Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/).
 
