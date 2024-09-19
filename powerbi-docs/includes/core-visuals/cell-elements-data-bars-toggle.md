@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Data bars
+###### Data bars
 
 This toggle, when enabled, lets you use conditional formatting to create horizontal bars that reflect the magnitude of data points. For example, longer bars for higher values.

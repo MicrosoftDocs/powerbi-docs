@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Value area
+###### Value area
 
 In the Tabular style layout, you can adjust the data value display area from 0% to 100% to determine its proportion on the label.

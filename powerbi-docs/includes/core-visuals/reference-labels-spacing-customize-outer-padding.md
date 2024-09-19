@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Customize outer padding
+###### Customize outer padding
 
 When enabled, this toggle allows you to customize the outer padding by specifying 0-20 pixels before, and after, the divider line.

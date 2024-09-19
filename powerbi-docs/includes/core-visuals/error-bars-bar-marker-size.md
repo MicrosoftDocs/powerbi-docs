@@ -10,6 +10,6 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Marker size
+###### Marker size
 
 This setting allows you to define the size of the marker in pixels, offering a range from 1 to 10.

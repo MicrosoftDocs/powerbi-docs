@@ -10,6 +10,6 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Alignment
+###### Alignment
 
 This setting controls the alignment, allowing you to choose between left, center, or right.
