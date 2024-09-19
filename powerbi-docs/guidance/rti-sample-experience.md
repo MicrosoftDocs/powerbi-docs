@@ -36,7 +36,7 @@ When you select **Try a sample**, an end-to-end flow of Real-Time Intelligence i
 
 Select **Explore** to close the dialogue box and go directly to the Real-Time Intelligence web UI. You land on the KQL database window for the sample experience.
 
-:::image type="content" source="media/RTI-sample-experience/landing-page-refresh.png" alt-text="Screen shot of the landing page for the sample experience.":::
+:::image type="content" source="media/RTI-sample-experience/landing-page-refresh.png" alt-text="Screen shot of the landing page for the sample experience." lightbox="media/RTI-sample-experience/landing-page-refresh.png":::
 
 The histrogram and tables in the main view pane update automatically as the data refreshes.
 
