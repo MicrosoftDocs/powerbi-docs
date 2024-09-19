@@ -32,8 +32,6 @@ Select **Try a sample** to start building a sample end-to-end solution in Real-T
 
 This solution is based on streaming sample data, to show you the ease and power of the solution in Real-Time Intelligence. Once the build is completed, a dialogue box opens with individual links to each of the sample items, which open in a new tab.
 
-:::image type="content" source="media/real-time-intelligence-sample-experience/info-bubble.png" alt-text="Screenshot showing the information bubble that appears once the experience is built." lightbox="media/real-time-intelligence-sample-experience/info-bubble.png":::
-
 * Select the name of an item to open it in Real-Time Intelligence.
 * Select **Explore** to close the dialogue box and go to the KQL database window for the sample experience.
 
