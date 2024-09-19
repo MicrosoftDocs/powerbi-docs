@@ -29,9 +29,15 @@ Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/).
 
 Your use case in Power BI is identified as one that could benefit from a Real-Time Intelligence and Power BI integration. There is a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence.
 
-When you select **Try a sample**, an end-to-end flow of Real-Time Intelligence is initiated. In the background, the system builds you a sample Event stream, Eventhouse, KQL database, KQL queryset, Real-Time Dashboard and a Power BI report based on streamed data. Once the build is completed, a pop-up appears with individual links to each of the sample items and to the supporting documentation.
+When you select **Try a sample**, an end-to-end flow of Real-Time Intelligence is initiated. In the background, the system builds you a sample Event stream, Eventhouse, KQL database, KQL queryset, Real-Time Dashboard and a Power BI report based on streamed data. Once the build is completed, a dialogue box opens with individual links to each of the sample items, which open in a new tab. Select **Learn more** to open Real-Time Intelligence supporting documentation.
 
-Select **Explore** to close the dialogue box and go directly to the sample database web UI in Real-Time Intelligence.
+:::image type="content" source="media/RTI-sample-experience/info-bubble.png" alt-text="Screenshot showing the information bubble that appears once the experience is built." lightbox="media/RTI-sample-experience/info-bubble.png":::
+
+Select **Explore** to close the dialogue box and go directly to the Real-Time Intelligence web UI. You land on the KQL database window for the sample experience.
+
+:::image type="content" source="media/RTI-sample-experience/landing-page-refresh.png" alt-text="Screen shot of the landing page for the sample experience.":::
+
+The histrogram and tables in the main view pane update automatically as the data refreshes.
 
 ## Items in Real-Time Intelligence
 
