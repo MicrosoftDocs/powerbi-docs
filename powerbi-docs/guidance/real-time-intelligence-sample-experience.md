@@ -17,9 +17,13 @@ Power BI can be integrated with Real-Time Intelligence to provide enhanced perfo
 
 When integrated with Real-Time Intelligence, Power BI can use streaming data to provide up-to-the-minute insights. Real-Time Intelligence manages the ingestion, transformation, and storage of streaming data, and makes it available for analysis and visualization in Power BI. This integration provides a comprehensive and fully integrated solution for real-time data analysis and visualization for use cases with high volumes of data or high refresh rates.
 
+Real-Time Intelligence is a powerful service in the Fabric product suite that can help you extract insights and visualize your data in motion. It offers an end-to-end solution for event-driven scenarios, streaming data, and data logs.  
+
+Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/).
+
 ## Create a sample experience
 
-When your semantic model refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence. Get started with Real-Time Intelligence and see how it can help you with your real-time data analysis and visualization needs.
+When your semantic model refresh rate is higher than a certain threshold, you see a bubble pop-up inviting you to try a sample experience in Real-Time Intelligence.
 
 Select **Try a sample** to start building a sample end-to-end solution in Real-Time Intelligence. The following components are created:
 
@@ -30,7 +34,7 @@ Select **Try a sample** to start building a sample end-to-end solution in Real-T
 * Real-Time Dashboard
 * Power BI report
 
-This solution is based on streaming sample data, to show you the ease and power of the solution in Real-Time Intelligence. Once the build is completed, a dialogue box opens with individual links to each of the sample items, which open in a new tab.
+This solution is based on streaming sample data, to show you the ease and power of the solution in Real-Time Intelligence. Once the build is completed, a dialogue box opens with individual links to each of the sample items, which open in a new tab in the navigation bar.
 
 * Select the name of an item to open it in Real-Time Intelligence.
 * Select **Explore** to close the dialogue box and go to the KQL database window for the sample experience.
@@ -66,12 +70,6 @@ To set up our own real-time dashboard, follow the [Real-Time Intelligence tutori
 1. [Create a KQL queryset](/fabric/real-time-intelligence/tutorial-3-query-data) and query your data.
 1. [Create a real-time dashboard](/fabric/real-time-intelligence/tutorial-4-create-dashboard) and explore your data visually.
 1. [Build a Power BI report](/fabric/real-time-intelligence/tutorial-5-power-bi-report).
-
-## Learn more about Real-Time Intelligence
-
-Real-Time Intelligence is a powerful service in the Fabric product suite that can help you extract insights and visualize your data in motion. It offers an end-to-end solution for event-driven scenarios, streaming data, and data logs.  
-
-Learn more about [Real-Time Intelligence](/fabric/real-time-intelligence/).
 
 ## Related content
 
