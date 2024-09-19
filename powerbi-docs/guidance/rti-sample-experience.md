@@ -3,6 +3,8 @@ title: Power BI entry point to Real-Time Intelligence sample experience
 description: Describes the entry point from Power BI to the Real-Time Intelligence sample epxerience for identified customers.
 author: andykop
 ms.author: v-andykop
+ms.service: powerbi
+ms.subservice: powerbi-resource
 ms.topic: concept-article
 ms.date: 09/15/2024
 ---
