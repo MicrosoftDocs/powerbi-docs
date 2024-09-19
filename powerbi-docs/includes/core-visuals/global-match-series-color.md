@@ -10,6 +10,6 @@ ms.date: 06/20/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Match column color
+###### Match column color
 
 The toggle, when activated, aligns the series color and conceals the color setting; when deactivated, it reveals the color setting.

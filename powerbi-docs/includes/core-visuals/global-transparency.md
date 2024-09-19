@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Transparency
+###### Transparency
 
 This setting adjusts the transparency, ranging from 0% for full opacity to 100% for complete transparency, allowing for a subtler or more pronounced color effect.

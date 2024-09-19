@@ -10,6 +10,6 @@ ms.date: 06/24/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Series
+###### Series
 
 In instances where you have more than one data field specified, this allows you to select which Series the Reference line refers to.

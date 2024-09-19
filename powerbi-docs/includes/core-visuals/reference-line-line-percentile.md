@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Percentile
+###### Percentile
 
 This option configures the percentile from 0% to 100% whenever a Percentile line has been included in the visual.

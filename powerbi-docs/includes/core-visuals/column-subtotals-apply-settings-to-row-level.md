@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Row level
+###### Row level
 
 Use this menu to set subtotal options for the entire row hierarchy.

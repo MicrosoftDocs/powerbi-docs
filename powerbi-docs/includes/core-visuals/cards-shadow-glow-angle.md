@@ -10,6 +10,6 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Angle
+###### Angle
 
 Define the angle at which the effect appears, creating a sense of the time of day or a specific light source.

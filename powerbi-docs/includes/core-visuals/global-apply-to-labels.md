@@ -10,6 +10,6 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Apply to labels
+###### Apply to labels
 
 This toggle, when enabled, extends the formatting settings (font, text color, and background color) to the labels.

@@ -10,9 +10,9 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Arrangement
+###### Arrangement
 
 Choose from three options to establish how you want your cards to appear in your visual:
-**- Single Row:** Arranges all cards in a horizontal line.
-**- Single Column:** Stacks cards vertically.
-**- Grid:** Arranges cards in a matrix format.
+- **Single Row:** Arranges all cards in a horizontal line.
+- **Single Column:** Stacks cards vertically.
+- **Grid:** Arranges cards in a matrix format.

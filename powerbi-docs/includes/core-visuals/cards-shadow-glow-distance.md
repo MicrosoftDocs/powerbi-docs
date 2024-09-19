@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Distance
+###### Distance
 
 Set how far the shadow extends from the card, which can affect the perception of the card’s elevation.
