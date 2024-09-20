@@ -10,6 +10,6 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Browse…
+###### Browse…
 
 This feature opens file explorer on your computer for you to browse and select an image file.

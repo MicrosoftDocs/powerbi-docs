@@ -1,6 +1,6 @@
 ---
-title: Column charts format settings
-description: This document explains all available Format settings for Column charts in Power BI Desktop and Power BI Service.
+title: Card visual format settings
+description: This document explains all available Format settings for Card visuals in Power BI Desktop and Power BI Service.
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.reviewer:
@@ -8,22 +8,22 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 07/13/2024
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for column charts so that I can effectively and more easily format column chart visuals in Power BI Desktop and Power BI Service.
+#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for card visuals so that I can effectively and more easily format card visuals in Power BI Desktop and Power BI Service.
 ---
 
-# Column charts format settings
+# Card visual format settings
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
 ## Overview
 
-The document you are about to delve into will provide a comprehensive and detailed exposition of the various format settings available for column charts in both Power BI Desktop and Power BI Service.
+The document you are about to delve into will provide a comprehensive and detailed exposition of the various format settings available for card visuals in both Power BI Desktop and Power BI Service.
 
-Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements to advanced ribbon settings, this document will cover every setting for column chart formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
+Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, this document will cover every setting for card visual formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
 
-Whether you’re a seasoned Power BI user or new to data visualization, this document will be an invaluable resource for mastering column chart formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
+Whether you’re a seasoned Power BI user or new to data visualization, this document will be an invaluable resource for mastering card visual formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
 
 ## Prerequisites
 
@@ -44,17 +44,15 @@ To format and customize your column chart in **Power BI Service**, simply click 
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
 
-## Settings
+## X-axis settings
 
-### X-axis
-
-#### Type
+### Type
 
 The **Type** setting within x-axis options is only available when you choose a single data field that is either numerical or date/time.
 
 [!INCLUDE [xaxis-type-type](../includes/core-visuals/xaxis-type-type.md)]
 
-#### Range
+### Range
 
 The availability of **Range** settings depends on configuring the x-axis **Type** as **Continuous**. Once the X-axis Type is specified as Continuous, you can access and adjust all the Range settings shown below.
 
@@ -63,37 +61,16 @@ The availability of **Range** settings depends on configuring the x-axis **Type*
 [!INCLUDE [axis-range-logarithmic-scale](../includes/core-visuals/axis-range-logarithmic-scale.md)]
 [!INCLUDE [xaxis-range-invert-range](../includes/core-visuals/xaxis-range-invert-range.md)]
 
-#### Values
 
-The visibility of x-axis **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown below.
 
-[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
-[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
-[!INCLUDE [global-continuous-axis-display-units](../includes/core-visuals/global-continuous-axis-display-units.md)]
-[!INCLUDE [xaxis-values-value-decimal-places.md](../includes/core-visuals/xaxis-values-value-decimal-places.md)]
-[!INCLUDE [xaxis-values-maximum-height](../includes/core-visuals/xaxis-values-maximum-height.md)]
-[!INCLUDE [xaxis-values-concatenate-labels](../includes/core-visuals/xaxis-values-concatenate-labels.md)]
-
-#### Title
-
-[!INCLUDE [axis-title-title-text](../includes/core-visuals/axis-title-title-text.md)]
-[!INCLUDE [axis-title-style](../includes/core-visuals/axis-title-style.md)]
-[!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
-[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
-
-#### Layout
-
-The **Layout** setting within x-axis options is only available when you’re working with certain types of data which allow for a categorical axis.
-
-[!INCLUDE [xaxis-layout-minimum-category-width](../includes/core-visuals/xaxis-layout-minimum-category-width.md)]
 
 ## Considerations and technical aspects
 
 ### Considerations
-
+- Display units suffix changes according to location/system settings. 
+- Axis colors defined by conditional formatting are based to a general value rather that by individual category.
 
 ### Technical aspects
-
 
 ## Related content
 

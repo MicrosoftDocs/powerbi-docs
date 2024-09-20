@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Alternate background color
+###### Alternate background color
 
 This setting allows you to customize the color for alternating rows by selecting colors from the color palette.

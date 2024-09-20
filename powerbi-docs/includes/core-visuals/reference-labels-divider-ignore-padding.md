@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Ignore padding
+###### Ignore padding
 
 This toggle, when activated, ignores card padding to allow the Divider line to fill the entire span of the card.
