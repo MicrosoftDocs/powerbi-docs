@@ -63,7 +63,7 @@ Power Query Editor records the steps you specify (such as rename a table, transf
 
     :::image type="content" source="media/desktop-shape-and-combine-data/query-settings-change-table-name.png" alt-text="Screenshot of Power Query Editor showing how to edit a table name in Query Settings.":::
 
-1. The existing data is ordered by a weighted score, as described on the [source webpage](https://www.fool.com/research/best-states-to-retire) under *Methodology*. Let's add a custom column to calculate a different score. We'll then sort the table on this column to compare the custom score's ranking to the existing score.
+1. The existing data is ordered by a weighted score, as described on the source web page under [Methodology](https://www.fool.com/research/best-states-to-retire/#:%7E:text=Methodology). We'll then sort the table on this column to compare the custom score's ranking to the existing score.
 
 1. From the **Add Column** ribbon, select **Custom Column**.
 
