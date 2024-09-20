@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Shape and combine data in Power BI Desktop"
-description: Learn how to shape and combine data in Power BI Desktop using web data sources with this comprehensive tutorial.
+description: In this tutorial, you learn how to shape and combine data in Power BI Desktop using web data sources.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
@@ -9,7 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: tutorial
 ms.date: 09/20/2024
 LocalizationGroup: Transform and shape data
-#Customer intent: As a data analyst or report creator, I want to connect to more than one data source, so that I can use those data sources to create data models and build reports.
+#Customer intent: As a Power BI Desktop user, I want to learn how to connect to data sources, then shape and combine the data in Power Query Editor, so that I can create data models and build reports.
 ---
 # Tutorial: Shape and combine data in Power BI Desktop
 
@@ -63,7 +63,7 @@ Power Query Editor records the steps you specify (such as rename a table, transf
 
     :::image type="content" source="media/desktop-shape-and-combine-data/query-settings-change-table-name.png" alt-text="Screenshot of Power Query Editor showing how to edit a table name in Query Settings.":::
 
-1. The existing data is ordered by a weighted score, as described on the source webpage under [Methodology](https://www.fool.com/research/best-states-to-retire#:~:text=Methodology). Let's add a custom column to calculate a different score. We'll then sort the table on this column to compare the custom score's ranking to the existing score.
+1. The existing data is ordered by a weighted score, as described on the [source webpage](https://www.fool.com/research/best-states-to-retire) under *Methodology*. Let's add a custom column to calculate a different score. We'll then sort the table on this column to compare the custom score's ranking to the existing score.
 
 1. From the **Add Column** ribbon, select **Custom Column**.
 
@@ -187,7 +187,7 @@ There's another public data source that provides that association, but it needs 
 
 1. From the **Home** ribbon in Power Query Editor, select **New Source \> Web**.
 
-2. Enter the address of the website for state abbreviations, *<https://en.wikipedia.org/wiki/List_of_U.S._state_and_territory_abbreviations>*, and then select **Connect**.
+2. Enter the address of the website for state abbreviations, *<https://en.wikipedia.org/wiki/List_of_U.S._state_and_territory_abbreviations>*, and then select **OK**.
 
    The Navigator displays the content of the website.
 
