@@ -47,7 +47,7 @@ The histogram and tables in the main view pane update automatically as the data 
 
 The components of the Real-Time Intelligence sample experience are:  
 
-* **Eventstream**: An event stream is the engine for data ingestion and processing of your real-time data into Microsoft Fabric. You can transform your data and route it via filters to various destinations. Read more about [event streams](/fabric/real-time-intelligence/event-streams/overview).
+* **Event stream**: An event stream is the engine for data ingestion and processing of your real-time data into Microsoft Fabric. You can transform your data and route it via filters to various destinations. Read more about [event streams](/fabric/real-time-intelligence/event-streams/overview).
 
 * **Eventhouse**: An eventhouse is where data is stored and analyzed. An eventhouse is designed to handle real-time data streams efficiently. An eventhouse can hold one or more KQL databases. They're tailored to large volumes of time-based, streaming events with structured, semi structured, and unstructured data. Read more about [Eventhouse](/fabric/real-time-intelligence/eventhouse).
 
