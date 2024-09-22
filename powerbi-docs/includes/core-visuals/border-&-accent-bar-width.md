@@ -10,6 +10,6 @@ ms.date: 06/26/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Width
+###### Width
 
 This setting allows you to define the thickness in pixels, offering a range from 1 to 10 (widest).

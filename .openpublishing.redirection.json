@@ -1,8 +1,18 @@
 {
     "redirections": [
         {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-column-charts-format-settings.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/create-reports/power-bi-dark-mode.md",
+            "redirect_url": "powerbi-docs/create-reports/",
             "redirect_document_id": false
         },
         {
@@ -2993,6 +3003,11 @@
             "source_path": "powerbi-docs/service-connect-to-salesforce.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-salesforce",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-connect-to-covid-19-tracking.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-services.md",

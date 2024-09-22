@@ -10,6 +10,6 @@ ms.date: 06/20/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Offset
+###### Offset
 
 Adjusts the distance between the glow and the card to create the impression of depth.

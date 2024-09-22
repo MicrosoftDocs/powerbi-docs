@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Space between categories
+###### Space between categories
 
 This setting adjusts the inner padding of the category plot area from 0% (no padding) to 75%, affecting its total area, creating a visual separation between categories.

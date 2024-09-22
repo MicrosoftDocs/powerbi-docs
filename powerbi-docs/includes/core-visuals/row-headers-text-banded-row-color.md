@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Banded row color
+###### Banded row color
 
 This toggle, when enabled, extends the color settings from the Values section, and applies the same color format settings to the row headers in your matrix.

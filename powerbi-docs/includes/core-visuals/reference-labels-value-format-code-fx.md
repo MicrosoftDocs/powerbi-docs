@@ -10,7 +10,7 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Format code
+###### Format code
 
 Where the selected label contains a data field that is numerical data, the **Format code** option allows you to specify custom format codes (based on Excel format codes) or apply conditional formatting. This option is available only when selecting custom display units.  
 

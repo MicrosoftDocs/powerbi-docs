@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 08/13/2024
+ms.date: 9/09/2024
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -109,7 +109,7 @@ Another way to consider the different refresh types is what they impact and wher
 
 For Power BI users, refreshing data typically means importing data from the original data sources into a semantic model, either based on a refresh schedule or on demand. You can perform multiple semantic model refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits semantic models on shared capacity to eight scheduled daily semantic model refreshes. The eight time values are stored in the back-end database and are based on the *local time* zone that was selected on the semantic model settings page. The scheduler checks which model should be refreshed and at what time(s). The quota of eight refreshes resets daily at 12:01 AM local time.
 
-![Data refresh schedule in Database settings.](media/refresh-data/power-bi-refresh-data.png)
+:::image type="content" source="media/refresh-data/power-bi-refresh-data-01.png" alt-text="Screen shot of time zone setting for refresh.":::
 
 If the semantic model resides on a Premium capacity, you can schedule up to 48 refreshes per day in the semantic model settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Semantic models on a Premium capacity with the [XMLA endpoint](../enterprise/service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
 

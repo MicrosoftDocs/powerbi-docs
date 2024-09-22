@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Icons
+###### Icons
 
 This toggle, when enabled, lets you use conditional formatting to add visual indicators from a predefined set of icons or custom icons. For example, an up arrow for positive growth and a down arrow for negative growth.
