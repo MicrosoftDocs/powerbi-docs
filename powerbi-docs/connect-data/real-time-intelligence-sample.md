@@ -27,7 +27,7 @@ When your semantic model refresh rate is higher than a certain threshold, you se
 
 Select **Try a sample** to start building a sample end-to-end solution in Real-Time Intelligence. The following components are created:
 
-* Eventstream
+* Event stream
 * Eventhouse
 * KQL Database
 * KQL Queryset
