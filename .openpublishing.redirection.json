@@ -11,11 +11,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/create-reports/power-bi-dark-mode.md",
-            "redirect_url": "powerbi-docs/create-reports/",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "powerbi-docs/desktop-directquery-data-sources.md",
             "redirect_url": "/power-bi/connect-data/power-bi-data-sources/",
             "redirect_document_id": false
