@@ -60,7 +60,7 @@ The first time you open the Power BI app in Teams, you need to sign in to Power 
 
 Select **Continue**, and then provide the next factor of authentication (as configured by your organization).
 
-* If MFA for Power BI is not configured for your account, you'll be prompted to go through the regular Power BI sign in process.
+* If MFA for Power BI isn't configured for your account, you'll be prompted to go through the regular Power BI sign in process.
 
 ## Pin the Power BI app to the Teams navigation pane
 
