@@ -122,6 +122,9 @@
       href: end-user-search-sort.md
   - name: Get data
     items: 
+    - name: Get started with org apps (preview)
+      href: ./org-app-items/org-app-items.md
+      displayName: apps, org apps, preview, distribution, sharing
     - name: "Workspaces in Power BI"
       href: end-user-workspaces.md
     - name: "Apps in Power BI"
