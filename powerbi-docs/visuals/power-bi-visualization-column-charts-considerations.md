@@ -8,7 +8,7 @@ ms.custom: sample-Retail-Analysis
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 08/27/2024
+ms.date: 09/23/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand all the considerations and limitions for column charts so that I can effectively and more easily build column chart visuals in Power BI Desktop and Power BI service.
 ---
