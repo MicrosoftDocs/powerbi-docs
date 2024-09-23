@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
-ms.date: 06/25/2024
+ms.date: 06/28/2024
 ---
 
 # Tutorial: Create a paginated report and upload it to the Power BI service
