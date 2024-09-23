@@ -129,8 +129,8 @@ With [Row Level Security (RLS)](embedded-row-level-security.md), you can export 
 
 To export using RLS, you must have the following permissions:
 
-* Write and reshare permissions for the semantic model the report is connected to
-* Workspace member or admin of the workspace where the report resides
+* Write permissions for the semantic model the report is connected to
+* Contributor or admin of the workspace where the report resides
 
 ### Data protection
 
