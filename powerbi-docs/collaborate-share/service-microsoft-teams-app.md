@@ -50,6 +50,16 @@ Select **More added apps (...)** in the left navigation bar, and then search for
 
 That's it! The Power BI app is installed in Microsoft Teams.
 
+## Sign in to Power BI
+
+The first time you open the Power BI app in Teams, you need to sign in to Power BI. If multifactor authentication (MFA) for Power BI is configured for your account, you'll see a message requesting additional permissions.
+
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-app-mfa-sign-in.png" alt-text="Screenshot showing pop-up screen for multifactor authentication in the Power BI app for Teams.":::
+
+Select **Continue**, and then provide the next factor of authentication (as configured by your organization).
+
+If MFA for Power BI is not configured for your account, you'll be prompted to go through the regular Power BI sign in process.
+
 ## Pin the Power BI app to the Teams navigation pane
 
 To keep the app available in Teams, pin it to the Teams navigation pane. Right-click the Power BI icon in the Teams navigation pane, and select **Pin**.
