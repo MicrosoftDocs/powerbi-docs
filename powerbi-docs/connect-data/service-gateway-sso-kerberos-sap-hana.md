@@ -7,16 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/03/2023
+ms.date: 09/23/2024
 LocalizationGroup: Gateways
+#customer intent: As a Power BI user I want to learn how to configure SSO for my SAP HANA server using Power BI.
 ---
 
 # Use Kerberos for SSO to SAP HANA
 
+This article describes how to configure your SAP HANA data source to enable single sign-on (SSO) from the Power BI service.
+
 > [!IMPORTANT]
 > Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
-
-This article describes how to configure your SAP HANA data source to enable single sign-on (SSO) from the Power BI service.
 
 > [!NOTE]
 > Before you attempt to refresh a SAP HANA-based report that uses Kerberos SSO, complete the steps in both this article and [Configure Kerberos SSO](service-gateway-sso-kerberos.md).
@@ -159,7 +160,7 @@ Following the preceding steps should resolve the issue. If you still experience 
 
 If you experience credentials errors, errors in the logs or traces expose errors that describe `Credentials are invalid` or similar errors. These errors might manifest differently on the data source side of the connection, such as SAP HANA. The following image shows an example error:
 
-:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-09.png" alt-text="Screenshot showing an invalid credentials error." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-09.png" :::
+:::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-092.png" alt-text="Screenshot showing an invalid credentials error." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-092.png" :::
 
 #### Symptom 1
 
