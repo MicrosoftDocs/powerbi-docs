@@ -43,13 +43,17 @@ To enable users to be able to open an item by tapping their devices on an NFC ta
 > [!NOTE]
 > When you register an item on an NFC tag, anything previously registered on the tag will be overwritten.
 
-1. Launch the Power BI mobile app, open the item you want to register on the NFC tag. You can register a Power BI report, dashboard, scrorecard, app, or workspace. If the item is a report, filter the report to display what you want the users to see when they open the report via the NFC tag.
+1. Launch the Power BI mobile app and open the item you want to register on the NFC tag. You can register a Power BI report, dashboard, scrorecard, app, or workspace. If the item is a report, filter the report to display what you want the users to see when they open the report via the NFC tag.
 
 1. Hold the device close to the tag, select the options menu, and tap **NFC (preview)**.
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-option.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
 
-1. On the **Register on NFC tag** screen that appears, choose how you want to register the item and then select **Start scanning**.
+    Workspaces don't have an options menu. Instead, tap the NFC icon in header.
+
+    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-workspaces.png" alt-text="Screenshot showing the Register on an NFC tag option on a workspace in the Power BI mobile app." border="false":::
+    
+1. On the **Register on NFC tag** screen that appears, choose how you want to register the item. The options will vary depending on the type of item you're registering. When done, select **Start scanning**.
 
     * **Register this report in its current state** (this option only appears for reports): When users tap their devices on the tag, the report will open as filtered when registered on the tag. The current state is preserved for 180 days. If the tag isn't read during this time, the "current state" is forgotten and the report will open in the state it opens in in the Power BI service. Every time the tag is read, the current state (if any) is renewed for another 180 days.
 
