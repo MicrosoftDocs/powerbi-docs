@@ -4,12 +4,13 @@ description: Learn how to create your own parameters to imagine and visualize va
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
-ms.custom: ''
+ms.custom: FY25Q1-Linter
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 02/03/2023
+ms.date: 09/24/2024
 LocalizationGroup: Create reports
+#customer intent: As a Power BI user I want to learn to create my own parameters for variables in my Power BI reports.
 ---
 # Create and use parameters to visualize variables in Power BI Desktop
 
@@ -21,7 +22,10 @@ Create a parameter on the **Modeling** tab in Power BI Desktop. When you select 
 
 ## Create a parameter
 
-To create a parameter, select **New parameter** from the **Modeling** tab in Power BI Desktop, and choose either **Fields** or **Numeric range**. The following examples use **Numeric range**, similar procedures apply to using **Fields**. Name the example *Discount Percentage* and set its **Data type** to **Decimal number**. The **Minimum** value is zero. The **Maximum** is 0.50 (50 percent). Also set the **Increment** to 0.05, or five percent. The increment determines how much the parameter will adjust when interacted with in a report.
+1. To create a parameter, select **New parameter** from the **Modeling** tab in Power BI Desktop
+2. Choose either **Fields** or **Numeric range**.
+
+The following examples use **Numeric range**, similar procedures apply to using **Fields**. Name the example *Discount Percentage* and set its **Data type** to **Decimal number**. The **Minimum** value is zero. The **Maximum** is 0.50 (50 percent). Also set the **Increment** to 0.05, or five percent. The increment determines how much the parameter will adjust when interacted with in a report.
 
 :::image type="content" source="media/desktop-what-if/parameters-dialog-box.png" alt-text="Screenshot of the Parameters dialog box with the example data filled out in the fields.":::
 

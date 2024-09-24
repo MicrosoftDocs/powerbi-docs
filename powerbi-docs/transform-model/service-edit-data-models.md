@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
 ms.date: 09/24/2024
-ms.custom: references_regions
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Transform and shape data
 #customer intent: As a Power BI user I want to learn how to edit data models in Power BI.
 ---
