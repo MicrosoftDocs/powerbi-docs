@@ -56,7 +56,7 @@ The first time you open the Power BI app in Teams, you need to sign in to Power 
 
 * If multifactor authentication (MFA) for Power BI is configured for your account, you'll see a message requesting additional permissions.
 
-    :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-mfa-sign-in.png" alt-text="Screenshot showing pop-up screen for multifactor authentication in the Power BI app for Teams." border="false":::
+    :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-mfa-sign-in.png" alt-text="Screenshot showing pop-up screen for multifactor authentication in the Power BI app for Teams.":::
 
     Select **Continue**, and then provide the next factor of authentication (as configured by your organization).
 
