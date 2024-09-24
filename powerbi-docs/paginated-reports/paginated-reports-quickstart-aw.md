@@ -92,7 +92,7 @@ License requirements for publishing Power BI paginated reports (.rdl files) are 
 
 1. Select **OK** > **OK**.
 
-   Now in the **Connection string** box, Report Builder displays your new connection string you.
+   Now in the **Connection string** box, Report Builder displays your new connection string.
 
     :::image type="content" source="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png" alt-text="Screenshot showing where to find the Connection string on the Data Source Properties screen." lightbox="media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-connection-string.png":::
 
