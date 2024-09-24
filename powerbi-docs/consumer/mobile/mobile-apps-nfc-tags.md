@@ -12,15 +12,15 @@ ms.date: 09/24/2024
 
 # Connect data to physical locations with NFC tags (preview)
 
-Applies to:
-
 | :::image type="icon" source="./media/mobile-apps-qr-code/ios-logo-40-px.png"::: | :::image type="icon" source="././media/mobile-apps-qr-code/android-logo-40-px.png"::: | :::image type="icon" source="././media/mobile-apps-qr-code/android-logo-40-px.png"::: |
 |:--- |:--- |:--- |
 |iPhones |Android phones |Android tablets |
 
-The Power BI mobile apps support NFC tags. NFC tags are small, inexpensive, reusable devices about the size of a credit card that can store and communicate data securely over very short distances to other devices that support such communication, such as many mobile devices. With NFC support, you can register links your Power BI data on NFC tags and place the tags in locations where the data is needed, so that later, in those locations, others can access the data they need merely by holding their mobile device close to the tag.
+The Power BI mobile apps support NFC tags. NFC tags are small, inexpensive, reusable devices about the size of a credit card that can store and communicate data securely over very short distances to other devices that support such communication, such as many mobile devices.
 
-This feature is useful in scenarios where frontline workers need quick access to data while out on location. For example, a retail outlet could place NFC tags on storage shelves. An inventory managers could then quickly access the inventory data relevent to a particular shelf merely by tapping their phone on the NFC tag placed on the shelf.
+With NFC support, you can register links to your Power BI data on NFC tags and place the tags in locations where the data is needed. Later, others who need to access the data in those locations can do so merely by holding their mobile device close to the tag.
+
+This feature is useful in scenarios where frontline workers need quick access to data while out on location. For example, a retail outlet could place NFC tags on storage shelves, where an inventory manager could then quickly access the relevant inventory data for a particular shelf merely by tapping their phone on the NFC tag attached to the shelf.
 
 This article describes
 
@@ -53,7 +53,7 @@ To enable users to be able to open an item by tapping their devices on an NFC ta
 
     :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-workspaces.png" alt-text="Screenshot showing the Register on an NFC tag option on a workspace in the Power BI mobile app." border="false":::
     
-1. On the **Register on NFC tag** screen that appears, choose how you want to register the item. The options will vary depending on the type of item you're registering. When done, select **Start scanning**.
+1. On the **Register on NFC tag** screen that appears, choose how you want to register the item. The options vary depending on the type of item you're registering. When done, select **Start scanning**.
 
     * **Register this report in its current state** (this option only appears for reports): When users tap their devices on the tag, the report will open as filtered when registered on the tag. The current state is preserved for 180 days. If the tag isn't read during this time, the "current state" is forgotten and the report will open in the state it opens in in the Power BI service. Every time the tag is read, the current state (if any) is renewed for another 180 days.
 
@@ -65,7 +65,7 @@ To enable users to be able to open an item by tapping their devices on an NFC ta
 
 To read the NFC tag, tap the tag with your device.
 
-Tap the tag with your device.
+
 
 
 
