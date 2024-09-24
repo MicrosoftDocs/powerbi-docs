@@ -59,7 +59,7 @@ To enable users to be able to open an item by tapping their devices on an NFC ta
 
     * **Register in full screen**: When users tap their devices on the tag, the registered item will open in full-screen mode.
 
-    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-start-scanning.png" alt-text="Screenshot showing the Register on an NFC tag option on the Power BI mobile app options menu." border="false":::
+    :::image type="content" source="./media/mobile-apps-nfc-tags/register-nfc-start-scanning.png" alt-text="Screenshot showing the Register on NFC tag dialog." border="false":::
 
 ## Read an NFC tag to access an item
 
