@@ -10,6 +10,6 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Title alignment
+##### Title alignment
 
 This setting controls the title alignment, allowing you to choose between left, center, or right.

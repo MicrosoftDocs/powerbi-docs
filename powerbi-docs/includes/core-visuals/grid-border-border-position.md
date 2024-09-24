@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Border position
+##### Border position
 
 This setting offers four options to specify the position of the Border:
 - **Top**

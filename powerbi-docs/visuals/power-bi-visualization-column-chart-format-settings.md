@@ -1,19 +1,18 @@
 ---
-title: Column chart format settings explained
+title: Format settings for column charts in Power BI
 description: This document explains all available Format settings for Column charts in Power BI Desktop and Power BI Service.
 author: JaedenArmstrong
 ms.author: miguelmyers
-ms.reviewer:
-ms.custom:
+ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/01/2024
+ms.date: 09/23/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for column charts so that I can effectively and more easily format column chart visuals in Power BI Desktop and Power BI Service.
 ---
 
-# Column chart format settings explained
+# Format settings for column charts in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -31,7 +30,7 @@ Whether you’re a seasoned Power BI user or new to data visualization, this doc
 
 To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
-   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-desktop.png" alt-text="Power BI Desktop screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
+   :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-desktop.png" alt-text="Screenshot of Power BI Desktop with the Visualizations pane highlighted, along with the Format visual icon highlighted, and both the Visual tab and General tab also highlighted.":::
 
 # [Power BI Service](#tab/powerbi-service)
 
@@ -44,7 +43,7 @@ To format and customize your column chart in **Power BI Service**, simply click 
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
 
-## Settings
+## Format settings
 
 ### X-axis
 
@@ -75,6 +74,8 @@ The visibility of x-axis **Values** can be toggled on or off to make them appare
 [!INCLUDE [xaxis-values-concatenate-labels](../includes/core-visuals/xaxis-values-concatenate-labels.md)]
 
 #### Title
+
+The visibility of x-axis **Title** can be toggled on or off to make it apparent or to hide it. When toggled on, you can access and adjust all the Title settings shown below.
 
 [!INCLUDE [axis-title-title-text](../includes/core-visuals/axis-title-title-text.md)]
 [!INCLUDE [axis-title-style](../includes/core-visuals/axis-title-style.md)]
@@ -409,16 +410,10 @@ The **Bar** toggle enables **Error bars** in your visual after configuring the o
 The **Tooltip** toggle only appears when the Options toggle, as outline earlier in this article, has been activated. Subsequently, you can enable the Tooltip toggle, and you’re granted access to the settings shown here. This sequential toggle design ensures that you can customize your visual elements in a structured and organized manner.
 [!INCLUDE [error-bars-error-labels-label-format](../includes/core-visuals/error-bars-error-labels-label-format.md)]
 
-## Considerations and technical aspects
-
-### Considerations
-- Display units suffix changes according to location/system settings. 
-- Axis colors defined by conditional formatting are based to a general value rather that by individual category.
-
-### Technical aspects
-
 ## Related content
 
 * [Column charts in Power BI](power-bi-visualization-column-charts.md)
+* [Considerations and limitations for column charts](power-bi-visualization-column-charts-considerations.md)
+* [Format column and bar charts](power-bi-visualization-column-bar-format.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

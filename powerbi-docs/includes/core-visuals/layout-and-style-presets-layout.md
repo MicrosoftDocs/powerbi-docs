@@ -10,7 +10,7 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Layout
+##### Layout
 
 The Layout menu offers three options for customizing the presentation of your data:
 - **Compact:** The default space-saving layout where row labels are displayed in a single column, and the hierarchy is represented through indentation, useful for displaying more data in less space.

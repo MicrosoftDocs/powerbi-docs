@@ -10,7 +10,7 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Display units
+##### Display units
 
 This setting offers several options for defining the Display units but only when the axis is configured as **Continuous**:
 
