@@ -334,11 +334,11 @@
         href: ../visuals/power-bi-visualization-new-card.md
     - name: Column charts
       items: 
-      - name: Create a column chart
+      - name: Create a column chart visual
         href: ../visuals/power-bi-visualization-column-charts.md
-      - name: Format settings for column charts
+      - name: Column chart format settings
         href: ../visuals/power-bi-visualization-column-chart-format-settings.md
-      - name: Considerations and limitations for column charts
+      - name: Column chart considerations and limitations
         href: ../visuals/power-bi-visualization-column-charts-considerations.md
     - name: Format column and bar charts
       href: ../visuals/power-bi-visualization-column-bar-format.md

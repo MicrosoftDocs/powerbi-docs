@@ -59,7 +59,7 @@ For this example, let’s create a column chart starting from the Visualizations
 
 2. To add data to your column chart, open the **Data pane** and expand the Sales dropdown to select the desired fields or measures.
 
-   NOTE:  Any one of the following combinations are required to create column charts:
+Any one of the following combinations are required to create column charts:
    - A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or
    - At least one data field on the **X-axis**, one measure on the **Y-axis**, and precisely one data field in the **Legend**, or
    - One or more data fields on the **X-axis** and multiple measures on the **Y-axis**, keeping in mind that column charts with multiple measures don’t support a **Legend**.
@@ -86,7 +86,7 @@ For this example, let’s create a column chart starting from the **Visualizatio
 
 2. To add data to your column chart, simply choose fields and measures from the **Data pane**. This is done by selecting data from within the **Data pane** itself, or dragging them to the field wells within the **Visualizations pane**, or dragging directly to the placeholder on the canvas.
 
-   NOTE:  Any one of the following combinations is required to create column charts:
+Any one of the following combinations is required to create column charts:
    - A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or
    - At least one data field on the **X-axis**, one measure on the **Y-axis**, and precisely one data field in the **Legend**, or
    - One or more data fields on the **X-axis** and multiple measures on the **Y-axis**, keeping in mind that column charts with multiple measures don’t support a **Legend**.
