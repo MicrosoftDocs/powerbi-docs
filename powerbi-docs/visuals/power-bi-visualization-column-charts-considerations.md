@@ -1,5 +1,5 @@
 ---
-title: Considerations and limitations for column charts in Power BI
+title: Considerations and limitations for column charts
 description: This document outlines all the considerations and limitations for column charts in Power BI Desktop and Power BI service.
 author: JaedenArmstrong
 ms.author: miguelmyers
@@ -21,6 +21,8 @@ As a Power BI user, awareness of any considerations and limitations of column ch
 This article provides an updated list of any known considerations and limitations, designed to help you navigate the nuances of column charts in both Power BI Desktop and the Power BI service.
 
 Understanding the considerations and limitations allow you to make informed decisions and leverage the full potential of Power BI column charts. Whether you're a novice or an experienced user, this article aims to enhance your chart-building experience by keeping you up-to-date with practical insights and tips for any known issues.
+
+## Considerations and limitations
 
 ### X-axis
 
@@ -56,23 +58,23 @@ Understanding the considerations and limitations allow you to make informed deci
 
 #### Series color assignment
 
-* In Power BI, the assignment of [theme colors to series](../create-reports/desktop-report-themes.md#dynamic-series) can vary depending on whether the series is static or dynamic. This can lead to inconsistencies in color representation across different report views. For static series, Power BI assigns theme colors based on the index order of the series. However, for dynamic series, colors are allocated on a first-come, first-served basis. As a result, the colors reserved for a series may change depending on the sequence in which report pages are viewed or when different filters are applied, such as with Row-Level Security (RLS). To maintain color consistency for dynamic series, it is recommended to explicitly define the color for each series within the report’s formatting settings. This ensures that each series retains its designated color regardless of the viewing order or applied filters.
+* In Power BI, the assignment of [theme colors to series](../create-reports/desktop-report-themes.md#dynamic-series) can vary depending on whether the series is static or dynamic. This can lead to inconsistencies in color representation across different report views. Please review the [Series color assignment](power-bi-visualization-troubleshoot.md#series-color-assignment) section of the [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md) article for detailed and up-to-date information.
 
 ### Report locale
 
 #### Format strings
 
-* In Power BI, certain visual elements do not utilize the model format string for dates to conserve space and present only the necessary detail. This can lead to confusion when the displayed date format does not match the user’s expectations. For these elements, Power BI leverages the browser’s locale settings to determine the date format. This means that the format may vary depending on the user’s browser configuration, which influences how dates are displayed in the report. To ensure consistency, report creators should be aware of the browser locale’s impact on date formatting. Common areas affected by this include Slicers, Cartesian Axis Tick Labels, and some sections of the Filter Pane. If a specific date format is required, it should be explicitly set in the report to override the browser locale’s default formatting.
+* In Power BI, certain visual elements do not utilize the model format string for dates to conserve space and present only the necessary detail. Please review the [Format strings](power-bi-visualization-troubleshoot.md#format-strings) section of the [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md) article for detailed and up-to-date information.
 
 #### Display units suffix
 
-* Users have encountered a challenge where the display units suffix in Power BI visuals automatically adjust based on location or system settings. This behavior is observed in other visual components such as axes, labels, small multiples, and legends. Power BI dynamically alters the display units suffix to match the regional or system settings of the user’s environment. This automatic adaptation ensures consistency with local conventions but may lead to confusion when sharing reports across different geographies or systems. Currently, there is no direct feature within Power BI to lock the display units suffix irrespective of location/system settings. However, users can manually adjust the format settings of the visuals to specify a consistent display unit. This adjustment needs to be done individually for each visual component that displays values.
+* Users have encountered a challenge where the display units suffix in Power BI visuals automatically adjust based on location or system settings. Please review the [Display units suffix](power-bi-visualization-troubleshoot.md#display-units-suffix) section of the [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md) article for detailed and up-to-date information.
 
 
 ## Related content
 
 * [Column charts in Power BI](power-bi-visualization-column-charts.md)
 * [Format settings for column charts in Power BI](power-bi-visualization-column-chart-format-settings.md)
-* [Format column and bar charts](power-bi-visualization-column-bar-format.md)
+* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

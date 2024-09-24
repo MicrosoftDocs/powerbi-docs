@@ -1,4 +1,4 @@
----
+ ---
 title: Troubleshoot visualizations in Power BI
 description: Troubleshoot visualizations in Power BI, including common issues and workarounds to overcome known obstacles or potential problems.
 author: JaedenArmstrong
@@ -34,6 +34,8 @@ Power BI Reports have a setting that allows end-user slicer and filter choices t
 
 ### Selection
 
+### Selection
+
 The term [**Select all**](power-bi-visualization-slicers.md#selection-controls) can be misleading in its operation. Contrary to what the term suggests, [**Select all**](power-bi-visualization-slicers.md#selection-controls) doesn't actually *select* every item. Instead, it operates on an inverted selection principle, meaning that any item you deselect becomes part of the query. This approach is more efficient as it avoids sending thousands of values in the query. By only sending the deselected values in a negated filter, we streamline the process and reduce the query load.
 
 When using the **Slicer** to filter reports, the **Selected Values** may persist as selected even when they're no longer applicable, potentially leading to confusion and a misleading restatement of selected items. The **Slicer** saves the selected values, which can remain visible and selected in subsequent views of the report. However, if the underlying data or user permissions change, these selections may no longer be relevant or appropriate. Report authors should avoid saving and publishing reports with selected items that might be inappropriate for certain users, particularly in environments where Row-Level Security (RLS) is implemented. It's advisable to clear any selections that shouldn't be universally applied before saving and distributing the report.
@@ -49,6 +51,10 @@ This section addresses potential issues users may encounter with dates in visual
 ### Format strings
 
 In Power BI, certain visual elements don't utilize the model format string for dates to conserve space and present only the necessary detail. This can lead to confusion when the displayed date format doesn't match the user’s expectations. For these elements, Power BI uses the browser’s locale settings to determine the date format. This means that the format may vary depending on the user’s browser configuration, which influences how dates are displayed in the report. To ensure consistency, report creators should be aware of the browser locale’s impact on date formatting. Common areas affected by this include [**Slicers**](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), and [**Cartesian Axis Tick Labels**](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the **Filter Pane**.
+
+### Display units suffix
+
+Power BI dynamically alters the display units suffix to match the regional or system settings of the user’s environment. This automatic adaptation ensures consistency with local conventions but may lead to confusion when sharing reports across different geographies or systems. Currently, there is no direct feature within Power BI to lock the display units suffix irrespective of location/system settings. However, users can manually adjust the format settings of the visuals to specify a consistent display unit. This adjustment needs to be done individually for each visual component that displays values. In order for custom format string to display you must not have a display unit set in the visuals format settings, you may need to click ‘reset to default’ to clear any display unit override.
 
 ## Fonts
 

@@ -12,7 +12,7 @@ ms.date: 09/23/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about column charts so that I can effectively and more easily build column chart visuals in Power BI Desktop and Power BI Service.
 ---
-# Create a column chart
+# Create a column chart in Power BI
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
@@ -100,13 +100,12 @@ For this example, let’s create a column chart starting from the **Visualizatio
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, the Visual and General tabs, and both the Legend and Ribbons sections, also highlighted.":::
 
 You've now successfully created a column chart with Power BI Service. Take some time to familiarize yourself with all the available **[Format settings for column charts](power-bi-visualization-column-chart-format-settings.md)** in the **[Related content](#related-content)** section below.
-
 ---
 
 ## Related content
 
 * [Format settings for column charts](power-bi-visualization-column-chart-format-settings.md)
 * [Considerations and limitations for column charts](power-bi-visualization-column-charts-considerations.md)
-* [Format column and bar charts](power-bi-visualization-column-bar-format.md)
+* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

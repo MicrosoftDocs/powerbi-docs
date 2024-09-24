@@ -332,14 +332,16 @@
         href: ../visuals/power-bi-visualization-card.md
       - name: Create a new card visual with big number tiles
         href: ../visuals/power-bi-visualization-new-card.md
-    - name: Column and bar charts
+    - name: Column charts
       items: 
       - name: Create a column chart
         href: ../visuals/power-bi-visualization-column-charts.md
-      - name: Column chart format settings explained
+      - name: Format settings for column charts
         href: ../visuals/power-bi-visualization-column-chart-format-settings.md
-      - name: Format column and bar charts 
-        href: ../visuals/power-bi-visualization-column-bar-format.md
+      - name: Considerations and limitations for column charts
+        href: ../visuals/power-bi-visualization-column-charts-considerations.md
+    - name: Format column and bar charts
+      href: ../visuals/power-bi-visualization-column-bar-format.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Combo charts
