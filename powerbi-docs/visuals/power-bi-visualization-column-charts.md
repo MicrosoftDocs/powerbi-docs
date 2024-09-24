@@ -49,7 +49,7 @@ Depending on the unique needs of your analysis, you can choose from three distin
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-Before we begin, refer to the **[Prerequisites](#prerequisites)** section above, and follow the steps under the tab for **[Power BI Desktop](#power-bi-desktop)**.
+Before we begin, if you haven't already done so, refer to the **[Prerequisites](#prerequisites)** section above, and follow the steps under the tab for **Power BI Desktop**.
 
 For this example, let’s create a column chart starting from the Visualizations pane in Power BI Desktop.
 
@@ -76,7 +76,7 @@ You've now successfully created a column chart with Power BI Desktop. Take some 
 
 # [Power BI service](#tab/powerbi-service)
 
-Before we begin, if you haven't already done so, refer to the **[Prerequisites](#prerequisites)** section above, and follow the steps under the tab for **[Power BI service](#power-bi-service)**.
+Before we begin, if you haven't already done so, refer to the **[Prerequisites](#prerequisites)** section above, and follow the steps under the tab for **Power BI service**.
 
 For this example, let’s create a column chart starting from the **Visualizations pane** in **Power BI service**.
 
