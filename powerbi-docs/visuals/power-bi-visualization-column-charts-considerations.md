@@ -18,13 +18,13 @@ LocalizationGroup: Visualizations
 
 ## Overview
 
-As a Power BI user, awareness of any considerations and limitations of column charts in Power BI is helpful when creating effective and visually appealing data visualizations.
+As a Power BI user, the awareness of any column chart considerations and limitations is helpful when creating effective and visually appealing data visualizations.
 
 Understanding the considerations and limitations allow you to make informed decisions and leverage the full potential of Power BI column charts. Whether you're a novice or an experienced user, this article aims to enhance your chart-building experience by keeping you up-to-date with practical insights and tips for any known issues.
 
 ## Considerations and limitations
 
-This article provides an updated list of known considerations and limitations, designed to help you navigate the nuances of column charts in both Power BI Desktop and the Power BI service.
+This article provides an updated list of known column chart considerations and limitations, designed to help you navigate the nuances of column charts in both Power BI Desktop and the Power BI service.
 
 ### X-axis
 
@@ -75,8 +75,8 @@ Users have encountered a challenge where the display units suffix in Power BI vi
 
 ## Related content
 
-* [Column charts in Power BI](power-bi-visualization-column-charts.md)
-* [Format settings for column charts in Power BI](power-bi-visualization-column-chart-format-settings.md)
+* [Create a column chart visual](power-bi-visualization-column-charts.md)
+* [Column chart format settings](power-bi-visualization-column-chart-format-settings.md)
 * [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

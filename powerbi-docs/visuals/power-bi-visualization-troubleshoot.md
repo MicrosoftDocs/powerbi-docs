@@ -34,8 +34,6 @@ Power BI Reports have a setting that allows end-user slicer and filter choices t
 
 ### Selection
 
-### Selection
-
 The term [**Select all**](power-bi-visualization-slicers.md#selection-controls) can be misleading in its operation. Contrary to what the term suggests, [**Select all**](power-bi-visualization-slicers.md#selection-controls) doesn't actually *select* every item. Instead, it operates on an inverted selection principle, meaning that any item you deselect becomes part of the query. This approach is more efficient as it avoids sending thousands of values in the query. By only sending the deselected values in a negated filter, we streamline the process and reduce the query load.
 
 When using the **Slicer** to filter reports, the **Selected Values** may persist as selected even when they're no longer applicable, potentially leading to confusion and a misleading restatement of selected items. The **Slicer** saves the selected values, which can remain visible and selected in subsequent views of the report. However, if the underlying data or user permissions change, these selections may no longer be relevant or appropriate. Report authors should avoid saving and publishing reports with selected items that might be inappropriate for certain users, particularly in environments where Row-Level Security (RLS) is implemented. It's advisable to clear any selections that shouldn't be universally applied before saving and distributing the report.

@@ -439,7 +439,7 @@ The **Tooltip** toggle only appears when the Options toggle, as outline earlier 
 
 ## Related content
 
-* [Column charts in Power BI](power-bi-visualization-column-charts.md)
+* [Create a column chart visual](power-bi-visualization-column-charts.md)
 * [Considerations and limitations for column charts](power-bi-visualization-column-charts-considerations.md)
 * [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
 * [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
