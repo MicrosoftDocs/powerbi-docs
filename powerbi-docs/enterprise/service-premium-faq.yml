@@ -96,7 +96,7 @@ sections:
       - question: |
           How can I continue to access Power BI Report Server without P SKUs?   
         answer: |
-          You can Power BI Report Server through SQL Server Enterprise Edition with Software Assurance. For more information, see the [SQL Server pricing page](https://www.microsoft.com/sql-server/sql-server-2019-pricing).
+          Power BI Report Server is available through two different licenses: Fabric F64+ reserved instances and SQL Server Enterprise Edition with Software Assurance. See [Microsoft Volume Licensing](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=1&ShowArchived=True) for details.
 
       - question: |
           What are the key differences between F SKUs and P SKUs?  
@@ -107,7 +107,7 @@ sections:
           |----------------------------|------------------------------|---------------|
           | Commitment                 | Monthly or yearly            | Monthly, yearly and pay as you go |
           | Pricing                    | Global                       | Regional      |
-          | Power BI Report Server     | Included                     | Not included  |
+          | Power BI Report Server     | Included                     | Included      |
           | Power BI Embedded          | Included when buying EM SKUs | Included      |
           | Azure features<sup>*</sup> | Not included                 | Included      |
 
