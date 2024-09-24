@@ -53,7 +53,7 @@
     - name: "Semantic models in the Power BI service"
       href: service-datasets-understand.md      
     - name: "Semantic model modes in the Power BI service"
-      href: service-dataset-modes-understand.md        
+      href: service-dataset-modes-understand.md      
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
     - name: "Using enhanced semantic model metadata in Power BI Desktop"
@@ -287,6 +287,8 @@
         href: refresh-excel-file-onedrive.md
       - name: "Refresh a semantic model from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
+      - name: "Frequent refreshes using Real-Time Intelligence"
+        href: real-time-intelligence-sample.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
