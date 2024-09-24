@@ -63,14 +63,17 @@ To enable users to be able to open an item by tapping their devices on an NFC ta
 
 ## Read an NFC tag to access an item
 
-To read the NFC tag, tap the tag with your device.
+To read the NFC tag, hold your device close to the tag.
 
+* On Android devices, the item registered on the tag will open.
 
+* On iOS devices, you'll receive a push notification. Tap the notification to open the registered item.
 
+    :::image type="content" source="./media/mobile-apps-nfc-tags/read-nfc-tag-push-notification.png" alt-text="Screenshot showing the Read NFC tag push notification on an iPhone." border="false":::
 
+    Alternatively, on the Home page, Workspace list, and Apps list, you can open the options menu in the header and select **Read NFC (preview)**.
 
-iOS read flow - possibly Android as well
-* Device setting to use NFC needs to be open in Android
+    :::image type="content" source="./media/mobile-apps-nfc-tags/read-nfc-tag-read-option.png" alt-text="Screenshot showing the Read NFC tag options menu sellection on an iPhone." border="false":::
 
 ## Related content
 
