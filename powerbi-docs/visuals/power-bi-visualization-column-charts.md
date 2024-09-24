@@ -57,7 +57,7 @@ For this example, let’s create a column chart starting from the Visualizations
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-1.png" alt-text="Screenshot of the Visualizations pane highlighted, along with the Build visual icon and the three Column chart icons also highlighted.":::
 
-2. To add data to your column chart, simply open the **Data pane** and expand the Sales dropdown to select the desired fields or measures.
+2. To add data to your column chart, open the **Data pane** and expand the Sales dropdown to select the desired fields or measures.
 
    NOTE:  Any one of the following combinations are required to create column charts:
    - A minimum of one data field on the **X-axis** and one measure on the **Y-axis**, or
