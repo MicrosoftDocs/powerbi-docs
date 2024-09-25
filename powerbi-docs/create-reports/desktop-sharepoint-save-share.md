@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/14/2023
+ms.date: 09/25/2024
 LocalizationGroup: Create reports
 ---
 # Power BI Desktop OneDrive and SharePoint integration
@@ -183,7 +183,7 @@ The following use cases apply when sharing a link to a Power BI file saved in On
 
 When you save and share Power BI files in OneDrive and SharePoint document libraries, Power BI admins can access activity through [unified audit logs](../admin/service-admin-auditing.md#use-the-audit-log). 
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
 
 OneDrive and SharePoint Power BI file activity in the audit logs appear with property values **Workload** and/or **EventSource** set to **OneDrive**.
 

@@ -166,7 +166,7 @@ To build new workbooks connected to a semantic data model in your Excel workbook
 
 For cases where you include a workbook in a Power BI organizational app, remember to republish the app with the new items.
 
-To learn which workbooks can be affected by the deprecation of local workbooks and refresh capabilities, use the **workbooks** Power BI admin REST API. It lists the workbooks in your organization. You must be a member of the Power BI admin role or a Global Administrator to call this API.
+To learn which workbooks can be affected by the deprecation of local workbooks and refresh capabilities, use the **workbooks** Power BI admin REST API. It lists the workbooks in your organization. You must be a Fabric administrator to call this API.
 
 ```
 GET https://api.powerbi.com/v1.0/myorg/admin/workbooks

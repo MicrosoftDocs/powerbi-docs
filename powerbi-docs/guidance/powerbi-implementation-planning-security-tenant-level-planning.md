@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 09/13/2024
+ms.date: 09/25/2024
 ---
 
 # Power BI implementation planning: Tenant-level security planning
@@ -57,7 +57,7 @@ When assigning administrator roles, we recommend that you follow [best practices
 
 > [!div class="checklist"]
 >
-> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the roles that can administer Power BI: Fabric admin, Power Platform admin, and Global administrator.
+> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the roles that can administer Power BI.
 > - **Determine who should manage the Power BI service:** If there are too many administrators, create a plan to reduce the total number. If there are users assigned as administrators for Power BI who aren't well-suited to such a high-privilege role, create a plan to resolve the issue.
 > - **Clarify roles and responsibilities:** For each administrator of Power BI, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
 
