@@ -6,10 +6,13 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
-ms.date: 11/10/2023
+ms.topic: concept-article
+ms.date: 09/18/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Transform and shape data
+#customer intent: As a Power BI user I want to learn how to use relationships with many-to-many cardinality in Power BI.
 ---
+
 # Apply many-to-many relationships in Power BI Desktop
 
 With *relationships with a many-to-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-to-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop. For more information about **composite models**, see [Use composite models in Power BI Desktop](desktop-composite-models.md)
