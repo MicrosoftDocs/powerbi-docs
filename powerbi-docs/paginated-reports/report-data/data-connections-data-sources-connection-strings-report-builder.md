@@ -1,7 +1,7 @@
 ---
 title: "Create data connection strings (Power BI Report Builder)"
 description: Learn how to create data connection strings and learn important information related to data source credentials.
-ms.date: 09/11/2023
+ms.date: 09/25/2024
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -20,9 +20,6 @@ ms.reviewer: rpatkar
   
 ##  <a name="bkmk_connection_examples"></a> Common connection string examples  
  Connection strings are the text representation of connection properties for a data provider. The following table lists some examples of connections strings for various data connection types.  
- 
-> [!NOTE]  
->  [Connectionstrings.com](https://www.connectionstrings.com/) is another resource to get examples for connection strings. 
   
 |**Data source**|**Example**|**Description**|  
 |---------------------|-----------------|---------------------|  
