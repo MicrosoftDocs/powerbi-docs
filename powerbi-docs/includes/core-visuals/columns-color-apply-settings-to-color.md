@@ -10,7 +10,7 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Color
+##### Color
 
 This color setting varies depending on the **Apply settings to** configuration:
 **-** When set globally to all series, the color setting is disabled.

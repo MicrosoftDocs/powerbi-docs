@@ -10,6 +10,6 @@ ms.date: 06/24/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Max rows shown
+##### Max rows shown
 
 Defines the maximum number of rows displayed, from 1-99, when selecting the **Grid** layout.
