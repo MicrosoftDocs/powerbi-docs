@@ -16,7 +16,6 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-## Overview
 
 As a Power BI user, the awareness of any column chart considerations and limitations is helpful when creating effective and visually appealing data visualizations.
 
