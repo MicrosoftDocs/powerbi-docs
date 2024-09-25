@@ -55,7 +55,7 @@ The following updates are new to Power BI Desktop this month:
 * Updated menu bar in the Power BI service view mode [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480328)  [[video]](https://youtu.be/N3gd4wfsmvo?t=208) 
 * Visual calculations update (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480329)  [[video]](https://youtu.be/N3gd4wfsmvo?t=381)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
 * Visual level format strings (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480330)  [[video]](https://youtu.be/N3gd4wfsmvo?t=561)  [[article]](../create-reports/desktop-custom-format-strings.md)
-* Power BI in Teams - now supporting multi factor authentication [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480331)  [[video]](https://youtu.be/N3gd4wfsmvo?t=631)
+* Power BI in Teams - now supporting multifactor authentication [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480331)  [[video]](https://youtu.be/N3gd4wfsmvo?t=631)
 * Multiple org apps per workspace, custom colors (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480332)  [[article]](../consumer/end-user-apps.md)
 * Subscribe to reports on the last day of the month [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480333)
 
@@ -72,7 +72,7 @@ The following updates are new to Power BI Desktop this month:
 * Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480342)
 
 ### Data connectivity
-* Connected tables in Excel now availble in semi-annual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480339)  [[article]](../collaborate-share/service-connect-excel-power-bi-datasets.md#connect-to-your-power-bi-data-in-excel)
+* Connected tables in Excel now available in semi-annual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480339)  [[article]](../collaborate-share/service-connect-excel-power-bi-datasets.md#connect-to-your-power-bi-data-in-excel)
 
 
 ### Other
