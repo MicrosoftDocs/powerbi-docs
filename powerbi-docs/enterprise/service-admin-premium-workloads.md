@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 11/13/2023
+ms.date: 09/25/2024
 LocalizationGroup: Premium
 ---
 
@@ -241,7 +241,7 @@ Paginated reports offer the same capabilities that SQL Server Reporting Services
 
 ### Outbound connectivity
 
-Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images, and call external APIs and Azure functions defined using custom code in paginated reports. A global admin or a Power BI service admin can disable this setting in the Power BI admin portal.
+Outbound connectivity is turned on by default. It allows paginated reports to make requests for fetching external resources such as images, and call external APIs and Azure functions defined using custom code in paginated reports. A Fabric administrator can disable this setting in the Power BI admin portal.
 
 To get to the outbound connectivity settings, follow these steps:
 
