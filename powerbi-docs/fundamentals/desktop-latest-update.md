@@ -16,9 +16,9 @@ ms.collection: ce-skilling-ai-copilot
 # What's new in Power BI?
 
 
-## August 2024 Update (2.132.908.0)
+## September 2024 Update (2.136.1202.0)
 
-Our August updates get us back into school mode with a collection of new features, a great video that shows how many of the compelling updates can sharpen your business intelligence pencils, and set you up for great grades in creating insights and actionable business intelligence.
+We're falling into our September updates with a lot of anticipation, as days get shorter, and the dark mode of fall becomes part of our daily routine.
 
 This article describes updates to **Power BI Desktop** and the **Power BI service**. To learn about updates for mobile, check out [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -45,29 +45,38 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 The following updates are new to Power BI Desktop this month:
 
 
+### General
+* Dark mode now available in Power BI Desktop [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480324)  [[video]](https://youtu.be/N3gd4wfsmvo?t=62)  [[article]](../create-reports/power-bi-dark-mode.md)
+
 ### Copilot and AI
-* Ask Copilot questions against your semantic model (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544095)  [[video]](https://youtu.be/-XLQBaYwUuw?t=54)  [[article]](../create-reports/copilot-ask-data-question.md)
+* Default full report summaries and answers in the Copilot pane [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480326)  [[video]](https://youtu.be/N3gd4wfsmvo?t=170) 
 
 ### Reporting
-* Visual level format strings (Preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544098)  [[video]](https://youtu.be/-XLQBaYwUuw?t=268)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
-* Dynamic per-recipient subscriptions (general availability) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544099)  [[video]](https://youtu.be/-XLQBaYwUuw?t=619)  [[article]](../collaborate-share/power-bi-dynamic-report-subscriptions.md)
-* Deliver subscriptions to OneDrive and SharePoint (general availability) [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544100)  [[video]](https://youtu.be/-XLQBaYwUuw?t=794)  [[article]](../collaborate-share/power-bi-dynamic-report-subscriptions.md)
-* Updated Save and Upload to OneDrive flow in Power BI [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544101)  [[video]](https://youtu.be/-XLQBaYwUuw?t=919)
-* Data limit [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544102)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
-* Visuals, shapes and line enhancements [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544103)
+* Updated menu bar in the Power BI service view mode [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480328)  [[video]](https://youtu.be/N3gd4wfsmvo?t=268) 
+* Visual calculations update (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480329)  [[video]](https://youtu.be/N3gd4wfsmvo?t=619)  [[article]](../transform-model/desktop-visual-calculations-overview.md)
+* Visual level format strings (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480330)  [[video]](https://youtu.be/N3gd4wfsmvo?t=794)  [[article]](../create-reports/desktop-custom-format-strings.md)
+* Power BI in Teams - now supporting multi factor authentication [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480331)  [[video]](https://youtu.be/N3gd4wfsmvo?t=919)
+* Multiple org apps per workspace, custom colors (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480332)  [[article]](../consumer/end-user-apps.md)
+* Subscribe to reports on the last day of the month [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480333)
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](../connect-data/desktop-data-sources.md). Our list is always growing, so check back often.
 
 
 ### Modeling
-* DAX Query View in the web [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544106)  [[video]](https://youtu.be/-XLQBaYwUuw?t=985)  [[article]](../transform-model/dax-query-view.md)
+* Introducing Fabric Metrics Layer (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480335)  [[video]](https://youtu.be/N3gd4wfsmvo?t=985) 
+* Live edit of semantic models in Direct Lake mode with Power BI Desktop (preview) [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480336)  [[video]](https://youtu.be/N3gd4wfsmvo?t=985)  [[article]](/fabric/get-started/direct-lake-power-bi-desktop)
+* Q&A now supports semantic models with OLS [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480337)  [[video]](https://youtu.be/N3gd4wfsmvo?t=985) 
 
 ### Visuals
-* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544116)
+* Many new and updated visuals  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480342)
+
+### Data connectivity
+* Connected tables in Excel now availble in semi-annual  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480339)  [[article]](../collaborate-share/service-connect-excel-power-bi-datasets.md#connect-to-your-power-bi-data-in-excel)
+
 
 ### Other
-* Paginated Reports - Sharing of reports connecting to Get Data data sources made easy  [[blog]](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/#post-27820-_Toc174544127)  [[article]](../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md)
+* General availability of Get data experience in Power BI Report Builder  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/#post-28098-_Toc177480349)  [[article]](../paginated-reports/report-builder/connect-snowflake-databricks-power-query-online.md)
 
 
 # [Power BI service](#tab/powerbi-service)
@@ -81,7 +90,7 @@ There were no updates for the Power BI service this month.
 
 
 
-For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-august-2024-feature-summary/).
+For detailed information about each new feature, see [Power BI feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-september-2024-feature-summary/).
 
 
 ### Power BI monthly update video
@@ -89,7 +98,7 @@ The following video describes many of these updates. You can also watch this vid
 
 
 
-> [!VIDEO https://www.youtube.com/embed/-XLQBaYwUuw]
+> [!VIDEO https://www.youtube.com/embed/N3gd4wfsmvo]
 
 > [!NOTE]
 > The video might use earlier versions of Power BI Desktop or the Power BI service.
