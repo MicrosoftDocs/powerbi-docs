@@ -73,8 +73,6 @@ For this example, let’s create a column chart starting from the Visualizations
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-desktop-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
 
-You've now successfully created a column chart with Power BI Desktop. Take some time to familiarize yourself with all the available **[Format settings for column charts](power-bi-visualization-column-chart-format-settings.md)** in the **[Related content](#related-content)** section below.
-
 # [Power BI service](#tab/powerbi-service)
 
 Before we begin, if you haven't already done so, refer to the **[Prerequisites](#prerequisites)** section above, and follow the steps under the tab for **Power BI service**.
@@ -101,8 +99,8 @@ For this example, let’s create a column chart starting from the **Visualizatio
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/build-column-chart-service-step-3.png" alt-text="Screenshot of the Visualizations pane highlighted, along with Format visual icon, the Visual and General tabs, and both the Legend and Ribbons sections, also highlighted.":::
 
-You've now successfully created a column chart with Power BI Service. Take some time to familiarize yourself with all the available **[Format settings for column charts](power-bi-visualization-column-chart-format-settings.md)** in the **[Related content](#related-content)** section.
 ---
+Congratulations! You've successfully created a column chart with Power BI. Next, take time to familiarize yourself with the comprehensive list **[Column chart format settings](power-bi-visualization-column-chart-format-settings.md)** and other related articles in the **[Related content](#related-content)** section.
 
 ## Related content
 
