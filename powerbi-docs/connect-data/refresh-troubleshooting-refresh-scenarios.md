@@ -155,32 +155,33 @@ This error occurs if the version of the on-premises data gateway being used to r
 
 ## Circular Dependency error related to Calculated Table utilize SummarizeColumns
 
-Since September 5th, we enabled a feature that allows SummarizeColumns to be placed inside measure and to be evaluated within any external filter context. This feature might introduced new dependencies if summarizecolumns is used in CalculateTable. Those newly introduced dependencies might cause circluar dependency error during model refresh. 
+In September 2024 a feature was enabled that allows *SummarizeColumns* to be placed inside a measure and evaluated within any external filter context, which might introduce new dependencies if *SummarizeColumns* is used in *CalculateTable*. These new dependencies might cause a circluar dependency error during model refresh. 
 
-In case of this error please apply following steps to mitigate the issue:
+If this error appears, the following steps can address the issue:
 
-#### a. Identify all CalculateTables that utilize summarizecolumns 
+1. Identify all *CalculateTables* that use *SummarizeColumns* 
 
-#### b. For each summarizecolumns expression make following changes:
-For a summarizecolumns expression with GB on "Product" and "Geography" for example:
-```
-SummarizeColumns(
-Product[Color],
-Geography[Country],
-...
-)
-```
-Add "Product" and "Geography" as filters into summarizecolumns, so it becames:
-```
-SummarizeColumns(
-Product[Color],
-Geography[Country],
-Product, 
-Geography,
-...
-)
-```
-This will remove the introduced blankrow and restore original behavior. In case of you have multiple calculated tables that employees SummarizeColumns, changes for all the tables should be submit together in a single transaction, in that case you will need to use Tabular Editor: https://www.sqlbi.com/tools/tabular-editor/ to make the modification since PowerBI Desktop lacks the ability to batch multiple table changes together into one transaction.
+2. For each *SummarizeColumns* expression, make the following changes:
+
+  For a *SummarizeColumns* expression with *GB* on *Product* and *Geography*, for example:
+  ```
+  SummarizeColumns(
+  Product[Color],
+  Geography[Country],
+  ...
+  )
+  ```
+  Add *Product* and *Geography* as filters into *SummarizeColumns* so it looks like the following expression:
+  ```
+  SummarizeColumns(
+  Product[Color],
+  Geography[Country],
+  Product, 
+  Geography,
+  ...
+  )
+  ```
+These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
 
 ## Related content
 
