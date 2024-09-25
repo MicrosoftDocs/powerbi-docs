@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 05/14/2024
+ms.date: 09/25/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
@@ -61,6 +61,22 @@ A pane appears called **New connection** and automatically populates the configu
 :::image type="content" source="media/service-connect-cloud-data-sources/service-connect-cloud-data-sources-03.png" alt-text="Screenshot of new connection settings.":::
 
 Enabling the creation of new connections makes it easy to create separate shareable cloud connections for individual semantic models, if needed. You can also display the connection management page from anywhere in the Power BI service by selecting the **Settings** gear in the upper right corner of the Power BI service, then select **Manage connections and gateways**. 
+
+### Create a shareable cloud connection using workspace identity 
+
+You can also create a shareable cloud connection using the **Workspace identity** authentication method, which uses the automatically managed service principal associated with the Fabric workspace to connect to data. To use the connection, the model owner must have *Contributor* (or higher) access to the workspace.
+
+To create a **Workspace identity**, follow these steps:
+
+1. Configure the workspace to have a **Workspace identity**. The Workspace identity is an automatically managed service principal associated with the Fabric workspace.
+2. Create a shareable cloud connection (SCC) with **Workspace identity** as the authentication method.
+3. Bind the data source to the SCC in the semantic model settings.
+
+Keep the following considerations in mind when creating or using a **Workspace identity**:
+
+* **Workspace identity** is only supported with Fabric data sources
+* The connection type being used must support the **Workspace identity** authentication type, which includes SQL Server and ADLS connectors. For the connection type being used, if there's a **Workspace identity** option under the *Authentication* setting, then that connector is supported.
+
 
 ## Default connection settings
 
