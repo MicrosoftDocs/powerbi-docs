@@ -22,7 +22,7 @@ Introducing the public preview of the new Explore feature, where you have a ligh
 
 ## Get started 
 
-1. [Find a dataset or report](#1-find-a-dataset-or-report-youd-like-to-explore) you’d like to explore.
+1. [Create your exploration](#1-create-your-exploration) to find data you’d like to explore.
 
 1. [Have Copilot write an overview of the data](#2-create-an-overview-of-the-data-with-copilot)
 
