@@ -173,7 +173,7 @@ On the **Audience** tab, you create and manage audience groups within the app.
     
     **Allow users to build content with the semantic models in this app**: This option lets your app consumers create their own reports and dashboards based on the app audience semantic models.
     
-    :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-panes.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
+    :::image type="content" source="media/service-create-distribute-apps/advance-options-manage-audience-access-pane.png" alt-text="Screenshot of Advanced settings in Manage audience access pane.":::
 
     > [!NOTE]
     > - The advanced settings apply to all the audiences, including the workspace users. They can share the semantic models and build content with the semantic models in this app as long as they have at least a Viewer role in the workspace. See [Roles in workspaces](service-roles-new-workspaces.md) for more about roles.

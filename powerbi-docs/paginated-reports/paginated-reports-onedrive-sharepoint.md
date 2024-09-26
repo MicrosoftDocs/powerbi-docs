@@ -48,7 +48,7 @@ Here's how you subscribe to a full report to be delivered to OneDrive SharePoint
 
 1. Select the **Attach full report** option.
 
-    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-reports.png" alt-text="Screenshot showing in the Subscriptions pane, select the Attach full report option." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-reports.png":::
+    :::image type="content" source="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png" alt-text="Screenshot showing in the Subscriptions pane, select the Attach full report option." lightbox="media/paginated-reports-onedrive-sharepoint/power-bi-paginated-attach-full-report.png":::
 
     By default:  
 
