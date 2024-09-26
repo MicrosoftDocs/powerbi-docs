@@ -6,9 +6,11 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
-ms.topic: conceptual
-ms.date: 11/10/2023
+ms.topic: concept-article
+ms.date: 09/04/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Create reports
+#customer intent: As a Power BI user I want to learn about external tools in Power BI Desktop.
 ---
 
 # External tools in Power BI Desktop
@@ -18,6 +20,8 @@ Power BI has a vibrant community of business intelligence professionals and deve
 The **External Tools** ribbon provides easy access to external tools that are installed locally and *registered* with Power BI Desktop. When launched from the External Tools ribbon, Power BI Desktop passes the name and port number of its internal data model engine instance and the current model name to the tool. The tool then automatically connects, providing a seamless connection experience.  
 
 :::image type="content" source="media/desktop-external-tools/external-tools-ribbon.png" border="false" alt-text="Screenshot of the external tools ribbon in Power BI Desktop.":::
+
+## External tool categories
 
 External tools generally fall into one of the following categories:
 
@@ -33,7 +37,7 @@ Before installing external tools, keep the following notes in mind:
 
 - External tools aren't supported in Power BI Desktop for Power BI Report Server.
 
-- External tools are provided by external, third-party contributors. Except for the underlying public Microsoft APIs, Microsoft doesn't provide support or documentation for external tools. Microsoft does provide support if the issue can be reproduced with Microsoft tools, such as SQL Server Management Studio (SSMS), or sample code that uses the public Microsoft APIs.
+- External tools are provided by external, third-party contributors. Except for the underlying public Microsoft APIs, Microsoft doesn't provide support or documentation for external tools. Microsoft does provide support if the issue can be reproduced with Microsoft tools. These tools include SQL Server Management Studio (SSMS), or sample code that uses the public Microsoft APIs.
 
 ## Featured open-source tools
 
@@ -68,7 +72,7 @@ Objects that support write operations:
 | Object                        | Connect to AS instance    |
 |-------------------------------|---------------------------|
 | Tables                        | No                        |
-| Columns                       | Yes <sup>[1](#columns)</sup>                        |
+| Columns                       | Yes [1]                   |
 | Calculated tables             | Yes                       |
 | Calculated columns            | Yes                       |
 | Relationships                 | Yes                       |
@@ -82,7 +86,7 @@ Objects that support write operations:
 | Annotations                   | Yes                       |
 | M expressions                 | No                        |
 
-<a name="columns">1</a> - When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns is not supported.
+[1] When using external tools to connect to the AS instance, changing a column's data type is supported, however, renaming columns isn't supported.
 
 Power BI Desktop *project files* offer a broader scope of supported write operations. Those objects and operations that don't support write operations by using external tools to connect to Power BI Desktop's Analysis Services instance may be supported by editing Power BI Desktop project files. To learn more, see [Power BI Desktop projects - Model authoring](../developer/projects/projects-overview.md#model-authoring).
 

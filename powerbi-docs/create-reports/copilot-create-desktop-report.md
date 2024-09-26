@@ -16,7 +16,7 @@ ms.collection: ce-skilling-ai-copilot
 
 # Create reports in Power BI Desktop with Copilot
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop. You can also use [Copilot to create reports in the Power BI service](copilot-create-report-service.md).
 
