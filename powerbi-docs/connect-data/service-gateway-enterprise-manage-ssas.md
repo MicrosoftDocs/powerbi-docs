@@ -84,7 +84,7 @@ To do manual UPN mapping, follow these steps:
 1. Select the data source, and then select **Settings** from the top menu.
 1. On the **Settings** screen, in the **Map user names** box, make sure **EffectiveUserName** is selected and then select **Add new rule**.
 
-   :::image type="content" source="media/service-gateway-enterprise-manage-ssas/map-user-names.png" alt-text=" Screenshot of the UPN mapping screen":::
+   :::image type="content" source="media/service-gateway-enterprise-manage-ssas/map-user-names.png" alt-text=" Screenshot of the UPN mapping screen.":::
 
 1. Under **Map user names**, for each user name to map, enter values for **Original name** and **New name**, and then select **Add new rule**. The **Replace** value is the sign-in address for Power BI, and the **With** value is the value to replace it with. The replacement passes to the `EffectiveUserName` property for the Analysis Services connection.
 
@@ -103,7 +103,7 @@ You can use a \* wildcard for your **Replace** (original name) string. You can o
 
 To validate the name replacement, enter a value for **Original name**, and select **Test rule**.
 
-:::image type="content" source="media/service-gateway-enterprise-manage-ssas/test-rule.png" alt-text=" Screenshot of testing a mapping rule" :::
+:::image type="content" source="media/service-gateway-enterprise-manage-ssas/test-rule.png" alt-text=" Screenshot of testing a mapping rule." :::
 
 > [!NOTE]
 > The saved rules work immediately in the browser. It take a few minutes before the Power BI service starts to use the saved rules.
