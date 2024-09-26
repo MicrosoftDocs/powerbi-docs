@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 07/13/2024
+ms.date: 09/26/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for card visuals so that I can effectively and more easily format card visuals in Power BI Desktop and Power BI Service.
 ---
@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 ## Overview
 
-The document you are about to delve into will provide a comprehensive and detailed exposition of the various format settings available for card visuals in both Power BI Desktop and Power BI Service.
+The document you're about to delve into will provide a comprehensive and detailed exposition of the various format settings available for card visuals in both Power BI Desktop and Power BI Service.
 
 Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, this document will cover every setting for card visual formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
 
