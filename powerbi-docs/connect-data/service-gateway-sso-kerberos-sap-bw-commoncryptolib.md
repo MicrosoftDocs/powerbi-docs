@@ -30,15 +30,15 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
    For more information on setup steps, see [SAP Single Sign-On: Authenticate with Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). Your BW server should use CommonCryptoLib as its SNC Library and have an SNC name that starts with *CN=*, such as *CN=BW1*. For more information on SNC name requirements (specifically, the snc/identity/as parameter), see [SNC Parameters for Kerberos Configuration](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/360534094511490d91b9589d20abb49a.html).
 
-1. If you haven't already done so, install the x64-version of the [SAP .NET Connector](https://support.sap.com/en/product/connectors/msnet.html) on the computer the gateway has been installed on. 
-   
+1. If you haven't already done so, install the x64-version of the [SAP .NET Connector](https://support.sap.com/en/product/connectors/msnet.html) on the computer the gateway has been installed on.
+
    You can check whether the component has been installed by attempting to connect to your BW server in  Power BI Desktop from the gateway computer. If you can't connect by using the 2.0 implementation, the .NET Connector isn't installed or hasn't been installed to the GAC.
 
-1. Ensure that SAP Secure Login Client (SLC) isn't running on the computer the gateway is installed on. 
+1. Ensure that SAP Secure Login Client (SLC) isn't running on the computer the gateway is installed on.
 
-   SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO. 
+   SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO.
 
-1. If SLC is installed, uninstall it or make sure you exit SAP Secure Login Client. Right-click the icon in the system tray and select **Log Out** and **Exit** before you attempt an SSO connection by using the gateway. 
+1. If SLC is installed, uninstall it or make sure you exit SAP Secure Login Client. Right-click the icon in the system tray and select **Log Out** and **Exit** before you attempt an SSO connection by using the gateway.
 
    SLC isn't supported for use on Windows Server machines. For more information, see [SAP Note 2780475](https://launchpad.support.sap.com/#/notes/2780475) (s-user required).
 
@@ -65,11 +65,11 @@ This article describes how to configure your SAP BW data source to enable SSO fr
     - Choose **SAP Business Warehouse** as the **Data Source Type** if you want to create an SSO connection to a BW Application Server. 
     - Select **Sap Business Warehouse Message Server** if you want to create an SSO connection to a BW Message Server.
 
-1. For **SNC Library**, select either the **SNC\_LIB** or **SNC\_LIB\_64** environment variable, or **Custom**. 
+1. For **SNC Library**, select either the **SNC\_LIB** or **SNC\_LIB\_64** environment variable, or **Custom**.
 
    - If you select **SNC\_LIB**, you must set the value of the **SNC\_LIB\_64** environment variable on the gateway machine to the absolute path of the 64-bit copy of sapcrypto.dll on the gateway machine. For example, *C:\Users\Test\Desktop\sapcrypto.dll*.
 
-   - If you choose **Custom**, paste the absolute path to *sapcrypto.dll* into the Custom SNC Library Path field that appears on the **Manage gateways** page. 
+   - If you choose **Custom**, paste the absolute path to *sapcrypto.dll* into the Custom SNC Library Path field that appears on the **Manage gateways** page.
 
 1. For **SNC Partner Name**, enter the SNC Name of the BW server. Under **Advanced settings**, ensure that **Use SSO via Kerberos for DirectQuery queries** is checked. Fill in the other fields as if you were establishing a Windows Authentication connection from PBI Desktop.
 
@@ -99,7 +99,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
 ### CPIC tracing
 
-1. To enable CPIC tracing, set two environment variables: **CPIC\_TRACE** and **CPIC\_TRACE\_DIR**. 
+1. To enable CPIC tracing, set two environment variables: **CPIC\_TRACE** and **CPIC\_TRACE\_DIR**.
 
    The first variable sets the trace level and the second variable sets the trace file directory. The directory must be a location that  members of the Authenticated Users group can write to. 
  
@@ -160,7 +160,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
     ccl/trace/directory=<drive>:\logs\sectrace
     ```
 
-2. Change the `ccl/trace/directory` option to a location to which members of the Authenticated Users group can write. 
+2. Change the `ccl/trace/directory` option to a location to which members of the Authenticated Users group can write.
 
 3. Alternatively, create a new .ini file to change this behavior. In the same directory as sapcrypto.ini and sapcrypto.dll, create a file named sectrace.ini, with the following content. Replace the `DIRECTORY` option with a location on your machine that members of the Authenticated Users group can write to:
 
@@ -175,8 +175,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
     For more information on CommonCryptoLib tracing, see [SAP Note 2491573](https://launchpad.support.sap.com/#/notes/2491573) (SAP s-user required).
 
-
-### Impersonation 
+### Impersonation
 
 This section describes troubleshooting symptoms and resolution steps for impersonation issues.
 
@@ -186,7 +185,7 @@ This section describes troubleshooting symptoms and resolution steps for imperso
 
 **Validation**: Refresh or create the report and collect the *GatewayInfo[date].log*. Open the latest GatewayInfo log file and check again the following string: **About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)** to ensure that the value for **ImpersonationLevel** matches **Impersonation**.
 
-### Delegation 
+### Delegation
 
 Delegation issues usually appear in the Power BI service as generic errors. To determine whether delegation is the issue, it's useful to collect the Wireshark traces and use *Kerberos* as a filter. For Kerberos errors reference, consult the [blog post](/archive/blogs/askds/kerberos-errors-in-network-captures). The rest of this section describes troubleshooting symptoms and resolution steps for delegation issues.
 
