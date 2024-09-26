@@ -5444,27 +5444,27 @@
         {
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi.md",
             "redirect_url": "/fabric/governance/data-loss-prevention-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-override.md",
             "redirect_url": "/fabric/governance/data-loss-prevention-respond",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-overview.md",
             "redirect_url": "/fabric/governance/data-loss-prevention-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
 		{
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-configure.md",
             "redirect_url": "/fabric/governance/data-loss-prevention-configure",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
 		{
             "source_path": "powerbi-docs/enterprise/service-security-dlp-policies-for-power-bi-respond.md",
             "redirect_url": "/fabric/governance/data-loss-prevention-respond",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/transform-model/log-analytics/install-as-engine-app.md",
