@@ -98,7 +98,7 @@ Additionally, you can share reports by granting users direct access:
 
 You can also share dashboards by granting user direct access but not via links that give access:
 
-![Screenshot of Grant access to a dashboard dialog.](media/service-how-to-collaborate-distribute-dashboards-reports/grant-dashboard-access-dialog.png)
+![Screenshot of Grant access to a dashboard dialog.](media/service-how-to-collaborate-distribute-dashboards-reports/grant-dashboards-access-dialog.png)
 
 When you share a report with other users, they get read access to both the report and the underlaying semantic model that the report uses.  Without defining RLS or OLS in the semantic model, the report is shared with full access to all the data even when tables, columns, measures, or report pages aren't shown on the report or the field list.  
 

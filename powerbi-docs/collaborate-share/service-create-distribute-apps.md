@@ -251,7 +251,7 @@ The Permission management page contains these tabs:
 - **Direct access**: Lists all the users who already have access to the app.
 - **Pending access**: Lists all pending requests.
 
-  :::image type="content" source="media/service-create-distribute-apps/access-permission-page.png" alt-text="Screenshot of manage permission page.":::
+  :::image type="content" source="media/service-create-distribute-apps/access-permissions-page.png" alt-text="Screenshot of manage permission page.":::
 
 ## Change your published app
 
