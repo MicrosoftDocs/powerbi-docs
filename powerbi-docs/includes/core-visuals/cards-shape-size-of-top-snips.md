@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Size of top snips
+##### Size of top snips
 
 When the **Snipped tab, both top** shape is selected, the **Size of top snips** control is activated, allowing you to clip the top corners from 0 pixels (*square corners*) to 50 pixels (*maximum snip*).

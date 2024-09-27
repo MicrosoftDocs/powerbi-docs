@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Position
+##### Position
 
 With this dropdown menu, users have two options to specify the  position of the Reference label:
 - **Below callout:** Positions label below the Callout value.

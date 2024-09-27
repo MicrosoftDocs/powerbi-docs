@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Style
+##### Style
 
 The menu provides options for configuring what is displayed on the data label, with three options to choose from:
 - **Data value:** Displays the value of the data represented by the reference line.

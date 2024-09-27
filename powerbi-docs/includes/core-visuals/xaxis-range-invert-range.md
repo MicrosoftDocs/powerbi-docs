@@ -10,5 +10,5 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Invert range
+##### Invert range
 This toggle modifies the axis orientation. When toggled off (default), values ascend from right to left. When toggled on, values ascend from left to right.
