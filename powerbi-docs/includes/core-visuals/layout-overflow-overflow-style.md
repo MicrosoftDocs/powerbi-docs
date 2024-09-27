@@ -13,5 +13,6 @@ LocalizationGroup: core-visuals
 ##### Overflow style
 
 Choose between a **Continuous scroll** or **Paginated** overflow style:
+
 - **Continuous scroll:** lets users scroll through the cards seamlessly.
 - **Paginated:** divides the cards into pages.

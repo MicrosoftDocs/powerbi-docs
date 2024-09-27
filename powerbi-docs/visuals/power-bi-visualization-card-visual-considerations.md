@@ -12,7 +12,6 @@ ms.date: 09/27/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to know about any considerations or limitations for the (new) Card visual so that I'm always aware of the nuances of the (new) Card visual in Power BI Desktop.
 ---
-
 # (new) Card visual considerations and limitations
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
@@ -21,7 +20,7 @@ LocalizationGroup: Visualizations
 
 As a Power BI user, the awareness of any considerations and limitations for the (new) Card visual is helpful when creating effective and visually appealing data visualizations.
 
-Understanding the considerations and limitations allow you to make informed decisions and use the full potential of the (new) card visual in Power BI. Whether you're a novice or an experienced user, this article aims to enhance your knowledge by keeping you up-to-date with practical insights and tips for any known issues.
+Understanding the considerations and limitations allow you to make informed decisions and use the full potential of the (new) Card visual in Power BI. Whether you're a novice or an experienced user, this article aims to enhance your knowledge by keeping you up-to-date with practical insights and tips for any known issues.
 
 ## Considerations and limitations
 
