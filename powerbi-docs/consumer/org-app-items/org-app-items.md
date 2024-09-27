@@ -367,5 +367,3 @@ In list views, org app items are labeled as "org app" while Power BI apps are la
 ![Item type labels on apps and org apps.](media/org-app-items/org-app-and-app-type-labels.png)
 
 Org app consumers without permissions to edit the org app are able to view, favorite, and share the org app. If a consumer doesn't have share permissions, they can only share links with users who already have access.
-
-![Org app consumer view.](media/org-app-items/org-app-consumer-view-no-edit-.png)
