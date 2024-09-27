@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Customize style
+##### Customize style
 
 This toggle, available exclusively for **Rounded rectangle** and **Snipped tab, both top** shapes, enables independent control of each corner's roundness or snip depth.

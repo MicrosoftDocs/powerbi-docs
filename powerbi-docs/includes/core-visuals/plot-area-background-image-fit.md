@@ -10,7 +10,7 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Image fit
+##### Image fit
 
 When setting the **Image fit** for the Plot area background, users have three options to choose from as shown here:
 

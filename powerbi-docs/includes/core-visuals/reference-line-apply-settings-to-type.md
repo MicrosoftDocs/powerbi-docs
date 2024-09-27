@@ -11,7 +11,7 @@ ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
 
-###### Type
+##### Type
 
 There are several types of reference lines that can be added to column charts to provide including:
 

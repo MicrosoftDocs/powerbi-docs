@@ -10,7 +10,7 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Style
+##### Style
 
 The menu provides options for configuring the axis title, but only when the axis value's Display units is set to display Thousands, Millions, Billions, or Trillions:
 
