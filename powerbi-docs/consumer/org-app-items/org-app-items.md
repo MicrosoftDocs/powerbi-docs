@@ -15,12 +15,12 @@ LocalizationGroup: Share your work
 # Get started with org apps (preview) 
 
 > [!IMPORTANT]
-> **Opting in to preview of org apps as items has been temporarily removed and will return soon.**
-> To ensure quality in functionality and experience, the preview switch for org apps has been temporarily removed for customers who have not already opted in. Customers in preview can still create new org app items, and existing org app items can still be edited and viewed. However, there is an issue with the report pages pane not appearing when viewing org apps. The preview will be available again soon for all customers once the issue is fixed.
+> **Opting in to the preview of org apps as items has been temporarily removed and will return soon.**
+> To ensure quality in functionality and experience, the preview switch for org apps has been temporarily removed for customers who have not already opted in. Customers in preview can still create new org app items, and existing org app items can still be edited and viewed. However, there is an issue with report pages pane not appearing when viewing org apps. The preview will be available again soon for all customers once the issue is fixed.
 
 **Coming soon:** the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
 
-Welcome to the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
+Welcome to the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. You can also manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
 
 ![Collage image of managing an org app item.](media/org-app-items/org-app-item-management-collage.png)
 
