@@ -31,7 +31,7 @@ public update(options: VisualUpdateOptions) {
 
 ## Catch exceptions
 
-When you're working on your visual, you notice that the Power BI service "consumes" all errors. This is an intentional feature of Power BI. It prevents misbehaving visuals from causing the entire app to become unstable.
+When you're working on your visual, you notice that the Power BI service "consumes" all errors. This behavior is an intentional feature of Power BI. It prevents misbehaving visuals from causing the entire app to become unstable.
 
 As a workaround, add code to catch and log your exceptions, or set your debugger to break on caught exceptions.
 
@@ -91,5 +91,3 @@ You can set the browser to break on caught exceptions. Breaking stops code execu
 
 * [Troubleshoot your Power BI developer environment setup](power-bi-custom-visuals-troubleshoot.md)
 * [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.yml)
-
-More questions? [Try asking the Power BI community](https://community.powerbi.com/).

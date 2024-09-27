@@ -52,11 +52,11 @@ When you're using the slicer to filter reports, the values in **Selected Values*
 
 The slicer saves the selected values. Those values can remain visible and selected in subsequent views of the report. However, if the underlying data or user permissions change, these selections might no longer be relevant or appropriate.
 
-Report authors should avoid saving and publishing reports with selected items that might be inappropriate for certain users, particularly in environments that use row-level security (RLS). We recommend that authors clear any selections that shouldn't be universally applied before saving and distributing the report.
+Report authors should avoid saving and publishing reports with selected items that might be inappropriate for certain users, particularly in environments that use row-level security (RLS). We recommend that authors clear any selections that shouldn't be universally applied before saving and distributing reports.
 
 ### What if
 
-The [What if](../transform-model/desktop-what-if.md#considerations-and-limitations) parameters in Power BI can handle up to 1,000 unique values. If a parameter exceeds this limit, the values are evenly sampled. This kind of sampling might not meet the needs of detailed scenario analysis. This limitation is in place to help ensure performance and manageability within Power BI.
+The [What if](../transform-model/desktop-what-if.md#considerations-and-limitations) parameters in Power BI can handle up to 1,000 unique values. If a parameter exceeds this limit, the values are evenly sampled. This kind of sampling might not meet the needs of detailed scenario analysis. The limit is in place to help ensure performance and manageability within Power BI.
 
 When you need more than 1,000 unique values, the parameter values are sampled to fit within this constraint. This situation potentially leads to a loss of granularity. To work around this limitation, you can adjust the granularity of your **What if** parameters to ensure that the total number of unique values doesn't exceed 1,000.
 
@@ -66,17 +66,19 @@ This section addresses potential problems that users might encounter with dates 
 
 ### Format strings
 
-In Power BI, certain visual elements don't use the model format string for dates to conserve space and present only the necessary detail. This behavior can lead to confusion when the displayed date format doesn't match the user's expectations.
+Certain visual elements in Power BI don't use the model format string for dates, to conserve space and present only the necessary detail. This behavior can lead to confusion when the displayed date format doesn't match the user's expectations.
 
 For these elements, Power BI uses the browser's locale settings to determine the date format. The format might vary depending on the user's browser configuration, which influences how dates are displayed in the report.
 
 To ensure consistency, report creators should be aware of the browser locale's impact on date formatting. Common areas affected include [slicers](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), [Cartesian axis tick labels](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the **Filter** pane.
 
-### Display units suffix
+### Display unit suffix
 
-Power BI dynamically alters the display units suffix to match the regional or system settings of the user's environment. This automatic adaptation helps ensure consistency with local conventions but might lead to confusion when users share reports across different geographies or systems.
+Power BI dynamically alters the display unit suffix to match the regional or system settings of the user's environment. This automatic adaptation helps ensure consistency with local conventions but might lead to confusion when users share reports across different geographies or systems.
 
-Currently, there is no direct feature within Power BI to lock the display units suffix irrespective of location or system settings. However, you can manually adjust the format settings of the visuals to specify a consistent display unit. You need to make this adjustment individually for each visual component that displays values. For custom format strings to display, you must not have a display unit set in the visual's format settings. You might need to select **Reset to default** to clear any display unit override.
+Currently, there's no direct feature within Power BI to lock the display unit suffix irrespective of location or system settings. However, you can manually adjust the format settings of the visuals to specify a consistent display unit. You need to make this adjustment individually for each visual component that displays values.
+
+For custom format strings to display, you must not have a display unit set in the visual's format settings. You might need to select **Reset to default** to clear any display unit override.
 
 ## Fonts
 
@@ -94,7 +96,7 @@ When you're incorporating a custom font into Power BI reports, it's essential to
 
 To ensure that the custom theme file uses the correct font name, go to the **Fonts** section in the Windows Control Panel feature. Here, you can verify the exact OS name of the font. After you verify the name, use it in your custom theme file to successfully apply the custom font to your Power BI report.
 
-The font that a Power BI report uses must be installed on the local machine of each user. The reason is that fonts aren't embedded within the report itself. If a font isn't installed locally, it isn't displayed correctly when an user views the report. This situation can lead to inconsistencies in the report's appearance and can affect the overall user experience.
+The font that a Power BI report uses must be installed on the local machine of each user. The reason is that fonts aren't embedded within the report itself. If a font isn't installed locally, it isn't displayed correctly when a user views the report. This situation can lead to inconsistencies in the report's appearance and can affect the overall user experience.
 
 To help ensure uniformity in font usage across all users, we recommend that you use an IT group policy for the centralized distribution of fonts within your organization. This policy facilitates the installation of the required fonts on all relevant machines, to maintain the intended design and readability of the report.
 
@@ -148,7 +150,7 @@ To ensure [geocoding](/azure/azure-maps/power-bi-visual-geocode) accuracy in Pow
 - Assign the correct data category to each location entity, like **State** or **Zipcode**.
 - Build a location hierarchy within your model, or place multiple fields in the location field well.
 
-Use the **Expand All Down** icon to drill into the lowest hierarchy level, which includes all higher levels. This action helps resolve ambiguities in locations that have the same names, such as distinguishing *Paris, Texas* from *Paris, France*. Adding **Country** to your location hierarchy, along with using the **Drill Down** or **Expand All** functions, improves your geocoding outcomes.
+Use the **Expand All Down** icon to drill into the lowest hierarchy level, which includes all higher levels. This action helps resolve ambiguities in locations that have the same names, such as distinguishing *Paris, Texas* from *Paris, France*. Adding **Country** to your location hierarchy, along with using the **Drill Down** or **Expand All** function, improves your geocoding outcomes.
 
 ## Tooltips
 

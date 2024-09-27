@@ -26,7 +26,7 @@ To resolve this situation, follow the steps in this article.
 
 ## Why this problem happens
 
-When you import the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to the internet and load the updated visual. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visuals. But it fails with the following error:
+When you import the local copy of the visual, Power BI Desktop for Power BI Report Server tries to connect to the internet and load the updated visual. Specifically, Power BI Desktop for Power BI Report Server needs to connect to `https://pbivisuals.powerbi.com:443` to get the latest copy of the visual. But it fails with the following error:
 
 ```
 DNS Lookup for "pbivisuals.powerbi.com" failed. The system reports that no network connection is available. 
@@ -47,14 +47,14 @@ Use one of the following solutions to get the custom visual to load in Power BI 
 
      :::image type="content" source="media/custom-visuals-troubleshoot/setting-environment-variable-1.png" alt-text="Screenshot that shows selections for opening settings for environment variables.":::
 
-  1. For the variable name, enter **PBI_userFavoriteResourcePackagesEnabled**. For the value, enter **0**.
+  1. For the variable name, enter **PBI_userFavoriteResourcePackagesEnabled**. For the value, enter **0**. Then select **OK**.
 
      :::image type="content" source="media/custom-visuals-troubleshoot/setting-environment-variable-2.png" alt-text="Screenshot that shows setting a name and a value for a new user variable.":::
 
-  1. After you make this change, restart Power BI Desktop for Power BI Report Server, and try loading a custom visual.
+  1. Restart Power BI Desktop for Power BI Report Server, and try loading a custom visual.
 
 > [!NOTE]
-> After you configure the environment variable in the third solution, you might still encounter a delay before the visual loads in Power BI Desktop for Power BI Report Server. You encounter this delay because Power BI Desktop for Power BI Report Server tries to fetch the updated copy of the visual from the internet. After a period of retrying and failing to connect to the internet, it displays the local copy of the custom visual. This process could result in a delay of 20 to 30 seconds.
+> After you configure the environment variable in the third solution, you might still encounter a delay of 20 to 30 seconds before the visual loads in Power BI Desktop for Power BI Report Server. You encounter this delay because Power BI Desktop for Power BI Report Server tries to fetch the updated copy of the visual from the internet. After a period of retrying and failing to connect to the internet, it displays the local copy of the custom visual.
 
 ## Solutions for a SQL Server certificate that isn't trusted on the client
 
@@ -62,7 +62,7 @@ When you're establishing a connection to an on-premises SQL Server by using Powe
 
 ```Microsoft SQL: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)```
 
-To troubleshoot this error when you're using on-premises data gateway, change the gateway configurations to update the `SqlTrustedServers` setting by using the following steps:
+To troubleshoot this error when you're using an on-premises data gateway, change the gateway configurations to update the `SqlTrustedServers` setting by using the following steps:
 
 1. On the local machine where the on-premises data gateway is installed, go to **C:\Program Files\On-premises data gateway**.
 2. Make a backup of the configuration file named **Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config**.
@@ -75,12 +75,10 @@ To troubleshoot this error when you're using on-premises data gateway, change th
 
    The value `contososql*,mysvr` matches `contososql6`, `contososqlazure`, and `mysvr`, but doesn't match `mysvr.microsoft.com`.
 
-To troubleshoot this error when you're using Power BI Desktop, modify the value of the environment variable `PBI_SQL_TRUSTED_SERVERS` to include the SQL Server instances. The supported values are the same as outlined for gateway configuration (as described in step 4 in the preceding procedure).
+To troubleshoot this error when you're using Power BI Desktop, modify the value of the environment variable `PBI_SQL_TRUSTED_SERVERS` to include the SQL Server instances. The supported values are the same as those outlined for gateway configuration in step 4 of the preceding procedure.
 
-For connections to SQL Server from Power BI Desktop and on-premises data gateway versions starting with February 2024 or later, use one of these options:
+For connections to SQL Server from Power BI Desktop and on-premises data gateway versions starting with February 2024, use one of these options:
 
 - Follow the solution mentioned previously to add the environment variable `PBI_SQL_TRUSTED_SERVERS`.
 - Ask your SQL Server administrators to acquire a certificate from a well-known certificate authority.
 - Change the setting `SqlTrustedServers` on the gateway configuration file.
-
-More questions? [Try asking the Power BI community](https://community.powerbi.com/).
