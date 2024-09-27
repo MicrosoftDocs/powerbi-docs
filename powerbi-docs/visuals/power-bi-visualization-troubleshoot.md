@@ -3,7 +3,7 @@ title: Troubleshoot visualizations in Power BI
 description: Troubleshoot visualizations in Power BI, including common problems and workarounds to overcome known obstacles or potential problems.
 author: JaedenArmstrong
 ms.author: miguelmyers
-ms.reviewer: davidi
+ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
@@ -71,6 +71,10 @@ In Power BI, certain visual elements don't use the model format string for dates
 For these elements, Power BI uses the browser's locale settings to determine the date format. The format might vary depending on the user's browser configuration, which influences how dates are displayed in the report.
 
 To ensure consistency, report creators should be aware of the browser locale's impact on date formatting. Common areas affected include [slicers](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), [Cartesian axis tick labels](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the **Filter** pane.
+
+### Display units suffix
+
+Power BI dynamically alters the display units suffix to match the regional or system settings of the user’s environment. This automatic adaptation ensures consistency with local conventions but may lead to confusion when sharing reports across different geographies or systems. Currently, there is no direct feature within Power BI to lock the display units suffix irrespective of location/system settings. However, users can manually adjust the format settings of the visuals to specify a consistent display unit. This adjustment needs to be done individually for each visual component that displays values. In order for custom format string to display you must not have a display unit set in the visuals format settings, you may need to click ‘reset to default’ to clear any display unit override.
 
 ## Fonts
 

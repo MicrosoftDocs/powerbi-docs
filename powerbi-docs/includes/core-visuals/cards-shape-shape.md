@@ -10,7 +10,7 @@ ms.date: 06/24/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Shape
+##### Shape
 
 This menu provides a selection of geometric shapes:
 - **Rectangle:** The standard shape option, rendering a four-sided polygon with right-angled corners.
