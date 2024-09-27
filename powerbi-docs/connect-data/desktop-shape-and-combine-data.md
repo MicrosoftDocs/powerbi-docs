@@ -47,8 +47,8 @@ Power Query Editor records the steps you specify (such as rename a table, transf
 
     :::image type="content" source="media/desktop-shape-and-combine-data/get-data-web-navigator-dialog-transform-data.png" alt-text="Screenshot of Power Query Editor's Navigator dialog with HTML Table 1 selected and the Transform Data button highlighted.":::
 
-> [!TIP]
-> Some information in the tables from the previous URL may change or be updated occasionally. As a result, you may need to adjust the selections or steps in this article accordingly.
+    > [!TIP]
+    > Some information in the tables from the previous URL may change or be updated occasionally. As a result, you may need to adjust the selections or steps in this article accordingly.
 
 1. The Power Query Editor window opens. You can see the default steps applied so far, in the **Query Settings** pane under **APPLIED STEPS**.
 
