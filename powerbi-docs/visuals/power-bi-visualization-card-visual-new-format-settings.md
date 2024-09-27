@@ -1,6 +1,6 @@
 ---
-title: Card visual format settings
-description: This document explains all available Format settings for Card visuals in Power BI Desktop and Power BI Service.
+title: (New) card visual format settings
+description: This article provides a clear overview of all available Format settings for the (new) card visual in Power BI Desktop.
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.reviewer:
@@ -10,7 +10,7 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/26/2024
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for card visuals so that I can effectively and more easily format card visuals in Power BI Desktop and Power BI Service.
+#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) card visual so that I can effectively and more easily format card visuals in Power BI Desktop.
 ---
 
 # Card visual format settings
