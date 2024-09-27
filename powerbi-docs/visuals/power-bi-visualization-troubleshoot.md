@@ -72,7 +72,7 @@ For these elements, Power BI uses the browser's locale settings to determine the
 
 To ensure consistency, report creators should be aware of the browser locale's impact on date formatting. Common areas affected include [slicers](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), [Cartesian axis tick labels](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the **Filter** pane.
 
-### Display unit suffix
+### <a name = "display-units-suffix"></a> Display unit suffix
 
 Power BI dynamically alters the display unit suffix to match the regional or system settings of the user's environment. This automatic adaptation helps ensure consistency with local conventions but might lead to confusion when users share reports across different geographies or systems.
 
