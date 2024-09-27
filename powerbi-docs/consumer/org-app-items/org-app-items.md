@@ -52,7 +52,7 @@ Users who create an org app are prompted to start a trial when a Microsoft tenan
 
 ### Workspace roles for creating an org app item
 
-Users in the workspace with an **admin, member, or contributor (with share permissions)*** role can create and manage org app items, although contributors might not have full permissions for managing access on an org app. See [org app access management](#insufficient-permissions-when-managing-an-org-app) for more details. Workspace viewers can't create org app items. 
+Users in the workspace with an **admin, member, or contributor (with share permissions)*** role can create and manage org app items, although contributors might not have full permissions for managing access on an org app. For more information, see [org app access management](#insufficient-permissions-when-managing-an-org-app). Workspace viewers can't create org app items. 
 
  See also [Contributors and access management and sharing](#contributors-and-access-management--sharing).
 
