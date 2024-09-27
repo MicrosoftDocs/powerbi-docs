@@ -12,10 +12,15 @@ ms.date: 09/24/2024
 ms.custom:
 LocalizationGroup: Share your work
 ---
-
 # Get started with org apps (preview) 
 
-Welcome to the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
+> [!IMPORTANT]
+> **Opting in to the preview of org apps as items has been temporarily removed and will return soon.**
+> To ensure quality in functionality and experience, the preview switch for org apps has been temporarily removed for customers who have not already opted in. Customers in preview can still create new org app items, and existing org app items can still be edited and viewed. However, there is an issue with report pages pane not appearing when viewing org apps. The preview will be available again soon for all customers once the issue is fixed.
+
+**Coming soon:** the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
+
+Welcome to the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. You can also manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
 
 ![Collage image of managing an org app item.](media/org-app-items/org-app-item-management-collage.png)
 
@@ -47,7 +52,7 @@ Users who create an org app are prompted to start a trial when a Microsoft tenan
 
 ### Workspace roles for creating an org app item
 
-Users in the workspace with an **admin, member, or contributor (with share permissions)*** role can create and manage org app items, although contributors might not have full permissions for managing access on an org app. See [org app access management](#insufficient-permissions-when-managing-an-org-app) for more details. Workspace viewers can't create org app items. 
+Users in the workspace with an **admin, member, or contributor (with share permissions)*** role can create and manage org app items, although contributors might not have full permissions for managing access on an org app. For more information, see [org app access management](#insufficient-permissions-when-managing-an-org-app). Workspace viewers can't create org app items. 
 
  See also [Contributors and access management and sharing](#contributors-and-access-management--sharing).
 
@@ -362,5 +367,3 @@ In list views, org app items are labeled as "org app" while Power BI apps are la
 ![Item type labels on apps and org apps.](media/org-app-items/org-app-and-app-type-labels.png)
 
 Org app consumers without permissions to edit the org app are able to view, favorite, and share the org app. If a consumer doesn't have share permissions, they can only share links with users who already have access.
-
-![Org app consumer view.](media/org-app-items/org-app-consumer-view-no-edit-.png)
