@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Position
+##### Position
 
 This menu provides four options to position the Image:
 - **Left of text:** Image is positioned to the left of text.

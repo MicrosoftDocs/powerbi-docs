@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Position
+##### Position
 
 With this dropdown menu, users have two options to specify the  position of the shade area in relation to the reference line:
 - **Before:** Refers to shading the area left of the reference line.

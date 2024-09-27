@@ -10,7 +10,7 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Label format
+##### Label format
 
 The format setting provides four options:
 - **Absolute:** This displays the actual numeric deviation from the reported value, providing insight into how much each data point might differ from its true value.

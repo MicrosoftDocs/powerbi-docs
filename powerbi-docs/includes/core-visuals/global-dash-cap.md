@@ -10,7 +10,7 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Dash cap
+##### Dash cap
 
 This dropdown menu determines the line's end style, offering options such as:
 
