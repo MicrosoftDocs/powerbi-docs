@@ -91,7 +91,7 @@ As you can see, the reports section contains a `sections` list. Each section con
   ] 
 ```
 
-To get information about a visual (for example, its name, whether it’s a core visual, public custom visual or private visual, certified, etc.) check the visual GUID against multiple data sources and add to the visual's data based on the information you find.
+To get information about a visual (for example, its name, whether it’s a core visual, public custom visual or private visual, certified, etc.) check the visual GUID against multiple data sources. Then add to the data about the visual data based on the information you find.
 
 ## Core visuals
 
@@ -227,7 +227,7 @@ The following fields can be used to enhance information about a visual provided 
 
 Both AppSource visuals and private visuals can be added to the Organization’s visuals store which exists for each organization (tenant). If a private custom visual is added to an organization’s visual store, the suffix _OrgStore is added to its GUID. In contrast, when an AppSource visual is added directly to an organization’s visual store, it keeps its original GUID.
 
-To determine if a public custom visual (from AppSource) is in an organization's store visuals:
+To determine if a public custom visual (from AppSource) is in an organization's store:
 
 1. Get the visual’s information using information from the [AppSource catalog](#appsource-public-custom-visuals).
 1. Download the organization’s visuals list (in CSV format) from **Power BI** -> **Admin Portal** -> **Organization Visuals** -> **Export**.
