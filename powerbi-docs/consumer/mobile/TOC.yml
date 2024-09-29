@@ -52,6 +52,8 @@
         href: mobile-apps-notification-center.md
       - name: "Create a deep link that goes to a specific location"
         href: mobile-apps-deep-link-specific-location.md
+      - name: "Connect data to locations with NFC tags"
+        href: mobile-apps-nfc-tags.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: mobile-apps-geographic-filtering.md
       - name: "Dark mode"
