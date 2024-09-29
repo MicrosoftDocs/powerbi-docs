@@ -14,13 +14,13 @@ ms.date: 09/25/2024
 
 # Scanner API
 
-If the scanner API is invoked with URI parameter reportObjects set to true, the reports section in the output will contain information about the visuals used in each report.
+The [Workspace information scanner API](rest/api/power-bi/admin/workspace-info-post-workspace-info) is a REST API that provides metadata about Power BI reports, datasets, and visuals. The scanner API is useful for understanding what kind of information is contained in the report, who created it, what restrictions apply to it, etc.
 
-Link to original documentation: Scanner Docs
+If the scanner API is invoked with URI parameter `reportObjects` set to true, the reports section in the output contains information about the visuals used in each report.
 
-## Scanner output example 
+## Scanner output example
 
-Below is an example of the reports section:
+The following snippet is an example of the reports section of the scanner API output:
 
 ```json
   "reports": [ 
@@ -74,7 +74,7 @@ Below is an example of the reports section:
   ]
  ```
 
-As you can see, the reports section contains a sections list. Each section contains the section name and list of visuals, or, more precisely, their GUIDs:
+As you can see, the reports section contains a `sections` list. Each section contains the section name and lists the GUID of each visual in that section:
 
 ```json
   "sections": [ 
@@ -92,11 +92,11 @@ As you can see, the reports section contains a sections list. Each section conta
   ] 
 ```
 
-To get information about a visual, (for example, its name, whether it’s a core visual, public custom visual or private visual, if it’s certified, etc.) check the visual GUID with multiple data sources and enrich visual data based on information you find.
+To get information about a visual (for example, its name, whether it’s a core visual, public custom visual or private visual, certified, etc.) check the visual GUID against multiple data sources and add to the visual's data based on the information you find.
 
 ## Core visuals
 
-Below is list of GUIDs of Core (build-in) Visuals, this visuals build-in inside Power BI:
+The following list contains the GUIDs of the [Core (built-in) visuals](./power-bi-custom-visuals.md#core-power-bi-visuals):
 
 ```json
 "actionButton" 
@@ -156,7 +156,7 @@ Below is list of GUIDs of Core (build-in) Visuals, this visuals build-in inside 
 "heatMap"
 ```
 
-If the visual GUID is one of core visuals, there is no need to look for it in other data sources, like AppSource catalog.
+If the visual GUID is one of the core visuals, there's no need to look for it in other data sources, like AppSource catalog.
 
 ## AppSource (public) custom visuals
 
@@ -174,9 +174,9 @@ The resulting json contains a list of items and a link to the next page, `nextPa
 } 
 ```
 
-Typically, a full list of visuals is is about 3-4 pages, and you must fetch them all.
+Typically, a full list of visuals is about 3-4 pages long. You must fetch all the pages for a complete report.
 
-Each item in the items list is a custom visual and contains all the information stored about it in AppSource. In this document we provide only relevant fields:
+Each item in the items list is a custom visual and contains all the information stored about it in AppSource. This document provides only relevant fields:
 
 ```json
 
@@ -220,26 +220,24 @@ The following fields can be used to enhance information about a visual provided 
 
 * "id" is used to calculate PDP link page: `https://appsource.microsoft.com/<locale> /product/PowerBIVisuals/<id>`
 
-Private (from file) Custom Visuals
+## Private Custom Visuals (from a file)
 
- This kind of visuals added to Power BI report using “Import a visual from a file” option. If a visual is not a core visual and not an AppSource visual, it’s a private visual. For private visuals, we provide only their GUIDs.
+ Private visuals added to a Power BI report using the [Import a visual from a file](./import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) option. If a visual isn't a core visual and not an AppSource visual, it’s a private visual. For private visuals, we provide only their GUIDs.
 
 ## Organization visuals
 
-Both AppSource visuals and Private visuals can be added to the Organization’s visuals store which exists for each organization (tenant). If a private custom visual is added to an organization’s visual store, the suffix _OrgStore is added to its GUID. In contrast, when an AppSource visual is added directly to an organization’s visual store, it keeps its original GUID.
+Both AppSource visuals and private visuals can be added to the Organization’s visuals store which exists for each organization (tenant). If a private custom visual is added to an organization’s visual store, the suffix _OrgStore is added to its GUID. In contrast, when an AppSource visual is added directly to an organization’s visual store, it keeps its original GUID.
 
-The following process describes how to decide if a public custom visual belongs to org store visuals:
+To determine if a public custom visual (from AppSource) is in an organization's store visuals:
 
-Enrich the visual’s information using information from the AppSource catalog (see above).  
-
-Download the organization’s visuals list (in csv format) from Power BI -> Admin Portal -> Organization Visuals -> Export:
-
-Check if the visual’s GUID appears in the list you just downloaded. If it does, this visual is an org visual. In this case, update visual name, to make it the same as the one in the CSV file.
+1. Get the visual’s information using information from the [AppSource catalog](#appsource-public-custom-visuals).
+1. Download the organization’s visuals list (in CSV format) from **Power BI** -> **Admin Portal** -> **Organization Visuals** -> **Export**.
+1. If the visual’s GUID appears in the downloaded list, this visual is an organizational visual. In this case, update visual name to match the one in the CSV file.
 
 > [!NOTE]
 >
-> There is no difference between an AppSource custom visual and its counterpart in the organization store, including its code and version. The only difference might be in the visual name.
-> If the tenant admin downloads a custom visual *.pbiviz* file from AppSource and adds it to the organization store using Add Visual -> From File, the suffix *_OrgStore* is added and when exported, it will appear as a *Private file*. A private file visual doesn't get upgraded and is treated as a private visual in the Org Store.
+> * There is no difference between an AppSource custom visual and its counterpart in the organization store, including its code and version. The only difference might be in the visual name.
+> * If the tenant admin downloads a custom visual *.pbiviz* file from AppSource and adds it to the organization store using Add Visual -> From File, the suffix *_OrgStore* is added and when exported, it will appear as a *Private file*. A private file visual doesn't get upgraded and is treated as a private visual in the Org Store.
 
 Demo application to use Scanner API
 
@@ -249,3 +247,7 @@ Original code:
 
 Updated code includes visual info enrichment:
 `https://github.com/gennadylaventman/Fabric-metadata-scanning/tree/dev/glaventman/enrichCV`
+
+## Related content
+
+[Power BI custom visuals](./power-bi-custom-visuals.md)
