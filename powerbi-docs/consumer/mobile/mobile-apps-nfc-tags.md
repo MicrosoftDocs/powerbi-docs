@@ -73,7 +73,7 @@ To read the NFC tag, hold your device close to the tag.
 
     Alternatively, on the Home page, Workspace list, and Apps list, you can open the options menu in the header and select **Read NFC (preview)**.
 
-    :::image type="content" source="./media/mobile-apps-nfc-tags/read-nfc-tag-read-option.png" alt-text="Screenshot showing the Read NFC tag options menu sellection on an iPhone." border="false":::
+    :::image type="content" source="./media/mobile-apps-nfc-tags/read-nfc-tag-read-option.png" alt-text="Screenshot showing the Read NFC tag options menu selection on an iPhone." border="false":::
 
 ## Related content
 
