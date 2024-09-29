@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/17/2024
+ms.date: 09/29/2024
 ms.custom: intro-whats-new
 ---
 # What's new in the mobile apps for Power BI
@@ -20,6 +20,16 @@ For related "What's New" information, see:
 * [What's new in Power BI](../../fundamentals/desktop-latest-update.md)
 
 ## June 2024
+
+## September 2024
+
+### NFC tag support (preview)
+
+The Power BI mobile apps now support NFC tags! With NFC tags, you can create seamless connections between your data and the physical locations it's relevant to. This feature is especially useful for frontline workers who need quick access to data. For example, a retail manager could quickly access inventory data by tapping their phone on an NFC tag placed on a storage shelf.
+
+To use an NFC tag with the Power BI mobile app, you just register the desired Power BI content on the tag and place the tag in the desired location. After that, anyone with permission to access the item can get to it by touching the tag with their phone. Check out our [demo](https://www.youtube.com/watch?v=N3gd4wfsmvo&ab_channel=MicrosoftPowerBI&t=21m42s) and [documentation](./mobile-apps-nfc-tags.md)!
+
+:::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/nfc-tags-whats-new.png" alt-text="Screenshot illustrating how to register and read NFC tags with a phone using the Power BI mobile app." border="false":::
 
 ### Show visuals as tables (preview)
 
