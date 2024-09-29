@@ -13,7 +13,7 @@ ms.date: 09/29/2024
 
 # Scanner API
 
-The [Workspace information scanner API](rest/api/power-bi/admin/workspace-info-post-workspace-info) is a REST API that provides metadata about Power BI reports, datasets, and visuals. The scanner API is useful for understanding what kind of information is contained in the report, who created it, what restrictions apply to it, etc.
+The [Workspace information scanner API](/rest/api/power-bi/admin/workspace-info-post-workspace-info) is a REST API that provides metadata about Power BI reports, datasets, and visuals. The scanner API is useful for understanding what kind of information is contained in the report, who created it, what restrictions apply to it, etc.
 
 If the scanner API is invoked with URI parameter `reportObjects` set to true, the reports section in the output contains information about the visuals used in each report.
 
