@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 09/16/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn different options to create a dataflow and build on existing dataflows in Power BI.
 ---
 # Creating a dataflow
 
 A **dataflow** is a collection of tables that are created and managed in workspaces in the Power BI service. A **table** is a set of columns that are used to store data, much like a table within a database. You can add and edit tables in your dataflow, and manage data refresh schedules, directly from the workspace in which your dataflow was created.
-
 To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows aren't available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
-
 :::image type="content" source="media/dataflows-create/create-options.png" alt-text="Screenshot of options for creating a dataflow.":::
 
 There are multiple ways to create or build on top of a new dataflow:
@@ -33,18 +33,13 @@ The following sections explore each of these ways to create a dataflow in detail
 ## Create a dataflow by using define new tables
 
 Using the Define new tables option lets you define a new table and connect to a new data source.
-
 :::image type="content" source="media/dataflows-create/create-connectors.png" alt-text="Screenshot showing options for data sources." lightbox="media/dataflows-create/create-connectors.png":::
 
-When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
-
+1. When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
 :::image type="content" source="media/dataflows-create/azure-sql-connector.png" alt-text="Screenshot of the form displayed after you choose Azure SQL as a connector.":::
-
-Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
-
+2. Once connected, you can select which data to use for your table. When you choose data and a source, Power BI reconnects to the data source. The reconnection keeps the data in your dataflow refreshed at the frequency that you select later in the setup process.
 :::image type="content" source="media/dataflows-create/choose-table.png" alt-text="Screenshot of a table selection on the Choose Data screen.":::
-
-After you select the data for use in the table, you can use dataflow editor to shape or transform that data into the format necessary for use in your dataflow.
+3. After you select the data for use in the table, you can use dataflow editor to shape or transform that data into the format necessary for use in your dataflow.
 
 ## Create a dataflow by using linked tables
 
@@ -77,7 +72,7 @@ By selecting **Enable load**, you create a new table for which its source is the
 
 Any transformation you perform on this newly created table is run on the data that already resides in Power BI dataflow storage. That means that the query won't run against the external data source from which the data was imported, like the data pulled from the SQL database. Instead the query is performed on the data that resides in the dataflow storage.
 
-**Example use cases**
+### Example use cases
 
 What kind of transformations can be performed with computed tables? Any transformation that you usually specify by using the transformation user interface in Power BI, or the M editor, are all supported when performing in-storage computation.
 
@@ -90,11 +85,11 @@ First you would need to aggregate the data from the *ServiceCalls* to calculate 
 
 Next, you would want to merge the *Account* table with the *ServiceCallsAggregated* table to calculate the enriched *Account* table.
 
-:::image type="content" source="media/dataflows-create/computed-entity-step-4.png" alt-text="Screenshot of the Merge screen.":::
+:::image type="content" source="media/dataflows-create/computed-entity-step-4.png" alt-text="Screenshot of the Merge screen":::
 
 And then you can see the results, shown as *EnrichedAccount* in the following image.
 
-:::image type="content" source="media/dataflows-create/computed-entity-step-5.png" alt-text="Screenshot of the merge results." lightbox="media/dataflows-create/computed-entity-step-5.png":::
+:::image type="content" source="media/dataflows-create/computed-entity-step-5.png" alt-text="Screenshot of the merge results" lightbox="media/dataflows-create/computed-entity-step-5.png":::
 
 And that's it - the transformation is performed on the data in the dataflow that resides in your Power BI Premium subscription, not on the source data.
 
@@ -103,7 +98,7 @@ And that's it - the transformation is performed on the data in the dataflow that
 
 ## Create a dataflow by using a CDM folder
 
-Creating a dataflow from a CDM folder allows you to reference a table that has been written by another application in the Common Data Model (CDM) format. You're prompted to provide the complete path to the CDM format file stored in ADLS Gen 2.
+Creating a dataflow from a CDM folder allows you to reference a table that written by another application in the Common Data Model (CDM) format. You're prompted to provide the complete path to the CDM format file stored in ADLS Gen 2.
 
  :::image type="content" source="media/dataflows-create/attach-cdm.png" alt-text="Screenshot of the Attach a new CDM folder to a new dataflow screen.":::
 

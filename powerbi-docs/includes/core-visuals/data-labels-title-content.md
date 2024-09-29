@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Content
+##### Content
 
 With this dropdown menu, users can choose the Series name as the displayed title, or specify a Custom title and include an additional data field, as shown below.

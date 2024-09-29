@@ -10,7 +10,7 @@ ms.date: 06/24/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Selection
+##### Selection
 
 This menu allows you to define the borders for different sections of the matrix. Here’s what each option in the Section menu means:
 - **All:** This option applies the border settings to the entire matrix, including column headers, row headers, and the values section

@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Position
+##### Position
 
 Sets glow direction to match light source or design preference:
 - **Top**

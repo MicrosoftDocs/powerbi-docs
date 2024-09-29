@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Size
+##### Size
 
 The menu features four padding presets:
 - **Wide:** Applies 20px padding uniformly around the shape.

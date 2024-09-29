@@ -10,7 +10,7 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Position
+##### Position
 
 With this dropdown menu, users have several options to define the position of the reference line:
 

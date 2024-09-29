@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Field
+##### Field
 
 This setting allows you to select which particular field from your data model you want to display as a data label on your visualization.
