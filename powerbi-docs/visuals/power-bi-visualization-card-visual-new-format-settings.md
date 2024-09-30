@@ -72,7 +72,7 @@ The visibility of **Values** can be toggled on or off to make them apparent or t
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [callout-values-horixontal-alignment](../includes/core-visuals/callout-values-horixontal-alignment.md)]
+[!INCLUDE [callout-values-horixontal-alignment](../includes/core-visuals/callout-values-values-horizontal-alignment.md)]
 [!INCLUDE [callout-values-values-text-wrap](../includes/core-visuals/callout-values-values-text-wrap.md)]
 [!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
 [!INCLUDE [callout-values-values-format-code](../includes/core-visuals/callout-values-values-format-code.md)]
@@ -157,7 +157,7 @@ The **Divider** toggle, when enabled, displays a customizable visual division be
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
-[!INCLUDE [border-&-divider-line-width](../includes/core-visuals/border-&-divider-line-width.md)]
+[!INCLUDE [border-&-divider-line-width](../includes/core-visuals/border-&-divider-width.md)]
 [!INCLUDE [reference-labels-divider-ignore-padding](../includes/core-visuals/reference-labels-divider-ignore-padding.md)]
 
 #### Background
@@ -230,7 +230,7 @@ The **Spacing** menu provides options to adjust the layout and appearance of ref
 
 #### Alignment
 
-[!INCLUDE [cards-alignment-certical-alignment](../includes/core-visuals/cards-alignment-certical-alignment.md)]
+[!INCLUDE [cards-alignment-certical-alignment](../includes/core-visuals/cards-alignment-vertical-alignment.md)]
 
 #### Background
 
