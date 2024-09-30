@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: concept-article
 ms.date: 09/24/2024
+ms.custom: FY25Q1-Linter
 LocalizationGroup: Data from files
 ---
 
@@ -40,7 +41,7 @@ You can view the lineage of the datamart by selecting **Lineage > Open lineage**
 
 The following image shows the lineage of a datamart.
 
-:::image type="content" source="media/datamarts-discovery/datamarts-discovery-02.png" alt-text="Screenshot of datamart lineage view." lightbox="media/datamarts-discovery/datamarts-discovery-02.png":::
+:::image type="content" source="media/datamarts-discovery/datamarts-discovery-02.png" alt-text="Screenshot of datamart lineage view" lightbox="media/datamarts-discovery/datamarts-discovery-02.png":::
 
 To view any dependent items of the selected datamart, select the **Impact analysis** menu, which is displayed along the right side of the screen.
 
@@ -64,7 +65,7 @@ Selecting a datamart from the list enables the **Connect** button in the window.
 
 ## Related content
 
-This article provided information about creating reports using datamarts. 
+This article provided information about creating reports using datamarts.
 
 The following articles provide more information about datamarts and Power BI:
 

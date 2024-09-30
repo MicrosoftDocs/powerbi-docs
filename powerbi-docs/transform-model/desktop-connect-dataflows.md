@@ -1,5 +1,5 @@
 ---
-title: Connect to data created by Power Platform dataflows in Power BI Desktop
+title: Connect to Power Platform dataflows in Power BI Desktop
 description: Learn how to easily connect to, use, and get the best performance while using dataflows in Power BI Desktop. 
 author: davidiseminger
 ms.author: davidi
@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 12/30/2022
+ms.date: 09/30/2024
 LocalizationGroup: Connect to data
+#customer intent: As a Power BI user I want to learn how to connect to dataflows and get the best performance in Power BI Desktop.
 ---
 # Connect to data created by Power Platform dataflows in Power BI Desktop
 
@@ -27,7 +28,7 @@ To use the Power Platform dataflows connector, you must be running a recent vers
 
 ## Desktop performance
 
-**Power BI Desktop** runs locally on the computer on which it's installed. Ingestion performance of dataflows is determined by various factors. Those factors include the size of the data, your computer's CPU and RAM, network bandwidth, distance from the data center, and other factors.
+**Power BI Desktop** runs locally on the computer on which it's installed. Ingestion performance of dataflows determines various factors. Those factors include the size of the data, your computer's CPU and RAM, network bandwidth, distance from the data center, and other factors.
 
 You can improve data ingestion performance for dataflows. For example, if the ingested data size is too large for **Power BI Desktop** to manage on your computer, you can use linked and computed entities in dataflows to aggregate the data (within dataflows) and ingest only the pre-prepared, aggregated data.
 
@@ -35,7 +36,7 @@ In that manner, the processing of large data is performed online in dataflows, r
 
 ## Other considerations
 
-Most dataflows reside in the Power BI service tenant. However, **Power BI Desktop** users can't access dataflows that are stored in Azure Data Lake Storage Gen2 account, unless they're the owner of the dataflow, or they've been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
+Most dataflows reside in the Power BI service tenant. However, **Power BI Desktop** users can't access dataflows that are stored in Azure Data Lake Storage Gen2 account, unless they're the owner of the dataflow, or they are explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
 
 1. Anna creates a new workspace and configures it to store dataflows in the organization’s data lake.
 2. Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
