@@ -30,7 +30,7 @@ For more information about a datamart, to explore reports, to view lineage, or t
 
 A page displays the information about the datamart, provides a button to create a new report, share datamart, pull data into Excel or view lineage. Related reports for the selected datamart are also displayed, if any exist. You can also navigate to the datamart editor, its settings, or manage permissions.
 
-The page also shows the workspace where the datamart is located, its endorsement status, its last refresh time, and any sensitivity settings that have been applied. It also displays the datamart's SQL endpoint connection string and the datamart's description.
+The page also shows the workspace where the datamart is located, its endorsement status, its last refresh time, and any sensitivity settings that are applied. It also displays the datamart's SQL endpoint connection string and the datamart's description.
 
 The following image shows the datamarts information page.
 
