@@ -332,7 +332,7 @@
         href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
       - name: New card visual considerations & limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
-    - name: Create card visuals with big number tiles
+    - name: Create new card visuals with big number tiles
       href: ../visuals/power-bi-visualization-card.md
     - name: Column charts
       items: 
