@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/25/2024
+ms.date: 09/30/2024
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
@@ -67,7 +67,7 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
 
-To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing: `text="Profit = [Sales Amount] – [Total Product Cost]"`.
+To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing: `"Profit = [Sales Amount] – [Total Product Cost]"`.
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-04.png" alt-text="Screenshot of entering a visual calculation.":::
 
