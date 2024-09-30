@@ -326,14 +326,14 @@
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
     - name: Card visuals
       items: 
-      - name: Create a (new) card
+      - name: Create a (new) card visual
         href: ../visuals/power-bi-visualization-new-card.md
-      - name: Format settings for (new) card
+      - name: (new) Card visual format settings
         href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
-      - name: Create card visuals with big number tiles
-        href: ../visuals/power-bi-visualization-card.md
-      - name: Create a new card visual with big number tiles
-        href: ../visuals/power-bi-visualization-new-card.md
+      - name: (new) Card visual considerations & limitations
+        href: ../visuals/power-bi-visualization-card-visual-considerations.md
+    - name: Create card visuals with big number tiles
+      href: ../visuals/power-bi-visualization-card.md
     - name: Column charts
       items: 
       - name: Create a column chart visual
