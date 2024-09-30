@@ -7,8 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 1/3/2023
+ms.date: 09/30/2024
 LocalizationGroup: Model your data
+ms.custom: FY25Q1-Linter
+#customer intent: As a Power BI user I want to learn how to import KPIs from an Excel workbook.
 ---
 
 # Import and display KPIs in Power BI
