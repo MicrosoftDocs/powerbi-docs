@@ -4,7 +4,6 @@ description: This article provides a clear overview of all available Format sett
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.reviewer: davidiseminger
-ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
@@ -286,11 +285,9 @@ The **Accent bar** toggle, when enabled, is a simple yet effective way to draw
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
 
-
 ## Related content
 
-* [Create a (new) card visual](power-bi-visualization-column-charts.md)
-* [Considerations and limitations for (new) cards)](power-bi-visualization-column-charts-considerations.md)
-* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
+* [Create a (new) Card visual](power-bi-visualization-new-card.md)
+* [Considerations and limitations for (new) card visuals)](power-bi-visualization-card-visual-considerations.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
+* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

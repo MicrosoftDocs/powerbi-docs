@@ -4,7 +4,6 @@ description: This article provides a clear overview of the considerations and li
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.reviewer: davidiseminger
-ms.custom:
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
@@ -52,5 +51,5 @@ The (new) Card visual currently lacks the functionality to set alerts for specif
 
 * [Create a (new) Card visual](power-bi-visualization-new-card.md)
 * [(new) Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md)
-* [(new) Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

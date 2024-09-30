@@ -50,17 +50,23 @@ For this quick 3-step guide, lets use the first option:
 
 1. In the **Insert** ribbon, select **New visual**. When the visual placeholder appears on the report canvas, expand the **Visualizations** pane and select the **(new) Card visual** icon in the **Build visual** menu.
 
-   :::image type="content" source="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png" alt-text="Screenshot highlighting the Insert menu and Visual gallery ribbon expanded showing the Card (new) visual selected, and the dialogue box ‘Suggest a visual’ displayed." lightbox="media/power-bi-visualization-new-card/insert-visual-gallery-new-card.png":::
+    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-1.png" alt-text="Screenshot with the Insert ribbon, New visual button, Visualizations pane, Build visual icon, and the (new) Card visual icon, all highlighted." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-1.png":::
 
-1. To add fields or measures, select **fields** in the **Data** pane. Add the **StoreCount** and **TotalSalesTY** data fields. Each data field you add is displayed as its own card.
- 
-   :::image type="content" source="media/power-bi-visualization-new-card/add-data-data-pane.png" alt-text="Screenshot that shows the Data panel open with two data fields selected and afterwards added to the visual, creating two distinct cards." lightbox="media/power-bi-visualization-new-card/add-data-data-pane.png":::
+2. To add data to the visual, let’s use the **Data pane** in this example.Adding data can be done by selecting each field in the **Data pane**, or dragging the fields to the field wells on the **Visualizations pane**, or dragging the fields directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **StoreCount**, then expand the **TotalSalesTY** subgroup, and add **Value**. You'll notice that each data field you add is displayed as its own card. 
 
+    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png" alt-text="Screenshot with Data pane expanded and highlighted, Sales group is expanded, and both StoreCount and TotalSalesTV measures are highlighted and selected. Both measures are added to the Data field well in the Visualizations pane." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-2.png":::
 
+3. To customize your column chart, select the Format visual icon in the Visualizations pane, granting you access to all available settings. This allows you to tailor the chart's appearance and functionality to your specific requirements as shown in the example below.
 
-After completing this quick 3-step guide to build your (new) card visual, we've also provided a comprehensive list of all available [format settings](power-bi-visualization-card-visual-new-format-settings.md) and controls for you to use as reference. Also, review the Considerations and limitations for (new) card visuals.
+    :::image type="content" source="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png" alt-text="Screenshot with Visualizations pane highlighted and expanded, and the Format visual icon is selected and highlighted to display the Visual and General format tabs. The Visual tab is also selected to display the format controls." lightbox="media/power-bi-visualization-new-card/build-new-card-desktop-step-3.png":::
+
+Congratulations! You've successfully created a (new) card visual with Power BI Desptop.
+
+Next, now that you have completed this quick 3-step guide to build a (new) card visual, we've provided a comprehensive list of all available [Format settings](power-bi-visualization-card-visual-new-format-settings.md) and controls for you to use as reference. Also, take time to familiarize yourself with the [Considerations and limitations](power-bi-visualization-card-visual-considerations.md) for (new) card visuals.
 
 ## Related content
 
-- [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
-- [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [(new) Card visual considerations and limitations](power-bi-visualization-card-visual-considerations.md)
+* [(new) Card visual format settings](power-bi-visualization-card-visual-new-format-settings.md) 
+* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
