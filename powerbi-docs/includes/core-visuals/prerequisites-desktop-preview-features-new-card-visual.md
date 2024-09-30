@@ -1,6 +1,6 @@
 ---
-title: (new) card visual preview feature is enabled
-description: Prerequisite - (new) card visua feature is selected (Preview features)
+title: New card visual preview feature is enabled
+description: Prerequisite - (new) card visual feature is selected (Preview features)
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
