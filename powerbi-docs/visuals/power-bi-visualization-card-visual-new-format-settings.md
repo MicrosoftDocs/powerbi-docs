@@ -29,7 +29,7 @@ Whether you’re a seasoned Power BI user or new to data visualization, if you'r
 
 ## Prerequisites
 
-To format and customize your column chart in **Power BI Desktop**, simply select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your column chart in **Power BI Desktop**, select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/(new)-card-format-settings-desktop.png" alt-text="Power BI Desktop screenshot showing the Visualizations pane, Format visual icon, and both the Visual and General tabs highlighted.":::
 
@@ -53,7 +53,7 @@ With the ability to configure and display multiple cards in a single container, 
 
 #### Overflow
 
-The **Overflow** settings provide flexibility in displaying additional cards that don’t fit within the initial view. You can define settings to allow users to scroll continuously or flip through paginated cards, either vertically or horizontally, to view all the data within the visual.
+The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to scroll continuously or flip through paginated cards, either vertically or horizontally, to view all the data within the visual.
 
 [!INCLUDE [layout-overflow-overflow-style](../includes/core-visuals/layout-overflow-overflow-style.md)]
 [!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
@@ -67,7 +67,7 @@ The **Overflow** settings provide flexibility in displaying additional cards tha
 
 #### Values
 
-The visibility of **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown below.
+The visibility of **Values** can be toggled on or off to make them apparent or to hide them. When toggled on, you can access and adjust all the Values settings shown here.
 
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
@@ -138,7 +138,7 @@ The **Title** toggle, when enabled, controls the visibility of the Series title.
 
 #### Detail
 
-The **Detail** toggle, when enabled, provides users the option to add and format additional data to include more detailed information in the Reference label when desired. The individual availability of each setting is dependent on which options have been selected for both series and labels.
+The **Detail** toggle, when enabled, provides users the option to add and format more data to include detailed information in the Reference label when desired. The individual availability of each setting is dependent on which options have been selected for both series and labels.
 
 [!INCLUDE [reference-labels-detail-data](../includes/core-visuals/reference-labels-detail-data.md)]
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
@@ -234,7 +234,7 @@ The **Spacing** menu provides options to adjust the layout and appearance of ref
 
 #### Background
 
-The **Background** toggle, when enabled, provides additional options to customize the background of your cards.
+The **Background** toggle, when enabled, provides more options to customize the background of your cards.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
