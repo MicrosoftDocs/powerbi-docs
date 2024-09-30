@@ -20,7 +20,7 @@ LocalizationGroup: Visualizations
 
 This article provides a comprehensive and detailed exposition of all format settings available for the (new) Card visual in Power BI Desktop.
 
-Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, we’ll cover every setting for (new) Card visual formatting, to help you present your data in the most effective and visually appealing way possible.
+Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, we’ll cover every setting for (new) Card visual formatting.
 
 Whether you’re a seasoned Power BI user or new to data visualization, if you're looking to understand all the format options available for the (new) card visual, this guide has got you covered as you explore how to tailor the (new) card visual to perfectly fit your needs.
 
@@ -29,7 +29,7 @@ Whether you’re a seasoned Power BI user or new to data visualization, if you'r
 
 ## Prerequisites
 
-To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your column chart in **Power BI Desktop**, simply select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/(new)-card-format-settings-desktop.png" alt-text="Power BI Desktop screenshot showing the Visualizations pane, Format visual icon, and both the Visual and General tabs highlighted.":::
 
@@ -96,7 +96,7 @@ The **Label** toggle, when enabled, allows you to display labels for your callou
 
 #### Layout
 
-The **Layout** section is designed to enhance the presentation of your data visualizations by offering settings for vertical alignment and callout size as shown below.
+The **Layout** section is designed to enhance the presentation of your data visualizations by offering settings for vertical alignment and callout size as shown here.
 
 [!INCLUDE [global-vertical-alignment](../includes/core-visuals/global-vertical-alignment.md)]
 [!INCLUDE [callout-values-layout-callout-size](../includes/core-visuals/callout-values-layout-callout-size.md)]
@@ -118,7 +118,7 @@ The **Options** menu is available when **Apply settings to** is set for **All se
 
 #### Title
 
-The **Title** toggle, when enabled, controls the visibility of the Series title. When enabled, an array of settings become available as shown below allowing users to fully adjust the appearance of the Series title.
+The **Title** toggle, when enabled, controls the visibility of the Series title. When enabled, an array of settings becomes available, as shown, allowing users to fully adjust the appearance of the Series title.
 
 [!INCLUDE [data-labels-title-content](../includes/core-visuals/data-labels-title-content.md)]
 [!INCLUDE [reference-labels-title-text](../includes/core-visuals/reference-labels-title-text.md)]
@@ -152,7 +152,7 @@ The **Detail** toggle, when enabled, provides users the option to add and format
 
 #### Divider
 
-The **Divider** toggle, when enabled, displays a customizable visual division between the Callout values and the Reference label, and also makes the Background toggle available for additional customization options.
+The **Divider** toggle, when enabled, displays a customizable visual division between the Callout values and the Reference label, and also makes the Background toggle available for more customization options.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
@@ -175,7 +175,7 @@ The **Divider** toggle, when enabled, displays a customizable visual division be
 
 #### Spacing
 
-The **Spacing** menu provides options to adjust the layout and appearance of reference labels in a card visual. It allows you to customize the space between labels, divider line padding and outer padding. 
+The **Spacing** menu provides options to adjust the layout and appearance of reference labels in a card visual. It allows you to customize the space between labels, divider line padding, and outer padding. 
 
 [!INCLUDE [reference-labels-spacing-space-between-labels](../includes/core-visuals/reference-labels-spacing-space-between-labels.md)]
 [!INCLUDE [reference-labels-spacing-customize-outer-padding](../includes/core-visuals/reference-labels-spacing-customize-outer-padding.md)]
@@ -278,7 +278,7 @@ The **Glow** toggle, when enabled, enhances the visual appeal of your cards by
 
 #### Accent bar
 
-The **Accent bar** toggle, when enabled, is a simple yet effective way to draw attention to key metrics on your cards and providing additional visual cues to highlight important information, using these settings.
+The **Accent bar** toggle, when enabled, is a simple yet effective way to draw attention to key metrics on your cards and providing more visual cues to highlight important information, using these settings.
 
 [!INCLUDE [cards-accent-bar-position](../includes/core-visuals/cards-accent-bar-position.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
