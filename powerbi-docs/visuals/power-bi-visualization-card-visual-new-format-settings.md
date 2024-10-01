@@ -20,9 +20,9 @@ LocalizationGroup: Visualizations
 
 This article provides a comprehensive and detailed exposition of all format settings available for the (new) Card visual in Power BI Desktop.
 
-Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, we’ll cover every setting for (new) Card visual formatting, to help you present your data in the most effective and visually appealing way possible.
+Serving as a reference guide, we list the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, we cover every setting for (new) Card visual formatting, to help you present your data in the most effective and visually appealing way possible.
 
-Whether you’re a seasoned Power BI user or new to data visualization, if you're looking to understand all the format options available for the (new) card visual, this guide has got you covered as you explore how to tailor the (new) card visual to perfectly fit your needs.
+Whether you’re a seasoned Power BI user or new to data visualization, if you're looking to understand all the format options available for the (new) card visual, this guide has you covered as you explore how to tailor the (new) card visual to perfectly fit your needs.
 
 > [!IMPORTANT]
 > The (new) Card visual is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
@@ -81,7 +81,7 @@ The visibility of **Values** can be toggled on or off to make them apparent or t
 
 #### Label
 
-The **Label** toggle, when enabled, allows you to display labels for your callout values. You can customize the appearance of these labels in your visualizations, including options for changing the displayed text, label hierarchy, font, text size, color, and alignment of the labels, ensuring they precisely match the report.
+The **Label** toggle, when enabled, enables you to display labels for your callout values. You can customize the appearance of these labels in your visualizations, including options for changing the displayed text, label hierarchy, font, text size, color, and alignment of the labels, ensuring they precisely match the report.
 
 [!INCLUDE [callout-values-label-text](../includes/core-visuals/callout-values-label-text.md)]
 [!INCLUDE [callout-values-label-heading](../includes/core-visuals/callout-values-label-heading.md)]
@@ -96,7 +96,7 @@ The **Label** toggle, when enabled, allows you to display labels for your callou
 
 #### Layout
 
-The **Layout** section is designed to enhance the presentation of your data visualizations by offering settings for vertical alignment and callout size as shown below.
+The **Layout** section is designed to enhance the presentation of your data visualizations by offering settings for vertical alignment and callout size as shown here:.
 
 [!INCLUDE [global-vertical-alignment](../includes/core-visuals/global-vertical-alignment.md)]
 [!INCLUDE [callout-values-layout-callout-size](../includes/core-visuals/callout-values-layout-callout-size.md)]
