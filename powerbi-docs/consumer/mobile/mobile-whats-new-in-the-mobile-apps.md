@@ -29,6 +29,8 @@ To use an NFC tag with the Power BI mobile app, open the desired Power BI conten
 
 :::image type="content" source="./media/mobile-whats-new-in-the-mobile-apps/nfc-tags-whats-new.png" alt-text="Screenshot illustrating how to register and read NFC tags with a phone using the Power BI mobile app." border="false":::
 
+## June 2024
+
 ### Show visuals as tables (preview)
 
 The Power BI mobile apps now support showing report visuals as tables, just like you can do in the Power BI service. This feature enables you to instantly view all the visuals in a report (except slicers, cards, and non-data-driven visuals) as table visuals, and makes the underlying data accessible to users who rely on accessibility screen readers. It also benefits users who prefer to see their data in tabular form, which is more like viewing it in Excel.
