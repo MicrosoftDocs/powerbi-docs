@@ -9,7 +9,7 @@ ms.subservice: pbi-visuals
 ms.topic: how-to
 ms.date: 09/27/2024
 LocalizationGroup: Visualizations
-#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) card visual so that I can effectively and more easily format card visuals in Power BI Desktop.
+#customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
 
 # (new) Card visual format settings
@@ -22,7 +22,7 @@ This article provides a comprehensive and detailed exposition of all format sett
 
 Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements, callout values, and reference labels, to advanced card settings, and image controls, we’ll cover every setting for (new) Card visual formatting.
 
-Whether you’re a seasoned Power BI user or new to data visualization, if you're looking to understand all the format options available for the (new) card visual, this guide has got you covered as you explore how to tailor the (new) card visual to perfectly fit your needs.
+Whether you’re a seasoned Power BI user or new to data visualization, if you're looking to understand all the format options available for the (new) Card visual, this guide has got you covered as you explore how to tailor the (new) Card visual to perfectly fit your needs.
 
 > [!IMPORTANT]
 > The (new) Card visual is currently in preview and only available for Power BI Desktop. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
