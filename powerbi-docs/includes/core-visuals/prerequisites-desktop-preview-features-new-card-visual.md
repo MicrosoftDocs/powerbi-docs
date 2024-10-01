@@ -1,12 +1,12 @@
 ---
-title: New card visual preview feature is enabled
+title: (new) Card visual preview feature is enabled
 description: Prerequisite - (new) card visual feature is selected (Preview features)
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 09/27/2024
+ms.date: 10/01/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
