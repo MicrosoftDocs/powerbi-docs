@@ -65,8 +65,6 @@ To use the tool to set up your environment, go to the [Power BI embedded analyti
 
 1. Under **Step 1** in the setup tool, select **Sign in**. This step signs you in to Power BI. If you're prompted to pick an account, sign in with a user that belongs to your Power BI tenant. The Microsoft Entra app gets registered under this user.
 
-   :::image type="content" source="./media/register-app/step-one-sign-in.png" alt-text="Screenshot of the Power BI embedded analytics setup tool. Under Step 1, the Sign in button is highlighted.":::
-
    > [!NOTE]
    > If you're already signed in, verify that you're signed in with the user you want to use to create the Microsoft Entra app. To change users, select **sign out**. After the tool restarts, sign in with the correct user.
 
@@ -85,8 +83,6 @@ In this step, you register a Microsoft Entra application in Azure. The Microsoft
    * **Application Name** - Give your application a name.
 
    * **API access** - Select the Power BI APIs (also known as scopes) that your application needs. You can select **Select all** to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
-
-   :::image type="content" source="media/register-app/register-app.png" alt-text="Screenshot of the Power BI embedded analytics setup tool. The step for registering an app is visible, with an app name box and API access options.":::
 
 1. Select **Register**.
 
