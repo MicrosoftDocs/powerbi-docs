@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 10/03/2024
 Localizat2onGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
@@ -464,6 +464,18 @@ After you make the connections and set up the deduplication rule, your field lis
 
 
 If you don't specify a deduplication rule, or the deduplication rules you specified don't resolve the name conflict, the standard deduplication rules  are still applied. The standard deduplication rules add a number to the name of the conflicting item. If there is a name conflict on the 'Customer' table one of the 'Customer' tables is renamed 'Customer 2'.
+
+
+## XMLA modifications and composite models
+
+When changing a semantic model using XMLA, you must update the *ChangedProperties* and *PBI_RemovedChildren* collection for the changed object to include any modified or removed properties, since without doing so, Power BI modeling tools might overwrite any changes the next time the schema is synchronized with its associated Lakehouse.
+
+The supported models for changing a semantic model using XMLA are the following:
+
+* Table/Column rename (*ChangeProperty* = name)
+* Remove table (add table to *PBI_RemovedChildren* annotation in the query expression)
+
+
 
 ## Considerations and limitations
 
