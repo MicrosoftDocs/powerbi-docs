@@ -326,13 +326,13 @@
       href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
     - name: Card visuals
       items: 
-      - name: Create a new card visual
+      - name: Create a (new) card visual
         href: ../visuals/power-bi-visualization-new-card.md
-      - name: New card visual format settings
+      - name: (new) Card visual format settings
         href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
-      - name: New card visual considerations & limitations
+      - name: (new) Card visual considerations & limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
-    - name: Create new card visuals with big number tiles
+    - name: Create card visuals with big number tiles
       href: ../visuals/power-bi-visualization-card.md
     - name: Column charts
       items: 
@@ -399,6 +399,14 @@
       - name: Manage the Azure Maps visual in your organization
         href: /azure/azure-maps/power-bi-visual-manage-access?context=/power-bi/create-reports/context/context
     - name: Matrix visuals
+      items: 
+      - name: Create a matrix visual
+        href: ../visuals/power-bi-visualization-matrix-visual.md
+      - name: Matrix visual format settings
+        href: ../visuals/power-bi-visualization-matrix-visual-format-settings.md
+      - name: Matrix visual considerations and limitations
+        href: ../visuals/power-bi-visualization-matrix-visual-considerations.md
+    - name: Matrix visuals 
       href: ../visuals/desktop-matrix-visual.md
     - name: Power Apps visuals
       href: ../visuals/power-bi-visualization-powerapp.md
