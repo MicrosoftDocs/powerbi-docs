@@ -20,7 +20,7 @@ The matrix visual in Power BI is a powerful tool used to display and analyze dat
 
 The matrix visual's ability to aggregate data and support hierarchical structures makes it an essential tool for in-depth data analysis and reporting. Matrix visuals are frequently employed in business and finance to analyze performance metrics, such as sales by region or product category. Additionally, they're valuable in marketing for examining customer behavior, campaign effectiveness, and market segmentation.
 
-# Prerequisites
+## Prerequisites
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
