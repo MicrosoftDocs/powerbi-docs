@@ -45,6 +45,6 @@ Users might encounter situations where the total values in a matrix appear broke
 
 ## Related content
 
-[Create a matrix visual in Power BI](power-bi-visualization-matrix-visual.md)
-[Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
-[Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
+- [Create a matrix visual in Power BI](power-bi-visualization-matrix-visual.md)
+- [Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
+- [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

@@ -79,6 +79,6 @@ Great job! Congratulations on successfully creating a matrix visual with Power B
 
 ## Related content
 
-[Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
-[Matrix visual considerations and limitations](power-bi-visualization-matrix-visual-considerations.md)
-[Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
+- [Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)
+- [Matrix visual considerations and limitations](power-bi-visualization-matrix-visual-considerations.md)
+- [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)

@@ -245,6 +245,6 @@ The **Row subtotals** toggle allows you to control whether subtotals are display
 
 ## Related content
 
-[Create a matrix visual in Power BI](power-bi-visualization-matrix-visual.md)
-[Matrix visual considerations and limitations](power-bi-visualization-matrix-visual-considerations.md)
-[Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
+- [Create a matrix visual in Power BI](power-bi-visualization-matrix-visual.md)
+- [Matrix visual considerations and limitations](power-bi-visualization-matrix-visual-considerations.md)
+- [Troubleshoot visualizations in Power BI](power-bi-visualization-troubleshoot.md)
