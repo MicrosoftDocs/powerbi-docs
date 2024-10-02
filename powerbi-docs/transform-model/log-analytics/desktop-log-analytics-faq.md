@@ -29,21 +29,23 @@ Power BI is integrating with Azure Log Analytics (LA) to enable administrators a
 
 *Answer:*  For information on events and logs see [events and schema](desktop-log-analytics-configure.md#events-and-schema).  
 
-### I can't get Owner permissions for Azure Log Analytics in my organization, is there a workaround?  
+### I can't get Owner permissions for Azure Log Analytics in my organization. Is there a workaround?  
 
 *Answer:*  Yes, you need some help from administrators:  
+
 OPTION 1:  
 An Azure admin can grant you Owner rights in Log Analytics only to perform the initial configuration in Power BI. After you complete the initial configuration, they can reduce your access to Contributor or lower as required.  
+
 OPTION 2:  
 For workspace level configuration, you can add an Azure admin as a Power BI workspace admin and ask them to configure logging for your workspace. After logging is configured, you can remove their access to your workspace.
 
-### I can't get workspace Admin permissions for Power BI in my organization, is there a workaround?  
+### I can't get workspace Admin permissions for Power BI in my organization. Is there a workaround?  
 
 *Answer:*  Yes. Refer to option 2 in the previous question.  
 
 ### What happens if I send logs from many Power BI workspaces to the same Log Analytics workspace? How do I differentiate?  
 
-*Answer:*  Each log entry is marked with the correspondent Power BI Workspace ID.
+*Answer:*  Each log entry is marked with the corresponding Power BI Workspace ID.
 
 ### Can we configure Log Analytics for non-Premium workspaces?  
 
