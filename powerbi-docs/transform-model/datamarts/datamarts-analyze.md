@@ -166,7 +166,6 @@ Notice there are *relationships* and *relationshipColumns* named views under met
 | IsActive | Bit | A boolean value that indicates whether the relationship is marked as Active or Inactive.  |
 | RelyOnReferentialIntegrity | Bit | A boolean value that indicates whether the relationship can rely on referential integrity or not.  |
 | CrossFilteringBehavior | Tinyint | Indicates how relationships influence filtering of data. The possible values are:  1 – OneDirection 2 – BothDirections 3 – Automatic|
-
 | CreatedAt | Datetime | Date the relationship was created.  |
 | UpdatedAt | datetime | Date the relationship was modified.  |
 | DatamartObjectId | Navrchar(32) | Unique identifier for datamart |
