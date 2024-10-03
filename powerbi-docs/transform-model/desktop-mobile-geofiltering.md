@@ -27,7 +27,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 2. Select a column with geographic data, for example, a City column.
 
-    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png" alt-text="Screenshot of the Data Category dropdown list with City highlighted.":::
+    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png" alt-text="Screenshot of the Data Category dropdown list with City highlighted." lightbox="media/desktop-mobile-geofiltering/power-bi-desktop-geo-column.png":::
 
 3. On the **Column tools** tab, select **Data category**, then the correct category, in this example, **City**.
 
@@ -44,7 +44,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 1. Switch to the Report view, :::image type="icon" source="media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png"::: and create visuals that use the geographic fields in your data.
 
-    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png" alt-text="Screenshot of Report view showing a map and a clustered bar chart visual.":::
+    :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png" alt-text="Screenshot of Report view showing a map and a clustered bar chart visual." lightbox="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png":::
 
     In this example, the model also contains a calculated column that brings city and state together into one column. To learn more, see [creating calculated columns in Power BI Desktop](desktop-calculated-columns.md).
 

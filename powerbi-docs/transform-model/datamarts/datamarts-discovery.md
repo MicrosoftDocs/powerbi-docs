@@ -45,7 +45,7 @@ The following image shows the lineage of a datamart.
 
 To view any dependent items of the selected datamart, select the **Impact analysis** menu, which is displayed along the right side of the screen.
 
-:::image type="content" source="media/datamarts-discovery/datamarts-discovery-03.png" alt-text="Screenshot of datamart impact analysis pane.":::
+:::image type="content" source="media/datamarts-discovery/datamarts-discovery-03.png" alt-text="Screenshot of datamart impact analysis pane." lightbox="media/datamarts-discovery/datamarts-discovery-03.png":::
 
 ### Data hub in Power BI Desktop
 

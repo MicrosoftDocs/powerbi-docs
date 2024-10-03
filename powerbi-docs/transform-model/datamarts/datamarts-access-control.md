@@ -58,10 +58,10 @@ You can configure RLS for datamarts in the **Datamart editor**. The configured R
 To define RLS roles, take the following steps:
 
 1. Open your datamart and select **Manage Roles** from the ribbon.
-    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-02.png" alt-text="Screenshot of the manage roles ribbon button.":::
+    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-02.png" alt-text="Screenshot of the manage roles ribbon button." lightbox="media/datamarts-access-control/datamarts-access-control-02.png":::
 
 2. Create new RLS roles using the **Row security settings** window. You can define a combination of filters on tables and select **Save** to save the role.
-    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-03.png" alt-text="Screenshot of the row security settings window.":::
+    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-03.png" alt-text="Screenshot of the row security settings window." lightbox="media/datamarts-access-control/datamarts-access-control-03.png":::
 
 3. Once the role is saved, select **Assign** to add users to the role. Once assigned, select **Save** to save the role assignments and close the RLS settings modal.
     :::image type="content" source="media/datamarts-access-control/datamarts-access-control-04.png" alt-text="Screenshot of the row security settings selections.":::
@@ -69,13 +69,13 @@ To define RLS roles, take the following steps:
 To validate the roles created, take the following steps:
 
 1. Select the **View as** button from the ribbon.
-    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-05.png" alt-text="Screenshot of the view as ribbon button.":::
+    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-05.png" alt-text="Screenshot of the view as ribbon button." lightbox="media/datamarts-access-control/datamarts-access-control-05.png":::
 
 2. Select the role to be validated by selecting the check box for the role, then select **OK**.
     :::image type="content" source="media/datamarts-access-control/datamarts-access-control-06.png" alt-text="Screenshot of the manage view as role window.":::
 
 3. The data view shows the access that the selected role has.
-    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-07.png" alt-text="Screenshot of the view as results":::
+    :::image type="content" source="media/datamarts-access-control/datamarts-access-control-07.png" alt-text="Screenshot of the view as results" lightbox="media/datamarts-access-control/datamarts-access-control-07.png":::
 
 To revert to your access, select the **View as** button on the ribbon again, and select **None**.
 
