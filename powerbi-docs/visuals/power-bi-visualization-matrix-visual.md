@@ -42,37 +42,37 @@ The matrix visual's ability to aggregate data and support hierarchical structure
 
 Before we begin, review the **[Prerequisites](#prerequisites)** section at the beginning of this article, and follow the steps under the tab for **Power BI Desktop**.
 
-In this quick and easy 3-step guide, let’s create a matrix visual starting from the **Visualizations** pane in **Power BI Desktop**.
+In this quick and easy three-step guide, let’s create a matrix visual starting from the **Visualizations** pane in **Power BI Desktop**.
 
 1. From the **Visualizations** pane, first select the **Build visual** icon, then select the **Matrix** visual icon, and a visual *placeholder* is immediately added to the report canvas.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-1.png" alt-text="Image of Power BI service with the Visualizations pane highlighted. Both the Build visual icon and Matrix icon are selected and highlighted, and a visual placeholder displayed on canvas." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-1.png":::
+    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-1.png" alt-text="Screenshot of Power BI desktop with Visualizations pane highlighted, showing selected Build visual and Matrix icons, and a visual placeholder on the canvas." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-1.png":::
 
 2. To add data to the visual in this example, let’s use the **Data** pane. Adding data can be done by selecting fields and measures, or dragging fields and measures to the field wells on the **Visualizations** pane, or dragging fields and measures directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **TotalSales** and then **TotalSalesLY** to the **Values** field well. Expand the **Item** subgroup, to add **Category** to the **Columns** field well. And finally, expand the **Store** subgroup to add **Territory** and then **City** to the **Rows** field well.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-2.png" alt-text="Image of Power BI Desktop with the Data pane highlighted. TotalSales and TotalSalesLY measures are highlighted and added to the highlighted Values field well. Category is highlighted and added to the highlighted Columns field well. Both Territory and City are also highlighted and added to the highlighted Rows field well." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-2.png":::
+    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-2.png" alt-text="Screenshot of Power BI Desktop with Data pane highlighted. TotalSales, TotalSalesLY in Values, Category in Columns, and Territory, City in Rows are highlighted." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-2.png":::
 
 3. To customize your matrix visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings, allowing you to tailor the matrix visual's appearance and functionality to your specific requirements.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-3.png" alt-text="Image of Power BI Desktop with the Visualizations pane highlighted. The Format visual icon is selected and highlighted along with both the Visual tab and the General tab both highlighted. The Visual tab is selected to display the available format settings for y our Matrix visual." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-3.png":::
+    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-3.png" alt-text="Screenshot of Power BI Desktop with Visualizations pane highlighted. Format visual icon, Visual tab, and General tab are selected and highlighted, showing Matrix visual format settings." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-desktop-step-3.png":::
 
 # [Power BI service](#tab/powerbi-service)
 
 Before we begin, review the **[Prerequisites](#prerequisites)** section at the beginning of this article, and follow the steps under the tab for the **Power BI service**.
 
-In this quick and easy 3-step guide, let’s create a matrix visual starting from the **Visualizations** pane in the **Power BI service**.
+In this quick and easy three-step guide, let’s create a matrix visual starting from the **Visualizations** pane in the **Power BI service**.
 
 1. From the **Visualizations** pane, first select the **Build visual** icon, then select the **Matrix** visual icon, and a visual *placeholder* is immediately added to the report canvas.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-1.png" alt-text="Image of Power BI service with the Visualizations pane highlighted. Both the Build visual icon and Matrix icon are selected and highlighted, and a visual placeholder displayed on canvas." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-1.png":::
+    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-1.png" alt-text="Screenshot of Power BI service with Visualizations pane highlighted, showing selected Build visual and Matrix icons, and a visual placeholder on the canvas." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-1.png":::
 
 2. To add data to the visual in this example, let’s use the **Data** pane. Adding data can be done by selecting fields and measures, or dragging fields and measures to the field wells on the **Visualizations** pane, or dragging fields and measures directly to the visual placeholder in the report canvas. Expand the **Sales** group, to add **TotalSales** and then **TotalSalesLY** to the **Values** field well. Expand the **Item** subgroup, to add **Category** to the **Columns** field well. And finally, expand the **Store** subgroup to add **Territory** and then **City** to the **Rows** field well.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-2.png" alt-text="Image of Power BI Desktop with the Data pane highlighted. TotalSales and TotalSalesLY measures are highlighted and added to the highlighted Values field well. Category is highlighted and added to the highlighted Columns field well. Both Territory and City are also highlighted and added to the highlighted Rows field well." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-2.png":::
+    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-2.png" alt-text="Screenshot of Power BI service with Data pane highlighted. TotalSales, TotalSalesLY in Values, Category in Columns, and Territory, City in Rows are highlighted." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-2.png":::
 
 3. To customize your matrix visual, select the **Format visual** icon in the **Visualizations** pane, granting you access to all available settings, allowing you to tailor the matrix visual's appearance and functionality to your specific requirements.
 
-    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-3.png" alt-text="Image of Power BI Desktop with the Visualizations pane highlighted. The Format visual icon is selected and highlighted along with both the Visual tab and the General tab both highlighted. The Visual tab is selected to display the available format settings for y our Matrix visual." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-3.png":::
+    :::image type="content" source="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-3.png" alt-text="Screenshot of Power BI service with Visualizations pane highlighted. Format visual icon, Visual tab, and General tab are selected and highlighted, showing Matrix visual format settings." lightbox="media/power-bi-visualization-matrix-visual/build-matrix-visual-service-step-3.png":::
 
 ---
 Great job! Congratulations on successfully creating a matrix visual with Power BI. Next, take time to familiarize yourself with the comprehensive list of **[Matrix visual format settings](power-bi-visualization-matrix-visual-format-settings.md)** and other related articles in the **[Related content](#related-content)** section.

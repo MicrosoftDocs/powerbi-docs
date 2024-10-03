@@ -406,7 +406,7 @@
         href: ../visuals/power-bi-visualization-matrix-visual-format-settings.md
       - name: Matrix visual considerations and limitations
         href: ../visuals/power-bi-visualization-matrix-visual-considerations.md
-    - name: Matrix visuals 
+    - name: Matrix visuals in Power BI Desktop     
       href: ../visuals/desktop-matrix-visual.md
     - name: Power Apps visuals
       href: ../visuals/power-bi-visualization-powerapp.md

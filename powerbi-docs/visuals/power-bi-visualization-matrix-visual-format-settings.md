@@ -28,13 +28,13 @@ Whether you’re a seasoned Power BI user or new to data visualization, this doc
 
 To format and customize your matrix visual in **Power BI Desktop**, select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both the appearance and functionality of your matrix visuals.
 
-   :::image type="content" source="../visuals/media/power-bi-visualization-matrix-visual/matrix-visual-format-settings-desktop.png" alt-text="Screenshot of Power BI Desktop with a formatted matrix visual displayed on the report canvas. The Visualizations pane is highlighted, along with the Format visual icon, and both the Visual and General tabs are also highlighted.":::
+   :::image type="content" source="../visuals/media/power-bi-visualization-matrix-visual/matrix-visual-format-settings-desktop.png" alt-text="Screenshot of Power BI Desktop showing a formatted matrix visual on the report canvas, with the Visualizations pane, Format visual icon, and Visual and General tabs highlighted." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-format-settings-desktop.png":::
 
 # [Power BI Service](#tab/powerbi-service)
 
 To format and customize your matrix visual in the **Power BI service**, select the **Format visual** icon in the **Visualizations Pane** This grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both the appearance and functionality of your matrix visuals.
 
-   :::image type="content" source="../visuals/media/power-bi-visualization-matrix-visual/matrix-visual-format-settings-service.png" alt-text="Screenshot of the Power BI service with a formatted matrix visual displayed on the report canvas. The Visualizations pane is highlighted, along with the Format visual icon, and both the Visual and General tabs are also highlighted.":::
+   :::image type="content" source="../visuals/media/power-bi-visualization-matrix-visual/matrix-visual-format-settings-service.png" alt-text="Screenshot of Power BI Desktop showing a formatted matrix visual on the report canvas, with the Visualizations pane, Format visual icon, and Visual and General tabs highlighted." lightbox="media/power-bi-visualization-matrix-visual/matrix-visual-format-settings-service.png":::
 
 ---
 > [!NOTE]
@@ -59,7 +59,7 @@ The **Horizontal gridlines** toggle, when enabled, allows you to add lines horiz
 
 #### Vertical gridlines
 
-The **Horizontal gridlines** toggle, when enabled, allows you to add lines vertically across the chart to improve readability and to visually separate data points, while allowing you to also adjust line color and width.
+The **Vertical gridlines** toggle, when enabled, allows you to add lines vertically across the chart to improve readability and to visually separate data points, while allowing you to also adjust line color and width.
 
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [grid-horizontal-&-vertical-gridlines-width](../includes/core-visuals/grid-horizontal-&-vertical-gridlines-width.md)]
