@@ -22,4 +22,4 @@ The Style setting allows you to choose from a set of predefined styles with uniq
 - **Flashy rows**
 - **Bold header flashy rows**
 - **Sparse**
-- **Condensed****
+- **Condensed**
