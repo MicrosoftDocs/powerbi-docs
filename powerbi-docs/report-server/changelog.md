@@ -32,7 +32,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
     - Fixed issue with ribbon charts in Power BI Reports
 
 ### Power BI Desktop (optimized for Power BI Report Server)
-- *Version: 2.129.2203.0 (September 2024), Released: September 26, 2024*
+- *Version: 2.136.1202.0 (September 2024), Released: September 26, 2024*
      - Support for September 2024 Power BI Report Server.
 
 ## May 2024
