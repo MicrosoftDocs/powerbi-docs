@@ -85,7 +85,7 @@ Everything listed in this document is based on rendering a PDF document with the
 |    7.21.4 Embedding    |                 Supported    |         |
 |    7.21.4.1 General    |                 Supported    |         |
 |    7.21.4.2 Subset embedding    |                 Supported    |         |
-|    7.21.5 Font metrics    |                 Supported    |         |
+|    7.21.5 Font goals    |                 Supported    |         |
 |    7.21.6 Character encodings    |                 Supported    |         |
 |    7.21.7 Unicode character maps    |                 Supported    |         |
 |    7.21.8 Use of .notdef glyph    |                 Supported    |         |
