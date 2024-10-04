@@ -16,7 +16,9 @@ ms.collection: ce-skilling-ai-copilot
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-Use Copilot in Power BI to set, clear, and delete filters. Given a Power BI report populated with visuals, now with Power BI Copilot you can interact with your filters and slicers on the report. With a Power BI report populated with visuals, you can now interact with your filters and slicers using Power BI Copilot. New users often find it unfamiliar to interact with filters on the filter pane or slicers. At the same time, they find it useful to ask Copilot for help in managing the existing filters in the report. You can now apply, remove, append, and clear filters by creating a prompt in the Copilot chat pane. 
+You can use Copilot in Power BI to set, clear, and delete filters. Given a Power BI report populated with visuals, now with Power BI Copilot you can interact with your filters and slicers on the report. With a Power BI report populated with visuals, you can now interact with your filters and slicers using Power BI Copilot. New users often find it unfamiliar to interact with filters on the filter pane or slicers. At the same time, they find it useful to ask Copilot for help with managing the existing filters in the report. You can now apply, remove, append, and clear filters by creating a prompt in the Copilot chat pane. 
+
+copilot-clear-filters.png
 
 Copilot is turned on by default in Fabric. Administrators can turn off Copilot in the Fabric admin portal if your organization isn't ready to use it. For details on turning Copilot on and off, see [Enable Fabric Copilot for Power BI](/fabric/get-started/copilot-enable-fabric).
 
@@ -25,14 +27,14 @@ Copilot is turned on by default in Fabric. Administrators can turn off Copilot i
 > - Your administrator needs to enable Copilot in Microsoft Fabric.
 > - Your F64 of P1 capacity needs to be in one of the regions listed in this article, Fabric regions availability. If it isn't, you can't use Copilot.
 You administrator needs to enable the tenant switch before you start using Copilot. See the article Copilot tenant settings for details.
-> - If your tenant or capacity is outside the US or France, Copilot is disabled by default unelss your Fabric tenant admin enables the Data sent to Azure Open AI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance tenant setting in the Fabric Admin portal.
-> - Copilot in Microsoft Fabric is't supported on trial SKUs. Only paid SKUs (F76 or higher, or P1 or higher) are supported.
+> - If your tenant or capacity is outside the US or France, Copilot is disabled by default unless your Fabric tenant admin enables the Data sent to Azure Open AI can be processed outside your tenant's geographic region, compliance boundary, or national cloud instance tenant setting in the Fabric Admin portal.
+> - Copilot in Microsoft Fabric isn't supported on trial SKUs. Only paid SKUs (F76 or higher, or P1 or higher) are supported.
 
-## Get started with standard filter prompts 
+## Get started with standard filter prompts
 
-To get started, select the **Copilot** button in the ribbon in the Power BI service. In the service, the button is available in both edit mode and view mode. 
+To get started, select the **Copilot** button in the ribbon in the Power BI service. In the service, the button is available in both edit mode and view mode.
 
-A screenshot of a computer
+copilot-filters-copilot-icon.png A screenshot of a computer
 
 Once the copilot pane is open, make sure that there are existing slicers and filters on the report. For now, Copilot is only able to interact with existing filters on the report. It can't create new filters.  
 
@@ -78,6 +80,7 @@ These filter types are supported:
 
 You can ask Power BI Copilot to apply an existing filter or slicer for the report. Once you complete the prompt, the filter or slicer is updated on the report accordingly.
 
+copilot-apply-filter-customer-type.png
 
 ## Remove a filter  
 
@@ -85,9 +88,11 @@ You can ask also Power BI Copilot to remove filters that are already applied.
 
 If you have filters that are already applied on the report and you want to add other filters on top of that you can do it, by appending the extra filter and referring that to the Copilot.
 
+copilot-remove-filters-status.png
+
 ## Clear filters 
 
-Power BI Copilot can help you to remove filters the same way that the current clear capability help you to clear all the filters in a filter card or the slicer.  
+Power BI Copilot can help you to remove filters the same way that the current clear capability helps you to clear all the filters in a filter card or slicer.  
 
 ## Interact with multiple filters at the same time 
 
