@@ -58,13 +58,13 @@ With the built-in samples, Power BI gets a copy of that built-in sample and stor
 
 1. Power BI creates the new dashboard, report, and semantic model in your workspace.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-entry.png" alt-text="Screenshot showing the Retail Analysis Sample entry in your workspace." lightbox="media/sample-tutorial-connect-to-the-samples/retail-entry.png":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/retail-entry.png" alt-text="Screenshot showing the Retail Analysis Sample entry in your workspace." lightbox="media/sample-tutorial-connect-to-the-samples/retail-entry.png"::: ?
 
 1. On the **Content** tab, you see the dashboard and the report, both named *Retail Analysis Sample*.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png" alt-text="Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png" alt-text="Screenshot showing the Retail Analysis Sample Content tab with dashboard and report entries." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png"::: ?
 
-1. On the **Semantic models + dataflows** tab, you see the semantic model, also named *Retail Analysis Sample*.
+1. On the **Semantic models + dataflows** tab, you see the semantic model, also named *Retail Analysis Sample*. ?
 
    :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot showing the Retail Analysis Sample Semantic models + dataflows tab with the semantic model entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
 
