@@ -93,8 +93,8 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](/fabric/enterprise/throttling#track-overages-and-rejected-operations).
 
-    >[!NOTE]
-    >To learn more about Capacity Units (CU), SKU and Power BI v-cores, refer to [Capacity](/fabric/enterprise/licenses#capacity).
+    > [!NOTE]
+    > To learn more about Capacity Units (CU), SKU and Power BI v-cores, refer to [Capacity](/fabric/enterprise/licenses#capacity).
 
 $ \text {max concurrent report renders} = {\text {capacity units for your capacity} \times {30} \over \text {your report's CPU processing time (in seconds)} \times {8}} $
 
