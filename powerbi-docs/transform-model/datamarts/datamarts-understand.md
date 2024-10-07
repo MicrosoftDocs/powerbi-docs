@@ -6,9 +6,10 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
-ms.topic: how-to
-ms.date: 11/10/2023
+ms.topic: concept-topic
+ms.date: 10/07/2024
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn about best practices and concepts for datamarts in Power BI.
 ---
 
 # Understand datamarts
@@ -17,14 +18,14 @@ This article describes and explains important concepts about datamarts.
 
 ## Understand semantic model (default)
 
-Datamarts provide a semantic layer that is automatically generated and synchronized with the contents of the datamart tables, their structure, and underlying data. This layer is provided in an automatically generated semantic model. This automatic generation and synchronization enables you to further describe the domain of data with things like hierarchies, friendly names and descriptions. You can also set formatting specific to your locale or business requirements. With datamarts, you can create measures and standardized metrics for reporting. Power BI (and other client tools) can create visuals and provide results for such calculations based on the data in context.
+Datamarts provide a semantic layer that is automatically generated and synchronized with the contents of the datamart tables, their structure, and underlying data. This layer is provided in an automatically generated semantic model. This automatic generation and synchronization enables you to further describe the domain of data with things like hierarchies, friendly names, and descriptions. You can also set formatting specific to your locale or business requirements. With datamarts, you can create measures and standardized metrics for reporting. Power BI (and other client tools) can create visuals and provide results for such calculations based on the data in context.
 
-The **default** Power BI semantic model created from a datamart eliminates the need to connect to a separate semantic model, set up refresh schedules, and manage multiple data elements. Instead, you can build your business logic in a datamart and its data will be immediately available in Power BI, enabling the following:
+The **default** Power BI semantic model created from a datamart eliminates the need to connect to a separate semantic model, set up refresh schedules, and manage multiple data elements. Instead, you can build your business logic in a datamart and its data is immediately available in Power BI, enabling the following:
 
 * Datamart data access through the Semantic model Hub.
 * Capability to analyze in Excel.
 * Capability to quickly create reports in the Power BI service.
-* No need to refresh, synchronize data or understand connection details.
+* No need to refresh, synchronize data, or understand connection details.
 * Build solutions on the web without needing Power BI Desktop.
 
 During preview, default semantic model connectivity is available using [DirectQuery](../../connect-data/desktop-directquery-about.md) only. The following image shows how datamarts fit into the process continuum starting with connecting to data, all the way through creating reports.
@@ -33,8 +34,8 @@ During preview, default semantic model connectivity is available using [DirectQu
 
 Default semantic models are different from traditional Power BI semantic models in the following ways:
 
-* The XMLA endpoint supports read-only operations and users can't edit the semantic model directly. With XMLA read-only permission you can query the data in a query window. 
-* The default semantic models don't have data source settings and users don't need to enter credentials. Rather, they use automatic single sign-on (SSO) for queries. 
+* The XMLA endpoint supports read-only operations and users can't edit the semantic model directly. With XMLA read-only permission you can query the data in a query window.
+* The default semantic models don't have data source settings and users don't need to enter credentials. Rather, they use automatic single sign-on (SSO) for queries.
 * For refresh operations, semantic models use the semantic model author credentials to connect to the managed datamart’s SQL endpoint.
 
 With Power BI Desktop users can build composite models, enabling you to connect to the datamart’s semantic model and do the following:
@@ -46,19 +47,19 @@ Finally, if you don't want to use the default semantic model directly, you can c
 
 ### Understand what's in the default semantic model
 
-Currently, tables in the datamart are automatically added to the default semantic model. Users can also manually select tables 
-or views from the datamart they want included in the model for more flexibility. Objects that are in the default semantic model 
-will be created as a layout in the model view.
+Currently, tables in the datamart are automatically added to the default semantic model. Users can also manually select tables
+or views from the datamart they want included in the model for more flexibility. Objects that are in the default semantic model
+are created as a layout in the model view.
 
-The background sync that includes objects (tables and views) will wait for the downstream semantic model to not be in use to 
-update the semantic model, honoring bounded staleness. Users can always go and manually pick tables they want or not want in 
-the semantic model. 
+The background sync that includes objects (tables and views) waits for the downstream semantic model to not be in use to
+update the semantic model, honoring bounded staleness. Users can always go and manually pick tables they want or not want in
+the semantic model.
 
 ## Understand incremental refresh and datamarts
 
 You can create and modify incremental data refresh, similar to dataflows and semantic model incremental refresh, using the datamart editor. Incremental refresh extends scheduled refresh operations by providing automated partition creation and management for datamart tables that frequently load new and updated data.
 
-For most datamarts, incremental refresh will involve one or more tables that contain transaction data that changes often and can grow exponentially, such as a fact table in a relational or star database schema. If you use an incremental refresh policy to partition the table, and refresh only the most recent import partitions, you can significantly reduce the amount of data that must be refreshed.
+For most datamarts, incremental refresh involves one or more tables that contain transaction data that changes often and can grow exponentially, such as a fact table in a relational or star database schema. If you use an incremental refresh policy to partition the table, and refresh only the most recent import partitions, you can significantly reduce the amount of data that must be refreshed.
 
 Incremental refresh and real-time data for datamarts offers the following advantages:
 
@@ -94,7 +95,7 @@ Use *Deployment Pipelines* for changes to ensure the best performance, and to en
 ### Considerations and limitations for proactive caching
 
 * Power BI currently caps the duration of caching operations to 10 minutes.
-* Constraints of uniqueness/non-null for particular columns will be enforced in the Import model and will fail the cache building if the data doesn't conform.
+* Constraints of uniqueness/non-null for particular columns will be enforced in the Import model and cache building fails if the data doesn't conform.
 
 ## Related content
 
@@ -113,5 +114,3 @@ For more information about dataflows and transforming data, see the following ar
 
 * [Introduction to dataflows and self-service data prep](../dataflows/dataflows-introduction-self-service.md)
 * [Tutorial: Shape and combine data in Power BI Desktop](../../connect-data/desktop-shape-and-combine-data.md)
-
-

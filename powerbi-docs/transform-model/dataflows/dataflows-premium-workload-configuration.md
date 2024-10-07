@@ -1,15 +1,16 @@
 ---
 title: Configure Power BI Premium dataflow workloads
-description: How to configure Power BI Premium for dataflow workloads
+description: Learn how to configure Power BI Premium for dataflow workloads, including enabling dataflows, refining settings, and optimizing performance.
 author: luitwieler
 ms.author: jeluitwi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 03/27/2022
+ms.date: 10/07/2024
 ms.custom: references_regions
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn how to configure dataflow workloads in Power BI Premium.
 ---
 # Configure Power BI Premium dataflow workloads
 
@@ -37,7 +38,7 @@ Once dataflows are enabled, you can use the **Admin portal** to change, or refin
 
     ![Change the size of a capacity](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-03.png)
 
-#### Premium capacity SKUs - scale up the hardware
+### Premium capacity SKUs - scale up the hardware
 
 Power BI Premium workloads use v-cores to serve fast queries across the various workload types. [Capacities and SKUs](../../enterprise/service-premium-what-is.md#capacities-and-skus) includes a chart that illustrates the current specifications across each of the available workload offerings. Capacities of A3 and greater can take advantage of the compute engine, so when you want to use the enhanced compute engine, start there.
 
@@ -86,8 +87,8 @@ Take the following steps when investigating scenarios where the Compute engine i
 
 3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they do not all refresh at the same time.
 
-
 ## Related content
+
 The following articles provide more information about dataflows and Power BI:
 
 * [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
