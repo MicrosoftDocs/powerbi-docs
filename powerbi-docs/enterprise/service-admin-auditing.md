@@ -20,7 +20,7 @@ You can track Microsoft Fabric user activities, including Power BI operations, u
 
 ## Prerequisites
 
-* You have to be a global administrator or a Power BI administrator
+* You have to be a Fabric administrator.
 
 * Install the [Power BI Management cmdlets](https://www.powershellgallery.com/packages/MicrosoftPowerBIMgmt) locally, or use the Power BI Management cmdlets in Azure Cloud Shell.
 

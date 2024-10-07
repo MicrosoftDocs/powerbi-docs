@@ -84,15 +84,15 @@ You can download and set up an attendee kit, which consists of the presentation 
 > [!IMPORTANT]
 > When you download and extract the course content, you must update the database connection string. Open the **MyEnvironment** folder and modify the content of the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net
 
-1. Use [this link](https://aka.ms/priad-en) to download the _English_ language attendee kit (.zip) locally to your PC (Windows 8, or later). Alternatively, use [this link](https://aka.ms/priad-student) to download the _localized_ attendee kit (.zip) locally to your PC (Windows 8, or later).
+1. Use [this link](https://github.com/nirusrin/Reporting-Services/tree/master/priad/AttendeeKit) to download the attendee kit locally to your PC (Windows 8, or later). 
 1. Open the file properties of the zip file, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Create a root course folder. We recommend you name it something like "C:\Training". Remember this location, because you'll need to access the course files during the labs. All lab documents refer to this location as **&lt;CourseFolder&gt;**.
-1. Extract the **PowerBIPRIAD-Attendee.zip** file contents to your root course folder.
-1. In the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A** folder, open the PDF lab document and follow the lab instructions.
-1. Open the **&lt;CourseFolder&gt;\PowerBIPRIAD\MyEnvironment** folder, and then open the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net - then save the file.
+1. Copy the **AttendeeKit** folder contents to your root course folder.
+1. In the **&lt;CourseFolder&gt;\AttendeeKit\Lab01A** folder, open the PDF lab document and follow the lab instructions.
+1. Open the **&lt;CourseFolder&gt;\Attendee\MyEnvironment** folder, and then open the **MyEnvironment.txt** file. Change the server name to: **labresources**.database.windows.net - then save the file.
 
 > [!NOTE]
-> In the localized attendee kit, you will find documents for the following eight languages:
+> In the localized Instructor kit, you will find documents for the following eight languages:
 > - German (de-DE)
 > - Spanish (es-ES)
 > - French (fr-FR)
@@ -109,7 +109,7 @@ You can download and set up an attendee kit, which consists of the presentation 
 
 ## Instructor kit
 
-Use [this link](https://aka.ms/priad-instructor) to download the instructor kit (.zip) locally to your PC.
+Use [this link](https://github.com/nirusrin/Reporting-Services/tree/master/priad/InstructorKit) to download the instructor kit locally to your PC.
 
 ## Related content
 

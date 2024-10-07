@@ -10,6 +10,6 @@ ms.date: 07/03/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-###### Minimum category width
+##### Minimum category width
 
 This setting can be specified within a range of 20px to 180px

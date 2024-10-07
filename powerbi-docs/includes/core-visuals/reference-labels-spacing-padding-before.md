@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Padding before divider line
+##### Padding before divider line
 
 This setting is accessible when the **Customize outer padding** toggle has been enabled, allowing for a padding range of 0-20 pixels before the divider line.

@@ -8,7 +8,7 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: tutorial
-ms.date: 02/07/2024
+ms.date: 08/25/2024
 ms.custom: mode-portal, intro-quickstart
 LocalizationGroup: Get started
 #Customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently.
@@ -113,7 +113,7 @@ See your full list of favorites, recent, and shared content by selecting **Brows
 
 :::image type="content" source="./media/end-user-experience/power-bi-browse.png" alt-text="Screenshot of the Browse page on the navigation pane.":::
 
-For more information, see [Recent content](end-user-recent.md), [Favorite dashboards, reports, and apps](end-user-favorite.md), and [Dashboards and reports that are shared with me](../collaborate-share/end-user-shared-with-me.md).
+*Recent* content is the last reports, dashboards, apps, and other Power BI content that you've visited. For more information about tagging content as a *favorite*, see [Favorites](end-user-favorite.md) and for more information about how content is shared by colleagues, see [Shared with me](../collaborate-share/end-user-shared-with-me.md).
 
 ## Open Apps
 

@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 09/25/2024
 LocalizationGroup: Connect to services
 ---
 # Connect to Snowflake in the Power BI service
@@ -24,9 +24,9 @@ To configure Microsoft Entra integration and optionally enable SSO:
 
 ### Admin portal
 
-To enable SSO, a global admin has to turn on the setting in the Power BI Admin portal. This setting approves sending Microsoft Entra authentication tokens to Snowflake from within the Power BI service. This setting is set at an organizational level. Follow these steps to enable SSO:
+To enable SSO, a Fabric administrator has to turn on the setting in the Power BI Admin portal. This setting approves sending Microsoft Entra authentication tokens to Snowflake from within the Power BI service. This setting is set at an organizational level. Follow these steps to enable SSO:
 
-1. [Sign in to Power BI](https://app.powerbi.com) using global admin credentials.
+1. [Sign in to Power BI](https://app.powerbi.com) using Fabric administrator credentials.
 1. Select **Settings** from the page header menu, then select **Admin portal**.
 1. Select **Tenant settings**, then scroll to locate **Integration settings**.
 

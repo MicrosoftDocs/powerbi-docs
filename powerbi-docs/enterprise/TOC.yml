@@ -20,8 +20,6 @@
       href: service-encryption-byok.md
     - name: Using Microsoft Entra B2B
       href: service-admin-azure-ad-b2b.md
-    - name: Use customer managed keys
-      href: service-encryption-customer-managed-keys.md
     - name: High availability and failover FAQ
       href: service-admin-failover.yml
     - name: Migrate from Azure Analysis Services
@@ -117,11 +115,11 @@
       expanded: false
       items:              
       - name: Overview of DLP policies for Power BI
-        href: service-security-dlp-policies-for-power-bi-overview.md
+        href: /fabric/governance/data-loss-prevention-overview
       - name: Configure a DLP policy for Power BI
-        href: service-security-dlp-policies-for-power-bi-configure.md
+        href: /fabric/governance/data-loss-prevention-configure
       - name: Respond to a DLP policy violation
-        href: service-security-dlp-policies-for-power-bi-respond.md
+        href: /fabric/governance/data-loss-prevention-respond
   - name: Security
     expanded: false
     items:

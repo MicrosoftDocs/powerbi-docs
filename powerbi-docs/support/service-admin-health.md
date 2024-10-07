@@ -7,17 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 12/12/2022
+ms.date: 09/25/2024
 LocalizationGroup: Administration
 ---
 
 # Track Power BI service health in Microsoft 365
 
-The Microsoft 365 admin center provides important tools for Power BI admins. The tools include current and historical information about service health. To access service health information, you must be in one of the following roles:
-
-* Fabric administrator
-
-* Global administrator
+The Microsoft 365 admin center provides important tools for Power BI admins. The tools include current and historical information about service health. To access service health information, you must have the Fabric administrator role.
 
 For more information about roles, see [Administrator roles related to Power BI](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 

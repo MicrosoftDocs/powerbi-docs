@@ -10,6 +10,6 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Vertical alignment
+##### Vertical alignment
 
 This setting controls the vertical alignment, allowing you to choose between top, middle, or bottom.

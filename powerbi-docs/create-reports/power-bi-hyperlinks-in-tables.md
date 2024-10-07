@@ -23,7 +23,6 @@ There is more than one way to add and format hyperlinks in visuals. For an alter
 
 You can also create hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) in the Power BI service and Power BI Desktop. And in the Power BI service, you can add hyperlinks to [tiles on dashboards](service-dashboard-edit-tile.md) and to [text boxes on dashboards](service-dashboard-add-widget.md). 
 
-
 ## Format a URL as a hyperlink in Power BI Desktop
 
 You can format a field with URLs as hyperlinks in Power BI Desktop, but not in the Power BI service. You can also [format hyperlinks in Excel Power Pivot](#create-a-table-or-matrix-hyperlink-in-excel-power-pivot) before you import the workbook into Power BI.

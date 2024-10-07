@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Format code
+##### Format code
 
 Allows you to select one of seven possible date formats.

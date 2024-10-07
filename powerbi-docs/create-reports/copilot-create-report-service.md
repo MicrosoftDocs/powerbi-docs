@@ -7,7 +7,7 @@ ms.reviewer: guptamaya
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 06/04/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -20,7 +20,7 @@ ms.collection: ce-skilling-ai-copilot
 
 When you use Copilot for Power BI, you can quickly create report pages with just a few clicks. Copilot can save you hours of effort building your report pages. You can also [create reports with Copilot in Power BI Desktop](copilot-create-desktop-report.md).
 
-:::image type="content" source="media/copilot-create-report/copilot-create-internet-sales-trends.png" alt-text="Screenshot showing Copilot creating internet sales trend report page." lightbox="media/copilot-create-report/copilot-create-internet-sales-trends.png":::
+:::image type="content" source="media/copilot-create-report/copilot-create-sales-performance.png" alt-text="Screenshot showing Copilot creating sales performance analysis." lightbox="media/copilot-create-report/copilot-create-sales-performance.png":::
 
 ## Before you start
 
@@ -80,7 +80,7 @@ To see the **Copilot** button in your report, you first need to select a semanti
 
     Copilot creates that page. 
 
-    :::image type="content" source="media/copilot-create-report/copilot-create-sales-comparison-page-2.png" alt-text="Screenshot of Copilot creating the Sales Comparison page." lightbox="media/copilot-create-report/copilot-create-sales-comparison-page-2.png":::
+    :::image type="content" source="media/copilot-create-report/copilot-create-visitor-insights.png" alt-text="Screenshot of Copilot creating the Visitor Patterns Analysis Page." lightbox="media/copilot-create-report/copilot-create-visitor-insights.png":::
 
     Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 

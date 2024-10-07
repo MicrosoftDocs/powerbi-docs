@@ -7,7 +7,7 @@ ms.reviewer: kaurharleen
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 06/03/2024
+ms.date: 06/04/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -16,13 +16,13 @@ ms.collection: ce-skilling-ai-copilot
 
 # Create reports in Power BI Desktop with Copilot
 
-[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+[!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
 When you use the Copilot chat pane in Power BI Desktop, Copilot helps you use the transformational power of generative AI to get the most from your data. This article provides an overview of the Copilot chat pane capabilities for Power BI Desktop. You can also use [Copilot to create reports in the Power BI service](copilot-create-report-service.md).
 
 To use Copilot in Power BI Desktop, you need admin, member, or contributor access to at least a single workspace that is assigned to a paid Fabric capacity (F64 or higher) or Power BI Premium capacity (P1 or higher) that has Copilot enabled.
 
-:::image type="content" source="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png" alt-text="Screenshot showing Copilot creating a page about the popular islands." lightbox="media/copilot-create-desktop-report/copilot-create-popular-islands-page.png":::
+:::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png" alt-text="Screenshot showing Copilot creating a page about sales performance." lightbox="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png":::
 
 ## Before you start
 
@@ -78,11 +78,11 @@ You can change the selected workspace to another Copilot-compatible workspace an
 
 1. Select **Create** next to the first page you want Copilot to create.
 
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-suggests-four-pages.png" alt-text="Screenshot showing selecting the Create page button.":::
+    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-page-suggest-desktop.png" alt-text="Screenshot showing selecting the Create page button.":::
 
     Copilot creates that page.
 
-    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png" alt-text="Screenshot of Copilot creating the Visitor Analysis page." lightbox="media/copilot-create-desktop-report/copilot-create-visitor-analysis-page.png":::
+    :::image type="content" source="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png" alt-text="Screenshot of Copilot creating the Sales Performance page." lightbox="media/copilot-create-desktop-report/copilot-create-sales-performance-desktop.png":::
 
     Continue creating the pages that Copilot suggests. Otherwise select **Create a report that shows** and provide guidance on what you want in the report.
 

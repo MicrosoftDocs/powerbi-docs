@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/19/2023
+ms.date: 09/25/2024
 ---
 
 # Power BI implementation planning: Tenant-level security planning
@@ -17,20 +17,20 @@ ms.date: 02/19/2023
 
 This tenant-level security planning article is primarily targeted at:
 
-- **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization.
-- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators, information security teams, and other relevant teams.
+- **Fabric administrators:** The administrators who are responsible for overseeing Power BI in the organization.
+- **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with administrators of Power BI, information security teams, and other relevant teams.
 
 This article might also be relevant for self-service Power BI creators who create, publish, and manage content in workspaces.
 
-The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). While the Power BI security white paper focuses on key technical topics such as authentication, data residency, and network isolation, the primary goal of the series is to provide you with considerations and decisions to help you plan for security and privacy.
+The series of articles is intended to expand upon the content in the [Power BI security white paper](whitepaper-powerbi-security.md). The Power BI security white paper focuses on key technical subjects such as authentication, data residency, and network isolation. The implementation planning series provides you with considerations and decisions to help you plan for security and privacy.
 
-Because Power BI content can be used and secured in different ways, many tactical decisions will be made by content creators. However, there are some strategic planning decisions to make at the tenant level, too. Those strategic planning decisions are the focus for this article.
+Because Power BI content can be used and secured in different ways, content creators make many tactical decisions. However, there are some strategic planning decisions to make at the tenant level, too. Those strategic planning decisions are the focus for this article.
 
-We recommend that you make the tenant-level security decisions as early as possible because they'll affect everything else. Also, it's easier to make other security decisions once you have clarity on your overall security goals and objectives.
+We recommend that you make the tenant-level security decisions as early as possible because they affect everything else. Also, it's easier to make other security decisions once you have clarity on your overall security goals and objectives.
 
 ## Power BI administration
 
-The Power BI administrator is a high-privilege role that has significant control over Power BI. We recommend that you carefully consider who's assigned to this role because a Power BI administrator can perform many high-level functions, including:
+The Fabric administrator is a high-privilege role that has significant control over Power BI. We recommend that you carefully consider who is assigned this role because a Fabric administrator can perform many high-level functions, including:
 
 - **Tenant settings management:** Administrators can manage the [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings) in the admin portal. They can enable or disable settings and allow or disallow specific users or groups within settings. It's important to understand that your tenant settings have a significant influence on the user experience.
 - **Workspace role management:** Administrators can update [workspace](/power-bi/admin/service-admin-portal-workspaces) roles in the admin portal. They can potentially update workspace security to access any data or grant rights to other users to access any data in the Power BI service.
@@ -40,39 +40,41 @@ The Power BI administrator is a high-privilege role that has significant control
 > [!TIP]
 > As a best practice, you should assign between two and four users to the Fabric administrator role. That way, you can reduce risk while ensuring there's adequate coverage and cross-training.
 
-A Power BI administrator belongs to at least one of these [built-in roles](/microsoft-365/admin/add-users/about-admin-roles):
+An administrator of Power BI is assigned at least one of these [built-in roles](/microsoft-365/admin/add-users/about-admin-roles):
 
-- Power BI admin (Microsoft 365)
-- Power Platform admin (Microsoft 365)
-- Global administrator (Microsoft Entra ID—[previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name))
+- Fabric Administrator
+- Power Platform Administrator
+- Global Administrator - this is a high privilege role and membership should be limited.
+
+When assigning administrator roles, we recommend that you follow [best practices](/entra/identity/role-based-access-control/best-practices).
 
 > [!NOTE]
 > While a Power Platform administrator can manage the Power BI service, the inverse isn't true. Someone assigned to the Fabric administrator role can't manage other applications in the Power Platform.
 
 :::image type="icon" source="media/common/checklist.svg" border="false":::
 
-**Checklist** - When planning for who will be a Power BI administrator, key decisions and actions include:
+**Checklist** - When planning for who will be a Fabric administrator, key decisions and actions include:
 
 > [!div class="checklist"]
 >
-> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the Power BI administration roles: Fabric admin, Power Platform admin, and Global administrator.
-> - **Determine who should manage the Power BI service:** If there are too many Power BI administrators, create a plan to reduce the total number. If there are users assigned as Power BI administrators who aren't well suited to such a high-privilege role, create a plan to resolve the issue.
-> - **Clarify roles and responsibilities:** For each Power BI administrator, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
+> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the roles that can administer Power BI.
+> - **Determine who should manage the Power BI service:** If there are too many administrators, create a plan to reduce the total number. If there are users assigned as administrators for Power BI who aren't well-suited to such a high-privilege role, create a plan to resolve the issue.
+> - **Clarify roles and responsibilities:** For each administrator of Power BI, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
 
 ## Security and privacy strategies
 
-You'll need to make some tenant-level decisions that relate to security and privacy. The tactics taken and the decisions you make will rely on:
+You need to make some tenant-level decisions that relate to security and privacy. The tactics taken and the decisions you make rely on:
 
 - Your [data culture](fabric-adoption-roadmap-data-culture.md). The goal is to encourage a data culture that understands that security and protection of data is everyone's responsibility.
 - Your [content ownership and management](fabric-adoption-roadmap-content-ownership-and-management.md) strategies. The level of centralized and decentralized content management significantly affects how security is handled.
-- Your [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) strategies. The number of people who will view content will influence how security should be handled for the content.
+- Your [content delivery scope](fabric-adoption-roadmap-content-delivery-scope.md) strategies. The number of people who view content influences how security should be handled for the content.
 - Your requirements to comply with global, national/regional, and industry regulations.
 
-Here are a few examples of high-level security strategies. You might choose to make decisions that impact the entire organization.
+Here are a few examples of high-level security strategies. You might choose to make decisions that affect the entire organization.
 
-- **Requirements for row-level security:** You can use row-level security (RLS) to restrict data access for specific users. That means different users will see different data when accessing the same report. A Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or a data source (when using single sign-on) can enforce RLS. For more information, see the _Enforce data security based on consumer identity_ section in the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article.
-- **Data discoverability:** Determine the extent to which data discoverability should be encouraged in Power BI. Discoverability affects who can find semantic models or datamarts in the [data hub](/power-bi/connect-data/service-data-hub?tabs=semantic-models), and whether content authors are allowed to request access to those items (by using the _Request access_ workflow). For a more information, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
-- **Data that's permitted to be stored in Power BI:** Determine whether there are certain types of data that shouldn't be stored in Power BI. For example, you might specify that certain sensitive information types, like bank account numbers or social security numbers, aren't allowed to be stored in a semantic model. For more information, see the [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article.
+- **Requirements for row-level security:** You can use row-level security (RLS) to restrict data access for specific users. That means different users see different data when accessing the same report. A Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or a data source (when using single sign-on) can enforce RLS. For more information, see the _Enforce data security based on consumer identity_ section in the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article.
+- **Data discoverability:** Determine the extent to which data discoverability should be encouraged in Power BI. Discoverability affects who can find semantic models or datamarts in the [data hub](/power-bi/connect-data/service-data-hub?tabs=semantic-models), and whether content authors are allowed to request access to those items by using the _Request access_ workflow. For more information, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
+- **Data that's permitted to be stored in Power BI:** Determine whether there are certain types of data that shouldn't be stored in Power BI. For example, you might specify that certain sensitive information types, like bank account numbers or social security numbers, can't be stored in a semantic model. For more information, see the [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article.
 - **Inbound private networking:** Determine whether there are requirements for network isolation by using private endpoints to access Power BI. When you use [Azure Private Link](/fabric/security/security-private-links-overview), data traffic is sent by using the Microsoft private network backbone instead of going across the internet.
 - **Outbound private networking:** Determine whether more security is required when connecting to data sources. The [Virtual Network (VNet) data gateway](/data-integration/vnet/use-data-gateways-sources-power-bi) enables secure outbound connectivity from Power BI to data sources within a VNet. You can use an Azure VNet data gateway when content is stored in a Premium workspace.
 
@@ -345,7 +347,7 @@ When you request a new group, or you intend to use an existing group, it's impor
 
 - **Power BI permissions:** Not every type of group is supported for every type of security operation. Security groups (including mail-enabled security groups) offer the highest coverage when it comes to setting Power BI security options. Microsoft documentation generally recommends Microsoft 365 groups. However, in the case of Power BI, they aren't as capable as security groups. For more information about Power BI permissions, see the later articles in [this series on security planning](powerbi-implementation-planning-security-overview.md).
 - **Power BI tenant settings:** You can only use security groups (including mail-enabled security groups) when allowing or disallowing groups of users to work with Power BI [tenant settings](/power-bi/admin/service-admin-portal-about-tenant-settings).
-- **Advanced Microsoft Entra features:** Certain types of advanced features aren't supported for all group types. For example, you might want to manage group membership dynamically based on an attribute in Microsoft Entra ID (such as the [department for a user](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal#to-add-or-change-profile-information), or even a [custom attribute](/azure/active-directory/fundamentals/custom-security-attributes-overview)). Only Microsoft 365 groups and security groups support dynamic group memberships. Or, if you want to nest a group within a group, be aware that Microsoft 365 groups don't support that capability.
+- **Advanced Microsoft Entra features:** Certain types of advanced features aren't supported for all group types. For example, Microsoft 365 groups don't support nesting of groups within a group. Although some group types support dynamic group membership based on user attributes in Microsoft Entra ID, groups that use dynamic membership aren't supported for Power BI.
 - **Managed differently:** Your request to create or manage a group might be routed to a different administrator based on the type of group (mail-enabled security groups and distribution groups are managed in Exchange). Therefore, your internal process will differ depending on the type of group.
 
 ### Group naming convention

@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: pbi-collaborate-share
 ms.search.form: Publish an app in Power BI
 ms.topic: how-to
-ms.date: 05/01/2024
+ms.date: 08/22/2024
 
 LocalizationGroup: Share your work
 ---
@@ -251,7 +251,7 @@ The Permission management page contains these tabs:
 - **Direct access**: Lists all the users who already have access to the app.
 - **Pending access**: Lists all pending requests.
 
-  :::image type="content" source="media/service-create-distribute-apps/access-permission-page.png" alt-text="Screenshot of manage permission page.":::
+  :::image type="content" source="media/service-create-distribute-apps/access-permissions-page.png" alt-text="Screenshot of manage permission page.":::
 
 ## Change your published app
 
@@ -368,6 +368,7 @@ This action uninstalls the app for everyone you've published it to, and they no 
 ## Considerations and limitations
 To maintain app reliability and performance here are some app, audience group, and access limits to consider:
 - You can create one app per workspace.
+- App publish and update operations have a timeout of 1 minute. If your app is running into timeout error during update, consider reducing the number of artifacts included in the app.
 - You can create up to 25 audience groups per app.
 - A total of 10,000 users and user groups combined can have access to an app.
 - Each user group is counted as one entry against the 10,000 total.
@@ -376,6 +377,7 @@ To maintain app reliability and performance here are some app, audience group, a
 - Each workspace user or user group is counted per audience group. For example, if you have four workspace users and five app audience groups those four workspace users will be counted per audience group (4x5), accounting for 20 users against the 10,000 users or user groups limit per app. Additionally, each workspace user or user group is counted against the 1,000 users or user groups per audience group.
 - Consider how many workspace users or user groups have access to the app and how many users and user groups you have added to audience groups when creating additional audience groups. It is possible to hit the maximum number of 10,000 users or user groups per app before hitting the limit of 25 audience groups per app. For example, if you create 10 audience groups and have 1,000 users per audience group (accounting for workspace users too) you would hit the 10,000 app user or user groups limit and any additional audience groups with additional users or user groups will block the app from publishing or updating.
 - If you include a report that uses chained semantic models, also known as [DirectQuery for Power BI semantic models and Analysis Services](../connect-data/desktop-directquery-datasets-azure-analysis-services.md), in an app, when you add a user to an audience group, make sure to give permissions to all the semantic models in the chain. We recommend using Microsoft Entra Security Groups to manage permissions here. For more information, visit [Strategy for using groups](../guidance/powerbi-implementation-planning-security-tenant-level-planning.md#strategy-for-using-groups). The same consideration should be made for semantic models in a different workspace other than the app, make sure to give permissions to semantic models in a different workspace.
+- If you include a paginated report that uses a semantic model, in an app, when you add a user to an audience group, make sure to give permission to the semantic model.
 
 Additional things to keep in mind about publishing apps:
 - AppSource is an external service that only has public-facing service apps. For organizational apps, users can just go to Apps marketplace to find them. Template apps are also available from Apps marketplace.

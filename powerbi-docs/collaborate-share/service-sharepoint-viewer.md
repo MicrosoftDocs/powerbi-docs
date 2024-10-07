@@ -9,7 +9,7 @@ ms.subservice: pbi-collaborate-share
 ms.search.form: View Power BI file in SharePoint and OneDrive
 ms.topic: how-to
 ms.custom: 
-ms.date: 10/11/2023
+ms.date: 09/25/2024
 LocalizationGroup: Share your work
 ---
 # View Power BI files in OneDrive and SharePoint
@@ -170,7 +170,7 @@ Interaction with the Power BI file is audited in Power BI activity logs. Some of
 - View
 - Open report
 
-Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without global admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
+Power BI admins can access information on sharing and permission of files through the [Microsoft 365 audit logs](../admin/service-admin-auditing.md). Any user without admin rights can still access Microsoft 365 audit logs when assigned the [*View-Only Audit Logs role*](/exchange/view-only-audit-logs-role-exchange-2013-help). Admins [access the Microsoft 365 audit logs](../admin/service-admin-auditing.md#use-the-audit-log) through the Power BI [Admin portal](../admin/service-admin-portal.md).
 
 OneDrive and SharePoint Power BI file activity in the audit logs appear with [property values](/microsoft-365/compliance/audit-log-detailed-properties) **Workload** and/or **EventSource** set to **OneDrive**.
 

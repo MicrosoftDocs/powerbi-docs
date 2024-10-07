@@ -49,8 +49,6 @@ Make sure your team has permission to the report or scorecard by sharing it with
 
 1. Add the names of your colleagues. Decide what permissions you want them to have, whether to send them an email, and select **Grant access**.
 
-    :::image type="content" source="media/business-user-teams-share-data/teams-power-bi-grant-access-new.png" alt-text="Screenshot of Grant people access dialog." lightbox="media/business-user-teams-share-data/teams-power-bi-grant-access-new.png":::
-
 ## Chat about data with rich links and cards
 
 When discussing data, it’s important that your colleagues can open the underlying data to see and explore trends. This helps them answer questions and understand the full context of requests you’re making. It’s also an easy way to encourage more use of data in decision making.

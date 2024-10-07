@@ -32,6 +32,7 @@ Even before you start typing, Q&A displays a new screen with suggestions to help
 - **Use relative date filtering** Show me sales in the last year
 - **Return only the top N** Top 10 products by sales
 - **Provide a filter** Show me sales in the USA
+- **Filter on multiple instances of the same entity** Which customers bought cheese and wine? (Where cheese and wine come from the same Product entity)
 - **Provide complex conditions** Show me sales where product category is Category 1 or Category 2
 - **Return a specific visual** Show me sales by product as pie chart
 - **Use complex aggregations** Show me median sales by product

@@ -153,6 +153,36 @@ The use of the previous list of connectors with dataflows or datamarts is only s
 
 This error occurs if the version of the on-premises data gateway being used to refresh your dataflow (Gen1 or Gen2) is out of support. Currently Microsoft supports only the [last six versions of the on-premises data gateway](/data-integration/gateway/service-gateway-monthly-updates). Update your gateway to the latest version, or to a supported version to resolve this issue. Use the [update an on-premises data gateway](/data-integration/gateway/service-gateway-update) article for guidance on updating gateways.
 
+## Circular Dependency error related to Calculated Table utilize SummarizeColumns
+
+In September 2024 a feature was enabled that allows *SummarizeColumns* to be placed inside a measure and evaluated within any external filter context, which might introduce new dependencies if *SummarizeColumns* is used in *CalculateTable*. These new dependencies might cause a circluar dependency error during model refresh. 
+
+If this error appears, the following steps can address the issue:
+
+1. Identify all *CalculateTables* that use *SummarizeColumns* 
+
+2. For each *SummarizeColumns* expression, make the following changes:
+
+  For a *SummarizeColumns* expression with *GB* on *Product* and *Geography*, for example:
+  ```
+  SummarizeColumns(
+  Product[Color],
+  Geography[Country],
+  ...
+  )
+  ```
+  Add *Product* and *Geography* as filters into *SummarizeColumns* so it looks like the following expression:
+  ```
+  SummarizeColumns(
+  Product[Color],
+  Geography[Country],
+  Product, 
+  Geography,
+  ...
+  )
+  ```
+These steps remove the introduced blank row and restores the original behavior. If you have multiple calculated tables that uses *SummarizeColumns*, changes for all tables should be submitted together in a single transaction which requires the [Tabular Editor](https://www.sqlbi.com/tools/tabular-editor/) to make the modifications, since Power BI Desktop cannot batch multiple table changes into a single transaction.
+
 ## Related content
 
 * [Data refresh in Power BI](refresh-data.md)  
