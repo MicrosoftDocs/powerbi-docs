@@ -1,6 +1,6 @@
 ---
 title: Quick measure suggestions
-description: Quick measure suggestions assist in the creation of DAX measures using natural language, making it easier and faster to generate common DAX calculations.
+description: Quick measure suggestions help the creation of DAX measures using natural language, making it easier and faster to generate common DAX calculations.
 author: Sujata994
 ms.author: sunaraya
 ms.reviewer: ''
@@ -12,12 +12,11 @@ ms.date: 10/07/2024
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to know more about DAX measures using natural language.
 ---
+
 # Quick measure suggestions
 
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch.
-
 :::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
-
 This feature can be used to jump-start creation of common DAX measures scenarios such as:
 
 - Aggregated columns (Optional filters)
@@ -36,11 +35,11 @@ This feature can be used to jump-start creation of common DAX measures scenarios
 
 ## Enable measure suggestions
 
-To enable the feature, you will need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
+To enable the feature, you'll need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
 
 :::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop.":::
 
-After you have enabled the feature, you can access the Quick measure suggestions, by launching Quick measure from the Home or Modeling tab of the ribbon and selecting **Suggestions**:
+After you enable the feature, you can access the Quick measure suggestions, by launching Quick measure from the Home or Modeling tab of the ribbon and selecting **Suggestions**:
 
 :::image type="content" source="media/quick-measure-suggestions/suggestions-tab.png" alt-text="Screenshot of how to access the feature from the suggestions tab of the Quick measure pane.":::
 
@@ -48,13 +47,13 @@ Here you can describe the measure you want to create and hit **Generate** (or en
 
 :::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
 
-You should always validate the DAX suggestions to make sure they meet your needs. If you’re satisfied with a suggested measure, you can click the **Add** button to automatically add the measure to your model.  
+You should always validate the DAX suggestions to make sure they meet your needs. If you’re satisfied with a suggested measure, you can select the **Add** button to automatically add the measure to your model.  
 
 ## Natural language examples
 
-To help demonstrate the feature here are some natural language examples for each of the supported measure scenarios.
+To help demonstrate the feature, here are some natural language examples for each of the supported measure scenarios.
 
-### Aggregated columns
+## Aggregated columns
 
 Apply aggregations to a column to return a single value. Our supported aggregations include sum, count, distinct count, distinct count no blanks, average, min, max, median, variance, and standard deviation.
 
@@ -70,7 +69,7 @@ Examples:
 - What is the max price
 - Median age
 
-#### Aggregated Columns Optional filters
+## Aggregated Columns Optional filters
 
 For aggregated columns, you can also specify one or more filter conditions. If there are multiple filter conditions, you can specify if you want an intersection (&&/AND) or union (||/OR) of the filters.
 
@@ -83,7 +82,7 @@ Examples:
 - Sales filtered to Product is Word && Region is North
 - Sales for Product is Word || Region is North
 
-### Row Counts
+## Row Counts
 
 Count the number of records in the specified table. You don’t need to specify the table if there is only one table.
 
@@ -94,7 +93,7 @@ Examples:
 - Sales table row count
 - Count rows of sales table
 
-#### Row Counts Optional filters
+## Row Counts Optional filters
 
 For row counts, you can also specify one or more filter conditions. If there are multiple filter conditions, you can specify if you want an intersection (&&/AND) or union (||/OR) of the filters.
 
@@ -105,7 +104,7 @@ Examples:
 - Count record of sales table filtered to Product is Word && Region is North
 - Get the row count of sales table for Product is Word || Region is North
 
-### Aggregate per category
+## Aggregate per category
 
 Compute a measure for each distinct value in a category and then aggregate the results to return a single value. Our supported aggregates include average, weighted average, min, max, variance.
 
@@ -116,7 +115,7 @@ Examples:
 - Min score per product
 - Max units per store
 
-### Mathematical operations
+## Mathematical operations
 
 Perform mathematical operations with numeric columns, measures, or aggregated columns. For scenarios across columns within a table, you can either average (AVERAGEX) or sum up (SUMX) the result in order to return a single value.
 
@@ -132,9 +131,9 @@ Examples:
 - For each row in Sales table calculate Price * Discount and then get the average
 - For the Sales table get the average of Price * Discount
 
-### Selected value
+## Selected value
 
-Get the selected value of a column. This is typically used when paired with a single-select slicer or filter so that the measure will return a non-blank value.
+Get the selected value of a column. Column value is typically used when paired with a single-select slicer or filter so that the measure will return a non-blank value.
 
 Examples:
 
@@ -142,9 +141,9 @@ Examples:
 - Which product is selected
 - Selected value for product
 
-### If condition
+## If condition
 
-Return values based on conditions. If you are returning string values, you will need to use double quotes. Conditions can use the following comparison operators: =, ==, <>, <, >, <=, >=
+Return values based on conditions. If returning string values, use double quotes. Conditions can use the following comparison operators: =, ==, <>, <, >, <=, >=
 
 Examples:
 
@@ -153,7 +152,7 @@ Examples:
 - If selected value for product is blank, display "no product selected" else show selected product
 - If selected product = Power BI, show "PBI" else "other"
 
-### Text operations
+## Text operations
 
 Perform text operations with columns, measures, or aggregated columns. For scenarios across columns within a table, we’ll merge (CONCATENATEX) the result in order to return a single value.
 
@@ -165,7 +164,7 @@ Examples:
 - For each row in Geography Dim table concatenate State & ", " & City and combine the result
 - For each row in Geography Dim table get State & ", " & City and merge
 
-### Time intelligence
+## Time intelligence
 
 These time intelligence scenarios require using a properly marked date table or auto date/time hierarchy. For YTD scenarios you can specify "fiscal" or "fiscal calendar" to base the calculation on the fiscal calendar (ends on June 30th).
 
@@ -186,7 +185,7 @@ Examples:
 - 28 day rolling average sales
 - 28 – day rolling avg sales
 
-### Relative time filtered value
+## Relative time filtered value
 
 Apply a relative time filter that filters your measure or aggregated column to the last N hours / days / months / years.
 
@@ -197,7 +196,7 @@ Examples:
 - Total sales for the last 6 months
 - Total sales for the last 2 years
 
-### Most / least common value
+## Most / least common value
 
 Return the value with the most or least number of occurrences in a specified column.
 
@@ -209,7 +208,7 @@ Examples:
 - Which value in Product is least common
 - What is the least common value in Product
 
-### Top N filtered value
+## Top N filtered value
 
 Compute a measure or aggregated column that is filtered to the top N categorical values based on that same measure or aggregated column.
 
@@ -220,7 +219,7 @@ Examples:
 - Average score for the top 5 students
 - Avg score filtered to the top 5 students
 
-### Top N values for a category
+## Top N values for a category
 
 Get a concatenated list of the top N values within a column based on a measure or aggregated column.
 
@@ -230,7 +229,7 @@ Examples:
 - Top 3 products by sales
 - What are the top 3 products in sales
 
-### Information functions
+## Information functions
 
 Return system or user information such as the current date/time or the current user's email, domain, or username.
 
@@ -240,12 +239,22 @@ Examples:
 - Now
 - Return the current user email
 - Return the current domain name and username
-- Return the current user’s domain login
+- Return the current user’s domain sign in
 
 ## Limitations and considerations
 
-- Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you will still need to validate the DAX suggestions because they can be wrong or not match your intent.
-- The feature isn't supported for LiveConnect data models.
-- The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature will be disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
+The following are limitations and considerations:
 
-:::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::
+- Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you still need to validate the DAX suggestions because they can be wrong or not match your intent.
+- The feature isn't supported for LiveConnect data models.
+- The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature is disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
+
+:::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions":::
+
+## Related content
+
+You might also be interested in the following articles:
+
+- [Use quick measures for common calculations](desktop-quick-measures.md)
+- [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
+- [Create calculated tables in Power BI Desktop](desktop-calculated-tables.md)

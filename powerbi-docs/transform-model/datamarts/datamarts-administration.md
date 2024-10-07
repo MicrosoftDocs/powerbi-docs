@@ -32,7 +32,7 @@ Existing Power BI admin APIs for getting workspace information work for datamart
 
 ### Viewing audit logs and activity events
 
-Power BI administrators can audit datamart operations from the **Microsoft 365 Admin Center**. Audit operations supported on datamarts are the following:
+Power BI administrators can audit datamart operations from the **Microsoft 365 Admin Center**. Audit operations supported on datamarts are the following items:
 
 * Create
 * Rename
@@ -70,8 +70,8 @@ The following limitations should be considered when using datamarts:
 * Datamarts aren't currently supported in the following Power BI SKUs: EM1/EM2 and EM3.
 * Datamarts aren't available in workspaces that are bound to an Azure Data Lake Gen2 storage account.
 * Datamarts aren't available in sovereign or government clouds.
-* Datamart extract, transform and load (ETL) operations can currently only run for up to 24 hours
-* Datamarts currently officially support data volumes of up to 100 GB.
+* Datamart extract, transform, and load (ETL) operations can currently only run for up to 24 hours
+* Datamarts officially support data volumes of up to 100 GB.
 * Currently datamarts don’t support the currency data type, and such data types are converted to float.
 * Data sources behind a VNET or using private links can't currently be used with datamarts; to work around this limitation you can use an on-premises data gateway.
 * Datamarts use port 1948 for connectivity to the SQL endpoint. Port 1433 needs to be open for datamarts to work.
