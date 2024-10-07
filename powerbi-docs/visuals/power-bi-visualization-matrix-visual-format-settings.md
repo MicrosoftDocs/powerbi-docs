@@ -20,7 +20,7 @@ This detailed guide explores all the format settings available for the matrix vi
 
 Serving as a reference guide, we've listed the multitude of matrix visual customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout and style presets, grid settings, and various options for values, to column and row headers, and specific column controls, this document covers every setting for matrix visual formatting, ensuring you can present your data in the most effective and visually appealing way possible.
 
-Whether you’re a seasoned Power BI user or new to data visualization, this document is an invaluable resource for mastering matrix visual formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
+Whether you’re a seasoned Power BI user or new to data visualization, this document is an invaluable resource for understanding matrix visual formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
 
 ## Prerequisites
 
