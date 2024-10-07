@@ -7,27 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 10/07/2024
 LocalizationGroup: Data from files
+#customer intent: As a Power BI user I want to learn how to use streaming dataflows in Power BI.
 ---
 
 # Streaming dataflows (preview)
 
 Organizations want to work with data as it comes in, not days or weeks later. The vision of Power BI is simple: the distinctions between batch, real-time, and streaming should disappear. Users should be able to work with all data as soon as it's available.
+Analysts usually need technical help to deal with streaming data sources, data preparation, complex time-based operations, and real-time data visualization. IT departments often rely on custom-built systems, and a combination of technologies from various vendors, to perform timely analyses on the data. Without this complexity, they can't provide decision makers with information in near real time.
+
+*Streaming dataflows* allow authors to connect to, ingest, mash up, model, and build reports based on streaming in near real-time data directly in the Power BI service. The service enables drag-and-drop, no-code experiences.
+You can mix and match streaming data with batch data if you need to through a user interface (UI) that includes a *diagram view* for easy data mashup. The final item produced is a dataflow, which can be consumed in real time to create highly interactive, near real-time reporting. All of the data visualization capabilities in Power BI work with streaming data, just as they do with batch data.
 
 > [!IMPORTANT]
 > Streaming dataflows has been retired, and is no longer available. [Azure Stream Analytics](/azure/stream-analytics/no-code-stream-processing) has merged the functionality of streaming dataflows. For more information about the retirement of streaming dataflows, see the [retirement announcement](https://powerbi.microsoft.com/en-us/blog/announcing-the-retirement-of-streaming-dataflows/).
-
-Analysts usually need technical help to deal with streaming data sources, data preparation, complex time-based operations, and real-time data visualization. IT departments often rely on custom-built systems, and a combination of technologies from various vendors, to perform timely analyses on the data. Without this complexity, they can't provide decision makers with information in near real time.
-
-*Streaming dataflows* allow authors to connect to, ingest, mash up, model, and build reports based on streaming in near real-time data directly in the Power BI service. The service enables drag-and-drop, no-code experiences.  
-
-You can mix and match streaming data with batch data if you need to through a user interface (UI) that includes a *diagram view* for easy data mashup. The final item produced is a dataflow, which can be consumed in real time to create highly interactive, near real-time reporting. All of the data visualization capabilities in Power BI work with streaming data, just as they do with batch data.
-
 :::image type="content" source="media/dataflows-streaming/dataflows-streaming-01.png" alt-text="Diagram showing an example of mixed streaming and batch data in a simple workflow that creates real-time reports in Power BI.":::
-
 Users can perform data preparation operations like joins and filters. They can also perform time-window aggregations (such as tumbling, hopping, and session windows) for group-by operations.
-
 Streaming dataflows in Power BI empower organizations to:
 
 * Make confident decisions in near real time. Organizations can be more agile and take meaningful actions based on the most up-to-date insights.
@@ -114,7 +110,7 @@ When streaming dataflows detect the fields, you can see them in the list. There'
 
 You can always edit the field names, or remove or change the data type, by selecting more options (**...**) next to each field. You can also expand, select, and edit any nested fields from the incoming messages, as shown in the following image.
 
-:::image type="content" source="media/dataflows-streaming/dataflows-streaming-07.png" alt-text="Screenshot that shows remove, rename and data type options for input data.":::
+:::image type="content" source="media/dataflows-streaming/dataflows-streaming-07.png" alt-text="Screenshot that shows remove, rename, and data type options for input data.":::
 
 ### Azure IoT Hub
 
@@ -365,7 +361,7 @@ You can also see the details of a specific record (a "cell" in the table) by sel
 
 ### Static preview for transformations and outputs
 
-After you add and set up any steps in the diagram view, you can test their behavior by selecting the static data button. 
+After you add and set up any steps in the diagram view, you can test their behavior by selecting the static data button.
 
 :::image type="icon" source="media/dataflows-streaming/dataflows-streaming-26.png":::
 
@@ -373,7 +369,7 @@ After you do, streaming dataflows evaluate all transformation and outputs that a
 
 :::image type="content" source="media/dataflows-streaming/dataflows-streaming-27.png" alt-text="Screenshot that shows a static data preview with the refresh and hide options highlighted.":::
 
-You can refresh the preview by selecting **Refresh static preview** (1). When you do this, streaming dataflows take new data from the input and evaluate all transformations and outputs again with any updates that you might have performed. The **Show or Hide details** option is also available (2).
+You can refresh the preview by selecting **Refresh static preview** (1). When you do this, streaming dataflows take new data from the input and evaluate all transformations and outputs again with any updates that you might perform. The **Show or Hide details** option is also available (2).
 
 ### Authoring errors
 
