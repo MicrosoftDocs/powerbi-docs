@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 10/07/2024
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn how to manage and administer datamarts in Power BI.
 ---
