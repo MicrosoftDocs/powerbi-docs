@@ -8,15 +8,17 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/21/2023
+ms.date: 10/07/2024
 LocalizationGroup: Create reports
 ---
 # Quick measure suggestions
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch. Quick measure suggestions with Copilot feature is no longer available in public preview.
 
+quick-measure-copilot-pane.png
+
 To continue to use natural language to write DAX formulas for measures, Microsoft Fabric Copilot in DAX query view can help you write DAX queries, which can include query-scoped measures that you can add to your model.
 
-Quick measures continue to let you choose a calculation from a list and create a measure using a drag-and-drop template, generating the DAX formula when you select **Add**. You can see and modify these measures in the DAX formula bar. Quick measure suggestions public preview introduced quick queries as a pane, allowing you to drag-and-drop from the Data pane instead of within a dialog. The quick measures continue to be in the Quick measures pane, and the dialog experience is no longer available. 
+Quick measures continue to let you choose a calculation from a list and create a measure using a drag-and-drop template, generating the DAX formula when you select **Add**. You can see and modify these measures in the DAX formula bar. Quick measure suggestions public preview introduced quick queries as a pane, allowing you to drag-and-drop from the Data pane instead of within a dialog. The quick measures continue to be in the Quick measures pane, and the dialog experience is no longer available.
 
 :::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
 
@@ -38,7 +40,7 @@ This feature can be used to jump-start creation of common DAX measures scenarios
 
 ## Enable measure suggestions
 
-To enable the feature, you will need to first navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
+To enable the feature, navigate to the **Options** menu of Power BI Desktop and turn on the preview switch for **Quick measure suggestions**:
 
 :::image type="content" source="media/quick-measure-suggestions/enable-preview.png" alt-text="Screenshot of how to enable preview from the options menu of Power BI Desktop.":::
 
@@ -54,6 +56,7 @@ You should always validate the DAX suggestions to make sure they meet your needs
 
 ## Natural language examples
 To help demonstrate the feature here are some natural language examples for each of the supported measure scenarios.
+
 ### Aggregated columns
 Apply aggregations to a column to return a single value. Our supported aggregations include sum, count, distinct count, distinct count no blanks, average, min, max, median, variance, and standard deviation.
 
