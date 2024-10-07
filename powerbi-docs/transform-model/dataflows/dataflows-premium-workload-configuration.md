@@ -24,13 +24,13 @@ The first requirement for using dataflows in your Power BI premium subscription 
 
 ![Admin portal for dataflows in Power BI premium](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-01.png)
 
-After enabling the dataflows workload, it is configured with default settings. You might want to tweak these settings as you see fit. Next, we'll describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
+After enabling the dataflows workload, it's configured with default settings. You might want to tweak these settings as you see fit. Next, we describe where these settings live, describe each, and help you understand when you might want to change the values to optimize your dataflow performance.
 
 ## Refining dataflow settings in Premium
 
-Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. Power BI Premium doesn't require memory settings to be changed. Memory in Power BI Premium is automatically managed by the underlying system. The following steps show how to adjust your dataflow settings.
+Once dataflows are enabled, you can use the **Admin portal** to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. Power BI Premium doesn't require memory settings to be changed. Memory in Power BI Premium is automatically manages the underlying system. The following steps show how to adjust your dataflow settings.
 
-1. In the **Admin portal**, select **Tenant settings** to list all capacities that have been created. Select a capacity to manage its settings.
+1. In the **Admin portal**, select **Tenant settings** to list all capacities created. Select a capacity to manage its settings.
 
     ![Select a capacity to manage settings](media/dataflows-premium-workload-configuration/dataflows-premium-workloads-02.png)
 
@@ -44,7 +44,7 @@ Power BI Premium workloads use v-cores to serve fast queries across the various 
 
 #### Enhanced compute engine - an opportunity to improve performance
 
-The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is an engine that can accelerate your queries. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations and enables DirectQuery connectivity. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. Make sure your dataflow usage is leveraging the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
+The [enhanced compute engine](dataflows-premium-features.md#the-enhanced-compute-engine) is an engine that can accelerate your queries. Power BI uses a compute engine to process your queries and refresh operations. The enhanced compute engine is an improvement over the standard engine, and works by loading data to a SQL Cache and uses SQL to accelerate table transformation, refresh operations, and enables DirectQuery connectivity. When configured to **On** or **Optimized** for computed entities, if your business logic allows for it, Power BI uses SQL speed up the performance. Having the engine **On** also provides for DirectQuery connectivity. Make sure your dataflow usage is using the enhanced compute engine properly. Users can configure the enhanced compute engine to be on, optimized, or off on a per-dataflow basis.
 
 > [!NOTE]
 > The enhanced compute engine is not yet available in all regions.
@@ -57,9 +57,9 @@ This section provides guidance for common scenarios when using dataflow workload
 
 Slow refresh times are usually a parallelism issue. You should review the following options, in order:
 
-1. A key concept for slow refresh times is the nature of your data preparation. Whenever you can optimize your slow refresh times by taking advantage of your data source actually doing the preparation and performing upfront query logic, you should do so. Specifically, when using a relational database such as SQL as your source, see if the initial query can be run on the source, and use that source query for your initial extraction dataflow for the data source. If you cannot use a native query in the source system, perform operations that the dataflows [engine can fold to the data source](/power-query/power-query-folding).
+1. A key concept for slow refresh times is the nature of your data preparation. Whenever you can optimize your slow refresh times by taking advantage of your data source actually doing the preparation and performing upfront query logic, you should do so. Specifically, when using a relational database such as SQL as your source, see if the initial query can be run on the source, and use that source query for your initial extraction dataflow for the data source. If you can't use a native query in the source system, perform operations that the dataflows [engine can fold to the data source](/power-query/power-query-folding).
 
-2. Evaluate spreading out refresh times on the same capacity. Refresh operations are a process that requires significant compute. Using our restaurant analogy, spreading out refresh times is akin to limiting the number of guests in your restaurant. Just as restaurants will schedule guests and plan for capacity, you also want to consider refresh operations during times when usage is not at its full peak. This can go a long way toward alleviating strain on the capacity.
+2. Evaluate spreading out refresh times on the same capacity. Refresh operations are a process that requires significant compute. Using our restaurant analogy, spreading out refresh times is akin to limiting the number of guests in your restaurant. Just as restaurants schedule guests and plan for capacity, you also want to consider refresh operations during times when usage isn't at its full peak. This can go a long way toward alleviating strain on the capacity.
 
 If the steps in this section don't provide the desired degree of parallelism, consider upgrading your capacity to a higher SKU. Then follow the previous steps in this sequence again.
 
@@ -83,9 +83,9 @@ Take the following steps when investigating scenarios where the Compute engine i
 
 1. Limit computed and linked entities that exist across workspace.
 
-2. When you perform your initial refresh with the compute engine turned on, then data gets written in the lake and in the cache. This double write means these refreshes will be slower.
+2. When you perform your initial refresh with the compute engine turned on, the data gets written in the lake and in the cache. This double write means  refreshes are slower.
 
-3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they do not all refresh at the same time.
+3. If you have a dataflow linking to multiple dataflows, make sure you schedule refreshes of the source dataflows so that they don't all refresh at the same time.
 
 ## Related content
 
