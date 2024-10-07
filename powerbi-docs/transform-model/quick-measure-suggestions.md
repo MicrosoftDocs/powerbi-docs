@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: concept-topic
+ms.topic: concept-article
 ms.date: 10/07/2024
 LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to know more about DAX measures using natural language.

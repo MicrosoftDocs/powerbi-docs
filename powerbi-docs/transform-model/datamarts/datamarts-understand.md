@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-dataflows
-ms.topic: concept-topic
+ms.topic: concept-article
 ms.date: 10/07/2024
 LocalizationGroup: Data from files
 #customer intent: As a Power BI user I want to learn about best practices and concepts for datamarts in Power BI.
