@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/04/2024
+ms.date: 10/07/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
@@ -51,7 +51,7 @@ With the ability to configure and display multiple cards in a single container, 
 
 #### Overflow
 
-The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to scroll continuously or flip through paginated cards, either vertically or horizontally, to view all the data within the visual.
+The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to flip through paginated cards, or scroll continuously, either vertically or horizontally, to view all the data within the visual.
 
 [!INCLUDE [layout-overflow-overflow-style](../includes/core-visuals/layout-overflow-overflow-style.md)]
 [!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
@@ -131,7 +131,7 @@ The **Title** toggle, when enabled, controls the visibility of the Series title.
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
 [!INCLUDE [reference-labels-value-format-code-fx](../includes/core-visuals/reference-labels-value-format-code-fx.md)]
-[!INCLUDE [reference-labels-value-value-decimal-places](../includes/core-visuals/reference-labels-value-value-decimal-places.md)]
+[!INCLUDE [reference-labels-value-value-decimal-places](../includes/core-visuals/global-value-decimal-places-fx.md)]
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
 #### Detail
