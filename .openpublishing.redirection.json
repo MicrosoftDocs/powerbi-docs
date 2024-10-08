@@ -92,7 +92,7 @@
         },
         {
             "source_path": "powerbi-docs/learning-catalog/index.yml",
-            "redirect_url": "/learn/power-bi/?wt.mc_id=powerbi_inproduct_settings",
+            "redirect_url": "/power-bi/?wt.mc_id=powerbi_inproduct_settings",
             "redirect_document_id": false
         },
         {
