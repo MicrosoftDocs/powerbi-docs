@@ -36,7 +36,7 @@ The matrix visual's ability to aggregate data and support hierarchical structure
 > [!NOTE]
 > [!INCLUDE [prerequisites-share-your-report](../includes/core-visuals/prerequisites-share-your-report.md)]
 
-## Create a column chart
+## Let's create a matrix visual
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
