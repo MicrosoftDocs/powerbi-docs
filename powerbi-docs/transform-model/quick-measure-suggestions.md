@@ -124,7 +124,7 @@ Examples:
 -	For the Sales table get the average of Price * Discount
 
 ### Selected value
-Get the selected value of a column. This is typically used when paired with a single-select slicer or filter so that the measure will return a non-blank value.
+Get the selected value of a column. This is typically used when paired with a single-select slicer or filter so that the measure returns a non-blank value.
 
 Examples:
 -	What is the selected product
@@ -132,7 +132,7 @@ Examples:
 -	Selected value for product
 
 ### If condition
-Return values based on conditions. If you are returning string values, you will need to use double quotes. Conditions can use the following comparison operators: =, ==, <>, <, >, <=, >=
+Return values based on conditions. If you are returning string values, you need to use double quotes. Conditions can use the following comparison operators: =, ==, <>, <, >, <=, >=
 
 Examples:
 -	If sales > 10,000 return "high sales" else "low sales"
@@ -216,8 +216,8 @@ Examples:
 -	Return the current user’s domain login
 
 ## Limitations and considerations
-- Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you will still need to validate the DAX suggestions because they can be wrong or not match your intent.
+- Quick measure suggestions are NOT a replacement for learning DAX. The suggestions provided by the feature are meant to help fast track measure creation; however, you still need to validate the DAX suggestions because they can be wrong or not match your intent.
 - The feature isn't supported for LiveConnect data models.
--	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature will be disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
+-	The feature is powered by a machine learning model that is currently only deployed to US datacenters (East US and West US). If your data is outside the US, the feature is disabled by default unless your tenant admin enables **Allow user data to leave their geography tenant setting**:
  
 :::image type="content" source="media/quick-measure-suggestions/quick-measure-suggestions-admin-setting.png" alt-text="Screenshot of the admin setting for measure suggestions.":::
