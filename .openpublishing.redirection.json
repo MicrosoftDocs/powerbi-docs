@@ -6,6 +6,21 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/visuals/desktop-matrix-visual.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-matrix-visual",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-column-bar-format.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-card.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-new-card",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
@@ -33,7 +48,67 @@
         {
             "source_path": "powerbi-docs/fundamentals/service-self-service-purchase-help.md",
             "redirect_url": "/power-bi/fundamentals/service-self-service-sign-up-help",
-            "redirect_document_id": true
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/developer-online-course.md",
+            "redirect_url": "/power-bi/developer/embedded/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-administrator.md",
+            "redirect_url": "/fabric/admin/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-bdm.md",
+            "redirect_url": "/training/modules/introduction-power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-consumer.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-data-analyst.md",
+            "redirect_url": "/training/paths/data-analytics-microsoft",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-developer.md",
+            "redirect_url": "/power-bi/developer/embedded/embed-sample-for-customers?tabs=net-core",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-functional-consultant.md",
+            "redirect_url": "/power-bi/create-reports/service-dashboards",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-presales.md",
+            "redirect_url": "/training/paths/power-plat-fundamentals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-report-creator.md",
+            "redirect_url": "/training/paths/dashboard-in-a-day",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/learning-catalog-solution-architect.md",
+            "redirect_url": "/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-solution-planning",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/paginated-reports-online-course.md",
+            "redirect_url": "/training/modules/create-paginated-reports-power-bi/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/learning-catalog/index.yml",
+            "redirect_url": "/power-bi/?wt.mc_id=powerbi_inproduct_settings",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/enterprise/service-admin-manage-licenses.md",
