@@ -55,7 +55,7 @@ The following basic flow lists what the application does when the customer launc
 
 ## Prerequisites
 
-- Your own Microsoft Entra tenant set up. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
+- Your own Microsoft Entra tenant setup. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
 - A [service principal (app-only token)](./../developer/embedded/embed-service-principal.md) registered in the preceding tenant.
 - A parameterized [template app](service-template-apps-overview.md) that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Tips for authoring template apps](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md).
 - To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
