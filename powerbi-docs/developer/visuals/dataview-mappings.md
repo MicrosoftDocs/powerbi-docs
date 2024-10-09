@@ -3,7 +3,7 @@ title: Understand data view mapping in Power BI visuals
 description: Learn about single, categorical, and matrix data mapping. Specify the conditional requirements for data roles to create different types of visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

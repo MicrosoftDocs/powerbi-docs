@@ -4,7 +4,7 @@ description: Learn how to install and use SVG utils to simplify parsing of the D
 author: mberdugo
 ms.author: monaberdugo
 manager:
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
