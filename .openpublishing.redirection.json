@@ -6,6 +6,21 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/visuals/desktop-matrix-visual.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-matrix-visual",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-column-bar-format.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-card.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-new-card",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/connect-data/service-aml-integrate.md",
             "redirect_url": "/fabric/data-science/use-ai-samples",
             "redirect_document_id": false
