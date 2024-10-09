@@ -4,7 +4,7 @@ description: Learn how visuals can retrieve the Power BI locale to localize thei
 author: mberdugo
 ms.author: monaberdugo
 manager: 
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to

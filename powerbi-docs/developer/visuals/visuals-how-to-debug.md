@@ -3,7 +3,7 @@ title: How to debug Power BI custom visuals
 description: This article describes procedures the developer can use to debug Power BI custom visuals and provides helpful tips for troubleshooting.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: troubleshooting

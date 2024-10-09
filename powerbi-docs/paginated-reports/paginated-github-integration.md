@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 09/22/2023
+ms.date: 06/28/2024
 ---
 
 # Git integration with paginated reports
@@ -35,7 +35,7 @@ See the **Prerequisites** section in [Get started creating paginated reports in 
     > [!Note]
     > If the branch is new, you're prompted to **Create and sync**.
 
-2. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive or Sharepoint yet.
+1. Upload your *.rdl* file to the workspace on the service. We don't support OneDrive or Sharepoint yet.
 
     :::image type="content" source="media/page-view/paginated-reports-upload.png" alt-text="Screenshot of the Upload button." lightbox="media/page-view/paginated-reports-upload.png":::
 
@@ -43,7 +43,7 @@ See the **Prerequisites** section in [Get started creating paginated reports in 
 
     :::image type="content" source="media/page-view/paginated-reports-source-control.png" alt-text="Screenshot of status." lightbox="media/page-view/paginated-reports-source-control.png":::
 
-3. Select **Source Control**. In the source control pane, select the file and commit.  
+1. Select **Source Control**. In the source control pane, select the file and commit.  
 
     :::image type="content" source="media/page-view/paginated-reports-source-control-1.png" alt-text="Screenshot of Commit." lightbox="media/page-view/paginated-reports-source-control-1.png":::
 
@@ -68,9 +68,11 @@ See the **Prerequisites** section in [Get started creating paginated reports in 
 
 - Publish/upload the paginated report to the service and then use git. Paginated reports don't render if you start with the files in git.  
 
-- When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.  
+- When you delete a paginated report from git, delete the *entire folder* and not just the .rdl report.
 
-- The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report builder and republish the paginated report to the Power BI service.
+- Renaming a paginated report in git doesn't work. However, renaming the .rdl on the Power BI service does work. If you do want to rename the paginated report, you must delete the paginated report from git, delete the *entire folder*, and recreate the folder with the .rdl with the new name.  
+
+- The paginated report remains connected to the original dataset when you move it to a different workspace. If you move a paginated report to a different workspace, update the dataset in Power BI Report Builder and republish the paginated report to the Power BI service.
 
 ## Next steps
 

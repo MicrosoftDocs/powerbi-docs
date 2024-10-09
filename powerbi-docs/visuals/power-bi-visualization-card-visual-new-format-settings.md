@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/27/2024
+ms.date: 10/07/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
@@ -15,8 +15,6 @@ LocalizationGroup: Visualizations
 # (new) Card visual format settings
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
-
-## Overview
 
 This article provides a comprehensive and detailed exposition of all format settings available for the (new) Card visual in Power BI Desktop.
 
@@ -53,7 +51,7 @@ With the ability to configure and display multiple cards in a single container, 
 
 #### Overflow
 
-The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to scroll continuously or flip through paginated cards, either vertically or horizontally, to view all the data within the visual.
+The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to flip through paginated cards, or scroll continuously, either vertically or horizontally, to view all the data within the visual.
 
 [!INCLUDE [layout-overflow-overflow-style](../includes/core-visuals/layout-overflow-overflow-style.md)]
 [!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
@@ -133,7 +131,7 @@ The **Title** toggle, when enabled, controls the visibility of the Series title.
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
 [!INCLUDE [reference-labels-value-format-code-fx](../includes/core-visuals/reference-labels-value-format-code-fx.md)]
-[!INCLUDE [reference-labels-value-value-decimal-places](../includes/core-visuals/reference-labels-value-value-decimal-places.md)]
+[!INCLUDE [reference-labels-value-value-decimal-places](../includes/core-visuals/global-value-decimal-places-fx.md)]
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
 #### Detail
@@ -213,15 +211,15 @@ The **Spacing** menu provides options to adjust the layout and appearance of ref
 
 #### Shape
 
-[!INCLUDE [cards-shape-shape](../includes/core-visuals/cards-shape-shape.md)]
-[!INCLUDE [cards-shape-rounded-corners](../includes/core-visuals/cards-shape-rounded-corners.md)]
-[!INCLUDE [cards-shape-size-of-top-snips](../includes/core-visuals/cards-shape-size-of-top-snips.md)]
-[!INCLUDE [cards-shape-size-of-bottom-snips](../includes/core-visuals/cards-shape-size-of-bottom-snips.md)]
-[!INCLUDE [cards-shape-customize-style](../includes/core-visuals/cards-shape-customize-style.md)]
-[!INCLUDE [cards-shape-top-left-corner](../includes/core-visuals/cards-shape-top-left-corner.md)]
-[!INCLUDE [cards-shape-top-right-corner](../includes/core-visuals/cards-shape-top-right-corner.md)]
-[!INCLUDE [cards-shape-bottom-left-corner](../includes/core-visuals/cards-shape-bottom-left-corner.md)]
-[!INCLUDE [cards-shape-bottom-right-corner](../includes/core-visuals/cards-shape-bottom-right-corner.md)]
+[!INCLUDE [cards-shape-shape](../includes/core-visuals/shape-shape.md)]
+[!INCLUDE [cards-shape-rounded-corners](../includes/core-visuals/shape-rounded-corners.md)]
+[!INCLUDE [cards-shape-size-of-top-snips](../includes/core-visuals/shape-size-of-top-snips.md)]
+[!INCLUDE [cards-shape-size-of-bottom-snips](../includes/core-visuals/shape-size-of-bottom-snips.md)]
+[!INCLUDE [cards-shape-customize-style](../includes/core-visuals/shape-customize-style.md)]
+[!INCLUDE [cards-shape-top-left-corner](../includes/core-visuals/shape-top-left-corner.md)]
+[!INCLUDE [cards-shape-top-right-corner](../includes/core-visuals/shape-top-right-corner.md)]
+[!INCLUDE [cards-shape-bottom-left-corner](../includes/core-visuals/shape-bottom-left-corner.md)]
+[!INCLUDE [cards-shape-bottom-right-corner](../includes/core-visuals/shape-bottom-right-corner.md)]
 
 #### Padding
 
