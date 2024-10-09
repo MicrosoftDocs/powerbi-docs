@@ -4,7 +4,7 @@ description: This article describes how to add drill-down support to Power BI Vi
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to

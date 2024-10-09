@@ -3,7 +3,7 @@ title: Package a Power BI visual
 description: Learn how to enter property values, update an icon, and package a Power BI visual so it can be shared and imported by other users.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to

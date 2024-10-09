@@ -332,8 +332,6 @@
         href: ../visuals/power-bi-visualization-card-visual-new-format-settings.md
       - name: (new) Card visual considerations & limitations
         href: ../visuals/power-bi-visualization-card-visual-considerations.md
-    - name: Create card visuals with big number tiles
-      href: ../visuals/power-bi-visualization-card.md
     - name: Column charts
       items: 
       - name: Create a column chart visual
@@ -342,8 +340,6 @@
         href: ../visuals/power-bi-visualization-column-chart-format-settings.md
       - name: Column chart considerations and limitations
         href: ../visuals/power-bi-visualization-column-charts-considerations.md
-    - name: Format column and bar charts
-      href: ../visuals/power-bi-visualization-column-bar-format.md
     - name: Basic area charts
       href: ../visuals/power-bi-visualization-basic-area-chart.md
     - name: Combo charts
@@ -406,8 +402,6 @@
         href: ../visuals/power-bi-visualization-matrix-visual-format-settings.md
       - name: Matrix visual considerations and limitations
         href: ../visuals/power-bi-visualization-matrix-visual-considerations.md
-    - name: Matrix visuals in Power BI Desktop     
-      href: ../visuals/desktop-matrix-visual.md
     - name: Power Apps visuals
       href: ../visuals/power-bi-visualization-powerapp.md
     - name: R visuals
