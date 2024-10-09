@@ -1,14 +1,14 @@
 ---
 title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
-author: denglishbi
+author: peter-myers
 ms.author: daengli
 ms.reviewer: maroche
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat, video-RWUWA9
-ms.date: 06/27/2024
+ms.date: 10/10/2024
 ---
 
 # Power BI implementation planning
@@ -34,7 +34,7 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [Security](powerbi-implementation-planning-security-overview.md)
 - [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md)
 - [Data gateways](powerbi-implementation-planning-data-gateways.md)
-- Integration with other services
+- [Integration with other services](powerbi-implementation-planning-integration-with-other-services.md)
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - [Adoption tracking](powerbi-implementation-planning-adoption-tracking.md)
 
