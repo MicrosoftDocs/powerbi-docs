@@ -16,9 +16,6 @@ LocalizationGroup: Create reports
 # Quick measure suggestions
 
 Quick measure suggestions assist creation of DAX measures using natural language instead of using templates or writing DAX from scratch.
-
-:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
-
 This feature can be used to jump-start creation of common DAX measures scenarios such as:
 
 - Aggregated columns (Optional filters)
@@ -34,6 +31,8 @@ This feature can be used to jump-start creation of common DAX measures scenarios
 - Top N filtered value
 - Top N values for a category
 - Information functions
+
+:::image type="content" source="media/quick-measure-suggestions/dax-measure-suggestion.png" alt-text="Screenshot of an example of a DAX measure suggestion.":::
 
 ## Enable measure suggestions
 
