@@ -81,7 +81,7 @@ When the data refresh has completed, [set up a refresh schedule](../connect-data
 
    ![View semantic model menu command](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-menu.png)
 
-1. On the page for the semantic model, select **Refresh** from the ribbon, then select **Schedule Refresh** and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
+1. On the page for the semantic model, select **Refresh** from the ribbon, then select **Schedule refresh** and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
 
 ## Customize and share
 

@@ -31,7 +31,7 @@ When installing Hospital Emergency Response Power Platform solution, take note o
 
 1. On the AppSource page for the app, select [**Get it now**](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.pphersapp).
 
-    [![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://aka.ms/AppSource_Hospital_offer)
+    [![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.pphersapp)
 
 1. You're taken to Dynamics365 where you're prompted to select an environment for installing the app.
 
@@ -83,7 +83,7 @@ When the data refresh has completed, [set up a refresh schedule](../connect-data
 
    ![View semantic model menu command](media/service-connect-to-health-emergency-response/service-health-emergency-response-menu.png)
 
-1. On the page for the semantic model, select **Refresh** from the ribbon, then select **Schedule Refresh** and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
+1. On the page for the semantic model, select **Refresh** from the ribbon, then select **Schedule refresh** and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
 
 ## Customize and share
 

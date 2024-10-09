@@ -34,7 +34,7 @@ When installing the Crisis Communication sample, take note of the [SharePoint li
 
 1. On the AppSource page for the app, select [**Get it now**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms).
 
-    [![Crisis Communication Presence Report app in AppSource](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-appsource-get-it-now.png)]
+    [![Crisis Communication Presence Report app in AppSource](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.crisiscomms)
 
 1. In the installation dialog that appears, select **Install**.
 
@@ -80,7 +80,7 @@ When the data refresh has completed, [set up a refresh schedule](../connect-data
 
    ![View semantic model menu command](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-menu.png)
 
-1. On the page for the semantic model, select **Refresh** from the ribbon, then select **Schedule Refresh** and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
+1. On the page for the semantic model, select **Refresh** from the ribbon, then select **Schedule refresh** and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
 
 ## Customize and share
 
