@@ -33,9 +33,15 @@ The following table shows the required synchronization for each refresh method w
 
 Scale-out creates one read-write semantic model replica, and as many read-only replicas as needed. All write operations are directed to the read-write replica. This includes queries on sessions that target the read-write replica explicitly, that is, don't use `?readonly` in the connection string. These queries can cause high interactive CPU usage on the read-write replica. In such cases, a new replica isn't created because the query load targeting the read-write replica can't be distributed to read-only replicas.
 
-The number of read-only replicas is determined based on the amount of CPU used by your queries. The maximum number of replicas depends on your [SKU](./service-premium-what-is.md#capacities-and-skus). A new read-only replica is created if the current CPU usage across all active read-only replicas for a semantic model is high, and stays high. However, the current load on the capacity might by high enough to cause [throttling](/fabric/enterprise/throttling) if more replicas are added. Throttling prevents additional read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created.
+The number of read-only replicas is determined based on the amount of CUs that your queries consume. If the demand exceeds the compute resources currently available on a node where the model is loaded, and stays high, an additional read-only replica may be created on another node to distribute the load. The total number of CUs consumed by all replicas combined, however, cannot exceed the maximum number of CUs that a single model is allowed to consume on your given capacity [SKU](./service-premium-what-is.md#capacities-and-skus).
 
-A replica is removed when CPU use reduces and consistently stays low.
+For example, a given semantic model on an F64 capacity will have enough resources on a single node to consume all allowed CUs on that SKU. Therefore, F64 capacities typically do not scale out beyond a single read-only replica. On the other hand, F256 and F1024+ capacities are more likely to create a second read-only replica because a single node may not be sufficient to provide all the CUs that are allowed to be used on an F256/F1024+ capacity.
+
+QSO is designed to leverage the available compute power of a given capacity SKU as efficiently and seamlessly as possible with the least number of read-only replicas, and without management overhead for semantic model owners. 
+
+However, the current load on a capacity might by high enough to cause [throttling](/fabric/enterprise/throttling) if more replicas are added. Throttling prevents additional read-only replicas from reaching a sustained high CPU usage. In such cases, a new scale out read-only replica isn't created.
+
+A replica is removed when CU use reduces and consistently stays low.
 
 ## Prerequisites
 
