@@ -152,7 +152,7 @@ When you work with geospatial data, you'll probably want to visualize it in inte
 
 For more information about how to integrate Power BI with various geospatial services, see:
 
-- [ArcGIS visualizations in Power BI reports](../visuals/power-bi-visualizations-arcgis), which use Esri services.
+- [ArcGIS visualizations in Power BI reports](../visuals/power-bi-visualizations-arcgis.md), which use Esri services.
 - [Azure Maps visualizations for Power BI reports](https://go.microsoft.com/fwlink/?linkid=2132636), which use Azure services.
 - [Map](../visuals/desktop-shape-map.md) and [filled map visuals](../visuals/power-bi-visualization-filled-maps-choropleths.md), which use Bing services.
 
@@ -182,7 +182,7 @@ Consider using source control to track and manage changes in the following scena
 To help you effectively use source control with Azure DevOps, you need to be aware of considerations and meet certain prerequisites.
 
 - **Git**: To commit and push changes to a remote repository, content creators need to [download](https://git-scm.com/downloads) and install _Git_. Git is a distributed version control system that tracks changes in your files. To learn about the basics of Git, see [What is Git?](/devops/develop/git/what-is-git).
-- **Tools**: To use Git, content creators need to use either a [command line interface (CLI)](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or a graphical user interface (GUI) client that has integrated source control management (SCM), like [Visual Studio](/visualstudio/extensibility/internals/source-control?view=vs-2022) or [Visual Studio Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
+- **Tools**: To use Git, content creators need to use either a [command line interface (CLI)](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or a graphical user interface (GUI) client that has integrated source control management (SCM), like [Visual Studio](/visualstudio/extensibility/internals/source-control) or [Visual Studio Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 - **Licenses and permissions**: To create and use an Azure Repos Git repository, content creators must:
   - Have their Azure DevOps [access level](/azure/devops/organizations/billing/buy-basic-access-add-users?view=azure-devops&preserve-view=true) set to _Basic_ (as opposed to _Stakeholder_).
   - Belong to an Azure DevOps [organization](/azure/devops/user-guide/manage-organization-collection?view=azure-devops&preserve-view=true#add-users-to-your-organization) and a [project](/azure/devops/organizations/security/add-users-team-project?view=azure-devops&tabs=preview-page&preserve-view=true).
@@ -438,7 +438,7 @@ Use cases for embedding Power BI reports in SharePoint online include:
 
 ### Integration with Visual Studio and VS Code
 
-Many developers are familiar with using [Visual Studio](/visualstudio/get-started/visual-studio-ide?view=vs-2022) or [Visual Studio Code (VS Code)](/shows/visual-studio-code/) to manage source files and metadata. These tools have several options to integrate with Power BI and Fabric.
+Many developers are familiar with using [Visual Studio](/visualstudio/get-started/visual-studio-ide) or [Visual Studio Code (VS Code)](/shows/visual-studio-code/) to manage source files and metadata. These tools have several options to integrate with Power BI and Fabric.
 
 #### Develop semantic models by using Visual Studio with Analysis Services projects
 
