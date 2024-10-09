@@ -13,7 +13,7 @@
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-column-bar-format.md",
             "redirect_url": "/power-bi/visuals/power-bi-visualization-column-chart-format-settings",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/visuals/power-bi-visualization-card.md",
