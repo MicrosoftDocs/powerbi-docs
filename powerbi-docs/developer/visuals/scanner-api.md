@@ -7,7 +7,7 @@ ms.reviewer: gennadyl
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 09/29/2024
+ms.date: 10/10/2024
 #customer intent: As a Power BI visual developer, I want to learn how to use the scanner API to receive metadata about a Power BI visual so that I can better understand the visual and its usage.
 ---
 
@@ -53,7 +53,7 @@ The following snippet is an example of the reports section of the scanner API ou
           "displayName": "Page 2", 
           "visuals": [ 
             { 
-              "visualGuid": "clusteredBarChart" 
+              "visualType": "clusteredBarChart" 
             } 
           ] 
         }, 
@@ -61,10 +61,10 @@ The following snippet is an example of the reports section of the scanner API ou
           "displayName": "Page 1", 
           "visuals": [ 
             { 
-              "visualGuid": "Sunburst1445472000808" 
+              "visualType": "Sunburst1445472000808" 
             }, 
             { 
-              "visualGuid": "WordCloud1447959067750" 
+              "visualType": "WordCloud1447959067750" 
             } 
           ] 
         } 
@@ -73,7 +73,7 @@ The following snippet is an example of the reports section of the scanner API ou
   ]
  ```
 
-As you can see, the reports section contains a `sections` list. Each section contains the section name and lists the GUID of each visual in that section:
+As you can see, the reports section contains a `sections` list. Each section contains the section name and lists the type of each visual in that section:
 
 ```json
   "sections": [ 
@@ -81,21 +81,21 @@ As you can see, the reports section contains a `sections` list. Each section con
       "displayName": "Page 1", 
       "visuals": [ 
         { 
-          "visualGuid": "Sunburst1445472000808" 
+          "visualType": "Sunburst1445472000808" 
         }, 
         { 
-          "visualGuid": "WordCloud1447959067750" 
+          "visualType": "WordCloud1447959067750" 
         } 
       ] 
     } 
   ] 
 ```
 
-To get information about a visual (for example, its name, whether it’s a core visual, public custom visual or private visual, certified, etc.) check the visual GUID against multiple data sources. Then add to the data about the visual data based on the information you find.
+To get information about a visual (for example, its name, whether it’s a core visual, public custom visual or private visual, certified, etc.) check the visual type against multiple data sources. Then add to the data about the visual data based on the information you find.
 
 ## Core visuals
 
-The following list contains the GUIDs of the [Core (built-in) visuals](./power-bi-custom-visuals.md#core-power-bi-visuals):
+The following list contains the types of [Core (built-in) visuals](./power-bi-custom-visuals.md#core-power-bi-visuals):
 
 ```json
 "actionButton" 
@@ -155,7 +155,7 @@ The following list contains the GUIDs of the [Core (built-in) visuals](./power-b
 "heatMap"
 ```
 
-If the visual GUID is one of the core visuals, there's no need to look for it in other data sources, like AppSource catalog.
+If the visual type is a core visual, there's no need to look for it in other data sources, like AppSource catalog.
 
 ## AppSource (public) custom visuals
 
@@ -173,9 +173,9 @@ The resulting json contains a list of items and a link to the next page, `nextPa
 } 
 ```
 
-Typically, a full list of visuals is about 3-4 pages long. You must fetch all the pages for a complete report.
+Typically, a full list of visuals is about 3-4 pages long. For complete information about the visual, you must fetch the entire report.
 
-Each item in the items list is a custom visual and contains all the information stored about it in AppSource. This document provides only relevant fields:
+Each item in the items list is a custom visual and contains all the information stored about it in AppSource. This document references only relevant fields:
 
 ```json
 
@@ -209,7 +209,7 @@ Each item in the items list is a custom visual and contains all the information 
 
 The following fields can be used to enhance information about a visual provided by Scanner API:
 
-* "powerBIVisualId": used to find correct item, which should be the same as "visualGuid" from Scanner output
+* "powerBIVisualId": used to find correct item, which should be the same as `visualType` from Scanner output
 
 * "displayName": visual name
 
@@ -221,17 +221,17 @@ The following fields can be used to enhance information about a visual provided 
 
 ## Private Custom Visuals (from a file)
 
- Private visuals added to a Power BI report using the [Import a visual from a file](./import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) option. If a visual isn't a core visual and not an AppSource visual, it’s a private visual. For private visuals, we provide only their GUIDs.
+ Private visuals added to a Power BI report using the [Import a visual from a file](./import-visual.md#import-a-visual-file-from-your-local-computer-into-power-bi) option. If a visual isn't a core visual and not an AppSource visual, it’s a private visual. For private visuals, we provide only their `visualType`.
 
 ## Organization visuals
 
-Both AppSource visuals and private visuals can be added to the Organization’s visuals store which exists for each organization (tenant). If a private custom visual is added to an organization’s visual store, the suffix _OrgStore is added to its GUID. In contrast, when an AppSource visual is added directly to an organization’s visual store, it keeps its original GUID.
+Both AppSource visuals and private visuals can be added to the Organization’s visuals store which exists for each organization (tenant). If a private custom visual is added to an organization’s visual store, the suffix _OrgStore is added to its `visualType`. In contrast, when an AppSource visual is added directly to an organization’s visual store, it keeps its original `visualType`.
 
 To determine if a public custom visual (from AppSource) is in an organization's store:
 
 1. Get the visual’s information using information from the [AppSource catalog](#appsource-public-custom-visuals).
 1. Download the organization’s visuals list (in CSV format) from **Power BI** -> **Admin Portal** -> **Organization Visuals** -> **Export**.
-1. If the visual’s GUID appears in the downloaded list, this visual is an organizational visual. In this case, update visual name to match the one in the CSV file.
+1. If the visual’s `visualType` appears in the downloaded list, this visual is an organizational visual. In this case, update visual name to match the one in the CSV file.
 
 > [!NOTE]
 >
