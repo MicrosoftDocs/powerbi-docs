@@ -38,7 +38,7 @@ If you want all report consumers to start from the same filter state, you can di
 
 To disable **Persistent filters** in Power BI Desktop:
 
-1. On the **File** menu, open the **Options and settings** dialog, and then select **Options**.
+1. On the **File** menu, select **Options and settings**, and then select **Options**.
 
 1. In the **Options** dialog, go to the **Current file** section, select **Report settings** to display the **Persistent filters** section, and then select the **Don't allow end user to save filters on this report** checkbox.
 
