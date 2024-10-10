@@ -98,7 +98,7 @@ Set up the **visual.ts** file.
     > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
 
-3. Import the libraries and modules needed, and define the type selection for the [d3 library](https:/d3js.org):
+3. Import the libraries and modules needed, and define the type selection for the [d3 library](https://d3js.org):
 
    ```typescript
    "use strict";
