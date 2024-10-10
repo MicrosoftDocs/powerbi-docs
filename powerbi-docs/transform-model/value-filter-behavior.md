@@ -59,7 +59,7 @@ Therefore, the number of products for all years now counts just the number of bl
 ## Influencing the value filter behavior 
 You can control whether you want this behavior in your semantic model, by using the **Value filter behavior** setting on your semantic model in the properties pane in the model view:
 
-:::image type="content" source="media/value-filter-behavior/value-filter-behavior-options.png" alt-text="Screenshot of a matrix showing number of products by year and color.":::
+:::image type="content" source="media/value-filter-behavior/value-filter-behavior-options.png" alt-text="Screenshot of the properties pane in the model view. The value filter behavior options are highlighted.":::
 
 Three options are available:
 - **Automatic** - This is the default setting and currently turns on the Coalesced behavior. When we wrap up this preview, new models set to **Automatic** will use Independent, there will be announced at that time.
