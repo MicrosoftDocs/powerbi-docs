@@ -41,7 +41,7 @@ You can view the lineage of the datamart by selecting **Lineage > Open lineage**
 
 The following image shows the lineage of a datamart.
 
-:::image type="content" source="media/datamarts-discovery/datamarts-discovery-02.png" alt-text="Screenshot of datamart lineage view" lightbox="media/datamarts-discovery/datamarts-discovery-02.png":::
+:::image type="content" source="media/datamarts-discovery/datamarts-discovery-02.png" alt-text="Screenshot of datamart lineage view." lightbox="media/datamarts-discovery/datamarts-discovery-02.png":::
 
 To view any dependent items of the selected datamart, select the **Impact analysis** menu, which is displayed along the right side of the screen.
 

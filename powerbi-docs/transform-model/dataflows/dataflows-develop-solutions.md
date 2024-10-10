@@ -53,7 +53,7 @@ For small teams, PPU can bridge the gap between Free, Pro, and Premium per capac
 
 Imagine that you need to create dataflows for consumption but have security requirements:
 
-:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Diagram that describes the scenario":::
+:::image type="content" source="media/dataflows-develop-solutions/dataflows-develop-solutions-01.png" alt-text="Diagram that describes the scenario.":::
 
 In this scenario, you likely have two types of workspaces:
 
