@@ -22,7 +22,7 @@ For information about sync slicers and how they work, see [Sync and use slicers 
 
 ## How to enable the sync slicer feature
 
-In the *capabilities.json* file, set `"supportsSynchronizingFilterState": true`, as shown in the following example:
+In the [*capabilities.json* file](./visual-project-structure.md#capabilitiesjson), set `"supportsSynchronizingFilterState": true`, as shown in the following example:
 
 ```json
 {
