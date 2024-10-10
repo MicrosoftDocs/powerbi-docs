@@ -42,7 +42,7 @@ For example, say you're a sales manager that travels to meet customers, and you 
 
 ## Create visuals with your geographic data
 
-1. Switch to the Report view, :::image type="icon" source="media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png"::: and create visuals that use the geographic fields in your data.
+1. Switch to the Report view :::image type="icon" source="media/desktop-mobile-geofiltering/power-bi-desktop-report-icon.png":::, and create visuals that use the geographic fields in your data.
 
     :::image type="content" source="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png" alt-text="Screenshot of Report view showing a map and a clustered bar chart visual." lightbox="media/desktop-mobile-geofiltering/power-bi-desktop-geo-report.png":::
 
