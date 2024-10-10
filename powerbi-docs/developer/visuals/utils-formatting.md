@@ -3,12 +3,11 @@ title: Introduction to use formatting utils in Power BI visual
 description: Learn how to use formatting utils to format values and apply localization to values in Power BI visuals.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: rkarlin
-manager: rkarlin
+ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 01/06/2024
+ms.date: 10/10/2024
 #customer intent: As a developer, I want to learn how to use formatting utils to format values and apply localization to values in Power BI visuals.
 ---
 
@@ -531,13 +530,13 @@ let valueFormatterUK = valueFormatter.create({ cultureSelector: "en-GB" });
 
 valueFormatterUK.format(new Date(2007, 2, 3, 17, 42, 42));
 
-// returns: 03/03/2007 17:42:42
+// returns: 02/03/2007 17:42:42
 
 let valueFormatterUSA = valueFormatter.create({ cultureSelector: "en-US" });
 
 valueFormatterUSA.format(new Date(2007, 2, 3, 17, 42, 42));
 
-// returns: 3/3/2007 5:42:42 PM
+// returns: 2/3/2007 5:42:42 PM
 ```
 
 #### The percentage format
@@ -562,7 +561,7 @@ let date = new Date(2016, 10, 28, 15, 36, 0),
 
 iValueFormatter.format(date);
 
-// returns: 11/28/2016 3:36:00 PM
+// returns: 10/28/2016 3:36:00 PM
 ```
 
 #### The boolean format

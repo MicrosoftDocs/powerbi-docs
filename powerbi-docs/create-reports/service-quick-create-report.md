@@ -72,7 +72,8 @@ To view licensing and model limitations, review the **Considerations and limitat
 - If you have a CSV or Excel file, you need to use the paste option to add your data. A file upload option is coming later.
 - When copying data into the **Enter data** window, the size of data you paste can't exceed 512 KB.
 - The table name can’t be longer than 80 characters, and column names can’t be longer than 512 characters.  
-- Table and column names can’t contain double quotes ("), periods (.), or leading or trailing white spaces.  
+- Table and column names can’t contain double quotes ("), periods (.), or leading or trailing white spaces.
+- Gateway connections aren't supported for the Excel and CSV connectors.
 
 ### Report limitations  
 

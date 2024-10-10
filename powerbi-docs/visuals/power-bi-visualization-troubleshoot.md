@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
-ms.date: 09/18/2024
+ms.date: 10/10/2024
 ms.custom: TSG - Troubleshooting Guide
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to be aware of the various considerations, limitations, and workarounds to overcome known obstacles or potential problems with Power BI visualizations, so that I can effectively and easily identify solutions in both Power BI Desktop and the Power BI service.
@@ -24,9 +24,9 @@ This section addresses potential problems that users might encounter with slicer
 
 ### Clear button
 
-Users might have difficulty finding the **Clear** button for the original slicer visuals. The **Clear** button, indicated by an eraser icon, is located in **Slicer Header** and becomes visible only when the user hovers over it. Some report authors might choose to disable **Slicer Header** and enable **Visual Container Title**, which is disabled by default for these visuals.
+Users might have difficulty finding the **Clear** button for the original slicer visuals. The **Clear** button, indicated by an eraser icon, is located in the **Slicer** header and becomes visible only when the user hovers over it. Some report authors might choose to disable the **Slicer** header and enable the **Visual container** header, which is disabled by default for these visuals.
 
-To ensure access to the **Clear** button, restore the **Slicer Header** visibility. For **New Slicer visuals**, we moved the **Clear** button into **Visual Container Header** and removed the concept of a separate slicer header. For **New Slicers**, if the report author disables **Visual Container Header**, the **Clear** button isn't available.
+To ensure access to the **Clear** button, restore the **Slicer** header's visibility. For the **Slicer (new)** visuals, we moved the **Clear** button into the **Visual container** header and removed the concept of a separate **Slicer** header. For these **Slicer (new)** visuals, if the report author disables the **Visual container** header, the **Clear** button isn't available.
 
 We recommend that report authors select the **Clear** icon and then select **Save** in that state before publishing, especially for range slicers. For other slicer types, you might intentionally save a default selection so that report consumers start with a specific set of filters. But keep in mind that **Date Range** slicers typically work best when they start in a cleared state. Use care to ensure that slicers are cleared, or intentionally set, when you're creating bookmarks.
 
@@ -34,15 +34,19 @@ We recommend that report authors select the **Clear** icon and then select **Sav
 
 Power BI reports have a setting that allows user slicer and filter choices to be saved automatically and reapplied when the users return to view a report later on. This setting, enabled by default, can lead to different experiences for different users. When reports also use bookmarks, this setting can potentially lead to unexpected results.
 
-If you prefer that all report consumers start from exactly the same filter state, you can disable persistent filters on the report:
+If you want all report consumers to start from the same filter state, you can disable **Persistent filters** on the report. This setting ensures that user modifications to filters aren't saved. It maintains the report's original filter configuration as published by the author. Users can always reset to the authored state by selecting the **Reset to default** button.
 
-1. In Power BI Desktop, on the **File** menu, open the **Options** dialog. In the **Current File** section, select **Report settings**.
+To disable **Persistent filters** in Power BI Desktop:
 
-   In the Power BI service, on the **File** menu, select **Settings** to display the **Report Settings** pane.
+1. On the **File** menu, open the **Options and settings** dialog, and then select **Options**.
 
-1. Turn on the **Persistent Filters** toggle to enable the **Don't allow end user to save filters on this report** option.
+1. In the **Options** dialog, go to the **Current file** section, select **Report settings** to display the **Persistent filters** section, and then select the **Don't allow end user to save filters on this report** checkbox.
 
-This setting ensures that user modifications to filters aren't saved. It maintains the report's original filter configuration as published by the author. Users can always reset to the authored state by selecting the **Reset to default** button.
+To disable **Persistent filters** in the Power BI service:
+
+1. On the **File** menu, select **Settings** to display the **Report settings** pane.
+
+1. Turn on the **Persistent filters** toggle to enable the **Don't allow end user to save filters on this report** option.
 
 ### Selection
 
@@ -74,7 +78,7 @@ To ensure consistency, report creators should be aware of the browser locale's i
 
 ### <a name = "display-units-suffix"></a> Display unit suffix
 
-Power BI dynamically alters the display unit suffix to match the regional or system settings of the user's environment. This automatic adaptation helps ensure consistency with local conventions but might lead to confusion when users share reports across different geographies or systems.
+Power BI dynamically alters the display unit suffix to match the regional or system settings of the user's environment. This automatic adaptation helps ensure consistency with local conventions, but it could lead to confusion when users share reports across different geographies or systems.
 
 Currently, there's no direct feature within Power BI to lock the display unit suffix irrespective of location or system settings. However, you can manually adjust the format settings of the visuals to specify a consistent display unit. You need to make this adjustment individually for each visual component that displays values.
 
@@ -110,7 +114,7 @@ This section addresses potential problems that users might encounter with report
 
 In Power BI, the assignment of [theme colors](../create-reports/desktop-report-themes.md#dynamic-series) to series can vary, depending on whether the series is static or dynamic. This variability can lead to inconsistencies in color representation across report views.
 
-For static series, Power BI assigns theme colors based on the index order of the series. However, for dynamic series, colors are allocated on a first-come, first-served basis. As a result, the colors that you choose for a series might change, depending on one of these factors:
+For static series, Power BI assigns theme colors based on the index order of the series. However, for dynamic series, colors are allocated on a first-come, first-served basis. As a result, the colors that you choose for a series could change, depending on one of these factors:
 
 - The sequence in which report pages are viewed, when filters are applied in a different order
 - The user, if the environment uses RLS
@@ -137,7 +141,7 @@ This section addresses potential problems that users might encounter when workin
 
 Bing Maps for Power BI is being deprecated and should no longer be used for geographical data representation in Power BI. As part of the transition to more advanced and business-focused services, we recommend Azure Maps as the alternative to Bing Maps for Power BI. Azure Maps provides a rich set of geographical data services and features that are continually updated.
 
-You can convert your Bing Maps visuals to Azure Maps by selecting them and then selecting the Azure Maps icon on the visualization pane. We try to preserve your formatting settings during conversion. Alternatively, you might notice the pop-up dialog when opening the report in Power BI Desktop, with an option to convert all your Bing Maps visuals to Azure Maps.
+You can convert your Bing Maps visuals to Azure Maps by selecting each visual and then selecting the Azure Maps icon on the **Visualization** pane. We try to preserve your formatting settings during conversion. Alternatively, you might notice the pop-up dialog when opening the report in Power BI Desktop, with an option to convert all your Bing Maps visuals to Azure Maps.
 
 For a comprehensive understanding of Azure Maps, including how to get started, what data is sent to Azure, and the service's limitations, see [Get started with Azure Maps Power BI visual](/azure/azure-maps/power-bi-visual-get-started).
 
@@ -168,7 +172,7 @@ We recommend that you design dashboards without relying on report-page tooltips,
 
 Users might notice that line chart tooltips are displayed differently from other charts. By default, Power BI shows all series values and a vertical alignment bar to help users compare all series values within a specific category.
 
-In some cases, the standard datapoint tooltip renders, such as for combo charts and when line charts enter high-density sampling after hitting data limits. Different filters might push the query slightly above or below the limits, resulting in different tooltips at different times for the same line chart visual.
+In some cases, the standard datapoint tooltip renders, such as for combo charts and when line charts enter high-density sampling after hitting data limits. Different filters could push the query slightly higher or lower than the limits, resulting in different tooltips at different times for the same line chart visual.
 
 For more information, see [High-density line sampling in Power BI](../create-reports/desktop-high-density-sampling.md#tooltips-and-high-density-line-sampling).
 

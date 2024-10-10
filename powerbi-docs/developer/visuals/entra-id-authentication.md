@@ -3,7 +3,7 @@ title: Microsoft Entra ID application setup
 description: This article describes how to set up authentication for third party ISVs in Microsoft Entra for single sign-in users.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to

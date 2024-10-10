@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 09/23/2024
+ms.date: 10/08/2024
 LocalizationGroup: Gateways
 #customer intent: As a Power BI user I want to learn how to configure SSO for my SAP HANA server using Power BI.
 ---
@@ -20,11 +20,11 @@ This article describes how to configure your SAP HANA data source to enable sing
 > Because [SAP no longer supports OpenSSL](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.05/en-US/de15ffb1bb5710148386ffdfd857482a.html), Microsoft has also discontinued its support. Your existing connections continue to work but you can no longer create new connections. Use SAP Cryptographic Library (CommonCryptoLib), or sapcrypto, instead.
 
 > [!NOTE]
-> Before you attempt to refresh a SAP HANA-based report that uses Kerberos SSO, complete the steps in both this article and [Configure Kerberos SSO](service-gateway-sso-kerberos.md).
+> Before you attempt to refresh an SAP HANA-based report that uses Kerberos SSO, complete the steps in both this article and [Configure Kerberos-based SSO](service-gateway-sso-kerberos.md).
 
 ## Enable SSO for SAP HANA
 
-To enable SSO for SAP HANA, do the following steps:
+To enable SSO for SAP HANA, complete the following steps:
 
 1. Ensure the SAP HANA server is running the required minimum version, which depends on your SAP HANA server platform level:
    - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
@@ -39,7 +39,7 @@ We also recommend following these extra steps, which can yield a small performan
 
 1. In the gateway installation directory, look for and open this configuration file: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
-1. Look for the `FullDomainResolutionEnabled` property, and change its value to `True`.
+1. Look for the `FullDomainResolutionEnabled` property and change its value to `True`.
 
     ```xml
     <setting name=" FullDomainResolutionEnabled " serializeAs="String">
@@ -82,7 +82,7 @@ This issue has multiple symptoms.
 
 #### Resolution
 
-To resolve this TLS/SSL error, go to the data source connection and then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
+To resolve this TLS/SSL error, go to the data source connection. Then, in the **Validate Server Certificate section**, disable the setting, as shown in the following image:
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/validate-server-certificate.png" alt-text=" Screenshot of resolving TLS/SSL error window by disabling the certificate." :::
 
@@ -90,7 +90,7 @@ After you've disabled this setting, the error message no longer appears.
 
 ### Impersonation
 
-Log entries for impersonation contain entries similar to: 
+Log entries for impersonation contain entries similar to:
 
 ```output
 About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation).
@@ -106,7 +106,7 @@ After you've changed the configuration file, restart the gateway service for the
 
 #### Validation
 
-Refresh or create the report, and then collect the gateway logs. Open the most recent *GatewayInfo* file, and check the following string: `About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)`. Make sure that the `ImpersonationLevel` setting returns `Impersonation`.
+Refresh or create the report, and then collect the gateway logs. Open the most recent *GatewayInfo* file and check the following string: `About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Impersonation)`. Make sure that the `ImpersonationLevel` setting returns `Impersonation`.
 
 ### Delegation
 
@@ -124,7 +124,7 @@ When you investigate further by using Wireshark traces, you reveal the error `KR
 
 #### Resolution
 
-To resolve SPN issues such as this issue, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
+To resolve SPN issues like this one, you must add an SPN to a service account. For more information, see the SAP documentation in [Configure Kerberos for SAP HANA database Hosts](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/c786f2cfd976101493dfdf14cf9bcfb1.html).
 
 In addition, follow the resolution instructions described in the next section.
 
@@ -136,7 +136,7 @@ There might not be clear symptoms associated with this issue. When you investiga
 29T20:21:34.6679184Z","Action":"RemoteDocumentEvaluator/RemoteEvaluation/HandleException","HostProcessId":"1396","identity":"DirectQueryPool","Exception":"Exception:\r\nExceptionType: Microsoft.Mashup.Engine1.Runtime.ValueException, Microsoft.MashupEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\r\nMessage:
 ```
 
-When you investigate the same file further, the following (unhelpful) error appears: 
+When you investigate the same file further, the following (unhelpful) error appears:
 
 ```output
 No credentials are available in the security package
@@ -146,11 +146,11 @@ Capturing Wireshark traces reveals the following error: `KRB5KDC_ERR_BADOPTION`.
 
 :::image type="content" source="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png" alt-text="Screenshot showing a 'No credentials error'." lightbox="media/service-gateway-sso-kerberos-sap-hana/sap-hana-kerberos-troubleshooting-08.png":::
 
-Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azure.com* file could be found but isn't in the **Services to which this account can present delegated credentials** list on the **Delegation** pane in the Gateway service account.
+Usually, these errors mean that the SPN *hdb/hana2-s4-sso2.westus2.cloudapp.azure.com* file could be found but isn't in the **Services to which this account can present delegated credentials** list on the **Delegation** pane in the gateway service account.
 
 #### Resolution
 
-To resolve the *No credentials* issue, follow the steps described in [Configure Kerberos constrained delegation](service-gateway-sso-kerberos.md#step-4-configure-kerberos-constrained-delegation). When completed properly, the delegation tab at the gateway service account reflects the HansaWorld Database (HDB) file and fully qualified domain name (FQDN) in the list of **Services to which this account can present delegated credentials**.
+To resolve the *No credentials* issue, follow the steps described in [Configure Kerberos constrained delegation](service-gateway-sso-kerberos.md#step-4-configure-kerberos-constrained-delegation). When completed properly, the Delegation pane in the gateway service account reflects the HansaWorld Database (HDB) file and fully qualified domain name (FQDN) in the list of **Services to which this account can present delegated credentials**.
 
 #### Validation
 
