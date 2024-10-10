@@ -4,7 +4,7 @@ description: Learn about the chart utils interfaces and methods to draw axes, da
 author: mberdugo
 ms.author: monaberdugo
 manager: kfollis
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

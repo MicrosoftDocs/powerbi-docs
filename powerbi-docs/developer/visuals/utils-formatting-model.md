@@ -4,7 +4,7 @@ description: This article describes how to use SVG utils to create formatting mo
 author: mberdugo
 ms.author: monaberdugo
 manager: 
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference

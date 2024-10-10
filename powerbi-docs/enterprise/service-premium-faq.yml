@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: powerbi-premium
   ms.topic: faq
-  ms.date: 04/22/2024
+  ms.date: 09/26/2024
   LocalizationGroup: Premium
   
 title: Power BI Premium FAQ
@@ -107,7 +107,7 @@ sections:
           |----------------------------|------------------------------|---------------|
           | Commitment                 | Monthly or yearly            | Monthly, yearly and pay as you go |
           | Pricing                    | Global                       | Regional      |
-          | Power BI Report Server     | Included                     | Not included  |
+          | Power BI Report Server     | Included                     | Included with a [reserved license](/azure/cost-management-billing/reservations/fabric-capacity)  |
           | Power BI Embedded          | Included when buying EM SKUs | Included      |
           | Azure features<sup>*</sup> | Not included                 | Included      |
 

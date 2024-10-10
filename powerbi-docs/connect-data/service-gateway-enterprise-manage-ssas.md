@@ -7,17 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/15/2023
+ms.date: 09/23/2024
 ms.custom: video-removed, video-removed
 LocalizationGroup: Gateways
+#customer intent: As a Power BI user I want to learn how to manage SQL Server Analysis services for the on-premisis gateway.
 ---
 # Manage SQL Server Analysis Services data sources
-
-[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 After you [install an on-premises data gateway](/data-integration/gateway/service-gateway-install), you can [add data sources](service-gateway-data-sources.md#add-a-data-source) to use with the gateway. This article describes how to add a SQL Server Analysis Services (SSAS) data source to your on-premises gateway to use for scheduled refresh or for live connections.
 
 To learn more about how to set up a live connection to SSAS, watch this [Power BI Walkthrough: Analysis Services Live Connect](https://www.youtube.com/watch?v=GPf0YS-Xbyo&feature=youtu.be) video.
+
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 > [!NOTE]
 > If you have an Analysis Services data source, you need to install the gateway on a computer joined to the same forest or domain as your Analysis Services server.
@@ -88,10 +89,6 @@ To do manual UPN mapping, follow these steps:
 1. Under **Map user names**, for each user name to map, enter values for **Original name** and **New name**, and then select **Add new rule**. The **Replace** value is the sign-in address for Power BI, and the **With** value is the value to replace it with. The replacement passes to the `EffectiveUserName` property for the Analysis Services connection.
 
    :::image type="content" source="media/service-gateway-enterprise-manage-ssas/add-new-rules.png" alt-text="Screenshot of Add new rule in the Map user names box.":::
-
-   For example:
-
-   :::image type="content" source="media/service-gateway-enterprise-manage-ssas/replace-with-rule.png" alt-text="Screenshot of example mapping rules." :::
 
    > [!NOTE]
    > Be sure not to change users that you don't intend to change. For example, if you replace the **Original name** of `contoso.com` with a **New name** of `@contoso.local`, all user sign-ins that contain `@contoso.com` are replaced with `@contoso.local`. Also, if you replace an **Original name** of `meganb@contoso.com` with a **New name** of `meganb@contoso.local`, a sign-in of `v-meganb@contoso.com` is sent as `v-meganb@contoso.local`.

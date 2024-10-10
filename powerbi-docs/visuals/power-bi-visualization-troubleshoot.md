@@ -3,7 +3,7 @@ title: Troubleshoot visualizations in Power BI
 description: Troubleshoot visualizations in Power BI, including common issues and workarounds to overcome known obstacles or potential problems.
 author: JaedenArmstrong
 ms.author: miguelmyers
-ms.reviewer: davidi
+ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: conceptual
@@ -49,6 +49,10 @@ This section addresses potential issues users may encounter with dates in visual
 ### Format strings
 
 In Power BI, certain visual elements don't utilize the model format string for dates to conserve space and present only the necessary detail. This can lead to confusion when the displayed date format doesn't match the user’s expectations. For these elements, Power BI uses the browser’s locale settings to determine the date format. This means that the format may vary depending on the user’s browser configuration, which influences how dates are displayed in the report. To ensure consistency, report creators should be aware of the browser locale’s impact on date formatting. Common areas affected by this include [**Slicers**](../create-reports/desktop-slicer-numeric-range.md#display-formatting-with-the-date-range-slicer), and [**Cartesian Axis Tick Labels**](../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md#considerations-and-limitations), and some sections of the **Filter Pane**.
+
+### Display units suffix
+
+Power BI dynamically alters the display units suffix to match the regional or system settings of the user’s environment. This automatic adaptation ensures consistency with local conventions but may lead to confusion when sharing reports across different geographies or systems. Currently, there is no direct feature within Power BI to lock the display units suffix irrespective of location/system settings. However, users can manually adjust the format settings of the visuals to specify a consistent display unit. This adjustment needs to be done individually for each visual component that displays values. In order for custom format string to display you must not have a display unit set in the visuals format settings, you may need to click ‘reset to default’ to clear any display unit override.
 
 ## Fonts
 
