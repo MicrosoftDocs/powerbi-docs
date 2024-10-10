@@ -49,6 +49,8 @@
       href: desktop-storage-mode.md
     - name: "Work with multidimensional models in Power BI"
       href: ../connect-data/desktop-default-member-multidimensional-models.md            
+    - name: "Work with value filter behavior (preview)"
+      href: value-filter-behavior.md
   - name: Datamarts (preview)
     items: 
     - name: "Introduction to datamarts (preview)"
