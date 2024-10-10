@@ -6,9 +6,11 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
-ms.topic: conceptual
-ms.date: 02/10/2023
+ms.topic: concept-article
+ms.date: 09/30/2024
 LocalizationGroup: Transform and shape data
+ms.custom: FY25Q1-Linter
+#customer intent: As a Power BI user I want to learn how to use keyboard shortcuts in Power BI Desktop.
 ---
 # Formula editor in Power BI Desktop
 

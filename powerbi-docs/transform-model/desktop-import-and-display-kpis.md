@@ -7,8 +7,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 1/3/2023
+ms.date: 09/30/2024
 LocalizationGroup: Model your data
+ms.custom: FY25Q1-Linter
+#customer intent: As a Power BI user I want to learn how to import KPIs from an Excel workbook.
 ---
 
 # Import and display KPIs in Power BI
@@ -27,6 +29,6 @@ To import and display KPIs:
 
 1. Imported KPIs are best used in standard visualization types, such as the **Table** type. Power BI also includes the **KPI** visualization type, which should only be used to create new KPIs.
 
-    :::image type="content" source="media/desktop-import-and-display-kpis/desktoppreviewfeatureon3.png" alt-text="Screenshot of Power BI Desktop showing Table1 fields selected in Field pane.":::
+    :::image type="content" source="media/desktop-import-and-display-kpis/desktoppreviewfeatureon3.png" alt-text="Screenshot of Power BI Desktop showing Table1 fields selected in Field pane." lightbox="media/desktop-import-and-display-kpis/desktoppreviewfeatureon3.png":::
 
 You can use KPIs to highlight trends, progress, or other important indicators.
