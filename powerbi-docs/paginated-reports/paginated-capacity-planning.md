@@ -91,15 +91,15 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 ### Calculate the max report renders
 
-Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](/fabric/enterprise/throttling#track-overages-and-rejected-operations). To learn more about Capacity Units (CU), SKU and Power BI v-cores, refer to [Capacity](/fabric/enterprise/licenses#capacity).
+Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](/fabric/enterprise/throttling#track-overages-and-rejected-operations).
 
-```$ \text {max concurrent report renders} = {\text {capacity units for your capacity} \times {30} \over \text {your report's CPU processing time (in seconds)} \times {8}} $```
+$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over \text {your report's CPU processing time (in seconds)}} $
 
 ### Calculate the max number of users
 
 Using the estimated [five percent concurrency](#how-many-users-can-a-sku-handle) for the correlation between the number of total users, and the maximum concurrent renders, you can get the number of total users a SKU can handle.
 
-```$ \text {max SKU users} = {\text {max concurrent report renders} \over 0.05} $```
+$ \text {max SKU users} = {\text {max concurrent report renders} \over 0.05} $
 
 ### Calculate capacity resources for multiple reports
 
@@ -107,7 +107,7 @@ You can use an extended formula to estimate the capacity needed for different re
 
 Upload several paginated reports with different number of daily renders, and use the metrics app to get the average CPU processing time for each one. The sum of all your report renders per day should be equal to 100%. When you have all the information, use this formula.
 
-```$ \text {max concurrent report renders} = {\text {capacity units for your capacity} \times {30} \over {8} \times {{\text {A renders} \times \text {A processing time}} + \text {B renders} \times \text {B processing time} + \text {...} + \text{N renders} \times \text{N processing time}}}$```
+$ \text {max concurrent report renders} = {\text {number of capacity SKU cores} \times {30} \over {\text {A renders} \times \text {A processing time}} + \text {B renders} \times \text {B processing time} + \text {...} + \text{N renders} \times \text{N processing time}}$
 
 ## Examples
 
@@ -117,11 +117,11 @@ This section includes two examples, one for the [regular calculation](#regular-c
 
 Let’s assume that you're running a paginated report on an *F64* or *P1* SKU that has eight cores. The total CPU usage for 10 runs is 40 seconds, so the average CPU time per reports is four seconds.
 
-```$ 60 = {8 \times {30} \over 4} $```
+$ 60 = {8 \times {30} \over 4} $
 
 When using the second formula, you get a maximum of 1,200 users.
 
-```$ 1,200 = {60 \over 0.05} $```
+$ 1,200 = {60 \over 0.05} $
 
 For *F128* or *P2* SKUs, you can multiply these numbers by two, as the capacity has twice the number of CPU cores.
 
