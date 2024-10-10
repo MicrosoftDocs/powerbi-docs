@@ -5512,6 +5512,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/fundamentals/webinars.md.md",
+            "redirect_url": "https://community.fabric.microsoft.com/t5/Upcoming-Events/bd-p/Community",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/embedded/jupyter-quick-report.md",
             "redirect_url": "/power-bi/create-report/mobile-apps-for-mobile-devices",
             "redirect_document_id": false
