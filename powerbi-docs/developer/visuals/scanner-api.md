@@ -180,7 +180,7 @@ Each item in the items list is a custom visual and contains all the information 
 ```json
 
 
-"powerBIVisualId": "visualGUID", 
+"powerBIVisualId": "visualType", 
 
 "displayName": "Mapbox Custom Visual", 
 
