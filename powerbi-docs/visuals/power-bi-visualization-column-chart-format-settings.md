@@ -16,25 +16,23 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-yes-desktop-yes-service](../includes/applies-yes-desktop-yes-service.md)]
 
-## Overview
-
-The document you are about to delve into provides a comprehensive and detailed exposition of the various format settings available for column charts in both Power BI Desktop and Power BI Service.
+This detailed guide provides a comprehensive and detailed exposition of the various format settings available for column charts in both Power BI Desktop and Power BI Service.
 
 Serving as a reference guide, we've listed the multitude of customization options at your disposal, enabling you to tailor your data visualization to your specific needs. From layout enhancements to advanced ribbon settings, this document covers every setting for column chart formatting, ensuring that you can present your data in the most effective and visually appealing way possible.
 
-Whether you’re a seasoned Power BI user or new to data visualization, this document is an invaluable resource for mastering column chart formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
+Whether you're a seasoned Power BI user or new to data visualization, this document is an invaluable resource for understanding column chart formatting in Power BI Desktop and Power BI Service, providing you with a detailed explanation for each setting and control.
 
 ## Prerequisites
 
 # [Power BI Desktop](#tab/powerbi-desktop)
 
-To format and customize your column chart in **Power BI Desktop**, simply click the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your column chart in **Power BI Desktop**, simply select the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-desktop.png" alt-text="Screenshot of Power BI Desktop with the Visualizations pane highlighted, along with the Format visual icon highlighted, and both the Visual tab and General tab also highlighted.":::
 
 # [Power BI Service](#tab/powerbi-service)
 
-To format and customize your column chart in **Power BI Service**, simply click the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
+To format and customize your column chart in **Power BI Service**, simply select the **Format visual** icon in the **Visualizations Pane** Clicking this option grants access to the vast array of formatting options under the **Visual** and **General** tabs, enabling you to refine both appearance and functionality of your column charts to meet your specific needs.
 
    :::image type="content" source="../includes/media/power-bi-visualization-column-charts/column-chart-format-settings-service.png" alt-text="Power BI Service screenshot of the Visualizations pane highlighted, along with Format visual icon, and both the Visual tab and General tab, also highlighted.":::
 
@@ -118,7 +116,7 @@ The visibility of y-axis **Title** can be toggled on or off to make it visible o
 
 ### Legend
 
-This setting is accessible when a data field is active in the **Legend** field well within the **Build** pane. The legend's visibility can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Legend settings shown here.
+This setting is accessible when a data field is active in the **Legend** field well within the **Build** pane. The legend's visibility can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust all the Legend settings shown here.
 
 #### Options
 
@@ -135,7 +133,7 @@ This setting is accessible when a data field is active in the **Legend** field w
 
 ### Small multiples
 
-The settings for **Small multiples** become accessible when a data field is active in the small multiple field well within the **Build** pane. However, it’s important to note that small multiples do not function properly when the x-axis and legend share the same data field.
+The settings for **Small multiples** become accessible when a data field is active in the small multiples field well within the **Build** pane. However, it’s important to note that small multiples don't function properly when the x-axis and legend share the same data field.
 
 #### Layout
 
@@ -161,7 +159,7 @@ The settings for **Small multiples** become accessible when a data field is acti
 
 #### Horizontal
 
-The visibility of **Horizontal gridlines** can can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust the setting as shown here.
+The visibility of **Horizontal gridlines** can be toggled on or off to make it visible or to hide it. When toggled on, you can access and adjust the setting as shown here.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
@@ -223,7 +221,7 @@ The layout settings are available only when **Apply settings to** is set to eith
 
 ### Ribbons
 
-The visibility od **Ribbons** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the ribbon settings shown here.
+The visibility of **Ribbons** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the ribbon settings shown here.
 
 #### Apply settings to
 
@@ -253,7 +251,7 @@ The **Layout** settings are available only when **Apply settings to** is set to 
 
 ### Data labels
 
-The visibility of **Data labels** can can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the data labels settings shown here.
+The visibility of **Data labels** can be toggled on or off to make them visible or to hide them. When toggled on, you can access and adjust all the data labels settings shown here.
 
 #### Apply settings to
 
@@ -271,7 +269,7 @@ The **Options** dropdown provides a collection of settings that modify the appea
 
 #### Title
 
-The **Title** toggle controls the visibility of the Series title. When enabled, an array of settings become available allowing users to fully adjust the appearance of the Series title.
+The **Title** toggle controls the visibility of the Series title. When enabled, an array of settings becomes available allowing users to fully adjust the appearance of the Series title.
 [!INCLUDE [data-labels-title-content](../includes/core-visuals/data-labels-title-content.md)]
 [!INCLUDE [data-labels-title-data](../includes/core-visuals/data-labels-title-data.md)]
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
@@ -318,7 +316,7 @@ The **Total labels** toggle enables users to display the total values for a set 
 
 #### Values
 
-The **Values** settings enables users to configure formatting options for font, color, display units, and more, as shown here.
+The **Values** settings enable users to configure formatting options for font, color, display units, and more, as shown here.
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [total-labels-values-display-units](../includes/core-visuals/total-labels-values-display-units.md)]
@@ -333,14 +331,14 @@ The **Background** toggle allows users to display a background color behind the 
 
 ### Plot area background
 
-The **Plot are background** enables users to display a background image behind the columns in visualizations. When an image is added, additional settings become available allowing users to format the image.
+The **Plot are background** enables users to display a background image behind the columns in visualizations. When an image is added, more settings become available allowing users to format the image.
 [!INCLUDE [plot-area-background-browse](../includes/core-visuals/plot-area-background-browse.md)]
 [!INCLUDE [plot-area-background-image-fit](../includes/core-visuals/plot-area-background-image-fit.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 ### Reference line
 
-A **Reference line** allows you to add context and benchmarks in your visual, displaying key values such as averages, medians or specific targets withing your chart. Keep in mind that your data model must have the necessary fields or measures to work, and must be a single value, not a range. Reference lines are available with Column charts that are Clustered, Stacked, or 100% Stacked.
+A **Reference line** allows you to add context and benchmarks in your visual, displaying key values such as averages, medians, or specific targets withing your chart. Keep in mind that your data model must have the necessary fields or measures to work, and must be a single value, not a range. Reference lines are available with Column charts that are Clustered, Stacked, or 100% Stacked.
 
 #### Apply settings to
 
@@ -394,7 +392,7 @@ The **Data Label** for the reference line provides information about the value
 
 ### Error bars
 
-**Error bars** in column charts are graphical representations that visually express the degree of uncertainty in the data points. Error bars are crucial when the exact value isn’t as important as the trend or pattern. Smaller error bars suggest more precise measurements, while larger ones suggest higher variability and less reliability. They are a best practice in data visualization and they add a level of professionalism to reports, showing that you’ve considered and are presenting the variability in your data.
+**Error bars** in column charts are graphical representations that visually express the degree of uncertainty in the data points. Error bars are crucial when the exact value isn’t as important as the trend or pattern. Smaller error bars suggest more precise measurements, while larger ones suggest higher variability and less reliability. They're a best practice in data visualization and they add a level of professionalism to reports, showing that you’ve considered and are presenting the variability in your data.
 
 #### Apply settings to
 
@@ -423,7 +421,7 @@ The **Bar** toggle enables **Error bars** in your visual after configuring the o
 
 #### Error labels
 
-**Error labels** enhance the understanding of your data by providing additional context and insights into the precision and variability of measurements.
+**Error labels** enhance the understanding of your data by providing more context and insights into the precision and variability of measurements.
 [!INCLUDE [global-font-controls](../includes/core-visuals/global-font-controls.md)]
 [!INCLUDE [global-match-series-color](../includes/core-visuals/global-match-series-color.md)]
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
@@ -434,7 +432,7 @@ The **Bar** toggle enables **Error bars** in your visual after configuring the o
 
 #### Tooltip
 
-The **Tooltip** toggle only appears when the Options toggle, as outline earlier in this article, has been activated. Subsequently, you can enable the Tooltip toggle, and you’re granted access to the settings shown here. This sequential toggle design ensures that you can customize your visual elements in a structured and organized manner.
+The **Tooltip** toggle only appears when the Options toggle, as outline earlier in this article, has been activated. Then, you can enable the Tooltip toggle, and you’re granted access to the settings shown here. This sequential toggle design ensures that you can customize your visual elements in a structured and organized manner.
 [!INCLUDE [error-bars-error-labels-label-format](../includes/core-visuals/error-bars-error-labels-label-format.md)]
 
 ## Related content

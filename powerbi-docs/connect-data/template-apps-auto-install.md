@@ -1,12 +1,12 @@
 ---
-title: Automate configuration of template app installation for your customers
-description: Learn about automating the configuration of template app installation.
+title: Automate configuration of template app installation
+description: Learn about automating the configuration of template app installation to make it easier for your customers to connect to their data.
 author: paulinbar
 ms.author: painbar
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 11/23/2020
+ms.date: 10/08/2024
 #Customer intent: As an ISV developer, I want to automate configuration of the template app installation process for my customers.
 ---
 
@@ -28,11 +28,11 @@ The customer experience is illustrated here.
 
 ![Illustration of user experience with an auto-installation application.](media/template-apps-auto-install/high-level-flow.png)
 
-This article describes the basic flow, the prerequisites, and the main steps and APIs you need to automate the configuration of a template app installation. If you want to dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation by using a simple sample application we've prepared that uses an Azure function.
+This article describes the basic flow, the prerequisites, the main steps, and the  APIs you need to automate the configuration of a template app installation. If you want to dive in and get started, you can skip to the [tutorial](template-apps-auto-install-tutorial.md) where you automate the configuration of the template app installation by using a simple sample application we've prepared that uses an Azure function.
 
 ## Basic flow
 
-The basic flow of automating the configuration of a template app installation is as follows:
+The basic flow for automating the configuration of a template app installation proceeds as follows:
 
 1. The user signs in to the ISV's portal and selects the supplied link. This action initiates the automated flow. The ISV's portal prepares the user-specific configuration at this stage.
 
@@ -51,16 +51,16 @@ The basic flow of automating the configuration of a template app installation is
 
 To provide a preconfigured installation experience for your template app, the following prerequisites are required:
 
-* A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* Your own Microsoft Entra tenant set up. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
-* A **service principal (app-only token)** registered in the preceding tenant. For more information, see [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process, you need to save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
-* A **parameterized template app** that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md). From the template app, you need to note the following information for the next steps:
-     * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at the end of the process of [defining the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) when the app was created. You can also get the same link by selecting **Get link** in the template app's [Release Management](service-template-apps-create.md#manage-the-template-app-release) pane.
-    * *Parameter names* as they're defined in the template app's semantic model. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the semantic model settings in Power BI.
-* To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
+- A Power BI Pro license. If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+- Your own Microsoft Entra tenant setup. For instructions on how to set one up, see [Create a Microsoft Entra tenant](./../developer/embedded/create-an-azure-active-directory-tenant.md).
+- A **service principal (app-only token)** registered in the preceding tenant. For more information, see [Embed Power BI content with service principal and an application secret](./../developer/embedded/embed-service-principal.md). Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret. From this process, you need to save the *application ID* (ClientID) and *application secret* (ClientSecret) for later steps.
+- A **parameterized template app** that's ready for installation. The template app must be created in the same tenant in which you register your application in Microsoft Entra ID. For more information, see [Template app tips](service-template-apps-tips.md) or [Create a template app in Power BI](service-template-apps-create.md). From the template app, you need to note the following information for the next steps:
+  - *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at the end of the process of [defining the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) when the app was created. You can also get the same link by selecting **Get link** in the template app's [Release Management](service-template-apps-create.md#manage-the-template-app-release) pane.
+  - *Parameter names* as they're defined in the template app's semantic model. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [define the properties of the template app](service-template-apps-create.md#define-the-properties-of-the-template-app) or from the semantic model settings in Power BI.
+- To be able to test your automation work flow, add the service principal to the template app workspace as an Admin.
 
     >[!NOTE]
-    >You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in the [Power BI apps marketplace](https://app.powerbi.com/getdata/services). Before you distribute your template app by using the automated installation application you're creating, be sure to publish it to [Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
+    >You can test your preconfigured installation application on your template app if the template app is ready for installation, even if it isn't publicly available on AppSource yet. For users outside your tenant to be able to use the automated installation application to install your template app, the template app must be publicly available in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi). Before you distribute your template app by using the automated installation application you're creating, be sure to [publish it to Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
 ## Main steps and APIs
 
@@ -68,8 +68,8 @@ The main steps for automating the configuration of a template app installation, 
 
 ## Step 1: Create a Power BI client object
 
-Using Power BI REST APIs requires you to get an *access token* for your [service principal](./../developer/embedded/embed-service-principal.md) from Microsoft Entra ID. You're required to get an [Microsoft Entra access token](./../developer/embedded/generate-embed-token.md) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
-To create the Power BI client with your access token, you need to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a **Microsoft.Rest.TokenCredentials** object.
+Using Power BI REST APIs requires you to get an *access token* for your [service principal](./../developer/embedded/embed-service-principal.md) from Microsoft Entra ID. You're required to get a [Microsoft Entra access token](./../developer/embedded/generate-embed-token.md) for your Power BI application before you make calls to the [Power BI REST APIs](/rest/api/power-bi/).
+To create the Power BI client with your access token, you need to create your Power BI client object, which allows you to interact with the Power BI REST APIs. You create the Power BI client object by wrapping the **AccessToken** with a **Microsoft.Rest.TokenCredentials** object.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -88,12 +88,13 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ## Step 2: Create an install ticket
 
 Create an install ticket, which is used when you redirect your users to Power BI. The API used for this operation is the **CreateInstallTicket** API.
-* [Template Apps CreateInstallTicket](/rest/api/power-bi/template-apps/create-install-ticket)
+
+- [Template Apps - Create Install Ticket](/rest/api/power-bi/template-apps/create-install-ticket)
 
 A sample of how to create an install ticket for template app installation and configuration is available from the [InstallTemplateApp/InstallAppFunction.cs](https://github.com/microsoft/Template-apps-examples/blob/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample/InstallTemplateApp/InstallAppFunction.cs) file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 
-
 The following code example shows how to use the template app **CreateInstallTicket** REST API.
+
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -173,5 +174,5 @@ When the automation you've designed is ready, be sure to move it to production.
 
 ## Related content
 
-* Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure function to automate the configuration of a template app installation.
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
+- Try our [tutorial](template-apps-auto-install-tutorial.md), which uses a simple Azure function to automate the configuration of a template app installation.
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
