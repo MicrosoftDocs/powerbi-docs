@@ -164,7 +164,7 @@ There are two ways to create a Microsoft Entra security group:
 
 ### Create a security group manually
 
-To create an Azure security group manually, follow the instructions in [Create a basic group and add members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members).
+To create an Azure security group manually, follow the instructions in [Create a basic group](/entra/fundamentals/how-to-manage-groups#create-a-basic-group-and-add-members). Don't add members to the group at this time.
 
 ### Create a security group by using PowerShell
 
@@ -299,7 +299,7 @@ After your content is embedded, you're ready to [move to production](move-to-pro
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI Admin portal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../../transform-model/dataflows/dataflows-introduction-self-service.md) management isn't supported.
-* Service principal only supports some read-only admin APIs. To enable service principal support for read-only admin APIs, you have to enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](/fabric/admin/metadata-scanning-enable-read-only-apis).
+* Not all read-only APIs are supported by service principal. To enable service principal support for read-only admin APIs, enable the Power BI service admin settings in your tenant. For more information, see [Enable service principal authentication for read-only admin APIs](/fabric/admin/metadata-scanning-enable-read-only-apis).
 * When you use service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose doesn't work.
 
 ## Related content
