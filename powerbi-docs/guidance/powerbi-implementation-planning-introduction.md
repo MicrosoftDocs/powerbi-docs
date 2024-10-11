@@ -3,7 +3,7 @@ title: "Power BI implementation planning"
 description: "An introduction to the Power BI implementation planning series of articles."
 author: peter-myers
 ms.author: daengli
-ms.reviewer: maroche
+ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
@@ -38,11 +38,6 @@ When you implement Power BI, there are many subject areas to consider. The follo
 - [Auditing and monitoring](powerbi-implementation-planning-auditing-monitoring-overview.md)
 - [Adoption tracking](powerbi-implementation-planning-adoption-tracking.md)
 
-> [!NOTE]
-> The series is a work in progress. We will gradually release new and updated articles over time.
->
-> In addition to these subject areas, managing your Fabric or Premium capacity usage is an important part of your Power BI implementation. It affects not only Power BI, but also the other experiences in Fabric. For information about how to manage your Fabric capacity, see [Manage your Fabric capacity](/fabric/admin/capacity-settings?tabs=power-bi-premium&preserve-view=true) and [Evaluate and optimize your Microsoft Fabric capacity](/fabric/enterprise/optimize-capacity).
-
 ## Usage scenarios
 
 The series includes usage scenarios that illustrate different ways that creators and consumers can deploy and use Power BI:
@@ -54,10 +49,7 @@ The series includes usage scenarios that illustrate different ways that creators
 
 ## Purpose
 
-When completed, the series will:
-
-- Complement the [Fabric adoption roadmap](fabric-adoption-roadmap.md), which describes considerations for successful Microsoft Fabric and Power BI adoption and a healthy data culture. Power BI implementation planning guidance that correlates with the adoption roadmap goals will be added to this series.
-- Replace the [Power BI adoption framework](https://github.com/pbiaf/powerbiadoption) (together with the [Fabric adoption roadmap](fabric-adoption-roadmap.md)), which is a lightweight set of resources (videos and presentation slides) that were designed to help Microsoft partners deploy Power BI solutions for their customers. Relevant adoption framework action items will be merged into this series.
+This series complements the [Fabric adoption roadmap](fabric-adoption-roadmap.md), which describes considerations for successful Microsoft Fabric and Power BI adoption and a healthy data culture. Power BI implementation planning guidance that correlates with the adoption roadmap goals will be added to this series.
 
 ## Recommendations
 
@@ -66,7 +58,7 @@ To set yourself up for success, we recommend that you work through the following
 1. Read the complete [Fabric adoption roadmap](fabric-adoption-roadmap.md), familiarizing yourself with each roadmap subject area. Assess your current state of Fabric adoption, and gain clarity on the data culture objectives for your organization.
 1. Explore Power BI implementation planning articles that are relevant to you. Start with the [Power BI usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md), which convey how you can use Power BI in diverse ways. Be sure to understand which usage scenarios apply to your organization, and by whom. Also, consider how these usage scenarios might influence the implementation strategies you decide on.
 1. Read the articles for each of the subject areas that are listed above. You might choose to initially do a broad review of the contents from top to bottom. Or you might choose to start with subject areas that are your highest priority. Carefully review the key decisions and actions that are included for each topic (at the end of each section). We recommend that you use them as a starting point for creating and customizing your plan.
-1. When necessary, refer to [Power BI documentation](/power-bi/) for details on specific topics.
+1. When necessary, refer to [Power BI documentation](/power-bi/) and [Fabric documentation](/fabric/) for details on specific topics.
 
 ## Target audience
 
@@ -87,7 +79,7 @@ This series is certain to be helpful for organizations that are in their early s
 
 ## Acknowledgments
 
-The Power BI implementation planning articles are written by Melissa Coates, Kurt Buhler, and Peter Myers. Matthew Roche, from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
+The Power BI implementation planning articles are written by [Melissa Coates](https://www.linkedin.com/in/melissacoatesprofile), [Kurt Buhler](https://www.linkedin.com/in/kurtbuhler), and [Peter Myers](https://www.linkedin.com/in/peterjsmyers). [Matthew Roche](https://www.linkedin.com/in/matthewroche), from the Fabric Customer Advisory Team, provides strategic guidance and feedback to the subject matter experts.
 
 ## Related content
 
