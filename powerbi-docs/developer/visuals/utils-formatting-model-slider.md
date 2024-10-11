@@ -1,0 +1,84 @@
+# Slider formatting slice
+
+*Slider* is a simple formatting slice which is used to represent *numeric* and *integer* object types from `capabilities.json` file.
+
+![Screenshot of the ToggleSwitch slice](media/format-pane/slider.png)
+
+## Example: Slider implementation
+
+In this example, we show how to build a *Slider* slice using formatting model utils.
+
+### Capabilities object
+
+Insert the following JSON fragment into the object labeled objects in the `capabilities.json` file.
+
+```typescript
+    "labels": {
+      "properties": {
+        "min": {
+          "type": {
+            "numeric": true
+          }
+        },
+      }
+    }
+```
+
+### Formatting model class
+
+Insert the following code fragment into the `settings.ts` file.
+
+```typescript
+import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+
+class LabelsCardSetting extends formattingSettings.SimpleCard {
+    name: string = "labels"; // same as capabilities object name
+    displayName: string = "Labels";
+
+    public minValue : formattingSettings.Slider = new formattingSettings.Slider({
+        name: "min", // same as capabilities property name
+        displayName: "Min value",
+        value: 50
+    });
+    
+    public slices: formattingSettings.Slice[] = [ this.minValue ];
+}
+
+export class VisualSettings extends formattingSettings.Model {
+    public labels: LabelsCardSetting = new LabelsCardSetting();
+    public cards: formattingSettings.SimpleCard[] = [this.labels];
+}
+```
+
+### Validators (optional)
+
+You can validate *Slider* slice input by specifiying *options* property as in below example: 
+
+```typescript
+import powerbi from "powerbi-visuals-api";
+import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
+
+class LabelsCardSetting extends formattingSettings.SimpleCard {
+    name: string = "labels"; // same as capabilities object name
+    displayName: string = "Labels";
+
+    public minValue : formattingSettings.Slider = new formattingSettings.Slider({
+        name: "min", // same as capabilities property name
+        displayName: "Min value",
+        value: 50,
+        options: // optional input value validator  
+        {
+            maxValue: {
+                type: powerbi.visuals.ValidatorType.Max,
+                value: 80
+            },
+            minValue: {
+                type: powerbi.visuals.ValidatorType.Min,
+                value: 30
+            }
+        }
+    });
+    
+    public slices: formattingSettings.Slice[] = [ this.minValue ];
+}
+```
