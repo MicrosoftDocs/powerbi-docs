@@ -12,37 +12,36 @@ ms.date: 10/10/2024
 
 The [Q&A feature](/consumer/end-user-q-and-a.md) allows users to explore data from their Power BI semantic model using natural language to receive answers in the form of charts and graphs. Q&A is not available for [Power BI Report Server](/report-server/install-powerbi-desktop.md).  
 
-## Data sources
-
-### Supported data sources
+## Supported data sources
 
 Power BI Q&A supports the following configurations of data sources in the Power BI service:
 
 - Import mode
+- [Direct Query](#directquery-support-for-q&a) 
 - Live connect to Azure Analysis Services
 - Live connect to on-premise SQL Server Analysis Services tabular models
 - DirectLake models
 
 In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premise SQL Server Analysis Services models.
 
-#### DirectQuery support for Q&A
+### DirectQuery support for Q&A
 
-Q&A now supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. 
+Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use [Q&A to ask natural-language questions](/connect-data/desktop-directquery-about.md) against these data sources. 
 
 There's one change to the behavior of Q&A when it's in DirectQuery mode: After you enter your question, select **Submit**. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
 
-#### Composite model support
+### Composite model support
 
 Q&A also supports composite models, if the model contains at least one of the following data sources:
 
-- One import data source
-- One supported DirectQuery data source
+- One import data source.
+- One [supported DirectQuery](#directquery-support-for-q&a) data source.
 
 If the model contains a mix of data sources, we only index columns from import tables or columns from supported Direct Query sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves. 
 
 ### Q&A Setup limitations 
 
-The Q&A setup feature is only available from Power BI Desktop. Q&A setup supports the following data sources: 
+The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from Power BI Desktop. Q&A setup supports the following data sources: 
 
 - Import mode  
 - Direct Query   
@@ -56,6 +55,8 @@ Power BI Q&A doesn't support the following configurations:
 - Reporting Services 
 
 ## Tooling limitations
+
+The review questions only store questions asked about your data model for up to 28 days. Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups.
 
 The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, see [Intro to Q&A tooling](q-and-a-tooling-intro.md).
 
