@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 10/10/2024
+ms.date: 10/12/2024
 ms.collection: ce-skilling-ai-copilot
 ---
 
