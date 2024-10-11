@@ -8,9 +8,9 @@ ms.subservice: powerbi-ai
 ms.topic: conceptual
 ms.date: 10/10/2024
 ---
-# Limitations of Power BI Q&A
+# Q&A limitations of Power BI Q&A
 
-Power BI Q&A currently has some limitations.
+The [Q&A feature](/consumer/end-user-q-and-a.md) allows users to explore data from their Power BI semantic model using natural language to receive answers in the form of charts and graphs. Q&A is not available for [Power BI Report Server](/report-server/install-powerbi-desktop.md).  
 
 ## Data sources
 
