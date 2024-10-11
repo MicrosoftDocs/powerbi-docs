@@ -140,20 +140,20 @@ The following table shows the formatting property types in *capabilities.json* f
 
 | Type             | Capabilities Value Type | Formatting Property  |
 |------------------|-------------------------|----------------------|
-| Boolean          | Bool                    | ToggleSwitch         |
-| Number           | <li>numeric</li> <li> integer </li>       | <li> NumUpDown </li> <li>Slider</li>     |
-| Enumeration list | enumeration:[]          | <li> ItemDropdown</li> <li> ItemFlagsSelection</li><li> AutoDropdown</li><li> AutoFlagsSelection</li> <sup>*</sup> See note below       |
-| Color            | Fill                    | ColorPicker          |
-| Gradient         | FillRule                | GradientBar: property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
-| Text             | Text                    | <li>TextInput</li> <li>TextArea</li>  |
+| Boolean          | Bool                    | [ToggleSwitch](utils-formatting-model-toggleswitch.md)         |
+| Number           | <li>numeric</li> <li> integer </li>       | <li> [NumUpDown](utils-formatting-model-numupdown.md) </li> <li>[Slider](utils-formatting-model-slider.md)</li>     |
+| Enumeration list | enumeration:[]          | <li> [ItemDropdown](utils-formatting-model-dropdown.md#itemdropdown-implementation)</li> <li> [ItemFlagsSelection](utils-formatting-model-flagselection.md#itemflagsselections-implementation)</li><li> [AutoDropdown](utils-formatting-model-dropdown.md#autodropdown-implementation)</li><li> [AutoFlagsSelection](utils-formatting-model-flagselection.md#autoflagsselection-implementation)</li> <sup>*</sup> See note below       |
+| Color            | Fill                    | [ColorPicker](utils-formatting-model-colorpicker.md)          |
+| Gradient         | FillRule                | [GradientBar](utils-formatting-model-gradientbar.md): property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
+| Text             | Text                    | <li>[TextInput](utils-formatting-model-textinput.md)</li> <li>[TextArea](utils-formatting-model-textarea.md)</li>  |
 
 Capabilities Formatting Objects
 
 | Type             | Capabilities Value Type | Formatting Property  |
 |------------------|-------------------------|----------------------|
 | Font size           | FontSize             | NumUpDown            |
-| Font family         | FontFamily           | FontPicker           |
-| Line Alignment      | Alignment            | AlignmentGroup       |
+| Font family         | FontFamily           | [FontPicker](utils-formatting-model-fontpicker.md)           |
+| Line Alignment      | Alignment            | [AlignmentGroup](utils-formatting-model-alignmentgroup.md)       |
 | Label Display Units | LabelDisplayUnits    | AutoDropDown         |
 
 <sup>*</sup> The enumeration list formatting property is different in the formatting model and in the capabilities file.
@@ -174,7 +174,7 @@ A formatting composite slice is a formatting slice that contains multiple relate
 
 For now we have two composite slice types:
 
-* FontControl  
+* [FontControl](utils-formatting-model-fontcontrol.md)  
   This keeps all font related properties together. It consists of the following properties:
   
   * Font Family
@@ -195,7 +195,7 @@ For now we have two composite slice types:
   | Italic      | Bool                      | ToggleSwitch     |
   | Underline   | Bool                      | ToggleSwitch     |
 
-* MarginPadding
+* [MarginPadding](utils-formatting-model-marginpadding.md)
   Margin padding determines the alignment of the text in the visual. It consists of the following properties:
   
   * Left
