@@ -5512,7 +5512,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/fundamentals/webinars.md.md",
+            "source_path": "powerbi-docs/fundamentals/webinars.md",
             "redirect_url": "https://community.fabric.microsoft.com/t5/Upcoming-Events/bd-p/Community",
             "redirect_document_id": false
         },
