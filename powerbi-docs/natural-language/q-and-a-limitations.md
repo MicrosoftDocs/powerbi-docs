@@ -76,8 +76,8 @@ Teach Q&A allows you to fix two types of errors:
 
 Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
-- Product category with is accessories
-- Product category with is not accessories
+- Product category is accessories
+- Product category is not accessories
 - Products > 100
 - Products greater than 100
 - Products = 100
