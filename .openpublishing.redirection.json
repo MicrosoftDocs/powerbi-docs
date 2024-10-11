@@ -4431,8 +4431,8 @@
         },
         {
             "source_path": "powerbi-docs/webinars.md",
-            "redirect_url": "/power-bi/fundamentals/webinars",
-            "redirect_document_id": true
+            "redirect_url": "https://community.fabric.microsoft.com/t5/Upcoming-Events/bd-p/Community",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/embedded/power-bi-permissions.md",
@@ -5512,7 +5512,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi/fundamentals/webinars.md",
+            "source_path": "power-bi/fundamentals/webinars.md",
             "redirect_url": "https://community.fabric.microsoft.com/t5/Upcoming-Events/bd-p/Community",
             "redirect_document_id": false
         },
