@@ -1,6 +1,6 @@
 ---
 title: Create subgoals in the Power BI service
-description: Submgoals make scorecards more readable by collecting related goals together under a single parent goal.
+description: Subgoals make scorecards more readable by collecting related goals together under a single parent goal.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -42,7 +42,7 @@ You can define one or more subgoals for a goal. Like their parent goals, subgoal
     - [Create a manual goal](service-goals-create.md#step-2-create-a-manual-metric) 
     - [Create connected goal](service-goals-create-connected.md)
 
-## Create submgoals that roll up to the goal
+## Create subgoals that roll up to the goal
 
 You can also create *rollup* subgoals, whose values automatically aggregate up to a parent goal. These aggregations recalculate anytime the subgoal values change, and capture the history. Rollups are a great way to keep a parent goal up to date without having it backed by a report connection. Rollups work when subgoals are manual or connected, so you can always roll up whatever the current value is, regardless of where it's coming from.
 
@@ -62,7 +62,7 @@ First, make sure you're in edit mode.
 
     :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="Screenshot showing the types of goals.":::
 
-1. When you choose rollup sybgoals, you can choose the aggregation type:
+1. When you choose rollup subgoals, you can choose the aggregation type:
 
     - **SUM**: a sum of the subgoal values
     - **AVERAGE**: an average of the subgoal values
