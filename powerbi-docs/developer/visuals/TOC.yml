@@ -73,7 +73,40 @@
     - name: "Analytics pane" 
       href: analytics-pane.md
     - name: "Add format pane"
-      href: format-pane.md
+      expanded: false
+      items:
+        - name: "Format pane"
+          href: format-pane-general.md
+        - name: "Format pane example"
+          href: format-pane-example.md
+        - name: "Formatting slices"
+          items: 
+            - name: "Toggle switch"
+              href: "utils-formatting-model-toggleswitch.md"
+            - name: "Num up down"
+              href: "utils-formatting-model-numupdown.md"
+            - name: "Slider"
+              href: "utils-formatting-model-slider.md"
+            - name: "Color picker"
+              href: "utils-formatting-model-colorpicker.md"
+            - name: "Gradient bar"
+              href: "utils-formatting-model-gradientbar.md"
+            - name: "Dropdowns"
+              href: "utils-formatting-model-dropdown.md"
+            - name: "Flag selections"
+              href: "utils-formatting-model-flagselection.md"
+            - name: "Text input"
+              href: "utils-formatting-model-textinput.md"
+            - name: "Text area"
+              href: "utils-formatting-model-textarea.md"
+            - name: "Font picker"
+              href: "utils-formatting-model-fontpicker.md"
+            - name: "Alignment group"
+              href: "utils-formatting-model-alignmentgroup.md"
+            - name: "Font control"
+              href: "utils-formatting-model-fontcontrol.md"
+            - name: "Margin padding"
+              href: "utils-formatting-model-marginpadding.md"
     - name: "Fetch more data" 
       href: fetch-more-data.md
     - name: "Add bookmarks support"
@@ -176,35 +209,6 @@
         href: utils-formatting.md
       - name: "Formatting model utils"
         href: utils-formatting-model.md
-        items:
-        - name: "Formatting slices"
-          items:
-          - name: "Toggle switch"
-            href: "utils-formatting-model-toggleswitch.md"
-          - name: "Num up down"
-            href: "utils-formatting-model-numupdown.md"
-          - name: "Slider"
-            href: "utils-formatting-model-slider.md"
-          - name: "Color picker"
-            href: "utils-formatting-model-colorpicker.md"
-          - name: "Gradient bar"
-            href: "utils-formatting-model-gradientbar.md"
-          - name: "Dropdowns"
-            href: "utils-formatting-model-dropdown.md"
-          - name: "Flag selections"
-            href: "utils-formatting-model-flagselection.md"
-          - name: "Text input"
-            href: "utils-formatting-model-textinput.md"
-          - name: "Text area"
-            href: "utils-formatting-model-textarea.md"
-          - name: "Font picker"
-            href: "utils-formatting-model-fontpicker.md"
-          - name: "Alignment group"
-            href: "utils-formatting-model-alignmentgroup.md"
-          - name: "Font control"
-            href: "utils-formatting-model-fontcontrol.md"
-          - name: "Margin padding"
-            href: "utils-formatting-model-marginpadding.md"
       - name: "On object utils"
         href: utils-on-object.md
       - name: "Data view utils"
