@@ -20,7 +20,9 @@ A visual calculation is a DAX calculation defined and executed directly on a vis
 
 Here's an example visual calculation that defines a running sum for **Sales Amount**. Notice that the DAX required is straightforward:
 
-`Running sum = RUNNINGSUM([Sales Amount])`
+```dax
+Running sum = RUNNINGSUM([Sales Amount])
+```
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-01.png" alt-text="Screenshot of DAX for visual calculations.":::
 
@@ -67,7 +69,11 @@ The visual calculations window opens in **Edit** mode. The **Edit** mode screen 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
 
-To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing: `Profit = [Sales Amount] – [Total Product Cost]`.
+To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing:
+
+```dax
+Profit = [Sales Amount] – [Total Product Cost]
+```
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-04.png" alt-text="Screenshot of entering a visual calculation.":::
 
@@ -134,7 +140,29 @@ Many functions have an optional **:::no-loc text="Reset":::** parameter that is 
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
 * A numerical value, referring to the fields on the axis, with the highest field being one.
 
-To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as `RUNNINGSUM([Sales Amount], text="HIGHESTPARENT")` or `RUNNINGSUM([Sales Amount], 1)` returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as `RUNNINGSUM([Sales Amount], text="LOWESTPARENT")` or `RUNNINGSUM([Sales Amount], 2)` returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as `RUNNINGSUM([Sales Amount])` does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting.
+To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
+For example, the following visual calculations are equivalent and return the sum of *Sales Amount* that starts from 0 for every year:
+```dax
+RUNNINGSUM([Sales Amount], HIGHESTPARENT)
+```
+
+```dax
+RUNNINGSUM([Sales Amount], 1)
+```
+
+In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every Quarter:
+```dax
+RUNNINGSUM([Sales Amount], LOWESTPARENT)
+```
+
+```dax
+RUNNINGSUM([Sales Amount], 2)
+```
+
+Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting. 
+```dax
+RUNNINGSUM([Sales Amount])
+```
 
 ## :::no-loc text="Axis"::: and :::no-loc text="Reset"::: vs ORDERBY and PARTITIONBY
 
