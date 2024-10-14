@@ -12,7 +12,7 @@ ms.date: 07/15/2024
 #customer intent: As a Power BI user, I want to know what permissions a visual requests so that I can make an informed decision about using it.
 ---
 
-# About Power BI visuals
+# The Power BI visuals *About* dialog
 
 Every visual has an *About* dialog that gives you information about the visual, including the version number, who created it, and what permission it requests. 
 
@@ -68,7 +68,7 @@ The visual might want to [store data locally](./local-storage.md) on the user's 
 
 This privilege allows a visual to send HTTP requests to specific URLs that the visual builder declares in advance.
 
-There is no tenant admin switch for this permission. As long as [non-certified visuals are allowed](/fabric/admin/organizational-visuals#certified-power-bi-visuals), this privilege is granted.
+There's no tenant admin switch for this permission. As long as [noncertified visuals are allowed](/fabric/admin/organizational-visuals#certified-power-bi-visuals), this privilege is granted.
 
 ### Call Power BI Download APIs
 
