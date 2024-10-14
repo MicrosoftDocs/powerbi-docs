@@ -146,7 +146,7 @@ What you see when you select **Underlying data** can vary. Understanding these d
 
 
 > [!IMPORTANT]
-> Export underlying data doesn't include datetime / variations columns or include numeric columns if there is an aggregation.
+> Export underlying data doesn't include datetime / variations columns or include numeric columns if there is an aggregation. Additionally, [visual calculation](../transform-model/desktop-visual-calculations-overview.md) results are not included.
 
 ---
 
@@ -253,6 +253,7 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 - If a dynamic format string is applied to a measure, the exported data doesn't preserve this formatting in Excel. Also, visual-specific formatting such as percent of grand total for a measure isn't preserved in Excel.
 
+- [Visual calculation](../transform-model/desktop-visual-calculations-overview.md) results are included in all exports, except when exporting underlying data. Fields that are hidden on the visual are never included, except when exporting underlying data.
 - When using [embed for your customers](../developer/embedded/embedded-analytics-power-bi.md#embed-for-your-customers), export data from a visual doesn't work in the following cases:
     - The semantic model of the embedded report is a composite model with direct query connection to another semantic model, and the embedding is done using a Service Principal.
     - The semantic model of the embedded report has at least one data source with Single-Sign-On enabled, and the embed token contains a [datasourceIdentity](/rest/api/power-bi/embed-token/generate-token#datasourceidentity) [embed token](/rest/api/power-bi/embed-token/generate-token).
