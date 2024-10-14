@@ -14,6 +14,6 @@ LocalizationGroup: core-visuals
 
 The **Image fit** setting offers three options as shown in the dropdown menu:
 
-- **Normal:** This maintains the original size of the image. If the image is larger than the visual space, it will be cropped to fit the visual container.
-- **Fit:** This option scales down the image to fit within the visual container while maintaining the original aspect ratio. No part of the image is cropped, but empty space may be visible around the image if its aspect ratio differs from the aspect ratio of the visual container.
-- **Fill:** This setting stretches or compresses the image to completely fill the visual container. The image’s aspect ratio might not be preserved, which can lead to distortion if the aspect ratio of the image is different from the visual container.
+- **Normal:** This option maintains the original size of the image. If the image is larger than the available area, it will be cropped accordingly to fit the area.
+- **Fit:** This option scales down the image to fit within the available area while maintaining the original aspect ratio. While no part of the image is cropped, empty space may appear around the image if its aspect ratio differs from the area you’re fitting the image into.
+- **Fill:** This option stretches or compresses the image to completely fill the available area. The image’s aspect ratio might not be preserved, which can lead to distortion if the aspect ratio of the image is different from the area being filled.

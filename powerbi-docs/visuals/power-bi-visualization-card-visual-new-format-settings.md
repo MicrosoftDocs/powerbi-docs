@@ -198,7 +198,7 @@ The **Spacing** menu provides options to adjust the layout and appearance of ref
 [!INCLUDE [global-vertical-alignment](../includes/core-visuals/global-vertical-alignment.md)]
 [!INCLUDE [images-image-space-between-image-and-callout](../includes/core-visuals/images-image-space-between-image-and-callout.md)]
 [!INCLUDE [images-image-fix-size](../includes/core-visuals/images-image-fix-size.md)]
-[!INCLUDE [images-image-iamge-area-size](../includes/core-visuals/images-image-image-area-size.md)]
+[!INCLUDE [images-image-image-area-size](../includes/core-visuals/images-image-image-area-size.md)]
 [!INCLUDE [images-image-size](../includes/core-visuals/images-image-size.md)]
 [!INCLUDE [images-image-alt-text](../includes/core-visuals/images-image-alt-text.md)]
 
@@ -223,8 +223,8 @@ The **Spacing** menu provides options to adjust the layout and appearance of ref
 
 #### Padding
 
-[!INCLUDE [cards-padding-size](../includes/core-visuals/cards-padding-size.md)]
-[!INCLUDE [cards-padding-padding](../includes/core-visuals/cards-padding-padding.md)]
+[!INCLUDE [global-padding-size](../includes/core-visuals/global-padding-size.md)]
+[!INCLUDE [global-padding-padding](../includes/core-visuals/global-padding-padding.md)]
 
 #### Alignment
 
@@ -236,7 +236,7 @@ The **Background** toggle, when enabled, provides more options to customize the 
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [cards-background-background-image-browse](../includes/core-visuals/cards-background-background-image-browse.md)]
+[!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
 [!INCLUDE [cards-background-image-fit](../includes/core-visuals/cards-background-image-fit.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
@@ -253,7 +253,7 @@ The **Border** toggle, when enabled, provides customization options to customize
 The **Shadow** toggle, when enabled, enhances the visual appeal of your cards by giving them a three-dimensional look and can help certain elements stand out in your report.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
-[!INCLUDE [cards-shadow-offset](../includes/core-visuals/cards-shadow-offset.md)]
+[!INCLUDE [global-shadow-offset](../includes/core-visuals/global-shadow-offset.md)]
 [!INCLUDE [cards-shadow-and-glow-position](../includes/core-visuals/cards-shadow-and-glow-position.md)]
 [!INCLUDE [cards-shadow-size](../includes/core-visuals/cards-shadow-size.md)]
 [!INCLUDE [cards-shadow-glow-blur](../includes/core-visuals/cards-shadow-glow-blur.md)]
