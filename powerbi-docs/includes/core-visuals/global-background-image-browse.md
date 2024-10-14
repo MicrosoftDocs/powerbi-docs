@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 ##### Background image
 
-The **Background image** control let’s you browse your device to add an image file that will be displayed in the background.
+The **Background image** control lets you browse your device to add an image file that will be displayed in the background.
