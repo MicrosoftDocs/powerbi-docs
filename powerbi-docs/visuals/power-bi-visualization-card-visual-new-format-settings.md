@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/07/2024
+ms.date: 10/15/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
@@ -73,7 +73,7 @@ The visibility of **Values** can be toggled on or off to make them apparent or t
 [!INCLUDE [callout-values-horixontal-alignment](../includes/core-visuals/callout-values-values-horizontal-alignment.md)]
 [!INCLUDE [callout-values-values-text-wrap](../includes/core-visuals/callout-values-values-text-wrap.md)]
 [!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
-[!INCLUDE [callout-values-values-format-code](../includes/core-visuals/callout-values-values-format-code.md)]
+[!INCLUDE [global-format-code-fx](../includes/core-visuals/global-format-code-fx.md)]
 [!INCLUDE [global-value-decimal-places](../includes/core-visuals/global-value-decimal-places.md)]
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
@@ -130,7 +130,7 @@ The **Title** toggle, when enabled, controls the visibility of the Series title.
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [global-display-units](../includes/core-visuals/global-display-units.md)]
-[!INCLUDE [reference-labels-value-format-code-fx](../includes/core-visuals/reference-labels-value-format-code-fx.md)]
+[!INCLUDE [global-format-code-fx](../includes/core-visuals/global-format-code-fx.md)]
 [!INCLUDE [reference-labels-value-value-decimal-places](../includes/core-visuals/global-value-decimal-places-fx.md)]
 [!INCLUDE [global-show-blank-as](../includes/core-visuals/global-show-blank-as.md)]
 
