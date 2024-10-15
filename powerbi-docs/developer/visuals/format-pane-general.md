@@ -29,7 +29,7 @@ In addition to all the old formatting pane capabilities, the [new formatting mod
 To upgrade to API version 5.1+, set the `apiVersion` in your *pbiviz.json* file to `5.1` or later and do **one** of the following:
 
 * Use [formattingmodel util](./utils-formatting-model.md). (**Recommended**)
-* Without this util, use only [APIs](format-pane-example.md).
+* Without this util, use only APIs.
 
 ## Create a visual that supports the new format pane
 
@@ -211,7 +211,12 @@ For now we have two composite slice types:
   | Right       | Numeric                   | NumUpDown        |
   | Top         | Numeric                   | NumUpDown        |
   | Bottom      | Numeric                   | NumUpDown        |
-  
+
+## Example of formatting model implementation
+
+* Formatting model using formattingmodel util [example](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils). 
+* Formatting model using only APIs [example](format-pane-example.md).
+
 ## GitHub Resources
 
 * All formatting model interfaces can be found in [GitHub - microsoft/powerbi-visuals-api: Power BI custom visuals API](https://github.com/microsoft/powerbi-visuals-api) in “formatting-model-api.d.ts”
