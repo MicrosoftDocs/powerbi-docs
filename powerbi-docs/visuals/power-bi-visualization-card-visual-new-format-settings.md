@@ -254,7 +254,7 @@ The **Shadow** toggle, when enabled, enhances the visual appeal of your cards 
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-shadow-offset](../includes/core-visuals/global-shadow-offset.md)]
-[!INCLUDE [cards-shadow-and-glow-position](../includes/core-visuals/cards-shadow-and-glow-position.md)]
+[!INCLUDE [global-shadow-and-glow-position](../includes/core-visuals/global-shadow-and-glow-position.md)]
 [!INCLUDE [cards-shadow-size](../includes/core-visuals/cards-shadow-size.md)]
 [!INCLUDE [cards-shadow-glow-blur](../includes/core-visuals/cards-shadow-glow-blur.md)]
 [!INCLUDE [cards-shadow-glow-angle](../includes/core-visuals/cards-shadow-glow-angle.md)]
@@ -267,7 +267,7 @@ The **Glow** toggle, when enabled, enhances the visual appeal of your cards by
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [cards-glow-offset](../includes/core-visuals/cards-glow-offset.md)]
-[!INCLUDE [cards-shadow-and-glow-position](../includes/core-visuals/cards-shadow-and-glow-position.md)]
+[!INCLUDE [global-shadow-and-glow-position](../includes/core-visuals/global-shadow-and-glow-position.md)]
 [!INCLUDE [cards-glow-size](../includes/core-visuals/cards-glow-size.md)]
 [!INCLUDE [cards-shadow-glow-blur](../includes/core-visuals/cards-shadow-glow-blur.md)]
 [!INCLUDE [cards-shadow-glow-angle](../includes/core-visuals/cards-shadow-glow-angle.md)]
