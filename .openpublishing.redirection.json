@@ -4431,8 +4431,8 @@
         },
         {
             "source_path": "powerbi-docs/webinars.md",
-            "redirect_url": "/power-bi/fundamentals/webinars",
-            "redirect_document_id": true
+            "redirect_url": "https://community.fabric.microsoft.com/t5/Upcoming-Events/bd-p/Community",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/embedded/power-bi-permissions.md",
@@ -5509,6 +5509,11 @@
         {
             "source_path": "powerbi-docs/consumer/mobile/mobile-apps-data-in-space-set-up.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-apps-for-mobile-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/fundamentals/webinars.md",
+            "redirect_url": "https://community.fabric.microsoft.com/t5/Upcoming-Events/bd-p/Community",
             "redirect_document_id": false
         },
         {

@@ -4,7 +4,7 @@ description: This article describes how to use SVG utils to extend the basic typ
 author: mberdugo
 ms.author: monaberdugo
 manager: rkarlin
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article

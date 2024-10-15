@@ -45,17 +45,13 @@ To use a service principal, be sure to specify the application identity informat
 
 - **Password**
 
-    - *application secret*
-      
-      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:91ab91bb-6b32-4f6d-8bbc-97a0f9f8906b@19373176-316e-4dc7-834c-328902628ad4;Password=`**`6drX...`**`;`
-
-    - *cert:thumbprint*
+    - *cert:thumbprint* (recommended for security)
 
       `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:91ab91bb-6b32-4f6d-8bbc-97a0f9f8906b@19373176-316e-4dc7-834c-328902628ad4;Password=`**`cert:12faf3e291435468607857694df5e45b68851868`**`;`
 
-For example:
-
-
+    - *application secret*
+      
+      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:91ab91bb-6b32-4f6d-8bbc-97a0f9f8906b@19373176-316e-4dc7-834c-328902628ad4;Password=`**`6drX...`**`;`
 
 If you receive the following error:
 

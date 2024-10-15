@@ -106,7 +106,7 @@ To do an enhanced refresh operation, you must specify one or more parameters in 
 |`retryCount`     |       Int   |    `0`     |    Number of times the operation retries before failing.      |
 |`objects`     |    Array      |    Entire model      |    An array of objects to process. Each object includes `table` when processing an entire table, or `table` and `partition` when processing a partition. If no objects are specified, the entire model refreshes.      |
 |`applyRefreshPolicy`    |    Boolean     |    `true`     |   If an incremental refresh policy is defined, determines whether to apply the policy. Modes are `true` or `false`. If the policy isn't applied, the full process leaves partition definitions unchanged, and fully refreshes all partitions in the table. <br><br>If `commitMode` is `transactional`, `applyRefreshPolicy` can be `true` or `false`. If `commitMode` is `partialBatch`, `applyRefreshPolicy` of `true` isn't supported, and `applyRefreshPolicy` must be set to `false`.|
-|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date. If not specified, UTC is used to determine the current day.      |
+|`effectiveDate`    |    Date     |    Current date     |   If an incremental refresh policy is applied, the `effectiveDate` parameter overrides the current date. If not specified, the current day is determined using time zone configuration under ['Refresh'](/power-bi/connect-data/incremental-refresh-overview#current-date-and-time).      |
 
 ### Response
 

@@ -333,7 +333,7 @@ The **Background** toggle allows users to display a background color behind the 
 
 The **Plot are background** enables users to display a background image behind the columns in visualizations. When an image is added, more settings become available allowing users to format the image.
 [!INCLUDE [plot-area-background-browse](../includes/core-visuals/plot-area-background-browse.md)]
-[!INCLUDE [plot-area-background-image-fit](../includes/core-visuals/plot-area-background-image-fit.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 ### Reference line
