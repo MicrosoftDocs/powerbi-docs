@@ -79,7 +79,17 @@
           href: format-pane-general.md
         - name: "Format pane example"
           href: format-pane-example.md
+        - name: "Formatting components"
+          expanded: false
+          items:
+            - name: "Formatting card"
+              href: formatting-model-card.md
+            - name: "Formatting group"
+              href: formatting-model-group.md
+            - name: "Formatting container"
+              href: formatting-model-container.md
         - name: "Formatting slices"
+          expanded: false
           items: 
             - name: "Toggle switch"
               href: "utils-formatting-model-toggleswitch.md"
