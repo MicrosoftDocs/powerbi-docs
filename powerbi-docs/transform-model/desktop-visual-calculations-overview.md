@@ -103,6 +103,8 @@ Visual calculations include templates to make it easier to write common calculat
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-08.png" alt-text="Screenshot of using templates for visual calculations.":::
 
+You can also create a templated visual calculation from the ribbon by clicking the bottom part of the **New Visual Calculation** button.
+
 The following templates are available:
 
 * **Running sum.** Calculates the sum of values, adding the current value to the preceding values. Uses the :::no-loc text="RUNNINGSUM"::: function.
@@ -215,7 +217,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 * Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
 * The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
-  * Line and stacked column chart
   * Treemap
   * Slicer
   * R visual
@@ -244,7 +245,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
-* You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
+* Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 * You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.
