@@ -53,6 +53,15 @@ With Git integration, you can not only backup your work, but also track your cha
 
 :::image type="content" source="media/projects-git/gitgraph.png" alt-text="Image showing GitGraph in VS Code.":::
 
+## Git Integration Limitation
+- **Limited Native Support**: Power BI does not have robust native support for Git version control, requiring workarounds or external tools like Power BI Desktop, ALM Toolkit, or Power BI Service Automation.
+- **Complex Merging**: Since Power BI files are binary (*.pbix*), merging changes from multiple contributors can be challenging. Git's typical text-based diff and merge features are less useful.
+- **Storage and Performance Overhead**: PBIX files can be large, leading to storage bloat in the Git repository, and affecting performance when pulling/pushing changes.
+- **No Granular Version Control**: Git manages PBIX files as monolithic entities, making it hard to track changes to individual components (*e.g., visuals, data sources, DAX measures*).
+- **Collaboration Challenges**: Without proper branching strategies and coordination, multiple users working on the same report may face conflicts and workflow bottlenecks.
+- **Manual Workflows**: Integration of deployment pipelines (*e.g., Dev-Test-Prod*) with Git often requires custom scripts or manual processes, which can be error-prone.
+- **Dependency Management**: Power BI projects may have dependencies on external data sources, which Git cannot manage directly, requiring additional tracking mechanisms.
+
 ## Related content
 
 - [Power BI Desktop projects Azure DevOps integration](projects-azdo.md)  
