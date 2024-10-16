@@ -67,6 +67,12 @@ Take into consideration that the numbers in the table refer to designated capaci
 
 * Data filtering
 
+## Concurrent requests
+
+Each workload on a capacity, including the paginated reports workload, has a maximum of 500 concurrent report renders at any given time. If your capacity is rendering 100 reports and has 200 requests for [exporting paginated reports](./../developer/embedded/export-paginated-report.md), you have 200 concurrent report render requests left.
+
+To avoid congestion, plan your concurrent requests load in advance. If you exceed the concurrent requests limit, you’ll encounter the *Too Many Requests (429)* error.
+
 ## Using the metrics app
 
 Using the [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) you can estimate the impact of your paginated report on your capacity. The app measures your CPU usage over time, allowing you to understand how your capacity is performing.
@@ -85,7 +91,7 @@ Run the report several times, and use the metrics app to get the average CPU sec
 
 ### Calculate the max report renders
 
-Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](/fabric/enterprise/throttling#track-overages-and-rejected-operations). To learn more about Capacity Units (CU), SKU and Power BI v-cores, refer to [Capacity Concepts](/fabric/enterprise/licenses#capacity). 
+Use this formula to calculate the maximum concurrent report renders that a capacity can handle, before it [overloads](/fabric/enterprise/throttling#track-overages-and-rejected-operations). To learn more about Capacity Units (CU), SKU and Power BI v-cores, refer to [capacity concepts](/fabric/enterprise/licenses#capacity). 
 
 $ \text {max concurrent report renders} = {\text {capacity units for your capacity} \times {3.75} \over \text {your report's CPU processing time (in seconds)} } $
 
