@@ -18,15 +18,17 @@ The container has two items:
 To build a formatting model with composite container using formattingmodel utils you need to 
 * Update powerbi-visuals-api version to 5.1 and higher.
 * Install powerbi-visuals-utils-formattingmodel.
-* Initialize [formattingSettingsService](utils-formatting-model#formatting-settings-service).
-* Initialize [formatingSettingsModel class](utils-formatting-model#formatting-settings-model).
+* Initialize [formattingSettingsService](utils-formatting-model.md#formatting-settings-service).
+* Initialize [formatingSettingsModel class](utils-formatting-model.md#formatting-settings-model).
 
 ### Example
 
-First, add objects to capabilities file:
+First, add objects into the `capabilities.json` file:
 
 ```json
-"objects": {
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "values": {
       "properties": {
         "show": {
@@ -52,7 +54,8 @@ First, add objects to capabilities file:
           }
         }
       }
-    },
+    }
+  }
 }
 ```
 
@@ -91,7 +94,7 @@ class IconsSettingsContainerItem extends formattingSettings.SimpleCard {
     slices: formattingSettings.Slice[] = [this.opacity];
 }
 
-class ValuesCardSetting extends formattingSettings.CompositeCard {
+class ValuesCardSetting extends formattingSettings.SimpleCard {
     public show: formattingSettings.ToggleSwitch = new formattingSettings.ToggleSwitch({
         name: "show",
         value: true
@@ -99,8 +102,8 @@ class ValuesCardSetting extends formattingSettings.CompositeCard {
 
     public labelsContainerItem: LabelsSettingsContainerItem = new LabelsSettingsContainerItem();
     public iconsContainerItem: IconsSettingsContainerItem = new IconsSettingsContainerItem();
-	
-	public container: formattingSettings.Container = {
+  
+    public container: formattingSettings.Container = {
         displayName: "Apply settings to",
         containerItems: [this.labelsContainerItem, this.iconsContainerItem]
     };
@@ -116,11 +119,10 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 }
 ```
 
-Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
+Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
-![Screenshot of the first Container item.](media/format-pane/container-first.png)
-![Screenshot of the second Container item.](media/format-pane/container-second.png)
+![Screenshot of the Container.](media/format-pane/container.png)
 
 ## GitHub Resources
 
@@ -132,6 +134,6 @@ Here's the resulting pane:
 
 ## Related content
 
-[Formatting model utils](utils-formatting-model)
+[Formatting model utils](utils-formatting-model.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com)

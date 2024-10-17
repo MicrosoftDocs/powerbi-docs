@@ -18,15 +18,17 @@ The card has two groups:
 To build a formatting model with composite container using formattingmodel utils you need to 
 * Update powerbi-visuals-api version to 5.1 and higher.
 * Install powerbi-visuals-utils-formattingmodel.
-* Initialize [formattingSettingsService](utils-formatting-model#formatting-settings-service).
-* Initialize [formatingSettingsModel class](utils-formatting-model#formatting-settings-model).
+* Initialize [formattingSettingsService](utils-formatting-model.md#formatting-settings-service).
+* Initialize [formatingSettingsModel class](utils-formatting-model.md#formatting-settings-model).
 
 ### Example
 
-First, add objects to capabilities file:
+First, add objects into the `capabilities.json` file:
 
 ```json
-"objects": {
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "values": {
       "properties": {
         "show": {
@@ -53,6 +55,7 @@ First, add objects to capabilities file:
         }
       }
     },
+  }
 }
 ```
 
@@ -113,7 +116,7 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 }
 ```
 
-Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
+Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
 ![Screenshot of a Group.](media/format-pane/group.png)
@@ -128,6 +131,6 @@ Here's the resulting pane:
 
 ## Related content
 
-[Formatting model utils](utils-formatting-model)
+[Formatting model utils](utils-formatting-model.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com)

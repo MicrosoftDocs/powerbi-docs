@@ -10,23 +10,28 @@ In this example, we show how to build a *Slider* slice using formatting model ut
 
 ### Capabilities object
 
-Insert the following JSON fragment into the object labeled objects in the `capabilities.json` file.
+Insert the following JSON fragment into the `capabilities.json` file.
 
-```typescript
+```json
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "labels": {
       "properties": {
         "min": {
           "type": {
             "numeric": true
           }
-        },
+        }
       }
     }
+  }
+}
 ```
 
 ### Formatting model class
 
-Insert the following code fragment into the `settings.ts` file.
+Insert the following code fragment into the settings file.
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";

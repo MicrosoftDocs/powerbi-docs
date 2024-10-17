@@ -15,8 +15,8 @@ The card can populate either the formatting pane or analytics pane by setting th
 To build a formatting model with formatting card using formattingmodel utils you need to 
 * Update powerbi-visuals-api version to 5.1 and higher.
 * Install powerbi-visuals-utils-formattingmodel.
-* Initialize [formattingSettingsService](utils-formatting-model#formatting-settings-service).
-* Initialize [formatingSettingsModel class](utils-formatting-model#formatting-settings-model).
+* Initialize [formattingSettingsService](utils-formatting-model.md#formatting-settings-service).
+* Initialize [formatingSettingsModel class](utils-formatting-model.md#formatting-settings-model).
 
 > [!NOTE]
 > * Card name should match the object name in *capabilities.json*
@@ -30,10 +30,12 @@ The card has two slices:
 * **Show property** represented by ToggleSwitch slice.
 * **Display units property** represented by AutoDropdown slice.
 
-First, add objects to capabilities file:
+First, add objects into the `capabilities.json` file:
 
 ```json
-"objects": {
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "values": {
       "properties": {
         "show": {
@@ -49,7 +51,8 @@ First, add objects to capabilities file:
           }
         }
       }
-    },
+    }
+  }
 }
 ```
 Then, insert the following code fragment into the settings file:
@@ -82,24 +85,26 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 }
 ```
 
-Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
+Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
 ![Screenshot of an SimpleCad.](media/format-pane/simple-card.png)
 
 ### [Composite formatting card implementation](#tab/compositeCard)
 
-In this example, we show how to build a custom visual formatting model with one composite formatting card using [formattingmodel util](utils-formatting-model). 
+In this example, we show how to build a custom visual formatting model with one composite formatting card using [formattingmodel util](utils-formatting-model.md). 
 The card has one group:
 
 * **myVisualGroupSettings** with two simple properties
   * Precision
   * Display units
 
-First, add objects to capabilities file:
+First, add objects into the `capabilities.json` file:
 
 ```json
-"objects": {
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "values": {
       "properties": {
         "show": {
@@ -122,7 +127,8 @@ First, add objects to capabilities file:
           }
         }
       }
-    },
+    }
+  }
 }
 ```
 Then, insert the following code fragment into the settings file:
@@ -168,7 +174,7 @@ export class VisualSettingsModel  extends formattingSettings.Model {
 }
 ```
 
-Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
+Follow steps 4 - 8 from the [Build formatting pane](utils-formatting-model.md#build-formatting-pane-model-using-formattingmodel-utils) tutorial.
 
 Here's the resulting pane:
 ![Screenshot of an CompositeCad.](media/format-pane/composite-card.png)
@@ -183,6 +189,6 @@ Here's the resulting pane:
 
 ## Related content
 
-[Formatting model utils](utils-formatting-model)
+[Formatting model utils](utils-formatting-model.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com)

@@ -8,20 +8,25 @@ In this example, we show how to build a *AlignmentGroup* slice using formatting 
 
 ### Capabilities object
 
-Insert the following JSON fragment into the object labeled objects in the `capabilities.json` file.
+Insert the following JSON fragment into the `capabilities.json` file.
 
-```typescript
-	"labels": {
-	  "properties": {
-		"alignment": {
-		  "type": {
-			"formatting": {
-			  "alignment": true
-			}
-		  }
-		}
-	  }
-	}
+```json
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
+    "labels": {
+      "properties": {
+        "alignment": {
+          "type": {
+            "formatting": {
+              "alignment": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
 ```
 
 ### Formatting model class
@@ -30,7 +35,9 @@ The following tabs show examples of the same *AlignmentGroup* slice in two avail
 
 #### [Horizonal AlignmentGroup](#tab/horizontal)
 
-Insert the following code fragment into the `settings.ts` file.
+![Screenshot of an AlignmentGroup in Horizontal mode.](media/format-pane/alignment-group-horizontal.png)
+
+Insert the following code fragment into the settings file.
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
@@ -55,11 +62,11 @@ export class VisualSettings extends formattingSettings.Model {
 }
 ```
 
-![Screenshot of an AlignmentGroup in Horizontal mode.](media/format-pane/alignment-group-horizontal.png)
-
 #### [Vertical AlignmentGroup](#tab/vertical)
 
-Insert the following code fragment into the `settings.ts` file.
+![Screenshot of an AlignmentGroup in Vertical mode.](media/format-pane/alignment-group-vertical.png)
+
+Insert the following code fragment into the settings file.
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
@@ -83,5 +90,3 @@ export class VisualSettings extends formattingSettings.Model {
     public cards: formattingSettings.SimpleCard[] = [this.labels];
 }
 ```
-
-![Screenshot of an AlignmentGroup in Vertical mode.](media/format-pane/alignment-group-vertical.png)

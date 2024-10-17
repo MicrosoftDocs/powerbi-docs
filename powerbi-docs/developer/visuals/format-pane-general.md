@@ -72,11 +72,11 @@ For example, if the `circle` object in your *capabilities.json* file is defined 
                             "color": true
                         }
                     }
-                  }
-          },
+                }
+            },
         }
-      }
     }
+}
 ```
 
 The formatting property in your model should be of type `ColorPicker` and look like this:
@@ -109,18 +109,23 @@ The formatting model is where you describe and customize all the properties of y
 
 In the new formatting model, property components are grouped together in logical categories and subcategories. These groups make the model easier to scan. There are the five basic components, from largest to smallest:
 
-* **Formatting model**  
+* **Formatting model**
   The largest pane container, used for formatting the pane's frontal interface. It contains a list of formatting cards.
 
-* **Formatting card**  
+* [**Formatting card**](formatting-model-card.md)
   The top level properties grouping container for formatting properties. Each card consists of one or more formatting groups, as shown here.
 
   :::image type="content" source="./media/format-pane/formatting-cards.png" alt-text="Screenshot of formatting model with individual formatting cards.":::
 
-* **Formatting group**  
+* [**Formatting group**](formatting-model-group.md)  
   The secondary-level properties grouping container. The formatting group is displayed as a grouping container for formatting slices.
 
   :::image type="content" source="./media/format-pane/formatting-groups.png" alt-text="Screenshot of formatting cards divided into formatting groups.":::
+
+* [**Formatting container**](formatting-model-container.md)  
+  The secondary-level properties grouping container. The formatting container groups formatting slices into separate container items and alows to switch between them using a drop-down list.
+
+  :::image type="content" source="./media/format-pane/container.png" alt-text="Screenshot of formatting container.":::
 
 * **Formatting slice**  
   Property container. There are two types of slices:
@@ -140,20 +145,20 @@ The following table shows the formatting property types in *capabilities.json* f
 
 | Type             | Capabilities Value Type | Formatting Property  |
 |------------------|-------------------------|----------------------|
-| Boolean          | Bool                    | [ToggleSwitch](utils-formatting-model-toggleswitch.md)         |
-| Number           | <li>numeric</li> <li> integer </li>       | <li> [NumUpDown](utils-formatting-model-numupdown.md) </li> <li>[Slider](utils-formatting-model-slider.md)</li>     |
-| Enumeration list | enumeration:[]          | <li> [ItemDropdown](utils-formatting-model-dropdown.md#itemdropdown-implementation)</li> <li> [ItemFlagsSelection](utils-formatting-model-flagselection.md#itemflagsselections-implementation)</li><li> [AutoDropdown](utils-formatting-model-dropdown.md#autodropdown-implementation)</li><li> [AutoFlagsSelection](utils-formatting-model-flagselection.md#autoflagsselection-implementation)</li> <sup>*</sup> See note below       |
-| Color            | Fill                    | [ColorPicker](utils-formatting-model-colorpicker.md)          |
-| Gradient         | FillRule                | [GradientBar](utils-formatting-model-gradientbar.md): property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
-| Text             | Text                    | <li>[TextInput](utils-formatting-model-textinput.md)</li> <li>[TextArea](utils-formatting-model-textarea.md)</li>  |
+| Boolean          | Bool                    | [ToggleSwitch](formatting-model-toggleswitch.md)         |
+| Number           | <li>numeric</li> <li> integer </li>       | <li> [NumUpDown](formatting-model-numupdown.md) </li> <li>[Slider](formatting-model-slider.md)</li>     |
+| Enumeration list | enumeration:[]          | <li> [ItemDropdown](formatting-model-dropdown.md#itemdropdown-implementation)</li> <li> [ItemFlagsSelection](formatting-model-flagselection.md#itemflagsselections-implementation)</li><li> [AutoDropdown](formatting-model-dropdown.md#autodropdown-implementation)</li><li> [AutoFlagsSelection](formatting-model-flagselection.md#autoflagsselection-implementation)</li> <sup>*</sup> See note below       |
+| Color            | Fill                    | [ColorPicker](formatting-model-colorpicker.md)          |
+| Gradient         | FillRule                | [GradientBar](formatting-model-gradientbar.md): property value should be string consisting of: </n>`minValue[,midValue],maxValue`          |
+| Text             | Text                    | <li>[TextInput](formatting-model-textinput.md)</li> <li>[TextArea](formatting-model-textarea.md)</li>  |
 
 Capabilities Formatting Objects
 
 | Type             | Capabilities Value Type | Formatting Property  |
 |------------------|-------------------------|----------------------|
 | Font size           | FontSize             | NumUpDown            |
-| Font family         | FontFamily           | [FontPicker](utils-formatting-model-fontpicker.md)           |
-| Line Alignment      | Alignment            | [AlignmentGroup](utils-formatting-model-alignmentgroup.md)       |
+| Font family         | FontFamily           | [FontPicker](formatting-model-fontpicker.md)           |
+| Line Alignment      | Alignment            | [AlignmentGroup](formatting-model-alignmentgroup.md)       |
 | Label Display Units | LabelDisplayUnits    | AutoDropDown         |
 
 <sup>*</sup> The enumeration list formatting property is different in the formatting model and in the capabilities file.
@@ -174,7 +179,7 @@ A formatting composite slice is a formatting slice that contains multiple relate
 
 For now we have two composite slice types:
 
-* [FontControl](utils-formatting-model-fontcontrol.md)  
+* [FontControl](formatting-model-fontcontrol.md)  
   This keeps all font related properties together. It consists of the following properties:
   
   * Font Family
@@ -195,7 +200,7 @@ For now we have two composite slice types:
   | Italic      | Bool                      | ToggleSwitch     |
   | Underline   | Bool                      | ToggleSwitch     |
 
-* [MarginPadding](utils-formatting-model-marginpadding.md)
+* [MarginPadding](formatting-model-marginpadding.md)
   Margin padding determines the alignment of the text in the visual. It consists of the following properties:
   
   * Left

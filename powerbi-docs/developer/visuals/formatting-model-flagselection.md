@@ -15,9 +15,12 @@ The following tabs show examples of the *ItemFlagsSelection* and *AutoFlagsSelec
 
 #### Capabilities object
 
-Insert the following JSON fragment into the object labeled objects in the `capabilities.json` file.
+Insert the following JSON fragment into the `capabilities.json` file.
 
 ```typescript
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "labels": {
       "properties": {
         "itemFlag": {
@@ -27,11 +30,13 @@ Insert the following JSON fragment into the object labeled objects in the `capab
         },
       }
     }
+  }
+}
 ```
 
 #### Formatting model class
 
-Insert the following code fragment into the `settings.ts` file.
+Insert the following code fragment into the settings file.
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -70,9 +75,12 @@ export class VisualSettings extends formattingSettings.Model {
 
 #### Capabilities object
 
-Insert the following JSON fragment into the object labeled objects in the `capabilities.json` file.
+Insert the following JSON fragment into the `capabilities.json` file.
 
-```typescript
+```json
+{
+  // ... same level as dataRoles and dataViewMappings
+  "objects": {
     "labels": {
       "properties": {
         "autoFlag": {
@@ -96,14 +104,16 @@ Insert the following JSON fragment into the object labeled objects in the `capab
               }
             ]
           }
-        },
+        }
       }
     }
+  }
+}
 ```
 
 #### Formatting model class
 
-Insert the following code fragment into the `settings.ts` file.
+Insert the following code fragment into the settings file.
 
 ```typescript
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
