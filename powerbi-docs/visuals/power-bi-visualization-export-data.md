@@ -257,9 +257,9 @@ If you find that you can't use this feature, reach out to the report owner and y
 
 |Export type|[Model level format](../create-reports/desktop-custom-format-strings.md#add-a-model-level-format-string) preserved|[Visual level format](../create-reports/desktop-custom-format-strings.md#add-a-visual-level-format-string) preserved|
 |---|---|---|
-|[Export to Excel](powerbi-visualization-export-data.md#power-bi-service)|Yes|No|
+|[Export to Excel](power-bi-visualization-export-data.md#power-bi-service)|Yes|No|
 |[Connected Tables](../collaborate-share/service-analyze-in-excel.md#excel-add-in)|No|No|
-|[Export to CSV](powerbi-visualization-export-data.md#power-bi-desktop)|Yes|Yes|  
+|[Export to CSV](power-bi-visualization-export-data.md#power-bi-desktop)|Yes|Yes|  
 
 - [Visual calculation](../transform-model/desktop-visual-calculations-overview.md) results are included in all exports, except when exporting underlying data. Fields that are hidden on the visual are never included, except when exporting underlying data. 
 
