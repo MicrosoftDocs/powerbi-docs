@@ -195,6 +195,7 @@ You can export the table before or after you save it. Paginated reports have ric
 > [!NOTE]
     > For the table, DataElementName is generated using CLS-compliant format of <table_name>_<column_name>. In CSV, this controls the name of the CSV column header. To update the value for the generated DataElementName, download the report and edit it with Power BI Report Builder. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
 
+
 :::image type="content" source="media/paginated-formatted-table/formatted-table-export.png" alt-text="Screenshot of list of export formats available.":::
 
 ## Save your report
