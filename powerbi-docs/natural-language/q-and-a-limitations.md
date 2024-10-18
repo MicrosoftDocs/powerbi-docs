@@ -10,7 +10,7 @@ ms.date: 10/17/2024
 ---
 # Limitations of Power BI Q&A
 
-[Power BI Q&A](/consumer/end-user-q-and-a.md) currently has some limitations.
+Power BI Q&A currently has [some limitations](/consumer/end-user-q-and-a.md).
 
 ## Supported data sources
 
