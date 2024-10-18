@@ -10,7 +10,7 @@ ms.date: 10/17/2024
 ---
 # Limitations of Power BI Q&A
 
-Power BI Q&A currently has [some limitations](/consumer/end-user-q-and-a.md).
+Power BI Q&A currently has [some limitations](consumer/end-user-q-and-a.md).
 
 ## Supported data sources
 
@@ -32,7 +32,7 @@ Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL D
 Q&A also supports composite models, if the model contains at least one of the following data sources:
 
 - One import data source
-- One DirectQuery data source that supports APPROXIMATEDISTINCOUNT. Refer to the [DirectQuery support](/connect-data/desktop-directquery-about.md) section in this article for specific sources.
+- One DirectQuery data source that supports APPROXIMATEDISTINCOUNT. Refer to the [DirectQuery support](connect-data/desktop-directquery-about.md) section in this article for specific sources.
 
 If the model contains a mix of data sources, we only index import columns or columns for data sources that support APPROXIMATEDISTINCTCOUNT. Thus, you can only ask questions about the instance values for these types of columns. You still can ask questions about the columns themselves. 
 
