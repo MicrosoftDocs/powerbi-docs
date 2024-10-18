@@ -6,15 +6,13 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 01/30/2023
+ms.date: 10/17/2024
 ---
 # Limitations of Power BI Q&A
 
 Power BI Q&A currently has some limitations.
 
-## Data sources
-
-### Supported data sources
+## Supported data sources
 
 Power BI Q&A supports the following configurations of data sources in the Power BI service:
 
@@ -25,11 +23,11 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 
 In each of these configurations, row-level security is also supported.
 
-#### DirectQuery support for Q&A (preview)
+### DirectQuery support for Q&A (preview)
 
 Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one change to the behavior of Q&A when it's in DirectQuery mode: After you enter your question, select **Submit**. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
 
-#### Composite model support
+### Composite model support
 
 Q&A also supports composite models, if the model contains at least one of the following data sources:
 
@@ -38,7 +36,7 @@ Q&A also supports composite models, if the model contains at least one of the fo
 
 If the model contains a mix of data sources, we only index import columns or columns for data sources that suport APPROXIMATEDISTINCTCOUNT. Thus, you can only ask questions about the instance values for these types of columns. You still can ask questions about the columns themselves. 
 
-### Data sources not supported
+## Data sources not supported
 
 Power BI Q&A doesn't support the following configurations:
 
@@ -56,6 +54,8 @@ The review questions only store questions asked about your data model for up to 
 Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and clearing the **Allow Q&A to record my utterance** checkbox. 
+
+:::image type="content" source="../create-reports/media/q-and-a-limitations/privacy-q-and-a.png" alt-text="Privacy: Help your dataset owners by sharing the questions you asked about their data.":::
 
 ## Teach Q&A limitations
 
