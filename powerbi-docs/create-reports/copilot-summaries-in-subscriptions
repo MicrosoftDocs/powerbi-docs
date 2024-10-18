@@ -1,0 +1,19 @@
+---
+title: Add copilot summarries to email subscriptions
+description: Using Copilot, you can quickly create a Power BI report.
+author: nirusrin
+ms.author: nisrinivasan
+ms.reviewer: maggieMSFT
+ms.service: powerbi
+ms.subservice: pbi-reports-dashboards
+ms.topic: how-to
+ms.date: 10/18/2024
+LocalizationGroup: Create report subscriptions
+no-loc: [Copilot]
+ms.collection: ce-skilling-ai-copilot
+#customer intent: As a report subscription creator, I want sopilot report summaries to be delivered in my subscription email.
+---
+
+# Create reports in the Power BI service with Copilot
+
+[!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
