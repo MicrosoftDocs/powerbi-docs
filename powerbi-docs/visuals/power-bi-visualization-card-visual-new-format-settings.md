@@ -49,6 +49,36 @@ With the ability to configure and display multiple cards in a single container, 
 [!INCLUDE [layout-layout-space-between-columns](../includes/core-visuals/layout-layout-space-between-columns.md)]
 [!INCLUDE [layout-layout-space-between-cards](../includes/core-visuals/layout-layout-space-between-cards.md)]
 
+#### Shape
+
+The **Shape** settings let you customize the appearance of your visual by adjusting shape-related properties using  the key options you can find in this section.
+
+[!INCLUDE [global-rounded-corners](../includes/core-visuals/global-rounded-corners.md)]
+[!INCLUDE [global-customize-corners](../includes/core-visuals/global-customize-corners.md)]
+[!INCLUDE [global-top-left-corner](../includes/core-visuals/global-top-left-corner.md)]
+[!INCLUDE [global-top-right-corner](../includes/core-visuals/global-top-right-corner.md)]
+[!INCLUDE [global-bottom-left-corner](../includes/core-visuals/global-bottom-left-corner.md)]
+[!INCLUDE [global-bottom-right-corner](../includes/core-visuals/global-bottom-right-corner.md)]
+
+#### Background
+
+The **Background** settings let you to customize the background of your visual to enhance appearance and readability.
+
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
+[!INCLUDE [image-transparency](../includes/core-visuals/image-transparency.md)]
+
+#### Border and gridlines
+
+The **Border and gridlines** settings lets you customize the color, style, thickness, transparency, and rows shown, to enhance the visual's appearance and ensuring it aligns with your report's overall design.
+
+[!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
+[!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
+[!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
+[!INCLUDE [layout-layout-max-rows-shown](../includes/core-visuals/layout-layout-max-rows-shown.md)]
+
 #### Overflow
 
 The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to flip through paginated cards, or scroll continuously, either vertically or horizontally, to view all the data within the visual.
