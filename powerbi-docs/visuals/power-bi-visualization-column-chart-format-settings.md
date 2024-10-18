@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 09/23/2024
+ms.date: 10/18/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for column charts so that I can effectively and more easily format column chart visuals in Power BI Desktop and Power BI Service.
 ---
@@ -148,7 +148,7 @@ The settings for **Small multiples** become accessible when a data field is acti
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [border-and-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
-[!INCLUDE [border-and-divider-width](../includes/core-visuals/border-&-divider-width.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
 
 #### Background
 
@@ -167,7 +167,7 @@ The visibility of **Horizontal gridlines** can be toggled on or off to make it v
 [!INCLUDE [global-dash-array](../includes/core-visuals/global-dash-array.md)]
 [!INCLUDE [global-dash-cap](../includes/core-visuals/global-dash-cap.md)]
 [!INCLUDE [global-scale-by-width](../includes/core-visuals/global-scale-by-width.md)]
-[!INCLUDE [gridlines-horizontal-&-vertical-width](../includes/core-visuals/gridlines-horizontal-&-vertical-width.md)]
+[!INCLUDE [global-width-0-4](../includes/core-visuals/global-width-0-4.md)]
 
 #### Vertical
 
@@ -179,7 +179,7 @@ The **Vertical gridlines** are only available when the axis has been set to Cont
 [!INCLUDE [global-dash-array](../includes/core-visuals/global-dash-array.md)]
 [!INCLUDE [global-dash-cap](../includes/core-visuals/global-dash-cap.md)]
 [!INCLUDE [global-scale-by-width](../includes/core-visuals/global-scale-by-width.md)]
-[!INCLUDE [gridlines-horizontal-&-vertical-width](../includes/core-visuals/gridlines-horizontal-&-vertical-width.md)]
+[!INCLUDE [global-width-0-4](../includes/core-visuals/global-width-0-4.md)]
 
 ### Columns
 
@@ -204,7 +204,7 @@ The **Border** controls allow you to customize the appearance of the borders aro
 [!INCLUDE [columns-border-match-column-color](../includes/core-visuals/columns-border-match-column-color.md)]
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 [!INCLUDE [columns-border-hide-inner-borders](../includes/core-visuals/columns-border-hide-inner-borders.md)]
 
 #### Layout
@@ -242,7 +242,7 @@ When toggled on, inner borders become apparent, allowing you to adjust the borde
 [!INCLUDE [ribbons-border-match-ribbon-color](../includes/core-visuals/ribbons-border-match-ribbon-color.md)]
 [!INCLUDE [global-color-palette](../includes/core-visuals/global-color-palette.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 #### Layout
 
@@ -362,7 +362,7 @@ The **Line** toggle feature is activated by default when a Reference line is add
 [!INCLUDE [global-dash-array](../includes/core-visuals/global-dash-array.md)]
 [!INCLUDE [global-dash-cap](../includes/core-visuals/global-dash-cap.md)]
 [!INCLUDE [global-scale-by-width](../includes/core-visuals/global-scale-by-width.md)]
-[!INCLUDE [gridlines-horizontal-&-vertical-width](../includes/core-visuals/gridlines-horizontal-&-vertical-width.md)]
+[!INCLUDE [global-width-0-4](../includes/core-visuals/global-width-0-4.md)]
 [!INCLUDE [reference-line-line-position](../includes/core-visuals/reference-line-line-position.md)]
 
 #### Shade area
@@ -413,7 +413,7 @@ The **Options** settings help tailor the **Error bars** to fit the context of yo
 The **Bar** toggle enables **Error bars** in your visual after configuring the options as outlined earlier in this article. When enabled, error bars can be formatted according to your needs, to best fit the visual using the settings as shown here.
 [!INCLUDE [global-match-series-color](../includes/core-visuals/global-match-series-color.md)]
 [!INCLUDE [error-bars-bar-bar-color](../includes/core-visuals/error-bars-bar-bar-color.md)]
-[!INCLUDE [error-bars-bar-width](../includes/core-visuals/error-bars-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 [!INCLUDE [error-bars-bar-marker-shape](../includes/core-visuals/error-bars-bar-marker-shape.md)]
 [!INCLUDE [error-bars-bar-marker-size](../includes/core-visuals/error-bars-bar-marker-size.md)]
 [!INCLUDE [error-bars-bar-border-color](../includes/core-visuals/error-bars-bar-border-color.md)]
