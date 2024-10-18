@@ -55,7 +55,7 @@ Power BI administrators can use the tenant settings to manage the ability to sto
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and clearing the **Allow Q&A to record my utterance** checkbox. 
 
-:::image type="content" source="/media/q-and-a-limitations/privacy-q-and-a.png" alt-text="Privacy Help your dataset owners by sharing the questions you asked about their data.":::
+:::image type="content" source="/create-reports/media/q-and-a-limitations/privacy-q-and-a.png" alt-text="Privacy Help your dataset owners by sharing the questions you asked about their data.":::
 
 ## Teach Q&A limitations
 
