@@ -1,15 +1,15 @@
 ---
 title: Width
-description: Setting - Width (Grid & Blank rows, Border, Width)
+description: Setting - Width (Global, Width, 0 to 12)
 author: JaedenArmstrong
 ms.author: miguelmyers
 ms.service: powerbi
 ms.subservice: pbi-corevisuals
 ms.topic: include
-ms.date: 06/26/2024
+ms.date: 10/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
 ##### Width
 
-This setting allows you to define the width of the border in pixels, offering a range from 1 to 10 (widest).
+The **Width** setting allows you to define the thickness in pixels, offering a range from 0 (none) to 12 (widest).

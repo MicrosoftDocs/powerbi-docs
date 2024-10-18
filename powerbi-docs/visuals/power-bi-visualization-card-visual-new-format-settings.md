@@ -7,7 +7,7 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/15/2024
+ms.date: 10/18/2024
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to understand and learn about all the available Format settings for the (new) Card visual so that I can effectively and more easily format (new) Card visuals in Power BI Desktop.
 ---
@@ -155,7 +155,7 @@ The **Divider** toggle, when enabled, displays a customizable visual division be
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
-[!INCLUDE [border-&-divider-line-width](../includes/core-visuals/border-&-divider-width.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
 [!INCLUDE [reference-labels-divider-ignore-padding](../includes/core-visuals/reference-labels-divider-ignore-padding.md)]
 
 #### Background
@@ -237,7 +237,7 @@ The **Background** toggle, when enabled, provides more options to customize the 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 [!INCLUDE [global-background-image-browse](../includes/core-visuals/global-background-image-browse.md)]
-[!INCLUDE [cards-background-image-fit](../includes/core-visuals/cards-background-image-fit.md)]
+[!INCLUDE [global-image-fit](../includes/core-visuals/global-image-fit.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Border
@@ -245,7 +245,7 @@ The **Background** toggle, when enabled, provides more options to customize the 
 The **Border** toggle, when enabled, provides customization options to customize the borders and enhance the visual appeal of your cards.
 
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
-[!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
 
 #### Shadow
@@ -281,7 +281,7 @@ The **Accent bar** toggle, when enabled, is a simple yet effective way to draw
 [!INCLUDE [cards-accent-bar-position](../includes/core-visuals/cards-accent-bar-position.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [border-&-accent-bar-width](../includes/core-visuals/border-&-accent-bar-width.md)]
+[!INCLUDE [global-width-1-10](../includes/core-visuals/global-width-1-10.md)]
 
 ## Related content
 
