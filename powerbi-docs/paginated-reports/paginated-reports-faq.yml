@@ -8,7 +8,7 @@ metadata:
   ms.service: powerbi
   ms.subservice: report-builder
   ms.topic: faq
-  ms.date: 03/20/2024
+  ms.date: 10/18/2024
 
 title: "Paginated reports in Power BI: FAQ"
 summary: |
@@ -16,7 +16,10 @@ summary: |
   
   This article answers frequently asked questions about paginated reports. These reports are highly formatted, print-ready output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
   
-  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md)
+  This article answers many common questions people have about paginated reports in Power BI, and about Power BI Report Builder, the standalone tool for authoring paginated reports. To learn more about licensing, see [Licensing the Power BI service for users in your organization](../enterprise/service-admin-licensing-organization.md).
+
+  > [!NOTE]
+  > A "free" license is only good if the customer is using an F64 SKU or P1 SKU or higher. Otherwise the customer would be required to have a Pro or PPU license to view Power BI content.
 
 sections:
   - name: Administration
