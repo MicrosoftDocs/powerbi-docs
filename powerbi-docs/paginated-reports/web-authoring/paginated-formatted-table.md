@@ -7,7 +7,7 @@ ms.reviewer: nisrinivasan
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 08/20/2024
+ms.date: 10/16/2024
 ---
 
 # Create paginated reports that you can export in the Power BI service (Preview)
@@ -190,7 +190,9 @@ To delete a text box, right-click a text box and select **Remove**. Alternativel
    
 ## Export your report
 
-You can export the table before or after you save it. Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder.
+You can export the table before or after you save it. Paginated reports have rich export capabilities to any of the supported formats, preserving full fidelity. The exported report is saved to your default Downloads folder. 
+
+For the table, DataElementName is generated using CLS-compliant format of <table_name>_<column_name>. In CSV, this controls the name of the CSV column header. To update the value for the generated DataElementName, download the report and edit it with Power BI Report Builder. To learn more, see [data renderer formats](../report-design/render-data-report-builder-service.md#data-renderer-formats).
 
 :::image type="content" source="media/paginated-formatted-table/formatted-table-export.png" alt-text="Screenshot of list of export formats available.":::
 
