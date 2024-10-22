@@ -51,13 +51,13 @@ To open a Power BI *.pbix* file, you need to [get Power BI Desktop](../fundament
 
 ### Create a report from the semantic model
 
-On the **Semantic models + dataflows** tab, you have several options for exploring your semantic model. In this tutorial, you're going to explore the semantic model by creating your own report from scratch.
+You have several options for exploring your semantic model. In this tutorial, you're going to explore the semantic model by creating your own report from scratch.
 
-:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample semantic model entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png":::
+:::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png" alt-text="Screenshot shows the Retail Analysis Sample semantic model entry." lightbox="media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png"::: ?
 
 1. Select **More options** (**...**) > **Create report**.
 
-   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png" alt-text="Screenshot shows the Create report menu item.":::
+   :::image type="content" source="media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png" alt-text="Screenshot shows the Create report menu item."::: ?
 
    The semantic model opens in report editing mode.
 
