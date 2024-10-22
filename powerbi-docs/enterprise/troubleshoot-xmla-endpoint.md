@@ -273,6 +273,14 @@ To validate whether the issue is a result of proxy settings, try the **SQL Serve
 
 Refer to the [establishing a client connection](#establishing-a-client-connection) section in this article for more information about testing general XML/A connectivity.
 
+## Excel workbook fails to open
+
+Excel workbook may fail to open with error, "**Initialization of the data source failed. Check the database server or contact your database administrator.**". If the workbook contains a connection to a Power BI Semantic Model, then check if the connection string contains the property "**Catalog Rebound=True**". If so, remove the property, save the workbook, and try opening it again.
+
+The "**Catalog Rebound=True**" property is automatically added by the Analysis Services OLE DB Provider (MSOLAP) in newer versions of Excel, when the connection to Power BI Semantic Model is optimized by the provider. Since the property is persisted to the workbook, when the same workbook is opened in Excel that's using an older version of the provider that doesn't support the otimization, then Excel will fail to open the workbook.
+
+"**Catalog Rebound**" is meant for internal use only.
+
 ## Workspace/server alias
 
 Unlike Azure Analysis Services, server name [aliases](/azure/analysis-services/analysis-services-server-alias) **are not supported** for Premium workspaces.
