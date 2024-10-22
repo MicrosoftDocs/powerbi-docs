@@ -17,15 +17,15 @@ LocalizationGroup: Create reports
 
 Quick measure suggestions to assist creation of DAX formulas for [model measures](/power-bi/transform-model/desktop-tutorial-create-measures) using natural language is available in [DAX query view](/power-bi/transform-model/dax-query-view) using [Microsoft Fabric Copilot to write and explain DAX queries](/dax/dax-copilot). You can create measures in a DAX query that can be added to your model when you are ready. 
 
-In addition, there are other features avilable to aggregate data in a visual. [Quick measures](/power-bi/transform-model/desktop-quick-measures) can help you create DAX measures using a template approach for commonly used measures, such as month-over-month change. [Visual calculations](/power-bi/transform-model/desktop-visual-calculations-overview) can create a DAX calculation such as running totals directly in a visual. 
+In addition, there are other features available to aggregate data in a visual. [Quick measures](/power-bi/transform-model/desktop-quick-measures) can help you create DAX measures using a template approach for commonly used measures, such as month-over-month change. [Visual calculations](/power-bi/transform-model/desktop-visual-calculations-overview) can create a DAX calculation such as running totals directly in a visual. 
 
-Power BI Desktop versions prior to October 2024 will show the **Suggestions with Copilot** option disabled. 
+The **Suggestions with Copilot** options shows as disabled in Power BI Desktop versions before October 2024.
 
 ## Related content
 
 You might also be interested in the following articles:
 
-- [Data analysis expressions (DAX) documenation](/dax/)
+- [Use Data Analysis Expressions (DAX) documentation](/dax/)
 - [Use quick measures for common calculations](desktop-quick-measures.md)
 - [Create calculated columns in Power BI Desktop](desktop-calculated-columns.md)
 - [Create calculated tables in Power BI Desktop](desktop-calculated-tables.md)
