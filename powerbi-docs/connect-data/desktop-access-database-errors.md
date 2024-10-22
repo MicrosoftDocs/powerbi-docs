@@ -64,6 +64,7 @@ To change the bit version of Microsoft Office to match the bit version of your P
 
 If the error occurs with an Excel 97-2003 XLS workbook, you can avoid using the Access Database Engine by opening the XLS file in Excel and saving it as an XLSX file.
 
+<a name="situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription"></a>
 ## You use Access or XLS files with Microsoft 365
 
 Subscription versions of Office 2013-2019 that use Click-to-Run installation technology register the Access Database Engine provider in a virtual registry location that only Microsoft Office processes can access. The Mashup Engine, which is responsible for running non-Microsoft 365 Excel and Power BI Desktop, isn't an Office process, so it can't use the Access Database Engine provider.
