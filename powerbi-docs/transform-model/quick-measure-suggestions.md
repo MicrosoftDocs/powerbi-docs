@@ -13,13 +13,13 @@ LocalizationGroup: Create reports
 #customer intent: As a Power BI user I want to know more about DAX measures using natural language.
 ---
 
-# Quick measure suggestions
+# Quick measure suggestions with Copilot
 
-Quick measure suggestions to assist creation of DAX formulas for [model measures](/power-bi/transform-model/desktop-tutorial-create-measures) using natural language is available in [DAX query view](/power-bi/transform-model/dax-query-view) using [Microsoft Fabric Copilot to write and explain DAX queries](/dax/dax-copilot). You can create measures in a DAX query that can be added to your model when you are ready. 
+Quick measure suggestions to assist creation of DAX formulas for [model measures](/power-bi/transform-model/desktop-tutorial-create-measures) using natural language is available in [DAX query view](/power-bi/transform-model/dax-query-view) using [Microsoft Fabric Copilot to write and explain DAX queries](/dax/dax-copilot). You can create measures in a DAX query that can be added to your model when you're ready. 
 
 In addition, there are other features available to aggregate data in a visual. [Quick measures](/power-bi/transform-model/desktop-quick-measures) can help you create DAX measures using a template approach for commonly used measures, such as month-over-month change. [Visual calculations](/power-bi/transform-model/desktop-visual-calculations-overview) can create a DAX calculation such as running totals directly in a visual. 
 
-The **Suggestions with Copilot** options shows as disabled in Power BI Desktop versions before October 2024.
+The **Suggestions with Copilot** shows as disabled in Power BI Desktop versions before October 2024.
 
 ## Related content
 
