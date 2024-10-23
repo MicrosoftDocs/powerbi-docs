@@ -1,5 +1,5 @@
 ---
-title: Add copilot summarries to email subscriptions
+title: Add copilot summaries to email subscriptions
 description: Using Copilot, you can quickly create a Power BI report.
 author: nirusrin
 ms.author: nisrinivasan
@@ -17,3 +17,48 @@ ms.collection: ce-skilling-ai-copilot
 # Create reports in the Power BI service with Copilot
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
+
+You can include a Copilot generated summary for your Power BI report page or full report attachment in your email subscription to get insights. All the recipients of the email subscription will receive the copilot summary in the email. This feature is currently supported for Standard Subscriptions  
+The copilot summary is also delivered to email even for reports that are delivered to OneDrive or SharePoint.
+
+# Licensing Requirements
+
+- The report must be in a Copilot eligible (Add link to the licensing requirements) capacity
+- (Add link to subscriptions licensing requirements) 
+- Your administrator needs to enable the tenant switch before you start using Copilot. See the article Copilot tenant settings for details.
+- Your F64 or P1 capacity needs to be in one of the regions listed in this article, Fabric region availability. If it isn't, you can't use Copilot.
+
+# How to setup Copilot in email subscriptions
+
+1. Select **Subscribe to report** , then select **Create a subscription**
+
+<image>
+
+2. Select **Standard Subscription**. You can choose to modify the **Subscription name**, **Recipients** who you want to receive the copilot summary in email.
+
+<image>
+
+3. You can choose to receive a summary of a single report page or the full report by choosing **Attach full report**. This option will also attach the report to the email.
+
+<image>
+
+Alternately, you can choose to deliver the full report to a OneDrive or SharePoint location. If you choose to do this, the copilot summary will still be delivered to the recipient email.
+
+
+<image>
+
+4. Schedule the delivery (add link) of your report. 
+
+5. The **Summary by copilot (preview)** will be included in the email. 
+
+<image>
+
+6. You can choose to **Preview summary** 
+
+
+
+
+# Limitations and Considerations
+- Copilot summaries for email subscriptions are not supported for pgaintaed reports, scrorecards and dashboards.
+- The Copilot summary is run on behalf of the subscription owner, much like email subscriptions.
+- User-defined prompts are not supported. 
