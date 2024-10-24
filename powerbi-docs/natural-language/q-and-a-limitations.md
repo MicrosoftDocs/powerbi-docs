@@ -47,19 +47,6 @@ The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from
 - Direct Query   
 - DirectLake - coming soon 
 
-### Data sources not supported
-
-Power BI Q&A doesn't support the following configurations:
-
-- Object level security with any type of data source
-- Reporting Services 
-
-## Tooling limitations
-
-The review questions only store questions asked about your data model for up to 28 days. Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups.
-
-The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, see [Intro to Q&A tooling](q-and-a-tooling-intro.md).
-
 ## Review question limitations
 
 The review questions only store questions asked about your data model for up to 28 days. Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
