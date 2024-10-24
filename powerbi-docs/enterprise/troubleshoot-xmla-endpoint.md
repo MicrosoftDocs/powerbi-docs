@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 11/10/2023
+ms.date: 10/24/2024
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -275,9 +275,9 @@ Refer to the [establishing a client connection](#establishing-a-client-connectio
 
 ## Excel workbook fails to open
 
-Excel workbook may fail to open with error, "**Initialization of the data source failed. Check the database server or contact your database administrator.**". If the workbook contains a connection to a Power BI Semantic Model, then check if the connection string contains the property "**Catalog Rebound=True**". If so, remove the property, save the workbook, and try opening it again.
+Excel workbook might fail to open with error, "**Initialization of the data source failed. Check the database server or contact your database administrator.**". If the workbook contains a connection to a Power BI semantic model, then check if the connection string contains the property "**Catalog Rebound=True**". If the property is found, remove it, save the workbook, and try opening it again.
 
-The "**Catalog Rebound=True**" property is automatically added by the Analysis Services OLE DB Provider (MSOLAP) in newer versions of Excel, when the connection to Power BI Semantic Model is optimized by the provider. Since the property is persisted to the workbook, when the same workbook is opened in Excel that's using an older version of the provider that doesn't support the otimization, then Excel will fail to open the workbook.
+The "**Catalog Rebound=True**" property is automatically added by the Analysis Services OLE DB Provider (MSOLAP) in newer versions of Excel when the connection to Power BI semantic model is optimized by the provider. Because the property is persisted to the workbook, when the same workbook is opened in Excel that's using an older version of the provider that doesn't support the optimization, then Excel will fail to open the workbook.
 
 "**Catalog Rebound**" is meant for internal use only.
 
