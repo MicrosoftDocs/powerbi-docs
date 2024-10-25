@@ -6260,6 +6260,11 @@
             "source_path": "powerbi-docs/paginated-reports/expressions/report-builder-functions-varp-function.md",
             "redirect_url": "/sql/reporting-services/report-design/report-builder-functions-varp-function",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guidance/whitepaper-azure-b2b-power-bi.md",
+            "redirect_url": "/power-bi/enterprise/service-admin-azure-ad-b2b",
+            "redirect_document_id": false
         }   
   ]
 }
