@@ -105,6 +105,10 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
+* **Every user is limited to maximum 1000 data source connections in every cloud tenant**: If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit of 1000 connections. To resolve any related issues, you can manually remove existing data sources from the admin center or, alternatively, use the following PowerShell script to find and bulk-delete any data sources that exceed that limit.
+
+How do I avoid reaching this limit?: If you're an ISV or any other Power BI Embedded app owner with many customers, use service principal profiles for multi-tenancy apps in Power BI embedded. If you're not an ISV, you might reach this limit because you're creating a new data source for every CSV or Excel file. To solve this, you might want to use the "upload file box" in Power BI Desktop to select multiple Excel files, which creates multiple data source connections. In this scenario, to ensure that only a single data source is selected, we recommend that you instead select the folder containing those Excel files.
+
 * You can't mix an Excel on-premises data source with an existing Analysis Services DirectQuery data source; you can only include an Excel on-premises data source to your report if it's in a separate query. In such situations, you can map the Excel data source to a gateway, and leave the Analysis Services DirectQuery cloud data source as-is.
 
 ## Related content
