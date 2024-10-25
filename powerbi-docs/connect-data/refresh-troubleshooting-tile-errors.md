@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting tile errors
-description: See explanations and solutions for common errors you might see with tile refresh in Power BI.
+description: See explanations and solutions for common errors you might encounter with tile refresh in the Power BI service.
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: kayu
@@ -8,7 +8,7 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: troubleshooting
-ms.date: 11/10/2023
+ms.date: 10/30/2024
 LocalizationGroup: Troubleshooting
 ---
 # Troubleshoot tile errors
@@ -45,7 +45,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - **The groups in the primary axis and the secondary axis overlap. Groups in the primary axis can't have the same keys as groups in the secondary axis.**
 
-  This issue is usually transient, and typically happens when you're moving groups from rows to columns. The error should disappear when you finish moving all the groups. If you still see the message, try switching fields between the rows, columns, or axis legend, or removing fields from the visual.
+  This issue is usually transient, and typically happens when you're moving groups from rows to columns. The error should disappear when you finish moving all the groups. If you still see the message, try switching fields between the rows, columns, or axis legend, or try removing fields from the visual.
 
 - **This visual has exceeded the available resources. Try filtering to decrease the amount of data displayed.**
 
@@ -61,11 +61,11 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - Tiles continue to show unfiltered data after you enable single-sign on (SSO).
 
-  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source, until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
+  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 
-  As a semantic model owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, and then select **Settings**. On the **Semantic models** tab, expand **Scheduled refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
+  As a semantic model owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Go to the workspace for the dashboard and locate the associated semantic model. Next to the semantic model's name, select the **More options**, or three horizontal dots icon, then select **Settings** in the menu that appears. On the **Semantic models** tab, expand **Refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
 
   > [!NOTE]
   > **Automatic dashboard tile and metric refresh** is available only for semantic models in DirectQuery or Live Connection modes. Semantic models in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.

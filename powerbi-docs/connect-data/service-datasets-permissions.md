@@ -1,14 +1,15 @@
 ---
 title: Semantic model permissions
-description: Describes semantic model permissions and how they're acquired by users.
+description: Learn about the different levels of semantic model permissions in Power BI and how users can acquire them.
 author: paulinbar
 ms.author: painbar
 ms.reviewer: ogetchie
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 07/17/2024
+ms.date: 10/30/2024
 LocalizationGroup: Share your work
+#customer intent: 
 ---
 # Semantic model permissions
 
@@ -29,7 +30,7 @@ The following table describes the four levels of permission that control access 
 >[!NOTE]
 >Build permission is primarily a discoverability feature. It enables users to easily discover semantic models and build Power BI reports and other consumable items based on the discovered models, such as Excel PivotTables and non-Microsoft data visualization tools, using the XMLA endpoint. Users who have Read permission without Build permission can consume and interact with existing reports that have been shared with them. Granting Read permission without Build permission should not be relied upon to secure sensitive data. Users with Read permission, even without Build permission, are able to access and interact with data in the semantic model.
 
-## How are the semantic model permissions acquired?
+## How are semantic model permissions acquired?
 
 ### Permissions acquired implicitly via workspace role
 
@@ -55,7 +56,7 @@ When users share reports or semantic models, links are created that provide perm
 
 ### Permissions granted in an app
 
-Users can acquire permissions on a semantic model used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences). 
+Users can acquire permissions on a semantic model used in an app if the app owner allows this in the [app permissions configuration](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences).
 
 ### Permissions granted via REST APIs
 
@@ -63,7 +64,7 @@ Semantic model permissions can be set via REST APIs. For more information, see [
 
 ## Semantic model permissions and row-level security (RLS)
 
-Row-level security might affect the ability of users with read or build permission on a semantic model to read data from the semantic model.
+[Row-level security (RLS)](/fabric/security/service-admin-row-level-security) might affect the ability of users with read or build permission on a semantic model to read data from the semantic model.
 
 * When RLS **isn't** defined on the semantic model, users with write, read, or build permission on the semantic model can read data from the semantic model.
 * When RLS **is** defined on the semantic model:
@@ -73,5 +74,5 @@ Row-level security might affect the ability of users with read or build permissi
 ## Related content
 
 * [Share access to a semantic model](./service-datasets-share.md)
-* [Manage semantic model permissions](service-datasets-manage-access-permissions.md)
-* [Semantic model permissions in the context of the Power BI REST APIs](../developer/embedded/datasets-permissions.md)
+* [Manage semantic model access permissions](service-datasets-manage-access-permissions.md)
+* [Semantic model REST API permissions](../developer/embedded/datasets-permissions.md)
