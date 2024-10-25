@@ -22,13 +22,27 @@ This article provides guidance that enables developers and administrators to pro
 
 ## Optimizing the data model
 
-The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (by using DirectQuery or Live Connection), and in Power BI they are referred to as *semantic models*—[previously known as datasets](../connect-data/service-datasets-rename.md). It's important to understand your options, and to choose the appropriate semantic model type for your solution. There are three semantic model modes: Import, DirectQuery, and Composite. For more information, see [Semantic models in the Power BI service](../connect-data/service-datasets-understand.md), and  [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
+The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (by using DirectQuery or Live Connection), and in Power BI they are referred to as *semantic models*—[previously known as datasets](../connect-data/service-datasets-rename.md). It's important to understand your options, and to choose the appropriate semantic model type for your solution. There are three semantic model table storage modes: Import, DirectQuery, and Composite. For more information, see [Semantic models in the Power BI service](../connect-data/service-datasets-understand.md), and  [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
 
-For specific semantic model mode guidance, see:
+For specific semantic model table storage mode guidance, see:
 
 - [Data reduction techniques for Import modeling](import-modeling-data-reduction.md)
 - [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md)
 - [Composite model guidance in Power BI Desktop](composite-model-guidance.md)
+
+### Optimizing for report authors and model consumers
+
+The semantic model is the foundation of all reporting in Power BI. Consumers of the semantic model can create Power BI reports in Power BI Desktop by connecting to a published semantic model or connecting to data and creating a local semantic model. The semantic model can also be used to create Power BI reports in the browser, create [Power BI explorations](/power-bi/consumer/explore-data-service), create [paginated reports](/power-bi/consumer/end-user-paginated-report), create [DAX queries](/power-bi/transform-model/dax-query-view), and create reports in Excel with [Analyze in Excel](/power-bi/collaborate-share/service-connect-power-bi-datasets-excel), [connecting to Power BI in Excel](/power-bi/collaborate-share/service-connect-excel-power-bi-datasets), or [exporting data from a report visual](/power-bi/visuals/power-bi-visualization-export-data?tabs=powerbi-desktop), as well as many other reporting tools. A semantic model author can help semantic model consumers understand and utilize the semantic model with how they build the model.
+
+- **Names**: Tables, columns, and measures in the semantic model with descriptive names. For example, 'Store Sales' as a table name is more intuitive than 'Table1'. 
+- **Descriptions**: Tables, columns, and measures in the model can have descriptions added to them to provide more detail than can fit in the name. Explain not only what they include but how they should be used.
+- **Hide**: You can hide tables, columns, and measures in the model to show only what you expect them to use in a report. For example, relationship columns may be an ID that is not necessary for reporting and can be hidden as it's not expected to be used in a report, or data columns that have a measure to aggregate the column could be hidden to encourage use of the measure instead. Hidden objects can always be unhidden later by the model consumer, so they will still be available, but hiding can provide focus.
+- **Hierarchies**: You can create hierarchies to convey the hierarchy across multiple columns. For example, a Calendar hierarchy may contain Year, Month, Day columns, and a Product hierarchy may contain Category, Sub-Category, Product columns. Right-click a column to create a hierarchy.
+- **Measures**: You can use [measures](/power-bi/transform-model/desktop-measures) to aggregate data columns in the semantic model to provide consitency across reports. Measures can range from the SUM of a column, to a health index combining multiple aggregations in a specific way or comparing aggregations across time periods, such as daily average this month compared to the daily average of the same month last year. Measures can also be surfaced in Power BI search and other features, such as [Metrics and Scorecards](/power-bi/create-reports/service-goals-introduction).
+- **Formats**: You can specify how a column or measure is displayed in a visual, by default. Values in visuals can be customized further in the visual. Format options include if it has a thousands comma, how many decimal places, how a date is shown, etc. You can also apply [custom](/power-bi/create-reports/desktop-custom-format-strings) or [dynamic](/power-bi/create-reports/desktop-dynamic-format-strings) formats.
+- Data category: You can specify a column [data category](/power-bi/transform-model/desktop-data-categorization), such as if it's a Country or Web URL.
+
+These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](/power-bi/transform-model/calculation-groups), [field parameters](/power-bi/create-reports/power-bi-field-parameters), [what if parameters](/transform-model/desktop-what-if), and [grouping and binning columns](/power-bi/create-reports/desktop-grouping-and-binning), which should be evaluated to see if they apply your specific reporting needs.
 
 ## Optimizing visualizations
 
