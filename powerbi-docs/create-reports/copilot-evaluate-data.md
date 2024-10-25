@@ -21,7 +21,7 @@ Before you start using Copilot with your semantic model, evaluate your data. You
 
 [!INCLUDE [copilot-notes](../includes/copilot-notes.md)]
 
-## Considerations for datasets for Copilot use
+## Considerations for semantic models for Copilot use
 
 The following table lists the criteria to help you create accurate reports with Copilot. These items are recommendations that can help in generating accurate Power BI reports.  
 
@@ -42,6 +42,13 @@ The following table lists the criteria to help you create accurate reports with 
 |Refresh Schedules  | Transparent and Scheduled  | Clearly communicate the refresh schedules of the data to ensure users understand the timeliness of the data they are analyzing.  | Indicate if the data is real-time, daily, weekly, etc.  |
 |Security  | Role-Level Definitions  | Define security roles for different levels of data access if there are sensitive elements that not all users should see.  | Sales team members can see sales data but not HR data.  |
 |Metadata  | Documentation of Structure  | Document the structure of the data model, including tables, columns, relationships, and measures, for reference.  | A data dictionary or model diagram provided as a reference.  |
+
+The following table lists additional criteria to help you create accurate [DAX queries with Copilot](/dax/dax-copilot). These items are recommendations that can help in generating accurate DAX queries. 
+
+|Element  | Consideration  | Description  | Example  |
+|---------|---------|---------|-----|
+|Measures, tables, and columns  | Descriptions  | Include what it is and how you intend each element to be used in the description property. Note: Only first 200 characters are used.  | [YOY Sales] description could be "Year-over-year (YOY) difference in Orders. Use with the 'Date'[Year] column to show by years other than the latest year. Partial years will compare to same period of prior year." |
+|Calculation groups | Descriptions | Calculation items are not included in the model metadata. Use the description of the calculation group column to list and explain the use of the calculation items. Note: Only first 200 characters are used. | For example, the [Time intelligence sample](/analysis-services/tabular-models/calculation-groups?view=asallproducts-allversions#time-intelligence-example) calculation group column could have this description: "Use with measures & date table for Current: current value, MTD: month to date, QTD: quarter to date, YTD: year to date, PY: prior year, PY MTD, PY QTD, YOY: year over year change, YOY%: YOY as a %" and on a table with measures could expand on the usage a description such as "Measures are used to aggregate data. These measures can shown as year-over-year by using this syntax CALCULATE([Measure Name], 'Time intelligence'[Time calculation] = "YOY")" |
 
 ## Related content
 
