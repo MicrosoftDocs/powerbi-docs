@@ -8,19 +8,13 @@ ms.service: powerbi
 ms.subservice: pbi-explore
 ms.search.form: Get started with org apps
 ms.topic: how-to
-ms.date: 09/24/2024
+ms.date: 10/14/2024
 ms.custom:
 LocalizationGroup: Share your work
 ---
 # Get started with org apps (preview) 
 
-> [!IMPORTANT]
-> **Opting in to the preview of org apps as items has been temporarily removed and will return soon.**
-> To ensure quality in functionality and experience, the preview switch for org apps has been temporarily removed for customers who have not already opted in. Customers in preview can still create new org app items, and existing org app items can still be edited and viewed. However, there is an issue with report pages pane not appearing when viewing org apps. The preview will be available again soon for all customers once the issue is fixed.
-
-**Coming soon:** the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
-
-Welcome to the preview for org apps as items, Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. You can also manage org apps the way you would any other item type - from creating a new org app, to managing access, or sharing an org app - what you find familiar and easy about managing other items, like a report, are all familiar with org apps as items.
+Welcome to the preview for org apps as items - Power BI workspace apps rebuilt for Fabric as a new item type. With org apps as items, you can create multiple org apps per workspace. And you can manage org apps the way you would any other item type - from creating a new org app, to managing access, to sharing the org app - all the things you find familiar and easy about managing other items, such as reports, are all familiar with org apps as items as well.
 
 ![Collage image of managing an org app item.](media/org-app-items/org-app-item-management-collage.png)
 
@@ -80,7 +74,7 @@ When you give users access to the org app item, **at a minimum they gain read ac
   - With workspace apps, only specific roles within the workspace could manage access and share the app.
 - Users who have access to an org app don't have to install the org app to view it. The org app item appears in lists like other items do, **Recent on Home**.
   - With workspace apps, a user had to install an app to see it in lists.
-- If a user is removed from an org app, that user loses their org app-based access to included items and semantic models associated with that org app. If a user has another form of access to included items or semantic models that form of access is unaffected.
+- If a user is removed from an org app, that user’s org-app-based access to included report items and semantic model items associated with that org app is automatically revoked. If a user has another form of access to included items or semantic models, that form of access is unaffected. (Automatic revocation of included real-time dashboard and notebook items is coming soon.)
   - With workspace apps, if a user was removed from an app their access to semantic models remained. Revoking access to semantic models had to be done manually. App authors had to be sure that they weren't breaking that user's ability to view other reports when removing model access.
   
 ### Workspace apps continue to work alongside org app items (preview)
@@ -281,16 +275,23 @@ Want to grant extra permissions to a user? Find the user you would like to manag
 
 - **Add reshare** allows users to share the org app item, included items, and underlying items with others. This means they can grant others access to the org app and propagate access to all items the org app is dependent on. Items like included reports, notebooks, and real-time dashboards. Plus the underlying semantic models the report items depend on.
 - **Remove reshare** removes a user's ability to share the org app item with others. Though anyone who has access to the org app by that user maintains access. 
-- **Remove access** removes that user's access to the org app item, the included items, and the semantic models that reports in the org app source from. Unique to new org app items, access to all lineage items is removed when a user loses access to an org app. Though if a user has another form of access to an item, like a semantic model, they maintain access to that item. Only their org app-based access is removed. 
+- **Remove access** removes that user's access to the org app item, the included report items, and the semantic model items that reports in the org app source from. Unique to new org app items, access to lineaged report and semantic model items is removed when a user loses access to an org app. However, if a user has another form of access to an item, such as a semantic model, they maintain access to that item. Only their org app-based access is removed. (Automatic revocation of included real-time dashboard and notebook items is coming soon.)
 
 > [!NOTE]
-> There are select cases where your org app doesn't automatically propagate access to items the org app is dependent on. For example, a report with a paginated report visual, also known as a report definition language (RDL) visual, is dependent on a paginated report item. Org apps don't propagate access to underlying paginated reports at this time. If your org app consumers have a broken view in an org app, consider all the items your consumers need access to, grant necessary access, and have your consumers view the org app again. 
+> There are select cases where your org app doesn't automatically propagate or revoke access to items the org app is dependent on.
+> **Access propagation**: For example, a report with a paginated report visual, also known as a report definition language (RDL) visual, is dependent on a paginated report item. Org apps don't propagate access to underlying paginated reports at this time. If your org app consumers have a broken view in an org app, consider all the items your consumers need access to, grant necessary access, and have your consumers view the org app again.
+> **Access revocation**: Org apps propagate access to Fabric items, such as real-time dashboard and notebook items included in the app, but do not yet revoke access automatically when a user loses access to an org app or those items are removed from the org app. Manage access removal of these items from each item's permissions management page.
 
-Here are the items org apps propagate and revoke access to: 
+Here are the items org apps propagate access to: 
 - The org app item itself 
   - Included report items 
     - The underlying semantic model for a report item (for a model in the same workspace or separate workspace)
-  - Included notebook or real-time dashboard items 
+  - Included notebook or real-time dashboard items
+ 
+Here are the items org apps revoke access to: 
+- The org app item itself 
+  - Included report items 
+    - The underlying semantic model for a report item (for a model in the same workspace or separate workspace)
 
 ### Insufficient permissions when managing an org app
 

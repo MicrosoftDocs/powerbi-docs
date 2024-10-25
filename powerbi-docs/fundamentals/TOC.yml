@@ -63,9 +63,7 @@
   - name: Resources
     items:
     - name: "Videos"
-      href: videos.md
-    - name: "Webinars"
-      href: webinars.md                     
+      href: videos.md                    
     - name: "Power BI updates archive"
       href: desktop-latest-update-archive.md
     - name: "Power BI Desktop change log"

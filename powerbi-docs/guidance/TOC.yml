@@ -277,6 +277,8 @@
           href: powerbi-implementation-planning-auditing-info-protection-data-loss-prevention.md
       - name: "Data gateways"
         href: powerbi-implementation-planning-data-gateways.md
+      - name: "Integration with other services"
+        href: powerbi-implementation-planning-integration-with-other-services.md
       - name: "Auditing and monitoring"
         items:
         - name: "Auditing and monitoring overview"

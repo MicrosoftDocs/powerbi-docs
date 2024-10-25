@@ -6,7 +6,8 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 10/10/2024
+ms.date: 10/24/2024
+
 ---
 # Limitations of Power BI Q&A
 

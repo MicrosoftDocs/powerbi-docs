@@ -345,12 +345,9 @@ Errors such as an invalid *activePageName* configuration are examples of nonbloc
 PBIR is currently in **preview**. Keep the following in mind:
 
 - Service limitations
-  - Can't be included in Power BI Apps.
-  - Can't be downloaded as PBIX.    
+  - Mobile views are not displayed in Power BI Apps.
   - Can't be deployed with deployment pipelines.  
-  - Can't be saved as a copy.
-  - Can't be published from Power BI Desktop.
-  - Can't be uploaded to workspace as PBIX.  
+  - Can't be saved as a copy.    
 - Large reports with more than 500 files experience authoring performance issues (report viewing isn't affected), including:
   - Saving in Power BI Desktop
   - Synchronization in Fabric Git Integration
