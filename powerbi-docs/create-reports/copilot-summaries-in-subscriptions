@@ -23,7 +23,7 @@ The copilot summary is also delivered to email even for reports that are deliver
 
 # Licensing Requirements
 
-- The report must be in a Copilot eligible (Add link to the licensing requirements) capacity
+- Ensure you have [reviewed](../copilot-enable-power-bi) what's required to get copilot to work in Power BI
 - (Add link to subscriptions licensing requirements) 
 - Your administrator needs to enable the tenant switch before you start using Copilot. See the article Copilot tenant settings for details.
 - Your F64 or P1 capacity needs to be in one of the regions listed in this article, Fabric region availability. If it isn't, you can't use Copilot.
