@@ -86,7 +86,7 @@ Semantic model operations such as queries are subject to individual memory limit
 
 * **Loading the semantic model** - The first action is loading the semantic model into the memory.
 
-* **Refreshing the semantic model** - The second action is refreshing the semantic model after it's loaded into the memory. The refresh operation will cause the memory used by the semantic model to double. The required memory doubles because the original copy of data is still available for active queries, while another copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce.
+* **Refreshing the semantic model** - The second action is refreshing the semantic model after it's loaded into the memory. The refresh operation will cause the memory used by the semantic model to more than double. This is because, in addition to the memory used by the refresh operation, the original copy of data is still available for active queries while another copy is being processed by the refresh. Once the refresh transaction commits, the memory footprint will reduce
 
 * **Interacting with the report** - The third action is caused by the user's interaction with the report. During the semantic model refresh, report interactions will execute DAX queries. Each DAX query consumes a certain amount of temporary memory required to produce the results. Each query may consume a different amount of memory. The memory used to query the semantic model is added to the memory needed to load the semantic model, and refresh it.
 
