@@ -67,7 +67,7 @@ If you include a message in the email, the message will appear above the Summary
 
 10. Once you have saved the subscription, you can test the subscription by selecting the **Send now** button.
 
-:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png" alt-text="Screenshot showing the send now option." lightbox="media/power-bi-subscribe-copilot-summaries-send-now.png":::
+:::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png" alt-text="Screenshot showing the send now option." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png":::
 
 ## Limitations and Considerations
 - Copilot summaries for email subscriptions are not supported for pagintaed reports, scrorecards and dashboards.
