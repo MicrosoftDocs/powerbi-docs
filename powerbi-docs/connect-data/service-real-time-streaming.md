@@ -7,10 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 11/10/2023
+ms.date: 10/28/2024
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI
+
+> [!IMPORTANT]
+> Real-time streaming in Power BI is being retired. After October 31, 2024 you will no longer be able to create new real-time semantic models in Power BI. Your existing streaming semantic models will be unaffected. As an alternative, explore [Real-Time Intelligence in Microsoft Fabric](/fabric/real-time-intelligence/overview).
+
 
 Power BI with real-time streaming helps you stream data and update dashboards in real time. Any visual or dashboard created in Power BI can display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, or many other time-sensitive data collectors or transmitters.
 
