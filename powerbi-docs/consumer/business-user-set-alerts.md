@@ -13,9 +13,9 @@ LocalizationGroup: Get started
 
 # Set alerts on Power BI reports (public preview)
 
-**APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium or Fabric license 
+**APPLIES TO:** :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Power BI service for ***business users*** :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI service for designers & developers :::image type="icon" source="../includes/media/no-icon.svg" border="false":::Power BI Desktop :::image type="icon" source="../includes/media/yes-icon.svg" border="false":::Requires Premium or Fabric license
 
-With Data Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Data Activator?](/fabric/data-activator/data-activator-introduction)
+With Data Activator, you can set data alerts on the reports that you're interested in following. Read more about it in [What is Data Activator?](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
 
 ## Prerequisites
 
@@ -53,8 +53,8 @@ You can further customize the trigger to:
 - Notify different users
 - Even launch a Power Automate workflow.
 
-For more information, read the [Data Activator](/fabric/data-activator/data-activator-introduction) documentation.
+For more information, read the [Data Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction) documentation.
 
 ## Related content
 
-- [Data Activator](/fabric/data-activator/data-activator-introduction)
+- [Data Activator](/fabric/real-time-intelligence/data-activator/data-activator-introduction)
