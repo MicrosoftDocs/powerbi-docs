@@ -1,6 +1,6 @@
 ---
 title: Add copilot summaries to email subscriptions
-description: Using Copilot, you can quickly create a Power BI report.
+description: You can add copilot summaries to Power BI report subscriptions.
 author: nirusrin
 ms.author: nisrinivasan
 ms.reviewer: maggieMSFT
@@ -14,7 +14,7 @@ ms.collection: ce-skilling-ai-copilot
 #customer intent: As a report subscription creator, I want copilot report summaries to be delivered in my subscription email.
 ---
 
-# Create reports in the Power BI service with Copilot
+# Create reports subscriptions with Copilot summaries in the Power BI service 
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
@@ -23,10 +23,9 @@ The copilot summary is also delivered to email even for reports that are deliver
 
 # Licensing Requirements
 
-- Ensure you have [reviewed](../copilot-enable-power-bi) what's required to get copilot to work in Power BI
-- (Add link to subscriptions licensing requirements) 
-- Your administrator needs to enable the tenant switch before you start using Copilot. See the article Copilot tenant settings for details.
-- Your F64 or P1 capacity needs to be in one of the regions listed in this article, Fabric region availability. If it isn't, you can't use Copilot.
+- Ensure you have reviewed [what's required to get copilot to work in Power BI](copilot-enable-power-bi.md)
+- [Subscription Requirements](../collaborate-share/end-user-subscribe.md#requirements)
+  
 
 # How to setup Copilot in email subscriptions
 
