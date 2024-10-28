@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
 ms.date: 10/18/2024
-LocalizationGroup: Create report subscriptions
+LocalizationGroup: Create report subscriptions with copilot summaries
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
-#customer intent: As a report subscription creator, I want sopilot report summaries to be delivered in my subscription email.
+#customer intent: As a report subscription creator, I want copilot report summaries to be delivered in my subscription email.
 ---
 
 # Create reports in the Power BI service with Copilot
