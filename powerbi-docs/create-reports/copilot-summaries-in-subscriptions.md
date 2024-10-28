@@ -46,7 +46,7 @@ You can also choose to deliver the full report to a OneDrive or SharePoint locat
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-send-to.png" alt-text="Screenshot showing OneDrive SharePoint subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-send-to.png":::
 
-4. Schedule the delivery of your report by choosing the frequency (Daily, Weekly, Monthly), Start and End dates. [Learn more about creating subscriptions.](/collaborate-share/end-user-subscribe.md#subscribe-to-a-report-or-dashboard)
+4. Schedule the delivery of your report by choosing the frequency (Daily, Weekly, Monthly), Start and End dates. [Learn more about creating subscriptions.](../collaborate-share/end-user-subscribe.md#subscribe-to-a-report-or-dashboard)
 
 5. The **Summary by copilot (preview)** will be included in the email. 
 
