@@ -32,7 +32,7 @@ _Star schema_ is a mature modeling approach widely adopted by relational data wa
 
 Generally, dimension tables contain a relatively small number of rows. Fact tables, on the other hand, can contain a large number of rows and continue to grow over time.
 
-:::image type="content" source="media/star-schema/star-schema-example-1.svg" alt-text="Image shows an illustration of a star schema." border="false":::
+:::image type="content" source="media/star-schema/star-schema-example-1.svg" alt-text="Diagram showing an illustration of a star schema." border="false":::
 
 ## Normalization vs. denormalization
 
@@ -40,11 +40,11 @@ To understand some star schema concepts described in this article, it's importan
 
 _Normalization_ is the term used to describe data that's stored in a way that reduces repetitious data. Consider a table of products that has a unique key value column, like the product key, and other columns that describe product characteristics, like product name, category, color, and size. A sales table is considered normalized when it stores only keys, like the product key. In the following image, notice that only the `ProductKey` column records the product.
 
-:::image type="content" source="media/star-schema/normalized-data-example.svg" alt-text="Image shows a table of data that includes a Product Key column." border="false":::
+:::image type="content" source="media/star-schema/normalized-data-example.svg" alt-text="Diagram showing a table of data that includes a Product Key column." border="false":::
 
 If, however, the sales table stores product details beyond the key, it's considered _denormalized_. In the following image, notice that the `ProductKey` and other product-related columns record the product.
 
-:::image type="content" source="media/star-schema/denormalized-data-example.svg" alt-text="Image shows a table of data that includes a Product Key and other product-related columns, including Category, Color, and Size." border="false":::
+:::image type="content" source="media/star-schema/denormalized-data-example.svg" alt-text="Diagram showing a table of data that includes a Product Key and other product-related columns, including Category, Color, and Size." border="false":::
 
 When you source data from an export file or data extract, it's likely that it represents a denormalized set of data. In this case, use [Power Query](/training/modules/clean-data-power-bi/) to transform and shape the source data into multiple normalized tables.
 
@@ -61,7 +61,7 @@ Consider that each Power BI report visual generates a query that's sent to the P
 
 There's no table property that modelers set to set the table type as dimension or fact. It's in fact determined by the [model relationships](../transform-model/desktop-relationships-understand.md). A model relationship establishes a filter propagation path between two tables, and it's the cardinality property of the relationship that determines the table type. A common relationship cardinality is _one-to-many_ or its inverse _many-to-one_. The "one" side is always a dimension table while the "many" side is always a fact table.
 
-:::image type="content" source="media/star-schema/star-schema-example-2.svg" alt-text="Image shows a conceptual illustration of a star schema." border="false":::
+:::image type="content" source="media/star-schema/star-schema-example-2.svg" alt-text="Diagram showing a conceptual illustration of a star schema." border="false":::
 
 A well-structured model design includes tables that are either dimension tables or fact tables. Avoid mixing the two types together for a single table. We also recommend that you strive to deliver the right number of tables with the right relationships in place. It's also important that fact tables always load data at a consistent grain.
 
@@ -87,7 +87,7 @@ In star schema design, a _measure_ is a fact table column that stores values to 
 
 In the **Data** pane, explicit measures are represented by the calculator icon while implicit measures are represented by the sigma symbol (∑).
 
-:::image type="content" source="media/star-schema/field-list-example.svg" alt-text="Image shows icons found in the Data pane." border="false":::
+:::image type="content" source="media/star-schema/field-list-example.svg" alt-text="Diagram showing icons found in the Data pane." border="false":::
 
 However, there are three compelling reasons why you might create measures, even for simple column-level summarizations:
 
@@ -103,7 +103,7 @@ A _surrogate key_ is a unique identifier that you add to a table to support star
 
 Power BI semantic model relationships are based on a single unique column in one table, which propagates filters to a single column in a different table. When a dimension table in your semantic model doesn't include a single unique column, you must add a unique identifier to become the "one" side of a relationship. In Power BI Desktop, you can achieve this requirement by adding a Power Query [index column](/powerquery-m/table-addindexcolumn).
 
-:::image type="content" source="media/star-schema/toolbar-index-column.svg" alt-text="Image shows the Create index column command in Power Query Editor." border="false":::
+:::image type="content" source="media/star-schema/toolbar-index-column.svg" alt-text="Diagram showing the Create index column command in Power Query Editor." border="false":::
 
 You must merge this query with the "many"-side query so that you can add the index column to it also. When you load these queries to the semantic model, you can then create a one-to-many relationship between the model tables.
 
@@ -111,11 +111,11 @@ You must merge this query with the "many"-side query so that you can add the ind
 
 A _snowflake dimension_ is a set of normalized tables for a single business entity. For example, Adventure Works classifies products by category and subcategory. Products are assigned to subcategories, and subcategories are in turn assigned to categories. In the Adventure Works relational data warehouse, the product dimension is normalized and stored in three related tables: `DimProductCategory`, `DimProductSubcategory`, and `DimProduct`.
 
-:::image type="content" source="media/star-schema/snowflake-design.svg" alt-text="Image shows an example of a snowflake diagram comprising three related tables." border="false":::
+:::image type="content" source="media/star-schema/snowflake-design.svg" alt-text="Diagram showing an example of a snowflake diagram comprising three related tables." border="false":::
 
 If you use your imagination, you can picture the normalized tables positioned outwards from the fact table, forming a snowflake design.
 
-:::image type="content" source="media/star-schema/snowflake-dimension.svg" alt-text="Image shows a conceptual example of a snowflake diagram comprising three related tables." border="false":::
+:::image type="content" source="media/star-schema/snowflake-dimension.svg" alt-text="Diagram showing a conceptual example of a snowflake diagram comprising three related tables." border="false":::
 
 In Power BI Desktop, you can choose to mimic a snowflake dimension design (perhaps because your source data does) or combine the source tables to form a single, denormalized model table. Generally, the benefits of a single model table outweigh the benefits of multiple model tables. The most optimal decision can depend on the volumes of data and the usability requirements for the model.
 
@@ -128,7 +128,7 @@ When you choose to mimic a snowflake dimension design:
 
 When you choose to integrate into a single model table, you can also define a hierarchy that encompasses the highest and lowest grain of the dimension. Possibly, the storage of redundant denormalized data can result in increased model storage size, particularly for large dimension tables.
 
-:::image type="content" source="media/star-schema/hierarchy.svg" alt-text="Image shows an example of a hierarchy within a dimension table that has columns like Category, Subcategory, and Product." border="false":::
+:::image type="content" source="media/star-schema/hierarchy.svg" alt-text="Diagram showing an example of a hierarchy within a dimension table that has columns like Category, Subcategory, and Product." border="false":::
 
 ## Slowly changing dimensions
 
@@ -140,7 +140,7 @@ Star schema design theory refers to two common SCD types: Type 1 and Type 2. A d
 
 A _Type 1_ SCD always reflects the latest values, and when changes in source data are detected, the dimension table data is overwritten. This design approach is common for columns that store supplementary values, like the email address or phone number of a customer. When a customer email address or phone number changes, the dimension table updates the customer row with the new values. It's as if the customer always had this contact information.
 
-:::image type="content" source="media/star-schema/slowly-changing-dimension-type-1.svg" alt-text="Image shows an example of a slowly changing dimension type 1 where an employee phone number is updated." border="false":::
+:::image type="content" source="media/star-schema/slowly-changing-dimension-type-1.svg" alt-text="Diagram showing an example of a slowly changing dimension type 1 where an employee phone number is updated." border="false":::
 
 A non-incremental refresh of a Power BI model dimension table achieves the result of a Type 1 SCD. It refreshes the table data to ensure the latest values are loaded.
 
@@ -150,7 +150,7 @@ A _Type 2_ SCD supports versioning of dimension members. If the source system do
 
 For example, Adventure Works assigns every salesperson to a sales region. When a salesperson relocates region, a new version of the salesperson must be created to ensure that historical facts remain associated with the former region. To support accurate historic analysis of sales by salesperson, the dimension table must store versions of salespeople and their associated region(s). The table should also include start and end date values to define the time validity. Current versions might define an empty end date (or 12/31/9999), which indicates that the row is the current version. The table must also have a [surrogate key](#surrogate-keys) because the business key (in this instance, employee ID) won't be unique.
 
-:::image type="content" source="media/star-schema/slowly-changing-dimension-type-2.svg" alt-text="Image shows an example of a slowly changing dimension type 2 where an employee sales region is updated by creating a new version." border="false":::
+:::image type="content" source="media/star-schema/slowly-changing-dimension-type-2.svg" alt-text="Diagram showing an example of a slowly changing dimension type 2 where an employee sales region is updated by creating a new version." border="false":::
 
 It's important to understand that when the source data doesn't store versions, you must use an intermediate system (like a data warehouse) to detect and store changes. The table load process must preserve existing data and detect changes. When a change is detected, the table load process must expire the current version. It records these changes by updating the `EndDate` value and inserting a new version with the `StartDate` value commencing from the previous `EndDate` value. Also, related facts must use a time-based lookup to retrieve the dimension key value relevant to the fact date. A Power BI semantic model uses Power Query, and so it can't produce this result. It can, however, load data from a pre-loaded SCD Type 2 dimension table.
 
@@ -163,19 +163,19 @@ To achieve this requirement, the Power BI semantic model dimension table must in
 
 It's a good design practice to include a hierarchy that allows visuals to drill down to the version level.
 
-:::image type="content" source="media/star-schema/hierarchy-drill-down.svg" alt-text="Image shows the Data pane with columns for Salesperson and Salesperson Version." border="false":::
+:::image type="content" source="media/star-schema/hierarchy-drill-down.svg" alt-text="Diagram showing the Data pane with columns for Salesperson and Salesperson Version." border="false":::
 
 ## Role-playing dimensions
 
 A _role-playing dimension_ is a dimension that can filter related facts differently. For example, at Adventure Works the date dimension table has three relationships to the reseller sales facts. The same dimension table can be used to filter the facts by order date, ship date, or delivery date.
 
-:::image type="content" source="media/star-schema/role-playing-dimensions.svg" alt-text="Image shows a conceptual example of a single role-playing dimension and relationships. The Date table has two relationships to the fact table for order date and ship date." border="false":::
+:::image type="content" source="media/star-schema/role-playing-dimensions.svg" alt-text="Diagram showing a conceptual example of a single role-playing dimension and relationships. The Date table has two relationships to the fact table for order date and ship date." border="false":::
 
 In a data warehouse, the accepted design approach is to define a single date dimension table. At query time, the "role" of the date dimension is established by which fact column you use to join the tables. For example, when you analyze sales by order date, the table join relates to the reseller sales order date column.
 
 In a Power BI semantic model, this design can be imitated by creating multiple relationships between two tables. In the Adventure Works example, the date and reseller sales tables would have three relationships.
 
-:::image type="content" source="media/star-schema/relationships-single-dimension-table.svg" alt-text="Image shows an example of a single role-playing dimension and relationships. The Date table has three relationships to the fact table." border="false":::
+:::image type="content" source="media/star-schema/relationships-single-dimension-table.svg" alt-text="Diagram showing an example of a single role-playing dimension and relationships. The Date table has three relationships to the fact table." border="false":::
 
 While this design is possible, there can only be one _active_ relationship between two Power BI semantic model tables. All remaining relationships must be set to inactive. Having a single active relationship means there's a default filter propagation from date to reseller sales. In this instance, the active relationship is set to the most common filter that's used by reports, which at Adventure Works is the order date relationship.
 
@@ -186,7 +186,7 @@ The only way to use an inactive relationship is to define a DAX expression that 
 
 To overcome these limitations, a common Power BI modeling technique is to create a dimension table for each role-playing instance. You can create each dimension table as a [referencing query](power-query-referenced-queries.md) using Power Query, or a [calculated table](/dax/calculatetable-function-dax) using DAX. The model can contain a `Date` table, a `Ship Date` table and a `Delivery Date` table, each with a single and active relationship to their respective reseller sales table columns.
 
-:::image type="content" source="media/star-schema/relationships-multiple-dimension-tables.svg" alt-text="Image shows an example of role playing dimensions and relationships. There are three different date dimension tables related to the fact table." border="false":::
+:::image type="content" source="media/star-schema/relationships-multiple-dimension-tables.svg" alt-text="Diagram showing an example of role playing dimensions and relationships. There are three different date dimension tables related to the fact table." border="false":::
 
 This design approach doesn't require you to define multiple measures for different date roles, and it allows simultaneous filtering by different date roles. A minor price to pay with this design approach, however, is that there will be duplication of the date dimension table resulting in an increased model storage size. Because dimension tables typically store fewer rows relative to fact tables, it's rarely a concern.
 
@@ -205,7 +205,7 @@ The design objective of a junk dimension is to consolidate many _small_ dimensio
 
 A junk dimension table is typically the Cartesian product of all dimension attribute members, with a [surrogate key](#surrogate-keys) column to uniquely identify each row. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs [full outer query joins](/powerquery-m/table-join), then adds a surrogate key (index column).
 
-:::image type="content" source="media/star-schema/junk-dimension.svg" alt-text="Image shows an example of a junk dimension table. Order Status has three states while Delivery Status has two states. The junk dimension table stores all six combinations of the two statuses." border="false":::
+:::image type="content" source="media/star-schema/junk-dimension.svg" alt-text="Diagram showing an example of a junk dimension table. Order Status has three states while Delivery Status has two states. The junk dimension table stores all six combinations of the two statuses." border="false":::
 
 You load this query to the model as a dimension table. You also need to merge this query with the fact query so the index column is loaded to the model to support the creation of a "one-to-many" model relationship.
 
@@ -215,7 +215,7 @@ A _degenerate dimension_ refers to an attribute of the fact table that's require
 
 In the Power BI semantic model, it can be appropriate to add the sales order number column to the fact table to allow filtering or grouping by sales order number. It's an exception to the formerly introduced rule that you shouldn't mix table types (generally, model tables should be either dimension or fact).
 
-:::image type="content" source="media/star-schema/degenerate-dimension.svg" alt-text="Image shows the Data pane and the sales fact table, which includes the Order Number field." border="false":::
+:::image type="content" source="media/star-schema/degenerate-dimension.svg" alt-text="Diagram showing the Data pane and the sales fact table, which includes the Order Number field." border="false":::
 
 However, if the Adventure Works resellers sales table has order number _and_ order line number columns, and they're required for filtering, creating a degenerate dimension table would be a good design. For more information, see [One-to-one relationship guidance (Degenerate dimensions)](relationships-one-to-one.md#degenerate-dimensions).
 
@@ -229,7 +229,7 @@ A more compelling use of a factless fact table is to store relationships between
 
 For example, consider that salespeople can be assigned to one _or more_ sales regions. The bridging table would be designed as a factless fact table consisting of two columns: salesperson key and region key. Duplicate values can be stored in both columns.
 
-:::image type="content" source="media/star-schema/factless-fact-table.svg" alt-text="Image shows a factless fact table bridging Salesperson and Region dimensions. The factless fact table comprises two columns, which are the dimension keys." border="false":::
+:::image type="content" source="media/star-schema/factless-fact-table.svg" alt-text="Diagram showing a factless fact table bridging Salesperson and Region dimensions. The factless fact table comprises two columns, which are the dimension keys." border="false":::
 
 This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
