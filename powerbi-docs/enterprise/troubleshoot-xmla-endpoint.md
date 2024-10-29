@@ -7,7 +7,7 @@ ms.reviewer: davidi
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 10/24/2024
+ms.date: 10/29/2024
 ms.custom: css_fy20Q4
 LocalizationGroup: Premium
 ---
@@ -47,11 +47,11 @@ To use a service principal, be sure to specify the application identity informat
 
     - *cert:thumbprint* (recommended for security)
 
-      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:91ab91bb-6b32-4f6d-8bbc-97a0f9f8906b@19373176-316e-4dc7-834c-328902628ad4;Password=`**`cert:12faf3e291435468607857694df5e45b68851868`**`;`
+      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:<appid>;Password=cert:<thumbprint>;`
 
     - *application secret*
       
-      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:91ab91bb-6b32-4f6d-8bbc-97a0f9f8906b@19373176-316e-4dc7-834c-328902628ad4;Password=`**`6drX...`**`;`
+      `Data Source=powerbi://api.powerbi.com/v1.0/myorg/Contoso;Initial Catalog=PowerBI_Dataset;User ID=app:<appid>;Password=<secret>;`
 
 If you receive the following error:
 
