@@ -74,16 +74,23 @@ The **Background** toggle, when enabled, lets you customize the background of yo
 
 The **Border and gridlines** settings, only available when Layout style is set to Table, lets you customize the color, style, thickness, transparency, and rows shown, to enhance the visual's appearance and ensuring it aligns with your report's overall design.
 
+[!INCLUDE [customize-lines-toggle](../includes/core-visuals/customize-lines-toggle.md)]
 [!INCLUDE [border-&-divider-line-style](../includes/core-visuals/border-&-divider-line-style.md)]
 [!INCLUDE [global-color-palette-fx](../includes/core-visuals/global-color-palette-fx.md)]
 [!INCLUDE [global-transparency](../includes/core-visuals/global-transparency.md)]
-[!INCLUDE [layout-layout-max-rows-shown](../includes/core-visuals/layout-layout-max-rows-shown.md)]
+[!INCLUDE [global-width-0-12](../includes/core-visuals/global-width-0-12.md)]
 
 #### Overflow
 
 The **Overflow** settings provide flexibility in displaying more cards that don't fit within the initial view. You can define settings to allow users to flip through paginated cards, or scroll continuously, either vertically or horizontally, to view all the data within the visual.
 
 [!INCLUDE [layout-overflow-overflow-style](../includes/core-visuals/layout-overflow-overflow-style.md)]
+[!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
+
+#### Padding
+
+The **Padding** settings allow you to adjust the space between the content of the card and its border on all sides of the card’s content to create a more balanced and visually appealing layout. Increasing the padding can give the content more breathing room, while decreasing it can make the content appear more compact.
+
 [!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
 
 ### Callout values settings
