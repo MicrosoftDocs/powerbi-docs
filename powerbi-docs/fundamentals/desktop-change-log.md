@@ -17,6 +17,16 @@ This change log is for Power BI Desktop and lists new items and bug fixes for ea
 
 See [What's new in Power BI](desktop-latest-update.md) for more information about new features. 
 
+## October 2024 QFE 2
+*Version 2.137.1102.0, Released: October 28, 2024*
+
+Bug fixes/improvements:
+
+* Fixed issue with disambiguation preference settings when using composite models
+* Fixed a browser compatibility issue
+* Upgrade from npgsql 4.0.16 to npgsql 4.0.17, which fixed the issue of PostgreSQL connections not working when using prefer or required secure connections
+
+
  
 ## October 2024 QFE 1
 *Version 2.137.952.0, Released: October 21, 2024*
