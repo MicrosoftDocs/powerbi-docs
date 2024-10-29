@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 09/25/2024
+ms.date: 10/29/2024
 LocalizationGroup: Connect to data
 ---
 # Connect to cloud data sources in the Power BI service
@@ -106,8 +106,8 @@ Selecting **Manage** presents a page with several tabs. Select the **Reports** t
 * **Shareable cloud connections also share your credentials** - when you allow others to user your shareable cloud connections, it's important to understand that you're letting others connect their own semantic models, paginated reports, and other artifacts to the corresponding data sources by using the connection details and credentials you provided. Make sure you only share connections (and their credentials) that you're authorized to share.
 
 * **Every user is limited to maximum 1000 data source connections in every cloud tenant**: If you reach the maximum number of data sources limit, verify that the number of data sources per user isn't over the limit of 1000 connections. To resolve any related issues, you can manually remove existing data sources from the admin center or, alternatively, use the following PowerShell script to find and bulk-delete any data sources that exceed that limit.
-  ```
-  PowerShell
+
+  ```powershell
   ## required module "mcirosoftpowerbimgmt" Install-Module -Name DataGateway and sign in the same user who exceeded the 1000 limit
   Import-Module -name microsoftpowerbimgmt
   
