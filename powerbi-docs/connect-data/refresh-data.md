@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: pbi-data-sources
 ms.topic: how-to
-ms.date: 10/22/2024
+ms.date: 10/25/2024
 LocalizationGroup: Data refresh
 #customer intent: As a Power BI user, I want to understand data refresh features and dependencies in Power BI so that I can ensure the data in my reports and dashboards is accurate and up to date.
 ---
@@ -293,6 +293,9 @@ To determine whether your dynamic data source can be refreshed, open the **Data 
 ![Dynamic data source indicator](media/refresh-data/dynamic-data-source.png)
 
 If that warning is present in the **Data source settings** dialog that appears, then a dynamic data source that can't be refreshed in the Power BI service is present.
+
+> [!IMPORTANT]
+> Switching data sources using dynamic M query parameters also isn't supported in the Power BI service.
 
 ## Configure scheduled refresh
 
