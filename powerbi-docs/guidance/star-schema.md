@@ -244,5 +244,5 @@ For more information about star schema design or Power BI semantic model design,
 - [Bi-directional relationship guidance](relationships-bidirectional-filtering.md)
 - [Active vs inactive relationship guidance](relationships-active-inactive.md)
 - [Dimensional modeling in Microsoft Fabric Warehouse](/fabric/data-warehouse/dimensional-modeling-overview)
-- Questions? [Try asking the Fabric Community](https://community.fabric.com/)
-- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.com/)
+- Questions? [Try asking the Fabric Community](https://community.fabric.microsoft.com/)
+- Suggestions? [Contribute ideas to improve Fabric](https://ideas.fabric.microsoft.com/)
