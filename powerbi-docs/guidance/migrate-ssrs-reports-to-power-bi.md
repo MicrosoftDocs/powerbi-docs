@@ -33,7 +33,7 @@ You can achieve migration without downtime to your report servers, or disruption
 
 Before you start the migration, verify that your environment meets certain prerequisites. We describe these prerequisites, and also introduce you to a helpful migration tool.
 
-### Preparing for migration
+### Prepare for migration
 
 As you prepare to migrate your reports to Power BI, first verify that you have a Power BI Pro or Premium Per User license to upload content to the target workspace.
 
