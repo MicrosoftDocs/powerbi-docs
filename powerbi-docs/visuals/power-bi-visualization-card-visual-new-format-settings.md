@@ -91,7 +91,7 @@ The **Overflow** settings provide flexibility in displaying more cards that don'
 
 The **Padding** settings allow you to adjust the space between the content of the card and its border on all sides of the card’s content to create a more balanced and visually appealing layout. Increasing the padding can give the content more breathing room, while decreasing it can make the content appear more compact.
 
-[!INCLUDE [layout-overflow-overflow-direction](../includes/core-visuals/layout-overflow-overflow-direction.md)]
+[!INCLUDE [global-padding](../includes/core-visuals/global-padding.md)]
 
 ### Callout values settings
 
