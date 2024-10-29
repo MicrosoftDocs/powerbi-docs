@@ -31,7 +31,7 @@ The primary purpose of this series of auditing and monitoring articles is to hel
 Troubleshooting and performance tuning are important components of auditing and monitoring your data assets. However, providing deep performance tuning guidance isn't a goal of these articles. Also, these articles aren't intended to provide a complete reference of all options available to developers.
 
 > [!IMPORTANT]
-> We recommend that you closely follow the [Microsoft Fabric release plan](https://learn.microsoft.com/en-gb/fabric/release-plan/) to learn about future enhancements of the auditing and monitoring capabilities.
+> We recommend that you closely follow the [Microsoft Fabric release plan](https://learn.microsoft.com/fabric/release-plan/) to learn about future enhancements of the auditing and monitoring capabilities.
 
 ## Value of auditing and monitoring
 
