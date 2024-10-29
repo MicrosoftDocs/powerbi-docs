@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 06/12/2023
+ms.date: 10/29/2024
 ---
 
 # View localized paginated reports in the Power BI service
