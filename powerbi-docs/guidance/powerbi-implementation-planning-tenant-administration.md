@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 02/13/2024
+ms.date: 09/25/2024
 ---
 
 # Power BI implementation planning: Tenant administration
@@ -67,7 +67,7 @@ Here are some key points to consider when you select your administrators.
 - **Choose 2 to 4 administrators.** Because it's a high-privilege role, appoint only a few administrators. Strike the right balance: Having too many administrators increases the risk of unapproved changes occurring, while having too few administrators increases the risk that the system won't be sufficiently supported.
 - **Allow for occasional administrators.** If you have users who _occasionally_ need Fabric administrator rights, consider implementing [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM lets you assign _just-in-time role permissions_ that expire after a few hours. This process provides a useful way to balance risk (of having too many full-time administrators) versus usability (allowing progress to occur). That's especially true in larger, decentralized organizations. When using PIM, delegation of the administrator role is logged and can optionally involve an approval workflow to grant rights.
 - **Make Fabric administration a priority.** Often, administration of a BI platform is just one of many responsibilities. Consider how you'll ensure that users are well supported, and your system is sufficiently managed.
-- **Regularly review who's assigned to all the related roles.** There are three roles that are permitted to manage the Power BI service: Fabric administrator, Power Platform administrator, and Global administrator. It's important that you audit the membership of these roles regularly.
+- **Regularly review who's assigned to all the related roles.** There are three roles that are permitted to manage the Power BI service: Fabric administrator and Power Platform administrator. It's important that you audit the membership of these roles regularly.
 
 For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 

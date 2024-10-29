@@ -10,6 +10,6 @@ ms.date: 06/17/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Background color
+##### Background color
 
 This setting allows you to customize the color by selecting colors from the color palette.

@@ -10,6 +10,6 @@ ms.date: 06/19/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Orientation
+##### Orientation
 
 With this dropdown menu, users can select either **Vertical** or **Horizontal** orientation of the data label.

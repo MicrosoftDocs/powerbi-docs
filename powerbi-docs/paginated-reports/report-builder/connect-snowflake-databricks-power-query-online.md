@@ -1,5 +1,5 @@
 ---
-title: "Connect paginated reports to data sources using Power Query (Preview)"
+title: "Connect paginated reports to data sources using Power Query"
 description: Learn how to connect to Snowflake, Databricks and others with Power Query Online in Power BI Report Builder.
 ms.date: 05/22/2024
 ms.service: powerbi

@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Text color
+##### Text color
 
 This setting allows you to customize the color by selecting colors from the color palette.

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-premium
 ms.topic: conceptual
-ms.date: 11/21/2023
+ms.date: 09/22/2024
 LocalizationGroup: Premium
 ---
 
@@ -109,7 +109,7 @@ while ($response.commitVersion -ne $response.minActiveReadVersion)
     Write-Host '.' -NoNewLine
     Start-Sleep -Seconds 10
 
-    $response = Invoke-PowerBIRestMethod -Url "groups/$workspaceId/dataset/$datasetId/queryScaleOut/syncStatus" -Method Get | ConvertFrom-Json 
+    $response = Invoke-PowerBIRestMethod -Url "groups/$workspaceId/datasets/$datasetId/queryScaleOut/syncStatus" -Method Get | ConvertFrom-Json 
 }
 
 Write-Host 'Completed'

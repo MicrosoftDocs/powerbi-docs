@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
-ms.date: 01/16/2024
+ms.date: 10/25/2024
 ---
 # White papers for Power BI
 
@@ -19,7 +19,6 @@ White papers allow you to explore Power BI topics at a deeper level. Here you ca
 | [Power BI Premium Planning and Deployment](whitepaper-powerbi-premium-deployment.md)| The content of this white paper has been incorporated into general guidance. See the link for guidance and best practices for planning and deploying Premium capacity for well-defined workloads.| March 2019 |
 | [Capacity planning guidance for Power BI Report Server](../report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. | March 2018 |
 | [Security](../enterprise/service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. | March 2019 |
-| [Distribute Power BI content to external guest users using Microsoft Entra B2B](whitepaper-azure-b2b-power-bi.md)|This paper outlines how to distribute content to users outside the organization using the integration of Microsoft Entra business-to-business (Microsoft Entra B2B).| March 2019 |
 | [Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions. | February 2017 |
 | [Bidirectional filtering](../transform-model/desktop-bidirectional-filtering.md) |Explains bidirectional cross-filtering in Power BI Desktop (the white paper also covers SQL Server Analysis Services 2016, both have the same behavior). | July 2018 |
 | [DirectQuery in SQL Server 2016 Analysis Services](/archive/blogs/analysisservices/directquery-in-sql-server-2016-analysis-services-whitepaper) |For SQL Server 2016, DirectQuery was redesigned for dramatically improved speed and performance, however, it is also now more complex to understand and implement. | January 2017 |

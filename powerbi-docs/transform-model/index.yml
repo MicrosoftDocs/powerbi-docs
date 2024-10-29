@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Transform, shape, and model data in Power BI - documentation
-summary: Power BI documentation provides expert information about transforming, shaping, and modeling data in Power BI.
+title: Transform, shape, and model data in Power BI
+summary: Learn  how to transform, shape, and model data in Power BI with conceptual, tutorial, and how-to guides.
 
 metadata:
   title: Transform, shape, and model data in Power BI - documentation
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 03/03/2020
+  ms.date: 10/22/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

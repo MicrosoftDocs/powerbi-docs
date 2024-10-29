@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Customize spacing
+##### Customize spacing
 
 This setting is available with the **Grid** arrangement, and after selecting the **Cards** style. When enabled, you can specify both the **Space between rows**, and the **Space between columns**.

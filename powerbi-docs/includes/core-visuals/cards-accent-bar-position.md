@@ -10,10 +10,10 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Position
+##### Position
 
 This menu provides four options to position the Accent bar:
-**- Left**
-**- Right**
-**- Bottom**
-**- Top**
+- **Left**
+- **Right**
+- **Bottom**
+- **Top**

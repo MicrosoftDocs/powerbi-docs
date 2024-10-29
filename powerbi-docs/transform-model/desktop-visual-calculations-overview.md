@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: pbi-transform-model
 ms.topic: how-to
-ms.date: 09/16/2024
+ms.date: 10/10/2024
 LocalizationGroup: Model your data
 no-loc: [RUNNINGSUM, MOVINGAVERAGE, COLLAPSE, COLLAPSEALL, EXPAND, EXPANDALL, PREVIOUS, NEXT, FIRST, LAST, ROWS, COLUMNS, ROWS COLUMNS, COLUMNS ROWS, NONE, HIGHESTPARENT, LOWESTPARENT, ISATLEVEL, RANGE, WINDOW, OFFSET, INDEX, ORDERBY]
 ---
@@ -20,7 +20,9 @@ A visual calculation is a DAX calculation defined and executed directly on a vis
 
 Here's an example visual calculation that defines a running sum for **Sales Amount**. Notice that the DAX required is straightforward:
 
-`Running sum = RUNNINGSUM([Sales Amount])`
+```dax
+Running sum = RUNNINGSUM([Sales Amount])
+```
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-01.png" alt-text="Screenshot of DAX for visual calculations.":::
 
@@ -49,23 +51,29 @@ The following sections provide details about how each of the elements, described
 
 ## Enable visual calculations
 
-To use visual calculations, you must enable it in **Options and Settings** > **Options** > **Preview features**. Select **Visual calculations** and select **OK**. Visual calculations are enabled after Power BI Desktop is restarted.
+Before September 2024, to use visual calculations, you must enable it in **Options and Settings** > **Options** > **Preview features**. Select **Visual calculations** and select **OK**. Visual calculations are enabled after Power BI Desktop is restarted.
+
+From September 2024 onwards, this step is no longer necessary as visual calculations are enabled by default. While they're still in preview, you can use the above settings to disable visual calculations if preferred.
 
 ## Adding a visual calculation
 
-To add a visual calculation, select a visual and then select the **New calculation** button in the ribbon:
+To add a visual calculation, select a visual and then select the **New visual calculation** button in the ribbon:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-02.png" alt-text="Screenshot of selecting the new calculation button in the ribbon.":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-02.png" alt-text="Screenshot of selecting the new visual calculation button in the ribbon.":::
 
 The visual calculations window opens in **Edit** mode. The **Edit** mode screen consists of three major sections, as shown from top to bottom in the following image:
 
 * The **visual preview** which shows the visual you're working with
 * A **formula bar** where you can add visual calculations
-* The **visual matrix** which shows the data in the visual, and displays the results of visual calculations as you add them. Any styling or theming you apply to your visual is not applied to the visual matrix.
+* The **visual matrix** which shows the data in the visual, and displays the results of visual calculations as you add them. Any styling or theming you apply to your visual isn't applied to the visual matrix.
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen.":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png" alt-text="Screenshot showing areas of the visual calculations edit screen." lightbox="media/desktop-visual-calculations-overview/desktop-visual-calculations-03.png":::
 
-To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing: `text="Profit = [Sales Amount] – [Total Product Cost]"`.
+To add a visual calculation, type the expression in the formula bar. For example, in a visual that contains **Sales Amount** and **Total Product Cost** by **Fiscal Year**, you can add a visual calculation that calculates the profit for each year by typing:
+
+```dax
+Profit = [Sales Amount] – [Total Product Cost]
+```
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-04.png" alt-text="Screenshot of entering a visual calculation.":::
 
@@ -87,13 +95,15 @@ In visual calculations edit mode, you can hide fields from the visual just like 
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-07.png" alt-text="Screenshot of hiding elements from a visual's view.":::
 
-Hiding fields doesn't remove them from the visual or from the visual matrix, so your visual calculations can still refer to them and continue to work. A hidden field is still shown on the visual matrix but is not shown on the resulting visual. It's a recommended practice to only include hidden fields if they're necessary for your visual calculations to work.
+Hiding fields doesn't remove them from the visual or from the visual matrix, so your visual calculations can still refer to them and continue to work. A hidden field is still shown on the visual matrix but isn't shown on the resulting visual. It's a recommended practice to only include hidden fields if they're necessary for your visual calculations to work.
 
 ## Using templates
 
 Visual calculations include templates to make it easier to write common calculations. You can find templates by selecting the template button and choosing a template to work with:
 
 :::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-08.png" alt-text="Screenshot of using templates for visual calculations.":::
+
+You can also create a templated visual calculation from the ribbon by clicking the bottom part of the **New Visual Calculation** button.
 
 The following templates are available:
 
@@ -132,7 +142,29 @@ Many functions have an optional **:::no-loc text="Reset":::** parameter that is 
 * **:::no-loc text="LOWESTPARENT":::** resets the calculations when the value of the lowest parent on the axis changes.
 * A numerical value, referring to the fields on the axis, with the highest field being one.
 
-To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter. For example, a visual calculation that is defined as `RUNNINGSUM([Sales Amount], :::no-loc text="HIGHESTPARENT":::)` or `RUNNINGSUM([Sales Amount], 1)` returns a running sum of *Sales Amount* that starts from 0 for every year. A visual calculation defined as `RUNNINGSUM([Sales Amount], :::no-loc text="LOWESTPARENT":::)` or `RUNNINGSUM([Sales Amount], 2)` returns a running sum of *Sales Amount* that starts from 0 for every Quarter. Lastly, a visual calculation that is defined as `RUNNINGSUM([Sales Amount])` does **not** reset, and will continue adding the *Sales Amount* value for each month to the previous values, without restarting.
+To understand :::no-loc text="HIGHESTPARENT"::: and :::no-loc text="LOWESTPARENT":::, consider an axis that has three fields on multiple levels: Year, Quarter, and Month. The :::no-loc text="HIGHESTPARENT"::: is Year, while the lowest parent is Quarter.
+For example, the following visual calculations are equivalent and return the sum of *Sales Amount* that starts from 0 for every year:
+```dax
+RUNNINGSUM([Sales Amount], HIGHESTPARENT)
+```
+
+```dax
+RUNNINGSUM([Sales Amount], 1)
+```
+
+In contrast, the following visual calculations both return the sum of *Sales Amount* that starts from 0 for every Quarter:
+```dax
+RUNNINGSUM([Sales Amount], LOWESTPARENT)
+```
+
+```dax
+RUNNINGSUM([Sales Amount], 2)
+```
+
+Finally, this visual calculation does **not** reset, and continues adding the *Sales Amount* value for each month to the previous values, without restarting. 
+```dax
+RUNNINGSUM([Sales Amount])
+```
 
 ## :::no-loc text="Axis"::: and :::no-loc text="Reset"::: vs ORDERBY and PARTITIONBY
 
@@ -175,9 +207,9 @@ Visual calculations also introduce a set of functions specific to visual calcula
 
 ## Formatting visual calculations
  
-You can format a visual calculation using a visual level format string. Use the **Data format** options in the Properties section of the formatting pane for your visual to set the format:
+You can format a visual calculation using data types and formatting options. You can also set a [custom visual level format string](../create-reports/desktop-custom-format-strings.md). Use the **Data format** options in the General section of the formatting pane for your visual to set the format:
 
-:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage using the format code #,#%.":::
+:::image type="content" source="media/desktop-visual-calculations-overview/desktop-visual-calculations-format-strings.png" alt-text="Screenshot of the visual calculations edit mode showing a visual calculation that returns a percentage formatted as a percentage.":::
 
 ## Considerations and limitations
 
@@ -185,7 +217,6 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 * Not all visual types are supported. Use the visual calculations edit mode to change visual type. Also, custom visuals haven't been tested with visual calculations or hidden fields.
 * The following visual types and visual properties have been tested and found not to work with visual calculations or hidden fields:
-  * Line and stacked column chart
   * Treemap
   * Slicer
   * R visual
@@ -206,7 +237,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * A visual calculation can't refer to itself on the same or different detail level.
 * [Personalization](../consumer/end-user-personalize-visuals.md) of visual calculations or hidden fields isn't available.
 * You can't use the [Publish to web](../collaborate-share/service-publish-to-web.md) functionality with reports that use visual calculations or hidden fields.
-* You can't [export underlying data](../visuals/power-bi-visualization-export-data.md) from visuals that use visual calculations or hidden fields.
+* When exporting data from visuals, visual calculation results are not included in the [underlying data](../visuals/power-bi-visualization-export-data.md) export. Hidden fields are never included in the export, except when exporting the [underlying data](../visuals/power-bi-visualization-export-data.md).
 * You can't use the *see records* drill-through functionality with visuals that use visual calculations or hidden fields.
 * You can't apply [conditional formatting](../create-reports/desktop-conditional-table-formatting.md) on visual calculations.
 * You can't set [data categories](desktop-data-categorization.md) on visual calculations.
@@ -214,7 +245,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 * You can't change the sort order for visual calculations.
 * Power BI Embedded isn't supported for reports that use visual calculations or hidden fields.
 * Live connections to SQL Server Analysis Services aren't supported.
-* You can't use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations.
+* Although you can use [field parameters](../create-reports/power-bi-field-parameters.md) with visual calculations, they have some limitations.
 * [Show items with no data](../create-reports/desktop-show-items-no-data.md) isn't available with visual calculations.
 * You can't use [data limits](../visuals/power-bi-data-points.md) with visual calculations.
 * You can't set a [dynamic format string](../create-reports/desktop-dynamic-format-strings.md) on a visual calculation nor use a visual calculation as a dynamic format string for a field or measure.

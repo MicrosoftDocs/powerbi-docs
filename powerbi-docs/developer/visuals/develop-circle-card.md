@@ -20,7 +20,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Create a development project for your visual.
-> * Develop your visual with D3 visual elements.
+> * Develop your visual with [D3](https://d3js.org/) visual elements.
 > * Configure your visual to process data.
 > * Configure your visual to adapt to size changes.
 > * Configure adaptive color and border settings for your visual.
@@ -98,7 +98,7 @@ Set up the **visual.ts** file.
     > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
 
-3. Import the libraries and modules needed, and define the type selection for the d3 library:
+3. Import the libraries and modules needed, and define the type selection for the [d3 library](https://d3js.org):
 
    ```typescript
    "use strict";
