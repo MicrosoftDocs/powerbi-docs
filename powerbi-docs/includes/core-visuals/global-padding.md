@@ -12,4 +12,4 @@ LocalizationGroup: core-visuals
 ---
 ##### Padding
 
-This **Padding** controls let you specify the amount of space, from 0-40 pixels, on each side.
+The **Padding** controls let you specify the amount of space, from 0-40 pixels, on each side.
