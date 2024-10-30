@@ -9,7 +9,7 @@ ms.subservice: pbi-data-sources
 ms.topic: how-to
 ms.date: 10/30/2024
 LocalizationGroup: Share your work
-#customer intent: 
+#customer intent: As a semantic model owner, I want to manage access permissions to my semantic model so that I can ensure the security and proper access control of sensitive data.
 ---
 # Manage semantic model access permissions (preview)
 
@@ -27,17 +27,11 @@ This document explains how to use the semantic model manage permissions page.
 
 To open the semantic model manage permissions page:
 
-* From the [OneLake data hub](service-data-hub.md#find-the-data-you-need): Select **Manage permissions** on the **More options (…)** menu.
-
-    ![Screenshot of semantic model manage permissions page entry points on the OneLake data hub.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-datasets-hub-page.png)
+* From the [OneLake data hub](service-data-hub.md#find-the-data-you-need) or from the workspace for the semantic model: Select **Manage permissions** from the **More options (…)** menu available next to the semantic model name in the list.
 
 * From the [semantic model details page](service-dataset-details-page.md#supported-actions): Select the **Share** icon on the action bar at the top of the page and choose **Manage permissions**.
 
     ![Screenshot of semantic model manage permissions page entry points on the semantic model info page.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-dataset-info-page.png)
-
-* From the [Share semantic model dialog](service-datasets-share.md): In the dialog header, select **Manage permissions** on the **More options (…)** menu. The **Manage permissions** side pane opens. In the side pane, choose **Advanced** at the bottom of the pane.
-
-    ![Screenshot of semantic model manage permissions page entry point on the Share semantic model dialog.](media/service-datasets-manage-access-permissions/power-bi-dataset-manage-permissions-entry-share-dataset-dialog.png)
 
 These actions open the semantic models manage permissions page. The manage permissions page has two tabs to help you manage semantic model access.
 

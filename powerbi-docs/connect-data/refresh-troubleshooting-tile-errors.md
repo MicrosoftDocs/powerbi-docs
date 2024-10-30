@@ -65,7 +65,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 
-  As a semantic model owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Go to the workspace for the dashboard and locate the associated semantic model. Next to the semantic model's name, select the **More options**, or three horizontal dots icon, then select **Settings** in the menu that appears. On the **Semantic models** tab, expand **Refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
+  As a semantic model owner, you can also increase the tile refresh frequency to 15 minutes to accelerate tile refresh. Go to the workspace for the dashboard and locate the associated semantic model. Next to the semantic model's name, select the three horizontal dots icon to open the **More options** menu, then select **Settings**. On the **Semantic models** tab, expand **Refresh**, and under **Automatic dashboard tile and metric refresh**, change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI does the next tile refresh.
 
   > [!NOTE]
   > **Automatic dashboard tile and metric refresh** is available only for semantic models in DirectQuery or Live Connection modes. Semantic models in Import mode don't need a separate tile refresh because the tiles refresh automatically during the next scheduled data refresh.

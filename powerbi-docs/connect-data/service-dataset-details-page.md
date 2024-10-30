@@ -1,6 +1,6 @@
 ---
 title: Semantic model details page
-description: Learn about the information and actions available to you on the semantic model details page.
+description: Learn about the information and actions available to you on the semantic model details page, including how to explore, monitor, and leverage semantic models.
 author: paulinbar
 ms.author: painbar
 ms.service: powerbi
@@ -13,6 +13,8 @@ LocalizationGroup: Share your work
 # Semantic model details
 
 The semantic model details page helps you explore, monitor, and leverage semantic models. When you select a semantic model in the [data hub](./service-data-hub.md), a workspace, or other place in Power BI, the details page for that semantic model opens.
+
+This article provides an overview of the semantic model details page in Power BI, explaining its features, functionalities, and how you can interact with it.
 
 [ ![Screenshot of semantic model details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
@@ -36,10 +38,10 @@ The semantic model details page enables you to perform a number of actions. The 
 | **Refresh now** | Launches a refresh of the semantic model. | **Refresh > Refresh now** |
 | **Schedule refresh** | Opens the semantic model settings page where you can set scheduled refresh. | **Refresh > Schedule refresh** |
 | **Share** | Opens the **Share semantic model** dialog. | **Share**, or use the [Share this data tile](#share-this-data). |
-| **Explore this data** | Opens the formatted table editing canvas. | **Explore this data > Explore this data**, or use the [Explore this data tile](#visualize-this-data). |
-| **Auto-create a report** | Creates a report based on the semantic model's data. | **Explore this data > Auto-create a report**, or use the [Explore this data tile](#visualize-this-data). |
-| **Create a blank report** | Opens the report editing canvas where you can create a new report based on the semantic model.| **Explore this data > Create a blank report**, or use the [Explore this data tile](#visualize-this-data). |
-| **Create a paginated report** | Opens the paginated report editing canvas. | Use the command from the dropdown on the [Explore this data tile](#visualize-this-data).|
+| **Explore this data** | Opens the formatted table editing canvas. | **Explore this data > Explore this data**, or use the [Explore this data tile](#explore-this-data). |
+| **Auto-create a report** | Creates a report based on the semantic model's data. | **Explore this data > Auto-create a report**, or use the [Explore this data tile](#explore-this-data). |
+| **Create a blank report** | Opens the report editing canvas where you can create a new report based on the semantic model.| **Explore this data > Create a blank report**, or use the [Explore this data tile](#explore-this-data). |
+| **Create a paginated report** | Opens the paginated report editing canvas. | Use the command from the dropdown on the [Explore this data tile](#explore-this-data).|
 | **Analyze in Excel** | Launches [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#analyze-in-excel) using this semantic model. | **Analyze in Excel** |
 | **Open workspace lineage** | Opens the [lineage view](../collaborate-share/service-data-lineage.md) for the semantic model. | **Lineage > Open workspace lineage** |
 | **Impact analysis** | Opens the [impact analysis side pane](../collaborate-share/service-dataset-impact-analysis.md) for this semantic model. | **Lineage > Impact analysis** |
@@ -60,9 +62,10 @@ The semantic model details section shows:
 
 ## See what already exists
 
-The see what already exists section shows you all the reports and scorecards that are built on the semantic model. You can create a copy of an item by selecting the **More options**, or three horizontal dots icon on the line that the item is on and selecting the **Save a copy** command in the menu that appears.
+The see what already exists section shows you all the reports and scorecards that are built on the semantic model. You can create a copy of an item by selecting the three horizontal dots icon in the line for the semantic model to open the **More options** menu, then selecting **Save a copy**.
 
 The columns in the list of related reports are:
+
 * **Name**: Report name. If the name ends with (template), it means that this report has been specially constructed to be used as a template. For example, "Sales (template)".
 * **Type**: Item type, for example, report or scorecard.
 * **Relation**: Relation to the semantic model, for example, downstream.
@@ -113,11 +116,9 @@ An entirely filled and checked parent checkbox on the semantic model's table ind
 
 When you select a table or columns in a table, they'll be displayed on the **Table preview** page that opens.
 
-:::image type="content" source="media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png" alt-text="Screenshot showing table preview page.":::
+:::image type="content" source="media/service-dataset-details-page/dataset-details-page-table-preview-page-1.png" alt-text="Screenshot showing the table preview page.":::
 
 Table preview might not show all of the data you've selected. To see more, you can [export](#export-data) or build a [paginated report](#build-a-paginated-report).
-
-You can resize column widths using a drag handle next to the column headers. Resizing columns can make the table preview more readable, especially for long column input values.
 
 #### Show query
 
@@ -156,7 +157,7 @@ You can then export the report to any of the supported file formats, and the fil
 
 Select **More options (...)** to switch from **Summarized data** to **Underlying data**.
 
-:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-data-switch.png" alt-text="Screenshot showing more options."
+:::image type="content" source="./media/service-dataset-details-page/dataset-details-page-data-switch.png" alt-text="Screenshot showing more options in the Data pane."
 
 ## Considerations and limitations
 
