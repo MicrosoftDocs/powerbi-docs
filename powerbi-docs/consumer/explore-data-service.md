@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: how-to
-ms.date: 09/24/2024
+ms.date: 10/29/2024
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
 ---
