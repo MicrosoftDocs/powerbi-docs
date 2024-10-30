@@ -7,8 +7,9 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: how-to
-ms.date: 02/28/2023
+ms.date: 10/29/2024
 LocalizationGroup: Ask questions of your data
+#customer intent: As a Power BI user I want to learn how to create and add featured questions in Power BI.
 ---
 # Create Q&A featured questions for Power BI dashboards
 
