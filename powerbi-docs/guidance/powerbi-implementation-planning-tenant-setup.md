@@ -18,7 +18,7 @@ ms.date: 11/24/2023
 This tenant setup article introduces important aspects to know about setting up your Fabric tenant, with an emphasis on the Power BI experience. It's targeted at multiple audiences:
 
 - **Fabric administrators:** The administrators who are responsible for overseeing Fabric in the organization.
-- **Microsoft Entra administrators:** The team that's responsible for overseeing and managing Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
+- **Microsoft Entra administrators:** The team that's responsible for overseeing and managing Microsoft Entra ID.
 
 Fabric is part of a larger Microsoft ecosystem. If your organization is already using other cloud subscription services, such as Azure, Microsoft 365, or Dynamics 365, then Fabric operates within the same Microsoft Entra _tenant_. Your organizational domain (for example, _contoso.com_) is associated with Microsoft Entra ID. Like all Microsoft cloud services, your [Fabric tenant](/fabric/enterprise/licenses#tenant) relies on your organization's Microsoft Entra ID for identity and access management.
 

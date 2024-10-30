@@ -48,7 +48,7 @@ Broadly, there are two different services that can implement data loss preventio
 
 ### Microsoft Purview DLP policies for Power BI
 
-A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) is set up in the Microsoft Purview compliance portal. It can detect sensitive data in a semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) that's been published to a Premium workspace in the Power BI service.
+A [DLP policy for Power BI](/power-bi/enterprise/service-security-dlp-policies-for-power-bi) is set up in the Microsoft Purview compliance portal. It can detect sensitive data in a semantic model that's been published to a Premium workspace in the Power BI service.
 
 [!INCLUDE [powerbi-premium-notification](includes/powerbi-premium-notification.md)]
 
@@ -59,7 +59,7 @@ The goal for this type of DLP policy is to bring awareness to users and inform a
 
 ### Microsoft Defender for Cloud Apps
 
-[Microsoft Defender for Cloud Apps](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) is a tool with many capabilities. Some policies that can be set up in Microsoft Defender for Cloud Apps (with integration with Microsoft Entra ID—[previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) include DLP. These policies can block, log, or alert when certain user activities happen. For example, when a user attempts to download a report from the Power BI service that's been assigned a _Highly Restricted_ sensitivity label, the download action is blocked.
+[Microsoft Defender for Cloud Apps](/fabric/governance/service-security-using-defender-for-cloud-apps-controls) is a tool with many capabilities. Some policies that can be set up in Microsoft Defender for Cloud Apps (with integration with Microsoft Entra ID) include DLP. These policies can block, log, or alert when certain user activities happen. For example, when a user attempts to download a report from the Power BI service that's been assigned a _Highly Restricted_ sensitivity label, the download action is blocked.
 
 The [Defender for Cloud Apps for Power BI](powerbi-implementation-planning-defender-for-cloud-apps.md) article covers using Defender for Cloud Apps for monitoring the Power BI service. The remainder of this article focuses on DLP for Power BI.
 

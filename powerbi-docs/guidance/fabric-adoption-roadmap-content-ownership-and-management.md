@@ -17,7 +17,7 @@ ms.date: 11/06/2023
 > [!NOTE]
 > The Power BI implementation planning [usage scenarios](powerbi-implementation-planning-usage-scenario-overview.md) explore many concepts discussed in this article, focusing on the Power BI workload in [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). The usage scenario articles include detailed diagrams that you might find helpful to support your planning and decision making.
 
-There are three primary strategies for how data, analytics, and business intelligence (BI) content is owned and managed: business-led self-service, managed self-service, and enterprise. For the purposes of this series of articles, the term _content_ refers to any type of data item (like a notebook, semantic model—[previously known as a dataset](/power-bi/connect-data/service-datasets-rename), report, or dashboard).
+There are three primary strategies for how data, analytics, and business intelligence (BI) content is owned and managed: business-led self-service, managed self-service, and enterprise. For the purposes of this series of articles, the term _content_ refers to any type of data item (like a notebook, semantic model, report, or dashboard).
 
 The organization's data culture is the driver for why, how, and by whom each of these three content ownership strategies is implemented.
 

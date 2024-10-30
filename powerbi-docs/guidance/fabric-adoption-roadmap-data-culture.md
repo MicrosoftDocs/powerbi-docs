@@ -54,7 +54,7 @@ The concept of data culture can be difficult to define and measure. Even though 
 Data culture outcomes aren't specifically mandated. Rather, the state of the data culture is the result of following the governance rules as they're enforced (or the lack of governance rules). Leaders at all levels need to actively demonstrate through their actions what's important to them, including how they praise, recognize, and reward staff members who take initiative.
 
 > [!TIP]
-> If you can take for granted that your efforts to develop a data solution (such as a semantic model—[previously known as a dataset](/power-bi/connect-data/service-datasets-rename), a lakehouse, or a report) will be valued and appreciated, that's an excellent indicator of a healthy data culture. Sometimes, however, it depends on what your immediate manager values most.
+> If you can take for granted that your efforts to develop a data solution (such as a semantic model, a lakehouse, or a report) will be valued and appreciated, that's an excellent indicator of a healthy data culture. Sometimes, however, it depends on what your immediate manager values most.
 
 The initial motivation for establishing a data culture often comes from a specific strategic business problem or initiative. It might be:
 

@@ -17,7 +17,7 @@ ms.date: 11/24/2023
 
 This data-level auditing article is targeted at multiple audiences:
 
-- **Data creators and workspace administrators:** Users who need to understand usage, adoption, and performance of the semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)), dataflows, and datamarts that they create, publish, and share.
+- **Data creators and workspace administrators:** Users who need to understand usage, adoption, and performance of the semantic models, dataflows, and datamarts that they create, publish, and share.
 - **Power BI administrators:** The administrators who are responsible for overseeing Power BI in the organization. Power BI administrators might need to collaborate with IT, security, internal audit, and other relevant teams. Power BI administrators might also need to collaborate with content creators when troubleshooting performance.
 - **Power BI capacity administrators:** The administrators responsible for overseeing Premium capacity in the organization. Power BI capacity administrators might need to collaborate with content creators when troubleshooting performance.
 - **Center of Excellence, IT, and BI team:** The teams that are also responsible for overseeing Power BI. They might need to collaborate with Power BI administrators and other relevant teams.
@@ -53,7 +53,7 @@ Over time, data creators and owners might experience situations with their seman
 To ensure usability, good performance, and adoption of the content they create, you should audit the usage and performance of the data assets you're responsible for managing. You can use the dataset event logs, which capture user-generated and system-generated activities that occur for a semantic model. They're also referred to as _trace events_, _dataset logs_, or _dataset activity logs_. System administrators often call them _low-level trace events_ because they're detailed.
 
 > [!NOTE]
-> The [dataset name change](../connect-data/service-datasets-rename.md) has been rolled out in the Power BI service and in documentation, though there might be some instances—like with event log operations—where the change hasn't occurred yet.
+> The [dataset name change](../connect-data/service-datasets-rename.md) has been rolled out in the Power BI service and in documentation, though there might be some instances—like with event log [operation names](/fabric/admin/operation-list)—where the change hasn't occurred yet.
 
 You should analyze semantic model trace events to:
 
