@@ -21,7 +21,7 @@ ms.collection: ce-skilling-ai-copilot
 You can include a Copilot generated summary for your Power BI report page or full report attachment in your email subscription to get insights. All the recipients of the email subscription receive the copilot summary in the email. This feature is currently supported only for Standard Subscriptions.  
 The copilot summary is delivered in the email even for reports that are delivered to OneDrive or SharePoint.
 
-:::image type="content" source="media/power-bi-copilot-summaries-in-email-subscriptions.gif" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/power-bi-copilot-summaries-in-email-subscriptions.gif":::
+:::image type="content" source="media/power-bi-copilot-summaries-in-email-subscriptions.gif" alt-text="Screenshot showing how to subscribe to a report." lightbox="media/copilot-summaries-in-subscriptions/power-bi-copilot-summaries-in-email-subscriptions.gif":::
 
 ## Licensing Requirements
 
