@@ -36,7 +36,7 @@ At this juncture, the same person who performed the POC might carry on with prod
 
 ### Develop new Import semantic model
 
-You might choose to create a new Import semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) when an existing Power BI semantic model doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
+You might choose to create a new Import semantic model when an existing Power BI semantic model doesn't already exist to meet your needs, or if it can't be enhanced to meet your needs.
 
 Ideally, from the very beginning, consider decoupling the development work for data and reports. [Decoupling data and reports](report-separate-from-model.md) will facilitate the separation of work, and permissions, when different people are responsible for data modeling and reports. It makes for a more scalable approach and encourages data reusability.
 

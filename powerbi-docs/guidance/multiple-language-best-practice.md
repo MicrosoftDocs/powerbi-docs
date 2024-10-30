@@ -10,7 +10,7 @@ ms.date: 07/21/2023
 ---
 # Use best practices to localize Power BI reports
 
-When it comes to localizing software, there are some universal principles to keep in mind. The first is to plan for localization from the start of any project. It's harder to add localization support to an existing semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or report that was initially built without any regard for internationalization or localization.
+When it comes to localizing software, there are some universal principles to keep in mind. The first is to plan for localization from the start of any project. It's harder to add localization support to an existing semantic model or report that was initially built without any regard for internationalization or localization.
 
 This fact is especially true with Power BI reports because there are so many popular design techniques that don't support localization. Much of the work for adding localization support to existing Power BI reports involves undoing things that don't support localization. Only after that work can you move forward with design techniques that do support localization.
 

@@ -57,7 +57,7 @@ It can be difficult to strictly enforce naming conventions when many users posse
 The workspace name can convey additional information about the workspace, including:
 
 - **Purpose:** A workspace name should always include a description of its content. For example, _Sales Quarterly Bonus Tracking_.
-- **Item types:** A workspace name can include a reference to the types of items it contains. For example, use _Sales Data_ to indicate the workspace stores items like a lakehouse or semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)). _Sales Analytics_ could indicate that the workspace stores analytical reports and dashboards.
+- **Item types:** A workspace name can include a reference to the types of items it contains. For example, use _Sales Data_ to indicate the workspace stores items like a lakehouse or semantic models. _Sales Analytics_ could indicate that the workspace stores analytical reports and dashboards.
 - **Stage (environment):** A workspace name might include its stage. For example, it's common to have separate workspaces (development, test, and production) for [lifecycle management](/fabric/cicd/cicd-overview).
 - **Ownership and responsibility:** A workspace name might include an indication of who's responsible for managing the content. For example, use of an _SLS_ prefix or suffix can indicate that the sales team owns and manages the content.
 
