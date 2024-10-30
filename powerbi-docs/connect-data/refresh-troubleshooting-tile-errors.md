@@ -61,7 +61,7 @@ The following list explains and offers solutions for common tile refresh errors.
 
 - Tiles continue to show unfiltered data after you enable single-sign on (SSO).
 
-  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
+  This issue can happen if the underlying semantic model uses DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this issue, the tiles continue to show unfiltered data after you enable SSO for the data source, until the next tile refresh. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity.
 
   To see the filtered data immediately, you can force a tile refresh. Select the **Refresh** icon at the upper right of a Power BI dashboard.
 

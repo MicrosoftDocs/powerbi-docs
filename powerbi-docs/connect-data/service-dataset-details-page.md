@@ -16,7 +16,7 @@ The semantic model details page helps you explore, monitor, and leverage semanti
 
 This article provides an overview of the semantic model details page in Power BI, explaining its features, functionalities, and how you can interact with it.
 
-[ ![Screenshot of semantic model details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
+[![Screenshot of semantic model details page.](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png)](media/service-dataset-details-page/dataset-details-page-inline-and-expanded.png#lightbox)
 
 The semantic model details page:
 
