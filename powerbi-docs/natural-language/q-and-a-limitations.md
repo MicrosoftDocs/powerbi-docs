@@ -29,8 +29,6 @@ In each of these configurations, row-level security is also supported. Object-le
 
 Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use [Q&A to ask natural-language questions](/connect-data/desktop-directquery-about.md) against these data sources. 
 
-There's one change to the behavior of Q&A when it's in DirectQuery mode: After you enter your question, select **Submit**. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
-
 ### Composite model support
 
 Q&A also supports composite models, if the model contains at least one of the following data sources:
@@ -54,7 +52,7 @@ The review questions only store questions asked about your data model for up to 
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and setting the **Q&A option** to Off.
 
-privacy-q-and-a-questions.png
+:::image type="content" source="media/q-and-a-limitations/privacy-q-and-a-toggle.png:::" alt-text="Screenshot of showing limitations of Q&A.":::
 
 ## Teach Q&A limitations
 
