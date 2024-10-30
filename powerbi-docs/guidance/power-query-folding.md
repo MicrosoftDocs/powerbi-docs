@@ -23,7 +23,7 @@ Query folding guidance differs based on the model mode.
 
 For a **DirectQuery** or **Dual** storage mode table, the Power Query query must achieve query folding.
 
-For an **Import** table, it may be possible to achieve query folding. When the query is based on a relational source—and if a single SELECT statement can be constructed—you achieve _best data refresh performance_ by ensuring that query folding occurs. If the Power Query mashup engine is still required to process transformations, you should strive to minimize the work it needs to do, especially for large semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)).
+For an **Import** table, it may be possible to achieve query folding. When the query is based on a relational source—and if a single SELECT statement can be constructed—you achieve _best data refresh performance_ by ensuring that query folding occurs. If the Power Query mashup engine is still required to process transformations, you should strive to minimize the work it needs to do, especially for large semantic models.
 
 The following bulleted-list provides specific guidance.
 

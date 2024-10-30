@@ -99,7 +99,7 @@ For more information, see [Defender for Cloud Apps for Power BI](powerbi-impleme
 - Analyze data and investigate the scope and root cause of incidents. You can use built-in visualization tools or Kusto Query Language (KQL) queries. You can also use Power BI to visualize and analyze the data that you collect.
 - Respond to security incidents and threats. You can handle responses directly. Or, you can automate responses and remediations by using playbooks, which are workflows based on Azure Logic Apps.
 
-Microsoft Sentinel stores its data in Azure Log Analytics (a component of Azure Monitor). It's based on the same architecture as the [semantic model event logs](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#semantic-model-event-logs), which capture user-generated and system-generated activities that occur for a semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md).
+Microsoft Sentinel stores its data in Azure Log Analytics (a component of Azure Monitor). It's based on the same architecture as the [semantic model event logs](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md#semantic-model-event-logs), which capture user-generated and system-generated activities that occur for a semantic model.
 
 You can use Microsoft Sentinel with Power BI in two different ways.
 
@@ -238,7 +238,7 @@ The [Azure status](https://azure.status.microsoft/) page shows the status for Az
 
 Common Azure services that integrate with Power BI include:
 
-- **Microsoft Entra ID:** Your [Power BI tenant](powerbi-implementation-planning-tenant-setup.md) relies on Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)) for identity and access management.
+- **Microsoft Entra ID:** Your [Power BI tenant](powerbi-implementation-planning-tenant-setup.md) relies on Microsoft Entra ID for identity and access management.
 - **Azure Power BI Embedded:** Azure Power BI Embedded supports programmatic [embedding](/power-bi/developer/embedded/embedded-analytics-power-bi) of Power BI content in apps for your customers. Power BI Embedded is also applicable for customers who have enabled [autoscale](/power-bi/enterprise/service-premium-auto-scale) for their Power BI Premium capacity. For more information about when to use Power BI Embedded, see the [embed for your customers](powerbi-implementation-planning-usage-scenario-embed-for-your-customers.md) usage scenario.
 - **Azure storage accounts:** Azure Data Lake Storage Gen2 (ADLS Gen2) can be used for workspace-level [data storage](/power-bi/admin/service-admin-portal-azure-connections), including dataflows storage and semantic model backups. For more information about dataflow storage, see the [self-service data preparation](powerbi-implementation-planning-usage-scenario-self-service-data-preparation.md) usage scenario.
 - **Azure Log Analytics:** You can enable [workspace auditing](/power-bi/transform-model/log-analytics/desktop-log-analytics-overview) to capture semantic model event logs. For more information, see [Data-level auditing](powerbi-implementation-planning-auditing-monitoring-data-level-auditing.md).

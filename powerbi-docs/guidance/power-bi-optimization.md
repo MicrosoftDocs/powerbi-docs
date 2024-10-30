@@ -22,7 +22,7 @@ This article provides guidance that enables developers and administrators to pro
 
 ## Optimizing the data model
 
-The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (by using DirectQuery or Live Connection), and in Power BI they are referred to as *semantic models*—[previously known as datasets](../connect-data/service-datasets-rename.md). It's important to understand your options, and to choose the appropriate semantic model type for your solution. There are three semantic model table storage modes: Import, DirectQuery, and Composite. For more information, see [Semantic models in the Power BI service](../connect-data/service-datasets-understand.md), and  [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
+The data model supports the entire visualization experience. Data models are either hosted in the Power BI ecosystem or externally (by using DirectQuery or Live Connection), and in Power BI they are referred to as *semantic models*. It's important to understand your options, and to choose the appropriate semantic model type for your solution. There are three semantic model table storage modes: Import, DirectQuery, and Composite. For more information, see [Semantic models in the Power BI service](../connect-data/service-datasets-understand.md), and  [Semantic model modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
 
 For specific semantic model table storage mode guidance, see:
 
@@ -42,7 +42,7 @@ The semantic model is the foundation of all reporting in Power BI. Consumers of 
 - **Formats**: You can specify how a column or measure is displayed in a visual, by default. Values in visuals can be customized further in the visual. Format options include if it has a thousands comma, how many decimal places, how a date is shown, etc. You can also apply [custom](/power-bi/create-reports/desktop-custom-format-strings) or [dynamic](/power-bi/create-reports/desktop-dynamic-format-strings) formats.
 - **Data category**: You can specify a column [data category](/power-bi/transform-model/desktop-data-categorization), such as if it's a Country or Web URL.
 
-These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](/power-bi/transform-model/calculation-groups), [field parameters](/power-bi/create-reports/power-bi-field-parameters), [what if parameters](/transform-model/desktop-what-if), and [grouping and binning columns](/power-bi/create-reports/desktop-grouping-and-binning), which should be evaluated to see if they apply your specific reporting needs.
+These are common features of Power BI semantic model that can be leveraged to help your report authors and model consumers. There are many others, such as [calculation groups](/power-bi/transform-model/calculation-groups), [field parameters](/power-bi/create-reports/power-bi-field-parameters), [what if parameters](/power-bi/transform-model/desktop-what-if), and [grouping and binning columns](/power-bi/create-reports/desktop-grouping-and-binning), which should be evaluated to see if they apply your specific reporting needs.
 
 ## Optimizing visualizations
 

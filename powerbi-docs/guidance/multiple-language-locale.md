@@ -29,7 +29,7 @@ For a list of culture name values, see [ISO 639 Language codes](https://www.iso.
 
 ## Organize project for metadata translation
 
-At the start of a project that involves creating a new Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) with metadata translation, list the culture names that you plan to support. Next, extend the semantic model by adding metadata translations for each culture name.
+At the start of a project that involves creating a new Power BI semantic model with metadata translation, list the culture names that you plan to support. Next, extend the semantic model by adding metadata translations for each culture name.
 
 The following diagram shows a semantic model that has a default language setting of `en-US`. The semantic model has been extended with metadata translations for three other culture names: `es-ES`, `fr-FR`, and `de-DE`.
 
