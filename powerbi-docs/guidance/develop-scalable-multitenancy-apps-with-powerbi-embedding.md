@@ -22,7 +22,7 @@ This article describes how to develop a multitenancy application that embeds Pow
 
 You can achieve Power BI embedding by using two different embedding scenarios: *Embed for your organization* and *Embed for your customer*.
 
-The **Embed for your organization** scenario applies when the application audience comprises *internal* users. Internal users have organizational accounts and must authenticate with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). In this scenario, Power BI is software-as-a-service (SaaS). It's sometimes referred to as *User owns data*.
+The **Embed for your organization** scenario applies when the application audience comprises *internal* users. Internal users have organizational accounts and must authenticate with Microsoft Entra ID. In this scenario, Power BI is software-as-a-service (SaaS). It's sometimes referred to as *User owns data*.
 
 The **Embed for your customer** scenario applies when the application audience comprises *external* users. The application is responsible for authenticating users. To access Power BI content, the application relies on an embedding identity (Microsoft Entra service principal or master user account) to authenticate with Microsoft Entra. In this scenario, Power BI is platform-as-a-service (PaaS). It's sometimes referred to as *App owns data*.
 
@@ -33,7 +33,7 @@ The **Embed for your customer** scenario applies when the application audience c
 
 If you're familiar with Microsoft Entra, the word *tenant* might lead you think of a Microsoft Entra tenant. However, the concept of a tenant is different in the context of building a multitenancy solution that embeds Power BI content. In this context, a *customer tenant* is created on behalf of each customer for which the application embeds Power BI content by using the *Embed for your customer* scenario. You typically provision each customer tenant by creating a single Power BI workspace.
 
-To create a scalable multitenancy solution, you must be able to automate the creation of new customer tenants. Provisioning a new customer tenant typically involves writing code that uses the Power BI REST API to create a new Power BI workspace, create semantic models ([previously known as datasets](../connect-data/service-datasets-rename.md)) by importing Power BI Desktop (.pbix) files, update data source parameters, set data source credentials, and set up scheduled semantic model refresh. The following diagram shows how you can add Power BI items, such as reports and semantic models, to workspaces to set up customer tenants.
+To create a scalable multitenancy solution, you must be able to automate the creation of new customer tenants. Provisioning a new customer tenant typically involves writing code that uses the Power BI REST API to create a new Power BI workspace, create semantic models by importing Power BI Desktop (.pbix) files, update data source parameters, set data source credentials, and set up scheduled semantic model refresh. The following diagram shows how you can add Power BI items, such as reports and semantic models, to workspaces to set up customer tenants.
 
 :::image type="content" source="media/develop-scalable-multitenancy-apps-with-powerbi-embedding/set-up-powerbi-multitenancy-environment.png" alt-text="Diagram that shows a setup for three tenants. Each tenant has its own data source and workspace." border="false":::
 

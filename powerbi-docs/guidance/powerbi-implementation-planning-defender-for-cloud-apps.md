@@ -90,7 +90,7 @@ Access policies and session policies allow you to:
   - Help users make the right decisions during their normal workflow.
   - Guide users to follow your [data classification and protection policy](powerbi-implementation-planning-info-protection.md#data-classification-and-protection-policy) without affecting their productivity.
 
-To provide real-time controls, access policies and session policies work with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)), relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
+To provide real-time controls, access policies and session policies work with Microsoft Entra ID, relying on the reverse proxy capabilities of [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad). Instead of user requests and responses going through the app (the Power BI service in this case), they go through a reverse proxy (Defender for Cloud Apps).
 
 Redirection doesn't affect the user experience. However, the [URL for the Power BI service](/defender-cloud-apps/proxy-intro-aad#how-session-control-works) will change to _https://app.powerbi.com.mcas.ms_ once you've set up Microsoft Entra ID for conditional access app control with Power BI. Also, users will receive a notification when they sign in to the Power BI service that announces that the app is monitored by Defender for Cloud Apps.
 
@@ -191,7 +191,7 @@ When an activity is blocked in real time, it's important to provide the user wit
 
 Some types of policies in Defender for Cloud Apps can have a customized message. Here are two examples of user notifications.
 
-**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or semantic model—[previously known as a dataset](../connect-data/service-datasets-rename.md)) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
+**Example 1:** You can define a real-time session control policy that prevents all exports and downloads when the sensitivity label for the Power BI item (like a report or semantic model) is set to _Highly Restricted_. The customized block message in Defender for Cloud Apps reads: _Files with a Highly Restricted label are not permitted to be downloaded from the Power BI service. Please view the content online in the Power BI service. Contact the Power BI support team with any questions._
 
 **Example 2:** You can define a real-time access policy that prevents a user from signing in to the Power BI service when they're not using a machine managed by the organization. The customized block message in Defender for Cloud Apps reads: _The Power BI service might not be accessed on a personal device. Please use the device provided by the organization. Contact the Power BI support team with any questions._
 
