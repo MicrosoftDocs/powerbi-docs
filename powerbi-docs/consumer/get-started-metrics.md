@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: concept
+ms.topic: concept-article
 ms.date: 11/1/2024
 LocalizationGroup: Get started
 

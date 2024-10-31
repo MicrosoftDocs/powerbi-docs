@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: concept
+ms.topic: concept-article
 ms.date: 11/1/2024
 LocalizationGroup: Consumers
 #customer intent: As a business user, I want learn about the metrics sections in Power BI so that I can understand the insights the metrics are giving me.
