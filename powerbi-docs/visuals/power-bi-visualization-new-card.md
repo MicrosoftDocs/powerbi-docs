@@ -34,7 +34,7 @@ The (new) Card visual is useful in business and finance for showcasing critical 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have an individual **Power BI Pro license** or that you have saved the report in **Premium capacity**. Keep in mind that the (new) card visual applies only to **Power BI Desktop** and isn’t available in Power BI service.
 
-## Let's create (new) card visual
+## Let's create (new) Card visual
 
 There are three similar ways to create a (new) Card visual:
 
