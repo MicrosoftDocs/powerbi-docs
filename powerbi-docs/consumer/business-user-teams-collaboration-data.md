@@ -7,7 +7,7 @@ ms.reviewer: mihart, lukaszp
 ms.service: powerbi
 ms.subservice: pbi-explore
 ms.topic: overview
-ms.date: 01/24/2023
+ms.date: 10/31/2024
 LocalizationGroup: Get started
 
 ---
@@ -17,6 +17,11 @@ LocalizationGroup: Get started
 [!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 Many of us spend a lot of time collaborating in Microsoft Teams. With Power BI, you can get insights into where you're spending your time and how you and your team collaborate.  By reviewing this data, you and your team can plan improved ways of working to be more responsive, agile, and productive.
+
+> [!NOTE]
+> On December 31st, 2024, the **Teams activity analytics** report feature will be discontinued. Starting January 1st, 2025, users will no longer be able to generate new reports with this feature, and existing reports will cease to update. Users are advised to use the built-in analytics views available in Teams. For more details, see [View analytics for your teams in Microsoft Teams](https://support.microsoft.com/office/view-analytics-for-your-teams-in-microsoft-teams-5b8ad4b1-af34-4217-aff4-cd11a820b56b).
+>
+> For more information about the retirement of the Teams activity analytics report feature and how this might affect you, see [Power BI in Teams – Announcing the retirement of the Teams activity analytics report](https://powerbi.microsoft.com/blog/power-bi-october-2024-feature-summary/#post-28196-_Toc179458533).
 
 To get insights about collaboration in Microsoft Teams, follow these steps.
 
