@@ -1,11 +1,11 @@
 ---
 title: Use and monitor metrics
-description: Learn how to create and manage metric sets in Power BI so that your members of your organization can find and reuse key metrics.
+description: Learn different methods to use metric sets in Power BI and how to ensure collaborators use accurate and trusted KPIs within your organization.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-explore
+ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 11/1/2024
 LocalizationGroup: Consumers

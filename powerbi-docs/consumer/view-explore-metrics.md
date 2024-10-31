@@ -5,7 +5,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-explore
+ms.subservice: powerbi-service
 ms.topic: concept
 ms.date: 11/1/2024
 LocalizationGroup: Consumers
