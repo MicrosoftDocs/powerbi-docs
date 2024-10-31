@@ -48,7 +48,7 @@ If you update the measure later, just select the button again so Copilot can upd
 - Create measure descriptions: Intended to create a description for a measure in a semantic model based on the DAX formula. 
 
 **How was Copilot to help write measure descriptions evaluated? What metrics are used to measure performance?**
-- Measure descriptions were generated for Multiple Power BI semantic models with measures, including the quick measures available in Power BI Desktop, and then graded for accuracy and readability by members of the product team. Internal testing showed over 95% accuracy.
+- Measure descriptions were generated for Multiple Power BI semantic models with measures, including the quick measures available in Power BI Desktop, and then graded for accuracy and readability by members of the product team. 
 
 **What are the limitations of Copilot to help write measure descriptions? How can users minimize the impact of Copilot to help write measure descriptions’ limitations when using the system?**
 - To use Copilot to help write measure descriptions, you need to select a workspace with a Fabric capacity. 
