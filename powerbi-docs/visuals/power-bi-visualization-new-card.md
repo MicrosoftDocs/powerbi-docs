@@ -1,5 +1,5 @@
 ---
-title: Create a (new) card visual
+title: Create a (new) card visual in Power BI
 description: This article provides an understanding of the (new) card visual and a quick three-step guide on how to build a (new) card visual in Power BI Desktop.
 author: JaedenArmstrong
 ms.author: miguelmyers
@@ -7,13 +7,13 @@ ms.reviewer: davidiseminger
 ms.service: powerbi
 ms.subservice: pbi-visuals
 ms.topic: how-to
-ms.date: 10/07/2024
+ms.date: 10/30/2024
 ms.custom: sample-Retail-Analysis
 LocalizationGroup: Visualizations
 #customer intent: As a Power BI user, I want to learn about the (new) card visual so that I can effectively and more easily build card visuals in Power BI Desktop.
 ---
 
-# Create a (new) Card visual Power BI Desktop
+# Create a (new) Card visual in Power BI
 
 [!INCLUDE [applies-yes-desktop-no-service](../includes/applies-yes-desktop-no-service.md)]
 
@@ -34,7 +34,7 @@ The (new) Card visual is useful in business and finance for showcasing critical 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have an individual **Power BI Pro license** or that you have saved the report in **Premium capacity**. Keep in mind that the (new) card visual applies only to **Power BI Desktop** and isn’t available in Power BI service.
 
-## Let's create (new) card visual
+## Let's create (new) Card visual
 
 There are three similar ways to create a (new) Card visual:
 
