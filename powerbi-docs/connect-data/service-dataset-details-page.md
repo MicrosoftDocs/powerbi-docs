@@ -37,6 +37,7 @@ The semantic model details page enables you to perform a number of actions. The 
 | **Settings** | Opens the semantic model settings page. | **File > Settings** |
 | **Refresh now** | Launches a refresh of the semantic model. | **Refresh > Refresh now** |
 | **Schedule refresh** | Opens the semantic model settings page where you can set scheduled refresh. | **Refresh > Schedule refresh** |
+| **Refresh history** | Opens the Refresh history screen. | **Refresh > Refresh history**. |
 | **Share** | Opens the **Share semantic model** dialog. | **Share**, or use the [Share this data tile](#share-this-data). |
 | **Explore this data** | Opens the formatted table editing canvas. | **Explore this data > Explore this data**, or use the [Explore this data tile](#explore-this-data). |
 | **Auto-create a report** | Creates a report based on the semantic model's data. | **Explore this data > Auto-create a report**, or use the [Explore this data tile](#explore-this-data). |
