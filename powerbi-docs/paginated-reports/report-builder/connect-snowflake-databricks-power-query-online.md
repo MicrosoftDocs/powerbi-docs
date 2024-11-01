@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: nirusrin
 ---
-# Connect paginated reports to data sources using Power Query in Power BI Report Builder (Preview)
+# Connect paginated reports to data sources using Power Query in Power BI Report Builder
 
 [!INCLUDE [applies-yes-report-builder-no-desktop](../../includes/applies-yes-report-builder-no-desktop.md)]
 
