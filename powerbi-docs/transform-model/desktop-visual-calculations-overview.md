@@ -254,7 +254,7 @@ Visual calculations are currently in preview, and during preview, you should be 
 
 The following articles may be useful when learning and using visual calculations:
 
-* [Create visual calculations in Power BI Desktop (Training module)](../../training/power-bi-visual-calculations)
+* [Create visual calculations in Power BI Desktop (Training module)](../../training/modules/power-bi-visual-calculations)
 * [Using calculations options in Power BI Desktop](desktop-calculations-options.md)
 * [Create measures for data analysis in Power BI Desktop](desktop-measures.md)
 * [WINDOW DAX function](/dax/window-function-dax)
