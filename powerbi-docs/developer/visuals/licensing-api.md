@@ -7,7 +7,7 @@ ms.reviewer: mberdugo
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: concept-article
-ms.date: 07/17/2022
+ms.date: 11/03/2024
 #customer intent: As a Power BI visual developer, I want to learn how to retrieve the Power BI visual's licenses and trigger the display of out of box license related notifications to the PBI user.
 ---
 
@@ -93,25 +93,24 @@ Failure in licenses retrieval can occur in case Power BI Desktop user isn't sign
 Example of calling `getAvailableServicePlans` (using the service ID from the image above):  
 
 ```typescript
-this.licenseManager.getAvailableServicePlans().then((result: LicenseInfoResult) => {
-            this.notificationType = result.isLicenseUnsupportedEnv ?  powerbi.LicenseNotificationType.UnsupportedEnv : powerbi.LicenseNotificationType.General;
-            this.hasServicePlans = !!(result.plans && result.plans.length && result.plans[0].spIdentifier == "test_isvconnect1599092224747.powerbivisualtransact.plan1" && 
-                ( result.plans[0].state == powerbi.ServicePlanState.Active ||  result.plans[0].state == powerbi.ServicePlanState.Warning));
-            
-            // display notification if the user doesn't have licenses
-            if (!this.hasServicePlans) {
-                this.licenseManager.notifyLicenseRequired(this.notificationType).then((value) => {
-                    if (value) {
-                        this.isIconDisplayed = true;
-                    }
-                }).catch((err) => {
-                    console.log('ERROR', err);
-                })
-            }
-        }).catch((err) => {
-            this.hasServicePlans = undefined;
-            console.log(err);
-        });
+private currentUserValidPlans: ServicePlan[] | undefined;
+private hasServicePlans: boolean | undefined;
+private isLicenseUnsupportedEnv: boolean | undefined;
+
+this.licenseManager.getAvailableServicePlans()
+ .then(({ plans, isLicenseUnsupportedEnv, isLicenseInfoAvailable }: LicenseInfoResult) => {
+  if (isLicenseInfoAvailable && !isLicenseUnsupportedEnv) {
+   this.currentUserValidPlans = plans?.filter(({ spIdentifier, state }) => 
+    (state === powerbi.ServicePlanState.Active || state === powerbi.ServicePlanState.Warning)
+   );
+   this.hasServicePlans = !!currentUserValidPlans?.length;
+  }
+  this.isLicenseUnsupportedEnv = isLicenseUnsupportedEnv;
+ }).catch((err) => {
+  this.currentUserValidPlans = undefined;
+  this.hasServicePlans = undefined;
+  console.log(err);
+ });
 ```
 
 ### Notify the user that the required licenses are missing
@@ -129,6 +128,20 @@ export interface IVisualLicenseManager {
         notifyFeatureBlocked(tooltip: string): IPromise<boolean>;
         clearLicenseNotification(): IPromise<boolean>;
     }
+
+
+private defaultNotificationType: powerbi.LicenseNotificationType = powerbi.LicenseNotificationType.General;
+private isNotificaitonDisplayed: boolean = false;
+
+if (!this.isNotificaitonDisplayed) {
+const notificationType = this.isLicenseUnsupportedEnv ?  powerbi.LicenseNotificationType.UnsupportedEnv : this.defaultNotificationType
+this.licenseManager.notifyLicenseRequired(this.getNotificationType())
+ .then((value) => {
+  this.isNotificaitonDisplayed = value;
+ }).catch((err) => {
+  console.log(err);
+ });
+}
 ```
 
 #### General icon indicating a required license is missing
