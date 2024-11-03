@@ -37,7 +37,7 @@ sections:
 
           - If you run Power BI components in a [region without a regional pair](/azure/reliability/cross-region-replication-azure#regions-with-availability-zones-and-no-region-pair), availability zones provide resiliency. Data isn't replicated to another region, and components don't fail over to another region.
 
-          To learn more about how Microsoft Fabric supports reliability, see [Reliability in Microsoft Fabric](//azure/reliability/reliability-fabric).
+          To learn more about how Microsoft Fabric supports reliability, see [Reliability in Microsoft Fabric](/azure/reliability/reliability-fabric).
           
       - question: |
           How are backup instances kept in sync with my data?
@@ -48,7 +48,7 @@ sections:
 
           In [regions without a regional pair](/azure/reliability/cross-region-replication-azure#regions-with-availability-zones-and-no-region-pair), Power BI uses [Azure storage zone-redundant replication](/azure/storage/common/redundancy-regions-zrs) and Azure SQL zone redundancy to replicate data between availability zones.
 
-          To learn more about how Microsoft Fabric supports reliability, see [Reliability in Microsoft Fabric](//azure/reliability/reliability-fabric).
+          To learn more about how Microsoft Fabric supports reliability, see [Reliability in Microsoft Fabric](/azure/reliability/reliability-fabric).
           
       - question: |
           Where are the failover clusters located?
