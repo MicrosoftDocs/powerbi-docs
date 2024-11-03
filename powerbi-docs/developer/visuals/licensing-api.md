@@ -128,8 +128,11 @@ export interface IVisualLicenseManager {
         notifyFeatureBlocked(tooltip: string): IPromise<boolean>;
         clearLicenseNotification(): IPromise<boolean>;
     }
+```
 
+Example of calling `notifyLicenseRequired`:  
 
+```typescript
 private defaultNotificationType: powerbi.LicenseNotificationType = powerbi.LicenseNotificationType.General;
 private isNotificaitonDisplayed: boolean = false;
 
