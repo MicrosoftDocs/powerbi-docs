@@ -137,13 +137,13 @@ private defaultNotificationType: powerbi.LicenseNotificationType = powerbi.Licen
 private isNotificaitonDisplayed: boolean = false;
 
 if (!this.isNotificaitonDisplayed) {
-const notificationType = this.isLicenseUnsupportedEnv ?  powerbi.LicenseNotificationType.UnsupportedEnv : this.defaultNotificationType
-this.licenseManager.notifyLicenseRequired(this.getNotificationType())
- .then((value) => {
-  this.isNotificaitonDisplayed = value;
- }).catch((err) => {
-  console.log(err);
- });
+    const notificationType = this.isLicenseUnsupportedEnv ? powerbi.LicenseNotificationType.UnsupportedEnv : this.defaultNotificationType
+    this.licenseManager.notifyLicenseRequired(this.getNotificationType())
+        .then((value) => {
+            this.isNotificaitonDisplayed = value;
+        }).catch((err) => {
+            console.log(err);
+        });
 }
 ```
 
