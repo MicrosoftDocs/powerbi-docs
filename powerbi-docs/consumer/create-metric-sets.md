@@ -1,6 +1,6 @@
 ---
 title: Create and manage metric sets
-description: Learn how to create and manage metric sets in Power BI so that your members of your organization can find and reuse key metrics.
+description: Learn how to create and manage metric sets in Power BI so that members of your organization can find and reuse key metrics.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
