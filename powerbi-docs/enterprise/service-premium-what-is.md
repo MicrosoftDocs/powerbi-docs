@@ -118,23 +118,23 @@ When using *Power BI Premium* and [Power BI Embedded](../developer/embedded/embe
 
 * **Enhanced security and code isolation** - Code isolation occurs at a per-user level, rather than at a per-capacity level.
 
-## Dataflows Gen1
+## Dataflows Gen1 and Gen2
 
 Each SKU can run a set number of Dataflows Gen1 [parallel tasks](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium), as listed in this table.
 
-| Fabric SKU | Dataflow parallel tasks |
-| ---------- | ----------------------- |
-| F2         |  2                      |
-| F4         |  2                      |
-| F8         |  4                      |
-| F16        |  8                      |
-| F32        | 16                      |
-| F64        | 32                      |
-| F128       | 64                      |
-| F256       | 64                      |
-| F512       | 64                      |
-| F1024      | 64                      |
-| F2048      | 64                      |
+| Fabric SKU | Dataflow Gen1 parallel tasks | Dataflow Gen2 parallel tasks |
+| ---------- | ---------------------------- |------------------------------|
+| F2         |  2                           | 96                           |
+| F4         |  2                           | 96                           |
+| F8         |  4                           | 96                           |
+| F16        |  8                           | 96                           |
+| F32        | 16                           | 96                           |
+| F64        | 32                           | 384                          |
+| F128       | 64                           | 384                          |
+| F256       | 64                           | 384                          |
+| F512       | 64                           | 1536                         |
+| F1024      | 64                           | 1536                         |
+| F2048      | 64                           | 1536                         |
 
 To learn about Dataflow Gen2, see [Getting from Dataflow Generation 1 to Dataflow Generation 2](/fabric/data-factory/dataflows-gen2-overview).
 
