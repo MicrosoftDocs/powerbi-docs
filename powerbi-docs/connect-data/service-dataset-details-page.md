@@ -24,7 +24,7 @@ The semantic model details page:
 * Provides actions that you can perform on the semantic model, such as share, refresh, Analyze in Excel, and more.
 * Lists the reports and scorecards that are built on top of the semantic model.
 
-The page header displays the semantic model name and endorsement (if any). To contact the semantic model owner or semantic model certifier (if any), select the the header, then select the name of the owner.
+The page header displays the semantic model name and endorsement (if any). To contact the semantic model owner or semantic model certifier (if any), select the header, then select the name of the owner.
 
 ## Supported actions
 
