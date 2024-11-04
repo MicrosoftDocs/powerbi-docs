@@ -61,7 +61,10 @@ You can also choose to deliver the full report to a OneDrive or SharePoint locat
 > [!NOTE]
 > The preview is a point in time summary. The summary will change based on the subscription schedule and data.
 
-7. You can choose to opt-out of including Copilot summaries in subscription emails by turning off the toggle.
+7. For existing subscriptions, you can opt-in receive Copilot summaries by turning on the toggle.
+
+> [!NOTE]
+> For new subscriptions that are copilot eligible, the copilot summary is enabled by default. You could choose to opt-out of including Copilot summaries in subscription emails by turning off the toggle.
 
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png" alt-text="Screenshot showing the opt-out for the summary in the subscription." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-off.png":::
 
@@ -78,6 +81,6 @@ If you include a message in the email, the message appears above the Summary gen
 :::image type="content" source="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png" alt-text="Screenshot showing the send now option." lightbox="media/copilot-summaries-in-subscriptions/power-bi-subscribe-copilot-summaries-send-now.png":::
 
 ## Limitations and Considerations
-- Copilot summaries for email subscriptions aren't supported for paginated reports, scrorecards, and dashboards.
+- Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scrorecards, and dashboards.
 - The Copilot summary is run on behalf of the subscription owner, much like email subscriptions.
 - User-defined prompts aren't supported. 
