@@ -3,7 +3,7 @@ title: Add bookmark support for Power BI custom visuals
 description: Learn how to add bookmark support to your custom visuals in Power BI so that you can switch between different bookmarked states.
 author: mberdugo
 ms.author: monaberdugo
-ms.reviewer: sranins
+ms.reviewer: tebercov 
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to

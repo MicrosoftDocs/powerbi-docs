@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Size
+##### Size
 
 With this setting, you can customize the size, offering a range of 8 to 60 pixels.

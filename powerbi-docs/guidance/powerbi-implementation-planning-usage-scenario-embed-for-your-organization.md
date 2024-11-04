@@ -15,7 +15,7 @@ ms.date: 01/16/2023
 
 [!INCLUDE [powerbi-implementation-planning-context](includes/powerbi-implementation-planning-context.md)]
 
-This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your organization_. (The developer isn't necessarily responsible for creating the Power BI content.) The **Embed for your organization** scenario applies when the application audience comprises users who have permission and appropriate licenses to access Power BI content in the organization. These users must have organizational accounts (including guest accounts), which authenticate with Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)).
+This usage scenario focuses on how a developer can programmatically embed Power BI content in a custom application _for your organization_. (The developer isn't necessarily responsible for creating the Power BI content.) The **Embed for your organization** scenario applies when the application audience comprises users who have permission and appropriate licenses to access Power BI content in the organization. These users must have organizational accounts (including guest accounts), which authenticate with Microsoft Entra ID.
 
 > [!NOTE]
 > In this scenario, Power BI is software-as-a-service (SaaS). The embedding scenario is sometimes referred to as _User owns data_.
@@ -104,7 +104,7 @@ The application can set up and automate operations, and it can respond to user-i
 
 ### Gateway setup
 
-Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)).
+Typically, a [data gateway](/power-bi/connect-data/service-gateway-onprem) is required when accessing data sources that reside within the private organizational network or a virtual network. The two purposes of a gateway are to [refresh imported data](/power-bi/connect-data/refresh-data), or view a report that queries a live connection or [DirectQuery](/power-bi/connect-data/desktop-directquery-about) semantic model.
 
 > [!NOTE]
 > A centralized [data gateway](/power-bi/connect-data/service-gateway-personal-mode#on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode) in _standard mode_ is strongly recommended over gateways in [personal mode](/power-bi/connect-data/service-gateway-personal-mode). In standard mode, the data gateway supports live connection and DirectQuery operations (in addition to scheduled data refresh operations).

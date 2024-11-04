@@ -45,10 +45,7 @@ When you create a new Microsoft Entra tenant, you become the first user of that 
 
 Create a master user to use as your master embedding account. You can think of the master user account as a service account.
 
-1. In the home page of the Azure portal, select the Microsoft Entra ID tab.
-
-    > [!div class="mx-imgBorder"]
-    >![Screenshot of Microsoft Entra ID tab.](media/create-an-azure-active-directory-tenant/aad-flyout.png)
+1. In the home page of the Azure portal, select the **Microsoft Entra ID** tab.
 
 2. Under **Manage**, select **Users**.
 

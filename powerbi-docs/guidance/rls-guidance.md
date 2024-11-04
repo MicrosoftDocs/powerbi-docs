@@ -62,9 +62,9 @@ It's possible to measure the performance impact of RLS filters in Power BI Deskt
 
 ## Configure role mappings
 
-Once published to Power BI, you must map members to semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) roles. Only semantic model owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/fabric/security/service-admin-row-level-security#manage-security-on-your-model).
+Once published to Power BI, you must map members to semantic model roles. Only semantic model owners or workspace admins can add members to roles. For more information, see [Row-level security (RLS) with Power BI (Manage security on your model)](/fabric/security/service-admin-row-level-security#manage-security-on-your-model).
 
-Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to semantic model roles. It involves managing security group memberships in Microsoft Entra ID ([previously known as Azure Active Directory](/azure/active-directory/fundamentals/new-name)). Possibly, it delegates the task to your network administrators.
+Members can be user accounts, security groups, distribution groups or mail enabled groups. Whenever possible, we recommend you map security groups to semantic model roles. It involves managing security group memberships in Microsoft Entra ID. Possibly, it delegates the task to your network administrators.
 
 ## Validate roles
 

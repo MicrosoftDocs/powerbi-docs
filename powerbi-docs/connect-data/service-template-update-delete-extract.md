@@ -7,30 +7,31 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 03/15/2023
+ms.date: 10/17/2024
+#customer intent: As a Power BI template app developer, I want to manage my published template app by updating, deleting, and extracting it without interfering with the app in production, so that I can ensure a smooth and uninterrupted experience for my users. 
 ---
 
 # Manage your published template app
 
-If you have a Power BI template app in production, when you want to make changes to the app, you can start over in the test phase, without interfering with the app in production.
+If you have a Power BI template app in production, when you want to make changes to the app, you can do so without disrupting the current user experience. This article tells you how to start over in the test phase, without interfering with the app in production.
 
 ## Update your app
 
-Go to the template app workspace. Then, if you made your changes in Power BI Desktop, start at Step 1. If you did not make any changes in Power BI Desktop, start at Step 2.
+Go to the template app workspace. Then, if you made your changes in Power BI Desktop, start at Step 1. If you didn't make any changes in Power BI Desktop, start at Step 2.
 
 1. Upload your updated semantic model and **make sure to overwrite the existing semantic model**.
 
-   - If the *.pbix* file you're uploading has the same name as the semantic model and report used in the app, uploading will overwrite the existing semantic model.
-   
+   - If the *.pbix* file you're uploading has the same name as the semantic model and report used in the app, uploading overwrites the existing semantic model.
+
    - If you're changing the name of the semantic model and report used in the app, and the *.pbix* file you want to upload has a different name than the semantic model and report used in the app, do the following:
 
      - Rename the semantic model and report used in the app so that their names exactly match the name of your updated *.pbix* file.
      - Upload your *.pbix* file and overwrite the existing semantic model and report that you just renamed.
 
-     In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog will ask for your permission to overwrite the semantic model the app uses. If you don't overwrite the existing semantic model, customers won't be able to install your updated app.
+     In either case, to upload a local *.pbix* file to the service, select **Upload** > **Browse**, navigate to the file, and select **Open**. A dialog asks for your permission to overwrite the semantic model the app uses. If you don't overwrite the existing semantic model, customers won't be able to install your updated app.
 
    ![Screenshot that shows the dialog requesting permission to overwrite the semantic model with the same name.](media/service-template-apps-update-extract-delete/overwrite-dialog.png)
-   
+
    >[!IMPORTANT]
    > Never delete the semantic model the app uses. Deleting the semantic model makes it impossible for customers to update their copies of the app.
 
@@ -49,15 +50,15 @@ Go to the template app workspace. Then, if you made your changes in Power BI Des
 
    ![Screenshot that shows two versions of a template app with Promote app greyed out.](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
 
-   Your link is now live. 
-   
+   Your link is now live.
+
    >[!NOTE]
    >The **Promote app** button at the pre-production stage is disabled. Disabling the button prevents accidentally overwriting the live production link with the current app version before the Cloud Partner Portal (CPP) validates and approves the new app version.
 
 1. Submit your link again to the CPP by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the CPP, you must publish your offer again and have it validated and approved. If you've changed the name of the app, be sure to also change the name in the CPP. When your offer is approved, the **Promote app** button becomes active again.
-   
+
 1. Promote your app to the **Production** stage.
-   
+
 ### Update behavior
 
 - Updating the app lets template app installers [update their template app](service-template-apps-install-distribute.md#update-a-template-app) in the already installed workspaces without losing the connection configuration.

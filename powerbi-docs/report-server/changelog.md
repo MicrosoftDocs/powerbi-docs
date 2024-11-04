@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/02/2024
+ms.date: 09/26/2024
 ---
 
 # Change log for Power BI Report Server
@@ -15,6 +15,25 @@ ms.date: 07/02/2024
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build. Always follow the guide on how to [upgrade Power BI Report Server](upgrade.md) when performing any upgrade.
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. For information about Report Builder versions, see the [Power BI Report Builder change log](../paginated-reports/paginated-reports-change-log.md).
+
+## September 2024
+
+### Power BI Report Server
+- *Version: 1.21.9032.4573 (build 15.0.1116.121), Released: September 26, 2024*
+  - Features
+    - Custom Visual API shipped with release - version v5.10.0
+    - Changed default SupportedHyperlinkSchemes advanced server property value to disallow javascript
+    - Changed default TrustedFileFormat advanced server property value to disallow pdf content viewing
+  - Bug fixes
+    - Fixed issue with RsPortal log getting filled with 401 errors
+    - Fixed issue with folders containing certain characters
+    - Fixed issue with history snapshot page
+    - Fixed issue with managing shared data sources
+    - Fixed issue with ribbon charts in Power BI Reports
+
+### Power BI Desktop (optimized for Power BI Report Server)
+- *Version: 2.136.1202.0 (September 2024), Released: September 26, 2024*
+     - Support for September 2024 Power BI Report Server.
 
 ## May 2024
 

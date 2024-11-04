@@ -10,8 +10,8 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Position
+##### Position
 
 This setting allows you to specify the position of the Subtotal labels:
-**- Top**
-**- Bottom**
+- **Top**
+- **Bottom**

@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Color
+##### Color
 
 This setting allows you to customize the color by either selecting from the color palette or applying conditional formatting. No filled color is applied by default.

@@ -10,6 +10,6 @@ ms.date: 06/18/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Enabled
+##### Enabled
 
 When activated, the Options toggle enables the following settings.

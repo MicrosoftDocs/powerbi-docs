@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-resource
 ms.topic: conceptual
 ms.custom: fabric-cat
-ms.date: 09/13/2024
+ms.date: 09/25/2024
 ---
 
 # Power BI implementation planning: Tenant-level security planning
@@ -57,7 +57,7 @@ When assigning administrator roles, we recommend that you follow [best practices
 
 > [!div class="checklist"]
 >
-> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the roles that can administer Power BI: Fabric admin, Power Platform admin, and Global administrator.
+> - **Identify who's currently assigned the administrator role:** Verify who's assigned to one of the roles that can administer Power BI.
 > - **Determine who should manage the Power BI service:** If there are too many administrators, create a plan to reduce the total number. If there are users assigned as administrators for Power BI who aren't well-suited to such a high-privilege role, create a plan to resolve the issue.
 > - **Clarify roles and responsibilities:** For each administrator of Power BI, ensure that their responsibilities are clear. Verify that appropriate cross-training has occurred.
 
@@ -72,7 +72,7 @@ You need to make some tenant-level decisions that relate to security and privacy
 
 Here are a few examples of high-level security strategies. You might choose to make decisions that affect the entire organization.
 
-- **Requirements for row-level security:** You can use row-level security (RLS) to restrict data access for specific users. That means different users see different data when accessing the same report. A Power BI semantic model ([previously known as a dataset](../connect-data/service-datasets-rename.md)) or a data source (when using single sign-on) can enforce RLS. For more information, see the _Enforce data security based on consumer identity_ section in the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article.
+- **Requirements for row-level security:** You can use row-level security (RLS) to restrict data access for specific users. That means different users see different data when accessing the same report. A Power BI semantic model or a data source (when using single sign-on) can enforce RLS. For more information, see the _Enforce data security based on consumer identity_ section in the [Report consumer security planning](powerbi-implementation-planning-security-report-consumer-planning.md#enforce-data-security-based-on-consumer-identity) article.
 - **Data discoverability:** Determine the extent to which data discoverability should be encouraged in Power BI. Discoverability affects who can find semantic models or datamarts in the [data hub](/power-bi/connect-data/service-data-hub?tabs=semantic-models), and whether content authors are allowed to request access to those items by using the _Request access_ workflow. For more information, see the [customizable managed self-service BI](powerbi-implementation-planning-usage-scenario-customizable-managed-self-service-bi.md) usage scenario.
 - **Data that's permitted to be stored in Power BI:** Determine whether there are certain types of data that shouldn't be stored in Power BI. For example, you might specify that certain sensitive information types, like bank account numbers or social security numbers, can't be stored in a semantic model. For more information, see the [Information protection and data loss prevention](powerbi-implementation-planning-info-protection-data-loss-prevention-overview.md) article.
 - **Inbound private networking:** Determine whether there are requirements for network isolation by using private endpoints to access Power BI. When you use [Azure Private Link](/fabric/security/security-private-links-overview), data traffic is sent by using the Microsoft private network backbone instead of going across the internet.

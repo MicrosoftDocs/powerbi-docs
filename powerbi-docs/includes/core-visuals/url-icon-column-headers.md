@@ -10,6 +10,6 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Column headers
+##### Column headers
 
 This toggle, when enabled, lets you replace the column header text with a clickable hyperlink icon. This is useful when you want to link to additional information related to the column or provide context-specific URLs.

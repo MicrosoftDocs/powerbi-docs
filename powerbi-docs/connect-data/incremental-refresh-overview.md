@@ -150,11 +150,11 @@ For *very large* models in Premium capacities that likely contain billions of ro
 
 ### Current date and time
 
-By default, the current date and time is determined based on Coordinated Universal Time (UTC) at the time of refresh. For on-demand and scheduled refreshes, you can configure a different time zone under 'Refresh' that will be taken into account when determining the current date and time. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone configured determines the current date and time based on Pacific Time, not UTC, which would return the next day. 
+By default, the current date and time is determined based on Coordinated Universal Time (UTC) at the time of refresh. For on-demand, scheduled and REST API refreshes, you can configure a different time zone under 'Refresh' that will be taken into account when determining the current date and time. For example, a refresh that occurs at 8:00 PM Pacific Time (US and Canada) with a time zone configured determines the current date and time based on Pacific Time, not UTC, which would return the next day. 
 
 :::image type="content" source="media/incremental-refresh-overview/time-zone.png" alt-text="Screenshot of Scheduled refresh dialog showing the Time zone input field":::
 
-Refresh operations not invoked through the Power BI service, such as the [XMLA TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true) or [enhanced refresh API](/power-bi/connect-data/asynchronous-refresh#parameters), do not consider the configured scheduled refresh time zone and default to UTC.
+Refresh operations not invoked through the Power BI service, such as the [XMLA TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current&preserve-view=true), do not consider the time zone configuration and default to UTC.
 
 ## Configure incremental refresh and real-time data
 
@@ -214,7 +214,7 @@ For example, if this setting is enabled, with each refresh operation, the servic
 
 The **Only refresh complete days** setting ensures all rows for the entire day are included in the refresh operation. This setting is optional *unless* you enable the **Get the latest data in real time with DirectQuery (Premium only)** setting. For example, say your refresh is scheduled to run at 4:00 AM every morning. If new rows of data appear in the data source table during those four hours between midnight and 4:00 AM, you don't want to account for them. Some business metrics, like barrels per day in the oil and gas industry, make no sense with partial days. Another example is refreshing data from a financial system where data for the previous month is approved on the twelfth calendar day of the month. You could set the refresh period to one month and schedule the refresh to run on the twelfth day of the month. With this option selected, it would, for example, refresh January data on February 12.
 
-Keep in mind, unless scheduled refresh is configured for a non-UTC time zone, refresh operations in the service run under UTC time, which can determine the effective date and complete periods.
+Keep in mind, unless time zone under 'Refresh' is configured for a non-UTC one, refresh operations in the service run under UTC time, which can determine the effective date and complete periods.
 
 The **Detect data changes** setting enables even more selective refresh. You can select a date/time column used to identify and refresh only those days where the data has changed. This setting assumes such a column exists in the data source, which is typically for auditing purposes. This column *shouldn't* be the same column used to partition the data with the `RangeStart` and `RangeEnd` parameters. The maximum value of this column is evaluated for each of the periods in the incremental range. If it hasn't changed since the last refresh, there's no need to refresh the period, which could potentially further reduce the days incrementally refreshed from three to one.
 

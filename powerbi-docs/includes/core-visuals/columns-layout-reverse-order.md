@@ -10,6 +10,6 @@ ms.date: 06/21/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Reverse order
+##### Reverse order
 
 This toggle, when switched on, reverses the series order; when off, it maintains the legend's order.

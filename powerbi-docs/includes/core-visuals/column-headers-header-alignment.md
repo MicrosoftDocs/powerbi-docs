@@ -10,6 +10,6 @@ ms.date: 06/13/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Header alignment
+##### Header alignment
 
 This setting controls the header alignment, allowing you to choose between left, center, or right.

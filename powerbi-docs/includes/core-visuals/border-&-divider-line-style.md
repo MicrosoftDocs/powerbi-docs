@@ -10,9 +10,10 @@ ms.date: 06/25/2024
 ms.custom: include file - variant
 LocalizationGroup: core-visuals
 ---
-#### Line style
+##### Line style
 
 The menu provides three selections to customize the line style pattern:
-**- Solid:** A continuous line without breaks.
-**- Dashed:** A line consisting of a series of short segments.
-**- Dotted:** A line made up of a sequence of dots.
+
+- **Solid:** A continuous line without breaks.
+- **Dashed:** A line consisting of a series of short segments.
+- **Dotted:** A line made up of a sequence of dots.
