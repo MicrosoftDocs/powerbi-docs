@@ -6,19 +6,19 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 11/04/2024
 
 ---
 # Limitations of Power BI Q&A
 
-The [Q&A feature](/consumer/end-user-q-and-a.md) allows users to explore data from their Power BI semantic model using natural language to receive answers in the form of charts and graphs. Q&A is not available for [Power BI Report Server](/report-server/install-powerbi-desktop.md).  
+The [Q&A feature](../consumer/end-user-q-and-a.md) allows users to explore data from their Power BI semantic model using natural language to receive answers in the form of charts and graphs. Q&A is not available for [Power BI Report Server](../report-server/install-powerbi-desktop.md).  
 
 ## Supported data sources
 
 Power BI Q&A supports the following configurations of data sources in the Power BI service:
 
 - Import mode
-- [Direct Query](#directquery-support-for-q&a) 
+- [Direct Query](#teach-qa-limitations) 
 - Live connect to Azure Analysis Services
 - Live connect to on-premise SQL Server Analysis Services tabular models
 - DirectLake models
@@ -27,14 +27,14 @@ In each of these configurations, row-level security is also supported. Object-le
 
 ### DirectQuery support for Q&A
 
-Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use [Q&A to ask natural-language questions](/connect-data/desktop-directquery-about.md) against these data sources. 
+Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use [Q&A to ask natural-language questions](../connect-data/desktop-directquery-about.md) against these data sources. 
 
 ### Composite model support
 
 Q&A also supports composite models, if the model contains at least one of the following data sources:
 
 - One import data source.
-- One [supported DirectQuery](#directquery-support-for-q&a) data source.
+- One [supported DirectQuery](#teach-qa-limitations) data source.
 
 If the model contains a mix of data sources, we only index columns from import tables or columns from supported Direct Query sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves. 
 
