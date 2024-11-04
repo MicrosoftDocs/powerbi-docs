@@ -120,7 +120,7 @@ When using *Power BI Premium* and [Power BI Embedded](../developer/embedded/embe
 
 ## Dataflows Gen1 and Gen2
 
-Each SKU can run a set number of Dataflows Gen1 [parallel tasks](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium), as listed in this table.
+Each SKU can run a set number of Dataflows [parallel tasks](/power-query/dataflows/what-licenses-do-you-need-in-order-to-use-dataflows#power-bi-premium), as listed in this table.
 
 | Fabric SKU | Dataflow Gen1 parallel tasks | Dataflow Gen2 parallel tasks |
 | ---------- | ---------------------------- |------------------------------|
