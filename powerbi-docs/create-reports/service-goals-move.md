@@ -15,7 +15,7 @@ ms.date: 10/24/2024
 
 [!INCLUDE [applies-no-desktop-yes-service](../includes/applies-no-desktop-yes-service.md)]
 
-In some scenarios, you can hide a column, or put the columns in a different order. You can also want to reorder the metrics in a scorecard, make one metric a submetric of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make these changes, moving metrics and scorecards, deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
+In some scenarios, you can hide a column, or put the columns in a different order. You can also reorder the metrics in a scorecard, make one metric a submetric of another, or move or copy the entire scorecard to another workspace. As a scorecard author, you can make these changes, moving metrics and scorecards, deciding the columns that your scorecard consumers see, and the order they're in, to optimize the scorecard for your audience.
 
 :::image type="content" source="media/service-goals-move/power-bi-goals-edit-columns.png" alt-text="Screenshot of the Edit view columns pane.":::
 
