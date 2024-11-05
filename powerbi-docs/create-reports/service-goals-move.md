@@ -36,7 +36,7 @@ It's easy to reorder metrics on the scorecard, or make them submetrics.
 1. Open the scorecard in edit mode, and select the arrow icon next to the column you want to hide or move > **Column settings**.
 1. Select **Move right**, **Move left**, or **Hide this column**.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-columns.png" alt-text="Screenshot of Move or Hide columns":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-move-columns.png" alt-text="Screenshot of Move or Hide columns.":::
 
 ## Show a hidden column
 
@@ -59,7 +59,7 @@ Many organizations have 'template' scorecards that different departments or busi
 
 2. You see a dropdown list of workspaces you have access to. Select the workspace you’d like to move or copy the scorecard to > **Continue**.
 
-    :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog":::
+    :::image type="content" source="media/service-goals-move/power-bi-goals-move-scorecard.png" alt-text="Screenshot of move scorecard dialog.":::
 
     When you copy a scorecard, you have the option to include or exclude check-in history. This makes it easy to reuse the same scorecard for a newer time period (for example, for fiscal year scorecards) so you don't have to do this all over again.
 

@@ -61,7 +61,7 @@ First, make sure you're in edit mode.
     - **Use subgoal**
     - **Connected to data**
 
-    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="A Screenshot showing the types of goals.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="A screenshot showing the types of goals.":::
 
 1. When you choose rollup subgoals, you can choose the aggregation type:
 
