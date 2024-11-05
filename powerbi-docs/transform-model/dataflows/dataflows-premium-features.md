@@ -73,7 +73,7 @@ To change the default setting and enable the enhanced compute engine, do the fol
 
 After the enhanced compute engine is on, return to **dataflows** and you should see a performance improvement in any computed table that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity.
 
-To make the best use of the compute engine, split the ETL stage into two separate dataflows, in the following way:
+To make the best use of the compute engine, split the ETL stage into two separate dataflows in the same workspace, in the following way:
 
 * **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source.
 * **Dataflow 2** - perform all ETL operations in this second dataflow, but ensure you're referencing Dataflow 1, which should be on the same capacity. Also ensure you perform operations that can fold first: filter, group by, distinct, join). And perform these operations before any other operation, to ensure the compute engine is utilized.
@@ -159,11 +159,13 @@ To perform in-storage computations, you first must create the dataflow and bring
 
 * When you work with dataflows created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account.
 
+* Computed entities is only supported within a single workspace.
+
 As a best practice, when doing computations on data joined by on-premises and cloud data, create a new dataflow for each source (one for on-premises and one for cloud) and then create a third dataflow to merge/compute over these two data sources.
 
 ## Linked entities
 
-You can reference existing dataflows by using linked entities with a Power BI Premium subscription, which lets you either perform calculations on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows.
+You can reference existing dataflows in the same workspace by using linked entities with a Power BI Premium subscription, which lets you either perform calculations on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows. 
 
 ## Incremental refresh
 
