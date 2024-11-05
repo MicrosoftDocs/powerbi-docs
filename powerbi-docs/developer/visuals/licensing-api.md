@@ -153,15 +153,13 @@ Use `notifyLicenseRequired` call with `LicenseNotificationType.General` to displ
 Once triggered, the icon is preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
 > [!NOTE]
-> The `LicenseNotificationType.General` notification is only enforced when both applies: supported for licensing environment and Power BI Edit scenarios. Calling this in an unsupported environment or when the report is in Read mode or in dashboard will not apply the icon and will return `false` in the call's response.
+> The `LicenseNotificationType.General` notification is only enforced from an environment that supports licensing management and for Power BI Edit scenarios. Calling this in an unsupported environment or when the report is in Read mode or in dashboard doesn't apply the icon and returns `false` in the call's response.
 
 Example of the visual display containing the "licenses are required" general icon:
 
->[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" general icon.](media/licensing-api/general-icon.png)
+:::image type="content" source="media/licensing-api/general-icon.png" alt-text="Screenshot of visual display containing the "licenses are required" general icon.":::
 
->[!div class="mx-imgBorder"]
->![visual display containing the "licenses are required" expanded icon.](media/licensing-api/general-icon-expanded.png)
+:::image type="content" source="media/licensing-api/general-icon-expanded.png" alt-text="Screenshot of visual display containing the "licenses are required" expanded icon.":::
 
 #### Overlay the visual's display with a *missing license* notification
 
@@ -178,19 +176,23 @@ Use `notifyLicenseRequired` call with `LicenseNotificationType.UnsupportedEnv` t
 Once triggered, the icon is preserved throughout the visual's lifetime until `clearLicenseNotification` or `notifyLicenseRequired` are called.
 
 > [!NOTE]
-> The `LicenseNotificationType.UnsupportedEnv` notification is only enforced when called in context of unsupported for licensing environment. Calling this in any other environment will not apply the notification and will return `false` in the call's response.
+> The `LicenseNotificationType.UnsupportedEnv` notification is only enforced when called in context of unsupported for licensing environment. Calling this in any other environment doesn't apply the notification and returns `false` in the call's response.
 
 Example of the visual display containing the "Unsupported Environment" notification:
 
->[!div class="mx-imgBorder"]
->![visual display containing the "Unsupported Environment" notification](media/licensing-api/unsupported-environment.png)
+:::image type="content" source="media/licensing-api/unsupported-environment.png" alt-text="Screenshot of visual display containing the 'Unsupported Environment' notification":::
 
 #### Display a banner notifying that a specific visual's functionality couldn't be applied
 
 When applying a specific visual's functionality requires licenses that were found missing, you can use the `notifyFeatureBlocked` call that displays a pop-up banner as part of the visual's container. The banner also supports a custom tooltip that you can set and use to provide additional information on the feature that triggered the notification.
 
 > [!NOTE]
-> The feature is blocked notification is only enforced when called in the context of supported for licensing environment and in case blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`). Calling this notification in an unsupported environment will not apply the notification and will return `false` in the call's response.
+> The *feature is blocked* notification is only enforced when both the following conditions apply:
+>
+> * It's called from a supported licensing environment 
+> * Blocking overlays aren't applied (`LicenseNotificationType.UnsupportedEnv`, `LicenseNotificationType.VisualIsBlocked`).
+>
+> Calling this notification in an unsupported environment doesn't apply the notification and returns `false` in the call's response.
 
 > [!NOTE]
 > To support localized Power BI environment, we recommend maintaining localized versions of the tooltips in use. Please use [Localization API](./localization.md) to retrieve the Power BI locale language.
@@ -202,8 +204,8 @@ or
 until `clearLicenseNotification` is called (whatever comes first).
 
 Example of the visual display containing the "feature blocked" banner notification:
->[!div class="mx-imgBorder"]
->![visual display containing the "feature blocked" banner notification.](media/licensing-api/feature-banner-upgrade.png)
+
+:::image type="content" source="media/licensing-api/feature-banner-upgrade.png" alt-text="Screenshot of visual display containing the 'feature blocked' banner notification":::
 
 ## Test a licensed visual
 
