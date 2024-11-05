@@ -1,6 +1,6 @@
 ---
 title: Create linked metrics in the Power BI service
-description: With linked metrics, you can show the same metric on multiple scorecards, across multiple workspaces. All check-ins, edits, and updates are reflected in all the metric locations.
+description: Show the same metric on multiple scorecards across workspaces. All updates are reflected in all metric locations.
 author: aphilip94
 ms.author: anphil
 ms.reviewer: ''
@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 02/16/2023
+ms.date: 10/24/2024
+#customer intent: As a Power BI user I want to learn how to show the same metric on multiple Power BI scoredcards.
 ---
 
 # Create linked metrics in the Power BI service (preview)
@@ -33,11 +34,11 @@ Say you have build access to a scorecard, meaning you can build content with the
 
 1. Select the scorecard that contains the metric you’d like to link from the list provided.
 
-    :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-2.png" alt-text="Screenshot of list of scorecards." lightbox="media/service-metrics-linked-metrics/linked-goals-2.png":::
+:::image type="content" source="media/service-metrics-linked-metrics/linked-goals-2.png" alt-text="Screenshot showing a list of the scorecards." lightbox="media/service-metrics-linked-metrics/linked-goals-2.png":::
 
 1. Select the metric(s) you’d like to include in this scorecard.
 
-    [ ![Screenshot of selecting the metric to link.](media/service-metrics-linked-metrics/linked-goals-3.png)](media/service-metrics-linked-metrics/linked-goals-3.png#lightbox)
+    [![Screenshot of selecting the metric to link.](media/service-metrics-linked-metrics/linked-goals-3.png)](media/service-metrics-linked-metrics/linked-goals-3.png#lightbox)
 
 1. Select **Continue**. The linked metric(s) appear on this scorecard.
 
@@ -56,20 +57,20 @@ Edits are reflected in all scorecards that contain the linked metric.
 You can see the name and link to the source scorecard in the Details pane.
 
 :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-5.png" alt-text="Screenshot showing details of the linked metric in Details pane.":::
-   
+
 You can also see this information in the Connections pane.
 
 :::image type="content" source="media/service-metrics-linked-metrics/linked-goals-6.png" alt-text="Screenshot showing details of the linked metric in Connections pane.":::
 
 ## Linked metrics considerations
 
-### Linked metrics and hierarchies 
+### Linked metrics and hierarchies
 
 If you filter your scorecard by a hierarchy, linked metrics aren't filtered. They continue showing their original value. Check-ins to linked metrics aren't allowed on a hierarchical child scorecard.
 
 ### Linked metrics and rollups
 
-If you link a rollup metric onto a different scorecard, it continues to show its calculated value from the source scorecard and doesn't take into account any child metrics on the destination scorecard. Additionally, if a linked metric is the child of a rollup metric, it's not included in the parent's calculation.
+If you link a rollup metric onto a different scorecard, it continues to show its calculated value from the source scorecard and doesn't take into account any child metrics on the destination scorecard. Additionally, if a linked metric is the child of a rollup metric, the linked metric isn't included in the parent's calculation.
 
 ## Related content
 
