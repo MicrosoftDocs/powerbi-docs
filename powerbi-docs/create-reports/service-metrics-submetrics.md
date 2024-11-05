@@ -8,7 +8,8 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 10/10/2022
+ms.date: 11/05/2024
+#customer intent: As a Power BI user I want to learn about subgoals in scorecards in Power BI.
 ---
 
 # Create subgoals in the Power BI service
@@ -39,7 +40,7 @@ You can define one or more subgoals for a goal. Like their parent goals, subgoal
 
 1. See these articles for details on creating manual or connected goals:
 
-    - [Create a manual goal](service-goals-create.md#step-2-create-a-manual-metric) 
+    - [Create a manual goal](service-goals-create.md#step-2-create-a-manual-metric)
     - [Create connected goal](service-goals-create-connected.md)
 
 ## Create subgoals that roll up to the goal
@@ -60,7 +61,7 @@ First, make sure you're in edit mode.
     - **Use subgoal**
     - **Connected to data**
 
-    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="Screenshot showing the types of goals.":::
+    :::image type="content" source="media/service-metrics-submetrics/roll-up-open-options.png" alt-text="A screenshot showing the types of goals.":::
 
 1. When you choose rollup subgoals, you can choose the aggregation type:
 
@@ -70,7 +71,6 @@ First, make sure you're in edit mode.
     - **MAX**: reflects the largest subgoal value
 
     The option you choose automatically calculates the appropriate value and shows it in either the **Current value** or **Target value** area. You can set up different rollup aggregation types on the current and target value, allowing for maximum flexibility.
-
 
 ### Preserve historical values
 
