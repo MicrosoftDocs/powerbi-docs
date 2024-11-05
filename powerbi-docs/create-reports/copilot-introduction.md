@@ -7,7 +7,7 @@ ms.reviewer: shlindsay
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: conceptual
-ms.date: 08/20/2024
+ms.date: 10/31/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -36,7 +36,7 @@ For answers to common questions related to data security and privacy to help you
 
 ## Access Copilot in the Power BI service
 
-To access Copilot in the Power BI service, the workspace has to be running on F64 or Premium capacity.
+To access Copilot in the Power BI service, you need to have a Contributor role on the Fabric capacity (F64 or higher) or Premium capacity.
 
 - To generate summarized insights in reports, you need at least read access to the workspace or permission to the app.
 - To create the narrative visual and generate Copilot reports, you need edit access to the workspace.

@@ -29,14 +29,26 @@ sections:
       - question: |
           What is a Power BI failover?
         answer: |
-          Power BI maintains multiple instances of each component in Azure datacenters (also known as regions) to guarantee business continuity. If there's an outage, or Power BI becomes inaccessible or inoperable in a region, Power BI fails all its components in that region to a backup instance. The failover restores availability and operability to the Power BI service instance in a new region usually within the same geographic location. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
+          Power BI's failover behavior is different based on the type of region you use.
           
-          A failed-over Power BI service instance supports only _read operations_, which means the following operations aren't supported during failover: refreshes, report publish operations, dashboard or report modifications, and other operations that require changes to Power BI metadata (for example, inserting a comment in a report).  Read operations, such as displaying dashboards and displaying reports (that aren't based on DirectQuery or Live Connect to on-premises data sources) continue to function normally.
+          - In [regions with regional pairs](/azure/reliability/cross-region-replication-azure#azure-paired-regions), Power BI maintains multiple instances of each component in Azure datacenters (also known as regions) to guarantee business continuity. If there's an outage, or Power BI becomes inaccessible or inoperable in a region, Power BI fails all its components in that region to a backup instance. The failover restores availability and operability to the Power BI service instance in a new region usually within the same geographic location. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/product-overview).
+          
+              A failed-over Power BI service instance supports only _read operations_, which means the following operations aren't supported during failover: refreshes, report publish operations, dashboard or report modifications, and other operations that require changes to Power BI metadata (for example, inserting a comment in a report).  Read operations, such as displaying dashboards and displaying reports (that aren't based on DirectQuery or Live Connect to on-premises data sources) continue to function normally.
+
+          - If you run Power BI components in a [region without a regional pair](/azure/reliability/cross-region-replication-azure#regions-with-availability-zones-and-no-region-pair), availability zones provide resiliency. Data isn't replicated to another region, and components don't fail over to another region.
+
+          To learn more about how Microsoft Fabric supports reliability, see [Reliability in Microsoft Fabric](/azure/reliability/reliability-fabric).
           
       - question: |
           How are backup instances kept in sync with my data?
         answer: |
-          All Power BI service components regularly sync their backup instances. There's a 15-minute targeted point-in-time sync for any content uploaded or changed in Power BI. If there's a failover, Power BI uses [Azure storage geo-redundant replication](/azure/storage/common/storage-redundancy-grs) and [Azure SQL geo redundant replication](/azure/sql-database/sql-database-active-geo-replication) to guarantee backup instances exist in other regions, and can be used.
+          All Power BI service components regularly sync their backup instances. There's a 15-minute targeted point-in-time sync for any content uploaded or changed in Power BI.
+          
+          If there's a failover in a [region with a regional pair](/azure/reliability/cross-region-replication-azure#azure-paired-regions), Power BI uses [Azure storage geo-redundant replication](/azure/storage/common/storage-redundancy-grs) and [Azure SQL geo redundant replication](/azure/sql-database/sql-database-active-geo-replication) to guarantee backup instances exist in other regions, and can be used.
+
+          In [regions without a regional pair](/azure/reliability/cross-region-replication-azure#regions-with-availability-zones-and-no-region-pair), Power BI uses [Azure storage zone-redundant replication](/azure/storage/common/redundancy-regions-zrs) and Azure SQL zone redundancy to replicate data between availability zones.
+
+          To learn more about how Microsoft Fabric supports reliability, see [Reliability in Microsoft Fabric](/azure/reliability/reliability-fabric).
           
       - question: |
           Where are the failover clusters located?
