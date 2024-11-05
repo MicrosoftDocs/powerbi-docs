@@ -157,9 +157,9 @@ Once triggered, the icon is preserved throughout the visual's lifetime until `cl
 
 Example of the visual display containing the "licenses are required" general icon:
 
-:::image type="content" source="media/licensing-api/general-icon.png" alt-text="Screenshot of visual display containing the "licenses are required" general icon.":::
+:::image type="content" source="media/licensing-api/general-icon.png" alt-text="Screenshot of visual display containing the *licenses are required* general icon.":::
 
-:::image type="content" source="media/licensing-api/general-icon-expanded.png" alt-text="Screenshot of visual display containing the "licenses are required" expanded icon.":::
+:::image type="content" source="media/licensing-api/general-icon-expanded.png" alt-text="Screenshot of visual display containing the *licenses are required* expanded icon.":::
 
 #### Overlay the visual's display with a *missing license* notification
 
