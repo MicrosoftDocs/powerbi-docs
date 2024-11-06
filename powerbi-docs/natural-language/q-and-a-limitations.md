@@ -36,7 +36,7 @@ Q&A also supports composite models, if the model contains at least one of the fo
 - One import data source
 - One DirectQuery data source that supports APPROXIMATEDISTINCOUNT. Refer to the [DirectQuery support](#directquery-support-for-qa-preview) section in this article for specific sources.
 
-If the model contains a mix of data sources, we only index import columns or columns for data sources that suport APPROXIMATEDISTINCTCOUNT. Thus, you can only ask questions about the instance values for these types of columns. You still can ask questions about the columns themselves. 
+If the model contains a mix of data sources, we only index import columns or columns for data sources that support APPROXIMATEDISTINCTCOUNT. Thus, you can only ask questions about the instance values for these types of columns. You still can ask questions about the columns themselves. 
 
 ### Data sources not supported
 
@@ -57,7 +57,7 @@ Power BI administrators can use the tenant settings to manage the ability to sto
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and clearing the **Allow Q&A to record my utterance** checkbox. 
 
-:::image type="content" source="media/q-and-a-intro/q-and-a-limitations.png" alt-text="Screenshot of privacy limitations for Q&A.":::
+:::image type="content" source="media/q-and-a-intro/q-and-a-limitations.png" lightbox="media/q-and-a-intro/q-and-a-limitations.png" alt-text="Screenshot of privacy limitations for Q&A.":::
 
 ## Teach Q&A limitations
 
