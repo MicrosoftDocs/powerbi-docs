@@ -59,17 +59,10 @@ Users can also keep their questions from being recorded by selecting **Settings*
 
 ## Teach Q&A limitations
 
-Teach Q&A allows you to fix two types of errors:
+Teach Q&A allows you to define unrecognized terms by assigning a word to a field or filter condition. When defining filtering conditions, you can only use a limited subset of language, including: 
 
-- Assign a word to a field.
-- Assign a word a filter condition.
-
-:::image type="content" source="media/q-and-a-intro/q-and-a-limitations.png" alt-text="Screenshot showing limitations of the Q&A experience.":::
-
-Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. Also, when defining filtering conditions, you can only use a limited subset of language, including:
-
-- Country/region which is USA
-- Country/region which is not USA
+- Product category which is accessories
+- Product category which is not accessories 
 - Products > 100
 - Products greater than 100
 - Products = 100
@@ -77,8 +70,7 @@ Currently, redefining a recognized term or defining other types of conditions or
 - Products < 100
 - Products smaller than 100
 
-> [!NOTE]
-> Q&A Tooling only supports import mode. It doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This current limitation will be removed in subsequent releases of Power BI.
+Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported.  
 
 ### Statements not supported
 
