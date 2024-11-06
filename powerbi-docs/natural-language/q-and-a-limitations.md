@@ -64,6 +64,8 @@ Teach Q&A allows you to fix two types of errors:
 - Assign a word to a field.
 - Assign a word a filter condition.
 
+:::image type="content" source="media/q-and-a-intro/q-and-a-limitations.png" alt-text="Screenshot showing limitations of the Q&A experience.":::
+
 Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
 - Country/region which is USA
