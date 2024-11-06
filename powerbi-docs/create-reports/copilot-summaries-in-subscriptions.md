@@ -83,4 +83,5 @@ If you include a message in the email, the message appears above the Summary gen
 ## Limitations and Considerations
 - Copilot summaries for email subscriptions aren't supported for dynamic per recipient subscriptions, paginated reports, scrorecards, and dashboards.
 - The Copilot summary is run on behalf of the subscription owner, much like email subscriptions.
-- User-defined prompts aren't supported. 
+- User-defined prompts aren't supported.
+- Your email may not contain a copilot summary if copilot takes too long to respond. This usually happens with large reports.
