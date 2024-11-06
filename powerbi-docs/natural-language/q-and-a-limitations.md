@@ -25,11 +25,11 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 
 In each of these configurations, row-level security is also supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premise SQL Server Analysis Services models.
 
-### DirectQuery support for Q&A
+## DirectQuery support for Q&A
 
 Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use [Q&A to ask natural-language questions](../connect-data/desktop-directquery-about.md) against these data sources. 
 
-### Composite model support
+## Composite model support
 
 Q&A also supports composite models, if the model contains at least one of the following data sources:
 
@@ -38,7 +38,7 @@ Q&A also supports composite models, if the model contains at least one of the fo
 
 If the model contains a mix of data sources, we only index columns from import tables or columns from supported Direct Query sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves. 
 
-### Q&A setup limitations 
+## Q&A setup limitations 
 
 The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from Power BI Desktop. Q&A setup supports the following data sources: 
 
@@ -46,7 +46,7 @@ The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from
 - Direct Query   
 - DirectLake
 
-### Supported data sources 
+## Supported data sources 
 
 Power BI Q&A supports the following configurations of data sources in the Power BI service:
 
@@ -58,11 +58,11 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 
 In each of these configurations, row-level security is supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premise SQL Server Analysis Services models. 
 
-### DirectQuery support for Q&A  
+## DirectQuery support for Q&A  
 
 Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCTCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources.  
 
-### Composite model support 
+## Composite model support 
 
 Q&A also supports composite models, if the model contains at least one of the following data sources: 
 
