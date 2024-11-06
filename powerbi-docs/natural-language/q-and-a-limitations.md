@@ -57,6 +57,8 @@ Power BI administrators can use the tenant settings to manage the ability to sto
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and clearing the **Allow Q&A to record my utterance** checkbox. 
 
+:::image type="content" source="media/q-and-a-intro/q-and-a-limitations.png" alt-text="Screenshot of privacy limitations for Q&A.":::
+
 ## Teach Q&A limitations
 
 Teach Q&A allows you to define unrecognized terms by assigning a word to a field or filter condition. When defining filtering conditions, you can only use a limited subset of language, including: 
