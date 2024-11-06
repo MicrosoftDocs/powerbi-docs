@@ -57,7 +57,7 @@ You can select the **New** button at the top of a workspace, then select **Explo
 
 Or for a given dataset, report, or datamart, you can begin your exploration by selecting the **More options (…)** menu from a workspace list or the data hub list view, as shown in the following screenshot: 
 
-:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting Explore this data.":::
+:::image type="content" source="media/explore-data-service/more-options-explore-data.png" alt-text="Screenshot showing selecting New report item.":::
 
 You also see this option in the Data hub details page as part of the **Discover business insights** action card: 
 
