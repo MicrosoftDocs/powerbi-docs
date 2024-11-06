@@ -56,11 +56,6 @@ Users can also keep their questions from being recorded by selecting **Settings*
 
 ## Teach Q&A limitations
 
-Teach Q&A allows you to fix two types of errors:
-
-- Assign a word to a field.
-- Assign a word a filter condition.
-
 Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
 - Product category is accessories
@@ -70,8 +65,6 @@ Currently, redefining a recognized term or defining other types of conditions or
 - Products = 100
 - Products is 100
 - Products < 100
-
-Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported.
 
 ### Statements not supported
 
