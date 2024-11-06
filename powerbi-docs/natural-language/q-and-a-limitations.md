@@ -6,7 +6,7 @@ ms.author: maggies
 ms.service: powerbi
 ms.subservice: powerbi-ai
 ms.topic: conceptual
-ms.date: 11/03/2024
+ms.date: 11/06/2024
 
 ---
 # Limitations of Power BI Q&A
@@ -38,13 +38,38 @@ Q&A also supports composite models, if the model contains at least one of the fo
 
 If the model contains a mix of data sources, we only index columns from import tables or columns from supported Direct Query sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves. 
 
-### Q&A Setup limitations 
+### Q&A setup limitations 
 
 The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from Power BI Desktop. Q&A setup supports the following data sources: 
 
 - Import mode  
 - Direct Query   
-- DirectLake - coming soon 
+- DirectLake
+
+### Supported data sources 
+
+Power BI Q&A supports the following configurations of data sources in the Power BI service:
+
+- Import mode  
+- Direct Query   
+- Live connect to Azure Analysis Services
+- Live connect to on-premise SQL Server Analysis Services tabular models
+- DirectLake models 
+
+In each of these configurations, row-level security is supported. Object-level security is supported for models hosted in the Power BI service but not for live connect to Azure Analysis Services or on-premise SQL Server Analysis Services models. 
+
+### DirectQuery support for Q&A  
+
+Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCTCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources.  
+
+### Composite model support 
+
+Q&A also supports composite models, if the model contains at least one of the following data sources: 
+
+- One import data source 
+- One supported DirectQuery data source 
+
+If the model contains a mix of data sources, we only index columns from import tables or columns from supported Direct Query sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves.
 
 ## Review question limitations
 
@@ -56,7 +81,7 @@ Users can also keep their questions from being recorded by selecting **Settings*
 
 ## Teach Q&A limitations
 
-Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. Also, when defining filtering conditions, you can only use a limited subset of language, including:
+Teach Q&A allows you to define unrecognized terms by assigning a word to a field or filter condition. When defining filtering conditions, you can only use a limited subset of language, including: 
 
 - Product category is accessories
 - Product category is not accessories
@@ -65,6 +90,8 @@ Currently, redefining a recognized term or defining other types of conditions or
 - Products = 100
 - Products is 100
 - Products < 100
+
+Currently, redefining a recognized term or defining other types of conditions or phrases isn't supported. 
 
 ### Statements not supported
 
