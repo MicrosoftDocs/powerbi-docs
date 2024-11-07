@@ -90,7 +90,7 @@ Currently, the following Power BI environments don't support license management 
 * `isLicenseInfoAvailable` - Indicates whether the licenses info could be retrieved.
 Failure in licenses retrieval can occur in case Power BI Desktop user isn't signed in or isn't connected to the internet (offline). For web, licenses retrieval can fail due to a temporary service outage.
 
-Example of calling `getAvailableServicePlans` (using the service ID from the previous image):  
+Example of calling `getAvailableServicePlans` to retrieve the user's service plans for this visual:  
 
 ```typescript
 private currentUserValidPlans: ServicePlan[] | undefined;
@@ -112,6 +112,9 @@ this.licenseManager.getAvailableServicePlans()
   console.log(err);
  });
 ```
+
+> [!NOTE]
+> This example only demonstrates how to verify whether the user has valid plans for this visual. The `plans` array may contain different `spIdentifier` values, and each identifier can appear multiple times with different states.
 
 ### Notify the user that the required licenses are missing
 
