@@ -45,19 +45,6 @@ The [Q&A setup feature](q-and-a-tooling-teach-q-and-a.md) is only available from
 - Direct Query   
 - DirectLake
 
-## DirectQuery support for Q&A  
-
-Q&A supports SQL DirectQuery sources with APPROXIMATEDISTINCTCOUNT, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources.  
-
-## Composite model support 
-
-Q&A also supports composite models, if the model contains at least one of the following data sources: 
-
-- One import data source 
-- One supported DirectQuery data source 
-
-If the model contains a mix of data sources, we only index columns from import tables or columns from supported Direct Query sources. Thus, you can only ask questions about the instance values for columns from these data sources. You still can ask questions about the columns themselves.
-
 ## Review question limitations
 
 The review questions only store questions asked about your data model for up to 28 days. Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
