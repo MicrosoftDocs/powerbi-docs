@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: pbi-reports-dashboards
 ms.topic: how-to
-ms.date: 04/26/2024
+ms.date: 11/07/2024
 LocalizationGroup: Create reports
 no-loc: [Copilot]
 ms.collection: ce-skilling-ai-copilot
@@ -21,6 +21,9 @@ ms.collection: ce-skilling-ai-copilot
 This article is for organizations who would like to enable and start using Copilot in Microsoft Fabric, specifically in Power BI. We present how to enable Copilot in your tenant, start using Copilot in the Power BI service, and start using Copilot in Power BI Desktop.
 
 For more information on other Fabric workloads, see the [Copilot in Fabric overview](/fabric/get-started/copilot-fabric-overview). Note, you must have Fabric admin privileges to enable Copilot.
+
+> [!IMPORTANT]
+> When scaling from a smaller capacity to F64 or above, allow up to 24 hours for Copilot for Power BI up to be enabled.
 
 ## Enable Fabric Copilot for Power BI in your tenant
 
